@@ -13,7 +13,7 @@
 (defn unstash [file-name]
   (print (slurp (java.util.zip.GZIPInputStream. (io/input-stream (str "/tmp/" file-name ".zip"))))))
 
-(defn -main [& args]  
+(defn -main [& args]
   (let [[action stash-name] *command-line-args*]
     (case action
       "put" (stash stash-name)
