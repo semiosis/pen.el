@@ -2507,3 +2507,5 @@ agi ddgr
 cd ~/.emacs.d/manual-packages
 git clone "https://github.com/clojure-emacs/clj-refactor.el"
 )
+
+agi xpra xserver-xephyr

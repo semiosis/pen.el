@@ -1,5 +1,7 @@
 (require 'clojure-mode)
 (require 'cider)
+
+;; I don't think I want this, actually, because I do not want to run the mode hooks, and launch cider when opening org-mode documents
 (require 'ob-clojure)
 
 ;; This is like shackle behaviour - it sets the cursor to the docs when it appears
@@ -299,7 +301,12 @@ so the same nrepl is used for all files in the project"
 (advice-add 'cider-jack-in-cljs :around #'cider-jack-in-around-advice)
 
 (defun current-buffer-is-bb-p ()
-  (pen-string-in-buffer-p "env bb"))
+  (or
+   (pen-string-in-buffer-p "env bb")
+   (pen-string-in-buffer-p "babashka.file")
+   (string-equal "bb" (f-ext (chomp (f-basename (get-path)))))
+   ;; (or (string-match-p "/babashka/" default-directory))
+   ))
 
 (defun cider-remove-jack-in-advice ()
   (interactive)

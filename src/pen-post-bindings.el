@@ -137,7 +137,10 @@
   (sslk "lds" (dff (e "$SCRIPTS")))
   (sslk "lfx" (dff (e "$REPOS/pen.el/src/pen-examplary.el")))
   (sslk "ldi" (dff (e "$REPOS/openai-api.el")))
-  (sslk "lda" (dff (e "$REPOS/prompts/prompts")))
+  (sslk "lda" (dff
+               (e (f-join pen-prompts-directory "prompts"))
+               ;; (e "$REPOS/prompts/prompts")
+               ))
   (sslk "ldx" (dff (e "$REPOS/examplary")))
   (sslk "ldd" (dff (e "$DUMP")))
   (sslk "ldD" (dff (e "$DUMP/downloads")))

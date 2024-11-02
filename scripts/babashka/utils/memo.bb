@@ -1,6 +1,13 @@
 #!/usr/bin/env bbb
 
-(ns utils.memo)
+(ns utils.memo
+  (:require [utils.myshell :as myshell]
+            [utils.is-tty :as tty]
+            [clojure.string :as str]))
+
+;; [[sh:echo egg | memo.bb put pot]]
+;; [[sps:memo.bb get pot; pak]]
+;; [[sh:memo.bb get pot]]
 
 (require '[clojure.java.io :as io])
 
@@ -11,11 +18,25 @@
   'ok)
 
 (defn unstash [file-name]
-  (print (slurp (java.util.zip.GZIPInputStream. (io/input-stream (str "/tmp/" file-name ".zip"))))))
+  (slurp (java.util.zip.GZIPInputStream. (io/input-stream (str "/tmp/" file-name ".zip")))))
+
+(defn print-or-tv
+  ""
+  [s]
+  (if
+      (or
+       (tty/out-is-tty?)
+       ;; (tty/in-is-tty?)
+       )
+      (println (str/trim-newline s))
+      (myshell/tv s)))
 
 (defn -main [& args]
-  (let [[action stash-name] *command-line-args*]
-    (case action
-      "put" (stash stash-name)
-      "get" (unstash stash-name)
-      (println "Invalid op:" action))))
+  (let [[action stash-name]
+        (or args
+            *command-line-args*)]
+    (print-or-tv
+     (case action
+       "put" (stash stash-name)
+       "get" (unstash stash-name)
+       (str "Invalid op:" action)))))

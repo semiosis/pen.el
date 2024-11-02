@@ -2018,7 +2018,8 @@
 
             ,(macroexpand `(pen-define-prompt-function-pipeline))))))))
 
-(defvar pen-prompt-functions-enabled nil)
+;; I'm working on human prompting
+(defset pen-prompt-functions-enabled t)
 
 (defun define-prompt-function ()
   (eval

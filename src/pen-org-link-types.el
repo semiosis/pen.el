@@ -304,10 +304,11 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "replace" 'pen-follow-replace-link)
 (defun pen-follow-replace-link (pattern)
   "Run replace `pattern'."
-  (let ((result (chomp (eval-string pattern))))
-    (pen-select-regex-at-point "\\[\\[.*\\]\\]")
-    (pen-delete-selected-text)
-    (insert result)))
+  (let ((result (tv (chomp (str (eval-string (tv pattern)))))))
+    ;; (pen-select-regex-at-point "\\[\\[.*\\]\\]")
+    ;; (pen-delete-selected-text)
+    ;; (insert (tv result))
+    ))
 
 (org-add-link-type "ftp" 'follow-ftp-link)
 (defun follow-ftp-link (query)
