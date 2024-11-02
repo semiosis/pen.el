@@ -26,7 +26,10 @@
                ;; cadr = second
                (symstr (symbol-name (cadr sexp)))
                ;; caddr = third
-               (argvec (third sexp))
+               (argvec
+                (cond ((eq 'vector (type (third sexp))) (third sexp))
+                      ((eq 'vector (type (fourth sexp))) (fourth sexp))
+                      (t nil)))
                (arglist (pen-vector2list argvec))
                (oarglist arglist)
                (has-variable-arg (member '& oarglist))
@@ -43,7 +46,7 @@
                   (mapcar
                    (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
                    arglist)))
-               (argrepr (str (third sexp)))
+               (argrepr (str argvec))
                (argstr (s-substring "\\[\\(.*\\)\\]" argrepr)))
           ;; (tv (str symstr))
           (if (re-match-p "^\\[.*\\]$" argrepr)
