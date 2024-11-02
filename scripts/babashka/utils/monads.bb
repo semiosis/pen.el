@@ -77,3 +77,8 @@
 (for [a (range 5)
       b (range a)]
   (* a b))
+
+(m/domonad m/sequence-m
+  [a (range 5)
+   b (range a)]
+  (* a b))
