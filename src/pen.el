@@ -184,6 +184,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-client)
 (require 'pen-autosuggest)
 (require 'pen-shackle)
+(require 'pen-rosie)
 (require 'pen-translation-map)
 (require 'helm-fzf)
 (if (inside-docker-p)

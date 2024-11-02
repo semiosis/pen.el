@@ -1818,6 +1818,10 @@ Also see option `magit-blame-styles'."
                   ;; tty-menu-enabled-face
                   ))))))
 
+(defun pen-enable-all-faces ()
+  (interactive)
+  (pen-snc "tmux-colour"))
+
 (comment
  (add-hook 'minibuffer-setup-hook
            (lambda ()
