@@ -589,19 +589,21 @@ The result is a string."
 
 (defun emacs-lisp-edit-string ()
   (interactive)
-  (if (and (lispy--buffer-narrowed-p)
-           (derived-mode-p 'lispy-string-edit-mode))
-      (progn
-        (pen-region-pipe "q -f")
-        (while (lispy--buffer-narrowed-p)
-          (ignore-errors (call-interactively 'recursive-widen)))
-        (emacs-lisp-mode))
-    (if (lispy--in-string-p)
-        (save-mark-and-excursion
-          (progn (lispy-mark)
-                 (call-interactively 'pen-enter-edit-emacs)
-                 (lispy-string-edit-mode)
-                 (pen-region-pipe "uq"))))))
+  (if org-src-mode
+      (org-edit-src-exit)
+    (if (and (lispy--buffer-narrowed-p)
+             (derived-mode-p 'lispy-string-edit-mode))
+        (progn
+          (pen-region-pipe "q -f")
+          (while (lispy--buffer-narrowed-p)
+            (ignore-errors (call-interactively 'recursive-widen)))
+          (emacs-lisp-mode))
+      (if (lispy--in-string-p)
+          (save-mark-and-excursion
+            (progn (lispy-mark)
+                   (call-interactively 'pen-enter-edit-emacs)
+                   (lispy-string-edit-mode)
+                   (pen-region-pipe "uq")))))))
 (defalias 'lispy-edit-string 'emacs-lisp-edit-string)
 
 (pen-require 'pen-selected)

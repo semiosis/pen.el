@@ -3,6 +3,7 @@
 (ns utils.hiragana-to-romanji
   (:require [babashka.deps :as deps]))
 
+;; e:$EMACSD/pen.el/scripts/org-scripts/hello-world.org
 ;; cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | org-mode-make-headline-asterisks-into-slash.bb | v
 
 (require '[clojure.string :as str]
