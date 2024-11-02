@@ -24,7 +24,7 @@
 (defn print-or-tv
   ""
   [s]
-  (if tty/out-is-tty?
+  (if (tty/out-is-tty?)
     (ms/println-and-return (str/trim-newline s))
     (myshell/tv s)))
 

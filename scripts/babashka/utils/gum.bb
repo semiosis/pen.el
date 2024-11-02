@@ -59,7 +59,7 @@
 
 ;; (input )
 
-(header "dsufoi")
+(header "Header!")
 
 ;; (input :value "T" :placeholder "Type...")
 (input :placeholder "Type...")
@@ -71,7 +71,7 @@
 ;; (table (slurp "$EMACSD/pen.el/config/pen/tablist-test.csv"))
 
 ;; This CSV works
-(table (slurp "$EMACSD/pen.el/config/pen/mygit-30.08.22.csv"))
+(table (slurp "/root/.emacs.d/host/pen.el/config/pen/mygit-30.08.22.csv"))
 
 (choose ["a" "b" "c"] :limit 1)
 
