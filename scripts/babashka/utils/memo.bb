@@ -3,7 +3,8 @@
 (ns utils.memo
   (:require [utils.myshell :as myshell]
             [utils.is-tty :as tty]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [utils.misc :as ms]))
 
 ;; [[sh:echo egg | memo.bb put pot]]
 ;; [[sps:memo.bb get pot; pak]]
@@ -23,13 +24,11 @@
 (defn print-or-tv
   ""
   [s]
-  (if
-      (or
-       (tty/out-is-tty?)
-       ;; (tty/in-is-tty?)
-       )
-      (println (str/trim-newline s))
-      (myshell/tv s)))
+  (if tty/out-is-tty?
+    (ms/println-and-return (str/trim-newline s))
+    (myshell/tv s)))
+
+(def sym2str name)
 
 (defn -main [& args]
   (let [[action stash-name]
@@ -37,6 +36,6 @@
             *command-line-args*)]
     (print-or-tv
      (case action
-       "put" (stash stash-name)
+       "put" (name (stash stash-name))
        "get" (unstash stash-name)
        (str "Invalid op:" action)))))

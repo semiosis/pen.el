@@ -4,7 +4,8 @@
 
 (ns utils.which
   (:require [babashka.deps :as deps]
-            [utils.myshell :as myshell]))
+            [utils.myshell :as myshell]
+            [utils.aliases :as aliases]))
 
 ;; It's also probably possible to include clojure.contrib.def in babashka with deps
 ;; Contrib is deprecated though
@@ -25,14 +26,6 @@
             (.getCanonicalPath f)
             (recur (rest paths))))))))
 
-
-;; Contrib is deprecated though
-;; A synonym for a macro must be defined using a macro
-;; or with clojure.contrib.def/defalias
-;; https://stackoverflow.com/questions/1317396/define-a-synonym-for-a-clojure-macro
-;; (def 'foreach 'doseq)
-(defmacro foreach [& args] `(doseq ~@args))
-
 ;; I can E on -main function now from lispy
 ;; e.g.
 ;; (1/3) & args:
@@ -48,7 +41,7 @@
     (do
       (comment
         ;; This works, but I want to use standard clojure
-        (foreach [a args]
+        (aliases/foreach [a args]
                  (when-let [executable a]
                    (println (myshell/tv (which executable))))))
       (doseq [a args]
