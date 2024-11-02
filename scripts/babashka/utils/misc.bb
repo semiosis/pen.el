@@ -7,13 +7,14 @@
 (eval '(+ 1 2))
 
 ;; Query a namespace -- list functions, etc.
-(dir clojure.string)
-;; In Rebel, the FQ name is required
-(clojure.repl/dir clojure.string)
+(comment
+  (dir clojure.string)
+  ;; In Rebel, the FQ name is required
+  (clojure.repl/dir clojure.string)
 
-(let [f (new File ".")] (clojure.repl/dir f))
-;; No namespace: f found
-
+  (let [f (new File ".")] (clojure.repl/dir f))
+  ;; No namespace: f found
+  )
 
 (defn escape-string [x]
   (clojure.string/replace x #"^[':\\]" "\\\\$0"))
@@ -23,7 +24,6 @@
 
 (defn cmd2list [cmd]
   (clojure.string/split-lines (:out (sh "sh" "-c" (str "args2lines " cmd)))))
-
 
 ;; Drop to REPL
 ;; https://stackoverflow.com/questions/67454150/how-to-drop-into-a-repl-inside-a-clojure-function-and-print-the-stack-traces
@@ -41,6 +41,11 @@
   (with-out-str (clojure.pprint/pprint o)))
 (def pps pprint-to-string)
 
+(defn println-and-return
+  ""
+  [o]
+  (println o)
+  o)
 
 ;; This appears to hang
 (defn tv
@@ -82,6 +87,6 @@
     ;; (tv (pps newstr))
     `(do $HOME@newcode)))
 
-
-(require 'cljfmt.core)
+(comment
+  (require 'cljfmt.core))
 ;; (cljfmt.core/reformat-string "")

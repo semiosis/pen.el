@@ -2,8 +2,7 @@
 
 (ns utils.is-tty
   (:require [babashka.process :as p])
-  (:require [utils.common :as uc])
-  )
+  (:require [utils.common :as uc]))
 
 (defn- is-tty
   [fd key]
