@@ -15,4 +15,4 @@ if test "$len" -lt "$shortest_len"; then
     len="$shortest_len"
 fi
 
-tpop -nos -w "$(( len + 4 ))" -h 7 sout yn "$message"
+tpop -nos -w "$(( len + 4 ))" -h 7 sout yn -cl "$message"

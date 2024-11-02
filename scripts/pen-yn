@@ -25,6 +25,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -cl) {
+        doclear=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -61,6 +67,7 @@ while :; do
     read -p " $allowed_re_color: " -n 1 -r
     echo
     [[ $REPLY =~ $allowed_re ]] && break
+    clear
 
     echo
     message="$(printf -- "%s" "$message" | his -f lgreen '.*')"

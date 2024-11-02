@@ -28,14 +28,16 @@
       (call-interactively 'pf-get-documentation-for-syntax-given-screen/2)
     (error "Pen declined")))
 
-(defmacro gen-term-command (cmd &optional reuse)
+(defmacro gen-term-command (cmd &optional reuse ask)
   "Generate an interactive emacs command for a term command"
   (let* ((cmdslug (concat "et-" (slugify cmd)))
          (fsym (intern cmdslug))
          (bufname (concat "*" cmdslug "*")))
     `(defun ,fsym ()
        (interactive)
-       (pen-term (pen-nsfa ,cmd) nil nil ,bufname ,reuse))))
+       (if (or (not ,ask)
+               (yn (concat "Starting " (q cmd) ". Continue?")))
+           (pen-term (pen-nsfa ,cmd) nil nil ,bufname ,reuse)))))
 (defalias 'etc 'gen-term-command)
 
 (defun pen-ask-documentation (thing query)
@@ -80,7 +82,7 @@
                 ;; (etc "nvc -f clj-rebel" t)
                 ;; (etc "nvt clj-rebel" t)
                 ;; (etc "tns clj-rebel" t)
-                (etc "tmwr clj-rebel" t)
+                (etc "tmwr clj-rebel" t t)
                 ;; (etc "nvc -f lein repl" t)
                 (etc "lein repl" t))
         :formatters '(lsp-format-buffer)
