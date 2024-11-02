@@ -1,9 +1,9 @@
 #!/usr/bin/env bb
 
-(ns utils.gum
+(ns utils.gipe
   (:require [babashka.deps :as deps]))
 
-(deps/add-deps '{:deps {io.github.justone/bb-scripts {:sha "ecbd71747dd0527243286d98c5a209f6890763ff"}}})
+;; e:gum.bb
 
 (require '[babashka.process :refer [shell process exec]])
 (require '[clojure.data.csv :as csv])
@@ -59,19 +59,40 @@
 
 ;; (input )
 
-(header "dsufoi")
+;; (header "dsufoi")
+
+(println (System/getenv "PEN_PROMPT"))
+
+(header (System/getenv "PEN_HELP"))
+
+;; export PEN_PROMPT
+;; export PEN_HELP
+;; export PEN_OVERLAY
+;; export PEN_PREOVERLAY
+;; export PEN_EIPE_DATA
+;; [[sps:v +/"pen -notm -nw --pool" "$EMACSD/pen.el/scripts/pen-eipe"]]
+
+;; Collect stdin and put it into value:
 
 ;; (input :value "T" :placeholder "Type...")
-(input :placeholder "Type...")
+
+;; This works
+;; echo hi | tpop -E "PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb"
+
+(input :value user/*input* :placeholder "Type stdin...")
 
 ;; (write "value" "Type...")
 (write "" "Type...")
 
-;; (table (slurp "$EMACSD/pen.el/config/pen/cross_references.csv"))
-;; (table (slurp "$EMACSD/pen.el/config/pen/tablist-test.csv"))
+;; export PEN_OVERLAY
+;; export PEN_PREOVERLAY
+;; export PEN_EIPE_DATA
+
+;; (table (slurp "/root/.emacs.d/host/pen.el/config/pen/cross_references.csv"))
+;; (table (slurp "/root/.emacs.d/host/pen.el/config/pen/tablist-test.csv"))
 
 ;; This CSV works
-(table (slurp "$EMACSD/pen.el/config/pen/mygit-30.08.22.csv"))
+(table (slurp "/root/.emacs.d/host/pen.el/config/pen/mygit-30.08.22.csv"))
 
 (choose ["a" "b" "c"] :limit 1)
 
@@ -80,3 +101,4 @@
      (confirm "yo")
      0
      1))
+

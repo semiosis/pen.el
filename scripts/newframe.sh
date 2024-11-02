@@ -174,6 +174,7 @@ runclient() {
 if test -n "$PEN_PROMPT"; then
     mkdir -p ~/.pen/eipe
     # pen-tm -d nw -d -fargs vim "/root/.pen/eipe/${SOCKET}_prompt"
+    # echo "/root/.pen/eipe/${SOCKET}_prompt" | tv &>/dev/null
     printf -- "%s" "$PEN_PROMPT" > "/root/.pen/eipe/${SOCKET}_prompt"
 fi
 

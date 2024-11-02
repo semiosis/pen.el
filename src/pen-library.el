@@ -903,7 +903,10 @@ Interestingly, defvar-local does not come into effect until run, but I guess def
                        data
                        detach)
   "`prompttext` is read-only text at the start of the
-buffer which is not included when this function returns"
+buffer which is not included when this function returns
+
+`overlay-text`does work but it only displays if there are enough lines in the buffer. It uses lsp-mode's overlay for documentation.
+"
 
   (setq wintype (or (sor wintype)
                     "sps"))
