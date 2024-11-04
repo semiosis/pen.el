@@ -13,22 +13,27 @@ if test "$last_arg" == "--help"; then
     exit "$?"
 fi
 
-${GOPATH%%:*}/bin/gum "$@"
-exit "$?"
+# ${GOPATH%%:*}/bin/gum "$@"
+# exit "$?"
 
-# subcommand="$1"
-# shift
-# case "$subcommand" in
-#     table) {
-#         # Calculate the column widths to use from the terminal COLUMNS.
-#         echo "$COLUMNS" | tv &>/dev/null
-#         # TODO Do this inside gum.bb instead
-#         ${GOPATH%%:*}/bin/gum "$subcommand" -w "$COLUMNS" "$@"
-#     }
-#     ;;
-# 
-#     *) {
-#         ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
-#     }
-#     ;;
-# esac
+subcommand="$1"
+shift
+case "$subcommand" in
+    # table) {
+    #     # Calculate the column widths to use from the terminal COLUMNS.
+    #     echo "$COLUMNS" | tv &>/dev/null
+    #     # TODO Do this inside gum.bb instead
+    #     ${GOPATH%%:*}/bin/gum "$subcommand" -w "$COLUMNS" "$@"
+    # }
+    # ;;
+
+    write) {
+        nvc -2 ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+    }
+    ;;
+
+    *) {
+        ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+    }
+    ;;
+esac

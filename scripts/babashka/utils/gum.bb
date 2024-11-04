@@ -37,9 +37,10 @@
 
 ;; Add --height=5
 (defn write [value placeholder]
+  ;; Reduce the height by 1 so I can use nvc
   (let [height (get-tty-height)]
     (-> (shell {:out :string}
-               (format "gum write --height '%s' --show-line-numbers --placeholder '%s' --value '%s'" height placeholder value))
+               (format "gum write --height '%s' --show-line-numbers --placeholder '%s' --value '%s'" (- height 1) placeholder value))
         :out
         str/trim)))
 
