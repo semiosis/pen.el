@@ -23,17 +23,25 @@
       :out
       str/trim))
 
-(defn write [value placeholder]
-  (-> (shell {:out :string}
-             (format "gum write --show-line-numbers --placeholder '%s' --value '%s'" placeholder value))
-      :out
-      str/trim))
+(defn get-tty-height
+  ""
+  []
+  ;; (myshell/snc "tm-resize")
+  (read-string (str/trim (myshell/snc "tm-resize | sed -n '2s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
 
 (defn get-tty-width
   ""
   []
   ;; (myshell/snc "tm-resize")
   (read-string (str/trim (myshell/snc "tm-resize | sed -n '1s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
+
+;; Add --height=5
+(defn write [value placeholder]
+  (let [height (get-tty-height)]
+    (-> (shell {:out :string}
+               (format "gum write --height '%s' --show-line-numbers --placeholder '%s' --value '%s'" height placeholder value))
+        :out
+        str/trim)))
 
 (defn table [csv]
   (let [data (csv/read-csv csv)
