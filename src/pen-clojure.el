@@ -843,4 +843,21 @@ PROJECT-DIR defaults to the current project."
           ;; 0.18, therefore the need for `cider-maybe-intern'
           (t (cider-maybe-intern cider-jack-in-default)))))
 
+(defun cider-apropos-select-around-advice (proc &rest args)
+  (let ((apropos-bufs (select-matching-buffers "\\.clj" "/clojure/")))
+    (if (and (current-buffer-is-bb-p)
+             apropos-bufs)
+        (with-current-buffer
+         (car apropos-bufs)
+         (let ((res (apply proc args)))
+           res))
+      (let ((res (apply proc args)))
+        res))))
+(advice-add 'cider-apropos-select :around #'cider-apropos-select-around-advice)
+(advice-add 'helm-cider-apropos :around #'cider-apropos-select-around-advice)
+(advice-add 'helm-cider-apropos-symbol :around #'cider-apropos-select-around-advice)
+(advice-add 'helm-cider-apropos-symbol-doc :around #'cider-apropos-select-around-advice)
+
+;; (advice-remove 'cider-apropos-select #'cider-apropos-select-around-advice)
+
 (provide 'pen-clojure)

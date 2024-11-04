@@ -232,6 +232,7 @@
                               (defshellfilter-new-buffer clojure2json)))
 (defset clojure-mode-funcs (list
                             'cider-restart
+                            'cider-apropos-select
                             'clj-rebel-doc
                             'cider-jack-in
                             'cider-repl-set-ns

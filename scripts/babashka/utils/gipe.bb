@@ -44,6 +44,16 @@
 ;; This works
 ;; echo hi | tpop -E "PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb"
 
+(comment
+  ;; TODO work out how to do this:
+  (if (clojure.core/bound? user/*input*)
+    user/*input*
+    "hi")
+
+  ;; I want to be able to check to see if user/*input* is bound etc.
+  ;; And decide if I'm going to use it or not.
+  )
+
 (gum/input :value user/*input* :placeholder "Type stdin...")
 
 ;; (write "value" "Type...")

@@ -50,4 +50,33 @@
 ;; (remove-hook 'kill-buffer-query-functions
 ;;           (lambda () (not-modified) t))
 
+(defun not-nil-p (s)
+  "purposefully unoptimized so that (not-nil-p \"kdjsfl\") returns t"
+  (let* ((a (not s)))
+    (not a)))
+
+(lambda (tp)
+  (string-match-p "/clojure/" (cadr tp)))
+
+(defun select-matching-buffers (name-regexp dir-regexp &optional internal-too)
+  ""
+  (interactive)
+  (loop for tp in
+        (-filter (lambda (tp)
+                   (string-match-p dir-regexp (cadr tp)))
+                 (-filter 'not-nil-p
+                          (cl-loop for buffer in (buffer-list)
+                                   collect
+                                   (let ((name (buffer-name buffer)))
+                                     (when (and name (not (string-equal name ""))
+                                                (or internal-too (/= (aref name 0) ?\s))
+                                                (string-match name-regexp name))
+                                       (list buffer
+                                             (if (buffer-live-p buffer)
+                                                 (with-current-buffer buffer
+                                                   default-directory)
+                                               default-directory)))))))
+        collect
+        (car tp)))
+
 (provide 'pen-buffers)
