@@ -79,9 +79,9 @@
       b (range a)]
   (* a b))
 
-;; We already know that the domonad macro expands into a chain of `m-bind`
-;; calls ending in an expression that calls `m-result`.
-;; m/sequence-m seems to run a permutation of computations
+;; We already know that the domonad macro expands into a chain of `m-bind` calls,
+;; ending in an expression that calls `m-result`.
+;; `m/sequence-m` seems to run a permutation of computations.
 (comment
   (m/domonad m/sequence-m
              [a (range 5)

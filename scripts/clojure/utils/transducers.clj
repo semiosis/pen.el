@@ -20,17 +20,26 @@
   ;; body of `->` or `-->`:
   ;; - thread-first (`->`) puts it as the first argument,
   ;; - thread-last (`->>`) puts it as the last
+
+  ;; Does Clojure have a [[j:-->]] form?
+  ;; Perhaps in another library?
+  ;; I'd like to be able to have it.
   
-  (->> (range 10)
+  (->>
+   ;; it
+   (range 10)
 
-       (map inc)
-       (filter odd?)
-       (reduce +))
+   ;; (map inc (range 10))
+   (map inc)
+   (filter odd?)
+   (reduce +))
+  
+  (-> inc
+      ;; (map inc (range 10))
+      (map (range 10))))
 
-  (-> (range 10)
+;; Transducers are used by the transduce function which is like reduce except it doesn’t
+;; accept just a reducing function, it also accepts a transforming function.
 
-      ;; ((fn [f a b] (f)))
-      (map inc)
-      (filter odd?)
-      (reduce +)))
-
+;; Default behaviour in Clojure is lazy:
+(->> (range 10) (map inc) (filter odd?) (reduce +))
