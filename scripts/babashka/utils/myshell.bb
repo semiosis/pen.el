@@ -56,14 +56,19 @@ emacs' s-lines is replaced by split.
   (:out (sh "tpvipe" :in (str s))))
 ;; TODO Figure out how to make s optional - then I can use this to insert stuff into babashka
 
-;; she and snc effectively do the same thing
+;; she and snc1 effectively do the same thing, but not really
 (defn she [s]
   (:out
    (sh "sh" "-c" s :in (str s))))
 
-(defn snc
+(defn snc [s]
+  (:out
+   (sh "sh" "-c" s :in (str s))))
+
+(defn snc1
   ""
   [s]
+  ;; Ah, the problem with this is that it's unable to include pipes
   (:out (eval `(sh ~@(uncmd (str s))))))
 
 (defn tm-notify [s]

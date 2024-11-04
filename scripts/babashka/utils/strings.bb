@@ -1,4 +1,5 @@
 (ns utils.strings
+  (:require [utils.misc :as ms])
   ;; (:require [babashka.deps :as deps])
   )
 
@@ -24,7 +25,7 @@
        (str/join separator (map uc s))
        (string/join separator (map uc s)))
       
-      (println
+      (ms/println-and-return
        (str/join "\n"
                  [(clojure.string/join separator (map uc s))
                   (str/join separator (map uc s))

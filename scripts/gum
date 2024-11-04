@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# eval `resize`
+# echo "$COLUMNS" | tv &>/dev/null
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test "$last_arg" == "--help"; then
+    ${GOPATH%%:*}/bin/gum "$@" | pavs
+    exit "$?"
+fi
+
+${GOPATH%%:*}/bin/gum "$@"
+exit "$?"
+
+# subcommand="$1"
+# shift
+# case "$subcommand" in
+#     table) {
+#         # Calculate the column widths to use from the terminal COLUMNS.
+#         echo "$COLUMNS" | tv &>/dev/null
+#         # TODO Do this inside gum.bb instead
+#         ${GOPATH%%:*}/bin/gum "$subcommand" -w "$COLUMNS" "$@"
+#     }
+#     ;;
+# 
+#     *) {
+#         ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+#     }
+#     ;;
+# esac

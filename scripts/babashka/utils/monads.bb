@@ -56,6 +56,7 @@
   (defn m-bind [value function]
     (if (nil? value)
       nil
+      ;; `value` represents the rest of the computation
       (function value))))
 
 ;; println monad - my own monad - yay I made a monad! - in clojure!
@@ -78,7 +79,14 @@
       b (range a)]
   (* a b))
 
-(m/domonad m/sequence-m
-  [a (range 5)
-   b (range a)]
-  (* a b))
+;; We already know that the domonad macro expands into a chain of `m-bind`
+;; calls ending in an expression that calls `m-result`.
+;; m/sequence-m seems to run a permutation of computations
+(comment
+  (m/domonad m/sequence-m
+             [a (range 5)
+              ;; This doesn't work like (myshell/tv [0 2 3 4 5])
+              ;; b (range (myshell/tv a))
+              ;; It runs myshell/tv once for every element
+              b (range a)]
+             (* a b)))
