@@ -256,6 +256,7 @@ I'm trying to side with Jesus over issues regarding the evil which is still pres
 > 
 > I appreciated hearing about Tucker Carlson's journey here and I also appreciate Living Waters' very straight-forward gospel message:
 > 
+> -   [youtube.com: Recent Demon Attack Leads Tucker Carlson to CHRIST?](https://www.youtube.com/watch?v=iPI-EbP26EU)
 > -   [youtube.com: Tucker Says Supernatural Beings Are Taking Physical Form. Here's What He Means.](https://www.youtube.com/watch?v=5RboaLY3GDE)
 
 -   **Acknowledgement:** To be able to have affection for God and treasure God, and have a desire for God is such a gift&#x2026;. Thank you John Piper for helping me to see that, and lead me into that truth&#x2026; It makes so much sense in hindsight. Nothing in this world could replace the gift of being able to know God Himself and have an affectionate, treasuring, obedient, believing, desiring love for God.
@@ -741,7 +742,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org95bea34) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgffaa191) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1138,6 +1139,10 @@ We are freed from, for example, making the worries of the world our first though
     
     One of the things we're saved from is this awful bent towards sinning.
 
+Without blood atonement, corruption gets progressively worse and we perish:
+
+> **[Hebrews 9:22](https://www.biblegateway.com/passage/?search=Hebrews%209%3A22&version=ESV)** - Indeed, under the law almost everything is purified with blood, and without the shedding of blood there is no forgiveness of sins. (ESV)
+
 Our salvation looks like being cleaned up by His spirit, behaving in a way now reflecting that we have knowledge of God (i.e. godliness), and not worldliness, treasuring God and one another, and letting go of treasuring/valuing worldly things, with hope for eternal life:
 
 > **[Titus 2:11-13](https://www.biblegateway.com/passage/?search=Titus%202%3A11-13&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, <ins>training us</ins> to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, (ESV)
@@ -1146,7 +1151,7 @@ Our salvation looks like being cleaned up by His spirit, behaving in a way now r
 
 We're supposed to arrive at doing the will of God from the heart, loving one another in peace:
 
-> **[I Timothy 2:1-4](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A1-4&version=ESV)** - First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people, for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way. This is good, and it is pleasing in the sight of God our Savior, who desires all people to be saved and to come to the knowledge of the truth. (ESV)
+> **[I Timothy 2:1-4](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A1-4&version=ESV)** - First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people, for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way. This is good, and it is pleasing in the sight of **God our Savior, who desires all people to be saved and to come to the knowledge of the truth.** (ESV)
 
 We must embrace sanctification:
 
@@ -4296,6 +4301,10 @@ As we walk in the Spirit of Jesus, we are strengthened to walk as Jesus walked. 
 
 > **[Philippians 4:13](https://www.biblegateway.com/passage/?search=Philippians%204%3A13&version=ESV)** - I can do all things through him who strengthens me. (ESV)
 
+God provides the strength by which we do service to Him so that Jesus may be glorified and God may be glorified through Jesus:
+
+> **[I Peter 4:11](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A11&version=ESV)** - Whoever speaks, is to do so as one who is speaking the utterances of God; **whoever serves is to do so as one who is serving by the strength which God supplies; so that in all things God may be glorified through Jesus Christ**, to whom belongs the glory and dominion forever and ever. Amen. (NASB)
+
 God literally helps us if we ask Him for help:
 
 > **[Psalms 46:1-3](https://www.biblegateway.com/passage/?search=Psalms%2046%3A1-3&version=ESV)** - God is our refuge and strength, a very present help in trouble. To the choirmaster. Of the Sons of Korah. According to Alamoth. A Song. Therefore we will not fear though the earth gives way, though the mountains be moved into the heart of the sea, though its waters roar and foam, though the mountains tremble at its swelling. Selah (ESV)
@@ -4694,8 +4703,8 @@ Being led by the Spirit and obeying God, repenting from sin and passing forward 
 ## Walk by the Spirit = Obey Jesus = Led by the Spirit = Walk in the light as He is in the light
 
 -   Walk in the truth
-    -   Walk in a way that is in and alignment, allegiance and agreement with Jesus and Jesus' teachings.
--   Under Christ, following Christ, aligning to Christ and His teachings
+    -   Walk in a way that is in alignment, allegiance and agreement with Jesus and Jesus' teachings.
+-   Under Christ, in Christ, following Christ, aligning to Christ and His teachings
 -   Being sanctified in the Truth
 
 > **[John 12:26](https://www.biblegateway.com/passage/?search=John%2012%3A26&version=ESV)** - If anyone serves me, **he must follow me;** and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
@@ -5071,6 +5080,40 @@ Father God has given Jesus Christ all authority in heaven and on earth. In other
 And God in His mercy saves us and brings us to Himself through Jesus His Son:
 
 > **[Ephesians 2:1-5](https://www.biblegateway.com/passage/?search=Ephesians%202%3A1-5&version=ESV)** - And you were dead in the trespasses and sins in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience— among whom we all once lived in the passions of our flesh, carrying out the desires of the body and the mind, and were by nature children of wrath, like the rest of mankind. But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
+
+As I was on my way driving to Elim church today, I was thinking "external holiness/cleanliness" is a good thing.
+Jesus told some hypocritical Pharisees who were teachers of the Law but unclean within that they were like \_whitewashed tombs.
+
+> **[Matthew 23:26-28](https://www.biblegateway.com/passage/?search=Matthew%2023%3A26-28&version=ESV)** - You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which outwardly appear beautiful, but within are full of dead people's bones and all uncleanness. So you also outwardly appear righteous to others, but within you are full of hypocrisy and lawlessness. (ESV)
+
+The Pharisees were focusing on external cleanliness but ignoring their own hearts.
+
+When we think of sin, it involves being enslaved to the practice of it, and it also involves the heart's desire of it.
+Sinful thoughts should be quickly disposed of and not allowed to be sown in the heart.
+
+If we focus on cleaning the heart through obedience to the Truth and the washing of the Word in our heart, then that's the most important thing. We can be justified by humbling ourselves before God.
+
+> **[Luke 18:11-14](https://www.biblegateway.com/passage/?search=Luke%2018%3A11-14&version=ESV)** - The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, **God, be merciful to me, a sinner**! I tell you, this man went down to his house justified, rather than the other. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted. (ESV)
+
+But our external circumstances may be making it difficult to meet the external appearance of obedient faith, such as "being employed and working money" which is important as to bear one's own load by working is a commandment from the Apostle Paul, but having paid employment in this world to earn your keep is no sure indication of actual obedient faith in the heart of the person.
+
+> **[II Thessalonians 3:10](https://www.biblegateway.com/passage/?search=2%20Thessalonians%203%3A10&version=ESV)** - For even when we were with you, we would give you this command: If anyone is not willing to work, let him not eat. (ESV)
+
+If we focus on cleaning the heart through obedience to the Truth and the washing of the Word, then that's the priority over trying to maintain the external appearance of godliness. The devil can take your job, but should not be allowed to take your obedience and faith and love for the Lord Jesus. It's good and glorifies God to keep obeying Jesus' commandments to serve Him, serving others, even if the devil puts pressure on you to make you fear for your own self-preservation.
+
+That doesn't mean we don't endeavour to meet the commandment of the Apostle Paul but we are baptised into Christ, not into Paul, and Christ is our Master, not Paul, nor the Law of Moses. We are enslaved to Christ who is our righteousness - we are enslaved to Righteousness, obeying Jesus. The requirement of the Law is really fulfilled in our hearts and then that should become apparent on our outside.
+
+We are made clean on the inside of the Word which Jesus has spoken to us:
+
+> **[John 15:3](https://www.biblegateway.com/passage/?search=John%2015%3A3&version=ESV)** - Already you are clean because of the word that I have spoken to you. (ESV)
+
+> **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV)** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, (ESV)
+
+> **[Acts 10:43](https://www.biblegateway.com/passage/?search=Acts%2010%3A43&version=ESV)** - To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name. (ESV)
+
+That Word should clean our souls as we believe/obey it. The gospel (that seed of Truth) then cleans our hearts as we believe/obey it. And then we live in good conscience with God (forgiven and repentant), holding to the Truth - all of what we have heard from Jesus including the teaching about godliness (righteous living in accord with the knowledge of God, in accord with repentance). Our exterior behaviour also is cleaned as our hearts and thoughts are cleansed. We must continue to believe and obey Jesus as we read/hear His words.
+
+> **[Matthew 17:5](https://www.biblegateway.com/passage/?search=Matthew%2017%3A5&version=ESV)** - He was still speaking when, behold, a bright cloud overshadowed them, and a voice from the cloud said, This is my beloved Son, with whom I am well pleased; listen to him. (ESV)
 
 
 ### Anti-christ-like behaviour
@@ -8341,6 +8384,17 @@ We should use the Word of God to come against even arguments and opinions which 
 <ins>"ready to punish every disobedience, when your obedience is complete"</ins> I think means to even be ready to come against slip-ups.
 
 > **[Proverbs 16:32](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A32&version=ESV)** - Whoever is slow to anger is better than the mighty, and <ins>he who rules his spirit</ins> than he who takes a city. (ESV)
+
+Follow God's statutes until the end. It's very blessed to do so. Allow God to change our heart and take our idols away from us and teach us to love Him and others as we take our thoughts captive to be obedient to Jesus:
+
+-   **Encouragement:** [youtube.com: Psalm 119:33 follow Gods statutes until the end.](https://www.youtube.com/watch?v=E52T8RMiZ2k)
+
+Having given your money away to the poor, then when the devil typically tempts us through other people
+or through a dream, or whatever way, by saying that "Christians still have their vices".
+Then instead of spending money on whatever has previously been a vice,
+we should put that money into God's Kingdom, and I truly believe that God sanctifies and works in us as we do this.
+
+> **[Psalms 119:1-19](https://www.biblegateway.com/passage/?search=Psalms%20119%3A1-19&version=ESV)** - Blessed are those whose way is blameless, who walk in the law of the LORD! Aleph Blessed are those who keep his testimonies, who seek him with their whole heart, who also do no wrong, but walk in his ways! You have commanded your precepts to be kept diligently. Oh that my ways may be steadfast in keeping your statutes! Then I shall not be put to shame, having my eyes fixed on all your commandments. I will praise you with an upright heart, when I learn your righteous rules. I will keep your statutes; do not utterly forsake me! How can a young man keep his way pure? By guarding it according to your word. Beth With my whole heart I seek you; let me not wander from your commandments! I have stored up your word in my heart, that I might not sin against you. Blessed are you, O LORD; teach me your statutes! With my lips I declare all the rules of your mouth. In the way of your testimonies I delight as much as in all riches. I will meditate on your precepts and fix my eyes on your ways. I will delight in your statutes; I will not forget your word. Deal bountifully with your servant, that I may live and keep your word. Gimel Open my eyes, that I may behold wondrous things out of your law. I am a sojourner on the earth; hide not your commandments from me! (ESV)
 
 
 ## The free gift of salvation is to be set free from sin to be a slave of righteousness
@@ -13073,6 +13127,10 @@ Repentance involves turning away from sin, and all believers are supposed to tur
 
 > **[Romans 2:1-5](https://www.biblegateway.com/passage/?search=Romans%202%3A1-5&version=ESV)** - Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. (ESV)
 
+Turn away from sin and be corrected by the Truth:
+
+> **[Daniel 9:13](https://www.biblegateway.com/passage/?search=Daniel%209%3A13&version=ESV)** - As it is written in the Law of Moses, all this calamity has come upon us; yet we have not <ins>entreated the favor of the LORD our God</ins>, **turning from our iniquities and gaining insight by your truth**. (ESV)
+
 We must stop doing evil:
 
 > **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
@@ -14788,7 +14846,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org74ee88f)
+See: [33.4.1](#orge259a9f)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17196,6 +17254,11 @@ Therefore, it's an ongoing thing.
 But for our prayer requests to be answered this way, we must be keeping His commandments and do what pleases Him:
 
 > **[I John 3:21-24](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-24&version=ESV)** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+
+If we want our prayers answered by Father God, we must trust Jesus came from God as we treasure Jesus and treasure His words. It's **in that day** (when we are trusting Jesus and keeping His commandments, doing what pleases God), doing God's will, whatever we may ask of the Father in Jesus' name, He will give to us.
+In what day? In the day that the Father Himself loves (agape loves) us **because we have loved (agape loved) Jesus and trusted that He came from God**.
+
+> **[John 16:22-27](https://www.biblegateway.com/passage/?search=John%2016%3A22-27&version=ESV)** - So also you have sorrow now, but I will see you again and your hearts will rejoice, and no one will take your joy from you. **In that day you will ask nothing of me. Truly, truly, I say to you, whatever you ask of the Father in my name, he will give it to you.** Until now you have asked nothing in my name. Ask, and you will receive, that your joy may be full. I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. **In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, because you have loved me and have believed that I came from God.** (ESV)
 
 > **[Proverbs 14:26](https://www.biblegateway.com/passage/?search=Proverbs%2014%3A26&version=ESV)** - In the fear of the LORD one has strong confidence, and his children will have a refuge. (ESV)
 
@@ -21221,7 +21284,7 @@ As we come into Jesus' Kingdom, we should be praying for and trying to lead othe
 
 > **[Matthew 9:37-38](https://www.biblegateway.com/passage/?search=Matthew%209%3A37-38&version=ESV)** - Then he said to his disciples, The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest. (ESV)
 
-> **[I Timothy 2:1-4](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A1-4&version=ESV)** - First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people, for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way. This is good, and it is pleasing in the sight of God our Savior, who desires all people to be saved and to come to the knowledge of the truth. (ESV)
+> **[I Timothy 2:1-4](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A1-4&version=ESV)** - First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people, for kings and all who are in high positions, that we may lead a peaceful and quiet life, godly and dignified in every way. This is good, and it is pleasing in the sight of **God our Savior, who desires all people to be saved and to come to the knowledge of the truth.** (ESV)
 
 And build each other up to help each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
@@ -26059,7 +26122,7 @@ If the spirit spouse stuff is actually related to leftover sin in the body/mind/
 
 > **[Romans 7:22-8](https://www.biblegateway.com/passage/?search=Romans%207%3A22-8&version=ESV):2** - For I delight in the law of God, in my inner being, but I see in my members another law waging war against the law of my mind and making me captive to the law of sin that dwells in my members. Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
-> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell ([1067. geenna](https://biblehub.com/greek/1067.htm)). And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
 > **[I Corinthians 5:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A5&version=ESV)** - you are to deliver this man to Satan for the destruction of the flesh, so that his spirit may be saved in the day of the Lord. (ESV)
 
@@ -29226,7 +29289,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org74ee88f)
+See: [33.4.1](#orge259a9f)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -31150,7 +31213,7 @@ Be reconciled to one another:
 
 Take sin very seriously:
 
-> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell ([1067. geenna](https://biblehub.com/greek/1067.htm)). And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
 Follow the commandments **from the heart**, and in truth, accountable to God:
 
@@ -31256,7 +31319,11 @@ Practice righteousness, but do so to please God and be accountable to God who se
 
 > **[Matthew 23:3](https://www.biblegateway.com/passage/?search=Matthew%2023%3A3&version=ESV)** - so **practice and observe** whatever they tell you—but not what they do. For **they preach, but do not practice**. (ESV)
 
-Our kingdom is not of this world. We have a heavenly, not earthly perspective. Our treasure is in heaven. Our lives belong to God and we owe Him our faithfulness and service and we can't compromise our duties to God. We don't let Caesar have our hearts and minds. We can't let the devil steal from us our joy of God, or steal our good conscience with God. But if the secular world/kingdoms of this world lays claim to earthly things, we just allow them to have it, knowing we have greater treasure:
+Our kingdom is not of this world. We have a heavenly, not earthly perspective. Our treasure is in heaven. Our lives belong to God and we owe Him our faithfulness and service and we can't compromise our duties to God:
+
+> **[John 18:36](https://www.biblegateway.com/passage/?search=John%2018%3A36&version=ESV)** - Jesus answered, My kingdom is not of this world. If my kingdom were of this world, my servants would have been fighting, that I might not be delivered over to the Jews. But my kingdom is not from the world. (ESV)
+
+Our hearts and minds belong to God and noone else. Noone has the right to force us to obey unrighteousness. We can't let the devil steal from us our joy of God, or steal our good conscience with God. But if the secular world/kingdoms of this world lays claim to earthly things, we just allow them to have it, knowing we have greater treasure, heavenly reward:
 
 > **[Mark 12:17](https://www.biblegateway.com/passage/?search=Mark%2012%3A17&version=ESV)** - Jesus said to them, Render to Caesar the things that are Caesar's, and to God the things that are God's. And they marveled at him. (ESV)
 
@@ -31419,7 +31486,7 @@ Following Jesus:
 
 ### 
 
-> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell ([1067. geenna](https://biblehub.com/greek/1067.htm)). And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
 
 ### Do not swear an oath at all
@@ -37176,6 +37243,8 @@ As God judges, unrighteous people remain under punishment until they are judged 
 
 ### The outcome of just judgement for all
 
+> **[Job 12:10](https://www.biblegateway.com/passage/?search=Job%2012%3A10&version=ESV)** - In his hand is the life of every living thing and the breath of all mankind. (ESV)
+
 Glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.
 
 > **[Luke 16:22-25](https://www.biblegateway.com/passage/?search=Luke%2016%3A22-25&version=ESV)** - <ins>The poor man died and was carried by the angels to Abraham's side.</ins> The rich man also died and was buried, and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side. And he called out, Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame. But Abraham said, Child, remember that you in your lifetime received your good things, and Lazarus in like manner bad things; but now he is comforted here, and you are in anguish. (ESV)
@@ -37205,10 +37274,12 @@ If a person is a remorseless, unrepentant sinner, it's better for them that thei
 
 > **[I Corinthians 5:4-5](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A4-5&version=ESV)** - When you are assembled in the name of the Lord Jesus and my spirit is present, with the power of our Lord Jesus, you are to deliver this man to Satan for the destruction of the flesh, so that his spirit may be saved in the day of the Lord. (ESV)
 
-> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+-   **[G1067. geenna](https://www.blueletterbible.org/lexicon/g1067/kjv/tr/0-1/):** Hell is the place of the future punishment called "Gehenna" or "Gehenna of fire". This was originally the [valley of Hinnom](https://en.wikipedia.org/wiki/Gehenna), south of Jerusalem, where the filth and dead animals of the city were cast out and burned; a fit symbol of the wicked and their future destruction.
+
+> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell ([G1067. geenna](https://www.blueletterbible.org/lexicon/g1067/kjv/tr/0-1/)). And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
 -   **Me speculating:** Hades as it's used in this way could possibly look
-    appearance-wise the same, but perhaps God re-organises cities and their inhabitants (me speculating), say forcing unrepentant sinners to other cities. Or perhaps it really is a literal place.
+    appearance-wise the same, but perhaps God re-organises cities and their inhabitants (me speculating), say forcing unrepentant sinners to other cities. I still believe it's also literal place.
     
     **[Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV)** - And you, Capernaum, will you be exalted to heaven? You shall be brought down to Hades. (ESV)
 
@@ -37544,6 +37615,20 @@ It should be:
 -   **Medley:** [youtube.com: Holy Are You Lord Medley | Jesus Image](https://www.youtube.com/watch?v=8xs_wiKWZuc)
 -   **Song:** [youtube.com: All Honor {Consuming Fire} | Jesus Image](https://www.youtube.com/watch?v=DeHWWK3Vmnk)
 -   **Song:** [youtube.com: Praise {feat. Brandon Lake, Chris Brown & Chandler Moore} | Elevation Worship](https://www.youtube.com/watch?v=f2oxGYpuLkw)
+-   **[youtube.com: Hillsong - Saviour King 2007](https://youtu.be/kDRaaVKFV1s?t=2801):** Life began for me in just the realisation
+    that there is the absolute truth, and that is a Person,
+    Jesus, and knowing Him - knowing the Christ -
+    is knowing the hands that created me. The
+    thing is, I've known what it is to live
+    without truth, and then to be living in
+    truth, and it's a difference between
+    being *bound*, and then *living in absolute freedom*.
+    Like I just think about the
+    grace of God, just His grace, undeserved
+    for me, bought at the highest price and I
+    think in that understanding alone
+    there's no option but to give Him
+    everything I have. That is the only possible response.
 
 > **[Isaiah 64:4](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A4&version=ESV)** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, who acts for those who wait for him. (ESV)
 
