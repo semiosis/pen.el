@@ -36,16 +36,16 @@
 
 ;; But, if you try to do this with a quoted list, you'll get an error, because
 ;; the argument will be quoted too. To get around this, clojure provides a
-;; way of quoting macros: `. Inside `, you can use $HOME to get at the outer scope
+;; way of quoting macros: `. Inside `, you can use ~ to get at the outer scope
 (defmacro inc2-quoted [arg]
-  `(+ 2 $HOMEarg))
+  `(+ 2 ~arg))
 
 (inc2-quoted 2)
 
-;; You can use the usual destructuring args. Expand list variables using $HOME@
+;; You can use the usual destructuring args. Expand list variables using ~@
 (defmacro unless [arg & body]
-  `(if (not $HOMEarg)
-     (do $HOME@body))) ; Remember the do!
+  `(if (not ~arg)
+     (do ~@body))) ; Remember the do!
 
 (macroexpand '(unless true (reverse "Hello World")))
 ;; ->
@@ -73,8 +73,8 @@
 (defmacro define-x-safely []
   (let [sym (gensym 'x)]
     `(do
-       (def $HOMEsym 2)
-       (list $HOMEsym))))
+       (def ~sym 2)
+       (list ~sym))))
 
 (def x 4)
 (define-x-safely) ; -> (2)
