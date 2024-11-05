@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test "$#" -gt 0 && ! [[ "$last_arg" == -* ]]; then
+    #query="$last_arg"
+    #test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+
+    query="$*"
+    shift "$#"
+fi
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+test -f /usr/local/bin/top && : "${bin:="/usr/local/bin/top"}"
+test -f /usr/bin/top && : "${bin:="/usr/bin/top"}"
+
+: "${query:="$(rl pen-readln "top filter")"}"
+
+if test -n "$query"; then
+    # x -sh "/usr/bin/top $CMD" -f4 -s "$query" -c m -i
+    nvc x -sh "$bin $CMD" -e USER -s "o" -e "add filter" -s "COMMAND=$query" -c m -c m -i
+else
+    # /usr/bin/top "$@"
+    nvc $bin "$@"
+fi

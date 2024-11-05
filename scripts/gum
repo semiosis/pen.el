@@ -28,7 +28,9 @@ case "$subcommand" in
     # ;;
 
     write) {
-        nvc -2 ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+        # nvc -2 ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+        # TMUX= nvt -2 ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
+        ${GOPATH%%:*}/bin/gum "$subcommand" "$@"
     }
     ;;
 

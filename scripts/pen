@@ -24,6 +24,47 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
 
+cmd() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
+cmd-onelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str onelineify-safe)";
+    done | sed 's/ $//'
+}
+
+# cmd-unonelineify-safe is used for an eval. Therefore, I must properly escape contained single quotes
+cmd-unonelineify-safe() {
+    for var in "$@"
+    do
+        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe | sed "s/'/'\\\\''/g")";
+    done | sed 's/ $//'
+}
+
+cmd-nice() {
+    # TODO Check for builtin
+    # cmd-nice-jq
+
+    for var in "$@"
+    do
+        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+    done | sed 's/ $//'
+}
+
+cmd-nice-with-bs() {
+    for var in "$@"
+    do
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
+    done | sed 's/ $//'
+}
+
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export PEN_INVOCATION="$sn $(cmd "$@")"
@@ -944,7 +985,7 @@ if test "$start_shell" = "y"; then
         fi
 
         IFS= read -r -d '' shcode <<HEREDOC
-        docker run -d --rm --name "$PEN_CONTAINER_NAME" -ti \
+        pen-docker run -d --rm --name "$PEN_CONTAINER_NAME" -ti \
             -e DISPLAY=${DISPLAY} \
             --detach-keys="$docker_detach_keys" \
             $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
@@ -981,47 +1022,6 @@ HEREDOC
     fi
     exit "$?"
 fi
-
-cmd() {
-    for var in "$@"
-    do
-        printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
-    done | sed 's/ $//'
-}
-
-cmd-onelineify-safe() {
-    for var in "$@"
-    do
-        printf "'%s' " "$(printf %s "$var" | pen-str onelineify-safe)";
-    done | sed 's/ $//'
-}
-
-# cmd-unonelineify-safe is used for an eval. Therefore, I must properly escape contained single quotes
-cmd-unonelineify-safe() {
-    for var in "$@"
-    do
-        printf "'%s' " "$(printf %s "$var" | pen-str unonelineify-safe | sed "s/'/'\\\\''/g")";
-    done | sed 's/ $//'
-}
-
-cmd-nice() {
-    # TODO Check for builtin
-    # cmd-nice-jq
-
-    for var in "$@"
-    do
-        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
-        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
-    done | sed 's/ $//'
-}
-
-cmd-nice-with-bs() {
-    for var in "$@"
-    do
-        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
-        printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
-    done | sed 's/ $//'
-}
 
 vanilla=
 use_pen_config=y
@@ -2278,7 +2278,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env NO_EMACS --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
+pen-docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env NO_EMACS --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;
@@ -2313,6 +2313,11 @@ export EXPOSE_ETHEREUM
 export INTERACTIVE
 
 pen_eval_fuzzy_maybe() {
+    echo "$shcode" | hls purple 1>&2
+    if printf -- "%s\n" "$shcode" | grep -q -P "^pen-docker.*-ti.*setup-term.*eval.*newframe.sh" && ! test "$PEN_USE_GUI" = "y"; then
+        echo ensure xterm 1>&2
+    fi
+    # docker "exec" --detach-keys="ctrl-q,ctrl-q" --env USE_POOL --env USE_NVC --env NO_EMACS --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT -ti  "pen" bash -c ". ~/.emacs.d/pen.el/scripts/setup-term.sh; \"eval\" \"'/root/.emacs.d/host/pen.el/scripts/newframe.sh'\""
     if test -n "$fuzzy"; then
         pen_eval "$shcode" | eval "$fuzzy" | pen-str unonelineify
     else

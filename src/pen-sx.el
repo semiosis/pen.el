@@ -69,6 +69,8 @@
                  "serverfault")
                 ((string-match-p "superuser.com" url)
                  "superuser")
+                ((string-match-p "askubuntu.com" url)
+                 "askubuntu")
                 ((string-match-p ".stackexchange.com" url)
                  (s-replace-regexp (concat "^.*//\\([^.]+\\).*") "\\1" url))
                 (t

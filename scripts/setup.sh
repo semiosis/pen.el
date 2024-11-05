@@ -859,6 +859,10 @@ test -d $REPOS/go-ethereum || (
     go run build/ci.go install ./cmd/geth
 )
 
+# If I want to do anything seriously with haskell then I should start with ghcup as it knows about the complications of stack and cabal
+# https://www.haskell.org/ghcup/install/
+# curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
 # Haskell: - gcup, cabal, hls
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 # =gcup tui= to configure
@@ -2509,3 +2513,7 @@ git clone "https://github.com/clojure-emacs/clj-refactor.el"
 )
 
 agi xpra xserver-xephyr
+
+# Hiragana to Romanji converter
+pip install cutlet
+pip install unidic-lite

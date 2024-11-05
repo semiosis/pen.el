@@ -5,7 +5,7 @@ export TTY
 
 sn="$(basename -- "$0")"
 
-. $HOME/repos/sh-source/nvm-node
+. $HOME/sh-source/nvm-node
 
 sn_nvm_bin="$(printf -- "%s" "$sn" | which -a "$sn" | grep ".nvm/versions/node" | head -n 1)"
 test -f "$sn_nvm_bin" || npm install -g download-gist &>/dev/null

@@ -1592,6 +1592,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
       (dump-url-file-and-edit url))
      ((or (string-match-p "stackoverflow.com/[aq]" url)
           (string-match-p "serverfault.com/[aq]" url)
+          (string-match-p "askubuntu.com/[aq]" url)
           (string-match-p "superuser.com/[aq]" url)
           (string-match-p ".stackexchange.com/[aq]" url))
       (sx-from-url url))

@@ -22,7 +22,8 @@ h  htop
 H  ehtop
 w  what (bandwidth)
 W  powertop
-t  helmtop
+e  helmtop
+t  top
 L  multitail $NOTES/logs/*
 # a  sh-aws
 a  sh-services
@@ -65,7 +66,8 @@ case "$d" in
     w) cmd="msudo what" ;;
     # W) cmd="nvt powertop" ;;
     W) cmd="x -sh powertop -e reports -c i -c i -i" ;;
-    t) cmd="helmtop" ;;
+    e) cmd="helmtop" ;;
+    t) cmd="top" ;;
     L) cmd="multitail $NOTES/logs/*" ;;
     # a) cmd="sh-aws" ;;
     a) cmd="sh-services" ;;

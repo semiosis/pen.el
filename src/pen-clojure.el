@@ -795,6 +795,7 @@ the namespace in the Clojure source buffer"
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
 
 (defun y-or-n-p-around-advice (proc prompt)
+  (message "%s" (concat "y-or-n-p-around-advice: " prompt))
   (if (gui-p)
       (let ((res (apply proc (list prompt))))
         res)

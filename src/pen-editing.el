@@ -66,8 +66,15 @@
       (let ((recenter-position 0.3))
         (recenter '(4)))))
 
-(recentf-mode 1)
-(setq recentf-max-menu-items 25)
+(use-package recentf
+  :init
+  (setq
+   ;; recentf-save-file "$HOME/.cache/emacs/recentf"
+   recentf-max-saved-items 10000
+   recentf-max-menu-items 5000)
+  (recentf-mode 1)
+  (setq recentf-max-menu-items 25)
+  (run-at-time nil (* 5 60) 'recentf-save-list))
 
 (defun byte-recompile-directory (directory &optional arg force)
   "I hope this disables this function"

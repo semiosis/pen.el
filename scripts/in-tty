@@ -24,6 +24,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -xt) {
+        use_xt=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -53,6 +59,10 @@ elif test "$istty_stderr" = 0; then
         )
     fi
 else
-    # echo tpop 1>&2
-    tpop -E "$CMD"
+    if test "$use_xt" = "y"; then
+        xt -E "$CMD"
+    else
+        # echo tpop 1>&2
+        tpop -E "$CMD"
+    fi
 fi

@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+dn="$1"
+
+exec &>/dev/null
+
+# This works
+
+trap on_exit EXIT
+on_exit() {
+    echo "$(jobs -p)"
+    kill -9 $(jobs -p)
+    exit 0
+}
+
+if test -d "$dn"; then
+    cd "$dn"
+else
+    dn="$(pwd)"
+fi
+
+inotifywait -m "$dn" -r -e create | while read -r path action file; do
+    echo "path: $path, action: $action, file: $file" 
+done 1>&2
