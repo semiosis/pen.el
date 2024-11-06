@@ -5,7 +5,8 @@ export TTY
 
 . $PENELD/scripts/utils.sh
 
-cd ~/repos/figlet-fonts
+test -d ~/repos/figlet-fonts && cd ~/repos/figlet-fonts
+test -d ~/figlet-fonts && cd ~/figlet-fonts
 
 if test "$#" -eq 0; then
     if ! test "$istty_stderr" = 0; then
