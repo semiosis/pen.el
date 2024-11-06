@@ -104,6 +104,7 @@ stdin_exists() {
     if ! varexists hasstdin; then
         {
         ! [ -t 0 ] && \
+        ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
         ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
         ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
         # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)

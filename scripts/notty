@@ -56,7 +56,8 @@ if test "$use_sentinel" = "y"; then
     CMD="$CMD; stop-waiting-for \"$sentinel_string\""
 fi
 
-/usr/bin/nohup tmux run -b "$CMD" &>/dev/null
+# This neds a running tmux server
+/usr/bin/nohup tmux run -b "NO_STDIN=y $CMD" &>/dev/null
 
 if test "$use_sentinel" = "y"; then
     wait

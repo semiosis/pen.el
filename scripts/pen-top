@@ -3,6 +3,14 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+test -f /usr/local/bin/top && : "${bin:="/usr/local/bin/top"}"
+test -f /usr/bin/top && : "${bin:="/usr/bin/top"}"
+
+if test -n "$EMACS_TERM_TYPE"; then
+    $bin "$@"
+    exit "$?"
+fi
+
 test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test "$#" -gt 0 && ! [[ "$last_arg" == -* ]]; then
@@ -15,9 +23,6 @@ fi
 
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
-
-test -f /usr/local/bin/top && : "${bin:="/usr/local/bin/top"}"
-test -f /usr/bin/top && : "${bin:="/usr/bin/top"}"
 
 : "${query:="$(rl pen-readln "top filter")"}"
 
