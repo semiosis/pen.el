@@ -493,7 +493,9 @@ In believing we have eternal life, but we need to continue in obedience to Jesus
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 [Dietrich Bonhoeffer](https://www.youtube.com/watch?v=FVVImVBQ_nc) says it like this, “Only he who believes is obedient, and only he who is obedient believes.”
 
@@ -742,7 +744,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgffaa191) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orga685c11) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -2557,7 +2559,7 @@ And as a prophetic person, I do not want to encourage anyone to worship false-go
 
 We must turn to obedience to Jesus and loving with Christ's love to come to know Him. We **ought to** love as Christ loved us, as He is our Lord and Teacher, but Jesus **WASHED** (past-tense) us and then we **ought** to love as He did and we practice personal righteousness while having His imputed righteousness, as he is our Master.
 
-We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
+We are forgiven to do the will of God. We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
 
 > **[John 13:12-16](https://www.biblegateway.com/passage/?search=John%2013%3A12-16&version=ESV)** - When he had washed their feet and put on his outer garments and resumed his place, he said to them, Do you understand what I have done to you? You call me Teacher and Lord, and you are right, for so I am. If **I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. For I have given you an example, that you also should do just as I have done to you.** Truly, truly, I say to you, **a servant is not greater than his master**, nor is a messenger greater than the one who sent him. (ESV)
 
@@ -3064,6 +3066,10 @@ Like Jesus, we should do the will of God:
 
 > **[Acts 4:24-35](https://www.biblegateway.com/passage/?search=Acts%204%3A24-35&version=ESV)** - And when they heard it, they lifted their voices together to God and said, Sovereign Lord, who made the heaven and the earth and the sea and everything in them, who through the mouth of our father David, <ins>your servant, said by the Holy Spirit</ins>, Why did the Gentiles rage, and the peoples plot in vain? The kings of the earth set themselves, and the rulers were gathered together, against the Lord and against his Anointed— for truly in this city there were gathered together against your **holy servant Jesus**, whom you anointed, both Herod and Pontius Pilate, along with the Gentiles and the peoples of Israel, to do whatever your hand and your plan had predestined to take place. And now, Lord, look upon their threats and grant to your **servants** to continue to speak your word with all boldness, while you stretch out your hand to heal, and signs and wonders are performed through the name of your holy servant Jesus. And when they had prayed, the place in which they were gathered together was shaken, and **they were all filled with the Holy Spirit and continued to speak the word of God with boldness**. Now the full number of those who believed were of <ins>one heart and soul</ins>, and **no one said that any of the things that belonged to him was his own, but they had everything in common**. And with great power the apostles were giving their testimony to the resurrection of the Lord Jesus, and great grace was upon them all. There was not a needy person among them, for as many as were owners of lands or houses sold them and brought the proceeds of what was sold and laid it at the apostles' feet, <ins>and it was distributed to each **as any had need**</ins>. (ESV)
 
+-   **[1Clem 2:1](https://www.earlychristianwritings.com/text/1clement-lightfoot.html):** And ye were all lowly in mind and free from arrogance, yielding rather than claiming submission, more glad to give than to receive, and content with the provisions which God supplieth. And giving heed unto His words, ye laid them up diligently in your hearts, and His sufferings were before your eyes.
+
+-   **[1Clem 2:2](https://www.earlychristianwritings.com/text/1clement-lightfoot.html):** Thus a profound and rich peace was given to all, and an insatiable desire of doing good. **An abundant outpouring also of the Holy Spirit fell upon all;**
+
 
 ## In God's mercy, we come to obedient faith and come into Christ Jesus
 
@@ -3216,7 +3222,9 @@ In believing we have eternal life, but we need to continue in obedience to Jesus
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 Jesus Christ is our Lord and Teacher - that means we believe and obey Him:
 
@@ -3615,7 +3623,9 @@ We need to obey Jesus to see the life. That obedience isn't "working" but it is 
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -5788,7 +5798,9 @@ Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Je
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 I think believing in the Son is also obedience, but it is an act of obedience which is a gift to us.
 
@@ -6021,7 +6033,7 @@ Paul taught that we accept God's forgiveness for our sins by placing our trustin
 
 > **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
 
-But our good works can't make atonement for our sin. We must still be granted forgiveness from God. We know that anyone who places their trust in Jesus receives this forgiveness:
+While our good works can't make atonement for our sin, we are sanctified by Jesus' blood as we hold fast to the Truth and are corrected by and believe the Truth when we hear it and as we obey Righteousness (Jesus, the Truth). The Truth is the Word of God. Be believe and obey Jesus and we are sanctified in the Truth as we believe and obey Jesus. We must still be granted forgiveness from God. We know that anyone who places their trust in Jesus receives this forgiveness:
 
 > **[Hebrews 9:22](https://www.biblegateway.com/passage/?search=Hebrews%209%3A22&version=ESV)** - Indeed, under the law almost everything is purified with blood, and without the shedding of blood there is no forgiveness of sins. (ESV)
 
@@ -7207,7 +7219,9 @@ We need to obey Jesus to see the life. That obedience isn't "working" but it is 
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -7329,7 +7343,9 @@ Whoever believes Jesus obeys Jesus - His sheep hear his voice, <ins>trust and ob
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 God loves those who love Him and keep His commandments:
 
@@ -7565,7 +7581,9 @@ Believers are generally sealed with the Holy Spirit when they first believe:
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 We are saved as we are believing:
 
@@ -7893,7 +7911,9 @@ or they do not have the heart to obey and receive salvation - so they are a goat
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 
 ### Doing the will of God
@@ -7992,7 +8012,9 @@ Sovereign God, looks into dead, glory-ignoring heart and says, "Let there be lig
 
 We are being saved by the gospel as we hold fast to the word:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 By the grace of God, Christ died for our sins:
 
@@ -8389,12 +8411,21 @@ Follow God's statutes until the end. It's very blessed to do so. Allow God to ch
 
 -   **Encouragement:** [youtube.com: Psalm 119:33 follow Gods statutes until the end.](https://www.youtube.com/watch?v=E52T8RMiZ2k)
 
-Having given your money away to the poor, then when the devil typically tempts us through other people
+For example: Having given your money away to the poor, then when the devil typically tempts us through other people
 or through a dream, or whatever way, by saying that "Christians still have their vices".
 Then instead of spending money on whatever has previously been a vice,
-we should put that money into God's Kingdom, and I truly believe that God sanctifies and works in us as we do this.
+we should put that money into God's Kingdom, and I truly believe that God sanctifies and works in us as we choose to obey Jesus and are taught (corrected) by Jesus Himself by His teachings.
+God sets up the opportunities.
+
+-   **[1Clem prologue:1 (from the first epistle of Clement to the Corinthians)](https://www.earlychristianwritings.com/text/1clement-lightfoot.html):** The Church of God which sojourneth in Rome to the Church of God which sojourneth in Corinth, to them which are called and sanctified **by the will of God** through our Lord Jesus Christ. Grace to you and peace from Almighty God through Jesus Christ be multiplied.
 
 > **[Psalms 119:1-19](https://www.biblegateway.com/passage/?search=Psalms%20119%3A1-19&version=ESV)** - Blessed are those whose way is blameless, who walk in the law of the LORD! Aleph Blessed are those who keep his testimonies, who seek him with their whole heart, who also do no wrong, but walk in his ways! You have commanded your precepts to be kept diligently. Oh that my ways may be steadfast in keeping your statutes! Then I shall not be put to shame, having my eyes fixed on all your commandments. I will praise you with an upright heart, when I learn your righteous rules. I will keep your statutes; do not utterly forsake me! How can a young man keep his way pure? By guarding it according to your word. Beth With my whole heart I seek you; let me not wander from your commandments! I have stored up your word in my heart, that I might not sin against you. Blessed are you, O LORD; teach me your statutes! With my lips I declare all the rules of your mouth. In the way of your testimonies I delight as much as in all riches. I will meditate on your precepts and fix my eyes on your ways. I will delight in your statutes; I will not forget your word. Deal bountifully with your servant, that I may live and keep your word. Gimel Open my eyes, that I may behold wondrous things out of your law. I am a sojourner on the earth; hide not your commandments from me! (ESV)
+
+The Apostle John is teaching Jesus' teachings. Even if we / when we sin, we should just confess the sin we did, confess it as sin, turn away from it and try to not cease obeying Jesus, practicing His commandments. We shouldn't be deterred from "getting back up" when we make mistakes, but we want to continue with a good conscience having confessed the sin as sin and continuing endeavouring to practice Jesus' commandments, serving Jesus. We want to be walking in the light, practicing our righteousness (obeying Jesus who is our righteousness) with a good conscience with God:
+
+> **[I John 1:5-10](https://www.biblegateway.com/passage/?search=1%20John%201%3A5-10&version=ESV)** - **This is the message we have heard from him and proclaim to you**, that God is light, and in him is no darkness at all. If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not sinned, we make him a liar, and his word is not in us. (ESV)
+
+> **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
 
 
 ## The free gift of salvation is to be set free from sin to be a slave of righteousness
@@ -8457,7 +8488,9 @@ We need to obey Jesus to see the life. That obedience isn't "working" but it is 
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -9008,7 +9041,9 @@ Where there is perfect belief, I think there is perfect obedience. i.e. if we ho
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 I am confident also that if we hold firm to obedience in Jesus keeping and obeying His sayings and believe Jesus through testing, we have eternal life and will see life:
 
@@ -10782,7 +10817,9 @@ You **must** obey Jesus, and that is choosing **light** and choosing **agape lov
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 
 ### Get to know Jesus by believing Him and following His commandments
@@ -11518,9 +11555,41 @@ We are commanded by Paul the Apostle to present our members as **slaves to right
 
 > **[Romans 6:19](https://www.biblegateway.com/passage/?search=Romans%206%3A19&version=ESV)** - I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification. (ESV)
 
-We were purchased with the precious blood of Jesus Christ and we are supposed to be changed and purified to no longer being lawless!
+Here, I read light as basically a synonym for the truth:
+
+> **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+
+> **[I John 2:9-11](https://www.biblegateway.com/passage/?search=1%20John%202%3A9-11&version=ESV)** - Whoever says he is in the light and hates his brother is still in darkness. Whoever loves his brother abides in the light, and in him there is no cause for stumbling. But whoever hates his brother is in the darkness and walks in the darkness, and does not know where he is going, because the darkness has blinded his eyes. (ESV)
+
+Having fellowship with Him (Jesus) involves practicing the Truth as much as it involves believing the truth:
+
+> **[I John 1:6](https://www.biblegateway.com/passage/?search=1%20John%201%3A6&version=ESV)** - If we say we have **fellowship with him** while we <ins>walk</ins> in darkness, we lie and do not **practice the truth**. (ESV)
+
+We were purchased with the precious blood of Jesus Christ and we are supposed to be changed and purified to no longer being lawless!:
 
 > **[Titus 2:14](https://www.biblegateway.com/passage/?search=Titus%202%3A14&version=ESV)** - who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+
+We confess as sinful what the Bible says is sinful, then when we are tempted to obey unrighteousness we instead obey Righteousness (we obey Jesus) and when we continue learning from Jesus we believe and affirm what He says, becoming sanctified by the Truth as we go, while holding to the Truth of who He is with belief in His name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) we also maintain we are forgiven by faith in His name. For example, if we <ins>confess that what is sinful is sinful instead of denying that it is sinful</ins> then when we are tempted to commit sin, we instead choose to put our time/money/effort that would have been spent practicing  that sinful (such as a vice) towards supporting your neighbour out of obedience to Jesus (especially those you consider are in the family of Christ), we are being sanctified by obedience to the truth:
+
+> **[I John 1:9](https://www.biblegateway.com/passage/?search=1%20John%201%3A9&version=ESV)** - If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. (ESV)
+
+Believe and obey Jesus:
+
+> **[Luke 6:32-36](https://www.biblegateway.com/passage/?search=Luke%206%3A32-36&version=ESV)** - If you love those who love you, what benefit is that to you? For even sinners love those who love them. And if you do good to those who do good to you, what benefit is that to you? For even sinners do the same. And if you lend to those from whom you expect to receive, what credit is that to you? Even sinners lend to sinners, to get back the same amount. But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+
+We must submit to the Righteousness of God, and that means accepting the testimony of God regarding His Son:
+
+> **[John 3:19](https://www.biblegateway.com/passage/?search=John%203%3A19&version=ESV)** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+> **[I John 4:10](https://www.biblegateway.com/passage/?search=1%20John%204%3A10&version=ESV)** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. (ESV)
+
+> **[John 9:39](https://www.biblegateway.com/passage/?search=John%209%3A39&version=ESV)** - Jesus said, For judgment I came into this world, that those who do not see may see, and those who see may become blindn. (ESV)
+
+So the righteous ones walk in the light as He is in the light, believing and obeying Jesus, loving their neighbour as Jesus loved them first, and they submit to the Righteousness of God (Jesus Christ).
+
+Our faith we keep between ourself and God. You're accountable to Jesus for your beliefs:
+
+> **[Romans 14:22](https://www.biblegateway.com/passage/?search=Romans%2014%3A22&version=ESV)** - The faith that you have, keep between yourself and God. Blessed is the one who has no reason to pass judgment on himself for what he approves. (ESV)
 
 We must not allow ourselves to be conformed to or carried away by the error of lawless people. The error is their lawlessness:
 
@@ -12537,9 +12606,19 @@ That means that justifying faith involves obeying Jesus:
 
 > **[Romans 5:8-11](https://www.biblegateway.com/passage/?search=Romans%205%3A8-11&version=ESV)** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, <ins>now that we are reconciled, shall we be saved by his life.</ins> More than that, we also rejoice in God through <ins>our Lord</ins> Jesus Christ, through whom we have now received reconciliation.
 
-The free gift of justification is **received through faith**.
+We trust in His name. If you trust in Jesus you are not judged:
 
-And I believe we need an obedient heart towards Jesus to receive.
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - He who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Him is <ins>not judged</ins>; he who does not believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) has been judged [(G2919 krino)](https://www.blueletterbible.org/lexicon/g2919/kjv/tr/0-1/) already [(G2235 ede)](https://www.blueletterbible.org/lexicon/g2235/kjv/tr/0-1/), because he has not believed [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the name of the only begotten Son of God. (NASB)
+
+The free gift of justification is **received through faith** in God.
+
+And I believe we need a trusting (characteristically believing and obedient) heart towards Jesus to receive this justification.
+
+> **[John 12:48](https://www.biblegateway.com/passage/?search=John%2012%3A48&version=ESV)** - The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day. (ESV)
+
+Trust God's Word given through Jesus:
+
+> **[John 5:24-26](https://www.biblegateway.com/passage/?search=John%205%3A24-26&version=ESV)** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. <ins>He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.</ins> Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself.􀀧􁱾
 
 It's not about putting our hope on compliance
 to the Mosaic law to save us but it's about
@@ -12547,7 +12626,7 @@ obeying Jesus / loving Jesus / trusting Jesus,
 and the compliance to God's law will come
 naturally while obeying Jesus.
 
-The justifying work is finished - Jesus finished it, now we follow Him through the same way he went, by trusting in Him to save us, believing Him, obeying Him and remaining faithful to Him.
+The justifying work is finished - Jesus finished it, now we follow Him through the same way he went, by trusting in Him to save us, believing Him, obeying Him and remaining faithful to Him. We want to be teachable by Him and to affirm the words He has spoken. Our behaviour should change to reflect our belief in what Jesus has spoken. We are forgiven to do the will of God.
 
 Now we need faith to receive it and I believe
 that faith necessitates love for Jesus, which
@@ -13072,7 +13151,7 @@ God's law is still used in judgement, but the one who has faith in Jesus is not 
 
 [John 3:18 Interlinear: he who is believing in him is not judged, but he who is not believing hath been judged already, because he hath not believed in the name of the only begotten Son of God.](https://biblehub.com/interlinear/john/3-18.htm)
 
-> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=NASB)** - He who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Him is not judged; he who does not believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in the name of the only begotten Son of God. (NASB)
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=NASB)** - He who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Him is <ins>not judged</ins>; he who does not believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in the name of the only begotten Son of God. (NASB)
 
 Firstly, obedient children are children who hear the word of God, believe and love God, and we should be holy in all our conduct if we call on the LORD God who judges impartially according to each one's deeds:
 
@@ -14346,7 +14425,9 @@ Where there is perfect belief, I think there is perfect obedience. i.e. if we ho
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 I am confident also that if we hold firm to obedience in Jesus keeping and obeying His sayings and believe Jesus through testing, we have eternal life and will see life:
 
@@ -14846,7 +14927,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orge259a9f)
+See: [33.4.1](#org910d2a7)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15031,7 +15112,9 @@ Believing in Jesus and obeying Jesus go hand in hand. Believing in Jesus, obeyin
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 Jesus' commandments are all about selfless love. We must abide in Jesus' teaching and believe. It's imperative that as we go ahead, we **must** abide in the teaching of Christ. Confessing the coming of Jesus Christ in the flesh, and walking according to Jesus' commandments go hand in hand:
 
@@ -15766,7 +15849,9 @@ Seriously, this verse:
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
@@ -15884,7 +15969,9 @@ Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Je
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 
 ### God desired to give assurance to the heirs of the promise
@@ -21733,7 +21820,7 @@ Be humble:
 
 ## Both Father God and Jesus Christ God's Son have life in Himself and the power to resurrect
 
-> **[John 5:24-26](https://www.biblegateway.com/passage/?search=John%205%3A24-26&version=ESV)** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life. Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself.
+> **[John 5:24-26](https://www.biblegateway.com/passage/?search=John%205%3A24-26&version=ESV)** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. <ins>He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.</ins> Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself.
 
 > **[John 5:21](https://www.biblegateway.com/passage/?search=John%205%3A21&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. (ESV)
 
@@ -24070,7 +24157,9 @@ Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 > **[John 5:34](https://www.biblegateway.com/passage/?search=John%205%3A34&version=ESV)** - Not that the testimony that I receive is from man, but I say these things so that you may be saved. (ESV)
 
@@ -25256,7 +25345,9 @@ Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Je
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 Therefore, I don't want to flat-out disqualify people who do not have precisely the correct doctrine or theology.
 
@@ -29195,7 +29286,9 @@ Obeying Jesus is very important:
 
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
-> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+> **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast ([2722. katechó](https://biblehub.com/greek/2722.htm)) to the word I preached to you—unless you believed in vain. (ESV)
+
+-   **[2722. katechó](https://biblehub.com/greek/2722.htm):** Usage: (a) I hold fast, bind, arrest, (b) I take possession of, lay hold of, (c) I hold back, detain, restrain, (d) I hold a ship, keep its head.
 
 -   **Song:** [youtube.com: Charity Gayle - Thank You Jesus for the Blood {Live}](https://www.youtube.com/watch?v=dhU-Omwg2rU&list=RDdhU-Omwg2rU&start_radio=1)
 
@@ -29289,7 +29382,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orge259a9f)
+See: [33.4.1](#org910d2a7)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -35231,7 +35324,7 @@ good - it was like heaven in terms of my
 happiness. It felt right and I felt close to Jesus too.
 However, I still had a lot to learn about following Jesus and dying to self.
 
-We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
+We are forgiven to do the will of God. We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
 
 > **[John 13:12-16](https://www.biblegateway.com/passage/?search=John%2013%3A12-16&version=ESV)** - When he had washed their feet and put on his outer garments and resumed his place, he said to them, Do you understand what I have done to you? You call me Teacher and Lord, and you are right, for so I am. If **I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. For I have given you an example, that you also should do just as I have done to you.** Truly, truly, I say to you, **a servant is not greater than his master**, nor is a messenger greater than the one who sent him. (ESV)
 
@@ -35964,7 +36057,7 @@ While the following verse seems relevant, I still believe the real adversary I h
 
 We must turn to obedience to Jesus and loving with Christ's love to come to know Him. We **ought to** love as Christ loved us, as He is our Lord and Teacher, but Jesus **WASHED** (past-tense) us and then we **ought** to love as He did and we practice personal righteousness while having His imputed righteousness, as he is our Master.
 
-We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
+We are forgiven to do the will of God. We are saved to obey God better. God puts us into Christ. We obey to wash others, and for ourselves to be sanctified, like a branch becoming healthier in the tree:
 
 > **[John 13:12-16](https://www.biblegateway.com/passage/?search=John%2013%3A12-16&version=ESV)** - When he had washed their feet and put on his outer garments and resumed his place, he said to them, Do you understand what I have done to you? You call me Teacher and Lord, and you are right, for so I am. If **I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. For I have given you an example, that you also should do just as I have done to you.** Truly, truly, I say to you, **a servant is not greater than his master**, nor is a messenger greater than the one who sent him. (ESV)
 
