@@ -744,7 +744,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orga685c11) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5e15583) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -11607,7 +11607,7 @@ Part of the will of Father God is that we repent from sin:
 # Try to clarify what **sin** looks like from Bible verses
 
 -   1. Rejecting Jesus
-    -   **[John 15:22-23](https://www.biblegateway.com/passage/?search=John%2015%3A22-23&version=ESV)** - If I had not come and spoken to them, they would not have been guilty of sin, but **now they have no excuse for their sin. Whoever hates me hates my Father also.**
+    -   **[John 15:22-24](https://www.biblegateway.com/passage/?search=John%2015%3A22-24&version=ESV)** - If I had not come and spoken to them, they would not have been guilty of sin, but **now they have no excuse for their sin. Whoever hates me hates my Father also**. If I had not done among them the works that no one else did, they would not be guilty of sin, but now <ins>they have seen and hated both me and my Father.</ins> (ESV)
 -   2. Disobeying God - absolutely 100%
     -   **[Romans 5:19](https://www.biblegateway.com/passage/?search=Romans%205%3A19&version=ESV)** - For as **by the one man's disobedience the many were made sinners**, so by the one man's obedience the many will be made righteous.
     -   Breaking God's law? Sure.
@@ -14404,7 +14404,7 @@ And in **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&
 
 If you are believing in Jesus, then you are obediently working.
 
-To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified by working faith, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of all who believe without being circumcised</ins>, so that righteousness would be counted to them as well, and <ins>to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -14927,7 +14927,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org910d2a7)
+See: [33.4.1](#org4e2cbaa)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15526,11 +15526,65 @@ Hebrews addressed the same passage which Jesus addressed:
 
 ## Working faith
 
-Works and faith can't exist apart from one another because even to believe in Jesus is a work, and if the belief is true then the obedience continues.
+Works and faith can't really exist apart from one another because *even to believe in Jesus is a work* - a work done in Christ, that is:
 
-> **[John 6:28-29](https://www.biblegateway.com/passage/?search=John%206%3A28-29&version=ESV)** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in him whom he has sent.**
+> **[John 6:27](https://www.biblegateway.com/passage/?search=John%206%3A27&version=ESV)** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal. (ESV)
 
-To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+If the belief is true then we'll continue believing Jesus with all the other things He said:
+
+> **[John 18:37](https://www.biblegateway.com/passage/?search=John%2018%3A37&version=ESV)** - Then Pilate said to him, So you are a king? Jesus answered, You say that I am a king. For this purpose I was born and for this purpose I have come into the world—to bear witness to the truth. **Everyone who is of the truth listens to my voice**. (ESV)
+
+> **[John 10:16](https://www.biblegateway.com/passage/?search=John%2010%3A16&version=ESV)** - And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
+
+> **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+We need to believe and **then** call on Jesus, usually out of desperation, to save us:
+
+> **[Romans 10:12-14](https://www.biblegateway.com/passage/?search=Romans%2010%3A12-14&version=ESV)** - For there is no distinction between Jew and Greek; the same Lord is Lord of all, bestowing his riches on all who call on him. For **everyone who calls on the name of the Lord will be saved.** But how are they to call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? (ESV)
+
+Ironically, I feel like this word [hupakouó](https://biblehub.com/greek/5219.htm) which means to "fully hearken" (it's an intensification of the verb "to listen" with connotations of paying attention and responding to obey) may have been "demoted" in meaning by many people to not at all mean "fully hearken to / become obedient to the command":
+
+> **[Romans 10:16](https://www.biblegateway.com/passage/?search=Romans%2010%3A16&version=ESV)** - But they have not all obeyed ([G5219. hupakouó](https://biblehub.com/greek/5219.htm) - *I listen, hearken to, obey, answer*) gospel. For Isaiah says, Lord, who has believed [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what he has heard from us? (ESV)
+
+Hupakouó really means to be fully compliant to:
+
+    1  5219 /hypakoúō ("obey") is acting under the authority of the one speaking, i.e. really listening to the one giving the charge (order). 5219 /hypakoúō ("to hearken, obey") suggests attentively listening, i.e. fully compliant (responsive).
+    2  
+    3  [5219 (hypakoúō) is an "intensification" of the simple verb "to listen" (191 /akoúō, "hear").]
+
+     1  235  3756 3956    5219       3588    2098         2268   1063 3004    
+     2  All’ ou   pantes  hypēkousan tō      euangeliō    Ēsaias gar  legei   
+     3  Ἀλλ’ οὐ   πάντες  ὑπήκουσαν  τῷ      εὐαγγελίῳ  . Ἠσαΐας γὰρ  λέγει  ,
+     4  But  not  all     heeded     the     good news    Isaiah for  says    
+     5  Conj Adv  Adj-NMP V-AIA-3P   Art-DNS N-DNS        N-NMS  Conj V-PIA-3S
+     6  
+     7  2962     5101     4100         3588    189    1473    
+     8  Kyrie    tis      episteusen   tē      akoē   hēmōn   
+     9  Κύριε  , τίς      ἐπίστευσεν   τῇ      ἀκοῇ   ἡμῶν  ? 
+    10  Lord     who      has believed the     report of us   
+    11  N-VMS    IPro-NMS V-AIA-3S     Art-DFS N-DFS  PPro-G1P
+
+So we have to believe on Him (who He is), and call on Him to save us - and this is an act of obedience to His command to trust in Him and call on Him, so we come to trust and obey Him:
+
+> **[Acts 5:32](https://www.biblegateway.com/passage/?search=Acts%205%3A32&version=ESV)** - And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him. (ESV)
+
+If we're "of the Truth" then we will hear His words and be corrected by His teaching, and not disregard all His words, but believe them as we hear them:
+
+> **[John 18:37](https://www.biblegateway.com/passage/?search=John%2018%3A37&version=ESV)** - Then Pilate said to him, So you are a king? Jesus answered, You say that I am a king. For this purpose I was born and for this purpose I have come into the world—to bear witness to the truth. Everyone who is of the truth listens to my voice. (ESV)
+
+The obedience continues:
+
+> **[John 14:12](https://www.biblegateway.com/passage/?search=John%2014%3A12&version=ESV)** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+> **[John 6:28-29](https://www.biblegateway.com/passage/?search=John%206%3A28-29&version=ESV)** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is **the work of God**, that **you believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in him whom he has sent.**
+
+> **[James 2:26](https://www.biblegateway.com/passage/?search=James%202%3A26&version=ESV)** - For as the body without the spirit is dead, so faith without works is dead also. (KJV)
+
+Justifying obedience can exist without work. It says, "Have mercy on me a sinner&#x2026; Please give me another chance to do Your will, LORD.":
+
+> **[Luke 18:10-14](https://www.biblegateway.com/passage/?search=Luke%2018%3A10-14&version=ESV)** - Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. But the tax collector, standing far off, would not even lift up his eyes to heaven, but **beat his breast, saying, God, be merciful to me, a sinner**! I tell you, this man went down to his house justified, rather than the other. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted. (ESV)
+
+To be justified by working faith, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of all who believe without being circumcised</ins>, so that righteousness would be counted to them as well, and <ins>to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -19654,7 +19708,7 @@ The promise is eternal life which is knowing and never being disconnected from G
 
 > **[John 17:3](https://www.biblegateway.com/passage/?search=John%2017%3A3&version=ESV)** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
-To be justified, a person must have the faith like Abraham's but in God the Father of Christ Jesus, and our faith is in Christ Jesus as Father God sent Jesus.
+To be justified by working faith, a person must have the faith like Abraham's but in God the Father of Christ Jesus, and our faith is in Christ Jesus as Father God sent Jesus.
 
 -   **Sermon:** [youtube.com: What Do We Believe?](https://www.youtube.com/watch?v=kSA32FvkVEs)
 
@@ -21554,7 +21608,7 @@ Anyway, see Revelation and you will see Jesus points out different works for dif
 
 ### The faith of Abraham looks like this. This is what salvation-accepting faith looks like
 
-To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified by working faith, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of all who believe without being circumcised</ins>, so that righteousness would be counted to them as well, and <ins>to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -29382,7 +29436,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org910d2a7)
+See: [33.4.1](#org4e2cbaa)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -37772,6 +37826,8 @@ People still have to put their trust in Jesus when the testimony of Jesus comes 
 > **[John 12:31-32](https://www.biblegateway.com/passage/?search=John%2012%3A31-32&version=ESV)** - Now is the judgment of this world; now will the ruler of this world be cast out. And I, when I am lifted up from the earth, will draw all people to myself. (ESV)
 
 > **[John 6:40](https://www.biblegateway.com/passage/?search=John%206%3A40&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. (ESV)
+
+> **[John 15:22-24](https://www.biblegateway.com/passage/?search=John%2015%3A22-24&version=ESV)** - If I had not come and spoken to them, they would not have been guilty of sin, but **now they have no excuse for their sin. Whoever hates me hates my Father also**. If I had not done among them the works that no one else did, they would not be guilty of sin, but now <ins>they have seen and hated both me and my Father.</ins> (ESV)
 
 > **[John 8:47](https://www.biblegateway.com/passage/?search=John%208%3A47&version=ESV)** - Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
 
