@@ -748,7 +748,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org282db43) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org19fb79e) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1949,26 +1949,50 @@ Interestingly, the dates also line up very closely with Ramadan, but it was actu
 
 <tbody>
 <tr>
-<td class="org-left">Ramadan</td>
+<td class="org-left"><b>Ramadan</b></td>
 <td class="org-left">Evening of Fri, 1 Apr 2022 – Sun, 1 May 2022</td>
 </tr>
 
 
 <tr>
-<td class="org-left">Nisan</td>
-<td class="org-left">2 April 2022 (Saturday) - May 1 2022</td>
+<td class="org-left"><b>Nisan</b></td>
+<td class="org-left"><b>2 April 2022</b> (Saturday) - May 1 2022</td>
 </tr>
 
 
 <tr>
-<td class="org-left">Passover</td>
+<td class="org-left"><b>Passover</b></td>
 <td class="org-left">Evening of Fri, 15 Apr 2022 – Sat, 23 Apr 2022</td>
 </tr>
 
 
 <tr>
-<td class="org-left">Lent</td>
+<td class="org-left"><b>Lent</b></td>
 <td class="org-left">Wed, 2 Mar 2022 – Thu, 14 Apr 2022</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Born-again of the Spirit</td>
+<td class="org-left"><a href="https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/">2 April 2022</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">Meeting with Holy Spirit</td>
+<td class="org-left"><a href="https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/">3 May 2022</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">Marriage proposal</td>
+<td class="org-left">10 Aug 2022</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Pleaded guilty in court</td>
+<td class="org-left">3 May 2023</td>
 </tr>
 </tbody>
 </table>
@@ -14960,7 +14984,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org2895c2e)
+See: [33.4.1](#org46bc896)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -29469,7 +29493,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org2895c2e)
+See: [33.4.1](#org46bc896)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -35184,11 +35208,11 @@ I felt like giving up, and I cried out to Jesus one night to save me:
 > **[Romans 10:13](https://www.biblegateway.com/passage/?search=Romans%2010%3A13&version=ESV)** - For everyone who calls on the name of the Lord will be saved. (ESV)
 
 
-## In defense of any type of love for God before being born-again
+## In defense of any type of love for God before being born-again on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/)
 
 > **[Hebrews 11:6](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A6&version=ESV)** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
-I had already begun to seek God before I was born-again of the Spirit / regenerated on 2 April 2022.
+I had already begun to seek God around a year before I was born-again of the Spirit / regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/).
 
 > **[Jeremiah 29:13-14](https://www.biblegateway.com/passage/?search=Jeremiah%2029%3A13-14&version=ESV)** - You will seek me and find me. When you seek me with all your heart, I will be found by you, declares the LORD, and I will restore your fortunes and gather you from all the nations and all the places where I have driven you, declares the LORD, and I will bring you back to the place from which I sent you into exile. (ESV)
 
@@ -36644,7 +36668,7 @@ Jehovah God as my witness.
 
 ## I'm definitely leaving this stuff in God's court
 
-At the end of the day I am resting on the righteousness that comes through faith in Jesus - Amen to that.
+At the end of the day I am resting on the righteousness that comes through faith in Jesus - Amen to that. It's by faith in Jesus' name that we are forgiven.
 
 I've been going through a lot of trial and tribulation over the last 2 years:
 
@@ -37066,7 +37090,7 @@ We're supposed to do good works of faith by Jesus' power so that Jesus' name is 
 
 ### Believers will marvel. The saints will do good works which glorify Jesus, all done in God's grace
 
-I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Saints both believe and keep the God's commandments. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
+I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Believers are forgiven through Jesus' name. Saints both believe and keep God's commandments. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
 
 > **[II Thessalonians 1:9-12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%201%3A9-12&version=ESV)** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
 

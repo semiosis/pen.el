@@ -2517,3 +2517,5 @@ agi xpra xserver-xephyr
 # Hiragana to Romanji converter
 pip install cutlet
 pip install unidic-lite
+
+agi autossh
