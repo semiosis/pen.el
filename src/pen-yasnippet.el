@@ -297,14 +297,16 @@ for normal snippets, and a list for command snippets)."
   (chomp (pen-bp xargs get-interpreter-for-file fp)))
 
 (defun get-interpreter-for-buffer ()
-  (let ((tf (or (if (and (not (eq major-mode 'org-mode))
-                         (string-match-p "\.org$" (get-path)))
-                    (concat "x\." (get-ext-for-mode)))
-                (if (eq major-mode 'fundamental-mode)
-                    "x\.sh")
-                (get-path))))
+  (if (eq major-mode 'go-mode)
+      "///bin/true; exec /usr/bin/env go run \"$0\" \"$@\""
+    (let ((tf (or (if (and (not (eq major-mode 'org-mode))
+                           (string-match-p "\.org$" (get-path)))
+                      (concat "x\." (get-ext-for-mode)))
+                  (if (eq major-mode 'fundamental-mode)
+                      "x\.sh")
+                  (get-path))))
 
-    (concat "#!" (chomp (pen-bp xargs get-shebang-for-file tf)))))
+      (concat "#!" (chomp (pen-bp xargs get-shebang-for-file tf))))))
 
 (defun yas--snippet-parse-create (snippet)
   "Parse a recently inserted snippet template, creating all

@@ -2495,11 +2495,15 @@ This function accepts any number of ARGUMENTS, but ignores them."
 (defmacro 2+ (var)
        (list '+ var 2))
 
+(defun file-has-shebang-p ()
+  (or (string-equal (buffer-substring (point-min) (2+ (point-min))) "#!")
+      (string-equal (buffer-substring (point-min) (+ 30 (point-min))) "///bin/true; exec /usr/bin/env")))
+
 (defun if-shebang-exec-otherwise-remove ()
   "Adds x perm to current file acl if file has a shebang."
   (interactive)
   (ignore-errors
-    (try (if (string-equal (buffer-substring (point-min) (2+ (point-min))) "#!")
+    (try (if (file-has-shebang-p)
              (progn
                (if (not (pen-blq pen-ux isx (s/rp (buffer-name))))
                    (progn
