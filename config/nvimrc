@@ -2487,3 +2487,12 @@ map <silent> <Leader>= ;<C-U>DiffPrevRev(v:count1)<CR>
 
 let g:MRU_Use_Current_Window = 1
 let g:MRU_Max_Entries = 100000
+
+" visually move lines up and down
+vnoremap <ESC>N :m '>+1<CR>gv=gv
+vnoremap <ESC>P :m '<-2<CR>gv=gv
+
+" TODO save and restore the region
+" visually move paragraph/selection up and down - more useful
+vnoremap <ESC>J j"xx}"xpvip
+vnoremap <ESC>K ok"xx{"xPjvip
