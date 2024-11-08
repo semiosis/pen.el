@@ -1,30 +1,31 @@
 
 # Table of Contents
 
-1.  [That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ](#orgd94d06e)
-2.  [Valentinus](#org74ee426)
-    1.  [Refutations](#org6febb02)
-        1.  [Refutation of All Heresies (Hippolytus)](#orgd672c3b)
-3.  [Universal religion](#orga641651)
-4.  [Mixing paganism with Christianity](#org552b38a)
-5.  [WATV - World Mission Society Church of God](#org9a58c7f)
-6.  [JW](#org0c0ec52)
-    1.  [Some thoughts I have to correct JW theology](#org17f3f59)
-        1.  [The divine name](#org95e8432)
-7.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#orgc52b04a)
-8.  [Free-grace without Lordship salvation](#org242dcd4)
-9.  [Lordship salvation without free-grace](#orgc8a1468)
-10. [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#orgdd297f1)
-    1.  [They also have to repent from idolatry](#orgb86badd)
-        1.  [Idolatry](#org6aef85a)
-11. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#orgcb24ea1)
+1.  [That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ](#orgf60354a)
+2.  [Marcion of Sinope](#orgc95ccef)
+3.  [Valentinus](#orgb3bff44)
+    1.  [Refutations](#orge8a50a4)
+        1.  [Refutation of All Heresies (Hippolytus)](#orgfc615ff)
+4.  [Universal religion](#orgc550187)
+5.  [Mixing paganism with Christianity](#org2c1dde1)
+6.  [WATV - World Mission Society Church of God](#org3b168e4)
+7.  [JW](#org8299111)
+    1.  [Some thoughts I have to correct JW theology](#orgc8a4b16)
+        1.  [The divine name](#org54cdd0c)
+8.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#org7e0dfa6)
+9.  [Free-grace without Lordship salvation](#org6c915c8)
+10. [Lordship salvation without free-grace](#org211a170)
+11. [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org70261d5)
+    1.  [They also have to repent from idolatry](#org9c03fbc)
+        1.  [Idolatry](#org384328f)
+12. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#orgb6b4c25)
 
 I still think God saves heretics who placed their trusting faith in Jesus, or placed their trust in God the Father of Jesus Christ by trusting Jesus, and also the circumcised who exercise Abrahams works of faith, but it's really His call - God sees the heart.
 People's trust in Jesus exhibits itself in faithfully walking in the light of the Gospel of Jesus,
 and Jesus' gospel involved keeping our eyes on Him, trusting Him, believing Him, obeying Him.
 
 
-<a id="orgd94d06e"></a>
+<a id="orgf60354a"></a>
 
 # That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ
 
@@ -46,7 +47,70 @@ be corrected by the Word of God, then we should separate ourselves from them.
 > **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
 
 
-<a id="org74ee426"></a>
+<a id="orgc95ccef"></a>
+
+# Marcion of Sinope
+
+Marcionism is quite prevalent these days in
+the church, which is really disappointing, and
+that is why I'm putting it in this document.
+
+-   **[thegospelcoalition.org: Marcion and Getting Unhitched from the Old Testament](https://www.thegospelcoalition.org/blogs/kevin-deyoung/marcion-getting-unhitched-old-testament/):** Marcion was one of the most successful heretics in the early church.
+    He was opposed by everyone who was anyone.
+    
+    For nearly a century after his death, he was
+    the arch-heretic, opposed by Polycarp (who
+    called him the firstborn of Satan), Justin
+    Martyr, Irenaeus, Clement, Tertullian,
+    Hippolytus, and Origen.
+    
+    He was one of the few heretics that the Greek
+    and Latin Christians united in condemning.
+    
+    After his excommunication, he traveled around
+    the world as a missionary for his version of
+    Christianity.
+    
+    And he won a lot of converts.
+    
+    According to Tertullian, he planted churches
+    as “wasps make nests,” teaching men “to deny
+    that God is the maker of all things in heaven
+    and earth and the Christ predicted by the
+    prophets is his Son.” Marcion’s church was
+    rigorous, demanding, inspiring, well-
+    organized, and for about a century fairly
+    successful.
+    
+    Marcion’s theological errors (and there were
+    many) came from one main root: he refused to
+    believe that the God of the Old Testament was
+    the same as the Father of the Lord Jesus
+    Christ.
+    
+    Marcion simply could not believe in a God full
+    of wrath and justice.
+    
+    So he threw away the Old Testament and took
+    for his Bible a truncated version of Luke’s
+    Gospel and selectively edited versions of
+    Paul’s epistles.
+    
+    When all the cutting and pasting was finished,
+    Marcion had the Christianity he wanted: a God
+    of goodness and nothing else a message of
+    inspiring moral uplift a Bible that does away
+    with the uncomfortable bits about God’s wrath
+    and hell.
+    
+    Marcionism was antinomian, idealistic about
+    human potential, and skittish about dogma and
+    rules.
+
+So yeah, I just rebuke that spirit of Marcionism in Jesus Christ's name.
+
+
+<a id="orgb3bff44"></a>
 
 # Valentinus
 
@@ -56,26 +120,26 @@ But I think at least they tried to conform to the image of Christ from what I ca
 So, yeah, a lot of modern-day Christianity is probably even more heretical than Valentinianism to be honest.
 
 
-<a id="org6febb02"></a>
+<a id="orge8a50a4"></a>
 
 ## Refutations
 
 
-<a id="orgd672c3b"></a>
+<a id="orgfc615ff"></a>
 
 ### Refutation of All Heresies (Hippolytus)
 
 [CHURCH FATHERS: Refutation of All Heresies, Book VI {Hippolytus}](https://www.newadvent.org/fathers/050106.htm)
 
 
-<a id="orga641651"></a>
+<a id="orgc550187"></a>
 
 # Universal religion
 
 -   trying to unite all religions as if they are all equal
 
 
-<a id="org552b38a"></a>
+<a id="org2c1dde1"></a>
 
 # Mixing paganism with Christianity
 
@@ -84,7 +148,7 @@ So, yeah, a lot of modern-day Christianity is probably even more heretical than 
 It disgusts me when people pursue paganism, the occult and demons.
 
 
-<a id="org9a58c7f"></a>
+<a id="org3b168e4"></a>
 
 # WATV - World Mission Society Church of God
 
@@ -96,7 +160,7 @@ It disgusts me when people pursue paganism, the occult and demons.
     -   They believe Gentiles are under the Mosaic law.
 
 
-<a id="org0c0ec52"></a>
+<a id="org8299111"></a>
 
 # JW
 
@@ -113,7 +177,7 @@ He's not a creature. The Son of God is [not a created being](https://www.youtube
 > **John 1:3** - **All things were made through him**, and <span class="underline">without him was not **any thing** made that was made.</span> (ESV)
 
 
-<a id="org17f3f59"></a>
+<a id="orgc8a4b16"></a>
 
 ## Some thoughts I have to correct JW theology
 
@@ -183,7 +247,7 @@ Also, I believe that Jesus was from the very beginning Jehovah's Son.
 AMEN!!
 
 
-<a id="org95e8432"></a>
+<a id="org54cdd0c"></a>
 
 ### The divine name
 
@@ -223,7 +287,7 @@ I consider that the reason for this is simply in that we do not take the LORD's 
 But we also want the LORD's name to be remembered.
 
 
-<a id="orgc52b04a"></a>
+<a id="org7e0dfa6"></a>
 
 # In my independent Bible-Studying, I have not yet delved into many modern Christian sects
 
@@ -234,7 +298,7 @@ But I find this person's website trustworthy:
 <https://jesusisgodandlordministries.com/>
 
 
-<a id="org242dcd4"></a>
+<a id="org6c915c8"></a>
 
 # Free-grace without Lordship salvation
 
@@ -292,7 +356,7 @@ We must accept this teaching:
 AMEN!!
 
 
-<a id="orgc8a1468"></a>
+<a id="org211a170"></a>
 
 # Lordship salvation without free-grace
 
@@ -311,7 +375,7 @@ I think that actually following Jesus is probably superior to someone who says t
 > **[Matthew 12:50](https://www.biblegateway.com/passage/?search=Matthew%2012%3A50&version=ESV)** - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
 
 
-<a id="orgdd297f1"></a>
+<a id="org70261d5"></a>
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
@@ -366,7 +430,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[James 1:26](https://www.biblegateway.com/passage/?search=James%201%3A26&version=ESV)** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
 
 
-<a id="orgb86badd"></a>
+<a id="org9c03fbc"></a>
 
 ## They also have to repent from idolatry
 
@@ -375,7 +439,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[I Corinthians 10:14-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A14-31&version=ESV)** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
 
 
-<a id="org6aef85a"></a>
+<a id="org384328f"></a>
 
 ### Idolatry
 
@@ -386,7 +450,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[Psalms 106:20](https://www.biblegateway.com/passage/?search=Psalms%20106%3A20&version=ESV)** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
 
 
-<a id="orgcb24ea1"></a>
+<a id="orgb6b4c25"></a>
 
 # People who twist the Scriptures to seek worldly prosperity instead of following Jesus
 
