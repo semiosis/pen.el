@@ -1,31 +1,32 @@
 
 # Table of Contents
 
-1.  [That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ](#orgf60354a)
-2.  [Marcion of Sinope](#orgc95ccef)
-3.  [Valentinus](#orgb3bff44)
-    1.  [Refutations](#orge8a50a4)
-        1.  [Refutation of All Heresies (Hippolytus)](#orgfc615ff)
-4.  [Universal religion](#orgc550187)
-5.  [Mixing paganism with Christianity](#org2c1dde1)
-6.  [WATV - World Mission Society Church of God](#org3b168e4)
-7.  [JW](#org8299111)
-    1.  [Some thoughts I have to correct JW theology](#orgc8a4b16)
-        1.  [The divine name](#org54cdd0c)
-8.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#org7e0dfa6)
-9.  [Free-grace without Lordship salvation](#org6c915c8)
-10. [Lordship salvation without free-grace](#org211a170)
-11. [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org70261d5)
-    1.  [They also have to repent from idolatry](#org9c03fbc)
-        1.  [Idolatry](#org384328f)
-12. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#orgb6b4c25)
+1.  [That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ](#orge8b2bfc)
+2.  [Does God save heretics?](#org307558d)
+3.  [Marcion of Sinope and followers of Marcion's heretical teachings](#org6ccd6eb)
+4.  [Valentinus](#org3f679d7)
+    1.  [Refutations](#org71b4098)
+        1.  [Refutation of All Heresies (Hippolytus)](#orgf5db70b)
+5.  [Universal religion](#org57412a0)
+6.  [Mixing paganism with Christianity](#org3566b75)
+7.  [WATV - World Mission Society Church of God](#orged6d444)
+8.  [JW](#org5ed6a69)
+    1.  [Some thoughts I have to correct JW theology](#org860b5b7)
+        1.  [The divine name](#orgba92011)
+9.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#org4cc08a2)
+10. [Free-grace without Lordship salvation](#orgd849f69)
+11. [Lordship salvation without free-grace](#orgf51681c)
+12. [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org2b01e99)
+    1.  [They also have to repent from idolatry](#orge7a7da0)
+        1.  [Idolatry](#org9d66728)
+13. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#org68d5771)
 
 I still think God saves heretics who placed their trusting faith in Jesus, or placed their trust in God the Father of Jesus Christ by trusting Jesus, and also the circumcised who exercise Abrahams works of faith, but it's really His call - God sees the heart.
 People's trust in Jesus exhibits itself in faithfully walking in the light of the Gospel of Jesus,
 and Jesus' gospel involved keeping our eyes on Him, trusting Him, believing Him, obeying Him.
 
 
-<a id="orgf60354a"></a>
+<a id="orge8b2bfc"></a>
 
 # That being said, it's really important to separate yourself from people who are deviating from and not being corrected by the teaching of Christ
 
@@ -47,13 +48,47 @@ be corrected by the Word of God, then we should separate ourselves from them.
 > **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
 
 
-<a id="orgc95ccef"></a>
+<a id="org307558d"></a>
 
-# Marcion of Sinope
+# Does God save heretics?
 
-Marcionism is quite prevalent these days in
-the church, which is really disappointing, and
-that is why I'm putting it in this document.
+> **[II Peter 2:1-2](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-2&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly **bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction**. And many will follow their sensuality, and because of them the way of truth will be blasphemed. (ESV)
+
+<https://www.reddit.com/r/Catholicism/comments/1b02afg/can_heretics_go_to_heaven/>
+
+-   **Formal heretics:** these people are baptized persons, understand the Church's teaching on the matter and knowingly choose to reject it. If a formal heretic died and was obstinate, and unrepentant of their heresy, they would not be saved.
+
+-   **Material heretics:** these people hold heretical beliefs, but lack the full knowledge of dogma, and/or full consent. Most protestants/orthodox would fall in this category. These people **can** be saved, but I make no judgement on who will be saved, or how many.
+
+There are some doctrines that are so essential that to deny them is to not be a Christian:
+
+> **[I John 4:2](https://www.biblegateway.com/passage/?search=1%20John%204%3A2&version=ESV)** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, (ESV)
+
+> **[I John 2:22](https://www.biblegateway.com/passage/?search=1%20John%202%3A22&version=ESV)** - Who is the liar but he who denies that Jesus is the Christ? This is the antichrist, he who denies the Father and the Son. (ESV)
+
+> **[II John 1:7](https://www.biblegateway.com/passage/?search=2%20John%201%3A7&version=ESV)** - For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist. (ESV)
+
+-   **[Polycarp 6:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** For every one who shall not confess that Jesus Christ is come in the flesh, is antichrist: and whosoever shall not confess the testimony of the Cross, is of the devil; and whosoever shall pervert the oracles of the Lord to his own lusts and say that there is neither resurrection nor judgment, that man is the firstborn of Satan.
+
+<https://www.julianspriggs.co.uk/pages/Marcion>
+
+I do not think that the Apostle Paul made an antithesis between grace and works, but you can read what I have to say on it in <./README.md>:
+
+
+<a id="org6ccd6eb"></a>
+
+# Marcion of Sinope and followers of Marcion's heretical teachings
+
+Marcion himself probably wasn't saved.
+
+I've noticed some pretty bad heresy floating around the churches which may come from Marcionism.
+Sadly it seems, doctrines of Marcionism seem to be quite prevalent these days in
+the church. I personally believe there is no antithesis between Lordship and Free grace. I think that probably comes from Marcionism.
+We are saved to serve God. The followers of Jesus are able to be taught by Christ and corrected - they hear Jesus' voice and follow Him - and that includes repentance (turning away) from sin - it's Lordship. The Apostle Paul taught Lordship.
+
+Apparently, Marcion perverted teachings of the oracles of the Lord such as the Apostle Paul, and led many astray.
+
+-   **[Polycarp 6:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** For every one who shall not confess that Jesus Christ is come in the flesh, is antichrist: and whosoever shall not confess the testimony of the Cross, is of the devil; and whosoever shall pervert the oracles of the Lord to his own lusts and say that there is neither resurrection nor judgment, that man is the firstborn of Satan.
 
 -   **[thegospelcoalition.org: Marcion and Getting Unhitched from the Old Testament](https://www.thegospelcoalition.org/blogs/kevin-deyoung/marcion-getting-unhitched-old-testament/):** Marcion was one of the most successful heretics in the early church.
     He was opposed by everyone who was anyone.
@@ -110,7 +145,7 @@ that is why I'm putting it in this document.
 So yeah, I just rebuke that spirit of Marcionism in Jesus Christ's name.
 
 
-<a id="orgb3bff44"></a>
+<a id="org3f679d7"></a>
 
 # Valentinus
 
@@ -120,26 +155,26 @@ But I think at least they tried to conform to the image of Christ from what I ca
 So, yeah, a lot of modern-day Christianity is probably even more heretical than Valentinianism to be honest.
 
 
-<a id="orge8a50a4"></a>
+<a id="org71b4098"></a>
 
 ## Refutations
 
 
-<a id="orgfc615ff"></a>
+<a id="orgf5db70b"></a>
 
 ### Refutation of All Heresies (Hippolytus)
 
 [CHURCH FATHERS: Refutation of All Heresies, Book VI {Hippolytus}](https://www.newadvent.org/fathers/050106.htm)
 
 
-<a id="orgc550187"></a>
+<a id="org57412a0"></a>
 
 # Universal religion
 
 -   trying to unite all religions as if they are all equal
 
 
-<a id="org2c1dde1"></a>
+<a id="org3566b75"></a>
 
 # Mixing paganism with Christianity
 
@@ -148,7 +183,7 @@ So, yeah, a lot of modern-day Christianity is probably even more heretical than 
 It disgusts me when people pursue paganism, the occult and demons.
 
 
-<a id="org3b168e4"></a>
+<a id="orged6d444"></a>
 
 # WATV - World Mission Society Church of God
 
@@ -160,7 +195,7 @@ It disgusts me when people pursue paganism, the occult and demons.
     -   They believe Gentiles are under the Mosaic law.
 
 
-<a id="org8299111"></a>
+<a id="org5ed6a69"></a>
 
 # JW
 
@@ -177,7 +212,7 @@ He's not a creature. The Son of God is [not a created being](https://www.youtube
 > **John 1:3** - **All things were made through him**, and <span class="underline">without him was not **any thing** made that was made.</span> (ESV)
 
 
-<a id="orgc8a4b16"></a>
+<a id="org860b5b7"></a>
 
 ## Some thoughts I have to correct JW theology
 
@@ -247,7 +282,7 @@ Also, I believe that Jesus was from the very beginning Jehovah's Son.
 AMEN!!
 
 
-<a id="org54cdd0c"></a>
+<a id="orgba92011"></a>
 
 ### The divine name
 
@@ -287,7 +322,7 @@ I consider that the reason for this is simply in that we do not take the LORD's 
 But we also want the LORD's name to be remembered.
 
 
-<a id="org7e0dfa6"></a>
+<a id="org4cc08a2"></a>
 
 # In my independent Bible-Studying, I have not yet delved into many modern Christian sects
 
@@ -298,7 +333,7 @@ But I find this person's website trustworthy:
 <https://jesusisgodandlordministries.com/>
 
 
-<a id="org6c915c8"></a>
+<a id="orgd849f69"></a>
 
 # Free-grace without Lordship salvation
 
@@ -356,7 +391,7 @@ We must accept this teaching:
 AMEN!!
 
 
-<a id="org211a170"></a>
+<a id="orgf51681c"></a>
 
 # Lordship salvation without free-grace
 
@@ -375,7 +410,7 @@ I think that actually following Jesus is probably superior to someone who says t
 > **[Matthew 12:50](https://www.biblegateway.com/passage/?search=Matthew%2012%3A50&version=ESV)** - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
 
 
-<a id="org70261d5"></a>
+<a id="org2b01e99"></a>
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
@@ -430,7 +465,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[James 1:26](https://www.biblegateway.com/passage/?search=James%201%3A26&version=ESV)** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
 
 
-<a id="org9c03fbc"></a>
+<a id="orge7a7da0"></a>
 
 ## They also have to repent from idolatry
 
@@ -439,7 +474,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[I Corinthians 10:14-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A14-31&version=ESV)** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
 
 
-<a id="org384328f"></a>
+<a id="org9d66728"></a>
 
 ### Idolatry
 
@@ -450,7 +485,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[Psalms 106:20](https://www.biblegateway.com/passage/?search=Psalms%20106%3A20&version=ESV)** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
 
 
-<a id="orgb6b4c25"></a>
+<a id="org68d5771"></a>
 
 # People who twist the Scriptures to seek worldly prosperity instead of following Jesus
 
