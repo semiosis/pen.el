@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+script_fp="$1"
+shift
+
+# If the script fails to compile then run with --verbose=1
+
+mkdir -p /root/cabal_script_build_dir
+
+run_interp() {
+    real-cabal v2-run "$script_fp" --verbose=0 --builddir=/root/cabal_script_build_dir "$@"
+}
+
+if test "$#" -gt 0; then
+    run_interp -- "$@"
+else
+    run_interp
+fi
+
+# https://github.com/haskell/cabal/issues/6354

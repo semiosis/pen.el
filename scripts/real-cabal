@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Need to be using a recent version to use Haskell scripts
+# /root/.emacs.d/host/pen.el/scripts/haskell-scripts/v2run-example.hs
+# $HOME/.ghcup/bin/cabal-3.6.2.0 "$@"
+$HOME/.ghcup/bin/cabal-3.10.3.0 "$@"

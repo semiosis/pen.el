@@ -2519,3 +2519,5 @@ pip install cutlet
 pip install unidic-lite
 
 agi autossh
+
+ghcup install cabal 3.10.3.0

@@ -1046,6 +1046,22 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((default-directory "/"))
     (pen-list2cmd args)))
 
+(defun combine-and-quote-strings-safe (strings &optional separator)
+  "Concatenate the STRINGS, adding the SEPARATOR (default \" \")."
+
+  (let* ((sep (or separator " "))
+         (re (concat "[\\\"]" "\\|" (regexp-quote sep))))
+    (mapconcat
+     'shell-quote-argument
+     strings sep)))
+
+(defalias 'pen-list2cmd-safe 'combine-and-quote-strings-safe)
+
+(defun pen-cmd-safe (&rest args)
+  ;; default-directory specified here to avoid a bug with tramp
+  (let ((default-directory "/"))
+    (pen-list2cmd-safe args)))
+
 ;; pen-cip-string "yo -5 =yo yo \"YO YO\""
 ;; (pen-snc (concat "printf -- \"%s\\n\" " "yo -5 =yo yo"))
 ;; (pen-sn (concat "printf -- \"%s\\n\" " "yo -5 =yo yo") nil nil nil nil nil nil nil t nil "zsh")
