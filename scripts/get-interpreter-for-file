@@ -12,6 +12,13 @@ bn="$(basename "$fp")"
 ext="${fp##*.}"
 fn="${fp%.*}"
 
+if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
+    cd "$dn"
+    cat "$rp" | sed -n "1s/^..\\(.*\\)/\\1/p"
+    
+    exit $?
+fi
+
 case "$ext" in
     # hackett|hkt) { printf -- "%s\n" "$(which racket) -I hackett"; } ;; 
     hackett|hkt) { which racket; } ;; 

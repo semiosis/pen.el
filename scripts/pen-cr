@@ -1760,11 +1760,12 @@ case "$file_type" in
         if test "$interactive" = "y"; then
             if pen-yn "use interpreter?"; then
                 # zrepl -cm runhaskell "$rp"
+                it="$(get-interpreter-for-file "$rp")"
                 if yn "cd into dir?"; then
                     cd "$dn"
-                    zrepl -cm runhaskell "$fn"
+                    zrepl -cm eval "$it" "$fn"
                 else
-                    zrepl -cm runhaskell "$rp"
+                    zrepl -cm eval "$it" "$rp"
                 fi
                 pen-pak
             else
