@@ -74,12 +74,14 @@
 ;; (eshell/alias "gds" "magit-diff-staged")
 ;; (eshell/alias "d" "dired $1")
 
+;; This let sexp hung in startup
+;; Saving file /root/.emacs.d/eshell/alias...
+;; alias has changed since visited or saved.  Save anyway? (y or n)
 ;; The 'ls' executable requires the Gnu version on the Mac
 (let ((ls (if (file-exists-p "/usr/local/bin/gls")
               "/usr/local/bin/gls"
             "/bin/ls")))
   (eshell/alias "ll" (concat ls " -AlohG --color=always")))
-
 
 ;; git
 ;; My gst command is just an alias to magit-status, but using the alias doesn’t pull in the current working directory, so I make it a function, instead:

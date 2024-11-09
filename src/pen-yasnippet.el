@@ -298,7 +298,7 @@ for normal snippets, and a list for command snippets)."
 
 (defun get-interpreter-for-buffer ()
   (if (eq major-mode 'go-mode)
-      "///bin/true; exec /usr/bin/env go run \"$0\" \"$@\""
+      "///bin/true; exec /usr/bin/env go-interpreter \"$0\" \"$@\""
     (let ((tf (or (if (and (not (eq major-mode 'org-mode))
                            (string-match-p "\.org$" (get-path)))
                       (concat "x\." (get-ext-for-mode)))

@@ -5,11 +5,21 @@ package main
 import (
 	"bytes"
 	"io"
+	"os"
 	"os/exec"
 )
 
 func main() {
-	tv("hi")
+	stdin, err := io.ReadAll(os.Stdin)
+
+	if err != nil {
+		panic(err)
+	}
+	str := string(stdin)
+
+	// fmt.Println(strings.TrimSuffix(str, "\n"))
+
+	tv(str)
 }
 
 func tv(mystdin string) (string, string) {

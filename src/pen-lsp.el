@@ -539,11 +539,11 @@ We don't extract the string that `lps-line' is already displaying."
                                                     ((looks-like-markdown-p docs)
                                                      (new-buffer-from-string
                                                       docs
-                                                      nil 'markdown-mode))
+                                                      "*lsp-hover-docs*" 'markdown-mode))
                                                     (t
                                                      (new-buffer-from-string
                                                       docs
-                                                      nil 'text-mode)))
+                                                      "*lsp-hover-docs*" 'text-mode)))
                                                  docs)
       (error "No docs"))))
 

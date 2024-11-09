@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+script_fp="$1"
+rp="$(realpath "$script_fp")"
+dn="$(dirname "$rp")"
+
+# gomod_fp="$(cd "$dn"; dominating-file go.mod | head -n 1)"
+# I want a way of avoiding having to cd into the directory
+# but setting gomod_fp didn't do the job
+# go run -modfile "$gomod_fp" "$@"
+
+cd "$dn"
+
+go run "$@"

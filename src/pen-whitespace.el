@@ -39,8 +39,11 @@
 ;; (set-face-foreground 'hc-tab "#228822")
 ;; (set-face-background 'hc-tab "#111111")
 
-(set-face-foreground 'hc-tab "#111111")
-(set-face-background 'hc-tab "#222222")
+(comment
+ (set-face-foreground 'hc-tab "#111111")
+ (set-face-background 'hc-tab "#222222"))
+(set-face-foreground 'hc-tab "#222222")
+(set-face-background 'hc-tab "#111111")
 
 ;; This broke syntax highlighting everywhere
 ;; (add-hook 'font-lock-mode-hook 'hc-highlight-tabs)

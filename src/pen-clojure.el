@@ -794,16 +794,6 @@ the namespace in the Clojure source buffer"
 
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
 
-(defun y-or-n-p-around-advice (proc prompt)
-  (message "%s" (concat "y-or-n-p-around-advice: " prompt))
-  (if (gui-p)
-      (let ((res (apply proc (list prompt))))
-        res)
-    (let ((res (snc (cmd "code-out" "tpop-yn" prompt))))
-      (equalp "0" res))))
-(advice-add 'y-or-n-p :around #'y-or-n-p-around-advice)
-;; (advice-remove 'y-or-n-p #'y-or-n-p-around-advice)
-
 (comment
  (defun y-or-n-p (prompt)
    (let ((res (snc (cmd "code-out" "tpop-yn" prompt))))

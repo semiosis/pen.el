@@ -7,46 +7,59 @@ class TOC {
   static parse(headingSet) {
     const tocData = []
     let curLevel = 0
-    let preTocItem = undefined
+    let previousTOCitem = undefined
 
     headingSet.forEach(heading => {
       const hLevel = heading.outerHTML.match(/<h([\d]).*>/)[1]
       const titleText = heading.innerText
 
+      // console.log(hLevel)
+
       switch (hLevel >= curLevel) {
-        case true:
-          if (preTocItem === undefined) {
-            preTocItem = new TocItem(titleText, hLevel)
-            tocData.push(preTocItem)
-          } else {
-            const curTocItem = new TocItem(titleText, hLevel)
-            const parent = curTocItem.level > preTocItem.level ? preTocItem : preTocItem.parent
-            curTocItem.parent = parent
+      case true:
+        // console.log(titleText + " INC")
+        if (previousTOCitem === undefined) {
+          previousTOCitem = new TOCitem(titleText, hLevel)
+          tocData.push(previousTOCitem)
+        } else {
+          const currentTOCitem = new TOCitem(titleText, hLevel)
+          // The problematic one isn't here
+          // console.log(titleText + " " + currentTOCitem.level + " " + previousTOCitem.level)
 
-            if (parent) {
-                parent.children.push(curTocItem)
-                preTocItem = curTocItem
-            }
-          }
-          break
-        case false:
-          // We need to find the appropriate parent node from the preTocItem
-          const curTocItem = new TocItem(titleText, hLevel)
-          while (1) {
-            if (preTocItem.level < curTocItem.level) {
-              preTocItem.children.push(curTocItem)
-              preTocItem = curTocItem
-              break
-            }
-            preTocItem = preTocItem.parent
+          const TOCparent = currentTOCitem.level > previousTOCitem.level ? previousTOCitem : previousTOCitem.TOCparent
 
-            if (preTocItem === undefined) {
-              tocData.push(curTocItem)
-              preTocItem = curTocItem
-              break
-            }
+          if (TOCparent) {
+            currentTOCitem.TOCparent = TOCparent
+            TOCparent.children.push(currentTOCitem)
+            previousTOCitem = currentTOCitem
+          } {
+            // previousTOCitem = new TOCitem(titleText, hLevel)
+            // tocData.push(previousTOCitem)
+            // console.log(titleText + " NO PARENT")
           }
-          break
+        }
+        break
+      case false:
+        // console.log(titleText)
+        // We need to find the appropriate TOCparent node from the previousTOCitem - This algorithm is problematic
+        const currentTOCitem = new TOCitem(titleText, hLevel)
+        while (1) {
+          // console.log("previousTOCitem.level: " + previousTOCitem.level + "currentTOCitem.level: " + currentTOCitem.level)
+
+          if (previousTOCitem.level < currentTOCitem.level) {
+            previousTOCitem.children.push(currentTOCitem)
+            previousTOCitem = currentTOCitem
+            break
+          }
+          previousTOCitem = previousTOCitem.TOCparent
+
+          if (previousTOCitem === undefined) {
+            tocData.push(currentTOCitem)
+            previousTOCitem = currentTOCitem
+            break
+          }
+        }
+        break
       }
 
       curLevel = hLevel
@@ -54,38 +67,38 @@ class TOC {
       if (heading.id === "") {
         heading.id = titleText.replace(/ /g, "-").toLowerCase()
       }
-      preTocItem.id = heading.id
+      previousTOCitem.id = heading.id
     })
 
     return tocData
   }
 
   /**
-   * @param {[TocItem]} tocData
+   * @param {[TOCitem]} tocData
    * @return {string}
    * */
   static build(tocData) {
-    let result = "<ul>"
+    let result = "<ol>"
     tocData.forEach(toc => {
       result += `<li><a href=#${toc.id}>${toc.text}</a></li>`
       if (toc.children.length) {
         result += `${TOC.build(toc.children)}`
       }
     })
-    return result + "</ul>"
+    return result + "</ol>"
   }
 }
 
 /**
  * @param {string} text
  * @param {int} level
- * @param {TocItem} parent
+ * @param {TOCitem} TOCparent
  * */
-function TocItem(text, level, parent = undefined) {
+function TOCitem(text, level, TOCparent = undefined) {
   this.text = text
   this.level = level
   this.id = undefined
-  this.parent = parent
+  this.TOCparent = TOCparent
   this.children = []
 }
 

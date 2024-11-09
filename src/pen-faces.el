@@ -1512,6 +1512,7 @@ Also see option `magit-blame-styles'."
                       (set-face-attribute f fr
                                           :inverse-video t
                                           :italic nil
+                                          :weight 'unspecified
                                           ;; :slant 'normal
                                           )
                     ;; (set-face-attribute f fr
@@ -1617,6 +1618,7 @@ Also see option `magit-blame-styles'."
                      :inverse-video nil
                      :overline nil
                      :underline t
+                     :weight 'unspecified
                      :box nil
                      :strike-through nil
                      :slant 'italic
@@ -1711,7 +1713,7 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
            (cl-loop for f in '(Man-overstrike
-                               )
+                               markdown-markup-face)
                     do
                     (set-face-attribute
                      f fr
@@ -1817,6 +1819,33 @@ Also see option `magit-blame-styles'."
 
                   ;; tty-menu-enabled-face
                   ))))))
+
+;; 3 colours mode is not really possible
+;; when the terminal is set to black and white.
+;; Also, I couldn't really find another style,
+;; or get markdown-markup-face cooperating as of yet.
+(comment
+ (defun pen-3-colours-mode ()
+   (interactive)
+
+   (pen-disable-all-faces)
+
+   (loop for fr in (frame-list)
+         do
+         (cl-loop for f in '(markdown-code-face
+                             markdown-markup-face
+                             bold)
+                  do
+                  (set-face-attribute
+                   f fr
+                   :slant 'italic
+                   :weight 'bold
+                   ;; :box t
+
+                   ;; :inverse-video t
+                   ;; :foreground "#cccccc"
+                   ;; :background "#000000"
+                   )))))
 
 (defun pen-enable-all-faces ()
   (interactive)
