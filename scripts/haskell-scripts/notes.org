@@ -1,0 +1,1 @@
+I haven't yet figured out how to write haskell scripts that work well in HLS while containing dependencies specified inside the script.

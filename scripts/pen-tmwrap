@@ -37,6 +37,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -pak|-pakf) {
+        do_pak=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -54,6 +60,10 @@ if test "$PRINTOUT" = "y"; then
     tf_paneprintout="$(ux tf paneprintout || echo /dev/null)"
     trap "rm \"$tf_paneprintout\" 2>/dev/null" 0
     CMD="$CMD; tm capp > \"$tf_paneprintout\""
+fi
+
+if test "$do_pak" = "y"; then
+    CMD="$CMD; pak"
 fi
 
 # CMD="$(resize | tr -d '\n')$CMD"

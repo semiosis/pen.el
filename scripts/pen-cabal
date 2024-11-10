@@ -3,6 +3,20 @@ export TTY
 
 is_tty() { [ -t 1 ]; }
 
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test "$last_arg" = "--help"; then
+    do_help=y
+fi
+
+run_cabal() {
+    if test "$do_help" = "y"; then
+        /root/.ghcup/bin/cabal "$@" | pavs
+    else
+        /root/.ghcup/bin/cabal "$@"
+    fi
+}
+
 if is_tty && inside-docker-p; then
     # pet tmwr /root/.ghcup/bin/cabal "$@"
     # pet nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
@@ -11,22 +25,31 @@ if is_tty && inside-docker-p; then
     opt="$1"
     case "$opt" in
         build) {
-            /root/.ghcup/bin/cabal "$@"
+            run_cabal "$@"
             exit "$?"
         }
         ;;
 
+        install) {
+            # https://discourse.haskell.org/t/the-operator-in-cabal-files/6938
+            run_cabal --allow-newer "$@"
+            exit "$?"
+        }
+        ;;
+
+        # I feel like I should almost never be wrapping this in tmux.
+        # What is this for again?
         *) {
             # nvc -2 tmwr /root/.ghcup/bin/cabal "$@"
             # pet tmwr /root/.ghcup/bin/cabal "$@"
-            tmwr /root/.ghcup/bin/cabal "$@"
+            tmwr -pakf /root/.ghcup/bin/cabal "$@"
             exit "$?"
         }
         ;;
     esac
 
 else
-    /root/.ghcup/bin/cabal "$@"
+    run_cabal "$@"
 fi
 
 # This works for pet. Make it so I can do this by default with pet

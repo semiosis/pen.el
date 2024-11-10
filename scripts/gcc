@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# need gcc-10 for the -fanalyzer option
+
+remove_deprecated_args() {
+    sed "s/'-fanalyzer'//"
+}
+
+eval "set -- $(cmd "$@" | remove_deprecated_args)"
+
+/usr/bin/gcc "$@"

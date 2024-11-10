@@ -2502,6 +2502,7 @@ May use to generate code from comments."
 (require 'pen-peertube)
 (require 'pen-cs-notation)
 (require 'pen-deprecated)
+(require 'pen-cmake)
 (require 'pen-tcp-server)
 (require 'pen-go)
 (require 'pen-ediff)

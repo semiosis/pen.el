@@ -6,4 +6,11 @@ export TTY
 # Need to be using a recent version to use Haskell scripts
 # /root/.emacs.d/host/pen.el/scripts/haskell-scripts/v2run-example.hs
 # $HOME/.ghcup/bin/cabal-3.6.2.0 "$@"
-$HOME/.ghcup/bin/cabal-3.10.3.0 "$@"
+
+sn="$(basename -- "$0")"
+version="$(p "$sn" | sed -n "s/.*-\\([0-9].*\\)/\\1/p")"
+: "${version:="3.10.3.0"}"
+bin="$HOME/.ghcup/bin/cabal-$version"
+test -f "$bin" || ghcup install cabal "$version"
+
+"$bin" "$@"

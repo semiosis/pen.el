@@ -38,3 +38,5 @@ main = shelly $ verbosely $ do
 
 -- https://cabal.readthedocs.io/en/3.6/cabal-commands.html#cabal-v2-run
 -- https://www.yesodweb.com/blog/2012/03/shelly-for-shell-scripts
+
+-- ghcup install cabal 3.10.3.0

@@ -122,6 +122,12 @@
           (funcall mode)
         (guess-major-mode)))))
 
+(defun mess (o)
+  (pen-message-no-echo "%s" (str o))
+  (if (not (equal "*Messages*" (buffer-name)))
+      (switch-to-buffer "*Messages*"))
+  o)
+
 (defun new-buffer-from-o (o &optional mode)
   "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
  Example:

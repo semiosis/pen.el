@@ -649,4 +649,60 @@ revisions (interactive.e., use a \"...\" range)."
 (put 'magit-status-mode 'magit-log-default-arguments
      '("-n256" "--decorate"))
 
+(defun enforce-string-min-length (s width)
+  (concat s
+          (make-string (max 0 (- width (length s))) ?\s)))
+
+(defun enforce-string-max-length (s width)
+  (s-left width s))
+
+(setq magit-blame-styles
+      '((headings
+         (heading-format . "%-20a %C %s %H\n"))
+        (highlight
+         (highlight-face . magit-blame-highlight))
+        (lines
+         (show-lines . t)
+         (show-message . t))))
+
+;; I want to limit the length of the commit hash - the full hash is too long
+;; j:magit--format-spec
+
+(defun magit-blame--format-string-1 (rev revinfo format face)
+  (let ((str
+         (if (string-match-p "\\`0\\{40,\\}\\'" rev)
+             (propertize (concat (if (string-prefix-p "\s" format) "\s" "")
+                                 "Not Yet Committed"
+                                 (if (string-suffix-p "\n" format) "\n" ""))
+                         'font-lock-face face)
+           (magit--format-spec
+            (propertize format 'font-lock-face face)
+            (cl-flet* ((p0 (s f)
+                         (propertize s 'font-lock-face
+                                     (if face
+                                         (if (listp face)
+                                             face
+                                           (list f face))
+                                       f)))
+                       (p1 (k f)
+                         (p0 (cdr (assoc k revinfo)) f))
+                       (p2 (k1 k2 f)
+                         (p0 (magit-blame--format-time-string
+                              (cdr (assoc k1 revinfo))
+                              (cdr (assoc k2 revinfo)))
+                             f)))
+              `((?H . ,(p0 (enforce-string-max-length rev 20)         'magit-blame-hash))
+                (?s . ,(p1 "summary"   'magit-blame-summary))
+                (?a . ,(p1 "author"    'magit-blame-name))
+                (?c . ,(p1 "committer" 'magit-blame-name))
+                (?A . ,(p2 "author-time"    "author-tz"    'magit-blame-date))
+                (?C . ,(p2 "committer-time" "committer-tz" 'magit-blame-date))
+                (?f . "")))))))
+    (if-let ((width (and (string-suffix-p "%f" format)
+                         (magit-blame--style-get 'margin-width))))
+        (concat str
+                (propertize (make-string (max 0 (- width (length str))) ?\s)
+                            'font-lock-face face))
+      str)))
+
 (provide 'pen-magit)
