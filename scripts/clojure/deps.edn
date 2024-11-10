@@ -10,5 +10,5 @@
 
         ;; This was added using cljr | =H-* a p= | =cljr-add-project-dependency= | =clj-refactor-map=
         ;; babashka/babashka {:mvn/version "1.12.195-SNAPSHOT"}
-        }
- }
+
+        seesaw/seesaw {:mvn/version "1.5.0"}}}
