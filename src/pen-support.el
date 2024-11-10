@@ -2423,6 +2423,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
     ;; (xc (chomp (get-dir)))
     )))
 
+(defun pen-yank-buffer-name ()
+  (interactive)
+  (xc (pen-ns (chomp (buffer-name)))))
+
 (defun pen-yank-file ()
   (interactive)
   (xc (pen-ns (chomp (f-basename (get-path))))))

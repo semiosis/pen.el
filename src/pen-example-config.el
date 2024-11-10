@@ -884,6 +884,7 @@
 (define-key pen-map (kbd "M-y M-p") #'pen-yank-path)
 (define-key pen-map (kbd "M-y M-d") #'pen-yank-dir)
 (define-key pen-map (kbd "M-y M-f") #'pen-yank-file)
+(define-key pen-map (kbd "M-y M-b") #'pen-yank-buffer-name)
 (define-key pen-map (kbd "M-y M-p") #'pen-yank-path)
 (define-key pen-map (kbd "M-y M-g") #'pen-yank-git-path)
 (define-key pen-map (kbd "M-y M-o") #'open-git-path-chrome)

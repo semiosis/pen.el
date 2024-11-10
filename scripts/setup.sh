@@ -2521,3 +2521,5 @@ pip install unidic-lite
 agi autossh
 
 ghcup install cabal 3.10.3.0
+
+cabal install implicit-hie-cradle
