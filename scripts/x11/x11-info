@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+{
+echo X11 | udl
+echo grep:
+ps -ef |grep Xorg
+echo
+
+echo sockets:
+x11-list-display-sockets
+echo
+
+echo xauth cookies
+xauth list
+} | pavs
