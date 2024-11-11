@@ -5,6 +5,13 @@ build-depends: base ^>= 4.14
                , shelly ^>= 1.8.1
 -}
 
+-- HLS doesn't like the shebang - it counts the lines incorrectly due to the shebang.
+-- I guess that HLS might not be appropriate for scripts.
+-- I could try generating scripts from projects instead, but that's not nice either.
+-- I just want editing Haskell scripts to work well.
+-- However, the shebang line seems to be fine in this script e:turtle.hs
+-- Perhaps I should go back to using stack for scripts?
+
 -- Also, this needs to run a new version of cabal so that it doesn't
 -- recompile the script every time I run it, due to a missing feature
 -- in older versions of cabal.
@@ -27,7 +34,7 @@ default (LT.Text)
 -- main = do
 --     ...
 
-sudo_ com args = run_ "cmd" (com:args)
+sudo_ com args = run_ "cmd1-red-f" (com:args)
 
 main = shelly $ verbosely $ do
     apt_get "update" []

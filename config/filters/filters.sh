@@ -483,3 +483,5 @@ fill-lines-to-longest-line
 f-point-out-parentheses
 fix-nasb-links-org
 org-mode-make-headline-asterisks-into-slash.bb
+sol-implode    # one-linerise shell / bash
+sol-explode    # prettify / expand shell / bash

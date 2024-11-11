@@ -2,6 +2,13 @@
 export TTY
 
 # If I specify empty string as the message then it will not show a message
-# message="$1"
+message="$1"
+: "${message:="Are you sure?"}"
 
-gum confirm --prompt.foreground="130" --selected.foreground="235" --selected.background="243" --unselected.foreground="243" --unselected.background="235" "$@"
+gum confirm \
+    --prompt.foreground="130" \
+    --selected.foreground="235" \
+    --selected.background="243" \
+    --unselected.foreground="243" \
+    --unselected.background="235" \
+    --prompt.foreground="$message" "$@"

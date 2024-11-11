@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# e:sol-implode
+
+sol -p -c -b -r -a -s -jqobj -jqarr -jqop comma "$@"

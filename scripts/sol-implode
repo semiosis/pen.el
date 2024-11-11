@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# e:sol-explode
+
+sol -o "$@"
