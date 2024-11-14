@@ -24,6 +24,37 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
 
+ocif() {
+    if which ocif &>/dev/null; then
+        command ocif "$@"
+    else
+	:
+    fi
+}
+dgrey() {
+    if which dgrey &>/dev/null; then
+        command dgrey "$@"
+    else
+	:
+    fi
+}
+hls() {
+    if which hls &>/dev/null; then
+        command hls "$@"
+    else
+	cat
+    fi
+}
+
+pen() {
+    if which pen &>/dev/null; then
+        command pen "$@"
+    else
+	rp="$(realpath "$0")"
+        "$rp" "$@"
+    fi
+}
+
 cmd() {
     for var in "$@"
     do
@@ -977,6 +1008,7 @@ if test "$start_shell" = "y"; then
         echo "Running basic shell without Pen server" | hls blue
 
         test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+        test -d "$HOME/pen.el" && test -d "$HOME/pen.el" && : "${PENEL_DIR:="$HOME/pen.el"}"
         test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
 
         candidate_config_dir="$(get_config_dir)"
@@ -1051,7 +1083,7 @@ fi
 #     mkdir -p "$PEN_CONFIG_DIR/documents"
 # fi
 # Make it anyway, because pen-xc needs it
-mkdir -p "$PEN_CONFIG_DIR/documents/notes"
+test -n "$PEN_CONFIG_DIR" && mkdir -p "$PEN_CONFIG_DIR/documents/notes"
 
 if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$PEN_USE_REMOTE_PATH" = y && \
@@ -1816,6 +1848,7 @@ if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -d "protoverses" && : "${PEN_PROTOVERSES_DIR:="`pwd`/protoverses"}"
 
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/pen.el" && : "${PENEL_DIR:="$MYGIT/semiosis/pen.el"}"
+    test -d "$HOME/pen.el" && test -d "$HOME/pen.el" && : "${PENEL_DIR:="$HOME/pen.el"}"
     test -d "pen.el" && : "${PENEL_DIR:="`pwd`/pen.el"}"
     # : "${PENEL_DIR:="$(read -ep "PENEL_DIR (leave empty to use docker): ")"}"
 
@@ -2295,9 +2328,13 @@ pen-docker() {
 
 pen_eval() {
     if test "$DEBUG" = "y"; then
-        firstarg="cmd-nice-with-bs $1"
-        shift
-        set -- "$firstarg" "$@"
+	if which cmd-nice-with-bs &>/dev/null; then
+	    firstarg="cmd-nice-with-bs $1"
+            shift
+            set -- "$firstarg" "$@"
+	else
+	    echo "$@"
+	fi
     fi
 
     if test "$penl_strip_pf" = "y"; then
