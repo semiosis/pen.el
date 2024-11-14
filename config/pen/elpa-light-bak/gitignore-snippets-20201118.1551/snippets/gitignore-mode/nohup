@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: Nohup
-# contributor: Toptal & contributors
-# key: nohup
-# --
-
-### Nohup ###
-
-nohup.out

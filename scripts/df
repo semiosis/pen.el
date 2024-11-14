@@ -12,7 +12,7 @@ if is_tty && ! test "$INSIDE_NEOVIM" = y; then
     sn="$(basename -- "$0")"
 
     if yn "Watch?\n\tnvc watch $sn $CMD"; then
-        nvc watch "$sn" "$@"
+        nvc watch -n 5 "$sn" "$@"
     else
         /bin/df "$@" | pavs
     fi

@@ -1,2 +1,0 @@
-;;; Generated package description from cyphejor.el  -*- no-byte-compile: t -*-
-(define-package "cyphejor" "20210816.1607" "Shorten major mode names using user-defined rules" '((emacs "24.4")) :commit "576d237a46be79449a22e3a7912a3464d7b0c233" :authors '(("Mark Karpov" . "markkarpov92@gmail.com")) :maintainer '("Mark Karpov" . "markkarpov92@gmail.com") :keywords '("mode-line" "major-mode") :url "https://github.com/mrkkrp/cyphejor")

@@ -1,2 +1,0 @@
-;;; Generated package description from company-quickhelp.el  -*- no-byte-compile: t -*-
-(define-package "company-quickhelp" "20211115.1335" "Popup documentation for completion candidates" '((emacs "24.3") (company "0.8.9") (pos-tip "0.4.6")) :commit "3ca2708b4e5190205aca01d65fe1b391963a53f9" :authors '(("Lars Andersen" . "expez@expez.com")) :maintainer '("Lars Andersen" . "expez@expez.com") :keywords '("company" "popup" "documentation" "quickhelp") :url "https://www.github.com/expez/company-quickhelp")

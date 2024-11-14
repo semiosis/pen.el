@@ -849,6 +849,11 @@ Use my position list code. Make it use rosie lang and external software."
 
               (pen-draw-glossary-buttons-and-maybe-recalculate beg end)))))))
 
+;; [[sps:v +/"visor" "$EMACSD/pen.el/scripts/pen-tm"]]
+(defun pen-generate-glossary-buttons-over-buffer-force-on (beg end &optional clear-first)
+  (interactive "r")
+  (pen-generate-glossary-buttons-over-buffer beg end clear-first t))
+
 (defmacro pen-gl-beg-end (&rest body)
   `(let* ((gl-beg (if mark-active
                       (min (point) (mark))

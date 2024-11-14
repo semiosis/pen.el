@@ -1,2 +1,0 @@
-;;; Generated package description from company-solidity.el  -*- no-byte-compile: t -*-
-(define-package "company-solidity" "20181117.1518" "Company-mode back-end for solidity-mode" '((company "0.9.0") (cl-lib "0.5.0") (solidity-mode "0.1.9")) :commit "f0f68b038c5edf16c85fc8ca58537e1c6479738b" :authors '(("Samuel Smolkin" . "sam@future-precedent.org")) :maintainer '("Samuel Smolkin" . "sam@future-precedent.org") :keywords '("solidity" "completion" "company") :url "https://github.com/ethereum/emacs-solidity")

@@ -1,2 +1,0 @@
-;;; Generated package description from ob-kotlin.el  -*- no-byte-compile: t -*-
-(define-package "ob-kotlin" "20180823.1321" "org-babel functions for kotlin evaluation" '((org "8")) :commit "96e420cbd2e9ea8a77043e5dcaebdfc6da17492a" :authors '(("ZHOU Feng" . "zf.pascal@gmail.com")) :maintainer '("ZHOU Feng" . "zf.pascal@gmail.com") :keywords '("org" "babel" "kotlin") :url "http://github.com/zweifisch/ob-kotlin")

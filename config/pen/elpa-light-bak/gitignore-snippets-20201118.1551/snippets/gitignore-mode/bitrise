@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: Bitrise
-# contributor: Toptal & contributors
-# key: bitrise
-# --
-
-### Bitrise ###
-
-.bitrise.secrets.yml

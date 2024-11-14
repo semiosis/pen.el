@@ -2521,7 +2521,7 @@ pip install unidic-lite
 agi autossh
 
 ghcup install cabal 3.10.3.0
-cabal install haskellscript
+# cabal install haskellscript
 
 ghcup install stack 2.15.7
 stack install turtle
@@ -2531,3 +2531,8 @@ cabal install implicit-hie-cradle
 e ia cmake-mode cmake-font-lock eldoc-cmake cpputils-cmake cmake-project cmake-ide
 
 go install -v github.com/rogpeppe/godef@master
+
+# mdBook is a command line tool to create books with Markdown
+cargo install mdbook
+
+cargo install rust-script

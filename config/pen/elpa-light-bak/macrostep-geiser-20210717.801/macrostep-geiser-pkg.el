@@ -1,2 +1,0 @@
-;;; Generated package description from macrostep-geiser.el  -*- no-byte-compile: t -*-
-(define-package "macrostep-geiser" "20210717.801" "Macrostep for `geiser'" '((emacs "24.4") (macrostep "0.9") (geiser "0.12")) :commit "f6a2d5bb96ade4f23df557649af87ebd0cc45125" :authors '(("Nikita Bloshchanevich")) :maintainer '("Nikita Bloshchanevich") :keywords '("languages" "scheme") :url "https://github.com/nbfalcon/macrostep-geiser")

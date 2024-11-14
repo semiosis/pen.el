@@ -1,0 +1,3 @@
+https://rust-script.org/
+
+cargo install rust-script

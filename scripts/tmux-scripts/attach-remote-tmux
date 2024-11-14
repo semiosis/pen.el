@@ -1,0 +1,58 @@
+#!/bin/bash
+export TTY
+
+# tm -d -te nw -paks -A -w -n mosh-tmux-neli-ibis "attach-remote-tmux -m neli_ibis"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -m) {
+        export MOSH=y
+        shift
+    }
+    ;;
+
+    -D) {
+        export default_socket=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+target="$1"
+shift
+
+if ! test "$default_socket" = "y"; then
+    socket_opts=" -L shane "
+fi
+
+case "$target" in
+    pshane) {
+        sshp -E -t p ". ~/.profile; tmux $socket_opts attach -t localhost || tmux $socket_opts new -s localhost \"zsh || bash\""
+
+        # ubh sshp -E p ". ~/.profile; tmux -L shane new -d -s localhost zsh"
+        # sshp -E -t p ". ~/.profile; tmux -L shane attach -t localhost"
+
+        # sshp -E -t p ". ~/.profile; tmux -L shane new -d -s localhost zsh; tmux -L shane attach -t localhost"
+    }
+    ;;
+
+    *) {
+        sshp -E -t "$target" ". ~/.profile; tmux $socket_opts attach -t localhost || tmux $socket_opts new -s localhost \"zsh || bash\""
+
+        # ubh sshp -E "$target" ". ~/.profile; tmux -L shane new -d -s localhost zsh"
+        # sshp -E -t "$target" ". ~/.profile; tmux -L shane attach -t localhost"
+
+        # sshp -E -t "$target" ". ~/.profile; tmux attach -t localhost"
+
+        # ssh "$target" "bash -l -c \"tmux new -d -c /home/ubuntu -s localhost\""
+        # ssh -t "$target" "bash -l -c \"tmux attach -t localhost\""
+    }
+    ;;
+esac
+
+# Or use sshl
+# sshl
+
+# /usr/local/bin/mosh --ssh="ssh -tt" --server=/usr/local/bin/mosh-server mb -- /Users/shanemulligan/socat-gw.sh

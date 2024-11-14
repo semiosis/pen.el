@@ -1,2 +1,0 @@
-;;; Generated package description from nix-haskell-mode.el  -*- no-byte-compile: t -*-
-(define-package "nix-haskell-mode" "20190615.135" "haskell-mode integrations for Nix" '((emacs "25") (haskell-mode "16.0") (nix-mode "1.3.0")) :commit "68efbcbf949a706ecca6409506968ed2ef928a20" :authors '(("Matthew Bauer" . "mjbauer95@gmail.com")) :maintainer '("Matthew Bauer" . "mjbauer95@gmail.com") :keywords '("nix" "haskell" "languages" "processes") :url "https://github.com/matthewbauer/nix-haskell")

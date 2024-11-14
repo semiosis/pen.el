@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: google_compute_shared_vpc_host_project
-# key: goog_compute_shared_vpc_host_project
-# --
-
-resource "google_compute_shared_vpc_host_project" "${1:name}" {
-  project = "${2:project}"
-}
-

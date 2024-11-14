@@ -1,2 +1,0 @@
-;;; Generated package description from helm-codesearch.el  -*- no-byte-compile: t -*-
-(define-package "helm-codesearch" "20190412.1153" "helm interface for codesearch" '((emacs "25.1") (s "1.11.0") (dash "2.12.0") (helm "1.7.7") (cl-lib "0.5")) :commit "72f1d1de746115ab7e861178b49fa3c0b6b58d90" :authors '(("Youngjoo Lee" . "youngker@gmail.com")) :maintainer '("Youngjoo Lee" . "youngker@gmail.com") :keywords '("tools"))

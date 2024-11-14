@@ -1,2 +1,0 @@
-;;; Generated package description from consult-recoll.el  -*- no-byte-compile: t -*-
-(define-package "consult-recoll" "20211113.1958" "Recoll queries using consult" '((emacs "26.1") (consult "0.9")) :commit "42dea1d40fedf7894e2515b4566a783b7b85486a" :authors '(("Jose A Ortega Ruiz" . "jao@gnu.org")) :maintainer '("Jose A Ortega Ruiz") :keywords '("docs" "convenience") :url "https://codeberg.org/jao/consult-recoll")

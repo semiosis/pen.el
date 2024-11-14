@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: SVN
-# contributor: Toptal & contributors
-# key: svn
-# --
-
-### SVN ###
-
-.svn/

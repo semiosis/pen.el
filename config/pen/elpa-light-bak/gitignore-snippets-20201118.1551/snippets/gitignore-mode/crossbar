@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: Crossbar
-# contributor: Toptal & contributors
-# key: crossbar
-# --
-
-### Crossbar ###
-
-.crossbar/node.pid

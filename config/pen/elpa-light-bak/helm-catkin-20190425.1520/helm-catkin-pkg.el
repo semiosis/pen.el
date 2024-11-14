@@ -1,2 +1,0 @@
-;;; Generated package description from helm-catkin.el  -*- no-byte-compile: t -*-
-(define-package "helm-catkin" "20190425.1520" "Package for compile ROS workspaces with catkin-tools" '((emacs "24.3") (helm "0") (xterm-color "0")) :commit "d33c71cecd35616dfa7c3b81d8f51c128405977f" :authors '(("Thore Goll" . "thoregoll@googlemail.com")) :maintainer '("Thore Goll" . "thoregoll@googlemail.com") :keywords '("catkin" "helm" "build" "tools" "ros") :url "https://github.com/gollth/helm-catkin")

@@ -1,2 +1,0 @@
-;;; Generated package description from company-pollen.el  -*- no-byte-compile: t -*-
-(define-package "company-pollen" "20160812.1510" "company-mode completion backend for pollen" '((company "0.9.0") (pollen-mode "1.0")) :commit "09a9dc48c468dcd385982b9629f325e70d569faf" :authors '(("Junsong Li <ljs.darkfish AT GMAIL>")) :maintainer '("Junsong Li") :keywords '("languages" "pollen" "pollenpub" "company") :url "https://github.com/lijunsong/pollen-mode")

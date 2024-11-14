@@ -1,0 +1,84 @@
+#!/bin/bash
+export TTY
+
+# ssh -- keep the PATH
+
+( hs "$(basename "$0")" "$@" 0</dev/null ) &>/dev/null
+
+# Similar to sshl
+
+# sshl
+# run ssh with a login shell
+
+: ${SSHL_SCRIPT:="sshl"}
+
+: ${VERBOSE:="n"}
+: ${UNBUFFER:="n"}
+: ${FORCE_PIPE:="n"}
+: ${FORCE_TTY:="n"}
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        use_last_arg=y
+        shift
+    }
+    ;;
+
+    -p) {
+        FORCE_PIPE=y
+        shift
+    }
+    ;;
+
+    -t) {
+        FORCE_TTY=y
+        shift
+    }
+    ;;
+
+    -nu) {
+        UNBUFFER=n
+        shift
+    }
+    ;;
+
+    -u) {
+        UNBUFFER=y
+        shift
+    }
+    ;;
+
+    -v) {
+        VERBOSE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export VERBOSE
+export UNBUFFER
+export FORCE_PIPE
+export FORCE_TTY
+
+hn="$1"
+shift
+
+# CMDQ="$({ cmd "$@"; printf -- "%s" " | cat" } | q)"
+
+# This wraps the entire last thing in 'q'. That means it can work like
+# -E or by taking each argument. This script doesn't need -E
+# Oh yes it does need a -E. I tried.
+
+if test "$use_last_arg" = "y"; then
+    last_arg="${@: -1}"
+    CMDQ="$(cmd "$@")"
+else
+    CMDQ="$(cmd "$@" | q)"
+fi
+
+CMDQ="$(p "$CMDQ" | bs '$')"
+
+# echo "sshl $hn $CMDQ"
+eval "$SSHL_SCRIPT $hn $CMDQ"

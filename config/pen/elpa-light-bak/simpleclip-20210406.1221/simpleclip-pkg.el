@@ -1,2 +1,0 @@
-;;; Generated package description from simpleclip.el  -*- no-byte-compile: t -*-
-(define-package "simpleclip" "20210406.1221" "Simplified access to the system clipboard" 'nil :commit "67c8c17adbbe6d9407a5ce4159d097a8b8bf6adb" :authors '(("Roland Walker" . "walker@pobox.com")) :maintainer '("Roland Walker" . "walker@pobox.com") :keywords '("convenience") :url "http://github.com/rolandwalker/simpleclip")

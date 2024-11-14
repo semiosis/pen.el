@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: CoffeeScript
-# contributor: Toptal & contributors
-# key: coffeescript
-# --
-
-### CoffeeScript ###
-
-*.js

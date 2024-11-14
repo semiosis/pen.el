@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+: ${CMD:="$(cmd "$@")"}
+command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs"}"
+command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
+
+# etetris-xterm:
+# tpop -bg $(( $RANDOM % 255 )) -bg $(( $RANDOM % 255 )) -w 34 -h 26 -nos bash -c "$CMD"
+
+# tetris-rs:
+tpop -bg 233 -fg 076 -w 50 -h 26 -nos bash -c "$CMD"
+
+# tetris-rs
+# 
+#   lqqqqqqqqqqqqqqqqqqqqk
+#   x                    x     NEXT
+#   x                    x
+#   x                    x
+#   x                    x
+#   x            ████    x     ████
+#   x          ████      x   ████
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   x                    x
+#   mqqqqqqqqqqqqqqqqqqqqj
+#   SCORE: 0

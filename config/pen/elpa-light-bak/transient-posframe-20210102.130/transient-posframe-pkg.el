@@ -1,2 +1,0 @@
-;;; Generated package description from transient-posframe.el  -*- no-byte-compile: t -*-
-(define-package "transient-posframe" "20210102.130" "Using posframe to show transient" '((emacs "26.0") (posframe "0.4.3") (transient "0.2.0")) :commit "dcd898d1d35183a7d4f2c8f0ebcb43b4f8e70ebe" :authors '(("Yanghao Xie")) :maintainer '("Yanghao Xie" . "yhaoxie@gmail.com") :keywords '("convenience" "bindings" "tooltip") :url "https://github.com/yanghaoxie/transient-posframe")

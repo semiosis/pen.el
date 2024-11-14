@@ -1,2 +1,0 @@
-;;; Generated package description from ob-julia-vterm.el  -*- no-byte-compile: t -*-
-(define-package "ob-julia-vterm" "20210418.2306" "Babel Functions for Julia in VTerm" '((emacs "26.1") (julia-vterm "0.10")) :commit "e04ee53d67cbd715c2d84fe5bc367526edfadc74" :authors '(("Shigeaki Nishina")) :maintainer '("Shigeaki Nishina") :keywords '("julia" "org" "outlines" "literate programming" "reproducible research") :url "https://github.com/shg/ob-julia-vterm.el")

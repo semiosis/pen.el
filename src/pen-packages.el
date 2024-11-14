@@ -90,4 +90,15 @@ The description is read from the installed package files."
 ;;                    "DEFAULT")
 ;;      (pen-auto-load-packages)))
 
+;; (comment
+;;  (defun package-refresh-contents-http ()
+;;    (interactive)
+;; 
+;;    ;; TODO Consider temporarily modifying package-archives to use http instead of https - i.e. do a map on `package-archives`
+;; 
+;;    (setq package-archives
+;;          '(("gnu" . "https://elpa.gnu.org/packages/")
+;;            ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+;;            ("melpa" . "https://melpa.org/packages/")))))
+
 (provide 'pen-packages)

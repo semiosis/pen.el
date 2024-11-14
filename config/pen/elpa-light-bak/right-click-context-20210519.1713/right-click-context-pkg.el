@@ -1,2 +1,0 @@
-;;; Generated package description from /root/.emacs.d/elpa/right-click-context-20210519.1713/right-click-context.el  -*- no-byte-compile: t -*-
-(define-package "right-click-context" "20210519.1713" "Right Click Context menu" '((emacs "24.3") (popup "0.5") (ordinal "0.0.1")) :commit "c3c9d36ffbc9fb2bc7c2c4b75291dbcdb1c5f531" :authors '(("USAMI Kenta" . "tadsan@zonu.me")) :maintainer '("USAMI Kenta" . "tadsan@zonu.me") :keywords '("mouse" "menu" "rightclick") :url "https://github.com/zonuexe/right-click-context")

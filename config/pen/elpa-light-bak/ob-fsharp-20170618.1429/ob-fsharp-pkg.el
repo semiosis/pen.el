@@ -1,2 +1,0 @@
-;;; Generated package description from ob-fsharp.el  -*- no-byte-compile: t -*-
-(define-package "ob-fsharp" "20170618.1429" "Org-Babel F#" '((emacs "25") (fsharp-mode "1.9.8")) :commit "0b2fdd9bb4f38af8b5cf4914627af52f5b43d9f7" :authors '(("Jürgen Hötzel" . "juergen@archlinux.org")) :maintainer '("Jürgen Hötzel" . "juergen@archlinux.org") :keywords '("literate programming" "reproducible research") :url "https://github.com/juergenhoetzel/ob-fsharp")

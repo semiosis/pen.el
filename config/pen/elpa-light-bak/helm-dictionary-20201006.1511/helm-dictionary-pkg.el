@@ -1,2 +1,0 @@
-;;; Generated package description from helm-dictionary.el  -*- no-byte-compile: t -*-
-(define-package "helm-dictionary" "20201006.1511" "Helm source for looking up dictionaries" '((helm "1.5.5")) :commit "b316a1d55e58645d59a84d33851d46fab3cd54b5" :authors '(("Titus von der Malsburg" . "malsburg@posteo.de") ("Michael Heerdegen" . "michael_heerdegen@web.de")) :maintainer '("Titus von der Malsburg" . "malsburg@posteo.de") :url "https://github.com/emacs-helm/helm-dictionary")

@@ -1,2 +1,0 @@
-;;; Generated package description from magit-diff-flycheck.el  -*- no-byte-compile: t -*-
-(define-package "magit-diff-flycheck" "20190524.551" "Report errors in diffs" '((magit "2") (flycheck "31") (seq "2") (emacs "25.1")) :commit "28acf74f59e385865746cccf4b1e4c4025ae9433" :authors '(("Alex Ragone" . "ragonedk@gmail.com")) :maintainer '("Alex Ragone" . "ragonedk@gmail.com") :keywords '("convenience" "matching") :url "https://github.com/ragone/magit-diff-flycheck")

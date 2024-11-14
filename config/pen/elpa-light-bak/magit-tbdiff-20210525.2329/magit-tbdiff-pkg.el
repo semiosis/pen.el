@@ -1,2 +1,0 @@
-;;; Generated package description from magit-tbdiff.el  -*- no-byte-compile: t -*-
-(define-package "magit-tbdiff" "20210525.2329" "Magit extension for range diffs" '((emacs "24.4") (magit "3.0.0")) :commit "fef1b7772fe192c434089b67644ff93765e384d4" :authors '(("Kyle Meyer" . "kyle@kyleam.com")) :maintainer '("Kyle Meyer" . "kyle@kyleam.com") :keywords '("vc" "tools") :url "https://github.com/magit/magit-tbdiff")

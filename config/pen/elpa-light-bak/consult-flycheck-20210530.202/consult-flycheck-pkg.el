@@ -1,2 +1,0 @@
-;;; Generated package description from consult-flycheck.el  -*- no-byte-compile: t -*-
-(define-package "consult-flycheck" "20210530.202" "Provides the command `consult-flycheck'" '((consult "0.8") (flycheck "31") (emacs "26.1")) :commit "0ad7e8ff15683a4d64b79c29b3fcf847edfe244b" :authors '(("Daniel Mendler and Consult contributors")) :maintainer '("Daniel Mendler" . "mail@daniel-mendler.de") :url "https://github.com/minad/consult")

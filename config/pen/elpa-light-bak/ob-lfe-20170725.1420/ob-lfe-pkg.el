@@ -1,2 +1,0 @@
-;;; Generated package description from ob-lfe.el  -*- no-byte-compile: t -*-
-(define-package "ob-lfe" "20170725.1420" "org-babel functions for lfe evaluation" '((org "8")) :commit "f7780f58e650b4d29dfd834c662b1d354b620a8e" :authors '(("ZHOU Feng" . "zf.pascal@gmail.com")) :maintainer '("ZHOU Feng" . "zf.pascal@gmail.com") :keywords '("org" "babel" "lfe" "lisp" "erlang") :url "http://github.com/zweifisch/ob-lfe")

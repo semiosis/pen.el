@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: Homebrew
-# contributor: Toptal & contributors
-# key: homebrew
-# --
-
-### Homebrew ###
-
-Brewfile.lock.json

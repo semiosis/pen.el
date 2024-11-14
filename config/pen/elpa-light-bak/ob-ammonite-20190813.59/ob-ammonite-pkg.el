@@ -1,2 +1,0 @@
-;;; Generated package description from ob-ammonite.el  -*- no-byte-compile: t -*-
-(define-package "ob-ammonite" "20190813.59" "org-babel for scala evaluation in Ammonite." '((s "1.12.0") (ammonite-term-repl "0.1") (xterm-color "1.7")) :commit "39937dff395e70aff76a4224fa49cf2ec6c57cca" :authors '(("zwild" . "judezhao@outlook.com")) :maintainer '("zwild" . "judezhao@outlook.com") :keywords '("tools" "ammnite" "org-mode" "scala" "org-babel") :url "https://github.com/zwild/ob-ammonite")

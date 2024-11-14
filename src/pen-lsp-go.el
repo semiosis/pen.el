@@ -28,5 +28,10 @@
                                       (lsp--set-configuration
                                        `(:go ,lsp-go--config-options))))))
 
+(comment
+ ;; https://emacs.stackexchange.com/questions/68182/lsp-mode-golang-build-tags
+ (setq 
+  lsp-go-env '((GOFLAGS . "-tags=tagthis"))))
+
 (provide 'pen-lsp-go)
 ;;; lsp-go.el ends here

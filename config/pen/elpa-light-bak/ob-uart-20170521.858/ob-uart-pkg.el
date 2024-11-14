@@ -1,2 +1,0 @@
-;;; Generated package description from ob-uart.el  -*- no-byte-compile: t -*-
-(define-package "ob-uart" "20170521.858" "org-babel support for UART communication" 'nil :commit "90daeac90a9e75c20cdcf71234c67b812110c50e" :authors '(("Andreas Müller")) :maintainer '("Andreas Müller") :keywords '("tools" "comm" "org-mode" "uart" "literate programming" "reproducible development") :url "https://www.0x7.ch")

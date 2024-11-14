@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: pydev
-# contributor: Toptal & contributors
-# key: pydev
-# --
-
-### pydev ###
-
-.pydevproject

@@ -1,2 +1,0 @@
-;;; Generated package description from ivy-avy.el  -*- no-byte-compile: t -*-
-(define-package "ivy-avy" "20211021.1602" "Avy integration for Ivy" '((emacs "24.5") (ivy "0.13.4") (avy "0.5.0")) :commit "c97ea72285f2428ed61b519269274d27f2b695f9" :authors '(("Oleh Krehel" . "ohwoeowho@gmail.com")) :maintainer '("Oleh Krehel" . "ohwoeowho@gmail.com") :keywords '("convenience") :url "https://github.com/abo-abo/swiper")

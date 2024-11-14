@@ -10,6 +10,9 @@
 (require '[babashka.process :refer [shell process exec]])
 (require '[clojure.data.csv :as csv])
 
+;; TODO Also construct the buttons, etc.:
+;; e:$EMACSD/pen.el/scripts/pen-eipe
+
 (defn test
   ""
   []
@@ -28,13 +31,14 @@
 
 (println (System/getenv "PEN_PROMPT"))
 
+
 (gum/header (System/getenv "PEN_HELP"))
 
 ;; export PEN_PROMPT
 ;; export PEN_HELP
 ;; export PEN_OVERLAY
 ;; export PEN_PREOVERLAY
-;; export PEN_EIPE_DATA
+(println (System/getenv "PEN_EIPE_DATA"))
 ;; [[sps:v +/"pen -notm -nw --pool" "$EMACSD/pen.el/scripts/pen-eipe"]]
 
 ;; Collect stdin and put it into value:
@@ -51,6 +55,7 @@
     "hi")
 
   ;; I want to be able to check to see if user/*input* is bound etc.
+  ;; from PEN_EIPE_DATA
   ;; And decide if I'm going to use it or not.
   )
 
@@ -66,14 +71,15 @@
 ;; (table (slurp "/root/.emacs.d/host/pen.el/config/pen/cross_references.csv"))
 ;; (table (slurp "/root/.emacs.d/host/pen.el/config/pen/tablist-test.csv"))
 
-;; This CSV works
-(gum/table (slurp "/root/.emacs.d/host/pen.el/config/pen/mygit-30.08.22.csv"))
+(comment
+  ;; This CSV works
+  (gum/table (slurp "/root/.emacs.d/host/pen.el/config/pen/mygit-30.08.22.csv"))
 
-(gum/choose ["a" "b" "c"] :limit 1)
+  (gum/choose ["a" "b" "c"] :limit 1)
 
-(System/exit
- (if
-     (confirm "yo")
-     0
-     1))
+  (System/exit
+   (if
+       (confirm "yo")
+       0
+       1)))
 

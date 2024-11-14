@@ -1,2 +1,0 @@
-;;; Generated package description from flycheck-d-unittest.el  -*- no-byte-compile: t -*-
-(define-package "flycheck-d-unittest" "20160522.417" "Add D unittest support to flycheck" '((flycheck "0.21snapshot1") (dash "1.4.0")) :commit "3e614f23cb4a5566fd7988dbcaaf254af81c7718" :authors '(("Tomoya Tanjo" . "ttanjo@gmail.com")) :maintainer '("Tomoya Tanjo" . "ttanjo@gmail.com") :keywords '("flycheck" "d") :url "https://github.com/tom-tan/flycheck-d-unittest/")

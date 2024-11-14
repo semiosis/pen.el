@@ -1,2 +1,0 @@
-;;; Generated package description from ob-graphql.el  -*- no-byte-compile: t -*-
-(define-package "ob-graphql" "20201222.1515" "Org-Babel execution backend for GraphQL source blocks" '((emacs "24.4") (graphql-mode "20191024.1221") (request "0.3.2")) :commit "7c35419f9eec5dc44967cbcfa13c7135b9a96bfc" :authors '(("Jeremy Dormitzer" . "jeremy.dormitzer@gmail.com")) :maintainer '("Jeremy Dormitzer" . "jeremy.dormitzer@gmail.com") :url "https://github.com/jdormit/ob-graphql")

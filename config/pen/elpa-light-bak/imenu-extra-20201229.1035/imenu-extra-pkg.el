@@ -1,2 +1,0 @@
-;;; Generated package description from imenu-extra.el  -*- no-byte-compile: t -*-
-(define-package "imenu-extra" "20201229.1035" "Add extra items into existing imenu items" '((emacs "25.1")) :commit "a8d867e7cc446afcd4dc71d4f528e58d639840e1" :authors '(("Chen Bin <chenbin DOT sh AT gmail DOT com>")) :maintainer '("Chen Bin <chenbin DOT sh AT gmail DOT com>") :keywords '("convenience") :url "https://github.com/redguardtoo/imenu-extra")

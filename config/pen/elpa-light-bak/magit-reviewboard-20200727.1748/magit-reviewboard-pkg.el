@@ -1,2 +1,0 @@
-;;; Generated package description from magit-reviewboard.el  -*- no-byte-compile: t -*-
-(define-package "magit-reviewboard" "20200727.1748" "Show open Reviewboard reviews in Magit" '((emacs "25.2") (magit "2.13.0") (s "1.12.0") (request "0.3.0")) :commit "aceedff88921f1dfef8a6b2fb18fe316fb7223a8" :authors '(("Jules Tamagnan" . "jtamagnan@gmail.com")) :maintainer '("Jules Tamagnan" . "jtamagnan@gmail.com") :keywords '("magit" "vc") :url "http://github.com/jtamagnan/magit-reviewboard")

@@ -1,2 +1,0 @@
-;;; Generated package description from company-arduino.el  -*- no-byte-compile: t -*-
-(define-package "company-arduino" "20160306.1739" "company-mode for Arduino" '((emacs "24.1") (company "0.8.0") (irony "0.1.0") (cl-lib "0.5") (company-irony "0.1.0") (company-c-headers "20140930") (arduino-mode "1.0")) :commit "d7e369702b8eee63e6dfdeba645ce28b6dc66fb1" :authors '(("Yuta Yamada" . "sleepboy.zzz@gmail.com")) :maintainer '("Yuta Yamada" . "sleepboy.zzz@gmail.com") :keywords '("convenience" "development" "company") :url "https://github.com/yuutayamada/company-arduino")

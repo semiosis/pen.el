@@ -1,2 +1,0 @@
-;;; Generated package description from helm-youtube.el  -*- no-byte-compile: t -*-
-(define-package "helm-youtube" "20190101.1733" "Query YouTube and play videos in your browser" '((request "0.2.0") (helm "2.3.1") (cl-lib "0.5")) :commit "e7272f1648c7fa836ea5ac1a61770b4931ab4709" :authors '(("Maximilian Roquemore" . "maximus12793@gmail.com")) :maintainer '("Maximilian Roquemore" . "maximus12793@gmail.com") :keywords '("youtube" "multimedia") :url "https://github.com/maximus12793/helm-youtube")
