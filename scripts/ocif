@@ -5,4 +5,4 @@ export TTY
 
 # oci -f -nd "$@
 
-odn pen-ci -f -nd "$@"
+pen-odn pen-ci -f -nd "$@"
