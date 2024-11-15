@@ -2,7 +2,8 @@
 export TTY
 
 : ${CMD:="$(cmd "$@")"}
-command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs"}"
+# tetris-rs binary may not be installed, while the script may be, so fall-back to etetris
+command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs || etetris-xterm"}"
 command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
 
 # etetris-xterm:
