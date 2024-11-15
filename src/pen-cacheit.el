@@ -2,7 +2,8 @@
 
 (defset pen-ci-cache-dir (f-join penconfdir "ci-cache"))
 
-(f-mkdir pen-ci-cache-dir)
+(ignore-errors
+  (f-mkdir pen-ci-cache-dir))
 
 (defmacro pen-ci (exp &optional b_update)
   "Caches something. Saves an expression."

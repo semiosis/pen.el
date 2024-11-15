@@ -24,6 +24,11 @@ sn="$(basename "$0")"
 bn="$sn"
 rp="$(realpath "$bn")"
 
+if ! which "$sn" &>/dev/null; then
+    dn="$(dirname "$(realpath "$0")")"
+    export PATH="$PATH:$dn"
+fi
+
 ocif() {
     if which ocif &>/dev/null; then
         command ocif "$@"
@@ -63,10 +68,11 @@ cmd() {
 }
 
 cmd-onelineify-safe() {
-    for var in "$@"
-    do
-        printf "'%s' " "$(printf %s "$var" | pen-str onelineify-safe)";
-    done | sed 's/ $//'
+    if which cmd-onelineify-safe &>/dev/null; then
+        command cmd-onelineify-safe "$@"
+    else
+	cmd "$@"
+    fi
 }
 
 # cmd-unonelineify-safe is used for an eval. Therefore, I must properly escape contained single quotes

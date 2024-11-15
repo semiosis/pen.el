@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=4.0
+Name=Pen (basic)
+GenericName=Pen.el Basic
+Exec=/home/shane/pen.el/scripts/pen-boot-basic
+Terminal=true
+Icon="/home/shane/Pictures/Screenshots/Pen-128.png"
+Type=Application
+Categories=TextEditor;IDE;Development;Bible
+X-Ayatana-Desktop-Shortcuts=NewWindow
+Icon[en_US]=/home/shane/Pictures/Screenshots/Pen-128.png
+
+# test:
+# gio launch pen-basic.desktop
+
+[NewWindow Shortcut Group]
+Name=New Window
+Exec=xpin
+TargetEnvironment=Unity
