@@ -2536,3 +2536,7 @@ go install -v github.com/rogpeppe/godef@master
 cargo install mdbook
 
 cargo install rust-script
+
+# Go REPL
+go install github.com/x-motemen/gore/cmd/gore@latest
+go install github.com/mdempsky/gocode@latest

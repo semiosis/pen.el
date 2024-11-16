@@ -318,9 +318,13 @@
         :nextdef '(pen-prog-next-def)
         :prevdef '(pen-prog-prev-def))
 
+(defun gore-repl ()
+  (interactive)
+  (sps "nvt gore"))
+
 (handle '(go-mode go-ts-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
-        :repls (list)
+        :repls '(gore-repl)
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
