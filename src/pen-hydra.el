@@ -248,7 +248,9 @@ display values."
 
 (defun efs ()
   (interactive)
-  (pen-sn (cmd "erase-trailing-whitespace-emacs" (get-path-nocreate))))
+  (pen-region-pipe "erase-trailing-whitespace-emacs")
+  ;; (pen-sn (cmd "erase-trailing-whitespace-emacs" (get-path-nocreate)))
+  )
 
 (convert-hydra-to-sslk "lf"
                        (defhydra h_f (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "VISUAL: filtering"

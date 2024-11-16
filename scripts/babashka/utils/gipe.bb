@@ -18,6 +18,11 @@
   []
   (myshell/snc "echo hi | tpop -E \"PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb\""))
 
+(defn test2
+  ""
+  []
+  (myshell/snc "echo hi | tpop vipe v"))
+
 ;; (deps/add-deps '{:deps {io.github.justone/bb-scripts {:sha "ecbd71747dd0527243286d98c5a209f6890763ff"}}})
 
 (require '[clojure.string :as str]
