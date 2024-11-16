@@ -1146,6 +1146,15 @@
           (bindings--define-key menu [mi-nasb]
             '(menu-item "Open NASB Bible" nasb
                         :help "Open Bible"))
+          (bindings--define-key menu [mi-esv]
+            '(menu-item "Open ESV Bible" esv
+                        :help "Open Bible"))
+          (bindings--define-key menu [mi-kjv]
+            '(menu-item "Open KJV Bible" kjv
+                        :help "Open Bible"))
+          (bindings--define-key menu [mi-bsb]
+            '(menu-item "Open BSB Bible" bsb
+                        :help "Open Bible"))
           (bindings--define-key menu [cancel-menu]
             '(menu-item "Cancel" identity-command
                         :help "Cancel out of this menu"))
