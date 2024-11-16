@@ -93,6 +93,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             else
                 FONT_SIZE="$(pen-rc .xterm_font_size)"
             fi
+            : "${FONT_SIZE:="26"}"
+            # : "${FONT_SIZE:="36"}"
         }
         shift
     }
@@ -232,7 +234,7 @@ run_term() {
                 fi
             fi
 
-            xterm "${fargs[@]}" -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
+            xterm "${fargs[@]}" -ls -fs "$FONT_SIZE" -fa "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
         }
         ;;
 
