@@ -82,7 +82,8 @@
          ((or
            (derived-mode-p 'go-mode)
            (derived-mode-p 'c++-mode))
-          (ace-link-click-button))
+          ;; I want URLs to work as well, so use ace-link-button-or-org which can handle URLs
+          (ace-link-button-or-org))
          ((bound-and-true-p org-link-minor-mode)
           (ace-link-org))
          ((eq major-mode 'emacs-lisp-mode)

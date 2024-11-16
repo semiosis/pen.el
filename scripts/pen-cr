@@ -577,10 +577,11 @@ case "$fnspec" in
         cd "$dn"
         pwd
         if pen-yn "Attempt go run?"; then
-            go run main.go
+            # Use zrepl so I can run it differently if I want
+            zrepl -cm go run main.go
         elif pen-yn "Attempt go get?"; then
             shorturl="$(pen-vc url | sed 's/^https\?:\/\///')"
-            go get -u "$shorturl"
+            zrepl -cm go get -u "$shorturl"
         else
             set -xv
             go build

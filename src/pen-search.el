@@ -232,7 +232,8 @@
                     (not (string-empty-p path)))
                 (setq url (concat url "&")))
             (setq url (concat url "filter[repo.pattern][0]=" repo))))
-      (browse-url-generic url))))
+      ;; (browse-url-generic url)
+      (chrome url))))
 (add-to-list 'search-functions 'grep-app)
 
 (defun gh-find-repo-by-topic (topic-query)
