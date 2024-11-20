@@ -15,93 +15,93 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 This is a short preview of where I'm at with my theology. I don't claim to know everything or to have perfect theology:
 
-     1    If we trust God, believing on Yeshua's (Jesus's) name, it's typically the
-     2    initial act of obedience of a Christian, Jesus having commanded us to trust
-     3    Him, and believe Him, especialy concerning His name as Son of God, Christ,
-     4    Messiah as foretold by the prophets, and we are sealed by the Holy Spirit when
-     5    we do this.
+     1  If we trust God, believing on Yeshua's (Jesus's) name, it's typically the
+     2  initial act of obedience of a Christian, Jesus having commanded us to trust
+     3  Him, and believe Him, especialy concerning His name as Son of God, Christ,
+     4  Messiah as foretold by the prophets, and we are sealed by the Holy Spirit when
+     5  we do this.
      6  
-     7        Acts 10:43 - To him all the prophets bear witness that everyone who
-     8        believes in him receives forgiveness of sins through his name.
-     9        (ESV)
+     7      Acts 10:43 - To him all the prophets bear witness that everyone who
+     8      believes in him receives forgiveness of sins through his name.
+     9      (ESV)
     10  
-    11    Then we call on Jesus to save us, (usually out of desperation).
-    12    Noone calls on a law to save them. We call on Jesus to save us.
-    13    This is another act of obedience to the Gospel.
+    11  Then we call on Jesus to save us, (usually out of desperation).
+    12  Noone calls on a law to save them. We call on Jesus to save us.
+    13  This is another act of obedience to the Gospel.
     14  
-    15        Ephesians 1:7-12 - In him we have redemption through his blood, the
-    16        forgiveness of our trespasses, according to the riches of his grace, which
-    17        he lavished upon us, in all wisdom and insight making known to us the
-    18        mystery of his will, according to his purpose, which he set forth in
-    19        Christ as a plan for the fullness of time, to unite all things in him,
-    20        things in heaven and things on earth.
-    21        In him we have obtained an inheritance, having been predestined according
-    22        to the purpose of him who works all things according to the counsel of his
-    23        will, so that we who were the first to hope in Christ might be to the
-    24        praise of his glory.
-    25        (ESV)
+    15      Ephesians 1:7-12 - In him we have redemption through his blood, the
+    16      forgiveness of our trespasses, according to the riches of his grace, which
+    17      he lavished upon us, in all wisdom and insight making known to us the
+    18      mystery of his will, according to his purpose, which he set forth in
+    19      Christ as a plan for the fullness of time, to unite all things in him,
+    20      things in heaven and things on earth.
+    21      In him we have obtained an inheritance, having been predestined according
+    22      to the purpose of him who works all things according to the counsel of his
+    23      will, so that we who were the first to hope in Christ might be to the
+    24      praise of his glory.
+    25      (ESV)
     26  
-    27    Trust, obedience, belief and faith are not really separate things when it
-    28    comes to believing the Word of God in the heart, and if a person has put their
-    29    trust in Jesus then they've done something which is in the will of God.
+    27  Trust, obedience, belief and faith are not really separate things when it
+    28  comes to believing the Word of God in the heart, and if a person has put their
+    29  trust in Jesus then they've done something which is in the will of God.
     30  
-    31    Our faith and obedience are supposed to continue as we are sanctified and are
-    32    taught by Christ, especially by the teachings He taught while walking the
-    33    earth even before His crucifixion.
+    31  Our faith and obedience are supposed to continue as we are sanctified and are
+    32  taught by Christ, especially by the teachings He taught while walking the
+    33  earth even before His crucifixion.
     34  
-    35    Trust, belief and obedience, and even agape and knowledge of God when they are
-    36    settled in the heart is what God sees and God is our justifier, and He
-    37    justifies the one who puts their faith/trust in Jesus Christ.
+    35  Trust, belief and obedience, and even agape and knowledge of God when they are
+    36  settled in the heart is what God sees and God is our justifier, and He
+    37  justifies the one who puts their faith/trust in Jesus Christ.
     38  
-    39    We believe by faith that we are justified by the blood of Jesus and just get
-    40    to serving God with agape love proceeding from a good conscience having
-    41    believed the Gospel and placed our faith in Christ.
+    39  We believe by faith that we are justified by the blood of Jesus and just get
+    40  to serving God with agape love proceeding from a good conscience having
+    41  believed the Gospel and placed our faith in Christ.
     42  
-    43    Christ died for our sins according to the Scriptures, He was buried, He was
-    44    raised on the third day according to the Scriptures, and He appeared to many
-    45    eye-witnesses.
+    43  Christ died for our sins according to the Scriptures, He was buried, He was
+    44  raised on the third day according to the Scriptures, and He appeared to many
+    45  eye-witnesses.
     46  
-    47    In this way did God agape love (treasure/value) the world, that He gave His
-    48    Only-Begotten Son that everyone who is trusting/believing in Him may not
-    49    perish, but may have life everlasting which is to be reconciled to our Creator
-    50    and His Son, in relationship with God forever, never perishing nor being cut
-    51    off from our source of life and all that is good.
+    47  In this way did God agape love (treasure/value) the world, that He gave His
+    48  Only-Begotten Son that everyone who is trusting/believing in Him may not
+    49  perish, but may have life everlasting which is to be reconciled to our Creator
+    50  and His Son, in relationship with God forever, never perishing nor being cut
+    51  off from our source of life and all that is good.
     52  
-    53    Agape love is a treasuring/valuing/preserving/compassion love and God the
-    54    Father and Jesus God the Son should be our first agape love, and those in the
-    55    family of Christ we must also agape love, and our spouses we must agape love
-    56    and we are even called to agape all people, but we're supposed to have no
-    57    agape for this world.
+    53  Agape love is a treasuring/valuing/preserving/compassion love and God the
+    54  Father and Jesus God the Son should be our first agape love, and those in the
+    55  family of Christ we must also agape love, and our spouses we must agape love
+    56  and we are even called to agape all people, but we're supposed to have no
+    57  agape for this world.
     58  
-    59    Agape-loving our neighbour as ourself necessitates not bearing a grudge against
-    60    our neighbour and not taking vengeance - there is no fear or grudge or
-    61    vengence in agape love because agape love is selfless and compassionate and
-    62    agape love gives everything and holds nothing back to have a chance to
-    63    preserve and protect, to save. God would have sent Jesus even if there was
-    64    only one more person to save. Agape comes from God. God loved us this way and
-    65    paid the price for us for sin to be defeated that we may be reconciled back to
-    66    Him through Jesus. And we pass this type of love, agape love, forward to
-    67    others.
+    59  Agape-loving our neighbour as ourself necessitates not bearing a grudge against
+    60  our neighbour and not taking vengeance - there is no fear or grudge or
+    61  vengence in agape love because agape love is selfless and compassionate and
+    62  agape love gives everything and holds nothing back to have a chance to
+    63  preserve and protect, to save. God would have sent Jesus even if there was
+    64  only one more person to save. Agape comes from God. God loved us this way and
+    65  paid the price for us for sin to be defeated that we may be reconciled back to
+    66  Him through Jesus. And we pass this type of love, agape love, forward to
+    67  others.
     68  
-    69    We move forward serving God with hope to see His glory.
+    69  We move forward serving God with hope to see His glory.
     70  
-    71    Obedience is in the heart, along with belief in the Truth and understanding of
-    72    the gospel.
+    71  Obedience is in the heart, along with belief in the Truth and understanding of
+    72  the gospel.
     73  
-    74    Obedience can exist without work - a willingness of the spirit.
+    74  Obedience can exist without work - a willingness of the spirit.
     75  
-    76    Jesus said, "The spirit is indeed willing but the flesh is weak." The law can
-    77    also be followed by faith where it's a matter of seeking praise from God and
-    78    not from men.
+    76  Jesus said, "The spirit is indeed willing but the flesh is weak." The law can
+    77  also be followed by faith where it's a matter of seeking praise from God and
+    78  not from men.
     79  
-    80    Our faith should be modelled on Abraham's faith.
-    81  - By faith Abraham obeyed God. By faith Christians obey Christ.
+    80  Our faith should be modelled on Abraham's faith.
+    81  By faith Abraham obeyed God. By faith Christians obey Christ.
     82  
-    83    We're supposed to have joy in our obedience to God.
+    83  We're supposed to have joy in our obedience to God.
     84  
-    85    We're supposed to go from agapeing darkness to agapeing God's light, and into
-    86    walking in the light, walking in God's will, and we're supported by God's
-    87    Spirit as we are doing this.
+    85  We're supposed to go from agapeing darkness to agapeing God's light, and into
+    86  walking in the light, walking in God's will, and we're supported by God's
+    87  Spirit as we are doing this.
 
 We serve the Only True God, the Most High God, Jehovah and Jesus Christ who He has sent - the same God, and we are found in Christ Jesus:
 
@@ -663,7 +663,7 @@ Those who teach others to disobey Jesus, calling Jesus' commandments contrary to
 
 God gives grace to the humble (not the self-righteous). That is true. But recognising your own sin and calling it sin is humility. And in wanting to turn from it, God may give grace to do so:
 
-> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 We are supposed to have a response of **repentance from sin**. God's kindness is meant to lead us to repentance from sin. And turning from sin is a loving response to grace given:
 
@@ -795,7 +795,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgbd78c71) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf7944ff) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3456,6 +3456,28 @@ It's God's grace that enables us to be saved through faith. While we are saved e
 Just because we're gifted repentance to life, that doesn't mean that to go ahead and obediently repent makes the gift of repentance no longer a gift!
 
 > **[Acts 11:18](https://www.biblegateway.com/passage/?search=Acts%2011%3A18&version=ESV)** - When they heard these things they fell silent. And they glorified God, saying, Then to the Gentiles also God has granted repentance that leads to life.
+
+There are varying amounts of grace given to each person according to mercy, need or stewardship:
+
+> **[Romans 12:6-8](https://www.biblegateway.com/passage/?search=Romans%2012%3A6-8&version=ESV)** - Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts, in his exhortation; the one who contributes, in generosity; the one who leads, with zeal; the one who does acts of mercy, with cheerfulness. (ESV)
+
+> **[Ephesians 3:2](https://www.biblegateway.com/passage/?search=Ephesians%203%3A2&version=ESV)** - assuming that you have heard of the stewardship of God's grace that was given to me for you, (ESV)
+
+> **[Ephesians 4:7](https://www.biblegateway.com/passage/?search=Ephesians%204%3A7&version=ESV)** - But grace was given to each one of us according to the measure of Christ's gift. (ESV)
+
+> **[Romans 12:3](https://www.biblegateway.com/passage/?search=Romans%2012%3A3&version=ESV)** - For by the grace given to me I say to everyone among you not to think of himself more highly than he ought to think, but to think with sober judgment, each according to the measure of faith that God has assigned. (ESV)
+
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good stewards of God's varied grace: (ESV)
+
+> **[I Corinthians 12:7-11](https://www.biblegateway.com/passage/?search=1%20Corinthians%2012%3A7-11&version=ESV)** - To each is given the manifestation of the Spirit for the common good. To one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge according to the same Spirit, to another faith by the same Spirit, to another gifts of healing by the one Spirit, to another the working of miracles, to another prophecy, to another the ability to distinguish between spirits, to another various kinds of tongues, to another the interpretation of tongues. All these are empowered by one and the same Spirit, who apportions to each one individually as he wills. (ESV)
+
+We can still ask for more grace when we are in need:
+
+> **[Hebrews 4:16](https://www.biblegateway.com/passage/?search=Hebrews%204%3A16&version=ESV)** - Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need. (ESV)
+
+God gives grace to the humble (not the self-righteous). That is true. But recognising your own sin and calling it sin is humility. And in wanting to turn from it, God may give grace to do so:
+
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 -   **Sermon:** [The Heart of the Gospel - YouTube](https://www.youtube.com/watch?v=ecyncQwJlr4)
 
@@ -7216,9 +7238,21 @@ This belief is a free gift which has to be received in faith (you have to believ
 
 God wants to bring people to the obedience of faith. We have to hear Jesus' word and believe God who sent Him - we have to believe what God has told Jesus to tell us:
 
+> **[Luke 9:35](https://www.biblegateway.com/passage/?search=Luke%209%3A35&version=ESV)** - And a voice came out of the cloud, saying, This is my Son, my Chosen One; listen to him! (ESV)
+
+Listening to Jesus, we are already obeying the will of God, who commanded us to listen to Him:
+
+> **[Romans 10:17](https://www.biblegateway.com/passage/?search=Romans%2010%3A17&version=ESV)** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+
+Trusting in Jesus, trusting Jesus, trusting in God, we are becoming obedient to Jesus:
+
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - Let not your hearts be troubled. Believe in God; believe also in me. (ESV)
+
+> **[Hebrews 5:9](https://www.biblegateway.com/passage/?search=Hebrews%205%3A9&version=ESV)** - And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
 I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
@@ -13900,6 +13934,34 @@ We are the temple of God:
 3.  Put on the new self: Christ-likeness
 
     > **[Colossians 3:10-17](https://www.biblegateway.com/passage/?search=Colossians%203%3A10-17&version=ESV)** - and have put on the new self, which is being renewed in knowledge after the image of its creator. Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all. Put on then, as God's chosen ones, holy and beloved, compassion, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive. And above all these put on love (**[26. agapé](https://biblehub.com/greek/agape_n_26.htm)**), which binds everything together in perfect harmony. And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
+    
+    -   **[youtube.com: Should Christians Play Games That Involve Lying? - Ask Pastor Tim](https://www.youtube.com/watch?v=1KiG2qxRP9I):** Brethren, I don't know about you
+        but when I was lost I was a big liar, a
+        *big* liar and one of the things that I [did], just
+        being saved, is going back and actually
+        opening up with people about some of the
+        big lies that I told and had a lot of
+        impact or effect that I just felt God
+        brought to my mind and if anything, I mean we should really be
+        striving to be people that tell the
+        truth.
+        
+        Now I recognize sometimes we're
+        going to say things and we don't
+        remember exactly the right way, and we
+        unintentionally say things, but
+        that's entirely different than you
+        **honing** your skills to deceive. 
+        Biblically speaking, that is a
+        devilish thing. Yeah, I don't think you
+        can get away from it. He (the devil) is a liar, he's the
+        father of Lies. God [has] no lie in Him. Jesus -
+        you cannot find [any deception in Him). Well, there were times he was silent, there were times he didn't want it to be known who he was, but you
+        cannot charge him with deception at all.
+    
+    Yeah, I really don't like the game Coup which seems to be training people to deceive each other - training people to think in that way. That's the big problem I think, that it trains people to think in that way, to lie to gain advantage over someone else. But it's not at all a healthy way of thinking. Wow, a scripture to back this up.
+    
+    > **[Jeremiah 9:5](https://www.biblegateway.com/passage/?search=Jeremiah%209%3A5&version=ESV)** - Everyone deceives his neighbor, and no one speaks the truth; they have taught their tongue to speak lies; they weary themselves committing iniquity. (ESV)
 
 
 ### What must be believe, and what we must do: Walk in *truth* and *love* the way Jesus has commanded us
@@ -15152,7 +15214,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org169b54d)
+See: [33.4.1](#orgd01b252)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -22093,7 +22155,7 @@ Be merciful to others:
 
 Be humble:
 
-> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 
 ## The law is good, if used properly - and its usage is part of the gospel
@@ -23786,7 +23848,7 @@ To get to know Jesus, we **must obey** His commandments:
 
 > **[Romans 9:15-16](https://www.biblegateway.com/passage/?search=Romans%209%3A15-16&version=ESV)** - For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
 
-> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 
 ## Without holiness, no-one will see the Lord
@@ -29681,7 +29743,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org169b54d)
+See: [33.4.1](#orgd01b252)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -31382,7 +31444,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
 
 3.  Victory over sin and death through Jesus
 
-    [Sinning believers](#org78511b4) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+    [Sinning believers](#orgc97fa75) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
     
     -   **[youtube.com: Christ Appeared for Our Sake @time: 11 min 21 sec](https://youtu.be/MEYSRQCfIHc?t=660):** I think the resurrection of Jesus does two things: One, it vindicates the value of the ransom. When God looked down on the bloodshedding of his Son, which he himself ordained and caused, and He looked at it and Jesus said, "It is finished.", the Father said, "It **is** finished."
         Then He raised him from the dead to say to all the world, "It was finished. It is all satisfying and all valuable and all sufficient. No more needs to be paid. Once for all, it is done."
@@ -35764,7 +35826,7 @@ We are supposed to have the same mind:
 
 But I am allowed to ask God for more grace, but that's between me and God:
 
-> **[James 4:6-7](https://www.biblegateway.com/passage/?search=James%204%3A6-7&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
+> **[James 4:6-7](https://www.biblegateway.com/passage/?search=James%204%3A6-7&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
 
 And I'm allowed to speak the truth from my angle:
 
@@ -36298,7 +36360,7 @@ The saving grace we receive is primarily for the salvation of our souls, not in 
 
 But I'm still hoping for more grace:
 
-> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 > **[I Peter 5:10](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A10&version=ESV)** - And after you have suffered a little while, the God of all grace, who has called you to his eternal glory in Christ, will himself restore, confirm, strengthen, and establish you. (ESV)
 
@@ -36952,7 +37014,7 @@ I've kept a good conscience with God, and with men, being obedient to Jesus over
 
 I'm definitely taking this stuff to God's court and asking for grace to be sanctified/delivered.
 
-> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
+> **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But **he gives more grace**. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
 > **[II Corinthians 9:8](https://www.biblegateway.com/passage/?search=2%20Corinthians%209%3A8&version=ESV)** - And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work. (ESV)
 
