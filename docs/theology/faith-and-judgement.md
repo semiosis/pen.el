@@ -150,6 +150,8 @@ Christ is reigning until all things are subjected to Him. We must come under the
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
+> **[Luke 4:8](https://www.biblegateway.com/passage/?search=Luke%204%3A8&version=ESV)** - And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. (ESV)
+
 > **[Daniel 7:13-14](https://www.biblegateway.com/passage/?search=Daniel%207%3A13-14&version=ESV)** - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that **all peoples, nations, and languages should serve him;** his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)
 
 -   **[Quote by John Piper](https://youtu.be/Mm99f8B16Ts?t=183):** So if I were to put a title on
@@ -635,6 +637,21 @@ I believe that if I am disobeying sin and obeying Jesus then I am cooperating wi
 
 That is the obvious conclusion. I should not be a hypocrite about it.
 
+-   **[youtube.com: Ready or Not: Here Comes Temptation Pt 2 - 21 November 2024 @time: 5 min 47 sec](https://youtube.com/watch?v=SXmSg7lBjUY&t=347):** Trial and temp[tation] - are they the same? No. But a test in
+    your life either takes you closer to God
+    or takes you farther away from God,
+    depending on your response.
+    A test is a test until you respond
+    inappropriately at which point it
+    becomes a temptation. Now please stay
+    with me, this is so important, you are
+    going to encounter all kinds of stuff
+    and it's either going to make you grow
+    in your relationship with God or it's
+    going to take you further away from God,
+    but you will not remain the
+    same.
+
 Jesus has set me free, and there's no condemnation for those who are in Christ, but we should have a response of love for Jesus, and live to serve Jesus, and it's very, very important to embrace sanctification, and to put a stop to willful sin.
 
 -   **[desiringgod.org: The High Cost of Sexual Sin | Desiring God](https://www.desiringgod.org/interviews/the-high-cost-of-sexual-sin):** I'm trying to explode the doctrine that the battle for obedience is optional because only faith is necessary for salvation. This is very tricky the way words are used here. The battle for obedience is **absolutely necessary** for salvation because it **is** the fight of faith. The **battle for obedience is absolutely necessary for getting to heaven** because **it is** the battle against unbelief. **It is** the fight of faith. There are **not** <ins>two battles</ins>: one to get yourself saved by a single act of faith, and the other to collect rewards by work. There is only **one battle** - it's the one that gets you started, it's the one that gets you there, and it's the fight of faith not works! Faith is what severs the root of covetousness,  misplaced shame, anxiety, lust, envy, and six more before we are done this year. There is one warfare, and it is the warfare of faith.
@@ -795,7 +812,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf7944ff) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8cbf834) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -826,7 +843,8 @@ The general order of salvation from what I can dilvulge from **Acts 26** and **A
 -   Turn from the power of Satan to God
     -   Satan stops controlling them. God starts working through them, as we believe and obey, and our house is built.
         -   **[Philippians 2:13](https://www.biblegateway.com/passage/?search=Philippians%202%3A13&version=ESV)** - for it is God who works in you, both to will and to work for his good pleasure. (ESV)
-        -   **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+        -   **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm) - *Phonetic Spelling: (yeh-ho-vaw'), Meaning: Jehovah*) builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+            -   If Jehovah builds the house then those who build it **do not labour in vain**
         -   **[Luke 6:48](https://www.biblegateway.com/passage/?search=Luke%206%3A48&version=ESV)** - he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
         -   **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him **to do his will**. (ESV)
         -   **[II Corinthians 5:1-3](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A1-3&version=ESV)** - For we know that if the tent, which is our earthly home, is destroyed, we have a building from God, a house not made with hands, eternal in the heavens. For in this tent we groan, longing to put on our heavenly dwelling, if indeed by putting it on we may not be found naked. (ESV)
@@ -2136,7 +2154,7 @@ I have also had to:
 -   get to know Jesus better through following His commandments
     -   **[I John 2:4](https://www.biblegateway.com/passage/?search=1%20John%202%3A4&version=ESV)** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 -   allow the LORD to build my house
-    -   **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+    -   **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm) - *Phonetic Spelling: (yeh-ho-vaw'), Meaning: Jehovah*) builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
 I appreciated Bryce's testimony here as he also had to turn away from false religion to follow Jesus:
 
@@ -3039,7 +3057,7 @@ Jesus can work in a person to bring them to belief in Him.
 
 When you obey Jesus' commandments, Jesus may be working in you, and you may arrive at belief.
 
-> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm) - *Phonetic Spelling: (yeh-ho-vaw'), Meaning: Jehovah*) builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
 > **[Matthew 7:24](https://www.biblegateway.com/passage/?search=Matthew%207%3A24&version=ESV)** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. (ESV)
 
@@ -14702,7 +14720,7 @@ We need to believe and **then** call on Jesus to save us, (usually out of desper
 
 Ironically, I feel like this word [hupakouó](https://biblehub.com/greek/5219.htm) which means to "fully hearken" (it's an intensification of the verb "to listen" with connotations of paying attention and responding to obey) may have been "demoted" in meaning by many people to not at all mean "fully hearken to / become obedient to the command":
 
-> **[Romans 10:16](https://www.biblegateway.com/passage/?search=Romans%2010%3A16&version=ESV)** - But they have not all obeyed ([G5219. hupakouó](https://biblehub.com/greek/5219.htm) - *I listen, hearken to, obey, answer*) gospel. For Isaiah says, Lord, who has believed [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what he has heard from us? (ESV)
+> **[Romans 10:16](https://www.biblegateway.com/passage/?search=Romans%2010%3A16&version=ESV)** - But they have not all obeyed ([G5219. hupakouó](https://biblehub.com/greek/5219.htm) - *I listen, hearken to, obey, answer*) the gospel. For Isaiah says, Lord, who has believed [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what he has heard from us? (ESV)
 
 > **[Acts 5:29-32](https://www.biblegateway.com/passage/?search=Acts%205%3A29-32&version=ESV)** - But Peter and the apostles answered, We must obey God rather than men. The God of our fathers raised Jesus, whom you killed by hanging him on a tree. God exalted him at his right hand as Leader and Savior, to give repentance to Israel and forgiveness of sins. And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him. (ESV)
 
@@ -15214,7 +15232,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgd01b252)
+See: [33.4.1](#org3760c36)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15831,7 +15849,7 @@ We need to believe and **then** call on Jesus to save us, (usually out of desper
 
 Ironically, I feel like this word [hupakouó](https://biblehub.com/greek/5219.htm) which means to "fully hearken" (it's an intensification of the verb "to listen" with connotations of paying attention and responding to obey) may have been "demoted" in meaning by many people to not at all mean "fully hearken to / become obedient to the command":
 
-> **[Romans 10:16](https://www.biblegateway.com/passage/?search=Romans%2010%3A16&version=ESV)** - But they have not all obeyed ([G5219. hupakouó](https://biblehub.com/greek/5219.htm) - *I listen, hearken to, obey, answer*) gospel. For Isaiah says, Lord, who has believed [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what he has heard from us? (ESV)
+> **[Romans 10:16](https://www.biblegateway.com/passage/?search=Romans%2010%3A16&version=ESV)** - But they have not all obeyed ([G5219. hupakouó](https://biblehub.com/greek/5219.htm) - *I listen, hearken to, obey, answer*) the gospel. For Isaiah says, Lord, who has believed [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what he has heard from us? (ESV)
 
 Hupakouó really means to be fully compliant to:
 
@@ -24681,7 +24699,7 @@ An adequate reading of the following which makes sense to me is that being found
 
 > **[Philippians 3:9](https://www.biblegateway.com/passage/?search=Philippians%203%3A9&version=ESV)** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— (ESV)
 
-Flock = Jesus' followers. God **wants** to give Jesus' followers the kingdom, but we have to stop the sin:
+Flock = Jesus' followers. God **wants** to give Jesus' followers the kingdom, but we have to stop serving sin and repent to serve God through Jesus:
 
 > **[Luke 12:30-32](https://www.biblegateway.com/passage/?search=Luke%2012%3A30-32&version=ESV)** - For all the nations of the world seek after these things, and your Father knows that you need them. Instead, seek his kingdom, and these things will be added to you. Fear not, little flock, for **it is your Father's good pleasure to give you the kingdom.** (ESV)
 
@@ -27378,7 +27396,7 @@ But only the ones who are truly remorseful:
 
 > **[I Corinthians 6:9-10](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A9-10&version=ESV)** - Do you not know that <ins>the unrighteous will not inherit the kingdom of God?</ins> Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God. (ESV)
 
-Flock = Jesus' followers. God **wants** to give Jesus' followers the kingdom, but we have to stop the sin:
+Flock = Jesus' followers. God **wants** to give Jesus' followers the kingdom, but we have to stop serving sin and repent to serve God through Jesus:
 
 > **[Luke 12:30-32](https://www.biblegateway.com/passage/?search=Luke%2012%3A30-32&version=ESV)** - For all the nations of the world seek after these things, and your Father knows that you need them. Instead, seek his kingdom, and these things will be added to you. Fear not, little flock, for **it is your Father's good pleasure to give you the kingdom.** (ESV)
 
@@ -29743,7 +29761,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgd01b252)
+See: [33.4.1](#org3760c36)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -31444,7 +31462,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
 
 3.  Victory over sin and death through Jesus
 
-    [Sinning believers](#orgc97fa75) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+    [Sinning believers](#orgadd12b0) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
     
     -   **[youtube.com: Christ Appeared for Our Sake @time: 11 min 21 sec](https://youtu.be/MEYSRQCfIHc?t=660):** I think the resurrection of Jesus does two things: One, it vindicates the value of the ransom. When God looked down on the bloodshedding of his Son, which he himself ordained and caused, and He looked at it and Jesus said, "It is finished.", the Father said, "It **is** finished."
         Then He raised him from the dead to say to all the world, "It was finished. It is all satisfying and all valuable and all sufficient. No more needs to be paid. Once for all, it is done."
@@ -35624,7 +35642,7 @@ That was around January 2021.
 
 And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el when it was AI software (before it was Bible Study software) for the course of 2021. With the AI project I was building a 'virtual house', but Jesus wants us to allow Him to build our life:
 
-> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm) - *Phonetic Spelling: (yeh-ho-vaw'), Meaning: Jehovah*) builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
 > **[Matthew 7:24](https://www.biblegateway.com/passage/?search=Matthew%207%3A24&version=ESV)** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. (ESV)
 
@@ -37715,6 +37733,10 @@ Glory and honor and peace for everyone who does good, the Jew first and also the
 ### The unrepentant sinners including believers who do not want to repent from sin
 
 Sinning believers will still experience tribulation. Believers who are unrepentant from sin are probably not true trusters of Jesus or are rebellious even in face of hearing the gospel and maybe even experience the literal place Hades (the bad part). It's a bad idea to put Christ to the test.
+
+> **[Luke 4:8](https://www.biblegateway.com/passage/?search=Luke%204%3A8&version=ESV)** - And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. (ESV)
+
+> **[I Corinthians 10:8-11](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A8-11&version=ESV)** - We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. (ESV)
 
 Those who <ins>do not repent from sin</ins> (stop serving sin), but instead embrace evil will experience tribulation.
 
