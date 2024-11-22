@@ -85,6 +85,7 @@
                 (etc "tmwr clj-rebel" t t)
                 ;; (etc "nvc -f lein repl" t)
                 (etc "lein repl" t))
+        :copylastresult '(pen-copy-last-clojure-result)
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix
                 pen-doc-override

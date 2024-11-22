@@ -73,6 +73,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :complete)
 (add-to-list 'handle-keywords :debug)
 (add-to-list 'handle-keywords :path)
+(add-to-list 'handle-keywords :copylastresult)
 
 (add-to-list 'handle-keywords :runmain)
 ;; mx

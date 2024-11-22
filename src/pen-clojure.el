@@ -872,5 +872,21 @@ Also checks whether a matching session already exists."
                 (cider--check-existing-session)
                 (cider--update-jack-in-cmd)))
 
+(defcustom cider-last-eval-result ""
+  "The last evaluated result."
+  :group 'pen-clojure
+  :type 'string)
+(setq cider-last-eval-result "")
+
+(defun cider--display-interactive-eval-result-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (setq cider-last-eval-result (str (s-replace-regexp (concat "^" (pen-unregexify cider-eval-result-prefix)) "" res)))
+    res))
+(advice-add 'ciderk--display-interactive-eval-result :around #'cider--display-interactive-eval-result-around-advice)
+;; (advice-remove 'cider--display-interactive-eval-result #'cider--display-interactive-eval-result-around-advice)
+
+(defun pen-copy-last-clojure-result ()
+  (interactive)
+  (xc cider-last-eval-result))
 
 (provide 'pen-clojure)

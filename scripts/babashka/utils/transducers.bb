@@ -14,18 +14,28 @@
   ;; body of `->` or `-->`:
   ;; - thread-first (`->`) puts the  as the first argument,
   ;; - thread-last (`->>`) as the last
-  
+
+  ;; thread-last
   (->> (range 10)
 
        (map inc)
        (filter odd?)
        (reduce +))
+  
+  (->> (range 10)
 
+       (mapv inc)
+       (filterv odd?)
+       (reduce +))
+
+  ;; thread-first
   (-> (range 10)
-
-       (map inc)
-       (filter odd?)
-       (reduce +)))
+      
+      ;; Because with -> the `it` gets put into the first slot
+      ;; I just wrap with a lambda which only has one slot
+      ((fn [col] (map inc col)))
+      ((fn [col] (filter odd? col)))
+      ((fn [col] (reduce + col)))))
 
 (->> (range 10)
      ;; You’ll see this character beside another e.g. #( or #".

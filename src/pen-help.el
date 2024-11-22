@@ -85,7 +85,7 @@
 
 (defun ead-show-super-key ()
   (interactive)
-  (wgrep "\"s-" "/root/.emacs.d/host/pen.el/"))
+  (wgrep "\"s-" "/root/.emacs.d/host/pen.el/src"))
 (define-key global-map (kbd "C-s-h") 'ead-show-super-key)
 
 (defun ead-show-hyper-key ()

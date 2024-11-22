@@ -7,6 +7,10 @@
 
 ;; j:mailcap-mime-info
 
+;; Temporarily wrap the function call with `mm-enable-external` equal to nil if I want to
+;; save rather than open, for example, in notmuch.
+(setq mm-enable-external t)
+
 (defun mailcap-mime-info-around-advice (proc string &optional request no-decode)
   ;; (tv string)
   (if request

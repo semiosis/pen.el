@@ -26,6 +26,12 @@ Activate this advice with:
   (interactive)
   (message nil))
 
+(defun pen-last-message ()
+  (with-current-buffer "*Messages*"
+        (save-mark-and-excursion
+          (goto-char (point-max))
+          (current-line-string))))
+
 (global-set-key (kbd "C-c c") 'pen-clear-message)
 
 (provide 'pen-messages)
