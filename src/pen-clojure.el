@@ -882,7 +882,7 @@ Also checks whether a matching session already exists."
   (let ((res (apply proc args)))
     (setq cider-last-eval-result (str (s-replace-regexp (concat "^" (pen-unregexify cider-eval-result-prefix)) "" res)))
     res))
-(advice-add 'ciderk--display-interactive-eval-result :around #'cider--display-interactive-eval-result-around-advice)
+(advice-add 'cider--display-interactive-eval-result :around #'cider--display-interactive-eval-result-around-advice)
 ;; (advice-remove 'cider--display-interactive-eval-result #'cider--display-interactive-eval-result-around-advice)
 
 (defun pen-copy-last-clojure-result ()
