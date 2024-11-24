@@ -830,7 +830,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org6528fc7) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org46e79ff) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -13389,7 +13389,7 @@ Even belief must be in the heart:
 
 God's servants may remain 'shelved' because they're unfit for use.
 
--   **[Daniel 12:10-12](https://www.biblegateway.com/passage/?search=Daniel%2012:10-12&version=YLT):** Purify themselves, yea, **make themselves white, yea**, refined are many: and the wicked have done wickedly, and none of the wicked understand, and those acting wisely do understand; (YLT)
+> **[Daniel 12:10-12](https://www.biblegateway.com/passage/?search=Daniel%2012:10-12&version=YLT)** :: Purify themselves, yea, **make themselves white, yea**, refined are many: and the wicked have done wickedly, and none of the wicked understand, and those acting wisely do understand; (YLT)
 
 > **[II Timothy 2:20-23](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A20-23&version=ESV)** - Now in a great house there are not only vessels of gold and silver but also of wood and clay, some for honorable use, some for dishonorable. Therefore, **if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use**, set apart as holy, useful to the master of the house, ready for every good work. So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart. Have nothing to do with foolish, ignorant controversies; you know that they breed quarrels. (ESV)
 
@@ -15399,7 +15399,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org1b8c0ed)
+See: [33.4.1](#org9437c8b)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -22480,7 +22480,182 @@ Everyone who lives and believes in Jesus Christ shall never die.
 > **[I Corinthians 14:19](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A19&version=ESV)** - Nevertheless, in church I would rather speak five words with my mind in order to instruct others, than ten thousand words in a tongue.
 
 
-## Tongues etiquette
+## Rebuking Marcionism
+
+I've noticed some pretty bad heresy floating around the churches which may come from Marcionism.
+Sadly it seems, doctrines of Marcionism seem to be quite prevalent these days in
+the church. I personally believe there is no antithesis between Lordship and Free grace. I think that probably comes from Marcionism.
+We are saved to serve God. The followers of Jesus are able to be taught by Christ and corrected - they hear Jesus' voice and follow Him - and that includes repentance (turning away) from sin - it's Lordship. The Apostle Paul taught Lordship.
+
+Apparently, Marcion perverted teachings of the oracles of the Lord such as the Apostle Paul, and led many astray.
+
+-   **[Polycarp 6:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** For every one who shall not confess that Jesus Christ is come in the flesh, is antichrist: and whosoever shall not confess the testimony of the Cross, is of the devil; and whosoever shall pervert the oracles of the Lord to his own lusts and say that there is neither resurrection nor judgment, that man is the firstborn of Satan.
+
+-   **[thegospelcoalition.org: Marcion and Getting Unhitched from the Old Testament](https://www.thegospelcoalition.org/blogs/kevin-deyoung/marcion-getting-unhitched-old-testament/):** Marcion was one of the most successful heretics in the early church.
+    He was opposed by everyone who was anyone.
+    
+    For nearly a century after his death, he was
+    the arch-heretic, opposed by Polycarp (who
+    called him the firstborn of Satan), Justin
+    Martyr, Irenaeus, Clement, Tertullian,
+    Hippolytus, and Origen.
+    
+    He was one of the few heretics that the Greek
+    and Latin Christians united in condemning.
+    
+    After his excommunication, he traveled around
+    the world as a missionary for his version of
+    Christianity.
+    
+    And he won a lot of converts.
+    
+    According to Tertullian, he planted churches
+    as “wasps make nests,” teaching men “to deny
+    that God is the maker of all things in heaven
+    and earth and the Christ predicted by the
+    prophets is his Son.” Marcion’s church was
+    rigorous, demanding, inspiring, well-
+    organized, and for about a century fairly
+    successful.
+    
+    Marcion’s theological errors (and there were
+    many) came from one main root: he refused to
+    believe that the God of the Old Testament was
+    the same as the Father of the Lord Jesus
+    Christ.
+    
+    Marcion simply could not believe in a God full
+    of wrath and justice.
+    
+    So he threw away the Old Testament and took
+    for his Bible a truncated version of Luke’s
+    Gospel and selectively edited versions of
+    Paul’s epistles.
+    
+    When all the cutting and pasting was finished,
+    Marcion had the Christianity he wanted: a God
+    of goodness and nothing else a message of
+    inspiring moral uplift a Bible that does away
+    with the uncomfortable bits about God’s wrath
+    and hell.
+    
+    Marcionism was antinomian, idealistic about
+    human potential, and skittish about dogma and
+    rules.
+
+So yeah, I just rebuke that spirit of Marcionism in Jesus Christ's name.
+
+
+## I was tested today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-24 Sun&gt;</span></span>
+
+Today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-24 Sun&gt;</span></span>, I was under test, over the passage of [I Cor 14:18-40](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A18-40&version=ESV).
+
+I attended Elim Church in the morning and the message was about speaking the truth in love, so that is what I will try to do here.
+
+
+### Prophesy etiquette
+
+> **I John 4:1-3** - Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world. By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
+
+-   **[I'll let the Didache speak for itself here](https://www.earlychristianwritings.com/text/didache-roberts.html):** But not every one who speaks in the Spirit is a prophet but only if he holds the ways of the Lord. Therefore from their ways shall the false prophet and the prophet be known. And every prophet who orders a meal in the Spirit does not eat it, unless he is indeed a false prophet. And every prophet who teaches the truth, but does not do what he teaches, is a false prophet. And every prophet, proved true, working unto the mystery of the Church in the world, yet not teaching others to do what he himself does, shall not be judged among you, for with God he has his judgment for so did also the ancient prophets. But whoever says in the Spirit, Give me money, or something else, you shall not listen to him. But if he tells you to give for others' sake who are in need, let no one judge him.
+
+I think when it comes to "reliable prophesy", that prophet has to be keeping the ways of the Lord (i.e. keeping Jesus' commandments, and walking in holiness).
+
+
+### Woman speakers
+
+I then attended another pentecostal church (which I have been attending the last month), and a woman delivered today's message. Yesterday I had added the section below on "tongues etiquette" and I realised this evening that I'm being tested on [I Corinthians 14:33-38](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A33-38&version=ESV), particularly in regards to woman speaking in church and on the tongues etiquette, and it is very important that I affirm the Apostle Paul here, and I believe that his command from the Lord Jesus is backed up and after my experience today, I am compelled to affirm the truth of the command. 
+
+Firstly, I will just mention that I have heard some great sermons that have come from woman, even recently.
+But, I still do not affirm the practice.
+
+I have been tested today on `I Cor 14`, and I have to take today's events consideration.
+
+The "gratitude activating grace" message which I heard today by a woman pastor gave me some chilling red flags.
+
+The [NLT translation](https://www.puritanboard.com/threads/against-the-nlt.52068/) was mostly used, and [Romans 3:24](https://www.biblegateway.com/passage/?search=Romans%203%3A24&version=ESV) was brought up. [I don't affirm the NLT translation](https://github.com/semiosis/thoughts-on-theology/blob/master/bad-bible-versions.org).
+
+> **[Romans 3:24](https://www.biblegateway.com/passage/?search=Romans%203%3A24&version=ESV)** - and are justified by his grace as a gift, through the redemption that is in Christ Jesus, (ESV)
+
+For example, the NLT here affirms that **we** <ins>were</ins> already justified. But the Scripture does not strictly say that. We are justified through faith in Jesus, and God is the justifier of who has faith in Jesus. Thus, the NLT is a bad translation because it's twisting the truth even in this verse.
+
+> **[Romans 3:24](https://www.biblegateway.com/passage/?search=Romans%203%3A24&version=NLT)** - Yet God, in his grace, freely makes us right in his sight. He did this through Christ Jesus <del>when</del> he freed us from the penalty for our sins. (NLT)
+
+The sermon spoken today came across as cheap-grace/hyper-grace mixed with the "law of attraction" to me. Now I do understand that we must give thanks to God.
+
+Another thing that was said was that all believers are saints. Now, that is more controversial but I'm going to go with my current understanding of Scripture and say that I do not affirm that all believers are saints. Even the demons are 'believers' in a sense, but they don't abide in the love of God because they don't keep Jesus' commandments. The saints from what I can see from Scripture are those who keep their faith in Jesus and **also** the commandments of God, and while Jesus' yoke is light, the full yoke of the Lord pulls a very weighty load - it's called **carrying one's cross**. Saints carry their cross and will judge the world, therefore, the saints are not cheap-grace believers - they're disciples of Jesus who keep His commandments. Therefore, Saints keep Christ's law and help carry others' crosses. **Not all 'believers' do this**, sorry.
+
+-   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace **and sanctified** by His Spirit;
+
+> **[John 15:10](https://www.biblegateway.com/passage/?search=John%2015%3A10&version=ESV)** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
+
+> **[Ephesians 1:1](https://www.biblegateway.com/passage/?search=Ephesians%201%3A1&version=ESV)** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are **faithful in Christ Jesus**:
+
+> **[Revelation of John 12:17](https://www.biblegateway.com/passage/?search=Revelation%2012%3A17&version=ESV)** - Then the dragon became furious with the woman and went off to make war on the rest of her offspring, on those **who keep the commandments of God and hold to the testimony of Jesus**. And he stood on the sand of the sea.
+
+> **[Revelation of John 14:12](https://www.biblegateway.com/passage/?search=Revelation%2014%3A12&version=ESV)** - Here is a call for the endurance of the saints, those **who keep the commandments of God and their faith in Jesus**.
+
+> **[Psalms 97:10](https://www.biblegateway.com/passage/?search=Psalms%2097%3A10&version=ESV)** - **O you who love the Lord, hate evil! He preserves the lives of his saints**; he delivers them from the hand of the wicked.
+
+> **[I John 5:3](https://www.biblegateway.com/passage/?search=1%20John%205%3A3&version=ESV)** - For **this is the love of God, that we keep his commandments**. And his commandments are not burdensome. (ESV)
+
+I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Believers are forgiven through Jesus' name. Saints both believe and keep God's commandments, carrying their cross. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
+
+> **[II Thessalonians 1:9-12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%201%3A9-12&version=ESV)** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
+
+A saint is someone who has faith in Jesus and also loves as God commanded. Not people who are unfaithful to Jesus - not merely a believer but someone who gives up their life for Jesus.
+
+> **[Ephesians 1:1](https://www.biblegateway.com/passage/?search=Ephesians%201%3A1&version=ESV)** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are faithful in Christ Jesus: (ESV)
+
+I read the commandments as being the Great commandments, 10 Commandments and faith in Jesus Christ, and potentially various other commandments from the Mosaic law if you know about them, or whatever subset a person practices by faith making themself accountable to God.
+
+I have to agree with the Apostle Paul here:
+
+> **[I Corinthians 14:33-38](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A33-38&version=ESV)** - For God is not a God of confusion but of peace. As in all the churches of the saints, the women should keep silent in the churches. For they are not permitted to speak, but should be in submission, as the Law also says. If there is anything they desire to learn, let them ask their husbands at home. For it is shameful for a woman to speak in church. Or was it from you that the word of God came? Or are you the only ones it has reached? <ins>If anyone thinks that he is a prophet, or spiritual, he should acknowledge that the things I am writing to you are</ins> **a command of the Lord**. **If anyone does not recognize this, he is not recognized.** (ESV)
+
+
+### Tongues etiquette
+
+I then went to another Pentecostal church <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-24 Sun&gt;</span></span>, which has been my home church for the last 2-3 years (also I should mention the local Reformed church has also been a support to me through 2022 and 2023).
+
+They handled the routine aspect of [I Corinthians 14:18-32](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A18-32&version=ESV) today pretty well; allowing people to speak in tongues and seeking interpretation, with a good amount of prophesy mixed in. A healthy balance of tongues and prophesy, songs, and scripture. However, I think that it should be accompanied by teaching people to be discerning with the prophesies/visions/etc. It seemed like it was all for building people up though which is good. But I was very disappointed that testing the spirits was not mentioned, but wildly, it was taught that we should simply speak the dreams and visions so that they come to pass. Very dodgy. We're not supposed to prophesy lying dreams or visions, etc. We've got to teach testing and discernment. We've got to test the spirits. It's very unwise to spread around any old vision or dream we get, and interpret them for ourselves without asking for interpretation, etc. I've spread lying visions to other people before and it has resulted in disastrous consequences. Very concerning stuff.
+
+Tongues and prophecy should be encouraged, but there is etiquette.
+
+[I Corinthians 14:21-23](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A21-23&version=ESV), from what I can see *seems* to say that for the unbelievers, prophesy is not a sign, but [I Corinthians 14:24-25](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A24-25&version=ESV) says that prophesy will convicts them, and calls them to account. But tongues to the unbeliever is a sign and they are perplexed by it but not convicted - rather they are confused.
+
+This clearly says that unbelievers are convicted when they hear prophesy, but that **tongues doesn't help them to hear the Lord**.
+It also says that speaking words of instruction with our minds (bridled by the Word of God, I might add) is a priority over tongues.
+The way this word sign [(G4592 sémeion)](https://www.blueletterbible.org/lexicon/g4592/kjv/tr/0-1/) as it is used seems to indicate that it perplexes people because it's an unusual occurance.
+So to unbelievers tongues is a [sémeion](https://www.blueletterbible.org/lexicon/g4592/kjv/tr/0-1/) but to believers it is not unusual. And prophecy also perplexes believers and we should seek to weigh in on what is said, and prophesy convicts unbelievers.
+
+> **[I Corinthians 14:18-32](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A18-32&version=ESV)** - I thank God that I speak in tongues more than all of you. Nevertheless, in church **I would rather speak five words with my mind in order to instruct others, than ten thousand words in a tongue**. Brothers, do not be children in your thinking. Be infants in evil, but in your thinking be mature. 21 In the Law it is written, <ins>By people of strange tongues and by the lips of foreigners will I speak to this people, and even then they will not listen to me, says the Lord. 22 Thus tongues are a sign [(G4592 sémeion)](https://www.blueletterbible.org/lexicon/g4592/kjv/tr/0-1/) not for believers but for unbelievers, while prophecy is a sign not for unbelievers but for believers.</ins> 23 If, therefore, the whole church comes together and all speak in tongues, and outsiders or unbelievers enter, will they not say that you are out of your minds? 24 But **if all prophesy, and an unbeliever or outsider enters, he is convicted by all, he is called to account by all, 25 the secrets of his heart are disclosed**, and so, falling on his face, he will worship God and declare that God is really among you. What then, brothers? **When you come together, each one has a hymn, a lesson, a revelation, a tongue, or an interpretation. Let all things be done for building up.** If any speak in a tongue, let there be only two or at most three, and each in turn, and let someone interpret. But if there is no one to interpret, let each of them keep silent in church and speak to himself and to God. Let two or three prophets speak, and **let the others weigh what is said**. If a revelation is made to another sitting there, let the first be silent. For **you can all prophesy one by one, so that all may learn and all be encouraged, and the spirits of prophets are subject to prophets**. (ESV)
+
+     1  5620    3588    1100    1519 4592    1510     3756 3588
+     2  Hōste   hai     glōssai eis  sēmeion eisin    ou   tois
+     3  Ὥστε    αἱ      γλῶσσαι εἰς  σημεῖόν εἰσιν  , οὐ   τοῖς
+     4  So then  -      tongues for  a sign  are      not  to those
+     5  Conj    Art-NFP N-NFP   Prep N-ANS   V-PIA-3P Adv  Art-DMP
+     6  
+     7  4100           235  3588    571         3588    1161
+     8  pisteuousin    alla tois    apistois    hē      de
+     9  πιστεύουσιν  , ἀλλὰ τοῖς    ἀπίστοις  ; ἡ       δὲ
+    10  believing      but  to the  unbelieving  -      but
+    11  V-PPA-DMP      Conj Art-DMP Adj-DMP     Art-NFS Conj
+    12  
+    13  4394       3756     3588    571         235
+    14  prophēteia ou       tois    apistois    alla
+    15  προφητεία  οὐ       τοῖς    ἀπίστοις  , ἀλλὰ
+    16  prophecy   [is] not to the  unbelieving but
+    17  N-NFS      Adv      Art-DMP Adj-DMP     Conj
+    18  
+    19  3588    4100
+    20  tois    pisteuousin
+    21  τοῖς    πιστεύουσιν  .
+    22  to the  believing
+    23  Art-DMP V-PPA-DMP
+
+-   **[4592 sēmeíon](https://biblehub.com/greek/4592.htm):** a sign (typically miraculous), given especially to confirm, corroborate or authenticate. 4592 /sēmeíon ("sign") then emphasizes the end-purpose which exalts the one giving it. Accordingly, it is used dozens of times in the NT for what authenticates the Lord and His eternal purpose, especially by doing what mere man can not replicate of take credit for.
 
 -   **[youtube.com: An Open Letter to the Pentecostal Churches - Speaking in Tongues](https://www.youtube.com/watch?v=ojwE2MRTZpY):** but it has been
     turned into a spiritual competition our
@@ -25986,7 +26161,7 @@ Saints keep the commandments of God:
 
 -   **Video:** [youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0)
 
--   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace and sanctified by His Spirit;
+-   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace **and sanctified** by His Spirit;
 
 Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and sanctified through obedience to Jesus' gospel:
 
@@ -28534,7 +28709,7 @@ It quickly progresses to obeying Jesus, receiving the Spirit.
 
 -   **Video:** [youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0)
 
--   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace and sanctified by His Spirit;
+-   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace **and sanctified** by His Spirit;
 
 > **[Ephesians 1:1](https://www.biblegateway.com/passage/?search=Ephesians%201%3A1&version=ESV)** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are faithful in Christ Jesus:
 
@@ -30021,7 +30196,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org1b8c0ed)
+See: [33.4.1](#org9437c8b)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -31722,7 +31897,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
 
 3.  Victory over sin and death through Jesus
 
-    [Sinning believers](#org09ca8ef) will still experience tribulation and 'believers' who are still unrepentantly serving sin and not serving Jesus I think might experience the literal place Hades (the bad part).
+    [Sinning believers](#orge0ab425) will still experience tribulation and 'believers' who are still unrepentantly serving sin and not serving Jesus I think might experience the literal place Hades (the bad part).
     
     -   **[youtube.com: Christ Appeared for Our Sake @time: 11 min 21 sec](https://youtu.be/MEYSRQCfIHc?t=660):** I think the resurrection of Jesus does two things: One, it vindicates the value of the ransom. When God looked down on the bloodshedding of his Son, which he himself ordained and caused, and He looked at it and Jesus said, "It is finished.", the Father said, "It **is** finished."
         Then He raised him from the dead to say to all the world, "It was finished. It is all satisfying and all valuable and all sufficient. No more needs to be paid. Once for all, it is done."
@@ -37301,7 +37476,7 @@ I'm definitely taking this stuff to God's court and asking for grace to be sanct
 
 I have felt spiritually damaged/injured by what I've had to endure regarding a "spirit spouse / defilement" - I simply don't understand why that thing has been allowed to touch me for 1.5 years and push lewd dreams into my head. This daily bombardment of demonic dreams, and visions is very demoralizing but especially when I succumb to "defilement" often because of anxiety, and when I don't keep perspective (i.e. when I fail to praise God through trial). I believe that I will be totally healed.
 
--   **[youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0):** All are "saints" whom God has called by His grace and sanctified by His Spirit; but we are apt to look upon the apostles in the New Testament as extraordinary beings, scarcely subject to the same weaknesses and temptations as ourselves. Yet in so doing, we are forgetful of this truth that the nearer a man lives to God <ins>the more intensely  he has to mourn over his own evil heart.</ins> **the more also does the evil of the flesh provoke and harass him day by day.**
+-   **[youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0):** All are "saints" whom God has called by His grace **and sanctified** by His Spirit; but we are apt to look upon the apostles in the New Testament as extraordinary beings, scarcely subject to the same weaknesses and temptations as ourselves. Yet in so doing, we are forgetful of this truth that the nearer a man lives to God <ins>the more intensely  he has to mourn over his own evil heart.</ins> **the more also does the evil of the flesh provoke and harass him day by day.**
 
 With regards to the spirit spouse, it makes me feel very gross and it mas in the past made me sometimes feel [Psalm 22:1](https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&version=ESV) forsaken by God - no joke. But, also, fascinatingly, after making such complaints to God in my private praying, I have like a reflex action been encouraged through other people that Jesus is the Good Shepherd and will not leave or forsake me.
 
@@ -37623,7 +37798,7 @@ We're supposed to do good works of faith by Jesus' power so that Jesus' name is 
 
 ### Believers will marvel. The saints will do good works which glorify Jesus, all done in God's grace
 
-I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Believers are forgiven through Jesus' name. Saints both believe and keep God's commandments. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
+I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Believers are forgiven through Jesus' name. Saints both believe and keep God's commandments, carrying their cross. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
 
 > **[II Thessalonians 1:9-12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%201%3A9-12&version=ESV)** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
 
@@ -38264,7 +38439,7 @@ Being a saint (trusting, faithful, obedient Christians who endure while keeping 
 
 > **[Revelation of John 14:12](https://www.biblegateway.com/passage/?search=Revelation%2014%3A12&version=ESV)** - Here is a call for the endurance of the saints, those who keep the commandments of God and their faith in Jesus.
 
--   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace and sanctified by His Spirit;
+-   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace **and sanctified** by His Spirit;
 
 Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and sanctified through obedience to Jesus' gospel:
 
