@@ -25,7 +25,7 @@
 
 ;; (deps/add-deps '{:deps {io.github.justone/bb-scripts {:sha "ecbd71747dd0527243286d98c5a209f6890763ff"}}})
 
-(require '[clojure.string :as str]
+(require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
 ;; (b/gum {:cmd :confirm :as :bool :args ["Are you ready?"]})

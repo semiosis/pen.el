@@ -5,7 +5,7 @@
 
 ;; cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | org-mode-make-headline-asterisks-into-slash.bb | v
 
-(require '[clojure.string :as str]
+(require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
 (comment
@@ -24,7 +24,7 @@
       (if (re-find matcher)
         (do
           (println "YO")
-          (str/replace line "*" "/"))
+          (s/replace line "*" "/"))
         line)))
 
   ;; Works
@@ -42,7 +42,7 @@
             ;; Match headings
             (re-matches #"^(\*+) (.*)" line)]
 
-    (str stars " " (str/replace title "*" "/"))
+    (str stars " " (s/replace title "*" "/"))
     (str line)))
 
 (doseq [line (line-seq (clojure.java.io/reader *in*))]

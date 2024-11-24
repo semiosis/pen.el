@@ -3,7 +3,7 @@
 (ns utils.memo
   (:require [utils.myshell :as myshell]
             [utils.is-tty :as tty]
-            [clojure.string :as str]
+            [clojure.string :as s]
             [utils.misc :as ms]))
 
 ;; [[sh:echo egg | memo.bb put pot]]
@@ -25,7 +25,7 @@
   ""
   [s]
   (if (tty/out-is-tty?)
-    (ms/println-and-return (str/trim-newline s))
+    (ms/println-and-return (s/trim-newline s))
     (myshell/tv s)))
 
 (def sym2str name)

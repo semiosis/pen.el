@@ -11,7 +11,7 @@
 
 ;; (deps/add-deps '{:deps {io.github.justone/bb-scripts {:sha "ecbd71747dd0527243286d98c5a209f6890763ff"}}})
 
-(require '[clojure.string :as str]
+(require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
 (defn header [msg]
@@ -21,19 +21,19 @@
   (-> (shell {:out :string}
              (format "gum input --placeholder '%s' --value '%s'" placeholder value))
       :out
-      str/trim))
+      s/trim))
 
 (defn get-tty-height
   ""
   []
   ;; (myshell/snc "tm-resize")
-  (read-string (str/trim (myshell/snc "tm-resize | sed -n '2s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
+  (read-string (s/trim (myshell/snc "tm-resize | sed -n '2s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
 
 (defn get-tty-width
   ""
   []
   ;; (myshell/snc "tm-resize")
-  (read-string (str/trim (myshell/snc "tm-resize | sed -n '1s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
+  (read-string (s/trim (myshell/snc "tm-resize | sed -n '1s/^[A-Z]\\+=\\([0-9]\\+\\).*/\\1/p'"))))
 
 ;; Add --height=5
 (defn write [value placeholder]
@@ -42,18 +42,18 @@
     (-> (shell {:out :string}
                (format "gum write --height '%s' --show-line-numbers --placeholder '%s' --value '%s'" (- height 1) placeholder value))
         :out
-        str/trim)))
+        s/trim)))
 
 (defn table [csv]
   (let [data (csv/read-csv csv)
         headers (->> data
                      first
-                     (map str/upper-case))
+                     (map s/upper-case))
         num-headers (count headers)
         width (- (int (/ (or (get-tty-width)
                              100) num-headers))
                  1)
-        cmd (format "gum table --widths %s" (str/join "," (repeat num-headers width)))]
+        cmd (format "gum table --widths %s" (s/join "," (repeat num-headers width)))]
     (shell {:in csv :out :string} cmd)))
 
 (defn confirm [msg]
@@ -64,14 +64,14 @@
 
 (defn choose
   [opts & {:keys [no-limit limit]}]
-  (let [opts (str/join " " opts)
+  (let [opts (s/join " " opts)
         limit (str "--limit " (or limit 1))
         no-limit (if no-limit (str "--no-limit") "")
         cmd (format "gum choose %s %s %s" limit no-limit opts)]
     (-> (shell {:out :string} cmd)
         :out
-        str/trim
-        str/split-lines)))
+        s/trim
+        s/split-lines)))
 
 ;; (b/gum {:cmd :confirm :as :bool :args ["Are you ready?"]})
 

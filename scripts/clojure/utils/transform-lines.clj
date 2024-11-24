@@ -5,11 +5,11 @@
 
 (ns utils.transform-lines)
 
-(require '[clojure.string :as str]
+(require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
 (defn transform-line [line]
-  (let [modified-line (str/replace line #"(\w+)\(\"(\d+)\", \"(.+)\"\),"
+  (let [modified-line (s/replace line #"(\w+)\(\"(\d+)\", \"(.+)\"\),"
                                    "| $1 | $2 | $3 |")]
     modified-line))
 

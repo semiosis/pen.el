@@ -3,7 +3,9 @@
   ;; (:require [babashka.deps :as deps])
   )
 
-(require '[clojure.string :as str]
+;; TODO Learn to 
+
+(require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
 (alias 'string 'clojure.string)
@@ -14,7 +16,7 @@
           (six-times [y]
             (* (twice y) 3))
           (uc [s]
-            (str/upper-case s))]
+            (s/upper-case s))]
 
     (let [s "MiXeD cAsE"
           separator "/"]
@@ -22,11 +24,11 @@
 
       (str
        (clojure.string/join separator (map uc s))
-       (str/join separator (map uc s))
+       (s/join separator (map uc s))
        (string/join separator (map uc s)))
       
       (ms/println-and-return
-       (str/join "\n"
+       (s/join "\n"
                  [(clojure.string/join separator (map uc s))
-                  (str/join separator (map uc s))
+                  (s/join separator (map uc s))
                   (string/join separator (map uc s))])))))

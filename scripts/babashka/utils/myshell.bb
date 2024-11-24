@@ -5,7 +5,7 @@
 ;; (ns enter-your-name)
 (ns utils.myshell
   (:require [babashka.deps :as deps]
-            [clojure.string :as str])
+            [clojure.string :as s])
   (:import
    (java.io File)
    (java.nio.file Paths)))
@@ -83,7 +83,7 @@ emacs' s-lines is replaced by split.
   (join "\n"
         (map (fn [[key value]]
                (str
-                (str/replace
+                (s/replace
                  (upper-case
                   (name key))
                  "-" "_")

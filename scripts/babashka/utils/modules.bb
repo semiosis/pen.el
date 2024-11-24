@@ -20,8 +20,8 @@
 (clojure.string/blank? "") ; => true
 
 ; You can give a module a shorter name on import
-(require '[clojure.string :as str])
-(str/replace "This is a test." #"[a-o]" str/upper-case) ; => "THIs Is A tEst."
+(require '[clojure.string :as s])
+(s/replace "This is a test." #"[a-o]" s/upper-case) ; => "THIs Is A tEst."
 ; (#"" denotes a regular expression literal)
 
 ; You can use require (and use, but don't) from a namespace using :require.
@@ -29,5 +29,5 @@
 (comment
   (ns test
     (:require
-     [clojure.string :as str]
+     [clojure.string :as s]
      [clojure.set :as set])))

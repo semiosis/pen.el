@@ -10,6 +10,7 @@ clear
 read -r -d '' options <<HEREDOC
 .  EDIT
 r  remember.org
+R  read.org
 c  clipboard.txt
 t  todo.org
 g  glossary.txt
@@ -36,6 +37,7 @@ read -n1 d; test "$d" = "" && read -n1 d
 case "$d" in
     .) cmd="v $0" ;;
     r) cmd="vs $NOTES/remember.org" ;;
+    R) cmd="vs $NOTES/read.org" ;;
     c) cmd="vs $NOTES/clipboard.txt" ;;
     t) cmd="vs $NOTES/todo.org" ;;
     g) cmd="vs $NOTES/glossary.txt" ;;
