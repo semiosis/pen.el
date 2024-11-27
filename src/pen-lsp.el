@@ -515,12 +515,21 @@ We don't extract the string that `lps-line' is already displaying."
                 (let ((delay-mode-hooks t))
                   (lsp-help-mode)
                   (with-help-window lsp-help-buf-name
-                    (insert (string-trim-right (lsp--render-on-hover-content contents t))))
+                    (let ((s (string-trim-right (lsp--render-on-hover-content contents t))))
+                      (if (and (re-match-p "[online docs]" s)
+                               (re-match-p "^```$" s))
+                          (progn
+                            (setq s (s-replace-regexp "^---$" "" s))
+                            ;; (setq s (s-replace-regexp "^```$" "```racket" s))
+                            (setq s (s-replace-regexp "\n\n```$" "\n\n```racket" s))))
+                      (insert s)))
                   (run-mode-hooks)
 
                   ;; consider opening in glow
                   (if (looks-like-markdown-p (buffer-string))
                       (let ((buf (current-buffer)))
+                        (visual-line-mode 1)
+                        (setq truncate-lines nil)
                         (markdown-mode)))))))))
       (lsp--info "No content at point."))))
 

@@ -118,6 +118,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :spellcorrect)
 
 (add-to-list 'handle-keywords :projectfile)
+(add-to-list 'handle-keywords :readme)
 ;; toggle between test case
 
 

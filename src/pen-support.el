@@ -2519,6 +2519,12 @@ This function accepts any number of ARGUMENTS, but ignores them."
                    (pen-ns "file is not shebang and is executable. removing executable.")
                    (bl chmod a-x (buffer-file-name)))))))))
 
+(defun if-rkt-dos2unix ()
+  (interactive)
+  (if (f-exists-p (buffer-file-name))
+      (if (string-equal "rkt" (f-ext (buffer-file-name)))
+          (pen-snc (cmd "dos2unix" (buffer-file-name))))))
+
 (defun pen-save ()
   (interactive)
   (cond ((major-mode-p 'org-agenda-mode)
@@ -2533,6 +2539,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
          (run-hooks 'after-save-hook))
         (t
          (progn (save-buffer)
+                (if-rkt-dos2unix)
                 (shut-up (if-shebang-exec-otherwise-remove))
                 (message "%s" "File saved")))))
 

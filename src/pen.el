@@ -2513,6 +2513,7 @@ May use to generate code from comments."
 (require 'pen-crontab)
 (require 'pen-clients)
 (require 'pen-whitespace)
+(require 'pen-readme)
 (if (inside-docker-p)
 (require 'pen-ledger))
 (require 'pen-widgets)

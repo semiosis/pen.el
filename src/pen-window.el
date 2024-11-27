@@ -1,7 +1,7 @@
 (require 'window)
 
 (setq split-height-threshold 80)
-(setq split-width-threshold 80)
+(setq split-width-threshold 100)
 ;; Ignore split window horizontally
 ;; (setq split-width-threshold nil)
 ;; (setq split-width-threshold 160)

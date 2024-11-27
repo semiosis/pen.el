@@ -635,8 +635,8 @@ the namespace in the Clojure source buffer"
   (let* ((syms (pen-sn
                 "cut -d ' ' -f 2"
                 ;; grep -HnoP -- "defn [a-z \!?-]+" $(glob -b '**/*.clj')
-                (pen-sn (concat "cd " (pen-q dir) "; grep -HnoP -- " (pen-q (concat "(defn|deftest|def) [a-z \!?-]+( |$)")) " $(pen-glob '**/*.clj')")
-                        nil dir))))
+                (pen-sn (concat "cd " (pen-q dir) "; grep -HnoP -- " (pen-q (concat "(defn|deftest|def) [a-z \!?-]+( |$)")) " $(pen-glob '**/*.{clj,bb}')"
+                                nil) dir))))
     syms))
 
 (defun clojure-fz-symbol (dir)
@@ -646,8 +646,9 @@ the namespace in the Clojure source buffer"
                     (clojure-project-dir (cider-current-dir))
                   (read-directory-name "khala-go-to-symbol dir: "))))
   (let* ((syms (clojure-list-dir-symbols dir))
-         (sym (fz syms nil nil "khala-go-to-symbol: " nil t)))
-    (clojure-go-to-symbol sym dir)))
+         (sym (fz (snc "sort|uniq" syms) nil nil "khala-go-to-symbol: " nil t)))
+    (if (sor sym)
+        (clojure-go-to-symbol sym dir))))
 
 (defun clojure-go-to-symbol (sym dir)
   (interactive (list (read-string-hist "khala-go-to-symbol sym: ")

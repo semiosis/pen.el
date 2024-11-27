@@ -249,7 +249,7 @@
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
-                lsp-describe-thing-at-point
+                racket-lsp-describe-thing-at-point
                 pen-doc-thing-at-point
                 ;; prog-mode handles this
                 ;; pen-docs-for-thing-given-screen

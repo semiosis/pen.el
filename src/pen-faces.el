@@ -896,6 +896,12 @@ is specified, `:italic' is ignored."
   (set-face-background 'flycheck-info "#222222")
   (set-face-background 'flycheck-error "#222222")
   (set-face-background 'flycheck-warning "#222222")
+
+  ;; Nice non-breakable space face  | 
+  (set-face-background 'escape-glyph 'unspecified)
+  (set-face-foreground 'escape-glyph "#222222")
+  (set-face-underline 'nobreak-space t)
+  
   (set-face-underline 'flycheck-info nil)
   (set-face-underline 'flycheck-error nil)
   (set-face-underline 'flycheck-warning nil)

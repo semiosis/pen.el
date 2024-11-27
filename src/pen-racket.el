@@ -113,6 +113,27 @@
 (advice-add 'indent-for-tab-command :around #'ignore-errors-around-advice)
 (advice-add 'indent-according-to-mode :around #'ignore-errors-around-advice)
 
+(defun racket-lsp-describe-thing-at-point ()
+  (interactive)
+
+  (comment
+   (if (and (selected-p)
+            (< (mark) (point)))
+       (progn
+         ;; (tv "yo")
+         (save-region)
+         ;; (deselect)
+         (comment
+                 
+          (backward-char 1)
+          (call-interactively 'lsp-describe-thing-at-point)
+          (forward-char 1)
+          )
+         ;; (restore-region)
+         ;; (reselect)
+         )
+     (call-interactively 'lsp-describe-thing-at-point))))
+
 (defun pen-racket-run-main (path)
   (interactive (list (get-path)))
   (if (bq racket-main-exists)
