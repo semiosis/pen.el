@@ -1,51 +1,17 @@
-x \
-    -allowtm \
-    -h -d \
-    -sh "bash" \
-    -nto \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "m4" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "define(A, 100)dnl" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "define(B, A)dnl" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "define(C, \\`A')dnl" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "dumpdef(\\`A', \\`B', \\`C')dnl" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "A: 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "B: 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "C: A" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "dumpdef(A, B, C)dnl" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "stdin:5: m4: Undefined name 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "stdin:5: m4: Undefined name 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "stdin:5: m4: Undefined name 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "A B C" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "100 100 100" \
-    -c m \
-    -r "\([#\$] \|(»|>>>)\)" \
-    -s "CTRL-D" \
-    -c m \
-     -i 
+#!/usr/bin/env xsh
+
+m4
+define(A, 100)dnl
+define(B, A)dnl
+define(C, `A’)dnl
+dumpdef(`A’, `B’, `C’)dnl
+A: 100
+B: 100
+C: A
+dumpdef(A, B, C)dnl
+stdin:5: m4: Undefined name 100
+stdin:5: m4: Undefined name 100
+stdin:5: m4: Undefined name 100
+A B C
+100 100 100
+CTRL-D
