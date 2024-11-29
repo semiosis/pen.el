@@ -102,17 +102,20 @@ fi
 
 CMD="$(cmd "$@")"
 
+tf_sh="$(ux tf sh || echo /dev/null)"
+trap "rm \"$tf_sh\" 2>/dev/null" 0
+
 # So it can run from a shebang
 cat "$input_fp" | {
     sed -e "/^\s*$/d" -e "/^\s*#/d" |
     sed -z "s/\\s*\\\\\n\\s*/ /g"
-} | sponge "$input_fp"
+} > "$tf_sh"
 
 if test "$#" -gt 0; then
-    cat "$input_fp" | sed "s=\"\$@\"=$CMD=g" | sponge "$input_fp"
+    cat "$tf_sh" | sed "s=\"\$@\"=$CMD=g" | sponge "$tf_sh"
 fi
 
-: ${prompt:="\\([#\$] \\|(»|>>>)\\)"}
+: ${prompt:="\\([#\$] \\|(»|>|>>>)\\)"}
 
 # -tmc will respawn the outer tmux pane when the scripts ends
 # This is not what I want
@@ -125,15 +128,15 @@ fi
 
 # -allowtm is needed for rustlings in pen
 
-sponge "$input_fp" <<HEREDOC
+sponge "$tf_sh" <<HEREDOC
 x \\
     -allowtm \\
-    -h -d \\
+    -d \\
     -sh "$SHELL" \\
     -nto \\
 $(
 {
-    cat "$input_fp" | awk1 | while IFS=$'\n' read -r line; do
+    cat "$tf_sh" | awk1 | while IFS=$'\n' read -r line; do
         # Sadly this doesn't really do the full trick.
         if pl "$line" | grep -q -P '^\s*interact$'; then
             echo "    $end_function \\"
@@ -146,15 +149,17 @@ $(
         fi
     done
     echo "    -r \"\\([#\$] \\|»\\)\" \\"
-} | sed 's/\([`$]\)/\\\1/g' | awk1 | sed '$d'
+} | sed 's/\([$]\)/\\\1/g' | awk1 | sed '$d'
 )
     $end_function
 HEREDOC
 
- # | sed '${/^$/d;}' | chomp
+# | sed '${/^$/d;}' | chomp
 
 # exec <&1
 
-realpath "$input_fp" | pen-ds -s xshlast
+# cat "$tf_sh" | tv &>/dev/null
 
-bash "$input_fp"
+realpath "$tf_sh" | pen-ds -s xshlast
+
+bash "$tf_sh"

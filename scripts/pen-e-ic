@@ -101,6 +101,11 @@ case "$sn" in
     }
     ;;
 
+    etelnet) {
+        ic=telnet
+    }
+    ;;
+
     ecal|ecalendar) {
         ic=calendar
     }

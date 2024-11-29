@@ -3,14 +3,14 @@ export TTY
 
 : ${CMD:="$(cmd "$@")"}
 # tetris-rs binary may not be installed, while the script may be, so fall-back to etetris
-command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs || etetris-xterm"}"
+# command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs || etetris-xterm"}"
 command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
 
 # etetris-xterm:
-# tpop -bg $(( $RANDOM % 255 )) -bg $(( $RANDOM % 255 )) -w 34 -h 26 -nos bash -c "$CMD"
+tpop -bg $(( $RANDOM % 255 )) -bg $(( $RANDOM % 255 )) -w 34 -h 30 -nos bash -c "$CMD"
 
 # tetris-rs:
-tpop -bg 233 -fg 076 -w 50 -h 26 -nos bash -c "$CMD"
+# tpop -bg 233 -fg 076 -w 50 -h 26 -nos bash -c "$CMD"
 
 # tetris-rs
 # 

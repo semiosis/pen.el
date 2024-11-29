@@ -1,17 +1,9 @@
-#!/usr/bin/env xsh
+#!/usr/bin/env -S xsh -p "^\$"
 
-m4
+/usr/bin/m4
 define(A, 100)dnl
 define(B, A)dnl
-define(C, `A’)dnl
-dumpdef(`A’, `B’, `C’)dnl
-A: 100
-B: 100
-C: A
+define(C, `A')dnl
+dumpdef(`A', `B', `C')dnl
 dumpdef(A, B, C)dnl
-stdin:5: m4: Undefined name 100
-stdin:5: m4: Undefined name 100
-stdin:5: m4: Undefined name 100
 A B C
-100 100 100
-CTRL-D

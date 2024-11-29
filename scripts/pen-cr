@@ -1687,9 +1687,9 @@ case "$fnspec" in
     ;;
 
     # /etc/mail/sendmail.mc
-    *.mc) {
+    *.mc|*.m4) {
         cd "$dn"
-        m4 "$fp"
+        m4 "$fp" | pavs
         exit "$?"
     }
     ;;
