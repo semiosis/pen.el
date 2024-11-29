@@ -132,6 +132,7 @@ fi
 # cmd-nice has trouble with unicode
 # : ${CMD:="$(cmd-nice "$@")"}
 : ${CMD:="$(cmd "$@")"}
+: ${CMD:="zsh"}
 
 # may be a percentage or a fixed integer number of characters
 : "${width:="80%"}"

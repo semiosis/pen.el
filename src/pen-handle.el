@@ -241,13 +241,15 @@
         :prevdef '(pen-prog-prev-def))
 
 (handle '(racket-mode)
-        :repls '(pen-racket-run
+        :repls (list 'pen-racket-run
+                     (dff (sps "racket"))
+                 (etc "racket" t)
                  ;; racket-run
-                 racket-repl)
+                 'racket-repl)
         ;; This is for running the program
         :runmain '(pen-racket-run-main)
         :formatters '(lsp-format-buffer)
-        :docs '(pen-esp-docs-for-thing-if-prefix
+        :docs '(;; pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
                 racket-lsp-describe-thing-at-point
                 pen-doc-thing-at-point
@@ -417,7 +419,8 @@
         :assignments '()
         :references '()
         :definitions '()
-        :implementations '())
+        :implementations '()
+        :readme '(find-readme-here))
 
 (handle '(conf-mode feature-mode)
         :runmain '()

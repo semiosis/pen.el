@@ -1,0 +1,847 @@
+HTTP/1.1 200 OK
+Date: Tue, 26 Nov 2024 23:33:34 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+last-modified: Sat, 23 Nov 2024 19:49:20 GMT
+x-rgw-object-type: Normal
+x-amz-request-id: tx000001b681c0a3271d84c-0067465a97-1d0d859b-nyc3d
+vary: Origin, Access-Control-Request-Headers, Access-Control-Request-Method, Accept-Encoding
+x-envoy-upstream-healthchecked-cluster: 
+Cache-Control: public,max-age=10,s-maxage=86400
+x-do-app-origin: 08fbd38c-2713-497a-84d0-ed0d68f63b54
+x-do-orig-status: 200
+CF-Cache-Status: HIT
+Age: 55
+Set-Cookie: __cf_bm=pJrB.cdSy2C7FU0GjBrhYshFxyTDpA9.pOwtIVfg0Q0-1732664014-1.0.1.1-qtUwcCZ.UP1k1y1..RAFTC.dERLA2YlGDQvPCcTrgYi0DGcW7KZSZZZsyaODW_dNwk6.njyCw4t1PAd3Gkjssw; path=/; expires=Wed, 27-Nov-24 00:03:34 GMT; domain=.learnxinyminutes.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 8e8daf2b5dcd50ad-AKL
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en-us" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en-us" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+    <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXC8R75DEN"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WXC8R75DEN');
+      </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Language" content="en-us">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title>Learn Racket in Y Minutes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="/css/index.css">
+
+        <link rel="canonical" href="https://learnxinyminutes.com/docs/racket/">
+        <script>
+            var THEME_KEY = "lxiym_theme";
+            function set_theme(theme) {
+                var el = document.getElementsByTagName("html")[0];
+                if (!el) {
+                  return;
+                }
+                el.className = theme === "dark" ? "dark" : "light";
+                localStorage.setItem(THEME_KEY, theme);
+            }
+
+            function load_theme() {
+              var theme = localStorage.getItem(THEME_KEY);
+              if (!theme) {
+                theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+              }
+              set_theme(theme)
+            }
+
+            // Attempt immediate application of html style
+            load_theme();
+
+            // Backup: do it onload. Will flash, but better than nothing.
+            window.onload = function(){
+              load_theme();
+            };
+
+            // Listen for system preference change
+            window
+              .matchMedia("(prefers-color-scheme: dark)")
+              .addEventListener("change", ({matches:isDark}) => {
+                set_theme(isDark ? "dark" : "light")
+              })
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="share">
+    <span class="sharemsg">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flearnxinyminutes.com%2Fdocs%2Fracket%2F&text=Learn+X+in+Y+minutes%2C+where+X%3DRacket">
+        Share this page
+      </a></span>
+
+      <span class='st_facebook_large' displayText='Facebook'></span>
+      <span class='st_twitter_large' displayText='Tweet'></span>
+  </div>
+  <div class="theme-choice">
+    <label id="theme-label">Select theme:</label>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('light');">light</button>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('dark');">dark</button>
+  </div>
+  <h1><a href="/">Learn X in Y minutes</a></h1>
+  <h2>Where X=Racket</h2>
+    <p class="filelink">
+    Get the code:
+    <a href="/docs/files/learnracket.rkt">learnracket.rkt</a>
+    </p>
+  <div id="doc">
+    <p>Racket is a general purpose, multi-paradigm programming language in the Lisp/Scheme family.</p>
+
+<p>Feedback is appreciated! You can reach me at <a href="http://twitter.com/th3rac25">@th3rac25</a> or th3rac25 [at] [google&rsquo;s email service]</p>
+<div class="highlight"><pre><span></span><span class="kn">#lang </span><span class="nn">racket</span><span class="w"> </span><span class="c1">; defines the language we are using</span>
+
+<span class="c1">;;; Comments</span>
+
+<span class="c1">;; Single line comments start with a semicolon</span>
+
+<span class="cm">#| Block comments</span>
+<span class="cm">   can span multiple lines and...</span>
+<span class="cm">    #|</span>
+<span class="cm">       they can be nested!</span>
+<span class="cm">    |#</span>
+<span class="cm">|#</span>
+
+<span class="c1">;; S-expression comments discard the following expression,</span>
+<span class="c1">;; useful to comment expressions when debugging</span>
+<span class="c">#;</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="w"> </span><span class="n">expression</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">discarded</span><span class="p">)</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 1. Primitive Datatypes and Operators</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;;; Numbers</span>
+<span class="mi">9999999999999999999999</span><span class="w"> </span><span class="c1">; integers</span>
+<span class="mb">#b111</span><span class="w">                  </span><span class="c1">; binary =&gt; 7</span>
+<span class="mo">#o111</span><span class="w">                  </span><span class="c1">; octal =&gt; 73</span>
+<span class="mh">#x111</span><span class="w">                  </span><span class="c1">; hexadecimal =&gt; 273</span>
+<span class="mf">3.14</span><span class="w">                   </span><span class="c1">; reals</span>
+<span class="mf">6.02e+23</span>
+<span class="m">1/2</span><span class="w">                    </span><span class="c1">; rationals</span>
+<span class="m">1+2i</span><span class="w">                   </span><span class="c1">; complex numbers</span>
+
+<span class="c1">;; Function application is written (f x y z ...)</span>
+<span class="c1">;; where f is a function and x, y, z, ... are operands</span>
+<span class="c1">;; If you want to create a literal list of data, use &#39; to stop it from</span>
+<span class="c1">;; being evaluated</span>
+<span class="o">&#39;</span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; (+ 1 2)</span>
+<span class="c1">;; Now, some arithmetic operations</span>
+<span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">  </span><span class="c1">; =&gt; 2</span>
+<span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">  </span><span class="c1">; =&gt; 7</span>
+<span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 20</span>
+<span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 8</span>
+<span class="p">(</span><span class="nb">quotient</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 2</span>
+<span class="p">(</span><span class="nb">remainder</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 1</span>
+<span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="mi">35</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 7</span>
+<span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 1/3</span>
+<span class="p">(</span><span class="nb">exact-&gt;inexact</span><span class="w"> </span><span class="m">1/3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 0.3333333333333333</span>
+<span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="m">1+2i</span><span class="w">  </span><span class="m">2-3i</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 3-1i</span>
+
+<span class="c1">;;; Booleans</span>
+<span class="no">#t</span><span class="w"> </span><span class="c1">; for true</span>
+<span class="no">#f</span><span class="w"> </span><span class="c1">; for false -- any value other than #f is true</span>
+<span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="k">and</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="no">#f</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;doesn&#39;t get here&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="k">or</span><span class="w"> </span><span class="no">#f</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;doesn&#39;t get here&quot;</span><span class="p">))</span><span class="w">  </span><span class="c1">; =&gt; 0</span>
+
+<span class="c1">;;; Characters</span>
+<span class="sc">#\A</span><span class="w"> </span><span class="c1">; =&gt; #\A</span>
+<span class="sc">#\λ</span><span class="w"> </span><span class="c1">; =&gt; #\λ</span>
+<span class="sc">#\u03BB</span><span class="w"> </span><span class="c1">; =&gt; #\λ</span>
+
+<span class="c1">;;; Strings are fixed-length array of characters.</span>
+<span class="s2">&quot;Hello, world!&quot;</span>
+<span class="s2">&quot;Benjamin </span><span class="se">\&quot;</span><span class="s2">Bugsy</span><span class="se">\&quot;</span><span class="s2"> Siegel&quot;</span><span class="w">   </span><span class="c1">; backslash is an escaping character</span>
+<span class="s2">&quot;Foo</span><span class="se">\t</span><span class="s2">bar</span><span class="se">\41\x21\u0021\a\r\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="c1">; includes C escapes, Unicode</span>
+<span class="s2">&quot;λx:(μα.α→α).xx&quot;</span><span class="w">              </span><span class="c1">; can include Unicode characters</span>
+
+<span class="c1">;; Strings can be added too!</span>
+<span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;Hello &quot;</span><span class="w"> </span><span class="s2">&quot;world!&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello world!&quot;</span>
+
+<span class="c1">;; A string can be treated like a list of characters</span>
+<span class="p">(</span><span class="nb">string-ref</span><span class="w"> </span><span class="s2">&quot;Apple&quot;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #\A</span>
+
+<span class="c1">;; format can be used to format strings:</span>
+<span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;~a can be ~a&quot;</span><span class="w"> </span><span class="s2">&quot;strings&quot;</span><span class="w"> </span><span class="s2">&quot;formatted&quot;</span><span class="p">)</span>
+
+<span class="c1">;; Printing is pretty easy</span>
+<span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;I&#39;m Racket. Nice to meet you!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 2. Variables</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; You can create a variable using define</span>
+<span class="c1">;; a variable name can use any character except: ()[]{}&quot;,&#39;`;#|\</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">some-var</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+<span class="n">some-var</span><span class="w"> </span><span class="c1">; =&gt; 5</span>
+
+<span class="c1">;; You can also use unicode characters</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">⊆</span><span class="w"> </span><span class="nb">subset?</span><span class="p">)</span>
+<span class="p">(</span><span class="n">⊆</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+
+<span class="c1">;; Accessing a previously unassigned variable is an exception</span>
+<span class="c1">; x ; =&gt; x: undefined ...</span>
+
+<span class="c1">;; Local binding: `me&#39; is bound to &quot;Bob&quot; only within the (let ...)</span>
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">me</span><span class="w"> </span><span class="s2">&quot;Bob&quot;</span><span class="p">])</span>
+<span class="w">  </span><span class="s2">&quot;Alice&quot;</span>
+<span class="w">  </span><span class="n">me</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Bob&quot;</span>
+
+<span class="c1">;; let* is like let, but allows you to use previous bindings in creating later bindings</span>
+<span class="p">(</span><span class="k">let*</span><span class="w"> </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
+<span class="w">       </span><span class="p">[</span><span class="n">y</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="mi">1</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span>
+
+<span class="c1">;; finally, letrec allows you to define recursive and mutually recursive functions</span>
+<span class="p">(</span><span class="k">letrec</span><span class="w"> </span><span class="p">([</span><span class="n">is-even?</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="w">                     </span><span class="p">(</span><span class="k">or</span><span class="w"> </span><span class="p">(</span><span class="nb">zero?</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">                         </span><span class="p">(</span><span class="n">is-odd?</span><span class="w"> </span><span class="p">(</span><span class="nb">sub1</span><span class="w"> </span><span class="n">n</span><span class="p">))))]</span>
+<span class="w">         </span><span class="p">[</span><span class="n">is-odd?</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="w">                    </span><span class="p">(</span><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="p">(</span><span class="nb">zero?</span><span class="w"> </span><span class="n">n</span><span class="p">))</span>
+<span class="w">                         </span><span class="p">(</span><span class="n">is-even?</span><span class="w"> </span><span class="p">(</span><span class="nb">sub1</span><span class="w"> </span><span class="n">n</span><span class="p">))))])</span>
+<span class="w">  </span><span class="p">(</span><span class="n">is-odd?</span><span class="w"> </span><span class="mi">11</span><span class="p">))</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 3. Structs and Collections</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Structs</span>
+<span class="c1">; By default, structs are immutable</span>
+<span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="n">breed</span><span class="w"> </span><span class="n">age</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">my-pet</span>
+<span class="w">  </span><span class="p">(</span><span class="n">dog</span><span class="w"> </span><span class="s2">&quot;lassie&quot;</span><span class="w"> </span><span class="s2">&quot;collie&quot;</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+<span class="n">my-pet</span><span class="w"> </span><span class="c1">; =&gt; #&lt;dog&gt;</span>
+<span class="c1">; returns whether the variable was constructed with the dog constructor</span>
+<span class="p">(</span><span class="n">dog?</span><span class="w"> </span><span class="n">my-pet</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="c1">; accesses the name field of the variable constructed with the dog constructor</span>
+<span class="p">(</span><span class="n">dog-name</span><span class="w"> </span><span class="n">my-pet</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;lassie&quot;</span>
+
+<span class="c1">; You can explicitly declare a struct to be mutable with the #:mutable option</span>
+<span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="n">rgba-color</span><span class="w"> </span><span class="p">(</span><span class="n">red</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="n">blue</span><span class="w"> </span><span class="n">alpha</span><span class="p">)</span><span class="w"> </span><span class="kd">#:mutable</span><span class="p">)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">burgundy</span>
+<span class="w">   </span><span class="p">(</span><span class="n">rgba-color</span><span class="w"> </span><span class="mi">144</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="mf">1.0</span><span class="p">))</span>
+<span class="p">(</span><span class="n">set-rgba-color-green!</span><span class="w"> </span><span class="n">burgundy</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+<span class="p">(</span><span class="n">rgba-color-green</span><span class="w"> </span><span class="n">burgundy</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 10</span>
+
+<span class="c1">;;; Pairs (immutable)</span>
+<span class="c1">;; `cons&#39; constructs pairs, `car&#39; and `cdr&#39; extract the first</span>
+<span class="c1">;; and second elements</span>
+<span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 . 2)</span>
+<span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 1</span>
+<span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 2</span>
+
+<span class="c1">;;; Lists</span>
+
+<span class="c1">;; Lists are linked-list data structures, made of `cons&#39; pairs and end</span>
+<span class="c1">;; with a `null&#39; (or &#39;()) to mark the end of the list</span>
+<span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="nb">null</span><span class="p">)))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 2 3)</span>
+<span class="c1">;; `list&#39; is a convenience variadic constructor for lists</span>
+<span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 2 3)</span>
+<span class="c1">;; a quote can also be used for a literal list value</span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 2 3)</span>
+<span class="c1">;; a quasiquote (represented by the backtick character) with commas </span>
+<span class="c1">;; can be used to evaluate functions</span>
+<span class="o">`</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 2 3)</span>
+
+<span class="c1">;; With lists, car/cdr work slightly differently</span>
+<span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 1</span>
+<span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(2 3)</span>
+
+<span class="c1">;; Racket also has predefined functions on top of car and cdr, to extract parts of a list</span>
+<span class="p">(</span><span class="nb">cadr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 2</span>
+<span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)))</span><span class="w"> </span><span class="c1">; =&gt; 2</span>
+
+<span class="p">(</span><span class="nb">cddr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(3)</span>
+<span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(3)</span>
+
+<span class="p">(</span><span class="nb">caddr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 3</span>
+<span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))))</span><span class="w"> </span><span class="c1">; =&gt; 3</span>
+
+<span class="c1">;; Can still use `cons&#39; to add an item to the beginning of a list</span>
+<span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(4 1 2 3)</span>
+
+<span class="c1">;; Use `append&#39; to add lists together</span>
+<span class="p">(</span><span class="nb">append</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(1 2 3 4)</span>
+
+<span class="c1">;; Lists are a very basic type, so there is a *lot* of functionality for</span>
+<span class="c1">;; them, a few examples:</span>
+<span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="nb">add1</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w">          </span><span class="c1">; =&gt; &#39;(2 3 4)</span>
+<span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="nb">+</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(11 22 33)</span>
+<span class="p">(</span><span class="nb">filter</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w">    </span><span class="c1">; =&gt; &#39;(2 4)</span>
+<span class="p">(</span><span class="nb">count</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w">     </span><span class="c1">; =&gt; 2</span>
+<span class="p">(</span><span class="nb">take</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w">          </span><span class="c1">; =&gt; &#39;(1 2)</span>
+<span class="p">(</span><span class="nb">drop</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w">          </span><span class="c1">; =&gt; &#39;(3 4)</span>
+
+<span class="c1">;;; Vectors</span>
+
+<span class="c1">;; Vectors are fixed-length arrays</span>
+<span class="o">#</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;#(1 2 3)</span>
+
+<span class="c1">;; Use `vector-append&#39; to add vectors together</span>
+<span class="p">(</span><span class="nb">vector-append</span><span class="w"> </span><span class="o">#</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">#</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">6</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #(1 2 3 4 5 6)</span>
+
+<span class="c1">;;; Sets</span>
+
+<span class="c1">;; Create a set from a list</span>
+<span class="p">(</span><span class="nb">list-&gt;set</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; (set 1 2 3)</span>
+
+<span class="c1">;; Add a member with `set-add&#39;</span>
+<span class="c1">;; (Functional: returns the extended set rather than mutate the input)</span>
+<span class="p">(</span><span class="nb">set-add</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; (set 1 2 3 4)</span>
+
+<span class="c1">;; Remove one with `set-remove&#39;</span>
+<span class="p">(</span><span class="nb">set-remove</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; (set 2 3)</span>
+
+<span class="c1">;; Test for existence with `set-member?&#39;</span>
+<span class="p">(</span><span class="nb">set-member?</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="nb">set-member?</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+
+<span class="c1">;;; Hashes</span>
+
+<span class="c1">;; Create an immutable hash table (mutable example below)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="p">(</span><span class="nb">hash</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">b</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">c</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span>
+
+<span class="c1">;; Retrieve a value</span>
+<span class="p">(</span><span class="nb">hash-ref</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 1</span>
+
+<span class="c1">;; Retrieving a non-present value is an exception</span>
+<span class="c1">; (hash-ref m &#39;d) =&gt; no value found</span>
+
+<span class="c1">;; You can provide a default value for missing keys</span>
+<span class="p">(</span><span class="nb">hash-ref</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">d</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 0</span>
+
+<span class="c1">;; Use `hash-set&#39; to extend an immutable hash table</span>
+<span class="c1">;; (Returns the extended hash instead of mutating it)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">m2</span><span class="w"> </span><span class="p">(</span><span class="nb">hash-set</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">d</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span>
+<span class="n">m2</span><span class="w"> </span><span class="c1">; =&gt; &#39;#hash((b . 2) (a . 1) (d . 4) (c . 3))</span>
+
+<span class="c1">;; Remember, these hashes are immutable!</span>
+<span class="n">m</span><span class="w"> </span><span class="c1">; =&gt; &#39;#hash((b . 2) (a . 1) (c . 3))  &lt;-- no `d&#39;</span>
+
+<span class="c1">;; Use `hash-remove&#39; to remove keys (functional too)</span>
+<span class="p">(</span><span class="nb">hash-remove</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;#hash((b . 2) (c . 3))</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 4. Functions</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Use `lambda&#39; to create functions.</span>
+<span class="c1">;; A function always returns the value of its last expression</span>
+<span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #&lt;procedure&gt;</span>
+<span class="c1">;; Can also use a unicode `λ&#39;</span>
+<span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span><span class="w">     </span><span class="c1">; =&gt; same function</span>
+
+<span class="c1">;; Use parens to call all functions, including a lambda expression</span>
+<span class="p">((</span><span class="k">lambda</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello World&quot;</span>
+<span class="p">((</span><span class="k">λ</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">))</span><span class="w">      </span><span class="c1">; =&gt; &quot;Hello World&quot;</span>
+
+<span class="c1">;; Assign a function to a var</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">hello-world</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">))</span>
+<span class="p">(</span><span class="n">hello-world</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello World&quot;</span>
+
+<span class="c1">;; You can shorten this using the function definition syntactic sugar:</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">hello-world2</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+
+<span class="c1">;; The () in the above is the list of arguments for the function</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">hello</span>
+<span class="w">  </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;Hello &quot;</span><span class="w"> </span><span class="n">name</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="s2">&quot;Steve&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello Steve&quot;</span>
+<span class="c1">;; ... or equivalently, using a sugared definition:</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">hello2</span><span class="w"> </span><span class="n">name</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;Hello &quot;</span><span class="w"> </span><span class="n">name</span><span class="p">))</span>
+
+<span class="c1">;; You can have multi-variadic functions too, using `case-lambda&#39;</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">hello3</span>
+<span class="w">  </span><span class="p">(</span><span class="k">case-lambda</span>
+<span class="w">    </span><span class="p">[()</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">[(</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;Hello &quot;</span><span class="w"> </span><span class="n">name</span><span class="p">)]))</span>
+<span class="p">(</span><span class="n">hello3</span><span class="w"> </span><span class="s2">&quot;Jake&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello Jake&quot;</span>
+<span class="p">(</span><span class="n">hello3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hello World&quot;</span>
+<span class="c1">;; ... or specify optional arguments with a default value expression</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">hello4</span><span class="w"> </span><span class="p">[</span><span class="n">name</span><span class="w"> </span><span class="s2">&quot;World&quot;</span><span class="p">])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;Hello &quot;</span><span class="w"> </span><span class="n">name</span><span class="p">))</span>
+
+<span class="c1">;; Functions can pack extra arguments up in a list</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">count-args</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;You passed ~a args: ~a&quot;</span><span class="w"> </span><span class="p">(</span><span class="nb">length</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="p">))</span>
+<span class="p">(</span><span class="n">count-args</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;You passed 3 args: (1 2 3)&quot;</span>
+<span class="c1">;; ... or with the unsugared `lambda&#39; form:</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">count-args2</span>
+<span class="w">  </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="n">args</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;You passed ~a args: ~a&quot;</span><span class="w"> </span><span class="p">(</span><span class="nb">length</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span>
+
+<span class="c1">;; You can mix regular and packed arguments</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">hello-count</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;Hello ~a, you passed ~a extra args&quot;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">(</span><span class="nb">length</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">hello-count</span><span class="w"> </span><span class="s2">&quot;Finn&quot;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">; =&gt; &quot;Hello Finn, you passed 3 extra args&quot;</span>
+<span class="c1">;; ... unsugared:</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">hello-count2</span>
+<span class="w">  </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;Hello ~a, you passed ~a extra args&quot;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">(</span><span class="nb">length</span><span class="w"> </span><span class="n">args</span><span class="p">))))</span>
+
+<span class="c1">;; And with keywords</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">hello-k</span><span class="w"> </span><span class="kd">#:name</span><span class="w"> </span><span class="p">[</span><span class="n">name</span><span class="w"> </span><span class="s2">&quot;World&quot;</span><span class="p">]</span><span class="w"> </span><span class="kd">#:greeting</span><span class="w"> </span><span class="p">[</span><span class="n">g</span><span class="w"> </span><span class="s2">&quot;Hello&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;~a ~a, ~a extra args&quot;</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">(</span><span class="nb">length</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">hello-k</span><span class="p">)</span><span class="w">                 </span><span class="c1">; =&gt; &quot;Hello World, 0 extra args&quot;</span>
+<span class="p">(</span><span class="n">hello-k</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w">           </span><span class="c1">; =&gt; &quot;Hello World, 3 extra args&quot;</span>
+<span class="p">(</span><span class="n">hello-k</span><span class="w"> </span><span class="kd">#:greeting</span><span class="w"> </span><span class="s2">&quot;Hi&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hi World, 0 extra args&quot;</span>
+<span class="p">(</span><span class="n">hello-k</span><span class="w"> </span><span class="kd">#:name</span><span class="w"> </span><span class="s2">&quot;Finn&quot;</span><span class="w"> </span><span class="kd">#:greeting</span><span class="w"> </span><span class="s2">&quot;Hey&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;Hey Finn, 0 extra args&quot;</span>
+<span class="p">(</span><span class="n">hello-k</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="kd">#:greeting</span><span class="w"> </span><span class="s2">&quot;Hi&quot;</span><span class="w"> </span><span class="kd">#:name</span><span class="w"> </span><span class="s2">&quot;Finn&quot;</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="w">                                         </span><span class="c1">; =&gt; &quot;Hi Finn, 6 extra args&quot;</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 5. Equality</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; for numbers use `=&#39;</span>
+<span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">   </span><span class="c1">; =&gt; #f</span>
+
+<span class="c1">;; `eq?&#39; returns #t if 2 arguments refer to the same object (in memory),</span>
+<span class="c1">;; #f otherwise.</span>
+<span class="c1">;; In other words, it&#39;s a simple pointer comparison.</span>
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()</span><span class="w"> </span><span class="o">&#39;</span><span class="p">())</span><span class="w"> </span><span class="c1">; =&gt; #t, since there exists only one empty list in memory</span>
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()]</span><span class="w"> </span><span class="p">[</span><span class="n">y</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w">  </span><span class="c1">; =&gt; #t, same as above</span>
+
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">)]</span><span class="w"> </span><span class="p">[</span><span class="n">y</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w">            </span><span class="c1">; =&gt; #f — not the same list in memory!</span>
+
+<span class="p">(</span><span class="k">let*</span><span class="w"> </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">)]</span><span class="w"> </span><span class="p">[</span><span class="n">y</span><span class="w"> </span><span class="n">x</span><span class="p">])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t, since x and y now point to the same stuff</span>
+
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">yes</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">yes</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">yes</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">no</span><span class="p">)</span><span class="w">  </span><span class="c1">; =&gt; #f</span>
+
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w">   </span><span class="c1">; =&gt; #t — be careful here</span>
+<span class="w">            </span><span class="c1">; It’s better to use `=&#39; for number comparisons.</span>
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">100</span><span class="p">))</span><span class="w">               </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="p">(</span><span class="nb">integer-&gt;char</span><span class="w"> </span><span class="mi">955</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">integer-&gt;char</span><span class="w"> </span><span class="mi">955</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+
+<span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+
+<span class="c1">;; `eqv?&#39; supports the comparison of number and character datatypes.</span>
+<span class="c1">;; for other datatypes, `eqv?&#39; and `eq?&#39; return the same result.</span>
+<span class="p">(</span><span class="nb">eqv?</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w">                                   </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="nb">eqv?</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">100</span><span class="p">))</span><span class="w">               </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="nb">eqv?</span><span class="w"> </span><span class="p">(</span><span class="nb">integer-&gt;char</span><span class="w"> </span><span class="mi">955</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">integer-&gt;char</span><span class="w"> </span><span class="mi">955</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+
+<span class="p">(</span><span class="nb">eqv?</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">))</span><span class="w">   </span><span class="c1">; =&gt; #f</span>
+
+<span class="c1">;; `equal?&#39; supports the comparison of the following datatypes:</span>
+<span class="c1">;; strings, byte strings, pairs, mutable pairs, vectors, boxes,</span>
+<span class="c1">;; hash tables, and inspectable structures.</span>
+<span class="c1">;; for other datatypes, `equal?&#39; and `eqv?&#39; return the same result.</span>
+<span class="p">(</span><span class="nb">equal?</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w">                                                   </span><span class="c1">; =&gt; #f</span>
+<span class="p">(</span><span class="nb">equal?</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">string-append</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="nb">equal?</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w">                                       </span><span class="c1">; =&gt; #t</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 6. Control Flow</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;;; Conditionals</span>
+
+<span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="no">#t</span><span class="w">               </span><span class="c1">; test expression</span>
+<span class="w">    </span><span class="s2">&quot;this is true&quot;</span><span class="w">   </span><span class="c1">; then expression</span>
+<span class="w">    </span><span class="s2">&quot;this is false&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; else expression</span>
+<span class="c1">; =&gt; &quot;this is true&quot;</span>
+
+<span class="c1">;; In conditionals, all non-#f values are treated as true</span>
+<span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">Groucho</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">Harpo</span><span class="w"> </span><span class="ss">Groucho</span><span class="w"> </span><span class="ss">Zeppo</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(Groucho Zeppo)</span>
+<span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">Groucho</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">Harpo</span><span class="w"> </span><span class="ss">Groucho</span><span class="w"> </span><span class="ss">Zeppo</span><span class="p">))</span>
+<span class="w">    </span><span class="o">&#39;</span><span class="ss">yep</span>
+<span class="w">    </span><span class="o">&#39;</span><span class="ss">nope</span><span class="p">)</span>
+<span class="c1">; =&gt; &#39;yep</span>
+
+<span class="c1">;; `cond&#39; chains a series of tests to select a result</span>
+<span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;wrong!&quot;</span><span class="p">)]</span>
+<span class="w">      </span><span class="p">[(</span><span class="nb">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;wrong again!&quot;</span><span class="p">)]</span>
+<span class="w">      </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">ok</span><span class="p">])</span><span class="w"> </span><span class="c1">; =&gt; &#39;ok</span>
+
+<span class="c1">;;; Pattern Matching</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fizzbuzz?</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="nb">remainder</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">remainder</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">fizzbuzz</span><span class="p">]</span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">fizz</span><span class="p">]</span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="k">_</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">buzz</span><span class="p">]</span>
+<span class="w">    </span><span class="p">[</span><span class="k">_</span><span class="w">          </span><span class="no">#f</span><span class="p">]))</span>
+
+<span class="p">(</span><span class="n">fizzbuzz?</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;fizzbuzz</span>
+<span class="p">(</span><span class="n">fizzbuzz?</span><span class="w"> </span><span class="mi">37</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; #f</span>
+
+<span class="c1">;;; Loops</span>
+
+<span class="c1">;; Looping can be done through (tail-) recursion</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">loop</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;i=~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">loop</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">i</span><span class="p">))))</span>
+<span class="p">(</span><span class="n">loop</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; i=5, i=6, ...</span>
+
+<span class="c1">;; Similarly, with a named let</span>
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">0</span><span class="p">])</span>
+<span class="w">  </span><span class="p">(</span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;i=~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">loop</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">i</span><span class="p">))))</span><span class="w"> </span><span class="c1">; =&gt; i=0, i=1, ...</span>
+
+<span class="c1">;; See below how to add a new `loop&#39; form, but Racket already has a very</span>
+<span class="c1">;; flexible `for&#39; form for loops:</span>
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;i=~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; i=0, i=1, ...</span>
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-range</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">10</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;i=~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; i=5, i=6, ...</span>
+
+<span class="c1">;;; Iteration Over Other Sequences</span>
+<span class="c1">;; `for&#39; allows iteration over many other kinds of sequences:</span>
+<span class="c1">;; lists, vectors, strings, sets, hash tables, etc...</span>
+
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-list</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">l</span><span class="w"> </span><span class="ss">i</span><span class="w"> </span><span class="ss">s</span><span class="w"> </span><span class="ss">t</span><span class="p">))])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-vector</span><span class="w"> </span><span class="o">#</span><span class="p">(</span><span class="ss">v</span><span class="w"> </span><span class="ss">e</span><span class="w"> </span><span class="ss">c</span><span class="w"> </span><span class="ss">t</span><span class="w"> </span><span class="ss">o</span><span class="w"> </span><span class="ss">r</span><span class="p">))])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-string</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-set</span><span class="w"> </span><span class="p">(</span><span class="nb">set</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">x</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">y</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">z</span><span class="p">))])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([(</span><span class="n">k</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">in-hash</span><span class="w"> </span><span class="p">(</span><span class="nb">hash</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">b</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">c</span><span class="w"> </span><span class="mi">3</span><span class="p">))])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;key:~a value:~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">v</span><span class="p">))</span>
+
+<span class="c1">;;; More Complex Iterations</span>
+
+<span class="c1">;; Parallel scan of multiple sequences (stops on shortest)</span>
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">x</span><span class="w"> </span><span class="ss">y</span><span class="w"> </span><span class="ss">z</span><span class="p">)])</span><span class="w"> </span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a:~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">j</span><span class="p">))</span>
+<span class="c1">; =&gt; 0:x 1:y 2:z</span>
+
+<span class="c1">;; Nested loops</span>
+<span class="p">(</span><span class="k">for*</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">x</span><span class="w"> </span><span class="ss">y</span><span class="w"> </span><span class="ss">z</span><span class="p">)])</span><span class="w"> </span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a:~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">j</span><span class="p">))</span>
+<span class="c1">; =&gt; 0:x, 0:y, 0:z, 1:x, 1:y, 1:z</span>
+
+<span class="c1">;; Conditions</span>
+<span class="p">(</span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">1000</span><span class="p">]</span>
+<span class="w">      </span><span class="kd">#:when</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+<span class="w">      </span><span class="kd">#:unless</span><span class="w"> </span><span class="p">(</span><span class="nb">odd?</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="w">      </span><span class="kd">#:break</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;i=~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+<span class="c1">; =&gt; i=6, i=8, i=10</span>
+
+<span class="c1">;;; Comprehensions</span>
+<span class="c1">;; Very similar to `for&#39; loops -- just collect the results</span>
+
+<span class="p">(</span><span class="k">for/list</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;(2 3 4)</span>
+
+<span class="p">(</span><span class="k">for/list</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)]</span><span class="w"> </span><span class="kd">#:when</span><span class="w"> </span><span class="p">(</span><span class="nb">even?</span><span class="w"> </span><span class="n">i</span><span class="p">))</span>
+<span class="w">  </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(2)</span>
+
+<span class="p">(</span><span class="k">for/list</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">x</span><span class="w"> </span><span class="ss">y</span><span class="w"> </span><span class="ss">z</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">j</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; &#39;((0 x) (1 y) (2 z))</span>
+
+<span class="p">(</span><span class="k">for/list</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">1000</span><span class="p">]</span><span class="w"> </span><span class="kd">#:when</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="kd">#:unless</span><span class="w"> </span><span class="p">(</span><span class="nb">odd?</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="kd">#:break</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span>
+<span class="w">  </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &#39;(6 8 10)</span>
+
+<span class="p">(</span><span class="k">for/hash</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">values</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">number-&gt;string</span><span class="w"> </span><span class="n">i</span><span class="p">)))</span>
+<span class="c1">; =&gt; &#39;#hash((1 . &quot;1&quot;) (2 . &quot;2&quot;) (3 . &quot;3&quot;))</span>
+
+<span class="c1">;; There are many kinds of other built-in ways to collect loop values:</span>
+<span class="p">(</span><span class="k">for/sum</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">])</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 285</span>
+<span class="p">(</span><span class="k">for/product</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">in-range</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">11</span><span class="p">)])</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 13168189440000</span>
+<span class="p">(</span><span class="k">for/and</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="p">(</span><span class="nb">in-range</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="mi">20</span><span class="p">)])</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">j</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="p">(</span><span class="k">for/or</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="p">(</span><span class="nb">in-range</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="mi">2</span><span class="p">)])</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">j</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; #t</span>
+<span class="c1">;; And to use any arbitrary combination, use `for/fold&#39;</span>
+<span class="p">(</span><span class="k">for/fold</span><span class="w"> </span><span class="p">([</span><span class="n">sum</span><span class="w"> </span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)])</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 10</span>
+<span class="c1">;; (This can often replace common imperative loops)</span>
+
+<span class="c1">;;; Exceptions</span>
+
+<span class="c1">;; To catch exceptions, use the `with-handlers&#39; form</span>
+<span class="p">(</span><span class="k">with-handlers</span><span class="w"> </span><span class="p">([</span><span class="nb">exn:fail?</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="nb">exn</span><span class="p">)</span><span class="w"> </span><span class="mi">999</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">; =&gt; 999</span>
+<span class="p">(</span><span class="k">with-handlers</span><span class="w"> </span><span class="p">([</span><span class="nb">exn:break?</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="nb">exn</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;no time&quot;</span><span class="p">)])</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">sleep</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">  </span><span class="s2">&quot;phew&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; &quot;phew&quot;, but if you break it =&gt; &quot;no time&quot;</span>
+
+<span class="c1">;; Use `raise&#39; to throw exceptions or any other value</span>
+<span class="p">(</span><span class="k">with-handlers</span><span class="w"> </span><span class="p">([</span><span class="nb">number?</span><span class="w">    </span><span class="c1">; catch numeric values raised</span>
+<span class="w">                 </span><span class="nb">identity</span><span class="p">])</span><span class="w"> </span><span class="c1">; return them as plain values</span>
+<span class="w">  </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">raise</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span><span class="w"> </span><span class="c1">; =&gt; 2</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 7. Mutation</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Use `set!&#39; to assign a new value to an existing variable</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+<span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">n</span><span class="p">))</span>
+<span class="n">n</span><span class="w"> </span><span class="c1">; =&gt; 6</span>
+
+<span class="c1">;; Use boxes for explicitly mutable values (similar to pointers or</span>
+<span class="c1">;; references in other languages)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">n*</span><span class="w"> </span><span class="p">(</span><span class="nb">box</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">set-box!</span><span class="w"> </span><span class="n">n*</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="p">(</span><span class="nb">unbox</span><span class="w"> </span><span class="n">n*</span><span class="p">)))</span>
+<span class="p">(</span><span class="nb">unbox</span><span class="w"> </span><span class="n">n*</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 6</span>
+
+<span class="c1">;; Many Racket datatypes are immutable (pairs, lists, etc), some come in</span>
+<span class="c1">;; both mutable and immutable flavors (strings, vectors, hash tables,</span>
+<span class="c1">;; etc...)</span>
+
+<span class="c1">;; Use `vector&#39; or `make-vector&#39; to create mutable vectors</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">vec</span><span class="w"> </span><span class="p">(</span><span class="nb">vector</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">wall</span><span class="w"> </span><span class="p">(</span><span class="nb">make-vector</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">bottle-of-beer</span><span class="p">))</span>
+<span class="c1">;; Use vector-set! to update a slot</span>
+<span class="p">(</span><span class="nb">vector-set!</span><span class="w"> </span><span class="n">vec</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">vector-set!</span><span class="w"> </span><span class="n">wall</span><span class="w"> </span><span class="mi">99</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">down</span><span class="p">)</span>
+<span class="n">vec</span><span class="w"> </span><span class="c1">; =&gt; #(1 2 3 4)</span>
+
+<span class="c1">;; Create an empty mutable hash table and manipulate it</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="p">(</span><span class="nb">make-hash</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">hash-set!</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">hash-set!</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">b</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">hash-set!</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">c</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">hash-ref</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="p">)</span><span class="w">   </span><span class="c1">; =&gt; 1</span>
+<span class="p">(</span><span class="nb">hash-ref</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">d</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 0</span>
+<span class="p">(</span><span class="nb">hash-remove!</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">a</span><span class="p">)</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 8. Modules</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Modules let you organize code into multiple files and reusable</span>
+<span class="c1">;; libraries; here we use sub-modules, nested in the whole module that</span>
+<span class="c1">;; this text makes (starting from the &quot;#lang&quot; line)</span>
+
+<span class="p">(</span><span class="k">module</span><span class="w"> </span><span class="n">cake</span><span class="w"> </span><span class="n">racket/base</span><span class="w"> </span><span class="c1">; define a `cake&#39; module based on racket/base</span>
+
+<span class="w">  </span><span class="p">(</span><span class="k">provide</span><span class="w"> </span><span class="n">print-cake</span><span class="p">)</span><span class="w"> </span><span class="c1">; function exported by the module</span>
+
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">print-cake</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">show</span><span class="w"> </span><span class="s2">&quot;   ~a   &quot;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="sc">#\.</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">show</span><span class="w"> </span><span class="s2">&quot; .-~a-. &quot;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="sc">#\|</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">show</span><span class="w"> </span><span class="s2">&quot; | ~a | &quot;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="sc">#\space</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="n">show</span><span class="w"> </span><span class="s2">&quot;---~a---&quot;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="sc">#\-</span><span class="p">))</span>
+
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">show</span><span class="w"> </span><span class="n">fmt</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">ch</span><span class="p">)</span><span class="w"> </span><span class="c1">; internal function</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="n">fmt</span><span class="w"> </span><span class="p">(</span><span class="nb">make-string</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">ch</span><span class="p">))</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">newline</span><span class="p">)))</span>
+
+<span class="c1">;; Use `require&#39; to get all `provide&#39;d names from a module</span>
+<span class="p">(</span><span class="k">require</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">cake</span><span class="p">)</span><span class="w"> </span><span class="c1">; the &#39; is for a local submodule</span>
+<span class="p">(</span><span class="n">print-cake</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">; (show &quot;~a&quot; 1 #\A) ; =&gt; error, `show&#39; was not exported</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 9. Classes and Objects</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Create a class fish% (-% is idiomatic for class bindings)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">fish%</span>
+<span class="w">  </span><span class="p">(</span><span class="k">class</span><span class="w"> </span><span class="nb">object%</span>
+<span class="w">    </span><span class="p">(</span><span class="k">init</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="c1">; initialization argument</span>
+<span class="w">    </span><span class="p">(</span><span class="k">super-new</span><span class="p">)</span><span class="w"> </span><span class="c1">; superclass initialization</span>
+<span class="w">    </span><span class="c1">;; Field</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">current-size</span><span class="w"> </span><span class="n">size</span><span class="p">)</span>
+<span class="w">    </span><span class="c1">;; Public methods</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define/public</span><span class="w"> </span><span class="p">(</span><span class="n">get-size</span><span class="p">)</span>
+<span class="w">      </span><span class="n">current-size</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define/public</span><span class="w"> </span><span class="p">(</span><span class="n">grow</span><span class="w"> </span><span class="n">amt</span><span class="p">)</span>
+<span class="w">      </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">current-size</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">amt</span><span class="w"> </span><span class="n">current-size</span><span class="p">)))</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define/public</span><span class="w"> </span><span class="p">(</span><span class="n">eat</span><span class="w"> </span><span class="n">other-fish</span><span class="p">)</span>
+<span class="w">      </span><span class="p">(</span><span class="n">grow</span><span class="w"> </span><span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="n">other-fish</span><span class="w"> </span><span class="n">get-size</span><span class="p">)))))</span>
+
+<span class="c1">;; Create an instance of fish%</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">charlie</span>
+<span class="w">  </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">fish%</span><span class="w"> </span><span class="p">[</span><span class="n">size</span><span class="w"> </span><span class="mi">10</span><span class="p">]))</span>
+
+<span class="c1">;; Use `send&#39; to call an object&#39;s methods</span>
+<span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="n">charlie</span><span class="w"> </span><span class="n">get-size</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 10</span>
+<span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="n">charlie</span><span class="w"> </span><span class="n">grow</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="n">charlie</span><span class="w"> </span><span class="n">get-size</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 16</span>
+
+<span class="c1">;; `fish%&#39; is a plain &quot;first class&quot; value, which can get us mixins</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">add-color</span><span class="w"> </span><span class="n">c%</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">class</span><span class="w"> </span><span class="n">c%</span>
+<span class="w">    </span><span class="p">(</span><span class="k">init</span><span class="w"> </span><span class="n">color</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">super-new</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">my-color</span><span class="w"> </span><span class="n">color</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">define/public</span><span class="w"> </span><span class="p">(</span><span class="n">get-color</span><span class="p">)</span><span class="w"> </span><span class="n">my-color</span><span class="p">)))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">colored-fish%</span><span class="w"> </span><span class="p">(</span><span class="n">add-color</span><span class="w"> </span><span class="n">fish%</span><span class="p">))</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">charlie2</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">colored-fish%</span><span class="w"> </span><span class="p">[</span><span class="n">size</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">color</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">red</span><span class="p">]))</span>
+<span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="n">charlie2</span><span class="w"> </span><span class="n">get-color</span><span class="p">)</span>
+<span class="c1">;; or, with no names:</span>
+<span class="p">(</span><span class="k">send</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="p">(</span><span class="n">add-color</span><span class="w"> </span><span class="n">fish%</span><span class="p">)</span><span class="w"> </span><span class="p">[</span><span class="n">size</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">color</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">red</span><span class="p">])</span><span class="w"> </span><span class="n">get-color</span><span class="p">)</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 10. Macros</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Macros let you extend the syntax of the language</span>
+
+<span class="c1">;; Let&#39;s add a while loop</span>
+<span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">while</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="p">()</span>
+<span class="w">    </span><span class="p">(</span><span class="k">when</span><span class="w"> </span><span class="n">condition</span>
+<span class="w">      </span><span class="n">body</span><span class="w"> </span><span class="k">...</span>
+<span class="w">      </span><span class="p">(</span><span class="n">loop</span><span class="p">))))</span>
+
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">i</span><span class="w"> </span><span class="mi">0</span><span class="p">])</span>
+<span class="w">  </span><span class="p">(</span><span class="n">while</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">i</span><span class="w">  </span><span class="mi">10</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="n">i</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">(</span><span class="nb">add1</span><span class="w"> </span><span class="n">i</span><span class="p">))))</span>
+
+<span class="c1">;; Macros are hygienic, you cannot clobber existing variables!</span>
+<span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">swap!</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="c1">; -! is idiomatic for mutation</span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">tmp</span><span class="w"> </span><span class="n">x</span><span class="p">])</span>
+<span class="w">    </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">tmp</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="n">swap!</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;tmp = ~a; other = ~a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+<span class="c1">;; The variable `tmp` is renamed to `tmp_1`</span>
+<span class="c1">;; in order to avoid name conflict</span>
+<span class="c1">;; (let ([tmp_1 tmp])</span>
+<span class="c1">;;   (set! tmp other)</span>
+<span class="c1">;;   (set! other tmp_1))</span>
+
+<span class="c1">;; But they are still code transformations, for example:</span>
+<span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">bad-while</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">when</span><span class="w"> </span><span class="n">condition</span>
+<span class="w">    </span><span class="n">body</span><span class="w"> </span><span class="k">...</span>
+<span class="w">    </span><span class="p">(</span><span class="n">bad-while</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)))</span>
+<span class="c1">;; this macro is broken: it generates infinite code, if you try to use</span>
+<span class="c1">;; it, the compiler will get in an infinite loop</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 11. Contracts</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Contracts impose constraints on values exported from modules</span>
+
+<span class="p">(</span><span class="k">module</span><span class="w"> </span><span class="n">bank-account</span><span class="w"> </span><span class="n">racket</span>
+<span class="w">  </span><span class="p">(</span><span class="k">provide</span><span class="w"> </span><span class="p">(</span><span class="k">contract-out</span>
+<span class="w">            </span><span class="p">[</span><span class="n">deposit</span><span class="w"> </span><span class="p">(</span><span class="k">-&gt;</span><span class="w"> </span><span class="nb">positive?</span><span class="w"> </span><span class="k">any</span><span class="p">)]</span><span class="w"> </span><span class="c1">; amounts are always positive</span>
+<span class="w">            </span><span class="p">[</span><span class="n">balance</span><span class="w"> </span><span class="p">(</span><span class="k">-&gt;</span><span class="w"> </span><span class="nb">positive?</span><span class="p">)]))</span>
+
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">deposit</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="n">a</span><span class="p">)))</span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">balance</span><span class="p">)</span><span class="w"> </span><span class="n">amount</span><span class="p">))</span>
+
+<span class="p">(</span><span class="k">require</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">bank-account</span><span class="p">)</span>
+<span class="p">(</span><span class="n">deposit</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">balance</span><span class="p">)</span><span class="w"> </span><span class="c1">; =&gt; 5</span>
+
+<span class="c1">;; Clients that attempt to deposit a non-positive amount are blamed</span>
+<span class="c1">;; (deposit -5) ; =&gt; deposit: contract violation</span>
+<span class="c1">;; expected: positive?</span>
+<span class="c1">;; given: -5</span>
+<span class="c1">;; more details....</span>
+
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+<span class="c1">;; 12. Input &amp; output</span>
+<span class="c1">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+
+<span class="c1">;; Racket has this concept of &quot;port&quot;, which is very similar to file</span>
+<span class="c1">;; descriptors in other languages</span>
+
+<span class="c1">;; Open &quot;/tmp/tmp.txt&quot; and write &quot;Hello World&quot;</span>
+<span class="c1">;; This would trigger an error if the file&#39;s already existed</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">out-port</span><span class="w"> </span><span class="p">(</span><span class="nb">open-output-file</span><span class="w"> </span><span class="s2">&quot;/tmp/tmp.txt&quot;</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="w"> </span><span class="n">out-port</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">close-output-port</span><span class="w"> </span><span class="n">out-port</span><span class="p">)</span>
+
+<span class="c1">;; Append to &quot;/tmp/tmp.txt&quot;</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">out-port</span><span class="w"> </span><span class="p">(</span><span class="nb">open-output-file</span><span class="w"> </span><span class="s2">&quot;/tmp/tmp.txt&quot;</span>
+<span class="w">                                   </span><span class="kd">#:exists</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">append</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="s2">&quot;Hola mundo&quot;</span><span class="w"> </span><span class="n">out-port</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">close-output-port</span><span class="w"> </span><span class="n">out-port</span><span class="p">)</span>
+
+<span class="c1">;; Read from the file again</span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nb">in-port</span><span class="w"> </span><span class="p">(</span><span class="nb">open-input-file</span><span class="w"> </span><span class="s2">&quot;/tmp/tmp.txt&quot;</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="p">(</span><span class="nb">read-line</span><span class="w"> </span><span class="nb">in-port</span><span class="p">))</span>
+<span class="c1">; =&gt; &quot;Hello World&quot;</span>
+<span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="p">(</span><span class="nb">read-line</span><span class="w"> </span><span class="nb">in-port</span><span class="p">))</span>
+<span class="c1">; =&gt; &quot;Hola mundo&quot;</span>
+<span class="p">(</span><span class="nb">close-input-port</span><span class="w"> </span><span class="nb">in-port</span><span class="p">)</span>
+
+<span class="c1">;; Alternatively, with call-with-output-file you don&#39;t need to explicitly</span>
+<span class="c1">;; close the file</span>
+<span class="p">(</span><span class="nb">call-with-output-file</span><span class="w"> </span><span class="s2">&quot;/tmp/tmp.txt&quot;</span>
+<span class="w">  </span><span class="kd">#:exists</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">update</span><span class="w"> </span><span class="c1">; Rewrite the content</span>
+<span class="w">  </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">(</span><span class="n">out-port</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="s2">&quot;World Hello!&quot;</span><span class="w"> </span><span class="n">out-port</span><span class="p">)))</span>
+
+<span class="c1">;; And call-with-input-file does the same thing for input</span>
+<span class="p">(</span><span class="nb">call-with-input-file</span><span class="w"> </span><span class="s2">&quot;/tmp/tmp.txt&quot;</span>
+<span class="w">  </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">(</span><span class="nb">in-port</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nb">displayln</span><span class="w"> </span><span class="p">(</span><span class="nb">read-line</span><span class="w"> </span><span class="nb">in-port</span><span class="p">))))</span>
+</pre></div>
+<h2>Further Reading</h2>
+
+<p>Still up for more? Try <a href="http://docs.racket-lang.org/getting-started/">Getting Started with Racket</a></p>
+
+    <hr>
+    <p>Got a suggestion? A correction, perhaps? <a href="https://github.com/adambard/learnxinyminutes-docs/issues/new">Open an Issue</a> on the GitHub Repo, or make a <a href="https://github.com/adambard/learnxinyminutes-docs/edit/master/racket.html.markdown">pull request</a> yourself!
+    </p>
+    <p class="contributed">
+    Originally contributed by th3rac25, and updated by <a href="https://github.com/adambard/learnxinyminutes-docs/blame/master/racket.html.markdown">18 contributors</a>.
+    </p>
+
+    <footer>
+    <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+    <p>
+    &copy; 2024
+        <a href="https://github.com/voila">th3rac25</a>,
+        <a href="https://github.com/elibarzilay">Eli Barzilay</a>,
+        <a href="https://github.com/gustavoschmidt">Gustavo Schmidt</a>,
+        <a href="https://github.com/cmpitg">Duong H. Nguyen</a>,
+        <a href="https://github.com/keyanzhang">Keyan Zhang</a>
+    </p>
+
+    <p>
+
+    </footer>
+  </div>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

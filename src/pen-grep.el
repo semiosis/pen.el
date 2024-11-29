@@ -199,12 +199,13 @@ NEEDLE is the search string."
                          (replace-match needle t t extra-args 1)
                        (concat extra-args " " needle)))))
 
-(defun vc-get-top-level ()
+(defun vc-get-top-level (&optional startingdir)
+  (setq startingdir_internal (or startingdir default-directory))
   (s-replace-regexp "/$" ""
                     (or (projectile-project-root)
                         (progn
                           (ns "vc-get-top-level: using pwd")
-                          default-directory))))
+                          startingdir_internal))))
 
 (defun sps-ead-thing-at-point ()
   (interactive)

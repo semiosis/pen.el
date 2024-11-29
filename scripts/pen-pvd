@@ -31,6 +31,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -h|--help) {
+        do_help=y
+        shift
+    }
+    ;;
+
     -csv) {
         iscsv=y
         shift
@@ -39,6 +45,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$do_help" = y; then
+    export GY_CMD="visidata --help"
+    visidata --help | pavs
+    exit "$?"
+fi
 
 is_tty() {
     # If stout is a tty
@@ -91,7 +103,19 @@ case "$mode" in
     *)
 esac
 
-eval `resize`
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+# test:
+# ext_freq_cmdlog_out.vdj | v
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_tty && ! test "$IN_UNBUFFER" = y && ! is_stdout_pipe; then
+    eval `resize`
+fi
 
 stdin_exists() {
     ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null

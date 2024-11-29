@@ -1,0 +1,29 @@
+Content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi38-203 { color: #ff5f5f; }
+.ansi38-208 { color: #ff8700; }
+.ansi38-209 { color: #ff875f; }
+.ansi38-178 { color: #d7af00; }
+.ansi38-214 { color: #ffaf00; }
+.ansi38-184 { color: #d7d700; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+<span class="ansi38-184">/</span><span class="ansi38-184">r</span><span class="ansi38-184">o</span><span class="ansi38-184">o</span><span class="ansi38-184">t</span><span class="ansi38-184">/</span><span class="ansi38-184">.</span><span class="ansi38-184">e</span><span class="ansi38-184">m</span><span class="ansi38-184">a</span><span class="ansi38-184">c</span><span class="ansi38-178">s</span><span class="ansi38-214">.</span><span class="ansi38-214">d</span><span class="ansi38-214">/</span><span class="ansi38-214">h</span><span class="ansi38-214">o</span><span class="ansi38-214">s</span><span class="ansi38-214">t</span><span class="ansi38-214">/</span><span class="ansi38-214">p</span><span class="ansi38-208">e</span><span class="ansi38-208">n</span><span class="ansi38-208">.</span><span class="ansi38-208">e</span><span class="ansi38-208">l</span><span class="ansi38-208">/</span><span class="ansi38-208">s</span><span class="ansi38-208">c</span><span class="ansi38-208">r</span><span class="ansi38-209">i</span><span class="ansi38-203">p</span><span class="ansi38-203">t</span><span class="ansi38-203">s</span>
+
+</pre>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+scrape "
+^                                             # start of string
+(                                             # first group start
+  (?:
+    (?:[^?+*{}()[\]\\|]+                      # literals and ^, $
+     | \\.                                    # escaped characters
+     | \[ (?: \^?\\. | \^[^\\] | [^\\^] )     # character classes
+          (?: [^\]\\]+ | \\. )* \]
+     | \( (?:\?[:=!]|\?<[=!]|\?>)? (?1)?? \)  # parenthesis, with recursive content
+     | \(\? (?:R|[+-]?\d+) \)                 # recursive matching
+     )
+    (?: (?:[?+*]|\{\d+(?:,\d*)?\}) [?+]? )?   # quantifiers
+  | \|                                        # alternative
+  )*                                          # repeat content
+)                                             # end first group
+$                                             # end of string
+"

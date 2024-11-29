@@ -1,0 +1,4 @@
+#!vd -p
+{"longname": "open-file", "input": ".", "keystrokes": "o"}
+{"sheet": ".", "col": "filename", "row": "", "longname": "addcol-new", "input": "narly", "keystrokes": "za", "comment": "append an empty column"}
+{"sheet": ".", "col": "", "row": "", "longname": "save-sheet", "input": "/tmp/yo.csv", "keystrokes": "Ctrl+S", "comment": "save current sheet to filename in format determined by extension (default .tsv)"}

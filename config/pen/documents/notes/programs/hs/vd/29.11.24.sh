@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "vd" "-p" "/root/.pen/documents/notes/._ext_freq_cmdlog.vdj" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "-p" "/root/.pen/documents/notes/._ext_freq_cmdlog.vdj" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "-p" "/root/.pen/documents/notes/._ext_freq_cmdlog.vdj" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "-p" "/root/.pen/documents/notes/._ext_freq_cmdlog.vdj" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "-p" "/root/.pen/documents/notes/._ext_freq_cmdlog.vdj" "#" "<==" "vd"

@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"

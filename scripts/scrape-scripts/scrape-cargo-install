@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+scrape "cargo install [^-\"][a-zA-Z0-9_-]+"

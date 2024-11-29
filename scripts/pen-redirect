@@ -38,6 +38,7 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' | \
     sed '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' | \
     sed '/.*haskell.org/s/\/$//' | \
+    sed '/.*dwarffortresswiki.org/s/\/$//' | \
     sed '/.*haskell.org/s/\/#.*//'
 
     # sed '/.*jsvine.github.io.*[^/]$/s/$/\//' | \

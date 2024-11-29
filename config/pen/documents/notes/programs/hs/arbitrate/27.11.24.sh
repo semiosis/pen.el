@@ -1,0 +1,5 @@
+cd /root/repos/davidelettieri/sample-racket-language;  "arbitrate" "racket" "--lib" "racket-langserver" "#" "<==" "pen-racket-lsp"
+cd /root/.emacs.d/host/pen.el;  "arbitrate" "racket" "--lib" "racket-langserver" "#" "<==" "pen-racket-lsp"
+cd /root/repos/davidelettieri/sample-racket-language;  "arbitrate" "racket" "--lib" "racket-langserver" "#" "<==" "pen-racket-lsp"
+cd /root/repos/davidelettieri/sample-racket-language;  "arbitrate" "racket" "--lib" "racket-langserver" "#" "<==" "pen-racket-lsp"
+cd /root/.emacs.d/host/pen.el;  "arbitrate" "racket" "--lib" "racket-langserver" "#" "<==" "pen-racket-lsp"

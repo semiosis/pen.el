@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# This is based on the extension, which is not nice
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+fp="$last_arg"
+rp="$(realpath "$fp")"
+dn="$(dirname "$rp")"
+cd "$dn"
+bn="$(basename "$fp")"
+ext="${fp##*.}"
+fn="${fp%.*}"
+
+case "$ext" in
+    # hackett|hkt) { printf -- "%s\n" "$(which racket) -I hackett"; } ;; 
+    hackett|hkt) { which racket; echo "#lang hackett"; } ;; 
+    # rkt) { which racket; echo "#lang racket"; echo ";; #lang racket/base"; } ;; 
+    rkt) { echo "/usr/bin/env racket"; echo "#lang racket"; echo ";; #lang racket/base"; } ;; 
+    hs) { which runhaskell; } ;; 
+    R) { which Rscript ; } ;; 
+    hy) { which hy3.6; } ;; 
+    js) { which node || which nodejs; } ;; 
+    rb) { which ruby; } ;; 
+    wls) { lit -s /usr/bin/env wolframscript; } ;; 
+    scrbl) { which scribble; } ;; 
+    py) { 
+        ver="$(vermin "$fp")"
+
+# This is supplied from yasnippet #!
+awk1 <<HEREDOC
+/usr/bin/env python$ver
+# -*- coding: utf-8 -*-
+HEREDOC
+
+} ;; 
+
+    tcl) { which tclsh; } ;; 
+    pl) { which perl; } ;; 
+    sh) { which bash; } ;;
+    *) { notify-send "$0 : create an entry for $ext here"; }
+esac

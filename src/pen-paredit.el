@@ -28,4 +28,18 @@
 ;; (advice-remove 'paredit-kill #'paredit-kill-around-advice)
 (advice-add 'paredit-kill :around #'paredit-kill-around-advice)
 
+(defun pen-paredit-kill ()
+  (interactive)
+
+  ;; With an argument, should run paredit-kill without adding to the
+  ;; kill ring
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (let ((kr kill-ring))
+        (call-interactively 'paredit-kill)
+        (setq kill-ring kr)
+        (xc (car kill-ring)))
+    (call-interactively 'paredit-kill)))
+
+(define-key paredit-mode-map (kbd "C-k") 'pen-paredit-kill)
+
 (provide 'pen-paredit)

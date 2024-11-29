@@ -1,4 +1,5 @@
-(setq ivy-height 30)
+(defvar default-ivy-height 30)
+(setq ivy-height default-ivy-height)
 
 (defun pen-ivy-filtered-candidates ()
   "Returns the list of candidates filtered by the currently entered pattern"
@@ -383,5 +384,17 @@ prompt additionally for EXTRA-AG-ARGS."
       (ivy--exhibit)
       ;; (ivy-alt-done)
       (ivy-done))))
+
+;; This ensures that the ivy-height is never too tall for the screen
+(defun ivy--minibuffer-setup-around-advice (proc &rest args)
+  (setq ivy-height
+        (min
+         default-ivy-height
+         (- (frame-height)
+            5)))
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'ivy--minibuffer-setup :around #'ivy--minibuffer-setup-around-advice)
+;; (advice-remove 'ivy--minibuffer-setup #'ivy--minibuffer-setup-around-advice)
 
 (provide 'pen-ivy)

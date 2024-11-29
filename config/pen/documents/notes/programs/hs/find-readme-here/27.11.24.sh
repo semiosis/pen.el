@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/src;  "find-readme-here" "#" "<==" "zsh"
+cd /root/repos/ajkerrigan/visidata-plugins;  "find-readme-here" "#" "<==" "zsh"
+cd /root/repos/ajkerrigan/visidata-plugins;  "find-readme-here" "#" "<==" "withopts"
+cd /root/repos/ajkerrigan/visidata-plugins;  "find-readme-here" "#" "<==" "zsh"
+cd /root/repos/ajkerrigan/visidata-plugins;  "find-readme-here" "#" "<==" "zsh"

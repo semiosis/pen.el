@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+scrape "#[A-Z_a-z-]+"

@@ -126,43 +126,48 @@ buffer."
   "cider-auto-jack-in is needed for cider-jack-in-around-advice to work."
   (interactive)
 
-  ;; Make sure to be more precise. jack in with cljs too if it should
-  ;; j:cider-jack-in-clj
-  ;; j:cider-jack-in-cljs
-  ;; j:cider-jack-in-clj&cljs
+  ;; (tv (buffer-name))
+  ;; This is to prevent cider jacking in when markdown documentation appears.
+  ;; TODO Also make it so it doesn't start when org files are opened
+  (if (not (re-match-p "-fontification:" (buffer-name)))
 
-  (if (and
-       ;; Only automatically connect if this is a git repo -- prevents cider from asking for the project
-       (projectile-project-p)
-       (derived-mode-p 'clojure-mode)
-       (not (derived-mode-p 'clojerl-mode))
-       (not (minor-mode-p org-src-mode)))
-      (progn
-        (run-with-timer
-         2 nil
-         (eval
-          `(lm
-            ;; ignore-errors here prevents this breaking, which was annoying. I couldn't open from ranger
-            ;; pin mount.clj
-            ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "mount.clj"
-            ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "(ignore-errors (find-file \"mount.clj\"))"
-            (ignore-errors
-              (if (not (minor-mode-p org-src-mode))
-                  (try
-                   (if ;; pen-do-cider-auto-jack-in
-                       (pen-rc-test "cider")
-                       (progn
-                         (message "Jacking in. Please wait.")
-                         (with-current-buffer ,(current-buffer)
-                           (cond
-                            ((derived-mode-p 'clojure-mode)
-                             (auto-no
-                              (cider-jack-in nil)))
-                            ((derived-mode-p 'clojurescript-mode)
-                             (auto-no
-                              (cider-jack-in-cljs nil)))))))))))))
+      ;; Make sure to be more precise. jack in with cljs too if it should
+      ;; j:cider-jack-in-clj
+      ;; j:cider-jack-in-cljs
+      ;; j:cider-jack-in-clj&cljs
 
-        (enable-helm-cider-mode)))
+      (if (and
+           ;; Only automatically connect if this is a git repo -- prevents cider from asking for the project
+           (projectile-project-p)
+           (derived-mode-p 'clojure-mode)
+           (not (derived-mode-p 'clojerl-mode))
+           (not (minor-mode-p org-src-mode)))
+          (progn
+            (run-with-timer
+             2 nil
+             (eval
+              `(lm
+                ;; ignore-errors here prevents this breaking, which was annoying. I couldn't open from ranger
+                ;; pin mount.clj
+                ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "mount.clj"
+                ;; 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t' -e "(ignore-errors (find-file \"mount.clj\"))"
+                (ignore-errors
+                  (if (not (minor-mode-p org-src-mode))
+                      (try
+                       (if ;; pen-do-cider-auto-jack-in
+                           (pen-rc-test "cider")
+                           (progn
+                             (message "Jacking in. Please wait.")
+                             (with-current-buffer ,(current-buffer)
+                               (cond
+                                ((derived-mode-p 'clojure-mode)
+                                 (auto-no
+                                  (cider-jack-in nil)))
+                                ((derived-mode-p 'clojurescript-mode)
+                                 (auto-no
+                                  (cider-jack-in-cljs nil)))))))))))))
+
+            (enable-helm-cider-mode))))
   t)
 
 ;; This may be breaking the clojure hook when it's disabled for some reason, so I put it last

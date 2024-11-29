@@ -1493,11 +1493,57 @@ case "$f" in
     }
     ;;
 
-    kp) {
-        if [ -n "$CALLER_PANE" ]; then
-            tmux kill-pane -t "$CALLER_PANE"
+    choose-session) {
+        current="$(tmux display -p "#{session_name}")"
+        chosen="$((tm list-sessions;echo "$current";) | sort | uniq -u | fzf)"
+        if test -n "$chosen"; then
+            echo "$chosen"
         else
-            tmux kill-pane
+            exit 1
+        fi
+    }
+    ;;
+
+    switch-session) {
+        : "${current_client:="$(tmux display -p "#{client_name}")"}"
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -c) {
+                client_name="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        chosen="$(tm choose-session)"
+        if test -n "$chosen"; then
+            tmux switch-client -c "$current_client" -t "$chosen"
+        else
+            exit 1
+        fi
+    }
+    ;;
+
+    kp|kill-pane) {
+        sentinal_string="tm_sentinal_${RANDOM}_$$"
+
+        current_session="$(tmux display -p "#{session_name}")"
+        n_windows="$(tmux display -t "$CALLER_PANE" -p "#{session_windows}")"
+        n_panes="$(tmux display -t "$CALLER_PANE" -p "#{window_panes}")"
+        n_sessions="$(tmux display -t "$CALLER_PANE" -p "#{server_sessions}")"
+        if test "$n_windows" = 1 && test "$n_panes" = 1 && test "$n_sessions" -gt 1 && ! test "$current_session" = popup; then
+            chosen="$(unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session")"
+            if test -n "$chosen"; then
+                # Sadly, "tmux choose-tree -Ns" does not wait, so I can't use it
+                tmux switch-client -t "$chosen" && tmux kill-pane -t "$CALLER_PANE"
+            else
+                tmux kill-pane -t "$CALLER_PANE"
+            fi
+        else
+            tmux kill-pane -t "$CALLER_PANE"
         fi
     }
     ;;

@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f "/usr/local/bin/ansi2html" || pip3 install ansi2html &>/dev/null
+
+# ls --color=always | ansi2html > directories.html
+# sudo tail /var/log/messages | ccze -A | ansi2html > logs.html
+# task rc._forcecolor:yes limit:0 burndown | ansi2html > burndown.html
+# pwd | lolcat -f | ansi2html > colorls.html
+
+/usr/local/bin/ansi2html "$@"

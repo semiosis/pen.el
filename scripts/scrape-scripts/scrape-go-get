@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+scrape "go get (-u )?[a-z][^ ]+" | grep -v "#"

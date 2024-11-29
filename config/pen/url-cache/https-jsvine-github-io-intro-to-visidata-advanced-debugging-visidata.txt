@@ -1,0 +1,427 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 7010
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-c252"
+expires: Wed, 27 Nov 2024 03:24:59 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 99CD:27416B:40B862:442264:67468EB2
+Accept-Ranges: bytes
+Date: Wed, 27 Nov 2024 03:15:00 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-chc950024-CHC
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1732677301.881425,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: e9fd562c3bdbb97b6a978d72a90c765bdbb041d3
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Debugging VisiData &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/advanced/debugging-visidata.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="The Command Log" href="../the-command-log/" />
+    <link rel="prev" title="Extending VisiData With Plugins" href="../extending-visidata/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Debugging VisiData</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examining-cell-errors">Examining cell errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examining-general-errors">Examining general errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-report-a-bug">How to report a bug</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../the-command-log/">The Command Log</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>Debugging VisiData</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="debugging-visidata">
+<h1>Debugging VisiData<a class="headerlink" href="#debugging-visidata" title="Permalink to this headline">¶</a></h1>
+<p>Not everything goes according to plan. To oversimplify somewhat, you may encounter three sources of errors in VisiData:</p>
+<ul class="simple">
+<li><strong>Expected errors</strong>, the result of doing something you know will fail in certain situations.</li>
+<li><strong>User-generated errors</strong>, the result of issuing commands that are invalid in some way.</li>
+<li><strong>Bugs</strong>, which stem from problems in VisiData’s own source code.</li>
+</ul>
+<p>These errors can occur in two different scopes:</p>
+<ul class="simple">
+<li><strong>Cell errors</strong> pertain to specific, individual cells. These are often (but not always) expected errors.</li>
+<li><strong>General errors</strong> relate not to the data itself, but to broader usage patterns. These are often (but not always) user-generated errors.</li>
+</ul>
+<p>This chapter describes how to investigate errors at both scopes. A quick guide:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Keystroke(s)</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">Control-e</kbd></td>
+<td>Examine the latest general error</td>
+</tr>
+<tr class="row-odd"><td><kbd class="kbd docutils literal notranslate">g</kbd> + <kbd class="kbd docutils literal notranslate">Control-e</kbd></td>
+<td>Examine all general errors encountered</td>
+</tr>
+<tr class="row-even"><td><kbd class="kbd docutils literal notranslate">z</kbd> + <kbd class="kbd docutils literal notranslate">Control-e</kbd></td>
+<td>Examine the cell-specific error under your cursor</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="examining-cell-errors">
+<h2>Examining cell errors<a class="headerlink" href="#examining-cell-errors" title="Permalink to this headline">¶</a></h2>
+<p>In the <a class="reference external" href="../../basics/understanding-columns/">Understanding Columns</a> chapter, we’ve already seen an example of what a cell-specific error looks like, when we told VisiData that the <code class="docutils literal notranslate"><span class="pre">HEIGHT</span></code> column values of the wildlife-strikes dataset should be integers (using <kbd class="kbd docutils literal notranslate">#</kbd>):</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi38-246 ansi48-68"></span><span class="ansi38-246 ansi40">&lt;</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">STATE </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> PHASE_OF_FLT </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 inv38-246 inv40"></span><span class="ansi1 ansi4 inv37 inv40"> HEIGHT#</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> SPEED </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> SPECIES            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> BIRDS_STRUCK </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> </span><span class="ansi38-246">&gt;
+</span><span class="inv38-246 inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40"> FL    │ VERO BEACH MUNICIP…│ APPROACH     │</span><span class="ansi1 inv37 inv40">       </span><span class="ansi1 inv38-166 inv40">!</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│       │ Unknown bird       │ 1            │ N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> AK    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> KENAI MUNICIPAL AR…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DAVID WAYNE HOOKS …</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> POMPANO BEACH AIRP…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">      0 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">   
+</span><span class="ansi37 ansi40"> VI    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> HENRY E ROHLSEN AR…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> O</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SAN ANTONIO INTL   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LONE STAR EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> DEPARTURE    </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> P</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> TAMPA INTL         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">   6000 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> MO    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LAMBERT-ST LOUIS I…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Owls</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> OPA-LOCKA EXECUTIV…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Hawks</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> NORMAN Y. MINETA S…</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Gulls</span><span class="ansi40">           </span><span class="ansi37 ansi40">   </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT LAUDERDALE/HO…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">   1500 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird - sma…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> FORT SMITH REGIONA…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird - sma…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> AR    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> BILL AND  HILLARY …</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> LANDING ROLL </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">      0 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird - sma…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+      </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> UNKNOWN            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> En Route     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> P</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> METRO OAKLAND INTL </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> UT    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> SALT LAKE CITY INTL</span><span class="ansi38-246 ansi40">│</span><span class="ansi40">              </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> TX    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> FL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ORLANDO SANFORD IN…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> APPROACH     </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi1 ansi38-166 ansi40">!</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> N</span><span class="ansi40"> 
+</span><span class="ansi37 ansi40"> IL    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CHICAGO O'HARE INT…</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CLIMB        </span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40">  12000 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Unknown bird       </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 1            </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> P</span><span class="ansi40"> 
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                         </span><span class="ansi30 ansi48-68">     </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">#</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">type-int</span><span class="ansi30"></span><span class="ansi30 ansi48-68">      73448 rows </span>
+</pre>
+</div>
+<p>VisiData obeyed but marked some cells with a <code class="docutils literal notranslate"><span class="pre">!</span></code> error/warning annotation — specifically the empty cells, because Python considers it impossible to convert nothingness a whole number.</p>
+<p>In some cases, we can intuit why a cell is marked with a <code class="docutils literal notranslate"><span class="pre">!</span></code>. In other cases, we might want to know more. To do so, navigate to the cell and type <kbd class="kbd docutils literal notranslate">z</kbd> + <kbd class="kbd docutils literal notranslate">Control-e</kbd>. If we do this on the second cell of the <code class="docutils literal notranslate"><span class="pre">HEIGHT</span></code> column, here’s what we’ll see:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> text                                                                           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                  
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> Traceback (most recent call last):                                             </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║</span><span class="ansi40">                   
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/wrappers.py", line 105, in wrapply </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> return func(*args, **kwargs)</span><span class="ansi40">               </span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40">       </span><span class="ansi40">                             </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> ValueError: invalid literal for int() with base 10: ''</span><span class="ansi40">                         </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">zCtrl+E› faa-wildlife-strikes_cell_error</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                     </span><span class="ansi30 ansi48-68">         </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">zCtrl+E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">    </span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">   4 lines </span>
+</pre>
+</div>
+<p>If you use Python frequently, this output may look familiar; it’s the “stack traceback” for the error that VisiData encountered while trying to convert the blank cell (an empty string) to an integer. If you don’t use Python frequently or at all, you may still be able to get a sense of the issue at hand; the final line is usually the most descriptive.</p>
+<p>The error sheet is like any other sheet in VisiData, so you can quit it and return to the previous sheet by pressing <kbd class="kbd docutils literal notranslate">q</kbd>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>There are, in fact, two types of cell errors:</p>
+<ul class="last simple">
+<li>Errors caused by type conversions, as demonstrated above. VisiData flags these with a <strong>yellow</strong> exclamation mark.</li>
+<li>Errors stemming from dynamic column expressions, such as <code class="docutils literal notranslate"><span class="pre">=HEIGHT</span> <span class="pre">/</span> <span class="pre">0</span></code>. VisiData flags these with a <strong>red</strong> exclamation mark.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="examining-general-errors">
+<h2>Examining general errors<a class="headerlink" href="#examining-general-errors" title="Permalink to this headline">¶</a></h2>
+<p>Let’s try creating a general error on purpose. Let’s press <kbd class="kbd docutils literal notranslate">=</kbd> to create a new column, and type <code class="docutils literal notranslate"><span class="pre">(</span></code> at the prompt, and then <kbd class="kbd docutils literal notranslate">Enter</kbd>. We’ll be greeted by an error message at the bottom of the screen:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi1"></span><span class="ansi1 ansi37"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-320  </span><span class="ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/07/15 00:00:00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> CA    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> METRO OAKLAND INTL </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">           </span><span class="ansi37 ansi40">   </span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> DELTA AIR LINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-320  </span><span class="ansi40">      </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">┌────────────────────────────────|</span><span class="ansi30 ansi43"> statuses </span><span class="ansi30 ansi48-114">|─┐</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> LUFTHANSA          </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-380        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:00:</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ </span><span class="ansi38-166 ansi48-114">SyntaxError: '(' was never closed (&lt;expr&gt;,</span><span class="ansi30 ansi48-114">  │</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> BUSINESS           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> C-172        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/08/15 00:00:</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ line 1)</span><span class="ansi48-114">                                     </span><span class="ansi30 ansi48-114">│</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi37 ansi40"> SPIRIT AIRLINES    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> A-319        </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> 05/10/15 00:00:</span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">└─────────────────────────────────────────────┘</span><span class="ansi38-246 ansi48-114"></span><span class="ansi38-246 ansi40">│
+</span><span class="ansi4 ansi38-246 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">1› faa-wildlife-strikes</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                          </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">=</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">addcol-expr</span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">73448 rows </span>
+</pre>
+</div>
+<p>Why’s that? In Python, all open parentheses need to be closed.</p>
+<p>To examine this general error in greater detail, we can press <kbd class="kbd docutils literal notranslate">Control-e</kbd> — now, or at any point until you trigger another error —&nbsp;to reveal its full traceback in a VisiData text sheet:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> text                                                                                </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">             
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> Traceback (most recent call last):</span><span class="ansi40">                                                  </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/basesheet.py", line 211, in execCommand </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> escaped = super().execCommand2(cmd, vdglobals=vdglobals)</span><span class="ansi40">                            </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/extensible.py", line 79, in wrappedfunc </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> r = oldfunc(*args, **kwargs)</span><span class="ansi40">                                                        </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/basesheet.py", line 76, in execCommand2 </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> exec(code, vdglobals, LazyChainMap(vd, self))</span><span class="ansi40">                                       </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "addcol-expr", line 1, in &lt;module&gt;</span><span class="ansi40">                                             </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> 'VisiData: a curses interface for exploring and arranging tabular data'             </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/column.py", line 544, in __init__       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> self.expr = expr or name</span><span class="ansi40">                                                            </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "lib/python3.10/site-packages/visidata/column.py", line 570, in expr           </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> self.compiledExpr = compile(expr, '&lt;expr&gt;', 'eval') if expr else None</span><span class="ansi40">               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> File "&lt;expr&gt;", line 1</span><span class="ansi40">                                                               </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> (                  </span><span class="ansi40">                                                                 </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi37 ansi40"> ^                  </span><span class="ansi40">                                                                 </span><span class="ansi38-246 ansi40">║</span><span class="ansi40">              
+</span><span class="ansi1 inv_background inv40"></span><span class="ansi1 inv37 inv40"> SyntaxError: '(' was never closed                                                   </span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║</span><span class="ansi40">              
+
+
+
+
+</span><span class="ansi4 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">Ctrl+E› errors_recent</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|  </span><span class="ansi48-68">                                     </span><span class="ansi30 ansi48-68"> </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">Shift+G</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">go-bottom</span><span class="ansi30"></span><span class="ansi30 ansi48-68"> </span><span class="ansi48-68">      </span><span class="ansi30 ansi48-68">  17 lines </span>
+</pre>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">You can type <kbd class="kbd docutils literal notranslate">g</kbd> + <kbd class="kbd docutils literal notranslate">Control-e</kbd> to open a sheet listing all general errors you have encountered during your current VisiData session.</p>
+</div>
+</div>
+<div class="section" id="how-to-report-a-bug">
+<h2>How to report a bug<a class="headerlink" href="#how-to-report-a-bug" title="Permalink to this headline">¶</a></h2>
+<p>If you encounter an error that seems to come from a bug within VisiData itself (rather than an invalid command), follow <a class="reference external" href="https://github.com/saulpw/visidata#help-and-support">VisiData’s “Help and Support” instructions</a>. The developers ask that bug reports include a “command log” that reproduces the issue, so that they can investigate it with more precision. The next chapter demonstrates how to do so.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../the-command-log/" class="btn btn-neutral float-right" title="The Command Log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../extending-visidata/" class="btn btn-neutral float-left" title="Extending VisiData With Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

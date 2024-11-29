@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/config;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "system" "-o" "w" "-f" "internal" "-k" "modulelist" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Isaiah 11:6" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "KJV" "-o" "w" "-f" "internal" "-k" "Revelation of John 4" "#" "<==" "in-pen"

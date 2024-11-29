@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+f filter-with-fzf

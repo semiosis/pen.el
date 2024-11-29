@@ -1,6 +1,7 @@
 #!/usr/bin/env bb
 
-(ns utils.fzf)
+(ns utils.fzf
+  (:require [utils.common :as uc]))
 
 (require '[babashka.process :as p])
 
@@ -22,4 +23,5 @@
 
 ;; TODO Make it so it waits
 
-(print (sps-fzf (slurp *in*)))
+(when (uc/invoked-as-script-p)
+  (print (sps-fzf (slurp *in*))))

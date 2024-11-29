@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+re="$1"
+
+python2 -c "import re,sys; print '\n'.join(re.findall($(aqf "$re"), sys.stdin.read()))" 

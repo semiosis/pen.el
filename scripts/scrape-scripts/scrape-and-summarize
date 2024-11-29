@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+url="$1"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+pager() {
+    if is_tty; then
+        vs $@
+    else
+        cat
+    fi
+}
+
+{
+    if test -f "$url"; then
+        ci -E "scrape-and-summarize.py $(aqf "$url") | ttp"
+    else
+        ci -E "scrape-and-summarize.py $(aqf "$url") | ttp"
+    fi
+} | pager

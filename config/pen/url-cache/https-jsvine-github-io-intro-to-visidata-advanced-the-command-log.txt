@@ -1,0 +1,438 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 7250
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Fri, 08 Mar 2024 20:09:00 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"65eb705c-e0b9"
+expires: Wed, 27 Nov 2024 03:18:39 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 97ED:2E6879:3CDB12:40128E:67468D36
+Accept-Ranges: bytes
+Date: Wed, 27 Nov 2024 03:08:52 GMT
+Via: 1.1 varnish
+Age: 13
+X-Served-By: cache-chc950024-CHC
+X-Cache: HIT
+X-Cache-Hits: 2
+X-Timer: S1732676933.611557,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: de0f3131c0f2715f379170ad6ce601a68047fea7
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Command Log &mdash; An Introduction to VisiData</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/advanced/the-command-log.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="High-Flying Birds" href="../../practical/high-flying-birds/" />
+    <link rel="prev" title="Debugging VisiData" href="../debugging-visidata/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> An Introduction to VisiData
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../">About This Tutorial</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Big Picture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/what-is-visidata/">What Is VisiData?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/installation/">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../the-big-picture/visidata-in-60-seconds/">VisiData In 60 Seconds</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basic Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/getting-out-of-trouble/">Getting Out of Trouble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/opening-files/">Opening Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/navigating-visidata/">Navigating VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-sheets/">Understanding Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-rows/">Understanding Rows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/understanding-columns/">Understanding Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/sorting-and-filtering/">Sorting and Filtering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/summarizing-data/">Summarizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/working-with-excel/">Working With Excel Spreadsheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/saving-sheets/">Saving Sheets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Intermediate Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/creating-new-columns/">Creating New Columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/joining-sheets/">Joining Sheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/reshaping-data/">Reshaping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-cells/">Working With Large Cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intermediate/large-files/">Working With Large Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced Usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuring-visidata/">Configuring VisiData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending-visidata/">Extending VisiData With Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debugging-visidata/">Debugging VisiData</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Command Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-the-command-log">Viewing the command log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-the-command-log">Saving the command log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replaying-the-full-command-log">Replaying the full command log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sharing-command-logs-on-github">Sharing command logs on GitHub</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Practical Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/high-flying-birds/">High-Flying Birds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practical/distinctive-birds/">Distinctive Birds</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">An Introduction to VisiData</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>The Command Log</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-command-log">
+<h1>The Command Log<a class="headerlink" href="#the-command-log" title="Permalink to this headline">¶</a></h1>
+<p>As you use VisiData, it generates a temporary log of every modifying command you’ve run. This “command log” can assist you with a few things:</p>
+<ul class="simple">
+<li>Seeing what you’ve done during a VisiData session</li>
+<li>Saving that history (so that you can use it later or share it with others)</li>
+<li>Replaying those commands</li>
+</ul>
+<p>This chapter walks you through each of these steps.</p>
+<div class="section" id="viewing-the-command-log">
+<h2>Viewing the command log<a class="headerlink" href="#viewing-the-command-log" title="Permalink to this headline">¶</a></h2>
+<p>From anywhere within VisiData, you can press <kbd class="kbd docutils literal notranslate">D</kbd> to view the command log relevant to your current sheet. It ignores actions you may have taken outside of the current sheet’s direct lineage. Essentially, it answers the question: What steps did I take to get here?</p>
+<p>Let’s start with a simple example, following these steps:</p>
+<ul class="simple">
+<li>Initiate a fresh VisiData session with <code class="docutils literal notranslate"><span class="pre">vd</span> <span class="pre">faa-wildlife-strikes.csv</span></code></li>
+<li>Rename the sheet to <code class="docutils literal notranslate"><span class="pre">strikes</span></code>: Press <kbd class="kbd docutils literal notranslate">Space</kbd> to raise the type-a-command prompt, type <code class="docutils literal notranslate"><span class="pre">rename-sheet</span></code>, press <kbd class="kbd docutils literal notranslate">Enter</kbd>, and type <code class="docutils literal notranslate"><span class="pre">strikes</span></code>, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd> again</li>
+<li>Navigate to the <code class="docutils literal notranslate"><span class="pre">AIRPORT</span></code> column</li>
+<li>Press <kbd class="kbd docutils literal notranslate">F</kbd> to generate a frequency sheet of the <code class="docutils literal notranslate"><span class="pre">AIRPORT</span></code> columns</li>
+<li>Navigate to the sixth row, and press <kbd class="kbd docutils literal notranslate">s</kbd> to select it</li>
+</ul>
+<p>You should see something like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">↓count♯</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> percent%</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> histogram                             ~</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UNKNOWN            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  8424 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">   11.47 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DENVER INTL AIRPORT</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2756 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.75 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■■■</span><span class="ansi40">                           </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DALLAS/FORT WORTH …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2392 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.26 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■</span><span class="ansi40">                             </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> CHICAGO O'HARE INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1583 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.16 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■</span><span class="ansi40">                                </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> JOHN F KENNEDY INTL</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1302 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.77 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi38-220 ansi40"></span><span class="ansi38-220">•</span><span class="ansi1 ansi38-220"></span><span class="ansi1 ansi38-215"></span><span class="ansi1 ansi38-215 ansi40">MEMPHIS INTL       </span><span class="ansi38-215"></span><span class="ansi38-215 ansi40">║  1217 │    1.66 │ ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-215 ansi40">║
+</span><span class="ansi1 inv38-215 inv40"></span><span class="ansi1 inv38-81 inv40"> SALT LAKE CITY INTL</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║  1179 │    1.61 │ ■■■■■                                  ║
+</span><span class="ansi1"></span><span class="ansi1 ansi38-81"></span><span class="ansi1 ansi38-81 ansi40"> PHILADELPHIA INTL  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1131 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.54 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ORLANDO INTL       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1026 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.40 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SACRAMENTO INTL    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1021 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.39 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> LA GUARDIA ARPT    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   974 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.33 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> CHARLOTTE/DOUGLAS …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   960 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.31 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> NEWARK LIBERTY INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   917 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.25 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> LOUISVILLE INTL AR…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   841 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.15 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> AUSTIN-BERGSTROM I…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   817 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.11 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">                                   </span><span class="ansi37 ansi40"> </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> LOUIE ARMSTRONG NE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   809 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.10 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">                                    </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> KANSAS CITY INTL   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   807 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.10 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■  </span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> HARTSFIELD - JACKS…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   775 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.06 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■ </span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   746 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.02 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">            </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">┌─────────────────────────────|</span><span class="ansi30 ansi43"> statuses </span><span class="ansi30 ansi48-114">|─┐
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> DETROIT METRO WAYN…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   734 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■     </span><span class="ansi40">       </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ selected 1217 rows</span><span class="ansi48-114">                       </span><span class="ansi30 ansi48-114">│
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> BALTIMORE/WASH INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   691 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.94 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">            </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">└──────────────────────────────────────────┘
+</span><span class="ansi4 ansi30 ansi48-114"></span><span class="ansi4 ansi30 ansi48-68">2› strikes_AIRPORT_freq</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                                  </span><span class="ansi30 ansi48-68">      </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">s</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">select-row</span><span class="ansi30"></span><span class="ansi30 ansi48-68">       1512 bins  </span><span class="ansi4 ansi30 ansi48-68"></span><span class="ansi4 ansi38-215 ansi48-68">•1</span><span class="ansi30"></span><span class="ansi30 ansi48-68"> </span>
+</pre>
+</div>
+<p>Now press <kbd class="kbd docutils literal notranslate">D</kbd> to open the command log for this sheet:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> sheet              </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> col     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> row            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> longname     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> input              </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> keystrokes </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> …
+</span><span class="ansi1 inv_background inv_foreground"></span><span class="ansi1 inv37 inv_foreground"></span><span class="ansi1 inv37 inv40">                   </span><span class="ansi1 inv38-226 inv40">⌀</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│        </span><span class="inv38-226 inv40">⌀</span><span class="inv37 inv40">│               </span><span class="inv38-226 inv40">⌀</span><span class="inv37 inv40">│ open-file    │ faa-wildlife-strik…│ o          │  </span><span class="inv38-226 inv40">⌀
+</span><span class="ansi1"></span><span class="ansi1 ansi37"></span><span class="ansi1 ansi37 ansi40"> faa-wildlife-strik…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> rename-sheet </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> strikes</span><span class="ansi40">        </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">           </span><span class="ansi38-226 ansi40">⌀</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> R
+</span><span class="ansi1 ansi37 ansi40"> strikes            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AIRPORT </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> freq-col     </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Shift+F    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> o
+</span><span class="ansi1 ansi37 ansi40"> strikes_AIRPORT_fr…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> キMEMPHIS INTL </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> select-row   </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> s</span><span class="ansi40">          </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span><span class="ansi4 ansi37 ansi40"></span><span class="ansi4 ansi30 ansi40"></span><span class="ansi4 ansi30 ansi48-68">Shift+D› strikes_AIRPORT_freq_cmdlog</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                   </span><span class="ansi30 ansi48-68">     </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">Shift+D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">             4 logged commands </span>
+</pre>
+</div>
+<p>Two things you’ll see that you might not have expected:</p>
+<ul class="simple">
+<li>The command to open <code class="docutils literal notranslate"><span class="pre">faa-wildlife-strikes.csv</span></code> appears in the log, with “longname” <code class="docutils literal notranslate"><span class="pre">open-file</span></code>. Passing filenames to VisiData on the command line is equivalent to opening them <em>within</em> the program via <code class="docutils literal notranslate"><span class="pre">open-file</span></code> or keyboard shortcut <kbd class="kbd docutils literal notranslate">o</kbd>.</li>
+<li>Navigational commands do <em>not</em> appear in the command log. The reason: Navigating around a sheet doesn’t alter its contents. For the frequency sheet (<code class="docutils literal notranslate"><span class="pre">freq-col</span></code>) and row-selection (<code class="docutils literal notranslate"><span class="pre">select-row</span></code>) commands, VisiData has captured the necessary context via the log’s <code class="docutils literal notranslate"><span class="pre">col</span></code> and <code class="docutils literal notranslate"><span class="pre">row</span></code> columns.</li>
+</ul>
+</div>
+<div class="section" id="saving-the-command-log">
+<h2>Saving the command log<a class="headerlink" href="#saving-the-command-log" title="Permalink to this headline">¶</a></h2>
+<p>The command log behaves <em>virtually</em> the same as any other sheet in VisiData. That means you can sort, filter, and otherwise edit its rows, columns, and cells. That also means you can save just like you’d save any other sheet, with <kbd class="kbd docutils literal notranslate">Control-s</kbd>. Doing so with the example above should raise a prompt that looks like this:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv37 inv48-68"></span><span class="ansi1 ansi4 inv37 inv40"> sheet              </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> col     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> row            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> longname     </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> input              </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> keystrokes </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> …
+</span><span class="ansi1 inv_background inv_foreground"></span><span class="ansi1 inv37 inv_foreground"></span><span class="ansi1 inv37 inv40">                   </span><span class="ansi1 inv38-226 inv40">⌀</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">│        </span><span class="inv38-226 inv40">⌀</span><span class="inv37 inv40">│               </span><span class="inv38-226 inv40">⌀</span><span class="inv37 inv40">│ open-file    │ faa-wildlife-strik…│ o          │  </span><span class="inv38-226 inv40">⌀
+</span><span class="ansi1"></span><span class="ansi1 ansi37"></span><span class="ansi1 ansi37 ansi40"> faa-wildlife-strik…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> rename-sheet </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> strikes</span><span class="ansi40">        </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">           </span><span class="ansi38-226 ansi40">⌀</span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> R
+</span><span class="ansi1 ansi37 ansi40"> strikes            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> AIRPORT </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> freq-col     </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> Shift+F    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> o
+</span><span class="ansi1 ansi37 ansi40"> strikes_AIRPORT_fr…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">         </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> キMEMPHIS INTL </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> select-row   </span><span class="ansi38-246 ansi40">│</span><span class="ansi40">                </span><span class="ansi37 ansi40">    </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> s</span><span class="ansi40">          </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span><span class="ansi40"></span>save to: <span class="ansi38-233"></span><span class="ansi38-233 ansi48-110">strikes_AIRPORT_freq_cmdlog.vdj           </span><span class="ansi48-110"></span><span class="ansi48-68"> </span><span class="ansi1 ansi48-68"></span><span class="ansi1 ansi37 ansi48-68"></span><span class="ansi1 ansi37 ansi48-237">Ctrl+S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">   </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">save-sheet</span><span class="ansi30"></span><span class="ansi30 ansi48-68">          4 logged commands </span>
+</pre>
+</div>
+<p>As you’ll see, VisiData suggests its own <code class="docutils literal notranslate"><span class="pre">.vd</span></code> file extension. That helps distinguish command logs from other files, but it’s not necessary. It’s just a tab-separated-values file, and you can save it with the <code class="docutils literal notranslate"><span class="pre">.tsv</span></code> extension if you prefer. For the sake of the subsequent steps in this tutorial, let’s save it as <code class="docutils literal notranslate"><span class="pre">example-cmdlog.vd</span></code>, in the same directory as <code class="docutils literal notranslate"><span class="pre">faa-wildlife-strikes.csv</span></code>.</p>
+</div>
+<div class="section" id="replaying-the-full-command-log">
+<h2>Replaying the full command log<a class="headerlink" href="#replaying-the-full-command-log" title="Permalink to this headline">¶</a></h2>
+<p>To fully replay the <code class="docutils literal notranslate"><span class="pre">example-cmdlog.vd</span></code> log we saved in the section above, run the following command from your computer’s terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd --play example-cmdlog.vd
+</pre></div>
+</div>
+<p>Note that, this time, we don’t point VisiData to the dataset itself, since that information (the path to the dataset) is now specified within the command log. If the replay worked, you should see VisiData advance through each step (some more quickly than others), ultimately arriving at the result you previously obtained manually:</p>
+<div class='ansi2html'>
+<pre>
+<span class="ansi30"></span><span class="ansi30 ansi48-68">  </span><span class="ansi4 ansi30 ansi48-68">F</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ile  </span><span class="ansi4 ansi30 ansi48-68">E</span><span class="ansi30"></span><span class="ansi30 ansi48-68">dit  </span><span class="ansi4 ansi30 ansi48-68">V</span><span class="ansi30"></span><span class="ansi30 ansi48-68">iew  </span><span class="ansi4 ansi30 ansi48-68">C</span><span class="ansi30"></span><span class="ansi30 ansi48-68">olumn  </span><span class="ansi4 ansi30 ansi48-68">R</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ow  </span><span class="ansi4 ansi30 ansi48-68">D</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ata  </span><span class="ansi4 ansi30 ansi48-68">P</span><span class="ansi30"></span><span class="ansi30 ansi48-68">lot  </span><span class="ansi4 ansi30 ansi48-68">S</span><span class="ansi30"></span><span class="ansi30 ansi48-68">ystem  </span><span class="ansi4 ansi30 ansi48-68">H</span><span class="ansi30"></span><span class="ansi30 ansi48-68">elp     | VisiData 3.0.2 | Alt+H for help men
+</span><span class="ansi1 ansi4 inv30 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv48-68"></span><span class="ansi1 ansi4 inv38-81 inv40"> AIRPORT            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40">↓count♯</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> percent%</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">│</span><span class="ansi1 ansi4 ansi38-246 ansi40"></span><span class="ansi1 ansi4 ansi37 ansi40"> histogram                             ~</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi40">                   
+</span><span class="ansi1 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> UNKNOWN            </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  8424 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">   11.47 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DENVER INTL AIRPORT</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2756 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.75 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■■■</span><span class="ansi40">                           </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> DALLAS/FORT WORTH …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  2392 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    3.26 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■■■■</span><span class="ansi40">                             </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> CHICAGO O'HARE INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1583 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    2.16 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■■■</span><span class="ansi40">                                </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> JOHN F KENNEDY INTL</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1302 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.77 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi38-220 ansi40"></span><span class="ansi38-220">•</span><span class="ansi1 ansi38-220"></span><span class="ansi1 ansi38-215"></span><span class="ansi1 ansi38-215 ansi40">MEMPHIS INTL       </span><span class="ansi38-215"></span><span class="ansi38-215 ansi40">║  1217 │    1.66 │ ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-215 ansi40">║
+</span><span class="ansi1 inv38-215 inv40"></span><span class="ansi1 inv38-81 inv40"> SALT LAKE CITY INTL</span><span class="inv_background inv_foreground"></span><span class="inv37 inv_foreground"></span><span class="inv37 inv40">║  1179 │    1.61 │ ■■■■■                                  ║
+</span><span class="ansi1"></span><span class="ansi1 ansi38-81"></span><span class="ansi1 ansi38-81 ansi40"> PHILADELPHIA INTL  </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1131 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.54 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■■</span><span class="ansi40">                                  </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> ORLANDO INTL       </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1026 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.40 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> SACRAMENTO INTL    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">  1021 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.39 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">                                   </span><span class="ansi38-246 ansi40">║
+</span><span class="ansi1 ansi38-246 ansi40"></span><span class="ansi1 ansi38-81 ansi40"> LA GUARDIA ARPT    </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   974 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.33 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">         </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">┌───────────────────────────────|</span><span class="ansi30 ansi43"> statuses </span><span class="ansi30 ansi48-114">|─┐
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> CHARLOTTE/DOUGLAS …</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   960 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.31 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">         </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ saul.pw/VisiData v3.0.2</span><span class="ansi48-114">                    </span><span class="ansi30 ansi48-114">│
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> NEWARK LIBERTY INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   917 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.25 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■■</span><span class="ansi40">         </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ opening example-cmdlog.vdj as vdj          │
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> LOUISVILLE INTL AR…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   841 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.15 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">          </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ Was I the same when I got up this morning?</span><span class="ansi48-114"> </span><span class="ansi30 ansi48-114">│
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> AUSTIN-BERGSTROM I…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   817 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.11 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■          </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ opening faa-wildlife-strikes.csv as csv    │
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> LOUIE ARMSTRONG NE…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   809 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.10 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">          </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ Rename current sheet</span><span class="ansi48-114">                       </span><span class="ansi30 ansi48-114">│
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> KANSAS CITY INTL   </span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   807 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.10 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■    </span><span class="ansi40">      </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ open Frequency Table grouped on current</span><span class="ansi48-114">    </span><span class="ansi30 ansi48-114">│
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> HARTSFIELD - JACKS…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   775 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.06 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■   </span><span class="ansi40">       </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ column, with aggregations of other columns │
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> GEORGE BUSH INTERC…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   746 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.02 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">          </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ select current row</span><span class="ansi48-114">                     </span><span class="ansi30 ansi48-114">    │
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> DETROIT METRO WAYN…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   734 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    1.00 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■        </span><span class="ansi40">  </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">│ selected 1217 rows</span><span class="ansi48-114">                        </span><span class="ansi30 ansi48-114"> │
+</span><span class="ansi1 ansi30 ansi48-114"></span><span class="ansi1 ansi38-81 ansi48-114"></span><span class="ansi1 ansi38-81 ansi40"> BALTIMORE/WASH INT…</span><span class="ansi38-246"></span><span class="ansi38-246 ansi40">║</span><span class="ansi37 ansi40">   691 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40">    0.94 </span><span class="ansi38-246 ansi40">│</span><span class="ansi37 ansi40"> ■■■</span><span class="ansi40">          </span><span class="ansi30 ansi40"></span><span class="ansi30 ansi48-114">└────────────────────────────────────────────┘
+</span><span class="ansi4 ansi30 ansi48-114"></span><span class="ansi4 ansi30 ansi48-68">3› strikes_AIRPORT_freq</span><span class="ansi30"></span><span class="ansi30 ansi48-68">|</span><span class="ansi48-68">                               </span><span class="ansi30 ansi48-68">             </span><span class="ansi1 ansi30 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-68"></span><span class="ansi1 ansi38-52 ansi48-114">select-row</span><span class="ansi30"></span><span class="ansi30 ansi48-68">       1512 bins  </span><span class="ansi4 ansi30 ansi48-68"></span><span class="ansi4 ansi38-215 ansi48-68">•1</span><span class="ansi30"></span><span class="ansi30 ansi48-68"> </span>
+</pre>
+</div>
+<p>You can adjust the replay behavior via various command line arguments, such as:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd --play example-cmdlog.vd --replay-wait <span class="m">2</span>
+</pre></div>
+</div>
+<p>… which will pause two seconds between each of the logged steps. And:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>vd --play example-cmdlog.vd --batch --output cmdlog-results.csv
+</pre></div>
+</div>
+<p>… which will replay the command log in “batch” mode (displaying status messages but not the full VisiData interface) and, when complete, will save the final sheet to <code class="docutils literal notranslate"><span class="pre">cmdlog-results.csv</span></code>.</p>
+</div>
+<div class="section" id="sharing-command-logs-on-github">
+<h2>Sharing command logs on GitHub<a class="headerlink" href="#sharing-command-logs-on-github" title="Permalink to this headline">¶</a></h2>
+<p>Command logs can help you demonstrate specific VisiData behavior to others, especially if that behavior involves more than a few steps. You’ll want to do this, for instance, when filing potential bug reports <a class="reference external" href="https://github.com/saulpw/visidata/#help-and-support">via VisiData’s GitHub repository</a>. Some advice for doing so:</p>
+<ul class="simple">
+<li>When attaching a command log to a GitHub issue or comment, you’ll need to change the file extension, since GitHub will reject fileames ending in <code class="docutils literal notranslate"><span class="pre">.vd</span></code>. The developers recommend appending <code class="docutils literal notranslate"><span class="pre">.txt</span></code> to the filename; in the example above, that would be <code class="docutils literal notranslate"><span class="pre">example-cmdlog.vd.txt</span></code>.</li>
+<li>If replaying the command log requires a specific dataset, attach that dataset in the same message and aim to make it as simple as possible. Alternatively, you can use a dataset from VisiData’s <a class="reference external" href="https://github.com/saulpw/visidata/tree/stable/sample_data">sample_data directory</a> (for instance, as done in <a class="reference external" href="https://github.com/saulpw/visidata/issues/1315">this issue</a>).</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../practical/high-flying-birds/" class="btn btn-neutral float-right" title="High-Flying Birds" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../debugging-visidata/" class="btn btn-neutral float-left" title="Debugging VisiData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018–2021, Jeremy Singer-Vine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

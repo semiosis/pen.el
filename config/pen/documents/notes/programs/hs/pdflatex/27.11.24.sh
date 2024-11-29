@@ -1,0 +1,6 @@
+cd /tmp/scribble-tex-to-pdf-17326963241732696324796;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"
+cd /tmp/scribble-tex-to-pdf-17326963241732696324796;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"
+cd /tmp/scribble-tex-to-pdf-17326963331732696333129;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"
+cd /tmp/scribble-tex-to-pdf-17326963331732696333129;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"
+cd /tmp/scribble-tex-to-pdf-17326963641732696364255;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"
+cd /tmp/scribble-tex-to-pdf-17326963641732696364255;  "pdflatex" "-interaction=batchmode" "sample-racket-language.tex" "#" "<==" "scribble"

@@ -1,0 +1,3 @@
+#!/usr/bin/env -S pvd -p
+{"longname": "open-file", "input": ".", "keystrokes": "o"}
+{"sheet": ".", "col": "ext", "row": "", "longname": "freq-col", "input": "", "keystrokes": "Shift+F", "comment": "open Frequency Table grouped on current column, with aggregations of other columns"}

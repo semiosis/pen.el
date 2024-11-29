@@ -9,11 +9,14 @@
 
 (defun pen-lispy-paste ()
   (interactive)
+
+  ;; Let the default remain as normal paste without mnm.
+  ;; It gets annoying especially with ~
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (call-interactively 'lispy-yank)
-    (cl-letf (((symbol-function 'lispy--maybe-safe-current-kill)
-               'mnm-xc-get))
-      (call-interactively 'lispy-yank))
+      (cl-letf (((symbol-function 'lispy--maybe-safe-current-kill)
+                 'mnm-xc-get))
+        (call-interactively 'lispy-yank))
+    (call-interactively 'lispy-yank)
 
     ;; (progn
     ;;   (xc (pen-mnm (xc nil t t)) t t)

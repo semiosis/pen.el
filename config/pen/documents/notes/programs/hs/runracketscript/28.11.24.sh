@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "runracketscript" "/root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "runracketscript" "/root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "runracketscript" "/root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt" "--excited" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "runracketscript" "/root/.emacs.d/host/pen.el/scripts/racket-scripts/use-racket-language.rkt" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "runracketscript" "/root/.emacs.d/host/pen.el/scripts/racket-scripts/use-racket-language.rkt" "#" "<==" "zsh"

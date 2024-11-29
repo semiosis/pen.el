@@ -302,6 +302,8 @@ if test -z "$fp"; then
     trycr tests.py
     trycr configure.ac
     trycr Cargo.toml
+    trycr info.rkt
+    trycr test.rkt
     trycr Makefile.toml
     trycr requirements.txt
     trycr DotNetCoreKoans.sln
@@ -658,6 +660,25 @@ case "$fnspec" in
             # cargo build --release
             # cargo run --release --bin wezterm -- start
         fi
+        pen-pak -k c
+        exit 0
+    }
+    ;;
+
+    info.rkt) {
+        cd "$dn"
+        set -xv
+        raco pkg install
+        pen-pak -k c
+        exit 0
+    }
+    ;;
+
+    test.rkt) {
+        cd "$dn"
+        set -xv
+        dnbn="$(basename -- "$dn")"
+        raco test -x -p "$dnbn"
         pen-pak -k c
         exit 0
     }

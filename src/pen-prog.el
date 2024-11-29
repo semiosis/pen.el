@@ -124,6 +124,7 @@
 (define-key prog-mode-map (kbd "M-=") 'pen-handle-repls)
 (define-key dired-mode-map (kbd "M-=") 'pen-handle-repls)
 (define-key global-map (kbd "s-m") 'handle-copylastresult)
+(define-key prog-mode-map (kbd "s-r") 'handle-readme)
 (define-key global-map (kbd "M-=") 'pen-handle-repls)
 (define-key prog-mode-map (kbd "M-C") 'handle-debug)
 (define-key global-map (kbd "H-RET") 'handle-run)

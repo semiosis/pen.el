@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if test -f "$1"; then
+    fp="$1"
+    shift
+else
+    exit
+fi
+
+(
+exec 2>/dev/null
+pvd --play "$fp" --batch --output /tmp/pvd_out.txt
+cat /tmp/pvd_out.txt
+) | pavs

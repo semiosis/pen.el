@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# $SCRIPTS/scrape-npm-install
+# $SCRIPTS/scrape-go-get
+# $SCRIPTS/scrape-cargo-install
+# $SCRIPTS/scrape-docker-pull
+# $SCRIPTS/scrape-stack-install
+
+# filter-from-readme scrape-go-install
+# filter-from-readme scrape-docker-install
+
+    # scrape-from-readme "npm install [a-zA-Z_0-9-]+.*"
+
+# | pager -E "fzf -1"
+{
+    filter-from-readme scrape-npm-install
+    filter-from-readme scrape-cargo-install
+    filter-from-readme scrape-stack-install
+    # scrape-from-readme "python -m pip install \\."
+    scrape-from-readme "pip install [a-zA-Z_0-9-]+"
+    scrape-from-readme "\\./gradlew :[:a-zA-Z_0-9-]+"
+    scrape-from-readme "gradle [:a-zA-Z_0-9-]+"
+    scrape-from-readme "bazel build [^ ]+"
+    scrape-from-readme "\\bgo get (-u )?[^ ]+"
+} | uniqnosort | {
+    sed 's/pip install/py i/'
+} | pavs

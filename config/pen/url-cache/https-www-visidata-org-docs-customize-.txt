@@ -1,0 +1,270 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 6
+Cache-Control: public,max-age=0,must-revalidate
+Cache-Status: "Netlify Edge"; hit
+Content-Length: 6121
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 27 Nov 2024 04:04:46 GMT
+Etag: "0838f78a8d4c17141682ef3d20f88d09-ssl-df"
+Server: Netlify
+Strict-Transport-Security: max-age=31536000
+Vary: Accept-Encoding
+X-Nf-Request-Id: 01JDNWNZVR71ER9FQ79P5XWD6T
+
+<!doctype html>
+<html lang="en" class="min-h-full antialiased">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizing VisiData | Docs | VisiData</title>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css?=1728960390245">
+    <link rel="stylesheet" type="text/css" href="/css/inconsolata.css?=1728960390245">
+    <link rel="stylesheet" type="text/css" href="/css/asciinema-player.css?=1728960390245">
+    
+    <script data-goatcounter="https://visidata.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    
+    
+<meta property="og:title" content=" | VisiData">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://www.visidata.org/images/meta/og.jpg">
+<meta property="og:url" content="https://www.visidata.org/docs/customize/">
+<meta property="og:site_name" content="VisiData">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+
+<meta itemprop="name" content=" | VisiData">
+<meta itemprop="description" content="">
+<meta itemprop="image" content="https://www.visidata.org/images/meta/og.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content=" | VisiData">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@VisiData">
+<meta name="twitter:creator" content="@VisiData">
+<meta name="twitter:image:src" content="https://www.visidata.org/images/meta/og.jpg">
+    
+    <link rel="icon" type="image/png" href="/images/icons/favicon.ico">
+    
+    <link rel="canonical" href="https://www.visidata.org/docs/customize/">
+    <link rel="alternate" type="application/rss+xml" title="VisiData Blog Feed" href="https://www.visidata.org/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="VisiData Releases Feed" href="https://www.visidata.org/releases.xml">
+</head>
+
+<body  class="text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <a class="sr-only" href="#main">Skip to content</a>
+    <div id="wrapper" class="flex flex-col relative min-h-screen">
+        
+        <header id="header" class="flex flex-col md:flex-row md:justify-between items-center p-4 md:p-6">
+    <a class="block font-bold text-2xl md:text-3xl hover:text-gray-500" href="/" title="VisiData home">
+    <figure class="w-full md:w-72 filter dark:invert"><picture><source type="image/webp" srcset="/img/s9TnkaZwpa-1000.webp 1000w" sizes="40vw, 60vw, 100vw"><img alt="VisiData logo" loading="lazy" decoding="async" src="/img/s9TnkaZwpa-1000.jpeg" width="1000" height="170"></picture></figure>
+</a>
+    <nav id="nav" class="nav flex mt-5 md:mt-0">
+    <ul class="menu flex items-center flex-wrap justify-center list-reset gap-x-2 gap-y-5">
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="/docs/" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  >Docs</a>
+        </li>
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="/releases/" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  >Releases</a>
+        </li>
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="/pricing/" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  >Pricing</a>
+        </li>
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="/credits/" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  >Credits</a>
+        </li>
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="/blog/" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  >Blog</a>
+        </li>
+        
+        <li class="level-1 md:mr-4 mb-0">
+            <a href="https://github.com/saulpw/visidata" class="link py-2 px-4 rounded-lg border-2 font-bold  hover:border-brand-primary active:text-brand-primary 
+            "  target=&#39;_blank&#39; rel=&#39;noopener&#39;>GitHub</a>
+        </li>
+        
+        <li class="hidden md:block">
+            <a class="button" href="/install/">Install →</a>
+        </li>
+        <li class="md:hidden">
+            <a class="py-2 px-4 rounded-lg border-brand-primary border-2 bg-brand-primary font-bold" href="/install/">Install</a>
+        </li>
+    </ul>
+</nav>
+</header>
+        
+        <div id="container-wide" class="py-10 w-full docs">
+    <div class="flex flex-col md:flex-row justify-between gap-10">
+        <aside class="docsidebar flex flex-col h-full inset-0 w-72 order-last md:order-first p-2 border-2 rounded-xl">
+            <form action="/search/" method="GET">
+                <input class="dark:bg-brand-dark dark:text-white rounded w-full border-2 border-gray-200 focus:border-brand-primary" required placeholder="Search..." type="search" name="q" />
+            </form>
+            
+            
+            <ul><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/">Getting Started</a><ul>
+                    <li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/loading/">Loading data</a></li>
+                    </ul></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/man/">Quick Reference Guide</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/navigate/">Navigation</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/rows/">Rows</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/columns/">Columns</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/macros/">Macros</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/edit/">Editing Contents</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/group/">Grouping data and descriptive statistics</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/crud/">Creating sheets, rows and columns</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/join/">Combining datasets</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/graph/">Drawing graphs</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/shell/">Shell</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/save-restore/">Save and Restore</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/colors/">Customizing VisiData - Colors</a></li><li class="p-2 border-b-2 last:border-0 border-brand-primary">
+                <a class="font-bold" href="/docs/customize/">Customizing VisiData</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/menu/">Command Menus</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/plugins/">Plugins</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/pipes/">Pipes</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/mouse/">Mouse</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/contributing/">Checklists for Contributing to VisiData</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/formats/">Supported Formats</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/freq/">Frequency Table Reference</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/graphics/">Terminal Graphics in VisiData</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/internal_formats/">VisiData Internal Formats</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/move/">How can I move around and search?</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/split/">Split view</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/test/">Contributing Tests</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/usage/">Usage</a></li><li class="p-2 border-b-2 last:border-0 ">
+                <a class="" href="/docs/viewtsv/">viewtsv Annotated</a></li></ul>
+            <a class="button text-center" href="/docs/api/">API Docs →</a>
+        </aside>
+        <article class="w-full flex-auto min-w-0">
+            <h1 class="text-3xl md:text-5xl text-center">Customizing VisiData</h1>
+            <p>For a primer on configuring VisiData through setting options, see <a href="https://jsvine.github.io/intro-to-visidata/advanced/configuring-visidata/">jsvine's tutorial</a>.</p>
+<h2 id="commands">How to configure commands</h2>
+<p>The <strong>.visidatarc</strong> in the user's home directory is plain Python code, and can contain additional commands or key bindings.</p>
+<p>(Alternatively, since v2.9, VisiData has <a href="https://github.com/saulpw/visidata/pull/1420">XDG support</a>. If <code>$XDG_CONFIG_HOME</code> is set and the file <code>"$XDG_CONFIG_HOME"/visidata/config.py</code> exists, this will be loaded as the user's default configuration file.)</p>
+<p>Longnames are names given to executable commands for ease of keystroke remapping. For example, the longname <code>select-row</code> is assigned to commands which select the current row in a sheet. On default, this longname is bound to the keystroke <code>s</code>.</p>
+<p>From within VisiData, type <code>z Ctrl+H</code> to open the <strong>Commands Sheet</strong>. This is a reference for all of the commands available on the current sheet. For a deeper exploration of commands, check out <a href='https://www.visidata.org/docs/api/commands'>API reference manual</a>.</p>
+<h3>Setting/changing keybindings for existing commands</h3>
+<ol>
+<li>Learn the longname for a command. Longnames are usually 2-3 words, separated by hyphens. The first word is usually a verb, and the second usually a noun. When a command is executed, its longname appears in the lower right status, next to its keystroke. Alternatively, you can <code>z Ctrl+H</code> to open the <strong>Commands Sheet</strong> and discover the longname for the command in question.</li>
+</ol>
+<p><img src="/docs/assets/longname.png" alt="longname" /></p>
+<ol>
+<li>a) To create a global keybinding, add <code>bindkey(keystroke, longname)</code> to your <strong>.visidatarc</strong>.</li>
+</ol>
+<p>b) To set the binding for a particular sheet type, add <code>&lt;Sheet&gt;.bindkey(keystroke, longname)</code> to your <strong>.visidatarc</strong>, where <code>&lt;Sheet&gt;</code> is a <strong>SheetType</strong>.</p>
+<pre><code>Warning: bindings defined in a .visidatarc will overwrite default ones.</code></pre>
+<h4>Example: Bind <code>i</code> to edit-cell globally</h4>
+<p>In VisiData, pressing <code>e</code> enters edit mode for the current cell. Seasoned vim users might prefer to press <code>i</code> instead.</p>
+<ol>
+<li>Open <code>~/.visidatarc</code> in an editor.</li>
+<li>Add the line <code>TableSheet.bindkey('i', 'edit-cell')</code> to globally bind the keystroke <code>i</code> to the longname <code>edit-cell</code>.</li>
+<li>Launch VisiData, and press <code>i</code>.</li>
+</ol>
+<h4>Example: Unbind <code>i</code> from addcol-incr globally</h4>
+<p>If the above instructions are followed, a message will pop up that says "<code>i</code> was already bound to <code>addcol-incr</code>.</p>
+<p>To unbind <code>i</code> before binding it:</p>
+<ol>
+<li>Open <code>~/.visidatarc</code> in an editor.</li>
+<li>Add the line <code>TableSheet.unbindkey('i')</code> before any piece of code where it is re-bound.</li>
+<li>Launch VisiData.</li>
+</ol>
+<h3>Creating new commands</h3>
+<p>At minimum, <code>&lt;Sheet&gt;.addCommand</code> requires a longname and execstr.</p>
+<p>For example, to define a new command:</p>
+<pre><code>Sheet.addCommand(&#39;^D&#39;, &#39;scroll-halfpage-down&#39;, &#39;cursorDown(nScreenRows//2); sheet.topRowIndex += nScreenRows//2&#39;)</code></pre>
+<p>Commands and keybindings are set on a particular Sheet Type in the class hierarchy. Use <code>BaseSheet</code> for commands which don't need a sheet at all--these will apply to all sheets. Commands and bindings on more specific sheets will override more generic ones. <code>Sheet</code> is a generic table, <code>ColumnsSheet</code> would be for the columns sheet, <code>FreqTableSheet</code> for frequency tables, and so on.</p>
+<h3 id="aggregators">Adding custom aggregators</h3>
+<p>Aggregators allow you to gather the rows within a single column, and interpret them using descriptive statistics. VisiData comes pre-loaded with a default set like mean, stdev, and sum.</p>
+<p>To add your own custom aggregator <code>name</code>, add the following to your <code>.visidatarc</code>.</p>
+<p>vd.aggregator('name', func, type=float)</p>
+<p>Where <code>func</code> is a function of the form:</p>
+<p><code>def func(list):     return value</code></p>
+<p>The <code>type</code> parameter is optional. It allows you to define the default type of the aggregated column.</p>
+<p>Here is an example, that adds an aggregator for <a href="https://numpy.org/devdocs/reference/generated/numpy.irr.html">numpy's internal rate of return</a> module.</p>
+<p><code>import numpy as np vd.aggregator('irr', np.irr, type=float)</code></p>
+<p><strong>Bonus: How to choose which aggregators are columns within the DescribeSheet?</strong></p>
+<p>Any numeric aggregator can be added!</p>
+<p>Supply a space-separated list of aggregator names to <code>options.describe_aggrs</code> in your .visidatarc.</p>
+<p><code>options.describe_aggrs = 'mean stdev irr'</code></p>
+<h3 id="motd">Turning off motd</h3>
+<p>By default, the first time each day that VisiData is used, it downloads a single small file of startup messages.</p>
+<p>This network request can be turned off by adding <code>options.motd_url=''</code> to your <code>~/.visidatarc</code>.</p>
+<p>If you do decide to turn it off, we encourage you to <a href="https://www.patreon.com/saulpw/posts">donate</a> to <a href="https://github.com/sponsors/saulpw">support VisiData</a>.</p>
+
+        </article>
+    </div>
+</div>
+        
+        
+<div class="my-10 mx-auto text-center px-2">
+    <h2>Corporate Sponsors</h2>
+    
+    
+    <div class="flex flex-col md:flex-row flex-wrap gap-5 mb-5">
+        
+    </div>
+    <a class="button" aria-label="Sponsor @saulpw" target="_blank" rel="noopener" href="https://github.com/sponsors/saulpw?o=esb">
+<span>Sponsor saulpw on Github</span>
+</a>
+</div>
+
+<footer id="footer" class="footer bg-gray-100 dark:bg-gray-700 text-center md:text-left">
+    <div class="footer-inner container m-auto flex flex-col md:flex-row justify-between items-center px-6 py-2">
+        <div class="order-last md:order-first">
+            <p>VisiData © 2017 - 2024 <a href="https://www.saul.pw/" target="_blank" rel="noopener">Saul Pwanson</a>.</p>
+            <p>Licensed under <a href="https://github.com/saulpw/visidata/blob/stable/LICENSE.gpl3" target="_blank" rel="noopener">GPLv3.</a></p>
+            <p><a href="/privacy">Privacy Policy</a></p>
+        </div>
+        <div class="social_links">
+            <p><a href="https://fosstodon.org/@visidata" target="_blank" rel="noopener">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="currentColor" class="inline mr-2 mb-1" viewBox="0 0 216.4144 232.00976">
+                            <path fill="currentColor" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915"/>
+                            <path fill="#fff" d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675"/>
+                        </svg>
+                    </span>
+                    @VisiData@fosstodon.org</a></p>
+            <p><a href="https://twitter.com/visidata" target="_blank" rel="noopener">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="inline mr-2 mb-1" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </span>
+                    @VisiData on Twitter</a></p>
+            <p><a href="https://github.com/saulpw/visidata" target="_blank" rel="noopener">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="inline mr-2 mb-1" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </span>
+                    VisiData source code</a></p>
+            <p><a href="irc://irc.libera.chat/visidata">
+                    #visidata chat on irc.libera.chat</a></p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <script src="https://unpkg.com/medium-zoom@1"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mediumZoom('.post img');
+        });
+    </script>
+</body>
+
+</html>

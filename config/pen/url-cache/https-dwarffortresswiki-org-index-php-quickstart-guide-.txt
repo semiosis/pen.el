@@ -1,0 +1,246 @@
+HTTP/1.1 404 Not Found
+Server: nginx/1.22.1
+Date: Thu, 28 Nov 2024 08:03:04 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+Content-language: en
+X-Frame-Options: DENY
+Vary: Accept-Encoding, Cookie
+Cache-Control: s-maxage=18000, must-revalidate, max-age=0
+X-Request-Id: 0f4bf9f25b21736f919699e8
+X-Varnish: 50025853 48948799
+Age: 2
+Via: 1.1 dfwiki-web (Varnish/7.2)
+
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Quickstart guide/ - Dwarf Fortress Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!0,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0f4bf9f25b21736f919699e8","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quickstart_guide/","wgTitle":"Quickstart guide/","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Quickstart_guide/","wgRelevantArticleId":0,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionCreate":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":
+"loading","skins.vector.styles.legacy":"ready","ext.DFDiagram":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","skins.vector.legacy.js","ext.QualityRatings","ext.DFDiagram.canvas"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.DFDiagram%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.11"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Dwarf Fortress Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//dwarffortresswiki.org/api.php?action=rsd"/>
+<link rel="license" href="/index.php/Dwarf_Fortress_Wiki:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="Dwarf Fortress Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Quickstart_guide rootpage-Quickstart_guide skin-vector action-view skin-vector-legacy minerva--history-page-action-enabled">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><div id="localNotice" lang="en" dir="ltr"><div style="text-align:center;"> 
+<div class="" style="position: relative; overflow:auto; color: black; background-color: #f3fff0; border: 1px solid #008000; font-size: 90%; margin: 1em 0em 0em; text-align: center; width: auto; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px;">
+<div style="color: #004000; border-bottom: 1px solid #008000; font-weight:bold; background-color: #97ce87; padding-left: 1em; padding-right: 1em; padding-top: 1px; text-align: center; box-shadow: 2px 2px 12px 0px #97ce87;"> <b>v50 Steam/Premium information for editors</b>
+<b></b></div>
+<div class="" style="padding: 2px;">
+<div style="text-align:left">
+<ul><li>v50 information can now be added to pages in the <b>main namespace</b>. v0.47 information can still be found in the <b>DF2014</b> namespace. <a href="/index.php/Dwarf_Fortress_Wiki:V" class="mw-redirect" title="Dwarf Fortress Wiki:V">See here</a> for more details on the new versioning policy.</li>
+<li><a href="/index.php/Dwarf_Fortress_Wiki_talk:Versions#v50_migration" title="Dwarf Fortress Wiki talk:Versions">Use this page</a> to report any issues related to the migration.</li></ul>
+</div>
+<div class="center" style="width:auto; margin-left:auto; margin-right:auto;"><small class="plainlinks">This notice may be cached&#8212;the current version can be found <a rel="nofollow" class="external text" href="https://dwarffortresswiki.org/index.php/MediaWiki:Sitenotice">here</a>.</small></div>
+</div>
+</div></div></div></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Quickstart guide/</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Dwarf Fortress Wiki</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/index.php/Quickstart_guide" title="Quickstart guide">Quickstart guide</a></span></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="noarticletext mw-content-ltr" dir="ltr" lang="en">
+<table class="metadata plainlinks ambox ambox-content" style="" role="presentation">
+<tbody><tr><td class="mbox-image"><div style="width: 52px;"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Ambox_content.png" decoding="async" width="40" height="40" /></div></td><td class="mbox-text" style=""><span class="mbox-text-span">There is currently no text in this page. You can <a href="/index.php/Special:Search/Quickstart_guide/" title="Special:Search/Quickstart guide/">search for this page title</a> in other pages, or <span class="plainlinks"><a rel="nofollow" class="external text" href="//dwarffortresswiki.org/index.php?title=Special:Log&amp;page=Quickstart_guide/">search the related logs</a></span>, but you do not have permission to create this page.<br />
+If you were trying to upload a file, you will need to make at least 3 edits first.<span class="hide-when-compact">  </span><span class="hide-when-compact"> </span></span></td></tr></tbody></table>
+<table class="metadata plainlinks ambox ambox-notice" style="" role="presentation">
+<tbody><tr><td class="mbox-image"><div style="width: 52px;"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Ambox_notice.png" decoding="async" width="40" height="40" /></div></td><td class="mbox-text" style=""><span class="mbox-text-span">If you want to create a page, you can make a <a href="/index.php/Dwarf_Fortress_Wiki:PR" class="mw-redirect" title="Dwarf Fortress Wiki:PR">page request</a>. After making 3 edits while logged in, you can create pages without restrictions.<br />
+If you are positive that this is the correct page name (see <a href="/index.php/Dwarf_Fortress_Wiki:Versions" title="Dwarf Fortress Wiki:Versions">DF:Versions</a> for guidelines), you can use <a href="/index.php/Special:CreatePage/Quickstart_guide/" title="Special:CreatePage/Quickstart guide/">this tool</a> to create this page.<span class="hide-when-compact">  </span><span class="hide-when-compact"> </span></span></td></tr></tbody></table>
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="https://dwarffortresswiki.org/index.php/Quickstart_guide/">https://dwarffortresswiki.org/index.php/Quickstart_guide/</a>"</div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/index.php/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/index.php/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Quickstart+guide%2F" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Quickstart+guide%2F" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected new"><a href="/index.php?title=Quickstart_guide/&amp;action=edit&amp;redlink=1" title="View the content page (page does not exist) [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/index.php?title=Talk:Quickstart_guide/&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu-empty emptyPortlet vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Dwarf Fortress Wiki" title="Search Dwarf Fortress Wiki [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/index.php/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label">
+		<span>Navigation</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-Centralized-discussion"><a href="/index.php/Dwarf_Fortress_Wiki:Centralized_Discussion">Centralized discussion</a></li><li id="n-portal"><a href="/index.php/Dwarf_Fortress_Wiki:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-Announcements"><a href="/index.php/Dwarf_Fortress_Wiki:Announcements">Announcements</a></li><li id="n-randompage"><a href="/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-Random-page-by-namespace"><a href="/index.php/Special:RandomByNamespace">Random page by namespace</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Quickstart_guide/" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-info"><a href="/index.php?title=Quickstart_guide/&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="/index.php/Dwarf_Fortress_Wiki:Privacy_policy" title="Dwarf Fortress Wiki:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/index.php/Dwarf_Fortress_Wiki:About" title="Dwarf Fortress Wiki:About">About Dwarf Fortress Wiki</a></li>
+		<li id="footer-places-disclaimer"><a href="/index.php/Dwarf_Fortress_Wiki:General_disclaimer" title="Dwarf Fortress Wiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="https://www.mediawiki.org/w/resources/assets/licenses/gnu-fdl.png" alt="GFDL &amp; MIT" width="88" height="31" loading="lazy"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.kitfoxgames.com"><img src="https://dwarffortresswiki.org/images/5/5e/PixelKF.png" alt="Sponsored by Kitfox Games" width="31" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10511256-2', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":43,"wgHostname":"dfwiki-web"});});</script></body></html>

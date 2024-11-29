@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://github.com/ericclack/racket-examples" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://github.com/racket/datalog" "#" "<==" "o"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "o" "https://github.com/racket/datalog" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "o" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/racket-scripts;  "o" "https://github.com/davidelettieri/sample-racket-language" "#" "<==" "o"

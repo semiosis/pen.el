@@ -1,0 +1,62 @@
+HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2024 03:03:39 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-amz-id-2: XjZMu6n0yjm/zmPKCn2QnHcH0GOT7VAR47xOJjKCqNacUujJQNz1wBDI7IbHeIchCBpRwAXxvl0=
+x-amz-request-id: 03MEJQX1YHTCARYM
+Cache-Control: max-age=0, no-cache
+Last-Modified: Sat, 27 Jul 2019 23:29:16 GMT
+x-amz-storage-class: REDUCED_REDUNDANCY
+cf-cache-status: DYNAMIC
+vary: accept-encoding
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=rmfTRSDGwasMtxL4sP0vmIDg686vd3Y7BAp3ypr9vkVF7M2xoyjrFjA4zHIS9QuvkTbv0xeP0kT7OVrHxriDLRwqrDrPEPNcIZxkGjK9GuECsdXTz2j4fiueSDSfjPaWqjOReGtGqAJD"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8e8ee2e4ce22a7ef-SYD
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=59689&sent=141&recv=48&lost=0&retrans=9&sent_bytes=115216&recv_bytes=2956&delivery_rate=399266&cwnd=147&unsent_bytes=0&cid=7d2157471387f880&ts=949416&x=0"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>17&nbsp;Extended Lab Regexps</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-style.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-racket.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="manual-racket.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9658;</a></td><td></td><td><a href="index.html" class="tocviewlink" data-pltdoc="x">Racket School 2019:<span class="mywbr"> &nbsp;</span> <br/>
+<span class="Smaller">The &#8220;How to Design Languages&#8221; Track</span></a></td></tr></table></div><div class="tocviewsublisttop" style="display: none;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="mon-mor-lecture.html" class="tocviewlink" data-pltdoc="x">Language-<wbr></wbr>Oriented Programming</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="mon-mor-lab.html" class="tocviewlink" data-pltdoc="x">Macro Expansion</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="mon-aft-lecture.html" class="tocviewlink" data-pltdoc="x">Language Extensions via Macros</a></td></tr><tr><td align="right">4&nbsp;</td><td><a href="mon-aft-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> Simple Macros</a></td></tr><tr><td align="right">5&nbsp;</td><td><a href="tue-mor-lecture.html" class="tocviewlink" data-pltdoc="x">Advanced Racket Macros</a></td></tr><tr><td align="right">6&nbsp;</td><td><a href="tue-mor-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> Syntax Patterns &amp; Classes</a></td></tr><tr><td align="right">7&nbsp;</td><td><a href="tue-aft-lecture.html" class="tocviewlink" data-pltdoc="x">Lexical Scope, (Un)Hygienic Macros</a></td></tr><tr><td align="right">8&nbsp;</td><td><a href="tue-aft-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> Comfortable Macros</a></td></tr><tr><td align="right">9&nbsp;</td><td><a href="wed-mor-lecture.html" class="tocviewlink" data-pltdoc="x">Modules, Macros, Languages</a></td></tr><tr><td align="right">10&nbsp;</td><td><a href="wed-mor-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> Languages via Macros</a></td></tr><tr><td align="right">11&nbsp;</td><td><a href="wed-aft-lecture.html" class="tocviewlink" data-pltdoc="x">More Language Variations</a></td></tr><tr><td align="right">12&nbsp;</td><td><a href="wed-aft-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> Languages and Readers</a></td></tr><tr><td align="right">13&nbsp;</td><td><a href="thu-mor-lecture.html" class="tocviewlink" data-pltdoc="x">Types and Type Checking</a></td></tr><tr><td align="right">14&nbsp;</td><td><a href="thu-aft-lecture.html" class="tocviewlink" data-pltdoc="x">Typed Languages with Turnstile</a></td></tr><tr><td align="right">15&nbsp;</td><td><a href="thu-aft-lab.html" class="tocviewlink" data-pltdoc="x"><span style="font-weight: bold">Lab</span> My First Turnstile Language</a></td></tr><tr><td align="right">16&nbsp;</td><td><a href="fri-mor-lecture.html" class="tocviewlink" data-pltdoc="x">Two Techniques</a></td></tr><tr><td align="right">17&nbsp;</td><td><a href="" class="tocviewselflink" data-pltdoc="x"><span style="font-weight: bold">Extended Lab</span> Regexps</a></td></tr><tr><td align="right">18&nbsp;</td><td><a href="fri-aft-lecture.html" class="tocviewlink" data-pltdoc="x">Some Language Gems</a></td></tr><tr><td align="right">19&nbsp;</td><td><a href="fri-aft-lab.html" class="tocviewlink" data-pltdoc="x">Closure</a></td></tr></table></div></div><div class="tocviewlist"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_1&quot;);">&#9660;</a></td><td>17&nbsp;</td><td><a href="" class="tocviewselflink" data-pltdoc="x"><span style="font-weight: bold">Extended Lab</span> Regexps</a></td></tr></table><div class="tocviewsublistbottom" style="display: block;" id="tocview_1"><table cellspacing="0" cellpadding="0"><tr><td align="right">17.1&nbsp;</td><td><a href="fri-mor-lab-getting-started.html" class="tocviewlink" data-pltdoc="x">Untyped, Slow Regular Expressions</a></td></tr><tr><td align="right">17.2&nbsp;</td><td><a href="fri-mor-lab-weak-types.html" class="tocviewlink" data-pltdoc="x">A Weak Type System</a></td></tr><tr><td align="right">17.3&nbsp;</td><td><a href="fri-mor-lab-better-types.html" class="tocviewlink" data-pltdoc="x">A Better Type System</a></td></tr><tr><td align="right">17.4&nbsp;</td><td><a href="fri-mor-lab-better-compilation.html" class="tocviewlink" data-pltdoc="x">Better Performance through Smarter Compilation</a></td></tr><tr><td align="right">17.5&nbsp;</td><td><a href="fri-mor-lab-star-as-list.html" class="tocviewlink" data-pltdoc="x">Improving Repeat to Produce Lists</a></td></tr></table></div></div></div></div><div class="maincolumn"><div class="main"><div class="versionbox"><span class="version">7.4.0.4</span></div><div class="navsettop"><span class="navleft"><div class="nosearchform"></div>&nbsp;&nbsp;</span><span class="navright">&nbsp;&nbsp;<a href="fri-mor-lecture.html" title="backward to &quot;16 Two Techniques&quot;" data-pltdoc="x">&larr; prev</a>&nbsp;&nbsp;<a href="index.html" title="up to &quot;Racket School 2019: 
+
+The “How to Design Languages” Track&quot;" data-pltdoc="x">up</a>&nbsp;&nbsp;<a href="fri-mor-lab-getting-started.html" title="forward to &quot;17.1 Untyped, Slow Regular Expressions&quot;" data-pltdoc="x">next &rarr;</a></span>&nbsp;</div><h3>17<tt>&nbsp;</tt><a name="(part._fri-mor-lab)"></a><span style="font-weight: bold">Extended Lab</span> Regexps</h3><p>This chapter is a single (staged) exercise designed to
+provide an experience working with language-oriented
+programming (LOP) in Racket. While the nominal goal of the
+exercise is to build a language for matching regular
+expressions to strings, the actual goal is to help you
+understand language-oriented programming in Racket. Thus, do
+not be too concerned if the regular expression language
+seems impoverished or unrealistic as the language-oriented
+programming issues required to solve this exercise cover a
+lot of ground.</p><p>That said, building from a solution to this exercise would
+indeed result in better support for regular expressions in
+Racket than currently exists. Specifically, the built-in
+support for regular expressions does not have a type-system
+(something this exercise covers) nor is the
+regular-expression sublanguage macro-extensible (something
+this exercise does not cover, but this exercise is a
+prerequisite to adding macro extensibility).</p><p>The exercise is structured in a series of parts that
+highlight different aspects of language-oriented
+programming. <a href="fri-mor-lab-getting-started.html" data-pltdoc="x">Untyped, Slow Regular Expressions</a> starts
+with a basic implementation of a regular expression matcher.
+It is has limited expressiveness, is slow, and does not have
+a type system. <a href="fri-mor-lab-weak-types.html" data-pltdoc="x">A Weak Type System</a> shows how
+to extend it with a type system that rejects too many
+programs and <a href="fri-mor-lab-better-types.html" data-pltdoc="x">A Better Type System</a> improves
+the situation by adding a new construct to the regular
+expression language that makes the type system more
+flexible. <a href="fri-mor-lab-better-compilation.html" data-pltdoc="x">Better Performance through Smarter Compilation</a> returns
+to the first language and offers a way to do more work at
+compile time that significantly improves the performance of
+the matcher. Finally, <a href="fri-mor-lab-star-as-list.html" data-pltdoc="x">Improving Repeat to Produce Lists</a>
+encourages you to revisit you previous solutions to improve
+the expressiveness of the regular expression matcher. This
+last section is designed to give you some experience
+maintaining language-oriented programming code.</p><p>The exercise is substantial and not intended to be finished
+in a single sitting (or even in a single week or month, in
+fact). Enjoy taking your time to work through it; I
+certainly did!</p><div class="navsetbottom"><span class="navleft"><div class="nosearchform"></div>&nbsp;&nbsp;</span><span class="navright">&nbsp;&nbsp;<a href="fri-mor-lecture.html" title="backward to &quot;16 Two Techniques&quot;" data-pltdoc="x">&larr; prev</a>&nbsp;&nbsp;<a href="index.html" title="up to &quot;Racket School 2019: 
+
+The “How to Design Languages” Track&quot;" data-pltdoc="x">up</a>&nbsp;&nbsp;<a href="fri-mor-lab-getting-started.html" title="forward to &quot;17.1 Untyped, Slow Regular Expressions&quot;" data-pltdoc="x">next &rarr;</a></span>&nbsp;</div></div></div><div id="contextindicator">&nbsp;</div></body></html>

@@ -1,0 +1,13 @@
+* TODO Figure out how to do in racket
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (clojure-go-to-symbol sym dir)
+#+END_SRC
+
+=<tvs ...>= should return the same number of arguments that it receives
+and expand into the form.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (clojure-go-to-symbol <tvs sym dir>)
+#+END_SRC
+
+** Hmm. Perhaps it's worth learning racket

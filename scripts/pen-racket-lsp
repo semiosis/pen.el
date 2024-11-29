@@ -7,4 +7,5 @@ export TTY
 
 # raco pkg update --batch racket-langserver
 
-arbitrate "racket" "--lib" "racket-langserver" "$@"
+# arbitrate "racket" "--lib" "racket-langserver" "$@"
+"racket" "--lib" "racket-langserver" "$@"

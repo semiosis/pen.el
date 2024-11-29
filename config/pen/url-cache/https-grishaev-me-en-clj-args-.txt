@@ -1,0 +1,586 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 7581
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 24 Nov 2024 13:44:31 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"67432dbf-9d70"
+expires: Tue, 26 Nov 2024 13:19:27 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 6B1D:2E85DA:1E60E9:201484:6745C887
+Accept-Ranges: bytes
+Date: Tue, 26 Nov 2024 13:09:54 GMT
+Via: 1.1 varnish
+Age: 27
+X-Served-By: cache-akl10332-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1732626595.728272,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 0a1c82b5294d2ac47a7e731da77bb5a9d5cbac01
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>On Clojure arguments</title>
+  <meta name="description" content="Sometimes, a function that we are working on needs to take lots ofparameters. Not just one or two but a decade or even more. I used to face withsuch a proble...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="canonical" href="https://grishaev.me/en/clj-args/">
+  <link rel="alternate" type="application/rss+xml" title="Ivan Grishaev's blog" href="https://grishaev.me/feed.xml">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/static/favicons/favicon.ico">
+
+  <script type="text/javascript" src="/assets/typo.js"></script>
+
+</head>
+
+
+  <body>
+    <header class="site-header">
+
+    <div class="wrapper flex-container">
+
+        <div>
+            <a href="/">
+                <img id="avatar" src="/assets/static/avatar.jpg" alt="Ivan Grishaev">
+            </a>
+        </div>
+
+        <div class="flex-container-vert" style="margin-left: 15px; width: 80%">
+
+            <div class="flex-container full-width">
+                <p style="margin-bottom: 5px">Ivan Grishaev's blog</p>
+                <div class="flex-huge"></div>
+                <div >
+<form id="search-form"
+      target="_blank"
+      style="display: inline"
+      method="get"
+      action="https://www.google.com/search">
+
+    <input name="sitesearch"
+           value="grishaev.me"
+           type="hidden">
+
+    <input type="text"
+           required="required"
+           name="q"
+           placeholder="Google search..."
+           autocomplete="off">
+
+    <button style="border: none; background-color: transparent; cursor: pointer;"
+            type="submit">&#x1f50d;</button>
+
+</form>
+</div>
+            </div>
+
+            <p><small>Writing on programming, education, books and negotiations.
+</small></p>
+
+            <div class="flex-container">
+                <a class="menu-item" href="/">Home</a>
+                <a class="menu-item" href="/about/">About</a>
+                <a class="menu-item" href="/bookshelf/">Bookshelf</a>
+                <a class="menu-item" href="/feed.xml">RSS</a>
+            </div>
+
+            <div class="flex-container">
+                <a class="menu-item minor" href="/tag/clojure/">Clojure</a>
+                <a class="menu-item minor" href="/tag/emacs/">Emacs</a>
+                <a class="menu-item minor" href="/tag/python/">Python</a>
+                <a class="menu-item minor" href="/tag/programming/">Programming</a>
+                <a class="menu-item minor" href="/interview/">Interview</a>
+                <a class="menu-item minor" href="/video/">Video</a>
+            </div>
+
+            <div class="flex-container">
+                <a class="menu-item minor hl" href="/clojure-in-prod/">Книга «Clojure на производстве»</a>
+            </div>
+
+            <div class="flex-container">
+                <a class="menu-item minor hl" href="/clojure-in-prod-2/">Книга «Clojure на производстве», второй том</a>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    <h1 class="post-title" itemprop="name headline">On Clojure arguments</h1>
+
+    
+<div class="post-meta">
+
+    <time class="post-time"
+          datetime="2017-06-23T00:00:00+00:00">
+        Jun 23, 2017
+    </time>
+
+    <a href="/tag/clojure/" rel="tag">clojure</a>, <a href="/tag/programming/" rel="tag">programming</a>, <a href="/tag/arguments/" rel="tag">arguments</a>
+
+</div>
+
+
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Sometimes, a function that we are working on needs to take lots of
+parameters. Not just one or two but a decade or even more. I used to face with
+such a problem many times. I’m not sure solutions made by me were always good
+enough.</p>
+
+<p>You might be brave enough to say you will never face such an error. It’s
+probably a weird architecture. A function should accept at least five
+arguments. You will refactor such a code for sure.</p>
+
+<p>But look at this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+                 <span class="n">max_length</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+                 <span class="n">db_index</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">rel</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">NOT_PROVIDED</span><span class="p">,</span> <span class="n">editable</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                 <span class="n">serialize</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">unique_for_date</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">unique_for_month</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                 <span class="n">unique_for_year</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">help_text</span><span class="o">=</span><span class="s">''</span><span class="p">,</span> <span class="n">db_column</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                 <span class="n">db_tablespace</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">auto_created</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">validators</span><span class="o">=</span><span class="p">(),</span>
+                 <span class="n">error_messages</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+</code></pre></div></div>
+
+<p>It is <a href="https://github.com/django/django/blob/master/django/db/models/fields/__init__.py#L134">from Django</a>, the world-wide spreaded framework to build robust
+web applications. Except <code class="language-plaintext highlighter-rouge">self</code>, the constructor takes 22 optional
+arguments. Saying more, it is just a basic abstract class. Its descendants
+require their own arguments in addition to default ones.</p>
+
+<p>Common languages such as Python, Ruby or Java give only one standard way to deal
+with lots of parameters. In fact, using them you cannot be mistaken since you
+have no other choice. The question here is how to make you code less ugly than
+it is now.</p>
+
+<p>People who are new in Clojure, especially if they came from classical
+Python/Puby/PHP, face troubles when passing lots of arguments into a
+function. Since it’s Clojure, there are several ways to do that. This article
+highlights some on them, their benefits and disadvantages.</p>
+
+<h3 id="multi-arity">Multi-arity</h3>
+
+<p>Any function in Clojure may have more than one body with its own
+signature. That’s normal for any functional language, but sounds surprisingly to
+former Python/Ruby adepts. An interpreter dispatches that bodies by a form of
+arguments. The first found body is called. When no body is found, an exception
+is raised.</p>
+
+<p>For example, the same function could be called with either two or three
+arguments if we declare it in such way:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w">
+ </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">]</span><span class="w">
+  </span><span class="p">(</span><span class="nb">println</span><span class="w"> </span><span class="s">"two arguments"</span><span class="p">)</span><span class="w">
+  </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w">
+ </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">]</span><span class="w">
+  </span><span class="p">(</span><span class="nb">println</span><span class="w"> </span><span class="s">"three arguments!"</span><span class="p">)</span><span class="w">
+  </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">)))</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w">
+</span><span class="mi">3</span><span class="w"> </span><span class="c1">;; prints `two arguments`</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w">
+</span><span class="mi">6</span><span class="w"> </span><span class="c1">;; prints `three arguments!`</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Calling a function with zero, one or ten arguments will raise an
+exception. Depending on your application’s logic, it could be both good or bad
+behaviour.</p>
+
+<p>To fallback to default body that deals with any set of arguments, add one more
+implementation:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w">
+ </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">]</span><span class="w">
+   </span><span class="n">...</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+ </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">]</span><span class="w">
+  </span><span class="n">...</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+ </span><span class="p">([</span><span class="o">&amp;</span><span class="w"> </span><span class="n">args</span><span class="p">]</span><span class="w">
+  </span><span class="p">(</span><span class="nb">reduce</span><span class="w"> </span><span class="nb">+</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now, you may add any arguments set together:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nf">foo</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w">
+</span><span class="mi">10</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo</span><span class="p">)</span><span class="w">
+</span><span class="mi">0</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The order of bodies is important. If you put <code class="language-plaintext highlighter-rouge">[&amp; args]</code> clause on the top, it
+will cover all the possible function calls. So you will never reach <code class="language-plaintext highlighter-rouge">[x y]</code> or
+<code class="language-plaintext highlighter-rouge">[x y z]</code> implementations.</p>
+
+<p>One interesting feature is you may redirect function call inside a body just
+calling the same function with another argument set. For example:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="nb">test</span><span class="w">
+  </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">]</span><span class="w">
+   </span><span class="p">(</span><span class="nb">test</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">nil</span><span class="p">))</span><span class="w"> </span><span class="c1">;; redirects to the second body</span><span class="w">
+  </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">]</span><span class="w">
+   </span><span class="p">(</span><span class="nf">do-some-stuff</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">)))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Clojure dispatches a proper body quite fast. It is a key feature of Clojure’s
+runtime. There are lots of core functions that declare two, three or even five
+bodies regarding to performance issues. It’s much faster then having a single
+body with multiple <code class="language-plaintext highlighter-rouge">if</code>s, <code class="language-plaintext highlighter-rouge">case</code> or <code class="language-plaintext highlighter-rouge">cond</code>clauses.</p>
+
+<p>A quick copy-paste from <a href="https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L2556">Clojure sources</a>:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">juxt</span><span class="w">
+  </span><span class="s">"..."</span><span class="w">
+  </span><span class="p">([</span><span class="n">f</span><span class="p">]</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+  </span><span class="p">([</span><span class="n">f</span><span class="w"> </span><span class="n">g</span><span class="p">]</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+  </span><span class="p">([</span><span class="n">f</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">h</span><span class="p">]</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+  </span><span class="p">([</span><span class="n">f</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fs</span><span class="p">]</span><span class="w"> </span><span class="n">...</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Multi-arity is great when you already have a function that takes a couple of
+scalar parameters and then you need to add some extra one ASAP. Usually, the
+most needed function is called in thousand places so adding an extra parameter
+everywhere would be a mess.</p>
+
+<p>In Java or Python world, it is named “refactoring”. You need a robust commercial
+IDE to scan the project and change each call of a function. In Clojure, you just
+do:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; old</span><span class="w">
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="nb">test</span><span class="w">
+  </span><span class="p">[</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">]</span><span class="w">
+  </span><span class="p">(</span><span class="nf">do-old-stuff</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w">
+
+</span><span class="c1">;; new</span><span class="w">
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="nb">test</span><span class="w">
+  </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">]</span><span class="w">
+   </span><span class="p">(</span><span class="nf">do-old-stuff</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w">
+  </span><span class="p">([</span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">z</span><span class="p">]</span><span class="w">
+   </span><span class="p">(</span><span class="nf">do-new-stuff</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w">
+   </span><span class="p">(</span><span class="nf">do-old-stuff</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">y</span><span class="p">)))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now you can keep the old calls without changing your code. And pass the new
+argument only where you need.</p>
+
+<h3 id="maps">Maps</h3>
+
+<p>Your function may need lots of additional arguments. For example, boolean flags,
+extra options for HTTP connection, timeouts, headers, error messages.</p>
+
+<p>A good way to solve the problem is to join them into a single map. Thus, your
+function accepts only a couple of required parameters and the rest are put into
+an optional map. Say, you pass a hostname and a method name and a map with
+<code class="language-plaintext highlighter-rouge">:timeout</code>, <code class="language-plaintext highlighter-rouge">:headers</code> keys on so on.</p>
+
+<p>Inside a function, you either take optional arguments one by one:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">opt</span><span class="p">]]</span><span class="w">
+  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">[</span><span class="n">timeout</span><span class="w"> </span><span class="p">(</span><span class="no">:timeout</span><span class="w"> </span><span class="n">opt</span><span class="p">)</span><span class="w">
+        </span><span class="n">headers</span><span class="w"> </span><span class="p">(</span><span class="no">:headers</span><span class="w"> </span><span class="n">opt</span><span class="p">]</span><span class="w">
+    </span><span class="p">(</span><span class="nf">http-request</span><span class="w"> </span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="n">timeout</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span><span class="w">
+    </span><span class="n">...</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>or decompose a map on separated variables at once:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">opt</span><span class="p">]]</span><span class="w">
+  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">[{</span><span class="no">:keys</span><span class="w"> </span><span class="p">[</span><span class="n">timeout</span><span class="w">
+                </span><span class="n">headers</span><span class="p">]}</span><span class="w"> </span><span class="n">opt</span><span class="p">]</span><span class="w">
+    </span><span class="p">(</span><span class="nf">http-request</span><span class="w"> </span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="n">timeout</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span><span class="w">
+    </span><span class="n">...</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Decomposition works as well on the signature level. I do not like this method
+though since it brings some noise in the code:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">[{</span><span class="n">timeout</span><span class="w"> </span><span class="no">:timeout</span><span class="w">
+                             </span><span class="n">headers</span><span class="w"> </span><span class="no">:headers</span><span class="p">}]]</span><span class="w">
+  </span><span class="p">(</span><span class="nf">http-request</span><span class="w"> </span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="n">timeout</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span><span class="w">
+  </span><span class="n">...</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A good point there is you may keep a default map somewhere and merge it with the
+passed ones to fallback to default values:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="p">(</span><span class="k">def</span><span class="w"> </span><span class="n">foo-defaults</span><span class="w">
+  </span><span class="p">{</span><span class="no">:timeout</span><span class="w"> </span><span class="mi">5</span><span class="w">
+   </span><span class="no">:headers</span><span class="w"> </span><span class="p">{</span><span class="no">:user-agent</span><span class="w"> </span><span class="s">"Internet Explorer 6.0"</span><span class="p">}})</span><span class="w">
+
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="n">hostname</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">opt</span><span class="p">]]</span><span class="w">
+  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">[{</span><span class="no">:keys</span><span class="w"> </span><span class="p">[</span><span class="n">timeout</span><span class="w">
+                </span><span class="n">headers</span><span class="p">]}</span><span class="w"> </span><span class="p">(</span><span class="nb">merge</span><span class="w"> </span><span class="n">foo-defaults</span><span class="w"> </span><span class="n">opt</span><span class="p">)]</span><span class="w">
+    </span><span class="c1">;; now timeout is always 5 when not passed</span><span class="w">
+    </span><span class="n">...</span><span class="w">
+    </span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This way of passing a map is widely-spreaded across Clojure libraries. It even
+considered as the standard one because of its simplicity and transparency. If
+you have just started with Clojure and need a function with multiple arguments,
+use a map.</p>
+
+<h3 id="rest-arguments-as-a-map">Rest arguments as a map</h3>
+
+<p>There is another way to deal with multiple arguments. Do you remember the <code class="language-plaintext highlighter-rouge">rest</code>
+arguments prepended with <code class="language-plaintext highlighter-rouge">&amp;</code> in a function signature? Something like that:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="w"> </span><span class="n">args</span><span class="p">]</span><span class="w">
+  </span><span class="c1">;; args is a list)</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="c1">;; args is (1 2 3 4)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Starting with Clojure 1.5 (or 1.6, I don’t remember exactly) you may turn the
+rest arguments into a map. The syntax is:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span><span class="no">:as</span><span class="w"> </span><span class="n">args</span><span class="p">}]</span><span class="w">
+  </span><span class="c1">;; now, args is a map!</span><span class="w">
+  </span><span class="n">args</span><span class="p">)</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo</span><span class="w"> </span><span class="no">:foo</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="no">:bar</span><span class="w"> </span><span class="mi">42</span><span class="p">)</span><span class="w">
+</span><span class="p">{</span><span class="no">:bar</span><span class="w"> </span><span class="mi">42</span><span class="n">,</span><span class="w"> </span><span class="no">:foo</span><span class="w"> </span><span class="mi">1</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Pass extra arguments remembering some simple rules:</p>
+
+<ol>
+  <li>there must be even number of rest arguments, otherwise you will get an error;</li>
+  <li>each odd argument (usually a keyword) is a key;</li>
+  <li>each even argument is a value;</li>
+  <li>you cannot duplicate key items.</li>
+</ol>
+
+<p>Turning rest arguments into a map is also used oftenly in Clojure. You may
+choose that method over a map as well when developing with Clojure.</p>
+
+<h3 id="pure-map-vs-rest-args">Pure map vs rest args</h3>
+
+<p>Each of two method described above has its own benefits and disadvantages. Let’s
+highlight some of them:</p>
+
+<ol>
+  <li>
+    <p>Using a map is good when you don’t know exactly what arguments you will pass
+into a function. It’s a common situation when the final set of options is
+unknown for the last moment. It might depend on user input, environment
+variables or any conditions. Usually, you compose a map step by step, validate
+it with somehow and pass into a function. With sequences, it’s more difficult
+to compose a set of arguments.</p>
+  </li>
+  <li>
+    <p>Passing a map into a function with the <code class="language-plaintext highlighter-rouge">&amp; rest</code> signature requires some
+additional steps. You should flatten you map into a vector or sequence and
+then apply it to a function:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">def</span><span class="w"> </span><span class="n">opt</span><span class="w"> </span><span class="p">{</span><span class="no">:foo</span><span class="w"> </span><span class="mi">42</span><span class="w"> </span><span class="no">:bar</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">]})</span><span class="w"> </span><span class="c1">;; your options map</span><span class="w">
+
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span><span class="no">:as</span><span class="w"> </span><span class="n">args</span><span class="p">}]</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w"> </span><span class="c1">;; but the function accepts rest arguments</span><span class="w">
+
+</span><span class="c1">;; turns opt to a seq of (key1 val1 key2 val2)</span><span class="w">
+</span><span class="c1">;; then apply it to the function</span><span class="w">
+</span><span class="p">(</span><span class="nb">apply</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">(</span><span class="nb">mapcat</span><span class="w"> </span><span class="nb">identity</span><span class="w"> </span><span class="n">opt</span><span class="p">))</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>Note how long is the code. Probably, you’d better to modify the function to
+accept just map.</p>
+  </li>
+  <li>
+    <p>With the rest arguments, <code class="language-plaintext highlighter-rouge">partial</code> works like a charm. Say, we have a
+function that returns a set of rows from the database. The first argument is
+a table name, and the rest are a sequence with each odd argument as a column
+name and even argument as a value:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nf">db-query</span><span class="w"> </span><span class="no">:users</span><span class="w"> </span><span class="no">:active</span><span class="w"> </span><span class="n">true</span><span class="w"> </span><span class="no">:staff</span><span class="w"> </span><span class="n">true</span><span class="w"> </span><span class="no">:name</span><span class="w"> </span><span class="s">"Ivan"</span><span class="p">)</span><span class="w">
+</span><span class="c1">;; performs a query like:</span><span class="w">
+</span><span class="c1">;; select *</span><span class="w">
+</span><span class="c1">;;   from "users"</span><span class="w">
+</span><span class="c1">;; where</span><span class="w">
+</span><span class="c1">;;   active</span><span class="w">
+</span><span class="c1">;;   and staff</span><span class="w">
+</span><span class="c1">;;   and name = "Ivan"</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>Some of our users could be blocked. We may forget passing <code class="language-plaintext highlighter-rouge">:active false</code>
+clause every time you query for users. To prevent returning blocked ones to
+the frontend, it’s better to have a special function for that:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">def</span><span class="w"> </span><span class="n">active-users</span><span class="w"> </span><span class="p">(</span><span class="nb">partial</span><span class="w"> </span><span class="n">db-query</span><span class="w"> </span><span class="no">:users</span><span class="w"> </span><span class="no">:active</span><span class="w"> </span><span class="n">true</span><span class="p">))</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>In addition to this constraint, we might be interested in only staff
+users. Let’s extend our function with another partial application:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">def</span><span class="w"> </span><span class="n">staff-active-users</span><span class="w"> </span><span class="p">(</span><span class="nb">partial</span><span class="w"> </span><span class="n">active-users</span><span class="w"> </span><span class="no">:staff</span><span class="w"> </span><span class="n">true</span><span class="p">))</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>Finally, we may select all the non-blocked staff users whose name is Ivan:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nf">staff-active-users</span><span class="w"> </span><span class="no">:name</span><span class="w"> </span><span class="s">"Ivan"</span><span class="p">)</span><span class="w">
+</span><span class="c1">;; [{:id 1 :name "Ivan" :surname "Petrov"}</span><span class="w">
+</span><span class="c1">;;  {:id 1 :name "Ivan" :surname "Sidorov"}]</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Instead, with maps you cannot declare a partial function. You need to invent
+your own <code class="language-plaintext highlighter-rouge">partial-map</code> implementation:</p>
+
+    <div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="c1">;; let `foo` is a function that accepts a map</span><span class="w">
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">[</span><span class="n">opt</span><span class="p">]</span><span class="w">
+  </span><span class="n">opt</span><span class="p">)</span><span class="w">
+
+</span><span class="c1">;; our own `partial`</span><span class="w">
+</span><span class="p">(</span><span class="k">defn</span><span class="w"> </span><span class="n">partial-map</span><span class="w"> </span><span class="p">[</span><span class="n">f</span><span class="w"> </span><span class="n">defaults</span><span class="p">]</span><span class="w">
+  </span><span class="p">(</span><span class="k">fn</span><span class="w"> </span><span class="p">[</span><span class="n">opt</span><span class="p">]</span><span class="w">
+    </span><span class="p">(</span><span class="nf">f</span><span class="w"> </span><span class="p">(</span><span class="nb">merge</span><span class="w"> </span><span class="n">defaults</span><span class="w"> </span><span class="n">opt</span><span class="p">))))</span><span class="w">
+
+</span><span class="c1">;; example:</span><span class="w">
+</span><span class="p">(</span><span class="k">def</span><span class="w"> </span><span class="n">foo-timeout</span><span class="w"> </span><span class="p">(</span><span class="nf">partial-map</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">{</span><span class="no">:timeout</span><span class="w"> </span><span class="mi">5</span><span class="p">}))</span><span class="w">
+
+</span><span class="p">(</span><span class="nf">foo-timeout</span><span class="w"> </span><span class="p">{</span><span class="no">:bar</span><span class="w"> </span><span class="mi">42</span><span class="p">})</span><span class="w">
+</span><span class="p">{</span><span class="no">:bar</span><span class="w"> </span><span class="mi">42</span><span class="w"> </span><span class="no">:timeout</span><span class="w"> </span><span class="mi">5</span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>The examples above show there are more then one way to deal with multiple
+arguments in Clojure. These are multi-arity, maps and rest arguments. All of
+them cover you common requirements as well.</p>
+
+<p>Remember, you are not limited with the only three those ones. With macroses, you
+can implement you own arguments system: Common Lisp-wise or any other. The only
+limit there is your imagination.</p>
+
+    
+<div class="prev-next">
+
+    <div class="prev-next-left">
+    
+        <p><small><a href="/not-love/">&larr; Нелюбовь</a></small></p>
+    
+    </div>
+
+    <div class="prev-next-mid">
+    </div>
+
+    <div class="prev-next-right">
+    
+        <p><small><a href="/read-25/">Weekly links #25 &rarr;</a></small></p>
+    
+    </div>
+
+</div>
+
+  </div>
+
+</article>
+
+<center>
+    <p>
+        <small>Нашли ошибку? Выделите мышкой и нажмите Ctrl/&#8984;+Enter</small>
+    </p>
+</center>
+
+
+
+
+
+
+<center>Комментариев пока нет</center>
+
+
+
+
+
+
+
+
+
+<form id="comment-form" method="POST" action="https://functions.yandexcloud.net/d4ehfuf08fjfjr59ivnf">
+
+    <div class="block">
+        <p class="comment-form-label"><small>Your name</small></p>
+        <input required id="comment-form-author" name="author" type="text">
+    </div>
+
+    <div class="block">
+        <p class="comment-form-label"><small>Comment (markdown syntax)</small></p>
+        <textarea required id="comment-form-comment" name="comment"></textarea>
+    </div>
+
+    <input required name="path" type="hidden" value="/en/clj-args/">
+    <input required name="captcha" type="hidden" value="4 &#215; 9">
+
+    <div class="block">
+        <span class="comment-form-label"><small>4 &#215; 9 = </small></span>
+        <input required id="comment-form-solution" name="solution" type="text">
+    </div>
+
+    <div class="block">
+        <button id="comment-form-send" type="submit">Send</button>
+    </div>
+
+</form>
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Ivan Grishaev's blog</li>
+          <li><a href="mailto:ivan@grishaev.me">ivan@grishaev.me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+            <li><a href="https://github.com/igrishaev">GitHub</a></li>
+            <li><a href="https://t.me/igrishaev_blog">Telegram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Writing on programming, education, books and negotiations.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

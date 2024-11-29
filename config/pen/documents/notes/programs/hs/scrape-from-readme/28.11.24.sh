@@ -1,0 +1,5 @@
+cd /root/repos/davidelettieri/sample-racket-language;  "scrape-from-readme" "pip install [a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/davidelettieri/sample-racket-language;  "scrape-from-readme" "\\./gradlew :[:a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/davidelettieri/sample-racket-language;  "scrape-from-readme" "gradle [:a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/davidelettieri/sample-racket-language;  "scrape-from-readme" "bazel build [^ ]+" "#" "<==" "scrape-install-"
+cd /root/repos/davidelettieri/sample-racket-language;  "scrape-from-readme" "\\bgo get (-u )?[^ ]+" "#" "<==" "scrape-install-"

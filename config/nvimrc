@@ -336,10 +336,12 @@ command! StartAppend call StartAppend()
 hi Normal       ctermfg=60
 
 " Will work with zsh but not emacs
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " Will work with emacs but not zsh
-"set clipboard=unnamedplus
+" unnamedplus seems to work better for copying around
+" and to the host 27.11.24
+set clipboard=unnamedplus
 
 " if !has('nvim')
 "     set clipboard=unnamedplus

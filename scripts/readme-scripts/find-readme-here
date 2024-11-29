@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+: "${dir:="$1"}"
+: "${dir:="$(pwd)"}"
+
+# exec 2>/dev/null
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# pat="$1"
+
+cd "$dir"
+find . \( -iname '*.md' -or -iname '*.markdown' -or -iname '*.org' -or -iname '*.adoc' -or -iname '*.rst' \) | sed 's=^\./==' | pa -E "fzf --sync | xa sp"

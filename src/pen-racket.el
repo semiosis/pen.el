@@ -116,23 +116,25 @@
 (defun racket-lsp-describe-thing-at-point ()
   (interactive)
 
-  (comment
-   (if (and (selected-p)
-            (< (mark) (point)))
-       (progn
-         ;; (tv "yo")
-         (save-region)
-         ;; (deselect)
-         (comment
-                 
-          (backward-char 1)
-          (call-interactively 'lsp-describe-thing-at-point)
-          (forward-char 1)
-          )
-         ;; (restore-region)
-         ;; (reselect)
-         )
-     (call-interactively 'lsp-describe-thing-at-point))))
+  (cond
+   ((and (not (selected-p))
+         (or (regex-at-point "\\b ")
+             (regex-at-point "\\b$")))
+    (progn
+      (backward-char 1)
+      (call-interactively 'lsp-describe-thing-at-point)
+      (forward-char 1)))
+   ((and (selected-p)
+         (< (mark) (point)))
+    (progn
+      (save-region)
+      (deselect)
+      (backward-char 1)
+      (call-interactively 'lsp-describe-thing-at-point)
+      (forward-char 1)
+      (restore-region)))
+   (t
+    (call-interactively 'lsp-describe-thing-at-point))))
 
 (defun pen-racket-run-main (path)
   (interactive (list (get-path)))

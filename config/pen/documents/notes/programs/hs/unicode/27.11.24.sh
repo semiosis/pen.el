@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "unicode" " " "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "µ" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "unicode" "μ" "#" "<==" "zsh"
+cd /root/notes;  "unicode" "µ" "#" "<==" "bash"
+cd /root/notes;  "unicode" "μ" "#" "<==" "bash"

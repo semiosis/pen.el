@@ -1,0 +1,12 @@
+#!/usr/bin/nodejs
+
+const fs = require("fs");
+const data = fs.readFileSync("/dev/stdin", "utf-8");
+
+var regex_expr = process.argv[2];
+
+var reg = new RegExp(regex_expr, "g")
+var result;
+while((result = reg.exec(data)) !== null) {
+    console.log(result[0]);
+}

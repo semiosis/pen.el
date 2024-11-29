@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+delim="$1"
+: ${delim:="\""}
+
+case "$delim" in
+    \") {
+        scrape '"([^"]+)"' | uq -l
+    }
+    ;;
+
+    \') {
+        scrape "'([^']+)'" | uq -l
+    }
+    ;;
+
+    *)
+esac

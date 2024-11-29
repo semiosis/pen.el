@@ -3,7 +3,8 @@
 (ns utils.gipe
   (:require [babashka.deps :as deps]
             [utils.gum :as gum]
-            [utils.myshell :as myshell]))
+            [utils.myshell :as myshell]
+            [utils.fzf :as fzf]))
 
 ;; e:gum.bb
 
@@ -67,7 +68,9 @@
 (gum/input :value user/*input* :placeholder "Type stdin...")
 
 ;; (write "value" "Type...")
-(gum/write "" "Type...")
+
+(let [writings (gum/write "" "Type...")]
+  (print (fzf/fzf writings)))
 
 ;; export PEN_OVERLAY
 ;; export PEN_PREOVERLAY

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "info" "-q" "racket" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "env" "#" "<==" "man"
+cd /root/notes;  "info" "-q" "/usr/local/lib/python3.8/site-packages/visidata/man/vd.1" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "lolcat" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "/usr/local/lib/python3.8/site-packages/visidata/man/vd.1" "#" "<==" "man"

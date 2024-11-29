@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+sed -n 's/^resource \s*"\([^"]*\)" "[^"]*" *{$/\1/p'

@@ -1,0 +1,1 @@
+cd /;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "26" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=26" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; /tmp/nsfa--in-tm-2-pin-.sh" "#" "<==" "pen-xt"

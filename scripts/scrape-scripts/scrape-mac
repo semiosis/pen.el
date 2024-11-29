@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+rosie grep -o subs net.MAC

@@ -125,7 +125,6 @@ git clone "https://github.com/charmbracelet/wish"\
 : 1644024152:0;"C-l"
 : 1644024161:0;"C-l"pen-send-cl-maybe
 : 1644024278:0;vc g dt -c
-: 1644024400:0;pen-send-cl-maybe
 : 1644024458:0;if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then\
  ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf ~/.tmux.conf\
 fi\
@@ -1134,7 +1133,6 @@ pip3.8 uninstall config\
 : 1662363006:0;echo hi | tvipe xc -i
 : 1662363010:0;echo hi | tvipe
 : 1662426397:0;vs "/root/pen_python_modules/shanepy/Makefile"
-: 1662439260:0;which -a mypython
 : 1662439266:0;which -a pen-python
 : 1662439323:0;pip search venv
 : 1662439331:0;pip3.8 search venv
@@ -1163,7 +1161,6 @@ pip3.8 uninstall config\
 : 1662447328:0;tmi
 : 1662447385:0;"racket" "--lib" "racket-langserver"
 : 1662447399:0;pen-racket-lsp
-: 1662447451:0;raco pkg install racket-langserver
 : 1662447634:0;raco pkg install br/quicklang
 : 1662447693:0;raco pkg install beautiful-racket-lib
 : 1662448149:0;racket asteroids6.rkt
@@ -1405,7 +1402,6 @@ pip3.8 uninstall config\
 : 1662877808:0;rm /root/.pen/documents/notes/notes.txt
 : 1662877825:0;rm /root/.pen/documents/notes/sidenotes.org
 : 1662877946:0;mru | ead ls
-: 1662878144:0;tp find-here-path "*racket*"
 : 1662878165:0;pen-rc-test ask_view_racket_lsp
 : 1662878225:0;v pen-racket-lsp
 : 1662878318:0;tp find-here-path "*tmi*"
@@ -2721,7 +2717,6 @@ pip3.10 install lxml\
 : 1691546974:0;y formal equivalence | v
 : 1691546987:0;y formal equivalence | grep -HnoP "\b[0-9]+\b"
 : 1691547003:0;y formal equivalence | grep -HnoP "\" [0-9]+ \""
-: 1698196482:0;v vs
 : 1698196505:0;cd /tp
 : 1698196625:0;echo -n Genesis 32:30 | sha
 : 1698196628:0;echo Genesis 32:30 | sha
@@ -2914,7 +2909,6 @@ pip3.10 install lxml\
 : 1698234883:0;hsqf jstate-get
 : 1698234886:0;v jstate
 : 1698234889:0;hsqf jstate-set
-: 1698235102:0;v pavs
 : 1698235573:0;man diatheke
 : 1698235593:0;"diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Romans 1"
 : 1698235718:0;"diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Romans 1" | sed 's/^\(.*\(\([0-9]\+\):\([0-9]\+\): /[\2:\3 /'
@@ -4104,7 +4098,6 @@ poetry install\
 : 1699615061:0;ead This script should be sourced from other scripts
 : 1699615068:0;rm \;
 : 1699615114:0;find-files-here
-: 1699615123:0;list-kjv-terms
 : 1699615146:0;pen-of-imagination
 : 1699615915:0;fpvd pen.el/scripts/container/list-aws-iam-policies-csv
 : 1699615960:0;select-default-wordlist
@@ -4340,7 +4333,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699683492:0;mkw pwd
 : 1699683531:0;which -a wd
 : 1699683574:0;pwd| v
-: 1699683577:0;which -a pwd
 : 1699683689:0;date | lolcat
 : 1699683906:0;ln -sf /root/.emacs.d/host/pen.el/config/vim-bundles/vim2ansi
 : 1699683919:0;ls vim-addon-mw-utils
@@ -4673,7 +4665,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699846601:0;tp find-here-path "*templ*"
 : 1699847329:0;v iglet
 : 1699847432:0;figlet
-: 1699847453:0;man lolcat
 : 1699904228:0;v pen-bash.el
 : 1699906147:0;git commit -m "13.11.23"
 : 1699926214:0;date-sql
@@ -5165,7 +5156,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700455295:0;HOST_SSH_MASTER=n pen-rc-get .host-ssh-master
 : 1700455298:0;pen-rc-get .host-ssh-master
 : 1700455302:0;pen-rc-get .notify
-: 1700455541:0;man env
 : 1700455634:0;env bash
 : 1700455685:0;withopts NOTIFY=n -- pen-rc-get .notify
 : 1700455830:0;host_ssh_master=true i gw
@@ -5378,7 +5368,6 @@ fi
 : 1700693826:0;nw nvc v -nsyn /root/.emacs.d/host/pen.el/src/pen-support.el
 : 1700693878:0;nw zrepl -cm nvc v -nsyn /root/.emacs.d/host/pen.el/src/pen-support.el
 : 1700693879:0;"nvc" "v" "-nsyn" "/root/.emacs.d/host/pen.el/src/pen-support.el"
-: 1700693888:0;v zrepl
 : 1700694154:0;nw -2 bash
 : 1700694161:0;nw -2 zsh
 : 1700694185:0;VIMCONFIG
@@ -6384,7 +6373,6 @@ EOF\
 : 1701482673:0;ead reset_color
 : 1701482690:0;ead "fg_bold[red]"
 : 1701482693:0;ead "fg_bold\\[red\]"
-: 1701482819:0;v pwd
 : 1701482858:0;pwd | hls red
 : 1701482862:0;pwd | hls red | lolcate
 : 1701482864:0;pwd | hls red | lolcat
@@ -7259,7 +7247,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702961658:0;ls | lolcat | cat
 : 1702961774:0;o Music\ Data\ Base.xls
 : 1702961819:0;v ~/.visidatarc
-: 1702961832:0;cd ~/.visidata
 : 1702961864:0;visidata
 : 1702961875:0;x -sh visidata -e File -i
 : 1702961905:0;x -sh visidata -s ' ' -i
@@ -7326,7 +7313,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703041421:0;v elisp.info.gz
 : 1703042845:0;e ia font-lock-studio
 : 1703044918:0;v list-agenda-notmuch-searches
-: 1703044963:0;man uniq
 : 1703045292:0;j eww-follow-link
 : 1703048127:0;cd ~/.emacs.d/elpa
 : 1703048594:0;unicode "â€ƒ¸"
@@ -7441,7 +7427,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703122615:0;"pen-emacsclient" "-a" "" "-t" "-s" "DEFAULT" "-e" "(delete-frame)"
 : 1703122686:0;tm-unbuffer echo hi
 : 1703122723:0;unbuffer "pen-emacsclient" "-a" "" "-t" "-s" "DEFAULT" "-e" "(delete-frame)"
-: 1703122741:0;v unbuffer
 : 1703123012:0;echo hi | tm-unbuffer cat | v
 : 1703123017:0;echo hi | tm-unbuffer -p cat | v
 : 1703123035:0;tm-unbuffer echo hi | v
@@ -7488,7 +7473,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703146698:0;pen-e-ic -sn term bash
 : 1703146795:0;pen-e-ic -sn term zsh
 : 1703146812:0;export TERM=eterm-256color
-: 1703146908:0;nano
 : 1703146935:0;ead screen-256color
 : 1703147298:0;v nano
 : 1703147343:0;vim pen-log.el
@@ -7562,7 +7546,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703226174:0;tpop vim
 : 1703226258:0;tpop nem I Corinthians
 : 1703226493:0;v /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
-: 1703226495:0;nano /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
 : 1703275913:0;2 Cor 1:22 | v
 : 1703275928:0;2 Cor 1:21-22 | v
 : 1703290795:0;ead -i black_and_white
@@ -7642,7 +7625,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703320175:0;man ncal
 : 1703320727:0;java RandomRangeApp
 : 1703320762:0;java ShapeApplet
-: 1703320833:0;v open-main
 : 1703320880:0;tp find-here-path "*PAnel*"
 : 1703320885:0;cd shapes
 : 1703320942:0;java --help
@@ -8081,7 +8063,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704170251:0;Galatians 1:6-9 | v
 : 1704170441:0;chrome "/root/.pen/tmp/td_cr7stH7d/symalg.html"
 : 1704208170:0;v intty
-: 1704208293:0;v in-tty
 : 1704210493:0;tp find-here-path "*erase*"
 : 1704210496:0;cd strings
 : 1704210663:0;v /root/.pen/documents/notes/remember.org
@@ -8337,7 +8318,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704444686:0;v ATM.PAS
 : 1704444698:0;romans 3:25 | v
 : 1704444701:0;Romans 3:25 | v
-: 1704445067:0;feh countdown_logo_email.jpg
 : 1704445347:0;Psalm 53 | v
 : 1704445352:0;Psalm 14 | v
 : 1704445491:0;nasb Psalm 53 | v
@@ -9074,7 +9054,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706152953:0;acs chez
 : 1706152963:0;agi chezscheme
 : 1706152982:0;chezscheme
-: 1706153065:0;racket
 : 1706163080:0;pet racket
 : 1706163089:0;pet nvc racket
 : 1706163110:0;nvc racket
@@ -9399,7 +9378,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1707195841:0;2 Cor 12:3 | v
 : 1707195867:0;2 Corinthians 11:3 | v
 : 1707197663:0;wd
-: 1707212123:0;ls | lolcat
 : 1707246214:0;1 Peter 2
 : 1707252085:0;Matthew 25:23 | v
 : 1707258736:0;Romans 10\
@@ -9430,7 +9408,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1707387693:0;v /root/.emacs.d/host/pen.el/config/tmux-bw.conf
 : 1707388300:0;tmux source /root/.emacs.d/host/pen.el/config/tmux-bw.conf
 : 1707388330:0;256colors.pl
-: 1707388456:0;v listen.org
 : 1707388459:0;fpvd Music\ Data\ Base.xls
 : 1707388479:0;xc -P Music\ Data\ Base.xls
 : 1707389382:0;tp find-here-path "*show-bib*"
@@ -9917,7 +9894,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708592403:0;braille-show-image ~/.pen/documents/rays-maze-techtrons.png
 : 1708594687:0;which -a real-docker
 : 1708594698:0;tp find-here-symlink "*docker*"
-: 1708594726:0;ssh-host
 : 1708594742:0;cterm -ct-nem -ntm norl bash
 : 1708629704:0;nem Psalm 40:3
 : 1708633049:0;j ph-get-path-string
@@ -9997,7 +9973,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708771714:0;Lev 17:4 | v
 : 1708773445:0;Jeremiah 31:15 | v
 : 1708773458:0;Jeremiah 31
-: 1708800393:0;lls
 : 1708820590:0;e ia org-sync org-sync-snippets
 : 1708820605:0;pen-e -D ka
 : 1708837563:0;Jeremiah 32:40 | v
@@ -10265,7 +10240,6 @@ git clone "https://github.com/sidju/hired"\
 : 1709506887:0;nem decorated onelined zsh
 : 1709506888:0;Isaiah 66:3
 : 1709513328:0;v bash-message
-: 1709513492:0;man tmux
 : 1709513497:0;info -q tmux # <== man
 : 1709513503:0;v hs
 : 1709516046:0;ebible -m ESV Genesis 8:22 # <== Genesis
@@ -10570,7 +10544,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710016162:0;which -a git
 : 1710016186:0;tp find-here-path "*git-dp*"
 : 1710016220:0;v git-dp.sh
-: 1710016295:0;which -a vd
 : 1710016301:0;v pen-vd
 : 1710016321:0;man git
 : 1710016341:0;git difftool HEAD~2 -- listen.org
@@ -10742,7 +10715,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710497159:0;ead grey
 : 1710497194:0;v tmux-choose-window
 : 1710497232:0;ead -fg
-: 1710497266:0;v toggle-tmux-popup
 : 1710535885:0;Proverbs 20:23
 : 1710535909:0;Proverbs 21:27
 : 1710535944:0;Proverbs 15:26
@@ -10928,7 +10900,6 @@ print(data)' | uplot line
 : 1711000938:0;mkw uplot
 : 1711000967:0;v /root/.emacs.d/host/pen.el/scripts/uplot
 : 1711000976:0;ps aux | awk '{print $1}' | uplot count
-: 1711006118:0;hsqf gc
 : 1711006139:0;tp find-here-path "*youplot*"
 : 1711006144:0;cd red-data-tools/YouPlot
 : 1711006258:0;gem install ruby-lsp
@@ -10948,8 +10919,6 @@ print(data)' | uplot line
 : 1711009729:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | unbuffer -p uplot density -H -t IRIS | less -rS
 : 1711009738:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS
 : 1711009741:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS 2>&1
-: 1711009767:0;which -a unbuffer
-: 1711009775:0;man unbuffer
 : 1711009806:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | soak | unbuffer -p bash -c "uplot density -H -t IRIS 2>&1" | less -rS
 : 1711009815:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | vipe | unbuffer -p bash -c "uplot density -H -t IRIS 2>&1" | less -rS
 : 1711009826:0;ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | vipe | /usr/bin/unbuffer -p bash -c "uplot density -H -t IRIS 2>&1" | less -rS
@@ -11816,7 +11785,6 @@ e ia inheritenv
 : 1712973611:0;i gw
 : 1712974997:0;v /root/.pen/tmp/tf_tempaC3FLC2.txt
 : 1712974998:0;cat /root/.pen/tmp/tf_tempaC3FLC2.txt | transpose-characters.sh
-: 1712975085:0;dired
 : 1712975094:0;cat /root/.pen/tmp/tf_tempaC3FLC2.txt | transpose-characters.sh | transpose-characters.sh
 : 1712975143:0;which -a vsed
 : 1712975192:0;cat `which vsed` | vsed 's/br/__/g'
@@ -12426,7 +12394,6 @@ Matt
 : 1713938852:0;mkw prolog
 : 1713938861:0;which -a problog
 : 1713938863:0;mkw problog
-: 1713938930:0;which -a env
 : 1713938963:0;/volumes/home/shane/notes/ws/problog/scratch/umbrella.problog
 : 1713943942:0;cr /volumes/home/shane/notes/ws/problog/scratch/probabilistic-clause-coin.problog
 : 1713944735:0;Romans 4:5-6
@@ -12648,7 +12615,6 @@ Proverbs 4:14-15
 : 1714526342:0;htmls2txt
 : 1714532558:0;v bible-study-passage
 : 1714537352:0;Matthew 4:2
-: 1714537455:0;acpi -b
 : 1714542267:0;Thessalonians 5:18
 : 1714542278:0;II\ Thessalonians 5:18
 : 1714542281:0;I\ Thessalonians 5:18
@@ -12997,7 +12963,6 @@ Proverbs 4:14-15
 : 1714991691:0;John 3:3-5
 : 1714991738:0;Revelation of John 11:15
 : 1715056731:0;info -q calc
-: 1715056733:0;echo $?
 : 1715056755:0;/usr/bin/info -o /dev/stdout calc
 : 1715056795:0;v $MYGIT_HOST/emacs-mirror/emacs/info/calc.info
 : 1715056800:0;l calc.info
@@ -13725,7 +13690,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717560822:0;v tpop v
 : 1717560824:0;tpop v
 : 1717560827:0;tpop vipe v
-: 1717560838:0;v tpop
 : 1717560876:0;v vipe
 : 1717560877:0;echo hi | tpop -E "/root/.emacs.d/host/pen.el/scripts/container/vipe v"
 : 1717560918:0;echo hi | tpop -E "vipe v"
@@ -13733,7 +13697,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717565371:0;Deuteronomy 10:16-17
 : 1717565391:0;Deuteronomy 10:14-15
 : 1717590775:0;mcd marriage
-: 1717590778:0;v links.org
 : 1717590786:0;sp links.org
 : 1717590875:0;git commit -m "06.06.24"
 : 1717716019:0;tp find-here-path "*quote*"
@@ -15067,7 +15030,6 @@ Luke 5:8-10
 : 1720673965:0;Romans 7:6
 : 1720673973:0;Romans 7:6-7
 : 1720674002:0;2 Corinthians 3:4-6
-: 1720690700:0;git pull
 : 1720690797:0;v /volumes/home/shane/var/smulliga/source/git/KSneijders/AoE2ScenarioParser/README.md
 : 1720694416:0;vdd
 : 1720694576:0;1 Peter 4:16-17
@@ -15869,7 +15831,6 @@ Luke 5:8-10
 : 1723419977:0;1 Timothy 1:1â€ƒ³2
 : 1723420487:0;I Corinthians 14
 : 1723420664:0;Ephesians 2:19-20
-: 1723421980:0;vd
 : 1723423944:0;Job 22
 : 1723423985:0;Job 22:30
 : 1723424063:0;Hebrews 13:8
@@ -16185,7 +16146,6 @@ Luke 5:8-10
 : 1724192980:0;Galatians 4:10
 : 1724193028:0;Galatians 4:6-11
 : 1724193727:0;Hebrews 12:16
-: 1724193773:0;1 John 4:18
 : 1724193790:0;Matthew 6:14-15
 : 1724193827:0;Colossians 3:13
 : 1724194428:0;1 Chronicles 29:17
@@ -16637,7 +16597,6 @@ pip install hexabyte\
 : 1724981935:0;man hexabyte
 : 1724981941:0;hb --help
 : 1724981944:0;v hb
-: 1724982008:0;v man
 : 1724982017:0;which -a hb
 : 1724982028:0;hb -h
 : 1724982043:0;man hb
@@ -16822,7 +16781,6 @@ rm -rf /root/chd-1.1\
 : 1725006246:0;chd --help
 : 1725006359:0;unicode âƒ°ƒ©
 : 1725006415:0;v vimhelp
-: 1725006472:0;v ~/.vimrc
 : 1725006553:0;cat /usr/local/share/vim/vim82/doc/digraph.txt | hext
 : 1725006872:0;./configure
 : 1725006875:0;make -j4
@@ -16872,7 +16830,6 @@ rm -rf /root/chd-1.1\
 : 1725009796:0;sps emacs-file-monitor debugLog.txt
 : 1725010211:0;v hextr
 : 1725010225:0;v sps
-: 1725010315:0;v pen-tm
 : 1725010339:0;sps -p 40% emacs -nw -Q
 : 1725010345:0;sps -p 40 emacs -nw -Q
 : 1725010393:0;v hextweak
@@ -17744,7 +17701,6 @@ Proverbs 23:7
 : 1726629745:0;Exodus 23:27
 : 1726631516:0;du -shc .
 : 1726632278:0;"runhaskell" "playground.hs"
-: 1726632328:0;git branch
 : 1726634495:0;v unicode-select
 : 1726634500:0;unicode-select CHEM
 : 1726634559:0;v list-unicode
@@ -17774,7 +17730,6 @@ Proverbs 23:7
 : 1726644116:0;1 Corinthians 9:3-6
 : 1726644664:0;2 Corinthians 3:18
 : 1726645154:0;wget "https://github.com/fathyb/carbonyl/releases/download/v0.0.3/carbonyl.linux-arm64.zip"
-: 1726645208:0;popd
 : 1726645245:0;./carbonyl-0.0.3
 : 1726645250:0;./carbonyl-0.0.3/carbonyl
 : 1726645259:0;acs glibc
@@ -17783,7 +17738,6 @@ Proverbs 23:7
 : 1726645287:0;sh-find
 : 1726645306:0;./carbonyl-8ee0957cbefbc31a/build-script-build
 : 1726645365:0;wget "https://github.com/browsh-org/browsh/releases/download/v1.8.3/browsh-1.8.3.xpi"
-: 1726645406:0;vcr
 : 1726645471:0;v SETUP_DEV_LINUX.md
 : 1726645478:0;go version
 : 1726645488:0;node --version
@@ -17954,12 +17908,10 @@ Proverbs 23:7
 : 1726808041:0;rm ./core
 : 1726808111:0;git add -A .
 : 1726808120:0;git unstage
-: 1726811968:0;git status
 : 1726812271:0;nod I Corinthians 15:51-54
 : 1726812594:0;1 Peter 3:15-17
 : 1726813375:0;elinks-dump "https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt"
 : 1726828881:0;Romans 4:23-25
-: 1726829271:0;sh-git-hydra
 : 1726829275:0;Romans 4:16-17
 : 1726855840:0;pen-anygrep
 : 1726855842:0;v pen-anygrep
@@ -18049,7 +18001,6 @@ make install\
 : 1726879029:0;tp find-here-path "*libm*"
 : 1726879220:0;bash -c 'pen-tm -f -d -t sph -c %d "zsh"'
 : 1726879270:0;ls -ldt
-: 1726879277:0;ls -ldt *
 : 1726879281:0;ls lib
 : 1726879285:0;ls -ldt lib
 : 1726879312:0;sh
@@ -18091,7 +18042,6 @@ apt-get -y full-upgrade
 : 1726885367:0;killall preview
 : 1726885379:0;killall rifle
 : 1726885402:0;killall emacs
-: 1726885413:0;killall pen-e
 : 1726887727:0;tp find-here-path "*debian*"
 : 1726887740:0;tp find-here-path "*book*"
 : 1726887741:0;tp find-here-path "*worm*"
@@ -18172,7 +18122,6 @@ apt -y --fix-broken install
 : 1726893440:0;pen-xc
 : 1726893617:0;sol
 : 1726893714:0;npm install --global carbonyl
-: 1726894031:0;df -h
 : 1726895392:0;cd ~/repos/tmux
 : 1726895395:0;cd tmux
 : 1726895424:0;./configure --enable-sixel --prefix=$HOME/.local
@@ -18183,7 +18132,6 @@ apt -y --fix-broken install
 : 1726895490:0;./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
 : 1726895504:0;make -j $(nproc)
 : 1726895561:0;git clone --branch emacs-29 --depth 1 "https://github.com/emacs-mirror/emacs"
-: 1726895571:0;v
 : 1726895588:0;cd emacs
 : 1726895619:0;cd /tmp
 : 1726895628:0;wget "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi-dev_1.0.8-2.1_amd64.deb"
@@ -18236,7 +18184,6 @@ apt -y --fix-broken install
 : 1726897768:0;go install "github.com/TheZoraiz/ascii-image-converter@latest"
 : 1726897804:0;build install
 : 1726897807:0;cargo build install
-: 1726897809:0;cr
 : 1726897853:0;rm -rf hired
 : 1726897854:0;git clone --recurse-submodules https://github.com/sidju/hired
 : 1726897926:0;install-babashka
@@ -18244,7 +18191,6 @@ apt -y --fix-broken install
 : 1726898006:0;r-install-package languageserver
 : 1726898015:0;r-install-package lubridate
 : 1726898022:0;agi pv
-: 1726898074:0;textual-paint
 : 1726898082:0;v textual-paint
 : 1726898181:0;agi pandoc
 : 1726898202:0;pip3.8 install AoE2ScenarioParser
@@ -18298,16 +18244,12 @@ apt -y --fix-broken install
 : 1730109287:0;echo "$?"
 : 1730109362:0;v /root/repos/manateelazycat/cloel/demo/app.el
 : 1730110433:0;pinin
-: 1730111005:0;o
-: 1730111011:0;pin .
 : 1730135344:0;v run.sh
 : 1730135361:0;v pen-ensure-deps
 : 1730135380:0;cd ~/repos
 : 1730135395:0;cd "$(gc "https://github.com/manateelazycat/cloel")"
-: 1730135402:0;sh-yank
 : 1730135417:0;rm -rf manateelazycat
 : 1730135422:0;pen-ensure-deps
-: 1730135486:0;pin
 : 1730144292:0;Psalms 37:13-17
 : 1730145497:0;nod Philippians 2:8-9
 : 1730145513:0;Luke 6:35-36
@@ -18341,7 +18283,6 @@ apt -y --fix-broken install
 : 1730370970:0;emacs --quick --script /root/dump/tmp/scratchZMPyhy.txt Genesis 3
 : 1730370999:0;emacs --quick --script /root/dump/tmp/scratchZMPyhy.el Genesis 3
 : 1730371049:0;org-shebang Genesis 3
-: 1730371289:0;pe
 : 1730371321:0;clojure --version
 : 1730403252:0;v pin
 : 1730403285:0;v docker
@@ -18353,8 +18294,6 @@ apt -y --fix-broken install
 : 1730410066:0;bash
 : 1730410762:0;ls -ldt ~/.emacs.d/pen.el
 : 1730411150:0;v /root/repos/pen-emacsd/straight.el/straight.el
-: 1730411223:0;penq
-: 1730411351:0;v sp
 : 1730411367:0;v setup-term.sh
 : 1730411418:0;which -a sp
 : 1730411844:0;ls -ldt ~/.tmux.conf
@@ -18368,10 +18307,8 @@ apt -y --fix-broken install
 : 1730412409:0;ln -sf ~/.emacs.d/pen.el/config/bash/bashrc ~/.bashrc
 : 1730412431:0;ln -sf ~/.emacs.d/pen.el/config/nvimrc ~/.nvimrc
 : 1730412436:0;ls -ldt ~/.vim
-: 1730412447:0;sh-general
 : 1730412626:0;vim
 : 1730412636:0;ls -ldt ~/.vimrc
-: 1730412647:0;v v
 : 1730412864:0;pen
 : 1730413252:0;v aix_api_key
 : 1730413280:0;v melee-guy-stars.jpg
@@ -18416,7 +18353,6 @@ apt -y --fix-broken install
 : 1730413830:0;cd jour
 : 1730413833:0;cd journal
 : 1730413835:0;v 2023122
-: 1730413844:0;cd ..
 : 1730413849:0;rm -rf ht-cache
 : 1730413858:0;cd document
 : 1730413859:0;cd documents
@@ -18459,12 +18395,10 @@ apt -y --fix-broken install
 : 1730429660:0;cd org-brain
 : 1730429663:0;v agenda
 : 1730429670:0;v church-elders/Pastor\ Alistair\ Begg.org
-: 1730429673:0;sl
 : 1730429684:0;v welfare-organisations/Acts\ of\ Kindness\ Charitabe\ Trust.org
 : 1730429690:0;v welfare-organisations/SPCA.org
 : 1730429696:0;v doctrines/The\ Lord\'s\ day.org
 : 1730429700:0;pdw
-: 1730429701:0;cd
 : 1730429712:0;find . -name 'notmuch
 : 1730429714:0;find . -name 'notmuch'
 : 1730429728:0;cd ./repos/notmuch
@@ -18475,5 +18409,337 @@ apt -y --fix-broken install
 : 1730431131:0;gmi pull
 : 1730431149:0;cd downloads
 : 1730431151:0;s
-: 1730431152:0;ls
-: 1730431153:0;pwd
+: 1732566987:0;cat /root/.emacs.d/host/pen.el/scripts/babashka/utils/fzf.bb | fzf.bb
+: 1732610880:0;gipe.bb
+: 1732612347:0;v links.org
+: 1732612355:0;which -a pwd
+: 1732612358:0;v pwd
+: 1732612366:0;v listen.org
+: 1732612370:0;ls | lolcat
+: 1732616738:0;nano /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
+: 1732616742:0;nano listen.org
+: 1732616762:0;nvc emacs -nw
+: 1732616767:0;nvc emacs -nw -Q
+: 1732616772:0;nvc -2 emacs -nw -Q
+: 1732616822:0;nvc -2 sp
+: 1732627054:0;popd
+: 1732627167:0;v sp
+: 1732627263:0;v ~/.vimrc
+: 1732664259:0;raco pkg show
+: 1732664423:0;tm-sps
+: 1732664426:0;tm sps
+: 1732664509:0;tmux split-window
+: 1732664555:0;tmux bind C-M-Up run "tm sps"
+: 1732664591:0;tmux bind -n C-A-Up run "tm sps"
+: 1732664599:0;tmux bind -n C-M-Up run "tm sps"
+: 1732664741:0;wget "https://gist.githubusercontent.com/alganet/1b0c7c3ba5917937aa16/raw/15536b9002d3151ec29e67148f2de4d9616d579f/answer.sh"
+: 1732664746:0;chown a+x answer.sh
+: 1732664752:0;chmod a+x answer.sh
+: 1732664755:0;answer.sh
+: 1732664789:0;sh answer.sh
+: 1732664809:0;dash answer.sh
+: 1732664813:0;vim answer.sh
+: 1732665020:0;mcd racket
+: 1732665025:0;raco pkg new
+: 1732665029:0;raco pkg new YOYO
+: 1732665037:0;rm -rf YOYO
+: 1732665319:0;man racket
+: 1732665355:0;mv racket racket-scripts
+: 1732665360:0;mkw racket
+: 1732665413:0;v ./racket
+: 1732665447:0;shx ./racket --help
+: 1732665462:0;./racket -h
+: 1732665502:0;v ./racket-scripts/excitedness.rkt
+: 1732665743:0;you-gave-me.rkt yo
+: 1732665756:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/you-gave-me.rkt
+: 1732665757:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/you-gave-me.rkt yo
+: 1732665814:0;racket -m -- /root/.emacs.d/host/pen.el/scripts/racket-scripts/you-gave-me.rkt yo
+: 1732665837:0;v ./runracketscript
+: 1732665924:0;you-gave-me.rkt yodsaf
+: 1732665978:0;excitedness.rkt -e 5
+: 1732666017:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt -e 5
+: 1732666022:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt -e
+: 1732666034:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt --excited -b
+: 1732666054:0;racket /root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt --excited
+: 1732666065:0;git branch
+: 1732666072:0;/root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt --excited
+: 1732666083:0;/root/.emacs.d/host/pen.el/scripts/racket-scripts/excitedness.rkt --bye
+: 1732666204:0;"excitedness.rkt --excited"
+: 1732666232:0;you-gave-me.rkt
+: 1732667130:0;tp find-here-path "*langser*"
+: 1732667133:0;tp find-here-path "*racket*"
+: 1732667141:0;v racket-lsp
+: 1732667151:0;raco pkg update --batch racket-langserver
+: 1732667179:0;raco pkg install racket-langserver
+: 1732667459:0;le md
+: 1732667973:0;unicode "Âƒ€"
+: 1732668720:0;v vcr
+: 1732668819:0;raco test -x -p sample-racket-langauge
+: 1732668841:0;raco test -x -p sample-racket-language
+: 1732670279:0;v get-shebang-for-file
+: 1732670445:0;which -a env
+: 1732670526:0;v excitedness.rkt
+: 1732670543:0;/root/repos/davidelettieri/sample-racket-language/use-language.rkt
+: 1732670547:0;cd /root/repos/davidelettieri/sample-racket-language/
+: 1732670556:0;./use-language.rkt
+: 1732670568:0;runracketscript use-language.rkt
+: 1732670613:0;rm use-language.rkt
+: 1732670627:0;v ./use-language.rkt
+: 1732670652:0;v myscript.rkt
+: 1732670674:0;myscript.rkt
+: 1732670694:0;mv myscript.rkt use-racket-language.rkt
+: 1732670701:0;ls -ldt *
+: 1732670709:0;chmod a+x use-racket-language.rkt
+: 1732670739:0;cp -a use-language.rkt myscript.rkt
+: 1732670744:0;cp -a /root/repos/davidelettieri/sample-racket-language/use-language.rkt ./
+: 1732670759:0;dos2unix use-language.rkt
+: 1732671033:0;git checkout -- use-language.rkt
+: 1732671088:0;cd racket-scripts
+: 1732671093:0;cp /root/repos/davidelettieri/sample-racket-language/use-language.rkt ./
+: 1732671850:0;vd
+: 1732671977:0;pen-pvd --help
+: 1732672082:0;v man
+: 1732672143:0;pvd --help | pavs
+: 1732672166:0;which -a pvd
+: 1732672189:0;hsqf pvd
+: 1732672221:0;/root/.emacs.d/host/pen.el/scripts/pen-pvd --help
+: 1732672491:0;racket /root/repos/davidelettieri/sample-racket-language/use-language.rkt
+: 1732672554:0;v list-kjv-terms
+: 1732672560:0;v pavs
+: 1732672575:0;which -a colvs
+: 1732672589:0;list-kjv-terms
+: 1732672594:0;v pen-pa
+: 1732672602:0;v colvs
+: 1732672609:0;v vs
+: 1732672612:0;v pen-vs
+: 1732672624:0;v calc-best-n-columns
+: 1732672917:0;pen-send-cl-maybe
+: 1732672921:0;dlksafj
+: 1732672973:0;v pen-send-cl-maybe
+: 1732675450:0;v setup-keyboard
+: 1732675710:0;tp find-here-path "*Xmodmap*"
+: 1732677057:0;pip3 install ansi2html
+: 1732677068:0;mkw -pip ansi2html
+: 1732677100:0;ls --color=always | ansi2html > directories.html
+: 1732677103:0;eww directories.html
+: 1732677120:0;unbuffer pwd
+: 1732677130:0;unbuffer pwd | ansi2html > colorls.html
+: 1732677145:0;v colorls.html
+: 1732677155:0;pwd | lolcat | ansi2html > colorls.html
+: 1732677159:0;pwd | cat
+: 1732677215:0;man lolcat
+: 1732677225:0;pwd | lolcat -f | ansi2html > colorls.html
+: 1732677230:0;v ansi2html
+: 1732677235:0;chrome colorls.html
+: 1732677243:0;eww colorls.html
+: 1732677471:0;nvc -2 pvd -2
+: 1732677482:0;nvt -2 pvd -2
+: 1732677489:0;nvt -2 vim
+: 1732677494:0;nvt -2 -E "pvd -2"
+: 1732677498:0;nvt -2 -E "pvd -2; pak"
+: 1732677514:0;nvt pvd -2; pak"
+: 1732677515:0;nvt pvd -2; pak
+: 1732677528:0;nvt -2
+: 1732677561:0;nvt -2 -E "zrepl -cm pvd -2"
+: 1732677562:0;"pvd" "-2"
+: 1732677580:0;v zrepl
+: 1732677598:0;nvt -2 zrepl -cme pvd -2
+: 1732677653:0;v nvpvd
+: 1732677669:0;nvpvd
+: 1732677670:0;"pvd" "-2" ; exit "$?"
+: 1732677690:0;.csv
+: 1732677693:0;tp find-here-path "*.csv*"
+: 1732677700:0;nvpvd config/pen/tablist-test.csv
+: 1732677702:0;"pvd" "-2" "config/pen/tablist-test.csv" ; exit "$?"
+: 1732677722:0;nvpvd config/pen/cross_references.csv
+: 1732677724:0;"pvd" "-2" "config/pen/cross_references.csv" ; exit "$?"
+: 1732677764:0;sh-yank
+: 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
+: 1732677955:0;cd ~/.sword
+: 1732678836:0;pin
+: 1732678946:0;nano
+: 1732679634:0;git status
+: 1732679646:0;cd ..
+: 1732679653:0;rm scripts/colorls.html
+: 1732679655:0;rm scripts/directories.html
+: 1732679675:0;ssh-host
+: 1732679944:0;which -a wayback
+: 1732679953:0;which -a mypython
+: 1732680180:0;vim /tmp/yo.csv
+: 1732680639:0;"nvpvd" "/root/.emacs.d/host/pen.el/config/pen/cross_references.csv" ; exit "$?"
+: 1732680641:0;"pvd" "-2" "/root/.emacs.d/host/pen.el/config/pen/cross_references.csv" ; exit "$?"
+: 1732681093:0;cd ~/.visidata
+: 1732681095:0;cd plugins
+: 1732681100:0;v vd_toml.py
+: 1732682197:0;pvd -2
+: 1732683106:0;tp find-here-path "*readme*"
+: 1732683462:0;v find-readme-here
+: 1732683497:0;shx find-readme-here
+: 1732683502:0;/root/.emacs.d/host/pen.el/scripts/readme-scripts/find-readme-here
+: 1732683703:0;find-readme-here
+: 1732684696:0;dired
+: 1732684762:0;df -h
+: 1732685589:0;acpi -b
+: 1732685634:0;racket-scripts
+: 1732685765:0;v you-gave-me.rkt
+: 1732685770:0;you-gave-me.rkt kjdlsaf
+: 1732690192:0;lls
+: 1732690227:0;racket /root/repos/ericclack/racket-examples/asteroids1.rkt
+: 1732690348:0;racket /root/repos/ericclack/racket-examples/stars3.rkt
+: 1732690417:0;racket tree1b.rkt
+: 1732690424:0;drracket tree1b.rkt
+: 1732691088:0;o "https://github.com/racket/datalog"
+: 1732691302:0;v hello.rkt
+: 1732691891:0;v student.
+: 1732691893:0;v student.rkt
+: 1732691964:0;racket /root/repos/racket/datalog/tests/examples/hello.rkt
+: 1732692015:0;racket /root/repos/racket/datalog/tests/examples/fac.rkt
+: 1732692119:0;racket /root/repos/racket/datalog/tests/examples/says.rkt
+: 1732692135:0;racket /root/repos/racket/datalog/tests/examples/ancestor.rkt
+: 1732694590:0;v runracketscript
+: 1732694597:0;racket --help
+: 1732694705:0;textual-paint
+: 1732695144:0;which -a racket
+: 1732695167:0;racket
+: 1732695272:0;v racket
+: 1732696066:0;o
+: 1732696073:0;pin .
+: 1732696291:0;use-language.rkt
+: 1732696343:0;chrome sample-racket-language.html
+: 1732696360:0;cd compiled
+: 1732696370:0;z sample-racket-language.pdf
+: 1732697192:0;extract-digits-from-year.rkt
+: 1732697562:0;extract-digits-from-year.rkt "2099"
+: 1732697574:0;extract-digits-from-year.rkt "1999"
+: 1732697933:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
+: 1732700102:0;json_demo.clj
+: 1732700241:0;monads.clj
+: 1732700473:0;excitedness.rkt -e
+: 1732700477:0;excitedness.rkt -b
+: 1732701719:0;unicode "Âµ"
+: 1732701725:0;unicode "Î¼"
+: 1732739607:0;nod 1 John 4:18
+: 1732739643:0;1 John 4:18
+: 1732740862:0;penq
+: 1732770315:0;excitedness.rkt
+: 1732770532:0;drracket /root/.emacs.d/host/pen.el/scripts/racket-scripts/use-language.rkt
+: 1732770593:0;hsqf gc
+: 1732770617:0;git pull
+: 1732770619:0;cr
+: 1732770653:0;use-racket-language.rkt
+: 1732770676:0;l -u sample-racket-language
+: 1732770841:0;cd /usr/share/racket/
+: 1732770844:0;ncdu
+: 1732772325:0;pvd ~/.pen/documents/notes/Music\ Data\ Base.xls
+: 1732772496:0;pvd -2 ~/.pen/documents/notes/Music\ Data\ Base.xls
+: 1732772516:0;nvpvd ~/.pen/documents/notes/Music\ Data\ Base.xls
+: 1732772517:0;"pvd" "-2" "/root/.pen/documents/notes/Music Data Base.xls" ; exit "$?"
+: 1732782055:0;v v
+: 1732843866:0;mcd visidata-scripts
+: 1732843908:0;v visidata-pipeline-test.sh
+: 1732844102:0;v pwd._ext_freq.tsv
+: 1732844109:0;rm pwd._ext_freq.tsv
+: 1732844111:0;pvd
+: 1732844132:0;v ._ext_freq_cmdlog.vdj
+: 1732844164:0;vcr
+: 1732844177:0;which -a vd
+: 1732844198:0;v /root/.pen/documents/notes/._ext_freq_cmdlog.vdj
+: 1732844208:0;perl /root/.pen/documents/notes/._ext_freq_cmdlog.vdj
+: 1732844229:0;pvd --play /root/.pen/documents/notes/._ext_freq_cmdlog.vdj
+: 1732844251:0;/root/.pen/documents/notes/._ext_freq_cmdlog.vdj
+: 1732844289:0;mv /root/.pen/documents/notes/._ext_freq_cmdlog.vdj ./
+: 1732844295:0;mv ._ext_freq_cmdlog.vdj ext_freq_cmdlog.vdj
+: 1732844333:0;v ext_freq_cmdlog.vdj
+: 1732844341:0;sl
+: 1732844343:0;v ._cmdlog.vdj
+: 1732844394:0;ext_freq_cmdlog.vdj
+: 1732844508:0;cp -a ext_freq_cmdlog_out.vdj
+: 1732844511:0;cp -a ext_freq_cmdlog.vdj ext_freq_cmdlog_out.vdj
+: 1732844544:0;echo hi > /dev/stout
+: 1732844553:0;rm /dev/stout
+: 1732844557:0;echo hi > /dev/stdout
+: 1732844723:0;which -a in-tty
+: 1732844747:0;v in-tty
+: 1732844775:0;unbuffer echo hi | v
+: 1732844788:0;man unbuffer
+: 1732844833:0;hsqf pvd-play-out
+: 1732844860:0;man env
+: 1732844917:0;which -a visidatam
+: 1732844918:0;which -a visidata
+: 1732844934:0;v pvd
+: 1732845091:0;which -a unbuffer
+: 1732845151:0;ext_freq_cmdlog_out.vdj | v
+: 1732845282:0;sh-git-hydra
+: 1732845305:0;ext_freq_cmdlog_out.vdj | pvdf
+: 1732845316:0;pvd --help
+: 1732845341:0;ext_freq_cmdlog_out.vdj | pvd
+: 1732845418:0;v pvd-play-out
+: 1732845435:0;cd
+: 1732845449:0;v ext_freq_cmdlog_out.vdj
+: 1732845513:0;feh countdown_logo_email.jpg
+: 1732845525:0;rm /root/.emacs.d/host/pen.el/scripts/visidata-scripts/visidata-pipeline-test.sh
+: 1732846319:0;v open-main
+: 1732846686:0;extract-digits-from-year.rkt "2018"
+: 1732846703:0;extract-digits-from-year.rkt "20aa"
+: 1732846718:0;extract-digits-from-year.rkt "20ab"
+: 1732846847:0;event-language-demo.rkt
+: 1732846855:0;event-language-demo.rkt 40
+: 1732847015:0;cp -a match-language-demo.rkt
+: 1732847020:0;cp -a event-language-demo.rkt match-language-demo.rkt
+: 1732847079:0;match-language-demo.rkt
+: 1732847147:0;cp -a match-language-demo.rkt typed-racket-demo.rkt
+: 1732847157:0;v
+: 1732847311:0;typed-racket-demo.rkt
+: 1732847408:0;killall pen-e
+: 1732847413:0;typed-racket-demo.rkt 5.3
+: 1732852851:0;ext_freq_cmdlog_out.vdj
+: 1732852937:0;tmux customize-mode -Z
+: 1732853270:0;tmux display -t "$CALLER_TARGET" -p "#{session-windows}"
+: 1732853274:0;tmux display -p "#{session-windows}"
+: 1732853282:0;tmux display -p "#{session_windows}"
+: 1732853470:0;tmux display -p "#{server_sessions}"
+: 1732853738:0;tmux list-keys
+: 1732853740:0;tmux list-keys | v
+: 1732853801:0;tmux display -p "#{window_panes}"
+: 1732853885:0;tpop test yn "About to close last pane. Attach other session?"
+: 1732853951:0;tpop yn "About to close last pane. Attach other session?"
+: 1732853982:0;unbuffer tpop yn "About to close last pane. Attach other session?"
+: 1732853984:0;echo $?
+: 1732854124:0;tmux run -b echo hi
+: 1732854415:0;tmux wait-for yo
+: 1732854442:0;tmux wait-for yo && kill-pane
+: 1732854447:0;tmux wait-for yo && tmux kill-pane
+: 1732854459:0;tmux wait-for yo \; kill-pane
+: 1732854462:0;tmux wait-for -S yo
+: 1732854491:0;tmux choose-tree && echo hi | tv
+: 1732854557:0;v list-sessions
+: 1732854561:0;tmux list-sessions
+: 1732854564:0;sh-general
+: 1732854567:0;ead list-sessions
+: 1732854646:0;tm list-sessions
+: 1732854694:0;man uniq
+: 1732854831:0;pen-tm switch-session
+: 1732855022:0;tmux display -p "#{client_id}"
+: 1732855238:0;man ntmux
+: 1732855341:0;tmux display -p "#{client_name}"
+: 1732855554:0;Â» unbuffer tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session"
+: 1732855558:0;tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session"
+: 1732855569:0;unbuffer tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session" | cat
+: 1732855579:0;unbuffer tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session | cat" | v
+: 1732855585:0;tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session | cat" | v
+: 1732855596:0;v unbuffer
+: 1732855621:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && tm choose-session | cat" | v
+: 1732855635:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session" | v
+: 1732855650:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session"
+: 1732855752:0;v sout
+: 1732855786:0;ls
+: 1732855786:0;pwd
+: 1732855813:0;pe
+: 1732855868:0;v pen-tm
+: 1732855878:0;v tpop
+: 1732855890:0;v toggle-tmux-popup
+: 1732855909:0;man tmux
+: 1732856109:0;tmux display -p "#{session_name}"
+: 1732856149:0;tpop
+: 1732856277:0;excitedness.rkt --excited
+: 1732856313:0;penq
