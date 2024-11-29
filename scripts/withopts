@@ -7,7 +7,7 @@ sn="$(basename -- "$0")"
 
 # TODO Consider serialising many variables into an environment variable
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 case "$sn" in
     wo|withopts) {

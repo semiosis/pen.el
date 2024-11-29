@@ -5,9 +5,7 @@ export TTY
 # Maybe it already does? -- nah cos if a command fails it may still have
 # consumed the stdin
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     inputfp="$(pen-tf stdin)"

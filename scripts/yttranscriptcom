@@ -5,7 +5,7 @@ sn="$(basename "$0")"
 
 # if ! test "$INSIDE_CI" = "y"; then oci "$sn" "$@" | pavs; exit "$?"; fi
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 export UPDATE
 

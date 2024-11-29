@@ -5,9 +5,7 @@ export TTY
 
 sn="$(basename "$0")"
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 DS_QUIET=y
 DS_SILENT=

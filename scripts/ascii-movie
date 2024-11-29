@@ -12,7 +12,7 @@ export TTY
 
 # Now, run `ssh localhost` or `telnet localhost` to watch the movie!
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # github author/repo may need adjustment
 test -f "${GOPATH%%:*}/bin/up" || go install github.com/gabe565/ascii-movie@latest &>/dev/null

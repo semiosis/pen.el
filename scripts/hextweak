@@ -27,6 +27,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+. $SCRIPTS/lib/stdin_exists
+
+if ! stdin_exists && test -f "$1"; then
+    exec < <(cat "$1")
+    shift
+fi
+
 if test "$preview_with_repeats" = "y"; then
     : "${input_fp:="$PREVIEW_FILE"}"
     : "${input_fp:="$(cat | tf txt)"}"

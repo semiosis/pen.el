@@ -1,6 +1,6 @@
 #!/bin/bash
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 unset CWD
 
@@ -76,9 +76,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 # ls -la /proc/$$/fd | tv &>/dev/null
 
@@ -157,6 +155,6 @@ HEREDOC
 
 # exec <&1
 
-echo "$input_fp" | pen-ds -s xshlast
+realpath "$input_fp" | pen-ds -s xshlast
 
 bash "$input_fp"

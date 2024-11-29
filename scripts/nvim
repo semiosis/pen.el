@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # Test the speed of nvim:
 # nvim -u $HOME/.nvimrc -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"

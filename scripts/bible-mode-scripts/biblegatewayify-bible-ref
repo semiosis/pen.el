@@ -12,7 +12,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # https://www.biblegateway.com/passage/?search=Romans+6%3A23&version=ESV
 

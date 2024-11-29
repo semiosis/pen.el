@@ -66,9 +66,7 @@ done
 shift "$((OPTIND-1))"
 OPTIND=1
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 cmd="$1"
 shift

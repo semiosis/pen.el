@@ -22,7 +22,7 @@ esac; done
 # fi
 
 if test "$GIT_HS" = y; then
-    # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+    # . $SCRIPTS/lib/hs
     ( hs "$(basename "$0")" "$@" 0</dev/null ) &>/dev/null
 fi
 

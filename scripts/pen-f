@@ -22,9 +22,7 @@ is_stdout_tty() {
     [[ -t 1 ]]
 }
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 sn="$(basename "$0")"
 case "$sn" in

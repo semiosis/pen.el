@@ -5,9 +5,7 @@ export TTY
 
 # /usr/local/bin/vermin "$@" | awk '/Minimum required ver/{print gensub(/\.0$/,"","g",gensub(/.* /,"","g",$0))}'
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     fp="$(cat | tf py)"

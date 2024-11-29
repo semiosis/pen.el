@@ -57,7 +57,22 @@ ssh() { ( cmd command ssh -o LogLevel=QUIET "$@" | awk 1 1>&2; command ssh -o Lo
 #     ssh "$ssh_target" "bash -ic $(cmd "$CMD")"
 # }
 
-stdin_exists() { ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null; }
+# It loads very early
+# . $SCRIPTS/lib/stdin_exists
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+# stdin_exists() {
+#     ! [ -t 0 ] && read -t 0
+# }
+
 is_tty() { [ -t 1 ]; }
 pager() { { is_tty && less "$@"; } || cat; }
 

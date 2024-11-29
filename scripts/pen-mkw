@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 no_checks=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -95,7 +95,7 @@ IFS= read -r -d '' wrapcode <<'HEREDOC'
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 HEREDOC
 
 printf -- "%s\n" "$wrapcode" > ./$scriptname

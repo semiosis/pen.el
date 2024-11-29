@@ -1142,6 +1142,21 @@ xdg-open is a desktop utility that calls your preferred web browser."
             (forward-line 1)))))
       (eww-size-text-inputs))))
 
+(defun eww-reopen-in-chrome ()
+  (interactive)
+  ;; TODO Convert this back into html
+  ;; (tv (plist-get eww-data :dom))
+
+  ;; No worries, still have the html
+  (pen-snc
+   (concat
+    (cmd
+     "chrome"
+     (tf (concat (slugify (plist-get eww-data :url)) "_eww_XXXX")
+         (plist-get eww-data :source)
+         "html"))
+    " &")))
+
 (defun delete-selected ()
   (interactive)
   (delete-region (point) (mark))

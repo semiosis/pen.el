@@ -13,9 +13,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

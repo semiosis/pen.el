@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 hymnal_dir="/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org"
 pdf_dir="$hymnal_dir/Pdf"

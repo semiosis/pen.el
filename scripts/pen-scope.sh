@@ -3,7 +3,7 @@
 sn="$(basename -- "$0")"
 
 # Don't do this under normal circumstances.
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # Different pagers may be required by different file types
 # But should it matter? No.

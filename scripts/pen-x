@@ -6,9 +6,7 @@
 : ${TTY:="$(pen-tm-tty)"}
 export TTY
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     tfstdin="$(pen-tf txt)"

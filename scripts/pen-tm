@@ -232,9 +232,7 @@ fi
 is_tty() { [ -t 1 ]; }
 stdout_capture_exists() { ! is_tty; }
 pager() { if is_tty; then pen-v; else cat; fi; }
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }

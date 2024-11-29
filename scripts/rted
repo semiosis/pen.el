@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 rtcmd_cmd_fp="$TMPDIR/rtcmd-$pid.txt"
 rtcmd_script_fp="$TMPDIR/rtcmd-${pid}-script.txt"

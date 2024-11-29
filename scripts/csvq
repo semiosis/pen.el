@@ -3,7 +3,7 @@ export TTY
 
 # https://raw.githubusercontent.com/mithrandie/csvq/master/README.md
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # cat /root/.pen/cross_references.tsv | csvq -f tsv 'select * from stdin limit 10' | v
 

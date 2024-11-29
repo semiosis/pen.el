@@ -1,6 +1,6 @@
 #!/bin/bash
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 entry="$1"
 : ${entry:="agenda"}

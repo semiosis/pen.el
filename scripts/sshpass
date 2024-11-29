@@ -5,7 +5,7 @@ export TTY
 # and not for anything where I do not want the password remembered
 
 # Nevertheless, I disable the remembering of the passwords
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 test -f "/usr/bin/sshpass" || agi "sshpass" &>/dev/null
 

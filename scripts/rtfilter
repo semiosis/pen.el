@@ -1,9 +1,7 @@
 #!/bin/bash
 export TTY
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 sn="$(basename -- "$0")"
 cmdname="$(printf -- "%s" "$sn" | sed 's/^rt//')"

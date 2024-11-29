@@ -1,9 +1,7 @@
 #!/bin/bash
 export TTY
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 fp="$1"
 shift

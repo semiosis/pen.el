@@ -13,7 +13,7 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 # Instead of caching canonicalise-bible-book-title, cache canonicalise-bible-book-title
 # It's better to do that.
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 ref="$@"
 
@@ -22,15 +22,7 @@ if ! inside-docker-p; then
     exit "$?"
 fi
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 # Ps.33.6
 # Ps.136.5-Ps.136.8

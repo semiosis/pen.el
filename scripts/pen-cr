@@ -125,9 +125,7 @@ esac; done
 
 # printf -- "%s\n" "$1"
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists && ! test -f "$1"; then
     fp="$(cat | pen-tf txt)"

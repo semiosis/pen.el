@@ -1192,6 +1192,7 @@ Also see option `magit-blame-styles'."
 (defun invert-highlight-faces ()
   (interactive)
   (cl-loop for f in '(region iedit-occurrence
+                             lsp-face-highlight-textual
                              tty-menu-selected-face
                              popup-menu-mouse-face
                              popup-menu-selection-face
@@ -1603,6 +1604,8 @@ Also see option `magit-blame-styles'."
                                lsp-ui-peek-list
 
                                company-preview
+
+                               lsp-face-highlight-textual
 
                                ;; I shouldn't highlight the entire annotation
                                ;; because custom highlighting is used often.

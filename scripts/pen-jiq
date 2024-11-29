@@ -34,9 +34,7 @@ else
     fi
 fi
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 is_tty() {
     # If stout is a tty

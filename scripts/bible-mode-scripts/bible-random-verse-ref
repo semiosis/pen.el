@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 book="$(db-bible-book-list| sort -R | head -n 1)"
 chapter="$(( 1 + $RANDOM % "$(db-bible-book-max-chapter "$book")" ))"

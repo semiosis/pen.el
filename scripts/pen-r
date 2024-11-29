@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # remember: $HOME/scripts/ux
 # This file is where I should put commands that ranger hotkeys link to

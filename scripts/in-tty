@@ -4,7 +4,7 @@ export TTY
 # test
 # tmux run -b "echo hi | in-tty pa -tf"
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # . $PENEL_DIR/scripts/utils.sh
 . $PENELD/scripts/utils.sh

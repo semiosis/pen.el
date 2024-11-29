@@ -55,9 +55,7 @@ if test -n "$CMD"; then
     exit $?
 fi
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 if test "$#" -eq 0 && ! { test "$USE_STDIN" = y && stdin_exists; }; then
     exit 0

@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 test -f $HOME/.cargo/bin/dua || cargo install dua-cli --no-default-features --features tui-crossplatform &>/dev/null
 

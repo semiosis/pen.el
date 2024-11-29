@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 digraphs="$(cat /usr/local/share/vim/vim82/doc/digraph.txt | sed "0,/\\*digraph-table\\*/d" | sed -n '/.*\t.*\t.*\t.*\t.*/p')"
 

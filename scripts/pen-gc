@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 gitfolder="$MYGIT"
 
@@ -10,10 +10,7 @@ gitfolder="$MYGIT"
 # npm install -g download-gist
 # * Make this script download gists
 
-stdin_exists() {
-    ! [ -t 0 ]
-    # ! [ -t 0 ] && read -t 0
-}
+. $SCRIPTS/lib/stdin_exists
 
 is_tty() {
     # If stout is a tty

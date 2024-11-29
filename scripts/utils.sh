@@ -98,6 +98,7 @@ varexists() {
 # - No saving to file.
 # Sadly, macros are just not a thing in bash.
 
+# . $SCRIPTS/lib/stdin_exists
 stdin_exists() {
     test "$FUNCTION_UPDATE" = y && unset hasstdin
 

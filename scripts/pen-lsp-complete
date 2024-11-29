@@ -6,9 +6,7 @@ max_context_length=300
 
 export UPDATE=y
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     # 0</dev/null env | tv &>/dev/null

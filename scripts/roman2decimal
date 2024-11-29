@@ -5,15 +5,7 @@ set -eu -o pipefail
 
 # https://gist.githubusercontent.com/pysysops/7596f1c0a5c6d14151bbd987a2fb95e5/raw/dca136ceab7961287dedee1a8c6ace627cab6aa7/roman2number.sh
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     roman_numerals="$(cat)"

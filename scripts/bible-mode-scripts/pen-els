@@ -3,7 +3,7 @@ export TTY
 
 # This script runs a standalone vanilla emacs to run code
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 sn="$(basename -- "$0")"
 
@@ -30,15 +30,7 @@ case "$sn" in
     ;;
 esac
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     input_fp="$(cat | tf -X input txt)"

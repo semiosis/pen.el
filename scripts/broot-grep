@@ -4,7 +4,7 @@ export TTY
 # INT is C-c. Hup is no hangup when tty is killed
 # trap '' HUP INT
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 query="$@"
 

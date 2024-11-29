@@ -7,7 +7,7 @@ export TTY
 # Then to test:
 # catw scrape-bible-references | scrape-bible-references
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 if [ $# -eq 1 ]; then
     if ! [ -f "$1" ]; then

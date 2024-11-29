@@ -1,6 +1,6 @@
 #!/bin/bash
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 aqf() { aqf-nice "$@"; }
 
@@ -58,9 +58,7 @@ if test "$(pwd)" = "$SCRIPTS"; then
     dogit=n
 fi
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 : ${dired_dir:="$(pwd)"}
 

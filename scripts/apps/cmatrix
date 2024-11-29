@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # tpop -bg 100 -fg 120 -nos cmatrix
 # tpop -bg $(( $RANDOM % 255 )) -bg $(( $RANDOM % 255 )) -nos cmatrix

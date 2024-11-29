@@ -9,9 +9,7 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 case "$VISUAL" in
     nano) {

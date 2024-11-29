@@ -2,7 +2,7 @@
 export TTY
 # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 IFS= read -r -d '' vars <<HEREDOC
 active_window_index: #{active_window_index}

@@ -11,9 +11,7 @@ export FZF_DEFAULT_COMMAND
 
 unset CWD
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 tf_input="$(pen-ux tf fzf txt || echo /dev/null)"
 trap "rm \"$tf_input\" 2>/dev/null" 0

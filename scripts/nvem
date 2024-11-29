@@ -5,7 +5,7 @@ export TTY
 
 # This is quite fast because the syntax highlighting only opperates on the visible text
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}

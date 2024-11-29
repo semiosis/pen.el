@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 NOPRETTY=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -25,9 +25,7 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 # This magically makes the UML into left-right instead of top-down
 preprocess() {

@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # jq-showschema-old "$@" | sed 's/\.\([a-z-]\+\)/\.\["\1"\]/g'
 # jq-show-schema-values-quine "$@" | sed 's/\.\([a-z-]\+\)/\.\["\1"\]/g'

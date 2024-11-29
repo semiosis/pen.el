@@ -24,9 +24,7 @@ fp="$1"
 dn="$(dirname "$fp")"
 test -n "$dn" && mkdir -p "$dn"
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 is_tty() {
     # If stout is a tty

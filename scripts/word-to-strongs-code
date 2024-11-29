@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # sqlite3 /root/.pen/gematria-interlinear.db "select StrongsNumber from Strongs_ where Root='אֲבַגְתָא'"
 

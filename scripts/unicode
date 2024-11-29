@@ -3,7 +3,7 @@ export TTY
 
 # unicode arrow | sed -e '/^[a-zA-Z]/d' -e '/^$/d' | tr '\n' ' ' | wrap 90 | sed '1,2d' | sed '8q'
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 is_tty() {
     # If stout is a tty

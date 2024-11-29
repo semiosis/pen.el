@@ -4,7 +4,7 @@ export TTY
 # This wraps a command with a pattern parameter =+/= that assumes the
 # underlying command is emacs-based
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # Example
 # ems +/"when done" sp $HOME/scripts/ems

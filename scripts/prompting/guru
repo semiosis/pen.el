@@ -117,9 +117,7 @@ else
     PEN_ENGINE_ELISP=nil
 fi
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 # test -n "$person" || {
 #     echo "Person name required as parameter." 12

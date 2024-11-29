@@ -128,9 +128,7 @@ fi
 
 export QUIET
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 : ${ONLY_WINDOW:="n"}
 

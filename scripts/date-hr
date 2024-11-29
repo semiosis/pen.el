@@ -6,9 +6,7 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists && ! is_tty; then
     awk1 | while IFS=$'\n' read -r line; do

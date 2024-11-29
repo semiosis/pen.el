@@ -1,6 +1,6 @@
 #!/bin/bash
 export TTY
 
-# t( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# t. $SCRIPTS/lib/hs
 
 ps -ef |grep pen-emacsd | grep -v grep | awk '{print $2}' | pen-xa kill -9

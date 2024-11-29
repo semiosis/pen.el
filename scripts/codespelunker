@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # github author/repo may need adjustment
 test -f "${GOPATH%%:*}/bin/cs" || go install github.com/boyter/cs@v1.3.0 &>/dev/null

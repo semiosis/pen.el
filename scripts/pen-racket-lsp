@@ -3,7 +3,7 @@ export TTY
 
 # Frustratingly, this cant be named racket-langserver
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # raco pkg update --batch racket-langserver
 

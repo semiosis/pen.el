@@ -153,9 +153,7 @@ CWD="$(pwd)"
 ecmd="(cd $(cmd-nice-posix "$CWD"))(grep-mode)"
 ecmd="(ignore-errors $ecmd)"
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 grep() {
     if test "$PARSE_OPTIONS" = "y"; then

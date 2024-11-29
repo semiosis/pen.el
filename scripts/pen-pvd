@@ -1,6 +1,6 @@
 #!/bin/bash
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+. $SCRIPTS/lib/hs
 
 # https://www.visidata.org/install/
 
@@ -117,9 +117,7 @@ if is_tty && ! test "$IN_UNBUFFER" = y && ! is_stdout_pipe; then
     eval `resize`
 fi
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     if test "$iscsv" = "y"; then

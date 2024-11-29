@@ -3,7 +3,7 @@ export TTY
 
 # DEPRECATED
 
-# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # The problem with show-fds is an index doesn't exists for the pipes
 

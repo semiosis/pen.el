@@ -4,9 +4,7 @@ test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
 test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
+. $SCRIPTS/lib/stdin_exists
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
