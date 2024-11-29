@@ -3,12 +3,17 @@
   ;; (:require [babashka.deps :as deps])
   )
 
+;; https://clojuredocs.org/clojure.string/replace
+
 ;; TODO Learn to 
 
 (require '[clojure.string :as s]
          '[clojure.java.io :as io])
 
-(alias 'string 'clojure.string)
+;; Sadly, this though it works to make a string/ namespace
+;; available, it also makes the s namespace (s/) no longer
+;; complete inside the cider repl
+;; (alias 'string 'clojure.string)
 
 (comment
   (letfn [(twice [x]
@@ -25,10 +30,12 @@
       (str
        (clojure.string/join separator (map uc s))
        (s/join separator (map uc s))
-       (string/join separator (map uc s)))
+       ;; (string/join separator (map uc s))
+       )
       
       (ms/println-and-return
        (s/join "\n"
                  [(clojure.string/join separator (map uc s))
                   (s/join separator (map uc s))
-                  (string/join separator (map uc s))])))))
+                  ;; (string/join separator (map uc s))
+                  ])))))

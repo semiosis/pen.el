@@ -45,7 +45,8 @@ pager() {
     else
         (
             cat "$HOME/notes/vim_mru_files.txt" | sed 1d
-            cat "$EMACSD/recentf" | rosie grep -o subs net.path
+            ` # cat "$EMACSD/recentf" | rosie grep -o subs net.path `
+            cat "/root/.emacs.d/recentf-DEFAULT" | rosie grep -o subs net.path
             ` # cat "$HOME$MYGIT/spacemacs/.cache/recentf"          `
             ` # cat "$HOME$MYGIT/purcell/emacs.d/recentf"           `
             ` # cat "$HOME$MYGIT/jkitchin/scimax/user/recentf"      `

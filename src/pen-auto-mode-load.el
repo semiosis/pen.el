@@ -120,7 +120,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.yas\\|\\.snippet\\)\\'" . snippet-mode))
 (add-to-list 'auto-mode-alist '("\\(shellrc\\|\\.shell_aliases\\|profile\\|\\.profile\\|scriptrc\\|bashrc\\|\\.bashrc\\|\\.bash_logout\\|\\.bash_profile\\|\\.zshrc\\|\\.shell_environment\\|\\.shell_functions\\|zshrc\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.aderc\\)\\'" . sh-mode))
-(add-to-list 'auto-mode-alist '("\\(\\.Xresources\\|\\.Xdefaults\\)\\'" . conf-xdefaults-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.?Xresources\\|\\.?Xdefaults\\)\\'" . conf-xdefaults-mode))
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.prompt\\'" . prompt-description-mode))
 (add-to-list 'auto-mode-alist '("\\.gitlab-ci\\.yml\\'" . gitlab-ci-mode))

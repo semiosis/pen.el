@@ -140,28 +140,36 @@
       (setq p (str p)))
 
   (let ((mn "*emacs-lisp-scratch*"))
-    (rename-error
-     (concat "Can't find " p " in loaded packages")
-     
-
-     ;; (try
-     ;;  (with-current-buffer
-     ;;      (switch-to-buffer mn)
-     ;;    (emacs-lisp-mode)
-     ;;    (let ((r (lispy-goto-symbol ,(str2sym p))))
-     ;;      (kill-buffer mn)
-     ;;      r)))
-
-     (try
-      (with-current-buffer
-          (switch-to-buffer mn)
-        (emacs-lisp-mode)
-        (let ((r (lispy-goto-symbol (str2sym p))))
-          (kill-buffer mn)
-          r))
-      (progn
+    (with-current-buffer
+        (switch-to-buffer mn)
+      (emacs-lisp-mode)
+      (let ((r (lispy-goto-symbol (str2sym p))))
         (kill-buffer mn)
-        (error (concat "Can't find " p " in loaded packages. Killing buffer")))))))
+        r))
+    ;; (comment
+    ;;  (rename-error
+    ;;   (concat "Can't find " p " in loaded packages")
+      
+
+    ;;   ;; (try
+    ;;   ;;  (with-current-buffer
+    ;;   ;;      (switch-to-buffer mn)
+    ;;   ;;    (emacs-lisp-mode)
+    ;;   ;;    (let ((r (lispy-goto-symbol ,(str2sym p))))
+    ;;   ;;      (kill-buffer mn)
+    ;;   ;;      r)))
+
+    ;;   (try
+    ;;    (with-current-buffer
+    ;;        (switch-to-buffer mn)
+    ;;      (emacs-lisp-mode)
+    ;;      (let ((r (lispy-goto-symbol (str2sym p))))
+    ;;        (kill-buffer mn)
+    ;;        r))
+    ;;    (progn
+    ;;      (kill-buffer mn)
+    ;;      (error (concat "Can't find " p " in loaded packages. Killing buffer"))))))
+    ))
 
 (comment
  (defun pen-goto-package-all (p)
