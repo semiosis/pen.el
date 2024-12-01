@@ -10,6 +10,17 @@ export TTY
 
 input_fp="$(cat | tf txt)"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -m) {
+        DO_MANUAL_TOUCHUP=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 transformer="$1"
 test -n "$transformer" || exit 1
 shift
@@ -37,6 +48,10 @@ bytepos_fp="$(grep -F -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 # pid="$$"
 # pty="$(pid2tty "$pid")"
 # output_fp="$(grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 2>/dev/null | tf txt)"
+
+if test "$DO_MANUAL_TOUCHUP" = "y"; then
+    unbuffer sps -w vd "$matches_fp" "$transformed_fp"
+fi
 
 grepfilter-transform.els "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 2>/dev/null
 

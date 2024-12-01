@@ -68,7 +68,7 @@
                  (fz filters nil nil prompt)))))
 
 ;; Filter should include the extract and transform commands
-(defun pen-fwfzf (&optional type)
+(defun pen-fwfzf (&optional type manually)
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only.
 
 e:$EMACSD/pen.el/config/filters/filters.sh
@@ -83,7 +83,15 @@ e:$EMACSD/pen.el/config/filters/filters.sh
            (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
                                         ; in one clause
         (t
-         (pen-region-pipe (select-filter "pen-fwfzf:" type)))))
+         (let ((filter (select-filter
+                        (if manually
+                            "pen-fwfzf (with manual touch-up):"
+                          "pen-fwfzf:")
+                        type)))
+           (pen-region-pipe
+            (if manually
+                (concat "manually " filter)
+              filter))))))
 
 (defun pen-extract ()
   (interactive)
@@ -99,9 +107,15 @@ e:$EMACSD/pen.el/config/filters/filters.sh
 
 (defun pen-grepfilter ()
   (interactive)
+  ;; H-u is the global prefix
+  (let ((gparg (prefix-numeric-value current-global-prefix-arg))
+        (current-global-prefix-arg nil))
+    (cond ((>= gparg 16) nil)
+          ((>= gparg 4) (pen-fwfzf 'grepfilters t))
+          (t (pen-fwfzf 'grepfilters nil))))
 
   ;; (message "Grepfilter")
-  (pen-fwfzf 'grepfilters))
+  )
 
 (defun pen-summarizer ()
   (interactive)
