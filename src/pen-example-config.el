@@ -1390,8 +1390,8 @@
 (define-key selected-keymap (kbd "A") 'pen-add-to-glossary-file-for-buffer)
 
 (require 'pen-major-mode)
-(define-key global-map (kbd "M-z") 'run-major-mode-function)
-(define-key pen-map (kbd "M-z") 'run-major-mode-function)
+(define-key global-map (kbd "M-z") 'run-mode-function)
+(define-key pen-map (kbd "M-z") 'run-mode-function)
 (define-key global-map (kbd "<help> j") 'custom-define-key)
 (define-key pen-map (kbd "<help> j") 'custom-define-key)
 (define-key global-map (kbd "<help> J") 'custom-keys-goto)

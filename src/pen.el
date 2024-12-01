@@ -101,11 +101,17 @@ It's really meant for key bindings and which-key, so they should all be interact
 ;; emacs 29
 (defalias 'major-mode-p 'derived-mode-p)
 (defalias 'major-mode-enabled 'derived-mode-p)
+;; This checks to see if the minor mode is active. I also would like a predicate
+;; which checks to see if the symbol is a minor mode. But I need to find that.
 (defalias 'minor-mode-p 'bound-and-true-p)
 (defalias 'minor-mode-enabled 'bound-and-true-p)
 ;; emacs29 has transient builtin now
 (defalias 'define-transient-command 'transient-define-prefix)
 (defalias 'define-infix-command 'transient-define-infix)
+
+;; (defun is-minor-mode-p (symbol)
+;;   (helpful-symbol 'git-gutter+-mode)
+;;   (find-function 'test-case-mode))
 
 ;; elpa
 ;; For string-empty-p

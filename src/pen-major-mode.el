@@ -23,26 +23,40 @@
           (if (sor funstr)
               (-filter 'commandp (mapcar 'intern (str2lines funstr))))))))
 
-(defun select-major-mode-function (&optional map)
+;; This may also be used for minor modes
+(defun select-mode-function (&optional map)
   (if (not map)
       (setq map (current-major-mode-map)))
 
   (let ((ms (show-map-as-string map)))
     (if (sor ms)
-        (let* ((funstr
-                (fz-syms
-                 "select-major-mode-function: "
-                 (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | rev | pen-str field 1 | rev" ms))))
+        (let* ((options (pen-snc "sed '/No keyboard bindings/d' | sed '/Raw keymap data:/,$d' | sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | rev | pen-str field 1 | rev" ms))
+               (funstr
+                (if (sor options)
+                    (fz-syms
+                     "select-mode-function: "
+                     options))))
           (if (sor funstr)
               (let ((fun (intern funstr)))
                 (if (commandp fun)
                     fun)))))))
 
-(defun run-major-mode-function (&optional map)
+(defun run-mode-function (&optional map)
   (interactive)
-  (let ((fun (select-major-mode-function map)))
-    (if (commandp fun)
+  (let ((fun (select-mode-function map)))
+    (if (and (commandp fun)
+             (yn (concat "Run " (str fun))))
         (call-interactively fun))))
+
+(defun copy-mode-function (&optional map)
+  (interactive)
+  (let ((fun (select-mode-function map)))
+    (xc fun)))
+
+(defun help-for-mode-function (&optional map)
+  (interactive)
+  (let ((fun (select-mode-function map)))
+    (helpful-symbol fun)))
 
 (defcustom custom-defined-keys nil
   "Custom defined keys"
@@ -66,7 +80,7 @@
                 kp))))
 
   (if (not def)
-      (setq def (select-major-mode-function keymap)))
+      (setq def (select-mode-function keymap)))
 
   (let ((keystr (format "%s" (key-description key))))
     (if (not def)
