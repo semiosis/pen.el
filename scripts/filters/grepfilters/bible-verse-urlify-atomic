@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# TODO First, unlinkify
+# Secondly,relinkify
+
+# scrape-bible-references -v   # verses only
+
+grepfilter "wrlp -E \"org-unclink -t biblegateway | biblegatewayify-bible-ref\"" filter-org-links

@@ -9,12 +9,50 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -excp) {
+        exclusion_pattern="$2!
+        shift
+        shift
+    }
+    ;;
+
+    -xtraf) {
+        extra_filter="$2!
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 pat="$@"
 
 : "${pat:="http"}"
+
+pattern_filter() {
+    (
+        {
+            if test -n "$pat"; then
+                grep -P "$pat"
+            else
+                cat
+            fi
+        } | {
+            if test -n "$exclusion_pattern"; then
+                grep -v -P "$exclusion_pattern"
+            else
+                cat
+            fi
+        } | {
+            if test -n "$extra_filter"; then
+                eval "$extra_filter"
+            else
+                cat
+            fi
+        }
+    )
+}
 
 if test -n "$pat"; then
     # newline
@@ -23,7 +61,7 @@ if test -n "$pat"; then
     awk1 | while IFS="$IFS" read -r line; do
         (
         exec 0</dev/null
-            if printf -- "%s\n" "$line" | grep -q -P "$pat"; then
+            if test -n "$( printf -- "%s\n" "$line" | pattern_filter; )"; then
                 if test "$back_to_title" = "y"; then
                     printf -- "%s\n" "$line" | sed "s/\\[\\[[a-z]\\+[^]]\\+\\]\\[\\([^]]\\+\\)\\]\\]/\\1/g"
                 else

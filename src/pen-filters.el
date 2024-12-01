@@ -54,14 +54,19 @@
          (filters
           (pcase type
             ('extractors
+             ;; e:/root/.emacs.d/host/pen.el/config/filters/extractors.sh
              (cat (f-join dir "extractors.sh")))
             ('transformers
+             ;; e:/root/.emacs.d/host/pen.el/config/filters/transformers.sh
              (cat (f-join dir "transformers.sh")))
             ('grepfilters
+             ;; e:/root/.emacs.d/host/pen.el/config/filters/grepfilters.sh
              (cat (f-join dir "grepfilters.sh")))
             ('summarizers
+             ;; e:/root/.emacs.d/host/pen.el/config/filters/summarizers.sh
              (cat (f-join dir "summarizers.sh")))
             (_
+             ;; e:/root/.emacs.d/host/pen.el/config/filters/filters.sh
              (cat (f-join dir "filters.sh"))))))
 
     (chomp (esed " #.*" ""
