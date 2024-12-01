@@ -10,14 +10,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -excp) {
-        exclusion_pattern="$2!
+        exclusion_pattern="$2"
         shift
         shift
     }
     ;;
 
     -xtraf) {
-        extra_filter="$2!
+        extra_filter="$2"
         shift
         shift
     }
