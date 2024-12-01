@@ -525,6 +525,11 @@ We don't extract the string that `lps-line' is already displaying."
                       (insert s)))
                   (run-mode-hooks)
 
+                  ;; For some reason, when opening racket lsp docs for a symbol at point with M-9
+                  ;; the help window is not read-only. But even putting this here doesn't work.
+                  ;; (read-only-mode t)
+                  ;; Being read-only is a problem because also undo (C-/) is not working in the help buffer
+
                   ;; consider opening in glow
                   (if (looks-like-markdown-p (buffer-string))
                       (let ((buf (current-buffer)))

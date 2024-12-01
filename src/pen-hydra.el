@@ -241,7 +241,14 @@ display values."
                          "VISUAL: tools"
                          ("e" (dff (rfilter (lambda (s) (concat "[[egr:" pen-str "]]")))) "egr")
                          ;; ("l" (df h-org-clink (pen-region-pipe "oc")) "oc")
-                         ("l" (df h-org-clink (pen-region-pipe "relinkify")) "relinkify")
+                         ("l" (df h-org-clink
+                                  (let ((gparg (prefix-numeric-value current-prefix-arg))
+                                        (current-prefix-arg nil))
+                                    (cond ;; ((>= gparg 16) nil)
+                                          ((>= gparg 4)
+                                           ;; (pen-region-pipe "org clink -u")
+                                           (pen-region-pipe "relinkify -u"))
+                                          (t (pen-region-pipe "relinkify"))))) "relinkify")
                          ("L" (df h-org-clink-u (pen-region-pipe "org clink -u")) "org clink -u")
                          ("g" (df h-org-clink-g (pen-region-pipe "org clink -g")) "org clink -g")
                          ("u" 'h-org-clink-u "org clink -u")))
