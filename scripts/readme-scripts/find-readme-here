@@ -11,4 +11,4 @@ export TTY
 # pat="$1"
 
 cd "$dir"
-find . \( -iname '*.md' -or -iname '*.markdown' -or -iname '*.org' -or -iname '*.adoc' -or -iname '*.rst' \) | sed 's=^\./==' | pa -E "fzf --sync | xa sp"
+find . \( -iname '*readme*' -or -iname '*.md' -or -iname '*.markdown' -or -iname '*.org' -or -iname '*.adoc' -or -iname '*.rst' \) | sed 's=^\./==' | pa -E "fzf --sync | xa sp"

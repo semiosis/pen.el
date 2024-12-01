@@ -3,13 +3,14 @@
 (defun find-readme-here (&optional dir)
   (interactive)
   (setq searchdir (or dir default-directory))
-  (let* ((rootdir (projectile-project-root searchdir))
+  (let* ((rootdir (or (projectile-project-root searchdir)
+                      searchdir))
          (fp (fz
               (mapconcat
                (lambda (s)
                  (f-relative (concat rootdir s)))
                (str2lines
-                (snc (cmd "find-readme-here" rootdir)))
+                (snc (cmd "spin" "find-readme-here" rootdir)))
                "\n")
               nil nil "README search" nil t)))
     (if (f-file-p fp)
