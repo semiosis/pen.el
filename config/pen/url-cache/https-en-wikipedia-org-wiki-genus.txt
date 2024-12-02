@@ -1,0 +1,1012 @@
+HTTP/1.1 200 OK
+date: Sun, 29 Sep 2024 06:56:08 GMT
+vary: Accept-Encoding,Cookie,Authorization
+server: ATS/9.2.5
+x-content-type-options: nosniff
+content-language: en
+accept-ch: 
+last-modified: Thu, 26 Sep 2024 23:21:11 GMT
+content-type: text/html; charset=UTF-8
+age: 60353
+x-cache: cp5018 hit, cp5018 hit/12
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp5018"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+set-cookie: WMF-Last-Access=29-Sep-2024;Path=/;HttpOnly;secure;Expires=Thu, 31 Oct 2024 12:00:00 GMT
+set-cookie: WMF-Last-Access-Global=29-Sep-2024;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu, 31 Oct 2024 12:00:00 GMT
+set-cookie: WMF-DP=926;Path=/;HttpOnly;secure;Expires=Mon, 30 Sep 2024 00:00:00 GMT
+x-client-ip: 2407:7000:8257:5800:fdd:4ae8:fe80:7fda
+cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
+set-cookie: GeoIP=NZ:OTA:Dunedin:-45.84:170.50:v4; Path=/; secure; Domain=.wikipedia.org
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=Lax;Max-Age=3600
+accept-ranges: bytes
+content-length: 40203
+
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Genus - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"04bfcaf3-9dbb-458b-87c4-efb50dd6d8a1","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Genus","wgTitle":"Genus","wgCurRevisionId":1220532484,"wgRevisionId":1220532484,"wgArticleId":38493,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles containing Latin-language text","All articles with vague or ambiguous time","Vague or ambiguous time from August 2023","Webarchive template wayback links","Genera","Botanical nomenclature","Plant taxonomy","Zoological nomenclature","Bacterial nomenclature","Taxa named by Joseph Pitton de Tournefort"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":
+"Genus","wgRelevantArticleId":38493,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q34740","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands",
+"fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.page.media","ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips",
+"ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.43.0-wmf.24">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/1200px-Biological_classification_L_Pengo_vflip.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="3000">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/800px-Biological_classification_L_Pengo_vflip.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="2000">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/640px-Biological_classification_L_Pengo_vflip.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="1600">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Genus - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Genus">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Genus&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Genus">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Genus rootpage-Genus skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-sitesupport" class="mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation" class=""><span>Donate</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Genus" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Genus" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Genus" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Genus" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Etymology"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Etymology">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Etymology</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Etymology-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Use"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Use">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Use</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Use-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Use subsection</span>
+			</button>
+		
+		<ul id="toc-Use-sublist" class="vector-toc-list">
+			<li id="toc-Use_in_nomenclature"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Use_in_nomenclature">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Use in nomenclature</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Use_in_nomenclature-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-The_type_concept"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#The_type_concept">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2</span>
+					<span>The type concept</span>
+				</div>
+			</a>
+			
+			<ul id="toc-The_type_concept-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Categories_of_generic_name"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Categories_of_generic_name">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.3</span>
+					<span>Categories of generic name</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Categories_of_generic_name-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Identical_names_(homonyms)"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Identical_names_(homonyms)">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.4</span>
+					<span>Identical names (homonyms)</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Identical_names_(homonyms)-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Use_in_higher_classifications"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Use_in_higher_classifications">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.5</span>
+					<span>Use in higher classifications</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Use_in_higher_classifications-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Numbers_of_accepted_genera"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Numbers_of_accepted_genera">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Numbers of accepted genera</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Numbers_of_accepted_genera-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Genus_size"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Genus_size">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Genus size</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Genus_size-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Genus</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 128 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-128" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">128 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-af mw-list-item"><a href="https://af.wikipedia.org/wiki/Genus" title="Genus – Afrikaans" lang="af" hreflang="af" data-title="Genus" data-language-autonym="Afrikaans" data-language-local-name="Afrikaans" class="interlanguage-link-target"><span>Afrikaans</span></a></li><li class="interlanguage-link interwiki-als mw-list-item"><a href="https://als.wikipedia.org/wiki/Gattung_(Biologie)" title="Gattung (Biologie) – Alemannic" lang="gsw" hreflang="gsw" data-title="Gattung (Biologie)" data-language-autonym="Alemannisch" data-language-local-name="Alemannic" class="interlanguage-link-target"><span>Alemannisch</span></a></li><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%86%D8%B3_(%D8%AA%D8%B5%D9%86%D9%8A%D9%81)" title="جنس (تصنيف) – Arabic" lang="ar" hreflang="ar" data-title="جنس (تصنيف)" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-an mw-list-item"><a href="https://an.wikipedia.org/wiki/Chenero_(bioloch%C3%ADa)" title="Chenero (biolochía) – Aragonese" lang="an" hreflang="an" data-title="Chenero (biolochía)" data-language-autonym="Aragonés" data-language-local-name="Aragonese" class="interlanguage-link-target"><span>Aragonés</span></a></li><li class="interlanguage-link interwiki-frp mw-list-item"><a href="https://frp.wikipedia.org/wiki/Genro" title="Genro – Arpitan" lang="frp" hreflang="frp" data-title="Genro" data-language-autonym="Arpetan" data-language-local-name="Arpitan" class="interlanguage-link-target"><span>Arpetan</span></a></li><li class="interlanguage-link interwiki-as mw-list-item"><a href="https://as.wikipedia.org/wiki/%E0%A6%97%E0%A6%A3_(%E0%A6%9C%E0%A7%80%E0%A7%B1%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE)" title="গণ (জীৱবিদ্যা) – Assamese" lang="as" hreflang="as" data-title="গণ (জীৱবিদ্যা)" data-language-autonym="অসমীয়া" data-language-local-name="Assamese" class="interlanguage-link-target"><span>অসমীয়া</span></a></li><li class="interlanguage-link interwiki-ast mw-list-item"><a href="https://ast.wikipedia.org/wiki/X%C3%A9neru_(biolox%C3%ADa)" title="Xéneru (bioloxía) – Asturian" lang="ast" hreflang="ast" data-title="Xéneru (bioloxía)" data-language-autonym="Asturianu" data-language-local-name="Asturian" class="interlanguage-link-target"><span>Asturianu</span></a></li><li class="interlanguage-link interwiki-gn mw-list-item"><a href="https://gn.wikipedia.org/wiki/Jueheguaty" title="Jueheguaty – Guarani" lang="gn" hreflang="gn" data-title="Jueheguaty" data-language-autonym="Avañe&#039;ẽ" data-language-local-name="Guarani" class="interlanguage-link-target"><span>Avañe'ẽ</span></a></li><li class="interlanguage-link interwiki-az mw-list-item"><a href="https://az.wikipedia.org/wiki/Cins_(biologiya)" title="Cins (biologiya) – Azerbaijani" lang="az" hreflang="az" data-title="Cins (biologiya)" data-language-autonym="Azərbaycanca" data-language-local-name="Azerbaijani" class="interlanguage-link-target"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-ban mw-list-item"><a href="https://ban.wikipedia.org/wiki/G%C3%A9nus" title="Génus – Balinese" lang="ban" hreflang="ban" data-title="Génus" data-language-autonym="Basa Bali" data-language-local-name="Balinese" class="interlanguage-link-target"><span>Basa Bali</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%97%E0%A6%A3_(%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE)" title="গণ (জীববিদ্যা) – Bangla" lang="bn" hreflang="bn" data-title="গণ (জীববিদ্যা)" data-language-autonym="বাংলা" data-language-local-name="Bangla" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-bjn mw-list-item"><a href="https://bjn.wikipedia.org/wiki/Genus" title="Genus – Banjar" lang="bjn" hreflang="bjn" data-title="Genus" data-language-autonym="Banjar" data-language-local-name="Banjar" class="interlanguage-link-target"><span>Banjar</span></a></li><li class="interlanguage-link interwiki-zh-min-nan mw-list-item"><a href="https://zh-min-nan.wikipedia.org/wiki/Sio%CC%8Dk_(hun-l%C5%ABi-ha%CC%8Dk)" title="Sio̍k (hun-lūi-ha̍k) – Minnan" lang="nan" hreflang="nan" data-title="Sio̍k (hun-lūi-ha̍k)" data-language-autonym="閩南語 / Bân-lâm-gú" data-language-local-name="Minnan" class="interlanguage-link-target"><span>閩南語 / Bân-lâm-gú</span></a></li><li class="interlanguage-link interwiki-ba mw-list-item"><a href="https://ba.wikipedia.org/wiki/%D0%AB%D1%80%D1%8B%D1%83_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Ырыу (биология) – Bashkir" lang="ba" hreflang="ba" data-title="Ырыу (биология)" data-language-autonym="Башҡортса" data-language-local-name="Bashkir" class="interlanguage-link-target"><span>Башҡортса</span></a></li><li class="interlanguage-link interwiki-be mw-list-item"><a href="https://be.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D1%96%D1%8F%D0%BB%D0%BE%D0%B3%D1%96%D1%8F)" title="Род (біялогія) – Belarusian" lang="be" hreflang="be" data-title="Род (біялогія)" data-language-autonym="Беларуская" data-language-local-name="Belarusian" class="interlanguage-link-target"><span>Беларуская</span></a></li><li class="interlanguage-link interwiki-be-x-old mw-list-item"><a href="https://be-tarask.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D1%96%D1%8F%D0%BB%D1%91%D0%B3%D1%96%D1%8F)" title="Род (біялёгія) – Belarusian (Taraškievica orthography)" lang="be-tarask" hreflang="be-tarask" data-title="Род (біялёгія)" data-language-autonym="Беларуская (тарашкевіца)" data-language-local-name="Belarusian (Taraškievica orthography)" class="interlanguage-link-target"><span>Беларуская (тарашкевіца)</span></a></li><li class="interlanguage-link interwiki-bh mw-list-item"><a href="https://bh.wikipedia.org/wiki/%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A4%BF_(%E0%A4%9C%E0%A5%80%E0%A4%B5_%E0%A4%AC%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8)" title="जाति (जीव बिज्ञान) – Bhojpuri" lang="bh" hreflang="bh" data-title="जाति (जीव बिज्ञान)" data-language-autonym="भोजपुरी" data-language-local-name="Bhojpuri" class="interlanguage-link-target"><span>भोजपुरी</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Род (биология) – Bulgarian" lang="bg" hreflang="bg" data-title="Род (биология)" data-language-autonym="Български" data-language-local-name="Bulgarian" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-bar mw-list-item"><a href="https://bar.wikipedia.org/wiki/Goddung_(Biologie)" title="Goddung (Biologie) – Bavarian" lang="bar" hreflang="bar" data-title="Goddung (Biologie)" data-language-autonym="Boarisch" data-language-local-name="Bavarian" class="interlanguage-link-target"><span>Boarisch</span></a></li><li class="interlanguage-link interwiki-bs mw-list-item"><a href="https://bs.wikipedia.org/wiki/Rod_(biologija)" title="Rod (biologija) – Bosnian" lang="bs" hreflang="bs" data-title="Rod (biologija)" data-language-autonym="Bosanski" data-language-local-name="Bosnian" class="interlanguage-link-target"><span>Bosanski</span></a></li><li class="interlanguage-link interwiki-br mw-list-item"><a href="https://br.wikipedia.org/wiki/Genad" title="Genad – Breton" lang="br" hreflang="br" data-title="Genad" data-language-autonym="Brezhoneg" data-language-local-name="Breton" class="interlanguage-link-target"><span>Brezhoneg</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/G%C3%A8nere_(biologia)" title="Gènere (biologia) – Catalan" lang="ca" hreflang="ca" data-title="Gènere (biologia)" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cv mw-list-item"><a href="https://cv.wikipedia.org/wiki/%D0%9A%C4%83%D0%BA_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8)" title="Кăк (биологи) – Chuvash" lang="cv" hreflang="cv" data-title="Кăк (биологи)" data-language-autonym="Чӑвашла" data-language-local-name="Chuvash" class="interlanguage-link-target"><span>Чӑвашла</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Rod_(biologie)" title="Rod (biologie) – Czech" lang="cs" hreflang="cs" data-title="Rod (biologie)" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-sn mw-list-item"><a href="https://sn.wikipedia.org/wiki/Mbari" title="Mbari – Shona" lang="sn" hreflang="sn" data-title="Mbari" data-language-autonym="ChiShona" data-language-local-name="Shona" class="interlanguage-link-target"><span>ChiShona</span></a></li><li class="interlanguage-link interwiki-cy mw-list-item"><a href="https://cy.wikipedia.org/wiki/Genws" title="Genws – Welsh" lang="cy" hreflang="cy" data-title="Genws" data-language-autonym="Cymraeg" data-language-local-name="Welsh" class="interlanguage-link-target"><span>Cymraeg</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Sl%C3%A6gt_(biologi)" title="Slægt (biologi) – Danish" lang="da" hreflang="da" data-title="Slægt (biologi)" data-language-autonym="Dansk" data-language-local-name="Danish" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-ary mw-list-item"><a href="https://ary.wikipedia.org/wiki/%DD%A3%D9%86%D8%B3_(%D8%A8%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7)" title="ݣنس (بيولوجيا) – Moroccan Arabic" lang="ary" hreflang="ary" data-title="ݣنس (بيولوجيا)" data-language-autonym="الدارجة" data-language-local-name="Moroccan Arabic" class="interlanguage-link-target"><span>الدارجة</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Gattung_(Biologie)" title="Gattung (Biologie) – German" lang="de" hreflang="de" data-title="Gattung (Biologie)" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-dsb mw-list-item"><a href="https://dsb.wikipedia.org/wiki/Rod_(biologija)" title="Rod (biologija) – Lower Sorbian" lang="dsb" hreflang="dsb" data-title="Rod (biologija)" data-language-autonym="Dolnoserbski" data-language-local-name="Lower Sorbian" class="interlanguage-link-target"><span>Dolnoserbski</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Perekond_(bioloogia)" title="Perekond (bioloogia) – Estonian" lang="et" hreflang="et" data-title="Perekond (bioloogia)" data-language-autonym="Eesti" data-language-local-name="Estonian" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%93%CE%AD%CE%BD%CE%BF%CF%82_(%CE%B2%CE%B9%CE%BF%CE%BB%CE%BF%CE%B3%CE%AF%CE%B1)" title="Γένος (βιολογία) – Greek" lang="el" hreflang="el" data-title="Γένος (βιολογία)" data-language-autonym="Ελληνικά" data-language-local-name="Greek" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/G%C3%A9nero_(biolog%C3%ADa)" title="Género (biología) – Spanish" lang="es" hreflang="es" data-title="Género (biología)" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Genro_(biologio)" title="Genro (biologio) – Esperanto" lang="eo" hreflang="eo" data-title="Genro (biologio)" data-language-autonym="Esperanto" data-language-local-name="Esperanto" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Genero_(biologia)" title="Genero (biologia) – Basque" lang="eu" hreflang="eu" data-title="Genero (biologia)" data-language-autonym="Euskara" data-language-local-name="Basque" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B3%D8%B1%D8%AF%D9%87" title="سرده – Persian" lang="fa" hreflang="fa" data-title="سرده" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Genre_(biologie)" title="Genre (biologie) – French" lang="fr" hreflang="fr" data-title="Genre (biologie)" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-fy mw-list-item"><a href="https://fy.wikipedia.org/wiki/Skaai_(taksonomy)" title="Skaai (taksonomy) – Western Frisian" lang="fy" hreflang="fy" data-title="Skaai (taksonomy)" data-language-autonym="Frysk" data-language-local-name="Western Frisian" class="interlanguage-link-target"><span>Frysk</span></a></li><li class="interlanguage-link interwiki-ga mw-list-item"><a href="https://ga.wikipedia.org/wiki/G%C3%A9ineas" title="Géineas – Irish" lang="ga" hreflang="ga" data-title="Géineas" data-language-autonym="Gaeilge" data-language-local-name="Irish" class="interlanguage-link-target"><span>Gaeilge</span></a></li><li class="interlanguage-link interwiki-gv mw-list-item"><a href="https://gv.wikipedia.org/wiki/Genus" title="Genus – Manx" lang="gv" hreflang="gv" data-title="Genus" data-language-autonym="Gaelg" data-language-local-name="Manx" class="interlanguage-link-target"><span>Gaelg</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a href="https://gl.wikipedia.org/wiki/X%C3%A9nero_(biolox%C3%ADa)" title="Xénero (bioloxía) – Galician" lang="gl" hreflang="gl" data-title="Xénero (bioloxía)" data-language-autonym="Galego" data-language-local-name="Galician" class="interlanguage-link-target"><span>Galego</span></a></li><li class="interlanguage-link interwiki-inh mw-list-item"><a href="https://inh.wikipedia.org/wiki/%D0%92%D0%B0%D1%8C%D1%80_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8)" title="Ваьр (биологи) – Ingush" lang="inh" hreflang="inh" data-title="Ваьр (биологи)" data-language-autonym="ГӀалгӀай" data-language-local-name="Ingush" class="interlanguage-link-target"><span>ГӀалгӀай</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%86%8D_(%EC%83%9D%EB%AC%BC%ED%95%99)" title="속 (생물학) – Korean" lang="ko" hreflang="ko" data-title="속 (생물학)" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a href="https://hy.wikipedia.org/wiki/%D5%91%D5%A5%D5%B2_(%D5%AF%D5%A1%D5%BF%D5%A5%D5%A3%D5%B8%D6%80%D5%AB%D5%A1)" title="Ցեղ (կատեգորիա) – Armenian" lang="hy" hreflang="hy" data-title="Ցեղ (կատեգորիա)" data-language-autonym="Հայերեն" data-language-local-name="Armenian" class="interlanguage-link-target"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%82%E0%A4%B6_(%E0%A4%9C%E0%A5%80%E0%A4%B5%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8)" title="वंश (जीवविज्ञान) – Hindi" lang="hi" hreflang="hi" data-title="वंश (जीवविज्ञान)" data-language-autonym="हिन्दी" data-language-local-name="Hindi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-hsb mw-list-item"><a href="https://hsb.wikipedia.org/wiki/R%C3%B3d_(biologija)" title="Ród (biologija) – Upper Sorbian" lang="hsb" hreflang="hsb" data-title="Ród (biologija)" data-language-autonym="Hornjoserbsce" data-language-local-name="Upper Sorbian" class="interlanguage-link-target"><span>Hornjoserbsce</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Rod_(taksonomija)" title="Rod (taksonomija) – Croatian" lang="hr" hreflang="hr" data-title="Rod (taksonomija)" data-language-autonym="Hrvatski" data-language-local-name="Croatian" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-io mw-list-item"><a href="https://io.wikipedia.org/wiki/Genero" title="Genero – Ido" lang="io" hreflang="io" data-title="Genero" data-language-autonym="Ido" data-language-local-name="Ido" class="interlanguage-link-target"><span>Ido</span></a></li><li class="interlanguage-link interwiki-ilo mw-list-item"><a href="https://ilo.wikipedia.org/wiki/Henero_(biolohia)" title="Henero (biolohia) – Iloko" lang="ilo" hreflang="ilo" data-title="Henero (biolohia)" data-language-autonym="Ilokano" data-language-local-name="Iloko" class="interlanguage-link-target"><span>Ilokano</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Genus" title="Genus – Indonesian" lang="id" hreflang="id" data-title="Genus" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-ia mw-list-item"><a href="https://ia.wikipedia.org/wiki/Genere_(rango_taxonomic)" title="Genere (rango taxonomic) – Interlingua" lang="ia" hreflang="ia" data-title="Genere (rango taxonomic)" data-language-autonym="Interlingua" data-language-local-name="Interlingua" class="interlanguage-link-target"><span>Interlingua</span></a></li><li class="interlanguage-link interwiki-is mw-list-item"><a href="https://is.wikipedia.org/wiki/%C3%86ttkv%C3%ADsl_(flokkunarfr%C3%A6%C3%B0i)" title="Ættkvísl (flokkunarfræði) – Icelandic" lang="is" hreflang="is" data-title="Ættkvísl (flokkunarfræði)" data-language-autonym="Íslenska" data-language-local-name="Icelandic" class="interlanguage-link-target"><span>Íslenska</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Genere_(tassonomia)" title="Genere (tassonomia) – Italian" lang="it" hreflang="it" data-title="Genere (tassonomia)" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A1%D7%95%D7%92_(%D7%98%D7%A7%D7%A1%D7%95%D7%A0%D7%95%D7%9E%D7%99%D7%94)" title="סוג (טקסונומיה) – Hebrew" lang="he" hreflang="he" data-title="סוג (טקסונומיה)" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-jv mw-list-item"><a href="https://jv.wikipedia.org/wiki/G%C3%A8nus" title="Gènus – Javanese" lang="jv" hreflang="jv" data-title="Gènus" data-language-autonym="Jawa" data-language-local-name="Javanese" class="interlanguage-link-target"><span>Jawa</span></a></li><li class="interlanguage-link interwiki-pam mw-list-item"><a href="https://pam.wikipedia.org/wiki/Genus" title="Genus – Pampanga" lang="pam" hreflang="pam" data-title="Genus" data-language-autonym="Kapampangan" data-language-local-name="Pampanga" class="interlanguage-link-target"><span>Kapampangan</span></a></li><li class="interlanguage-link interwiki-ka mw-list-item"><a href="https://ka.wikipedia.org/wiki/%E1%83%92%E1%83%95%E1%83%90%E1%83%A0%E1%83%98_(%E1%83%91%E1%83%98%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%90)" title="გვარი (ბიოლოგია) – Georgian" lang="ka" hreflang="ka" data-title="გვარი (ბიოლოგია)" data-language-autonym="ქართული" data-language-local-name="Georgian" class="interlanguage-link-target"><span>ქართული</span></a></li><li class="interlanguage-link interwiki-ks mw-list-item"><a href="https://ks.wikipedia.org/wiki/%D8%AC%D9%B2%D8%AA%D8%A0" title="جٲتؠ – Kashmiri" lang="ks" hreflang="ks" data-title="جٲتؠ" data-language-autonym="कॉशुर / کٲشُر" data-language-local-name="Kashmiri" class="interlanguage-link-target"><span>कॉशुर / کٲشُر</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%A2%D1%83%D1%8B%D1%81_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Туыс (биология) – Kazakh" lang="kk" hreflang="kk" data-title="Туыс (биология)" data-language-autonym="Қазақша" data-language-local-name="Kazakh" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-sw mw-list-item"><a href="https://sw.wikipedia.org/wiki/Jenasi" title="Jenasi – Swahili" lang="sw" hreflang="sw" data-title="Jenasi" data-language-autonym="Kiswahili" data-language-local-name="Swahili" class="interlanguage-link-target"><span>Kiswahili</span></a></li><li class="interlanguage-link interwiki-ht mw-list-item"><a href="https://ht.wikipedia.org/wiki/Jan_(biyoloji)" title="Jan (biyoloji) – Haitian Creole" lang="ht" hreflang="ht" data-title="Jan (biyoloji)" data-language-autonym="Kreyòl ayisyen" data-language-local-name="Haitian Creole" class="interlanguage-link-target"><span>Kreyòl ayisyen</span></a></li><li class="interlanguage-link interwiki-ku mw-list-item"><a href="https://ku.wikipedia.org/wiki/Cins" title="Cins – Kurdish" lang="ku" hreflang="ku" data-title="Cins" data-language-autonym="Kurdî" data-language-local-name="Kurdish" class="interlanguage-link-target"><span>Kurdî</span></a></li><li class="interlanguage-link interwiki-ky mw-list-item"><a href="https://ky.wikipedia.org/wiki/%D0%A3%D1%80%D1%83%D1%83_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Уруу (биология) – Kyrgyz" lang="ky" hreflang="ky" data-title="Уруу (биология)" data-language-autonym="Кыргызча" data-language-local-name="Kyrgyz" class="interlanguage-link-target"><span>Кыргызча</span></a></li><li class="interlanguage-link interwiki-la mw-list-item"><a href="https://la.wikipedia.org/wiki/Genus_(taxinomia)" title="Genus (taxinomia) – Latin" lang="la" hreflang="la" data-title="Genus (taxinomia)" data-language-autonym="Latina" data-language-local-name="Latin" class="interlanguage-link-target"><span>Latina</span></a></li><li class="interlanguage-link interwiki-lv mw-list-item"><a href="https://lv.wikipedia.org/wiki/%C4%A2ints_(biolo%C4%A3ija)" title="Ģints (bioloģija) – Latvian" lang="lv" hreflang="lv" data-title="Ģints (bioloģija)" data-language-autonym="Latviešu" data-language-local-name="Latvian" class="interlanguage-link-target"><span>Latviešu</span></a></li><li class="interlanguage-link interwiki-lb mw-list-item"><a href="https://lb.wikipedia.org/wiki/Gattung_(Biologie)" title="Gattung (Biologie) – Luxembourgish" lang="lb" hreflang="lb" data-title="Gattung (Biologie)" data-language-autonym="Lëtzebuergesch" data-language-local-name="Luxembourgish" class="interlanguage-link-target"><span>Lëtzebuergesch</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Gentis_(biologija)" title="Gentis (biologija) – Lithuanian" lang="lt" hreflang="lt" data-title="Gentis (biologija)" data-language-autonym="Lietuvių" data-language-local-name="Lithuanian" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-li mw-list-item"><a href="https://li.wikipedia.org/wiki/Geslach_(biologie)" title="Geslach (biologie) – Limburgish" lang="li" hreflang="li" data-title="Geslach (biologie)" data-language-autonym="Limburgs" data-language-local-name="Limburgish" class="interlanguage-link-target"><span>Limburgs</span></a></li><li class="interlanguage-link interwiki-lmo mw-list-item"><a href="https://lmo.wikipedia.org/wiki/Z%C3%A8ner_(biolog%C3%ACa)" title="Zèner (biologìa) – Lombard" lang="lmo" hreflang="lmo" data-title="Zèner (biologìa)" data-language-autonym="Lombard" data-language-local-name="Lombard" class="interlanguage-link-target"><span>Lombard</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Nemzets%C3%A9g_(rendszertan)" title="Nemzetség (rendszertan) – Hungarian" lang="hu" hreflang="hu" data-title="Nemzetség (rendszertan)" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-mk mw-list-item"><a href="https://mk.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%98%D0%B0)" title="Род (биологија) – Macedonian" lang="mk" hreflang="mk" data-title="Род (биологија)" data-language-autonym="Македонски" data-language-local-name="Macedonian" class="interlanguage-link-target"><span>Македонски</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%9C%E0%B5%80%E0%B4%A8%E0%B4%B8%E0%B5%8D" title="ജീനസ് – Malayalam" lang="ml" hreflang="ml" data-title="ജീനസ്" data-language-autonym="മലയാളം" data-language-local-name="Malayalam" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-mt mw-list-item"><a href="https://mt.wikipedia.org/wiki/%C4%A0eneru_(tassonomija)" title="Ġeneru (tassonomija) – Maltese" lang="mt" hreflang="mt" data-title="Ġeneru (tassonomija)" data-language-autonym="Malti" data-language-local-name="Maltese" class="interlanguage-link-target"><span>Malti</span></a></li><li class="interlanguage-link interwiki-xmf mw-list-item"><a href="https://xmf.wikipedia.org/wiki/%E1%83%92%E1%83%95%E1%83%90%E1%83%A0%E1%83%98_(%E1%83%91%E1%83%98%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%90)" title="გვარი (ბიოლოგია) – Mingrelian" lang="xmf" hreflang="xmf" data-title="გვარი (ბიოლოგია)" data-language-autonym="მარგალური" data-language-local-name="Mingrelian" class="interlanguage-link-target"><span>მარგალური</span></a></li><li class="interlanguage-link interwiki-mzn mw-list-item"><a href="https://mzn.wikipedia.org/wiki/%D8%AC%D9%86%D8%B3_(%D8%B2%DB%8C%D8%B3%D8%AA)" title="جنس (زیست) – Mazanderani" lang="mzn" hreflang="mzn" data-title="جنس (زیست)" data-language-autonym="مازِرونی" data-language-local-name="Mazanderani" class="interlanguage-link-target"><span>مازِرونی</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Genus" title="Genus – Malay" lang="ms" hreflang="ms" data-title="Genus" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-min mw-list-item"><a href="https://min.wikipedia.org/wiki/Genus" title="Genus – Minangkabau" lang="min" hreflang="min" data-title="Genus" data-language-autonym="Minangkabau" data-language-local-name="Minangkabau" class="interlanguage-link-target"><span>Minangkabau</span></a></li><li class="interlanguage-link interwiki-mn mw-list-item"><a href="https://mn.wikipedia.org/wiki/%D0%A2%D3%A9%D1%80%D3%A9%D0%BB_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8)" title="Төрөл (биологи) – Mongolian" lang="mn" hreflang="mn" data-title="Төрөл (биологи)" data-language-autonym="Монгол" data-language-local-name="Mongolian" class="interlanguage-link-target"><span>Монгол</span></a></li><li class="interlanguage-link interwiki-my mw-list-item"><a href="https://my.wikipedia.org/wiki/%E1%80%99%E1%80%BB%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%85%E1%80%AF" title="မျိုးစု – Burmese" lang="my" hreflang="my" data-title="မျိုးစု" data-language-autonym="မြန်မာဘာသာ" data-language-local-name="Burmese" class="interlanguage-link-target"><span>မြန်မာဘာသာ</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Geslacht_(biologie)" title="Geslacht (biologie) – Dutch" lang="nl" hreflang="nl" data-title="Geslacht (biologie)" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E5%B1%9E_(%E5%88%86%E9%A1%9E%E5%AD%A6)" title="属 (分類学) – Japanese" lang="ja" hreflang="ja" data-title="属 (分類学)" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Slekt_(biologi)" title="Slekt (biologi) – Norwegian Bokmål" lang="nb" hreflang="nb" data-title="Slekt (biologi)" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-nn mw-list-item"><a href="https://nn.wikipedia.org/wiki/Biologisk_slekt" title="Biologisk slekt – Norwegian Nynorsk" lang="nn" hreflang="nn" data-title="Biologisk slekt" data-language-autonym="Norsk nynorsk" data-language-local-name="Norwegian Nynorsk" class="interlanguage-link-target"><span>Norsk nynorsk</span></a></li><li class="interlanguage-link interwiki-oc mw-list-item"><a href="https://oc.wikipedia.org/wiki/Genre_(biologia)" title="Genre (biologia) – Occitan" lang="oc" hreflang="oc" data-title="Genre (biologia)" data-language-autonym="Occitan" data-language-local-name="Occitan" class="interlanguage-link-target"><span>Occitan</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/Urug%CA%BB_(zoologiya)" title="Urugʻ (zoologiya) – Uzbek" lang="uz" hreflang="uz" data-title="Urugʻ (zoologiya)" data-language-autonym="Oʻzbekcha / ўзбекча" data-language-local-name="Uzbek" class="interlanguage-link-target"><span>Oʻzbekcha / ўзбекча</span></a></li><li class="interlanguage-link interwiki-pa mw-list-item"><a href="https://pa.wikipedia.org/wiki/%E0%A8%9C%E0%A8%BF%E0%A8%A8%E0%A8%B8_(%E0%A8%9C%E0%A9%80%E0%A8%B5-%E0%A8%B5%E0%A8%BF%E0%A8%97%E0%A8%BF%E0%A8%86%E0%A8%A8)" title="ਜਿਨਸ (ਜੀਵ-ਵਿਗਿਆਨ) – Punjabi" lang="pa" hreflang="pa" data-title="ਜਿਨਸ (ਜੀਵ-ਵਿਗਿਆਨ)" data-language-autonym="ਪੰਜਾਬੀ" data-language-local-name="Punjabi" class="interlanguage-link-target"><span>ਪੰਜਾਬੀ</span></a></li><li class="interlanguage-link interwiki-pnb mw-list-item"><a href="https://pnb.wikipedia.org/wiki/%D8%AC%D9%86%D8%B3_(%D8%AC%DB%8C%D9%88%D9%86_%D9%BE%DA%91%DA%BE%D8%AA)" title="جنس (جیون پڑھت) – Western Punjabi" lang="pnb" hreflang="pnb" data-title="جنس (جیون پڑھت)" data-language-autonym="پنجابی" data-language-local-name="Western Punjabi" class="interlanguage-link-target"><span>پنجابی</span></a></li><li class="interlanguage-link interwiki-pms mw-list-item"><a href="https://pms.wikipedia.org/wiki/G%C3%A9ner" title="Géner – Piedmontese" lang="pms" hreflang="pms" data-title="Géner" data-language-autonym="Piemontèis" data-language-local-name="Piedmontese" class="interlanguage-link-target"><span>Piemontèis</span></a></li><li class="interlanguage-link interwiki-nds mw-list-item"><a href="https://nds.wikipedia.org/wiki/Geslecht_(Biologie)" title="Geslecht (Biologie) – Low German" lang="nds" hreflang="nds" data-title="Geslecht (Biologie)" data-language-autonym="Plattdüütsch" data-language-local-name="Low German" class="interlanguage-link-target"><span>Plattdüütsch</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Rodzaj_(biologia)" title="Rodzaj (biologia) – Polish" lang="pl" hreflang="pl" data-title="Rodzaj (biologia)" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/G%C3%A9nero_(biologia)" title="Género (biologia) – Portuguese" lang="pt" hreflang="pt" data-title="Género (biologia)" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Gen_(biologie)" title="Gen (biologie) – Romanian" lang="ro" hreflang="ro" data-title="Gen (biologie)" data-language-autonym="Română" data-language-local-name="Romanian" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-qu mw-list-item"><a href="https://qu.wikipedia.org/wiki/Rikch%27ana" title="Rikch&#039;ana – Quechua" lang="qu" hreflang="qu" data-title="Rikch&#039;ana" data-language-autonym="Runa Simi" data-language-local-name="Quechua" class="interlanguage-link-target"><span>Runa Simi</span></a></li><li class="interlanguage-link interwiki-rue mw-list-item"><a href="https://rue.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D1%96%D0%BE%D0%BB%D0%BE%D2%91%D1%96%D1%8F)" title="Род (біолоґія) – Rusyn" lang="rue" hreflang="rue" data-title="Род (біолоґія)" data-language-autonym="Русиньскый" data-language-local-name="Rusyn" class="interlanguage-link-target"><span>Русиньскый</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Род (биология) – Russian" lang="ru" hreflang="ru" data-title="Род (биология)" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sah mw-list-item"><a href="https://sah.wikipedia.org/wiki/%D0%A3%D1%83%D1%81_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Уус (биология) – Yakut" lang="sah" hreflang="sah" data-title="Уус (биология)" data-language-autonym="Саха тыла" data-language-local-name="Yakut" class="interlanguage-link-target"><span>Саха тыла</span></a></li><li class="interlanguage-link interwiki-sq mw-list-item"><a href="https://sq.wikipedia.org/wiki/Gjinia_(biologji)" title="Gjinia (biologji) – Albanian" lang="sq" hreflang="sq" data-title="Gjinia (biologji)" data-language-autonym="Shqip" data-language-local-name="Albanian" class="interlanguage-link-target"><span>Shqip</span></a></li><li class="interlanguage-link interwiki-scn mw-list-item"><a href="https://scn.wikipedia.org/wiki/G%C3%A8niri_(biolugg%C3%ACa)" title="Gèniri (bioluggìa) – Sicilian" lang="scn" hreflang="scn" data-title="Gèniri (bioluggìa)" data-language-autonym="Sicilianu" data-language-local-name="Sicilian" class="interlanguage-link-target"><span>Sicilianu</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Genus" title="Genus – Simple English" lang="en-simple" hreflang="en-simple" data-title="Genus" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sd mw-list-item"><a href="https://sd.wikipedia.org/wiki/%D8%AC%DA%BB" title="جڻ – Sindhi" lang="sd" hreflang="sd" data-title="جڻ" data-language-autonym="سنڌي" data-language-local-name="Sindhi" class="interlanguage-link-target"><span>سنڌي</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a href="https://sk.wikipedia.org/wiki/Rod_(taxon%C3%B3mia)" title="Rod (taxonómia) – Slovak" lang="sk" hreflang="sk" data-title="Rod (taxonómia)" data-language-autonym="Slovenčina" data-language-local-name="Slovak" class="interlanguage-link-target"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Rod_(biologija)" title="Rod (biologija) – Slovenian" lang="sl" hreflang="sl" data-title="Rod (biologija)" data-language-autonym="Slovenščina" data-language-local-name="Slovenian" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a href="https://ckb.wikipedia.org/wiki/%D8%AC%D9%86%D8%B3_(%DA%98%DB%8C%D9%86%D9%86%D8%A7%D8%B3%DB%8C)" title="جنس (ژینناسی) – Central Kurdish" lang="ckb" hreflang="ckb" data-title="جنس (ژینناسی)" data-language-autonym="کوردی" data-language-local-name="Central Kurdish" class="interlanguage-link-target"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%98%D0%B0)" title="Род (биологија) – Serbian" lang="sr" hreflang="sr" data-title="Род (биологија)" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Rod_(taksonomija)" title="Rod (taksonomija) – Serbo-Croatian" lang="sh" hreflang="sh" data-title="Rod (taksonomija)" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="Serbo-Croatian" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-su mw-list-item"><a href="https://su.wikipedia.org/wiki/G%C3%A9nus" title="Génus – Sundanese" lang="su" hreflang="su" data-title="Génus" data-language-autonym="Sunda" data-language-local-name="Sundanese" class="interlanguage-link-target"><span>Sunda</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Suku_(biologia)" title="Suku (biologia) – Finnish" lang="fi" hreflang="fi" data-title="Suku (biologia)" data-language-autonym="Suomi" data-language-local-name="Finnish" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Sl%C3%A4kte" title="Släkte – Swedish" lang="sv" hreflang="sv" data-title="Släkte" data-language-autonym="Svenska" data-language-local-name="Swedish" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Genus" title="Genus – Tagalog" lang="tl" hreflang="tl" data-title="Genus" data-language-autonym="Tagalog" data-language-local-name="Tagalog" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-ta mw-list-item"><a href="https://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AF%87%E0%AE%B0%E0%AE%BF%E0%AE%A9%E0%AE%AE%E0%AF%8D_(%E0%AE%89%E0%AE%AF%E0%AE%BF%E0%AE%B0%E0%AE%BF%E0%AE%AF%E0%AE%B2%E0%AF%8D)" title="பேரினம் (உயிரியல்) – Tamil" lang="ta" hreflang="ta" data-title="பேரினம் (உயிரியல்)" data-language-autonym="தமிழ்" data-language-local-name="Tamil" class="interlanguage-link-target"><span>தமிழ்</span></a></li><li class="interlanguage-link interwiki-kab mw-list-item"><a href="https://kab.wikipedia.org/wiki/Tawsit_(tudersent)" title="Tawsit (tudersent) – Kabyle" lang="kab" hreflang="kab" data-title="Tawsit (tudersent)" data-language-autonym="Taqbaylit" data-language-local-name="Kabyle" class="interlanguage-link-target"><span>Taqbaylit</span></a></li><li class="interlanguage-link interwiki-tt mw-list-item"><a href="https://tt.wikipedia.org/wiki/%D0%AB%D1%80%D1%83%D0%B3_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)" title="Ыруг (биология) – Tatar" lang="tt" hreflang="tt" data-title="Ыруг (биология)" data-language-autonym="Татарча / tatarça" data-language-local-name="Tatar" class="interlanguage-link-target"><span>Татарча / tatarça</span></a></li><li class="interlanguage-link interwiki-te mw-list-item"><a href="https://te.wikipedia.org/wiki/%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%9C%E0%B0%BE%E0%B0%A4%E0%B0%BF" title="ప్రజాతి – Telugu" lang="te" hreflang="te" data-title="ప్రజాతి" data-language-autonym="తెలుగు" data-language-local-name="Telugu" class="interlanguage-link-target"><span>తెలుగు</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5_(%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2)" title="สกุล (ชีววิทยา) – Thai" lang="th" hreflang="th" data-title="สกุล (ชีววิทยา)" data-language-autonym="ไทย" data-language-local-name="Thai" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Cins" title="Cins – Turkish" lang="tr" hreflang="tr" data-title="Cins" data-language-autonym="Türkçe" data-language-local-name="Turkish" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B4_(%D0%B1%D1%96%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F)" title="Рід (біологія) – Ukrainian" lang="uk" hreflang="uk" data-title="Рід (біологія)" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%D8%AC%D9%86%D8%B3" title="جنس – Urdu" lang="ur" hreflang="ur" data-title="جنس" data-language-autonym="اردو" data-language-local-name="Urdu" class="interlanguage-link-target"><span>اردو</span></a></li><li class="interlanguage-link interwiki-vec mw-list-item"><a href="https://vec.wikipedia.org/wiki/Z%C3%A8naro_(tasonomia)" title="Zènaro (tasonomia) – Venetian" lang="vec" hreflang="vec" data-title="Zènaro (tasonomia)" data-language-autonym="Vèneto" data-language-local-name="Venetian" class="interlanguage-link-target"><span>Vèneto</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Chi_(sinh_h%E1%BB%8Dc)" title="Chi (sinh học) – Vietnamese" lang="vi" hreflang="vi" data-title="Chi (sinh học)" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-wa mw-list-item"><a href="https://wa.wikipedia.org/wiki/Djinre_(biyolodjeye)" title="Djinre (biyolodjeye) – Walloon" lang="wa" hreflang="wa" data-title="Djinre (biyolodjeye)" data-language-autonym="Walon" data-language-local-name="Walloon" class="interlanguage-link-target"><span>Walon</span></a></li><li class="interlanguage-link interwiki-vls mw-list-item"><a href="https://vls.wikipedia.org/wiki/Geslacht_(biologie)" title="Geslacht (biologie) – West Flemish" lang="vls" hreflang="vls" data-title="Geslacht (biologie)" data-language-autonym="West-Vlams" data-language-local-name="West Flemish" class="interlanguage-link-target"><span>West-Vlams</span></a></li><li class="interlanguage-link interwiki-war mw-list-item"><a href="https://war.wikipedia.org/wiki/Genus" title="Genus – Waray" lang="war" hreflang="war" data-title="Genus" data-language-autonym="Winaray" data-language-local-name="Waray" class="interlanguage-link-target"><span>Winaray</span></a></li><li class="interlanguage-link interwiki-wuu mw-list-item"><a href="https://wuu.wikipedia.org/wiki/%E5%B1%9E" title="属 – Wu" lang="wuu" hreflang="wuu" data-title="属" data-language-autonym="吴语" data-language-local-name="Wu" class="interlanguage-link-target"><span>吴语</span></a></li><li class="interlanguage-link interwiki-yi mw-list-item"><a href="https://yi.wikipedia.org/wiki/%D7%9E%D7%99%D7%9F_(%D7%91%D7%99%D7%90%D7%9C%D7%90%D7%92%D7%99%D7%A2)" title="מין (ביאלאגיע) – Yiddish" lang="yi" hreflang="yi" data-title="מין (ביאלאגיע)" data-language-autonym="ייִדיש" data-language-local-name="Yiddish" class="interlanguage-link-target"><span>ייִדיש</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E5%B1%AC" title="屬 – Cantonese" lang="yue" hreflang="yue" data-title="屬" data-language-autonym="粵語" data-language-local-name="Cantonese" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-diq mw-list-item"><a href="https://diq.wikipedia.org/wiki/C%C4%B1ns" title="Cıns – Zazaki" lang="diq" hreflang="diq" data-title="Cıns" data-language-autonym="Zazaki" data-language-local-name="Zazaki" class="interlanguage-link-target"><span>Zazaki</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%B1%9E" title="属 – Chinese" lang="zh" hreflang="zh" data-title="属" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li><li class="interlanguage-link interwiki-bbc mw-list-item"><a href="https://bbc.wikipedia.org/wiki/Genus" title="Genus – Batak Toba" lang="bbc" hreflang="bbc" data-title="Genus" data-language-autonym="Batak Toba" data-language-local-name="Batak Toba" class="interlanguage-link-target"><span>Batak Toba</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q34740#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Genus" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Genus" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Genus"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Genus&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Genus&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Genus"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Genus&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Genus&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Genus" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Genus" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Genus&amp;oldid=1220532484" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Genus&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Genus&amp;id=1220532484&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenus"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGenus"><span>Download QR code</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q34740" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Genus&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Genus&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Genera_(biology)" hreflang="en"><span>Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Taxonomic rank directly above species</div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">For other uses, see <a href="/wiki/Genus_(disambiguation)" class="mw-disambig" title="Genus (disambiguation)">Genus (disambiguation)</a>.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">"Genera" redirects here. For the operating system, see <a href="/wiki/Genera_(operating_system)" title="Genera (operating system)">Genera (operating system)</a>.</div>
+<figure class="mw-halign-right noresize" typeof="mw:File/Thumb"><a href="/wiki/File:Biological_classification_L_Pengo_vflip.svg" title="File:Biological classification L Pengo vflip.svg"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/150px-Biological_classification_L_Pengo_vflip.svg.png" decoding="async" width="150" height="375" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/225px-Biological_classification_L_Pengo_vflip.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Biological_classification_L_Pengo_vflip.svg/300px-Biological_classification_L_Pengo_vflip.svg.png 2x" data-file-width="240" data-file-height="600" usemap="#ImageMap_b98a4ef962e05e30" resource="/wiki/File:Biological_classification_L_Pengo_vflip.svg" /></a><map name="ImageMap_b98a4ef962e05e30"><area href="/wiki/Life" shape="rect" coords="63,9,141,36" alt="Life" title="Life" /><area href="/wiki/Domain_(biology)" shape="rect" coords="63,49,141,75" alt="Domain" title="Domain" /><area href="/wiki/Kingdom_(biology)" shape="rect" coords="63,89,141,115" alt="Kingdom" title="Kingdom" /><area href="/wiki/Phylum" shape="rect" coords="63,128,141,154" alt="Phylum" title="Phylum" /><area href="/wiki/Class_(biology)" shape="rect" coords="63,168,141,194" alt="Class" title="Class" /><area href="/wiki/Order_(biology)" shape="rect" coords="63,208,141,234" alt="Order" title="Order" /><area href="/wiki/Family_(biology)" shape="rect" coords="63,247,141,273" alt="Family" title="Family" /><area href="/wiki/Genus" shape="rect" coords="63,287,141,313" alt="Genus" title="Genus" /><area href="/wiki/Species" shape="rect" coords="63,326,141,353" alt="Species" title="Species" /></map><figcaption>The hierarchy of <a href="/wiki/Taxonomy_(biology)" title="Taxonomy (biology)">biological classification</a>'s eight major <a href="/wiki/Taxonomic_rank" title="Taxonomic rank">taxonomic ranks</a>. A <a href="/wiki/Family_(biology)" title="Family (biology)">family</a> contains one or more genera. Intermediate minor rankings are not shown.</figcaption></figure>
+<p><b>Genus</b> (<span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt" lang="en-fonipa"><a href="/wiki/Help:IPA/English" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="/dʒ/: &#39;j&#39; in &#39;jam&#39;">dʒ</span><span title="/iː/: &#39;ee&#39; in &#39;fleece&#39;">iː</span><span title="&#39;n&#39; in &#39;nigh&#39;">n</span><span title="/ə/: &#39;a&#39; in &#39;about&#39;">ə</span><span title="&#39;s&#39; in &#39;sigh&#39;">s</span></span>/</a></span></span> <abbr title="plural form">pl.</abbr>: <b>genera</b> <span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt" lang="en-fonipa"><a href="/wiki/Help:IPA/English" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="/dʒ/: &#39;j&#39; in &#39;jam&#39;">dʒ</span><span title="/ɛ/: &#39;e&#39; in &#39;dress&#39;">ɛ</span><span title="&#39;n&#39; in &#39;nigh&#39;">n</span><span title="/ər/: &#39;er&#39; in &#39;letter&#39;">ər</span><span title="/ə/: &#39;a&#39; in &#39;about&#39;">ə</span></span>/</a></span></span>) is a <a href="/wiki/Taxonomic_rank" title="Taxonomic rank">taxonomic rank</a> above <a href="/wiki/Species" title="Species">species</a> and below <a href="/wiki/Family_(taxonomy)" class="mw-redirect" title="Family (taxonomy)">family</a> as used in the <a href="/wiki/Biological_classification" class="mw-redirect" title="Biological classification">biological classification</a> of <a href="/wiki/Extant_taxon" class="mw-redirect" title="Extant taxon">living</a> and <a href="/wiki/Fossil" title="Fossil">fossil</a> organisms as well as <a href="/wiki/Virus_classification#ICTV_classification" title="Virus classification">viruses</a>.<sup id="cite_ref-ICTV_1-0" class="reference"><a href="#cite_note-ICTV-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> In <a href="/wiki/Binomial_nomenclature" title="Binomial nomenclature">binomial nomenclature</a>, the genus name forms the first part of the binomial species name for each species within the genus.
+</p>
+<dl><dd>E.g. <i><a href="/wiki/Panthera_leo" class="mw-redirect" title="Panthera leo">Panthera leo</a></i> (lion) and <i><a href="/wiki/Panthera_onca" class="mw-redirect" title="Panthera onca">Panthera onca</a></i> (jaguar) are two species within the genus <i><a href="/wiki/Panthera" title="Panthera">Panthera</a></i>. <i>Panthera</i> is a genus within the family <a href="/wiki/Felidae" title="Felidae">Felidae</a>.</dd></dl>
+<p>The composition of a genus is determined by <a href="/wiki/Taxonomy_(biology)" title="Taxonomy (biology)">taxonomists</a>. The standards for genus classification are not strictly codified, so different authorities often produce different classifications for genera. There are some general practices used, however,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> including the idea that a newly defined genus should fulfill these three criteria to be descriptively useful:
+</p>
+<ol><li><a href="/wiki/Monophyly" title="Monophyly">monophyly</a> – all descendants of an ancestral <a href="/wiki/Taxon" title="Taxon">taxon</a> are grouped together (i.e. <a href="/wiki/Phylogenetics" title="Phylogenetics">phylogenetic</a> analysis should clearly demonstrate both monophyly and validity as a separate lineage).</li>
+<li>reasonable compactness – a genus should not be expanded needlessly.</li>
+<li>distinctness – with respect to evolutionarily relevant criteria, i.e. <a href="/wiki/Ecology" title="Ecology">ecology</a>, <a href="/wiki/Morphology_(biology)" title="Morphology (biology)">morphology</a>, or <a href="/wiki/Biogeography" title="Biogeography">biogeography</a>; <a href="/wiki/DNA_sequences" class="mw-redirect" title="DNA sequences">DNA sequences</a> are a <i>consequence</i> rather than a <i>condition</i> of diverging evolutionary lineages except in cases where they directly inhibit <a href="/wiki/Gene_flow" title="Gene flow">gene flow</a> (e.g. <a href="/wiki/Postzygotic_barrier" class="mw-redirect" title="Postzygotic barrier">postzygotic barriers</a>).</li></ol>
+<p>Moreover, genera should be composed of <a href="/wiki/Phylogenetic" class="mw-redirect" title="Phylogenetic">phylogenetic</a> units of the same kind as other (analogous) genera.<sup id="cite_ref-delamaza-benignosetal2015_4-0" class="reference"><a href="#cite_note-delamaza-benignosetal2015-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Etymology"><span class="anchor" id="Generic_name"></span><span class="anchor" id="Name"></span>Etymology</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=1" title="Edit section: Etymology"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The term "genus" comes from <a href="/wiki/Latin" title="Latin">Latin</a> <i lang="la"><a href="https://en.wiktionary.org/wiki/genus#Latin" class="extiw" title="wikt:genus">genus</a></i>, a noun form <a href="/wiki/Cognate" title="Cognate">cognate</a> with <i><span title="Latin-language text"><i lang="la"><a href="https://en.wiktionary.org/wiki/gigno" class="extiw" title="wikt:gigno">gignere</a></i></span></i> ('to bear; to give birth to'). The Swedish taxonomist <a href="/wiki/Carl_Linnaeus" title="Carl Linnaeus">Carl Linnaeus</a> popularized its use in his 1753 <i><a href="/wiki/Species_Plantarum" title="Species Plantarum">Species Plantarum</a></i>, but the French botanist <a href="/wiki/Joseph_Pitton_de_Tournefort" title="Joseph Pitton de Tournefort">Joseph Pitton de Tournefort</a> (1656–1708) is considered "the founder of the modern concept of genera".<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Use">Use</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=2" title="Edit section: Use"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The scientific name (or the scientific epithet) of a genus is also called the <b>generic name</b>; in modern style guides and science, it is always capitalised. It plays a fundamental role in <a href="/wiki/Binomial_nomenclature" title="Binomial nomenclature">binomial nomenclature</a>, the system of naming <a href="/wiki/Organism" title="Organism">organisms</a>, where it is combined with the scientific name of a <a href="/wiki/Species" title="Species">species</a>: see <a href="/wiki/Botanical_name" title="Botanical name">Botanical name</a> and <a href="/wiki/Specific_name_(zoology)" title="Specific name (zoology)">Specific name (zoology)</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Use_in_nomenclature">Use in nomenclature</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=3" title="Edit section: Use in nomenclature"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main articles: <a href="/wiki/Binomial_nomenclature" title="Binomial nomenclature">Binomial nomenclature</a>, <a href="/wiki/Taxonomy_(biology)" title="Taxonomy (biology)">Taxonomy (biology)</a>, <a href="/wiki/Author_citation_(zoology)" title="Author citation (zoology)">Author citation (zoology)</a>, and <a href="/wiki/Author_citation_(botany)" title="Author citation (botany)">Author citation (botany)</a></div>
+<p>The rules for the <a href="/wiki/Scientific_name" class="mw-redirect" title="Scientific name">scientific names</a> of <a href="/wiki/Organism" title="Organism">organisms</a> are laid down in the <a href="/wiki/Nomenclature_Codes" class="mw-redirect" title="Nomenclature Codes">nomenclature codes</a>, which allow each species a single unique name that, for <a href="/wiki/Animal" title="Animal">animals</a> (including <a href="/wiki/Protist" title="Protist">protists</a>), <a href="/wiki/Plant" title="Plant">plants</a> (also including <a href="/wiki/Algae" title="Algae">algae</a> and <a href="/wiki/Fungus" title="Fungus">fungi</a>) and <a href="/wiki/Prokaryote" title="Prokaryote">prokaryotes</a> (<a href="/wiki/Bacteria" title="Bacteria">bacteria</a> and <a href="/wiki/Archaea" title="Archaea">archaea</a>), is <a href="/wiki/Latin" title="Latin">Latin</a> and binomial in form; this contrasts with <a href="/wiki/Common_name" title="Common name">common or vernacular names</a>, which are non-standardized, can be non-unique, and typically also vary by country and language of usage.
+</p><p>Except for <a href="/wiki/Virus_classification" title="Virus classification">viruses</a>, the standard format for a <a href="/wiki/Species" title="Species">species</a> name comprises the generic name, indicating the genus to which the species belongs, followed by the specific epithet, which (within that genus) is unique to the species. For example, the <a href="/wiki/Gray_wolf" class="mw-redirect" title="Gray wolf">gray wolf</a>'s scientific name is <span class="nowrap"><i><span title="Latin-language text"><i lang="la">Canis lupus</i></span></i>,</span> with <i><a href="/wiki/Canis" title="Canis">Canis</a></i> (<a href="/wiki/Latin" title="Latin">Latin</a> for 'dog') being the generic name shared by the wolf's close relatives and <span title="Latin-language text"><i lang="la">lupus</i></span> (Latin for 'wolf') being the specific name particular to the wolf. A botanical example would be <i><a href="/wiki/Hibiscus_arnottianus" class="mw-redirect" title="Hibiscus arnottianus">Hibiscus arnottianus</a></i>, a particular species of the genus <i><a href="/wiki/Hibiscus" title="Hibiscus">Hibiscus</a></i> native to Hawaii. The specific name is written in lower-case and may be followed by <a href="/wiki/Subspecies" title="Subspecies">subspecies</a> names in <a href="/wiki/Zoology" title="Zoology">zoology</a> or a variety of <a href="/wiki/Infraspecific_name" title="Infraspecific name">infraspecific names</a> in <a href="/wiki/Botany" title="Botany">botany</a>.
+</p><p>When the generic name is already known from context, it may be shortened to its initial letter, for example, <i>C. lupus</i> in place of <i>Canis lupus</i>. Where species are further subdivided, the generic name (or its abbreviated form) still forms the leading portion of the scientific name, for example, <span class="nowrap"><i><span title="Latin-language text"><i lang="la">Canis lupus lupus</i></span></i></span> for the <a href="/wiki/Eurasian_wolf" title="Eurasian wolf">Eurasian wolf</a> subspecies, or as a botanical example, <span class="nowrap"><i><span title="Latin-language text"><i lang="la">Hibiscus arnottianus</i></span></i> ssp. <i><span title="Latin-language text"><i lang="la">immaculatus</i></span></i></span>. Also, as visible in the above examples, the Latinised portions of the scientific names of genera and their included species (and infraspecies, where applicable) are, by convention, written in <a href="/wiki/Italic_type" title="Italic type">italics</a>.
+</p><p>The scientific names of <a href="/wiki/Virus" title="Virus">virus</a> species are descriptive, not binomial in form, and may or may not incorporate an indication of their containing genus; for example, the virus species "<a href="/wiki/Salmonid_herpesvirus_1" class="mw-redirect" title="Salmonid herpesvirus 1">Salmonid herpesvirus 1</a>", "<a href="/wiki/Salmonid_herpesvirus_2" title="Salmonid herpesvirus 2">Salmonid herpesvirus 2</a>" and "<a href="/wiki/Salmonid_herpesvirus_3" title="Salmonid herpesvirus 3">Salmonid herpesvirus 3</a>" are all within the genus <i><a href="/wiki/Salmonivirus" class="mw-redirect" title="Salmonivirus">Salmonivirus</a></i>; however, the genus to which the species with the formal names "<a href="/wiki/Everglades_virus" title="Everglades virus">Everglades virus</a>" and "<a href="/wiki/Ross_River_virus" title="Ross River virus">Ross River virus</a>" are assigned is <i><a href="/wiki/Alphavirus" title="Alphavirus">Alphavirus</a></i>.
+</p><p>As with scientific names at other ranks, in all groups other than viruses, names of genera may be cited with their authorities, typically in the form "author, year" in zoology, and "standard abbreviated author name" in botany. Thus in the examples above, the genus <i>Canis</i> would be cited in full as "<i>Canis</i> Linnaeus, 1758" (zoological usage), while <i>Hibiscus</i>, also first established by <a href="/wiki/Carl_Linnaeus" title="Carl Linnaeus">Linnaeus</a> but in 1753, is simply "<i>Hibiscus</i> L." (botanical usage).
+</p>
+<div class="mw-heading mw-heading3"><h3 id="The_type_concept">The type concept</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=4" title="Edit section: The type concept"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Type_genus" title="Type genus">Type genus</a>, <a href="/wiki/Type_species" title="Type species">Type species</a>, and <a href="/wiki/Type_specimen" class="mw-redirect" title="Type specimen">Type specimen</a></div>
+<p>Each genus should have a designated <a href="/wiki/Type_(biology)" title="Type (biology)">type</a>, although in practice there is a backlog of older names without one. In zoology, this is the <a href="/wiki/Type_species" title="Type species">type species</a>, and the generic name is permanently associated with the <a href="/wiki/Type_specimen" class="mw-redirect" title="Type specimen">type specimen</a> of its type species. Should the specimen turn out to be assignable to another genus, the generic name linked to it becomes a <a href="/wiki/Junior_synonym" class="mw-redirect" title="Junior synonym">junior synonym</a> and the remaining <a href="/wiki/Taxon" title="Taxon">taxa</a> in the former genus need to be reassessed.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Categories_of_generic_name">Categories of generic name</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=5" title="Edit section: Categories of generic name"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>In zoological usage, taxonomic names, including those of genera, are classified as "available" or "unavailable". Available names are those published in accordance with the <a href="/wiki/International_Code_of_Zoological_Nomenclature" title="International Code of Zoological Nomenclature">International Code of Zoological Nomenclature</a>; the earliest such name for any taxon (for example, a genus) should then be selected as the "<a href="/wiki/Valid_name_(zoology)" title="Valid name (zoology)">valid</a>" (i.e., current or accepted) name for the taxon in question.
+</p><p>Consequently, there will be more available names than valid names at any point in time; which names are currently in use depending on the judgement of taxonomists in either combining taxa described under multiple names, or splitting taxa which may bring available names previously treated as synonyms back into use. "Unavailable" names in zoology comprise names that either were not published according to the provisions of the ICZN Code, e.g., incorrect original or subsequent spellings, names published only in a thesis, and generic names published after 1930 with no type species indicated.<sup id="cite_ref-Hawksworth2010_8-0" class="reference"><a href="#cite_note-Hawksworth2010-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> According to "Glossary" section of the zoological Code, suppressed <i>names</i> (per published "Opinions" of the International Commission of Zoological Nomenclature) remain available but cannot be used as the valid name for a taxon; however, the names published in suppressed <i>works</i> are made unavailable via the relevant Opinion dealing with the work in question.
+</p><p>In botany, similar concepts exist but with different labels. The botanical equivalent of zoology's "available name" is a <a href="/wiki/Validly_published_name" title="Validly published name">validly published name</a>. An invalidly published name is a <span title="Latin-language text"><i lang="la">nomen invalidum</i></span> or <span title="Latin-language text"><i lang="la">nom. inval.</i></span>; a rejected name is a <span title="Latin-language text"><i lang="la">nomen rejiciendum</i></span> or <span title="Latin-language text"><i lang="la">nom. rej.</i></span>; a later homonym of a validly published name is a <span title="Latin-language text"><i lang="la">nomen illegitimum</i></span> or <span title="Latin-language text"><i lang="la">nom. illeg.</i></span>; for a full list refer to the <i><a href="/wiki/International_Code_of_Nomenclature_for_algae,_fungi,_and_plants" title="International Code of Nomenclature for algae, fungi, and plants">International Code of Nomenclature for algae, fungi, and plants</a></i> and the work cited above by Hawksworth, 2010.<sup id="cite_ref-Hawksworth2010_8-1" class="reference"><a href="#cite_note-Hawksworth2010-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> In place of the "valid taxon" in zoology, the nearest equivalent in botany is "<a href="/wiki/Correct_name" title="Correct name">correct name</a>" or "current name" which can, again, differ or change with alternative taxonomic treatments or new information that results in previously accepted genera being combined or split.
+</p><p><a href="/wiki/International_Code_of_Nomenclature_of_Prokaryotes" title="International Code of Nomenclature of Prokaryotes">Prokaryote</a> and <a href="/wiki/International_Committee_on_Taxonomy_of_Viruses" title="International Committee on Taxonomy of Viruses">virus</a> codes of nomenclature also exist which serve as a reference for designating currently<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (August 2023)">when?</span></a></i>&#93;</sup> accepted genus names as opposed to others which may be either reduced to synonymy, or, in the case of prokaryotes, relegated to a status of "names without standing in prokaryotic nomenclature".
+</p><p>An <b>available</b> (zoological) or <b>validly published</b> (botanical) name that has been historically applied to a genus but is not regarded as the accepted (current/valid) name for the taxon is termed a <a href="/wiki/Synonym_(taxonomy)" title="Synonym (taxonomy)">synonym</a>; some authors also include unavailable names in lists of synonyms as well as available names, such as misspellings, names previously published without fulfilling all of the requirements of the relevant nomenclatural code, and rejected or suppressed names.
+</p><p>A particular genus name may have zero to many synonyms, the latter case generally if the genus has been known for a long time and redescribed as new by a range of subsequent workers, or if a range of genera previously considered separate taxa have subsequently been consolidated into one. For example, the <a href="/wiki/World_Register_of_Marine_Species" title="World Register of Marine Species">World Register of Marine Species</a> presently lists 8 genus-level synonyms for the sperm whale genus <i><a href="/wiki/Physeter" title="Physeter">Physeter</a></i> Linnaeus, 1758,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> and 13 for the bivalve genus <i><a href="/wiki/Pecten_(bivalve)" title="Pecten (bivalve)">Pecten</a></i> O.F. Müller, 1776.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Identical_names_(homonyms)"><span id="Identical_names_.28homonyms.29"></span>Identical names (homonyms)</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=6" title="Edit section: Identical names (homonyms)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Within the same kingdom, one generic name can apply to one genus only. However, many names have been assigned (usually unintentionally) to two or more different genera. For example, the <a href="/wiki/Platypus" title="Platypus">platypus</a> belongs to the genus <i>Ornithorhynchus</i> although <a href="/wiki/George_Shaw_(biologist)" title="George Shaw (biologist)">George Shaw</a> named it <i>Platypus</i> in 1799 (these two names are thus <b><i>synonyms</i>)</b>. However, the name <i>Platypus</i> had already been given to a group of <a href="/wiki/Ambrosia_beetle" title="Ambrosia beetle">ambrosia beetles</a> by <a href="/wiki/Johann_Friedrich_Wilhelm_Herbst" title="Johann Friedrich Wilhelm Herbst">Johann Friedrich Wilhelm Herbst</a> in 1793. A name that means two different things is a <i><b>homonym</b></i>. Since beetles and platypuses are both members of the kingdom Animalia, the name could not be used for both. <a href="/wiki/Johann_Friedrich_Blumenbach" title="Johann Friedrich Blumenbach">Johann Friedrich Blumenbach</a> published the replacement name <i>Ornithorhynchus</i> in 1800.
+</p><p>However, a genus in one <a href="/wiki/Kingdom_(biology)" title="Kingdom (biology)">kingdom</a> is allowed to bear a scientific name that is in use as a generic name (or the name of a taxon in another rank) in a kingdom that is governed by a different nomenclature code. Names with the same form but applying to different taxa are called "homonyms". Although this is discouraged by both the <a href="/wiki/International_Code_of_Zoological_Nomenclature" title="International Code of Zoological Nomenclature">International Code of Zoological Nomenclature</a> and the <a href="/wiki/International_Code_of_Nomenclature_for_algae,_fungi,_and_plants" title="International Code of Nomenclature for algae, fungi, and plants">International Code of Nomenclature for algae, fungi, and plants</a>, there are some five thousand such names in use in more than one kingdom. For instance,
+</p>
+<ul><li><i><a href="/wiki/Anura_(frog)" class="mw-redirect" title="Anura (frog)">Anura</a></i> is the name of the <a href="/wiki/Order_(biology)" title="Order (biology)">order</a> of frogs but also is the name of a <a href="/wiki/Synonym_(botany)" class="mw-redirect" title="Synonym (botany)">non-current</a> genus of plants;</li>
+<li><i>Aotus</i> is the generic name of both <a href="/wiki/Aotus_(plant)" title="Aotus (plant)">golden peas</a> and <a href="/wiki/Night_monkey" title="Night monkey">night monkeys</a>;</li>
+<li><i>Oenanthe</i> is the generic name of both <a href="/wiki/Wheatear" title="Wheatear">wheatears</a> and <a href="/wiki/Oenanthe_(plant)" title="Oenanthe (plant)">water dropworts</a>;</li>
+<li><i>Prunella</i> is the generic name of both <a href="/wiki/Accentor" title="Accentor">accentors</a> and <a href="/wiki/Self-heal" class="mw-redirect" title="Self-heal">self-heal</a>; and</li>
+<li><i>Proboscidea</i> is the order of <a href="/wiki/Elephant" title="Elephant">elephants</a> and the genus of <a href="/wiki/Proboscidea_(plant)" title="Proboscidea (plant)">devil's claws</a>.</li>
+<li>The name of the genus <i><a href="/wiki/Paramecia_(alga)" title="Paramecia (alga)">Paramecia</a></i> (an extinct red alga) is also the plural of the name of the genus <i><a href="/wiki/Paramecium" title="Paramecium">Paramecium</a></i> (which is in the SAR supergroup), which can also lead to confusion.</li></ul>
+<p>A list of generic homonyms (with their authorities), including both available (validly published) and selected unavailable names, has been compiled by the <a href="/wiki/Interim_Register_of_Marine_and_Nonmarine_Genera" title="Interim Register of Marine and Nonmarine Genera">Interim Register of Marine and Nonmarine Genera</a> (IRMNG).<sup id="cite_ref-IRMNG_11-0" class="reference"><a href="#cite_note-IRMNG-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Use_in_higher_classifications">Use in higher classifications</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=7" title="Edit section: Use in higher classifications"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The <a href="/wiki/Type_genus" title="Type genus">type genus</a> forms the base for higher <a href="/wiki/Taxonomy_(biology)" title="Taxonomy (biology)">taxonomic</a> ranks, such as the family name <span title="Latin-language text"><i lang="la"><a href="/wiki/Canidae" title="Canidae">Canidae</a></i></span> ("Canids") based on <i>Canis</i>. However, this does not typically ascend more than one or two levels: the <a href="/wiki/Order_(biology)" title="Order (biology)">order</a> to which dogs and wolves belong is <span title="Latin-language text"><i lang="la"><a href="/wiki/Carnivora" title="Carnivora">Carnivora</a></i></span> ("Carnivores").
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Numbers_of_accepted_genera">Numbers of accepted genera</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=8" title="Edit section: Numbers of accepted genera"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The numbers of either accepted, or all published genus names is not known precisely; Rees et al., 2020 estimate that approximately 310,000 accepted names (valid taxa) may exist, out of a total of c. 520,000 published names (including synonyms) as at end 2019, increasing at some 2,500 published generic names per year.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup> "Official" registers of taxon names at all ranks, including genera, exist for a few groups only such as viruses<sup id="cite_ref-ICTV_1-1" class="reference"><a href="#cite_note-ICTV-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> and prokaryotes,<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup> while for others there are compendia with no "official" standing such as <i><a href="/wiki/Index_Fungorum" title="Index Fungorum">Index Fungorum</a></i> for fungi,<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">&#91;</span>14<span class="cite-bracket">&#93;</span></a></sup> <i>Index Nominum Algarum</i><sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">&#91;</span>15<span class="cite-bracket">&#93;</span></a></sup> and <a href="/wiki/AlgaeBase" title="AlgaeBase">AlgaeBase</a><sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">&#91;</span>16<span class="cite-bracket">&#93;</span></a></sup> for algae, <i>Index Nominum Genericorum</i><sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">&#91;</span>17<span class="cite-bracket">&#93;</span></a></sup> and the <a href="/wiki/International_Plant_Names_Index" title="International Plant Names Index">International Plant Names Index</a><sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">&#91;</span>18<span class="cite-bracket">&#93;</span></a></sup> for plants in general, and ferns through angiosperms, respectively, and <i><a href="/wiki/Nomenclator_Zoologicus" title="Nomenclator Zoologicus">Nomenclator Zoologicus</a></i><sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">&#91;</span>19<span class="cite-bracket">&#93;</span></a></sup> and the <a href="/wiki/Index_to_Organism_Names" title="Index to Organism Names">Index to Organism Names</a> for zoological names.
+</p><p>Totals for both "all names" and estimates for "accepted names" as held in the <i><a href="/wiki/Interim_Register_of_Marine_and_Nonmarine_Genera" title="Interim Register of Marine and Nonmarine Genera">Interim Register of Marine and Nonmarine Genera</a></i> (IRMNG) are broken down further in the publication by Rees et al., 2020 cited above. The accepted names estimates are as follows, broken down by kingdom:
+</p>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg/220px-Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg" decoding="async" width="220" height="120" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg/330px-Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg/440px-Estimated_accepted_genus_totals_by_kingdom_-_based_on_Rees_et_al_2020.jpg 2x" data-file-width="873" data-file-height="475" /></a><figcaption>Estimated accepted genus totals by kingdom - based on Rees et al., 2020</figcaption></figure>
+<ul><li><a href="/wiki/Animal" title="Animal">Animalia</a>: 239,093 accepted genus names (± 55,350)</li>
+<li><a href="/wiki/Plant" title="Plant">Plantae</a>: 28,724 (± 7,721)</li>
+<li><a href="/wiki/Fungus" title="Fungus">Fungi</a>: 10,468 (± 182)</li>
+<li><a href="/wiki/Chromista" title="Chromista">Chromista</a>: 11,114 (± 1,268)</li>
+<li><a href="/wiki/Protozoa" title="Protozoa">Protozoa</a>: 3,109 (± 1,206)</li>
+<li><a href="/wiki/Bacteria" title="Bacteria">Bacteria</a>: 3,433 (± 115)</li>
+<li><a href="/wiki/Archaea" title="Archaea">Archaea</a>: 140 (± 0)</li>
+<li><a href="/wiki/Virus" title="Virus">Viruses</a>: 851 (± 0)</li></ul>
+<p>The cited ranges of uncertainty arise because IRMNG lists "uncertain" names (not researched therein) in addition to known "accepted" names; the values quoted are the mean of "accepted" names alone (all "uncertain" names treated as unaccepted) and "accepted + uncertain" names (all "uncertain" names treated as accepted), with the associated range of uncertainty indicating these two extremes.
+</p><p>Within Animalia, the largest phylum is <a href="/wiki/Arthropod" title="Arthropod">Arthropoda</a>, with 151,697 ± 33,160 accepted genus names, of which 114,387 ± 27,654 are <a href="/wiki/Insect" title="Insect">insects</a> (class Insecta). Within Plantae, <a href="/wiki/Tracheophyta" class="mw-redirect" title="Tracheophyta">Tracheophyta</a> (vascular plants) make up the largest component, with 23,236 ± 5,379 accepted genus names, of which 20,845 ± 4,494 are <a href="/wiki/Angiosperms" class="mw-redirect" title="Angiosperms">angiosperms</a> (superclass Angiospermae).
+</p><p>By comparison, the 2018 annual edition of the <a href="/wiki/Catalogue_of_Life" title="Catalogue of Life">Catalogue of Life</a> (estimated &gt;90% complete, for extant species in the main) contains currently<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (August 2023)">when?</span></a></i>&#93;</sup> 175,363 "accepted" genus names for 1,744,204 living and 59,284 extinct species,<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">&#91;</span>20<span class="cite-bracket">&#93;</span></a></sup> also including genus names only (no species) for some groups.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Genus_size">Genus size</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=9" title="Edit section: Genus size"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Number_of_reptile_genera_with_a_given_number_of_species.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Number_of_reptile_genera_with_a_given_number_of_species.png/300px-Number_of_reptile_genera_with_a_given_number_of_species.png" decoding="async" width="300" height="211" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Number_of_reptile_genera_with_a_given_number_of_species.png/450px-Number_of_reptile_genera_with_a_given_number_of_species.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Number_of_reptile_genera_with_a_given_number_of_species.png/600px-Number_of_reptile_genera_with_a_given_number_of_species.png 2x" data-file-width="913" data-file-height="643" /></a><figcaption>Number of reptile genera with a given number of species. Most genera have only one or a few species but a few may have hundreds. Based on data from the <a href="/wiki/Reptile_Database" title="Reptile Database">Reptile Database</a> (as of May 2015).</figcaption></figure>
+<p>The number of species in genera varies considerably among taxonomic groups. For instance, among (non-avian) <a href="/wiki/Reptile" title="Reptile">reptiles</a>, which have about 1180 genera, the most (&gt;300) have only 1 species, ~360 have between 2 and 4 species, 260 have 5–10 species, ~200 have 11–50 species, and only 27 genera have more than 50 species. However, some insect genera such as the bee genera <i><a href="/wiki/Lasioglossum" title="Lasioglossum">Lasioglossum</a></i> and <i><a href="/wiki/Andrena" title="Andrena">Andrena</a></i> have over 1000 species each. The largest flowering plant genus, <i><a href="/wiki/Astragalus_(plant)" title="Astragalus (plant)">Astragalus</a></i>, contains over 3,000 species.<sup id="cite_ref-Frodin_21-0" class="reference"><a href="#cite_note-Frodin-21"><span class="cite-bracket">&#91;</span>21<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>Which species are assigned to a genus is somewhat arbitrary. Although all species within a genus are supposed to be "similar", there are no objective criteria for grouping species into genera. There is much debate among zoologists whether enormous, species-rich genera should be maintained, as it is extremely difficult to come up with identification keys or even character sets that distinguish all species. Hence, many taxonomists argue in favor of breaking down large genera. For instance, the lizard genus <i><a href="/wiki/Anolis" title="Anolis">Anolis</a></i> has been suggested to be broken down into 8 or so different genera which would bring its ~400 species to smaller, more manageable subsets.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">&#91;</span>22<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=10" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/List_of_the_largest_genera_of_flowering_plants" title="List of the largest genera of flowering plants">List of the largest genera of flowering plants</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=11" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-ICTV-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-ICTV_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ICTV_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://ictv.global/taxonomy">"ICTV Taxonomy"</a>. <a href="/wiki/International_Committee_on_Taxonomy_of_Viruses" title="International Committee on Taxonomy of Viruses">International Committee on Taxonomy of Viruses</a>. 2017. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20200320103754/https://talk.ictvonline.org/taxonomy">Archived</a> from the original on March 20, 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">May 29,</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=ICTV+Taxonomy&amp;rft.pub=International+Committee+on+Taxonomy+of+Viruses&amp;rft.date=2017&amp;rft_id=https%3A%2F%2Fictv.global%2Ftaxonomy&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSigwardSuttonBennett2018" class="citation journal cs1">Sigward, J. D.; Sutton, M. D.; Bennett, K. D. (2018). <a rel="nofollow" class="external text" href="https://pure.qub.ac.uk/portal/en/publications/how-big-is-a-genus-towards-a-nomothetic-systematics(939fc3e3-9067-4729-bd2a-23b32adfd556).html">"How big is a genus? Towards a nomothetic systematics"</a>. <i>Zoological Journal of the Linnean Society</i>. <b>183</b> (2): 237–252. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1093%2Fzoolinnean%2Fzlx059">10.1093/zoolinnean/zlx059</a></span>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://hdl.handle.net/10023%2F16213">10023/16213</a></span>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20190530164327/https://pure.qub.ac.uk/portal/en/publications/how-big-is-a-genus-towards-a-nomothetic-systematics(939fc3e3-9067-4729-bd2a-23b32adfd556).html">Archived</a> from the original on 2019-05-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-12-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Zoological+Journal+of+the+Linnean+Society&amp;rft.atitle=How+big+is+a+genus%3F+Towards+a+nomothetic+systematics&amp;rft.volume=183&amp;rft.issue=2&amp;rft.pages=237-252&amp;rft.date=2018&amp;rft_id=info%3Ahdl%2F10023%2F16213&amp;rft_id=info%3Adoi%2F10.1093%2Fzoolinnean%2Fzlx059&amp;rft.aulast=Sigward&amp;rft.aufirst=J.+D.&amp;rft.au=Sutton%2C+M.+D.&amp;rft.au=Bennett%2C+K.+D.&amp;rft_id=https%3A%2F%2Fpure.qub.ac.uk%2Fportal%2Fen%2Fpublications%2Fhow-big-is-a-genus-towards-a-nomothetic-systematics%28939fc3e3-9067-4729-bd2a-23b32adfd556%29.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGillSlikasSheldon2005" class="citation journal cs1">Gill, F. B.; Slikas, B.; Sheldon, F. H. (2005). "Phylogeny of titmice (Paridae): II. Species relationships based on sequences of the mitochondrial cytochrome-b gene". <i>Auk</i>. <b>122</b> (1): 121–143. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1642%2F0004-8038%282005%29122%5B0121%3APOTPIS%5D2.0.CO%3B2">10.1642/0004-8038(2005)122&#91;0121:POTPIS&#93;2.0.CO&#59;2</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:86067032">86067032</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Auk&amp;rft.atitle=Phylogeny+of+titmice+%28Paridae%29%3A+II.+Species+relationships+based+on+sequences+of+the+mitochondrial+cytochrome-b+gene&amp;rft.volume=122&amp;rft.issue=1&amp;rft.pages=121-143&amp;rft.date=2005&amp;rft_id=info%3Adoi%2F10.1642%2F0004-8038%282005%29122%5B0121%3APOTPIS%5D2.0.CO%3B2&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A86067032%23id-name%3DS2CID&amp;rft.aulast=Gill&amp;rft.aufirst=F.+B.&amp;rft.au=Slikas%2C+B.&amp;rft.au=Sheldon%2C+F.+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-delamaza-benignosetal2015-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-delamaza-benignosetal2015_4-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFde_la_Maza-BenignosLozano-VilanoGarcía-Ramírez2015" class="citation journal cs1">de la Maza-Benignos, Mauricio; Lozano-Vilano, Ma. de Lourdes; García-Ramírez, María Elena (December 2015). <a rel="nofollow" class="external text" href="https://doi.org/10.1590%2F1982-0224-20150066">"Response paper: Morphometric article by Mejía et al. 2015 alluding genera Herichthys and Nosferatu displays serious inconsistencies"</a>. <i>Neotropical Ichthyology</i>. <b>13</b> (4): 673–676. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1590%2F1982-0224-20150066">10.1590/1982-0224-20150066</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Neotropical+Ichthyology&amp;rft.atitle=Response+paper%3A+Morphometric+article+by+Mej%C3%ADa+et+al.+2015+alluding+genera+Herichthys+and+Nosferatu+displays+serious+inconsistencies&amp;rft.volume=13&amp;rft.issue=4&amp;rft.pages=673-676&amp;rft.date=2015-12&amp;rft_id=info%3Adoi%2F10.1590%2F1982-0224-20150066&amp;rft.aulast=de+la+Maza-Benignos&amp;rft.aufirst=Mauricio&amp;rft.au=Lozano-Vilano%2C+Ma.+de+Lourdes&amp;rft.au=Garc%C3%ADa-Ram%C3%ADrez%2C+Mar%C3%ADa+Elena&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1590%252F1982-0224-20150066&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFStuessy2009" class="citation book cs1">Stuessy, T. F. (2009). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=W8CrAgAAQBAJ&amp;pg=PA42"><i>Plant Taxonomy: The Systematic Evaluation of Comparative Data</i></a> (2nd&#160;ed.). <a href="/wiki/New_York,_New_York" class="mw-redirect" title="New York, New York">New York, New York</a>, US: <a href="/wiki/Columbia_University_Press" title="Columbia University Press">Columbia University Press</a>. p.&#160;42. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780231147125" title="Special:BookSources/9780231147125"><bdi>9780231147125</bdi></a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20230406152109/https://books.google.com/books?id=W8CrAgAAQBAJ&amp;pg=PA42">Archived</a> from the original on 2023-04-06<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-03-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Plant+Taxonomy%3A+The+Systematic+Evaluation+of+Comparative+Data&amp;rft.place=New+York%2C+New+York%2C+US&amp;rft.pages=42&amp;rft.edition=2nd&amp;rft.pub=Columbia+University+Press&amp;rft.date=2009&amp;rft.isbn=9780231147125&amp;rft.aulast=Stuessy&amp;rft.aufirst=T.+F.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DW8CrAgAAQBAJ%26pg%3DPA42&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFInternational_Commission_on_Zoological_Nomenclature1999" class="citation book cs1">International Commission on Zoological Nomenclature (1999). <a rel="nofollow" class="external text" href="https://www.iczn.org/the-code/the-code-online/"><i>International Code of Zoological Nomenclature</i></a>. London: The International Trust for Zoological Nomenclature. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-85301-006-4" title="Special:BookSources/0-85301-006-4"><bdi>0-85301-006-4</bdi></a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210903062842/https://www.iczn.org/the-code/the-code-online/">Archived</a> from the original on 2021-09-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-11-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=International+Code+of+Zoological+Nomenclature&amp;rft.place=London&amp;rft.pub=The+International+Trust+for+Zoological+Nomenclature&amp;rft.date=1999&amp;rft.isbn=0-85301-006-4&amp;rft.au=International+Commission+on+Zoological+Nomenclature&amp;rft_id=https%3A%2F%2Fwww.iczn.org%2Fthe-code%2Fthe-code-online%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.iapt-taxon.org/nomen/main.php?page=art3">"International Code of Nomenclature for algae, fungi, and plants – Melbourne Code"</a>. <i>IAPT-Taxon.org</i>. 2012. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201010230658/https://www.iapt-taxon.org/nomen/main.php?page=art3">Archived</a> from the original on 2020-10-10<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-11-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IAPT-Taxon.org&amp;rft.atitle=International+Code+of+Nomenclature+for+algae%2C+fungi%2C+and+plants+%E2%80%93+Melbourne+Code&amp;rft.date=2012&amp;rft_id=http%3A%2F%2Fwww.iapt-taxon.org%2Fnomen%2Fmain.php%3Fpage%3Dart3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Hawksworth2010-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-Hawksworth2010_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Hawksworth2010_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFD._L._Hawksworth2010" class="citation book cs1">D. L. Hawksworth (2010). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=Qky7_6-UcQQC&amp;pg=PA10"><i>Terms Used in Bionomenclature: The Naming of Organisms and Plant Communities&#160;: Including Terms Used in Botanical, Cultivated Plant, Phylogenetic, Phytosociological, Prokaryote (bacteriological), Virus, and Zoological Nomenclature</i></a>. GBIF. pp.&#160;1–215. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-87-92020-09-3" title="Special:BookSources/978-87-92020-09-3"><bdi>978-87-92020-09-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Terms+Used+in+Bionomenclature%3A+The+Naming+of+Organisms+and+Plant+Communities+%3A+Including+Terms+Used+in+Botanical%2C+Cultivated+Plant%2C+Phylogenetic%2C+Phytosociological%2C+Prokaryote+%28bacteriological%29%2C+Virus%2C+and+Zoological+Nomenclature&amp;rft.pages=1-215&amp;rft.pub=GBIF&amp;rft.date=2010&amp;rft.isbn=978-87-92020-09-3&amp;rft.au=D.+L.+Hawksworth&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DQky7_6-UcQQC%26pg%3DPA10&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=137032">"WoRMS - World Register of Marine Species - Physeter Linnaeus, 1758"</a>. <i>www.marinespecies.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170709213325/http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=137032">Archived</a> from the original on 2017-07-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-06-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.marinespecies.org&amp;rft.atitle=WoRMS+-+World+Register+of+Marine+Species+-+Physeter+Linnaeus%2C+1758&amp;rft_id=http%3A%2F%2Fwww.marinespecies.org%2Faphia.php%3Fp%3Dtaxdetails%26id%3D137032&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=138323">"WoRMS - World Register of Marine Species - Pecten O. F. Müller, 1776"</a>. <i>www.marinespecies.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20180810174658/http://www.marinespecies.org/aphia.php?p=taxdetails">Archived</a> from the original on 2018-08-10<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-06-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.marinespecies.org&amp;rft.atitle=WoRMS+-+World+Register+of+Marine+Species+-+Pecten+O.+F.+M%C3%BCller%2C+1776&amp;rft_id=http%3A%2F%2Fwww.marinespecies.org%2Faphia.php%3Fp%3Dtaxdetails%26id%3D138323&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-IRMNG-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-IRMNG_11-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.irmng.org/homonyms.php">"IRMNG: Interim Register of Marine and Nonmarine Genera"</a>. <i>www.irmng.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20161117212132/http://www.irmng.org/homonyms.php">Archived</a> from the original on 2016-11-17<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.irmng.org&amp;rft.atitle=IRMNG%3A+Interim+Register+of+Marine+and+Nonmarine+Genera&amp;rft_id=http%3A%2F%2Fwww.irmng.org%2Fhomonyms.php&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFReesVandepitteVanhoorneDecock2020" class="citation journal cs1">Rees, Tony; Vandepitte, Leen; Vanhoorne, Bart; Decock, Wim (2020). <a rel="nofollow" class="external text" href="https://www.mapress.com/j/mt/article/view/megataxa.1.2.3/39250">"All genera of the world: an overview and estimates based on the March 2020 release of the Interim Register of Marine and Nonmarine Genera (IRMNG)"</a>. <i>Megataxa</i>. <b>1</b> (2): 123–140. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.11646%2Fmegataxa.1.2.3">10.11646/megataxa.1.2.3</a></span>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210322091308/https://www.mapress.com/j/mt/article/view/megataxa.1.2.3/39250">Archived</a> from the original on 2021-03-22<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-04-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Megataxa&amp;rft.atitle=All+genera+of+the+world%3A+an+overview+and+estimates+based+on+the+March+2020+release+of+the+Interim+Register+of+Marine+and+Nonmarine+Genera+%28IRMNG%29&amp;rft.volume=1&amp;rft.issue=2&amp;rft.pages=123-140&amp;rft.date=2020&amp;rft_id=info%3Adoi%2F10.11646%2Fmegataxa.1.2.3&amp;rft.aulast=Rees&amp;rft.aufirst=Tony&amp;rft.au=Vandepitte%2C+Leen&amp;rft.au=Vanhoorne%2C+Bart&amp;rft.au=Decock%2C+Wim&amp;rft_id=https%3A%2F%2Fwww.mapress.com%2Fj%2Fmt%2Farticle%2Fview%2Fmegataxa.1.2.3%2F39250&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.bacterio.net/">"LPSN - List of Prokaryotic names with Standing in Nomenclature"</a>. <i>bacterio.net</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20220401092957/https://www.bacterio.net/">Archived</a> from the original on 2022-04-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-06-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=bacterio.net&amp;rft.atitle=LPSN+-+List+of+Prokaryotic+names+with+Standing+in+Nomenclature&amp;rft_id=http%3A%2F%2Fwww.bacterio.net%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.indexfungorum.org/">"Index Fungorum Home Page"</a>. <i>indexfungorum.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20150205221807/http://www.indexfungorum.org/">Archived</a> from the original on 2015-02-05<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-06-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=indexfungorum.org&amp;rft.atitle=Index+Fungorum+Home+Page&amp;rft_id=http%3A%2F%2Fwww.indexfungorum.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://ucjeps.berkeley.edu/ina/">"Index Nominum Algarum: names of algae"</a>. <i>Jepson Herbarium - University of California, Berkeley</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20200807001456/https://ucjeps.berkeley.edu/ina/">Archived</a> from the original on 2020-08-07<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Jepson+Herbarium+-+University+of+California%2C+Berkeley&amp;rft.atitle=Index+Nominum+Algarum%3A+names+of+algae&amp;rft_id=https%3A%2F%2Fucjeps.berkeley.edu%2Fina%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.algaebase.org/">"Algaebase&#160;:: Listing the World's Algae"</a>. <i>algaebase.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20200829085615/https://www.algaebase.org/">Archived</a> from the original on 2020-08-29<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=algaebase.org&amp;rft.atitle=Algaebase+%3A%3A+Listing+the+World%27s+Algae&amp;rft_id=https%3A%2F%2Fwww.algaebase.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://naturalhistory2.si.edu/botany/ing/">"Index Nominum Genericorum (ING), Botany"</a>. <i>Smithsonian National Museum of Natural History</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160303234638/http://botany.si.edu/ing/INGsearch.cfm?SearchWord=eggersia">Archived</a> from the original on 2016-03-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-06-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Smithsonian+National+Museum+of+Natural+History&amp;rft.atitle=Index+Nominum+Genericorum+%28ING%29%2C+Botany&amp;rft_id=https%3A%2F%2Fnaturalhistory2.si.edu%2Fbotany%2Fing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.ipni.org/">"International Plant Names Index"</a>. <i>ipni.org</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20200502112641/https://www.ipni.org/">Archived</a> from the original on 2020-05-02<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-09-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ipni.org&amp;rft.atitle=International+Plant+Names+Index&amp;rft_id=https%3A%2F%2Fwww.ipni.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20211223191732/http://ubio.org/NomenclatorZoologicus/">"Nomenclator Zoologicus"</a>. <i>uBio</i>. Archived from <a rel="nofollow" class="external text" href="http://ubio.org/NomenclatorZoologicus/">the original</a> on 2021-12-23<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-02-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=uBio&amp;rft.atitle=Nomenclator+Zoologicus&amp;rft_id=http%3A%2F%2Fubio.org%2FNomenclatorZoologicus%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.catalogueoflife.org/annual-checklist/2018/info/ac">"2018 Annual Checklist"</a>. <i>Catalogue of Life</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201111212241/http://www.catalogueoflife.org/annual-checklist/2018/info/ac">Archived</a> from the original on 2020-11-11<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-07-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Catalogue+of+Life&amp;rft.atitle=2018+Annual+Checklist&amp;rft_id=http%3A%2F%2Fwww.catalogueoflife.org%2Fannual-checklist%2F2018%2Finfo%2Fac&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Frodin-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-Frodin_21-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFrodin2004" class="citation journal cs1">Frodin, David G. (2004). "History and concepts of big plant genera". <i><a href="/wiki/Taxon_(journal)" title="Taxon (journal)">Taxon</a></i>. <b>53</b> (3): 753–776. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.2307%2F4135449">10.2307/4135449</a>. <a href="/wiki/JSTOR_(identifier)" class="mw-redirect" title="JSTOR (identifier)">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="https://www.jstor.org/stable/4135449">4135449</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Taxon&amp;rft.atitle=History+and+concepts+of+big+plant+genera&amp;rft.volume=53&amp;rft.issue=3&amp;rft.pages=753-776&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.2307%2F4135449&amp;rft_id=https%3A%2F%2Fwww.jstor.org%2Fstable%2F4135449%23id-name%3DJSTOR&amp;rft.aulast=Frodin&amp;rft.aufirst=David+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFNicholsonCrotherGuyerSavage2012" class="citation journal cs1">Nicholson, K. E.; Crother, B. I.; Guyer, C.; Savage, J.M. (2012). <a rel="nofollow" class="external text" href="http://www.mapress.com/zootaxa/2012/f/zt03477p108.pdf">"It is time for a new classification of anoles (Squamata: Dactyloidae)"</a> <span class="cs1-format">(PDF)</span>. <i>Zootaxa</i>. <b>3477</b>: 1–108. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.11646%2Fzootaxa.3477.1.1">10.11646/zootaxa.3477.1.1</a></span>. <a rel="nofollow" class="external text" href="https://ghostarchive.org/archive/20221009/http://www.mapress.com/zootaxa/2012/f/zt03477p108.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2022-10-09.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Zootaxa&amp;rft.atitle=It+is+time+for+a+new+classification+of+anoles+%28Squamata%3A+Dactyloidae%29&amp;rft.volume=3477&amp;rft.pages=1-108&amp;rft.date=2012&amp;rft_id=info%3Adoi%2F10.11646%2Fzootaxa.3477.1.1&amp;rft.aulast=Nicholson&amp;rft.aufirst=K.+E.&amp;rft.au=Crother%2C+B.+I.&amp;rft.au=Guyer%2C+C.&amp;rft.au=Savage%2C+J.M.&amp;rft_id=http%3A%2F%2Fwww.mapress.com%2Fzootaxa%2F2012%2Ff%2Fzt03477p108.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AGenus" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Genus&amp;action=edit&amp;section=12" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1235681985">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/34px-Wikispecies-logo.svg.png" decoding="async" width="34" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/51px-Wikispecies-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/68px-Wikispecies-logo.svg.png 2x" data-file-width="941" data-file-height="1103" /></span></span></div>
+<div class="side-box-text plainlist"><a href="/wiki/Wikispecies" title="Wikispecies">Wikispecies</a> has information related to <i><b><a href="https://species.wikimedia.org/wiki/Special:Search/Genus" class="extiw" title="wikispecies:Special:Search/Genus">Genus</a></b></i>.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="http://www.irmng.org/index.php">Interim Register of Marine and Nonmarine Genera (IRMNG)</a>: includes an estimated 95% of published genus names (accepted and unaccepted) in all groups (semi-continuously updated)</li>
+<li><a rel="nofollow" class="external text" href="http://ubio.org/NomenclatorZoologicus/"><i>Nomenclator Zoologicus</i></a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20211223191732/http://ubio.org/NomenclatorZoologicus/">Archived</a> 2021-12-23 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>: index of genus and subgenus names (accepted and unaccepted) in zoological nomenclature from 1758 to 2004</li>
+<li><a rel="nofollow" class="external text" href="http://www.organismnames.com/">Index to Organism Names</a>: includes zoological taxon names at all ranks (including genera) as continuously indexed for the <a href="/wiki/The_Zoological_Record" title="The Zoological Record"><i>Zoological Record</i></a></li>
+<li><a rel="nofollow" class="external text" href="https://naturalhistory2.si.edu/botany/ing/"><i>Index Nominum Genericorum</i> (ING)</a>: a compilation of generic names (accepted and unaccepted) published for organisms covered by the ICN: International Code of Nomenclature for Algae, Fungi, and Plants (semi-continuously updated)</li>
+<li><a rel="nofollow" class="external text" href="http://www.bacterio.net/">LPSN – List of Prokaryotic names with Standing in Nomenclature</a>: includes all currently<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (August 2023)">when?</span></a></i>&#93;</sup> accepted Bacteria and Archaea genus names (continuously updated)</li>
+<li><a rel="nofollow" class="external text" href="https://ictv.global/taxonomy">ICTV taxonomy releases</a>: latest and historical lists of accepted virus names compiled by the International Committee on Taxonomy of Viruses (ICTV), including all currently<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (August 2023)">when?</span></a></i>&#93;</sup> accepted virus genus names (updated via regular releases)</li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1126788409"><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Taxonomic_ranks" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Taxonomic_ranks" title="Template:Taxonomic ranks"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Taxonomic_ranks" title="Template talk:Taxonomic ranks"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Taxonomic_ranks" title="Special:EditPage/Template:Taxonomic ranks"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Taxonomic_ranks" style="font-size:114%;margin:0 4em"><a href="/wiki/Taxonomic_rank" title="Taxonomic rank">Taxonomic ranks</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd plainlist" style="width:100%;padding:0;line-height: 1.75;"><div style="padding:0 0.25em">
+<table role="presentation" style="width: 100%;">
+
+<tbody><tr style="vertical-align: top;">
+<td style="width: 11%;">
+<ul><li><i><a href="/wiki/Realm_(virology)" title="Realm (virology)">Realm (<abbr title="virology">vir.</abbr>)</a></i></li>
+<li><i><a href="/wiki/Realm_(virology)" title="Realm (virology)">Subrealm (<abbr title="virology">vir.</abbr>)</a></i></li>
+<li><a href="/wiki/Domain_(biology)" title="Domain (biology)"><strong>Domain</strong>/Superkingdom</a></li>
+<li><strong><a href="/wiki/Kingdom_(biology)" title="Kingdom (biology)">Kingdom</a></strong></li>
+<li><a href="/wiki/Kingdom_(biology)" title="Kingdom (biology)">Subkingdom</a></li>
+<li><a href="/wiki/Kingdom_(biology)" title="Kingdom (biology)">Infrakingdom/Branch</a></li></ul>
+</td>
+<td style="padding-top: 1.75em; width: 11%;">
+<ul><li><a href="/wiki/Phylum" title="Phylum">Superphylum</a>/<i><a href="/wiki/Division_(biology)" title="Division (biology)">Superdivision (<abbr title="botany">bot.</abbr>)</a></i></li>
+<li><strong><a href="/wiki/Phylum" title="Phylum">Phylum</a></strong>/<strong><i><a href="/wiki/Division_(biology)" title="Division (biology)">Division (<abbr title="botany">bot.</abbr>)</a></i></strong></li>
+<li><a href="/wiki/Subphylum" title="Subphylum">Subphylum</a>/<a href="/wiki/Division_(biology)" title="Division (biology)">Subdivision</a></li>
+<li><a href="/wiki/Subphylum" title="Subphylum">Infraphylum</a></li>
+<li><a href="/wiki/Subphylum" title="Subphylum">Microphylum</a></li></ul>
+</td>
+<td style="padding-top: 1.75em; width: 11%;">
+<ul><li><a href="/wiki/Class_(biology)" title="Class (biology)">Superclass</a></li>
+<li><strong><a href="/wiki/Class_(biology)" title="Class (biology)">Class</a></strong></li>
+<li><a href="/wiki/Class_(biology)" title="Class (biology)">Subclass</a></li>
+<li><a href="/wiki/Class_(biology)" title="Class (biology)">Infraclass</a></li>
+<li><a href="/wiki/Class_(biology)" title="Class (biology)">Subterclass</a></li>
+<li><a href="/wiki/Class_(biology)" title="Class (biology)">Parvclass</a></li></ul>
+</td>
+<td style="padding-top: 3.5em; width: 11%;">
+<ul><li><i><a href="/wiki/Division_(biology)" title="Division (biology)">Division (<abbr title="zoology">zoo.</abbr>)</a></i></li>
+<li><a href="/wiki/Legion_(taxonomy)" title="Legion (taxonomy)">Legion</a></li>
+<li><a href="/wiki/Cohort_(taxonomy)" class="mw-redirect" title="Cohort (taxonomy)">Cohort</a></li></ul>
+</td>
+<td style="width: 11%;">
+<ul><li><a href="/wiki/Order_(biology)" title="Order (biology)">Magnorder</a></li>
+<li><a href="/wiki/Order_(biology)" title="Order (biology)">Superorder</a></li>
+<li><strong><a href="/wiki/Order_(biology)" title="Order (biology)">Order</a></strong></li>
+<li><a href="/wiki/Order_(biology)" title="Order (biology)">Suborder</a></li>
+<li><a href="/wiki/Order_(biology)" title="Order (biology)">Infraorder</a></li>
+<li><a href="/wiki/Order_(biology)" title="Order (biology)">Parvorder</a></li></ul>
+</td>
+<td style="width: 11%;">
+<ul><li><i><a href="/wiki/Section_(biology)" title="Section (biology)">Section (<abbr title="zoology">zoo.</abbr>)</a></i></li>
+<li><a href="/wiki/Superfamily_(taxonomy)" class="mw-redirect" title="Superfamily (taxonomy)">Superfamily</a></li>
+<li><strong><a href="/wiki/Family_(biology)" title="Family (biology)">Family</a></strong></li>
+<li><a href="/wiki/Subfamily" title="Subfamily">Subfamily</a></li>
+<li><a href="/wiki/Family_(biology)" title="Family (biology)">Infrafamily</a></li></ul>
+</td>
+<td style="padding-top: 1.75em; width: 11%;">
+<ul><li><a href="/wiki/Tribe_(biology)" title="Tribe (biology)">Supertribe</a></li>
+<li><strong><a href="/wiki/Tribe_(biology)" title="Tribe (biology)">Tribe</a></strong></li>
+<li><a href="/wiki/Subtribe" title="Subtribe">Subtribe</a></li>
+<li><a href="/wiki/Tribe_(biology)" title="Tribe (biology)">Infratribe</a></li></ul>
+</td>
+<td style="padding-top: 3.5em; width: 11%;">
+<ul><li><strong><a class="mw-selflink selflink">Genus</a></strong></li>
+<li><a href="/wiki/Subgenus" title="Subgenus">Subgenus</a></li>
+<li><i><a href="/wiki/Section_(botany)" title="Section (botany)">Section (<abbr title="botany">bot.</abbr>)</a></i></li>
+<li><i><a href="/wiki/Series_(botany)" title="Series (botany)">Series (<abbr title="botany">bot.</abbr>)</a></i></li></ul>
+</td>
+<td style="padding-top: 1.75em; width: 11%;">
+<ul><li><a href="/wiki/Species_complex" title="Species complex">Species complex</a></li>
+<li><strong><a href="/wiki/Species" title="Species">Species</a></strong></li>
+<li><a href="/wiki/Subspecies" title="Subspecies">Subspecies</a></li>
+<li><i><a href="/wiki/Variety_(botany)" title="Variety (botany)">Variety (<abbr title="botany">bot.</abbr>)</a></i></li>
+<li><i><a href="/wiki/Form_(botany)" title="Form (botany)">Form (<abbr title="botany">bot.</abbr>)</a></i></li></ul>
+</td></tr></tbody></table>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐plfrf
+Cached time: 20240926232130
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.905 seconds
+Real time usage: 1.067 seconds
+Preprocessor visited node count: 2577/1000000
+Post‐expand include size: 71936/2097152 bytes
+Template argument size: 2946/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 12/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 94852/5000000 bytes
+Lua time usage: 0.614/10.000 seconds
+Lua memory usage: 25987056/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  964.474      1 -total
+ 32.05%  309.153      1 Template:Reflist
+ 20.59%  198.606     13 Template:Cite_web
+ 15.06%  145.228      1 Template:Wikt-lang
+ 12.40%  119.569      1 Template:Taxonomic_ranks
+ 12.06%  116.291      1 Template:Navbox
+  9.62%   92.788      1 Template:Short_description
+  5.83%   56.181      4 Template:When
+  5.74%   55.395      2 Template:Pagetype
+  5.24%   50.505      6 Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:38493-0!canonical and timestamp 20240926232130 and revision id 1220532484. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Genus&amp;oldid=1220532484">https://en.wikipedia.org/w/index.php?title=Genus&amp;oldid=1220532484</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Genera" title="Category:Genera">Genera</a></li><li><a href="/wiki/Category:Botanical_nomenclature" title="Category:Botanical nomenclature">Botanical nomenclature</a></li><li><a href="/wiki/Category:Plant_taxonomy" title="Category:Plant taxonomy">Plant taxonomy</a></li><li><a href="/wiki/Category:Zoological_nomenclature" title="Category:Zoological nomenclature">Zoological nomenclature</a></li><li><a href="/wiki/Category:Bacterial_nomenclature" title="Category:Bacterial nomenclature">Bacterial nomenclature</a></li><li><a href="/wiki/Category:Taxa_named_by_Joseph_Pitton_de_Tournefort" title="Category:Taxa named by Joseph Pitton de Tournefort">Taxa named by Joseph Pitton de Tournefort</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_containing_Latin-language_text" title="Category:Articles containing Latin-language text">Articles containing Latin-language text</a></li><li><a href="/wiki/Category:All_articles_with_vague_or_ambiguous_time" title="Category:All articles with vague or ambiguous time">All articles with vague or ambiguous time</a></li><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_August_2023" title="Category:Vague or ambiguous time from August 2023">Vague or ambiguous time from August 2023</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 24 April 2024, at 11:08<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" style="display:none;"></a>;
+additional terms may apply. By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Genus&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="/static/images/footer/wikimedia-button.svg" width="84" height="29" alt="Wikimedia Foundation" loading="lazy"></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="/w/resources/assets/poweredby_mediawiki.svg" alt="Powered by MediaWiki" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul></ul>
+</div><script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-zhg6g","wgBackendResponseTime":251,"wgPageParseReport":{"limitreport":{"cputime":"0.905","walltime":"1.067","ppvisitednodes":{"value":2577,"limit":1000000},"postexpandincludesize":{"value":71936,"limit":2097152},"templateargumentsize":{"value":2946,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":12,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":94852,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  964.474      1 -total"," 32.05%  309.153      1 Template:Reflist"," 20.59%  198.606     13 Template:Cite_web"," 15.06%  145.228      1 Template:Wikt-lang"," 12.40%  119.569      1 Template:Taxonomic_ranks"," 12.06%  116.291      1 Template:Navbox","  9.62%   92.788      1 Template:Short_description","  5.83%   56.181      4 Template:When","  5.74%   55.395      2 Template:Pagetype","  5.24%   50.505      6 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.614","limit":"10.000"},"limitreport-memusage":{"value":25987056,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-plfrf","timestamp":"20240926232130","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Genus","url":"https:\/\/en.wikipedia.org\/wiki\/Genus","sameAs":"http:\/\/www.wikidata.org\/entity\/Q34740","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q34740","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-10T00:02:36Z","dateModified":"2024-04-24T11:08:20Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a5\/Biological_classification_L_Pengo_vflip.svg","headline":"taxonomic rank used in the biological classification of living and fossil organisms, and viruses"}</script>
+</body>
+</html>

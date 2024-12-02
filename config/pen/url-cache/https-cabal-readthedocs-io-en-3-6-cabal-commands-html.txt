@@ -1,0 +1,627 @@
+HTTP/1.1 200 OK
+Date: Sat, 09 Nov 2024 21:14:31 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 8e00d01d4987d993-AKL
+CF-Cache-Status: HIT
+Access-Control-Allow-Origin: *
+Age: 332
+Cache-Control: max-age=1200
+ETag: W/"21687485defddd0e4d98fa8c054a24f0"
+Last-Modified: Tue, 22 Nov 2022 01:49:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Accept-Encoding
+access-control-allow-methods: HEAD, OPTIONS, GET
+cdn-cache-control: public
+referrer-policy: no-referrer-when-downgrade
+x-amz-id-2: RvkZfs+9k3+JnWZGIzkCd7cg8fDVsAQtoo2uk/uvQ/YqMVvwl/XVYnz3x+8/uEMTr3G5kKcXfRYQioEfSihceTIw0F8aIW5NsyQgB6xWJOQ=
+x-amz-request-id: VC6RF7KSQF4ZND0Y
+x-amz-server-side-encryption: AES256
+x-backend: web-ext-theme-i-00bcdcf2d11153016
+x-content-type-options: nosniff
+x-rtd-domain: cabal.readthedocs.io
+x-rtd-force-addons: true
+x-rtd-path: /proxito/html/cabal/3.6/cabal-commands.html
+x-rtd-project: cabal
+x-rtd-project-method: public_domain
+x-rtd-resolver-filename: /cabal-commands.html
+x-rtd-version: 3.6
+x-rtd-version-method: path
+x-served: Nginx-Proxito-Sendfile
+Set-Cookie: _cfuvid=atZtRjZnmIgGQtZWoBzbVYul0lr3Y0EEh9oKDf3u7e0-1731186871899-0.0.1.1-604800000; path=/; domain=.readthedocs.io; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. cabal-install Commands &mdash; Cabal 3.6.0.0 User&#39;s Guide</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_SVG"></script>
+        
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Package Description" href="cabal-package.html" />
+    <link rel="prev" title="5.1. Quickstart" href="nix-local-build.html" /> 
+
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2022-11-22T01:48:50Z", "builder": "sphinx", "canonical_url": null, "commit": "8fd619e3", "docroot": "/doc/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "cabal-commands", "programming_language": "haskell", "project": "cabal", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "3.6"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="cabal" /><meta name="readthedocs-version-slug" content="3.6" /><meta name="readthedocs-resolver-filename" content="/cabal-commands.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cabal
+          
+
+          
+            
+            <img src="_static/Cabal-dark.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                3.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+  
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">1. Getting Started with Haskell and Cabal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config-and-install.html">3. Configuration and Installing Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts-and-development.html">4. Package Concepts and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nix-local-build-overview.html">5. Nix-style Local Builds</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. cabal-install Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-configure">6.1. cabal v2-configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-update">6.2. cabal v2-update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-build">6.3. cabal v2-build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-repl">6.4. cabal v2-repl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-run">6.5. cabal v2-run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-freeze">6.6. cabal v2-freeze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-bench">6.7. cabal v2-bench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-test">6.8. cabal v2-test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-haddock">6.9. cabal v2-haddock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-exec">6.10. cabal v2-exec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-install">6.11. cabal v2-install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-libraries-to-ghc-package-environments">6.11.1. Adding libraries to GHC package environments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-clean">6.12. cabal v2-clean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cabal-v2-sdist">6.13. cabal v2-sdist</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cabal-package.html">7. Package Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cabal-project.html">8. cabal.project Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup-commands.html">9. Setup.hs Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file-format-changelog.html">10. Package Description Format Specification History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildinfo-fields-reference.html">11. Field Syntax Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs-and-stability.html">12. Reporting Bugs and Stability of Cabal Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nix-integration.html">13. Nix Integration</a></li>
+</ul>
+
+            
+          
+  <a href="cabal-projectindex.html">Reference</a>
+  <a href="genindex.html">Index</a>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cabal</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><span class="section-number">6. </span>cabal-install Commands</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/haskell/cabal/blob/3.6/doc/cabal-commands.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="cabal-install-commands">
+<h1><span class="section-number">6. </span>cabal-install Commands<a class="headerlink" href="#cabal-install-commands" title="Permalink to this headline">¶</a></h1>
+<p>We now give an in-depth description of all the commands, describing the
+arguments and flags they accept.</p>
+<section id="cabal-v2-configure">
+<h2><span class="section-number">6.1. </span>cabal v2-configure<a class="headerlink" href="#cabal-v2-configure" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span></code> takes a set of arguments and writes a
+<code class="docutils literal notranslate"><span class="pre">cabal.project.local</span></code> file based on the flags passed to this command.
+<code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span> <span class="pre">FLAGS;</span> <span class="pre">cabal</span> <span class="pre">v2-build</span></code> is roughly equivalent to
+<code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span> <span class="pre">FLAGS</span></code>, except that with <code class="docutils literal notranslate"><span class="pre">v2-configure</span></code> the flags
+are persisted to all subsequent calls to <code class="docutils literal notranslate"><span class="pre">v2-build</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span></code> is intended to be a convenient way to write out
+a <code class="docutils literal notranslate"><span class="pre">cabal.project.local</span></code> for simple configurations; e.g.,
+<code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span> <span class="pre">-w</span> <span class="pre">ghc-7.8</span></code> would ensure that all subsequent
+builds with <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span></code> are performed with the compiler
+<code class="docutils literal notranslate"><span class="pre">ghc-7.8</span></code>. For more complex configuration, we recommend writing the
+<code class="docutils literal notranslate"><span class="pre">cabal.project.local</span></code> file directly (or placing it in
+<code class="docutils literal notranslate"><span class="pre">cabal.project</span></code>!)</p>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span></code> inherits options from <code class="docutils literal notranslate"><span class="pre">Cabal</span></code>. semantics:</p>
+<ul class="simple">
+<li><p>Any flag accepted by <code class="docutils literal notranslate"><span class="pre">./Setup</span> <span class="pre">configure</span></code>.</p></li>
+<li><p>Any flag accepted by <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">configure</span></code> beyond
+<code class="docutils literal notranslate"><span class="pre">./Setup</span> <span class="pre">configure</span></code>, namely <code class="docutils literal notranslate"><span class="pre">--cabal-lib-version</span></code>,
+<code class="docutils literal notranslate"><span class="pre">--constraint</span></code>, <code class="docutils literal notranslate"><span class="pre">--preference</span></code> and <code class="docutils literal notranslate"><span class="pre">--solver.</span></code></p></li>
+<li><p>Any flag accepted by <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">install</span></code> beyond <code class="docutils literal notranslate"><span class="pre">./Setup</span> <span class="pre">configure</span></code>.</p></li>
+<li><p>Any flag accepted by <code class="docutils literal notranslate"><span class="pre">./Setup</span> <span class="pre">haddock</span></code>.</p></li>
+</ul>
+<p>The options of all of these flags apply only to <em>local</em> packages in a
+project; this behavior is different than that of <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">install</span></code>,
+which applies flags to every package that would be built. The motivation
+for this is to avoid an innocuous addition to the flags of a package
+resulting in a rebuild of every package in the store (which might need
+to happen if a flag actually applied to every transitive dependency). To
+apply options to an external package, use a <code class="docutils literal notranslate"><span class="pre">package</span></code> stanza in a
+<code class="docutils literal notranslate"><span class="pre">cabal.project</span></code> file.</p>
+</section>
+<section id="cabal-v2-update">
+<h2><span class="section-number">6.2. </span>cabal v2-update<a class="headerlink" href="#cabal-v2-update" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-update</span></code> updates the state of the package index. If the
+project contains multiple remote package repositories it will update
+the index of all of them (e.g. when using overlays).</p>
+<p>Some examples:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-update                  # update all remote repos
+$ cabal v2-update head.hackage     # update only head.hackage
+</pre></div>
+</div>
+</section>
+<section id="cabal-v2-build">
+<h2><span class="section-number">6.3. </span>cabal v2-build<a class="headerlink" href="#cabal-v2-build" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span></code> takes a set of targets and builds them. It
+automatically handles building and installing any dependencies of these
+targets.</p>
+<p>A target can take any of the following forms:</p>
+<ul>
+<li><p>A package target: <code class="docutils literal notranslate"><span class="pre">package</span></code>, which specifies that all enabled
+components of a package to be built. By default, test suites and
+benchmarks are <em>not</em> enabled, unless they are explicitly requested
+(e.g., via <code class="docutils literal notranslate"><span class="pre">--enable-tests</span></code>.)</p></li>
+<li><p>A component target: <code class="docutils literal notranslate"><span class="pre">[package:][ctype:]component</span></code>, which specifies
+a specific component (e.g., a library, executable, test suite or
+benchmark) to be built.</p></li>
+<li><p>All packages: <code class="docutils literal notranslate"><span class="pre">all</span></code>, which specifies all packages within the project.</p></li>
+<li><p>Components of a particular type: <code class="docutils literal notranslate"><span class="pre">package:ctypes</span></code>, <code class="docutils literal notranslate"><span class="pre">all:ctypes</span></code>:
+which specifies all components of the given type. Where valid
+<code class="docutils literal notranslate"><span class="pre">ctypes</span></code> are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">libs</span></code>, <code class="docutils literal notranslate"><span class="pre">libraries</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flibs</span></code>, <code class="docutils literal notranslate"><span class="pre">foreign-libraries</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exes</span></code>, <code class="docutils literal notranslate"><span class="pre">executables</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tests</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">benches</span></code>, <code class="docutils literal notranslate"><span class="pre">benchmarks</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A module target: <code class="docutils literal notranslate"><span class="pre">[package:][ctype:]module</span></code>, which specifies that the
+component of which the given module is a part of will be built.</p></li>
+<li><p>A filepath target: <code class="docutils literal notranslate"><span class="pre">[package:][ctype:]filepath</span></code>, which specifies that the
+component of which the given filepath is a part of will be built.</p></li>
+</ul>
+<p>In component targets, <code class="docutils literal notranslate"><span class="pre">package:</span></code> and <code class="docutils literal notranslate"><span class="pre">ctype:</span></code> (valid component types
+are <code class="docutils literal notranslate"><span class="pre">lib</span></code>, <code class="docutils literal notranslate"><span class="pre">flib</span></code>, <code class="docutils literal notranslate"><span class="pre">exe</span></code>, <code class="docutils literal notranslate"><span class="pre">test</span></code> and <code class="docutils literal notranslate"><span class="pre">bench</span></code>) can be used to
+disambiguate when multiple packages define the same component, or the
+same component name is used in a package (e.g., a package <code class="docutils literal notranslate"><span class="pre">foo</span></code>
+defines both an executable and library named <code class="docutils literal notranslate"><span class="pre">foo</span></code>). We always prefer
+interpreting a target as a package name rather than as a component name.</p>
+<p>Some example targets:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-build lib<span class="p">:</span>foo-pkg       # build the library named foo-pkg
+$ cabal v2-build foo-pkg<span class="p">:</span>foo-tests # build foo-tests in foo-pkg
+$ cabal v2-build src/Lib.s         # build the library component to
+                                   # which &quot;src/Lib.hs&quot; belongs
+$ cabal v2-build app/Main.hs       # build the executable component of
+                                   # &quot;app/Main.hs&quot;
+$ cabal v2-build Lib               # build the library component to
+                                   # which the module &quot;Lib&quot; belongs
+</pre></div>
+</div>
+<p>Beyond a list of targets, <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span></code> accepts all the flags that
+<code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-configure</span></code> takes. Most of these flags are only taken into
+consideration when building local packages; however, some flags may
+cause extra store packages to be built (for example,
+<code class="docutils literal notranslate"><span class="pre">--enable-profiling</span></code> will automatically make sure profiling libraries
+for all transitive dependencies are built and installed.)</p>
+<p>In addition <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span></code> accepts these flags:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--only-configure</span></code>: When given we will forego performing a full build and
+abort after running the configure phase of each target package.</p></li>
+</ul>
+</section>
+<section id="cabal-v2-repl">
+<h2><span class="section-number">6.4. </span>cabal v2-repl<a class="headerlink" href="#cabal-v2-repl" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-repl</span> <span class="pre">TARGET</span></code> loads all of the modules of the target into
+GHCi as interpreted bytecode. In addition to <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-build</span></code>’s flags,
+it takes an additional <code class="docutils literal notranslate"><span class="pre">--repl-options</span></code> flag.</p>
+<p>To avoid <code class="docutils literal notranslate"><span class="pre">ghci</span></code> specific flags from triggering unneeded global rebuilds these
+flags are now stripped from the internal configuration. As a result
+<code class="docutils literal notranslate"><span class="pre">--ghc-options</span></code> will no longer (reliably) work to pass flags to <code class="docutils literal notranslate"><span class="pre">ghci</span></code> (or
+other repls). Instead, you should use the new <code class="docutils literal notranslate"><span class="pre">--repl-options</span></code> flag to
+specify these options to the invoked repl. (This flag also works on <code class="docutils literal notranslate"><span class="pre">cabal</span>
+<span class="pre">repl</span></code> and <code class="docutils literal notranslate"><span class="pre">Setup</span> <span class="pre">repl</span></code> on sufficiently new versions of Cabal.)</p>
+<p>Currently, it is not supported to pass multiple targets to <code class="docutils literal notranslate"><span class="pre">v2-repl</span></code>
+(<code class="docutils literal notranslate"><span class="pre">v2-repl</span></code> will just successively open a separate GHCi session for
+each target.)</p>
+<p>It also provides a way to experiment with libraries without needing to download
+them manually or to install them globally.</p>
+<p>This command opens a REPL with the current default target loaded, and a version
+of the <code class="docutils literal notranslate"><span class="pre">vector</span></code> package matching that specification exposed.</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-repl --build-depends &quot;vector <span class="o">&gt;=</span> 0.12 <span class="o">&amp;&amp;</span> <span class="o">&lt;</span> 0.13&quot;
+</pre></div>
+</div>
+<p>Both of these commands do the same thing as the above, but only exposes <code class="docutils literal notranslate"><span class="pre">base</span></code>,
+<code class="docutils literal notranslate"><span class="pre">vector</span></code>, and the <code class="docutils literal notranslate"><span class="pre">vector</span></code> package’s transitive dependencies even if the user
+is in a project context.</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-repl --ignore-project --build-depends &quot;vector <span class="o">&gt;=</span> 0.12 <span class="o">&amp;&amp;</span> <span class="o">&lt;</span> 0.13&quot;
+$ cabal v2-repl --project=&#39;&#39; --build-depends &quot;vector <span class="o">&gt;=</span> 0.12 <span class="o">&amp;&amp;</span> <span class="o">&lt;</span> 0.13&quot;
+</pre></div>
+</div>
+<p>This command would add <code class="docutils literal notranslate"><span class="pre">vector</span></code>, but not (for example) <code class="docutils literal notranslate"><span class="pre">primitive</span></code>, because
+it only includes the packages specified on the command line (and <code class="docutils literal notranslate"><span class="pre">base</span></code>, which
+cannot be excluded for technical reasons).</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-repl --build-depends vector --no-transitive-deps
+</pre></div>
+</div>
+</section>
+<section id="cabal-v2-run">
+<h2><span class="section-number">6.5. </span>cabal v2-run<a class="headerlink" href="#cabal-v2-run" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-run</span> <span class="pre">[TARGET</span> <span class="pre">[ARGS]]</span></code> runs the executable specified by the
+target, which can be a component, a package or can be left blank, as
+long as it can uniquely identify an executable within the project.
+Tests and benchmarks are also treated as executables.</p>
+<p>See <a class="reference external" href="#cabal-v2-build">the v2-build section</a> for the target syntax.</p>
+<p>Except in the case of the empty target, the strings after it will be
+passed to the executable as arguments.</p>
+<p>If one of the arguments starts with <code class="docutils literal notranslate"><span class="pre">-</span></code> it will be interpreted as
+a cabal flag, so if you need to pass flags to the executable you
+have to separate them with <code class="docutils literal notranslate"><span class="pre">--</span></code>.</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-run target -- -a -bcd --argument
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">v2-run</span></code> also supports running script files that use a certain format. With
+a script that looks like:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/env cabal
+<span class="p">{</span>- cabal<span class="p">:</span>
+<span class="k">build-depends</span><span class="p">:</span> base <span class="o">^&gt;=</span> 4.11
+            <span class="p">,</span> shelly <span class="o">^&gt;=</span> 1.8.1
+<span class="k">-</span><span class="p">}</span>
+
+<span class="k">main</span> <span class="p">::</span> IO ()
+<span class="k">main</span> = do
+    ...
+</pre></div>
+</div>
+<p>It can either be executed like any other script, using <code class="docutils literal notranslate"><span class="pre">cabal</span></code> as an
+interpreter, or through this command:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-run script.hs
+$ cabal v2-run script.hs -- --arg1 # args are passed like this
+</pre></div>
+</div>
+</section>
+<section id="cabal-v2-freeze">
+<h2><span class="section-number">6.6. </span>cabal v2-freeze<a class="headerlink" href="#cabal-v2-freeze" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-freeze</span></code> writes out a <strong>freeze file</strong> which records all of
+the versions and flags that are picked by the solver under the
+current index and flags.  Default name of this file is
+<code class="docutils literal notranslate"><span class="pre">cabal.project.freeze</span></code> but in combination with a
+<code class="docutils literal notranslate"><span class="pre">--project-file=my.project</span></code> flag (see <a class="reference internal" href="cabal-project.html#cmdoption-project-file"><span class="std std-ref">project-file</span></a>)
+the name will be <code class="docutils literal notranslate"><span class="pre">my.project.freeze</span></code>.
+A freeze file has the same syntax as <code class="docutils literal notranslate"><span class="pre">cabal.project</span></code> and looks
+something like this:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span><span class="k">constraints</span><span class="p">:</span> HTTP <span class="o">==</span>4000.3.3<span class="p">,</span>
+             HTTP +warp-tests -warn-as-error -network23 +network-uri -mtl1 -conduit10<span class="p">,</span>
+             QuickCheck <span class="o">==</span>2.9.1<span class="p">,</span>
+             QuickCheck +templatehaskell<span class="p">,</span>
+<span class="w">             </span><span class="c1">-- etc...</span>
+</pre></div>
+</div>
+<p>For end-user executables, it is recommended that you distribute the
+<code class="docutils literal notranslate"><span class="pre">cabal.project.freeze</span></code> file in your source repository so that all
+users see a consistent set of dependencies. For libraries, this is not
+recommended: users often need to build against different versions of
+libraries than what you developed against.</p>
+</section>
+<section id="cabal-v2-bench">
+<h2><span class="section-number">6.7. </span>cabal v2-bench<a class="headerlink" href="#cabal-v2-bench" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-bench</span> <span class="pre">[TARGETS]</span> <span class="pre">[OPTIONS]</span></code> runs the specified benchmarks
+(all the benchmarks in the current package by default), first ensuring
+they are up to date.</p>
+</section>
+<section id="cabal-v2-test">
+<h2><span class="section-number">6.8. </span>cabal v2-test<a class="headerlink" href="#cabal-v2-test" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-test</span> <span class="pre">[TARGETS]</span> <span class="pre">[OPTIONS]</span></code> runs the specified test suites
+(all the test suites in the current package by default), first ensuring
+they are up to date.</p>
+</section>
+<section id="cabal-v2-haddock">
+<h2><span class="section-number">6.9. </span>cabal v2-haddock<a class="headerlink" href="#cabal-v2-haddock" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-haddock</span> <span class="pre">[FLAGS]</span> <span class="pre">[TARGET]</span></code> builds Haddock documentation for
+the specified packages within the project.</p>
+<p>If a target is not a library <a class="reference internal" href="cabal-project.html#cfg-field-haddock-benchmarks" title="cabal.project haddock-benchmarks field "><code class="xref cabal cabal-cfg-field docutils literal notranslate"><span class="pre">haddock-benchmarks</span></code></a>,
+<a class="reference internal" href="cabal-project.html#cfg-field-haddock-executables" title="cabal.project haddock-executables field "><code class="xref cabal cabal-cfg-field docutils literal notranslate"><span class="pre">haddock-executables</span></code></a>, <a class="reference internal" href="cabal-project.html#cfg-field-haddock-internal" title="cabal.project haddock-internal field "><code class="xref cabal cabal-cfg-field docutils literal notranslate"><span class="pre">haddock-internal</span></code></a>,
+<a class="reference internal" href="cabal-project.html#cfg-field-haddock-tests" title="cabal.project haddock-tests field "><code class="xref cabal cabal-cfg-field docutils literal notranslate"><span class="pre">haddock-tests</span></code></a> will be implied as necessary.</p>
+</section>
+<section id="cabal-v2-exec">
+<h2><span class="section-number">6.10. </span>cabal v2-exec<a class="headerlink" href="#cabal-v2-exec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-exec</span> <span class="pre">[FLAGS]</span> <span class="pre">[--]</span> <span class="pre">COMMAND</span> <span class="pre">[--]</span> <span class="pre">[ARGS]</span></code> runs the specified command
+using the project’s environment. That is, passing the right flags to compiler
+invocations and bringing the project’s executables into scope.</p>
+</section>
+<section id="cabal-v2-install">
+<h2><span class="section-number">6.11. </span>cabal v2-install<a class="headerlink" href="#cabal-v2-install" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-install</span> <span class="pre">[FLAGS]</span> <span class="pre">PACKAGES</span></code> builds the specified packages and
+symlinks/copies their executables in <code class="docutils literal notranslate"><span class="pre">installdir</span></code> (usually <code class="docutils literal notranslate"><span class="pre">~/.cabal/bin</span></code>).</p>
+<p>For example this command will build the latest <code class="docutils literal notranslate"><span class="pre">cabal-install</span></code> and symlink
+its <code class="docutils literal notranslate"><span class="pre">cabal</span></code> executable:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install cabal-install
+</pre></div>
+</div>
+<p>In addition, it’s possible to use <code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-install</span></code> to install components
+of a local project. For example, with an up-to-date Git clone of the Cabal
+repository, this command will build cabal-install HEAD and symlink the
+<code class="docutils literal notranslate"><span class="pre">cabal</span></code> executable:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install exe<span class="p">:</span>cabal
+</pre></div>
+</div>
+<p>Where symlinking is not possible (eg. on some Windows versions) the <code class="docutils literal notranslate"><span class="pre">copy</span></code>
+method is used by default. You can specify the install method
+by using <code class="docutils literal notranslate"><span class="pre">--install-method</span></code> flag:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install exe<span class="p">:</span>cabal --install-method=copy --installdir=$HOME/bin
+</pre></div>
+</div>
+<p>Note that copied executables are not self-contained, since they might use
+data-files from the store.</p>
+<section id="adding-libraries-to-ghc-package-environments">
+<span id="adding-libraries"></span><h3><span class="section-number">6.11.1. </span>Adding libraries to GHC package environments<a class="headerlink" href="#adding-libraries-to-ghc-package-environments" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to “install” libraries using the <code class="docutils literal notranslate"><span class="pre">--lib</span></code> flag. For
+example, this command will build the latest Cabal library and install it:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install --lib Cabal
+</pre></div>
+</div>
+<p>This works by managing GHC package environment files. By default, it is writing
+to the global environment in <code class="docutils literal notranslate"><span class="pre">~/.ghc/$ARCH-$OS-$GHCVER/environments/default</span></code>.
+<code class="docutils literal notranslate"><span class="pre">v2-install</span></code> provides the <code class="docutils literal notranslate"><span class="pre">--package-env</span></code> flag to control which of these
+environments is modified.</p>
+<p>This command will modify the environment file in the current directory:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install --lib Cabal --package-env .
+</pre></div>
+</div>
+<p>This command will modify the environment file in the <code class="docutils literal notranslate"><span class="pre">~/foo</span></code> directory:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install --lib Cabal --package-env foo/
+</pre></div>
+</div>
+<p>Do note that the results of the previous two commands will be overwritten by
+the use of other v2-style commands, so it is not recommended to use them inside
+a project directory.</p>
+<p>This command will modify the environment in the <code class="docutils literal notranslate"><span class="pre">local.env</span></code> file in the
+current directory:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install --lib Cabal --package-env local.env
+</pre></div>
+</div>
+<p>This command will modify the <code class="docutils literal notranslate"><span class="pre">myenv</span></code> named global environment:</p>
+<div class="highlight-cabal notranslate"><div class="highlight"><pre><span></span>$ cabal v2-install --lib Cabal --package-env myenv
+</pre></div>
+</div>
+<p>If you wish to create a named environment file in the current directory where
+the name does not contain an extension, you must reference it as <code class="docutils literal notranslate"><span class="pre">./myenv</span></code>.</p>
+<p>You can learn more about how to use these environments in <a class="reference external" href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/packages.html#package-environments">this section of the
+GHC manual</a>.</p>
+</section>
+</section>
+<section id="cabal-v2-clean">
+<h2><span class="section-number">6.12. </span>cabal v2-clean<a class="headerlink" href="#cabal-v2-clean" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-clean</span> <span class="pre">[FLAGS]</span></code> cleans up the temporary files and build artifacts
+stored in the <code class="docutils literal notranslate"><span class="pre">dist-newstyle</span></code> folder.</p>
+<p>By default, it removes the entire folder, but it can also spare the configuration
+and caches if the <code class="docutils literal notranslate"><span class="pre">--save-config</span></code> option is given, in which case it only removes
+the build artefacts (<code class="docutils literal notranslate"><span class="pre">.hi</span></code>, <code class="docutils literal notranslate"><span class="pre">.o</span></code> along with any other temporary files generated
+by the compiler, along with the build output).</p>
+</section>
+<section id="cabal-v2-sdist">
+<h2><span class="section-number">6.13. </span>cabal v2-sdist<a class="headerlink" href="#cabal-v2-sdist" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-sdist</span> <span class="pre">[FLAGS]</span> <span class="pre">[TARGETS]</span></code> takes the crucial files needed to build <code class="docutils literal notranslate"><span class="pre">TARGETS</span></code>
+and puts them into an archive format ready for upload to Hackage. These archives are stable
+and two archives of the same format built from the same source will hash to the same value.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cabal</span> <span class="pre">v2-sdist</span></code> takes the following flags:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-l</span></code>, <code class="docutils literal notranslate"><span class="pre">--list-only</span></code>: Rather than creating an archive, lists files that would be included.
+Output is to <code class="docutils literal notranslate"><span class="pre">stdout</span></code> by default. The file paths are relative to the project’s root
+directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-o</span></code>, <code class="docutils literal notranslate"><span class="pre">--output-directory</span></code>: Sets the output dir, if a non-default one is desired. The default is
+<code class="docutils literal notranslate"><span class="pre">dist-newstyle/sdist/</span></code>. <code class="docutils literal notranslate"><span class="pre">--output-directory</span> <span class="pre">-</span></code> will send output to <code class="docutils literal notranslate"><span class="pre">stdout</span></code>
+unless multiple archives are being created.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--null-sep</span></code>: Only used with <code class="docutils literal notranslate"><span class="pre">--list-only</span></code>. Separates filenames with a NUL
+byte instead of newlines.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">v2-sdist</span></code> is inherently incompatible with sdist hooks (which were removed in <cite>Cabal-3.0</cite>),
+not due to implementation but due to fundamental core invariants
+(same source code should result in the same tarball, byte for byte)
+that must be satisfied for it to function correctly in the larger v2-build ecosystem.
+<code class="docutils literal notranslate"><span class="pre">autogen-modules</span></code> is able to replace uses of the hooks to add generated modules, along with
+the custom publishing of Haddock documentation to Hackage.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cabal-package.html" class="btn btn-neutral float-right" title="7. Package Description" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="nix-local-build.html" class="btn btn-neutral float-left" title="5.1. Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2003-2021, Cabal Team
+      
+        <span class="commit">
+          Revision <code>8fd619e3</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>

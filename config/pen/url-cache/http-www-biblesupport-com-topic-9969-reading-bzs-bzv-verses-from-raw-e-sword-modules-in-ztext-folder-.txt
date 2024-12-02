@@ -1,0 +1,1899 @@
+HTTP/1.1 200 OK
+Date: Tue, 15 Oct 2024 06:40:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.6.31
+Set-Cookie: session_id=1510a1047e5e73fac8fd09fa580a305b; path=/; httponly
+Set-Cookie: modpids=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Cache-Control: no-cache, must-revalidate, max-age=0
+Expires: Mon, 14 Oct 2024 06:40:20 GMT
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE html>
+	<html lang="en"  xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+
+
+
+		<meta charset="UTF-8" />
+		<title>Reading .bzs, .bzv verses from raw e-sword modules in ztext folder - Tutorials - Bible Support</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href='http://www.biblesupport.com/favicon.ico' />
+		<link rel="image_src" href='http://www.biblesupport.com/public/style_images/master/meta_image.png' />
+		<script type='text/javascript'>
+		//<![CDATA[
+			jsDebug			= 0; /* Must come before JS includes */
+			DISABLE_AJAX	= parseInt(0); /* Disables ajax requests where text is sent to the DB; helpful for charset issues */
+			inACP			= false;
+			var isRTL		= false;
+			var rtlIe		= '';
+			var rtlFull		= '';
+		//]]>
+		</script>
+		
+	
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+	
+		<link rel="stylesheet" type="text/css" media='screen,print' href="http://www.biblesupport.com/public/min/index.php?ipbv=b4e39690249598b9f7ffc02d5fe90ec4&amp;f=public/style_css/css_1/promenu_header.css,public/style_css/css_1/calendar_select.css,public/style_css/css_1/ipb_common.css,public/style_css/css_1/ipb_styles.css,public/style_css/css_1/promenu.css,public/style_css/css_1/promenu_footer.css,public/style_css/css_1/promenu_generic.css,public/style_css/css_1/promenu_bottom_bar.css,public/style_css/prettify.css" />
+	
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" title='Main' media="screen" href="http://www.biblesupport.com/public/style_css/css_1/ipb_ie.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<style type='text/css'>
+		.ipb_table { table-layout: fixed; }
+		.ipsLayout_content { width: 99.5%; }
+	</style>
+<![endif]-->
+
+	<style type='text/css'>
+		img.bbc_img { max-width: 100% !important; }
+	</style>
+
+		<meta property="og:title" content="Reading .bzs, .bzv verses from raw e-sword modules in ztext folder - Tutorials"/>
+		<meta property="og:site_name" content="Bible Support"/>
+		<meta property="og:type" content="article" />
+		
+	
+		
+		
+			<meta property="og:updated_time" content="1728974420" />
+		
+		
+		
+		
+	
+
+		
+		
+			<meta name="keywords" content="Reading,bzs,bzv,verses,from,raw,e-sword,modules,ztext,folder,developing,Application,import,bible,When,open,zip,file,find" />
+		
+		
+		
+		
+	
+
+		
+		
+			<meta name="description" content="Reading .bzs, .bzv verses from raw e-sword modules in ztext folder - posted in Tutorials: Hi, Im developing a C# Application to import e-sword bible (raw) modules.
+When I open the zip file, I find a directory with ztext which is compressed UT8 text, but I cannot open the text, or seem to extract the text.
+Please help.
+The .bzs, .bzv files how do I uncompress them and extract text" />
+		
+		
+		
+			<meta property="og:description" content="Reading .bzs, .bzv verses from raw e-sword modules in ztext folder - posted in Tutorials: Hi, Im developing a C# Application to import e-sword bible (raw) modules.
+When I open the zip file, I find a directory with ztext which is compressed UT8 text, but I cannot open the text, or seem to extract the text.
+Please help.
+The .bzs, .bzv files how do I uncompress them and extract text" />
+		
+		
+	
+
+		
+		
+			<meta name="identifier-url" content="http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/" />
+		
+		
+			<meta property="og:url" content="http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/" />
+		
+		
+		
+	
+
+<meta property="og:image" content="http://www.biblesupport.com/public/style_images/master/meta_image.png"/>
+		
+		
+		
+		<script type='text/javascript' src='http://www.biblesupport.com/public/min/index.php?ipbv=b4e39690249598b9f7ffc02d5fe90ec4&amp;g=js'></script>
+	
+	<script type='text/javascript' src='http://www.biblesupport.com/public/min/index.php?ipbv=b4e39690249598b9f7ffc02d5fe90ec4&amp;charset=UTF-8&amp;f=public/js/ipb.js,cache/lang_cache/1/ipb.lang.js,public/js/ips.hovercard.js,public/js/ips.quickpm.js,public/js/ips.sharelinks.js,public/js/ips.topic.js,public/js/ips.like.js' charset='UTF-8'></script>
+
+<script>
+	if (!window.jQuery) {
+
+		document.write("<" + "script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></" + "script>");
+
+	}
+</script>
+<script type='text/javascript' src='http://www.biblesupport.com/public/js/promenu/promenu.js'></script>
+<script type='text/javascript'>
+	ProjQ171 = jQuery.noConflict();
+	typeShow = "show";
+	typeHide = "hide";
+	dd = 200;
+	du = 200;
+	click = 0;
+	topOffset = 10;
+	
+	function ProperActivation(group){  
+                                                         
+	enableR = 1;  
+
+	a = window.location.href;  
+								  
+	ProjQ171(group).find("a").each(function(){  
+						
+	   if(ProjQ171(this).attr("href") == a)  
+	   {  
+			ProjQ171(this).addClass("active");  
+				  if(enableR == 1){  
+					   ProjQ171(this).parent().addClass("active");  
+					   ProjQ171(this).parent().parents("li").find("a:first").addClass("active");  
+					   ProjQ171(this).parent().parents("li").addClass("active");  
+				  }  
+			 }  
+						
+		})  
+	}
+</script>
+	
+		
+			
+			
+			
+			
+				<link id="ipsCanonical" rel="canonical" href="http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/" />
+			
+		
+
+			
+			
+			
+			
+				<link rel='stylesheet' type='text/css' title='Main' media='print' href='http://www.biblesupport.com/public/style_css/css_1/ipb_print.css' />
+			
+		
+
+			
+			
+			
+			
+				<link rel='up' href='http://www.biblesupport.com/forum/25-tutorials/' />
+			
+		
+
+			
+			
+			
+			
+				<link rel='author' href='http://www.biblesupport.com/user/378335-mnyikka/' />
+			
+		
+
+			
+			
+			
+			
+				<script type='text/javascript'>
+				//<![CDATA[
+				ipb.global.activateMainMenu = function() {};
+				//]]>
+			</script>
+			
+		
+	
+
+		
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="e-Sword Forums RSS Feed" href="http://www.biblesupport.com/rss/forums/1-e-sword-forums-rss-feed/" />
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Latest e-Sword Downloads, Modules, Utilities, and News" href="http://www.biblesupport.com/rss/ccs/1-latest-e-sword-downloads-modules-utilities-and-news/" />
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Latest e-Sword Downloads, Modules, Utilities, and News: Help" href="http://www.biblesupport.com/rss/ccs/1c11-help/" />
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Last 10 Downloads RSS Feed " href="http://www.biblesupport.com/rss/downloads/" />
+			
+			
+			
+		
+	
+
+	
+
+
+
+		
+		<script type='text/javascript'>
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://www.biblesupport.com/index.php?s=1510a1047e5e73fac8fd09fa580a305b&';
+		ipb.vars['board_url']			= 'http://www.biblesupport.com';
+		ipb.vars['img_url'] 			= "http://www.biblesupport.com/public/style_images/master";
+		ipb.vars['loading_img'] 		= 'http://www.biblesupport.com/public/style_images/master/loading.gif';
+		ipb.vars['active_app']			= 'forums';
+		ipb.vars['upload_url']			= 'http://www.biblesupport.com/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 0 );
+		ipb.vars['is_supmod']			= parseInt( 0 );
+		ipb.vars['is_admin']			= parseInt( 0 );
+		ipb.vars['secure_hash'] 		= '880ea6a14ea49e853634fbdc5015a024';
+		ipb.vars['session_id']			= '1510a1047e5e73fac8fd09fa580a305b';
+		ipb.vars['twitter_id']			= 0;
+		ipb.vars['fb_uid']				= 0;
+		ipb.vars['auto_dst']			= parseInt( 0 );
+		ipb.vars['dst_in_use']			= parseInt(  );
+		ipb.vars['is_touch']			= false;
+		ipb.vars['member_group']		= {"g_mem_info":"1"}
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= '';
+		ipb.vars['cookie_domain'] 		= '';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= 'http://www.biblesupport.com/public/style_images/master/star.png';
+		ipb.vars['rate_img_off']		= 'http://www.biblesupport.com/public/style_images/master/star_off.png';
+		ipb.vars['rate_img_rated']		= 'http://www.biblesupport.com/public/style_images/master/star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://www.biblesupport.com/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( '' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false;
+		/* ---- other ---- */
+		ipb.vars['highlight_color']     = "#ade57a";
+		ipb.vars['charset']				= "UTF-8";
+		ipb.vars['time_offset']			= "-6";
+		ipb.vars['hour_format']			= "12";
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"-","end":"\/","varBlock":"?","varPage":"page-","varSep":"&","varJoin":"="};
+		
+		/* Templates/Language */
+		ipb.templates['inlineMsg']		= "";
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'><img src='http://www.biblesupport.com/public/style_images/master/ajax_loading.gif' alt='" + ipb.lang['loading'] + "' /></div>";
+		ipb.templates['close_popup']	= "<img src='http://www.biblesupport.com/public/style_images/master/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu' class='ipbmenu_content'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}' data-url='#{url}'><img src='#{img}' alt='' class='ipsUserPhoto ipsUserPhoto_mini' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Jump to page</h3><p class='ipsPad'><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='Go' class='input_submit add_folder' id='#{id}_submit' /></p></div>");
+		ipb.templates['global_notify'] 	= new Template("<div class='popupWrapper'><div class='popupInner'><div class='ipsPad'>#{message} #{close}</div></div></div>");
+		
+		
+		ipb.templates['header_menu'] 	= new Template("<div id='#{id}' class='ipsHeaderMenu boxShadow'></div>");
+		
+		Loader.boot();
+	//]]>
+	</script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79829280-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+	<body id='ipboard_body'>
+
+<style type='text/css'>
+#callout {
+background: #f4c900;
+padding: 10px 0;
+text-align: center;
+font-size: 110%;
+color: #4e84af;
+font-weight: 100;
+
+}
+
+</style>
+<!--
+<div id='callout'>
+<b>Easter: </b>&#147He is not here: for he is risen...&#148; Read about the <a href = "http://www.biblesupport.com/e-sword-downloads/file/9163-schilder-klaas-christ-in-his-suffering-christ-on-trial-christ-crucified-3-vols/" style="color:#4e84af; text-decoration: underline;">passion of Christ like never before</a>.
+</div>-->
+		<p id='content_jump' class='hide'><a id='top'></a><a href='#j_content' title='Jump to content' accesskey='m'>Jump to content</a></p>
+		<div id='ipbwrapper'>
+			<!-- ::: TOP BAR: Sign in / register or user drop down and notification alerts ::: -->
+			<div id='header_bar' class='clearfix'>
+				<div class='main_width'>
+					
+					<div id='user_navigation' class='not_logged_in'>
+							
+							<ul class='ipsList_inline right'>
+								<li>
+									<span class='services'>
+										
+										
+										
+									</span>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href='http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=login' title='Sign In' id='sign_in'>Sign In</a>&nbsp;&nbsp;&nbsp;
+								</li>
+								<li>
+									<a href="http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=register" title='Create Account' id='register_link'>Create Account</a>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<!-- ::: BRANDING STRIP: Logo and search box ::: -->
+			<div id='branding'>
+				<div class='main_width'>
+					<div id='logo'>
+						
+							<a href='http://www.biblesupport.com' title='Go to community index' rel="home" accesskey='1'><img src='http://www.biblesupport.com/public/style_images/1_new-logo-2014-v4.png' alt='Logo' /></a>
+						
+					</div>
+					
+						<div id='search' class='right'>
+	<form action="http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=search&amp;fromMainBar=1" method="post" id='search-box' >
+		<fieldset>
+			<label for='main_search' class='hide'>Search</label>
+			<a href='http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;search_in=forums' title='Advanced Search' accesskey='4' rel="search" id='adv_search' class='right'>Advanced</a>
+			<span id='search_wrap' class='right'>
+				<input type='text' id='main_search' name='search_term' class='inactive' size='17' tabindex='100' />
+				<span class='choice ipbmenu clickable' id='search_options' style='display: none'></span>
+				<ul id='search_options_menucontent' class='ipbmenu_content ipsPad' style='display: none'>
+					<li class='title'><strong>Search section:</strong></li>
+					<li class='special'>
+							<label for='s_topic' title='This topic'>
+								
+									<input type='radio' name='search_app' value="forums:topic:9969" class='input_radio' id='s_topic' checked="checked" /> 
+								
+								<strong>This topic</strong>
+							</label>
+						</li>
+					
+					
+					<li class='app'><label for='s_forums' title='Forums'><input type='radio' name='search_app' class='input_radio' id='s_forums' value="forums"  />Forums</label></li><li class='app'><label for='s_members' title='Members'><input type='radio' name='search_app' class='input_radio' id='s_members' value="members"  />Members</label></li><li class='app'><label for='s_core' title='Help Files'><input type='radio' name='search_app' class='input_radio' id='s_core' value="core"  />Help Files</label></li>				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						<li class='app'>
+								<label for='s_ccs' title='News'>
+									<input type='radio' name='search_app' class='input_radio' id='s_ccs' value="ccs"  />
+									News
+								</label>
+							</li>
+					
+				
+						<li class='app'>
+								<label for='s_downloads' title='e-Sword Downloads'>
+									<input type='radio' name='search_app' class='input_radio' id='s_downloads' value="downloads"  />
+									e-Sword Downloads
+								</label>
+							</li>
+					
+				
+						
+					
+				
+						
+					
+				
+						<li class='app'>
+								<label for='s_blog' title='Blogs'>
+									<input type='radio' name='search_app' class='input_radio' id='s_blog' value="blog"  />
+									Blogs
+								</label>
+							</li>
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				</ul>
+				<input type='submit' class='submit_input clickable' value='Search' />
+			</span>
+			
+		</fieldset>
+	</form>
+</div>
+					
+				</div>
+			</div>
+			<!-- ::: APPLICATION TABS ::: -->
+			<div id='primary_nav' class='clearfix'>
+				<div class='main_width'>
+					<ul class='ipsList_inline' id='community_app_menu'>
+						
+							<li class='right'>
+								<a href="http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=navigation&amp;inapp=forums" rel="quickNavigation" accesskey='9' id='quickNavLaunch' title='Open Quick Navigation'><span>&nbsp;</span></a>
+							</li>
+						
+						<li id='nav_explore' class='right'>
+							<a href='http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=viewNewContent&amp;search_app=forums' accesskey='2'>New Content</a>
+						</li>
+						
+						
+   
+      <li id="nav_app_ccs" class='main left right_open'  style='z-index:9990;'>
+        <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html" class="" title="Front page of BibleSupport.com" >
+                                                                Home
+                                                                   <span class="downarrow"></span>
+        </a>
+        
+<ul class='submenu_container clearfix boxShadow first right_open' style='visibility:hidden;position:absolute;z-index:9992'>
+  
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=new_posts&amp;search_app=downloads" class="notMe " title="Since your last visit" id="promenu_9"
+   
+   >
+        
+        New e-Sword Downloads
+        
+   </a>
+   
+  </li>
+  
+</ul>
+
+   </li>
+  
+ 
+      <li id="nav_app_downloads" class='main left right_open'  style='z-index:9990;'>
+        <a href="http://www.biblesupport.com/e-sword-downloads/" class="" title="e-Sword and MySword Downloads" >
+                                                                Downloads
+                                                                   <span class="downarrow"></span>
+        </a>
+        
+<ul class='submenu_container clearfix boxShadow first right_open' style='visibility:hidden;position:absolute;z-index:9992'>
+  
+  <li id="nav_app_downloads" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/e-sword-downloads/" class="notMe " title="Downloads Main Page" id="promenu_10"
+   
+   >
+        
+        Downloads Area
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=downloads&amp;module=post&amp;section=submit&amp;c=" class="notMe " title="Share your module with others" id="promenu_11"
+   
+   >
+        
+        Share (Upload) a Module
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/e-sword-downloads/" class="notMe " title="Download e-Sword Modules" id="promenu_12"
+   
+   >
+        
+        e-Sword 9-10 Downloads
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/e-sword-downloads/category/26-mysword-modules/" class="notMe " title="Download MySword Modules" id="promenu_13"
+   
+   >
+        
+        MySword Downloads
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=downloads&amp;module=stats" class="notMe " title="Most Popular Downloads and Rankings" id="promenu_14"
+   
+   >
+        
+        Popular Downloads &amp; Stats
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/page/most-popular-e-sword-downloads.html" class="notMe " title="Top 500 Most Downloaded Files" id="promenu_15"
+   
+   >
+        
+        Top 500 Downloads
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=new_posts&amp;search_app=downloads" class="notMe " title="New Modules Since Last Visit" id="promenu_16"
+   
+   >
+        
+        New Downloads
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=user_activity&amp;search_app=downloads" class="notMe " title="The Files You Contributed to this Website" id="promenu_17"
+   
+   >
+        
+        View Files You Uploaded
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=core&amp;module=usercp&amp;tab=downloads" class="notMe " title="View Files You Downloaded From This Website" id="promenu_18"
+   
+   >
+        
+        View Files You Downloaded
+        
+   </a>
+   
+  </li>
+  
+</ul>
+
+   </li>
+  
+ 
+      <li id="nav_app_forums" class='main left active right_open'  style='z-index:9990;'>
+        <a href="http://www.biblesupport.com/forums/" class="" title="Ask Questions" >
+                                                                Message Board
+                                                                   <span class="downarrow"></span>
+        </a>
+        
+<ul class='submenu_container clearfix boxShadow first right_open' style='visibility:hidden;position:absolute;z-index:9992'>
+  
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index" class="notMe " title="e-Sword/MySword Forums Index and Summary" id="promenu_19"
+   
+   >
+        
+        View All Forums
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/2-e-sword-general-discussion-questions/" class="notMe " title="e-Sword General Discussion and Questions" id="promenu_20"
+   
+   >
+        
+        e-Sword General Questions
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/3-e-sword-modules-resources/" class="notMe " title="Discuss &amp; Request Modules" id="promenu_21"
+   
+   >
+        
+        e-Sword Modules/Resources
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/4-e-sword-tools-utilities/" class="notMe " title="e-Sword Tools &amp; Utilities" id="promenu_22"
+   
+   >
+        
+        e-Sword Tools &amp; Utilities
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/15-mysword/" class="notMe " title="The best Droid Bible study software" id="promenu_26"
+   
+   >
+        
+        MySword
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/13-website-feedback/" class="notMe " title="What do you think of this website?" id="promenu_27"
+   
+   >
+        
+        Website Feedback
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/forum/18-new-e-sword-downloads/" class="notMe " title="This forum records new e-Sword modules" id="promenu_23"
+   
+   >
+        
+        New e-Sword Downloads
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/index.php?app=core&amp;module=search&amp;do=user_activity&amp;search_app=forums" class="notMe " title="You said what..." id="promenu_28"
+   
+   >
+        
+        View Your Posts/Replies
+        
+   </a>
+   
+  </li>
+  
+</ul>
+
+   </li>
+  
+ 
+      <li id="nav_app_core" class='main left right_open'  style='z-index:9990;'>
+        <a href="http://www.biblesupport.com/forum/25-tutorials/" class="notMe" title="Step by step help" >
+                                                                Tutorials
+                                                                  
+        </a>
+        
+   </li>
+  
+ 
+      <li id="nav_app_core" class='main left right_open'  style='z-index:9990;'>
+        <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html/_/e-sword-site-help/about-biblesupportcom-r22" class="" title="About the site" >
+                                                                About
+                                                                   <span class="downarrow"></span>
+        </a>
+        
+<ul class='submenu_container clearfix boxShadow first right_open' style='visibility:hidden;position:absolute;z-index:9992'>
+  
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.facebook.com/biblesupport" class="notMe " title="Show your support &amp; help us bless others" id="promenu_50"
+   
+   >
+        
+        Facebook
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.twitter.com/biblesupport" class="notMe " title="Show your support and get news and updates before the website." id="promenu_51"
+   
+   >
+        
+        Twitter
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/topic/939-linking-to-biblesupportcom-webmasters-toolkit/" class="notMe " title="Graphics and code for linking to BibleSupport.com" id="promenu_32"
+   
+   >
+        
+        Webmaster&#39;s Toolkit
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html/_/e-sword-site-help/spam-blocked-r26" class="notMe " title="Can&#39;t register as a new member?" id="promenu_33"
+   
+   >
+        
+        Spam Blocked?
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html/_/e-sword-site-help/terms-of-use-r19" class="notMe " title="Terms of use" id="promenu_34"
+   
+   >
+        
+        Terms of Use
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html/_/e-sword-site-help/copyright-policy-r20" class="notMe " title="Copyright Policy" id="promenu_35"
+   
+   >
+        
+        Copyright Policy
+        
+   </a>
+   
+  </li>
+  
+
+  <li id="nav_app_core" class='left skip_moremenu ' style='position:relative;'>
+   <a href="http://www.biblesupport.com/page/e-sword-modules-message-board.html/_/e-sword-site-help/privacy-policy-r21" class="notMe " title="Privacy Policy" id="promenu_36"
+   
+   >
+        
+        Privacy Policy
+        
+   </a>
+   
+  </li>
+  
+</ul>
+
+   </li>
+  
+				<script type='text/javascript'>        
+					ProjQ171(document).ready(function() {
+						ProjQ171("#community_app_menu").ProMenu();  
+						ProperActivation("#community_app_menu");
+					});
+				</script>
+						<li id='nav_other_apps' style='display: none'>
+							<a href='#' class='ipbmenu' id='more_apps'>More <img src='http://www.biblesupport.com/public/style_images/master/useropts_arrow.png' /></a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+			
+			<!-- ::: MAIN CONTENT AREA ::: -->
+			<div id='content' class='clearfix'>
+				<!-- ::: NAVIGATION BREADCRUMBS ::: -->
+				<div id='secondary_navigation' class='clearfix'>
+						<ol class='breadcrumb top ipsList_inline left'>
+														<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+									<a href='http://www.biblesupport.com/index' itemprop="url">
+										<span itemprop="title">Bible Support</span>
+									</a>
+								</li>
+								
+							
+								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+									<span class='nav_sep'>&rarr;</span>
+									 <a href='http://www.biblesupport.com/forum/1-e-sword-users-forum-and-support/' title='Return to e-Sword Users Forum and Support' itemprop="url"><span itemprop="title">e-Sword Users Forum and Support</span></a>
+								</li>
+								
+							
+
+								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+									<span class='nav_sep'>&rarr;</span>
+									 <a href='http://www.biblesupport.com/forum/25-tutorials/' title='Return to Tutorials' itemprop="url"><span itemprop="title">Tutorials</span></a>
+								</li>
+								
+							
+						</ol><p align=right>
+
+<a href="http://www.twitter.com/biblesupport"><img src="http://www.biblesupport.com/a/twitter.png"></a> <a href="http://www.facebook.com/biblesupport"><img src="http://www.biblesupport.com/a/facebook.png"></a></p>
+					</div>
+				<noscript>
+					<div class='message error'>
+						<strong>Javascript Disabled Detected</strong>
+						<p>You currently have javascript disabled. Several functions may not work. Please re-enable javascript to access full functionality.</p>
+					</div>
+					<br />
+				</noscript>
+				<!-- ::: CONTENT ::: -->
+				
+				<div class="message">
+	
+	Please read the <a href='http://www.biblesupport.com/topic/979-forum-rules-please-read-before-posting/'>Forum Rules</a> before posting.
+</div>
+<br />			<div class='ipsLayout ipsLayout_withright ipsLayout_largeright clearfix'>	
+			<div class='ipsLayout_content clearfix'>
+
+<script type="text/javascript">
+//<![CDATA[
+	ipb.topic.inSection    = 'topicview';
+	ipb.topic.topic_id     = 9969;
+	ipb.topic.forum_id     = 25;
+	ipb.topic.redirectPost = 1;
+	ipb.topic.start_id     = 0;
+	ipb.topic.page_id      = 0;
+	ipb.topic.topPid       = 0;
+	ipb.topic.counts       = { postTotal: 3,
+							  curStart:  ipb.topic.start_id,
+							  perPage:   10 };
+	//Search Setup
+	ipb.vars['search_type']			= 'forum';
+	ipb.vars['search_type_id']		= 25;
+	ipb.vars['search_type_2']		= 'topic';
+	ipb.vars['search_type_id_2']	= 9969;
+	
+	
+	// Delete stuff set up
+	ipb.topic.deleteUrls['hardDelete'] = new Template( ipb.vars['base_url'] + "app=forums&module=moderate&section=moderate&do=04&f=25&t=9969&page=&auth_key=880ea6a14ea49e853634fbdc5015a024&p=#{pid}" );
+	ipb.topic.deleteUrls['softDelete'] = new Template( ipb.vars['base_url'] + "app=forums&module=moderate&section=moderate&do=postchoice&tact=sdelete&t=9969&f=25&auth_key=880ea6a14ea49e853634fbdc5015a024&selectedpids[#{pid}]=#{pid}&pid=#{pid}" );
+	
+	
+	ipb.topic.modPerms	  = [];
+	
+	
+	ipb.templates['post_moderation'] = new Template("<div id='comment_moderate_box' class='ipsFloatingAction' style='display: none'><span class='desc'>With <span id='comment_count'>#{count}</span> checked posts: </span><select id='tactInPopup' class='input_select'><option value='approve'>Approve</option><option value='delete'>Hide</option><option value='sundelete'>Unhide</option><option value='deletedo'>Delete</option><option value='merge'>Merge</option><option value='split'>Split</option><option value='move'>Move</option></select>&nbsp;&nbsp;<input type='button' class='input_submit' id='submitModAction' value='Go' /></div>");
+	
+//]]>
+</script>
+
+
+
+
+
+	<a href='http://www.biblesupport.com/user/378335-mnyikka/' class='ipsUserPhotoLink left'>
+
+<img src='http://www.biblesupport.com/public/style_images/master/profile/default_large.png' alt='Photo' class='ipsUserPhoto ipsUserPhoto_medium' />
+
+	</a>
+
+<div itemscope itemtype="http://schema.org/Article" class='ipsBox_withphoto'>
+	
+	<h1 itemprop="name" class='ipsType_pagetitle'>Reading .bzs, .bzv verses from raw e-sword modules in ztext folder</h1>
+	<div class='desc lighter blend_links'>
+		 Started by <span itemprop="creator"><a hovercard-ref="member" hovercard-id="378335" data-ipb="noparse" class="_hovertrigger url fn name " href='http://www.biblesupport.com/user/378335-mnyikka/' title='View Profile'><span itemprop="name">mnyikka</span></a></span>, <span itemprop="dateCreated" datetime="2019-07-23">Jul 23 2019 12:43 AM</span>
+	</div>
+	
+	<meta itemprop="interactionCount" content="UserComments:3" />
+</div>
+
+
+
+<br />
+<div class='topic_controls'>
+	
+	
+
+
+	<ul class='topic_buttons'>
+			<li class='disabled'><span>Please log in to reply</span></li>
+			
+			
+		</ul>
+</div>
+
+<div class='maintitle clear clearfix'>
+	<span class='ipsType_small'>
+		2 replies to this topic
+	</span>
+		
+</div>
+
+<div class='topic hfeed clear clearfix'>
+	
+	
+
+	<div class='ipsBox'>
+		<div class='ipsBox_container' id='ips_Posts'>
+			
+				<!--post:36212-->
+
+<div class='post_block hentry clear clearfix  ' id='post_id_36212'>
+		<a id='entry36212'></a>
+		
+	
+		
+		<div class='post_wrap' >
+			
+				<h3 class='row2'>
+			
+				<span class='post_id right ipsType_small desc blend_links'>
+					
+						<a itemprop="replyToUrl" data-entry-pid='36212' href='http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/#entry36212' rel='bookmark' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #1'>
+					
+					#1
+					<img src='http://www.biblesupport.com/public/style_images/master/icon_share.png' class='small' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #1' />
+					</a>
+				</span>
+				
+				
+					<span itemprop="creator name" class="author vcard"><a hovercard-ref="member" hovercard-id="378335" data-ipb="noparse" class="_hovertrigger url fn name " href='http://www.biblesupport.com/user/378335-mnyikka/' title='View Profile'><span itemprop="name">mnyikka</span></a></span>
+				
+			
+				
+			</h3>
+			<div class='author_info'>
+				<div itemscope itemtype="http://schema.org/Person" class='user_details'>
+	<span class='hide' itemprop="name">mnyikka</span>
+	<ul class='basic_info'>
+		
+			<p class='desc member_title'>New to Bible Support</p>
+		
+		<li class='avatar'>
+				
+				<a itemprop="url" href="http://www.biblesupport.com/user/378335-mnyikka/" title="View Profile: mnyikka" class='ipsUserPhotoLink'>
+				
+				
+					<img itemprop="image" src='http://www.biblesupport.com/public/style_images/master/profile/default_large.png' class='ipsUserPhoto ipsUserPhoto_large' />
+				
+				
+				</a>
+				
+			</li>
+		<li class='group_title'>
+			Members
+		</li>
+		<li class='group_icon'>
+			
+				<img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' />
+			
+			</li>
+		
+		<li class='post_count desc lighter'>
+			1 posts
+		</li>
+		
+		
+	</ul>
+	
+	
+		<ul class='custom_fields'>
+			
+				
+					
+				
+			
+		</ul>
+	
+				<b><center><span class='ipsBadge ipsBadge_grey'>Offline</span>
+</center></b>		
+	
+</div>
+			</div>
+			<div class='post_body'>
+				<p class='posted_info desc lighter ipsType_small'>
+					Posted <abbr class="published" itemprop="commentTime" title="2019-07-23T06:43:47+00:00">23 July 2019 - 12:43 AM</abbr>
+					
+				</p>
+				
+				<div itemprop="commentText" class='post entry-content '>
+					<!--cached-Wed, 09 Oct 2024 00:27:21 +0000--><p>Hi, Im developing a C# Application to import e-sword bible (raw) modules.<br>
+When I open the zip file, I find a directory with ztext which is compressed UT8 text, but I cannot open the text, or seem to extract the text.<br><br>
+Please help.<br>
+The .bzs, .bzv files how do I uncompress them and extract text</p>
+
+					
+					<br />
+					
+				</div>
+				
+				
+				<div class='ipsLikeBar right clearfix' id='rep_post_36212'>
+				<ul class='ipsList_inline'>
+					
+					
+				</ul>
+			</div>
+<script type='text/javascript'>
+	ipb.global.registerReputation( 'rep_post_36212', { domLikeStripId: 'like_post_36212', app: 'forums', type: 'pid', typeid: '36212' }, parseInt('2') );
+</script>
+				
+								
+				
+				
+				
+			
+				<ul id='postControlsNormal_36212' class='post_controls clear clearfix' >
+					<li class='top hide'><a href='#ipboard_body' class='top' title='Back to top'>Back to top</a></li>
+					
+					
+					
+					
+					
+					
+				</ul>
+					
+			</div>
+		</div>
+	</div>
+		
+		
+		<hr />
+		
+		
+<script type="text/javascript">
+var pid = parseInt(36212);
+if ( pid > ipb.topic.topPid ){
+	ipb.topic.topPid = pid;
+}
+
+	// Show multiquote for JS browsers
+	if ( $('multiq_36212') )
+	{
+		$('multiq_36212').show();
+	}
+	
+	if( $('toggle_post_36212') )
+	{
+		$('toggle_post_36212').show();
+	}
+	
+	// Add perm data
+	ipb.topic.deletePerms[36212] = { 'canDelete' : 0, 'canSoftDelete' : 0 };
+
+</script>
+			
+
+				<!--post:36213-->
+
+<div class='post_block hentry clear clearfix  ' id='post_id_36213'>
+		<a id='entry36213'></a>
+		
+	
+		
+		<div class='post_wrap' >
+			
+				<h3 class='row2'>
+			
+				<span class='post_id right ipsType_small desc blend_links'>
+					
+						<a itemprop="replyToUrl" data-entry-pid='36213' href='http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/#entry36213' rel='bookmark' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #2'>
+					
+					#2
+					<img src='http://www.biblesupport.com/public/style_images/master/icon_share.png' class='small' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #2' />
+					</a>
+				</span>
+				
+				
+					<span itemprop="creator name" class="author vcard"><a hovercard-ref="member" hovercard-id="144" data-ipb="noparse" class="_hovertrigger url fn name " href='http://www.biblesupport.com/user/144-jpg/' title='View Profile'><span itemprop="name">JPG</span></a></span>
+				
+			
+				
+			</h3>
+			<div class='author_info'>
+				<div itemscope itemtype="http://schema.org/Person" class='user_details'>
+	<span class='hide' itemprop="name">JPG</span>
+	<ul class='basic_info'>
+		
+			<p class='desc member_title'>Jon.</p>
+		
+		<li class='avatar'>
+				
+				<a itemprop="url" href="http://www.biblesupport.com/user/144-jpg/" title="View Profile: JPG" class='ipsUserPhotoLink'>
+				
+				
+					<img itemprop="image" src='http://www.biblesupport.com/uploads/profile/photo-144.png?_r=1378189608' class='ipsUserPhoto ipsUserPhoto_large' />
+				
+				
+				</a>
+				
+			</li>
+		<li class='group_title'>
+			Moderators
+		</li>
+		<li class='group_icon'>
+			
+				<img src='http://www.biblesupport.com/public/style_extra/team_icons/staff.png' alt='' />
+			
+			</li>
+		
+		<li class='post_count desc lighter'>
+			1,769 posts
+		</li>
+		
+		
+	</ul>
+	
+	
+		<ul class='custom_fields'>
+			
+				
+					
+				
+			
+		</ul>
+	
+			<b><center>	<span class='ipsBadge ipsBadge_green'>Online</span>
+</center></b>		
+	
+</div>
+			</div>
+			<div class='post_body'>
+				<p class='posted_info desc lighter ipsType_small'>
+					Posted <abbr class="published" itemprop="commentTime" title="2019-07-23T09:42:08+00:00">23 July 2019 - 03:42 AM</abbr>
+					
+				</p>
+				
+				<div itemprop="commentText" class='post entry-content '>
+					<!--cached-Wed, 09 Oct 2024 00:27:21 +0000--><p>From what I found, the format of the file is proprietary. In the past I have used the tools provided such as mod2vpl.exe to export Bible data to verse per line file. Even this was not easy. I recall having to install Sword and then configure folders to contain the module and the module config info.....</p>
+<p>There is a repository of source files in C++</p>
+<p>Look here&nbsp;<a href='http://sword-dev.350566.n4.nabble.com/How-does-one-uncompress-the-Crosswire-nt-bzz-and-ot-bzz-files-td4435584.html' class='bbc_url' title='External link' rel='nofollow external'>http://sword-dev.350...-td4435584.html</a></p>
+<p>and some notes here as to the format&nbsp;<a href='http://crosswire.org/sword/develop/biblecs/svn.jsp' class='bbc_url' title='External link' rel='nofollow external'>http://crosswire.org...biblecs/svn.jsp</a></p>
+
+					
+					<br />
+					
+				</div>
+				
+				
+				<div class='ipsLikeBar right clearfix' id='rep_post_36213'>
+				<ul class='ipsList_inline'>
+					
+					
+				</ul>
+			</div>
+<script type='text/javascript'>
+	ipb.global.registerReputation( 'rep_post_36213', { domLikeStripId: 'like_post_36213', app: 'forums', type: 'pid', typeid: '36213' }, parseInt('0') );
+</script>
+				
+								
+				
+				
+				
+			
+				<ul id='postControlsNormal_36213' class='post_controls clear clearfix' >
+					<li class='top hide'><a href='#ipboard_body' class='top' title='Back to top'>Back to top</a></li>
+					
+					
+					
+					
+					
+					
+				</ul>
+					
+			</div>
+		</div>
+	</div>
+		
+		
+		<hr />
+		
+		
+<script type="text/javascript">
+var pid = parseInt(36213);
+if ( pid > ipb.topic.topPid ){
+	ipb.topic.topPid = pid;
+}
+
+	// Show multiquote for JS browsers
+	if ( $('multiq_36213') )
+	{
+		$('multiq_36213').show();
+	}
+	
+	if( $('toggle_post_36213') )
+	{
+		$('toggle_post_36213').show();
+	}
+	
+	// Add perm data
+	ipb.topic.deletePerms[36213] = { 'canDelete' : 0, 'canSoftDelete' : 0 };
+
+</script>
+			
+
+				<!--post:36215-->
+
+<div class='post_block hentry clear clearfix  ' id='post_id_36215'>
+		<a id='entry36215'></a>
+		
+	
+		
+		<div class='post_wrap' >
+			
+				<h3 class='row2'>
+			
+				<span class='post_id right ipsType_small desc blend_links'>
+					
+						<a itemprop="replyToUrl" data-entry-pid='36215' href='http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/#entry36215' rel='bookmark' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #3'>
+					
+					#3
+					<img src='http://www.biblesupport.com/public/style_images/master/icon_share.png' class='small' title='Reading .bzs, .bzv verses from raw e-sword modules in ztext folder: post #3' />
+					</a>
+				</span>
+				
+				
+					<span itemprop="creator name" class="author vcard"><a hovercard-ref="member" hovercard-id="229806" data-ipb="noparse" class="_hovertrigger url fn name " href='http://www.biblesupport.com/user/229806-tj-higgins/' title='View Profile'><span itemprop="name">Tj Higgins</span></a></span>
+				
+			
+				
+			</h3>
+			<div class='author_info'>
+				<div itemscope itemtype="http://schema.org/Person" class='user_details'>
+	<span class='hide' itemprop="name">Tj Higgins</span>
+	<ul class='basic_info'>
+		
+			<p class='desc member_title'>e-Sword Fanatic</p>
+		
+		<li class='avatar'>
+				
+				<a itemprop="url" href="http://www.biblesupport.com/user/229806-tj-higgins/" title="View Profile: Tj Higgins" class='ipsUserPhotoLink'>
+				
+				
+					<img itemprop="image" src='http://www.biblesupport.com/uploads/profile/photo-thumb-229806.jpg?_r=1623871913' class='ipsUserPhoto ipsUserPhoto_large' />
+				
+				
+				</a>
+				
+			</li>
+		<li class='group_title'>
+			Members (T)
+		</li>
+		<li class='group_icon'>
+			
+				<img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' /><img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' /><img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' /><img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' /><img src='http://www.biblesupport.com/public/style_images/master/bullet_black.png' alt='Pip' />
+			
+			</li>
+		
+		<li class='post_count desc lighter'>
+			1,585 posts
+		</li>
+		
+		
+	</ul>
+	
+	
+		<ul class='custom_fields'>
+			
+				
+					
+				
+			
+		</ul>
+	
+				<b><center><span class='ipsBadge ipsBadge_grey'>Offline</span>
+</center></b>		
+	
+</div>
+			</div>
+			<div class='post_body'>
+				<p class='posted_info desc lighter ipsType_small'>
+					Posted <abbr class="published" itemprop="commentTime" title="2019-07-23T20:45:45+00:00">23 July 2019 - 02:45 PM</abbr>
+					
+				</p>
+				
+				<div itemprop="commentText" class='post entry-content '>
+					<!--cached-Wed, 09 Oct 2024 00:27:21 +0000--><blockquote class="ipsBlockquote" data-author="mnyikka" data-cid="36212" data-time="1563864227">
+<div>
+<p>Hi, Im developing a C# Application to import e-sword bible (raw) modules.<br>
+When I open the zip file, I find a directory with ztext which is compressed UT8 text, but I cannot open the text, or seem to extract the text.<br><br>
+Please help.<br>
+The .bzs, .bzv files how do I uncompress them and extract text</p>
+</div>
+</blockquote>
+<p>Ztext is the format used by the Crosswire Bible Society as part of The Sword Project. ztext modules are not compatible with e-Sword however there is a program called Simple Bible Reader that can easily convert them for use with e-Sword.&nbsp;<br><br>
+Here is the link to download Simple Bible Reader:<br><br><a href='https://trumpet-call.org/2016/09/26/simple-bible-reader/' class='bbc_url' title='External link' rel='nofollow external'>https://trumpet-call...e-bible-reader/</a></p>
+					
+					<br />
+					
+				</div>
+				
+				
+				<div class='ipsLikeBar right clearfix' id='rep_post_36215'>
+				<ul class='ipsList_inline'>
+					
+					
+				</ul>
+			</div>
+<script type='text/javascript'>
+	ipb.global.registerReputation( 'rep_post_36215', { domLikeStripId: 'like_post_36215', app: 'forums', type: 'pid', typeid: '36215' }, parseInt('0') );
+</script>
+				
+								
+				
+				
+				
+			
+				<ul id='postControlsNormal_36215' class='post_controls clear clearfix' >
+					<li class='top hide'><a href='#ipboard_body' class='top' title='Back to top'>Back to top</a></li>
+					
+					
+					
+					
+					
+					
+				</ul>
+					
+			</div>
+		</div>
+	</div>
+		
+		
+		<hr />
+		
+		
+<script type="text/javascript">
+var pid = parseInt(36215);
+if ( pid > ipb.topic.topPid ){
+	ipb.topic.topPid = pid;
+}
+
+	// Show multiquote for JS browsers
+	if ( $('multiq_36215') )
+	{
+		$('multiq_36215').show();
+	}
+	
+	if( $('toggle_post_36215') )
+	{
+		$('toggle_post_36215').show();
+	}
+	
+	// Add perm data
+	ipb.topic.deletePerms[36215] = { 'canDelete' : 0, 'canSoftDelete' : 0 };
+
+</script>
+			
+		</div>
+	</div>
+
+<hr />
+<div class='topic_controls clear ipsPad_top_bottom_half'>
+	
+	<div class='ipsPad_top_slimmer right'>
+		
+		<a href='http://www.biblesupport.com/forum/25-tutorials/' class="ipsType_small desc">Back to Tutorials</a>
+		
+	</div>	
+</div>
+
+<!-- Close topic -->
+</div>
+<!-- BOTTOM BUTTONS -->
+
+	<br />
+	<div class='clear clearfix left'>
+		
+
+	<ul class='topic_share left shareButtons ipsList_inline'>
+	
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=twitter;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Twitter" class='_slink' id='slink_twitter'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/twitter.png" /></a></li>
+	
+
+		
+				<li class='fbLike'><div class="fb-like" data-href="http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" data-action="like"></div><div id="fb-root"></div></li>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=247933458572801";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+			
+	
+
+		
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+	
+		{lang: 'en-GB'}
+	
+</script>
+<li><div class='googlePlusOne'><g:plusone count="false" size="small"></g:plusone></div></li>
+			
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=digg;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Digg" class='_slink' id='slink_digg'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/digg.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=delicious;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Del.icio.us" class='_slink' id='slink_delicious'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/delicious.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=reddit;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Reddit" class='_slink' id='slink_reddit'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/reddit.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=stumble;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via StumbleUpon" class='_slink' id='slink_stumble'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/stumble.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=email;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Email" class='_slink' id='slink_email'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/email.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=print;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Print" class='_slink' id='slink_print'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/print.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=download;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Download" class='_slink' id='slink_download'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/download.png" /></a></li>
+	
+
+		<li><a href="http://www.biblesupport.com/index.php?sharelink=blogthis;aHR0cDovL3d3dy5iaWJsZXN1cHBvcnQuY29tL3RvcGljLzk5NjktcmVhZGluZy1ienMtYnp2LXZlcnNlcy1mcm9tLXJhdy1lLXN3b3JkLW1vZHVsZXMtaW4tenRleHQtZm9sZGVyLw,,;UmVhZGluZyAuYnpzLCAuYnp2IHZlcnNlcyBmcm9tIHJhdyBlLXN3b3JkIG1vZHVsZXMgaW4genRleHQgZm9sZGVy" rel="nofollow" target="_blank" title="Share this link via Blog This" class='_slink' id='slink_blogthis'><img src="http://www.biblesupport.com/public/style_extra/sharelinks/blogthis.png" /></a></li>
+	
+	</ul>
+	<script type="text/javascript">
+		ipb.sharelinks.url   = "http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/";
+		ipb.sharelinks.title = "Reading .bzs, .bzv verses from raw e-sword modules in ztext folder";
+		ipb.sharelinks.bname = "Bible Support";
+	</script>
+
+	</div>
+	<br />
+
+<!-- SAME TAGGED -->
+
+<!-- ACTIVE USERS -->
+<div id='topic_stats' class='statistics clear clearfix'>
+		<div id='topic_active_users' class='active_users'>
+			<h4 class='statistics_head'>0 user(s) are reading this topic</h4>
+			<p class='statistics_brief desc'>0 members, 0 guests, 0 anonymous users</p>
+			
+		</div>
+	</div>
+			</div>
+			<div class='ipsLayout_right clearfix'><div class='ipsSideBlock clearfix'>
+
+
+
+<a class="twitter-timeline"  href="https://twitter.com/biblesupport" data-widget-id="291771508043415553">Tweets by @biblesupport</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+<br />
+
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fbiblesupport&amp;width=270&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color=%23204066&amp;header=false&amp;appId=247933458572801" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:258px;" allowTransparency="true"></iframe><br /><br/>
+
+
+
+<h3>Similar Topics
+</h3>
+
+
+
+	<table class='ipb_table topic_list' summary='Topics similar to ""' id='forum_table'>
+
+
+       <tr class='__topic  expandable' id='trow_12540' data-tid="12540">
+	
+	<td bgcolor='#f9fcff' class='col_f_content '>
+		
+		
+		
+		<h4><a id="tid-link-12540" href="http://www.biblesupport.com/topic/12540-installing-modules/" title='- started  21 September 2024 - 06:20 AM' class='topic_title'>Installing Modules</a></h4>
+		<br />
+		<span class='desc lighter blend_links'>
+			Started by 
+	Guest_19Mark45_*
+, 21 Sep 2024
+			
+		</span>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+
+       
+
+       <tr class='__topic  expandable' id='trow_12349' data-tid="12349">
+	
+	<td bgcolor='#f9fcff' class='col_f_content '>
+		
+		
+		
+		<h4><a id="tid-link-12349" href="http://www.biblesupport.com/topic/12349-modules-for-tonga-bible/" title='- started  24 April 2024 - 02:21 AM' class='topic_title'>Modules for Tonga bible</a></h4>
+		<br />
+		<span class='desc lighter blend_links'>
+			Started by 
+	Guest_allenjim01_*
+, 24 Apr 2024
+			
+		</span>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+
+       
+
+       <tr class='__topic  expandable' id='trow_12077' data-tid="12077">
+	
+	<td bgcolor='#f9fcff' class='col_f_content '>
+		
+		
+		
+		<h4><a id="tid-link-12077" href="http://www.biblesupport.com/topic/12077-tagged-verses/" title='- started  28 July 2023 - 02:50 AM' class='topic_title'>Tagged Verses</a></h4>
+		<br />
+		<span class='desc lighter blend_links'>
+			Started by 
+	Guest_mpjacobsson_*
+, 28 Jul 2023
+			
+		</span>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+
+       
+
+       <tr class='__topic  expandable' id='trow_12402' data-tid="12402">
+	
+	<td bgcolor='#f9fcff' class='col_f_content '>
+		
+		
+		
+		<h4><a id="tid-link-12402" href="http://www.biblesupport.com/topic/12402-how-to-go-back-reading-in-different-books-of-the-bible/" title='- started  15 June 2024 - 07:05 PM' class='topic_title'>How to &#34;go back&#34; - reading in different books of the Bible</a></h4>
+		<br />
+		<span class='desc lighter blend_links'>
+			Started by 
+	Guest_Anajnew_*
+, 15 Jun 2024
+			
+		</span>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+
+       
+
+       <tr class='__topic  expandable' id='trow_3763' data-tid="3763">
+	
+	<td bgcolor='#f9fcff' class='col_f_content '>
+		
+		
+		
+		<h4><a id="tid-link-3763" href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/" title='- started  07 November 2012 - 04:40 PM' class='topic_title'>How to install modules with eSword for Mac</a></h4>
+		<br />
+		<span class='desc lighter blend_links'>
+			Started by 
+	Guest_MikeRebich_*
+, 07 Nov 2012
+			
+		</span>
+		
+			<ul class='mini_pagination'>
+			
+					
+						<li><a href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/" title='- page 1'>1</a></li>
+					
+			
+
+					
+						<li><a href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/?st=10" title='- page 2'>2</a></li>
+					
+			
+
+					
+						<li><a href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/?st=20" title='- page 3'>3</a></li>
+					
+			
+
+					
+						<li><a href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/?st=50" title='- page 6'>6 &rarr;</a></li>
+					
+			
+			</ul>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+
+       
+	
+	</table>
+</div>
+<br />
+
+<div class='ipsSideBlock clearfix'>
+
+
+<h3>Frequently Asked Questions
+</h3>
+
+
+
+	<table class='ipb_table topic_list' summary='Topics similar to ""' id='forum_table'>
+<ul class="hfeed">
+<b>How Do I?</b><br><li class="hentry row1">
+<a href="http://www.biblesupport.com/topic/1070-e-sword-resource-installation-on-a-windows-pc/">Install e-Sword Modules (PC)?</a> <br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/topic/3763-how-to-install-modules-with-esword-for-mac/">Install e-Sword Modules (Mac)?</a><br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/topic/1889-how-to-make-e-sword-modules-tooltip-nt-users-guide-94-revision-2122012/">Make e-Sword Modules?</a> <br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/e-sword-downloads/file/7421-e-sword-tab-renamer/">Change e-Sword Tab Names?</a> <br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/e-sword-downloads/file/7430-e-sword-library-manager/">Change e-Sword Tab Order?</a> <br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/e-sword-downloads/file/4825-e-sword-users-guide-pdf-v1006-101-revision-1202012/">View the e-Sword Manual?</a><br></li><li class="hentry row1">
+<a href="http://www.biblesupport.com/index.php?app=forums&module=post&section=post&do=new_post&f=12">Request an e-Sword Module?</a></li> <li class="hentry row1">
+<a href="http://www.biblesupport.com/delete_account_do.html">Delete my Account?</a><br></li>
+</ul><br>
+<ul class="hfeed">
+<a href="http://www.biblesupport.com/page/get-started-using-esword.html">What is e-Sword?</a><li class="hentry row1"></li>
+
+<a href="http://www.biblesupport.com/topic/3771-what-happened-to-the-old-site/page__view__findpost__p__13956">Make me an e-Sword 8 Module?</a><li class="hentry row1"></li>
+
+<a href="http://www.biblesupport.com/page/get-started-using-esword.html">How do I view books from this site?</a></ul>
+	</table>
+</div>
+<br /><div class='ipsSideBlock clearfix'>
+	<h3>Latest Blogs</h3>
+
+	<ul class='hfeed'>
+		
+				
+		<li class='hentry row1'><a href='http://www.biblesupport.com/blog/362/entry-12436-10-justifications-for-bible-reading/' rel='bookmark' title='10 justifications for Bible reading'>10 justifications for Bible reading</a>
+			<br /><span class = 'desc ipsType_smaller'> by <a hovercard-ref="member" hovercard-id="551316" class="url fn name  ___hover___member _hoversetup" href="http://www.biblesupport.com/user/551316-SarahSherrill" title="" id="new_esword_files_12436_551316">SarahSherrill</a></span>,  <span class='date'><abbr class="published" title="2022-06-27T08:53:24+00:00">Jun 27 2022 02:53 AM</abbr></span>
+			<br /><span class='desctext'>According to the experts from Astros DigitalHere are ten reaso...</span>
+		</li>
+		
+
+		<li class='hentry row2 altrow'><a href='http://www.biblesupport.com/blog/320/entry-12418-how-can-i-fix-the-cash-app-if-it-isnt-working/' rel='bookmark' title='How can I fix the Cash App if it isn&#39;t Working?'>How can I fix the Cash App if it isn&#39;t Working?</a>
+			<br /><span class = 'desc ipsType_smaller'> by <a hovercard-ref="member" hovercard-id="549970" class="url fn name  ___hover___member _hoversetup" href="http://www.biblesupport.com/user/549970-cashcardhelps" title="" id="new_esword_files_12418_549970">cashcardhelps</a></span>,  <span class='date'><abbr class="published" title="2022-06-07T07:12:00+00:00">Jun 07 2022 01:12 AM</abbr></span>
+			<br /><span class='desctext'>First, you must keep the app up to date with the most recent v...</span>
+		</li>
+		
+
+		<li class='hentry row1'><a href='http://www.biblesupport.com/blog/344/entry-12417-how-can-an-app-benefit-your-pharmacy-in-growing-business-earnings/' rel='bookmark' title='How can an app benefit your pharmacy in growing business earnings'>How can an app benefit your pharmacy in growing business earnings</a>
+			<br /><span class = 'desc ipsType_smaller'> by <a hovercard-ref="member" hovercard-id="548245" class="url fn name  ___hover___member _hoversetup" href="http://www.biblesupport.com/user/548245-Alteza" title="" id="new_esword_files_12417_548245">Alteza</a></span>,  <span class='date'><abbr class="published" title="2022-06-06T09:14:12+00:00">Jun 06 2022 03:14 AM</abbr></span>
+			<br /><span class='desctext'>Apps comprise a large portion of the tech-driven society that...</span>
+		</li>
+		
+
+		<li class='hentry row2 altrow'><a href='http://www.biblesupport.com/blog/343/entry-12416-what-is-a-satire-essay-anyway/' rel='bookmark' title='What Is a Satire Essay Anyway?'>What Is a Satire Essay Anyway?</a>
+			<br /><span class = 'desc ipsType_smaller'> by <a hovercard-ref="member" hovercard-id="550796" class="url fn name  ___hover___member _hoversetup" href="http://www.biblesupport.com/user/550796-Caleb9" title="" id="new_esword_files_12416_550796">Caleb9</a></span>,  <span class='date'><abbr class="published" title="2022-06-04T14:22:12+00:00">Jun 04 2022 08:22 AM</abbr></span>
+			<br /><span class='desctext'>What Is a Satire Essay Anyway?A large number of professional w...</span>
+		</li>
+		
+
+		<li class='hentry row1'><a href='http://www.biblesupport.com/blog/319/entry-12415-25-off-on-mauli-thread-rakhi-online-for-brother/' rel='bookmark' title='25% OFF on Mauli Thread Rakhi Online for Brother'>25% OFF on Mauli Thread Rakhi Online for Brother</a>
+			<br /><span class = 'desc ipsType_smaller'> by <a hovercard-ref="member" hovercard-id="549925" class="url fn name  ___hover___member _hoversetup" href="http://www.biblesupport.com/user/549925-giftsvalla" title="" id="new_esword_files_12415_549925">giftsvalla</a></span>,  <span class='date'><abbr class="published" title="2022-06-03T08:02:00+00:00">Jun 03 2022 02:02 AM</abbr></span>
+			<br /><span class='desctext'>Mauli Rakhi are generally red. The red colour symbolizes stren...</span>
+		</li>
+		
+		
+	</ul>
+</div>			</div>
+			</div>
+
+	<script type="text/javascript" src="http://www.biblesupport.com/public/js/3rd_party/prettify/prettify.js"></script>
+	<script type='text/javascript' src='http://www.biblesupport.com/public/js/3rd_party/prettify/lang-sql.js'></script>
+	<!-- By default we load generic code, php, css, sql and xml/html; load others here if desired -->
+	<script type="text/javascript">
+	//<![CDATA[
+		Event.observe( window, 'load', function(e){ prettyPrint() });
+	//]]>
+	</script>
+<div id='multiQuoteInsert' style='display: none;' class='ipsFloatingAction'>
+	<span class='ipsButton no_width' id='mqbutton'>Reply to quoted posts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#' id='multiQuoteClear' class='ipsType_smaller desc' title='Clear the posts you have selected with MultiQuote'>Clear</a> &nbsp;&nbsp;&nbsp;
+</div>
+<form id="modform" method="post" action="http://www.biblesupport.com/index.php?">
+	<input type="hidden" name="app" value="forums" />
+	<input type="hidden" name="module" value="moderate" />
+	<input type="hidden" name="section" value="moderate" />
+	<input type="hidden" name="do" value="postchoice" />
+	<input type="hidden" name="f" value="25" />
+	<input type="hidden" name="t" value="9969" />
+	<input type="hidden" name="auth_key" value="880ea6a14ea49e853634fbdc5015a024" />
+	<input type="hidden" name="st" value="" />
+	<input type="hidden" value="" name="selectedpidsJS" id='selectedpidsJS' />
+	<input type="hidden" name="tact" id="tact" value="" />
+</form>
+				
+				<ol class='breadcrumb bottom ipsList_inline left clearfix clear'>
+											<li><a href='http://www.biblesupport.com/index'>Bible Support</a></li>
+							
+						
+							<li><span class='nav_sep'>&rarr;</span> <a href='http://www.biblesupport.com/forum/1-e-sword-users-forum-and-support/' title='Return to e-Sword Users Forum and Support'><span>e-Sword Users Forum and Support</span></a></li>
+							
+						
+
+							<li><span class='nav_sep'>&rarr;</span> <a href='http://www.biblesupport.com/forum/25-tutorials/' title='Return to Tutorials'><span>Tutorials</span></a></li>
+							
+						
+
+					
+					<li class='right ipsType_smaller'>
+						<a rel="nofollow" href='http://www.biblesupport.com/privacypolicy/'>Privacy Policy</a>
+					</li>
+					
+						
+				</ol>
+			</div>
+			<!-- ::: FOOTER (Change skin, language, mark as read, etc) ::: -->
+			<div id='footer_utilities' class='main_width clearfix clear'>
+				<a rel="nofollow" href='#top' id='backtotop' title='Go to top'><img src='http://www.biblesupport.com/public/style_images/master/top.png' alt='' /></a>
+				<ul class='ipsList_inline left'>
+					<li>
+						<img src='http://www.biblesupport.com/public/style_images/master/feed.png' alt='RSS Feed' id='rss_feed' class='clickable' />
+					</li>
+					
+							
+					
+					
+					<li>
+						<a href="http://www.biblesupport.com/index.php?app=core&amp;module=help" title='View help' rel="help" accesskey='6'>Help</a>
+					</li>				
+				</ul>
+				<!-- Copyright Information -->
+        				  <p id='copyright'>
+        				  	<a href='http://www.invisionpower.com/apps/board/' title='Community Forum Software by Invision Power Services'>Community Forum Software by IP.Board</a><br />Licensed to: BibleSupport.com</p>
+		<!-- / Copyright -->
+			</div>
+			
+			
+			
+				<script type="text/javascript">
+					ipb.global.lightBoxIsOff();
+				</script>
+			
+			<div id='inline_login_form' style="display:none">
+		<form action="http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=login&amp;do=process" method="post" id='login'>
+				<input type='hidden' name='auth_key' value='880ea6a14ea49e853634fbdc5015a024' />
+				<input type="hidden" name="referer" value="http://www.biblesupport.com/topic/9969-reading-bzs-bzv-verses-from-raw-e-sword-modules-in-ztext-folder/" />
+				<h3>Sign In</h3>
+				
+				<br />
+				<div class='ipsForm ipsForm_horizontal'>
+					<fieldset>
+						<ul>
+							<li class='ipsField'>
+								<div class='ipsField_content'>
+									Need an account? <a href="http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=register" title='Register now!'>Register now!</a>
+								</div>
+							</li>
+							<li class='ipsField ipsField_primary'>
+								<label for='ips_username' class='ipsField_title'>Username or email:</label>
+								<div class='ipsField_content'>
+									<input id='ips_username' type='text' class='input_text' name='ips_username' size='30' tabindex='0' />
+								</div>
+							</li>
+							<li class='ipsField ipsField_primary'>
+								<label for='ips_password' class='ipsField_title'>Forum Password</label>
+								<div class='ipsField_content'>
+									<input id='ips_password' type='password' class='input_text' name='ips_password' size='30' tabindex='0' /><br />
+									<a href='http://www.biblesupport.com/index.php?app=core&amp;module=global&amp;section=lostpass' title='Retrieve password'>I've forgotten my password</a>
+								</div>
+							</li>
+							<li class='ipsField ipsField_checkbox'>
+								<input type='checkbox' id='inline_remember' checked='checked' name='rememberMe' value='1' class='input_check' tabindex='0' />
+								<div class='ipsField_content'>
+									<label for='inline_remember'>
+										<strong>Remember me</strong><br />
+										<span class='desc lighter'>This is not recommended for shared computers</span>
+									</label>
+								</div>
+							</li>
+							
+							
+							<li class='ipsPad_top ipsForm_center desc ipsType_smaller'>
+								<a rel="nofollow" href='http://www.biblesupport.com/privacypolicy/'>Privacy Policy</a>
+							</li>
+							
+						</ul>
+					</fieldset>
+					
+					<div class='ipsForm_submit ipsForm_center'>
+						<input type='submit' class='ipsButton' value='Sign In' tabindex='0' />
+					</div>
+				</div>
+			</form>
+	</div>
+		</div>
+		
+		
+		<script type='text/javascript'>
+			if( $('primary_nav') ){	ipb.global.activateMainMenu(); }
+		</script>
+			</body>
+</html></script>

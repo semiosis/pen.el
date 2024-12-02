@@ -1,0 +1,483 @@
+HTTP/1.1 200 OK
+Date: Mon, 11 Nov 2024 10:03:45 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: public, max-age=0
+vary: Accept-Encoding
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=7Bv%2FMPJiKmiqF%2BPTeDA%2FHQxxbXtY7%2B5jkB5qPV8lEZl2K%2FIxwSuPHO2HazaISDGsM3EIvl2%2FqZB6tfGohoT0AyIGaeiOq4jU9UTFgOWEbPNAKfFUJXblvQq1ZdnQWvLLYMxHBevAIu%2F%2BYX6FWuShYMVA7smL"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8e0d7440bf86d9a0-AKL
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=28028&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3296&recv_bytes=555&delivery_rate=142194&cwnd=253&unsent_bytes=0&cid=5c1565afbd5409f5&ts=1010&x=0"
+
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flawless scripting with Rust</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=65c01dd164">
+
+    <meta name="description" content="Safe and fast scripting with the Rust programming language.">
+    <link rel="icon" href="https://www.niccoloforlini.com/content/images/size/w256h256/2022/01/favicon.png" type="image/png">
+    <link rel="canonical" href="https://www.niccoloforlini.com/flawless-scripting-with-rust/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Niccolò Forlini">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Flawless scripting with Rust">
+    <meta property="og:description" content="Safe and fast scripting with the Rust programming language.">
+    <meta property="og:url" content="https://www.niccoloforlini.com/flawless-scripting-with-rust/">
+    <meta property="og:image" content="https://www.niccoloforlini.com/content/images/2022/07/typewriter_1-1.jpg">
+    <meta property="article:published_time" content="2022-07-25T07:00:00.000Z">
+    <meta property="article:modified_time" content="2022-07-25T12:16:57.000Z">
+    <meta property="article:tag" content="rust">
+    <meta property="article:tag" content="scripting">
+    <meta property="article:tag" content="automation">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flawless scripting with Rust">
+    <meta name="twitter:description" content="Safe and fast scripting with the Rust programming language.">
+    <meta name="twitter:url" content="https://www.niccoloforlini.com/flawless-scripting-with-rust/">
+    <meta name="twitter:image" content="https://www.niccoloforlini.com/content/images/2022/07/typewriter_1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Niccolò Forlini">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="rust, scripting, automation">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Niccolò Forlini",
+        "url": "https://www.niccoloforlini.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.niccoloforlini.com/content/images/2022/01/main-logo-2.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Niccolò Forlini",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.niccoloforlini.com/content/images/2023/05/1669240196775.jpg",
+            "width": 800,
+            "height": 800
+        },
+        "url": "https://www.niccoloforlini.com/author/nick/",
+        "sameAs": []
+    },
+    "headline": "Flawless scripting with Rust",
+    "url": "https://www.niccoloforlini.com/flawless-scripting-with-rust/",
+    "datePublished": "2022-07-25T07:00:00.000Z",
+    "dateModified": "2022-07-25T12:16:57.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.niccoloforlini.com/content/images/2022/07/typewriter_1.jpg",
+        "width": 1200,
+        "height": 800
+    },
+    "keywords": "rust, scripting, automation",
+    "description": "Safe and fast scripting with the Rust programming language.",
+    "mainEntityOfPage": "https://www.niccoloforlini.com/flawless-scripting-with-rust/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.100">
+    <link rel="alternate" type="application/rss+xml" title="Niccolò Forlini" href="https://www.niccoloforlini.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="c18244eeeff7ade4cf91b7bdb3" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://www.niccoloforlini.com/" data-locale="en" crossorigin="anonymous" type="21667fce083862c97aadec7b-text/javascript"></script>
+    
+    <link href="https://www.niccoloforlini.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=65c01dd164" type="21667fce083862c97aadec7b-text/javascript"></script><style>:root {--ghost-accent-color: #f96c6c;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=65c01dd164">
+    <link rel="stylesheet" href="/assets/css/vendor/prism-atom-dark.min.css" />
+<style>pre {overflow: auto;}</style>
+<script defer data-domain="niccoloforlini.com" data-api="/evizu/epi/evizu" src="/evizu/js/20221210.js" type="21667fce083862c97aadec7b-text/javascript"></script>
+<script type="21667fce083862c97aadec7b-text/javascript">
+var html = document.querySelector("html");
+if (localStorage.getItem('alto_dark') === null) {
+    localStorage.setItem('alto_dark', true);
+    html.classList.add('dark-mode');
+}
+</script>
+</head>
+
+<body class="post-template tag-rust tag-scripting tag-automation is-head-left-logo">
+<div class="site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://www.niccoloforlini.com">
+                            <img src="https://www.niccoloforlini.com/content/images/2022/01/main-logo-2.svg" alt="Niccolò Forlini">
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://www.niccoloforlini.com">Home</a></li>
+    <li class="nav-about"><a href="https://www.niccoloforlini.com/about/">About</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="site-content">
+        
+<div class="content-area">
+<main class="site-main">
+
+
+    <article class="post tag-rust tag-scripting tag-automation single-post">
+
+        <header class="article-header gh-canvas">
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2022-07-25">Jul 25, 2022</time>
+                </span>
+                    <span class="post-meta-item post-meta-length">7 min read</span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-rust" href="/tag/rust/"
+                                title="rust">rust</a>, <a class="post-tag post-tag-scripting" href="/tag/scripting/"
+                                title="scripting">scripting</a>, <a class="post-tag post-tag-automation" href="/tag/automation/"
+                                title="automation">automation</a>
+                    </span>
+            </div>
+            <h1 class="post-title">Flawless scripting with Rust</h1>
+                <figure class="post-media kg-width-wide">
+        <img
+            class="post-image"
+            srcset="/content/images/size/w400/2022/07/typewriter_1.jpg 400w,
+                    /content/images/size/w750/2022/07/typewriter_1.jpg 750w,
+                    /content/images/size/w960/2022/07/typewriter_1.jpg 960w,
+                    /content/images/size/w1140/2022/07/typewriter_1.jpg 1140w,
+                    /content/images/size/w1920/2022/07/typewriter_1.jpg 1920w"
+            sizes="(min-width: 960px) 960px, 92vw"
+            src="/content/images/size/w960/2022/07/typewriter_1.jpg"
+            alt="Flawless scripting with Rust"
+            loading="lazy"
+        >
+
+    </figure>
+        </header>
+
+        <div class="gh-content gh-canvas">
+            <p>Over the past year, I've become acquainted with the Rust programming language.</p><p>I can't really pin down when I started getting interested in it, I was probably <strong>biased by the huge hype</strong> that revolved around it since a lot of peers were talking about it and I was spending an unusual time lurking on the <a href="https://www.reddit.com/r/rust/?ref=niccoloforlini.com">r/rust</a> subreddit, so at some point I sat down, downloaded the <a href="https://rustup.rs/?ref=niccoloforlini.com">Rust Toolchain installer</a> and decided to give it a go. </p><p>It was nothing like what I've been coding with up until then. I did my time with <strong>C++</strong> and I can't say I enjoyed it <em>that much</em>, but overall, even if I've always been coding with higher-level languages, <strong>Rust looked like a challenge I could not pass</strong>. </p><p>I picked up <a href="https://doc.rust-lang.org/book/?ref=niccoloforlini.com#the-rust-programming-language">The Rust Programming Language</a> book and went through it multiple times, and after spending hours bashing my head against the keyboard or fighting countless (lost) battles with the compiler, once it started to click, the struggle and frustration turned into satisfaction and fun. </p><p><strong>The biggest challenge for me was finding use in Rust for my needs</strong>. Even if I was liking the language, I could not find a specific scope for it, and for that reason, I used it as a Swiss army knife to get more and more practice. It wasn't of course the best idea, as <strong>sometimes I was forcing the language to work in some ways</strong> that it was not intended to.</p><p>In the end, I began to code some small microservices at work to improve our internal QA workflow, for both automation and manual QA engineers, and in my spare time for some side activities. What really impressed me over the last few weeks, however, is the discovery that <strong>Rust files can also be executed as a simple script</strong>.</p><h3 id="wait-what">Wait, what?</h3><p>The definition I just gave is extremely rough and approximate, but according to the definition of <a href="https://rust-script.org/?ref=niccoloforlini.com">rust-script</a>, "<em>with <code>rust-script</code> Rust files and expressions can be executed just like a shell or Python script"</em>.</p><p>The example found on the GitHub page is pretty straightforward: after installing <code>rust-script</code>, you create a file, add the proper shabang, write some (valid) Rust code, make it executable and it is ready to run!</p><figure class="kg-card kg-code-card"><pre><code class="language-rust">#!/usr/bin/env rust-script
+//! Dependencies can be specified in the script file itself as follows:
+//!
+//! ```cargo
+//! [dependencies]
+//! rand = "0.8.0"
+//! ```
+
+use rand::prelude::*;
+
+fn main() {
+    let x: u64 = random();
+    println!("A random number: {}", x);
+}
+
+$ ./script.rs
+A random number: 9240261453149857564</code></pre><figcaption>Code snippet from https://github.com/fornwall/rust-script</figcaption></figure><p>But that's not all, it can also <strong>run simple expressions</strong> by passing the <code>-e</code> option:</p><figure class="kg-card kg-code-card"><pre><code class="language-rust">$ rust-script -e "print!(\"Hello world!\")"         
+Hello world!   </code></pre><figcaption>An oversimplified usage example of the -e option</figcaption></figure><p>But how does it work? Usually, to be able to build a Rust application you need a proper project structure, with a manifest file containing the Rust version you want to use, its dependencies, and other minor details that help the toolchain build the final executable.</p><p><code>rust-script</code>, in this regard, does the following:</p><ul><li>It creates a <strong>Cargo project</strong> in the <code>~/.cache/&lt;rust-project&gt;</code> folder on your machine.</li><li>It wraps the expression given in a <code>fn main() {}</code> function if needed, for instance when you pass an expression with the <code>-e</code> parameter.</li><li>It generates a <code>Cargo.toml</code> file for you. All you have to do in this regard is declare additional dependencies with the <code>--dep</code> parameter or inner line documentation.</li></ul><p>In a few words, <strong>it just creates a standard Rust project and runs the built executable for you</strong>.</p><p>I was a bit skeptical at the beginning, so I added <code>--cargo-output</code> to a simple invocation to see what was going on (as the output related to the build step is quiet by default):</p><pre><code class="language-shell">$ rust-script --cargo-output -e "print!(\"Hello world\")"
+   Compiling expr v0.1.0 (/home/nick/.cache/rust-script/projects/925350e4bb9a73e58f87395a)
+    Finished release [optimized] target(s) in 0.22s
+     Running `.cache/rust-script/binaries/release/expr_925350e4bb9a73e58f87395a`
+Hello world%     </code></pre><p>As you can see in the snipped above, a <code>release</code> build is created from the generated project located at <code>/home/nick/.cache/rust-script/projects/925350e4bb9a73e58f87395a</code>. If we dig a bit and see what's in there, this is the outcome:</p><pre><code class="language-shell">$ ls -l /home/nick/.cache/rust-script/projects/925350e4bb9a73e58f87395a        
+total 16
+-rw-r--r-- 1 nick nick 148 Jul 17 14:35 Cargo.lock
+-rw------- 1 nick nick 195 Jul 17 14:35 Cargo.toml
+-rw------- 1 nick nick 728 Jul 17 14:35 expr.rs
+-rw------- 1 nick nick 214 Jul 17 14:35 metadata.json</code></pre><p>We have <strong>4 files</strong> in here (I'm not going to follow the order above):</p><ul><li><code>expr.rs</code> is the Rust file containing a <code>main</code>  function with the expression we passed to <code>rust-script</code>:</li></ul><pre><code class="language-rust">$ cat expr.rs
+
+use std::any::{Any, TypeId};
+
+fn main() {
+    let exit_code = match try_main() {
+        Ok(()) =&gt; None,
+        Err(e) =&gt; {
+            use std::io::{self, Write};
+            let _ = writeln!(io::stderr(), "Error: {}", e);
+            Some(1)
+        },
+    };
+    if let Some(exit_code) = exit_code {
+        std::process::exit(exit_code);
+    }
+}
+
+fn try_main() -&gt; Result&lt;(), Box&lt;dyn std::error::Error&gt;&gt; {
+    fn _rust_script_is_empty_tuple&lt;T: ?Sized + Any&gt;(_s: &amp;T) -&gt; bool {
+        TypeId::of::&lt;()&gt;() == TypeId::of::&lt;T&gt;()
+    }
+    match {print!("Hello world")} {
+        __rust_script_expr if !_rust_script_is_empty_tuple(&amp;__rust_script_expr) =&gt; println!("{:?}", __rust_script_expr),
+        _ =&gt; {}
+    }
+    Ok(())
+}</code></pre><p>As you might notice, the generated file is a <em>bit</em> more verbose than expected.</p><ul><li><code>Cargo.toml</code> is the manifest file containing all the information <code>cargo</code> needs to build the executable. Names, version, and authors are placeholders as there's no need to create a <code>crate</code> to publish somewhere. After all, it's just a local script.</li></ul><pre><code class="language-toml">$ cat Cargo.toml
+
+[[bin]]
+name = "expr_925350e4bb9a73e58f87395a"
+path = "expr.rs"
+
+[dependencies]
+
+[package]
+authors = ["Anonymous"]
+edition = "2018"
+name = "expr"
+version = "0.1.0"
+[profile.release]
+strip = true</code></pre><ul><li><code>Cargo.lock</code> is where our dependency versions are pinned:</li></ul><pre><code class="language-bash">$ cat Cargo.lock
+
+# This file is automatically @generated by Cargo.
+# It is not intended for manual editing.
+version = 3
+
+[[package]]
+name = "expr"
+version = "0.1.0"</code></pre><ul><li>And lastly, the <code>metadata.json</code> file. It contains bits of information used by <code>rust-script</code> and it's not really of interest to us, so we can just ignore it.</li></ul><p>Being a Rust project under the hood, <strong>depending on its size and dependencies it might take a bit to compile</strong>. While this is unavoidable since dependencies need to be downloaded and the code compiled at least once, <strong>the following invocations</strong> of the same script - as long as its content is unchanged - <strong>will run immediately as the entire build process is cached</strong> (in our case in <code>/home/nick/.cache/rust-script/projects/925350e4bb9a73e58f87395a</code>).</p><h3 id="somethings-missing-isnt-it">Something's missing, isn't it?</h3><p>One thing that might disappoint the reader is that in the examples above there is <strong>no testing code</strong>. Why would anyone prefer rust-script to Bash (although tests in Bash are not my favorite) or any other high-level scripting language (Python for instance?).</p><p>Truth is, <code>rust-script</code> also supports running unit tests! </p><p>Let's go back and consider the first snippet taken from the <code>rust-script</code> GitHub repo once again, and this time we change a few things in there:</p><figure class="kg-card kg-code-card"><pre><code class="language-rust">#!/usr/bin/env rust-script
+
+//! Dependencies can be specified in the script file itself as follows:
+//!
+//! ```cargo
+//! [dependencies]
+//! rand = "0.8.0"
+//! ```
+
+use rand::prelude::*;
+
+fn main() {
+    let x: i8 = rand::thread_rng().gen_range(0..100);
+    println!("A random number from 0 to 100: {}", x);
+    let y: i8 = rand::thread_rng().gen_range(0..100);
+    println!("Another random number from 0 to 100: {}", y);
+
+    println!(
+        "The subtraction of these two random numbers: {}",
+        subtract(x, y)
+    );
+}
+
+fn subtract(n1: i8, n2: i8) -&gt; i8 {
+    n1 - n2
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::subtract;
+
+    #[test]
+    fn the_subtraction_works() {
+        let expected_result = -35;
+        assert_eq!(expected_result, subtract(-10, 25));
+    }
+}
+</code></pre><figcaption>Move from<code>u64</code> to <code>i8</code> and reduced range of the possible numbers are for the sake of simplicity</figcaption></figure><p>This script now prints two random numbers and subtracts the second from the first. The <code>subtract</code> function has a simple signature, and takes two numbers, <code>n1</code> and <code>n2</code>, and returns the result to the caller.</p><p>To make sure our <code>subtract</code> code works as expected, we can either run the script multiple times, write down the numbers on a piece of paper, subtract them manually, and verify the result is what we expect. While this might sound cool with some old-school vibes to some, please do not do that. </p><p>If you notice the code block beginning with <code>#[cfg(test)]</code>, it contains a simple testing function that performs an assertion between an expected value and the actual value computed by our function.</p><p>We can run this test with <code>rust-script</code> by adding the <code>--test</code> option:</p><pre><code class="language-bash"> $ rust-script --test --cargo-output script.rs
+   Compiling script v0.1.0 (/home/nick/.cache/rust-script/projects/43de84a97d5d7d01f2db850b)
+    Finished test [unoptimized + debuginfo] target(s) in 0.28s
+     Running unittests (/home/nick/.cache/rust-script/binaries/debug/deps/script_43de84a97d5d7d01f2db850b-2f022673f5d0a470)
+
+running 1 test
+test tests::the_subtraction_works ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s</code></pre><h3 id="sounds-cool-but-how-can-this-be-useful">Sounds cool, but how can this be useful?</h3><p>For some of our automation tools at work, we use Rust. As a matter of fact, a few of our pre-commit hooks in some repositories run Rust code to make sure that code and/or raw files are formatted as expected. If you happened to read my ongoing <a href="https://niccoloforlini.com/exploring-ui-testing-automation-network-isolation/?ref=niccoloforlini.com">Exploring Mobile UI Testing series</a>, in the repository folder I put a pre-commit hook that does exactly that, to make sure JSON files are actually humanly readable so we don't spend centuries trying to decode kilometric lines.</p><p>The main issue with using Rust in these situations, however, lies in the <strong>need to build multiple executables depending on the OS and arch in use</strong>. In our case, some engineers have an Apple Silicon MacBook Pro, and some others an Intel MacBook Pro, so every release requires at least two different binaries to make anyone able to run the script on their machine. And the list could probably get longer and the entire process wearisome if more people with different hardware capabilities needed access to that.</p><p>With <code>rust-script</code>, since the source of some binaries is pretty small and really does a few things, we can finally have it compiled on the fly (you have to install the <a href="https://rustup.rs/?ref=niccoloforlini.com">Rust toolchain</a> first, but we expect that as a precondition) the first time, and have instant subsequent executions as the code usually never changes. </p><hr><p><code>rust-script</code> gives developers another option when they need to code simple scripts for different purposes, and they do not want to go for bare Bash or another scripting language they might not be familiar with. </p><p>In my opinion, as much as I like Bash and pipe-chaining commands in some of our scripts and I find them fascinating, to say the least, having this alternative makes <strong>Rust</strong> a good choice thanks to the safety and guarantees provided by its compile-time checks, the possibility to write and run unit tests easily, and full IDE support for the generated project.</p>
+        </div>
+
+            <div class="gh-canvas">
+
+    <section class="author">
+
+        <div class="author-image-placeholder u-placeholder">
+                <img class="author-image u-object-fit" src="/content/images/size/w150/2023/05/1669240196775.jpg" alt="Niccolò Forlini" loading="lazy">
+        </div>
+
+        <div class="author-wrapper">
+            <h4 class="author-name"><a href="/author/nick/">Niccolò Forlini</a></h4>
+                <div class="author-bio">Senior Mobile Engineer</div>
+        </div>
+
+    </section>
+
+</div>
+    </article>
+
+
+        
+<section class="related-posts gh-canvas">
+
+    <h3 class="related-title">You might also like...</h3>
+
+    <div class="related-feed">
+
+        <article class="post tag-bitrise tag-rust tag-automation tag-scripting">
+
+            <figure class="post-media">
+                <div class="u-placeholder rectangle">
+                    <a class="post-image-link" href="/bitrise-step-rustup-0-2-0/">
+                        <img class="post-image u-object-fit" src="/content/images/size/w750/2022/10/rs-update.webp" alt="Faster and improved - bitrise-step-rustup 0.2.0" loading="lazy">
+                    </a>
+                </div>
+            </figure>
+
+            <header class="post-header">
+                <h2 class="post-title">
+                    <a class="post-title-link" href="/bitrise-step-rustup-0-2-0/">Faster and improved - bitrise-step-rustup 0.2.0</a>
+                </h2>
+                <time class="post-meta" datetime="2022-10-16">Oct 16, 2022</time>
+            </header>
+
+        </article>
+
+
+        <article class="post tag-bitrise tag-scripting tag-rust">
+
+            <figure class="post-media">
+                <div class="u-placeholder rectangle">
+                    <a class="post-image-link" href="/writing-a-bitrise-step-in-rust-scripting/">
+                        <img class="post-image u-object-fit" src="/content/images/size/w750/2022/08/bitrise_cargo_2.webp" alt="Writing a Bitrise Step in Rust - Scripting, Building and Caching" loading="lazy">
+                    </a>
+                </div>
+            </figure>
+
+            <header class="post-header">
+                <h2 class="post-title">
+                    <a class="post-title-link" href="/writing-a-bitrise-step-in-rust-scripting/">Writing a Bitrise Step in Rust - Scripting, Building and Caching</a>
+                </h2>
+                <time class="post-meta" datetime="2022-08-02">Aug 2, 2022</time>
+            </header>
+
+        </article>
+
+
+        <article class="post tag-bitrise tag-scripting tag-rust">
+
+            <figure class="post-media">
+                <div class="u-placeholder rectangle">
+                    <a class="post-image-link" href="/writing-a-bitrise-step-in-rust/">
+                        <img class="post-image u-object-fit" src="/content/images/size/w750/2022/08/bitrise_step_shell.webp" alt="Writing a Bitrise Step in Rust - The Rustup Setup" loading="lazy">
+                    </a>
+                </div>
+            </figure>
+
+            <header class="post-header">
+                <h2 class="post-title">
+                    <a class="post-title-link" href="/writing-a-bitrise-step-in-rust/">Writing a Bitrise Step in Rust - The Rustup Setup</a>
+                </h2>
+                <time class="post-meta" datetime="2022-07-30">Jul 30, 2022</time>
+            </header>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+</main>
+</div>
+    </div>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="gh-copyright">
+                Niccolò Forlini © 2024
+            </div>
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-linkedin"><a href="https://www.linkedin.com/in/nforlini0602/">LinkedIn</a></li>
+    <li class="nav-contact"><a href="/cdn-cgi/l/email-protection#620c0b0109220c0b01010d0e0d040d100e0b0c0b4c010d0f">Contact</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" type="21667fce083862c97aadec7b-text/javascript">
+</script>
+<script src="/assets/built/main.min.js?v=65c01dd164" type="21667fce083862c97aadec7b-text/javascript"></script>
+
+<script src="/assets/js/lib/prism.js" type="21667fce083862c97aadec7b-text/javascript"></script>
+<script type="21667fce083862c97aadec7b-text/javascript">
+(function () {
+  const links = document.querySelectorAll("a[href^='https://'], a[href^='http://']")
+  const host = window.location.hostname
+
+  const isInternalLink = link => new URL(link).hostname === host
+
+  links.forEach(link => {
+    if (isInternalLink(link)) return
+
+    link.setAttribute("target", "_blank")
+    link.setAttribute("rel", "noopener")
+  })
+})()
+</script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="21667fce083862c97aadec7b-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e0d7440bf86d9a0',t:'MTczMTMxOTQyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

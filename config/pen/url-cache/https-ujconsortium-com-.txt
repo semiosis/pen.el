@@ -1,0 +1,1991 @@
+HTTP/1.1 200 OK
+Date: Sun, 20 Oct 2024 09:53:52 GMT
+Server: Apache
+P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+Expires: Wed, 17 Aug 2005 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: 7ed6ca869cb25e762ef7459754add559=aroleuhgvg0f51b68uvcuk59os; path=/; secure; HttpOnly
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: unsafe-url
+Last-Modified: Sun, 20 Oct 2024 09:53:54 GMT
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-transform
+Content-Length: 13500
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=utf-8
+
+                            <!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+        <head>
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+
+                <link rel="icon" type="image/x-icon" href="/templates/rt_fluent/custom/images/logos/favicon.ico" />
+        
+                <link rel="apple-touch-icon" sizes="180x180" href="/templates/rt_fluent/custom/images/logos/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="/templates/rt_fluent/custom/images/logos/apple-touch-icon.png">
+            
+         <meta charset="utf-8" />
+	<base href="https://ujconsortium.com/" />
+	<meta name="keywords" content="submarine cables, underwater cables, connectors, couplings, subsea, telecommunications, telecom, power cables" />
+	<meta name="description" content="The Universal Joint Consortium is an international organisation supporting the manufacturers and consumers of Universal Joint and Universal Coupling technology" />
+	<meta name="generator" content="MySoft" />
+	<title>Home - UJ Consortium</title>
+	<link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/components/com_seoglossary/assets/css/jqeasytooltip.css" rel="stylesheet" />
+	<link href="/media/plg_system_jcepro/site/css/content.min.css?badb4208be409b1335b815dde676300e" rel="stylesheet" />
+	<link href="/media/com_rstbox/css/engagebox.css?a654121220c05d23f1788af318690202" rel="stylesheet" />
+	<link href="/media/plg_system_jcemediabox/css/jcemediabox.min.css?7c18c737af0919db884d585b5f82e461" rel="stylesheet" />
+	<link href="/plugins/system/rokbox/assets/styles/rokbox.css" rel="stylesheet" />
+	<link href="/components/com_roksprocket/layouts/lists/themes/modern/modern.css" rel="stylesheet" />
+	<link href="/media/gantry5/assets/css/lightcase.css" rel="stylesheet" />
+	<link href="/media/gantry5/engines/nucleus/css-compiled/nucleus.css" rel="stylesheet" />
+	<link href="/templates/rt_fluent/custom/css-compiled/fluent_19.css" rel="stylesheet" />
+	<link href="/media/gantry5/assets/css/bootstrap-gantry.css" rel="stylesheet" />
+	<link href="/media/gantry5/engines/nucleus/css-compiled/joomla.css" rel="stylesheet" />
+	<link href="/media/jui/css/icomoon.css" rel="stylesheet" />
+	<link href="/media/gantry5/assets/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="/templates/rt_fluent/custom/css-compiled/fluent-joomla_19.css" rel="stylesheet" />
+	<link href="/templates/rt_fluent/custom/css-compiled/custom_19.css" rel="stylesheet" />
+	<link href="/templates/rt_fluent/css/animate.css" rel="stylesheet" />
+	<link href="/plugins/system/gdpr/assets/css/cookieconsent.min.css" rel="stylesheet" />
+	<style>
+
+abbr
+			{
+			border-bottom: 1px dotted;
+			}
+			span .jqeasytooltip {
+			 border-bottom: 1px dashed;
+			}.eb-2 .eb-dialog{--eb-max-width:400px;--eb-height:150px;--eb-padding:30px;--eb-border-radius:18px;--eb-background-color:rgba(211, 241, 252, 0.9);--eb-text-color:rgba(39, 17, 130, 0.9);--eb-dialog-shadow:var(--eb-shadow-3);text-align:right;--eb-border-style:solid;--eb-border-color:rgba(0, 0, 0, 0.4);--eb-border-width:1px;--eb-overlay-enabled:0;--eb-bg-image-enabled:0;--eb-background-image:none;}.eb-2.eb-inst{--eb-margin:20px;justify-content:flex-end;align-items:flex-end;}.eb-2 .eb-close{--eb-close-button-inside:block;--eb-close-button-outside:none;--eb-close-button-icon:block;--eb-close-button-image:none;--eb-close-button-font-size:30px;--eb-close-button-visibility:hidden;--eb-close-button-animation:100ms ebFadeIn;--eb-close-button-animation-fill-mode:forwards;--eb-close-button-color:rgba(136, 136, 136, 1);--eb-close-button-hover-color:rgba(85, 85, 85, 1);}.eb-2 .eb-dialog .eb-container{justify-content:center;min-height:100%;display:flex;flex-direction:column;}.eb-2 {
+                --animation_duration: 400ms;
+
+            }
+        div.cc-window.cc-floating{max-width:24em}@media(max-width: 639px){div.cc-window.cc-floating:not(.cc-center){max-width: none}}div.cc-window, span.cc-cookie-settings-toggler{font-size:16px}div.cc-revoke{font-size:16px}div.cc-settings-label,span.cc-cookie-settings-toggle{font-size:14px}div.cc-window.cc-banner{padding:1em 1.8em}div.cc-window.cc-floating{padding:2em 1.8em}input.cc-cookie-checkbox+span:before, input.cc-cookie-checkbox+span:after{border-radius:1px}div.cc-center,div.cc-floating,div.cc-checkbox-container,div.gdpr-fancybox-container div.fancybox-content,ul.cc-cookie-category-list li,fieldset.cc-service-list-title legend{border-radius:0px}div.cc-window a.cc-btn,span.cc-cookie-settings-toggle{border-radius:0px}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac8c038f9910777cec6a72fa12cc9c58","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/components/com_seoglossary/assets/js/jqeasytooltip.v1.3.js"></script>
+	<script src="/media/system/js/caption.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/jui/js/bootstrap.min.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/system/js/core.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/com_rstbox/js/vendor/velocity.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/com_rstbox/js/vendor/velocity.ui.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/com_rstbox/js/animations.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/com_rstbox/js/engagebox.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/plg_system_jcemediabox/js/jcemediabox.min.js?7c18c737af0919db884d585b5f82e461"></script>
+	<script src="/media/system/js/mootools-core.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/media/system/js/mootools-more.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/plugins/system/rokbox/assets/js/rokbox.js"></script>
+	<script src="/components/com_roksprocket/assets/js/mootools-mobile.js"></script>
+	<script src="/components/com_roksprocket/assets/js/rokmediaqueries.js"></script>
+	<script src="/components/com_roksprocket/assets/js/roksprocket.js"></script>
+	<script src="/components/com_roksprocket/assets/js/roksprocket.request.js"></script>
+	<script src="/components/com_roksprocket/layouts/lists/assets/js/lists.js"></script>
+	<script src="/media/jui/js/jquery.ui.core.min.js?a654121220c05d23f1788af318690202"></script>
+	<script src="/plugins/system/gdpr/assets/js/jquery.noconflict.js"></script>
+	<script src="/plugins/system/gdpr/assets/js/cookieconsent.min.js" defer></script>
+	<script src="/plugins/system/gdpr/assets/js/init.js" defer></script>
+	<script>
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function(){WfMediabox.init({"base":"\/","theme":"standard","width":"","height":"","lightbox":0,"shadowbox":0,"icons":1,"overlay":1,"overlay_opacity":0.8,"overlay_color":"#000000","transition_speed":500,"close":2,"scrolling":"fixed","labels":{"close":"Close","next":"Next","previous":"Previous","cancel":"Cancel","numbers":"{{numbers}}","numbers_count":"{{current}} of {{total}}","download":"Download"},"swipe":true});});if (typeof RokBoxSettings == 'undefined') RokBoxSettings = {pc: '100'};if (typeof RokSprocket == 'undefined') RokSprocket = {};
+Object.merge(RokSprocket, {
+	SiteURL: 'https://ujconsortium.com/',
+	CurrentURL: 'https://ujconsortium.com/',
+	AjaxURL: 'https://ujconsortium.com/index.php?option=com_roksprocket&amp;task=ajax&amp;format=raw&amp;ItemId=101'
+});
+window.addEvent('domready', function(){
+		RokSprocket.instances.lists = new RokSprocket.Lists();
+});
+window.addEvent('domready', function(){
+	RokSprocket.instances.lists.attach(95, '{"accordion":"0","autoplay":"0","delay":"5"}');
+});
+window.addEvent('load', function(){
+   var overridden = false;
+   if (!overridden && window.G5 && window.G5.offcanvas){
+       var mod = document.getElement('[data-lists="95"]');
+       mod.addEvents({
+           touchstart: function(){ window.G5.offcanvas.detach(); },
+           touchend: function(){ window.G5.offcanvas.attach(); }
+       });
+       overridden = true;
+   };
+});
+var gdprConfigurationOptions = { complianceType: 'opt-in',
+																			  cookieConsentLifetime: 365,
+																			  cookieConsentSamesitePolicy: '',
+																			  cookieConsentSecure: 0,
+																			  disableFirstReload: 0,
+																	  		  blockJoomlaSessionCookie: 1,
+																			  blockExternalCookiesDomains: 0,
+																			  externalAdvancedBlockingModeCustomAttribute: '',
+																			  allowedCookies: '',
+																			  blockCookieDefine: 1,
+																			  autoAcceptOnNextPage: 0,
+																			  revokable: 1,
+																			  lawByCountry: 0,
+																			  checkboxLawByCountry: 0,
+																			  blockPrivacyPolicy: 1,
+																			  cacheGeolocationCountry: 1,
+																			  countryAcceptReloadTimeout: 1000,
+																			  usaCCPARegions: null,
+																			  dismissOnScroll: 0,
+																			  dismissOnTimeout: 0,
+																			  containerSelector: 'body',
+																			  hideOnMobileDevices: 0,
+																			  autoFloatingOnMobile: 0,
+																			  autoFloatingOnMobileThreshold: 1024,
+																			  autoRedirectOnDecline: 0,
+																			  autoRedirectOnDeclineLink: '',
+																			  showReloadMsg: 0,
+																			  showReloadMsgText: 'Applying preferences and reloading the page...',
+																			  defaultClosedToolbar: 0,
+																			  toolbarLayout: 'basic-header',
+																			  toolbarTheme: 'block',
+																			  toolbarButtonsTheme: 'decline_first',
+																			  revocableToolbarTheme: 'basic',
+																			  toolbarPosition: 'bottom-left',
+																			  toolbarCenterTheme: 'compact',
+																			  revokePosition: 'revoke-top',
+																			  toolbarPositionmentType: 1,
+																			  positionCenterSimpleBackdrop: 0,
+																			  positionCenterBlurEffect: 1,
+																			  preventPageScrolling: 0,
+																			  popupEffect: 'fade',
+																			  popupBackground: '#406ca9',
+																			  popupText: '#ffffff',
+																			  popupLink: '#ffffff',
+																			  buttonBackground: '#0b8f1f',
+																			  buttonBorder: '#ffffff',
+																			  buttonText: '#000000',
+																			  highlightOpacity: '90',
+																			  highlightBackground: '#cc1414',
+																			  highlightBorder: '#ffffff',
+																			  highlightText: '#ffffff',
+																			  highlightDismissBackground: '#333333',
+																		  	  highlightDismissBorder: '#ffffff',
+																		 	  highlightDismissText: '#ffffff',
+																			  hideRevokableButton: 0,
+																			  hideRevokableButtonOnscroll: 1,
+																			  customRevokableButton: 0,
+																			  customRevokableButtonAction: 0,
+																			  headerText: 'Cookies are used on this website!',
+																			  messageText: 'This website uses cookies to ensure you get the best experience.',
+																			  denyMessageEnabled: 1, 
+																			  denyMessage: 'You have declined cookies, to ensure the best experience on this website please consent the cookie usage.',
+																			  placeholderBlockedResources: 0, 
+																			  placeholderBlockedResourcesAction: '',
+																	  		  placeholderBlockedResourcesText: 'You must accept cookies and reload the page to view this content',
+																			  placeholderIndividualBlockedResourcesText: 'You must accept cookies from {domain} and reload the page to view this content',
+																			  placeholderIndividualBlockedResourcesAction: 0,
+																			  placeholderOnpageUnlock: 0,
+																			  scriptsOnpageUnlock: 0,
+																			  dismissText: 'Got it!',
+																			  allowText: 'Allow cookies',
+																			  denyText: 'Decline',
+																			  cookiePolicyLinkText: 'Privacy & Cookie Notice',
+																			  cookiePolicyLink: '/information/privacy-notice',
+																			  cookiePolicyRevocableTabText: 'Privacy & Cookie Notice',
+																			  privacyPolicyLinkText: '      ',
+																			  privacyPolicyLink: 'javascript:void(0)',
+																			  enableGdprBulkConsent: 0,
+																			  enableCustomScriptExecGeneric: 0,
+																			  customScriptExecGeneric: '',
+																			  categoriesCheckboxTemplate: 'cc-checkboxes-light',
+																			  toggleCookieSettings: 0,
+																			  toggleCookieSettingsLinkedView: 0,
+ 																			  toggleCookieSettingsLinkedViewSefLink: '/component/gdpr/',
+																	  		  toggleCookieSettingsText: '<span class="cc-cookie-settings-toggle">Settings <span class="cc-cookie-settings-toggler">&#x25EE;</span></span>',
+																			  toggleCookieSettingsButtonBackground: '#333333',
+																			  toggleCookieSettingsButtonBorder: '#ffffff',
+																			  toggleCookieSettingsButtonText: '#ffffff',
+																			  showLinks: 1,
+																			  blankLinks: '_self',
+																			  autoOpenPrivacyPolicy: 0,
+																			  openAlwaysDeclined: 1,
+																			  cookieSettingsLabel: 'Cookie settings:',
+															  				  cookieSettingsDesc: 'Choose which kind of cookies you want to disable by clicking on the checkboxes. Click on a category name for more informations about used cookies.',
+																			  cookieCategory1Enable: 0,
+																			  cookieCategory1Name: 'Necessary',
+																			  cookieCategory1Locked: 0,
+																			  cookieCategory2Enable: 0,
+																			  cookieCategory2Name: 'Preferences',
+																			  cookieCategory2Locked: 0,
+																			  cookieCategory3Enable: 0,
+																			  cookieCategory3Name: 'Statistics',
+																			  cookieCategory3Locked: 0,
+																			  cookieCategory4Enable: 0,
+																			  cookieCategory4Name: 'Marketing',
+																			  cookieCategory4Locked: 0,
+																			  cookieCategoriesDescriptions: {},
+																			  alwaysReloadAfterCategoriesChange: 0,
+																			  preserveLockedCategories: 0,
+																			  reloadOnfirstDeclineall: 0,
+																			  trackExistingCheckboxSelectors: '',
+															  		  		  trackExistingCheckboxConsentLogsFormfields: 'name,email,subject,message',
+																			  allowallShowbutton: 0,
+																			  allowallText: 'Allow all cookies',
+																			  allowallButtonBackground: '#ffffff',
+																			  allowallButtonBorder: '#ffffff',
+																			  allowallButtonText: '#000000',
+																			  allowallButtonTimingAjax: 'fast',
+																			  includeAcceptButton: 0,
+																			  trackConsentDate: 0,
+																			  optoutIndividualResources: 0,
+																			  blockIndividualResourcesServerside: 0,
+																			  disableSwitchersOptoutCategory: 0,
+																			  allowallIndividualResources: 1,
+																			  blockLocalStorage: 0,
+																			  blockSessionStorage: 0,
+																			  externalAdvancedBlockingModeTags: 'iframe,script,img,source,link',
+																			  enableCustomScriptExecCategory1: 0,
+																			  customScriptExecCategory1: '',
+																			  enableCustomScriptExecCategory2: 0,
+																			  customScriptExecCategory2: '',
+																			  enableCustomScriptExecCategory3: 0,
+																			  customScriptExecCategory3: '',
+																			  enableCustomScriptExecCategory4: 0,
+																			  customScriptExecCategory4: '',
+																			  debugMode: 0
+																		};var gdpr_ajax_livesite='https://ujconsortium.com/';var gdpr_enable_log_cookie_consent=1;
+	</script>
+	<script type='text/javascript'>function closeJQTip(id){ if(window.jQuery)
+{ jQuery('#jqeasytooltip'+id).jqeasytooltip(('close',{})); } }</script>
+
+    
+                
+</head>
+
+    <body class="gantry site com_content view-featured no-layout no-task dir-ltr itemid-101 outline-19 g-offcanvas-left g-home-particles g-style-">
+        
+                    
+
+        <div id="g-offcanvas"  data-g-offcanvas-swipe="0" data-g-offcanvas-css3="1">
+                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div id="mobile-menu-4855-particle" class="g-content g-particle">            <div id="g-mobilemenu-container" data-g-menu-breakpoint="51rem"></div>
+            </div>
+        </div>
+            </div>
+    </div>
+        <div id="g-page-surround">
+            <div class="g-offcanvas-hide g-offcanvas-toggle" role="navigation" data-offcanvas-toggle aria-controls="g-offcanvas" aria-expanded="false"><i class="fa fa-fw fa-bars"></i></div>                        
+
+                                            
+        <div class="g-container">        <section id="g-top" class="g-default-top section-horizontal-paddings">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div class="g-system-messages">
+                                            
+            
+    </div>
+        </div>
+            </div>
+            
+    </section></div>
+                                    
+                                
+    
+    
+            <div class="g-container">    <section id="g-container-top" class="g-wrapper">
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <section id="g-navigation" class="fp-navigation g-fluid-navigation">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 nopadddingtop nopaddingbottom nomargintop nomarginbottom">
+             <div class="g-content">
+                                    <div class="platform-content"><div class="moduletable nopaddingtop nopaddingbottom nomargintop head-title hidden-phone">
+						
+
+<div class="customnopaddingtop nopaddingbottom nomargintop head-title hidden-phone"  >
+	<p><a href="/"><img style="margin: 10px; float: left;" src="/images/headers/logo.png" alt="UJC logo" width="110" height="90" /></a></p>
+<p>&nbsp;</p>
+<h1 style="text-align: left; line-height: 100%;"><a href="/"><span style="color: #2a36b8;">Universal Jointing Consortium</span></a></h1></div>
+		</div></div><div class="platform-content"><div class="moduletable nopaddingtop nopaddingbottom nomargintop visible-phone head-title-mob">
+						
+
+<div class="customnopaddingtop nopaddingbottom nomargintop visible-phone head-title-mob"  >
+	<p><a href="/"><img style="margin: 10px auto; display: block;" src="/images/headers/logo.png" alt="UJC logo" width="98" height="80" /></a></p>
+<h1 style="line-height: 100%; text-align: center;"><span style="font-size: 24pt;"><a href="/"><span style="color: #2a36b8;">Universal<br />Jointing Consortium</span></a></span></h1></div>
+		</div></div>
+            
+        </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 align-left nopaddingtop nopaddingbottom">
+             <div id="menu-2709-particle" class="g-content g-particle">            <nav class="g-main-nav" data-g-hover-expand="true">
+        <ul class="g-toplevel">
+                                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-101 active g-standard  ">
+                            <a class="g-menu-item-container" href="/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Home</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-118 g-parent g-standard  " style="position: relative;">
+                            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">Information</span>
+            </span>
+                                        <span class="g-menu-parent-indicator"></span>                            </div>                                                                <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:300px;" data-g-item-width="300px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-119  ">
+                            <a class="g-menu-item-container" href="http://ujconsortium.com/information/about-uj-consortium">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">About UJ Consortium</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-130  ">
+                            <a class="g-menu-item-container" href="/information/what-is-universal-jointing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">What is Universal Jointing?</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-131  ">
+                            <a class="g-menu-item-container" href="/information/uj-key-technical-features">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJ Key Technical Features</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-132  ">
+                            <a class="g-menu-item-container" href="/information/universal-quick-joint-uqj">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Universal Quick Joint (UQJ)</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-673  ">
+                            <a class="g-menu-item-container" href="/information/fusion-splicer-ujs-s200">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Fusion Splicer UJS-S200</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-133  ">
+                            <a class="g-menu-item-container" href="/information/industry-links">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Industry Links</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-323  ">
+                            <a class="g-menu-item-container" href="/information/piece-part-quality">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Piece Part Quality</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-324  ">
+                            <a class="g-menu-item-container" href="/information/jointer-training">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Jointer Training</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-325  ">
+                            <a class="g-menu-item-container" href="/information/jointing-equipment">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Jointing Equipment</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-326  ">
+                            <a class="g-menu-item-container" href="/information/sponsored-training-schools">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Sponsored Training Schools</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-190  ">
+                            <a class="g-menu-item-container" href="/information/news">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">News</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-220  ">
+                            <a class="g-menu-item-container" href="/information/glossary">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Glossary</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-405  ">
+                            <a class="g-menu-item-container" href="/information/privacy-notice">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Privacy Notice</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-139 g-parent g-standard  " style="position: relative;">
+                            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">FAQ&#039;s</span>
+            </span>
+                                        <span class="g-menu-parent-indicator"></span>                            </div>                                                                <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:250px;" data-g-item-width="250px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-140  ">
+                            <a class="g-menu-item-container" href="/faq/faq-s-general">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">FAQ&#039;s - General</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-141  ">
+                            <a class="g-menu-item-container" href="/faq/faq-s-commercial">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">FAQ&#039;s - Commercial</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-142  ">
+                            <a class="g-menu-item-container" href="/faq/faq-s-technical">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">FAQ&#039;s - Technical</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-143  ">
+                            <a class="g-menu-item-container" href="/faq/faq-s-training">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">FAQ&#039;s - Training</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-144 g-parent g-standard  " style="position: relative;">
+                            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">Contact Us</span>
+            </span>
+                                        <span class="g-menu-parent-indicator"></span>                            </div>                                                                <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:300px;" data-g-item-width="300px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-260  ">
+                            <a class="g-menu-item-container" href="/contact-us/enquiry-form">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Enquiry Form</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-178  ">
+                            <a class="g-menu-item-container" href="/contact-us/uj-consortium-contacts-details">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJ Consortium Contacts Details</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-179  ">
+                            <a class="g-menu-item-container" href="/contact-us/ujc-training-schools-contacts">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJC Training Schools Contacts</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-698  ">
+                            <a class="g-menu-item-container" href="/contact-us/newsletter-subscription">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Join mailing list</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-146 g-parent g-standard  " style="position: relative;">
+                            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">Technical Information</span>
+            </span>
+                                        <span class="g-menu-parent-indicator"></span>                            </div>                                                                <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:300px;" data-g-item-width="300px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-145  ">
+                            <a class="g-menu-item-container" href="http://ujconsortium.com/technical-information/uj-uqj-qualified-combinations">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJ &amp; UQJ Qualified Combinations</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-147 g-parent g-menu-item-link-parent " style="position: relative;">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UC Qualified Combinations</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:300px;" data-g-item-width="300px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-148  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/asn-repeater-common-housing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">ASN Repeater Common Housing</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-149  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/asn-r3-repeater">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">ASN R3 Repeater</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-150  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/asn-fibreglass-housing-repeater">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">ASN Fibreglass Housing Repeater</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-151  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/nec-os-repeater-housing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">NEC OS* Repeater Housing</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-152  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/os-fujitsu-repeater-housing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">OS Fujitsu Repeater Housing</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-153  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/os-mitsubishi-ra-7-ra-8-housing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">OS Mitsubishi (RA-7/RA-8) Housing</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-154  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/stc-tat-12-repeater-housing-tat12">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">STC (TAT 12) Repeater Housing (TAT12)</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-155  ">
+                            <a class="g-menu-item-container" href="/technical-information/uc-qualified-combinations/subcom-sl-housings">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">SubCom SL Housings</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-159 g-parent  " style="position: relative;">
+                            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">UJ/UC Piece Part Kits</span>
+            </span>
+                                        <span class="g-menu-parent-indicator"></span>                            </div>                                                                <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:300px;" data-g-item-width="300px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-160  ">
+                            <a class="g-menu-item-container" href="/technical-information/2015-01-14-16-50-47/common-protection-kits">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Common &amp; Protection Kits</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-161  ">
+                            <a class="g-menu-item-container" href="/technical-information/2015-01-14-16-50-47/universal-couplings">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Universal Couplings</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-162  ">
+                            <a class="g-menu-item-container" href="/technical-information/adhesive-kits-and-shelf-lives">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Adhesive Kits and Shelf Lives</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-819  ">
+                            <a class="g-menu-item-container" href="/technical-information/piece-part-disposal">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Piece Part Disposal</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-163  ">
+                            <a class="g-menu-item-container" href="/technical-information/uj-construction-manuals">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJ Construction Manuals</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-164  ">
+                            <a class="g-menu-item-container" href="/technical-information/ujc-bulletins">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJC Bulletins</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-327  ">
+                            <a class="g-menu-item-container" href="/technical-information/technical-information-articles">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Technical Information Articles</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-223 g-standard  ">
+                            <a class="g-menu-item-container" href="/bulletins">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Bulletins</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-224 g-standard  ">
+                            <a class="g-menu-item-container" href="/uj-uqj-qualified-combinations">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">UJ &amp; UQJ Combinations</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-419 g-standard  ">
+                            <a class="g-menu-item-container" href="/search" title="Search" aria-label="Search">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <span class="g-menu-item-content">
+                            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-component g-menu-item-421 g-standard  ">
+                            <a class="g-menu-item-container" href="/login">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Login</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+        </ul>
+    </nav>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+                                                        
+                <section id="g-slideshow" class="fp-slideshow blurred">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 nomarginall nopaddingall visible-desktop">
+             <div id="newsslider-6687-particle" class="g-content g-particle">            <div id="newsslider-6687" class="g-newsslider " data-newsslider-autoplay="false"  data-newsslider-loop="false" data-newsslider-id="newsslider-6687" data-newsslider-rtl="false"  >
+        <div class="g-newsslider-slides g-owlcarousel owl-carousel" data-newsslider-slides-id="newsslider-6687">
+
+            
+                                                            <div class="g-newsslider-slides-item-image" style="background-image: url(/templates/rt_fluent/custom/images/home/slide-04.jpg)">
+                    
+                    
+                    
+                    <div class="g-newsslider-slides-item-content">
+                        
+                                                    <div class="g-newsslider-slides-item-title">
+                                <a href="/information/what-is-universal-jointing">
+                                    What is Universal Jointing?<br /><span class="button button-small button-grey">Read More</span>
+                                </a>
+                            </div>
+                        
+                                            </div>
+                </div>
+                                                            <div class="g-newsslider-slides-item-image" style="background-image: url(/templates/rt_fluent/custom/images/home/slide-02.jpg)">
+                    
+                    
+                    
+                    <div class="g-newsslider-slides-item-content">
+                        
+                                                    <div class="g-newsslider-slides-item-title">
+                                <a href="/information/about-uj-consortium">
+                                    Who are the UJ Consortium? <br /><span class="button button-small button-grey">Read More</span>
+                                </a>
+                            </div>
+                        
+                                            </div>
+                </div>
+                                                            <div class="g-newsslider-slides-item-image" style="background-image: url(/templates/rt_fluent/custom/images/home/slide-03.jpg)">
+                    
+                    
+                    
+                    <div class="g-newsslider-slides-item-content">
+                        
+                                                    <div class="g-newsslider-slides-item-title">
+                                <a href="/information/what-is-universal-jointing#benefits">
+                                    What are the benefits? <br /><span class="button button-small button-grey">Read More</span>
+                                </a>
+                            </div>
+                        
+                                            </div>
+                </div>
+                                                            <div class="g-newsslider-slides-item-image" style="background-image: url(/templates/rt_fluent/custom/images/home/slide-01.jpg)">
+                    
+                    
+                    
+                    <div class="g-newsslider-slides-item-content">
+                        
+                                                    <div class="g-newsslider-slides-item-title">
+                                <a href="/information/uj-key-technical-features">
+                                    Key technical features? <br /><span class="button button-small button-grey">Read More</span>
+                                </a>
+                            </div>
+                        
+                                            </div>
+                </div>
+                
+            
+        </div>
+        <div class="g-newsslider-carousel" data-newsslider-carousel-id="newsslider-6687" style="height: 500px;">
+
+            
+                                    <div class="g-newsslider-carousel-item-container">
+                        <div class="g-newsslider-carousel-item-content">
+                                                                             <div class="g-newsslider-carousel-item-title">
+                                What is Universal Jointing?<br /><span class="button button-small button-grey">Read More</span>
+                            </div>
+                                                </div>
+                    </div>
+                                    <div class="g-newsslider-carousel-item-container">
+                        <div class="g-newsslider-carousel-item-content">
+                                                                             <div class="g-newsslider-carousel-item-title">
+                                Who are the UJ Consortium? <br /><span class="button button-small button-grey">Read More</span>
+                            </div>
+                                                </div>
+                    </div>
+                                    <div class="g-newsslider-carousel-item-container">
+                        <div class="g-newsslider-carousel-item-content">
+                                                                             <div class="g-newsslider-carousel-item-title">
+                                What are the benefits? <br /><span class="button button-small button-grey">Read More</span>
+                            </div>
+                                                </div>
+                    </div>
+                                    <div class="g-newsslider-carousel-item-container">
+                        <div class="g-newsslider-carousel-item-content">
+                                                                             <div class="g-newsslider-carousel-item-title">
+                                Key technical features? <br /><span class="button button-small button-grey">Read More</span>
+                            </div>
+                                                </div>
+                    </div>
+                
+            
+        </div>
+    </div>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+        </div>
+            </div>
+    
+    </section>
+    </div>
+                                        
+        <div class="g-container">        <section id="g-expanded" class="fp-expanded">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-50">
+             <div class="g-content">
+                                    <div class="platform-content"><div class="moduletable ">
+							<h3 class="g-title">Latest News</h3>
+						 <div class="sprocket-lists-modern" data-lists="95">
+	<ul class="sprocket-lists-modern-container" data-lists-items=""><li class="active" data-lists-item="">
+		<h4 class="sprocket-lists-modern-title" data-lists-toggler="">
+		<a href="/information/news/100-uj-consortium-guidance-on-responsible-disposal-of-piece-parts">			UJ Consortium Guidance on Responsible Disposal of Piece Parts		</a>			</h4>
+		<div class="sprocket-lists-modern-item" data-lists-content="">
+		<div class="sprocket-padding">
+						The <span ><a href="/information/glossary/1-uj" data-tipcontent="&lt;p&gt;Universal Joint&lt;/p&gt;" data-tiptheme="tipthemeflatdarklight"data-tipdelayclose="500"data-tipeventout="mouseout"data-tipmouseleave="false"data-tipcontent="html"  class="jqeasytooltip" id="jqeasytooltip0">UJ</a></span> Consortium is now providing guidance on the safe and responsible disposal of UJ and <span ><a href="/information/glossary/3-uqj" data-tipcontent="&lt;p&gt;Universal Quick Joint&lt;/p&gt;" data-tiptheme="tipthemeflatdarklight"data-tipdelayclose="500"data-tipeventout="mouseout"data-tipmouseleave="false"data-tipcontent="html"  class="jqeasytooltip" id="jqeasytooltip1">UQJ</a></span> piece parts and<span class="roksprocket-ellipsis">…</span>						<a href="/information/news/100-uj-consortium-guidance-on-responsible-disposal-of-piece-parts" class="readon"><span>Read More</span></a>
+					</div>
+	</div>
+</li>
+<li class="active" data-lists-item="">
+		<h4 class="sprocket-lists-modern-title" data-lists-toggler="">
+		<a href="/information/news/85-want-to-receive-uj-consortium-information">			Want to receive UJ Consortium information?		</a>			</h4>
+		<div class="sprocket-lists-modern-item" data-lists-content="">
+		<div class="sprocket-padding">
+						If you would like to be added to the UJ Consortium's mailing list for newsletters, bulletins and other product information,<span class="roksprocket-ellipsis">…</span>						<a href="/information/news/85-want-to-receive-uj-consortium-information" class="readon"><span>Read More</span></a>
+					</div>
+	</div>
+</li>
+<li class="active" data-lists-item="">
+		<h4 class="sprocket-lists-modern-title" data-lists-toggler="">
+		<a href="/information/news/84-extension-of-shelf-life-for-kit261aa">			Extension of Shelf Life for KIT261AA		</a>			</h4>
+		<div class="sprocket-lists-modern-item" data-lists-content="">
+		<div class="sprocket-padding">
+						The shelf life of Fiber Restraint Kit (KIT261AA), used for OCC-SC520, OCC-SC530 and OCC-SC370 cables, has been extended to&nbsp;33 months<span class="roksprocket-ellipsis">…</span>						<a href="/information/news/84-extension-of-shelf-life-for-kit261aa" class="readon"><span>Read More</span></a>
+					</div>
+	</div>
+</li>
+	</ul><div class="sprocket-lists-modern-nav">
+		<div class="sprocket-lists-modern-pagination">
+			<ul><li class="active" data-lists-page="1"><span>1</span></li>
+									    	<li data-lists-page="2"><span>2</span></li>
+									    	<li data-lists-page="3"><span>3</span></li>
+						</ul></div>
+		<div class="spinner"></div>
+				<div class="sprocket-lists-modern-arrows">
+			<span class="arrow next" data-lists-next=""></span>
+			<span class="arrow prev" data-lists-previous=""></span>
+		</div>
+			</div>
+</div>
+		</div></div>
+            
+        </div>
+        </div>
+                    
+
+        <div class="g-block size-50 latest-changes">
+             <div class="g-content">
+                                    <div class="platform-content"><div class="moduletable latest-changes">
+							<h3 class="g-title">Latest Changes</h3>
+						<ul class="latestnewslatest-changes mod-list">
+	<li itemscope itemtype="https://schema.org/Article">
+		<a href="/14-faq/technical/102-3-20-is-ribbon-splicing-used-with-universal-jointing" itemprop="url">
+			<span itemprop="name">
+				3.20 - Is ribbon splicing used with Universal Jointing?			</span>
+		</a>
+	</li>
+	<li itemscope itemtype="https://schema.org/Article">
+		<a href="/information/industry-links" itemprop="url">
+			<span itemprop="name">
+				Industry Web Links			</span>
+		</a>
+	</li>
+	<li itemscope itemtype="https://schema.org/Article">
+		<a href="/contact-us/uj-consortium-contacts-details/11-global-marine-systems-limited" itemprop="url">
+			<span itemprop="name">
+				Global Marine			</span>
+		</a>
+	</li>
+	<li itemscope itemtype="https://schema.org/Article">
+		<a href="/12-faq/general/41-1-2-what-is-the-ujc-and-who-are-the-ujc" itemprop="url">
+			<span itemprop="name">
+				1.02 -  What is the UJC and who are the UJC?			</span>
+		</a>
+	</li>
+	<li itemscope itemtype="https://schema.org/Article">
+		<a href="/14-faq/technical/92-faq-3-16-for-what-voltage-limit-is-the-uj-qualified" itemprop="url">
+			<span itemprop="name">
+				3.16 - For what voltage limit is the UJ qualified?			</span>
+		</a>
+	</li>
+</ul>
+		</div></div>
+            
+        </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 visible-desktop">
+             <div id="casestudies-5768-particle" class="g-content g-particle">            <div class=" g-casestudies" data-casestudies-id="casestudies-5768">
+
+    <div class="g-casestudies-pattern">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2342 747">
+            <path class="g-casestudies-pattern-1"
+        d="M2340.958,746.540 C1857.879,551.886 1202.654,19.186 582.000,174.000 C292.145,246.300 112.194,287.488 1.367,310.951 C1.020,262.721 1.000,184.000 1.000,184.000 L1.000,147.000 C1.000,147.000 1.298,142.792 1.370,129.039 C357.239,43.910 886.935,-63.401 1819.000,168.000 C2048.362,224.943 2216.933,243.942 2340.642,239.771 "/>
+            <path class="g-casestudies-pattern-2"
+        d="M2341.350,540.886 C2078.714,411.412 1055.330,-44.714 1.215,136.052 C0.431,64.942 -0.000,72.000 -0.000,72.000 L1.000,58.000 C1.000,58.000 1.206,70.193 1.000,16.000 C1144.992,-102.939 1911.000,496.936 2319.000,202.000 C2326.255,196.756 2333.279,191.815 2340.079,187.170 "/>
+        </svg>
+    </div>
+
+    <div class="g-casestudies-header">
+                    <div class="g-casestudies-title">
+                Quick Links
+            </div>
+                <div class="g-casestudies-nav">
+            <div class="g-casestudies-nav-container">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="g-casestudies-nav-item selected" data-group="all">
+                    All
+                </div>
+                                    <div class="g-casestudies-nav-item" data-group="1">
+                        Information
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+    <div class="g-casestudies-grid cols-4">
+        <div class="g-casestudies-grid-sizer"></div>
+                                                        <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-top">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    About the UJ Consortium
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-01.png" alt="About the UJ Consortium" />
+                            <a href="/information/about-uj-consortium" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-bottom">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    What is Universal Jointing?
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-04.jpg" alt="What is Universal Jointing?" />
+                            <a href="/information/what-is-universal-jointing" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-top">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    UJ Key Technical Features
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-02.jpg" alt="UJ Key Technical Features" />
+                            <a href="/information/uj-key-technical-features" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-bottom">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    Industry Web Links
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-08.png" alt="Industry Web Links" />
+                            <a href="/information/industry-links" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-bottom">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    Jointer Training
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-06.jpg" alt="Jointer Training" />
+                            <a href="/information/jointer-training" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-top">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    Frequently Asked Questions
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/ujc-faq2.png" alt="Frequently Asked Questions" />
+                            <a href="/faq/faq-s-general" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-top">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    Jointing Equipment
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-05.jpg" alt="Jointing Equipment" />
+                            <a href="/information/jointing-equipment" target="_self"></a>
+                        </div>
+                    </div>
+                                    <div class="g-casestudies-grid-item" data-groups='["1"]'>
+                        <div class="g-casestudies-grid-item-wrapper g-casestudies-variation-light g-casestudies-layout-default-bottom">
+                            <div class="g-casestudies-grid-item-content">
+                                <div class="g-casestudies-grid-item-subtitle">
+                                    
+                                </div>
+                                <div class="g-casestudies-grid-item-title">
+                                    Piece Part Quality
+                                </div>
+                            </div>
+                            <img src="/templates/rt_fluent/custom/images/home/info-07.jpg" alt="Piece Part Quality" />
+                            <a href="/information/piece-part-quality" target="_self"></a>
+                        </div>
+                    </div>
+                                    </div>
+</div>
+            </div>
+        </div>
+            </div>
+            
+    </section></div>
+                                        
+        <div class="g-container">        <section id="g-bottom" class="fp-bottom section-horizontal-paddings section-vertical-paddings-small">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 hidden-phone nomargintop">
+             <div id="carousel-6381-particle" class="g-content g-particle">            <div class=" g-owlcarousel-carousel">
+
+        
+        <div id="g-carousel-carousel-6381" class="g-carousel owl-carousel">
+
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/20-Ton%20Press%20Internal.jpg" data-rel="lightcase" title="20 tonne press">
+                                <img src="/images/slideshow/20-Ton%20Press%20Internal.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">20 tonne press</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/20-Ton%20Press.JPG" data-rel="lightcase" title="20 tonne press">
+                                <img src="/images/slideshow/20-Ton%20Press.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">20 tonne press</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Armour%20Press-2.JPG" data-rel="lightcase" title="Armor press">
+                                <img src="/images/slideshow/Armour%20Press-2.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Armor press</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/C-SAMS_Moulding_System_1.JPG" data-rel="lightcase" title="C-SAMS molding system">
+                                <img src="/images/slideshow/C-SAMS_Moulding_System_1.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">C-SAMS molding system</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/C-SAMS_Moulding_System_2.JPG" data-rel="lightcase" title="C-SAMS molding system">
+                                <img src="/images/slideshow/C-SAMS_Moulding_System_2.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">C-SAMS molding system</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Dscf3373.jpg" data-rel="lightcase" title="Inner fiber assembly">
+                                <img src="/images/slideshow/Dscf3373.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Inner fiber assembly</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Dscf6183.jpg" data-rel="lightcase" title="Fusion splicer">
+                                <img src="/images/slideshow/Dscf6183.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Fusion splicer</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Ferrule%20Flange.JPG" data-rel="lightcase" title="Ferrule flange">
+                                <img src="/images/slideshow/Ferrule%20Flange.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Ferrule flange</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Dscf6185.jpg" data-rel="lightcase" title="Inner assembly">
+                                <img src="/images/slideshow/Dscf6185.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Inner assembly</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Dscf6189.jpg" data-rel="lightcase" title="Fiber cleaver">
+                                <img src="/images/slideshow/Dscf6189.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Fiber cleaver</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Ferrule_Press_Jaws.JPG" data-rel="lightcase" title="Ferrule press jaws">
+                                <img src="/images/slideshow/Ferrule_Press_Jaws.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Ferrule press jaws</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Kit%20Packing%201.jpg" data-rel="lightcase" title="Kit packaging">
+                                <img src="/images/slideshow/Kit%20Packing%201.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Kit packaging</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Outer%20Sleeves.jpg" data-rel="lightcase" title="Outer sleeves">
+                                <img src="/images/slideshow/Outer%20Sleeves.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Outer sleeves</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Tool_Kit_1.JPG" data-rel="lightcase" title="Tool kit">
+                                <img src="/images/slideshow/Tool_Kit_1.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Tool kit</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/UJ%20Socket.JPG" data-rel="lightcase" title="UJ Socket">
+                                <img src="/images/slideshow/UJ%20Socket.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">UJ Socket</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/UJ%20extruder%20manifold.jpg" data-rel="lightcase" title="UJ extruder manifold">
+                                <img src="/images/slideshow/UJ%20extruder%20manifold.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">UJ extruder manifold</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/UJ%20manifold%201.jpg" data-rel="lightcase" title="UJ Manifold">
+                                <img src="/images/slideshow/UJ%20manifold%201.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">UJ Manifold</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/UQJ%20scheme.jpg" data-rel="lightcase" title="UQJ Scheme">
+                                <img src="/images/slideshow/UQJ%20scheme.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">UQJ Scheme</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Unarmoured_UJ_1.JPG" data-rel="lightcase" title="Unarmored UJ">
+                                <img src="/images/slideshow/Unarmoured_UJ_1.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Unarmored UJ</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/X-Ray%20Camera%20Open.JPG" data-rel="lightcase" title="X-Ray camera open">
+                                <img src="/images/slideshow/X-Ray%20Camera%20Open.JPG" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">X-Ray camera open</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/images/slideshow/Wrapped%20fiber.jpg" data-rel="lightcase" title="Wrapped fiber">
+                                <img src="/images/slideshow/Wrapped%20fiber.jpg" alt="" />
+                            </a>
+
+                                                    </div>
+                    
+                                            <div class="g-carousel-caption">Wrapped fiber</div>
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/DSC_0257.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/DSC_0257.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/DSC_0257.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/DSC_0253.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/DSC_0253.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/DSC_0253.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/DSC_0292.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/DSC_0292.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/DSC_0292.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/DSC_0369.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/DSC_0369.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/DSC_0369.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/DSC_0376.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/DSC_0376.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/DSC_0376.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/IMG_0237.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/IMG_0237.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/IMG_0237.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/IMG_1274.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/IMG_1274.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/IMG_1274.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+                            <div class="g-carousel-item">
+                                            <div class="g-carousel-image-wrapper">
+
+                            <a href="/templates/rt_fluent/custom/images/slideshow/JTS-2.jpg" data-rel="lightcase" title="">
+                                <img src="/templates/rt_fluent/custom/images/slideshow/JTS-2.jpg" alt="" />
+                            </a>
+
+                                                            <a class="g-carousel-link" href="/templates/rt_fluent/custom/images/slideshow/JTS-2.jpg" data-rel="lightcase" title="">
+                                    <span class="g-carousel-image-icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                                                    </div>
+                    
+                                    </div>
+            
+        </div>
+    </div>
+            </div>
+        </div>
+            </div>
+            
+    </section></div>
+                                        
+        <div class="g-container">        <footer id="g-footer" class="section-horizontal-paddings section-vertical-paddings">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div class="g-content">
+                                    <div class="platform-content"><div class="moduletable ">
+						
+
+<div class="custom"  >
+	<div align="center"><a href="http://www.asn.com/"><img src="https://ujconsortium.com/images/logos/ASNsm.jpg" alt="ASNsm" width="159" height="53" style="margin: 10px;" /></a><a href="https://globalmarine.co.uk/"><img src="https://ujconsortium.com/images/logos/GMSsm.png" alt="GMSL logo" width="162" height="53" style="margin: 10px;" /></a><a href="http://www.k-kcs.co.jp/english/"><img src="https://ujconsortium.com/images/logos/KCSsm.png" alt="KCS logo" width="79" height="53" style="margin: 10px;" /></a><a href="http://www.subcom.com"><img src="https://ujconsortium.com/images/logos/subcom_h_sm.png" alt="subcom h sm" width="200" height="47" style="margin: 10px;" /></a></div></div>
+		</div></div>
+            
+        </div>
+        </div>
+            </div>
+            
+    </footer></div>
+                                        
+        <div class="g-container">        <section id="g-copyright" class="section-horizontal-paddings">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-90">
+             <div id="copyright-2919-particle" class="g-content g-particle">            &copy;
+        2024
+    UJ Consortium
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-10 align-right">
+             <div id="totop-5628-particle" class="g-content g-particle">            <div class="g-totop g-particle">
+    <div class="g-totop">
+        <a href="#" id="g-totop" rel="nofollow">
+            <i class="fa fa-angle-double-up fa-2x"></i>            Top                    </a>
+    </div>
+</div>
+            </div>
+        </div>
+            </div>
+            
+    </section></div>
+                                
+                        
+
+        </div>
+                    
+
+                        <script type="text/javascript" src="/media/gantry5/assets/js/main.js"></script>
+    <script type="text/javascript" src="/media/gantry5/assets/js/lightcase.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/jquery.mThumbnailScroller.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/owlcarousel.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/newsslider.init.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function($) { jQuery('[data-rel^=lightcase]').lightcase({maxWidth: '100%', maxHeight: '100%', video: {width: '1280', height: '720'}}); });</script>
+    <script type="text/javascript" src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Array.prototype.includes"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/shuffle.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/templates/rt_fluent/js/casestudies.init.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function() {
+            var owlcarousel_6381 = jQuery('#g-carousel-carousel-6381');
+            owlcarousel_6381.owlCarousel({
+                items: 3,
+                center: true,
+                rtl: false,
+                                animateOut: 'fadeOut',
+                                                animateIn: 'fadeIn',
+                                                nav: true,
+                navText: ['\u003Ci\u0020class\u003D\u0022fa\u0020fa\u002Dchevron\u002Dcircle\u002Dleft\u0022\u003E\u003C\/i\u003E', '\u003Ci\u0020class\u003D\u0022fa\u0020fa\u002Dchevron\u002Dcircle\u002Dright\u0022\u003E\u003C\/i\u003E'],
+                                dots: false,
+                loop: true,
+                                autoplay: true,
+                autoplayTimeout: 8000,
+                                autoplayHoverPause: true,
+                                                responsive:{
+                    0: {
+                        items: 1,
+                    },
+                    650: {
+                        items: 2,
+                    },
+                    800: {
+                        items: 3,
+                    },
+                    1200: {
+                        items: 3
+                    }
+                },
+            })
+        });
+    </script>
+    
+
+    
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157462900-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157462900-1');
+</script>
+
+    <script type="text/javascript">/*docman job scheduler*/
+!function(){function e(e,t,n,o){try{o=new(this.XMLHttpRequest||ActiveXObject)("MSXML2.XMLHTTP.3.0"),o.open("POST",e,1),o.setRequestHeader("X-Requested-With","XMLHttpRequest"),o.setRequestHeader("Content-type","application/x-www-form-urlencoded"),o.onreadystatechange=function(){o.readyState>3&&t&&t(o.responseText,o)},o.send(n)}catch(c){}}function t(n){e(n,function(e,o){try{if(200==o.status){var c=JSON.parse(e)
+"object"==typeof c&&c["continue"]&&setTimeout(function(){t(n)},1e3)}}catch(u){}})}t("https://ujconsortium.com/index.php?option=com_docman&controller=scheduler")}()</script><div data-id="2" class="eb-inst eb-hide eb-custom eb-2 " data-options="{&quot;trigger&quot;:&quot;onPageLoad&quot;,&quot;trigger_selector&quot;:&quot;&quot;,&quot;delay&quot;:400,&quot;scroll_depth&quot;:&quot;percentage&quot;,&quot;scroll_depth_value&quot;:80,&quot;firing_frequency&quot;:1,&quot;reverse_scroll_close&quot;:false,&quot;threshold&quot;:0,&quot;close_out_viewport&quot;:false,&quot;exit_timer&quot;:1000,&quot;idle_time&quot;:10000,&quot;prevent_default&quot;:true,&quot;animation_open&quot;:&quot;rstbox.slideRightIn&quot;,&quot;animation_close&quot;:&quot;transition.fadeOut&quot;,&quot;animation_duration&quot;:400,&quot;disable_page_scroll&quot;:false,&quot;test_mode&quot;:false,&quot;debug&quot;:false,&quot;ga_tracking&quot;:false,&quot;ga_tracking_id&quot;:0,&quot;ga_tracking_event_category&quot;:&quot;EngageBox&quot;,&quot;ga_tracking_event_label&quot;:&quot;Box #2 - Newsletter slide-in&quot;,&quot;auto_focus&quot;:false}" data-type="popup">
+
+	<button type="button" data-ebox-cmd="close" class="eb-close placement-outside" aria-label="Close">
+	<img alt="close popup button" /><span aria-hidden="true">×</span>
+</button>
+	<div class="eb-dialog " role="dialog" id="dialog2" aria-label="dialog2" tabindex="-1">
+		
+		<button type="button" data-ebox-cmd="close" class="eb-close placement-inside" aria-label="Close">
+	<img alt="close popup button" /><span aria-hidden="true">×</span>
+</button>	
+		<div class="eb-container">
+						<div class="eb-content">
+				<p style="text-align: center;">Want to receive <span ><a href="/information/glossary/1-uj" data-tipcontent="&lt;p&gt;Universal Joint&lt;/p&gt;" data-tiptheme="tipthemeflatdarklight"data-tipdelayclose="500"data-tipeventout="mouseout"data-tipmouseleave="false"data-tipcontent="html"  class="jqeasytooltip" id="jqeasytooltip0">UJ</a></span> Consortium information?<br /><a href="/contact-us/newsletter-subscription" class="btn btn-warning">Join our mailing list.</a></p>			</div>
+		</div>
+			</div>	
+</div>
+</body>
+</html>

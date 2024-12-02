@@ -1,0 +1,928 @@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Sat, 28 Sep 2024 05:10:50 GMT
+Content-Type: text/html
+Last-Modified: Fri, 07 Jun 2024 13:50:06 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"6663100e-1217c"
+Strict-Transport-Security: max-age=63072000
+
+<!DOCTYPE html>
+<html lang='en'><head><meta charset='utf-8' /><meta name='pinterest' content='nopin' /><link href='/static/css/style.css' rel='stylesheet' type='text/css' /><link href='/static/css/print.css' rel='stylesheet' type='text/css' media='print' /><title>Writing Small CLI Programs in Common Lisp / Steve Losh</title></head><body><header><a id='logo' href='/'>Steve Losh</a><nav><a href='/blog/'>Blog</a> - <a href='/projects/'>Projects</a> - <a href='/photography/'>Photography</a> - <a href='/links/'>Links</a> - <a href='/rss.xml'>Feed</a></nav></header><hr class='main-separator' /><main id='page-blog-entry'><article><h1><a href='/blog/2021/03/small-common-lisp-cli-programs/'>Writing Small CLI Programs in Common Lisp</a></h1><p class='date'>Posted on March 17th, 2021.</p><p>I write a lot of command-line programs.  For tiny programs I usually go with the
+typical UNIX approach: throw together a half-assed shell script and move on.
+For large programs I make a full Common Lisp project, with an ASDF system
+definition and such.  But there's a middle ground of small<em>ish</em> programs that
+don't warrant a full repository on their own, but for which I still want a real
+interface with proper <code>--help</code> and error handling.</p>
+
+<p>I've found Common Lisp to be a good language for writing these small command
+line programs.  But it can be a little intimidating to get started (especially
+for beginners) because Common Lisp is a very flexible language and doesn't lock
+you into one way of working.</p>
+
+<p>In this post I'll describe how I write small, stand-alone command line programs
+in Common Lisp.  It might work for you, or you might want to modify things to
+fit your own needs.</p>
+
+<ol class="table-of-contents"><li><a href="#s1-requirements">Requirements</a></li><li><a href="#s2-solution-skeleton">Solution Skeleton</a><ol><li><a href="#s3-directory-structure">Directory Structure</a></li><li><a href="#s4-lisp-files">Lisp Files</a></li><li><a href="#s5-building-binaries">Building Binaries</a></li><li><a href="#s6-building-man-pages">Building Man Pages</a></li><li><a href="#s7-makefile">Makefile</a></li></ol></li><li><a href="#s8-case-study-a-batch-coloring-utility">Case Study: A Batch Coloring Utility</a><ol><li><a href="#s9-libraries">Libraries</a></li><li><a href="#s10-package">Package</a></li><li><a href="#s11-configuration">Configuration</a></li><li><a href="#s12-errors">Errors</a></li><li><a href="#s13-colorization">Colorization</a></li><li><a href="#s14-not-quite-top-level-interface">Not-Quite-Top-Level Interface</a></li><li><a href="#s15-user-interface">User Interface</a></li><li><a href="#s16-top-level-interface">Top-Level Interface</a></li></ol></li><li><a href="#s17-more-information">More Information</a></li></ol>
+
+<h2 id="s1-requirements"><a href="#s1-requirements">Requirements</a></h2>
+
+<p>When you're writing programs in Common Lisp, you've got a lot of options.
+Laying out the requirements I have helped me decide on an approach.</p>
+
+<p>First: each new program should be one single file.  A few other files for the
+collection as a whole (e.g. a <code>Makefile</code>) are okay, but once everything is set
+up creating a new program should mean adding one single file.  For larger
+programs a full project directory and ASDF system are great, but for small
+programs having one file per program reduces the mental overhead quite a bit.</p>
+
+<p>The programs need to be able to be developed in the typical Common Lisp
+interactive style (in my case: with Swank and VLIME).  Interactive development
+is one of the best parts of working in Common Lisp, and I'm not willing to give
+it up.  In particular this means that a shell-script style approach, with
+<code>#!/path/to/sbcl --script</code> and the top and directly running code at the top
+level in the file, doesn't work for two main reasons:</p>
+
+<ul>
+<li><code>load</code>ing that file will fail due to the shebang unless you have some ugly
+  reader macros in your startup file.</li>
+<li>The program will need to do things like parsing command-line arguments and
+  exiting with an error code, and calling <code>exit</code> would kill the Swank process.</li>
+</ul>
+
+<p>The programs need to be able to use libraries, so Quicklisp will need to be
+involved.  Common Lisp has a lot of nice things built-in, but there are some
+libraries that are just too useful to pass up.</p>
+
+<p>The programs will need to have proper user interfaces.  Command line arguments
+must be robustly parsed (e.g. collapsing <code>-a -b -c foo -d</code> into <code>-abcfoo -d</code>
+should work as expected), malformed or unknown options must be caught instead of
+dropping them on the floor, error messages should be meaningful, and the
+<code>--help</code> should be thoroughly and thoughtfully written so I can remember how to
+use the program months later.  A <code>man</code> page is a nice bonus, but not required.</p>
+
+<p>Relying on some basic conventions (e.g. a command <code>foo</code> is always in <code>foo.lisp</code>
+and defines a package <code>foo</code> with a function called <code>toplevel</code>) is okay if it
+makes my life easier.  These programs are just for me, so I don't have to worry
+about people wanting to create executables with spaces in the name or something.</p>
+
+<p>Portability between Common Lisp implementations is nice to have, but not
+required.  If using a bit of SBCL-specific grease will let me avoid a bunch of
+extra dependencies, that's fine for these small personal programs.</p>
+
+<h2 id="s2-solution-skeleton"><a href="#s2-solution-skeleton">Solution Skeleton</a></h2>
+
+<p>After trying a number of different approaches I've settled on a solution that
+I'm pretty happy with.  First I'll describe the general approach, then we'll
+look at one actual example program in its entirety.</p>
+
+<h3 id="s3-directory-structure"><a href="#s3-directory-structure">Directory Structure</a></h3>
+
+<p>I keep all my small single-file Common Lisp programs in a <code>lisp</code> directory
+inside my dotfiles repository.  Its contents look like this:</p>
+
+<pre><code>…/dotfiles/lisp/
+    bin/
+        foo
+        bar
+    man/
+        man1/
+            foo.1
+            bar.1
+    build-binary.sh
+    build-manual.sh
+    Makefile
+    foo.lisp
+    bar.lisp</code></pre>
+
+<p>The <code>bin</code> directory is where the executable files end up.  I've added it to my
+<code>$PATH</code> so I don't have to symlink or copy the binaries anywhere.</p>
+
+<p><code>man</code> contains the generated <code>man</code> pages.  Because it's adjacent to <code>bin</code> (which
+is on my path) the <code>man</code> program automatically finds the <code>man</code> pages as
+expected.</p>
+
+<p><code>build-binary.sh</code>, <code>build-manual.sh</code>, and <code>Makefile</code> are some glue to make
+building programs easier.</p>
+
+<p>The <code>.lisp</code> files are the programs.  Each new program I want to add only
+requires adding the <code>&lt;programname&gt;.lisp</code> file in this directory and running
+<code>make</code>.</p>
+
+<h3 id="s4-lisp-files"><a href="#s4-lisp-files">Lisp Files</a></h3>
+
+<p>My small Common Lisp programs follow a few conventions that make building them
+easier.  Let's look at the skeleton of a <code>foo.lisp</code> file as an example.  I'll
+show the entire file here, and then step through it piece by piece.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">eval-when</span></i> <span class="paren2">(<span class="code"><span class="keyword">:compile-toplevel</span> <span class="keyword">:load-toplevel</span> <span class="keyword">:execute</span></span>)</span>
+  <span class="paren2">(<span class="code">ql:quickload '<span class="paren3">(<span class="code"><span class="keyword">:with-user-abort</span> …</span>)</span> <span class="keyword">:silent</span> t</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defpackage</span></i> <span class="keyword">:foo</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:use</span> <span class="keyword">:cl</span></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:export</span> <span class="keyword">:toplevel</span> <span class="special">*ui*</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code">in-package <span class="keyword">:foo</span></span>)</span>
+
+<span class="comment">;;;; Configuration -----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*whatever*</span> 123</span>)</span>
+
+<span class="comment">;;;; Errors ------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> user-error <span class="paren2">(<span class="code">error</span>)</span> <span class="paren2">(<span class="code"></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> missing-foo <span class="paren2">(<span class="code">user-error</span>)</span> <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span> <span class="string">&quot;A foo is required, but none was supplied.&quot;</span></span>)</span></span>)</span>
+
+<span class="comment">;;;; Functionality -----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> foo <span class="paren2">(<span class="code">string</span>)</span>
+  …</span>)</span>
+
+<span class="comment">;;;; Run ---------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> run <span class="paren2">(<span class="code">arguments</span>)</span>
+  <span class="paren2">(<span class="code">map nil #'foo arguments</span>)</span></span>)</span>
+
+<span class="comment">;;;; User Interface ----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defmacro</span></i> exit-on-ctrl-c <span class="paren2">(<span class="code">&amp;body body</span>)</span>
+  `<span class="paren2">(<span class="code">handler-case <span class="paren3">(<span class="code"><i><span class="symbol">with-user-abort:with-user-abort</span></i> <span class="paren4">(<span class="code"><i><span class="symbol">progn</span></i> ,@body</span>)</span></span>)</span>
+     <span class="paren3">(<span class="code">with-user-abort:user-abort <span class="paren4">(<span class="code"></span>)</span> <span class="paren4">(<span class="code">sb-ext:exit <span class="keyword">:code</span> 130</span>)</span></span>)</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*ui*</span>
+  <span class="paren2">(<span class="code">adopt:make-interface
+    <span class="keyword">:name</span> <span class="string">&quot;foo&quot;</span>
+    …</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> toplevel <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code">sb-ext:disable-debugger</span>)</span>
+  <span class="paren2">(<span class="code">exit-on-ctrl-c
+    <span class="paren3">(<span class="code">multiple-value-bind <span class="paren4">(<span class="code">arguments options</span>)</span> <span class="paren4">(<span class="code">adopt:parse-options-or-exit <span class="special">*ui*</span></span>)</span>
+      … <span class="comment">; Handle options.
+</span>      <span class="paren4">(<span class="code">handler-case <span class="paren5">(<span class="code">run arguments</span>)</span>
+        <span class="paren5">(<span class="code">user-error <span class="paren6">(<span class="code">e</span>)</span> <span class="paren6">(<span class="code">adopt:print-error-and-exit e</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Let's go through each chunk of this.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">eval-when</span></i> <span class="paren2">(<span class="code"><span class="keyword">:compile-toplevel</span> <span class="keyword">:load-toplevel</span> <span class="keyword">:execute</span></span>)</span>
+  <span class="paren2">(<span class="code">ql:quickload '<span class="paren3">(<span class="code"><span class="keyword">:with-user-abort</span> …</span>)</span> <span class="keyword">:silent</span> t</span>)</span></span>)</span></span></code></pre>
+
+<p>First we <code>quickload</code> any necessary libraries.  We always want to do this, even
+when compiling the file, because we need the appropriate packages to exist when
+we try to use their symbols later in the file.</p>
+
+<p><a href="https://github.com/compufox/with-user-abort">with-user-abort</a> is a library for easily handling <code>control-c</code>, which all of
+these small programs will use.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defpackage</span></i> <span class="keyword">:foo</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:use</span> <span class="keyword">:cl</span></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:export</span> <span class="keyword">:toplevel</span> <span class="special">*ui*</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code">in-package <span class="keyword">:foo</span></span>)</span></span></code></pre>
+
+<p>Next we define a package <code>foo</code> and switch to it.  The package is always named
+the same as the resulting binary and the basename of the file, and always
+exports the symbols <code>toplevel</code> and <code>*ui*</code>.  These conventions make it easy to
+build everything automatically with <code>make</code> later.</p>
+
+<pre><code><span class="code"><span class="comment">;;;; Configuration -----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*whatever*</span> 123</span>)</span></span></code></pre>
+
+<p>Next we define any configuration variables.  These will be set later after
+parsing the command line arguments (when we run the command line program) or
+at the REPL (when developing interactively).</p>
+
+<pre><code><span class="code"><span class="comment">;;;; Errors ------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> user-error <span class="paren2">(<span class="code">error</span>)</span> <span class="paren2">(<span class="code"></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> missing-foo <span class="paren2">(<span class="code">user-error</span>)</span> <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span> <span class="string">&quot;A foo is required, but none was supplied.&quot;</span></span>)</span></span>)</span></span></code></pre>
+
+<p>We define a <code>user-error</code> condition, and any errors the user might make will
+inherit from it.  This will make it easy to treat user errors (e.g. passing
+a mangled regular expression like <code>(foo+</code> as an argument) differently from
+programming errors (i.e. bugs).  This makes it easier to treat those errors
+differently:</p>
+
+<ul>
+<li>Bugs should print a backtrace or enter the debugger.</li>
+<li>Expected user errors should print a helpful error message with no backtrace or debugger.</li>
+</ul>
+
+<pre><code><span class="code"><span class="comment">;;;; Functionality -----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> foo <span class="paren2">(<span class="code">string</span>)</span>
+  …</span>)</span></span></code></pre>
+
+<p>Next we have the actual functionality of the program.</p>
+
+<pre><code><span class="code"><span class="comment">;;;; Run ---------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> run <span class="paren2">(<span class="code">arguments</span>)</span>
+  <span class="paren2">(<span class="code">map nil #'foo arguments</span>)</span></span>)</span></span></code></pre>
+
+<p>We define a function <code>run</code> that takes some arguments (as strings) and performs
+the main work of the program.</p>
+
+<p>Importantly, <code>run</code> does <em>not</em> handle command line argument parsing, and it does
+<em>not</em> exit the program with an error code, which means we can safely call it to
+say &quot;run the whole program&quot; when we're developing interactively without worrying
+about it killing our Lisp process.</p>
+
+<p>Now we need to define the command line interface.</p>
+
+<pre><code><span class="code"><span class="comment">;;;; User Interface ----------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defmacro</span></i> exit-on-ctrl-c <span class="paren2">(<span class="code">&amp;body body</span>)</span>
+  `<span class="paren2">(<span class="code">handler-case <span class="paren3">(<span class="code"><i><span class="symbol">with-user-abort:with-user-abort</span></i> <span class="paren4">(<span class="code"><i><span class="symbol">progn</span></i> ,@body</span>)</span></span>)</span>
+     <span class="paren3">(<span class="code">with-user-abort:user-abort <span class="paren4">(<span class="code"></span>)</span> <span class="paren4">(<span class="code">adopt:exit 130</span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>We'll make a little macro around <code>with-user-abort</code> to make it less wordy.  We'll
+<a href="https://tldp.org/LDP/abs/html/exitcodes.html">exit with a status of 130</a> if the
+user presses <code>ctrl-c</code>.  Maybe some day I'll pull this into Adopt so I don't have
+to copy these three lines everywhere.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*ui*</span>
+  <span class="paren2">(<span class="code">adopt:make-interface
+    <span class="keyword">:name</span> <span class="string">&quot;foo&quot;</span>
+    …</span>)</span></span>)</span></span></code></pre>
+
+<p>Here we define the <code>*ui*</code> variable whose symbol we exported above.  <a href="https://docs.stevelosh.com/adopt">Adopt</a> is
+a command line argument parsing library I wrote.  If you want to use a different
+library, feel free.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> toplevel <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code">sb-ext:disable-debugger</span>)</span>
+  <span class="paren2">(<span class="code">exit-on-ctrl-c
+    <span class="paren3">(<span class="code">multiple-value-bind <span class="paren4">(<span class="code">arguments options</span>)</span> <span class="paren4">(<span class="code">adopt:parse-options-or-exit <span class="special">*ui*</span></span>)</span>
+      … <span class="comment">; Handle options.
+</span>      <span class="paren4">(<span class="code">handler-case <span class="paren5">(<span class="code">run arguments</span>)</span>
+        <span class="paren5">(<span class="code">user-error <span class="paren6">(<span class="code">e</span>)</span> <span class="paren6">(<span class="code">adopt:print-error-and-exit e</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>And finally we define the <code>toplevel</code> function.  This will only ever be called
+when the program is run as a standalone program, never interactively.  It
+handles all the work beyond the main guts of the program (which are handled by
+the <code>run</code> function), including:</p>
+
+<ul>
+<li>Disabling or enabling the debugger.</li>
+<li>Exiting the process with an appropriate status code on errors.</li>
+<li>Parsing command line arguments.</li>
+<li>Setting the values of the configuration parameters.</li>
+<li>Calling <code>run</code>.</li>
+</ul>
+
+<p>That's it for the structure of the <code>.lisp</code> files.</p>
+
+<h3 id="s5-building-binaries"><a href="#s5-building-binaries">Building Binaries</a></h3>
+
+<p><code>build-binary.sh</code> is a small script to build the executable binaries from the
+<code>.lisp</code> files.  <code>./build-binary.sh foo.lisp</code> will build <code>foo</code>:</p>
+
+<pre><code>#!/usr/bin/env bash
+
+set -euo pipefail
+
+LISP=$1
+NAME=$(basename &quot;$1&quot; .lisp)
+shift
+
+sbcl --load &quot;$LISP&quot; \
+     --eval &quot;(sb-ext:save-lisp-and-die \&quot;$NAME\&quot;
+               :executable t
+               :save-runtime-options t
+               :toplevel '$NAME:toplevel)&quot;</code></pre>
+
+<p>Here we see where the naming conventions have become important — we know that
+the package is named the same as the binary and that it will have the symbol
+<code>toplevel</code> exported, which always names the entry point for the binary.</p>
+
+<h3 id="s6-building-man-pages"><a href="#s6-building-man-pages">Building Man Pages</a></h3>
+
+<p><code>build-manual.sh</code> is similar and builds the <code>man</code> pages using <a href="https://docs.stevelosh.com/adopt">Adopt</a>'s
+built-in <code>man</code> page generation.  If you don't care about building <code>man</code> pages
+for your personal programs you can ignore this.  I admit that generating <code>man</code>
+pages for these programs is a little bit silly because they're only for my own
+personal use, but I get it for free with Adopt, so why not?</p>
+
+<pre><code>#!/usr/bin/env bash
+
+set -euo pipefail
+
+LISP=$1
+NAME=$(basename &quot;$LISP&quot; .lisp)
+OUT=&quot;$NAME.1&quot;
+shift
+
+sbcl --load &quot;$LISP&quot; \
+     --eval &quot;(with-open-file (f \&quot;$OUT\&quot; :direction :output :if-exists :supersede)
+               (adopt:print-manual $NAME:*ui* :stream f))&quot; \
+     --quit</code></pre>
+
+<p>This is why we always name the Adopt interface variable <code>*ui*</code> and export it
+from the package.</p>
+
+<h3 id="s7-makefile"><a href="#s7-makefile">Makefile</a></h3>
+
+<p>Finally we have a simple <code>Makefile</code> so we can run <code>make</code> to regenerate any
+out of date binaries and <code>man</code> pages:</p>
+
+<pre><code>files := $(wildcard *.lisp)
+names := $(files:.lisp=)
+
+.PHONY: all clean $(names)
+
+all: $(names)
+
+$(names): %: bin/% man/man1/%.1
+
+bin/%: %.lisp build-binary.sh Makefile
+    mkdir -p bin
+    ./build-binary.sh $&lt;
+    mv $(@F) bin/
+
+man/man1/%.1: %.lisp build-manual.sh Makefile
+    mkdir -p man/man1
+    ./build-manual.sh $&lt;
+    mv $(@F) man/man1/
+
+clean:
+    rm -rf bin man</code></pre>
+
+<p>We use a <code>wildcard</code> to automatically find the <code>.lisp</code> files so we don't have to
+do anything extra after adding a new file when we want to make a new program.</p>
+
+<p>The most notable line here is <code>$(names): %: bin/% man/man1/%.1</code> which uses
+a <a href="https://www.gnu.org/software/make/manual/html_node/Static-Pattern.html#Static-Pattern">static pattern rule</a>
+to automatically define the phony rules for building each program.  If
+<code>$(names)</code> is <code>foo bar</code> this line effectively defines two phony rules:</p>
+
+<pre><code>foo: bin/foo man/man1/foo.1
+bar: bin/bar man/man1/bar.1</code></pre>
+
+<p>This lets us run <code>make foo</code> to make both the binary and <code>man</code> page for
+<code>foo.lisp</code>.</p>
+
+<h2 id="s8-case-study-a-batch-coloring-utility"><a href="#s8-case-study-a-batch-coloring-utility">Case Study: A Batch Coloring Utility</a></h2>
+
+<p>Now that we've seen the skeleton, let's look at one of my actual programs that
+I use all the time.  It's called <code>batchcolor</code> and it's used to highlight regular
+expression matches in text (usually log files) with a twist: each unique match
+is highlighted in a separate color, which makes it easier to visually parse the
+result.</p>
+
+<p>For example: suppose we have some log files with lines of the form <code>&lt;timestamp&gt;
+[&lt;request ID&gt;] &lt;level&gt; &lt;message&gt;</code> where request ID is a UUID, and messages might
+contain other UUIDs for various things.  Such a log file might look something
+like this:</p>
+
+<pre><code>2021-01-02 14:01:45 [f788a624-8dcd-4c5e-b1e8-681d0a68a8d3] INFO Incoming request GET /users/28b2d548-eff1-471c-b807-cc2bcee76b7d/things/7ca6d8d2-5038-42bd-a559-b3ee0c8b7543/
+2021-01-02 14:01:45 [f788a624-8dcd-4c5e-b1e8-681d0a68a8d3] INFO Thing 7ca6d8d2-5038-42bd-a559-b3ee0c8b7543 is not cached, retrieving...
+2021-01-02 14:01:45 [f788a624-8dcd-4c5e-b1e8-681d0a68a8d3] WARN User 28b2d548-eff1-471c-b807-cc2bcee76b7d does not have access to thing 7ca6d8d2-5038-42bd-a559-b3ee0c8b7543, denying request.
+2021-01-02 14:01:46 [f788a624-8dcd-4c5e-b1e8-681d0a68a8d3] INFO Returning HTTP 404.
+2021-01-02 14:01:46 [bea6ae06-bd06-4d2a-ae35-3e83fea2edc7] INFO Incoming request GET /users/28b2d548-eff1-471c-b807-cc2bcee76b7d/things/7ca6d8d2-5038-42bd-a559-b3ee0c8d7543/
+2021-01-02 14:01:46 [bea6ae06-bd06-4d2a-ae35-3e83fea2edc7] INFO Thing 7ca6d8d2-5038-42bd-a559-b3ee0c8d7543 is not cached, retrieving...
+2021-01-02 14:01:46 [b04ced1d-1cfa-4315-aaa9-0e245ff9a8e1] INFO Incoming request POST /users/sign-up/
+2021-01-02 14:01:46 [bea6ae06-bd06-4d2a-ae35-3e83fea2edc7] INFO Returning HTTP 200.
+2021-01-02 14:01:46 [b04ced1d-1cfa-4315-aaa9-0e245ff9a8e1] ERR Error running SQL query: connection refused.
+2021-01-02 14:01:47 [b04ced1d-1cfa-4315-aaa9-0e245ff9a8e1] ERR Returning HTTP 500.</code></pre>
+
+<p>If I try to just read this directly, it's easy for my eyes to glaze over unless
+I laboriously walk line-by-line.</p>
+
+<p><a href="/static/images/blog/2021/03/uncolored.png"><img src="/static/images/blog/2021/03/uncolored.png" alt="Screenshot of uncolored log output"></a></p>
+
+<p>I could use <code>grep</code> to highlight the UUIDs:</p>
+
+<pre><code>grep -P \
+    '\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\b' \
+    example.log
+</code></pre>
+
+<p>Unfortunately that doesn't really help too much because all the UUIDs are
+highlighted the same color:</p>
+
+<p><a href="/static/images/blog/2021/03/grepcolored.png"><img src="/static/images/blog/2021/03/grepcolored.png" alt="Screenshot of grep-colored log output"></a></p>
+
+<p>To get a more readable version of the log, I use <code>batchcolor</code>:</p>
+
+<pre><code>batchcolor \
+    '\b[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\b' \
+    example.log
+</code></pre>
+
+<p><code>batchcolor</code> also highlights matches, but it highlights each unique match in its
+own color:</p>
+
+<p><a href="/static/images/blog/2021/03/batchcolored.png"><img src="/static/images/blog/2021/03/batchcolored.png" alt="Screenshot of batchcolored log output"></a></p>
+
+<p>This is <em>much</em> easier for me to visually parse.  The interleaving of separate
+request logs is now obvious from the colors of the IDs, and it's easy to match
+up various user IDs and thing IDs at a glance.  Did you even notice that the two
+thing IDs were different before?</p>
+
+<p><code>batchcolor</code> has a few other quality of life features, like picking explicit
+colors for specific strings (e.g. red for <code>ERR</code>):</p>
+
+<p><a href="/static/images/blog/2021/03/batchcoloredfull.png"><img src="/static/images/blog/2021/03/batchcoloredfull.png" alt="Screenshot of fully batchcolored log output"></a></p>
+
+<p>I use this particular <code>batchcolor</code> invocation so often I've put it in its own
+tiny shell script.  I use it to <code>tail</code> log files when developing locally almost
+every day, and it makes visually scanning the log output <em>much</em> easier.  It can
+come in handy for other kinds of text too, like highlighting nicknames in an IRC
+log.</p>
+
+<p>Let's step through its code piece by piece.</p>
+
+<h3 id="s9-libraries"><a href="#s9-libraries">Libraries</a></h3>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">eval-when</span></i> <span class="paren2">(<span class="code"><span class="keyword">:compile-toplevel</span> <span class="keyword">:load-toplevel</span> <span class="keyword">:execute</span></span>)</span>
+  <span class="paren2">(<span class="code">ql:quickload '<span class="paren3">(<span class="code"><span class="keyword">:adopt</span> <span class="keyword">:cl-ppcre</span> <span class="keyword">:with-user-abort</span></span>)</span> <span class="keyword">:silent</span> t</span>)</span></span>)</span></span></code></pre>
+
+<p>First we <code>quickload</code> libraries.  We'll use <a href="https://docs.stevelosh.com/adopt">Adopt</a> for command line argument
+processing, <a href="http://edicl.github.io/cl-ppcre/">cl-ppcre</a> for regular expressions, and the previously-mentioned
+<a href="https://github.com/compufox/with-user-abort">with-user-abort</a> to handle <code>control-c</code>.</p>
+
+<h3 id="s10-package"><a href="#s10-package">Package</a></h3>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defpackage</span></i> <span class="keyword">:batchcolor</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:use</span> <span class="keyword">:cl</span></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:export</span> <span class="keyword">:toplevel</span> <span class="keyword">:*ui*</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code">in-package <span class="keyword">:batchcolor</span></span>)</span></span></code></pre>
+
+<p>We define and switch to the appropriately-named package.  Nothing special here.</p>
+
+<h3 id="s11-configuration"><a href="#s11-configuration">Configuration</a></h3>
+
+<pre><code><span class="code"><span class="comment">;;;; Configuration ------------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*start*</span> 0</span>)</span>
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*dark*</span> t</span>)</span></span></code></pre>
+
+<p>Next we <code>defparameter</code> some variables to hold some settings.  <code>*start*</code> will be
+used later when randomizing colors, don't worry about it for now.</p>
+
+<h3 id="s12-errors"><a href="#s12-errors">Errors</a></h3>
+
+<pre><code><span class="code"><span class="comment">;;;; Errors -------------------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> user-error <span class="paren2">(<span class="code">error</span>)</span> <span class="paren2">(<span class="code"></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> missing-regex <span class="paren2">(<span class="code">user-error</span>)</span> <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span> <span class="string">&quot;A regular expression is required.&quot;</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> malformed-regex <span class="paren2">(<span class="code">user-error</span>)</span>
+  <span class="paren2">(<span class="code"><span class="paren3">(<span class="code">underlying-error <span class="keyword">:initarg</span> <span class="keyword">:underlying-error</span></span>)</span></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span> <span class="paren3">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren4">(<span class="code">c s</span>)</span>
+             <span class="paren4">(<span class="code">format s <span class="string">&quot;Invalid regex: ~A&quot;</span> <span class="paren5">(<span class="code">slot-value c 'underlying-error</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> overlapping-groups <span class="paren2">(<span class="code">user-error</span>)</span> <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span> <span class="string">&quot;Invalid regex: seems to contain overlapping capturing groups.&quot;</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">define-condition</span></i> malformed-explicit <span class="paren2">(<span class="code">user-error</span>)</span>
+  <span class="paren2">(<span class="code"><span class="paren3">(<span class="code">spec <span class="keyword">:initarg</span> <span class="keyword">:spec</span></span>)</span></span>)</span>
+  <span class="paren2">(<span class="code"><span class="keyword">:report</span>
+    <span class="paren3">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren4">(<span class="code">c s</span>)</span>
+      <span class="paren4">(<span class="code">format s <span class="string">&quot;Invalid explicit spec ~S, must be of the form </span><span class="string">\&quot;</span><span class="string">R,G,B:string</span><span class="string">\&quot;</span><span class="string"> with colors being 0-5.&quot;</span>
+              <span class="paren5">(<span class="code">slot-value c 'spec</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Here we define the user errors.  Some of these are self-explanatory, while
+others will make more sense later once we see them in action.  The specific
+details aren't as important as the overall idea: for user errors we know might
+happen, display a helpful error message instead of just spewing a backtrace at
+the user.</p>
+
+<h3 id="s13-colorization"><a href="#s13-colorization">Colorization</a></h3>
+
+<p>Next we have the actual meat of the program.  Obviously this is going to be
+completely different for every program, so feel free to skip this if you don't
+care about this specific problem.</p>
+
+<pre><code><span class="code"><span class="comment">;;;; Functionality ------------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> rgb-code <span class="paren2">(<span class="code">r g b</span>)</span>
+  <span class="comment">;; The 256 color mode color values are essentially r/g/b in base 6, but
+</span>  <span class="comment">;; shifted 16 higher to account for the intiial 8+8 colors.
+</span>  <span class="paren2">(<span class="code">+ <span class="paren3">(<span class="code">* r 36</span>)</span>
+     <span class="paren3">(<span class="code">* g 6</span>)</span>
+     <span class="paren3">(<span class="code">* b 1</span>)</span>
+     16</span>)</span></span>)</span></span></code></pre>
+
+<p>We're going to highlight different matches with different colors.  We'll need
+a reasonable amount of colors to make this useful, so using the basic 8/16 ANSI
+colors isn't enough.  Full 24-bit truecolor is overkill, but the 8-bit ANSI
+colors will work nicely.  If we ignore the base colors, we essentially have
+6 x 6 x 6 = 216 colors to work with.  <code>rgb-code</code> will take the red, green, and
+blue values from <code>0</code> to <code>5</code> and return the color code.  See <a href="https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit">Wikipedia</a>
+for more information.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> make-colors <span class="paren2">(<span class="code">excludep</span>)</span>
+  <span class="paren2">(<span class="code"><i><span class="symbol">let</span></i> <span class="paren3">(<span class="code"><span class="paren4">(<span class="code">result <span class="paren5">(<span class="code">make-array 256 <span class="keyword">:fill-pointer</span> 0</span>)</span></span>)</span></span>)</span>
+    <span class="paren3">(<span class="code">dotimes <span class="paren4">(<span class="code">r 6</span>)</span>
+      <span class="paren4">(<span class="code">dotimes <span class="paren5">(<span class="code">g 6</span>)</span>
+        <span class="paren5">(<span class="code">dotimes <span class="paren6">(<span class="code">b 6</span>)</span>
+          <span class="paren6">(<span class="code">unless <span class="paren1">(<span class="code">funcall excludep <span class="paren2">(<span class="code">+ r g b</span>)</span></span>)</span>
+            <span class="paren1">(<span class="code">vector-push-extend <span class="paren2">(<span class="code">rgb-code r g b</span>)</span> result</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span>
+    result</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*dark-colors*</span>  <span class="paren2">(<span class="code">make-colors <span class="paren3">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren4">(<span class="code">v</span>)</span> <span class="paren4">(<span class="code">&lt; v 3</span>)</span></span>)</span></span>)</span></span>)</span>
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*light-colors*</span> <span class="paren2">(<span class="code">make-colors <span class="paren3">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren4">(<span class="code">v</span>)</span> <span class="paren4">(<span class="code">&gt; v 11</span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Now we can build some arrays of colors.  We <em>could</em> use any of the 216 available
+colors, but in practice we probably don't want to, because the darkest colors
+will be too dark to read on a dark terminal, and vice versa for light terminals.
+In a concession to practicality we'll generate two separate arrays of colors,
+one that excludes colors whose total value is too dark and one excluding those
+that are too light.</p>
+
+<p>(Notice that <code>*dark-colors*</code> is &quot;the array of colors which are suitable for use
+on dark terminals&quot; and not &quot;the array of colors which are <em>themselves</em> dark&quot;.
+Naming things is hard.)</p>
+
+<p>Note that these arrays will be generated when the <code>batchcolor.lisp</code> file is
+<code>load</code>ed, which is <em>when we build the binary</em>.  They <em>won't</em> be recomputed every
+time you run the resulting binary.  In this case it doesn't really matter (the
+arrays are small) but it's worth remembering in case you ever have some data you
+want (or don't want) to compute at build time instead of run time.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*explicits*</span> <span class="paren2">(<span class="code">make-hash-table <span class="keyword">:test</span> #'equal</span>)</span></span>)</span></span></code></pre>
+
+<p>Here we make a hash table to store the strings and colors for strings we want to
+explicitly color (e.g. <code>ERR</code> should be red, <code>INFO</code> cyan).  The keys will be the
+strings and values the RGB codes.</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> djb2 <span class="paren2">(<span class="code">string</span>)</span>
+  <span class="comment">;; http://www.cse.yorku.ca/~oz/hash.html
+</span>  <span class="paren2">(<span class="code">reduce <span class="paren3">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren4">(<span class="code">hash c</span>)</span>
+            <span class="paren4">(<span class="code">mod <span class="paren5">(<span class="code">+ <span class="paren6">(<span class="code">* 33 hash</span>)</span> c</span>)</span> <span class="paren5">(<span class="code">expt 2 64</span>)</span></span>)</span></span>)</span>
+          string
+          <span class="keyword">:initial-value</span> 5381
+          <span class="keyword">:key</span> #'char-code</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> find-color <span class="paren2">(<span class="code">string</span>)</span>
+  <span class="paren2">(<span class="code">gethash string <span class="special">*explicits*</span>
+           <span class="paren3">(<span class="code"><i><span class="symbol">let</span></i> <span class="paren4">(<span class="code"><span class="paren5">(<span class="code">colors <span class="paren6">(<span class="code"><i><span class="symbol">if</span></i> <span class="special">*dark*</span> <span class="special">*dark-colors*</span> <span class="special">*light-colors*</span></span>)</span></span>)</span></span>)</span>
+             <span class="paren4">(<span class="code">aref colors
+                   <span class="paren5">(<span class="code">mod <span class="paren6">(<span class="code">+ <span class="paren1">(<span class="code">djb2 string</span>)</span> <span class="special">*start*</span></span>)</span>
+                        <span class="paren6">(<span class="code">length colors</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>For strings that we want to explicitly color, we just look up the appropriate
+code in <code>*explicits*</code> and return it.</p>
+
+<p>Otherwise, we want to highlight unique matches in different colors.  There are
+a number of different ways we could do this, for example: we could randomly pick
+a color the first time we see a string and store it in a hash table for
+subsequent encounters.  But this would mean we'd grow that hash table over time,
+and one of the things I often use this utility for is <code>tail -f</code>ing long-running
+processes when developing locally, so the memory usage would grow and grow until
+the <code>batchcolor</code> process was restarted, which isn't ideal.</p>
+
+<p>Instead, we'll hash each string with a simple <a href="http://www.cse.yorku.ca/~oz/hash.html">DJB hash</a> and use it to
+index into the appropriate array of colors.  This ensures that identical matches
+get identical colors, and avoids having to store every match we've ever seen.</p>
+
+<p>There will be some collisions, but there's not much we can do about that with
+only ~200 colors to work with.  We could have used 16-bit colors like
+I mentioned before, but then we'd have to worry about picking colors different
+enough for humans to easily tell apart, and for this simple utility I didn't
+want to bother.</p>
+
+<p>We'll talk about <code>*start*</code> later, ignore it for now (it's <code>0</code> by default).</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> ansi-color-start <span class="paren2">(<span class="code">color</span>)</span>
+  <span class="paren2">(<span class="code">format nil <span class="string">&quot;~C[38;5;~Dm&quot;</span> <span class="character">#\Escape</span> color</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> ansi-color-end <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code">format nil <span class="string">&quot;~C[0m&quot;</span> <span class="character">#\Escape</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> print-colorized <span class="paren2">(<span class="code">string</span>)</span>
+  <span class="paren2">(<span class="code">format <span class="special">*standard-output*</span> <span class="string">&quot;~A~A~A&quot;</span>
+          <span class="paren3">(<span class="code">ansi-color-start <span class="paren4">(<span class="code">find-color string</span>)</span></span>)</span>
+          string
+          <span class="paren3">(<span class="code">ansi-color-end</span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Next we have some functions to output the appropriate ANSI escapes to highlight
+our matches.  We could use a library for this but it's only two lines.  <a href="http://xn--rpa.cc/irl/term.html">It's
+not worth it</a>.</p>
+
+<p>And now we have the beating heart of the program:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> colorize-line <span class="paren2">(<span class="code">scanner line &amp;aux <span class="paren3">(<span class="code">start 0</span>)</span></span>)</span>
+  <span class="paren2">(<span class="code">ppcre:do-scans <span class="paren3">(<span class="code">ms me rs re scanner line</span>)</span>
+    <span class="comment">;; If we don't have any register groups, colorize the entire match.
+</span>    <span class="comment">;; Otherwise, colorize each matched capturing group.
+</span>    <span class="paren3">(<span class="code"><i><span class="symbol">let*</span></i> <span class="paren4">(<span class="code"><span class="paren5">(<span class="code">regs? <span class="paren6">(<span class="code">plusp <span class="paren1">(<span class="code">length rs</span>)</span></span>)</span></span>)</span>
+           <span class="paren5">(<span class="code">starts <span class="paren6">(<span class="code"><i><span class="symbol">if</span></i> regs? <span class="paren1">(<span class="code">remove nil rs</span>)</span> <span class="paren1">(<span class="code">list ms</span>)</span></span>)</span></span>)</span>
+           <span class="paren5">(<span class="code">ends   <span class="paren6">(<span class="code"><i><span class="symbol">if</span></i> regs? <span class="paren1">(<span class="code">remove nil re</span>)</span> <span class="paren1">(<span class="code">list me</span>)</span></span>)</span></span>)</span></span>)</span>
+      <span class="paren4">(<span class="code">map nil <span class="paren5">(<span class="code"><i><span class="symbol">lambda</span></i> <span class="paren6">(<span class="code">word-start word-end</span>)</span>
+                 <span class="paren6">(<span class="code">unless <span class="paren1">(<span class="code">&lt;= start word-start</span>)</span>
+                   <span class="paren1">(<span class="code">error 'overlapping-groups</span>)</span></span>)</span>
+                 <span class="paren6">(<span class="code">write-string line <span class="special">*standard-output*</span> <span class="keyword">:start</span> start <span class="keyword">:end</span> word-start</span>)</span>
+                 <span class="paren6">(<span class="code">print-colorized <span class="paren1">(<span class="code">subseq line word-start word-end</span>)</span></span>)</span>
+                 <span class="paren6">(<span class="code">setf start word-end</span>)</span></span>)</span>
+           starts ends</span>)</span></span>)</span></span>)</span>
+  <span class="paren2">(<span class="code">write-line line <span class="special">*standard-output*</span> <span class="keyword">:start</span> start</span>)</span></span>)</span></span></code></pre>
+
+<p><code>colorize-line</code> takes a CL-PPCRE scanner and a line, and outputs the line with
+any of the desired matches colorized appropriately.  There are a few things to
+note here.</p>
+
+<p>First: if the regular expression contains any capturing groups, we'll only
+colorize those parts of the match.  For example: if you run <code>batchcolor
+'^&lt;(\\w+)&gt; '</code> to colorize the nicks in an IRC log, only the nicknames themselves
+will be highlighted, not the surrounding angle brackets.  Otherwise, if there
+are no capturing groups in the regular expression, we'll highlight the entire
+match (as if there were one big capturing group around the whole thing).</p>
+
+<p>Second: overlapping capturing groups are explicitly disallowed and
+a <code>user-error</code> signaled if we notice any.  It's not clear what do to in this
+case — if we match <code>((f)oo|(b)oo)</code> against <code>foo</code>, what should the output be?
+Highlight <code>f</code> and <code>oo</code> in the same color?  In different colors?  Should the <code>oo</code>
+be a different color than the <code>oo</code> in <code>boo</code>?  There's too many options with no
+clear winner, so we'll just tell the user to be more clear.</p>
+
+<p>To do the actual work we iterate over each match and print the non-highlighted
+text before the match, then print the highlighted match.  Finally we print any
+remaining text after the last match.</p>
+
+<h3 id="s14-not-quite-top-level-interface"><a href="#s14-not-quite-top-level-interface">Not-Quite-Top-Level Interface</a></h3>
+
+<pre><code><span class="code"><span class="comment">;;;; Run ----------------------------------------------------------------------
+</span><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> run% <span class="paren2">(<span class="code">scanner stream</span>)</span>
+  <span class="paren2">(<span class="code"><i><span class="symbol">loop</span></i> <span class="keyword">:for</span> line = <span class="paren3">(<span class="code">read-line stream nil</span>)</span>
+        <span class="keyword">:while</span> line
+        <span class="keyword">:do</span> <span class="paren3">(<span class="code">colorize-line scanner line</span>)</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> run <span class="paren2">(<span class="code">pattern paths</span>)</span>
+  <span class="paren2">(<span class="code"><i><span class="symbol">let</span></i> <span class="paren3">(<span class="code"><span class="paren4">(<span class="code">scanner <span class="paren5">(<span class="code">handler-case <span class="paren6">(<span class="code">ppcre:create-scanner pattern</span>)</span>
+                   <span class="paren6">(<span class="code">ppcre:ppcre-syntax-error <span class="paren1">(<span class="code">c</span>)</span>
+                     <span class="paren1">(<span class="code">error 'malformed-regex <span class="keyword">:underlying-error</span> c</span>)</span></span>)</span></span>)</span></span>)</span>
+        <span class="paren4">(<span class="code">paths <span class="paren5">(<span class="code">or paths '<span class="paren6">(<span class="code"><span class="string">&quot;-&quot;</span></span>)</span></span>)</span></span>)</span></span>)</span>
+    <span class="paren3">(<span class="code">dolist <span class="paren4">(<span class="code">path paths</span>)</span>
+      <span class="paren4">(<span class="code"><i><span class="symbol">if</span></i> <span class="paren5">(<span class="code">string= <span class="string">&quot;-&quot;</span> path</span>)</span>
+        <span class="paren5">(<span class="code">run% scanner <span class="special">*standard-input*</span></span>)</span>
+        <span class="paren5">(<span class="code"><i><span class="symbol">with-open-file</span></i> <span class="paren6">(<span class="code">stream path <span class="keyword">:direction</span> <span class="keyword">:input</span></span>)</span>
+          <span class="paren6">(<span class="code">run% scanner stream</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Here we have the not-quite-top-level interface to the program.  <code>run</code> takes
+a pattern string and a list of paths and runs the colorization on each path.
+This is safe to call interactively from the REPL, e.g. <code>(run &quot;&lt;(\\w+)&gt;&quot;
+&quot;foo.txt&quot;)</code>, so we can test without worrying about killing the Lisp process.</p>
+
+<h3 id="s15-user-interface"><a href="#s15-user-interface">User Interface</a></h3>
+
+<p>In the last chunk of the file we have the user interface.  There are a couple of
+things to note here.</p>
+
+<p>I'm using a command line argument parsing library I wrote myself: <a href="https://docs.stevelosh.com/adopt">Adopt</a>.
+I won't go over exactly what all the various Adopt functions do.  Most of them
+should be fairly easy to understand, but <a href="https://docs.stevelosh.com/adopt/usage/">check out the Adopt
+documentation</a> for the full story if you're curious.</p>
+
+<p>If you prefer another library (and there are quite a few around) feel free
+to use it — it should be pretty easy to adapt this setup to a different library.
+The only things you'd need to change would be the <code>toplevel</code> function and the
+<code>build-manual.sh</code> script (if you even care about building <code>man</code> pages at all).</p>
+
+<p>You might also notice that the user interface for the program is almost as much
+code as the entire rest of the program.  This may seem strange, but I think it
+makes a certain kind of sense.  When you're writing code to interface with an
+external system, a messier and more complicated external system will usually
+require more code than a cleaner and simpler external system.  A human brain is
+probably the messiest and most complicated external system you'll ever have to
+deal with, so it's worth taking the extra time and code to be especially careful
+when writing an interface to it.</p>
+
+<p>First we'll define a typical <code>-h</code>/<code>--help</code> option:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*option-help*</span>
+  <span class="paren2">(<span class="code">adopt:make-option 'help
+    <span class="keyword">:help</span> <span class="string">&quot;Display help and exit.&quot;</span>
+    <span class="keyword">:long</span> <span class="string">&quot;help&quot;</span>
+    <span class="keyword">:short</span> <span class="character">#\h</span>
+    <span class="keyword">:reduce</span> <span class="paren3">(<span class="code">constantly t</span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Next we'll define a pair of options for enabling/disabling the Lisp debugger:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">adopt:defparameters</span></i> <span class="paren2">(<span class="code"><span class="special">*option-debug*</span> <span class="special">*option-no-debug*</span></span>)</span>
+  <span class="paren2">(<span class="code">adopt:make-boolean-options 'debug
+    <span class="keyword">:long</span> <span class="string">&quot;debug&quot;</span>
+    <span class="keyword">:short</span> <span class="character">#\d</span>
+    <span class="keyword">:help</span> <span class="string">&quot;Enable the Lisp debugger.&quot;</span>
+    <span class="keyword">:help-no</span> <span class="string">&quot;Disable the Lisp debugger (the default).&quot;</span></span>)</span></span>)</span></span></code></pre>
+
+<p>By default the debugger will be off, so any unexpected error will print
+a backtrace to standard error and exit with a nonzero exit code.  This is the
+default because if I add a <code>batchcolor</code> somewhere in a shell script, I probably
+don't want to suddenly hang the entire script if something breaks.  But we still
+want to be <em>able</em> to get into the debugger manually if something goes wrong.
+This is Common Lisp — we don't have to settle for a stack trace or core dump, we
+can have a real interactive debugger in the final binary.</p>
+
+<p>Note how Adopt's <code>make-boolean-options</code> function creates <em>two</em> options here:</p>
+
+<ul>
+<li><code>-d</code>/<code>--debug</code> will enable the debugger.</li>
+<li><code>-D</code>/<code>--no-debug</code> will disable the debugger.</li>
+</ul>
+
+<p>Even though <em>disabled</em> is the default, it's still important to have both
+switches for boolean options like this.  If someone wants the debugger to be
+<em>enabled</em> by default instead (along with some other configuration options), they
+might have a shell alias like this:</p>
+
+<pre><code>alias bcolor='batchcolor --debug --foo --bar'
+</code></pre>
+
+<p>But sometimes they might want to temporarily <em>disable</em> the debugger for a single
+run.  Without a <code>--no-debug</code> option, they would have to run the vanilla
+<code>batchcolor</code> and retype all the <em>other</em> options.  But having the <code>--no-debug</code>
+option allows them to just say:</p>
+
+<pre><code>bcolor --no-debug
+</code></pre>
+
+<p>This would expand to:</p>
+
+<pre><code>batchcolor --debug --foo --bar --no-debug
+</code></pre>
+
+<p>The later option wins, and the user gets the behavior they expect.</p>
+
+<p>Next we'll define some color-related options.  First an option to randomize the
+colors each run, instead of always picking the same color for a particular
+string, and then a toggle for choosing colors that work for dark or light
+terminals:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">adopt:defparameters</span></i> <span class="paren2">(<span class="code"><span class="special">*option-randomize*</span> <span class="special">*option-no-randomize*</span></span>)</span>
+  <span class="paren2">(<span class="code">adopt:make-boolean-options 'randomize
+    <span class="keyword">:help</span> <span class="string">&quot;Randomize the choice of color each run.&quot;</span>
+    <span class="keyword">:help-no</span> <span class="string">&quot;Do not randomize the choice of color each run (the default).&quot;</span>
+    <span class="keyword">:long</span> <span class="string">&quot;randomize&quot;</span>
+    <span class="keyword">:short</span> <span class="character">#\r</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">adopt:defparameters</span></i> <span class="paren2">(<span class="code"><span class="special">*option-dark*</span> <span class="special">*option-light*</span></span>)</span>
+  <span class="paren2">(<span class="code">adopt:make-boolean-options 'dark
+    <span class="keyword">:name-no</span> 'light
+    <span class="keyword">:long</span> <span class="string">&quot;dark&quot;</span>
+    <span class="keyword">:long-no</span> <span class="string">&quot;light&quot;</span>
+    <span class="keyword">:help</span> <span class="string">&quot;Optimize for dark terminals (the default).&quot;</span>
+    <span class="keyword">:help-no</span> <span class="string">&quot;Optimize for light terminals.&quot;</span>
+    <span class="keyword">:initial-value</span> t</span>)</span></span>)</span></span></code></pre>
+
+<p>The last option we'll define is <code>-e</code>/<code>--explicit</code>, to allow the user to select
+an explicit color for a particular string:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> parse-explicit <span class="paren2">(<span class="code">spec</span>)</span>
+  <span class="paren2">(<span class="code">ppcre:register-groups-bind
+      <span class="paren3">(<span class="code"><span class="paren4">(<span class="code">#'parse-integer r g b</span>)</span> string</span>)</span>
+      <span class="paren3">(<span class="code"><span class="string">&quot;^([0-5]),([0-5]),([0-5]):(.+)$&quot;</span> spec</span>)</span>
+    <span class="paren3">(<span class="code"><i><span class="symbol">return-from</span></i> parse-explicit <span class="paren4">(<span class="code">cons string <span class="paren5">(<span class="code">rgb-code r g b</span>)</span></span>)</span></span>)</span></span>)</span>
+  <span class="paren2">(<span class="code">error 'malformed-explicit <span class="keyword">:spec</span> spec</span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*option-explicit*</span>
+  <span class="paren2">(<span class="code">adopt:make-option 'explicit
+    <span class="keyword">:parameter</span> <span class="string">&quot;R,G,B:STRING&quot;</span>
+    <span class="keyword">:help</span> <span class="string">&quot;Highlight STRING in an explicit color.  May be given multiple times.&quot;</span>
+    <span class="keyword">:manual</span> <span class="paren3">(<span class="code">format nil <span class="string">&quot;~
+      Highlight STRING in an explicit color instead of randomly choosing one.  ~
+      R, G, and B must be 0-5.  STRING is treated as literal string, not a regex.  ~
+      Note that this doesn't automatically add STRING to the overall regex, you ~
+      must do that yourself!  This is a known bug that may be fixed in the future.&quot;</span></span>)</span>
+    <span class="keyword">:long</span> <span class="string">&quot;explicit&quot;</span>
+    <span class="keyword">:short</span> <span class="character">#\e</span>
+    <span class="keyword">:key</span> #'parse-explicit
+    <span class="keyword">:reduce</span> #'adopt:collect</span>)</span></span>)</span></span></code></pre>
+
+<p>Notice how we signal a <code>malformed-explicit</code> condition if the user gives us
+mangled text.  This is a subtype of <code>user-error</code>, so the program will print the
+error and exit even if the debugger is enabled.  We also include a slightly more
+verbose description in the <code>man</code> page than the terse one in the <code>--help</code> text.</p>
+
+<p>Next we write the main help and manual text, as well as some real-world
+examples:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">adopt:define-string</span></i> <span class="special">*help-text*</span>
+  <span class="string">&quot;batchcolor takes a regular expression and matches it against standard ~
+   input one line at a time.  Each unique match is highlighted in its own color.~@
+   ~@
+   If the regular expression contains any capturing groups, only those parts of ~
+   the matches will be highlighted.  Otherwise the entire match will be ~
+   highlighted.  Overlapping capturing groups are not supported.&quot;</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">adopt:define-string</span></i> <span class="special">*extra-manual-text*</span>
+  <span class="string">&quot;If no FILEs are given, standard input will be used.  A file of - stands for ~
+   standard input as well.~@
+   ~@
+   Overlapping capturing groups are not supported because it's not clear what ~
+   the result should be.  For example: what should ((f)oo|(b)oo) highlight when ~
+   matched against 'foo'?  Should it highlight 'foo' in one color?  The 'f' in ~
+   one color and 'oo' in another color?  Should that 'oo' be the same color as ~
+   the 'oo' in 'boo' even though the overall match was different?  There are too ~
+   many possible behaviors and no clear winner, so batchcolor disallows ~
+   overlapping capturing groups entirely.&quot;</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*examples*</span>
+  '<span class="paren2">(<span class="code"><span class="paren3">(<span class="code"><span class="string">&quot;Colorize IRC nicknames in a chat log:&quot;</span>
+     . <span class="string">&quot;cat channel.log | batchcolor '&lt;(</span><span class="string">\\</span><span class="string">\\</span><span class="string">w+)&gt;'&quot;</span></span>)</span>
+    <span class="paren3">(<span class="code"><span class="string">&quot;Colorize UUIDs in a request log:&quot;</span>
+     . <span class="string">&quot;tail -f /var/log/foo | batchcolor '[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'&quot;</span></span>)</span>
+    <span class="paren3">(<span class="code"><span class="string">&quot;Colorize some keywords explicitly and IPv4 addresses randomly (note that the keywords have to be in the main regex too, not just in the -e options):&quot;</span>
+     . <span class="string">&quot;batchcolor 'WARN|INFO|ERR|(?:[0-9]{1,3}</span><span class="string">\\</span><span class="string">\\</span><span class="string">.){3}[0-9]{1,3}' -e '5,0,0:ERR' -e '5,4,0:WARN' -e '2,2,5:INFO' foo.log&quot;</span></span>)</span>
+    <span class="paren3">(<span class="code"><span class="string">&quot;Colorize earmuffed symbols in a Lisp file:&quot;</span>
+     . <span class="string">&quot;batchcolor '(?:^|[^*])([*][-a-zA-Z0-9]+[*])(?:$|[^*])' tests/test.lisp&quot;</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Finally we can wire everything together in the main Adopt interface:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defparameter</span></i> <span class="special">*ui*</span>
+  <span class="paren2">(<span class="code">adopt:make-interface
+    <span class="keyword">:name</span> <span class="string">&quot;batchcolor&quot;</span>
+    <span class="keyword">:usage</span> <span class="string">&quot;[OPTIONS] REGEX [FILE...]&quot;</span>
+    <span class="keyword">:summary</span> <span class="string">&quot;colorize regex matches in batches&quot;</span>
+    <span class="keyword">:help</span> <span class="special">*help-text*</span>
+    <span class="keyword">:manual</span> <span class="paren3">(<span class="code">format nil <span class="string">&quot;~A~2%~A&quot;</span> <span class="special">*help-text*</span> <span class="special">*extra-manual-text*</span></span>)</span>
+    <span class="keyword">:examples</span> <span class="special">*examples*</span>
+    <span class="keyword">:contents</span> <span class="paren3">(<span class="code">list
+                <span class="special">*option-help*</span>
+                <span class="special">*option-debug*</span>
+                <span class="special">*option-no-debug*</span>
+                <span class="paren4">(<span class="code">adopt:make-group 'color-options
+                                  <span class="keyword">:title</span> <span class="string">&quot;Color Options&quot;</span>
+                                  <span class="keyword">:options</span> <span class="paren5">(<span class="code">list <span class="special">*option-randomize*</span>
+                                                 <span class="special">*option-no-randomize*</span>
+                                                 <span class="special">*option-dark*</span>
+                                                 <span class="special">*option-light*</span>
+                                                 <span class="special">*option-explicit*</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>All that's left to do is the top-level function that will be called when the
+binary is executed.</p>
+
+<h3 id="s16-top-level-interface"><a href="#s16-top-level-interface">Top-Level Interface</a></h3>
+
+<p>Before we write <code>toplevel</code> we've got a couple of helpers:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defmacro</span></i> exit-on-ctrl-c <span class="paren2">(<span class="code">&amp;body body</span>)</span>
+  `<span class="paren2">(<span class="code">handler-case <span class="paren3">(<span class="code"><i><span class="symbol">with-user-abort:with-user-abort</span></i> <span class="paren4">(<span class="code"><i><span class="symbol">progn</span></i> ,@body</span>)</span></span>)</span>
+     <span class="paren3">(<span class="code">with-user-abort:user-abort <span class="paren4">(<span class="code"></span>)</span> <span class="paren4">(<span class="code">adopt:exit 130</span>)</span></span>)</span></span>)</span></span>)</span>
+
+<span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> configure <span class="paren2">(<span class="code">options</span>)</span>
+  <span class="paren2">(<span class="code"><i><span class="symbol">loop</span></i> <span class="keyword">:for</span> <span class="paren3">(<span class="code">string . rgb</span>)</span> <span class="keyword">:in</span> <span class="paren3">(<span class="code">gethash 'explicit options</span>)</span>
+        <span class="keyword">:do</span> <span class="paren3">(<span class="code">setf <span class="paren4">(<span class="code">gethash string <span class="special">*explicits*</span></span>)</span> rgb</span>)</span></span>)</span>
+  <span class="paren2">(<span class="code">setf <span class="special">*start*</span> <span class="paren3">(<span class="code"><i><span class="symbol">if</span></i> <span class="paren4">(<span class="code">gethash 'randomize options</span>)</span>
+                  <span class="paren4">(<span class="code">random 256 <span class="paren5">(<span class="code">make-random-state t</span>)</span></span>)</span>
+                  0</span>)</span>
+        <span class="special">*dark*</span> <span class="paren3">(<span class="code">gethash 'dark options</span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>Our <code>toplevel</code> function looks much like the one in the skeleton, but fleshed out
+a bit more:</p>
+
+<pre><code><span class="code"><span class="paren1">(<span class="code"><i><span class="symbol">defun</span></i> toplevel <span class="paren2">(<span class="code"></span>)</span>
+  <span class="paren2">(<span class="code">sb-ext:disable-debugger</span>)</span>
+  <span class="paren2">(<span class="code">exit-on-ctrl-c
+    <span class="paren3">(<span class="code">multiple-value-bind <span class="paren4">(<span class="code">arguments options</span>)</span> <span class="paren4">(<span class="code">adopt:parse-options-or-exit <span class="special">*ui*</span></span>)</span>
+      <span class="paren4">(<span class="code">when <span class="paren5">(<span class="code">gethash 'debug options</span>)</span>
+        <span class="paren5">(<span class="code">sb-ext:enable-debugger</span>)</span></span>)</span>
+      <span class="paren4">(<span class="code">handler-case
+          <span class="paren5">(<span class="code"><i><span class="symbol">cond</span></i>
+            <span class="paren6">(<span class="code"><span class="paren1">(<span class="code">gethash 'help options</span>)</span> <span class="paren1">(<span class="code">adopt:print-help-and-exit <span class="special">*ui*</span></span>)</span></span>)</span>
+            <span class="paren6">(<span class="code"><span class="paren1">(<span class="code">null arguments</span>)</span> <span class="paren1">(<span class="code">error 'missing-regex</span>)</span></span>)</span>
+            <span class="paren6">(<span class="code">t <span class="paren1">(<span class="code">destructuring-bind <span class="paren2">(<span class="code">pattern . files</span>)</span> arguments
+                 <span class="paren2">(<span class="code">configure options</span>)</span>
+                 <span class="paren2">(<span class="code">run pattern files</span>)</span></span>)</span></span>)</span></span>)</span>
+        <span class="paren5">(<span class="code">user-error <span class="paren6">(<span class="code">e</span>)</span> <span class="paren6">(<span class="code">adopt:print-error-and-exit e</span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span>)</span></span></code></pre>
+
+<p>This <code>toplevel</code> has a few extra bits beyond the skeletal example.</p>
+
+<p>First, we disable the debugger immediately, and then re-enable it later if the
+user asks us to.  We want to keep it disabled until <em>after</em> argument parsing
+because we can't know whether the user wants it or not until we parse the
+arguments.</p>
+
+<p>Instead of just blindly running <code>run</code>, we check for <code>--help</code> and print it if
+desired.  We also validate that the user passes the correct amount of arguments,
+signaling a subtype of <code>user-error</code> if they don't.  Assuming everything looks
+good we handle the configuration, call <code>run</code>, and that's it!</p>
+
+<p>Running <code>make</code> generates <code>bin/batchcolor</code> and <code>man/man1/batchcolor.1</code>, and we
+can view our log files in beautiful color.</p>
+
+<h2 id="s17-more-information"><a href="#s17-more-information">More Information</a></h2>
+
+<p>I hope this overview was helpful.  This has worked for me, but Common Lisp is
+a flexible language, so if you want to use this layout as a starting point and
+modify it for your own needs, go for it!</p>
+
+<p>If you want to see some more examples you can find them in <a href="https://hg.stevelosh.com/dotfiles/file/tip/lisp">my dotfiles
+repository</a>.  Some of the more
+fun ones include:</p>
+
+<ul>
+<li><code>weather</code> for displaying the weather over the next few hours so I can tell if
+  I need a jacket or umbrella before I go out for a walk.</li>
+<li><code>retry</code> to retry shell commands if they fail, with options for how many times
+  to retry, strategies for waiting/backing off on failure, etc.</li>
+<li><code>pick</code> to interactively filter the output of one command into another
+  (inspired by the <code>pick</code> program in &quot;The UNIX Programming Environment&quot; but with
+  more options).</li>
+</ul>
+
+<p>The approach I laid out in this post works well for small, single-file programs.
+If you're creating a larger program you'll probably want to move to a full ASDF
+system in its own directory/repository.  My friend Ian <a href="http://atomized.org/blog/2020/07/06/common-lisp-in-practice/">wrote a post about
+that</a> which you
+might find interesting.</p>
+</article></main><hr class='main-separator' /><footer><nav><a href='https://github.com/sjl/'>GitHub</a> ・ <a href='https://mastodon.social/@sjl'>Mastodon</a> ・ <a href='https://instagram.com/thirtytwobirds/'>Instagram</a></nav></footer></body></html>

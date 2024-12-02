@@ -1,0 +1,346 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5364
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+x-origin-cache: HIT
+Last-Modified: Fri, 18 Oct 2024 10:24:30 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6712375e-52df"
+expires: Fri, 15 Nov 2024 23:21:18 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: D9D0:F1C8A:E30013:E648AC:6737D513
+Accept-Ranges: bytes
+Date: Fri, 15 Nov 2024 23:11:24 GMT
+Via: 1.1 varnish
+Age: 5
+X-Served-By: cache-chc950029-CHC
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1731712284.023523,VS0,VE0
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 50e612ca3a221809e304a9d058bc5f5ffd478e09
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C++ template macroprogramming versus Lisp macros | Simon Dobson</title>
+<style>
+	@font-face {
+	    font-family: "libretto-icons";
+	    src:url(../../../../assets/fonts/libretto-icons.eot);
+	    src:url(../../../../assets/fonts/libretto-icons.eot#iefix) format("embedded-opentype"),
+	    url(../../../../assets/fonts/libretto-icons.woff) format("woff"),
+	    url(../../../../assets/fonts/libretto-icons.ttf) format("truetype"),
+	    url(../../../../assets/fonts/libretto-icons.svg#libretto-icons) format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+    </style>
+<link rel="icon" href="../../../../images/favicon.png" sizes="16x16">
+<link rel="alternate" type="application/rss+xml" href="../../../../rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Libre+Baskerville|Montserrat|Playfair+Display|Tangerine">
+<link rel="stylesheet" href="../../../../assets/css/libretto_styles.css">
+<link rel="stylesheet" href="../../../../assets/css/baguetteBox.min.css">
+<link rel="stylesheet" href="../../../../assets/css/code.css">
+<link rel="stylesheet" href="../../../../assets/css/nikola_rst.css">
+<link rel="stylesheet" href="../../../../assets/css/nikola_ipython.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header class="nav-bar"><div class="site-branding">
+	    <h1 class="site-title">
+		<a href="https://simondobson.org/" title="Simon Dobson" rel="home">Simon&nbsp;Dobson</a>
+	    </h1>
+	</div>
+	<nav class="site-navigation" role="navigation"><div class="menu-toggle">
+		<span class="mobile-site-title">Simon Dobson</span>
+	    </div>
+	    <ul class="menu">
+<li><a href="../../../../index.html">Home</a></li>
+		    <li><a href="../../../../personal/">About&nbsp;me</a></li>
+		    <li><a href="../../../../research/">Research</a></li>
+		    <li><a href="../../../../development/projects/">Software</a></li>
+		    <li><a href="../../../../writing/">Writing</a></li>
+		    <li><a href="../../../../personal/contact/">Contact</a></li>
+		<li>
+<a href="../../../../rss.xml"><i class="fa fa-rss"></i></a>
+	    </li>
+</ul></nav></header><!-- Page Header --><div class="title-block post-format-icon-pin">
+	<div class="entry-meta">
+	    <span class="posted-on">
+		Posted on <a href="../c%2B%2B-template-macroprogramming-versus-lisp-macros/" rel="bookmark">Friday 21 June, 2024</a>
+	    </span>
+	</div>
+	<h1>C++ template macroprogramming versus Lisp&nbsp;macros</h1>
+    </div>
+
+	<!-- Page Content -->
+    <div class="site-content" role="main">
+	<article class="format-standard libretto-long-form"><div class="entry-content">
+		<div id="outline-container-org1aec963" class="outline-2">
+<h2 id="org1aec963">C++ template macroprogramming <i>versus</i> Lisp&nbsp;macros</h2>
+<div class="outline-text-2" id="text-org1aec963">
+<p>
+Following on from <a href="/2024/06/14/lisp-macros-versus-rust-macros/">Lisp macros versus Rust macros</a>, I also want to
+compare C++ templates to Lisp&nbsp;macros.
+</p>
+
+<p>
+Templates in C++ were designed as a way of generating typed versions
+of classes. The template declares some type variables that can be
+used as placeholders within a class declaration. When the template
+is instanciated and provided with actual type names, these are
+substituted for the type variables and the class is expanded. (It
+used to literally happen like this, so each use generated a
+completely new class. Modern compilers are smart enough to avoid the
+code repetition.) A classic example is a typed singly-linked&nbsp;list:
+</p>
+
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">A</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">List</span><span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">A</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">List</span><span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span><span class="w"> </span><span class="n">next</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+</pre></div>
+
+<p>
+However, the template system also allows values to be used in
+templates instead of (or as well as) type names. When these are
+encountered they are expanded at compile-time, and may cause further
+templates to be expanded. A classic example of this is to
+pre-compute some&nbsp;factorials:
+</p>
+
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="k">template</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="n">n</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">factorial</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial</span><span class="o">&lt;</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;::</span><span class="n">value</span><span class="w"> </span><span class="p">};</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">factorial</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">};</span>
+<span class="w">  </span><span class="p">};</span>
+</pre></div>
+
+<p>
+In this code the first clause defines a template that defines the
+usual recursive factorial calculation. The second clause bottoms-out
+this recursion by defining a specialised template that directly
+provides the factorial of zero. This can then be used in code such&nbsp;as:
+</p>
+
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="k">template</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="n">n</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">factorial</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial</span><span class="o">&lt;</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;::</span><span class="n">value</span><span class="w"> </span><span class="p">};</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">factorial</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">};</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">factorial</span><span class="o">&lt;</span><span class="mi">7</span><span class="o">&gt;::</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+</pre></div>
+
+<pre class="example">
+5040
+</pre>
+
+
+<p>
+which outputs the factorial of 7 as one might expect – but with the
+factorial having been computed at compile-time and inserted into the
+code as a literal, so the calculation introduces no run-time&nbsp;calculation.
+</p>
+
+<p>
+There are some stringent limitations on the ways in which templates
+can be expanded. They can&#8217;t have mutable variables for a start
+(that&#8217;s why we needed to use the recursive factorial algorithm).
+Weirdly this makes the template language a <i>functional programming
+sub-set</i> of C++. Having said that, as with Lisp macros, it allows
+calculations that can be statically performed forward to be brought
+forward to compile-time. This makes it useful for building read-only
+tables, unrolling loops, and the&nbsp;like.
+</p>
+
+<p>
+It&#8217;s <a href="https://en.wikipedia.org/wiki/Template_metaprogramming#Benefits_and_drawbacks_of_template_metaprogramming">claimed</a> that templates are now so akin to &#8220;normal&#8221; C++ that
+they incur less of a readability penalty. That&#8217;s a subjective
+statement that may be true. But the template language <i>isn&#8217;t</i> C++.
+While one <i>can</i> write programs in it, they&#8217;re <i>nothing like</i> the C++ one
+would normally write. The template language is Turing complete, but
+that just means one can encode any <i>computation</i>, not that one can
+encode any <i>particular program</i> – and most template programs will
+require massive re-writing from the code one would write normally
+for execution at run-time. Template macroprogramming is therefore a
+non-trivial programming task to&nbsp;undertake.
+</p>
+
+<p>
+Again as with Rust <i>versus</i> Lisp, C++ templates are an extension to
+the language rather than a core part of it, although they&#8217;re now
+used quite extensively in the standard library for generic typing.
+Also as with Rust, use of templates is semantically and
+syntactically distinct from &#8220;normal&#8221; C++ code or syntax, and it&#8217;s
+this that causes the programming&nbsp;load.
+</p>
+
+<p>
+A Lisp macro for the factorial computation, by contrast, looks
+<i>almost exactly</i> like a normal factorial function that can access the
+entire language, both when defined and when&nbsp;used:
+</p>
+
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="nv">factorial</span><span class="w"> </span><span class="p">(</span><span class="nv">n</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="k">labels</span><span class="w"> </span><span class="p">((</span><span class="nv">fact</span><span class="w"> </span><span class="p">(</span><span class="nv">m</span><span class="p">)</span>
+<span class="w">               </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="nv">m</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">                   </span><span class="mi">1</span>
+<span class="w">                   </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="nv">m</span><span class="w"> </span><span class="p">(</span><span class="nv">fact</span><span class="w"> </span><span class="p">(</span><span class="nb">1-</span><span class="w"> </span><span class="nv">m</span><span class="p">))))))</span>
+<span class="w">      </span><span class="o">`,</span><span class="p">(</span><span class="nv">fact</span><span class="w"> </span><span class="nv">n</span><span class="p">)))</span>
+
+<span class="w">  </span><span class="p">(</span><span class="nb">princ</span><span class="w"> </span><span class="p">(</span><span class="nv">factorial</span><span class="w"> </span><span class="mi">7</span><span class="p">))</span>
+</pre></div>
+
+<pre class="example">
+5040
+</pre>
+
+
+<p>
+The choice of macro or function&nbsp;(<code>defmacro</code> or <code>defun</code>) has no further
+<i>syntactic</i> implications for the rest of the program, and no
+restrictions on the code that can be used within the definition; we
+could re-write the to use iteration, mutable variables, or any other
+code, and it would simply be executed at compile-time. The whole
+language is there, all the time. We can show this by taking a
+factorial function written in &#8220;normal&#8221; Lisp and macro-ifying it to
+be computed at&nbsp;compile-time:
+</p>
+
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">fact</span><span class="w"> </span><span class="p">(</span><span class="nv">m</span><span class="p">)</span>
+<span class="w">    </span><span class="s">"Compute the factorial of M."</span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="nv">m</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="mi">1</span>
+<span class="w">        </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="nv">m</span><span class="w"> </span><span class="p">(</span><span class="nv">fact</span><span class="w"> </span><span class="p">(</span><span class="nb">1-</span><span class="w"> </span><span class="nv">m</span><span class="p">)))))</span>
+
+<span class="w">  </span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="nv">factorial</span><span class="w"> </span><span class="p">(</span><span class="nv">n</span><span class="p">)</span>
+<span class="w">    </span><span class="o">`,</span><span class="p">(</span><span class="nv">fact</span><span class="w"> </span><span class="nv">n</span><span class="p">))</span>
+
+<span class="w">  </span><span class="p">(</span><span class="nb">princ</span><span class="w"> </span><span class="p">(</span><span class="nv">factorial</span><span class="w"> </span><span class="mi">7</span><span class="p">))</span>
+</pre></div>
+
+<pre class="example">
+5040
+</pre>
+
+
+<p>
+More importantly, Lisp (and indeed Rust) macro can abstract over
+syntax as well as classes and values, and so allow the language to
+be extended with new first-class-at-compile-time structures.
+Templates are restricted to instanciating templates written with
+a fixed syntax; in Lisp the syntax has to be &#8220;Lisp-like&#8221;, although
+that&#8217;s a very light restriction; and in Rust a macro can use any
+syntax that Rust can&nbsp;tokenise.
+</p>
+
+<p>
+While C++ templates are sometimes described as macroprogramming (or
+metaprogramming), they&#8217;re addressing a substantially different use
+case to that addressed by Lisp or Rust macros, and doing so within a
+more restricted computational and syntactic&nbsp;envelope.
+</p>
+</div>
+</div>
+	    </div>
+
+
+	</article>
+</div>
+
+	<!-- Social sharing section -->
+  <div class="site-content">
+    <div class="social">
+      <ul>
+<li><a onclick="MastodonShare(this);" data-src="C%2B%2B%20template%20macroprogramming%20versus%20Lisp%20macros%20%23c%2B%2B%20%23lisp%20%23macroprogramming%20%23programming&amp;url=https://simondobson.org/2024/06/21/c%2B%2B-template-macroprogramming-versus-lisp-macros/"><span title="Share on Mastodon"><i class="fab fa-mastodon"></i></span></a></li>
+	<li><a href="https://twitter.com/share?text=C%2B%2B%20template%20macroprogramming%20versus%20Lisp%20macros%20%23c%2B%2B%20%23lisp%20%23macroprogramming%20%23programming&amp;url=https://simondobson.org/2024/06/21/c%2B%2B-template-macroprogramming-versus-lisp-macros/" target="_blak"><span title="Share on Twitter"><i class="fab
+	fa-twitter"></i></span></a></li>
+	<li><a href="https://www.reddit.com/submit?url=https://simondobson.org/2024/06/21/c%2B%2B-template-macroprogramming-versus-lisp-macros/&amp;title=C%2B%2B%20template%20macroprogramming%20versus%20Lisp%20macros%20%23c%2B%2B%20%23lisp%20%23macroprogramming%20%23programming" target="_blank"><span title="Share on Reddit"><i class="fab fa-reddit"></i></span></a></li>
+	<li><a href="https://www.linkedin.com/shareArticle?url=https://simondobson.org/2024/06/21/c%2B%2B-template-macroprogramming-versus-lisp-macros/&amp;source=https://simondobson.org/" target="_blank"><span title="Share on LinkedIn"><i class="fab fa-linkedin"></i></span></a></li>
+	<li><a href="mailto:?subject=C++%20template%20macroprogramming%20versus%20Lisp%20macros&amp;body=https://simondobson.org/2024/06/21/c%2B%2B-template-macroprogramming-versus-lisp-macros/"><span title="Share by email"><i class="fa fa-envelope"></i></span></a></li>
+      </ul>
+</div>
+  </div>
+
+	<!-- Tag Section -->
+    <div class="site-content navigation-post">
+	<div class="tag-head">Tags</div>
+	<div class="tag-list">
+		<a href="../../../../categories/c%2B%2B/">c++</a>
+		    <span>  </span>
+		<a href="../../../../categories/lisp/">lisp</a>
+		    <span>  </span>
+		<a href="../../../../categories/macroprogramming/">macroprogramming</a>
+		    <span>  </span>
+		<a href="../../../../categories/programming/">programming</a>
+	</div>
+    </div>
+
+	<!-- Post Navigation links -->
+<nav class="site-content navigation-post" role="navigation"><div class="previous">
+	    <a href="../../14/lisp-macros-versus-rust-macros/" rel="prev">
+		<span class="meta-nav">Older Post</span>Lisp macros versus Rust macros
+	    </a>
+	</div>
+	<div class="next">
+	    <a href="../../../../goodreads/sandworm-a-new-era-of-cyberwar-and-the-hunt-for-the-kremlins-most-dangerous-hackers/" rel="next">
+		<span class="meta-nav">Newer Post</span>Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin&#8217;s Most Dangerous Hackers
+	    </a>
+	</div>
+</nav><!-- Page Footer --><section class="footer-sidebar clear" role="complementary"><div class="widget-block">
+	    <aside class="widget"><h2 class="widget-title">Simon&nbsp;Dobson</h2>
+		<div class="widget-text">Aut tace aut loquere meliora silentio</div>
+	    </aside>
+</div>
+    </section><!-- Extra JavaScript --><script src="../../../../assets/js/mastodon-share.js"></script><!-- Site Attributions --><footer class="site-footer" role="contentinfo"><div class="site-info">
+	    <p></p>
+	    <p>
+	      Built with free and open-source software.
+	      Powered by <a href="https://getnikola.com/">Nikola</a> using a theme based on
+	      <a href="https://themes.getnikola.com/v7/libretto/">Libretto</a>.
+	    </p>
+	    <p>
+	      All content Copyright © 2010–2024 Simon Dobson and licensed under
+	      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">NC</span>-<span class="caps">SA</span>-4.0</a>
+	      unless otherwise&nbsp;noted.
+	    </p>
+	</div>
+	<div class="social">
+	    <ul class="menu"></ul>
+</div>
+    </footer>
+</body>
+</html>

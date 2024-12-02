@@ -1,0 +1,503 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Mon, 23 Sep 2024 05:18:45 GMT
+Etag: W/"6590eae7-887b"
+Last-Modified: Sun, 31 Dec 2023 04:15:35 GMT
+Server: nginx/1.23.3
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        Developing Babashka Scripts ::
+        endot — eschew obfuscation (and espouse elucidation)
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Babashka is amazing. It&amp;rsquo;s replaced Bash for 99.999% of my scripting needs. I thought it might be useful to describe my approach to writing Babashka scripts and compare it to how I used to write Bash.
+"
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://endot.org/2023/12/30/writing-babashka-scripts/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="https://endot.org/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://endot.org/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://endot.org/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developing Babashka Scripts"/>
+<meta name="twitter:description" content="Babashka is amazing. It&rsquo;s replaced Bash for 99.999% of my scripting needs. I thought it might be useful to describe my approach to writing Babashka scripts and compare it to how I used to write Bash."/>
+
+
+
+<meta property="og:title" content="Developing Babashka Scripts" />
+<meta property="og:description" content="Babashka is amazing. It&rsquo;s replaced Bash for 99.999% of my scripting needs. I thought it might be useful to describe my approach to writing Babashka scripts and compare it to how I used to write Bash." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://endot.org/2023/12/30/writing-babashka-scripts/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-12-30T20:13:14-08:00" />
+<meta property="article:modified_time" content="2023-12-30T20:13:14-08:00" /><meta property="og:site_name" content="endot" />
+
+
+
+
+
+<script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "jr7wwj1xjz");
+    </script></head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >./nate --verbose</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/archives">Archives</a></li>
+        
+      
+        
+          <li><a href="/notes">Notes</a></li>
+        
+      
+        
+          <li><a href="/projects">Projects</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/archives">Archives</a></li>
+      
+    
+      
+        <li><a href="/notes">Notes</a></li>
+      
+    
+      
+        <li><a href="/projects">Projects</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">Developing Babashka Scripts</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          Dec 30, 2023
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          <a href="https://endot.org/tags/programming/">#programming</a>&nbsp;
+        
+          <a href="https://endot.org/tags/clojure/">#clojure</a>&nbsp;
+        
+          <a href="https://endot.org/tags/babashka/">#babashka</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Babashka is amazing. It&rsquo;s replaced Bash for 99.999% of my scripting needs. I thought it might be useful to describe my approach to writing Babashka scripts and compare it to how I used to write Bash.</p>
+<h1 id="welcome">
+  Welcome
+  <a href="#welcome" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>If you aren&rsquo;t familiar with <a href="https://babashka.org/">Babashka</a>, it&rsquo;s a fast-starting Clojure runtime. Most Clojure code runs on the JVM, which has great power but not the fastest startup, meaning it isn&rsquo;t a great fit for command line scripting. Babashka bridges this gap by leveraging <a href="https://www.graalvm.org/">GraalVM</a> to make a Clojure-compatible runtime that starts instantly. Check out the <a href="https://book.babashka.org/">Babashka Book</a> for more information.</p>
+<p>In this post, I&rsquo;ll start off by showing why Bash scripting annoyed me and how I tried to bring Clojure into my scripting before finding (and loving) Babashka. Then I&rsquo;ll walk through a couple ways I approach writing scripts and then finish off with a neat trick that combines power with ease of use.</p>
+<h1 id="bashing-scripts">
+  Bashing scripts
+  <a href="#bashing-scripts" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>In the time before the Babashkanaissance, I would usually reach for Bash<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> to write small automation scripts. These scripts are the glue that fits between built-in commands and my development needs. I&rsquo;ve accumulated quite a few of these over the years, and they&rsquo;ve greatly enhanced my ability to get things done quickly.</p>
+<p>The best thing about Bash is that it&rsquo;s quick to get started. Throw a few commands in a file and you have something useful. For me, the problem with Bash was that any time I wanted to do any of the following, I would have to open my web browser and search for examples:</p>
+<ul>
+<li>Any conditional test (does this file exist? is this variable set?)</li>
+<li>Conditionals themselves (how many brackets? do I have to quote the variables?)</li>
+<li>Extract common code out into a function (how do I pass arguments? what about return values?)</li>
+<li>Collect up data and loop over it (basic syntax of a loop? how to terminate early?)</li>
+<li>Process command line arguments and provide a <code>--help</code> output (long and short options? defaults and required arguments?)</li>
+</ul>
+<p>Then there&rsquo;s a whole class of things that are possible, but rather arcane in Bash, such as maps, arrays, and string substitution.</p>
+<p>Most of these things would probably become second nature if I wrote Bash more often, but most of my time is usually spent working on a larger application in a different language. I think the issue is that the syntax and semantics of the language are enough different from any language I&rsquo;ve spent a serious amount of time with (Java, Python, Go, Clojure, etc), that I can&rsquo;t tie any knowledge I learn to another set of information in my head.</p>
+<p>So, I was stuck re-learning it each time I wrote a little script. It was a relatively small price to pay for the benefit of these small scripts.</p>
+<h1 id="bringing-some-clojure-to-the-problem">
+  Bringing some Clojure to the problem
+  <a href="#bringing-some-clojure-to-the-problem" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>I&rsquo;ve been a fan of Clojure for a while, and so I tried using it for command line scripts. Unfortunately, due to its hosted runtime (the JVM), startup time was too long for scripts that only lived a few seconds. I was excited when <a href="https://planck-repl.org/">planck</a> and <a href="https://github.com/anmonteiro/lumo">lumo</a>, both self-hosted ClojureScript runtimes, arrived on the scene. They satisfied the fast-startup requirement, but they bottomed out in the Javascript ecosystem and it&rsquo;s reliance on a single thread and callback-driven I/O. I have a few small experiments from back then, but it never caught on because it was difficult to call programs and read or write data, something that comes up rather often in command line scripts.</p>
+<p>Then, in the middle of 2019, Babashka arrived. It was different. Because it was based on the Java ecosystem, I could use <code>spit</code> and <code>slurp</code> as well as the <code>clojure.java.io</code> namespace to access the filesystem. I could execute other programs with <code>clojure.java.shell</code>. But it didn&rsquo;t stop there. Babashka also had command line options to automatically parse and emit data (<code>-i</code>, <code>-o</code>, <code>-I</code>, <code>-O</code>) which made it easier to write scripts that fit into pipelines. And there were Babashka-specific namespaces that made terminal and scripting tasks easier: <code>babashka.process</code> for running other programs, <code>babashka.fs</code> for filesystem operations, <code>babashka.deps</code> for dynamically adding dependencies, and many more. These namespaces drew Babashka closer to it&rsquo;s host environment (the terminal), making it more powerful in the process.</p>
+<p>I began reaching for Babashka more and more when I needed a small script or tool to enhance my environment. These days, my scripts tend to take one of two paths toward completion: either as a single file or in my script incubator.</p>
+<h1 id="quick-self-contained-scripts">
+  Quick, self-contained scripts
+  <a href="#quick-self-contained-scripts" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>Most of my scripts are of this variety. They are usually fewer than a couple dozen lines and are written in the fit of frustrated energy that occurs when there&rsquo;s a difference between what I need and the tools in front of me.</p>
+<p>Here&rsquo;s a template of what I usually start off with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>!/usr/bin/env bb <span style="color:#75715e">;; [1]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">ns </span>fooscript) <span style="color:#75715e">;; [2]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(when (= *file* (<span style="color:#a6e22e">System/getProperty</span> <span style="color:#e6db74">&#34;babashka.file&#34;</span>)) <span style="color:#75715e">;; [3]</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div><p>The important pieces here are:</p>
+<ol>
+<li>Shebang<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> line to elevate this program into Babashka</li>
+<li>The namespace declaration, ready to add any of Babashka&rsquo;s built-in libraries</li>
+<li>The &ldquo;one little trick&rdquo; that allows this file to be loaded into a REPL without executing it.</li>
+</ol>
+<p>After opening this file up, I start a Babashka repl with <code>bb nrepl-server</code> in a tmux split and then I connect Conjure and evaluate the file. In a couple quick moves, I&rsquo;ve reached cruising altitude and am ready to fly through my code.</p>
+<p>From here, it&rsquo;s normal Clojure development; creating small composable functions, combining them together to accomplish my task, rapidly iterating as I learn more about what I want to do.</p>
+<p>For the most part, I rely on Babashka&rsquo;s <a href="https://book.babashka.org/#libraries">built-in namespaces</a>. In the rare times I need something else, I don&rsquo;t need to convert the script into a &ldquo;real&rdquo; project. Instead, I rely on one of two techniques.</p>
+<p>The first is to use <code>babashka.deps</code>, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[babashka.deps <span style="color:#e6db74">:as</span> deps])
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">deps/add-deps</span> <span style="color:#f92672">&#39;</span>{<span style="color:#e6db74">:deps</span> {org.clj-commons/pretty {<span style="color:#e6db74">:mvn/version</span> <span style="color:#e6db74">&#34;2.2&#34;</span>}}})<span style="color:#f92672">&#39;</span>
+</span></span></code></pre></div><p>It&rsquo;s rather amazing that you can add any compatible library in-line like this. It&rsquo;s out of the realm of imagination in the old Bashiverse (or even Python, Ruby, or my old pal Perl).</p>
+<p>The second way I&rsquo;ve reached out for other functionality is by including other Babashka scripts. This is one reason why I have a namespace declaration at the top (the other being that it&rsquo;s tidier).</p>
+<p>For instance, I have a script called <a href="https://github.com/justone/dotfiles-personal/blob/personal/bin/bbts"><code>bbts</code></a> that will take incoming EDN data and look for any map key named timestamp and convert its value into a human readable date/time. This is super useful as my brain is not able to parse milliseconds directly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ cat sample.edn
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>:mulog/timestamp 1697642960678<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>:mulog/data <span style="color:#f92672">{</span>:timestamp 1697642960678<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ cat sample.edn | bbts
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>:mulog/timestamp <span style="color:#e6db74">&#34;2023-10-18 8:29:20.67 AM&#34;</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>:mulog/data <span style="color:#f92672">{</span>:timestamp <span style="color:#e6db74">&#34;2023-10-18 8:29:20.67 AM&#34;</span><span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>Well, I recently was writing another script that had timestamp data and wanted to use <code>bbts</code>&rsquo;s <code>humanize-timestamps</code> function. So I added this snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[babashka.fs <span style="color:#e6db74">:as</span> fs])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(-&gt; <span style="color:#e6db74">&#34;bbts&#34;</span> fs/which fs/file load-file)
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[bbts])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">comment</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">def </span>records ...)
+</span></span><span style="display:flex;"><span>  (map bbts/humanize-timestamps records))
+</span></span></code></pre></div><p>I think a side-effect of using Clojure is that all of its design sensibilities kick in, and so even these small scripts end up reasonably well structured (at least after a while). This means that there are functions like this that are useful to other scripts.</p>
+<p>I do think I will end up moving most of these functions into a library, but for ad-hoc sharing, this technique is pretty cool.</p>
+<h1 id="larger-scripts">
+  Larger scripts
+  <a href="#larger-scripts" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>Sometimes, I want to write a larger script. One that has good <code>--help</code> documentation and tests to back up the implementation. My last post, about a <a href="/2023/08/07/highlight/">script that highlights text</a>, is one such example.</p>
+<p>For this, I use an incubator called <a href="https://github.com/justone/bb-scripts">bb-scripts</a>. It&rsquo;s a Clojure project with some additional facilities for producing scripts that run in Babashka.</p>
+<p>To make a new script, all I have to do is create <a href="https://github.com/justone/bb-scripts/blob/master/README.md#set-up">two files</a>, one for the script&rsquo;s main namespace and one to run it under Babashka. Then, after I&rsquo;m done (or done enough), I run an included script to create an uberscript so that the new script can stand on its own.</p>
+<p>The advantages of using <code>bb-scripts</code> over the single file approach are:</p>
+<ul>
+<li>The Clojure nREPL implementation is slightly nicer in that it will pretty-print evaluation results.</li>
+<li>Scripts can share common library code for things like argument parsing and string handling.</li>
+<li>Tests are straightforward to specify and find, and can be run in both Babashka and Clojure.</li>
+<li>Fiddle code can be kept outside of the main namespaces.</li>
+</ul>
+<p>It&rsquo;s nice to have the regular Clojure development experience and then end up with a quick-running script. See the repository&rsquo;s <a href="https://github.com/justone/bb-scripts/blob/master/README.md#development-workflow">README</a> for more information about using it for yourself.</p>
+<h1 id="combining-power-with-ease-of-use">
+  Combining power with ease of use
+  <a href="#combining-power-with-ease-of-use" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>One thing I&rsquo;ve been experimenting with lately is using some of the <code>bb-scripts</code> libraries in my single-file scripts.
+The reason I want to do this is that I want my scripts to be well behaved citizens of the terminal. Every script should respond to <code>--help</code> and exit with a non-zero code if the arguments are invalid.
+With single-file scripts, this results in needing to implement the same boilerplate handling in each script. It&rsquo;s much easier in the <code>bb-scripts</code> incubator as there are shared namespaces to handle this.</p>
+<p>So, to bring the shared namespaces over, I created the <a href="https://github.com/justone/bb-scripts/blob/master/src/lib/script/alpha.clj"><code>lib.script.alpha</code></a> namespace. It bundles together argument parsing and reporting into a single function.</p>
+<p>For example, here&rsquo;s a very simple script to add two numbers. As you can see, almost half the script is devoted to command line argument handling.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>!/usr/bin/env bb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">ns </span>adder
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">:require</span> [clojure.string <span style="color:#e6db74">:as</span> str]
+</span></span><span style="display:flex;"><span>            [clojure.tools.cli <span style="color:#e6db74">:as</span> cli]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">defn </span>add
+</span></span><span style="display:flex;"><span>  [arg1 arg2]
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;The sum is %d.&#34;</span> (+ (<span style="color:#a6e22e">parse-long</span> arg1) (<span style="color:#a6e22e">parse-long</span> arg2))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">def </span>usage <span style="color:#e6db74">&#34;This script adds two numbers. Fancy, eh?&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">def </span>cli-opts
+</span></span><span style="display:flex;"><span>  [[<span style="color:#e6db74">&#34;-h&#34;</span> <span style="color:#e6db74">&#34;--help&#34;</span> <span style="color:#e6db74">&#34;Show help.&#34;</span>]
+</span></span><span style="display:flex;"><span>   [<span style="color:#e6db74">&#34;-a&#34;</span> <span style="color:#e6db74">&#34;--arg1 arg1&#34;</span> <span style="color:#e6db74">&#34;First number to add.&#34;</span> <span style="color:#e6db74">:missing</span> <span style="color:#e6db74">&#34;Must supply first number.&#34;</span>]
+</span></span><span style="display:flex;"><span>   [<span style="color:#e6db74">&#34;-b&#34;</span> <span style="color:#e6db74">&#34;--arg2 arg2&#34;</span> <span style="color:#e6db74">&#34;Second number to add.&#34;</span> <span style="color:#e6db74">:missing</span> <span style="color:#e6db74">&#34;Must supply second number.&#34;</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(when (= *file* (<span style="color:#a6e22e">System/getProperty</span> <span style="color:#e6db74">&#34;babashka.file&#34;</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let </span>[{<span style="color:#e6db74">:keys</span> [options errors summary]} (<span style="color:#a6e22e">cli/parse-opts</span> *command-line-args* cli-opts)
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">:keys</span> [help arg1 arg2]} options]
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">cond</span>
+</span></span><span style="display:flex;"><span>      help
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">do </span>(println usage)
+</span></span><span style="display:flex;"><span>          (println summary))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      errors
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">do </span>(println <span style="color:#e6db74">&#34;Error:\n&#34;</span>)
+</span></span><span style="display:flex;"><span>          (println (<span style="color:#a6e22e">str/join</span> <span style="color:#e6db74">&#34;\n&#34;</span> errors))
+</span></span><span style="display:flex;"><span>          (<span style="color:#a6e22e">println</span>)
+</span></span><span style="display:flex;"><span>          (println summary)
+</span></span><span style="display:flex;"><span>          (<span style="color:#a6e22e">System/exit</span> <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">:else</span>
+</span></span><span style="display:flex;"><span>      (println (<span style="color:#a6e22e">add</span> arg1 arg2)))))
+</span></span></code></pre></div><p>Here&rsquo;s the same script using <code>lib.script.alpha</code>. There is some boilerplate to pull in the additional dependency, but now the script can leverage the <code>simple-main</code> function with only a few lines are boilerplate.  The <code>simple-main</code> function takes options related to argument parsing and usage and returns the result of calling <code>clojure.tools.cli/parse-opts</code> only if there are no errors and <code>--help</code> was not passed. In addition to making sure the usage help is formatted properly for printing, the token <code>SCRIPT_NAME</code> is replaced with the actual script name so that examples are easier to show.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>!/usr/bin/env bb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">ns </span>better-adder
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">:require</span> [babashka.deps <span style="color:#e6db74">:as</span> deps]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">deps/add-deps</span> <span style="color:#f92672">&#39;</span>{<span style="color:#e6db74">:deps</span> {io.github.justone/bb-scripts {<span style="color:#e6db74">:sha</span> <span style="color:#e6db74">&#34;ecbd71747dd0527243286d98c5a209f6890763ff&#34;</span>}}})
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[lib.script.alpha <span style="color:#e6db74">:as</span> sa])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">def </span>main-opts
+</span></span><span style="display:flex;"><span>  {<span style="color:#e6db74">:help</span> <span style="color:#e6db74">&#34;This script adds two numbers. Fancy, eh?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Examples:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">           SCRIPT_NAME -a 2 -b 4
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">           SCRIPT_NAME -a 3 -b 2&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">:cli-options</span> [[<span style="color:#e6db74">&#34;-h&#34;</span> <span style="color:#e6db74">&#34;--help&#34;</span> <span style="color:#e6db74">&#34;Show help.&#34;</span>]
+</span></span><span style="display:flex;"><span>                 [<span style="color:#e6db74">&#34;-a&#34;</span> <span style="color:#e6db74">&#34;--arg1 arg1&#34;</span> <span style="color:#e6db74">&#34;First number to add.&#34;</span> <span style="color:#e6db74">:missing</span> <span style="color:#e6db74">&#34;Must supply first number.&#34;</span>]
+</span></span><span style="display:flex;"><span>                 [<span style="color:#e6db74">&#34;-b&#34;</span> <span style="color:#e6db74">&#34;--arg2 arg2&#34;</span> <span style="color:#e6db74">&#34;Second number to add.&#34;</span> <span style="color:#e6db74">:missing</span> <span style="color:#e6db74">&#34;Must supply second number.&#34;</span>]]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">defn </span>add
+</span></span><span style="display:flex;"><span>  [{{<span style="color:#e6db74">:keys</span> [arg1 arg2]} <span style="color:#e6db74">:options</span>}]
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;The sum is %d.&#34;</span> (+ (<span style="color:#a6e22e">parse-long</span> arg1) (<span style="color:#a6e22e">parse-long</span> arg2))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(when (= *file* (<span style="color:#a6e22e">System/getProperty</span> <span style="color:#e6db74">&#34;babashka.file&#34;</span>))
+</span></span><span style="display:flex;"><span>  (println (<span style="color:#a6e22e">add</span> (<span style="color:#a6e22e">sa/simple-main</span> main-opts))))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ./better_adder.clj -h
+</span></span><span style="display:flex;"><span>usage: better_adder.clj <span style="color:#f92672">[</span>opts<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This script adds two numbers. Fancy, eh?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Examples:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  better_adder.clj -a <span style="color:#ae81ff">2</span> -b <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>  better_adder.clj -a <span style="color:#ae81ff">3</span> -b <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>options:
+</span></span><span style="display:flex;"><span>  -h, --help       Show help.
+</span></span><span style="display:flex;"><span>  -a, --arg1 arg1  First number to add.
+</span></span><span style="display:flex;"><span>  -b, --arg2 arg2  Second number to add.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ ./better_adder.clj -a <span style="color:#ae81ff">3</span> -b <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>The sum is 6.
+</span></span></code></pre></div><p>At this point, <code>lib.script.alpha</code> is just an experiment, but I like the direction of making small helpers like this to ease single-file script creation.</p>
+<h1 id="wrapping-up">
+  Wrapping up
+  <a href="#wrapping-up" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>So that&rsquo;s how I write Babashka scripts. It&rsquo;s great to use the same language to write applications and extend my development and operations environment.</p>
+<p>Oh, one last thing. I did a talk a couple years ago about using Babashka on the command line and I covered some of this same information. Check it out below.</p>
+<p>Enjoy.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/RogyxI-GaGQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Quite a bit earlier in my career, the language would have been Perl, but that knowledge left my brain several years ago.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Did you know that shebangs are <a href="https://cpu.land/how-to-run-a-program#format-highlight-scripts">a kernel feature</a>?&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="https://endot.org/2023/08/07/highlight/">
+                  <span class="button__text">Highlight: a script for coloring important text</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >./nate --verbose</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFJSK1VGMB"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-DFJSK1VGMB', { 'anonymize_ip': false });
+}
+</script>
+
+    </body>
+</html>

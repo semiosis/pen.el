@@ -1,0 +1,781 @@
+HTTP/1.1 200 OK
+Date: Thu, 17 Oct 2024 23:17:13 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 66871
+Connection: keep-alive
+Set-Cookie: AWSALBTG=MD9jS2ULldO0Y/9cFESBuV35vbWEDaux6hCTOsmMnTSn32qLZG5Hf4RogfCDo/PHIohjfstQBWop0wV60coxnGwnpmo7w0e5chaz5rcIY9a1PyjJDQkt1oM+WG1dH+xmWhweGCSFmPxIakW+Pfs6VrMypQQ9B0DF1jiNky5fy1kcwg7ulKE=; Expires=Thu, 24 Oct 2024 23:17:13 GMT; Path=/
+Set-Cookie: AWSALBTGCORS=MD9jS2ULldO0Y/9cFESBuV35vbWEDaux6hCTOsmMnTSn32qLZG5Hf4RogfCDo/PHIohjfstQBWop0wV60coxnGwnpmo7w0e5chaz5rcIY9a1PyjJDQkt1oM+WG1dH+xmWhweGCSFmPxIakW+Pfs6VrMypQQ9B0DF1jiNky5fy1kcwg7ulKE=; Expires=Thu, 24 Oct 2024 23:17:13 GMT; Path=/; SameSite=None; Secure
+Set-Cookie: AWSALB=NoO+s3ch5HZR8zDcCqX/JhN9oc/NJjVxviAg9AuiWpy26BL++vFkotrql1kyF3TheQEfQFKTc/OrEqYBhCVt0qqP2t1mzqTf9ZbQU26xd/iHX9aMgxu7yaGgdW0r; Expires=Thu, 24 Oct 2024 23:17:13 GMT; Path=/
+Set-Cookie: AWSALBCORS=NoO+s3ch5HZR8zDcCqX/JhN9oc/NJjVxviAg9AuiWpy26BL++vFkotrql1kyF3TheQEfQFKTc/OrEqYBhCVt0qqP2t1mzqTf9ZbQU26xd/iHX9aMgxu7yaGgdW0r; Expires=Thu, 24 Oct 2024 23:17:13 GMT; Path=/; SameSite=None; Secure
+Cache-Control: private
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: __RequestVerificationToken=rxcx1MOCHltkm7kLodWHdSZJwaO-BnbQw4c9npq--PW5Xx5eCsjP2rpRJhEv0dGs8UyVQcbDkhTqANdtXNfx5fD4EmIThLem4nw2qnAGB7c1; path=/; secure; HttpOnly
+strict-transport-security: max-age=63072000
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=2,user-scalable=no">
+    
+    <title>Doctrinal Statement | Grace Community Church</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3782401-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-3782401-6');
+    </script>
+
+    <![if !(lte IE 7)]>
+    <link href="/Content/css?v=YPBAB-_I2BTFuaYIN7pkTIsIFv7qB6PCFugHTlDXqv41" rel="stylesheet"/>
+
+    <![endif]>
+
+
+
+
+<link rel="stylesheet" href="https://use.typekit.net/kvy4ngl.css">
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Content/icons/apple-touch-icon.png?v=3">
+    <link rel="icon" type="image/png" href="/Content/icons/favicon-32x32.png?v=3" sizes="32x32">
+    <link rel="icon" type="image/png" href="/Content/icons/favicon-16x16.png?v=3" sizes="16x16">
+    <link rel="manifest" href="/Content/icons/manifest.json?v=3">
+    <link rel="mask-icon" href="/Content/icons/safari-pinned-tab.svg?v=3" color="#494542">
+    <link rel="shortcut icon" href="/Content/icons/favicon.ico?v=3">
+
+    <meta name="theme-color" content="#494542">
+    <style>
+        .bookmark {
+            background: none !important;
+            border: none;
+            padding: 0 !important;
+            /*optional*/
+            font-family: arial, sans-serif;
+            /*input has OS specific font-family*/
+            color: #069;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Begin Header -->
+    <header class="topnav" id="top">
+
+        
+            <div class="navbar navbar-fixed-top">
+                <div class="container">
+
+                    <button type="button" class="navbar-toggle toggle-menu" data-toggle="offcanvas" data-target=".navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <a class="navbar-brand" href="/">Grace Church</a>
+
+                        <button type="button" class="navbar-toggle toggle-members" data-toggle="offcanvas" data-target=".navbar-members"><i class="fa fa-user"></i></button>
+
+                    <a href="/search" class="navbar-toggle toggle-search-btn" title="Search"  role="button"><i class="fa fa-search"></i></a>
+
+
+
+
+                    <nav id="navbar-menu" class="navbar-menu navbar-offcanvas offcanvas navmenu-fixed-left">
+                        <button type="button" class="navmenu-brand" data-toggle="offcanvas" data-target=".navbar-menu" data-canvas="body"><i class="fa fa-times"></i> Close</button>
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/about">Introduction</a></li>
+                                    <li><a href="/about/gospel">The Gospel</a></li>
+                                    <li><a href="/about/history">History</a></li>
+                                    <li><a href="/about/leadership">Leadership</a></li>
+                                    <li><a href="/about/elders">Elders</a></li>
+                                    <li><a href="/about/doctrinal-statement">Doctrinal Statement</a></li>
+                                    <li><a href="/about/distinctives/index">Distinctives</a></li>
+                                    <li><a href="/about/sunday-fellowships">Sunday Fellowships</a></li>
+                                    <li><a href="/about/bible-studies">Bible Studies</a></li>
+                                    <li><a href="/about/campus">Campus</a></li>
+                                    <li><a href="/about/contact">Contact</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown yamm-fw">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Ministries <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="row">
+                                            <div class="column">
+                                                <h2 class="dropdown-header">Ministries</h2>
+                                                <ul>
+                                                    <li><a href="/ministries"><i class="fa fa-th"></i> Overview</a></li>
+                                                    <li><a href="/motw">Men of the Word</a></li>
+                                                    <li><a href="/women">Women’s Ministry</a></li>
+                                                    <li><a href="/crossroads">College (Crossroads)</a></li>
+                                                    <li><a href="/180">High School (180)</a></li>
+                                                    <li><a href="/xchange">Middle School (Xchange)</a></li>
+                                                    <li><a href="/children">Children’s Ministry</a></li>
+                                                    <li><a href="/espanol">Grace en Español</a></li>
+                                                    <li><a href="/special">Special Ministry</a></li>
+                                                    <li><a href="/music">Music Ministry</a></li>
+                                                </ul>
+                                                <h2 class="dropdown-header dh2" style="margin-top: 15px;">Outreach</h2>
+
+                                                <ul>
+                                                    <li><a href="/outreach">International Ministries</a></li>
+                                                    <li><a href="/stm">Short-Term Ministries</a></li>
+                                                    <li><a href="/local">Local Outreach</a></li>
+                                                </ul>
+
+
+                                            </div>
+
+                                            <div class="column">
+
+                                                <h2 class="dropdown-header">Fellowship Groups</h2>
+                                                <ul>
+                                                    <li><a href="/about/sunday-fellowships"><i class="fa fa-th"></i> Overview</a></li>
+                                                    <li><a href="/anchored">Anchored</a></li>
+                                                    <li><a href="/commissioned">Commissioned</a></li>
+                                                    <li><a href="/cornerstone">Cornerstone</a></li>
+                                                    <li><a href="/gracelife">GraceLife</a></li>
+                                                    <li><a href="/jointheirs">Joint Heirs</a></li>
+                                                    <li><a href="/sojourners">Sojourners</a></li>
+                                                    <li><a href="/steadfast">Steadfast</a></li>
+                                                </ul>
+
+                                                <h2 class="dropdown-header dh2" style="margin-top: 15px;">Member Services</h2>
+                                                <ul>
+                                                    <li><a href="/membership">Membership</a></li>
+                                                    <li><a href="/serve">Serving</a></li>
+                                                    <li><a href="/counseling">Counseling</a></li>
+                                                    <li><a href="/congregationalcare">Congregational Care</a></li>
+                                                    <li><a href="/weddings">Weddings</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="column">
+
+
+                                                <h2 class="dropdown-header">Training &amp; Resources</h2>
+                                                <ul>
+                                                    <li><a href="/fof">Fundamentals of the Faith</a></li>
+                                                    <li><a href="/gracebooks">Grace Books</a></li>
+                                                    <li><a href="/curriculum">Grace Curriculum</a></li>
+                                                    <li><a href="/evangelism">Grace Evangelism</a></li>
+                                                    <li><a href="/equip">Grace Equip</a></li>
+                                                    <li><a href="/gracemedia">Grace Media</a></li>
+                                                    <li><a href="/premarital">Premarital &amp; Marriage</a></li>
+                                                </ul>
+
+
+                                                <h2 class="dropdown-header dh2" style="margin-top: 15px;">Schools (K–12)</h2>
+                                                <ul>
+                                                    <li><a href="/education">Education at Grace</a></li>
+                                                    <li><a href="/classicalconversations">Classical Conversations</a></li>
+                                                    <li><a href="/faithpsp">Faith Christian School PSP</a></li>
+                                                    <li><a href="/academy">Grace Academy</a></li>
+                                                    <li><a href="/legacychristian">Legacy Christian Academy</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="column">
+
+
+                                                <h2 class="dropdown-header">Family of Ministries</h2>
+                                                <ul>
+                                                    <li><a href="/gty">Grace to You</a></li>
+                                                    <li><a href="/macarthur-trust">John MacArthur Trust</a></li>
+                                                    <li><a href="/tmai">The Master’s Academy International</a></li>
+                                                    <li><a href="/tms">The Master’s Seminary</a></li>
+                                                    <li><a href="/tmu">The Master’s University</a></li>
+                                                </ul>
+
+                                                <h2 class="dropdown-header dh2" style="margin-top: 15px;">Other</h2>
+                                                <ul>
+                                                    <li><a href="/regen">Camp Regeneration</a></li>
+                                                    <li><a href="/conferenciaexpositores">Conferencia Expositores</a></li>
+                                                    <li><a href="/graceadvance">Grace Advance</a></li>
+                                                    <li><a href="/shepherdsconference">Shepherds Conference</a></li>
+                                                    <li><a href="/vbs">Vacation Bible School</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="/sermons"  role="button">Sermons</a></li>
+                            <li><a href="/news"  role="button">News <span class="hidden-sm">& Events</span></a></li>
+                            <li><a href="/giving"  role="button">Give</a></li>
+                        </ul>
+
+                    </nav>
+                    <nav id="navbar-members" class="navbar-members navbar-offcanvas offcanvas navmenu-fixed-right">
+                        <button type="button" class="navmenu-brand" data-toggle="offcanvas" data-target=".navbar-members" data-canvas="body"><i class="fa fa-times"></i> Close</button>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle link-members" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="text-login">Account</span></a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="yamm-content">
+
+<form action="/account/login" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="w4mGSFFz3Uyk_Lx4tRP_VoOVVhvxctQnh60s3VuVfdjgXDhpwh0lZTfPLOG8ckskfdZ6jcEnd3eAVEFlqegP-F4Q7-C5IRY2_u7hzt_qoyo1" />    <div class="form-group">
+            <input class="form-control" data-val="true" data-val-regex="E-mail is not valid" data-val-regex-pattern="^[a-zA-Z0-9_\.-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}$" data-val-required="The Email Address field is required." id="Email" name="Email" placeholder="Email" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+        </div>
+    <div class="form-group">
+            <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+
+        </div>
+    <div class="form-group">
+        <input data-val="true" data-val-required="The Remember Me field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
+        <label class="control-label" for="RememberMe">Remember Me</label>
+    
+    </div>
+<input id="returnUrl" name="returnUrl" type="hidden" value="/about/doctrinal-statement/" />    <button type="submit" class="btn"><i class="fa fa-sign-in"></i> Sign in</button>
+</form><ul>
+    <li><a href="/account/create">Create Account</a></li>
+</ul>
+                                        <ul>
+                                            <li><a href="https://www.gracechurch.org/account/forgot">Forgot Password?</a></li>
+                                            <li><a href="/faq/account">Account FAQ</a></li>
+                                        </ul>
+                                            <!--add logic to only display if logged in-->
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </div>
+    </header>
+    <script src="/bundles/jquery?v=c3m4AIyOtH1xXIYQcZ7hwdM7mQFh9uVIdOdVBO27CFk1"></script>
+
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="/bundles/jqueryval?v=CscDCYKiyigBhIQTJsxhIQqf-LoZUf7GH2o1SgDjN2I1"></script>
+
+    <script src="/bundles/custommain?v=3ymo7Vh77Bpsd35RUJh6O4q42V9vjguohDP3t2dX7e41"></script>
+
+
+    <!-- End Header -->
+    
+
+<div class="header-box-about">
+    <div class="header-box-wrap" style="background: url('https://s3.amazonaws.com/static.gracechurch.org/images/lg/gracewalk.jpg')">
+        <div class="container">
+            <h2>Welcome to Grace</h2>
+        </div>
+    </div>
+</div>
+<div class="container subpage-links">
+    <div class="row">
+
+
+<div class="subnav-collapse">
+
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subnav">
+                        About <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="subnav">
+                    <ul class="nav navbar-nav">
+                        <li class="inactive"><a href="/about">About</a></li>
+                        <li class="inactive"><a href="/about/gospel">The Gospel</a></li>
+                        <li class="inactive"><a href="/about/history">History</a></li>
+                        <li class="inactive"><a href="/about/leadership">Leadership</a></li>
+                        <li class="inactive"><a href="/about/elders">Elders</a></li>
+                        <li class="active"><a href="/about/doctrinal-statement">Doctrinal Statement</a></li>
+                            <li><a href="/about/distinctives/index">Distinctives</a></li>
+                        <li class="inactive"><a href="/about/sunday-fellowships">Sunday Fellowships</a></li>
+                        <li class="inactive"><a href="/about/bible-studies">Bible Studies</a></li>
+                        <li class="inactive"><a href="/about/campus">Campus</a></li>
+                        <li class="inactive"><a href="/about/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sub-content">
+            <h1>What We Teach</h1>
+            <p>The Doctrinal Statement of Grace Community Church</p>
+            
+            
+            <h2>
+                The Holy Scriptures
+            </h2>
+            <p>
+                We teach that the Bible is God&rsquo;s written revelation to man, and thus the sixty-six books of the Old and New Testaments, given by inspiration of the Holy Spirit, constitute the Word of God. That is, we teach the plenary verbal inspiration of Scripture, that every word is equally breathed out by God in all its parts (1 Corinthians 2:7&ndash;14; 2 Timothy 3:16; 2 Peter 1:20&ndash;21).
+            </p>
+            <p>
+                We teach that the Word of God is an objective, propositional revelation (1 Thessalonians 2:13; 1 Corinthians 2:13), infallible (John 10:35), and absolutely inerrant in the original documents, being free from all falsehood, fraud, or deceit (Psalm 12:6; 119:160; Proverbs 30:5).
+            </p>
+            <p>
+                We teach that the Bible constitutes the only infallible rule of faith and practice and is true and reliable in all the matters it addresses (Matthew 5:18; 24:35; John 10:35; 16:12&ndash;13; 17:17; 1 Corinthians 2:13; 2 Timothy 3:15&ndash;17; Hebrews 4:12; 2 Peter 1:20&ndash;21).
+            </p>
+            <p>
+                We teach that God spoke in His written Word by a process of dual authorship. The Holy Spirit so superintended the human authors that, through their individual personalities and different styles of writing, they composed and recorded God&rsquo;s Word to man (2 Peter 1:20&ndash;21) without error in the whole or in the part (Matthew 5:18; 2 Timothy 3:16).
+            </p>
+            <p>
+                We teach the literal, grammatical, historical interpretation of Scripture, which affirms that, whereas there may be several applications of any given passage of Scripture, there is but one true interpretation. The meaning of Scripture is to be found as one diligently and consistently applies this interpretive method with the aid of the illumination of the Holy Spirit (John 7:17; 16:12&ndash;15; 1 Corinthians 2:7&ndash;15; 1 John 2:20). It is the responsibility of believers to ascertain carefully the true intent and meaning of Scripture, recognizing that proper application is binding on all generations. Yet the truth of Scripture stands in judgment of men; never do men stand in judgment of it.
+            </p>
+            <p>
+                We teach that literal, grammatical, historical interpretation yields the affirmation that God created the world in six literal twenty-four-hour days (Genesis 1:1&ndash;2:3; Exodus 20:11; 31:17), that He specially created man and woman (Genesis 1:26&ndash;28; 2:5&ndash;25), and that He defined marriage as a lifelong covenant between one man and one woman (Genesis 2:24; Matthew 19:5; cf. Malachi 2:14). Scripture elsewhere dictates that any sexual activity outside of marriage is an abomination before the Lord (Exodus 20:14; Leviticus 18:1&ndash;30; Matthew 5:27&ndash;32; 19:1&ndash;9; 1 Corinthians 5:1&ndash;5; 6:9&ndash;10; 1 Thessalonians 4:1&ndash;7).
+            </p>
+            <h2>
+                God
+            </h2>
+            <p>
+                We teach that there is but one living and true God (Deuteronomy 6:4; Isaiah 45:5&ndash;7; 1 Corinthians 8:4), an eternal (Revelation 1:8), infinite (Job 11:7&ndash;10), absolute Spirit (John 4:24), without parts (Exodus 3:14; 1 John 1:5; 4:8), perfect in all His attributes, including incomprehensibility (Romans 11:33), omniscience (1 John 3:20), omnipotence (Genesis 18:14), omnipresence (Psalm 139:7&ndash;10), immutability (Malachi 3:6), and aseity (Exodus 3:14; John 5:26).
+            </p>
+            <p>
+                We teach that this God is one in essence (having one mind, one will, and one power), eternally existing in three coequal and consubstantial Persons&mdash;Father, Son, and Holy Spirit (Matthew 28:19; 2 Corinthians 13:14)&mdash;each uncreated and distinct, and each equally deserving worship and obedience. Therefore, we teach that the Father is of none, neither begotten nor proceeding (John 5:26); the Son is eternally begotten of the Father (John 1:14; 1:18; 3:16; 5:26; cf. Psalm 2:7); and the Holy Spirit eternally proceeds from the Father and the Son (John 15:26).
+            </p>
+            <p>
+                <strong>God the Father</strong>
+            </p>
+            <p>
+                We teach that God the Father, the first Person of the Trinity, orders and disposes all things according to His own purpose and grace (Psalm 145:8&ndash;9; 1 Corinthians 8:6). He is the Creator of all things (Genesis 1:1&ndash;31; Ephesians 3:9). He is sovereign in creation, providence, and redemption (Psalm 103:19; Romans 11:36). His fatherhood involves both His designation within the Trinity and His relationship with mankind. As Creator, He is Father to all men (Ephesians 4:6), but He is spiritual Father only to believers (Romans 8:14; 2 Corinthians 6:18).
+            </p>
+            <p>
+                He has decreed for His own glory all things that come to pass (Ephesians 1:11). He continually upholds, directs, and governs all creatures and events (1 Chronicles 29:11). In His sovereignty He is neither author nor approver of sin (Habakkuk 1:13; John 8:38&ndash;47), nor does He abridge the accountability of moral, intelligent creatures (1 Peter 1:17). He has graciously chosen from eternity past those whom He would save to be His own people (Ephesians 1:4&ndash;6); He saves from sin all who come to Him through faith in Jesus Christ; He adopts as His own all those who come to Him and thereby becomes Father to them (John 1:12; Romans 8:15; Galatians 4:5; Hebrews 12:5&ndash;9).
+            </p>
+            <p>
+                <strong>God the Son</strong>
+            </p>
+            <p>
+                We teach that Jesus Christ, the second Person of the Trinity, is eternal God, coequal, consubstantial, and coeternal with the Father, possessing all the divine perfections (John 1:1; 10:30; 14:9).
+            </p>
+            <p>
+                We teach that all creation came into being through the eternal Son (John 1:3; 1 Corinthians 8:6; Colossians 1:16; Hebrews 1:2) and is presently sustained by Him (Colossians 1:17; Hebrews 1:3).
+            </p>
+            <p>
+                We teach that in the incarnation the eternal Son, the second Person of the Trinity, without altering His divine nature or surrendering any of the divine attributes, made Himself of no reputation by taking on a full human nature consubstantial with our own, yet without sin (Philippians 2:5&ndash;8; Hebrews 4:15; 7:26).
+            </p>
+            <p>
+                We teach that He was conceived by the Holy Spirit in the womb of the virgin Mary (Luke 1:35) and thus born of a woman (Galatians 4:4&ndash;5), so that two whole, perfect, and distinct natures, the divine and the human, were joined together in one person, without confusion, change, division, or separation. He is therefore very God and very man, yet one Christ, the only mediator between God and man.
+            </p>
+            <p>
+                We teach that in His incarnation, Christ fully possessed His divine nature, attributes, and prerogatives (Colossians 2:9; cf. Luke 5:18&ndash;26; John 16:30; 20:28). However, in the state of His humiliation, He did not always fully express the glories of His majesty, concealing them behind the veil of His genuine humanity (Matthew 17:2; Mark 13:32; Philippians 2:5&ndash;8). According to His human nature, He acts in submission to the Father (John 4:34; 5:19, 30; 6:38) by the power of Holy Spirit (Isaiah 42:1; Matthew 12:28; Luke 4:1, 14), while, according to His divine nature, He acts by His authority and power as the eternal Son (John 1:14; cf. 2:11; 10:37&ndash;38; 14:10&ndash;11).
+            </p>
+            <p>
+                We teach that our Lord Jesus Christ accomplished the redemption of His people through the shedding of His blood and sacrificial death on the cross. We teach that His death was voluntary, vicarious, substitutionary, propitiatory, and redemptive (Isaiah 53:3&ndash;6; John 10:15, 18; Romans 3:24&ndash;25; 5:8; 1 Peter 2:24).
+            </p>
+            <p>
+                We teach that on the basis of the efficacy of the death of our Lord Jesus Christ, the believing sinner is freed from the punishment, the penalty, the power, and one day the very presence of sin; and that he is declared righteous, given eternal life, and adopted into the family of God (Romans 3:25; 5:8&ndash;9; 2 Corinthians 5:14&ndash;15; 1 Peter 2:24; 3:18).
+            </p>
+            <p>
+                We teach that our justification is made sure by His literal, physical resurrection from the dead and that He is now ascended to the right hand of the Father, where He intercedes as our Advocate and High Priest (Matthew 28:6; Luke 24:38&ndash;39; Acts 2:30&ndash;31; Romans 8:34; 1 Corinthians 15:12&ndash;23; Hebrews 7:25; 9:24; 1 John 2:1).
+            </p>
+            <p>
+                We teach that in the resurrection of Jesus Christ from the grave, God confirmed the deity of His Son and gave proof that God has accepted the atoning work of Christ on the cross. Jesus&rsquo; bodily resurrection is also the guarantee of a future resurrection life for all believers (John 5:26&ndash;29; 14:19; Romans 1:4; 4:25; 6:5&ndash;10; 1 Corinthians 15:20, 23).
+            </p>
+            <p>
+                We teach that Jesus Christ will return to receive the church, which is His Body, unto Himself at the rapture, and, returning with His church in glory, will establish His millennial kingdom on earth (Acts 1:9&ndash;11; 1 Thessalonians 4:13&ndash;18; Revelation 20).
+            </p>
+            <p>
+                We teach that the Lord Jesus Christ is the One through whom God will judge all mankind (John 5:22&ndash;23): believers (1 Corinthians 3:10&ndash;15; 2 Corinthians 5:10); living inhabitants of the earth at His glorious return (Matthew 25:31&ndash;46); and the unbelieving dead at the Great White Throne (Revelation 20:11&ndash;15).
+            </p>
+            <p>
+                As the Mediator between God and man (1 Timothy 2:5), the Head of His Body the church (Ephesians 1:22; 5:23; Colossians 1:18), and the coming universal King, who will reign on the throne of David (Isaiah 9:6; Luke 1:31&ndash;33), He is the final Judge of all who fail to place their trust in Him as Lord and Savior (Matthew 25:14&ndash;46; Acts 17:30&ndash;31).
+            </p>
+            <p>
+                <strong>God the Holy Spirit</strong>
+            </p>
+            <p>
+                We teach that the Holy Spirit, the third Person of the Trinity, is eternal God, coequal, consubstantial, and coeternal with the Father and the Son (Matthew 28:19; Acts 5:3&ndash;4; 1 Corinthians 12:4&ndash;6; 2 Corinthians 13:14), possessing all the divine perfections, including eternality (Hebrews 9:14), omnipresence (Psalm 139:7&ndash;10), omniscience (Isaiah 40:13&ndash;14), omnipotence (Romans 15:13), and truth (John 16:13).
+            </p>
+            <p>
+                We teach that the Holy Spirit is not merely a force or a power but a distinct divine person who thinks (1 Corinthians 2:10&ndash;13), wills (1 Corinthians 12:11), speaks (Acts 28:25&ndash;26), and can be grieved (Ephesians 4:30).
+            </p>
+            <p>
+                We teach that it is the work of the Holy Spirit to execute the divine will with relation to all mankind. We recognize His sovereign activity in creation (Genesis 1:2), the incarnation (Matthew 1:18), the written revelation (2 Peter 1:20&ndash;21), and the work of salvation (John 3:5&ndash;7).
+            </p>
+            <p>
+                We teach that work of the Holy Spirit in this age began at Pentecost (Acts 1:5; 2:4), when He was sent by the Father and the Son as promised by Christ (John 14:16&ndash;17; 15:26) to initiate and complete the building of the Body of Christ (Ephesians 2:22), which is the church (Ephesians 1:21&ndash;22). The Holy Spirit convicts the world of sin and righteousness and judgment (John 16:8&ndash;11), glorifies the Lord Jesus Christ (John 16:14), and transforms believers into the image of Christ (Romans 8:29; 2 Corinthians 3:18).
+            </p>
+            <p>
+                We teach that the Holy Spirit is the supernatural and sovereign agent in regeneration (Titus 3:5), baptizing all believers into the body of Christ (1 Corinthians 12:13). The Holy Spirit also indwells them (Romans 8:9), sanctifies them (2 Corinthians 3:18), instructs them (1 John 2:20, 27), empowers them for service (1 Corinthians 12:4, 9), and seals them unto the day of redemption (2 Corinthians 1:22; Ephesians 1:13; 4:30).
+            </p>
+            <p>
+                We teach that the Holy Spirit is the divine Teacher, who guided the apostles and prophets into all truth as they wrote God&rsquo;s special revelation, the Bible (John 14:26; 16:13; cf. 2 Peter 1:19&ndash;21). Every believer possesses the indwelling presence of the Holy Spirit from the moment of salvation (Romans 8:9), and it is the duty of all those born of the Spirit to be filled with (controlled by) the Spirit (Ephesians 5:18).
+            </p>
+            <p>
+                We teach that the Holy Spirit gives spiritual gifts to the church unto its edification (Acts 1:8; 1 Corinthians 12:4&ndash;11; 1 Corinthians 14:26). The Holy Spirit glorifies neither Himself nor His gifts by ostentatious displays (1 Corinthians 14:33), but He does glorify Christ (John 16:13&ndash;14) by applying His work of redemption to His people in regeneration and sanctification (2 Corinthians 3:18; Titus 3:5).
+            </p>
+            <p>
+                We teach, in this respect, that God the Holy Spirit is sovereign in the bestowing of all His gifts for the perfecting of the saints today (1 Corinthians 12:4&ndash;11; Ephesians 4:7&ndash;12), and that speaking in tongues and the working of sign miracles in the beginning days of the church have now ceased (1 Corinthians 13:8&ndash;10; Ephesians 2:20), having fulfilled their purpose of pointing to and authenticating the apostles as revealers of divine truth (2 Corinthians 12:12; Hebrews 2:1&ndash;4). The miraculous gifts were never intended to be characteristic of the lives of believers (e.g., 1 Timothy 5:23).
+            </p>
+            <h2>
+                Man
+            </h2>
+            <p>
+                We teach that man was directly and immediately created by God (Genesis 2:7) in His image and likeness (Genesis 1:26&ndash;28; 5:1; James 3:9), free of sin (Genesis 1:31) and endowed with a rational nature, intelligence, volition, and moral responsibility to God (Genesis 2:15&ndash;25).
+            </p>
+            <p>
+                We teach that mankind was created by God as either male or female, distinct sexes that are biologically defined and divinely imparted to each individual at conception (Genesis 1:27; 2:5&ndash;23; Job 3:3; Psalm 139:13&ndash;14; 1 Corinthians 11:3&ndash;15). Attempting to confuse the two sexes is an abomination to God (Leviticus 18:22; Deuteronomy 22:5; Romans 1:26&ndash;27; 1 Corinthians 6:9&ndash;10).
+            </p>
+            <p>
+                We teach that God&rsquo;s intention in the creation of man was that man should glorify God, enjoy God&rsquo;s fellowship, live his life according to the will of God, and by this accomplish God&rsquo;s purpose for man in the world (Isaiah 43:7; 1 Corinthians 10:31; Colossians 1:16; Revelation 4:11).
+            </p>
+            <p>
+                We teach that, in Adam&rsquo;s sin of disobedience to the revealed will and Word of God, man lost his innocence, incurred the penalty of spiritual and physical death, became subject to the wrath of God, and became inherently corrupt and utterly incapable of choosing or doing that which is acceptable to God apart from divine grace. With no recuperative powers to enable him to recover himself, man is hopelessly lost. Man&rsquo;s salvation is thereby wholly of God&rsquo;s grace through the redemptive work of our Lord Jesus Christ (Genesis 2:16&ndash;17; 3:1&ndash;19; John 3:36; Romans 3:23; 6:23; 1 Corinthians 2:14; Ephesians 2:1&ndash;3; 1 Timothy 2:13&ndash;14; 1 John 1:8).
+            </p>
+            <p>
+                We teach that because all men were in Adam&mdash;united with him as the representative of humanity&mdash;the guilt of sin was imputed and a corrupt nature was transmitted to all men of all ages, Jesus Christ being the only exception (Romans 5:12, 18&ndash;19; 8:3; 1 Corinthians 15:22; 2 Corinthians 5:21). All men are thus sinners by nature, by choice, and by divine declaration (Psalm 14:1&ndash;3; Jeremiah 17:9; Romans 3:9&ndash;18, 23; 5:10&ndash;12).
+            </p>
+            <h2>
+                Salvation
+            </h2>
+            <p>
+                We teach that salvation is wholly of God by grace on the basis of the redemption of Jesus Christ&mdash;the merits both of His life of perfect righteousness and His atoning blood&mdash;and not on the basis of human merits or works (John 1:12; Romans 5:18&ndash;19; Ephesians 1:7; 2:8&ndash;10; 1 Peter 1:18&ndash;19).
+            </p>
+            <p>
+                <strong>Election</strong>
+            </p>
+            <p>
+                We teach that election is the sovereign act of God by which, before the foundation of the world, He unconditionally chose in Christ all those whom He would ever graciously regenerate, save, and sanctify (Romans 8:28&ndash;30; 9:11&ndash;16; Ephesians 1:4&ndash;11; 2 Thessalonians 2:13; 2 Timothy 2:10; 1 Peter 1:1&ndash;2).
+            </p>
+            <p>
+                We teach that sovereign election does not contradict or negate the responsibility of man to repent and trust Christ as Savior and Lord (Ezekiel 18:23, 32; 33:11; John 3:18&ndash;19, 36; 5:40; Romans 9:19&ndash;23; 2 Thessalonians 2:10&ndash;12; Revelation 22:17). Nevertheless, since sovereign grace includes the means of receiving the gift of salvation as well as the gift itself, sovereign election will result in what God determines. All whom the Father has elected He will effectually call to Himself. All whom the Father effectually calls to Himself will come in faith. And all who come in faith the Father will receive (John 6:37&ndash;40, 44; Acts 13:48; Romans 8:30).
+            </p>
+            <p>
+                We teach that God&rsquo;s election of totally depraved sinners is unconditional, grounded only in the sovereign freedom of God&rsquo;s own will. Election is an expression of God&rsquo;s unmerited favor and is not related to any initiative of the sinner&rsquo;s own part. It is not grounded in God&rsquo;s anticipation of what sinners might do by their own will, nor even in response to their foreseen faith. Rather, election is solely of His sovereign grace and mercy (Romans 9:11, 16; Ephesians 1:4&ndash;7; Titus 3:4&ndash;7; 1 Peter 1:2).
+            </p>
+            <p>
+                We teach that election should not be looked upon as merely an abstract sovereignty. God is truly sovereign but He exercises this sovereignty in harmony with His other attributes, especially His omniscience, justice, holiness, wisdom, grace, and love (Romans 9:11&ndash;16). This sovereignty will always exalt the will of God in a manner totally consistent with His character as revealed in the life of our Lord Jesus Christ (Matthew 11:25&ndash;28; 2 Timothy 1:9).
+            </p>
+            <p>
+                <strong>Atonement</strong>
+            </p>
+            <p>
+                We teach that the Lord Jesus, by His perfect obedience and sacrifice of Himself, which He offered up to God through the eternal Spirit (Hebrews 9:14; 10:14), has fully satisfied the justice of God (Hebrews 2:17; 1 John 4:10), propitiated the wrath of God (Romans 3:25&ndash;26; cf. 1:18), procured reconciliation (Romans 5:10), and purchased an everlasting inheritance in the kingdom of heaven (Hebrews 9:15), for all those the Father has given to Him (John 6:39; 10:14&ndash;15, 28&ndash;29; 17:2, 9, 24).
+            </p>
+            <p>
+                <strong>Regeneration</strong>
+            </p>
+            <p>
+                We teach that regeneration is a supernatural work of the Holy Spirit by which a renewed nature and spiritual life are given (John 3:3&ndash;7; 2 Corinthians 5:17; Titus 3:5). It is instantaneous and is accomplished solely by the power of the Holy Spirit through the instrumentality of the Word of God (John 5:24; James 1:18; 1 Peter 1:23). As a result of this divine illumination (2 Corinthians 4:6), the repentant sinner, so enabled by the Holy Spirit, responds in faith in Christ (1 John 5:1).
+            </p>
+            <p>
+                <strong>Justification</strong>
+            </p>
+            <p>
+                We teach that justification before God is the act of God (Romans 8:33) in which He declares righteous those who, by His irresistible grace, repent of their sins (Luke 13:3; Acts 2:38; 3:19; 11:18; Romans 2:4; 2 Corinthians 7:10; cf. Isaiah 55:6&ndash;7), turn to Christ in faith (Acts 16:31; 20:21; Romans 1:16; 3:22, 26; Galatians 3:22), and confess Him as sovereign Lord (Romans 10:9&ndash;10; 1 Corinthians 12:3; 2 Corinthians 4:5; Philippians 2:11).
+            </p>
+            <p>
+                We teach that the righteousness of justification is not infused into the believer, nor is it attained by any virtue or work of man (Romans 3:20; 4:4&ndash;6), but that it is the legal declaration of right standing with God (Deuteronomy 25:1; Romans 8:1, 33&ndash;34). We teach that justification consists in the imputation of our sins to Christ (Colossians 2:14; 1 Peter 2:24) and the imputation of Christ&rsquo;s righteousness to us (1 Corinthians 1:30; 2 Corinthians 5:21; cf. Romans 5:18&ndash;19), through faith alone apart from works (Romans 3:28; 4:4&ndash;5; 5:1; Galatians 2:16; 3:11, 24). In this way, God is &ldquo;just and the justifier of the one who has faith in Jesus&rdquo; (Romans 3:26).
+            </p>
+            <p>
+                <strong>Sanctification</strong>
+            </p>
+            <p>
+                We teach that every believer is sanctified (set apart) unto God at conversion, declared to be holy, and is therefore identified as a saint. This sanctification is positional and instantaneous and should not be confused with progressive sanctification. This sanctification has to do with the believer&rsquo;s standing, not his present walk or condition (Acts 20:32; 1 Corinthians 1:2, 30; 6:11; 2 Thessalonians 2:13; Hebrews 2:11; 3:1; 10:10, 14; 13:12; 1 Peter 1:2).
+            </p>
+            <p>
+                We teach that there is also, by the work of the Holy Spirit, a progressive sanctification by which the state of the believer is brought into greater conformity with the standing the believer positionally enjoys through justification. Through obedience to the Word of God and the empowering of the Holy Spirit, the believer is able to live a life of increasing holiness in conformity to the will of God, becoming more and more like our Lord Jesus Christ (John 17:17, 19; Romans 6:1&ndash;22; 8:29; 2 Corinthians 3:18; 1 Thessalonians 4:3&ndash;4; 5:23).
+            </p>
+            <p>
+                In this respect, we teach that every saved person is involved in a daily conflict&mdash;the new creation in Christ doing battle against the flesh&mdash;but adequate provision is made for victory through the power of the indwelling Holy Spirit. The struggle nevertheless stays with the believer all through this earthly life and is not completely ended until he sees Christ face to face. All claims to the eradication of sin in this life are unscriptural. Eradication of sin is not possible, but the Holy Spirit does provide for victory over sin (Galatians 5:16&ndash;25; Ephesians 4:22&ndash;24; Philippians 3:12; Colossians 3:9&ndash;10; 1 Peter 1:14&ndash;16; 1 John 3:2&ndash;9).
+            </p>
+            <p>
+                <strong>Security</strong>
+            </p>
+            <p>
+                We teach that all the redeemed, once saved, are kept by God&rsquo;s power and are thus secure in Christ forever (John 5:24; 6:37&ndash;40; 10:27&ndash;30; Romans 5:9&ndash;10; 8:1, 31&ndash;39; 1 Corinthians 1:4&ndash;8; Ephesians 4:30; Hebrews 7:25; 13:5; 1 Peter 1:5; Jude 24). Those who once professed faith and subsequently deny the Lord demonstrate by their going out from us that they were never truly saved in the first place (1 John 2:19).
+            </p>
+            <p>
+                We teach that it is the privilege of believers to rejoice in the assurance of their salvation through the testimony of God&rsquo;s Word, which, however, clearly forbids the use of Christian liberty as an occasion for sinful living and carnality (Romans 6:15&ndash;22; 13:13&ndash;14; Galatians 5:13, 25&ndash;26; Titus 2:11&ndash;14).
+            </p>
+            <p>
+                Genuine salvation is manifested by fruits worthy of repentance as demonstrated in righteous attitudes and conduct. Good works are the proper evidence and fruit of regeneration (1 Corinthians 6:19&ndash;20; Ephesians 2:10) and will be experienced to the extent that the believer submits to the control of the Holy Spirit in his life through faithful obedience to the Word of God (Ephesians 5:17&ndash;21; Philippians 2:12b; Colossians 3:16; 2 Peter 1:4&ndash;10). This obedience causes the believer to be increasingly conformed to the image of our Lord Jesus Christ (2 Corinthians 3:18). Such a conformity is climaxed in the believer&rsquo;s glorification at Christ&rsquo;s coming (Romans 8:17; 2 Peter 1:4; 1 John 3:2&ndash;3).
+            </p>
+            <p>
+                <strong>Separation</strong>
+            </p>
+            <p>
+                We teach that separation from sin is clearly called for throughout the Old and New Testaments, and that the Scriptures clearly indicate that in the last days apostasy and worldliness will increase (2 Corinthians 6:14&ndash;7:1; 2 Timothy 3:1&ndash;5).
+            </p>
+            <p>
+                We teach that, out of deep gratitude for the undeserved grace of God granted to us, and because our glorious God is so worthy of our total consecration, all the saved should live in such a manner as to demonstrate our adoring love to God, bringing no reproach upon our Lord and Savior. We also teach that separation from all religious apostasy and worldly and sinful practices is commanded of us by God (Romans 12:1&ndash;2, 1 Corinthians 5:9&ndash;13; 2 Corinthians 6:14&ndash;7:1; 1 John 2:15&ndash;17; 2 John 9&ndash;11).
+            </p>
+            <p>
+                We teach that believers should be separated unto our Lord Jesus Christ (2 Thessalonians 1:11&ndash;12; Hebrews 12:1&ndash;2) and affirm that the Christian life is a life of obedient righteousness that reflects the teaching of the Beatitudes (Matthew 5:2&ndash;12) and a continual pursuit of holiness (Romans 12:1&ndash;2; 2 Corinthians 7:1; Hebrews 12:14; Titus 2:11&ndash;14; 1 John 3:1&ndash;10).
+            </p>
+            <h2>
+                The Church
+            </h2>
+            <p>
+                We teach that all who place their faith in Jesus Christ are immediately placed by the Holy Spirit into one united spiritual Body, the church (1 Corinthians 12:12&ndash;13), the bride of Christ (2 Corinthians 11:2; Ephesians 5:23&ndash;32; Revelation 19:7&ndash;8), of which Christ is the Head (Ephesians 1:22; 4:15; Colossians 1:18).
+            </p>
+            <p>
+                We teach that the formation of the church, the Body of Christ, began on the Day of Pentecost (Acts 2:1&ndash;21, 38&ndash;47) and will be completed at the coming of Christ for His own at the rapture (1 Corinthians 15:51&ndash;52; 1 Thessalonians 4:13&ndash;18).
+            </p>
+            <p>
+                We teach that the church is thus a unique spiritual organism designed by Christ, made up of all regenerate persons (i.e., believers) in this present age (Ephesians 2:11&ndash;3:6). The church is distinct from Israel (1 Corinthians 10:32), a mystery not revealed until this age (Ephesians 3:1&ndash;6; 5:32).
+            </p>
+            <p>
+                We teach that the establishment and continuity of local churches is clearly taught and defined in the New Testament Scriptures (Acts 14:23, 27; 20:17, 28; Galatians 1:2; Philippians 1:1; 1 Thessalonians 1:1; 2 Thessalonians 1:1) and that the members of the one spiritual Body are directed to associate themselves together in local assemblies (1 Corinthians 11:18&ndash;20; Hebrews 10:25).
+            </p>
+            <p>
+                We teach that the one supreme authority for the church is Christ (1 Corinthians 11:3; Ephesians 1:22; Colossians 1:18) and that church leadership, gifts, order, discipline, and worship are all appointed through His sovereignty as found in the Scriptures. The biblically designated officers serving under Christ and over the assembly are elders (also called overseers and pastors, Acts 20:28; Ephesians 4:11) and deacons, both of whom must meet biblical qualifications (1 Timothy 3:1&ndash;13; Titus 1:5&ndash;9; 1 Peter 5:1&ndash;5).
+            </p>
+            <p>
+                We teach that the eldership of a local congregation consists of spiritually qualified men who lead or rule as servants of Christ (1 Timothy 2:11&ndash;12; 5:17&ndash;22) and have His authority in directing the church. The congregation is to submit to their leadership (Hebrews 13:7, 17).
+            </p>
+            <p>
+                We teach the importance of discipleship (Matthew 28:19&ndash;20; 2 Timothy 2:2), the mutual accountability of all believers (Matthew 18:5&ndash;14), as well as the need for discipline of sinning members of the congregation in accord with the standards of Scripture (Matthew 18:15&ndash;22; Acts 5:1&ndash;11; 1 Corinthians 5:1&ndash;13; 2 Thessalonians 3:6&ndash;15; 1 Timothy 1:19&ndash;20; Titus 1:10&ndash;16).
+            </p>
+            <p>
+                We teach the autonomy of the local church, free from any external authority or control, with the right of self-government and freedom from the interference of any hierarchy of individuals or organizations (Titus 1:5).
+            </p>
+            <p>
+                We teach that it is scriptural for true churches to cooperate with each other for the presentation and propagation of the faith. Each local church, however, through its elders and their interpretation and application of Scripture, should be the sole judge of the measure and method of its cooperation. The elders should determine all other matters of membership, policy, discipline, benevolence, and government (Acts 15:19&ndash;31; 20:28; 1 Corinthians 5:4&ndash;7, 13; 1 Peter 5:1&ndash;4).
+            </p>
+            <p>
+                We teach that the purpose of the church is to glorify God (Ephesians 3:21) by building itself up in the faith (Ephesians 4:13&ndash;16), by instruction of the Word (2 Timothy 2:2, 15; 3:16&ndash;17), by fellowship (Acts 2:47; 1 John 1:3), by keeping the ordinances (Luke 22:19; Acts 2:38&ndash;42) and by advancing and communicating the gospel to the entire world (Matthew 28:19; Acts 1:8; 2:42).
+            </p>
+            <p>
+                We teach the calling of all saints to the work of service (1 Corinthians 15:58; Ephesians 4:12; Revelation 22:12).
+            </p>
+            <p>
+                We teach the need of the church to fulfill her God-given mission as God accomplishes His purpose in the world. To that end, He gives the church spiritual gifts. He gives men chosen for the purpose of equipping the saints for the work of the ministry (Ephesians 4:7&ndash;12), and He also gives unique and special spiritual abilities to each member of the Body of Christ (Romans 12:5&ndash;8; 1 Corinthians 12:4&ndash;31; 1 Peter 4:10&ndash;11).
+            </p>
+            <p>
+                We teach that there were two kinds of gifts given to the early church: miraculous gifts of divine revelation and healing, given temporarily in the apostolic era for the purpose of confirming the authenticity of the apostles&rsquo; message (Hebrews 2:3&ndash;4; 2 Corinthians 12:12); and ministering gifts, given to equip believers for edifying one another. With the New Testament revelation now complete, Scripture becomes the sole test of the authenticity of a man&rsquo;s message. Thus, confirming gifts of a miraculous nature are no longer necessary to validate a man or his message (1 Corinthians 13:8&ndash;12). Miraculous gifts can even be counterfeited by Satan so as to deceive even believers (1 Corinthians 13:13&ndash;14:12; Revelation 13:13&ndash;14). The only gifts in operation today are those non-revelatory equipping gifts given for edification (Romans 12:6&ndash;8).
+            </p>
+            <p>
+                We teach that no one possesses the gift of healing today but that God does hear and answer the prayer of faith and will answer in accordance with His own perfect will for the sick, suffering, and afflicted (Luke 18:1&ndash;6; John 5:7&ndash;9; 2 Corinthians 12:6&ndash;10; James 5:13&ndash;16; 1 John 5:14&ndash;15).
+            </p>
+            <p>
+                We teach that two ordinances have been committed to the local church: baptism and the Lord&rsquo;s Supper (Acts 2:38&ndash;42). Christian baptism by immersion (Acts 8:36&ndash;39) is the solemn and beautiful testimony of a believer showing forth his faith in the crucified, buried, and risen Savior, and his union with Him in death to sin and resurrection to a new life (Romans 6:1&ndash;11). It is also a sign of fellowship and identification with the visible Body of Christ (Acts 2:41&ndash;42).
+            </p>
+            <p>
+                We teach that the Lord&rsquo;s Supper is the commemoration and proclamation of His death until He comes, and should be always preceded by solemn self-examination (1 Corinthians 11:28&ndash;32). We also teach that, whereas the elements of communion are only representative of the flesh and blood of Christ, participation in the Lord&rsquo;s Supper is nevertheless an actual communion with the risen Christ, who indwells every believer, and so is present, fellowshipping with His people (1 Corinthians 10:16).
+            </p>
+            <h2>
+                Angels
+            </h2>
+            <p>
+                <strong>Holy Angels</strong>
+            </p>
+            <p>
+                We teach that angels are created beings and are therefore not to be worshiped. Although they are a higher order of creation than man, they are created to serve God and to worship Him (Luke 2:9&ndash;14; Hebrews 1:6&ndash;7, 14; 2:6&ndash;7; Revelation 5:11&ndash;14; 19:10; 22:9).
+            </p>
+            <p>
+                <strong>Fallen Angels</strong>
+            </p>
+            <p>
+                We teach that Satan is a created angel who was the efficient cause of the first sin. He incurred the judgment of God by rebelling against his Creator (Isaiah 14:12&ndash;17; Ezekiel 28:11&ndash;19), by taking numerous angels with him in his fall (Matthew 25:41; Revelation 12:1&ndash;14), and by introducing sin into the human race by his temptation of Adam and Eve (Genesis 3:1&ndash;15).
+            </p>
+            <p>
+                We teach that Satan is the open and declared enemy of God and man (Isaiah 14:13&ndash;14; Matthew 4:1&ndash;11; Revelation 12:9&ndash;10); that he is the prince of this world, who has been defeated through the death and resurrection of Jesus Christ (Romans 16:20); and that he shall be eternally punished in the lake of fire (Isaiah 14:12&ndash;17; Ezekiel 28:11&ndash;19; Matthew 25:41; Revelation 20:10).
+            </p>
+            <h2>
+                Last Things
+            </h2>
+            <p>
+                <strong>Death</strong>
+            </p>
+            <p>
+                We teach that physical death involves no loss of our immaterial consciousness (Revelation 6:9&ndash;11), that the soul of the redeemed passes immediately into the presence of Christ (Luke 23:43; Philippians 1:23; 2 Corinthians 5:8), that there is a separation of soul and body (Philippians 1:21&ndash;24), and that, for those in Christ, such separation will continue until the rapture (1 Thessalonians 4:13&ndash;17), which initiates the first resurrection (Revelation 20:4&ndash;6) when our soul and body will be reunited to be glorified forever with our Lord (Philippians 3:21; 1 Corinthians 15:35&ndash;44, 50&ndash;54). Until that time, the souls of the redeemed in Christ remain in joyful fellowship with Him in the intermediate heaven (2 Corinthians 5:8).
+            </p>
+            <p>
+                We teach the bodily resurrection of all men, the saved to eternal life (John 6:39; Romans 8:10&ndash;11, 19&ndash;23; 2 Corinthians 4:14), and the unsaved to judgment and everlasting punishment (Daniel 12:2; John 5:29; Revelation 20:13&ndash;15).
+            </p>
+            <p>
+                We teach that the souls of the unsaved at death are kept under punishment in the intermediate hell until the second resurrection (Luke 16:19&ndash;26; Revelation 20:13&ndash;15), when the soul and the resurrection body will be united (John 5:28&ndash;29). They shall then appear at the Great White Throne Judgment (Revelation 20:11&ndash;15) and shall be cast into eternal hell, the lake of fire (Matthew 25:41&ndash;46; Revelation 20:15), cut off from the life of God and enduring His wrath forever (Daniel 12:2; Matthew 25:41&ndash;46; 2 Thessalonians 1:7&ndash;9).
+            </p>
+            <p>
+                <strong>The Rapture of the Church</strong>
+            </p>
+            <p>
+                We teach the personal, bodily appearing of our Lord Jesus Christ before the seven-year tribulation (1 Thessalonians 4:16; Titus 2:13) to translate His church from this earth (John 14:1&ndash;3; 1 Corinthians 15:51&ndash;53; 1 Thessalonians 4:15&ndash;5:11). We teach that, between the rapture and His glorious return to the earth with His saints, He will reward believers according to their works (1 Corinthians 3:11&ndash;15; 2 Corinthians 5:10).
+            </p>
+            <p>
+                <strong>The Tribulation Period</strong>
+            </p>
+            <p>
+                We teach that immediately following the removal of the church from the earth (John 14:1&ndash;3; 1 Thessalonians 4:13&ndash;18) the righteous judgments of God will be poured out upon an unbelieving world (Jeremiah 30:7; Daniel 9:27; 12:1; 2 Thessalonians 2:7&ndash;12; Revelation 16), and that these judgments will be climaxed by the return of Christ in glory to the earth (Matthew 24:27&ndash;31; 25:31&ndash;46; 2 Thessalonians 2:7&ndash;12). At that time, the saints of the Old Testament and the tribulation saints will be raised and the living will be judged (Daniel 12:2&ndash;3; Revelation 20:4&ndash;6). This period includes the seventieth week of Daniel&rsquo;s prophecy (Daniel 9:24&ndash;27; Matthew 24:15&ndash;31; 25:31&ndash;46).
+            </p>
+            <p>
+                <strong>The Second Coming and Millennial Reign</strong>
+            </p>
+            <p>
+                We teach that, after the tribulation period, Christ will come to earth to occupy the throne of David (Matthew 25:31; Luke 1:31&ndash;33; Acts 1:10&ndash;11; 2:29&ndash;30; cf. Revelation 3:21) and establish His messianic kingdom for a thousand years on the earth (Revelation 20:1&ndash;7). During this time the resurrected saints will reign with Him over Israel and all the nations of the earth (Ezekiel 37:21&ndash;28; Daniel 7:17&ndash;22; Revelation 19:11&ndash;16). This reign will be preceded by the overthrow of the Antichrist and the False Prophet, and by the removal of Satan from the world (Daniel 7:17&ndash;27; Revelation 20:1&ndash;7).
+            </p>
+            <p>
+                We teach that the kingdom itself will be the fulfillment of God&rsquo;s promise to Israel (Isaiah 65:17&ndash;25; Ezekiel 37:21&ndash;28; Zechariah 8:1&ndash;17) to restore them to the land which they forfeited through their disobedience (Deuteronomy 28:15&ndash;68). The result of their disobedience was that Israel was temporarily set aside (Matthew 21:43; Romans 11:1&ndash;26) but will again be awakened through repentance to enter into the land of blessing (Jeremiah 31:31&ndash;34; Ezekiel 36:22&ndash;32; Romans 11:25&ndash;29).
+            </p>
+            <p>
+                We teach that this time of our Lord&rsquo;s reign will be characterized by harmony, justice, peace, righteousness, and long life (Isaiah 11; 65:17&ndash;25; Ezekiel 36:33&ndash;38; Zechariah 8:4), and that it will be brought to an end with the release of Satan (Revelation 20:7).
+            </p>
+            <p>
+                <strong>The Judgment of the Lost</strong>
+            </p>
+            <p>
+                We teach that, following the release of Satan after the thousand-year reign of Christ (Revelation 20:7), Satan will deceive the nations of the earth and gather them to battle against the saints and the beloved city, at which time Satan and his army will be devoured by fire from heaven (Revelation 20:9). Following this, Satan will be thrown into the lake of fire and brimstone (Matthew 25:41; Revelation 20:10), whereupon Christ, who is the Judge of all men (John 5:22), will resurrect and judge all unbelievers at the Great White Throne Judgment.
+            </p>
+            <p>
+                We teach that this resurrection of the unsaved dead to judgment will be a physical, bodily resurrection (John 5:28&ndash;29) in which they will be committed to eternal conscious punishment in the lake of fire (Matthew 25:41; Revelation 20:11&ndash;15).
+            </p>
+            <p>
+                <strong>Eternity</strong>
+            </p>
+            <p>
+                We teach that, after the closing of the millennium, the temporary release of Satan, and the judgment of unbelievers (2 Thessalonians 1:9; Revelation 20:7&ndash;15), the saved will enter the eternal state of glory with God, after which the elements of this earth are to be dissolved (2 Peter 3:10) and replaced with a new earth wherein only righteousness dwells (Ephesians 5:5; Revelation 20:15; 21&ndash;22). Following this, the heavenly city will come down out of heaven (Revelation 21:2) and will be the dwelling place of the saints, where they will enjoy forever fellowship with God and one another (John 17:3; Revelation 21&ndash;22). Our Lord Jesus Christ, having fulfilled His redemptive mission, will then deliver up the kingdom to God the Father (1 Corinthians 15:24&ndash;28) that in all spheres the triune God may reign forever and ever (1 Corinthians 15:28).
+            </p>
+            <hr>
+            <p><em>If you have questions about how you can become a Christian, or want help in knowing how to live the Christian life, please <a href="/about/contact">get in contact with us</a>.</em></p>
+            <p><em>Last modified on May 6, 2024</em></p>
+            
+
+        </div>
+
+
+    </div>
+
+    <div class="breadcrumb-wrapper">
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-home fa-lg"></i></a></li>
+            
+        </ol>
+        <a href="#top" class="to-top scroll">Top <i class="fa fa-caret-up"></i></a>
+    </div>
+
+</div>
+<script>
+    var refTagger = {
+        settings: {
+            bibleVersion: "NASB",
+            socialSharing: ["twitter", "facebook"],
+            customStyle: {
+                heading: {
+                    backgroundColor: "#DEDEDE",
+                    color: "#656565"
+                }
+            }
+        }
+    };
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = "//api.reftagger.com/v2/RefTagger.js";
+        s.parentNode.insertBefore(g, s);
+    }(document, "script"));
+</script>
+
+
+<div class="modal fade" id="BookmarkModal" tabindex="-1" role="dialog" aria-labelledby="BookmarkModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="BookmarkModalLabel">Bookmark</h2>
+            </div>
+            <div class="modal-body">
+                <p>Please login or <a href="/Account/Create">create an account</a> to use this feature</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Begin Footer -->
+    <footer>
+        <section class="footer-info">
+            <!-- Begin Intro Content - Used in global footer and on homepage intro -->
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo">
+                        <img src="https://s3.amazonaws.com/static.gracechurch.org/images/general/gcc-logo@2x.png" alt="Grace Community Church" width="262" height="84" class="img-responsive">
+                        <p>John MacArthur, Pastor-Teacher</p>
+                    </div>
+                    <div class="footer-content">
+                        <div class="row">
+                            <section class="sunday">
+                                <h1>Lord’s Day Services</h1>
+                                <p>
+                                    
+                                    
+                                    
+                                    
+                                    <a href="/about">Learn More</a> | <a href="/live">Livestream</a> | <a href="/news/gracetoday">Bulletin</a><br>
+                                    <a href="/espanol">Servicios en espa&#241;ol</a>
+                                </p>
+                            </section>
+                            <section class="address">
+                                <h1>Location</h1>
+                                <p class="address-text">
+                                    Grace Community Church<br>
+                                    13248 Roscoe Blvd.<br>
+                                    Sun Valley, CA 91352
+                                </p>
+                                <p class="links"><a href="/about">Maps and Directions</a></p>
+                            </section>
+                            <section class="contact">
+                                <h1>Contact</h1>
+                                <p class="contact-text">
+                                    M–F 8:00 am–5:00 pm<br>
+                                    818-909-5500
+                                </p>
+                                <p class="links"><a href="/about/contact">Contact Info</a><br></p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Intro Content -->
+        </section>
+        <section class="footer">
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2024 Grace Community Church. All Rights Reserved.</p>
+                <div class="sharing sharing-footer">
+                    <p class="sharing-text">Visit us on </p>
+                    <div class="sharing-icons">
+                        <a href="http://www.facebook.com/gracecomchurch" target="_blank" title="Visit Grace Church on Facebook"><i class="fa fa-facebook-square"></i></a>
+                        <a href="http://instagram.com/gracecomchurch" target="_blank" title="Visit Grace Church on Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="http://www.twitter.com/gracecomchurch" target="_blank" title="Visit Grace Church on Twitter"><i class="fa fa-twitter-square"></i></a>
+                        
+                        <!-- <a href="https://www.youtube.com/GraceChurchSunValley" target="_blank" title="Visit Grace Church on YouTube"><i class="fa fa-youtube-square"></i></a>  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    
+    <script src="/bundles/jqueryajax?v=MBiwzphq4Qe_lmnRNUwisnUlk8XsQrbAXZSu4KkZdfk1"></script>
+
+
+    
+
+</body>
+</html>

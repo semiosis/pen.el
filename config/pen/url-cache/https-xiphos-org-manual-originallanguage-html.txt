@@ -1,0 +1,415 @@
+HTTP/1.1 200 OK
+Date: Thu, 10 Oct 2024 00:43:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+last-modified: Wed, 25 Nov 2020 22:14:10 GMT
+access-control-allow-origin: *
+expires: Thu, 10 Oct 2024 00:53:02 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+x-github-request-id: 1B02:15D857:E07153:E6FE88:67072316
+via: 1.1 varnish
+Age: 9
+x-served-by: cache-akl10330-AKL
+x-cache: HIT
+x-cache-hits: 1
+x-timer: S1728520992.174600,VS0,VE1
+vary: Accept-Encoding
+x-fastly-request-id: e0a56300c20af661732b66bcca5cfb307494c5b1
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ogZUTS1aletcnRRwruICnhf6lVtLZJC8mriPQ7WEa8Qt4IM2mD%2BY9DSaIZ2SQ7BeNubibgNJc7WylJaVVJBrKBYzJF2UTPt5U1btI3617TuR%2F8ECU0inYihIsT47EEcXXHdAmhCgoEIB"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Speculation-Rules: "/cdn-cgi/speculation"
+Server: cloudflare
+CF-RAY: 8d0293290ab950a8-AKL
+alt-svc: h3=":443"; ma=86400
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
+<head>
+<title>Xiphos -- Open Source Bible Study Software
+11. Original Language Research
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="../media/images/favicon.ico" />
+<!-- Will create separate css file later? -->
+<style type="text/css">
+html{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin: 0px 0px 0px 245px;
+	padding: 0px;
+	background-color: #369;
+	color: white;
+	font-family: Georgia, serif;
+	background-image: url(../media/images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: 245px 0px;
+}
+div#footer{
+	margin-top: 120px;
+	padding: 10px;
+	border-top: 1px solid white;
+	text-align: center;
+}
+div#content{
+	padding-left: 30px;
+	padding-right: 20px;
+}
+div#side{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+a{
+	color: #CCF;
+}
+a img{
+	border: 0;
+}
+hr{
+	height: 1px;
+	color: #CCF;
+	background-color: #CCF;
+	border: 0px solid #CCF;
+}
+img.photo{
+	border: 10px solid white;
+}
+div.menu{
+	background-color: #147;
+	border-bottom: 1px solid white;
+}
+div.menu h1{
+	margin: 0px;
+	float: left;
+	padding-left: 20px;
+}
+ul.menu{
+	margin: 0px;
+	padding: 10px;
+	display: block;
+	text-align: right;
+}
+ul.menu li{
+	display: inline;
+	padding: 10px;
+}
+a.menu{
+	text-decoration: none;
+	font-weight: bold;
+}
+a.menu:hover{
+	color: white;
+	text-decoration: underline;
+}
+span.last_modified{
+	color: #CCF;
+}
+#download_button{
+background-image: url(../media/images/147-369-50.gif); background-repeat: repeat-x; background-color: #369; background-position: top; color: white; border: 1px solid #FFF; width: 30%; text-align: center; padding: 20px 0px; width:100%; margin-bottom: 20px;
+}
+#download_button a{
+font-size: 150%; font-weight: bold
+}
+#button_and_screenshot{
+float: right;
+width: 409px;
+padding: 0px 0px 20px 20px;
+}
+
+#manual_toc{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 5px; 
+	border: 1px solid #CCF; 
+	width: 220px;
+	margin: 7px 20px 20px 7px;
+}
+#manual_content{
+/*margin-left: 23%;*/
+}
+#manual_toc ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#manual_toc li{
+	padding: 3px;
+	margin: 0px;
+}
+#manual_toc li.even{
+	background-color: #258;
+}
+#manual_toc li.odd{
+	background-color: #369;
+}
+.guisubmenu{
+	font-weight: bold;
+}
+.guimenuitem{
+	font-weight: bold;
+	font-style: italic;
+}
+.application{
+	font-weight: bold;
+	font-style: italic;
+}
+.command{
+	font-family: courier;
+	font-weight: bold;
+}
+.interface{
+	font-weight: bold;
+	font-style: italic;
+}
+div.titlepage{
+	margin-top: 50px;
+}
+div.figure{
+	border: 1px solid #CCF; /*#58B;*/
+	padding: 5px;
+}
+div.tip, div.warning{
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	padding: 5px;
+	padding-left: 90px;	
+	border: 3px solid #147;
+	background-color: #258;
+
+}
+div.tip h3, div.warning h3{
+	display: none;
+}
+div.tip{
+	background-image: url(../media/images/info.png);
+}
+div.warning{
+	background-image: url(../media/images/important.png);
+}
+h3.title{
+	background-color: #CCF;
+	padding: 5px;
+	color: #369;
+}
+div.authorgroup{
+	padding-left: 20px;
+}
+h4{
+	border-bottom: 1px solid #CCF;
+}
+div#manual_html_link{
+	background-color: #258;
+	padding: 5px;
+	margin: 5px 0px;
+}
+
+</style>
+</head>
+<body>
+<div id="side"><img src="../media/images/side.jpg" alt="Xiphos Bible" /></div>
+<div class="menu">
+<h1>Xiphos</h1>
+<ul class="menu">
+<li class="menu"><a class="menu" href="../">Home</a></li> <li class="menu"><a class="menu" href="../about/">About</a></li> <li class="menu"><a class="menu" href="../download/">Download</a></li> <li class="menu"><a class="menu" href="../help/">Help</a></li> <li class="menu"><a class="menu" href="../manual/">Documentation</a></li> <li class="menu"><a class="menu" href="../development/">Development</a></li> <li class="menu"><a class="menu" href="../links/">Links</a></li>
+</ul>
+<div style="clear:both"></div>
+</div>
+<div id="content">
+
+<div id="manual_toc">
+<a href="../"><img src="../media/images/xiphos_200.png" alt="Xiphos Logo"></a><br />
+<ul>
+
+<li class="odd"><a href="../manual/">Xiphos Manual</a></li>
+
+<li class="even"><a href="xiphos-introduction.html">1. Introduction</a></li>
+
+<li class="odd"><a href="familiar.html">2. Getting Started with Xiphos</a></li>
+
+<li class="even"><a href="interface.html">3. Interface</a></li>
+
+<li class="odd"><a href="preferences.html">4. Preferences</a></li>
+
+<li class="even"><a href="module-manager.html">5. Module Manager</a></li>
+
+<li class="odd"><a href="search.html">6. The Search Function</a></li>
+
+<li class="even"><a href="studypad.html">7. The Studypad</a></li>
+
+<li class="odd"><a href="personal.html">8. The Personal Commentary</a></li>
+
+<li class="even"><a href="journals.html">9. Journals and Prayer Lists</a></li>
+
+<li class="odd"><a href="onlinehelp.html">10. Getting Help Online</a></li>
+
+<li class="even"><a href="originallanguage.html">11. Original Language Research</a></li>
+
+</ul>
+
+<br/>
+<ul>
+
+
+<li class="odd"><a href="../manual/fr/">French</a></li>
+
+
+
+
+
+<li class="even"><a href="../manual/fa/">Persian</a></li>
+
+
+</ul>
+</div>
+<div id="manual_content">
+<hr />
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">11. Original Language Research</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="onlinehelp.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> </td></tr></table><hr /></div><div class="sect1" title="11. Original Language Research"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="originallanguage"></a>11. Original Language Research</h2></div></div></div><div class="toc"><dl><dt><span class="sect2"><a href="originallanguage.html#orig-lang-install-modules">11.1. Installing Needed Modules</a></span></dt><dt><span class="sect2"><a href="originallanguage.html#orig-lang-setup">11.2. Setting Up</a></span></dt><dt><span class="sect2"><a href="originallanguage.html#orig-lang-search">11.3. Searching for Strongs Numbers</a></span></dt><dt><span class="sect2"><a href="originallanguage.html#orig-lang-additional">11.4. Additional Modules</a></span></dt></dl></div><div class="sect2" title="11.1. Installing Needed Modules"><div class="titlepage"><div><div><h3 class="title"><a id="orig-lang-install-modules"></a>11.1. Installing Needed Modules</h3></div></div></div><p>Xiphos is ideally suited for studying the original Greek and Hebrew. 
+
+		To get started, you will want the following modules:
+
+		</p><p>
+
+		From Crosswire Repository:
+
+		</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+
+        			StrongsHebrew Dictionary (or get StrongsRealHebrew from the Xiphos Repository)
+
+				</p></li><li class="listitem"><p>
+
+        			StrongsGreek Dictionary (or get StrongsRealGreek from the Xiphos Repository)
+
+				</p></li><li class="listitem"><p>
+
+				Robinson Dictionary
+
+				</p></li><li class="listitem"><p>
+
+				KJV Bible
+
+				</p></li></ul></div><p>
+
+		From Xiphos Repository:
+
+		</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+
+				StrongsRealGreek Dictionary (same as StrongsGreek, but with Greek characters, B-Greek transliteration, and self-referencing links)
+
+				</p></li><li class="listitem"><p>
+
+				StrongsRealHebrew Dictionary (same as StrongsHebrew, but with Hebrew characters and self-referencing links)
+
+				</p></li><li class="listitem"><p>
+
+				InvertedStrongsRealGreek (key in or copy actual Greek word, rather than number)
+
+				</p></li></ul></div></div><div class="sect2" title="11.2. Setting Up"><div class="titlepage"><div><div><h3 class="title"><a id="orig-lang-setup"></a>11.2. Setting Up</h3></div></div></div><p>While still in the module manager, create indexes for all of the modules you just installed. 
+
+		Then close the module manager and open <span class="guisubmenu">Edit</span> → <span class="guimenuitem">
+
+		Preferences</span> and go to <span class="guisubmenu">Modules</span> → <span class="guimenuitem">Misc</span>. Set your Hebrew and Greek lexicons according to what you installed.
+
+		Close preferences and open the KJV module. Turn on the module options <span class="guisubmenu">Right Click</span> → <span class="guisubmenu">Module Options</span> → <span class="guimenuitem">Show Strongs
+
+		</span> and <span class="guisubmenu">Right Click</span> → <span class="guisubmenu">Module Options
+
+		</span> → <span class="guimenuitem">Show Morphology</span>. You should see the Bible text
+
+		change to show Strongs numbers underneath the appropriate English words. Hover over the numbers 
+
+		(or letters for morphology) with the mouse and you will see the definition displayed in the previewer pane. 
+
+		Click on the link and the definition will show in the dictionary pane. If you are using StrongsRealGreek or
+
+		StrongsRealHebrew, you can click on any other number referenced in the definition and you will be taken to that entry.
+
+		</p></div><div class="sect2" title="11.3. Searching for Strongs Numbers"><div class="titlepage"><div><div><h3 class="title"><a id="orig-lang-search"></a>11.3. Searching for Strongs Numbers</h3></div></div></div><p>Choose <span class="guisubmenu">Edit</span> → <span class="guimenuitem">Advanced Search</span>or press
+
+		<span class="keycap"><strong>F3</strong></span>. Under <span class="interface">Search Type</span>, select <span class="guibutton">Optimized ("Lucene")</span>.
+
+		Click on the <span class="interface">Attribute Search</span> tab, and make check the box that says <span class="guibutton">
+
+		Strongs Numbers</span>. Now click in the entry field at the top and search for the number you are looking for
+
+		preceded by "lemma:" and "G" for Greek or "H" for Hebrew. So to look for the Hebrew word tsad-deek (6662), enter 
+
+		"lemma:H6662". Once the search is done, the results pane will be shown. Notice that when you click on a result, 
+
+		it will show the result in the preview pane, and the strong's numbers will show as well, following immediately 
+
+		after the words they match. Also note that hovering over these numbers will show the definition in the main preview pane.
+
+		</p></div><div class="sect2" title="11.4. Additional Modules"><div class="titlepage"><div><div><h3 class="title"><a id="orig-lang-additional"></a>11.4. Additional Modules</h3></div></div></div><p>For more advanced research, the following modules are also available:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>   
+
+    				2TGreek (Xiphos Repository) : This module contains the entire Bible in Greek. It combines the LXX
+
+				and Tischendorf8 NT into one easy-to-use module. In addition, it contains Strongs, Morphology,Greek Accents,
+
+				and primary/secondary readings. As with all modules that include Strongs, Xiphos displays 2TGreek in 
+
+				beautiful interlinear form.
+
+				</p></li><li class="listitem"><p>
+
+   				Elzevir Textus Receptus (Crosswire Beta Repository as of this writing) : 1624 edition with Strongs and Morphology
+
+				</p></li><li class="listitem"><p>
+
+				LXX (Crosswire Repository) : the Septuagint with Strongs, Morphology, and footnotes
+
+				</p></li><li class="listitem"><p>
+
+				MorphGNT (Crosswire Beta Repository as of this writing) : This is derived from the morphologically parsed GNT
+
+				provided by UPenn's CCAT. It was reformatted and error-corrected by James Tauber. It includes Greek accents
+
+				and Morphology.
+
+				</p></li><li class="listitem"><p>
+
+				TR (Crosswire Repository) : This is the Textus Receptus with Strongs and Morphology
+
+				</p></li><li class="listitem"><p>
+
+				TischMorph (Xiphos Repository) : As described above, this has Strongs, Morphology, accents, and alternate readings.
+
+				</p></li><li class="listitem"><p>
+
+				WHNU (Crosswire Repository) : Westcott-Hort of 1881 with Strongs and Morphology
+
+				</p></li><li class="listitem"><p>
+
+				GreekHebrew (Crosswire Repository) : This is a dictionary keyed to Strongs. It contains words in the LXX 
+
+				that are also found in the New Testament. In addition, it contains the equivalent Hebrew words also keyed
+
+				to Strongs.
+
+				</p></li><li class="listitem"><p>
+
+				Didache (Crosswire Beta Repository as of this writing) : This is an early Christian treatise in Greek dated
+
+				to the late first or early second century. It includes Strongs, Morphology, and Greek accents.
+
+				</p></li></ul></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="onlinehelp.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">10. Getting Help Online </td><td width="20%" align="center"><a accesskey="h" href="./">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div>
+</div>
+
+</div>
+<div id="footer">
+
+
+Copyright © 2000-2020, The Xiphos Developer Team
+</div>
+
+
+</body>
+</html>
+
+

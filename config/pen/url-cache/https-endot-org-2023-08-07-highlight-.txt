@@ -1,0 +1,404 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Sat, 28 Sep 2024 04:55:08 GMT
+Etag: W/"6590eae7-55da"
+Last-Modified: Sun, 31 Dec 2023 04:15:35 GMT
+Server: nginx/1.23.3
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        Highlight: a script for coloring important text ::
+        endot — eschew obfuscation (and espouse elucidation)
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="In my terminal, text often flies by. Things like log files, thread dumps, report output, etc. All of these are comprised of text, but not all of that text is equally important. This is the story of how I got my computer to highlight the important bits for me.
+"
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://endot.org/2023/08/07/highlight/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="https://endot.org/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://endot.org/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://endot.org/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Highlight: a script for coloring important text"/>
+<meta name="twitter:description" content="In my terminal, text often flies by. Things like log files, thread dumps, report output, etc. All of these are comprised of text, but not all of that text is equally important. This is the story of how I got my computer to highlight the important bits for me."/>
+
+
+
+<meta property="og:title" content="Highlight: a script for coloring important text" />
+<meta property="og:description" content="In my terminal, text often flies by. Things like log files, thread dumps, report output, etc. All of these are comprised of text, but not all of that text is equally important. This is the story of how I got my computer to highlight the important bits for me." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://endot.org/2023/08/07/highlight/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-08-07T19:15:34-07:00" />
+<meta property="article:modified_time" content="2023-08-07T19:15:34-07:00" /><meta property="og:site_name" content="endot" />
+
+
+
+
+
+<script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "jr7wwj1xjz");
+    </script></head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >./nate --verbose</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/archives">Archives</a></li>
+        
+      
+        
+          <li><a href="/notes">Notes</a></li>
+        
+      
+        
+          <li><a href="/projects">Projects</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/archives">Archives</a></li>
+      
+    
+      
+        <li><a href="/notes">Notes</a></li>
+      
+    
+      
+        <li><a href="/projects">Projects</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">Highlight: a script for coloring important text</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          Aug 7, 2023
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          <a href="https://endot.org/tags/programming/">#programming</a>&nbsp;
+        
+          <a href="https://endot.org/tags/clojure/">#clojure</a>&nbsp;
+        
+          <a href="https://endot.org/tags/babashka/">#babashka</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>In my terminal, text often flies by. Things like log files, thread dumps, report output, etc. All of these are comprised of text, but not all of that text is equally important. This is the story of how I got my computer to highlight the important bits for me.</p>
+<h1 id="background">
+  Background
+  <a href="#background" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>At my last job, I worked on a streaming data platform (written in Clojure) that was the backbone of a couple of major esports leagues. It was responsible for taking data from the game servers and compiling and aggregating it before making it available for any thing that the on-air production needed, from showing a summary of the live game for the casters (so they can tell interesting stories) to making stat data available for insertion into on-air graphics (so fans can see just how good their favorite player is).</p>
+<p>Clojure was an especially good fit due to it&rsquo;s functional nature, as most of the work was to transform and aggregate large trees of data quickly. The central structure of the application was a graph of workers that were independent threads connected via core.async channels. Each one handled a particular job or transform, passing data along to others.</p>
+<p>One aspect of this system was responsible for acquiring data from the game servers. This was of supreme importance because this data was the source of truth for all statistics for the league. And statistics are the lifeblood of any sports league. Just ask baseball. It was because of this important task that during live broadcasts, I would often watch this component&rsquo;s logs to make sure that data was correctly captured.</p>
+<p>This log was full of information, but the most important part was the notification that a game was transitioning through it&rsquo;s expected states. Each log related to a transition had the game id, a very long number.</p>
+<pre tabindex="0"><code>2021-03-02 14:54:34 INFO - game lobby created, id: 3847192873987419834
+2021-03-02 14:57:34 INFO - game started, id: 3847192873987419834
+2021-03-02 15:10:34 INFO - game ended, id: 3847192873987419834
+</code></pre><p>This was all well and good, but often games would overlap. Usually they were setting up the next game as the previous one was wrapping up.</p>
+<pre tabindex="0"><code>2021-03-02 14:54:34 INFO - game lobby created, id: 3847192873987419834
+2021-03-02 14:57:34 INFO - game started, id: 3847192873987419834
+2021-03-02 15:01:34 INFO - game lobby created, id: 3847192873897419834
+</code></pre><p>Scanning through this, it looks like the game started but then the lobby was created again. This could indicate that the data collector had lost its connection to the server, or something else had gone wrong with the game. However, if you look closely, that third ID is not the same as the first two. This (the looking closely) was really difficult to see when the logs are sliding past.</p>
+<p>So I imagined a little script that could help me. This script would take the piped log and look for game IDs. It would have to take a regex to look for (2 problems!), and then it would then color each unique ID the same color so I could easily spot if a given ID was new or an indication of something more sinister. It seemed like something that should be possible. Unfortunately, I was also an adult with &ldquo;other responsibilities&rdquo;, so I put the above idea into my list of Really Cool Scripts I Wish I Had, and muddled through by pausing my tmux window and searching for IDs manually.</p>
+<h1 id="a-solution-appears">
+  A solution appears
+  <a href="#a-solution-appears" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>This problem was rolling around in my head and I was hoping to carve out some time to write a Babashka script when a most serendipitous thing happened. I came across <a href="https://stevelosh.com/blog/2021/03/small-common-lisp-cli-programs/">this blog post</a> by Steve Losh detailing his approach to writing small command line programs in Common Lisp. I&rsquo;d read other posts on his blog, and this one intrigued me mostly because Babashka was becoming my go-to for small command line programs.</p>
+<p>So I started reading. The first half of the post is all about the set up and structure of the place these scripts are born and grown. It was fairly interesting to me but then he starts describing a script he wrote using this system. It&rsquo;s called <code>batchcolor</code>, and it&rsquo;s &ldquo;used to highlight regular expression matches in text (usually log files) with a twist: each unique match is highlighted in a separate color, which makes it easier to visually parse the result.&rdquo;</p>
+<p>I was <strong>floored</strong>. Here was a script that did <em>exactly</em> what I needed and I didn&rsquo;t have to write it.</p>
+<p>In my younger days, I would have been more sad that I wouldn&rsquo;t have the need to write it myself, but by this point I had definitely reached the point in my career where I firmly believed that the best piece of software is one you didn&rsquo;t write and got to just use. So, I immediately set to figuring out how to set up a Common Lisp environment (very simple in Linux) and then to compile this into a standalone binary (thankfully, the top half of the blog post was very helpful). Before too long, I had a shiny little binary that I began using right away.</p>
+<p>I found a few more uses for it over the years. Then, when I got my current job, I had to go through the compilation process again (was on MacOS now), and I&rsquo;ve been happily using <code>batchcolor</code> to highlight strings. I&rsquo;ve kept those two binaries safely backed up so I can copy them to new systems and I&rsquo;ve also shared them with a few friends.</p>
+<h1 id="my-own-batchcolor">
+  My own batchcolor
+  <a href="#my-own-batchcolor" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>All was well and good, and I happily used <code>batchcolor</code> to highlight matches in logs and other output. It was a little annoying to copy that binary from system to system, and there were a couple of edge cases that I wished I could fix, but none of that caused enough pain to motivate me to write my own version.</p>
+<p>Then, recently, I had the need for a script that did something similar to <code>batchcolor</code>, but slightly different. It was a script to color the AGE column of <code>kubectl get pod</code> so that newer pods are easier to spot. In the process of writing this script, I discovered that <a href="https://clojuredocs.org/clojure.string/replace">clojure.string&rsquo;s replace function</a> supports passing a function as the <code>replacement</code> argument. It made writing the AGE highlighter trivial, and it made me realize that my own version of <code>batchcolor</code> was closer than I originally thought.</p>
+<p>So I took another look at the color selection code in <code>batchcolor</code> and quickly ported it to Clojure. Then, with <code>string/replace</code> doing the heavy lifting, I was able to write my own version, called <a href="https://github.com/justone/bb-scripts#current-scripts"><code>highlight</code></a>.</p>
+<h1 id="how-i-highlight">
+  How I highlight
+  <a href="#how-i-highlight" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>I usually put the <code>highlight</code> command at the end of the pipeline, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>some --command | grep important | highlight <span style="color:#e6db74">&#39;(what|I)really.*need&#39;</span>
+</span></span></code></pre></div><p>Every once in a while, I will write the <code>highlight</code> regex by hand on the command line, but for the most part I write small scripts that are easier to remember. For instance, here&rsquo;s a script called <code>hl-sha</code>, which hightlights md5 and sha256 sums:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>highlight <span style="color:#e6db74">&#39;[0-9a-ef]{32,}&#39;</span>
+</span></span></code></pre></div><p>Then, I can run <code>sha256 * | hl-sha</code> and get something like this:</p>
+<p><img src="sha-highlight.png" alt=""></p>
+<p>This is a rather trivial example, but you can see how the coloring instantly confirms that the last two files are identical.</p>
+<p>And, for my log file example above, this script (called <code>hl-game-id</code>) would suffice:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>highlight <span style="color:#e6db74">&#39;\d{15,}&#39;</span>
+</span></span></code></pre></div><p>Running <code>tail -f game.log | hl-game-id</code> would look like this:</p>
+<p><img src="game-highlight.png" alt=""></p>
+<p>See how much easier it is to spot the change in game id?</p>
+<p>Here are a few other scripts I&rsquo;ve written:</p>
+<ul>
+<li><code>hl-ip4</code> - Highlights IPv4 addresses.</li>
+<li><code>hl-uuid</code> - Highlights UUIDs, handy for spotting account IDs in logs.</li>
+<li><code>hl-sw-version</code> - Highlights microservice versions (at work). I have a separate script that prints out all service versions in all environments, so this helps show which ones are out of sync.</li>
+</ul>
+<h1 id="one-more-thing">
+  One more thing
+  <a href="#one-more-thing" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>One unexpected bonus that came out of porting this to Babashka is that I can use the highlighting functionality in other scripts.</p>
+<p>Here&rsquo;s a trivial example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>!/usr/bin/env bb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">ns </span>script
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">:require</span> [babashka.deps <span style="color:#e6db74">:as</span> deps]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">deps/add-deps</span> <span style="color:#f92672">&#39;</span>{<span style="color:#e6db74">:deps</span> {io.github.justone/bb-scripts {<span style="color:#e6db74">:sha</span> <span style="color:#e6db74">&#34;e2b58b70fb365b51cdce2e19a2162721d0f5ceb3&#34;</span>}}})
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[lib.highlight <span style="color:#e6db74">:as</span> highlight])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">defn </span>process
+</span></span><span style="display:flex;"><span>  []
+</span></span><span style="display:flex;"><span>  [<span style="color:#e6db74">&#34;This is super important.&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;This is somewhat important.&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;This is not really important.&#34;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(when (= *file* (<span style="color:#a6e22e">System/getProperty</span> <span style="color:#e6db74">&#34;babashka.file&#34;</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">process</span>)
+</span></span><span style="display:flex;"><span>       (map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">highlight/add</span> % <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;super|somewhat|not really|important&#34;</span>))
+</span></span><span style="display:flex;"><span>       (<span style="color:#a6e22e">run!</span> println)))
+</span></span></code></pre></div><p>And the output looks like this:</p>
+<p><img src="lib-highlight.png" alt=""></p>
+<p>This ability to quickly use libraries like this puts Babashka in a class all its own.</p>
+<h1 id="wrapping-up">
+  Wrapping up
+  <a href="#wrapping-up" class="h-anchor" aria-hidden="true">#</a>
+</h1>
+<p>If you&rsquo;d like to try out <code>highlight</code>, you can download the self-contained script <a href="https://github.com/justone/bb-scripts/blob/master/uberscripts/highlight">here</a>, or run this to install it with <a href="https://github.com/babashka/bbin">bbin</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bbin install io.github.justone/bb-scripts --main-opts <span style="color:#e6db74">&#39;[&#34;-m&#34; &#34;highlight&#34;]&#39;</span> --as highlight
+</span></span></code></pre></div><p>Enjoy.</p>
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://endot.org/2023/12/30/writing-babashka-scripts/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Developing Babashka Scripts</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://endot.org/2023/05/27/vim-clojure-dev-2023/">
+                  <span class="button__text">Developing Clojure in Vim (2023 edition)</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >./nate --verbose</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFJSK1VGMB"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-DFJSK1VGMB', { 'anonymize_ip': false });
+}
+</script>
+
+    </body>
+</html>

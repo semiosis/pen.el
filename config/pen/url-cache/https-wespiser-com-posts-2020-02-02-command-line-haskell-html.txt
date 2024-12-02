@@ -1,0 +1,263 @@
+HTTP/1.1 200 OK
+Date: Sat, 09 Nov 2024 20:21:14 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+last-modified: Thu, 16 Nov 2023 04:11:12 GMT
+vary: Accept-Encoding
+strict-transport-security: max-age=63072000; includeSubdomains
+x-frame-options: DENY
+x-content-type-options: nosniff
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PKuzDrJtAy2XOhnK2eJoigiCtO9iMpk55rW1FRTLO%2Byweh577akIQ1%2BTwunVZj0aKA999cSsIU1bPj1yywMOtiKEFXZyZ%2BNe9dyjNgt%2B8gkgq0GvohIF6%2F6dQO%2Bp416KBQH%2FsMpQPBRvLhY%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8e00820bee78d5de-SYD
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=51942&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3275&recv_bytes=548&delivery_rate=78033&cwnd=231&unsent_bytes=0&cid=f3da0c846cca9ed8&ts=810&x=0"
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="stack script: Compile and run Haskell with a single file" />
+    <meta property="”og:site_name"" content="Wespiser" />
+    <meta property="og:url" content="https://www.wespiser.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:description" content="A report on stack script: the how and why..." />
+    <meta property="og:image" itemprop="image" content="https://wespiser.com/img/home_compress.jpg" />
+    <meta property="twitter:image:src" itemprop="image" content="https://wespiser.com/img/home_compress.jpg" />
+    <meta property="twitter:title" content="stack script: Compile and run Haskell with a single file" />
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="A report on stack script: the how and why..." />
+    <meta name="author" content="Adam Wespiser" />
+    <meta name="twitter:site" content="@wespiser" />
+    <meta name="twitter:creator" content="@wespiser" />
+    <meta name="twitter:domain" content="wespiser.com" />
+    <meta name="twitter:title" content="stack script: Compile and run Haskell with a single file" />
+    <meta name="description" content="A report on stack script: the how and why..." />
+
+    <!-- Website Icon  -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="alternate" title="Adam Wespiser" type="application/atom+xml" href="feed.atom" />
+    <link rel="alternate" title="Adam Wespiser" type="application/rss+xml" href="feed.rss" />
+
+    <title>stack script: Compile and run Haskell with a single file</title>
+  </head>
+  <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" lazyload>
+    <link rel="preload" href="../assets/social-circles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="../assets/social-circles.min.css"></noscript>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="../">Wespiser</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto mt-0 mt-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../writing.html">writing<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../archive.html">archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../info.html">info</a>
+            </li>
+          </ul>
+          <div class="form-inline my-lg-0">
+            <ul class="navbar-nav mr-auto mt-0 mt-sm-0">
+                <li class="nav-item pl-2">
+                    <a class="icon-rss social-button grey" href="../feed.rss"></a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="icon-twitter social-button grey" href="https://twitter.com/wespiser"></a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="icon-github social-button grey" href="https://github.com/adamwespiser"></a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="icon-facebook social-button grey" href="https://www.facebook.com/burlappsack"></a>
+
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="icon-linkedin social-button grey" href="https://www.linkedin.com/in/adamwespiser"></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div id="content">
+            <h1>A report on stack script: the how and why...</h1>
+            <div class="info">
+    Posted on February  2, 2020
+    
+</div>
+
+<h2 id="intro">Intro</h2>
+<h4 id="why-stack-script">Why stack script ?</h4>
+<p>If you share small, single module, self contained haskell examples, stack script gives us an easy way to get reproducible builds, by pinning the dependencies to a Stackage snapshot within a comment at the top of your Haskell code.<br />
+There are at least two additional motivations, besides reproducible builds, that you might want to use Stack’s scripting feature:</p>
+<ul>
+<li><p>Lower the configuration barrier: write an independently compiling Haskell source code file with package dependencies without having to configure a new stack or cabal project. Personally, I find this helpful when exploring new libraries or writing small programs.</p></li>
+<li><p>Using Haskell as a scripting language, or replacement for Shell/Bash/Zsh. This use case pairs well with the <code>Turtle</code> library, although this approach does have downsides.</p></li>
+</ul>
+<h4 id="about">About</h4>
+<p>Stack is a build tool primarily designed for reproducible builds, done by specifying a resolver in a configuration file, usually your projects <code>stack.yaml</code> and <code>package.yaml</code> With Stack’s scripting feature, we still get reproducible builds by specifying a resolver, but move this specification to the file we are compiling, or as a command line argument. Therefore, for the sake of simplicity, we’ll assume that these scripts are run outside of a stack project, and stack is invoked in the same directory as the script file.<br />
+<em>Note:</em> When running a stack script inside of a stack project, it’s important to consider that stack will read settings from your <code>project.yaml</code> and <code>stack.yaml</code>, which may cause issues.</p>
+<h2 id="code-examples">Code Examples</h2>
+<h4 id="outline">Outline</h4>
+<p>This article contains the following examples of using scripting with stack:</p>
+<ul>
+<li>A basic example of the Scripting Interpreter</li>
+<li>A simple Servant server that statically serves your current working directory</li>
+<li>An example of stack as a bash replacement</li>
+<li>Using stack script to launch ghci</li>
+</ul>
+<h4 id="basic-example-of-stack-script">Basic example of stack script</h4>
+<p>For our first example, we’ll use stack to run a single file of Haskell source code as a script.</p>
+<p>Here’s the source code we want to run, in a filed called <code>simple.hs</code>:</p>
+<pre><code>main :: IO ()
+main = putStrLn &quot;compiled &amp; run&quot;</code></pre>
+<p>To run this with the stack script interpreter, we can do the following:</p>
+<pre><code>$ stack script simple.hs --resolver lts-14.18</code></pre>
+<p>The resolver argument is mandatory, and Stack will compile and run the <code>simple.hs</code> file immediately after invocation using the <code>lts-14.18</code> Stackage snapshot.<br />
+Alternatively, we can put all of the configuration information into the script itself, like this:</p>
+<pre><code>{- stack script 
+ --resolver lts-14.18
+-}
+main :: IO ()
+main = putStrLn &quot;compiled &amp; run&quot;</code></pre>
+<p>which can be compiled and run with <code>$ stack simple.hs</code>.</p>
+<h4 id="a-simple-servant-server">A simple Servant server</h4>
+<p>The “killer feature” for scripting with stack is probably the ability to pull in packages without having to a <code>stack.yaml</code> or<br />
+This can probably be best seen with <code>stack ghci</code>, where the following command will drop you into a ghci repl where you have <code>lens</code> and <code>text</code> packages available from the specificied resolver.</p>
+<pre><code>stack ghci --package text --package lens --resolver lts-14.18</code></pre>
+<p>An example of this concept with the stack scripting engine, is a quick and dirty file server, <code>explore.hs</code> would be as follows:</p>
+<pre><code>~/projects/stack-script$ cat explore.hs
+#!/usr/bin/env stack
+{- stack script
+ --resolver nightly-2019-12-22
+ --install-ghc
+ --package &quot;servant-server warp&quot;
+ --ghc-options -Wall
+-}
+{-# LANGUAGE DataKinds, TypeOperators, TypeApplications #-}
+
+module FileServer where
+
+import Network.Wai.Handler.Warp( defaultSettings, runSettings, setBeforeMainLoop, setPort)
+import Servant (Proxy(Proxy), Raw, serve, serveDirectoryWebApp)
+
+main :: IO ()
+main = runSettings settings . serve (Proxy @Raw) $ serveDirectoryWebApp &quot;.&quot;
+  where port = 8080
+        msg = &quot;serving on http://localhost:&quot; ++ show port ++ &quot;/{pathToFile}&quot;
+        settings = setPort port $ setBeforeMainLoop (putStrLn msg) defaultSettings</code></pre>
+<p>Noting a couple of features</p>
+<ul>
+<li><code>--install-ghc</code> is the flag to install ghc, if it is not already available.</li>
+<li>The addition of the hash bang, (line 1), <code>#!/usr/bin/env stack</code>, let’s you run this as an executable, <code>$ ./explore.hs</code></li>
+<li>If running, this script will let you see it’s source code at <code>localhost:8080/static/explore.hs</code>, along with any other files within the current working directory the script was run.</li>
+<li>The snapshot here is a nightly from the day the script was written, <a href="https://www.stackage.org/nightly-2019-12-22">nightly-2019-12-22</a>, which ensures the most up to date version of libraries are used when the script is written while still pinning us to a specific snapshot.</li>
+<li>We pass in <code>-Wall</code> to ghc-options, and can give additional ghc options here.</li>
+</ul>
+<p>On a fresh compilation, this will take a few minutes to run, as Stack needs to go and grab about 255Mb worth of source code in ~86 dependent packages, compile and link it in order for the above code to run. However, on subsequent runs, Stack can use a local cache of of the packages, and we can reproduce our project build without downloading and building all the dependencies!</p>
+<h4 id="stack-script-as-a-bash-replacement">Stack Script as a Bash Replacement</h4>
+<p>It’s possible to use haskell, and Stack scripting feature, along with the Turtle library as a drop in replacement for shell scripting!<br />
+To do this, we need the following at the top of our Haskell file:</p>
+<pre><code>#!/usr/bin/env stack
+{- stack script
+ --compile
+ --copy-bins
+ --resolver lts-14.17
+ --install-ghc
+ --package &quot;turtle text foldl async&quot;
+ --ghc-options=-Wall
+-}</code></pre>
+<p>This stack script does a couple of things:</p>
+<ul>
+<li><code>--compile</code> and <code>--copy-bins</code> create a binary executable based on the file name.<br />
+</li>
+<li>installs ghc, if needed with <code>install-ghc</code><br />
+</li>
+<li>builds the scripts with the set of packages from <code>lts-14.17</code></li>
+</ul>
+<p>With <a href="https://hackage.haskell.org/package/turtle">tutle</a>, we get a portable way to to run external shell commands, and I was able to create a nice haskell program to replace the shell script I used to automate the server tasks needed to deploy this blog!<br />
+The basics my deploy turtle script are as follows, and you can see the <a href="https://gist.github.com/adamwespiser/25b0af28529a6de1272af6af6275f2a4#file-updatesite-hs">full example on github here</a></p>
+<pre><code>import qualified Turtle as Tu
+import qualified Control.Foldl as L
+import qualified Data.Text as T
+import Control.Concurrent.Async
+import System.IO
+
+argParser :: Tu.Parser Tu.FilePath
+argParser = Tu.argPath &quot;html&quot; &quot;html destination directory&quot;
+
+main :: IO ()
+main = do
+  -- 53 files copied over into destinationDir
+  hSetBuffering stdout NoBuffering
+  destinationDir &lt;- Tu.options &quot;Build blog and copy to directory&quot; argParser
+  Tu.with (Tu.mktempdir &quot;/tmp&quot; &quot;deploy&quot;) (mainLoop destinationDir)</code></pre>
+<p>One nice thing about turtle is the <code>Tu.with</code> function, which lets use run our the main logic of our program with a temporary directory which is subsequently cleaned up after the <code>mainLoop</code> function returns.<br />
+Despite turtle being a handy library, I did find some downsides - Use of <code>FilePath</code>, which uses a pretty clunky, <code>String</code> based file representation - Often times clunkier semantics than just writing bash: for instance, <code>cp -r SRC TRG</code> is requires a fold over the result of <code>ls SRC</code> and construction of an explicit <code>cp</code> with each file, instead, you need to use <code>cptree</code>, which took me a while to figure out, so it would be nice if the semantics matched better! - Turtle is a monolithic framework for interacting with OS through a set of mirrored shell commands trying to match <code>coreutiles</code>, and it’s tightly couple parts makes it not very easy to pick the parts you like, and disregard the rest!</p>
+<h4 id="using-stack-script-to-run-ghci">Using stack script to run ghci</h4>
+<p>We’ve already seen a few examples of stack script, but there is one more that should be in every Haskeller’s toolkit. Stack script can be used to launch a ghci repl. Let’s say we are working with a new ADT, and want to write a new QuickCheck instance, how can stack script help us?<br />
+The following header will load the listed packages into a ghci repl:</p>
+<pre><code>{- stack 
+ --resolver nightly
+ --install-ghc
+ exec ghci
+ --package &quot;QuickCheck checkers&quot;
+-}
+module XTest where</code></pre>
+<p>There is one note to make here about the order of the arguments:</p>
+<ul>
+<li>The file will compile, then drop you into with module <code>XTest</code> is loaded</li>
+<li>If <code>exec ghci</code> does not immediately follow <code>stack</code>, then the <code>--packages</code> must be before <code>exec ghci</code></li>
+</ul>
+<h5 id="ghcid">ghcid</h5>
+<p>You can run the above stack script with <a href="https://github.com/ndmitchell/ghcid">ghcid</a> to get nearly instant compiler feedback using the following:</p>
+<pre><code>bash$ ghcid -c &quot;stack XTest.hs&quot;</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>I often find myself coding up small Haskell snippets, whether it’s playing around with a new data type, trying out a library, or reproducing an example from a paper or a book. In these cases, Stack’ scripting feature shines at giving me a self contained file where I can specify the dependencies via a snapshot in the file header, and not have to worry about breaking changes, or setting up a project with all the correct dependencies. Thus, I would urge my fellow Haskellers to consider using stack’s scripting feature when they share code online, to help others run their code today, and keep that way far into the future!</p>
+<h2 id="additional-information">Additional Information</h2>
+<ul>
+<li><a href="https://docs.haskellstack.org/en/stable/GUIDE/#script-interpreter">Stack Docs: Script Interpreter</a><br />
+</li>
+<li><a href="https://tech.fpcomplete.com/haskell/tutorial/stack-script">FPComplete: How to Script with Stack</a></li>
+<li><a href="http://hackage.haskell.org/package/stack-1.9.3/docs/Stack-Script.html">Hackage: Stack.Script</a> Useful for figuring out what is going on underneath the hood!<br />
+</li>
+<li><a href="https://odone.io/posts/2019-07-08-scripting-in-haskell-and-purescript.html">Richard Odone: Scripting in Haskell and PureScript</a></li>
+</ul>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="../assets/atom-one-light.css" rel="stylesheet" />
+    <script src="../assets/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154356397-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154356397-1');
+    </script>
+</body>
+</html>

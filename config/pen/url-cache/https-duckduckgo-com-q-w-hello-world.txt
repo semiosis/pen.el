@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 30 Oct 2024 00:38:58 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: total;dur=77;desc="Backend Total [n]"
+X-Detected-Query-Lang: en
+X-DuckDuckGo-Results: 1
+Strict-Transport-Security: max-age=31536000
+Permissions-Policy: interest-cohort=()
+Content-Security-Policy: default-src 'none' ; connect-src  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; manifest-src  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; media-src  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; script-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com 'unsafe-inline' 'unsafe-eval' ; font-src data:  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; img-src data:  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; style-src  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com 'unsafe-inline' ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-src blob:  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; form-action  https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-ancestors 'self' https://html.duckduckgo.com; base-uri 'self' ; block-all-mixed-content ;
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1;mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin
+Expect-CT: max-age=0
+Expires: Wed, 30 Oct 2024 00:38:59 GMT
+Cache-Control: max-age=1
+X-DuckDuckGo-Locale: en_US
+
+<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><meta name='referrer' content='origin'><meta name='robots' content='noindex, nofollow'><meta http-equiv='refresh' content='0; url=/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3ASearch%3Fsearch%3Dhello%2520world%26go%3DGo&rut=2118f6d633392167dc48b11e6e4d4cbcd1cd7378baed266ebe214f96be63b6a8'></head><body><script language='JavaScript'>function ffredirect(){window.location.replace('/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3ASearch%3Fsearch%3Dhello%2520world%26go%3DGo&rut=2118f6d633392167dc48b11e6e4d4cbcd1cd7378baed266ebe214f96be63b6a8');}setTimeout('ffredirect()',100);</script></body></html>

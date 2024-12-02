@@ -1,0 +1,345 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Age: 474
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline; filename="clojure-regex"
+Content-Type: text/html; charset=utf-8
+Date: Fri, 25 Oct 2024 00:43:31 GMT
+Etag: W/"13b3e48cea4c35db0c4342a69dbb7fab"
+Last-Modified: Fri, 25 Oct 2024 00:35:37 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Matched-Path: /mini-guide/clojure-regex
+X-Vercel-Cache: HIT
+X-Vercel-Id: syd1::t72vz-1729817011660-38dc91bc0b8c
+Transfer-Encoding: chunked
+
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Clojure Regex Tutorial</title><meta name="description" content="With a few functions from the standard library, Clojure lets you do most of what you want with regular expressions with no muss."/><meta name="twitter:title" content="Clojure Regex Tutorial"/><meta name="twitter:description" content="With a few functions from the standard library, Clojure lets you do most of what you want with regular expressions with no muss."/><meta property="og:title" content="Clojure Regex Tutorial"/><meta property="og:description" content="With a few functions from the standard library, Clojure lets you do most of what you want with regular expressions with no muss."/><meta name="next-head-count" content="8"/><link rel="icon" href="/favicon.ico"/><script src="https://cdn.usefathom.com/script.js" data-site="QAICNRUR" defer=""></script><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.min.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer=""></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/clojure.min.js" defer=""></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js" defer=""></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js" defer=""></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js" defer=""></script><script>window.onload = () => setTimeout(() => typeof hljs !== 'undefined' && hljs.highlightAll(), 100);</script><script src="https://app.bentonow.com/d54a3b8ab2d0b8cdf94928f986eba33c.js" defer="" async=""></script><script>window.addEventListener("bento:ready", function () {
+  if (typeof(bento$) != 'undefined') {
+    bento$(function() {
+        // bento.showChat();
+        // bento.updateFields({"name": "User 1"});
+        // bento.identify("example@example.com");
+        bento.view();
+    });
+  }
+});</script><link rel="canonical" href="https://ericnormand.me/mini-guide/clojure-regex"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@ericnormand"/><meta property="og:type" content="article"/><meta property="og:url" content="https://ericnormand.me/mini-guide/clojure-regex"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="manifest" href="/site.webmanifest"/><link rel="preload" href="/_next/static/css/763ba06ac815f34e.css" as="style"/><link rel="stylesheet" href="/_next/static/css/763ba06ac815f34e.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-52f729f10091b61d.js" defer=""></script><script src="/_next/static/chunks/framework-75746eeb80cbf23f.js" defer=""></script><script src="/_next/static/chunks/main-90f1b3d6b1cee1dd.js" defer=""></script><script src="/_next/static/chunks/pages/_app-dd9a839af4012e46.js" defer=""></script><script src="/_next/static/chunks/0f1ac474-9d6dae377943bc3f.js" defer=""></script><script src="/_next/static/chunks/80959-d26e079d45542502.js" defer=""></script><script src="/_next/static/chunks/56490-a7a9e8c08b6d8833.js" defer=""></script><script src="/_next/static/chunks/pages/mini-guide/clojure-regex-309d1235e4dbb4b4.js" defer=""></script><script src="/_next/static/OCL5MEeHxGPOGZuVXQeno/_buildManifest.js" defer=""></script><script src="/_next/static/OCL5MEeHxGPOGZuVXQeno/_ssgManifest.js" defer=""></script></head><body class="w-full m-0 p-0"><header class="hide-first-page  px-4 sm:px-6  lg:px-8 lg:max-w-7xl mx-auto  mb-8 mt-2"><div class="max-w-prose lg:max-w-full mx-auto flex flex-wrap relative justify-between text-indigo-600"><div class="flex-0 md:flex-1 align-middle mr-4"><a class="text-xl font-semibold font-baseline font-head navigation" href="/">Eric Normand</a></div><div class="flex-0 md:mr-auto align-baseline font-head flex space-x-10 navigation" style="margin-top:2px"><a class="navigation" href="/podcast">Podcast</a><a class="navigation" href="/clojure">Clojure</a><a href="https://ericnormand.podia.com/" class="navigation">Courses</a><a href="https://grokkingsimplicity.com/" class="navigation">Book</a></div></div></header><div class="text-primary"><div id="__next"><div class="px-4 sm:px-6 lg:px-8 max-w-full lg:max-w-7xl mx-auto"><article class="mx-auto lg:max-w-full wide-code"><h1 id="title" class="mb-4 font-bold font-head text-4xl lg:text-5xl">Clojure Regex Tutorial</h1><div class="prose prose-xl text-xs by-line-for-hiding">Written by Eric Normand. Published:<!-- --> <!-- -->July 26, 2019<!-- -->.<!-- --> Updated: June 2, 2022.</div><div class="prose lg:prose-xl mt-8"><div class="text-center"><div class="not-prose border border-gray-200 overflow-hidden rounded-lg p-4 drop-shadow-md bg-white top-optin-for-hiding"><div class="flex flex-col lg:flex-row lg:space-x-4 text-center space-y-4 lg:space-y-0 lg:text-left"><div class="flex-1"><h2 class="text-2xl font-bold ">Want the best way to learn<!-- --> <span class="text-indigo-600 italic">Clojure</span>?</h2><p class=" text-base mt-1">Invest in yourself with my<!-- --> <em>Beginner Clojure Signature Course</em>.</p><ul class="mt-2 text-sm text-center"><li><span class="text-indigo-600 italic">8</span> fundamental modules</li><li><span class="text-indigo-600 italic">240</span> fun lessons</li><li><span class="text-indigo-600 italic">42</span> hours of video</li></ul><div class="text-center"><a href="https://ericnormand.podia.com/beginning-clojure" class="mt-4 inline-block rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ">buy now</a></div></div><a class="flex-shrink-0 overflow-hidden text-center" href="https://ericnormand.podia.com/beginning-clojure"><img alt="Beginner Clojure: An Eric Normand Signature Course" loading="lazy" width="250" height="141" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=640&amp;q=75"/></a></div></div></div><p>Summary: <em>With a few functions from the standard library, Clojure lets you do
+most of what you want with regular expressions with no muss. The functions are
+also available in ClojureScript.</em></p>
+<h2>Clojure regexes are host language regexes</h2>
+<p><strong>Clojure is designed to be hosted.</strong> Clojure defers to the host regex syntax
+and semantics instead of defining a standard that works on all platforms. On the
+JVM, you&#x27;re using Java regexes. In ClojureScript, it&#x27;s Javascript regexes.</p>
+<p>Refer to the following documents for the regex syntax for a particular host:</p>
+<ul>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html">Java 8 Regex Syntax</a></li>
+<li><a href="https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html">Java 9+ Regex Syntax</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters">JavaScript Regex Syntax</a></li>
+</ul>
+<p>And you can use <a href="https://regex101.com/">Regex 101</a> for testing out regexes. Be
+sure to select the language in the menu in the top left. I also use the REPL.</p>
+<p>Of course, this difference means that regexes are not always portable. Other
+than the syntax and semantics of the regexes themselves, <strong>Clojure standardizes
+many regex functions across all platforms in the core library</strong>.</p>
+<h2>Clojure (and ClojureScript) regex syntax</h2>
+<p>You construct a regex in Clojure using a <strong>literal syntax</strong>. Strings with a hash
+sign in front are interpreted as regexes:</p>
+<pre><code class="language-clojure">#&quot;regex&quot;
+</code></pre>
+<p>On the JVM, the above line will create an instance of
+<a href="http://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html"><code>java.util.regex.Pattern</code></a>.
+In ClojureScript, it will create a
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"><code>RegExp</code></a>.
+Remember, the two regular expression languages are <strong>similar but different</strong>.</p>
+<p>This syntax is the most convenient because you don&#x27;t need to double escape your
+special characters. For example, if you want to represent the regex string to
+match a digit, using a Clojure string you would need to write this:</p>
+<pre><code class="language-clojure">&quot;\\d&quot; ;; regex string to match one digit
+</code></pre>
+<p>Notice that you have to escape the backslash to get a literal backslash in the
+string. However, regex literals are smart. They don&#x27;t need to double escape:</p>
+<pre><code class="language-clojure">#&quot;\d&quot; ;; match one digit
+</code></pre>
+<h2><code>re-matches</code> - Matching a regex to a string with groups</h2>
+<p>Very often, you want to match an entire string. The function to do that in
+Clojure is called
+<a href="https://clojuredocs.org/clojure.core/re-matches"><code>re-matches</code></a>. <code>re-matches</code>
+takes a regex and a string, then returns the result of the match.</p>
+<pre><code class="language-clojure">(re-matches regex string) ;;=&gt; result
+</code></pre>
+<p>The result it returns is a little complex. There are three things it can return.</p>
+<h3>1. No match returns <code>nil</code></h3>
+<p>If the whole string does not match, <code>re-matches</code> returns <code>nil</code>, which is nice because
+<code>nil</code> is falsey.</p>
+<pre><code class="language-clojure">(re-matches #&quot;abc&quot; &quot;xyz&quot;)            ;;=&gt; nil
+(re-matches #&quot;abc&quot; &quot;zzzabcxxx&quot;)      ;;=&gt; nil
+(re-matches #&quot;(a)bc&quot; &quot;hello, world&quot;) ;;=&gt; nil
+</code></pre>
+<h3>2. Matching with no groups returns the matched string</h3>
+<p>If the string does match, and there are no groups (parens) in the regex,
+then it returns the matched string.</p>
+<pre><code class="language-clojure">(re-matches #&quot;abc&quot; &quot;abc&quot;)  ;;=&gt; &quot;abc&quot;
+(re-matches #&quot;\d+&quot; &quot;3324&quot;) ;;=&gt; &quot;3324&quot;
+</code></pre>
+<p>Since all strings are truthy, you can use <code>re-matches</code> as the test of a
+conditional:</p>
+<pre><code class="language-clojure">(if (re-matches #&quot;\d+&quot; x)
+  (println &quot;x is all digits&quot;)
+  (println &quot;x is not all digits&quot;))
+</code></pre>
+<p>We&#x27;ll see a more convenient way to test and use the return value <a href="#if-some-example">here</a>.</p>
+<h3>3. Matching with groups returns a vector</h3>
+<p>If it matches and there are groups, then it returns a vector. The first element
+in the vector is the entire match. The remaining elements are the group matches.</p>
+<pre><code class="language-clojure">(re-matches #&quot;abc(.*)&quot; &quot;abcxyz&quot;)       ;;=&gt; [&quot;abcxyz&quot; &quot;xyz&quot;]
+(re-matches #&quot;(a+)(b+)(\d+)&quot; &quot;abb234&quot;) ;;=&gt; [&quot;abb234&quot; &quot;a&quot; &quot;bb&quot; &quot;234&quot;]
+</code></pre>
+<a name="if-some-example"></a>
+<p>The three different return types can get tricky. However, I usually have groups,
+so it&#x27;s either a vector or <code>nil</code>, which are easy to handle. I tend to use
+<a href="https://clojuredocs.org/clojure.core/if-some"><code>if-some</code></a>. It evaluates the
+match, checks for <code>nil</code>, and destructures the groups. You can even destructure
+it before you test it.</p>
+<pre><code class="language-clojure">(if-some [[whole-match first-name last-name]      ;; destructuring form
+          (re-matches #&quot;(\w+)\s(\w+)&quot; full-name)]
+  (println first-name last-name)                  ;; matching case
+  (println &quot;Unparsable name&quot;))                    ;; nil case
+</code></pre>
+<h2><code>re-find</code> - Finding a regex substring within a string with groups</h2>
+<p>Sometimes we want to find a match within a string.
+<strong><a href="https://clojuredocs.org/clojure.core/re-find"><code>re-find</code></a> returns the <em>first</em>
+match within the string.</strong> The return values are similar to <code>re-matches</code>.</p>
+<h3>1. No match returns <code>nil</code></h3>
+<pre><code class="language-clojure">(re-find #&quot;sss&quot; &quot;Loch Ness&quot;) ;;=&gt; nil
+</code></pre>
+<h3>2. Match without groups returns the matched string</h3>
+<pre><code class="language-clojure">(re-find #&quot;s+&quot; &quot;dress&quot;) ;;=&gt; &quot;ss&quot;
+</code></pre>
+<h3>3. Match with groups returns a vector</h3>
+<pre><code class="language-clojure">(re-find #&quot;s+(.*)(s+)&quot; &quot;success&quot;) ;;=&gt; [&quot;success&quot; &quot;ucces&quot; &quot;s&quot;]
+</code></pre>
+<h2><code>re-seq</code> - Finding all substrings that match within a string</h2>
+<p>The last function from <code>clojure.core</code> I use a lot is
+<a href="https://clojuredocs.org/clojure.core/re-seq"><code>re-seq</code></a>. **<code>re-seq</code> returns a
+lazy seq of all of the matches.**The elements of the seq are whatever type
+<code>re-find</code> would have returned.</p>
+<pre><code class="language-clojure">(re-seq #&quot;s+&quot; &quot;mississippi&quot;) ;;=&gt; (&quot;ss&quot; &quot;ss&quot;)
+(re-seq #&quot;[a-zA-Z](\d+)&quot;
+        &quot;abc x123 b44 234&quot;)  ;;=&gt; ([&quot;x123&quot; &quot;123&quot;] [&quot;b44&quot; &quot;44&quot;])
+</code></pre>
+<h2><code>clojure.string/replace</code> - Replacing regex matches within a string</h2>
+<p>Well, matching strings is cool, but often you&#x27;d like to replace a substring that
+matches with some other string.
+<a href="https://clojuredocs.org/clojure.string/replace"><code>clojure.string/replace</code></a> will
+replace all substring matches with a new string.</p>
+<p>Do not confuse <code>clojure.string/replace</code> with <code>clojure.core/replace</code>. They are
+very different. I will often alias <code>clojure.string</code> as <code>str</code> in my <code>ns</code>
+declaration:</p>
+<pre><code class="language-clojure">(ns my-app.core
+  (:require [clojure.string :as str]))
+</code></pre>
+<p>That lets me refer to <code>clojure.string/replace</code> as <code>str/replace</code>.</p>
+<p>Here&#x27;s a quick example:</p>
+<pre><code class="language-clojure">(str/replace &quot;mississippi&quot; #&quot;i..&quot; &quot;obb&quot;) ;;=&gt; &quot;mobbobbobbi&quot;
+</code></pre>
+<p>This example matches an <em>i</em> followed by any two characters. It replaces all
+matches with the string &quot;obb&quot;.</p>
+<p>Notice the argument order. The string you are matching against comes first,
+followed by the regex. Most functions in <code>clojure.string</code> follow that pattern.
+Since the functions are <em>about strings</em>, the strings are the first argument.</p>
+<h3>Referring to groups in the replacement string</h3>
+<p><code>clojure.string/replace</code> is actually quite versatile. You can refer directly to
+the groups in the replacement string using a dollar sign. <code>$0</code> means the entire
+match. <code>$1</code> means the first group. <code>$2</code> means the second group, etc.:</p>
+<pre><code class="language-clojure">(str/replace &quot;mississippi&quot; #&quot;(i)&quot; &quot;$1$1&quot;) ;;=&gt; &quot;miissiissiippii&quot;
+</code></pre>
+<p>This example doubles all of the <code>i</code>&#x27;s.</p>
+<h3>Calculating the replacement with a function</h3>
+<p>You can replace matches with the return value of a function applied to the
+match:</p>
+<pre><code class="language-clojure">(str/replace &quot;mississippi&quot; #&quot;(.)i(.)&quot;
+  (fn [[_ b a]]
+    (str (str/upper-case b)
+        &quot;—&quot;
+        (str/upper-case a)))) ;;=&gt; &quot;M—SS—SS—Ppi&quot;
+</code></pre>
+<p>You can <strong>replace just the first occurrence</strong> with
+<a href="https://clojuredocs.org/clojure.string/replace-first"><code>clojure.string/replace-first</code></a>.</p>
+<h2><code>clojure.string/split</code> - Splitting a string by a regex</h2>
+<p>Let&#x27;s say you want to split a string on some character pattern, like one or more
+whitespace. You can use
+<a href="https://clojuredocs.org/clojure.string/split"><code>clojure.string/split</code></a>:</p>
+<pre><code class="language-clojure">(str/split &quot;This is a string    that I am splitting.&quot; #&quot;\s+&quot;)
+  ;;=&gt; [&quot;This&quot; &quot;is&quot; &quot;a&quot; &quot;string&quot; &quot;that&quot; &quot;I&quot; &quot;am&quot; &quot;splitting.&quot;]
+</code></pre>
+<p>Again, we see the same argument pattern: The string to match comes first, since
+the <code>clojure.string</code> functions are about strings.</p>
+<h2>Creating a case insensitive regex in Clojure (and other flags)</h2>
+<p>Some languages have syntax which allow you to put modifiers on the regex, such
+as the <code>i</code> modifier which makes it a case insensitive match. Here is an example
+from JavaScript:</p>
+<pre><code class="language-javascript">/jjj/i;
+</code></pre>
+<p>This regex will match three <code>j</code>&#x27;s regardless of the case. <code>&quot;jJj&quot;</code> and <code>&quot;JJj&quot;</code>
+will match. These are called <em>flags</em>.</p>
+<p>Unfortunately, Clojure&#x27;s syntax does not allow for flags. You have to rely on
+the native host mechanisms for creating regexes.</p>
+<h3>1. JVM Clojure</h3>
+<p>On the JVM, there are two ways to use flags.</p>
+<p><strong>JVM Regex Flags Method 1: Special flag syntax</strong></p>
+<p>The JVM regexes allow for a special syntax to enable flags within the regex.</p>
+<pre><code class="language-clojure">;; no flags (case-sensitive)
+#&quot;abc&quot;     ;;=&gt; #&quot;abc&quot;
+;; case-insensitive flag set
+#&quot;(?i)abc&quot; ;;=&gt; #&quot;(?i)abc&quot;
+</code></pre>
+<p>These are flags that can be turned on and off along the regex. For instance:</p>
+<pre><code class="language-clojure">#&quot;ab(?i)cdef(?-i)ghi&quot; ;;=&gt; #&quot;ab(?i)cdef(?-i)ghi&quot;
+</code></pre>
+<p>The flag starts <em>off</em>, so <code>ab</code> is case-sensitive. Then the first <code>(?i)</code> turns it
+on, so <code>cdef</code> is case-insensitive. Then <code>(?-i)</code> turns it off (due to the <code>-</code>),
+so <code>ghi</code> is case-sensitive.</p>
+<p>You can even selectively turn them on or off in non-capturing groups:</p>
+<pre><code class="language-clojure">#&quot;ab(?iu:cdef)ghi&quot; ;;=&gt; #&quot;ab(?iu:cdef)ghi&quot;
+</code></pre>
+<p>This turns on the <code>i</code> and <code>u</code> flags for just the <code>cdef</code> part.</p>
+<p>You can read about the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#special">JVM regex flags
+syntax</a>
+and the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#field.summary">available
+flags</a>.</p>
+<p>The JVM regex flags syntax is quite powerful, and, if I had to guess, I would
+say that it&#x27;s the main reason setting global flags using other syntax is hard.</p>
+<p><strong>JVM Regex Flags Method 2: Create a regular expression by using the host
+classes</strong></p>
+<p>We will be using the <code>java.util.regex.Pattern</code> class, so we should import it for
+easier typing:</p>
+<pre><code class="language-clojure">(ns my-app.core
+  (:import (java.util.regex Pattern)))
+</code></pre>
+<p>Now we can use it to compile a regex:</p>
+<pre><code class="language-clojure">;; These two are equivalent:
+#&quot;abc&quot;                  ;;=&gt; #&quot;abc&quot;
+(Pattern/compile &quot;abc&quot;) ;;=&gt; #&quot;abc&quot;
+</code></pre>
+<p>To add flags, we have to refer to them by their name. It&#x27;s not very convenient
+to type, but here it is:</p>
+<pre><code class="language-clojure">(Pattern/compile &quot;abc&quot; Pattern/CASE_INSENSITIVE) ;;=&gt; #&quot;abc&quot;
+</code></pre>
+<p>Notes</p>
+<ul>
+<li>This makes a case-insensitive regular expression.</li>
+<li>The regular expressions using flags like this print the same as the regexes
+without flags.</li>
+<li>The flag applies to the entire regex.</li>
+<li>You can find out the flags on a regex using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#flags()"><code>.flags</code> method</a>.</li>
+<li>You will need to escape backslashes (<code>\</code>) twice since you&#x27;re using a string
+literal, not a regex literal.</li>
+</ul>
+<p>You can combine flags using <code>+</code>:</p>
+<pre><code class="language-clojure">(Pattern/compile &quot;abc&quot; (+ Pattern/CASE_INSENSITIVE
+                          Pattern/UNICODE_CASE)) ;;=&gt; #&quot;abc&quot;
+</code></pre>
+<p>It&#x27;s not convenient to type, but at least it&#x27;s explicit. You can read about the
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#field.summary">available flags on the
+JVM</a>.</p>
+<p>There is a trick I&#x27;ve used to make escaping a little easier. You can use a regex
+literal (<code>#&quot;&quot;</code>), then convert it to a string to pass it to <code>Pattern/compile</code>:</p>
+<pre><code class="language-clojure">;; double escaped
+(Pattern/compile &quot;\\d&quot;       Pattern/CASE_INSENSITIVE)
+;; more ergonomic
+(Pattern/compile (str #&quot;\d&quot;) Pattern/CASE_INSENSITIVE)
+</code></pre>
+<h2>2. ClojureScript</h2>
+<p>In ClojureScript, we will construct a JavaScript <code>RegExp</code>. If you don&#x27;t need
+flags, you can construct one like this:</p>
+<pre><code class="language-clojure">
+;; These two are equivalent:
+#&quot;abc&quot;             ;;=&gt; #&quot;abc&quot;
+(js/RegExp. &quot;abc&quot;) ;;=&gt; #&quot;abc&quot;
+</code></pre>
+<p>To add flags, just add a second argument, a string containing the letter codes:</p>
+<pre><code class="language-clojure">(js/RegExp. &quot;abc&quot; &quot;iu&quot;) ;;=&gt; #&quot;abc&quot;
+</code></pre>
+<p>Unfortunately, regexes with flags print the same as regexes without flags, so be
+careful.</p>
+<p>You can read about the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags">available flags in
+JavaScript</a>.</p>
+<h2>Find whether a string contains another</h2>
+<p>I commonly use regexes to determine if a string contains another string. That&#x27;s
+easy to do with <code>re-find</code>:</p>
+<pre><code class="language-clojure">(re-find #&quot;needle&quot; &quot;Find a needle in a haystack.&quot;) ;;=&gt; &quot;needle&quot;
+(re-find #&quot;needle&quot; &quot;Empty haystack.&quot;)              ;;=&gt; nil
+</code></pre>
+<p>Because the return is truthy or falsey, you can use it as the condition of an <code>if</code>.</p>
+<p>But if you&#x27;re just using a substring match (and not using fancy regex features
+like flags, character classes, and repetition), you can use
+<a href="https://clojuredocs.org/clojure.string/includes_q"><code>clojure.string/includes?</code></a>:</p>
+<pre><code class="language-clojure">(str/includes? &quot;Find a needle in a haystack.&quot; &quot;needle&quot;) ;;=&gt; true
+(str/includes? &quot;Empty haystack.&quot; &quot;needle&quot;)              ;;=&gt; false
+</code></pre>
+<p>Regexes are nice because you can match the beginning of the line or the end of the line:</p>
+<pre><code class="language-clojure">(re-find #&quot;^This string&quot; &quot;This string starts with ...&quot;) ;;=&gt; &quot;This string&quot;
+(re-find #&quot;end$&quot; &quot;Find a string at the end&quot;)            ;;=&gt; &quot;end&quot;
+</code></pre>
+<p>There are functions for that (again, only if you don&#x27;t need regex features),
+<a href="https://clojuredocs.org/clojure.string/starts-with_q"><code>clojure.string/starts-with?</code></a>
+and
+<a href="https://clojuredocs.org/clojure.string/ends-with_q"><code>clojure.string/ends-with?</code></a>:</p>
+<pre><code class="language-clojure">(str/starts-with? &quot;This string starts with ...&quot; &quot;This string&quot;) ;;=&gt; true
+(str/ends-with?   &quot;Find a string at the end&quot;    &quot;end&quot;)         ;;=&gt; true
+</code></pre>
+<p>Remember, we commonly alias <code>clojure.string</code> to <code>str</code> in the <code>ns</code> declaration:</p>
+<pre><code class="language-clojure">(ns my-app.core
+  (:require [clojure.string :as str]))
+</code></pre>
+<h2>Escaping regex characters in a string</h2>
+<p>Sometimes you have a string that contains some special characters that are
+meaningful as part of a regex.</p>
+<pre><code class="language-clojure">&quot;(??^$]&quot; ;; A string I want to match literally
+</code></pre>
+<p>However, if you want to match those literally, you&#x27;ll be in for a world of pain.</p>
+<pre><code class="language-clojure">#&quot;\(\?\?\^\$\]&quot; ;; you can&#x27;t escape the escapes!
+</code></pre>
+<p>The <code>java.util.regex.Pattern</code> class has a static method that&#x27;s useful for
+quoting such strings:</p>
+<pre><code class="language-clojure">(Pattern/quote &quot;(??^$]&quot;) ;;=&gt; &quot;\\Q(??^$]\\E&quot;
+</code></pre>
+<p>You can then pass it to compile:</p>
+<pre><code class="language-clojure">(-&gt; &quot;(??^$]&quot; Pattern/quote Pattern/compile) ;;=&gt; #&quot;\Q(??^$]\E&quot;
+</code></pre>
+<h2>Notable libraries</h2>
+<h3>Regal</h3>
+<p><a href="https://github.com/lambdaisland/regal">Regal</a> is a library from Lambda Island
+Open Source. It makes regular expressions more readable and translatable between
+JavaScript, JVM 8, and JVM 9.</p>
+<p>It lets you write this regex:</p>
+<pre><code>[\w.%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,4}
+</code></pre>
+<p>As this edn:</p>
+<pre><code class="language-clojure">[:cat
+ [:+ [:class :word &quot;.%+-&quot;]]
+ &quot;@&quot;
+ [:+ [:class [&quot;A&quot; &quot;Z&quot;] [&quot;a&quot; &quot;z&quot;] [&quot;0&quot; &quot;9&quot;] &quot;.-&quot;]]
+ &quot;.&quot;
+ [:repeat [:class [&quot;A&quot; &quot;Z&quot;] [&quot;a&quot; &quot;z&quot;]] &quot;2&quot; &quot;4&quot;]]
+</code></pre>
+<p>Check out this <a href="https://lambdaisland.github.io/land-of-regal/">interactive
+tutorial</a>.</p>
+<h2>Other rarely-used functions</h2>
+<p>Those are all of the functions I use routinely. There are some more, which are
+useful when you need them.</p>
+<h4><a href="https://clojuredocs.org/clojure.core/re-pattern"><code>re-pattern</code></a></h4>
+<p>Construct a regex from a <code>String</code>.</p>
+<h4 id="re-matcherre-matcher"><a href="https://clojuredocs.org/clojure.core/re-matcher"><code>re-matcher</code></a></h4>
+<p>This one is not available in ClojureScript. On the JVM, it creates a
+<a href="http://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html"><code>java.util.regex.Matcher</code></a>,
+which is used for iterating over subsequent matches. This is not so
+useful since <code>re-seq</code> exists.</p>
+<p>If you find yourself with a <code>Matcher</code>, you can call <code>re-find</code> on it to get the
+next match (instead of the first). You can also call
+<a href="https://clojuredocs.org/clojure.core/re-groups"><code>re-groups</code></a> from the most
+recent match. You can also use a <code>Matcher</code> to get named capture groups. See
+<a href="https://clojuredocs.org/clojure.core/re-groups#example-60bb6a99e4b0b1e3652d7506">this
+example</a>.</p>
+<p>Unless you need a <code>Matcher</code> for some Java API, stick to <code>re-seq</code>.
+<code>Matcher</code>s are mutable and don&#x27;t work well with threads.</p></div></article><div class="mt-16" style="max-width:811.641px"><div class="not-prose border border-gray-200 overflow-hidden rounded-lg p-4 drop-shadow-md bg-white top-optin-for-hiding"><div class="flex flex-col lg:flex-row lg:space-x-4 text-center space-y-4 lg:space-y-0 lg:text-left"><div class="flex-1"><h2 class="text-2xl font-bold ">Want the best way to learn<!-- --> <span class="text-indigo-600 italic">Clojure</span>?</h2><p class=" text-base mt-1">Invest in yourself with my<!-- --> <em>Beginner Clojure Signature Course</em>.</p><ul class="mt-2 text-sm text-center"><li><span class="text-indigo-600 italic">8</span> fundamental modules</li><li><span class="text-indigo-600 italic">240</span> fun lessons</li><li><span class="text-indigo-600 italic">42</span> hours of video</li></ul><div class="text-center"><a href="https://ericnormand.podia.com/beginning-clojure" class="mt-4 inline-block rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ">buy now</a></div></div><a class="flex-shrink-0 overflow-hidden text-center" href="https://ericnormand.podia.com/beginning-clojure"><img alt="Beginner Clojure: An Eric Normand Signature Course" loading="lazy" width="250" height="141" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=640&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbeginner-clojure-glamour-shot.0781a802.jpg&amp;w=640&amp;q=75"/></a></div></div></div></div></div></div><footer class="bg-indigo-800 mt-16 w-full" aria-labelledby="footerHeading"><h2 id="footerHeading" class="sr-only">Footer</h2><div class="py-8 px-4 sm:px-6 lg:px-8 lg:max-w-7xl mx-auto"><div class="max-w-prose lg:max-w-full mx-auto"><div class="flex justify-between flex-wrap"><a class="text-indigo-200 navigation" href="/newsletter">Newsletter</a><a class="text-indigo-200 navigation" href="/clojure">Clojure Guides</a><a class="text-indigo-200 navigation" href="/podcast">Podcast</a><a class="text-indigo-200 navigation" href="/essays">Essays</a><a class="text-indigo-200 navigation" href="/speaking">Speaking</a><a class="text-indigo-200 navigation" href="/about">About</a></div><div class="mx-auto w-full mt-8 rounded-lg border overflow-hidden"><iframe src="https://ericnormand.substack.com/embed" class="w-full" height="320" frameBorder="0" scrolling="no"></iframe></div><div class="mt-8 border-t border-indigo-500 pt-8"><p class="mt-8 text-base text-indigo-200 md:mt-0 md:order-1 text-center"><a class="navigation" href="/privacy">Privacy Policy</a> <!-- -->·<!-- --> <a class="navigation" href="/terms">Terms of Service</a><br/>© 2024 Eric Normand. All rights reserved.</p></div></div></div></footer><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/mini-guide/clojure-regex","query":{},"buildId":"OCL5MEeHxGPOGZuVXQeno","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>

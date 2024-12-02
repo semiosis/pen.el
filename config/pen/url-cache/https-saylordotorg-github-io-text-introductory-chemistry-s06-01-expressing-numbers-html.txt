@@ -1,0 +1,557 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 4439
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Thu, 04 Jun 2015 19:24:57 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"5570a609-7bae"
+expires: Sat, 28 Sep 2024 01:02:02 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 7270:2910A9:32180B:34CD22:66F75331
+Accept-Ranges: bytes
+Date: Sat, 28 Sep 2024 00:52:03 GMT
+Via: 1.1 varnish
+Age: 1
+X-Served-By: cache-akl10329-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1727484724.625362,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 2e7327eae710c312eba3b826cbdf54f10e2266b5
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Expressing Numbers</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-00-measurements.html"><img src="shared/images/batch-left.png"></a> <a href="s06-00-measurements.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-02-expressing-units.html">Next Section</a> <a href="s06-02-expressing-units.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="ball-ch02_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">2.1</span> Expressing Numbers</h2>
+    <div class="learning_objectives editable block" id="ball-ch02_s01_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="ball-ch02_s01_l01">
+            <li>Learn to express numbers properly.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s01_p01">Quantities have two parts: the number and the unit. The number tells “how many.” It is important to be able to express numbers properly so that the quantities can be communicated properly.</p>
+    <p class="para editable block" id="ball-ch02_s01_p02"><span class="margin_term"><a class="glossterm">Standard notation</a><span class="glossdef">A straightforward expression of a number.</span></span> is the straightforward expression of a number. Numbers such as 17, 101.5, and 0.00446 are expressed in standard notation. For relatively small numbers, standard notation is fine. However, for very large numbers, such as 306,000,000, or for very small numbers, such as 0.000000419, standard notation can be cumbersome because of the number of zeros needed to place nonzero numbers in the proper position.</p>
+    <p class="para editable block" id="ball-ch02_s01_p03"><span class="margin_term"><a class="glossterm">Scientific notation</a><span class="glossdef">An expression of a number using powers of 10.</span></span> is an expression of a number using powers of 10. Powers of 10 are used to express numbers that have many zeros:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>10<sup class="superscript">0</sup>
+</td>
+                    <td>= 1</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">1</sup>
+</td>
+                    <td>= 10</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">2</sup>
+</td>
+                    <td>= 100 = 10 × 10</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">3</sup>
+</td>
+                    <td>= 1,000 = 10 × 10 × 10</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">4</sup>
+</td>
+                    <td>= 10,000 = 10 × 10 × 10 × 10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="ball-ch02_s01_p04">and so forth. The raised number to the right of the 10 indicating the number of factors of 10 in the original number is the <span class="margin_term"><a class="glossterm">exponent</a><span class="glossdef">The raised number to the right of a 10 indicating the number of factors of 10 in the original number.</span></span>. (Scientific notation is sometimes called <em class="emphasis">exponential notation</em>.) The exponent’s value is equal to the number of zeros in the number expressed in standard notation.</p>
+    <p class="para editable block" id="ball-ch02_s01_p05">Small numbers can also be expressed in scientific notation but with negative exponents:</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>10<sup class="superscript">−1</sup>
+</td>
+                    <td>= 0.1 = 1/10</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">−2</sup>
+</td>
+                    <td>= 0.01 = 1/100</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">−3</sup>
+</td>
+                    <td>= 0.001 = 1/1,000</td>
+                </tr>
+                <tr>
+                    <td>10<sup class="superscript">−4</sup>
+</td>
+                    <td>= 0.0001 = 1/10,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="ball-ch02_s01_p06">and so forth. Again, the value of the exponent is equal to the number of zeros in the denominator of the associated fraction. A negative exponent implies a decimal number less than one.</p>
+    <p class="para editable block" id="ball-ch02_s01_p07">A number is expressed in scientific notation by writing the first nonzero digit, then a decimal point, and then the rest of the digits. The part of a number in scientific notation that is multiplied by a power of 10 is called the <span class="margin_term"><a class="glossterm">coefficient</a><span class="glossdef">The part of a number in scientific notation that is multiplied by a power of 10.</span></span>. Then determine the power of 10 needed to make that number into the original number and multiply the written number by the proper power of 10. For example, to write 79,345 in scientific notation,</p>
+    <span class="informalequation block"><span class="mathphrase">79,345 = 7.9345 × 10,000 = 7.9345 × 10<sup class="superscript">4</sup></span></span>
+    <p class="para editable block" id="ball-ch02_s01_p08">Thus, the number in scientific notation is 7.9345 × 10<sup class="superscript">4</sup>. For small numbers, the same process is used, but the exponent for the power of 10 is negative:</p>
+    <span class="informalequation block"><span class="mathphrase">0.000411 = 4.11 × 1/10,000 = 4.11 × 10<sup class="superscript">−4</sup></span></span>
+    <p class="para editable block" id="ball-ch02_s01_p09">Typically, the extra zero digits at the end or the beginning of a number are not included. (See <a class="xref" href="#ball-ch02_s01_f01">Figure 2.1 "Using Scientific Notation"</a>.)</p>
+
+    <div class="exercises editable block" id="ball-ch02_s01_n02">
+        <h3 class="title">Example 1</h3>
+        <p class="para" id="ball-ch02_s01_p10">Express these numbers in scientific notation.</p>
+        <ol class="orderedlist" id="ball-ch02_s01_l02">
+            <li>306,000</li>
+            <li>0.00884</li>
+            <li>2,760,000</li>
+            <li>0.000000559</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s01_l03">
+            <li>The number 306,000 is 3.06 times 100,000, or 3.06 times 10<sup class="superscript">5</sup>. In scientific notation, the number is 3.06 × 10<sup class="superscript">5</sup>.</li>
+            <li>The number 0.00884 is 8.84 times 1/1,000, which is 8.84 times 10<sup class="superscript">−3</sup>. In scientific notation, the number is 8.84 × 10<sup class="superscript">−3</sup>.</li>
+            <li>The number 2,760,000 is 2.76 times 1,000,000, which is the same as 2.76 times 10<sup class="superscript">6</sup>. In scientific notation, the number is written as 2.76 × 10<sup class="superscript">6</sup>. Note that we omit the zeros at the end of the original number.</li>
+            <li>The number 0.000000559 is 5.59 times 1/10,000,000, which is 5.59 times 10<sup class="superscript">−7</sup>. In scientific notation, the number is written as 5.59 × 10<sup class="superscript">−7</sup>.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s01_p11">Express these numbers in scientific notation.</p>
+        <ol class="orderedlist" id="ball-ch02_s01_l04">
+            <li>23,070</li>
+            <li>0.0009706</li>
+        </ol>
+        <p class="simpara"><em class="emphasis">Answers</em></p>
+        <ol class="orderedlist" id="ball-ch02_s01_l05">
+            <li>2.307 × 10<sup class="superscript">4</sup>
+</li>
+            <li>9.706 × 10<sup class="superscript">−4</sup>
+</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s01_p12">Another way to determine the power of 10 in scientific notation is to count the number of places you need to move the decimal point to get a numerical value between 1 and 10. The number of places equals the power of 10. This number is positive if you move the decimal point to the right and negative if you move the decimal point to the left:</p>
+    <span class="informalequation block"><math xml:id="ball-ch02_m001" display="block"><semantics><mrow><mtable><mtr><mtd><mrow><mn>5</mn><munder><mrow><munder><mn>6</mn><mo>↖</mo></munder></mrow><mn>4</mn></munder><mo>,</mo><munder><mrow><munder><mn>9</mn><mo>↖</mo></munder></mrow><mn>3</mn></munder><munder><mrow><munder><mn>0</mn><mo>↖</mo></munder></mrow><mn>2</mn></munder><munder><mrow><munder><mn>0</mn><mo>↖</mo></munder></mrow><mn>1</mn></munder><mo>=</mo><mn>5.69</mn><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></mtd><mtd><mrow><mn>0.</mn><munder><mrow><munder><mn>0</mn><mo>↗</mo></munder></mrow><mn>1</mn></munder><munder><mrow><munder><mn>0</mn><mo>↗</mo></munder></mrow><mn>2</mn></munder><munder><mrow><munder><mn>0</mn><mo>↗</mo></munder></mrow><mn>3</mn></munder><munder><mrow><munder><mn>0</mn><mo>↗</mo></munder></mrow><mn>4</mn></munder><munder><mrow><munder><mn>2</mn><mo>↗</mo></munder></mrow><mn>5</mn></munder><mn>8</mn><mo>=</mo><mn>2.8</mn><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></mtd></mtr></mtable><mo> </mo></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s01_p13">Many quantities in chemistry are expressed in scientific notation. When performing calculations, you may have to enter a number in scientific notation into a calculator. Be sure you know how to correctly enter a number in scientific notation into your calculator. Different models of calculators require different actions for properly entering scientific notation. If in doubt, consult your instructor immediately. (See <a class="xref" href="#ball-ch02_s01_f02">Figure 2.2 "Scientific Notation on a Calculator"</a>.)</p>
+
+    <div class="key_takeaways editable block" id="ball-ch02_s01_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="ball-ch02_s01_l06">
+            <li>Standard notation expresses a number normally.</li>
+            <li>Scientific notation expresses a number as a coefficient times a power of 10.</li>
+            <li>The power of 10 is positive for numbers greater than 1 and negative for numbers between 0 and 1.</li>
+        </ul>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s01_qs01" defaultlabel="number">
+        <h3 class="title">Exercises</h3>
+        <ol class="qandadiv" id="ball-ch02_s01_qs01_qd01">
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa01">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p01">Express these numbers in scientific notation.</p>
+                    <ol class="orderedlist" id="ball-ch02_s01_qs01_l01" numeration="loweralpha">
+                        <li>56.9</li>
+                        <li>563,100</li>
+                        <li>0.0804</li>
+                        <li>0.00000667</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa02">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p02">Express these numbers in scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l03" numeration="loweralpha">                            <li>−890,000</li>
+                            <li>602,000,000,000</li>
+                            <li>0.0000004099</li>
+                            <li>0.000000000000011</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa03">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p03">Express these numbers in scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l05" numeration="loweralpha">                            <li>0.00656</li>
+                            <li>65,600</li>
+                            <li>4,567,000</li>
+                            <li>0.000005507</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa04">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p04">Express these numbers in scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l07" numeration="loweralpha">                            <li>65</li>
+                            <li>−321.09</li>
+                            <li>0.000077099</li>
+                            <li>0.000000000218</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa05">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p05">Express these numbers in standard notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l09" numeration="loweralpha">                            <li>1.381 × 10<sup class="superscript">5</sup>
+</li>
+                            <li>5.22 × 10<sup class="superscript">−7</sup>
+</li>
+                            <li>9.998 × 10<sup class="superscript">4</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa06">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p06">Express these numbers in standard notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l11" numeration="loweralpha">                            <li>7.11 × 10<sup class="superscript">−2</sup>
+</li>
+                            <li>9.18 × 10<sup class="superscript">2</sup>
+</li>
+                            <li>3.09 × 10<sup class="superscript">−10</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa07">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p07">Express these numbers in standard notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l13" numeration="loweralpha">                            <li>8.09 × 10<sup class="superscript">0</sup>
+</li>
+                            <li>3.088 × 10<sup class="superscript">−5</sup>
+</li>
+                            <li>−4.239 × 10<sup class="superscript">2</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa08">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p08">Express these numbers in standard notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l15" numeration="loweralpha">                            <li>2.87 × 10<sup class="superscript">−8</sup>
+</li>
+                            <li>1.78 × 10<sup class="superscript">11</sup>
+</li>
+                            <li>1.381 × 10<sup class="superscript">−23</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa09">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p09">These numbers are not written in proper scientific notation. Rewrite them so that they are in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l17" numeration="loweralpha">                            <li>72.44 × 10<sup class="superscript">3</sup>
+</li>
+                            <li>9,943 × 10<sup class="superscript">−5</sup>
+</li>
+                            <li>588,399 × 10<sup class="superscript">2</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa10">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p10">These numbers are not written in proper scientific notation. Rewrite them so that they are in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l19" numeration="loweralpha">                            <li>0.000077 × 10<sup class="superscript">−7</sup>
+</li>
+                            <li>0.000111 × 10<sup class="superscript">8</sup>
+</li>
+                            <li>602,000 × 10<sup class="superscript">18</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa11">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p11">These numbers are not written in proper scientific notation. Rewrite them so that they are in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l21" numeration="loweralpha">                            <li>345.1 × 10<sup class="superscript">2</sup>
+</li>
+                            <li>0.234 × 10<sup class="superscript">−3</sup>
+</li>
+                            <li>1,800 × 10<sup class="superscript">−2</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa12">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p12">These numbers are not written in proper scientific notation. Rewrite them so that they are in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l23" numeration="loweralpha">                            <li>8,099 × 10<sup class="superscript">−8</sup>
+</li>
+                            <li>34.5 × 10<sup class="superscript">0</sup>
+</li>
+                            <li>0.000332 × 10<sup class="superscript">4</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa13">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p13">Write these numbers in scientific notation by counting the number of places the decimal point is moved.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l25" numeration="loweralpha">                            <li>123,456.78</li>
+                            <li>98,490</li>
+                            <li>0.000000445</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa14">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p14">Write these numbers in scientific notation by counting the number of places the decimal point is moved.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l27" numeration="loweralpha">                            <li>0.000552</li>
+                            <li>1,987</li>
+                            <li>0.00000000887</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa15">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p15">Use your calculator to evaluate these expressions. Express the final answer in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l29" numeration="loweralpha">                            <li>456 × (7.4 × 10<sup class="superscript">8</sup>) = ?</li>
+                            <li>(3.02 × 10<sup class="superscript">5</sup>) ÷ (9.04 × 10<sup class="superscript">15</sup>) = ?</li>
+                            <li>0.0044 × 0.000833 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa16">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p16">Use your calculator to evaluate these expressions. Express the final answer in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l31" numeration="loweralpha">                            <li>98,000 × 23,000 = ?</li>
+                            <li>98,000 ÷ 23,000 = ?</li>
+                            <li>(4.6 × 10<sup class="superscript">−5</sup>) × (2.09 × 10<sup class="superscript">3</sup>) = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa17">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p17">Use your calculator to evaluate these expressions. Express the final answer in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l33" numeration="loweralpha">                            <li>45 × 132 ÷ 882 = ?</li>
+                            <li>[(6.37 × 10<sup class="superscript">4</sup>) × (8.44 × 10<sup class="superscript">−4</sup>)] ÷ (3.2209 × 10<sup class="superscript">15</sup>) = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa18">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s01_qs01_p18">Use your calculator to evaluate these expressions. Express the final answer in proper scientific notation.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l35" numeration="loweralpha">                            <li>(9.09 × 10<sup class="superscript">8</sup>) ÷ [(6.33 × 10<sup class="superscript">9</sup>) × (4.066 × 10<sup class="superscript">−7</sup>)] = ?</li>
+                            <li>9,345 × 34.866 ÷ 0.00665 = ?</li>
+</ol>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s01_qs01_ans" defaultlabel="number">
+        <h3 class="title">Answers</h3>
+        <ol class="qandadiv">
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa01_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l02_ans" numeration="loweralpha">                            <li>5.69 × 10<sup class="superscript">1</sup>
+</li>
+                            <li>5.631 × 10<sup class="superscript">5</sup>
+</li>
+                            <li>8.04 × 10<sup class="superscript">−2</sup>
+</li>
+                            <li>6.67 × 10<sup class="superscript">−6</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa02_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa03_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l06_ans" numeration="loweralpha">                            <li>6.56 × 10<sup class="superscript">−3</sup>
+</li>
+                            <li>6.56 × 10<sup class="superscript">4</sup>
+</li>
+                            <li>4.567 × 10<sup class="superscript">6</sup>
+</li>
+                            <li>5.507 × 10<sup class="superscript">−6</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa04_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa05_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l10_ans" numeration="loweralpha">                            <li>138,100</li>
+                            <li>0.000000522</li>
+                            <li>99,980</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa06_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa07_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l14_ans" numeration="loweralpha">                            <li>8.09</li>
+                            <li>0.00003088</li>
+                            <li>−423.9</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa08_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa09_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l18_ans" numeration="loweralpha">                            <li>7.244 × 10<sup class="superscript">4</sup>
+</li>
+                            <li>9.943 × 10<sup class="superscript">−2</sup>
+</li>
+                            <li>5.88399 × 10<sup class="superscript">7</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa10_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa11_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l22_ans" numeration="loweralpha">                            <li>3.451 × 10<sup class="superscript">4</sup>
+</li>
+                            <li>2.34 × 10<sup class="superscript">−4</sup>
+</li>
+                            <li>1.8 × 10<sup class="superscript">1</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa12_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa13_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l26_ans" numeration="loweralpha">                            <li>1.2345678 × 10<sup class="superscript">5</sup>
+</li>
+                            <li>9.849 × 10<sup class="superscript">4</sup>
+</li>
+                            <li>4.45 × 10<sup class="superscript">−7</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa14_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa15_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l30_ans" numeration="loweralpha">                            <li>3.3744 × 10<sup class="superscript">11</sup>
+</li>
+                            <li>3.3407 × 10<sup class="superscript">−11</sup>
+</li>
+                            <li>3.665 × 10<sup class="superscript">−6</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa16_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa17_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s01_qs01_l34_ans" numeration="loweralpha">                            <li>6.7346 × 10<sup class="superscript">0</sup>
+</li>
+                            <li>1.6691 × 10<sup class="superscript">−14</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s01_qs01_qd01_qa18_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-00-measurements.html"><img src="shared/images/batch-left.png"></a> <a href="s06-00-measurements.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-02-expressing-units.html">Next Section</a> <a href="s06-02-expressing-units.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+  
+</body>
+</html>

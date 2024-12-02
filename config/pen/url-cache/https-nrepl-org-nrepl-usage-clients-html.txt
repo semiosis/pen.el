@@ -1,0 +1,570 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 5298
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Tue, 13 Aug 2024 18:56:27 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"66bbac5b-503b"
+expires: Tue, 24 Sep 2024 01:07:15 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: FAD5:245686:17290CE:18067DE:66F20E6B
+Accept-Ranges: bytes
+Date: Tue, 24 Sep 2024 01:21:42 GMT
+Via: 1.1 varnish
+Age: 530
+X-Served-By: cache-akl10330-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1727140902.177811,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 400f656dba8a3f9cae1409d630119403826a8d8e
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nREPL Clients :: nREPL</title>
+    <link rel="canonical" href="https://nrepl.org/nrepl/usage/clients.html">
+    <link rel="prev" href="server.html">
+    <link rel="next" href="tls.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="../../_/css/site-extra.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128069102-1"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','UA-128069102-1')</script>
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="https://nrepl.org">nREPL</a>
+        <span class="separator">//</span>
+        <a href="https://nrepl.org">Docs</a>
+      </div>
+      <div class="navbar-item">
+        <div id="docsearch"></div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <a class="navbar-item" href="https://cljdoc.org/d/nrepl/nrepl/CURRENT">API Docs</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/nrepl/nrepl">nREPL</a>
+            <a class="navbar-item" href="https://github.com/nrepl/piggieback">Piggieback</a>
+            <a class="navbar-item" href="https://github.com/nrepl/drawbridge">Drawbridge</a>
+            <a class="navbar-item" href="https://github.com/nrepl/fastlane">Fastlane</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/nrepl/about/support.html">Support</a>
+            <a class="navbar-item" href="/nrepl/about/contributing.html">Contributing</a>
+            <a class="navbar-item" href="https://opencollective.com/nrepl">Open Collective</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="nrepl" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">nREPL</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="server.html">Server</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="clients.html">Clients</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tls.html">TLS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="misc.html">Misc</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Design</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../design/overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../design/handlers.html">Handlers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../design/transports.html">Transports</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../design/middleware.html">Middleware</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ops.html">Built-in Ops</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../extensions.html">Extensions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../beyond_clojure.html">Beyond Clojure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../hacking_on_nrepl.html">Hacking on nREPL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../building_middleware.html">Building Middleware</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../building_servers.html">Building Servers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../building_clients.html">Building Clients</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../faq.html">FAQ</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../alternatives.html">Alternatives</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../additional_resources.html">Additional Resources</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">About</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/history.html">History</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/team.html">Team</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/support.html">Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/contributing.html">Contributing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/compatibility.html">Compatibility</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/release_policy.html">Release Policy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/changelog.html">Changelog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../about/license.html">License</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">nREPL</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">nREPL</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+        <li class="version">
+          <a href="../1.3/index.html">1.3</a>
+        </li>
+        <li class="version">
+          <a href="../1.2/index.html">1.2</a>
+        </li>
+        <li class="version">
+          <a href="../1.1/index.html">1.1</a>
+        </li>
+        <li class="version">
+          <a href="../1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../1.3/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">nREPL</a></li>
+    <li>Usage</li>
+    <li><a href="clients.html">Clients</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">default</button>
+  <div class="version-menu">
+    <a class="version is-current" href="clients.html">default</a>
+    <a class="version" href="../1.3/usage/clients.html">1.3</a>
+    <a class="version" href="../1.2/usage/clients.html">1.2</a>
+    <a class="version" href="../1.1/usage/clients.html">1.1</a>
+    <a class="version" href="../1.0/usage/clients.html">1.0</a>
+  </div>
+</div>
+<div class="edit-this-page"><a href="https://github.com/nrepl/nrepl/edit/master/doc/modules/ROOT/pages/usage/clients.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">nREPL Clients</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most of the time, you will connect to an nREPL server using an existing
+library/client/tool. Below is a listing of many such clients.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Some of these clients will only work with Clojure nREPL servers, while
+others are built with language-agnosticism and can connect to nREPL
+servers written in any language.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="command-line-clients"><a class="anchor" href="#command-line-clients"></a>Command-line Clients</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://leiningen.org/grench.html">grenchman</a> (command-line nREPL client written in OCaml, works with non-Clojure servers)</p>
+</li>
+<li>
+<p><a href="https://github.com/trptcolin/reply/">REPL-y</a> (command-line client for nREPL)</p>
+</li>
+<li>
+<p><a href="https://github.com/eraserhd/rep">rep</a> (A single-shot nREPL client designed for shell invocation.)</p>
+</li>
+<li>
+<p><a href="https://git.sr.ht/~technomancy/shevek/">shevek</a> (A command-line nREPL client written in <a href="https://fennel-lang.org/">Fennel</a>, works with non-Clojure servers)</p>
+</li>
+<li>
+<p><a href="https://github.com/kanej/parle">Parle</a> (A command-line nREPL client using node.js written in ClojureScript)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Leiningen uses REPL-y internally as its command-line nREPL client.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="editorsides"><a class="anchor" href="#editorsides"></a>Editors/IDEs</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/clojure-emacs/cider">CIDER</a> (Clojure Interactive
+Development Environment that Rocks for Emacs)</p>
+</li>
+<li>
+<p><a href="https://cursiveclojure.com">Cursive</a> (Clojure IDE/plugin for IntelliJ Idea)</p>
+</li>
+<li>
+<p><a href="https://github.com/ccw-ide/ccw">Counterclockwise</a> (Clojure IDE/plugin
+for Eclipse)</p>
+</li>
+<li>
+<p><a href="https://github.com/sanel/monroe">monroe</a> (nREPL client for Emacs, works with non-Clojure servers)</p>
+</li>
+<li>
+<p><a href="https://github.com/Saikyun/miracle">miracle</a> (fork of <code>monroe</code> targeting Arcadia)</p>
+</li>
+<li>
+<p><a href="https://github.com/Sasanidas/Rail">Rail</a> (generic nREPL client for Emacs that should work with any nREPL server)</p>
+</li>
+<li>
+<p><a href="https://github.com/tpope/vim-fireplace">fireplace.vim</a> (Clojure + nREPL
+support for vim)</p>
+</li>
+<li>
+<p><a href="https://github.com/Olical/conjure">Conjure</a> (Clojure(Script) plugin for Neovim)</p>
+</li>
+<li>
+<p><a href="https://github.com/liquidz/vim-iced">vim-iced</a> (Clojure Interactive Development Environment for Vim8/Neovim)</p>
+</li>
+<li>
+<p><a href="https://github.com/clojure-vim/acid.nvim">Acid.nvim</a> (Asynchronous Clojure Interactive Development for Neovim)</p>
+</li>
+<li>
+<p><a href="https://github.com/mauricioszabo/atom-chlorine">Chrorine</a> (Atom plugin for Clojure Development)</p>
+</li>
+<li>
+<p><a href="https://github.com/jasongilman/proto-repl">Proto REPL</a> (Clojure development environment and REPL for Atom)</p>
+</li>
+<li>
+<p><a href="https://github.com/BetterThanTomorrow/calva">Calva</a> (Clojure &amp; ClojureScript support for VS Code)</p>
+</li>
+<li>
+<p><a href="https://github.com/tonsky/Clojure-Sublimed">Clojure Sublimed</a> (Clojure support for Sublime Text)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If your preferred Clojure development environment supports nREPL, you&#8217;re in luck.
+Just use it or connect to an existing nREPL endpoint and start hacking.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Most Clojure editors/IDEs can start an nREPL server themselves and connect
+to it automatically (e.g. CIDER would do this when you&#8217;re using the
+<code>cider-jack-in</code> family of commands), so you&#8217;ll rarely need to start a server
+externally for local development purposes.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="libraries"><a class="anchor" href="#libraries"></a>Libraries</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/rksm/node-nrepl-client">node-nrepl-client</a> (An nREPL client for programmatic use from node.js written in Javascript)</p>
+</li>
+<li>
+<p><a href="https://github.com/clojure-vim/nrepl-python-client">nrepl-python-client</a> (nREPL client library for Python)</p>
+</li>
+<li>
+<p><a href="https://github.com/vspinu/R-nREPL">R-nREPL</a> (nREPL client for R)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="other-clients"><a class="anchor" href="#other-clients"></a>Other Clients</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/clojupyter/clojupyter">clojupyter</a> (Jupyter notebooks for Clojure)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="using-the-built-in-client"><a class="anchor" href="#using-the-built-in-client"></a>Using the built-in client</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>nREPL ships with a very simple command-line client that you can use for some basic
+interactions with the server. The following command will start an nREPL server
+and connect with it using the built-in client.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ clj -Sdeps '{:deps {nrepl/nrepl {:mvn/version "1.3.0"}}}' -M -m nrepl.cmdline --interactive
+nREPL server started on port 59403 on host 127.0.0.1 - nrepl://127.0.0.1:59403
+nREPL 1.3.0
+Clojure 1.9.0
+Java HotSpot(TM) 64-Bit Server VM 10.0.1+10
+user=&gt; (+ 1 2)
+3</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to connect to a server that&#8217;s already running you can do it like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ clj -Sdeps '{:deps {nrepl/nrepl {:mvn/version "1.3.0"}}}' -M -m nrepl.cmdline --connect --host host --port port
+nREPL 1.3.0
+Clojure 1.9.0
+Java HotSpot(TM) 64-Bit Server VM 10.0.1+10
+user=&gt; (+ 1 2)
+3</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to connect to a unix domain socket, you can do it like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ clj -Sdeps '{:deps {nrepl/nrepl {:mvn/version "1.3.0"}}}' -M -m nrepl.cmdline --connect --socket /some/where/safe/nrepl
+nREPL 1.3.0
+Clojure 1.9.0
+Java HotSpot(TM) 64-Bit Server VM 10.0.1+10
+user=&gt; (+ 1 2)
+3</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The built in client does not support the tty transport. Use <code>nc</code> or <code>telnet</code> instead.</p>
+</div>
+<div class="paragraph">
+<p>Most users, however, are advised to use REPL-y or their favourite
+editor instead for optimal results.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="talking-to-an-nrepl-endpoint-programmatically"><a class="anchor" href="#talking-to-an-nrepl-endpoint-programmatically"></a>Talking to an nREPL endpoint programmatically</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to connect to an nREPL server using the default transport, something
+like this will work:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">=&gt; (require '[nrepl.core :as nrepl])
+nil
+=&gt; (with-open [conn (nrepl/connect :port 59258)]
+     (-&gt; (nrepl/client conn 1000)    ; message receive timeout required
+         (nrepl/message {:op "eval" :code "(+ 2 3)"})
+         nrepl/response-values))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If your nREPL server is running on a different machine or listening on a specific
+address different than the default one, you can use the <code>:host</code> keyword in the
+<code>connect</code> function to specify which address to connect to. E.g., to
+connect to a nREPL server listening on address 172.18.0.5 and port 4001:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">=&gt; (with-open [conn (nrepl/connect :host "172.18.0.5" :port 4001)]
+     (-&gt; (nrepl/client conn 1000)    ; message receive timeout required
+         (nrepl/message {:op "eval" :code "(+ 2 3)"})
+         nrepl/response-values))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>response-values</code> will return only the values of evaluated expressions, read
+from their (by default) <code>pr</code>-encoded representations via <code>read</code>.  You can see
+the full content of message responses easily:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-clojure hljs" data-lang="clojure">=&gt; (with-open [conn (nrepl/connect :port 59258)]
+     (-&gt; (nrepl/client conn 1000)
+         (nrepl/message {:op "eval" :code "(time (reduce + (range 1e6)))"})
+         doall      ;; `message` and `client-session` all return lazy seqs
+         pprint))
+nil
+({:out "\"Elapsed time: 68.032 msecs\"\n",
+  :session "2ba81681-5093-4262-81c5-edddad573201",
+  :id "3124d886-7a5d-4c1e-9fc3-2946b1b3cfaa"}
+ {:ns "user",
+  :value "499999500000",
+  :session "2ba81681-5093-4262-81c5-edddad573201",
+  :id "3124d886-7a5d-4c1e-9fc3-2946b1b3cfaa"}
+ {:status ["done"],
+  :session "2ba81681-5093-4262-81c5-edddad573201",
+  :id "3124d886-7a5d-4c1e-9fc3-2946b1b3cfaa"})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Each message must contain at least an <code>:op</code> (or <code>"op"</code>) slot, which specifies
+the "type" of the operation to be performed.  The operations supported by an
+nREPL endpoint are determined by the handlers and middleware stack used when
+starting that endpoint; the default middleware stack (described below) supports
+a particular set of operations, <a href="../ops.html" class="xref page">detailed here</a>.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="server.html">Server</a></span>
+  <span class="next"><a href="tls.html">TLS</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>Copyright (C) 2019-2024 <a href="https://batsov.com">Bozhidar Batsov</a> and nREPL contributors.</p>
+  <p>Except where otherwise noted, nrepl.org is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> (CC BY-SA 4.0).</p>
+</footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<script type="text/javascript">
+  docsearch({
+   container: '#docsearch',
+   appId: 'R3RKLGFWJL',
+   apiKey: 'd3cfde049103d19f20bfc204b68f651e',
+   indexName: 'nrepl',
+   debug: false // Set debug to true if you want to inspect the dropdown
+ });
+</script>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

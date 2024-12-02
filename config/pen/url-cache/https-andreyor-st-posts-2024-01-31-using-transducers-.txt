@@ -1,0 +1,480 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Length: 10831
+Content-Type: text/html; charset=utf-8
+Etag: "4426135251fbf4c273b3fcad0a3cae48f977c4759235c73a92c8cb6996a20810-gzip"
+Expires: Fri, 01 Nov 2024 19:35:13 UTC
+Last-Modified: Wed, 16 Oct 2024 16:38:22 GMT
+Permissions-Policy: interest-cohort=()
+Vary: Origin
+Date: Fri, 01 Nov 2024 19:25:13 GMT
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Using transducers · Andrey Listopadov</title>
+<link rel="stylesheet" href="https://andreyor.st/css/style.css"/>
+<meta property="og:title" content="Using transducers" />
+<meta property="og:description" content="I&rsquo;ve been working with Clojure professionally for four years now, and I made some posts about the language in the past. Clojure is a great language, although not without its fair share of things to consider. In other words, I don&rsquo;t see Clojure as an ideal language by any means, and it&rsquo;s not suitable for every type of project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andreyor.st/posts/2024-01-31-using-transducers/" /><meta property="og:image" content="https://andreyor.st/me.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-31T21:57:00+03:00" />
+<meta property="article:modified_time" content="2024-01-31T21:58:22+03:00" />
+
+<body>
+    <header>
+      <div class="header">
+  <h2><a href="https://andreyor.st/">Andrey Listopadov</a></h2>
+  <div class="horizontal-links"><a href="https://andreyor.st/posts">Archive</a><span> </span><a href="https://andreyor.st/tags">Tags</a><span> </span><a href="https://andreyor.st/categories">Categories</a><span> </span><a href="https://andreyor.st/talks">Talks</a><span> </span><a href="https://andreyor.st/notes">Notes</a><span> </span><a href="https://andreyor.st/about">About</a><span> </span><a href="https://andreyor.st/projects">Projects</a><span> </span><a href="https://andreyor.st/feed.xml">RSS</a></div>
+</div>
+</header>
+    <main>
+<div class="post">
+  <div class="title-group">
+    <h1 class="title">Using transducers</h1>
+    <div class="sub-title">
+      <div class="date">
+        <time datetime="2024-01-31T21:57:00&#43;0300"
+              class="post-date"
+              title="Last modified at Wed, Jan 31, 21:58, 2024">
+          Wed, Jan 31, 2024
+        </time>
+      </div>
+      <div class="tags">
+        <span class="horizontal-links links">
+          <a href="https://andreyor.st/categories/programming/">@programming</a> 
+          <a href="https://andreyor.st/tags/clojure/">clojure</a>
+          <span title="~3337 words">~15 minutes read</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <article class="content">
+    <p>I&rsquo;ve been working with Clojure professionally for four years now, and I made some posts about the language in the past.
+Clojure is a great language, although not without its fair share of things to consider.
+In other words, I don&rsquo;t see Clojure as an ideal language by any means, and it&rsquo;s not suitable for every type of project.
+Still, the language is my favorite among others, and I enjoy writing and reading code in it.</p>
+<p>Now, I already made a post about <a href="https://andreyor.st/posts/2022-08-13-understanding-transducers/">transducers</a> before.
+In that post I tried to explain what transducers are, how they work, and more importantly how they compose.
+I think since then I had a good grasp on what transducers are, and I use them when appropriate.
+However, I still see some concerns when it comes to transducers in the community, even though I&rsquo;m almost not involved in it, and I see this even at work sometimes.
+So, this post isn&rsquo;t going to be hard on the technical details behind transducers, but more about how and when you should use them.</p>
+<h2 id="don-t-be-lazy-until-it-matters">Don&rsquo;t be lazy until it matters</h2>
+<p>Clojure has a weird aspect to it that trips a lot of people - Clojure is lazy by default.
+Often I see this kind of code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">clojure.string/join</span> <span style="color:#666;font-weight:bold;font-style:italic">separator</span> (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">foo</span> <span style="color:#666;font-weight:bold;font-style:italic">bar</span>))
+</span></span></code></pre></div><p>This is just an example, of course, but the pattern is not uncommon - we build a sequence and consume it.
+Ideally, though this code should use <code>mapv</code> instead of <code>map</code> because <code>map</code> is lazy.
+Lazy sequences in Clojure come with a bit of overhead, and in this case we&rsquo;ll be consuming everything immediately, thus this overhead is not justified.
+I&rsquo;ll admit, this particular example can  benefit from consuming a lazy sequence, if the sequence is large enough.
+This will ensure that we don&rsquo;t store both the string and the sequence itself in the memory, only the string and one of the elements of the sequence.
+Often, however, programmers just type out <code>map</code> because it&rsquo;s a common concept, not thinking about it being lazy, and whether if the laziness here is beneficial or not.
+Now, that&rsquo;s not about transducers, really, but it&rsquo;ll make sense in a few minutes why I bring this up.</p>
+<h3 id="the-spear-of-lazy-poisoning">The spear of lazy poisoning</h3>
+<p>Clojure has a lot of convenience features in its core library, and I think that&rsquo;s partly the reason why people, myself included, like the language.
+One of such conveniences are <code>-&gt;</code> and <code>-&gt;&gt;</code> macros.
+These are hard to understand at first, but once you get what they do, I think it&rsquo;s a safe bet that you&rsquo;ll going to use them pretty much everywhere.
+It makes the code easier to read.
+Now, these macros don&rsquo;t do anything crazy, they just make deeply nested expressions appear unnested.</p>
+<p>For example, here&rsquo;s an expression that maps over the range of ten numbers, incrementing everything, filtering odd numbers, and adding them together:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">reduce + </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span> (<span style="font-weight:bold;font-style:italic">map inc </span>(<span style="font-weight:bold;font-style:italic">range </span>10))))
+</span></span></code></pre></div><p>Notice how the expression is written pretty much backward from what I&rsquo;ve described.
+First comes <code>reduce</code>, then <code>filter</code>, then <code>map</code>, and, finally, <code>range</code>.
+Lisps are known for this kind of notation, and you often read the code backward.
+In a more mainstream language, this would probably have been written like this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>[0,1,2,3,4,5,6,7,8,9].map(x=&gt;x+1).filter(x=&gt;x%2!=0).reduce((res,x)=&gt;res+x)
+</span></span></code></pre></div><p>As you can see, the order of operations feels more logical, even though it&rsquo;s just a syntactic abstraction.
+Methods, really, are just functions, and their first argument simply is what appeared before the dot.
+In its essence, the above code is equivalent to this code, even though it&rsquo;s not a valid JavaScript:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>reduce(filter(map([0,1,2,3,4,5,6,7,8,9], x=&gt;x+1), x=&gt;x%2!=0), (res,x)=&gt;res+x)
+</span></span></code></pre></div><p>So we&rsquo;re back to the start, <code>reduce</code> is executed last, but appears first.
+The <code>.</code> allows us to express this more sequentially, and that&rsquo;s what Clojure&rsquo;s <code>-&gt;</code> and <code>-&gt;&gt;</code> are for.
+The original code can be rewritten as:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10) (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>) (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>The difference between <code>-&gt;</code> and <code>-&gt;&gt;</code> is only where the previous expression is going to be placed in the next expression.
+The thread-first (<code>-&gt;</code> )puts it as the first argument, and thread-last (<code>-&gt;&gt;</code>) as the last: <code>(-&gt; 42 (+ 1 2))</code> expands to <code>(+ 42 1 2)</code> and <code>(-&gt;&gt; 42 (+ 1 2))</code> expands to <code>(+ 1 2 42)</code>.
+This repeats for all forms in the threading macro.
+Now, that was a pretty long tangent, but I felt that this needs explaining, because we&rsquo;re going to see the use of <code>-&gt;&gt;</code> in the following examples.</p>
+<p>Why did I call this section &ldquo;The spear of lazy poisoning&rdquo;?
+Well, I think that <code>-&gt;&gt;</code> looks like a spear, or a harpoon, and it often poisons the code with unnecessary laziness.
+You can even see that in the example above - both <code>map</code> and <code>filter</code> are lazy, yet the <code>reduce</code> is eager, and all laziness up to that point was unnecessary because the data we were processing is finite.
+This gives us the laziness overhead, which is mostly computational.
+We can, of course, use <code>mapv</code> and <code>filterv</code> - the eager versions of <code>map</code> and <code>filter</code> that produce vectors instead, but it would also harm us:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10) (<span style="color:#666;font-weight:bold;font-style:italic">mapv</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="color:#666;font-weight:bold;font-style:italic">filterv</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>) (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>Now we construct a whole vector only to discard half of it in the next step, then discarding the remaining half in the <code>reduce</code>.
+That&rsquo;s a memory overhead we&rsquo;d also like to avoid.
+So what should we do?</p>
+<h2 id="transducers">Transducers</h2>
+<p>Transducers are used by the <code>transduce</code> function which is like <code>reduce</code> except it doesn&rsquo;t accept just a reducing function, it also accepts a transforming function.
+Before we go into that, let&rsquo;s go back to the lazy example for a moment:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10) (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>) (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>I think it&rsquo;s important to build intuition of how it works.</p>
+<p>The operations are lazy, so by the time we get to the <code>reduce</code>, nothing happened yet.
+What we get in the <code>reduce</code> is a lazy composition of two operations:</p>
+<ol>
+<li>Take one item from the range sequence, and process it with <code>inc</code>;</li>
+<li>Take one item from sequence built by <code>map</code>, filter it with <code>odd?</code>;
+a. If the result is not truthly, go to step 1;</li>
+<li>Reduce it to the result using <code>+</code>.</li>
+</ol>
+<p>This means that in reality, the sequence that the <code>reduce</code> is processing looks kinda like <code>[(odd? (inc 0)), (odd? (inc 1)), (odd (inc 2)), ...]</code>, with the exception that filtered items magically disappear from it.
+These expressions are lazy, and not computed until they get into <code>reduce</code> which realizes them.
+This, of course, isn&rsquo;t how it works, but you can use this model for building intuition.</p>
+<p>If you want to read more about lazy sequences, I have a <a href="https://andreyor.st/posts/2021-10-09-lazy-sequences-and-iterators/">post</a>, describing the implementation of a simple lazy sequence.
+It&rsquo;s in Lua, but the code should be simple enough to understand even if you don&rsquo;t know the language.</p>
+<p>Now, the key part here is that we&rsquo;re composing operations by delaying them - we could say that we&rsquo;re building a recipe.
+However, each operation is lazy, but, as you can see, we don&rsquo;t need every operation to be lazy, as once we get a number we can process it eagerly from there.
+In other words, if we could combine both <code>map</code> and <code>filter</code> into a single step, we could avoid the overhead of multiple lazy compositions.</p>
+<p>Now, Clojure has such a function, it&rsquo;s called <code>keep</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">keep</span> #(<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">%</span>)]
+</span></span><span style="display:flex;"><span>              (<span style="font-weight:bold;font-style:italic">when </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>However, <code>keep</code> is also lazy, and in this case, again, there&rsquo;s no point in being lazy.
+And we may need to work with something more general, i.e. not always want to combine <code>map</code> and <code>filter</code>, sometimes we need to combine multiple <code>map</code> calls, or even some other things, like partitioning.
+That&rsquo;s where transducers come in nicely.</p>
+<p>Clojure developers actually wanted to solve a different problem when they introduced transducers, and I&rsquo;ll get to it a bit later.
+For now, we can rewrite our code to be both eager and memory-efficient:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold">loop </span>[<span style="color:#666;font-weight:bold;font-style:italic">items</span> (<span style="font-weight:bold;font-style:italic">seq </span>(<span style="font-weight:bold;font-style:italic">range </span>10))
+</span></span><span style="display:flex;"><span>       <span style="color:#666;font-weight:bold;font-style:italic">result</span> 0]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">if </span><span style="color:#666;font-weight:bold;font-style:italic">items</span>
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="font-weight:bold;font-style:italic">inc </span>(<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">items</span>))]
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">items</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>               (<span style="font-weight:bold;font-style:italic">+ </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>               <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))
+</span></span><span style="display:flex;"><span>    <span style="color:#666;font-weight:bold;font-style:italic">result</span>))
+</span></span></code></pre></div><p>Just kidding.
+That&rsquo;s a lot of machinery for describing the core concepts of the language.
+Here&rsquo;s how to do it with <code>transduce</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10) (<span style="color:#666;font-weight:bold;font-style:italic">transduce</span> (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)) <span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>As you can see, it is different from <code>reduce</code> because both <code>map</code> and <code>filter</code> are not involved with the collection processing at all.
+Instead, they go as a parameter to the <code>transduce</code> function, and we use <code>comp</code> to compose the two into a single step that does everything.
+Importantly, both <code>map</code> and <code>filter</code> calls are made without any collection supplied to them - this way these functions return transducers.
+I tried my best <a href="https://andreyor.st/posts/2022-08-13-understanding-transducers/#understanding-the-inverse-order-in-comp-and-how-transducers-are-composed">explaining how transducer composition works</a> in my previous post on the matter, so read it if you want to know.</p>
+<p>However, that&rsquo;s a lot to take in, as transducers are quite involved, so here&rsquo;s a simpler intuition for you.</p>
+<p>If you want to refactor any <em>transduceible</em> expression into a transducer, first, transform it into the <code>-&gt;&gt;</code> form, and then replace the <code>-&gt;&gt;</code> with comp:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">reduce + </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span> (<span style="font-weight:bold;font-style:italic">map inc </span>(<span style="font-weight:bold;font-style:italic">range </span>10))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; rewrite using -&gt;&gt;:</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; replace -&gt;&gt; with comp</span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">range </span>10)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>We&rsquo;re halfway through, though.
+This code obviously wrong, but what&rsquo;s left out to do is to understand what it does, and finish the transformation.
+The first step is always the same though, we need to remove the data that we&rsquo;re processing from this expression:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">range </span>10) <span style="color:#888;font-style:italic">; just move it aside for now</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span></code></pre></div><p>Finally, <code>reduce</code> isn&rsquo;t <em>transduceible</em>, so we need to move it out and replace it with something that can accept the transducer, like <code>transduce</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">transduce</span>
+</span></span><span style="display:flex;"><span> (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>))
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-weight:bold;font-style:italic">+</span>
+</span></span><span style="display:flex;"><span> (<span style="font-weight:bold;font-style:italic">range </span>10) <span style="color:#888;font-style:italic">;; with transduce we know where to put the data</span>
+</span></span><span style="display:flex;"><span> )
+</span></span></code></pre></div><p>That&rsquo;s basically it.
+You can apply this method to pretty much any <code>-&gt;&gt;</code> expression, as long as the calls done there have arities that return transducers.</p>
+<h3 id="more-examples">More examples</h3>
+<p>I know, the example above was weird, so here&rsquo;s a different one:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span></code></pre></div><p>In this example, we build a sequence of users who have the administrator role on the server and add some additional data while we&rsquo;re at it.
+We then <code>notify</code> each such user.
+This is not a real-world code, though I have seen something like that in production.</p>
+<p>The <code>notify</code>, again, consumes all of the users, so we don&rsquo;t really need the laziness, here, unless <code>get-users</code> doesn&rsquo;t return an infinite sequence of users, which it is not.
+But even if it did, we don&rsquo;t really need all of the steps to be lazy here, so we can go about this two ways.</p>
+<p>If the list of users is short, we can store it in a vector.
+Let&rsquo;s refactor the code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; start with `comp`:</span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">comp </span>(<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; move out data and consumer:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>))
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">notify</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; Since we want a vector, we can use `into`:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">notify</span>
+</span></span><span style="display:flex;"><span> (<span style="font-weight:bold;font-style:italic">into </span>[]
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>))
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; let&#39;s bring back -&gt;&gt; to bring nesting down a bit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">into </span>[]
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span></code></pre></div><p>If we still want to consume users lazily, we can use <code>sequence</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> <span style="color:#888;font-style:italic">;; now the result is a lazy sequence</span>
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span></code></pre></div><p>It&rsquo;s a small change from the previous example, but it has benefits over the original example.
+In the original example, we had all processing done lazily, however, we only needed to consume users lazily, and the transformation can be done eagerly for each user.
+We just don&rsquo;t want to do the transformation in the <code>notify</code> function, because it is not its task really.
+The <code>sequence</code> function consumes input lazily, applying a composed transformation to every element, and produces a lazy sequence as a result.
+Thus we only have overhead of one lazy sequence, instead of four.
+Your profiling flame graphs would look much nicer this way.</p>
+<p>The beauty of this is that <code>-&gt;&gt;</code> transforms to <code>comp</code> almost one-to-one.
+The problem is, that it is counter-intuitive because for ordinary functions the order is the opposite.
+So keep that in mind.</p>
+<p>For ordinary function, the composition works like this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold;font-style:italic">comp </span><span style="color:#666;font-weight:bold;font-style:italic">a</span>  <span style="color:#666;font-weight:bold;font-style:italic">b</span>  <span style="color:#666;font-weight:bold;font-style:italic">c</span>  <span style="color:#666;font-weight:bold;font-style:italic">d</span>) <span style="color:#666;font-weight:bold;font-style:italic">x</span>) <span style="color:#888;font-style:italic">; same as the expression below</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#888;font-style:italic">; (expressions are aligned for clarity)</span>
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">a</span> (<span style="color:#666;font-weight:bold;font-style:italic">b</span> (<span style="color:#666;font-weight:bold;font-style:italic">c</span> (<span style="color:#666;font-weight:bold;font-style:italic">d</span>  <span style="color:#666;font-weight:bold;font-style:italic">x</span>))))
+</span></span></code></pre></div><p>For transducers, it works exactly the same, except the argument we&rsquo;re composing with is not the value, it&rsquo;s a reducing function.
+The resulting function processes the value in the order specified by the code, so that&rsquo;s one of the reasons people tend to dislike transducers.
+My advice is just to remember that the order for transducer composition is the same as in <code>-&gt;&gt;</code>.</p>
+<h3 id="other-contexts">Other contexts</h3>
+<p>Now, the reason why transducers are a thing is that when working on other libraries for the Clojure ecosystem, the authors noticed that while mapping, filtering, and reducing a core concept, it can&rsquo;t be reused.
+One such example is the <code>clojure.core.async</code> library.
+At one point they needed to map a function over a channel, but you can&rsquo;t really do that.
+Items appear on channels only when someone puts them, so <code>map</code> can&rsquo;t pull on the channel.
+Moreover, <code>map</code> would need an extra channel because it can&rsquo;t put the item back into the original channel.</p>
+<p>Originally, <code>core.async</code> had its own version of <code>map</code> and <code>filter</code>, called <code>map&gt;</code> and <code>filter&gt;</code>.
+However, these were deprecated in favor of transducers.</p>
+<p>Say, <code>get-users</code> doesn&rsquo;t return you a lazy sequence, but instead returns you a <code>core.async</code> channel.
+How would we need to change our processing pipeline from the lazy variant?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold">def </span><span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">admins</span> (<span style="color:#666;font-weight:bold;font-style:italic">async/chan</span> 1 <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)]
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">async/pipe</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>) <span style="color:#666;font-weight:bold;font-style:italic">admins</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">notify</span> <span style="color:#666;font-weight:bold;font-style:italic">admins</span>))
+</span></span></code></pre></div><p>Imagine we&rsquo;ve changed <code>notify</code> to accept a channel.
+Now, we can create a channel with our transformation pipeline as a transducer.
+As a matter of fact, <code>core.async</code> provides a way of running such actions in parallel:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">admins</span> (<span style="color:#666;font-weight:bold;font-style:italic">async/chan</span>)]
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">async/pipeline</span> 10 <span style="color:#666;font-weight:bold;font-style:italic">admins</span> <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">notify</span> <span style="color:#666;font-weight:bold;font-style:italic">admins</span>))
+</span></span></code></pre></div><p>Extracted the transformation into a separate binding makes the code a bit more concise, and reusable.
+And that&rsquo;s exactly what transducers are about - we can abstract the action away from how the data arrives and how it should be stored.
+Here&rsquo;s another example, with the <code>manifold</code> library:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">manifold.stream/-&gt;source</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">s/transform</span> <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span></code></pre></div><p>The same transformation pipeline works for <code>manifold.stream</code> because it also accepts transducers with the <code>transform</code> function.
+We can then modify <code>notify</code> to accept a stream instead of a channel and even have an interop between both libraries.</p>
+<p>So, there you have it - we can process, eager collections, lazy sequences, asynchronous channels, and manifold streams, using the same data pipeline:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users-seq</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">into </span>[] <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">eager-notify</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users-seq</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">lazy-notify</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">admins</span> (<span style="color:#666;font-weight:bold;font-style:italic">async/chan</span> 1 <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)]
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">async/pipe</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users-chan</span>) <span style="color:#666;font-weight:bold;font-style:italic">admins</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-weight:bold;font-style:italic">chan-notify</span> <span style="color:#666;font-weight:bold;font-style:italic">admins</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users-chan</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">manifold.stream/-&gt;source</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">s/transform</span> <span style="color:#666;font-weight:bold;font-style:italic">user-pipeline</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">stream-notify</span>))
+</span></span></code></pre></div><h2 id="final-thoughts">Final thoughts</h2>
+<p>While transducers are great, there are always things to consider.</p>
+<p>Let&rsquo;s start with the elephant in the room - the code using transducers is often <strong>ugly</strong>.
+Like, let&rsquo;s go a bit back and compare these two examples:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>)
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">notify</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">notify</span>
+</span></span><span style="display:flex;"><span> (<span style="font-weight:bold;font-style:italic">into </span>[]
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">active-user?</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-capabilities</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">admin?</span>)
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">fetch-notification-settings</span>))
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">get-users</span>)))
+</span></span></code></pre></div><p>The first one is so slick, yet inefficient.
+The second one looks like a tool that can do the job efficiently, but you&rsquo;re going to hurt yourself in the process.</p>
+<p>Well, we can refactor the second one a bit more, moving out the <code>comp</code> call, using <code>-&gt;&gt;</code> on the result, but honestly, it&rsquo;s not often when I see <code>comp</code> moved out and defined as binding.
+More often it&rsquo;s written in this crud form.
+However, this can be fixed for many scenarios with macros.
+There&rsquo;s a <a href="https://github.com/johnmn3/injest" target="_blank">library</a> that provides <code>x&gt;</code> and <code>x&gt;&gt;</code> macros that automatically use transducers.
+Here&rsquo;s what they have in the readme:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10000000)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">mapcat </span>#(<span style="font-weight:bold">do </span>[<span style="color:#666;font-weight:bold;font-style:italic">%</span> (<span style="font-weight:bold;font-style:italic">dec </span><span style="color:#666;font-weight:bold;font-style:italic">%</span>)]))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">partition-by</span> #(<span style="font-weight:bold;font-style:italic">= </span>0 (<span style="color:#666;font-weight:bold;font-style:italic">mod</span> <span style="color:#666;font-weight:bold;font-style:italic">%</span> 5)))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold;font-style:italic">partial apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span><span style="display:flex;"><span>     <span style="color:#888;font-style:italic">;; (mapv dec)</span>
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold;font-style:italic">partial + </span>10))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>#(<span style="font-weight:bold">do </span>{<span style="color:#666;font-style:italic">:temp-value</span> <span style="color:#666;font-weight:bold;font-style:italic">%</span>}))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-style:italic">:temp-value</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">even?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">time</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; &#34;Elapsed time: 8275.319295 msecs&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; 5000054999994</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">x&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10000000)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">odd?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">mapcat </span>#(<span style="font-weight:bold">do </span>[<span style="color:#666;font-weight:bold;font-style:italic">%</span> (<span style="font-weight:bold;font-style:italic">dec </span><span style="color:#666;font-weight:bold;font-style:italic">%</span>)]))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">partition-by</span> #(<span style="font-weight:bold;font-style:italic">= </span>0 (<span style="color:#666;font-weight:bold;font-style:italic">mod</span> <span style="color:#666;font-weight:bold;font-style:italic">%</span> 5)))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold;font-style:italic">partial apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>))
+</span></span><span style="display:flex;"><span>     <span style="color:#888;font-style:italic">;; (mapv dec)</span>
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold;font-style:italic">partial + </span>10))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span>#(<span style="font-weight:bold">do </span>{<span style="color:#666;font-style:italic">:temp-value</span> <span style="color:#666;font-weight:bold;font-style:italic">%</span>}))
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-style:italic">:temp-value</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">filter </span><span style="color:#666;font-weight:bold;font-style:italic">even?</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">time</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; &#34;Elapsed time: 2913.851103 msecs&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; 5000054999994</span>
+</span></span></code></pre></div><p>That&rsquo;s two to three times the speed increase by one character change.
+If we expand the macro, we&rsquo;ll see that it simply builds a transducer with some internal machinery:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10000000)
+</span></span><span style="display:flex;"><span>     ((<span style="color:#666;font-weight:bold;font-style:italic">injest.impl/xfn</span> [[<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/filter</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/mapcat</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8713#</span>] (<span style="font-weight:bold">do </span>[<span style="color:#666;font-weight:bold;font-style:italic">p1__8713#</span> (<span style="font-weight:bold;font-style:italic">dec </span><span style="color:#666;font-weight:bold;font-style:italic">p1__8713#</span>)]))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/partition-by</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8714#</span>] (<span style="font-weight:bold;font-style:italic">= </span>0 (<span style="color:#666;font-weight:bold;font-style:italic">mod</span> <span style="color:#666;font-weight:bold;font-style:italic">p1__8714#</span> 5)))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="font-weight:bold;font-style:italic">partial apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>)]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="font-weight:bold;font-style:italic">partial + </span>10)]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8715#</span>] (<span style="font-weight:bold">do </span>{<span style="color:#666;font-style:italic">:temp-value</span> <span style="color:#666;font-weight:bold;font-style:italic">p1__8715#</span>}))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> <span style="color:#666;font-style:italic">:temp-value</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/filter</span> <span style="color:#666;font-weight:bold;font-style:italic">even?</span>]]))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/apply</span> <span style="color:#666;font-weight:bold;font-style:italic">+</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">time</span>)
+</span></span></code></pre></div><p>The result of calling <code>injest.impl/xfn</code> is a function that builds a transducer and passes it into a <code>sequence</code> call.
+So there&rsquo;s no magic, apart from a clever way of transforming the code into this form.</p>
+<p>But, there&rsquo;s another problem with transducers - not every transformation pipeline can be described as one.
+Notice that there&rsquo;s a commented-out call to <code>mapv</code>.
+Unlike <code>map</code>, <code>mapv</code> doesn&rsquo;t return a transducer, and is always eager.
+If we were to refactor this code into <code>comp</code> we would get an error.
+The <code>x&gt;&gt;</code> macro handles this by breaking the transducer into two parts:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>10000000)
+</span></span><span style="display:flex;"><span>     ((<span style="color:#666;font-weight:bold;font-style:italic">injest.impl/xfn</span> [[<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/filter</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/mapcat</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8724#</span>] (<span style="font-weight:bold">do </span>[<span style="color:#666;font-weight:bold;font-style:italic">p1__8724#</span> (<span style="font-weight:bold;font-style:italic">dec </span><span style="color:#666;font-weight:bold;font-style:italic">p1__8724#</span>)]))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/partition-by</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8725#</span>] (<span style="font-weight:bold;font-style:italic">= </span>0 (<span style="color:#666;font-weight:bold;font-style:italic">mod</span> <span style="color:#666;font-weight:bold;font-style:italic">p1__8725#</span> 5)))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="font-weight:bold;font-style:italic">partial apply </span><span style="color:#666;font-weight:bold;font-style:italic">+</span>)]]))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/mapv</span> <span style="color:#666;font-weight:bold;font-style:italic">dec</span>)
+</span></span><span style="display:flex;"><span>     ((<span style="color:#666;font-weight:bold;font-style:italic">injest.impl/xfn</span> [[<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="font-weight:bold;font-style:italic">partial + </span>10)]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> (<span style="color:#666;font-weight:bold;font-style:italic">fn*</span> [<span style="color:#666;font-weight:bold;font-style:italic">p1__8726#</span>] (<span style="font-weight:bold">do </span>{<span style="color:#666;font-style:italic">:temp-value</span> <span style="color:#666;font-weight:bold;font-style:italic">p1__8726#</span>}))]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/map</span> <span style="color:#666;font-style:italic">:temp-value</span>]
+</span></span><span style="display:flex;"><span>                        [<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/filter</span> <span style="color:#666;font-weight:bold;font-style:italic">even?</span>]]))
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/apply</span> <span style="color:#666;font-weight:bold;font-style:italic">+</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">time</span>)
+</span></span></code></pre></div><p>That&rsquo;s another clever trick, and it certainly helps.</p>
+<p>Now, I don&rsquo;t use this library in practice.
+Instead, I tend to write transducers by hand, because I want them to be understandable.
+It&rsquo;s easy enough to explain how <code>comp</code> works with transducers to colleagues once, than to close my eyes and believe that the library will do everything for me.
+Maybe I&rsquo;m old-fashioned.</p>
+<p>However, there&rsquo;s another difference that we need to remember about - transducers have a bit different laziness semantics.
+You can create lazy sequences using transducers with the <code>sequence</code> function, however, you should be mindful that any step in your transducer will still be executed eagerly.</p>
+<p>Finally, not all functions provide a transducer counterpart to them.
+There are libraries, again, that provide more transducers, but I&rsquo;d much rather see more transducers in the Clojure core.</p>
+<p>And sometimes, there&rsquo;s no need to do that at all - lazy transformations can be fine, or exactly what you need in a particular context.
+So don&rsquo;t just rush out replacing all consecutive calls to <code>map</code> and <code>filter</code> with a transducer.
+Although, if you want to, here&rsquo;s a clj-kondo hook that issues a warning when you use too many lazy transformations in a row:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">ns </span><span style="color:#666;font-weight:bold;font-style:italic">hooks.thread-macros</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#666;font-style:italic">:require</span> [<span style="color:#666;font-weight:bold;font-style:italic">clj-kondo.hooks-api</span> <span style="color:#666;font-style:italic">:as</span> <span style="color:#666;font-weight:bold;font-style:italic">api</span>]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold">def </span><span style="color:#666;font-weight:bold;font-style:italic">consecutive-threshold</span> 2)
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold">def </span><span style="color:#666;font-weight:bold;font-style:italic">transduceable</span>
+</span></span><span style="display:flex;"><span>  #{<span style="color:#666;font-style:italic">&#39;map</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#666;font-style:italic">&#39;filter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#888;font-style:italic">;; add more functions if you need</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">consecutive-threading</span> [{<span style="color:#666;font-style:italic">:keys</span> [<span style="color:#666;font-style:italic">:node</span>]}]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">let </span>[[<span style="color:#666;font-weight:bold;font-style:italic">_</span> &amp; <span style="color:#666;font-weight:bold;font-style:italic">forms</span>] (<span style="font-weight:bold;font-style:italic">rest </span>(<span style="color:#666;font-style:italic">:children</span> <span style="color:#666;font-weight:bold;font-style:italic">node</span>))]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">loop </span>[<span style="color:#666;font-weight:bold;font-style:italic">forms</span> <span style="color:#666;font-weight:bold;font-style:italic">forms</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">counter</span> 0]
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold;font-style:italic">when-let </span>[<span style="color:#666;font-weight:bold;font-style:italic">form</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">forms</span>)]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">contains? </span><span style="color:#666;font-weight:bold;font-style:italic">transduceable</span> (<span style="color:#666;font-weight:bold;font-style:italic">some-&gt;</span> <span style="color:#666;font-weight:bold;font-style:italic">form</span> <span style="color:#666;font-style:italic">:children</span> <span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">api/sexpr</span>))
+</span></span><span style="display:flex;"><span>          (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">&gt;= </span><span style="color:#666;font-weight:bold;font-style:italic">counter</span> <span style="color:#666;font-weight:bold;font-style:italic">consecutive-threshold</span>)
+</span></span><span style="display:flex;"><span>            (<span style="color:#666;font-weight:bold;font-style:italic">api/reg-finding!</span>
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">assoc </span>(<span style="font-weight:bold;font-style:italic">meta </span><span style="color:#666;font-weight:bold;font-style:italic">node</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#666;font-style:italic">:message</span> <span style="color:#666;font-style:italic">&#34;prefer transducers to consecutive maps or filters in threading macros&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#666;font-style:italic">:type</span> <span style="color:#666;font-style:italic">:expensive-threading</span>))
+</span></span><span style="display:flex;"><span>            (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">forms</span>)
+</span></span><span style="display:flex;"><span>                   (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">counter</span>)))
+</span></span><span style="display:flex;"><span>          (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">forms</span>)
+</span></span><span style="display:flex;"><span>                 0))))))
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 1:</span>
+  <code>.clj-kondo/hooks/thread_macros.clj</code>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>{<span style="color:#666;font-style:italic">:linters</span> {<span style="color:#666;font-style:italic">:expensive-threading</span> {<span style="color:#666;font-style:italic">:level</span> <span style="color:#666;font-style:italic">:warning</span>}}
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-style:italic">:hooks</span> {<span style="color:#666;font-style:italic">:analyze-call</span> {<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/-&gt;&gt;</span> <span style="color:#666;font-weight:bold;font-style:italic">hooks.thread-macros/consecutive-threading</span>}}}
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 2:</span>
+  <code>.clj-kondo/config.edn</code>
+</div>
+<figure class="invertable"><img src="https://andreyor.st/2024-01-31-using-transducers/custom-linter.png"/>
+</figure>
+
+<p>That&rsquo;s all from me, and I hope you&rsquo;ve found this post interesting.
+Reach out, if you have any interesting examples where transducers were hard to apply, or where they made the code more robust.
+And I hope transducers will get a better rep in the future.</p>
+<div class="comment-link">
+      <a href="mailto:%61%6e%64%72%65%79%6f%72%73%74%2b%62%6c%6f%67%40%67%6d%61%69%6c%2e%63%6f%6d?subject=Comment: Using%20transducers"
+         target="_blank"
+         rel="noopener noreferrer">
+        Comment via email
+      </a>
+    </div>
+  </article>
+</div></main>
+    <footer>
+      <div class="content-container">
+  <div class="content">
+    © Andrey Listopadov 2020-2024 · This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> · This site source code is MIT licensed.
+  </div>
+</div>
+    </footer>
+    <script>
+      if (window.location.host.endsWith("gitlab.io")) window.location.hostname = ("andreyor.st")
+    </script>
+  </body>
+</html>

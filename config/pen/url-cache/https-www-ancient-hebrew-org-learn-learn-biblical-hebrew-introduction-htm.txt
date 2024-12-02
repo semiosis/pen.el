@@ -1,0 +1,285 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Length: 4811
+Content-Type: text/html
+Date: Thu, 07 Nov 2024 06:44:30 GMT
+Etag: "39fa-620e662f42bc0-gzip"
+Last-Modified: Fri, 30 Aug 2024 13:15:35 GMT
+Server: Apache/2.4.52 (Debian)
+Vary: Accept-Encoding
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD> 
+<LINK REL="SHORTCUT ICON" HREF="https://www.ancient-hebrew.org/files/favicon.ico"><TITLE>
+
+Learn Biblical Hebrew: Introduction |AHRC
+
+</TITLE>
+<meta charset="UTF-8">
+<META name="description" content="Learning to read the Bible in Hebrew is not as difficult as many may believe. In just 17 short lessons you will be well on your way to translating the Hebrew Bible for yourself.">
+<META name="keywords" content="hebrew language, biblical hebrew, ancient hebrew, learning, hebrew vocabulary, alephbet, hebrew alphabet, hebrew verbs, hebrew nouns, vowels, nikkud, nikkudot">
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"><link rel="apple-touch-icon" href="https://www.ancient-hebrew.org/files/icon.png">
+
+<style type="text/css"><!-- a {text-decoration:none} a:hover {text-decoration:underline}--></style><style type="text/css">body, html {margin:0; padding:0; border:0;} /* Re-sets IE to "zero" for these values */</style> 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3SF70LXS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3SF70LXS7');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72653395-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72653395-1');
+</script>
+
+
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+</HEAD>
+
+<BODY topmargin="0" rightmargin="0" leftmargin="0" bgcolor="FFFFFF">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Table width="100%" bgcolor="722A00"><TR><TD width="50" align="left"><A HREF="https://www.ancient-hebrew.org"><IMG SRC="https://www.ancient-hebrew.org/files/header_logo.png" width="50" border="0"></A></TD><TD valign="middle" align="left"><A HREF="https://www.ancient-hebrew.org"><IMG SRC="https://www.ancient-hebrew.org/files/header-title-1a.png" border="0"></A><A HREF="https://www.ancient-hebrew.org"><IMG SRC="https://www.ancient-hebrew.org/files/header-title-2a.png" border="0"></A></TD><TD align="right"><!--AAA--> </TD></TR></Table><Table width="100%" height="7" background="https://www.ancient-hebrew.org/files/header-0.png"><TR><TD></TD></TR></Table>
+
+
+
+<Table width="100%" bgcolor="441900"><TR><TD><A HREF="https://www.ancient-hebrew.org/index.html"><Font color="FFFFFF">Home</Font></A> <Font color="000000">|</B></Font> <A HREF="https://www.ancient-hebrew.org/topics.htm"><Font color="FFFFFF">Topics</Font></A> <!--YYY-->  <Font color="000000">|</B></Font>  <Font color="FFFFFF">|</B></Font>  <Font color="000000">|</B></Font> <A HREF="https://www.ancient-hebrew.org/bookstore/index.html"><Font color="e8dd3c">Bookstore</Font></A> <Font color="000000">|</B></Font> <!--XXX--> <A HREF="https://www.mechanical-translation.org"><Font color="e8dd3c">MT</Font></A> <Font color="000000">|</B></Font> <A HREF="https://www.ancient-hebrew.org/ahlb"><Font color="e8dd3c">AHLB </Font></A> </TD></TR></Table><Table width="100%" height="5" background="https://www.ancient-hebrew.org/files/header-2.png"><TR><TD></TD></TR></Table>
+
+
+
+
+
+
+
+
+
+
+<Table align="center" cellpadding="5" style="max-width:600px;"><TR><TD>
+
+
+<script async src="https://cse.google.com/cse.js?cx=partner-pub-1125612441343783:4486039293"></script><div class="gcse-search"></div>
+
+
+
+
+
+
+<Center><div class="fb-like" data-href="https://www.ancient-hebrew.org/learn/learn-biblical-hebrew-introduction.htm" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></Center>
+
+
+
+
+
+
+<Center><B><A HREF="https://www.ancient-hebrew.org/topics.htm"><Font color="A50000">Topics</Font></A> <IMG SRC="https://www.ancient-hebrew.org/files/right.png" width="10"> <A HREF="https://www.ancient-hebrew.org/learn/index.htm"><Font color="A50000">Learn Hebrew</Font></A></B> <IMG SRC="https://www.ancient-hebrew.org/files/right.png" width="10"></Center><BR>
+<Center><IMG SRC="https://www.ancient-hebrew.org/learn/files/landing_learn.png"></Center>
+
+<BR><Center><B>Lessons: </B>
+<A HREF="learn-biblical-hebrew-introduction.htm" title="Introduction"><B>Intro</B></A> | 
+<A HREF="learn-biblical-hebrew-1.htm" title="Aleph & Beyt"><B>1</B></A> | 
+<A HREF="learn-biblical-hebrew-2.htm" title="Mem & Yud"><B>2</B></A> | 
+<A HREF="learn-biblical-hebrew-3.htm" title="Nun & Hey"><B>3</B></A> | 
+<A HREF="learn-biblical-hebrew-4.htm" title="Lamed & Vav"><B>4</B></A> | 
+<A HREF="learn-biblical-hebrew-5.htm" title="Resh & Shin"><B>5</B></A> | 
+<A HREF="learn-biblical-hebrew-6.htm" title="Ayin & Tet"><B>6</B></A> | 
+<A HREF="learn-biblical-hebrew-7.htm" title="Tav & Dalet"><B>7</B></A> | 
+<A HREF="learn-biblical-hebrew-8.htm" title="Tsade & Quph"><B>8</B></A> | 
+<A HREF="learn-biblical-hebrew-9.htm" title="Hhet & Kaph"><B>9</B></A> | 
+<A HREF="learn-biblical-hebrew-10.htm" title="Zayin & Pey"><B>10</B></A> | 
+<A HREF="learn-biblical-hebrew-11.htm" title="Gimel & Samehh"><B>11</B></A> | 
+<A HREF="learn-biblical-hebrew-12.htm" title="Reading Practice"><B>12</B></A> | 
+<A HREF="learn-biblical-hebrew-13.htm" title="Hebrew Verbs"><B>13</B></A> | 
+<A HREF="learn-biblical-hebrew-14.htm" title="Hebrew Nouns"><B>14</B></A> | 
+<A HREF="learn-biblical-hebrew-15.htm" title="Adjectives, Prepositions, etc."><B>15</B></A> | 
+<A HREF="learn-biblical-hebrew-16.htm" title="Hebrew Verb Conjugations"><B>16</B></A> | 
+<A HREF="learn-biblical-hebrew-17.htm" title="Hebrew Morphology & Syntax"><B>17</B></A>
+</Center>
+
+<Center><H2><B>Introduction</B></H2>
+<Font size="+1" color="#551700">By</Font> <A HREF="https://www.ancient-hebrew.org/email.htm"><Font color="A50000"><B>Jeff A. Benner</B></Font></A></Center>
+<BR><BR>
+
+
+
+
+
+
+<P align="justify">There are many reasons to learn Hebrew such as to read the Tenach (the Old Testament of the Bible written in Hebrew) in its original language or simply to learn how to pronounce Hebrew words such as those in Strong's Concordance without having to use the transliterations. Probably the most advantageous reason to learn Hebrew is the ability to understand the original author's words, rather than through the translator's opinion of the author's words.</P>
+
+<P align="justify">Learning the Hebrew language can be both fun and exciting. By simply studying the pages to follow for just a few minutes a day you will soon be reading Hebrew and be building a small vocabulary of Hebrew words and phrases.</P>
+
+
+
+<B>Direction of Reading</B>
+
+<P align="justify">Unlike English which is read from left to right, Hebrew is read from right to left just as many other semitic languages such as Arabic. This may sound difficult but in a very short time you will get used to it.</P>
+
+<P align="justify">When sounding out a word it will be easier if you remember the Consonant (C) and Vowel (V) patterns. In English the consonants and vowels may be arranged in any order such as in the word "circle" which has the following pattern; C-V-C-C-C-V. Hebrew on the other hand is very consistent in that a vowel always follows a consonant (except the final consonant which may or may not be followed by a vowel), such as in the following words "Melek" (king) C-V-C-V-C; "Meleko" (his king) C-V-C-V-C-V and "Hamelek" (the king) C-V-C-V-C-V-C. The Yud (Y) is another exception to this as it can be a consonant acting as a vowel, just as our English "Y".</P>
+
+
+
+<B>The Hebrew Alephbet</B>
+
+<P align="justify">English uses the word "Alphabet" which is the first two letters of the Greek Alphabet; Alpha and Beta. Hebrew on the other hand uses "Alephbet" as they are the first two letters of the Hebrew Alephbet; Aleph and Bet. The Hebrew alephbet consists of 22 consonants and no vowels. The vowels are dots and dashes added above and below the consonants. One advantage to Hebrew is that the sound for each letter remains the same unlike English where one has to memorize many variations such as the word circus where one "c" is pronounced like an "S" and the other like a "K".<BR><BR>
+
+Below is a chart of the Hebrew alephbet as an introduction and these letters will be learned in the accompanying lessons. An <A HREF="files/lessons_alphabet.mp3"><Font color="#A50000"><B>audio clip</B></Font></A> for the names of each letter is also available. The first letter is in the upper right hand corner and is read from right to left.
+<BR><BR>
+<Center><IMG SRC="https://www.ancient-hebrew.org/learn/files/lessons_alphabet1.jpg" width="487" height="202" Alt="Hebrew Alphabet"></Center>
+<BR><BR>
+
+Five of the above letters have different form when it appears at the end of word. These letters are called the "final" letters (sophit in Hebrew).
+
+<BR><BR>
+<Center><IMG SRC="https://www.ancient-hebrew.org/learn/files/lessons_alphabet2.jpg" width="295" height="95" Alt="Hebrew Alphabet, final letters"></Center>
+<BR><BR>
+
+Several of the letters in the alphabet are very similar and can easily be confused with other letters. This is very common at the beginning but soon you will be able to make the distinction between these letters without difficulty. Below is a chart with these letters and you may want to refer to this chart on occasion during the lessons. 
+
+
+<BR><BR>
+<Center><IMG SRC="https://www.ancient-hebrew.org/learn/files/lessons_alphabet3.jpg" width="416" height="248" Alt="Commonly mistaken letters"></Center>
+</P>
+
+
+
+<B>Modern and Ancient Hebrew</B>
+
+<P align="justify">The pronunciation of some of the consonants and vowels have changed over the centuries but this does not affect the meaning of words so we will learn to pronounce them according to the modern Hebrew. Modern Hebrew pronunciation is also divided into two parts, Ashkenazie and Sephardic. Since Sephardic is the pronunciation adopted by the State of Israel, we will also use this pronunciation.</P>
+
+
+
+
+<B>The Hebrew Vowels</B>
+
+<P align="justify">In modern Hebrew vowel pointings called "nikkud" (nikkudot in the plural) have been added to words to provide the vowel sounds for each word. The chart below lists these vowel pointings and will be learned in the accompanying Hebrew lessons. These vowel pointings are used in Biblical texts, Prayer books, Hebrew Grammar books and children books but are not normally used in Hebrew writings such as in novels, newspapers, signs, etc.
+
+<BR><BR>
+<Center><IMG SRC="https://www.ancient-hebrew.org/learn/files/lessons_alphabet4.jpg" width="352" height="285" Alt="Hebrew Vowel Pointings"></Center>
+</P>
+
+<B>The Lessons</B>
+
+<P align="justify">The first 12 lessons cover the Hebrew alphabet. Each lesson includes new consonants, vowels, a practice section, new vocabulary words and sentences. The practice session will allow you to practice the new letters and vowels and refresh yourself on old ones. The vocabulary section will consist of a few words using the new letters and vowels to begin building your Hebrew vocabulary. The Sentences will allow you to begin using your new words in sentences. To assist you in learning the letters and words, I recommend that you put the letters and words you are learning on flashcards so that you can study them at any time.Each of the lessons include audio to assist with prounciation. Just click on the audio icon to the right of each line to listen to the audio.</P>
+
+<P align="justify">The next fourlessons (lessons 13 through 16) cover verbs, nouns, adjectives and other Hebrew words. And the final lesson (lesson 17) is a set of translation practices</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HR width="75%"><Table><TR>
+<TD width="125" valign="top"><IMG SRC="https://www.ancient-hebrew.org/bookstore/freeoffer/image.png" width="150" Alt="Ancient Hebrew Alphabet and Language"></TD>
+<TD valign="top"><iframe src="https://www.ancient-hebrew.org/bookstore/freeoffer/frame.htm" width="100%" height="200" align="center" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></TD>
+<TD width="125">
+<div class="AW-Form-871236223"></div>
+<script type="text/javascript">(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//forms.aweber.com/form/23/871236223.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, "script", "aweber-wjs-xv1szr801"));
+</script>
+</TD>
+</TR></Table><HR width="75%">
+
+
+
+<BR><BR><Center><Font size="+1"><B>Related Pages by Jeff A. Benner</B></Font></Center>
+
+<BR><BR><Table><TR><TD valign=top width=125><A HREF=https://www.ancient-hebrew.org/bookstore/book_lbh.html><IMG SRC="https://www.ancient-hebrew.org/bookstore/files/book_lbh.jpg" border="0" width="75" Alt="Learn to Read Biblical Hebrew"></A></TD><TD width="25"></TD><TD valign="top"><A HREF=https://www.ancient-hebrew.org/bookstore/book_lbh.html><Font color="A50000"><B>Learn to Read Biblical Hebrew</Font></A> (Book)</B><BR>Hebrew lessons, dictionary and reference guide for learning the alphabet and language of the Bible. </TD></TR></Table>
+
+
+<BR><BR><Table><TR><TD valign=top width=125><A HREF=https://www.ancient-hebrew.org/learn/learn-the-ancient-pictographic-hebrew-script.htm><IMG SRC="https://www.ancient-hebrew.org/learn/files/landing_ancient.png" border="0" width="125" Alt=Learn the Ancient Pictographic Hebrew Script Target=_new></A></TD><TD width=25></TD><TD valign=top><A HREF=learn-the-ancient-pictographic-hebrew-script.htm><Font color="A50000"><B>Learn the Ancient Pictographic Hebrew Script</Font></A> (Lessons)</B><BR>Easy lessons to learn how to read the the ancient pictographic Hebrew script, also called Paleo-Hebrew.</TD></TR></Table>
+
+
+
+
+
+
+
+
+<!-- XXX 10 XXX --><BR><BR><iframe src="https://www.ancient-hebrew.org/bookstore/coupons/10.html" width="100%" height="175" align="center" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+</TD></TR></Table>
+
+
+<iframe src="https://www.ancient-hebrew.org/frame_footer.htm" width="100%" height="90" align="center" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+</BODY>
+</HTML>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+

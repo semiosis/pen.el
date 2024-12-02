@@ -1,0 +1,190 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 06 Oct 2024 04:52:20 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 4230
+Connection: keep-alive
+X-Powered-By: PHP/7.4.33
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=m55b00ibl1l9ue6tnmmo2tpdeh; expires=Sun, 13-Oct-2024 04:52:20 GMT; Max-Age=604800; path=/; HttpOnly
+Vary: Accept-Encoding
+X-Powered-By: PleskLin
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+        <base href="https://www.ywam-mercy.org/"></base>
+    <title>Surprised by Hope Book Review - YWAM-Mercy</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/assets/css/foundation.css" />
+    <link rel="stylesheet" href="/assets/css/ym.css" />
+    <script src="/assets/js/modernizr.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2524485-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <header class="row">
+      <div class="header large-12 columns">
+        <div class="logo"><h1>
+          <a href="/"><svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 95.2 78" style="enable-background:new 0 0 95.2 78;" xml:space="preserve">
+<style type="text/css">
+	.Arched_x0020_Green{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:1;}
+	.st0{fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-64" y1="115.8203" x2="-63.2929" y2="115.1132">
+	<stop  offset="0" style="stop-color:#20AC4B"/>
+	<stop  offset="0.9831" style="stop-color:#19361A"/>
+</linearGradient>
+<path class="st0" d="M6.3,49.9c-6.2-7-4.7-14.9,8.3-20c14-5.3,24.2-2.5,27.7-1.9c0,0.1-24.5-2.5-32.8,10c-1.9,2.9-2.7,6.5,0.7,10.7
+	c6.5,7.4,23.5,10.1,23.5,10.2C27.9,59,11.7,56,6.3,49.9z"/>
+<path class="st0" d="M37,71.8c4.4-25.6-5.1-26.9-7.6-27.3c-0.1-1.8,9.7-11.2,10-9.6c0.2,1.6,6.6,11.4,6.6,11.4s10.2-6.5,13.5-11.8
+	c3.2,2.8,5,10.2,4.1,10.2C58.2,43.7,45.8,53.3,37,71.8z"/>
+<path class="st0" d="M53.1,29.5c7.6,1.3-0.8,14.2-6.8,11.5C40,38.1,46.3,28.5,53.1,29.5z"/>
+<path class="st0" d="M81.1,51c-12,8.3-27.7,8.4-31.5,8.8c7.1-2.1,16.5-3.9,22.3-7.8c17.3-11.7,10.2-28.9-5.5-37.3
+	C50.2,6.1,31.8,5.1,15.1,7.1c0-0.1,14.7-4.4,35.1-2.1c8.8,0.9,19.3,4.3,27,8.7C96.1,25.6,93.6,41.5,81.1,51z"/>
+</svg> YWAM-Mercy</a></h1></div>
+          <nav class="top-bar" data-topbar role="navigation">
+             	 <ul class="title-area">
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+       <li class="has-dropdown">
+        <a href="about">About</a>
+        <ul class="dropdown">
+          <li><a href="about">About YWAM-Mercy</a></li>
+          <li><a href="countries/">Countries</a></li>
+        </ul>
+      </li>
+       <li>
+        <a href="events/">Events</a>
+      </li>
+      <li>
+        <a href="news/">News</a>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Programs</a>
+        <ul class="dropdown">
+          <li><a href="hiv-aids/">HIV/AIDS</a></li>
+          <li><a href="vulnerablechildren/">Children At Risk</a></li>
+          <li><a href="micro-enterprise">Micro-Enterprise</a></li>
+          <li><a href="homeless-addictions">Homeless/Addictions</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Resources</a>
+        <ul class="dropdown">
+          <li><a href="prayers">Daily Prayers</a></li>
+          <li><a href="book-reviews/">Book Reviews</a></li>
+          <li><a href="videos">Videos</a></li>
+          <li><a href="documents">Documents</a></li>
+          <li><a href="links">Helpful Links</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact/">Contact</a>
+      </li>
+    </ul>
+  </section>	
+        </nav>
+      	<div class="slide" style="min-height: 15rem;">
+      		 <div class="inner" style="line-height: 15rem;"><img src="assets/slides/bookreviews.jpg" width="1160" height="494" /></div>
+      		  <div class="title">
+                   <h2>Surprised by Hope</h2>
+                   <h4>Rethinking Heaven, the Resurrection and the Mission of the Church</h4>
+      		  </div>
+		</div>
+      </div>
+      </div>
+    </header>
+    
+    <div class="row">
+      <div class="content small-12 medium-9 columns">
+      <img src="assets/bookcovers/suprisedbyhope.jpg" alt="Surprised by Hope" class="small-6 medium-5 large-4 columns" style="float:right;" />
+      <p>
+      <strong>Author: </strong>N.T. Wright<br />
+      <strong>Review By: </strong>G. Stephen Goode
+      </p>
+      <p>I grabbed this book as I was heading for another country recently for a funeral. &nbsp;I saw that it was related to death, heaven, the resurrection and hope. &nbsp;It had been referred by several people to me but was I in for an unexpected read and another great one by N.T. Wright, the Bishop of Durham.&nbsp;</p>
+<p>This book is not so much about dying as it is about living. This book is not so much about death as it is about the resurrection of Jesus and his transformed body after death and what that means for us now and in the future. This book is not so much about heaven after you die but what does life look like before you die. &nbsp;It is about God's Kingdom coming now and in the future. &nbsp;This is a book about Easter and the new creation, the touching of heaven and earth that has begun through the resurrection and ascension of Jesus and what that means for the future of the world.&nbsp;</p>
+<p>Bishop Wright spends quite a bit of time looking at the second coming of Jesus and the implications that his appearing has upon politics, economics, the world of the poor, His church, etc. If God called his creation good, what does that mean for this earth and for the world. If Jesus is coming as judge, to right all wrongs and give new life to the dead, what will the future resurrection and hope mean for us as his people? &nbsp;</p>
+<p>As one who has given his life to God in service of the poor for the last 35 years, I was deeply, encouraged on page 191/192 when he wrote because of the resurrection "that a proper grasp of the (surprising) future hope held out to us in Jesus Christ leads directly and, surprisingly, to a &nbsp;vision of the present hope that is the basis of all Christian mission. To hope for a better future in this world---for the poor, the sick, the lonely and depressed, for the slaves, the refugees, the hungry and homeless, for the abused, the paranoid, the downtrodden and despairing, and in fact for the whole wide, wonderful and wounded world---is not something else, something extra, something tacked on to the gospel as an afterthought. &nbsp;And to work for that immediate hope, the surprising hope that comes forward from God's ultimate ultimate future into God's urgent present, is not a distraction from the task of mission and evangelism in the present. It is a central, essential, vital, and life-giving part of it. " He spends the last half of the book considering the mission of the church and what that will look like as we are building for God's kingdom to come to earth as it is in heaven....&nbsp;</p>
+<p>He continues on page 193 " The point of the resurrection...is that the present bodily life is not valueless just because it will die. God will raise it up to new life. What you do with your body in the present matters because God has a great future for it. And if this applies to ethics, as in 1 Corinthians 6, it certainly applies to the various vocations to which God's people are called. What you do in the present---by painting, preaching, singing, sewing, praying, teaching, building hospitals, digging wells, campaigning for justice, writing poems, caring for the needy, loving your neighbor as yourself----will last into God's future....they are apart of what we may call building for God's kingdom."&nbsp;</p>
+<p>This book will challenge you, your thinking and what God wants to do in and through you. You will want to read, "Surprised by Hope" by N. T Wright -- You will want to see what your role is now in this coming Kingdom.&nbsp;</p>
+      <p><a href="http://worldchristian.com/booksearch.asp?BkID=0061551821?affiliateid=10465" target="_blank" class="button alert">Purchase Surprised by Hope at World Christian Bookstore</a></p>
+      
+      <p><a href="book-reviews/" class="button secondary" style="margin-top:3rem;"><<&nbsp;&nbsp;&nbsp;Back to Book Reviews</a></p>
+     </div> 
+      <div class="small-12 medium-3 columns sidebar">
+        <div class="small-12 columns">
+        <h4>Upcoming Events</h4>
+        <ul class="eventside">
+           
+        </ul>
+        </div>
+        <div class="small-12 columns">
+        <h4>Popular Book Reviews</h4>
+        <ul class="row medium-collapse large-uncollapse">
+            <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/africa-rising/"><img src="/assets/components/phpthumbof/cache/africarising.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of Africa Rising" /></a>
+ </li>
+
+ <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/the-starfish-and-the-spider/"><img src="/assets/components/phpthumbof/cache/starfishandthespider.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of The Starfish and the Spider" /></a>
+ </li>
+
+ <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/the-great-emergence/"><img src="/assets/components/phpthumbof/cache/thegreatemergence.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of The Great Emergence" /></a>
+ </li>
+
+ <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/simply-christian/"><img src="/assets/components/phpthumbof/cache/simplychristian.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of Simply Christian" /></a>
+ </li>
+
+ <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/satan-and-the-problem-of-evil/"><img src="/assets/components/phpthumbof/cache/satanandtheproblem.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of Satan and the Problem of Evil" /></a>
+ </li>
+
+ <li class="small-4 medium-6 large-6 columns">
+  <a href="book-reviews/epic/"><img src="/assets/components/phpthumbof/cache/epic.0b92db86147aa98dce2d26a2e018749d56.jpg" alt="Review of Epic" /></a>
+ </li>
+
+        </ul>
+        </div>
+     </div> 
+     </div> 
+             
+       <footer class="row">
+      <div class="footer large-12 columns">
+        <div class="small-12 large-12 box columns">
+		<p style="text-align:center;">&copy; 2019 YWAM-Mercy. All Rights Reserved. <a href="privacy-policy">Privacy Policy</a></p>
+      </div>     
+    </footer>
+    
+    </div>
+    
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/foundation.min.js"></script>
+   1553
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

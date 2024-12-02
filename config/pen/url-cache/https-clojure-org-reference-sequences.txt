@@ -1,0 +1,328 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Fri, 01 Nov 2024 19:44:44 GMT
+Last-Modified: Thu, 31 Oct 2024 21:19:19 GMT
+x-amz-server-side-encryption: AES256
+Server: AmazonS3
+ETag: W/"562d6f0eb0cdf50dfd54c8d352d85acb"
+Vary: accept-encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 b3d6b614ba45dfb217beafb39afef764.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C1
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: ban0pljwSabck854Zoi_c6pTalrInw52AgUjLHZvJNfKc_p0nfX7Ug==
+
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Nov 13 2015 01:48:45 GMT+0000 (UTC) -->
+<html lang="en" data-wf-site="56414d6fc8c27cad0f4e12e7" data-wf-page="5643ac587b1f28dc58ed6b89">
+<head>
+  <meta charset="utf-8">
+  <title>Clojure - Sequences</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <meta name="google-site-verification" content="a30CDuC9UBifM7EL575LK9a4TEE6mNfWbKqXIoSZChg" />
+  <meta name="google-site-verification" content="iXqpntr4CN3JRM1sVm5D_YzZw8bFRizBaTVycwqii2E" />
+  
+  
+  <meta name="keywords" content="clojure,programming" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=PT+Serif:ital@0;1&&family=Source+Code+Pro:wght@500&display=swap">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/clojureorg.webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/asciidoctor-mod.css">
+  <link type="text/css" href="/css/default-en.css" rel="stylesheet">
+  <link type="text/css" href="/css/default.css" rel="stylesheet">
+  <link type="text/css" href="/css/search-result.css" rel="stylesheet">
+  <link rel="alternate" type="application/atom+xml" title="News" href="/feed.xml" />
+  <script type="text/javascript" src="/js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/clojure-logo-icon-32.png">
+  <link rel="apple-touch-icon" href="/images/clojure-logo-icon-256.png">
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://cognitect.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '9']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='//cdn.matomo.cloud/cognitect.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+<!-- End Matomo Code -->
+  <script type="text/javascript">
+    function searchClj(obj) {
+      let e = document.getElementById("searchType");
+      document.getElementById("hiddenSearch").value=e.value;
+    }
+  </script>
+</head>
+<body>
+  <div data-collapse="none" data-animation="default" data-duration="400" data-contain="1" class="w-nav clj-navbar">
+    <div class="w-container">
+      <a href="/index" class="w-nav-brand w-clearfix clj-logo-container"><img width="60" src="/images/clojure-logo-120b.png" class="clj-logo" alt="Clojure logo">
+        <div class="clj-logo-text">Clojure</div>
+      </a>
+      <nav role="navigation" class="w-nav-menu clj-nav-menu"><a href="/about/rationale" class="w-nav-link clj-nav-link">Overview</a><a href="/reference/documentation" class="w-nav-link clj-nav-link">Reference‍</a><a href="/api/api" class="w-nav-link clj-nav-link">API</a><a href="/releases/downloads" class="w-nav-link clj-nav-link">Releases</a><a href="/guides/guides" class="w-nav-link clj-nav-link">Guides</a><a href="/community/success_stories" class="w-nav-link clj-nav-link">Community</a><a href="/dev/dev" class="w-nav-link clj-nav-link">Dev</a><a href="/news/news" class="w-nav-link clj-nav-link">News</a><a href="#" data-ix="search-click-trigger" class="w-nav-link clj-nav-link clj-nav-search">&#xed11;</a>
+      </nav>
+      <div class="w-nav-button clj-menu-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div data-ix="hide-search" class="w-section clj-search-section">
+    <div class="w-container">
+      <div class="w-form clj-search-form-wrapper">
+        <form id="wf-form-Search-Form" name="wf-form-Search-Form" action="https://duckduckgo.com/" method="get" onSubmit="searchClj(this)">
+          <div class="w-row">
+            <div class="w-col w-col-6 w-col-small-6">
+              <input id="hiddenSearch" type="hidden" name="sites" value="www.clojure.org">
+              <input name="q" id="q" type="text" placeholder="Search clojure.org reference, guides, and API" title="Search text" autofocus="autofocus" class="w-input clj-search-input">
+            </div>
+            <div class="w-col w-col-3 w-col-small-3 clj-search-type">
+              <select name="searchType" id="searchType" class="w-select clj-search-type">
+                <option value="www.clojure.org">clojure.org</option>
+                <option value="ask.clojure.org">ask.clojure.org</option>
+              </select>
+            </div>
+            <div class="w-col w-col-3 w-col-small-3">
+              <input type="submit" value="Search" class="w-button clj-search-submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<div class="w-section clj-content-section">
+  <div class="w-container">
+    <div class="clj-section-nav-container">
+      <div data-collapse="small" data-animation="default" data-duration="200" data-contain="1" class="w-nav clj-section-navbar">
+        <div class="w-container">
+          <nav role="navigation" class="w-nav-menu clj-section-nav-menu">
+            <a href="reader" class="w-nav-link clj-section-nav-item-link">The Reader</a>
+            <a href="repl_and_main" class="w-nav-link clj-section-nav-item-link">The REPL and main</a>
+            <a href="evaluation" class="w-nav-link clj-section-nav-item-link">Evaluation</a>
+            <a href="special_forms" class="w-nav-link clj-section-nav-item-link">Special Forms</a>
+            <a href="macros" class="w-nav-link clj-section-nav-item-link">Macros</a>
+            <a href="other_functions" class="w-nav-link clj-section-nav-item-link">Other Functions</a>
+            <a href="data_structures" class="w-nav-link clj-section-nav-item-link">Data Structures</a>
+            <a href="datatypes" class="w-nav-link clj-section-nav-item-link">Datatypes</a>
+            <a href="sequences" class="w-nav-link clj-section-nav-item-link">Sequences</a>
+            <a href="transients" class="w-nav-link clj-section-nav-item-link">Transients</a>
+            <a href="transducers" class="w-nav-link clj-section-nav-item-link">Transducers</a>
+            <a href="multimethods" class="w-nav-link clj-section-nav-item-link">Multimethods and Hierarchies</a>
+            <a href="protocols" class="w-nav-link clj-section-nav-item-link">Protocols</a>
+            <a href="metadata" class="w-nav-link clj-section-nav-item-link">Metadata</a>
+            <a href="namespaces" class="w-nav-link clj-section-nav-item-link">Namespaces</a>
+            <a href="libs" class="w-nav-link clj-section-nav-item-link">Libs</a>
+            <a href="vars" class="w-nav-link clj-section-nav-item-link">Vars and Environments</a>
+            <a href="refs" class="w-nav-link clj-section-nav-item-link">Refs and Transactions</a>
+            <a href="agents" class="w-nav-link clj-section-nav-item-link">Agents</a>
+            <a href="atoms" class="w-nav-link clj-section-nav-item-link">Atoms</a>
+            <a href="reducers" class="w-nav-link clj-section-nav-item-link">Reducers</a>
+            <a href="java_interop" class="w-nav-link clj-section-nav-item-link">Java Interop</a>
+            <a href="compilation" class="w-nav-link clj-section-nav-item-link">Compilation and Class Generation</a>
+            <a href="other_libraries" class="w-nav-link clj-section-nav-item-link">Other Libraries</a>
+            <a href="lisps" class="w-nav-link clj-section-nav-item-link">Differences with Lisps</a>
+            <a href="clojure_cli" class="w-nav-link clj-section-nav-item-link">Clojure CLI</a>
+            <a href="deps_edn" class="w-nav-link clj-section-nav-item-link">deps.edn</a>
+          </nav>
+          <div data-ix="toggle-section-nav-icon" class="w-nav-button w-clearfix clj-section-nav-toggle">
+            <div class="clj-section-nav-text">Sequences</div>
+            <div class="clj-section-nav-icon-closed">&#xeab2;</div>
+            <div data-ix="init-hide-section-nav-icon-open" class="clj-section-nav-icon-open">&#xeab9;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clj-content-container">
+
+      <h1>Sequences</h1>
+
+      <div id="preamble">
+<div class="sectionbody">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_the_seq_interface">The Seq interface</a>
+<ul class="sectlevel2">
+<li><a href="#_first_coll">(<em>first</em> coll)</a></li>
+<li><a href="#_rest_coll">(<em>rest</em> coll)</a></li>
+<li><a href="#_cons_item_seq">(<em>cons</em> item seq)</a></li>
+</ul>
+</li>
+<li><a href="#_the_seq_library">The Seq library</a>
+<ul class="sectlevel2">
+<li><a href="#_seq_in_seq_out">Seq in, Seq out</a></li>
+<li><a href="#_using_a_seq">Using a seq</a></li>
+<li><a href="#_creating_a_seq">Creating a seq</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Clojure defines many algorithms in terms of sequences (seqs). A seq is a logical list, and unlike most Lisps where the list is represented by a concrete, 2-slot structure, Clojure uses the ISeq interface to allow many data structures to provide access to their elements as sequences. The <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq">seq</a> function yields an implementation of ISeq appropriate to the collection. Seqs differ from iterators in that they are persistent and immutable, not stateful cursors into a collection. As such, they are useful for much more than foreach - functions can consume and produce seqs, they are thread safe, they can share structure etc.</p>
+</div>
+<div class="paragraph">
+<p>Most of the sequence library functions are <em>lazy</em>, i.e. functions that return seqs do so incrementally, as they are consumed, and thus consume any seq arguments incrementally as well. Functions returning lazy seqs can be implemented using the <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/lazy-seq">lazy-seq</a> macro. See also <a href="lazy">lazy</a>.</p>
+</div>
+<div class="paragraph">
+<p>When <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq">seq</a> is used on objects that implement Iterable, the resulting sequence is still immutable and persistent, and will represent a single pass across the data. Because that pass might happen lazily, the pass might see changes that happen after <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq">seq</a> has been called. Also, if the backing iterator is subject to ConcurrentModificationException, then so too is the resulting seq. When seq is used on native Java arrays, changes to the underlying array will be reflected in the seq - you must copy the source array to get full immutability. That said, there is still a lot of utility to using seq on Iterables and arrays since seqs support multi-pass and lazy algorithms. Robust programs should not mutate arrays or Iterables that have seqs on them.</p>
+</div>
+<div class="paragraph">
+<p>Many of the functions in the seq library take one or more collections, call <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq">seq</a> on them, and then operate on the resulting seq. In other words, many of these functions take collections but operate on their seqs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_seq_interface"><a class="anchor" href="#_the_seq_interface"></a>The Seq interface</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_first_coll"><a class="anchor" href="#_first_coll"></a>(<em>first</em> coll)</h3>
+<div class="paragraph">
+<p>Returns the first item in the collection. Calls seq on its argument. If coll is nil, returns nil.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest_coll"><a class="anchor" href="#_rest_coll"></a>(<em>rest</em> coll)</h3>
+<div class="paragraph">
+<p>Returns a sequence of the items after the first. Calls seq on its argument. If there are no more items, returns a logical sequence for which <strong>seq</strong> returns nil.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cons_item_seq"><a class="anchor" href="#_cons_item_seq"></a>(<em>cons</em> item seq)</h3>
+<div class="paragraph">
+<p>Returns a new seq where item is the first element and seq is the rest.</p>
+</div>
+<div class="paragraph">
+<p>For a discussion of <strong>rest</strong> vs. <strong>next</strong> and <strong>lazy-seq</strong> see <a href="lazy">lazy</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_seq_library"><a class="anchor" href="#_the_seq_library"></a>The Seq library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a sampling of the primary sequence functions, grouped broadly by their capabilities. Some functions can be used in different ways and so appear in more than one group. There are many more listed in the <a href="https://clojure.github.io/clojure/">API</a> section.</p>
+</div>
+<div class="paragraph">
+<p>Since Clojure 1.7, Clojure also provides <a href="transducers">transducers</a>, an alternate model for composable transformations on collections. Transducers decouple the input, processing, and output parts of transformation and allow reuse of transformations in more contexts, such as core.async channels. Many of the sequence functions in the list below will create transducers if the input collection is omitted. See the Transducers page for more details.</p>
+</div>
+<div class="sect2">
+<h3 id="_seq_in_seq_out"><a class="anchor" href="#_seq_in_seq_out"></a>Seq in, Seq out</h3>
+<div class="paragraph">
+<p>Shorter seq from a longer seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/distinct">distinct</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/filter">filter</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/remove">remove</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/for">for</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/keep">keep</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/keep-indexed">keep-indexed</a><br>
+Longer seq from a shorter seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/cons">cons</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/concat">concat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/lazy-cat">lazy-cat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/mapcat">mapcat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/cycle">cycle</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/interleave">interleave</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/interpose">interpose</a><br>
+Seq with head-items missing: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/rest">rest</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/next">next</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/fnext">fnext</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/nnext">nnext</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/drop">drop</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/drop-while">drop-while</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/nthnext">nthnext</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/for">for</a><br>
+Seq with tail-items missing: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take">take</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take-nth">take-nth</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/take-while">take-while</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/butlast">butlast</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/drop-last">drop-last</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/for">for</a><br>
+Rearrangment of a seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/flatten">flatten</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reverse">reverse</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/sort">sort</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/sort-by">sort-by</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/shuffle">shuffle</a><br>
+Create nested seqs: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/split-at">split-at</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/splitv-at">splitv-at</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/split-with">split-with</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partition">partition</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partition-all">partition-all</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partition-by">partition-by</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partitionv">partitionv</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/partitionv-all">partitionv-all</a><br>
+Process each item of a seq to create a new seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/map">map</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/mapcat">mapcat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/for">for</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/replace">replace</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reductions">reductions</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/map-indexed">map-indexed</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seque">seque</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_a_seq"><a class="anchor" href="#_using_a_seq"></a>Using a seq</h3>
+<div class="paragraph">
+<p>Extract a specific-numbered item from a seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/first">first</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/ffirst">ffirst</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/nfirst">nfirst</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/second">second</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/nth">nth</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/when-first">when-first</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/last">last</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/rand-nth">rand-nth</a><br>
+Construct a collection from a seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/zipmap">zipmap</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/into">into</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reduce">reduce</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/set">set</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/vec">vec</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/into-array">into-array</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/to-array-2d">to-array-2d</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/frequencies">frequencies</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/group-by">group-by</a><br>
+Pass items of a seq as arguments to a function: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/apply">apply</a><br>
+Compute a boolean from a seq: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/not-empty">not-empty</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/some">some</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/reduce">reduce</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq?">seq?</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/every?">every?</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/not-every?">not-every?</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/not-any?">not-any?</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/empty?">empty?</a><br>
+Search a seq using a predicate: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/some">some</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/filter">filter</a><br>
+Force evaluation of lazy seqs: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/doseq">doseq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/dorun">dorun</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/doall">doall</a><br>
+Check if lazy seqs have been forcibly evaluated: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/realized?">realized?</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_a_seq"><a class="anchor" href="#_creating_a_seq"></a>Creating a seq</h3>
+<div class="paragraph">
+<p>Lazy seq from collection: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/seq">seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/vals">vals</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/keys">keys</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/rseq">rseq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/subseq">subseq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/rsubseq">rsubseq</a><br>
+Lazy seq from producer function: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/lazy-seq">lazy-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/repeatedly">repeatedly</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/iterate">iterate</a><br>
+Lazy seq from constant: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/repeat">repeat</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/range">range</a><br>
+Lazy seq from other objects: <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/line-seq">line-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/resultset-seq">resultset-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/re-seq">re-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/tree-seq">tree-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/file-seq">file-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/xml-seq">xml-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/iterator-seq">iterator-seq</a> <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/enumeration-seq">enumeration-seq</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="clj-prev-next-container">
+  <a href="datatypes" class="clj-prev-link"><span class="clj-prevnext-link-icon">&#xeab5;</span>&nbsp;Datatypes</a>
+  <a href="transients" class="clj-next-link">Transients&nbsp;<span class="clj-prevnext-link-icon">&#xeab8;</span></a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="w-section clj-footer">
+    <div class="w-container clj-footer-links-container">
+      <div class="w-row">
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Community</h6>
+            <a href="/community/resources" class="clj-footer-link">Resources</a>
+            <a href="/community/contributing" class="clj-footer-link">Contributing</a>
+            <a href="/community/companies" class="clj-footer-link">Companies</a>
+            <a href="/community/contributing_site" class="clj-footer-link">Site</a>
+          <h6 class="clj-footer-heading">Legal</h6>
+            <a href="/community/license" class="clj-footer-link">License</a>
+            <a href="/privacy" class="clj-footer-link">Privacy Policy</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Documentation</h6>
+            <a href="/about/rationale" class="clj-footer-link">Overview</a>
+            <a href="/reference/documentation" class="clj-footer-link">Reference</a>
+            <a href="/api/api" class="clj-footer-link">API</a>
+            <a href="/guides/guides" class="clj-footer-link">Guides</a>
+            <a href="/community/libraries" class="clj-footer-link">Libraries &amp; Tools</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Updates</h6>
+            <a href="/news/news" class="clj-footer-link">News</a>
+            <a href="/community/events" class="clj-footer-link">Events</a>
+          <h6 class="clj-footer-heading">ETC</h6>
+            <a href="https://www.youtube.com/user/ClojureTV" class="clj-footer-link">ClojureTV</a>
+            <a href="/community/books" class="clj-footer-link">Books</a>
+            <a href="/community/swag" class="clj-footer-link">Swag</a>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <h6 class="clj-footer-heading">Code</h6>
+            <a href="/releases/downloads" class="clj-footer-link">Releases</a>
+            <a href="https://github.com/clojure/clojure/" class="clj-footer-link">Source</a>
+            <a href="http://clojurescript.org" class="clj-footer-link">ClojureScript</a>
+            <a href="/about/clojureclr" class="clj-footer-link">ClojureCLR</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-container clj-footer-legal-container">
+      <div class="w-clearfix clj-footer-legal">
+        <div class="clj-footer-logo">&nbsp;</div>
+        <div class="clj-footer-legal-links">
+          <div class="clj-footer-copyright">Copyright 2008-2022 Rich Hickey | <a class="clj-footer-sub-link" href="/privacy">Privacy Policy</a><br/>Logo &amp; site design by Tom Hickey
+          </div>
+          <div class="clj-footer-designed-by">Published 2024-10-31<br/>Update <a class="clj-footer-sub-link" href="https://github.com/clojure/clojure-site/blob/master/content/reference/sequences.adoc">this page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/webflow.js"></script>
+  <script type="text/javascript" src="/js/highlight.pack.js"></script>
+  <script>
+  $(document).ready( (event) => {
+    $('pre code').each((index, obj) => {
+      $(obj).addClass($(obj).attr("data-lang"));
+      hljs.highlightBlock(obj);
+    });
+  });
+  </script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

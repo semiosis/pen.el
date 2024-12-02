@@ -1,0 +1,364 @@
+Content-type: text/html
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-03 Thu 19:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+Hey Prashant,
+</p>
+
+<p>
+I'm sorry things are difficult right now.
+I'd like to help you financially but currently I'm unable. But I hope I can encourage you with Scriptures.
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Psalms%2025%3A17&amp;version=ESV">Psalms 25:17</a></b> - The troubles of my heart are enlarged; bring me out of my distresses. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Psalms%206%3A6-7&amp;version=ESV">Psalms 6:6-7</a></b> - I am weary with my moaning; every night I flood my bed with tears; I drench my couch with my weeping. My eye wastes away because of grief; it grows weak because of all my foes. (ESV)
+</p>
+</blockquote>
+
+<p>
+You said, <i>"There is this local small boy in junior college needs money for his exams and he came to me for help. I just felt really bad that I couldn't help him."</i>
+</p>
+
+<p>
+I appreciate your heart of compassion for others. I know how that feels too, wanting to help people but not enough resources to do so.
+</p>
+
+<p>
+In this difficult time it's important for you to realise and believe that God is worth more than anyone or anything, rather than consider anything else as more valuable. And it's important to seek Him out first and not make idols out of people.
+</p>
+
+<p>
+We <b>must</b> <a href="https://youtu.be/1-7Q85ehaC8?t=893">treasure God more than anyone and anything</a>. If we don't then that's sin. God is most valuable and we must seek the Kingdom of God and His righteousness first.
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Matthew%2013%3A44&amp;version=ESV">Matthew 13:44</a></b> - The kingdom of heaven is like treasure hidden in a field, which a man found and covered up. Then in his joy he goes and sells all that he has and buys that field. (ESV)
+</p>
+</blockquote>
+
+<p>
+We are supposed to treasure people, that is true. But Jesus has to be our number 1 heart's desire and treasure. Jesus is worth more than anyone or anything. This is really important. Marriage cannot be idolatry. God is worth more and needs to come first. I'm also speaking to myself.
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Matthew%2010%3A37&amp;version=ESV">Matthew 10:37</a></b> - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&amp;version=ESV">Luke 14:26-33</a></b> - If anyone comes to me and does not hate (<a href="https://biblehub.com/greek/3404.htm">3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.</a>) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. <b>Whoever does not bear his own cross and come after me cannot be my disciple</b>. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, <b>any one of you who does not renounce all that he has cannot be my disciple.</b> (ESV)
+</p>
+</blockquote>
+
+<p>
+I think you should practice only saying loving things to your mum, such as telling her you love her and value her, etc. but do not say horrible things.
+</p>
+
+<ul class="org-ul">
+<li>Do not resist the one who is evil - but do good to them
+<ul class="org-ul">
+<li><b><a href="https://www.biblegateway.com/passage/?search=Romans%2012%3A21&amp;version=ESV">Romans 12:21</a></b> - Do not be overcome by evil, but <b>overcome evil with good</b>. (ESV)</li>
+<li>if anyone slaps you on the right cheek, turn to him the other also</li>
+<li>if anyone would sue you and take your tunic, let him have your cloak as well</li>
+<li>if anyone forces you to go one mile, go with him two miles</li>
+<li>Give to the one who begs from you, and do not refuse the one who would borrow from you</li>
+<li>Love your enemies and pray for those who persecute you</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Matthew%205%3A38-48&amp;version=ESV">Matthew 5:38-48</a></b> - You have heard that it was said, An eye for an eye and a tooth for a tooth. But I say to you, <b>Do not resist the one who is evil</b>. But <b>if anyone slaps you on the right cheek, turn to him the other also</b>. And <b>if anyone would sue you and take your tunic, let him have your cloak as well</b>. And <b>if anyone forces you to go one mile, go with him two miles</b>. <b>Give to the one who begs from you, and do not refuse the one who would borrow from you</b>. You have heard that it was said, You shall love your neighbor and hate (<a href="https://biblehub.com/greek/3404.htm">3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.</a>) your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A14&amp;version=ESV">I Thessalonians 5:14</a></b> - And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
+</p>
+</blockquote>
+
+<p>
+With Jesus' commandments in mind, we should have joy when the time of testing happens and things are taken away from us. It can take a really long time. But we need to not shrink back. I'm also speaking to myself.
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Hebrews%2010%3A34-39&amp;version=ESV">Hebrews 10:34-39</a></b> - For <b>you had compassion on those in prison, and you joyfully accepted the plundering of your property</b>, since you knew that <b>you yourselves had a better possession and an abiding one</b>. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that <b>when you have done the will of God you may receive what is promised</b>. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls. (ESV)
+</p>
+</blockquote>
+
+<p>
+You said, <i>"Please keep me in your prayers and I'm sure I'll come a lot closer to lord Jesus Christ once I am married to a girl with my mother's permission."</i>
+</p>
+
+<p>
+I'll pray for you, but my prayer is that you draw closer to Jesus and seek Jesus first and <b>trust Jesus</b> because that's most important.
+</p>
+
+<p>
+We must draw closer to Jesus and seek Jesus first and <b>trust Jesus</b> because to be in relationship with God is the most important thing. To not be in relationship with God is to abide in death:
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Matthew%206%3A31-33&amp;version=ESV">Matthew 6:31-33</a></b> - Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But <b>seek first the kingdom of God and his righteousness, and all these things will be added to you</b>. (ESV)
+</p>
+</blockquote>
+
+<p>
+We are commanded to reject the idols to treasure God first. If we do this then we draw near to God and God draws near to us:
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=2%20Corinthians%206%3A17-18&amp;version=ESV">II Corinthians 6:17-18</a></b> - Therefore <b>go out from their midst, and be separate from them</b>, says the Lord, and <b>touch no unclean thing</b>; <b>then I will welcome you</b>, and I will be a father to you, and you shall be sons and daughters to me, says the Lord Almighty. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=James%204%3A8&amp;version=ESV">James 4:8</a></b> - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Psalms%2073%3A25-28&amp;version=ESV">Psalms 73:25-28</a></b> - Whom have I in heaven but you? And <b>there is nothing on earth that I desire besides you</b>. <span class="underline">My flesh and my heart may fail, but <b>God is the strength of my heart and my portion</b> forever.</span> For behold, <b>those who are far from you shall perish; you put an end to everyone who is unfaithful to you</b>. But for me <b>it is good to be near God;</b> I have made the Lord GOD my refuge, that I may tell of all your works. (ESV)
+</p>
+</blockquote>
+
+<p>
+I pray to Jesus these blessings for you and your mum:
+</p>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Romans%2015%3A33&amp;version=ESV">Romans 15:33</a></b> - May the God of peace be with you all. Amen. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b><a href="https://www.biblegateway.com/passage/?search=Galatians%206%3A18&amp;version=ESV">Galatians 6:18</a></b> - The grace of our Lord Jesus Christ be with your spirit, brothers. Amen. (ESV)
+</p>
+</blockquote>
+
+<p>
+Shane
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2024-10-03 Thu 19:15</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

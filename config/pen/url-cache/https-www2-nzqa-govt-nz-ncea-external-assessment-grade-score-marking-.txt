@@ -1,0 +1,606 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Date: Sat, 28 Sep 2024 00:19:25 GMT
+Cache-Control: no-cache, must-revalidate
+ETag: "ef243cc0d74cf0c7facfdaf142deb93d"
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 3262f7038fb2f60f7b35c40afe2b7d60.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: AKL50-C2
+X-Amz-Cf-Id: f-BXxHEtGcJF8IIWO8AAMg6Hj817vrC5epEZWj6gRm3BCKtAzgb2KA==
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Silverstripe CMS 4.13" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="How we use grade score marking for external exams." />
+
+    
+        <meta property="og:image" content="https://www2.nzqa.govt.nz/assets/About-us/Publications/Strategic-documents/NZQAweavingknowledge.jpg">
+<meta name="twitter:image" content="https://www2.nzqa.govt.nz/assets/About-us/Publications/Strategic-documents/NZQAweavingknowledge.jpg">
+
+    
+
+    <link rel="icon" sizes="32x32" href="/_resources/themes/app/dist/images/favicons/favicon-32.png?m=1726831251">
+<link rel="icon" sizes="96x96" href="/_resources/themes/app/dist/images/favicons/favicon-96.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="57x57" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-57.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="60x60" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-60.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="72x72" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-72.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="76x76" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-76.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="114x114" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-114.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="120x120" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-120.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="144x144" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-144.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="152x152" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-152.png?m=1726831251">
+<link rel="apple-touch-icon" sizes="180x180" href="/_resources/themes/app/dist/images/favicons/apple-touch-icon-180.png?m=1726831251">
+<link rel="shortcut icon" href="/_resources/themes/app/dist/images/favicons/favicon.ico?m=1726831251">
+
+    
+    
+
+    <title>Grade score marking :: NZQA</title>
+
+    
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KB9LQX');</script>
+        <!-- End Google Tag Manager -->
+    
+<link rel="stylesheet" type="text/css" href="/_resources/themes/app/dist/app.css?m=1726831251" />
+<link rel="stylesheet" type="text/css" href="/_resources/themes/app/dist/print.css?m=1726831251" />
+<link rel="stylesheet" type="text/css" href="/_resources/vendor/andrewandante/womens-refuge-shield/css/button.css?m=1726831251" />
+</head>
+    <body data-pagetype="Page">
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB9LQX"
+                              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        <div class="skip-links">
+    <a class="skip-links__link sr-only" href="/ncea/external-assessment/grade-score-marking/#main"><span>Skip to main content</span></a>
+</div>
+
+        <div id="app">
+            
+
+<header id="header" class="header container-header">
+    <div class="header__branding-and-utilities">
+        <a class="header__branding" href="https://www2.nzqa.govt.nz/">
+            <img src="/_resources/themes/app/dist/images/nzqa-logo.svg?m=1726831251" class="header__logo d-none d-xl-block" alt="NZQA Logo" />
+            <img src="/_resources/themes/app/dist/images/nzqa-logo-mobile.svg?m=1726831251" class="header__logo header__logo--mobile d-xl-none" alt="NZQA Logo" />
+        </a>
+        <nav class="header__utilities">
+            
+                <ul class="menu menu--utilities menu__items d-none d-xl-inline-block">
+                    
+                        <li class="menu__item first">
+                            <a href="/about-us/contact-us/"
+                                class="menu__link">
+                                Contact us
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item last">
+                            <a href="/about-us/"
+                                class="menu__link">
+                                About us
+                            </a>
+                        </li>
+                    
+                </ul>
+            
+            <div class="header__search">
+                <div class="search search--inline">
+    <form class="search__form" action="/search/" method="get">
+        <label for="Form_SearchForm_Query" class="sr-only">Search</label>
+        <input class="search__input" name="q" id="Form_SearchForm_Query" placeholder="Search the site..." type="text" />
+        <button class="search__button" type="submit">Search</button>
+    </form>
+</div>
+
+            </div>
+            <button
+                class="header__search-open"
+                aria-controls="mobile-search"
+                aria-label="Click to open the search form"
+            >
+                <span class="label">Search</span>
+            </button>
+            
+                <a
+                    class="header__login-options-open"
+                    href="/login/"
+                    
+                >
+                    <span class="label">Login</span>
+                </a>
+            
+            <button
+                class="menu__mobile-toggle d-inline-block d-xl-none"
+                aria-controls="mobile-menu"
+                aria-label="Click to open the navigation menu"
+            >
+                <span class="menu__hamburglar"></span>
+                <span class="label">Menu</span>
+            </button>
+        </nav>
+    </div>
+    <div class="header__mobile-search" id="mobile-search">
+        <button class="header__search-close" aria-controls="mobile-search" aria-label="Click to close the search form">Close</button>
+        <div class="search ">
+    <form class="search__form" action="/search/" method="get">
+        <label for="Form_MobileSearchForm_Query" class="sr-only">Search</label>
+        <input class="search__input" name="q" id="Form_MobileSearchForm_Query" placeholder="Search the site..." type="text" />
+        <button class="search__button" type="submit">Search</button>
+    </form>
+</div>
+
+    </div>
+</header>
+
+<div class="main-navigation" data-element="mainmenu" data-props="{&quot;main&quot;:[{&quot;id&quot;:232,&quot;menuTitle&quot;:&quot;Qualifications, credentials and standards&quot;,&quot;altTitle&quot;:&quot;M\u0101tauranga, paerewa, p\u016bkenga-wh\u0101iti&quot;,&quot;title&quot;:&quot;Qualifications, credentials and standards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:1993,&quot;menuTitle&quot;:&quot;Search qualifications&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Search qualifications&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/nzqf\/search\/results.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Search qualifications&quot;}},{&quot;id&quot;:2703,&quot;menuTitle&quot;:&quot;Search standards&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Search standards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/framework\/search\/index.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Search standards&quot;}},{&quot;id&quot;:6039,&quot;menuTitle&quot;:&quot;Search micro-credentials&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Search micro-credentials&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/nzqf\/search\/microcredentials.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Search micro-credentials&quot;}},{&quot;id&quot;:1891,&quot;menuTitle&quot;:&quot;About the New Zealand Qualifications and Credentials Framework (NZQCF)&quot;,&quot;altTitle&quot;:&quot;Te Taura Here Tohu M\u0101tauranga o Aotearoa&quot;,&quot;title&quot;:&quot;About the New Zealand Qualifications and Credentials Framework (NZQCF)&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/about-new-zealand-qualifications-credentials-framework\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;About the New Zealand Qualifications and Credentials Framework (NZQCF)&quot;}},{&quot;id&quot;:2492,&quot;menuTitle&quot;:&quot;About New Zealand qualifications and credentials&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;About New Zealand qualifications and credentials&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/about-qualifications-and-credentials\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;About New Zealand qualifications and credentials&quot;}},{&quot;id&quot;:394,&quot;menuTitle&quot;:&quot;About standards&quot;,&quot;altTitle&quot;:&quot;M\u014d paerewa&quot;,&quot;title&quot;:&quot;About standards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/about-standards\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;About standards&quot;}},{&quot;id&quot;:4933,&quot;menuTitle&quot;:&quot;Awards&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Awards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/understanding-secondary-quals\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Awards&quot;}},{&quot;id&quot;:2614,&quot;menuTitle&quot;:&quot;Assessment support materials&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Assessment support materials&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/assessment-support-materials\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Assessment support materials&quot;}},{&quot;id&quot;:2554,&quot;menuTitle&quot;:&quot;Changes to qualifications and standards&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Changes to qualifications and standards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/changes-to-qualifications-and-standards\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Changes to qualifications and standards&quot;}},{&quot;id&quot;:1304,&quot;menuTitle&quot;:&quot;Access your results&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Access your results&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/qualifications-and-standards\/access-your-results\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Access your results&quot;}}]},{&quot;id&quot;:52,&quot;menuTitle&quot;:&quot;NCEA and secondary&quot;,&quot;altTitle&quot;:&quot;NCEA me te tohu kura tuarua&quot;,&quot;title&quot;:&quot;NCEA and secondary&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:216,&quot;menuTitle&quot;:&quot;About NCEA&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;About NCEA&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/about-ncea\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;About NCEA&quot;}},{&quot;id&quot;:1414,&quot;menuTitle&quot;:&quot;Student assessment hub&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Student assessment hub&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/student-assessment-hub\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Student assessment hub&quot;}},{&quot;id&quot;:2998,&quot;menuTitle&quot;:&quot;Subjects and learning areas&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Subjects and learning areas&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/subjects\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Subjects and learning areas&quot;}},{&quot;id&quot;:4807,&quot;menuTitle&quot;:&quot;Past exams &quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Past exams &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/subjects\/past-exams-and-exemplars\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Past exams &quot;}},{&quot;id&quot;:2651,&quot;menuTitle&quot;:&quot;NCEA for teachers and schools&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NCEA for teachers and schools&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/ncea-for-teachers-and-schools\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NCEA for teachers and schools&quot;}},{&quot;id&quot;:3038,&quot;menuTitle&quot;:&quot;Exam timetable and key assessment dates&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Exam timetable and key assessment dates&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/exam-timetable-and-key-assessment-dates\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Exam timetable and key assessment dates&quot;}},{&quot;id&quot;:3469,&quot;menuTitle&quot;:&quot;Search standards and assessment&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Search standards and assessment&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/ncea\/assessment\/search.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Search standards and assessment&quot;}},{&quot;id&quot;:215,&quot;menuTitle&quot;:&quot;Understanding secondary qualifications and awards&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Understanding secondary qualifications and awards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/understanding-secondary-quals\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Understanding secondary qualifications and awards&quot;}},{&quot;id&quot;:1383,&quot;menuTitle&quot;:&quot;External assessment&quot;,&quot;altTitle&quot;:&quot;Aromatawai \u0101-waho&quot;,&quot;title&quot;:&quot;External assessment&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/external-assessment\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;External assessment&quot;}},{&quot;id&quot;:4956,&quot;menuTitle&quot;:&quot;Secondary moderation&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Secondary moderation&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/ncea-for-teachers-and-schools\/moderation-for-secondary-schoolskura\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Secondary moderation&quot;}},{&quot;id&quot;:1394,&quot;menuTitle&quot;:&quot;NCEA rules and procedures&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NCEA rules and procedures&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/ncea-rules-and-procedures\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NCEA rules and procedures&quot;}},{&quot;id&quot;:2913,&quot;menuTitle&quot;:&quot;Find a school&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Search schools and kura&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/providers\/index.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Search schools and kura&quot;}},{&quot;id&quot;:6035,&quot;menuTitle&quot;:&quot;External review of the digital assessment platform&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;External review of the digital assessment platform&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/ncea\/external-review-of-the-digital-platform\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;External review of the digital assessment platform&quot;}}]},{&quot;id&quot;:139,&quot;menuTitle&quot;:&quot;M\u0101ori&quot;,&quot;altTitle&quot;:&quot;M\u0101ori&quot;,&quot;title&quot;:&quot;M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:140,&quot;menuTitle&quot;:&quot;Te P\u0101 M\u0101tauranga &quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Te P\u0101 M\u0101tauranga &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/pa-matauranga\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Te P\u0101 M\u0101tauranga &quot;},&quot;children&quot;:[{&quot;id&quot;:3982,&quot;menuTitle&quot;:&quot;Field M\u0101ori&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Field M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/pa-matauranga\/field-maori\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Field M\u0101ori&quot;}},{&quot;id&quot;:3361,&quot;menuTitle&quot;:&quot;Te Marautanga o Aotearoa&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Te Marautanga o Aotearoa&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/pa-matauranga\/te-marautanga-o-aotearoa\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Te Marautanga o Aotearoa&quot;}},{&quot;id&quot;:3422,&quot;menuTitle&quot;:&quot;New Zealand Curriculum - kaupapa ako M\u0101ori&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;New Zealand Curriculum - kaupapa ako M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/pa-matauranga\/new-zealand-curriculum-kaupapa-ako-maori\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;New Zealand Curriculum - kaupapa ako M\u0101ori&quot;}},{&quot;id&quot;:4803,&quot;menuTitle&quot;:&quot;Te Reo Matatini me te P\u0101ngarau&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Te Reo Matatini me te P\u0101ngarau&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/pa-matauranga\/te-reo-matatini-me-te-pangarau\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Te Reo Matatini me te P\u0101ngarau&quot;}}]},{&quot;id&quot;:971,&quot;menuTitle&quot;:&quot;Quality assurance M\u0101ori&quot;,&quot;altTitle&quot;:&quot;Te Hono o te Kahurangi &quot;,&quot;title&quot;:&quot;Quality assurance M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/quality-assurance-maori\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Quality assurance M\u0101ori&quot;}},{&quot;id&quot;:959,&quot;menuTitle&quot;:&quot;Our focus on M\u0101ori&quot;,&quot;altTitle&quot;:&quot;To t\u0101tou aro ki te M\u0101ori&quot;,&quot;title&quot;:&quot;Our focus on M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/focus-maori\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Our focus on M\u0101ori&quot;}},{&quot;id&quot;:4836,&quot;menuTitle&quot;:&quot;NCEA M\u0101ori&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NCEA M\u0101ori&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/ncea\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NCEA M\u0101ori&quot;}},{&quot;id&quot;:1818,&quot;menuTitle&quot;:&quot;NCEA me te Wh\u0101nau&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NCEA me te Wh\u0101nau&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/ncea-me-te-whanau\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NCEA me te Wh\u0101nau&quot;}},{&quot;id&quot;:5911,&quot;menuTitle&quot;:&quot;M\u0101ori in STEM&quot;,&quot;altTitle&quot;:&quot;M\u0101ori i P\u016aRAU&quot;,&quot;title&quot;:&quot;M\u0101ori in STEM&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/maori\/maori-in-stem\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;M\u0101ori in STEM&quot;}}]},{&quot;id&quot;:1479,&quot;menuTitle&quot;:&quot;Pasifika&quot;,&quot;altTitle&quot;:&quot;Ng\u0101 iwi o Te Moana-nui-a-Kiwa&quot;,&quot;title&quot;:&quot;Pasifika &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:1672,&quot;menuTitle&quot;:&quot;NCEA Pasifika&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NCEA Pasifika&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/ncea\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NCEA Pasifika&quot;}},{&quot;id&quot;:1677,&quot;menuTitle&quot;:&quot;Navigating pathways&quot;,&quot;altTitle&quot;:&quot;Te takahanga huarahi&quot;,&quot;title&quot;:&quot;Navigating pathways&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/navigating-pathways\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Navigating pathways&quot;}},{&quot;id&quot;:1638,&quot;menuTitle&quot;:&quot;Pasifika in STEM&quot;,&quot;altTitle&quot;:&quot;Te Moana-nui-a-Kiwa i P\u016aRAU&quot;,&quot;title&quot;:&quot;Pasifika in STEM&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/pasifika-in-stem\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Pasifika in STEM&quot;}},{&quot;id&quot;:1636,&quot;menuTitle&quot;:&quot;Takiala Pasifika 2020-2023&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Takiala Pasifika 2020-2023&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/takiala-pasifika\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Takiala Pasifika 2020-2023&quot;}},{&quot;id&quot;:1557,&quot;menuTitle&quot;:&quot;NZQA Taupulega&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;NZQA Taupulega&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/nzqa-taupulega\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;NZQA Taupulega&quot;}},{&quot;id&quot;:1801,&quot;menuTitle&quot;:&quot;How New Zealand supports qualification recognition in the Pacific&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;How New Zealand supports qualification recognition in the Pacific&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/how-new-zealand-supports-qualification-recognition-in-the-pacific\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;How New Zealand supports qualification recognition in the Pacific&quot;}},{&quot;id&quot;:1870,&quot;menuTitle&quot;:&quot;Pasifika news and events&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Pasifika news and events&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/pasifika\/pasifika-news-and-events\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Pasifika news and events&quot;}}]},{&quot;id&quot;:852,&quot;menuTitle&quot;:&quot;Tertiary&quot;,&quot;altTitle&quot;:&quot;M\u0101tauranga matua&quot;,&quot;title&quot;:&quot;Tertiary &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:2753,&quot;menuTitle&quot;:&quot;Tertiary education in New Zealand&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Tertiary education in New Zealand&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/tertiary-education-in-new-zealand\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Tertiary education in New Zealand&quot;}},{&quot;id&quot;:1089,&quot;menuTitle&quot;:&quot;The Tertiary and International Learners Code of Practice&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;The Tertiary and International Learners Code of Practice&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/the-code\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;The Tertiary and International Learners Code of Practice&quot;}},{&quot;id&quot;:2711,&quot;menuTitle&quot;:&quot;Quality assurance&quot;,&quot;altTitle&quot;:&quot;Whaka\u016b i te kounga&quot;,&quot;title&quot;:&quot;Quality assurance&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/quality-assurance\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Quality assurance&quot;}},{&quot;id&quot;:2758,&quot;menuTitle&quot;:&quot;Find a tertiary education provider&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Find a tertiary education provider&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;https:\/\/www.nzqa.govt.nz\/providers\/index.do&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Find a tertiary education provider&quot;}},{&quot;id&quot;:904,&quot;menuTitle&quot;:&quot;English language entry requirements for international students&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;English language entry requirements for international students&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/english-language-entry-requirements-for-international-students\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;English language entry requirements for international students&quot;}},{&quot;id&quot;:2778,&quot;menuTitle&quot;:&quot;Approval, accreditation and registration&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Approval, accreditation and registration&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/approval-accreditation-and-registration\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Approval, accreditation and registration&quot;}},{&quot;id&quot;:1070,&quot;menuTitle&quot;:&quot; Assessment and moderation of standards&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot; Assessment and moderation of standards&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/assessment-and-moderation-of-standards\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot; Assessment and moderation of standards&quot;}},{&quot;id&quot;:2530,&quot;menuTitle&quot;:&quot;Resources for tertiary providers&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Resources for tertiary providers&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/resources-for-tertiary-providers\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Resources for tertiary providers&quot;}},{&quot;id&quot;:1118,&quot;menuTitle&quot;:&quot;Submitting results and awarding qualifications and micro-credentials&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Submitting results and awarding qualifications and micro-credentials&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/submitting-results\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Submitting results and awarding qualifications and micro-credentials&quot;}},{&quot;id&quot;:6141,&quot;menuTitle&quot;:&quot;Subjects&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Subjects&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/select-subject\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Subjects&quot;}},{&quot;id&quot;:1114,&quot;menuTitle&quot;:&quot;Offshore use of qualifications and programmes&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Offshore use of qualifications and programmes&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/offshore-use-of-qualifications-and-programmes\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Offshore use of qualifications and programmes&quot;}},{&quot;id&quot;:893,&quot;menuTitle&quot;:&quot;International education planning&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;International education planning&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/international-education\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;International education planning&quot;}},{&quot;id&quot;:855,&quot;menuTitle&quot;:&quot;Reform of Vocational Education&quot;,&quot;altTitle&quot;:&quot;[Te reo M\u0101ori heading]&quot;,&quot;title&quot;:&quot;Reform of Vocational Education&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/strategies-projects\/vocational-education-system\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Reform of Vocational Education&quot;}},{&quot;id&quot;:4947,&quot;menuTitle&quot;:&quot;Improving cyber security &quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Improving cyber security in the tertiary sector&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/tertiary\/cyber-security\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Improving cyber security in the tertiary sector&quot;}}]},{&quot;id&quot;:6,&quot;menuTitle&quot;:&quot;International&quot;,&quot;altTitle&quot;:&quot;Tuawhenua&quot;,&quot;title&quot;:&quot;International&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:71,&quot;menuTitle&quot;:&quot;Taking New Zealand qualifications overseas&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Taking New Zealand qualifications overseas&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/nz-quals-overseas\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Taking New Zealand qualifications overseas&quot;}},{&quot;id&quot;:83,&quot;menuTitle&quot;:&quot;Studying New Zealand qualifications&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Studying New Zealand qualifications&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/study-nz-quals\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Studying New Zealand qualifications&quot;}},{&quot;id&quot;:105,&quot;menuTitle&quot;:&quot;Getting overseas qualifications recognised by NZQA&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Getting overseas qualifications recognised by NZQA&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/recognise-overseas-qual\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Getting overseas qualifications recognised by NZQA&quot;}},{&quot;id&quot;:91,&quot;menuTitle&quot;:&quot;How to check a qualification&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;How to check a qualification&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/check-qual\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;How to check a qualification&quot;}},{&quot;id&quot;:95,&quot;menuTitle&quot;:&quot;Recognition arrangements with other countries &quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Recognition arrangements with other countries &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/international\/recognition-arrangements\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Recognition arrangements with other countries &quot;}}]},{&quot;id&quot;:174,&quot;menuTitle&quot;:&quot;About us&quot;,&quot;altTitle&quot;:&quot;M\u014d m\u0101tou&quot;,&quot;title&quot;:&quot;About us&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/&quot;,&quot;openInNewWindow&quot;:false},&quot;children&quot;:[{&quot;id&quot;:2034,&quot;menuTitle&quot;:&quot;Contact us&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Contact us&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/contact-us\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Contact us&quot;}},{&quot;id&quot;:207,&quot;menuTitle&quot;:&quot;News&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;News&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/news\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;News&quot;}},{&quot;id&quot;:817,&quot;menuTitle&quot;:&quot;Publications&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Publications&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/publications\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Publications&quot;}},{&quot;id&quot;:860,&quot;menuTitle&quot;:&quot;Events&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Events&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/events\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Events&quot;}},{&quot;id&quot;:2128,&quot;menuTitle&quot;:&quot;Why we are here&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Why we are here&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/why-we-are-here\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Why we are here&quot;}},{&quot;id&quot;:2207,&quot;menuTitle&quot;:&quot;Our approach&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Our approach&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/our-approach\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Our approach&quot;}},{&quot;id&quot;:2209,&quot;menuTitle&quot;:&quot;Our structure&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Our structure &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/our-structure\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Our structure &quot;}},{&quot;id&quot;:2131,&quot;menuTitle&quot;:&quot;Our strategies and projects&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Our strategies and projects&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/strategies-projects\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Our strategies and projects&quot;}},{&quot;id&quot;:2151,&quot;menuTitle&quot;:&quot;Our rules, fees and policies&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Our rules, fees and policies&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/rules-fees-policies\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Our rules, fees and policies&quot;}},{&quot;id&quot;:2181,&quot;menuTitle&quot;:&quot;Working at NZQA&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Working at NZQA &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/working-at-nzqa\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Working at NZQA &quot;}},{&quot;id&quot;:804,&quot;menuTitle&quot;:&quot;Consultations and reviews&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Consultations and reviews&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/consultations-and-reviews\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Consultations and reviews&quot;}},{&quot;id&quot;:2055,&quot;menuTitle&quot;:&quot;Ringa Toi &quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Ringa Toi &quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/ringa-toi\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Ringa Toi &quot;}},{&quot;id&quot;:2050,&quot;menuTitle&quot;:&quot;Emergency events information&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Emergency events information&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/emergency-events\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Emergency events information&quot;}},{&quot;id&quot;:1820,&quot;menuTitle&quot;:&quot;Official information&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Official information&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/official-information\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Official information&quot;}},{&quot;id&quot;:1983,&quot;menuTitle&quot;:&quot;Protecting your privacy&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Protecting your privacy&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/privacy\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Protecting your privacy&quot;}},{&quot;id&quot;:1982,&quot;menuTitle&quot;:&quot;Protecting students&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Protecting students&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/protect-students\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Protecting students&quot;}},{&quot;id&quot;:2518,&quot;menuTitle&quot;:&quot;Glossary&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Glossary&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/glossary\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Glossary&quot;}},{&quot;id&quot;:2628,&quot;menuTitle&quot;:&quot;Introducing our visual identity&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Introducing our visual identity&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/ourbrand\/&quot;,&quot;openInNewWindow&quot;:false,&quot;title&quot;:&quot;Introducing our visual identity&quot;}}]}],&quot;utilities&quot;:[{&quot;id&quot;:2034,&quot;menuTitle&quot;:&quot;Contact us&quot;,&quot;altTitle&quot;:null,&quot;title&quot;:&quot;Contact us&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/contact-us\/&quot;,&quot;openInNewWindow&quot;:false}},{&quot;id&quot;:174,&quot;menuTitle&quot;:&quot;About us&quot;,&quot;altTitle&quot;:&quot;M\u014d m\u0101tou&quot;,&quot;title&quot;:&quot;About us&quot;,&quot;link&quot;:{&quot;href&quot;:&quot;\/about-us\/&quot;,&quot;openInNewWindow&quot;:false}}],&quot;sectionIds&quot;:[1442,1383,52]}"></div>
+
+
+
+<main id="main">
+    
+        
+            
+                <div class="page-hero page-hero--theme-light page-hero--audience-secondary">
+    <div class="container-nzqa">
+        <div class="page-hero__content">
+            <div class="page-hero__breadcrumbs">
+    
+        <nav class="breadcrumbs m-0" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list list-item-count-3 d-flex flex-wrap p-0">
+                <li class="breadcrumbs__item m-0">
+                    <a href="/" class="breadcrumbs__link"> Home </a>
+                    <span class="breadcrumbs__delimiter breadcrumbs__delimiter-light"></span>
+                </li>
+                
+                    <li class="breadcrumbs__item-1 m-0">
+                        <a href="/ncea/" class="breadcrumbs__link breadcrumb-1">NCEA and secondary</a>
+                        <span class="breadcrumbs__delimiter breadcrumbs__delimiter-light"></span>
+                    </li>
+
+                    
+                    
+                
+                    <li class="breadcrumbs__item-2 m-0">
+                        <a href="/ncea/external-assessment/" class="breadcrumbs__link breadcrumb-2">External assessment</a>
+                        <span class="breadcrumbs__delimiter breadcrumbs__delimiter-light"></span>
+                    </li>
+
+                    
+                    
+                
+                    <li class="breadcrumbs__item-3 m-0">
+                        <a href="/ncea/external-assessment/grade-score-marking/" class="breadcrumbs__link breadcrumb-3">Grade score marking</a>
+                        <span class="breadcrumbs__delimiter breadcrumbs__delimiter-light"></span>
+                    </li>
+
+                    
+                    
+                
+            </ol>
+        </nav>
+    
+
+</div>
+            
+                <h1 class="page-hero__title">Grade score marking</h1>
+            
+            <p class="page-hero__summary">How we use grade score marking for external assessments</p>
+        </div>
+    </div>
+    
+        <div class="page-hero__stripe-secondary"></div>
+    
+</div>
+
+            
+        
+    
+
+    
+        
+
+    
+
+    <article>
+        
+        
+    
+        
+        
+            
+                <div class="dnadesign__elemental__models__elementcontent block__holder  white-bg " id="e6312">
+    <div class="block content-element__content white">
+    <div class="container-nzqa">
+        <div class="row m-0">
+            <div class="col-1000-8 order-2 order-1000-1 d-flex justify-content-start p-0">
+                <div class="content-element__content-holder">
+                    
+                    <p>We use grade score marking for all achievement standards.</p><p>All external achievement standards have a single outcome. Markers can measure a candidate's performance by gathering assessment evidence from all parts of a paper.</p><h3>A well-researched approach to marking</h3><p>We did 5 years of research before bringing in this way of marking.</p><p>That research confirmed that grade score marking is a fair and effective method of standards-based marking.</p>
+                </div>
+            </div>
+
+            
+            <div class="col-1000-4 order-1 order-1000-2 d-flex justify-content-end p-0">
+                <div class="content-element__link-section">
+                    <h4 class="content-element__link-title mt-0">On this page</h4>
+                    <div class="js-content-links" data-props="{&quot;blockId&quot;:6312,&quot;getH2&quot;:1,&quot;getH3&quot;:0,&quot;restrictLinks&quot;:0,&quot;baseURL&quot;:&quot;https:\/\/www2.nzqa.govt.nz\/&quot;}"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</div>
+
+            
+        
+    
+        
+        
+            
+                <div class="dnadesign__elemental__models__elementcontent block__holder  grey-pale-bg " id="e6313">
+    <div class="block content-element__content grey-pale">
+    <div class="container-nzqa">
+        <div class="row m-0">
+            <div class="col-1000-8 order-2 order-1000-1 d-flex justify-content-start p-0">
+                <div class="content-element__content-holder">
+                    
+                        <h2 class="block__title content-element__title">How we mark questions</h2>
+                    
+                    <p>We award a single grade for each question in an NCEA paper:</p><ul>
+<li>Not Achieved (N)</li>
+<li>Achieved (A)</li>
+<li>Merit (M)</li>
+<li>Excellence (E).</li>
+</ul><h3>We use evidence from the assessment response</h3><p>We use the criteria from the standard to award this grade. We base the grade on the quality of evidence in the response.</p><p>Markers are instructed to ensure a high-quality response is not marked down for a minor error.</p><h3>We look for evidence of high performance first</h3><p>Marking is<span>&nbsp;'</span>top down'.</p><p>Markers must first&nbsp;look for evidence for Excellence, as described by the criterion for Excellence in the standard.</p><p>If they don't find this evidence, markers then look for Merit evidence, and then down to Achievement.&nbsp;</p><h3>Grades are based on the candidate's whole response</h3><p>The grade is based on the whole response to the question. It takes account of all evidence in the candidate’s answer.</p><p>Some questions may have parts or bullet points, but this does not stop markers giving a single holistic grade.</p><h3>We identify if the assessment response is upper or lower within a grade</h3><p>Grade score marking also recognises the quality of evidence within each grade. Grades can show an upper and lower result in a grade.</p><p>For example, lower Merit is M5 and upper Merit is M6. Both 5 and 6 are Merit scores.</p><p>The scores indicate that the student has met the criterion for a Merit grade in the question.</p><h4>Possible grade scores for a<span>&nbsp;</span>question</h4><table>
+<thead>
+<tr>
+<th colspan="3" width="80">Not Achieved</th>
+<th colspan="2" width="80">Achievement</th>
+<th colspan="2" width="80">Merit</th>
+<th colspan="2" width="80">Excellence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NØ</td>
+<td>N1</td>
+<td>N2</td>
+<td>A3</td>
+<td>A4</td>
+<td>M5</td>
+<td>M6</td>
+<td>E7</td>
+<td>E8</td>
+</tr>
+</tbody>
+</table>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+</div>
+
+            
+        
+    
+        
+        
+            
+                <div class="dnadesign__elemental__models__elementcontent block__holder  white-bg " id="e6314">
+    <div class="block content-element__content white">
+    <div class="container-nzqa">
+        <div class="row m-0">
+            <div class="col-1000-8 order-2 order-1000-1 d-flex justify-content-start p-0">
+                <div class="content-element__content-holder">
+                    
+                        <h2 class="block__title content-element__title">Calculating the overall grade for a standard</h2>
+                    
+                    <p>We come to a single grade for overall performance against the standard by combining the scores from the questions.</p><p>For example, in an assessment paper with 3 questions, a candidate scores M5 for Question 1, A3 for Question 2, and M6 for Question 3. For the whole paper, the candidate’s score is M5 + A3 + M6 = 14.</p><p>This score will be written in the 'total' box on the front cover of the candidate’s answer booklet.</p><h3>We check the total score against the cut scores for the standard</h3><p>During marking in each year, the senior markers set the<span>&nbsp;</span>cut scores. These are the scores where the different grades separate.</p><p>The senior markers use the standard and a large sample of papers on each score to decide these cut scores.</p><p>It is essential to the integrity of grade score marking that the cut scores are based on a holistic judgement across actual papers.</p><p>The cut scores may be written as judgement statements: either as a range of numbers (for example, Merit range 14 to 19) or as a single number (for example, Merit 14).</p><p>In this example:</p><ul>
+<li>any paper&nbsp;with a score of 14 written in the 'total' box would receive a Merit grade</li>
+<li>any paper with a score of 19 written in the 'total' box would receive a Merit grade</li>
+<li>all papers between and including 14 to 19 receive a Merit grade.</li>
+</ul><p>Each set of cut scores relates only to that particular assessment.</p><h4>There are new cut scores each year</h4><p>Each year, we set new grade score ranges using marked papers and the standard being assessed.</p><p>We publish these cut scores at the same time as papers are returned to candidates. This allows candidates to check whether their grade as shown in their online results is correct.</p><p><a href="/ncea/subjects/cut-scores/">Cut scores</a></p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+</div>
+
+            
+        
+    
+        
+        
+            
+                <div class="nzqa__app__blocks__ctablock block__holder  blue-dark-bg " id="e6315">
+    
+    <div class="cta-block container-nzqa">
+        
+        
+            <div class="row d-flex m-0 align-items-center cta-block-without-body-text cta-block-without-body-text-dark">
+    <div class="col-1000-9 p-0">
+        <h3 class="cta__title cta__title-left">Get more information or give us feedback</h3>
+    </div>
+    
+        
+        <div class="col-1000-3 p-0 d-flex justify-content-start justify-content-1000-end">
+            <a href="/about-us/contact-us/"   class="cta__button button--primary-darkmode">
+                Contact us
+            </a>
+        </div>
+        
+    
+</div>
+
+        
+    </div>
+
+
+</div>
+
+            
+        
+    
+
+
+    </article>
+
+    
+</main>
+
+    <div
+        class="container-nzqa page-utilities "
+         data-element="page-utilities"
+         data-props="{&quot;title&quot;:&quot;Grade+score+marking&quot;,&quot;link&quot;:&quot;https:\/\/www2.nzqa.govt.nz\/ncea\/external-assessment\/grade-score-marking\/&quot;,&quot;lastEditedDate&quot;:&quot;13 November 2023&quot;,&quot;hideLastEditedDate&quot;:0,&quot;facebookLink&quot;:&quot;https:\/\/www.facebook.com\/sharer\/sharer.php?u=https:\/\/www2.nzqa.govt.nz\/ncea\/external-assessment\/grade-score-marking\/&quot;,&quot;twitterLink&quot;:&quot;https:\/\/twitter.com\/intent\/tweet?text=Grade score marking&amp;url=https:\/\/www2.nzqa.govt.nz\/ncea\/external-assessment\/grade-score-marking\/&quot;,&quot;linkedinLink&quot;:&quot;https:\/\/www.linkedin.com\/sharing\/share-offsite\/?url=https:\/\/www2.nzqa.govt.nz\/ncea\/external-assessment\/grade-score-marking\/&quot;}"
+    ></div>
+
+
+<footer class="footer">
+    <div class="container-nzqa">
+        <div class="row-nzqa footer__top-row">
+            <div class="col-nzqa-9 footer__col">
+                <div class="col-nzqa-4">
+                    
+                        
+    
+        <div class="footer__heading-wrapper">
+            <h3 class="footer__heading">I want to...</h3>
+        </div>
+    
+    <ul class="footer__links-block">
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/login/" class="footer__link">Log in to the learner portal</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/login/national-student-number-nsn/" class="footer__link">Find my NSN</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/qualifications-and-standards/access-your-results/new-zealand-record-of-achievement/" class="footer__link">Get my Record of Achievement</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/about-us/contact-us/feedback/" class="footer__link">Give us feedback</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+                    
+                </div>
+                <div class="col-nzqa-4">
+                    
+                        
+    
+        <div class="footer__heading-wrapper">
+            <h3 class="footer__heading">Go to</h3>
+        </div>
+    
+    <ul class="footer__links-block">
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/about-us/contact-us/" class="footer__link">Contact us</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/about-us/contact-us/complaint/" class="footer__link">Complaints</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="/about-us/official-information/oia/" class="footer__link">Official Information Act requests</a>
+                    
+                </li>
+            
+        
+            
+                <li class="footer__link-wrapper">
+                    
+                            <a href="https://careers.nzqa.govt.nz" class="footer__link">Careers</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+                    
+                </div>
+                <div class="col-nzqa-4">
+                    
+                        
+    
+    <ul class="footer__links-block">
+        
+    </ul>
+
+                    
+                </div>
+            </div>
+            <div class="col-nzqa-3">
+                
+                    
+    
+    <ul class="footer__socmedia-block">
+        
+            
+                <li class="footer__socmedia-wrapper">
+                    
+                        <a href="https://www.facebook.com/NZQAofficial/" target="_blank" rel="noopener" aria-label="Facebook page" title="Facebook page">
+                            <img src="/_resources/themes/app/dist/icons/facebook.svg?m=1726831251" alt="Facebook icon" />
+                            <span class="sr-only"> (external link)</span>
+                        </a>
+                        
+                </li>
+            
+        
+            
+                <li class="footer__socmedia-wrapper">
+                    
+                        <a href="https://twitter.com/nzqaofficial" target="_blank" rel="noopener" aria-label="Twitter page" title="Twitter page">
+                            <img src="/_resources/themes/app/dist/icons/twitter.svg?m=1726831251" alt="Twitter icon" />
+                            <span class="sr-only"> (external link)</span>
+                        </a>
+                        
+                </li>
+            
+        
+            
+                <li class="footer__socmedia-wrapper">
+                    
+                        <a href="https://www.instagram.com/nzqa.official/" target="_blank" rel="noopener" aria-label="Instagram page" title="Instagram page">
+                            <img src="/_resources/themes/app/dist/icons/instagram.svg?m=1726831251" alt="Instagram icon" />
+                            <span class="sr-only"> (external link)</span>
+                        </a>
+                        
+                </li>
+            
+        
+            
+        
+            
+                <li class="footer__socmedia-wrapper">
+                    
+                        <a href="https://www.linkedin.com/company/new-zealand-qualifications-authority/" target="_blank" rel="noopener" aria-label="LinkedIn page" title="LinkedIn page">
+                            <img src="/_resources/themes/app/dist/icons/linkedin.svg?m=1726831251" alt="LinkedIn icon" />
+                            <span class="sr-only"> (external link)</span>
+                        </a>
+                        
+                </li>
+            
+        
+
+    <li class="footer__socmedia-wrapper">
+        
+
+
+<a href="/ncea/external-assessment/grade-score-marking/#" id="womens-refuge-shield-button">
+    <img src="/_resources/vendor/andrewandante/womens-refuge-shield/img/logos/custom-logo.png?m=1726831251" alt="Women’s Refuge Shielded Site" />
+</a>
+
+    </li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+            
+    <div class="row-nzqa footer__bottom-row">
+        <div class="col-nzqa-8 footer__col">
+            <p class="footer__copyright">&copy; Copyright 2024 NZQA</p>
+            
+                <a href="/about-this-site/sitemap/" class="footer__link" 
+                        title="Sitemap">Sitemap</a>
+            
+                <a href="/about-this-site/" class="footer__link" 
+                        title="About site">About site</a>
+            
+                <a href="/about-us/glossary/" class="footer__link" 
+                        title="Glossary">Glossary</a>
+            
+                <a href="/about-this-site/" class="footer__link" 
+                        title="T&amp;Cs">T&amp;Cs</a>
+            
+                <a href="/about-this-site/disclaimer/" class="footer__link" 
+                        title="Disclaimer">Disclaimer</a>
+            
+                <a href="/about-us/privacy/" class="footer__link" 
+                        title="Privacy">Privacy</a>
+            
+                <a href="/about-this-site/copyright/" class="footer__link" 
+                        title="Copyright">Copyright</a>
+            
+        </div>
+        <div class="col-nzqa-4 footer__col">
+            <a href="https://www.govt.nz" class="footer__logo" title="New Zealand Government" target="_blank">
+                <img src="/_resources/themes/app/dist/images/nz-govt.svg?m=1726831251" alt="New Zealand Government" />
+            </a>
+        </div>
+    </div>
+
+        
+    </div>
+</footer>
+
+        </div>
+        
+        
+            <script type="application/javascript" src="/_resources/vendor/andrewandante/womens-refuge-shield/javascript/embed.js?m=1726831251"></script>
+<script type="application/javascript" src="/_resources/vendor/andrewandante/womens-refuge-shield/javascript/button.js?m=1726831251"></script>
+<script type="application/javascript" src="/_resources/themes/app/dist/app.js?m=1726831251"></script>
+<script defer id="chatwidget_loader" src="https://json-filehost-prod-jsondatahost-y9jr3gg5hyou.s3.amazonaws.com/chatwidget/chatwidget.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

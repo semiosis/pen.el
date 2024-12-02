@@ -1,0 +1,251 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 4299
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Fri, 18 Oct 2024 10:24:30 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"6712375e-2c4c"
+expires: Fri, 15 Nov 2024 23:21:19 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 98B4:12B5CB:750289:771E94:6737D516
+Accept-Ranges: bytes
+Date: Fri, 15 Nov 2024 23:12:10 GMT
+Via: 1.1 varnish
+Age: 6
+X-Served-By: cache-chc950029-CHC
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1731712330.252667,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 313b187f55cfcbb75d0959049a12c0bdab0b5d4a
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisp macros versus Rust macros | Simon Dobson</title>
+<style>
+	@font-face {
+	    font-family: "libretto-icons";
+	    src:url(../../../../assets/fonts/libretto-icons.eot);
+	    src:url(../../../../assets/fonts/libretto-icons.eot#iefix) format("embedded-opentype"),
+	    url(../../../../assets/fonts/libretto-icons.woff) format("woff"),
+	    url(../../../../assets/fonts/libretto-icons.ttf) format("truetype"),
+	    url(../../../../assets/fonts/libretto-icons.svg#libretto-icons) format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+    </style>
+<link rel="icon" href="../../../../images/favicon.png" sizes="16x16">
+<link rel="alternate" type="application/rss+xml" href="../../../../rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Libre+Baskerville|Montserrat|Playfair+Display|Tangerine">
+<link rel="stylesheet" href="../../../../assets/css/libretto_styles.css">
+<link rel="stylesheet" href="../../../../assets/css/baguetteBox.min.css">
+<link rel="stylesheet" href="../../../../assets/css/code.css">
+<link rel="stylesheet" href="../../../../assets/css/nikola_rst.css">
+<link rel="stylesheet" href="../../../../assets/css/nikola_ipython.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header class="nav-bar"><div class="site-branding">
+	    <h1 class="site-title">
+		<a href="https://simondobson.org/" title="Simon Dobson" rel="home">Simon&nbsp;Dobson</a>
+	    </h1>
+	</div>
+	<nav class="site-navigation" role="navigation"><div class="menu-toggle">
+		<span class="mobile-site-title">Simon Dobson</span>
+	    </div>
+	    <ul class="menu">
+<li><a href="../../../../index.html">Home</a></li>
+		    <li><a href="../../../../personal/">About&nbsp;me</a></li>
+		    <li><a href="../../../../research/">Research</a></li>
+		    <li><a href="../../../../development/projects/">Software</a></li>
+		    <li><a href="../../../../writing/">Writing</a></li>
+		    <li><a href="../../../../personal/contact/">Contact</a></li>
+		<li>
+<a href="../../../../rss.xml"><i class="fa fa-rss"></i></a>
+	    </li>
+</ul></nav></header><!-- Page Header --><div class="title-block post-format-icon-pin">
+	<div class="entry-meta">
+	    <span class="posted-on">
+		Posted on <a href="." rel="bookmark">Friday 14 June, 2024</a>
+	    </span>
+	</div>
+	<h1>Lisp macros versus Rust&nbsp;macros</h1>
+    </div>
+
+	<!-- Page Content -->
+    <div class="site-content" role="main">
+	<article class="format-standard libretto-long-form"><div class="entry-content">
+		<div id="outline-container-orgf513c0d" class="outline-2">
+<h2 id="orgf513c0d">Lisp macros <i>versus</i> Rust&nbsp;macros</h2>
+<div class="outline-text-2" id="text-orgf513c0d">
+<p>
+I was talking with one of my colleagues the other day about
+programming languages, and we ended up comparing macros in Rust and&nbsp;Lisp.
+</p>
+
+<p>
+Rust has a couple of <a href="https://doc.rust-lang.org/reference/procedural-macros.html">couple of different kinds</a> of macros:
+<b>declarative</b> macros that pattern-match on arguments to emit code; and
+<b>procedural</b> macros that perform more general code-to-code
+transformations. Lisp has only one kind that operates from code to&nbsp;code.
+</p>
+
+<p>
+Both approaches are <i>far</i> more powerful than the macros in C and C++,
+which are basically just string expanders. Indeed, one definition of
+macroprogramming is that it&#8217;s writing code that returns code, and
+there&#8217;s a reasonable argument that C&#8217;s &#8220;macros&#8221; are programs that
+return <i>strings</i> and therefore aren&#8217;t macros at all. But that&#8217;s just
+bring&nbsp;pedantic.
+</p>
+
+<p>
+The Rust operations seem quite awkward, at least from a Lisp
+perspective. They&#8217;re invoked in a way that&#8217;s syntactically different
+to ordinary code, so it&#8217;s always possible to see in the source code
+where procedural code generation is occurring. Perhaps that&#8217;s not an
+entirely bad thing, as it makes it obvious when compile-time
+computation occurs – although one might also argue that a true
+language extension or <span class="caps">DSL</span> should be so seamless that you don&#8217;t <i>need</i>
+to see&nbsp;it.
+</p>
+
+<p>
+I think a more basic difference is in how Rust needs to handle
+code-type arguments. A macro is a function from code to code, so it
+needs to represent its code arguments in a way that the macros
+(which is also code) can manipulate. Lisp&#8217;s <a href="https://en.wikipedia.org/wiki/Homoiconicity">homoiconicity</a> makes this
+trivial: code is a list, just like non-code, and can ba manipulated
+as such. Rust doesn&#8217;t have this, so code needs to be passed to
+macros as a token stream that&#8217;s been parsed from the program text.
+That&#8217;s a reasonable solution to the problem, but it does mean that
+to write macros you need to understand how Rust is tokenised. You
+also get a token stream, not an abstract syntax tree (<span class="caps">AST</span>), which
+means that manipulating complex code is more difficult: essentially
+you need to re-create as much of the <span class="caps">AST</span> as you need and traverse it
+within the macro body. There&#8217;s a standard library that does this for
+Rust&#8217;s own syntax, which simplifies matters somewhat but still means
+that writing macros exposes the programmer to the underlying
+representations. Hopefully they won&#8217;t change, as that would break a
+lot of&nbsp;macros.
+</p>
+
+<p>
+By contrast, Lisp macros only require an understanding of Lisp
+itself, not of its internals, and can operate on the entire detailed
+structure of the code arguments. It&#8217;s a striking example of the
+power of&nbsp;homoiconicity.
+</p>
+
+<p>
+An approach closer to that of Rust is also available, in Common Lisp
+anyway, in the form of <b>reader macros</b> that modify the Lisp reader to
+allow access to the character stream as the source code is being
+read. I think I&#8217;ve only ever encountered read macros for providing
+new styles of literals, or variants of strings that benefit from
+being treated slightly differently at read-time: they&#8217;re an unusual
+use case, anyway, and Lisp makes the more usual case of macros
+manipulating Lisp code a lot simpler, without exposing the
+programmer to&nbsp;parsing.
+</p>
+
+<p>
+I suspect the main difference between the two languages&#8217; approaches
+is that macros are <b>additional</b> to Rust but <b>inherent</b> to Lisp. None of
+the core of Rust uses macros: they&#8217;re for extensions. By contrast,
+even common operations&nbsp;like <code>defun</code> in Lisp are actually macros that
+expand to the simpler core operations. This perhaps explains the
+Rust designers&#8217; decision to make macros syntactically&nbsp;distinct.
+</p>
+</div>
+</div>
+	    </div>
+
+
+	</article>
+</div>
+
+	<!-- Social sharing section -->
+  <div class="site-content">
+    <div class="social">
+      <ul>
+<li><a onclick="MastodonShare(this);" data-src="Lisp%20macros%20versus%20Rust%20macros%20%23lisp%20%23macroprogramming%20%23programming%20%23rust&amp;url=https://simondobson.org/2024/06/14/lisp-macros-versus-rust-macros/"><span title="Share on Mastodon"><i class="fab fa-mastodon"></i></span></a></li>
+	<li><a href="https://twitter.com/share?text=Lisp%20macros%20versus%20Rust%20macros%20%23lisp%20%23macroprogramming%20%23programming%20%23rust&amp;url=https://simondobson.org/2024/06/14/lisp-macros-versus-rust-macros/" target="_blak"><span title="Share on Twitter"><i class="fab
+	fa-twitter"></i></span></a></li>
+	<li><a href="https://www.reddit.com/submit?url=https://simondobson.org/2024/06/14/lisp-macros-versus-rust-macros/&amp;title=Lisp%20macros%20versus%20Rust%20macros%20%23lisp%20%23macroprogramming%20%23programming%20%23rust" target="_blank"><span title="Share on Reddit"><i class="fab fa-reddit"></i></span></a></li>
+	<li><a href="https://www.linkedin.com/shareArticle?url=https://simondobson.org/2024/06/14/lisp-macros-versus-rust-macros/&amp;source=https://simondobson.org/" target="_blank"><span title="Share on LinkedIn"><i class="fab fa-linkedin"></i></span></a></li>
+	<li><a href="mailto:?subject=Lisp%20macros%20versus%20Rust%20macros&amp;body=https://simondobson.org/2024/06/14/lisp-macros-versus-rust-macros/"><span title="Share by email"><i class="fa fa-envelope"></i></span></a></li>
+      </ul>
+</div>
+  </div>
+
+	<!-- Tag Section -->
+    <div class="site-content navigation-post">
+	<div class="tag-head">Tags</div>
+	<div class="tag-list">
+		<a href="../../../../categories/lisp/">lisp</a>
+		    <span>  </span>
+		<a href="../../../../categories/macroprogramming/">macroprogramming</a>
+		    <span>  </span>
+		<a href="../../../../categories/programming/">programming</a>
+		    <span>  </span>
+		<a href="../../../../categories/rust/">rust</a>
+	</div>
+    </div>
+
+	<!-- Post Navigation links -->
+<nav class="site-content navigation-post" role="navigation"><div class="previous">
+	    <a href="../../10/processing-the-data-offline/" rel="prev">
+		<span class="meta-nav">Older Post</span>Processing MicroMoth recordings offline
+	    </a>
+	</div>
+	<div class="next">
+	    <a href="../../21/c%2B%2B-template-macroprogramming-versus-lisp-macros/" rel="next">
+		<span class="meta-nav">Newer Post</span>C++ template macroprogramming /versus/ Lisp macros
+	    </a>
+	</div>
+</nav><!-- Page Footer --><section class="footer-sidebar clear" role="complementary"><div class="widget-block">
+	    <aside class="widget"><h2 class="widget-title">Simon&nbsp;Dobson</h2>
+		<div class="widget-text">Aut tace aut loquere meliora silentio</div>
+	    </aside>
+</div>
+    </section><!-- Extra JavaScript --><script src="../../../../assets/js/mastodon-share.js"></script><!-- Site Attributions --><footer class="site-footer" role="contentinfo"><div class="site-info">
+	    <p></p>
+	    <p>
+	      Built with free and open-source software.
+	      Powered by <a href="https://getnikola.com/">Nikola</a> using a theme based on
+	      <a href="https://themes.getnikola.com/v7/libretto/">Libretto</a>.
+	    </p>
+	    <p>
+	      All content Copyright © 2010–2024 Simon Dobson and licensed under
+	      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><span class="caps">CC</span>-<span class="caps">BY</span>-<span class="caps">NC</span>-<span class="caps">SA</span>-4.0</a>
+	      unless otherwise&nbsp;noted.
+	    </p>
+	</div>
+	<div class="social">
+	    <ul class="menu"></ul>
+</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,743 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=600
+Content-Length: 16659
+Content-Type: text/html; charset=utf-8
+Etag: "4426135251fbf4c273b3fcad0a3cae48f977c4759235c73a92c8cb6996a20810-gzip"
+Expires: Fri, 01 Nov 2024 19:35:27 UTC
+Last-Modified: Wed, 16 Oct 2024 16:38:21 GMT
+Permissions-Policy: interest-cohort=()
+Vary: Origin
+Date: Fri, 01 Nov 2024 19:25:27 GMT
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Understanding transducers · Andrey Listopadov</title>
+<link rel="stylesheet" href="https://andreyor.st/css/style.css"/>
+<meta property="og:title" content="Understanding transducers" />
+<meta property="og:description" content="Some time ago I ported most of Clojure&rsquo;s core namespace to Fennel and made it into a library called fennel-cljlib. This was my first library for Fennel, so it wasn&rsquo;t really great in terms of how it was implemented. While it was making Fennel more like Clojure syntax-wise, which I like, it wasn&rsquo;t following Clojure&rsquo;s semantics that well." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andreyor.st/posts/2022-08-13-understanding-transducers/" /><meta property="og:image" content="https://andreyor.st/me.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-13T16:03:00+03:00" />
+<meta property="article:modified_time" content="2022-09-18T21:47:40+03:00" />
+
+<body>
+    <header>
+      <div class="header">
+  <h2><a href="https://andreyor.st/">Andrey Listopadov</a></h2>
+  <div class="horizontal-links"><a href="https://andreyor.st/posts">Archive</a><span> </span><a href="https://andreyor.st/tags">Tags</a><span> </span><a href="https://andreyor.st/categories">Categories</a><span> </span><a href="https://andreyor.st/talks">Talks</a><span> </span><a href="https://andreyor.st/notes">Notes</a><span> </span><a href="https://andreyor.st/about">About</a><span> </span><a href="https://andreyor.st/projects">Projects</a><span> </span><a href="https://andreyor.st/feed.xml">RSS</a></div>
+</div>
+</header>
+    <main>
+<div class="post">
+  <div class="title-group">
+    <h1 class="title">Understanding transducers</h1>
+    <div class="sub-title">
+      <div class="date">
+        <time datetime="2022-08-13T16:03:00&#43;0300"
+              class="post-date"
+              title="Last modified at Sun, Sep 18, 21:47, 2022">
+          Sat, Aug 13, 2022
+        </time>
+      </div>
+      <div class="tags">
+        <span class="horizontal-links links">
+          <a href="https://andreyor.st/categories/programming/">@programming</a> 
+          <a href="https://andreyor.st/tags/clojure/">clojure</a>
+          <span title="~5732 words">~26 minutes read</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <article class="content">
+    <p>Some time ago I ported most of Clojure&rsquo;s <code>core</code> namespace to Fennel and made it into a library called <a href="https://github.com/andreyorst/fennel-cljlib" target="_blank">fennel-cljlib</a>.
+This was my first library for Fennel, so it wasn&rsquo;t really great in terms of how it was implemented.
+While it was making Fennel more like Clojure syntax-wise, which I like, it wasn&rsquo;t following Clojure&rsquo;s semantics that well.
+The main thing that was missing is a proper <code>seq</code> abstraction, which Clojure relies on for providing both lazy sequences and generic functions that can work on any data type that implements <code>ISeq</code>.
+Such functions are <code>map</code>, <code>filter</code>, <code>take</code> and so on.</p>
+<p>Since then, I&rsquo;ve made a <a href="https://github.com/andreyorst/itable" target="_blank">few</a> <a href="https://github.com/andreyorst/fennel-async" target="_blank">more</a> <a href="https://github.com/andreyorst/fennel-conditions" target="_blank">libraries</a> for Fennel, which were somewhat more narrowly focused, and one of such libraries was <a href="https://github.com/andreyorst/lazy-seq" target="_blank">lazy-seq</a> - an implementation of Clojure&rsquo;s lazy sequences.
+It doesn&rsquo;t feature chunked sequences, (yet, <em>maybe</em>), but it implements almost all sequence-related functions from Clojure.
+And you can throw pretty much any Lua data structure that implements <code>pairs</code> or <code>ipairs</code> into it, and it will work out how to lazily transform it into a sequence.</p>
+<p>This was one of the missing pieces for the fennel-cljlib, as its implementation of <code>seq</code> simply made a shallow copy of a given object in a linear time, making sure that the result is sequential.
+With the implementation of <code>seq</code> from the lazy-seq library, I could rewrite fennel-cljlib, also making all sequence-related functions lazy.
+And while this will make the library more Clojure-like one piece is still missing from both fennel-cljlib and lazy-seq libraries.</p>
+<p>Transducers.</p>
+<p>I&rsquo;m quite familiar with transducers, well, I <em>use</em> them regularly at work, and I read about their implementation a few years ago.
+However, I&rsquo;ve never implemented a transduceable context, i.e. a function that accepts a transducer, and applies it to elements of a given collection.
+So, as a part of <a href="https://gitlab.com/andreyorst/fennel-cljlib/-/merge_requests/15" target="_blank">the rewrite</a> of the fennel-cljlib library, I needed not only to port transducers themselves, but I also had to implement such functions as <code>into</code>, <code>transduce</code>, and <code>sequence</code>, which are transduceable contexts.</p>
+<p>Thankfully, <code>into</code> and <code>transduce</code> are written in Clojure, and are very straightforward to understand, but the <a href="https://github.com/clojure/clojure/blob/5ffe3833508495ca7c635d47ad7a1c8b820eab76/src/clj/clojure/core.clj#L2664-L2687" target="_blank"><code>sequence</code></a> function is not.
+Here&rsquo;s its source code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span>
+</span></span><span style="display:flex;"><span>  ([<span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>   (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>) <span style="color:#666;font-weight:bold;font-style:italic">coll</span>
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">or </span>(<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>) ())))
+</span></span><span style="display:flex;"><span>  ([<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">or </span>(<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.RT/chunkIteratorSeq</span>
+</span></span><span style="display:flex;"><span>         (<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.TransformerIterator/create</span> <span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.RT/iter</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>)))
+</span></span><span style="display:flex;"><span>       ()))
+</span></span><span style="display:flex;"><span>  ([<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span> &amp; <span style="color:#666;font-weight:bold;font-style:italic">colls</span>]
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">or </span>(<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.RT/chunkIteratorSeq</span>
+</span></span><span style="display:flex;"><span>         (<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.TransformerIterator/createMulti</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">xform</span>
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">map </span>#(<span style="color:#666;font-weight:bold;font-style:italic">clojure.lang.RT/iter</span> <span style="color:#666;font-weight:bold;font-style:italic">%</span>) (<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span> <span style="color:#666;font-weight:bold;font-style:italic">colls</span>))))
+</span></span><span style="display:flex;"><span>       ())))
+</span></span></code></pre></div><p>It is written mostly via Java interop, and I can&rsquo;t use this in my port of the <code>clojure.core</code> namespace to Fennel, because Fennel runs on Lua, and Lua can&rsquo;t really interop with Java.
+So I had to reimplement this function in Fennel, and this is what motivated me to write this post.
+Also, I don&rsquo;t really know Java, so understanding how <code>sequence</code> works was a challenge on its own<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>The interesting thing is, after I&rsquo;ve tried to implement this function several times, I understood that I, actually, don&rsquo;t understand transducers as well as I thought.
+So I had to go back a bit and learn how transducers actually work, and why are they written the way they are.
+It was really fascinating, and after a bit of trial and error, I managed to implement <code>sequence</code> in Clojure first, and then port it to Fennel, using my implementation of lazy sequences.</p>
+<p>I will show the resulting code later in this post, but first, let&rsquo;s understand what transducers are, and how they work.</p>
+<h2 id="transducers">Transducers</h2>
+<p>First, a bit of theory.
+A transducer is a function that describes the process of transformation, without knowing how exactly the thing it transforms is organized.
+It is not the same as generic functions, because transducers are generic in a bit different way.</p>
+<p>For example, we all know how <code>map</code> works in Clojure - you pass it a function and a collection, and it applies the function to each element of the collection:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">map inc </span>[1 2 3]) <span style="color:#888;font-style:italic">;; =&gt; (2 3 4)</span>
+</span></span></code></pre></div><p><code>Map</code> walks through the given collection, applies the given function to each element, and puts results into a sequence.
+Seems nice, and Clojure actually makes <code>map</code> generic by transforming the given collection to a sequence before actually mapping over it.
+However, this approach isn&rsquo;t generic <em>enough</em>, because there are things that can&rsquo;t be transformed into a sequence in an efficient or even meaningful way.
+One such thing is an asynchronous channel, and when Clojure developers were working on the <a href="https://github.com/clojure/core.async" target="_blank"><code>core.async</code></a> library, they&rsquo;ve realized that sequence manipulation functions are usable in the context of a channel, but reimplementing all these functions is a no-go.</p>
+<p>So how did Clojure developers solve this problem?
+By decoupling the transformation process from the collection it transforms.
+Here&rsquo;s a helpful analogy.</p>
+<p>Imagine an airport worker, whose job is to weigh and sort the luggage before it goes into a plane.
+Their basic instructions are:</p>
+<ul>
+<li>Take a bag;</li>
+<li>Measure its weight and put a sticker on the bag;</li>
+<li>If the bag weight is bigger than X, don&rsquo;t put the bag on the plane;</li>
+<li>Hand the bag over.</li>
+</ul>
+<p>Note that this process, while can be applied to a single bag at a time, doesn&rsquo;t at all specify how bags are coming to you and how they leave you.
+One day bags can come to you in containers brought by a vehicle, the other day they can come on a conveyor, it doesn&rsquo;t matter to you - you just <strong>take</strong> a bag, <strong>weigh</strong> it, put a <strong>sticker</strong> and hand it over to another car or another conveyor.
+These details should not matter, because your job remains the same, even if you take bags from different sources every day.</p>
+<p>This is, of course, an analogy, but it applies to programming pretty well.
+Bags are items in the collection you&rsquo;re going to <code>map</code> a function over and then <code>filter</code> them out.
+The function is what you do with the bag, in the case of our fellow airport worker weighing bags and putting stickers.
+In addition, notice that we first weigh the bag, and then filter it out immediately, in oppose to weighing all bags and then filtering them one by one.</p>
+<p>However, in a programming language, the way how items are coming to us completely depends on the collection.
+And how we collect results into another collection depends on the implementation of the <code>map</code> function.
+These are two main things stopping us from describing an arbitrary transformation process, without tying ourselves to a particular collection implementation or a conversion protocol.</p>
+<p>Looking at other languages, which provide different classes for different data structures, most of the time <code>map</code> is a method and not a function.
+This way <code>map</code> can be implemented in terms of the collection you&rsquo;re mapping through, usually producing the same collection as a result, because this method knows how to map a function over this particular collection implementation.</p>
+<p>Methods do not fly in functional languages, so another approach, some languages take is to provide different implementations of <code>map</code> functions via namespaces.
+For example, Elixir has a <code>map</code> function implemented for lists and another implementation for streams:</p>
+<p><a id="code-snippet--elixir-example"></a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elixir" data-lang="elixir"><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Enum versions of map and filter</span>
+</span></span><span style="display:flex;"><span>iex(1)&gt; (0..3
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">Enum</span>.map(<span style="font-weight:bold">fn</span>(x) -&gt; <span style="color:#666;font-weight:bold;font-style:italic">IO</span>.puts(<span style="color:#666;font-style:italic">&#34;map </span><span style="color:#666;font-style:italic">#{</span>x<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>); x + 1 <span style="font-weight:bold">end</span>)
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">Enum</span>.filter(<span style="font-weight:bold">fn</span>(x) -&gt; <span style="color:#666;font-weight:bold;font-style:italic">IO</span>.puts(<span style="color:#666;font-style:italic">&#34;filter </span><span style="color:#666;font-style:italic">#{</span>x<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>); rem(x, 2) != 0 <span style="font-weight:bold">end</span>)
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">List</span>.first)
+</span></span><span style="display:flex;"><span>map 0
+</span></span><span style="display:flex;"><span>map 1
+</span></span><span style="display:flex;"><span>map 2
+</span></span><span style="display:flex;"><span>map 3
+</span></span><span style="display:flex;"><span>filter 1
+</span></span><span style="display:flex;"><span>filter 2
+</span></span><span style="display:flex;"><span>filter 3
+</span></span><span style="display:flex;"><span>filter 4
+</span></span><span style="display:flex;"><span>1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Stream versions of map and filter</span>
+</span></span><span style="display:flex;"><span>iex(2)&gt; (0..3
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">Stream</span>.map(<span style="font-weight:bold">fn</span>(x) -&gt; <span style="color:#666;font-weight:bold;font-style:italic">IO</span>.puts(<span style="color:#666;font-style:italic">&#34;map </span><span style="color:#666;font-style:italic">#{</span>x<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>); x + 1 <span style="font-weight:bold">end</span>)
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">Stream</span>.filter(<span style="font-weight:bold">fn</span>(x) -&gt; <span style="color:#666;font-weight:bold;font-style:italic">IO</span>.puts(<span style="color:#666;font-style:italic">&#34;filter </span><span style="color:#666;font-style:italic">#{</span>x<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>); rem(x, 2) != 0 <span style="font-weight:bold">end</span>)
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">Enum</span>.to_list
+</span></span><span style="display:flex;"><span>         |&gt; <span style="color:#666;font-weight:bold;font-style:italic">List</span>.first)
+</span></span><span style="display:flex;"><span>map 0
+</span></span><span style="display:flex;"><span>filter 1
+</span></span><span style="display:flex;"><span>map 1
+</span></span><span style="display:flex;"><span>filter 2
+</span></span><span style="display:flex;"><span>map 2
+</span></span><span style="display:flex;"><span>filter 3
+</span></span><span style="display:flex;"><span>map 3
+</span></span><span style="display:flex;"><span>filter 4
+</span></span><span style="display:flex;"><span>1
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--elixir-example">Code Snippet 1</a>:</span>
+  Elixir approach to the problem
+</div>
+<p>The difference is quite substantial, as streams apply function composition to each element one by one, (similarly to how our airport worker does) whereas enumerations are fully traversed by <code>map</code> first and only then the result is being passed to <code>filter</code>.
+This distinction is possible thanks to different implementations of <code>map</code>, but be it a method of a specific class, or a namespaced function that&rsquo;s exactly what Clojure developers wanted to avoid.
+So transducers were created.</p>
+<h3 id="understanding-transducers">Understanding transducers</h3>
+<p>To understand transducers, we first need to understand what <code>map</code> essentially does and how we can abstract it away from both the input collection and the result it produces.
+It may seem obvious: <code>map</code> applies a function to <strong>each</strong> element of a <strong>collection</strong> and <strong>puts</strong> the result into a new <strong>collection</strong>.
+I&rsquo;ve marked important things in bold because if we think about these a bit, we&rsquo;ll see that there are some concrete actions that the map function performs, which should be abstracted away.</p>
+<p>First, let&rsquo;s implement <code>map</code> in terms of <code>reduce</code>.
+This function is actually very similar to how <code>mapv</code> is implemented in Clojure, except we&rsquo;ve left out some optimizations:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">mapr</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#666;font-style:italic">&#34;A version of `map` that uses `reduce` to traverse the collection and
+</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">  build the result.&#34;</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold;font-style:italic">reduce </span>(<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">reducer</span> [<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">val</span>] (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">val</span>))) [] <span style="color:#666;font-weight:bold;font-style:italic">coll</span>))
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; ^       ^                        ^            ^        ^  ^</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |       |                        |            |        |  |</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |       |                        |            |        |  `Collection to iterate</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |       |                        |            |        `Collection to put results</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |       |                        |            `Function that produces the result</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |       `A reducing function that`knows how to put elements to result</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; `This is how we get a collection element one by one</span>
+</span></span></code></pre></div><p>Here, <code>reduce</code> takes care of how to traverse the collection, and the <code>reducer</code> function takes care of how to put elements to the result.
+It may seem that we&rsquo;ve decoupled these steps from <code>map</code> but we&rsquo;ve just moved them into another place.
+More than that, if we were to implement <code>filter</code> this way we would have to put the logic, that decides what elements are going to be left out, into an anonymous function:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">filterr</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#666;font-style:italic">&#34;A version of `filter` that uses `reduce` to traverse the collection
+</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">  and build the result.&#34;</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold;font-style:italic">reduce </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>)) [] <span style="color:#666;font-weight:bold;font-style:italic">coll</span>))
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; ^                   ^</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |                   |</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; |                   `Logic that decides whether the value will be left out</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; `generic way to iterate through a collection</span>
+</span></span></code></pre></div><p>Notice, that both <code>mapr</code> and <code>filterr</code> share a lot of structure, the only difference here is how to put the resulting value into the collection.
+This should give us a hint on how we can abstract this away.
+And given that Clojure is functional, we can write functions that accept other functions and return new functions, which will provide a generic way of how to put the result into a collection:</p>
+<p><a id="code-snippet--simplified-transducers"></a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> [<span style="color:#666;font-weight:bold;font-style:italic">f</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">reducer</span>]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">reducer</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">filter-transducer</span> [<span style="color:#666;font-weight:bold;font-style:italic">pred</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">reducer</span>]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">pred</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>        (<span style="color:#666;font-weight:bold;font-style:italic">reducer</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-weight:bold;font-style:italic">result</span>))))
+</span></span></code></pre></div><p>This isn&rsquo;t what a transducer really is like, but a first real step towards them.
+The key point here is that now, we can describe a reducing process without knowing how to put the modified item into the resulting collection (or channel, or socket, or whatever).
+The only thing we need to implement for collection now is <code>reduce</code> or some other function that has the same interface as <code>reduce</code>.
+This is how we can use these prototype transducers:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold">def </span><span style="color:#666;font-weight:bold;font-style:italic">incrementer</span> (<span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>)) <span style="color:#888;font-style:italic">; a function that knows how to increment</span>
+</span></span><span style="display:flex;"><span>#<span style="color:#666;font-style:italic">&#39;user/incrementer</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">incrementer</span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>) <span style="color:#888;font-style:italic">; teaching `incrementer` how to put elements to the result</span>
+</span></span><span style="display:flex;"><span>#<span style="color:#666;font-weight:bold;font-style:italic">function</span>[<span style="color:#666;font-weight:bold;font-style:italic">user/map-transducer/fn--5698/fn--5699</span>]
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>(<span style="color:#666;font-weight:bold;font-style:italic">incrementer</span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>) [] [1 2 3]) <span style="color:#888;font-style:italic">; using this transducer in `reduce`</span>
+</span></span><span style="display:flex;"><span>[2 3 4]
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>((<span style="color:#666;font-weight:bold;font-style:italic">filter-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>) <span style="color:#666;font-weight:bold;font-style:italic">conj</span>) [] [1 2 3]) <span style="color:#888;font-style:italic">; same for `filter-transducer`</span>
+</span></span><span style="display:flex;"><span>[1 3]
+</span></span></code></pre></div><p>So what happens here is that when we call <code>map-transducer</code> and pass it a function <code>inc</code> it returns a function, that accepts the <code>reducer</code> also known as the reducing function of just <code>rf</code> for short.
+We then call this function, passing it the reducing function <code>conj</code> and get another function, that accepts the results so far, and the element to process.
+This function then calls <code>inc</code>, which we&rsquo;ve supplied in the first step, on the element, and uses <code>conj</code> to put the resulting value to <code>result</code>.
+In other words, by passing <code>inc</code> and <code>conj</code> to the transducer we&rsquo;ve basically constructed <code>(fn [result value] (conj res (inc value)))</code> function, that is then used by <code>reduce</code>.
+Here&rsquo;s a demonstration:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>((<span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>) <span style="color:#666;font-weight:bold;font-style:italic">conj</span>) [] [1 2 3])
+</span></span><span style="display:flex;"><span>[2 3 4]
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>] (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))) [] [1 2 3])
+</span></span><span style="display:flex;"><span>[2 3 4]
+</span></span></code></pre></div><p>And that&rsquo;s basically what transducers are all about!
+They&rsquo;re just a composition of functions, that produces the final transformation function, that acts as a single step over the given collection.
+And the amazing part of such design is that transducers can be composed with other transducers:</p>
+<p><a id="code-snippet--composition-expanded"></a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>((<span style="font-weight:bold;font-style:italic">comp </span>(<span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>                     (<span style="color:#666;font-weight:bold;font-style:italic">filter-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>))
+</span></span><span style="display:flex;"><span>               <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span><span style="display:flex;"><span>              [] [1 2 3 4 5 6])
+</span></span><span style="display:flex;"><span>[3 5 7]
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]       <span style="color:#888;font-style:italic">; above is essentially the same as this</span>
+</span></span><span style="display:flex;"><span>                ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]    <span style="color:#888;font-style:italic">; function composition</span>
+</span></span><span style="display:flex;"><span>                   (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>                     (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>                     <span style="color:#666;font-weight:bold;font-style:italic">result</span>))
+</span></span><span style="display:flex;"><span>                 <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>)))
+</span></span><span style="display:flex;"><span>              [] [1 2 3 4 5 6])
+</span></span><span style="display:flex;"><span>[3 5 7]
+</span></span></code></pre></div><p>It may be a little hard to process, but don&rsquo;t worry, I will go into details after we complete the implementation of transducers, as we&rsquo;re not yet finished.</p>
+<h3 id="completing-transducers">Completing transducers</h3>
+<p>Most transducers don&rsquo;t have any intermediate state, but <em>some</em> do.
+For example, the <code>partition-all</code> function takes a collection and returns a list of partitions of elements from this collection.
+The transducer, which is returned by this function, needs to store elements inside an array, and only after the current partition is filled it will append it to the result.
+Seems logical, however, if the number of elements can&rsquo;t be equally partitioned, some will be left over:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 3 (<span style="font-weight:bold;font-style:italic">range </span>8)) <span style="color:#888;font-style:italic">; a regular partition-all call</span>
+</span></span><span style="display:flex;"><span>((0 1 2) (3 4 5) (6 7))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">partition-all-transducer</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Our naive implementation of `partition-all` as a transducer.&#34;</span>
+</span></span><span style="display:flex;"><span>        [<span style="color:#666;font-weight:bold;font-style:italic">n</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span>]
+</span></span><span style="display:flex;"><span>          (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">p</span> (<span style="color:#666;font-weight:bold;font-style:italic">volatile!</span> [])]
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>              (<span style="color:#666;font-weight:bold;font-style:italic">vswap!</span> <span style="color:#666;font-weight:bold;font-style:italic">p</span> <span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>)     <span style="color:#888;font-style:italic">; building the partition</span>
+</span></span><span style="display:flex;"><span>              (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">= </span>(<span style="font-weight:bold;font-style:italic">count </span>@<span style="color:#666;font-weight:bold;font-style:italic">p</span>) <span style="color:#666;font-weight:bold;font-style:italic">n</span>)
+</span></span><span style="display:flex;"><span>                (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">p*</span> @<span style="color:#666;font-weight:bold;font-style:italic">p</span>]
+</span></span><span style="display:flex;"><span>                  (<span style="color:#666;font-weight:bold;font-style:italic">vreset!</span> <span style="color:#666;font-weight:bold;font-style:italic">p</span> [])        <span style="color:#888;font-style:italic">; clearing the partition storage</span>
+</span></span><span style="display:flex;"><span>                  (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">p*</span>)) <span style="color:#888;font-style:italic">; adding the partition to the result</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#888;font-style:italic">; returning result as is, if the partition is not yet complete</span>
+</span></span><span style="display:flex;"><span>                )))))
+</span></span><span style="display:flex;"><span>#<span style="color:#666;font-style:italic">&#39;user/partition-all-transducer</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">reduce </span>((<span style="color:#666;font-weight:bold;font-style:italic">partition-all-transducer</span> 3) <span style="color:#666;font-weight:bold;font-style:italic">conj</span>) [] (<span style="font-weight:bold;font-style:italic">range </span>8))
+</span></span><span style="display:flex;"><span>[[0 1 2] [3 4 5]]
+</span></span></code></pre></div><p>We can see that in the case of our implementation, only complete partitions were added to the result, yet there should be an additional incomplete partition, as shown by the direct <code>partition-all</code> call.
+This is because our transducer is missing a so-called <strong>completion</strong> step:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">partition-all-transducer</span> [<span style="color:#666;font-weight:bold;font-style:italic">n</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span>]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">p</span> (<span style="color:#666;font-weight:bold;font-style:italic">volatile!</span> [])]
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">fn</span>
+</span></span><span style="display:flex;"><span>        ([<span style="color:#666;font-weight:bold;font-style:italic">result</span>]                       <span style="color:#888;font-style:italic">; completion arity</span>
+</span></span><span style="display:flex;"><span>         (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">pos? </span>(<span style="font-weight:bold;font-style:italic">count </span>@<span style="color:#666;font-weight:bold;font-style:italic">p</span>))
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> @<span style="color:#666;font-weight:bold;font-style:italic">p</span>)
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))
+</span></span><span style="display:flex;"><span>        ([<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]                 <span style="color:#888;font-style:italic">; reduction arity</span>
+</span></span><span style="display:flex;"><span>         (<span style="color:#666;font-weight:bold;font-style:italic">vswap!</span> <span style="color:#666;font-weight:bold;font-style:italic">p</span> <span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>         (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">= </span>(<span style="font-weight:bold;font-style:italic">count </span>@<span style="color:#666;font-weight:bold;font-style:italic">p</span>) <span style="color:#666;font-weight:bold;font-style:italic">n</span>)
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">p*</span> @<span style="color:#666;font-weight:bold;font-style:italic">p</span>]
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">vreset!</span> <span style="color:#666;font-weight:bold;font-style:italic">p</span> [])
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">p*</span>))
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">result</span>))))))
+</span></span></code></pre></div><p>Here I&rsquo;ve added another arity, that must be called after the reduction process is complete.
+This arity checks if the array we&rsquo;ve used to store the incomplete partition is not empty.
+If it&rsquo;s not, it means that there are some leftovers, that we need to add to the result.
+So it calls <code>reducing-function</code> with this array, otherwise it will call <code>reducing-function</code> with <code>result</code> only, propagating completion step down the line.
+Invoking this arity after <code>reduce</code> completed, we can see that all partitions are present:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> ((<span style="color:#666;font-weight:bold;font-style:italic">partition-all-transducer</span> 3) <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">f</span> [] (<span style="font-weight:bold;font-style:italic">range </span>8))]
+</span></span><span style="display:flex;"><span>        (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>)) <span style="color:#888;font-style:italic">;; complete step</span>
+</span></span><span style="display:flex;"><span>[[0 1 2] [3 4 5] [6 7]]
+</span></span></code></pre></div><p>Our <code>reduce</code> example has become way too verbose, and there&rsquo;s also a potential for error if our transducer leaked from this scope and someone else used it after it was completed.
+Notice that I&rsquo;ve forgotten to clear the volatile <code>p</code> in the completion step, and if someone else calls this particular function again, these leftover elements will be added to the result again.
+(Try to achieve that.)</p>
+<p>Therefore, Clojure abstracts the process of finalizing a transducer into a function, conventionally called <code>transduce</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">transduce</span>
+</span></span><span style="display:flex;"><span>  ([<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>   (<span style="color:#666;font-weight:bold;font-style:italic">transduce</span> <span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span>) <span style="color:#666;font-weight:bold;font-style:italic">coll</span>))
+</span></span><span style="display:flex;"><span>  ([<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">init</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>   (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">f</span>)
+</span></span><span style="display:flex;"><span>         <span style="color:#666;font-weight:bold;font-style:italic">ret</span> (<span style="font-weight:bold;font-style:italic">reduce </span><span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">init</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">ret</span>))))
+</span></span></code></pre></div><p>There&rsquo;s one additional arity that can be added to our transducer implementation, which is used for initialization, done by calling the reducing function without arguments.
+This arity takes zero arguments, and it is optional, as not all reducing functions can come up with a meaningful initialization process, but it&rsquo;s better to supply it than not.
+So a complete implementation of the <code>map-transducer</code> function is:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> [<span style="color:#666;font-weight:bold;font-style:italic">f</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span>]
+</span></span><span style="display:flex;"><span>    (<span style="color:#666;font-weight:bold;font-style:italic">fn</span>
+</span></span><span style="display:flex;"><span>      ([]                               <span style="color:#888;font-style:italic">; init</span>
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span>))
+</span></span><span style="display:flex;"><span>      ([<span style="color:#666;font-weight:bold;font-style:italic">result</span>]                         <span style="color:#888;font-style:italic">; complete</span>
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span>))
+</span></span><span style="display:flex;"><span>      ([<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">input</span>]                   <span style="color:#888;font-style:italic">; step</span>
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">input</span>)))
+</span></span><span style="display:flex;"><span>      ([<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">input</span> &amp; <span style="color:#666;font-weight:bold;font-style:italic">inputs</span>]          <span style="color:#888;font-style:italic">; step with multiple inputs</span>
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">reducing-function</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">apply </span><span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">input</span> <span style="color:#666;font-weight:bold;font-style:italic">inputs</span>))))))
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 2:</span>
+  A complete implementation of a mapping transducer
+</div>
+<p>And that&rsquo;s it!
+This is a complete implementation of a transducer.
+Clojure provides this as an additional arity of <code>map</code> where you only supply a function, without the collection, thus we don&rsquo;t even need a separate function for this, it was merely for demonstration purposes.</p>
+<p>If you look back at the <a href="#code-snippet--elixir-example">Elixir example</a>, you can see that when <code>Stream</code> implementations of <code>map</code> and <code>filter</code> are used, each function is applied in quick succession, opposed to <code>Enum</code> version, where <code>map</code> is applied first, and then the result is <code>filter</code>&lsquo;ed as a whole.
+With transducers, we just implemented, or with ones available to us in Clojure we can do exactly the same:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>4)
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;map&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">filter </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;filter&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">first</span>)
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; =&gt; 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">-&gt;&gt;</span> (<span style="font-weight:bold;font-style:italic">range </span>4)
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">transduce</span>
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;map&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>                  (<span style="font-weight:bold;font-style:italic">filter </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;filter&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))))
+</span></span><span style="display:flex;"><span>            <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">first</span>)
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; map 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; filter 4</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">;; =&gt; 1</span>
+</span></span></code></pre></div><p>Now, I should mention that it&rsquo;s a bit stretched example.
+The lazy composition of sequences in the first snippet <em>should</em> behave similarly to the second because when we&rsquo;re mapping a function in a lazy way we don&rsquo;t consume the whole sequence, we only produce a new one, that knows how to construct itself based on the previous one.
+And if we then filter this mapped sequence, we again construct a new sequence, that knows how to build itself lazily.
+So, in an ideal world, the first example should also give us <code>map,filter,map,filter</code> kind of composition, but unfortunately, it is somewhat slow, so Clojure uses chunking, and lazy sequences can compute up to 32 elements upfront.
+This isn&rsquo;t the case for Elixir example, <code>Enum.map</code> <a href="https://github.com/elixir-lang/elixir/blob/4f5e9f467da4abb86fa20a77979cb5bd96f3572f/lib/elixir/lib/enum.ex#L1655-L1663" target="_blank">is eager</a> (the <a href="https://github.com/erlang/otp/blob/acc936656e2cbe92185c934207cc9e85707705c9/lib/stdlib/src/lists.erl#L1313-L1322" target="_blank">Erlang module</a> is also eager), and will produce fully realized sequences.
+Streams in Elixir are lazy, and perhaps their composition is what we would have for lazy sequences in Clojure if there was no chunking, but in our case transducers show the difference in composition a bit clearer.</p>
+<p>Now let&rsquo;s really understand how transducers work.</p>
+<h3 id="understanding-the-inverse-order-in-comp-and-how-transducers-are-composed">Understanding the <em>inverse</em> order in <code>comp</code> and how transducers are composed</h3>
+<p>The <code>transduce</code> call may have seemed a bit <i>comp</i>licated because of <code>comp</code>, but here&rsquo;s a nice trick I&rsquo;ve found.
+Simply remember, that the order of transducers in <code>comp</code> is exactly the same as the order of calls in the <code>-&gt;&gt;</code> macro.
+However, it may seem counter-intuitive, because usually functions in <code>comp</code> are applied in the <em>reverse</em> order, e.g.:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold;font-style:italic">comp </span><span style="color:#666;font-weight:bold;font-style:italic">a</span>  <span style="color:#666;font-weight:bold;font-style:italic">b</span>  <span style="color:#666;font-weight:bold;font-style:italic">c</span>  <span style="color:#666;font-weight:bold;font-style:italic">d</span>) <span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                                        <span style="color:#888;font-style:italic">; expressions are aligned for clarity</span>
+</span></span><span style="display:flex;"><span>      (<span style="color:#666;font-weight:bold;font-style:italic">a</span> (<span style="color:#666;font-weight:bold;font-style:italic">b</span> (<span style="color:#666;font-weight:bold;font-style:italic">c</span> (<span style="color:#666;font-weight:bold;font-style:italic">d</span>  <span style="color:#666;font-weight:bold;font-style:italic">x</span>))))
+</span></span></code></pre></div><p>In other words, even though functions are provided in order <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code>, the call order will be <code>d</code>, <code>c</code>, <code>b</code>, <code>a</code>.
+And in the case of transducers the composition works the same way, it&rsquo;s just we have one extra step after we&rsquo;ve passed the reducing function.</p>
+<p>As I&rsquo;ve <a href="#code-snippet--composition-expanded">demonstrated</a> in this example, the composition basically is engineered in such a way that it kinda inverses its order twice.
+The first inversion happens after we compose functions, and the second inversion happens when we pass the reducing function.
+Let&rsquo;s use the substitution model, sometimes referred to as <a href="https://en.wikipedia.org/wiki/Evaluation_strategy#Normal_order" target="_blank">normal order evaluation</a> to see why this happens.</p>
+<p>Substitution here basically means that before we do any reduction, we expand all forms until they only contain primitives.
+This is done by substituting names with expressions they refer to.
+For example, given these three functions:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">add</span> [<span style="color:#666;font-weight:bold;font-style:italic">a</span> <span style="color:#666;font-weight:bold;font-style:italic">b</span>] (<span style="font-weight:bold;font-style:italic">+ </span><span style="color:#666;font-weight:bold;font-style:italic">a</span> <span style="color:#666;font-weight:bold;font-style:italic">b</span>))
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">square</span> [<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">* </span><span style="color:#666;font-weight:bold;font-style:italic">x</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))
+</span></span><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sum-squares</span> [<span style="color:#666;font-weight:bold;font-style:italic">a</span> <span style="color:#666;font-weight:bold;font-style:italic">b</span>] (<span style="font-weight:bold;font-style:italic">+ </span>(<span style="color:#666;font-weight:bold;font-style:italic">square</span> <span style="color:#666;font-weight:bold;font-style:italic">a</span>) (<span style="color:#666;font-weight:bold;font-style:italic">square</span> <span style="color:#666;font-weight:bold;font-style:italic">b</span>)))
+</span></span></code></pre></div><p>We can walk through the <code>(sum-squares (add 1 1) (add 1 2))</code> expression, and see how it will be evaluated in normal order, and how it differs from applicative order:</p>
+<table>
+<thead>
+<tr>
+<th>Normal order</th>
+<th>Applicative order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(sum-squares (add 1 1) (add 1 2))</code></td>
+<td><code>(sum-squares (add 1 1) (add 1 2))</code></td>
+</tr>
+<tr>
+<td><code>(sum-squares (+ 1 1) (+ 1 2))</code></td>
+<td><code>(sum-squares (+ 1 1) (+ 1 2))</code></td>
+</tr>
+<tr>
+<td><code>(+ (square (+ 1 1)) (square (+ 1 2)))</code></td>
+<td><code>(sum-squares 2 3)</code></td>
+</tr>
+<tr>
+<td><code>(+ (* (+ 1 1) (+ 1 1)) (* (+ 1 2) (+ 1 2)))</code></td>
+<td><code>(+ (square 2) (square 3))</code></td>
+</tr>
+<tr>
+<td><code>(+ (* 2 2) (* 3 3))</code></td>
+<td><code>(+ (* 2 2) (* 3 3))</code></td>
+</tr>
+<tr>
+<td><code>(+ 4 9)</code></td>
+<td><code>(+ 4 9)</code></td>
+</tr>
+<tr>
+<td><code>13</code></td>
+<td><code>13</code></td>
+</tr>
+</tbody>
+</table>
+<p>Notice, that in normal order <code>(+ 1 1)</code> and <code>(+ 1 2)</code> are executed twice, because all substituting happens before any reduction.
+In applicative order, reduction happens before substituting, so every expression is computed only once.
+Applicative order is more in line with real evaluation rules, but it&rsquo;s harder to see what&rsquo;s happening when we compose things, so I&rsquo;ll use the normal order to show how transducers are composed.</p>
+<p>With this in mind, let&rsquo;s try to walk through the following expression:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold;font-style:italic">comp </span>(<span style="color:#666;font-weight:bold;font-style:italic">map-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">filter-transducer</span> <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>))
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span></code></pre></div><p>First, we need to substitute <code>map-transducer</code> and <code>filter-transducer</code> with their (<a href="#code-snippet--simplified-transducers">simplified</a>) implementations:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold;font-style:italic">comp </span>((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span>]
+</span></span><span style="display:flex;"><span>          (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>              (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>))))) <span style="color:#666;font-weight:bold;font-style:italic">inc</span>)
+</span></span><span style="display:flex;"><span>       ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span>]
+</span></span><span style="display:flex;"><span>          (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>            (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>              (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>                (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))) <span style="color:#666;font-weight:bold;font-style:italic">odd?</span>))
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span></code></pre></div><p>Next, let&rsquo;s substitute <code>f</code> with <code>inc</code> and <code>odd?</code> and get rid of function calls, substituting them with anonymous functions that accept <code>rf</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>         (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))))
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>         (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>             <span style="color:#666;font-weight:bold;font-style:italic">result</span>))))
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span></code></pre></div><p>Now, knowing that composition of functions <code>f</code> and <code>g</code> is <code>(fn [x] (f (g x)))</code> we can substitute <code>comp</code> with this expression, and then substitute <code>f</code> and <code>g</code> in this expression with our functions from the previous step:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>]
+</span></span><span style="display:flex;"><span>   ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>        (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))))
+</span></span><span style="display:flex;"><span>    ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>         (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span> <span style="color:#666;font-weight:bold;font-style:italic">conj</span>)
+</span></span></code></pre></div><p>Note that according to composition rules, <code>odd?</code> should be executed first, and <code>inc</code> would follow it, but we&rsquo;re not done composing yet.
+Let&rsquo;s substitute <code>x</code> for <code>conj</code> and remove the function call:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>   (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))))
+</span></span><span style="display:flex;"><span> ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>      (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>        (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))
+</span></span><span style="display:flex;"><span>  <span style="color:#666;font-weight:bold;font-style:italic">conj</span>))
+</span></span></code></pre></div><p>We can now substitute <code>rf</code> for <code>conj</code> in the innermost function call, and remove the innermost function that accepts <code>rf</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">rf</span>]
+</span></span><span style="display:flex;"><span>   (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>     (<span style="color:#666;font-weight:bold;font-style:italic">rf</span> <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))))
+</span></span><span style="display:flex;"><span> (<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>   (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#666;font-weight:bold;font-style:italic">result</span>)))
+</span></span></code></pre></div><p>Finally, we can substitute outer <code>rf</code> with the entire inner function body, and remove another call:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>  ((<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>     (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>)
+</span></span><span style="display:flex;"><span>       <span style="color:#666;font-weight:bold;font-style:italic">result</span>))
+</span></span><span style="display:flex;"><span>   <span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>)))
+</span></span></code></pre></div><p>As the last step, we&rsquo;re substituting the inner function&rsquo;s <code>value</code> to <code>(inc value)</code> and <code>result</code> to <code>result</code> to eventually get:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">result</span> <span style="color:#666;font-weight:bold;font-style:italic">value</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">if </span>(<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold;font-style:italic">conj </span><span style="color:#666;font-weight:bold;font-style:italic">result</span> (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">value</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#666;font-weight:bold;font-style:italic">result</span>))
+</span></span></code></pre></div><p>The final function that will be executed by <code>reduce</code>, which is just an ordinary two-argument function!
+And as you can see <code>inc</code> happens before <code>odd?</code>.</p>
+<p>So yes, the order in <code>comp</code> may seem inverse, as <code>inc</code> and <code>odd</code> appear in a logical order, but thanks to how the whole composition process evolves, this logical order can be preserved in the resulting function.
+I hope that with this substitution model you can now understand the whole composition process of transducers, which is not a trivial process by any means.
+But I&rsquo;m actually amazed by how this simple idea achieves such a complete abstraction that can be used in all kinds of transformation contexts.</p>
+<p>Speaking of transduceable contexts, let&rsquo;s implement one!</p>
+<h2 id="implementing-sequence-transduceable-context">Implementing <code>sequence</code> transduceable context</h2>
+<p>Now we&rsquo;re ready to implement <code>sequence</code> in Clojure, without direct Java interop.
+First, let&rsquo;s remember what <code>reduce</code> does:</p>
+<ul>
+<li>Accepts a function, initial value, and a collection;</li>
+<li>Gets an element of a collection and passes the initial value and the element to the reducing function;</li>
+<li>The reducing function returns the current result;</li>
+<li>The result is then passed to the reducing function alongside the next element from the collection;</li>
+<li>Once the collection is exhausted, the result is returned.</li>
+</ul>
+<p>Thus, <code>reduce</code> can be written as an ordinary loop.
+However, <code>sequence</code> is lazy, therefore we can&rsquo;t just loop through the collection, but thankfully, lazy sequences can be recursive.
+And, there&rsquo;s another problem, we must append each element to the sequence we&rsquo;re producing, but we also need to check if we&rsquo;ve actually finished, or if we need to skip the element because it is filtered out.
+And we need to call the completion step somewhere.</p>
+<p>Though, if you think about it, we don&rsquo;t need for our transducer to actually append elements to a collection, it can merely do the transformation, and since we know what kind of collection we&rsquo;re building, we can build it <em>later</em>.
+With this approach, we can check the result of a transducer on each step and act accordingly.</p>
+<p>First, let&rsquo;s finalize the transducer with a reducing function:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))]
+</span></span><span style="display:flex;"><span>    <span style="color:#888;font-style:italic">;; lazy loop?</span>
+</span></span><span style="display:flex;"><span>    ))
+</span></span></code></pre></div><p>It may seem that we&rsquo;re using <code>cons</code> here because we&rsquo;re building a sequence, but it&rsquo;s not.
+We could actually use anything, like <code>conj</code> or even a function that returns something that we can later distinguish from other values.
+In <code>cons</code> call, we have to reverse arguments though, because <code>cons</code> adds the second argument to a list, provided as a first argument.
+And <code>completing</code> simply adds a completion step that just returns the value it&rsquo;s been given, in other words, we could write it as <code>(fn ([a] a) ([a b] (cons b a)))</code>.</p>
+<p>Now let&rsquo;s figure out how to loop through the collection.
+We can start with an ordinary loop and then convert it to recursion, adding laziness as the last step.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="font-weight:bold">loop </span>[<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)
+</span></span><span style="display:flex;"><span>                   <span style="color:#666;font-weight:bold;font-style:italic">res</span> ()]
+</span></span><span style="display:flex;"><span>              (<span style="font-weight:bold">if </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>
+</span></span><span style="display:flex;"><span>                (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                  (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                    (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))
+</span></span><span style="display:flex;"><span>                    (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>)))
+</span></span><span style="display:flex;"><span>                <span style="color:#666;font-weight:bold;font-style:italic">res</span>))]
+</span></span><span style="display:flex;"><span>    <span style="color:#666;font-weight:bold;font-style:italic">res</span>))
+</span></span></code></pre></div><p>Let&rsquo;s try it:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) [1 2 3])
+</span></span><span style="display:flex;"><span>(2 3 4)
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) [1 2 3 4 5])
+</span></span><span style="display:flex;"><span>([1 2] [3 4])
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/sequence</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) [1 2 3 4 5])
+</span></span><span style="display:flex;"><span>([1 2] [3 4] [5])
+</span></span></code></pre></div><p>Seems to work, but we&rsquo;re missing the completion step (hence no incomplete partition in the result), so let&rsquo;s add it:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))
+</span></span><span style="display:flex;"><span>              <span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="font-weight:bold">loop </span>[<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)
+</span></span><span style="display:flex;"><span>                         <span style="color:#666;font-weight:bold;font-style:italic">res</span> ()]
+</span></span><span style="display:flex;"><span>                    (<span style="font-weight:bold">if </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>
+</span></span><span style="display:flex;"><span>                      (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                        (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                          (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))
+</span></span><span style="display:flex;"><span>                          (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>)))
+</span></span><span style="display:flex;"><span>                      (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>)))]        <span style="color:#888;font-style:italic">; complete</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#666;font-weight:bold;font-style:italic">res</span>))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) [1 2 3 4 5])
+</span></span><span style="display:flex;"><span>([5] [1 2] [3 4])
+</span></span></code></pre></div><p>Oops, remember, that we&rsquo;re using <code>cons</code> and we can&rsquo;t really call <code>f</code> with <code>res</code> as a completion step, because our reducing function doesn&rsquo;t know how to build the whole collection, only how to transform a single element.
+Instead, we have to call it with <code>nil</code> as before, and <code>concat</code> it with the result:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))
+</span></span><span style="display:flex;"><span>              <span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="font-weight:bold">loop </span>[<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)
+</span></span><span style="display:flex;"><span>                         <span style="color:#666;font-weight:bold;font-style:italic">res</span> ()]
+</span></span><span style="display:flex;"><span>                    (<span style="font-weight:bold">if </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>
+</span></span><span style="display:flex;"><span>                      (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                        (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                          (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))
+</span></span><span style="display:flex;"><span>                          (<span style="color:#666;font-weight:bold;font-style:italic">recur</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>)))
+</span></span><span style="display:flex;"><span>                      (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>))))] <span style="color:#888;font-style:italic">; proper completion</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#666;font-weight:bold;font-style:italic">res</span>))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) [1 2 3 4 5])
+</span></span><span style="display:flex;"><span>([1 2] [3 4] [5])
+</span></span></code></pre></div><p>Now let&rsquo;s make it recursive, by replacing <code>loop</code> with an anonymous function, and <code>recur</code> with actual recursion:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))
+</span></span><span style="display:flex;"><span>              <span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">step</span> [<span style="color:#666;font-weight:bold;font-style:italic">coll</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>]
+</span></span><span style="display:flex;"><span>                     (<span style="color:#666;font-weight:bold;font-style:italic">if-some</span> [<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>                       (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                         (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                           (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))
+</span></span><span style="display:flex;"><span>                           (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">next </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>)))
+</span></span><span style="display:flex;"><span>                       (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>))))]
+</span></span><span style="display:flex;"><span>          (<span style="color:#666;font-weight:bold;font-style:italic">step</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span> ())))
+</span></span><span style="display:flex;"><span>#<span style="color:#666;font-style:italic">&#39;user/sequence</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) [1 2 3 4 5])
+</span></span><span style="display:flex;"><span>([1 2] [3 4] [5])
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">dorun </span>(<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">range </span>100000)))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">Execution</span> <span style="color:#666;font-weight:bold;font-style:italic">error</span> (<span style="color:#666;font-weight:bold;font-style:italic">StackOverflowError</span>) <span style="color:#666;font-weight:bold;font-style:italic">at</span> <span style="color:#666;font-weight:bold;font-style:italic">user/sequence$step</span> (<span style="color:#666;font-weight:bold;font-style:italic">REPL</span><span style="color:#666;font-style:italic">:25</span>)<span style="color:#666;font-weight:bold;font-style:italic">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">null</span>
+</span></span></code></pre></div><p>It still seems to work, but overflows with enough elements.
+Luckily, we can use <code>lazy-seq</code> to eliminate this problem, and actually make our implementation lazy:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))
+</span></span><span style="display:flex;"><span>              <span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">step</span> [<span style="color:#666;font-weight:bold;font-style:italic">coll</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>]
+</span></span><span style="display:flex;"><span>                     (<span style="color:#666;font-weight:bold;font-style:italic">if-some</span> [<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>                       (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                         (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)
+</span></span><span style="display:flex;"><span>                           (<span style="color:#666;font-weight:bold;font-style:italic">lazy-seq</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>                           (<span style="color:#666;font-weight:bold;font-style:italic">lazy-seq</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>) <span style="color:#666;font-weight:bold;font-style:italic">res</span>))))
+</span></span><span style="display:flex;"><span>                       (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>))))]
+</span></span><span style="display:flex;"><span>          (<span style="color:#666;font-weight:bold;font-style:italic">step</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span> ())))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">dorun </span>(<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">range </span>100000)))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">Execution</span> <span style="color:#666;font-weight:bold;font-style:italic">error</span> (<span style="color:#666;font-weight:bold;font-style:italic">StackOverflowError</span>) <span style="color:#666;font-weight:bold;font-style:italic">at</span> <span style="color:#666;font-weight:bold;font-style:italic">user/sequence$step</span> (<span style="color:#666;font-weight:bold;font-style:italic">REPL</span><span style="color:#666;font-style:italic">:1</span>)<span style="color:#666;font-weight:bold;font-style:italic">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">null</span>
+</span></span></code></pre></div><p>And it still throws the <code>StackOverflowError</code>.
+Why?</p>
+<p>Well, because we&rsquo;re not really lazy yet.
+Instead of passing the result to the next iteration of <code>step</code>, as we did in <code>loop</code> we should use the result of <code>step</code> and concatenate with it.
+Let&rsquo;s reorganize our function:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))]
+</span></span><span style="display:flex;"><span>          ((<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">step</span> [<span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">if-some</span> [<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>               (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold">if </span>(<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">res</span>)
+</span></span><span style="display:flex;"><span>                   (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">lazy-seq</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>                   (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>               (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>)))
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">coll</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">dorun </span>(<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">map </span><span style="color:#666;font-weight:bold;font-style:italic">inc</span>) (<span style="font-weight:bold;font-style:italic">range </span>100000)))
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">nil</span>
+</span></span></code></pre></div><p>Now it doesn&rsquo;t overflow.
+However, it is not yet ready to be used, because <code>reduce</code>, as you may know, can be terminated with <code>reduced</code>, and some transducers, like <code>take</code> leverage that to terminate the process.
+So we need to check for <code>reduced?</code> in our implementation.
+Not only that, but we have to call the completion step on the value, returned by dereferencing the <code>reduced</code> object, otherwise it will not be added to the resulting sequence properly.:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>        (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))]
+</span></span><span style="display:flex;"><span>          ((<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">step</span> [<span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">if-some</span> [<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>               (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">cond </span>(<span style="color:#666;font-weight:bold;font-style:italic">reduced?</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>) (<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="font-weight:bold;font-style:italic">deref </span><span style="color:#666;font-weight:bold;font-style:italic">res</span>)) <span style="color:#888;font-style:italic">; checking for early termination</span>
+</span></span><span style="display:flex;"><span>                       (<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">res</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">lazy-seq</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>                       <span style="color:#666;font-style:italic">:else</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>               (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>)))
+</span></span><span style="display:flex;"><span>           <span style="color:#666;font-weight:bold;font-style:italic">coll</span>)))
+</span></span><span style="display:flex;"><span>#<span style="color:#666;font-style:italic">&#39;user/sequence</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2) (<span style="font-weight:bold;font-style:italic">take </span>5)) (<span style="color:#666;font-weight:bold;font-style:italic">range</span>))
+</span></span><span style="display:flex;"><span>([0 1] [2 3] [4 5] [6 7] [8 9])
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span> (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">take </span>5) (<span style="color:#666;font-weight:bold;font-style:italic">partition-all</span> 2)) (<span style="color:#666;font-weight:bold;font-style:italic">range</span>))
+</span></span><span style="display:flex;"><span>([0 1] [2 3] [4])
+</span></span></code></pre></div><p>And we&rsquo;re done!
+Well, almost, <code>sequence</code> should coerce the result to an empty sequence, and our current version will return <code>nil</code> if the transducer never returned anything.
+It&rsquo;s easy enough to fix:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="font-weight:bold;font-style:italic">defn </span><span style="color:#666;font-weight:bold;font-style:italic">sequence</span> [<span style="color:#666;font-weight:bold;font-style:italic">xform</span> <span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>  (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="color:#666;font-weight:bold;font-style:italic">xform</span> (<span style="color:#666;font-weight:bold;font-style:italic">completing</span> #(<span style="font-weight:bold;font-style:italic">cons </span><span style="color:#666;font-weight:bold;font-style:italic">%2</span> <span style="color:#666;font-weight:bold;font-style:italic">%1</span>)))]
+</span></span><span style="display:flex;"><span>    (<span style="font-weight:bold;font-style:italic">or </span>((<span style="font-weight:bold">fn </span><span style="color:#666;font-weight:bold;font-style:italic">step</span> [<span style="color:#666;font-weight:bold;font-style:italic">coll</span>]
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">if-some</span> [<span style="color:#666;font-weight:bold;font-style:italic">s</span> (<span style="font-weight:bold;font-style:italic">seq </span><span style="color:#666;font-weight:bold;font-style:italic">coll</span>)]
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold">let </span>[<span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span> (<span style="font-weight:bold;font-style:italic">first </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))]
+</span></span><span style="display:flex;"><span>               (<span style="font-weight:bold;font-style:italic">cond </span>(<span style="color:#666;font-weight:bold;font-style:italic">reduced?</span> <span style="color:#666;font-weight:bold;font-style:italic">res</span>) (<span style="color:#666;font-weight:bold;font-style:italic">f</span> (<span style="font-weight:bold;font-style:italic">deref </span><span style="color:#666;font-weight:bold;font-style:italic">res</span>))
+</span></span><span style="display:flex;"><span>                     (<span style="font-weight:bold;font-style:italic">seq? </span><span style="color:#666;font-weight:bold;font-style:italic">res</span>) (<span style="font-weight:bold;font-style:italic">concat </span><span style="color:#666;font-weight:bold;font-style:italic">res</span> (<span style="color:#666;font-weight:bold;font-style:italic">lazy-seq</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>                     <span style="color:#666;font-style:italic">:else</span> (<span style="color:#666;font-weight:bold;font-style:italic">step</span> (<span style="font-weight:bold;font-style:italic">rest </span><span style="color:#666;font-weight:bold;font-style:italic">s</span>))))
+</span></span><span style="display:flex;"><span>             (<span style="color:#666;font-weight:bold;font-style:italic">f</span> <span style="color:#666;font-weight:bold;font-style:italic">nil</span>)))
+</span></span><span style="display:flex;"><span>         <span style="color:#666;font-weight:bold;font-style:italic">coll</span>)
+</span></span><span style="display:flex;"><span>        ())))
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 3:</span>
+  Final version of our <code>sequence</code> transducer.
+</div>
+<p>We can see that it is lazy, by using side-effecting transducers, like ones with <code>println</code> in those:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="color:#666;font-weight:bold;font-style:italic">sequence</span>
+</span></span><span style="display:flex;"><span>       (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;map&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">filter </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;filter&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>             (<span style="font-weight:bold;font-style:italic">take </span>3))
+</span></span><span style="display:flex;"><span>       (<span style="color:#666;font-weight:bold;font-style:italic">range</span>))
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">map </span>0
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>1
+</span></span><span style="display:flex;"><span>(1<span style="font-weight:bold;font-style:italic">map </span>1
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>2
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">map </span>2
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>3
+</span></span><span style="display:flex;"><span> 3<span style="font-weight:bold;font-style:italic">map </span>3
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>4
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">map </span>4
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>5
+</span></span><span style="display:flex;"><span> 5)
+</span></span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 4:</span>
+  Notice that the output is all messed up, because the sequence started printing before it was realized, and side effects appeared during the pretty printing process, which itself is lazy.
+</div>
+<p>And as you can see, our <code>sequence</code> behaves in the same way as the <code>clojure.core/sequence</code>, regarding laziness:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold">do </span>(<span style="color:#666;font-weight:bold;font-style:italic">sequence</span>
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;map&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">filter </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;filter&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))))
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">range</span>)) <span style="color:#888;font-style:italic">;; note, infinite range</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#666;font-weight:bold;font-style:italic">nil</span>)
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">map </span>0
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>1
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">nil</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">user&gt;</span> (<span style="font-weight:bold">do </span>(<span style="color:#666;font-weight:bold;font-style:italic">clojure.core/sequence</span>
+</span></span><span style="display:flex;"><span>           (<span style="font-weight:bold;font-style:italic">comp </span>(<span style="font-weight:bold;font-style:italic">map </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;map&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="font-weight:bold;font-style:italic">inc </span><span style="color:#666;font-weight:bold;font-style:italic">x</span>)))
+</span></span><span style="display:flex;"><span>                 (<span style="font-weight:bold;font-style:italic">filter </span>(<span style="font-weight:bold">fn </span>[<span style="color:#666;font-weight:bold;font-style:italic">x</span>] (<span style="font-weight:bold;font-style:italic">println </span><span style="color:#666;font-style:italic">&#34;filter&#34;</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>) (<span style="color:#666;font-weight:bold;font-style:italic">odd?</span> <span style="color:#666;font-weight:bold;font-style:italic">x</span>))))
+</span></span><span style="display:flex;"><span>           (<span style="color:#666;font-weight:bold;font-style:italic">range</span>))
+</span></span><span style="display:flex;"><span>          <span style="color:#666;font-weight:bold;font-style:italic">nil</span>)
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">map </span>0
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">filter </span>1
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">nil</span>
+</span></span></code></pre></div><p>I think now <code>sequence</code> is completed, though I&rsquo;ll need to test it very extensively in the future.
+I&rsquo;ve already tested it a lot when I was porting it to Fennel, and I think it should work correctly, looking at the code at least I don&rsquo;t see anything that could go wrong.</p>
+<h2 id="what-have-i-learned">What have I learned</h2>
+<p>Implementing transduceable context, in this case, the <code>sequence</code> function, was a nice puzzle.
+I&rsquo;m sure it&rsquo;s not as efficient, as the <code>clojure.core</code> version, mainly due to the use of <code>concat</code> but I wasn&rsquo;t able to come up with a better way of building the result which can be done lazily.</p>
+<p>And after actually implementing <code>sequence</code>, porting it, and a lot of transducers to Fennel, I&rsquo;ve finally figured out how they actually work, and I hope that now you understand it too!
+This is why I love Clojure - the developers are putting a lot of thought into such features, and not taking shortcuts, like reimplementing all functions for data sources that can&rsquo;t be transformed into sequences.
+For me, it&rsquo;s a really practical language, with a lot of tools that can enhance the programming experience, and make it fun.</p>
+<p>Of course, if you have any questions, feel free to email me, and I&rsquo;ll try to answer them, and maybe update the post for future readers.
+This topic is a bit complicated, so I hope it was not a boring post.
+Thanks for reading!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I actually like this approach to learning.
+Usually, I&rsquo;m not reading how a thing is implemented, and instead trying to figure out everything myself.
+This unfortunately doesn&rsquo;t produce the greatest results, as a lot of stuff I&rsquo;m trying to learn this way has a lot of research put into it, and I basically try to reimplement a thing only based on assumptions and observations.
+Nevertheless, I&rsquo;m satisfied with the process, and in the end, if I got something working, I feel happy, and even more so, when I&rsquo;ve got some concepts exactly right.
+I&rsquo;m not suggesting that this is a superior way to learn, but it is at least very enjoyable for me personally.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+<div class="comment-link">
+      <a href="mailto:%61%6e%64%72%65%79%6f%72%73%74%2b%62%6c%6f%67%40%67%6d%61%69%6c%2e%63%6f%6d?subject=Comment: Understanding%20transducers"
+         target="_blank"
+         rel="noopener noreferrer">
+        Comment via email
+      </a>
+    </div>
+  </article>
+</div></main>
+    <footer>
+      <div class="content-container">
+  <div class="content">
+    © Andrey Listopadov 2020-2024 · This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> · This site source code is MIT licensed.
+  </div>
+</div>
+    </footer>
+    <script>
+      if (window.location.host.endsWith("gitlab.io")) window.location.hostname = ("andreyor.st")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+HTTP/1.1 200 OK
+Server: nginx/1.26.2
+Date: Tue, 05 Nov 2024 09:42:48 GMT
+Content-Type: text/html
+Last-Modified: Sun, 19 Nov 2023 07:10:29 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"6559b4e5-5220"
+
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Haskell became my favorite scripting language</title>
+
+    <link rel="canonical" href="https://zignar.net/2021/07/09/why-haskell-became-my-favorite-scripting-language/">
+    <link rel="stylesheet" href="https://zignar.net/css/screen.css" type="text/css">
+    <link href="" rel="alternate" type="application/rss+xml" title="Personal weblog about programming, linux, life, the universe and everything" />
+
+    <meta name="author" content="Mathias Fussenegger">
+    <meta name="description" content="Personal weblog about programming, linux, life, the universe and everything">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@mfussenegger">
+    <meta name="twitter:domain" content="zignar.net">
+    
+    <meta name="twitter:title" content="Why Haskell became my favorite scripting language" >
+    <meta name="twitter:description" content="I started learning Haskell a couple of years ago. My usual reason to learn a programming language is because I have a concrete use-case - a project I want to contribute to. With Haskell it was different. My primary motivation wasn&rsquo;t a concrete use-case, but instead I thought studying the language would be worth it for the sake of learning. It does things different than other mainstream languages and I wanted to become familiar with concepts I hadn&rsquo;t seen before.
+Writing a couple of iterations of &ldquo;Hello World&rdquo; applications wasn&rsquo;t going to get me far. Utilizing it in a project at work wasn&rsquo;t an option - instead I started using it for my ad-hoc and utility scripts. Before, Python was my go-to language for such things, but Haskell ended up replacing it. In this article I will show why." >
+    
+    <meta name="generator" content="Hugo 0.120.1">
+  </head>
+  <body lang="en">
+    <div id="page">
+
+      <nav class="top">
+        <ul class="navigation">
+    <li><a href="https://zignar.net">📓  Posts</a></li>
+    <li><a href="https://zignar.net/archives/">⏳ Archives</a></li>
+    <li></li>
+    <li><a href="https://github.com/mfussenegger">⌨  Code</a></li>
+    <li><a rel="me" href="https://social.fussenegger.pro/@mathias">🐦 </a></li>
+    <li></li>
+    <li><a href="https://zignar.net/hire_me/">👷 Hire Me</a></li>
+    <li><a href="">Feed</a></li>
+</ul>
+
+      </nav>
+
+      <section>
+
+
+<article>
+  <header>
+    <h1>Why Haskell became my favorite scripting language</h1>
+    <div class="tags">
+      &nbsp; Friday, July 9, 2021 
+
+    </div>
+  </header>
+
+  <p>I started learning Haskell a couple of years ago. My usual reason to learn a programming language is because I have a concrete use-case - a project I want to contribute to. With Haskell it was different. My primary motivation wasn&rsquo;t a concrete use-case, but instead I thought studying the language would be worth it for the sake of learning. It does things different than other mainstream languages and I wanted to become familiar with concepts I hadn&rsquo;t seen before.</p>
+<p>Writing a couple of iterations of &ldquo;Hello World&rdquo; applications wasn&rsquo;t going to get me far. Utilizing it in a project at work wasn&rsquo;t an option - instead I started using it for my ad-hoc and utility scripts. Before, Python was my go-to language for such things, but Haskell ended up replacing it. In this article I will show why.</p>
+<h2 id="a-compiled-language">
+  A compiled language? <a class="anchor" href="#a-compiled-language">¶</a>
+</h2>
+<p>Haskell is as a compiled language, and you may wonder how on earth you&rsquo;d use it as a scripting language. The answer is that Haskell code can run in an interpreted mode. The <code>ghc</code> package - the package for the de-facto standard compiler for Haskell - has the <code>runhaskell</code> program which uses this interpreter mode. You can use it to execute Haskell files without intermediate compile step.</p>
+<p>If you put the following content in a file called <code>foo.hs</code> you can execute it directly using <code>./foo.hs</code>, assuming you installed <code>ghc</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="o">#!/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">runhaskell</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">main</span> <span class="ow">::</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span></span><span class="line"><span class="cl"><span class="nf">main</span> <span class="ow">=</span> <span class="n">putStrLn</span> <span class="s">&#34;Hello World&#34;</span>
+</span></span></code></pre></div><p>Interpreted mode is slower than compiling the code to an executable and running that, but for most scripting tasks it&rsquo;s fast enough.</p>
+<h2 id="stack-script">
+  Stack Script <a class="anchor" href="#stack-script">¶</a>
+</h2>
+<p><code>runhaskell</code> is nice, but if you do anything more involved than <code>Hello World</code> you end up wanting to re-use existing libraries. This is where <code>stack script</code> comes in. <a href="https://docs.haskellstack.org/en/stable/README/">stack</a> is a build tool for Haskell and it provides the <code>stack script</code> command, a more powerful alternative to <code>runhaskell</code>.</p>
+<p>Let&rsquo;s look at an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="o">#!/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">stack</span>
+</span></span><span class="line"><span class="cl"><span class="cm">{- stack script --resolver lts-17.9
+</span></span></span><span class="line"><span class="cl"><span class="cm">  --package process
+</span></span></span><span class="line"><span class="cl"><span class="cm">-}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">main</span> <span class="ow">::</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span></span><span class="line"><span class="cl"><span class="nf">main</span> <span class="ow">=</span> <span class="n">putStrLn</span> <span class="s">&#34;Hello World&#34;</span>
+</span></span></code></pre></div><p>The first line is the shebang that makes sure the script gets executed using <code>stack</code>.
+The second line tells <code>stack</code> that it should use the <code>stack script</code> command. The <code>--resolver</code> flag needs some further elaboration:</p>
+<p>To build a program using <code>stack</code> it needs to know which versions of the dependencies it should use.
+<code>stack</code> uses <em>package sets</em> to aid with the decisions. A <em>package set</em> is a pre-defined set of packages known to work together. The <code>--resolver</code> flag declares the package set you want to use - including the GHC version. You can think of using the <code>--resolver</code> option as if nailing the versions of all the dependencies, with the assurance that they work together. If you want to learn more about that, take a look at <a href="https://www.stackage.org/">Stackage</a>.</p>
+<p>The third line lists a dependency the script is going to use. You can add any number of dependencies this way:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="o">#!/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">stack</span>
+</span></span><span class="line"><span class="cl"><span class="cm">{- stack script --resolver lts-17.9
+</span></span></span><span class="line"><span class="cl"><span class="cm">  --package process
+</span></span></span><span class="line"><span class="cl"><span class="cm">  --package directory
+</span></span></span><span class="line"><span class="cl"><span class="cm">  --package network-uri
+</span></span></span><span class="line"><span class="cl"><span class="cm">-}</span>
+</span></span></code></pre></div><p>Another feature of <code>stack script</code> is the <code>--optimize</code> flag: This will cause the script to compile whenever it changes. This causes a slow down the first time a script gets executed, but the next calls will be much faster because it will use the cached, compiled version.</p>
+<p>(In the JVM world there is <a href="https://www.jbang.dev/">jbang</a> which does something similar. Overall I think this approach isn&rsquo;t as widespread as it deserves to be and I once prototyped <a href="https://github.com/mfussenegger/pipex">pipex</a> to see how this could work in the Python world. (Don&rsquo;t use that, it was only an experiment))</p>
+<h2 id="if-it-compiles-it-works">
+  If it compiles, it works <a class="anchor" href="#if-it-compiles-it-works">¶</a>
+</h2>
+<p>Or rather, if it type checks, it works.
+Dynamic typing proponents argue that the static type checks don&rsquo;t offer a lot because you need to write functional tests anyway.
+I think the argument has some flaws, mostly because one advantage of type checks is to let you get away with writing fewer tests. Good use of types make it impossible to create illegal states. You can&rsquo;t write unit tests to verify error cases if the compiler doesn&rsquo;t let you create those error scenarios. And who writes tests for utility scripts?</p>
+<p>But don&rsquo;t take the &ldquo;If it compiles, it works&rdquo; mantra literally, there are plenty of bugs it won&rsquo;t catch.</p>
+<h2 id="no-ceremony">
+  No ceremony <a class="anchor" href="#no-ceremony">¶</a>
+</h2>
+<p>This ties into the earlier two points. There is no tedious ceremony to bootstrap a project to get dependency management.
+The Haskell syntax is very succinct, Haskell has incredible type inference, together with the algebraic data type support it encourages using types even for ad-hoc scripts. In a language like Python you&rsquo;d instead use dictionaries for everything - which may seem convenient but can mask bugs.</p>
+<p>For example, I have a script that gets a list of emojis from the JSON file of the <a href="https://github.com/github/gemoji">gemoji</a> project and pipes them into <a href="https://github.com/Cloudef/bemenu">bemenu</a>:</p>
+<figure><img src="https://zignar.net/assets/files/4ce2be248aa7ed2b95a81e535b3aa616ac95ef2192a887573c9f90337db441dd.gif"/><figcaption>
+            <h4>bemenu demo</h4>
+        </figcaption>
+</figure>
+
+<p>I wrote the first version in Python. It was simple and worked, but it had a bug that I didn&rsquo;t notice until the rewrite to Haskell.</p>
+<p>In Haskell I defined a type, and derived a JSON de-serialization implementation:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="kr">data</span> <span class="kt">Emoji</span> <span class="ow">=</span> <span class="kt">Emoji</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="n">emoji</span> <span class="ow">::</span> <span class="kt">String</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="n">description</span> <span class="ow">::</span> <span class="kt">String</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">deriving</span> <span class="p">(</span><span class="kt">Show</span><span class="p">,</span> <span class="kt">Generic</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">instance</span> <span class="kt">FromJSON</span> <span class="kt">Emoji</span>
+</span></span></code></pre></div><p>You can think of <code>Emoji</code> as a <code>struct</code> with two fields, one for the emoji itself and one for its description. The <code>deriving</code> and <code>instance FromJSON</code> are Haskell features that let it derive a serialization implementation to parse records like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="nf">emojis</span> <span class="ow">=</span> <span class="n">eitherDecode</span> <span class="n">emojiFileContents</span> <span class="ow">::</span> <span class="kt">Either</span> <span class="kt">String</span> <span class="kt">Emoji</span>
+</span></span></code></pre></div><p><code>eitherDecode</code> is a function from the <a href="https://hackage.haskell.org/package/aeson">Aeson</a> library that takes a <code>ByteString</code> and returns either an error message as String, or the decoded value.</p>
+<p>This returned an error message that told me some entries are missing the <code>description</code> property. I had made an assumption about the data that turned out to be wrong. Python let me get away with this assumption but Haskell didn&rsquo;t.</p>
+<p>I decided that I don&rsquo;t want emojis without description to show up, and changed the code to filter them out:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="nf">emojis</span> <span class="ow">=</span> <span class="n">catMaybes</span> <span class="o">&lt;$&gt;</span> <span class="p">(</span><span class="n">eitherDecode</span> <span class="n">emojiFileContents</span> <span class="ow">::</span> <span class="kt">Either</span> <span class="kt">String</span> <span class="p">[</span><span class="kt">Maybe</span> <span class="kt">Emoji</span><span class="p">])</span>
+</span></span></code></pre></div><p>Don&rsquo;t worry if you&rsquo;re not familiar with Haskell and find it difficult to understand these code snippets. My point is that types can help you find mistakes, and Haskell makes it easy to use types without introducing a lot of extra ceremony.</p>
+<h2 id="parser-combinator-libraries">
+  Parser combinator libraries <a class="anchor" href="#parser-combinator-libraries">¶</a>
+</h2>
+<p>Writing utility scripts often involves parsing some kind of output.</p>
+<p>Many people resort to using <a href="https://3d.xkcd.com/208/">regular expressions</a> if they need to parse text. Sometimes they&rsquo;re a perfect fit, but a regular expression can quickly reach a complexity threshold where you wish you had used something else.</p>
+<p>One - in my opinion underutilized - alternative to regular expressions are parser combinator libraries. Parser combinator libraries allow you to write a parser in terms of individual small parse functions that you can then combine together to form the full parser. In some languages using them is a bit clunky, but the feature set of Haskell makes it convenient to use them.</p>
+<p>Some examples of how this might look:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="nf">literal</span> <span class="ow">::</span> <span class="kt">Parser</span> <span class="kt">Expr</span>
+</span></span><span class="line"><span class="cl"><span class="nf">literal</span> <span class="ow">=</span> <span class="n">number</span> <span class="o">&lt;|&gt;</span> <span class="n">stringLiteral</span> <span class="o">&lt;|&gt;</span> <span class="n">objectLiteral</span> <span class="o">&lt;|&gt;</span> <span class="n">arrayLiteral</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">stringLiteral</span> <span class="ow">::</span> <span class="kt">Parser</span> <span class="kt">Expr</span>
+</span></span><span class="line"><span class="cl"><span class="nf">stringLiteral</span> <span class="ow">=</span> <span class="kt">StringLiteral</span> <span class="o">.</span> <span class="kt">T</span><span class="o">.</span><span class="n">pack</span> <span class="o">&lt;$&gt;</span> <span class="n">string</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">where</span>
+</span></span><span class="line"><span class="cl">    <span class="n">quote</span> <span class="ow">=</span> <span class="n">char</span> <span class="sc">&#39;</span><span class="se">\&#39;</span><span class="sc">&#39;</span> <span class="o">&lt;|&gt;</span> <span class="n">char</span> <span class="sc">&#39;&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="ow">=</span> <span class="n">between</span> <span class="n">quote</span> <span class="n">quote</span> <span class="p">(</span><span class="n">many</span> <span class="p">(</span><span class="n">noneOf</span> <span class="s">&#34;</span><span class="se">\&#39;\&#34;</span><span class="s">&#34;</span><span class="p">))</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="nf">parseEntry</span> <span class="ow">::</span> <span class="kt">Parser</span> <span class="kt">Entry</span>
+</span></span><span class="line"><span class="cl"><span class="nf">parseEntry</span> <span class="ow">=</span> <span class="kr">do</span>
+</span></span><span class="line"><span class="cl">  <span class="n">char</span> <span class="sc">&#39;-&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">char</span> <span class="sc">&#39; &#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">date</span> <span class="ow">&lt;-</span> <span class="n">parseDate</span>
+</span></span><span class="line"><span class="cl">  <span class="n">char</span> <span class="sc">&#39;:&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">char</span> <span class="sc">&#39; &#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">hours</span> <span class="ow">&lt;-</span> <span class="n">parseHours</span>
+</span></span><span class="line"><span class="cl">  <span class="n">char</span> <span class="sc">&#39; &#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">intervals</span> <span class="ow">&lt;-</span> <span class="n">between</span> <span class="p">(</span><span class="n">char</span> <span class="sc">&#39;(&#39;</span><span class="p">)</span> <span class="p">(</span><span class="n">char</span> <span class="sc">&#39;)&#39;</span><span class="p">)</span> <span class="n">parseIntervals</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pure</span> <span class="o">$</span> <span class="kt">Entry</span> <span class="n">date</span> <span class="n">hours</span> <span class="n">intervals</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">where</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parseIntervals</span> <span class="ow">=</span> <span class="n">parseInterval</span> <span class="p">`</span><span class="n">sepBy</span><span class="p">`</span> <span class="n">char</span> <span class="sc">&#39;,&#39;</span>
+</span></span></code></pre></div><h2 id="code-evaluation-with-haskell-language-server">
+  Code evaluation with Haskell-language-server <a class="anchor" href="#code-evaluation-with-haskell-language-server">¶</a>
+</h2>
+<p>Remember the point about testing?</p>
+<p>The <a href="https://github.com/haskell/haskell-language-server">haskell-language-server</a> supports evaluating code snippets in the documentation:</p>
+<figure><img src="https://zignar.net/assets/files/b721872790009588b4275a32f71be88114acf7cfa0f55a90c3f078f66c50157c.gif"/><figcaption>
+            <h4>Haskell language server evaluation demo</h4>
+        </figcaption>
+</figure>
+
+<p>This is no replacement for a proper test suite, but it makes it ergonomic to quickly verify within a script if a function behaves as expected.</p>
+<p>You can achieve something similar using an interactive REPL and sending code snippets to it, but I prefer this workflow.</p>
+<h2 id="wrap-up">
+  Wrap up <a class="anchor" href="#wrap-up">¶</a>
+</h2>
+<p>Although any single point here may not convince you, all put together turn Haskell into a powerful scripting language.</p>
+<p>If you&rsquo;re looking for a low risk way to learn the language, I can only recommend to start out using it for ad-hoc scripts or small utility programs.</p>
+
+</article>
+
+      </section>
+    </div>
+  </body>
+</html>
+

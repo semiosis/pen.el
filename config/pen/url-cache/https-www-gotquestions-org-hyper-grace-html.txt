@@ -1,0 +1,186 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Wed, 23 Oct 2024 18:53:58 GMT
+Accept-Ranges: bytes
+ETag: "0a79eea7c25db1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Thu, 21 Nov 2024 21:36:15 GMT
+Content-Length: 6278
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>What is hyper-grace? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="hyper-grace"><META name="description" itemprop="description" property="og:description" content="What is hyper-grace (hypergrace)? Is it possible to over-emphasize grace? How can grace be balanced with repentance?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/hyper-grace.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2013-09-25">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/hyper-grace.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/hyper-grace.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start); --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="free-Bible-study.html">Bible Studies</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="https://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_theology.html"><span itemprop="name">Theology</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_theology_God-Humanity.html"><span itemprop="name">God and Humanity</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> Hyper-grace</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">What is hyper-grace?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a target="_blank" rel="noopener nofollow" href="INTL/hyper-grace.html" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'intl'});"><img src="img/translate-icon.svg" alt="translate"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=4234" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="hyper-grace"></a>
+<span class="audio-icon"><img src="img/volume.svg" alt="audio" class="questionInteract"><audio controls preload="none" style="width:300px;height:25px"><source src="audio/hyper-grace.mp3" type="audio/mpeg"></audio></span>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+The term <i>hyper-grace</i> has been used to describe a new wave of teaching that emphasizes the grace of God to the exclusion of other vital teachings such as repentance and confession of sin. Hyper-grace teachers maintain that all sin, past, present, and future, has already been forgiven, so there is no need for a believer to ever confess it. Hyper-grace teaching says that, when God looks at us, He sees only a holy and righteous people. The conclusion of hyper-grace teaching is that we are not bound by Jesus’ teaching, even as we are not under the Law; that believers are not responsible for their sin; and that anyone who disagrees is a pharisaical legalist. In short, hyper-grace teachers “pervert the grace of our God into a license for immorality” (Jude 1:4) and flirt with <a href="antinomianism.html">antinomianism</a>.<br><br>
+Jesus’ words to the seven churches in the book of Revelation strongly contradict the idea that Christians never need to repent. To the church at Ephesus, Jesus said, “Consider how far you have fallen! Repent and do the things you did at first. If you do not repent, I will come to you and remove your lampstand from its place” (Revelation 2:4). Jesus rebukes five of the seven churches and demands repentance from them (Revelation 2:4, 6, 20; 3:3, 15&ndash;19). Far from believers being unaccountable for their sin, they must answer to Jesus for their disobedience (see also 2 Corinthians 5:10).<br><br>
+Preachers of hyper-grace doctrine discount the Old Testament and the Ten Commandments as irrelevant to New Testament believers. They even teach that Jesus’ words spoken before His resurrection are part of the Old Covenant and no longer applicable to born-again believers. But is this true?<br><br>
+In Mark 13:31, Jesus said, “Heaven and earth will pass away, but my words will never pass away.” Before Jesus ascended into heaven, He promised that the Father would send the Holy Spirit who “will teach you all things and will remind you of everything I have said to you” (John 14:26). If Jesus’ words are no longer applicable to believers, why would we need to be reminded of them?<br><br>
+Hyper-grace teaching is a good example of mixing truth with error. An emphasis on the beauty and power of God’s grace is good, but some teachers are neglecting what Paul called the “whole counsel of God” (Acts 20:27). For example, it is true that Christians have been forgiven by God. But that doesn’t mean we never have to confess our sin. James 5:16 says, “Confess your sins to each other and pray for each other so that you may be healed.” If we are to confess our sins to each other, why would we not need to confess them to God, since every sin is ultimately a sin against God (Psalm 51:4)?<br><br>
+Also, 1 John 1:9 gives clear instruction to believers about <a href="Christian-sin.html">confessing sin</a>. It begins with the word <i>if</i>: “If we confess our sin, He is faithful and just to forgive our sin and to cleanse us from all unrighteousness.” This is a cause/effect statement implying that we cannot have the second without the first. As blood-bought children of God, we do not continue to confess our sin in order to be saved from hell. We confess and repent in order to reestablish an intimate relationship with our Father. We are “positionally righteous” but “practically sinful.”<br><br>
+To counter this argument, hyper-grace preachers deny that John’s letters were written to believers. However, 1 John 2:1 begins with this: “My dear children, I write this to you so that you will not sin. But if anybody does sin, we have an advocate with the Father&mdash;Jesus Christ, the Righteous One.” John is clearly writing to believers whom he personally knew. He indicates that his believing friends may indeed sin, and that, when they do, they need to confess it.<br><br>
+Hyper-grace preachers also claim the Holy Spirit will never convict Christians of their sin. Mature Christians should recognize this fallacy right away. Every disciple of Christ has felt the overwhelming conviction of the Holy Spirit when he or she has sinned. Jesus calls the Holy Spirit “the Spirit of Truth” (John 15:26). Truth, by its very definition, will not tolerate anything false. When the Spirit of Truth abides in a believing heart (1 Corinthians 6:19), He brings conviction about anything that is <i>not</i> truth.<br><br>
+In summary, much of what the hyper-grace preachers teach is valid. We are indeed saved by grace, not our works (Ephesians 2:8&ndash;9). And God’s grace is marvelous, great, and free (1 Timothy 1:14). However, hyper-grace teaching is out of proportion to the rest of Scripture. Any time one doctrine is emphasized to the exclusion of the rest, we fall into error because we fail to “correctly handle” the Word (2 Timothy 2:15).<br><br>
+Jesus was full of both “grace and truth” (John 1:14). The two are in delicate balance, and a tip to either side can result in a false gospel. We must always compare any new teaching with the “whole counsel of God” and learn to disregard anything that veers even slightly from the truth (1 John 4:1).<br><br>
+</div>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/easy_find?Ntt=quest+study+bible&N=0&Ntk=keywords&action=Search&Ne=0&event=ESRCG&nav_search=1&cms=1&AFF&p=1011693">The Quest Study Bible</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/?utm_campaign=logossubxlaunch-phase1&utm_source=gotquestions&utm_medium=advertising_display&utm_content=logossubxlaunch-phase1-gtlink">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="Christian-law.html">Do Christians have to obey the Old Testament law?</a><br><br>
+<a href="cheap-grace.html">What is cheap grace?</a><br><br>
+<a href="free-grace.html">What is free grace? What is Free Grace Theology?</a><br><br>
+<a href="moral-relativism.html">What is moral relativism?</a><br><br>
+<a href="victory-over-sin.html">How can I overcome sin in my Christian life?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_theology.html">Questions about Theology</a><br><br>
+What is hyper-grace?</strong></center>
+</div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the primary site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2024 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2022-01-04">This page last updated: January 4, 2022</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+</body>
+</html>

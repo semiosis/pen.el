@@ -1,0 +1,280 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 4537
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Tue, 03 Sep 2024 09:36:58 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"66d6d8ba-4262"
+expires: Mon, 11 Nov 2024 03:44:16 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 1BD0:16224A:19D41CF:1A51FD5:67317B38
+Accept-Ranges: bytes
+Date: Mon, 11 Nov 2024 04:19:46 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-syd10176-SYD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1731298786.227588,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 4c65bb1b9fdc0107a8e2e5e14cd88a133da5c46d
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8d43b12544062ecc4fa7c8a213da95ad28052c03">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>rust-script | Run Rust files and expressions as scripts without any setup or compilation step.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="rust-script" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Run Rust files and expressions as scripts without any setup or compilation step." />
+<meta property="og:description" content="Run Rust files and expressions as scripts without any setup or compilation step." />
+<link rel="canonical" href="https://rust-script.org/" />
+<meta property="og:url" content="https://rust-script.org/" />
+<meta property="og:site_name" content="rust-script" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="rust-script" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Run Rust files and expressions as scripts without any setup or compilation step.","headline":"rust-script","name":"rust-script","url":"https://rust-script.org/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>rust-script</h1>
+        </a>
+        <h2>Run Rust files and expressions as scripts without any setup or compilation step.</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/fornwall/rust-script" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <style>
+  ul li:not(:last-child) { margin-bottom: 0.4em; }
+</style>
+
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#installation">Installation</a>
+    <ul>
+      <li><a href="#distro-packages">Distro Packages</a>
+        <ul>
+          <li><a href="#arch-linux">Arch Linux</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#scripts">Scripts</a></li>
+  <li><a href="#executable-scripts">Executable Scripts</a></li>
+  <li><a href="#expressions">Expressions</a></li>
+  <li><a href="#filters">Filters</a></li>
+  <li><a href="#environment-variables">Environment Variables</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>With <code class="language-plaintext highlighter-rouge">rust-script</code> Rust files and expressions can be executed just like a shell or Python script. Features include:</p>
+
+<ul>
+  <li>Caching compiled artifacts for speed.</li>
+  <li>Reading Cargo manifests embedded in Rust scripts.</li>
+  <li>Supporting executable Rust scripts via Unix shebangs and Windows file associations.</li>
+  <li>Using expressions as stream filters (<em>i.e.</em> for use in command pipelines).</li>
+  <li>Running unit tests and benchmarks from scripts.</li>
+</ul>
+
+<p>You can get an overview of the available options using the <code class="language-plaintext highlighter-rouge">--help</code> flag.</p>
+
+<h2 id="news">News</h2>
+<p>See the <a href="https://github.com/fornwall/rust-script/blob/main/CHANGELOG.md">changelog</a> for information about releases and changes.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Install or update <code class="language-plaintext highlighter-rouge">rust-script</code> using Cargo:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo <span class="nb">install </span>rust-script
+</code></pre></div></div>
+
+<p>Rust 1.74 or later is required.</p>
+
+<h3 id="distro-packages">Distro Packages</h3>
+
+<h4 id="arch-linux">Arch Linux</h4>
+
+<p><code class="language-plaintext highlighter-rouge">rust-script</code> can be installed from the <a href="https://archlinux.org/packages/extra/x86_64/rust-script/">extra repository</a>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> rust-script
+</code></pre></div></div>
+
+<h2 id="scripts">Scripts</h2>
+
+<p>The primary use for <code class="language-plaintext highlighter-rouge">rust-script</code> is for running Rust source files as scripts. For example:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'println!("Hello, World!");'</span> <span class="o">&gt;</span> hello.rs
+<span class="nv">$ </span>rust-script hello.rs
+Hello, World!
+</code></pre></div></div>
+
+<p>Under the hood, a Cargo project will be generated and built (with the Cargo output hidden unless compilation fails or the <code class="language-plaintext highlighter-rouge">-c</code>/<code class="language-plaintext highlighter-rouge">--cargo-output</code> option is used). The first invocation of the script will be slower as the script is compiled - subsequent invocations of unmodified scripts will be fast as the built executable is cached.</p>
+
+<p>As seen from the above example, using a <code class="language-plaintext highlighter-rouge">fn main() {}</code> function is not required. If not present, the script file will be wrapped in a <code class="language-plaintext highlighter-rouge">fn main() { ... }</code> block.</p>
+
+<p><code class="language-plaintext highlighter-rouge">rust-script</code> will look for embedded dependency and manifest information in the script as shown by the below two equivalent <code class="language-plaintext highlighter-rouge">now.rs</code> variants:</p>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span><span class="o">!/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">rust</span><span class="o">-</span><span class="n">script</span>
+<span class="cd">//! This is a regular crate doc comment, but it also contains a partial</span>
+<span class="cd">//! Cargo manifest.  Note the use of a *fenced* code block, and the</span>
+<span class="cd">//! `cargo` "language".</span>
+<span class="cd">//!</span>
+<span class="cd">//! ```cargo</span>
+<span class="cd">//! [dependencies]</span>
+<span class="cd">//! time = "0.1.25"</span>
+<span class="cd">//! ```</span>
+<span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">println!</span><span class="p">(</span><span class="s">"{}"</span><span class="p">,</span> <span class="nn">time</span><span class="p">::</span><span class="nf">now</span><span class="p">()</span><span class="nf">.rfc822z</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// cargo-deps: time="0.1.25"</span>
+<span class="c1">// You can also leave off the version number, in which case, it's assumed</span>
+<span class="c1">// to be "*".  Also, the `cargo-deps` comment *must* be a single-line</span>
+<span class="c1">// comment, and it *must* be the first thing in the file, after the</span>
+<span class="c1">// shebang.</span>
+<span class="c1">// Multiple dependencies should be separated by commas:</span>
+<span class="c1">// cargo-deps: time="0.1.25", libc="0.2.5"</span>
+<span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">println!</span><span class="p">(</span><span class="s">"{}"</span><span class="p">,</span> <span class="nn">time</span><span class="p">::</span><span class="nf">now</span><span class="p">()</span><span class="nf">.rfc822z</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The output from running one of the above scripts may look something like:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rust-script now
+Wed, 28 Oct 2020 00:38:45 +0100
+</code></pre></div></div>
+
+<p>Useful command-line arguments:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--bench</code>: Compile and run benchmarks. Requires a nightly toolchain.</li>
+  <li><code class="language-plaintext highlighter-rouge">--debug</code>: Build a debug executable, not an optimised one.</li>
+  <li><code class="language-plaintext highlighter-rouge">--force</code>: Force the script to be rebuilt.  Useful if you want to force a recompile with a different toolchain.</li>
+  <li><code class="language-plaintext highlighter-rouge">--package</code>: Generate the Cargo package and print the path to it - but don’t compile or run it. Effectively “unpacks” the script into a Cargo package.</li>
+  <li><code class="language-plaintext highlighter-rouge">--test</code>: Compile and run tests.</li>
+  <li><code class="language-plaintext highlighter-rouge">--wrapper</code>: Add a wrapper around the executable. Can be used to run debugging with e.g. <code class="language-plaintext highlighter-rouge">rust-script --debug --wrapper rust-lldb my-script.rs</code> or benchmarking with <code class="language-plaintext highlighter-rouge">rust-script --wrapper "hyperfine --runs 100" my-script.rs</code></li>
+</ul>
+
+<h2 id="executable-scripts">Executable Scripts</h2>
+
+<p>On Unix systems, you can use <code class="language-plaintext highlighter-rouge">#!/usr/bin/env rust-script</code> as a shebang line in a Rust script.  This will allow you to execute a script files (which don’t need to have the <code class="language-plaintext highlighter-rouge">.rs</code> file extension) directly.</p>
+
+<p>If you are using Windows, you can associate the <code class="language-plaintext highlighter-rouge">.ers</code> extension (executable Rust - a renamed <code class="language-plaintext highlighter-rouge">.rs</code> file) with <code class="language-plaintext highlighter-rouge">rust-script</code>.  This allows you to execute Rust scripts simply by naming them like any other executable or script.</p>
+
+<p>This can be done using the <code class="language-plaintext highlighter-rouge">rust-script --install-file-association</code> command. Uninstall the file association with <code class="language-plaintext highlighter-rouge">rust-script --uninstall-file-association</code>.</p>
+
+<p>If you want to make a script usable across platforms, use <em>both</em> a shebang line <em>and</em> give the file a <code class="language-plaintext highlighter-rouge">.ers</code> file extension.</p>
+
+<h2 id="expressions">Expressions</h2>
+
+<p>Using the <code class="language-plaintext highlighter-rouge">-e</code>/<code class="language-plaintext highlighter-rouge">--expr</code> option a Rust expression can be evaluated directly, with dependencies (if any) added using <code class="language-plaintext highlighter-rouge">-d</code>/<code class="language-plaintext highlighter-rouge">--dep</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rust-script <span class="nt">-e</span> <span class="s1">'1+2'</span>
+3
+<span class="nv">$ </span>rust-script <span class="nt">--dep</span> <span class="nb">time</span> <span class="nt">--expr</span> <span class="s2">"time::OffsetDateTime::now_utc().format(time::Format::Rfc3339).to_string()"</span><span class="sb">`</span>
+<span class="s2">"2020-10-28T11:42:10+00:00"</span>
+<span class="nv">$ </span><span class="c"># Use a specific version of the time crate (instead of default latest):</span>
+<span class="nv">$ </span>rust-script <span class="nt">--dep</span> <span class="nb">time</span><span class="o">=</span>0.1.38 <span class="nt">-e</span> <span class="s2">"time::now().rfc822z().to_string()"</span>
+<span class="s2">"2020-10-28T11:42:10+00:00"</span>
+</code></pre></div></div>
+
+<p>The code given is embedded into a block expression, evaluated, and printed out using the <code class="language-plaintext highlighter-rouge">Debug</code> formatter (<em>i.e.</em> <code class="language-plaintext highlighter-rouge">{:?}</code>).</p>
+
+<h2 id="filters">Filters</h2>
+
+<p>You can use <code class="language-plaintext highlighter-rouge">rust-script</code> to write a quick filter, by specifying a closure to be called for each line read from stdin, like so:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>now.ers | rust-script <span class="nt">--loop</span> <span class="se">\</span>
+    <span class="s2">"let mut n=0; move |l| {n+=1; println!(</span><span class="se">\"</span><span class="s2">{:&gt;6}: {}</span><span class="se">\"</span><span class="s2">,n,l.trim_end())}"</span>
+     1: // cargo-deps: <span class="nb">time</span><span class="o">=</span><span class="s2">"0.1.25"</span>
+     3: fn main<span class="o">()</span> <span class="o">{</span>
+     4:     println!<span class="o">(</span><span class="s2">"{}"</span>, <span class="nb">time</span>::now<span class="o">()</span>.rfc822z<span class="o">())</span><span class="p">;</span>
+     5: <span class="o">}</span>
+</code></pre></div></div>
+
+<p>You can achieve a similar effect to the above by using the <code class="language-plaintext highlighter-rouge">--count</code> flag, which causes the line number to be passed as a second argument to your closure:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>now.ers | rust-script <span class="nt">--count</span> <span class="nt">--loop</span> <span class="se">\</span>
+    <span class="s2">"|l,n| println!(</span><span class="se">\"</span><span class="s2">{:&gt;6}: {}</span><span class="se">\"</span><span class="s2">, n, l.trim_end())"</span>
+     1: // cargo-deps: <span class="nb">time</span><span class="o">=</span><span class="s2">"0.1.25"</span>
+     2: fn main<span class="o">()</span> <span class="o">{</span>
+     3:     println!<span class="o">(</span><span class="s2">"{}"</span>, <span class="nb">time</span>::now<span class="o">()</span>.rfc822z<span class="o">())</span><span class="p">;</span>
+     4: <span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="environment-variables">Environment Variables</h2>
+
+<p>The following environment variables are provided to scripts by <code class="language-plaintext highlighter-rouge">rust-script</code>:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">RUST_SCRIPT_BASE_PATH</code>: the base path used by <code class="language-plaintext highlighter-rouge">rust-script</code> to resolve relative dependency paths.  Note that this is <em>not</em> necessarily the same as either the working directory, or the directory in which the script is being compiled.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">RUST_SCRIPT_PKG_NAME</code>: the generated package name of the script.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">RUST_SCRIPT_SAFE_NAME</code>: the file name of the script (sans file extension) being run.  For scripts, this is derived from the script’s filename.  May also be <code class="language-plaintext highlighter-rouge">"expr"</code> or <code class="language-plaintext highlighter-rouge">"loop"</code> for those invocations.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">RUST_SCRIPT_PATH</code>: absolute path to the script being run, assuming one exists.  Set to the empty string for expressions.</p>
+  </li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>Please report all issues on <a href="https://github.com/fornwall/rust-script/issues">the GitHub issue tracker</a>.</p>
+
+<p>If relevant, run with the <code class="language-plaintext highlighter-rouge">RUST_LOG=rust_script=trace</code> environment variable set to see verbose log output and attach that output to an issue.</p>
+
+      </section>
+    </div>
+  </body>
+</html>

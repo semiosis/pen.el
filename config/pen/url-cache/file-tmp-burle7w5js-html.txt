@@ -1,0 +1,318 @@
+Content-type: text/html
+Content-length: 33049
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>*markdown-output*</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<p><a href="https://babashka.org"><img src="logo/babashka.svg" alt="Babashka" width="425px"></a></p>
+<p><a href="https://circleci.com/gh/babashka/babashka/tree/master"><img src="https://circleci.com/gh/babashka/babashka/tree/master.svg?style=shield" alt="CircleCI" /></a> <a href="https://app.slack.com/client/T03RZGPFR/CLX41ASCS"><img src="https://img.shields.io/badge/slack-join_chat-brightgreen.svg" alt="project chat" /></a> <a href="https://opencollective.com/babashka"><img src="https://opencollective.com/babashka/all/badge.svg?label=financial+contributors" alt="Financial Contributors on Open Collective" /></a> <a href="https://clojars.org/babashka/babashka"><img src="https://img.shields.io/clojars/v/babashka/babashka.svg" alt="Clojars Project" /></a> <a href="https://twitter.com/search?q=%23babashka&amp;src=typed_query&amp;f=live"><img src="https://img.shields.io/badge/twitter-%23babashka-blue" alt="twitter" /></a> <a href="https://book.babashka.org"><img src="https://img.shields.io/badge/website-docs-blue" alt="docs" /></a></p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Life’s too short to remember how to write Bash code. I feel liberated.
+</p>
+— <a href="https://github.com/laheadle"><span class="citation" data-cites="laheadle">@laheadle</span></a> on Clojurians Slack
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>Babashka is a native Clojure interpreter for scripting with fast startup. Its main goal is to leverage Clojure in places where you would be using bash otherwise.</p>
+<p>As one user described it:</p>
+<blockquote>
+<p>I’m quite at home in Bash most of the time, but there’s a substantial grey area of things that are too complicated to be simple in bash, but too simple to be worth writing a clj/s script for. Babashka really seems to hit the sweet spot for those cases.</p>
+</blockquote>
+<h3 id="goals">Goals</h3>
+<ul>
+<li><strong>Fast starting</strong> Clojure scripting alternative for JVM Clojure</li>
+<li><strong>Easy installation:</strong> grab the self-contained binary and run. No JVM needed.</li>
+<li><strong>Familiar:</strong> targeted at JVM Clojure users</li>
+<li><strong>Cross-platform:</strong> supports linux, macOS and Windows</li>
+<li><strong>Interop</strong> with commonly used classes (<code>System</code>, <code>File</code>, <code>java.time.*</code>, <code>java.nio.*</code>)</li>
+<li><strong>Multi-threading</strong> support (<code>pmap</code>, <code>future</code>)</li>
+<li><strong>Batteries included</strong> (tools.cli, cheshire, …)</li>
+</ul>
+<h3 id="non-goals">Non-goals</h3>
+<ul>
+<li>Provide a mixed Clojure/Bash DSL (see portability).</li>
+<li>Replace existing shells. Babashka is a tool you can use inside existing shells like bash and it is designed to play well with them. It does not aim to replace them.</li>
+</ul>
+<h2 id="quickstart">Quickstart</h2>
+<p>For installation options check <a href="https://github.com/babashka/babashka#installation">Installation</a>. For quick installation using <code>bash</code>, use:</p>
+<pre class="shell"><code>bash &lt; &lt;(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)</code></pre>
+<p>or grab a binary from <a href="https://github.com/babashka/babashka/releases">Github releases</a> yourself and place it anywhere on the path.</p>
+<p>Then you’re ready to go:</p>
+<pre class="shellsession"><code>time bb -e &#39;(-&gt;&gt; (fs/list-dir &quot;.&quot;) (filter fs/directory?) (map fs/normalize) (map str) (take 3))&#39;</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb3-1" title="1">(<span class="st">&quot;.build&quot;</span> <span class="st">&quot;feature-lanterna&quot;</span> <span class="st">&quot;.repl&quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" title="2">bb -e    <span class="dv">0</span>,01s  user <span class="dv">0</span>,01s system <span class="dv">70</span><span class="va">%</span> cpu <span class="dv">0</span>,<span class="dv">017</span> total</a></code></pre></div>
+<h2 id="support-heart">Support :heart:</h2>
+<p>You can support this project via <a href="https://github.com/sponsors/borkdude">Github Sponsors</a>, <a href="https://opencollective.com/babashka">OpenCollective</a>, <a href="https://ko-fi.com/borkdude">Ko-fi</a> or indirectly via <a href="https://www.clojuriststogether.org/">Clojurists Together</a>.</p>
+<details>
+<p><summary>Top sponsors</summary></p>
+<ul>
+<li><a href="https://clojuriststogether.org/">Clojurists Together</a></li>
+<li><a href="https://roamresearch.com/">Roam Research</a></li>
+<li><a href="https://nextjournal.com/">Nextjournal</a></li>
+<li><a href="https://toyokumo.co.jp/">Toyokumo</a></li>
+<li><a href="https://www.cognitect.com/">Cognitect</a></li>
+<li><a href="https://kepler16.com/">Kepler16</a></li>
+<li><a href="https://www.adgoji.com/">Adgoji</a></li>
+</ul>
+</details>
+<h2 id="babashka-users">Babashka users</h2>
+<p>See <a href="doc/companies.md">companies</a> for a list of companies using babashka.</p>
+<p>Are you using babashka in your company or personal projects? Let us know <a href="https://github.com/babashka/babashka/issues/254">here</a>.</p>
+<h2 id="setting-expectations">Setting expectations</h2>
+<p>Babashka uses <a href="https://github.com/borkdude/sci">SCI</a> for interpreting Clojure. SCI implements a substantial subset of Clojure. Interpreting code is in general not as performant as executing compiled code. If your script takes more than a few seconds to run or has lots of loops, Clojure on the JVM may be a better fit as the performance on JVM is going to outweigh its startup time penalty. Read more about the differences with Clojure <a href="#differences-with-clojure">here</a>.</p>
+<h2 id="status">Status</h2>
+<p>Functionality regarding <code>clojure.core</code> and <code>java.lang</code> can be considered stable and is unlikely to change. Changes may happen in other parts of babashka, although we will try our best to prevent them. Always check the release notes or <a href="CHANGELOG.md" class="uri">CHANGELOG.md</a> before upgrading.</p>
+<h2 id="talk">Talk</h2>
+<p>To get an overview of babashka, you can watch this talk (<a href="https://speakerdeck.com/borkdude/babashka-and-the-small-clojure-interpreter-at-clojured-2020">slides</a>):</p>
+<p><a href="https://www.youtube.com/watch?v=Nw8aN-nrdEk"><img src="https://img.youtube.com/vi/Nw8aN-nrdEk/0.jpg" alt="Babashka at ClojureD 2020" /></a></p>
+<h2 id="babashka-book">Babashka book</h2>
+<p>The <a href="https://book.babashka.org">babashka book</a> contains detailed information about how to get the most out of babashka scripting.</p>
+<p>There is also the book <a href="https://www.braveclojure.com/quests/babooka/">Babashka Babooka</a>, by Daniel Higginbotham, who has also helped a lot of people learn Clojure with <a href="https://www.braveclojure.com/clojure-for-the-brave-and-true/">Clojure for the Brave and True</a>.</p>
+<h2 id="try-online">Try online</h2>
+<p>You can try babashka online with Nextjournal’s babashka <a href="http://nextjournal.com/try/babashka?cm6=1">notebook environment</a>.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="brew">Brew</h3>
+<p>Linux and macOS binaries are provided via brew.</p>
+<p>Install:</p>
+<pre><code>brew install borkdude/brew/babashka</code></pre>
+<p>Upgrade:</p>
+<pre><code>brew upgrade babashka</code></pre>
+<h3 id="nix">Nix</h3>
+<p>Linux and macOS (including ARM Macs) binaries are provided via nix (see the installation instructions for nix <a href="https://nixos.org/download.html">here</a>).</p>
+<p>Install:</p>
+<pre><code># Adding `nixpkgs-unstable` channel for more up-to-date binaries, skip this if you already have `nixpkgs-unstable` in your channel list
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable
+nix-channel --update
+nix-env -iA nixpkgs-unstable.babashka</code></pre>
+<p>Upgrade:</p>
+<pre><code>nix-channel --update
+nix-env -iA nixpkgs-unstable.babashka</code></pre>
+<p>You can find more documentation on how to use babashka with nix <a href="./doc/nix.md">here</a>.</p>
+<h3 id="alpine">Alpine</h3>
+<p>On Alpine it’s recommended to download the binary manually from <a href="https://github.com/babashka/babashka/releases">Github Releases</a> and use the static linux binary.</p>
+<h3 id="arch-linux">Arch (Linux)</h3>
+<p><code>babashka</code> is <a href="https://aur.archlinux.org/packages/babashka-bin/">available</a> in the <a href="https://aur.archlinux.org">Arch User Repository</a>. It can be installed using your favorite <a href="https://aur.archlinux.org">AUR</a> helper such as <a href="https://github.com/Jguer/yay">yay</a>, <a href="https://github.com/archlinuxfr/yaourt">yaourt</a>, <a href="https://github.com/oshazard/apacman">apacman</a> and <a href="https://github.com/rmarquis/pacaur">pacaur</a>. Here is an example using <code>yay</code>:</p>
+<pre><code>yay -S babashka-bin</code></pre>
+<h3 id="asdf">asdf</h3>
+<p><a href="https://github.com/asdf-vm/asdf">asdf</a> is an extendable version manager for linux and macOS. Note that asdf will add significant startup time to any babashka script, consider using <a href="#mise">mise</a> instead.</p>
+<p>Babashka can be installed using a plugin as follows:</p>
+<pre><code>asdf plugin add babashka https://github.com/pitch-io/asdf-babashka
+asdf install babashka latest</code></pre>
+<h3 id="mise">mise</h3>
+<p><a href="https://mise.jdx.dev/">mise</a> is a development environment setup tool for linux and macOS.</p>
+<p>Install:</p>
+<pre><code>mise use --global babashka@latest</code></pre>
+<p>Upgrade:</p>
+<pre><code>mise upgrade babashka</code></pre>
+<h3 id="windows">Windows</h3>
+<h4 id="scoop">Scoop</h4>
+<p>On Windows you can install using <a href="https://scoop.sh/">scoop</a> and the <a href="https://github.com/littleli/scoop-clojure">scoop-clojure</a> bucket.</p>
+<p>Or just follow these concrete steps:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode powershell"><code class="sourceCode powershell"><a class="sourceLine" id="cb12-1" title="1"><span class="co"># Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="co"># Set-ExecutionPolicy RemoteSigned -scope CurrentUser</span></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="fu">Invoke-Expression</span> (<span class="fu">New-Object</span> System.<span class="fu">Net</span>.<span class="fu">WebClient</span>).<span class="fu">DownloadString</span>(&#39;https://get.<span class="fu">scoop</span>.<span class="fu">sh</span>&#39;)</a>
+<a class="sourceLine" id="cb12-4" title="4"></a>
+<a class="sourceLine" id="cb12-5" title="5">scoop bucket add scoop-clojure https://github.<span class="fu">com</span>/littleli/scoop-clojure</a>
+<a class="sourceLine" id="cb12-6" title="6">scoop bucket add extras</a>
+<a class="sourceLine" id="cb12-7" title="7">scoop install babashka</a></code></pre></div>
+<h4 id="manual">Manual</h4>
+<p>If scoop does not work for you, then you can also just download the <code>bb.exe</code> binary from <a href="https://github.com/babashka/babashka/releases">Github releases</a> and place it on your path manually.</p>
+<h4 id="wsl1">WSL1</h4>
+<blockquote>
+<p>Note: WSL1 users might experience a BSOD, please use the –static install option when installing</p>
+</blockquote>
+<pre class="shell"><code>$ curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install
+$ chmod +x install
+$ ./install --static</code></pre>
+<h3 id="installer-script">Installer script</h3>
+<p>Install via the installer script for linux and macOS:</p>
+<pre class="shell"><code>$ curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install
+$ chmod +x install
+$ ./install</code></pre>
+<p>By default this will install into <code>/usr/local/bin</code> (you may need <code>sudo</code> for this). To change this, provide the directory name:</p>
+<pre class="shell"><code>$ ./install --dir .</code></pre>
+<p>To install a specific version, the script also supports <code>--version</code>:</p>
+<pre class="shell"><code>$ ./install --dir . --version 0.4.1</code></pre>
+<p>To force the download of the zip archive to a different directory than <code>/tmp</code> use the <code>--download-dir</code> argument:</p>
+<pre class="shell"><code>$ ./install --dir . --version 0.4.1 --download-dir .</code></pre>
+<p>On Linux, if you want to install the static binary version:</p>
+<pre class="shell"><code>$ ./install --dir . --version 0.4.1 --download-dir . --static</code></pre>
+<p>In case you want to check the download, you can use the <code>--checksum</code> option. This maybe useful for unattended installations:</p>
+<pre class="shell"><code>$ sha256sum babashka-0.4.1-linux-amd64-static.tar.gz
+ab70fb39fdbb5206c0a2faab178ffb54dd9597991a4bc13c65df2564e8f174f6  babashka-0.4.1-linux-amd64-static.tar.g
+$ ./install --dir /tmp --checksum ab70fb39fdbb5206c0a2faab178ffb54dd9597991a4bc13c65df2564e8f174f6 --static --version 0.4.1</code></pre>
+<p>Note that the <code>--checksum</code> option only works when <code>--version</code> option is also provided. This is to avoid breakage when a new version of Babashka is released.</p>
+<h3 id="github-releases">Github releases</h3>
+<p>You may also download a binary from <a href="https://github.com/babashka/babashka/releases">Github</a>. For linux there is a static binary available which can be used on Alpine.</p>
+<h3 id="ci">CI</h3>
+<ul>
+<li>On Github Actions it’s recommended to use <a href="https://github.com/DeLaGuardo/setup-clojure">setup-clojure</a> with <code>bb: latest</code>.</li>
+<li>You can use the <a href="https://github.com/babashka/babashka#installer-script">installer script</a> on any non-Windows CI system. CircleCI requires <code>sudo</code>.</li>
+<li>On Appveyor + Windows you can use a bit of <a href="https://github.com/clj-kondo/clj-kondo/blob/39b5cb2b0d3d004c005e8975b6fafe0e314eec68/appveyor.yml#L60-L64">Powershell</a>.</li>
+</ul>
+<h2 id="docker">Docker</h2>
+<p>Check out the image on <a href="https://hub.docker.com/r/babashka/babashka/">Docker hub</a>.</p>
+<h2 id="news"><a href="doc/news.md">News</a></h2>
+<p>Check out the <a href="doc/news.md">news</a> page to keep track of babashka-related news items.</p>
+<h2 id="built-in-namespaces"><a href="https://book.babashka.org/#built-in-namespaces">Built-in namespaces</a></h2>
+<p>Go <a href="https://book.babashka.org/#built-in-namespaces">here</a> to see the full list of built-in namespaces.</p>
+<h2 id="compatible-projects"><a href="doc/projects.md">Compatible Projects</a></h2>
+<p>A list of projects (scripts, libraries, pods and tools) known to work with babashka.</p>
+<h2 id="badges">Badges</h2>
+<!-- note to editor: it seems a blank line must appear before code blocks within <details> -->
+<p><a href="https://babashka.org"><img src="/logo/badge.svg" alt="bb compatible" /></a></p>
+<p>The babashka compatible badge indicates that a <a href="doc/projects.md">library can be used as babashka dependency</a>.</p>
+<p>If this is the case for your library, we encourage you to proudly display this badge.</p>
+<details>
+<p><summary>Markdown</summary></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb20-1" title="1"><span class="ot">[![bb compatible](https://raw.githubusercontent.com/babashka/babashka/master/logo/badge.svg)</span>](https://babashka.org)</a></code></pre></div>
+</details>
+<details>
+<p><summary>AsciiDoc</summary></p>
+<pre class="asciidoc"><code>https://babashka.org[image:https://raw.githubusercontent.com/babashka/babashka/master/logo/badge.svg[bb compatible]]</code></pre>
+</details>
+<details>
+<p><summary>HTML</summary></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://babashka.org&quot;</span><span class="ot"> rel=</span><span class="st">&quot;nofollow&quot;</span><span class="kw">&gt;&lt;img</span><span class="ot"> src=</span><span class="st">&quot;https://github.com/babashka/babashka/raw/master/logo/badge.svg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;bb compatible&quot;</span><span class="ot"> style=</span><span class="st">&quot;max-width: 100%;&quot;</span><span class="kw">&gt;&lt;/a&gt;</span></a></code></pre></div>
+</details>
+<p><br/></p>
+<p><a href="https://babashka.org"><img src="/logo/built-in-badge.svg" alt="bb built-in" /></a></p>
+<p>The babashka built-in badge means that a <a href="https://book.babashka.org/#built-in-namespaces">library has been built directly into babashka</a> and requires no extra dependencies to use it.</p>
+<p>If this rare honor belongs to your library, you should display this badge.</p>
+<details>
+<p><summary>Markdown</summary></p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb23-1" title="1"><span class="ot">[![bb built-in](https://raw.githubusercontent.com/babashka/babashka/master/logo/built-in-badge.svg)</span>](https://babashka.org)</a></code></pre></div>
+</details>
+<details>
+<p><summary>AsciiDoc</summary></p>
+<pre class="asciidoc"><code>https://babashka.org[image:https://raw.githubusercontent.com/babashka/babashka/master/logo/built-in-badge.svg[bb built-in]]</code></pre>
+</details>
+<details>
+<p><summary>HTML</summary></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://babashka.org&quot;</span><span class="ot"> rel=</span><span class="st">&quot;nofollow&quot;</span><span class="kw">&gt;&lt;img</span><span class="ot"> src=</span><span class="st">&quot;https://github.com/babashka/babashka/raw/master/logo/built-in-badge.svg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;bb built-in&quot;</span><span class="ot"> style=</span><span class="st">&quot;max-width: 100%;&quot;</span><span class="kw">&gt;&lt;/a&gt;</span></a></code></pre></div>
+</details>
+<p></br></p>
+<h2 id="swag">Swag</h2>
+<ul>
+<li><a href="https://www.etsy.com/listing/1241766068/babashka-clj-kondo-nbb-shirt">t-shirt</a></li>
+</ul>
+<h2 id="pods"><a href="https://github.com/babashka/babashka.pods">Pods</a></h2>
+<p>Pods are programs that can be used as a Clojure library by babashka. Documentation is available in the <a href="https://github.com/babashka/pods">pod library repo</a>.</p>
+<p>A list of available pods can be found in the <a href="https://github.com/babashka/pod-registry">pod registry</a>.</p>
+<h2 id="differences-with-clojure">Differences with Clojure</h2>
+<p>Babashka is implemented using the <a href="https://github.com/borkdude/sci">Small Clojure Interpreter</a>. This means that a snippet or script is not compiled to JVM bytecode, but executed form by form by a runtime which implements a substantial subset of Clojure. Babashka is compiled to a native binary using <a href="https://github.com/oracle/graal">GraalVM</a>. It comes with a selection of built-in namespaces and functions from Clojure and other useful libraries. The data types (numbers, strings, persistent collections) are the same. Multi-threading is supported (<code>pmap</code>, <code>future</code>).</p>
+<p>Differences with Clojure:</p>
+<ul>
+<li><p>A pre-selected set of Java classes are supported. You cannot add Java classes at runtime.</p></li>
+<li><p>Interpretation comes with overhead. Therefore loops are slower than in Clojure on the JVM. In general interpretation yields slower programs than compiled programs.</p></li>
+<li><p>No <code>deftype</code>, <code>definterface</code> and unboxed math.</p></li>
+<li><p><code>defprotocol</code> and <code>defrecord</code> are implemented using multimethods and regular maps. Ostensibly they work the same, but under the hood there are no Java classes that correspond to them.</p></li>
+<li><p>Currently <code>reify</code> works only for one class at a time</p></li>
+<li><p>The <code>clojure.core.async/go</code> macro is not (yet) supported. For compatibility it currently maps to <code>clojure.core.async/thread</code>. More info <a href="https://book.babashka.org/#core_async">here</a>.</p></li>
+</ul>
+<h2 id="package-babashka-script-as-a-aws-lambda">Package babashka script as a AWS Lambda</h2>
+<p>AWS Lambda runtime doesn’t support signals, therefore babashka has to disable handling of SIGINT and SIGPIPE. This can be done by setting <code>BABASHKA_DISABLE_SIGNAL_HANDLERS</code> to <code>true</code>.</p>
+<h2 id="articles-podcasts-and-videos">Articles, podcasts and videos</h2>
+<ul>
+<li><a href="https://jmglov.net/blog/2023-01-04-blambda-analyses-sites.html">Blambda analyses sites</a> by Josh Glover</li>
+<li><a href="https://www.gethop.dev/post/the-wizard-of-hop-how-we-built-the-web-based-hop-cli-settings-editor-using-babashka-and-scittle">The wizard of HOP - How we built the web based HOP CLI Settings Editor using Babashka and Scittle</a> by Bingen Galartza</li>
+<li><a href="https://rattlin.blog/bbgum.html">Simple TUIs with Babashka and Gum</a> by Rattlin.blog</li>
+<li><a href="https://www.pixelated-noise.com/blog/2023/01/20/bb-dialog-announcement/index.html">Babashka And Dialog Part Ii: Announcing The Bb-Dialog Library</a> by A.C. Danvers</li>
+<li><a href="https://www.braveclojure.com/quests/babooka/">Babashka Babooka</a>: Write Command-Line Clojure by Daniel Higginbotham</li>
+<li><a href="https://tech.toryanderson.com/2023/01/14/re-writing-a-globalprotect-openconnect-vpn-connect-script-in-babashka/">Re-Writing a GlobalProtect OpenConnect VPN Connect script in Babashka</a> by Tory Anderson</li>
+<li><a href="https://medium.com/graalvm/babashka-how-graalvm-helped-create-a-fast-starting-scripting-environment-for-clojure-b0fcc38b0746">Babashka: How GraalVM Helped Create a Fast-Starting Scripting Environment for Clojure</a> by Michiel Borkent (Japanese version <a href="(https://logico-jp.io/2023/01/07/babashka-how-graalvm-helped-create-a-fast-starting-scripting-environment-for-clojure/)">here</a>)</li>
+<li><a href="https://www.pixelated-noise.com/blog/2022/12/09/dialog-and-babashka/index.html">Adding Prompts To Your Babashka Scripts With Dialog</a> by A.C. Danvers</li>
+<li><a href="https://blog.exupero.org/scraping-an-html-dictionary-with-babashka-and-bootleg/">Scraping an HTML dictionary with Babashka and Bootleg</a> by exupero</li>
+<li><a href="https://www.karimarttila.fi/clojure/2022/12/04/using-babashka-to-get-electricity-prices.html">Using Babashka to Get Electricity Prices</a> by Kari Marttila</li>
+<li><a href="https://presumably.de/how-to-do-things-with-babashka.html">How to Do Things With Babashka</a> by Paulus Esterhazy (2022-12)</li>
+<li><a href="https://yogthos.net/posts/2022-11-26-nREPL-system-interaction.html">Using nREPL as a system interface</a> by Dmitri Sotnikov</li>
+<li><a href="https://blaster.ai/blog/posts/manage-git-hooks-w-babashka.html">Manage git hooks with babashka tasks</a> by Mykhaylo Bilyanskyy</li>
+<li><a href="https://ian-muge.medium.com/messing-around-with-babashka-f181a9003faa">Messing around with babashka</a> by Ian Muge</li>
+<li>Introducing <a href="https://radsmith.com/bbin">bbin</a> by Radford Smith (2022-09)</li>
+<li><a href="https://javahippie.net/clojure/2022/07/23/deleting-aws-glacier-vaults-with-babashka.html">Deleting AWS Glacier vaults with babashka</a> by Tim Zöller</li>
+<li><a href="https://play.teod.eu/document-transform-pandoc-clojure/">Recursive document transformations with Pandoc and Clojure</a> by Teodor Heggelund</li>
+<li><a href="https://jmglov.net/blog/2022-07-03-blambda.html">Blambda!</a> by Josh Glover</li>
+<li><a href="https://blog.michielborkent.nl/babashka-cli.html">Babashka CLI</a>: turn Clojure functions into CLIs!</li>
+<li><a href="https://www.linkedin.com/pulse/breakneck-babashka-k8s-heow-goodman/">Breakneck Babashka on K8s</a> by Heow Goodman</li>
+<li><a href="https://play.teod.eu/document-transform-pandoc-clojure/">Recursive document transformations with Pandoc and Clojure</a></li>
+<li><a href="https://www.youtube.com/watch?v=bf8KLKkCH2g">Detecting inconsistent aliases in a clojure codebase</a> by Oxalorg</li>
+<li><a href="https://dawranliou.com/blog/i-too-wrote-myself-a-static-site-generator/">I, too, Wrote Myself a Static Site Generator</a> by Daw-Ran Liou</li>
+<li><a href="https://youtu.be/ZvOs5Ele6VE">Babashka and Clojure</a> by Rahul Dé at North Virginia Linux Users Group</li>
+<li><a href="https://youtu.be/jm0RXmyjRJ8">Create a password manager with Clojure using Babashka, sqlite, honeysql and stash</a> by Daniel Amber</li>
+<li><a href="https://www.loop-code-recur.io/live-clojure-cookbooks">Writing Clojure-living-cookbooks</a> by Cyprien Pannier</li>
+<li><a href="https://blog.michielborkent.nl/using-babashka-with-php.html">Using babashka with PHP</a> by Michiel Borkent</li>
+<li><a href="https://ag91.github.io/blog/2021/11/05/moldable-emacs-a-clojure-playground-with-babashka/">Moldable Emacs: a Clojure Playground with Babashka</a> by Andrea</li>
+<li><a href="https://javahippie.net/clojure/2021/10/18/finding-my-inner-wes-anderson.html">Finding my inner Wes Anderson with #Babashka</a> by Tim Zöller</li>
+<li><a href="https://blog.jakubholy.net/2021/awesome-babashka-dash/">Awesome Babashka: Parse &amp; produce HTML and SQLite</a> by Jakub Holý</li>
+<li><a href="https://youtu.be/u5ECoR7KT1Y">Babashka tasks</a>, talk by Michiel Borkent</li>
+<li><a href="https://youtu.be/b7NPKsm8gkc">Rewriting a clojure file with rewrite-clj and babashka</a>, video by Oxalorg</li>
+<li><a href="https://timjaeger.io/20210627-integrating-babashka-with-bazel.html">Integrating Babashka into Bazel</a> by Tim Jäger</li>
+<li><a href="https://youtu.be/Yjeh57eE9rg">Talk</a>: Babashka: a native Clojure interpreter for scripting — The 2021 Graal Workshop at CGO</li>
+<li><a href="https://savo.rocks/posts/playing-new-music-on-old-car-stereo-with-clojure-and-babashka/">Blog</a>: Playing New Music On Old Car Stereo With Clojure And Babashka</li>
+<li><a href="https://martinklepsch.org/posts/homoiconicity-and-feature-flags.html">Homoiconicity and feature flags</a> by Martin Klepsch</li>
+<li><a href="https://eccentric-j.com/blog/clojure-like-its-php.html">Clojure like its PHP</a> by Jay Zawrotny (eccentric-j)</li>
+<li><a href="https://www.jocas.lt/blog/post/babashka-aws-lambda/">Deploy babashka script to AWS Lambda</a> by Dainius Jocas.</li>
+<li><a href="https://youtu.be/Tmgy57R9HZM">Automating Video Edits with Clojure and ffmpeg</a> by Adam James.</li>
+<li><a href="https://www.ieugen.ro/posts/2020/2020-12-26-export-passwords-with-babashka/">Exporter for passwordstore.org</a> by Eugen Stan</li>
+<li><a href="https://youtu.be/pgNp4Lk3gf0">Babashka and sci internals</a>, a talk by Michiel Borkent at the <a href="https://www.meetup.com/London-Clojurians">London Clojurians Meetup</a>.</li>
+<li><a href="https://youtu.be/RogyxI-GaGQ">Writing Clojure on the Command Line with Babashka</a>, a talk by Nate Jones.</li>
+<li><a href="http://www.karimarttila.fi/clojure/2020/09/01/using-clojure-in-command-line-with-babashka.html">Using Clojure in Command Line with Babashka</a>, a blog article by Kari Marttila.</li>
+<li><a href="https://youtu.be/3EUMA6bd-xQ">Babashka and GraalVM; taking Clojure to new places</a>, a talk by Michiel Borkent at <a href="https://www.meetup.com/Clojure-NYC/">Clojure/NYC</a>.</li>
+<li><a href="https://blog.davemartin.me/posts/import-a-csv-into-kafka-using-babashka/">Import a CSV into Kafka, using Babashka</a> by Dave Martin</li>
+<li><a href="https://amontalenti.com/2020/07/11/babashka">Learning about babashka</a>, a blog article by Andrew Montalenti</li>
+<li><a href="https://www.youtube.com/watch?v=3Q4GUiUIrzg&amp;feature=emb_logo">Babashka Pods</a> presentation by Michiel Borkent at the <a href="http://meetup.com/The-Dutch-Clojure-Meetup">Dutch Clojure Meetup</a>.</li>
+<li><a href="https://tech.toyokumo.co.jp/entry/aws_logs_babashka">AWS Logs using Babashka</a>, a blog published by <a href="https://toyokumo.co.jp/">Toyokumo</a>.</li>
+<li><a href="https://www.therepl.net/episodes/36/">The REPL podcast</a> Michiel Borkent talks about <a href="https://github.com/borkdude/clj-kondo">clj-kondo</a>, <a href="https://github.com/borkdude/jet">Jet</a>, Babashka, and <a href="https://github.com/oracle/graal">GraalVM</a> with Daniel Compton.</li>
+<li><a href="https://youtu.be/0YmZYnwyHHc">Implementing an nREPL server for babashka</a>: impromptu presentation by Michiel Borkent at the online <a href="http://meetup.com/The-Dutch-Clojure-Meetup">Dutch Clojure Meetup</a></li>
+<li><a href="https://soundcloud.com/user-959992602/s3-e5-babashka-with-michiel-borkent">ClojureScript podcast</a> with Jacek Schae interviewing Michiel Borkent</li>
+<li><a href="https://www.youtube.com/watch?v=Nw8aN-nrdEk">Babashka talk at ClojureD</a> (<a href="https://speakerdeck.com/babashka/babashka-and-the-small-clojure-interpreter-at-clojured-2020">slides</a>) by Michiel Borkent</li>
+<li><a href="https://juxt.pro/blog/posts/babashka.html">Babashka: a quick example</a> by Malcolm Sparks</li>
+<li><a href="https://stuartsierra.com/2019/12/21/clojure-start-time-in-2019">Clojure Start Time in 2019</a> by Stuart Sierra</li>
+<li><a href="https://lambdaisland.com/blog/2019-12-19-advent-of-parens-19-advent-of-random-hacks">Advent of Random Hacks</a> by Arne Brasseur</li>
+<li><a href="https://lambdaisland.com/blog/2019-12-05-advent-of-parens-5-clojure-in-the-shell">Clojure in the Shell</a> by Arne Brasseur</li>
+<li><a href="https://purelyfunctional.tv/issues/purelyfunctional-tv-newsletter-351-clojure-tool-babashka/">Clojure Tool</a> by Eric Normand</li>
+</ul>
+<h2 id="building-babashka"><a href="doc/build.md">Building babashka</a></h2>
+<h2 id="developing-babashka"><a href="doc/dev.md">Developing Babashka</a></h2>
+<h2 id="including-new-libraries-or-classes">Including new libraries or classes</h2>
+<p>Before new libraries or classes go into the standardly distributed babashka binary, these evaluation criteria are considered:</p>
+<ul>
+<li>The library or class is useful for general purpose scripting.</li>
+<li>Adding the library or class would make babashka more compatible with Clojure libraries relevant to scripting.</li>
+<li>The library cannot be interpreted by with babashka using <code>--classpath</code>.</li>
+<li>The functionality can’t be met by shelling out to another CLI or can’t be written as a small layer over an existing CLI (like <code>babashka.curl</code>) instead.</li>
+<li>The library cannot be implemented as a <a href="https://github.com/babashka/babashka.pods">pod</a>.</li>
+</ul>
+<p>If not all of the criteria are met, but adding a feature is still useful to a particular company or niche, adding it behind a feature flag is still a possibility. This is currently the case for <code>next.jdbc</code> and the <code>PostgresQL</code> and <code>HSQLDB</code> database drivers. Companies interested in these features can compile an instance of babashka for their internal use. Companies are also free to make forks of babashka and include their own internal libraries. If their customized babashka is interesting to share with the world, they are free to distribute it using a different binary name (like <code>bb-sql</code>, <code>bb-docker</code>, <code>bb-yourcompany</code>, etc.). See the <a href="doc/build.md#feature-flags">feature flag documentation</a> and the implementation of the existing feature flags (<a href="https://github.com/babashka/babashka/commit/02c7c51ad4b2b1ab9aa95c26a74448b138fe6659">example commit</a>).</p>
+<h2 id="related-projects">Related projects</h2>
+<ul>
+<li><a href="https://planck-repl.org/">planck</a></li>
+<li><a href="https://github.com/candid82/joker">joker</a></li>
+<li><a href="https://github.com/dundalek/closh">closh</a></li>
+<li><a href="https://github.com/anmonteiro/lumo">lumo</a></li>
+</ul>
+<h2 id="contributors">Contributors</h2>
+<p>Thanks to all the people that contributed to babashka:</p>
+<ul>
+<li><a href="https://circleci.com/">CircleCI</a> for CI and additional support</li>
+<li><a href="https://github.com/tonsky">Nikita Prokopov</a> for the logo</li>
+<li><a href="https://github.com/babashka/babashka/graphs/contributors">Contributors</a> and other users posting issues with bug reports and ideas</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Copyright © 2019-2020 Michiel Borkent</p>
+<p>Distributed under the EPL License. See LICENSE.</p>
+<p>This project contains code from: - Clojure, which is licensed under the same EPL License.</p>
+
+</body>
+</html>

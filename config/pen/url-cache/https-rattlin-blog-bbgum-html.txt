@@ -1,0 +1,240 @@
+HTTP/1.1 200 OK
+Date: Thu, 31 Oct 2024 05:24:19 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+alt-svc: h3=":443"; ma=86400
+last-modified: Sat, 25 Mar 2023 23:51:39 GMT
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=piniCFnFGamvVK0uXD%2FhQ%2BoHQCStz6PckI3H9QBwrbqn5QW%2Bwy0yV2DRhr%2BcNzU7XuXTUPmff3syIrXJE8bev3XpsbMSSpPLFy66UIYQiehp5XI7WTmqEXm3yLunZsspOw21TUCDcjKnhpI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8db137d11ec51c4d-AKL
+server-timing: cfL4;desc="?proto=TCP&rtt=33747&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3280&recv_bytes=516&delivery_rate=139448&cwnd=253&unsent_bytes=0&cid=d44e33344806f766&ts=874&x=0"
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple TUIs with Babashka and Gum</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link type="application/atom+xml" rel="alternate" href="atom.xml" title="Simple TUIs with Babashka and Gum">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clojure.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-lua.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/diff-highlight/prism-diff-highlight.min.js" integrity="sha512-gNqZmXmzLWyg/00PDvTnX4q533JiXbxFdTWJC5hfOyHORHXOC6PtDP5Mm2Vpa4faIMONoKQADwhhbst9Ok1/oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/diff-highlight/prism-diff-highlight.min.css" integrity="sha512-rErSjI34XKsATVf+BW6GnuWVmj7imdMR7AIyb4ydHhiMFewUiJOeN9bYO35iCgdG+3Bxkl0GkAs0E8hrDYooLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-diff.min.js" integrity="sha512-tBR4SAva+2bw36ToxaFeOEvgqxWHON25E9xp+kEBfw175sS5OusQEH8GrigKgTdHUXcKsK1yiyfo7fctBYl+rA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script data-goatcounter="https://rattlin-blog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+    
+
+    <link rel="stylesheet" href="prism-one-dark.css">
+
+
+
+    <!-- Social sharing (Facebook, Twitter, LinkedIn, etc.) -->
+    <meta name="title" content="Simple TUIs with Babashka and Gum">
+    <meta name="twitter:title" content="Simple TUIs with Babashka and Gum">
+    <meta property="og:title" content="Simple TUIs with Babashka and Gum">
+    <meta property="og:type" content="website">
+
+
+    <meta name="twitter:url" content="/bbgum.html">
+    <meta property="og:url" content="/bbgum.html">
+
+
+    <!-- blog image -->
+    <meta name="twitter:image" content="https://rattlin.blog/assets/rattlin.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://rattlin.blog/assets/rattlin.png">
+    <meta property="og:image:alt" content="Now in that blog there was...">
+
+    <meta name="twitter:card" content="Now in that blog there was...">
+
+
+
+  </head>
+  <body>
+
+    <div class="site-header">
+      <div class="wrapper">
+        <div class="site-nav">
+          <a class="page-link" href="archive.html">Archive</a>
+          <a class="page-link" href="tags/index.html">Tags</a>
+          <!--
+          <a class="page-link" href="">Discuss</a>
+          -->
+	  <a class="page-link" href="atom.xml">
+            Feed
+          </a>
+	  
+	  
+        </div>
+        <div>
+          <h1 class="site-title">
+            <a class="page-link" href="index.html">The Rattlin&#39; Blog</a>
+          </h1>
+	  <p>Now in that blog there was...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+
+      <h1>
+  
+  Simple TUIs with Babashka and Gum
+  
+</h1>
+<p>I've been trying to learn Clojure for a long time. I recently discovered <a href='https://Babashka.org/'>Babashka</a> (<code>bb</code>) and now I finally feel like I'm getting somewhere. It's been a lot of fun!</p><p>Babashka ships as a self-contained binary loaded with an amazing suite of <a href='https://book.Babashka.org/#libraries'>libraries</a> to get your work done. In addition to libraries, you can use <a href='https://book.Babashka.org/#pods'>Babashka
+pods</a> to make a bridge to just about anything else you need. There's a whole <a href='https://Babashka.org/toolbox/'>box of tools</a> at your disposal! A growing subset of the Clojure ecosystem is also available to load as additional dependencies, such as the wonderful <a href='https://github.com/seancorfield/honeysql'>HoneySQL</a>.</p><p>One element missing from the <code>bb</code> toolbox was an answer for making Terminal UIs (TUI) - fortunately there's another tool that composes well with Babashka to fill that gap: <a href='https://github.com/charmbracelet/gum'>gum</a>.</p><!-- end-of-preview --><h2><code>gum</code> - from <a href='https://charm.sh/'>charm.sh</a></h2><p>The Go community has an amazing library for making TUI applications, called <a href='https://github.com/charmbracelet/bubbletea'>bubbletea</a>, along with companion libraries <a href='https://github.com/charmbracelet/lipgloss'>lipgloss</a> for styling, and some reusable components as <a href='https://github.com/charmbracelet/bubbles'>bubbles</a>. If you weren't writing Go you were out of luck, until fairly <a href='https://twitter.com/charmcli/status/1552644876151422976'>recently!</a></p><p>The folks at <a href='https://charm.sh/'>charm.sh</a> released a tool called <a href='https://github.com/charmbracelet/gum'>gum</a> that, similar to <code>bb</code>, ships as a single binary loaded with functionality. <code>gum</code> is intended to be shelled out to from scripts - perfect for <code>bb</code>!</p><p><img   style="max-width: 100%;"   src="../assets/bbgum/demo.gif"   alt="bbgum (recorded with charm.sh vhs)" /></p><h2>Test Drive</h2><p>Recently I supported a training event that required the management of 100+ virtual machines. These machines we assigned to various teams, and each team could request configuration changes. To manage this I used a few scripts and a SQLite database. With <code>bb</code> that would have been much nicer.</p><p>To give <code>gum</code> and <code>bb</code> a proper test drive I wrote a program that:</p><ol><li>Prompts the user for a SQL query to run<ul><li>Uses <code>gum writer</code> to prompt the user, similar to a <code>textarea</code></li></ul></li><li>Runs the query and shows the results<ul><li>Shells out to <code>sqlite3</code> to run the query</li><li>Uses <code>gum table</code> to display as a table</li></ul></li><li>Confirms before moving forward<ul><li>Uses <code>gum confirm</code> to show a confirm dialog, an error exit code is used to    denote a negative response</li></ul></li><li>Prompts for a selection of templates to run<ul><li>Uses <code>gum choose --no-limit</code> with a list of files from the templates    directory</li></ul></li><li>Executes each template and exits<ul><li>Uses <a href='https://github.com/yogthos/Selmer'>selmer</a> - a Django inspired    template system that is included with Babashka</li></ul></li></ol><h2>Calling Gum</h2><p>Shelling out to <code>gum</code> is pretty straight forward. The return values and exit codes from <code>gum</code> make getting user input easy.</p><pre><code class="lang-clojure">&#40;defn header &#91;msg&#93;
+  &#40;shell &#40;format &quot;gum style --padding 1 --foreground 212 '%s'&quot; msg&#41;&#41;&#41;
+
+&#40;defn input &#91;&amp; {:keys &#91;value placeholder&#93; :or {value &quot;&quot; placeholder &quot;&quot;}}&#93;
+  &#40;-&gt; &#40;shell {:out :string}
+             &#40;format &quot;gum input --placeholder '%s' --value '%s'&quot; placeholder value&#41;&#41;
+      :out
+      str/trim&#41;&#41;
+
+&#40;defn write &#91;value placeholder&#93;
+  &#40;-&gt; &#40;shell {:out :string}
+             &#40;format &quot;gum write --show-line-numbers --placeholder '%s' --value '%s'&quot; placeholder value&#41;&#41;
+      :out
+      str/trim&#41;&#41;
+
+&#40;defn table &#91;csv&#93;
+  &#40;let &#91;data &#40;csv/read-csv csv&#41;
+        headers &#40;-&gt;&gt; data
+                     first
+                     &#40;map str/upper-case&#41;&#41;
+        num-headers &#40;count headers&#41;
+        width &#40;int &#40;/ 100.0 num-headers&#41;&#41;
+        cmd &#40;format &quot;gum table --widths %s&quot; &#40;str/join &quot;,&quot; &#40;repeat num-headers width&#41;&#41;&#41;&#93;
+    &#40;shell {:in csv :out :string} cmd&#41;&#41;&#41;
+
+&#40;defn confirm &#91;msg&#93;
+  &#40;-&gt; &#40;shell {:continue true}
+             &#40;format &quot;gum confirm '%s'&quot; msg&#41;&#41;
+      :exit
+      zero?&#41;&#41;
+
+&#40;defn choose
+  &#91;opts &amp; {:keys &#91;no-limit limit&#93;}&#93;
+  &#40;let &#91;opts &#40;str/join &quot; &quot; opts&#41;
+        limit &#40;str &quot;--limit &quot; &#40;or limit 1&#41;&#41;
+        no-limit &#40;if no-limit &#40;str &quot;--no-limit&quot;&#41; &quot;&quot;&#41;
+        cmd &#40;format &quot;gum choose %s %s %s&quot; limit no-limit opts&#41;&#93;
+    &#40;-&gt; &#40;shell {:out :string} cmd&#41;
+        :out
+        str/trim
+        str/split-lines&#41;&#41;&#41;
+</code></pre><p><blockquote> <b>Update!</b> Since publishing this blog post a Clojure library for interacting with Gum has been published: <a href='https://github.com/lispyclouds/bblgum'>bblgum</a>.</p><p>This library provides a simple but expressive interface to the underlying Gum controls. Here's how you would display a confirm dialog that returns a <code>bool</code>:</p><pre><code class="lang-clojure">&#40;b/gum {:cmd :confirm :as :bool :args &#91;&quot;Are you ready?&quot;&#93;}&#41;
+</code></pre><p>The source code of the library is short and instructive - definitely worth reading! </blockquote></p><h3>Generating Data</h3><p>To generate the example data for the demo I wrote another Babashka script which uses a few additional dependencies not included by default.</p><p>Dependencies are managed by a <code>bb.edn</code> file, similar to <code>deps.edn</code> from Clojure.</p><pre><code class="lang-clojure">;; bb.edn
+{:paths &#91;&quot;src&quot;&#93;
+ :deps
+ {faker/faker {:mvn/version &quot;0.2.2&quot;}
+  com.github.seancorfield/honeysql {:mvn/version &quot;2.4.969&quot;}}}
+</code></pre><p>Using <a href='https://github.com/paraseba/faker'>faker</a> to generate the domain names simplified a lot of the data generation, I only had to generate a random IP address and assign teams.</p><p>For IP address generation I wanted addresses in the <code>10.0.0.0/8</code> range, so I generated a random <code>int</code> in that range. Clojure has a nice radix notation for writing number literals.</p><p>This example also shows some interop with the Java classes that Babashka also <a href='https://github.com/babashka/babashka/blob/master/src/babashka/impl/classes.clj'>includes</a>.</p><pre><code class="lang-clojure">&#40;require '&#91;clojure.string :as str&#93;
+         '&#91;faker.internet :as internet&#93;
+         '&#91;babashka.process :refer &#91;process check&#93;&#93;
+         '&#91;honey.sql :as sql&#93;
+         '&#91;honey.sql.helpers :refer &#91;insert-into columns values&#93;&#93;&#41;
+
+&#40;import java.net.InetAddress
+        java.nio.ByteBuffer&#41;
+
+&#40;defn rand-10-addr-int &#91;&#93;
+  &#40;let &#91;min 2r00001010000000000000000000000001
+        max 2r00001010111111111111111111111111
+        range &#40;- max min&#41;&#93;
+    &#40;+ min &#40;rand-int range&#41;&#41;&#41;&#41;
+
+&#40;defn ip-address &#91;n&#93;
+  &#40;-&gt; &#40;.getByAddress InetAddress
+                     &#40;-&gt; &#40;ByteBuffer/allocate 4&#41;
+                         &#40;.putInt n&#41;
+                         &#40;.array&#41;&#41;&#41;
+      .toString
+      &#40;str/replace-first &quot;/&quot; &quot;&quot;&#41;&#41;&#41;
+
+&#40;defn gen-data &#91;n&#93;
+  &#40;map vector
+       &#40;take n &#40;repeatedly #&#40;ip-address &#40;rand-10-addr-int&#41;&#41;&#41;&#41;
+       &#40;take n &#40;cycle &#91;&quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot;&#93;&#41;&#41;
+       &#40;take n &#40;repeatedly internet/domain-name&#41;&#41;&#41;&#41;
+
+&#40;comment
+  &#40;let &#91;data &#40;gen-data 85&#41;
+        sql &#40;sql/format
+             &#40;-&gt; &#40;insert-into :inventory&#41;
+                 &#40;columns :ip :team :domain&#41;
+                 &#40;values data&#41;&#41;
+             {:inline true}&#41;
+        sql &#40;first sql&#41;&#93;
+    &#40;-&gt; &#40;process {:in sql :out :string} &quot;sqlite3 some.db&quot;&#41;
+        check
+        :out&#41;&#41;
+  &#42;e&#41;
+</code></pre><p>You can checkout the full code <a href='https://gitlab.com/rattlin/bb-gum'>here</a></p><h2>Extending the example</h2><p>Possible further work on this example program:</p><ol><li>Use <a href='https://book.babashka.org/#tasks'>Babashka tasks</a> to run the data   generation script</li><li>Distribute it with <a href='https://github.com/babashka/bbin'>bbin</a></li><li>Accept command-line arguments with <a href='https://github.com/babashka/cli'>babashka.cli</a> or <a href='https://github.com/clojure/tools.cli'>clojure.tools.cli</a></li><li>Publish a <code>gum</code> pod for easier integration</li></ol><h2>Other Options</h2><p>Admittedly there are some limitations to the UX exposed by Gum. Another option that keeps you in a REPL with parentheses is <a href='https://github.com/babashka/nbb'>Node
+Babashka</a>. Advertised as "Ad-hoc CLJS scripting on Node.js" <code>nbb</code> allows you to write CLJS without any JVM in sight.</p><p>The <a href='https://github.com/babashka/nbb#reagent'>docs</a> showcase using <a href='https://github.com/vadimdemedes/ink'>ink</a> to build UIs in the terminal using React with <a href='https://github.com/reagent-project/reagent'>Reagent</a>.</p><h2>Final Notes</h2><p>This was my first blog post ever! I hope it was helpful.</p><p>For more details on how <code>bb</code> works check out:</p><ol><li><a href='https://medium.com/graalvm/babashka-how-graalvm-helped-create-a-fast-starting-scripting-environment-for-clojure-b0fcc38b0746'>How GraalVM Helped Create a Fast-Starting Scripting Environment for Clojure
+</a></li><li><a href='https://www.youtube.com/watch?v=Nw8aN-nrdEk&ab_channel=%3AclojureD'>clojureD 2020: "Babashka and Small Clojure Interpreter: Clojure in new contexts" by Michiel Borkent
+</a></li></ol><p>Great thanks and admiration to the awesome <a href='https://twitter.com/borkdude'>@borkdude</a>, the mind behind Babashka, Node.js Babashka, the <a href='https://github.com/babashka/sci'>Small Clojure Interpreter
+(SCI)</a> and <a href='https://github.com/borkdude'>countless other amazing
+projects</a></p><p>This blog is also powered by <a href='https://github.com/borkdude/quickblog'>quickblog</a> (another borkdude project 🤯)</p><p>The gif was recorded with <a href='https://github.com/charmbracelet/vhs'>vhs</a> (also from charm.sh)</p><h4>Discuss</h4><p><a href='https://lobste.rs/s/9gc5gb/simple_tuis_with_babashka_gum'>🦞</a> - <a href='https://news.ycombinator.com/item?id=34453679'>🟧</a> - <a href='https://www.reddit.com/r/Clojure/comments/10g8npc/simple_tuis_with_babashka_and_gum/'>🤖</a></p>
+<!--
+<p>Discuss this post <a href="">here</a>.</p>
+-->
+
+<div style="display: flex; justify-content: space-between;">
+  <p><i>Published: 2023-01-16</i></p>
+  
+  <p>
+    <i>
+    Tagged:
+    
+    <span class="tag">
+      <a href="tags/clojure.html">clojure</a>
+    </span>
+    
+    <span class="tag">
+      <a href="tags/tui.html">tui</a>
+    </span>
+    
+    <span class="tag">
+      <a href="tags/cli.html">cli</a>
+    </span>
+    
+    <span class="tag">
+      <a href="tags/gum.html">gum</a>
+    </span>
+    
+    <span class="tag">
+      <a href="tags/bb.html">bb</a>
+    </span>
+    
+    <span class="tag">
+      <a href="tags/sql.html">sql</a>
+    </span>
+    
+    </i>
+  </p>
+  
+</div>
+
+
+      
+      <div style="margin-bottom: 20px; float: right;">
+        <a class="page-link" href="archive.html">Archive</a>
+      </div>
+      
+    </div>
+  </body>
+</html>

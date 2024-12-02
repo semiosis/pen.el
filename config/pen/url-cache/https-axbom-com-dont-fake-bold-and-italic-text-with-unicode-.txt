@@ -1,0 +1,553 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 11 Oct 2024 22:27:34 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Cache-Control: public, max-age=0
+ETag: W/"87a2-yC39KBadiC+l/KlkIFD4mZGsvmU"
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=63072000
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: same-origin
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Don&#x27;t fake bold and italic text with Unicode</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="/assets/built/screen.css?v=7f62713a6f">
+    <link rel="preload" as="script" href="/assets/built/source.js?v=7f62713a6f">
+    
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-roman.woff2?v=7f62713a6f" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(/assets/fonts/inter-roman.woff2?v=7f62713a6f) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=7f62713a6f">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="icon" href="https://axbom.com/content/images/size/w256h256/2024/08/axbom-symbol-heart-1.png" type="image/png">
+    <link rel="canonical" href="https://axbom.com/dont-fake-bold-and-italic-text-with-unicode/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Axbom">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Don&#x27;t fake bold and italic text with Unicode">
+    <meta property="og:description" content="I see more and more people faking bold and italic text on LinkedIn, and other social media, using Unicode characters. This is detrimental to accessibility, findability as well as predictability.
+
+Here is an example that you may or may not see depending on your client for viewing this:
+
+ * Example of">
+    <meta property="og:url" content="https://axbom.com/dont-fake-bold-and-italic-text-with-unicode/">
+    <meta property="og:image" content="https://axbom.com/content/images/2023/08/linkedin-unicode-rich-text.jpg">
+    <meta property="article:published_time" content="2023-08-24T16:57:09.000Z">
+    <meta property="article:modified_time" content="2024-08-04T18:32:30.000Z">
+    <meta property="article:tag" content="accessibility">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Don&#x27;t fake bold and italic text with Unicode">
+    <meta name="twitter:description" content="I see more and more people faking bold and italic text on LinkedIn, and other social media, using Unicode characters. This is detrimental to accessibility, findability as well as predictability.
+
+Here is an example that you may or may not see depending on your client for viewing this:
+
+ * Example of">
+    <meta name="twitter:url" content="https://axbom.com/dont-fake-bold-and-italic-text-with-unicode/">
+    <meta name="twitter:image" content="https://axbom.com/content/images/2023/08/linkedin-unicode-rich-text.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Per Axbom">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="accessibility">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Axbom",
+        "url": "https://axbom.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://axbom.com/content/images/2024/08/axbom-logo-heart-header.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Per Axbom",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://axbom.com/content/images/2023/03/axbom-avatar-2023-K-small.jpg",
+            "width": 907,
+            "height": 907
+        },
+        "url": "https://axbom.com/author/axbom/",
+        "sameAs": [
+            "https://axbom.com"
+        ]
+    },
+    "headline": "Don&#x27;t fake bold and italic text with Unicode",
+    "url": "https://axbom.com/dont-fake-bold-and-italic-text-with-unicode/",
+    "datePublished": "2023-08-24T16:57:09.000Z",
+    "dateModified": "2024-08-04T18:32:30.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://axbom.com/content/images/2023/08/linkedin-unicode-rich-text.jpg",
+        "width": 1200,
+        "height": 630
+    },
+    "keywords": "accessibility",
+    "description": "I see more and more people faking bold and italic text on LinkedIn, and other social media, using Unicode characters. This is detrimental to accessibility, findability as well as predictability.\n\nHere is an example that you may or may not see depending on your client for viewing this:\n\n * Example of bold text: 𝐛𝐨𝐥𝐝\n * Example of italicised text: 𝑖𝑡𝑎𝑙𝑖𝑐𝑠\n\nIf you are able to see these examples you will likely just interpret them as regular text that has been formatted. Unfortunately thi",
+    "mainEntityOfPage": "https://axbom.com/dont-fake-bold-and-italic-text-with-unicode/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.96">
+    <link rel="alternate" type="application/rss+xml" title="Axbom" href="https://axbom.com/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.44/umd/portal.min.js" data-i18n="true" data-ghost="https://axbom.com/" data-key="9c1ff9b5c647a1d4b2bd1250f6" data-api="https://axbom.com/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async src="https://js.stripe.com/v3/"></script>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/sodo-search.min.js" data-key="9c1ff9b5c647a1d4b2bd1250f6" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/main.css" data-sodo-search="https://axbom.com/" data-locale="en" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/ghost/announcement-bar@~1.1/umd/announcement-bar.min.js" data-announcement-bar="https://axbom.com/" data-api-url="https://axbom.com/members/api/announcement/" crossorigin="anonymous"></script>
+    <link href="https://axbom.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=7f62713a6f"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=7f62713a6f">
+    <script defer src="/public/comment-counts.min.js?v=7f62713a6f" data-ghost-comments-counts-api="https://axbom.com/members/api/comments/counts/"></script>
+    <script defer src="/public/member-attribution.min.js?v=7f62713a6f"></script><style>:root {--ghost-accent-color: #C6316F;}</style>
+    <meta name="format-detection" content="telephone=no">
+<meta name="flattr:id" content="lmr128">
+<meta name="theme-color" content="#C6316F">
+<link rel="me authn" href="mailto:per@axbom.com">
+<link rel="webmention" href="https://webmention.io/axbom.com/webmention" />
+<link rel="pingback" href="https://webmention.io/axbom.com/xmlrpc" />
+<link href="https://micro.blog/axbom" rel="me" />
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+<link rel="stylesheet" href="https://axbom.se/content/images/other/axdesign.css?008">
+<meta name="fediverse:creator" content="@axbom@axbom.me" />
+<script async src="https://tally.so/widgets/embed.js"></script>
+<style>
+  .subButton {background:#C6316F;padding:15px 20px;text-decoration:none;border-radius:50px;color:#fff !important;border: 6px solid #fff;}
+  .gh-footer-signup-subhead {margin-bottom:10px;}
+  .axfollow {text-align:center;margin-bottom:30px;margin-top:0}
+  .axfollow img {display:inline-block;}
+  .axfollowi {max-width:50px; margin: 0 5px;}
+</style>
+
+</head>
+<body class="post-template tag-accessibility has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="https://axbom.com">
+                    <img src="https://axbom.com/content/images/2024/08/axbom-logo-heart-header.png" alt="Axbom">
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home"><a href="https://axbom.com/">Home</a></li>
+    <li class="nav-consulting"><a href="https://axbom.com/consulting/">Consulting</a></li>
+    <li class="nav-speaking"><a href="https://axbom.com/speaking/">Speaking</a></li>
+    <li class="nav-teaching"><a href="https://axbom.com/teaching/">Teaching</a></li>
+    <li class="nav-podcast"><a href="https://axbom.com/podcast/">Podcast</a></li>
+    <li class="nav-books"><a href="https://axbom.com/books/">Books</a></li>
+    <li class="nav-press"><a href="https://axbom.com/press/">Press</a></li>
+    <li class="nav-contact"><a href="https://axbom.com/contact/">Contact</a></li>
+    <li class="nav-axbom-in-swedish"><a href="https://axbom.se">Axbom In Swedish ↗</a></li>
+</ul>
+
+        </nav>
+
+        <div class="gh-navigation-actions">
+                <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>                <div class="gh-navigation-members">
+                            <a href="#/portal/signin" data-portal="signin">Sign in</a>
+                                <a class="gh-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+        </div>
+
+    </div>
+</header>
+
+    
+
+<main class="gh-main">
+
+    <article class="gh-article post tag-accessibility">
+
+        <header class="gh-article-header gh-canvas">
+
+                <a class="gh-article-tag" href="https://axbom.com/tag/accessibility/">accessibility</a>
+            <h1 class="gh-article-title is-title">Don&#x27;t fake bold and italic text with Unicode</h1>
+
+            <div class="gh-article-meta">
+                <div class="gh-article-author-image instapaper_ignore">
+                            <a href="/author/axbom/">
+                                <img class="author-profile-image" src="/content/images/size/w160/2023/03/axbom-avatar-2023-K-small.jpg" alt="Per Axbom">
+                            </a>
+                </div>
+                <div class="gh-article-meta-wrapper">
+                    <h4 class="gh-article-author-name"><a href="/author/axbom/">Per Axbom</a></h4>
+                    <div class="gh-article-meta-content">
+                        <time class="gh-article-meta-date" datetime="2023-08-24">Aug 24, 2023</time>
+                            <span class="gh-article-meta-length"><span class="bull">—</span> 3 min read</span>
+                    </div>
+                </div>
+            </div>
+
+                <figure class="gh-article-image">
+        <img
+            srcset="/content/images/size/w320/2023/08/linkedin-unicode-rich-text.jpg 320w,
+                    /content/images/size/w600/2023/08/linkedin-unicode-rich-text.jpg 600w,
+                    /content/images/size/w960/2023/08/linkedin-unicode-rich-text.jpg 960w,
+                    /content/images/size/w1200/2023/08/linkedin-unicode-rich-text.jpg 1200w,
+                    /content/images/size/w2000/2023/08/linkedin-unicode-rich-text.jpg 2000w"
+            sizes="(max-width: 1200px) 100vw, 1120px"
+            src="/content/images/size/w1200/2023/08/linkedin-unicode-rich-text.jpg"
+            alt="Don&#x27;t fake bold and italic text with Unicode"
+        >
+    </figure>
+
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            <p><strong>I see more and more people faking bold and italic text on LinkedIn, and other social media, using Unicode characters. This is detrimental to accessibility, findability as well as predictability.</strong><br><br>Here is an example that you may or may not see depending on your client for viewing this:</p><ul><li>Example of bold text: 𝐛𝐨𝐥𝐝</li><li>Example of italicised text: 𝑖𝑡𝑎𝑙𝑖𝑐𝑠</li></ul><p>If you are able to see these examples you will likely just interpret them as regular text that has been formatted. Unfortunately this is not the case. When social media platforms do not allow text to be formatted (also known as rich text) people tend to search for workarounds. Using Unicode characters is one of those tricks people use without considering the full impact of this practice.</p><h2 id="three-reasons-to-not-use-unicode-to-simulate-formatted-text">Three reasons to not use Unicode to simulate formatted text</h2><p>If you are considering doing this, these are the things you may want to understand first. And these same issues apply wherever you may be using them in the interface, and on all web platforms.</p><ol><li>Unicode characters may display differently on different devices. On some older devices all characters may simply be replaced by question marks.</li><li>Screen readers will most often skip them, or read something that sounds very long – as an explanation of each character. Needless to say, this excludes people using assistive technology and contributes to confusion.<br><br>This of course also applies to other text-to-speech applications beyond this use-case.</li><li>Text encoded like this won't be found through search engines, as the Unicode characters are something completely different than standard text typed into the search engine.</li></ol><p>In the video below I demonstrate how a screen reader will read the sentence "The quick brown fox jumps over the lazy dog." In the video, the two words "brown fox" have been written using Unicode characters to give the visual appearance of bold, italicised text.</p><p>When you play the video with sound on you will notice how the screen reader is completely silent when coming across those words.</p><figure class="kg-card kg-embed-card"><iframe src="https://player.vimeo.com/video/857586229?app_id=122963" width="426" height="240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Screen reader comes across Unicode characters"></iframe></figure><h2 id="further-reading-and-examples">Further reading and examples</h2><p>The examples in these reference articles are much more complex than mine and include even further variants of Unicode characters. When read out loud these symbols, often mathematical, are explained by screen readers one character at a time in a way that becomes intense and confusing, easily triggering sensory overload.</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://business.scope.org.uk/article/accessibility-screen-readers-special-characters-and-unicode-symbols?ref=axbom.com"><div class="kg-bookmark-content"><div class="kg-bookmark-title">How special characters affect screen readers - Scope for Business</div><div class="kg-bookmark-description">Learn how special characters, Unicode symbols, punctuation, emoticons and ASCII art impact screen reader accessibility and AT users.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://business.scope.org.uk/wp-content/uploads/2022/11/cropped-favicon-270x270.png" alt=""><span class="kg-bookmark-author">Scope for business</span><span class="kg-bookmark-publisher">Scope</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://business.scope.org.uk/wp-content/uploads/2019/10/Special-characters-and-screenreader-accesibility.jpg" alt=""></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://www.linkedin.com/pulse/special-characters-your-tweets-breaking-accessibility-mike-richwalsky/?ref=axbom.com"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Are special characters in your tweets breaking accessibility?</div><div class="kg-bookmark-description">I’ve been seeing a lot of Twitter accounts, both regular user accounts as well as brand accounts, using fancy, math and other symbol fonts in their tweets. These characters are all legal, and part of the Unicode standard.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt=""><span class="kg-bookmark-publisher">Mike Richwalsky</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://media.licdn.com/dms/image/D5612AQFqPVMsHqTj_w/article-cover_image-shrink_600_2000/0/1686061235462?e=2147483647&amp;v=beta&amp;t=XnqNqkzAaznVMtiY3Scz15u7rP_AHbOVeCUNtL2wUr8" alt=""></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://kence.org/2020/10/02/accessibility-of-unicode-as-styled-text/?ref=axbom.com"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Accessibility of Unicode as styled text</div><div class="kg-bookmark-description">Facebook, Twitter, Instagram, and other sites often lack the ability to style text. Some “clever” people have discovered ways of abusing Unicode to make the appearance of styled text th…</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://kence.files.wordpress.com/2016/11/profile-20161107a.jpg?w=192" alt=""><span class="kg-bookmark-author">Digital Ramblings</span><span class="kg-bookmark-publisher">View all posts by cpeel</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://kence.files.wordpress.com/2016/11/profile-20161107a.jpg?w=200" alt=""></div></a></figure><h2 id="comments">Comments</h2><h4 id="july-20-ericesh">July 20. EricEsh:</h4><p>Looking at this the other way, this could be beneficial to standards and accessibility tools, by entrenching the unicode standard and pressuring developers to recognize and adapt to the common text variants, making their tools more adaptable and online platforms more expressive.</p><p><em><strong>Per's reply:</strong> I believe I'd rather see pressure applied in other ways, and that final products and texts are published in ways that do not break the experience for so many people. I've unfortunately not seen any tendencies, or expressed incentives, for fixing this issue based on the broad use of unicode.</em></p>
+        </section>
+
+    </article>
+
+        <div class="gh-comments gh-canvas">
+            
+        <script defer src="https://cdn.jsdelivr.net/ghost/comments-ui@~0.19/umd/comments-ui.min.js" data-locale="en" data-ghost-comments="https://axbom.com/" data-api="https://axbom.com/ghost/api/content/" data-admin="https://axbom.com/ghost/" data-key="9c1ff9b5c647a1d4b2bd1250f6" data-title="null" data-count="true" data-post-id="64e783ec14c6540001e7b251" data-color-scheme="auto" data-avatar-saturation="60" data-accent-color="#C6316F" data-comments-enabled="all" data-publication="Axbom" crossorigin="anonymous"></script>
+    
+        </div>
+
+</main>
+
+
+            <section class="gh-container is-grid gh-outer">
+                <div class="gh-container-inner gh-inner">
+                    <h2 class="gh-container-title">Read more</h2>
+                    <div class="gh-feed">
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="/heart-surgery-logistics-and-therblig-moments/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2024/09/surgery.jpeg 160w,
+                            /content/images/size/w320/format/webp/2024/09/surgery.jpeg 320w,
+                            /content/images/size/w600/format/webp/2024/09/surgery.jpeg 600w,
+                            /content/images/size/w960/format/webp/2024/09/surgery.jpeg 960w,
+                            /content/images/size/w1200/format/webp/2024/09/surgery.jpeg 1200w,
+                            /content/images/size/w2000/format/webp/2024/09/surgery.jpeg 2000w"
+                    sizes="320px"
+                    src="/content/images/size/w600/2024/09/surgery.jpeg"
+                    alt="Heart surgery logistics and Therblig moments"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Heart surgery logistics and Therblig moments</h3>
+                <p class="gh-card-excerpt is-body">On the art of focusing on design as a strategy to avoid thinking about the drama of reconstructive heart surgery and a new mechanical heart valve.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Per Axbom</span>
+                    <time class="gh-card-date" datetime="2024-09-07">Sep 7, 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>                            <article class="gh-card post">
+    <a class="gh-card-link" href="/barbie-with-a-white-cane/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 160w,
+                            /content/images/size/w320/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 320w,
+                            /content/images/size/w600/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 600w,
+                            /content/images/size/w960/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 960w,
+                            /content/images/size/w1200/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 1200w,
+                            /content/images/size/w2000/format/webp/2024/08/lucy-edwards-barbie-white-cane.jpg 2000w"
+                    sizes="320px"
+                    src="/content/images/size/w600/2024/08/lucy-edwards-barbie-white-cane.jpg"
+                    alt="A smiling Lucy Edwards holds up the new Barbie doll with a white cane"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Barbie with a white cane highlights important behind-the-scenes work</h3>
+                    <p class="gh-card-excerpt is-body">When you read the news that Mattel is launching a blind Barbie with a white cane, note that the doll was developed with organizations and people who are experts in, and themselves have, visual impairments.
+
+Mattel also organized play sessions for children with visual impairments as part of product development.</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Per Axbom</span>
+                    <time class="gh-card-date" datetime="2024-08-03">Aug 3, 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>                            <article class="gh-card post">
+    <a class="gh-card-link" href="/my-tender-heart-and-i/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2024/08/axbom-heart-2024.jpg 160w,
+                            /content/images/size/w320/format/webp/2024/08/axbom-heart-2024.jpg 320w,
+                            /content/images/size/w600/format/webp/2024/08/axbom-heart-2024.jpg 600w,
+                            /content/images/size/w960/format/webp/2024/08/axbom-heart-2024.jpg 960w,
+                            /content/images/size/w1200/format/webp/2024/08/axbom-heart-2024.jpg 1200w,
+                            /content/images/size/w2000/format/webp/2024/08/axbom-heart-2024.jpg 2000w"
+                    sizes="320px"
+                    src="/content/images/size/w600/2024/08/axbom-heart-2024.jpg"
+                    alt="Per Axbom smiling, against a forest backdrop, and holding up his hands to form a heart shape."
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">My tender heart and I</h3>
+                    <p class="gh-card-excerpt is-body">I&#39;m in the process of preparing for open heart surgery. It&#39;s an elaborate procedure where I&#39;ll get a new mechanical heart valve and also replace about 6-7 centimeters of the aorta. This is followed by sick leave and rehabilitation with, among other things, breathing</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Per Axbom</span>
+                    <time class="gh-card-date" datetime="2024-08-02">Aug 2, 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>                            <article class="gh-card post featured">
+    <a class="gh-card-link" href="/ai-worksheet/">
+            <figure class="gh-card-image">
+                <img
+                    srcset="/content/images/size/w160/format/webp/2024/04/ai-worksheet-axbom-A01.png 160w,
+                            /content/images/size/w320/format/webp/2024/04/ai-worksheet-axbom-A01.png 320w,
+                            /content/images/size/w600/format/webp/2024/04/ai-worksheet-axbom-A01.png 600w,
+                            /content/images/size/w960/format/webp/2024/04/ai-worksheet-axbom-A01.png 960w,
+                            /content/images/size/w1200/format/webp/2024/04/ai-worksheet-axbom-A01.png 1200w,
+                            /content/images/size/w2000/format/webp/2024/04/ai-worksheet-axbom-A01.png 2000w"
+                    sizes="320px"
+                    src="/content/images/size/w600/2024/04/ai-worksheet-axbom-A01.png"
+                    alt="AI Trial and Evaluation Worksheet – a picture of the worksheet"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">AI Trial and Evaluation Worksheet</h3>
+                    <p class="gh-card-excerpt is-body">Many people are telling me how their companies are running tests of AI tools. This in itself is not strange at all. It&#39;s probably difficult as a leader today not to feel stressed by the manufacturers of AI promising revolutionary abilities that will radically change all of business</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Per Axbom</span>
+                    <time class="gh-card-date" datetime="2024-04-14">Apr 14, 2024</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>                    </div>
+                </div>
+            </section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    <img src="https://axbom.com/content/images/2024/08/axbom-logo-heart-header.png" alt="Axbom">
+            </span>
+            <nav class="gh-footer-menu">
+                <ul class="nav">
+    <li class="nav-blogroll"><a href="#/portal/recommendations">Blogroll</a></li>
+    <li class="nav-tips-and-donations"><a href="https://axbom.com/support/">Tips and Donations</a></li>
+    <li class="nav-about-the-site"><a href="https://axbom.com/nuts-and-bolts/">About the site</a></li>
+    <li class="nav-axbom-in-swedish"><a href="https://axbom.se">Axbom In Swedish ↗</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-footer-copyright">
+                &copy; 1997-2024 <a href="/contact" target="_blank" rel="noopener">Per Axbom</a>
+            </div>
+        </div>
+
+                <section class="gh-footer-signup">
+                    <h2 class="gh-footer-signup-header is-title">
+                        Free newsletter and membership
+                    </h2>
+                    <p class="gh-footer-signup-subhead is-body">
+                        Let&#x27;s make tech helpful, safe and good-hearted
+                    </p>
+                    
+    <script>
+        document.write('<a href="#/portal" class="subButton">Subscribe</a>');
+    </script>
+    <noscript>
+        <a href="https://q.axbom.com/newsletter" class="subButton">Subscribe</a>
+    </noscript>                </section>
+
+        <section class="axfollow">
+              <a href="https://bsky.app/profile/axbom.com" rel="me"><img src="https://axbom.com/content/images/other/logo-bluesky.svg" width="40" class="axfollowi" alt="Follow on Bluesky"></a>
+  <a href="https://axbom.com/follow" rel="me"><img src="https://axbom.com/content/images/other/logo-mastodon.svg" width="40" class="axfollowi" alt="Follow on Mastodon"></a>
+  <a href="https://linkedin.com/in/axbom" rel="me"><img src="https://axbom.com/content/images/other/logo-linkedin.svg" width="40" class="axfollowi" alt="Connect on LinkedIn"></a>
+  <a href="https://axbom.com/follow" rel="me"><img src="https://axbom.com/content/images/other/logo-fediverse.svg" width="40" class="axfollowi" alt="Follow on the Fediverse"></a>
+  <a href="https://axbom.com/rss-feeds/" rel="me"><img src="https://axbom.com/content/images/other/axbom-rss.svg" width="40" class="axfollowi" alt="Follow via RSS"></a>        </section>
+
+    </div>
+</footer>    
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/built/source.js?v=7f62713a6f"></script>
+
+<script>Tally.loadEmbeds();</script>
+
+</body>
+</html>

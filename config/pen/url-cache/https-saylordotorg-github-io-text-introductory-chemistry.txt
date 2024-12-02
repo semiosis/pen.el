@@ -1,0 +1,447 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 2877
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+permissions-policy: interest-cohort=()
+Last-Modified: Thu, 04 Jun 2015 19:24:57 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"5570a609-35d4"
+expires: Sat, 28 Sep 2024 00:17:57 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 6CF6:292870:30D9F9:337B39:66F748DD
+Accept-Ranges: bytes
+Date: Sat, 28 Sep 2024 00:49:21 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-akl10329-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1727484561.485026,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 7e02ce46d32c307e6e7c146978d6b074d8639478
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Introductory Chemistry - Table of Contents</title>
+</head>
+<body>
+
+  <div id="book-content">
+    <h1>Introductory Chemistry</h1>
+    <div id="edition">v. 1.0</div>
+    
+    <h2 id="toc-header">Table of Contents</h2>
+      <ul id="toc-top-ul">
+      
+        <li>
+          <h3><a href="s00-license.html">Licensing Information</a></h3>
+          
+        </li>
+      
+        <li>
+          <h3><a href="s05-what-is-chemistry.html">Chapter 1: What Is Chemistry?</a></h3>
+          
+  <ul>
+    
+    <li><a href="s05-00-what-is-chemistry.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s05-01-some-basic-definitions.html">Some Basic Definitions</a></li>
+    
+    <li><a href="s05-02-chemistry-as-a-science.html">Chemistry as a Science</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s06-measurements.html">Chapter 2: Measurements</a></h3>
+          
+  <ul>
+    
+    <li><a href="s06-00-measurements.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s06-01-expressing-numbers.html">Expressing Numbers</a></li>
+    
+    <li><a href="s06-02-expressing-units.html">Expressing Units</a></li>
+    
+    <li><a href="s06-03-significant-figures.html">Significant Figures</a></li>
+    
+    <li><a href="s06-04-converting-units.html">Converting Units</a></li>
+    
+    <li><a href="s06-05-other-units-temperature-and-de.html">Other Units: Temperature and Density</a></li>
+    
+    <li><a href="s06-06-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s07-atoms-molecules-and-ions.html">Chapter 3: Atoms, Molecules, and Ions</a></h3>
+          
+  <ul>
+    
+    <li><a href="s07-00-atoms-molecules-and-ions.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s07-01-atomic-theory.html">Atomic Theory</a></li>
+    
+    <li><a href="s07-02-molecules-and-chemical-nomencl.html">Molecules and Chemical Nomenclature</a></li>
+    
+    <li><a href="s07-03-masses-of-atoms-and-molecules.html">Masses of Atoms and Molecules</a></li>
+    
+    <li><a href="s07-04-ions-and-ionic-compounds.html">Ions and Ionic Compounds</a></li>
+    
+    <li><a href="s07-05-acids.html">Acids</a></li>
+    
+    <li><a href="s07-06-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s08-chemical-reactions-and-equatio.html">Chapter 4: Chemical Reactions and Equations</a></h3>
+          
+  <ul>
+    
+    <li><a href="s08-00-chemical-reactions-and-equatio.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s08-01-the-chemical-equation.html">The Chemical Equation</a></li>
+    
+    <li><a href="s08-02-types-of-chemical-reactions-si.html">Types of Chemical Reactions: Single- and Double-Displacement Reactions</a></li>
+    
+    <li><a href="s08-03-ionic-equations-a-closer-look.html">Ionic Equations: A Closer Look</a></li>
+    
+    <li><a href="s08-04-composition-decomposition-and-.html">Composition, Decomposition, and Combustion Reactions</a></li>
+    
+    <li><a href="s08-05-neutralization-reactions.html">Neutralization Reactions</a></li>
+    
+    <li><a href="s08-06-oxidation-reduction-reactions.html">Oxidation-Reduction Reactions</a></li>
+    
+    <li><a href="s08-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s09-stoichiometry-and-the-mole.html">Chapter 5: Stoichiometry and the Mole</a></h3>
+          
+  <ul>
+    
+    <li><a href="s09-00-stoichiometry-and-the-mole.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s09-01-stoichiometry.html">Stoichiometry</a></li>
+    
+    <li><a href="s09-02-the-mole.html">The Mole</a></li>
+    
+    <li><a href="s09-03-the-mole-in-chemical-reactions.html">The Mole in Chemical Reactions</a></li>
+    
+    <li><a href="s09-04-mole-mass-and-mass-mass-calcul.html">Mole-Mass and Mass-Mass Calculations</a></li>
+    
+    <li><a href="s09-05-yields.html">Yields</a></li>
+    
+    <li><a href="s09-06-limiting-reagents.html">Limiting Reagents</a></li>
+    
+    <li><a href="s09-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s10-gases.html">Chapter 6: Gases</a></h3>
+          
+  <ul>
+    
+    <li><a href="s10-00-gases.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s10-01-kinetic-theory-of-gases.html">Kinetic Theory of Gases</a></li>
+    
+    <li><a href="s10-02-pressure.html">Pressure</a></li>
+    
+    <li><a href="s10-03-gas-laws.html">Gas Laws</a></li>
+    
+    <li><a href="s10-04-other-gas-laws.html">Other Gas Laws</a></li>
+    
+    <li><a href="s10-05-the-ideal-gas-law-and-some-app.html">The Ideal Gas Law and Some Applications</a></li>
+    
+    <li><a href="s10-06-gas-mixtures.html">Gas Mixtures</a></li>
+    
+    <li><a href="s10-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s11-energy-and-chemistry.html">Chapter 7: Energy and Chemistry</a></h3>
+          
+  <ul>
+    
+    <li><a href="s11-00-energy-and-chemistry.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s11-01-energy.html">Energy</a></li>
+    
+    <li><a href="s11-02-work-and-heat.html">Work and Heat</a></li>
+    
+    <li><a href="s11-03-enthalpy-and-chemical-reaction.html">Enthalpy and Chemical Reactions</a></li>
+    
+    <li><a href="s11-04-stoichiometry-calculations-usi.html">Stoichiometry Calculations Using Enthalpy</a></li>
+    
+    <li><a href="s11-05-hess-s-law.html">Hess’s Law</a></li>
+    
+    <li><a href="s11-06-formation-reactions.html">Formation Reactions</a></li>
+    
+    <li><a href="s11-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s12-electronic-structure.html">Chapter 8: Electronic Structure</a></h3>
+          
+  <ul>
+    
+    <li><a href="s12-00-electronic-structure.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s12-01-light.html">Light</a></li>
+    
+    <li><a href="s12-02-quantum-numbers-for-electrons.html">Quantum Numbers for Electrons</a></li>
+    
+    <li><a href="s12-03-organization-of-electrons-in-a.html">Organization of Electrons in Atoms</a></li>
+    
+    <li><a href="s12-04-electronic-structure-and-the-p.html">Electronic Structure and the Periodic Table</a></li>
+    
+    <li><a href="s12-05-periodic-trends.html">Periodic Trends</a></li>
+    
+    <li><a href="s12-06-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s13-chemical-bonds.html">Chapter 9: Chemical Bonds</a></h3>
+          
+  <ul>
+    
+    <li><a href="s13-00-chemical-bonds.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s13-01-lewis-electron-dot-diagrams.html">Lewis Electron Dot Diagrams</a></li>
+    
+    <li><a href="s13-02-electron-transfer-ionic-bonds.html">Electron Transfer: Ionic Bonds</a></li>
+    
+    <li><a href="s13-03-covalent-bonds.html">Covalent Bonds</a></li>
+    
+    <li><a href="s13-04-other-aspects-of-covalent-bond.html">Other Aspects of Covalent Bonds</a></li>
+    
+    <li><a href="s13-05-violations-of-the-octet-rule.html">Violations of the Octet Rule</a></li>
+    
+    <li><a href="s13-06-molecular-shapes.html">Molecular Shapes</a></li>
+    
+    <li><a href="s13-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s14-solids-and-liquids.html">Chapter 10: Solids and Liquids</a></h3>
+          
+  <ul>
+    
+    <li><a href="s14-00-solids-and-liquids.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s14-01-intermolecular-forces.html">Intermolecular Forces</a></li>
+    
+    <li><a href="s14-02-phase-transitions-melting-boil.html">Phase Transitions: Melting, Boiling, and Subliming</a></li>
+    
+    <li><a href="s14-03-properties-of-liquids.html">Properties of Liquids</a></li>
+    
+    <li><a href="s14-04-solids.html">Solids</a></li>
+    
+    <li><a href="s14-05-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s15-solutions.html">Chapter 11: Solutions</a></h3>
+          
+  <ul>
+    
+    <li><a href="s15-00-solutions.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s15-01-some-definitions.html">Some Definitions</a></li>
+    
+    <li><a href="s15-02-quantitative-units-of-concentr.html">Quantitative Units of Concentration</a></li>
+    
+    <li><a href="s15-03-dilutions-and-concentrations.html">Dilutions and Concentrations</a></li>
+    
+    <li><a href="s15-04-concentrations-as-conversion-f.html">Concentrations as Conversion Factors</a></li>
+    
+    <li><a href="s15-05-colligative-properties-of-solu.html">Colligative Properties of Solutions</a></li>
+    
+    <li><a href="s15-06-colligative-properties-of-ioni.html">Colligative Properties of Ionic Solutes</a></li>
+    
+    <li><a href="s15-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s16-acids-and-bases.html">Chapter 12: Acids and Bases</a></h3>
+          
+  <ul>
+    
+    <li><a href="s16-00-acids-and-bases.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s16-01-arrhenius-acids-and-bases.html">Arrhenius Acids and Bases</a></li>
+    
+    <li><a href="s16-02-bronsted-lowry-acids-and-bases.html">Brønsted-Lowry Acids and Bases</a></li>
+    
+    <li><a href="s16-03-acid-base-titrations.html">Acid-Base Titrations</a></li>
+    
+    <li><a href="s16-04-strong-and-weak-acids-and-base.html">Strong and Weak Acids and Bases and Their Salts</a></li>
+    
+    <li><a href="s16-05-autoionization-of-water.html">Autoionization of Water</a></li>
+    
+    <li><a href="s16-06-the-ph-scale.html">The pH Scale</a></li>
+    
+    <li><a href="s16-07-buffers.html">Buffers</a></li>
+    
+    <li><a href="s16-08-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s17-chemical-equilibrium.html">Chapter 13: Chemical Equilibrium</a></h3>
+          
+  <ul>
+    
+    <li><a href="s17-00-chemical-equilibrium.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s17-01-chemical-equilibrium.html">Chemical Equilibrium</a></li>
+    
+    <li><a href="s17-02-the-equilibrium-constant.html">The Equilibrium Constant</a></li>
+    
+    <li><a href="s17-03-shifting-equilibria-le-chateli.html">Shifting Equilibria: Le Chatelier’s Principle</a></li>
+    
+    <li><a href="s17-04-calculating-equilibrium-consta.html">Calculating Equilibrium Constant Values</a></li>
+    
+    <li><a href="s17-05-some-special-types-of-equilibr.html">Some Special Types of Equilibria</a></li>
+    
+    <li><a href="s17-06-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s18-oxidation-and-reduction.html">Chapter 14: Oxidation and Reduction</a></h3>
+          
+  <ul>
+    
+    <li><a href="s18-00-oxidation-and-reduction.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s18-01-oxidation-reduction-reactions.html">Oxidation-Reduction Reactions</a></li>
+    
+    <li><a href="s18-02-balancing-redox-reactions.html">Balancing Redox Reactions</a></li>
+    
+    <li><a href="s18-03-applications-of-redox-reaction.html">Applications of Redox Reactions: Voltaic Cells</a></li>
+    
+    <li><a href="s18-04-electrolysis.html">Electrolysis</a></li>
+    
+    <li><a href="s18-05-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s19-nuclear-chemistry.html">Chapter 15: Nuclear Chemistry</a></h3>
+          
+  <ul>
+    
+    <li><a href="s19-00-nuclear-chemistry.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s19-01-radioactivity.html">Radioactivity</a></li>
+    
+    <li><a href="s19-02-half-life.html">Half-Life</a></li>
+    
+    <li><a href="s19-03-units-of-radioactivity.html">Units of Radioactivity</a></li>
+    
+    <li><a href="s19-04-uses-of-radioactive-isotopes.html">Uses of Radioactive Isotopes</a></li>
+    
+    <li><a href="s19-05-nuclear-energy.html">Nuclear Energy</a></li>
+    
+    <li><a href="s19-06-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s20-organic-chemistry.html">Chapter 16: Organic Chemistry</a></h3>
+          
+  <ul>
+    
+    <li><a href="s20-00-organic-chemistry.html">Chapter Introduction</a></li>
+    
+    
+    <li><a href="s20-01-hydrocarbons.html">Hydrocarbons</a></li>
+    
+    <li><a href="s20-02-branched-hydrocarbons.html">Branched Hydrocarbons</a></li>
+    
+    <li><a href="s20-03-alkyl-halides-and-alcohols.html">Alkyl Halides and Alcohols</a></li>
+    
+    <li><a href="s20-04-other-oxygen-containing-functi.html">Other Oxygen-Containing Functional Groups</a></li>
+    
+    <li><a href="s20-05-other-functional-groups.html">Other Functional Groups</a></li>
+    
+    <li><a href="s20-06-polymers.html">Polymers</a></li>
+    
+    <li><a href="s20-07-end-of-chapter-material.html">End-of-Chapter Material</a></li>
+    
+  </ul>
+
+        </li>
+      
+        <li>
+          <h3><a href="s21-appendix-periodic-table-of-the.html">Appendix: Periodic Table of the Elements</a></h3>
+          
+        </li>
+      
+    </ul>
+  </div>
+</div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+</body>
+</html>

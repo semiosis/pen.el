@@ -1,0 +1,2717 @@
+HTTP/1.1 200 OK
+Server: nginx/1.27.1
+Date: Wed, 16 Oct 2024 10:14:48 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Set-Cookie: CFID=89866821; Expires=Thu, 17 Oct 2024 10:14:48 GMT; Path=/; HttpOnly
+Set-Cookie: CFTOKEN=8bd2ca0c894ca5e4-D03ADFF3-EF2A-6A4A-085E317B7E74C5E9; Expires=Thu, 17 Oct 2024 10:14:48 GMT; Path=/; HttpOnly
+Set-Cookie: BLB__UID=01949C8AF51A5539C4F86DF38051BD142BF488B3702AB1C14DBDF24A390A24F8ED69EEF670510A40F739E0AB069DFDA704F053AE6EFA3D98B35A039794391239CD6B2A2B2E07FFC868517678554AEEEAEF65B7D57D25B6B139A6AF25267E7D68E9666DA4FB4A5C364D9E5042E0E5FE54CDBC270B5F72C5F3A888809C89B8CD0859BB744648BA5093C485D238F960AEB91A1F797F26BB365B1ED2E5F7425E1B74BA7CDA58FB2515F1D0DF65902D48AC5A443F7A1D7C8DD459FEBA8B4FD1C82A468B9B4F518A3D13AEB49DB08342DFE544B81DDF32DBD3066E84C6AA144A803A37E3D4D7436E8BC3905B556233C375500EE995D519A77D34FBC43BF1941008AAA3C2A50C180D3484B1C6829CF61E8681CF2BA3F71467198934C5F7C7EA835B273C57C1853F44DDA22011FE0B5F6907CB7E57BCBE5E8CDC8BCF47B7C8F16B3D4897D85C921B1DA05043E47611C12D73CBA9E6F1BC1A068FD2C9070C763789103E3DBA2CC08057272FA447FB617842408E72EECE9CC544D0B2E1998182599466FF0E223290C35316747A4E9C9F5B50FA876681678059A03DB43C16BFC196D6C7433A02A59803CA32E1F51A91FCFE09E23082BD8D6BDF38595D3098AC3B31D8971FF7B397CC5281E21EFF732EC04760365F2DE17E770C01AD7D4D517B44763EB48309AE9F6862CE6EC2C5C648654F082CEFE5457BC58B64CDB338E4440C6110932AE3A6D315260CF33E02C90F602F4CA280DCCBAFAFA3869080DEE94ECA87A068ACD426364407827A890FB14CAD369797EEE5FB5F5EE35CB9EB194656D2B8CB2F5C518DFE7CA15BC5BC45123E4ED24E17CB3B51E037BACBB9DEC5983CED9D98B6B695548E30BD67A0D45C0F00DE3DBA9794FCC994E5480FA02C5331850F47B0DDEA380C37D453F5290D9D3DA7DA4201EEFE9CC9E1611F49C397891B4D785D6535C7587AB4DA2DFBCFA76F362F8F7F1A9EB1A45CCDB33C440DAF544CB54723C19A937A82B9DC5D2FD01328E8A87F56086EE1F4CF450342350285D826FD4F03ECB8994D869EED75DE7C0858EEA778D8DB56D2E29E4B1F57B6D501D2F0A5A33263105E3F1012B7F08F04F21E529232F4F12519A9DCA6A36F4814888632765385351A7DBC90681B3414266A5706A02E730173A5B9D82131BB81CE92CFAB04F2EAFB3D944F1E51BC9680B3D4790CDBD39B838D8EE64914667B2A3A42F42FBEA14C125213342CB8A8FB5C76284575F2EE25A81AF7EA1CE5091CFF65E9086DFF4B822ED1BBDAF2393BE735FC0D74665DC137A7282973ABAA73975929E2EFF90F8EF65A5C5D4DB41F64BA3C0EB6A2A18E300243230D75782AE592186EF65CBC975C36AA5DE0FE578F019A4914A9559D55113D639D0F02ECF33612F2DFE86764224E3A65A641C67AFA75697F44C4E3B8FEB1420FE57C93DB0790D3BE51858EE03B46838E86718838509663920E9D1AE90526626A09CB0D5F39E1941A5D29598A36FB6B459B06825EE02CF09D0517604D97476B5929E900AC9AF910D8A690553BF560ADF3549B91DC94E41C89C1C70E47C64BDF3BA26FED1F9F0923; Domain=.blueletterbible.org; Expires=Fri, 09 Oct 2054 10:14:48 GMT; Path=/
+Set-Cookie: BLB__UID=6F1F2DCEA5568EC69D0408E8038A4FC0566F7DC87C3F82427684ED592CDB80C7E812993F2FA24C7B052B50275DF0E93B203D36B6894CA85DE6652D97FA1667091BC4A890D0A8DA1146A3C5657AEA78B719BD288FB979364371F031D852966423A4D6FA0D700AD14325D80464169ED272D4AB5509399F25A1C6ABD14DDE0EBC019E37D4ABC1C942C5957EBBDEFA4979E0A2304A8784EF2DDC24884565E7920517AAD895E4BA14BC544F2D02A04D72BF3022BD7611EDEE1BE525D0EC72891DCEBF3E04471A144A630CE97B1F182E6768A7F22DA1D67857CC2769835DEB153DC241903D219C61C480F28E676D378967515EFCD955D659D37B0D68D367E1B04A82B308276713235CB613B506557CF03EE976BEC7C84F5D73D714B898CB16D6D644BDFDFC073047C6A18CDE8B0C2257AE9C9A197B44A4C5A622A9FBACD1A7F724447E3204A502B1589723C3A54135D6D0A3802E4BF225809476EE460BDA7FEB94D20F1198457D4B32F8BA31CFD7FF0581D3AC2246C354E80FB849B302C327EEF92D3862721F28D380E03B17BECAAC2534C7947A7BC99799A44DDFBD7E2C530C40119F3D60D3DE30460D2DD5BD5C1C856A3125A2B8C25B1F423A254D5928F618C6CF9401D3D29841E2022AE37086A27A568AAC3F7BC89C720178E69644105E34359645613FA5FDA0F9FA43A1590CB54EFCA1AC9F75752B9AF62726128D2205B5E750BE5A6DE27D6164AC5E85CACF99CABBF82D5BF96B8D6D3C028E208E01A96BB83D28016AD6AE015808D6DDDB494F0A1FD3655300C13401437766B5C386D59B774B47D7B6FCF9AA0013F029E8873DEA56005AABC575046E103547B41BBB1F7E151915092718778109C218B9944F5DC809D3C73137EF779B2CD8F3D8975064ECE46964D1DABE873EA02488C7CA40EBA48727B1F029B6EF3427C854C1AA767FD7E9AD95809FC54C292410A30CCDFBAF5A4B2FABF554DCEEC93B3C6015DDAEEB424A0E3BD24AB59E58DF8DDF02543343205146F07CF6152D814AB6CEA7E0DE0A5040530C17234AC492E241DF445D0E08FE56735F1DAADD61AA28D5B4013AE5FD2E3086B199129E7F1E74C9F3A6F2B7E0C389D1903F7F798F9BDA39533A6DE6ABD32574C193D02B961A3E4F5D83833832C8964FE610B0E30738F8497165FA882239F1C187C12F4ECEF5EC3231CBB386E8BD2DC9E2EED976F56F2F6F7CD122216B56A3ADD89705B14161BB51865080AF41BB9EBB6AD84F5A0AD72430DE4ADF211925E72D92E2425B7D11682A7B9E5A776837FDE1E141799BDF3270AF5B71DC2D5AFEE5299DDD3B9A8F97345FF05D8CCFFF20E758FC2890AD8F8E741BE6E797DCEDFF7F203C152C1F2ED961652973DA542A6EF2EC29CBB0B1F64357209381541ABFADA6EB30F606209F69042E9F19DAFC27C9E8EF93FE12F1946130EADA13DF7C830B2D84E123AE5D3979CC54B85539D1E105475ADF00D1CBE9F8A6255A0F6EF07A9EAAEA18BBCE6CB9F26A7CA360C42A4D2F53355BF7FECBBC29579C10659264A4BD8D5A3ED642ECFE2647DAFAA5156951DC3AB27C37A2DD5444; Domain=.blueletterbible.org; Expires=Fri, 09 Oct 2054 10:14:48 GMT; Path=/
+Set-Cookie: CFCLIENT_GENERAL_BLBV31=clientguid%3DD03AE0A7CCF8D586E959C5EC1238D337%23linkerrefelementserrors%3D%23; Expires=Fri, 09 Oct 2054 10:14:48 GMT; Path=/
+Set-Cookie: CFGLOBALS=urltoken%3DCFID%23%3D89866821%26CFTOKEN%23%3D8bd2ca0c894ca5e4%2DD03ADFF3%2DEF2A%2D6A4A%2D085E317B7E74C5E9%23lastvisit%3D%7Bts%20%272024%2D10%2D16%2005%3A14%3A48%27%7D%23hitcount%3D2%23timecreated%3D%7Bts%20%272024%2D10%2D16%2005%3A14%3A48%27%7D%23cftoken%3D8bd2ca0c894ca5e4%2DD03ADFF3%2DEF2A%2D6A4A%2D085E317B7E74C5E9%23cfid%3D89866821%23; Expires=Fri, 09 Oct 2054 10:14:48 GMT; Path=/; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-XSS-Protection: 1; mode=block
+
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">/* <![CDATA[ */_cf_loadingtexthtml="<img alt=' ' src='/cf_scripts/scripts/ajax/resources/cf/images/loading.gif'/>";
+_cf_contextpath="";
+_cf_ajaxscriptsrc="/cf_scripts/scripts/ajax";
+_cf_jsonprefix='//';
+_cf_websocket_port=8706;
+_cf_flash_policy_port=1243;
+_cf_websocket_ssl_port=8786;
+_cf_clientid='0F56D2C4C0FB7DDFEE1468F9A19795C0';/* ]]> */</script><script type="text/javascript" src="/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+<script type="text/javascript" src="/cf_scripts/scripts/ajax/package/cfajax.js"></script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFAJAXPROXY');
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_mBLB=ColdFusion.AjaxProxy.init('/cfblb/remoteExtensions/mBLB.cfc','mBLB');
+	_cf_mBLB.prototype.setBodyFontSize=function(bodyFontSize) { return ColdFusion.AjaxProxy.invoke(this, "setBodyFontSize","7C769A9E8EDE493BADD5B1090ACF", {bodyFontSize:bodyFontSize});};
+	_cf_mBLB.prototype.setRtNavOrder=function(rtBubID,rtBubOrder) { return ColdFusion.AjaxProxy.invoke(this, "setRtNavOrder","7C769A9E8EDE493BADD5B1090ACF", {rtBubID:rtBubID,rtBubOrder:rtBubOrder});};
+	_cf_mBLB.prototype.setSessionSiteWideState=function(siteWideState,manualSize) { return ColdFusion.AjaxProxy.invoke(this, "setSessionSiteWideState","7C769A9E8EDE493BADD5B1090ACF", {siteWideState:siteWideState,manualSize:manualSize});};
+	_cf_mBLB.prototype.getRMAC_TenseDefinition=function(classification,definitionId) { return ColdFusion.AjaxProxy.invoke(this, "getRMAC_TenseDefinition","7C769A9E8EDE493BADD5B1090ACF", {classification:classification,definitionId:definitionId});};
+	_cf_mBLB.prototype.dailyPromiseDateIndex=function(dailyPromiseMonth) { return ColdFusion.AjaxProxy.invoke(this, "dailyPromiseDateIndex","7C769A9E8EDE493BADD5B1090ACF", {dailyPromiseMonth:dailyPromiseMonth});};
+	_cf_mBLB.prototype.setShowStrongsNonSticky=function(showStrongs) { return ColdFusion.AjaxProxy.invoke(this, "setShowStrongsNonSticky","7C769A9E8EDE493BADD5B1090ACF", {showStrongs:showStrongs});};
+	_cf_mBLB.prototype.dbdbgDateIndex=function(dbdbgMonth) { return ColdFusion.AjaxProxy.invoke(this, "dbdbgDateIndex","7C769A9E8EDE493BADD5B1090ACF", {dbdbgMonth:dbdbgMonth});};
+	_cf_mBLB.prototype.getToolTipContent=function(link,param) { return ColdFusion.AjaxProxy.invoke(this, "getToolTipContent","7C769A9E8EDE493BADD5B1090ACF", {link:link,param:param});};
+	_cf_mBLB.prototype.ping=function(t) { return ColdFusion.AjaxProxy.invoke(this, "ping","7C769A9E8EDE493BADD5B1090ACF", {t:t});};
+	_cf_mBLB.prototype.setBibleColor=function(bibleColor) { return ColdFusion.AjaxProxy.invoke(this, "setBibleColor","7C769A9E8EDE493BADD5B1090ACF", {bibleColor:bibleColor});};
+	_cf_mBLB.prototype.morneveDateIndex=function(dbdbgMonth) { return ColdFusion.AjaxProxy.invoke(this, "morneveDateIndex","7C769A9E8EDE493BADD5B1090ACF", {dbdbgMonth:dbdbgMonth});};
+	_cf_mBLB.prototype.getHPC_TenseDefinition=function(classification,definitionId) { return ColdFusion.AjaxProxy.invoke(this, "getHPC_TenseDefinition","7C769A9E8EDE493BADD5B1090ACF", {classification:classification,definitionId:definitionId});};
+	_cf_mBLB.prototype.setBodyGreekType=function(bodyGreekType) { return ColdFusion.AjaxProxy.invoke(this, "setBodyGreekType","7C769A9E8EDE493BADD5B1090ACF", {bodyGreekType:bodyGreekType});};
+	_cf_mBLB.prototype.setGreekTool=function(GreekTool) { return ColdFusion.AjaxProxy.invoke(this, "setGreekTool","7C769A9E8EDE493BADD5B1090ACF", {GreekTool:GreekTool});};
+	_cf_mBLB.prototype.closeWidget=function(bubbleID) { return ColdFusion.AjaxProxy.invoke(this, "closeWidget","7C769A9E8EDE493BADD5B1090ACF", {bubbleID:bubbleID});};
+	_cf_mBLB.prototype.setHebrewDiacritics=function(type) { return ColdFusion.AjaxProxy.invoke(this, "setHebrewDiacritics","7C769A9E8EDE493BADD5B1090ACF", {type:type});};
+	_cf_mBLB.prototype.setBodyFontType=function(bodyFontType) { return ColdFusion.AjaxProxy.invoke(this, "setBodyFontType","7C769A9E8EDE493BADD5B1090ACF", {bodyFontType:bodyFontType});};
+	_cf_mBLB.prototype.unSubDevos=function(devoId) { return ColdFusion.AjaxProxy.invoke(this, "unSubDevos","7C769A9E8EDE493BADD5B1090ACF", {devoId:devoId});};
+	_cf_mBLB.prototype.setDevoSubscriptions=function(devoIdModeList) { return ColdFusion.AjaxProxy.invoke(this, "setDevoSubscriptions","7C769A9E8EDE493BADD5B1090ACF", {devoIdModeList:devoIdModeList});};
+	_cf_mBLB.prototype.setGreekToolTheme=function(GreekToolTheme,CustomTheme) { return ColdFusion.AjaxProxy.invoke(this, "setGreekToolTheme","7C769A9E8EDE493BADD5B1090ACF", {GreekToolTheme:GreekToolTheme,CustomTheme:CustomTheme});};
+	_cf_mBLB.prototype.setViewport=function() { return ColdFusion.AjaxProxy.invoke(this, "setViewport","7C769A9E8EDE493BADD5B1090ACF", {});};
+	_cf_mBLB.prototype.setRedLetterNonSticky=function(redLetter) { return ColdFusion.AjaxProxy.invoke(this, "setRedLetterNonSticky","7C769A9E8EDE493BADD5B1090ACF", {redLetter:redLetter});};
+	_cf_mBLB.prototype.getConfirmContent=function(link,widgetID) { return ColdFusion.AjaxProxy.invoke(this, "getConfirmContent","7C769A9E8EDE493BADD5B1090ACF", {link:link,widgetID:widgetID});};
+	_cf_mBLB.prototype.fcbDateIndex=function(fcbMonth) { return ColdFusion.AjaxProxy.invoke(this, "fcbDateIndex","7C769A9E8EDE493BADD5B1090ACF", {fcbMonth:fcbMonth});};
+	_cf_mBLB.prototype.setBodyHebrewType=function(bodyHebrewType) { return ColdFusion.AjaxProxy.invoke(this, "setBodyHebrewType","7C769A9E8EDE493BADD5B1090ACF", {bodyHebrewType:bodyHebrewType});};
+	_cf_mBLB.prototype.setSquishy=function(Squishy) { return ColdFusion.AjaxProxy.invoke(this, "setSquishy","7C769A9E8EDE493BADD5B1090ACF", {Squishy:Squishy});};
+	_cf_mBLB.prototype.imgAlertClose=function() { return ColdFusion.AjaxProxy.invoke(this, "imgAlertClose","7C769A9E8EDE493BADD5B1090ACF", {});};
+	_cf_mBLB.prototype.setParaNonSticky=function(byVerse) { return ColdFusion.AjaxProxy.invoke(this, "setParaNonSticky","7C769A9E8EDE493BADD5B1090ACF", {byVerse:byVerse});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_mTools=ColdFusion.AjaxProxy.init('/cfblb/remoteExtensions/bible/mTools.cfc','mTools');
+	_cf_mTools.prototype.setBibleOrder=function(versionID,versionOrder) { return ColdFusion.AjaxProxy.invoke(this, "setBibleOrder","7C769A9E8EDE493BADD5B1090ACF", {versionID:versionID,versionOrder:versionOrder});};
+	_cf_mTools.prototype.getToolContent=function(bibleTool,Translation,BibleID,additionalArgs) { return ColdFusion.AjaxProxy.invoke(this, "getToolContent","7C769A9E8EDE493BADD5B1090ACF", {bibleTool:bibleTool,Translation:Translation,BibleID:BibleID,additionalArgs:additionalArgs});};
+	_cf_mTools.prototype.verseHasSermonAudio=function(bibleID) { return ColdFusion.AjaxProxy.invoke(this, "verseHasSermonAudio","7C769A9E8EDE493BADD5B1090ACF", {bibleID:bibleID});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_appBarControls=ColdFusion.AjaxProxy.init('/cfblb/remoteExtensions/appBarControls.cfc','appBarControls');
+	_cf_appBarControls.prototype.eventLogger=function(evData) { return ColdFusion.AjaxProxy.invoke(this, "eventLogger","7C769A9E8EDE493BADD5B1090ACF", {evData:evData});};
+	_cf_appBarControls.prototype.userRegistration=function(userEmail,userName,fName,userPass,userPass2,cid,Yenv) { return ColdFusion.AjaxProxy.invoke(this, "userRegistration","7C769A9E8EDE493BADD5B1090ACF", {userEmail:userEmail,userName:userName,fName:fName,userPass:userPass,userPass2:userPass2,cid:cid,Yenv:Yenv});};
+	_cf_appBarControls.prototype.sendLink=function(toEmail,sURL,subject,body) { return ColdFusion.AjaxProxy.invoke(this, "sendLink","7C769A9E8EDE493BADD5B1090ACF", {toEmail:toEmail,sURL:sURL,subject:subject,body:body});};
+	_cf_appBarControls.prototype.resendActivation=function() { return ColdFusion.AjaxProxy.invoke(this, "resendActivation","7C769A9E8EDE493BADD5B1090ACF", {});};
+	_cf_appBarControls.prototype.getGoBackPage=function(locationPathName) { return ColdFusion.AjaxProxy.invoke(this, "getGoBackPage","7C769A9E8EDE493BADD5B1090ACF", {locationPathName:locationPathName});};
+	_cf_appBarControls.prototype.updateBiblePicker=function(field,data) { return ColdFusion.AjaxProxy.invoke(this, "updateBiblePicker","7C769A9E8EDE493BADD5B1090ACF", {field:field,data:data});};
+	_cf_appBarControls.prototype.forgotPassword=function(userEmail) { return ColdFusion.AjaxProxy.invoke(this, "forgotPassword","7C769A9E8EDE493BADD5B1090ACF", {userEmail:userEmail});};
+	_cf_appBarControls.prototype.setBAudioShortURL=function(a,b,c) { return ColdFusion.AjaxProxy.invoke(this, "setBAudioShortURL","7C769A9E8EDE493BADD5B1090ACF", {a:a,b:b,c:c});};
+	_cf_appBarControls.prototype.getPageCitation=function(docLocation,docTitle) { return ColdFusion.AjaxProxy.invoke(this, "getPageCitation","7C769A9E8EDE493BADD5B1090ACF", {docLocation:docLocation,docTitle:docTitle});};
+	_cf_appBarControls.prototype.getLoggedOut=function() { return ColdFusion.AjaxProxy.invoke(this, "getLoggedOut","7C769A9E8EDE493BADD5B1090ACF", {});};
+	_cf_appBarControls.prototype.setCopyTSK=function(bibleID,clipOptions,showStrongs,Translation) { return ColdFusion.AjaxProxy.invoke(this, "setCopyTSK","7C769A9E8EDE493BADD5B1090ACF", {bibleID:bibleID,clipOptions:clipOptions,showStrongs:showStrongs,Translation:Translation});};
+	_cf_appBarControls.prototype.setShortURL=function(docLocation) { return ColdFusion.AjaxProxy.invoke(this, "setShortURL","7C769A9E8EDE493BADD5B1090ACF", {docLocation:docLocation});};
+	_cf_appBarControls.prototype.setCopyText=function(copySelections,clipOptions,showStrongs,Translation,relatedStrongs) { return ColdFusion.AjaxProxy.invoke(this, "setCopyText","7C769A9E8EDE493BADD5B1090ACF", {copySelections:copySelections,clipOptions:clipOptions,showStrongs:showStrongs,Translation:Translation,relatedStrongs:relatedStrongs});};
+	_cf_appBarControls.prototype.setCAudioShortURL=function(CID) { return ColdFusion.AjaxProxy.invoke(this, "setCAudioShortURL","7C769A9E8EDE493BADD5B1090ACF", {CID:CID});};
+	_cf_appBarControls.prototype.userUpdate=function(userEmail,fName,lName,forth) { return ColdFusion.AjaxProxy.invoke(this, "userUpdate","7C769A9E8EDE493BADD5B1090ACF", {userEmail:userEmail,fName:fName,lName:lName,forth:forth});};
+	_cf_appBarControls.prototype.getLoggedIn=function(userEmail,userPass,stayFresh) { return ColdFusion.AjaxProxy.invoke(this, "getLoggedIn","7C769A9E8EDE493BADD5B1090ACF", {userEmail:userEmail,userPass:userPass,stayFresh:stayFresh});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_toolTipLocal=ColdFusion.AjaxProxy.init('/cfblb/remoteExtensions/toolTip/toolTipLocal.cfc','toolTipLocal');
+	_cf_toolTipLocal.prototype.getScripture=function(pathName,queryString,htext,style) { return ColdFusion.AjaxProxy.invoke(this, "getScripture","7C769A9E8EDE493BADD5B1090ACF", {pathName:pathName,queryString:queryString,htext:htext,style:style});};
+/* ]]> */</script>
+
+		<title>What Is Hades?</title>
+	
+		<meta name="Description" content="As the Hebrew word &quot;Sheol&quot; spoke of the state, condition, or place of the dead in the Old Testament, the same is true in the New Testament with the" />
+	
+	<meta name="HandheldFriendly" content="True" />
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	
+
+		<!-- Generic Open Graph Tags -->
+		<meta property="og:title" content="What Is Hades?" />
+		<meta property="og:image" content="https://www.blueletterbible.org/assets-v3/images/blbFPPreview.png" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Blue Letter Bible" />
+		<meta property="og:description" content="As the Hebrew word &quot;Sheol&quot; spoke of the state, condition, or place of the dead in the Old Testament, the same is true in the New Testament with the" />
+		<!-- Google+ Meta tags -->
+		<meta itemprop="name" content="What Is Hades?">
+		<meta itemprop="description" content="As the Hebrew word &quot;Sheol&quot; spoke of the state, condition, or place of the dead in the Old Testament, the same is true in the New Testament with the">
+		<meta itemprop="image" content="https://www.blueletterbible.org/assets-v3/images/blbFPPreview.png">
+	
+
+		<link rel="icon" type="image/png" href="/assets-v3/images/favicon.png" />
+		
+			<link href="https://www.blueletterbible.org/faq/don_stewart/don_stewart_114.cfm" rel="canonical" />
+		
+			<link type="text/css" rel="stylesheet" href="/assets-v3/css/layout-main.css?tv=1728922591" />
+		
+					<link rel="stylesheet" href="/assets-v3/css/faq.css?tv=1728922594" type="text/css" />
+
+
+		
+		<script src="https://use.fontawesome.com/dfb9a03635.js"></script>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js'></script>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+		
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1001_blbSearch/blbSearch.css?tv=1728922597" type="text/css" />
+			
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1002_multiVerseRetrieval/multiVerseRetrieval.css?tv=1728922597" type="text/css" />
+			
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1015_socialNetworks/socialNetworks.css?tv=1728922597" type="text/css" />
+			
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1003_dailyDevotionals/dailyDevotionals.css?tv=1717779977" type="text/css" />
+			
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1004_dbrp/dbrp.css?tv=1717779977" type="text/css" />
+			
+				<link rel="stylesheet" href="/assets-v3/css/widgets/1005_popularPages/popularPages.css?tv=1717779977" type="text/css" />
+			
+		<link type="text/css" rel="stylesheet" href="/assets-v3/css/toolTip/BLBTagger.css?tv=1728922597" />
+
+		
+		<link type="text/css" rel="stylesheet" href="/assets-v3/css/print.css?tv=1728922597" />
+
+		<script type="text/javascript">if (top.location != location) {top.location.href = document.location.href;}</script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/yahoo/yahoo-min.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/selector/selector-min.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/event-delegate/event-delegate-min.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/animation/animation-min.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/yui/build/dragdrop/dragdrop-min.js"></script>
+
+		
+		<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+		<script> window.googletag = window.googletag || {cmd: []}; </script>
+	
+			<script type="text/javascript">
+				googletag.cmd.push(function() {
+					googletag.defineSlot('/116025902/BLB_336x100_Partner', [336, 100], 'div-gpt-ad-BLB_336x100_Partner-1').addService(googletag.pubads());
+					googletag.defineSlot('/116025902/BLB_300x250_LowRight1_Study', [300, 250], 'div-gpt-ad-300x250_LowRight1-1').addService(googletag.pubads());
+					googletag.defineSlot('/116025902/BLB_300x250_LowRight2_Study', [300, 250], 'div-gpt-ad-300x250_LowRight2-1').addService(googletag.pubads());
+					googletag.defineSlot('/116025902/BLB_300x250_MidRight1_Study', [300, 250], 'div-gpt-ad-300x250_MidRight1-1').addService(googletag.pubads());
+					googletag.defineSlot('/116025902/BLB_300x250_STF', [300, 250], 'div-gpt-ad-300x250_STF-1').addService(googletag.pubads());
+					googletag.pubads().collapseEmptyDivs();
+					googletag.enableServices();
+				});
+			</script>
+		
+
+		<script type="text/javascript" src="/assets-v3/scripts/queryCommandSupported.js"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/trimText.js?tv=0"></script>
+
+		
+		<script type="text/javascript" src="/assets-v3/scripts/base64.js?tv=1728922595"></script>
+		
+		<script type="text/javascript" src="/assets-v3/scripts/blb.js?tv=1728922596"></script>
+		
+		<script type="text/javascript" src="/assets-v3/scripts/blbProtoTypes.js?tv=1728922596"></script>
+		<script type="text/javascript" src="/assets-v3/scripts/clipboardjs/clipboard.js"></script>
+
+		
+		<script type="text/javascript" src="/assets-v3/scripts/blbMenu.js?tv=1728922596"></script>
+		
+		<script type="text/javascript" src="/assets-v3/scripts/blbResponsiveMenu.js?tv=1728922596"></script>
+		
+		<script type="text/javascript" src="/assets-v3/scripts/rtNavBubbles.js?tv=1728922597"></script>
+
+		
+				<script src="/assets-v3/scripts/widgets/1001_blbSearch/blbSearch.js?tv=1728922597" type="text/javascript"></script>
+			
+				<script src="/assets-v3/scripts/widgets/1002_multiVerseRetrieval/multiVerseRetrieval.js?tv=1728922597" type="text/javascript"></script>
+			
+				<script src="/assets-v3/scripts/widgets/1006_popularMedia/popularMedia.js?tv=1728922597" type="text/javascript"></script>
+			
+					<script src="/assets-v3/scripts/contentTagger.js?tv=1728922597" type="text/javascript"></script>
+
+
+	
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN855X7LMQ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZN855X7LMQ');		// GA4
+			gtag('config', 'UA-11006531-6');	// GA-Universal
+		</script>
+
+		
+		<script type="text/javascript">
+			BLB.copyOptions = {order:'co_prv', refDelim:'co_rds', numDelim:'co_ndnd', misc:{co_abbrev:true, co_quoted:false, co_sqrbrkt:false, co_sblabbrev:false, co_endash:false}};
+			let hebrewMarks = 5;
+			let root = true;
+		</script>
+		
+	</head>
+
+	
+
+	<body id="bodTag" class="fontTypeArial fontH_SBLHebrew fontG_Gentium">
+		
+		<script type="text/javascript">
+			if(localStorage.getItem('blb_viewport') == null) localStorage.setItem('blb_viewport', false);
+			var blb_viewport = JSON.parse(localStorage.getItem('blb_viewport'));
+			if(blb_viewport) {
+				Dom.addClass('bodTag', 'viewport');
+				Dom.get('viewport').setAttribute('content', 'width=1024');
+			} else {
+				Dom.removeClass('bodTag', 'viewport');
+				Dom.get('viewport').setAttribute('content', 'width=device-width, initial-scale=1.0');
+			}
+		</script>
+		<div id="broughtBy" class="print_only"><p><img src="/assets-v3/images/printBLB.svg" alt="Brought to you by the Blue Letter Bible" /></p></div>
+
+		
+<div id="appBar" class="topBar show-for-large">
+	<div id="appContent">
+		<div id="blbHome" data-ev-cat="AppBar" data-ev-action="BLB Logo Click" data-ev-label="BLB Logo Home Link [Desktop]">
+			<a href="/"><img src="/assets-v3/images/svg/blb-logo-appbar.svg" alt="Home" class="appspace_logo" /></a>
+		</div>
+		<div id="appSearch">
+			<form action="/search/preSearch.cfm" name="appBarSearch" id="appBarSearch" method="post">
+				<input type="hidden" name="t" value="KJV" />
+				<div class="appsearch-top">
+					<div class="quicklinks">
+						<span id="searchHelps01" data-ev-cat="AppBar" data-ev-action="Help Click" data-ev-label="Search Help Popup [Desktop]" alt="Click for Help">Help</span>
+						<span id="appBarQN" data-ev-cat="AppBar" data-ev-action="QuickNav Click" data-ev-label="QuickNav Popup  [Desktop]" alt="Click for QuickNav">QuickNav</span>
+						<span id="appBarAO" data-ev-cat="AppBar" data-ev-action="Adv. Options Click" data-ev-label="Adv. Options Popup [Desktop]" alt="Click for Advanced Search Options">Adv. Options</span>
+					</div>
+				</div>
+				<div class="appsearch-bottom">
+					<div>
+						<input placeholder="Verse or Word(s)" type="text" name="Criteria" class="verse-input" />
+					</div>
+					
+					<div id="selectBox">
+						<div id="selectDropU" data-ev-cat="AppBar" data-ev-action="Translation Dropdown [Small] Click" data-ev-label="Translation Selection Dropdown [Small Desktop] Click">
+							<div alt="Search KJV" title="Search KJV" id="selectedSearchDiv" class="appsearch-drop"><span>KJV</span></div>
+						</div>
+						
+					</div>
+					<div>
+						<input type="image" src="/assets-v3/images/appBar_top/app_search_go.svg" class="app-search-go" alt="Go!" title="Go!" />
+					</div>
+				</div>
+				
+				<div class="hidden" id="appBarAdvOptMenu">
+					<div>
+						<div id="clearAppBarOptMenu">
+							<a id="clearAppBarAnchorMenu">Clear Advanced Options</a>
+						</div>
+						<p>Search a pre-defined list</p>
+						<p>
+							<select size="1" name="csr">
+								<option value="0" class="ddOption1">The Whole Bible</option>
+								<option value="1" class="ddOption2">The Old Testament</option>
+								<option value="9" class="ddOption2">The New Testament</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="2">Pentateuch</option>
+								<option value="3">Historical Books</option>
+								<option value="4">Poetical Books</option>
+								<option value="5">Wisdom Literature</option>
+								<option value="6">Prophets</option>
+								<option value="7">Major Prophets</option>
+								<option value="8">Minor Prophets</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="10">The Gospels</option>
+								<option value="11">Luke-Acts</option>
+								<option value="12">Pauline Epistles</option>
+								<option value="13">General Epistles</option>
+								<option value="14">Johannine Writings</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+							</select>
+						</p>
+						<hr />
+						<p><b>OR</b> Select a range of biblical books</p>
+						<p><span>From:</span></p>
+						<p><select size="1" name="csrf">
+							<option value="0" class="ddOption1">Select a Beginning Point</option>
+							<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+						</select></p>
+						<p><span>To:</span></p>
+						<p><select size="1" name="csrt">
+							<option value="0" class="ddOption1">Select an Ending Point</option>
+							<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+						</select></p>
+						<hr />
+						<p><b>OR</b> Custom Selection:</p>
+						<p><input type="text" title="Use semicolons to separate groups
+Gen;Jdg;Psa-Mal
+Rom 3-12; Mat 1:15;Mat 5:12-22
+" name="cscs" value="" autocomplete="off" /></p>
+						<p>Use semicolons to separate groups:<br /> 'Gen;Jdg;Psa-Mal' or 'Rom 3-12;Mat 1:15;Mat 5:12-22'</p>
+					</div>
+					<div class="menuOptionsArrow"><img src="/assets-v3/images/menu/menuOptionsArrowTop.png" alt="decorative arrow" /></div>
+					<div onClick="BLB.switchShowState('appBarAdvOptMenu');" class="menuOptionsClose"><img src="/assets-v3/images/menu/menuOptionsClose_a.png" alt="Close Advanced Options" /></div>
+				</div>
+			</form>
+		
+		</div>
+		
+		<div id="appVersion" data-ev-cat="AppBar" data-ev-action="Translation Dropdown [Large] Click" data-ev-label="Translation Selection Dropdown [Large Desktop] Click">
+			<p><span alt="Your Bible Version is the KJV" class="bible-title">KJV</span></p>
+			<p><span class="bible-title-sub">Click to Change</span></p>
+		</div>
+		<div id="scrollTop" data-ev-cat="AppBar" data-ev-action="Return to Top Click" data-ev-label="Return to Top [Desktop] Click" onClick="window.scrollTo(0, 0);">
+			<img src="/assets-v3/images/appBar_top/return-top.svg" alt="Return to Top" class="topbar-icon">
+			<p alt="Go to Top">Return to Top</p>
+		</div>
+		<div id="appSoc">
+			<div class="appsocial-left">
+				<a id="pageLink" data-ev-cat="AppBar" data-ev-action="Link this Page Click" data-ev-label="Link this Page [Desktop] Click">Link</a>
+				<a id="appShare" data-ev-cat="AppBar" data-ev-action="Share this Page Click" data-ev-label="Share this Page [Desktop] Click">Share</a>
+			</div>
+			<div class="appsocial-right">
+				<a id="pageCite" data-ev-cat="AppBar" data-ev-action="Cite this Page Click" data-ev-label="Cite this Page [Desktop] Click">Cite This</a>
+				<a id="appFollow" data-ev-cat="AppBar" data-ev-action="Follow BLB Click" data-ev-label="Follow BLB [Desktop] Click">Follow</a>
+			</div>
+		</div>
+		<div id="appPrint" data-ev-cat="AppBar" data-ev-action="Print this Page Click" data-ev-label="Print this Page [Desktop] Click" onClick="window.print();">
+			<img src="/assets-v3/images/appBar_top/print-icon.svg" alt="Printer Icon" class="topbar-icon">
+			<p alt="Printable Page">Print</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<nav class="nav-menu top show-for-large" id="menuTop" role="navigation">
+	<ul class="nav-menu__list" id="menuBlock">
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Search Menu Click" data-ev-label="Search Menu Click [Desktop NavBar]" href="/search.cfm" id="MM_search">Search</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Study Menu Click" data-ev-label="Study Menu Click [Desktop NavBar]" href="/study.cfm" id="MM_study">Study</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Devotionals Menu Click" data-ev-label="Devotionals Menu Click [Desktop NavBar]" href="/devotionals/" id="MM_devotions">Devotionals</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Help Menu Click" data-ev-label="Help Menu Click [Desktop NavBar]" href="/help.cfm" id="MM_help">Help</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Apps-Tools Menu Click" data-ev-label="Products Menu Click [Desktop NavBar]" href="/apps-tools.cfm" id="MM_apps">Apps & Tools</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Ministries Menu Click" data-ev-label="Ministries Menu Click [Desktop NavBar]" href="/ministries.cfm" id="MM_ministry">Ministries</a></li>
+		<li><a class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="About Menu Click" data-ev-label="About Menu Click [Desktop NavBar]" href="/about/" id="MM_about">About</a></li>
+		<li><a target="_blank" class="nav-menu__link" data-ev-cat="Navigation" data-ev-action="Donate Menu Click" data-ev-label="Donate Menu Click [Desktop NavBar]" href="/donate/" id="MM_donations">Donate</a></li>
+	</ul>
+
+	
+	<div id="searchDrop" class="menuDrop hidden">
+		<div class="blue-bg">
+			<div>
+				<div class="row">
+					<div class="column small-12">
+						<h3 class="section-title text-center">Search</h3>
+					</div>
+				</div>
+				<div class="row align-center">
+					<table><tbody><tr>
+						<td class="col1">
+							<h2 class="sub-section-title">Bible Search</h2>
+							<form action="/search/preSearch.cfm" name="menuBibleSearch" id="menuBibleSearch" method="post">
+								<input type="hidden" name="t" value="KJV" />
+								<div class="searchInputs">
+									<table><tbody><tr>
+										<td id="menuWordsSearchInput">
+											<input placeholder="Verse, Word(s) or Topic" type="text" name="Criteria" value="" autocomplete="off" />
+										</td>
+										<td id="menuWordsSelectBox">
+											<div id="menuSelectDropU">
+												<div alt="Search KJV" title="Search KJV" id="menuSelectedSearchDiv" class="appsearch-drop"><span>KJV</span></div>
+											</div>
+											
+										</td>
+										<td id="menuWordsSubmit">
+											<input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchPrime">&nbsp;[?]</a>
+										</td>
+									</tr></table>
+		
+									<div id="advOptDivMenu">
+										<button id="shAdvOptMenu" type="button">Advanced Options</button>
+										<p id="clrAdvOptMenu" class="alert hidden">There are options set in 'Advanced Options'</p>
+		
+										<div id="advOptMenu" class="hidden">
+											<div>
+												<div id="clearOptMenu"><a id="clearAnchorMenu">Clear Advanced Options</a></div>
+													<p>Search a pre-defined list</p>
+													<p><select size="1" name="csr">
+														<option selected="true" value="0" class="ddOption1">The Whole Bible</option>
+														<option value="1" class="ddOption2">The Old Testament</option>
+														<option value="9" class="ddOption2">The New Testament</option>
+														<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+														<option value="2">Pentateuch</option>
+														<option value="3">Historical Books</option>
+														<option value="4">Poetical Books</option>
+														<option value="5">Wisdom Literature</option>
+														<option value="6">Prophets</option>
+														<option value="7">Major Prophets</option>
+														<option value="8">Minor Prophets</option>
+														<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+														<option value="10">The Gospels</option>
+														<option value="11">Luke-Acts</option>
+														<option value="12">Pauline Epistles</option>
+														<option value="13">General Epistles</option>
+														<option value="14">Johannine Writings</option>
+														<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+														<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+													</select></p>
+													<hr />
+													<p><b>OR</b> Select a range of biblical books</p>
+													<p><span>From:</span></p>
+													<p><select size="1" name="csrf">
+														<option selected="true" value="0" class="ddOption1">Select a Beginning Point</option>
+														<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+													</select></p>
+													<p><span>To:</span></p>
+													<p><select size="1" name="csrt">
+														<option selected="true" value="0" class="ddOption1">Select an Ending Point</option>
+														<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+													</select></p>
+													<hr />
+													<p><b>OR</b> Custom Selection:</p>
+													<p><input type="text" title="Use semicolons to separate groups
+Gen;Jdg;Psa-Mal
+Rom 3-12; Mat 1:15;Mat 5:12-22
+" name="cscs" value="" autocomplete="off" /></p>
+													<p>Use semicolons to separate groups:<br /> 'Gen;Jdg;Psa-Mal' or 'Rom 3-12;Mat 1:15;Mat 5:12-22'</p>
+												</div>
+											<div class="menuOptionsArrow"><img src="/assets-v3/images/menu/menuOptionsArrowLeft.png" alt="decorative arrow" /></div>
+											<div onClick="BLB.switchShowState('advOptMenu', 'searchDrop');" class="menuOptionsClose"><img src="/assets-v3/images/menu/menuOptionsClose_a.png" alt="Close Advanced Options" /></div>
+										</div>
+									</div>
+								</div>
+							</form>
+							<h2 class="sub-section-title">Lexiconc Search</h2>
+							<p class="small-subtitle">(Hebrew/Greek Search by English Definition)</p>
+							<form action="/search/preSearch.cfm" name="menuLexSearch" id="menuLexSearch" method="post">
+								<input type="hidden" id="lexiconcTMenu" name="t" value="KJV" />
+								<input type="hidden" name="type" value="lexiconc" />
+								<input type="text" name="Criteria" autocomplete="off" /><input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchLex">&nbsp;[?]</a>
+								<div class="clear">&nbsp;</div>
+							</form>
+		
+							<h2 class="sub-section-title">Theological FAQ Search</h2>
+							<form action="/search/preSearch.cfm" name="menuFaqSearch" id="menuFaqSearch" method="post">
+								<input type="hidden" id="faqsTMenu" name="t" value="KJV" />
+								<input type="hidden" name="type" value="faqs" />
+								<input type="text" name="Criteria" autocomplete="off" /><input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchFaq">&nbsp;[?]</a>
+								<div class="clear">&nbsp;</div>
+							</form>
+		
+						</td>
+						<td>
+							<h2 class="sub-section-title">Multiverse Retrieval</h2>
+							<form action="/tools/MultiVerse.cfm" name="mvFormMenu" id="mvFormMenu" method="post">
+								<input type="hidden" name="refFormat" value="2" />
+								<input type="hidden" name="refDelim" value="1" />
+								<input type="hidden" name="numDelim" value="1" />
+								<input type="hidden" name="abbrev" value="1" />
+								<input type="hidden" name="quoted" value="0" />
+								<input type="hidden" name="sqrbrkt" value="0" />
+								<input type="hidden" name="sblabbrev" value="0" />
+								<input type="hidden" name="endash" value="0" />
+								<input type="hidden" name="sorted" value="0" />
+								<input type="hidden" name="t" value="KJV" />
+								<div id="mvFormItemsMenu">
+									<textarea id="mvTextMenu" name="mvText" placeholder="For example: Gen 1:1-15, Rev 3; 4; Jer 21:10"></textarea>
+									<table><tbody><tr>
+										<td>
+											<div id="mvMenuFormSelectDropU">
+												<div alt="Search KJV" title="Search KJV" id="mvMenuFormSelectedSearchDiv" class="appsearch-drop"><span>KJV</span></div>
+											</div>
+											
+										</td><td>
+											<button type="submit">Retrieve</button><button type="button" onClick="BLB.switchShowState('mvOptionsMenu', 'searchDrop');YEvent.stopPropagation(event);">Adv. Options</button><br />
+										</td>
+									</tr></tbody></table>
+								</div>
+							</form>
+							<div id="mvOptionsMenu" class="hidden">
+								<div>
+									<table cellspacing="0" cellpadding="0" border="0">
+										<tbody>
+											<tr>
+												<td rowspan="2">
+													<div><b>Line-By-Line Order:</b></div>
+													<div>
+														<div id="mmv_llvr"><img alt="Line-By-Line Verse-Reference" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Verse-Reference</div>
+														<div id="mmv_llrv"><img alt="Line-By-Line Reference-Verse" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Reference-Verse</div>
+														<div id="mmv_llsl"><img alt="Line-By-Line Separate Line" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Separate Line</div>
+														<div id="mmv_llvo"><img alt="Line-By-Line Verse Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Verse Only</div>
+														<div id="mmv_llro"><img alt="Line-By-Line Reference Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Reference Only</div>
+													</div>
+													<div><b>Paragraph Order:</b></div>
+													<div>
+														<div id="mmv_pvr"><img alt="Paragraph Verse-Reference" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Verse-Reference</div>
+														<div id="mmv_prv"><img alt="Paragraph Reference-Verse" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />&#160;&#160;Reference-Verse</div>
+														<div id="mmv_pro"><img alt="Paragraph Reference-Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Reference-Only</div>
+													</div>
+												</td>
+												<td>
+													<div><b>Number Delimiters:</b><span>*</span></div>
+													<div id="numDelimMenu">
+														<div id="mmv_ndnn"><img alt="No Verse Numbers" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;No Number</div>
+														<div id="mmv_ndnd"><img alt="No Verse Delimeters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />&#160;&#160;No Delimiter &#8212; 15</div>
+														<div id="mmv_nds"><img alt="Square Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Square &#8212; [15]</div>
+														<div id="mmv_ndc"><img alt="Curly Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Curly &#8212; {15}</div>
+														<div id="mmv_ndp"><img alt="Parenthesis Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Parens &#8212; (15)</div>
+													</div>
+													<div><b>Other Options:</b></div>
+													<div>
+														<div id="mmv_abbrev"><img alt="Abbreviate Books" src="/assets-v3/images/svg/contextBar/copyOptions/checkOn.svg" />&#160;&#160;Abbreviate Books</div>
+														<div id="mmv_sblabbrev">&#160;&#160;<img alt="Use SBL Abbrev." src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />&#160;&#160;Use SBL Abbrev.</div>
+														<div id="mmv_endash"><img alt="En dash not Hyphen" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />&#160;&#160;En dash Hyphen</div>
+													</div>
+												</td>
+												<td>
+													<div><b>Reference Delimiters:</b></div>
+													<div>
+														<div id="mmv_rdn"><img alt="No Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;None &#8212; Jhn 1:1 KJV</div>
+														<div id="mmv_rds"><img alt="Square Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />&#160;&#160;Square &#8212; [Jhn 1:1 KJV]</div>
+														<div id="mmv_rdc"><img alt="Curly Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Curly &#8212; {Jhn 1:1 KJV}</div>
+														<div id="mmv_rdp"><img alt="Parenthesis Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />&#160;&#160;Parens &#8212; (Jhn 1:1 KJV)</div>
+													</div>
+													<div>&nbsp;</div>
+													<div>&nbsp;</div>
+													<div>
+														<div id="mmv_quoted"><img alt="Quotes Around Verses" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />&#160;&#160;Quotes Around Verses</div>
+														<div id="mmv_sqrbrkt"><img alt="Remove Square Brackets" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />&#160;&#160;Remove Square Brackets</div>
+														<div id="mmv_sorted"><img alt="Sort Canonically" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />&#160;&#160;Sort Canonically</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<div>
+														<p>* 'Number Delimiters' only apply to 'Paragraph Order'</p>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="menuOptionsArrow"><img src="/assets-v3/images/menu/menuOptionsArrow.png" alt="decorative arrow" /></div>
+								<div onClick="BLB.switchShowState('mvOptionsMenu', 'searchDrop');" class="menuOptionsClose"><img src="/assets-v3/images/menu/menuOptionsClose_a.png" alt="Close Advanced Options" /></div>
+							</div>
+							<h2 class="sub-section-title">Browse Dictionary Topics</h2>
+							<div class="dictMenu">
+								<span><a href="/search/dictionary/viewentries.cfm?letter=a">a</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=b">b</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=c">c</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=d">d</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=e">e</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=f">f</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=g">g</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=h">h</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=i">i</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=j">j</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=k">k</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=l">l</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=m">m</a></span>
+								<br/>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=n">n</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=o">o</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=p">p</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=q">q</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=r">r</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=s">s</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=t">t</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=u">u</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=v">v</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=w">w</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=x">x</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=y">y</a></span>
+								<span><a href="/search/dictionary/viewentries.cfm?letter=z">z</a></span>
+							</div>
+						</td>
+					</tr></tbody></table>
+				</div>
+				<div class="row align-center">
+					<div class="column small-12">
+						<a href="/faq/knowgod.cfm" data-ev-cat="Navigation" data-ev-action="Search Menu Item" data-ev-label="[Banner] Are you searching for God?"><img class="noSwap hoverHue325" src="/assets-v3/images/menu/areYou01_a.png" alt="Are you searching for God? (click to read)" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menuArrow"><img class="menuArrow" alt="menu decoration" src="/assets-v3/images/menu/menu_arroUp.png" /></div>
+	</div>
+<script type="text/javascript" src="/assets-v3/scripts/navMenus/MM_search.js?tv=1728922597"></script> <div id="studyDrop" class="menuDrop hidden">
+	<div class="red-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Study</h3>
+				</div>
+			</div>
+
+			<div class="col-container">
+				<div class="first-col">
+					<h2 class="sub-section-title">Bible Commentaries</h2>
+					<ul>
+						<li><a href="/commentaries/">Text Commentaries</a></li>
+						<li><a href="/audio_video/">Audio &amp; Video Commentaries</a></li>
+					</ul>
+					<h2 class="sub-section-title">Bible Reference</h2>
+					<ul>
+						<li><a href="/study/harmony/index.cfm">Harmony of the Gospels</a></li>
+						<li><a href="/search/Dictionary/viewEntries.cfm">Encyclopedias / Dictionaries</a></li>
+						<li><a href="/resources/study-notes.cfm">Bible Study Notes</a></li>
+						<li><a href="/resources/prefaces.cfm">Prefaces</a></li>
+						<li><a href="/resources/intros.cfm">Introductions to the Bible</a></li>
+						<li><a href="/resources/charts.cfm">Charts and Outlines</a></li>
+						<li><a href="/resources/timelines.cfm">Timelines</a></li>
+						<li><a href="/images/">Maps / Images</a></li>
+					</ul>
+					<h2 class="sub-section-title"><a href="/resources/biblical-languages.cfm">Biblical Language Resources</a></h2>
+					<ul>
+						<li><a href="/tools/interlinear/tr/jhn/1/1-51/">Inline Interlinear</a></li>
+						<li><a href="/resources/tools/index.cfm">Language Tools</a></li>
+						<li><a href="/resources/lexical/index.cfm">Lexical Resources</a></li>
+						<li><a href="/resources/grammars.cfm">Grammars</a></li>
+						<li><a href="/resources/concordances/index.cfm">Concordances</a></li>
+						<li><a href="/resources/morphology/index.cfm">Morphology</a></li>
+					</ul>
+				</div>
+				<div class="second-col">
+					<div class="second-col-sub-container">
+						<div class="second-col-a">
+							<h2 class="sub-section-title">Bible Courses</h2>
+							<ul>
+								<li><a href="https://study.bible/" target="_blank">BLB Institute <i>(Free)</i></a></li>
+							</ul>
+							<h2 class="sub-section-title">Other Languages</h2>
+							<ul>
+								<li><a href="/spanish" target="_blank">Spanish (Espa&ntilde;ol) Resources</a></li>
+							</ul>
+							<h2 class="sub-section-title">Theological Resources</h2>
+							<ul>
+								<li><a href="/resources/articles.cfm">Articles / Books</a></li>
+								<li><a href="/wm/">Women's Resources</a></li>
+								<li><a href="/faq/don_stewart/">Don Stewart FAQs</a></li>
+								<li><a href="/faq/">BLB Theological FAQs</a></li>
+								<li><a href="/resources/missions.cfm">Missions Resources</a></li>
+								<li><a href="/resources/cults.cfm">Cult Resources</a></li>
+								<li><a href="/study/ccc/index.cfm">Creeds, Catechisms, and Confessions</a></li>
+							</ul>
+						</div>
+						<div class="second-col-b">
+							<h2 class="sub-section-title">Topical Indexes</h2>
+							<ul>
+								<li><a href="/study/hta/">Hitchcock's Topical Analysis</a></li>
+								<li><a href="/study/thompson/specread.cfm">Thompson's Chain Reference</a></li>
+								<li><a href="/study/misc/name_god.cfm">The Names of God</a></li>
+								<li><a href="/study/misc/ogiwa.cfm">Our God Is&#8230; We Are&#8230;</a></li>
+								<li><a href="/study/misc/putoffon.cfm">Put Off&#8230; Put On&#8230;</a></li>
+							</ul>
+							<h2 class="sub-section-title">Multimedia</h2>
+							<ul>
+								<li><a href="/resources/media.cfm">Media</a></li>
+								<li><a href="/resources/music.cfm">Music</a></li>
+								<li><a href="/resources/livestreams/">Livestreams</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="second-col-bottom">
+						<a id="blbi-callout-container" href="https://study.bible/courseList" target="_blank">
+							<div>
+								<img src="/assets-v3/images/blbi/blbi-logo_white-text-full.svg" alt="BLBi Logo" width="200" class="blbi-logo" />
+							</div>
+							<div class="blbi-right-container">
+								<div class="blbi-right-text">
+									<h4>Free Bible Courses on Christian Belief & Practice</h4>
+								</div>
+								<div>
+									<button class="blbi-cta">Browse Courses</button>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="devotionsDrop" class="menuDrop hidden">
+	<div class="teal-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Devotionals</h3>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-6">
+					
+							<h2 class="sub-section-title"><a href="/devotionals/dbdbg/">Day by Day by Grace</a></h2>
+							<ul>
+								
+										<li><a href="/devotionals/dbdbg/view.cfm">Today's Reading</a></li>
+								
+								<li><a href="/devotionals/dbdbg/scriptureIndex.cfm">Scripture Index</a></li>
+								<li><a href="/devotionals/dbdbg/dateIndex.cfm">Date Index</a></li>
+							</ul>
+						
+							<h2 class="sub-section-title"><a href="/devotionals/me/">Morning and Evening</a></h2>
+							<ul>
+								
+									<li><a href="/devotionals/me/view.cfm?Time=am">This Morning's Reading</a></li>
+									<li><a href="/devotionals/me/view.cfm?Time=pm">This Evening's Reading</a></li>
+									
+								<li><a href="/devotionals/me/scriptureIndex.cfm">Scripture Index</a></li>
+								<li><a href="/devotionals/me/dateIndex.cfm">Date Index</a></li>
+							</ul>
+						
+				</div>
+				<div class="column small-6">
+					
+							<h2 class="sub-section-title"><a href="/devotionals/promises/">BLB Daily Promises</a></h2>
+							<ul>
+								<li><a href="/devotionals/promises/view.cfm">Today's Reading</a></li>
+								<li><a href="/devotionals/promises/scriptureIndex.cfm">Scripture Index</a></li>
+								<li><a href="/devotionals/promises/dateIndex.cfm">Date Index</a></li>
+							</ul>
+						
+							<h2 class="sub-section-title"><a href="/devotionals/faiths-checkbook/">Faith's Checkbook</a></h2>
+							<ul>
+								<li><a href="/devotionals/faiths-checkbook/view.cfm">Today's Reading</a></li>
+								<li><a href="/devotionals/faiths-checkbook/scriptureIndex.cfm">Scripture Index</a></li>
+								<li><a href="/devotionals/faiths-checkbook/dateIndex.cfm">Date Index</a></li>
+							</ul>
+						
+					<h2 class="sub-section-title"><a href="/dailyreading/">Bible Reading</a></h2>
+					<ul>
+						<li><a href="/dailyreading/generic.cfm">Today's Reading</a></li>
+					<li><a href="/dailyreading/">Daily Bible Reading Program</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="helpDrop" class="menuDrop hidden">
+	<div class="yellow-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Help</h3>
+				</div>
+			</div>
+
+
+			<div class="row align-center">
+				<div class="column small-6">
+					<h2 class="sub-section-title">Video Tutorials</h2>
+					<ul>
+						<li><a href="/help/videoHelps.cfm#section1">Quickstart Guide</a></li>
+						<li><a href="/help/videoHelps.cfm#section2">Essentials - The Bible</a></li>
+						<li><a href="/help/videoHelps.cfm#section3">Essentials - <br>Word Searching</a></li>
+						<li><a href="/help/videoHelps.cfm#section4">Customization</a></li>
+						<li><a href="/help/videoHelps.cfm#section5">Advanced BLB</a></li>
+					</ul>
+					<h2 class="sub-section-title">Help Tutorials</h2>
+						<ul>
+							<li><a href="/help/index.cfm#getStarted">How to get started</a></li>
+							<li><a href="/help/index.cfm#bibleTools">How to use the Bible Tools</a></li>
+							<li><a href="/help/index.cfm#searchTools">How to use the Search Tools</a></li>
+							<li><a href="/help/index.cfm#miscellaneous">Miscellaneous</a></li>
+						</ul>
+				</div>
+				<div class="column small-6">
+					<h2 class="sub-section-title">Support</h2>
+					<ul>
+						<li><a href="/contact/contact_iapp.cfm">Apple iOS App Support</a></li>
+						<li><a href="/contact/contact_android.cfm">Android App Support</a></li>
+						<li><a href="https://study.bible/help">BLB Institute Support</a></li>
+						<li><a href="/contact/contact_donor.cfm">Donor Support</a></li>
+						<li><a href="/contact/contact_pc.cfm">Website Questions</a></li>
+						<li><a href="/contact/contact_gen.cfm">General Questions</a></li>
+						<li><a href="/contact/contact_theo.cfm">Theological Questions</a></li>
+					</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+</div> <div id="appsDrop" class="menuDrop hidden">
+	<div class="purple-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Featured Apps & Tools</h3>
+				</div>
+			</div>
+
+			<div id="featured-container">
+				<div>
+					<h2 class="sub-section-title" style="margin-bottom: 11px;">Free Bible<br>Apps</h2>
+					<p class="feature-callout">Download BLB's Free Bible App</p>
+					<a href="/tools/redirect.cfm?Site=https%3A%2F%2Fitunes%2Eapple%2Ecom%2Fus%2Fapp%2Fblue%2Dletter%2Dbible%2Fid365547505%3Fmt%3D8" target="_blank"><img src="/assets-v3/images/products/ios-appstore.svg" alt="Visit Apple iOS App Store" class="app-stores text-center" /></a>
+					<a href="/tools/redirect.cfm?Site=https%3A%2F%2Fplay%2Egoogle%2Ecom%2Fstore%2Fapps%2Fdetails%3Fid%3Dorg%2Eblueletterbible%2Eblb" target="_blank"><img src="/assets-v3/images/products/google-play.svg" alt="Visit Google Play Store" class="app-stores text-center" /></a>
+				</div>
+				<div>
+					<h2 class="sub-section-title">Digital Markup Bible Study Tool</h2>
+					<a href="/smark/"><img src="/assets-v3/images/products/sm-logo_no-tag.svg" alt="ScriptureMark Logo" class="marketing-image float-center" /></a>
+					<a href="/smark/" class="product__btn product__btn-righticon" target="_blank">Visit
+									<svg enable-background="new 0 0 26 26" viewBox="0 0 26 26" class="product__icon-arrow" xmlns="http://www.w3.org/2000/svg"><path d="m5.6 24.2v-22.4c0-1.6 1.9-2.3 3-1.2l11.2 11.2c.7.7.7 1.8 0 2.5l-11.2 11.2c-1.1 1.1-3 .3-3-1.3z"/></svg>
+					</a>
+				</div>
+				<div>
+					<h2 class="sub-section-title">Free Bible Courses</h2>
+					<a href="https://study.bible/" target="_blank"><img src="/assets-v3/images/blbi/blbi-logo.svg" alt="BLBi Logo" class="blbi-logo-feature float-center" /></a>
+					<a href="https://study.bible/" class="product__btn product__btn-righticon" target="_blank">Visit
+									<svg enable-background="new 0 0 26 26" viewBox="0 0 26 26" class="product__icon-arrow" xmlns="http://www.w3.org/2000/svg"><path d="m5.6 24.2v-22.4c0-1.6 1.9-2.3 3-1.2l11.2 11.2c.7.7.7 1.8 0 2.5l-11.2 11.2c-1.1 1.1-3 .3-3-1.3z"/></svg>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">All Apps & Tools</h3>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-6">
+						<h2 class="sub-section-title">Free Bible Apps</h2>
+						<ul class="tools-list">
+							<li><a href="/tools/redirect.cfm?Site=https%3A%2F%2Fitunes%2Eapple%2Ecom%2Fus%2Fapp%2Fblue%2Dletter%2Dbible%2Fid365547505%3Fmt%3D8" target="_blank">Apple iOS</a></li>
+							<li><a href="/tools/redirect.cfm?Site=https%3A%2F%2Fplay%2Egoogle%2Ecom%2Fstore%2Fapps%2Fdetails%3Fid%3Dorg%2Eblueletterbible%2Eblb" target="_blank">Google Android</a></li>
+						</ul>
+						<h2 class="sub-section-title">Digital Markup Bible Study</h2>
+						<ul class="tools-list">
+							<li><a href="/smark/">ScriptureMark</a></li>
+						</ul>
+						<h2 class="sub-section-title">Bible Courses</h2>
+						<ul class="tools-list">
+							<li><a href="https://study.bible/">BLB Institute <i>(Free)</i></a></li>
+						</ul>
+						<h2 class="sub-section-title">Free Social Tools</h2>
+						<ul class="tools-list">
+							<li><a href="/products/blbSocial.cfm">Sharable Social Images</a></li>
+						</ul>
+				</div>
+				<div class="column small-6">
+						<h2 class="sub-section-title">Free Web Tools</h2>
+						<ul class="tools-list">
+							<li><a href="/webtools/BLB_ScriptTagger.cfm">BLB ScriptTagger</a></li>
+							<li><a href="/webtools/BLB_websearch.cfm">BLB Web Search Tool</a></li>
+							<li><a href="https://blogs.blueletterbible.org/blb/" target="_blank">BLB Blog</a></li>
+						</ul>
+						<h2 class="sub-section-title">BLB Offline</h2>
+						<ul class="tools-list">
+							<li><a href="/cd/info.cfm">BLB CD</a></li>
+						</ul>
+						<h2 class="sub-section-title">Digital Products</h2>
+						<ul class="tools-list">
+							<li><a href="/products/digital.cfm">Digital Books</a></li>
+							<li><a href="/products/videodownloads.cfm">Digital Videos</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="ministryDrop" class="menuDrop hidden">
+	<div class="orange-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Ministries</h3>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-6">
+					<a href="https://study.bible/" target="_blank"><img class="noSwap hoverHue150 ministry-highlight" src="/assets-v3/images/menu/menuMin_blbi_a.jpg" alt="Visit the BLB Institute" style="margin-bottom: 10px; border-radius: 5px;" /></a>
+					<a href="https://blogs.blueletterbible.org/"><img class="noSwap hoverHue150 ministry-highlight" src="/assets-v3/images/menu/menuMin_blbBlog_a.jpg" alt="Visit the BLB Blog" style="border-radius: 5px;" /></a>
+				</div>
+				<div class="column small-6">
+						<h2 class="sub-section-title">Co-Laboring</h2>
+						<ul>
+							<li><a href="http://sowingcircle.org">Sowing Circle</a></li>
+							<li><a href="/ministry/links.cfm">Outside Ministry Links</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <div id="aboutDrop" class="menuDrop hidden">
+	<div class="green-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">About</h3>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-6">
+					<ul>
+						<li><a href="/about/about.cfm">About BLB</a></li>
+						<li><a href="/about/faith.cfm">Statement of Faith</a></li>
+						<li><a href="/about/history.cfm">History of BLB</a></li>
+						<li><a href="/about/faqs.cfm">Ministry FAQs</a></li>
+						<li><a href="/livemap/">LiveMap</a></li>
+					</ul>
+				</div>
+				<div class="column small-6">
+						<ul>
+							<li><a href="/newsletter/">Newsletter</a></li>
+							<li><a href="/about/partnership.cfm">Advertise with Us</a></li>
+							<li><a href="/about/permissions.cfm">Permissions</a></li>
+							<li><a href="/about/yourstory.cfm">Share Your BLB Story</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-12">
+					<a href="/faq/knowgod.cfm" style="padding:15px 0 15px 9px;" data-ev-cat="Navigation" data-ev-action="About Menu Item" data-ev-label="[Banner] How to know God"><img class="noSwap hoverHue325" src="/assets-v3/images/menu/knowGod01_a.png" alt="How to Know God? (click to read)" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <div id="donationsDrop" class="menuDrop hidden">
+	<div class="burnt-orange-bg">
+		<div>
+			<div class="row">
+				<div class="column small-12">
+					<h3 class="section-title text-center">Donate</h3>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="column small-6">
+					<h2 class="sub-section-title">Gift Options</h2>
+					<ul>
+						<li><a target="_blank" href="/donate">Credit Card</a></li>
+						<li><a target="_blank" href="/donate">PayPal</a></li>
+						<li><a target="_blank" href="/donate">Venmo</a></li>
+						<li><a href="/donate/mail.cfm">Mail-In</a></li>
+						<li><a href="/donate/contribute.cfm">All Gift Options</a></li>
+					</ul>
+				</div>
+				<div class="column small-6">
+						<h2 class="sub-section-title">Donor Information</h2>
+						<ul>
+							<li><a target="_blank" href="https://account.raisedonors.com/blueletterbible/login">Donor Portal Login</a></li>
+							<li><a href="/donorinfo/">Our Funding Model</a></li>
+							<li><a href="/contact/contact_donor.cfm">Support &amp; FAQs</a></li>
+							<li><a href="/RaiseDonors/index.cfm">RaiseDonors Information</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+<div id="homeLoginMenu" class="show-for-large">
+	<p>
+	
+		<a rel="index.homeLogin">LOGIN</a>
+	
+		<a id="homeGear" href="/userPrefs/userPrefs.cfm" title="Your User Settings"><img src="/assets-v3/images/homeGear02_a.png" alt="Your User Settings" /></a>
+	</p>
+</div>
+
+
+
+</nav>
+
+
+
+<nav id="responsiveNav" class="nav-menu responsive-navbar hide-for-large" role="navigation">
+	<div class="nav-logo">
+		<a href="/" class="nav-logo__stacked"><img src="/assets-v3/images/BLB_color_stacked.svg" alt="Blue Letter Bible" /></a>
+		<a href="/" class="nav-logo__horiz"><img src="/assets-v3/images/BLB_color_horiz.svg" alt="Blue Letter Bible" /></a>
+		<a href="/" class="nav-logo__icon"><img src="/assets-v3/images/BLB_color_icononly.svg" alt="Blue Letter Bible" /></a>
+	</div>
+	
+	<div class="nav-links">
+		<button class="nav-trigger js-nav-trigger" id="mobileNavMenuButton">Menu</button>
+		<ul class="nav-mobile-menu	js-mobile-menu" id="mobileNavMenu">
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Search Menu Click" data-ev-label="Search Menu Click [Mobile Menu]" href="/search.cfm">Search</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Study Menu Click" data-ev-label="Study Menu Click [Mobile Menu]" href="/study.cfm">Study</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Devotionals Menu Click" data-ev-label="Devotionals Menu Click [Mobile Menu]" href="/devotionals/">Devotionals</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Help Menu Click" data-ev-label="Help Menu Click [Mobile Menu]" href="/help.cfm">Help</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Products Menu Click" data-ev-label="Products Menu Click [Mobile Menu]" href="/apps-tools.cfm">Apps & Tools</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="Ministries Menu Click" data-ev-label="Ministries Menu Click [Mobile Menu]" href="/ministries.cfm">Ministries</a></li>
+			<li><a class="nav-link" data-ev-cat="Navigation" data-ev-action="About Menu Click" data-ev-label="About Menu Click [Mobile Menu]" href="/about/">About</a></li>
+			<li><a target="_blank" class="nav-link" data-ev-cat="Navigation" data-ev-action="Donate Menu Click" data-ev-label="Donate Menu Click [Mobile Menu]" href="/donate/">Donate</a></li>
+	
+			<li id="mobile-homeLoginMenu"><a rel="index.homeLogin">Login</a></li>
+		
+			<li><a id="homeGear_Resp" class="nav-link" href="/userPrefs/userPrefs.cfm">Preferences</a></li>
+
+			<li class="full-span view-desktop-mode">
+				<div class="header">View:</div>
+				<div class="choice one"><img class="view_checkbox">Desktop</div>
+				<div class="choice two"><img class="view_checkbox">Mobile</div>
+			</li>
+
+			<li class="full-span">
+				<a href="https://www.facebook.com/blueletterbible" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/fb-icon_wte_a.svg" alt="Facebook" width="30" height="30"></a>
+				<a href="https://x.com/blueletterbible" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/x-icon_wte_a.svg" alt="X" width="30" height="30"></a>
+				<a href="https://www.instagram.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/instagram-icon_wte_a.svg" alt="Instagram" width="30" height="30"></a>
+				<a href="https://www.youtube.com/channel/UCGF1fDwSyXL0VqtiEzLeB5g" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/youtube-icon_wte_a.svg" alt="YouTube" width="30" height="30"></a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="navVerseSwitcher" class="nav-verse-switcher">
+		
+			<a class="js-nav-verse-trigger" title="Your Bible Version is the KJV">
+				<h3 class="nav-verse-switcher__translation">KJV</h3>
+				<span class="nav-verse-switcher__helper">Tap to Change</span>
+			</a>
+		
+	</div>
+
+	<div class="nav-search">
+		
+			<form class="nav-search__form" action="/search/preSearch.cfm" name="appBarSearch" id="appBarSearch_Resp" method="post">
+				<input type="hidden" name="t" value="KJV" />
+				<p class="helper">Search <span>verses, phrases, and topics</span> <em>(e.g. <a id="jhn_3_16_" href="/jhn/3/16/s_1000016">John 3:16</a>, <a id="jesus_faith_love_" href="/search/search.cfm?Criteria=Jesus+faith+love">Jesus faith love</a>)</em></p>
+				
+				<div class="nav-search__fields">
+					<div class="nav-search__wrap">
+						<input placeholder="Verse or Word(s)" type="text" name="Criteria" />
+					</div>
+
+					<div id="selectBox_Resp" class="nav-search__wrap">
+						<button class="mobile-bible-btn" type="button" id="selectedSearchDiv_Resp">KJV</button>
+					</div>
+
+					<div class="nav-search__wrap height-fix">
+						<input type="image" src="/assets-v3/images/appBar_top/app_search_go.svg" class="mobile-go-btn" alt="Go!" title="Go!" />
+					</div>
+				</div>
+
+				<div class="nav-search__options">
+					
+					<a id="searchHelps01_Resp" data-ev-cat="AppBar" data-ev-action="Help Click [Mobile]" data-ev-label="Help Popup [Mobile]">Help</a>
+					<a id="appBarQN_Resp" data-ev-cat="AppBar" data-ev-action="QuickNav Click [Mobile]" data-ev-label="QuickNav Popup [Mobile]">Quick Nav</a>
+					<a id="appBarAO_Resp" data-ev-cat="Bible" data-ev-action="Context Bar Adv. Options Click [Mobile]" data-ev-label="Context Bar Adv. Options Click [Mobile]"><span class="verbose_Resp">Advanced </span>Options</a>
+					
+				</div>
+
+				<div id="appBarAdvOptMenu_Resp" class="hidden">
+					<div>
+						<div id="clearAppBarOptMenu_Resp"><a id="clearAppBarAnchorMenu_Resp">Clear Advanced Options</a></div>
+							<p>Search a pre-defined list</p>
+							<p><select size="1" name="csr">
+								<option value="0" class="ddOption1">The Whole Bible</option>
+								<option value="1" class="ddOption2">The Old Testament</option>
+								<option value="9" class="ddOption2">The New Testament</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="2">Pentateuch</option>
+								<option value="3">Historical Books</option>
+								<option value="4">Poetical Books</option>
+								<option value="5">Wisdom Literature</option>
+								<option value="6">Prophets</option>
+								<option value="7">Major Prophets</option>
+								<option value="8">Minor Prophets</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="10">The Gospels</option>
+								<option value="11">Luke-Acts</option>
+								<option value="12">Pauline Epistles</option>
+								<option value="13">General Epistles</option>
+								<option value="14">Johannine Writings</option>
+								<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+								<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+							</select></p>
+							<hr />
+							<p><b>OR</b> Select a range of biblical books</p>
+							<p><span>From:</span></p>
+							<p><select size="1" name="csrf">
+								<option value="0" class="ddOption1">Select a Beginning Point</option>
+								<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+							</select></p>
+							<p><span>To:</span></p>
+							<p><select size="1" name="csrt">
+								<option value="0" class="ddOption1">Select an Ending Point</option>
+								<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+							</select></p>
+							<hr />
+							<p><b>OR</b> Custom Selection:</p>
+							<p><input type="text" title="Use semicolons to separate groups
+Gen;Jdg;Psa-Mal
+Rom 3-12; Mat 1:15;Mat 5:12-22
+" name="cscs" value="" autocomplete="off" /></p>
+							<p>Use semicolons to separate groups:<br /> 'Gen;Jdg;Psa-Mal' or 'Rom 3-12;Mat 1:15;Mat 5:12-22'</p>
+						</div>
+					<div class="menuOptionsArrow"><img src="/assets-v3/images/menu/menuOptionsArrowTop.png" alt="decorative arrow" /></div>
+					<div onClick="BLB.switchShowState('appBarAdvOptMenu');" class="menuOptionsClose"><img src="/assets-v3/images/menu/menuOptionsClose_a.png" alt="Close Advanced Options" /></div>
+				</div>
+			</form>
+		
+	</div>
+</nav>
+
+
+		<div id="whole" class="wholeTop">
+			
+<div id="mobAppSoc" class="mobile-actions">
+	
+		<div class="hidden">
+			<a class="mobile-copy" data-clipboard id="pageCopyMobi" data-ev-cat="AppBar" data-ev-action="Copy Click [Mobile]" data-ev-label="Copy Action [Mobile]">Copy</a>
+			<a class="mobile-copy" id="pageCopyOptionsMobi" data-ev-cat="AppBar" data-ev-action="Copy Options Click [Mobile]" data-ev-label="Copy Options Popup [Mobile]">Options</a>
+		</div>
+	
+	<a class="mobile-cite" id="pageCiteMobi" data-ev-cat="AppBar" data-ev-action="Cite Click [Mobile]" data-ev-label="Cite Popup [Mobile]">Cite</a>
+	<a class="mobile-share" id="appShareMobi" data-ev-cat="AppBar" data-ev-action="Share Click [Mobile]" data-ev-label="Share Popup [Mobile]">Share</a>
+	<a class="mobile-print" id="mobilePrint" data-ev-cat="AppBar" data-ev-action="Print Click [Mobile]" data-ev-label="Print Action Popup [Mobile]">Print</a>
+</div>
+			<div id="fbPreview"><img src="/assets-v3/images/blbFBpreview.jpg" alt="The Blue Letter Bible" /></div>
+			<div class="row container" id="container" style="">
+
+		<div id="bodyCol1" class="bodyColumns nocrumbs">
+			<div class="hide-for-medium back-link"><a href="Questions_about_Death__Heaven__Hell__and_Future_Life.cfm">&larr; Back to Don Stewart FAQ List</a></div>
+			<div class="bubble">
+				<div class="bubHead">
+					<div>
+						<h1>Don Stewart :: What Is Hades?</h1>
+						
+	<div id="pageControls">
+		<img id="fontSwitcher" src="/assets-v3/images/contextBar/font_conBar_a.png" alt="Choose a new font size and typeface" />
+		<div id="fontDrop" class="hidden">
+			<p id="fd_fs"><img src="/assets-v3/images/contextBar/font_fs.png" alt="Customize your font size"
+				/><img id="fontPlus" src="/assets-v3/images/contextBar/font_fs01_a.png" alt="Increase your font size"
+				/><img id="fontMinus" src="/assets-v3/images/contextBar/font_fs02_a.png" alt="Decrease your font size"
+				/><img id="fontDefault" src="/assets-v3/images/contextBar/font_fsDef_a.png" alt="Return to default font size" /></p>
+			<p id="fd_fc"><img src="/assets-v3/images/contextBar/font_col.png" alt="Choose a Bible text color"
+
+				/><br /><img id="fontBlack" src="/assets-v3/images/contextBar/font_col_000000_a.png" alt="Read the Bible in black"
+				/><img id="fontDarkBlue" src="/assets-v3/images/contextBar/font_col_01103a_sel.png" alt="Read the Bible in dark blue"
+				/><img id="fontBlue" src="/assets-v3/images/contextBar/font_col_003366_a.png" alt="Read the Bible in blue"
+
+				/></p>
+			<p id ="fd_ft"><img src="/assets-v3/images/contextBar/font_ft.png" alt="Customize your text type" /><br />
+				<img id="fontArial" src="/assets-v3/images/contextBar/font_typeArial_sel.png" class="selected" alt="Arial font" /><br />
+				<img id="fontTrebuchet" src="/assets-v3/images/contextBar/font_typeTreb_a.png" alt="Trebuchet MS font" /><br />
+				<img id="fontGeorgia" src="/assets-v3/images/contextBar/font_typeGeor_a.png" alt="Georgia font" /><br />
+				<img id="fontTimes" src="/assets-v3/images/contextBar/font_typeTime_a.png" alt="Times New Roman font" /></p>
+			<p id ="fd_ftH"><img src="/assets-v3/images/contextBar/font_fth.png" alt="Customize your Hebrew text type" /><br />
+				<img id="fontH_SBLHebrew" src="/assets-v3/images/contextBar/font_typeH_sbl_sel.png" class="selected" alt="SBL Hebrew font" /><br />
+				<img id="fontH_Times" src="/assets-v3/images/contextBar/font_typeH_times_a.png" alt="Times New Roman font" /><br />
+				<img id="fontH_Arial" src="/assets-v3/images/contextBar/font_typeH_arial_a.png" alt="Arial font" /></p>
+			<p id ="fd_ftG"><img src="/assets-v3/images/contextBar/font_ftg.png" alt="Customize your Greek text type" /><br />
+				<img id="fontG_Gentium" src="/assets-v3/images/contextBar/font_typeG_gent_sel.png" class="selected" alt="Gentium font" /><br />
+				<img id="fontG_Times" src="/assets-v3/images/contextBar/font_typeG_times_a.png" alt="Times New Roman font" /><br />
+				<img id="fontG_Arial" src="/assets-v3/images/contextBar/font_typeG_arial_a.png" alt="Arial font" /></p>
+
+			<img id="fd_close" class="fontClose" src="/assets-v3/images/contextBar/font_close_a.png" alt="Close font preferences" />
+		</div>
+	</div>
+
+					</div>
+				</div>
+				<div data-font-man="true" class="bubBody" id="bubBody">
+					<div id="stewartHead">
+						<img class="mast" src="/assets-v3/images/comms/stewart_don.jpg" alt="Don Stewart" />
+					</div>
+					<div id="stewartData">
+		
+						
+As the Hebrew word &quot;Sheol&quot; spoke of the state, condition, or place of the dead in the Old Testament, the same is true in the New Testament with the Greek word &quot;Hades.&quot; <br />
+ <br />
+<b>Definition<br />
+</b> <br />
+The word Hades has a number of different meanings in the New Testament. <br />
+ <br />
+1. The Grave - The Place Of Bodily Decay <br />
+ <br />
+2. The Place Of The Punishment For The Wicked <br />
+ <br />
+3. Possibly As A General Term For The Unseen Realm Of The Dead <br />
+ <br />
+Hades is always connected with death, never with life. The context will determine its meaning. It does not refer specifically, or exclusively, to the place of punishment. Like Sheol, it is an intermediate place - it never refers to the place of final punishment. <br />
+ <br />
+<b>More Fully Revealed By Christ<br />
+</b> <br />
+It was not until the time of Christ that conditions in the afterlife were more fully revealed. The Bible says. <br />
+ <br />
+<blockquote>
+    But it has now been revealed through the appearing of our Savior Christ Jesus, who abolished death and brought life and immortality to light through the gospel (<a class="nowrap" href="/kjv/2ti/1/10/s_1126010">2 Timothy 1:10</a>).<br />
+</blockquote>
+<br />
+The New Testament says the following about Hades. <br />
+ <b><br />
+1. The Grave - The Place Of Bodily Decay<br />
+</b> <br />
+Hades is the place of bodily decay. Peter said the following about the death of Jesus. <br />
+<blockquote>
+    <br />
+     &quot;Fellow Israelites, I may say to you confidently of our ancestor David that he both died and was buried, and his tomb is with us to this day. Since he was a prophet, he knew that God had sworn with an oath to him that he would put one of his descendants on his throne. Foreseeing this, David spoke of the resurrection of the Messiah, saying, &#39;He was not abandoned to Hades, nor did His flesh experience corruption&#39; (<a class="nowrap" href="/kjv/act/2/29-31/s_1020029">Acts 2:29-31</a>).<br />
+</blockquote>
+<b><br />
+</b>The grave would have no victory over the Messiah. <br />
+ <b><br />
+2. Place Of Punishment For Wicked<br />
+<br />
+</b> Hades is a place of temporary punishment of the unrighteous dead. Jesus told the story of the rich man and Lazarus. <br />
+ <br />
+<blockquote>
+    In Hades, where he [the rich man] was being tormented, he looked up and saw Abraham far away with Lazarus by his side. He called out, &#39;Father Abraham, have mercy on me, and send Lazarus to dip the tip of his finger in water and cool my tongue; for I am in agony in these flames.&#39; But Abraham said, &#39;Child, remember that during your lifetime you received your good things, and Lazarus in like manner evil things; but now he is comforted here, and you are in agony. Besides all this, between you and us a great chasm has been fixed, so that those who might want to pass from here to you cannot do so, and no one can cross from there to us&#39; (<a class="nowrap" href="/kjv/luk/16/23-26/s_989023">Luke 16:23-26</a>). <b><br />
+    </b>
+</blockquote>
+<br />
+Jesus also said. <br />
+ <br />
+<blockquote>
+    And you, Capernaum, will you be exalted to heaven? No, you will be brought down to Hades. For if the mighty deeds done in you had been done in Sodom, it would have remained until this day (<a class="nowrap" href="/kjv/mat/11/23/s_940023">Matthew 11:23</a>).<br />
+    <br />
+</blockquote>
+<b>3. Place For Righteous Dead?<br />
+</b> <br />
+There is some question as to whether Lazarus and Abraham were in Hades or in heaven. If they were in Hades, they were in a place that was separated from the unrighteous dead. <br />
+ <br />
+<b>Hades Opposes Christ&#39;s Church<br />
+</b> <br />
+Hades is sometimes used of the powers of death. Jesus said that the forces of Hades would not stop the spread of His gospel. <br />
+<blockquote>
+    <br />
+     And I also say to you that you are Peter, and upon this rock I will build My church, and the gates of Hades shall not prevail against it (<a class="nowrap" href="/kjv/mat/16/18/s_945018">Matthew 16:18</a>).<br />
+</blockquote>
+<br />
+In this context, Hades speaks of the realm of the dead -or the grave. <br />
+ <br />
+<b>Distinguished From Death<br />
+</b> <br />
+In the Book of Revelation, Hades is distinguished from death. <br />
+ <br />
+<blockquote>
+    There was a pale green horse! Its rider&#39;s name was Death, and Hades followed with him; they were given authority over a fourth of the earth, to kill with sword, famine, and pestilence, and by the wild animals of the earth (<a class="nowrap" href="/kjv/rev/6/8/s_1173008">Revelation 6:8</a>).<br />
+</blockquote>
+<b><br />
+Hades Will Be Destroyed<br />
+</b> <br />
+Hades is not a permanent place. It will cease to exist at some future time. <br />
+ <br />
+<blockquote>
+    The sea gave up the dead who were in it, and Death and Hades delivered up the dead who were in them . . . Then Death and Hades were cast into the lake of fire (<a class="nowrap" href="/kjv/rev/20/13/s_1187013">Revelation 20:13</a>,<a class="nowrap" href="/kjv/rev/20/14/s_1187014">14</a>).<br />
+    <br />
+</blockquote>
+Because Hades will someday be destroyed, it is not to be seen as the ultimate abode of the unbelieving dead. <br />
+ <br />
+<b>Jesus Has The Key<br />
+</b> 
+<blockquote>
+    <br />
+</blockquote>
+Jesus Himself has the keys to death and Hades. <br />
+<blockquote>
+    <br />
+     I am He who lives, and was dead, and behold, I am alive forevermore. . . And I have the keys of Hades and Death (<a class="nowrap" href="/kjv/rev/1/18/s_1168018">Revelation 1:18</a>).<br />
+</blockquote>
+<br />
+He has conquered death and the grave. <br />
+ <b><br />
+Only Unbelieving Dead<br />
+</b> <br />
+Hades is now a place for the unbelieving dead. The righteous go to be with the Lord when they die, Paul wrote. <br />
+ <br />
+<blockquote>
+    Yes, we do have confidence, and we would rather be away from the body and at home with the Lord (<a class="nowrap" href="/kjv/2co/5/8/s_1083008">2 Corinthians 5:8</a>).<br />
+</blockquote>
+<br />
+<b>Summary<br />
+</b> <br />
+Hades, like its Old Testament counterpart Sheol, refers to a number of different things. Sometimes it refers to the grave, the place where the dead reside. It also refers to the place where the wicked suffer after death. It may also be a general term for the unseen realm of the dead, but this is not clear. It is never used of final destination of anyone, righteous or unrighteous. Hades will someday end when it is thrown into the lake of fire. <br />
+
+					</div>
+					<div class="hide-for-medium back-link"><a href="Questions_about_Death__Heaven__Hell__and_Future_Life.cfm">&larr; Back to Don Stewart FAQ List</a></div>
+				</div>
+				<div class="return show-for-medium">
+					<a href="Questions_about_Death__Heaven__Hell__and_Future_Life.cfm">Return to Don Stewart FAQ List</a>
+				</div>
+			</div>
+		</div>
+	
+	<script type="text/javascript">
+		BLB.Tagger.linkContainer = 'stewartData';
+	</script>
+
+
+
+	<div id="bodyCol2">
+		
+		
+		<div id="blbPonies" class="bubble">
+			<div class="bubHead">
+				<div><h6>Sponsors</h6></div>
+			</div>
+			
+				<div class="top-right" id="div-gpt-ad-BLB_336x100_Partner-1">
+					<script type="text/javascript">BLB.adsSpace.RegisterDFP('div-gpt-ad-BLB_336x100_Partner-1')</script>
+				</div>
+			
+			<div class="part"><a href="/about/partnership.cfm">Partner with the BLB</a>&nbsp;&nbsp;&nbsp;<a style="font-size:0.9em;" href="/about/partnership.cfm#disclaimer">(Disclaimer)</a></div>
+		</div>
+	
+
+		
+		<div class="bubble wordsearch hidden" id="rtNavWordSearch">
+			<div class="bubHead hidden">
+				<div><h6>Search Results in Other Versions</h6></div>
+			</div>
+			<div class="bubBody hidden" id="navOtherVer">
+				<div>
+					<p><a id="OV_Notes" rel="search.OV_Notes">(Notes)</a></p>
+				</div>
+			</div>
+			<div class="bubHead hidden">
+				<div><h6>Search Results by Book</h6></div>
+			</div>
+			<div class="bubBody hidden" id="navOtherBooks">
+				<div>
+					<p><a id="SR_Notes" rel="search.SR_Notes">(Notes)</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	
+			<div class="bubble widget rtBubWidget" id="rtBub_1001">
+				<div class="bubHead" id="rtBubHndl_1001">
+					<div><h6>BLB Searches</h6></div>
+				</div>
+				<div class="bubBody">
+					
+	<div id="rtBub_1001_1">
+		<h6>Search the Bible</h6>
+		
+			<div id="searchPrime">
+				<form action="/search/preSearch.cfm" name="rtNavBibleSearch" id="rtNavBibleSearch" method="post">
+					<input type="hidden" name="t" value="KJV" />
+					<div class="searchInputs">
+						<table><tbody><tr>
+							<td id="wordsSearchInput">
+								<input placeholder="Verse, Word(s) or Topic" type="text" name="Criteria" value="" />
+							</td>
+							<td id="wordsSelectBox">
+								<div id="rtNavSelectDropU">
+									<div alt="Search KJV" title="Search KJV" id="rtNavSelectedSearchDiv" class="appsearch-drop"><span>KJV</span></div>
+								</div>
+								
+							</td>
+							<td id="wordsSubmit">
+								<input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchPrime">&nbsp;[?]</a>
+							</td>
+						</tr></table>
+						<div id="advOpt">
+							<p><a id="shAdvOpt">Advanced Options</a></p>
+							<p id="clrAdvOpt" class=" hidden alert">There are options set in 'Advanced Options'</p>
+							<div class="hidden" id="showHideDiv">
+								<div id="clearOpt" class="hidden"><a id="clearAnchor">Clear Advanced Options</a></div>
+								<p>Search a pre-defined list</p>
+								<p><select size="1" name="csr">
+									<option selected="true" value="0" class="ddOption1">The Whole Bible</option>
+									<option value="1" class="ddOption2">The Old Testament</option>
+									<option value="9" class="ddOption2">The New Testament</option>
+									<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+									<option value="2">Pentateuch</option>
+									<option value="3">Historical Books</option>
+									<option value="4">Poetical Books</option>
+									<option value="5">Wisdom Literature</option>
+									<option value="6">Prophets</option>
+									<option value="7">Major Prophets</option>
+									<option value="8">Minor Prophets</option>
+									<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+									<option value="10">The Gospels</option>
+									<option value="11">Luke-Acts</option>
+									<option value="12">Pauline Epistles</option>
+									<option value="13">General Epistles</option>
+									<option value="14">Johannine Writings</option>
+									<option value="00" class="ddOption1" disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>
+									<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+								</select></p>
+								<hr />
+								<p><b>OR</b> Select a range of biblical books</p>
+								<p><span>From:</span></p>
+								<p><select size="1" name="csrf">
+									<option selected="true" value="0" class="ddOption1">Select a Beginning Point</option>
+									<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+								</select></p>
+								<p><span>To:</span></p>
+								<p><select size="1" name="csrt">
+									<option selected="true" value="0" class="ddOption1">Select an Ending Point</option>
+									<option value="Gen">Genesis</option><option value="Exo">Exodus</option><option value="Lev">Leviticus</option><option value="Num">Numbers</option><option value="Deu">Deuteronomy</option><option value="Jos">Joshua</option><option value="Jdg">Judges</option><option value="Rth">Ruth</option><option value="1Sa">1 Samuel</option><option value="2Sa">2 Samuel</option><option value="1Ki">1 Kings</option><option value="2Ki">2 Kings</option><option value="1Ch">1 Chronicles</option><option value="2Ch">2 Chronicles</option><option value="Ezr">Ezra</option><option value="Neh">Nehemiah</option><option value="Est">Esther</option><option value="Job">Job</option><option value="Psa">Psalms</option><option value="Pro">Proverbs</option><option value="Ecc">Ecclesiastes</option><option value="Sng">Song of Songs</option><option value="Isa">Isaiah</option><option value="Jer">Jeremiah</option><option value="Lam">Lamentations</option><option value="Eze">Ezekiel</option><option value="Dan">Daniel</option><option value="Hos">Hosea</option><option value="Joe">Joel</option><option value="Amo">Amos</option><option value="Oba">Obadiah</option><option value="Jon">Jonah</option><option value="Mic">Micah</option><option value="Nah">Nahum</option><option value="Hab">Habakkuk</option><option value="Zep">Zephaniah</option><option value="Hag">Haggai</option><option value="Zec">Zechariah</option><option value="Mal">Malachi</option><option value="Mat">Matthew</option><option value="Mar">Mark</option><option value="Luk">Luke</option><option value="Jhn">John</option><option value="Act">Acts</option><option value="Rom">Romans</option><option value="1Co">1 Corinthians</option><option value="2Co">2 Corinthians</option><option value="Gal">Galatians</option><option value="Eph">Ephesians</option><option value="Phl">Philippians</option><option value="Col">Colossians</option><option value="1Th">1 Thessalonians</option><option value="2Th">2 Thessalonians</option><option value="1Ti">1 Timothy</option><option value="2Ti">2 Timothy</option><option value="Tit">Titus</option><option value="Phm">Philemon</option><option value="Heb">Hebrews</option><option value="Jas">James</option><option value="1Pe">1 Peter</option><option value="2Pe">2 Peter</option><option value="1Jo">1 John</option><option value="2Jo">2 John</option><option value="3Jo">3 John</option><option value="Jde">Jude</option><option value="Rev">Revelation</option>
+								</select></p>
+								<hr />
+								<p><b>OR</b> Custom Selection:</p>
+								<p><input type="text" title="Use semicolons to separate groups
+Gen;Jdg;Psa-Mal
+Rom 3-12; Mat 1:15;Mat 5:12-22
+" name="cscs" value="" /></p>
+								<p>Use semicolons to separate groups: 'Gen;Jdg;Psa-Mal' or 'Rom 3-12;Mat 1:15;Mat 5:12-22'</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		
+	</div>
+
+	<div id="rtBub_1001_2" class="hidden">
+		<h6>LexiConc</h6>
+		<div id="searchLex">
+			<form action="/search/preSearch.cfm" name="rtNavLexSearch" id="rtNavLexSearch" method="post">
+				<input type="hidden" id="lexiconcT" name="t" value="KJV" />
+				<input type="hidden" name="type" value="lexiconc" />
+				<input type="text" name="Criteria" /><input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchLex">&nbsp;[?]</a>
+				<div class="clear">&nbsp;</div>
+				<div class="searchInputs">
+					<div id="lexAdvOpt">
+						<p><a id="shLexAdvOpt">Advanced Options</a></p>
+						<div class="hidden" id="showHideLexDiv">
+							<div><input type="radio" value="0" name="lexcSt" /> Exact Match</div>
+							<div><input type="radio" value="1" name="lexcSt" /> Beginning of the Word</div>
+							<div><input type="radio" checked="true" value="2" name="lexcSt" /> Any Part of the Word</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="rtBub_1001_3" class="hidden">
+		<h6>Theological FAQs</h6>
+		<div id="searchFaq">
+			<form action="/search/preSearch.cfm" name="rtNavFaqSearch" id="rtNavFaqSearch" method="post">
+				<input type="hidden" id="faqsT" name="t" value="KJV" />
+				<input type="hidden" name="type" value="faqs" />
+				<input type="text" name="Criteria" /><input type="image" src="/assets-v3/images/search/searchBtn_a.png" /><a rel="helps.searchFaq">&nbsp;[?]</a>
+				<div class="clear">&nbsp;</div>
+			</form>
+		</div>
+	</div>
+	<p id="rtBub_1001_1_other_searches">Other Searches <i id="rtBub_1001_1_other_searches_i" class="fa fa-angle-double-down"></i></p>
+
+				</div>
+			</div>
+		
+		<div class="ponies show-for-medium" id="poniesMidRight">
+			
+				<div id="div-gpt-ad-300x250_MidRight1-1" style="height:250px; width:300px;">
+					<script type="text/javascript">BLB.adsSpace.RegisterDFP('div-gpt-ad-300x250_MidRight1-1')</script>
+				</div>
+			
+			<div class="part"><a href="/about/partnership.cfm">Partner with the BLB</a>&nbsp;&nbsp;&nbsp;<a style="font-size:0.9em;" href="/about/partnership.cfm#disclaimer">(Disclaimer)</a></div>
+		</div>
+	
+			<div class="bubble widget rtBubWidget" id="rtBub_1002">
+				<div class="bubHead" id="rtBubHndl_1002">
+					<div><h6>Multi-Verse Retrieval</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+		<div id="multiFormWidge">
+			<form action="/tools/MultiVerse.cfm" name="mvFormWidge" id="mvFormWidge" method="post">
+				<input type="hidden" name="refFormat" value="2" />
+				<input type="hidden" name="refDelim" value="1" />
+				<input type="hidden" name="numDelim" value="1" />
+				<input type="hidden" name="abbrev" value="1" />
+				<input type="hidden" name="quoted" value="0" />
+				<input type="hidden" name="sqrbrkt" value="0" />
+				<input type="hidden" name="sblabbrev" value="0" />
+				<input type="hidden" name="endash" value="0" />
+				<input type="hidden" name="sorted" value="0" />
+				<input type="hidden" name="t" value="KJV" />
+				<div id="mvFormItemsWidge">
+					<textarea id="mvTextWidge" name="mvText" placeholder="For example: Gen 1:1-15; Rev 3; 4; Jer 21:10"></textarea>
+					<table><tbody><tr>
+						<td>
+							<div id="mvFormSelectDropU">
+								<div alt="Search KJV" title="Search KJV" id="mvFormSelectedSearchDiv" class="appsearch-drop"><span>KJV</span></div>
+							</div>
+							
+						</td><td>
+							<button type="submit">Retrieve</button><button type="button" onClick="BLB.switchShowState('mvOptions');">Adv. Options</button><br />
+						</td>
+					</tr></tbody></table>
+				</div>
+			</form>
+		</div>
+		<div class="hidden" id="mvOptions">
+			<div>
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td>
+								<div>Line-By-Line Order:</div>
+								<div>
+									<div id="mv_llvr"><img alt="Line-By-Line Verse-Reference" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Verse-Reference</div>
+									<div id="mv_llrv"><img alt="Line-By-Line Reference-Verse" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Reference-Verse</div>
+									<div id="mv_llsl"><img alt="Line-By-Line Separate Line" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Separate Line</div>
+									<div id="mv_llvo"><img alt="Line-By-Line Verse Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Verse Only</div>
+									<div id="mv_llro"><img alt="Line-By-Line Reference Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Reference Only</div>
+								</div>
+							</td>
+							<td>
+								<div>Reference Delimiters:</div>
+								<div id="refDelimWidge">
+									<div id="mv_rdn"><img alt="No Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />None &#8212; Jhn 1:1 KJV</div>
+									<div id="mv_rds"><img alt="Square Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />Square &#8212; [Jhn 1:1 KJV]</div>
+									<div id="mv_rdc"><img alt="Curly Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Curly &#8212; {Jhn 1:1 KJV}</div>
+									<div id="mv_rdp"><img alt="Parenthesis Reference Delimiters" class="refDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Parens &#8212; (Jhn 1:1 KJV)</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Paragraph Order:</div>
+								<div>
+									<div id="mv_pvr"><img alt="Paragraph Verse-Reference" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Verse-Reference</div>
+									<div id="mv_prv"><img alt="Paragraph Reference-Verse" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />Reference-Verse</div>
+									<div id="mv_pro"><img alt="Paragraph Reference-Only" class="coOrder" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Reference-Only</div>
+								</div>
+							</td>
+							<td>
+								<div>Number Delimiters:<span style="color:#c02;">*</span></div>
+								<div id="numDelimWidge">
+									<div id="mv_ndnn"><img alt="No Verse Numbers" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />No Number</div>
+									<div id="mv_ndnd"><img alt="No Verse Delimeters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOn.svg" />No Delimiter &#8212; 15</div>
+									<div id="mv_nds"><img alt="Square Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Square &#8212; [15]</div>
+									<div id="mv_ndc"><img alt="Curly Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Curly &#8212; {15}</div>
+									<div id="mv_ndp"><img alt="Parenthesis Verse Delimiters" class="numDelim" src="/assets-v3/images/svg/contextBar/copyOptions/radioOff.svg" />Parens &#8212; (15)</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Other Options:</div>
+								<div>
+									<div id="mv_abbrev"><img alt="Abbreviate Books" src="/assets-v3/images/svg/contextBar/copyOptions/checkOn.svg" />Abbreviate Books</div>
+									<div id="mv_sblabbrev"><img alt="Use SBL Abbrev." src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />Use SBL Abbrev.</div>
+									<div id="mv_endash"><img alt="En dash not Hyphen" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />En dash not Hyphen</div>
+								</div>
+							</td>
+							<td>
+								<div>&nbsp;</div>
+								<div>
+									<div id="mv_quoted"><img alt="Quotes Around Verses" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />Quotes Around Verses</div>
+									<div id="mv_sqrbrkt"><img alt="Remove Square Brackets" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />Remove Square Brackets</div>
+									<div id="mv_sorted"><img alt="Sort Canonically" src="/assets-v3/images/svg/contextBar/copyOptions/checkOff.svg" />Sort Canonically</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<p style="color:#c02;">* 'Number Delimiters' only apply to 'Paragraph Order'</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				</div>
+			</div>
+		
+		<div class="ponies show-for-medium" id="poniesMidRightTwo">
+			
+				<div id="div-gpt-ad-300x250_STF-1" style="height:250px; width:300px;">
+					<script type="text/javascript">BLB.adsSpace.RegisterDFP('div-gpt-ad-300x250_STF-1')</script>
+				</div>
+			
+		</div>
+	
+			<div class="bubble widget rtBubWidget" id="rtBub_1015">
+				<div class="bubHead" id="rtBubHndl_1015">
+					<div><h6>Let's Connect</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+		<div class="social-networks">
+			<a href="https://www.facebook.com/blueletterbible" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/fb-icon_a.svg" alt="Connect on Facebook" width="35" height="35" /></a>
+			<a href="https://x.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/x-icon_a.svg" alt="Connect on X" width="35" height="29" /></a>
+			<a href="https://www.instagram.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/instagram-icon_a.svg" alt="Connect on Instagram" width="35" height="35" /></a>
+			<a href="https://www.youtube.com/channel/UCGF1fDwSyXL0VqtiEzLeB5g" target="_blank" data-ev-cat="offsiteLink"><img src="/assets-v3/images/svg/social/youtube-icon_a.svg" alt="Connect on YouTube" width="35" height="25" /></a>
+		</div>
+		<div class="bubble-news-form">
+			<a href="https://blueletterbible.us5.list-manage.com/subscribe?u=a5701bfb08b97f65b3aff1e37&id=770af9addf" target="_blank" data-ev-cat="offsiteLink" class="widget-btn">Subscribe to our Newsletter</a>
+		</div>
+	</div>
+
+				</div>
+			</div>
+		
+			<div class="bubble widget rtBubWidget" id="rtBub_1003">
+				<div class="bubHead" id="rtBubHndl_1003">
+					<div><h6>Daily Devotionals</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+		<p>Blue Letter Bible offers several daily devotional readings in order to help you refocus on Christ and the Gospel of His peace and righteousness.</p>
+		<ul>
+			<li><a href="/devotionals/promises/">BLB Daily Promises</a></li>
+			<li><a href="/devotionals/dbdbg/view.cfm">Day by Day by Grace</a></li>
+			<li><a href="/devotionals/me/view.cfm">Morning and Evening</a></li>
+			<li><a href="/devotionals/faiths-checkbook/view.cfm">Faith's Checkbook</a></li>
+	
+			<li><a href="/dailyreading/generic.cfm">Daily Bible Reading</a></li>
+	
+		</ul>
+	</div>
+
+				</div>
+			</div>
+		
+			<div class="bubble widget rtBubWidget" id="rtBub_1004">
+				<div class="bubHead" id="rtBubHndl_1004">
+					<div><h6>Daily Bible Reading Plans</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+		<p>Recognizing the value of consistent reflection upon the Word of God in order to refocus one's mind and heart upon Christ and His Gospel of peace, we provide several reading plans designed to cover the entire Bible in a year.</p>
+		<h3>One-Year Plans</h3>
+		<ul>
+			<li><a href="/dailyreading/">Canonical</a></li>
+			<li><a href="/dailyreading/">Blended</a></li>
+			<li><a href="/dailyreading/">Chronological</a></li>
+			<li><a href="/dailyreading/">Historical</a></li>
+			<li><a href="/dailyreading/">Old Testament and New Testament Together</a></li>
+		</ul>
+		<h3>Two-Year Plan</h3>
+		<ul>
+			<li><a href="/dailyreading/">Canonical Five Day Plan</a></li>
+			<li><a href="/dailyreading/">Old Testament and New Testament Together</a></li>
+		</ul>
+	</div>
+
+				</div>
+			</div>
+		
+			<div class="bubble widget rtBubWidget" id="rtBub_1005">
+				<div class="bubHead" id="rtBubHndl_1005">
+					<div><h6>Recently Popular Pages</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+
+		<ul>
+	
+			<li><a href="/lexicon/h3068/KJV/">H3068 - Yᵊhōvâ - Strong's Hebrew Lexicon (kjv)</a></li>
+	
+			<li><a href="/comm/guzik_david/study-guide/matthew/matthew-17.cfm">David Guzik :: Study Guide for Matthew 17</a></li>
+	
+			<li><a href="/devotionals/promises/index.cfm?doy=289">BLB Daily Promises</a></li>
+	
+			<li><a href="/study/misc/name_god.cfm">O.T. Names of God - Study Resources</a></li>
+	
+			<li><a href="/devotionals/dbdbg/view.cfm?Date=10/15">Hoekstra&#39;s Day by Day by Grace</a></li>
+	
+			<li><a href="/comm/edwards_jonathan/sermons/sinners.cfm">Jonathan Edwards :: Sinners in the Hands of an Angry God</a></li>
+	
+			<li><a href="/devotionals/faiths-checkbook/view.cfm?Date=10/15">Sustained by Feeding by C. H. Spurgeon</a></li>
+	
+			<li><a href="/comm/guzik_david/spanish/studyguide_act/act_2.cfm">David Guzik :: Hechos 2 – El Espíritu Santo Es Derramado Sobre la Iglesia</a></li>
+	
+			<li><a href="/study/parallel/paral18.cfm">Probable Timeline of When Each Psalm Was Written - Study Resources</a></li>
+	
+			<li><a href="/study/harmony/index.cfm">Harmony of the Gospels - Study Resources - Study Resources</a></li>
+	
+		</ul>
+	</div>
+
+				</div>
+			</div>
+		
+			<div class="bubble widget rtBubWidget" id="rtBub_1006">
+				<div class="bubHead" id="rtBubHndl_1006">
+					<div><h6>Recently Popular Media</h6><div class="close"><span>x</span></div></div>
+				</div>
+				<div class="bubBody">
+					
+	<div>
+
+		<ul>
+	
+			<li><a class="audioStream"
+				data-audio-id="11956"
+				data-audio-logpath="martin_walter/cults">
+					Jehovah's Witnesses, Jesus and the Holy Trinity (Walter Martin)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="18122"
+				data-audio-logpath="smith_chuck/t3000/gen">
+					Our Great High Priest (Genesis 14:18-20) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="3056"
+				data-audio-logpath="missler_chuck/jos">
+					Joshua 2-5 (Chuck Missler)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="260"
+				data-audio-logpath="smith_chuck/5000/jhn">
+					John 1-2 (1982-85 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="221"
+				data-audio-logpath="smith_chuck/5000/mat">
+					Matthew 6 (1982-85 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="189"
+				data-audio-logpath="smith_chuck/5000/eze">
+					Ezekiel 6-10 (1979-82 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="159"
+				data-audio-logpath="smith_chuck/5000/isa">
+					Isaiah 16-20 (1979-82 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="3292"
+				data-audio-logpath="missler_chuck/rom">
+					Rom 3-5:1-11 (Chuck Missler)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="215"
+				data-audio-logpath="smith_chuck/5000/zec">
+					Zechariah 6-10 (1979-82 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+			<li><a class="audioStream"
+				data-audio-id="318"
+				data-audio-logpath="smith_chuck/5000/eph">
+					Ephesians 1 (1982-85 Audio) (Chuck Smith)
+				</a>
+			</li>
+		
+		</ul>
+	</div>
+
+				</div>
+			</div>
+		
+		
+		<div class="bubble widget" id="rtNavBubDDfDiv" style="visibility:hidden;position:absolute;">
+		</div>
+
+		
+		
+		<div class="ponies show-for-medium" id="poniesBottomRight">
+			
+				<div id="div-gpt-ad-300x250_LowRight1-1" style="height:250px; width:300px;">
+					<script type="text/javascript">BLB.adsSpace.RegisterDFP('div-gpt-ad-300x250_LowRight1-1')</script>
+				</div>
+				<div id="div-gpt-ad-300x250_LowRight2-1" style="height:250px; width:300px;">
+					<script type="text/javascript">BLB.adsSpace.RegisterDFP('div-gpt-ad-300x250_LowRight2-1')</script>
+				</div>
+				
+			<div class="part"><a href="/about/partnership.cfm">Partner with the BLB</a>&nbsp;&nbsp;&nbsp;<a style="font-size:0.9em;" href="/about/partnership.cfm#disclaimer">(Disclaimer)</a></div>
+		</div>
+	
+	</div>
+
+
+					</div>
+				</div>
+				
+					<div class="siteDesc">
+						<h6>CONTENT DISCLAIMER:</h6>
+						<p>The Blue Letter Bible ministry and the BLB Institute hold to the historical,
+							conservative Christian faith, which includes a firm belief in the inerrancy
+							of Scripture. Since the text and audio content provided by BLB represent a
+							range of evangelical traditions, all of the ideas and principles conveyed
+							in the resource materials are not necessarily affirmed, in total, by this ministry.</p>
+					</div>
+				
+				<div id="dView" class="dView"><p>View Desktop Site</p></div>
+<div class="theFoot" id="theFoot" role="navigation">
+	<div class="row  text-center">
+		<div class="small-12 columns">
+			<div class="row  show-for-large">
+				<div class="theFoot-columns columns">
+					<h2>Search</h2>
+					<a href="/search.cfm#srchBible">Bible Search</a><br>
+					<a href="/search.cfm#srchMulti">Multiverse Retrieval</a><br>
+					<a href="/search.cfm#srchLexi">LexiConc Search</a><br>
+					<a href="/search.cfm#srchFAQ">Theological FAQ Search</a><br>
+					<a href="/search/Dictionary/viewEntries.cfm">Browse Dictionary Topics</a><br>
+					<h2>Bible Commentaries</h2>
+					<a href="/commentaries/">Text Commentaries</a><br>
+					<a href="/audio_video/">Audio &amp; Video Commentaries</a><br>
+					<h2>Bible Reference</h2>
+					<a href="/study/harmony/index.cfm">Harmony of the Gospels</a><br/>
+					<a href="/search/Dictionary/viewEntries.cfm">Encyclopedias / Dictionaries</a><br/>
+					<a href="/resources/study-notes.cfm">Bible Study Notes</a><br/>
+					<a href="/resources/prefaces.cfm">Prefaces</a><br/>
+					<a href="/resources/intros.cfm">Introductions to the Bible</a><br/>
+					<a href="/resources/charts.cfm">Charts and Outlines</a><br/>
+					<a href="/resources/timelines.cfm">Timelines</a><br/>
+					<a href="/images/">Maps / Images</a><br/>
+					<a href="/resources/indexes.cfm">Topical Indexes</a><br/>
+				</div>
+				<div class="large-3 columns">
+
+					<h2>Biblical Language Resources</h2>
+					<a href="/tools/interlinear/tr/jhn/1/1-51/">Inline Interlinear</a><br>
+					<a href="/resources/tools/index.cfm">Language Tools</a><br>
+					<a href="/resources/lexical/index.cfm">Lexical Resources</a><br>
+					<a href="/resources/grammars.cfm">Grammars</a><br>
+					<a href="/resources/concordances/index.cfm">Concordances</a><br>
+					<a href="/resources/morphology/index.cfm">Morphology</a>
+
+					<h2>Theological Resources</h2>
+					<a href="/resources/articles.cfm">Articles / Books</a><br>
+					<a href="/wm/">Women's Resources</a><br>
+					<a href="/faq/don_stewart/">Don Stewart FAQs</a><br>
+					<a href="/faq/">BLB Theological FAQs</a><br>
+					<a href="/resources/missions.cfm">Missions Resources</a><br>
+					<a href="/resources/cults.cfm">Cult Resources</a><br>
+					<a href="/study/ccc/index.cfm">Creeds, Catechisms, and Confessions</a>
+
+					<h2>Topical Indexes</h2>
+					<a href="/study/hta/">Hitchcock's Topical Analysis</a><br/>
+					<a href="/study/thompson/specread.cfm">Thompson's Chain Reference</a><br/>
+					<a href="/study/misc/name_god.cfm">The Names of God</a><br/>
+					<a href="/study/misc/ogiwa.cfm">Our God Is…We Are…</a><br/>
+					<a href="/study/misc/putoffon.cfm">Put Off…Put On…</a><br/>
+				</div>
+				<div class="theFoot-columns columns">
+					<h2>Multimedia</h2>
+					<a href="/resources/media.cfm">Media</a><br>
+					<a href="/resources/music.cfm">Music</a><br>
+					<a href="/resources/livestreams/">Livestreams</a>
+					<h2>Help & Support</h2>
+					<a href="/help/videoHelps.cfm">Video Tutorials</a><br>
+					<a href="/help/">Help Tutorials</a><br>
+					<a href="/contact/contact_iapp.cfm">Apple iOS App Support</a><br>
+					<a href="/contact/contact_android.cfm">Android App Support</a><br>
+					<a href="https://study.bible/help">BLB Institute Support</a><br>
+					<a href="/contact/contact_donor.cfm">Donor Support</a><br>
+					<a href="/contact/contact_pc.cfm">Website Questions</a><br>
+					<a href="/contact/contact_gen.cfm">General Questions</a><br>
+					<a href="/contact/contact_theo.cfm">Theological Questions</a>
+					<h2>Products</h2>
+					<a href="/tools/redirect.cfm?Site=https%3A%2F%2Fitunes%2Eapple%2Ecom%2Fus%2Fapp%2Fblue%2Dletter%2Dbible%2Fid365547505%3Fmt%3D8" target="_blank">Apple iOS App</a><br>
+					<a href="/tools/redirect.cfm?Site=https%3A%2F%2Fplay%2Egoogle%2Ecom%2Fstore%2Fapps%2Fdetails%3Fid%3Dorg%2Eblueletterbible%2Eblb" target="_blank">Android App</a><br>
+					<a href="/smark/">ScriptureMark</a><br>
+					<a href="/webtools/BLB_ScriptTagger.cfm">BLB ScriptTagger</a><br>
+					<a href="/webtools/BLB_websearch.cfm">BLB Web Search Tool</a><br>
+					<a href="/cd/info.cfm">BLB CD</a><br>
+					<a href="/products/digital.cfm">Digital Books</a><br>
+					<a href="/products/videodownloads.cfm">Digital Videos</a>
+				</div>
+				<div class="theFoot-columns columns">
+					<h2>Devotionals</h2>
+					<a href="/devotionals/">Email Devotional Sign-Up</a>
+					<a href="/devotionals/promises/">BLB Daily Promises</a>
+					<a href="/devotionals/dbdbg/view.cfm">Day by Day by Grace</a>
+					<a href="/devotionals/me/">Morning and Evening</a>
+					<a href="/dailyreading/">Daily Bible Reading Plan</a>
+					<h2>Ministries</h2>
+					<a href="https://study.bible/" target="_blank">BLB Institute <i>(Free)</i></a><br>
+					<a href="https://blogs.blueletterbible.org/" target="_blank">BLB Blog</a><br>
+					<a href="http://sowingcircle.org">Sowing Circle</a>
+					<a href="/ministry/links.cfm">Co-Laboring Ministries</a>
+					<h2>About</h2>
+					<a href="/about/about.cfm">About BLB</a><br>
+					<a href="/about/faith.cfm">Statement of Faith</a><br>
+					<a href="/about/history.cfm">History of BLB</a><br>
+					<a href="/about/faqs.cfm">Ministry FAQs</a><br>
+					<a href="/livemap/">LiveMap</a><br>
+					<a href="/newsletter/">Newsletter</a><br>
+					<a href="/about/partnership.cfm">Advertise with Us</a><br>
+					<a href="/about/permissions.cfm">Permissions</a><br>
+					<a href="/about/yourstory.cfm">Share Your BLB Story</a>
+					<a href="/contact/" style="margin-bottom: 5px">Contact</a>
+				</div>
+				<div class="theFoot-columns columns">
+					<h2>Donate</h2>
+					<a target="_blank" href="/donate/">Credit Card</a><br>
+					<a target="_blank" href="/donate/">PayPal</a><br>
+					<a target="_blank" href="/donate/">Venmo</a><br>
+					<a href="/donate/mail.cfm">Mail-In</a><br>
+					<a href="/donate/contribute.cfm">All Gift Options</a><br>
+					<a target="_blank" href="https://account.raisedonors.com/blueletterbible/login">Donor Portal Login</a><br>
+					<a href="/donorinfo/">Our Funding Model</a><br>
+					<a href="/contact/contact_donor.cfm">Support &amp; FAQs</a><br>
+					<a href="https://www.ecfa.org/" data-ev-cat="offsiteLink" target="_blank"><img src="/assets-v3/images/svg/ecfa-logo.svg" class="float-center ecfa-seal" alt="ECFA Accredited Logo" width="75" height="75"></a><br>
+					<a href="https://www.guidestar.org/profile/47-2951572" data-ev-cat="offsiteLink" target="_blank"><img src="/assets-v3/images/svg/candid_platiunum.svg" class="float-center ecfa-seal" alt="Candid Platinum Seal" width="75" height="75"></a>
+				</div>
+			</div>
+			<hr>
+			<a class="hide-for-medium mobile-footer__button button btn-hide" href="/donate/">Donate</a>
+			<a class="hide-for-medium mobile-footer__button button btn-hide" href="/contact/">Contact</a>
+			
+			<div class="row mobile-footer">
+				<div class="column product-footer-block">
+					<a href="https://study.bible/" target="_blank">BLB Institute</a>
+					<a href="http://blogs.blb.org/blb/">BLB Blog</a>
+					<a href="/newsletter/">Newsletters</a>
+				</div>
+				<div class="column social-footer-block">
+					<a href="http://www.facebook.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink">
+						<img alt="facebook" src="/assets-v3/images/svg/social/fb-icon_wte_a.svg" class="social-footer-svg" width="35" height="35" />
+					</a>
+					<a href="https://www.instagram.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink">
+						<img alt="instagram" src="/assets-v3/images/svg/social/instagram-icon_wte_a.svg" class="social-footer-svg" width="35" height="35" />
+					</a>
+					<a href="https://x.com/blueletterbible/" target="_blank" data-ev-cat="offsiteLink">
+						<img alt="x" src="/assets-v3/images/svg/social/x-icon_wte_a.svg" class="social-footer-svg" width="35" height="35" />
+					</a>
+					<a href="https://www.youtube.com/channel/UCGF1fDwSyXL0VqtiEzLeB5g" target="_blank" data-ev-cat="offsiteLink">
+						<img alt="youtube" src="/assets-v3/images/svg/social/youtube-icon_wte_a.svg" class="social-footer-svg" width="35" height="35" />
+					</a>
+				</div>
+				<div class="column hide-for-large">
+					<a class="show-for-medium hide-for-large footer-btn" href="/donate/">Donate</a>
+					<a class="show-for-medium hide-for-large footer-btn" href="/contact/">Contact</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="small-12 columns">
+					<p class="text-center">Blue Letter Bible study tools make reading, searching and studying the Bible easy and rewarding.</p>
+				</div>
+			</div>
+			<div class="row collapse">
+				<div class="small-12 medium-6 columns text-center">
+					<p class="nonprofit"><i>Blue Letter Bible is a 501(c)(3) nonprofit organization</i></p>
+				</div>
+				<div class="small-12 medium-6 columns text-center">
+					
+						<p class="copyright">&#169;2024 <a href="https://www.blueletterbible.org/">Blue Letter Bible</a> | <a href="/policies/privacy.cfm">Privacy Policy</a></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" name="ppFootForm">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHoAYJKoZIhvcNAQcEoIIHkTCCB40CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBH1l0t70N4OdAlv5iekfg8JSgDvO1g34tYm6ixwT+yrfHc9nCH+vbefKS03UHUcmJaE5EoR/foBzvDBHzD7f42538dMqqnpltnPPjtFEsbtgAHbQjm9JQ6P7V9SuzfwFbrCyY614KrFtw7hEaN2Es0N7H16MdDRJqmA0bDIdd1AzELMAkGBSsOAwIaBQAwggEcBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIRN2UypwBA2gIH4OSjHJNQ+oNOBWWDjvQXaqZHZZIigdjhThy6Ez6jee3svGnH4PQyodUnPVZ8f60oTXx8gAqxfnPNLh24YKnlEnCNz9nXnJNBepAtYTEuO6U9zAeNf/ffW8qpF5BAHREc6DwOwfD1NHNjqKjDf+HWO7nJlME32xkiMqfmx0VEqN/HvJFmSGrPeIyxRt++EhutGaWZ9wvw0qP0Rkn7FhE4iwvDQn+MzfPqaM2Pl9TJf8mMqTQ4VM55MNNfwlwGDcaoz5maqwIMuJtYUpF2bfygXnHN4LRdx2c96qVdhyfCR4nsIZJomJSxNbbWwUzPI+lAMkW97i8y2h9qgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xNTA3MjIyMjA4MzRaMCMGCSqGSIb3DQEJBDEWBBTxZWqWoCEbrhI7rP0S4TUvlxUArzANBgkqhkiG9w0BAQEFAASBgKpzXRBbPz9ThQqbwY2IRCWPyQFn37VThWHVsDq2+XwrM43fbkRHwFKa8YH05Hmmc8Jndn7cCZj3xZXv054Tyw3I/CMTUyyei+bS1BmK1Mm/nBTkXyIbwvS5DrBxiXCK7vtb6SPIh2kSia8u2eW+ugjvsv7S4IZzS0NjnJ3CmUZY-----END PKCS7-----">
+		</form>
+</div>
+
+
+				<script type="text/javascript">
+					if(BLB.Bible == undefined) BLB.Bible = {};
+					BLB.Bible.insertDefault = 'conc';
+					var Translation	= 'KJV';
+					var assetsSource = '/assets-v3/';
+				</script>
+				
+	<div class="dropdown-container_outer hidden" id="versionPickerPrime">
+		
+		<div class="dropdown-container_settings hidden" id="ddVerpickSettings">
+			<img src="/assets-v3/images/svg/close-icon__blue.svg" class="trans-settings-close" data-cat="button" data-val="close">
+			<h5 class="settings-title">Settings</h5>
+			<h6 class="settings-subtitle" data-ack="hide">
+				Copy Translation Order 
+				<span class="settings-question" data-cat="button" data-val="help" data-opt="vPickerHelp">&nbsp;[?]</span>
+			</h6>
+
+			<div class="dropdown-button-group" data-ack="hide">
+				<button class="settings-btn" data-cat="button" data-val="sync" data-opt="favPickerOrder" data-ack="hide">Copy to Bibles Tab</button>
+				<button class="settings-btn" data-cat="button" data-val="sync" data-opt="versionsOrder" data-ack="hide">Copy from Bibles Tab</button>
+				<button class="settings-btn" data-cat="button" data-val="sync" data-opt="reset" data-ack="hide">Reset Translation Order</button>
+			</div>
+
+			<div class="settings-sync-notify hidden" data-ack="show">
+				<h6 data-group="syncnotify" data-opt="favPickerOrder" class="settings-subtitle hidden" data-ack="hide">Translation Selection order copied to Bibles Tab order</h6>
+				<h6 data-group="syncnotify" data-opt="versionsOrder" class="settings-subtitle hidden" data-ack="hide">Bibles Tab order copied to Translation Selection order</h6>
+				<h6 data-group="syncnotify" data-opt="reset" class="settings-subtitle hidden" data-ack="hide">Translation Selection order and Bibles Tab order have been reset</h6>
+				<div data-group="syncnotify" data-opt="vPickerHelp" class="settings-help hidden" data-ack="hide">
+					<p>You can copy the order of your preferred Bible translations from the <span class="semibold">Bibles Tab</span> to the <span class="semibold"> Version Picker</span> (this popup) or vice versa. The <span class="semibold">Bibles Tab</span> is found in the Tools feature on Bible pages:</p>
+					<img src="/assets-v3/images/dropdowns/bible-tabs.svg" alt="Bible Tabs">
+				</div>
+				<button id="settings-sync-close" class="settings-btn" data-cat="button" data-val="close">Close</button>
+			</div>
+		</div>
+		
+		
+		<div class="dropdown-container_inner">
+            <img src="/assets-v3/images/svg/close-icon__blue.svg" class="trans-close">
+			<div class="search-ui-container">
+				<div class="search-field">
+					<form id="searchField">
+						<input type="search" name="translation" placeholder="Search" class="search-field-sub">
+					</form>
+				</div>
+				<div class="search-btn-container">
+					
+					<svg id="vppGrid" class="drop-btn hidden" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><rect x=".689" y=".943" width="7.176" height="7.176" rx=".759" /><rect x="8.891" y=".943" width="7.176" height="7.176" rx=".759" /><rect x=".689" y="9.145" width="7.176" height="7.176" rx=".759" /><rect x="8.891" y="9.145" width="7.176" height="7.176" rx=".759" /></svg>
+					
+					<svg id="vppList" class="drop-btn " fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14"><rect x=".996" y=".924" width="3.116" height="3.116" rx=".644" /><rect x="4.982" y=".924" width="12.031" height="3.116" rx="1.558" /><rect x=".996" y="5.586" width="3.116" height="3.116" rx=".644" /><rect x="4.982" y="5.586" width="12.031" height="3.116" rx="1.558" /><rect x=".996" y="10.248" width="3.116" height="3.116" rx=".644" /><rect x="4.982" y="10.248" width="12.031" height="3.116" rx="1.558" /></svg>
+					
+					<svg id="vppSettings" class="drop-btn" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m15.113 9.832-1.31-.756a5.922 5.922 0 0 0 0-2.158l1.31-.757a.372.372 0 0 0 .17-.43A7.658 7.658 0 0 0 13.6 2.822a.37.37 0 0 0-.455-.07l-1.31.756a5.802 5.802 0 0 0-1.87-1.08V.92a.368.368 0 0 0-.289-.36 7.73 7.73 0 0 0-3.357 0 .368.368 0 0 0-.289.36v1.513a5.986 5.986 0 0 0-1.87 1.08l-1.306-.757a.365.365 0 0 0-.455.07c-.76.821-1.34 1.811-1.682 2.909a.368.368 0 0 0 .17.43l1.31.757a5.922 5.922 0 0 0 0 2.158l-1.31.756a.372.372 0 0 0-.17.43 7.656 7.656 0 0 0 1.682 2.91.37.37 0 0 0 .455.07l1.31-.756c.55.473 1.184.84 1.87 1.079v1.513c0 .172.12.322.288.36a7.73 7.73 0 0 0 3.358 0 .368.368 0 0 0 .289-.36v-1.513a5.986 5.986 0 0 0 1.869-1.08l1.31.757c.15.086.338.059.455-.07a7.61 7.61 0 0 0 1.681-2.91.38.38 0 0 0-.172-.433ZM8 10.456a2.463 2.463 0 0 1-2.46-2.46A2.463 2.463 0 0 1 8 5.538a2.463 2.463 0 0 1 2.46 2.46 2.463 2.463 0 0 1-2.46 2.46Z"/></svg>
+				</div>
+			</div>
+			<div class="trans-container grid dndContainer" id="dndMirrorRoot" data-drop-action="saveBiblePickerOrder">
+			
+				<div class="trans-full eng" data-trans-abbrev="KJV" data-trans-long="King James Version" data-trans-group="eng" title="King James Version" data-trans-id="1">
+					<span class="short-outer">
+						<span class="short-inner">KJV</span>
+					</span>
+					<span class="long">King James Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NKJV" data-trans-long="New King James Version" data-trans-group="eng" title="New King James Version" data-trans-id="2">
+					<span class="short-outer">
+						<span class="short-inner">NKJV</span>
+					</span>
+					<span class="long">New King James Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NLT" data-trans-long="New Living Translation" data-trans-group="eng" title="New Living Translation" data-trans-id="4">
+					<span class="short-outer">
+						<span class="short-inner">NLT</span>
+					</span>
+					<span class="long">New Living Translation</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NIV" data-trans-long="New International Version" data-trans-group="eng" title="New International Version" data-trans-id="12">
+					<span class="short-outer">
+						<span class="short-inner">NIV</span>
+					</span>
+					<span class="long">New International Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="ESV" data-trans-long="English Standard Version" data-trans-group="eng" title="English Standard Version" data-trans-id="13">
+					<span class="short-outer">
+						<span class="short-inner">ESV</span>
+					</span>
+					<span class="long">English Standard Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="CSB" data-trans-long="Christian Standard Bible" data-trans-group="eng" title="Christian Standard Bible" data-trans-id="22">
+					<span class="short-outer">
+						<span class="short-inner">CSB</span>
+					</span>
+					<span class="long">Christian Standard Bible</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NASB20" data-trans-long="New American Standard Bible 2020" data-trans-group="eng" title="New American Standard Bible 2020" data-trans-id="23">
+					<span class="short-outer">
+						<span class="short-inner">NASB20</span>
+					</span>
+					<span class="long">New American Standard Bible 2020</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NASB95" data-trans-long="New American Standard Bible 1995" data-trans-group="eng" title="New American Standard Bible 1995" data-trans-id="24">
+					<span class="short-outer">
+						<span class="short-inner">NASB95</span>
+					</span>
+					<span class="long">New American Standard Bible 1995</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="LSB" data-trans-long="Legacy Standard Bible" data-trans-group="eng" title="Legacy Standard Bible" data-trans-id="26">
+					<span class="short-outer">
+						<span class="short-inner">LSB</span>
+					</span>
+					<span class="long">Legacy Standard Bible</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="AMP" data-trans-long="Amplified Bible" data-trans-group="eng" title="Amplified Bible" data-trans-id="15">
+					<span class="short-outer">
+						<span class="short-inner">AMP</span>
+					</span>
+					<span class="long">Amplified Bible</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="NET" data-trans-long="New English Translation" data-trans-group="eng" title="New English Translation" data-trans-id="21">
+					<span class="short-outer">
+						<span class="short-inner">NET</span>
+					</span>
+					<span class="long">New English Translation</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="RSV" data-trans-long="Revised Standard Version" data-trans-group="eng" title="Revised Standard Version" data-trans-id="8">
+					<span class="short-outer">
+						<span class="short-inner">RSV</span>
+					</span>
+					<span class="long">Revised Standard Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="ASV" data-trans-long="American Standard Version" data-trans-group="eng" title="American Standard Version" data-trans-id="5">
+					<span class="short-outer">
+						<span class="short-inner">ASV</span>
+					</span>
+					<span class="long">American Standard Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="YLT" data-trans-long="Young's Literal Translation " data-trans-group="eng" title="Young's Literal Translation " data-trans-id="11">
+					<span class="short-outer">
+						<span class="short-inner">YLT</span>
+					</span>
+					<span class="long">Young's Literal Translation </span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="DBY" data-trans-long="Darby Translation" data-trans-group="eng" title="Darby Translation" data-trans-id="6">
+					<span class="short-outer">
+						<span class="short-inner">DBY</span>
+					</span>
+					<span class="long">Darby Translation</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="WEB" data-trans-long="Webster's Bible" data-trans-group="eng" title="Webster's Bible" data-trans-id="10">
+					<span class="short-outer">
+						<span class="short-inner">WEB</span>
+					</span>
+					<span class="long">Webster's Bible</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="HNV" data-trans-long="Hebrew Names Version" data-trans-group="eng" title="Hebrew Names Version" data-trans-id="7">
+					<span class="short-outer">
+						<span class="short-inner">HNV</span>
+					</span>
+					<span class="long">Hebrew Names Version</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="VUL" data-trans-long="Latin Vulgate" data-trans-group="fl" title="Latin Vulgate" data-trans-id="9">
+					<span class="short-outer">
+						<span class="short-inner">VUL</span>
+					</span>
+					<span class="long">Latin Vulgate</span>
+				</div>
+			
+				<div class="trans-full ol" data-trans-abbrev="WLC" data-trans-long="Westminster Leningrad Codex" data-trans-group="ol" title="Westminster Leningrad Codex" data-trans-id="16">
+					<span class="short-outer">
+						<span class="short-inner">WLC</span>
+					</span>
+					<span class="long">Westminster Leningrad Codex</span>
+				</div>
+			
+				<div class="trans-full ol" data-trans-abbrev="LXX" data-trans-long="Septuagint" data-trans-group="ol" title="Septuagint" data-trans-id="17">
+					<span class="short-outer">
+						<span class="short-inner">LXX</span>
+					</span>
+					<span class="long">Septuagint</span>
+				</div>
+			
+				<div class="trans-full ol" data-trans-abbrev="mGNT" data-trans-long="Morphological Greek New Testament" data-trans-group="ol" title="Morphological Greek New Testament" data-trans-id="18">
+					<span class="short-outer">
+						<span class="short-inner">mGNT</span>
+					</span>
+					<span class="long">Morphological Greek New Testament</span>
+				</div>
+			
+				<div class="trans-full ol" data-trans-abbrev="TR" data-trans-long="Textus Receptus" data-trans-group="ol" title="Textus Receptus" data-trans-id="19">
+					<span class="short-outer">
+						<span class="short-inner">TR</span>
+					</span>
+					<span class="long">Textus Receptus</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="SVD" data-trans-long="Smith Van Dyck Arabic Bible" data-trans-group="fl" title="Smith Van Dyck Arabic Bible" data-trans-id="28">
+					<span class="short-outer">
+						<span class="short-inner">SVD</span>
+					</span>
+					<span class="long">Smith Van Dyck Arabic Bible</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="NAV" data-trans-long="Open New Arabic Version" data-trans-group="fl" title="Open New Arabic Version" data-trans-id="27">
+					<span class="short-outer">
+						<span class="short-inner">NAV</span>
+					</span>
+					<span class="long">Open New Arabic Version</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="BES" data-trans-long="Brenton's English Septuagint" data-trans-group="eng" title="Brenton's English Septuagint" data-trans-id="29">
+					<span class="short-outer">
+						<span class="short-inner">BES</span>
+					</span>
+					<span class="long">Brenton's English Septuagint</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="RVR09" data-trans-long="Reina Valera 1909" data-trans-group="fl" title="Reina Valera 1909" data-trans-id="114">
+					<span class="short-outer">
+						<span class="short-inner">RVR09</span>
+					</span>
+					<span class="long">Reina Valera 1909</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="RVR60" data-trans-long="Reina-Valera 1960" data-trans-group="fl" title="Reina-Valera 1960" data-trans-id="14">
+					<span class="short-outer">
+						<span class="short-inner">RVR60</span>
+					</span>
+					<span class="long">Reina-Valera 1960</span>
+				</div>
+			
+				<div class="trans-full eng" data-trans-abbrev="BBE" data-trans-long="Bible in Basic English" data-trans-group="eng" title="Bible in Basic English" data-trans-id="109">
+					<span class="short-outer">
+						<span class="short-inner">BBE</span>
+					</span>
+					<span class="long">Bible in Basic English</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="CHT" data-trans-long="Chinese Traditional Union" data-trans-group="fl" title="Chinese Traditional Union" data-trans-id="110">
+					<span class="short-outer">
+						<span class="short-inner">CHT</span>
+					</span>
+					<span class="long">Chinese Traditional Union</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="EM" data-trans-long="Espanol Moderno" data-trans-group="fl" title="Espanol Moderno" data-trans-id="111">
+					<span class="short-outer">
+						<span class="short-inner">EM</span>
+					</span>
+					<span class="long">Espanol Moderno</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="KOR" data-trans-long="Korean Holy Bible" data-trans-group="fl" title="Korean Holy Bible" data-trans-id="112">
+					<span class="short-outer">
+						<span class="short-inner">KOR</span>
+					</span>
+					<span class="long">Korean Holy Bible</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="LS" data-trans-long="Louis Segond" data-trans-group="fl" title="Louis Segond" data-trans-id="113">
+					<span class="short-outer">
+						<span class="short-inner">LS</span>
+					</span>
+					<span class="long">Louis Segond</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="LUT" data-trans-long="German Luther" data-trans-group="fl" title="German Luther" data-trans-id="115">
+					<span class="short-outer">
+						<span class="short-inner">LUT</span>
+					</span>
+					<span class="long">German Luther</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="RST" data-trans-long="Russian Synodal Translation" data-trans-group="fl" title="Russian Synodal Translation" data-trans-id="116">
+					<span class="short-outer">
+						<span class="short-inner">RST</span>
+					</span>
+					<span class="long">Russian Synodal Translation</span>
+				</div>
+			
+				<div class="trans-full fl" data-trans-abbrev="SE" data-trans-long="Sagradas Escrituras" data-trans-group="fl" title="Sagradas Escrituras" data-trans-id="117">
+					<span class="short-outer">
+						<span class="short-inner">SE</span>
+					</span>
+					<span class="long">Sagradas Escrituras</span>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="appCiteDrop" class="hidden">
+		<div class="sharepop-inner">
+			<img class="show-for-large" alt="Version Selector Up Arrow" src="/assets-v3/images/appBar/appSearchArrowUp.svg" width="30" />
+					<h3 class="share-title">Cite This Page</h3>
+					<div class="citation-container">
+						<div class="citation-unit">
+							<h4 class="format-title">MLA Format</h4>
+							<img src="/assets-v3/images/appBar/copy-btn_a.svg" id="citeMLACopy" class="cite-btn" data-clipboard alt="Copy link to clipboard" />
+							<div id="citeMLA" class="citation-code citeCont"></div>
+							<p class="cite-note"><b>Note:</b> MLA no longer requires the URL as part of their citation standard. Individual instructors or editors may still require the use of URLs.</p>
+						</div>
+						<div class="citation-unit">
+							<h4 class="format-title">APA Format</h4>
+							<img src="/assets-v3/images/appBar/copy-btn_a.svg" id="citeAPACopy" class="cite-btn" data-clipboard alt="Copy link to clipboard" />
+							<div id="citeAPA" class="citation-code citeCont"></div>
+						</div>
+						<div class="citation-unit">
+							<h4 class="format-title">Chicago Format</h4>
+							<img src="/assets-v3/images/appBar/copy-btn_a.svg" id="citeCHGCopy" class="cite-btn" data-clipboard alt="Copy link to clipboard" />
+							<div id="citeCHG" class="citation-code citeCont"></div>
+						</div>
+						<div class="citation-unit">
+							<h4 class="format-title">SBL Format</h4>
+							<img src="/assets-v3/images/appBar/copy-btn_a.svg" id="citeSBLCopy" class="cite-btn" data-clipboard alt="Copy link to clipboard" />
+							<div id="citeSBL" class="citation-code citeCont"></div>
+						</div>
+					</div>
+		</div>
+	</div>
+
+
+	<div class="hidden" id="appLinkDrop">
+		<div><img alt="Version Selector Up Arrow" src="/assets-v3/images/appBar/appSearchArrowUp.svg" width="30" />
+			<div id="appLinkBox">
+				<input type="text" value="" readonly="true" />
+				<img src="/assets-v3/images/appBar/copy-btn_a.svg" id="linkCopy" data-clipboard alt="Copy link to clipboard" width="44" />
+			</div>
+		</div>
+	</div>
+
+
+	<div id="sharePop" class="hidden">
+		<img alt="Version Selector Up Arrow" src="/assets-v3/images/appBar/appSearchArrowUp.svg" class="show-for-large arrow" width="30" />
+		<div class="sharepop-inner">
+			<h3 class="share-title">Share This Page</h3>
+			<div class="social-container">
+				<a><img id="shareFace" src="/assets-v3/images/svg/social/fb-icon_a.svg" alt="Facebook" width="30"></a>
+				<a><img id="shareX" src="/assets-v3/images/svg/social/x-icon_a.svg" alt="X" width="30"></a>
+				<a><img id="shareLinkedin" src="/assets-v3/images/svg/social/linkedin-icon_a.svg" alt="LinkedIn" width="30"></a>
+				<a><img id="shareTumblr" src="/assets-v3/images/svg/social/tumblr-icon_a.svg" alt="Tumblr" width="30"></a>
+			</div>
+
+			<h3 class="share-title">Email This Page</h3>
+
+			<div id="emailShare">
+				
+						<p class="login">You must be logged in to send email.</p>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hidden" id="followPop">
+		<div class="sharepop-inner">
+			<img alt="Version Selector Up Arrow" src="/assets-v3/images/appBar/appSearchArrowUp.svg" class="arrow dropdown-arrow" width="30" />
+			<h3 class="share-title">Follow Blue Letter Bible</h3>
+		<div class="social-container">
+			<a><img id="followFace" src="/assets-v3/images/svg/social/fb-icon_a.svg" alt="BLB on FaceBook" width="30"></a>
+			<a><img id="followX" src="/assets-v3/images/svg/social/x-icon_a.svg" alt="BLB on X" width="30"></a>
+			<a><img id="followInstagram" src="/assets-v3/images/svg/social/instagram-icon_a.svg" alt="BLB on Instagram" width="30"></a>
+			<a><img id="followYouTube" src="/assets-v3/images/svg/social/youtube-icon_a.svg" alt="BLB on Youtube" width="30"></a>
+		</div>
+
+		<h3 class="share-title">Subscribe to the Newsletter</h3>
+
+		
+			<div class="newsletter-container">
+				<form action="https://blb.us5.list-manage.com/subscribe/post?u=a5701bfb08b97f65b3aff1e37&amp;id=770af9addf" method="post" target="_blank">
+					<input type="text" value="" name="email" placeholder="email address">
+					<input type="submit" value="Subscribe" name="subscribe" class="email-btn">
+				</form>
+			</div>
+		
+		</div>
+	</div>
+
+	<div id="footNoteDiv" class="hidden footPopup">
+		<div>Loading...<br /><br /></div>
+	</div>
+
+
+	<div id="popupDiv" class="hidden popup">
+		<div id="popupDivContents">
+			<div class="parse-popup popup-standard">
+				<div class="parse-title">Loading<img src="/assets-v3/images/svg/close-x.svg" alt="Close Button" width="12" class="parse-close-btn" /></div>
+				<div class="parse-block"><p style="padding:1.3em;">Loading</p></div>
+			</div>
+		</div>
+	</div>
+	<div id="stickyDiv" class="hidden popup">
+		<div id="stickyDivContents">
+			<div class="parse-popup popup-standard">
+				<div class="parse-title">Loading<div class="icon-collect"><img src="/assets-v3/images/interlinear/pin_inactive_a.svg" alt="Pin Button" width="15" class="parse-pin-btn" /><img src="/assets-v3/images/svg/close-x.svg" alt="Close Button" width="12" class="parse-close-btn" /></div></div>
+				<div class="parse-block"><p style="padding:1.3em;">Loading</p></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hidden toolPop" id="toolPop">
+		<table><tbody>
+			<tr data-bible-tool="conc"><td><span>Interlinear</span></td></tr>
+			<tr data-bible-tool="bibles"><td><span>Bibles</span></td></tr>
+			<tr data-bible-tool="corr"><td><span>Cross-Refs</span></td></tr>
+			<tr data-bible-tool="comms"><td><span>Commentaries</span></td></tr>
+			<tr data-bible-tool="refs"><td><span>Dictionaries</span></td></tr>
+			<tr data-bible-tool="misc"><td><span>Miscellaneous</span></td></tr>
+		</tbody></table>
+		<img src="/assets-v3/images/bible/toolPopArrow.png" alt="Verse Tools Arrow" />
+	</div>
+
+	<div id="scriptDiv" class="hidden" onMouseOver="BLB.Tagger.onMouseInContainer();" onMouseOut="BLB.Tagger.onMouseLeavesContainer();">
+		<div id="blbTagger" class="bubble">
+			<div class="bubHead">
+				<div><h6>Blue Letter Bible</h6></div>
+			</div>
+			<div class="bubBody">
+				<div>Loading...</div>
+			</div>
+			<div class="close"><span>X</span></div>
+		</div>
+	</div>
+
+
+	<div id="clearCoat" class="hidden"></div>
+
+	
+		<div id="vesselsDiv" class="hidden">
+			<div class="vesselsDivContainer">
+				<div id="vesselTabs" class="vesselTabs">
+					<ul id="uList01">
+						<li class="selected">Cover</li>
+						<li>Title</li>
+						<li>Intro</li>
+						
+							<li>1</li>
+						
+							<li>2</li>
+						
+							<li>3</li>
+						
+							<li>4</li>
+						
+							<li>5</li>
+						
+							<li>6</li>
+						
+							<li>7</li>
+						
+							<li>8</li>
+						
+							<li>9</li>
+						
+							<li>10</li>
+						
+							<li>11</li>
+						
+							<li>12</li>
+						
+							<li>13</li>
+						
+							<li>14</li>
+						
+					</ul>
+					<ul id="uList02">
+						
+							<li>15</li>
+						
+							<li>16</li>
+						
+							<li>17</li>
+						
+							<li>18</li>
+						
+							<li>19</li>
+						
+							<li>20</li>
+						
+							<li>21</li>
+						
+							<li>22</li>
+						
+							<li>23</li>
+						
+							<li>24</li>
+						
+							<li>25</li>
+						
+							<li>26</li>
+						
+							<li>27</li>
+						
+							<li>28</li>
+						
+							<li>29</li>
+						
+							<li>30</li>
+						
+							<li>31</li>
+						
+					</ul>
+				</div>
+				<div class="contentstyle_outer"><div id="imgDiv" class="contentstyle">&nbsp;</div></div>
+			</div>
+		</div>
+	
+
+
+	<div class="bubble login hidden" id="homeLogin">
+		<div class="homeLoginContainer">
+			<div class="bubHead">
+				<div><h6 id="loginTitle">Login To Your Account</h6></div>
+			</div>
+			<div class="bubBody">
+				
+				<div class="hidden" id="login01">
+					<div>
+						<p id="failedLogin" class="alert hidden">Email / username or password was incorrect!</p>
+						<p id="emailForgot" class="alert hidden">Check your email for password retrieval</p>
+						<form id="blbLForm01" action="" method="post" novalidate>
+							<div class="login-form__fields">
+								<div class="login-form__field">
+									<label for="loginEmail">Enter Your Email or Username</label>
+									<input id="loginEmail" type="email" name="userEmail" autocomplete="email" />
+								</div>
+								<div class="login-form__field">
+									<label for="loginPassword">Password</label>
+									<div id="loginPasswordRow">
+										<input id="loginPassword" type="password" class="passInput" name="userPass" autocomplete="current-password" />
+										<i class="fa fa-eye hide" data-cat="togglePass" data-val="hide" aria-hidden="true"></i>
+										<i class="fa fa-eye-slash" data-cat="togglePass" data-val="show" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="login-form__field">
+									<p><input type="checkbox" name="stayFresh" id="stayFresh" value="7" /><label for="stayFresh">&#160;Keep me logged in!</label></p>
+									<button class="login-form__submit" type="submit">Login</button>
+									<a class="login-form__help" rel="helps.login">&nbsp;[?]</a>
+								</div>
+								<div class="login-form__field ">
+									<div class="login-form__links">
+										<p><a id="forgotMyPasswdA">Did you forget your password?</a></p>
+										<p><a id="registerMeA">Register a new BLB account</a></p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="clear">&nbsp;</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="hidden" id="register01">
+					<div>
+						<p>Complete the form below to register <a rel="helps.register">&nbsp;[?]</a></p>
+						<p id="eMailChk" class="alert hidden">Error: That Email is already registered</p>
+						<p id="eMailErr" class="alert hidden">Error: Please provide a valid Email</p>
+						<p id="uPassChk" class="alert hidden">Error: Passwords should have at least 6 characters</p>
+						<p id="uPassErr" class="alert hidden">Error: Passwords do not match</p>
+						<p id="fNameChk" class="alert hidden">Error: Please provide a valid first name</p>
+						<p id="uNameErr" class="alert hidden">Error: That username is already taken</p>
+						<p id="uNameChk" class="alert hidden">Error: Usernames should only contain letters, numbers, dots, dashes, or underscores</p>
+						<form id="blbLForm02" action="" method="post" onSubmit="return false;">
+							<div class="login-form__fields">
+								<div class="login-form__field">
+									<label for="userEmail">Enter Your Email</label>
+									<input type="email" name="userEmail" value="" autocomplete="email" />
+								</div>
+
+								<div class="login-form__field">
+									<label for="fName">First Name</label>
+									<input type="text" name="fName" value="" autocomplete="given-name" />
+								</div>
+								<div class="login-form__field">
+									<label for="userPass">Password <span class="label-helper">Must be at least 6 characters</span></label>
+									<div id="registerPassRow">
+										<input type="password" name="userPass" class="passInput" value="" autocomplete="new-password" />
+										<i class="fa fa-eye hide" data-cat="togglePass" data-val="hide" aria-hidden="true"></i>
+										<i class="fa fa-eye-slash" data-cat="togglePass" data-val="show" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="login-form__field">
+									<label for="userPass2">Re-type Password</label>
+									<div id="registerConfirmRow" >
+										<input type="password" name="userPass2" class="passInput" value="" autocomplete="new-password" />
+										<i class="fa fa-eye hide" data-cat="togglePass" data-val="hide" aria-hidden="true"></i>
+										<i class="fa fa-eye-slash" data-cat="togglePass" data-val="show" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="login-form__field">
+									<button class="login-form__submit" type="submit">Register</button>
+								</div>
+							</div>
+							<input type="hidden" name="cid" value="D03AE0A7CCF8D586E959C5EC1238D337" />
+						</form>
+						<div class="login-form__links">
+							<p><a id="cancelMeA">&larr; Login to Your Account</a></p>
+						</div>
+						<p>Passwords should have at least 6 characters.<br />
+							Usernames should only contain letters, numbers, dots, dashes, or underscores.</p>
+					</div>
+				</div>
+				
+				<div class="hidden" id="register02">
+					<div>
+						<p>Thank you for registering. A verification email has been sent to the address you provided.</p>
+					</div>
+				</div>
+				
+				<div class="hidden" id="forget01">
+					<div>
+						<form id="blbLForm03" action="/u/login.cfm" method="post">
+							<div class="login-form__fields">
+								<div class="login-form__field">
+									<label for="f_loginEmail">Please enter your account email below</label>
+									<input id="f_loginEmail" type="email" name="userEmail" autocomplete="email" />
+								</div>
+								<div class="login-form__field">
+									<button class="login-form__submit" type="submit">Continue</button>
+									<button id="returnMeA" class="login-form__submit" type="button">Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="homeLoginClose">CLOSE</div>
+		</div>
+	</div>
+
+	<div id="copyTooltip" class="hidden">&nbsp;</div>
+
+	
+	
+		
+		<div id="drive_2024_Spring_Coat" class="hidden"></div>
+		<div id="drive_2024_Spring" class="hidden">
+			<div id="drive_2024_Spring_Wrapper">
+				<div><h2 class="popup-title">Did You Know BLB Is User Supported?</h2></div>
+				<p class="text-center popup-para">Your partnership makes all we do possible. Would you prayerfully consider a gift of support today?</p>
+				
+				<div class="row collapse align-center">
+					<div class="column align-self-middle text-center" data-dismiss="perm" data-link="/donate/index.cfm?cid=donate-popup"><a class="button large donate-button">Donate</a></div>
+				</div>
+
+				<div class="row collapse align-center">
+					<div class="column align-self-middle text-center text-cta-underline" data-dismiss="now" data-link=""><a>Remind Me</a></div>
+				</div>
+
+				<div class="row collapse align-center">
+					<div class="column align-self-middle text-center text-cta-underline" data-dismiss="perm" data-link=""><a>Dismiss</a></div>
+				</div>
+				
+			</div>
+		</div>
+	
+
+	<!-- Cookie Policy Popup -->
+	<div id="cookie-wrapper" class="hidden">
+		<p class="cookie-para">
+			<span>Cookie Notice:</span>
+			Our website uses cookies to store user preferences. By proceeding, you consent to our cookie usage.
+			Please see Blue Letter Bible's <a href="/policies/privacy.cfm">Privacy Policy</a> for cookie usage details.
+		</p>
+		<div id="agree-button" class="agree-button">OK</div>
+	</div>
+
+	<div id="ctxtQuiknav" class="hidden"> 
+		<div id="ctxtQuiknav__mid">
+			<img src="/assets-v3/images/svg/close-icon__blue.svg" class="quicknav-close">
+			<div id="ctxtQuiknav__books"> 
+				<h4 class="qn-title ot-title">Old Testament</h4>
+				<div class="books-table ot-table"> </div>
+				<h4 class="qn-title nt-title">New Testament</h4>
+				<div class="books-table nt-table"> </div>
+			</div> 
+
+			<div id="ctxtQuiknav__chap" class="hidden"> 
+				<a class="back-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.06 10.71" class="left-arrow">
+						<g data-name="Layer 2">
+							<g data-name="Layer 1">
+								<polygon class="cls-1" points="5.35 10.71 0 5.35 5.35 0 6.06 0.71 1.41 5.35 6.06 10 5.35 10.71" />
+							</g>
+						</g>
+					</svg>
+					Back</a>
+				<h4 class="qn-title">Psalms</h4>
+				<div class="books-table">
+					<a class="books-cell ot-cell"> 1 </a>
+				</div>
+			</div> 
+		</div>
+	</div> 
+
+	
+	<div id="inlineParseInfoPopup" class="hidden">
+		<div class="hidden" id="daLanguage">Hebrew</div>
+		<div class="hidden" id="daSpeech">Verb</div>
+		<div class="hidden info-block" id="daInfoBlock">
+			<div class="hidden" id="daCodeOne"></div>
+			<div class="hidden" id="daCodeTwo"></div>
+			<div class="hidden" id="daCodeThree"></div>
+			<div class="hidden" id="daCodeFour"></div>
+			<div class="hidden" id="daCodeFive"></div>
+		</div>
+	</div>
+
+
+	<div id="siteExpandLeft" class="hidden site-expand-container left" draggable="true" onclick="BLB.siteResizeToggle('left');"></div>
+
+
+	<div id="siteExpandRight" class="hidden site-expand-container right" onclick="BLB.siteResizeToggle('right');"></div>
+
+
+	
+		<input type="hidden" id="ATTRIBUTES_includeRtNav" value="1">
+	
+			</body>
+		</html>
+	

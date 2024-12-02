@@ -1,0 +1,1653 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Oct 2024 04:53:01 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept-Encoding
+vary: Accept-Encoding
+vary: Accept-Encoding
+cf-edge-cache: cache,platform=wordpress
+last-modified: Thu, 14 May 2020 15:43:12 GMT
+x-elasticpress-query: true
+x-cacheable: bot
+Cache-Control: max-age=10800, must-revalidate
+x-cache: MISS
+x-cache-group: bot-mobile
+CF-Cache-Status: HIT
+Age: 18
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nBRihMHkgX2S0O8X8GR2f6%2BbWn8nzdlHmReJs3xrRr4I1ZTKALvSWkz3Rhy1afss8bbYoOVpBwMTYRhWcuzYw84qf%2FK0aerb%2FAhlu9YPHoo0bVG9pRKpf1PT48OG0Gtb28dxFpKUfhA9PBmtoWeOc2CYePAb%2Fs85"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ce30b9d7b67d997-AKL
+
+<!doctype html>
+<html lang="en-US" class="us">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7402176/6634992/css/fonts.css" />
+
+<script>
+			</script>
+<script type="text/javascript">
+					var ga_post_id = '65138';
+					var ga_post_categories = '';
+					var ga_post_type = 'trevin-wax';
+					var ga_post_author = 'Trevin Wax';
+					var ga_post_tags = '';
+					var ga_post_series = '';
+					var ga_is_single = true;
+					var ga_edition = 1;
+					var ga_publish_date = '02-27-2008';
+			  </script>
+<script type="text/javascript"></script>
+
+<script>
+		function gaPostDataString(ga_edition, ga_post_id, ga_post_type, ga_post_author, ga_post_categories, ga_post_tags, ga_post_series, ga_post_scroll, ga_publish_date) {
+			return ga_edition + "|" +
+				ga_post_id + "|" +
+				ga_post_type + "|" +
+				ga_post_author + "|" +
+				ga_post_categories + "|" +
+				ga_post_tags + "|" +
+				ga_post_series + "|" +
+				ga_post_scroll + "|" +
+				ga_publish_date + "|";
+		}
+		var ga_init_data_layer = {
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		};
+
+		window.ga_clientId = false;
+
+		try {
+			if (ga_is_single) {
+				ga_init_data_layer['post_data'] = gaPostDataString(
+					ga_edition,
+					ga_post_id,
+					ga_post_type,
+					ga_post_author,
+					ga_post_categories,
+					ga_post_tags,
+					ga_post_series,
+					'',
+					ga_publish_date
+				);
+				ga_init_data_layer['postdata_edition_id'] = gaPostDataString(
+					ga_edition,
+					ga_post_id,
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					''
+				).replace("|||||||", "");
+				ga_init_data_layer['postdata_date_author_type'] = gaPostDataString(		
+					ga_publish_date,
+					ga_post_author,			
+					ga_post_type,
+					'',
+					'',
+					'',
+					'',
+					'',
+					''				
+				).replace("||||||", "");
+				ga_init_data_layer['postdata_category_series'] = gaPostDataString(					
+					ga_post_categories,					
+					ga_post_series,	
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					''				
+				).replace("|||||||", "");
+				ga_init_data_layer['postdata_tags_scrolldepth'] = gaPostDataString(					
+					ga_post_tags,			
+					'',	
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					''				
+				).replace("|||||||", "");
+
+				console.log(ga_init_data_layer);
+			}
+		} catch (e) {
+
+		}
+
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push(ga_init_data_layer);
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TS5MV7W');
+
+
+		window.addEventListener("load", function() {
+			if (window.ga && ga.create) {
+				ga('create', 'UA-10750690-1', 'auto');
+
+				ga(function(tracker) {
+					window.ga_clientId = tracker.get('clientId');
+					Cookies.set('ga_clientId', ga_clientId);
+					console.log("loaded");
+				});
+
+			} else {
+				// Booh, no Analytics detected...
+				console.log("GA not loaded");
+			}
+		}, false);
+	</script>
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<script data-cfasync="false" nowprocket type="text/javascript">
+		var _vwo_clicks = 10000;
+	</script>
+
+
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script data-cfasync="false" nowprocket type="text/javascript" id="vwoCode">
+	/* Fix: wp-rocket (application/ld+json) */
+	window._vwo_code || (function () {
+	var account_id=912695, // replace 1 with ${accountId} in release string
+	version=2.1,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	hide_element='body',
+	hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+	/* DO NOT EDIT BELOW THIS LINE */
+	f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var i=this.getSettings(),n=d.createElement('script'),r=this;t=t||{};if(i){n.textContent=i;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var i=this.hide_element(),n=i?i+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=n;else t.appendChild(d.createTextNode(n));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var n=d.createElement('div');n.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';n.setAttribute('id','_vis_opt_path_hides');n.classList.add('_vis_hide_layer');t.parentNode.insertBefore(n,t.nextSibling)}var o='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:o})}else{this.load(o+'&x=true')}}};w._vwo_code=code;code.init();})();
+	</script>
+
+
+<title>Book Review: Surprised by Hope</title>
+<link rel="canonical" href="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Book Review: Surprised by Hope" />
+<meta property="og:description" content="For three months in the summer of 2004, I labored through N.T. Wright&#8217;s massive book, The Resurrection of the Son of God &#8211; an important work for anyone interested in the historical evidence for the bodily resurrection of Jesus Christ. The Resurrection of the Son of God significantly deepened my appreciation for Easter. Wright&#8217;s research bolstered my confidence in the historicity of the New Testament accounts, but more than that, it helped me to understand why the Resurrection was necessary and why it is so important to Christian theology. Needless to say, I was happy to discover that Wright was working on an edited, popular-level..." />
+<meta property="og:url" content="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" />
+<meta property="og:site_name" content="The Gospel Coalition" />
+<meta property="article:publisher" content="https://www.facebook.com/thegospelcoalition/" />
+<meta property="article:modified_time" content="2020-05-14T19:43:12+00:00" />
+<meta property="og:image" content="https://media.thegospelcoalition.org/wp-content/uploads/2008/02/14154251/surprisedbyhope.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@tgc" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="4 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/","url":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/","name":"Book Review: Surprised by Hope","isPartOf":{"@id":"https://www.thegospelcoalition.org/#website"},"primaryImageOfPage":{"@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/#primaryimage"},"image":{"@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/#primaryimage"},"thumbnailUrl":"https://media.thegospelcoalition.org/wp-content/uploads/2008/02/14154251/surprisedbyhope.jpg","datePublished":"2008-02-27T05:00:00+00:00","dateModified":"2020-05-14T19:43:12+00:00","breadcrumb":{"@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/#primaryimage","url":"https://media.thegospelcoalition.org/wp-content/uploads/2008/02/14154251/surprisedbyhope.jpg","contentUrl":"https://media.thegospelcoalition.org/wp-content/uploads/2008/02/14154251/surprisedbyhope.jpg","width":1200,"height":630},{"@type":"BreadcrumbList","@id":"https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.thegospelcoalition.org/"},{"@type":"ListItem","position":2,"name":"Trevin Wax Posts","item":"https://www.thegospelcoalition.org/blogs/trevin-wax/"},{"@type":"ListItem","position":3,"name":"Book Review: Surprised by Hope"}]},{"@type":"WebSite","@id":"https://www.thegospelcoalition.org/#website","url":"https://www.thegospelcoalition.org/","name":"The Gospel Coalition","description":"The Gospel Coalition","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.thegospelcoalition.org/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//js.hs-scripts.com" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//js.hsforms.net" />
+<link rel="dns-prefetch" href="//maps.googleapis.com" />
+<link rel="dns-prefetch" href="//static.esvmedia.org" />
+<script type="application/ld+json" id="tgc-article-schema">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.thegospelcoalition.org\/blogs\/trevin-wax\/book-review-surprised-by-hope\/"},"publisher":{"@type":"Organization","name":"The Gospel Coalition","logo":{"@type":"ImageObject","url":"https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/sites\/2\/2018\/08\/09114547\/tgc_amp_logo.png","height":60,"width":115}},"headline":"Book Review: Surprised by Hope","description":"For three months in the summer of 2004, I labored through N.T. Wright&#8217;s massive book, The Resurrection of the Son of God &#8211; an important work for anyone interested in the historical evidence for the bodily resurrection of Jesus Christ. The Resurrection of the Son of God significantly deepened my appreciation for Easter. Wright&#8217;s research bolstered my confidence in the historicity of the New Testament accounts, but more than that, it helped me to understand why the Resurrection was necessary and why it is so important to Christian theology. Needless to say, I was happy to discover that Wright was working on an edited, popular-level...","image":["https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/2008\/02\/14154251\/surprisedbyhope.jpg"],"datePublished":"2008-02-27T00:00:00-05:00","dateModified":"2020-05-14T15:43:12-04:00","author":[{"@type":"Person","name":"Trevin Wax","sameAs":"https:\/\/www.thegospelcoalition.org\/profile\/trevin-wax\/"}]}</script><script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.thegospelcoalition.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=a0301b1d089d6991fba962bdf453bb5b"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="plyr-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/css/common/plyr.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.thegospelcoalition.org/wp-includes/css/dist/block-library/style.min.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<style id="elasticpress-related-posts-style-inline-css" type="text/css">
+.editor-styles-wrapper .wp-block-elasticpress-related-posts ul,.wp-block-elasticpress-related-posts ul{list-style-type:none;padding:0}.editor-styles-wrapper .wp-block-elasticpress-related-posts ul li a>div{display:inline}
+
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="parent-style-css" href="https://www.thegospelcoalition.org/wp-content/themes/sage/style.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<link rel="stylesheet" id="magnific-popup-styles-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/magnific-popup/magnific-popup.min.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<link rel="stylesheet" id="select2-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/select2/select2.min.css?ver=5.2.4" type="text/css" media="all" />
+<link rel="stylesheet" id="swiper-styles-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/swiper/css/swiper.min.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<link rel="stylesheet" id="luther-styles-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/css/theme.min.css?ver=1.0.0.1716493598" type="text/css" media="all" />
+<link rel="stylesheet" id="single-blog-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/css/templates/single-blog.css?ver=1704904665" type="text/css" media="all" />
+<link rel="stylesheet" id="elasticpress-facets-css" href="https://www.thegospelcoalition.org/wp-content/plugins/elasticpress/dist/css/facets-styles.css?ver=7d568203f3965dc85d8a" type="text/css" media="all" />
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LdvjuIUAAAAAEJrlUeMsNppRpsCOwCAeUy2xWvb&amp;ver=a0301b1d089d6991fba962bdf453bb5b" id="recaptcha-v3-js"></script>
+<script type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="hubspot-forms-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/acf-google-map.js?ver=1" id="acf-google-maps-js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8NMt2wXQCST6Iz-9pA2eJhPwP6tvIttQ&amp;ver=1" id="google-map-api-js"></script>
+<script type="text/javascript" src="https://static.esvmedia.org/crossref/crossref.min.js?ver=1" id="bible-reftagger-cross-js"></script>
+
+<script class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+
+<script>
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#66A343">
+<meta name="msapplication-TileColor" content="#f5f5f5">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="amphtml" href="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/?amp=1">
+<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+
+
+<script>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+		</script>
+<script>
+			googletag.cmd.push(function() {
+				//googletag.defineSlot('/21645437283/TGC-Articles-728x90-ATF', [[320, 50], [970, 90], [300, 50], [300, 250], [728, 90]], 'div-gpt-ad-1509655114140-0').addService(googletag.pubads());
+				// Infinite scroll requires SRA
+				googletag.pubads().enableSingleRequest();
+				googletag.enableServices();
+			});
+		</script>
+
+<script>
+			(function() {
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//cdn.beaconads.com/ac/beaconads.js';
+				//(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+
+<script>
+			(function(w, d, s, n, a) {
+				if (!w[n]) {
+					var l = 'call,catch,on,once,set,then,track'
+						.split(','),
+						i, o = function(n) {
+							return 'function' == typeof n ? o.l.push([arguments]) && o :
+								function() {
+									return o.l.push([n, arguments]) && o
+								}
+						},
+						t = d.getElementsByTagName(s)[0],
+						j = d.createElement(s);
+					j.async = !0;
+					j.src = 'https://cdn.fundraiseup.com/widget/' + a;
+					t.parentNode.insertBefore(j, t);
+					o.s = Date.now();
+					o.v = 4;
+					o.h = w.location.href;
+					o.l = [];
+					for (i = 0; i < 7; i++) o[l[i]] = o(l[i]);
+					w[n] = o
+				}
+			})(window, document, 'script', 'FundraiseUp', 'ACCWABLW');
+		</script>
+
+</head>
+<body id="main" class="trevin-wax-template-default single single-trevin-wax postid-65138 wp-embed-responsive  luther_body blogID_1 mobile_device book-review-surprised-by-hope">
+
+
+<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5MV7W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+
+<div id="header-spacer"></div>
+<!--[if IE]>
+          <div class="alert alert-warning">
+            You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.          </div>
+        <![endif]-->
+<script type="text/javascript">
+	var $ = jQuery;
+</script>
+<div id="main_sidenav" class="main_sidenav">
+<div class="side_menu_wrapper">
+
+<div class="main_search_wrap d-flex align-items-center">
+<form method="get" id="header_searchform" class="header_searchform" action="https://www.thegospelcoalition.org">
+<div class="header_searchform_fields">
+<div>
+<a href="#" onclick="document.getElementById('header_searchform').submit()">
+<i class="fal fa-search" aria-hidden="true"></i>
+<span>|</span>
+</a>
+<input type="text" name="s" id="s" class="search-query " placeholder="What can we help you find?" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" x-webkit-speech tabindex="1" />
+</div>
+</div>
+</form>
+</div>
+<a href="javascript:void(0)" class="closebtn">
+&times;
+</a>
+<div id="side_menu" class="side_menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<div class="side_menu_section_wrapper">
+<div class="side_menu_section">
+<h6 class="smenu_section_title">
+Browse </h6>
+<ul class="side_menu_items">
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/articles/">
+Articles </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_box">
+<div class="sm_child_box_supertitle">
+Featured Essay </div>
+<div class="sm_child_box_title">
+The Love of God </div>
+<div class="d-flex align-items-end justify-content-between">
+<div class="sm_child_box_text_wrap">
+<div class="sm_child_box_sm_text">
+An essay by </div>
+<div class="sm_child_box_lg_text">
+Sam Storms </div>
+</div>
+<div>
+<a href="/essay/the-love-of-god/" class="btn btn-outline-light">
+Read Now </a>
+</div>
+</div>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Trending </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-doctrine-of-prayer/">
+Prayer </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-faithfulness-of-god/">
+Faithfulness of God </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/saving-grace/">
+Saving Grace </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/adoption/">
+Adoption by God </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Most Popular </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="https://www.thegospelcoalition.org/essay/repentance/">
+Repentance </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="https://www.thegospelcoalition.org/essay/gender-identity-and-sexual-orientation/">
+Gender Identity </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/trusting-god/">
+Trusting God </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-holiness-of-god/">
+The Holiness of God </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_button">
+<a href="/essays/" class="btn btn-outline-light">
+See All Essays </a>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link side_menu_parent" href="#">
+Blogs </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/evangelical-history/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt="Thomas Kidd TGC Blogs" decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500.jpg 502w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Thomas Kidd TGC Blogs" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14200743/Thomas_Kidd_500x500.jpg 502w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Kidd and Taylor </div>
+<div class="sm_child_blog_subtitle">
+Evangelical History </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/melissa-kruger/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa.jpg 500w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182458/krugermelissa.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Melissa Kruger </div>
+<div class="sm_child_blog_subtitle">
+Wit’s End </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/ray-ortlund/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--300x298.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray-.jpg 500w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--300x298.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray--470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182634/Ortlund-Ray-.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Ray Ortlund </div>
+<div class="sm_child_blog_subtitle">
+Christ is Deeper Still </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/erik-raymond/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550.jpg 549w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182700/ErikRaymond2019_550x550.jpg 549w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Erik Raymond </div>
+<div class="sm_child_blog_subtitle">
+Ordinary Pastor </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/scotty-smith/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-150x150.jpeg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-150x150.jpeg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-300x300.jpeg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty.jpeg 350w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-150x150.jpeg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty-300x300.jpeg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182550/Smith-Scotty.jpeg 350w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Scotty Smith </div>
+<div class="sm_child_blog_subtitle">
+Heavenward </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/justin-taylor/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-150x150.jpeg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-150x150.jpeg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-300x300.jpeg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-768x768.jpeg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-1472x1472.jpeg 1472w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-1104x1104.jpeg 1104w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-912x912.jpeg 912w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-550x550.jpeg 550w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-470x470.jpeg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin.jpeg 1536w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-150x150.jpeg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-300x300.jpeg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-768x768.jpeg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-1472x1472.jpeg 1472w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-1104x1104.jpeg 1104w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-912x912.jpeg 912w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-550x550.jpeg 550w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin-470x470.jpeg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/01/14182222/Taylor-Justin.jpeg 1536w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Justin Taylor </div>
+<div class="sm_child_blog_subtitle">
+Between Two Worlds </div>
+</div>
+</a>
+</li>
+<li class="sm_child_blog_item_wrap">
+<a class="sm_child_blog_item" href="/blogs/trevin-wax/">
+<div class="sm_child_blog_img_wrap">
+<img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-75x75.jpg 75w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin.jpg 500w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-300x300.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-75x75.jpg 75w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin-470x470.jpg 470w, https://media.thegospelcoalition.org/wp-content/uploads/2020/10/19131530/Wax-Trevin.jpg 500w" sizes="(max-width: 150px) 100vw, 150px" /></noscript> </div>
+<div class="sm_child_blog_text_wrap">
+<div class="sm_child_blog_title">
+Trevin Wax </div>
+<div class="sm_child_blog_subtitle">
+Kingdom People </div>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/best-commentaries/">
+Best Commentaries </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/commentary/">
+Commentary </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/conference-media/">
+Conference Media </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_box">
+<div class="sm_child_box_supertitle">
+Featured Essay </div>
+<div class="sm_child_box_title">
+Resurrection of Jesus </div>
+<div class="d-flex align-items-end justify-content-between">
+<div class="sm_child_box_text_wrap">
+<div class="sm_child_box_sm_text">
+An essay by </div>
+<div class="sm_child_box_lg_text">
+Benjamin Shaw </div>
+</div>
+<div>
+<a href="/essay/bodily-resurrection-jesus/" class="btn btn-outline-light">
+Read Now </a>
+</div>
+</div>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Trending </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-death-of-christ/">
+Death of Christ </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-doctrine-of-prayer/">
+Prayer </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/bodily-resurrection-jesus/">
+Resurrection of Jesus </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-relationship-of-church-and-state/">
+Church and State </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Most Popular </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-sovereignty-of-god/">
+Sovereignty of God </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="https://www.thegospelcoalition.org/essay/repentance/">
+Repentance </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/faith-and-works/">
+Faith and Works </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-holiness-of-god/">
+The Holiness of God </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_button">
+<a href="/essays/" class="btn btn-outline-light">
+See All Essays </a>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/courses/">
+Courses </a>
+<ul class="side_menu_child_items_wrapper">
+<li class="sm_child_box">
+<div class="sm_child_box_supertitle">
+Featured Essay </div>
+<div class="sm_child_box_title">
+Resurrection of Jesus </div>
+<div class="d-flex align-items-end justify-content-between">
+<div class="sm_child_box_text_wrap">
+<div class="sm_child_box_sm_text">
+An essay by </div>
+<div class="sm_child_box_lg_text">
+Benjamin Shaw </div>
+</div>
+<div>
+<a href="/essay/bodily-resurrection-jesus/" class="btn btn-outline-light">
+Read Now </a>
+</div>
+</div>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Trending </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-death-of-christ/">
+Death of Christ </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-doctrine-of-prayer/">
+Prayer </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/bodily-resurrection-jesus/">
+Resurrection of Jesus </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-relationship-of-church-and-state/">
+Church and State </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_section">
+<h6 class="smenu_child_section_title">
+Most Popular </h6>
+<ul class="sm_sub_child_section_items">
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-sovereignty-of-god/">
+Sovereignty of God </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="https://www.thegospelcoalition.org/essay/repentance/">
+Repentance </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/faith-and-works/">
+Faith and Works </a>
+</li>
+<li class="sm_sub_child_section_item">
+<a href="/essay/the-holiness-of-god/">
+The Holiness of God </a>
+</li>
+</ul>
+</li>
+<li class="sm_child_button">
+<a href="/essays/" class="btn btn-outline-light">
+See All Essays </a>
+</li>
+</ul>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/essays/">
+Essays </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/the-carson-center/">
+The Carson Center </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/thekellercenter/">
+The Keller Center </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/new-city-catechism/">
+New City Catechism </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/podcasts/">
+Podcasts </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/publications/">
+Publications </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/read-the-bible/">
+Read the Bible </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="https://store.thegospelcoalition.org/tgc">
+Store </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/tgcpastors/">
+TGC Pastors </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/tgcwomen">
+TGC Women </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/themelios/">
+Themelios </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/videos/">
+Videos </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href>
+</a>
+</li>
+</ul>
+</div>
+<div class="side_menu_section">
+<h6 class="smenu_section_title">
+Filter By </h6>
+<ul class="side_menu_items">
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/scripture/">
+Scripture </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/topics/">
+Topics </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/sections/">
+Sections </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/authors/">
+Authors </a>
+</li>
+<li class="side_menu_item">
+<a class="side_menu_item_link " href="/series/">
+Series </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header_wrapper" class="header_wrapper navbar fixed-top">
+<div class="header_contents d-flex align-items-center justify-content-between">
+<div class="header_left d-flex align-items-center">
+
+<div class="menu_btn_wrapper  ">
+<div class="header_searchicon_wrapper">
+<a href="javascript:void(0);" class="header_searchicon">
+<i class="fal fa-search" aria-hidden="true"></i>
+<span>
+&nbsp;Explore </span>
+</a>
+</div>
+</div>
+
+<a class="brand" href="https://www.thegospelcoalition.org/">
+<img class="header_logo lazyload" id="header_logo" data-src="/wp-content/themes/luther/images/tgc_logo.png" alt="TGC Header Logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img class="header_logo" id="header_logo" src="/wp-content/themes/luther/images/tgc_logo.png" alt="TGC Header Logo" /></noscript>
+</a>
+<div class="header_editions_wrapper">
+<div class="editions_wrapper">
+<a href="javascript:void(0);" id="current_edition" class="current_edition">
+<h2>
+U.S. Edition <i class="fas fa-chevron-down"></i>
+</h2>
+</a>
+<div class="edition_list" style="display: none;">
+<div class="editions_list_header d-flex align-items-center justify-content-between d-md-none">
+<div class="editions_list_header_text">
+Editions </div>
+<a href="javascript:void(0)" class="editions_closebtn">
+&times;
+</a>
+</div>
+<div class="edition_country_wrapper d-flex flex-wrap flex-md-column">
+<a href="https://africa.thegospelcoalition.org" class="edition_country  ">
+Africa </a>
+<a href="https://ar.thegospelcoalition.org" class="edition_country  arabic">
+عربي </a>
+<a href="https://au.thegospelcoalition.org" class="edition_country  ">
+Australia </a>
+<a href="https://coalizaopeloevangelho.org" class="edition_country  ">
+Brasil </a>
+<a href="https://ca.thegospelcoalition.org" class="edition_country  ">
+Canada </a>
+<a href="https://tc.tgcchinese.org/" class="edition_country  ">
+正體中文 </a>
+<a href="https://www.tgcchinese.org" class="edition_country  ">
+简体中文 </a>
+<a href="https://www.coalicionporelevangelio.org" class="edition_country  ">
+Espa&ntilde;ol </a>
+<a href="https://kanoneenjil.com" class="edition_country  arabic">
+فارسی </a>
+<a href="https://evangile21.thegospelcoalition.org" class="edition_country  ">
+Fran&ccedil;ais </a>
+<a href="https://in.thegospelcoalition.org" class="edition_country  ">
+India </a>
+<a href="https://tgcitalia.org" class="edition_country  ">
+Italia </a>
+<a href="http://www.tgckorea.org/" class="edition_country  ">
+한국어 </a>
+<a href="https://www.tgcnederland.nl" class="edition_country  ">
+Nederlands </a>
+<a href="https://norden.thegospelcoalition.org" class="edition_country  ">
+Norden </a>
+<a href="https://koalicioniungjillit.org" class="edition_country  ">
+Shqip </a>
+<a href="https://ru.thegospelcoalition.org" class="edition_country  ">
+Русский </a>
+<a href="https://spolocenstvoevanjelia.sk/" class="edition_country  ">
+Slovenský </a>
+<a href="https://ukr.thegospelcoalition.org" class="edition_country  ">
+Українська </a>
+<a href="https://www.thegospelcoalition.org" class="edition_country active ">
+United States </a>
+</div>
+</div>
+</div> </div>
+</div>
+<div class="header_right d-flex align-items-center">
+
+
+<div class="mobile_ham">
+<div class="ham_menu"></div>
+</div>
+<div class="header_menu">
+<div class="top_menu">
+<div class="top_menu_mobile_header">
+Browse </div>
+<ul class="top_menu_list d-flex align-items-center">
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+Editorial </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/articles/" class>Articles</a></li><li class="bold_item"><a href="/blogs/" class>Blogs</a></li><li class="bold_item"><a href="/devotionals/read-the-bible/" class>Read the Bible</a></li><li class="bold_item"><a href="/courses" class>Courses</a></li><li class="bold_item"><a href="/commentary/" class>Commentary</a></li><li class="bold_item"><a href="/essays/" class>Essays</a></li><li class="bold_item"><a href="/new-city-catechism/" class>New City Catechism</a></li><li class="bold_item"><a href="/publications/" class>Publications</a></li><li class="bold_item"><a href="/reviews/" class>Reviews</a></li><li class="bold_item"><a href="/series/" class>Series</a></li><li class="bold_item"><a href="/themelios/" class>Themelios</a></li><li class="bold_item"><a href="/videos/" class>Videos</a></li><li class="line_separator"><a href class></a></li><li class><a href="/sections/arts-culture/" class>Arts & Culture</a></li><li class><a href="/sections/bible-theology/" class>Bible & Theology</a></li><li class><a href="/sections/christian-living/" class>Christian Living</a></li><li class><a href="/sections/current-events/" class>Current Events</a></li><li class><a href="/sections/faith-work/" class>Faith & Work</a></li><li class><a href="/the-carson-center/" class>The Carson Center</a></li><li class><a href="/sections/the-keller-center/" class>The Keller Center</a></li><li class><a href="/sections/ministry/" class>Ministry</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+Podcasts </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/podcasts/as-in-heaven/" class>As In Heaven</a></li><li class="bold_item"><a href="/podcasts/gospelbound/" class>Gospelbound</a></li><li class="bold_item"><a href="/podcasts/post-christianity/" class>Post-Christianity?</a></li><li class="bold_item"><a href="/podcasts/recorded/" class>Recorded</a></li><li class="bold_item"><a href="/podcasts/carson-center/" class>The Carson Center Podcast</a></li><li class="bold_item"><a href="/tgc-podcast/" class>TGC Podcast</a></li><li class="bold_item"><a href="/podcasts/youre-not-crazy/" class>You're Not Crazy</a></li><li class="line_separator"><a href class></a></li><li class="bold_item"><a href="/podcasts/acts-29/" class>Churches Planting Churches</a></li><li class="bold_item"><a href="/podcasts/glo/" class>Glo</a></li><li class="bold_item"><a href="/podcasts/help-me-teach-the-bible/" class>Help Me Teach The Bible</a></li><li class="bold_item"><a href="/podcasts/lets-talk-podcast/" class>Let's Talk</a></li><li class="bold_item"><a href="/podcasts/q-a-podcast/" class>TGC Q&A</a></li><li class="bold_item"><a href="/podcasts/word-of-the-week/" class>Word Of The Week</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+Events </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/tgc25/" class>TGC25</a></li><li class="bold_item"><a href="/conference-media/" class>Past Conference Media</a></li><li class="bold_item"><a href="/cohorts/" class>Cohorts</a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="#" class="top_menu_parent  ">
+About Us </a>
+<ul class="top_menu_dropdown flex-row flex-wrap" style="display:none;">
+<li class="bold_item"><a href="/about/foundation-documents/" class>Foundation Documents</a></li><li class="bold_item"><a href="/about/council/" class>Council</a></li><li class="bold_item"><a href="/about/staff/" class>Staff</a></li><li class="bold_item"><a href="/authors/" class>Authors</a></li><li class="bold_item"><a href="/contact-us/" class>Contact Us</a></li><li class="bold_item"><a href="/the-carson-center/" class>The Carson Center</a></li><li class="bold_item"><a href="/thekellercenter/" class>The Keller Center</a></li><li class="bold_item"><a href="https://store.thegospelcoalition.org/tgc" class>Store</a></li><li class="bold_item"><a href="https://jobs.gusto.com/boards/the-gospel-coalition-6c55f332-cf11-4d7a-9fe1-928e9359c03c" class>Careers</a></li><li class="line_separator"><a href class></a></li><li class><a href="/chapters/" class>Regional Chapters</a></li><li class><a href="/churches/" class>Church Directory</a></li><li class><a href="/global-resourcing/" class>Global Resourcing</a></li><li class><a href="https://jobs.thegospelcoalition.org/" class>Job Board</a></li><li class="line_separator"><a href class></a></li><li class="social_item flex-grow-1"><a href="https://www.facebook.com/thegospelcoalition" class target="_blank"><i class="fab fa-facebook-f"></i></a></li><li class="social_item flex-grow-1"><a href="https://twitter.com/tgc" class target="_blank"><i class="fab fa-twitter"></i></a></li><li class="social_item flex-grow-1"><a href="https://www.instagram.com/thegospelcoalition/" class target="_blank"><i class="fab fa-instagram"></i></a></li><li class="social_item flex-grow-1"><a href="https://www.youtube.com/user/TheGospelCoalition" class target="_blank"><i class="fab fa-youtube"></i></a></li><li class="social_item flex-grow-1"><a href="https://www.thegospelcoalition.org/feed/" class target="_blank"><i class="fas fa-rss"></i></a></li> </ul>
+</li>
+<li class="top_menu_header_item">
+<a href="/donate/" class="top_menu_parent btn btn-outline-dark ">
+Donate to TGC </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="year-end-takeover" class="container">
+<div class="yet_backdrop" style="--yet_bg_color:#000000; --yet_bg_opacity:0;"></div>
+<div class="popup text-center lazyload" style="background:inherit;" data-bg="linear-gradient(0deg, rgba(255, 255, 255, 0.95),
+	 rgba(255, 255, 255, 0.95)),
+	 url(https://media.thegospelcoalition.org/wp-content/uploads/2023/01/04232924/charcoal.jpg), #fff">
+<div class="content">
+<h2 class="mb-3 mb-md-5">To All The World</h2>
+<div class="close">&times;</div>
+<div class="vid_image order-md-1" style="pointer-events: none">
+<div class="vid vid-play-inline">
+<span class="vid-cover">
+<span class="vid-code">
+</span>
+</span>
+</div>
+</div>
+<div class="button_group_label"><p style="font-family: 'Charter'; text-transform: none; margin:30px; text-align:center;">The world is a confusing place right now. We believe that faithful proclamation of the gospel is what our hostile and disoriented world needs. Do you believe that too? Help TGC bring biblical wisdom to the confusing issues across the world by making a gift to our international work.</p></div>
+<div class="yet_button_group">
+<a href="https://www.thegospelcoalition.org/landing/2023-spring-appeal/" class="btn btn-outline-dark">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id="site_wrapper" class="site_wrapper">
+<main>
+<div class="page-blog_wrapper page-article_wrapper">
+<div class="gradient_color">
+<div class="container">
+<div class="row editorial_atf_Container" style="padding:20px; border-bottom: 1px solid #ebebeb;" id="66f4aa8e43dca">
+<script>  
+  jQuery(document).ready(function () {
+        var adContainerName = jQuery(".editorial_atf_Container").last().attr("id");
+
+      
+    googletag.cmd.push(function() {
+   var section = window.location.pathname.split('/')[1];
+    var author = window.location.pathname.split('/')[2];
+
+    var mapHeader = googletag.sizeMapping()
+    .addSize([640, 200], [[320, 250], [468, 60]])
+    .build();
+
+    window.HeaderSlot = googletag.defineSlot('/22036558786/tgc-article-header_ad', [320, 50],adContainerName)
+    .defineSizeMapping(mapHeader)
+    .addService(googletag.pubads())
+    .setTargeting('section', (section ? section : 'home'))
+    .setTargeting('author', (author ? author : 'none'));
+        googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+      googletag.display(adContainerName);
+
+  });
+
+console.log(adContainerName);
+if($("#" + adContainerName + " iframe").contents().find("body").length < 20) {
+    // some html page loaded in iframe
+$("#" + adContainerName).hide();
+}
+
+
+    });
+</script>
+</div>
+</div>
+</div>
+<div id="post-65138" class="article_single page_gradient post_url" data-post-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-post-title="Book Review: Surprised by Hope" data-post-excerpt="For three months in the summer of 2004, I labored through N.T. Wright&#8217;s massive book, The Resurrection of the Son of God &#8211; an important work for anyone interested in the historical evidence for the bodily resurrection of Jesus Christ. The Resurrection of the Son of God significantly deepened my appreciation for Easter. Wright&#8217;s research bolstered my confidence in the historicity of the New Testament accounts, but more than that, it helped me to understand why the Resurrection was necessary and why it is so important to Christian theology. Needless to say, I was happy to discover that Wright was working on an edited, popular-level..." data-post-image-details="[&quot;https:\/\/media.thegospelcoalition.org\/wp-content\/uploads\/2008\/02\/14154251\/surprisedbyhope.jpg&quot;,1200,630,false]" data-ga_post_id="65138" data-ga_post_categories data-ga_post_type="trevin-wax" data-ga_post_author="Trevin Wax" data-ga_post_tags data-ga_post_series data-ga_is_single="true" data-ga_edition="1">
+<article class="post-65138 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry trevin-wax-category-book-reviews">
+<header>
+<div class="container">
+<div class="row">
+<div class="header_col col blog_header_col ">
+<div class="header_info">
+<div class="article-category">
+BLOGS<span class="d-inline-block d-md-none">: Trevin Wax</span> </div>
+<h1 class="entry-title">
+Book Review: Surprised by Hope </h1>
+<div class="article_meta_wrapper blog_meta_wrapper ">
+<span class="article_meta_author vcard author">
+<a href="https://www.thegospelcoalition.org/profile/trevin-wax/" class="fn">Trevin Wax </a></span> <span class="time_seppy">&nbsp;|&nbsp;</span>
+<time class="updated article_meta" datetime="2008-02-27T05:00:00+00:00">
+February 27, 2008 </time>
+</div>
+</div>
+</div>
+<div class="col-auto blog_profile_img_col align-self-center">
+<a class="author_img_wrap lazyload" href="https://www.thegospelcoalition.org/profile/trevin-wax/" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/12142032/080724_OTCRTV_NAMB_Trevin_0001-scaled-e1723674430392.jpg)"></a>
+</div>
+<div class="col header_media_col">
+<div class="article-image-graphic-wrap">
+<div class="article-graphic">
+<div class="article-background lazyload" style="background-image:inherit;" data-bg-image="url(&#039;https://media.thegospelcoalition.org/wp-content/uploads/2008/02/14154251/surprisedbyhope.jpg&#039;)"></div>
+</div>
+</div>
+<div class="article-social ">
+<div class="s-options">
+<a onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/', 'Share on Facebook', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no');" href="javascript:void(0);">
+<i data-shared-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-share="facebook" class="fab fa-facebook-square social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Share </span>
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/', 'Share on Facebook', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no" class="d-none subsplash_dark_mode_social">
+<i data-shared-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-share="facebook" class="fab fa-facebook-square social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Share </span>
+</a>
+<a onclick="window.open('http://twitter.com/share?text=&url=https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/', 'Share on Twitter', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no');" href="javascript:void(0);">
+<i data-shared-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-share="twitter" class="fab fa-twitter social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Post </span>
+</a>
+<a href="https://twitter.com/share?text=&url=https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/', 'Share on Twitter', 'width=600,height=500,scrollbars=yes,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no" class="d-none subsplash_dark_mode_social">
+<i data-shared-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-share="twitter" class="fab fa-twitter social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Post </span>
+</a>
+<a href="/cdn-cgi/l/email-protection#6f501c1a0d050a0c1b522d0000044f3d0a19060a18554f3c1a1d1f1d061c0a0b4f0d164f27001f0a490d000b16524f071b1b1f1c554040181818411b070a08001c1f0a030c000e03061b06000141001d08400d0300081c401b1d0a19060142180e17400d000004421d0a19060a18421c1a1d1f1d061c0a0b420d164207001f0a40" title class="subsplash_dark_mode_social">
+<i data-shared-url="https://www.thegospelcoalition.org/blogs/trevin-wax/book-review-surprised-by-hope/" data-share="mail" class="fa fa-envelope social_share_gtm"></i>
+<span class="d-none d-md-inline-block">
+Email </span>
+</a>
+</div>
+</div> </div>
+<div class="col-auto more_by_column">
+<div class="more_by">
+<h4 class="more_by_title">
+More By Trevin </h4>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://www.thegospelcoalition.org/blogs/trevin-wax/highlights-from-the-seoul-statement-at-lausanne-2024/">
+<div>Highlights from the Seoul Statement at Lausanne 2024</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-75x75.jpg 75w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://www.thegospelcoalition.org/blogs/trevin-wax/evangelical-free-church/">
+<div>The Evangelical Free Church on Learning to Say Yes and No</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-75x75.jpg 75w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://www.thegospelcoalition.org/blogs/trevin-wax/taylor-swift-cultural-appraisal/">
+<div>The Songs of Taylor Swift: A Christian Cultural Appraisal</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-75x75.jpg 75w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://www.thegospelcoalition.org/blogs/trevin-wax/beware-anesthetized-life/">
+<div>Beware the Anesthetized Life</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-75x75.jpg 75w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></picture>
+</figure>
+</a>
+</div>
+<div class="more_by_item">
+<a class="d-flex align-items-center justify-content-between" href="https://www.thegospelcoalition.org/blogs/trevin-wax/running-rest/">
+<div>Running and Rest Aren’t Opposites</div>
+<figure class="img_wrap">
+<picture class="d-flex w-100 h-100"><img width="150" height="150" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-150x150.jpg" class="attachment-thumbnail size-thumbnail lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-75x75.jpg 75w" data-sizes="(max-width: 150px) 100vw, 150px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" /><noscript><img width="150" height="150" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-150x150.jpg 150w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-75x75.jpg 75w" sizes="(max-width: 150px) 100vw, 150px" /></noscript></picture>
+</figure>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="entry-content">
+<div class="container">
+<div class="row">
+<div class="col content_left_column">
+<div class="content_container">
+<p>For three months in the summer of 2004, I labored through N.T. Wright&#8217;s massive book, <a href="https://www.amazon.com/gp/product/0800626796?ie=UTF8&amp;tag=kingdompeople-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0800626796"><em>The Resurrection of the Son of God</em></a> &#8211; an important work for anyone interested in the historical evidence for the bodily resurrection of Jesus Christ. <em>The Resurrection of the Son of God </em>significantly deepened my appreciation for Easter. Wright&#8217;s research bolstered my confidence in the historicity of the New Testament accounts, but more than that, it helped me to understand <em>why </em>the Resurrection was necessary and why it is so important to Christian theology.</p>
+<p>Needless to say, I was happy to discover that Wright was working on an edited, popular-level supplement to <em>The Resurrection of the Son of God. </em>Fast forward to 2008. <a href="https://www.amazon.com/gp/product/0061551821?ie=UTF8&amp;tag=kingdompeople-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0061551821"><em>Surprised by Hope: Rethinking Heaven, the Resurrection, and the Mission of the Church</em></a><em><img loading="lazy" decoding="async" style="border: none!important; margin: 0!important;" src="http://www.assoc-amazon.com/e/ir?t=kingdompeople-20&amp;l=as2&amp;o=1&amp;a=0061551821" alt width="1" height="1" border="0" /> </em>has been released, a sequel of sorts to <em>Simply Christian. </em>(And yes, the allusions to C.S. Lewis&#8217; works <em>Mere Christianity </em>and <em>Surprised by Joy </em>are an intentional advertising gimmick, although readers quickly discover that the comparisons to Lewis do have some merit.)</p><div class="d-block d-md-none editorial_inline editorial_inline_Container" id="66f4aa8e97151" style="margin:0 auto 15px;text-align:center;"><span class="ad_notice text-right"><a href="/advertise-with-us/">Advertise on TGC</a></span>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>  
+  jQuery(document).ready(function () {
+        var adContainerName = jQuery(".editorial_inline_Container").last().attr("id");
+
+      
+    googletag.cmd.push(function() {
+   var section = window.location.pathname.split('/')[1];
+    var author = window.location.pathname.split('/')[2];
+
+    var sidebarAdSizesMobile = googletag.sizeMapping().addSize([768, 0], []).addSize([0, 0], [323,323]).build();
+
+    window.SideBarMobileOne = googletag.defineSlot('/22036558786/tgc-article-sidebar-ad', [323, 323],adContainerName)
+    .defineSizeMapping(sidebarAdSizesMobile)
+    .addService(googletag.pubads())
+    .setTargeting('section', (section ? section : 'home'))
+    .setTargeting('author', (author ? author : 'none'));
+        googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+      googletag.display(adContainerName);
+
+  });
+
+console.log(adContainerName);
+if($("#" + adContainerName + " iframe").contents().find("body").length < 20) {
+    // some html page loaded in iframe
+$("#" + adContainerName).hide();
+}else{
+$("#" + adContainerName).css({"width":"323px","height":"323px","margin-bottom":"30px"})
+}
+
+
+    });
+</script></a></div></p>
+<p>In <em>Surprised by Hope, </em>Wright attempts to do three things. First, he exposes current Christianity&#8217;s muddled views of the afterlife by taking us through the historical evidence <em>for</em> and the theological explanation <em>of</em> Jesus&#8217; resurrection. Second, he answers questions regarding eschatology that necessarily arise from his Resurrection theology &#8211; showing how his eschatological framework best fits the New Testament witness. Third, he shows how the Christian&#8217;s future hope of resurrection forms the foundation for current social action, evangelism, and spirituality.</p>
+<p>For those familiar with Wright&#8217;s previous work on the resurrection, <em>Surprised by Hope </em>will not surprise you (no pun intended). For years now, Wright has been advocating a return to a more biblical, more creation-centered, more Jewish understanding of the future hope of new heavens and new earth. Other theologians have been speaking up about this subject too, in hopes that a more robust view of heaven will reenergize our Kingdom efforts on earth. (Michael Wittmer&#8217;s <em>Heaven Is a Place on Earth </em>and Randy Alcorn&#8217;s textbook-styled <em>Heaven </em>come to mind.)</p>
+<p>But <em>Surprised by Hope </em>stands out in the amount of material that Wright is able to incorporate into a single volume and in the moving way in which he makes his case. This book carries an emotional resonance rarely encountered among works of theology. At times, Wright&#8217;s description of the Christian hope so moved me that I found myself wiping away tears.</p>
+<p><em>Surprised by Hope </em>contains many paradoxes, which is what we have come to expect from a theologian like Wright. Here are a few examples:</p>
+<ul>
+<li>
+<div>Wright argues forcefully for Christ&#8217;s bodily resurrection (to the &#8220;Amens&#8221; of his conservative readers), but then shows why that must necessarily inform our view of the Christian&#8217;s future hope (and the picture is significantly different [i.e. grander!] than what conservatives have generally taught).</div>
+</li>
+<li>
+<div>He devotes significant space to eschatology, firmly disagreeing with the Preterist position, while admitting that Jesus&#8217; prophecies concerned the Fall of Jerusalem.</div>
+</li>
+<li>
+<div>Dispensationalists will not countenance his interpretation of Revelation or Daniel, and yet Amillennialists will be surprised by his refusal to spiritualize the Kingdom in ways that detract from an earthy application.</div>
+</li>
+<li>
+<div>Reformed readers will have trouble with Wright&#8217;s &#8220;New Perspective on Paul&#8221;  that surfaces in a couple of places, and yet they will applaud his Kuyperian stance on the lordship of Christ over all creation.</div>
+</li>
+<li>
+<div>Roman Catholics will disagree with Wright&#8217;s decisive rejection of purgatory and praying <em>to </em>the saints, but some Protestants may be equally puzzled about Wright leaving room for Christians to pray <em>for </em>the dead (not for their salvation, mind you, but only for their rest!).</div>
+</li>
+<li>
+<div>Traditionalists will be glad to see Wright rejecting universalism and affirming the existence of hell, and yet, Wright&#8217;s innovative view of hell (in terms of <em>dehumanization</em>) is more akin to C.S. Lewis than to anything clearly taught in Scripture. (Wright&#8217;s view serves as middle way between annihilationism and the traditional view of eternal torment.)</div>
+</li>
+</ul>
+<p>Pastors would do well to read the final chapters of <em>Surprised by Hope. </em>Wright gives food for thought on the nature of mission work and evangelism. He also offers practical advice on reinvigorating our anemic Easter celebrations.</p>
+<p><a href="https://www.amazon.com/gp/product/0061551821?ie=UTF8&amp;tag=kingdompeople-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0061551821"><em>Surprised by Hope</em></a><em><img loading="lazy" decoding="async" style="border: none!important; margin: 0!important;" src="http://www.assoc-amazon.com/e/ir?t=kingdompeople-20&amp;l=as2&amp;o=1&amp;a=0061551821" alt width="1" height="1" border="0" /></em> will be one of Wright&#8217;s most widely-read books. Though readers should proceed with caution regarding some of Wright&#8217;s proposals, the wheat in this book far outweighs the chaff.</p>
+<p><span style="font-size: 10pt; font-family: Sylfaen;">written by Trevin Wax. copyright © 2008 Kingdom People Blog.</span></p>
+<p>Related Articles:<br/>
+<a href="http://trevinwax.com/2008/02/28/nt-wright-on-nightline/">N.T. Wright Speaking of &#8220;Heaven&#8221; on ABC&#8217;s Nightline</a><br/>
+<a href="http://trevinwax.com/2007/10/18/you-were-made-for-earth-my-interview-with-michael-wittmer/">You Were Made for Earth: My Interview with Michael Wittmer</a><br/>
+<a href="http://trevinwax.com/2007/12/20/the-future-of-justification-series/">Review of John Piper&#8217;s <em>The Future of Justification</em></a><br/>
+<a href="http://trevinwax.com/2007/11/19/trevin-wax-interview-with-nt-wright-full-transcript/">My Interview with N.T. Wright</a></p>
+</div>
+<div class="article_author_bio">
+<div class="row">
+<div class="col-12 col-md-2">
+<a class="author_img_wrap lazyload" href="https://www.thegospelcoalition.org/profile/trevin-wax/" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/12142032/080724_OTCRTV_NAMB_Trevin_0001-scaled-e1723674430392-300x300.jpg)"></a>
+</div>
+<div class="col-md-10 col-12 align-self-center">
+<p><strong>Trevin Wax</strong> is vice president of research and resource development at the <a href="https://www.namb.net/" target="_blank" rel="noopener">North American Mission Board</a> and a visiting professor at Cedarville University. A former missionary to Romania, Trevin is a regular columnist at The Gospel Coalition and has contributed to <i>The Washington Post</i>, <i>Religion News Service</i>, <i>World</i>, and <i>Christianity Today</i>. He has taught courses on mission and ministry at Wheaton College and has lectured on Christianity and culture at Oxford University. He is a founding editor of The Gospel Project, has served as publisher for the Christian Standard Bible, and is currently a fellow for <a href="https://www.thegospelcoalition.org/thekellercenter/bios/">The Keller Center for Cultural Apologetics.</a> He is the author of multiple books, including <em><a href="https://amzn.to/3cJsFbH" target="_blank" rel="noopener">The Thrill of Orthodoxy</a></em>, <a href="https://www.amazon.com/Multi-Directional-Leader-Responding-Wisely-Challenges/dp/1733458581/?tag=redletters-20" target="_blank" rel="noopener"><em>The Multi-Directional Leader</em></a>, <em><a href="https://www.amazon.com/Rethink-Your-Self-Looking-Before/dp/1535995637/?tag=thegospcoal-20" target="_blank" rel="noopener">Rethink Your Self</a></em>, <a href="https://www.amazon.com/This-Our-Time-Everyday-Gospel/dp/1433648474/?tag=redletters-20" target="_blank" rel="noopener"><em>This Is Our Time</em></a>, and <a href="https://www.amazon.com/gp/product/1433681722/?tag=redletters-20" target="_blank" rel="noopener"><em>Gospel Centered Teaching</em></a>. His podcast is <a href="https://www.namb.net/podcast_channel/reconstructing-faith/"><em>Reconstructing Faith</em></a>. He and his wife, Corina, have three children. You can follow him on <a href="https://twitter.com/TrevinWax" target="_blank" rel="noopener">Twitter</a> or <a href="https://www.facebook.com/trevinwax" target="_blank" rel="noopener">Facebook</a>, or receive his columns <a href="http://trevinwax.us11.list-manage1.com/subscribe?u=138da60b2f7586fbbb1c50a84&amp;id=621531349f">via email</a>.</p>
+</div>
+</div>
+</div>
+<div class="d-xl-none" style="max-width: 600px;margin:auto;">
+</div>
+</div>
+<div class="content_right_column col-auto"></div>
+</div>
+</div>
+</div>
+<footer>
+</footer>
+</article>
+</div><section class="flex_section article_single_footer blog_single_footer">
+<div class="desktop_spacer"></div>
+<div class="container">
+<div class="row">
+<div class="more_by_blogger col-12 d-md-none">
+<div class="more_by">
+<h4 class="more_by_title">
+More By Trevin </h4>
+<article class="top_img_article_card d-flex flex-md-column post-614189 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry tag-general-theology trevin-wax-category-christianity trevin-wax-category-church-issues trevin-wax-category-theology">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://www.thegospelcoalition.org/blogs/trevin-wax/highlights-from-the-seoul-statement-at-lausanne-2024/">
+Highlights from the Seoul Statement at Lausanne 2024 </a>
+</h2>
+<div class="article_author">
+Trevin Wax </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://www.thegospelcoalition.org/blogs/trevin-wax/highlights-from-the-seoul-statement-at-lausanne-2024/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-768x432.jpg" class="attachment-medium_large size-medium_large lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024.jpg 1920w" data-sizes="(max-width: 768px) 100vw, 768px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 768px; --smush-placeholder-aspect-ratio: 768/432;" /><noscript><img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/23040331/highlights-from-the-seoul-statement-at-lausanne-2024.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></noscript> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-611504 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry tag-church-and-culture tag-denominations tag-truth trevin-wax-category-church-issues trevin-wax-category-theology">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://www.thegospelcoalition.org/blogs/trevin-wax/evangelical-free-church/">
+The Evangelical Free Church on Learning to Say Yes and No </a>
+</h2>
+<div class="article_author">
+Trevin Wax </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://www.thegospelcoalition.org/blogs/trevin-wax/evangelical-free-church/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-768x432.jpg" class="attachment-medium_large size-medium_large lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church.jpg 1920w" data-sizes="(max-width: 768px) 100vw, 768px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 768px; --smush-placeholder-aspect-ratio: 768/432;" /><noscript><img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/13184057/evangelical-free-church.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></noscript> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-612571 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry tag-church-and-culture tag-music trevin-wax-category-life-culturemusic">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://www.thegospelcoalition.org/blogs/trevin-wax/taylor-swift-cultural-appraisal/">
+The Songs of Taylor Swift: A Christian Cultural Appraisal </a>
+</h2>
+<div class="article_author">
+Trevin Wax </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://www.thegospelcoalition.org/blogs/trevin-wax/taylor-swift-cultural-appraisal/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-768x432.jpg" class="attachment-medium_large size-medium_large lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal.jpg 1920w" data-sizes="(max-width: 768px) 100vw, 768px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 768px; --smush-placeholder-aspect-ratio: 768/432;" /><noscript><img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/09143351/the-songs-of-taylor-swift-a-christian-cultural-appraisal.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></noscript> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-607171 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry tag-purposeful-living tag-relationships tag-suffering trevin-wax-category-christian-living trevin-wax-category-christianity trevin-wax-category-church-issues">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://www.thegospelcoalition.org/blogs/trevin-wax/beware-anesthetized-life/">
+Beware the Anesthetized Life </a>
+</h2>
+<div class="article_author">
+Trevin Wax </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://www.thegospelcoalition.org/blogs/trevin-wax/beware-anesthetized-life/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="512" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-768x512.jpg" class="attachment-medium_large size-medium_large lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-768x512.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-300x200.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-1536x1024.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg 1920w" data-sizes="(max-width: 768px) 100vw, 768px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 768px; --smush-placeholder-aspect-ratio: 768/512;" /><noscript><img width="768" height="512" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-768x512.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-768x512.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-300x200.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash-1536x1024.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/04225722/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></noscript> </picture>
+</a>
+</figure>
+</div>
+</article>
+<article class="top_img_article_card d-flex flex-md-column post-606536 trevin-wax type-trevin-wax status-publish has-post-thumbnail hentry tag-purposeful-living tag-rest-and-priorities tag-sanctification-and-growth trevin-wax-category-christian-living trevin-wax-category-christianity trevin-wax-category-church-issues">
+<div class="article_content order-md-2">
+<h2 class="article_title">
+<a class="article_link" href="https://www.thegospelcoalition.org/blogs/trevin-wax/running-rest/">
+Running and Rest Aren’t Opposites </a>
+</h2>
+<div class="article_author">
+Trevin Wax </div>
+</div>
+<div class="article_image order-md-1">
+<figure class="article_media">
+<a class="article_object" href="https://www.thegospelcoalition.org/blogs/trevin-wax/running-rest/">
+<picture class="d-flex w-100 h-100">
+<img width="768" height="432" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-768x432.jpg" class="attachment-medium_large size-medium_large lazyload" alt decoding="async" loading="lazy" data-srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest.jpg 1920w" data-sizes="(max-width: 768px) 100vw, 768px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 768px; --smush-placeholder-aspect-ratio: 768/432;" /><noscript><img width="768" height="432" src="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" loading="lazy" srcset="https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-768x432.jpg 768w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-300x169.jpg 300w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest-1536x864.jpg 1536w, https://media.thegospelcoalition.org/wp-content/uploads/2024/09/03141237/running-rest.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></noscript> </picture>
+</a>
+</figure>
+</div>
+</article>
+</div>
+</div>
+<div class="other_voices_section col-12">
+<div class="section_head_bordered">
+<h2 class="section_heading">
+Other Blogs
+</h2>
+</div>
+<div class="row other_voices_collection">
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://www.thegospelcoalition.org/profile/erik-raymond/">
+<div class="img_span lazyload" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/18111227/ErikRaymond2019_550x550.jpg)"></div>
+<span class="author_name">
+Erik Raymond </span>
+</a>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/erik-raymond/let-the-cursor-blink/">
+Let the Cursor Blink </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/erik-raymond/recommendations-from-my-summer-reading/">
+Recommendations From My Summer Reading </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/erik-raymond/water-in-the-desert-finding-refreshment-in-trials/">
+Water in the Desert: Finding Refreshment in Trials </a>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://www.thegospelcoalition.org/profile/ray-ortlund/">
+<div class="img_span lazyload" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/11121714/Ortlund-Ray-.jpg)"></div>
+<span class="author_name">
+Ray Ortlund </span>
+</a>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/ray-ortlund/i-knew-by-your-looks/">
+How to stand tall in our troubled times </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/ray-ortlund/the-most-important-thing-outside-the-bible-i-have-ever-read/">
+Let’s ponder this Schaeffer quote about once a week </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/ray-ortlund/your-life-is-prophetic/">
+Your life is prophetic </a>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://www.thegospelcoalition.org/profile/justin-taylor/">
+<div class="img_span lazyload" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/26132543/Taylor-Justin.jpeg)"></div>
+<span class="author_name">
+Justin Taylor </span>
+</a>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/evangelical-history/how-americas-premiere-theologian-interpreted-gods-providence-after-lincoln-was-assassinated/">
+How America’s Premier Theologian Interpreted God’s Providence after Lincoln Was Assassinated </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/justin-taylor/his-glory-and-my-good-a-new-song-from-city-alight/">
+His Glory and My Good: A New Song from City Alight </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/justin-taylor/a-conversation-with-kevin-deyoung-and-jonathan-leeman-on-politics-and-christianity/">
+A Conversation with Kevin DeYoung and Jonathan Leeman on Politics and Christianity </a>
+</div>
+</div>
+<div class="col-xl-3 col-md-6 blog_profile_col">
+<a class="author_info_wrap" href="https://www.thegospelcoalition.org/profile/scotty-smith/">
+<div class="img_span lazyload" style="background-image:inherit;" data-bg-image="url(https://media.thegospelcoalition.org/wp-content/uploads/2017/06/26114552/Smith-Scotty.jpeg)"></div>
+<span class="author_name">
+Scotty Smith </span>
+</a>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/scotty-smith/dont-try-to-squirm-free-from-jesus-grace-grip/">
+Don’t Try to Squirm Free from Jesus’ Grace-Grip </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/scotty-smith/more-than-biblically-right-whole-person-undone/">
+More Than “Biblically Right”—“Whole-Person-Undone” </a>
+</div>
+<div class="other_voices_post">
+<a href="https://www.thegospelcoalition.org/blogs/scotty-smith/not-get-rich-quick-but-be-generous-always/">
+Not Get Rich Quick, but Be Generous Always </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop_spacer"></div>
+</section> <div id="ajax-content"></div>
+<span id="ajax-trigger"></span>
+<a href="javascript:void(0);" id="ajax-load-more" class="flat_btn">
+LOAD MORE </a>
+<div id="ajax-loader">
+<i class="fa fa-cog fa-spin"></i>Loading </div>
+</div>
+<script>
+	jQuery(document).ready(function($) {
+
+		jQuery('.entry-content img[src*="surprisedbyhope"]').hide().addClass('no_lazy');jQuery('.entry-content img[data-cfsrc*="surprisedbyhope"]').addClass('d-none no_lazy')
+		//init fancy load
+		window.ajaxFancyLoad.push({
+			args: {
+				blog_post_type: "trevin-wax"			},
+			autoLoad: true,
+			showLoadMoreButton: false,
+			scrollLoad: true,
+			windowLoad: false,
+			container: "#ajax-content",
+			serverSideFunction: "blog_load_more",
+			pageCount: 3,
+			isAjaxing: false,
+			trigger: "#ajax-trigger",
+			loader: "#ajax-loader",
+			loadmore_btn: "#ajax-load-more",
+			page_before_loadmore_btn: 1,
+			should_update_page_meta: true
+		});
+
+
+
+
+	});
+</script> </main>
+<footer id="footer" class="content-info footer_bottom new">
+<div class="container-footer">
+<div class="d-none d-md-flex justify-content-between ">
+<span class="text-left">
+<a href="https://www.thegospelcoalition.org/">
+<img id="footer-logo" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" style="--smush-placeholder-width: 300px; --smush-placeholder-aspect-ratio: 300/135;" /><noscript><img id="footer-logo" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" style="--smush-placeholder-width: 300px; --smush-placeholder-aspect-ratio: 300/135;" /><noscript><img id="footer-logo" src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" /></noscript></noscript>
+</a>
+</span>
+</div>
+<div class="row">
+<div class="col-md-6 footer-left">
+<div class="d-block d-md-none">
+<span class="text-left">
+<a href="https://www.thegospelcoalition.org/">
+<img id="footer-logo" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" style="--smush-placeholder-width: 300px; --smush-placeholder-aspect-ratio: 300/135;" /><noscript><img id="footer-logo" data-src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" style="--smush-placeholder-width: 300px; --smush-placeholder-aspect-ratio: 300/135;" /><noscript><img id="footer-logo" src="https://media.thegospelcoalition.org/wp-content/uploads/2018/12/11135157/tgc_logo_footer-300x135.png" alt="TGC Footer Logo" /></noscript></noscript>
+</a>
+</span>
+</div>
+<div class="footer-about-text">
+The Gospel Coalition supports the church by providing resources that are trusted and timely, winsome and wise, and centered on the gospel of Jesus Christ. </div>
+<a href="/about/" class="btn btn-outline-dark">
+Learn More
+</a>
+</div>
+<div class="col-md-6 footer-right text-center text-md-right order-first order-md-last">
+<div class="footer_email_update">
+<div class="section_title">Email Updates</div>
+<div class="footer_email_update_form_wrapper">
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "40099644",
+    formId: "11cc95c1-d953-4245-9c44-019cf7f6290a"
+  });
+</script> </div>
+</div>
+<div class="text-right d-none d-md-block">
+<div class="footer_social">
+<a href="https://www.facebook.com/thegospelcoalition" target="_blank">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="https://twitter.com/tgc" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://www.youtube.com/user/TheGospelCoalition" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+<a href="https://www.instagram.com/thegospelcoalition/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://www.thegospelcoalition.org/feed/" target="_blank">
+<i class="fas fa-rss"></i>
+</a>
+</div>
+</div>
+<div class="sub-footer-links d-none d-md-block">
+<a href="https://jobs.gusto.com/boards/the-gospel-coalition-6c55f332-cf11-4d7a-9fe1-928e9359c03c" class="footer_link" target="_blank">
+careers </a>
+<a href="/privacy-policy/" class="footer_link">
+privacy policy </a>
+<a href="/permissions" class="footer_link">
+permissions </a>
+<a href="/store/" class="footer_link">
+store </a>
+<a href="/donate" class="footer_link">
+donate </a>
+</div>
+<div class="footer_copy d-none d-md-block">
+Copyright &copy; 2024 The Gospel Coalition, INC. All Rights Reserved </div>
+</div>
+<div class="col-12 d-none d-md-block order-last text-center amazon_disclaimer">
+<div class="footer_copy pt-5 d-none d-md-block">
+Affiliate disclosure: As an Amazon Associate, we may earn commissions from qualifying purchases on Amazon.com. <a href="https://www.thegospelcoalition.org/privacy-policy/">Learn more</a>. </div>
+</div>
+<div class="col-md-6 footer-right text-center text-md-right d-block d-md-none">
+<div class="text-center text-md-left">
+<div class="footer_social">
+<a href="https://www.facebook.com/thegospelcoalition" target="_blank">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="https://twitter.com/tgc" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://www.youtube.com/user/TheGospelCoalition" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+<a href="https://www.instagram.com/thegospelcoalition/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://www.thegospelcoalition.org/feed/" target="_blank">
+<i class="fas fa-rss"></i>
+</a>
+</div>
+</div>
+<div class="sub-footer-links text-center text-md-left">
+<a href="https://jobs.gusto.com/boards/the-gospel-coalition-6c55f332-cf11-4d7a-9fe1-928e9359c03c" class="footer_link" target="_blank">
+careers </a>
+<a href="/privacy-policy/" class="footer_link">
+privacy policy </a>
+<a href="/permissions" class="footer_link">
+permissions </a>
+<a href="/store/" class="footer_link">
+store </a>
+<a href="/donate" class="footer_link">
+donate </a>
+</div>
+<div class="footer_copy">
+Copyright &copy; 2024 The Gospel Coalition, INC. All Rights Reserved </div>
+<div class="footer_copy pt-4">
+Affiliate disclosure: As an Amazon Associate, we may earn commissions from qualifying purchases on Amazon.com. <a href="https://www.thegospelcoalition.org/privacy-policy/">Learn more</a>. </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script>
+	(function($) {
+		window.onfooterEmailSubmit = function onfooterEmailSubmit() {
+
+			if ($('.footer_email_update_form').length > 0) {
+
+				//for each newsletter add the recaptcha and callback if it hasn't been added yet
+				$(".footer_email_update_form .g-recaptcha:not(.reCaptcha_rendered)").each(function(index, el) {
+
+					//adding this class to pickup on if it already has reCaptcha enabled
+					$(this).addClass('reCaptcha_rendered');
+					var object = $(this);
+					var object_ID = object.attr("id");
+
+					//this adds the reCaptcha and sets the widget id on each form
+					var widgetId = grecaptcha.render(object.attr("id"), {
+						"sitekey": "6LecGD4UAAAAACClySulfNhGtPVGlQXGaY_X8gM9",
+						"isolated": true,
+						"callback": function(token) {
+							object.parents('form').find(".g-recaptcha-response").val(token);
+							var $form = object.parents('form');
+							var $form_wrapper = $($form).parent('.footer_email_update_form_wrapper');
+							$('.footer_email_update_success').collapse('hide');
+							$('.footer_email_update_unsuccess').collapse('hide');
+							footermailchimpAPI($form);
+
+							function footermailchimpAPI($form) {
+								$.fn.form = function() {
+									var formData = {};
+									$form.find('[name]').each(function() {
+										formData[this.name] = this.value;
+									})
+									return formData;
+								};
+
+								var email_value = $($form).find('input[name="EMAIL"]').val();
+
+								var formdata = $form.form();
+								var has_MCLISTID = formdata.MCLISTID;
+								//if fields are empty stop and show the error message - this is also happening serverside
+								if (email_value == '') {
+									$('.footer_email_update_unsuccess').collapse('show');
+								} else {
+									var $form_widget_id = $('.reCaptcha_rendered', $form_wrapper).attr('data-widget-id');
+									grecaptcha.execute($form_widget_id);
+									$.ajax({
+										url: $form.attr('action'),
+										type: 'POST',
+										dataType: 'json',
+										data: {
+											action: 'mailchimpsubscribe',
+											formData: $form.form()
+										},
+										success: function(result) {
+											if (!result.success) {
+												$('.footer_email_update_unsuccess').html(result.data);
+												$('.footer_email_update_success').collapse('hide');
+												$('.footer_email_update_unsuccess').collapse('show');
+
+											} else {
+												$('.footer_email_update_unsuccess').collapse('hide');
+												$('.footer_email_update_success').html(result.data);
+												$('.footer_email_update_success').collapse('show');
+											}
+											grecaptcha.reset($form_widget_id);
+
+										},
+										error: function(result) {
+											$('.footer_email_update_success').html(result.data);
+											$('.footer_email_update_success').collapse('show');
+
+											grecaptcha.reset($form_widget_id);
+
+										}
+									});
+								}
+							}
+						}
+					});
+					$(this).attr('data-widget-id', widgetId); //adding the widget id
+				});
+
+
+			}
+
+		};
+	})(jQuery);
+</script>
+<link rel="stylesheet" id="essay-custom-print-style-css" href="https://www.thegospelcoalition.org/wp-content/themes/luther/css/templates/printPDF.css?ver=20130821" type="text/css" media="print" />
+<link rel="stylesheet" id="font-awesome-css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css?ver=a0301b1d089d6991fba962bdf453bb5b" type="text/css" media="all" />
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/theme.min.js?ver=1.0.0.1676309180" id="luther_theme-scripts-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?version=4.8.0&amp;features=Array.prototype.includes%2CCustomEvent%2CObject.entries%2CObject.values%2CURL%2Ces6&amp;ver=1" id="plyr-poly-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/plyr.min.js?ver=1" id="plyr-js"></script>
+<script type="text/javascript" id="leadin-script-loader-js-js-extra">
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"11.1.34"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://js.hs-scripts.com/40099644.js?integration=WordPress&amp;ver=11.1.34" id="leadin-script-loader-js-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/jquery.matchHeight-min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="match-height-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/velocity.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="velocity-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/velocity.ui.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="velocity-ui-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/magnific-popup/jquery.magnific-popup.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/jquery.fitvids.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="fit-vids-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/select2/select2.full.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="select2-js-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/swiper/js/swiper.min.js?ver=a0301b1d089d6991fba962bdf453bb5b" id="swiper-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/greensock/minified/TweenMax.min.js?ver=1676309178" id="gsap-tweenmax-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/greensock/minified/TimelineMax.min.js?ver=1676309178" id="gsap-timelinemax-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/call-to-action.js?ver=1676309178" defer></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/sage/assets/scripts/js.cookie.js?ver=1676309193" id="isc-js-cookie-js"></script>
+<script type="text/javascript" id="global-scripts-js-extra">
+/* <![CDATA[ */
+var script_vars = {"postType":"trevin-wax","is_podcast":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/global.js?ver=1.0.0.1716493598" id="global-scripts-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/header.js?ver=1.0.0.1676658559" id="header-scripts-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/modules/cross-reference-tool.js?ver=1" id="bible-reftagger-cross-styles-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/luther/js/templates/single-blog.js?ver=1676309180" id="single-blog-js"></script>
+<script type="text/javascript" id="ajax-load-more-js-extra">
+/* <![CDATA[ */
+var ajaxloadmore = {"url":"\/wp-content\/themes\/sage\/tgc-ajax.php","prev_post_id":"65117"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/themes/sage/assets/scripts/ajax-load-more.js?ver=1725459344" id="ajax-load-more-js"></script>
+<script type="text/javascript" src="https://www.thegospelcoalition.org/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.min.js?ver=3.16.6" id="smush-lazy-load-js"></script>
+</body>
+</html>
