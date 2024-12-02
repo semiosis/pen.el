@@ -12,6 +12,10 @@ if test "$DEBUG_MODE" = "y"; then
     export DEBUG_MODE=y
 fi
 
+# I think I want to stick to predefined names for the static windows
+# window_status_format_extra=" #{=20:pane_title}"
+window_status_format_extra=""
+
 displayedname() {
     # 🍓
     sed -e 's/^.*_//' -e "s/^localhost$/$(hostname | sed 's/[^ _-]*/\u&/g')/"
@@ -2093,7 +2097,7 @@ case "$f" in
             slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -20)"
             : ${window_name:="$slug"}
         else
-            : ${window_name:="new-window"}
+            : ${window_name:="nw"}
         fi
 
         sentinal_string="tm_sentinal_${RANDOM}_$$"
@@ -2334,32 +2338,37 @@ case "$f" in
             full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
             case "$HIGHLIGHT" in
                 yellow|warn) {
-                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour227]#I #[fg=colour244]#W$window_status_format_extra'
                 }
                 ;;
 
                 red) {
-                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour160]#I #[fg=colour244]#W$window_status_format_extra'
                 }
                 ;;
 
                 blue) {
-                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour020]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour020]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour020]#I #[fg=colour244]#W$window_status_format_extra'
                 }
                 ;;
 
                 dblue) {
-                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour018]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour018]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour018]#I #[fg=colour244]#W$window_status_format_extra'
                 }
                 ;;
 
                 green) {
-                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour040]#I #[fg=colour244]#W$window_status_format_extra'
                 }
                 ;;
 
@@ -3694,7 +3703,7 @@ case "$f" in
         target="$(printf -- "%s" "$target" | sed 's/\.\([^%0-9]\)/\*\1/')"
 
         set -o pipefail
-        tmux select-window -t "$target" 2>/dev/null || tmux select-pane -t "$target" 2>/dev/null || {
+        ( tmux select-window -t "$target" 2>/dev/null && tmux select-pane -t "$target" 2>/dev/null; ) || tmux select-pane -t "$target" 2>/dev/null || {
             re_target="$(p "$orig_target" | sed 's/\(\.[^0-9]\)/\\\1/g' | sed 's/\*/\.*/g')"
             tm-lsp.sh | grep -P "$re_target\t" | head -n 1 | sed 's/.*\t//' | xargs -l tmux select-window -t
         } || exit 1

@@ -1,0 +1,15 @@
+# ~/.profile: executed by Bourne-compatible login shells.
+
+if ! test "$INSIDE_TMUX_POPUP" = y; then
+    if [ "$BASH" ]; then
+      if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+      fi
+    fi
+fi
+
+mesg n || true
+. "$HOME/.cargo/env"
+
+export PATH="$PATH:/root/go/bin"
+. ~/.shellrc

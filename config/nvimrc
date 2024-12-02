@@ -105,6 +105,15 @@ silent! set nomodelineeexpr " disable modelineexpr if it's available
 " set nomle
 set tags=~/.tags
 set notitle
+
+" I couldn't get this going:
+set title
+let &titlestring = 'YO'
+
+" But here is a workaround. It doesn't reset the title string on quit though
+silent! !echo -en "\033]0;vim\a"
+autocmd BufEnter * silent! !echo -en "\033]0;v %:t\a"
+
 " setting virtualedit to onemore fixes the ‘cw’ bug for words at end of
 " file
 "set virtualedit=onemore

@@ -777,3 +777,5 @@ listfunctions() {
         print -rl -- ${(k)parameters} | sed 's/^/parameter:/'
     } | pavs
 }
+
+set_terminal_title zsh

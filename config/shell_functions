@@ -161,3 +161,7 @@ cd () {
 
     return "$ret"
 }
+
+function set_terminal_title() {
+  echo -en "\e]2;$@\a"
+}

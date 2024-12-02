@@ -826,3 +826,22 @@ exit_shell() {
     #bind -x '"\e[1;3P":"exit &>/dev/null"'
     bind -x '"\ec":"nav menu"'
 } 2>/dev/null
+
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+# if [ -f ~/.zsh_aliases ]; then
+#     . ~/.zsh_aliases
+# fi
+if [ -f ~/.shell_aliases ]; then
+    . ~/.shell_aliases
+fi
+if [ -f ~/.shellrc ]; then
+    . ~/.shellrc
+fi
+if [ -f ~/.shell_functions ]; then
+    . ~/.shell_functions
+fi
+
+set_terminal_title bash

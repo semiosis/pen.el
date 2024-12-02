@@ -3,5 +3,7 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+echo -en "\033]0;preview $@\a" || :
+
 EDITOR=vs less -S "$@"
 # $HOME/.config/lf/preview "$@"

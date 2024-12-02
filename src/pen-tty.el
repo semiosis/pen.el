@@ -101,4 +101,10 @@
 ;; This is also needed
 ;; (add-hook 'window-setup-hook 'pen-add-keyboard-keys)
 
+
+(require 'term-title)
+(term-title-mode 1)
+;; (setq term-title-format "Emacs: %b")
+(setq term-title-format "%b")
+
 (provide 'pen-tty)

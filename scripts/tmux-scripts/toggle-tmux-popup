@@ -131,7 +131,7 @@ fi
 : ${CMD:="$shcmd"}
 # cmd-nice has trouble with unicode
 # : ${CMD:="$(cmd-nice "$@")"}
-: ${CMD:="$(cmd "$@")"}
+: ${CMD:="$(cmd-nice-posix "$@")"}
 : ${CMD:="zsh"}
 
 # may be a percentage or a fixed integer number of characters
@@ -207,7 +207,7 @@ fi
 tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
 trap "rm $(cmd-nice-posix "$tf_returncode") 2>/dev/null" 0
 
-CMD="bash -c $(cmd "set -o pipefail; $CMD ; echo \$? > $tf_returncode")"
+CMD="bash -c $(cmd-nice-posix "set -o pipefail; $CMD ; echo \$? > $tf_returncode")"
 
 if stdin_exists && ! test "$no_stdin" = y; then
     input_fp="$(cat | tf txt)"
@@ -216,7 +216,7 @@ fi
 
 if test "$hide_status" = "y"; then
     # CMD="tmux set-option -t popup: status off; $CMD"
-    PRE_CMD="tmux set-option -t popup: status off;"
+    PRE_CMD="tmux set-option -t popup: status off; export INSIDE_TMUX_POPUP=y;"
 fi
 
 : "${bgc:="default"}"
@@ -272,7 +272,7 @@ else
         "-x$x" "-y$y" "-w$width" "-h$height" \
         -E "tmux attach -t popup 2>/dev/null || \
         tmux new -s popup env \"CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION\" \
-        bash -c $(cmd "${PRE_CMD}. ~/.profile; $CMD")"
+        bash -c $(cmd-nice-posix "${PRE_CMD}. ~/.profile; $CMD")"
 fi
 
 wait

@@ -57,12 +57,13 @@ IFS= read -r -d '' window_keys <<HEREDOC
 (z)
 HEREDOC
 
-wins="$(tmux list-windows -t "$sess:" -F "#I #W#{window_flags}")"
+wins="$(tmux list-windows -t "$sess:" -F "#I #W#{window_flags} \t #{pane_title}")"
 n_wins="$(printf -- "%s\n" "$wins" | wc -l)"
 
 eval `tm-resize`
 
-disp="$(paste <(printf -- "%s\n" "$window_keys" | head -n "$n_wins") <(printf -- "%s\n" "$wins"))"
+# COLUMNS - 10 seems to take care of trimming to the tmux popup width taking into consideration the tabwith
+disp="$(paste <(printf -- "%s\n" "$window_keys" | head -n "$n_wins") <(printf -- "%s\n" "$wins") | cut -c -$(( COLUMNS - 10 )))"
 lastwindow="$(printf -- "%s\n" "$disp" | sed -n '$p')"
 disp="$(echo -e "(=)$lastwindow\n$disp")"
 

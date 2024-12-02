@@ -144,6 +144,10 @@ if test -f $HOME/.emacs.d/host/pen.el/config/nvimrc; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.vimrc
 fi
 
+if test -f $HOME/.emacs.d/host/pen.el/config/profile; then
+    ln -sf $HOME/.emacs.d/host/pen.el/config/profile ~/.profile
+fi
+
 if test -d /root/.emacs.d/host/pen.el/config/vim-bundles; then
     rm -rf ~/.vim/bundle
     mkdir -p ~/.vim/bundle

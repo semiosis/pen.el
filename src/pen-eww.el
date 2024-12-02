@@ -2189,4 +2189,16 @@ the URL of the image to the kill buffer instead."
       (eww-open-file (umn url))
     (eww url use-chrome)))
 
+(defun eww-browse-with-external-browser-around-advice (proc &rest args)
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (cond ((>= gparg 16) nil)
+          ((>= gparg 4) (eww-reopen-in-chrome))
+          (t (if (internet-connected-p)
+                 (let ((res (apply proc args)))
+                   res)
+               (eww-reopen-in-chrome))))))
+(advice-add 'eww-browse-with-external-browser :around #'eww-browse-with-external-browser-around-advice)
+;; (advice-remove 'eww-browse-with-external-browser #'eww-browse-with-external-browser-around-advice)
+
 (provide 'pen-eww)
