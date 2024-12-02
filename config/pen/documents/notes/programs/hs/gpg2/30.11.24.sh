@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "gpg2" "--with-colons" "--list-config" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputhjGc4t" "--verify" "--" "/tmp/epg-signatureaR5S3u" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--output" "/tmp/epg-outputV45laZ" "--verify" "--" "/tmp/epg-signatureltgN4G" "-" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "gpg2" "--no-tty" "--status-fd" "1" "--yes" "--homedir" "/root/.emacs.d/elpa/gnupg" "--command-fd" "0" "--import" "--" "/usr/local/share/emacs/29.1.50/etc/package-keyring.gpg" "#" "<==" "emacs"

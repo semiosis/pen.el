@@ -10953,7 +10953,6 @@ print(data)' | uplot line
 : 1711015156:0;mv ~/.pen/corrections ./
 : 1711018274:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-12.org
 : 1711018324:0;cd discipleship-group
-: 1711051810:0;pen-e -D pen-emacsd-1
 : 1711051878:0;pen-e -D pen-emacsd-1 sd -d
 : 1711053370:0;John 4
 : 1711056226:0;rm -rf Wilfred
@@ -18620,7 +18619,6 @@ apt -y --fix-broken install
 : 1732701725:0;unicode "μ"
 : 1732739607:0;nod 1 John 4:18
 : 1732739643:0;1 John 4:18
-: 1732740862:0;penq
 : 1732770315:0;excitedness.rkt
 : 1732770532:0;drracket /root/.emacs.d/host/pen.el/scripts/racket-scripts/use-language.rkt
 : 1732770593:0;hsqf gc
@@ -18634,7 +18632,6 @@ apt -y --fix-broken install
 : 1732772496:0;pvd -2 ~/.pen/documents/notes/Music\ Data\ Base.xls
 : 1732772516:0;nvpvd ~/.pen/documents/notes/Music\ Data\ Base.xls
 : 1732772517:0;"pvd" "-2" "/root/.pen/documents/notes/Music Data Base.xls" ; exit "$?"
-: 1732782055:0;v v
 : 1732843866:0;mcd visidata-scripts
 : 1732843908:0;v visidata-pipeline-test.sh
 : 1732844102:0;v pwd._ext_freq.tsv
@@ -18732,9 +18729,6 @@ apt -y --fix-broken install
 : 1732855635:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session" | v
 : 1732855650:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session"
 : 1732855752:0;v sout
-: 1732855786:0;ls
-: 1732855786:0;pwd
-: 1732855813:0;pe
 : 1732855868:0;v pen-tm
 : 1732855878:0;v tpop
 : 1732855890:0;v toggle-tmux-popup
@@ -18743,3 +18737,12 @@ apt -y --fix-broken install
 : 1732856149:0;tpop
 : 1732856277:0;excitedness.rkt --excited
 : 1732856313:0;penq
+: 1732925723:0;ls
+: 1732925724:0;pwd
+: 1732925726:0;v clipboard.txt
+: 1732927638:0;let-syntax-demo.rkt
+: 1732928079:0;v v
+: 1732929289:0;pen-e -D pen-emacsd-1
+: 1732929984:0;Daniel 4:17
+: 1732930603:0;Daniel 5:8-9
+: 1732945540:0;pe

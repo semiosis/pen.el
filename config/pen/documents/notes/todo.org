@@ -1,3 +1,27 @@
+* Racket emacs
+** TODO Figure out how to do comments like in clojure
+i.e. like =(comment ...)=
+
+** TODO Add some functions for browsing available functions and packages
+
+** DONE Make it so I can start a REPL with the file loaded
+e:/root/.emacs.d/host/pen.el/scripts/racket-scripts/advanced-macros.rkt
+
+- Similar to what I can do with Clojure/Babashka
+
+I want a properly functioning REPL.
+
+Well, actually, I do have that.
+It's j:racket-run
+or j:pen-racket-run
+
+* emacs
+** TODO Upgrade helm
+*** Then install helm-dictionaries
+
+* TODO Look into how linux handles shebang
+I want to be able to make adjustments to the system.
+
 * TODO Find a way of concisely embedding arbitrary mixes of languages inside scripts
 
 Perhaps I should actually be using =org-mode= based scripts.

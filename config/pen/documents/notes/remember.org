@@ -1,3 +1,13 @@
+* 
+#+BEGIN_QUOTE
+  *Daniel 5:8-9* - Then all the king's wise men came in, but they could not read the writing or make known to the king the interpretation. Then King Belshazzar was greatly alarmed, and his color changed, and his lords were perplexed. (ESV)
+#+END_QUOTE
+
+* 
+#+BEGIN_QUOTE
+  *Daniel 4:17* - The sentence is by the decree of the watchers, the decision by the word of the holy ones, to the end that the living may know that the Most High rules the kingdom of men and gives it to whom he will and sets over it the lowliest of men. (ESV)
+#+END_QUOTE
+
 * babashka
 ** Pods
 https://github.com/babashka/pod-babashka-go-sqlite3
