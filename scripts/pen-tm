@@ -1354,8 +1354,11 @@ case "$f" in
                     export TARGET="$session_name"
                     cd "$CWD"
 
-                    test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
-                    test -f ".tmux.sh" && source ".tmux.sh"
+                    (
+                        export IN_TMUX_SH=y
+                        test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
+                        test -f ".tmux.sh" && source ".tmux.sh"
+                    )
 
                     case "$AUTOFILES" in
                         n) {
@@ -2336,6 +2339,11 @@ case "$f" in
             fi
 
             full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
+
+            if ! test -n "$HIGHLIGHT" && test "$IN_TMUX_SH" = y; then
+                HIGHLIGHT=default
+            fi
+
             case "$HIGHLIGHT" in
                 yellow|warn) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W$window_status_format_extra'
@@ -2372,7 +2380,11 @@ case "$f" in
                 }
                 ;;
 
-                *)
+                default) {
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour081]#I #[fg=colour075]#W"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W"
+                }
+                ;;
             esac
 
         fi

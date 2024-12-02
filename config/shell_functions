@@ -162,6 +162,32 @@ cd () {
     return "$ret"
 }
 
-function set_terminal_title() {
-  echo -en "\e]2;$@\a"
+set_terminal_title() {
+    echo -en "\e]2;$@\a"
+}
+
+# Doesn't seem to work
+get_title() {
+    (
+    set -e
+    ss=`stty -g`; trap 'exit 11' INT QUIT TERM; trap 'stty "$ss"' EXIT
+    e=`printf '\033'`; st=`printf '\234'`; t=
+    stty -echo -icanon min 0 time "${2:-2}"
+    printf "${1:-\033[21t}" > "`tty`"
+    while c=`dd bs=1 count=1 2>/dev/null` && [ "$c" ]; do
+            t="$t$c"
+            case "$t" in
+            $e*$e\\|$e*$st)
+                    t=${t%$e\\}; t=${t%$st}; printf '%s\n' "${t#$e\][lL]}";
+                    exit 0;;
+            $e*);;
+            *) break;;
+            esac
+    done
+    printf %s "$t"; exit 1
+    )
+}
+
+get_title_force() {
+    get_title </dev/tty
 }
