@@ -56,8 +56,8 @@
     (cond ((>= gparg 16) nil)
           ((>= gparg 4)
            (if (string-equal "top" (pen-snc "tmux show -g -p pane-border-status | cut -d ' ' -f 2"))
-               (pen-snc "tmux set -g pane-border-status off")
-             (pen-snc "tmux set -g pane-border-status top")))
+               (pen-snc "pen-tm disable-border-status")
+             (pen-snc "pen-tm enable-border-status")))
           (t
            (progn
              (kill-buffer-if-not-current "*aws-instances*")

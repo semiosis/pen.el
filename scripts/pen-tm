@@ -3828,6 +3828,26 @@ case "$f" in
     }
     ;;
 
+    enable-border-status) {
+        tmux set -g pane-border-status top
+        tmux set -g pane-active-border-style 'bg=colour234,fg=black'
+
+        # more visible
+        # tmux set -g pane-border-style 'bg=black,fg=colour244'
+        # tmux set -g pane-active-border-style 'bg=colour234,fg=colour244'
+
+        tmux set -g pane-border-style 'bg=black,fg=colour234'
+        tmux set -g pane-border-lines double
+    }
+    ;;
+
+    disable-border-status) {
+        tmux set -g pane-border-status off
+        tmux set -g pane-active-border-style 'bg=colour234,fg=colour234'
+        tmux set -g pane-border-lines simple
+    }
+    ;;
+
     open-dirs) {
         selections="$(pen-tm -s -fout spv -noerror "pen-F find-no-git -d | mfz")"
         if [ -n "$selections" ]; then
