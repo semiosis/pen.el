@@ -2339,36 +2339,36 @@ case "$f" in
             case "$HIGHLIGHT" in
                 yellow|warn) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour227]#I #[fg=colour244]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour244]#I #[fg=colour227]#W$window_status_format_extra"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W$window_status_format_extra"
                 }
                 ;;
 
                 red) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour160]#I #[fg=colour244]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour244]#I #[fg=colour160]#W$window_status_format_extra"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W$window_status_format_extra"
                 }
                 ;;
 
                 blue) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour020]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour020]#I #[fg=colour244]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour244]#I #[fg=colour020]#W$window_status_format_extra"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W$window_status_format_extra"
                 }
                 ;;
 
                 dblue) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour018]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour018]#I #[fg=colour244]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour244]#I #[fg=colour018]#W$window_status_format_extra"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W$window_status_format_extra"
                 }
                 ;;
 
                 green) {
                     # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040]#W$window_status_format_extra'
-                    tmux setw -t "$full_id" window-status-current-format '#[fg=colour040]#I #[fg=colour244]#W$window_status_format_extra'
+                    tmux setw -t "$full_id" window-status-format "#[fg=colour244]#I #[fg=colour040]#W$window_status_format_extra"
+                    tmux setw -t "$full_id" window-status-current-format "#[fg=colour081]#I #[fg=colour087]#W$window_status_format_extra"
                 }
                 ;;
 
