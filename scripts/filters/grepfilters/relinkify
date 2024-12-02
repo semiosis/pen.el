@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        export UPDATE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp debug oc" rosie-urls
