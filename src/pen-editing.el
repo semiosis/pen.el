@@ -69,7 +69,9 @@
 (use-package recentf
   :init
   (setq
-   recentf-save-file (concat "/root/.emacs.d/recentf-" (daemonp))
+   ;; recentf-save-file "$HOME/.cache/emacs/recentf"
+   ;; recentf-save-file (concat "~/.cache/emacs/recentf_" (str (daemonp)))
+   recentf-save-file (concat "~/.emacs.d/recentf_" (str (daemonp)))
    recentf-max-saved-items 10000
    recentf-max-menu-items 5000)
   (recentf-mode 1)

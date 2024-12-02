@@ -243,12 +243,13 @@
 (handle '(racket-mode)
         :repls (list 'pen-racket-run
                      (dff (sps "racket"))
-                 (etc "racket" t)
-                 ;; racket-run
-                 'racket-repl)
+                     (etc "racket" t)
+                     ;; racket-run
+                     'racket-repl)
         ;; This is for running the program
         :runmain '(pen-racket-run-main)
         :formatters '(lsp-format-buffer)
+        :docfun '(racket-describe-search)
         :docs '(;; pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
                 racket-lsp-describe-thing-at-point
