@@ -6,5 +6,6 @@ tags*
 **/*#*
 **/*~*
 **/*.swp*
+**/vterm*/build
 **/*.cpcache
 **/*.nrepl-port
