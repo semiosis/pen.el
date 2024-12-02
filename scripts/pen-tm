@@ -1357,7 +1357,11 @@ case "$f" in
                     (
                         export IN_TMUX_SH=y
                         test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
-                        test -f ".tmux.sh" && source ".tmux.sh"
+                        if false && tm-minimal; then
+                            test -f ".tmux-minimal.sh" && source ".tmux-minimal.sh"
+                        else
+                            test -f ".tmux.sh" && source ".tmux.sh"
+                        fi
                     )
 
                     case "$AUTOFILES" in
@@ -1389,12 +1393,6 @@ case "$f" in
                                 REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
                             fi
                         done
-                    fi
-
-                    if false && tm-minimal; then
-                        test -f ".tmux-minimal.sh" && source ".tmux-minimal.sh"
-                    else
-                        test -f ".tmux.sh" && source ".tmux.sh"
                     fi
 
                     if test "$L_AUTOFILES" = "y"; then
