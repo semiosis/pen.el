@@ -1409,6 +1409,6 @@
 (defalias 'dalle 'pf-given-a-textual-description-visualise-it-with-an-image/1)
 
 (pen-save-faces)
-(honour-bw-mode)
+;; (honour-bw-mode)
 
 (provide 'pen-example-config)

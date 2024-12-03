@@ -1987,23 +1987,62 @@ Also see option `magit-blame-styles'."
 ;; But s-f is fairly easy to press
 (define-key global-map (kbd "s-f") 'select-font-lock-face-region)
 
+;; [[el:(etv (pen-get-faces))]]
 (defun pen-get-faces ()
   (interactive)
-  (with-temp-buffer
-    (custom-save-faces)
-    (buffer-string)))
+
+  (pps
+   (-filter
+    (lambda (tp_outer)
+      (> (length tp_outer) 1))
+    (mapcar (lambda (f) (cons f
+                              (-flatten (mapcar
+                                         (lambda (attr) (list (car attr)
+                                                              (cdr attr))) 
+                                         (-filter
+                                          (lambda (tp) (not (eq (cdr tp)
+                                                                'unspecified)))
+                                          (face-all-attributes f))))))
+            (pen-list-faces))))
+  
+  ;; (with-temp-buffer
+  ;;   ;; I need to save all the faces, but custom-save-faces only does some of them
+  ;;   (custom-save-faces)
+  ;;   (buffer-string))
+  )
+
+;; (set-face-attribute 'default nil :family "Fira Code" :height 110)
 
 (defun pen-save-faces ()
   (interactive)
   (progn
-   (message "Saving faces to /root/faces.el" )
-   (write-to-file (pen-get-faces) "/root/faces.el")))
+    (message "Saving faces to /root/faces.el" )
+    (write-to-file (pen-get-faces) "/root/faces.el")))
 
 (defun pen-load-faces ()
   (interactive)
   (if (f-file-p "/root/faces.el")
       (progn
-        (message "Loading faces from /root/faces.el" )
-        (eval (slurp-file "/root/faces.el")))))
+        (message "Loading faces from /root/faces.el")
+        (let ((tr
+               (eval-string (concat "'" (slurp-file "/root/faces.el"))))
+              (fr
+               (selected-frame)))
+
+          (cl-loop for face_tp in tr do
+                   (let* ((sym (car face_tp))
+                          (attrs (cdr face_tp))
+                          (args (append (list sym fr) attrs)))
+
+                     (if attrs
+                         (message "%s" (pps args)))
+                     ;; (apply 'set-face-attribute `(,sym ,fr ',@attrs))
+                     ;; (apply 'set-face-attribute args)
+                     ;; (message "%s" (pps (list 'set-face-attribute args)))
+                     ;; (message "%s" (pps `(set-face-attribute fr ',@attrs)))
+                     ;; (message "%s" (pps `(apply 'set-face-attribute args)))
+                     ;;
+                     )))
+        (message "Loaded faces from /root/faces.el"))))
 
 (provide 'pen-faces)
