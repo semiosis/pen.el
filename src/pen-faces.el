@@ -1879,7 +1879,8 @@ Also see option `magit-blame-styles'."
 (defun pen-enable-all-faces ()
   (interactive)
   (pen-rc-set "black_and_white" "off")
-  (pen-snc "tmux-colour"))
+  (pen-snc "tmux-colour")
+  (pen-load-faces))
 
 (comment
  (add-hook 'minibuffer-setup-hook
@@ -1985,5 +1986,24 @@ Also see option `magit-blame-styles'."
 (define-key global-map (kbd "s-F") 'select-font-lock-face-region)
 ;; But s-f is fairly easy to press
 (define-key global-map (kbd "s-f") 'select-font-lock-face-region)
+
+(defun pen-get-faces ()
+  (interactive)
+  (with-temp-buffer
+    (custom-save-faces)
+    (buffer-string)))
+
+(defun pen-save-faces ()
+  (interactive)
+  (progn
+   (message "Saving faces to /root/faces.el" )
+   (write-to-file (pen-get-faces) "/root/faces.el")))
+
+(defun pen-load-faces ()
+  (interactive)
+  (if (f-file-p "/root/faces.el")
+      (progn
+        (message "Loading faces from /root/faces.el" )
+        (eval (slurp-file "/root/faces.el")))))
 
 (provide 'pen-faces)
