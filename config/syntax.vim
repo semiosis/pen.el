@@ -977,250 +977,259 @@ command! GeneralSyntax silent! call GeneralSyntax()
 
 fun! BWSyntax()
     let g:BWMode = 1
+    " Since I'm using v -2 for inside emacs,
+    " I do not have to disable syntax, and it now looks nicer.
 
-    hi one cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi two cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi three cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi four cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi five cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi six cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi seven cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi eight cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi nine cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi zero cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi onlyhex cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi domainbright cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi domain cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi numberpunctuation cterm=NONE ctermbg=NONE
-    hi bullets ctermfg=NONE ctermbg=NONE
-    hi allcaps cterm=NONE ctermfg=NONE
-    hi currentProject cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi quote cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi doublequote cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gitRtcPackage cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi variable cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi module cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi instance cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gitRtcPackage cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gitRtcError cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gdb cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi neosession cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi myhighlightResults cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi login cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi startingSymbol cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi seleniumError cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi null cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi generalError cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi notideal cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi success cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi safe cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi sshError cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi buildError cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi testcase cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi testcasebold cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi crown cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi visorReplacement cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi crownShane cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi crownVision cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi xpath cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi xpath2 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi xpath3 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi importantHardware cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi builddep cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi crownMessaging cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi crownVehicleCalibration cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi importantFile cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi kashyap cterm=NONE ctermfg=NONE ctermbg=NONE " also used for other things
-    hi inka cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi inka cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi redpill cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi bluepill cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hannah cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi toby cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi kefin cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ircfriends cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi lexilambda cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi mp3foley cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi arleen cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textpath cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi headerpath cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi pathshell cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi pathh5 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi subdued cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi brighter cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi verysubdued cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textdone cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi started cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi stopped cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi saved cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textcomplete cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textwaiting cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textprogress cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi importantDate cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi money cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textonloan cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textavailable cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textunverified cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textnot cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textdiscard cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi texttimeboxed cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi lowpriority cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi priority cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi task cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi failing cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi comment cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi glue cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi criticalpriority cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi security cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi superimportant cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi toppriority cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi lookto cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi highpriority cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi consider cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi warning cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi warning2 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi unknownword cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi sensing3d cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi diffRemove cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi def link shOptionGeneral Special
-    hi shOptionNum cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gcc ctermfg=NONE ctermbg=NONE
-    hi ld ctermfg=NONE ctermbg=NONE
-    hi ldbright ctermfg=NONE ctermbg=NONE
-    hi logcode ctermfg=NONE ctermbg=NONE
-    hi discrete cterm=NONE ctermfg=NONE
-    hi emoticon cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi unicode cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hlred cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hlgreen cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hlpurple cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi asteriskoperator ctermbg=NONE ctermfg=NONE
-    hi diffAdd cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi gitbranch cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi brightoperator2 cterm=NONE ctermbg=NONE ctermfg=NONE
-    hi brightoperator3 cterm=NONE ctermbg=NONE ctermfg=NONE
-    hi unaryoperator ctermbg=NONE ctermfg=NONE
-    hi compiler ctermbg=NONE ctermfg=NONE
-    hi new cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi magitstandout cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi old cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi tmuxsession cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ui cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textunderline cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textunderlineadd cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textunderlinemod cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi textunderlinerem cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi importantfolder cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi punctuation cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi texturl cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi emacstmuxkey cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi allperm cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi rw cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi rx cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ro cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi rs cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi level4 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi level3 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi level2 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi level1 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi level0 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi staging cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi irc cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi googleblue cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ytred cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi googlered cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi tensorflow cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hackernewsorange cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi googleyellow cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi googlegreen cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi unixutil cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi online cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi logic cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi codekeywords cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi algorithms cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi awesome ctermfg=NONE ctermbg=NONE
-    hi facebook ctermfg=NONE ctermbg=NONE
-    hi buildfiles ctermfg=NONE ctermbg=NONE
-    hi interesting ctermfg=NONE ctermbg=NONE
-    hi automatic ctermfg=NONE ctermbg=NONE
-    hi machinelearning ctermfg=NONE ctermbg=NONE
-    hi reality ctermfg=NONE ctermbg=NONE
-    hi math ctermfg=NONE ctermbg=NONE
-    hi whiteonblack ctermfg=NONE ctermbg=NONE
-    hi serviceAdd cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi serviceRemove cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi glue2 cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi master ctermfg=NONE ctermbg=NONE
-    hi matrix ctermfg=NONE ctermbg=NONE
-    hi verify ctermfg=NONE ctermbg=NONE
-    hi auto ctermfg=NONE ctermbg=NONE
-    hi soak ctermfg=NONE ctermbg=NONE
-    hi bin ctermfg=NONE ctermbg=NONE
-    hi gitbranch cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi tilde ctermfg=NONE ctermbg=NONE
-    hi gitbranchdetached cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi interface cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi searchtermsgreen ctermfg=NONE ctermbg=NONE
-    hi searchtermspurple ctermfg=NONE ctermbg=NONE
-    hi regex ctermfg=NONE ctermbg=NONE
-    hi red ctermfg=NONE ctermbg=NONE
-    hi blue ctermfg=NONE ctermbg=NONE
-    hi green ctermfg=NONE ctermbg=NONE
-    hi yellow ctermfg=NONE ctermbg=NONE
-    hi purple cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi orange cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi teal cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi cyan cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi haskellop ctermfg=NONE ctermbg=NONE
-    hi haskelldesc ctermfg=NONE ctermbg=NONE
-    hi tests cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi hlgdb cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi reallyBad cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi reallyBad cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi boldquote cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi closesyntax cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi api cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi devnull cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi elonmusk cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi pullrequest cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ircroom cterm=NONE ctermfg=NONE ctermbg=NONE
-    hi ircname cterm=NONE ctermfg=NONE ctermbg=NONE " this looks the same as irc names, and is the superset, so i disabled the syntax just above
-    hi liesel cterm=NONE ctermfg=NONE ctermbg=NONE
+    " if has_key(environ(), "INSIDE_EMACS")
+    "     hi Visual ctermfg=Black ctermbg=White
+    "     syntax off
+    " else
+        hi one cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi two cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi three cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi four cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi five cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi six cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi seven cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi eight cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi nine cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi zero cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi onlyhex cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi domainbright cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi domain cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi numberpunctuation cterm=NONE ctermbg=NONE
+        hi bullets ctermfg=NONE ctermbg=NONE
+        hi allcaps cterm=NONE ctermfg=NONE
+        hi currentProject cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi quote cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi doublequote cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gitRtcPackage cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi variable cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi module cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi instance cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gitRtcPackage cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gitRtcError cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gdb cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi neosession cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi myhighlightResults cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi login cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi startingSymbol cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi seleniumError cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi null cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi generalError cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi notideal cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi success cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi safe cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi sshError cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi buildError cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi testcase cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi testcasebold cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi crown cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi visorReplacement cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi crownShane cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi crownVision cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi xpath cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi xpath2 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi xpath3 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi importantHardware cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi builddep cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi crownMessaging cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi crownVehicleCalibration cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi importantFile cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi kashyap cterm=NONE ctermfg=NONE ctermbg=NONE " also used for other things
+        hi inka cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi inka cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi redpill cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi bluepill cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hannah cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi toby cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi kefin cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ircfriends cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi lexilambda cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi mp3foley cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi arleen cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textpath cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi headerpath cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi pathshell cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi pathh5 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi subdued cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi brighter cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi verysubdued cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textdone cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi started cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi stopped cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi saved cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textcomplete cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textwaiting cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textprogress cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi importantDate cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi money cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textonloan cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textavailable cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textunverified cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textnot cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textdiscard cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi texttimeboxed cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi lowpriority cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi priority cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi task cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi failing cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi comment cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi glue cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi criticalpriority cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi security cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi superimportant cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi toppriority cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi lookto cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi highpriority cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi consider cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi warning cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi warning2 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi unknownword cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi sensing3d cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi diffRemove cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi def link shOptionGeneral Special
+        hi shOptionNum cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gcc ctermfg=NONE ctermbg=NONE
+        hi ld ctermfg=NONE ctermbg=NONE
+        hi ldbright ctermfg=NONE ctermbg=NONE
+        hi logcode ctermfg=NONE ctermbg=NONE
+        hi discrete cterm=NONE ctermfg=NONE
+        hi emoticon cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi unicode cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hlred cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hlgreen cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hlpurple cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi asteriskoperator ctermbg=NONE ctermfg=NONE
+        hi diffAdd cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi gitbranch cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi brightoperator2 cterm=NONE ctermbg=NONE ctermfg=NONE
+        hi brightoperator3 cterm=NONE ctermbg=NONE ctermfg=NONE
+        hi unaryoperator ctermbg=NONE ctermfg=NONE
+        hi compiler ctermbg=NONE ctermfg=NONE
+        hi new cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi magitstandout cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi old cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi tmuxsession cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ui cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textunderline cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textunderlineadd cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textunderlinemod cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi textunderlinerem cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi importantfolder cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi punctuation cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi texturl cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi emacstmuxkey cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi allperm cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi rw cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi rx cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ro cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi rs cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi level4 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi level3 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi level2 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi level1 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi level0 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi staging cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi irc cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi googleblue cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ytred cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi googlered cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi tensorflow cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hackernewsorange cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi googleyellow cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi googlegreen cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi unixutil cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi online cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi logic cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi codekeywords cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi algorithms cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi awesome ctermfg=NONE ctermbg=NONE
+        hi facebook ctermfg=NONE ctermbg=NONE
+        hi buildfiles ctermfg=NONE ctermbg=NONE
+        hi interesting ctermfg=NONE ctermbg=NONE
+        hi automatic ctermfg=NONE ctermbg=NONE
+        hi machinelearning ctermfg=NONE ctermbg=NONE
+        hi reality ctermfg=NONE ctermbg=NONE
+        hi math ctermfg=NONE ctermbg=NONE
+        hi whiteonblack ctermfg=NONE ctermbg=NONE
+        hi serviceAdd cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi serviceRemove cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi glue2 cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi master ctermfg=NONE ctermbg=NONE
+        hi matrix ctermfg=NONE ctermbg=NONE
+        hi verify ctermfg=NONE ctermbg=NONE
+        hi auto ctermfg=NONE ctermbg=NONE
+        hi soak ctermfg=NONE ctermbg=NONE
+        hi bin ctermfg=NONE ctermbg=NONE
+        hi gitbranch cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi tilde ctermfg=NONE ctermbg=NONE
+        hi gitbranchdetached cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi interface cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi searchtermsgreen ctermfg=NONE ctermbg=NONE
+        hi searchtermspurple ctermfg=NONE ctermbg=NONE
+        hi regex ctermfg=NONE ctermbg=NONE
+        hi red ctermfg=NONE ctermbg=NONE
+        hi blue ctermfg=NONE ctermbg=NONE
+        hi green ctermfg=NONE ctermbg=NONE
+        hi yellow ctermfg=NONE ctermbg=NONE
+        hi purple cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi orange cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi teal cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi cyan cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi haskellop ctermfg=NONE ctermbg=NONE
+        hi haskelldesc ctermfg=NONE ctermbg=NONE
+        hi tests cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi hlgdb cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi reallyBad cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi reallyBad cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi boldquote cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi closesyntax cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi api cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi devnull cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi elonmusk cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi pullrequest cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ircroom cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi ircname cterm=NONE ctermfg=NONE ctermbg=NONE " this looks the same as irc names, and is the superset, so i disabled the syntax just above
+        hi liesel cterm=NONE ctermfg=NONE ctermbg=NONE
 
-    " the bg is specified as white because the pen-bw xterm is inverted
-    hi EasyMotionTarget term=NONE ctermfg=Black ctermbg=White guibg=White
-    hi EasyMotionTarget2First term=NONE ctermfg=Black ctermbg=White guibg=White
-    hi EasyMotionTarget2Second term=NONE ctermfg=Black ctermbg=White guibg=White
-    hi EasyMotionShade term=NONE ctermfg=White ctermbg=Black guibg=White
-    hi EasyMotionShadeDefault term=NONE ctermfg=White ctermbg=Black guibg=White
+        " Use term=reverse for "v -2" which uses screet-2color
 
-    hi Normal       ctermfg=White ctermbg=Black
+        " the bg is specified as white because the pen-bw xterm is inverted
+        hi EasyMotionTarget term=reverse ctermfg=Black ctermbg=White guibg=White
+        hi EasyMotionTarget2First term=reverse ctermfg=Black ctermbg=White guibg=White
+        hi EasyMotionTarget2Second term=reverse ctermfg=Black ctermbg=White guibg=White
+        hi EasyMotionShade term=NONE ctermfg=White ctermbg=Black guibg=White
+        hi EasyMotionShadeDefault term=NONE ctermfg=White ctermbg=Black guibg=White
 
-    hi Visual  term=NONE ctermfg=Black ctermbg=WHITE guibg=White
+        hi Normal       ctermfg=White ctermbg=Black
 
-    hi StatusLineTerm term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi StatusLineTermNC term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi StatusLine     term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi StatusLineNC   term=bold ctermfg=Black ctermbg=WHITE guibg=White
+        hi Visual  term=reverse ctermfg=Black ctermbg=WHITE guibg=White
 
-    hi LineNr     term=bold ctermfg=Black ctermbg=WHITE guibg=White
+        hi StatusLineTerm term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi StatusLineTermNC term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi StatusLine     term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi StatusLineNC   term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
 
-    hi GitGutterAddDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterDeleteDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeDeleteDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterAddInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterDeleteInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeDeleteInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterAdd   term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChange term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterDelete term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeDelete term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterAddLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterDeleteLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi GitGutterChangeDeleteLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
-    hi badWhiteSpace  term=bold ctermfg=Black ctermbg=WHITE guibg=White
+        hi LineNr     term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+
+        hi GitGutterAddDefault term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeDefault term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterDeleteDefault term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeDeleteDefault term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterAddInvisible term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeInvisible term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterDeleteInvisible term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeDeleteInvisible term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterAdd   term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChange term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterDelete term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeDelete term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterAddLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterDeleteLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi GitGutterChangeDeleteLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        hi badWhiteSpace  term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+    " endif
 endf
 command! BWSyntax silent! call BWSyntax()

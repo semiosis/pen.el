@@ -299,6 +299,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if pen-rc-test -f black_and_white; then
+    # Do this especially if INSIDE_EMACS
+    export TERM=screen-2color
     extra_commands+="|call BWSyntax()"
 fi
 
