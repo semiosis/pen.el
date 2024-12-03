@@ -3897,3 +3897,15 @@ snippet dbg
 
 snippet dg
 	trap '(read -p "[\$BASH_SOURCE:\$LINENO] \$BASH_COMMAND")' DEBUG
+snippet gatherargs
+	a=()
+	for arg in "\$@"; do case "\$arg" in
+		-*) {
+			a+="\$arg"
+			shift
+		}
+		;;
+		*) break ;;
+	esac; done
+
+	/usr/bin/unbuffer "\${a[@]}" env IN_UNBUFFER=y "\$@"

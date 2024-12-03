@@ -1,8 +1,8 @@
 #!/usr/bin/env runracketscript
 #lang racket/base
 
-;; [[zrepl:excitedness.rkt --excited]]
-;; [[zrepl:excitedness.rkt --bye]]
+;; [[zrepl-cm:excitedness.rkt --excited]]
+;; [[zrepl-cm:excitedness.rkt --bye]]
 
 (require racket/cmdline)
 

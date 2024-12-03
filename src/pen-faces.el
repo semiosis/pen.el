@@ -2100,6 +2100,7 @@ Also see option `magit-blame-styles'."
             ;; :italic t
             :inverse-video nil
             :weight 'bold
+            :underline nil
             ;; :background 'unspecified
             ;; :foreground 'unspecified
             ))

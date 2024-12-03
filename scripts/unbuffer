@@ -1,4 +1,14 @@
 #!/bin/bash
 export TTY
 
-/usr/bin/unbuffer env IN_UNBUFFER=y "$@"
+a=()
+for arg in "$@"; do case "$arg" in
+    -*) {
+        a+="$arg"
+        shift
+    }
+    ;;
+    *) break ;;
+esac; done
+
+/usr/bin/unbuffer "${a[@]}" env IN_UNBUFFER=y "$@"

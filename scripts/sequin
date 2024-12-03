@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# Example:
+# printf "\x1b[38;5;4mCiao, \x1b[1;7mBaby.\x1b[0m\n" | sequin
+# echo 14 | unbuffer -p hls red blue | sequin
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/up" || go install github.com/charmbracelet/sequin@latest &>/dev/null
+
+${GOPATH%%:*}/bin/sequin "$@"
