@@ -1033,7 +1033,11 @@ Also see option `magit-blame-styles'."
     (set-face-background 'selectrum-completion-docsig "#d72f4f")
     (set-face-background 'selectrum-current-candidate "#d72f4f")
     (set-face-background 'selectrum-group-separator "#d72f4f")
-    (set-face-background 'selectrum-group-title "#d72f4f")))
+    (set-face-background 'selectrum-group-title "#d72f4f"))
+
+  ;; Go to black and white mode and then reload the colour - this keeps the fonts consistent across B&W and colour modes
+  (pen-disable-all-faces)
+  (pen-load-faces))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun pen-set-faces-around-advice (proc &rest args)
@@ -1879,8 +1883,8 @@ Also see option `magit-blame-styles'."
 (defun pen-enable-all-faces ()
   (interactive)
   (pen-rc-set "black_and_white" "off")
-  (pen-snc "tmux-colour")
-  (pen-load-faces))
+  (pen-load-faces)
+  (pen-snc "tmux-colour"))
 
 (comment
  (add-hook 'minibuffer-setup-hook
@@ -1991,19 +1995,28 @@ Also see option `magit-blame-styles'."
 (defun pen-get-faces ()
   (interactive)
 
-  (pps
-   (-filter
-    (lambda (tp_outer)
-      (> (length tp_outer) 1))
-    (mapcar (lambda (f) (cons f
-                              (-flatten (mapcar
-                                         (lambda (attr) (list (car attr)
-                                                              (cdr attr))) 
-                                         (-filter
-                                          (lambda (tp) (not (eq (cdr tp)
-                                                                'unspecified)))
-                                          (face-all-attributes f))))))
-            (pen-list-faces))))
+  (let ((fr (selected-frame)))
+    (pps
+     (-filter
+      (lambda (tp_outer)
+        (> (length tp_outer) 1))
+      (mapcar (lambda (f) (cons f
+                                (mapcar
+                                 (lambda (e)
+                                   (if (eq e nil)
+                                       'unspecified
+                                     e))
+                                 (custom-face-attributes-get f fr))
+                                ;; (-flatten (mapcar
+                                ;;            (lambda (attr) (list (car attr)
+                                ;;                                 (cdr attr))) 
+                                ;;            (-filter
+                                ;;             (lambda (tp) (not (eq (cdr tp)
+                                ;;                                   'unspecified)))
+
+                                ;;             (custom-face-attributes-get f fr))))
+                                ))
+              (pen-list-faces)))))
   
   ;; (with-temp-buffer
   ;;   ;; I need to save all the faces, but custom-save-faces only does some of them
@@ -2021,6 +2034,25 @@ Also see option `magit-blame-styles'."
 
 (defun pen-load-faces ()
   (interactive)
+
+  ;; TODO
+  ;; (setq default-frame-alist
+  ;;       '(;; (set-background-color "#1e1e1e")
+  ;;         ;; (set-foreground-color "white")
+  ;;         ;; (background-color . "#000000")
+  ;;         ;; (foreground-color . "#f664b5")
+  ;;         (vertical-scroll-bars)
+  ;;         (left-fringe . -1)
+  ;;         (right-fringe . -1)))
+
+  (advice-remove 'internal-set-lisp-face-attribute #'internal-set-lisp-face-attribute-around-advice)
+  (advice-remove 'pen-set-faces #'around-advice-disable-function)
+  (advice-remove 'pen-set-text-contrast-from-config #'around-advice-disable-function)
+  (advice-remove 'minibuffer-bg #'around-advice-disable-function)
+
+  ;; server-after-make-frame-hook
+  (remove-hook 'server-after-make-frame-hook 'pen-disable-all-faces)
+
   (if (f-file-p "/root/faces.el")
       (progn
         (message "Loading faces from /root/faces.el")
@@ -2031,18 +2063,10 @@ Also see option `magit-blame-styles'."
 
           (cl-loop for face_tp in tr do
                    (let* ((sym (car face_tp))
-                          (attrs (cdr face_tp))
-                          (args (append (list sym fr) attrs)))
+                          (attrs (cdr face_tp)))
 
-                     (if attrs
-                         (message "%s" (pps args)))
-                     ;; (apply 'set-face-attribute `(,sym ,fr ',@attrs))
-                     ;; (apply 'set-face-attribute args)
-                     ;; (message "%s" (pps (list 'set-face-attribute args)))
-                     ;; (message "%s" (pps `(set-face-attribute fr ',@attrs)))
-                     ;; (message "%s" (pps `(apply 'set-face-attribute args)))
-                     ;;
-                     )))
+                     (ignore-errors
+                       (apply 'set-face-attribute `(,sym nil ,@attrs))))))
         (message "Loaded faces from /root/faces.el"))))
 
 (provide 'pen-faces)
