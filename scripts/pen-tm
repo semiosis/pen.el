@@ -3844,7 +3844,8 @@ case "$f" in
     disable-border-status) {
         tmux set -g pane-border-status off
         tmux set -g pane-active-border-style 'bg=colour234,fg=colour234'
-        tmux set -g pane-border-lines simple
+        # tmux set -g pane-border-lines simple
+        tmux set -g pane-border-lines single
     }
     ;;
 

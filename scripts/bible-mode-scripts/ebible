@@ -45,6 +45,8 @@ fi
 #     exit "$?"
 # fi
 
+: ${CMD_WITHOPTS:="$@"}
+
 ebible_pager() {
     if test "$NO_PAGER" = "y"; then
         cat
@@ -67,8 +69,12 @@ ebible_pager() {
             vim_cmd="vs -nls -num"
         fi
 
+        : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | c ascify | slugify)"}"
+
         if test -n "$slug"; then
-            pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
+            # pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
+            # I want the verse ref to appear at the start of the filename, not after the hash, so use the first parameter of tf (name), rather that -X
+            pa -E "tf -sha \"${slug:0:220}_temp\" txt | xa $vim_cmd"
         else
             pa -E "tf txt | xa $vim_cmd"
         fi
@@ -355,7 +361,7 @@ else
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
     output="$(ocif -nd bash -c "$assignments $pipeline")"
-    slug="$(printf -- "%s\n" "$output" | head -n 1 | slugify)"
+    slug="$(printf -- "%s" "$CMD " | c ascify | slugify; printf -- "%s\n" "$output" | head -n 1 | slugify)"
     printf -- "%s\n" "$output" | ebible_pager -s "$slug"
     # printf -- "%s\n" "$output" | pavs
 fi
