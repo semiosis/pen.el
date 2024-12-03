@@ -3135,6 +3135,30 @@ case "$f" in
     }
     ;;
 
+    clone-pane) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -nc|-nocontect) {
+                NOCONTEXT=y
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$NOCONTEXT" = "y"; then
+            tmux neww "eval $(
+            pen-shpv "pane_start_command" | {
+                sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
+            } | chomp
+            )"
+        else
+            tmux neww "eval $(pen-shpv "pane_start_command")"
+        fi
+    }
+    ;;
+
     tput-search) { # This was the urwid program that allowed me to select different search engines
         keys="$(cat)"
 

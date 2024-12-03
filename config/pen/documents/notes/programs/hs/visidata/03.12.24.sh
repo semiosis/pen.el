@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "visidata" "/root/.pen/documents/notes/Music Data Base.xls" "#" "<==" "pen-pvd"
+cd /root/.emacs.d/host/pen.el;  "visidata" "#" "<==" "pen-pvd"
+cd /root/.emacs.d/host/pen.el;  "visidata" "#" "<==" "pen-pvd"
+cd /root/.emacs.d/host/pen.el;  "visidata" "#" "<==" "pen-pvd"
+cd /root/.pen/documents/notes;  "visidata" "#" "<==" "pen-pvd"

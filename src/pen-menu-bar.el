@@ -368,7 +368,7 @@
                   :help "Edit the pen.yaml file"))
     (bindings--define-key menu [mi-pen-disable-all-faces]
       '(menu-item "Disable all faces (B&W-mode)" pen-disable-all-faces
-                  :help "Enable black and white mode"))
+                  :help "Enable black and white mode - Useful in B&W xterm"))
     (bindings--define-key menu [mi-menu-bar-source-menu]
       `(menu-item "Pen.el source code" ,menu-bar-source-menu
                   :help "Manage source code"))
@@ -452,6 +452,9 @@
     (bindings--define-key menu [mi-pen-start-in-xterm]
       '(menu-item "Start Pen.el in an xterm" pen-start-in-xterm
                   :help "Start Pen.el in an xterm"))
+    (bindings--define-key menu [mi-pen-start-in-bw-xterm]
+      '(menu-item "Start Pen.el in a B&W xterm" pen-start-in-bw-xterm
+                  :help "Start Pen.el in a B&W xterm - useful with B&W-mode"))
     (bindings--define-key menu [mi-pen-banner]
       '(menu-item "Pen.el Banner" pen-banner
                   :help "Display the startup banner"))

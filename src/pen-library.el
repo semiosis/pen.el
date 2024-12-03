@@ -619,6 +619,11 @@ single-character strings, or a string of characters."
       (pen-sn "xt tm init pin" nil nil nil t)
     (error "Display not available")))
 
+(defun pen-start-in-bw-xterm ()
+  "Useful in conjunction with B&W-mode"
+  (interactive)
+  (pen-sn "tmux run -b pen-bw" nil nil nil t))
+
 (defmacro never (&rest body)
   "Do not run this code"
   `(if nil

@@ -298,6 +298,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+if pen-rc-test -f black_and_white; then
+    extra_commands+="|call BWSyntax()"
+fi
+
 apply() {
     f="$1"
     shift

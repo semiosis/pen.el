@@ -4281,9 +4281,7 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699670968:0;v pen-nvc
 : 1699670970:0;pen-nvc /bin/nano
 : 1699671000:0;v nvimrc
-: 1699671007:0;nvim
 : 1699671037:0;nvim -u $HOME/.nvimrc
-: 1699671163:0;v nvim
 : 1699671185:0;q jdlaskfj
 : 1699671187:0;apply q jdlaskfj
 : 1699671191:0;apply q jdlaskfj sdkljfm
@@ -4300,7 +4298,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699673220:0;j defface
 : 1699674616:0;pen-e -D test2 sd -d
 : 1699674624:0;v pen-games.el
-: 1699674764:0;nvc nano
 : 1699674771:0;nano Dockerfile
 : 1699674781:0;v pen-l
 : 1699674809:0;v ~/.nanorc
@@ -5175,7 +5172,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700456338:0;HOST_SSH_MASTER=true i gw
 : 1700456349:0;HOST_SSH_MASTER=true pen-rc-get host-ssh-master
 : 1700456353:0;HOST_SSH_MASTER=true pen-rc-test host-ssh-master
-: 1700456358:0;v pen-rc-test
 : 1700456568:0;v zsh-top
 : 1700504861:0;git log --help
 : 1700504872:0;git log -n 5000 | v
@@ -5226,7 +5222,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700602848:0;timeout 5 echo hi
 : 1700602853:0;timeout 5 /bin/echo hi
 : 1700602931:0;git commit -m "20.11.23"
-: 1700607980:0;v pen-rc-get
 : 1700608026:0;ead pen-n-workers
 : 1700608031:0;ead n-workers
 : 1700608045:0;v /tmp/pen.yaml
@@ -5780,7 +5775,6 @@ find Mp3 -name '*.mp3'\
 : 1700897018:0;man software
 : 1700897249:0;bvi +/Perm /volumes/home/shane/var/smulliga/source/git/tmux/tmux/grid.c
 : 1700897296:0;v ~/.bvirc
-: 1700897527:0;v nvc
 : 1700897588:0;which -a nnv
 : 1700897589:0;ln -sf nonvc nnv
 : 1700897633:0;bvi +/hereby /volumes/home/shane/var/smulliga/source/git/tmux/tmux/grid.c
@@ -7295,7 +7289,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703036080:0;ls -ldt ~/.Xresources
 : 1703036087:0;tp find-here-path "*Xres*"
 : 1703036089:0;v Xresources
-: 1703037157:0;pen-bw
 : 1703037603:0;cd /root/.pen/document-highlights/genesis-1-fm-
 : 1703037634:0;rm *
 : 1703037689:0;cd /root/.pen/document-highlights/
@@ -7556,7 +7549,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703291137:0;ln -sf wo nobw
 : 1703291139:0;ln -sf wo nobaw
 : 1703291219:0;v xtpin
-: 1703291238:0;ead black_and_white
 : 1703291625:0;ead agenda
 : 1703291782:0;Heb 11:3 | v
 : 1703291871:0;elinks-dump "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages/ask-your-father-in-heaven/excerpts/why-wont-god-give-me-what-i-want.html"
@@ -7610,7 +7602,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703310487:0;in-pen xt -2 nvt -2 in-tm -2 pin
 : 1703310513:0;in-pen xt -2 nvc -2 in-tm -2 pin
 : 1703310533:0;v pen-bw
-: 1703311139:0;tp find-here-path "*syntax*"
 : 1703311144:0;tp find-here-path "*synta*"
 : 1703312198:0;v pen-addressbook.el
 : 1703314537:0;I Samuel 12:16 | v
@@ -8206,7 +8197,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704402124:0;Exod 20:6 | v
 : 1704410546:0;Hebrews 9:14-27
 : 1704414025:0;org2html
-: 1704414051:0;emacs -nw -Q
 : 1704415172:0;emacs -nw -Q 04.01.24.org
 : 1704415489:0;ead -z -i "Unable to resolve"
 : 1704415609:0;org2html 04.01.24.org
@@ -8676,7 +8666,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705706797:0;tmux list-windows | rev | s field 1
 : 1705706806:0;tmux list-windows | rev | s field 1 | grep @
 : 1705706810:0;tmux list-windows | rev | s field 1 | grep @ | rev
-: 1705706844:0;tmux-bw
 : 1705706916:0;git commit -m "20.01.24"
 : 1705706943:0;v tmux-bw
 : 1705708540:0;Psalm 130 | v
@@ -10097,7 +10086,6 @@ git clone "https://github.com/sidju/hired"\
 : 1709257648:0;mv heresies.org heretics.org
 : 1709257987:0;mcd heretics
 : 1709259484:0;mcd early-christianity
-: 1709259640:0;v ~/.pen/pen.yaml
 : 1709259658:0;tp find-here-path "*.txt*"
 : 1709259660:0;ls *.txt
 : 1709259675:0;tp find-here-path "*volum*"
@@ -11120,7 +11108,6 @@ e ia inheritenv
 : 1711325226:0;echo hi | pin
 : 1711325236:0;echo yo | pin
 : 1711325368:0;v pen-e
-: 1711325444:0;v pen-emacsclient
 : 1711325463:0;'env' 'COLORTERM=truecolor' 'TERM=xterm-24bit' 'EMACS_TERM_TYPE=xterm-24bit' '/usr/local/bin/emacsclient' '-a' '' '-t' '-s' 'DEFAULT' '-e' '(kill-frame)'
 : 1711325555:0;'env' TMPDIR=/tmp 'COLORTERM=truecolor' 'TERM=xterm-24bit' 'EMACS_TERM_TYPE=xterm-24bit' '/usr/local/bin/emacsclient' '-a' '' '-t' '-s' 'DEFAULT' '-e' '(kill-frame)'
 : 1711325624:0;v /tmp/pen-emacsclient.txt
@@ -17973,7 +17960,6 @@ make install\
 : 1726878413:0;agi valgrind
 : 1726878547:0;valgrind ./ucm
 : 1726878559:0;nvt valgrind ./ucm
-: 1726878564:0;v nvt
 : 1726878572:0;nvt -pak valgrind ./ucm
 : 1726878592:0;which -a valgrind
 : 1726878596:0;mkw -pak valgrind
@@ -18056,7 +18042,6 @@ EOF
 : 1726887870:0;apt-get clean
 : 1726887873:0;apt-get -y update
 : 1726888434:0;cd ~/.vim/bundle
-: 1726888442:0;cd config
 : 1726888451:0;cd vim-bundles
 : 1726888456:0;xc -P vim vim-signature
 : 1726888461:0;xc -P vim-signature
@@ -18091,7 +18076,6 @@ apt -y --fix-broken install
 : 1726891716:0;acs libperl
 : 1726891759:0;command -v v
 : 1726891767:0;/usr/bin/vim /root/.emacs.d/host/pen.el/scripts/container/v
-: 1726891999:0;v tm
 : 1726892099:0;which -a tmux
 : 1726892108:0;tm nw
 : 1726892114:0;emacs -nw
@@ -18235,7 +18219,6 @@ apt -y --fix-broken install
 : 1726899572:0;tp find-here-path "*dump*"
 : 1726899596:0;tp find-here-path "*tar*"
 : 1726899602:0;tp find-here-path "*expor*"
-: 1730109178:0;cd src
 : 1730109180:0;v pen-cloel.el
 : 1730109242:0;o "https://github.com/manateelazycat/cloel"
 : 1730109283:0;echo "$?
@@ -18243,7 +18226,6 @@ apt -y --fix-broken install
 : 1730109287:0;echo "$?"
 : 1730109362:0;v /root/repos/manateelazycat/cloel/demo/app.el
 : 1730110433:0;pinin
-: 1730135344:0;v run.sh
 : 1730135361:0;v pen-ensure-deps
 : 1730135380:0;cd ~/repos
 : 1730135395:0;cd "$(gc "https://github.com/manateelazycat/cloel")"
@@ -18290,7 +18272,6 @@ apt -y --fix-broken install
 : 1730410036:0;ls -ldt ~/.bashrc
 : 1730410059:0;rm ~/.bashrc
 : 1730410064:0;cp -a /root/.emacs.d/host/pen.el/config/bash/bashrc ~/.bashrc
-: 1730410066:0;bash
 : 1730410762:0;ls -ldt ~/.emacs.d/pen.el
 : 1730411150:0;v /root/repos/pen-emacsd/straight.el/straight.el
 : 1730411367:0;v setup-term.sh
@@ -18307,7 +18288,6 @@ apt -y --fix-broken install
 : 1730412431:0;ln -sf ~/.emacs.d/pen.el/config/nvimrc ~/.nvimrc
 : 1730412436:0;ls -ldt ~/.vim
 : 1730412626:0;vim
-: 1730412636:0;ls -ldt ~/.vimrc
 : 1730412864:0;pen
 : 1730413252:0;v aix_api_key
 : 1730413280:0;v melee-guy-stars.jpg
@@ -18423,7 +18403,6 @@ apt -y --fix-broken install
 : 1732616822:0;nvc -2 sp
 : 1732627054:0;popd
 : 1732627167:0;v sp
-: 1732627263:0;v ~/.vimrc
 : 1732664259:0;raco pkg show
 : 1732664423:0;tm-sps
 : 1732664426:0;tm sps
@@ -18542,10 +18521,8 @@ apt -y --fix-broken install
 : 1732677561:0;nvt -2 -E "zrepl -cm pvd -2"
 : 1732677562:0;"pvd" "-2"
 : 1732677580:0;v zrepl
-: 1732677598:0;nvt -2 zrepl -cme pvd -2
 : 1732677653:0;v nvpvd
 : 1732677669:0;nvpvd
-: 1732677670:0;"pvd" "-2" ; exit "$?"
 : 1732677690:0;.csv
 : 1732677693:0;tp find-here-path "*.csv*"
 : 1732677700:0;nvpvd config/pen/tablist-test.csv
@@ -18556,7 +18533,6 @@ apt -y --fix-broken install
 : 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
 : 1732677955:0;cd ~/.sword
 : 1732678836:0;pin
-: 1732678946:0;nano
 : 1732679634:0;git status
 : 1732679646:0;cd ..
 : 1732679653:0;rm scripts/colorls.html
@@ -18610,7 +18586,6 @@ apt -y --fix-broken install
 : 1732697192:0;extract-digits-from-year.rkt
 : 1732697562:0;extract-digits-from-year.rkt "2099"
 : 1732697574:0;extract-digits-from-year.rkt "1999"
-: 1732697933:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
 : 1732700102:0;json_demo.clj
 : 1732700241:0;monads.clj
 : 1732700473:0;excitedness.rkt -e
@@ -18630,8 +18605,6 @@ apt -y --fix-broken install
 : 1732770844:0;ncdu
 : 1732772325:0;pvd ~/.pen/documents/notes/Music\ Data\ Base.xls
 : 1732772496:0;pvd -2 ~/.pen/documents/notes/Music\ Data\ Base.xls
-: 1732772516:0;nvpvd ~/.pen/documents/notes/Music\ Data\ Base.xls
-: 1732772517:0;"pvd" "-2" "/root/.pen/documents/notes/Music Data Base.xls" ; exit "$?"
 : 1732843866:0;mcd visidata-scripts
 : 1732843908:0;v visidata-pipeline-test.sh
 : 1732844102:0;v pwd._ext_freq.tsv
@@ -18656,7 +18629,6 @@ apt -y --fix-broken install
 : 1732844553:0;rm /dev/stout
 : 1732844557:0;echo hi > /dev/stdout
 : 1732844723:0;which -a in-tty
-: 1732844747:0;v in-tty
 : 1732844775:0;unbuffer echo hi | v
 : 1732844788:0;man unbuffer
 : 1732844833:0;hsqf pvd-play-out
@@ -18685,7 +18657,6 @@ apt -y --fix-broken install
 : 1732847020:0;cp -a event-language-demo.rkt match-language-demo.rkt
 : 1732847079:0;match-language-demo.rkt
 : 1732847147:0;cp -a match-language-demo.rkt typed-racket-demo.rkt
-: 1732847157:0;v
 : 1732847311:0;typed-racket-demo.rkt
 : 1732847408:0;killall pen-e
 : 1732847413:0;typed-racket-demo.rkt 5.3
@@ -18701,7 +18672,6 @@ apt -y --fix-broken install
 : 1732853885:0;tpop test yn "About to close last pane. Attach other session?"
 : 1732853951:0;tpop yn "About to close last pane. Attach other session?"
 : 1732853982:0;unbuffer tpop yn "About to close last pane. Attach other session?"
-: 1732853984:0;echo $?
 : 1732854124:0;tmux run -b echo hi
 : 1732854415:0;tmux wait-for yo
 : 1732854442:0;tmux wait-for yo && kill-pane
@@ -18711,7 +18681,6 @@ apt -y --fix-broken install
 : 1732854491:0;tmux choose-tree && echo hi | tv
 : 1732854557:0;v list-sessions
 : 1732854561:0;tmux list-sessions
-: 1732854564:0;sh-general
 : 1732854567:0;ead list-sessions
 : 1732854646:0;tm list-sessions
 : 1732854694:0;man uniq
@@ -18732,17 +18701,81 @@ apt -y --fix-broken install
 : 1732855868:0;v pen-tm
 : 1732855878:0;v tpop
 : 1732855890:0;v toggle-tmux-popup
-: 1732855909:0;man tmux
 : 1732856109:0;tmux display -p "#{session_name}"
 : 1732856149:0;tpop
-: 1732856277:0;excitedness.rkt --excited
-: 1732856313:0;penq
-: 1732925723:0;ls
-: 1732925724:0;pwd
 : 1732925726:0;v clipboard.txt
 : 1732927638:0;let-syntax-demo.rkt
-: 1732928079:0;v v
 : 1732929289:0;pen-e -D pen-emacsd-1
 : 1732929984:0;Daniel 4:17
 : 1732930603:0;Daniel 5:8-9
-: 1732945540:0;pe
+: 1733190216:0;nvpvd ~/.pen/documents/notes/Music\ Data\ Base.xls
+: 1733190219:0;"pvd" "-2" "/root/.pen/documents/notes/Music Data Base.xls" ; exit "$?"
+: 1733190262:0;nv
+: 1733190303:0;ls -ldt ~/.nvimrc
+: 1733190308:0;ls -ldt ~/.vimrc
+: 1733190333:0;ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.nvimrc
+: 1733190345:0;nv nano
+: 1733190448:0;nvim /
+: 1733190549:0;ead '-u $HOME/.nvimrc'
+: 1733190602:0;bash
+: 1733190699:0;excitedness.rkt --excited
+: 1733191005:0;nano
+: 1733191134:0;pen-bw & disown
+: 1733191318:0;pen-bw
+: 1733191352:0;v in-tty
+: 1733192414:0;emacs -nw -Q
+: 1733192451:0;man tmux
+: 1733192608:0;v tm
+: 1733192734:0;tm clone-pane
+: 1733193114:0;vimhelp syntax
+: 1733193453:0;cd config
+: 1733193454:0;ls
+: 1733193455:0;tp find-here-path "*syntax*"
+: 1733193481:0;v ./syntax.vim
+: 1733193525:0;v run.sh
+: 1733193556:0;if test -f $HOME/.emacs.d/host/pen.el/config/syntax.vim; then\
+ ln -sf $HOME/.emacs.d/host/pen.el/config/syntax.vim ~/syntax.vim\
+fi
+: 1733194069:0;pwd
+: 1733194069:0;sh-general
+: 1733194071:0;cd src
+: 1733194072:0;ead black_and_white
+: 1733194247:0;tmux-colour
+: 1733194249:0;tmux-bw
+: 1733194512:0;pen-rc-get black_and_white
+: 1733194522:0;pen-rc-test black_and_whithh
+: 1733194549:0;v ~/.pen/pen.yaml
+: 1733194718:0;pen-rc-test black_and_white
+: 1733194719:0;echo $?
+: 1733194736:0;v
+: 1733194767:0;v ~/.vimrc
+: 1733194903:0;v pen-rc-get
+: 1733195471:0;v pen-emacsclient
+: 1733195515:0;pen-rc-get truecolor
+: 1733195556:0;shx pen-rc-test -f truecolor
+: 1733195568:0;shx pen-rc-test truecolor
+: 1733195580:0;v pen-rc-test
+: 1733195615:0;pen-rc-test -s truecolor
+: 1733195617:0;pen-rc-test -f truecolor
+: 1733195991:0;nvc nano
+: 1733196008:0;nvim
+: 1733196014:0;nvim /etc/hosts
+: 1733196024:0;nvim /root/programs/tmux/capture/tf_tmcapturerJR70HN.txt
+: 1733196042:0;v nvt
+: 1733196104:0;v nv
+: 1733196106:0;v nvc
+: 1733196108:0;v nvim
+: 1733196130:0;which -a nvim
+: 1733196140:0;vim ~/.nvimrc
+: 1733196226:0;pen-rc-set black_and_white off
+: 1733196237:0;pen-rc-set black_and_white on
+: 1733196251:0;nvt -2 zrepl -cme pvd -2
+: 1733196252:0;"pvd" "-2" ; exit "$?"
+: 1733196281:0;nvim /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
+: 1733196286:0;v /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
+: 1733196489:0;pe
+: 1733196527:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
+: 1733196685:0;v ~/syntax.vim
+: 1733196728:0;v v
+: 1733197137:0;v ~/.nvimrc
+: 1733197255:0;penq

@@ -142,6 +142,11 @@ fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/nvimrc; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.vimrc
+    ln -sf $HOME/.emacs.d/host/pen.el/config/nvimrc ~/.nvimrc
+fi
+
+if test -f $HOME/.emacs.d/host/pen.el/config/syntax.vim; then
+    ln -sf $HOME/.emacs.d/host/pen.el/config/syntax.vim ~/syntax.vim
 fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/profile; then

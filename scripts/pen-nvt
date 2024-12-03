@@ -205,7 +205,7 @@ fi
 if [ -n "$parent_session_name" ]; then
     # Even with single quotes here, the $ sign was breaking it
     # somewhere. So use uuid
-    cmd="export INSIDE_NEOVIM=y; nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$external_precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+    cmd="export INSIDE_NEOVIM=y; nvim -c $(aqf "call TermAndQuit($(aqf "$external_precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
     # echo "$cmd" | tv
     tmux neww -t "${parent_session_name}:" -n "nv" "$cmd"
 fi

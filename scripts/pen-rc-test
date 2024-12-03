@@ -18,7 +18,7 @@ p () {
     } | sed 's/\\n/\n/g'
 }
 
-FAST=y s
+FAST=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -f) {

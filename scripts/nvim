@@ -12,8 +12,13 @@ export TTY
 
 # nvim changed my cursor from block into line
 
+extra_commands="silent! echom"
+if pen-rc-test -f black_and_white; then
+    extra_commands+="|call BWSyntax()"
+fi
+
 test -f "/usr/local/bin/nvim" && : "${bin:="/usr/local/bin/nvim"}"
 test -f "/usr/bin/nvim" && : "${bin:="/usr/bin/nvim"}"
-"$bin" "$@"
+"$bin" -u $HOME/.nvimrc -c "$extra_commands" "$@"
 
 # alt nvim "$@"

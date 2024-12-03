@@ -1232,6 +1232,7 @@ Also see option `magit-blame-styles'."
   (interactive)
 
   (setq pen-black-and-white t)
+  (pen-rc-set "black_and_white" "on")
 
   (global-hl-line-mode -1)
   (add-hook 'dired-mode-hook 'enable-hl-line-mode)
@@ -1829,6 +1830,25 @@ Also see option `magit-blame-styles'."
                   ;; tty-menu-enabled-face
                   ))))))
 
+(defun honour-bw-mode ()
+  (interactive)
+
+  (if (pen-rc-test "black_and_white")
+      (progn
+        (comment
+         ;; tmux-colour looks fine in b&w-mode
+         (pen-snc "tmux-bw"))
+        (pen-disable-all-faces))
+    (progn
+      (pen-snc "tmux-colour")
+      (pen-enable-all-faces)))
+
+  (comment
+   (pen-rc-set "black_and_white" "off")))
+
+; TODO Put this at the end of init
+; (honour-bw-mode)
+
 ;; 3 colours mode is not really possible
 ;; when the terminal is set to black and white.
 ;; Also, I couldn't really find another style,
@@ -1858,6 +1878,7 @@ Also see option `magit-blame-styles'."
 
 (defun pen-enable-all-faces ()
   (interactive)
+  (pen-rc-set "black_and_white" "off")
   (pen-snc "tmux-colour"))
 
 (comment

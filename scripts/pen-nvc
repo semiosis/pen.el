@@ -5,7 +5,7 @@ export TTY
 # set -xv
 
 # Test the speed of nvim:
-# nvim -u $HOME/.nvimrc -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
+# nvim -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 
 # export "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION"
 
@@ -116,10 +116,10 @@ export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks be
 # I have a wrapper script now, so this will always happen
 if which -a nvim &>/dev/null; then
 
-    # cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+    # cmd="nvim -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
 
     # For speed, eliminate aqfs
-    cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c \"call GeneralSyntax()\" -c \"call NumberSyntax()\" -c \"normal! i\""
+    cmd="nvim -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c \"call GeneralSyntax()\" -c \"call NumberSyntax()\" -c \"normal! i\""
     eval "$cmd"
 else
     eval "$CMD"

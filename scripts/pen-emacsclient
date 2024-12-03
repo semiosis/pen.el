@@ -14,7 +14,7 @@ cmd-onelineify-safe "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null | aw
 
 term_env_arr=()
 
-if pen-rc-test truecolor; then
+if pen-rc-test -f truecolor; then
     term_env_arr=(env COLORTERM=truecolor TERM="xterm-24bit" EMACS_TERM_TYPE="xterm-24bit")
 fi
 

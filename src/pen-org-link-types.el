@@ -201,6 +201,11 @@ PATH is the sexp to evaluate, as a string."
   "Run pen-zrepl `CMD'."
   (pen-sps (cmd "zrepl" "-E" cmd)))
 
+(org-add-link-type "zrepl-cm" 'follow-zrepl-cm-link)
+(defun follow-zrepl-cm-link (cmd)
+  "Run pen-zrepl -cm `CMD'."
+  (pen-sps (cmd "zrepl" "-cm" "-E" cmd)))
+
 (org-add-link-type "nw" 'follow-nw-link)
 (defun follow-nw-link (cmd)
   "Run nw `CMD'."

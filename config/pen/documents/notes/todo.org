@@ -1,3 +1,10 @@
+* TODO push a new docker image with syntax.vim
+e:/root/.emacs.d/host/pen.el/config/syntax.vim
+e:/root/syntax.vim
+
+* TODO Make a B&W mode for vim syntax
+Make it so a system/global variable is set for B&W-mode and that vim recognises this and runs BWSyntax
+
 * Racket emacs
 ** TODO Figure out how to do comments like in clojure
 i.e. like =(comment ...)=
