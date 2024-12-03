@@ -1187,11 +1187,10 @@ fun! BWSyntax()
     hi ircname cterm=NONE ctermfg=NONE ctermbg=NONE " this looks the same as irc names, and is the superset, so i disabled the syntax just above
     hi liesel cterm=NONE ctermfg=NONE ctermbg=NONE
 
-    " 61 seems to work well to make a black. 0 doesn't work.
-    " I think it's because reverse is used.
-    hi EasyMotionTarget term=reverse ctermfg=NONE ctermbg=61 guibg=DarkGrey
-    hi EasyMotionTarget2First term=reverse ctermfg=NONE ctermbg=61 guibg=DarkGrey
-    hi EasyMotionTarget2Second term=reverse ctermfg=NONE ctermbg=61 guibg=DarkGrey
+    " the bg is specified as white because the pen-bw xterm is inverted
+    hi EasyMotionTarget term=NONE ctermfg=Black ctermbg=White guibg=White
+    hi EasyMotionTarget2First term=NONE ctermfg=Black ctermbg=White guibg=White
+    hi EasyMotionTarget2Second term=NONE ctermfg=Black ctermbg=White guibg=White
     hi EasyMotionShade term=NONE ctermfg=NONE ctermbg=NONE guibg=NONE
 endf
 command! BWSyntax silent! call BWSyntax()
