@@ -1033,11 +1033,7 @@ Also see option `magit-blame-styles'."
     (set-face-background 'selectrum-completion-docsig "#d72f4f")
     (set-face-background 'selectrum-current-candidate "#d72f4f")
     (set-face-background 'selectrum-group-separator "#d72f4f")
-    (set-face-background 'selectrum-group-title "#d72f4f"))
-
-  ;; Go to black and white mode and then reload the colour - this keeps the fonts consistent across B&W and colour modes
-  (pen-disable-all-faces)
-  (pen-load-faces))
+    (set-face-background 'selectrum-group-title "#d72f4f")))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun pen-set-faces-around-advice (proc &rest args)
@@ -1064,7 +1060,8 @@ Also see option `magit-blame-styles'."
 ;; (remove-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
 
 ;; This is the only place it needs to be, asides from the beginning of the eww function
-(add-hook 'after-init-hook 'pen-set-faces)
+;; Put  it in j:pen-final-loads instead
+;; (add-hook 'after-init-hook 'pen-set-faces)
 ;; (remove-hook 'after-init-hook 'pen-set-faces)
 
 ;; (toggle-pen-rc "text_high_contrast" t t)

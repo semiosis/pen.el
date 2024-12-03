@@ -2695,19 +2695,40 @@ May use to generate code from comments."
                  (or (interactive-p)
                      force-interactive)))))))
 
+;; This runs with j:window-setup-hook
 (defun pen-final-loads ()
+  (interactive)
   (load-library "pen-custom")
   (load-library "pen-ii")
   (load-library "pen-company-lsp")
   (load-library "pen-tty")
   (pen-load-config)
 
+
   ;; Not sure why this disappeared - i.e. having it inside e:pen-line-changed.el was not sufficient
   ;; Maybe it disappears when there are errors
   (add-hook 'post-command-hook #'update-line-number))
 
-(add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
-          'pen-final-loads t)
+(defun pen-final-loads-disable-enable-faces ()
+  (interactive)
+
+
+
+  ;; This is for after 
+  (pen-set-faces)
+  (pen-set-all-faces-height-1)
+
+  ;; Go to black and white mode and then reload the colour - this keeps the fonts consistent across B&W and colour modes
+  (pen-disable-all-faces)
+  (pen-enable-all-faces)
+  
+  (remove-hook 'window-setup-hook 'pen-final-loads-disable-enable-faces)
+  )
+
+(add-hook-last 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
+          'pen-final-loads)
+(add-hook-last 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
+          'pen-final-loads-disable-enable-faces)
 
 (defun test-stop-validator ()
   (pen-snq "sed -z 's/\\n/<newline>/g' | grep -vq \"<newline>\"" "dlf\nkjsdf"))
