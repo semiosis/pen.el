@@ -1408,4 +1408,6 @@
 
 (defalias 'dalle 'pf-given-a-textual-description-visualise-it-with-an-image/1)
 
+(honour-bw-mode)
+
 (provide 'pen-example-config)

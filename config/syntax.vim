@@ -1191,6 +1191,36 @@ fun! BWSyntax()
     hi EasyMotionTarget term=NONE ctermfg=Black ctermbg=White guibg=White
     hi EasyMotionTarget2First term=NONE ctermfg=Black ctermbg=White guibg=White
     hi EasyMotionTarget2Second term=NONE ctermfg=Black ctermbg=White guibg=White
-    hi EasyMotionShade term=NONE ctermfg=NONE ctermbg=NONE guibg=NONE
+    hi EasyMotionShade term=NONE ctermfg=White ctermbg=Black guibg=White
+    hi EasyMotionShadeDefault term=NONE ctermfg=White ctermbg=Black guibg=White
+
+    hi Normal       ctermfg=White ctermbg=Black
+
+    hi Visual  term=NONE ctermfg=Black ctermbg=WHITE guibg=White
+
+    hi StatusLineTerm term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi StatusLineTermNC term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi StatusLine     term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi StatusLineNC   term=bold ctermfg=Black ctermbg=WHITE guibg=White
+
+    hi LineNr     term=bold ctermfg=Black ctermbg=WHITE guibg=White
+
+    hi GitGutterAddDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterDeleteDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeDeleteDefault term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterAddInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterDeleteInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeDeleteInvisible term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterAdd   term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChange term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterDelete term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeDelete term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterAddLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterDeleteLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi GitGutterChangeDeleteLine term=bold ctermfg=Black ctermbg=WHITE guibg=White
+    hi badWhiteSpace  term=bold ctermfg=Black ctermbg=WHITE guibg=White
 endf
 command! BWSyntax silent! call BWSyntax()
