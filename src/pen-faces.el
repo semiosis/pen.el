@@ -954,6 +954,8 @@ is specified, `:italic' is ignored."
   (set-face-attribute 'helm-ff-file nil :weight 'bold)
   (set-face-attribute 'helm-ff-executable nil :weight 'bold)
 
+  (set-face-attribute 'font-lock-string-face nil :weight 'bold)
+
   (require 'avy)
   (setq avy-background t)
   ;; (set-face-background 'avy-background-face nil)
@@ -1033,7 +1035,10 @@ Also see option `magit-blame-styles'."
     (set-face-background 'selectrum-completion-docsig "#d72f4f")
     (set-face-background 'selectrum-current-candidate "#d72f4f")
     (set-face-background 'selectrum-group-separator "#d72f4f")
-    (set-face-background 'selectrum-group-title "#d72f4f")))
+    (set-face-background 'selectrum-group-title "#d72f4f"))
+
+  (set-face-underline 'magit-diff-added-highlight nil)
+  (set-face-underline 'magit-diff-removed-highlight nil))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun pen-set-faces-around-advice (proc &rest args)
@@ -1200,7 +1205,7 @@ Also see option `magit-blame-styles'."
                              helm-selection
                              ivy-highlight-face
                              ivy-current-match
-                             
+
                              org-list-dt
 
                              org-agenda-date-weekend-today
@@ -1521,7 +1526,8 @@ Also see option `magit-blame-styles'."
                       (set-face-attribute f fr
                                           :inverse-video t
                                           :italic nil
-                                          :weight 'unspecified
+                                          ;; :weight 'unspecified
+                                          ;; :weight 'bold
                                           ;; :slant 'normal
                                           )
                     ;; (set-face-attribute f fr
@@ -1629,7 +1635,8 @@ Also see option `magit-blame-styles'."
                      :inverse-video nil
                      :overline nil
                      :underline t
-                     :weight 'unspecified
+                     ;; :weight 'unspecified
+                     ;; :weight 'bold
                      :box nil
                      :strike-through nil
                      :slant 'italic
@@ -1738,6 +1745,26 @@ Also see option `magit-blame-styles'."
 
                      ;; :italic t
                      )))
+  
+  (cl-loop for fr in (frame-list)
+           do
+           (cl-loop for f in '(magit-diff-added-highlight
+                               magit-diff-removed-highlight)
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video nil
+                     :overline nil
+                     :underline nil
+                     :box nil
+                     :inherit nil
+                     :strike-through nil
+                     ;; :slant 'normal
+
+                     ;; :italic t
+                     )))
+
+  
 
   ;; [[customize-variable:-whitespace-style]]
   (setq whitespace-style
@@ -1829,20 +1856,35 @@ Also see option `magit-blame-styles'."
                   (set-background-color 'unspecified)
 
                   ;; tty-menu-enabled-face
-                  ))))))
+                  )))))
 
-(defun honour-bw-mode ()
+  (cl-loop for f in (pen-list-faces)
+           do
+           (set-face-attribute
+            f nil
+            ;; :italic t
+            ;; :inverse-video nil
+            :weight 'bold
+            ;; :background 'unspecified
+            ;; :foreground 'unspecified
+            )))
+
+(defun honour-bw-mode (&optional tmuxonly)
   (interactive)
 
   (if (pen-rc-test "black_and_white")
       (progn
+        ;; Just stick to using tmux-bw for less confusion
+        (pen-snc "tmux-bw")
         (comment
          ;; tmux-colour looks fine in b&w-mode
          (pen-snc "tmux-bw"))
-        (pen-disable-all-faces))
+        (if (not tmuxonly)
+            (pen-disable-all-faces)))
     (progn
       (pen-snc "tmux-colour")
-      (pen-enable-all-faces)))
+      (if (not tmuxonly)
+          (pen-enable-all-faces))))
 
   (comment
    (pen-rc-set "black_and_white" "off")))
@@ -2023,14 +2065,44 @@ Also see option `magit-blame-styles'."
 
 ;; (set-face-attribute 'default nil :family "Fira Code" :height 110)
 
+(defun pen-fix-color-theme ()
+  (interactive)
+  (load-library "spacemacs-common")
+  (deftheme spacemacs-dark "Spacemacs theme, the dark version")
+  (create-spacemacs-theme 'dark 'spacemacs-dark)
+  (load-theme 'spacemacs-light t)
+  (load-theme 'spacemacs-dark t)
+  (pen-set-faces)
+  (pen-save-faces))
+
 (defun pen-save-faces ()
   (interactive)
   (progn
     (message "Saving faces to /root/faces.el" )
-    (write-to-file (pen-get-faces) "/root/faces.el")))
+    (write-to-file (pen-get-faces) "/root/faces.el")
+    (message "Saved faces to /root/faces.el")))
+
+(defun pen-save-faces-to-config ()
+  (interactive)
+  (progn
+    (message "Saving faces to /root/.pen/faces.el" )
+    (write-to-file (pen-get-faces) "/root/.pen/faces.el")
+    (message "Saved faces to /root/.pen/faces.el")))
 
 (defun pen-load-faces ()
   (interactive)
+
+    ;; I decided to disable the inverse-video stuff
+  (cl-loop for f in (pen-list-faces)
+           do
+           (set-face-attribute
+            f nil
+            ;; :italic t
+            :inverse-video nil
+            :weight 'bold
+            ;; :background 'unspecified
+            ;; :foreground 'unspecified
+            ))
 
   ;; TODO
   ;; (setq default-frame-alist
@@ -2050,20 +2122,26 @@ Also see option `magit-blame-styles'."
   ;; server-after-make-frame-hook
   (remove-hook 'server-after-make-frame-hook 'pen-disable-all-faces)
 
-  (if (f-file-p "/root/faces.el")
-      (progn
-        (message "Loading faces from /root/faces.el")
-        (let ((tr
-               (eval-string (concat "'" (slurp-file "/root/faces.el"))))
-              (fr
-               (selected-frame)))
+  (let ((fp
+         (or
+          (and (f-file-p "/root/.pen/faces.el")
+               "/root/.pen/faces.el")
+          (and (f-file-p "/root/faces.el")
+               "/root/faces.el"))))
+    (if (f-file-p fp)
+        (progn
+          (message "%s" (concat "Loading faces from " fp))
+          (let ((tr
+                 (eval-string (concat "'" (slurp-file fp))))
+                (fr
+                 (selected-frame)))
 
-          (cl-loop for face_tp in tr do
-                   (let* ((sym (car face_tp))
-                          (attrs (cdr face_tp)))
+            (cl-loop for face_tp in tr do
+                     (let* ((sym (car face_tp))
+                            (attrs (cdr face_tp)))
 
-                     (ignore-errors
-                       (apply 'set-face-attribute `(,sym nil ,@attrs))))))
-        (message "Loaded faces from /root/faces.el"))))
+                       (ignore-errors
+                         (apply 'set-face-attribute `(,sym nil ,@attrs))))))
+          (message "%s" (concat "Loaded faces from " fp))))))
 
 (provide 'pen-faces)

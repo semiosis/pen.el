@@ -657,24 +657,45 @@ function __setprompt
 {
 	local LAST_COMMAND=$? # Must come first!
 
-	# Define colors
-	local LIGHTGRAY="\033[0;37m"
-	local WHITE="\033[1;37m"
-	local BLACK="\033[0;30m"
-	local DARKGRAY="\033[1;30m"
-	local RED="\033[0;31m"
-	local LIGHTRED="\033[1;31m"
-	local GREEN="\033[0;32m"
-	local LIGHTGREEN="\033[1;32m"
-	local BROWN="\033[0;33m"
-	local YELLOW="\033[1;33m"
-	local BLUE="\033[0;34m"
-	local LIGHTBLUE="\033[1;34m"
-	local MAGENTA="\033[0;35m"
-	local LIGHTMAGENTA="\033[1;35m"
-	local CYAN="\033[0;36m"
-	local LIGHTCYAN="\033[1;36m"
-	local NOCOLOR="\033[0m"
+	if test "$1" = bw; then
+	    # Define colors
+	    local LIGHTGRAY=""
+	    local WHITE=""
+	    local BLACK=""
+	    local DARKGRAY=""
+	    local RED=""
+	    local LIGHTRED=""
+	    local GREEN=""
+	    local LIGHTGREEN=""
+	    local BROWN=""
+	    local YELLOW=""
+	    local BLUE=""
+	    local LIGHTBLUE=""
+	    local MAGENTA=""
+	    local LIGHTMAGENTA=""
+	    local CYAN=""
+	    local LIGHTCYAN=""
+	    local NOCOLOR=""
+	else
+	    # Define colors
+	    local LIGHTGRAY="\033[0;37m"
+	    local WHITE="\033[1;37m"
+	    local BLACK="\033[0;30m"
+	    local DARKGRAY="\033[1;30m"
+	    local RED="\033[0;31m"
+	    local LIGHTRED="\033[1;31m"
+	    local GREEN="\033[0;32m"
+	    local LIGHTGREEN="\033[1;32m"
+	    local BROWN="\033[0;33m"
+	    local YELLOW="\033[1;33m"
+	    local BLUE="\033[0;34m"
+	    local LIGHTBLUE="\033[1;34m"
+	    local MAGENTA="\033[0;35m"
+	    local LIGHTMAGENTA="\033[1;35m"
+	    local CYAN="\033[0;36m"
+	    local LIGHTCYAN="\033[1;36m"
+	    local NOCOLOR="\033[0m"
+	fi
 
 	# Show error exit code if there is one
 	if [[ $LAST_COMMAND != 0 ]]; then
@@ -768,8 +789,17 @@ function __setprompt
 
 	# PS4 is used for tracing a script in debug mode
 	PS4='\[${DARKGRAY}\]+\[${NOCOLOR}\] '
+
+    if test "$1" = bw; then
+        PS1="$(tput rev)$PS1$(tput sgr0)"
+    fi
 }
-PROMPT_COMMAND='__setprompt'
+
+if pen-rc-test -f black_and_white; then
+    PROMPT_COMMAND='__setprompt bw'
+else
+    PROMPT_COMMAND='__setprompt'
+fi
 
 bash-cr() {
     trap func_trap EXIT

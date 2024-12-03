@@ -5400,7 +5400,6 @@ fi
 : 1700697694:0;tmux neww "zsh -i -c 'nve $PENELD/src/pen-support.el'"
 : 1700697728:0;tmux neww "bash -l -i -c 'nve $PENELD/src/pen-support.el'"
 : 1700697733:0;which -a bsh
-: 1700697745:0;man zsh
 : 1700697805:0;tmux set -g default-shell '/bin/zsh -i'
 : 1700697816:0;v shel
 : 1700697817:0;v shell
@@ -6372,7 +6371,6 @@ EOF\
 : 1701482864:0;pwd | hls red | lolcat
 : 1701482875:0;pwd | hls red | strip-ansi lolcat
 : 1701482877:0;pwd | hls red | strip-ansi | lolcat
-: 1701483060:0;echo "$PROMPT"
 : 1701511138:0;tp find-here-path "*pen-e-ic*"
 : 1701511152:0;ln -sf ../pen-e-ic ediff3
 : 1701511163:0;ln -sf ../pen-e-ic ediff
@@ -6981,7 +6979,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702504689:0;e ia elfeed elfeed-webkit elfeed-web elfeed-tube-mpv elfeed-tube elfeed-summary elfeed-protocol elfeed-org elfeed-goodies elfeed-dashboard elfeed-curate elfeed-score elfeed-autotag universal-sidecar-elfeed-score universal-sidecar-elfeed-related el-secretario-elfeed
 : 1702505056:0;cd ~/.pen/conf
 : 1702505059:0;xc -P elfeed.org
-: 1702505170:0;cd conf
 : 1702505183:0;ln -sf ../pen-e-ic elfeed
 : 1702505199:0;elfeed
 : 1702506470:0;penwe
@@ -7258,7 +7255,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702976686:0;ead set-face-attribute
 : 1702976756:0;ead -z set-face-attribute
 : 1702976838:0;v +/"^(defun set-face-attribute (face frame &rest args)" "/volumes/home/shane/var/smulliga/source/git/emacs-mirror/emacs/lisp/faces.el"
-: 1702978489:0;v pen-faces.el
 : 1702979448:0;Joshua 1:8
 : 1702979455:0;Joshua 1:8 | v
 : 1702979483:0;Joshua 1:8 | xt in-tm v
@@ -7601,7 +7597,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703310476:0;in-pen xt -2 screen-2color nvt -2 in-tm -2 pin
 : 1703310487:0;in-pen xt -2 nvt -2 in-tm -2 pin
 : 1703310513:0;in-pen xt -2 nvc -2 in-tm -2 pin
-: 1703310533:0;v pen-bw
 : 1703311144:0;tp find-here-path "*synta*"
 : 1703312198:0;v pen-addressbook.el
 : 1703314537:0;I Samuel 12:16 | v
@@ -8667,7 +8662,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705706806:0;tmux list-windows | rev | s field 1 | grep @
 : 1705706810:0;tmux list-windows | rev | s field 1 | grep @ | rev
 : 1705706916:0;git commit -m "20.01.24"
-: 1705706943:0;v tmux-bw
 : 1705708540:0;Psalm 130 | v
 : 1705709221:0;spinner pool
 : 1705709224:0;upd spinner pool
@@ -11634,7 +11628,6 @@ e ia inheritenv
 : 1712807605:0;deunicode /root/.emacs.d/host/pen.el/scripts/pen-c
 : 1712807620:0;deunicode "Ãƒ¦neid"
 : 1712807703:0;Acts 11:26
-: 1712810233:0;env
 : 1712810366:0;cd $MYGIT
 : 1712810387:0;echo 'e:$MYGIT_HOST/rust-lang/rust-by-example/'
 : 1712811390:0;tp find-here-path "*hello*"
@@ -12883,7 +12876,6 @@ Proverbs 4:14-15
 : 1714946212:0;mcd spiritual-warfare
 : 1714946216:0;v leviathan-spirit.org
 : 1714946425:0;runhaskell fmap-test.hs
-: 1714946571:0;echo "$PS1"
 : 1714946908:0;cr fmap-test.hs
 : 1714948141:0;Proverbs 24:17-18
 : 1714949309:0;Psalm 45:6
@@ -13253,8 +13245,6 @@ agi texstudio
 : 1715833101:0;v pen-v
 : 1715833292:0;echo hi | vim --not-a-term -c "set ls=0|set noautochdir|silent! echom|set ft=sh|call RTCmdSetup(\"tee \\\"/root/.pen/tmp/rtcmd-488640.txt\\\" \\| pen-tm -f -S -tout rsp  -xargs -pakf -safe -t '%184'\")|StartAppend|windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()" -c "exe \"silent! normal! /\\\(\\\<sed\\\>\\\( -[^ ]\\\+\\\)* [^-]\\\)\\\@<=.\\r\"" -
 : 1715833306:0;echo hi | 'pen-v' '+/\(\<sed\>\( -[^ ]\+\)* [^-]\)\@<=.' '-ft' 'sh' '-rt' 'tee "/root/.pen/tmp/rtcmd-488640.txt" | pen-tm -f -S -tout rsp  -xargs -pakf -safe -t '\''%184'\''' '-pc' 'set ls=0' '-c' 'StartAppend'
-: 1715833359:0;v hls
-: 1715833363:0;v his
 : 1715833436:0;echo hi | v
 : 1715833712:0;v rtcdm
 : 1715833739:0;which -a nd
@@ -16696,7 +16686,6 @@ pip install hexabyte\
 : 1724996250:0;man broot
 : 1724996275:0;v br-img
 : 1724996293:0;magithub
-: 1724996297:0;v ~/.zshrc
 : 1724996360:0;br -ec
 : 1724996734:0;br-txt
 : 1724996804:0;cat evangelism.org |hb
@@ -18020,7 +18009,6 @@ apt-get -y update\
 apt-get -y upgrade --without-new-pkgs\
 apt-get -y full-upgrade
 : 1726880732:0;which -a grex
-: 1726882522:0;htop DEFAULT
 : 1726882527:0;which -a htop
 : 1726882530:0;/usr/bin/htop
 : 1726885331:0;v rifle
@@ -18223,7 +18211,6 @@ apt -y --fix-broken install
 : 1730109242:0;o "https://github.com/manateelazycat/cloel"
 : 1730109283:0;echo "$?
 : 1730109286:0;test -d ~/repos/manateelazycat/cloel
-: 1730109287:0;echo "$?"
 : 1730109362:0;v /root/repos/manateelazycat/cloel/demo/app.el
 : 1730110433:0;pinin
 : 1730135361:0;v pen-ensure-deps
@@ -18268,7 +18255,6 @@ apt -y --fix-broken install
 : 1730403252:0;v pin
 : 1730403285:0;v docker
 : 1730410021:0;v ~/.profile
-: 1730410024:0;v ~/.bashrc
 : 1730410036:0;ls -ldt ~/.bashrc
 : 1730410059:0;rm ~/.bashrc
 : 1730410064:0;cp -a /root/.emacs.d/host/pen.el/config/bash/bashrc ~/.bashrc
@@ -18383,7 +18369,6 @@ apt -y --fix-broken install
 : 1730429728:0;cd ./repos/notmuch
 : 1730429729:0;las
 : 1730429732:0;cd notmuch
-: 1730431113:0;cd ~/.pen
 : 1730431130:0;mkdir ~/.pen/Mail
 : 1730431131:0;gmi pull
 : 1730431149:0;cd downloads
@@ -18532,9 +18517,7 @@ apt -y --fix-broken install
 : 1732677764:0;sh-yank
 : 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
 : 1732677955:0;cd ~/.sword
-: 1732678836:0;pin
 : 1732679634:0;git status
-: 1732679646:0;cd ..
 : 1732679653:0;rm scripts/colorls.html
 : 1732679655:0;rm scripts/directories.html
 : 1732679675:0;ssh-host
@@ -18620,7 +18603,6 @@ apt -y --fix-broken install
 : 1732844289:0;mv /root/.pen/documents/notes/._ext_freq_cmdlog.vdj ./
 : 1732844295:0;mv ._ext_freq_cmdlog.vdj ext_freq_cmdlog.vdj
 : 1732844333:0;v ext_freq_cmdlog.vdj
-: 1732844341:0;sl
 : 1732844343:0;v ._cmdlog.vdj
 : 1732844394:0;ext_freq_cmdlog.vdj
 : 1732844508:0;cp -a ext_freq_cmdlog_out.vdj
@@ -18705,7 +18687,6 @@ apt -y --fix-broken install
 : 1732856149:0;tpop
 : 1732925726:0;v clipboard.txt
 : 1732927638:0;let-syntax-demo.rkt
-: 1732929289:0;pen-e -D pen-emacsd-1
 : 1732929984:0;Daniel 4:17
 : 1732930603:0;Daniel 5:8-9
 : 1733190216:0;nvpvd ~/.pen/documents/notes/Music\ Data\ Base.xls
@@ -18717,37 +18698,27 @@ apt -y --fix-broken install
 : 1733190345:0;nv nano
 : 1733190448:0;nvim /
 : 1733190549:0;ead '-u $HOME/.nvimrc'
-: 1733190602:0;bash
 : 1733190699:0;excitedness.rkt --excited
 : 1733191005:0;nano
 : 1733191134:0;pen-bw & disown
-: 1733191318:0;pen-bw
 : 1733191352:0;v in-tty
 : 1733192414:0;emacs -nw -Q
 : 1733192451:0;man tmux
 : 1733192608:0;v tm
 : 1733192734:0;tm clone-pane
 : 1733193114:0;vimhelp syntax
-: 1733193453:0;cd config
-: 1733193454:0;ls
 : 1733193455:0;tp find-here-path "*syntax*"
 : 1733193481:0;v ./syntax.vim
-: 1733193525:0;v run.sh
 : 1733193556:0;if test -f $HOME/.emacs.d/host/pen.el/config/syntax.vim; then\
  ln -sf $HOME/.emacs.d/host/pen.el/config/syntax.vim ~/syntax.vim\
 fi
-: 1733194069:0;pwd
-: 1733194069:0;sh-general
 : 1733194071:0;cd src
 : 1733194072:0;ead black_and_white
 : 1733194247:0;tmux-colour
 : 1733194249:0;tmux-bw
 : 1733194512:0;pen-rc-get black_and_white
 : 1733194522:0;pen-rc-test black_and_whithh
-: 1733194549:0;v ~/.pen/pen.yaml
 : 1733194718:0;pen-rc-test black_and_white
-: 1733194719:0;echo $?
-: 1733194736:0;v
 : 1733194767:0;v ~/.vimrc
 : 1733194903:0;v pen-rc-get
 : 1733195471:0;v pen-emacsclient
@@ -18773,9 +18744,71 @@ fi
 : 1733196252:0;"pvd" "-2" ; exit "$?"
 : 1733196281:0;nvim /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
 : 1733196286:0;v /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
-: 1733196489:0;pe
 : 1733196527:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
 : 1733196685:0;v ~/syntax.vim
-: 1733196728:0;v v
 : 1733197137:0;v ~/.nvimrc
 : 1733197255:0;penq
+: 1733210468:0;cd ~/.emacs.d/host/pen.el/src
+: 1733210470:0;sl
+: 1733210474:0;v pen-faces.el
+: 1733210502:0;v tmux-bw
+: 1733210512:0;v run.sh
+: 1733210551:0;pen-test-rc -f black_and_white
+: 1733210562:0;echo $?
+: 1733210571:0;if pen-rc-test -f black_and_white\
+    tmux-bw\
+fi
+: 1733210576:0;if pen-rc-test -f black_and_white; then\
+ tmux-bw\
+fi
+: 1733211406:0;echo "$PS1"
+: 1733211408:0;pen-rc-test -f black_and_white
+: 1733211410:0;echo "$?"
+: 1733211442:0;v ~/.pen/pen.yaml
+: 1733211478:0;echo "$PROMPT_COMMAND"
+: 1733211486:0;env
+: 1733211635:0;man zshoptions
+: 1733211674:0;man zsh
+: 1733211688:0;echo "$PROMPT"
+: 1733211694:0;git_custom_status
+: 1733212565:0;cd ~/.pen
+: 1733212567:0;cd conf
+: 1733212569:0;cd ..
+: 1733212907:0;v pen-bw
+: 1733212913:0;pen-bw
+: 1733215836:0;htop DEFAULT
+: 1733215926:0;sh-general
+: 1733215929:0;cd config
+: 1733215935:0;tp find-here-path "*faces*"
+: 1733215945:0;v pen/faces.el
+: 1733216067:0;pin
+: 1733216088:0;v /root/.pen/faces.el
+: 1733219247:0;echo hello | hls reverse reverse
+: 1733219251:0;v hls
+: 1733219271:0;echo hello | hls red reverse
+: 1733219276:0;echo hello | hls black reverse
+: 1733219291:0;echo hello | his -i ".*"
+: 1733219300:0;echo hello | hls white
+: 1733219306:0;echo hello | hls white | his -i ".*"
+: 1733219311:0;echo hello | hls white black | his -i ".*"
+: 1733219317:0;echo hello | hls black white
+: 1733219330:0;echo hello | hls black white | his -i ".*"
+: 1733219334:0;echo hello | hls blue white | his -i ".*"
+: 1733219349:0;echo hello | his -f black | his -i ".*"
+: 1733219351:0;echo hello | his -f white | his -i ".*"
+: 1733219388:0;echo "$(tput rev)hello"
+: 1733219573:0;v his
+: 1733219585:0;man tput
+: 1733219650:0;infocmp -1 ansi |grep sgr0=
+: 1733219661:0;tput -T ansi sgr0
+: 1733219723:0;v ~/.bashrc
+: 1733219900:0;pe
+: 1733220616:0;pen-e -D pen-emacsd-1
+: 1733220707:0;v
+: 1733220714:0;bas
+: 1733220715:0;bash
+: 1733220772:0;pwd
+: 1733220773:0;ls
+: 1733220864:0;v v
+: 1733220881:0;v ~/.zshrc
+: 1733220898:0;penq

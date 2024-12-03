@@ -390,8 +390,6 @@
 (add-hook 'after-init-hook 'pen-load-config t)
 (add-hook 'after-init-hook 'pen-delay-memoise)
 
-(add-hook 'after-init-hook 'pen-load-config t)
-
 ;; This worked
 (defun pen-after-init-package-loads (frame)
   (interactive)

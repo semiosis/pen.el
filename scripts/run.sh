@@ -380,6 +380,10 @@ tmux new -d -s init
 tmux new -d -s localhost
 )
 
+if pen-rc-test -f black_and_white; then
+    tmux-bw
+fi
+
 pen-ensure-deps
 
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then

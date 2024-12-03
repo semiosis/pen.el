@@ -1,3 +1,21 @@
+* TODO Make a handy data store for looking up key value pairs
+Use this for remembering which of the tmux windows are from autofiles.
+This way I can toggle b&w mode and colour mode a bit better.
+
+It's going to be nice to not need to use the inverted terminal or the screen-2color terminal.
+That's going to make it more convenient.
+But I have to sort out more issues.
+
+** Also, I should make it so I can easily toggle between screen-2color and screen-256color without closing the terminal.
+- Also, I should make a tmux binding for toggling B&W mode
+
+** Also, I should make more use of italic font in B&W mode and use gnome terminal
+- And figure out how to get it in xterm
+
+** Also make a faster pen-rc-test alternative for b&w mode, so I can use it in smaller scripts
+
+** Also make everything bold in the terminal somehow
+
 * TODO push a new docker image with syntax.vim
 e:/root/.emacs.d/host/pen.el/config/syntax.vim
 e:/root/syntax.vim

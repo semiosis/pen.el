@@ -2712,18 +2712,31 @@ May use to generate code from comments."
 (defun pen-final-loads-disable-enable-faces ()
   (interactive)
 
+  ;; This is for after
+  ;; (pen-set-faces)
+  ;; (pen-set-all-faces-height-1)
 
+  ;; This currently contains all the inverse-video face stuff - NICE!
+  ;; It comes from b&w-mode (i.e. the disable all faces function).
+  ;; It also has all the boldness.
+  ;; pen-set-all-faces-height-1 currently resets the boldness
+  ;; I should fix that.
 
-  ;; This is for after 
-  (pen-set-faces)
-  (pen-set-all-faces-height-1)
+  (if (f-exists-p "/root/.pen/faces.el")
+      (penl-load-faces))
 
-  ;; Go to black and white mode and then reload the colour - this keeps the fonts consistent across B&W and colour modes
-  (pen-disable-all-faces)
-  (pen-enable-all-faces)
-  
-  (remove-hook 'window-setup-hook 'pen-final-loads-disable-enable-faces)
-  )
+  ;; In fact, I should set all faces bold here.
+
+  ;; TODO Also, fix the magit syntax
+
+  ;; TEMPORARILY DISABLE THIS TO COLLECT A faces.el FILE
+;;;; Go to black and white mode and then reload the colour - this keeps the fonts consistent across B&W and colour modes
+  ;;(pen-disable-all-faces)
+  ;;(pen-enable-all-faces)
+;;;; It's already toggled b&w mode, now just ensure tmux is set properly
+  ;;(honour-bw-mode t)
+
+  (remove-hook 'window-setup-hook 'pen-final-loads-disable-enable-faces))
 
 (add-hook-last 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
           'pen-final-loads)
