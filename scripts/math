@@ -29,6 +29,21 @@ pi() {
     return 0
 }
 
+hex2dec() {
+    # echo "ab\ncc" | math hex2dec
+
+    # newline
+    IFS="
+    "
+    awk1 | while IFS="$IFS" read -r line; do
+        (
+        exec 0</dev/null
+        line="$(p "$line" | s uc)"
+        echo "ibase=16; $line" | bc
+        )
+    done
+}
+
 human_to_bytes() {
     # TODO Handle both
 
