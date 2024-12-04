@@ -191,8 +191,8 @@ argument, prompt for a regular expression using `read-regexp'."
                       ;; :background "#000000"
                       ;; :foreground "#ffffff"
 
-                      ;; :weight 'bold
-                      :weight 'unspecified
+                      :weight 'bold
+                      ;; :weight 'unspecified
                       :family "DejaVu Sans Mono")
 
   (loop for f in
@@ -203,8 +203,10 @@ argument, prompt for a regular expression using `read-regexp'."
           ;; (set-face-attribute f nil :height 128 :weight 'unspecified)
           ;; This sets a relative size
           (set-face-attribute f nil :height 1.0
-                              :weight 'unspecified
-                              :family 'unspecified))))
+                              :weight 'bold
+                              :family "DejaVu Sans Mono"
+                              ;; :family 'unspecified
+                              ))))
 
 (pen-set-all-faces-height-1)
 ;; After this runs, I need to disable the future changing of face height
@@ -1264,8 +1266,10 @@ Also see option `magit-blame-styles'."
   ;; "#b2b2b2" "#262626"
   (cl-loop for fr in (frame-list)
            do
-           (set-face-foreground 'default 'unspecified fr)
-           (set-face-background 'default 'unspecified fr))
+           ;; (set-face-foreground 'default 'unspecified fr)
+           ;; (set-face-background 'default 'unspecified fr)
+           (set-face-foreground 'default "#ffffff" fr)
+           (set-face-background 'default "#000000" fr))
 
   (setq default-frame-alist
         '(;; (set-background-color "#1e1e1e")
@@ -1785,6 +1789,8 @@ Also see option `magit-blame-styles'."
                             info-code-face
                             shr-code
 
+                            bible-verse-ref-notes
+
                             ;; markdown-code-face
                             )
                  do
@@ -1824,8 +1830,6 @@ Also see option `magit-blame-styles'."
 
   (pen-snc "tmux-bw")
 
-  (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice)
-
   ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
   ;; Double-check this has been successful.
   ;; But this has busted the underline for bible-verse-ref-notes
@@ -1858,16 +1862,45 @@ Also see option `magit-blame-styles'."
                   ;; tty-menu-enabled-face
                   )))))
 
-  (cl-loop for f in (pen-list-faces)
+  (set-face-attribute 'font-lock-builtin-face nil :background 'unspecified :foreground 'unspecified)
+  (set-face-attribute 'font-lock-string-face nil :background 'unspecified :foreground 'unspecified)
+  (set-face-attribute 'font-lock-comment-face nil :background 'unspecified :foreground 'unspecified)
+
+  ;; For some reason, many fonts just aren't changing colour - OHH the advice!'
+  (cl-loop for f in (append
+                     (pen-list-faces)
+                     '(font-lock-builtin-face
+                       font-lock-string-face
+                       font-lock-comment-face))
            do
+           ;; (set-face-foreground f 'unspecified)
+           ;; (set-face-background f 'unspecified)
            (set-face-attribute
             f nil
             ;; :italic t
             ;; :inverse-video nil
             :weight 'bold
-            ;; :background 'unspecified
-            ;; :foreground 'unspecified
-            )))
+            :background 'unspecified
+            :foreground 'unspecified))
+
+  (pen-set-all-faces-height-1)
+
+  (set-foreground-color 'unspecified)
+  (set-background-color 'unspecified)
+
+  ;; I think the GUI needs real colours or it crashes when the GUI appears,
+  ;; But it needs to then specify 'unspecified as above or certain things wont appea
+
+  ;; If I need to use 'unspecified for terminals, then use this display-graphic-p check.
+  ;; But #ffffff seems to be brighter than the color255
+  ;; if (display-graphic-p)
+  (cl-loop for fr in (frame-list) do
+           (with-selected-frame fr
+             (set-foreground-color "#ffffff")
+             (set-background-color "#000000")))
+
+  ;; This must come last
+  (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))
 
 (defun honour-bw-mode (&optional tmuxonly)
   (interactive)
@@ -1923,6 +1956,7 @@ Also see option `magit-blame-styles'."
   (interactive)
   (pen-rc-set "black_and_white" "off")
   (pen-load-faces)
+  (pen-set-all-faces-height-1)
   (pen-snc "tmux-colour"))
 
 (comment

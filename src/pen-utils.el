@@ -228,4 +228,7 @@ buffer."
   (if (bufferp ret)
       (switch-to-buffer ret)))
 
+(defun crc32 (s)
+  (pen-snc "hash-crc32" s))
+
 (provide 'pen-utils)

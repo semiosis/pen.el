@@ -11,21 +11,17 @@
 
 (add-hook 'after-init-hook 'after-init-loads)
 
-(defun crc32 (s)
-  (pen-snc "hash-crc32" s))
-
-(defun hex2dec (hex)
-  "hex can be one hex num per line"
-  (let ((results
-         (cl-loop for n in (str2lines hex) collect
-                  (string-to-number (pen-snc (concat "echo " n " | math hex2dec"))))))
-    (if (eq 1 (length results))
-        (car results)
-      results)))
-
 (defun pen-tcp-server-get-port ()
-  (+ 5000 
-     (/ (hex2dec (crc32 (daemonp))) 10000000)))
+  (if (f-dir-p "/root/.pen/")
+      (progn    
+        (mkdir-p "/root/.pen/emacs-tcp-server-ports")
+        (let* ((port
+                (+ 5000 
+                   (/ (hex2dec (crc32 (daemonp))) 10000000)))
+               (fp (f-join "/root/.pen/emacs-tcp-server-ports" (daemonp))))
+          (f-touch fp)
+          (write-to-file (str port) fp)
+          port))))
 
 (defun pen-start-tcp-server-repl ()
   (interactive)
