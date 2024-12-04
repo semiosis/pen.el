@@ -219,8 +219,13 @@ if test "$hide_status" = "y"; then
     PRE_CMD="tmux set-option -t popup: status off; export INSIDE_TMUX_POPUP=y;"
 fi
 
-: "${bgc:="default"}"
-: "${fgc:="colour025"}"
+if pen-rc-test -f black_and_white; then
+    bgc="default"
+    fgc="brightwhite"
+else
+    : "${bgc:="default"}"
+    : "${fgc:="colour025"}"
+fi
 
 tmux set-option -g popup-border-style "bg=$bgc,fg=$fgc";
 

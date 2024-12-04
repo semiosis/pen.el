@@ -1,0 +1,9 @@
+;; Object ebdb-db-file-18efa4ece148
+;; EBDB file-persistent database
+(ebdb-db-file "ebdb-db-file-18efa4ece148"
+:file "ebdb"
+:label "File: /root/.pen/ebdb"
+:uuid
+(ebdb-field-uuid "ebdb-field-uuid-18efa56df8de"
+:uuid "0fbe2307-bf9e-4302-90fb-dfdcbcaea849")
+:record-class ebdb-record-person)

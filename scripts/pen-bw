@@ -5,6 +5,7 @@ export TTY
 
 (
 # black and white
+in-pen pen-e -D DEFAULT -e-tcp "(pen-enable-all-faces)"
 in-pen xt -rv in-tm -2 pin "$@"
 
 # pen blue on white

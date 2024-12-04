@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nano" "#" "<==" "nvim"
+cd /root/.pen/documents/notes;  "nano" "#" "<==" "nvim"
+cd /root/.emacs.d/host/pen.el/scripts/babashka;  "nano" "#" "<==" "pen-nvc"
+cd /root/.emacs.d/host/pen.el/scripts/babashka;  "nano" "#" "<==" "pen-nvc"
+cd /root/.emacs.d/host/pen.el/scripts/babashka;  "nano" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka;  "nano" "listen.org" "#" "<==" "zsh"

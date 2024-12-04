@@ -4294,7 +4294,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699671248:0;tp find-here-path "*cmd-nice*"
 : 1699671259:0;echo hi | cmd-nice-posix-with-bs
 : 1699671467:0;nvim -u $HOME/.nvimrc -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
-: 1699671523:0;echo hi | fzf
 : 1699673220:0;j defface
 : 1699674616:0;pen-e -D test2 sd -d
 : 1699674624:0;v pen-games.el
@@ -7382,7 +7381,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703118269:0;tp find-here-symlink "*nem*"
 : 1703118272:0;tp find-here-symlink "*noemacs*"
 : 1703118286:0;ln -sf gui wo
-: 1703118294:0;v in-pen
 : 1703118329:0;which -a wo
 : 1703118340:0;git checkout -- wo
 : 1703118344:0;which wo
@@ -7833,7 +7831,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703801382:0;v rlt
 : 1703801405:0;rlt -s Ezra
 : 1703802364:0;spinner-start sleep 5
-: 1703802395:0;spinner-start -b sleep 5
 : 1703802421:0;sleep 5
 : 1703802431:0;spinner -b sleep 5
 : 1703802443:0;spin -b sleep 5
@@ -8162,7 +8159,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704331087:0;mv 04.01.24.org ../preparation
 : 1704334519:0;mv /root/dump/tmp/scratchUwDGAp.txt tmux-bw.conf
 : 1704334521:0;git commit -m "04.01.24"
-: 1704334526:0;v tmux-bw.conf
 : 1704334721:0;eat '$'
 : 1704334724:0;eat '\$'
 : 1704334726:0;eat '\#'
@@ -8171,7 +8167,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704335907:0;sp remember.org
 : 1704336434:0;ln -sf ebible murdock
 : 1704336436:0;v murdock
-: 1704336892:0;v blocked-patterns.txt
 : 1704336917:0;fpvd
 : 1704336919:0;fpvd -2
 : 1704337571:0;Isa 53:7-8 | v
@@ -8200,7 +8195,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704415656:0;"ff" "04.01.24.html"
 : 1704415730:0;"z" "04.01.24.pdf"
 : 1704416970:0;v pen-web.el
-: 1704417429:0;v DEFAULT
 : 1704417433:0;rm DEFAULT
 : 1704417436:0;rm tf_zle*
 : 1704418008:0;Genesis 18
@@ -8426,7 +8420,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704618495:0;git commit -m "07.01.24"
 : 1704619931:0;John 5 |v
 : 1704619943:0;nasb John 5 |v
-: 1704667958:0;v spinner
 : 1704668428:0;cat /root/dump/tmp/scratchbRw2iW.txt
 : 1704668438:0;spinner
 : 1704668477:0;upd spinner
@@ -8711,8 +8704,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705833032:0;v bible-get-chapter-title
 : 1705833697:0;git commit -m "21.01.24"
 : 1705835821:0;j bible-mode-get-book-and-chapter
-: 1705836874:0;v spinner-start
-: 1705836886:0;spinner-start Cool
 : 1705836922:0;cat /root/.pen/documents/notes/ws/peniel/Bible-outlines.txt | scrape-bible-references
 : 1705910411:0;man emacsclient
 : 1705910931:0;j str
@@ -9023,7 +9014,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706099054:0;man case
 : 1706125971:0;Luke 15 | v
 : 1706130868:0;tp find-here-path "*status*"
-: 1706130870:0;tp find-here-path "*tmux*"
 : 1706130911:0;tmux set status off -t localhost:
 : 1706130927:0;tmux set -t localhost: status off
 : 1706130930:0;tmux set -t localhost: status on
@@ -9885,7 +9875,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708641627:0;onelined Exodus 14:21-22 | v
 : 1708642177:0;Deut 18:15-19 | v
 : 1708645888:0;pen-e -D DEFAULT k 9
-: 1708645930:0;pen-e -D DEFAULT
 : 1708646071:0;qls
 : 1708646738:0;git commit -m "23.02.24"
 : 1708646796:0;pen-e -D pen-emacsd-1 faith-and-judgement.org
@@ -10889,7 +10878,6 @@ print(data)' | uplot line
 : 1711006278:0;cp -a pen-lsp-go.el pen-lsp-ruby.el
 : 1711006279:0;sp pen-lsp-ruby.el
 : 1711006298:0;ruby -v
-: 1711006773:0;v fzf
 : 1711009505:0;ocif curl -sL https://git.io/IRIStsv | v
 : 1711009606:0;echo hi | nw vim
 : 1711009620:0;echo hi | nw v
@@ -11101,7 +11089,6 @@ e ia inheritenv
 : 1711324950:0;pen-els bible-canonicalise-ref 1K
 : 1711325226:0;echo hi | pin
 : 1711325236:0;echo yo | pin
-: 1711325368:0;v pen-e
 : 1711325463:0;'env' 'COLORTERM=truecolor' 'TERM=xterm-24bit' 'EMACS_TERM_TYPE=xterm-24bit' '/usr/local/bin/emacsclient' '-a' '' '-t' '-s' 'DEFAULT' '-e' '(kill-frame)'
 : 1711325555:0;'env' TMPDIR=/tmp 'COLORTERM=truecolor' 'TERM=xterm-24bit' 'EMACS_TERM_TYPE=xterm-24bit' '/usr/local/bin/emacsclient' '-a' '' '-t' '-s' 'DEFAULT' '-e' '(kill-frame)'
 : 1711325624:0;v /tmp/pen-emacsclient.txt
@@ -11273,8 +11260,6 @@ e ia inheritenv
 : 1711788741:0;John 12:48
 : 1711788809:0;Luke 6:47
 : 1711789156:0;/usr/bin/firefox https://boxbase.org/entries/2020/may/18/diy-io-monad/
-: 1711789159:0;bg
-: 1711789161:0;disown
 : 1711789315:0;"runhaskell" "haskell_examples.hs"
 : 1711845771:0;nasb Romans 1:16
 : 1711846021:0;v irish.txt
@@ -13306,7 +13291,6 @@ agi texstudio
 : 1715905119:0;shorg Isaiah 58
 : 1715925402:0;Philippians 4:6-7
 : 1715928648:0;1 John 3:21
-: 1715929922:0;v pen
 : 1715936195:0;John 14:7
 : 1715936270:0;John 14:10
 : 1715979461:0;I Corinthians 13:1-8
@@ -18227,7 +18211,6 @@ apt -y --fix-broken install
 : 1730369118:0;gum-confirm "hdlksfj"
 : 1730369122:0;v gum-confirm
 : 1730369161:0;gum confirm
-: 1730369164:0;gum-confirm
 : 1730369176:0;gum file
 : 1730369180:0;gum
 : 1730369189:0;cat /root/.emacs.d/host/pen.el/scripts/babashka/utils/hiragana-to-romanji.bb | gum pager
@@ -18274,7 +18257,6 @@ apt -y --fix-broken install
 : 1730412431:0;ln -sf ~/.emacs.d/pen.el/config/nvimrc ~/.nvimrc
 : 1730412436:0;ls -ldt ~/.vim
 : 1730412626:0;vim
-: 1730412864:0;pen
 : 1730413252:0;v aix_api_key
 : 1730413280:0;v melee-guy-stars.jpg
 : 1730413283:0;feh melee-guy-stars.jpg
@@ -18374,14 +18356,12 @@ apt -y --fix-broken install
 : 1730431149:0;cd downloads
 : 1730431151:0;s
 : 1732566987:0;cat /root/.emacs.d/host/pen.el/scripts/babashka/utils/fzf.bb | fzf.bb
-: 1732610880:0;gipe.bb
 : 1732612347:0;v links.org
 : 1732612355:0;which -a pwd
 : 1732612358:0;v pwd
 : 1732612366:0;v listen.org
 : 1732612370:0;ls | lolcat
 : 1732616738:0;nano /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
-: 1732616742:0;nano listen.org
 : 1732616762:0;nvc emacs -nw
 : 1732616767:0;nvc emacs -nw -Q
 : 1732616772:0;nvc -2 emacs -nw -Q
@@ -18514,7 +18494,6 @@ apt -y --fix-broken install
 : 1732677702:0;"pvd" "-2" "config/pen/tablist-test.csv" ; exit "$?"
 : 1732677722:0;nvpvd config/pen/cross_references.csv
 : 1732677724:0;"pvd" "-2" "config/pen/cross_references.csv" ; exit "$?"
-: 1732677764:0;sh-yank
 : 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
 : 1732677955:0;cd ~/.sword
 : 1732679634:0;git status
@@ -18682,7 +18661,6 @@ apt -y --fix-broken install
 : 1732855752:0;v sout
 : 1732855868:0;v pen-tm
 : 1732855878:0;v tpop
-: 1732855890:0;v toggle-tmux-popup
 : 1732856109:0;tmux display -p "#{session_name}"
 : 1732856149:0;tpop
 : 1732925726:0;v clipboard.txt
@@ -18699,11 +18677,9 @@ apt -y --fix-broken install
 : 1733190448:0;nvim /
 : 1733190549:0;ead '-u $HOME/.nvimrc'
 : 1733190699:0;excitedness.rkt --excited
-: 1733191005:0;nano
 : 1733191134:0;pen-bw & disown
 : 1733191352:0;v in-tty
 : 1733192414:0;emacs -nw -Q
-: 1733192451:0;man tmux
 : 1733192608:0;v tm
 : 1733192734:0;tm clone-pane
 : 1733193114:0;vimhelp syntax
@@ -18712,10 +18688,8 @@ apt -y --fix-broken install
 : 1733193556:0;if test -f $HOME/.emacs.d/host/pen.el/config/syntax.vim; then\
  ln -sf $HOME/.emacs.d/host/pen.el/config/syntax.vim ~/syntax.vim\
 fi
-: 1733194071:0;cd src
 : 1733194072:0;ead black_and_white
 : 1733194247:0;tmux-colour
-: 1733194249:0;tmux-bw
 : 1733194512:0;pen-rc-get black_and_white
 : 1733194522:0;pen-rc-test black_and_whithh
 : 1733194718:0;pen-rc-test black_and_white
@@ -18728,14 +18702,11 @@ fi
 : 1733195580:0;v pen-rc-test
 : 1733195615:0;pen-rc-test -s truecolor
 : 1733195617:0;pen-rc-test -f truecolor
-: 1733195991:0;nvc nano
 : 1733196008:0;nvim
 : 1733196014:0;nvim /etc/hosts
 : 1733196024:0;nvim /root/programs/tmux/capture/tf_tmcapturerJR70HN.txt
 : 1733196042:0;v nvt
 : 1733196104:0;v nv
-: 1733196106:0;v nvc
-: 1733196108:0;v nvim
 : 1733196130:0;which -a nvim
 : 1733196140:0;vim ~/.nvimrc
 : 1733196226:0;pen-rc-set black_and_white off
@@ -18745,13 +18716,8 @@ fi
 : 1733196281:0;nvim /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
 : 1733196286:0;v /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
 : 1733196527:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
-: 1733196685:0;v ~/syntax.vim
 : 1733197137:0;v ~/.nvimrc
-: 1733197255:0;penq
 : 1733210468:0;cd ~/.emacs.d/host/pen.el/src
-: 1733210470:0;sl
-: 1733210474:0;v pen-faces.el
-: 1733210502:0;v tmux-bw
 : 1733210512:0;v run.sh
 : 1733210551:0;pen-test-rc -f black_and_white
 : 1733210562:0;echo $?
@@ -18762,26 +18728,16 @@ fi
  tmux-bw\
 fi
 : 1733211406:0;echo "$PS1"
-: 1733211408:0;pen-rc-test -f black_and_white
-: 1733211410:0;echo "$?"
-: 1733211442:0;v ~/.pen/pen.yaml
 : 1733211478:0;echo "$PROMPT_COMMAND"
 : 1733211486:0;env
 : 1733211635:0;man zshoptions
 : 1733211674:0;man zsh
 : 1733211688:0;echo "$PROMPT"
 : 1733211694:0;git_custom_status
-: 1733212565:0;cd ~/.pen
-: 1733212567:0;cd conf
-: 1733212569:0;cd ..
-: 1733212907:0;v pen-bw
 : 1733212913:0;pen-bw
 : 1733215836:0;htop DEFAULT
-: 1733215926:0;sh-general
-: 1733215929:0;cd config
 : 1733215935:0;tp find-here-path "*faces*"
 : 1733215945:0;v pen/faces.el
-: 1733216067:0;pin
 : 1733216088:0;v /root/.pen/faces.el
 : 1733219247:0;echo hello | hls reverse reverse
 : 1733219251:0;v hls
@@ -18802,13 +18758,133 @@ fi
 : 1733219650:0;infocmp -1 ansi |grep sgr0=
 : 1733219661:0;tput -T ansi sgr0
 : 1733219723:0;v ~/.bashrc
-: 1733219900:0;pe
-: 1733220616:0;pen-e -D pen-emacsd-1
-: 1733220707:0;v
 : 1733220714:0;bas
-: 1733220715:0;bash
-: 1733220772:0;pwd
-: 1733220773:0;ls
-: 1733220864:0;v v
 : 1733220881:0;v ~/.zshrc
 : 1733220898:0;penq
+: 1733278246:0;"pen-tcp-server" "5369" "(tetris)"
+: 1733278486:0;nvc nano
+: 1733278946:0;bg
+: 1733278947:0;disown
+: 1733286114:0;v echo-server.el
+: 1733286261:0;cd conf
+: 1733286262:0;cd ..
+: 1733286298:0;mcd emacs-tcp-server-ports
+: 1733286366:0;v 5393
+: 1733286380:0;rm 5393
+: 1733286412:0;v pen-emacsd-1
+: 1733286437:0;v pen-e
+: 1733286646:0;sl
+: 1733286837:0;cat DEFAULT
+: 1733286840:0;cat pen-emacsd-1
+: 1733286867:0;v DEFAULT
+: 1733286881:0;pen-e -D pen-emacsd-1 -e-tcp "(tetris)"
+: 1733287018:0;v
+: 1733287049:0;pen-e -D DEFAULT -e-tcp "(pen-disable-all-faces)"
+: 1733287052:0;pen-e -D DEFAULT -e-tcp "(pen-enable-all-faces)"
+: 1733287056:0;pen-e -D DEFAULT -e-tcp "(tetris)"
+: 1733287099:0;v pen-bw
+: 1733287136:0;tp find-here-path "*enable-al*"
+: 1733287138:0;tp find-here-path "*disable-all*"
+: 1733287145:0;ls -ldt container/pen-disable-all-faces
+: 1733287163:0;v ./pen-tcp-disable-all-faces-all-workers
+: 1733287176:0;cd ~/.pen
+: 1733287179:0;cd emacs-tcp-server-ports
+: 1733287181:0;sh-yank
+: 1733287263:0;v in-pen
+: 1733287341:0;pen-tcp-disable-all-faces-all-workers
+: 1733287467:0;ln -sf pen-e-tcp-all-workers pen-disable-all-faces-tcp
+: 1733287473:0;pen-disable-all-faces-tcp
+: 1733287482:0;ln -sf pen-e-tcp-all-workers pen-enable-all-faces-tcp
+: 1733287503:0;pen-enable-all-faces-tcp
+: 1733287611:0;pen-tm -d sps -nv slmenu
+: 1733287731:0;cd config
+: 1733287732:0;tp find-here-path "*tmux*"
+: 1733287918:0;tmux set status-bg 207
+: 1733287921:0;tmux set status-bg colour207
+: 1733288058:0;v tmux-bw.conf
+: 1733288100:0;pen-e -D DEFAULT
+: 1733291126:0;cd src
+: 1733291128:0;v pen-faces.el
+: 1733291141:0;pen-e -D pen-emacsd-1 /root/.emacs.d/host/pen.el/src/pen-faces.el
+: 1733291179:0;v pen
+: 1733291222:0;tmux set status-bg none
+: 1733291292:0;tmux set status-bg white
+: 1733291401:0;tmux set status-bg colour015
+: 1733291403:0;tmux set status-bg colour0
+: 1733291405:0;tmux set status-bg colour1
+: 1733291406:0;tmux set status-bg colour2
+: 1733291408:0;tmux set status-bg colour3
+: 1733291409:0;tmux set status-bg colour4
+: 1733291410:0;tmux set status-bg colour5
+: 1733291411:0;tmux set status-bg colour6
+: 1733291413:0;tmux set status-bg colour7
+: 1733291414:0;tmux set status-bg colour8
+: 1733291415:0;tmux set status-bg colour9
+: 1733291417:0;tmux set status-bg colour10
+: 1733291419:0;tmux set status-bg colour11
+: 1733291420:0;tmux set status-bg colour12
+: 1733291421:0;tmux set status-bg colour13
+: 1733291422:0;tmux set status-bg colour14
+: 1733291423:0;tmux set status-bg colour15
+: 1733291424:0;tmux set status-bg colour16
+: 1733291426:0;tmux set status-bg colour17
+: 1733291427:0;tmux set status-bg colour18
+: 1733291432:0;tmux set status-bg colour19\
+
+: 1733291434:0;tmux set status-bg colour20\
+
+: 1733291436:0;tmux set status-bg colour21
+: 1733291437:0;tmux set status-bg colour30
+: 1733291439:0;tmux set status-bg colour244
+: 1733291442:0;tmux set status-bg colour255
+: 1733291446:0;tmux set status-bg colour254
+: 1733291449:0;tmux set status-bg terminal
+: 1733291451:0;tmux set status-bg default
+: 1733291855:0;tmux set status-bg brightwhite
+: 1733291865:0;man tmux
+: 1733291893:0;tmux set -u status-bg brightwhite
+: 1733291903:0;tmux set -u status-fg brightwhite
+: 1733291910:0;tmux set -g status-bg brightwhite
+: 1733291927:0;v v
+: 1733291957:0;bash
+: 1733291979:0;tmux source $EMACSD/pen.el/config/tmux-bw.conf
+: 1733291985:0;v $EMACSD/pen.el/config/tmux-bw.conf
+: 1733292199:0;v tmux-bw
+: 1733292237:0;tmux-bw
+: 1733292242:0;tmux set -u status-bg
+: 1733292244:0;tmux set -u status-fg
+: 1733292263:0;tmux source tmux.conf
+: 1733292266:0;tmux source tmux-bw.conf
+: 1733292451:0;pen-e -D pen-emacsd-1
+: 1733292740:0;pin
+: 1733292744:0;pen
+: 1733299406:0;gum-confirm
+: 1733299421:0;gipe.bb
+: 1733299599:0;v ~/.pen/pen.yaml
+: 1733299687:0;echo hi | fzf
+: 1733299726:0;v ~/syntax.vim
+: 1733299936:0;nvc -2 nano
+: 1733299946:0;nano
+: 1733299949:0;nano listen.org
+: 1733300107:0;sh-general
+: 1733300110:0;ead nvc -E
+: 1733300256:0;nvc
+: 1733300267:0;v nvc
+: 1733300274:0;v fzf
+: 1733300423:0;v nvim
+: 1733300441:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
+: 1733300450:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'; pak\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
+: 1733300515:0;echo "hi\nyo" | fzf
+: 1733300565:0;pe
+: 1733300579:0;v toggle-tmux-popup
+: 1733300608:0;pen-rc-test -f black_and_white
+: 1733300612:0;echo "$?"
+: 1733300705:0;v spinner-start
+: 1733300723:0;v spinner
+: 1733300751:0;spinner-start Cool
+: 1733300931:0;spinner-start -b sleep 5
+: 1733300984:0;pwd
+: 1733300986:0;v blocked-patterns.txt
+: 1733300992:0;v fp.ini
+: 1733300993:0;ls
+: 1733300995:0;v fp.cfg

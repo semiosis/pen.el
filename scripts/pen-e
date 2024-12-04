@@ -16,6 +16,35 @@ test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
 test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 
+: "${SOCKET:="DEFAULT"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -D) {
+        SOCKET="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -e-tcp) {
+        E_TCP_CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test -n "$E_TCP_CMD"; then
+    if test -f "/root/.pen/emacs-tcp-server-ports/${SOCKET}"; then
+        port="$(cat "/root/.pen/emacs-tcp-server-ports/${SOCKET}")"
+        "pen-tcp-server" "$port" "$E_TCP_CMD"
+    fi
+    exit "$?"
+fi
+
 unset EMACSD_BUILTIN
 test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
 export EMACSD_BUILTIN
@@ -406,7 +435,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: "${SOCKET:="DEFAULT"}"
 : "${EMACS_USER_DIRECTORY:="$REPOS/pen-emacsd"}"
 : "${EMACS_VERSION:="28"}"
 : "${EMACS_VARIANT:="pen-emacsd"}"
@@ -430,18 +458,6 @@ export EMACS_VERSION
 export EMACS_USER_DIRECTORY
 export EMACS_BIN
 export EMACSCLIENT_BIN
-
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -D) {
-        SOCKET="$2"
-        shift
-        shift
-    }
-    ;;
-
-    *) break;
-esac; done
 
 FT_DETECT=n
 

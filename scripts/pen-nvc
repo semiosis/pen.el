@@ -27,7 +27,7 @@ aqf() { apply q "$@" | bs '`'; }
 # nvt -2 man less
 # nvt -2 elinks "http://news.ycombinator.com"
 
-EVAL=n
+DO_EXEC=n
 precmd=
 postcmd=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -50,7 +50,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -E) {
-        EVAL=y
+        DO_EXEC=y
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -doeval) {
+        DO_EVAL=y
         shift
     }
     ;;
@@ -64,18 +72,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$NO_NVC" = "y"; then
-    "$@"
+: "${CMD:="$(cmd "$@")"}"
+
+if test "$NO_NVC" = "y" || pen-rc-test -f black_and_white; then
+    eval "$CMD"
     exit "$?"
 fi
 
-CMD="$(cmd "$@")"
-
 if test "$#" -eq 0; then
-    CMD="\"zsh\""
+    : "${CMD:="zsh"}"
 fi
 
-if test "$EVAL" = "y"; then
+if test "$DO_EVAL" = "y"; then
     CMD="eval $CMD"
 fi
 

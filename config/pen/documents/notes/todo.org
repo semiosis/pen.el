@@ -1,3 +1,38 @@
+* TODO Make a caching mechanism for pen-rc-test so that pen-rc-test black_and_white is even faster
+
+* TODO Maybe learn some chess plays
+This seems like a lot of work though.
+
+* TODO Figure out how to get =pen= (GUI pen.el) to start with a decent frame size
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (make-frame '((width . 40) (height . 30)))
+#+END_SRC
+
+* TODO Work on fixing all the bugs of the tmux b&w/colour toggling
+I think I should have a database to keep track of window formats, or just do it all programmatically
+
+* TODO Make a commands menu for tmux, based on emacs
+- How featureful?
+- How to invoke it?
+
+** Options:
+- Through a lean emacs and transient
+- Through an fzf
+
+* TODO Set up also org-roam
+I think it'd be really cool to be able to do work outside.
+
+* TODO Continue working on making B&W mode better
+
+* TODO Fix GUI with b&w mode j:pen-disable-all-faces
+GUI seems to crash.
+Also, its font size is way too small.
+
+** TODO Make it so the GUI starts at a certain width and height
+
+** TODO make e:pen-disable-all-faces use the tcp-server instead
+e:/root/.emacs.d/host/pen.el/scripts/container/pen-disable-all-faces
+
 * TODO Make a handy data store for looking up key value pairs
 Use this for remembering which of the tmux windows are from autofiles.
 This way I can toggle b&w mode and colour mode a bit better.

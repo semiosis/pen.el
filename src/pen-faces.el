@@ -1271,6 +1271,33 @@ Also see option `magit-blame-styles'."
            (set-face-foreground 'default "#ffffff" fr)
            (set-face-background 'default "#000000" fr))
 
+    ;; (set-foreground-color 'unspecified)
+  ;; (set-background-color 'unspecified)
+
+  ;; I think the GUI needs real colours or it crashes when the GUI appears,
+  ;; But it needs to then specify 'unspecified as above or certain things wont appea
+
+  ;; If I need to use 'unspecified for terminals, then use this display-graphic-p check.
+  ;; But #ffffff seems to be brighter than the xterm color255 so keep ffffff.
+
+  (cl-loop for fr in (frame-list) do
+           (with-selected-frame fr
+             (if (display-graphic-p)
+                 (progn
+                   ;; I can't use unspecified for the GUI
+                   (set-foreground-color "#ffffff")
+                   (set-background-color "#000000"))
+               (progn
+                 ;; #ffffff is an xterm-24bit colour
+                 ;; (set-foreground-color "#ffffff")
+                 ;; Unspecified makes the white as white as vim
+                 ;; It's "default white" taken from the terminal
+                 (set-foreground-color 'unspecified)
+                 ;; White is whiter than the default white.
+                 ;; (set-foreground-color "White")
+                 (set-background-color "#000000")))))
+
+  ;; Did this annihilate the frame dimensions?
   (setq default-frame-alist
         '(;; (set-background-color "#1e1e1e")
           ;; (set-foreground-color "white")
@@ -1279,6 +1306,9 @@ Also see option `magit-blame-styles'."
           (vertical-scroll-bars)
           (left-fringe . -1)
           (right-fringe . -1)))
+
+  (add-to-list 'default-frame-alist '(width . 80))
+  (add-to-list 'default-frame-alist '(height . 30))
 
   ;; (tv "hi")
 
@@ -1699,7 +1729,11 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
 
-           (cl-loop for f in '(bible-verse-ref)
+           (cl-loop for f in '(bible-verse-ref
+                               ;; magit-diff-context-highlight
+                               ;; magit-diff-context
+                               magit-diff-hunk-heading-highlight
+                               magit-diff-hunk-heading)
                     do
                     (set-face-attribute
                      f fr
@@ -1788,6 +1822,10 @@ Also see option `magit-blame-styles'."
                             ;; font-lock-comment-face
                             info-code-face
                             shr-code
+
+                            magit-diff-file-heading-highlight
+                            magit-diff-file-heading
+                            
 
                             bible-verse-ref-notes
 
@@ -1885,19 +1923,7 @@ Also see option `magit-blame-styles'."
 
   (pen-set-all-faces-height-1)
 
-  (set-foreground-color 'unspecified)
-  (set-background-color 'unspecified)
 
-  ;; I think the GUI needs real colours or it crashes when the GUI appears,
-  ;; But it needs to then specify 'unspecified as above or certain things wont appea
-
-  ;; If I need to use 'unspecified for terminals, then use this display-graphic-p check.
-  ;; But #ffffff seems to be brighter than the color255
-  ;; if (display-graphic-p)
-  (cl-loop for fr in (frame-list) do
-           (with-selected-frame fr
-             (set-foreground-color "#ffffff")
-             (set-background-color "#000000")))
 
   ;; This must come last
   (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))

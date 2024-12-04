@@ -38,8 +38,14 @@ if test -n "$runfn"; then
     exit "$?"
 fi
 
-rainbow=y
-bluebg=y
+if pen-rc-test -f black_and_white; then
+    rainbow=n
+    bluebg=n
+else
+    rainbow=y
+    bluebg=y
+fi
+
 paused=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

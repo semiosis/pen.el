@@ -1,3 +1,25 @@
+* Use tmux's =F1 Space= to run these
+#+BEGIN_SRC bash -n :i bash :async :results none :lang text
+  pen-enable-all-faces-tcp
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results none :lang text
+  pen-disable-all-faces-tcp
+#+END_SRC
+
+* 
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  pen-e -D DEFAULT -e-tcp "(pen-disable-all-faces)"
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  pen-e -D DEFAULT -e-tcp "(pen-enable-all-faces)"
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  pen-e -D pen-emacsd-1 -e-tcp "(tetris)"
+#+END_SRC
+
 * 
 #+BEGIN_QUOTE
   *Daniel 5:8-9* - Then all the king's wise men came in, but they could not read the writing or make known to the king the interpretation. Then King Belshazzar was greatly alarmed, and his color changed, and his lords were perplexed. (ESV)
