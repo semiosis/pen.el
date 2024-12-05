@@ -3435,7 +3435,6 @@ fi\
 : 1698797455:0;v eterm-256color.ti
 : 1698797515:0;v screen-256color.ti
 : 1698797921:0;export TERM=xterm-2color
-: 1698798189:0;export TERM=screen-2color
 : 1698798202:0;export TERM=vt100
 : 1698798223:0;man tic
 : 1698798246:0;infocmp vt100 > vt100.ti
@@ -7530,7 +7529,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703225907:0;git commit -m "22.12.23"
 : 1703225929:0;tp find-here-path "*jeff*"
 : 1703225932:0;v devotionals/jeff-vines--word-for-today
-: 1703226174:0;tpop vim
 : 1703226258:0;tpop nem I Corinthians
 : 1703226493:0;v /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
 : 1703275913:0;2 Cor 1:22 | v
@@ -8507,16 +8505,13 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704919042:0;pen-cterm-ssh bash -c "echo hi" | v
 : 1704919087:0;pen-cterm-ssh zsh -c "echo hi" | v
 : 1704919169:0;zsh -c "echo hi"
-: 1704919185:0;. ~/.profile
 : 1704919187:0;zh
-: 1704919190:0;zsh
 : 1704919442:0;which pen-cterm-ssh
 : 1704919446:0;which -a pen-cterm-ssh
 : 1704919453:0;bash -c "kdlsjf"
 : 1704919455:0;bash -c "echo hi"
 : 1704919459:0;bash -c ". ~/.profile; echo hi"
 : 1704919466:0;pen-cterm-ssh zsh
-: 1704919470:0;env | v
 : 1704921751:0;j d-group-get-weekly-scripture-memory
 : 1704922410:0;man date
 : 1704922424:0;date +%g
@@ -9177,7 +9172,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706357279:0;v pen-asciinema-end-session
 : 1706357291:0;v pen-detach-asciinema-tmux-sessions
 : 1706357305:0;v $TMPDIR/asciinema-x-session.txt
-: 1706357341:0;tmux list-clients
 : 1706357358:0;pen-detach-asciinema-tmux-sessions
 : 1706357369:0;ead asciinema-client
 : 1706357614:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-5.org
@@ -11369,7 +11363,6 @@ e ia inheritenv
 : 1711943811:0;tpop convert /usr/share/doc/asciidoc/doc/images/tiger.png -geometry 800x480 -colors 16 sixel:-
 : 1711943828:0;convert /usr/share/doc/asciidoc/doc/images/tiger.png -geometry 800x480 -colors 16 sixel:- | v
 : 1711943831:0;convert /usr/share/doc/asciidoc/doc/images/tiger.png -geometry 800x480 -colors 16 sixel:-
-: 1711943839:0;echo "$TERM"
 : 1711943866:0;tpop zsh
 : 1711943871:0;TERM=xterm convert /usr/share/doc/asciidoc/doc/images/tiger.png -geometry 800x480 -colors 16 sixel:-
 : 1711943879:0;guild-of-thieves-sixel
@@ -12503,7 +12496,6 @@ Proverbs 4:14-15
 : 1714189102:0;hsqf xelatex
 : 1714189111:0;cd /root/.emacs.d/host/pen.el/docs/theology; "xelatex" "-interaction" "nonstopmode" "-output-directory" "./" "faith-and-judgement.tex"
 : 1714193157:0;1 John 2:3
-: 1714198099:0;v glossary.txt
 : 1714198327:0;Deuteronomy 14:2
 : 1714198413:0;2 Corinthians 6:1-20
 : 1714198451:0;II Corinthians 6:16-18
@@ -13584,7 +13576,6 @@ John 7:18
 : 1717375960:0;export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts\
 export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container\
 export PATH="$PATH:/root/go/bin"
-: 1717375976:0;v ~/.shellrc
 : 1717376863:0;export SCRIPTS=/root/.emacs.d/pen.el/scripts\
 if test -d /root/.emacs.d/host/pen.el/scripts; then\
  export SCRIPTS=/root/.emacs.d/host/pen.el/scripts\
@@ -13648,7 +13639,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717560065:0;1 John 4:17-21
 : 1717560820:0;v tpop vim
 : 1717560822:0;v tpop v
-: 1717560824:0;tpop v
 : 1717560827:0;tpop vipe v
 : 1717560876:0;v vipe
 : 1717560877:0;echo hi | tpop -E "/root/.emacs.d/host/pen.el/scripts/container/vipe v"
@@ -17605,7 +17595,6 @@ Proverbs 23:7
 : 1726373625:0;John 8:42
 : 1726374317:0;nem decorated onelined I Thessalonians 5:23 | v
 : 1726374508:0;cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers
-: 1726374509:0;nem todayfile
 : 1726376060:0;I Corinthians 15:45
 : 1726376153:0;Hosea 2:19â€ƒ³20
 : 1726376209:0;Galatians 4:6
@@ -18048,7 +18037,6 @@ apt -y --fix-broken install
 : 1726891716:0;acs libperl
 : 1726891759:0;command -v v
 : 1726891767:0;/usr/bin/vim /root/.emacs.d/host/pen.el/scripts/container/v
-: 1726892099:0;which -a tmux
 : 1726892108:0;tm nw
 : 1726892114:0;emacs -nw
 : 1726892154:0;cd ~/emacs
@@ -18080,7 +18068,6 @@ apt -y --fix-broken install
 : 1726895392:0;cd ~/repos/tmux
 : 1726895395:0;cd tmux
 : 1726895424:0;./configure --enable-sixel --prefix=$HOME/.local
-: 1726895453:0;tmux
 : 1726895464:0;cd ~/repos/vim
 : 1726895485:0;make clean
 : 1726895488:0;make distclean
@@ -18237,13 +18224,11 @@ apt -y --fix-broken install
 : 1730371321:0;clojure --version
 : 1730403252:0;v pin
 : 1730403285:0;v docker
-: 1730410021:0;v ~/.profile
 : 1730410036:0;ls -ldt ~/.bashrc
 : 1730410059:0;rm ~/.bashrc
 : 1730410064:0;cp -a /root/.emacs.d/host/pen.el/config/bash/bashrc ~/.bashrc
 : 1730410762:0;ls -ldt ~/.emacs.d/pen.el
 : 1730411150:0;v /root/repos/pen-emacsd/straight.el/straight.el
-: 1730411367:0;v setup-term.sh
 : 1730411418:0;which -a sp
 : 1730411844:0;ls -ldt ~/.tmux.conf
 : 1730411858:0;ln -sf ~/.emacs.d/pen.el/config/tmux.conf ~/.tmux.conf
@@ -18539,7 +18524,6 @@ apt -y --fix-broken install
 : 1732695144:0;which -a racket
 : 1732695167:0;racket
 : 1732695272:0;v racket
-: 1732696066:0;o
 : 1732696073:0;pin .
 : 1732696291:0;use-language.rkt
 : 1732696343:0;chrome sample-racket-language.html
@@ -18593,7 +18577,6 @@ apt -y --fix-broken install
 : 1732844775:0;unbuffer echo hi | v
 : 1732844788:0;man unbuffer
 : 1732844833:0;hsqf pvd-play-out
-: 1732844860:0;man env
 : 1732844917:0;which -a visidatam
 : 1732844918:0;which -a visidata
 : 1732844934:0;v pvd
@@ -18660,7 +18643,6 @@ apt -y --fix-broken install
 : 1732855650:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session"
 : 1732855752:0;v sout
 : 1732855868:0;v pen-tm
-: 1732855878:0;v tpop
 : 1732856109:0;tmux display -p "#{session_name}"
 : 1732856149:0;tpop
 : 1732925726:0;v clipboard.txt
@@ -18679,8 +18661,6 @@ apt -y --fix-broken install
 : 1733190699:0;excitedness.rkt --excited
 : 1733191134:0;pen-bw & disown
 : 1733191352:0;v in-tty
-: 1733192414:0;emacs -nw -Q
-: 1733192608:0;v tm
 : 1733192734:0;tm clone-pane
 : 1733193114:0;vimhelp syntax
 : 1733193455:0;tp find-here-path "*syntax*"
@@ -18759,7 +18739,6 @@ fi
 : 1733219661:0;tput -T ansi sgr0
 : 1733219723:0;v ~/.bashrc
 : 1733220714:0;bas
-: 1733220881:0;v ~/.zshrc
 : 1733220898:0;penq
 : 1733278246:0;"pen-tcp-server" "5369" "(tetris)"
 : 1733278486:0;nvc nano
@@ -18778,7 +18757,6 @@ fi
 : 1733286840:0;cat pen-emacsd-1
 : 1733286867:0;v DEFAULT
 : 1733286881:0;pen-e -D pen-emacsd-1 -e-tcp "(tetris)"
-: 1733287018:0;v
 : 1733287049:0;pen-e -D DEFAULT -e-tcp "(pen-disable-all-faces)"
 : 1733287052:0;pen-e -D DEFAULT -e-tcp "(pen-enable-all-faces)"
 : 1733287056:0;pen-e -D DEFAULT -e-tcp "(tetris)"
@@ -18841,12 +18819,9 @@ fi
 : 1733291449:0;tmux set status-bg terminal
 : 1733291451:0;tmux set status-bg default
 : 1733291855:0;tmux set status-bg brightwhite
-: 1733291865:0;man tmux
 : 1733291893:0;tmux set -u status-bg brightwhite
 : 1733291903:0;tmux set -u status-fg brightwhite
 : 1733291910:0;tmux set -g status-bg brightwhite
-: 1733291927:0;v v
-: 1733291957:0;bash
 : 1733291979:0;tmux source $EMACSD/pen.el/config/tmux-bw.conf
 : 1733291985:0;v $EMACSD/pen.el/config/tmux-bw.conf
 : 1733292199:0;v tmux-bw
@@ -18866,7 +18841,6 @@ fi
 : 1733299936:0;nvc -2 nano
 : 1733299946:0;nano
 : 1733299949:0;nano listen.org
-: 1733300107:0;sh-general
 : 1733300110:0;ead nvc -E
 : 1733300256:0;nvc
 : 1733300267:0;v nvc
@@ -18875,7 +18849,6 @@ fi
 : 1733300441:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300450:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'; pak\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300515:0;echo "hi\nyo" | fzf
-: 1733300565:0;pe
 : 1733300579:0;v toggle-tmux-popup
 : 1733300608:0;pen-rc-test -f black_and_white
 : 1733300612:0;echo "$?"
@@ -18883,8 +18856,79 @@ fi
 : 1733300723:0;v spinner
 : 1733300751:0;spinner-start Cool
 : 1733300931:0;spinner-start -b sleep 5
-: 1733300984:0;pwd
 : 1733300986:0;v blocked-patterns.txt
 : 1733300992:0;v fp.ini
-: 1733300993:0;ls
 : 1733300995:0;v fp.cfg
+: 1733374148:0;tmux env
+: 1733374150:0;tmux showenv
+: 1733374151:0;tmux showenv | v
+: 1733374327:0;echo hi | tpop -E "PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb"
+: 1733374446:0;tpop vim
+: 1733374545:0;tmux list-clients
+: 1733375071:0;TERM=vt100 TMUX= tmux vim
+: 1733375075:0;TERM=vt100 TMUX= tmux new vim
+: 1733375082:0;TERM=screen-2color TMUX= tmux new vim
+: 1733375210:0;TERM=screen-2color TMUX= tmux -L YO new vim
+: 1733375222:0;expot TERM=screen-2color; TMUX= tmux -L YO new bash
+: 1733375235:0;expot TERM=screen-2color; TMUX= tmux -L YO new sh
+: 1733375251:0;which -a tmux
+: 1733375323:0;man tmux
+: 1733375347:0;export TERM=screen-2color; TMUX= tmux -L YO new sh
+: 1733375378:0;export TERM=vt100; TMUX= tmux -L YO new sh
+: 1733375463:0;vim ~/.pen/pen.yaml
+: 1733375479:0;TERM=screen-2color bash
+: 1733375484:0;export TERM=screen-2color; bash
+: 1733375518:0;v
+: 1733375520:0;emacs -nw -Q
+: 1733375522:0;tmux
+: 1733375531:0;export TERM
+: 1733375533:0;TMUX= tmux
+: 1733375594:0;echo "$TERM"
+: 1733375627:0;v tm
+: 1733375722:0;echo "$COLORTERM"
+: 1733376155:0;TERM=screen-2color zsh
+: 1733376161:0;env | v
+: 1733376171:0;export TERM=screen-2color; zsh
+: 1733376182:0;expot TERM=screen-2color
+: 1733376194:0;v ~/.zshrc
+: 1733376202:0;. ~/.profile
+: 1733376206:0;v ~/.profile
+: 1733376213:0;export TERM=screen-2color
+: 1733376219:0;. ~/.shellrc
+: 1733376258:0;sh-general
+: 1733376262:0;ead PEN_TERM
+: 1733376358:0;v ~/.shellrc
+: 1733376572:0;eval "echo hi | tpop -E \"PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb\""
+: 1733376621:0;cat /root/dump/tmp/scratchHefNev.txt
+: 1733376626:0;cat /root/dump/tmp/scratchHefNev.txt | s join ' '
+: 1733376650:0;eval "env $(env cat /root/dump/tmp/scratchHefNev.txt | s join ' ') tpop v"
+: 1733376669:0;echo "env $(env cat /root/dump/tmp/scratchHefNev.txt | s join ' ') tpop v"
+: 1733376675:0;echo "env $(env cat /root/dump/tmp/scratchHefNev.txt | s join ' ') tpop v" | v
+: 1733376695:0;echo "env $(env cat /root/dump/tmp/scratchHefNev.txt | q -l | s join ' ') tpop v"
+: 1733376862:0;v tpop
+: 1733376917:0;eval "env $(env cat /root/dump/tmp/scratchHefNev.txt | q -l | s join ' ') tpop v"
+: 1733376939:0;tpop v
+: 1733376943:0;env tpop v
+: 1733376953:0;man env
+: 1733376964:0;env YO=yo -- tpop v
+: 1733376968:0;env YO=yo tpop v
+: 1733376980:0;env YO=yo unbuffer tpop v
+: 1733377008:0;eval "env $(env cat /root/dump/tmp/scratchHefNev.txt | q -l | s join ' ') unbuffer tpop v"
+: 1733377180:0;v clojure-lsp
+: 1733377208:0;tmux kill-session -t popup:
+: 1733377504:0;export PEN_TERM=screen-2color
+: 1733377505:0;zsh
+: 1733377508:0;bash
+: 1733377528:0;TMUX= tmux -L YO
+: 1733377637:0;TERM=screen-2color TMUX= tmux -L YO new bash
+: 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
+: 1733377675:0;v setup-term.sh
+: 1733377784:0;v v
+: 1733377788:0;TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash
+: 1733380497:0;pe
+: 1733380515:0;pwd
+: 1733380515:0;ls
+: 1733380517:0;v glossary.txt
+: 1733381247:0;o
+: 1733381757:0;nem todayfile
+: 1733381839:0;penq

@@ -1,3 +1,31 @@
+* TODO 
+- Read Augustine
+
+https://www.gutenberg.org/files/3296/3296-h/3296-h.htm
+
+* TODO Consider donating to wikipedia/wikimedia
+
+* TODO Make it so I can start a screen-2color tmux for black and white mode
+
+I need to make it so tmux respects the TERM=screen-2color.
+It seems to completely ignore it.
+It does pass through the environment variable to the inner programs, but tmux is ignoring it itself.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  zrepl -E "TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash"
+#+END_SRC
+
+Remember:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  v +/"if test -n \"\$PENCONF_TERM\"; then" "$PENELD/scripts/setup-term.sh"
+#+END_SRC
+
+** Then make it so I can relaunch the current tmux session as a B&W session - this will be more difficult
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  v +/"reattach-bw) {" "$PENELD/scripts/pen-tm"
+#+END_SRC
+
 * TODO Make a caching mechanism for pen-rc-test so that pen-rc-test black_and_white is even faster
 
 * TODO Maybe learn some chess plays

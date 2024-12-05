@@ -3,6 +3,8 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
+unset TMUX_PANE
+
 # cd "$(pen-readln Dir)"
 echo "Starting in $(pwd)" 1>&2
 

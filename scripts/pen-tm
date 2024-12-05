@@ -1562,6 +1562,29 @@ case "$f" in
     }
     ;;
 
+    reattach-bw) {
+        pen-tm n "$f :: NOT IMPLEMENTED"
+
+        # sentinal_string="tm_sentinal_${RANDOM}_$$"
+
+        # current_session="$(tmux display -p "#{session_name}")"
+        # n_windows="$(tmux display -t "$CALLER_PANE" -p "#{session_windows}")"
+        # n_panes="$(tmux display -t "$CALLER_PANE" -p "#{window_panes}")"
+        # n_sessions="$(tmux display -t "$CALLER_PANE" -p "#{server_sessions}")"
+        # if test "$n_windows" = 1 && test "$n_panes" = 1 && test "$n_sessions" -gt 1 && ! test "$current_session" = popup; then
+        #     chosen="$(unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session")"
+        #     if test -n "$chosen"; then
+        #         # Sadly, "tmux choose-tree -Ns" does not wait, so I can't use it
+        #         tmux switch-client -t "$chosen" && tmux kill-pane -t "$CALLER_PANE"
+        #     else
+        #         tmux kill-pane -t "$CALLER_PANE"
+        #     fi
+        # else
+        #     tmux kill-pane -t "$CALLER_PANE"
+        # fi
+    }
+    ;;
+
     editsession) {
         {
             test -f .tmux.sh && echo .tmux.sh

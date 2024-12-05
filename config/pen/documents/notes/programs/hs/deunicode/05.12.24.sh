@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/docs/journal;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/docs/journal;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/docs/journal;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/docs/journal;  "deunicode" "#" "<==" "pen-c"

@@ -152,12 +152,17 @@
                     "Sidecar")
 
                (and (major-mode-enabled 'eww-mode)
-                    (concat (s-replace-regexp "^file:\/\/" ""
-                                              (url-encode-url
-                                               (or (eww-current-url)
-                                                   eww-followed-link)))
-                            "   "
-                            (plist-get eww-data :title)))
+                    (if semantic-path
+                        (concat (s-replace-regexp "^file:\/\/" ""
+                                                  (url-encode-url
+                                                   (or (eww-current-url)
+                                                       eww-followed-link)))
+                                "   "
+                                (plist-get eww-data :title))
+                      (s-replace-regexp "^file:\/\/" ""
+                                        (url-encode-url
+                                         (or (eww-current-url)
+                                             eww-followed-link)))))
 
                (and (major-mode-enabled 'bible-mode)
                     (let* ((reftuple

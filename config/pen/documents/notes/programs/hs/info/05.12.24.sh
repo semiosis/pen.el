@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "tmux" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "env" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "env" "#" "<==" "man"

@@ -14,6 +14,15 @@
 ;; TODO Also construct the buttons, etc.:
 ;; e:$EMACSD/pen.el/scripts/pen-eipe
 
+;; This comes from the emacs environment. I should really disable this environment variable in emacs.
+;; (show-environment)
+;; (setenv "TMUX_PANE" "")
+;; That was a sufficient solution to the problem.
+
+;; TODO make a way of getting the exact pane, or disabling this environment variable form the repl
+;; v +/"unset TMUX_PANE" "$PENELD/scripts/clojure-lsp"
+;; TODO See if I can get the pane from the repl
+;; (System/getenv "TMUX_PANE")
 (defn test
   ""
   []

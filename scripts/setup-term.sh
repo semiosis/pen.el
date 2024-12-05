@@ -19,7 +19,11 @@ stty stop undef; stty start undef
 # export PEN_DEBUG=y
 
 export LANG=en_US
-export TERM=screen-256color
+if test -n "$PEN_TERM"; then
+    export TERM="$PEN_TERM"
+else
+    export TERM=screen-256color
+fi
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 

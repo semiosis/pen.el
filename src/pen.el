@@ -6,6 +6,8 @@
 
 ;; why did this run twice?
 (message "start of pen.el")
+
+(setenv "TMUX_PANE" "")
  
 (setq large-file-warning-threshold nil)
 

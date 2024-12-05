@@ -43,7 +43,7 @@
 
 ;; Get the current buffer name, too
 (defun ph-get-path-string ()
-  (let ((gp (get-path nil t)))
+  (let ((gp (get-path nil t nil t)))
     (if gp
         (str gp)
       "(eq nil (get-path nil t))")))
