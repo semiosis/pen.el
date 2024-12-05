@@ -93,6 +93,12 @@ init-tm() {
         }
         ;;
 
+        -dospin) {
+            dospin=y
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
 
@@ -131,7 +137,12 @@ init-tm() {
     if test "$detached" = "y"; then
         :
     else
-        TMUX= tmux attach -t "${session_name}":
+        if test "$dospin" = "y"; then
+            TMUX= tmux attach -t "${session_name}": \; run -b "spinner-start -b"
+        else
+            TMUX= tmux attach -t "${session_name}":
+        fi
+
         echo init
     fi
 
@@ -3128,9 +3139,9 @@ case "$f" in
         if test "$NOCONTEXT" = "y"; then
             pen-shpv "pane_start_command" | {
                 sed -e 's/^.*start undef;\s\+//' -e 's/\s*;\s*ret=.*$//'
-            } | pen-xc -i -n
+            } | uq | sol-explode | pen-xc -i -n
         else
-            pen-shpv "pane_start_command" | pen-xc -i -n
+            pen-shpv "pane_start_command" | uq | sol-explode | pen-xc -i -n
         fi
     }
     ;;

@@ -461,7 +461,7 @@ is specified, `:italic' is ignored."
                                            where))
        (setq args (cddr args))))))
 
-(add-hook 'server-after-make-frame-functions 'pen-set-all-faces-height-1)
+(add-hook 'server-after-make-frame-hook 'pen-set-all-faces-height-1)
 
 (defun eww-set-heading-height-1 ()
   (interactive)
@@ -1061,8 +1061,8 @@ Also see option `magit-blame-styles'."
 (defun pen-new-frame-set-faces (frame)
   (with-selected-frame frame
     (pen-set-faces)))
-;; (add-hook 'server-after-make-frame-functions 'pen-set-faces)
-;; (remove-hook 'server-after-make-frame-functions 'pen-new-frame-set-faces)
+;; (add-hook 'server-after-make-frame-hook 'pen-set-faces)
+;; (remove-hook 'server-after-make-frame-hook 'pen-new-frame-set-faces)
 ;; (add-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
 ;; (remove-hook 'after-make-frame-functions 'pen-new-frame-set-faces)
 
@@ -1242,7 +1242,7 @@ Also see option `magit-blame-styles'."
   (setq pen-black-and-white t)
   (pen-rc-set "black_and_white" "on")
 
-  (global-hl-line-mode -1)
+  ;; (global-hl-line-mode -1)
   (add-hook 'dired-mode-hook 'enable-hl-line-mode)
 
   (advice-remove 'internal-set-lisp-face-attribute #'internal-set-lisp-face-attribute-around-advice)
@@ -1271,7 +1271,7 @@ Also see option `magit-blame-styles'."
            (set-face-foreground 'default "#ffffff" fr)
            (set-face-background 'default "#000000" fr))
 
-    ;; (set-foreground-color 'unspecified)
+  ;; (set-foreground-color 'unspecified)
   ;; (set-background-color 'unspecified)
 
   ;; I think the GUI needs real colours or it crashes when the GUI appears,
@@ -1501,7 +1501,7 @@ Also see option `magit-blame-styles'."
 
                       magit-section-highlight
 
-                      hl-line
+                      ;; hl-line
 
                       magit-diff-file-heading-highlight
                       magit-diff-removed-highlight
@@ -1698,6 +1698,8 @@ Also see option `magit-blame-styles'."
                                ;; bible-jesus-words
                                ;; bible-divine-name
 
+                               ;; hl-line
+
                                hc-trailing-whitespace
                                trailing-whitespace
                                whitespace-trailing
@@ -1743,6 +1745,23 @@ Also see option `magit-blame-styles'."
                      :box nil
                      :strike-through nil
                      :slant 'normal
+
+                     ;; :italic t
+                     )))
+
+  (cl-loop for fr in (frame-list)
+           do
+
+           (cl-loop for f in '(hl-line)
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video nil
+                     :overline nil
+                     :underline t
+                     :box nil
+                     :strike-through nil
+                     ;; :slant 'normal
 
                      ;; :italic t
                      )))
@@ -1948,8 +1967,10 @@ Also see option `magit-blame-styles'."
   (comment
    (pen-rc-set "black_and_white" "off")))
 
-; TODO Put this at the end of init
-; (honour-bw-mode)
+(add-hook 'server-after-make-frame-hook 'honour-bw-mode)
+
+;; TODO Put this at the end of init
+;; (honour-bw-mode)
 
 ;; 3 colours mode is not really possible
 ;; when the terminal is set to black and white.
@@ -1982,8 +2003,17 @@ Also see option `magit-blame-styles'."
   (interactive)
   (pen-rc-set "black_and_white" "off")
   (pen-load-faces)
+  ;; (global-hl-line-mode t)
   (pen-set-all-faces-height-1)
   (pen-snc "tmux-colour"))
+
+(defun pen-enable-all-faces-tcp ()
+  (interactive)
+  (pen-snc "pen-enable-all-faces-tcp"))
+
+(defun pen-disable-all-faces-tcp ()
+  (interactive)
+  (pen-snc "pen-disable-all-faces-tcp"))
 
 (comment
  (add-hook 'minibuffer-setup-hook

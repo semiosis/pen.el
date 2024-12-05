@@ -13,6 +13,11 @@ shpvs() {
         *) break;
     esac; done
 
+    echo pane_start_command | udl
+    pen-shpv pane_start_command | uq | sol-explode | awk 1 | sed 's/^/	/'
+    echo
+
+    echo variables | udl
     # out="$(
     for v in \
         pane_id \

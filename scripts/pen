@@ -2284,12 +2284,7 @@ IFS= read -r -d '' shcode <<HEREDOC
 
     echo Starting Pen.el 1>&2
     sleep 15
-
-    # After it has started, simply run again
-    # "$sn" tm new pen-watch-workers
-    ( sleep 2 && "$sn" sh tmux run -t pen: "spinner-start -b" ) & disown
-    # The spinner is stoppen in pen-banner.sh
-    "$sn" sh pen-tm init-or-attach -n pen
+    "$sn" sh pen-tm init-or-attach -n pen -dospin
 HEREDOC
     }
     ;;

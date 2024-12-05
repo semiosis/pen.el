@@ -367,10 +367,10 @@
       '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
     (bindings--define-key menu [mi-pen-disable-all-faces]
-      '(menu-item "Disable all faces (B&W-mode)" pen-disable-all-faces
+      '(menu-item "Disable all faces (B&W-mode)" pen-disable-all-faces-tcp
                   :help "Enable black and white mode - Useful in B&W xterm"))
     (bindings--define-key menu [mi-pen-enable-all-faces]
-      '(menu-item "Enable all faces (Colour-mode)" pen-enable-all-faces
+      '(menu-item "Enable all faces (Colour-mode)" pen-enable-all-faces-tcp
                   :help "Enable Colour mode - Useful in Colour xterm"))
     (bindings--define-key menu [mi-menu-bar-source-menu]
       `(menu-item "Pen.el source code" ,menu-bar-source-menu
