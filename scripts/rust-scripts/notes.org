@@ -1,3 +1,9 @@
 https://rust-script.org/
 
-cargo install rust-script
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cargo install rust-script
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cargo-quickinstall rust-script
+#+END_SRC

@@ -10,7 +10,9 @@ if printf -- "%s\n" "$title" | grep -q -P '^Star$'; then
 elif printf -- "%s\n" "$title" | grep -q -P ' - YouTube$'; then
     title="$(cat "$input_fp" | perl -l -0777 -ne 'print $1 if /<meta property="og:title" content="\s*(.*?)\s*">/si')"
     channel="$(cat "$input_fp" | xurls | scrape "http://www.youtube.com/@.*" | head -n 1 | cut -d "@" -f 2)"
-    title="$title (@$channel)"
+    if test -n "$channel"; then
+        title="$title (@$channel)"
+    fi
 fi
 
 echo "$title"

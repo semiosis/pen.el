@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f $HOME/.cargo/bin/rust-script || cargo-quickinstall rust-script &>/dev/null
+
+$HOME/.cargo/bin/rust-script "$@"

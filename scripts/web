@@ -24,7 +24,7 @@ wget_title() {
         *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
         *) { oci wget -qO- "$url"; } ;;
     esac | \
-        scrape-title-from-html | recode-html | c ascify
+        scrape-title-from-html | recode-html | c ascify | sed 's/ \+/ /g'
 }
 
 chrome_title() {
@@ -35,7 +35,7 @@ chrome_title() {
         *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
         *) { dom-dump "$url"; } ;;
     esac | \
-        scrape-title-from-html | recode-html | c ascify
+        scrape-title-from-html | recode-html | c ascify | sed 's/ \+/ /g'
 }
 
 case "$opt" in

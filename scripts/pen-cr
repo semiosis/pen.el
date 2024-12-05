@@ -2381,10 +2381,18 @@ case "$file_type" in
         cd "$td_cr"
         ln -s "$rp"
         # rustc "./$fn"
-        rustc -g "./$fn"
-        cd_run "$cd_cr"
-        # And here I could use my terminal automation script to pretype
-        # the command
+
+        # It could be run by rust-script
+        if test "$(head -c 2 "$rp")" = "#!"; then
+            perl "$rp"
+            pen-pak
+            exit $?
+        else
+            rustc -g "./$fn"
+            cd_run "$cd_cr"
+            # And here I could use my terminal automation script to pretype
+            # the command
+        fi
         exit 0
     }
     ;;

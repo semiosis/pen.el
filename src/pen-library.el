@@ -834,7 +834,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 (defun pen-yank-path ()
   (interactive)
   (if (pen-selected-p)
-      (with-current-buffer (new-buffer-from-string (selection))
+      (with-current-buffer (new-buffer-from-string (pen-selection))
         (pen-guess-major-mode-set)
         (xc (get-path nil nil t))
         (kill-buffer))

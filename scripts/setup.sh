@@ -2542,3 +2542,5 @@ go install github.com/x-motemen/gore/cmd/gore@latest
 go install github.com/mdempsky/gocode@latest
 
 pip3 install ansi2html
+
+agi tidy
