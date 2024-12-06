@@ -2725,7 +2725,7 @@ May use to generate code from comments."
   ;; I should fix that.
 
   (if (f-exists-p "/root/.pen/faces.el")
-      (penl-load-faces))
+      (pen-load-faces))
 
   ;; In fact, I should set all faces bold here.
 

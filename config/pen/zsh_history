@@ -12036,7 +12036,6 @@ yo       \\
 : 1713143892:0;Matthew 5:17-18
 : 1713143929:0;Luke 16:17
 : 1713144265:0;Galatians 5:4
-: 1713144352:0;Ephesians 2:14-16
 : 1713144396:0;nasb Ephesians 2:14-16
 : 1713144508:0;John 6:53
 : 1713144535:0;John 6:55-56
@@ -13173,7 +13172,6 @@ agi texstudio
 : 1715813313:0;John 10:17-18
 : 1715813962:0;nasb Ephesians 2:8-9
 : 1715814226:0;Ephesians 2:8-0
-: 1715814228:0;Ephesians 2:8-10
 : 1715814906:0;rm .\#README.org
 : 1715816415:0;pdflatex symbols.tex
 : 1715816428:0;xelatex symbols.tex
@@ -13271,7 +13269,6 @@ agi texstudio
 : 1715839557:0;shorg Matthew 1-2
 : 1715849429:0;1 John 4:3
 : 1715890655:0;1 Cor 6
-: 1715890666:0;I Corinthians 6:19-20
 : 1715890889:0;Acts 1:8
 : 1715890910:0;Mark 16:17
 : 1715891091:0;Mark 1:23-26
@@ -13658,7 +13655,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717721781:0;Jeremiah 29:14
 : 1717721865:0;I Peter 1:2
 : 1717721871:0;I Peter 1:2-3
-: 1717722769:0;Romans 4:5
 : 1717722789:0;Numbers 14:18-19
 : 1717722802:0;Numbers 14:18
 : 1717724816:0;Genesis 4:3
@@ -15362,7 +15358,6 @@ Luke 5:8-10
 : 1722079464:0;Hebrews 12:2
 : 1722079541:0;2 Corinthians 8:2
 : 1722079548:0;2 Corinthians 8:1-2
-: 1722081285:0;Galatians 2:20
 : 1722136332:0;Isa 7:22
 : 1722136342:0;Amos 5:15
 : 1722136375:0;Matt 3:4
@@ -15384,7 +15379,6 @@ Luke 5:8-10
 : 1722196291:0;Ephesians 3:16-19
 : 1722196302:0;Ephesians 3:15-20
 : 1722196310:0;Ephesians 3:14-20
-: 1722196314:0;Ephesians 3:14-21
 : 1722198701:0;Luke 8:11-12
 : 1722198720:0;Luke 8:11-13
 : 1722198737:0;Luke 8:11-14
@@ -15767,7 +15761,6 @@ Luke 5:8-10
 : 1723347826:0;Daniel 7:25
 : 1723372236:0;BORO ee oy
 : 1723372241:0;Titus 3:3-7
-: 1723372511:0;Romans 5:9
 : 1723418112:0;1 Timothy 2:4
 : 1723418116:0;1 Timothy 2:3-4
 : 1723418123:0;1 Timothy 2:1-4
@@ -15975,7 +15968,6 @@ Luke 5:8-10
 : 1723952051:0;2 Timothy 1:3
 : 1723952101:0;2 Corinthians 1:12
 : 1723952581:0;Colossians 3:23-24
-: 1723952619:0;Colossians 3:23-25
 : 1723952663:0;Colossians 3:22-25
 : 1723953010:0;Psalm 110:4 | v
 : 1723953606:0;Psalm 82
@@ -18739,7 +18731,6 @@ fi
 : 1733219661:0;tput -T ansi sgr0
 : 1733219723:0;v ~/.bashrc
 : 1733220714:0;bas
-: 1733220898:0;penq
 : 1733278246:0;"pen-tcp-server" "5369" "(tetris)"
 : 1733278486:0;nvc nano
 : 1733278946:0;bg
@@ -18834,7 +18825,6 @@ fi
 : 1733292740:0;pin
 : 1733292744:0;pen
 : 1733299406:0;gum-confirm
-: 1733299421:0;gipe.bb
 : 1733299599:0;v ~/.pen/pen.yaml
 : 1733299687:0;echo hi | fzf
 : 1733299726:0;v ~/syntax.vim
@@ -18923,12 +18913,38 @@ fi
 : 1733377637:0;TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377675:0;v setup-term.sh
-: 1733377784:0;v v
 : 1733377788:0;TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash
-: 1733380497:0;pe
 : 1733380515:0;pwd
 : 1733380515:0;ls
 : 1733380517:0;v glossary.txt
 : 1733381247:0;o
 : 1733381757:0;nem todayfile
 : 1733381839:0;penq
+: 1733440555:0;gipe.bb
+: 1733447986:0;Luke 5:20-23
+: 1733448003:0;Mark 2:5-9
+: 1733448014:0;Matthew 9:2-5
+: 1733448034:0;I John 2:12
+: 1733448043:0;Luke 7:48
+: 1733448061:0;Luke 7:47-50
+: 1733448344:0;Luke 5:20
+: 1733448358:0;Luke 5:18-19
+: 1733448429:0;Romans 4:5
+: 1733449071:0;v v
+: 1733449346:0;Ephesians 2:8-10
+: 1733449561:0;Ephesians 2:14-16
+: 1733449644:0;Ephesians 2:11-18
+: 1733449673:0;nasb Ephesians 2:15
+: 1733449740:0;nod John 6:53
+: 1733449794:0;Galatians 3:28
+: 1733449987:0;pe
+: 1733450008:0;I Corinthians 6:19-20
+: 1733450026:0;I Corinthians 7:23
+: 1733450041:0;II Peter 2:1
+: 1733450109:0;Galatians 2:20
+: 1733450155:0;Colossians 3:23
+: 1733450162:0;Colossians 3:23-25
+: 1733450263:0;Romans 5:9
+: 1733450424:0;Ephesians 3:14-21
+: 1733450641:0;nasb Ephesians 2:15-18
+: 1733450650:0;nasb Ephesians 2:11-18

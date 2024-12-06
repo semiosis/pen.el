@@ -1,0 +1,6 @@
+cd /root/notes;  "nasb" "Ephesians" "2:15" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Ephesians" "2:15" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Ephesians" "2:15" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Ephesians" "2:15" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Ephesians" "2:15-18" "#" "<==" "zsh"
+cd /root/notes;  "nasb" "Ephesians" "2:11-18" "#" "<==" "zsh"
