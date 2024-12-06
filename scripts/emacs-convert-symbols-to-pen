@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+input_fp="$(cat | tf txt)"
+
+scriptfp="$(
+{
+    echo "#!/bin/bash"
+    echo
+    echo -n "sed "
+    cat "$input_fp" |
+    scrape "\(def[a-z]+ [^' ()]+" | cut -d ' ' -f 2 |
+    awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2- | tac | uniqnosort |
+    sed 's/.*/-e "s\/\\([^a-z-]\\)\\(&[^a-z-]\\)\/\\1pen-\\2\/g"/' | sed 's/$/ \\/' |
+    sed '2,$s/^/    /' | sed '$s/ \\$//'
+} | tf sh
+)"
+chmod a+x "$scriptfp"
+cat "$input_fp" | "$scriptfp" | pavs

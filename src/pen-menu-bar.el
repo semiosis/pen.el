@@ -1091,6 +1091,9 @@
           (bindings--define-key menu [mi-bethel]
             '(menu-item "Bethel" bethel
                         :help "Listen to Bethel"))
+          (bindings--define-key menu [mi-psalms-1-50]
+            '(menu-item "Psalms" psalms-1-50
+                        :help "Listen to the Psalms 1-50"))
           (bindings--define-key menu [cancel-menu]
             '(menu-item "Cancel" identity-command
                         :help "Cancel out of this menu"))

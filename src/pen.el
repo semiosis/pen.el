@@ -2503,6 +2503,7 @@ May use to generate code from comments."
 (require 'pen-rhizome)
 (require 'pen-net)
 (require 'pen-alarm)
+(require 'pen-position-list-navigator)
 (require 'pen-el-patch)
 (if (inside-docker-p)
 (require 'pen-header-line))
