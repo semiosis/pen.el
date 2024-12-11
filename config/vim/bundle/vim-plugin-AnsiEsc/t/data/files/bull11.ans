@@ -1,0 +1,212 @@
+[0;46;34m ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ [0;46;34m
+ ³ Bulletin #16             [1;46;37m_OUR_ Glossary of BBS Terms                      [0;46;34m³ [0;46;34m
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ [1;40;37m
+                         (w/apologies to MSI)
+
+   [1;40;32mWe hope you find this information useful.
+
+     [1;40;37mARQ -
+         [1;40;32mAwfully Repetitive Questionnaire. The questionnaire you
+         have to fill in when you log onto a board for the first time
+         that differs only slightly from board to board.
+
+     [1;40;37mASCII -
+         [1;40;32mAmerican Standard Code for Information Exchange.  A 7-bit binary
+         code representation of letters, numbers and happy faces.
+
+     [1;40;37mAsynchronous -
+         [1;40;32mA term used by modem professionals to make themselves look
+         smart and to confuse everyone else. Comare Synchronous, Parity,  
+         CRC, and in fact most of the rest of this file.
+
+     [1;40;37mAuto Answer -
+         [1;40;32mThe modem feature which means you have to unplug the modem as
+         well as the phone when you don't want to be disturbed.
+
+     [1;40;37mBaud Rate -
+         [1;40;32mThe variable B in the equation T=S/B, where T is time and S is  
+         the size of the file you want to download.
+
+     [1;40;37mBBS -
+         [1;40;32mBulletin Board System.
+
+     [1;40;37mBit -
+         [1;40;32mA computer signal so small as to be unimportant. Like a quark.
+
+     [1;40;37mBuffer -
+         [1;40;32mThe place data goes when the host modem bites off more than it 
+         can chew.
+
+     [1;40;37mBulletin Board System -
+         [1;40;32mA sure way to get rid of all that excess time and money. Many
+         hermits have turned from living in the desert to running a BBS as
+         their chosen form of self-discipline.
+
+     [1;40;37mByte -
+         [1;40;32mThe leftover bit at the end of all the files you download
+         that don't make a complete block.
+
+     [1;40;37mCarrier -
+         [1;40;32mAn open phone line. Dropping carrier=hanging up.
+
+     [1;40;37mConference -
+         [1;40;32mAn area of public messages on a Bulletin Board System, usually
+         with a particular topic. The topic serves no purpose except to give
+         the conference a name, since practically nothing posted in a
+         conference has anything to do with the topic.
+
+     [1;40;37mCCITT -
+         [1;40;32mA weird way of spelling "sit." What this has to do with   
+         communications we haven't figured out yet.
+
+     [1;40;37mCPS -
+         [1;40;32mConferences Per Sysop. The number of conferences a sysop
+         makes that people actually post in. The average CPS in Bakersfield 
+         is 2.
+     
+     [1;40;37mCRC -
+         [1;40;32mClashing Red Colors. The term for any ANSI drawing in which
+         it's impossible to tell which is light red and which is dark red.
+
+     [1;40;37mDownload -
+         [1;40;32mReceiving a file from a Bulletin Board System. This is a 
+         complicated process but very easy once you master it. How the
+         computers actually do the download is beyond us.
+
+     [1;40;37mDTE -
+         [1;40;32mDrastically Tacky Entry. A message left by someone new to 
+         computers or communications such as "HI!!!!!!!!!". This is an
+         unconscious sign that they are new and need help.
+
+     [1;40;37mDTR -
+         [1;40;32mDeter, according to the Short Circuit Industries Pseudo4800 
+         modem, which is actually only a 2400 but takes out all vowels in 
+         order to save time.
+
+     [1;40;37mData Compression Protocols -
+         [1;40;32mExternal protocols developed by PkWare in order to be able
+         to download PKWare products in half the time. Unfortunately, any
+         PKWare product you may wish to download takes less time to download
+         then the actual compression protocol, so they are rarely used.
+     
+     [1;40;37mData Transmission Protocols -
+         [1;40;32mUm... protocols for transmitting data. Don't ask stupid
+         questions. Right! On to the next one!
+
+     [1;40;37mEchomail -
+         [1;40;32mLocal message conferences on a Bulletin Board System, so called
+         because if it were a room it would echo whenever someone posted a
+         message.
+     
+     [1;40;37mExpanded Memory -
+         [1;40;32mThe ability to remember the file you wanted to download after
+         seeing the rest of the list.
+     
+     [1;40;37mExtended Memory -
+         [1;40;32mThe ability to remember the number of the file area you want
+         to list without having to list the areas.
+     
+     [1;40;37mFlow Control -
+         [1;40;32mA conspiracy between the modem companies to build imperfections
+         in some modems to make them transfer at lower speeds. This means
+         that they can charge $200+ for a 14400 baud modem.
+
+     [1;40;37mError Control Protocols -
+         [1;40;32mThese are a form of virus checking that scrutinizes each
+         individual block of data for a virus. Since it is very hard to
+         fit a virus inside a single block and the results are very
+         unreliable, this is obviously another way to slow down our modems.
+
+     [1;40;37mFreeware -
+         [1;40;32mComputer software which may be distributed on Bulletin Board
+         Systems, and for which the author requests no license fee or
+         registration fee. Either they were very kind or desperate for
+         recognition, or the software sucks.
+     
+     [1;40;37mFull Duplex -
+         [1;40;32mA sysop who runs a free BBS.
+
+     [1;40;37mHalf Duplex -
+         [1;40;32mThe co-sysop of a free BBS (it wasn't their idea).
+
+     [1;40;37mHost System -
+         [1;40;32mWhat the Coneheads would call a Bulletin Board System.
+
+     [1;40;37mLocal Area Network (LAN) -
+         [1;40;32m A BBS that never actually uses phone lines and allows access
+         to DOS.
+     
+     [1;40;37mMail Door -
+         [1;40;32mThe department of Sears that delivers doors to your home. 
+         This also has nothing to do with communications so we have no     
+         idea what it's doing in this glossary.
+
+     [1;40;37mMNP -
+         [1;40;32mMany Nutty People. The reason subscription BBSes make money.
+
+     [1;40;37mNetmail -
+         [1;40;32m Private mail that has been tampered with so as to go to a
+         different individual. A mail-netting program is used by unscrupulous
+         sysops to read their users' private mail without informing them of
+         it.
+        
+     [1;40;37mNRAM -
+         [1;40;32mNot Really Allocated Money. Embezzled funds. Where most of the
+         donations to BBSes come from.
+     
+     [1;40;37mON/OFF Hook -
+         [1;40;32m The practice of putting a fake hook on your hand and flipping
+         the ON/OFF switch on your computer rapidly with it while shouting, 
+         "I'll get ye, Peter Pan!"
+
+     [1;40;37mPacker -
+         [1;40;32m A BBS caller who has resorted to low-paying jobs such as work in
+         a packing shed in order to afford subscription BBSes.
+
+     [1;40;37mPacket -
+         [1;40;32m What a packer hears 32,767 times a day.
+
+     [1;40;37mParity -
+         [1;40;32m This file.
+
+     [1;40;37mProtocol -
+         [1;40;32m A set of rules used by both the host and remote computer in
+         order to avoid a fight between the two modems. This is especially
+         important when two modems from different companies are connected.     
+         
+     [1;40;37mPublic Domain -
+         [1;40;32mSoftware that anyone can screw up, not just the author.
+
+     [1;40;37mRemote Echo -
+         [1;40;32mA conference on which NOBODY ever posts.
+
+     [1;40;37mShareware -
+         [1;40;32mSoftware that can be distributed to other people. You're supposed
+         to send them money if you like it but nobody ever does.
+
+     [1;40;37mSysOp -
+         [1;40;32mThe operator of a Bulletin Board System. Sufficient proof for
+         legal insanity in most states.
+
+     [1;40;37mThread -
+         [1;40;32mWhat most BBSes are held together with.
+
+     [1;40;37mUnpacker -
+         [1;40;32mSomeone who was born rich and can afford all those subscription
+         BBSes. They occasionally go out in the fields and enrage the packers.
+
+     [1;40;37mUpload -
+         [1;40;32mSending a file to a BBS instead of recieving one. Usually only
+         practiced by sysops.
+
+     [1;40;37mV.21 -
+         [1;40;32mThe standard term for a communications program in first alpha
+         testing.
+
+     [1;40;37mV.22 and up -
+         [1;40;32mStandard terms for a communications program in other stages of
+         testing.
+
+
+[1;40;36m ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[0;46;34m End of Bulletin [1;40;36mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ÔÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¾

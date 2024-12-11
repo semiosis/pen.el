@@ -1,0 +1,412 @@
+## Main
+# main
+snippet main
+	int main(int argc, const char *argv[])
+	{
+		${0}
+		return 0;
+	}
+# main(void)
+snippet mainn
+	int main(void)
+	{
+		${0}
+		return 0;
+	}
+##
+## Preprocessor
+# #include <...>
+snippet inc
+	#include <${1:stdio}.h>
+# #include "..."
+snippet Inc
+	#include "${1:`vim_snippets#Filename("$1.h")`}"
+# ifndef...define...endif
+snippet ndef
+	#ifndef $1
+	#define ${1:SYMBOL} ${2:value}
+	#endif /* ifndef $1 */
+# define
+snippet def
+	#define
+# ifdef...endif
+snippet ifdef
+	#ifdef ${1:FOO}
+		${2:#define }
+	#endif
+# if
+snippet #if
+	#if ${1:FOO}
+		${0}
+	#endif
+# header include guard
+snippet once
+	#ifndef ${1:`toupper(vim_snippets#Filename('$1_H', 'UNTITLED_H'))`}
+
+	#define $1
+
+	${0}
+
+	#endif /* end of include guard: $1 */
+##
+## Control Statements
+# if
+snippet if
+	if (${1:true}) {
+		${0}
+	}
+snippet ife
+	if (${1:true}) {
+		${2}
+	} else {
+		${0}
+	}
+# else
+snippet el
+	else {
+		${0}
+	}
+# else if
+snippet elif
+	else if (${1:true}) {
+		${0}
+	}
+# ifi
+snippet ifi
+	if (${1:true}) ${0};
+# ternary -- if/else
+snippet ie
+	${1:/* condition */} ? ${2:a} : ${3:b}
+# switch
+snippet switch
+	switch (${1:/* variable */}) {
+		case ${2:/* variable case */}:
+			${3}
+			${4:break;}${5}
+		default:
+			${6}
+	}
+# switch without default
+snippet switchndef
+	switch (${1:/* variable */}) {
+		case ${2:/* variable case */}:
+			${3}
+			${4:break;}${5}
+	}
+# case
+snippet case
+	case ${1:/* variable case */}:
+		${2}
+		${3:break;}
+snippet ret
+	return ${0};
+##
+## Loops
+# for
+snippet for
+	for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+		${4}
+	}
+# for (custom)
+snippet forr
+	for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
+		${5}
+	}
+# while
+snippet wh
+	while (${1:/* condition */}) {
+		${2}
+	}
+# do... while
+snippet do
+	do {
+		${2}
+	} while (${1:/* condition */});
+##
+## Functions
+# function definition
+snippet fun
+	${1:void} ${2:function_name}(${3})
+	{
+		${4}
+	}
+# function declaration
+snippet fund
+	${1:void} ${2:function_name}(${3});
+##
+## Types
+# typedef
+snippet td
+	typedef ${1:int} ${2:MyCustomType};
+# struct
+snippet st
+	struct ${1:`vim_snippets#Filename('$1_t', 'name')`} {
+		${2:/* data */}
+	}${3: /* optional variable list */};
+# typedef struct
+snippet tds
+	typedef struct ${2:_$1 }{
+		${3:/* data */}
+	} ${1:`vim_snippets#Filename('$1_t', 'name')`};
+
+snippet enum
+	enum ${1:name} { ${0} };
+# typedef enum
+snippet tde
+	typedef enum {
+		${1:/* data */}
+	} ${2:foo};
+##
+## Input/Output
+# printf
+#	// size_t is %lu not %ul
+snippet pr
+	printf("${1:%s}\n"${0});
+snippet je
+	printf("Just entered: %s\n", ${0});
+# fprintf (again, this isn't as nice as TextMate's version, but it works)
+snippet fpr
+	fprintf(${1:stderr}, "${2:%s}\n"${3});
+# getopt
+##
+## Miscellaneous
+# This is kind of convenient
+snippet [
+	[${1}]
+snippet "
+	", "${0}"
+snippet ,"
+	, "${0}"
+snippet ef
+	exit(EXIT_FAILURE);
+snippet es
+	exit(EXIT_SUCCESS);
+snippet e1
+	exit(EXIT_FAILURE);
+snippet e0
+	exit(EXIT_SUCCESS);
+snippet noop
+	;
+snippet noop-for-function-call "can substitute for a function call"
+	(void)0
+snippet hwwtfisthisbad
+	#include <iostream.h>
+
+	main()
+	{
+		cout << "Hello World!";
+		return 0;
+	}
+snippet fe
+	;pack;ScaleSpacePyramid.cpp;for_each
+snippet for_each
+	;pack;ScaleSpacePyramid.cpp;for_each
+snippet exec
+	popen
+snippet sys-c
+	popen
+snippet po
+	popen
+snippet system
+	popen
+snippet ns
+	char cmd [100];
+	FILE* fh;
+
+	sprintf(cmd, "echo 'triggered %s' >> /tmp/dashboard.txt", program_bus_command);
+
+	if ((fh = popen(cmd, "r")) == NULL) {
+		printf("Error opening pipe!\n");
+		return -1;
+	}
+	pclose(fh);
+snippet popen
+	char cmd [100];
+	FILE* fh;
+
+	sprintf(cmd, "echo 'triggered %s' >> /tmp/dashboard.txt", program_bus_command);
+
+	if ((fh = popen(cmd, "r")) == NULL) {
+		printf("Error opening pipe!\n");
+		return -1;
+	}
+	pclose(fh);
+snippet warn_assign_int_to_char
+	char thing;
+	thing = 2198347;
+snippet systemstdout
+	#include <stdio.h>
+
+	int main()
+	{
+	  FILE* test = popen("sleep 4 && echo done!", "r");
+	  if (test == NULL)
+	  {
+		printf("FAIL!\n");
+		return 1;
+	  }
+	  
+	  char buffer[1028];
+	  
+	  while (fgets(buffer, 1028, test) != NULL)
+	  {
+		printf(buffer);
+	  }
+	  
+	  pclose(test);
+	  printf("Success.\n");
+	  
+	  return 0;
+	}  
+snippet ms
+	#include <string.h> /* c */
+	#include <cstring> /* cpp */
+	# for charactor arrays (char ScreenEvent[40]), though, don't put an &
+	memset(&${0:ModObj}, 0, sizeof($0));
+snippet memset
+	#include <string.h> /* c */
+	#include <cstring> /* cpp */
+	# for charactor arrays (char ScreenEvent[40]), though, don't put an &
+	memset(&${0:ModObj}, 0, sizeof($0));
+snippet el
+	} else {
+snippet iter-pointer "iterate pointer"
+	for (; *${1:pptr} != NULL; $1++)
+	{
+		${0}
+	}
+snippet n
+	NULL
+snippet mc
+	memcpy(${1:s}, ${0:str}, sizeof($1));
+snippet null
+	NULL`Xcp("#include <cstddef>")`
+snippet sprintf
+	char buffer [50];
+	int n, a=5, b=3;
+	n=sprintf(buffer, "ns '%s %d %d %s'", termname, m->x, m->y, line);`Xcp("#include <stdio.h>")`
+	printf ("[%s] is a string %d chars long\n",buffer,n);
+}
+snippet spf
+	sprintf(
+snippet sscanf
+	char* str = "Timings results : 120012";
+	int n = sscanf(str, "Timings results : %d", &time);`Xcp("#include <stdio.h>")`
+snippet spff
+	sprintf(buffer, "echo 'fb dimensions %d x %d' >> /tmp/fblog.txt", fbdimensions[0], fbdimensions[1]);
+	
+	if ((fh = popen(buffer, "r")) == NULL) {
+		printf("Error opening pipe!\n");
+		return -1;
+	}
+snippet wac
+	while (++i < argc)
+	{
+	}
+snippet strtol
+	char *str = &virtual_size[0], *p = str;
+	int val = (int)strtol(p, &p, 10);`Xcp("#include <stdio.h>")`
+snippet va_args_list
+	log-function
+snippet log-function
+	/**
+	 ************************************************************************************************
+	 * @brief   Primary function.  Is a glorified fprintf, that only prints when the level is
+	 *          equal or greater in seriousness than the ActiveLevel defined.  For instance,
+	 *          if the LEVEL is INFO_LEVEL, only FATAL, ERROR, WARN, and INFO will print.
+	 *          Used to allow for preformatting in wrapper functions.
+	 *
+	 *          logs will go to stderr and syslog
+	 *
+	 * @param   level = log level for this message
+	 * @param   format = printf style format string
+	 * @param   list = va args to pass to formatting functions
+	 *
+	 *  Author:     William Churchill
+	 *
+	 ************************************************************************************************/
+	void _logit(LogLevel level, const char *format, va_list list)
+	{
+		if (LogLevelIsActive(level))
+		{
+			struct timespec t;
+			clock_gettime(CLOCK_REALTIME, &t);
+			struct tm *mytm = localtime(&t.tv_sec);
+			auto timeFormat = "%d-%02d-%02d %02d:%02d:%02d:%09d - ";
+			fprintf(stderr, timeFormat, mytm->tm_year + 1900, mytm->tm_mon + 1, mytm->tm_mday, mytm->tm_hour, mytm->tm_min, mytm->tm_sec, t.tv_nsec);
+
+			switch (level)
+			{
+			case LogLevel::Fatal:
+				fprintf(stderr, "FATAL ");
+				break;
+			case LogLevel::Error:
+				fprintf(stderr, "ERROR ");
+				break;
+			case LogLevel::Warn:
+				fprintf(stderr, "WARN  ");
+				break;
+			case LogLevel::Info:
+				fprintf(stderr, "INFO  ");
+				break;
+			case LogLevel::Debug:
+				fprintf(stderr, "DEBUG ");
+				break;
+			case LogLevel::Trace:
+				fprintf(stderr, "TRACE ");
+				break;
+			default:
+			case LogLevel::None:
+				fprintf(stderr, "NONE  ");
+				break;
+			}
+			vfprintf(stderr, format, list);
+			vsyslog(LOG_ERR, format, list);
+		}
+	}
+
+	/**
+	 ************************************************************************************************
+	 * @brief Wrapper for _logit(), see that functions documentation for details
+	 ************************************************************************************************/
+	void logit(LogLevel level, const char *format, ...)
+	{
+		va_list list;
+		va_start(list, format);
+		_logit(level, format, list);
+		va_end(list);
+	}
+snippet getopt
+	int aflag = 0;
+	int bflag = 0;
+	char *cvalue = NULL;
+	int index;
+	int c;
+
+	opterr = 0;
+
+		while ((c = getopt (argc, argv, "abc:")) != -1)
+	switch (c)
+	{
+	case 'a':
+		aflag = 1;
+		break;
+	case 'b':
+		bflag = 1;
+		break;
+	case 'c':
+		cvalue = optarg;
+		break;
+	case '?':
+		if (optopt == 'c')
+			fprintf (stderr, "Option -%c requires an argument.\n", optopt);
+		else if (isprint (optopt))
+			fprintf (stderr, "Unknown option `-%c'.\n", optopt);
+		else
+			fprintf (stderr,
+					 "Unknown option character `\\x%x'.\n",
+					 optopt);
+		return 1;
+	default:
+		abort ();
+	}

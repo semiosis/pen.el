@@ -168,7 +168,15 @@
                            (df drracket
                                (pen-sn
                                 (cmd "drracket" (get-path nil t))
-                                nil nil nil t))))
+                                nil nil nil t))
+                           'racket-xp-next-definition
+                           'racket-xp-previous-definition
+                           'racket-xp-next-use
+                           'racket-xp-previous-use
+                           'racket-xp-next-error
+                           'racket-xp-previous-error
+                           'racket-xp-tail-next-sibling
+                           'racket-xp-tail-previous-sibling))
 (defset org-mode-funcs ;; (list 'org-latex-export-to-pdf 'tvipe-org-table-export)
   (list
    'pen-org-add-tag

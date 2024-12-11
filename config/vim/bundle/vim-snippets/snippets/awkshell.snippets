@@ -1,0 +1,49 @@
+snippet lasttoken
+	s lf
+snippet secondlasttablast
+	awk '{print \$(NF-1),"\t",\$NF}'
+snippet grep
+	awk '/regex/' file1 file2 file3
+snippet grep-with-filesname
+	awk '/regex/ { $0=FILENAME ": " $0; print }' file1 file2 file3
+snippet grep-multiple-regex
+	awk '/regex/ || /another/ { $0=FILENAME ": " $0; print }' file1 file2 file3
+snippet grep-with-context
+	awk '/regex/ { print ; getline ; print ; getline ; print }' file1 file2 file3
+snippet sum-data-with-same-first-column-using-aa
+	 awk '{ A[$1]+=$2 } END { for(X in A) print X, A[X] }' <<EOF
+snippet sum-data-with-same-first-column-using-aa-fs
+	 awk -F'|' '{ A[$1]+=$2 } END { for(X in A) print X, A[X] }' <<EOF
+snippet sum-data-with-same-first-column-using-aa-ifs-ofs
+	 awk -F'|' -v OFS="|" -v VAR="asdf" '{ A[$1]+=$2 } END { for(X in A) print X, A[X], VAR }' <<EOF
+snippet sum-data-with-same-first-column-using-aa-ifs-ofs-output-to-file
+	 awk -F'|' -v OFS="|" -v VAR="asdf" '{ A[$1]+=$2 } END { for(X in A) print X, A[X], VAR >X }' <<EOF
+snippet remove-first-field
+	s rf 1
+snippet multiple_conditions
+	awk -F ';' '(\$2 == "ABCD") && (\$3 == "MNOP") && (\$4 == "KLPM") { print \$2, \$3;}'  file.xml
+	awk -F ';' '\$2 \$3 \$4 == "ABCDMNOPKLPM" { print \$2, \$3;}'  file.xml
+snippet insert_variable
+	threshold=3
+	awk -v threshold="$threshold" '$1 > threshold' file
+	# Creating a variable with -v avoids the ugliness of trying to expand shell variables within an awk script.
+snippet length_of_longest_line
+	c lll
+snippet awk-variable-pipe
+	awk "BEGIN{ cmd=\"hls -c 1 '.*'\" } /no arguments/ { print \$0; print \"\tProbably missing the include\" |& cmd; cmd |& getline; } { print; system(\"\") }"
+snippet avp
+	gawk "BEGIN{ cmd=\"hls -c 1 '.*'\" } /no arguments/ { print \$0; print \"\tProbably missing the include\" |& cmd; cmd |& getline; } { print; system(\"\") }"
+snippet afp
+	gawk -F, 'BEGIN{OFS=","; cmd="l2u"} { for(i = 1; i <= NF; i++) { printf "%s\n", $i |& cmd; cmd |& getline \$i; }; } { print; system("") }END{close(cmd)}'
+snippet awk-field-pipe
+	gawk -F, 'BEGIN{OFS=","; cmd="l2u"} { for(i = 1; i <= NF; i++) { printf "%s\n", $i |& cmd; cmd |& getline \$i; }; } { print; system("") }END{close(cmd)}'
+snippet awk-field-pipe2
+	gawk -F, 'BEGIN{OFS=","; cmd="l2u"} { for(i = 1; i <= NF; i++) { printf "%s\n", $i |& cmd; cmd |& getline \$i; }; print; } END{close(cmd)}'
+snippet afm
+	awk '\$6~/^(([1-9]|[1-9][0-9]|100)[SM]){2}\$/'
+snippet awk-field-matches
+	awk '\$6~/^(([1-9]|[1-9][0-9]|100)[SM]){2}\$/'
+snippet avm
+	awk '/^SomeError/ {print;if(\$1 ~ /PATTERN/){count++;}} END {print count;}' filename
+snippet awk-variable-matches
+	awk '/^SomeError/ {print;if(\$1 ~ /PATTERN/){count++;}} END {print count;}' filename

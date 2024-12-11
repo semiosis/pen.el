@@ -16,6 +16,8 @@
 (require 'org-sql)
 (require 'org-ql)
 (require 'org-wc)
+(require 'org-download)
+(require 'org-transclusion)
 ;; There appears to be an issue with helm-org-ql currently
 ;; TODO Fix it
 ;; (require 'helm-org-ql)

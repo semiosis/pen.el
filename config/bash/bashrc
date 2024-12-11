@@ -874,4 +874,8 @@ if [ -f ~/.shell_functions ]; then
     . ~/.shell_functions
 fi
 
-set_terminal_title bash
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    set_terminal_title bash
+fi

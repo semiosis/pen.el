@@ -1,5 +1,10 @@
 (require 'comint)
 
+;; I don't think I really want this. I like to keep my emacs system pure
+;; (require 'comint-intercept)
+;; (setq comint-intercept-term-commands
+;;       '("top" "less"))
+
 (defun pen-comint-bol ()
   (interactive)
 
@@ -11,10 +16,10 @@
   (cond
    ((derived-mode-p 'comint-mode)
     (comint-bol))
-   
+
    ((derived-mode-p 'vterm-mode)
     (vterm-send-C-a))
-   
+
    ((derived-mode-p 'eshell-mode)
 
     (let ((comint-use-prompt-regexp t)
@@ -26,10 +31,10 @@
           (comint-prompt-regexp "^.*[»#$] "))
       ;; (call-interactively 'term-bol)
       (call-interactively 'comint-bol))
-    
+
     ;; (eshell-bol)
     )
-   
+
    ;; ((and (derived-mode-p 'term-mode)
    ;;       (minor-mode-enabled term-char-mode)
    ;;       ;; (term-in-char-mode)
@@ -73,7 +78,7 @@
   (cond
    ((derived-mode-p 'comint-mode)
     (comint-delchar))
-   
+
    ((derived-mode-p 'eshell-mode)
     (comint-delchar))
 

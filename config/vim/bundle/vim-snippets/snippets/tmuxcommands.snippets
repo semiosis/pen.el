@@ -1,0 +1,60 @@
+snippet tp get-vim-server-full-name-from-pid-pstree
+	CURRENT_TMUX_PANE="$(get-tmux-from-pid.sh $$ | awk '{print \$7}')"
+	${1}
+snippet tdm
+	CURRENT_TMUX_WINDOW="$(tmux display-message -p -t \$TMUX_PANE '#{window_id}')"
+	CURRENT_TMUX_WINDOW_WIDTH="$(tmux display-message -p -t \$TMUX_PANE '#{window_width}')"
+	CURRENT_TMUX_WINDOW_HEIGTH="$(tmux display-message -p -t \$TMUX_PANE '#{window_height}')"
+	${1}
+snippet tw
+	CURRENT_TMUX_WINDOW="$(tmux display-message -p -t \$TMUX_PANE '#{window_id}')"
+	${1}
+snippet twpid get-vim-server-full-name-from-pid-pstree
+	CURRENT_TMUX_WINDOW="$(get-tmux-from-pid.sh $$ | awk '{print \$5}')"
+	${1}
+snippet twc get-vim-server-full-name-from-pid-pstree
+	CURRENT_TMUX_WINDOW="$(tmux display-message -p -t \$TMUX_PANE '#{window_id}')"
+	${1}
+snippet tspid get-vim-server-full-name-from-pid-pstree
+	CURRENT_TMUX_SESSION="$(get-tmux-from-pid.sh $$ | awk '{print \$2}')"
+	${1}
+snippet ts
+	CURRENT_TMUX_SESSION="$(tmux display-message -p -t \$TMUX_PANE '#{session_name}')"
+	${1}
+snippet tcs
+	CURRENT_TMUX_SESSION="$(tmux display-message -p -t $TMUX_PANE '#{session_name}')"
+snippet tcp
+	CURRENT_TMUX_PANE_ID="$(tmux display-message -p -t $TMUX_PANE '#{pane_id}')"
+	CURRENT_TMUX_PANE_INDEX="$(tmux display-message -p -t $TMUX_PANE '#{pane_index}')"
+	${1}
+snippet tcw
+	CURRENT_TMUX_WINDOW_ID="$(tmux display-message -p -t $TMUX_PANE '#{window_id}')"
+	CURRENT_TMUX_WINDOW_INDEX="$(tmux display-message -p -t $TMUX_PANE '#{window_index}')"
+	CURRENT_TMUX_WINDOW_NAME="$(tmux display-message -p -t $TMUX_PANE '#{window_name}')"
+	${1}
+snippet ticp get-tmux-current-info
+	CURRENT_TMUX="$(get-tmux-from-pid.sh $$)"
+	CURRENT_TMUX_PANE="$(echo "\$CURRENT_TMUX" | awk '{print \$7}')"
+	CURRENT_TMUX_PANE_NUMBER="$(echo "\$CURRENT_TMUX" | awk '{print \$6}')"
+	CURRENT_TMUX_WINDOW="$(echo "\$CURRENT_TMUX" | awk '{print \$5}')"
+	CURRENT_TMUX_WINDOW_NAME="$(echo "\$CURRENT_TMUX" | awk '{print \$4}')"
+	CURRENT_TMUX_SESSION="$(echo "\$CURRENT_TMUX" |  awk '{print \$2}')"
+	${1}
+snippet tic
+	CURRENT_TMUX_SESSION="$(tmux display-message -p -t $TMUX_PANE '#{session_name}')"
+	CURRENT_TMUX_PANE_ID="$(tmux display-message -p -t $TMUX_PANE '#{pane_id}')"
+	CURRENT_TMUX_PANE_INDEX="$(tmux display-message -p -t $TMUX_PANE '#{pane_index}')"
+	CURRENT_TMUX_WINDOW_ID="$(tmux display-message -p -t $TMUX_PANE '#{window_id}')"
+	CURRENT_TMUX_WINDOW_INDEX="$(tmux display-message -p -t $TMUX_PANE '#{window_index}')"
+	CURRENT_TMUX_WINDOW_NAME="$(tmux display-message -p -t $TMUX_PANE '#{window_name}')"
+	${1}
+snippet tsw tmux-split-window
+	NEWPANE="$(tmux splitw -d -t "\${CURRENT_TMUX_WINDOW}" -P -F "#{pane_id}" -h -p 62 "ssh -q -t $nhost top")"
+snippet tsp tmux-split-pane
+	NEWPANE="$(tmux splitp -d -t "\${CURRENT_TMUX_PANE}" -P -F "#{pane_id}" -h -p 62 "ssh -q -t $nhost top")"
+snippet tvc get-tmux-session-from-pid-pstree
+	CURRENT_TMUX="$(get-tmux-from-pid.sh $$)"
+	${1}
+snippet tndw make-new-dump-window
+	CURRENT_TMUX_PANE="$(get-tmux-from-pid.sh $$ | awk '{print \$7}')"
+	${1}

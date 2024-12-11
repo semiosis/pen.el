@@ -12,5 +12,11 @@ if test -f "$last_arg"; then
     sed -i "s/\\\\begin{tabular}{ll}/\\\\begin{tabular}{p{0.45\\\\linewidth} | p{0.45\\\\linewidth}}/" "$last_arg"
     sed -i "s/\\\\begin{tabular}{lll}/\\\\begin{tabular}{p{0.30\\\\linewidth} | p{0.30\\\\linewidth} | p{0.30\\\\linewidth}}/" "$last_arg"
     sed -i "s/\\\\begin{tabular}{llll}/\\\\begin{tabular}{p{0.23\\\\linewidth} | p{0.23\\\\linewidth} | p{0.23\\\\linewidth} | p{0.23\\\\linewidth}}/" "$last_arg"
+
+    # Also fix image paths with multiple dots
+    # As latex needs to get the extension and gets confused with multiple dots
+    # See: https://latexref.xyz/_005cincludegraphics.html
+
+    sed -i "/\\includegraphics.*\\.[a-zA-Z0-9]\\+\\.[a-zA-Z0-9]\\+}$/s/\\([^{]*\\){\\([^}]*\\.[a-zA-Z0-9]\\+\\)\\(\\.[a-zA-Z0-9]\\+\\).*/\\1{{\\2}\\3}/" "$last_arg"
 fi
 )

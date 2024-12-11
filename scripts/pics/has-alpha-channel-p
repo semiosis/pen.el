@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+test -f "$1" && : "${fp:="$1"}"
+: "${fp:="/dev/stdin"}"
+
+# ImageMagick 7 has another field, so I need the sed
+identify -format '%[channels]' "$fp" | sed 's/ .*//' | grep -q -P "a\$"

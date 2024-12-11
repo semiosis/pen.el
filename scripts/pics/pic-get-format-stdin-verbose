@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# cat 800px-Japanese_Hiragana_kyokashotai_A.svg.png | identify /dev/stdin | sed "s/[^ ]* //"
+
+identify /dev/stdin | sed "s/[^ ]* //"

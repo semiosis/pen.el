@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/root/.emacs.d/host/pen.el/scripts'
+let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_5='/root/.config/ranger'
+let g:netrw_dirhist_4='/root/repos/charm'
+let g:netrw_dirhist_3='/'
+let g:netrw_dirhist_2='/root/.pen/results/results_1643705476.6464345_01.02.22_c965cf87-4134-4f0b-832b-59a4d78f4e3f/results_01.02.22__1643705481_c965cf87-4134-4f0b-832b-59a4d78f4e3f_YqJ1m'
+let g:netrw_dirhist_1='/root/.pen/results/results_1643705476.6464345_01.02.22_c965cf87-4134-4f0b-832b-59a4d78f4e3f'

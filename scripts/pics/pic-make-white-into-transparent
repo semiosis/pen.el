@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Change all the white in the test.png to transparent.
+
+in_fp="$1"
+# out_fp="$2"
+
+convert "$in_fp" -transparent white "$out_fp"
+
+# Send it to stdout as a png
+convert "$in_fp" -transparent white PNG:-
+
+# So, if you have a TIFF on stdin and want a 32-bit RGBA PNG on stdout:
+# magick TIFF:- PNG32:-

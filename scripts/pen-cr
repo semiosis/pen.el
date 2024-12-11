@@ -2339,12 +2339,18 @@ case "$file_type" in
     ;;
 
     rkt) {
-        echo racket "$rp"
-        # nvt page racket "$rp"
+        if test "$(head -c 2 "$rp")" = "#!"; then
+            perl "$rp"
+            pen-pak
+            exit $?
+        else
+            echo racket "$rp" | hls red 1>&2
+            # nvt page racket "$rp"
 
-        nvt -E "racket \"$rp\"; pen-pak"
+            nvt -E "racket \"$rp\"; pen-pak"
 
-        # pen-pak
+            # pen-pak
+        fi
         exit 0
     }
     ;;
@@ -2623,7 +2629,7 @@ case "$file_type" in
     org) {
         cd "$dn"
 
-        prog="$(qa -. edit -p org2pdf -h org2html)"
+        prog="$(qa -. edit -p org2pdf -n org2pdf-nov -h org2html)"
 
         fn=$(basename -- "$fp")
         dn=$(dirname "$fp")
@@ -2637,6 +2643,15 @@ case "$file_type" in
                 "$prog" "$fn"
 
                 z "${mant}.pdf"
+            }
+            ;;
+
+            org2pdf-nov) {
+                "$prog" "$fn"
+
+                # It should run z from emacs
+
+                # z "${mant}.pdf"
             }
             ;;
 

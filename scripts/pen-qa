@@ -22,6 +22,27 @@ MYMAP["$(printf -- '\033')"]="" # ESC
 MYMAP["q"]=""                   # q
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -message) {
+        message="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${message:="Make a selection"}
+message="$(printf -- "%s" "$message" | sed 's/:$//'):"
+
+# echo
+message="$(printf -- "%s" "$message" | his -f lgreen '.*')"
+# echo -e " $message"
+# echo
+echo -e "$message" 1>&2
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -*) {
         key="$(p "$opt" | pen-mcut -d- -f2)"
         # echo "$key"

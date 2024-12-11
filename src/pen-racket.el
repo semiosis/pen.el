@@ -2,6 +2,16 @@
 (require 'racket-mode)
 ;; (require 'racket-repl-buffer-name)
 
+(require 'racket-xp)
+(add-hook 'racket-mode-hook #'racket-xp-mode)
+(add-hook 'racket-xp-mode-hook
+            (lambda ()
+              (remove-hook 'pre-redisplay-functions
+                           #'racket-xp-pre-redisplay
+                           t)))
+
+;; https://www.racket-mode.com/#eldoc
+
 (defun racket--do-visit-def-or-mod (pen-cmd sym)
   "CMD must be \"def\" or \"mod\". SYM must be `symbolp`."
   (pcase (racket--repl-command "%s %s" cmd sym)

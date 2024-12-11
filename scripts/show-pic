@@ -6,4 +6,33 @@ export TTY
 fp="$1"
 test -f "$fp" || exit 1
 
-convert "$fp" -geometry 800x480 -colors 16 sixel:- | less -rS
+# TODO Use imagemagick to give the image a background
+
+if has-alpha-channel-p "$fp"; then
+    input_fp="$(cat "$fp" | tf bin)"
+
+    ans="$(qa -message "Image has alpha. Use:" \
+              -b black-bg \
+              -w white-bg \
+              -c checkered-bg)"
+
+    case "$ans" in
+        black-bg) {
+            cat "$input_fp" | pic-make-alpha-into-black | sponge "$input_fp"
+            cat "$input_fp" | pic-convert-to-sixel
+        } ;;
+        white-bg) {
+            cat "$input_fp" | pic-make-alpha-into-white | sponge "$input_fp"
+            cat "$input_fp" | pic-convert-to-sixel
+        } ;;
+        checkered-bg) {
+            # format="$(cat "$input_fp" | pic-get-format-stdin)"
+            # geometry="$(cat "$input_fp" | pic-get-size)"
+            cat "$input_fp" | pic-add-checkerboard | sponge "$input_fp"
+            cat "$input_fp" | pic-convert-to-sixel
+        } ;;
+        *) ;;
+    esac
+else
+    convert "$fp" -geometry 800x480 -colors 16 sixel:- | less -rS
+fi

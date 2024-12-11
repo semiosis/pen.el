@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+test -f "$1" && : "${fp:="$1"}"
+: "${fp:="/dev/stdin"}"
+
+convert "$1" -background black -alpha remove -alpha off PNG:-

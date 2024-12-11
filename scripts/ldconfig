@@ -8,4 +8,7 @@ export TTY
 
 set -o pipefail
 
-/usr/sbin/ldconfig "$@" | pavs
+test -f /usr/sbin/ldconfig && : "${bin:="/usr/sbin/ldconfig"}"
+test -f /sbin/ldconfig && : "${bin:="/sbin/ldconfig"}"
+
+"$bin" "$@" | pavs

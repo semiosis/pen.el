@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# https://www.imagemagick.org/discourse-server/viewtopic.php?t=31267
+
+# convert \
+# \( -size $wxh tile:pattern:checkerboard \) \
+# logo_t.png \
+# -compose over -composite result.jpg
+
+magick /dev/stdin -set option:wxh "%wx%h" \
+    \( -size "%[wxh]" tile:pattern:checkerboard \) \
+    +swap -compose over -composite PNG:-

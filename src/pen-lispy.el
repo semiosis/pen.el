@@ -16,6 +16,35 @@
         (get-vim-link))
     (call-interactively 'self-insert-command)))
 
+(defun pen-elisp-eval-eval ()
+  (interactive)
+  (let* ((result)
+         (resultsym (save-excursion
+                      (lispy-different)
+                      (call-interactively 'eval-last-sexp))))
+    (if (and (fboundp resultsym) (commandp resultsym))
+        (let ((current-prefix-arg cpa)
+              ;; Propagating current-global-prefix-arg doesn't actually work with certain interactive, such as (interactive (list (read-string "kjlfdskf")))
+              (current-global-prefix-arg cgpa))
+          (call-interactively resultsym))
+      (progn
+        (if (or (functionp resultsym)
+                (macrop resultsym))
+            (setq result
+                  (str (eval `(,resultsym))))
+          (setq result (eval-string result)))
+        (new-buffer-from-string result)))))
+
+(defun pen-racket-eval-eval ()
+  (interactive)
+  (j 'pen-racket-eval-eval)
+  (error "Not implemented"))
+
+(defun pen-scheme-eval-eval ()
+  (interactive)
+  (j 'pen-scheme-eval-eval)
+  (error "Not implemented"))
+
 ;; j:pen-cider-run-function
 (defun pen-clojure-eval-eval ()
   (interactive)
@@ -61,12 +90,12 @@
                                 (clj (concat "(" ,symstr " " valstr ")")))
                            (cider-nrepl-request:eval clj nil)))))
                   (eval
-                     `(call-interactively
-                       (lambda (,@arglist)
-                         (interactive (list ,@iarglist))
-                         (let* ((valstr (pen-cmd ,@arglist))
-                                (clj (concat "(" ,symstr " " valstr ")")))
-                           (cider-nrepl-request:eval clj nil)))))))
+                   `(call-interactively
+                     (lambda (,@arglist)
+                       (interactive (list ,@iarglist))
+                       (let* ((valstr (pen-cmd ,@arglist))
+                              (clj (concat "(" ,symstr " " valstr ")")))
+                         (cider-nrepl-request:eval clj nil)))))))
             (cider-nrepl-request:eval (concat "(" symstr ")") nil))))))
 
 ;; J:mount-pensieve
@@ -83,22 +112,11 @@
     (if (lispy-left-p)
         (cond
          ((derived-mode-p 'emacs-lisp-mode)
-          (let* ((result)
-                 (resultsym (save-excursion
-                              (lispy-different)
-                              (call-interactively 'eval-last-sexp))))
-            (if (and (fboundp resultsym) (commandp resultsym))
-                (let ((current-prefix-arg cpa)
-                      ;; Propagating current-global-prefix-arg doesn't actually work with certain interactive, such as (interactive (list (read-string "kjlfdskf")))
-                      (current-global-prefix-arg cgpa))
-                  (call-interactively resultsym))
-              (progn
-                (if (or (functionp resultsym)
-                        (macrop resultsym))
-                    (setq result
-                          (str (eval `(,resultsym))))
-                  (setq result (eval-string result)))
-                (new-buffer-from-string result)))))
+          (call-interactively 'pen-elisp-eval-eval))
+         ((derived-mode-p 'racket-mode)
+          (call-interactively 'pen-racket-eval-eval))
+         ((derived-mode-p 'scheme-mode)
+          (call-interactively 'pen-scheme-eval-eval))
          ((derived-mode-p 'clojure-mode)
           (call-interactively 'pen-clojure-eval-eval))
          (t (error (concat "No eval-eval handler for " (symbol-name major-mode))))))))

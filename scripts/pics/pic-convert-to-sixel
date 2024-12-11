@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# convert "$fp" -geometry 800x480 -colors 16 sixel:- | less -rS
+
+test -f "$1" && : "${fp:="$1"}"
+: "${fp:="/dev/stdin"}"
+
+convert "$fp" -geometry 800x480 -colors 16 sixel:- | less -rS

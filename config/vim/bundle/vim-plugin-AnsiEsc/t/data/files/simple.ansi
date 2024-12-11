@@ -1,0 +1,6 @@
+[32mThis is a green line.[0m
+[34mThis is a blue line.[0m
+[31mThis is a red line.[0m
+[44;32mThis is a green on blue line.[0m
+[41;34mThis is a blue on red line.[0m
+[42;31mThis is a red on green line.[0m

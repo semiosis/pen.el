@@ -260,7 +260,7 @@ EOF
         if test "$ISTTY" = y; then
             if test "$USETTY" = y; then
                 # eval "unbuffer pen-timg $path" | less -rS
-                eval "pen-timg $path" | less -rS
+                eval "pen-timg -doless $path"
             elif ! test "$USETTY" = y && yn "Use eog?"; then
                 set -m
                 pen-ns "1:$1"
@@ -334,7 +334,7 @@ EOF
                     eval "pen-timg $qpath"
                 else
                     # eval "unbuffer pen-timg --frames=1 --clear -E $qpath" | less -rS
-                    eval "pen-timg --frames=1 --clear -E $qpath" | less -rS
+                    eval "pen-timg -doless --frames=1 --clear -E $qpath"
                 fi
             elif ! test "$USETTY" = y && yn "Use feh?"; then
                 set -m
@@ -343,7 +343,21 @@ EOF
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     eog "$1" & disown
                 else
-                    feh -B black "$1" & disown
+                    if has-alpha-channel-p "$1"; then
+                        ans="$(qa -message "Image has alpha. Use:" \
+                                  -b black-bg \
+                                  -w white-bg \
+                                  -c checkered-bg)"
+
+                        case "$ans" in
+                            black-bg) { feh -B black "$1" & disown; } ;;
+                            white-bg) { feh -B white "$1" & disown; } ;;
+                            checkered-bg) { feh -B checks "$1" & disown; } ;;
+                            *) ;;
+                        esac
+                    else
+                        feh -B black "$1" & disown
+                    fi
                 fi
             else
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
@@ -352,17 +366,17 @@ EOF
                 else
                     # The new tmux can't handle unbuffer here
                     # eval "unbuffer pen-timg --frames=1 --clear -E $qpath" # | less -rS
-                    eval "pen-timg --frames=1 --clear -E $qpath" | less -rS
+                    eval "pen-timg -doless --frames=1 --clear -E $qpath"
                 fi
             fi
         else
             if test "$USETTY" = y; then
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     # pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
-                    pen-sps -E "pen-timg $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg -doless-pf $qpath"
                 else
                     # pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
-                    pen-sps -E "pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg -doless-pf --frames=1 --clear -E $qpath"
                 fi
             elif ! test "$USETTY" = y && xt pen-yn "Use feh?"; then
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
@@ -373,10 +387,10 @@ EOF
             else
                 if pen-pl "$mt" | grep -q -P '/gif' || pen-pl "$qpath" | grep -q -P '\.gif$'; then
                     # pen-sps -E "unbuffer pen-timg $qpath | tless -rS +F"
-                    pen-sps -E "pen-timg $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg -doless-pf $qpath"
                 else
                     # pen-sps -E "unbuffer pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
-                    pen-sps -E "pen-timg --frames=1 --clear -E $qpath | tless -rS +F"
+                    pen-sps -E "pen-timg -doless-pf --frames=1 --clear -E $qpath"
                 fi
             fi
         fi

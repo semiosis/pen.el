@@ -1,0 +1,13 @@
+extends vba
+snippet try
+	On Error Resume Next
+	Set picture = ActiveSheet.Pictures.Insert(ThisWorkbook.Path & "\Images\" & picname & ".jpg")
+	On Error GoTo 0
+snippet try-resume
+	On Error Resume Next
+snippet try-goto
+	On Error Goto label
+snippet endtry
+	On Error Goto 0
+snippet try-end
+	On Error Goto 0

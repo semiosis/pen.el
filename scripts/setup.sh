@@ -2544,3 +2544,23 @@ go install github.com/mdempsky/gocode@latest
 pip3 install ansi2html
 
 agi tidy
+
+# I want ImageMagick 7 so I have the magick command
+# which can nicely compose functions.
+(
+    cd "$DUMP/programs"
+
+    wget "https://imagemagick.org/archive/ImageMagick.tar.gz"
+    tar xvzf ImageMagick.tar.gz
+    dn="$(glob "ImageMagick-*" | head -n 1)"
+    cd "$dn"
+    ./configure
+    make -j $(nproc)
+    sudo make install 
+    sudo -E ldconfig /usr/local/lib
+
+    # Verify by checking the version:
+    magick -version
+)
+
+agi gimp

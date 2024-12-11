@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+test -f /usr/local/bin/magick && : "${bin:="/usr/local/bin/magick"}"
+test -f /usr/local/bin/convert && : "${bin:="/usr/local/bin/convert"}"
+test -f /usr/bin/convert && : "${bin:="/usr/bin/convert"}"
+
+"$bin" "$@"
+

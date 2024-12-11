@@ -9,10 +9,42 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -doless) {
+        do_less=y
+        shift
+    }
+    ;;
+
+    -doless-pf) {
+        do_less_plus_f=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 test -f $MYGIT/hzeller/timg/build/src/timg && : "${bin:="$MYGIT/hzeller/timg/build/src/timg"}"
 test -f "/usr/local/bin/timg" && : "${bin:="/usr/local/bin/timg"}"
 
-"$bin" -U "$@"
+pager() {
+    if test "$do_less_plus_f" = "y"; then
+        tless -rS +F
+    elif test "$do_less" = "y"; then
+        less -rS
+    else
+        cat
+    fi
+}
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test -f "$last_arg" && has-alpha-channel-p "$last_arg"; then
+    if yn "Image has alpha. Use blackbg? (y) whitebg (n)"; then
+        "$bin" -b black -U "$@" | pager
+    else
+        "$bin" -b white -U "$@" | pager
+    fi
+else
+    "$bin" -B grey -U "$@" | pager
+fi

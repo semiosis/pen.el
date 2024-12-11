@@ -767,6 +767,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("e" #'pen-etv-emacs-properties-json "tvipe emacs properties")
                          ("p" #'pen-etv-properties-json "tvipe properties")
                          ("i" #'package-install "Install Package")
+                         ("c" #'package-refresh-contents "Package Refresh Contents")
                          ("r" #'pen-reload-config-file "reload config file")
                          ("y" #'copy-button-action "copy button action")
                          ("l" #'pen-tvipe-package-list "list packages")

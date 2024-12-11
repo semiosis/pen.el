@@ -1,0 +1,1529 @@
+extends tensorflow
+extends numpy
+extends python2
+extends python3
+
+snippet imp
+	try:
+		import ${1:module}
+	except ImportError:
+		print """ No module named $1.
+		Try installing python-$1 from apt. """
+		sys.exit(-1)
+snippet import
+	try:
+		import ${1:module}
+	except ImportError:
+		print """ No module named $1.
+		Try installing python-$1 from apt. """
+		sys.exit(-1)
+snippet #
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
+snippet #!
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
+snippet #3
+	#!/usr/bin/env python3
+	# -*- coding: utf-8 -*-
+snippet #!3
+	#!/usr/bin/env python3
+	# -*- coding: utf-8 -*-
+snippet uni
+	def __unicode__(self):
+		${0:representation}
+snippet from
+	from ${1:package} import ${0:module}
+# Module Docstring
+snippet docs
+	"""
+	File: ${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
+	Author: `g:snips_author`
+	Email: `g:snips_email`
+	Github: `g:snips_github`
+	Description: ${0}
+	"""
+
+snippet wh
+	while ${1:condition}:
+		${0}
+# dowh - does the same as do...while in other languages
+snippet dowh
+	while True:
+		${1}
+		if ${0:condition}:
+			break
+snippet with
+	with ${1:expr} as ${2:var}:
+		${0}
+# New Class
+snippet cl
+	class ${1:ClassName}(${2:object}):
+		"""${3:docstring for $1}"""
+		def __init__(self, ${4:filename}):
+			${5:super($1, self).__init__()}
+			self.$4 = $4
+			${0}
+
+		def __str__(self):
+			output = self.$4 + "\n"
+			output += ",".join(self.headers) + "\n"
+			for row in self.data:
+				output += ",".join(row) + "\n"
+			return output
+
+# New Function
+snippet d
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${0}
+snippet fn
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${0}
+snippet fun
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${0}
+snippet def
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${0}
+snippet deff
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		${0}
+# New Method
+snippet defm
+	def ${1:mname}(self, ${2:arg}):
+		${0}
+# New Property
+snippet property
+	def ${1:foo}():
+		doc = "${2:The $1 property.}"
+		def fget(self):
+			${3:return self._$1}
+		def fset(self, value):
+			${4:self._$1 = value}
+		def fdel(self):
+			${0:del self._$1}
+		return locals()
+	$1 = property(**$1())
+# Ifs
+snippet if
+	if ${1:condition}:
+		${0}
+snippet el
+	else:
+		${0}
+snippet ei
+	elif ${1:condition}:
+		${0}
+# For
+snippet for
+	for ${1:item} in ${2:items}:
+		${0}
+# Encodes
+snippet cutf8
+	# -*- coding: utf-8 -*-
+snippet clatin1
+	# -*- coding: latin-1 -*-
+snippet cascii
+	# -*- coding: ascii -*-
+# Lambda
+snippet lambda-explanation
+	# Assigning lambdas to names basically just duplicates the
+	# functionality of def - and in general, it's best to do something
+	# a single way to avoid confusion and increase clarity.
+	def f(x): return 2*x 
+	# The legitimate use case for lambda is where you want to use a
+	# function without assigning it, e.g:
+	sorted(players, key=lambda player: player.rank)
+snippet ld-usedef
+	def f(x): return 2*x 
+snippet lambda
+	# legitimate use
+	sorted(players, key=lambda player: player.rank)
+	# bad, usee def
+	# ${1:var} = lambda ${2:vars} : ${0:action}
+snippet ld
+	# legitimate use
+	sorted(players, key=lambda player: player.rank)
+	# bad, usee def
+	# ${1:var} = lambda ${2:vars} : ${0:action}
+snippet .
+	self.
+snippet try Try/Except
+	try:
+		${1}
+	except ${2:Exception} as ${3:ex}:
+		template = "An exception of type {0} occured. Arguments:\n{1!r}"
+		message = template.format(type(ex).__name__, ex.args)
+		print message
+		${0:raise $3}
+snippet try Try/Interact/Rethrow
+	import code
+	try:
+		${1}
+	# Catch and rethrow
+	except ${2:Exception} as ${3:ex}:
+		template = "An exception of type {0} occured. Arguments:\n{1!r}"
+		message = template.format(type(ex).__name__, ex.args)
+		print message
+		code.interact(local=dict(globals(), **locals()))
+		raise
+snippet try Try/Except/Else
+	try:
+		${1}
+	except ${2:Exception} as ${3:ex}:
+		template = "An exception of type {0} occured. Arguments:\n{1!r}"
+		message = template.format(type(ex).__name__, ex.args)
+		print message
+		${4:raise $3}
+	else:
+		${0}
+snippet try Try/Except/Finally
+	try:
+		${1}
+	except ${2:Exception} as ${3:ex}:
+		template = "An exception of type {0} occured. Arguments:\n{1!r}"
+		message = template.format(type(ex).__name__, ex.args)
+		print message
+		${4:raise $3}
+	finally:
+		${0}
+snippet try Try/Except/Else/Finally
+	try:
+		${1}
+	except ${2:Exception} as ${3:ex}:
+		template = "An exception of type {0} occured. Arguments:\n{1!r}"
+		message = template.format(type(ex).__name__, ex.args)
+		print message
+		${4:raise $3}
+	else:
+		${5}
+	finally:
+		${0}
+# if __name__ == '__main__':
+snippet ifmain
+	if __name__ == '__main__':
+		${0:main()}
+# __magic__
+snippet _
+	__${1:init}__
+# python debugger (pdb)
+snippet pdb
+	import pdb; pdb.set_trace()
+snippet sti
+	import pdb; pdb.set_trace()
+snippet st
+	pdb.set_trace()
+# bpython debugger (bpdb)
+snippet bpdb
+	import bpdb; bpdb.set_trace()
+# ipython debugger (ipdb)
+snippet ipdb
+	import ipdb; ipdb.set_trace()
+snippet idi
+	import ipdb; ipdb.set_trace()
+# embed ipython itself
+snippet ip
+	IPython.embed()
+snippet ipi
+	import IPython
+	IPython.embed()
+# embed ipython itself
+snippet iem
+	import IPython; IPython.embed()
+# ipython debugger (pdbbb)
+snippet pdbbb
+	import pdbpp; pdbpp.set_trace()
+# remote python debugger (rpdb)
+snippet rpdb
+	import rpdb; rpdb.set_trace()
+# ptpython
+snippet ptpython
+	from ptpython.repl import embed
+	embed(globals(), locals(), vi_mode=${1:False}, history_filename=${2:None})
+# python console debugger (pudb)
+snippet pudb
+	import pudb; pudb.set_trace()
+# pdb in nosetests
+snippet nosetrace
+	from nose.tools import set_trace
+	set_trace()
+snippet json-dump
+	# import pprint; pprint.pprint(${1:{}})
+	import json; print json.dumps(dict, sort_keys=True, indent=4)
+snippet pprint
+	# import pprint; pprint.pprint(${1:{}})
+	import json; print json.dumps(dict, sort_keys=True, indent=4)
+snippet pp
+	# pp = pprint.PrettyPrinter(indent=2,width=1000,depth=20); pp.pprint(${1:{}})
+	import json; print json.dumps(dict, sort_keys=True, indent=4)
+snippet ppi
+	# import pprint
+	# pp = pprint.PrettyPrinter(indent=2,width=1000,depth=20)
+	# pp.pprint({}.__dict__)
+	import json; print json.dumps(${0}.__dict__, sort_keys=True, indent=4)
+#snippet d
+#	import pprint; pp = pprint.PrettyPrinter(indent=2,width=1000,depth=20); pp.pprint(${1}.__dict__)
+snippet "
+	"""${0:doc}
+	"""
+# assertions
+snippet a=
+	self.assertEqual(${0}, ${1})
+# test function/method
+snippet test
+	def test_${1:description}(${2:`indent('.') ? 'self' : ''`}):
+		${0}
+# test case
+snippet testcase
+	class ${1:ExampleCase}(unittest.TestCase):
+
+		def test_${2:description}(self):
+			${0}
+snippet fut
+	from __future__ import ${0}
+#getopt
+snippet getopt
+	import getopt
+	# echo "hi there whats up" | select-word-by-pos.py -$15
+	try:
+		opts, args = getopt.getopt(sys.argv[1:], "${1:j}:h", ['${2:job}=','help'])
+
+		# except getopt.GetoptError, err:
+		# python 3 use as
+	except getopt.GetoptError as err:
+		print str(err)
+		${3:error_action}
+
+	for option, argument in opts:
+		if option in ("-h", "--help"):
+			${0}
+sys.argv = sys.argv[:1] + sys.argv[2:]  # shift
+		elif option in ("-$1", "--$2"):
+			$2 = argument
+# logging
+# glog = get log
+snippet glog
+	import logging
+	logger = logging.getLogger(${0:__name__})
+snippet le
+	logger.error(${0:msg})
+# conflict with lambda=ld, therefor we change into Logger.debuG
+snippet lg
+	logger.debug(${0:msg})
+snippet lw
+	logger.warning(${0:msg})
+snippet lc
+	logger.critical(${0:msg})
+snippet li
+	logger.info(${0:msg})
+snippet epydoc
+	"""${1:Description}
+
+	@param ${2:param}: ${3: Description}
+	@type  $2: ${4: Type}
+
+	@return: ${5: Description}
+	@rtype : ${6: Type}
+
+	@raise e: ${0: Description}
+	"""
+snippet dol
+	def ${1:__init__}(self, *args, **kwargs):
+		super(${0:ClassName}, self).$1(*args, **kwargs)
+snippet kwg
+	self.${1:var_name} = kwargs.get('$1', ${2:None})
+snippet lkwg
+	${1:var_name} = kwargs.get('$1', ${2:None})
+snippet args
+	*args${1:,}${0}
+snippet kwargs
+	**kwargs${1:,}${0}
+snippet akw
+	*args, **kwargs${1:,}${0}
+snippet int
+	code.interact(local=dict(globals(), **locals()))
+snippet ci
+	code.interact(local=dict(globals(), **locals()))
+snippet interact
+	code.interact(local=dict(globals(), **locals()))
+snippet ici-code
+	import code; code.interact(local=dict(globals(), **locals()))
+snippet ici
+	import bpython; bpython.embed(locals_=dict(globals(), **locals()))
+snippet be
+	import bpython; bpython.embed(locals_=dict(globals(), **locals()))
+snippet embed
+	from ptpython.repl import embed; embed(globals(), locals())
+snippet embedb
+	import bpython; bpython.embed(locals_=dict(globals(), **locals()))
+snippet interacti
+	import code
+	code.interact(local=dict(globals(), **locals()))
+snippet ns
+	bash
+snippet bash
+	#from __future__ import print_function
+	import subprocess
+	def bash(command, inputstring="", timeout=0):
+		#print(command, file=sys.stderr)
+		p = subprocess.Popen(command, shell=True, executable="/bin/bash", stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, close_fds=True)
+		p.stdin.write(inputstring)
+		p.stdin.close()
+		output = p.stdout.read()
+		p.wait()
+		#print(output)
+		return [ output.rstrip(), p.returncode ]
+
+	result=bash("get-rtm-list.sh")
+	rtmlist = result[0].split('\n')
+snippet bashi
+	#from __future__ import print_function
+	import subprocess
+	def bash(command, inputstring=""):
+		#print(command, file=sys.stderr)
+		p = subprocess.Popen(command, shell=True, executable="/bin/bash", stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, close_fds=True)
+		p.stdin.write(inputstring)
+		p.stdin.close()
+		output = p.stdout.read()
+		p.wait()
+		#print(output)
+		return [ output.rstrip(), p.returncode ]
+
+	result=bash("get-rtm-list.sh")
+	rtmlist = result[0].split('\n')
+snippet tryimport
+	try:
+		import ${1:BeautifulSoup}
+	except:
+		print "Failed to import ${2:BeautifulSoup}"
+		print " - you can install it via 'sudo apt-get install ${3:beautifulsoup}'"
+		sys.exit(1)
+snippet exit
+	exit()
+snippet e0
+	sys.exit(0)
+snippet exitsys
+	import sys
+	sys.exit(${1})
+snippet exitmain
+	if __name__ == "__main__":
+		sys.exit(main(sys.argv))
+snippet switchlamda
+	result = {
+		'a': lambda x: x * 5,
+		'b': lambda x: x + 7,
+		'c': lambda x: x - 2
+	}[value](x)
+snippet sw
+	if x < 0:
+		x = 0
+		print('Negative changed to zero')
+	elif x == 0:
+		print('Zero')
+	elif x == 1:
+		print('Single')
+	else:
+		print('More')
+snippet if-elif-else
+	if x < 0:
+		x = 0
+		print('Negative changed to zero')
+	elif x == 0:
+		print('Zero')
+	elif x == 1:
+		print('Single')
+	else:
+		print('More')
+snippet switch
+	if x < 0:
+		x = 0
+		print('Negative changed to zero')
+	elif x == 0:
+		print('Zero')
+	elif x == 1:
+		print('Single')
+	else:
+		print('More')
+snippet switch-implementation
+	class switch(object):
+		value = None
+		def __new__(class_, value):
+			class_.value = value
+			return True
+
+	def case(*args):
+		return any((arg == switch.value for arg in args))
+
+	while switch(n):
+		if case(0):
+			print "You typed zero."
+			break
+		if case(1, 4, 9):
+			print "n is a perfect square."
+			break
+		if case(2):
+			print "n is an even number."
+		if case(2, 3, 5, 7):
+			print "n is a prime number."
+			break
+		if case(6, 8):
+			print "n is an even number."
+			break
+		print "Only single-digit numbers are allowed."
+		break
+snippet p
+	# sys.stdout.write(
+	from __future__ import print_function
+	print(doc)
+snippet pv
+	print({VISUAL})
+snippet pr
+	print(${1})
+snippet getpass
+	import getpass
+	password = getpass.getpass("${1} password:")
+snippet enum-with-dict
+	AUTH_MASK_NONE = "NONE"
+	AUTH_MASK_READ = "READ"
+	AUTH_MASK_WRITE = "WRITE"
+
+	indices = {AUTH_MASK_READ: 0, AUTH_MASK_WRITE: 1, AUTH_MASK_NONE: 2}
+
+	if not mask.upper() in indices.keys():
+		return 0
+	else:
+		rowIndex = indices[mask.upper()]
+		return groupAuthMaskCsvFile.data[rowIndex][32]
+snippet enum
+	class mode(Enum):
+		MODE_ZERO = 0
+		MODE_ONE = 1
+		MODE_TWO = 2
+
+	themode=mode.MODE_ONE
+snippet enumi
+	from enum import IntEnum
+	class mode(Enum):
+		MODE_ZERO = 0
+		MODE_ONE = 1
+		MODE_TWO = 2
+
+	themode=mode.MODE_ONE
+snippet ienum
+	class mode(IntEnum):
+		MODE_ZERO = 0
+		MODE_ONE = 1
+		MODE_TWO = 2
+
+	themode=mode.MODE_ONE
+snippet ienumi
+	from enum import IntEnum
+	class mode(IntEnum):
+		MODE_ZERO = 0
+		MODE_ONE = 1
+		MODE_TWO = 2
+
+	themode=mode.MODE_ONE
+snippet s1
+	time.sleep(1)
+snippet s2
+	time.sleep(2)
+snippet s3
+	time.sleep(3)
+snippet s4
+	time.sleep(4)
+snippet s5
+	time.sleep(5)
+snippet ts
+	time.sleep(${1:10})
+snippet tf
+	import tempfile
+	with tempfile.NamedTemporaryFile('w', suffix='.${2:csv}', delete=${1:True}) as data_$2:
+		data_$2.seek(0)  # start from the beginning of the file
+snippet tempfile
+	import tempfile
+	with tempfile.NamedTemporaryFile('w', suffix='.${2:csv}', delete=${1:True}) as data_$2:
+		data_$2.seek(0)  # start from the beginning of the file
+snippet with
+	@contextmanager
+	def ${1:some_generator}(${2:<arguments>}):
+		${3:<setup>}
+		try:
+			yield ${4:<value>}
+		finally:
+			${5:<cleanup>}
+
+	with ${6:some_generator}(${7:<arguments>}) as ${8:<variable>}:
+		${9:<body>}
+snippet print-stderr
+	sys.stderr.write('${1:spam}\n')
+snippet 2
+	sys.stderr.write('${1:spam}\n')
+snippet p2
+	sys.stderr.write('${1:spam}\n')
+snippet pe
+	sys.stderr.write('${1:spam}\n')
+snippet perr
+	sys.stderr.write('${1:spam}\n')
+snippet perri
+	from __future__ import print_function
+	import sys
+
+	def eprint(*args, **kwargs):
+		print(*args, file=sys.stderr, **kwargs)
+
+	#eprint("foo", "bar", "baz", sep="---")
+	eprint("${1:Test}")
+snippet cat
+	import sys
+	sys.stdin = open('/dev/tty')
+	data = sys.stdin.read()
+snippet stdinalltostring
+	import sys
+	sys.stdin = open('/dev/tty')
+	data = sys.stdin.read()
+snippet stdinonly
+	import sys
+	sys.stdin = open('/dev/tty')
+	data = sys.stdin.read()
+snippet sins
+	import sys
+	sys.stdin = open('/dev/tty')
+	data = sys.stdin.read()
+snippet pipe
+	import os
+
+	def child(pipeout):
+		bottles = 99
+		while True:
+			bob = "bottles of beer"
+			otw = "on the wall"
+			take1 = "Take one down and pass it around"
+			store = "Go to the store and buy some more"
+
+			if bottles > 0:
+				values =  (bottles, bob, otw, bottles, bob, take1, bottles - 1,bob,otw)
+				verse = "%2d %s %s,\n%2d %s.\n%s,\n%2d %s %s.\n" % values
+				os.write(pipeout, verse)
+				bottles -= 1
+			else:
+				bottles = 99
+				values =  (bob, otw, bob, store, bottles, bob,otw)
+				verse = "No more %s %s,\nno more %s.\n%s,\n%2d %s %s.\n" % values
+				os.write(pipeout, verse)
+
+	def parent():
+		pipein, pipeout = os.pipe()
+		if os.fork() == 0:
+			os.close(pipein)
+			child(pipeout)
+		else:
+			os.close(pipeout)
+			counter = 1
+			pipein = os.fdopen(pipein)
+			while True:
+				print 'verse %d' % (counter)
+				for i in range(4):
+					verse = pipein.readline()[:-1]
+					print '%s' % (verse)
+				counter += 1
+				print
+
+	parent()
+snippet dictinv
+	res = dict((v,k) for k,v in a.iteritems())
+snippet dictinv3
+	res = {v:k for k,v in a.items()}
+snippet dict
+	modestringToModenum = {
+		"MODE_TERMINATE": 0,
+		"MODE_NORMAL_OPERATION": 1
+	}
+
+	# dictinv
+	modenumToModestring = dict((v,k) for k,v in modestringToModenum.iteritems())
+
+	print modenumToModestring[0]
+	print modestringToModenum["MODE_TERMINATE"]
+snippet pipereplaceregex
+	import sys,re
+	[sys.stdout.write(re.sub('PATTERN', 'SUBSTITUTION', line)) for line in sys.stdin]
+snippet pipemodifymap
+	import sys
+	tmp = lambda x: sys.stdout.write(x.split()[0]+'\t'+str(int(x.split()[1])+1)+'\n')
+	map(tmp, sys.stdin)
+snippet wrl
+	import sys
+	for line in sys.stdin:
+		sys.stdout.write(line)
+snippet stdin-by-line
+	import sys
+	for line in sys.stdin:
+		sys.stdout.write(line)
+snippet stdin
+	import sys
+	for line in sys.stdin:
+		sys.stdout.write(line)
+snippet stdinall
+	import sys
+	# Read at most size bytes from the file (less if the read hits EOF before obtaining size bytes). If the size argument is negative or omitted, read all data until EOF is reached.
+	input_str = sys.stdin.read()
+snippet stdinoneline
+	import sys
+	userinput = sys.stdin.readline()
+snippet match
+	import re
+	if re.match(combined, mystring):
+snippet atleastonematch
+	# http://stackoverflow.com/questions/3040716/python-elegant-way-to-check-if-at-least-one-regex-in-list-matches-a-string
+	import re
+
+	regexes = [
+		"foo.*",
+		"bar.*",
+		"qu*x"
+		]
+
+	# Make a regex that matches if any of our regexes match.
+	combined = "(" + ")|(".join(regexes) + ")"
+
+	if re.match(combined, mystring):
+		print "Some regex matched!"
+snippet yn
+	def query_yes_no(question, default="yes"):
+		"""Ask a yes/no question via raw_input() and return their answer.
+
+		"question" is a string that is presented to the user.
+		"default" is the presumed answer if the user just hits <Enter>.
+			It must be "yes" (the default), "no" or None (meaning
+			an answer is required of the user).
+
+		The "answer" return value is True for "yes" or False for "no".
+
+		http://stackoverflow.com/questions/3041986/python-command-line-yes-no-input
+		"""
+		valid = {"yes": True, "y": True, "ye": True,
+				 "no": False, "n": False}
+		if default is None:
+			prompt = " [y/n] "
+		elif default == "yes":
+			prompt = " [Y/n] "
+		elif default == "no":
+			prompt = " [y/N] "
+		else:
+			raise ValueError("Invalid default answer: '%s'" % default)
+
+		while True:
+			sys.stdout.write(question + prompt)
+			choice = raw_input().lower()
+			if default is not None and choice == '':
+				return valid[default]
+			elif choice in valid:
+				return valid[choice]
+			else:
+				print("Please respond with 'yes' or 'no' (or 'y' or 'n')")
+snippet strequal
+	if ${1:k2} == "${2:backspace}":
+snippet b64
+	import base64
+	base64.encodestring(result)
+	base64.decodestring(self._item)
+snippet base64
+	import base64
+	base64.encodestring(result)
+	base64.decodestring(self._item)
+snippet json
+	import json
+	# https://docs.python.org/2/library/json.html
+	payload = {"type": "BRANCH",
+			   "id": branch_name,
+			   "users": users,
+			   "groups": groups
+			   }
+	jsons = json.dumps(payload)
+	data = json.loads(jsons)
+snippet open
+	with open(fp, 'rU') as f:
+		for line in f:
+			records = line.split(',')
+snippet fol
+	with open(fp, 'rU') as f:
+		for line in f:
+			records = line.split(',')
+snippet foa
+	with open(fp, 'rU') as f:
+		data = f.read()
+snippet read
+	with open(fp, 'rU') as f:
+		data = f.read()
+snippet fr
+	with open(fp, 'rU') as f:
+		data = f.read()
+snippet fo
+	with open(fp, 'rU') as f:
+		data = f.read()
+snippet write
+	f = open(fp, "w")
+	f.write(s)
+	f.flush()
+snippet fw
+	f = open(fp, "w")
+	f.write(s)
+	f.flush()
+snippet @
+	def ${1:logger}(func):
+		def newfunctionality(*args, **kwargs): #1
+			print "Arguments were: %s, %s" % (args, kwargs)
+			return func(*args, **kwargs) #2
+		return newfunctionality
+
+	@$1
+	def modifiedfunc(x, y=1):
+		# Calling modifiedfunc has different functionality now
+		return x * y
+snippet decorator
+	def ${1:logger}(func):
+		def newfunctionality(*args, **kwargs): #1
+			print "Arguments were: %s, %s" % (args, kwargs)
+			return func(*args, **kwargs) #2
+		return newfunctionality
+
+	@$1
+	def modifiedfunc(x, y=1):
+		# Calling modifiedfunc has different functionality now
+		return x * y
+snippet decowait
+	def wait(secs)
+		def decorator(func):
+			def wrapper(*args, **kwargs):
+				ret = func(*args, **kwargs)
+				time.sleep(secs)
+				return ret
+			return wrapper
+		return decorator
+
+	@wait(5) # waits 5 seconds after running the method
+	def do_instruction1(...):
+		return "hi"
+
+	@wait(3) # waits 3 seconds after running the method
+	def do_instruction2(...):
+		return "there"
+
+	a = do_instruction1()
+	print a
+	b = do_instruction2()
+	print b
+snippet tfi
+	import tensorflow as tf
+snippet itf
+	import tensorflow as tf
+snippet tff "Create a symbolic variable 'a'"
+	a = tf.placeholder("float")
+snippet tfm "multiply the symbolic variables"
+	y = tf.mul(a, b)
+snippet tfs "create a tensorflow session"
+	with tf.Session() as sess:
+		print("%f should equal 2.0" % sess.run(y, feed_dict={a: 1, b: 2})) # eval expressions with parameters for a and b
+snippet np "import numpy"
+	import numpy as np
+snippet npli "numpy linspace"
+	trX = np.linspace(-1, 1, 101)
+snippet tfv "shared variable"
+	w = tf.Variable(0.0, name="weights")
+snippet tfs "use square error for cost function"
+	cost = tf.square(Y - y_model)
+snippet tfgdo "construct an optimizer to minimize cost and fit line to my data"
+	train_op = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
+snippet tfi "you need to initialize variables (in this case just variable W)"
+	tf.initialize_all_variables().run()
+snippet zip
+	for i in range(100):
+		for (x, y) in zip(trX, trY):
+snippet ptype
+	print(type(e).__name__)
+snippet type
+	type(e).__name__
+snippet typeof
+	type(e).__name__
+snippet et
+	type(e).__name__
+snippet ckf "cuckoo filter"
+	import cuckoofilter
+	cf = cuckoofilter.CuckooFilter(capacity=100000, fingerprint_size=1)
+	cf.insert('Bin Fan')
+	if cf.contains('Bin Fan'):
+		print "Yes"
+	if cf.contains('Michael The'):
+		print "Yes"
+	cf.delete('Bin Fan')
+snippet inspect
+	import inspect
+	import pprint
+	pp = pprint.PrettyPrinter(indent=2,width=1000,depth=20)
+	pp.pprint(dict(inspect.getmembers(${0:object})))
+snippet mls
+	s = ("this is a very\n"
+		 "long string too\n"
+		 "for sure ..."
+		)
+snippet multilinestring
+	s = ("this is a very\n"
+		 "long string too\n"
+		 "for sure ..."
+		)
+snippet multilinestring2
+	s = """ this is a very
+			long string if I had the
+			energy to type more and more ..."""
+snippet multilinestring3
+	longStr = "This is a very long string\n" \
+			  "that I wrote to help somebody\n" \
+			  "who had a question about\n" \
+			  "writing long strings in Python"
+snippet t "this / self"
+	self.
+snippet fuse
+	# $NOTES/ws/python/fuse/basic.py
+
+	#!/usr/bin/env python
+
+	from __future__ import with_statement
+
+	import os
+	import sys
+	import errno
+
+	from fuse import FUSE, FuseOSError, Operations
+
+
+	class Passthrough(Operations):
+		def __init__(self, root):
+			self.root = root
+
+		# Helpers
+		# =======
+
+		def _full_path(self, partial):
+			if partial.startswith("/"):
+				partial = partial[1:]
+			path = os.path.join(self.root, partial)
+			return path
+
+		# Filesystem methods
+		# ==================
+
+		def access(self, path, mode):
+			full_path = self._full_path(path)
+			if not os.access(full_path, mode):
+				raise FuseOSError(errno.EACCES)
+
+		def chmod(self, path, mode):
+			full_path = self._full_path(path)
+			return os.chmod(full_path, mode)
+
+		def chown(self, path, uid, gid):
+			full_path = self._full_path(path)
+			return os.chown(full_path, uid, gid)
+
+		def getattr(self, path, fh=None):
+			full_path = self._full_path(path)
+			st = os.lstat(full_path)
+			return dict((key, getattr(st, key)) for key in ('st_atime', 'st_ctime',
+						 'st_gid', 'st_mode', 'st_mtime', 'st_nlink', 'st_size', 'st_uid'))
+
+		def readdir(self, path, fh):
+			full_path = self._full_path(path)
+
+			dirents = ['.', '..']
+			if os.path.isdir(full_path):
+				dirents.extend(os.listdir(full_path))
+			for r in dirents:
+				yield r
+
+		def readlink(self, path):
+			pathname = os.readlink(self._full_path(path))
+			if pathname.startswith("/"):
+				# Path name is absolute, sanitize it.
+				return os.path.relpath(pathname, self.root)
+			else:
+				return pathname
+
+		def mknod(self, path, mode, dev):
+			return os.mknod(self._full_path(path), mode, dev)
+
+		def rmdir(self, path):
+			full_path = self._full_path(path)
+			return os.rmdir(full_path)
+
+		def mkdir(self, path, mode):
+			return os.mkdir(self._full_path(path), mode)
+
+		def statfs(self, path):
+			full_path = self._full_path(path)
+			stv = os.statvfs(full_path)
+			return dict((key, getattr(stv, key)) for key in ('f_bavail', 'f_bfree',
+				'f_blocks', 'f_bsize', 'f_favail', 'f_ffree', 'f_files', 'f_flag',
+				'f_frsize', 'f_namemax'))
+
+		def unlink(self, path):
+			return os.unlink(self._full_path(path))
+
+		def symlink(self, name, target):
+			return os.symlink(name, self._full_path(target))
+
+		def rename(self, old, new):
+			return os.rename(self._full_path(old), self._full_path(new))
+
+		def link(self, target, name):
+			return os.link(self._full_path(target), self._full_path(name))
+
+		def utimens(self, path, times=None):
+			return os.utime(self._full_path(path), times)
+
+		# File methods
+		# ============
+
+		def open(self, path, flags):
+			full_path = self._full_path(path)
+			return os.open(full_path, flags)
+
+		def create(self, path, mode, fi=None):
+			full_path = self._full_path(path)
+			return os.open(full_path, os.O_WRONLY | os.O_CREAT, mode)
+
+		def read(self, path, length, offset, fh):
+			os.lseek(fh, offset, os.SEEK_SET)
+			return os.read(fh, length)
+
+		def write(self, path, buf, offset, fh):
+			os.lseek(fh, offset, os.SEEK_SET)
+			return os.write(fh, buf)
+
+		def truncate(self, path, length, fh=None):
+			full_path = self._full_path(path)
+			with open(full_path, 'r+') as f:
+				f.truncate(length)
+
+		def flush(self, path, fh):
+			return os.fsync(fh)
+
+		def release(self, path, fh):
+			return os.close(fh)
+
+		def fsync(self, path, fdatasync, fh):
+			return self.flush(path, fh)
+
+
+	def main(mountpoint, root):
+		FUSE(Passthrough(root), mountpoint, nothreads=True, foreground=True)
+
+	if __name__ == '__main__':
+		main(sys.argv[2], sys.argv[1])
+snippet replace
+	str(quotedcmd).replace("'", "")
+snippet arrayfromfile
+	result=bash("get-rtm-list.sh")
+	rtmlist = result[0].split('\n')
+snippet is
+	import sys
+snippet re
+	r = re.compile(r'${0:^$}')
+snippet ifr
+	if re.search(r'${1:^$}', ${2:haystack}):
+		${0}
+snippet ifre
+	if re.search(r'${1:^$}', ${2:haystack}):
+		${0}
+snippet queue
+	$MYGIT/JoseTomasTocino/yotaq/client.py
+snippet taskqueue
+	$MYGIT/JoseTomasTocino/yotaq/client.py
+snippet glob
+	# apply globbing just in case
+	for p in glob.glob(group):
+		p = normpath(p)`Xcp("import glob")`
+snippet echo
+	print("\n")
+snippet e
+	print("\n")
+snippet pnl
+	print("\n")
+snippet nl
+	\n
+snippet rp
+	new_path = os.path.abspath(os.path.realpath(os.path.normpath(fl.path)))
+snippet realpath
+	new_path = os.path.abspath(os.path.realpath(os.path.normpath(fl.path)))
+snippet multi-variable-assignment-tuple
+	a, b, *c = someseq
+	(a, b), c = someseq[:2], someseq[2:]
+snippet unpack
+	a, b, *c = someseq
+	(a, b), c = someseq[:2], someseq[2:]
+snippet boolean-logic
+	$NOTES/ws/python/boolean-logic.py
+snippet is "init string"
+	s = None
+snippet rm-files-from-dir
+	# $VAS/projects/data_wrangler/data_presentation.py
+
+	WORKING_DIR = 'unittest_res/sandbox'
+	for s in ('*.csv', '*.json'):
+		for g in glob.glob(pjoin(WORKING_DIR, s)):
+			os.remove(g)
+snippet is-main
+	if __name__ == '__main__':
+		${0}
+snippet run-directly
+	if __name__ == '__main__':
+		${0}
+snippet unittest.main
+	unittest.main(verbosity=2)
+snippet unittest-ify "This is how to add unit tests to any python file"
+	import unittest
+
+	class TestDataPresentation(unittest.TestCase):
+		@classmethod
+		def setUpClass(cls):
+			cls.dp = DataPresentation()
+
+		@classmethod
+		def tearDownClass(cls):
+			"""
+			Keep the sandbox clean, kids!
+			"""
+			for s in ('*.csv', '*.json'):
+				for g in glob.glob(pjoin(cls.WORKING_DIR, s)):
+					os.remove(g)
+
+		def test_csv_to_json_simple(self):
+			self._conv_worker(
+				'simple_test.json',
+				self.dp.csv_to_json,
+				testdata.simple_csv,
+				testdata.simple_json)
+
+	if __name__ == '__main__':
+		# Imports for unit tests
+		from unittest_res import testdata
+		from io import StringIO
+		from os.path import join as pjoin
+		import glob
+		import os
+
+		from unittest_res import testdata
+
+		unittest.main(verbosity=2)
+snippet str
+	def __str__(self):
+		return "foo"
+
+	def __repr__(self):
+		return "for debuging"
+snippet tostring
+	def __str__(self):
+		return "foo"
+
+	def __repr__(self):
+		return "for debuging"
+snippet hsf
+	result=bash("mnm | /var/smulliga/projects/scripts/add-to-history.sh \"/var/smulliga/notes/vim_mru_files.txt\"", inputstring=f.path+"\n")
+snippet ae
+	assert os.path.exists(fp)
+snippet assert
+	assert os.path.exists(fp)
+snippet ife
+	assert os.path.exists(fp)
+	if os.path.exists(git_dir):
+snippet ife-if-resolve
+	if my_file.exists():  
+	   # path exists  
+	 
+	try:  
+	   my_abs_path = my_file.resolve():  
+	except FileNotFoundError:  
+	   # doesn't exist  
+	else:  
+	   # exists  
+snippet iff
+	my_file = Path("/path/to/file")  
+	if my_file.is_file():  
+	   # file exists  
+snippet ifd
+	if my_file.is_dir():  
+	   # directory exists  
+snippet bn0
+	pathToScript = os.path.realpath(__file__)
+snippet scn
+	pathToScript = os.path.realpath(__file__)
+snippet path-append
+	sys.path.append(os.path.join(os.path.dirname(pathToScript), '../../../hilTestCommon/'))
+snippet path-alter
+	os.path.join(os.path.dirname(pathToScript), '../../../hilTestCommon/')
+snippet getopts-argparse
+	def main():
+		parser = argparse.ArgumentParser()
+		parser.add_argument('inputXml', help='Xml configuration file to be pushed to the h5 log.')
+		parser.add_argument('h5Log', help='H5 log file or directory containing h5 logs.')
+		args = parser.parse_args()
+snippet isdir
+	if os.path.isdir(args.h5Log):
+snippet str-endswith
+	elif args.h5Log.endswith('.h5'):
+snippet e1
+	sys.exit(1)
+snippet xml-parse
+	root = ET.parse(args.inputXml).getroot()
+snippet xml-find
+	for include in root.findall('include'):
+snippet cwd
+	os.getcwd()
+snippet np-arry-of-ascii-numbers-from-string
+	xmlBuffer = np.array(map(lambda x: ord(x), ET.tostring(root, encoding='utf8', method='xml')))
+snippet dos2unix
+	sys.stdout.write(sys.stdin.read().replace('\r\n', '\n'))
+snippet for-range
+	for x in range(0, 3):
+		print "We're on time %d" % (x)
+snippet for-range-google
+	for-range-google`Ssys("tnw.sh gr \"gr -- python for range\"")`
+snippet json-dump
+	import json
+	json.dumps(result, indent=4).encode('utf-8')
+snippet json-load
+	import json
+	json_data = json.loads(
+		path.read(),
+		encoding='utf-8'
+		object_pairs_hook=OrderedDict)
+	json_stream.close()
+	rows = json_data['rows'][:]
+snippet regex-replace
+	import re
+	regex = re.compile(r"^.*interfaceOpDataFile.*\$", re.IGNORECASE)
+	for line in some_file:
+		line = regex.sub("interfaceOpDataFile %s" % fileIn, line)
+		# do something with the updated line
+snippet sub
+	import re
+	regex = re.compile(r"^.*interfaceOpDataFile.*\$", re.IGNORECASE)
+	for line in some_file:
+		line = regex.sub("interfaceOpDataFile %s" % fileIn, line)
+		# do something with the updated line
+snippet regex-replace-oneliner
+	import re
+	line = re.sub(r"(?i)^.*interfaceOpDataFile.*\$", "interfaceOpDataFile %s" % fileIn, line)
+snippet capture-group
+	regex-sub-capture-group
+snippet regex-sub-capture-group
+	print re.sub(r"^.*(\d\d.\d\d.\d\d).*$", r"\1", path)
+	print re.sub(r"^.*([0-9][0-9].[0-9][0-9].[0-9][0-9]).*$", r"\1", path)
+snippet hex2dec
+	int(s, 16)
+snippet class
+	class CsvFile:
+		def __init__(self, filename):
+			self.filename = filename
+			self.headers = []
+			self.data = []
+
+		def __str__(self):
+			output = self.filename + "\n"
+			output += ",".join(self.headers) + "\n"
+			for row in self.data:
+				output += ",".join(row) + "\n"
+			return output
+snippet storage
+	class CsvFile:
+		def __init__(self, filename):
+			self.filename = filename
+			self.headers = []
+			self.data = []
+
+		def __str__(self):
+			output = self.filename + "\n"
+			output += ",".join(self.headers) + "\n"
+			for row in self.data:
+				output += ",".join(row) + "\n"
+			return output
+snippet parse
+	def ParseCsvFile(filename):
+		csvFile = CsvFile(filename)
+		with open(filename, 'r') as f:
+			lines = f.readlines()
+			if len(lines) > 0:
+				# Get the headers
+				csvFile.headers = lines[0].strip().split(",")
+
+				# Discard first line with table headers
+				lines = lines[1:]
+
+				# Load the data
+				for line in lines:
+					# Ignore empty lines
+					processLine = not line.strip() == ""
+					# Ignore empty lines with only commas
+					processLine &= not line.replace(",","").strip() == ""
+					# Ignore END OF PROJECT line
+					processLine &= not line.find("END OF PROJECT") >= 0
+
+					if processLine:
+						csvFile.data.append(line.strip().split(","))
+
+		return csvFile
+snippet associative-array
+	def GetMaskCode(groupAuthMaskCsvFile, mask):
+		indices = { AUTH_MASK_READ: 0, AUTH_MASK_WRITE: 1, AUTH_MASK_NONE: 2 }
+		if not mask.upper() in indices.keys():
+			return 0
+		else:
+			rowIndex = indices[mask.upper()]
+			return groupAuthMaskCsvFile.data[rowIndex][32] # AH
+snippet 1d
+	lines = lines[1:]
+snippet walk
+	for root, dirs, files in os.walk("imm-data/source_data"):
+		for filename in files:
+			if filename.find("MenuBuilder_Utility.csv") >= 0:
+				modelCsvFile = ParseCsvFile(os.path.join(root, filename))
+				if not BuildSettings("/tmp", modelCsvFile, groupAuthMaskCsvFile):
+					print "Error parsing %s" % modelCsvFile.filename
+snippet uc
+	.upper()
+snippet uppercase
+	.upper()
+snippet :
+	pass
+snippet noop
+	pass
+snippet ifgr
+	if filename.find("MenuBuilder_Utility.csv") >= 0:
+snippet string-match
+	if filename.find("MenuBuilder_Utility.csv") >= 0:
+snippet walk
+	for root, dirs, files in os.walk("imm-data/source_data"):
+		for filename in files:
+			#  print type(filename) # It's a string
+			if filename.find("MenuBuilder_Utility.csv") >= 0:
+snippet for-each-matching-file
+	for root, dirs, files in os.walk("imm-data/source_data"):
+		for filename in files:
+			#  print type(filename) # It's a string
+			if filename.find("MenuBuilder_Utility.csv") >= 0:
+snippet t
+	True
+snippet f
+	False
+snippet r
+	return ${0:False}
+snippet empty_dir
+	def empty_dir(dir_string):
+		"""docstring for empty_dir"""
+		
+		if os.listdir(raw_input(dir_string)):
+			return False
+		else:
+			return True
+snippet ternary-operator-if
+	a if condition else b
+snippet enumerate-list
+	with open("data1.txt") as f:
+		for i,line in enumerate(f):             
+			print "line {0} = {1}".format(i,line.split())
+snippet column-from-csv-pandas
+	import pandas
+	colnames = ['year', 'name', 'city', 'latitude', 'longitude']
+	data = pandas.read_csv('test.csv', names=colnames)
+snippet column-from-csv-standard
+	import csv
+
+	# open the file in universal line ending mode 
+	with open('test.csv', 'rU') as infile:
+	  # read the file as a dictionary for each row ({header : value})
+	  reader = csv.DictReader(infile)
+	  data = {}
+	  for row in reader:
+		for header, value in row.items():
+		  try:
+			data[header].append(value)
+		  except KeyError:
+			data[header] = [value]
+
+	# extract the variables you want
+	names = data['name']
+	latitude = data['latitude']
+	longitude = data['longitude']
+snippet read-file-any-line-ending
+	with open('test.csv', 'rU') as infile:
+snippet column
+	[row[0] for row in a]
+snippet get-column-from-multi-dimensional-array
+	[row[0] for row in a]
+snippet xml-pretty
+	import lxml.etree as etree
+	x = etree.parse("filename")
+	print etree.tostring(etree.fromstring(ET.tostring(rootNode)), pretty_print=True)
+snippet $#
+	len(sys.argv)
+snippet $0
+	sys.argv[0]
+snippet $1
+	sys.argv[1]
+snippet $2
+	sys.argv[2]
+snippet $0
+	" ".join(sys.argv)
+snippet shift
+	sys.argv = sys.argv[:1] + sys.argv[2:]  # shift
+snippet drn
+	os.path.dirname(${0:path})
+snippet dn
+	os.path.dirname(${0:path})
+snippet bn
+	os.path.basename(${0:path})
+snippet ld1 "delete first item"
+	[1:]
+snippet wf "write file"
+	with open("/tmp/NumericValues.xml", 'w') as f: f.write(xmlString)
+snippet ++
+	 = i + 1
+snippet sdp
+	import os
+	dir_path = os.path.dirname(os.path.realpath(__file__))
+snippet dp
+	import os
+	dir_path = os.path.dirname(os.path.realpath(__file__))
+snippet sp
+	result = subprocess.call("ar -p {0} data.tar.gz | tar -xz --strip-components=3 -C {1}".format(configPackage, tmpTruckDir), shell=True)
+
+	if result != 0:
+		print "Failed to deploy config package %s" % configPackage
+		return 1
+snippet subprocess
+	result = subprocess.call("ar -p {0} data.tar.gz | tar -xz --strip-components=3 -C {1}".format(configPackage, tmpTruckDir), shell=True)
+
+	if result != 0:
+		print "Failed to deploy config package %s" % configPackage
+		return 1
+snippet popen
+	result = subprocess.call("ar -p {0} data.tar.gz | tar -xz --strip-components=3 -C {1}".format(configPackage, tmpTruckDir), shell=True)
+
+	if result != 0:
+		print "Failed to deploy config package %s" % configPackage
+		return 1
+snippet ty
+	try:
+		${0:pass}
+	except:
+		pass
+snippet tp
+	try:
+		${0:pass}
+	except:
+		pass
+snippet dn0
+	script_dir_path = os.path.dirname(os.path.realpath(__file__))
+snippet pwd
+	os.getcwd()
+snippet match-regex-dir
+	[f for f in os.listdir('.') if re.match(r'[0-9]+.*\..*', f)]
+snippet bts
+	.decode("utf-8")
+snippet 2str
+	.decode("utf-8")
+snippet bytes2string 
+	.decode("utf-8")
+snippet string2io
+	from io import StringIO   # StringIO behaves like a file object
+	c = StringIO("0 1\n2 3")
+	np.loadtxt(c)
+snippet string2fd
+	from io import StringIO   # StringIO behaves like a file object
+	c = StringIO("0 1\n2 3")
+	np.loadtxt(c)
+snippet <( "StringIO behaves like a file object"
+	from io import StringIO   # StringIO behaves like a file object
+	c = StringIO("0 1\n2 3")
+	np.loadtxt(c)
+snippet StringIO "StringIO behaves like a file object"
+	from io import StringIO   # StringIO behaves like a file object
+	c = StringIO("0 1\n2 3")
+	np.loadtxt(c)
+snippet multiple-variable-assignment-same-value
+	a=b=c=[0,3,5]
+snippet has-method
+	hasattr(Dynamo, 'mymethod') and callable(getattr(Dynamo, 'mymethod'))
+snippet fwrap
+	https://hangar.runway7.net/python/decorators-and-wrappers
+
+snippet main
+	if __name__ == '__main__':
+snippet af
+	assert(False)
+snippet ext
+	csv_path = os.path.splitext(fp)[0]+'.csv'
+snippet subset-condition
+	merged['NumericValue'] = np.where(merged['NumericValue_x'] == merged['NumericValue_y'], None, merged['NumericValue_x'])
+snippet param
+	:param str fp: The path of the file
+snippet pydoc-param
+	:param str fp: The path of the file
+snippet ifz
+	if not ${0:myString}:
+snippet pak
+	os.system('read -s -n 1 -p "Press any key to continue..."')
+snippet tty
+	if sys.stdout.isatty():
+		# You're running in a real terminal
+	else:
+		# You're being piped or redirected
+snippet spy
+	import shanepy
+	from shanepy import *
+snippet shp
+	import shanepy
+	from shanepy import *
+snippet shanepy
+	import shanepy
+	from shanepy import *
+snippet ev
+	template = bash("mnm", template)[0].rstrip().decode()
+snippet ub "force stdin, stdout and stderr to be totally unbuffered".
+	python -u
+snippet unbuffer "force stdin, stdout and stderr to be totally unbuffered".
+	python -u
+snippet encode
+	encode('utf-8')
+snippet ds
+	import dataset as ds
+
+	db = ds.connect('sqlite:///:memory:')
+
+
+	table = db['sometable']
+	table.insert(dict(name='John Doe', age=37))
+	table.insert(dict(name='Jane Doe', age=34, gender='female'))
+
+	john = table.find_one(name='John Doe')
+snippet autograd
+	import autograd.numpy as np  # Thinly-wrapped numpy
+	from autograd import grad    # The only autograd function you may ever need
+
+	def tanh(x):                 # Define a function
+		y = np.exp(-2.0 * x)
+		return (1.0 - y) / (1.0 + y)
+
+	grad_tanh = grad(tanh)       # Obtain its gradient function
+	grad_tanh(1.0)               # Evaluate the gradient at x = 1.0
+	(tanh(1.0001) - tanh(0.9999)) / 0.0002  # Compare to finite differences
+snippet json
+	import json
+
+	data = {}
+	data['key'] = 'value'
+	json_data = json.dumps(data)

@@ -155,7 +155,13 @@ set foldcolumn=0 " margin, gutter
 
 if ! has('nvim')
     call pathogen#infect()
-    call pathogen#infect("/root/.pen/vim-bundles/{}")
+    if isdirectory("~/.pen/vim-bundles/")
+        call pathogen#infect("~/.pen/vim-bundles/{}")
+    elseif isdirectory("~/.vim/bundle")
+        call pathogen#infect("~/.vim/bundle/{}")
+    elseif isdirectory("~/.emacs.d/host/pen.el/config/vim/bundle")
+        call pathogen#infect("~/.emacs.d/host/pen.el/config/vim/bundle/{}")
+    endif
 endif
 
 if has('nvim')

@@ -26,6 +26,12 @@ case "$sn" in
     }
     ;;
 
+    org2pdf-nov) {
+        f=org-latex-export-to-pdf
+        VANILLA=n
+    }
+    ;;
+
     org2html) {
         f=org-html-export-to-html
     }
@@ -38,10 +44,24 @@ esac
 
 echo "Running $sn through emacs" 1>&2
 
+# TODO Make it so that the emacs server can run this if a server is available
+# That way, I can use modifications I have made to org-mode
+
 if test "$VANILLA" = "y"; then
     unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
 else
-    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+    # TODO Make something to get the first available server
+    # Query all the servers and choose the one which responds first.
+    # pen-e -D pen-emacsd-1 -e-tcp
+
+    fn=$(basename -- "$fp")
+    rp="$(realpath "$fp")"
+    dn=$(dirname "$rp")
+    ext="${fn##*.}"
+    mant="${fn%.*}"
+    pdf_fp="$dn/${mant}.pdf"
+
+    pen-e -D "DEFAULT" -e-tcp "(progn (with-current-buffer (find-file \"$fp\")($f)) (pen-snc (cmd \"z\" \"$pdf_fp\")))" 
 fi
 
 echo "Running $sn through emacs... done!" 1>&2

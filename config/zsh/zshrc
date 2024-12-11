@@ -778,4 +778,8 @@ listfunctions() {
     } | pavs
 }
 
-set_terminal_title zsh
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    set_terminal_title zsh
+fi

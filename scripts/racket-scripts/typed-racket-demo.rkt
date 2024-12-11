@@ -18,10 +18,15 @@
 (ann r Exact-Rational)))          
 
 ;; TODO Fix this - it's not a valid type
-(: main (String))
-(define (main s)
-  (print
-   (string->er s)))
+;; (: main (String))
+;; (define (main s)
+;;   (print
+;;    (string->er s)))
+
+;; TODO How to make a main function with no return type?
+(: main (-> Integer))
+(define (main)
+  5)
 
 ;; [[zrepl:typed-racket-demo.rkt]]
 

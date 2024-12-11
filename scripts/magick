@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f /usr/local/bin/magick || (
+    cd "$DUMP/programs"
+
+    wget "https://imagemagick.org/archive/ImageMagick.tar.gz"
+    tar xvzf ImageMagick.tar.gz
+    dn="$(glob "ImageMagick-*" | head -n 1)"
+    cd "$dn"
+    ./configure
+    make -j $(nproc)
+    sudo make install 
+    sudo -E ldconfig /usr/local/lib
+
+    # Verify by checking the version:
+    magick -version
+)
+
+/usr/local/bin/magick "$@"
