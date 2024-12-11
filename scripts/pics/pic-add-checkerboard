@@ -2,11 +2,22 @@
 
 # https://www.imagemagick.org/discourse-server/viewtopic.php?t=31267
 
-# convert \
-# \( -size $wxh tile:pattern:checkerboard \) \
-# logo_t.png \
-# -compose over -composite result.jpg
+test -f "$1" && : "${fp:="$1"}"
+: "${fp:="/dev/stdin"}"
 
-magick /dev/stdin -set option:wxh "%wx%h" \
-    \( -size "%[wxh]" tile:pattern:checkerboard \) \
-    +swap -compose over -composite PNG:-
+if convert -version | head -n 1 | cut -d ' ' -f 3 | grep -qP "^6\\."; then
+    # Version 6
+
+    input_fp="$(cat "$fp" | tf bin)"
+    geometry="$(cat "$input_fp" | pic-get-size)"
+
+    convert \
+        \( -size "$geometry" tile:pattern:checkerboard \) \
+        "$input_fp" \
+        -compose over -composite PNG:-
+else
+    # Version 7
+    magick "$input_fp" -set option:wxh "%wx%h" \
+        \( -size "%[wxh]" tile:pattern:checkerboard \) \
+        +swap -compose over -composite PNG:-
+fi

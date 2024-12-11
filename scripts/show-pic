@@ -26,7 +26,7 @@ if has-alpha-channel-p "$fp"; then
             cat "$input_fp" | pic-convert-to-sixel
         } ;;
         checkered-bg) {
-            # format="$(cat "$input_fp" | pic-get-format-stdin)"
+            # format="$(cat "$input_fp" | pic-get-format)"
             # geometry="$(cat "$input_fp" | pic-get-size)"
             cat "$input_fp" | pic-add-checkerboard | sponge "$input_fp"
             cat "$input_fp" | pic-convert-to-sixel

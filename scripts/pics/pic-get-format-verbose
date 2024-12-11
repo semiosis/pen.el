@@ -2,4 +2,7 @@
 
 # cat 800px-Japanese_Hiragana_kyokashotai_A.svg.png | identify /dev/stdin | sed "s/[^ ]* //"
 
-identify /dev/stdin | sed "s/[^ ]* //"
+test -f "$1" && : "${fp:="$1"}"
+: "${fp:="/dev/stdin"}"
+
+identify "$fp" | sed "s/[^ ]* //"
