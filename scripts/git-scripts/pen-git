@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This should just have reasonable defaults for various git commands
+# and utilise a pager.
+
+# /root/.gitconfig should use this instead of bundling complicated
+# aliases inside of the gitconfig file.
+
+# This script "could" sometimes even use tig
+
+# If the output is a tty then use a pager or TIG, otherwise cat to stdout.
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+opt="$1"
+shift
+case "$opt" in
+    log) {
+        git log "$@" | pavs
+    }
+    ;;
+
+    tree) {
+        pen-git log --oneline --decorate --graph "$@" | pavs
+    }
+    ;;
+
+    lg) {
+        # git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "$@" | less -rS
+        git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit "$@" | pavs
+    }
+    ;;
+
+    *) {
+        git "$opt" "$@"
+    }
+    ;;
+esac

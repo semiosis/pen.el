@@ -2522,7 +2522,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun if-rkt-dos2unix ()
   (interactive)
-  (if (f-exists-p (buffer-file-name))
+  (if (and (buffer-file-name)
+           (f-exists-p (buffer-file-name)))
       (if (string-equal "rkt" (f-ext (buffer-file-name)))
           (pen-snc (cmd "dos2unix" (buffer-file-name))))))
 
@@ -2539,10 +2540,12 @@ This function accepts any number of ARGUMENTS, but ignores them."
          (run-hooks 'before-save-hook)
          (run-hooks 'after-save-hook))
         (t
-         (progn (save-buffer)
-                (if-rkt-dos2unix)
-                (shut-up (if-shebang-exec-otherwise-remove))
-                (message "%s" "File saved")))))
+         (if (buffer-file-name)
+             (progn (save-buffer)
+                    (if-rkt-dos2unix)
+                    (shut-up (if-shebang-exec-otherwise-remove))
+                    (message "%s" "File saved"))
+           (message "%s" "pen-save: N/A (Not applicable)")))))
 
 (defmacro pen-defun (name arglist suggest-predicates &optional docstring &rest body)
   "Same as defun, except provide context predicates.

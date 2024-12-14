@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f $HOME/.cargo/bin/gitui || cargo-quickinstall "gitui" &>/dev/null
+
+$HOME/.cargo/bin/gitui "$@"

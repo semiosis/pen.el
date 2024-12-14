@@ -133,9 +133,15 @@ fi
 # ----
 
 if test "$make_cargo" = "y"; then
+    if yn "cargo-quickinstall ?"; then
+IFS= read -r -d '' CGCODE <<HEREDOC
+test -f $HOME/.cargo/bin/$bn || cargo-quickinstall "$bn" &>/dev/null
+HEREDOC
+    else
 IFS= read -r -d '' CGCODE <<HEREDOC
 test -f $HOME/.cargo/bin/$bn || cargo install "$bn" &>/dev/null
 HEREDOC
+    fi
 
     printf -- "%s\n" "$CGCODE" | pen-mnm >> ./$scriptname
 fi

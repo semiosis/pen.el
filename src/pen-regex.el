@@ -1,3 +1,5 @@
+(require 'rx)
+
 ;; TODO Take all from here
 ;; $EMACSD/config/my-regex.el
 

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/shane/notes/ws/perl/modules'
 let g:netrw_dirhist_7='/root/.emacs.d/host/pen.el/scripts'
 let g:netrw_dirhist_6='/'
 let g:netrw_dirhist_5='/root/.config/ranger'

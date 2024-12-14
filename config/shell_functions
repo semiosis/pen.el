@@ -17,7 +17,7 @@ done
 
 unalias ls
 ls() {
-    /bin/ls -I ".git" -p "$@"
+    /bin/ls --color=tty -A -I ".git" -p "$@"
 }
 
 apply() {

@@ -104,8 +104,48 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -lb) {
+        look_behind_pattern="$2"
+        use_pcre=y
+        shift
+        shift
+    }
+    ;;
+
+    -nlb) {
+        look_behind_pattern="$2"
+        negative=y
+        use_pcre=y
+        shift
+        shift
+    }
+    ;;
+
+    -la) {
+        look_ahead_pattern="$2"
+        use_pcre=y
+        shift
+        shift
+    }
+    ;;
+
+    -nla) {
+        look_ahead_pattern="$2"
+        negative=y
+        use_pcre=y
+        shift
+        shift
+    }
+    ;;
+
     -i) {
         CASE_INSENSITIVE=y
+        shift
+    }
+    ;;
+
+    -P) {
+        use_pcre=y
         shift
     }
     ;;
@@ -116,8 +156,14 @@ esac; done
 test -z "$dfg_code" && test -n "$DEFAULT_FG" && dfg_code="$(colour_name_to_number $DEFAULT_FG)"
 test -z "$dbg_code" && test -n "$DEFAULT_BG" && dbg_code="$(colour_name_to_number $DEFAULT_BG)"
 
-if test "$CASE_INSENSITIVE" = "y"; then
-    sedinneropts="${sedinneropts}I"
+if test "$use_pcre" = "y"; then
+    if test "$CASE_INSENSITIVE" = "y"; then
+        sedinneropts="${sedinneropts}i"
+    fi
+else
+    if test "$CASE_INSENSITIVE" = "y"; then
+        sedinneropts="${sedinneropts}I"
+    fi
 fi
 
 pattern="$1"
@@ -146,6 +192,28 @@ fi
 
 # tput sgr0
 
-sed -u "s/\($pattern\)/$code\1$post_code/g$sedinneropts"
+if test -n "$look_behind_pattern"; then
+    if test "$negative" = "y"; then
+        look_behind_pattern="(?<!$look_behind_pattern)"
+    else
+        look_behind_pattern="(?<=$look_behind_pattern)"
+    fi
+fi
+
+if test -n "$look_ahead_pattern"; then
+    if test "$negative" = "y"; then
+        look_ahead_pattern="(?!$look_ahead_pattern)"
+    else
+        look_ahead_pattern="(?=$look_ahead_pattern)"
+    fi
+fi
+
+if test "$use_pcre" = "y"; then
+    sed-pcre "s/$look_behind_pattern($pattern)$look_ahead_pattern/$code\1$post_code/g$sedinneropts"
+else
+    sed -u "s/\\($pattern\\)/$code\1$post_code/g$sedinneropts"
+fi
+
+# sed-pcre "s/(?<!(watch|ylist))\?.*//"
 
 # lit "${code}"

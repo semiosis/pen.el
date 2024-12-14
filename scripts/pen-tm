@@ -1052,10 +1052,11 @@ case "$f" in
             pl "pwd: $(pwd)"
             echo
 
-            cmd="pstree -lAsp \"$pid\""
-            printf -- "%s" "$cmd: "
-            eval "$cmd"
-            echo
+            # This one just styles it differently, but it can get very long
+            # cmd="pstree -lAsp \"$pid\""
+            # printf -- "%s" "$cmd: "
+            # eval "$cmd"
+            # echo
 
             cmd="pstree -alAsp \"$pid\""
             pl "$cmd"

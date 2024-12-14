@@ -3,4 +3,6 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+# https://www.perlmonks.org/?node_id=1182588
+
 perl -pe "$1"

@@ -106,6 +106,7 @@ if test -d ~/.emacs.d/host/pen.el/config; then
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/zshrc ~/.zshrc
     ln -sf ~/.emacs.d/host/pen.el/config/bash/bashrc ~/.bashrc
     ln -sf ~/.emacs.d/host/pen.el/config/shell_functions ~/.shell_functions
+    ln -sf ~/.emacs.d/host/pen.el/config/shell_aliases ~/.shell_aliases
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/fzf.zsh ~/.fzf.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/zsh/git.zsh ~/.git.zsh
     ln -sf ~/.emacs.d/host/pen.el/config/shellrc ~/.shellrc
