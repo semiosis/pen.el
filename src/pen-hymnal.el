@@ -1,3 +1,5 @@
+(require 'pen-getopts)
+
 ;; Make it easy to
 ;; - search for a hymn,
 ;; - listen to it,
@@ -49,16 +51,6 @@
   (interactive)
   (ifi-etv
    (snc "play-hymn -st -last")))
-
-(defun getopts-to-cl-args (optstring)
-  (interactive (list (read-string "opts string:")))
-  (let* ((ntuple (s-split "=" optstring))
-         (key (s-replace "^--" "" (first ntuple)))
-         (val (second ntuple)))
-    (ifietv
-     key)))
-;; e:q-cip
-;; (cmd-cip "-5" 5 "hello" "=h")
 
 (defun hymn-getopts-to-args ()
   (interactive)

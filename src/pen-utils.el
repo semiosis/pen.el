@@ -231,4 +231,8 @@ buffer."
 (defun crc32 (s)
   (pen-snc "hash-crc32" s))
 
+(defun elisp-serialise (o)
+  ;; I guess this works a lot like pps
+  (format "%S" o))
+
 (provide 'pen-utils)

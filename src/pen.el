@@ -331,6 +331,8 @@ Be mindful of quoting arguments correctly."
 (require 'pen-gitlab)
 (require 'pen-hist)
 (require 'pen-utils)
+(require 'pen-dict-key-value)
+(require 'pen-getopts)
 (require 'pen-rhizome)
 (if (inside-docker-p)
     (progn

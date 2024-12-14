@@ -150,6 +150,10 @@
 
                (and (major-mode-enabled 'universal-sidecar-buffer-mode)
                     "Sidecar")
+               
+               (and (major-mode-enabled 'helpful-mode)
+                    (or list-buffers-directory
+                        helpful--sym))
 
                (and (major-mode-enabled 'eww-mode)
                     (if semantic-path
@@ -833,12 +837,21 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 
 (defun pen-yank-path ()
   (interactive)
-  (if (pen-selected-p)
-      (with-current-buffer (new-buffer-from-string (pen-selection))
-        (pen-guess-major-mode-set)
-        (xc (get-path nil nil t))
-        (kill-buffer))
-    (xc (get-path))))
+  (let* ((no-create-path
+          (not (buffer-file-name)))
+         (path nil))
+
+    (if (pen-selected-p)
+        (with-current-buffer (new-buffer-from-string (pen-selection))
+          (pen-guess-major-mode-set)
+
+          (setq path (get-path nil no-create-path t))
+          (kill-buffer))
+      (setq path (get-path nil no-create-path)))
+    
+    (if path
+        (xc path)
+      (message "No path. Not copying."))))
 
 (defun unslugify (input)
   (pen-snc "unslugify" input))

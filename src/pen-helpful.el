@@ -50,4 +50,6 @@
      ((macrop sym)
       (elisp-refs-macro sym)))))
 
+(define-key helpful-mode-map (kbd "w") 'pen-yank-path)
+
 (provide 'pen-helpful)
