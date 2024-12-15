@@ -1,4 +1,5 @@
 (require 'pen-getopts)
+(require 'pen-dict-key-value)
 
 ;; EXL stands for Emacs-Lisp Expect
 ;; I wonder if I should do build this on TCL generation. Maybe not worth it.
@@ -25,8 +26,19 @@
 ;; and exl should generate an e:pen-x invocation.
 ;; Perhaps ebl should do it all, actually.
 
+(defvar exl-macro-aliases '())
+
+;; TODO Do an initial car replacement of sexps within
+;; to fully qualify the interior macros, as I have done with j:problog-expand
+;; or perhaps I can just use a map here.
+;; I don't have any yet.
 (defmacro exl (&rest xmacros)
-  `(progn ,@xmacros))
+  (let ((xm (mapcar
+             (lambda (e) `(quote ,e))
+             xmacros)))
+    `(list
+      ;; ,@xm
+      ,@xmacros)))
 (defalias 'gensh 'exl)
 
 ;; I guess that as I'm making these sexp-generator macros,
@@ -95,5 +107,39 @@
           (repeat 7 :down)
           :f1
           :i)))
+
+(comment
+ ;; I want to macroexpand without trying to run functions
+ ;; or eval anything.
+
+ ;; TODO Figure out how to expand the interior of this list
+ '(in-tty x
+          :sh "cli-chess"
+          :e "Online"
+          :down
+          :e "Create"
+          :right
+          (rpt2
+           ;; I could simply use 2, or repeat 2
+           :down)
+          :e "Top"
+          (repeat 7 :down)
+          :f1
+          :i)
+
+ (macroexpand-all
+  (list in-tty x
+        :sh "cli-chess"
+        :e "Online"
+        :down
+        :e "Create"
+        :right
+        (rpt2
+         ;; I could simply use 2, or repeat 2
+         :down)
+        :e "Top"
+        (repeat 7 :down)
+        :f1
+        :i)))
 
 (provide 'pen-exl)

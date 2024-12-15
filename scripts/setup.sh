@@ -203,6 +203,7 @@ apt install libgtk-3-0 libgtk-3-dev
     # --with-native-compilation takes longer
     # --with-small-ja-dic appears to make it hang
     ./autogen.sh
+    # Debian 10
     # sudo apt install libsqlite3-dev libgccjit0 libgccjit-8-dev
     # Debian 12
     sudo apt install libsqlite3-dev libgccjit0 libgccjit-12-dev libfribidi0 libfribidi-dev
@@ -213,6 +214,8 @@ apt install libgtk-3-0 libgtk-3-dev
         wget "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi-dev_1.0.8-2.1_amd64.deb"
         dpkg -i libfribidi-dev_1.0.8-2.1_amd64.deb
     )
+
+    ./autogen.sh
 
     #./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes \
     #    --with-native-compilation --with-tree-sitter --with-small-ja-dic \
