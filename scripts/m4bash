@@ -1,5 +1,22 @@
 #!/bin/bash
 export TTY
 
+# TODO See if I can achieve what I want using bashm4
+# Maybe by using 'm4source'.
+
+# Maybe it's better to do this:
+# v +/"sourcem4 {" "$HOME/.shell_functions"
+
+# https://stackoverflow.com/questions/57205431/gnu-m4-expand-bracketed-text
+# Sadly, this doesn't work:
+# define(`#!/usr/bin/env m4bash', `#!/usr/bin/env bash')dnl
+
 . $SCRIPTS/lib/hs
 
+: "${input_fp:="$1"}"
+test -f "$input_fp" || exit 1
+
+newsh="$(0</dev/null m4 $PENELD/scripts/m4-scripts/bash.m4 "$input_fp" | sed '1s=#!/usr/bin/env m4bash=#!/bin/bash=' | tf sh)"
+
+# I want bash to be able to accept stdin
+bash "$newsh"

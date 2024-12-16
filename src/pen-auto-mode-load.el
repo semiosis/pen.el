@@ -265,6 +265,7 @@
 ;; (remove-hook 'ebdb-mode-hook 'org-link-minor-mode)
 (remove-hook 'clojure-mode-hook 'org-link-minor-mode)
 
+(add-to-list 'auto-minor-mode-alist '("\\(\\.sh\\)\\'" . org-link-minor-mode))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.go\\)\\'" . org-link-minor-mode))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.txt\\)\\'" . org-link-minor-mode))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.rkt\\)\\'" . org-link-minor-mode))

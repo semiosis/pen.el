@@ -8,10 +8,16 @@
   :group 'org-link
   :type '(choice (const man) (const woman)))
 
-(defun org-man-open (path)
+;; [[sps:cd "$PENCONF/documents/notes"; /usr/bin/man 3 printf]]
+;; [[el:(man "printf(3)")]]
+;; man:m4
+;; [[man:printf 3]] - doesn't work -- good
+;; [[man:3 printf]] - is correct
+
+(defun org-man-open (path &rest args)
   "Visit the manpage on PATH.
 PATH should be a topic that can be thrown at the man command."
-  (funcall org-man-command path))
+  (eval `(apply org-man-command path ,@args)))
 
 (defun org-man-store-link ()
   "Store a link to a manpage."

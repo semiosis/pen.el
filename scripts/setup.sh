@@ -2569,3 +2569,12 @@ agi tidy
 agi gimp
 
 e ia geiser-chez
+
+(
+cd ~/repos
+git clone "https://git.savannah.gnu.org/git/bash.git"
+cd bash
+./configure
+make -j $(nproc)
+make install
+)

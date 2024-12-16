@@ -191,3 +191,15 @@ get_title() {
 get_title_force() {
     get_title </dev/tty
 }
+
+sourcem4() {
+    input_fp="$1"
+    # fp="$(0</dev/null m4 $PENELD/scripts/m4-scripts/bash.m4 "$input_fp" | sed '1s=#!/usr/bin/env m4bash=#!/bin/bash=' | tf sh)"
+
+    # No need to remove/adjust #!
+    fp="$(0</dev/null m4 $PENELD/scripts/m4-scripts/bash.m4 "$input_fp" | tf sh)"
+    . "$fp"
+    result="$?"
+    rm -f "$fp"
+    return "$result"
+}
