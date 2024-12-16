@@ -8,6 +8,8 @@
 ;; ev:org-link-parameters
 ;; [[edit-var-elisp:-org-link-parameters]]
 
+;; [[el:(etv (org-link-types))]]
+
 ;; This generates links for functions
 (defset org-link-auto-functions '(show-map
                                   describe-package

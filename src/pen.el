@@ -2352,6 +2352,8 @@ May use to generate code from comments."
 (require 'pen-epl-test)
 (require 'pen-ebl)
 (require 'pen-ebl-test)
+(require 'pen-exl)
+(require 'pen-exl-test)
 (require 'pen-borrowed)
 (require 'pen-core)
 (require 'pen-openai)
