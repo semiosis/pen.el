@@ -12,6 +12,11 @@ export TTY
 # the script name.
 # How to get around this?
 # i.e. "hsqf bash-hs-test.sh" will not work
+# 'source the file' transformed file from the file? Hmm... maybe not.
+# Ideas:
+# - swap the file with the transformed file before running it.
+# - pass the variables (e.g. $0) forward that would be lost.
+# - make a bash extension that runs m4
 
 _HS
 
