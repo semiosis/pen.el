@@ -11,7 +11,9 @@
     (helm :sources '(helm-broot-grep-source)
 
           :buffer "*helm-broot-grep*"
-          :input init)))
+          :input init
+          ;; :prompt "example: /\.el/&c/pen | query: "
+          :prompt "example: \.el&c/pen | query: ")))
 
 (defun helm-broot-grep--do-candidate-process ()
   (let* ((cmd-args (-filter 'identity (list helm-broot-grep-executable

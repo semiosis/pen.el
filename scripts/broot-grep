@@ -20,6 +20,10 @@ dn="$(pwd)"
 
 # pen-tm -sout -vipe "sps" "echo hi" | cat
 
+# cd "$PENELD/scripts"; broot-grep "/\.el/&c/pen" | v
+# A simpler way:
+# cd "$PENELD/scripts"; broot-grep "sh&c/broot" | v
+
 # I need to run br in a hidden tmux instead
 
 tf_broot_output="$(ux tf broot_output || echo /dev/null)"

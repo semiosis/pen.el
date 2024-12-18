@@ -79,10 +79,12 @@ pyf() {
     pip3 install "$@"
 }
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/.local/bin
-export PATH=$PATH:/root/.roswell/bin
-export PATH=$PATH:/usr/games
+# I think PATH got too big or something and the tmux nested sessions broke
+PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:~/.local/bin
+PATH=$PATH:/root/.roswell/bin
+PATH=$PATH:/usr/games
+export PATH="$(printf -- "%s" "$PATH" | sed 's/:/\n/g' | uniqnosort | sed -z "s/\n/:/g" | sed "s/:$//")"
 
 # I actually *do* want this to be set, so I know if I need to create a new tmux or not for, cosm, say
 # unset TMUX
