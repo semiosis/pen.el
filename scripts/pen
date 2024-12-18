@@ -1,9 +1,14 @@
 #!/bin/bash
-
+#
 # Pen
 # Version 4.0, bash
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
+
+pen_exit() {
+	# sleep 100000
+	exit "$@"
+}
 
 # Invocations:
 # - pen/penx
@@ -25,12 +30,17 @@ bn="$sn"
 rp="$(realpath "$bn")"
 
 if ! which "$sn" &>/dev/null; then
-    dn="$(dirname "$(realpath "$0")")"
-    export PATH="$PATH:$dn"
+    detect_scripts_dn="$(dirname "$(realpath "$0")")"
+    detect_peneldir="$(realpath "$(dirname "$(realpath "$0")")/../")"
+    export PATH="$PATH:$detect_scripts_dn"
+
+    # export PENELD="$detect_peneldir"
+    # export PENEL_DIR="$detect_peneldir"
 fi
 
 ocif() {
-    if which ocif &>/dev/null; then
+    # if which ocif &>/dev/null; then
+    if which ocif &>/dev/null && test -n "$SCRIPTS"; then
         command ocif "$@"
     else
 	:
@@ -248,7 +258,7 @@ ensure_dependencies() {
             echo "https://command-not-found.com/$s"
         done
 
-        exit "$?"
+        pen_exit "$?"
     fi
 }
 
@@ -307,12 +317,12 @@ yn () {
 
     if test "$YN_DEFAULT" = "y"; then
         echo y
-        exit 0
+        pen_exit 0
     fi
 
     if test "$YN_DEFAULT" = "n"; then
         echo n
-        exit 1
+        pen_exit 1
     fi
 
     while :; do
@@ -364,7 +374,7 @@ fi
 docker() {
     if test "$DEBUG_ABORT" = "y"; then
         cmd "$@" | awk 1
-        exit "$?"
+        pen_exit "$?"
     fi
 
     export PEN_NO_TM
@@ -535,13 +545,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     simplesh) {
         docker run --rm --name "$PEN_CONTAINER_NAME" -ti semiosis/pen.el:latest /bin/bash
-        exit "$?"
+        pen_exit "$?"
     }
     ;;
 
     web) {
         pen-gui-browser "http://localhost:$TTYD_PORT"
-        exit
+        pen_exit
     }
     ;;
 
@@ -681,7 +691,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     --citation) {
         pen-citation
-        exit "$?"
+        pen_exit "$?"
         shift
         shift
     }
@@ -780,7 +790,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -running-p) {
         docker-running-p
-        exit "$?"
+        pen_exit "$?"
     }
     ;;
 
@@ -969,7 +979,7 @@ ensure_pen_running() {
             echo "    Please start Pen.el server first: pen -nw"
             echo "}"
         } | hls red 1>&2
-        exit 1
+        pen_exit 1
 
         echo Starting Pen. Please wait... 1>&2
 
@@ -1032,7 +1042,7 @@ if test "$start_shell" = "y"; then
             $(test -n "$PEN_CONFIG_DIR" && printf -- "%s " -v "$PEN_CONFIG_DIR:/root/.pen" ) \
             $(test -n "$PENEL_DIR" && printf -- "%s " -v "$PENEL_DIR:/root/.emacs.d/host/pen.el" ) \
             semiosis/pen.el:latest \
-            /bin/sh -c "trap 'exit 147' TERM; tail -f /dev/null & while wait \${!}; test \$? -ge 128; do true; done" &>/dev/null
+            /bin/sh -c "trap 'pen_exit 147' TERM; tail -f /dev/null & while wait \${!}; test \$? -ge 128; do true; done" &>/dev/null
 HEREDOC
         eval "$shcode"
     elif ! inside-docker-p && ! docker-running-p; then
@@ -1061,7 +1071,7 @@ HEREDOC
             docker stop "$PEN_CONTAINER_NAME"
         fi
     fi
-    exit "$?"
+    pen_exit "$?"
 fi
 
 vanilla=
@@ -1588,14 +1598,14 @@ case "$sn" in
 
             if test "$force_shutdown_now" = "y"; then
                 docker container stop "$PEN_CONTAINER_NAME" 2>/dev/null
-                exit "$?"
+                pen_exit "$?"
             fi
         elif inside-docker-p; then
             pen-shutdown
             killall emacs
         else
             echo Not running. 1>&2
-            exit 0
+            pen_exit 0
         fi
     }
     ;;
@@ -2293,7 +2303,7 @@ HEREDOC
     exec) {
         if ! inside-docker-p && ! docker-running-p; then
             ensure_pen_running
-            exit 1
+            pen_exit 1
         fi
 
         if test "$INTERACTIVE" = "y"; then
@@ -2391,5 +2401,5 @@ fi
 if test "$sn" = penh; then
     zrepl -nocl -E "penf $fun"
 else
-    exit "$ret"
+    pen_exit "$ret"
 fi

@@ -8450,7 +8450,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704795029:0;e ia mini-header-line minibuffer-header path-headerline-mode
 : 1704839993:0;tp find-here-path "*words.txt"
 : 1704845847:0;j ebdb-copy-fields-as-kill-org-link
-: 1704853618:0;v pen-ci
 : 1704854363:0;git commit -m "10.01.24"
 : 1704855356:0;Deuteronomy 30 |v
 : 1704855404:0;v nasb
@@ -8552,7 +8551,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704930652:0;weekfile
 : 1704931204:0;Genesis 30
 : 1704931303:0;Genesis 50
-: 1704931768:0;emacs -nw --debug-init
 : 1704931925:0;v pen-define-prompt-function.el
 : 1704932293:0;pen-e nw --debug-init
 : 1704932385:0;pen sd -d
@@ -9156,7 +9154,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706347268:0;j lg-url-cache-exists
 : 1706347348:0;v pen-eww.el
 : 1706347402:0;grep -Hno lg-url-cache-exists *
-: 1706347406:0;v pen-org.el
 : 1706349230:0;echo "Ge 1:1| in-pen bible-get-cross-references | bible-canonicalise-cross-reference
 : 1706349234:0;echo "Ge 1:1" | in-pen bible-get-cross-references | bible-canonicalise-cross-reference
 : 1706349433:0;tp find-here-path "*crossre*"
@@ -9177,7 +9174,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706357614:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-5.org
 : 1706360334:0;git bisect --bad
 : 1706364510:0;sp sd -d
-: 1706364786:0;v pen.el
 : 1706399847:0;Matthew 12:33-37 | v
 : 1706400069:0;Genesis 15:6 | v
 : 1706400074:0;James 2:23 | v
@@ -11373,7 +11369,6 @@ e ia inheritenv
 : 1711943998:0;v show-pic
 : 1711944006:0;show-pic /usr/share/doc/asciidoc/doc/images/tiger.png | cat
 : 1711944039:0;cd /usr/share/doc/asciidoc/doc/images/
-: 1711944051:0;tp find-here-path "*.png*"
 : 1711944165:0;cat /root/dump/tmp/scratch5IvX5l.txt
 : 1711944168:0;cat /root/dump/tmp/scratch5IvX5l.txt | less -rS
 : 1711944174:0;less -rS /root/dump/tmp/scratch5IvX5l.txt
@@ -17740,8 +17735,6 @@ Proverbs 23:7
 : 1726705786:0;nod Acts 17
 : 1726705791:0;v nod
 : 1726720499:0;cd sc
-: 1726720502:0;cd scripts
-: 1726720504:0;v newframe.sh
 : 1726731693:0;o "https://mycatholic.life/books/confessions-saint-augustine/book-confessions-saint-augustine/"
 : 1726731710:0;o "https://www.gutenberg.org/files/3296/3296-h/3296-h.htm"
 : 1726777366:0;1 John 3:14-20
@@ -18030,7 +18023,6 @@ apt -y --fix-broken install
 : 1726891759:0;command -v v
 : 1726891767:0;/usr/bin/vim /root/.emacs.d/host/pen.el/scripts/container/v
 : 1726892108:0;tm nw
-: 1726892114:0;emacs -nw
 : 1726892154:0;cd ~/emacs
 : 1726892342:0;git checkout ec4d29c4494f32acf0ff7c5632a1d951d957f084
 : 1726892363:0;sudo apt install libsqlite3-dev libgccjit0 libgccjit-8-dev
@@ -18473,7 +18465,6 @@ apt -y --fix-broken install
 : 1732677724:0;"pvd" "-2" "config/pen/cross_references.csv" ; exit "$?"
 : 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
 : 1732677955:0;cd ~/.sword
-: 1732679634:0;git status
 : 1732679653:0;rm scripts/colorls.html
 : 1732679655:0;rm scripts/directories.html
 : 1732679675:0;ssh-host
@@ -18687,10 +18678,8 @@ fi
 : 1733196252:0;"pvd" "-2" ; exit "$?"
 : 1733196281:0;nvim /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
 : 1733196286:0;v /root/.emacs.d/host/pen.el/scripts/babashka/utils/java.bb
-: 1733196527:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
 : 1733197137:0;v ~/.nvimrc
 : 1733210468:0;cd ~/.emacs.d/host/pen.el/src
-: 1733210512:0;v run.sh
 : 1733210551:0;pen-test-rc -f black_and_white
 : 1733210562:0;echo $?
 : 1733210571:0;if pen-rc-test -f black_and_white\
@@ -18701,7 +18690,6 @@ fi
 fi
 : 1733211406:0;echo "$PS1"
 : 1733211478:0;echo "$PROMPT_COMMAND"
-: 1733211486:0;env
 : 1733211635:0;man zshoptions
 : 1733211674:0;man zsh
 : 1733211688:0;echo "$PROMPT"
@@ -18737,7 +18725,6 @@ fi
 : 1733278947:0;disown
 : 1733286114:0;v echo-server.el
 : 1733286261:0;cd conf
-: 1733286262:0;cd ..
 : 1733286298:0;mcd emacs-tcp-server-ports
 : 1733286366:0;v 5393
 : 1733286380:0;rm 5393
@@ -18751,7 +18738,6 @@ fi
 : 1733287049:0;pen-e -D DEFAULT -e-tcp "(pen-disable-all-faces)"
 : 1733287052:0;pen-e -D DEFAULT -e-tcp "(pen-enable-all-faces)"
 : 1733287056:0;pen-e -D DEFAULT -e-tcp "(tetris)"
-: 1733287099:0;v pen-bw
 : 1733287136:0;tp find-here-path "*enable-al*"
 : 1733287138:0;tp find-here-path "*disable-all*"
 : 1733287145:0;ls -ldt container/pen-disable-all-faces
@@ -18772,7 +18758,6 @@ fi
 : 1733287921:0;tmux set status-bg colour207
 : 1733288058:0;v tmux-bw.conf
 : 1733288100:0;pen-e -D DEFAULT
-: 1733291126:0;cd src
 : 1733291128:0;v pen-faces.el
 : 1733291141:0;pen-e -D pen-emacsd-1 /root/.emacs.d/host/pen.el/src/pen-faces.el
 : 1733291179:0;v pen
@@ -18821,11 +18806,8 @@ fi
 : 1733292244:0;tmux set -u status-fg
 : 1733292263:0;tmux source tmux.conf
 : 1733292266:0;tmux source tmux-bw.conf
-: 1733292451:0;pen-e -D pen-emacsd-1
-: 1733292740:0;pin
 : 1733292744:0;pen
 : 1733299406:0;gum-confirm
-: 1733299599:0;v ~/.pen/pen.yaml
 : 1733299687:0;echo hi | fzf
 : 1733299726:0;v ~/syntax.vim
 : 1733299936:0;nvc -2 nano
@@ -18869,7 +18851,6 @@ fi
 : 1733375479:0;TERM=screen-2color bash
 : 1733375484:0;export TERM=screen-2color; bash
 : 1733375518:0;v
-: 1733375520:0;emacs -nw -Q
 : 1733375522:0;tmux
 : 1733375531:0;export TERM
 : 1733375533:0;TMUX= tmux
@@ -18885,7 +18866,6 @@ fi
 : 1733376206:0;v ~/.profile
 : 1733376213:0;export TERM=screen-2color
 : 1733376219:0;. ~/.shellrc
-: 1733376258:0;sh-general
 : 1733376262:0;ead PEN_TERM
 : 1733376358:0;v ~/.shellrc
 : 1733376572:0;eval "echo hi | tpop -E \"PEN_PROMPT=PEN_PROMPT PEN_HELP=PEN_HELP gipe.bb\""
@@ -18914,12 +18894,9 @@ fi
 : 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377675:0;v setup-term.sh
 : 1733377788:0;TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash
-: 1733380515:0;pwd
-: 1733380515:0;ls
 : 1733380517:0;v glossary.txt
 : 1733381247:0;o
 : 1733381757:0;nem todayfile
-: 1733381839:0;penq
 : 1733440555:0;gipe.bb
 : 1733447986:0;Luke 5:20-23
 : 1733448003:0;Mark 2:5-9
@@ -18930,7 +18907,6 @@ fi
 : 1733448344:0;Luke 5:20
 : 1733448358:0;Luke 5:18-19
 : 1733448429:0;Romans 4:5
-: 1733449071:0;v v
 : 1733449346:0;Ephesians 2:8-10
 : 1733449561:0;Ephesians 2:14-16
 : 1733449644:0;Ephesians 2:11-18
@@ -18948,3 +18924,49 @@ fi
 : 1733450424:0;Ephesians 3:14-21
 : 1733450641:0;nasb Ephesians 2:15-18
 : 1733450650:0;nasb Ephesians 2:11-18
+: 1734494650:0;v pen-ci
+: 1734494664:0;echo $PENELD
+: 1734494667:0;cd $PENELD
+: 1734494698:0;grep -HnoR PENELD . | v
+: 1734494725:0;echo $PENEL_DIR
+: 1734494780:0;grep -HnoRP "host.*PENELD" . | v
+: 1734494805:0;v run.sh
+: 1734494936:0;git status
+: 1734494941:0;cd scripts
+: 1734494944:0;v newframe.sh
+: 1734495121:0;penq
+: 1734496289:0;tpop-tetris & disown; exit
+: 1734496296:0;tpop-tetris
+: 1734496301:0;unbuffer tpop-tetris & disown; exit
+: 1734497270:0;vim run.sh
+: 1734497274:0;vim ~/run.sh
+: 1734497428:0;sh -c "'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'"
+: 1734497446:0;pen-emacsclient '-s' 'DEFAULT' '-a' '' '-t'
+: 1734497465:0;/usr/local/bin/emacsclient '-s' 'DEFAULT' '-a' '' '-t'
+: 1734497527:0;pen-e -D pen-emacsd-1
+: 1734497547:0;env
+: 1734497583:0;emacs -nw -Q
+: 1734497586:0;emacs -nw
+: 1734497826:0;v pen.el
+: 1734498214:0;cd ..
+: 1734498226:0;grep -HnoRP "defun str" . | v
+: 1734498240:0;grep -HnoRP "defun str(" . | v
+: 1734498244:0;grep -HnoRP "defun str\\(" . | v
+: 1734498250:0;grep -HnoRP "str\\(" . | v
+: 1734498254:0;grep -HnoRP "str\(" . | v
+: 1734498262:0;grep -HnoRP "defun str \\(" . | v
+: 1734498298:0;emacs -nw --debug-init
+: 1734498330:0;grep -HnoRP "defmacro try \\(" . | v
+: 1734498605:0;sh-general
+: 1734498616:0;cd src
+: 1734498617:0;ls
+: 1734498625:0;v pen-org.el
+: 1734498935:0;v v
+: 1734498963:0;pwd
+: 1734499035:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
+: 1734499211:0;v ~/.pen/pen.yaml
+: 1734499274:0;tp find-here-path "*.png*"
+: 1734499347:0;pin
+: 1734499354:0;v pen-bw
+: 1734499427:0;bible-random-verse
+: 1734501520:0;penq

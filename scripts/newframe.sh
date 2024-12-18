@@ -25,6 +25,12 @@ export LANG=en_US
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+export PENCONF="$HOME/.pen"
+test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
+test -d "$EMACSD/pen.el" && : "${PENELD:="$EMACSD/pen.el"}"
+export PENELD
+export PENEL_DIR
+
 cmd-onelineify-safe() {
     for var in "$@"
     do

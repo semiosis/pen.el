@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "deunicode" "#" "<==" "pen-c"

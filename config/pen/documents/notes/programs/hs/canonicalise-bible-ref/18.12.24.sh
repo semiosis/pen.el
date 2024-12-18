@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts;  "canonicalise-bible-ref" "#" "<==" "openbible-canon"

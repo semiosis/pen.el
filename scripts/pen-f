@@ -8,6 +8,7 @@ export PENCONF="$HOME/.pen"
 test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
 test -d "$EMACSD/pen.el" && : "${PENELD:="$EMACSD/pen.el"}"
 export PENELD
+export PENEL_DIR
 
 # See also: 'F' find commands
 

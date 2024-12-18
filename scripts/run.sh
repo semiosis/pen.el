@@ -4,6 +4,12 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export NO_AUTO_START=n
 
+export PENCONF="$HOME/.pen"
+test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
+test -d "$EMACSD/pen.el" && : "${PENELD:="$EMACSD/pen.el"}"
+export PENELD
+export PENEL_DIR
+
 export FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"
 
 export SCRIPTS=/root/.emacs.d/pen.el/scripts

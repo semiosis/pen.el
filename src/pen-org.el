@@ -16,8 +16,11 @@
 (require 'org-sql)
 (require 'org-ql)
 (require 'org-wc)
-(require 'org-download)
-(require 'org-transclusion)
+;; I need to be ensuring that I have the package
+(ignore-errors
+  (require 'org-download)
+  ;; Have a "pen-require" which doesn't stop loading if it's not there
+  (require 'org-transclusion))
 ;; There appears to be an issue with helm-org-ql currently
 ;; TODO Fix it
 ;; (require 'helm-org-ql)

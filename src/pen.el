@@ -125,6 +125,15 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-custom)
 (require 'pen-support)
 
+(defun org-require-around-advice (proc &rest args)
+  (try
+   (let ((res (apply proc args)))
+     res)
+   (message "%s" (format "Could not require: %s" proc))))
+(advice-add 'org-require :around #'org-require-around-advice)
+;; (advice-remove 'org-require #'org-require-around-advice)
+
+;; TODO Make this say if a library is not found
 (defmacro pen-require (library)
   "Don't require of sourced from the host machine"
   (if (inside-docker-p)

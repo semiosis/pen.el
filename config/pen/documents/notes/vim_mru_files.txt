@@ -1,4 +1,25 @@
 # Most recently edited files in Vim (version 3.0)
+/tmp/tf_zech-13-7-zechariah-13-7_temp_ae7c4cb7f9.txt
+/tmp/tf_col-1-5-colossians-1-5_temp_a56e23b3d6.txt
+/tmp/tf_nah-1-7-nahum-1-7_temp_ba3be00986.txt
+/root/.emacs.d/host/pen.el/scripts/pen-bw
+/root/.pen/pen.yaml
+/root/.emacs.d/host/pen.el/scripts/pen-v
+/root/programs/tmux/capture/tf_tmcaptureiz8Bo7m.txt
+/root/.emacs.d/host/pen.el/src/pen-org.el
+/root/.emacs.d/host/pen.el/src/pen.el
+/root/programs/tmux/capture/tf_tmcapture6XmRq47.txt
+/root/.emacs.d/host/pen.el/src/pen-debug.el
+/root/.emacs.d/host/pen.el/src/pen-support.el
+/root/.emacs.d/host/pen.el/src/pen-nix.el
+/root/.emacs.d/host/pen.el/scripts/pen-emacsclient
+/root/run.sh
+/root/.emacs.d/host/pen.el/scripts/pen
+/root/.emacs.d/host/pen.el/scripts/newframe.sh
+/root/.emacs.d/host/pen.el/scripts/run.sh
+/root/.emacs.d/host/pen.el/scripts/pen-f
+/root/.emacs.d/host/pen.el/scripts/setup.sh
+/root/.emacs.d/host/pen.el/scripts/pen-ci
 /tmp/tf_ephesians-2-11-18-ephesians-2-11-18-therefore-remember-that-formerly-you-the-gentiles-in-the-flesh-who-are-called-uncircumcision-by-the-so-called-circumcision-which-is-performed-in-the-flesh-by-human-hands-remember-that-_temp_e7631c6298.txt
 /tmp/tf_ephesians-2-15-18-ephesians-2-15-18-by-abolishing-in-his-flesh-the-enmity-which-is-the-law-of-commandments-contained-in-ordinances-so-that-in-himself-he-might-make-the-two-into-one-new-man-thus-establishing-peace-and-mig_temp_9f37438616.txt
 /tmp/vimcat_201932/vimcat
@@ -25,7 +46,6 @@
 /tmp/vimcat_151309/vimcat
 /tmp/tf_ephesians-2-8-10-ephesians-2-8-10-for-by-grace-you-have-been-saved-through-faith-and-this-is-not-your-own-doing-it-is-the-gift-of-god-not-a-result-of-works-so-that-no-one-may-boast-for-we-are-his-workmanship-created-in-c_temp_1f8f53018b.txt
 /tmp/vimcat_142324/vimcat
-/root/.emacs.d/host/pen.el/scripts/pen-v
 /tmp/tf_romans-4-5-romans-4-5-and-to-the-one-who-does-not-work-but-trusts-him-who-justifies-the-ungodly-his-faith-is-counted-as-righteousness-esv-_temp_712ac9ee5c.txt
 /tmp/vimcat_118062/vimcat
 /tmp/tf_luke-5-18-19-luke-5-18-19-and-behold-some-men-were-bringing-on-a-bed-a-man-who-was-paralyzed-and-they-were-seeking-to-bring-him-in-and-lay-him-before-jesus-but-finding-no-way-to-bring-him-in-because-of-the-crowd-they-wen_temp_ec4ce19423.txt
@@ -55,7 +75,6 @@
 /root/.emacs.d/host/pen.el/config/shellrc
 /root/.emacs.d/host/pen.el/config/profile
 /root/.emacs.d/host/pen.el/config/zsh/zshrc
-/root/.pen/pen.yaml
 /root/.pen/documents/notes/directories.org
 /root/.pen/documents/notes/fp.cfg
 /root/.pen/documents/notes/fp.ini
@@ -78,7 +97,6 @@
 /root/.emacs.d/host/pen.el/scripts/pen-e-tcp-all-workers
 /root/.emacs.d/host/pen.el/scripts/pen-tcp-disable-all-faces-all-workers
 /root/.emacs.d/host/pen.el/scripts/in-pen
-/root/.emacs.d/host/pen.el/scripts/pen-bw
 /root/.pen/emacs-tcp-server-ports/DEFAULT
 /tmp/fqJaKf2_DF
 /root/.pen/emacs-tcp-server-ports/pen-emacsd-1
@@ -91,7 +109,6 @@
 /root/.emacs.d/host/pen.el/config/pen/faces.el
 /root/.emacs.d/host/pen.el/Makefile
 /root/.emacs.d/host/pen.el/README.org
-/root/.emacs.d/host/pen.el/scripts/run.sh
 /root/repos/oh-my-zsh/themes/more-minimal.zsh-theme
 /root/repos/oh-my-zsh/oh-my-zsh.sh
 /root/programs/tmux/capture/tf_tmcaptureZYisWeU.txt
@@ -105,7 +122,6 @@
 /root/.emacs.d/host/pen.el/scripts/pen-nvt
 /root/programs/tmux/capture/tf_tmcapturerJR70HN.txt
 /root/.emacs.d/host/pen.el/scripts/babashka/bb.edn
-/root/.emacs.d/host/pen.el/scripts/pen-emacsclient
 /root/.emacs.d/host/pen.el/scripts/pen-rc-test
 /root/.emacs.d/host/pen.el/src/pen-rc.el
 /root/.emacs.d/host/pen.el/scripts/pen-rc-get
@@ -148,7 +164,6 @@
 /root/.emacs.d/host/pen.el/scripts/racket
 /root/.emacs.d/host/pen.el/scripts/runracketscript
 /root/repos/racket/datalog/tests/examples/hello.rkt
-/root/.emacs.d/host/pen.el/scripts/setup.sh
 /root/repos/racket/datalog/tests/examples/student.rkt
 /root/repos/racket/datalog/tests/examples/fac.rkt
 /tmp/aAKBtLKmW9

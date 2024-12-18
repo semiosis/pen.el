@@ -1,4 +1,4 @@
 #!/bin/sh
 export TTY
 
-COLUMNS=1000 /bin/ps $@
+LINES=1000 COLUMNS=1000 /bin/ps $@
