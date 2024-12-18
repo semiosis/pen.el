@@ -7,6 +7,27 @@ export TMUX_PANE
 dn="$1"
 bn="$(basename "$dn")"
 
+if ! test "$HAS_PARENT" = "n"; then
+    if [ -n "$CALLER_TARGET" ]; then
+        CALLER_TARGET="$CALLER_TARGET"
+    else
+        CALLER_TARGET="$(tmux display -p "#{session_name}")"
+    fi
+
+    : "${CURRENT_SESSION_NAME:="$CALLER_TARGET"}"
+    : "${PARENT_SESSION_NAME:="$CALLER_TARGET"}"
+    export CURRENT_SESSION_NAME
+    export PARENT_SESSION_NAME
+
+    if [ -n "$PARENT_SESSION_NAME" ]; then
+        PARENT_SESSION_ID="$(tmux display-message -p -t "$CURRENT_SESSION_NAME:" '#{session_id}')"
+    fi
+    export PARENT_SESSION_ID
+
+    echo "$CURRENT_SESSION_NAME"
+fi
+# env CURRENT_SESSION_NAME="$CURRENT_SESSION_NAME" PARENT_SESSION_NAME="$PARENT_SESSION_NAME" PARENT_SESSION_ID="$PARENT_SESSION_ID" 
+
 # New window with a new session - reattachable
 tm -d -te nw -fa -hlgreen -R -n "$bn" -c "$CWD" tm ns -R -ah -hlred -r -l -s -c "$dn"
 # -nopakf

@@ -1262,7 +1262,7 @@ case "$f" in
             ;;
 
             -np) {
-                HAS_PARENT="n"
+                export HAS_PARENT="n"
                 shift
             }
             ;;
