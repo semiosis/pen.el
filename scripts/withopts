@@ -80,6 +80,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            batch) {
+                export DO_BATCH=y
+            }
+            ;;
+
             nup) {
                 export UPDATE=n
                 export FORCE_RETRY=n

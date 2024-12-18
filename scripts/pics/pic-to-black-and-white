@@ -6,4 +6,17 @@ export TTY
 test -f "$1" && : "${fp:="$1"}"
 : "${fp:="/dev/stdin"}"
 
-convert "$1" -auto-level -threshold 50% PNG:-
+if test "$DO_BATCH" = "y"; then
+    # TODO Improve this B&W mode stuff
+
+    convert "$1" -auto-level -threshold 50% PNG:-
+else
+    if 0<&2 yn "Outline?"; then
+        # TODO Have a yn test here to ask if I want to convert to a line drawing
+        # TODO Implement this
+        convert "$1" -auto-level -threshold 50% PNG:-
+    else
+        convert "$1" -auto-level -threshold 50% PNG:-
+    fi
+fi
+

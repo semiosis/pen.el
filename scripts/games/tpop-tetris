@@ -2,9 +2,9 @@
 export TTY
 
 if pen-rc-test -f black_and_white; then
-    command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
-else
     command -v etetris-vt100 &>/dev/null && : "${CMD:="etetris-vt100"}"
+else
+    command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
 fi
 
 command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
