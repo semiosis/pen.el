@@ -19,5 +19,5 @@ esac; done
 if test "$BLACK_AND_WHITE" = "y"; then
     unbuffer in-pen xt -2 -xt in-tm -2 pin
 else
-    unbuffer in-pen xt -xt pin tmux attach -t localhost
+    unbuffer in-pen xt -xt pin sh tm attach localhost
 fi

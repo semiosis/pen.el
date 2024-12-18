@@ -1482,6 +1482,14 @@ case "$f" in
     }
     ;;
 
+    setdir) {
+        session_name="$1"
+        dp="$2"
+
+        tmux attach -c "$dp" -t "$session_name" 2> /dev/null &
+    }
+    ;;
+
     attach) {
         session_name="$1"
 
@@ -1489,16 +1497,21 @@ case "$f" in
             session_name=localhost
         fi
 
-        if pen-tm session-exists $session_name; then
-            TMUX= tmux attach -t "$session_name:" || {
+        # TODO Get the current directory from the session
+        # so that it does not update.
+
+        cwd="$(tmux display-message -t "${session_name}:" -p "#{session_path}")"
+
+        if pen-tm session-exists "$session_name"; then
+            CWD="$cwd" TMUX= tmux attach -c "$cwd" -t "$session_name:" || {
                 true
             }
         elif test "$session_name" = "localhost"; then
             pen-tm ns -r -l -d -c "$HOME/notes" -n localhost "$shell"
             TMUX= tmux attach -t "$session_name:" || {
-            true
-        }
-    else
+                true
+            }
+        else
             printf -- "%s\n" "session: $session_name does not exist"
             pen-pak -k c
         fi
