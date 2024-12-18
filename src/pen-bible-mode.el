@@ -1887,8 +1887,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (let* ((results
           (sor
            (if (>= (prefix-numeric-value current-prefix-arg) 4)
-               (pen-snc (concat "ocif diatheke-regex-search-multi " query))
-             (pen-snc (concat "ocif diatheke-regex-search-multi -fv " default-bible-mode-book-module " " query)))))
+               (pen-snc (concat "ocif diatheke-regex-search-multi -fv " default-bible-mode-book-module " " query))
+             (pen-snc (concat "ocif diatheke-regex-search-multi " query)))))
          (sel
           (if results
               (fz results nil nil "Bible fuzzy phrase search results:"))))
