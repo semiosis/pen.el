@@ -1,6 +1,14 @@
 #!/bin/bash
 export TTY
 
+if pen-rc-test -f black_and_white; then
+    command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
+else
+    command -v etetris-vt100 &>/dev/null && : "${CMD:="etetris-vt100"}"
+fi
+
+command -v etetris-xterm &>/dev/null && : "${CMD:="etetris-xterm"}"
+
 : ${CMD:="$(cmd "$@")"}
 # tetris-rs binary may not be installed, while the script may be, so fall-back to etetris
 # command -v tetris-rs &>/dev/null && : "${CMD:="tetris-rs || etetris-xterm"}"

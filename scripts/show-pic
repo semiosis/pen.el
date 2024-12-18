@@ -8,6 +8,14 @@ test -f "$fp" || exit 1
 
 # TODO Use imagemagick to give the image a background
 
+convert_maybe_to_bw() {
+    if pen-rc-test -f black_and_white; then
+        pic-to-black-and-white "$@"
+    else
+        cat "$@"
+    fi
+}
+
 if has-alpha-channel-p "$fp"; then
     input_fp="$(cat "$fp" | tf bin)"
 
@@ -19,20 +27,20 @@ if has-alpha-channel-p "$fp"; then
     case "$ans" in
         black-bg) {
             cat "$input_fp" | pic-make-alpha-into-black | sponge "$input_fp"
-            cat "$input_fp" | pic-convert-to-sixel
+            cat "$input_fp" | convert_maybe_to_bw | pic-convert-to-sixel
         } ;;
         white-bg) {
             cat "$input_fp" | pic-make-alpha-into-white | sponge "$input_fp"
-            cat "$input_fp" | pic-convert-to-sixel
+            cat "$input_fp" | convert_maybe_to_bw | pic-convert-to-sixel
         } ;;
         checkered-bg) {
             # format="$(cat "$input_fp" | pic-get-format)"
             # geometry="$(cat "$input_fp" | pic-get-size)"
             cat "$input_fp" | pic-add-checkerboard | sponge "$input_fp"
-            cat "$input_fp" | pic-convert-to-sixel
+            cat "$input_fp" | convert_maybe_to_bw | pic-convert-to-sixel
         } ;;
         *) ;;
     esac
 else
-    convert "$fp" -geometry 800x480 -colors 16 sixel:- | less -rS
+    convert_maybe_to_bw "$fp" | convert /dev/stdin -geometry 800x480 -colors 16 sixel:- | less -rS
 fi
