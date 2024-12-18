@@ -8,4 +8,4 @@ dn="$1"
 bn="$(basename "$dn")"
 
 # New window with a new session - reattachable
-tm -d -te nw -hlgreen -R -nopakf -n "$bn" -c "$CWD" REPEAT_COMMAND=y tm ns -ah -hlred -r -l -s -c "$dn"
+tm -d -te nw -fa -hlgreen -R -nopakf -n "$bn" -c "$CWD" tm ns -R -ah -hlred -r -l -s -c "$dn"
