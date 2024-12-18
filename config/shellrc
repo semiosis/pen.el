@@ -84,7 +84,8 @@ PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:~/.local/bin
 PATH=$PATH:/root/.roswell/bin
 PATH=$PATH:/usr/games
-export PATH="$(printf -- "%s" "$PATH" | sed 's/:/\n/g' | uniqnosort | sed -z "s/\n/:/g" | sed "s/:$//")"
+# uniqnosort
+export PATH="$(printf -- "%s" "$PATH" | sed 's/:/\n/g' | awk '!seen[$0] {print} {++seen[$0]}' | sed -z "s/\n/:/g" | sed "s/:$//")"
 
 # I actually *do* want this to be set, so I know if I need to create a new tmux or not for, cosm, say
 # unset TMUX

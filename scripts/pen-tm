@@ -1159,6 +1159,12 @@ case "$f" in
             }
             ;;
 
+            -ah) { # Attach to the parent session in this window
+                ATTACH_HERE="y"
+                shift
+            }
+            ;;
+
             -f) { # if the session name already exists, use this
                 force_create_session="y"
                 shift
@@ -1401,8 +1407,9 @@ case "$f" in
                                 tm-open-file-green "$line"
 
                             elif test -d "$line"; then
-                                line="$(printf -- "%s" "$line" | qne)"
-                                REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
+                                # line="$(printf -- "%s" "$line" | qne)"
+                                tm-open-dir "$line"
+                                # REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
                             fi
                         done
                     fi
@@ -1413,8 +1420,9 @@ case "$f" in
                                 line="$(printf -- "%s" "$line" | qne)"
                                 tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(cmd-nice-posix "$line"); rifle \"$line\""
                             elif test -d "$line"; then
-                                line="$(printf -- "%s" "$line" | qne)"
-                                REPEAT_COMMAND=y tm ns -hlblue -r -l -s -c "$line"
+                                # line="$(printf -- "%s" "$line" | qne)"
+                                tm-open-dir "$line"
+                                # REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
                             fi
                         done
                     fi
@@ -1428,7 +1436,11 @@ case "$f" in
 
         tmux setenv -t "$session_name" "CWD" "$CWD"
 
-        if test "$ATTACH" = "y"; then
+        if test "$ATTACH_HERE" = "y"; then
+            cd "$CWD"
+            pen-tm attach "$session_name"
+
+        elif test "$ATTACH" = "y"; then
             cd "$CWD"
 
             if test "$HAS_PARENT" = "y"; then
