@@ -1271,8 +1271,12 @@ case "$f" in
         pen-e running
         ret="$?"
         if ! test "$ret" = 0; then
+            running_matching_workers="$(ps -ef |grep "emacs --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
             if test "$NO_AUTO_START" = "y"; then
                 echo "$SOCKET not started yet. Not starting worker." 1>&2
+                exit "$ret"
+            elif test -n "$running_matching_workers"; then
+                echo "$SOCKET appears to be running. Not starting another worker." 1>&2
                 exit "$ret"
             else
                 echo "$SOCKET not started yet. Starting worker." 1>&2
