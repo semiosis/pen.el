@@ -1,6 +1,6 @@
 #!/bin/bash
 export TTY
 
-. $SCRIPTS/lib/hs
+# . $SCRIPTS/lib/hs
 
 /usr/local/bin/ros "$@"

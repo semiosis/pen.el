@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-. $SCRIPTS/lib/hs
+# . $SCRIPTS/lib/hs
 
 sn="$(basename "$0")"
 : "${NODE_VERSION:="$(oci -t 60 pen-rc .node_version)"}"
