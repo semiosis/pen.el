@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# This task really requires either expert sed knowledge or a moderately sized awk script
+
 cat /root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt | {
         sed -n '1!G;h;$p'
         sed -n -e '/^[A-Z]/h;$p'
