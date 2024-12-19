@@ -210,7 +210,7 @@ START and END can be in either order."
 
 (defset pen-tm-extra-exports "PEN_PROMPTS_DIR PROMPTS PENEL_DIR PEN_ENGINES_DIR ENGINES PENSIEVE_DIR KHALA_DIR OPENAI_API_EL_DIR")
 
-(defun pen-tm-nw (&optional cmd window-type nw_args input dir output_b)
+(defun pen-tm-nw (&optional cmd window-type nw_args input dir output_b wait_b)
   "Runs command in a new window/pane"
   (interactive)
 
@@ -249,7 +249,7 @@ START and END can be in either order."
           (if (and (variable-p 'pen-sh-update)
                    (eval 'pen-sh-update))
               (setq cmd (concat "upd " cmd)))
-          (let ((cmd-tm-split (concat "unbuffer pen-tm -f -d -te " window-type " " nw_args " -c " (pen-q dir) " " (pen-q cmd) " &"))
+          (let ((cmd-tm-split (concat "unbuffer pen-tm -f " (if wait_b nil "-d") " -te " window-type " " nw_args " -c " (pen-q dir) " " (pen-q cmd) (if wait_b nil " &")))
                 ;; The last cmd here must not be quoted
                 (cmd-tm-here (concat "pen-tm ns -np -s -c " (pen-q dir) " " cmd)))
             (if (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -277,7 +277,7 @@ START and END can be in either order."
         (etv pane)
       pane)))
 
-(defun pen-window (&optional wintype cmd nw_args input dir output_b)
+(defun pen-window (&optional wintype cmd nw_args input dir output_b wait_b)
   (interactive)
   (setq wintype (or wintype 'sps))
   (if (major-mode-p 'calibredb-search-mode)
@@ -285,7 +285,7 @@ START and END can be in either order."
                                                       (or (calibredb-getattr (car (calibredb-find-candidate-at-point)) :file-path) ""))) "") :chomp t)))
   (let* ((s_wintype (sym2str wintype))
          (fun (str2sym (concat "pen-e-" s_wintype))))
-    (pen-tm-nw cmd s_wintype nw_args input dir output_b)
+    (pen-tm-nw cmd s_wintype nw_args input dir output_b wait_b)
     ;; (if (and
     ;;      (not output_b)
     ;;      (>= (prefix-numeric-value current-prefix-arg) 8))
@@ -301,10 +301,11 @@ START and END can be in either order."
 (defalias 'tm-nw 'pen-nw)
 (defalias 'sh/nw 'pen-nw)
 
-(defun pen-sps (&optional cmd nw_args input dir output_b)
+(defun pen-sps (&optional cmd nw_args input dir output_b wait_b)
   "Runs command in a sensible split"
   (interactive)
-  (pen-window 'sps cmd nw_args input dir output_b))
+  ;; wait_b is for waiting for the command to exit, even if there is no stdout
+  (pen-window 'sps cmd nw_args input dir output_b wait_b))
 (defalias 'pen-tm-sps 'pen-sps)
 (defalias 'tm-sps 'pen-sps)
 (defalias 'sh/sps 'pen-sps)

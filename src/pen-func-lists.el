@@ -201,6 +201,7 @@
    'helm-org-rifle
    'tvipe-org-table-export-tsv
    'etv-org-table-export-tsv
+   'fpvd-org-table-edit
    'fpvd-org-table-export
    'efpvd-org-table-export))
 

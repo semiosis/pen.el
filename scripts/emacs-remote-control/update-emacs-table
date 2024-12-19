@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -D) {
+        server_name="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${server_name:="DEFAULT"}"
+
+fp="$1"
+line="$2"
+tablefp="$3"
+
+# [[sps:update-emacs-table -D DEFAULT "/root/.pen/documents/notes/todo.org" 54 "/tmp/babel-g3fc6n/org-table4UEpT4.tsv"]]
+
+IFS= read -r -d '' elcode <<HEREDOC
+(progn
+  (save-window-excursion
+  (with-current-buffer (find-file "$fp")
+    (goto-line $line)
+    (org-table-select)
+    (delete-region (mark) (point))
+    (org-table-import "$tablefp" nil)
+    (org-table-insert-hline)
+    (deselect))))
+HEREDOC
+
+pen-e -D "$server_name" -e-tcp "$elcode"

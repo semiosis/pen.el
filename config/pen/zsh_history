@@ -1220,7 +1220,6 @@ pip3.8 uninstall config\
 : 1662508061:0;echo "$MYGIT/ChrisPenner/wave-function-collapse/src/WFC.hs" | pen-umn
 : 1662508067:0;v pen-umn
 : 1662508072:0;echo "\$MYGIT/ChrisPenner/wave-function-collapse/src/WFC.hs" | pen-umn
-: 1662514646:0;which -a si
 : 1662517992:0;tp find-here-path "*rc*"
 : 1662520043:0;ln -sf container-script eipe
 : 1662520086:0;v $DUMP/tmp/scratchp6fISa.txt
@@ -6358,7 +6357,6 @@ EOF\
 : 1701465761:0;cd ~/.pen/org-brain
 : 1701467377:0;j org-brain-data-file
 : 1701467416:0;v pen-org-brain.el
-: 1701481842:0;v .tmux.sh
 : 1701482560:0;cd /root/repos/oh-my-zsh
 : 1701482565:0;cd templates
 : 1701482673:0;ead reset_color
@@ -7235,7 +7233,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702961405:0;v urlarchive
 : 1702961658:0;ls | lolcat | cat
 : 1702961774:0;o Music\ Data\ Base.xls
-: 1702961819:0;v ~/.visidatarc
 : 1702961864:0;visidata
 : 1702961875:0;x -sh visidata -e File -i
 : 1702961905:0;x -sh visidata -s ' ' -i
@@ -18607,7 +18604,6 @@ apt -y --fix-broken install
 : 1732854462:0;tmux wait-for -S yo
 : 1732854491:0;tmux choose-tree && echo hi | tv
 : 1732854557:0;v list-sessions
-: 1732854561:0;tmux list-sessions
 : 1732854567:0;ead list-sessions
 : 1732854646:0;tm list-sessions
 : 1732854694:0;man uniq
@@ -18625,7 +18621,6 @@ apt -y --fix-broken install
 : 1732855635:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session" | v
 : 1732855650:0;unbuffer sout tpop -E "yn \"About to close last pane. Attach other session?\" && sout tm choose-session"
 : 1732855752:0;v sout
-: 1732855868:0;v pen-tm
 : 1732856109:0;tmux display -p "#{session_name}"
 : 1732856149:0;tpop
 : 1732925726:0;v clipboard.txt
@@ -18729,7 +18724,6 @@ fi
 : 1733286366:0;v 5393
 : 1733286380:0;rm 5393
 : 1733286412:0;v pen-emacsd-1
-: 1733286437:0;v pen-e
 : 1733286646:0;sl
 : 1733286837:0;cat DEFAULT
 : 1733286840:0;cat pen-emacsd-1
@@ -18913,7 +18907,6 @@ fi
 : 1733449673:0;nasb Ephesians 2:15
 : 1733449740:0;nod John 6:53
 : 1733449794:0;Galatians 3:28
-: 1733449987:0;pe
 : 1733450008:0;I Corinthians 6:19-20
 : 1733450026:0;I Corinthians 7:23
 : 1733450041:0;II Peter 2:1
@@ -18931,10 +18924,8 @@ fi
 : 1734494725:0;echo $PENEL_DIR
 : 1734494780:0;grep -HnoRP "host.*PENELD" . | v
 : 1734494805:0;v run.sh
-: 1734494936:0;git status
 : 1734494941:0;cd scripts
 : 1734494944:0;v newframe.sh
-: 1734495121:0;penq
 : 1734496289:0;tpop-tetris & disown; exit
 : 1734496296:0;tpop-tetris
 : 1734496301:0;unbuffer tpop-tetris & disown; exit
@@ -18943,12 +18934,10 @@ fi
 : 1734497428:0;sh -c "'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'"
 : 1734497446:0;pen-emacsclient '-s' 'DEFAULT' '-a' '' '-t'
 : 1734497465:0;/usr/local/bin/emacsclient '-s' 'DEFAULT' '-a' '' '-t'
-: 1734497527:0;pen-e -D pen-emacsd-1
 : 1734497547:0;env
 : 1734497583:0;emacs -nw -Q
 : 1734497586:0;emacs -nw
 : 1734497826:0;v pen.el
-: 1734498214:0;cd ..
 : 1734498226:0;grep -HnoRP "defun str" . | v
 : 1734498240:0;grep -HnoRP "defun str(" . | v
 : 1734498244:0;grep -HnoRP "defun str\\(" . | v
@@ -18957,12 +18946,9 @@ fi
 : 1734498262:0;grep -HnoRP "defun str \\(" . | v
 : 1734498298:0;emacs -nw --debug-init
 : 1734498330:0;grep -HnoRP "defmacro try \\(" . | v
-: 1734498605:0;sh-general
 : 1734498616:0;cd src
-: 1734498617:0;ls
 : 1734498625:0;v pen-org.el
 : 1734498935:0;v v
-: 1734498963:0;pwd
 : 1734499035:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
 : 1734499211:0;v ~/.pen/pen.yaml
 : 1734499274:0;tp find-here-path "*.png*"
@@ -18970,3 +18956,34 @@ fi
 : 1734499354:0;v pen-bw
 : 1734499427:0;bible-random-verse
 : 1734501520:0;penq
+: 1734552033:0;v .tmux.sh
+: 1734552142:0;tmux list-sessions
+: 1734552341:0;pen-e -D pen-emacsd-1
+: 1734558192:0;v /tmp/babel-g3fc6n/org-tableyTeM2B.tsv
+: 1734558377:0;pen-tm sps -nv slmenu
+: 1734558386:0;pen-tm sps -nv vim
+: 1734558395:0;pen-tm -d sps -nv vim
+: 1734558496:0;v pen-tm
+: 1734560078:0;v orgtbl-to-tsv
+: 1734560682:0;git status
+: 1734560887:0;cd emacs-scripts
+: 1734560888:0;cd ..
+: 1734560905:0;mcd emacs-remote-control
+: 1734560915:0;tp find-here-path "*tcp*"
+: 1734560920:0;v pen-e
+: 1734560925:0;pwd
+: 1734560927:0;ead e-tcp
+: 1734560950:0;v update-emacs-table
+: 1734561304:0;pe
+: 1734561315:0;update-emacs-table
+: 1734561700:0;update-emacs-table -D DEFAULT "/root/.pen/documents/notes/todo.org" 54 "/tmp/babel-g3fc6n/org-table4UEpT4.tsv"
+: 1734563430:0;v ~/.visidatarc
+: 1734565038:0;cp -a pen-prompt-tablist.el pen-supervisor-tablist.el
+: 1734565142:0;mcd supervisor
+: 1734565142:0;ls
+: 1734565447:0;v ./supervisor-details
+: 1734565448:0;sh-general
+: 1734565453:0;v supervisor-details
+: 1734565784:0;supervisor-details
+: 1734565814:0;supervisor-details | v
+: 1734565994:0;which -a si

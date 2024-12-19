@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# - I need supervision for bash scripts invocations first. See: e:supervisor-details
+# - Then I should make supervision for emacs functions. See: e:/root/.emacs.d/host/pen.el/src/pen-supervise.el
+# So I'll need at least two supervisory systems.
+
+# An example of a command
+# update-emacs-table -D DEFAULT "/root/.pen/documents/notes/todo.org" 54 "/tmp/babel-g3fc6n/org-table4UEpT4.tsv"
+
+echo -e "Intention\tCommand"
+echo -e "Update an org table at a specific line\tupdate-emacs-table -D DEFAULT \"/root/.pen/documents/notes/todo.org\" 54 \"/tmp/babel-g3fc6n/org-table4UEpT4.tsv"

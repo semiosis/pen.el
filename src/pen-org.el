@@ -426,6 +426,27 @@ With argument N not nil or 1, move forward N - 1 lines first."
     (org-table-export newfile "orgtbl-to-tsv")
     (pen-sps (concat "fpvd " (pen-q newfile)))))
 
+(defun fpvd-org-table-edit ()
+  (interactive)
+  (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
+    (org-table-export newfile "orgtbl-to-tsv")
+    (pen-sps (concat "fpvd " (pen-q newfile)) nil nil nil nil t)
+    (org-table-select)
+    (delete-region (mark) (point))
+    (org-table-import newfile nil)
+    (org-table-insert-hline)))
+
+(defun fpvd-org-table-edit-async ()
+  (interactive)
+  (let ((newfile (org-babel-temp-file "org-table" ".tsv"))
+        (server (daemonp)))
+    (org-table-export newfile "orgtbl-to-tsv")
+    (pen-sps (concat "fpvd " (pen-q newfile)) nil nil nil nil t)
+    (org-table-select)
+    (delete-region (mark) (point))
+    (org-table-import newfile nil)
+    (org-table-insert-hline)))
+
 ;; This advice didn't work - I guess I need to advise org-table-export
 ;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
 ;; (advice-remove 'fpvd-org-table-export #'advise-to-yes)
@@ -957,5 +978,33 @@ optional argument MARKERP, return the position as a new marker."
 (define-key org-mode-map (kbd "C-c C-x l") 'org-metaright)
 (define-key org-mode-map (kbd "C-c C-x k") 'org-metaup)
 (define-key org-mode-map (kbd "C-c C-x j") 'org-metadown)
+
+(defun org-table-select (&optional txt)
+  "Convert the table at point to a Lisp structure.
+
+The structure will be a list.  Each item is either the symbol `hline'
+for a horizontal separator line, or a list of field values as strings.
+The table is taken from the parameter TXT, or from the buffer at point."
+  (if txt
+      (with-temp-buffer
+        (insert txt)
+        (goto-char (point-min))
+        (org-table-to-lisp))
+    (goto-char (org-table-begin))
+    (let ((table nil))
+      (set-mark (point))
+      (while (re-search-forward "\\=[ \t]*|" nil t)
+	    (let ((row nil))
+	      (if (looking-at "-")
+		      (push 'hline table)
+	        (while (not (progn (skip-chars-forward " \t") (eolp)))
+		      (push (buffer-substring
+		             (point)
+		             (progn (re-search-forward "[ \t]*\\(|\\|$\\)")
+			                (match-beginning 0)))
+		            row))
+	        (push (nreverse row) table)))
+	    (forward-line))
+      (nreverse table))))
 
 (provide 'pen-org)

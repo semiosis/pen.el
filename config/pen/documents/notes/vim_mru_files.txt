@@ -1,4 +1,22 @@
 # Most recently edited files in Vim (version 3.0)
+/root/.pen/documents/notes/todo.org
+/root/.emacs.d/host/pen.el/scripts/container/si
+/root/.emacs.d/host/pen.el/scripts/supervisor/supervisor-details
+/root/.pen/documents/notes/perspective.org
+/root/.emacs.d/host/pen.el/config/visidatarc
+/root/.pen/documents/notes/read.org
+/root/.emacs.d/host/pen.el/scripts/emacs-remote-control/update-emacs-table
+/tmp/babel-g3fc6n/org-table4UEpT4.tsv
+/tmp/_WKjyVkhJz
+/root/.emacs.d/host/pen.el/scripts/pen-e
+/tmp/31v6dxf5Q9
+/root/.emacs.d/host/pen.el/scripts/pen-tm
+/tmp/8nT5mHUpSo
+/tmp/babel-g3fc6n/org-tableyTeM2B.tsv
+/root/.pen/documents/notes/perspective.org_archive
+/root/.pen/documents/notes/remember.org
+/root/.pen/documents/notes/watch.org
+/root/.pen/documents/notes/.tmux.sh
 /tmp/tf_zech-13-7-zechariah-13-7_temp_ae7c4cb7f9.txt
 /tmp/tf_col-1-5-colossians-1-5_temp_a56e23b3d6.txt
 /tmp/tf_nah-1-7-nahum-1-7_temp_ba3be00986.txt
@@ -59,11 +77,7 @@
 /tmp/tf_luke-7-48-luke-7-48-and-he-said-to-her-your-sins-are-forgiven-esv-_temp_668029b9ab.txt
 /tmp/vimcat_80858/vimcat
 /root/.emacs.d/host/pen.el/docs/journal/05.12.24.org
-/root/.pen/documents/notes/read.org
-/root/.pen/documents/notes/watch.org
-/root/.pen/documents/notes/todo.org
 /root/.pen/documents/notes/glossary.txt
-/root/.emacs.d/host/pen.el/scripts/pen-tm
 /root/.emacs.d/host/pen.el/scripts/setup-term.sh
 /tmp/HLAI5pnKCC
 /root/.emacs.d/host/pen.el/scripts/clojure-lsp
@@ -87,13 +101,11 @@
 /root/.emacs.d/host/pen.el/scripts/pen-fzf
 /root/.emacs.d/host/pen.el/config/syntax.vim
 /tmp/vimcat_372531/vimcat
-/root/.pen/documents/notes/perspective.org
 /root/.emacs.d/host/pen.el/src/pen-faces.el
 /root/.emacs.d/host/pen.el/scripts/tmux-bw
 /tmp/tf_tempPJedktc.txt
 /root/.emacs.d/host/pen.el/config/tmux-bw.conf
 /root/.emacs.d/host/pen.el/scripts/prompting/pen
-/root/.emacs.d/host/pen.el/scripts/pen-e
 /root/.emacs.d/host/pen.el/scripts/pen-e-tcp-all-workers
 /root/.emacs.d/host/pen.el/scripts/pen-tcp-disable-all-faces-all-workers
 /root/.emacs.d/host/pen.el/scripts/in-pen
@@ -169,7 +181,6 @@
 /tmp/aAKBtLKmW9
 /root/.emacs.d/host/pen.el/scripts/racket-scripts/you-gave-me.rkt
 /root/.emacs.d/host/pen.el/scripts/readme-scripts/find-readme-here
-/root/.pen/documents/notes/remember.org
 /root/.visidata/plugins/vd_toml.py
 /tmp/yo.csv
 /root/.emacs.d/host/pen.el/scripts/wayback

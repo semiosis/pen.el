@@ -2565,6 +2565,7 @@ May use to generate code from comments."
 ;; I think hyperbole broke the menu bar
 ;; (require 'pen-hyperbole)
 (require 'pen-fun)
+(require 'pen-supervise)
 (require 'pen-lsp-r)
 (require 'pen-lsp-go)
 (require 'pen-lsp-c)

@@ -48,7 +48,7 @@
                        (let* ((sizes
                                (or col-sizes
                                    (mapcar (lambda (e)
-                                             (max my-tablist-min-column-width (min 30 (length e))))
+                                             (max pen-tablist-min-column-width (min 30 (length e))))
                                            header)))
                               (trues (mapcar (lambda (e) t)
                                              header)))
@@ -107,4 +107,4 @@
   (let* ((pen-sh-update (>= (prefix-numeric-value current-global-prefix-arg) 16)))
     (apply 'create-tablist (cons pen-prompts-tablist-data-command pen-prompts-tablist-meta))))
 
-(provide 'pen-tablist)
+(provide 'pen-prompt-tablist)

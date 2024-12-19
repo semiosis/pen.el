@@ -1,1 +1,5 @@
+#!/bin/bash
+export TTY
 
+# - I need supervision for bash scripts invocations first. See: e:supervisor-details
+# - Then I should make supervision for emacs functions. See: e:

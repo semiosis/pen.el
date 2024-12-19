@@ -1,3 +1,121 @@
+* TODO Add a point
+By grace you have been saved through faith and this is not of your own doing, it is the gift of God.
+
+If someone was living in Egypt and was given daily food on the basis that they would bow to
+an idol once every day, and then by faith they heeded God's call to leave Egypt and go
+to a promised land of abundance without idolatry, and then in the wilderness
+they began began getting very hungry and it looked like they might run out of food and die in the desert
+but by faith they believed that God would supply their needs instead of pining over an idolatrous way of life,
+then a 'good samaritan' bedouin brought them some food and they ate the food, then
+the initial leaving of Egypt or the receiving of the food itself could both be described as that initial step of faith,
+or the salvation having arrived but the "putting hand to the plough and not looking back" and the actual consumption of the food
+could be described as the "working out of that salvation". And the 'process' of being saved is the salvation.
+
+So if someone says that when they first believed in their heart the gospel they were saved based entirely on Jesus' finished works,
+this is correct in a way, but Jesus has purchased the salvation which is a process.
+If someone says that process was completed when they first believed, then what more is there to hope for?
+What type of relationship is that where a person terminates their obedience after the first step of obedience?
+They may as well say they have arrived in the promised land already.
+They may as well say they have arrived in heaven already.
+I just think they fullness of the gospel has a lot more too it.
+
+* TODO Get the j:cmdl function
+j:cmdl
+
+* TODO Make a tablist supervisory mode
+
+Perhaps I should just build up from basics? Nah.
+
+Use j:defcmdmode.
+
+e:/root/.emacs.d/host/pen.el/src/pen-supervisor-tablist.el
+
+- I need supervision for bash scripts invocations first
+- Then I should make supervision for emacs functions
+
+So I'll need at least two supervisory systems.
+
+* TODO Make for visidata
+** TODO a way from fpvd to open the current sheet in another program such as vim
+- A quick keybinding for it.
+
+** An m-x fuzzyfinder for running commands
+
+** A ZZ mapping for saving and quitting - also maybe a <M-;><M-;> like vim
+It's <Alt+;><Alt+;> in visidata.
+
+* TODO Consider getting this to go into a backlog of tasks so I can execute them at leisure
+e:/root/.emacs.d/host/pen.el/scripts/emacs-remote-control/update-emacs-table
+
+Rather than execute the edit straight away.
+
+I need to make it so I can tweak the parameters again before executing.
+
+** TODO Make something to go to the line it thinks the edit needs to be done at
+But then allow the user to adjust.
+Make a "semiautomated" "supervised" goto-line for this.
+And have emacs state the objective.
+
+* TODO Make something to edit a table but use the emacs TCP server to make the request asynchonous
+Use a "promise"?
+OK, so what I want is to be able to continue using emacs while waiting on fpvd to finish editing a table.
+When the fpvd is done then the table should be updated inside org-mode.
+
+* Perspective
+- With regards to a terminal game
+  - I really want a terminal game engine.
+
+** It would be cool to make a game for learning things
+- And then connecting it to, say, programming languages for learning functions
+
+** Hmm. I think then that I should set up some tools for learning
+
+*** Spaced repetition
+- Use bookmarks?
+- Tabularized somehow?
+  - Perhaps design an interface like mx:calibredb
+  - Or tabulated-list-mode
+  - Or fpvd
+    - Set up a streamlined process for getting data in and out of pfvd
+    - I should be able to edit an emacs table with fpvd
+      - Read into fpvd from emacs
+      - Read into emacs from fpvd
+- Make it methodical
+
+j:org-table-to-lisp
+
+| ColA | ColB        |
+|------+-------------|
+|   12 |             |
+|   15 |             |
+|   29 | k           |
+|   30 |             |
+| 2398 |             |
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (progn (org-table-import (umn "$TMPDIR/babel-g3fc6n/org-tableiYCdcD.tsv") nil) (org-table-insert-hline))
+#+END_SRC
+
+* I could make a game like Carmen Sandiego in the terminal
+
+* Perspective
+- I feel as though I didn't have a choice regarding the AI stuff
+  - I was pushed into that as I was deprived of work, etc.
+
+* TODO Today work on some kind of game?
+- Or what?
+- It might be better to chip away bit by bit on Pen.el supporting features.
+
+** metagame game?
+- But then I need some kind of metagame game to do as I am working.
+- What's in a game though?
+
+*** Statistics / achievements
+Statistics on various things.
+- Like "most recently used files", for example.
+- Search engine information over my notes.
+- A game between me and my spouse who I do not have because I feel as though the enemy has been depriving me of a spouse.
+
 * TODO 
 - Read Augustine
 
