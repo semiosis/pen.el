@@ -90,7 +90,8 @@
   (let* ((path (if (and
                     (f-file-p cmd-or-csv-path)
                     ;; Might be a shell command
-                    ;; (not (f-executable-p cmd-or-csv-path)))
+                    ;; (not (f-executable-p cmd-or-csv-path))
+                    )
                    cmd-or-csv-path))
          (command (if (not path)
                   cmd-or-csv-path))
