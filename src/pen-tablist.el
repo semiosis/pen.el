@@ -631,15 +631,6 @@ Return t, if point is now in a visible area."
   (gc (mygit-tablist-get-url)))
 
 
-
-(defun prompts-tablist-get-fp ()
-  (pen-umn (concat "$PROMPTS/" (str (car (vector2list (tabulated-list-get-entry)))))))
-
-(defun prompts-tablist-o ()
-  (interactive)
-  (e (prompts-tablist-get-fp)))
-
-
 (defun aws-remove-user-policy (id)
   (interactive (list (tabulated-list-get-id)))
 
@@ -700,7 +691,6 @@ Return t, if point is now in a visible area."
 (define-key arp-tablist-mode-map (kbd "N") 'arp-tablist-nmap-ports)
 (define-key arp-tablist-mode-map (kbd "O") 'arp-tablist-nmap-os-detect)
 (define-key mygit-tablist-mode-map (kbd "RET") 'mygit-tablist-gc)
-(define-key prompts-tablist-mode-map (kbd "RET") 'prompts-tablist-o)
 (define-key aws-users-tablist-mode-map (kbd "d") 'aws-delete-user)
 (define-key aws-users-tablist-mode-map (kbd "c") 'aws-create-user)
 (define-key aws-users-tablist-mode-map (kbd "a") 'aws-add-policy-to-user)

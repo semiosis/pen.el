@@ -14,8 +14,8 @@
          (modesym (intern modestr))
          (mapsym (intern (concat modestr "-map"))))
     `(progn
-       (defvar ,mapsym (make-sparse-keymap)
-         ,(concat "Keymap for `" modestr "'."))
+       (defset ,mapsym (make-sparse-keymap)
+               ,(concat "Keymap for `" modestr "'."))
        (defvar-local ,modesym nil)
 
        (define-minor-mode ,modesym
@@ -26,7 +26,15 @@
          :keymap ,mapsym)
        (provide ',modesym))))
 
+(defun prompts-tablist-get-fp ()
+  (pen-umn (concat "$PROMPTS/" (str (car (vector2list (tabulated-list-get-entry)))))))
+
+(defun prompts-tablist-o ()
+  (interactive)
+  (e (prompts-tablist-get-fp)))
+
 (defcmdmode "prompts" "tablist")
+(define-key prompts-tablist-mode-map (kbd "RET") 'prompts-tablist-o)
 
 (defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
   "This creates a new tabulated list buffer from a CSV string"
@@ -81,7 +89,8 @@
 
   (let* ((path (if (and
                     (f-file-p cmd-or-csv-path)
-                    (not (f-executable-p cmd-or-csv-path)))
+                    ;; Might be a shell command
+                    ;; (not (f-executable-p cmd-or-csv-path)))
                    cmd-or-csv-path))
          (command (if (not path)
                   cmd-or-csv-path))

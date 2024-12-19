@@ -2,9 +2,10 @@
 (require 'pcsv)
 (require 'tablist)
 
-(defvar pen-supervisor-tablist-data-command "oci supervisor-details -tsv")
+;; (defset pen-supervisor-tablist-data-command "oci supervisor-details -tsv")
+(defset pen-supervisor-tablist-data-command "oci supervisor-details -tsv | tsv2csv")
 
-(defvar pen-supervisor-tablist-meta '("supervisors" t "20 70"))
+(defset pen-supervisor-tablist-meta '("supervisor" t "20 70"))
 
 (defmacro defcmdmode (cmd &optional cmdtype)
   (setq cmd (str cmd))
@@ -26,7 +27,21 @@
          :keymap ,mapsym)
        (provide ',modesym))))
 
-(defcmdmode "supervisors" "tablist")
+(defun supervisor-tablist-get-fp ()
+  (sps "supervisor-details | fpvd"))
+
+(defun supervisor-tablist-fpvd ()
+  (interactive)
+  (sps "supervisor-details | fpvd"))
+
+(defun supervisor-tablist-o ()
+  (interactive)
+  ;; (e (supervisor-tablist-get-fp))
+  )
+
+(defcmdmode "supervisor" "tablist")
+(define-key supervisor-tablist-mode-map (kbd "p") 'supervisor-tablist-fpvd)
+(define-key supervisor-tablist-mode-map (kbd "RET") 'supervisor-tablist-o)
 
 (defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
   "This creates a new tabulated list buffer from a CSV string"
@@ -81,7 +96,9 @@
 
   (let* ((path (if (and
                     (f-file-p cmd-or-csv-path)
-                    (not (f-executable-p cmd-or-csv-path)))
+                    ;; Might be a shell command
+                    ;; (not (f-executable-p cmd-or-csv-path))
+                    )
                    cmd-or-csv-path))
          (command (if (not path)
                   cmd-or-csv-path))

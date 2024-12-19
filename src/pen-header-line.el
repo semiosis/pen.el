@@ -121,6 +121,8 @@
   "Display path on headerline."
 
   (cond
+   ((derived-mode-p 'tabulated-list-mode)
+    nil)
    ((major-mode-p 'universal-sidecar-buffer-mode)
     ;; (path-header-line-off)
     ;; (universal-sidecar-refresh)
