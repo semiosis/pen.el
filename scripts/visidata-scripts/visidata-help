@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# I need to upgrade for this to work, and to have asciimono theme
+# pen_python_version="$(pen-python --version | scrape '[0-9]+.[0-9]+')"
+# pen_python() {
+#  "pip$pen_python_version" "$@"
+# }
+# pen_python install --upgrade visidata
+
+visidata -P open-guide-index

@@ -6,4 +6,4 @@ export TTY
 # This is great for opening xls files
 # With multiple sheets.
 
-pen-python /usr/local/bin/vd "$@"
+pen-python /usr/local/bin/vd --theme=asciimono "$@"

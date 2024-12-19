@@ -160,6 +160,11 @@ if test -f $HOME/.emacs.d/host/pen.el/config/profile; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/profile ~/.profile
 fi
 
+if test -d /root/.emacs.d/host/pen.el/config/visidata; then
+    rm -rf ~/.visidata
+    ln -sf /root/.emacs.d/host/pen.el/config/visidata ~/.visidata
+fi
+
 if test -d /root/.emacs.d/host/pen.el/config/vim-bundles; then
     rm -rf ~/.vim/bundle
     mkdir -p ~/.vim/bundle
