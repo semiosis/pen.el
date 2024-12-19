@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+# Just put together a bunch of common update commands which
+# I expect to run.
+# Not everything, of course.
+# The policy is "update in the same way I installed it in the first place"
+
+opt="$1"
+shift
+case "$opt" in
+    visidata) {
+        pen_python_version="$(pen-python --version | scrape '[0-9]+.[0-9]+')"
+        # It's cool how I can put a function definition inside this little nook
+        pen_python() {
+         "pip$pen_python_version" "$@"
+        }
+        pen_python install --upgrade visidata
+    }
+    ;;
+
+    *) {
+        # Update them all:
+        "$0" visidata
+    }
+    ;;
+esac
