@@ -22,7 +22,7 @@ if test "$#" -eq 1 && test "$1" = "/"; then
 fi
 
 if ! test "$INSIDE_NEOVIM" = y; then
-    nvc ncdu "$@"
+    nvc /usr/bin/ncdu "$@"
     exit "$?"
 fi
 
