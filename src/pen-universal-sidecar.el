@@ -29,7 +29,14 @@ If FRAME is nil, use `selected-frame'."
          (id (frame-parameter frame 'window-id))
          (client (frame-parameter frame 'client)))
     ;; (tv (frame-parameters frame))
-    (format-spec universal-sidecar-buffer-name-format (list (cons ?F (or id client))))))
+
+
+    ;; TODO Fix this properly
+    (or
+    (ignore-errors
+      (format-spec universal-sidecar-buffer-name-format (list (cons ?F (or id client)))))
+    ""))
+    )
 
 (add-to-list 'universal-sidecar-sections 'buffer-git-status)
 (remove-from-list 'universal-sidecar-sections 'buffer-git-status)

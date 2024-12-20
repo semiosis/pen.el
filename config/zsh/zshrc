@@ -416,6 +416,10 @@ bindkey "\C-r" history-incremental-pattern-search-backward
 bindkey -s "^[r" "^A^Kranger\r"
 bindkey -s "^[o" "^A^Kpopd\r"
 
+bindkey -s "^[^g" "^A^Kead -i -l -- \"\"^B"
+bindkey -s "^[g" "^A^Kead -l -- \"\"^B"
+bindkey -s "^[?" "^A^Ksp -ic pen-counsel-ag .\r"
+
 f_tmux_split_h() { pen-tm -d -te sph }
 zle -N f_tmux_split_h
 bindkey "^[h" f_tmux_split_h
@@ -702,7 +706,7 @@ then
     {
         unsetopt zle
         unsetopt prompt_cr
-        # Why was this unset? It stops zsh from displaying the prompt in emacs
+       # Why was this unset? It stops zsh from displaying the prompt in emacs
         # unsetopt prompt_subst
         unfunction precmd
         unfunction preexec

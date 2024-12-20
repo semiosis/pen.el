@@ -2501,7 +2501,7 @@ snippet hsh
 snippet hse "history save with environment"
 	( hs "$(basename -- "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" "<==" "\$(printenv | tf sh | cat)" 0</dev/null ) &>/dev/null
 snippet hs "history save"
-	( hs "$(basename -- "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" 0</dev/null ) &>/dev/null
+	. $SCRIPTS/lib/hs
 snippet hsbak "history save old"
 	( hs "\$(basename -- "\$0")" "\$@" <`tm-tty` \` # Disable tty to pipe content into hs \` )
 snippet tp "has prefxx"
@@ -2754,7 +2754,7 @@ snippet resize
 snippet sp "super awesome script"
 	#!/bin/bash
 
-	hs "\$(basename -- "\$0")" \$@
+	. $SCRIPTS/lib/hs
 
 	while getopts -- mksrg- name &>/dev/null; do
 	case \$name in

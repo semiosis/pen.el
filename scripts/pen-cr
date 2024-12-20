@@ -2407,7 +2407,17 @@ case "$file_type" in
         cd "$td_cr"
         ln -s "$rp"
         #CWD="$td_cr" zrepl -cm gcc -g "./$fn" -lm -o "$mant" \; "./$fn"
-        CWD="$td_cr" zrepl -cm -E "gcc -g \"./$fn\" -lm -o \"$mant\"; ./$mant"
+
+        if cat "$rp" | grep -q -P '<sqlite3.h>'; then
+            gcc_extra_args+=" -lsqlite3 "
+
+            # Consider adding something also to install the libraries
+            # agi libsqlite3-0 libsqlite3-dev
+        fi
+
+        # g++ main.cpp -lsqlite3
+
+        CWD="$td_cr" zrepl -cm -E "gcc -g \"./$fn\" -lm $gcc_extra_args -o \"$mant\"; ./$mant"
 
         # cd_run "$cd_cr"
         # And here I could use my terminal automation script to pretype

@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/mc" || agi "mc" &>/dev/null
+
+# DONE if using nvc, make it so that when even x runs a command that uses nvc, nvc is avoided
+## cd "$PENELD/scripts"; mc
+# # export TERM=screen-2color
+# nvc -2 /usr/bin/mc "$@"
+
+# mc would be horrible to use for anything other than automation
+
+export TERM=screen-2color
+/usr/bin/mc "$@"

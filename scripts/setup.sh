@@ -2580,3 +2580,9 @@ make install
 )
 
 e ia listen mustache
+
+cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
+
+agi mc
+
+e ia org-transclusion hyperdrive-org-transclusion org-transclusion-http

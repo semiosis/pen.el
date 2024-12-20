@@ -6,6 +6,8 @@
 : ${TTY:="$(pen-tm-tty)"}
 export TTY
 
+export INSIDE_X=y
+
 . $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then

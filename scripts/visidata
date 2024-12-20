@@ -6,4 +6,57 @@ export TTY
 # This is great for opening xls files
 # With multiple sheets.
 
-pen-python /usr/local/bin/vd --theme=asciimono "$@"
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+case "$last_arg" in
+    --help|-h) {
+        do_pavs=y
+    }
+    ;;
+
+    *)
+esac
+
+# : "${BLACK_AND_WHITE:="y"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -2) {
+        # precmd="TERM=xterm-2color "
+        # precmd="export TERM=screen-2color; "
+        export TERM=screen-2color
+        # precmd="TERM=vt100 "
+
+        BLACK_AND_WHITE=y
+        shift
+    }
+    ;;
+
+    -nobw) {
+        BLACK_AND_WHITE=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$BLACK_AND_WHITE" = "y"; then
+    export TERM=screen-2color
+else
+    :
+fi
+
+if test "$do_pavs" = "y"; then
+    unbuffer pen-python /usr/local/bin/vd "$@" | pavs
+else
+    # The asciimono theme needed updating
+    # sed -i "/color_longname=/d" /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py
+
+    if test "$BLACK_AND_WHITE" = "y"; then
+        pen-python /usr/local/bin/vd --theme=asciimono "$@"
+    else
+        pen-python /usr/local/bin/vd "$@"
+    fi
+    # pen-python /usr/local/bin/vd "$@"
+fi

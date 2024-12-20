@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f $HOME/.cargo/bin/yazi || cargo install "yazi" &>/dev/null
+
+$HOME/.cargo/bin/yazi "$@"

@@ -74,6 +74,10 @@ esac; done
 
 : "${CMD:="$(cmd "$@")"}"
 
+if test "$INSIDE_X" = "y"; then
+    export NO_NVC=y
+fi
+
 if test "$NO_NVC" = "y" || pen-rc-test -f black_and_white; then
     eval "$CMD"
     exit "$?"

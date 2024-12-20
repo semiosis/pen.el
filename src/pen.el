@@ -75,6 +75,13 @@
 (require 'cl-macs)
 (require 'pp)
 
+;; Do this early on - load the emacs package first. When transients are created,
+;; I want them to be created with the new version.
+(require 'transient)
+;; (load "/usr/local/share/emacs/29.1.50/lisp/transient.el.gz")
+;; Then load the updated package
+(load "/root/.emacs.d/elpa/transient-20241219.1713/transient.el")
+
 (defun dff-sym (body)
   (intern
    (s-replace-regexp

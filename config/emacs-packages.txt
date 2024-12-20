@@ -2389,3 +2389,6 @@ cursor-flash
 peertube
 cmake-font-lock
 eldoc-cmake
+chezscheme
+hyperdrive-org-transclusion
+org-transclusion-http

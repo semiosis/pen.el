@@ -67,13 +67,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         export TERM=screen-2color
         # precmd="TERM=vt100 "
 
-        BLACK_AND_WHITE=y
+        export BLACK_AND_WHITE=y
         shift
     }
     ;;
 
     -nobw) {
-        BLACK_AND_WHITE=n
+        export BLACK_AND_WHITE=n
         shift
     }
     ;;

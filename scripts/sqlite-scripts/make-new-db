@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# https://www.futurelearn.com/info/courses/data-analytics-for-business-creating-databases/0/steps/177413
+
+dbname="$1"
+
+sqlite3 "${dbname}.db"

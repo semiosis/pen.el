@@ -317,7 +317,7 @@ snippet #b "export the tty so we can access it from scripts that take stdin"
 	export TTY
 	# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 	
-	( hs "$(basename "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" 0</dev/null ) &>/dev/null
+	. $SCRIPTS/lib/hs
 	
 	${0}
 snippet #m

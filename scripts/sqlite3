@@ -3,4 +3,10 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-/usr/bin/sqlite3 -separator $'\t' "$@" | pavs
+# I should not always use pavs because sqlite has a ui
+# e.g.
+# cd "$PENELD/config/databases"; make-new-db emacs-operations
+
+/usr/bin/sqlite3 -separator $'\t' "$@"
+
+# | pavs

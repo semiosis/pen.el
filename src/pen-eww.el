@@ -34,6 +34,8 @@
   (add-text-properties 0 (length string) (list 'face face) string)
   string)
 
+;; (pen-buffer-dos2unix)
+
 ;; TODO Find a way to simply make the entire pre-block
 ;; a single colour.
 ;; Don't use syntax highlighting.
@@ -49,7 +51,7 @@
     (insert
      (pen-add-face-to-string
          'info-code-face
-       code))
+       (e/dos2unix code)))
     (shr-ensure-newline)))
 
 (require 'pen-postrender-sanitize)
@@ -342,7 +344,11 @@ If the URL is already at the front of the kill ring act like
     (insert (eww-fontify-pre dom))
     (shr-ensure-newline)))
 
+(defun e/dos2unix (s)
+  (s-replace-regexp (char-to-string ?\C-M) "\n" s))
+
 (defun eww-fontify-pre (dom)
+  ;; TODO Fix this https://www.futurelearn.com/info/courses/data-analytics-for-business-creating-databases/0/steps/177413/
   (with-temp-buffer
     (shr-generic dom)
     (if eww-do-fontify-pre
@@ -350,6 +356,13 @@ If the URL is already at the front of the kill ring act like
           (when mode
             (eww-fontify-buffer mode))))
     (buffer-string)))
+
+(defun pen-buffer-dos2unix ()
+  (interactive)
+  (mark-whole-buffer)
+  (filter-selection 'e/dos2unix)
+  (deselect)
+  (beginning-of-buffer))
 
 (defun eww-fontify-buffer (mode)
   (delay-mode-hooks (funcall mode))

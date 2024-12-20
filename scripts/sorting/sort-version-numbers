@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# https://stackoverflow.com/questions/4493205/unix-sort-of-version-numbers
+
+sort -t. -k 1,1n -k 2,2n -k 3,3n

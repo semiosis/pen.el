@@ -101,4 +101,16 @@ The description is read from the installed package files."
 ;;            ("nongnu" . "https://elpa.nongnu.org/nongnu/")
 ;;            ("melpa" . "https://melpa.org/packages/")))))
 
+(defun endless/upgrade ()
+  "Upgrade all packages, no questions asked."
+  (interactive)
+  (save-window-excursion
+    (list-packages)
+    (package-menu-mark-upgrades)
+    (package-menu-execute 'no-query)))
+
+(defun delete-old-packages ()
+  (interactive)
+  (package-autoremove))
+
 (provide 'pen-packages)

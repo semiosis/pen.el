@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+cd "$EMACSD_BUILTIN/elpa-light"; find . -maxdepth 1 -type d | elpa-filter-triple-version-packages | sort-version-numbers | pavs

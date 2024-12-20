@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+dn="$(dirname "$1")"
+: "${dn:="$EMACSD_BUILTIN/elpa-light"}"
+
+cd "dn"
+find . -maxdepth 1 -type d | sed -n "/-[0-9.]\\+\$/s/-[0-9.]\\+.*\$//p" | sort | uniq -d | sed 's=^\./==' | pavs
