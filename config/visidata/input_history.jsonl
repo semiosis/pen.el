@@ -1,1 +1,6 @@
 {"type": "longname", "input": "open-row", "n": 1}
+{"type": "regex", "input": "theme", "n": 1}
+{"type": "regex_flags", "input": "I", "n": 1}
+{"type": "longname", "input": "theme-default", "n": 1}
+{"type": "longname", "input": "theme-input", "n": 1}
+{"type": "longname", "input": "open-row", "n": 2}

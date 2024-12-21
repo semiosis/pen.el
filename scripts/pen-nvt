@@ -191,13 +191,21 @@ fi
 # rows="$((rows - 3))"
 # child_rows="$((rows - 2))"
 
-parent_session_name="$(tmux new -x "$cols" -y "$rows" -s "$(uuid)" -F "#{session_name}" -P -d -n "normal" "TMUX= tmux attach -t '${child_session_name}:'")" # holds the child in 2 different windows
+if test -n "$cols"; then
+    parent_session_name="$(tmux new -x "$cols" -y "$rows" -s "$(uuid)" -F "#{session_name}" -P -d -n "normal" "TMUX= tmux attach -t '${child_session_name}:'")" # holds the child in 2 different windows
+else
+    parent_session_name="$(tmux new -s "$(uuid)" -F "#{session_name}" -P -d -n "normal" "TMUX= tmux attach -t '${child_session_name}:'")" # holds the child in 2 different windows
+fi
+
 tmux set -t "$parent_session_name" status-left "$(printf -- "%s" "$parent_session_name" | displayedname)"
 
 if test "$NO_AG" = "y"; then
     tmux setw -t "$child_session_name:" aggressive-resize off
     tmux setw -t "$parent_session_name:" aggressive-resize off
-    tmux resize-window -t "$parent_session_name:" -x "$cols" -y "$rows"
+
+    if test -n "$cols"; then
+        tmux resize-window -t "$parent_session_name:" -x "$cols" -y "$rows"
+    fi
 fi
 
 # TODO Make this work with the original vim instead of neovim
@@ -207,7 +215,11 @@ if [ -n "$parent_session_name" ]; then
     # somewhere. So use uuid
     cmd="export INSIDE_NEOVIM=y; nvim -c $(aqf "call TermAndQuit($(aqf "$external_precmd tmux attach -t ${child_session_name}:"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
     # echo "$cmd" | tv
-    tmux neww -t "${parent_session_name}:" -n "nv" "$cmd"
+
+    # The sleep fixes the following:
+    # nvt -2 fpvd -2
+    tmux neww -t "${parent_session_name}:" -n "nv" "sleep 0.5; $cmd"
+    # tmux neww -t "${parent_session_name}:" -n "nv" "$cmd"
 fi
 
 is_tty() { [ -t 1 ]; }
