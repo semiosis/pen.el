@@ -176,8 +176,8 @@
   (sslk "ldJ" (dff (pen-open-dir "$NOTES/ws/jobs")))
   (if (inside-docker-p)
       (progn
-        (sslk "ldc" (dff (pen-open-dir "$HOME/.emacs.d/host/pen.el/src")))
-        (sslk "ldC" (dff (pen-open-dir "$HOME/.emacs.d/host/pen.el/src"))))
+        (sslk "ldc" (dff (pen-open-dir (f-join pen-penel-directory "src"))))
+        (sslk "ldC" (dff (pen-open-dir (f-join pen-penel-directory "src")))))
     (progn
       (sslk "ldc" (dff (pen-open-dir "$HOME/.emacs.d/config")))
       (sslk "ldC" (dff (pen-open-dir "$HOME/.emacs.d/config")))))
