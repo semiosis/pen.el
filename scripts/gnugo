@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f /usr/games/gnugo || agi gnugo
+
+/usr/games/gnugo "$@"

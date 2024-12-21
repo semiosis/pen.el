@@ -2586,3 +2586,9 @@ cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
 agi mc
 
 e ia org-transclusion hyperdrive-org-transclusion org-transclusion-http
+
+agi nim
+e ia nim-mode
+
+agi gnugo
+e ia gnugo chess

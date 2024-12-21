@@ -2392,3 +2392,4 @@ eldoc-cmake
 chezscheme
 hyperdrive-org-transclusion
 org-transclusion-http
+gnugo

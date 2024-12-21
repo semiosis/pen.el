@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+mytty="$last_arg"
+set -- "${@:1:$(($#-1))}" # shift last arg
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+setsid sh -c "exec $CMD <> $mytty >&0 2>&1"

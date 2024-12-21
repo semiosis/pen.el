@@ -1714,7 +1714,9 @@ Also see option `magit-blame-styles'."
                                whitespace-space-after-tab
                                whitespace-space-before-tab
                                whitespace-tab
-                               whitespace-trailing)
+                               whitespace-trailing
+                               lsp-ui-peek-highlight
+                               )
                     do
                     (set-face-attribute
                      f fr
@@ -1752,7 +1754,8 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
 
-           (cl-loop for f in '(hl-line)
+           (cl-loop for f in '(hl-line
+                               lsp-ui-peek-list)
                     do
                     (set-face-attribute
                      f fr
@@ -1770,7 +1773,8 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
            (cl-loop for f in '(
-                               Man-underline)
+                               Man-underline
+                               lsp-ui-peek-peek)
                     do
                     (set-face-attribute
                      f fr
@@ -1788,7 +1792,9 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
            (cl-loop for f in '(Man-overstrike
-                               markdown-markup-face)
+                               markdown-markup-face
+                               
+                               )
                     do
                     (set-face-attribute
                      f fr

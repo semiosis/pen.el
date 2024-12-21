@@ -113,4 +113,53 @@
 
 (advice-add 'persp-restore-window-conf :around #'ignore-errors-around-advice)
 
+(defset make-frame-created-frame nil)
+
+;; Or I can learn to make j:make-terminal-frame start an emacsclient on a different tty.
+;; This might be the only way.
+;; (make-terminal-frame '((tty . "/dev/pts/5") (tty-type . "xterm")))
+
+(comment
+ (make-terminal-frame '((tty . "/dev/pts/2") (tty-type . "xterm")))
+
+ ;; https://unix.stackexchange.com/questions/170063/start-a-process-on-a-different-tty
+ ;; It works much the same way as this to start bash on pts 39
+ ;; Therefore, I should try to figure this out.
+ ;; "setsid -c /usr/local/bin/bash </dev/pts/39 >/dev/pts/39 2>&1"
+ ;; runontty vim /dev/pts/42
+ )
+
+(defun make-frame-setup ()
+  (setq make-frame-created-frame (selected-frame))
+  (scratch-buffer))
+
+(defun make-frame-tmux (&rest args)
+  (interactive)
+  (tpop (concat "pen-e -D " (show-workerp) " -e \"(make-frame-setup)\""))
+  ;; Now I need to ensure that there is an appropriate wait time before returning
+  ;; However, this might be an impossible ask because the shell script needs to create the
+  ;; frame first.
+  ;; Therefore, perhaps I should create the frame first.
+
+  ;; Hmm. Yes. Use (make-frame) to create the frame in advance?
+  ;; make-frame-created-frame
+
+  ;; That seems too difficult as the frame must contain important parameters.
+  ;; Instead, just 
+  )
+
+
+;; TODO 
+;; - Make the make-frame function use tmux as well
+
+;; (frame-list)
+;;
+;; j:delete-other-frames
+
+;; Override the original function
+;; But this needs to return the new frame
+;; (defun make-terminal-frame (&rest args)
+;;   (let ((frame 
+;;          (make-frame)))))
+
 (provide 'pen-frame)
