@@ -79,6 +79,7 @@ ln -sf /root/.emacs.d/pen.el/config/tmux.conf /root/.tmux.conf
 ln -sf /root/.emacs.d/pen.el/config/nvimrc /root/.vimrc
 ln -sf /root/.emacs.d/pen.el/config/visidata /root/.visidata
 ln -sf /root/.emacs.d/pen.el/config/Xresources /root/.Xresourses
+sed -i "s/black_and_white: on/black_and_white: off/" ~/.pen/pen.yaml
 HEREDOC
 initial_setup_commands="$(printf -- "%s" "$initial_setup_commands" | sed -z 's/\n/; /g')"
 
