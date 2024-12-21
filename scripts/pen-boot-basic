@@ -71,6 +71,7 @@ docker run \
 IFS= read -r -d '' initial_setup_commands <<HEREDOC
 ln -sf /root/.emacs.d/pen.el/config/profile /root/.profile
 ln -sf /root/.emacs.d/pen.el/config/nvimrc /root/.nvimrc
+ln -sf /root/.emacs.d/pen.el/config/syntax.vim /root/syntax.vim
 ln -sf /root/.emacs.d/pen.el/config/bash/scriptrc /root/.scriptrc
 ln -sf /root/.emacs.d/pen.el/config/shellrc /root/.shellrc
 ln -sf /root/.emacs.d/pen.el/config/shell_aliases /root/.shell_aliases
