@@ -194,4 +194,14 @@
 (define-key pen-map (kbd "M-j M-y") 'ace-link-copy-button-link)
 (define-key pen-map (kbd "M-j y") 'ace-link-copy-button-link)
 
+;; This fixes a bug with opening an org-link inside a c file
+(defun ace-link--org-action (pt)
+  (when (numberp pt)
+    (goto-char pt)
+    (try
+     (org-open-at-point)
+     (progn
+       (let ((link (car (rassoc pt (ace-link--org-collect)))))
+         (org-link-open-from-string link))))))
+
 (provide 'pen-ace-link)
