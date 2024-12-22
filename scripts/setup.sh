@@ -2595,3 +2595,5 @@ e ia gnugo chess
 
 # For visidata
 pip install psutil
+
+go install github.com/ericfreese/rat@latest

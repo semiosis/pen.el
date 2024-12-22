@@ -1,0 +1,44 @@
+source git
+source kubectl
+source docker
+
+# There is no straightforward way to docker from here, yet
+# The docker rat should interact with what's currently installed
+# Every time I need to enter a query a new rat must be created.
+# That is, until I am able to create my own filesystem environments such
+# as venv and git.
+
+bindkey C-d docker.main  -- echo docker
+
+bindkey C-k kubectl.contexts  -- kubectl config get-contexts
+
+# This seems like the only way to do this.
+bindkey ?  preview -- sps vs $HOME/.config/rat/ratrc && welcome-to-rat
+
+# bindkey C-b git.refs -- git branch --all -v --sort=-committerdate
+
+bindkey C-l git.log  -- git log
+bindkey C-s git.status  -- git status -uall
+
+# The old version of rat couldn't parse this
+bindkey C-r reload
+bindkey j   cursor-down
+bindkey k   cursor-up
+bindkey C-e scroll-down
+bindkey C-t scroll-up
+bindkey C-y scroll-up
+bindkey C-n cursor-down
+bindkey C-p cursor-up
+bindkey C-f page-down
+bindkey C-b page-up
+bindkey pgdn page-down
+bindkey pgup page-up
+bindkey g,g cursor-first-line
+bindkey S-g cursor-last-line
+bindkey S-j parent-cursor-down
+bindkey S-k parent-cursor-up
+bindkey q   pop-pager
+bindkey S-q quit
+bindkey M-1 show-one
+bindkey M-2 show-two
+bindkey M-3 show-three

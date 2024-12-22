@@ -1,0 +1,25 @@
+mode docker.search
+    # $HOME/.config/rat/docker.bak
+    annotate match image_name   -- wait-for rat-dockerhub-search && docker-list-last-search
+    bindkey w image_name        -- !echo -n "https://hub.docker.com/r/$image_name" | xc -i -n &
+    bindkey g image_name        -- !sps gc "$(dockerhub-url-2-repo-url "https://hub.docker.com/r/$image_name")" &
+    bindkey h image_name        -- !sps glh github $image_name &
+    bindkey d image_name        -- !sps dockerhub-get-dockerfile "$image_name" &
+    bindkey f image_name        -- !sps ff "https://hub.docker.com/r/$image_name" &
+    bindkey p image_name        -- !sps -pak ynx my-docker pull -s $image_name &
+    bindkey s image_name        -- !sps -pak ynx mkdw $image_name &
+    # bindkey w image_name        -- !sps ff-dockerhub $image_name &
+    bindkey T image_name        -- !sps ff-dockerhub-tags $image_name &
+    bindkey t image_name        -- !sps dockerhub-list-tags $image_name &
+
+    bindkey ?        -- !sps vs $HOME/.config/rat/docker &
+end
+
+mode docker.main
+    # bindkey C -- !sps docker container ls &
+end
+
+bindkey C-n docker.containers -- >docker container ls
+
+# mode docker.containers
+# end

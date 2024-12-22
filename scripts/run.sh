@@ -191,6 +191,10 @@ if test -f "/root/.emacs.d/host/pen.el/config/Xresources"; then
     ln -sf "/root/.emacs.d/host/pen.el/config/Xresources" ~/.Xresourses
 fi
 
+if test -d "/root/.emacs.d/host/pen.el/config/rat"; then
+    ln -sf "/root/.emacs.d/host/pen.el/config/rat" /root/.config
+fi
+
 if test -f "$EMACSD/host/pen.el/config/bash/scriptrc"; then
     ln -sf "$EMACSD/host/pen.el/config/bash/scriptrc" ~/.scriptrc
 elif test -f "$EMACSD/pen.el/config/bash/scriptrc"; then

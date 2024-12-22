@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/up" || go install "github.com/ericfreese/rat@latest" &>/dev/null
+
+# Examples:
+# cd "$PENELD"; rat -m git.log -c 'git log --oneline --decorate --graph'
+# cd "$PENELD"; rat -m git.refs -c 'git branch'
+# cd "$PENELD"; rat -m git.status -c 'git status --short -uall'
+
+nvc -2 ${GOPATH%%:*}/bin/rat "$@"

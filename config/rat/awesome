@@ -1,0 +1,6 @@
+mode awesome.search
+    annotate regex url   -- https://github.com/\S*
+    bindkey p url        -- !sps -pak v $url &
+
+    bindkey ?        -- !sps vs $HOME/.config/rat/awesome &
+end

@@ -1,0 +1,38 @@
+mode docker.search
+    # This works!
+    annotate match image_name   -- wait-for rat-dockerhub-search && docker-list-last-search
+    # annotate match image_name   -- docker-list-last-search
+    # bindkey p image_name        -- ?!sps docker pull $image_name
+    # bindkey p image_name        -- !sps docker pull $image_name
+    # bindkey p image_name     docker.search   -- >date
+    # bindkey p image_name        -- !sps docker pull $image_name
+    # # sps makes sigwinch happen which kills rat
+    # # Therefore, use nw instead
+    # # TODO Use emacs as a TUI process manager
+    # # TODO Use emacs as a regular process manager
+    # bindkey p image_name        -- !sps vim
+    # bindkey p image_name     preview   -- date
+    # bindkey p image_name        -- !nw vim
+    # bindkey p image_name        -- ?!nw docker pull $image_name
+    # bindkey p image_name        -- !nw ynx docker pull $image_name
+    # bindkey p image_name        -- !cmd nw ynx docker pull $image_name | after 0.1 tv -nw
+    # The & is also a way to make it so it doesn't crash
+    # bindkey p image_name        -- !sps ynx docker pull $image_name
+
+    bindkey p image_name        -- !sps -pak ynx docker pull $image_name &
+    # bindkey p image_name        -- ?!sps docker pull $image_name &
+
+    bindkey w image_name        -- !sps ff-dockerhub $image_name &
+    
+
+    bindkey ?        -- !sps vs $HOME/.config/rat/docker &
+end
+
+mode docker.main
+    # bindkey C -- !sps docker container ls &
+end
+
+bindkey C-n docker.containers -- >docker container ls
+
+# mode docker.containers
+# end
