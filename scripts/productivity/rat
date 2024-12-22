@@ -11,4 +11,25 @@ test -f "${GOPATH%%:*}/bin/up" || go install "github.com/ericfreese/rat@latest" 
 # cd "$PENELD"; rat -m git.refs -c 'git branch'
 # cd "$PENELD"; rat -m git.status -c 'git status --short -uall'
 
-nvc -2 ${GOPATH%%:*}/bin/rat "$@"
+if test "$#" = 1 && printf -- "%s\n" "$1" | grep -q -P '^-'; then
+    NO_NVC=y
+    USE_PAGER=y
+
+    if test "$1" == "-h" || test "$1" == "--help"; then
+        DO_HELP=y
+    fi
+fi
+
+if test "$NO_NVC" = "y"; then
+    if test "$USE_PAGER" = "y"; then
+        if test "$DO_HELP" = "y"; then
+            unbuffer ${GOPATH%%:*}/bin/rat "$@" | pavs
+        else
+            ${GOPATH%%:*}/bin/rat "$@" | pavs
+        fi
+    else
+        ${GOPATH%%:*}/bin/rat "$@"
+    fi
+else
+    nvc -2 ${GOPATH%%:*}/bin/rat "$@"
+fi
