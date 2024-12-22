@@ -47,6 +47,8 @@ bindkey C-s git.status  -- git status -uall
 bindkey C-r reload
 bindkey j   cursor-down
 bindkey k   cursor-up
+bindkey down cursor-down
+bindkey up   cursor-up
 bindkey C-e scroll-down
 bindkey C-t scroll-up
 bindkey C-y scroll-up
