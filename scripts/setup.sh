@@ -2592,3 +2592,6 @@ e ia nim-mode
 
 agi gnugo
 e ia gnugo chess
+
+# For visidata
+pip install psutil

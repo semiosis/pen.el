@@ -1239,719 +1239,722 @@ Also see option `magit-blame-styles'."
 (defun pen-disable-all-faces ()
   (interactive)
 
-  (setq pen-black-and-white t)
-  (pen-rc-set "black_and_white" "on")
-
-  ;; (global-hl-line-mode -1)
-  (add-hook 'dired-mode-hook 'enable-hl-line-mode)
-
-  (advice-remove 'internal-set-lisp-face-attribute #'internal-set-lisp-face-attribute-around-advice)
-
-  ;; (etv (pps (frame-face-alist)))
-
-  ;; This will set a default black/white
-  ;; But it's best if I use .Xresources
-  ;; Keep them unspecified here
-  (let ((class '((class color) (min-colors 89)))
-        ;; (bg1 "#262626")
-        ;; (base "#b2b2b2")
-        (bg1 'unspecified)
-        (base 'unspecified))
-    (custom-theme-set-faces
-     ;; 'spacemacs-light
-     'spacemacs-dark
-     `(default ((,class (:background ,bg1 :foreground ,base))))))
-
-  ;; Where do these values come from?
-  ;; "#b2b2b2" "#262626"
-  (cl-loop for fr in (frame-list)
-           do
-           ;; (set-face-foreground 'default 'unspecified fr)
-           ;; (set-face-background 'default 'unspecified fr)
-           (set-face-foreground 'default "#ffffff" fr)
-           (set-face-background 'default "#000000" fr))
-
-  ;; (set-foreground-color 'unspecified)
-  ;; (set-background-color 'unspecified)
-
-  ;; I think the GUI needs real colours or it crashes when the GUI appears,
-  ;; But it needs to then specify 'unspecified as above or certain things wont appea
-
-  ;; If I need to use 'unspecified for terminals, then use this display-graphic-p check.
-  ;; But #ffffff seems to be brighter than the xterm color255 so keep ffffff.
-
-  (cl-loop for fr in (frame-list) do
-           (with-selected-frame fr
-             (if (display-graphic-p)
-                 (progn
-                   ;; I can't use unspecified for the GUI
-                   (set-foreground-color "#ffffff")
-                   (set-background-color "#000000"))
-               (progn
-                 ;; #ffffff is an xterm-24bit colour
-                 ;; (set-foreground-color "#ffffff")
-                 ;; Unspecified makes the white as white as vim
-                 ;; It's "default white" taken from the terminal
-                 (set-foreground-color 'unspecified)
-                 ;; White is whiter than the default white.
-                 ;; (set-foreground-color "White")
-                 (set-background-color "#000000")))))
-
-  ;; Did this annihilate the frame dimensions?
-  (setq default-frame-alist
-        '(;; (set-background-color "#1e1e1e")
-          ;; (set-foreground-color "white")
-          ;; (background-color . "#000000")
-          ;; (foreground-color . "#f664b5")
-          (vertical-scroll-bars)
-          (left-fringe . -1)
-          (right-fringe . -1)))
-
-  (add-to-list 'default-frame-alist '(width . 80))
-  (add-to-list 'default-frame-alist '(height . 30))
-
-  ;; (tv "hi")
-
-  ;; This needs to be re-run at the end
-  (cl-loop for fr in (frame-list)
-           do
-           (with-selected-frame fr
-             (if (display-graphic-p)
-                 (progn
-                   (comment
-                    (set-foreground-color "#000000")
-                    (set-background-color "#ffffff"))
-
-                   (comment
-                    (set-foreground-color "#ffffff")
-                    (set-background-color "#000000"))
-
-                   (set-foreground-color "#000000")
-                   (set-background-color "#ffffff"))
-               (progn
-                 ;; For the tty, use 'unspecified, because I want to take advantage of rev
-                 (comment
-                  (set-foreground-color "#000000")
-                  (set-background-color 'unspecified))
-
-                 (set-foreground-color 'unspecified)
-                 ;; (set-background-color "#000000")
-                 (set-background-color 'unspecified)
-
-                 ;; tty-menu-enabled-face
-                 ))))
+  (message "Running pen-disable-all-faces")
+
+  (if (not pen-black-and-white)
+      (progn
+
+        (setq pen-black-and-white t)
+        (pen-rc-set "black_and_white" "on")
+
+        ;; (global-hl-line-mode -1)
+        (add-hook 'dired-mode-hook 'enable-hl-line-mode)
+
+        (advice-remove 'internal-set-lisp-face-attribute #'internal-set-lisp-face-attribute-around-advice)
+
+        ;; (etv (pps (frame-face-alist)))
+
+        ;; This will set a default black/white
+        ;; But it's best if I use .Xresources
+        ;; Keep them unspecified here
+        (let ((class '((class color) (min-colors 89)))
+              ;; (bg1 "#262626")
+              ;; (base "#b2b2b2")
+              (bg1 'unspecified)
+              (base 'unspecified))
+          (custom-theme-set-faces
+           ;; 'spacemacs-light
+           'spacemacs-dark
+           `(default ((,class (:background ,bg1 :foreground ,base))))))
+
+        ;; Where do these values come from?
+        ;; "#b2b2b2" "#262626"
+        (cl-loop for fr in (frame-list)
+                 do
+                 ;; (set-face-foreground 'default 'unspecified fr)
+                 ;; (set-face-background 'default 'unspecified fr)
+                 (set-face-foreground 'default "#ffffff" fr)
+                 (set-face-background 'default "#000000" fr))
+
+        ;; (set-foreground-color 'unspecified)
+        ;; (set-background-color 'unspecified)
+
+        ;; I think the GUI needs real colours or it crashes when the GUI appears,
+        ;; But it needs to then specify 'unspecified as above or certain things wont appea
+
+        ;; If I need to use 'unspecified for terminals, then use this display-graphic-p check.
+        ;; But #ffffff seems to be brighter than the xterm color255 so keep ffffff.
+
+        (cl-loop for fr in (frame-list) do
+                 (with-selected-frame fr
+                   (if (display-graphic-p)
+                       (progn
+                         ;; I can't use unspecified for the GUI
+                         (set-foreground-color "#ffffff")
+                         (set-background-color "#000000"))
+                     (progn
+                       ;; #ffffff is an xterm-24bit colour
+                       ;; (set-foreground-color "#ffffff")
+                       ;; Unspecified makes the white as white as vim
+                       ;; It's "default white" taken from the terminal
+                       (set-foreground-color 'unspecified)
+                       ;; White is whiter than the default white.
+                       ;; (set-foreground-color "White")
+                       (set-background-color "#000000")))))
+
+        ;; Did this annihilate the frame dimensions?
+        (setq default-frame-alist
+              '(;; (set-background-color "#1e1e1e")
+                ;; (set-foreground-color "white")
+                ;; (background-color . "#000000")
+                ;; (foreground-color . "#f664b5")
+                (vertical-scroll-bars)
+                (left-fringe . -1)
+                (right-fringe . -1)))
+
+        (add-to-list 'default-frame-alist '(width . 80))
+        (add-to-list 'default-frame-alist '(height . 30))
+
+        ;; (tv "hi")
+
+        ;; This needs to be re-run at the end
+        (cl-loop for fr in (frame-list)
+                 do
+                 (with-selected-frame fr
+                   (if (display-graphic-p)
+                       (progn
+                         (comment
+                          (set-foreground-color "#000000")
+                          (set-background-color "#ffffff"))
+
+                         (comment
+                          (set-foreground-color "#ffffff")
+                          (set-background-color "#000000"))
 
-  (cl-loop for fr in (frame-list)
-           do
-           (with-selected-frame fr
-             (set-face-bold 'default (pen-use-bold-p) fr)))
+                         (set-foreground-color "#000000")
+                         (set-background-color "#ffffff"))
+                     (progn
+                       ;; For the tty, use 'unspecified, because I want to take advantage of rev
+                       (comment
+                        (set-foreground-color "#000000")
+                        (set-background-color 'unspecified))
 
-  ;; (set-foreground-color 'unspecified)
-  ;; (set-background-color 'unspecified)
+                       (set-foreground-color 'unspecified)
+                       ;; (set-background-color "#000000")
+                       (set-background-color 'unspecified)
 
-  ;; avy-lead-face
-  ;; avy-lead-face-0
-  ;; avy-lead-face-1
-  ;; avy-lead-face-2
+                       ;; tty-menu-enabled-face
+                       ))))
 
-  ;; j:invert-highlight-faces
-  (cl-loop for f in '(region
+        (cl-loop for fr in (frame-list)
+                 do
+                 (with-selected-frame fr
+                   (set-face-bold 'default (pen-use-bold-p) fr)))
 
-                      ivy-highlight-face
-                      ivy-current-match
+        ;; (set-foreground-color 'unspecified)
+        ;; (set-background-color 'unspecified)
 
-                      popup-menu-face
+        ;; avy-lead-face
+        ;; avy-lead-face-0
+        ;; avy-lead-face-1
+        ;; avy-lead-face-2
 
-                      ebdb-person-name
+        ;; j:invert-highlight-faces
+        (cl-loop for f in '(region
 
-                      line-number
+                            ivy-highlight-face
+                            ivy-current-match
 
-                      ;; Good for YAML
-                      font-lock-property-use-face
+                            popup-menu-face
 
-                      ;; lsp-ui-doc-background
-                      ;; lsp-ui-doc-highlight-hover
+                            ebdb-person-name
 
-                      font-lock-keyword-face
+                            line-number
 
-                      company-tooltip-annotation
-                      company-tooltip-selection
-                      company-tooltip-common-selection
+                            ;; Good for YAML
+                            font-lock-property-use-face
 
-                      diredfl-dir-heading
+                            ;; lsp-ui-doc-background
+                            ;; lsp-ui-doc-highlight-hover
 
-                      transient-argument
+                            font-lock-keyword-face
 
-                      magit-blame-heading
+                            company-tooltip-annotation
+                            company-tooltip-selection
+                            company-tooltip-common-selection
 
-                      tab-bar
-                      tab-bar-tab-inactive
+                            diredfl-dir-heading
 
-                      notmuch-message-summary-face
-                      message-header-subject
-                      message-header-to
-                      message-header-other
-                      message-mml
+                            transient-argument
 
-                      gamegrid-color-tty-face-yellow
-                      gamegrid-color-tty-face-blue
+                            magit-blame-heading
 
-                      gamegrid-color-tty-face-red
-                      gamegrid-color-tty-face-cyan
-                      gamegrid-color-tty-face-magenta
-                      gamegrid-color-tty-face-green
-                      gamegrid-color-tty-face-white
+                            tab-bar
+                            tab-bar-tab-inactive
 
-                      magit-diff-added-highlight
+                            notmuch-message-summary-face
+                            message-header-subject
+                            message-header-to
+                            message-header-other
+                            message-mml
 
-                      header-line-highlight
+                            gamegrid-color-tty-face-yellow
+                            gamegrid-color-tty-face-blue
 
-                      ;; org-block
+                            gamegrid-color-tty-face-red
+                            gamegrid-color-tty-face-cyan
+                            gamegrid-color-tty-face-magenta
+                            gamegrid-color-tty-face-green
+                            gamegrid-color-tty-face-white
 
-                      epe-git-face
-                      epe-symbol-face
-                      epe-sudo-symbol-face
+                            magit-diff-added-highlight
 
-                      ;; font-lock-keyword-face
+                            header-line-highlight
 
-                      eldoc-highlight-function-argument
+                            ;; org-block
 
-                      ;; window-divider
-                      ;; window-divider-first-pixel
-                      ;; window-divider-last-pixel
+                            epe-git-face
+                            epe-symbol-face
+                            epe-sudo-symbol-face
 
-                      minibuffer-prompt
+                            ;; font-lock-keyword-face
 
-                      evil-ex-substitute-replacement
+                            eldoc-highlight-function-argument
 
-                      org-hide
-                      org-level-1
-                      org-level-2
-                      org-level-3
-                      org-level-4
-                      org-level-5
+                            ;; window-divider
+                            ;; window-divider-first-pixel
+                            ;; window-divider-last-pixel
 
-                      message-header-name
+                            minibuffer-prompt
 
-                      mode-line-active
+                            evil-ex-substitute-replacement
 
-                      lsp-ui-doc-background
-                      lsp-ui-doc-header
+                            org-hide
+                            org-level-1
+                            org-level-2
+                            org-level-3
+                            org-level-4
+                            org-level-5
 
-                      link
+                            message-header-name
 
-                      ;; main menu bar face
-                      menu
+                            mode-line-active
 
-                      epe-dir-face
+                            lsp-ui-doc-background
+                            lsp-ui-doc-header
 
-                      fringe
+                            link
 
-                      tty-menu-enabled-face
-                      tty-menu-disabled-face
+                            ;; main menu bar face
+                            menu
 
-                      consult-grep-context
+                            epe-dir-face
 
-                      bible-codes
-                      bible-greek
-                      bible-greek-always
-                      bible-hebrew
-                      bible-lemma
+                            fringe
 
+                            tty-menu-enabled-face
+                            tty-menu-disabled-face
 
-                      ;; helm-grep-cmd-line
-                      ;; helm-grep-file
-                      ;; helm-grep-finish
-                      ;; helm-grep-lineno
-                      helm-grep-match
-                      ivy-grep-info
-                      ivy-grep-line-number
+                            consult-grep-context
 
-                      ivy-current-match
-                      ivy-match-required-face
-                      ivy-minibuffer-match-face-1
-                      ivy-minibuffer-match-face-2
-                      ivy-minibuffer-match-face-3
-                      ivy-minibuffer-match-face-4
-                      ivy-minibuffer-match-highlight
-                      ivy-prompt-match
+                            bible-codes
+                            bible-greek
+                            bible-greek-always
+                            bible-hebrew
+                            bible-lemma
 
 
-                      ;; wgrep-delete-face
-                      ;; wgrep-done-face
-                      ;; wgrep-face
-                      ;; wgrep-file-face
-                      ;; wgrep-reject-face
+                            ;; helm-grep-cmd-line
+                            ;; helm-grep-file
+                            ;; helm-grep-finish
+                            ;; helm-grep-lineno
+                            helm-grep-match
+                            ivy-grep-info
+                            ivy-grep-line-number
 
+                            ivy-current-match
+                            ivy-match-required-face
+                            ivy-minibuffer-match-face-1
+                            ivy-minibuffer-match-face-2
+                            ivy-minibuffer-match-face-3
+                            ivy-minibuffer-match-face-4
+                            ivy-minibuffer-match-highlight
+                            ivy-prompt-match
 
-                      ;; git-gutter+-unchanged
-                      ;; git-gutter+-modified
-                      ;; git-gutter+-separator
-                      ;; git-gutter+-added
-                      ;; git-gutter+-deleted
-                      ;; git-gutter+-commit-header-face
 
-                      helm-selection
+                            ;; wgrep-delete-face
+                            ;; wgrep-done-face
+                            ;; wgrep-face
+                            ;; wgrep-file-face
+                            ;; wgrep-reject-face
 
-                      hc-hard-hyphen
-                      hc-hard-space
-                      hc-other-char
-                      ;; hc-tab
-                      hc-trailing-whitespace
 
-                      magit-section-highlight
+                            ;; git-gutter+-unchanged
+                            ;; git-gutter+-modified
+                            ;; git-gutter+-separator
+                            ;; git-gutter+-added
+                            ;; git-gutter+-deleted
+                            ;; git-gutter+-commit-header-face
 
-                      ;; hl-line
+                            helm-selection
 
-                      magit-diff-file-heading-highlight
-                      magit-diff-removed-highlight
-
-                      ;; Highlight is the face for moving cursur over a button
-                      highlight
-
-                      lsp-ui-peek-header
-                      lsp-ui-peek-footer
-                      lsp-ui-peek-selection
-                      lsp-ui-peek-highlight
-
-                      pen-org-agenda-today-label
-
-                      ;; org-agenda-date-today
-
-                      ;; org-agenda-date-weekend-today
-                      org-agenda-current-time
-                      ;; org-imminent-deadline
-                      )
-           do
-           ;; The gamegrid faces are only created if you actually play tetris
-           (ignore-errors
-             (set-face-attribute
-              f nil
-              :inverse-video t
-              :background 'unspecified
-              :foreground 'unspecified
-              ;; This was quite useful!
-              :italic nil
-              ;; :bold (pen-use-bold-p)
-              )))
-
-  ;; ALL FACES
-  (loop for fr in (frame-list)
-        do
-        (progn
-          (set-face-background 'default 'unspecified fr)
-          (set-face-foreground 'default 'unspecified fr)
-          ;; (set-face-foreground 'default "#ffffff" fr)
-
-          (loop for f in
-                (pen-list-faces)
-                do
-                (progn
-                  (set-face-background f 'unspecified fr)
-                  (set-face-foreground f 'unspecified fr)
-                  (set-face-attribute
-                   f fr
-                   :box nil
-                   ;; This was quite useful!
-                   :bold (pen-use-bold-p))
-                  (if (eq
-                       (face-attribute f :slant fr)
-                       'italic)
-                      (set-face-attribute f fr
-                                          :inverse-video t
-                                          :italic nil
-                                          ;; :weight 'unspecified
-                                          ;; :weight 'bold
-                                          ;; :slant 'normal
-                                          )
-                    ;; (set-face-attribute f fr
-                    ;;                       :italic nil
-                    ;;                       :inverse-video nil)
-                    )))))
-
-  ;;
-  (cl-loop for f in '(tty-menu-selected-face
-
-                      widget-button
-
-                      lsp-ui-peek-peek
-
-                      org-block
-                      ;; hc-tab
-                      ;; font-lock-keyword-face
-
-                      ;; lsp-headerline-breadcrumb-path-face
-
-                      ;; macrostep-expansion-highlight-face
-
-                      git-gutter+-unchanged
-                      git-gutter+-modified
-                      git-gutter+-separator
-                      git-gutter+-added
-                      git-gutter+-deleted
-                      git-gutter+-commit-header-face
-
-                      tab-bar-tab
-
-                      org-agenda-calendar-event
-                      ;; org-agenda-date-today
-
-                      ;; org-verbatim
-
-                      gamegrid-color-tty-face-black
-
-                      popup-menu-mouse-face
-                      popup-menu-selection-face)
-           do
-           ;; The gamegrid faces are only created if you actually play tetris
-           (ignore-errors
-             (set-face-attribute
-              f nil
-              ;; :inverse-video nil
-
-              :inverse-video nil
-
-              ;; As beautiful as italic is, it messes with :inverse
-              ;; Because when on 2 colours, and italic is enabled, inverse is enabled
-              :italic nil
-              ;; :background 'unspecified
-              ;; :foreground 'unspecified
-              ;; :foreground "#000000"
-              ;; :background "#ffffff"
-              ;; :italic t
-              ;; :bold (pen-use-bold-p)
-              )))
-
-  (cl-loop for fr in (frame-list)
-           do
-
-           (cl-loop for f in '(
-                               ;; org-verbatim
-                               ;; org-bold
-                               org-todo
-                               org-done
-                               hc-tab
-                               company-tooltip
-
-                               markdown-markup-face
-                               markdown-language-keyword-face
-
-                               org-block-begin-line
-                               org-block-end-line
-
-                               font-lock-comment-face
-                               font-lock-comment-face
-
-                               org-agenda-date
-                               lsp-ui-peek-list
-
-                               company-preview
-
-                               lsp-face-highlight-textual
-
-                               ;; I shouldn't highlight the entire annotation
-                               ;; because custom highlighting is used often.
-                               ;; But perhaps I should use underline.
-                               ivy-completions-annotations
-
-                               Man-underline
-                               ;; lsp-ui-doc-background
-
-                               lsp-ui-peek-peek
-                               org-agenda-date-weekend
-                               org-agenda-date-weekend-today
-                               org-imminent-deadline
-
-                               magit-diff-removed-highlight)
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video nil
-                     :overline nil
-                     :underline t
-                     ;; :weight 'unspecified
-                     ;; :weight 'bold
-                     :box nil
-                     :strike-through nil
-                     :slant 'italic
-
-                     ;; :italic t
-                     )))
-
-
-
-  (cl-loop for fr in (frame-list)
-           do
-
-           (cl-loop for f in '(magit-diff-added-highlight
-                               iedit-occurrence
-
-                               bible-verse-ref-notes
-                               eww-cached
-                               yas-field-highlight-face
-                               avy-lead-face
-
-                               org-verbatim
-                               org-bold
-                               org-italic
-
-                               ;; bible-jesus-words
-                               ;; bible-divine-name
-
-                               ;; hl-line
-
-                               hc-trailing-whitespace
-                               trailing-whitespace
-                               whitespace-trailing
-                               whitespace-big-indent
-                               whitespace-empty
-                               whitespace-hspace
-                               whitespace-indentation
-                               whitespace-line
-                               whitespace-missing-newline-at-eof
-                               whitespace-newline
-                               whitespace-space
-                               whitespace-space-after-tab
-                               whitespace-space-before-tab
-                               whitespace-tab
-                               whitespace-trailing
-                               lsp-ui-peek-highlight
-                               )
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video t
-                     :overline nil
-                     :underline t
-                     :box nil
-                     :strike-through nil
-                     :slant 'normal
-
-                     ;; :italic t
-                     )))
-
-  (cl-loop for fr in (frame-list)
-           do
-
-           (cl-loop for f in '(bible-verse-ref
-                               ;; magit-diff-context-highlight
-                               ;; magit-diff-context
-                               magit-diff-hunk-heading-highlight
-                               magit-diff-hunk-heading)
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video nil
-                     :overline nil
-                     :underline t
-                     :box nil
-                     :strike-through nil
-                     :slant 'normal
-
-                     ;; :italic t
-                     )))
-
-  (cl-loop for fr in (frame-list)
-           do
-
-           (cl-loop for f in '(hl-line
-                               lsp-ui-peek-list)
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video nil
-                     :overline nil
-                     :underline t
-                     :box nil
-                     :strike-through nil
-                     ;; :slant 'normal
-
-                     ;; :italic t
-                     )))
-
-  ;; Inverse with no underline
-  (cl-loop for fr in (frame-list)
-           do
-           (cl-loop for f in '(
-                               Man-underline
-                               lsp-ui-peek-peek)
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video t
-                     :overline nil
-                     :underline nil
-                     :box nil
-                     :strike-through nil
-                     ;; :slant nil
-
-                     ;; :italic t
-                     )))
-
-  ;; No underline, no inverse, no inherit
-  (cl-loop for fr in (frame-list)
-           do
-           (cl-loop for f in '(Man-overstrike
-                               markdown-markup-face
-                               
-                               )
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video nil
-                     :overline nil
-                     :underline nil
-                     :box nil
-                     :inherit nil
-                     :strike-through nil
-                     :slant 'normal
-
-                     ;; :italic t
-                     )))
-  
-  (cl-loop for fr in (frame-list)
-           do
-           (cl-loop for f in '(magit-diff-added-highlight
-                               magit-diff-removed-highlight)
-                    do
-                    (set-face-attribute
-                     f fr
-                     :inverse-video nil
-                     :overline nil
-                     :underline nil
-                     :box nil
-                     :inherit nil
-                     :strike-through nil
-                     ;; :slant 'normal
-
-                     ;; :italic t
-                     )))
-
-  
-
-  ;; [[customize-variable:-whitespace-style]]
-  (setq whitespace-style
-        '(trailing tabs tab-mark)
-        ;; '(trailing tabs tab-mark empty space-after-tab::tab space-after-tab::space space-after-tab space-before-tab::tab space-before-tab::space space-before-tab)
-        )
-
-  (loop for fr in (frame-list)
-        do
-        (cl-loop for f in '(;; widget-button
+                            hc-hard-hyphen
+                            hc-hard-space
+                            hc-other-char
+                            ;; hc-tab
                             hc-trailing-whitespace
 
-                            ;; lsp-ui-peek-peek
+                            magit-section-highlight
 
-                            lsp-headerline-breadcrumb-path-face
-
-                            ;; font-lock-comment-face
-                            info-code-face
-                            shr-code
+                            ;; hl-line
 
                             magit-diff-file-heading-highlight
-                            magit-diff-file-heading
-                            
+                            magit-diff-removed-highlight
 
-                            bible-verse-ref-notes
+                            ;; Highlight is the face for moving cursur over a button
+                            highlight
 
-                            ;; markdown-code-face
+                            lsp-ui-peek-header
+                            lsp-ui-peek-footer
+                            lsp-ui-peek-selection
+                            lsp-ui-peek-highlight
+
+                            pen-org-agenda-today-label
+
+                            ;; org-agenda-date-today
+
+                            ;; org-agenda-date-weekend-today
+                            org-agenda-current-time
+                            ;; org-imminent-deadline
                             )
                  do
+                 ;; The gamegrid faces are only created if you actually play tetris
+                 (ignore-errors
+                   (set-face-attribute
+                    f nil
+                    :inverse-video t
+                    :background 'unspecified
+                    :foreground 'unspecified
+                    ;; This was quite useful!
+                    :italic nil
+                    ;; :bold (pen-use-bold-p)
+                    )))
+
+        ;; ALL FACES
+        (loop for fr in (frame-list)
+              do
+              (progn
+                (set-face-background 'default 'unspecified fr)
+                (set-face-foreground 'default 'unspecified fr)
+                ;; (set-face-foreground 'default "#ffffff" fr)
+
+                (loop for f in
+                      (pen-list-faces)
+                      do
+                      (progn
+                        (set-face-background f 'unspecified fr)
+                        (set-face-foreground f 'unspecified fr)
+                        (set-face-attribute
+                         f fr
+                         :box nil
+                         ;; This was quite useful!
+                         :bold (pen-use-bold-p))
+                        (if (eq
+                             (face-attribute f :slant fr)
+                             'italic)
+                            (set-face-attribute f fr
+                                                :inverse-video t
+                                                :italic nil
+                                                ;; :weight 'unspecified
+                                                ;; :weight 'bold
+                                                ;; :slant 'normal
+                                                )
+                          ;; (set-face-attribute f fr
+                          ;;                       :italic nil
+                          ;;                       :inverse-video nil)
+                          )))))
+
+        ;;
+        (cl-loop for f in '(tty-menu-selected-face
+
+                            widget-button
+
+                            lsp-ui-peek-peek
+
+                            org-block
+                            ;; hc-tab
+                            ;; font-lock-keyword-face
+
+                            ;; lsp-headerline-breadcrumb-path-face
+
+                            ;; macrostep-expansion-highlight-face
+
+                            git-gutter+-unchanged
+                            git-gutter+-modified
+                            git-gutter+-separator
+                            git-gutter+-added
+                            git-gutter+-deleted
+                            git-gutter+-commit-header-face
+
+                            tab-bar-tab
+
+                            org-agenda-calendar-event
+                            ;; org-agenda-date-today
+
+                            ;; org-verbatim
+
+                            gamegrid-color-tty-face-black
+
+                            popup-menu-mouse-face
+                            popup-menu-selection-face)
+                 do
+                 ;; The gamegrid faces are only created if you actually play tetris
+                 (ignore-errors
+                   (set-face-attribute
+                    f nil
+                    ;; :inverse-video nil
+
+                    :inverse-video nil
+
+                    ;; As beautiful as italic is, it messes with :inverse
+                    ;; Because when on 2 colours, and italic is enabled, inverse is enabled
+                    :italic nil
+                    ;; :background 'unspecified
+                    ;; :foreground 'unspecified
+                    ;; :foreground "#000000"
+                    ;; :background "#ffffff"
+                    ;; :italic t
+                    ;; :bold (pen-use-bold-p)
+                    )))
+
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(
+                                     ;; org-verbatim
+                                     ;; org-bold
+                                     org-todo
+                                     org-done
+                                     hc-tab
+                                     company-tooltip
+
+                                     markdown-markup-face
+                                     markdown-language-keyword-face
+
+                                     org-block-begin-line
+                                     org-block-end-line
+
+                                     font-lock-comment-face
+                                     font-lock-comment-face
+
+                                     org-agenda-date
+                                     lsp-ui-peek-list
+
+                                     company-preview
+
+                                     lsp-face-highlight-textual
+
+                                     ;; I shouldn't highlight the entire annotation
+                                     ;; because custom highlighting is used often.
+                                     ;; But perhaps I should use underline.
+                                     ivy-completions-annotations
+
+                                     Man-underline
+                                     ;; lsp-ui-doc-background
+
+                                     lsp-ui-peek-peek
+                                     org-agenda-date-weekend
+                                     org-agenda-date-weekend-today
+                                     org-imminent-deadline
+
+                                     magit-diff-removed-highlight)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline t
+                           ;; :weight 'unspecified
+                           ;; :weight 'bold
+                           :box nil
+                           :strike-through nil
+                           :slant 'italic
+
+                           ;; :italic t
+                           )))
+
+
+
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(magit-diff-added-highlight
+                                     iedit-occurrence
+
+                                     bible-verse-ref-notes
+                                     eww-cached
+                                     yas-field-highlight-face
+                                     avy-lead-face
+
+                                     org-verbatim
+                                     org-bold
+                                     org-italic
+
+                                     ;; bible-jesus-words
+                                     ;; bible-divine-name
+
+                                     ;; hl-line
+
+                                     hc-trailing-whitespace
+                                     trailing-whitespace
+                                     whitespace-trailing
+                                     whitespace-big-indent
+                                     whitespace-empty
+                                     whitespace-hspace
+                                     whitespace-indentation
+                                     whitespace-line
+                                     whitespace-missing-newline-at-eof
+                                     whitespace-newline
+                                     whitespace-space
+                                     whitespace-space-after-tab
+                                     whitespace-space-before-tab
+                                     whitespace-tab
+                                     whitespace-trailing
+                                     lsp-ui-peek-highlight
+                                     )
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video t
+                           :overline nil
+                           :underline t
+                           :box nil
+                           :strike-through nil
+                           :slant 'normal
+
+                           ;; :italic t
+                           )))
+
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(bible-verse-ref
+                                     ;; magit-diff-context-highlight
+                                     ;; magit-diff-context
+                                     magit-diff-hunk-heading-highlight
+                                     magit-diff-hunk-heading)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline t
+                           :box nil
+                           :strike-through nil
+                           :slant 'normal
+
+                           ;; :italic t
+                           )))
+
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(hl-line
+                                     lsp-ui-peek-list)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline t
+                           :box nil
+                           :strike-through nil
+                           ;; :slant 'normal
+
+                           ;; :italic t
+                           )))
+
+        ;; Inverse with no underline
+        (cl-loop for fr in (frame-list)
+                 do
+                 (cl-loop for f in '(
+                                     Man-underline
+                                     lsp-ui-peek-peek)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video t
+                           :overline nil
+                           :underline nil
+                           :box nil
+                           :strike-through nil
+                           ;; :slant nil
+
+                           ;; :italic t
+                           )))
+
+        ;; No underline, no inverse, no inherit
+        (cl-loop for fr in (frame-list)
+                 do
+                 (cl-loop for f in '(Man-overstrike
+                                     markdown-markup-face
+                               
+                                     )
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline nil
+                           :box nil
+                           :inherit nil
+                           :strike-through nil
+                           :slant 'normal
+
+                           ;; :italic t
+                           )))
+  
+        (cl-loop for fr in (frame-list)
+                 do
+                 (cl-loop for f in '(magit-diff-added-highlight
+                                     magit-diff-removed-highlight)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline nil
+                           :box nil
+                           :inherit nil
+                           :strike-through nil
+                           ;; :slant 'normal
+
+                           ;; :italic t
+                           )))
+
+  
+
+        ;; [[customize-variable:-whitespace-style]]
+        (setq whitespace-style
+              '(trailing tabs tab-mark)
+              ;; '(trailing tabs tab-mark empty space-after-tab::tab space-after-tab::space space-after-tab space-before-tab::tab space-before-tab::space space-before-tab)
+              )
+
+        (loop for fr in (frame-list)
+              do
+              (cl-loop for f in '(;; widget-button
+                                  hc-trailing-whitespace
+
+                                  ;; lsp-ui-peek-peek
+
+                                  lsp-headerline-breadcrumb-path-face
+
+                                  ;; font-lock-comment-face
+                                  info-code-face
+                                  shr-code
+
+                                  magit-diff-file-heading-highlight
+                                  magit-diff-file-heading
+                            
+
+                                  bible-verse-ref-notes
+
+                                  ;; markdown-code-face
+                                  )
+                       do
+                       (set-face-attribute
+                        f fr
+
+                        ;; ideally, but it doesn't seem to work well
+                        ;; but I'll use it anyway.
+                        ;; :inverse-video nil
+                        ;; :foreground "#ffffff"
+                        ;; :background "#000000"
+
+                        ;; Otherwise, use this method
+                        :inverse-video t
+                        :foreground 'unspecified
+                        :background 'unspecified)))
+
+        (loop for fr in (frame-list)
+              do
+              (progn
+                (set-face-foreground 'default 'unspecified)
+                (set-face-background 'default 'unspecified)))
+
+        ;; OK, so where does it get #b2b2b2 for default?
+
+        (advice-add 'pen-set-faces :around #'around-advice-disable-function)
+        (advice-add 'pen-set-text-contrast-from-config :around #'around-advice-disable-function)
+        (advice-add 'minibuffer-bg :around #'around-advice-disable-function)
+
+        ;; server-after-make-frame-hook
+        (if (not (member 'pen-disable-all-faces server-after-make-frame-hook))
+            (add-hook-last 'server-after-make-frame-hook 'pen-disable-all-faces))
+
+        ;; (add-hook-last 'after-setting-font-hook 'pen-disable-all-faces)
+
+        ;; (snc "win vt100-tmux")
+
+        (pen-snc "tmux-bw")
+
+        ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
+        ;; Double-check this has been successful.
+        ;; But this has busted the underline for bible-verse-ref-notes
+        (comment
+         (cl-loop for fr in (frame-list)
+                  do
+                  (with-selected-frame fr
+                    (if (display-graphic-p)
+                        (progn
+                          (comment
+                           (set-foreground-color "#000000")
+                           (set-background-color "#ffffff"))
+
+                          (comment
+                           (set-foreground-color "#ffffff")
+                           (set-background-color "#000000"))
+
+                          (set-foreground-color "#000000")
+                          (set-background-color "#ffffff"))
+                      (progn
+                        ;; For the tty, use 'unspecified, because I want to take advantage of rev
+                        (comment
+                         (set-foreground-color "#000000")
+                         (set-background-color 'unspecified))
+
+                        (set-foreground-color 'unspecified)
+                        ;; (set-background-color "#000000")
+                        (set-background-color 'unspecified)
+
+                        ;; tty-menu-enabled-face
+                        )))))
+
+        (set-face-attribute 'font-lock-builtin-face nil :background 'unspecified :foreground 'unspecified)
+        (set-face-attribute 'font-lock-string-face nil :background 'unspecified :foreground 'unspecified)
+        (set-face-attribute 'font-lock-comment-face nil :background 'unspecified :foreground 'unspecified)
+
+        ;; For some reason, many fonts just aren't changing colour - OHH the advice!'
+        (cl-loop for f in (append
+                           (pen-list-faces)
+                           '(font-lock-builtin-face
+                             font-lock-string-face
+                             font-lock-comment-face))
+                 do
+                 ;; (set-face-foreground f 'unspecified)
+                 ;; (set-face-background f 'unspecified)
                  (set-face-attribute
-                  f fr
-
-                  ;; ideally, but it doesn't seem to work well
-                  ;; but I'll use it anyway.
+                  f nil
+                  ;; :italic t
                   ;; :inverse-video nil
-                  ;; :foreground "#ffffff"
-                  ;; :background "#000000"
+                  :weight 'bold
+                  :background 'unspecified
+                  :foreground 'unspecified))
 
-                  ;; Otherwise, use this method
-                  :inverse-video t
-                  :foreground 'unspecified
-                  :background 'unspecified)))
+        (pen-set-all-faces-height-1)
 
-  (loop for fr in (frame-list)
-        do
-        (progn
-          (set-face-foreground 'default 'unspecified)
-          (set-face-background 'default 'unspecified)))
-
-  ;; OK, so where does it get #b2b2b2 for default?
-
-  (advice-add 'pen-set-faces :around #'around-advice-disable-function)
-  (advice-add 'pen-set-text-contrast-from-config :around #'around-advice-disable-function)
-  (advice-add 'minibuffer-bg :around #'around-advice-disable-function)
-
-  ;; server-after-make-frame-hook
-  (if (not (member 'pen-disable-all-faces server-after-make-frame-hook))
-      (add-hook-last 'server-after-make-frame-hook 'pen-disable-all-faces))
-
-  ;; (add-hook-last 'after-setting-font-hook 'pen-disable-all-faces)
-
-  ;; (snc "win vt100-tmux")
-
-  (pen-snc "tmux-bw")
-
-  ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
-  ;; Double-check this has been successful.
-  ;; But this has busted the underline for bible-verse-ref-notes
-  (comment
-   (cl-loop for fr in (frame-list)
-            do
-            (with-selected-frame fr
-              (if (display-graphic-p)
-                  (progn
-                    (comment
-                     (set-foreground-color "#000000")
-                     (set-background-color "#ffffff"))
-
-                    (comment
-                     (set-foreground-color "#ffffff")
-                     (set-background-color "#000000"))
-
-                    (set-foreground-color "#000000")
-                    (set-background-color "#ffffff"))
-                (progn
-                  ;; For the tty, use 'unspecified, because I want to take advantage of rev
-                  (comment
-                   (set-foreground-color "#000000")
-                   (set-background-color 'unspecified))
-
-                  (set-foreground-color 'unspecified)
-                  ;; (set-background-color "#000000")
-                  (set-background-color 'unspecified)
-
-                  ;; tty-menu-enabled-face
-                  )))))
-
-  (set-face-attribute 'font-lock-builtin-face nil :background 'unspecified :foreground 'unspecified)
-  (set-face-attribute 'font-lock-string-face nil :background 'unspecified :foreground 'unspecified)
-  (set-face-attribute 'font-lock-comment-face nil :background 'unspecified :foreground 'unspecified)
-
-  ;; For some reason, many fonts just aren't changing colour - OHH the advice!'
-  (cl-loop for f in (append
-                     (pen-list-faces)
-                     '(font-lock-builtin-face
-                       font-lock-string-face
-                       font-lock-comment-face))
-           do
-           ;; (set-face-foreground f 'unspecified)
-           ;; (set-face-background f 'unspecified)
-           (set-face-attribute
-            f nil
-            ;; :italic t
-            ;; :inverse-video nil
-            :weight 'bold
-            :background 'unspecified
-            :foreground 'unspecified))
-
-  (pen-set-all-faces-height-1)
-
-
-
-  ;; This must come last
-  (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))
+        ;; This must come last
+        (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))))
 
 (defun honour-bw-mode (&optional tmuxonly)
   (interactive)
@@ -2007,11 +2010,18 @@ Also see option `magit-blame-styles'."
 
 (defun pen-enable-all-faces ()
   (interactive)
-  (pen-rc-set "black_and_white" "off")
-  (pen-load-faces)
-  ;; (global-hl-line-mode t)
-  (pen-set-all-faces-height-1)
-  (pen-snc "tmux-colour"))
+
+  (message "Running pen-enable-all-faces")
+
+  (if pen-black-and-white
+      (progn
+        (pen-rc-set "black_and_white" "off")
+        (pen-load-faces)
+        ;; (global-hl-line-mode t)
+        (pen-set-all-faces-height-1)
+        (pen-snc "tmux-colour")
+
+        (setq pen-black-and-white nil))))
 
 (defun pen-enable-all-faces-tcp ()
   (interactive)
@@ -2188,7 +2198,9 @@ Also see option `magit-blame-styles'."
 (defun pen-load-faces ()
   (interactive)
 
-    ;; I decided to disable the inverse-video stuff
+  (message "Running pen-load-faces")
+
+  ;; I decided to disable the inverse-video stuff
   (cl-loop for f in (pen-list-faces)
            do
            (set-face-attribute
@@ -2239,6 +2251,8 @@ Also see option `magit-blame-styles'."
 
                        (ignore-errors
                          (apply 'set-face-attribute `(,sym nil ,@attrs))))))
-          (message "%s" (concat "Loaded faces from " fp))))))
+          (message "%s" (concat "Loaded faces from " fp)))))
+
+  (setq pen-black-and-white nil))
 
 (provide 'pen-faces)
