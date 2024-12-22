@@ -2,6 +2,29 @@ source git
 source kubectl
 source docker
 
+# This program could really use a fater way of going to lines.
+# like a fuzzy finder or numeric jump.
+
+mode default
+  # Find all files (not directories) in the current directory and
+  # annotate with the class "file".
+  annotate match file -- ls -a1p | grep -v /
+
+  # When the cursor is on a line with an annotation of class "file" and
+  # the `enter` key is pressed, run `cat` with the value of the
+  # annotation (the filename) and display the output in a new pager with
+  # mode "preview". 
+  bindkey enter file preview -- >cat $file
+
+  # When the cursor is on a line with an annotation of class "file" and
+  # the `e` key is pressed, open the selected file in vim.
+  bindkey e     file         -- !vim $file
+
+  # When the cursor is on a line with an annotation of class "file" and
+  # Shift + `x` is pressed, delete the file if the user confirms it.
+  bindkey S-x   file         -- ?!rm $file
+end
+
 # There is no straightforward way to docker from here, yet
 # The docker rat should interact with what's currently installed
 # Every time I need to enter a query a new rat must be created.

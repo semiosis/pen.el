@@ -2,22 +2,33 @@
 export TTY
 
 . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
 
 # github author/repo may need adjustment
-test -f "${GOPATH%%:*}/bin/up" || go install "github.com/ericfreese/rat@latest" &>/dev/null
+test -f "${GOPATH%%:*}/bin/rat" || go install "github.com/ericfreese/rat@latest" &>/dev/null
 
 # Examples:
 # cd "$PENELD"; rat -m git.log -c 'git log --oneline --decorate --graph'
 # cd "$PENELD"; rat -m git.refs -c 'git branch'
 # cd "$PENELD"; rat -m git.status -c 'git status --short -uall'
 
-if test "$#" = 1 && printf -- "%s\n" "$1" | grep -q -P '^-'; then
-    NO_NVC=y
-    USE_PAGER=y
+if ! stdin_exists && test "$#" = 0; then
+    # Either of these work to put it into default mode
+    # exec < <(echo)
+    # set -- --cmd=true "$@"
 
-    if test "$1" == "-h" || test "$1" == "--help"; then
-        DO_HELP=y
-    fi
+    # set -- --cmd="welcome-to-rat | tv" "$@"
+
+    # Interestingly this script needs to be instant or will not appear.
+    # The cache makes the symptoms go away.
+    set -- --cmd="ocif welcome-to-rat" "$@"
+fi
+
+# NO_NVC=y
+# USE_PAGER=y
+
+if test "$1" == "-h" || test "$1" == "--help"; then
+    DO_HELP=y
 fi
 
 if test "$NO_NVC" = "y"; then

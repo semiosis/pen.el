@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+trap '' INT
+trap '' HUP
+trap '' STOP
+
+# Interestingly this script needs to be instant or will not appear
+# with rat --cmd=welcome-to-rat
+
+exec 0</dev/null
+contents=$(
+echo "Welcome to rat. Avaliable commands:" | udl | awk 1
+cat $HOME/.config/rat/ratrc
+)
+
+printf -- "%s\n" "$contents"
