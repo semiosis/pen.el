@@ -18,7 +18,7 @@ mode default
 
   # When the cursor is on a line with an annotation of class "file" and
   # the `e` key is pressed, open the selected file in vim.
-  bindkey e     file         -- !vim $file
+  bindkey e     file         -- !v $file
 
   # When the cursor is on a line with an annotation of class "file" and
   # Shift + `x` is pressed, delete the file if the user confirms it.

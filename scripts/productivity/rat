@@ -20,8 +20,12 @@ if ! stdin_exists && test "$#" = 0; then
     # set -- --cmd="welcome-to-rat | tv" "$@"
 
     # Interestingly this script needs to be instant or will not appear.
+
+    # Run it in advance
+    fp="$(upd ocif -otf welcome-to-rat)"
+
     # The cache makes the symptoms go away.
-    set -- --cmd="ocif welcome-to-rat" "$@"
+    set -- --cmd="cat $fp" "$@"
 fi
 
 # NO_NVC=y

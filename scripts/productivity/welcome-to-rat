@@ -10,7 +10,16 @@ trap '' STOP
 
 exec 0</dev/null
 contents=$(
-echo "Welcome to rat. Avaliable commands:" | udl | awk 1
+echo "Welcome to rat. It should start by default in 'default mode'" | udl
+echo
+echo "Sadly, the rat file matcher doesn't detect full paths"
+echo "so 'e' wont work on these:"
+echo
+echo /root/.emacs.d/host/pen.el/config/rat/ratrc
+echo /root/.emacs.d/host/pen.el/scripts/productivity/welcome-to-rat
+echo
+
+echo "ratrc:" | udl
 cat $HOME/.config/rat/ratrc
 )
 
