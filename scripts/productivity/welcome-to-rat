@@ -8,6 +8,13 @@ trap '' STOP
 # Interestingly this script needs to be instant or will not appear
 # with rat --cmd=welcome-to-rat
 
+# TODO Work on doing this
+# e:/root/.emacs.d/host/pen.el/scripts/utils/scrape-org-links
+# e:/root/.emacs.d/host/pen.el/scripts/utils/scrape-org-links-fast
+
+# All this program might end up being useful for is another way to practice
+# and apply scraping and filtering commands, which could be nice actually
+
 exec 0</dev/null
 contents=$(
 echo "Welcome to rat. It should start by default in 'default mode'" | udl
@@ -15,8 +22,14 @@ echo
 echo "Sadly, the rat file matcher doesn't detect full paths"
 echo "so 'e' wont work on these:"
 echo
-echo /root/.emacs.d/host/pen.el/config/rat/ratrc
-echo /root/.emacs.d/host/pen.el/scripts/productivity/welcome-to-rat
+echo [[e:/root/.emacs.d/host/pen.el/config/rat/ratrc]]
+echo e:/root/.emacs.d/host/pen.el/scripts/productivity/welcome-to-rat
+echo
+echo "Ohhh... I get it. The matcher generates the matches in advance."
+echo "OK, so to get the above full paths to match, I would have to scrape them."
+echo "from this welcome-to-rat script, using, say, scrape-files-fast.sh."
+echo "Instead, I might scrape org-links from the document."
+echo "Yeah, that's a pretty good idea, actually."
 echo
 
 echo "ratrc:" | udl

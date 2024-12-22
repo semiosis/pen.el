@@ -3,4 +3,7 @@ export TTY
 
 type="$@"
 
-sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
+input_fp="$(cat | tf txt)"
+
+cat "$input_fp" | sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
+cat "$input_fp" | sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
