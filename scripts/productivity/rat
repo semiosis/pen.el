@@ -1,6 +1,13 @@
 #!/bin/bash
 export TTY
 
+# I think that this program is useful for when there might be multiple different operations per line
+# based on different information (machers) on each line.
+# And a lot of dense information.
+# But generally, I don't think it's going to improve my productivivty very much.
+# And I think solutions would generally be better built in emacs.
+# Also, I'd like to have ways of building new modes in emacs ultra quickly, like the term mode generator.
+
 . $SCRIPTS/lib/hs
 . $SCRIPTS/lib/stdin_exists
 
