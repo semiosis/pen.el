@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/local/bin/mycli" || pyf "mycli" &>/dev/null
+
+/usr/local/bin/mycli "$@"

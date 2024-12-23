@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/local/bin/pgcli" || pyf "pgcli" &>/dev/null
+
+/usr/local/bin/pgcli "$@"

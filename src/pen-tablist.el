@@ -337,6 +337,13 @@ as the ewoc pretty-printer."
 
 (defset pen-tablist-min-padding 0)
 
+(defun tablist-goto-first-column ()
+  (interactive)
+  (let ((offsets (tablist-column-offsets)))
+    (if offsets
+        (move-to-column
+         (car (tablist-column-offsets))))))
+
 (defun tablist-put-mark (&optional pos)
   "Put a mark before the entry at POS.
 
@@ -397,7 +404,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
        (error "Unable to tag the current line"))))
   (never
    (save-excursion
-     (beginning-of-line)
+     (tablist-goto-first-column)
      (when (tabulated-list-get-entry)
        (let ((beg (point))
 	           (inhibit-read-only t))
@@ -420,7 +427,7 @@ If ADVANCE is non-nil, move forward by one line afterwards."
         (vcs 0))
     (message (str cp))
     (save-excursion
-      (beginning-of-line)
+      (tablist-goto-first-column)
       (while (and
               (< (point) cp)
               (not (eobp))
@@ -688,7 +695,7 @@ decide whether the selected frame can display that Unicode character."
       ;; Even though (point) has increased. But I think (point) increases, but (current-column) does not increase.
       ;; Therefore, in forward-char-safe, I need to increase the point until current-column increases.
 
-      (cond ((= ccol lcol) (beginning-of-line))
+      (cond ((= ccol lcol) (tablist-goto-first-column))
             ((< ccol lcol) (while (< (tabulated-list-current-column)
                                      ncol)
                              ;; (message "%d %d" (point) (tabulated-list-current-column))
@@ -855,7 +862,7 @@ decide whether the selected frame can display that Unicode character."
 (define-key tabulated-list-mode-map (kbd "g g") 'beginning-of-buffer)
 (define-key tabulated-list-mode-map (kbd "G") 'end-of-buffer)
 (define-key tabulated-list-mode-map (kbd "f") 'tablist-forward-column)
-(define-key tabulated-list-mode-map (kbd "0") 'beginning-of-line)
+(define-key tabulated-list-mode-map (kbd "0") 'tablist-goto-first-column)
 (define-key tabulated-list-mode-map (kbd "$") 'end-of-line)
 ;; (define-key tabulated-list-mode-map (kbd "w") nil)
 (define-key tabulated-list-mode-map (kbd "b") 'tablist-backward-column)
@@ -886,7 +893,7 @@ decide whether the selected frame can display that Unicode character."
       (when (or (< n 0)
                 (>= n (length columns)))
         (error "No such column: %s" n))
-      (beginning-of-line)
+      (tablist-goto-first-column)
       ;; (message "tablist-forward-column %d" n)
       (tablist-forward-column n)))
 

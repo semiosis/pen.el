@@ -1521,6 +1521,8 @@ Also see option `magit-blame-styles'."
 
                             pen-org-agenda-today-label
 
+                            dired-marked
+
                             ;; org-agenda-date-today
 
                             ;; org-agenda-date-weekend-today

@@ -1611,6 +1611,8 @@ plf install DBD::SQLite
 plf install RPC::EPC::Service
 
 pip install -U litecli
+pip install -U mycli
+pip install -U pgcli
 
 (
     cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
@@ -2597,5 +2599,9 @@ e ia gnugo chess
 pip install psutil
 
 go install github.com/ericfreese/rat@latest
+
+e ia xcscope helm-cscope
+
+cargo install datafusion-tui
 
 e ia xcscope helm-cscope
