@@ -178,6 +178,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 ;; (require 'pen-dashboard)
 (require 'pen-window)
 (require 'selected)
+(require 'pen-pcase)
 (require 'pcsv)
 (require 'pcase)
 (require 'f)

@@ -1,3 +1,5 @@
+(require 'dired)
+
 ;; https://www.gnu.org/software/tramp/#index-method-ftp
 ;; https://www.emacswiki.org/emacs/AngeFtp
 
@@ -18,5 +20,20 @@
 ;; ftp:ftp.crosswire.org:/pub/sword/betaraw
 
 ;; ftp:ftp.crosswire.org:/pub/sword/wyclifferaw
+
+;; Make it so I'm asked if I want to download the file when I open a file in dired in ftp
+(defun dired-find-file ()
+  "In Dired, visit the file or directory named on this line."
+
+(interactive)
+
+  (let ((path (dired-get-file-for-visit)))
+    (pcase path
+      ;; ((rx "custom-id") (concat "#" path))
+      ;; ((pred (lambda (s) (re-match-p "^/ftp:" s))) (tv path))
+
+      ;; See j:pen-pcase
+      ((re "^/ftp:") (tv path))
+      (_ (dired--find-possibly-alternative-file path)))))
 
 (provide 'pen-ftp)
