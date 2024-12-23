@@ -1241,7 +1241,8 @@ Also see option `magit-blame-styles'."
 
   (message "Running pen-disable-all-faces")
 
-  (if (not pen-black-and-white)
+  ;; Optimise this check later
+  (if (or t (not pen-black-and-white))
       (progn
 
         (setq pen-black-and-white t)
