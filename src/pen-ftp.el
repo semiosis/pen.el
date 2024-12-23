@@ -33,7 +33,11 @@
       ;; ((pred (lambda (s) (re-match-p "^/ftp:" s))) (tv path))
 
       ;; See j:pen-pcase
-      ((re "^/ftp:") (tv path))
+      ;; ((re "^/ftp:") (tv path))
+      ((re "^/ftp:")
+       (if (yn (concat "Download " (e/q path)))
+           (sps (cmd "download-file" path))
+         (dired--find-possibly-alternative-file path)))
       (_ (dired--find-possibly-alternative-file path)))))
 
 (provide 'pen-ftp)
