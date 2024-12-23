@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+x -sh "litecli \"$PENCONF/gematria-interlinear.db\"" -e "db>" -s help -c m -i
