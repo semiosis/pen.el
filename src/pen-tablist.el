@@ -126,7 +126,8 @@
 ;; csv-mode should be started
 ;; An actual file path should be created -- but based on the mode when I do =yp=
 (defun tablist-export-csv (&optional separator always-quote-p
-                                     invisible-p out-buffer display-p)
+                                     invisible-p out-buffer display-p
+                                     only-marked-p)
   "Export a tabulated list to a CSV format.
 
 Use SEPARATOR (or ;) and quote if necessary (or always if
@@ -956,5 +957,34 @@ Return the column number after insertion."
                  'face 'ac-candidate-face)))
       (put-text-property opoint (point) 'tabulated-list-column-name name)
       next-x)))
+
+;; For some reason marks are not being cleared
+;; I need to fix up tabulated-list unmarking
+(defun dired-current-line-marked-p ()
+  (second
+   (tablist-get-mark-state)))
+
+(defun pen-tablist-get-marked (&optional invisible-p)
+  ;; Collect a sexp of all the entries
+  ;; Use j:tablist-export-csv
+
+  ;; Actually, it's simpler to use this
+  ;; (tabulated-list-get-entry)
+  (save-excursion-and-region-reliably
+
+   (goto-char (point-min))
+   (unless invisible-p
+     (tablist-skip-invisible-entries))
+
+   (-filter 'identity
+    (cl-loop while (not (eobp)) collect
+             (let ((row
+                    (if (dired-current-line-marked-p)
+                        ;; http://xahlee.info/emacs/emacs/elisp_list_vs_vector.html
+                        (vec2list (tabulated-list-get-entry)))))
+               (if invisible-p
+                   (forward-line)
+                 (tablist-forward-entry))
+               row)))))
 
 (provide 'pen-tablist)

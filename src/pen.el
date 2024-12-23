@@ -219,6 +219,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-ilink)
 (if (inside-docker-p)
     (require 'pen-apl))
+(require 'pen-seq)
 (require 'pen-music)
 (require 'pen-manage-minor-mode)
 (require 'pen-handle)
