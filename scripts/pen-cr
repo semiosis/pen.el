@@ -1583,8 +1583,7 @@ case "$fnspec" in
 
             if test -n "$sel"; then
                 if pen-yn "sudo?"; then
-                    # unbuffer make "$sel"
-                    unbuffer mmake "$sel"
+                    unbuffer sudo -E make "$sel"
                 else
                     unbuffer make "$sel"
                 fi

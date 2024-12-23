@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/texi2html" || agi "texi2html" &>/dev/null
+
+/usr/bin/texi2html "$@"

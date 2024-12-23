@@ -142,7 +142,8 @@
 (defset csv-mode-funcs '(csv-open
                          csv-open-in-numpy
                          csv-open-in-pandas
-                         csv-open-in-fpvd))
+                         csv-open-in-fpvd
+                         csv-open-in-tabulated-list))
 
 (defset gnu-apl-mode-funcs '(gnu-apl))
 

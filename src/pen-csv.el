@@ -7,6 +7,17 @@
                ;; "cr -ft csv"
                "sh-csv"))
 
+(defun csv-open-in-tabulated-list (fp)
+  (interactive (list (buffer-file-name)))
+
+  (tablist-buffer-from-csv-string
+   (if fp
+       (e/cat fp)
+     (if (major-mode-p 'csv-mode)
+         (buffer-string))))
+  ;; (error "csv-open-in-tabulated-list: Not implemented")
+  )
+
 (defun csv-open-in-fpvd (fp)
   (interactive (list (buffer-file-name)))
 
