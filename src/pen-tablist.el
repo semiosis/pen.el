@@ -1035,17 +1035,19 @@ Returns the number of unmarked marks."
   (interactive
    (list (if current-prefix-arg
              (read-string "Remove marks: ")) t))
-  (let ((removed 0)
-        (another-line (not (eobp))))
+  
+  (let ((removed 0))
     (save-excursion
       (goto-char (point-min))
-      (while another-line
-        (let ((tablist-marker-char ?\s)
-              tablist-marker-face
-              tablist-marked-face)
-          (tablist-put-mark))
-        (setq another-line (tablist-next-line 1))
-        (cl-incf removed)))
+      (let ((another-line (not (eobp))))
+      
+        (while another-line
+          (let ((tablist-marker-char ?\s)
+                tablist-marker-face
+                tablist-marked-face)
+            (tablist-put-mark))
+          (setq another-line (tablist-next-line 1))
+          (cl-incf removed))))
     (when interactive
       (message "Removed %d marks" removed))
     removed))
