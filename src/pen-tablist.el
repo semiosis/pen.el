@@ -495,6 +495,8 @@ Return t, if point is now in a visible area."
   (not (or (invisible-p (point))
            (string-equal "…" (get-text-property (point) 'display)))))
 
+(advice-add 'tablist-skip-invisible-entries :around #'ignore-errors-around-advice)
+
 (defun tablist-next-column (&optional backward prop)
   "Skip invisible entries BACKWARD or forward.
 
@@ -832,11 +834,19 @@ decide whether the selected frame can display that Unicode character."
                (eobp)))
     (signal 'end-of-buffer nil))
 
+
   (let ((col (tablist-current-column)))
+    (if (eq col -1)
+        (progn
+          (tablist-goto-first-column)
+          (setq col (tablist-current-column))))
+    
     (tablist-forward-entry (or n 1))
     (if col
         (tablist-move-to-column col)
-      (tablist-move-to-major-column))))
+      (tablist-move-to-major-column)))
+
+  (not (eobp)))
 
 (defun tablist-previous-line (&optional n)
   (interactive "p")
@@ -982,6 +992,11 @@ Return the column number after insertion."
 (defun dired-current-line-marked-p ()
   (tablist-get-mark-state))
 
+(defun pen-tabulated-list-get-entry ()
+  (mapcar
+   'str
+   (vec2list (tabulated-list-get-entry))))
+
 (defun pen-tablist-get-marked (&optional invisible-p)
   ;; Collect a sexp of all the entries
   ;; Use j:tablist-export-csv
@@ -995,18 +1010,51 @@ Return the column number after insertion."
      (tablist-skip-invisible-entries))
 
    (-filter 'identity
-    (cl-loop while (not (eobp)) collect
-             (let ((row
-                    (if (dired-current-line-marked-p)
-                        ;; http://xahlee.info/emacs/emacs/elisp_list_vs_vector.html
-                        (vec2list (tabulated-list-get-entry)))))
-               (if invisible-p
-                   (forward-line)
-                 (tablist-forward-entry))
-               row)))))
+            (cl-loop while (not (eobp)) collect
+                     (let ((row
+                            (if (dired-current-line-marked-p)
+                                ;; http://xahlee.info/emacs/emacs/elisp_list_vs_vector.html
+                                (pen-tabulated-list-get-entry))))
+                       (if invisible-p
+                           (forward-line)
+                         (tablist-forward-entry))
+                       row)))))
+
+;; Simplify this. I don't know what tablist mark characters are.
+;; But it's too complicated, I think. I just want to mark lines and operate on them.
+;; Marks are a tablist thing and not a tabulated list thing
+(defun tablist-unmark-all-marks (&optional marks interactive)
+  "Remove all marks in MARKS.
+
+MARKS should be a string of mark characters to match and defaults
+to all marks.  Interactively, remove all marks, unless a prefix
+arg was given, in which case ask about which ones to remove.
+Give a message, if interactive is non-nil.
+
+Returns the number of unmarked marks."
+  (interactive
+   (list (if current-prefix-arg
+             (read-string "Remove marks: ")) t))
+  (let ((removed 0)
+        (another-line (not (eobp))))
+    (save-excursion
+      (goto-char (point-min))
+      (while another-line
+        (let ((tablist-marker-char ?\s)
+              tablist-marker-face
+              tablist-marked-face)
+          (tablist-put-mark))
+        (setq another-line (tablist-next-line 1))
+        (cl-incf removed)))
+    (when interactive
+      (message "Removed %d marks" removed))
+    removed))
 
 (defun pen-tablist-copy-marked ()
   (interactive)
-  (xc (pps (pen-tablist-get-marked))))
+  (let ((marked (pen-tablist-get-marked)))
+    (if marked
+        (xc (pps marked))
+      (error "Nothing marked for copying"))))
 
 (provide 'pen-tablist)
