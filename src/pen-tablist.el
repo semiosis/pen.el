@@ -751,6 +751,8 @@ decide whether the selected frame can display that Unicode character."
       ;; This move-to-column current-column fixed the issue
       (move-to-column (current-column)))))
 
+;; Hmm. It seems as though the updated tablist-mode fixed some things
+
 (defun tablist-backward-column (n)
   ;; DONE: Make new simpler version
   (interactive "p")
