@@ -877,6 +877,7 @@ decide whether the selected frame can display that Unicode character."
 (define-key tablist-minor-mode-map (kbd "K") 'tablist-do-kill-lines)
 (define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
 (define-key tablist-minor-mode-map (kbd "R") 'tablist-revert)
+(define-key tablist-minor-mode-map (kbd "y") 'pen-tablist-copy-marked)
 
 ;; DONE: Make new simpler version
 (defun tablist-move-to-column (n)
@@ -961,10 +962,25 @@ Return the column number after insertion."
 ;; For some reason marks are not being cleared
 ;; I need to fix up tabulated-list unmarking
 ;; j:tablist-unmark-all-marks
+;; Fixed. Kinda
+
+(defun tablist-get-mark-state ()
+  "Return the mark state of the entry at point."
+  (save-excursion
+    (move-to-column 3)
+    (eq 'dired-marked (get-text-property (point) 'face))
+    ;; (when (looking-at "^\\([^ ]\\)")
+    ;;   (let ((mark (buffer-substring
+    ;;                (match-beginning 1)
+    ;;                (match-end 1))))
+    ;;     (tablist-move-to-major-column)
+    ;;     (list (aref mark 0)
+    ;;           (get-text-property 0 'face mark)
+    ;;           (get-text-property (point) 'face))))
+    ))
 
 (defun dired-current-line-marked-p ()
-  (second
-   (tablist-get-mark-state)))
+  (tablist-get-mark-state))
 
 (defun pen-tablist-get-marked (&optional invisible-p)
   ;; Collect a sexp of all the entries
@@ -988,5 +1004,9 @@ Return the column number after insertion."
                    (forward-line)
                  (tablist-forward-entry))
                row)))))
+
+(defun pen-tablist-copy-marked ()
+  (interactive)
+  (xc (pps (pen-tablist-get-marked))))
 
 (provide 'pen-tablist)

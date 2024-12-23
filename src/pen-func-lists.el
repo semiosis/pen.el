@@ -147,6 +147,7 @@
 (defset gnu-apl-mode-funcs '(gnu-apl))
 
 (defset tabulated-list-mode-funcs '(tablist-export-csv
+                                    pen-tablist-copy-marked
                                     tablist-open-in-fpvd))
 
 (defset subed-mode-funcs '(show-clean-subs))
