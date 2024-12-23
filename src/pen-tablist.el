@@ -844,10 +844,12 @@ decide whether the selected frame can display that Unicode character."
 (define-key subnetscan-tablist-mode-map (kbd "'") 'server-suggest-subnet-scan)
 (define-key ports-tablist-mode-map (kbd "k") 'arp-tablist-nmap-ports)
 
+;; Make some vimlike bindings for tabulated list mode
 (define-key tabulated-list-mode-map (kbd "g g") 'beginning-of-buffer)
 (define-key tabulated-list-mode-map (kbd "G") 'end-of-buffer)
 (define-key tabulated-list-mode-map (kbd "f") 'tablist-forward-column)
 (define-key tabulated-list-mode-map (kbd "0") 'beginning-of-line)
+(define-key tabulated-list-mode-map (kbd "$") 'end-of-line)
 ;; (define-key tabulated-list-mode-map (kbd "w") nil)
 (define-key tabulated-list-mode-map (kbd "b") 'tablist-backward-column)
 
