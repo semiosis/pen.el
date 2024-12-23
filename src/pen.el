@@ -79,8 +79,14 @@
 ;; I want them to be created with the new version.
 (require 'transient)
 ;; (load "/usr/local/share/emacs/29.1.50/lisp/transient.el.gz")
-;; Then load the updated package
-(load "/root/.emacs.d/elpa/transient-20241219.1713/transient.el")
+
+;; TODO Improve this by looking for the most recent version in the elpa directory, and loading that directly after this internal transient require.
+
+;; (ignore-errors ...) in case the package isn't installed. It should be installed
+;; but if this breaks right at the start then I can't install anything, so I can't fix the problem.
+(ignore-errors
+  ;; Then load the updated package
+  (load "/root/.emacs.d/elpa/transient-20241219.1713/transient.el"))
 
 (defun dff-sym (body)
   (intern
