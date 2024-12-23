@@ -765,9 +765,14 @@ decide whether the selected frame can display that Unicode character."
   ;; Therefore, I will only go forwards
 
   (setq n (or n 1))
-  (let ((ccol (tabulated-list-current-column)))
+  (let* ((ccol (tabulated-list-current-column))
+         (ncol (- ccol n))
+         (ncols (length (tablist-column-offsets))))
 
-    (tablist-move-to-column (- ccol n)))
+    (if (eq ncol -1)
+        (setq ncol (- ncols 1)))
+
+    (tablist-move-to-column ncol))
 
   ;; (dotimes (_n n)
   ;;   (let* ((ncols (length (tablist-column-offsets)))
