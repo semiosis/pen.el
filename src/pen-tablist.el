@@ -960,6 +960,8 @@ Return the column number after insertion."
 
 ;; For some reason marks are not being cleared
 ;; I need to fix up tabulated-list unmarking
+;; j:tablist-unmark-all-marks
+
 (defun dired-current-line-marked-p ()
   (second
    (tablist-get-mark-state)))
