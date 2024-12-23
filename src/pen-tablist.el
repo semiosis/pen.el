@@ -358,8 +358,12 @@ a face on."
     (tabulated-list-revert))
   (save-excursion
     (and pos (goto-char pos))
-    (unless (tabulated-list-get-id)
-      (error "No entry at this position"))
+
+    ;; This needs to be removed to work in mx:list-timers
+
+    ;; (unless (tabulated-list-get-id)
+    ;;   (error "No entry at this position"))
+
     (let ((inhibit-read-only t))
       (tabulated-list-put-tag
        (string tablist-marker-char))
