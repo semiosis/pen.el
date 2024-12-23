@@ -2,6 +2,7 @@
 # git config --global merge.conflictStyle diff3 # makes merges easier to read: https://magit.vc/manual/magit/Resolving-Conflicts.html
 # git config core.pager "npx git-split-diffs --color | less -RFX"
 
+# These are for running on the actual shell
 # git config --global --add safe.directory '*' # For the current user and all repositories
 # git config --system --add safe.directory '*' # For all users and all repositories
 

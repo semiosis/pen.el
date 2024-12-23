@@ -1,3 +1,12 @@
+* Now instead I should work more on the supervisory system
+- That should be useful
+
+Keep chipping away at such things.
+Then eventually, I can put together a game.
+But the subcomponents should be made to work fine, and I think having a supervisory system for supervising function calls would be pretty cool.
+
+* I feel as though I need a better graphics/TUI engine for point and click graphics
+
 * I definitely think that the supervisory system will be quite useful
 
 * 

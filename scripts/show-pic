@@ -6,6 +6,11 @@ export TTY
 fp="$1"
 test -f "$fp" || exit 1
 
+if test "$NO_SIXEL" = "y"; then
+    win ie "$fp"
+    exit
+fi
+
 # TODO Use imagemagick to give the image a background
 
 convert_maybe_to_bw() {

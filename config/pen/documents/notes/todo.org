@@ -1,3 +1,89 @@
+* TODO Just completely disable this for the time being
+e:/root/.pen/git/config
+
+I'm very sick of slow git diffs.
+
+* DONE Make it so mx:describe-package doesn't show duplicates
+
+j:describe-package
+
+* TODO Continue to work on
+** TODO supervisor-mode
+- I can work on this one without internet
+** TODO emacs sql database keystore
+** TODO get a csv querying sql interpreter utility
+** TODO learn and automate a TUI database querying tool
+** TODO continue working on a filesystem based on ahungry's dog pics fs
+** DONE Remove unicode borders from ranger
+e:/root/repos/ranger/ranger/ranger/colorschemes/solarized.py
+** TODO Make it so the entire current cell has a background colour
+- Or that tabulated-list-mode has better syntax highlighting (so I can discern the start of the column)
+
+mx:list-timers
+
+** DONE Make sure tablist is working well
+- e:/root/.emacs.d/host/pen.el/src/pen-tablist.el
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  sp +/"if 'outline' in border_types:" "$MYGIT/ranger/ranger/ranger/gui/widgets/view_miller.py"
+#+END_SRC
+
+Automate this patch application:
+
+e:/root/.emacs.d/host/pen.el/config/ranger/patches/asciiborders.diff
+
+** TODO Get j:arp-details from host
+
+** Make a project plan and work towards it
+It might be nice to be able to plan out projects and work towards them, and make reports.
+
+* TODO Add sixel to pen.yaml
+
+* DONE Work out how to configure yazi
+Or make it ascii-only.
+
+* TODO Figure out how to make major/minor mode left and middle -click menus in the modeline
+
+** This is what added the manage minor modes menu item to the left-click menu of minor modes
+
+e:/root/.emacs.d/elpa/manage-minor-mode-20210108.1832/manage-minor-mode.el
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (defadvice popup-menu (before manage-minor-mode-add-for-popup-menu disable)
+    "Advice `popup-menu'."
+    (ad-set-arg 0 (append (ad-get-arg 0)
+                          '((manage-minor-mode
+                             menu-item "Manage minor modes"
+                             (lambda () (interactive) (manage-minor-mode)))))))
+
+  (defadvice minor-mode-menu-from-indicator (around manage-minor-mode-add-mode-line-menu activate)
+    "Advice for `minor-mode-menu-from-indicator'."
+    (ad-enable-advice 'popup-menu 'before 'manage-minor-mode-add-for-popup-menu)
+    (ad-activate 'popup-menu)
+    ad-do-it
+    (ad-disable-advice 'popup-menu 'before 'manage-minor-mode-add-for-popup-menu)
+    (ad-activate 'popup-menu))
+#+END_SRC
+
+** Surely there is a way, though to do it per-mode
+Hmm... only if there is a plugin for it.
+Otherwise, I could add menus in this way that manage-minor-mode does.
+
+* TODO Figure out how to dump the current visidata config
+
+* Reinstall cscope
+It's quite useful from time to time.
+
+* TODO Work on c code navigation
+e:/root/repos/Cubified/colorslide/colorslide.c
+
+* TODO Make this work for C code
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (define-key pen-map (kbd "M-l M-k m") 'pen-helm-imenu)
+#+END_SRC
+
+e:/root/repos/Cubified/colorslide/colorslide.c
+
 * TODO Add a point
 By grace you have been saved through faith and this is not of your own doing, it is the gift of God.
 

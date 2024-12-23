@@ -36,6 +36,7 @@
                      (yaml-mode . yaml-ts-mode)
                      (sh-mode . bash-ts-mode)
                      (rust-mode . rust-ts-mode)
+                     (c-mode . c-ts-mode)
                      ;; (emacs-lisp-mode . elisp-ts-mode)
                      ))
     (add-to-list 'major-mode-remap-alist mapping))

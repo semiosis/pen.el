@@ -217,7 +217,9 @@ Return the output buffer."
                    'tablist-context-window-update t)))))
 
 
-(defun tabulated-list-current-column ()
+(defun tabulated-list-current-column (&optional n)
+  (setq n (or n (current-column)))
+  
   (let* ((columns (tablist-column-offsets))
          (current (1- (length columns))))
     ;; find current column
@@ -436,19 +438,6 @@ If ADVANCE is non-nil, move forward by one line afterwards."
   (tryelse (string-to-number (pen-snc "tmux display-message -p '#{cursor_x}'"))
            (error "Can't get column from tmux")))
 
-(defun tablist-current-column ()
-  "Return the column number at point.
-
-Returns nil, if point is before the first column."
-  (let ((column
-         (1- (cl-position
-              (current-visible-column)
-              (append (tablist-column-offsets)
-                      (list most-positive-fixnum))
-              :test (lambda (column offset) (> offset column))))))
-    (when (>= column 0)
-      column)))
-
 ;; This is correct
 (defun tablist-column-offsets ()
   "Return a list of column positions.
@@ -467,24 +456,6 @@ This is a list of offsets from the beginning of the line."
         (when pad
           (cl-incf cc pad))))
     (nreverse columns)))
-
-;; This needs fixing
-(defun tablist-move-to-column (n)
-  "Move to the N'th list column."
-  (interactive "p")
-  (when (tabulated-list-get-id)
-    (let ((columns (tablist-column-offsets)))
-      (when (or (< n 0)
-                (>= n (length columns)))
-        (error "No such column: %s" n))
-      (beginning-of-line)
-      (message (str (nth n columns)))
-      (forward-char (nth n columns))
-
-      (when (and (plist-get (nthcdr 3 (elt tabulated-list-format n))
-                            :right-align)
-                 (not (= n (1- (length columns)))))
-        (forward-char (1- (car (cdr (elt tabulated-list-format n)))))))))
 
 (defun tablist-skip-invisible-entries (&optional backward prop)
   "Skip invisible entries BACKWARD or forward.
@@ -681,6 +652,181 @@ Return t, if point is now in a visible area."
 
   )
 
+(advice-add 'tabulated-list-print-entry :around #'ignore-errors-around-advice)
+
+;; Get rid of the truncate string ellipsis, since I'm not a huge fan of using unicode
+;; or multi-byte everywhere;
+;; Hmm. I will keep it for now because I solved some issues.
+(require 'mule-util)
+(defun truncate-string-ellipsis ()
+  "Return the string used to indicate truncation.
+Use the value of the variable `truncate-string-ellipsis' when it's non-nil.
+Otherwise, return the Unicode character U+2026 \"HORIZONTAL ELLIPSIS\"
+when it's displayable on the selected frame, or `...'.  This function
+needs to be called on every use of `truncate-string-to-width' to
+decide whether the selected frame can display that Unicode character."
+  (cond
+   (truncate-string-ellipsis)
+   ((char-displayable-p ?…) "…")
+   ("...")))
+
+;; Forward-char is also broken
+(defun tablist-forward-column (n)
+  ;; DONE: Make new simpler version
+  (interactive "p")
+  ;; (unless (tabulated-list-get-id)
+  ;;   (error "No entry on this line"))
+
+  (dotimes (_n n) 
+    (let* ((ncols (length (tablist-column-offsets)))
+           (lcol (- ncols 1))
+           (ccol (tabulated-list-current-column))
+           (ncol (+ ccol 1)))
+
+      ;; (tabulated-list-current-column) is unreliable. after running forward-char, it may report the next column
+      ;; but before it's visually at that column.
+      ;; Even though (point) has increased. But I think (point) increases, but (current-column) does not increase.
+      ;; Therefore, in forward-char-safe, I need to increase the point until current-column increases.
+
+      (cond ((= ccol lcol) (beginning-of-line))
+            ((< ccol lcol) (while (< (tabulated-list-current-column)
+                                     ncol)
+                             ;; (message "%d %d" (point) (tabulated-list-current-column))
+                             (forward-char-safe)
+                             ;; (message "%d %d" (point) (tabulated-list-current-))
+                             ))))))
+
+;; The tablist-current-column is broken
+(defalias 'tablist-current-column 'tabulated-list-current-column)
+
+(defun pen-tablist-go-to-start-of-column ()
+  (interactive)
+  (let ((current-prefix-arg nil))
+    
+    (let ((ccol (tabulated-list-current-column)))
+      (while (and
+              ;; (< 0 (current-column))
+              (= ccol (tabulated-list-current-column))
+              ;; (< pcol
+              ;;    (tabulated-list-current-column))
+              )
+        ;; (message "ccol: %d" ccol)
+        (backward-char))
+      (forward-char))))
+
+;; Both forward-char and backward char suffer from the issue
+
+(defun backward-char-safe (&optional n)
+  (interactive "p")
+  (let ((cpt (point))
+        (ccol (current-column)))
+    ;; I need to run backward-char until the point changes
+    
+    ;; Not even this works in tabulated-list-mode
+    ;; Backwards char doesn't work at the start of a column
+    ;; (goto-char (- (point) 1))
+    (while (and
+            (< 0 cpt)
+            (= cpt (point))
+            (= ccol (current-column)))
+      ;; (message "cpt: %d ccol: %d" cpt ccol)
+      (backward-char)
+      ;; This move-to-column current-column is not required here
+      ;; (move-to-column (current-column))
+      )))
+
+(defun forward-char-safe (&optional n)
+  (interactive "p")
+  (let ((cpt (point))
+        (ccol (current-column)))
+    ;; I need to run forward-char until the point changes
+
+    ;; Sigh... after forward-char runs, it seemsm to revert the point
+
+    (while (and
+            (< cpt (point-max))
+            (= cpt (point))
+            (= ccol (current-column)))
+      (forward-char)
+      ;; This move-to-column current-column fixed the issue
+      (move-to-column (current-column)))))
+
+(defun tablist-backward-column (n)
+  ;; DONE: Make new simpler version
+  (interactive "p")
+  ;; (unless (tabulated-list-get-id)
+  ;;   (error "No entry on this line"))
+
+  ;; Remember that backward-char is almost fundamentally broken
+  ;; inside tabulated-list, and so is goto-char.
+  ;; It has problems when the cursor is at the first char of a column.
+  ;; But I have backward-char-safe now
+
+  ;; Therefore, I will only go forwards
+
+  (setq n (or n 1))
+  (let ((ccol (tabulated-list-current-column)))
+
+    (tablist-move-to-column (- ccol n)))
+
+  ;; (dotimes (_n n)
+  ;;   (let* ((ncols (length (tablist-column-offsets)))
+  ;;          (lcol (- ncols 1))
+  ;;          (ccol (tabulated-list-current-column))
+  ;;          (pcol (- ccol 1)))
+
+  ;;     ;; (message "pcol: %d" pcol)
+  ;;     ;; (message "pcol: %d" ccol)
+
+  ;;     (cond ((= ccol 0)
+  ;;            (tablist-forward-column lcol)
+  ;;            ;; (end-of-line)
+  ;;            )
+  ;;           ((> ccol 0)
+  ;;            (progn
+  ;;              ;; Strangely, backward-char is not working
+  ;;              ;; most of the time
+  ;;              (while (< pcol
+  ;;                        (tabulated-list-current-column))
+  ;;                ;; (message "ccol: %d" (tabulated-list-current-column))
+  ;;                (message "%d" (current-column))
+  ;;                ;; (ekm "C-b")
+  ;;                (call-interactively 'backward-char-safe))
+  ;;              ;; (message "a: %d" (current-column))
+  ;;              ;; (ekm "C-f")
+  ;;              (call-interactively 'forward-char)
+  ;;              ;; (message "b: %d" (current-column))
+  ;;              )))))
+
+  ;; (message "c: %d" (current-column))
+  ;; (call-interactively 'pen-tablist-go-to-start-of-column)
+  )
+
+(defun tablist-next-line (&optional n)
+  ;; Make simpler version
+  (interactive "p")
+  (when (and (< n 0)
+             (save-excursion
+               (end-of-line 0)
+               (tablist-skip-invisible-entries t)
+               (bobp)))
+    (signal 'beginning-of-buffer nil))
+  (when (and (> n 0)
+             (save-excursion
+               (tablist-forward-entry)
+               (eobp)))
+    (signal 'end-of-buffer nil))
+
+  (let ((col (tablist-current-column)))
+    (tablist-forward-entry (or n 1))
+    (if col
+        (tablist-move-to-column col)
+      (tablist-move-to-major-column))))
+
+(defun tablist-previous-line (&optional n)
+  (interactive "p")
+  (tablist-next-line (- (or n 1))))
+
 (define-key tablist-minor-mode-map (kbd "C-s") 'tablist-push-regexp-filter)
 (define-key tabulated-list-mode-map (kbd "w") 'tabulated-list-current-cell-contents)
 (define-key tabulated-list-mode-map (kbd "C-c C-o") 'org-open-at-point)
@@ -698,6 +844,101 @@ Return t, if point is now in a visible area."
 (define-key subnetscan-tablist-mode-map (kbd "'") 'server-suggest-subnet-scan)
 (define-key ports-tablist-mode-map (kbd "k") 'arp-tablist-nmap-ports)
 
-(advice-add 'tabulated-list-print-entry :around #'ignore-errors-around-advice)
+(define-key tabulated-list-mode-map (kbd "g g") 'beginning-of-buffer)
+(define-key tabulated-list-mode-map (kbd "G") 'end-of-buffer)
+(define-key tabulated-list-mode-map (kbd "f") 'tablist-forward-column)
+(define-key tabulated-list-mode-map (kbd "0") 'beginning-of-line)
+;; (define-key tabulated-list-mode-map (kbd "w") nil)
+(define-key tabulated-list-mode-map (kbd "b") 'tablist-backward-column)
+
+(define-key tabulated-list-mode-map (kbd "k") 'previous-line)
+(define-key tabulated-list-mode-map (kbd "p") 'previous-line)
+(define-key tabulated-list-mode-map (kbd "n") 'next-line)
+(define-key tabulated-list-mode-map (kbd "j") 'next-line)
+
+(define-key tablist-minor-mode-map (kbd "k") 'previous-line)
+(define-key tablist-minor-mode-map (kbd "K") 'tablist-do-kill-lines)
+(define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
+(define-key tablist-minor-mode-map (kbd "R") 'tablist-revert)
+
+;; DONE: Make new simpler version
+(defun tablist-move-to-column (n)
+  "Move to the N'th list column."
+  (interactive "p")
+  ;; (when (tabulated-list-get-id)
+  ;;   (let ((columns (tablist-column-offsets)))
+  ;;     (when (or (< n 0)
+  ;;               (>= n (length columns)))
+  ;;       (error "No such column: %s" n))
+  ;;     (beginning-of-line)
+  ;;     ;; (message "tablist-forward-column %d" n)
+  ;;     (tablist-forward-column n)))
+  (let ((columns (tablist-column-offsets)))
+      (when (or (< n 0)
+                (>= n (length columns)))
+        (error "No such column: %s" n))
+      (beginning-of-line)
+      ;; (message "tablist-forward-column %d" n)
+      (tablist-forward-column n)))
+
+;; Add faces for whitespace
+(defun tabulated-list-print-col (n col-desc x)
+  "Insert a specified Tabulated List entry at point.
+N is the column number, COL-DESC is a column descriptor (see
+`tabulated-list-entries'), and X is the column number at point.
+Return the column number after insertion."
+  (let* ((format    (aref tabulated-list-format n))
+	     (name      (nth 0 format))
+	     (width     (nth 1 format))
+	     (props     (nthcdr 3 format))
+	     (pad-right (or (plist-get props :pad-right) 1))
+         (right-align (plist-get props :right-align))
+         (label (cond ((stringp col-desc) col-desc)
+                      ((eq (car col-desc) 'image) " ")
+                      (t (car col-desc))))
+         (label-width (string-width label))
+	     (help-echo (concat (car format) ": " label))
+	     (opoint (point))
+	     (not-last-col (< (1+ n) (length tabulated-list-format)))
+	     (available-space (and not-last-col
+                               (if right-align
+                                   width
+                                 (tabulated-list--available-space width n)))))
+    ;; Truncate labels if necessary (except last column).
+    ;; Don't truncate to `width' if the next column is align-right
+    ;; and has some space left, truncate to `available-space' instead.
+    (when (and not-last-col
+	           (> label-width available-space))
+      (setq label (truncate-string-to-width
+		           label available-space nil nil t t)
+	        label-width available-space))
+    (setq label (bidi-string-mark-left-to-right label))
+    (when (and right-align (> width label-width))
+      (let ((shift (- width label-width)))
+        (insert (propertize (make-string shift ?\s)
+                            'display `(space :align-to ,(+ x shift))
+                            'face 'font-lock-warning-face))
+        (setq width (- width shift))
+        (setq x (+ x shift))))
+    (cond ((stringp col-desc)
+           (insert (if (get-text-property 0 'help-echo label)
+                       label
+                     (propertize label 'help-echo help-echo))))
+          ((eq (car col-desc) 'image)
+           (insert (propertize " "
+                               'display col-desc
+                               'face 'ahs-plugin-bod-face
+                               'help-echo help-echo)))
+          ((apply 'insert-text-button label (cdr col-desc))))
+    (let ((next-x (+ x pad-right width)))
+      ;; No need to append any spaces if this is the last column.
+      (when not-last-col
+        (when (> pad-right 0) (insert (make-string pad-right ?\s)))
+        (insert (propertize
+                 (make-string (- width (min width label-width)) ?\s)
+                 'display `(space :align-to ,next-x)
+                 'face 'ac-candidate-face)))
+      (put-text-property opoint (point) 'tabulated-list-column-name name)
+      next-x)))
 
 (provide 'pen-tablist)

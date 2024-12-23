@@ -1,0 +1,11 @@
+# https://yazi-rs.github.io/docs/configuration/overview/
+
+# Defaults:
+# https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/keymap-default.toml
+# https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-dark.toml
+# https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-light.toml
+# https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/yazi-default.toml
+
+# yazi.toml
+[manager]
+show_hidden = true

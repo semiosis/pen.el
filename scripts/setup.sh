@@ -2597,3 +2597,5 @@ e ia gnugo chess
 pip install psutil
 
 go install github.com/ericfreese/rat@latest
+
+e ia xcscope helm-cscope

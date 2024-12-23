@@ -157,7 +157,8 @@ node_version: "v16.17.0"
 
 lichess_token: "lip_lpcQRjjFZKMSBkUkZlkH"
 
-black_and_white: on
+black_and_white: off
+sixel: off
 
 # default_bible_module: "NASB"
 # default_bible_version: "nasb"

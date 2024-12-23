@@ -884,12 +884,10 @@ ln -sf ~/repos/rangerconfig ~/.config/ranger\
 : 1661569016:0;quicklisp-install smug
 : 1661569182:0;vs "/root/.roswell/lisp/quicklisp/dists/quicklisp/software/closer-mop-20220707-git/closer-lispworks.lisp"
 : 1661570826:0;git los
-: 1661570827:0;git ls
 : 1661570838:0;mru | ead melee
 : 1661570844:0;mru | ead json
 : 1661570846:0;mru | ead hs
 : 1661570848:0;mru | ead main
-: 1661570854:0;mru
 : 1661571135:0;ls | ead weather
 : 1661571200:0;git clone "https://github.com/sbcl/sbcl"
 : 1661571245:0;/usr/bin/git clone "https://github.com/sbcl/sbcl"
@@ -1987,7 +1985,6 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1689376004:0;cd ~/.config/helix
 : 1689376006:0;cd runtime
 : 1689376011:0;tp find-here-path "*base16*"
-: 1689376013:0;cd themes
 : 1689376042:0;cd ~/.config/helix/runtime
 : 1689376056:0;hx todo.org
 : 1689376404:0;/root/.emacs.d/host/pen.el/scripts/hx
@@ -4492,7 +4489,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699701403:0;test -f agenda.org
 : 1699701516:0;cds README.org
 : 1699701858:0;ead -z "agenda view"
-: 1699702865:0;hsqf info
 : 1699706246:0;which -a a
 : 1699706247:0;v a
 : 1699707197:0;tp find-here-path "*alarm*"
@@ -5930,7 +5926,6 @@ find Mp3 -name '*.mp3'\
 : 1700973952:0;tp find-here-path "*street*"
 : 1700996344:0;v word-for-today
 : 1701029640:0;rm 27.11.23.org
-: 1701029714:0;v ~/.gitconfig
 : 1701029731:0;git config --global --add safe.directory '*' \
 git config --system --add safe.directory '*' # For all users and all repositories
 : 1701029745:0;git config --global --add safe.directory '*' # For the current user and all repositories
@@ -7834,7 +7829,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703802492:0;spin -b vim
 : 1703818120:0;Matthew 23:9 | v
 : 1703818131:0;Exodus 20:4 | v
-: 1703851637:0;v pen-F
 : 1703864957:0;I Timothy | v
 : 1703864969:0;tp find-here-path "*I*"
 : 1703864972:0;tp find-here-path "*Timothy*"
@@ -7848,7 +7842,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703884775:0;v hear-journal-entry
 : 1703885957:0;which -a dat
 : 1703886121:0;info Denote
-: 1703886128:0;info date
 : 1703886146:0;info dirname
 : 1703886154:0;which -a info
 : 1703886158:0;/usr/bin/info dirname
@@ -7952,7 +7945,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703964390:0;cron
 : 1703964398:0;get-devotionals
 : 1703968713:0;cd ~/.config/ranger/
-: 1703969078:0;v ~/.config/ranger/rc.conf
 : 1703971121:0;tp find-here-path "*Ephesia*"
 : 1703971126:0;tp find-here-symlink "*Ephesi*"
 : 1703973498:0;echo RLT | canonicalise-bible-module
@@ -7971,12 +7963,10 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703981185:0;git commit -m "31.12.23"
 : 1703981198:0;ls docs
 : 1703981201:0;v docs/known-bugs.org
-: 1703981253:0;which -a ranger
 : 1703981464:0;v ranger
 : 1703981472:0;v /usr/bin/ranger
 : 1703981490:0;v /root/repos/ranger/ranger/ranger.py
 : 1703981647:0;cd ~/repos/ranger
-: 1703981650:0;cd ranger
 : 1703982373:0;j ebdb-mouse-menu
 : 1703982413:0;j pen-lsp-mouse-click
 : 1703983550:0;notmuch
@@ -8162,8 +8152,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704335907:0;sp remember.org
 : 1704336434:0;ln -sf ebible murdock
 : 1704336436:0;v murdock
-: 1704336917:0;fpvd
-: 1704336919:0;fpvd -2
 : 1704337571:0;Isa 53:7-8 | v
 : 1704338280:0;sp /root/.pen/documents/notes/ws/discipleship-group/hear-journal/04.01.24.org
 : 1704339428:0;v Dockerfile
@@ -8852,7 +8840,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706059355:0;/usr/bin/info --index-search=tty
 : 1706059369:0;/usr/bin/info -n '(dir)Top'
 : 1706059385:0;/usr/bin/info -n '(dir)Top' -o /dev/stdout
-: 1706059391:0;v einfo
 : 1706059434:0;info_at_top() {\
  /usr/bin/info -n '(dir)Top' -o /dev/stdout | grep "$1"\
 }\
@@ -8999,7 +8986,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706092003:0;git commit -m "24.01.24"
 : 1706092633:0;ifconfig | grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any" | cat
 : 1706092637:0;ifconfig | grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any" | pavs
-: 1706098078:0;tig
 : 1706098145:0;tig /root/.emacs.d/host/pen.el/config/alias
 : 1706099054:0;man case
 : 1706125971:0;Luke 15 | v
@@ -9695,7 +9681,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708477598:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-8.org
 : 1708478114:0;j commandments-of-Jesus
 : 1708478256:0;ln -sf wo onelined
-: 1708478260:0;tp find-here-symlink "*wo*"
 : 1708478348:0;v iforcat
 : 1708478384:0;Matthew 4:27 | v
 : 1708478446:0;tp find-here-symlink "*udl*"
@@ -11285,7 +11270,6 @@ e ia inheritenv
 : 1711932209:0;tp find-here-path "*bmp*"
 : 1711932212:0;le png
 : 1711932258:0;cd /usr
-: 1711932259:0;tp find-here-path "*png*"
 : 1711932307:0;feh share/doc/texlive-doc/support/ketcindy/samples/s04bezier/dogwalk.png
 : 1711932310:0;feh /usr/share/doc/texlive-doc/support/ketcindy/samples/s04bezier/dogwalk.png
 : 1711932324:0;feh share/doc/asciidoc/doc/images/tiger.png
@@ -11363,7 +11347,6 @@ e ia inheritenv
 : 1711943909:0;convert /usr/share/doc/asciidoc/doc/images/tiger.png -geometry 800x480 -colors 16 sixel:- | cat
 : 1711943929:0;v lsix
 : 1711943930:0;v /root/repos/lsix/lsix
-: 1711943998:0;v show-pic
 : 1711944006:0;show-pic /usr/share/doc/asciidoc/doc/images/tiger.png | cat
 : 1711944039:0;cd /usr/share/doc/asciidoc/doc/images/
 : 1711944165:0;cat /root/dump/tmp/scratch5IvX5l.txt
@@ -11676,8 +11659,6 @@ e ia inheritenv
 : 1712910268:0;mv list-of-chemical-elements.txt list-of-chemical-elements.tsv
 : 1712910271:0;pin list-of-chemical-elements.tsv
 : 1712910791:0;fpvd /root/.pen/documents/notes/ws/chemistry/list-of-chemical-elements.tsv
-: 1712911803:0;fpvd -h
-: 1712912220:0;v fpvd
 : 1712913175:0;dwp
 : 1712913177:0;tp find-here-path "*redire*"
 : 1712913180:0;v pen-redirect
@@ -12919,7 +12900,6 @@ Proverbs 4:14-15
 : 1715056863:0;info Emacs
 : 1715056872:0;info "(emacs)"
 : 1715056879:0;info "(calc)"
-: 1715056886:0;v info
 : 1715056940:0;info calc
 : 1715057680:0;man calc
 : 1715057691:0;cd /usr/local/share/info
@@ -13251,7 +13231,6 @@ agi texstudio
 : 1715838304:0;Titus 2:11-14
 : 1715839100:0;Mark 16:17 | v
 : 1715839115:0;v Mark
-: 1715839129:0;v wo
 : 1715839161:0;ln -sf wo detailed
 : 1715839181:0;detailed Mark 16:17 | v
 : 1715839189:0;detailed Mark 16:17-20 | v
@@ -13318,7 +13297,6 @@ agi texstudio
 : 1716019331:0;I Corinthians 7:13-16
 : 1716020345:0;Ephesians 5:30-33
 : 1716084845:0;II Thessalonians 2:14
-: 1716090516:0;l
 : 1716090845:0;Daniel 7:13â€ƒ³14
 : 1716113772:0;Ezekiel 5:10-12
 : 1716155581:0;Rom 6:14
@@ -14596,7 +14574,6 @@ Luke 5:8-10
 : 1720059494:0;v org
 : 1720059534:0;oci -f -nd in-pen web title "https://www.star.net.nz/the-word-for-today/-gods-word-renews-2024_07_04"
 : 1720059541:0;v web
-: 1720059552:0;v scrape-title-from-html
 : 1720059704:0;v tv
 : 1720059738:0;v /root/dump/tmp/scratchQWxK2D.txt
 : 1720059854:0;cat /root/dump/tmp/scratchQWxK2D.txt | perl -l -0777 -ne 'print $1 if /<meta property="og:title" content="\s*(.*?)\s*">/si'
@@ -15042,7 +15019,6 @@ Luke 5:8-10
 : 1720907785:0;cp -a unlinkify-all relinkify-all
 : 1720907787:0;v relinkify-all
 : 1720907905:0;Galatians 6:1
-: 1720922359:0;git diff
 : 1720922601:0;2 Corinthians 13:14
 : 1720922640:0;Ephesians 5:18
 : 1720922652:0;Colossians 3:16
@@ -15066,7 +15042,6 @@ Luke 5:8-10
 : 1721079904:0;I John 2:15-17]]
 : 1721080031:0;I John 3:21-24
 : 1721107196:0;vc p -f
-: 1721107361:0;v README.org
 : 1721107399:0;git reset --hard HEAD\^
 : 1721108829:0;1 Corinthians 7:30-31
 : 1721108831:0;1 Corinthians 7:30-31 | v
@@ -15483,7 +15458,6 @@ Luke 5:8-10
 : 1722496686:0;Romans 8:11-13
 : 1722496904:0;1 Corinthians 13:12
 : 1722496939:0;1 John 1:9
-: 1722499219:0;v Makefile
 : 1722501184:0;Romans 11:29
 : 1722501210:0;Isaiah 55:11
 : 1722505885:0;Mark 10:35-45
@@ -16688,7 +16662,6 @@ pip install hexabyte\
 : 1725003531:0;tar zxf chd-1.1.tar.gz
 : 1725003537:0;tar ztf chd-1.1.tar.gz
 : 1725003549:0;cd chd-1.1
-: 1725003557:0;make
 : 1725003579:0;cp -a chd ~/.local/bin
 : 1725003603:0;(\
 cd /root\
@@ -17684,7 +17657,6 @@ Proverbs 23:7
 : 1726646806:0;wget "https://www.haskell.org/tutorial/haskell-98-tutorial-sources.tar.gz"
 : 1726646810:0;wget "https://www.haskell.org/tutorial/code.tar.gz"
 : 1726646838:0;cd haskell
-: 1726646841:0;z haskell-98-tutorial.pdf
 : 1726648024:0;Matthew 5:5
 : 1726648060:0;kjv Matthew 5:5
 : 1726648676:0;oci readsubs "https://www.youtube.com/watch?v=eEot02XA49E"
@@ -17929,7 +17901,6 @@ make install\
 : 1726879010:0;export LD_LIBRARY_PATH="/opt/glibc:LD_LIBRARY_PATH"
 : 1726879029:0;tp find-here-path "*libm*"
 : 1726879220:0;bash -c 'pen-tm -f -d -t sph -c %d "zsh"'
-: 1726879270:0;ls -ldt
 : 1726879281:0;ls lib
 : 1726879285:0;ls -ldt lib
 : 1726879312:0;sh
@@ -18081,7 +18052,6 @@ apt -y --fix-broken install
 : 1726896201:0;list-bible-book-titles-els
 : 1726897243:0;cd ~/unisonlanguage/
 : 1726897247:0;cd racket
-: 1726897248:0;ranger
 : 1726897325:0;./ucm
 : 1726897359:0;Rmh
 : 1726897361:0;R
@@ -18320,7 +18290,6 @@ apt -y --fix-broken install
 : 1730431130:0;mkdir ~/.pen/Mail
 : 1730431131:0;gmi pull
 : 1730431149:0;cd downloads
-: 1730431151:0;s
 : 1732566987:0;cat /root/.emacs.d/host/pen.el/scripts/babashka/utils/fzf.bb | fzf.bb
 : 1732612347:0;v links.org
 : 1732612355:0;which -a pwd
@@ -18332,7 +18301,6 @@ apt -y --fix-broken install
 : 1732616767:0;nvc emacs -nw -Q
 : 1732616772:0;nvc -2 emacs -nw -Q
 : 1732616822:0;nvc -2 sp
-: 1732627054:0;popd
 : 1732627167:0;v sp
 : 1732664259:0;raco pkg show
 : 1732664423:0;tm-sps
@@ -18397,7 +18365,6 @@ apt -y --fix-broken install
 : 1732670652:0;v myscript.rkt
 : 1732670674:0;myscript.rkt
 : 1732670694:0;mv myscript.rkt use-racket-language.rkt
-: 1732670701:0;ls -ldt *
 : 1732670709:0;chmod a+x use-racket-language.rkt
 : 1732670739:0;cp -a use-language.rkt myscript.rkt
 : 1732670744:0;cp -a /root/repos/davidelettieri/sample-racket-language/use-language.rkt ./
@@ -18407,7 +18374,6 @@ apt -y --fix-broken install
 : 1732671093:0;cp /root/repos/davidelettieri/sample-racket-language/use-language.rkt ./
 : 1732671850:0;vd
 : 1732671977:0;pen-pvd --help
-: 1732672082:0;v man
 : 1732672143:0;pvd --help | pavs
 : 1732672166:0;which -a pvd
 : 1732672189:0;hsqf pvd
@@ -18461,7 +18427,6 @@ apt -y --fix-broken install
 : 1732677722:0;nvpvd config/pen/cross_references.csv
 : 1732677724:0;"pvd" "-2" "config/pen/cross_references.csv" ; exit "$?"
 : 1732677774:0;nvpvd /root/.emacs.d/host/pen.el/config/pen/cross_references.csv
-: 1732677955:0;cd ~/.sword
 : 1732679653:0;rm scripts/colorls.html
 : 1732679655:0;rm scripts/directories.html
 : 1732679675:0;ssh-host
@@ -18481,7 +18446,6 @@ apt -y --fix-broken install
 : 1732683703:0;find-readme-here
 : 1732684696:0;dired
 : 1732684762:0;df -h
-: 1732685589:0;acpi -b
 : 1732685634:0;racket-scripts
 : 1732685765:0;v you-gave-me.rkt
 : 1732685770:0;you-gave-me.rkt kjdlsaf
@@ -18545,7 +18509,6 @@ apt -y --fix-broken install
 : 1732844251:0;/root/.pen/documents/notes/._ext_freq_cmdlog.vdj
 : 1732844289:0;mv /root/.pen/documents/notes/._ext_freq_cmdlog.vdj ./
 : 1732844295:0;mv ._ext_freq_cmdlog.vdj ext_freq_cmdlog.vdj
-: 1732844333:0;v ext_freq_cmdlog.vdj
 : 1732844343:0;v ._cmdlog.vdj
 : 1732844394:0;ext_freq_cmdlog.vdj
 : 1732844508:0;cp -a ext_freq_cmdlog_out.vdj
@@ -18606,7 +18569,6 @@ apt -y --fix-broken install
 : 1732854557:0;v list-sessions
 : 1732854567:0;ead list-sessions
 : 1732854646:0;tm list-sessions
-: 1732854694:0;man uniq
 : 1732854831:0;pen-tm switch-session
 : 1732855022:0;tmux display -p "#{client_id}"
 : 1732855238:0;man ntmux
@@ -18676,7 +18638,6 @@ fi
 : 1733197137:0;v ~/.nvimrc
 : 1733210468:0;cd ~/.emacs.d/host/pen.el/src
 : 1733210551:0;pen-test-rc -f black_and_white
-: 1733210562:0;echo $?
 : 1733210571:0;if pen-rc-test -f black_and_white\
     tmux-bw\
 fi
@@ -18738,7 +18699,6 @@ fi
 : 1733287163:0;v ./pen-tcp-disable-all-faces-all-workers
 : 1733287176:0;cd ~/.pen
 : 1733287179:0;cd emacs-tcp-server-ports
-: 1733287181:0;sh-yank
 : 1733287263:0;v in-pen
 : 1733287341:0;pen-tcp-disable-all-faces-all-workers
 : 1733287467:0;ln -sf pen-e-tcp-all-workers pen-disable-all-faces-tcp
@@ -18746,7 +18706,6 @@ fi
 : 1733287482:0;ln -sf pen-e-tcp-all-workers pen-enable-all-faces-tcp
 : 1733287503:0;pen-enable-all-faces-tcp
 : 1733287611:0;pen-tm -d sps -nv slmenu
-: 1733287731:0;cd config
 : 1733287732:0;tp find-here-path "*tmux*"
 : 1733287918:0;tmux set status-bg 207
 : 1733287921:0;tmux set status-bg colour207
@@ -18844,7 +18803,6 @@ fi
 : 1733375463:0;vim ~/.pen/pen.yaml
 : 1733375479:0;TERM=screen-2color bash
 : 1733375484:0;export TERM=screen-2color; bash
-: 1733375518:0;v
 : 1733375522:0;tmux
 : 1733375531:0;export TERM
 : 1733375533:0;TMUX= tmux
@@ -18888,7 +18846,6 @@ fi
 : 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377675:0;v setup-term.sh
 : 1733377788:0;TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash
-: 1733380517:0;v glossary.txt
 : 1733381247:0;o
 : 1733381757:0;nem todayfile
 : 1733440555:0;gipe.bb
@@ -18923,8 +18880,6 @@ fi
 : 1734494698:0;grep -HnoR PENELD . | v
 : 1734494725:0;echo $PENEL_DIR
 : 1734494780:0;grep -HnoRP "host.*PENELD" . | v
-: 1734494805:0;v run.sh
-: 1734494941:0;cd scripts
 : 1734494944:0;v newframe.sh
 : 1734496289:0;tpop-tetris & disown; exit
 : 1734496296:0;tpop-tetris
@@ -18935,7 +18890,6 @@ fi
 : 1734497446:0;pen-emacsclient '-s' 'DEFAULT' '-a' '' '-t'
 : 1734497465:0;/usr/local/bin/emacsclient '-s' 'DEFAULT' '-a' '' '-t'
 : 1734497547:0;env
-: 1734497583:0;emacs -nw -Q
 : 1734497586:0;emacs -nw
 : 1734497826:0;v pen.el
 : 1734498226:0;grep -HnoRP "defun str" . | v
@@ -18944,15 +18898,10 @@ fi
 : 1734498250:0;grep -HnoRP "str\\(" . | v
 : 1734498254:0;grep -HnoRP "str\(" . | v
 : 1734498262:0;grep -HnoRP "defun str \\(" . | v
-: 1734498298:0;emacs -nw --debug-init
 : 1734498330:0;grep -HnoRP "defmacro try \\(" . | v
 : 1734498616:0;cd src
 : 1734498625:0;v pen-org.el
-: 1734498935:0;v v
 : 1734499035:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
-: 1734499211:0;v ~/.pen/pen.yaml
-: 1734499274:0;tp find-here-path "*.png*"
-: 1734499347:0;pin
 : 1734499354:0;v pen-bw
 : 1734499427:0;bible-random-verse
 : 1734501520:0;penq
@@ -18965,25 +18914,249 @@ fi
 : 1734558395:0;pen-tm -d sps -nv vim
 : 1734558496:0;v pen-tm
 : 1734560078:0;v orgtbl-to-tsv
-: 1734560682:0;git status
 : 1734560887:0;cd emacs-scripts
-: 1734560888:0;cd ..
 : 1734560905:0;mcd emacs-remote-control
 : 1734560915:0;tp find-here-path "*tcp*"
 : 1734560920:0;v pen-e
-: 1734560925:0;pwd
 : 1734560927:0;ead e-tcp
 : 1734560950:0;v update-emacs-table
-: 1734561304:0;pe
 : 1734561315:0;update-emacs-table
 : 1734561700:0;update-emacs-table -D DEFAULT "/root/.pen/documents/notes/todo.org" 54 "/tmp/babel-g3fc6n/org-table4UEpT4.tsv"
 : 1734563430:0;v ~/.visidatarc
 : 1734565038:0;cp -a pen-prompt-tablist.el pen-supervisor-tablist.el
 : 1734565142:0;mcd supervisor
-: 1734565142:0;ls
 : 1734565447:0;v ./supervisor-details
-: 1734565448:0;sh-general
 : 1734565453:0;v supervisor-details
 : 1734565784:0;supervisor-details
 : 1734565814:0;supervisor-details | v
 : 1734565994:0;which -a si
+: 1734846060:0;cat | which welcome-to-rat
+: 1734846080:0;which welcome-to-rat | xargs cat
+: 1734846086:0;which welcome-to-rat | xargs cat | scrape-org-links
+: 1734846092:0;which welcome-to-rat | xargs cat | scrape-org-links | v
+: 1734846102:0;which welcome-to-rat | xargs cat | scrape-org-links e | v
+: 1734846106:0;v scrape-title-from-html
+: 1734846110:0;v scrape-org-links
+: 1734846183:0;cat | which welcome-to-rat | sed -n "/\\<e:/p"
+: 1734846194:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p"
+: 1734846228:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape "\\be:[^ ]+"
+: 1734846353:0;v wele
+: 1734846359:0;v welcome-to-rat
+: 1734846380:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links
+: 1734846741:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links -k e
+: 1734846764:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links e
+: 1734846766:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links -s e
+: 1734846771:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links -s e | scrape-files-fast
+: 1734846774:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links -s e | scrape-files-fast.sh
+: 1734859713:0;gcc -g "./colorslide.c" -lm -o "colorslide"; ./colorslide
+: 1734859756:0;eog demo.gif
+: 1734859920:0;acpi -b
+: 1734861172:0;make
+: 1734861174:0;./colorslide
+: 1734861210:0;cd ~/.sword
+: 1734861307:0;echo -e "\x1b[48;2;100;100;200m"
+: 1734861312:0;echo -e "\x1b[48;2;100;100;200mdlksjflkdsjflkjdskl"
+: 1734861336:0;echo -e "\x1b[48;2;99;99;29mdslkfjdslkfjslkds"
+: 1734861480:0;tp find-here-symlink "**"
+: 1734861519:0;./demo_basic
+: 1734861662:0;./demo_drag
+: 1734861678:0;./demo_bounce
+: 1734861688:0;v demo_bounce.c
+: 1734861825:0;v man
+: 1734861832:0;man realpath
+: 1734861846:0;info -q realpath
+: 1734861848:0;echo $?
+: 1734861892:0;info "(coreutils)realpath'
+: 1734861893:0;info "(coreutils)realpath"
+: 1734861934:0;/usr/bin/info realpath
+: 1734861942:0;v info
+: 1734861967:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath
+: 1734862087:0;v einfo
+: 1734862161:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | v
+: 1734862234:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed "s/^File: \\([^.]\\+\\)info,  Node: \\([^,]\\+\\).*/(\\1)\\2/"
+: 1734862243:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]\\+\\)info,  Node: \\([^,]\\+\\).*/(\\1)\\2/p"
+: 1734862254:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]\\+\\)info,\\s\\+Node: \\([^,]\\+\\).*/(\\1)\\2/p"
+: 1734862265:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]\\+\\)info,\\s\\+//p"
+: 1734862293:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: //"
+: 1734862296:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: //p"
+: 1734862309:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]\\+\\)info//p"
+: 1734862328:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^i]\\+\\)info//p"
+: 1734862332:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^i]\\+\\)nfo//p"
+: 1734862338:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]*\\)info//p"
+: 1734862345:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]*\\)//p"
+: 1734862358:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | sed -n "s/^File: \\([^.]\\+\\)\\.info,\\s\\+Node: \\([^,]\\+\\).*/(\\1)\\2/p"
+: 1734862398:0;info realpath
+: 1734862407:0;hsqf info
+: 1734862413:0;/usr/bin/info Denote
+: 1734862415:0;/usr/bin/info date
+: 1734862438:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout date | v
+: 1734862444:0;info date
+: 1734862489:0;mru
+: 1734862554:0;man sum
+: 1734862616:0;v v
+: 1734862693:0;tig
+: 1734862703:0;rat
+: 1734862776:0;v ~/.config/rat/ratrc
+: 1734862783:0;rat --help
+: 1734862786:0;rat -h
+: 1734862790:0;which -a rat
+: 1734862794:0;/root/go/bin/rat -h
+: 1734862815:0;emacs -nw --debug-init
+: 1734862819:0;emacs -nw -Q
+: 1734862828:0;d
+: 1734862855:0;v fpvd
+: 1734862865:0;cd /usr/local/lib/python3.8/site-packages/visidata/themes/
+: 1734862870:0;v __init__.py
+: 1734863014:0;cd /usr/local/lib/python3.8/site-packages/visidata/
+: 1734863018:0;v theme.py
+: 1734863026:0;cd themes
+: 1734863057:0;ead color_note_row
+: 1734863155:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_.*'"
+: 1734863161:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'"
+: 1734863175:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'" | sed -e "s/^'//"
+: 1734863186:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e s/\'$//"
+: 1734863189:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/\'$//"
+: 1734863208:0;mcd visidata
+: 1734863215:0;v get-theme-options.org
+: 1734863230:0;v get-theme-options
+: 1734863268:0;cat /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/'$//"
+: 1734863285:0;cat /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py | scrape "\\bcolor_[^']*="
+: 1734863338:0;visidata-get-theme-options | sort | uniq -u
+: 1734863395:0;v visidata-get-theme-options
+: 1734863402:0;cat /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py | scrape "\\bcolor_[^']*=" | sed "s/=$//"
+: 1734863408:0;cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/'$//"
+: 1734863446:0;cat /usr/local/lib/python3.8/site-packages/visidata/*.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/'$//"
+: 1734863465:0;man uniq
+: 1734863514:0;fpvd -h
+: 1734863537:0;visidata -2
+: 1734863628:0;v visidata
+: 1734863850:0;cd visidata-scripts/
+: 1734863851:0;s
+: 1734863852:0;l
+: 1734863863:0;v ext_freq_cmdlog.vdj
+: 1734864342:0;v global_options_cmdlog-test.vdj
+: 1734864456:0;v visidata-colors.tsv
+: 1734864575:0;rm visidata-colors.tsv
+: 1734864623:0;visidata-get-theme-colors | cut -d '\t' -f 1
+: 1734864641:0;visidata-get-theme-colors | awk "{print \$1}"
+: 1734864773:0;shx visidata-get-theme-options
+: 1734864805:0;visidata-get-theme-options
+: 1734864886:0;tp find-here-path "*get-ht*"
+: 1734864888:0;tp find-here-path "*get-the*"
+: 1734864904:0;./visidata-get-theme-options
+: 1734864910:0;./visidata-get-theme-colors
+: 1734865246:0;ls -ldt syntax.vim
+: 1734865274:0;v asciimono.py
+: 1734865301:0;cd visidata
+: 1734865313:0;mcd themes
+: 1734865315:0;cp -a /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py ./
+: 1734865319:0;xc -P asciimono.py
+: 1734865374:0;man cp
+: 1734865595:0;man yazi
+: 1734865601:0;yazi --help
+: 1734866694:0;fpvd -2
+: 1734866706:0;pen-python /usr/local/bin/vd --theme=asciimono
+: 1734866730:0;v ./visidata-asciimono-color
+: 1734866743:0;visidata-asciimono-color
+: 1734868126:0;mcd yazi
+: 1734868130:0;v yazi.toml
+: 1734868647:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-light.toml"
+: 1734868651:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/yazi-default.toml"
+: 1734868655:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/keymap-default.toml"
+: 1734868660:0;sh-yank
+: 1734868663:0;v run.sh
+: 1734868721:0;if test -d /root/.emacs.d/host/pen.el/config/yazi; then\
+ rm -rf ~/.config/yazi\
+ ln -sf $HOME/.emacs.d/host/pen.el/config/yazi ~/.config/yazi\
+fi
+: 1734868954:0;cd ~/.config/yazi
+: 1734868959:0;rm theme-dark.toml
+: 1734868963:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-dark.toml"
+: 1734869121:0;v theme.toml
+: 1734869372:0;tp find-here-path "*png*"
+: 1734869393:0;cd config/pen/documents/
+: 1734869395:0;yzi
+: 1734869462:0;tp find-here-path "*results*"
+: 1734869467:0;cd results
+: 1734869469:0;tp find-here-path "*p.png*"
+: 1734869471:0;tp find-here-path "*.png*"
+: 1734869477:0;cd results_05.11.22__1667618282_0fa7f6b3-2264-44dc-813f-58a3a3fcc4b0_8pO57/images/
+: 1734869500:0;popd
+: 1734869506:0;cd results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/
+: 1734869509:0;feh result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png
+: 1734869519:0;show-pic "/root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png"
+: 1734869545:0;fpvd
+: 1734869573:0;cd visidata-scripts
+: 1734869585:0;v visidata-get-theme-colors
+: 1734869612:0;v get_theme_colours.vdj
+: 1734869764:0;rm -f /tmp/visidata-colors.tsv
+: 1734869768:0;get_theme_colours.vdj
+: 1734869774:0;cat /tmp/visidata-colors.tsv
+: 1734869777:0;visidata-get-theme-colors
+: 1734869857:0;v wo
+: 1734869887:0;v show-pic
+: 1734869923:0;tp find-here-symlink "*wo*"
+: 1734869927:0;ln -sf wo nosix
+: 1734869934:0;win ie "/root/notes/countdown_logo_email.jpg"
+: 1734869959:0;show-pic "/root/notes/countdown_logo_email.jpg"
+: 1734869962:0;nosix show-pic "/root/notes/countdown_logo_email.jpg"
+: 1734869976:0;lsix
+: 1734870025:0;v "/root/.pen/documents/notes/clipboard.txt"
+: 1734870036:0;nosix show-pic "/root/.pen/documents/notes/countdown_logo_email.jpg"
+: 1734870051:0;v glossary.txt
+: 1734906492:0;ls -ldt
+: 1734906494:0;ls -ldt *
+: 1734906515:0;v ~/.pen/pen.yaml
+: 1734906521:0;v ~/.config/yazi/theme.toml
+: 1734908230:0;cd scripts
+: 1734908233:0;v pen-F
+: 1734908242:0;v yttranscriptcom
+: 1734908248:0;v pen-editxclip
+: 1734908257:0;v README.org
+: 1734909003:0;v ~/.config/ranger/rc.conf
+: 1734909068:0;file options.pyo
+: 1734909078:0;v apps.py
+: 1734909097:0;v rc.conf
+: 1734909131:0;l solarized
+: 1734909173:0;razi
+: 1734909226:0;grep -HnoRP "âƒ´‚" . | v
+: 1734909242:0;grep -HnoRP "border" . | v
+: 1734909247:0;grep -HnRP "border" . | v
+: 1734909307:0;which -a ranger
+: 1734909330:0;ranger --version
+: 1734909344:0;cd ..
+: 1734909407:0;sp ~/.config/ranger/rc.conf
+: 1734909799:0;git diff
+: 1734909865:0;cd config
+: 1734909867:0;cd ranger
+: 1734909874:0;mcd patches
+: 1734909886:0;mv /tmp/tf_templaCqaxu.txt asciiborders.diff
+: 1734909888:0;v asciiborders.diff
+: 1734909935:0;ranger
+: 1734909953:0;z haskell-98-tutorial.pdf
+: 1734913060:0;git ls
+: 1734913177:0;v ~/.gitconfig
+: 1734913202:0;sh-general
+: 1734913205:0;git status
+: 1734913235:0;git config --global --add safe.directory '*'
+: 1734913266:0;git config --system --add safe.directory '*'
+: 1734922166:0;pin
+: 1734925113:0;v arp-details
+: 1734925261:0;yazi
+: 1734925361:0;tp find-here-path "*.db*"
+: 1734925774:0;pe
+: 1734925927:0;v
+: 1734926425:0;pwd
+: 1734926426:0;ls
+: 1734926430:0;v Makefile
+: 1734926922:0;ls
+: 1734926923:0;v ~/.gitconfig
+: 1734926933:0;sh-general
+: 1734926935:0;ls
+: 1734926936:0;git status
+: 1734926937:0;sh-general
+: 1734926938:0;ls
+: 1734926940:0;git status
+: 1734926943:0;v ~/.gitconfig
+: 1734926952:0;git status
+: 1734926977:0;git add -A .

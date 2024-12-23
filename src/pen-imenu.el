@@ -94,6 +94,13 @@
   (setq imenu-generic-expression bible-imenu-generic-expression))
 (add-hook 'bible-mode-hook 'bible-imenu-configure)
 
+;; C already has one
+;; (defun c-imenu-configure ()
+;;   (interactive)
+;;   (defset c-imenu-generic-expression
+;;           `(    ("func" "\\(.*(.*\\)" 1)))
+;;   (setq imenu-generic-expression c-imenu-generic-expression))
+
 (ignore-errors
   ;; Wrong number of arguments: (lambda (bufname) (not (eq nil (get-buffer bufname)))), 3
   ;; this is buggy:

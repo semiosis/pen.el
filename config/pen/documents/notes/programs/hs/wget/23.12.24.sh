@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/yazi-default.toml" "-q" "-O" "/tmp/v5nDT5u/18.toml" "#" "<==" "vim"
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-dark.toml" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-light.toml" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/yazi-default.toml" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/keymap-default.toml" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/config/yazi;  "wget" "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/theme-dark.toml" "#" "<==" "zsh"

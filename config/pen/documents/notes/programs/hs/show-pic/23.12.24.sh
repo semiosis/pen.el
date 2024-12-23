@@ -1,0 +1,6 @@
+cd /root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images;  "show-pic" "/root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png" "#" "<==" "zsh"
+cd /root/notes;  "show-pic" "/root/notes/countdown_logo_email.jpg" "#" "<==" "zsh"
+cd /root/notes;  "show-pic" "/root/notes/countdown_logo_email.jpg" "#" "<==" "zsh"
+cd /root/notes;  "show-pic" "/root/notes/countdown_logo_email.jpg" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "show-pic" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "withopts"

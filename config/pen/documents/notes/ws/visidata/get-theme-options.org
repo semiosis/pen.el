@@ -1,0 +1,1 @@
+cat /usr/local/lib/python3.8/site-packages/visidata/interface.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/'$//"

@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/scripts/visidata-scripts;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.pen/documents/notes;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.pen/documents/notes;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.pen/documents/notes;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.pen/documents/notes;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.emacs.d/host/pen.el/scripts/visidata-scripts;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"
+cd /root/.emacs.d/host/pen.el/scripts/visidata-scripts;  "pvd" "-p" "/root/.emacs.d/host/pen.el/scripts/visidata-scripts/get_theme_colours.vdj" "#" "<==" "pvd"

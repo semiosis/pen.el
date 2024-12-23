@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# This should get unaccounted for options
+# cat /usr/local/lib/python3.8/site-packages/visidata/*.py | scrape "'color_[^']*'" | sed -e "s/^'//" -e "s/'$//"
+{
+visidata-get-theme-colors
+cat /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py | scrape "\\bcolor_[^']*=" | sed "s/=$//"
+} | sort | uniq -u | pavs
+
+# Actually, I should just get all the theme colours by scripting visidata!
+# Shift-O to show the options
+
+#    # My additions
+#    color_aggregator='yellow',
+#    # This is one:
+#    #  color_clickable='yellow',
+#    color_graph_refline='yellow',
+#    color_keys='yellow',
+#    # yep - this is one:
+#    #  color_longname_guide='yellow',
+#    color_longname_status='yellow',

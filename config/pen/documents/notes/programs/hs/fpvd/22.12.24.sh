@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "fpvd" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-h" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-2" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "-2" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "#" "<==" "fpvd"
+cd /root/.pen/documents/notes;  "fpvd" "#" "<==" "fpvd"

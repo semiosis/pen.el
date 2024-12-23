@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+rm -f /tmp/visidata-colors.tsv
+unbuffer get_theme_colours.vdj &>/dev/null
+cat /tmp/visidata-colors.tsv | sed 1d | awk "{print \$1}" | pavs

@@ -1,0 +1,3 @@
+#!vd -p
+{"sheet": "get_theme_colours_vd", "col": "", "row": "", "longname": "options-global", "input": "", "keystrokes": "O", "comment": null}
+{"sheet": "global_options", "col": "option", "row": "", "longname": "select-col-regex", "input": {"regex": "^color_", "flags": "I"}, "keystrokes": "|", "comment": "select rows matching regex in current column"}

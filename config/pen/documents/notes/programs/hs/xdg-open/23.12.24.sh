@@ -1,0 +1,6 @@
+cd /root/repos;  "xdg-open" "/root/repos/sh-source" "#" "<==" "sh"
+cd /root/repos;  "xdg-open" "/root/repos" "#" "<==" "sh"
+cd /root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images;  "xdg-open" "/root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png" "#" "<==" "sh"
+cd /root/notes;  "xdg-open" "/root/notes/countdown_logo_email.jpg" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/clipboard.txt" "#" "<==" "sh"
+cd /root/.pen/documents/notes;  "xdg-open" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "sh"

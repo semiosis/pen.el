@@ -23,6 +23,11 @@ info_at_top() {
     /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed -n 's/^\* '$1': \([^.]\+\)\..*/\1/p' 2>/dev/null
 }
 
+get_full_path() {
+    query="$1"
+    ocif timeout 0.2 /usr/bin/info -o /dev/stdout "$query" | sed -n "s/^File: \\([^.]\\+\\)\\.info,\\s\\+Node: \\([^,]\\+\\).*/(\\1)\\2/p"
+}
+
 sn="$(basename -- "$0")"
 
 # . $PENEL_DIR/scripts/utils.sh
@@ -77,7 +82,8 @@ else
     if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
         query="$(info_at_top "$query")"
     fi
-    einfo "$query"
+    # (info "(coreutils)realpath invocation")
+    einfo "$(get_full_path "$query")"
 fi
 # if test -f "$bin"; then
 #     nvc "$bin" "$query"

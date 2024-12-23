@@ -1,9 +1,41 @@
 #!/bin/bash
 export TTY
 
+keep_full_link=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -k) {
+        keep_full_link=y
+        shift
+    }
+    ;;
+
+    -s|-nk) {
+        keep_full_link=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 type="$@"
 
-input_fp="$(cat | tf txt)"
+maybe_strip_link() {
+    if test "$keep_full_link" = "y"; then
+        cat
+    else
+        sed -e 's=^\[\[==' -e 's=\]\].*=='
+    fi
+}
 
-cat "$input_fp" | sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
-cat "$input_fp" | sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
+if test -n "$type"; then
+    input_fp="$(cat | tf txt)"
+
+    {
+    cat "$input_fp" | sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]" | maybe_strip_link
+    cat "$input_fp" | sed -n "/\\<e:/p" | scrape "\\be:[^ \\]]+"
+    } | uniqnosort | sed 's/^'$type'://'
+else
+    sed "s/\\[\\[/\\n\\[\\[/g" | scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]" | maybe_strip_link
+fi

@@ -4,3 +4,13 @@
 {"type": "longname", "input": "theme-default", "n": 1}
 {"type": "longname", "input": "theme-input", "n": 1}
 {"type": "longname", "input": "open-row", "n": 2}
+{"type": "longname", "input": "theme-default", "n": 2}
+{"type": "longname", "input": "theme-input", "n": 2}
+{"type": "longname", "input": "theme-default", "n": 3}
+{"type": "longname", "input": "theme-input", "n": 3}
+{"type": "regex", "input": "^color_", "n": 1}
+{"type": "filename", "input": "global_options_cmdlog-test.vdj", "n": 1}
+{"type": "filename", "input": "visidata-colors.tsv", "n": 1}
+{"type": "filename", "input": "/tmp/visidata-colors.tsv", "n": 1}
+{"type": null, "input": 10, "n": 1}
+{"type": "regex", "input": "describe", "n": 1}

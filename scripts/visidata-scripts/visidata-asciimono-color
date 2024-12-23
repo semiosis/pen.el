@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+pen-python /usr/local/bin/vd --theme=asciimono "$@"

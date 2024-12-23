@@ -163,6 +163,16 @@ fi
 if test -d /root/.emacs.d/host/pen.el/config/visidata; then
     rm -rf ~/.visidata
     ln -sf /root/.emacs.d/host/pen.el/config/visidata ~/.visidata
+
+    if test -f /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py && \
+        test -f /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py; then
+        cp -af /root/.emacs.d/host/pen.el/config/visidata/themes/asciimono.py /usr/local/lib/python3.8/site-packages/visidata/themes/asciimono.py
+    fi
+fi
+
+if test -d /root/.emacs.d/host/pen.el/config/yazi; then
+    rm -rf ~/.config/yazi
+    ln -sf $HOME/.emacs.d/host/pen.el/config/yazi ~/.config/yazi
 fi
 
 if test -d /root/.emacs.d/host/pen.el/config/vim-bundles; then

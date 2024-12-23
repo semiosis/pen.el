@@ -10,6 +10,9 @@ mode default
   # annotate with the class "file".
   annotate match file -- ls -a1p | grep -v /
 
+  # This means that org links are editable inside of rat
+  annotate match file -- which welcome-to-rat | xargs cat | sed -n "/\\<e:/p" | scrape-org-links -s e | scrape-files-fast.sh
+
   # When the cursor is on a line with an annotation of class "file" and
   # the `enter` key is pressed, run `cat` with the value of the
   # annotation (the filename) and display the output in a new pager with

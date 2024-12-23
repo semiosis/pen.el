@@ -113,4 +113,34 @@ The description is read from the installed package files."
   (interactive)
   (package-autoremove))
 
+(defun describe-package (package)
+  "Display the full documentation of PACKAGE (a symbol)."
+  (interactive
+   (let* ((guess (or (function-called-at-point)
+                     (symbol-at-point))))
+     (require 'finder-inf nil t)
+     ;; Load the package list if necessary (but don't activate them).
+     (unless package--initialized
+       (package-initialize t))
+     (let ((packages (append (mapcar #'car package-alist)
+                             (mapcar #'car package-archive-contents)
+                             (mapcar #'car package--builtins))))
+       (unless (memq guess packages)
+         (setq guess nil))
+       (setq packages (mapcar #'symbol-name packages))
+       (let ((val
+              (completing-read (format-prompt "Describe package" guess)
+                               ;; (tv (-uniq packages) :pp 'list2str)
+                               (-uniq packages)
+                               nil t nil nil (when guess
+                                               (symbol-name guess)))))
+         (list (and (> (length val) 0) (intern val)))))))
+  (if (not (or (package-desc-p package) (and package (symbolp package))))
+      (message "No package specified")
+    (help-setup-xref (list #'describe-package package)
+                     (called-interactively-p 'interactive))
+    (with-help-window (help-buffer)
+      (with-current-buffer standard-output
+        (describe-package-1 package)))))
+
 (provide 'pen-packages)

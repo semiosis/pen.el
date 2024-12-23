@@ -1,0 +1,6 @@
+#!/usr/bin/env -S pvd -p
+{"longname": "options-global", "keystrokes": "O"}
+{"sheet": "global_options", "col": "option", "row": "", "longname": "select-col-regex", "input": {"regex": "^color_", "flags": "I"}, "keystrokes": "|", "comment": "select rows matching regex in current column"}
+{"longname": "dup-selected", "keystrokes": "\""}
+{"longname": "save-sheet", "input": "/tmp/visidata-colors.tsv"}
+{"longname": "quit-all"}

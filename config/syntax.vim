@@ -889,6 +889,7 @@ fun! GeneralSyntax()
         syntax match yellow "\c\<yellow\>"
         hi purple cterm=NONE ctermfg=165 ctermbg=093
         syntax match purple "\c\<purple\>"
+        syntax match purple "\c\<magenta\>"
         hi orange cterm=NONE ctermfg=216 ctermbg=166
         syntax match orange "\c\<orange\>"
         " teal is the dark cyan

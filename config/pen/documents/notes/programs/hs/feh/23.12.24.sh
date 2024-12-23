@@ -1,0 +1,2 @@
+cd /root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images;  "feh" "result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "feh" "-B" "black" "/root/.pen/documents/notes/countdown_logo_email.jpg" "#" "<==" "run.sh"
