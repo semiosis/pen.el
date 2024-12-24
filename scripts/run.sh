@@ -20,7 +20,14 @@ fi
 export PATH=$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host:$PATH
 export PATH=$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts:$PATH
 export PATH=$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container:$PATH
-export PATH="$(find "$SCRIPTS" -maxdepth 4 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//"):$PATH"
+
+
+# Can PATH contain environment variables?
+# Make it shorter:
+test -h /tmp/pen-scripts || ln -sf "$SCRIPTS" /tmp/pen-scripts
+export PATH="$(find -L /tmp/pen-scripts -maxdepth 4 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//"):$PATH"
+export PATH="$(printf -- "%s" "$PATH" | sed "s/:/\\n/g" | awk '!seen[$0] {print} {++seen[$0]}' | sed -z "s/\\n/:/g" | sed "s/:\$//")"
+
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
 export PATH="$PATH:/root/repos/go-ethereum/build/bin"
