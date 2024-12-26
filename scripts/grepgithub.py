@@ -166,6 +166,7 @@ if __name__ == '__main__':
     parser.add_argument('-c', dest='case_sensitive', action='store_true', help='Case sensitive search')
     parser.add_argument('-r', dest='use_regex', action='store_true', help='Use regex query. Cannot be used with -w')
     parser.add_argument('-w', dest='whole_words', action='store_true', help='Search whole words. Cannot be used with -r')
+    parser.add_argument('-n', dest='n', help='N queries')
     parser.add_argument('-frepo', dest='repo_filter', help='Filter repository')
     parser.add_argument('-fpath', dest='path_filter', help='Filter path')
     parser.add_argument('-flang', dest='lang_filter', help='Filter language (eg. Python,C,Java). Use comma for multiple values')
@@ -188,8 +189,12 @@ if __name__ == '__main__':
         out_stream.write(BANNER)
         out_stream.write("> Fetching 10/?")
     next_page, hits, count = fetch_grep_app(page=1, args=args)
-    while next_page and next_page < 101:    # Does not paginate after 100
+    i=0
+    # print(args.n)
+    # quit()
+    while next_page and next_page < 101 and ( not args.n or i < int(args.n) ):    # Does not paginate after 100
         time.sleep(1)
+        i+=1
         if not args.json_output:
             out_stream.write("> Fetching {}/{}", 10*next_page, count)
         next_page, page_hits, _ = fetch_grep_app(page=next_page, args=args)
