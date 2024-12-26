@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# cd /root/repos/aaronjohnsabu1999/bible-databases/DB;  "litecli" "/root/repos/aaronjohnsabu1999/bible-databases/DB/BSBBible_Database.db"
+
+AKJVBible_Database.db
+AMPBible_Database.db
+ASVBible_Database.db
+BBEBible_Database.db
+BSBBible_Database.db
+DBYBible_Database.db
+ESVBible_Database.db
+GENBible_Database.db
+KJVBible_Database.db
+MSGBible_Database.db
+NASBBible_Database.db
+UKJVBible_Database.db
+WBTBible_Database.db
+WEBBible_Database.db
+YLTBible_Database.db
