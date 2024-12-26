@@ -4,7 +4,9 @@
 #
 #   rat -m vim.help -c "cat $(ocif -otf sout vimhelp)"
 
-# How to get the INPUT to filter it to generate tags?
+# How to get the urrent buffer contents to filter it to generate tags?
+# I don't think it's simply a matter of capturing stdin.
+# I need to capture it into a variable or something.
 # ocif sh -c 'vimhelp | scrape "\\|[a-zA-Z][a-zA-Z:._0-9-]+\\|" | uniqnosort | sed "s/^|\\(.*\\)|$/\\1/"'
 # I still don't know how to get the INPUT after it's already started.
 
