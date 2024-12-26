@@ -7,6 +7,7 @@ fun! NumberSyntax()
     if longest_line_length > 200
         syntax off
         let g:syntax_on = 0
+        echom "longest_line_length > 200. Not enabling NumberSyntax"
         return 0
     endif
 
@@ -89,6 +90,7 @@ fun! GeneralSyntax()
     if longest_line_length > 200
         syntax off
         let g:syntax_on = 0
+        echom "longest_line_length > 200. Not enabling GeneralSyntax"
         return 0
     endif
 
