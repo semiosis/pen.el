@@ -575,124 +575,133 @@ endf
 "hi lCursor        gui=NONE   ctermfg=040   ctermbg=240
 "hi CursorIM       gui=NONE   ctermfg=040   ctermbg=240
 
-" Remember I also need to change this in syntax.vim
-fun! NumberSyntax()
-    " real low priority
-    syntax match tests '[a-z]\+\([fb]g\)\@='
-    syntax match tests '\([fb]g\)\@<=[a-z]\+'
+" " Remember I also need to change this in syntax.vim.
+" " Actually, disable it. I don't want to double up the code.
+" fun! NumberSyntax()
+"     " real low priority
+"     syntax match tests '[a-z]\+\([fb]g\)\@='
+"     syntax match tests '\([fb]g\)\@<=[a-z]\+'
+" 
+"     " underscore
+"     "syntax match morediscrete "[a-z]\@<=_[a-z]\@="
+"     "syntax match morediscrete "[A-Z]\@<=_[A-Z]\@="
+"     "syntax match morediscrete "\c[0-9a-z ]\@<=_\+[0-9a-z]\@="
+"     " By default it should be discrete
+"     syntax match morediscrete "_"
+" 
+"     " keep numbers after letters (for units [data and measurements] and
+"     " ordinal numbers)
+"     " keep letters before numbers (it's also extremely useful for, for
+"     " example dates like this 20160818054330UTC. better on than off for
+"     " sure)
+"     hi one cterm=NONE ctermfg=033 ctermbg=236
+"     "syntax match one "\s\?\(\a\d*\)\@<!\(\d*1\)\d\@!\a*\s\?"
+"     syntax match one "\c[a-f]*\(\d*1\)\d\@!\a*"
+"     " fails on this .ansi31, so not worth the expense
+"     "syntax match one "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*1\)\d\@!\a*"
+"     " for the bash spinner
+"     syntax match one "\[\@<=\\\]\@="
+"     syntax match one "\<GPGGA\>"
+"     " y is done under 'yes'
+"     " this can mean 10 or a coordinate
+"     syntax match one "\<[XIVMC]\+I\>"
+"     syntax match one "\c\<one\>"
+"     syntax match one "\c(\?\<a)"
+" 
+"     hi two cterm=NONE ctermfg=149 ctermbg=236
+"     "syntax match two "\(\a\d*\)\@<!\(\d*2\)\d\@!\a*\s\?"
+"     syntax match two "\c[a-f]*\(\d*2\)\d\@![a-z]*"
+"     syntax match two "\c[a-z]*\(\d*2\)\d\@![a-z]*\(_t\)\@="
+"     "syntax match two "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*2\)\d\@!\a*"
+"     " for the bash spinner
+"     syntax match two "\[\@<=/\]\@="
+"     syntax match two "\<GPGSA\>"
+"     syntax match two "\c\<two\>"
+"     syntax match two "\c(\?\<b)"
+" 
+"     hi three cterm=NONE ctermfg=206 ctermbg=236
+"     "syntax match three "\s\?\(\a\d*\)\@<!\(\d*3\)\d\@!\a*\s\?"
+"     syntax match three "\c[a-f]*\(\d*3\)\d\@![a-z]*"
+"     "syntax match three "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*3\)\d\@!\a*"
+"     " for the bash spinner
+"     syntax match three "\[\@<=|\]\@="
+"     syntax match three "\<GPGSV\>"
+"     syntax match three "\c\<z\>"
+"     syntax match three "\c\<three\>"
+"     syntax match three "\c(\?\<c)"
+" 
+"     hi four cterm=NONE ctermfg=227 ctermbg=236
+"     "syntax match four "\s\?\(\a\d*\)\@<!\(\d*4\)\d\@!\a*\s\?"
+"     syntax match four "\c[a-f]*\(\d*4\)\d\@![a-z]*"
+"     syntax match four "\c[a-z]*\(\d*4\)\d\@![a-z]*\(_t\)\@="
+"     "syntax match four "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*4\)\d\@!\a*"
+"     " for the bash spinner
+"     syntax match four "\[\@<=-\]\@="
+"     syntax match four "\<GPRMC\>"
+"     syntax match four "\c\<four\>"
+"     syntax match four "\c(\?\<%\@<!d)"
+" 
+"     hi five cterm=NONE ctermfg=161 ctermbg=236
+"     "syntax match five "\s\?\(\a\d*\)\@<!\(\d*5\)\d\@!\a*\s\?"
+"     syntax match five "\c\(h[a-f]*\)\@<![a-f]*h\@<!\(\d*5\)\d\@![a-z]*"
+"     "syntax match five "\c\(h[a-f]*\)\@<!\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*5\)\d\@!\a*"
+"     syntax match five "\<V\>"
+"     syntax match five "\<five\>"
+"     syntax match five "\c(\?\<e)"
+"     syntax match five "\<[XIVMC]*V\>"
+" 
+"     hi six cterm=NONE ctermfg=214 ctermbg=236
+"     "syntax match six "\s\?\(\a\d*\)\@<!\(\d*6\)\d\@!\a*\s\?"
+"     syntax match six "\c[a-f]*\(\d*6\)\d\@![a-z]*"
+"     syntax match six "\c[a-z]*\(\d*6\)\d\@![a-z]*\(_t\)\@="
+"     "syntax match six "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*6\)\d\@!\a*"
+"     syntax match six "\<six\>"
+"     syntax match six "\c(\?\<f)"
+"     " this is for functions as they appear in vim's complete menu
+"     syntax match six " \@<=f \@="
+" 
+"     hi seven cterm=NONE ctermfg=075 ctermbg=236
+"     "syntax match seven "\s\?\(\a\d*\)\@<!\(\d*7\)\d\@!\a*\s\?"
+"     syntax match seven "\c[a-f]*\(\d*7\)\d\@![a-z]*"
+"     "syntax match seven "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*7\)\d\@!\a*"
+"     syntax match seven "\<seven\>"
+" 
+"     hi eight cterm=NONE ctermfg=204 ctermbg=236
+"     "syntax match eight "\s\?\(\a\d*\)\@<!\(\d*8\)\d\@!\a*\s\?"
+"     syntax match eight "\c[a-f]*\(\d*8\)\d\@![a-z]*"
+"     syntax match eight "\c[a-z]*\(\d*8\)\d\@![a-z]*\(_t\)\@="
+"     "syntax match eight "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*8\)\d\@!\a*"
+"     syntax match eight "\<eight\>"
+"     syntax match eight "\<[XIVMC]*C\>"
+" 
+"     hi nine cterm=NONE ctermfg=049 ctermbg=236
+"     "syntax match nine "\s\?\(\a\d*\)\@<!\(\d*9\)\d\@!\a*\s\?"
+"     syntax match nine "\c[a-f]*\(\d*9\)\d\@![a-z]*"
+"     "syntax match nine "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*9\)\d\@!\a*"
+"     syntax match nine "\<nine\>"
+"     syntax match nine "\<[XIVMC]*M\>"
+" 
+"     "hi zero cterm=NONE ctermfg=141 ctermbg=236
+"     hi zero cterm=NONE ctermfg=127 ctermbg=236
+"     "syntax match zero "\s\?\(\a\d*\)\@<!\(\d*0\)\d\@!\a*\s\?"
+"     syntax match zero "\c[a-f]*\(\d*0\)\d\@![a-z]*"
+"     "syntax match zero "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*0\)\d\@!\a*"
+"     syntax match zero "zero"
+"     syntax match zero "\<[XIVMC]*X\>"
+" 
+"     hi onlyhex cterm=NONE ctermfg=149 ctermbg=236
+"     syntax match onlyhex "\c[a-z0-9]\@<![a-f]\{4,}[a-z0-9]\@!"
+"     " do not allow be, cd or def
+"     syntax match onlyhex "\c[a-z0-9]\@<![ae-f]\{2,}[a-z0-9]\@!"
+" endf
 
-    " underscore
-    "syntax match morediscrete "[a-z]\@<=_[a-z]\@="
-    "syntax match morediscrete "[A-Z]\@<=_[A-Z]\@="
-    "syntax match morediscrete "\c[0-9a-z ]\@<=_\+[0-9a-z]\@="
-    " By default it should be discrete
-    syntax match morediscrete "_"
-
-    " keep numbers after letters (for units [data and measurements] and
-    " ordinal numbers)
-    " keep letters before numbers (it's also extremely useful for, for
-    " example dates like this 20160818054330UTC. better on than off for
-    " sure)
-    hi one cterm=NONE ctermfg=033 ctermbg=236
-    "syntax match one "\s\?\(\a\d*\)\@<!\(\d*1\)\d\@!\a*\s\?"
-    syntax match one "\c[a-f]*\(\d*1\)\d\@!\a*"
-    " fails on this .ansi31, so not worth the expense
-    "syntax match one "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*1\)\d\@!\a*"
-    " for the bash spinner
-    syntax match one "\[\@<=\\\]\@="
-    syntax match one "\<GPGGA\>"
-    " y is done under 'yes'
-    " this can mean 10 or a coordinate
-    syntax match one "\<[XIVMC]\+I\>"
-    syntax match one "\c\<one\>"
-    syntax match one "\c(\?\<a)"
-
-    hi two cterm=NONE ctermfg=149 ctermbg=236
-    "syntax match two "\(\a\d*\)\@<!\(\d*2\)\d\@!\a*\s\?"
-    syntax match two "\c[a-f]*\(\d*2\)\d\@![a-z]*"
-    syntax match two "\c[a-z]*\(\d*2\)\d\@![a-z]*\(_t\)\@="
-    "syntax match two "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*2\)\d\@!\a*"
-    " for the bash spinner
-    syntax match two "\[\@<=/\]\@="
-    syntax match two "\<GPGSA\>"
-    syntax match two "\c\<two\>"
-    syntax match two "\c(\?\<b)"
-
-    hi three cterm=NONE ctermfg=206 ctermbg=236
-    "syntax match three "\s\?\(\a\d*\)\@<!\(\d*3\)\d\@!\a*\s\?"
-    syntax match three "\c[a-f]*\(\d*3\)\d\@![a-z]*"
-    "syntax match three "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*3\)\d\@!\a*"
-    " for the bash spinner
-    syntax match three "\[\@<=|\]\@="
-    syntax match three "\<GPGSV\>"
-    syntax match three "\c\<z\>"
-    syntax match three "\c\<three\>"
-    syntax match three "\c(\?\<c)"
-
-    hi four cterm=NONE ctermfg=227 ctermbg=236
-    "syntax match four "\s\?\(\a\d*\)\@<!\(\d*4\)\d\@!\a*\s\?"
-    syntax match four "\c[a-f]*\(\d*4\)\d\@![a-z]*"
-    syntax match four "\c[a-z]*\(\d*4\)\d\@![a-z]*\(_t\)\@="
-    "syntax match four "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*4\)\d\@!\a*"
-    " for the bash spinner
-    syntax match four "\[\@<=-\]\@="
-    syntax match four "\<GPRMC\>"
-    syntax match four "\c\<four\>"
-    syntax match four "\c(\?\<%\@<!d)"
-
-    hi five cterm=NONE ctermfg=161 ctermbg=236
-    "syntax match five "\s\?\(\a\d*\)\@<!\(\d*5\)\d\@!\a*\s\?"
-    syntax match five "\c\(h[a-f]*\)\@<![a-f]*h\@<!\(\d*5\)\d\@![a-z]*"
-    "syntax match five "\c\(h[a-f]*\)\@<!\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*5\)\d\@!\a*"
-    syntax match five "\<V\>"
-    syntax match five "\<five\>"
-    syntax match five "\c(\?\<e)"
-    syntax match five "\<[XIVMC]*V\>"
-
-    hi six cterm=NONE ctermfg=214 ctermbg=236
-    "syntax match six "\s\?\(\a\d*\)\@<!\(\d*6\)\d\@!\a*\s\?"
-    syntax match six "\c[a-f]*\(\d*6\)\d\@![a-z]*"
-    syntax match six "\c[a-z]*\(\d*6\)\d\@![a-z]*\(_t\)\@="
-    "syntax match six "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*6\)\d\@!\a*"
-    syntax match six "\<six\>"
-    syntax match six "\c(\?\<f)"
-    " this is for functions as they appear in vim's complete menu
-    syntax match six " \@<=f \@="
-
-    hi seven cterm=NONE ctermfg=075 ctermbg=236
-    "syntax match seven "\s\?\(\a\d*\)\@<!\(\d*7\)\d\@!\a*\s\?"
-    syntax match seven "\c[a-f]*\(\d*7\)\d\@![a-z]*"
-    "syntax match seven "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*7\)\d\@!\a*"
-    syntax match seven "\<seven\>"
-
-    hi eight cterm=NONE ctermfg=204 ctermbg=236
-    "syntax match eight "\s\?\(\a\d*\)\@<!\(\d*8\)\d\@!\a*\s\?"
-    syntax match eight "\c[a-f]*\(\d*8\)\d\@![a-z]*"
-    syntax match eight "\c[a-z]*\(\d*8\)\d\@![a-z]*\(_t\)\@="
-    "syntax match eight "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*8\)\d\@!\a*"
-    syntax match eight "\<eight\>"
-    syntax match eight "\<[XIVMC]*C\>"
-
-    hi nine cterm=NONE ctermfg=049 ctermbg=236
-    "syntax match nine "\s\?\(\a\d*\)\@<!\(\d*9\)\d\@!\a*\s\?"
-    syntax match nine "\c[a-f]*\(\d*9\)\d\@![a-z]*"
-    "syntax match nine "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*9\)\d\@!\a*"
-    syntax match nine "\<nine\>"
-    syntax match nine "\<[XIVMC]*M\>"
-
-    "hi zero cterm=NONE ctermfg=141 ctermbg=236
-    hi zero cterm=NONE ctermfg=127 ctermbg=236
-    "syntax match zero "\s\?\(\a\d*\)\@<!\(\d*0\)\d\@!\a*\s\?"
-    syntax match zero "\c[a-f]*\(\d*0\)\d\@![a-z]*"
-    "syntax match zero "\c\([g-wyz][a-f]\?\)\@<![a-f]*\(\d*0\)\d\@!\a*"
-    syntax match zero "zero"
-    syntax match zero "\<[XIVMC]*X\>"
-
-    hi onlyhex cterm=NONE ctermfg=149 ctermbg=236
-    syntax match onlyhex "\c[a-z0-9]\@<![a-f]\{4,}[a-z0-9]\@!"
-    " do not allow be, cd or def
-    syntax match onlyhex "\c[a-z0-9]\@<![ae-f]\{2,}[a-z0-9]\@!"
-endf
+" hi StatusLine StatusLine     xxx term=bold,reverse cterm=bold,reverse gui=bold,reverse
+" hi StatusLine term=bold ctermbg=124 ctermfg=052
+" hi StatusLine term=NONE ctermbg=232 ctermfg=235
+" hi StatusLine term=NONE ctermbg=240 ctermfg=235
+" hi StatusLine term=NONE ctermbg=235 ctermfg=232
+" hi StatusLine term=NONE ctermbg=012 ctermfg=232
+" hi StatusLine term=NONE ctermbg=012 ctermfg=235
 
 " hi StatusLine StatusLine     xxx term=bold,reverse cterm=bold,reverse gui=bold,reverse
 " hi StatusLine term=bold ctermbg=124 ctermfg=052

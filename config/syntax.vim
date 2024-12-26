@@ -1,6 +1,15 @@
 let g:BWMode = 0
 
 fun! NumberSyntax()
+    " detect long lines
+    " let buff=join(getline(1, '$'), "\n")
+    let longest_line_length=max(map(range(1, line('$')), "col([v:val, '$'])")) - 1
+    if longest_line_length > 200
+        syntax off
+        let g:syntax_on = 0
+        return 0
+    endif
+
     if ! g:BWMode == 1
         hi one cterm=NONE ctermfg=033 ctermbg=236
         syntax match one "\c[a-f]*\(\d*1\)\d\@!\a*"
@@ -74,6 +83,15 @@ fun! NumberSyntax()
     endif
 endf
 fun! GeneralSyntax()
+    " detect long lines
+    " let buff=join(getline(1, '$'), "\n")
+    let longest_line_length=max(map(range(1, line('$')), "col([v:val, '$'])")) - 1
+    if longest_line_length > 200
+        syntax off
+        let g:syntax_on = 0
+        return 0
+    endif
+
     if ! g:BWMode == 1
         hi domainbright cterm=NONE ctermfg=250 ctermbg=236
         syntax match domainbright "\(\<www.\)\@<=[a-z]\+\(\.[a-z]\+\)\@="

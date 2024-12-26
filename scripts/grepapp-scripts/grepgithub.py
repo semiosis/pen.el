@@ -36,6 +36,9 @@ import uuid
 
 import bs4
 import requests
+import sys
+
+from requests_toolbelt.utils import dump
 
 C_BANNER = "\033[35;1m"
 C_REPO = "\033[37;1m"
@@ -44,13 +47,14 @@ C_LINE = "\033[37;2m"
 C_MARK = "\033[32m"
 C_RST = "\033[0m"
 
-BANNER = """
-   {bc}____ ____ ____ ___  {r}____ _ ___ _  _ _  _ ___ {r} 
-   {bc}| __ |__/ |___ |__] {r}| __ |  |  |__| |  | |__] {r}
-   {bc}|__| |  \\ |___ |   {r} |__| |  |  |  | |__| |__] {r}
+# BANNER = """
+#    {bc}____ ____ ____ ___  {r}____ _ ___ _  _ _  _ ___ {r} 
+#    {bc}| __ |__/ |___ |__] {r}| __ |  |  |__| |  | |__] {r}
+#    {bc}|__| |  \\ |___ |   {r} |__| |  |  |  | |__| |__] {r}
 
-""".format(bc=C_BANNER, r=C_RST)
+# """.format(bc=C_BANNER, r=C_RST)
 
+BANNER = "Grep Github"
 
 class OutStream:
     def __init__(self, output_file=None):
@@ -142,6 +146,10 @@ def fetch_grep_app(page, args):
     if args.lang_filter:
         params['f.lang'] = args.lang_filter.split(',')
     response = requests.get(url, params=params)
+
+    print(dump.dump_all(response).decode("utf-8"), file=sys.stderr)
+
+
     if response.status_code != 200:
         fail("HTTP {} {}".format(response.status_code, url))
     data = response.json()

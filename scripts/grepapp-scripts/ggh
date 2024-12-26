@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+: "${n:="1"}"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        n="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# pip3.10 install requests
+
+ocif python3.10 "$(which grepgithub.py)" "$@" -n "$n" -m | pavs
