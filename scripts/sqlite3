@@ -7,6 +7,8 @@ export TTY
 # e.g.
 # cd "$PENELD/config/databases"; make-new-db emacs-operations
 
-/usr/bin/sqlite3 -separator $'\t' "$@"
+# https://stackoverflow.com/questions/5071601/how-do-i-use-regex-in-a-sqlite-query
+
+/usr/bin/sqlite3 -separator $'\t' -cmd ".load /usr/lib/sqlite3/pcre.so" "$@"
 
 # | pavs

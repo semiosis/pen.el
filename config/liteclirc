@@ -1,0 +1,7 @@
+# https://github.com/dbcli/litecli/blob/main/litecli/liteclirc
+
+# Sadly, they've made it overly complicated to get regex going
+# with python's sqlite library.
+
+[startup_commands]
+commands = ".tables", "pragma foreign_keys = ON;", ".load /usr/lib/sqlite3/pcre.so"

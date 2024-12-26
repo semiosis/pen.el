@@ -1,6 +1,7 @@
 source git
 source kubectl
 source docker
+source vim
 
 # This program could really use a fater way of going to lines.
 # like a fuzzy finder or numeric jump.

@@ -23,10 +23,13 @@ mode git.log
   annotate match git_commit -- git rev-list --all --reflog --abbrev=2 --abbrev-commit
   annotate match git_ref    -- git for-each-ref --format='%(refname)%0a%(refname:short)'
 
+  # !  Do not open a new pager. Execute the command and reload the current pager.
   bindkey enter git_commit git.show -- >git show --stat=400 -p $git_commit
+  # ?! is like ! but asks for user confirmation
   bindkey S-r   git_commit          -- ?!git rebase --interactive $git_commit
   bindkey S-f   git_commit          -- ?!git commit --fixup=$git_commit
 
+  # >  Like the default, open a new pager with the contents of the shell command, but also set up a parent-child relationship so that the parent cursor can be moved up and down from inside the child pager with the ParentCursorUp and ParentCursorDown commands.
   bindkey b git_commit git.blame -- >git blame $git_commit -- "$git_filename"
   bindkey d git_commit git.diff  -- >git log -p --follow -1 $git_commit -- "$git_filename"
 

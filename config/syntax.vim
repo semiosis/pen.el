@@ -1,13 +1,15 @@
 let g:BWMode = 0
+" This is a good amount
+let g:syntax_max_lines = 1000
 
 fun! NumberSyntax()
     " detect long lines
     " let buff=join(getline(1, '$'), "\n")
     let longest_line_length=max(map(range(1, line('$')), "col([v:val, '$'])")) - 1
-    if longest_line_length > 200
+    if longest_line_length > g:syntax_max_lines
         syntax off
         let g:syntax_on = 0
-        echom "longest_line_length > 200. Not enabling NumberSyntax"
+        echom printf("longest_line_length > %d. Not enabling GeneralSyntax", g:syntax_max_lines)
         return 0
     endif
 
@@ -87,10 +89,10 @@ fun! GeneralSyntax()
     " detect long lines
     " let buff=join(getline(1, '$'), "\n")
     let longest_line_length=max(map(range(1, line('$')), "col([v:val, '$'])")) - 1
-    if longest_line_length > 200
+    if longest_line_length > g:syntax_max_lines
         syntax off
         let g:syntax_on = 0
-        echom "longest_line_length > 200. Not enabling GeneralSyntax"
+        echom printf("longest_line_length > %d. Not enabling GeneralSyntax", g:syntax_max_lines)
         return 0
     endif
 

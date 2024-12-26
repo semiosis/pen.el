@@ -8,12 +8,30 @@ export DISPLAY
 test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
 test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+run() {
+    if is_tty; then
+        "$bin" "$@"
+    elif is_stdout_pipe; then
+        CMD="$(cmd "$@")"
+        : ${CMD:="$(cmd "$@")"}
+        eval "unbuffer $bin $CMD -c \"wq! /tmp/vim-stdout.txt\"" &>/dev/null
+        cat /tmp/vim-stdout.txt
+    fi
+}
+
 # Do this to remove the annoying message from vim
 if stdin_exists; then
     IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
     if test -n "$contents"; then
-        printf -- "%s" "$contents" | "$bin" "$@"
+        printf -- "%s" "$contents" | run "$@"
     fi
 else
-    "$bin" "$@"
+    run "$@"
 fi

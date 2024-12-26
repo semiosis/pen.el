@@ -1,0 +1,3 @@
+.load /usr/lib/sqlite3/pcre.so
+# .header on
+# .mode column

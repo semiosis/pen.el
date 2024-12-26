@@ -1,0 +1,21 @@
+# To see and stage working copy changes and make and amend commits:
+#   fp="$(upd ocif -otf sout vimhelp)"
+#   rat -m vim.help -c "cat $fp"
+#
+#   rat -m vim.help -c "cat $(ocif -otf sout vimhelp)"
+
+# How to get the INPUT to filter it to generate tags?
+# ocif sh -c 'vimhelp | scrape "\\|[a-zA-Z][a-zA-Z:._0-9-]+\\|" | uniqnosort | sed "s/^|\\(.*\\)|$/\\1/"'
+# I still don't know how to get the INPUT after it's already started.
+
+mode vim.help
+  annotate match vim_tag -- ocif sh -c 'vimhelp | scrape "\\|[a-zA-Z][a-zA-Z:._0-9-]+\\|" | uniqnosort | sed "s/^|\\(.*\\)|$/\\1/"'
+
+  # If it I press enter on a vim_tag,
+  # run "vimhelp $vim_tag" in the same mode, vim.help.
+  bindkey enter vim_tag vim.help -- >also nohupinbg ocif sout vimhelp $vim_tag
+
+  bindkey ?        -- !sps vs $HOME/.config/rat/vim &
+end
+
+# bindkey C-v vim.help -- !rat -m vim.help -c "cat $(ocif -otf sout vimhelp)"

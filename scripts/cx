@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# code examples
+
+# cx -q "select .* from .*" -r -flang SQL
+
+ggh "$@" | grep -P "^      +[0-9]" | sed 's/^ \+[0-9]\+: //' | sed 's/^\s\+//' | pavs

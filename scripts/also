@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+also_bin="$1"
+shift
+
+set -m
+( "$also_bin" "$@"; ) & disown
+
+"$@"

@@ -1348,6 +1348,10 @@ go install github.com/charmbracelet/gum@latest
 
 agi calibre
 agi sqlite3
+# https://stackoverflow.com/questions/6839204/how-to-turn-on-regexp-in-sqlite3-and-rails-3-1
+# https://stackoverflow.com/questions/5071601/how-do-i-use-regex-in-a-sqlite-query
+# sqlite3-pcre implements REGEXP for SQLite.
+agi sqlite3-pcre
 
 # Generate epub from website, then use it in Baca
 npm install -g percollate
