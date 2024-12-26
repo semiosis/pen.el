@@ -3,6 +3,8 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+# ggh -q "select .* from .*" -r -flang SQL
+
 : "${n:="1"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

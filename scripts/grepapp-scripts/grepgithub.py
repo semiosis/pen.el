@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # https://grep.app/search?q=.%2A&regexp=true&filter[lang.pattern][0]=sql&filter[lang][0]=SQL
+# ggh -q "select .* from .*" -r -flang SQL
 
 # https://github.com/popovicn/grepgithub
 
