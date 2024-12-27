@@ -235,6 +235,7 @@ It's really meant for key bindings and which-key, so they should all be interact
     (progn
       (require 'pen-helm-fzf)
       (require 'pen-helm-broot-grep)
+      (require 'pen-helm-regex-bible-search)
       (require 'pen-helm-fzf-line)))
 (require 'pen-help)
 (require 'pen-helpful)
