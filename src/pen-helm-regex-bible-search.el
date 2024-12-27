@@ -1,5 +1,7 @@
 (require 'helm-fzf)
 
+(defset pen-helm-regex-bible-search-translation "BSB")
+
 (defcustom helm-regex-bible-search-executable "regex-bible-search"
   "Default executable for regex-bible-search"
   :type 'stringp
@@ -7,6 +9,10 @@
 
 (defun helm-regex-bible-search (&optional init)
   (interactive)
+
+  (setq pen-helm-regex-bible-search-translation (fz '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT")
+                                                    nil nil "pen-helm-regex-bible-search in translation:"))
+  
   (helm :sources '(helm-regex-bible-search-source)
 
         :buffer "*helm-regex-bible-search*"
@@ -19,7 +25,7 @@
                                             ;; "--tac"
                                             ;; "--no-sort"
                                             ;; "-f"
-                                            "BSB"
+                                            pen-helm-regex-bible-search-translation
                                             helm-pattern)))
          (proc (apply 'start-file-process "helm-regex-bible-search" helm-buffer cmd-args)))
     (prog1 proc
