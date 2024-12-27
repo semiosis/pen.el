@@ -5,7 +5,8 @@
 (ns utils.bible-regex-search
   (:require [babashka.deps :as deps]
             [utils.myshell :as myshell]
-            [utils.aliases :as aliases]))
+            [utils.aliases :as aliases]
+            [clojure.string :as s]))
 
 (require '[clojure.java.io :as io])
 
@@ -18,7 +19,7 @@
   (let [bible-translation (first args)
         regex (second args)]
     ;; https://clojuredocs.org/clojure.core/format
-    (println
+    (print
      (myshell/snc
       (myshell/cmd
        "sqlite3"
@@ -26,6 +27,6 @@
         "/root/repos/aaronjohnsabu1999/bible-databases/DB/%sBible_Database.db"
         bible-translation)
        (format
-        "select Book, Chapter, Versecount, verse from bible where verse IS NOT NULL AND verse REGEXP %s limit 10"
-        (myshell/cmd regex))
+        "select Book, Chapter, Versecount, verse from bible where verse IS NOT NULL AND lower(verse) REGEXP %s limit 100"
+        (myshell/cmd (s/lower-case regex)))
        ".exit")))))
