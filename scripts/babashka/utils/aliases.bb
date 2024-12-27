@@ -9,4 +9,4 @@
 ;; or with clojure.contrib.def/defalias
 ;; https://stackoverflow.com/questions/1317396/define-a-synonym-for-a-clojure-macro
 ;; (def 'foreach 'doseq)
-(defmacro foreach [& args] `(doseq $HOME@args))
+(defmacro foreach [& args] `(doseq ~@args))

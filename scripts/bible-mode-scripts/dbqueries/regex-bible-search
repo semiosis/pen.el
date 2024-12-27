@@ -1,22 +1,32 @@
 #!/bin/bash
 export TTY
 
-# . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/hs
 
 # cd /root/repos/aaronjohnsabu1999/bible-databases/DB;  "litecli" "/root/repos/aaronjohnsabu1999/bible-databases/DB/BSBBible_Database.db"
 
-AKJVBible_Database.db
-AMPBible_Database.db
-ASVBible_Database.db
-BBEBible_Database.db
-BSBBible_Database.db
-DBYBible_Database.db
-ESVBible_Database.db
-GENBible_Database.db
-KJVBible_Database.db
-MSGBible_Database.db
-NASBBible_Database.db
-UKJVBible_Database.db
-WBTBible_Database.db
-WEBBible_Database.db
-YLTBible_Database.db
+: "${version:="$1"}"
+# : "${version:="BSB"}"
+: "${regex:="$2"}"
+# : "${regex:="blessed.*is"}"
+
+test -n "$version" || exit 1
+test -n "$regex" || exit 1
+
+bible_regex_search.bb "$version" "$regex"
+
+# AKJVBible_Database.db
+# AMPBible_Database.db
+# ASVBible_Database.db
+# BBEBible_Database.db
+# BSBBible_Database.db
+# DBYBible_Database.db
+# ESVBible_Database.db
+# GENBible_Database.db
+# KJVBible_Database.db
+# MSGBible_Database.db
+# NASBBible_Database.db
+# UKJVBible_Database.db
+# WBTBible_Database.db
+# WEBBible_Database.db
+# YLTBible_Database.db

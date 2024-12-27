@@ -33,6 +33,9 @@ if ! stdin_exists && test "$#" = 0; then
 
     # The cache makes the symptoms go away.
     set -- --cmd="cat $fp" "$@"
+# else
+#     input_fp="$(cat | tf txt)"
+#     exec < <(cat "$input_fp")
 fi
 
 # NO_NVC=y
