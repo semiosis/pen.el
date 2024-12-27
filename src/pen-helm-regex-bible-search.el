@@ -48,13 +48,20 @@
         ;; (bible-book-name-from-number 65)
         )))
 
+;; It's a little annoying that after adding this formatter, it prints nil as the last result
+(defun pen-helm-tegex-bible-search-goto-result (result)
+  (sor (let* ((cols (s-split " - " result))
+              (ref (car cols)))
+         (bible-mode-lookup-ref ref))))
+
 (defset helm-regex-bible-search-source
         (helm-build-async-source "fzf"
           :candidates-process 'helm-regex-bible-search--do-candidate-process
           :filter-one-by-one 'helm-regex-bible-search-format-results
+          ;; :filter-one-by-one 'identity
           ;; Don't let there be a minimum. it's annoying
           :requires-pattern 0
-          :action 'helm-find-file-or-marked
+          :action 'pen-helm-tegex-bible-search-goto-result
           :candidate-number-limit 9999))
 
 ;; TODO Make it so 2 prefixes M-u M-u will give it a maxdepth of 2

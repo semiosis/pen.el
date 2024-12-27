@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-. $SCRIPTS/lib/hs
+# . $SCRIPTS/lib/hs
 
 # I should not always use pavs because sqlite has a ui
 # e.g.
