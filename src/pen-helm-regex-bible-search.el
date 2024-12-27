@@ -29,14 +29,33 @@
          (helm-process-deferred-sentinel-hook
           process event (helm-default-directory)))))))
 
+(defun helm-regex-bible-search-format-results (line)
+  (if (sor line)
+      (let* ((cols (s-split "\t" line))
+             (book (string-to-int (car cols)))
+             (chapter (string-to-int (second cols)))
+             (versecount (string-to-int (third cols)))
+             (verse (fourth cols)))
+    
+        (message "%s" line)
+        (concat (bible-book-tinyname (bible-book-name-from-number book))
+                " " (int-to-string chapter)
+                ":"
+                (int-to-string versecount)
+                " - "
+                verse)
+        ;; line
+        ;; (bible-book-name-from-number 65)
+        )))
+
 (defset helm-regex-bible-search-source
-  (helm-build-async-source "fzf"
-    :candidates-process 'helm-regex-bible-search--do-candidate-process
-    :filter-one-by-one 'identity
-    ;; Don't let there be a minimum. it's annoying
-    :requires-pattern 0
-    :action 'helm-find-file-or-marked
-    :candidate-number-limit 9999))
+        (helm-build-async-source "fzf"
+          :candidates-process 'helm-regex-bible-search--do-candidate-process
+          :filter-one-by-one 'helm-regex-bible-search-format-results
+          ;; Don't let there be a minimum. it's annoying
+          :requires-pattern 0
+          :action 'helm-find-file-or-marked
+          :candidate-number-limit 9999))
 
 ;; TODO Make it so 2 prefixes M-u M-u will give it a maxdepth of 2
 (defun pen-helm-regex-bible-search (&optional top depth)

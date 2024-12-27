@@ -196,6 +196,11 @@
   (car (-sort (-on '< 'length) (-filter (lambda (e) (not (string-match-p " " e)))
                                         (car (-filter (lambda (e) (member name e)) bible-book-map-names))))))
 
+(defun bible-book-name-from-number (number &optional base1-else-base0)
+  (if base1-else-base0
+      (car (nth (- number 1) bible-book-map-names))
+    (car (nth number bible-book-map-names))))
+
 (memoize 'bible-book-tinyname)
 
 (defun bible-book-keyname (name)
