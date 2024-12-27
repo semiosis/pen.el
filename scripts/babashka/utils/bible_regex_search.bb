@@ -26,6 +26,6 @@
         "/root/repos/aaronjohnsabu1999/bible-databases/DB/%sBible_Database.db"
         bible-translation)
        (format
-        "select Book, Chapter, Versecount, verse from bible where verse REGEXP %s limit 10"
+        "select Book, Chapter, Versecount, verse from bible where verse IS NOT NULL AND verse REGEXP %s limit 10"
         (myshell/cmd regex))
        ".exit")))))
