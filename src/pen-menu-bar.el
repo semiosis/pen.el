@@ -950,6 +950,9 @@
           (bindings--define-key menu [mi-bible-e-outlines]
             '(menu-item "Bible outlines" bible-e-outlines
                         :help "Open file containing Bible outlines"))
+          (bindings--define-key menu [mi-helm-regex-bible-search]
+            '(menu-item "Bible verse regex search" helm-regex-bible-search
+                        :help "Open Helm for searching Bible verses by regex"))
           (bindings--define-key menu [mi-pen-org-bible-verse-repl]
             '(menu-item "Bible verse REPL" pen-org-bible-verse-repl
                         :help "Open REPL for copying Bible verses"))

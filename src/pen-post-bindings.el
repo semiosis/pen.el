@@ -259,6 +259,8 @@
 ;; (sslk "lLi" 'ap/helm-info-emacs-elisp-cl)
 (define-key global-map (kbd "<help> h f") 'pen-helm-find-files)
 (define-key global-map (kbd "<help> h b") 'pen-helm-broot-grep)
+(define-key global-map (kbd "<help> h B") 'helm-regex-bible-search)
+(define-key global-map (kbd "<help> h l") 'helm-regex-bible-search)
 ;; (sslk "lLf" 'pen-helm-find-files)
                                         ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 (sslk "lkJ" 'compile-run-term)
