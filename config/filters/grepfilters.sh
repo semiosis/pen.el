@@ -1,4 +1,5 @@
 relinkify                                                   # Linkify/Clinkify all urls
+relinkify -u                                                # Linkify/Clinkify all urls (update)
 unlinkify                                                   # Unlinkify/unclinkify all urls
 relinkify-all                                               # Linkify/Clinkify all known links (URL, Biblegateway, etc.)
 unlinkify-all                                               # Unlinkify/unclinkify all known links (URL, Biblegateway, etc.)

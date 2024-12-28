@@ -1,4 +1,4 @@
-;; $MYGIT/semiosis/pen.el/scripts/filters
+;; e:/root/.emacs.d/host/pen.el/scripts/filters
 
 (defmacro pen-flash-region (&rest body)
   `(let ((fg "#00aa00")
@@ -38,8 +38,13 @@
       (pen-replace-region res))))
 
 (defun pen-region-pipe (cmd)
-  (interactive (list (read-string "shell filter:")))
   "pipe region through shell command"
+  (interactive (list (read-string "shell filter:")))
+
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (if (>= gparg 4) (setq cmd (concat "upd " cmd))))
+  
   (if (not (sor cmd))
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
@@ -82,10 +87,13 @@ e:$EMACSD/pen.el/config/filters/filters.sh
 
   (cond ((>= (prefix-numeric-value current-prefix-arg) 16)
          (call-interactively 'grepfilter))
-        ((>= (prefix-numeric-value current-prefix-arg) 4)
-         (if (region-active-p)
-             (pen-region-pipe "pen-tm filter")
-           (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
+
+        ;; Instead of this, send the prefix to pen-region-pipe so that I can UPDATE=y when I use C-u
+        
+        ;; ((>= (prefix-numeric-value current-prefix-arg) 4)
+        ;;  (if (region-active-p)
+        ;;      (pen-region-pipe "pen-tm filter")
+        ;;    (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
                                         ; in one clause
         (t
          (let ((filter (select-filter
@@ -93,6 +101,7 @@ e:$EMACSD/pen.el/config/filters/filters.sh
                             "pen-fwfzf (with manual touch-up):"
                           "pen-fwfzf:")
                         type)))
+           
            (pen-region-pipe
             (if manually
                 (concat "manually " filter)
@@ -115,6 +124,7 @@ e:$EMACSD/pen.el/config/filters/filters.sh
   ;; H-u is the global prefix
   (let ((gparg (prefix-numeric-value current-global-prefix-arg))
         (current-global-prefix-arg nil))
+
     (cond ((>= gparg 16) nil)
           ((>= gparg 4) (pen-fwfzf 'grepfilters t))
           (t (pen-fwfzf 'grepfilters nil))))
