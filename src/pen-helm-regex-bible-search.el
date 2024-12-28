@@ -51,12 +51,12 @@
              (versecount (string-to-int (third cols)))
              (verse (fourth cols)))
     
-        (message "%s" line)
+        ;; (message "%s" line)
         (concat (bible-book-tinyname (bible-book-name-from-number book))
                 " " (int-to-string chapter)
                 ":"
                 (int-to-string versecount)
-                " - "
+                ": "
                 verse)
         ;; line
         ;; (bible-book-name-from-number 65)
@@ -64,9 +64,10 @@
 
 ;; It's a little annoying that after adding this formatter, it prints nil as the last result
 (defun pen-helm-tegex-bible-search-goto-result (result)
-  (sor (let* ((cols (s-split " - " result))
-              (ref (car cols)))
-         (bible-mode-lookup-ref ref))))
+  (if (stringp result)
+      (let* ((cols (s-split ": " result))
+             (ref (car cols)))
+        (bible-mode-lookup-ref ref))))
 
 (defset helm-regex-bible-search-source
         (helm-build-async-source "fzf"

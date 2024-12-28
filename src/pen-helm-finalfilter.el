@@ -1,3 +1,8 @@
+;; This should allow me to have another final filter of the candidates using some kind of additional fuzzyfinder
+;; query notation the end of the regular query.
+
+;; TODO Set the value of 
+
 (comment
  ;; nadvice - proc is the original function, passed in. do not modify
  (defun helm-get-candidates-around-advice (proc &rest args)
