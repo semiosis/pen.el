@@ -236,8 +236,8 @@
 
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
-  (let ((lines (list2str codeslist)))
-    (mapcar 'str2sym (str2lines (snc "bible-strongs-codes-sort" lines)))))
+  (let ((lines (pen-list2str codeslist)))
+    (mapcar 'str2sym (pen-str2lines (snc "bible-strongs-codes-sort" lines)))))
 
 (define-derived-mode bible-mode special-mode "Bible"
   "Mode for reading the Bible.
@@ -489,7 +489,7 @@
            (- (point) (length query))
            (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
 
-  (let ((book_ref_list (-uniq (mapcar (lambda (s) (s-replace-regexp " [0-9].*" "" s)) (str2lines (scrape "^.*:" (buffer-string)))))))
+  (let ((book_ref_list (-uniq (mapcar (lambda (s) (s-replace-regexp " [0-9].*" "" s)) (pen-str2lines (scrape "^.*:" (buffer-string)))))))
     (loop for bookref in book_ref_list do
           (save-excursion
             (beginning-of-buffer)
@@ -1512,8 +1512,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (word
           ;; This isn't the main bottleneck
           (if info
-              ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines (shut-up-buffer-string info))))
-              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+              ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines (shut-up-buffer-string info))))
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
     word))
 
 (defun bible-term-show-word (term_code)
@@ -1531,8 +1531,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (word
           ;; This isn't the main bottleneck
           (if info
-              ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines (shut-up-buffer-string info))))
-              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+              ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines (shut-up-buffer-string info))))
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
     word))
 
 ;; This speeds it up a lot
@@ -1743,12 +1743,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (info_b "about a\nmystery"))
      (unmemo (info_a info_b)
              (tv "firstrun")
-             (snc "tr -s a A" (car (str2lines (concat info_a info_b))))))
+             (snc "tr -s a A" (car (pen-str2lines (concat info_a info_b))))))
    (let ((info_a "about a\nstory book")
          (info_b "about a\nmystery"))
      (memo (info_a info_b)
            (tv "firstrun")
-           (snc "tr -s a A" (car (str2lines (concat info_a info_b))))))))
+           (snc "tr -s a A" (car (pen-str2lines (concat info_a info_b))))))))
 
 (defun bible-e-chapter-titles ()
   (interactive)
@@ -1934,7 +1934,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                (booknumber (str (current-book-number)))
                (book-chapter (str (cadr bible-mode-ref-tuple)))
                (regex (concat "^0*" booknumber " .* 0*" book-chapter ".mp3"))
-               (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
+               (fileslisting (pen-list2str (mapcar 'f-basename (f-files dir))))
                (filename (e/grep regex fileslisting 'pcre)))
           (nw (cmd "mplayer" (f-join dir filename))
               "-d"))
@@ -1962,11 +1962,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-fz-chapter-titles-go ()
   (interactive)
-  (fz (str2lines (e/cat bible-chapter-titles-fp))))
+  (fz (pen-str2lines (e/cat bible-chapter-titles-fp))))
 
 (defun bible-fz-passage-outlines-go ()
   (interactive)
-  (fz (str2lines (e/cat bible-passage-outlines-fp))))
+  (fz (pen-str2lines (e/cat bible-passage-outlines-fp))))
 
 (defun bible-doc--make-request nil
   "Request the Bibl documentation."

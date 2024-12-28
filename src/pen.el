@@ -235,7 +235,6 @@ It's really meant for key bindings and which-key, so they should all be interact
     (progn
       (require 'pen-helm-fzf)
       (require 'pen-helm-broot-grep)
-      (require 'pen-helm-regex-bible-search)
       (require 'pen-helm-fzf-line)))
 (require 'pen-help)
 (require 'pen-helpful)
@@ -378,7 +377,11 @@ Be mindful of quoting arguments correctly."
 (require 'pen-eldoc)
 (require 'pen-json)
 (require 'pen-minibuffer)
+
+;; bible-mode is loaded in load-manually
 (require 'pen-load-manually)
+(require 'pen-helm-regex-bible-search)
+
 (require 'pen-hebrew)
 (require 'pen-org-verse)
 
