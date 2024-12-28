@@ -2073,5 +2073,6 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse))))
 
 (define-key bible-mode-map (kbd "M-?") 'helm-regex-bible-search)
+(define-key bible-search-mode-map (kbd "M-?") 'helm-regex-bible-search)
 
 (provide 'pen-bible-mode)

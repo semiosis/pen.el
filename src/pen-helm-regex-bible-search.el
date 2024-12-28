@@ -15,10 +15,12 @@
       (setq init (pen-selected-text)))
 
   (let ((translations '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT"))
-        (modname (and (major-mode-p 'bible-mode)
+        (modname (and (or (major-mode-p 'bible-mode)
+                          (major-mode-p 'bible-search-mode))
                       (s-upcase (bible-shorten-module-name bible-mode-book-module)))))
     (setq pen-helm-regex-bible-search-translation
-          (if (and (major-mode-p 'bible-mode)
+          (if (and (or (major-mode-p 'bible-mode)
+                       (major-mode-p 'bible-search-mode))
                    (member modname translations))
               modname
             (fz translations
