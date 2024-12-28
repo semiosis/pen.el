@@ -1,5 +1,6 @@
 #!/usr/bin/env bbb
 
+;; agi sqlite3-pcre
 ;; cd "$PENCONF/documents/notes"; bible_regex_search.bb BSB "blessed.*is"
 
 (ns utils.bible-regex-search
