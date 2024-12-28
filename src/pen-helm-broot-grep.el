@@ -7,6 +7,10 @@
 
 (defun helm-broot-grep (directory &optional init)
   (interactive "D")
+
+  (if (region-active-p)
+      (setq init (pen-selected-text)))
+  
   (let ((default-directory directory))
     (helm :sources '(helm-broot-grep-source)
 
@@ -32,6 +36,7 @@
 (defset helm-broot-grep-source
   (helm-build-async-source "fzf"
     :candidates-process 'helm-broot-grep--do-candidate-process
+    ;; :filter-one-by-one can be a list of functions
     :filter-one-by-one 'identity
     ;; Don't let there be a minimum. it's annoying
     :requires-pattern 0

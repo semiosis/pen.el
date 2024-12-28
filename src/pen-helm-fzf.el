@@ -39,6 +39,7 @@
 (defset helm-fzf-source-d2
   (helm-build-async-source "fzf"
     :candidates-process 'helm-fzf--do-candidate-process-d2
+    ;; :filter-one-by-one can be a list of functions
     :filter-one-by-one 'identity
     ;; Don't let there be a minimum. it's annoying
     :requires-pattern 0

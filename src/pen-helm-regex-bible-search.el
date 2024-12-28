@@ -11,6 +11,9 @@
 (defun helm-regex-bible-search (&optional init)
   (interactive)
 
+  (if (region-active-p)
+      (setq init (pen-selected-text)))
+
   (let ((translations '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT"))
         (modname (and (major-mode-p 'bible-mode)
                       (s-upcase (bible-shorten-module-name bible-mode-book-module)))))
@@ -72,6 +75,7 @@
 (defset helm-regex-bible-search-source
         (helm-build-async-source "fzf"
           :candidates-process 'helm-regex-bible-search--do-candidate-process
+          ;; :filter-one-by-one can be a list of functions
           :filter-one-by-one 'helm-regex-bible-search-format-results
           ;; :filter-one-by-one 'identity
           ;; Don't let there be a minimum. it's annoying
