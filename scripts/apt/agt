@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# # This is really slow.
+# # Test if a package is installed
+# export PAGER=cat
+# /usr/bin/dpkg -l "$@" &>/dev/null
+
+# This is fast enough
+dpkg -L "$@" &>/dev/null

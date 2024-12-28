@@ -3,6 +3,8 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
+agt sqlite3-pcre || agi sqlite3-pcre &>/dev/null
+
 # agi sqlite3-pcre
 # cd /root/repos/aaronjohnsabu1999/bible-databases/DB;  "litecli" "/root/repos/aaronjohnsabu1999/bible-databases/DB/BSBBible_Database.db"
 
