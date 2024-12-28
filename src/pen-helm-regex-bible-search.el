@@ -1,4 +1,5 @@
 (require 'helm-fzf)
+(require 'pen-bible-mode)
 
 (defset pen-helm-regex-bible-search-translation "BSB")
 
@@ -10,15 +11,22 @@
 (defun helm-regex-bible-search (&optional init)
   (interactive)
 
-  (setq pen-helm-regex-bible-search-translation (fz '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT")
-                                                    nil nil "pen-helm-regex-bible-search in translation:"))
-  
-  (helm :sources '(helm-regex-bible-search-source)
+  (let ((translations '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT"))
+        (modname (and (major-mode-p 'bible-mode)
+                      (s-upcase (bible-shorten-module-name bible-mode-book-module)))))
+    (setq pen-helm-regex-bible-search-translation
+          (if (and (major-mode-p 'bible-mode)
+                   (member modname translations))
+              modname
+            (fz translations
+                nil nil "pen-helm-regex-bible-search in translation:")))
 
-        :buffer "*helm-regex-bible-search*"
-        :input init
-        ;; :prompt "example: /\.el/&c/pen | query: "
-        :prompt "example: blessed.*is | query: "))
+    (helm :sources '(helm-regex-bible-search-source)
+
+          :buffer "*helm-regex-bible-search*"
+          :input init
+          ;; :prompt "example: /\.el/&c/pen | query: "
+          :prompt (concat "[" pen-helm-regex-bible-search-translation "] eg: blessed.*is | query: "))))
 
 (defun helm-regex-bible-search--do-candidate-process ()
   (let* ((cmd-args (-filter 'identity (list helm-regex-bible-search-executable
