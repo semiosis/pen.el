@@ -9,7 +9,7 @@ export TTY
 test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test "$last_arg" == "--help"; then
-    ${GOPATH%%:*}/bin/gum "$@" | pavs
+    ${GOPATH%%:*}/bin/gum "$@" | pen-strip-ansi | pavs
     exit "$?"
 fi
 

@@ -1246,6 +1246,7 @@ Also see option `magit-blame-styles'."
       (progn
 
         (setq pen-black-and-white t)
+        (setq lsp-ui-peek-fontify 'never)        
         (pen-rc-set "black_and_white" "on")
 
         ;; (global-hl-line-mode -1)
@@ -1518,7 +1519,7 @@ Also see option `magit-blame-styles'."
                             lsp-ui-peek-header
                             lsp-ui-peek-footer
                             lsp-ui-peek-selection
-                            lsp-ui-peek-highlight
+                            ;; lsp-ui-peek-highlight
 
                             pen-org-agenda-today-label
 
@@ -1670,6 +1671,8 @@ Also see option `magit-blame-styles'."
                                      org-agenda-date-weekend-today
                                      org-imminent-deadline
 
+                                     lsp-ui-peek-highlight
+
                                      magit-diff-removed-highlight)
                           do
                           (set-face-attribute
@@ -1723,7 +1726,7 @@ Also see option `magit-blame-styles'."
                                      whitespace-space-before-tab
                                      whitespace-tab
                                      whitespace-trailing
-                                     lsp-ui-peek-highlight
+                                     
                                      )
                           do
                           (set-face-attribute
@@ -2024,7 +2027,8 @@ Also see option `magit-blame-styles'."
         (pen-set-all-faces-height-1)
         (pen-snc "tmux-colour")
 
-        (setq pen-black-and-white nil))))
+        (setq pen-black-and-white nil)
+        (setq lsp-ui-peek-fontify 'on-demand))))
 
 (defun pen-enable-all-faces-tcp ()
   (interactive)

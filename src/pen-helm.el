@@ -540,10 +540,16 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key pen-map (kbd "M-\"") nil)
 (define-key helm-map (kbd "<help> p") #'helm-test-code)
 (define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
-(define-key helm-map (kbd "M-n") 'next-line)
+
 
 (define-key helm-map (kbd "<right>") 'forward-char)
 (define-key helm-map (kbd "<left>") 'backward-char)
+
+(define-key helm-map (kbd "M-p") 'previous-history-element)
+(define-key helm-map (kbd "M-n") 'next-history-element)
+(define-key helm-map (kbd "M-h") 'minibuffer-complete-history)
+
+;; (define-key helm-map (kbd "M-n") 'next-line)
 
 ;; left and right were bound to these:
 ;; helm-previous-source
