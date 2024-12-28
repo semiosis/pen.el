@@ -2623,6 +2623,14 @@ case "$file_type" in
     }
     ;;
 
+    # JSONL works fine too with jiq
+    # /root/.emacs.d/host/pen.el/config/visidata/input_history.jsonl
+    jsonl) {
+        pen-tm -d nw -args jiq "$rp"
+        exit 0
+    }
+    ;;
+
     ti) {
         tic "$rp"
         exit $?
