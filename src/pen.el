@@ -1060,11 +1060,22 @@ Reconstruct the entire yaml-ht for a different language."
    (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
             nil default-directory)))
 
-(defalias 'pen-list2cmd 'combine-and-quote-strings)
+;; (defalias 'pen-list2cmd 'combine-and-quote-strings)
 
 (defun pen-list2cmd-f (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
            nil default-directory))
+
+(defun combine-and-quote-strings-safe (strings &optional separator)
+  "Concatenate the STRINGS, adding the SEPARATOR (default \" \")."
+
+  (let* ((sep (or separator " "))
+         (re (concat "[\\\"]" "\\|" (regexp-quote sep))))
+    (mapconcat
+     'shell-quote-argument
+     strings sep)))
+
+(defalias 'pen-list2cmd-safe 'combine-and-quote-strings-safe)
 
 (defun pen-q-cip (s)
   (snc "q-cip" s))
@@ -1086,17 +1097,6 @@ Reconstruct the entire yaml-ht for a different language."
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
     (pen-list2cmd args)))
-
-(defun combine-and-quote-strings-safe (strings &optional separator)
-  "Concatenate the STRINGS, adding the SEPARATOR (default \" \")."
-
-  (let* ((sep (or separator " "))
-         (re (concat "[\\\"]" "\\|" (regexp-quote sep))))
-    (mapconcat
-     'shell-quote-argument
-     strings sep)))
-
-(defalias 'pen-list2cmd-safe 'combine-and-quote-strings-safe)
 
 (defun pen-cmd-safe (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
