@@ -2619,3 +2619,12 @@ cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 make install
 )
+
+(
+agi autoconf build-essential pkgconf libncurses-dev
+cd "$(gc "https://github.com/blippy/neoleo")"
+autoreconf -iv
+env LIBS=-lstdc++fs ./configure
+sed -i "s/ -std=c++20 / -std=c++2a /" src/Makefile
+make -j $(nproc)
+)
