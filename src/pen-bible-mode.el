@@ -1346,6 +1346,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun fz-bible-version ()
   (completing-read "Module: " (bible-mode--list-biblical-modules)))
+(defalias 'fz-bible-translation 'fz-bible-version )
+(defalias 'fz-bible-module 'fz-bible-version )
 
 (defun fz-bible-version-shorten ()
   (bible-shorten-module-name (completing-read "Module: " (bible-mode--list-biblical-modules))))
@@ -1590,26 +1592,42 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (setq count (+ 1 count)))
     count))
 
-(defun tpop-fit-vim-string (s)
+;; Sadly, vim's "set cmdheight=1" is the smallest possible
+;; height for the command/ex line.
+;; https://stackoverflow.com/questions/7770413/remove-vim-bottom-line-with-mode-line-column-etc
+;; But it works in neovim:
+;; https://superuser.com/questions/619765/hiding-vim-command-line-when-its-not-being-used
+;; So maybe I should use neovim instead of vim for this.
+;; But I need to compile a new neovim
+;; I still need to iron out some issues with neovim before making it the default here, but "set cmdheight=0" works
+(defun tpop-fit-vim-string (s &optional use_nvim_b)
   (let* ((nlines
           ;; (snc "wc -l" s)
           (count-chars ?\n s))
          (lines (string2list s))
          (maxlines (tm-window-height))
          (first_line (car lines))
-         (slug (slugify first_line t)))
+         (slug (slugify first_line t))
+         (longest_line_length (string-to-int (snc "longest-line-length" s))))
     (tpop
      ;; (concat "pa -E \"tf -sha -X " slug " txt | xa colvs -nls -num\"")
-     (concat "pa -E \"tf -sha -X " slug " txt | xa v -nls -num\"")
+     (if use_nvim_b
+         (concat "pa -E \"tf -sha -X " slug " txt | xa v -neovim -nls\"")
+       (concat "pa -E \"tf -sha -X " slug " txt | xa v -nls -num\""))
      s
      :x_pos "M+1"
      :y_pos "M+1"
      :bg 233
-     :width_pc 55
+     ;; +7 takes into account the vim number margin
+     :width_pc (+ 7 longest_line_length)
      :height_pc
-     (min maxlines
-          (+ 4 ;; (string-to-int nlines)
-             nlines))
+     (if use_nvim_b
+         (min maxlines
+              (+ 3 ;; (string-to-int nlines)
+                 nlines))
+       (min maxlines
+            (+ 4 ;; (string-to-int nlines)
+               nlines)))
      ;; 20
      :style "heavy")))
 

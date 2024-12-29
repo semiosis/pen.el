@@ -6,7 +6,10 @@ silent! set ttymouse=xterm2
 highlight Cursor gui=reverse guifg=NONE guibg=NONE
 set notimeout
 set nottimeout
-if !has('nvim')
+if has('nvim')
+    set cmdheight=0
+    set nonumber
+else
     set nocscopeverbose
 endif
 set modelines=0 nomodeline
@@ -59,7 +62,9 @@ set shellpipe=&>
 set maxmempattern=2000
 set switchbuf=usetab
 " this means that F7 toggles paste in input mode as well as normal mode
-set pastetoggle=<F7>
+if !has('nvim')
+    set pastetoggle=<F7>
+endif
 " doesn't work unless binary is set (which is an annoying predicament)
 set nostartofline
 set noeol

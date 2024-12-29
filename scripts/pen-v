@@ -28,6 +28,7 @@ parent_sn="$(ps -o comm= $PPID)"
 
 . `which pen-bash-library.sh`
 
+# --not-a-term is good for vim but not for neovim
 bin="vim --not-a-term"
 
 test "$#" -gt 0 && last_arg="${@: -1}"
@@ -77,6 +78,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -u) {
         vimrc="$2"
         shift
+        shift
+    }
+    ;;
+
+    -b) {
+        bin="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -neovim) {
+        bin=nvim
+        # test -f "/usr/local/bin/nvim" && : "${bin:="/usr/local/bin/nvim"}"
+        # test -f "/usr/bin/nvim" && : "${bin:="/usr/bin/nvim"}"
         shift
     }
     ;;

@@ -18,9 +18,13 @@
   (let ((refverse (button-get button 'title))
         (book (button-get button 'book))
         (chapter (button-get button 'chapter))
-        (verses (button-get button 'verses)))
+        (verses (button-get button 'verses))
+        (modname (or (and (or (major-mode-p 'bible-mode)
+                              (major-mode-p 'bible-search-mode))
+                          (s-upcase (bible-shorten-module-name bible-mode-book-module)))
+                     (fz-bible-version))))
 
-    (tpop-fit-vim-string (pen-snc (cmd "bible-tpop-lookup" "-c" "-m" "KJV"
+    (tpop-fit-vim-string (pen-snc (cmd "bible-tpop-lookup" "-c" "-m" modname
                                        (concat
                                         book " " chapter ":" verses))))
 

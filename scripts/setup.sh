@@ -2609,3 +2609,12 @@ e ia xcscope helm-cscope
 cargo install datafusion-tui
 
 e ia xcscope helm-cscope
+
+# https://superuser.com/q/619765
+(
+cd ~/repos
+git clone "https://github.com/neovim/neovim"
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+make install
+)

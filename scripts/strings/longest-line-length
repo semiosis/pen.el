@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+longest_line="$(awk ' { if ( length > x ) { x = length; y = $0 } }END{ print y }')"
+printf -- "%s" "$longest_line" | wc -c
+
+
