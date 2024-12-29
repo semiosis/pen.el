@@ -3,4 +3,4 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-/usr/local/bin/neoleo "$@"
+nvc -2 /usr/local/bin/neoleo "$@"

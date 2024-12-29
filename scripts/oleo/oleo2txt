@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+neoleo "$1" -H <<<tbl 2>/dev/null | groff -t -Tascii | pavs
