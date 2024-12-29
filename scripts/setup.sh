@@ -510,6 +510,7 @@ agi libpython3-dev
 cd ~/repos
 git clone --depth 1 "https://github.com/vim/vim"
 cd vim
+` # vim 8.2.3908: git checkout 27708e6c `
 make clean
 make distclean
 ./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
