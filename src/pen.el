@@ -1060,7 +1060,7 @@ Reconstruct the entire yaml-ht for a different language."
    (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
             nil default-directory)))
 
-;; (defalias 'pen-list2cmd 'combine-and-quote-strings)
+(defalias 'pen-list2cmd 'combine-and-quote-strings)
 
 (defun pen-list2cmd-f (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
