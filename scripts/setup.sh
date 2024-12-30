@@ -2628,3 +2628,25 @@ env LIBS=-lstdc++fs ./configure
 sed -i "s/ -std=c++20 / -std=c++2a /" src/Makefile
 make -j $(nproc)
 )
+
+# Another speadsheet program
+(
+cargo install --git https://github.com/zaphar/sheetsui
+)
+
+# Hmm... I failed to build it. Try prebuilt binaries
+# Sadly setting up lsp for Debian10 turns out to be nontrivial
+# To explore this:
+# /volumes/home/shane/var/smulliga/source/git/msokalski/ascii-patrol/menu.cpp
+# I need:j:ccls-executable to work
+# (
+# cd ~/repos
+# test -d ccls || git clone --depth=1 --recursive https://github.com/MaskRay/ccls
+# cd ccls
+# cmake -S. -BRelease -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/path/to/clang+llvm-xxx
+# agi llvm-7 llvm-7-dev
+# )
+
+(
+cd "$(gc "https://github.com/charmbracelet/gum")"
+)

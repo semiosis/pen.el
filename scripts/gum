@@ -16,6 +16,8 @@ fi
 # ${GOPATH%%:*}/bin/gum "$@"
 # exit "$?"
 
+# go install github.com/charmbracelet/gum@latest
+
 subcommand="$1"
 shift
 case "$subcommand" in
