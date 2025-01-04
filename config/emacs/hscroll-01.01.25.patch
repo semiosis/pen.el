@@ -1,0 +1,17 @@
+diff --git a/src/xdisp.c b/src/xdisp.c
+index 1b198df..7c5dcef 100644
+--- a/src/xdisp.c
++++ b/src/xdisp.c
+@@ -16073,8 +16073,11 @@ hscroll_window_tree (Lisp_Object window)
+ hscroll_windows (Lisp_Object window)
+ {
+   bool hscrolled_p = hscroll_window_tree (window);
+-  if (hscrolled_p)
++  if (hscrolled_p) {
+     clear_desired_matrices (XFRAME (WINDOW_FRAME (XWINDOW (window))));
++
++    safe_run_hooks (Qwindow_state_change_hook);
++  }
+   return hscrolled_p;
+ }
+ 

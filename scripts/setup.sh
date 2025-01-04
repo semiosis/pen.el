@@ -232,6 +232,10 @@ apt install libgtk-3-0 libgtk-3-dev
     # and finds cvs, and tries to run it.)
 
     export PATH="$(echo "$PATH" | sed 's/:/\n/g' | grep -v pen.el | sed '/^$/d' | s join :)"
+
+    # Patch emacs to add a hook for when hscroll is changed
+    ( cd src; git apply $PENELD/config/emacs/hscroll-01.01.25.patch; )
+
     make -j$(nproc)
     make install
 )
