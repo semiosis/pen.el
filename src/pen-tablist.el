@@ -64,14 +64,94 @@
 
 (defset pen-tablist-min-column-width 10)
 
+(defun tablist-put-mark-state (state)
+  "Set the mark of the entry at point according to STATE.
+
+STATE is a return value of `tablist-get-mark-state'."
+  (cl-destructuring-bind (tablist-marker-char
+                          tablist-marker-face
+                          tablist-marked-face)
+      state
+    (tablist-put-mark)))
+
+;; nadvice - proc is the original function, passed in. do not modify
+(defun tablist-put-mark-state-around-advice (proc state)
+  (if state
+      ;; (let ((res (apply proc (list state))))
+      ;;   res)
+    (tablist-put-mark)
+    (tablist-unmark)))
+(advice-add 'tablist-put-mark-state :around #'tablist-put-mark-state-around-advice)
+;; (advice-remove 'tablist-put-mark-state #'tablist-put-mark-state-around-advice)
+
+(defmacro tablist-save-marks (&rest body)
+  "Eval body, while preserving all marks."
+  (let ((marks (make-symbol "marks")))
+    `(let (,marks)
+       (save-excursion
+         (goto-char (point-min))
+         (let ((re "^\\([^ ]\\)"))
+           (while (re-search-forward re nil t)
+             (push (cons (tabulated-list-get-id)
+                         (tablist-get-mark-state))
+                   ,marks))))
+       (unwind-protect
+           (progn ,@body)
+         (save-excursion
+           (dolist (m ,marks)
+             (let ((id (pop m)))
+               (goto-char (point-min))
+               (while (and id (not (eobp)))
+                 (when (equal id (tabulated-list-get-id))
+                   (tablist-put-mark-state m)
+                   (setq id nil))
+                 (forward-line)))))))))
+
+(defun tablist-enlarge-column (&optional column width)
+  "Enlarge column COLUMN by WIDTH.
+
+This function is lazy and therefore pretty slow."
+  (interactive
+   (list nil (* (prefix-numeric-value current-prefix-arg)
+                3)))
+  (unless column (setq column (tablist-current-column)))
+  (unless column
+    (error "No column given and no entry at point"))
+  (unless width (setq width 1))
+  (when (or (not (numberp column))
+            (< column 0)
+            (>= column (length tabulated-list-format)))
+    (error "No such column: %d" column))
+  (when (= column (1- (length tabulated-list-format)))
+    (error "Can't resize last column"))
+
+  (let* ((cur-width (cadr (elt tabulated-list-format column))))
+    (setcar (cdr (elt tabulated-list-format column))
+            (max 3 (+ cur-width width)))
+
+    (tablist-with-remembering-entry
+      (tablist-save-marks
+       (tabulated-list-init-header)
+       (tabulated-list-print)))))
+
 ;; (tablist-buffer-from-csv-string (pen-sn "arp -a | spaces2tabs | tsv2csv"))
 (defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
   "This creates a new tabulated list buffer from a CSV string"
+  (setq has-header
+        (cond ((numberp has-header) (> has-header 0))
+              ;; nil
+              ((not has-header) (yn "Has header?"))
+              (t has-header)))
+
   (let* ((b (nbfs csvstring "tablist"))
          (parsed (pcsv-parse-buffer b))
          (header (if has-header
                      (first parsed)
-                   (mapcar (lambda (s) "") (first parsed))))
+                   ;; (mapcar (lambda (e) (concat "[" (number-to-string e) "]")) (seq 1 (length (first parsed))))
+                   ;; (mapcar (lambda (e) (concat "_" (number-to-string e) "_")) (seq 1 (length (first parsed))))
+                   (mapcar (lambda (e) (concat "." (number-to-string e) ".")) (seq 1 (length (first parsed))))
+                   ;; (mapcar (lambda (s) "") (first parsed))
+                   ))
          (data (if has-header
                    (-drop 1 parsed)
                  parsed)))
@@ -90,8 +170,7 @@
                                            header)))
                               (trues (mapcar (lambda (e) t)
                                              header)))
-                         (-zip header sizes trues))
-                       )))
+                         (-zip header sizes trues)))))
       (setq-local tabulated-list-sort-key (list (first header)))
 
       ;; It would be nice to find the approximate length of each column, but who cares for the moment
@@ -106,11 +185,13 @@
       ;; (tabulated-list-print nil t)
 
       (tabulated-list-print)
-      (tablist-enlarge-column)
-      (tablist-shrink-column)
-      (revert-buffer)
-      (tablist-forward-column 1)
-      (tabulated-list-revert))
+      (comment
+       (tablist-enlarge-column)
+       (tablist-shrink-column)
+       (revert-buffer)
+       (comment
+        (tablist-forward-column 1))
+       (tabulated-list-revert)))
     b))
 
 (defun tablist-import-path (path &optional has-header)
@@ -233,10 +314,15 @@ Return the output buffer."
 (defun vector2list (v)
   (append v nil))
 
-(defun tabulated-list-current-cell-contents ()
+(defun tabulated-list-current-cell-contents (&optional nocopy)
   (interactive)
-  (xc (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry)))))
-
+  (let ((contents (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry))))
+        (gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (if (or (>= gparg 4)
+            nocopy) 
+        contents
+      (xc (str contents)))))
 
 (defun tablist-open-in-fpvd ()
   (interactive)
@@ -253,15 +339,17 @@ Return the output buffer."
     res))
 (advice-add 'tablist-shrink-column :around #'tablist-shrink-column-around-advice)
 
-(defun tablist-enlarge-column-around-advice (proc &rest args)
-  (if (eq 0 (current-column))
-      (forward-char))
-  ;; do it twice -- that's 6 chars
-  (let* ((res (apply proc args))
-         ;; (res (apply proc args))
-         )
-    res))
-(advice-add 'tablist-enlarge-column :around #'tablist-enlarge-column-around-advice)
+(comment
+ (defun tablist-enlarge-column-around-advice (proc &rest args)
+   (if (eq 0 (current-column))
+       (forward-char))
+   ;; do it twice -- that's 6 chars
+   (let* ((res (apply proc args))
+          ;; (res (apply proc args))
+          )
+     res))
+ ;; (advice-add 'tablist-enlarge-column :around #'tablist-enlarge-column-around-advice)
+ (advice-remove 'tablist-enlarge-column #'tablist-enlarge-column-around-advice))
 
 ;; TODO Fix this so that tabbing to the correct column works
 (comment
@@ -395,32 +483,34 @@ TAG should be a string, with length <= `tabulated-list-padding'.
 If ADVANCE is non-nil, move forward by one line afterwards."
   (unless (stringp tag)
     (error "Invalid argument to `tabulated-list-put-tag'"))
-  (never
-   (unless (> tabulated-list-padding 0)
-     (progn
-       ;; Annoyingly, this gets run when the tablist mode is set up
-       (never
-        (setq-local tabulated-list-padding 1)
-        (setq-local pen-tablist-min-padding 1)
-        ;; Also I havent got this going yet
-        (let ((cl (current-line)))
-          (tabulated-list-revert t)
-          (goto-line cl)))
-       (error "Unable to tag the current line"))))
-  (never
-   (save-excursion
-     (tablist-goto-first-column)
-     (when (tabulated-list-get-entry)
-       (let ((beg (point))
-	           (inhibit-read-only t))
-	       (forward-char tabulated-list-padding)
-	       (insert-and-inherit
-	        (let ((width (string-width tag)))
-	          (if (<= width tabulated-list-padding)
-	              (concat tag
-		                    (make-string (- tabulated-list-padding width) ?\s))
-	            (truncate-string-to-width tag tabulated-list-padding))))
-	       (delete-region beg (+ beg tabulated-list-padding))))))
+  (unless (> tabulated-list-padding 0)
+    (progn
+      ;; Annoyingly, this gets run when the tablist mode is set up
+      (never)
+      (setq-local tabulated-list-padding 1)
+      (setq-local pen-tablist-min-padding 1)
+      ;; (tabulated-list-revert t)
+      ;; Also I havent got this going yet
+      (let ((cl (current-line)))
+        (tabulated-list-revert t)
+        (goto-line cl))
+      ;; (error "Unable to tag the current line")
+      ))
+  (never)
+  (save-excursion
+    (tablist-goto-first-column)
+    (pen-comint-bol)
+    (when (tabulated-list-get-entry)
+      (let ((beg (point))
+            (inhibit-read-only t))
+        (forward-char tabulated-list-padding)
+        (insert-and-inherit
+         (let ((width (string-width tag)))
+           (if (<= width tabulated-list-padding)
+               (concat tag
+                       (make-string (- tabulated-list-padding width) ?\s))
+             (truncate-string-to-width tag tabulated-list-padding))))
+        (delete-region beg (+ beg tabulated-list-padding)))))
   (if advance
       (forward-line)))
 
@@ -826,6 +916,8 @@ decide whether the selected frame can display that Unicode character."
 (defun tablist-next-line (&optional n)
   ;; Make simpler version
   (interactive "p")
+  (setq n (or n 1))
+  (lsp-ui-doc-hide)
   (when (and (< n 0)
              (save-excursion
                (end-of-line 0)
@@ -844,7 +936,7 @@ decide whether the selected frame can display that Unicode character."
         (progn
           (tablist-goto-first-column)
           (setq col (tablist-current-column))))
-    
+
     (tablist-forward-entry (or n 1))
     (if col
         (tablist-move-to-column col)
@@ -854,10 +946,20 @@ decide whether the selected frame can display that Unicode character."
 
 (defun tablist-previous-line (&optional n)
   (interactive "p")
+  (lsp-ui-doc-hide)
   (tablist-next-line (- (or n 1))))
 
 (define-key tablist-minor-mode-map (kbd "C-s") 'tablist-push-regexp-filter)
-(define-key tabulated-list-mode-map (kbd "w") 'tabulated-list-current-cell-contents)
+(define-key tabulated-list-mode-map (kbd "w") 'pen-yank-path)
+(define-key tabulated-list-mode-map (kbd "y p") 'pen-yank-path)
+(define-key tabulated-list-mode-map (kbd "y f") 'pen-yank-path)
+(define-key tabulated-list-mode-map (kbd "y m") 'pen-tablist-copy-marked)
+(define-key tabulated-list-mode-map (kbd "y s") 'pen-tablist-copy-selected)
+(define-key tabulated-list-mode-map (kbd "y y") 'pen-tablist-copy-line-or-marked-andor-selected)
+;; (define-key tablist-minor-mode-map (kbd "y") nil)
+(define-key tabulated-list-mode-map (kbd "c") 'tabulated-list-current-cell-contents)
+(define-key tabulated-list-mode-map (kbd "y c") 'tabulated-list-current-cell-contents)
+(define-key tabulated-list-mode-map (kbd "y h") 'tabulated-list-current-cell-contents)
 (define-key tabulated-list-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key global-map (kbd "H-F") 'run-tlm)
 (define-key pen-map (kbd "H-\\") 'pen-start-tablist)
@@ -891,7 +993,7 @@ decide whether the selected frame can display that Unicode character."
 (define-key tablist-minor-mode-map (kbd "K") 'tablist-do-kill-lines)
 (define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
 (define-key tablist-minor-mode-map (kbd "R") 'tablist-revert)
-(define-key tablist-minor-mode-map (kbd "y") 'pen-tablist-copy-marked)
+;; (define-key tablist-minor-mode-map (kbd "y") 'pen-tablist-copy-marked)
 
 ;; DONE: Make new simpler version
 (defun tablist-move-to-column (n)
@@ -969,7 +1071,8 @@ Return the column number after insertion."
         (insert (propertize
                  (make-string (- width (min width label-width)) ?\s)
                  'display `(space :align-to ,next-x)
-                 'face 'ac-candidate-face)))
+                 ;; 'face 'ac-candidate-face
+                 )))
       (put-text-property opoint (point) 'tabulated-list-column-name name)
       next-x)))
 
@@ -1024,6 +1127,13 @@ Return the column number after insertion."
                          (tablist-forward-entry))
                        row)))))
 
+(defun tablist-unmark ()
+  (let ((tablist-marker-char ?\s)
+        tablist-marker-face
+        tablist-marked-face)
+    (tablist-put-mark)))
+(defalias 'tablist-del-mark 'tablist-unmark)
+
 ;; Simplify this. I don't know what tablist mark characters are.
 ;; But it's too complicated, I think. I just want to mark lines and operate on them.
 ;; Marks are a tablist thing and not a tabulated list thing
@@ -1046,15 +1156,56 @@ Returns the number of unmarked marks."
       (let ((another-line (not (eobp))))
 
         (while another-line
-          (let ((tablist-marker-char ?\s)
-                tablist-marker-face
-                tablist-marked-face)
-            (tablist-put-mark))
+          (tablist-unmark)
           (setq another-line (tablist-next-line 1))
           (cl-incf removed))))
     (when interactive
       (message "Removed %d marks" removed))
     removed))
+
+(defun tablist-nth-column (n &optional entry)
+  (unless entry (setq entry (tabulated-list-get-entry)))
+  (when (and entry
+             (>= n 0)
+             (< n (length entry)))
+    (let ((str (elt entry n)))
+      (if (stringp str)
+          str
+        (car str)))))
+(defalias 'pen-tablist-nth-column 'tablist-nth-column)
+
+;; The one in the original package seems incorrect
+(defun pen-tablist-nth-entry (&optional n)
+  (if (and n (< n 1))
+      (error "n must be > 0"))
+  (setq n (or (- n 1) 1))
+  (if n
+      (save-excursion
+        (beginning-of-buffer)
+        (dotimes (- n 1)
+          (tablist-next-line))
+        (tabulated-list-get-entry))
+    (tabulated-list-get-entry)))
+
+(defun pen-tablist-get-selected ()
+  (if (not (pen-selected-p))
+      ;; (error "No region selected")
+      nil
+    (-let* (((start end) (pen-get-region-line-numbers))
+            (collection nil))
+      (save-excursion-and-region-reliably
+       (goto-line start)
+       (while (< (current-line) end)
+         (add-to-list 'collection (pen-tabulated-list-get-entry))
+         (next-line)))
+      collection)))
+
+(defun pen-tablist-copy-selected ()
+  (interactive)
+  (let ((selected (pen-tablist-get-selected)))
+    (if selected
+        (xc (pps selected))
+      (error "Nothing selected for copying"))))
 
 (defun pen-tablist-copy-marked ()
   (interactive)
@@ -1062,5 +1213,195 @@ Returns the number of unmarked marks."
     (if marked
         (xc (pps marked))
       (error "Nothing marked for copying"))))
+
+(defun pen-tablist-copy-line-or-marked-andor-selected ()
+  (interactive)
+  (let ((marked (pen-tablist-get-marked))
+        (selected (pen-tablist-get-selected)))
+    (if marked
+        (pen-tablist-copy-marked)
+      (error "FIXIT Copy the current line"))))
+
+(defalias 'tablist-edit-cell 'tablist-edit-column)
+
+(defun tsv-to-org-table ()
+  (interactive)
+  (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
+    (org-table-export newfile "orgtbl-to-tsv")
+
+    (org-table-select)
+    (delete-region (mark) (point))
+
+    (let ((beg (point))
+          (pm (point-max)))
+      (insert-file-contents file)
+      (org-table-convert-region beg (+ (point) (- (point-max) pm)) separator))
+
+    (org-table-import newfile nil)
+    (org-table-insert-hline)))
+
+(defun tablist-to-org-table ()
+  (interactive)
+  (nbfs (pen-snc "csv2org-table" (tablist-to-csv))
+        nil 'org-mode))
+
+(defun tabulated-list-init-header ()
+  "Set up header line for the Tabulated List buffer."
+  ;; FIXME: Should share code with tabulated-list-print-col!
+
+  ;; I need to check for tabulated-list-mode because
+  ;; (add-hook 'window-state-change-hook #'tabulated-list-init-header)
+  (if (major-mode-p 'tabulated-list-mode)
+      (let* ((x (max tabulated-list-padding 0))
+             (button-props `(help-echo "Click to sort by column"
+                                       mouse-face header-line-highlight
+                                       keymap ,tabulated-list-sort-button-map))
+             (len (length tabulated-list-format))
+             ;; Pre-compute width for available-space compution.
+             (hcols (mapcar #'car tabulated-list-format))
+             (tabulated-list--near-rows (list hcols hcols))
+             (cols nil))
+        (push (propertize " " 'display
+                          `(space :align-to (+ header-line-indent-width ,x)))
+              cols)
+        (let ((cumulative-len 0))
+          (dotimes (n len)
+            (let* ((col (aref tabulated-list-format n))
+                   (not-last-col (< n (1- len)))
+                   (label (nth 0 col))
+                   (lablen (length label))
+                   (pname label)
+                   (width (nth 1 col))
+                   (props (nthcdr 3 col))
+                   (pad-right (or (plist-get props :pad-right) 1))
+                   (right-align (plist-get props :right-align))
+                   (next-x (+ x pad-right width))
+                   (available-space
+                    (and not-last-col
+                         (if right-align
+                             width
+                           (tabulated-list--available-space width n)))))
+              (when (and (>= lablen 3)
+                         not-last-col
+                         (> lablen available-space))
+                (setq label (truncate-string-to-width label available-space
+                                                      nil nil t)))
+              (let* ((cc (cond
+                          ;; An unsortable column
+                          ((not (nth 2 col))
+                           (propertize label 'tabulated-list-column-name pname))
+                          ;; The selected sort column
+                          ((equal (car col) (car tabulated-list-sort-key))
+                           (apply 'propertize
+                                  (concat label
+                                          (cond
+                                           ((and (< lablen 3) not-last-col) "")
+
+                                           ;; reverse the mouse-face
+                                           ;; mouse-face
+                                           ((cdr tabulated-list-sort-key)
+                                            (propertize ;; (format "%c" tabulated-list-gui-sort-indicator-desc)
+                                             "↑"
+                                             'face 'transient-heading))
+                                           (t
+                                            (propertize ;; (format "%c" tabulated-list-gui-sort-indicator-asc)
+                                             "↓"
+                                             'face 'transient-heading))))
+                                  ;; 'face 'bold
+                                  'face 'transient-heading
+                                  'tabulated-list-column-name pname
+                                  button-props))
+                          ;; Unselected sortable column.
+                          (t (apply 'propertize label
+                                    'tabulated-list-column-name pname
+                                    button-props)))))
+                ;; (message "%d %d %d %s" cumulative-len (window-hscroll) (or available-space (length cc)) cc)
+                (if (>= cumulative-len (window-hscroll))
+                    (push
+                     cc
+                     cols))
+                (setq cumulative-len (+ cumulative-len (or available-space (length cc)))))
+              (when right-align
+                (let ((shift (- width (string-width (car cols)))))
+                  (when (> shift 0)
+                    (setq cols
+                          (cons (car cols)
+                                (cons
+                                 (propertize
+                                  (make-string shift ?\s)
+                                  'display
+                                  `(space :align-to
+                                          (+ header-line-indent-width ,(+ x shift))))
+                                 (cdr cols))))
+                    (setq x (+ x shift)))))
+              (if (>= pad-right 0)
+                  (push (propertize
+                         " "
+                         'display `(space :align-to
+                                          (+ header-line-indent-width ,(- next-x (window-hscroll))))
+                         'face 'fixed-pitch)
+                        cols))
+              (setq x next-x))))
+        (setq cols (apply 'concat (nreverse cols)))
+        (if tabulated-list-use-header-line
+            (setq header-line-format (list "" 'header-line-indent cols))
+          (setq-local tabulated-list--header-string cols)))))
+
+(add-hook 'changed-hscroll-hook 'tabulated-list-init-header)
+
+(tabulated-list-init-header)
+
+(defun tablist-show-info-popup ()
+  (interactive)
+  (let ((data (append
+               `(,(concat "Cell contents: " (str (e/q (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry))))))
+                 ,(concat "Attribute: " (e/q (nth (tabulated-list-current-column) (vector2list (tabulated-list-get-entry)))))
+                 ,(concat "Entry ID: " (str (tabulated-list-get-id)))
+                 "")
+
+               ;; (mapcar (lambda (e) (s-join ": " e))
+               ;;         (-zip-lists
+               ;;          (mapcar 'car (vector2list tabulated-list-format))
+               ;;          (mapcar 'str (vector2list (tabulated-list-get-entry)))))
+               ))
+        (id (str (tabulated-list-get-id))))
+    (comment
+     (etv
+      ;; tpop-fit-vim-string
+      ;; pen-custom-lsp-ui-doc-display
+      (pen-list2str data)
+      id))
+
+    (with-current-buffer
+        (tablist-buffer-from-csv-string
+         ;; tpop-fit-vim-string
+         ;; pen-custom-lsp-ui-doc-display
+
+         (list2str
+          (mapcar (lambda (e) (s-join "," (mapcar 'e/q e)))
+                  (append '(("Key" "Value"))
+                          (-zip-lists
+                           (mapcar 'car (vector2list tabulated-list-format))
+                           (mapcar 'str (vector2list (tabulated-list-get-entry)))))))
+         t
+     
+         ;; (pen-list2str data)
+         ;; (str (tabulated-list-get-id))
+         )
+
+      ;; (pen-custom-lsp-ui-doc-display (pen-list2str data) id)
+      ;; (tpop-fit-vim-string (pen-list2str data) id)
+      )))
+
+(define-key tabulated-list-mode-map (kbd "i") 'tablist-show-info-popup)
+
+(defun pen-tablist-select-cell ()
+  (interactive)
+  (if (bolp)
+      (forward-char))
+  (pen-select-regex-at-point
+   (pen-unregexify (tabulated-list-current-cell-contents t))))
+
+(define-key tabulated-list-mode-map (kbd "r") 'pen-tablist-select-cell)
 
 (provide 'pen-tablist)

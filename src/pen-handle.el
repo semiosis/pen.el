@@ -442,7 +442,8 @@
         :docs '(man-thing-at-point
                 pen-lsp-get-hover-docs
                 ladicle/toggle-lsp-ui-doc)
-        :godef '()
+        :godef '(lsp-find-definition
+                 bash-goto-excutable-on-path-at-point)
         :docsearch '()
         :nextdef '()
         :prevdef '()

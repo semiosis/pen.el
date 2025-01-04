@@ -1,3 +1,82 @@
+* TODO Learn to make emacs shells, like dunnet
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  nvc rl emacs -batch -l dunnet
+#+END_SRC
+
+** It's useful to be able to do things in batch-mode
+
+* DONE Make it so bash goes to executable files with M-.
+** DONE Make the edit with pen-handle
+
+** DISCARD make the edit in LSP
+Say, when hovered over vimcat-basic in e:vimcat
+
+j:lsp-find-locations
+j:lsp--location-range
+
+e:$EMACSD_BUILTIN/.cache/lsp/npm/bash-language-server/lib/node_modules/bash-language-server/out/util/shebang.js
+
+** Hmm... It would be nice if there was an LSP server implemented in elisp
+
+* DONE Fix vimcat - it's probably not as efficient. But it's simpler
+e:vimcat
+
+* TODO Make something to convert tablist to org-mode
+
+** TODO Get the scripts
+j:sh/nb/tsv2org-table
+
+e:tsv2org-table
+e:csv2org-table
+
+* TODO Continue with purification
+
+* TODO Keep the tablist margin on
+- It's useful to distinguish between marked and region-selected
+
+* TODO Make a bunch of new functions for querying and moving about a tabulated-list-modue buffer
+- emacs-like functions
+  - Query
+  - Move about
+- Copy
+- Delete
+
+* TODO Also have some kind of symbol indicating tablist marks and region marks
+
+* TODO Look into this
+- px:eldoc-overlay
+- px:tablist-filter
+
+* TODO Make it so I can copy the sheet as data
+
+* TODO Make lsp ui doc work with hscroll
+It needs to factor in the scroll to display.
+
+* TODO Definitely make new tools for navigating codebases
+- annotate source code
+  - I definitely need more buffer annotation stuff in emcas
+
+* TODO Make functions which remove text from the start or end of a string and move the properties
+Test on:
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (etv header-line-format)
+#+END_SRC
+
+Say, in a tabulated list.
+
+** TODO Make a function that moves the text properties of a string
+
+* TODO Make j:tabulated-list-init-header calculate the column headers to draw
+- based on the window hscroll offset.
+
+So that the correct column headers are drawn.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (s-right (- (length s) (window-hscroll)) s)
+#+END_SRC
+
 * TODO Just completely disable this for the time being
 e:/root/.pen/git/config
 

@@ -241,6 +241,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-eipe)
 (require 'pen-textprops)
 (require 'pen-line-changed)
+(require 'pen-hscroll-changed)
 (require 'pen-rc)
 (require 'pen-faces)
 

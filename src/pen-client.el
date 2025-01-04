@@ -441,27 +441,45 @@ This function doesn't really like it when you put 'sp' as the editor."
 
 (cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir &key pp
                                &key use_etv
-                               &key use_tm_tv)
+                               &key use_tm_tv
+                               &key force_alert_if_nil_input)
   "Setting b-wait to -1 disables waiting.
 "
   (interactive)
-  (setq pp (or pp 'pp-to-string))
+  (let ((stdout))
+    (if force_alert_if_nil_input
+        (setq stdin (or stdin "'nil"))
+      (setq stdout stdin))
 
-  (if (and (or (display-graphic-p)
-               use_etv)
-           (not use_tm_tv))
-      (etv stdin)
-    ;; (xtv stdin)
-    (if stdin
-        (let ((tv_input
-               (cond ((and (stringp stdin)
-                           (eq pp 'pp-to-string))
-                      stdin)
-                     (t (apply pp (list stdin))))))
-          (pen-sh/tvipe tv_input editor tm_wincmd nil t t dir))
-      (message "tv: no input")))
-  stdin)
+    (setq pp (or pp 'pp-to-string))
+
+    (if (and (or (display-graphic-p)
+                 use_etv)
+             (not use_tm_tv))
+        (etv stdin)
+      ;; (xtv stdin)
+      (if stdin
+          (let ((tv_input
+                 (cond ((and (stringp stdin)
+                             (eq pp 'pp-to-string))
+                        stdin)
+                       (t (apply pp (list stdin))))))
+            (pen-sh/tvipe tv_input editor tm_wincmd nil t t dir))
+        (message "tv: no input")))
+    stdout))
 (defalias 'pen-tv 'pen-cl-tv)
+
+(cl-defun pen-cl-tv-force (&optional stdin &key editor &key tm_wincmd &key dir &key pp
+                                     &key use_etv
+                                     &key use_tm_tv)
+
+  (pen-cl-tv
+   stdin :editor editor :tm_wincmd tm_wincmd :dir dir :pp pp
+   :use_etv use_etv
+   :use_tm_tv use_tm_tv
+   :force_alert_if_nil_input t))
+
+(defalias 'pen-tv-force 'pen-cl-tv-force)
 
 (defmacro qtv (&rest args)
   "Quiet tv"

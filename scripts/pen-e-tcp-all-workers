@@ -13,6 +13,6 @@ else
 
     for worker in /root/.pen/emacs-tcp-server-ports/*; do
         bn="$(basename -- "$worker")"
-        pen-e -D "$bn" -e-tcp "($sn)"
+        pen-e -D "$bn" -E-tcp "($sn)"
     done
 fi

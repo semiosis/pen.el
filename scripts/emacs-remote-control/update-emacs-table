@@ -35,4 +35,4 @@ IFS= read -r -d '' elcode <<HEREDOC
     (deselect))))
 HEREDOC
 
-pen-e -D "$server_name" -e-tcp "$elcode"
+pen-e -D "$server_name" -E-tcp "$elcode"

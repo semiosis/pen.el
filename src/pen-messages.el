@@ -34,4 +34,14 @@ Activate this advice with:
 
 (global-set-key (kbd "C-c c") 'pen-clear-message)
 
+;; (defun message-buffer-goto-end-of-buffer (&rest args)
+;;   (let* ((win (get-buffer-window "*Messages*"))
+;;          (buf (and win (window-buffer win))))
+;;     (and win (not (equal (current-buffer) buf))
+;;          (set-window-point
+;;           win (with-current-buffer buf (point-max))))))
+
+;; (advice-add 'message :after 'message-buffer-goto-end-of-buffer)
+;; (advice-remove 'message 'message-buffer-goto-end-of-buffer)
+
 (provide 'pen-messages)

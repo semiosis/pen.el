@@ -1422,7 +1422,7 @@ when s is a string, set the clipboard to s"
         ;; (pen-sn "xsel --primary --input" s)
         ;; (pen-sn "xsel --secondary --input" s)
         (pen-sn "xsel --clipboard --input" s)
-        (if (not silent) (message "%s" (concat "Copied: " s)))
+        (if (not silent) (message "%s" (concat "Copied: " (e/q s))))
         s)
     (progn
       ;; Frustratingly, shell-command-to-string uses the current directory.
@@ -2535,6 +2535,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
          (call-interactively 'sh/git-add-all-below))
         ((major-mode-p 'ebdb-mode)
          (call-interactively 'ebdb-save-ebdb))
+        ((minor-mode-p org-src-mode)
+         (call-interactively 'org-edit-src-save))
         ((major-mode-p 'bible-mode)
          ;; Simulate the hooks for pen-ov-highlight
          (run-hooks 'before-save-hook)

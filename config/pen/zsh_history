@@ -95,7 +95,6 @@ git clone "https://github.com/charmbracelet/wish"\
 : 1643678669:0;v khala
 : 1643678932:0;nmap -sT -p- -O localhost
 : 1643678961:0;pen-n-list-open-ports "localhost"
-: 1643680171:0;pen-n-list-open-ports
 : 1643680254:0;nmap -sT -p 9837 -O localhost
 : 1643680340:0;"pen-n-list-open-ports" "-F" "localhost"|sed 1d
 : 1643680582:0;lsof
@@ -2155,12 +2154,10 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1689992762:0;cp -a bundle/AnsiEsc/autoload/AnsiEsc.vim autoload
 : 1689992772:0;rm autoload/AnsiEsc.vim
 : 1689992855:0;cd ~/.pen/vim-bundles/AnsiEsc
-: 1689992857:0;cd autoload
 : 1689992863:0;tp find-here-path "*auto*"
 : 1689992904:0;v ~/.vim/bundle/AnsiEsc/autoload/AnsiEsc.vim
 : 1689993033:0;ls bundle/AnsiEsc/
 : 1689993040:0;cd bundle/AnsiEsc/
-: 1689993042:0;mcd plugin
 : 1689993066:0;cp -a ~/.pen/vim-bundles/AnsiEsc/plugin/AnsiEscPlugin.vim ./
 : 1689993148:0;cd bundle/AnsiEsc/plugin
 : 1689993159:0;cp -a ~/.pen/vim-bundles/AnsiEsc/plugin/cecutil.vim ./
@@ -2989,7 +2986,6 @@ sed '/^$/d'
 : 1698299081:0;ls -ldt /root/.pen/tmp
 : 1698299094:0;ls -ldt /root/.pen/tmp/emacs0/test
 : 1698299096:0;ls -ldt /root/.pen/tmp/emacs0
-: 1698299113:0;v emacs
 : 1698299182:0;ls ./emacs
 : 1698299196:0;mv emacs emacs-scripts
 : 1698299198:0;mkw emacs
@@ -2997,7 +2993,6 @@ sed '/^$/d'
 : 1698299580:0;bash -c "sleep 2; spinner-start -b" & disown
 : 1698299842:0;in-tm vim
 : 1698311883:0;Daniel 3
-: 1698313800:0;j pen-next-defun
 : 1698360548:0;sh -c "spinner-start -b" & disown
 : 1698360672:0;tmux run -b "spinner-start -b"
 : 1698360680:0;tmux run -t pen: -b "spinner-start -b"
@@ -4324,7 +4319,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699683492:0;mkw pwd
 : 1699683531:0;which -a wd
 : 1699683574:0;pwd| v
-: 1699683689:0;date | lolcat
 : 1699683906:0;ln -sf /root/.emacs.d/host/pen.el/config/vim-bundles/vim2ansi
 : 1699683919:0;ls vim-addon-mw-utils
 : 1699683922:0;ls vim2ansi/
@@ -4366,7 +4360,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699685473:0;echo hi | vim2ansi
 : 1699685567:0;echo 324 | vim2ansi | v
 : 1699685653:0;cat /root/.pen/tmp/file_temp_9FdjjC_rand-19254_pid-1201156.bin.ansi
-: 1699685760:0;cd ~/.vim/bundle/
 : 1699685767:0;v vim2ansi/plugin/toansi.vim
 : 1699685894:0;echo 324 | vim2ansi
 : 1699686021:0;v dgrey
@@ -4725,7 +4718,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699948366:0;upd shx ebible Romans 12:1-2 2>&1 | cat
 : 1699948374:0;upd ebible Romans 12:1-2 2>&1 | cat
 : 1699948380:0;upd ebible Romans 12:1-2 | vimcat
-: 1699948403:0;which -a cat
 : 1699948422:0;Romans 12:1-2 | vimcat
 : 1699948426:0;Romans 12:1-2 | vimcat | v
 : 1699948430:0;Romans 12:1-2 | vimcat | ansivim
@@ -5303,7 +5295,6 @@ fi
 : 1700614961:0;v bible-tpop-lookup
 : 1700615281:0;echo hi | xt in-pen v
 : 1700615550:0;echo hi | xt in-pen in-tm v
-: 1700615601:0;date | vimcat
 : 1700615662:0;cat prayers.org
 : 1700616072:0;v 21.11.23.org
 : 1700616373:0;cd ""
@@ -5316,7 +5307,6 @@ fi
 : 1700617173:0;ln -sf host-script-force nmtui
 : 1700617262:0;ln -sf host-script-force restart-network
 : 1700617727:0;datel
-: 1700617732:0;date | cat
 : 1700620749:0;wo nbd fast nem nci
 : 1700620809:0;wo nbd fast nem nci displayopts
 : 1700620912:0;wo nbd fast nem nci -- displayopts
@@ -5851,12 +5841,10 @@ find Mp3 -name '*.mp3'\
 : 1700908586:0;cat /root/.emacs.d/host/pen.el/config/nvimrc | vimcat
 : 1700908625:0;vim /etc/hosts
 : 1700908992:0;git commit -m "25.11.23"
-: 1700909752:0;v vimcat-basic
 : 1700909879:0;'vim' '-E' '-X' '-R' '-i' 'NONE' '--cmd' 'windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()' '-c' 'source /root/.emacs.d/host/pen.el/scripts/vimcat-basic | silent! echo | visual | call AnsiHighlight("/tmp/vimcat_3868531/vimcat") | q' '--' '/tmp/vimcat_3868531/vimcat'
 : 1700909981:0;'vim' '-E' '-X' '-R' '-i' 'NONE' '--cmd' 'silent! echo' '-c' 'source /root/.emacs.d/host/pen.el/scripts/vimcat-basic | windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_3871563/vimcat") | q' '--' '/tmp/vimcat_3871563/vimcat'
 : 1700910001:0;'vim' '-E' '-X' '-R' '-i' 'NONE' '--cmd' 'silent! echo' '-c' 'source /root/.emacs.d/host/pen.el/scripts/vimcat-basic | call GeneralSyntax()|au BufEnter * call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_3871563/vimcat") | q' '--' '/tmp/vimcat_3871563/vimcat'
 : 1700910022:0;cat /root/.emacs.d/host/pen.el/config/nvimrc | tail -n 5 | vimcat
-: 1700910230:0;v vimcat
 : 1700910236:0;pen-bash
 : 1700910756:0;info bash
 : 1700910848:0;v pen-ds
@@ -5917,7 +5905,6 @@ find Mp3 -name '*.mp3'\
 : 1700968304:0;vh
 : 1700968307:0;vh / window | cat
 : 1700968346:0;vimhelp digraph-table | cat
-: 1700968360:0;v vim
 : 1700968375:0;hsqf vim
 : 1700968440:0;"vim" "--not-a-term" "-c" "silent\! echom|silent\! echom|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()" "--not-a-term" "+help digraph-table" "+only"
 : 1700968499:0;"vim" "--not-a-term" "-c" "silent\! echom|silent\! echom|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()" "+help digraph-table" "+only"
@@ -6036,7 +6023,6 @@ git config --system --add safe.directory '*' # For all users and all repositorie
 : 1701044526:0;ln -sf pen-e-ic ecal
 : 1701044642:0;man calendar
 : 1701045053:0;v vc
-: 1701045157:0;cd bundle
 : 1701045160:0;pw -P
 : 1701045164:0;tp find-here-symlink "*ANsi*"
 : 1701045167:0;tp find-here-symlink "*Ansi*"
@@ -7525,7 +7511,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703226493:0;v /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
 : 1703275913:0;2 Cor 1:22 | v
 : 1703275928:0;2 Cor 1:21-22 | v
-: 1703290795:0;ead -i black_and_white
 : 1703291061:0;which -a bw
 : 1703291130:0;ln -sf wo bw
 : 1703291132:0;ln -sf wo baw
@@ -7849,7 +7834,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703887848:0;"date" "+%a %d %b %Y %T %Z"
 : 1703888578:0;echo "$TZ"
 : 1703888688:0;which -a date
-: 1703888692:0;which date
 : 1703888725:0;v /root/.emacs.d/host/pen.el/scripts/date
 : 1703889859:0;locale
 : 1703889985:0;ead NZ
@@ -7896,7 +7880,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 
 : 1703898320:0;TZ=NZ date
 : 1703898338:0;TZ=NZ /bin/date
-: 1703898636:0;v date
 : 1703898743:0;/root/.emacs.d/host/pen.el/scripts/date
 : 1703898917:0;TZ=Pacific/Auckland /bin/date
 : 1703899043:0;cd /usr/share/i18n/locales
@@ -7983,7 +7966,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704011633:0;ps -ef | grep emacsd-1 | grep -v grep | s field 2
 : 1704011635:0;ps -ef | grep emacsd-1 | grep -v grep | s field 2 | xargs kill
 : 1704057589:0;j e/date
-: 1704059779:0;v read.org
 : 1704061412:0;tp find-here-path "*zuleu*"
 : 1704061420:0;cd https-dtai-cs-kuleuven-be-problog-
 : 1704061425:0;ead -i burglary
@@ -13464,7 +13446,6 @@ John 7:18
 : 1716807144:0;rm ,\ there\'s\ some\ people\ I\ have\ already\ forgiven\ about\ stuff\ to\ do\ with\ me\ and\ a\ certain\ marriage\ proposal.
 : 1716813389:0;eog *
 : 1716877821:0;Philippians 3:18-21
-: 1716883311:0;John 18:37
 : 1716883326:0;1 John 4:6
 : 1716884285:0;z symbols.pdf
 : 1716936322:0;Isaiah 64:3-4
@@ -17670,8 +17651,6 @@ Proverbs 23:7
 : 1726650325:0;Jeremiah 4:4
 : 1726650350:0;Deuteronomy 10:12-17
 : 1726650895:0;v README.md
-: 1726654441:0;date | v
-: 1726654443:0;date
 : 1726654484:0;Romans 3:27
 : 1726654545:0;Romans 4:20 | v
 : 1726654551:0;Romans 4:16
@@ -17808,7 +17787,6 @@ Proverbs 23:7
 : 1726807341:0;Mark 2:23-28
 : 1726807609:0;Matthew 12:1-14
 : 1726808041:0;rm ./core
-: 1726808111:0;git add -A .
 : 1726808120:0;git unstage
 : 1726812271:0;nod I Corinthians 15:51-54
 : 1726812594:0;1 Peter 3:15-17
@@ -17890,7 +17868,6 @@ make install\
 : 1726878704:0;export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/glibc/lib"
 : 1726878708:0;cd "$HOME/unisonlanguage"; valgrind ./ucm
 : 1726878709:0;cd "$HOME/unisonlanguage"; gdb ./ucm
-: 1726878715:0;which -a emacs
 : 1726878718:0;gdb /usr/local/bin/emacs
 : 1726878728:0;valgrind /usr/local/bin/emacs
 : 1726878967:0;cd unison
@@ -17955,8 +17932,6 @@ EOF
 : 1726887861:0;apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BDE6D2B9216EC7A8
 : 1726887870:0;apt-get clean
 : 1726887873:0;apt-get -y update
-: 1726888434:0;cd ~/.vim/bundle
-: 1726888451:0;cd vim-bundles
 : 1726888456:0;xc -P vim vim-signature
 : 1726888461:0;xc -P vim-signature
 : 1726888464:0;cp -a /root/.emacs.d/host/pen.el/config/vim-bundles/vim-signature ./
@@ -18010,7 +17985,6 @@ apt -y --fix-broken install
 : 1726892882:0;grep -HnoR fribidi . | v
 : 1726893033:0;l fribidi
 : 1726893081:0;sudo dpkg -i libfribidi-dev_1.0.8-2.1_amd64.deb
-: 1726893188:0;make -j$(nproc)
 : 1726893194:0;nproc
 : 1726893378:0;ldconfig -v
 : 1726893409:0;cd ~/unisonlanguage
@@ -18048,7 +18022,6 @@ apt -y --fix-broken install
 : 1726896106:0;agi rename
 : 1726896137:0;acs libtiff
 : 1726896142:0;cd ~/repos/emacs
-: 1726896144:0;make install
 : 1726896201:0;list-bible-book-titles-els
 : 1726897243:0;cd ~/unisonlanguage/
 : 1726897247:0;cd racket
@@ -18145,7 +18118,6 @@ apt -y --fix-broken install
 : 1730145513:0;Luke 6:35-36
 : 1730147764:0;clj-rebel
 : 1730147791:0;bb
-: 1730176823:0;vimhelp digraph-table
 : 1730369118:0;gum-confirm "hdlksfj"
 : 1730369122:0;v gum-confirm
 : 1730369161:0;gum confirm
@@ -18166,7 +18138,6 @@ apt -y --fix-broken install
 : 1730370702:0;org-shebang
 : 1730370794:0;v '/root/.pen/tmp/tf_temp5bOp8tR.txt'
 : 1730370830:0;org-shebang "Genesis 3"
-: 1730370864:0;man emacs
 : 1730370886:0;emacs-script-test3 Genesis 3
 : 1730370936:0;emacs --quick --script /root/.emacs.d/host/pen.el/scripts/emacs-script-test3 Genesis 3
 : 1730370970:0;emacs --quick --script /root/dump/tmp/scratchZMPyhy.txt Genesis 3
@@ -18293,7 +18264,6 @@ apt -y --fix-broken install
 : 1732566987:0;cat /root/.emacs.d/host/pen.el/scripts/babashka/utils/fzf.bb | fzf.bb
 : 1732612347:0;v links.org
 : 1732612355:0;which -a pwd
-: 1732612358:0;v pwd
 : 1732612366:0;v listen.org
 : 1732612370:0;ls | lolcat
 : 1732616738:0;nano /root/.pen/bigfiles/devotionals/alistair-begg-sermons/paul-timothy/clean.txt
@@ -18444,7 +18414,6 @@ apt -y --fix-broken install
 : 1732683497:0;shx find-readme-here
 : 1732683502:0;/root/.emacs.d/host/pen.el/scripts/readme-scripts/find-readme-here
 : 1732683703:0;find-readme-here
-: 1732684696:0;dired
 : 1732684762:0;df -h
 : 1732685634:0;racket-scripts
 : 1732685765:0;v you-gave-me.rkt
@@ -18613,7 +18582,6 @@ fi
 : 1733194512:0;pen-rc-get black_and_white
 : 1733194522:0;pen-rc-test black_and_whithh
 : 1733194718:0;pen-rc-test black_and_white
-: 1733194767:0;v ~/.vimrc
 : 1733194903:0;v pen-rc-get
 : 1733195471:0;v pen-emacsclient
 : 1733195515:0;pen-rc-get truecolor
@@ -18622,11 +18590,9 @@ fi
 : 1733195580:0;v pen-rc-test
 : 1733195615:0;pen-rc-test -s truecolor
 : 1733195617:0;pen-rc-test -f truecolor
-: 1733196008:0;nvim
 : 1733196014:0;nvim /etc/hosts
 : 1733196024:0;nvim /root/programs/tmux/capture/tf_tmcapturerJR70HN.txt
 : 1733196042:0;v nvt
-: 1733196104:0;v nv
 : 1733196130:0;which -a nvim
 : 1733196140:0;vim ~/.nvimrc
 : 1733196226:0;pen-rc-set black_and_white off
@@ -18656,9 +18622,7 @@ fi
 : 1733215945:0;v pen/faces.el
 : 1733216088:0;v /root/.pen/faces.el
 : 1733219247:0;echo hello | hls reverse reverse
-: 1733219251:0;v hls
 : 1733219271:0;echo hello | hls red reverse
-: 1733219276:0;echo hello | hls black reverse
 : 1733219291:0;echo hello | his -i ".*"
 : 1733219300:0;echo hello | hls white
 : 1733219306:0;echo hello | hls white | his -i ".*"
@@ -18762,7 +18726,6 @@ fi
 : 1733292744:0;pen
 : 1733299406:0;gum-confirm
 : 1733299687:0;echo hi | fzf
-: 1733299726:0;v ~/syntax.vim
 : 1733299936:0;nvc -2 nano
 : 1733299946:0;nano
 : 1733299949:0;nano listen.org
@@ -18770,7 +18733,6 @@ fi
 : 1733300256:0;nvc
 : 1733300267:0;v nvc
 : 1733300274:0;v fzf
-: 1733300423:0;v nvim
 : 1733300441:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300450:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'; pak\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300515:0;echo "hi\nyo" | fzf
@@ -18813,7 +18775,6 @@ fi
 : 1733376161:0;env | v
 : 1733376171:0;export TERM=screen-2color; zsh
 : 1733376182:0;expot TERM=screen-2color
-: 1733376194:0;v ~/.zshrc
 : 1733376202:0;. ~/.profile
 : 1733376206:0;v ~/.profile
 : 1733376213:0;export TERM=screen-2color
@@ -18840,7 +18801,6 @@ fi
 : 1733377208:0;tmux kill-session -t popup:
 : 1733377504:0;export PEN_TERM=screen-2color
 : 1733377505:0;zsh
-: 1733377508:0;bash
 : 1733377528:0;TMUX= tmux -L YO
 : 1733377637:0;TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
@@ -18902,7 +18862,6 @@ fi
 : 1734498616:0;cd src
 : 1734498625:0;v pen-org.el
 : 1734499035:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
-: 1734499354:0;v pen-bw
 : 1734499427:0;bible-random-verse
 : 1734501520:0;penq
 : 1734552033:0;v .tmux.sh
@@ -18917,7 +18876,6 @@ fi
 : 1734560887:0;cd emacs-scripts
 : 1734560905:0;mcd emacs-remote-control
 : 1734560915:0;tp find-here-path "*tcp*"
-: 1734560920:0;v pen-e
 : 1734560927:0;ead e-tcp
 : 1734560950:0;v update-emacs-table
 : 1734561315:0;update-emacs-table
@@ -18950,7 +18908,6 @@ fi
 : 1734846774:0;cat `which welcome-to-rat` | sed -n "/\\<e:/p" | scrape-org-links -s e | scrape-files-fast.sh
 : 1734859713:0;gcc -g "./colorslide.c" -lm -o "colorslide"; ./colorslide
 : 1734859756:0;eog demo.gif
-: 1734859920:0;acpi -b
 : 1734861172:0;make
 : 1734861174:0;./colorslide
 : 1734861210:0;cd ~/.sword
@@ -18993,7 +18950,6 @@ fi
 : 1734862444:0;info date
 : 1734862489:0;mru
 : 1734862554:0;man sum
-: 1734862616:0;v v
 : 1734862693:0;tig
 : 1734862703:0;rat
 : 1734862776:0;v ~/.config/rat/ratrc
@@ -19029,7 +18985,6 @@ fi
 : 1734863465:0;man uniq
 : 1734863514:0;fpvd -h
 : 1734863537:0;visidata -2
-: 1734863628:0;v visidata
 : 1734863850:0;cd visidata-scripts/
 : 1734863851:0;s
 : 1734863852:0;l
@@ -19064,7 +19019,6 @@ fi
 : 1734868651:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/yazi-default.toml"
 : 1734868655:0;wget "https://raw.githubusercontent.com/sxyazi/yazi/refs/tags/shipped/yazi-config/preset/keymap-default.toml"
 : 1734868660:0;sh-yank
-: 1734868663:0;v run.sh
 : 1734868721:0;if test -d /root/.emacs.d/host/pen.el/config/yazi; then\
  rm -rf ~/.config/yazi\
  ln -sf $HOME/.emacs.d/host/pen.el/config/yazi ~/.config/yazi\
@@ -19124,39 +19078,148 @@ fi
 : 1734909247:0;grep -HnRP "border" . | v
 : 1734909307:0;which -a ranger
 : 1734909330:0;ranger --version
-: 1734909344:0;cd ..
 : 1734909407:0;sp ~/.config/ranger/rc.conf
 : 1734909799:0;git diff
-: 1734909865:0;cd config
 : 1734909867:0;cd ranger
 : 1734909874:0;mcd patches
 : 1734909886:0;mv /tmp/tf_templaCqaxu.txt asciiborders.diff
 : 1734909888:0;v asciiborders.diff
-: 1734909935:0;ranger
 : 1734909953:0;z haskell-98-tutorial.pdf
 : 1734913060:0;git ls
-: 1734913177:0;v ~/.gitconfig
-: 1734913202:0;sh-general
-: 1734913205:0;git status
 : 1734913235:0;git config --global --add safe.directory '*'
 : 1734913266:0;git config --system --add safe.directory '*'
-: 1734922166:0;pin
 : 1734925113:0;v arp-details
 : 1734925261:0;yazi
 : 1734925361:0;tp find-here-path "*.db*"
-: 1734925774:0;pe
-: 1734925927:0;v
-: 1734926425:0;pwd
-: 1734926426:0;ls
 : 1734926430:0;v Makefile
-: 1734926922:0;ls
-: 1734926923:0;v ~/.gitconfig
-: 1734926933:0;sh-general
-: 1734926935:0;ls
-: 1734926936:0;git status
-: 1734926937:0;sh-general
-: 1734926938:0;ls
-: 1734926940:0;git status
 : 1734926943:0;v ~/.gitconfig
 : 1734926952:0;git status
 : 1734926977:0;git add -A .
+: 1735716482:0;echo hello | vimpager
+: 1735716491:0;v date
+: 1735716498:0;which date
+: 1735716518:0;v pwd
+: 1735725744:0;vimhelp digraph-table
+: 1735731884:0;v pen-e
+: 1735731902:0;command -v emacs
+: 1735731908:0;v emacs
+: 1735731912:0;which -a emacs
+: 1735733465:0;v xdisp.c
+: 1735733941:0;make -j$(nproc)
+: 1735733946:0;make install
+: 1735733972:0;pin
+: 1735734526:0;v +/"safe_run_hooks (Qwindow_state_change_hook);" "$MYGIT/emacs/src/xdisp.c"
+: 1735739671:0;pen-n-list-open-ports
+: 1735766352:0;date
+: 1735768201:0;grep -HnRP "org-link-describe-package" . | v
+: 1735769281:0;acpi -b
+: 1735773427:0;j pen-next-defun
+: 1735778900:0;Exodus 24:12
+: 1735778984:0;Exodus 31:18
+: 1735779025:0;Exodus 25:8-9
+: 1735779088:0;Exodus 20:20
+: 1735779144:0;Le 25:17: You shall not wrong one another, but you shall fear your God, for I am the Lord your God.
+: 1735779149:0;nod Le 25:17: You shall not wrong one another, but you shall fear your God, for I am the Lord your God.
+: 1735779153:0;nod Lev 25:17: You shall not wrong one another, but you shall fear your God, for I am the Lord your God.
+: 1735779160:0;nod Le 25:17 You shall not wrong one another, but you shall fear your God, for I am the Lord your God.
+: 1735779167:0;nod Leviticus 25:17
+: 1735855202:0;v nvim
+: 1735855207:0;nvim
+: 1735855218:0;v nv
+: 1735855231:0;vimcat-basic -c "call GeneralSyntax()"
+: 1735855280:0;bash
+: 1735855313:0;date | vimcat-basic -c "call GeneralSyntax()"
+: 1735855314:0;date | shx vimcat-basic -c "call GeneralSyntax()"
+: 1735855892:0;cd ~/.vim/bundle/
+: 1735855902:0;cd autoload
+: 1735855905:0;cd bundle
+: 1735855988:0;cat /tmp/out
+: 1735855995:0;date | vimcat | cat
+: 1735856016:0;which -a cat
+: 1735856090:0;date | shx vimcat | cat
+: 1735856105:0;date | cat
+: 1735856107:0;date | lolcat
+: 1735857101:0;vim -E -X -R -i NONE --cmd 'silent! echo' -c 'source /root/.emacs.d/host/pen.el/scripts/vimcat-basic | call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_668441/vimcat") | q' -- /tmp/vimcat_668441/vimcat
+: 1735857108:0;dired
+: 1735857155:0;v /tmp/vimcat_668441/vimcat
+: 1735857179:0;mkdir /tmp/vimcat_668441
+: 1735857181:0;vim -E -X -R -i NONE --cmd 'silent! echo' -c 'call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_668441/vimcat") | q' -- /tmp/vimcat_668441/vimcat
+: 1735857191:0;vim -E -X -R -i NONE --cmd 'silent! echo' -c 'call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_668441/vimcat") | q' -- /tmp/vimcat_668441/vimcat | cat
+: 1735857215:0;unbuffer vim -E -X -R -i NONE --cmd 'silent! echo' -c 'call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat_668441/vimcat") | q' -- /tmp/vimcat_668441/vimcat &>/dev/null | cat
+: 1735863480:0;date > /tmp/vimcat-in
+: 1735863505:0;unbuffer vim -E -X -R -i NONE --cmd 'silent! echo' -c 'call GeneralSyntax() | visual | call AnsiHighlight("/tmp/vimcat-out") | q' -- /tmp/vimcat-in &>/dev/null; cat /tmp/vimcat-out
+: 1735863646:0;John 18:37
+: 1735863668:0;I John 4:5
+: 1735863677:0;I John 4:5-6
+: 1735863695:0;John 9:31
+: 1735863762:0;Zp 3:1-3
+: 1735865452:0;l bash-language-server
+: 1735865816:0;sp pen-bash.el
+: 1735866140:0;which -a g
+: 1735870128:0;v ./pen-vimcat
+: 1735870420:0;date | shx vimcat
+: 1735870546:0;infp="/tmp/vimcat-in-$$"\
+outfp="/tmp/vimcat-out-$$"
+: 1735870551:0;echo hi > "$infp"
+: 1735870562:0;vim -E -X -R -i NONE --cmd 'silent! echo' "$@" -c "visual | call AnsiHighlight(\"$outfp\") | q" -- "$infp"
+: 1735870569:0;cat "$outfp"
+: 1735870736:0;cd config
+: 1735870739:0;cd vim-bundles
+: 1735870744:0;mcd AnsiHighlight
+: 1735870747:0;ranger
+: 1735870754:0;cd AnsiHighlight
+: 1735870756:0;mcd plugin
+: 1735870764:0;v AnsiHighlight.vim
+: 1735870789:0;cd ~/.vim/bundle
+: 1735870797:0;ls -ldt AnsiEsc
+: 1735870807:0;ln -sf /root/.emacs.d/host/pen.el/config/vim-bundles/AnsiHighlight
+: 1735870836:0;v run.sh
+: 1735870876:0;pwd
+: 1735870887:0;v read.org
+: 1735870899:0;which -a lolcat
+: 1735870904:0;v hls
+: 1735870922:0;v ~/.zshrc
+: 1735870946:0;ead -i black_and_white
+: 1735871029:0;ls
+: 1735871034:0;v visidata
+: 1735871054:0;cat debugLog.txt| vimcat
+: 1735871815:0;cd ..
+: 1735871816:0;sh-general
+: 1735872393:0;date | upd vimcat
+: 1735872517:0;date | vimcat-basic
+: 1735872549:0;date | vimcat-basic |
+: 1735872550:0;date | vimcat-basic |v
+: 1735872773:0;v /root/notes/todo.org
+: 1735872941:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat-basic | cat
+: 1735873078:0;date | v
+: 1735873515:0;Matthew 2:6
+: 1735873574:0;nod Ezek 34:23-25
+: 1735873600:0;Mic 5:2
+: 1735873652:0;date | vimcat
+: 1735873730:0;cat /root/.pen/documents/notes/todo.org | head -n 5
+: 1735874475:0;pe
+: 1735891647:0;v
+: 1735891706:0;v ivm
+: 1735891710:0;v vim
+: 1735891729:0;v ~/syntax.vim
+: 1735891876:0;v /root/notes/perspective.org
+: 1735891890:0;v vimcat
+: 1735891963:0;'vim' '-E' '-X' '-R' '-i' 'NONE' '-c' 'silent! echo|call BWSyntax()' '-c' 'visual | call AnsiHighlight("/tmp/vimcat-out-916475")' '--' '/tmp/vimcat-in-916475'
+: 1735892022:0;cat /tmp/yoyo
+: 1735892039:0;echo hello | hls black reverse
+: 1735892047:0;echo hello | hls black reverse | v
+: 1735892052:0;echo hello | unbuffer -p hls black reverse | v
+: 1735892070:0;v vimcat-basic
+: 1735892097:0;v /tmp/yoyo
+: 1735892175:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | v
+: 1735892205:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat
+: 1735892244:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat | cat
+: 1735892251:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat | v
+: 1735892286:0;v ~/.vimrc
+: 1735892295:0;v ~/.vim/bundle/AnsiHighlight/plugin/AnsiHighlight.vim
+: 1735893007:0;v v
+: 1735893023:0;v pen-bw
+: 1735893238:0;emacs -batch -l dunnet
+: 1735893254:0;man emasc
+: 1735893257:0;man emacs
+: 1735893303:0;rlwrap emacs -batch -l dunnet

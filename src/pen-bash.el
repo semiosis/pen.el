@@ -31,4 +31,16 @@
 (define-key sh-base-mode-map (kbd "M-0") 'insert-program)
 (define-key eshell-mode-map (kbd "M-0") 'insert-program)
 
+(defun bash-goto-excutable-on-path-at-point (&optional scriptname)
+  (interactive (list (or (sor (pen-thing-at-point)) (read-string "Scriptname: "))))
+
+  (let ((fp (executable-find scriptname)))
+    (if
+        (and fp
+             (or
+              (re-match-p "scripts/" fp)
+              (yn (concat "Edit " (e/q (mnm fp))))))
+        ;; (pen-edit-fp-on-path scriptname)
+        (e fp))))
+
 (provide 'pen-bash)

@@ -11,10 +11,12 @@
   (interactive (list (buffer-file-name)))
 
   (tablist-buffer-from-csv-string
-   (if fp
-       (e/cat fp)
-     (if (major-mode-p 'csv-mode)
-         (buffer-string))))
+   (if (and fp (yn (concat "Use " (cmd fp) "? (y)" " or the buffer? (n)")))
+       (cond ((major-mode-p 'tsv-mode) (pen-snc "tsv2csv" (e/cat fp)))
+             ((major-mode-p 'csv-mode) (e/cat fp)))
+
+     (cond ((major-mode-p 'tsv-mode) (pen-snc "tsv2csv" (buffer-string)))
+           ((major-mode-p 'csv-mode) (buffer-string)))))
   ;; (error "csv-open-in-tabulated-list: Not implemented")
   )
 

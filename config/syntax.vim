@@ -2,6 +2,15 @@ let g:BWMode = 0
 " This is a good amount
 let g:syntax_max_lines = 1000
 
+" This is needed because of autocommands
+fun! DoSyntax()
+    if g:BWMode
+        call BWSyntax()
+    else
+        call GeneralSyntax()
+    endif
+endf
+
 fun! NumberSyntax()
     " detect long lines
     " let buff=join(getline(1, '$'), "\n")
@@ -85,6 +94,7 @@ fun! NumberSyntax()
         syntax match onlyhex "\c[a-z0-9]\@<![ae-f]\{2,}[a-z0-9]\@!"
     endif
 endf
+
 fun! GeneralSyntax()
     " detect long lines
     " let buff=join(getline(1, '$'), "\n")
@@ -489,6 +499,7 @@ fun! GeneralSyntax()
         hi unknownword cterm=NONE ctermfg=010 ctermbg=034
         syntax match unknownword "\(\<UNK\(KNOWN\)\?\>\)"
         syntax match unknownword "\s?\s"
+
         call NumberSyntax()
         hi sensing3d cterm=NONE ctermfg=219 ctermbg=240
         syntax match sensing3d '\c3dsensing'
@@ -1253,6 +1264,9 @@ fun! BWSyntax()
         hi GitGutterDeleteLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
         hi GitGutterChangeDeleteLine term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
         hi badWhiteSpace  term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+
+        hi bullets term=bold,reverse ctermfg=Black ctermbg=WHITE guibg=White
+        syntax match bullets "^\*\+"
     " endif
 endf
 command! BWSyntax silent! call BWSyntax()

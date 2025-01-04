@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "ESV" "Ezek 34:23-25" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Ezek 34:23-25" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Ezek" "34:23-25" "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Mic 5:2" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"

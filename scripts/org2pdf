@@ -52,7 +52,7 @@ if test "$VANILLA" = "y"; then
 else
     # TODO Make something to get the first available server
     # Query all the servers and choose the one which responds first.
-    # pen-e -D pen-emacsd-1 -e-tcp
+    # pen-e -D pen-emacsd-1 -E-tcp
 
     fn=$(basename -- "$fp")
     rp="$(realpath "$fp")"
@@ -61,7 +61,7 @@ else
     mant="${fn%.*}"
     pdf_fp="$dn/${mant}.pdf"
 
-    pen-e -D "DEFAULT" -e-tcp "(progn (with-current-buffer (find-file \"$fp\")($f)) (pen-snc (cmd \"z\" \"$pdf_fp\")))" 
+    pen-e -D "DEFAULT" -E-tcp "(progn (with-current-buffer (find-file \"$fp\")($f)) (pen-snc (cmd \"z\" \"$pdf_fp\")))" 
 fi
 
 echo "Running $sn through emacs... done!" 1>&2

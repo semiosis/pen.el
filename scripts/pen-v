@@ -376,7 +376,7 @@ if test "$NOCOLOR" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "" && { test 
 fi
 
 if test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "" && { test "$bn" = "glossary.txt" || test "$ext" = "clql"; }; }; then
-    extra_commands+="|windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()"
+    extra_commands+="|windo silent! call DoSyntax()|au BufEnter * call DoSyntax()"
 fi
 
 # This will also be picked up inside nvimrc

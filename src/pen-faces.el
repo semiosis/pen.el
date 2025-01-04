@@ -2190,10 +2190,13 @@ Also see option `magit-blame-styles'."
 
 (defun pen-save-faces ()
   (interactive)
-  (progn
-    (message "Saving faces to /root/faces.el" )
-    (write-to-file (pen-get-faces) "/root/faces.el")
-    (message "Saved faces to /root/faces.el")))
+  (if (and (daemonp) (string-equal "DEFAULT" (daemonp)))
+    (progn
+      (message "Saving faces to /root/faces.el" )
+      ;; TODO Make it so this saves somewhere else then tries to replace it
+      ;; Or make it so this only works for DEFAULT.
+      (write-to-file (pen-get-faces) "/root/faces.el")
+      (message "Saved faces to /root/faces.el"))))
 
 (defun pen-save-faces-to-config ()
   (interactive)

@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Le" "25:17:" "You" "shall" "not" "wrong" "one" "another," "but" "you" "shall" "fear" "your" "God," "for" "I" "am" "the" "Lord" "your" "God." "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Lev" "25:17:" "You" "shall" "not" "wrong" "one" "another," "but" "you" "shall" "fear" "your" "God," "for" "I" "am" "the" "Lord" "your" "God." "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Le" "25:17" "You" "shall" "not" "wrong" "one" "another," "but" "you" "shall" "fear" "your" "God," "for" "I" "am" "the" "Lord" "your" "God." "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Leviticus" "25:17" "#" "<==" "nod"

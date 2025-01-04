@@ -27,10 +27,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -e-tcp) {
+    -E-tcp) {
         E_TCP_CMD="$2"
         shift
         shift
+    }
+    ;;
+
+    -e-tcp) {
+        shift
+        # E_TCP_CMD="$(cmd-nice-posix "$@")"
+        # just concatenate all the arguments together without quotes
+        E_TCP_CMD="$@"
+        E_TCP_CMD="(progn ${E_TCP_CMD})"
+        shift "$#"
     }
     ;;
 

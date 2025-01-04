@@ -289,6 +289,8 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "br" 'pen-follow-brain-link)
 (org-add-link-type "brain" 'pen-follow-brain-link)
 
+(org-add-link-type "px" 'org-link-describe-package)
+
 ;; This should work: pa:org-brain
 (defalias 'pa 'pen-goto-package-all)
 

@@ -36,47 +36,7 @@
 (defcmdmode "prompts" "tablist")
 (define-key prompts-tablist-mode-map (kbd "RET") 'prompts-tablist-o)
 
-(defun tablist-buffer-from-csv-string (csvstring &optional has-header col-sizes)
-  "This creates a new tabulated list buffer from a CSV string"
-  (let* ((b (nbfs csvstring "tablist"))
-         (parsed (pcsv-parse-buffer b))
-         (header (if has-header
-                     (first parsed)
-                   (mapcar (lambda (s) "") (first parsed))))
-         (data (if has-header
-                   (-drop 1 parsed)
-                 parsed)))
 
-    (switch-to-buffer b)
-    (with-current-buffer b
-
-      (setq-local tabulated-list-format
-                  (si "tabulated-list-format format"
-                      (list2vec
-                       (let* ((sizes
-                               (or col-sizes
-                                   (mapcar (lambda (e)
-                                             (max pen-tablist-min-column-width (min 30 (length e))))
-                                           header)))
-                              (trues (mapcar (lambda (e) t)
-                                             header)))
-                         (-zip header sizes trues))
-                       )))
-      (setq-local tabulated-list-sort-key (list (first header)))
-
-      (setq-local tabulated-list-entries (-map (lambda (l) (list (first l) (list2vec l))) data))
-
-      (tabulated-list-mode)
-
-      (tabulated-list-init-header)
-
-      (tabulated-list-print)
-      (tablist-enlarge-column)
-      (tablist-shrink-column)
-      (revert-buffer)
-      (tablist-forward-column 1)
-      (tabulated-list-revert))
-    b))
 
 (defun create-tablist (cmd-or-csv-path &optional modename has-header col-sizes-string wd)
   "Try to create a tablist from a command or a csv path"

@@ -149,6 +149,7 @@
 
 (defset tabulated-list-mode-funcs '(tablist-export-csv
                                     pen-tablist-copy-marked
+                                    tablist-to-org-table
                                     tablist-open-in-fpvd))
 
 (defset subed-mode-funcs '(show-clean-subs))

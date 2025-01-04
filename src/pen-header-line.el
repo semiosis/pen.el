@@ -2,6 +2,40 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 (require 'universal-sidecar)
+(require 'display-line-numbers)
+
+;; This is extremely frequent
+;; header-line-indent--watch-line-number-width is from display-line-numbers:
+(defun header-line-indent--watch-line-number-width (_window)
+  (let ((width (header-line-indent--line-number-width)))
+    ;; (message (e/date))
+    (setq header-line-indent-width width)
+    (unless (= (length header-line-indent) width)
+      (setq header-line-indent (make-string width ?\s)))))
+
+;; header-line-indent--window-scroll-function is from display-line-numbers:
+(defun header-line-indent--window-scroll-function (window _start)
+  (let ((width (with-selected-window window
+                 (truncate (line-number-display-width 'columns)))))
+    ;; (message (e/date))
+    (setq header-line-indent-width width)
+    (unless (= (length header-line-indent) width)
+      (setq header-line-indent (make-string width ?\s)))))
+
+;; header-line-indent--line-number-width is from display-line-numbers:
+(defun header-line-indent--line-number-width ()
+  "Return the width taken by `display-line-numbers' in the current buffer."
+  ;; line-number-display-width returns the value for the selected
+  ;; window, which might not be the window in which the current buffer
+  ;; is displayed.
+  (if (not display-line-numbers)
+      0
+    (let ((cbuf-window (get-buffer-window (current-buffer) t)))
+      (if (window-live-p cbuf-window)
+          (with-selected-window cbuf-window
+            (truncate
+             (line-number-display-width 'columns)))
+        4))))
 
 (defsetface header-line
             '((t :foreground "#773575"
@@ -98,30 +132,37 @@
                   ;; (battstr (str (get-battery-power)))
                   )
               ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
-              (concat (ph--with-face ph--header
-                                     'header-line-highlight)
-                      (propertize " " 'display `(space :align-to (-
-                                                                  right
-                                                                  ;; For the sidecar margin, so AM/PM isn't covered up
-                                                                  ,(if (universal-sidecar-visible-p)
-                                                                       1
-                                                                     0)
-                                                                  ,(length datestr))))
-                      ;; (if (not nobatt)
-                      ;;     (ph--with-face battstr
-                      ;;                    'header-line-highlight)
-                      ;;   "")
-                      ;; " "
-                      (if (not nodate)
-                          (ph--with-face datestr
-                                         'header-line-highlight)
-                        ""))))))))
+              (concat
+               ;; For (header-line-indent-mode), but don't use it
+               ;; header-line-indent-mode is useful for tabulated-list-mode
+               ;; (propertize "_" 'display
+               ;;             `(space :align-to (+ header-line-indent-width 0)))
+               (ph--with-face ph--header
+                              'header-line-highlight)
+               (propertize " " 'display `(space :align-to (-
+                                                           right
+                                                           ;; For the sidecar margin, so AM/PM isn't covered up
+                                                           ,(if (universal-sidecar-visible-p)
+                                                                1
+                                                              0)
+                                                           ,(length datestr))))
+               ;; (if (not nobatt)
+               ;;     (ph--with-face battstr
+               ;;                    'header-line-highlight)
+               ;;   "")
+               ;; " "
+               (if (not nodate)
+                   (ph--with-face datestr
+                                  'header-line-highlight)
+                 ""))))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
 
   (cond
    ((derived-mode-p 'tabulated-list-mode)
+    nil)
+   ((derived-mode-p 'calibredb-search-mode)
     nil)
    ((major-mode-p 'universal-sidecar-buffer-mode)
     ;; (path-header-line-off)

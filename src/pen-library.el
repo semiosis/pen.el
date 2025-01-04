@@ -1190,8 +1190,19 @@ non-nil."
 (defmacro dk (name binding f)
   `(define-key ,name (kbd ,binding) ,f))
 
+(defun pen-normalise-point-and-mark ()
+  (if (not (< (mark) (point)))
+      (exchange-point-and-mark)
+    ))
+
+(defun pen-get-region-line-numbers ()
+  (save-excursion-and-region-reliably
+   (pen-normalise-point-and-mark)
+   (list (current-line (mark))
+         (current-line (point)))))
+
 (defmacro uk (name binding)
-    `(define-key ,name (kbd ,binding) nil))
+  `(define-key ,name (kbd ,binding) nil))
 
 (defun yanked ()
   "Simply return the last string that was copied."

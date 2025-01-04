@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes;  "xterm" "-rv" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/.pen/documents/notes; /tmp/nsfa--in-tm-2-pin-root-pen-documents-notes.sh" "#" "<==" "pen-xt"
