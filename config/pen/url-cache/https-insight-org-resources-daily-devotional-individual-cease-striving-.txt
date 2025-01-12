@@ -1,0 +1,837 @@
+HTTP/1.1 200 OK
+Date: Mon, 06 Jan 2025 20:35:59 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: public, max-age=3600
+Pragma: no-cache
+Expires: -1
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+x-azure-ref: 20250106T203557Z-154d7757677xdggphC1SYDs0an0000001w2g000000003mrx
+x-fd-int-roxy-purgeid: 81648603
+X-Cache: TCP_MISS
+
+
+
+<!DOCTYPE html>
+<html>
+    <head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+		<script src="//use.typekit.net/vwz3quk.js"></script>
+		<script>try { Typekit.load(); } catch (e) { }</script>		
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Montserrat:400,700" rel="stylesheet" type="text/css" /><link href="../../../../css/master.css?v=1.5.0" type="text/css" rel="stylesheet" /><link rel="shortcut icon" href="../../../../img/favicon.ico" /><title>
+	Cease Striving
+</title>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b25a2a1e9c5f0d" async="async"></script>	
+		<script type="text/javascript" src="/js/plugins/jwplayer/jwplayer.js?v=7.7.4"></script>
+        <script>jwplayer.key = "NNiHbhAoIA4QA3UgBFQh4Q77HQue3AxOy/5iw8RCgg0=";</script>
+		<script type="text/javascript">
+			var $mcGoal = {'settings':{'uuid':'089de1a9400fa16e923356315','dc':'us10'}};
+			(function() {
+				 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+				sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+			})(); 
+		</script>
+        
+    	<!--[if lte IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
+    <meta property="og:image" content="https://cdn.iflmedia.com/images/ifl-usa/mailchimp/devotional/Facebook-20241230.jpg"> 
+<meta property="og:type" content="article">
+  <meta property="fb:app_id" content="542126776151575"/>
+
+<meta name="twitter:image" content="https://cdn.iflmedia.com/images/ifl-usa/mailchimp/devotional/Facebook-20241230.jpg" /><meta property="og:title" content="Cease Striving"><meta property="og:url" content="https://insight.org/resources/daily-devotional/individual/cease-striving/"><meta property="og:description" content="The psalmist's inner battle with the grind of personal weakness, recorded in Psalm 46, ended with a truce. He arrived at a critical decision that required every ounce of faith he could muster. He decided to withdraw from battle."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@chuckswindoll"><meta name="twitter:creator" content="@chuckswindoll" /><meta name="twitter:title" content="Cease Striving" /><meta name="twitter:description" content="The psalmist's inner battle with the grind of personal weakness, recorded in Psalm 46, ended with a truce. He arrived at a critical decision that required every ounce of faith he could muster. He decided to withdraw from battle." /><meta name="Generator" content="Sitefinity 15.2.8422.0 DX" /><link rel="canonical" href="https://insight.org/resources/daily-devotional/individual/cease-striving" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R4LJ4B452W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R4LJ4B452W');
+</script><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nBm8b9zyvCvYb8ZRxZrGP7Z_SazqIsZA3nwIxfmpbSrvSWNnSv2FnDBAms71x5Qmk6c2zGPLE0d0blEmjW9pHlPBB7bov3VtBHl7L8Qvc3nk0&amp;t=638628027619626917&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2024.3.805.462%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3af8b69b2a-0573-4688-b25b-5ffc3bc9c1e1%3a580b2269%3aeb8d8a8e" type="text/css" rel="stylesheet" /><style type="text/css" media="all">@media (max-width: 768px) {
+	aside.col-sm-3,
+	section.sub-content .page-header .sfContentBlock,
+	section.sub-content .page-header p.social { display: none }
+
+	section.sub-content .page-header { padding: 0 }
+
+	h2.content-header.line {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+	.article-meta { 
+		margin-bottom: 15px; 
+		padding-bottom: 10px;
+	}
+	
+		.article-meta .half { 
+			margin-bottom: 7px;
+			text-align: left;
+		}
+		
+		.article-meta .article-author {
+			margin-bottom: 3px;
+		}
+		
+	.article-meta + .addthis_sharing_toolbox {
+		margin-bottom: 12px;
+	}
+		
+}</style></head>
+    <body>
+<noscript><div class='no-js-warning'><p>Your browser does not support JavaScript. Please note, our website requires JavaScript to be supported.</p><p>Please <a href="http://insight.org/connect/contact-us">contact us</a> or <a href="http://www.activatejavascript.org/">click here</a> to learn more about how to enable JavaScript on your browser.</p></div></noscript>
+
+        <form method="post" action="./" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl07_TSM" id="ctl07_TSM" value="" />
+<input type="hidden" name="ctl08_TSSM" id="ctl08_TSSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"en","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135575200000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"A.D.",null,0]};//]]>
+</script>
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl07_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen%3a95047a2c-8908-49e3-b68e-d249be89f134%3aea597d4b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=xioHhidMnoH8GGW0PVBvnmRh98wD2DUfb9EQ0EwuJXfpqroZbLdm2Mho1u9ZofHfDcuzE9s8V_-g903BZBlL5amCNYPAaijQUhStX6FxaSWzPPIZmAdPwM9s0FDLI46DSVm0EGSkH7DdEgcwyhP6XH6UiLPdd3YRxETK_kIS_gZtWuqanjXD0m03dIFlbM8L0&amp;t=ffffffff9d926369" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl07_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%3aen%3a5dc3c919-0a12-4f73-a80a-1e8caebd05b6%3a310a35a4%3bTelerik.Web.UI%2c+Version%3d2024.3.805.462%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3af8b69b2a-0573-4688-b25b-5ffc3bc9c1e1%3aa1a4383a%3bTelerik.Sitefinity%2c+Version%3d15.2.8422.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a748e6699-9294-4f35-b2c2-22b3bf739189%3a721addc%3bTelerik.Web.UI%2c+Version%3d2024.3.805.462%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3af8b69b2a-0573-4688-b25b-5ffc3bc9c1e1%3a16e4e7cd%3af7645509%3addbfcb67%3bTelerik.Sitefinity%2c+Version%3d15.2.8422.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a748e6699-9294-4f35-b2c2-22b3bf739189%3af77740f1%3a26cfb6dc%3a6e04508f%3a447a22b8%3bTelerik.Sitefinity.Resources%3aen%3a5dc3c919-0a12-4f73-a80a-1e8caebd05b6%3ac4ef6dcd%3a6f03d72a%3bTelerik.Sitefinity%2c+Version%3d15.2.8422.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a748e6699-9294-4f35-b2c2-22b3bf739189%3ac1fc658e%3a41f6c3a7" type="text/javascript"></script><input type="hidden" name="ctl00$ctl07" id="ctl07" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl07", "ctl00$ctl07");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+            <header class="site-header">
+				<section>
+					<div class="container">
+					    <a href="#" class="nav-icon fa fa-bars">
+					        <span aria-hidden="true"></span>
+					        <span class="sr-only">Nav</span> 
+				        </a>
+					    <a href="../../../../" class="logo">Insight for Living</a>
+<ul class="top-links">
+	<li><i class="fa fa-user"></i><a href="https://give.insight.org/login">Account</a></li>
+	<li><i class="fa fa-shopping-cart"></i><a href="https://store.insight.org/shoppingcart.aspx">Cart</a></li>
+	<li><i class="country"></i><a href="http://insightworld.org/">Change Country</a></li>
+</ul> 
+				    </div>
+				</section>
+				<nav>
+	                <div class="container">
+		                <div class="mobile-search">
+			                <fieldset>
+						        <input type="text" placeholder="Search" /><a class="search-btn">Go</a>
+			                </fieldset>
+		                </div>
+		                
+
+		    <ul class="main-nav clearfix">
+                <li class="no-sub"><a href="../../../../" id="cpNavigation_T35FE0F5B001_rptNav_A1">Home</a></li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_0" class="">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_0" href="../../../../broadcasts">Broadcasts <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_0" href="../../../../broadcasts/current-series">Current Broadcast</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_1">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_1" href="../../../../broadcasts/library">Broadcast Library</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_2" href="../../../../broadcasts/sunday-services">Sunday Services</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_3">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_3" href="../../../../broadcasts/podcast">Podcast</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_4">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_4" href="../../../../broadcasts/sts-studies">STS Bible Studies</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_5">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_5" href="../../../../broadcasts/broadcast-schedule">Broadcast Schedule</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_6">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_6" href="../../../../broadcasts/station-finder">Ways to Listen</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_7">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_7" href="../../../../broadcasts/international">International</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_8">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_8" href="../../../../broadcasts/pawsandtales">Paws & Tales</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_liItem_9">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_0_lnkItem_9" href="../../../../broadcasts/classic-series">Classic Series</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_1" class="active">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_1" href="../../../../resources">Resources <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_0" href="../../../biblical-resources">Biblical Resources</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_1" class="active">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_1" href="../../../daily-devotional">Daily Devotional</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_2" href="../../../bible">Insights on the Bible</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_3">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_3" href="../../../insights-by-topic">Insights by Topic</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_4">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_4" href="../../../article-library">Article Library</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_5">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_5" href="../../../church-resources">Church Resources</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_6">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_6" href="../../../how-to-know-god">How to Know God</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_7">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_7" href="../../../chucks-next-book">Chuck's Next Book</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_8">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_8" href="../../../video-library">Video Library</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_9">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_9" href="../../../insights-to-share">Insights to Share</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_10">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_10" href="../../../pastor&#39;s-blog">Pastor's Blog</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_11">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_11" href="../../../reframing-ministries-blog">Reframing Ministries</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_liItem_12">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_1_lnkItem_12" href="../../../../newsletters">Newsletters</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_2" class="">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_2" href="../../../../events">Events <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_lnkItem_0" href="../../../../events/conferences-and-tours">Conferences and Tours</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_liItem_1">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_lnkItem_1" href="../../../../events/faqs">FAQs</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_2_lnkItem_2" href="../../../../events/testimonials">Testimonials from Recent Attendees</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_3" class="">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_3" href="../../../../connect">Connect <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_0" href="../../../../connect/faqs">FAQS</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_1">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_1" href="../../../../connect/contact-us">Contact Us</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_2" href="../../../../connect/social-media">Social Media</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_3">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_3" href="../../../../connect/app">Mobile App</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_4">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_4" href="../../../../connect/share-your-story">Share Your Testimony</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_5">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_5" href="../../../../connect/bible-questions-and-counseling">Bible Questions and Counseling</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_liItem_6">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_3_lnkItem_6" href="../../../../connect/pray-for-ifl">Pray for IFL</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_4" class="">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_4" href="../../../../about">About <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_0" href="../../../../about/about-insight-for-living-ministries">About Insight for Living</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_1">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_1" href="../../../../about/essential-beliefs">Essential Beliefs</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_2" href="../../../../about/chuck-swindoll">Chuck Swindoll</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_3">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_3" href="../../../../about/questions-about-chuck">Questions about Chuck</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_4">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_4" href="../../../../about/leadership">Leadership</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_5">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_5" href="../../../../about/where-donations-go">Where Donations Go</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_6">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_6" href="../../../../about/vision-195">Vision 195</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_7">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_7" href="../../../../about/opportunities">Work With Us</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_liItem_8">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_4_lnkItem_8" href="../../../../about/volunteer">Volunteer Opportunities</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_5" class=" no-sub">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_5" href="../../../../online-store">Store <i class="fa"></i></a>
+               
+          </li>
+     
+          <li id="cpNavigation_T35FE0F5B001_rptNav_liItem_6" class="">
+               <a id="cpNavigation_T35FE0F5B001_rptNav_lnkItem_6" href="../../../../donate">Donate <i class="fa"></i></a>
+               
+                        <ul class="subnav">
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_0">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_0" href="../../../../donate/donate-today">Give Now</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_1">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_1" href="../../../../donate/give-monthly">Give Monthly</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_2">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_2" href="../../../../donate/my-account">My Account</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_3">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_3" href="../../../../donate/stock-and-certificate-transfers">Giving Through Stock Transfers</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_4">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_4" href="../../../../donate/planned-giving">Planned Giving</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_5">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_5" href="../../../../donate/giving-history">Giving History</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_6">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_6" href="../../../../donate/why-support-ifl">Why Give</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_7">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_7" href="../../../../donate/monthly-letter-from-chuck">This Month's Letter</a>
+                        </li>
+                    
+                        <li id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_liItem_8">
+                            <a id="cpNavigation_T35FE0F5B001_rptNav_rptSubNav_6_lnkItem_8" href="../../../../donate/vision-195">Vision 195</a>
+                        </li>
+                         
+                        </ul>
+                    
+          </li>
+     
+			<li class="search"><a class="fa fa-search"></a>
+				<div>
+					<fieldset>
+						 <input type="text" placeholder="Search" /><a class="search-btn">Go</a>
+					</fieldset>
+				</div>	
+			</li>
+          </ul>
+     
+
+
+
+	                </div>
+                </nav>
+		    </header>
+		    <main class="sub-layout">
+			    <div class="container">
+				    <div class="row">
+				        <aside class="col-md-2 col-sm-3">
+						    
+
+    
+    
+    
+    
+
+    
+               
+                  <h6 class="hidden-xs">Daily Devotional</h6>
+		  <h6 class="visible-xs"></h6>
+                    <ul class="column-subnav">
+                
+                            <li>
+                                <a href="/resources/daily-devotional/devotional-library">Devotional Library</a>          
+                            </li>
+                         
+          </ul>
+                  
+                  
+                 
+					    </aside>
+					    <section class="sub-content clearfix col-md-10 col-sm-9">
+					        <div class="page-header clearfix">
+							    
+<div class='sfContentBlock'><h1>Insight for Today<br>
+<small>A Daily Devotional by Pastor Chuck Swindoll</small></h1>
+
+</div>
+							    <p class="social">Follow us: <a class="fa fa-facebook" href="https://www.facebook.com/pages/Insight-for-Living/90063340236?ref=ts"></a><a class="fa fa-twitter" href="https://twitter.com/ifl_usa"></a><a class="fa fa-pinterest-p" href="https://www.pinterest.com/insight4living/"></a><a class="fa fa-youtube" href="https://www.youtube.com/user/insightforliving"></a></p>
+						        
+
+                            </div>
+					        <div class="content-divider clearfix">
+					            <div class="content">
+                                    
+<div id="cpContent_C002">
+	
+
+<div class="sfBreadcrumbWrp">
+    <span id="cpContent_C002_ctl00_ctl00_BreadcrumbLabel" class="sfBreadcrumbLabel" style="display:none;"></span>
+    <div id="ctl00_cpContent_C002_ctl00_ctl00_Breadcrumb" class="RadSiteMap RadSiteMap_Default">
+		<!-- 2024.3.805.462 --><input id="ctl00_cpContent_C002_ctl00_ctl00_Breadcrumb_ClientState" name="ctl00_cpContent_C002_ctl00_ctl00_Breadcrumb_ClientState" type="hidden" />
+	</div>
+</div>
+</div><div class='sfContentBlock text hidden'><!--<p><a href="https://give.insight.org/default.aspx?p=donation&amp;ga=webdevoheader"><img alt="Thank You for Giving with Joy and Faith" src="https://salemnet.vo.llnwd.net/o29/insightforliving/images/ifl-usa/content/ascendio/resources/devotional/201712-cye.jpg" style="border-width: 0px; border-style: solid;" /></a></p>-->
+
+</div> 
+
+            
+    	<div class="text">
+            
+          <h2 class="content-header line"><div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00">
+	        
+            
+            
+            <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_textLabel_read" class="sfTxtContent" data-empty-label="not set">
+		Cease Striving
+	</div>
+            
+            <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_characterCounter_read">
+		
+	</div>
+        
+<div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ConditionalTemplates" style="display:none;">
+		<div id="ClientTemplatePanel_ctl00">
+	
+            
+            <div>
+                <span id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_titleLabel_write_ctl00" class="sfTxtLbl sfInlineBlock"></span>
+                <span id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00">
+
+<div class="sfDetailsPopupWrp sfInlineBlock">
+    <a onclick="return false;" id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_btnToolTipTarget_ctl00"><span class="sfTooltip">(?)</span></a>
+    <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_wrpToolTip_ctl00" class="sfDetailsPopup" style="display: none;">
+        <span id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_tooltip_write_ctl00_ctl00_ctl00_wrpToolTip_ctl00_lblTitle_ctl00"></span>
+        
+    </div>
+</div>
+</span>
+            </div>
+            <a onclick="return false;" id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandButton_write_ctl00" class="sfOptionalExpander"></a>
+            <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00" class="sfFieldWrp">
+		
+                <input name="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_textBox_write_ctl00" type="text" id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_textBox_write_ctl00" class="sfTxt" />
+                <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_characterCounter_write_ctl00" class="sfFlRight sfMRight5">
+			
+		</div>
+                <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_descriptionLabel_write_ctl00" class="sfDescription">
+			
+		</div>
+                <div id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_exampleLabel_write_ctl00" class="sfExample">
+			
+		</div>
+                <p id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_expandableTarget_write_ctl00_characterCounterDescription_write_ctl00" class="sfExample"></p>
+            
+	</div>
+        
+</div>
+	</div>
+</div></h2>
+	  <div class="article-meta clearfix">
+	       <div class="half first article-date">
+	            March 14, 2018
+               </div>
+               <div class="half article-author">
+                 <span>by Pastor Chuck Swindoll</span><span>Scriptures: <span>Psalm 46:8–11</span></span>
+               </div>
+          </div>
+          <div class="addthis_sharing_toolbox"></div>
+            <div class="hidden"><p>The psalmist's inner battle with the grind of personal weakness, recorded in Psalm 46, ended with a truce. He arrived at a critical decision that required every ounce of faith he could muster. He decided to withdraw from battle.</p></div>
+	  <p>The psalmist's inner battle with the grind of personal weakness, recorded in Psalm 46, ended with a truce. He arrived at a critical decision that required every ounce of faith he could muster. He decided to withdraw from battle.</p>
+<p><strong>I Will Not Strive</strong></p>
+<p>The last four verses of his song (Psalm 46:8–11) are nothing short of magnificent. </p>
+<blockquote>
+<p>Come, behold the works of the L<small>ORD</small>,<br />
+Who has wrought desolations in the earth.<br />
+He makes wars to cease to the end of the earth;<br />
+He breaks the bow and cuts the spear in two;<br />
+He burns the chariots with fire.<br />
+"Cease striving and know that I am God;<br />
+I will be exalted among the nations, I will be exalted in the earth."<br />
+The L<small>ORD</small> of hosts is with us;<br />
+The God of Jacob is our stronghold. <em>Selah</em>.</p>
+</blockquote>
+<p>Following the grave situations of nature in upheaval (46:2–3) and Jerusalem under attack (46:4–7), once again the scene changes. No longer under siege within the city walls, the songwriter now surveys a battlefield. He invites us to view the mute reminders of war, a terrain littered with bodies and debris. Chariots lie on their sides, burned, and now rusty. Dust and debris cover broken bows and splintered spears. War itself has been decimated. The song describes a scene not unlike the aftermath of World War II. The beaches of Normandy; the cities of Berlin and Hiroshima; sections of London; the islands of Iwo Jima, Guadalcanal, and Okinawa. Rusty tanks. Sunken boats covered with barnacles. Concrete bunkers. A silence pervades. It is as though our God has said, "That is enough!" When the Lord acts, He's thorough.</p>
+<p>At this point (46:10), the writer speaks for God, who commands, </p>
+<blockquote>
+<p>"Cease striving and know that I am God; <br />
+I will be exalted among the nations, I will be exalted in the earth."</p>
+</blockquote>
+<p>The command "Cease striving" comes from the Hebrew imperative verb meaning "sink down, let drop, relax." Most people quote this verse in a soothing, reassuring tone, like a serene invitation to enjoy the fellowship of God. It is, in fact, a rebuke. Some scholars say it's addressed to the nations attacking God's covenant people. Others say God is rebuking the Hebrews for their lack of trust in Him. It's most likely both. The composer depicts the Lord as an angry parent breaking up a fight between siblings. While He's angry with the nations making war against His people, He's equally upset with the violence of His people, who have turned to warfare rather than a complete trust in Him. There's a subtle suggestion that their aggressive attempts to defend themselves are making matters worse rather than better.</p>
+<p>Does this sound familiar? Do you live in strife and panic? Is there a fretful spirit about you? Have your self-protective attempts caused more harm than good? Do you know that God wants to give you rest? Hebrews 4:9 promises: "So there remains a Sabbath rest for the people of God." In response to your realization of personal weakness, God has called you to "cease striving," to end the perpetual, frenetic grind to overcome difficulties too big for you.</p>
+<p>Does this mean we should slip into neutral and do nothing? Hardly. It means we first enter that rest He has provided (Hebrews 4:11), and then face the situation without panic or strife. If He wants us involved, He will give our minds clarity, removing any doubt as to what we should do. Our responsibility is to enter deliberately into His invisible sanctuary of rest, to trust Him completely for safety and provision. That is our best preparation for battle; to be filled and surrounded by His Sabbath rest. It is amazing what that does to stop the grind of personal weakness.</p>
+<p>In the final analysis, it is the Lord's job to provide the victory over every one of our weaknesses. He can handle whatever is needed. Our striving will never do it.</p>
+<p>Selah!</p>
+           <div class="tweet-this">
+                     <p>In the final analysis, it is the Lord's job to provide the victory over every one of our weaknesses.</p>
+                     <span class="tweet-attr">&mdash; <span>Charles R. Swindoll</span></span>
+                     <a class="tweet-button btn" target="_blank"><span class="fa fa-twitter"></span>Tweet This</a>
+                    </div> 
+                          
+<script>
+    var something = 'In the final analysis, it is the Lord's job to provide the victory over every one of our weaknesses.';
+    if (something.length > 0) {
+       
+    } else {
+        $('.tweet-this').addClass('hide');
+    }
+</script>
+             
+          <div class="footnote">
+               <p>Adapted from  Charles R. Swindoll, <em><a href="https://store.insight.org/p-1237-living-the-psalms-encouragement-for-the-daily-grind-emby-charles-r-swindollem.aspx" target="_blank"><em>Living the Psalms: Encouragement for the Daily Grind</em></a></em> (Brentwood, Tenn.: Worthy Publishing, a division of Worthy Media, Inc., 2012). Copyright © 2012 by Charles R. Swindoll, Inc. All rights are reserved. Used by permission.</p>
+          </div>     
+          <script src="https://apis.google.com/js/client.js"></script>
+            <script type="text/javascript">var related_products = '1668, 1792, 1775';</script>
+    
+      	</div>
+    <input id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ClientState" name="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ClientState" type="hidden" /><span id="ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer" style="display:none;"></span><span></span><div class='sfContentBlock0'><div class="text">
+<div class="alert alert-warning">
+<h3>Sometimes They Come True  </h3>
+<p>Do you dream while you're awake? Pastor Chuck Swindoll thinks those are <a href="https://insight.org/resources/video-library/individual/44/daring-to-dream" title="" class="" target="">the most important kinds of dreams</a>&nbsp;and can even result in some beautiful changes in your life.
+</p>
+</div>
+<!--<p>Do you have a <a href="https://insight.org/connect/contact-us/share-your-testimony?ga=devofooter" title="" class="" target="">testimony to share</a>&nbsp;with us? We’d love to hear it!</p>-->
+<!--<div class="alert alert-warning">--></div>
+
+</div>
+                                </div>
+                                <div class="sidebar">
+								     
+<div class='sfContentBlock'><a name="signup"></a>
+
+</div>
+
+<div class="signup-form form-bg">
+    <h6>Get Devotional E-mails</h6>
+    <p>Sign up to receive Chuck Swindoll's Daily Devotional in your inbox seven days a week.</p>
+	<div class="form-group">
+	    
+	            <div id="cpSidebarContent_C007_pnlEmailSignup">
+	
+	                
+                    
+                    <label for="cpSidebarContent_C007_txtEmail" id="cpSidebarContent_C007_lblEmail" class="sr-only">Email address</label>
+	                <input name="ctl00$cpSidebarContent$C007$txtEmail" id="cpSidebarContent_C007_txtEmail" class="form-control" placeholder="Email Address" type="email" />
+                    <div class="error">
+                        
+                    </div>
+                    <div class="error">
+                        
+                    </div>
+                    <input type="submit" name="ctl00$cpSidebarContent$C007$btnSubmit" value="Sign up" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpSidebarContent$C007$btnSubmit&quot;, &quot;&quot;, true, &quot;vgEmailUpdates_9421431&quot;, &quot;&quot;, false, false))" id="cpSidebarContent_C007_btnSubmit" class="btn" />
+	            
+</div>
+	        
+	</div>
+</div>
+<div class='sfContentBlock'><br />
+
+</div><div class='sfContentBlock'><div class="widget"><header><img alt="" src="/img/icon-openbook.png" data-sf-ec-immutable="" /><h4>Featured Resources</h4></header><ul class="sidebar-list w-image related-resources"><li><img alt="" src="https://store.insight.org/images/Product/medium/LTSPB.jpg" data-sf-ec-immutable="" /><div class="side-content">Devotionals
+ <a class="btn" href="https://store.insight.org/s-76-devotionals.aspx?ga=devopage" data-sf-ec-immutable="">Browse</a>
+ </div></li><li class="default"><img alt="" src="https://store.insight.org/images/Product/medium/SSBHB.jpg
+    " data-sf-ec-immutable="" /><div class="side-content">The Swindoll Study Bible
+                <a class="btn" href="https://store.insight.org/p-1816-the-swindoll-study-bible-nlt.aspx?ga=devopage" data-sf-ec-immutable="">Browse</a>
+ </div></li><li class="default"><img alt="" src="https://store.insight.org/images/Product/medium/STSHC.jpg
+    " data-sf-ec-immutable="" /><div class="side-content">Chuck's Books
+                <a class="btn" href="https://store.insight.org/s-171-chucks-books.aspx?ga=devopage" data-sf-ec-immutable="">Browse</a>
+ </div></li><li class="default"><img alt="" src="https://store.insight.org/images/Product/medium/SLIV07HB.jpg
+    " data-sf-ec-immutable="" /><div class="side-content">Swindoll's Living Insights Bible Commentaries
+                <a class="btn" href="https://store.insight.org/s-172-swindolls-living-insights-bible-commentaries.aspx?ga=devopage" data-sf-ec-immutable="">Browse</a>
+ </div></li></ul></div><!--/.widget-->
+
+</div>
+							    </div>
+                            </div>
+					    </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <section class="banner">
+					<div class="container">
+						
+<h2 class="heading-line"><span>Insight for Living Broadcast<br /></span></h2><div class="row"><div class="col-sm-6"><img src="https://insightforliving.swncdn.com//images/default-source/Touchpoints/broadcast.jpg?sfvrsn=48e8778e_2" title="broadcast" alt="broadcast" /></div><div class="col-sm-6"><blockquote><p>Thanks, Chuck, for all your messages you share. So many are so timely for me personally. The words just jump up and minister to heart and soul. I share them with family, friends, and my work partners. You are the blessing to others our Father
+                wanted you to be. Thank you for taking the time and making the effort to be so.</p><cite>&ndash;M. J. from Rockwall, TX</cite>
+ </blockquote><a class="btn impact" href="https://give.insight.org/donate/give?ga=testimonial-resources" title="" target="" data-sf-ec-immutable="">Help Us Impact Listeners&rsquo; Lives</a>
+ </div></div> 
+
+					</div>
+				</section>
+				<section class="footer-content">
+			        <div class="container">
+					    <div class="row">
+					        <div class="col-lg-8 col-md-7 links clearfix">
+						        
+<div class='sfContentBlock'><div><h6>Welcome</h6><ul><li><a href="/about/about-insight-for-living-ministries">Our Mission</a></li><li><a href="/about/chuck-swindoll">Chuck Swindoll</a></li><li><a href="/about/essential-beliefs">Essential Beliefs</a></li><li><a href="http://www.vision195.com" data-sf-ec-immutable="">Vision 195</a></li><li><a href="http://www.insight.org/resources/insights-by-topic/how-to-know-god" data-sf-ec-immutable="">How to Know God</a></li><li><a href="https://thebookshoppefrisco.com/" target="_blank" data-sf-ec-immutable="">The Book Shoppe &amp; Coffee</a></li></ul></div><div><h6>Resources</h6><ul><li><a href="/resources/insights-by-topic">Insights by Topic</a></li><li><a href="/resources/bible">Insights on the Bible</a></li><li><a href="/resources/article-library">Article Library</a></li><li><a href="/resources/daily-devotional">Daily Devotional</a></li><li><a href="/resources/video-library">Videos</a></li><li><a href="/resources/church-resources">Church Resources</a></li></ul></div><div><h6>Donate</h6><ul><li><a href="https://give.insight.org/default.aspx?p=donation&amp;ga=footer-text" data-sf-ec-immutable="">Donate Now</a></li><li><a href="/connect/faqs/donations-receipts">Offline Giving</a></li><!-- <li><a href="/donate/tax-wise-giving" data-sf-ec-immutable="">Tax-Wise Giving</a></li>-->
+ <li><a href="/donate/stock-and-certificate-transfers">Stock Transfers</a></li><li><a href="/donate/planned-giving">Wills and Estate Planning</a></li><li><a href="/donate/why-support-ifl">Why Support IFL?</a></li><li><a href="/donate/why-support-ifl/where-does-your-donation-go">Where Donations Go</a></li><li><a href="https://give.insight.org/login" data-sf-ec-immutable="">My Donations</a></li></ul></div><div><h6>Contact</h6><ul><li><a href="/connect/contact-us">Contact Us</a></li><li><a href="/connect/faqs">FAQs / Email</a></li><li><a href="/connect/contact-us/international-offices">International Offices</a></li><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-of-use">Terms of Use</a></li><li><a href="/connect/faqs/copyrights-permission-requests">Rights &amp; Permissions</a></li></ul></div><style>/* make donate in main nav blue */
+
+    .main-nav&gt;li:nth-child(8) {
+        background: none;
+    }
+
+    .main-nav&gt;li:nth-child(8).expand&gt;a .fa {
+        color: inherit;
+    }
+
+    @media (min-width: 768px) {
+        .main-nav&gt;li:nth-child(8) {
+            border-left: 1px solid #2A3B60;
+            border-right: 1px solid #4C6398;
+            border-bottom: 0 none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .main-nav&gt;li:nth-child(8)&gt;a {
+            color: inherit;
+        }
+    }
+
+    /* override: make donate in main nav jade green: */
+
+    .main-nav&gt;li:nth-child(8) {
+        background: #678e53;
+    }
+
+    @media (min-width: 768px) {
+        .main-nav&gt;li:nth-child(8) {
+            border-right: 1px solid #749f5d;
+        }
+    }
+</style>
+
+</div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 devotional clearfix">
+                                
+
+
+<div class="signup-form form-bg">
+    <h6>Email Updates</h6>
+    <p>Sign up to receive e-mail from Insight for Living.</p>
+	<div class="form-group">
+	    
+	            <div id="cpFooterDevotional_T35FE0F5B005_pnlEmailSignup">
+	
+	                
+                    
+                    <label for="cpFooterDevotional_T35FE0F5B005_txtEmail" id="cpFooterDevotional_T35FE0F5B005_lblEmail" class="sr-only">Email address</label>
+	                <input name="ctl00$cpFooterDevotional$T35FE0F5B005$txtEmail" id="cpFooterDevotional_T35FE0F5B005_txtEmail" class="form-control" placeholder="Email Address" type="email" />
+                    <div class="error">
+                        
+                    </div>
+                    <div class="error">
+                        
+                    </div>
+                    <input type="submit" name="ctl00$cpFooterDevotional$T35FE0F5B005$btnSubmit" value="Sign up" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpFooterDevotional$T35FE0F5B005$btnSubmit&quot;, &quot;&quot;, true, &quot;vgEmailUpdates_5426390&quot;, &quot;&quot;, false, false))" id="cpFooterDevotional_T35FE0F5B005_btnSubmit" class="btn" />
+	            
+</div>
+	        
+	</div>
+</div>
+
+                            </div>
+					    </div>
+					    <div class="row">
+					        <div class="col-sm-12 copy-follow">
+					            <hr />
+						        <p>© 2025 Insight for Living. <span>All rights reserved.</span></p>
+                                
+<div class='sfContentBlock'><p class="social">Follow us: <a class="fa fa-facebook" href="https://www.facebook.com/pages/Insight-for-Living/90063340236?ref=ts"></a><a class="fa fa-twitter" href="https://twitter.com/ifl_usa"></a><a class="fa fa-pinterest-p" href="https://www.pinterest.com/insight4living/"></a><a class="fa fa-youtube" href="https://www.youtube.com/user/insightforliving"></a></p>
+
+</div>
+                            </div>
+					    </div>
+                    </div>
+			    </section>
+		    </footer>
+        
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BFECB40D" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="YEDwmt9BM4iqNVO3VuXauMfm5CDd4gwT3AUve2pLHnXuPicSkMxLJS9SLXxXepYD+evYDh0qX3sNg+bOOwYePQoYgjD6o299B1btAKTU5NFFcKvydu9/cs0mlquQEagPLe8OPHfe+pOtww/fMj3Dm0CDqVeblMoxmOu+mK9DY+seLKGD5VL5EqJnwLqkySMG" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl07_TSM');//]]>
+</script>
+<script type="text/javascript">$(window).bind("load", function() {
+	// After RefTagger has rendered a .rtBibleRef link,
+	// replace reftagger references for MESSAGE to MSG
+	$('.rtBibleRef').each(function () {
+		$(this).html($(this).html().replace('MESSAGE', 'MSG'));
+	});
+});</script><script type="text/javascript">	
+if( related_products.length > 0 ) {
+	$( ".widget ul.related-resources li.default").hide().remove();
+	var products = related_products.split(",", 3);
+
+	for (i = 0; i < products.length; i++) { 
+		$.getJSON("//ip.iflmedia.org/api/store-product.php?callback=?&p="+products[i], function(result){
+			var productID = result.productID;
+			var imageURL = result.imageURL;
+			var title = result.title;
+			var product_html = '<li style="display: none;"><img alt="'+ title +'" src="https://store.insight.org/images/Product/medium/'+ imageURL +'" /><div class="side-content">'+ title +'<a class="btn" href="https://store.insight.org/p-'+ productID +'.aspx?ga=devopage">Browse</a></div></li>';
+				
+			$( ".widget ul.related-resources").append( product_html );
+			$( ".widget ul.related-resources li").fadeIn();
+		});
+	}
+}
+</script>
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl08_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2024.3.805.462, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en:f8b69b2a-0573-4688-b25b-5ffc3bc9c1e1:580b2269:eb8d8a8e';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_cpContent_C002_ctl00_ctl00_Breadcrumb"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.Fields.TextField, {"_allowNulls":false,"_conditionalTemplatesContainerId":"ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ConditionalTemplates","_currentCondition":"displaymode-equal-read","_isLocalizable":false,"_maxChars":0,"_readOnlyReplacement":null,"_textBoxId":"textBox_write","_textLabelId":"textLabel_read","_trimSpaces":false,"_unit":null,"conditionDictionary":{"displaymode-equal-read":"ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_conditionalTemplate","displaymode-equal-write":"ClientTemplatePanel_ctl00"},"controlErrorCssClass":null,"dataFieldName":null,"dataFormatString":null,"defaultValue":"Cease Striving","description":null,"descriptionElement":$get("ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_descriptionLabel_read"),"displayMode":0,"example":null,"fieldName":null,"labelElement":$get("ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_textLabel_read"),"suffix":"_ctl00","title":null,"titleElement":$get("ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00_ctl00_ctl00_titleLabel_read"),"validatorDefinition":"{\"AlphaNumericViolationMessage\":\"Non alphanumeric characters are not allowed.\",\"ComparingValidatorDefinitions\":[],\"CurrencyViolationMessage\":\"You have entered an invalid currency.\",\"EmailAddressViolationMessage\":\"You have entered an invalid email address.\",\"ExpectedFormat\":0,\"IntegerViolationMessage\":\"You have entered an invalid integer.\",\"InternetUrlViolationMessage\":\"You have entered an invalid URL.\",\"MaxLength\":0,\"MaxLengthViolationMessage\":\"Too long\",\"MaxValue\":null,\"MaxValueViolationMessage\":\"Too big\",\"MessageCssClass\":null,\"MessageTagName\":\"div\",\"MinLength\":0,\"MinLengthViolationMessage\":\"Too short.\",\"MinValue\":null,\"MinValueViolationMessage\":\"Too small.\",\"NonAlphaNumericViolationMessage\":\"Alphanumeric characters are not allowed.\",\"NumericViolationMessage\":\"You have entered an invalid number.\",\"PercentageViolationMessage\":\"You have entered an invalid percentage.\",\"RecommendedCharactersCount\":null,\"RegularExpression\":null,\"RegularExpressionSeparator\":null,\"RegularExpressionViolationMessage\":\"Invalid format\",\"Required\":null,\"RequiredViolationMessage\":\"Required field.\",\"ResourceClassId\":\"\",\"USSocialSecurityNumberViolationMessage\":\"You have entered an invalid US social security number.\",\"USZipCodeViolationMessage\":\"You have entered an invalid US ZIP code.\",\"ValidateIfInvisible\":true}","value":"Cease Striving"}, null, null, $get("ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ctrl0_ctl00"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$cpContent$C001$detailBlogPostsFrontend$ctl00$ctl00$SingleItemContainer","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ItemContainer","DataService":{}}},"_virtualItemCount":1,"clientStateFieldID":"ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer_ClientState","renderMode":1}, null, null, $get("ctl00_cpContent_C001_detailBlogPostsFrontend_ctl00_ctl00_SingleItemContainer"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Web.UI.UserPreferences, {"_timeOffset":"-21600000","_userBrowserSettingsForCalculatingDates":true,"timeZoneDisplayName":"(UTC-06:00) Central Time (US \u0026 Canada)","timeZoneId":"Central Standard Time"}, null, null);
+});
+//]]>
+</script>
+</form>	
+	    
+	<script type="text/javascript" src="/js/plugins.min.js"></script>
+	<script type="text/javascript" src="/js/main.min.js?v=1.5"></script>
+
+		<script>
+			var refTagger = {
+				settings: {
+					bibleVersion: "NLT",
+					caseInsensitive: !false,
+					noSearchClassNames: ["noRef"],          
+					socialSharing: [],
+					tagChapters: true
+				}
+			};
+			(function(d, t) {
+				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+				g.src = "//api.reftagger.com/v2/RefTagger.js";
+				s.parentNode.insertBefore(g, s);
+			}(document, "script"));
+		</script>
+    <!-- Google code here -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1629712-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

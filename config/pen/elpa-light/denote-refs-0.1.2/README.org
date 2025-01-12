@@ -1,0 +1,33 @@
+#+title: Denote-Refs - Show links and backlinks in Denote notes
+
+Denote-Refs shows the list of linked file and backlinks to current
+file.  This list is shown just below the front matter of your note.
+To enable do =M-x denote-refs-mode=.  You can also enable it in your
+~denote-directory~ with =.dir-locals.el=.
+
+* Installation
+
+Denote-Refs isn't available on any ELPA right now.  So, you have to
+follow one of the following methods:
+
+** Quelpa
+
+#+begin_src emacs-lisp
+(quelpa '(denote-refs
+          :fetcher git
+          :url "https://codeberg.org/akib/emacs-denote-refs.git"))
+#+end_src
+
+** Straight.el
+
+#+begin_src emacs-lisp
+(straight-use-package
+ '(denote-refs
+   :type git
+   :repo "https://codeberg.org/akib/emacs-denote-refs.git"))
+#+end_src
+
+** Manual
+
+Download the ~denote-refs.el~ file and put it in your ~load-path~.
+You need to have Denote installed.

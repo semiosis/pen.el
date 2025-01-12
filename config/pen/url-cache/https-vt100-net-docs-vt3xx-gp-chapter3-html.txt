@@ -1,0 +1,1658 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:24:11 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Wed, 25 Oct 2023 10:58:25 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:24:11 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 15121
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 3</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter2.html">Chapter 2</a><a href="contents.html">Contents</a><a href="chapter4.html">Chapter 4</a></nav>
+</header>
+<h1 id="S3"><span class="chapnum">3</span> Write Control Command</h1>
+<p>The write control command controls how the terminal draws images on the
+screen. Write control command options let you set attributes and parameters
+for writing at the pixel level. You can perform 10 major tasks with write control
+commands.</p>
+<ul class="col2 bare">
+<li>PV multiplication</li>
+<li>Pattern control</li>
+<li>Foreground intensity selection</li>
+<li>Foreground plane control</li>
+<li>Overlay writing</li>
+<li>Replace writing</li>
+<li>Complement writing</li>
+<li>Erase writing</li>
+<li>Negative pattern control</li>
+<li>Shading control</li>
+</ul>
+<p>You can use these write controls in other commands, as temporary write controls.
+For example, you can use temporary write controls in vector, curve,
+screen, and position commands. The terminal uses the temporary setting until
+you use a new command or another temporary option. For more information,
+see the chapter on the particular command.</p>
+<h2 id="S3.1">PV Multiplication – M</h2>
+<p>This option lets you define a multiplication factor for pixel vector (PV) values
+used in moving and drawing tasks. Normally, a PV value tells the terminal to
+move or draw through one screen coordinate in a certain direction. A multiplication
+factor of <b>n</b> tells the terminal to move or draw through <b>n</b> coordinates for
+each PV value.</p>
+<p>You use the following format for the PV multiplication option. For more information,
+see the "<a href="chapter1.html#S1.11">Pixel Vector (PV) System</a>" section in <a href="chapter1.html">Chapter 1</a>.</p>
+<div class="example"><p>W(M&lt;multiplication factor&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a write control command.</p>
+<p><b>M</b> identifies a PV multiplication option.</p>
+<p><b>&lt;multiplication factor&gt;</b> is a numeric value to use for the PV multiplication factor.</p></div>
+<p>You can temporarily change the PV multiplication factor for some commands,
+such as position, screen, vector, and circle commands. To select a temporary
+value, you use a temporary write control in one of those commands. The temporary
+value stays in effect until the next command or temporary write control.
+For more information, see the chapter for a specific command.</p>
+<h2 id="S3.2">Pattern Control – P</h2>
+<p>The VT300 has an 8-bit pattern memory that lets you define the appearance of
+lines and shaded areas in ReGIS drawings. ReGIS uses this pattern for all
+writing tasks. Each bit in the pattern turns one pixel on or off.</p>
+<p>For example, suppose you use a vector command to draw a line on the screen.
+As the line is drawn, ReGIS reads the pattern memory bit by bit to determine
+if the next pixel should be on (1) or off (0). A 1 value sets the pixel to the
+foreground shade/color. A 0 value sets the pixel to the background shade/color.</p>
+<p>The VT300 starts each writing task from the first position in pattern memory.
+The writing cycles through the complete 8-bit pattern, unless you use a new
+command key letter. If you want a command to start at the first position of
+pattern memory, start the command with a command key letter.</p>
+<p>For example, suppose you draw several vectors or curves in a row. Some vectors
+or curves must start at the first position of pattern memory. Start those
+commands with the command key letter.</p>
+<p>The default for pattern memory is all 1s. If you draw a line using the default
+pattern, the terminal sets all pixels in the line to the foreground shade/color.
+You can change the default pattern with one of the three pattern control
+options.</p>
+<ul>
+<li>Select standard pattern</li>
+<li>Specify binary pattern</li>
+<li>Pattern multiplication</li>
+</ul>
+<h3 id="S3.2.1">Select Standard Pattern</h3>
+<p>There are 10 standard write patterns available. You select a pattern by its assigned
+value: 0 through 9. You use the following format for the standard pattern
+select option.</p>
+<div class="example"><p>W(P&lt;pattern number&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>P</b> identifies a pattern control option.</p>
+<p><b>&lt;pattern number&gt;</b> is a number (0 through 9) that selects 1 of the 10
+standard writing patterns.</p></div>
+<p><a href="#F3-1">Figure 3-1</a> shows how patterns 1 through 9 appear on the screen. Pattern 0 is
+all bits off. <a href="#T3-1">Table 3-1</a> lists the bit pattern for each standard pattern. <a href="#F3-2">Figure 3-2</a>
+shows a closer view of each pattern, using a vector that is 24 pixels long.</p>
+
+<figure id="F3-1">
+<img src="ma-0675-83.png" alt=""/>
+<figcaption>Figure 3-1 Standard Patterns</figcaption>
+</figure>
+
+<table id="T3-1" class="majortable">
+<caption>Table 3-1 Standard Patterns</caption>
+<thead>
+<tr>
+<th>Pattern Number</th>
+<th>Binary Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>00000000</td>
+<td>All-off write pattern</td>
+</tr>
+<tr>
+<td>1</td>
+<td>11111111</td>
+<td>All-on write pattern</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11110000</td>
+<td>Dash pattern</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11100100</td>
+<td>Dash-dot pattern</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10101010</td>
+<td>Dot pattern</td>
+</tr>
+<tr>
+<td>5</td>
+<td>11101010</td>
+<td>Dash-dot-dot pattern</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10001000</td>
+<td>Sparse dot pattern</td>
+</tr>
+<tr>
+<td>7</td>
+<td>10000100</td>
+<td>Asymmetrical sparse dot pattern</td>
+</tr>
+<tr>
+<td>8</td>
+<td>11001000</td>
+<td>Sparse dash-dot pattern</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10000110</td>
+<td>Sparse dot-dash pattern</td>
+</tr>
+</tbody>
+</table>
+
+<figure id="F3-2">
+<img src="ma-0407-86.png" alt=""/>
+<table class="command-example">
+<tbody>
+<tr>
+<td>NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td><ol>
+<li>All patterns are shown with multiplication value of 1 and negative pattern control off.</li>
+<li>All patterns are shown for 3 reads of pattern memory, with 1st read starting at the 1st bit.</li>
+<li>When adjacent pixels are on, they appear as a solid line on the screen.</li></ol></td>
+</tr>
+</tbody>
+</table>
+<figcaption>Figure 3-2 Detailed View of Standard Patterns</figcaption>
+</figure>
+
+<h3 id="S3.2.2">Specify Binary Pattern</h3>
+<p>This option lets you create your own patterns, rather than using a standard
+pattern. The command format is similar to the format for the select standard
+pattern option. The difference is that you use a specific binary pattern instead
+of a standard pattern number. You use the following format for using a binary
+pattern.</p>
+<div class="example"><p>W(P&lt;binary pattern&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>P</b> identifies a pattern control option.</p>
+<p><b>&lt;binary pattern&gt;</b> is a pattern of 1 and 0 bits, from 2 to 8 bits long.</p></div>
+<p>You can use binary patterns up to 8 bits long (the size of pattern memory). If
+you specify more than 8 bits, the terminal uses only the last 8 bits of your
+pattern. If you specify less than 8 bits, the terminal repeats as much of your
+pattern as it can in the remaining bits of pattern memory.</p>
+<p>Patterns of 2, 4, or 8 bits will repeat as full subunits within the 8-bit pattern
+memory. Patterns of 3, 5, 6, or 7 bits will only repeat as far as possible.</p>
+<p><a href="#F3-3">Figure 3-3</a> shows examples of patterns you can create. Each pattern is a vector
+24 pixels long. You can see from this figure that patterns of 3, 5, 6, and 7 bits
+do not repeat as complete subunits.</p>
+
+<figure id="F3-3">
+<img src="ma-0408-86.png" alt=""/>
+<table class="command-example">
+<tbody>
+<tr>
+<td>NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td><ol>
+<li>P01 results in the same type of pattern as P4, except exactly opposite in on/off values.</li>
+<li>All patterns are shown with multiplication value of 1 and negative pattern control off.</li>
+<li>All patterns are shown for 3 reads of pattern memory, with 1st read starting at the 1st bit.</li>
+<li>When adjacent pixels are on, they appear as a solid line on the screen.</li></ol></td>
+</tr>
+</tbody>
+</table>
+<figcaption>Figure 3-3 Specified Binary Patterns</figcaption>
+</figure>
+
+<h3 id="S3.2.3">Pattern Multiplication</h3>
+<p>You can create a writing pattern that is longer than 8 pixels by specifying a
+multiplication factor for the 8-bit pattern memory. This factor determines how
+many pixels are affected by each bit in the 8-bit pattern memory. The minimum
+value is 1, the maximum value is 16. The default value is 2.</p>
+<p>You can use a standard pattern or a specified binary pattern. <a href="#F3-4">Figure 3-4</a> shows
+how multiplication factors can change the patterns from Figures <a href="#F3-2">3-2</a> and <a href="#F3-3">3-3</a>.</p>
+
+<figure id="F3-4">
+<img src="ma-0402-86.png" alt=""/>
+<table class="command-example">
+<tbody>
+<tr>
+<td>NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td><ol>
+<li>All patterns are shown for a single pass through pattern memory,
+starting at bit 1, at the specified multiplication value, with negative pattern control off.</li>
+<li>When adjacent pixels are on, they appear as a solid line on the screen.</li></ol></td>
+</tr>
+</tbody>
+</table>
+<figcaption>Figure 3-4 Examples of Pattern Multiplication</figcaption>
+</figure>
+
+<p>The following examples show the format of pattern multiplication commands.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Standard Pattern</th>
+<th>Specified Binary Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">W(P4(M5))</td>
+<td>W(P11000011(M3))</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>P4</b> identifies a pattern control option and selects standard pattern 4.</p>
+<p><b>M5</b> identifies a multiplication option and selects a factor of 5.</p>
+<p><b>P11000011</b> identifies a pattern control option and specifies a binary pattern to use for writing.</p>
+<p><b>M3</b> identifies a multiplication option and selects a factor of 3.</p></div>
+<h2 id="S3.3">Foreground Intensity – I</h2>
+<p>This option selects the foreground color/shade for an image, or for part of an
+image. On the VT330, you can use up to four shades in an image. On the
+VT340, you can use up to 16 colors/shades. You can only select shades/colors
+already loaded into the output map. See the "<a href="chapter2.html#S2.4">Output Mapping</a>" section in
+<a href="chapter2.html">Chapter 2</a>.</p>
+<p>You can use three forms of the foreground intensity option, depending on how
+you define the color/shade. The following examples show how.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Output Map Location</th>
+<th>RGB Specifier</th>
+<th>HLS Specifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">W(I0)</td>
+<td>W(I(R))</td>
+<td>W(I(H180L50S100))</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>I</b> identifies a foreground intensity.</p>
+<p><b>0</b> selects output map location 0 for the foreground color.</p>
+<p><b>R</b> is an RGB value that selects the output map location containing the color closest to red.</p>
+<p><b>H180L50S100</b> is an HLS value that selects the output map location containing
+the color closest to yellow.</p></div>
+<p>You use this option in combination with the background intensity option for
+the screen command. Both options have the same basic format, but start with
+different command key letters (W for write command, S for screen command).</p>
+<p>The foreground intensity option only selects the shade/color for writing that
+follows the option. This feature lets you select different colors for different
+parts of an image, without affecting other parts of the same image.</p>
+<p>One of the foreground shades/colors is always the same as the background. To
+see the background shade/color in the foreground, you must write that shade/color
+over another shade/color.</p>
+<p>When you select RGB or HLS colors, the VT300 compares your color to the
+colors stored in the output map and uses the closest match. However, the terminal's
+ability to compare colors is limited. If you select a color that is too
+different from those in the output map, the result is unpredictable.</p>
+<h2 id="S3.4">Plane Select Control – F</h2>
+<p>This option lets you select which graphics planes the terminal can write to. The
+option defines a code that selects the graphics planes used for writing tasks
+such as vectors, curves, and text. The default setting lets the terminal write to
+all planes.</p>
+<p>The VT330 has a 2-plane bitmap for pixel memory. This means each pixel has
+a 2-bit code, 1 bit for each plane. The 2-bit code selects one of four possible
+shades stored in the output map. The plane select option defines a 2-bit mask
+for the VT330, 1 bit for each plane.</p>
+<p>The VT340 has a 4-plane bitmap for pixel memory. This means each pixel has
+a 4-bit code, 1 bit in each plane. The 4-bit code selects 1 of 16 possible shades/colors
+stored in the output map. The plane select option defines a 4-bit mask
+for the VT340, 1 bit for each plane.</p>
+<p class="note">NOTE: The screen erase command erases all planes, regardless of the plane
+select control setting. See "<a href="chapter2.html#S2.7">Screen Erase Control</a>" in <a href="chapter2.html">Chapter 2</a>.</p>
+<p>You use the following format for the plane select option.</p>
+<div class="example"><p>W(F&lt;code number&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>F</b> identifies a plane select control option.</p>
+<p><b>&lt;code number&gt;</b> is a number that selects a 2-bit code (VT330) or 4-bit
+code (VT340). The code indicates which planes you can write to.</p>
+<p>For the VT330, you use a code number from 0 to 3. <a href="#T3-2">Table 3-2</a> shows you
+which planes these four codes select.</p>
+<p>For the VT340, you use a code number from 0 to 15. <a href="#T3-3">Table 3-3</a> shows you
+which planes these 16 codes select.</p>
+<p>Notice that the plane numbers in Tables <a href="#T3-2">3-2</a> and <a href="#T3-3">3-3</a> correspond to the
+binary numbers you use to access the pixels. The number in the <b class="columnheading">Code</b> column
+corresponds to the plane you are writing to.</p></div>
+<p class="note">NOTE: Whether you use a VT330 or VT340, remember to restore writing to all
+planes after using 1-plane or no-plane writing.</p>
+<table id="T3-2" class="majortable">
+<caption>Table 3-2 Selecting VT330 Planes for Writing*</caption>
+<thead>
+<tr>
+<th>Command</th>
+<th>Code</th>
+<th>Planes You Can Write To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W(F0)</td>
+<td>00</td>
+<td>None</td>
+</tr>
+<tr>
+<td>W(F1)</td>
+<td>01</td>
+<td>Plane 0</td>
+</tr>
+<tr>
+<td>W(F2)</td>
+<td>10</td>
+<td>Plane 1</td>
+</tr>
+<tr>
+<td>W(F3)</td>
+<td>11</td>
+<td>All planes</td>
+</tr>
+</tbody>
+</table>
+<table id="T3-3" class="majortable">
+<caption>Table 3-3 Selecting VT340 Planes for Writing</caption>
+<thead>
+<tr>
+<th>Command</th>
+<th>Code</th>
+<th>Planes You Can Write To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W(F0)</td>
+<td>0000</td>
+<td>None</td>
+</tr>
+<tr>
+<td>W(F1)</td>
+<td>0001</td>
+<td>Plane 0</td>
+</tr>
+<tr>
+<td>W(F2)</td>
+<td>0010</td>
+<td>Plane 1</td>
+</tr>
+<tr>
+<td>W(F3)</td>
+<td>0011</td>
+<td>Planes 0 and 1</td>
+</tr>
+<tr>
+<td>W(F4)</td>
+<td>0100</td>
+<td>Plane 2</td>
+</tr>
+<tr>
+<td>W(F5)</td>
+<td>0101</td>
+<td>Planes 0 and 2</td>
+</tr>
+<tr>
+<td>W(F6)</td>
+<td>0110</td>
+<td>Planes 1 and 2</td>
+</tr>
+<tr>
+<td>W(F7)</td>
+<td>0111</td>
+<td>Planes 0, 1, and 2</td>
+</tr>
+<tr>
+<td>W(F8)</td>
+<td>1000</td>
+<td>Plane 3</td>
+</tr>
+<tr>
+<td>W(F9)</td>
+<td>1001</td>
+<td>Planes 0 and 3</td>
+</tr>
+<tr>
+<td>W(F10)</td>
+<td>1010</td>
+<td>Planes 1 and 3</td>
+</tr>
+<tr>
+<td>W(F11)</td>
+<td>1011</td>
+<td>Planes 0, 1, and 3</td>
+</tr>
+<tr>
+<td>W(F12)</td>
+<td>1100</td>
+<td>Planes 2 and 3</td>
+</tr>
+<tr>
+<td>W(F13)</td>
+<td>1101</td>
+<td>Planes 0, 2, and 3</td>
+</tr>
+<tr>
+<td>W(F14)</td>
+<td>1110</td>
+<td>Planes 1, 2, and 3</td>
+</tr>
+<tr>
+<td>W(F15)</td>
+<td>1111</td>
+<td>All planes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S3.4.1">Applications of Plane Select Control</h3>
+<p>The plane select option changes the write mask to allow writing to each plane
+individually. You can use this operation for three main applications.</p>
+<ul>
+<li><p><strong>Complement writing</strong><br/>
+Complement writing (described later in this chapter) changes the
+bits of the bitmap to their opposite values. For example, in the
+VT330, complement writing changes a pixel with an intensity value
+of 3 (I3) to 0 (I0). However, if the plane select mask allows writing
+only at plane 0, then the new value is I1. if the write mask allows
+writing only to plane 1, then the new value is I2.</p></li>
+<li><p><strong>Overlays</strong><br/>
+You can draw a fixed image in one plane and an overlay for that
+image in another plane. For example, you can draw the fixed grid
+for a graph in one plane and the data for the graph in another
+plane.</p></li>
+<li><p><strong>Alternating displays</strong><br/>
+The VT330 lets you draw a separate image in each plane, if you
+limit each image to one shade. The VT340 lets you draw a separate
+image in each plane or any combination of planes. Each image has
+full pixel resolution. Remember, each image is limited to the background
+value (for pixel off) and a single foreground shade/color value
+(for pixel on).</p></li>
+</ul>
+<h2 id="S3.5">Writing Styles</h2>
+<p>There are four major writing styles you can use with the write control command:
+overlay, replace, complement, and erase. The writing style affects the
+way ReGIS draws images into the bitmap (graphics page memory). Each writing
+style affects pattern memory differently.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Writing Style</th>
+<th>Command</th>
+<th>Part of Pattern Memory Affected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first"><strong>Overlay</strong></td>
+<td><strong>V</strong></td>
+<td><strong>Foreground only (default).</strong></td>
+</tr>
+<tr>
+<td class="first">Replace</td>
+<td>R</td>
+<td>Foreground and background.</td>
+</tr>
+<tr>
+<td class="first">Complement</td>
+<td>C</td>
+<td>Foreground only. Ignores the foreground intensity.</td>
+</tr>
+<tr>
+<td class="first">Erase</td>
+<td>E</td>
+<td>Foreground only. Uses background intensity or color to overwrite foreground.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S3.5.1">Overlay Writing – V</h3>
+<p>Overlay writing lets you draw new images in the foreground only. Overlay writing
+does not affect the background.</p>
+<p>Pattern memory uses bitmap values of 1 for foreground, 0 for background.
+Overlay writing only changes those parts of the new image defined by
+1s (foreground). Bitmap values do not change for those parts of the new image
+defined by 0s (background).</p>
+<p>Overlay writing is the default setting for the VT300. You do not have to use a
+command to select overlay writing, unless you have used the complement,
+erase, or replace writing option.</p>
+<p>You use the following format for the overlay writing option.</p>
+<div class="example"><p>W(V)</p></div>
+<p>where</p>
+<div class="example"><p><b>V</b> identifies the overlay writing option.</p></div>
+<p><a href="#F3-5">Figure 3-5</a> shows an example of overlay writing. The shaded gray square is
+drawn first, then the slashed square. This figure uses the same basic graphic
+image used for the complement, erase, and replace writing examples that follow.
+However, the square is shaded light gray instead of black, so you can see
+the overlay.</p>
+
+<figure id="F3-5">
+<img src="ma-0687-83r.png" alt=""/>
+<figcaption>Figure 3-5 Overlay Writing Example</figcaption>
+</figure>
+
+<h3 id="S3.5.2">Replace Writing – R</h3>
+<p>Replace writing lets you draw new images in the foreground and the background.
+In the pattern memory bitmap, replace writing affects 1s (foreground)
+and 0s (background).</p>
+<p>You use the following format for the replace writing option.</p>
+<p class="example">W(R)</p>
+<p>where</p>
+<p class="example"><b>R</b> identifies the replace writing option.</p>
+<p><a href="#F3-6">Figure 3-6</a> shows a simple example that uses replace writing to draw a pattern
+over a shaded square. First the black square is drawn, then the slashed square
+is drawn after using the replace writing option. The slashed square is the same
+pattern shown in <a href="#F3-5">Figure 3-5</a> for overlay writing. You can compare the effects.</p>
+
+<figure id="F3-6">
+<img src="ma-0685-83r.png" alt=""/>
+<figcaption>Figure 3-6 Replace Writing Example</figcaption>
+</figure>
+
+<h3 id="S3.5.3">Complement Writing – C</h3>
+<p>Complement writing lets you write over an image in the "opposite" shade/color.
+The word "opposite" refers to the value of the shade/color in the terminal's
+bitmap, not the actual color produced on the screen.</p>
+<p>Complement writing affects only the foreground, ignoring the setting of the
+foreground intensity (I) option. In the pattern memory bitmap, complement
+writing only changes the parts of the image defined by 1s (foreground).</p>
+<p><a href="#F3-7">Figure 3-7</a> shows a simple example of complement writing. First a black square
+is drawn, then a slashed square. The slashed square is drawn in black, but
+turns white where it overlaps the black square. The rest of the pattern remains
+black. The pattern complements both the black square and the white background.</p>
+
+<figure id="F3-7">
+<img src="ma-0682-83r.png" alt=""/>
+<figcaption>Figure 3-7 Complement Writing Example</figcaption>
+</figure>
+
+<p>The VT330 bitmap provides 2 bits of memory for each pixel, 1 bit for each
+plane. Those 2 bits hold a binary code that points to one of four output map
+locations. Each output map location defines the intensity value for one shade.</p>
+<p>The VT340 bitmap provides 4 bits of memory for each pixel, 1 bit for each
+plane. Those 4 bits hold a binary code that points to 1 of 16 output map locations.
+Each output map location defines the intensity value for one shade/color.</p>
+<p>When you use complement writing to write over a pixel, the terminal changes
+the binary code for that pixel to its opposite value. The new binary code selects
+a new output map location. The following table shows how complementary writing
+changes binary codes. Output map locations are in parentheses.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first" colspan="2">VT330</th>
+<th colspan="2">VT340</th>
+</tr>
+<tr>
+<th class="first">Old value</th>
+<th>New value</th>
+<th>Old value</th>
+<th>New value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">00 (0)</td>
+<td>11 (3)</td>
+<td>0000 (0)</td>
+<td>1111 (15)</td>
+</tr>
+<tr>
+<td class="first">01 (1)</td>
+<td>10 (2)</td>
+<td>0011 (3)</td>
+<td>1100 (12)</td>
+</tr>
+<tr>
+<td class="first">10 (2)</td>
+<td>01 (1)</td>
+<td>0101 (5)</td>
+<td>1010 (10)</td>
+</tr>
+<tr>
+<td class="first">11 (3)</td>
+<td>00 (0)</td>
+<td>1111 (15)</td>
+<td>0000 (0)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The new shade/color is the shade/color stored in the new output location.</p>
+<p>Complement writing only affects the bitmap planes that you can write to. You
+select these planes with the plane select control option in this chapter. You can
+combine the plane select control and complement writing options. You use the
+following formats.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Complement Writing<br/>Alone</th>
+<th>Complement Writing<br/>With the Plane Select Control Option</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">W(C)</td>
+<td>W(F&lt;code number&gt;&gt;,C)</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies the complement writing option. If you use the C option alone,
+ReGIS uses the current value of the plane select control (F) option for
+complement writing. Complement writing ignores the foreground intensity
+setting.</p>
+<p><b>F&lt;code number&gt;</b> identifies the plane control option and specifies a code
+that selects which planes will be affected by the complement writing option.
+See the "<a href="#S3.4">Plane Select Control</a>" section in this chapter for a list of codes.</p></div>
+<p><a href="#T3-4">Table 3-4</a> shows how complement writing changes bitmap values
+in the VT340, based on the planes selected for writing.</p>
+<p><a href="#T3-5">Table 3-5</a> lists some examples of how complement writing changes bitmap values
+in the VT340, based on the planes selected for writing. The complete table
+would be 16 rows × 16 columns. The table does not show W(F3,C) through
+W(F13,C).</p>
+<table id="T3-4" class="majortable">
+<caption>Table 3-4 VT330 Bitmap Complemented Values</caption>
+<thead>
+<tr>
+<th rowspan="2">Initial Value</th>
+<th colspan="3">Complemented Value</th>
+</tr>
+<tr>
+<th>W(C)</th>
+<th>W(F1,C)</th>
+<th>W(F2,C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I0<br/>(00)</td>
+<td>I3<br/>(11)</td>
+<td>I1<br/>(01)</td>
+<td>I2<br/>(10)</td>
+</tr>
+<tr>
+<td>I1<br/>(01)</td>
+<td>I2<br/>(10)</td>
+<td>I0<br/>(00)</td>
+<td>I3<br/>(11)</td>
+</tr>
+<tr>
+<td>I2<br/>(10)</td>
+<td>I1<br/>(01)</td>
+<td>I3<br/>(11)</td>
+<td>I0<br/>(00)</td>
+</tr>
+<tr>
+<td>I3<br/>(11)</td>
+<td>I0<br/>(00)</td>
+<td>I2<br/>(10)</td>
+<td>I1<br/>(01)</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: The values listed for the <span class="roman">W(C)</span> command assume you can write to
+both planes. If you cannot write to both planes, then you can use the <span class="roman">W(F3,C)</span>
+command to produce the same values listed for <span class="roman">W(C)</span>.</p>
+<table id="T3-5" class="majortable">
+<caption>Table 3-5 VT340 Bitmap Complemented Values</caption>
+<thead>
+<tr>
+<th rowspan="2">Initial Value</th>
+<th colspan="4">Complemented Value</th>
+</tr>
+<tr>
+<th>W(C)</th>
+<th>W(F1,C)</th>
+<th>W(F2,C) ...</th>
+<th>W(F14,C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I0<br/>(0000)</td>
+<td>I15<br/>(1111)</td>
+<td>I1<br/>(0001)</td>
+<td>I2<br/>(0010)</td>
+<td>I14<br/>(1110)</td>
+</tr>
+<tr>
+<td>I1<br/>(0001)</td>
+<td>I14<br/>(1110)</td>
+<td>I0<br/>(0000)</td>
+<td>I3<br/>(0011)</td>
+<td>I15<br/>(1111)</td>
+</tr>
+<tr>
+<td>I2<br/>(0010)</td>
+<td>I13<br/>(1101)</td>
+<td>I3<br/>(0011)</td>
+<td>I0<br/>(0000)</td>
+<td>I12<br/>(1100)</td>
+</tr>
+<tr>
+<td>I3<br/>(0011)</td>
+<td>I12<br/>(1100)</td>
+<td>I2<br/>(0010)</td>
+<td>I1<br/>(0001)</td>
+<td>I13<br/>(1101)</td>
+</tr>
+<tr>
+<td>I4<br/>(0100)</td>
+<td>I11<br/>(1011)</td>
+<td>I5<br/>(0101)</td>
+<td>I6<br/>(0110)</td>
+<td>I10<br/>(1010)</td>
+</tr>
+<tr>
+<td>I5<br/>(0101)</td>
+<td>I10<br/>(1010)</td>
+<td>I4<br/>(0100)</td>
+<td>I7<br/>(0111)</td>
+<td>I11<br/>(1011)</td>
+</tr>
+<tr>
+<td>I6<br/>(0110)</td>
+<td>I9<br/>(1001)</td>
+<td>I7<br/>(0111)</td>
+<td>I4<br/>(0100)</td>
+<td>I8<br/>(1000)</td>
+</tr>
+<tr>
+<td>I7<br/>(0111)</td>
+<td>I8<br/>(1000)</td>
+<td>I6<br/>(0110)</td>
+<td>I5<br/>(0101)</td>
+<td>I9<br/>(1001)</td>
+</tr>
+<tr>
+<td>I8<br/>(1000)</td>
+<td>I7<br/>(0111)</td>
+<td>I9<br/>(1001)</td>
+<td>I10<br/>(1010)</td>
+<td>I6<br/>(0110)</td>
+</tr>
+<tr>
+<td>I9<br/>(1001)</td>
+<td>I6<br/>(0110)</td>
+<td>I8<br/>(1000)</td>
+<td>I11<br/>(1011)</td>
+<td>I7<br/>(0111)</td>
+</tr>
+<tr>
+<td>I10<br/>(1010)</td>
+<td>I5<br/>(0101)</td>
+<td>I11<br/>(1011)</td>
+<td>I8<br/>(1000)</td>
+<td>I4<br/>(0100)</td>
+</tr>
+<tr>
+<td>I11<br/>(1011)</td>
+<td>I4<br/>(0100)</td>
+<td>I10<br/>(1010)</td>
+<td>I9<br/>(1001)</td>
+<td>I5<br/>(0101)</td>
+</tr>
+<tr>
+<td>I12<br/>(1100)</td>
+<td>I3<br/>(0011)</td>
+<td>I13<br/>(1101)</td>
+<td>I14<br/>(1110)</td>
+<td>I2<br/>(0010)</td>
+</tr>
+<tr>
+<td>I13<br/>(1101)</td>
+<td>I2<br/>(0010)</td>
+<td>I12<br/>(1100)</td>
+<td>I15<br/>(1111)</td>
+<td>I3<br/>(0011)</td>
+</tr>
+<tr>
+<td>I14<br/>(1110)</td>
+<td>I1<br/>(0001)</td>
+<td>I15<br/>(1111)</td>
+<td>I12<br/>(1100)</td>
+<td>I0<br/>(0000)</td>
+</tr>
+<tr>
+<td>I15<br/>(1111)</td>
+<td>I0<br/>(0000)</td>
+<td>I14<br/>(1110)</td>
+<td>I13<br/>(1101)</td>
+<td>I1<br/>(0001)</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: The values shown for <span class="roman">W(C)</span> command assume that all planes are enabled for writing.
+If all planes are not enabled, then <span class="roman">W(F15,C)</span> produces the same values as <span class="roman">W(C)</span>.</p>
+<h3 id="S3.5.4">Erase Writing – E</h3>
+<p>This option changes the shade/color used for the writing commands that follow
+the option. In effect, you erase areas by writing over them with the background
+or foreground color. Erase writing remains in effect until you change the writing
+option.</p>
+<p>Erase writing ignores the bitmap values in the pattern memory. The current
+writing pattern remains constant.</p>
+<p>You can erase writing with negative writing on or off. With negative writing
+off (default), erase writing erases areas by writing over them with the current
+background shade/color. With negative writing on, erase writing erases
+areas by writing over them with the foreground shade/color.</p>
+<p>You use the following format for the basic erase writing option.</p>
+<p class="example">W(E)</p>
+<p>where</p>
+<p class="example"><b>E</b> identifies the erase writing option.</p>
+<p><a href="#F3-8">Figure 3-8</a> shows the effect that negative writing has on erase writing. The
+slashed square is drawn first, then the solid white (A) or black (B) square.
+<a href="#F3-9">Figure 3-9</a> shows the effect that the foreground select option can have on erase
+writing (when negative writing is on).</p>
+
+<figure id="F3-8">
+  <img src="ma-0683-83ar.png" alt=""/>
+  <p>A) Shaded square erased using W(N0), or W(E) if negative writing off (default or previous N0).</p>
+  <img src="ma-0683-83br.png" alt=""/>
+  <p>B) Shaded square erased using W(N1,E), or W(E) if negative writing on (previous N1).</p>
+  <figcaption>Figure 3-8 Example of Erase Writing with Negative Pattern Control</figcaption>
+</figure>
+
+<figure id="F3-9">
+  <img src="ma-0684-83r.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTE</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Erase writing selected by W(N1,E,12), if negative writing off, or W(E,12) if on.</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-9 Example of Erase Writing with Negative Pattern Control and Foreground Specification</figcaption>
+</figure>
+
+<h2 id="S3.6">Negative Pattern Control – N</h2>
+<p>This option lets you reverse the effect of pattern memory. The negative pattern
+control changes all 1s in pattern memory to 0s, and changes all 0s to 1s. The
+default setting for negative pattern control is off. This option affects the drawing
+of all lines, shaded areas, and text.</p>
+<p>Usually, the 1 bits in pattern memory select the foreground shade/color for a
+pixel, and the 0 bits select the background shade/color. When you turn negative
+pattern control on, the reverse is true: the 1 bits select the background, and
+the 0 bits select the foreground.</p>
+<p>You use the following format for the negative pattern control option.</p>
+<p class="example">W(N&lt;0 or 1&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>N</b> identifies a negative pattern control option.</p>
+<p><b>&lt;0 or 1&gt;</b> turns the negative pattern control off (0) or on (1).</p></div>
+<p><a href="#F3-10">Figure 3-10</a> shows how the negative pattern control changes the standard
+patterns from <a href="#F3-2">Figure 3-2</a> and the specified binary patterns from <a href="#F3-3">Figure 3-3</a>. <a href="#F3-10">Figure
+3-10</a> shows the normal pattern (with negative pattern control off), then the reverse
+pattern (with negative pattern control on).</p>
+
+<figure id="F3-10">
+  <img src="ma-0404-86.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTES</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td><ol>
+          <li>Each pattern is shown for 2 passes through pattern memory, with a multiplication value of 2.</li>
+          <li>When adjacent pixels are on, they appear as a solid line on the screen.</li></ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-10 Examples of Negative Patterns</figcaption>
+</figure>
+
+<h2 id="S3.7">Shading Control – S</h2>
+<p>This option lets you shade the inside of a graphic object as it is drawn. During
+shading commands, vector and curve commands operate as usual. However, as
+each point in a vector or curve is drawn, shading occurs from that point to a
+point on a <em>shading reference line</em>. The shading includes the point being drawn,
+as well as the point on the reference line.</p>
+<p>The default value for the shading reference line is the horizontal line defined by
+the Y-coordinate of the cursor position when you turn shading on. You can select
+a different reference line with a position argument to the shading control
+option.</p>
+<p><a href="#F3-11">Figure 3-11</a> shows how shading occurs. This figure shows different phases of a
+circle being drawn while the shading control option is on. The figure uses the
+default reference line for shading.</p>
+<p>You can use patterns or text characters to shade a graphic object. The final
+result depends on the setting of several other ReGIS command options.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Pattern Shading</th>
+<th>Character Shading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pattern</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Pattern multiplication factor</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Foreground intensity</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Background intensity</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Plane select</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Negative writing</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Any overlay, erase, complement, or replace writing in effect</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Text command options</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>There are three types of shading controls.</p>
+<ul>
+<li>Shading on/off control</li>
+<li>Shading reference line select</li>
+<li>Shading character select</li>
+</ul>
+<p>The following sections cover each control. Then the text discusses the use of
+multiple shading reference lines. You need multiple shading reference lines for
+complex graphic images, such as polygons.</p>
+
+<figure id="F3-11">
+  <img src="ma-0689-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTE</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>The shading reference line would not appear on the screen</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-11 Shading Examples</figcaption>
+</figure>
+
+<h3 id="S3.7.1">Shading On/Off Control</h3>
+<p>You use the following format for the shading on/off control option.</p>
+<p class="example">W(S&lt;0 or 1&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies the shading control option.</p>
+<p><b>&lt;0 or 1&gt;</b> turns shading off (0) or on (1).</p></div>
+<p>When you turn shading on, the terminal uses all currently selected writing options.
+If the pattern is a solid line (P1), a graphic image is completely shaded
+at the currently selected intensity (VT330: I0 through I3, VT340: I0 through
+I15). The shaded image does not have an apparent outline, other than the contrast
+between the background intensity and the foreground intensity.</p>
+<p><a href="#F3-12">Figure 3-12</a> shows three simple circles shaded with different foreground intensities.
+This figure shows that the outline for each circle is formed by the contrast
+between the background and the foreground.</p>
+<p>If you want an outline, you can simply repeat the circle command with shading
+off. <a href="#F3-13">Figure 3-13</a> shows the same circles drawn in <a href="#F3-12">Figure 3-12</a>. To draw the outlines,
+the circle commands are repeated with shading off, and with a different
+foreground intensity from that used in shading.</p>
+<p>All the figures in this section use the default reference line for shading.
+Remember, you automatically define the default reference line when you turn
+shading on. When you use default reference lines, you should turn shading on
+for each image you shade. Otherwise, the terminal always uses the last reference
+line defined.</p>
+
+<figure id="F3-12">
+  <img src="ma-0690-83r.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTE:</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Graphic assumes all output map values are at default shades, background intensity is S(I3), and write controls are W(F3,N0,V,I0,P1(M2)).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[150,200]<br/>W(S1)<br/>C[+100]<br/>P[400]<br/>W(S1)<br/>C(W(I1)) [+100]<br/>P[650]<br/>W(S1)<br/>C(W(I2)) [+100]<br/>W(S0)</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-12 Circle Shading Examples, Without Outlines</figcaption>
+</figure>
+
+<figure id="F3-13">
+  <img src="ma-0691-83r.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTE:</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[150,200]<br/>W(S1)<br/>C[+100]<br/>W(S0)<br/>C(W(I1)) [+100]<br/>P[400]<br/>
+W(S1)<br/>C(W(I1)) [+100]<br/>W(S0)<br/>C[+100]<br/>P[650]<br/>W(S1)<br/>C(W(I2)) [+100]<br/>W(S0)<br/>C[+100]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-13 Circle Shading Examples, with Outlines</figcaption>
+</figure>
+
+<p>You can use default reference lines or define your own reference line (next section).
+In either case, shading always includes the shading reference line.</p>
+<p>For example, <a href="#F3-14">Figure 3-14</a> shows a simple graph that is shaded by using the
+baseline for a shading reference line. Part of the baseline has disappeared. To
+keep the baseline, you can move the cursor up one row before you turn shading
+on. <a href="#F3-15">Figure 3-15</a> shows how.</p>
+
+<figure id="F3-14">
+  <img src="ma-0692-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[100,100]<br/>V[,+300] [+400]<br/>P[-300]<br/>W(S1)<br/>V(W(I2)) [,-200] [+100] [,+200]<br/>W(S0)<br/>V[,-200] [-100] [,+200]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-14 Graph Shading Example: Shading Through the Graph Baseline</figcaption>
+</figure>
+
+<figure id="F3-15">
+  <img src="ma-0694-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[100,100]<br/>V[,+300] [+400]<br/>P[-300,-1]<br/>W(S1)<br/>V(W(I2)) [,-200] [+100] [,+200]<br/>W(S0)<br/>V[,-200] [-100] [,+200]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-15 Graph Shading Example: Shading up to the Graph Baseline</figcaption>
+</figure>
+
+<p>You can change the shading pattern by selecting a writing pattern other than a
+solid line (P1). <a href="#F3-16">Figure 3-16</a> shows an example. In this figure, the circle is
+shaded with a dashed line pattern (P2). As shown, this pattern breaks the circle
+into horizontal bars.</p>
+<p class="note">NOTE: If you want to change the pattern for shading, you must specify the
+new pattern before you turn shading on.</p>
+
+<figure id="F3-16">
+  <img src="ma-0695-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[400,200]<br/>C(W(P2),(S1)) [+60]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-16 Circle Shading Example: Nonsolid Pattern</figcaption>
+</figure>
+
+<h3 id="S3.7.2">Select Shading Reference Line</h3>
+<p>This option lets you define your own shading reference line. You can use the
+default shading reference line to shade most images. However, a default reference
+line will not work for some graphic objects.</p>
+<p>For example you cannot use a default reference line to shade a circle with a
+specified center. In <a href="#F3-17">Figure 3-17</a>, a shaded circle is drawn with a center at [325,125].
+Then the outline of the circle is drawn with shading off. As shown, the
+default shading reference line produces shading outside the circle.</p>
+
+<figure id="F3-17">
+  <img src="ma-0696-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[250,200]<br/>W(S1)<br/>C(W(I2)) (C)[325,125]<br/>W(S0)<br/>C(C)[325,125]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-17 Incorrect Shading Example: Default Shading Reference Value Used with Center at Specified Position Option</figcaption>
+</figure>
+
+<p>You can define a horizontal or vertical reference line, using one X- or Y-coordinate.
+You can use an absolute or relative value for the coordinate. You
+use the following formats for defining a new shading reference line.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Vertical Reference Line</th>
+<th>Horizontal Reference Line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">W(S(X)[&lt;X position&gt;])</td>
+<td>W(S[,&lt;Y position&gt;])</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies a shading control option.</p>
+<p><b>(X)</b> selects a vertical (X-axis) shading reference line.</p>
+<p><b>[&lt;X position&gt;]</b> is the X-coordinate value to use for the vertical reference
+line. If you include a Y-coordinate ([X,Y]), ReGIS ignores the Y-coordinate.</p>
+<p>If you omit the X-coordinate ([] or [,Y]), ReGIS assumes a [+0] coordinate
+and uses the X-coordinate of the current active position.</p>
+<p><b>[,&lt;Y position&gt;]</b> is a Y-coordinate value to use for a horizontal reference
+line. If you include an X-coordinate ([X,Y]), ReGIS ignores the X-coordinate.</p>
+<p>If you omit the Y-coordinate ([] or [X]), ReGIS assumes a [+0] coordinate
+and uses the Y-coordinate of the current active position. Omitting the Y-coordinate
+is the same as using the W(S1) command.</p></div>
+<p><a href="#F3-18">Figure 3-18</a> shows one way to change the shading of the circle in <a href="#F3-17">Figure 3-17</a>,
+by defining a new shading reference line.</p>
+
+<figure id="F3-18">
+  <img src="ma-0697-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[250,200]<br/>W(S1[,125])<br/>C(W(I2)) (C)[325,125]<br/>W(S0)<br/>C(C)[325,125]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-18 Correct Shading Example: Shading Reference Line Select Option Used with Circle with Center at Specified Position Option</figcaption>
+</figure>
+
+<p>You can use different reference lines to draw shaded objects with a minimum
+of vector or curve commands. <a href="#F3-19">Figure 3-19</a> shows some images drawn with
+shading reference lines that use a Y-coordinate. <a href="#F3-20">Figure 3-20</a> shows some images
+drawn with shading reference lines that use an X-coordinate.</p>
+
+<figure id="F3-19">
+  <img src="ma-0698-83r.png" alt=""/>
+  <p>NOTE:<br/>Graphic assumes all ouput map values are at default shades, background
+intensity is S(I3), and write controls are W(F3, N0, V, I0, P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[125,125]<br/>W(S1[,+25])<br/>C(A90)[,-100]<br/>P[+175,+75]<br/>W(S1[,300])<br/>V[+100]<br/>P[500]<br/>W(S1[,-100])<br/>C(A-45C)[,+100]<br/>P[,300]<br/>W(S1[,+100])<br/>V[700,400]<br/>W(S0)</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-19 Drawing Images with Shading Reference Line Select Option (Y-Position Value)</figcaption>
+</figure>
+
+<figure id="F3-20">
+  <img src="ma-0699-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[150,100]<br/>W(S(X)[+50]<br/>C(A45)[50,150]<br/>P[+150,+100]<br/>W(S(X)[400])<br/>V[-100,+100]<br/>P[550,100]<br/>W(S(X)[590])<br/>C[+60]<br/>P[,+200]<br/>W(S(X)[+100])<br/>V[,+100]<br/>W(S0)</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-20 Drawing Images with Shading Reference Line Select Option (X-Position Value)</figcaption>
+</figure>
+
+<p>The type of reference line you use has no effect on the way shading patterns
+are oriented. <a href="#F3-21">Figure 3-21</a> shows a circle shaded with a dashed line pattern (P2)
+and an X-coordinate for the reference line. This circle is identical to the circle
+in <a href="#F3-16">Figure 3-16</a>, drawn with the default reference line. So, you can shade complex
+objects using horizontal or vertical reference lines, while maintaining the
+same pattern.</p>
+<p class="note">NOTE: For compatibility with previous ReGIS products, use only horizontal
+shading reference lines.</p>
+
+<figure id="F3-21">
+  <img src="ma-0700-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[400,200]<br/>C(W(P2,S(X)[400]))<br/>[+60]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-21 Nonsolid Pattern Shading Example, Using X-Position Value for Shading Reference Line Select Option</figcaption>
+</figure>
+
+<h3 id="S3.7.3">Select Shading Character</h3>
+<p>This argument lets you shade objects by using text characters instead of patterns.
+You can use characters from the standard character sets or from an alternate
+set you load into the terminal.</p>
+<p>You use the following format for the shading character select argument. You
+must use single or double quotes to enclose the character selected for shading.</p>
+<p class="example">W(S'&lt;character&gt;')</p>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies the shading control option.</p>
+<p><b>' '</b> are quotation marks that enclose the selected shading character.</p>
+<p><b>&lt;character&gt;</b> selects the character cell to use for shading. The actual character
+used depends on the format stored in the selected character cell.</p></div>
+<p>You can use text commands to select a character set and character size for the
+shading character. Otherwise, the terminal uses the ISO Latin-1 character set
+and a default character size of S1. <a href="chapter7.html">Chapter 7</a> describes text commands and
+character sizes.</p>
+<p>You can use character shading to produce halftone effects. This feature is useful
+when designing images for devices that have only two intensity values, such
+as dot-matrix printers. To produce the gray scale effects, you use different-density
+characters for shading. You must design and load these characters into
+the terminal. <a href="chapter8.html">Chapter 8</a> describes how to design and load characters.</p>
+<p>No matter what type of shading character you use, the terminal only displays
+the top 8 × 8 matrix of the 8 × 10 character cell.</p>
+<p><a href="#F3-22">Figure 3-22</a> shows a circle shaded with Xs. In this example, a text command
+selects the size of the X character, but not the character set. The terminal uses
+the X from the standard character set. The terminal also uses the default shading
+reference line.</p>
+
+<figure id="F3-22">
+  <img src="ma-0701-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[400,200]<br/>T(S1)<br/>W(S'X')<br/>C[+60]<br/>W(S0)</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-22 Shading Character Select Example</figcaption>
+</figure>
+
+<p>You can also use horizontal or vertical shading reference lines, without changing
+the shading pattern for complex images. You use the following formats to
+select a shading character and a shading reference line in the same command.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Character Shading<br/>With a Vertical Line</th>
+<th>Character Shading<br/>With a Horizontal Line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">W(S'&lt;character&gt;'(X)[&lt;X position&gt;])</td>
+<td>W(S'&lt;character&gt;'[&lt;Y position&gt;])</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies the shading control option.</p>
+<p><b>' '</b> are single or double quotation marks that enclose the selected shading character.</p>
+<p><b>&lt;character&gt;</b> selects the character cell to use for shading.</p>
+<p><b>(X)[&lt;X position&gt;]</b> selects a vertical shading reference line and indicates
+what X-coordinate value to use for that line.</p>
+<p><b>[&lt;Y position&gt;]</b> selects a horizontal shading reference line and indicates
+what Y-coordinate value to use for that line.</p></div>
+<h3 id="S3.7.4">Shading Complex Figures</h3>
+<p>ReGIS always uses a reference line for shading. For some complex images, you
+must use more than one shading reference line. You can use the following
+method to shade complex graphic images.</p>
+<p class="note">NOTE: Digital recommends you use the polygon fill command to shade complex
+figures. For shading complex figures, the polygon fill command is easier
+and more efficient than the shading option. See <a href="chapter11.html">Chapter 11</a>.</p>
+<p>Draw the shaded graphic image in two or more sections. Use different shading
+reference lines for each section. Include both horizontal and vertical shading
+reference lines, if needed.</p>
+<p><a href="#F3-23">Figure 3-23</a> shows an attempt to draw a star with only one shade value and
+one reference line. First, the star is drawn with a dim gray shade (I1). Then the
+outline of the star is drawn with shading off.</p>
+<p><a href="#F3-24">Figure 3-24</a> takes the same basic example and breaks the image into sections,
+adding commands that define a second reference line and a second shade value.
+This figure shows one way to shade a complex graphic image. You can use
+other commands to draw a star.</p>
+
+<figure id="F3-23">
+  <img src="ma-0702-83r.png" alt=""/>
+  <p>NOTE:<br/>
+Graphic assumes all output map values are at default shades, background intensity is S(I3), and
+write controls are W(F3,N0,V,I0,P1(M2)).</p>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>P[500,200]<br/>W(S1)<br/>V(W(I2)) [-100] [-50,-100] [-50,+100]
+[-100] [+100,+50] [-50,+125] [+100,-75] [+100,+75] [-50,-125]
+[+100,-50]<br/>W(S0)<br/>V[-100] [-50,-100] [-50,+100] [-100] [+100,+50]
+[-50,+125] [+100,-75] [+100,+75] [-50,-125] [+100,-50]</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-23 Incorrect Shading of Complex Graphic Image</figcaption>
+</figure>
+
+<figure id="F3-24">
+  <img src="ma-0703-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td>NOTE</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Graphic assumes all output map values are at default<br/>shades, background intensity
+is S(I0), and write controls<br/>are W(F3,N0,V,P1(M2)).</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 3-24 Complex Graphic Shading Example</figcaption>
+</figure>
+
+<h2 id="S3.8">Write Control Command Summary</h2>
+<p><a href="#T3-6">Table 3-6</a> is a summary of the <b>W</b> command options, including any default
+values.</p>
+<table id="T3-6" class="majortable">
+<caption>Table 3-6 Write Control Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(M&lt;n&gt;)</td>
+<td>1</td>
+<td><p><strong>PV multiplication</strong><br/>
+Defines a multiplication factor of &lt;n&gt; for all pixel vector (PV) values used in later commands.
+Can serve as a temporary write control for other types of commands.</p></td>
+</tr>
+<tr>
+<td>(P&lt;0 to 9&gt;)</td>
+<td>1</td>
+<td><p><strong>Select standard pattern</strong><br/>
+Selects 1 of 10 stored writing patterns.</p></td>
+</tr>
+<tr>
+<td>(P&lt;binary&gt;)</td>
+<td>1</td>
+<td><p><strong>Specify binary pattern</strong><br/>
+Lets you create your own writing pattern, up to 8 bits in length.</p></td>
+</tr>
+<tr>
+<td>(P(M&lt;1 to 16&gt;))</td>
+<td>2</td>
+<td><p><strong>Pattern multiplication</strong><br/>
+Selects how many consecutive pixels &lt;1 to 16&gt; to write each bit off pattern memory to.
+You can use this option in three ways.</p>
+<ul>
+<li>with the select standard pattern option</li>
+<li>with the specify binary pattern option</li>
+<li>by itself, to define a multiplication factor for the last specified pattern</li>
+</ul></td>
+</tr>
+<tr>
+<td>(I&lt;0 to 3&gt;)<br/>(I&lt;0 to 15&gt;)</td>
+<td>3 (VT330)<br/>7 (VT340)</td>
+<td><p><strong>Select foreground intensity or color</strong><br/>
+Selects the output map address (&lt;0 to 3&gt;) to use for writing.</p></td>
+</tr>
+<tr>
+<td>(I(&lt;RGB&gt;))</td>
+<td>Current color map</td>
+<td><p><strong>Select foreground intensity or color (RGB)</strong><br/>
+Selects the output map address to use for color writing with RGB values.
+Selects the color closest to the RGB value specified.</p></td>
+</tr>
+<tr>
+<td>(I(&lt;HLS&gt;))</td>
+<td>None</td>
+<td><p><strong>Select foreground intensity or color (HLS)</strong><br/>
+Selects the output map address to use for color writing with HLS values.
+Selects the color closest to the HLS value specified.</p></td>
+</tr>
+<tr>
+<td>(F&lt;0 to 3&gt;)<br/>(F&lt;0 to 15&gt;)</td>
+<td>3 (VT330)<br/>15 (VT340)</td>
+<td><p><strong>Plane select</strong><br/>
+Selects which of the terminal's bitmap planes ReGIS can write to.</p></td>
+</tr>
+<tr>
+<td>(V,R,C, or E)</td>
+<td>(V)</td>
+<td><p><strong>Writing style</strong><br/>
+Default style is (V) for overlay writing.</p>
+<p>(R) for replace writing<br/>(C) for complement writing<br/>(E) for erase writing</p></td>
+</tr>
+<tr>
+<td>(N&lt;0 or 1&gt;)</td>
+<td>0</td>
+<td><p><strong>Negative pattern control</strong><br/>
+When set to (N1), reverses the effect of currently selected write pattern.</p></td>
+</tr>
+<tr>
+<td>(S&lt;0 or 1&gt;)</td>
+<td>0</td>
+<td><p><strong>Shading on/off control</strong><br/>
+When set to (S1), turns on shading with currently selected pattern. The shading reference line is
+defined by the Y-coordinate of the active position when (S1) is selected.</p></td>
+</tr>
+<tr>
+<td>(S[,Y])</td>
+<td>Current Y position</td>
+<td><p><strong>Select horizontal shading reference line</strong><br/>
+Selects a line defined by [,Y], which can be either an absolute or relative value.</p></td>
+</tr>
+<tr>
+<td>(S(X)[X])</td>
+<td>Current X position</td>
+<td><p><strong>Select vertical shading reference line</strong><br/>
+Selects a line defined by [X], which can be either an absolute or relative value.</p></td>
+</tr>
+<tr>
+<td>(S'&lt;character&gt;')</td>
+<td>None</td>
+<td><p><strong>Select shading character</strong><br/>
+Selects a character to use for shading, instead of writing pattern.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter2.html">Chapter 2</a><a href="contents.html">Contents</a><a href="chapter4.html">Chapter 4</a></nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,921 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 07 Jan 2025 09:07:28 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: private; max-age=0
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin
+Strict-Transport-Security: max-age=31556900
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdnjs.cloudflare.com/; frame-src 'self' https://www.google.com/recaptcha/; style-src 'self' 'unsafe-inline'; img-src 'self' https://account.ycombinator.com; frame-ancestors 'self'
+
+<html lang="en" op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?B8TjSRv5WtHMnrhyJHcg">
+        <link rel="icon" href="y18.svg">
+    <link rel="canonical" href="https://news.ycombinator.com/item?id=35936079"/>            <title>VT330&#x2F;VT340 Sixel Graphics | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.svg" width="18" height="18" style="border:1px white solid; display:block"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+                            <a href="newest">new</a> | <a href="front">past</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="show">show</a> | <a href="jobs">jobs</a> | <a href="submit" rel="nofollow">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D35936079">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr id="pagespace" title="VT330&#x2F;VT340 Sixel Graphics" style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing submission' id='35936079'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_35936079' href='vote?id=35936079&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><span class="titleline"><a href="https://vt100.net/docs/vt3xx-gp/chapter14.html">VT330&#x2F;VT340 Sixel Graphics</a><span class="sitebit comhead"> (<a href="from?site=vt100.net"><span class="sitestr">vt100.net</span></a>)</span></span></td></tr><tr><td colspan="2"></td><td class="subtext"><span class="subline">
+          <span class="score" id="score_35936079">60 points</span> by <a href="user?id=ecliptik" class="hnuser">ecliptik</a> <span class="age" title="2023-05-14T07:25:06 1684049106"><a href="item?id=35936079">on May 15, 2023</a></span> <span id="unv_35936079"></span> | <a href="hide?id=35936079&amp;goto=item%3Fid%3D35936079">hide</a> | <a href="https://hn.algolia.com/?query=VT330%2FVT340%20Sixel%20Graphics&type=story&dateRange=all&sort=byDate&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="fave?id=35936079&amp;auth=62293dd21f3c39061139c09ea0ec1fdd788ec209">favorite</a> | <a href="item?id=35936079">81&nbsp;comments</a>        </span>
+              </td></tr>
+        </table><br><br><table border="0" class='comment-tree'>
+            <tr class='athing comtr' id='35950943'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950943' href='vote?id=35950943&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Per_Bothner" class="hnuser">Per_Bothner</a> <span class="age" title="2023-05-15T16:38:25 1684168705"><a href="item?id=35950943">on May 15, 2023</a></span> <span id="unv_35950943"></span>          <span class='navs'>
+             | <a href="#35948299" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950943" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Sixel has the one advantage of being mplemented in xterm and a modest number of other terminals.  Otherwise, it&#x27;s a pretty bad format: Inefficient. Unclear and inconsistently implemented specification. All images have to be a multiple fof 6 pixel rows, which may not align with either image height or character height.<p>Some terminal implement some other protocols, but attempts to specify a standard have failed. There are some tricky issues, such as: When does an image or part of an image get erased? Can you write text on top of an image and if so how are they aligned? What happens if you write an image on top of existing text? On top of an existing image? How does scrolling affect things? What happens to the image on window resize or zoom? Can you reliably update part of an image?<p>DomTerm (<a href="https:&#x2F;&#x2F;domterm.org" rel="nofollow">https:&#x2F;&#x2F;domterm.org</a>) supports images in two ways:
+For sixels, it creates a canvas element as an &quot;underlay&quot;. As it is earlier in he rendering order, following text can be written on top of the image.<p>DomTerm also supports general HTML, including IMG elements.  (Of course it is safety-scrubbed.) This is quite flexible, but it doesn&#x27;t overlap regular text (without some contortions). DomTerm allows different lines to have different height, which is beneficial for &quot;printing&quot; an image without having to pad the output to an integral number of rows.<p>Neither of these DomTerm protocls are suitable for a portable protocol that can be widely implemented. Two other protocols that I&#x27;m aware of are the iTerm2 protocol and the Kitty protocol. Both are bit on the complicated side, but a subset of one of those might be an acceptable &quot;standard&quot;.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35948299'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35948299' href='vote?id=35948299&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-15T14:03:24 1684159404"><a href="item?id=35948299">on May 15, 2023</a></span> <span id="unv_35948299"></span>          <span class='navs'>
+             | <a href="#35950943" class="clicky" aria-hidden="true">prev</a> | <a href="#35951487" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35948299" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">For those who take the weekend off, yesterday&#x27;s Sixel discussion: <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35936331" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35936331</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35951487'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951487' href='vote?id=35951487&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-15T17:20:41 1684171241"><a href="item?id=35951487">on May 15, 2023</a></span> <span id="unv_35951487"></span>          <span class='navs'>
+             | <a href="#35948299" class="clicky" aria-hidden="true">prev</a> | <a href="#35948745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951487" n="7" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Funny thing, as popular as sixels are now, they were pretty useless back in the day. It would take ages for a picture to appear on a VT terminal with those slow serial speeds (VT320 doing 19200 baud max! - not sure about the 330&#x2F;340). Especially with colour. I&#x27;m pretty sure the later ones (I have a VT520 myself) didn&#x27;t even have it anymore!<p>I know word perfect for Unix used it for the print preview but I don&#x27;t know any other app from those days that used them at all. The same with the double width or height fonts the VT series offers. I&#x27;ve only ever seen them working when running vttest. They could be very useful, but in practice I&#x27;ve never seen them actually used for something other than testing.<p>These days with pretty much unlimited speed sixels actually become useful. But they don&#x27;t support full 24 bit colour so another technique is probably better for today&#x27;s needs. For example it would be great to be able to define a terminal region and send images and video to it with full hardware acceleration and compression (H.264 or similar). I think there&#x27;s still a good usecase for terminals, but holding on to sixel feels a bit too much of a kludge to me. If they were super abundant and popular, sure. But they never actually were.<p>I think this is also why kitty chose to build a custom protocol instead of implementing sixel.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952013'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952013' href='vote?id=35952013&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=JdeBP" class="hnuser">JdeBP</a> <span class="age" title="2023-05-15T17:56:45 1684173405"><a href="item?id=35952013">on May 15, 2023</a></span> <span id="unv_35952013"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">parent</a> | <a href="#35956118" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952013" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I wonder about the popularity.  There are a number of examples in the long Microsoft Terminal issue discussion about sixels, but very little of it seems to be day-to-day tasks.  Whereas people are getting inventive with Unicode in the little ways, from clever progress bars and spinners to tiny but importantly everyday things like arrows in shell prompts.<p>I just myself wrote a pseudo-window login dialogue (a replacement for the login(1) program for framebuffer terminal emulators that can do Unicode) using MouseText from the Apple IIc, which got added to Unicode version 13 in 2020.<p>* <a href="https:&#x2F;&#x2F;tty0.social&#x2F;@JdeBP&#x2F;110373938216006335" rel="nofollow">https:&#x2F;&#x2F;tty0.social&#x2F;@JdeBP&#x2F;110373938216006335</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35954656'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35954656' href='vote?id=35954656&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-15T21:22:44 1684185764"><a href="item?id=35954656">on May 15, 2023</a></span> <span id="unv_35954656"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">root</a> | <a href="#35952013" class="clicky" aria-hidden="true">parent</a> | <a href="#35952038" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35954656" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">By the way yes it&#x27;s relatively popular, out of the various options. Sixels are more popular than Kitty&#x27;s protocol and what iTerm2 has.<p>Though more and more console libraries are supporting multiples of these which will help get more reach for all of them.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35952038'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952038' href='vote?id=35952038&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-15T17:57:54 1684173474"><a href="item?id=35952038">on May 15, 2023</a></span> <span id="unv_35952038"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">root</a> | <a href="#35952013" class="clicky" aria-hidden="true">parent</a> | <a href="#35954656" class="clicky" aria-hidden="true">prev</a> | <a href="#35956118" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952038" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Yes the spinners that are made of braille are nice. And graphs.<p>But unicode support is pretty ubiquitous now. It works great. Despite advanced unicode (ligatures, emoji) not really playing nice with monospaced fonts, most terminals handle it very well.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35956118'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35956118' href='vote?id=35956118&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T23:50:47 1684194647"><a href="item?id=35956118">on May 15, 2023</a></span> <span id="unv_35956118"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">parent</a> | <a href="#35952013" class="clicky" aria-hidden="true">prev</a> | <a href="#35948745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35956118" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">i did see people use the double-width and double-height fonts custom splash screens for logins and app startup and stuff<p>they were novel but they weren&#x27;t actually good. that goes double for sixel: it was pretty cool to see the system manager loading a color image on his vt340+ but we&#x27;re talking about a postage stamp per second.  you could see the individual color planes loading<p>the vt340 was a misguided engineering dead end.  i think even the vt100 was a mistake, given that they had to put an entire computer inside of it to make it work, and it would have been a lot nicer to rethink how terminals could work in light of the new possibilities opened up by vlsi<p>which, of course, is how we got not just supdup but the apple ][, the commodore 64, the hp-41c, the macintosh, lantastic, netware, doom, etc.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35958401'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35958401' href='vote?id=35958401&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-16T06:41:24 1684219284"><a href="item?id=35958401">on May 16, 2023</a></span> <span id="unv_35958401"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">root</a> | <a href="#35956118" class="clicky" aria-hidden="true">parent</a> | <a href="#35948745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35958401" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">&gt; they were novel but they weren&#x27;t actually good. that goes double for sixel: it was pretty cool to see the system manager loading a color image on his vt340+ but we&#x27;re talking about a postage stamp per second. you could see the individual color planes loading<p>Yeah that was my point. It was so slow it was really only usable for the usecases bringing extreme value. A vector drawing protocol like tectronix (still included in xterm also) would have been preferable.<p>&gt; the vt340 was a misguided engineering dead end. i think even the vt100 was a mistake, given that they had to put an entire computer inside of it to make it work, and it would have been a lot nicer to rethink how terminals could work in light of the new possibilities opened up by vlsi<p>The VT340 yes. I don&#x27;t think the VT100 was a dead-end. It wasn&#x27;t the most popular terminal of its day for nothing. This was the time when microprocessors started powering everything from microwaves to fridges. A &quot;whole computer&quot; was still simpler than the VT05 which had no &quot;computer&quot; but a whole stack of PCBs full of discrete electronics.<p>See how horribly deep it was to house all those electronics: <a href="http:&#x2F;&#x2F;terminals-wiki.org&#x2F;wiki&#x2F;index.php&#x2F;File:DEC_VT05_121708587772-2.jpg" rel="nofollow">http:&#x2F;&#x2F;terminals-wiki.org&#x2F;wiki&#x2F;index.php&#x2F;File:DEC_VT05_12170...</a> . And despite all that its terminal protocol was super basic, it wasn&#x27;t a lot more than a screen-based teletype. I think it&#x27;s one of the most beautiful designs of the day though. Very star trek.<p>The VT100 was a computer yes (there was actually a standalone CP&#x2F;M version of it called the VT180). But it didn&#x27;t really compete with PCs, it was a logical choice if you had a centralised minicomputer which was still very common back then. Being &#x27;cheap&#x27; was relative only to the central computer which was a huge investment.<p>And of course its successors were way cheaper and smaller (the VT220 and VT320 in particular). I think the 320 was a really nice form factor, the 220 still had fairly chunky bezels.<p>I still own a VT520 myself but it has a distinct &quot;generic VGA monitor&quot; feel. It is the most capable of the range for using it in this day and age though (which doesn&#x27;t mean a lot, a lot of *nix software these days just blasts xterm without bothering to check termcap or terminfo).</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35965141'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35965141' href='vote?id=35965141&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T17:35:55 1684258555"><a href="item?id=35965141">on May 16, 2023</a></span> <span id="unv_35965141"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">root</a> | <a href="#35958401" class="clicky" aria-hidden="true">parent</a> | <a href="#35948745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35965141" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">yeah, i&#x27;ve used a decscope, though not in anger.  i used some government surplus adm3a terminals in the 90s for bbsing; those were also real terminals, not computers running a terminal program<p>the vt100 was a computer cosplaying a decscope, plus other escape sequences, but you couldn&#x27;t program it.  that&#x27;s why i said it was a mistake, even though it clearly wasn&#x27;t a dead end.  even the vt52 was microprogrammed, but its microprogram state machine was too dumb to do much even if it could have stored a program<p>once your terminal wasn&#x27;t dumb anymore there was a lot you could do with graphics that wasn&#x27;t really feasible with even a vt340<p>aside from games, i mean.  desktop publishing, pixel painting, autocad, spreadsheets with plotting, schematic capture<p>ram was a big limitation; you could imagine a bitmapped terminal whose text capability was similar to the decscope (12 lines of 80 characters, originally: 400 pixels horizontally by 96 pixels vertically gives you 38400 pixels, 4800 bytes of vram) but afaik nobody built one until 90s cellphones.  all the bitmapped terminals i&#x27;ve heard of from the vt100 epoch were minimally 2.5 times that size, requiring 12 kilobytes of ram, which in the 01970s was quite a chunk of change.  the adm3a or similar only required 2k<p>the vt100 supposedly had 3k, but without the extra-cost avo option it didn&#x27;t support 132-column mode, except with a reduced line count<p>a lot of video games made do with less storage than that by virtue of tile&#x2F;sprite hardware, basically character generators.  a hypothetical smart terminal  that never existed with 3300 bytes of memory could have used 2000 bytes for 25 rows of 80 characters onscreen, with the remaining 1044 bytes divided between 5x8 softfont glyphs (at most 160 of them), event and timer handlers written in a stack language (at most 1044 1-byte instructions), and state for those programs<p>that would enable things like local editing, a popup calculator, command line history, multi-frequency beeps, and copy and paste (though, probably, not all at once).  i think that would have been cheaper and immensely more functional than the giant rom program full of fixed-function escape sequences that the vt100 in fact had<p>but that&#x27;s with the benefit of 45 years of hindsight.  more interesting to me is the question of what similar huge opportunities we&#x27;re missing out on today by unthinkingly continuing to adapt our systems to technical limitations that no longer exist</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                              <tr class='athing comtr' id='35948745'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35948745' href='vote?id=35948745&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teddyh" class="hnuser">teddyh</a> <span class="age" title="2023-05-15T14:29:56 1684160996"><a href="item?id=35948745">on May 15, 2023</a></span> <span id="unv_35948745"></span>          <span class='navs'>
+             | <a href="#35951487" class="clicky" aria-hidden="true">prev</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35948745" n="8" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I guess that Wayland users have to get their remote graphics <i>somehow</i>.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35949028'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949028' href='vote?id=35949028&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rwmj" class="hnuser">rwmj</a> <span class="age" title="2023-05-15T14:46:01 1684161961"><a href="item?id=35949028">on May 15, 2023</a></span> <span id="unv_35949028"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">parent</a> | <a href="#35951308" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949028" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">If only Wayland worked like MGR and was just an extended set of graphics primitives sent over stdin&#x2F;stdout!</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35949278'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949278' href='vote?id=35949278&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T15:00:17 1684162817"><a href="item?id=35949278">on May 15, 2023</a></span> <span id="unv_35949278"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">root</a> | <a href="#35949028" class="clicky" aria-hidden="true">parent</a> | <a href="#35951308" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949278" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">this would be wonderful</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35951308'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951308' href='vote?id=35951308&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kijiki" class="hnuser">kijiki</a> <span class="age" title="2023-05-15T17:07:30 1684170450"><a href="item?id=35951308">on May 15, 2023</a></span> <span id="unv_35951308"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">parent</a> | <a href="#35949028" class="clicky" aria-hidden="true">prev</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951308" n="5" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Huh? Does:
+waypipe ssh remotehost guicmd<p>not work for you?</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35957166'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35957166' href='vote?id=35957166&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teddyh" class="hnuser">teddyh</a> <span class="age" title="2023-05-16T02:29:29 1684204169"><a href="item?id=35957166">on May 16, 2023</a></span> <span id="unv_35957166"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">root</a> | <a href="#35951308" class="clicky" aria-hidden="true">parent</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35957166" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I cannot find waypipe in any package for the OS on the closest machine using Wayland.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35957490'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35957490' href='vote?id=35957490&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bravetraveler" class="hnuser">bravetraveler</a> <span class="age" title="2023-05-16T03:35:11 1684208111"><a href="item?id=35957490">on May 16, 2023</a></span> <span id="unv_35957490"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">root</a> | <a href="#35957166" class="clicky" aria-hidden="true">parent</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35957490" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Which distribution?  I just learned about waypipe and took a quick look<p>I found it for Ubuntu, Fedora, Alpine, Arch, and Gentoo - the first two make extending availability elsewhere pretty simple.<p>The specs covering the package managers for most derivatives are already written</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35960340'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35960340' href='vote?id=35960340&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teddyh" class="hnuser">teddyh</a> <span class="age" title="2023-05-16T11:33:29 1684236809"><a href="item?id=35960340">on May 16, 2023</a></span> <span id="unv_35960340"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">root</a> | <a href="#35957490" class="clicky" aria-hidden="true">parent</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35960340" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">It’s not in Debian stable, which means that any distribution based on that does not have it yet.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35962853'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35962853' href='vote?id=35962853&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teddyh" class="hnuser">teddyh</a> <span class="age" title="2023-05-16T15:05:42 1684249542"><a href="item?id=35962853">on May 16, 2023</a></span> <span id="unv_35962853"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">root</a> | <a href="#35960340" class="clicky" aria-hidden="true">parent</a> | <a href="#35949538" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35962853" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I tried to backport the package from Debian testing, but it failed its self-tests while compiling.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                          <tr class='athing comtr' id='35949538'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949538' href='vote?id=35949538&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=CharlesW" class="hnuser">CharlesW</a> <span class="age" title="2023-05-15T15:15:18 1684163718"><a href="item?id=35949538">on May 15, 2023</a></span> <span id="unv_35949538"></span>          <span class='navs'>
+             | <a href="#35948745" class="clicky" aria-hidden="true">prev</a> | <a href="#35948560" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949538" n="16" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">How is this proprietary standard designed for dot matrix printers a better choice than using standards-based image formats with their associated rich ecosystem of tools? In which use cases is converting a lossy JPEG image to Sixels considered a win?<p><a href="https:&#x2F;&#x2F;iterm2.com&#x2F;documentation-images.html" rel="nofollow">https:&#x2F;&#x2F;iterm2.com&#x2F;documentation-images.html</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35949982'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949982' href='vote?id=35949982&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-15T15:38:01 1684165081"><a href="item?id=35949982">on May 15, 2023</a></span> <span id="unv_35949982"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949982" n="10" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00"><i>Technically</i> it may not be, but xterm has supported it approximately forever, and xterm is the de-facto standard minimum terminal emulator.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35950496'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950496' href='vote?id=35950496&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=CharlesW" class="hnuser">CharlesW</a> <span class="age" title="2023-05-15T16:08:16 1684166896"><a href="item?id=35950496">on May 15, 2023</a></span> <span id="unv_35950496"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35949982" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950496" n="9" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">That&#x27;s very helpful to know, thanks! So Sixels are a reasonably-popular de facto standard already, which I did not understand.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35950871'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950871' href='vote?id=35950871&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-15T16:34:34 1684168474"><a href="item?id=35950871">on May 15, 2023</a></span> <span id="unv_35950871"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35950496" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950871" n="8" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">They date to DEC terminals of the early &#x27;80s. DEC was involved in developing X Windows (competing with other windows systems like Sun&#x27;s NeWS) and xterm supports many of the DEC terminal extensions to ANSI X3.64.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35956202'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35956202' href='vote?id=35956202&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T00:01:20 1684195280"><a href="item?id=35956202">on May 16, 2023</a></span> <span id="unv_35956202"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35950871" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35956202" n="7" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">early 90s, and i don&#x27;t think xterm&#x27;s sixel support is nearly that old</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35956419'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35956419' href='vote?id=35956419&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-16T00:33:09 1684197189"><a href="item?id=35956419">on May 16, 2023</a></span> <span id="unv_35956419"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35956202" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35956419" n="6" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I thought the VT240 had sixels as well as ReGIS, but now I&#x27;ll have to look it up.<p>Edit:<p>(a) The VT240 (1984) did do sixels (§4.18.1 of VT240 Series Programmer Reference Manual).<p>(b) xterm didn&#x27;t add it until 2013. Maybe I was thinking of dxterm? Now I have to look <i>that</i> up.<p>Edit 2: I was almost certainly thinking of dxterm. I can&#x27;t find a specific reference for the Ultrix version (which I had used) but the VMS version (which I didn&#x27;t) had sixel support circa 1990.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35957407'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35957407' href='vote?id=35957407&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T03:20:13 1684207213"><a href="item?id=35957407">on May 16, 2023</a></span> <span id="unv_35957407"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35956419" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35957407" n="5" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">aha, thanks for the correction; i thought it was vt320 and up only<p>was that for images tho or just softfonts</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35957497'><td><table border='0'>  <tr>    <td class='ind' indent='7'><img src="s.gif" height="1" width="280"></td><td valign="top" class="votelinks">
+      <center><a id='up_35957497' href='vote?id=35957497&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-16T03:38:45 1684208325"><a href="item?id=35957497">on May 16, 2023</a></span> <span id="unv_35957497"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35957407" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35957497" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Both. It&#x27;s barely mentioned, though, and clear that they intended people to use ReGIS instead, presumably due to bitmaps not being very useful at 19.2K.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35957630'><td><table border='0'>  <tr>    <td class='ind' indent='8'><img src="s.gif" height="1" width="320"></td><td valign="top" class="votelinks">
+      <center><a id='up_35957630' href='vote?id=35957630&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T04:03:24 1684209804"><a href="item?id=35957630">on May 16, 2023</a></span> <span id="unv_35957630"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35957497" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35957630" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">just wait until the sixel hipsters find out about naplps and ripscrip</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35961180'><td><table border='0'>  <tr>    <td class='ind' indent='9'><img src="s.gif" height="1" width="360"></td><td valign="top" class="votelinks">
+      <center><a id='up_35961180' href='vote?id=35961180&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-16T12:53:01 1684241581"><a href="item?id=35961180">on May 16, 2023</a></span> <span id="unv_35961180"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35957630" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35961180" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I hadn&#x27;t heard of RIPscrip but NAPLPS&#x2F;Telidon were big here — in the sense of talk and free money, not in the sense that anyone actually used them.<p>(I remember the hype, but it was before my working life. I have a Telidon keypad in my hoard, though.)<p>Thanks for the correction about xterm, BTW. I think I believed, until yesterday, that dxterm was an xterm derivative.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35964417'><td><table border='0'>  <tr>    <td class='ind' indent='10'><img src="s.gif" height="1" width="400"></td><td valign="top" class="votelinks">
+      <center><a id='up_35964417' href='vote?id=35964417&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T16:46:04 1684255564"><a href="item?id=35964417">on May 16, 2023</a></span> <span id="unv_35964417"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35961180" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35964417" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">sure, i wasn&#x27;t really sure about xterm, and i appreciate you digging up the truth</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                                                  <tr class='athing comtr' id='35950745'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950745' href='vote?id=35950745&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=flohofwoe" class="hnuser">flohofwoe</a> <span class="age" title="2023-05-15T16:25:12 1684167912"><a href="item?id=35950745">on May 15, 2023</a></span> <span id="unv_35950745"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">parent</a> | <a href="#35949982" class="clicky" aria-hidden="true">prev</a> | <a href="#35950775" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950745" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Sixels is supported by more than one terminal implementation, while the example you posted only works in iTerm2 (and IIRC only accepts a filename as input, but doesn&#x27;t offer a way to send image data directly as a stream of characters through stdout).<p>I would welcome a proper pixel graphics &#x2F; framebuffer standard for terminals though.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35950935'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950935' href='vote?id=35950935&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age" title="2023-05-15T16:37:52 1684168672"><a href="item?id=35950935">on May 15, 2023</a></span> <span id="unv_35950935"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35950745" class="clicky" aria-hidden="true">parent</a> | <a href="#35950775" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950935" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I know that at least Konsole, mlterm (which I use), and wezterm support iTerm&#x27;s method.<p>Unfortunately iTerm&#x27;s method does not have a googlable name like ‘sixel’.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35950775'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950775' href='vote?id=35950775&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vidarh" class="hnuser">vidarh</a> <span class="age" title="2023-05-15T16:27:28 1684168048"><a href="item?id=35950775">on May 15, 2023</a></span> <span id="unv_35950775"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">parent</a> | <a href="#35950745" class="clicky" aria-hidden="true">prev</a> | <a href="#35949647" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950775" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Because unlike the alternatives, Sixel has relatively widespread support, and that matters far more.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35949647'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949647' href='vote?id=35949647&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=altairprime" class="hnuser">altairprime</a> <span class="age" title="2023-05-15T15:20:39 1684164039"><a href="item?id=35949647">on May 15, 2023</a></span> <span id="unv_35949647"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">parent</a> | <a href="#35950775" class="clicky" aria-hidden="true">prev</a> | <a href="#35948560" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949647" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Was this reply intended for a comment? The documentation page linked doesn’t make any claims about or comparisons to other solutions, to the best that I can determine, and so it’s unclear to me what statement this is in reply to.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35950424'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950424' href='vote?id=35950424&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=CharlesW" class="hnuser">CharlesW</a> <span class="age" title="2023-05-15T16:03:25 1684166605"><a href="item?id=35950424">on May 15, 2023</a></span> <span id="unv_35950424"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">root</a> | <a href="#35949647" class="clicky" aria-hidden="true">parent</a> | <a href="#35948560" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950424" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">&gt; <i>Was this reply intended for a comment?</i><p>No, I&#x27;m just asking why there&#x27;s interest around Sixel when there are protocols (like iTerm&#x27;s Inline Images Protocol) that use standards-based image formats.<p>I&#x27;m not a heavy terminal user and don&#x27;t see much value for images in my CLI, so one very possible explanation is that I don&#x27;t understand the use cases where this &quot;interesting&quot; format (without a guaranteed pixel aspect ratio, as I understand it) shines.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                        <tr class='athing comtr' id='35948560'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35948560' href='vote?id=35948560&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ape4" class="hnuser">ape4</a> <span class="age" title="2023-05-15T14:19:16 1684160356"><a href="item?id=35948560">on May 15, 2023</a></span> <span id="unv_35948560"></span>          <span class='navs'>
+             | <a href="#35949538" class="clicky" aria-hidden="true">prev</a> | <a href="#35948318" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35948560" n="15" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">There are definitely lots of interesting uses once this reaches critical mass.  A &quot;high definition&quot; progress bar, showing photos of course, thumbnails when doing an `ls`, graphical web browsing, plotting charts, nicer looking gtop, things we haven&#x27;t even dreamed of.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35949600'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949600' href='vote?id=35949600&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=prmoustache" class="hnuser">prmoustache</a> <span class="age" title="2023-05-15T15:18:02 1684163882"><a href="item?id=35949600">on May 15, 2023</a></span> <span id="unv_35949600"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">parent</a> | <a href="#35951743" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949600" n="13" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">If it had to reach critical mass, it would have done so ages ago. This is 45y old tech.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35951850'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951850' href='vote?id=35951850&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-15T17:45:39 1684172739"><a href="item?id=35951850">on May 15, 2023</a></span> <span id="unv_35951850"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35949600" class="clicky" aria-hidden="true">parent</a> | <a href="#35951743" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951850" n="12" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">When this tech was invented it was less relevant than it is now. For the following reasons:<p>- It required special expensive terminals, the VT330 (mono) or VT340. Those were not ubiquitous, the VT320 was the bread and butter type. Later VTx20 models also didn&#x27;t gain support for it (usually the lower range models got premium features from the previous ranges like multiple connections &#x2F; pages but this one didn&#x27;t &#x27;trickle down&#x27;). So there wasn&#x27;t so much incentive for developers to support it as the installed base was very low.<p>- It required a long time to send all the information, because terminals were still on slow serial connections. The VT320 could only do up to 19200 bps which was not even super fast for text at 80x25! Sixel images would take ages to transfer. Even though we had different expectations of response speeds then, sixels were slow by the standard of the day.<p>- Colour highlighting (or even monochrome &quot;bold&quot;&#x2F;ultrabright) was not even common in most commandline tools back then, even LS. Hell, on HP-UX in the 90s I couldn&#x27;t even use the cursor keys in the default shell for command history and line editing! Mod cons we take for granted now were yet to be invented then.<p>- Thumbnail processing as the parent suggests would take a lot of space and processing speed. My quota at college was a few megabytes. In fact I hardly had any images. I think I had just one, a nice Enterprise-D render that I used as wallpaper. It&#x27;s not like we had thousands of images to sift through like we do today. Of course the web changed that rapidly but at that time text terminals were already on the way out.<p>Some apps used it for stuff that was worth the wait. Like the print preview in word perfect. But many apps didn&#x27;t bother because the above constraints just made them infeasible. Sixels only really took off after their original terminals were long gone. And really in this day and age we should be able to come up with something better.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35956190'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35956190' href='vote?id=35956190&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T00:00:19 1684195219"><a href="item?id=35956190">on May 16, 2023</a></span> <span id="unv_35956190"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35951850" class="clicky" aria-hidden="true">parent</a> | <a href="#35951743" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35956190" n="11" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">sixel was more relevant then than it is now because a vt340 was still cheaper than a pc with a vga in it and the cpu time to decompress even a gif with lzw required a quite noticeable wait; jpeg wasn&#x27;t even in the picture<p>now, if you want to display graphics from a remote server, your choices include webp over quic, jpeg over http, and h.264 over ssh, and raw pixels over x11, possibly lz77-compressed by forwarding over ssh -XC<p>sixel is an obviously terrible choice compared to any of those except that it forms part of your shell window, which is a pretty big plus; but i agree with you that in this day and age we should be able to come up with something better</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35959716'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35959716' href='vote?id=35959716&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=prmoustache" class="hnuser">prmoustache</a> <span class="age" title="2023-05-16T10:07:35 1684231655"><a href="item?id=35959716">on May 16, 2023</a></span> <span id="unv_35959716"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35956190" class="clicky" aria-hidden="true">parent</a> | <a href="#35958300" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35959716" n="8" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">But do we need to do everything in your shell window? I made an alias to be able to show pictures from my kitty terminal...and almost never use it. I have a photo viewer on my laptop, why would I use the terminal for that?<p>If I want to show a single picture, it doesn&#x27;t take longer to type eog &lt;filename&gt; [1] than my alias (icat), if I need to see thumbnails of more than one, it doesn&#x27;t take longer to open my file manager. If the file is remote, the directory is mounted easily from my file manager or the command line.<p>[1] eye of gnome in my case</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35959861'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35959861' href='vote?id=35959861&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-16T10:30:39 1684233039"><a href="item?id=35959861">on May 16, 2023</a></span> <span id="unv_35959861"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35959716" class="clicky" aria-hidden="true">parent</a> | <a href="#35964143" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35959861" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I use the terminal a LOT. Makes sense to do it there. Especially because it works over SSH, it&#x27;s a lot simpler than X Forwarding (especially since that is broken by wayland).</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35960476'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35960476' href='vote?id=35960476&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=prmoustache" class="hnuser">prmoustache</a> <span class="age" title="2023-05-16T11:46:59 1684237619"><a href="item?id=35960476">on May 16, 2023</a></span> <span id="unv_35960476"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35959861" class="clicky" aria-hidden="true">parent</a> | <a href="#35964143" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35960476" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I am also working a lot with terminal but sometimes there are simply better tools for the job. Re: ssh but how about just mounting with ssh when media files are expected? If you want to play a sound file, you still have to find a way to transport audio anyway. It is just so much more convenient to mount the directory using sshfs or your file manager.<p>I guess most people who are afraid to get out of the terminal are those that are stuck with terrible window managers from macOS or Windows and don&#x27;t know how to easily switch focus from one window to another and back in a pinch without using their mouse.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35961342'><td><table border='0'>  <tr>    <td class='ind' indent='7'><img src="s.gif" height="1" width="280"></td><td valign="top" class="votelinks">
+      <center><a id='up_35961342' href='vote?id=35961342&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-16T13:07:38 1684242458"><a href="item?id=35961342">on May 16, 2023</a></span> <span id="unv_35961342"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35960476" class="clicky" aria-hidden="true">parent</a> | <a href="#35964143" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35961342" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Lol I&#x27;ve never heard about people being afraid to get out of the terminal. In, yes :) Especially Windows and Mac users find the terminal (and the registry) very scary in my experience. I&#x27;ve even seen legit IT people that are super scared of changing values in the registry or plist&#x2F;defaults on Mac. Though Windows admins are getting more used to it again now that MS is pushing PowerShell as a management tool so heavily (which makes sense, it&#x27;s much easier to manage infrastructure as code)<p>I use both GUI and Terminal yes (KDE though because I hate Gnome&#x27;s opinionated design :). I can control it fully with the keyboard but on a remote system I&#x27;d still prefer to do things inside the ssh session. Usually because I&#x27;ve jumped through different systems and forwarding it the whole way is a PITA. I never really use sshfs for this reason.<p>In fact no I rarely need to view pics either, it&#x27;s just not really one of the things I would do on remote systems. But it&#x27;s nice to have the ability if the need does arise.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                        <tr class='athing comtr' id='35964143'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35964143' href='vote?id=35964143&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T16:27:47 1684254467"><a href="item?id=35964143">on May 16, 2023</a></span> <span id="unv_35964143"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35959716" class="clicky" aria-hidden="true">parent</a> | <a href="#35959861" class="clicky" aria-hidden="true">prev</a> | <a href="#35958300" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35964143" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">take a look at how people use jupyter with graphics and sound integrated into their repl<p><a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=sL_FfWK6J2w">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=sL_FfWK6J2w</a><p>it&#x27;d be nice to have that when i&#x27;m sshing to a remote machine but without jupyter&#x27;s janky scrolling</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35965296'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35965296' href='vote?id=35965296&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=joouha" class="hnuser">joouha</a> <span class="age" title="2023-05-16T17:48:29 1684259309"><a href="item?id=35965296">on May 16, 2023</a></span> <span id="unv_35965296"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35964143" class="clicky" aria-hidden="true">parent</a> | <a href="#35958300" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35965296" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">You can get most of the way there with euporie:<p><a href="https:&#x2F;&#x2F;github.com&#x2F;joouha&#x2F;euporie">https:&#x2F;&#x2F;github.com&#x2F;joouha&#x2F;euporie</a><p>I don&#x27;t support audio yet, but it should be possible using DECPS escape sequences</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35968337'><td><table border='0'>  <tr>    <td class='ind' indent='7'><img src="s.gif" height="1" width="280"></td><td valign="top" class="votelinks">
+      <center><a id='up_35968337' href='vote?id=35968337&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T22:00:03 1684274403"><a href="item?id=35968337">on May 16, 2023</a></span> <span id="unv_35968337"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35965296" class="clicky" aria-hidden="true">parent</a> | <a href="#35958300" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35968337" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">neat!  glad to see it supports kitty&#x27;s inline image interface<p>what do you think of the prospects for supporting smooth animation or mouse interaction with data visualizations? <i>e.g.</i>, brushing or interactive rotation in 3d.  in <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951674" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951674</a> i was claiming that that isn&#x27;t feasible within the constraints of extended vt100 emulation, but i&#x27;d love to be proven wrong<p>i&#x27;m also curious how kitty&#x27;s protocol deals with unexpected output from a background process interleaved in the middle of an image</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='36029269'><td><table border='0'>  <tr>    <td class='ind' indent='8'><img src="s.gif" height="1" width="320"></td><td valign="top" class="votelinks">
+      <center><a id='up_36029269' href='vote?id=36029269&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=joouha" class="hnuser">joouha</a> <span class="age" title="2023-05-22T09:52:35 1684749155"><a href="item?id=36029269">on May 22, 2023</a></span> <span id="unv_36029269"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35968337" class="clicky" aria-hidden="true">parent</a> | <a href="#35958300" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="36029269" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I&#x27;ve been doing some experimentation with this you might like to see:<p><a href="https:&#x2F;&#x2F;blog.josiah.link&#x2F;o&#x2F;07dffc4ade3246f3a8edf6d7d5917b0c" rel="nofollow">https:&#x2F;&#x2F;blog.josiah.link&#x2F;o&#x2F;07dffc4ade3246f3a8edf6d7d5917b0c</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                    <tr class='athing comtr' id='35958300'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35958300' href='vote?id=35958300&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wkat4242" class="hnuser">wkat4242</a> <span class="age" title="2023-05-16T06:20:43 1684218043"><a href="item?id=35958300">on May 16, 2023</a></span> <span id="unv_35958300"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35956190" class="clicky" aria-hidden="true">parent</a> | <a href="#35959716" class="clicky" aria-hidden="true">prev</a> | <a href="#35951743" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35958300" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I don&#x27;t think a VT340 and a PC competed in the same category back then. A VT needed a serious minicomputer at the very least at a backend - PC-based Linux wasn&#x27;t an option yet.<p>It was just something dependent on a core choice of what kind of computing you wanted in your business (centralised minicomputer or distributed with PCs)<p>The applications those ran were also not compatible at all.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35964051'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35964051' href='vote?id=35964051&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T16:22:14 1684254134"><a href="item?id=35964051">on May 16, 2023</a></span> <span id="unv_35964051"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">root</a> | <a href="#35958300" class="clicky" aria-hidden="true">parent</a> | <a href="#35951743" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35964051" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">a pc running procomm plus made a pretty good terminal, and there were better emulators of the vt family than procomm if you needed that<p>and then you could also use the pc for some other things, like it could edit a text file more responsively, and without causing context switches on your vax and slowing it down for other users. even if moving the files back and forth over kermit was a bit of a pain, and the keybindings for tpu or edt weren&#x27;t compatible with wordstar or brief or whatever you used on the pc<p>but yeah once you had pcs there was a strong temptation to move most of the computing onto them unless it wouldn&#x27;t fit, even though prodos, ms-dos, system 7, etc., were diarrhea pie</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                    <tr class='athing comtr' id='35951743'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951743' href='vote?id=35951743&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kevin_thibedeau" class="hnuser">kevin_thibedeau</a> <span class="age" title="2023-05-15T17:38:11 1684172291"><a href="item?id=35951743">on May 15, 2023</a></span> <span id="unv_35951743"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">parent</a> | <a href="#35949600" class="clicky" aria-hidden="true">prev</a> | <a href="#35948318" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951743" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">You can already make detailed bars with Unicode block drawing.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35948318'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35948318' href='vote?id=35948318&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tyingq" class="hnuser">tyingq</a> <span class="age" title="2023-05-15T14:04:41 1684159481"><a href="item?id=35948318">on May 15, 2023</a></span> <span id="unv_35948318"></span>          <span class='navs'>
+             | <a href="#35948560" class="clicky" aria-hidden="true">prev</a> | <a href="#35952114" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35948318" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">The Tektronix vector graphics that are also built into xterm is an neat side journey if Sixel is interesting to you.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35948867'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35948867' href='vote?id=35948867&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=YZF" class="hnuser">YZF</a> <span class="age" title="2023-05-15T14:37:26 1684161446"><a href="item?id=35948867">on May 15, 2023</a></span> <span id="unv_35948867"></span>          <span class='navs'>
+             | <a href="#35948318" class="clicky" aria-hidden="true">parent</a> | <a href="#35952114" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35948867" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I&#x27;ve used a few Tektronix terminals back in the day (1980&#x27;s) with an IBM mainframe and some graphing library (the name escapes me).  What&#x27;s old is new again?<p>We could build some pretty nice GUIs in the terminal maybe ;)</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35952114'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952114' href='vote?id=35952114&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bawolff" class="hnuser">bawolff</a> <span class="age" title="2023-05-15T18:02:00 1684173720"><a href="item?id=35952114">on May 15, 2023</a></span> <span id="unv_35952114"></span>          <span class='navs'>
+             | <a href="#35948318" class="clicky" aria-hidden="true">prev</a> | <a href="#35949343" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952114" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Everyone uses terminals to get away from complex graphics, then people reinvent (uncover? I know this is old tech) a way to do that but poorly...</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35949343'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35949343' href='vote?id=35949343&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T15:04:27 1684163067"><a href="item?id=35949343">on May 15, 2023</a></span> <span id="unv_35949343"></span>          <span class='navs'>
+             | <a href="#35952114" class="clicky" aria-hidden="true">prev</a> | <a href="#35951182" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35949343" n="25" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">unfortunately sixel seems to be seeing a kind of revival by retrocomputing enthusiasts who want sixel support to become ubiquitous<p>excerpt from my comments yesterday at <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35940188" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35940188</a>:<p>&gt; <i>some technologies, like the unix shell, smalltalk, and tcp&#x2F;ip, make hard things easy and easy things possible. others, like retrocomputing, code golf, and malbolge, make easy things hard and hard things impossible. sixel makes easy things hard and hard things impossible, ....</i><p>&gt; <i>that&#x27;s a fun way to spend my time when i choose to (e.g., in <a href="https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;390271" rel="nofollow">https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;390271</a> i did real-time 3d graphics in a unicode terminal emulator with braille) but it&#x27;s not how i want my primary user interface to my computer to work</i> ...<p>&gt; <i>sixel is oulipo programming; encoding your graphics in sixel is like writing a novel without the letter &#x27;e&#x27;. btw, a wonderful article about oulipo programming is <a href="https:&#x2F;&#x2F;100r.co&#x2F;site&#x2F;working_offgrid_efficiently.html" rel="nofollow">https:&#x2F;&#x2F;100r.co&#x2F;site&#x2F;working_offgrid_efficiently.html</a></i><p>&gt; <i>sixel is an art project, not an engineering project </i></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35950743'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950743' href='vote?id=35950743&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vidarh" class="hnuser">vidarh</a> <span class="age" title="2023-05-15T16:25:03 1684167903"><a href="item?id=35950743">on May 15, 2023</a></span> <span id="unv_35950743"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950743" n="6" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">I don&#x27;t think the issue you describe there is very relevant for typical Sixel usecase. Yes, it&#x27;s not efficient to play full screen high frame rate animations that way, but the more typical use would be things like being able to pipe log data into a command line tool and get a plot out inline in the terminal, or similar type of uses where you&#x27;d otherwise use characters.<p>You can do all kinds of things to make something better, but the two things that matters for this usecase is being able to do it over ssh <i>and</i> wide enough support that you can start relying on it. Better performance or more features only matters if both of those are met.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35951025'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951025' href='vote?id=35951025&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T16:44:45 1684169085"><a href="item?id=35951025">on May 15, 2023</a></span> <span id="unv_35951025"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35950743" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951025" n="5" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">ssh has supported x11 forwarding since at least 01996, and i&#x27;ve frequently forwarded vnc over it as well<p>i think the problem here is that x11 is shitty at &#x27;inline&#x27; (things tend to open annoying new windows) and a modern terminal cosplaying a vt100 is shitty at graphics<p>sixel doesn&#x27;t solve that problem; your terminal emulator is still shitty at graphics</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952546'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952546' href='vote?id=35952546&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vidarh" class="hnuser">vidarh</a> <span class="age" title="2023-05-15T18:30:35 1684175435"><a href="item?id=35952546">on May 15, 2023</a></span> <span id="unv_35952546"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35951025" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952546" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Being shitty at graphics doesn&#x27;t disqualify it for what most people want to use Sixel for, so it doesn&#x27;t matter. X11 isn&#x27;t an option not just because it opens windows but because it&#x27;d have been too much hassle even <i>if</i> it was inline for the type of simple things people want Sixel for.<p>Just something that&#x27;s marginally better than emulating bitmaps with unicode characters is sufficient, as long as it&#x27;s inline and simple to output.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35953026'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35953026' href='vote?id=35953026&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T19:02:42 1684177362"><a href="item?id=35953026">on May 15, 2023</a></span> <span id="unv_35953026"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952546" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35953026" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">in <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951674" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951674</a> you can see that with yeso i&#x27;ve reduced the hassle of viewing a png in x-windows to ten lines of c, and you don&#x27;t have to worry about terminal emulator incompatibility, interleaved background-process output, error recovery, or dithering<p>(you do have to worry about bugs in yeso, of which there are several)<p>if you don&#x27;t like c, in cpython it&#x27;s four lines of code with yeso<p><pre><code>    from yeso import *
+    w = Window(&#x27;hello, world&#x27;, (406, 220))
+    w.frame().copy(read_png(&#x27;admu_shell.png&#x27;))
+    while True: w.wait()
+</code></pre>
+this requires a little bit of tweaking to work in pypy<p>also it works on the linux framebuffer as well as in x-windows<p>not being inline is a harder problem to solve</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35959688'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35959688' href='vote?id=35959688&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vidarh" class="hnuser">vidarh</a> <span class="age" title="2023-05-16T10:04:22 1684231462"><a href="item?id=35959688">on May 16, 2023</a></span> <span id="unv_35959688"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35953026" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35959688" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">But it being inline is a critical requirement, or we&#x27;d just shell out to any of a number of image viewers. The problem isn&#x27;t a lack of options for showing images, but a lack of options to show inline images.<p>Not needing to pull in a dependency also matters. E.g. this is enough to do Sixel on a supporting terminal:<p><pre><code>    echo &#x27;G1BxIzA7MjswOzA7MCMxOzI7MTAwOzEwMDswIzI7MjswOzEwMDswIzF+fkBAdnZAQH5+QEB+fiQjMj8&#x2F;fX1HR319Pz99fT8&#x2F;LSMxITE0QBtcCg==&#x27; | base64 -d
+</code></pre>
+Or e.g (I have no idea if this will survive HN&#x27;s comment parsing, but it&#x27;s the output of base64 decoding the above in single quotes):<p><pre><code>    printf &#x27;\ePq#0;2;0;0;0#1;2;100;100;0#2;2;0;100;0#1~~@@vv@@~~@@~~$#2??}}GG}}??}}??-#1!14@\e\\\n&#x27;
+</code></pre>
+Having other options is great, but then don&#x27;t remove the desire to have something <i>really</i> basic <i>as well</i>.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35964205'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35964205' href='vote?id=35964205&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-16T16:31:27 1684254687"><a href="item?id=35964205">on May 16, 2023</a></span> <span id="unv_35964205"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35959688" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35964205" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">yes, i agree</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                          <tr class='athing comtr' id='35950666'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950666' href='vote?id=35950666&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=flohofwoe" class="hnuser">flohofwoe</a> <span class="age" title="2023-05-15T16:20:29 1684167629"><a href="item?id=35950666">on May 15, 2023</a></span> <span id="unv_35950666"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">parent</a> | <a href="#35950743" class="clicky" aria-hidden="true">prev</a> | <a href="#35952041" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35950666" n="14" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">&gt; unfortunately ...<p>Is there a better alternative for pixel graphics in the terminal? If yes I&#x27;m all ears. The way Sixels encodes pixel data sucks, but currently it seems to be the only way to render pixels in the terminal (and that&#x27;s implemented in more than one terminal application).</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952078'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952078' href='vote?id=35952078&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T18:00:13 1684173613"><a href="item?id=35952078">on May 15, 2023</a></span> <span id="unv_35952078"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35950666" class="clicky" aria-hidden="true">parent</a> | <a href="#35951674" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952078" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00"><a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951733" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35951733</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952335'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952335' href='vote?id=35952335&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T18:17:45 1684174665"><a href="item?id=35952335">on May 15, 2023</a></span> <span id="unv_35952335"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952078" class="clicky" aria-hidden="true">parent</a> | <a href="#35951674" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952335" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">base64-encoded graphic files are obviously a much better idea than sixel but graphics really benefits from animation and interactivity</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  <tr class='athing comtr' id='35951674'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951674' href='vote?id=35951674&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T17:33:45 1684172025"><a href="item?id=35951674">on May 15, 2023</a></span> <span id="unv_35951674"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35950666" class="clicky" aria-hidden="true">parent</a> | <a href="#35952078" class="clicky" aria-hidden="true">prev</a> | <a href="#35952041" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951674" n="11" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">you seem to be attempting to define &#x27;terminal&#x27; as &#x27;vt100 emulator&#x27;, which unfortunately condemns you to only unreliable solutions like sixel that are too inefficient to provide smooth graphical interaction and full of compatibility problems.  you can plot a graph from a remote machine, sure, but if you want to use your mouse to zoom in on it, you just bought a one-way ticket to jank city<p>but i&#x27;ve used graphical terminals like ncd x terminals since 01994, and they provided smooth graphical interactions even over shared 10-megabit ethernet.  current xorg and xwayland do a great job of emulating those terminals, with most of their deficiencies fixed, and ssh has built-in support for transparently passing along the needed credentials<p>xpra works even better, supporting h.264 compression and reattaching to applications you&#x27;ve detached from<p>the big problem with x11 is that trying to write a program to do something simple like display an image or draw a bar graph ensnares you in five pages of bureaucracy<p>to solve that problem i wrote yeso: <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;kragen&#x2F;bubbleos&#x2F;blob&#x2F;master&#x2F;yeso" rel="nofollow">https:&#x2F;&#x2F;gitlab.com&#x2F;kragen&#x2F;bubbleos&#x2F;blob&#x2F;master&#x2F;yeso</a><p>here&#x27;s a program to display a png with yeso:<p><pre><code>    #include &lt;yeso.h&gt;
+
+    int main(int argc, char **argv)
+    {
+      ypic img = yp_read_png(argv[1]);
+      if (!img.p) return 1;
+      ywin w = yw_open(argv[1], img.size, &quot;&quot;);
+      yp_copy(yw_frame(w), img);
+      yw_flip(w);
+      for (;;) yw_wait(w, 0);
+    }
+</code></pre>
+it also runs on the linux framebuffer without x-windows<p>here&#x27;s a color generalization of munching squares in yeso in python:<p><pre><code>    import yeso
+
+
+    def munch(t, fb):
+        for y, p in enumerate(fb):
+            for x in range(fb.size.x):
+                p[x] = (t &amp; 1023) - ((x ^ y) &amp; 1023)
+
+    if __name__ == &#x27;__main__&#x27;:
+        with yeso.Window(u&quot;CPython μunching&quot;, (256, 128)) as w:
+            t = 0
+            while True:
+                with w.frame() as fb:
+                    munch(t, fb)
+                t += 1
+</code></pre>
+it uses python context managers so you don&#x27;t forget to yw_flip()<p>there&#x27;s also a luajit binding<p>the example programs above are non-interactive, like virtually everything sixel that isn&#x27;t full-screen; here&#x27;s a lua program to test mouse interaction:<p><pre><code>    local yeso = require &#x27;yeso&#x27;
+
+    function bounds(a, b)
+       if a &lt; b then return a, b else return b, a end
+    end
+
+    yeso.Window(&quot;mΩuso&quot;, {256, 256}):run(function (w)
+          local m, dragStart = {x=128, y=128}
+          while true do
+             for ev in w:events() do
+                if ev.isMouse then
+                   m = ev.p
+                   if ev:button(1) and dragStart == nil then
+                      dragStart = {x=ev.p.x, y=ev.p.y}
+                   elseif not ev:button(1) then
+                      dragStart = nil
+                   end
+                end
+             end
+
+             w:frame(function (f)
+                   f:fill(0x7f7f7f)
+
+                   if dragStart then
+                      local minX, maxX = bounds(dragStart.x, m.x)
+                      local minY, maxY = bounds(dragStart.y, m.y)
+                      f:sub({minX, minY}, {maxX-minX, maxY-minY}):fill(0x336699)
+                   end
+             end)
+
+             w:wait()
+          end
+    end)
+</code></pre>
+as for embedding interactive graphics in a text stream, i&#x27;m still trying to figure out the bubbleos solution to that.  but i&#x27;ll get there, and the result will be usable over ssh, while sixel probably hasn&#x27;t gotten there even for low-bandwidth interactive localhost cases and probably never will</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952166'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952166' href='vote?id=35952166&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T18:05:53 1684173953"><a href="item?id=35952166">on May 15, 2023</a></span> <span id="unv_35952166"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35951674" class="clicky" aria-hidden="true">parent</a> | <a href="#35952602" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952166" n="8" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">&gt; but i&#x27;ve used graphical terminals like ncd x terminals since 01994, and they provided smooth graphical interactions even over shared 10-megabit ethernet<p>The problem is that with the predominance of toolkits like GTK &amp; Qt in the *nix application space, which pre-rasterize everything for easier cross-platform compatibility, X forwarding is nowhere near as efficient as it once was.  Under present circumstances, the h.264 route is probably as good as it gets.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35955036'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35955036' href='vote?id=35955036&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hulitu" class="hnuser">hulitu</a> <span class="age" title="2023-05-15T21:55:15 1684187715"><a href="item?id=35955036">on May 15, 2023</a></span> <span id="unv_35955036"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952166" class="clicky" aria-hidden="true">parent</a> | <a href="#35952247" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35955036" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Real  users don&#x27;t use GTK and QT. Real users use Xt, Xaw(3d) and Motif.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35955107'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35955107' href='vote?id=35955107&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T22:01:45 1684188105"><a href="item?id=35955107">on May 15, 2023</a></span> <span id="unv_35955107"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35955036" class="clicky" aria-hidden="true">parent</a> | <a href="#35955519" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35955107" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">xt and xaw are in the same retrocomputing penalty zone as sixel: what is astonishing is not that programs written using them do so little and work so badly, but that they ever work at all<p>motif is not quite as bad, hiding some of the worst parts of xt, but it&#x27;s still unnecessarily clumsy<p>unfortunately, unlike sixel, there&#x27;s already enough software written that depends on them that we have to keep supporting them</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35955519'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35955519' href='vote?id=35955519&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T22:43:21 1684190601"><a href="item?id=35955519">on May 15, 2023</a></span> <span id="unv_35955519"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35955036" class="clicky" aria-hidden="true">parent</a> | <a href="#35955107" class="clicky" aria-hidden="true">prev</a> | <a href="#35952247" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35955519" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Real programmers don&#x27;t sully their hands with libraries or even surface handles, preferring to rowhammer the primary video buffer instead.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35956015'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35956015' href='vote?id=35956015&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T23:39:33 1684193973"><a href="item?id=35956015">on May 15, 2023</a></span> <span id="unv_35956015"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35955519" class="clicky" aria-hidden="true">parent</a> | <a href="#35952247" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35956015" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">that&#x27;s going even farther than sixel toward making easy things hard, but maybe it&#x27;s a joke that points out why people think sixel is cool<p>how about the opposite</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                        <tr class='athing comtr' id='35952247'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952247' href='vote?id=35952247&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T18:12:50 1684174370"><a href="item?id=35952247">on May 15, 2023</a></span> <span id="unv_35952247"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952166" class="clicky" aria-hidden="true">parent</a> | <a href="#35955036" class="clicky" aria-hidden="true">prev</a> | <a href="#35952602" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952247" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">the h.264 route used by xpra is dramatically better than remote x-windows has ever been; x11 forwarding has never been great, for reasons including bufferbloat, compatibility problems, and excessive round trips, even if it&#x27;s not nearly as bad as sixel</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952308'><td><table border='0'>  <tr>    <td class='ind' indent='5'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952308' href='vote?id=35952308&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T18:16:12 1684174572"><a href="item?id=35952308">on May 15, 2023</a></span> <span id="unv_35952308"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952247" class="clicky" aria-hidden="true">parent</a> | <a href="#35952602" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952308" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">i believe MS RDP has also taken that approach<p><a href="https:&#x2F;&#x2F;techcommunity.microsoft.com&#x2F;t5&#x2F;security-compliance-and-identity&#x2F;remote-desktop-protocol-rdp-10-avc-h-264-improvements-in-windows&#x2F;ba-p&#x2F;249588" rel="nofollow">https:&#x2F;&#x2F;techcommunity.microsoft.com&#x2F;t5&#x2F;security-compliance-a...</a></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952350'><td><table border='0'>  <tr>    <td class='ind' indent='6'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952350' href='vote?id=35952350&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T18:18:25 1684174705"><a href="item?id=35952350">on May 15, 2023</a></span> <span id="unv_35952350"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952308" class="clicky" aria-hidden="true">parent</a> | <a href="#35952602" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952350" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">interesting, i thought rdp was a vnc-like protocol with minimal compression, but i don&#x27;t think i&#x27;ve actually looked at it<p>looks like you&#x27;re right:<p>&gt; <i>With RDP 8.1 we introduced an AVC&#x2F;H.264 mixed mode which in addition to using RemoteFX Media Streaming, extended support for AVC&#x2F;H.264 to images as well, while text is compressed using a proprietary Codec. This mode is used by Windows RT devices running Windows 8.1 and some 3 rd party RDP implementations.</i></div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                              <tr class='athing comtr' id='35952602'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952602' href='vote?id=35952602&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=akkartik" class="hnuser">akkartik</a> <span class="age" title="2023-05-15T18:34:27 1684175667"><a href="item?id=35952602">on May 15, 2023</a></span> <span id="unv_35952602"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35951674" class="clicky" aria-hidden="true">parent</a> | <a href="#35952166" class="clicky" aria-hidden="true">prev</a> | <a href="#35952041" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952602" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">kragen, what&#x27;s the current status of BubbleOS?<p>Also, I&#x27;m curious what you think of Arcan (<a href="https:&#x2F;&#x2F;arcan-fe.com" rel="nofollow">https:&#x2F;&#x2F;arcan-fe.com</a>)</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35953040'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35953040' href='vote?id=35953040&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T19:03:48 1684177428"><a href="item?id=35953040">on May 15, 2023</a></span> <span id="unv_35953040"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952602" class="clicky" aria-hidden="true">parent</a> | <a href="#35952041" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35953040" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">i haven&#x27;t done anything on it in years but this discussion is stimulating<p>was it you that linked me to arcan the other day?  i&#x27;ve been studying it.  i think it&#x27;s interesting</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                              <tr class='athing comtr' id='35952041'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952041' href='vote?id=35952041&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T17:58:02 1684173482"><a href="item?id=35952041">on May 15, 2023</a></span> <span id="unv_35952041"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">parent</a> | <a href="#35950666" class="clicky" aria-hidden="true">prev</a> | <a href="#35951182" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952041" n="4" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">If I were retired, I&#x27;d write a terminal that passes an extra bi-directional pipe (fd 3?) to programs for an interactive jupyter-like REPL experience.  From that pipe, programs could request a canvas from the terminal (mmapped file?, shm?, another pipe?), and the terminal could send per-canvas mouse&#x2F;key actions back to the program.  Obviously, I haven&#x27;t dug into the details yet, but it&#x27;s on the list.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35952443'><td><table border='0'>  <tr>    <td class='ind' indent='2'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks">
+      <center><a id='up_35952443' href='vote?id=35952443&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T18:23:59 1684175039"><a href="item?id=35952443">on May 15, 2023</a></span> <span id="unv_35952443"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952041" class="clicky" aria-hidden="true">parent</a> | <a href="#35951182" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35952443" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">that&#x27;s an interesting approach<p>i think you could probably get pretty far by creating a new x11 socket with fresh xauth for each new program launched; then, instead of opening new floating overlapping windows for them, embedding the display of whatever windows they create in your notebook, just below below the command that created them<p>a bytestream protocol has some real advantages, including being able to forward it over a network socket, including an ssh-forwarded socket, or providing a gui for whatever little embedded electronic gadget you build and connect to your terminal over spi or usb serial<p>i had previously rejected it as too inefficient for the localhost use case, but in <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35693474" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=35693474</a>, and some later protocol-design ideas i haven&#x27;t shared yet, i convinced myself that you can probably make it efficient enough for anything that doesn&#x27;t use custom shaders<p>is this something you&#x27;d be interested in talking about in a less hostile environment</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35954468'><td><table border='0'>  <tr>    <td class='ind' indent='3'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks">
+      <center><a id='up_35954468' href='vote?id=35954468&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T21:05:04 1684184704"><a href="item?id=35954468">on May 15, 2023</a></span> <span id="unv_35954468"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35952443" class="clicky" aria-hidden="true">parent</a> | <a href="#35951182" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35954468" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Is the email on your site still good?</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35954820'><td><table border='0'>  <tr>    <td class='ind' indent='4'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks">
+      <center><a id='up_35954820' href='vote?id=35954820&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kragen" class="hnuser">kragen</a> <span class="age" title="2023-05-15T21:36:30 1684186590"><a href="item?id=35954820">on May 15, 2023</a></span> <span id="unv_35954820"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">root</a> | <a href="#35954468" class="clicky" aria-hidden="true">parent</a> | <a href="#35951182" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35954820" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">yes, but sometimes i fail to notice email among the spam<p>unless you ran across the pobox address, which has been dead for... a while<p>the canonical.org address is the correct one<p>comment if you&#x27;ve emailed me and not gotten a response</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                                    <tr class='athing comtr' id='35951182'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951182' href='vote?id=35951182&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=msla" class="hnuser">msla</a> <span class="age" title="2023-05-15T16:57:33 1684169853"><a href="item?id=35951182">on May 15, 2023</a></span> <span id="unv_35951182"></span>          <span class='navs'>
+             | <a href="#35949343" class="clicky" aria-hidden="true">prev</a> | <a href="#35951733" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951182" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">Library you can use to generate these images:<p><a href="https:&#x2F;&#x2F;github.com&#x2F;saitoha&#x2F;libsixel">https:&#x2F;&#x2F;github.com&#x2F;saitoha&#x2F;libsixel</a><p>Plenty of links to other projects.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35951733'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951733' href='vote?id=35951733&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hello_computer" class="hnuser">hello_computer</a> <span class="age" title="2023-05-15T17:37:28 1684172248"><a href="item?id=35951733">on May 15, 2023</a></span> <span id="unv_35951733"></span>          <span class='navs'>
+             | <a href="#35951182" class="clicky" aria-hidden="true">prev</a> | <a href="#35950990" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951733" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c5A">Kitty &#x2F; Wezterm &#x2F; iTerm2 &#x2F; mintty and a few others already support base64 encoded gif&#x2F;jpg&#x2F;png, which are more space efficient, and easier to splat as b64 blobs than to dither and sixel-encode.  Sixel needs to die.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35950990'><td><table border='0'>  <tr>    <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks">
+      <center><a id='up_35950990' href='vote?id=35950990&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=crispyambulance" class="hnuser">crispyambulance</a> <span class="age" title="2023-05-15T16:41:40 1684168900"><a href="item?id=35950990">on May 15, 2023</a></span> <span id="unv_35950990"></span>          <span class='navs'>
+             | <a href="#35951733" class="clicky" aria-hidden="true">prev</a> <a class="togg clicky" id="35950990" n="3" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c73">I find it disappointing that an article about Terminal graphics, does not, you know, include an image of what it even looks like!<p>Is that just uninteresting to people that might want to use it?</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                <tr class='athing comtr' id='35951335'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951335' href='vote?id=35951335&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=JdeBP" class="hnuser">JdeBP</a> <span class="age" title="2023-05-15T17:10:15 1684170615"><a href="item?id=35951335">on May 15, 2023</a></span> <span id="unv_35951335"></span>          <span class='navs'>
+             | <a href="#35950990" class="clicky" aria-hidden="true">parent</a> | <a href="#35951263" class="clicky" aria-hidden="true">next</a> <a class="togg clicky" id="35951335" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">It&#x27;s not an article.  It&#x27;s a digitized version of one section of a chapter of a book from May 1988.  Which is in turn volume 2 of a 2 volume manual set, with the diagrams in volume 1.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+            <tr class='athing comtr' id='35951263'><td><table border='0'>  <tr>    <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks">
+      <center><a id='up_35951263' href='vote?id=35951263&amp;how=up&amp;goto=item%3Fid%3D35936079'><div class='votearrow' title='upvote'></div></a></center>    </td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=MisterTea" class="hnuser">MisterTea</a> <span class="age" title="2023-05-15T17:04:08 1684170248"><a href="item?id=35951263">on May 15, 2023</a></span> <span id="unv_35951263"></span>          <span class='navs'>
+             | <a href="#35950990" class="clicky" aria-hidden="true">parent</a> | <a href="#35951335" class="clicky" aria-hidden="true">prev</a> <a class="togg clicky" id="35951263" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>          </span>
+                  </span></div><br><div class="comment">
+                  <div class="commtext c00">It&#x27;s not an article. It&#x27;s documentation.</div>
+              <div class='reply'>        <p><font size="1">
+                  </font>
+      </div></div></td></tr>
+        </table></td></tr>
+                  </table>
+  <br><br>
+</td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br>
+<center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a> | <a href="newsfaq.html">FAQ</a> | <a href="lists">Lists</a> | <a href="https://github.com/HackerNews/API">API</a> | <a href="security.html">Security</a> | <a href="https://www.ycombinator.com/legal/">Legal</a> | <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+<form method="get" action="//hn.algolia.com/">Search: <input type="text" name="q" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="off"></form></center></td></tr>      </table></center></body>
+      <script type='text/javascript' src='hn.js?B8TjSRv5WtHMnrhyJHcg'></script>
+  </html>

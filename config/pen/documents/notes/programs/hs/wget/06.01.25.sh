@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=V-Qg45_v8VM" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=_0cBXmXDDYc" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=WWjwVKFjcvQ" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=8MEF4c-VYSM" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=A8-Nt8xkw7s" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=q9WUXlJjZfc" "#" "<==" "pen-ci"
+cd /root/repos/saitoha/SDL1.2-SIXEL;  "wget" "https://github.com/libsdl-org/SDL-1.2/commit/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch" "#" "<==" "zsh"

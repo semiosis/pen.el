@@ -1,0 +1,269 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:25:43 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:25:43 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 4902
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 9</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter8.html">Chapter 8</a><a href="contents.html">Contents</a><a href="chapter10.html">Chapter 10</a></nav>
+</header>
+<h1 id="S9"><span class="chapnum">9</span> Macrographs</h1>
+<h2 id="S9.1">Macrographs: Storing Your Graphics</h2>
+<p>Macrographs let you define and store commands used to draw graphics. For
+example, you can store a logo as a series of commands in a macrograph, then
+use the logo in different displays. You do not have to rebuild the logo each
+time you need it. Macrographs are similar to procedures used in higher level
+languages such as Pascal.</p>
+<p>A macrograph can include ReGIS commands and character strings. The VT300
+can store up to 26 macrographs. Each macrograph is identified by a letter of
+the alphabet. The identifying letter is not case sensitive. (For example, 'a' and
+'A' would identify the same macrograph.)</p>
+<p>You can nest macrographs. That is, you can use one macrograph as part of
+another macrograph. You can nest macrographs up to 16 levels deep. However,
+a macrograph cannot call itself.</p>
+<p>The VT300 can store at least 10,000 bytes of macrograph data. Macrograph
+data is stored dynamically. When you redefine or delete a macrograph, the terminal
+clears the old data.</p>
+<p>The VT300 does not draw macrographs when you define them. You must select
+a defined macrograph to draw it. Selecting an empty macrograph does not
+cause an error. The macrograph saves all characters it contains, including
+the four control characters BS, HT, CR, and LF.</p>
+<p>You can define macrographs at almost any point in a ReGIS stream, with the
+following exceptions.</p>
+<ul>
+<li><p><strong>As part of a quoted string</strong><br/>
+ReGIS does not recognize any commands in a quoted text string. If
+you try to define a macrograph in a text string, ReGIS interprets
+the command as text to display on the screen.</p></li>
+<li><p><strong>In another macrograph</strong><br/>
+You must define macrographs separately. You cannot define a
+macrograph while inside another macrograph. You cannot nest
+macrograph definitions.</p></li>
+</ul>
+<p>There are three types of macrograph command operations.</p>
+<ul class="bare">
+<li>Define macrograph</li>
+<li>Invoke macrograph</li>
+<li>Clear macrographs</li>
+</ul>
+<p class="note">PROGRAMMING TIP: Macrographs can store parts of commands that you
+use frequently in a program. For example, you can store the parameters for
+several color maps in a macrograph.</p>
+<h2 id="S9.2">Define Macrograph</h2>
+<p>You use this option to define a macrograph and assign it a letter. You use the
+following format for the define macrograph operation.</p>
+<p class="example">@:&lt;call letter&gt;&lt;definition&gt;@;</p>
+<p>where</p>
+<div class="example"><p><b>@</b> identifies the beginning of a macrograph definition.</p>
+<p><b>:</b> identifies a define macrograph operation.</p>
+<p><b>&lt;call letter&gt;</b> is a letter of the alphabet used to identify the macrograph
+you are defining. The call letter is case insensitive. For example, 'a' and
+'A' identify the same macrograph.</p>
+<p><b>&lt;definition&gt;</b> is the macrograph's definition.</p>
+<p><b>@;</b> identifies the end of the definition.</p></div>
+<p><a href="#F9-1">Figure 9-1</a> shows an example of how to define, store, and invoke the
+macrograph for a shaded star.</p>
+<table id="F9-1" class="figure">
+<caption>Figure 9-1 Macrograph Example</caption>
+<tbody>
+<tr>
+<td><img src="ma-0735-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>@:S<br/>W(S1)<br/>P[+50,+50]<br/>V[-100]<br/>[-100,-50]<br/>[+100]<br/>[+50,-100]<br/>
+[+50,+100]<br/>[+100]<br/>[-100,+50]<br/>P[+50,+125]<br/>W(S1)<br/>V[-50,-125]<br/>[-100]<br/>
+[-50,+125]<br/>W(I0)<br/>V[+100,-75]<br/>[+100,+75]<br/>@;<br/>P[200,200]<br/>W(I2)<br/>
+@S<br/>W(I1)<br/>P[400,150]<br/>@S<br/>W(I2)<br/>P[600,200]<br/>@S</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S9.3">Invoke Macrograph</h2>
+<p>This option lets you select a macrograph that you already defined. For example,
+if you stored a graphic image with a macrograph, you can display the image
+with this option. ReGIS inserts the contents of the macrograph into the
+command stream. You use the following format for the invoke macrograph
+option.</p>
+<p class="example">@&lt;call letter&gt;</p>
+<p>where</p>
+<p class="example"><b>&lt;call letter&gt;</b> is the letter of the alphabet that identifies the macrograph
+you want to use. The letter is not case sensitive. For example, 'a' and 'A'
+identify the same macrograph.</p>
+<p>When you select a macrograph, ReGIS uses the current values for commands
+such as write, screen, and text commands. You can select new values in the
+definition for a macrograph, by using the ReGIS commands and temporary options.</p>
+<h2 id="S9.4">Clear Macrograph</h2>
+<p>There are two options for clearing macrograph definitions.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Clear all macrographs</td>
+<td>Clears the definitions in all 26 macrograph locations.</td>
+</tr>
+<tr>
+<td>Clear specified macrograph</td>
+<td>Clears the macrograph that you identify by letter.</td>
+</tr>
+</tbody>
+</table>
+<p>You use the following formats for the clear macrograph options.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Clear All Macrographs</th>
+<th>Clear Specified Macrograph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">@.</td>
+<td>@:&lt;call letter&gt;@;</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>@.</b> is the command for clearing all 26 macrographs.</p>
+<p><b>@:</b> identifies a define macrograph operation.</p>
+<p><b>&lt;call letter&gt;</b> specifies the macrograph you want to clear.</p>
+<p><b>@;</b> clears the selected macrographs by specifying a blank definition.</p></div>
+<h2 id="S9.5">Macrograph Summary</h2>
+<p><a href="#T9-1">Table 9-1</a> is a summary of the macrograph options. There are no default values
+for these commands.</p>
+<table id="T9-1" class="majortable">
+<caption>Table 9-1 Macrograph Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@&lt;call letter&gt;</td>
+<td>None</td>
+<td><p><strong>Invoke macrograph</strong><br/>
+Inserts the contents of the macrograph specified by &lt;call letter&gt; into the ReGIS command string. The &lt;call letter&gt; is not case sensitive.</p></td>
+</tr>
+<tr>
+<td>@:&lt;call letter&gt; &lt;definition&gt;@;</td>
+<td>None</td>
+<td><p><strong>Define macrograph</strong><br/>
+Defines a macrograph and selects &lt;call letter&gt; to identify the macrograph.
+The &lt;call letter&gt; is not case sensitive.</p></td>
+</tr>
+<tr>
+<td>@.</td>
+<td>None</td>
+<td><p><strong>Clear all macrographs</strong><br/>
+Deletes all macrograph definitions.</p></td>
+</tr>
+<tr>
+<td>@:&lt;call letter&gt;@;</td>
+<td>None</td>
+<td><p><strong>Clear defined macrograph</strong><br/>
+Deletes the macrograph identified by &lt;call letter&gt;.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter8.html">Chapter 8</a><a href="contents.html">Contents</a><a href="chapter10.html">Chapter 10</a></nav>
+</footer>
+</body>
+</html>

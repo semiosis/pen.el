@@ -1,0 +1,5 @@
+cd /root/repos/xterm/xterm-397;  "clangd" "#" "<==" "emacs"
+cd /usr/include/x86_64-linux-gnu/bits;  "clangd" "#" "<==" "emacs"
+cd /usr/include/X11;  "clangd" "#" "<==" "emacs"
+cd /usr/include;  "clangd" "#" "<==" "emacs"
+cd /root/rdrview;  "clangd" "#" "<==" "emacs"

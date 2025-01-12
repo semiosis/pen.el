@@ -1,0 +1,423 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:25:32 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:25:32 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 5551
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 8</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter7.html">Chapter 7</a><a href="contents.html">Contents</a><a href="chapter9.html">Chapter 9</a></nav>
+</header>
+<h1 id="S8"><span class="chapnum">8</span> Load Command</h1>
+<h2 id="S8.1">Using Your Own Character Sets</h2>
+<p>The VT300 lets you designate up to four character sets to use in ReGIS. The
+alphabet 0 set (A0) can have up to 192 characters, all others can have up to 96
+characters. You assign and select these character sets by number.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>Number</th>
+<th>Character Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Any one of the terminal's built-in sets (such as ASCII or ISO Latin-1 supplemental graphic)</td>
+</tr>
+<tr>
+<td>1 to 3</td>
+<td>Up to three sets that you load into the terminal from the host system</td>
+</tr>
+</tbody>
+</table>
+<p>You use the load command to select, load, or reload sets 1, 2, and 3. You cannot
+use the load command to load character set 0. Set 0 is reserved for one of
+the terminal's built-in sets. See <a href="chapter7.html">Chapter 7</a> for information on loading built-in
+character sets.</p>
+<p>There are three options to the load command.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Select character set</td>
+<td>Assigns a number to the set you want to load.</td>
+</tr>
+<tr>
+<td>Specify name</td>
+<td>Assigns a name to the set selected with the select character set option.</td>
+</tr>
+<tr>
+<td>Load character cell</td>
+<td>Loads a character into the set selected with the select character set option.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S8.2">Select Character Set</h2>
+<p>You use this option to assign a number to a character set you want to load into
+the terminal. You can select 1, 2, or 3. You use the following format for the
+select character set option.</p>
+<p class="example">L(A&lt;1 to 3&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>L</b> identifies a load command.</p>
+<p><b>A</b> identifies a select character set option.</p>
+<p><b>&lt;1 to 3&gt;</b> is a number to assign to a character set loaded from the host system.</p></div>
+<p>After you select a character set number, you can use the other load command
+options to name the character set and load the characters. All load commands
+apply to the character set with this number, until you select another number.
+However, you can use other types of ReGIS commands without affecting the
+character set selected for loading.</p>
+<p>You load characters into the character set by using the load character cell option.
+You can load characters into the character set as needed. You do not have
+to load the complete set at one time.</p>
+<p class="note">NOTE: You can select character set 0, but you cannot load it.</p>
+<h2 id="S8.3">Specify Name</h2>
+<p>This option lets you specify a name for the character set selected with the select
+character set option. You can use up to 10 characters in the name. You
+use this name for report commands (<a href="chapter10.html">Chapter 10</a>), to report the name of the
+currently selected loadable set. You use the following format for the specify
+name option.</p>
+<p class="example">L(A'&lt;name&gt;')</p>
+<p>where</p>
+<div class="example"><p><b>A</b> identifies a specify name option.</p>
+<p><b>' '</b> are single or double quotation marks that enclose the character set name.</p>
+<p><b>&lt;name&gt;</b> is a name to assign to the currently selected character set. You
+can use up to 10 characters in the name.</p></div>
+<p>You can use the specify name and select character set options together. That
+is, you can assign the name and number of the character set at the same time.
+Make sure you use the select character set option first in the command.
+Otherwise, ReGIS assigns the name to the character set already selected, not
+the character set you are selecting.</p>
+<h2 id="S8.4">Load Character Cell</h2>
+<p>These arguments let you design and load a character into the terminal. ReGIS
+loads the character into the set selected with the select character set option.
+You use the following format for the load cell option.</p>
+<p class="example">L"&lt;character&gt;"&lt;hex pairs&gt;</p>
+<p>where</p>
+<div class="example"><p><b>" "</b> are single or double quotation marks that enclose the call letter to use
+for the character cell you are loading.</p>
+<p><b>&lt;character&gt;</b> is one ASCII character to use as a call letter for the character
+cell you are loading.</p>
+<p><b>&lt;hex pairs&gt;</b> is a hexadecimal code that defines the appearance of the
+character cell. You use a pair of hex values for each row of the cell (up to
+10 rows).</p></div>
+<p>First, you assign a call letter (&lt;character&gt;) to the cell. You use the <em>call letter</em>
+to select the loaded character set in text commands. You can use any single ASCII
+character for the call letter, including a number or space. However, there is
+no relationship between the shape of the call letter and the character you
+are loading.</p>
+<p>Next, you define how the loaded character will look. Each character cell has 80
+pixels in a 8 × 10 array. This size matches the unit cell size for a standard S1
+character cell (<a href="chapter7.html#T7-1">Table 7-1</a>). You cannot define a character larger than the 8 × 10
+array.</p>
+<p>You use hexadecimal codes to define which pixels are on and off when you
+display the character. <a href="#T8-1">Table 8-1</a> lists the bit pattern for each possible hex code.
+A 1 bit turns a pixel on, and a 0 bit turns a pixel off. Each hex code defines a
+4-bit pattern. You use two hex code values to define a row of 8 pixels. You
+can define all 10 rows in the character cell.</p>
+<table id="T8-1" class="majortable">
+<caption>Table 8-1 Hex Code Table</caption>
+<thead>
+<tr>
+<th>Hex Code</th>
+<th>Bit 1/5</th>
+<th>Bit 2/6</th>
+<th>Bit 3/7</th>
+<th>Bit 4/8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>You build the cell from the top down. The first hex code value for a row
+controls the pattern for the four left pixels. The second value controls the pattern
+for the four right pixels.</p>
+<p><strong>Example</strong></p>
+<div><img src="inline8-1.png" alt=""/></div>
+<p>If you use more than two hex values, ReGIS proceeds as if you used a comma
+after each pair of values. If you use only one hex value or end up with one,
+ReGIS assumes the first hex value is 0 and sets the first 4 bits in the row to 0
+(off).</p>
+<p>You do not have to define every row in a cell. However, you must define the
+following rows.</p>
+<ul>
+<li>Rows that have any pixels on</li>
+<li>Blank rows that are above rows with pixels on</li>
+</ul>
+<p>ReGIS assumes that any undefined rows at the bottom of the cell are blank.
+<a href="#F8-1">Figure 8-1</a> shows some examples of loaded characters and their hex codes.</p>
+<table id="F8-1" class="figure">
+<caption>Figure 8-1 Example of Load Character Cell Argument</caption>
+<tbody>
+<tr>
+<td><img src="ma-0409-86.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td colspan="2">COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td> <br/>(A)<br/>(B)<br/>(C)<br/>(D)<br/>(E)<br/>(F)</td>
+<td>L(A3"alpha")<br/>"S" 00,14,3E,54,3E,15,3E,14<br/>
+'c' 4,E,15,15,15,E,4<br/>
+'C' FF,89,EB,81,E3,81,EB,89,FF<br/>
+"b" 7F,41,41,41,41,49,55,55,55,63<br/>
+'1' 0,1C,1C,1C,7F,3E,1C,8<br/>
+"." 0,1F,8F,47,29,10,28,44,82;</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S8.5">Load Command Summary</h2>
+<p><a href="#T8-2">Table 8-2</a> is a summary of the <b>L</b> command options, including any default
+values.</p>
+<table id="T8-2" class="majortable">
+<caption>Table 8-2 Load Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(A&lt;1 to 3&gt;)</td>
+<td>1</td>
+<td><p><strong>Select character set</strong><br/>
+Selects one of three loadable character sets to use for any following load commands.</p></td>
+</tr>
+<tr>
+<td>(A"&lt;name&gt;")</td>
+<td>" "</td>
+<td><p><strong>Specify name</strong><br/>
+Selects a name of up to 10 characters for the currently selected loadable character set. You can use this option with the select character set option:<br/>
+(A&lt;1 to 3&gt;"&lt;name&gt;").</p></td>
+</tr>
+<tr>
+<td>"&lt;ASCII&gt;"&lt;hex pairs&gt;</td>
+<td>–</td>
+<td><p><strong>Load character cell</strong><br/>
+Loads a character into the currently selected loadable set.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first">&lt;ASCII&gt;</td>
+<td>is an ASCII character you use to select the loadable character in other commands.</td>
+</tr>
+<tr>
+<td class="first">&lt;hex pairs&gt;</td>
+<td>define the bit pattern for each line of the character.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter7.html">Chapter 7</a><a href="contents.html">Contents</a><a href="chapter9.html">Chapter 9</a></nav>
+</footer>
+</body>
+</html>

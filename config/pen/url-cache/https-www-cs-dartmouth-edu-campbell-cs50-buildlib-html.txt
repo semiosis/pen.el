@@ -1,0 +1,569 @@
+HTTP/1.1 200 OK
+Date: Sun, 12 Jan 2025 01:19:15 GMT
+Server: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k mod_fcgid/2.3.9 Phusion_Passenger/6.0.23
+Last-Modified: Mon, 07 May 2012 06:29:02 GMT
+ETag: "7d24-4bf6c62cfc780"
+Accept-Ranges: bytes
+Content-Length: 32036
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
+<meta name="src" content="buildlib.tex"> 
+<meta name="date" content="2012-05-07 02:28:00"> 
+<link rel="stylesheet" type="text/css" href="buildlib.css"> 
+</head><body 
+>
+<h1 class="likepartHead"><a 
+ id="x1-1000"></a>CS 50: Software Design and Implementation</h1>
+<h1 class="likepartHead"><a 
+ id="x1-2000"></a>Lecture 23</h1>
+<h1 class="likepartHead"><a 
+ id="x1-3000"></a>How to Build Your Own C Library</h1>
+<!--l. 21--><p class="noindent" >You have been using libraraies in this course but we haven&#8217;t discussed them in detail or discussed more
+advanced uses of this programming and development feature; that is, how to build you own C library. Why
+would you want to do this? And, how would you do this. In a general sense libraries are collections of
+precompiled functions that have been written to be reused by other programmers. In your case, imagine,
+three different programmers were designing and coding up TinySearch. Once they completed the overall
+design then they might come to the conclusion that there are a number of common functions that could be
+reused by each component being coded up: for example all the code in the <span 
+class="cmbx-10">lab6/src/util</span>
+directory. These common functions in util could be built as a library that each programmer could
+link as a static library (lib.a) or better built as a shared object (lib.so) that is dyanmically
+shared. We will discuss these various static and dynamic options and as part of Lab6 you
+will create a static libray from the functions in the util directory and link to that library at
+compile time. This will require you to build a library and the change your makefile to build the
+crawler, indexer and query engine so that these objects use that library. Understanding and
+being able to build a library is another one of those skills you need to get your cs50 hackers
+badge.
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Goals</h3>
+<!--l. 25--><p class="noindent" >We plan to learn the following from today&#8217;s lecture:
+     <ul class="itemize1">
+     <li class="itemize">What are different types of libraries and their uses.
+     </li>
+     <li class="itemize">Example of linking to libm.a
+     </li>
+     <li class="itemize">Building a static library: libtseutil.a
+     </li>
+     <li class="itemize">Listing and linking to libtseutil.a</li></ul>
+                                                                                  
+                                                                                  
+<!--l. 35--><p class="noindent" >
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>The Basics - Libraries</h3>
+<!--l. 37--><p class="noindent" >Libaries consist of a set of related functions to perform a common task; for example, the standard C
+library, &#8216;libc.a&#8217;, is automatically linked into your programs by the &#8220;gcc&#8221; compiler and can be found at
+/usr/lib/libc.a. Standard system libraries are usually found in /lib and /usr/lib/ directories. Check
+out those directories. By default the gcc compiler or more specifically its linker needs to be
+directed to which libraries to search other than the standard C library - which is included by
+default.
+<!--l. 42--><p class="noindent" >There are a number of conventions for naming libraries and telling the compiler where to find them that
+we will discuss in this lecture. A libray filename always starts with <span 
+class="cmbx-10">lib</span>. The last part of the name
+determines what type of library it is:
+<!--l. 44--><p class="noindent" ><span 
+class="cmbx-10">.a</span>: static, traditional libraries. Applications link to these libraries of object code.<br 
+class="newline" />
+<!--l. 46--><p class="noindent" ><span 
+class="cmbx-10">.so</span>: dynamically linked shared object libraries. These libraries can either be linked in at runtime but
+statically aware or loaded during execution by the dynamic link loader.<br 
+class="newline" />
+<!--l. 48--><p class="noindent" >The way to view a static library is that it is linked by the linker and included in the execution code. So if
+10 applications linked in a static library it would mean that each application&#8217;s resulting binary would
+include the referenced library in its program binary. This leads to large executable files. To address this
+people use shared libraries. These libraries contain the same references to those found in static ones but
+the code for those functions are not directly included in the resulting executable. Rather, shared libraries
+access a single copy of the libray that is shared by all the 10 applications while all excuting at the same
+time. There is some operating system magic to make this happen safely but it is a foundation on modern
+computing.
+<!--l. 50--><p class="noindent" >As in the case of stdio.h the library has to provide a header file that is included in the source code that
+defines prototype functions and variables that the library prpovides. Many times there are functions not
+included in the standard C library that you need to get access to. For example, take the example code
+below: it uses functions provided in the the math library (i.e., libm.a) and defined in <span 
+class="cmti-10">math.h </span>which is
+included as a header file in the code below.
+<!--l. 54--><p class="noindent" >The trig.c code comes from another nice book on Linux Programming by Masters and Blum
+<a 
+href="http://www.cs.dartmouth.edu/~campbell/cs50/trig.c" >trig.c</a><br 
+class="newline" />
+<div 
+class="colorbox" id="colorbox1"><div class="BVerbatimInput"><br /><span 
+class="cmtt-10">/*</span><br /><span 
+class="cmtt-10">&#x00A0;*</span><span 
+class="cmtt-10">&#x00A0;Professional</span><span 
+class="cmtt-10">&#x00A0;Linux</span><span 
+class="cmtt-10">&#x00A0;Programming</span><span 
+class="cmtt-10">&#x00A0;-</span><span 
+class="cmtt-10">&#x00A0;Trig</span><span 
+class="cmtt-10">&#x00A0;Functions</span><br /><span 
+class="cmtt-10">&#x00A0;*</span><span 
+class="cmtt-10">&#x00A0;Author:</span><span 
+class="cmtt-10">&#x00A0;Jon</span><span 
+class="cmtt-10">&#x00A0;Masters</span><span 
+class="cmtt-10">&#x00A0;&#x003C;jcm@jonmasters.org&#x003E;</span><br /><span 
+class="cmtt-10">&#x00A0;*/</span><br /><br /><span 
+class="cmtt-10">#include</span><span 
+class="cmtt-10">&#x00A0;&#x003C;stdio.h&#x003E;</span><br /><span 
+class="cmtt-10">#include</span><span 
+class="cmtt-10">&#x00A0;&#x003C;stdlib.h&#x003E;</span><br /><span 
+class="cmtt-10">#include</span><span 
+class="cmtt-10">&#x00A0;&#x003C;math.h&#x003E;</span><br /><br /><span 
+class="cmtt-10">#define</span><span 
+class="cmtt-10">&#x00A0;MAX_INPUT</span><span 
+class="cmtt-10">&#x00A0;25</span><br /><br /><span 
+class="cmtt-10">int</span><span 
+class="cmtt-10">&#x00A0;main(int</span><span 
+class="cmtt-10">&#x00A0;argc,</span><span 
+class="cmtt-10">&#x00A0;char</span><span 
+class="cmtt-10">&#x00A0;**argv)</span><br /><span 
+class="cmtt-10">{</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;char</span><span 
+class="cmtt-10">&#x00A0;input[MAX_INPUT];</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;double</span><span 
+class="cmtt-10">&#x00A0;angle;</span><br /><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;printf("Give</span><span 
+class="cmtt-10">&#x00A0;me</span><span 
+class="cmtt-10">&#x00A0;an</span><span 
+class="cmtt-10">&#x00A0;angle</span><span 
+class="cmtt-10">&#x00A0;(in</span><span 
+class="cmtt-10">&#x00A0;radians)</span><span 
+class="cmtt-10">&#x00A0;==&#x003E;</span><span 
+class="cmtt-10">&#x00A0;");</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;if</span><span 
+class="cmtt-10">&#x00A0;(!fgets(input,</span><span 
+class="cmtt-10">&#x00A0;MAX_INPUT,</span><span 
+class="cmtt-10">&#x00A0;stdin))</span><span 
+class="cmtt-10">&#x00A0;{</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;perror("an</span><span 
+class="cmtt-10">&#x00A0;error</span><span 
+class="cmtt-10">&#x00A0;occurred.\n");</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;}</span><br /><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;angle</span><span 
+class="cmtt-10">&#x00A0;=</span><span 
+class="cmtt-10">&#x00A0;strtod(input,</span><span 
+class="cmtt-10">&#x00A0;NULL);</span><br /><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;printf("sin(%e)</span><span 
+class="cmtt-10">&#x00A0;=</span><span 
+class="cmtt-10">&#x00A0;%e\n",</span><span 
+class="cmtt-10">&#x00A0;angle,</span><span 
+class="cmtt-10">&#x00A0;sin(angle));</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;printf("cos(%e)</span><span 
+class="cmtt-10">&#x00A0;=</span><span 
+class="cmtt-10">&#x00A0;%e\n",</span><span 
+class="cmtt-10">&#x00A0;angle,</span><span 
+class="cmtt-10">&#x00A0;cos(angle));</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;printf("tan(%e)</span><span 
+class="cmtt-10">&#x00A0;=</span><span 
+class="cmtt-10">&#x00A0;%e\n",</span><span 
+class="cmtt-10">&#x00A0;angle,</span><span 
+class="cmtt-10">&#x00A0;tan(angle));</span><br /><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;return</span><span 
+class="cmtt-10">&#x00A0;0;</span><br /><span 
+class="cmtt-10">}</span><br /><br /></div></div>
+<!--l. 97--><p class="noindent" >The trig program relies on the math library libm.a so it is necessary to tell the linker explicity to include
+that library. Note, that on Linux machines that the math library is included as part of the GLIBC (libc.a)
+package so you don&#8217;t really need to do this on Linux. But the point is that you can&#8217;t rely on that for many
+C functions that are provided by external functions. Therefore, it&#8217;s you should tell gcc which library to
+include as below:
+<div 
+class="colorbox" id="colorbox2"><div class="BVerbatimInput"><br /><span 
+class="cmtt-10">mygcc</span><span 
+class="cmtt-10">&#x00A0;-o</span><span 
+class="cmtt-10">&#x00A0;trig</span><span 
+class="cmtt-10">&#x00A0;-lm</span><span 
+class="cmtt-10">&#x00A0;trig.c</span><br /><br /></div>                                                           </div>
+<!--l. 111--><p class="noindent" >The -lm option tells gcc to search the system provided math library (libm). It will look in /lib and /usr/lib
+                                                                                  
+                                                                                  
+to find the library as discussed above. the &#8220;m&#8221; is the name of the library lib<span 
+class="cmbx-10">m</span>.a The &#8220;-l&#8221; option is the
+library name: -llibrary. gcc searches for the library named library when linking, which is actually a file
+named lib<span 
+class="cmbx-10">library</span>.a.
+<!--l. 113--><p class="noindent" >The following is a tutorial on building libraries with focus on the Tiny Search Engine. This tutorial is largely
+adapted from <a 
+href="http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html" class="url" ><span 
+class="cmtt-10">http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html</span></a>).
+<!--l. 115--><p class="noindent" ><span 
+class="cmbx-10">We will not cover building shared dynamic libraries in the lecture below but if interested</span>
+<span 
+class="cmbx-10">check out the tutorial that provides a nice set of simple examples.</span>
+<!--l. 117--><p class="noindent" >
+<h3 class="likesectionHead"><a 
+ id="x1-6000"></a>Building a Static C Library</h3>
+<!--l. 119--><p class="noindent" >Your crawler code is probably factored into two components, namely <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">crawler</span></span></span> and <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span>, for which the
+former contains the main control logic of the crawler and the latter is more of a general purpose toolbox
+that you utilize in your crawler and in other components of your Tiny Search Engine. So, would it be
+cool if you can make your <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> into a C library and just link to it when you need to use
+functions from it, instead of having to copy over all the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> C files as you work on different
+components of your search engine? This short tutorial is going to show you just how to do
+that.<br 
+class="newline" />
+<!--l. 121--><p class="noindent" >We will be using the crawler sample solution code as our example to walkthrough how to build its <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span>
+into a static C library and how to link to it to create the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">crawler</span></span></span> binary executable.<br 
+class="newline" />
+<!--l. 123--><p class="noindent" >The crawler code is divided into two directories: <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">crawler</span></span></span> and <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span>, we want to build the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> into a C
+library.
+<!--l. 125--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-7000"></a>Compiling .c to .o</h4>
+<!--l. 126--><p class="noindent" >Navigate into <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> directory and compile all the .c source files into .o object files by supplying the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">-c</span></span></span>
+flag:
+<!--l. 128--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;gcc</span><span 
+class="cmtt-10">&#x00A0;-Wall</span><span 
+class="cmtt-10">&#x00A0;-c</span><span 
+class="cmtt-10">&#x00A0;*.c</span></span></span>
+<!--l. 130--><p class="noindent" >You should see a number of .o object files created corresponding to the .c source files.
+<!--l. 132--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-8000"></a>Creating a Library File</h4>
+                                                                                  
+                                                                                  
+<!--l. 133--><p class="noindent" >Next, we issue:
+<div 
+class="colorbox" id="colorbox3"><div class="BVerbatimInput"><br /><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;ar</span><span 
+class="cmtt-10">&#x00A0;-cvq</span><span 
+class="cmtt-10">&#x00A0;libtseutil.a</span><span 
+class="cmtt-10">&#x00A0;*.o</span><br /><span 
+class="cmtt-10">q</span><span 
+class="cmtt-10">&#x00A0;-</span><span 
+class="cmtt-10">&#x00A0;dictionary.o</span><br /><span 
+class="cmtt-10">q</span><span 
+class="cmtt-10">&#x00A0;-</span><span 
+class="cmtt-10">&#x00A0;file.o</span><br /><span 
+class="cmtt-10">q</span><span 
+class="cmtt-10">&#x00A0;-</span><span 
+class="cmtt-10">&#x00A0;hash.o</span><br /><span 
+class="cmtt-10">q</span><span 
+class="cmtt-10">&#x00A0;-</span><span 
+class="cmtt-10">&#x00A0;html.o</span><br /><br /></div>           </div>
+<!--l. 151--><p class="noindent" >which takes all the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">.o</span></span></span> object files generated from previous step and packages them into a single <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">.a</span></span></span> static
+library file, named <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">lib[xxxxx].a</span></span></span>. In our case, since we are making the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> library for the tiny search
+engine (tse), we named it <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">libtseutil.a</span></span></span>. Notice, that the name must start with <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">lib</span></span></span> and
+end with the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">.a</span></span></span> extension. (<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">ar</span></span></span> is the Linux archiver utility, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">man</span></span></span> it to learn about it and its
+options.)<br 
+class="newline" />
+<!--l. 153--><p class="noindent" >The <span 
+class="cmbx-10">ar </span>command does the heavy lifting and &#8211; creates and maintains library archives &#8211; take a look at the
+man pages to determine the detail meaning of the flags; in brief:<br 
+class="newline" />
+<!--l. 155--><p class="noindent" >-c Whenever an archive is created, an informational message to that effect is written to standard error.
+<br 
+class="newline" />If the -c option is specified, ar creates the archive silently.<br 
+class="newline" />
+<!--l. 158--><p class="noindent" >-v Provide verbose output. <br 
+class="newline" />
+<!--l. 160--><p class="noindent" >-q Quickly append the specified files to the archive. If the archive does not exist a new archive file is
+created. <br 
+class="newline" />
+<!--l. 162--><p class="noindent" >We have successfully built our own C library file and we are ready to link it to build our
+<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">crawler</span></span></span> binary. But before that, we can also take an optional step to view what files our library
+contains.
+<!--l. 164--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-9000"></a>Listing Files in a Library</h4>
+<!--l. 165--><p class="noindent" >You can do
+<!--l. 167--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;ar</span><span 
+class="cmtt-10">&#x00A0;-t</span><span 
+class="cmtt-10">&#x00A0;libtseutil.a</span></span></span>
+<!--l. 169--><p class="noindent" >to see what files this library includes. For example, following is the output, indicating the four .o files
+included in this library file.
+<div 
+class="colorbox" id="colorbox4"><div class="BVerbatimInput"><br /><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;ar</span><span 
+class="cmtt-10">&#x00A0;-t</span><span 
+class="cmtt-10">&#x00A0;libtseutil.a</span><br /><span 
+class="cmtt-10">dictionary.o</span><br /><span 
+class="cmtt-10">file.o</span><br /><span 
+class="cmtt-10">hash.o</span><br /><span 
+class="cmtt-10">html.o</span><br /><br /></div>                                 </div>
+<!--l. 186--><p class="noindent" >
+<h3 class="likesectionHead"><a 
+ id="x1-10000"></a>Linking with a Static C Library</h3>
+                                                                                  
+                                                                                  
+<!--l. 187--><p class="noindent" >Now we navigate to the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">crawler</span></span></span> directory and build our executable binary. There are two ways of doing
+this; we can do
+<!--l. 189--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;gcc</span><span 
+class="cmtt-10">&#x00A0;-o</span><span 
+class="cmtt-10">&#x00A0;crawler</span><span 
+class="cmtt-10">&#x00A0;crawler.c</span><span 
+class="cmtt-10">&#x00A0;list.c</span><span 
+class="cmtt-10">&#x00A0;../util/libtseutil.a</span></span></span>
+<!--l. 191--><p class="noindent" >in which we directly specify the path to the the library file; or we can do
+<!--l. 193--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">$</span><span 
+class="cmtt-10">&#x00A0;gcc</span><span 
+class="cmtt-10">&#x00A0;-o</span><span 
+class="cmtt-10">&#x00A0;crawler</span><span 
+class="cmtt-10">&#x00A0;crawler.c</span><span 
+class="cmtt-10">&#x00A0;list.c</span><span 
+class="cmtt-10">&#x00A0;-L../util/</span><span 
+class="cmtt-10">&#x00A0;-ltseutil</span></span></span>
+<!--l. 195--><p class="noindent" >in which we specify the directory path containing the library file with the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">-L</span></span></span> flag and specify that we want
+to link to our TinySearchEngine util library with the switch <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">-ltseutil</span></span></span>. Pay close attention to the spelling
+of this switch and the name we gave to our library file: this switch is basically cooked up by just cutting
+off the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">lib</span></span></span> prefix and <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">.a</span></span></span> extension from the library name and sticking a <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">-l</span></span></span> before what&#8217;s
+left.<br 
+class="newline" />
+<!--l. 197--><p class="noindent" >
+<h3 class="likesectionHead"><a 
+ id="x1-11000"></a>What you have to do for Lab6</h3>
+<!--l. 199--><p class="noindent" >In lab6 we want you to create a static library as above and link it into the three main components if
+needed. The following steps serve to outline a general approach to do this:
+     <ul class="itemize1">
+     <li class="itemize">First,  your  code  structure  should  contain  a  single  <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> folder,  and  three  other  folders
+     corresponding to the control blocks of the three components of the search engine.
+     </li>
+     <li class="itemize">Navigate into the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> folder, and create a Makefile that uses <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">ar</span></span></span> and <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">gcc</span></span></span> to create the static
+     library that you want to use for all the three components of the search engine. And of course
+     also include things like <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">clean</span></span></span> in this Makefile.
+     </li>
+     <li class="itemize">Next, move into each of the component folders; for each component, create a Makefile that treats the
+     <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> static library as a part of the dependency chain when building each component; just <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">cd</span></span></span> to <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span>
+     folder and call <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">make</span></span></span> there. For example, in your <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">indexer</span></span></span> Makefile, you could have something
+     like
+                                                                                  
+                                                                                  
+     <div class="verbatim" id="verbatim-1">
+     $(UTILLIB):&#x00A0;$(UTILC)&#x00A0;$(UTILH)
+     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;cd&#x00A0;$(UTILDIR);&#x00A0;make;</div>
+     <!--l. 209--><p class="nopar" > where <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">UTILLIB</span></span></span> might point to the name of the static library, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">UTIL[HC]</span></span></span> the header and source files
+     in your <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> directory. You don&#8217;t have to worry about <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">cd</span></span></span> back into your component
+     directory from <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> directory because every single line in Makefile runs in a separate
+     process.
+     </li>
+     <li class="itemize">Note that, when specifying the source files in the Makefile for any of the components, you do NOT
+     want to include the <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">util</span></span></span> C source files; that&#8217;s the whole point of making our own static library, isn&#8217;t
+     it?</li></ul>
+<!--l. 214--><p class="noindent" >An example snippet of the Makefile for crawler could be as follows:<br 
+class="newline" />
+<!--l. 216--><p class="noindent" >This is beyond a hint. You work it out.
+<div 
+class="colorbox" id="colorbox5"><div class="BVerbatimInput"><br /><span 
+class="cmtt-10">#</span><span 
+class="cmtt-10">&#x00A0;Filename:</span><span 
+class="cmtt-10">&#x00A0;Makefile</span><br /><span 
+class="cmtt-10">#</span><span 
+class="cmtt-10">&#x00A0;Description:</span><span 
+class="cmtt-10">&#x00A0;The</span><span 
+class="cmtt-10">&#x00A0;make</span><span 
+class="cmtt-10">&#x00A0;file</span><span 
+class="cmtt-10">&#x00A0;is</span><span 
+class="cmtt-10">&#x00A0;to</span><span 
+class="cmtt-10">&#x00A0;build</span><span 
+class="cmtt-10">&#x00A0;up</span><span 
+class="cmtt-10">&#x00A0;the</span><span 
+class="cmtt-10">&#x00A0;crawler.</span><br /><span 
+class="cmtt-10">#</span><span 
+class="cmtt-10">&#x00A0;Warning:</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;See</span><span 
+class="cmtt-10">&#x00A0;how</span><span 
+class="cmtt-10">&#x00A0;to</span><span 
+class="cmtt-10">&#x00A0;use</span><span 
+class="cmtt-10">&#x00A0;CFLAGS1</span><span 
+class="cmtt-10">&#x00A0;to</span><span 
+class="cmtt-10">&#x00A0;build</span><span 
+class="cmtt-10">&#x00A0;file.c</span><br /><span 
+class="cmtt-10">CC=gcc</span><br /><span 
+class="cmtt-10">CFLAGS=</span><span 
+class="cmtt-10">&#x00A0;-Wall</span><span 
+class="cmtt-10">&#x00A0;-pedantic</span><span 
+class="cmtt-10">&#x00A0;-std=c99</span><br /><span 
+class="cmtt-10">SOURCES=./list.h</span><span 
+class="cmtt-10">&#x00A0;./list.c</span><span 
+class="cmtt-10">&#x00A0;./crawler.c</span><span 
+class="cmtt-10">&#x00A0;./crawler.h</span><br /><span 
+class="cmtt-10">CFILES=./list.c</span><span 
+class="cmtt-10">&#x00A0;./crawler.c</span><br /><br /><span 
+class="cmtt-10">UTILDIR=../util/</span><br /><span 
+class="cmtt-10">UTILFLAG=-ltseutil</span><br /><span 
+class="cmtt-10">UTILLIB=$(UTILDIR)libtseutil.a</span><br /><span 
+class="cmtt-10">UTILC=$(UTILDIR)hash.c</span><span 
+class="cmtt-10">&#x00A0;$(UTILDIR)html.c</span><span 
+class="cmtt-10">&#x00A0;$(UTILDIR)file.c</span><span 
+class="cmtt-10">&#x00A0;$(UTILDIR)dictionary.c</span><br /><span 
+class="cmtt-10">UTILH=$(UTILC:.c=.h)</span><br /><br /><span 
+class="cmtt-10">crawler:$(SOURCES)</span><span 
+class="cmtt-10">&#x00A0;$(UTILDIR)header.h</span><span 
+class="cmtt-10">&#x00A0;$(UTILLIB)</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;$(CC)</span><span 
+class="cmtt-10">&#x00A0;$(CFLAGS)</span><span 
+class="cmtt-10">&#x00A0;-o</span><span 
+class="cmtt-10">&#x00A0;$@</span><span 
+class="cmtt-10">&#x00A0;$(CFILES)</span><span 
+class="cmtt-10">&#x00A0;-L$(UTILDIR)</span><span 
+class="cmtt-10">&#x00A0;$(UTILFLAG)</span><br /><br /><span 
+class="cmtt-10">$(UTILLIB):</span><span 
+class="cmtt-10">&#x00A0;$(UTILC)</span><span 
+class="cmtt-10">&#x00A0;$(UTILH)</span><br /><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;</span><span 
+class="cmtt-10">&#x00A0;cd</span><span 
+class="cmtt-10">&#x00A0;$(UTILDIR);</span><span 
+class="cmtt-10">&#x00A0;make;</span><br /><br /><br /></div></div>
+<!--l. 248--><p class="noindent" ><span 
+class="cmbx-10">NOTE: Once you have made a library you can not debug it even if the debug flags are set in</span>
+<span 
+class="cmbx-10">the Makefile. For example, the symbols are not available for the functions in tseutil &#8211; so you</span>
+<span 
+class="cmbx-10">can inspect data or set break points, etc. The best thing is to make sure your util code is</span>
+<span 
+class="cmbx-10">debugged before creating libtseutil.a. Don&#8217;t create the library while you have</span>
+<span 
+class="cmbx-10">bugs.</span>
+<!--l. 250--><p class="noindent" >Note to lecturer: run example in l23/util. Then go to lab6/src/util and lab6/src/crawler and run and
+discuss the Makefile.
+ 
+</body></html> 
+
+                                                                                  
+
+

@@ -1,0 +1,6 @@
+cd /root/repos/saitoha;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/saitoha/SDL1.2-SIXEL" "#" "<==" "pen-gh-curl"
+cd /root/repos/saitoha/SDL1.2-SIXEL;  "curl" "-s" "https://api.github.com/repos/saitoha/SDL1.2-SIXEL" "#" "<==" "pen-ci"
+cd /root/repos/libsdl-org;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/libsdl-org/SDL-1.2" "#" "<==" "pen-gh-curl"
+cd /root/repos/libsdl-org/SDL-1.2;  "curl" "-s" "https://api.github.com/repos/libsdl-org/SDL-1.2" "#" "<==" "pen-ci"
+cd /root/repos/libsdl-org;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/libsdl-org/SDL-1.2" "#" "<==" "pen-gh-curl"
+cd /root/repos/libsdl-org/SDL-1.2;  "curl" "-s" "https://api.github.com/repos/libsdl-org/SDL-1.2" "#" "<==" "pen-ci"

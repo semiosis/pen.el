@@ -1,0 +1,2 @@
+;;; Generated package description from magit-circleci.el  -*- no-byte-compile: t -*-
+(define-package "magit-circleci" "20191209.2113" "CircleCI integration for Magit" '((dash "2.16.0") (transient "0.1.0") (magit "2.90.0") (emacs "25.3")) :commit "2d4bdacf498ed3ff7d2c3574d346b2d24cbb12da" :authors '(("Adrien Brochard")) :maintainer '("Adrien Brochard") :keywords '("circleci" "continuous" "integration" "magit" "vc" "tools") :url "https://github.com/abrochard/magit-circleci")

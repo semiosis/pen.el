@@ -1,0 +1,20 @@
+-*- mode: org;-*-
+
+* Version 1.2.0
+
+- Added support for denote file signatures. See the
+  =denote-menu-show-file-signature= variable
+- Added filter function =denote-menu-filter-out-keyword= to filter
+  /out/ denote files based on keyword.
+
+* Version 1.1.1
+
+- Added custom user option =denote-menu-show-file-type=.
+- Fixed dired export and menu bugs when when multiple files with the
+  same identifier but different file types (e.g org exports).
+- Fixed =denote-menu-filter= not being interactive.
+
+
+* Version 1.0.0
+
+Initial release

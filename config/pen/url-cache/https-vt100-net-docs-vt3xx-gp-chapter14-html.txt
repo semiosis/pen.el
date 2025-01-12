@@ -1,0 +1,520 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:18:45 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:18:45 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 6982
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 14</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter13.html">Chapter 13</a><a href="contents.html">Contents</a><a href="chapter15.html">Chapter 15</a></nav>
+</header>
+<h1 id="S14"><span class="chapnum">14</span> Sixel Graphics</h1>
+<h2 id="S14.1">What are Sixels?</h2>
+<p>The VT300 can send and receive sixel graphics data. You can draw monochrome
+or color (VT340 only) images with sixel data.</p>
+<p>A <dfn>sixel</dfn> is a group of six pixels in a vertical column. A pixel (picture element) is
+the smallest displayable unit on a video screen. Sixels represent bitmap data
+for a graphic image. The terminal processes sixel data as bits of information. A
+bit value of 1 means turn on a pixel. A bit value of 0 means turn off the pixel.</p>
+<p>You use a single character code for each sixel. The terminal uses 6 bits of the
+8-bit character code to encode bitmap data.</p>
+<p>You can use sixels to design character sets and fonts for display. Volume 1,
+Chapter 5 of this manual describes how to design and load soft character sets
+into the terminal.</p>
+<h2 id="S14.2">Sixel Data Format</h2>
+<p>The VT300 uses a device control string to send and receive sixel images.</p>
+<p class="note">NOTE: See Volume 1, Chapter 2 of this manual for general information about
+device control strings.</p>
+<p>Many of Digital's printers recognize the control string format. Here are some
+examples.</p>
+<ul class="col3 bare">
+<li>LA12</li>
+<li>LA50</li>
+<li>LA100</li>
+<li>LA34-VA</li>
+<li>LN03</li>
+</ul>
+<p>Different printers have different output quality. For example, dot matrix printers
+are very different from laser printers. When you design sixel images on the
+terminal for printing, you should use parameter values that are appropriate for
+your printer. For more information, see your printer's programmer reference
+manual.</p>
+<h3 id="S14.2.1">Device Control String</h3>
+<p>The format for the device control string is as follows.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>DCS</th>
+<th>P1</th>
+<th>;</th>
+<th>P2;</th>
+<th>P3;</th>
+<th>q</th>
+<th>s..s</th>
+<th>ST</th>
+</tr>
+<tr>
+<td>9/0</td>
+<td>**</td>
+<td>3/11</td>
+<td>**</td>
+<td>**</td>
+<td>7/1</td>
+<td>***</td>
+<td>9/12</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>DCS</b> is a C1 control character that introduces the sixel data sequence.
+You can also express DCS as the 7-bit escape sequence ESC P for a 7-bit
+environment.</p>
+<p><b>P1</b> is the macro parameter. This parameter indicates the pixel aspect ratio
+used by the application or terminal. The pixel aspect ratio defines the
+shape of the pixel dots the terminal uses to draw images. For example, a
+pixel that is twice as high as it is wide has as aspect ratio of 2:1. The
+following list shows the values you can use for P1.</p>
+<p class="note">NOTE: The macro parameter is provided for compatibility with existing
+Digital software. New applications should set P1 to 0 and use the set raster
+attributes control, described later in this chapter.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>P1</th>
+<th>Pixel Aspect Ratio<br/>(Vertical:Horizontal)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Omitted</strong></td>
+<td><strong>2:1</strong> (default)</td>
+</tr>
+<tr>
+<td>0, 1</td>
+<td>2:1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5:1</td>
+</tr>
+<tr>
+<td>3, 4</td>
+<td>3:1</td>
+</tr>
+<tr>
+<td>5, 6</td>
+<td>2:1</td>
+</tr>
+<tr>
+<td>7, 8, 9</td>
+<td>1:1</td>
+</tr>
+</tbody>
+</table>
+<p>You can override the setting of the macro parameter by using the set raster
+attributes character (", 2/2) in a sixel data string. See below.</p>
+<p><b>;</b> is a semicolon (3/11). This character separates numeric parameters in a
+DCS string.</p>
+<p><b>P2</b> selects how the terminal draws the background color. You can use one
+of three values.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>P2</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong> or 2 (default)</td>
+<td>Pixel positions specified as 0 are set to the current background color.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Pixel positions specified as 0 remain at their current color.</td>
+</tr>
+</tbody>
+</table>
+<p><b>P3</b> is the horizontal grid size parameter. The horizontal grid size is the
+horizontal distance between two pixel dots. The VT300 ignores this parameter
+because the horizontal grid size is fixed at 0.0195 cm (0.0075 in).</p>
+<p><b>q</b> indicates that this device control string is a sixel command.</p>
+<p><b>s...s</b> is the sixel-encoded data string. The <dfn>sixel data characters</dfn> are characters
+in the range of ? (hex 3F) to ~ (hex 7E). Each sixel data character
+represents six vertical pixels of data. Each sixel data character represents
+a binary value equal to the character code value minus hex 3F.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>? (hex 3F) represents the binary value 000000.</li>
+<li>t (hex 74) represents the binary value 110101.</li>
+<li>~ (hex 7E) represents the binary value 111111.</li>
+</ul>
+<p>The terminal translates the six bits to a <em>sixel</em> – six pixels in a vertical
+column. The least significant bit is at the top.</p>
+<p class="note">NOTE: For information on how to code sixel characters, see "Soft Character
+Sets" in Volume 1, Chapter 5 of this manual.</p>
+<p>You can also use sixel control functions in the data string. The next section
+describes these characters and their functions.</p>
+<p><b>ST</b> is the string terminator. ST is a C1 control character. You can also
+express ST as the 7-bit escape sequence ESC \ for a 7-bit environment.</p></div>
+<h2 id="S14.3">Sixel Control Functions</h2>
+<p>You can use sixel control functions to perform special functions, such as selecting
+colors and raster attributes.</p>
+<h3 id="S14.3.1">Graphics Repeat Introducer (!)</h3>
+<p>The ! (2/1) character introduces a repeat sequence. A repeat sequence lets you
+repeat a graphic character a specified number of times. You use the following
+format for the repeat sequence.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>!</th>
+<th>Pn</th>
+<th>character</th>
+</tr>
+<tr>
+<td>2/1</td>
+<td>**</td>
+<td>****</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>Pn</b> is the repeat count. The repeat count can be any decimal value. For
+example, if you use a repeat count of 23, the next character repeats 23
+times.</p>
+<p><b>character</b> is the character to repeat. You can use any character in the
+range of ? (hex 3F) to ~ (hex 7E).</p></div>
+<h3 id="S14.3.2">Raster Attributes (")</h3>
+<p>The " (2/2) character is the set raster attributes command. This command selects
+the raster attributes for the sixel data string that follows it. You must use
+the command before any sixel data string. The " command overrides any raster
+attributes set by the macro parameter described above. You use the following
+format for the " command.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>"</th>
+<th>Pan</th>
+<th>;</th>
+<th>Pad;</th>
+<th>Ph;</th>
+<th>Pv</th>
+</tr>
+<tr>
+<td>2/2</td>
+<td>**</td>
+<td>3/11</td>
+<td>**</td>
+<td>**</td>
+<td>**</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>Pan</b> and <b>Pad</b> define the pixel aspect ratio for the following sixel data
+string. Pan is the numerator, and Pad is the denominator.</p>
+<pre>Pan
+--- = pixel aspect ratio
+Pad</pre>
+<p>The pixel aspect ratio defines the shape of the pixels the terminal uses to
+draw the sixel image.</p>
+<p>Pan defines the vertical shape of the pixel. Pad defines the horizontal
+shape of the pixel. For example, to define a pixel that is twice as high as
+it is wide, you use a value of 2 for Pan and 1 for Pad.</p>
+<p>If you use the set raster attributes command (") in a sixel data string, you
+must specify a pixel aspect ratio. You can only use integer values for Pan
+and Pad. The VT300 rounds the pixel aspect ratio to the nearest integer.</p>
+<p><b>Ph</b> and <b>Pv</b> define the horizontal and vertical size of the image (in pixels),
+respectively.</p>
+<p>Ph and Pv do <em>not</em> limit the size of the image defined by the sixel data.
+However, Ph and Pv let you omit background sixel data from the image
+definition and still have a color background. They also provide a concise
+way for the application or terminal to encode the size of an image.</p>
+<p class="note">NOTE: The VT300 uses Ph and Pv to erase the background when P2 is
+set to 0 or 2.</p></div>
+<h3 id="S14.3.3">Color Introducer (#)</h3>
+<p>The # (2/3) color introducer starts a color selection sequence. There are two
+ways to select colors.</p>
+<ul>
+<li>Select a color map entry by number.</li>
+<li>Use HLS (hue, lightness, and saturation) or RGB (red, green, blue) colors.</li>
+</ul>
+<h3 id="S14.3.3.1">Basic Colors</h3>
+<p>You can use the following format to select a basic color map entry.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>#</th>
+<th>Pc</th>
+</tr>
+<tr>
+<td>2/3</td>
+<td>**</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>Pc</b> is the color number (<a href="#T14-1">Table 14-1</a>).</p></div>
+<p class="note">NOTE: The VT330 has 4 available color map entries, the VT340 has 16.</p>
+<h3 id="S14.3.3.2">HLS or RGB Colors</h3>
+<p>You use the following format to specify HLS or RGB
+colors. HLS and RGB are universally recognized color coordinate systems.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>#</th>
+<th>Pc</th>
+<th>;</th>
+<th>Pu;</th>
+<th>Px;</th>
+<th>Py;</th>
+<th>Pz</th>
+</tr>
+<tr>
+<td>2/3</td>
+<td>**</td>
+<td>3/11</td>
+<td>**</td>
+<td>**</td>
+<td>**</td>
+<td>**</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>Pc</b> is the color number.</p>
+<p><b>Pu</b> is the color coordinate system (HLS or RGB).</p>
+<p><b>Px</b>, <b>Py</b>, and <b>Pz</b> are the color coordinates in the specified system. <a href="#T14-1">Table
+14-1</a> lists the possible values.</p></div>
+<table id="T14-1" class="majortable">
+<caption>Table 14-1 Color Specifier</caption>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Possible Values</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pc</td>
+<td>0 to 255</td>
+<td>The color number to define.</td>
+</tr>
+<tr>
+<td>Pu (required)</td>
+<td>1<br/>2</td>
+<td>HLS (hue, lightness, and saturation)<br/>RGB (red, green, and blue)</td>
+</tr>
+<tr>
+<td colspan="3"><p class="note">NOTE: The values of the following parameters depend on the color coordinate
+system selected (HLS or RGB).</p></td>
+</tr>
+<tr>
+<th colspan="3">HLS Values</th>
+</tr>
+<tr>
+<td>Px</td>
+<td>0 to 360 degrees</td>
+<td>Hue angle</td>
+</tr>
+<tr>
+<td>Py</td>
+<td>0 to 100 percent</td>
+<td>Lightness</td>
+</tr>
+<tr>
+<td>Pz</td>
+<td>0 to 100 percent</td>
+<td>Saturation</td>
+</tr>
+<tr>
+<th colspan="3">RGB Values</th>
+</tr>
+<tr>
+<td>Px</td>
+<td>0 to 100 percent</td>
+<td>Red intensity</td>
+</tr>
+<tr>
+<td>Py</td>
+<td>0 to 100 percent</td>
+<td>Green intensity</td>
+</tr>
+<tr>
+<td>Pz</td>
+<td>0 to 100 percent</td>
+<td>Blue intensity</td>
+</tr>
+<tr>
+<td colspan="3"><p class="note">NOTE: See the "<a href="chapter2.html#S2.4">Output Mapping</a>" section in <a href="chapter2.html">Chapter 2</a> for a discussion of
+shade and color programming.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S14.3.4">Graphics Carriage Return ($)</h3>
+<p>The $ (2/4) character indicates the end of the sixel line. The active position
+returns to the left page border of the same sixel line. You can use this character
+to overprint lines.</p>
+<h3 id="S14.3.5">Graphics New Line (-)</h3>
+<p>The - (2/13) character indicates the end of a sixel line. The active position
+moves to the left margin of the next sixel line.</p>
+<h3 id="S14.3.6">Parameter Separator (;)</h3>
+<p>The ; (3/11) character separates numeric parameters in a device control string.
+If there is no number before the separator, the terminal assumes that parameter
+is 0. If there is a number after the separator, the terminal assumes that
+parameter is 0.</p>
+<h2 id="S14.4">Sixel Scrolling Mode</h2>
+<p>You can set the sixel scrolling mode by using the <b>Sixel Scrolling</b> feature in the
+Graphics Set-Up screen. You can also select this mode by using the sixel
+display mode (DECSDM) control function.</p>
+<h3 id="S14.4.1">Sixel Scrolling Enabled</h3>
+<p>When sixel display mode is enabled, the sixel active position begins at the
+upper-left corner of the ANSI text active position. Scrolling occurs when the
+sixel active position reaches the bottom margin of the graphics page. When
+sixel mode is exited, the text cursor is set to the current sixel cursor position.</p>
+<p>The VT300 sends a sixel next line (-) character following a sixel dump. The top
+line of the sixel image may scroll off the screen
+if (1) your application returns the sixel dump to the terminal, or (2) you perform
+a sixel dump to a video terminal connected to the VT300 printer port.</p>
+<p class="note">NOTE: You can prevent the sixel image from scrolling off the screen by disabling
+the sixel scrolling feature.</p>
+<h3 id="S14.4.2">Sixel Scrolling Disabled</h3>
+<p>When sixel scrolling is disabled, the sixel active position begins at the upper-left
+corner of the active graphics page. The terminal ignores any commands
+that attempt to advance the active position below the bottom margin of the
+graphics page. When sixel mode is exited, the text cursor does not change from
+the position it was in when sixel mode was entered.</p>
+<h3 id="S14.4.3">Sixel Display Mode Control Function</h3>
+<p>You can set the sixel scrolling mode by using the sixel display mode
+(DECSDM) control function.</p>
+<p>When sixel display mode is set, the <b>Sixel Scrolling</b> feature is enabled. When
+sixel display mode is reset, the <b>Sixel Scrolling</b> feature is disabled.</p>
+<p>To set DECSDM, the control function is.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>8</th>
+<th>0</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/8</td>
+<td>3/0</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></div>
+<p>To reset DECSDM, the control function is.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>8</th>
+<th>0</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/8</td>
+<td>3/0</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></div>
+<footer>
+<nav class="sections"><a href="chapter13.html">Chapter 13</a><a href="contents.html">Contents</a><a href="chapter15.html">Chapter 15</a></nav>
+</footer>
+</body>
+</html>

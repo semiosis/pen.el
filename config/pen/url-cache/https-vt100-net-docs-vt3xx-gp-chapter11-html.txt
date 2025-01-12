@@ -1,0 +1,499 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:26:07 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:26:07 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 6437
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 11</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter10.html">Chapter 10</a><a href="contents.html">Contents</a><a href="chapter12.html">Chapter 12</a></nav>
+</header>
+<h1 id="S11"><span class="chapnum">11</span> Polygon Fill Command</h1>
+<p>You use the polygon fill command to draw filled-in, closed objects such as circles,
+ellipses, triangles, and squares. Polygon fill commands start with the key
+letter F. There are four basic options to the F command.</p>
+<ul class="bare">
+<li>Vector</li>
+<li>Curve and arc</li>
+<li>Position</li>
+<li>Temporary write controls</li>
+</ul>
+<p>The polygon fill command uses the current foreground color specified to fill in
+figures (Chapters <a href="chapter2.html">2</a> and <a href="chapter3.html">3</a>).</p>
+<h2 id="S11.1">Vector Option</h2>
+<p>The polygon fill command accepts all vector command options and arguments.
+This feature lets you draw filled-in objects such as squares, rectangles, and diamonds.
+<a href="chapter5.html">Chapter 5</a> describes all the vector command options.</p>
+<p>You use the following basic format of a polygon fill command with a vector
+option.</p>
+<p class="example">F(V&lt;positions&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>F</b> identifies a polygon fill command.</p>
+<p><b>V</b> identifies the vector option.</p>
+<p><b>&lt;positions&gt;</b> are the positions of the polygon's vertices.</p></div>
+<p><a href="#F11-1">Figure 11-1</a> shows a filled-in square and a filled-in diamond. These objects are
+drawn with a polygon fill command using the vector option and B suboption.</p>
+<table id="F11-1" class="figure">
+<caption>Figure 11-1 Vector Option Example</caption>
+<tbody>
+<tr>
+<td colspan="3"><img src="ma-1213-84r.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<caption><small>FILLED SQUARE</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[50,200]<br/>F(V(B)[+100]<br/>      [,+100]<br/>      [-100]<br/>      (E))</td>
+</tr>
+</tbody>
+</table></td>
+<td>    </td>
+<td><table class="command-example">
+<caption><small>FILLED DIAMOND</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[400,300]<br/>F(V(B)[300,200]<br/>      [200,300]<br/>      [300,400]<br/>      (E))</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S11.2">Curve and Arc Option</h2>
+<p>The polygon fill command accepts all curve command options and arguments.
+This feature lets you draw filled-in circles, arcs, and other curved objects.
+<a href="chapter6.html">Chapter 6</a> describes all the curve command options.</p>
+<p>You use the following basic format for a polygon fill command with curve
+options.</p>
+<p class="example">F(C&lt;positions&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies the curve option.</p>
+<p><b>&lt;positions&gt;</b> are coordinate values for a curve or circle. To use a curve,
+you include the (B) and (E) options. See <a href="chapter6.html">Chapter 6</a> for the format of curve
+command options.</p></div>
+<p><a href="#F11-2">Figure 11-2</a> shows a filled-in ellipse and a filled-in circle. The circle is drawn
+using the polygon fill command with the circle option. The ellipse is drawn
+using the polygon fill command with the closed curve option.</p>
+<table id="F11-2" class="figure">
+<caption>Figure 11-2 Curve Option Example</caption>
+<tbody>
+<tr>
+<td colspan="3"><img src="ma-1212-84r.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<caption><small>FILLED ELLIPSE</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,200]<br/>F(C(B)<br/>      [+200]<br/>      [,+100]<br/>      [-200]<br/>      (E))</td>
+</tr>
+</tbody>
+</table></td>
+<td>    </td>
+<td><table class="command-example">
+<caption><small>FILLED CIRCLE</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[500,300]<br/>F(C[+100])<br/> <br/> <br/> <br/> </td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S11.3">Position Option</h2>
+<p>The polygon fill command accepts all position command options and arguments.
+Remember, position options do not draw graphic images as do the curve and
+vector options. You can use the position option to connect vectors, curves, and
+arcs. <a href="chapter3.html">Chapter 3</a> describes the position command. <a href="chapter6.html">Chapter 6</a> describes the curve
+command and its options.</p>
+<p>You can use the P option (with the open curve function of the curve option) to
+set the slope at the two endpoints of an open curve. You can also use the P
+option to reset the cursor position before and after an arc with its center at the
+current position.</p>
+<p>You use the following basic format for a polygon fill command with the position
+and curve options.</p>
+<p class="example">F(C(A+&lt;degrees&gt;)&lt;position1&gt;P&lt;position2&gt;...)</p>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a curve option.</p>
+<p><b>A</b> identifies an arc suboption.</p>
+<p><b>&lt;degrees&gt;</b> specifies the number of degrees and the direction to draw the arc in.</p>
+<p><b>&lt;position1&gt;</b> is the point where the arc will start.</p>
+<p><b>P</b> identifies a position option.</p>
+<p><b>&lt;position2&gt;</b> is the new active position.</p></div>
+<p><a href="#F11-3">Figure 11-3</a> shows filled-in, connected arcs and a filled-in, connected arc and
+rectangle. The connected arcs are drawn with the polygon fill command, position
+option, and open curve option. The connected arc and rectangle are drawn
+with the polygon fill command, position option, vector option, and open curve
+option.</p>
+<table id="F11-3" class="figure">
+<caption>Figure 11-3 Position Option Example</caption>
+<tbody>
+<tr>
+<td colspan="3"><img src="ma-1214-84r.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<caption><small>FILLED, CONNECTED ARCS</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,200]<br/>F(C(A+270)<br/>      [+50,-50]<br/>P[+100]<br/>C(A+270)<br/>      [-50,+50])<br/> </td>
+</tr>
+</tbody>
+</table></td>
+<td>    </td>
+<td><table class="command-example">
+<caption><small>FILLED, CONNECTED ARC AND RECTANGLE</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[450,300]<br/>F(C(C,A+270)<br/>      [-50]<br/>V[,+50]<br/>      [+100]<br/>      [,-100]<br/>      [-50])</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S11.4">Temporary Write Controls Option</h2>
+<p>The polygon fill command accepts all write command options and arguments.
+There are two ways to use temporary write controls with the polygon fill
+command.</p>
+<ul>
+<li>as an option of the F command</li>
+<li>as a suboption of the C and V options</li>
+</ul>
+<p><a href="chapter3.html">Chapter 3</a> describes the write control command and its options.</p>
+<p><strong>Temporary Write Control as an Option of the F Command</strong></p>
+<p class="example">F(W(&lt;suboption&gt;)&lt;options&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a temporary write control option.</p>
+<p><b>&lt;suboptions&gt;</b> are the temporary write control values to use.</p>
+<p><b>&lt;options&gt;</b> are polygon fill command options that will use the temporary write control values.</p></div>
+<p><strong>Temporary Write Control as a Suboption of the C or V options</strong></p>
+<p class="example">F(C(W(&lt;sub-suboptions&gt;)&lt;suboptions&gt;)&lt;options&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a curve option. You could also use a vector (V) option.</p>
+<p><b>W</b> identifies a temporary write control suboption.</p>
+<p><b>&lt;sub-suboptions&gt;</b> are the temporary write control values to use.</p>
+<p><b>&lt;suboptions&gt;</b> are the curve options and values that will use the temporary write control values.</p>
+<p><b>&lt;options&gt;</b> are any other polygon fill command options.</p></div>
+<p>Only the last W option in a polygon fill command affects the graphic image.
+Other W options have no effect, because ReGIS does not draw the image until
+the end of the polygon fill command. The one exception is when you use pixel
+vector multiplication as a suboption of the W option.</p>
+<p><a href="#F11-4">Figure 11-4</a> shows a pie segment filled with Xs, and a filled-in box with
+rounded corners. The pie segment is drawn with the polygon fill command,
+temporary write control option (with the S suboption), vector option, and open
+curve option. The box with rounded corners is drawn with the polygon fill command,
+temporary write control option (with the I suboption), vector option, and
+open curve option.</p>
+<table id="F11-4" class="figure">
+<caption>Figure 11-4 Temporary Write Control Option Example</caption>
+<tbody>
+<tr>
+<td colspan="3"><img src="ma-1220-84.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<caption><small>FILLED WHITE BOX WITH ROUNDED CORNERS</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,100]<br/>F(W(I(W)),<br/>V[+100]<br/>C(C,A-90)[,+50]<br/>V[,+100]<br/>C(C,A-90)[-50]<br/>V[-100]<br/>C(C,A-90)[,-50]<br/>V[,-100]<br/>C(C,A-90)[+50])</td>
+</tr>
+</tbody>
+</table></td>
+<td>    </td>
+<td><table class="command-example">
+<caption><small>PIE SEGMENT FILLED WITH Xs</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[400,300]<br/>F(W(S"X"),<br/>V(B)[+200,-100]<br/>C(C,A+30)<br/>      [-200,+100]<br/>V(E))<br/> <br/> <br/> <br/> </td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S11.5">Filling Complex Polygons</h2>
+<p>You can use the commands in this chapter to fill simple or complex polygons.
+However, a complex polygon requires more planning. You should build your
+command string in steps. The following method is one example.</p>
+<ol>
+<li><p>Build a ReGIS command string that draws the outline of the desired
+polygon. This command string may use vector, curve, and position
+commands. The outline should be a single, closed figure. The outline
+must not have any gaps or cross over itself.</p></li>
+<li><p>Enclose the command string from step 1 in an F command.</p>
+<p><b>F(&lt;ReGIS command string&gt;)</b></p></li>
+<li><p>If you want your polygon to have a contrasting outline, you can use
+a macrograph.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first"><b>@:A&lt;ReGIS commands&gt;@;</b></td>
+<td>;Loads macrograph.</td>
+</tr>
+<tr>
+<td class="first"><b>F(@A)</b></td>
+<td>;Fills polygon.</td>
+</tr>
+<tr>
+<td class="first"><b>@A</b></td>
+<td>;Draws outline.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="chapter9.html">Chapter 9</a> describes the macrograph command and its options.</p></li>
+</ol>
+<p><a href="#F11-5">Figure 11-5</a> shows a filled paper icon with a dotted outline. This image is
+drawn with a polygon fill command using the curve option, vector option, temporary
+write control option, and macrographs.</p>
+<table id="F11-5" class="figure">
+<caption>Figure 11-5 Example of Filling a Complex Polygon</caption>
+<tbody>
+<tr>
+<td colspan="3"><img src="ma-1211-84.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<caption><small>FILLED PAPER ICON</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS I</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,200]<br/>@:X<br/>V[+100]<br/>      [,+70]<br/>P[-25,-10]<br/>C(S)[+25,+10]<br/>      [-25,+10]<br/>      [-50,-20]<br/>      [-25,+10]<br/>      [+25,+10]<br/>P[-25,-10]<br/>V[,-70] @;<br/> <br/>F(W(I1),@X)</td>
+</tr>
+</tbody>
+</table></td>
+<td>    </td>
+<td><table class="command-example">
+<caption><small>PAPER ICON OUTLINE</small></caption>
+<tbody>
+<tr>
+<td>COMMANDS II</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,200]<br/>W(P4) @X W(P1)<br/> <br/> <br/> <br/> </td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S11.6">Some Points on Using the Polygon Fill Command</h2>
+<p>You should consider the following points when you use the polygon fill command.</p>
+<ul>
+<li><p><strong>Vertices</strong><br/>
+You must specify at least three different vertices, or ReGIS will not
+draw an image. You can use up to 256 vertices. ReGIS ignores additional
+vertices. If you map two consecutive vertices to the same
+pixel, they count as one vertex.</p>
+<p class="note">NOTE: Each argument for the vector option creates one vertex.
+Each argument for the curve option can create more than one vertex.</p></li>
+<li><p><strong>Closed Figures</strong><br/>
+If your commands do not create a closed polygon, the results of the
+polygon fill command are unpredictable.</p></li>
+<li><p><strong>Perimeter</strong><br/>
+In some cases, the outline of the filled polygon may not line up exactly
+with the vectors that connect the same vertices. You should
+draw a border after the filled area.</p></li>
+<li><p><strong>Single Closed Figures</strong><br/>
+You should only use the polygon fill command to fill single closed
+figures. The F command is not designed to fill polygons made of
+intersecting groups of single closed figures. Although the F command
+can fill these polygons, the results are unpredictable.</p></li>
+<li><p><strong>Current Position</strong><br/>
+ReGIS saves the cursor position at the beginning of any polygon fill
+command. The cursor returns to this position at the end of the command
+(whether or not any drawing takes place). This feature provides
+some compatibility with devices that do not have the F
+command.</p></li>
+<li><p><strong>Position Stack Options (B and E)</strong><br/>
+Any polygon fill command string that changes the position stack is
+not compatible with ReGIS devices that do not have the F
+command.</p></li>
+</ul>
+<h2 id="S11.7">Polygon Fill Command Summary</h2>
+<p><a href="#T11-1">Table 11-1</a> is a summary of the <b>F</b> command options. There are no default values
+for these options.</p>
+<table id="T11-1" class="majortable">
+<caption>Table 11-1 Polygon Fill Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F(V&lt;positions&gt;)</td>
+<td><p><strong>Vector option</strong><br/>
+&lt;positions&gt; are the positions of the polygon's vertices.</p></td>
+</tr>
+<tr>
+<td>F(C&lt;positions&gt;)</td>
+<td><p><strong>Curve option</strong><br/>
+&lt;positions&gt; are coordinate values for a curve or circle.</p></td>
+</tr>
+<tr>
+<td>F(C(A+&lt;degrees&gt;) &lt;position1&gt; P&lt;position2&gt;...)</td>
+<td><p><strong>Position option (with curve option)</strong><br/>
+C identifies a curve option.<br/>
+A identifies an arc suboption.<br/>
+&lt;degrees&gt; specifies the number of degrees and the direction to draw the arc in.<br/>
+&lt;position1&gt; is the point where the arc will start.<br/>
+P identifies a position option.<br/>
+&lt;position2&gt; is the new active position.</p></td>
+</tr>
+<tr>
+<td>F(W(&lt;suboptions&gt;) &lt;options&gt;)</td>
+<td><p><strong>Temporary Write Control as an Option of the F Command</strong><br/>
+&lt;suboptions&gt; are the temporary write control values to use.<br/>
+&lt;options&gt; are polygon fill command options that will use the temporary write control values.</p></td>
+</tr>
+<tr>
+<td>F(C(W&lt;sub-suboptions&gt;) &lt;suboptions&gt;) &lt;options&gt;)</td>
+<td><p><strong>Temporary Write Control as a Suboption of the C or V Options</strong><br/>
+C identifies a curve option. You could also use a vector (V) option.<br/>
+W identifies a temporary write control suboption.<br/>
+&lt;sub-suboptions&gt; are the temporary write control values to use.<br/>
+&lt;suboptions&gt; are the curve options and values that will use the temporary write control values.<br/>
+&lt;options&gt; are any other polygon fill command options.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter10.html">Chapter 10</a><a href="contents.html">Contents</a><a href="chapter12.html">Chapter 12</a></nav>
+</footer>
+</body>
+</html>

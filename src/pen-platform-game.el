@@ -9,4 +9,7 @@
 ;; - animation
 
 
+;; Hmm.. Maybe this would be a good candidate for using j:gamegrid
+;; I could have a similar scale to, say CK1 or DUKE1 which is slightly closer
+
 (provide 'pen-platform-game)

@@ -1,0 +1,83 @@
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Mon, 06 Jan 2025 08:58:03 GMT
+Content-Type: text/plain; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"26f30fefe3ff36658b36c0867c49432d"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ github.com/webpack/ github.com/assets/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=%2Bz3X%2F7OWFGYThOdcUzo4fUEfM%2FOUyb9%2BZYoEjphDp2XMxbKX1bbefmhqF38f46Lvz3CgocBnQNchDKzFOXFYcoVDJ6QNr%2Fasje%2Fd5XzoQ1gsnblpmbnNLd416Qr3Y%2BV2UdoXDDZE9e1bShI42GJ9KVEvGIVc%2BkIAcvOHbNAiZniIxJNI2b0JonKXPO9d%2BT7nKIqLhXEJJjw2LxZNClVupN4qtDUccP2DNkjWuepiLbGF%2BxxzJfEYPAGrw1SK82UuimXn4nlPz21WSJo6YsYfWQ%3D%3D--kbKBNaHsXB34Y7Zz--Bunj0Na9M2BY%2F6GowVqlfw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.679571517.1736153882; Path=/; Domain=github.com; Expires=Tue, 06 Jan 2026 08:58:02 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Tue, 06 Jan 2026 08:58:02 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Content-Length: 1044
+X-GitHub-Request-Id: 9470:69F9E:6A75E4F:8221E7E:677B9B1A
+
+From 5d79977ec7a6b58afa6e4817035aaaba186f7e9f Mon Sep 17 00:00:00 2001
+From: "Azamat H. Hackimov" <azamat.hackimov@gmail.com>
+Date: Sun, 2 Jun 2013 20:48:53 +0600
+Subject: [PATCH] Fix compilation with libX11 >= 1.5.99.902.
+
+These changes fixes bug #1769 for SDL 1.2
+(http://bugzilla.libsdl.org/show_bug.cgi?id=1769).
+---
+ configure.in               | 11 +++++++++++
+ include/SDL_config.h.in    |  1 +
+ src/video/x11/SDL_x11sym.h |  4 ++++
+ 3 files changed, 16 insertions(+)
+
+diff --git a/configure.in b/configure.in
+index 6d42829e2..d9cdd200f 100644
+--- a/configure.in
++++ b/configure.in
+@@ -1169,6 +1169,17 @@ AC_HELP_STRING([--enable-video-x11-xrandr], [enable X11 Xrandr extension for ful
+             if test x$definitely_enable_video_x11_xrandr = xyes; then
+                 AC_DEFINE(SDL_VIDEO_DRIVER_X11_XRANDR)
+             fi
++            AC_MSG_CHECKING(for const parameter to _XData32)
++            have_const_param_xdata32=no
++            AC_TRY_COMPILE([
++              #include <X11/Xlibint.h>
++              extern int _XData32(Display *dpy,register _Xconst long *data,unsigned len);
++            ],[
++            ],[
++            have_const_param_xdata32=yes
++            AC_DEFINE(SDL_VIDEO_DRIVER_X11_CONST_PARAM_XDATA32)
++            ])
++            AC_MSG_RESULT($have_const_param_xdata32)
+         fi
+     fi
+ }
+diff --git a/include/SDL_config.h.in b/include/SDL_config.h.in
+index 1d9730346..7b94ea52b 100644
+--- a/include/SDL_config.h.in
++++ b/include/SDL_config.h.in
+@@ -283,6 +283,7 @@
+ #undef SDL_VIDEO_DRIVER_WINDIB
+ #undef SDL_VIDEO_DRIVER_WSCONS
+ #undef SDL_VIDEO_DRIVER_X11
++#undef SDL_VIDEO_DRIVER_X11_CONST_PARAM_XDATA32
+ #undef SDL_VIDEO_DRIVER_X11_DGAMOUSE
+ #undef SDL_VIDEO_DRIVER_X11_DYNAMIC
+ #undef SDL_VIDEO_DRIVER_X11_DYNAMIC_XEXT
+diff --git a/src/video/x11/SDL_x11sym.h b/src/video/x11/SDL_x11sym.h
+index 4875b989c..bd83f7f5c 100644
+--- a/src/video/x11/SDL_x11sym.h
++++ b/src/video/x11/SDL_x11sym.h
+@@ -165,7 +165,11 @@ SDL_X11_SYM(Bool,XShmQueryExtension,(Display* a),(a),return)
+  */
+ #ifdef LONG64
+ SDL_X11_MODULE(IO_32BIT)
++#if SDL_VIDEO_DRIVER_X11_CONST_PARAM_XDATA32
++SDL_X11_SYM(int,_XData32,(Display *dpy,register _Xconst long *data,unsigned len),(dpy,data,len),return)
++#else
+ SDL_X11_SYM(int,_XData32,(Display *dpy,register long *data,unsigned len),(dpy,data,len),return)
++#endif
+ SDL_X11_SYM(void,_XRead32,(Display *dpy,register long *data,long len),(dpy,data,len),)
+ #endif
+ 

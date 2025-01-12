@@ -1,0 +1,2 @@
+;; Generated package description from persist.el  -*- no-byte-compile: t -*-
+(define-package "persist" "0.6.1" "Persist Variables between Emacs Sessions" '((emacs "26.1")) :commit "5ea8f32ef50ce2b444d6918e17eedce9f74629af" :url "https://elpa.gnu.org/packages/persist.html" :authors '(("Phillip Lord" . "phillip.lord@russet.org.uk")) :maintainer '("Joseph Turner" . "persist-el@breatheoutbreathe.in"))

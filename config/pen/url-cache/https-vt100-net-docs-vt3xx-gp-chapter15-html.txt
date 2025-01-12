@@ -1,0 +1,768 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:26:55 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:26:55 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 9696
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 15</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter14.html">Chapter 14</a><a href="contents.html">Contents</a><a href="chapter16.html">Chapter 16</a></nav>
+</header>
+<h1 id="S15"><span class="chapnum">15</span> Using a Mouse or Tablet</h1>
+<h2 id="S15.1">Locator Devices</h2>
+<p>This chapter describes how to program your VT300 terminal for use with a
+locator device. You use a locator device to move the cursor and select position
+coordinates on the screen. With a locator device, you can easily move the
+graphics input cursor to a specific point or enter data to application programs.</p>
+<p>There are two locator devices you can use with your terminal, a mouse or
+graphics tablet. You connect the device to the rear of the terminal. These devices
+use a serial line input/output format with the micro-DIN connector.</p>
+<h2 id="S15.2">VSXXX-AA Mouse</h2>
+<p>Digital's VSXXX-AA mouse is a small handheld device, with three buttons on
+top and a roller ball on the bottom. You can write applications that use the
+mouse as an input device. You can use the three buttons on the mouse to send
+data to an application.</p>
+<p>The roller ball controls cursor movement. When you move the mouse on a flat
+surface, the roller ball turns. The cursor moves in the direction you move the
+mouse. You can move the cursor in any direction, and place it anywhere on the
+screen.</p>
+<p>If you pick the mouse up, the cursor stops moving on the screen. The cursor
+stays at this point until you put the mouse down and move the roller ball along
+the surface again.</p>
+<h2 id="S15.3">VSXXX-AB Graphics Tablet</h2>
+<p>Digital's VSXXX-AB tablet has three parts.</p>
+<ul class="bare">
+<li>Tablet</li>
+<li>Puck</li>
+<li>Stylus</li>
+</ul>
+<p>The <dfn>tablet</dfn> has a flat, square surface similar to a tabletop. To move the cursor,
+you move the puck or stylus over this surface. The tablet has a position-sensitive
+grid that senses the position of the puck or stylus.</p>
+<p>The <dfn>puck</dfn> is a handheld device with crosshair markings that help you select
+precise coordinates on the tablet. The puck has four buttons that serve the
+same purpose as the buttons on the mouse. You can program the buttons to
+send position reports when pressed or released.</p>
+<p>The <dfn>stylus</dfn> is a handheld device that resembles a pen. The stylus has two buttons,
+a barrel and a tip. The barrel is a button on the side of the pen you can
+press to send data to an application. You activate the tip by pressing the pen
+down onto the tablet surface.</p>
+<p>To move the cursor, you move the puck or stylus over the tablet surface. You
+do not have to touch the surface, but the tablet or stylus must be within 0.65
+cm (0.25 in) of the surface to move the cursor. When the puck or stylus is
+close enough to the tablet surface to move the cursor, the puck or stylus is in
+<dfn>proximity</dfn> with the tablet.</p>
+<p>If you remove the puck or stylus from the tablet surface while the tablet is
+plugged in, then the VT300 uses the last known tablet position.</p>
+<p>Unlike the mouse, the tablet is an absolute positioning device. The layout of
+the tablet corresponds roughly to the layout of the screen. The next section
+explains tablet-to-screen mapping.</p>
+<h3 id="S15.3.1">Tablet-to-Screen Mapping</h3>
+<p>The VT300 screen maps to the bottom two-thirds of the tablet surface.
+Applications cannot use the top third of the tablet. The points at the top third
+of the tablet map to the top visible scan line of the screen.</p>
+<p>The complete horizontal extent of the tablet's coordinate system maps to the
+complete horizontal extent of the screen. However, the tablet has borders to
+compensate for the difference between the screen's coordinate system and the
+tablet's system.</p>
+<p>The vertical extent at the bottom of the tablet's coordinate system maps to the
+complete vertical extent of the screen. The tablet must also have borders in the
+vertical direction.</p>
+<p>The origin of the tablet's coordinate system is at the lower-left corner of the
+tablet surface, so the lower Y coordinates on the tablet map to the horizontal
+extent of the screen. The upper Y coordinates map to the top scan line of the screen.</p>
+<h2 id="S15.4">Locator Cursor</h2>
+<p>The VT300 can use any one of the following cursor styles with a
+locator device.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first">Crosshair</td>
+<td>ReGIS, 4010/4014</td>
+<td>(default input cursor)</td>
+</tr>
+<tr>
+<td class="first">Diamond</td>
+<td>ReGIS</td>
+<td>(default output cursor)</td>
+</tr>
+<tr>
+<td class="first">Rubber band line</td>
+<td>ReGIS</td>
+<td></td>
+</tr>
+<tr>
+<td class="first">Rubber band box</td>
+<td>ReGIS</td>
+<td></td>
+</tr>
+<tr>
+<td class="first">User-defined</td>
+<td>ReGIS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In ReGIS mode, software can select the cursor style by using the cursor control
+option to the screen command: S(C(I)). See <a href="chapter2.html">Chapter 2</a> for details on the
+ReGIS screen command.</p>
+<p>In 4010/4014 mode, the terminal only uses the crosshair cursor style.</p>
+<h2 id="S15.5">Locator Buttons</h2>
+<p>In graphics input mode, pressing a locator button sends a cursor position report
+to the host. The mouse has three buttons. The graphics tablet includes a
+puck with four buttons, and a stylus with a barrel button and a tip switch. All
+the buttons serve the same purpose – they send locator data to the host.</p>
+<p>A locator button can be in one of two states, up (released) or down (pressed). A
+change from one state to another is called a transition. You can program the
+buttons to send reports in three different ways.</p>
+<ul>
+<li>When pressed</li>
+<li>When released</li>
+<li>When pressed or released</li>
+</ul>
+<p>You can also program the locator buttons to send specific codes or control functions
+to the host. Programming locator buttons is described later in this chapter.
+<a href="#T15-1">Table 15-1</a> shows the default codes that each button sends when pressed or
+released.</p>
+<table id="T15-1" class="majortable">
+<caption>Table 15-1 Default Locator Button Codes</caption>
+<thead>
+<tr>
+<th>Button</th>
+<th>Device*</th>
+<th>Code (Pressed)</th>
+<th>Code (Released)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 (left)</td>
+<td>mouse, puck, or stylus barrel</td>
+<td><b>CSI 241 ~</b></td>
+<td>no report</td>
+</tr>
+<tr>
+<td>2 (middle)</td>
+<td>mouse, puck, or stylus tip</td>
+<td><b>CSI 243 ~</b></td>
+<td>no report</td>
+</tr>
+<tr>
+<td>3 (right)</td>
+<td>mouse or puck</td>
+<td><b>CSI 245 ~</b></td>
+<td>no report</td>
+</tr>
+<tr>
+<td>4 (fourth)</td>
+<td>puck</td>
+<td><b>CSI 247 ~</b></td>
+<td>no report</td>
+</tr>
+</tbody>
+</table>
+<p>If the host requests a report when none of the buttons are in use, the terminal responds with a null-button code: <b>CSI 240 ~</b>.</p>
+
+<h2 id="S15.6">Entering Data with the Locator Device</h2>
+<p>Before you can enter data with a locator device, the terminal must be in a
+graphics input mode. You can use three different graphics input modes with
+the VT300.</p>
+<ul class="col2 bare">
+<li>ReGIS one-shot graphics input mode</li>
+<li>ReGIS multiple graphics input mode</li>
+<li>Tektronix GIN mode</li>
+</ul>
+<h3 id="S15.6.1">ReGIS One-Shot Graphics Input Mode</h3>
+<p>An application can select this mode with the following ReGIS command.</p>
+<p class="example"><b>R(I0)</b></p>
+<p>In one-shot mode, the terminal suspends processing of received characters and
+commands. The terminal buffers all received characters, until it leaves one-shot
+mode.</p>
+<p>When the terminal enters graphics input mode, the input cursor appears on the screen.</p>
+<h4 id="S15.6.1.1">Moving the Graphics Cursor</h4>
+<p>You can move the input cursor around the
+screen by moving the locator device.</p>
+<p><strong>Mouse</strong><br/>
+The input cursor moves as you move the mouse over a flat surface.</p>
+<p><strong>Tablet</strong><br/>
+The input cursor moves as you move the stylus or puck across the tablet surface.</p>
+<p><strong>Arrow Keys</strong><br/>
+The input cursor moves as you press the corresponding arrow key on the keyboard.
+If a mouse is connected to the locator port, you can use the arrow keys
+or the mouse interchangeably to move the cursor. If a tablet is connected, you
+can use the arrow keys to move the cursor only when the puck or stylus is not in
+proximity with the tablet surface.</p>
+<h4 id="S15.6.1.2">Requesting a Cursor Position Report</h4>
+<p>In one-shot mode, the terminal cannot
+send a position report until the application sends a request to the terminal. You
+use the ReGIS report position interactive command to request a position report.</p>
+<p class="example"><b>R(P(I))</b></p>
+<p>After sending the report position interactive command, the application does not
+receive a report until you press an active key or locator button.</p>
+<h4 id="S15.6.1.3">Sending a Cursor Position Report</h4>
+<p>You can send a cursor position report from the keyboard or locator device.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Mouse</td>
+<td>Press any mouse button.</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Press any puck, or stylus button.</td>
+</tr>
+<tr>
+<td>Keyboard</td>
+<td>Press any non-arrow key that is active.</td>
+</tr>
+</tbody>
+</table>
+<p>When you send a report, the following actions occur.</p>
+<ol>
+<li><p><strong>If you use the keyboard</strong><br/>
+The terminal sends the character code or control function of the key
+pressed to the host.</p>
+<p><strong>If you use the mouse or tablet</strong><br/>
+The terminal sends the code of the button pressed to the host.
+<a href="#T15-1">Table 15-1</a> lists the default codes. Digital's mouse has three buttons,
+the tablet's puck has four.</p>
+<p>Your application can redefine the codes that the locator buttons
+send to the host. User-defined codes override the default codes. See
+"<a href="#S15.8">Programming Locator Device Buttons</a>" later in the chapter.</p></li>
+<li><p><strong>The terminal sends the position report.</strong><br/>
+The terminal sends the current coordinates of the input cursor to
+the host. The terminal sends this report as an absolute bracketed
+extent in ReGIS coordinates (such as [X,Y]).</p></li>
+<li><p><strong>The terminal exits one-shot mode.</strong><br/>
+The graphics input cursor disappears from the screen when the terminal
+exits graphics input mode.</p></li>
+</ol>
+<h3 id="S15.6.2">ReGIS Multiple Graphics Input Mode</h3>
+<p>An application can select this mode with the following ReGIS command.</p>
+<p class="example"><b>R(I1)</b></p>
+<p>In multiple mode, the user moves the cursor and sends reports as in one-shot
+mode. Multiple mode differs from one-shot mode in the following ways.</p>
+<ul>
+<li><p>The terminal processes characters and command as it receives
+them from the host. This feature lets the terminal perform graphics
+input and output at the same time.</p></li>
+<li><p>The terminal does not exit graphics input mode after the terminal
+sends a cursor position report. In multiple mode, the terminal can
+send an indefinite number of position reports.</p></li>
+<li><p>When you press a button or an application requests a report, the
+terminal immediately sends a position report.</p></li>
+<li><p>To exit multiple mode, the application must send the ReGIS R(I0)
+command. The input cursor remains on the screen until the application
+sends this command.</p></li>
+</ul>
+<h4 id="S15.6.2.1">Sending a Cursor Position Report</h4>
+<p>In multiple mode, there are two ways
+for the application to receive a report.</p>
+<ul>
+<li><p><strong>Send R(P(I)) to the terminal.</strong><br/>
+An application can request an immediate position report by sending
+the ReGIS report position interactive command to the terminal.
+When the terminal receives R(P(I)), it immediately sends a position
+report to the application.</p></li>
+<li><p><strong>Press a locator button.</strong><br/>
+When you press (or release) a locator button, the terminal immediately
+sends a position report to the application.</p></li>
+</ul>
+<p><strong>Notes on Multiple Mode</strong></p>
+<ul>
+<li><p>To exit multiple graphics input mode, you must exit ReGIS. To re-enter
+multiple mode, you must use the ReGIS R(I1) command again.</p></li>
+<li><p>You cannot use the four arrow keys to position the input cursor as
+you can in ReGIS one-shot graphics input mode. If you press an
+arrow key in multiple mode, the terminal sends that key's escape
+sequence to the host. If the host system is set to echo all of the
+input that it receives, then the escape sequence will be sent back
+to the terminal, causing ReGIS to abort.</p>
+<p>To prevent this, you should either</p>
+<ul>
+<li><p>turn off the host system's echoing function (using a command
+such as <b>SET TERM/NOECHO</b> on VMS), or</p></li>
+<li><p>program your application to read terminal input in such a
+way as to prevent echoing input back to the terminal.</p></li>
+</ul></li>
+</ul>
+<h3 id="S15.6.3">ReGIS Locator Reports</h3>
+<p>Locator reports begin with the code(s) of the active non-arrow key or locator
+button pressed. Following this code is the current position of the input cursor.
+The terminal sends the input cursor position as an absolute bracketed extent in
+user coordinates. The report ends with the carriage return character (CR).</p>
+<p>The following list shows some examples of locator reports and their meaning.</p>
+<ul>
+<li><p><strong>One-shot mode</strong></p>
+<pre>A[102,200]&lt;CR&gt;</pre>
+<p>The user pressed the letter 'A' with the cursor at position 102,200.</p></li>
+<li><p><strong>One-shot or multiple mode</strong></p>
+<pre>&lt;CSI&gt;241~[102.5,200]&lt;CR&gt;</pre>
+<p>The user pressed the left mouse button with the input cursor at position
+[102.5,200]. &lt;CSI&gt;241~ is the default sequence sent when
+you press the left mouse button.</p></li>
+<li><p><strong>Multiple mode</strong></p>
+<pre>&lt;CSI&gt;240~[100,100]&lt;CR&gt;</pre>
+<p>The terminal received the ReGIS report position interactive command
+R(P(I)). &lt;CSI&gt;240~ is the <dfn>null button sequence</dfn>. The null button
+sequence indicates this report is the result of an application
+request, not a locator button transition. The cursor is at position
+[100, 100].</p></li>
+</ul>
+<h3 id="S15.6.4">Synchonizing Locator Reports Between the Terminal and Application</h3>
+<p>The way you synchronize input cursor position reports between the terminal
+and your application depends on whether the terminal is in one-shot graphics
+input mode, or multiple graphics input mode.</p>
+<h4 id="S15.6.4.1">In One-Shot Mode</h4>
+<p>In one-shot mode, the terminal cannot send a report until
+it receives the ReGIS R(P(I)) command. To synchronize reports, your application
+must keep count of the R(P(I)) commands sent to the terminal.</p>
+<h4 id="S15.6.4.2">In Multiple Mode</h4>
+<p>In multiple mode, the terminal can send a
+report at any time. To synchronize reports, the application must be able to recognize
+the format of each ReGIS input cursor position report. See "<a href="#S15.6.3">ReGIS
+Locator Reports</a>" earlier in this chapter for the report formats.</p>
+<h3 id="S15.6.5">Tektronix Graphics Input (GIN) Mode</h3>
+<p>Tektronix GIN mode is available only when the terminal is in 4010/4014 mode.
+Tektronix GIN mode is similar to ReGIS one-shot mode. The cursor moves and
+the terminal sends reports as in ReGIS one-shot mode.</p>
+<p>An application can select this mode with the following escape sequence.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>SUB</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/10</td>
+</tr>
+</tbody>
+</table></div>
+<p>The only input cursor available in Tektronix GIN mode is the crosshair. See
+<a href="chapter13.html">Chapter 13</a> for the format of the 4010/4014 mode position report.</p>
+<h2 id="S15.7">Using a Locator Device with Dual Sessions</h2>
+<p>This section describes how a locator device acts in a dual-session environment.
+You may want to review the chapter on dual sessions (Volume 1, Chapter 14)
+before you continue.</p>
+<h3 id="S15.7.1">Locator Device Attributes in a Dual-Session Environment</h3>
+<ul>
+<li><p>The locator device and the keyboard share the same input buffer, so
+they always send data to the same session. That is, the locator device
+and the keyboard are always associated with the active session.</p></li>
+<li><p>Each session independently selects graphics input mode. Either session
+can use a locator device without affecting the other session.</p></li>
+<li><p>The VT300 lets users display data from two sessions at the same
+time, using windows. In this environment, the locator cursor
+moves freely only in the active session's window. To change the
+active session, use the <b>Switch Session</b> key.</p></li>
+</ul>
+<h2 id="S15.8">Programming Locator Device Buttons (DECLBD)</h2>
+<p>You can program the locator device buttons to send codes that are different
+from the default codes. <a href="#T15-1">Table 15-1</a> lists the default codes.</p>
+<p>Programming locator buttons is similar to programming function keys on the
+keyboard (Volume 1, Chapter 11). You use a device control string containing
+button definitions.</p>
+<p>There are three programmable buttons on Digital's mouse, four on the tablet's
+puck, and two on the tablet's stylus. The VT300 lets you program all the buttons
+on the device you use. Each button can send a different code when
+pressed or released.</p>
+<p>The VT300 lets you program up to six characters for each transition (up or
+down).</p>
+<p>The terminal does not save your locator button codes in nonvolatile RAM
+(NVR). When you turn off or reset the terminal, you lose any locator button
+codes you defined. Unlike user-defined keys (UDKs), you cannot program the
+locator buttons from set-up.</p>
+<h3 id="S15.8.1">DECLBD Device Control String</h3>
+<p>You use the following device control string to define the function of locator
+buttons.</p>
+<p class="example"><b>DCS Pc $ w Ky1/Std1/Stu1 ;...; Kyn/Stdn/Stun ST</b></p>
+<p>where</p>
+<div class="example"><p><b>DCS</b> (9/0) introduces device control strings. DCS is a C1 control character
+that you can also express as ESC P (1/11 5/0) when coding for a 7-bit
+environment.</p>
+<p><b>Pc</b> is the clear parameter. Pc determines how the locator buttons are cleared.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>Pc</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong> or none</td>
+<td>Clear all button definitions before loading new values (default).</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Clear one button at a time, before loading a new value.</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: You can only use 6 characters per button transition (pressed or released).</p>
+<p><b>$ w (2/4, 7/7)</b> are the intermediate and final characters that identify this
+device control string as a DECLBD string.</p>
+<p><b>Ky1/Std/Stu ; ...</b> are the button definition strings.</p>
+<div class="example"><p><b>Ky1</b> is the number of the button you are defining.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Ky1</th>
+<th>Button</th>
+<th>Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">1</td>
+<td>Left</td>
+<td>Mouse, puck, or stylus barrel</td>
+</tr>
+<tr>
+<td class="first">2</td>
+<td>Middle</td>
+<td>Mouse, puck, or stylus tip</td>
+</tr>
+<tr>
+<td class="first">3</td>
+<td>Right</td>
+<td>Mouse or puck</td>
+</tr>
+<tr>
+<td class="first">4</td>
+<td>Fourth</td>
+<td>Puck only</td>
+</tr>
+</tbody>
+</table>
+<p><b>/</b> (2/15) is the slash character. This character separates the button
+selector number, up button value, and down button value in each
+button definition.</p>
+<p><b>Std</b> is the <em>down</em> string value. This value represents the code the selected
+locator button sends when pressed. The value is a string of
+hex pairs, each representing one 8-bit character.</p>
+<p>You can use hex values in the following ranges.</p>
+<p>3/0 through 3/9 (0 through 9)<br/>
+4/1 through 4/6 (A through F)<br/>
+6/1 through 6/6 (a through f)</p>
+<p>When you combine these hex values, you can represent any 8-bit
+code. You can use up to 6 characters (6 hex pairs) for each Std
+value.</p>
+<p><b>Stu</b> is the <em>up</em> string value. This value represents the code the selected
+locator button sends when released. You code this value the
+same as Std above.</p>
+<p><b>;</b> (3/11) is a separator character. This character separates each button
+definition string.</p></div>
+<p><b>ST</b> (9/12) is the string terminator and indicates the end of the DCS. ST is
+a C1 control character that you can also express as ESC \ (1/11, 5/12)
+when coding for a 7-bit environment.</p></div>
+<p><strong>Notes on DECLBD</strong></p>
+<ul>
+<li><p>When you use the DECLBD function in an application, you may
+want to clear all the button definitions. Then you can define the buttons
+as used in that application.</p></li>
+<li><p>When you redefine a locator button, the old definition is lost.</p></li>
+<li><p>Locator button definitions are not stored in nonvolatile RAM (NVR).
+When you turn off or reset the terminal, you lose your definitions.</p></li>
+</ul>
+<p><strong>Examples of Locator Button Definitions</strong></p>
+<ul>
+<li><p>You can use the following sequence to clear the locator buttons.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>DCS</th>
+<th>0</th>
+<th>$</th>
+<th>w</th>
+<th>ST</th>
+</tr>
+<tr>
+<td>9/0</td>
+<td>3/0</td>
+<td>2/4</td>
+<td>7/7</td>
+<td>9/12</td>
+</tr>
+</tbody>
+</table><br/></div></li>
+<li><p>Suppose you want to define locator button 1 on Digital's mouse. You
+want the button to send a carriage return (CR) when released, and
+the default PF1 key code, <b>SS3 P</b>, when pressed. You want to do
+this without clearing any other buttons. The first part of your
+DECLBD sequence would look like this.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>DCS</th>
+<th>1</th>
+<th>$</th>
+<th>w</th>
+<th>1</th>
+<th>/</th>
+</tr>
+<tr>
+<td>9/0</td>
+<td>3/1</td>
+<td>2/4</td>
+<td>7/7</td>
+<td>3/1</td>
+<td>2/15</td>
+</tr>
+</tbody>
+</table><br/></div>
+<p>The 1 after the w character indicates that this sequence defines locator
+button 1 on the mouse. The hex code for the carriage return
+character is D.</p>
+<p>The hex code for the default PF1 key control function is as follows.</p>
+<p class="example">SS3 = 8F hex<br/>P = 50 hex</p>
+<p>The rest of the DECLBD sequence after the first slash would look
+like this.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>D</th>
+<th>/</th>
+<th>8F50</th>
+<th>ST</th>
+</tr>
+<tr>
+<td>button<br/>released</td>
+<td>2/15</td>
+<td>button<br/>pressed</td>
+<td>9/12</td>
+</tr>
+</tbody>
+</table><br/></div>
+<p>The complete string would look like this.</p>
+<p class="example"><b>DCS 1 $ w 1 / D / 8F50 ST</b></p></li>
+</ul>
+<h2 id="S15.9">Summary</h2>
+<p><a href="#T15-2">Table 15-2</a> is a summary of the control functions and commands described in
+this chapter.</p>
+<table id="T15-2" class="majortable">
+<caption>Table 15-2 Locator Command Summary</caption>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="3">ReGIS</th>
+</tr>
+<tr>
+<td>One-shot graphics input mode</td>
+<td><strong>R(I0)</strong></td>
+<td><ol>
+<li>Selects one-shot mode.</li>
+<li>In multiple mode, exits multiple mode and selects one-shot mode.</li>
+</ol></td>
+</tr>
+<tr>
+<td>Multiple graphics input mode</td>
+<td><strong>R(I1)</strong></td>
+<td>Selects multiple mode.</td>
+</tr>
+<tr>
+<td>Request cursor position report</td>
+<td><strong>R(P(I))</strong></td>
+<td><p>In one-shot or multiple mode, requests a cursor position report from the terminal.</p>
+<p>In one shot mode, the terminal sends the report when you press a locator button.</p>
+<p>In multiple mode, the terminal sends the report immediately. The terminal also sends a report when you press a locator button.</p></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<th colspan="3">4010/4014 Mode</th>
+</tr>
+<tr>
+<td>GIN mode</td>
+<td><strong>ESC SUB</strong></td>
+<td>Selects graphics input mode.</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<th colspan="3">Programming Locator Device Buttons (DECLBD)</th>
+</tr>
+<tr>
+<td colspan="3"><p class="example"><strong>DCS Pc $ w Ky1/Std1/Stu1 ; ... ; Kyn/Stdn/Stun ST</strong></p>
+<p>where</p>
+<table class="example">
+<tbody>
+<tr>
+<td>Pc</td>
+<td> = </td>
+<td>clear parameter.</td>
+</tr>
+<tr>
+<td>0 or none</td>
+<td> = </td>
+<td>clear all button definitions before loading new values (default).</td>
+</tr>
+<tr>
+<td>1</td>
+<td> = </td>
+<td>clear one button at a time, before loading a new value.</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: You can only use 6 characters per button transition (pressed or
+released).</p>
+<div class="example"><p><b>Ky1/Std/Stu ; ...</b> are the button definition strings.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Ky1</td>
+<td>=</td>
+<td>number of the button you are defining.</td>
+</tr>
+<tr>
+<td colspan="3"><table class="padded">
+<thead>
+<tr>
+<th class="first">Ky1</th>
+<th>Button</th>
+<th>Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">1</td>
+<td>Left</td>
+<td>Mouse, puck, or stylus barrel</td>
+</tr>
+<tr>
+<td class="first">2</td>
+<td>Middle</td>
+<td>Mouse, puck, or stylus tip</td>
+</tr>
+<tr>
+<td class="first">3</td>
+<td>Right</td>
+<td>Mouse or puck</td>
+</tr>
+<tr>
+<td class="first">4</td>
+<td>Fourth</td>
+<td>Puck only</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Std</td>
+<td>=</td>
+<td><p>the code the selected locator button sends when pressed.
+The value is a string of hex pairs, each representing
+one 8-bit character.</p>
+<p>You can use hex values in the following ranges.</p>
+<p>3/0 through 3/9 (0 through 9)<br/>
+4/1 through 4/6 (A through F)<br/>
+6/1 through 6/6 (a through f)</p></td>
+</tr>
+<tr>
+<td>Stu</td>
+<td>=</td>
+<td>the code the selected locator button sends when released.
+You code this value the same as Std above.</td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter14.html">Chapter 14</a><a href="contents.html">Contents</a><a href="chapter16.html">Chapter 16</a></nav>
+</footer>
+</body>
+</html>

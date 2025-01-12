@@ -1,0 +1,2 @@
+;; Generated package description from taxy.el  -*- no-byte-compile: t -*-
+(define-package "taxy" "0.10.2" "Programmable taxonomical grouping for arbitrary objects" '((emacs "26.3")) :commit "3099ae5cb27a34961e06a3af67555919c62c12d7" :authors '(("Adam Porter" . "adam@alphapapa.net")) :maintainer '("Adam Porter" . "adam@alphapapa.net") :keywords '("lisp") :url "https://github.com/alphapapa/taxy.el")

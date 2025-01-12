@@ -1,0 +1,112 @@
+2019-07-17  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	Release path-iterator.el, uniquify-files.el
+
+	* packages/path-iterator/path-iterator.el: Bump version for release.
+
+	* packages/uniquify-files/uniquify-files.el: Bump version for release. 
+	Handle emacs < 27 in project integration.
+
+2019-07-11  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	In ada-mode, wisi; release ada-mode 6.1.1, wisi 2.1.1
+
+2019-03-25  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	In uniquify-files, factor out file-complete.el
+
+	* packages/path-iterator/path-iterator-resources/alice-1/bar-file1.text: 
+	New file.
+
+	* packages/path-iterator/path-iterator-test.el: Add trailing "/" where 
+	needed; anything that is known to be a directory ends in "/".
+
+	* packages/uniquify-files/file-complete-root-relative-test.el:
+	(test-fc-root-rel-test-completion-1): Update to use
+	completion-current-style.
+
+	* packages/uniquify-files/file-complete.el: New file, factored out from 
+	uniquify-file.el, file-complete-root-relative.el.
+
+	* packages/path-iterator/path-iterator.el: Add trailing "/" where
+	needed; anything that is known to be a directory ends in "/".
+	(path-iter--to-truename): Handle users passing a single string.
+
+	* packages/uniquify-files/file-complete-root-relative.el: Use 
+	file-complete functions. Use completion-current-style.
+	(fc-root-rel-completion-table-iter): Call
+	file-complete-completion-table.
+	(fc-root-rel--pcm-regex-list): Rename from
+	fc-root-rel--pcm-pattern-list.
+	(fc-root-rel-completion-table-list): Implement test-completion. Use 
+	test-completion, try-completion.
+
+	* packages/uniquify-files/uniquify-files-test.el (uft-iter): Add Alice, 
+	Bob directories.
+	(test-uniq-file-completion-table): Delete; tested in 
+	file-complete-test.el.
+	(test-uniq-file-all-completions-noface-1): Add a test.
+	(test-uniq-file-try-completion-1): Update tests.
+
+	* packages/uniquify-files/uniquify-files.el: Use file-complete.
+	(uniq-file--pcm-pat): New, factored out of uniq-file--pcm-merged-pat.
+	(uniq-file--pcm-pattern): Delete; use file-complete-pcm-regex.
+	(uniq-file-completion-table): Use file-complete-completion-table.
+
+2019-02-05  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	Improve path-iterator handline of duplicate directories
+
+	* packages/path-iterator/path-iterator.el (path-iter-done): Delete; not 
+	correct when non-recursive path contains duplicate directories, or 
+	directories included in the recursive path.
+	(path-iter-next): Do recursive first, to properly handle duplicates in 
+	non-recursive. Don't push nil onto visited for duplicates.
+	(path-iter-all-files): Don't use path-iter-done.
+
+	* packages/path-iterator/path-iterator-test.el: Match code changes, test 
+	duplicate.
+
+2019-02-03  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	Improve path-iterator
+
+	* packages/path-iterator/path-iterator.el (path-iter--to-truename): 
+	Enforce directory-file-name.
+
+2019-01-28  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	In path-iterator, add new function and test
+
+	* packages/path-iterator/path-iterator-test.el (path-iter-all-files):
+	New test.
+
+	* packages/path-iterator/path-iterator.el (path-iter-all-files): New.
+
+2019-01-22  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	Improve uniquify-files; add tests. Add path-iterator tests
+
+	* packages/uniquify-files/uniquify-files-resources/: New directory.
+
+	* packages/uniquify-files/uniquify-files-test.el: New file.
+
+	* packages/uniquify-files/uniquify-files.el: Delete
+	uniquify-files-style; not useful.
+
+	* packages/path-iterator/path-iterator-resources/: New directory.
+
+	* packages/path-iterator/path-iterator-test.el: New file.
+
+2019-01-19  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	In path-iterator, fix header comment syntax, add Commentary
+
+	* packages/path-iterator/path-iterator.el: Fix comment syntax, add
+	Commentary.
+	(path-iter--to-truename): Rename with --; not part of public API.
+
+2019-01-16  Stephen Leake  <stephen_leake@stephe-leake.org>
+
+	Add package path-iterator, version 0
+

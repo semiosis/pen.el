@@ -433,6 +433,61 @@ as the ewoc pretty-printer."
         (move-to-column
          (car (tablist-column-offsets))))))
 
+;; DONE Make it so j:tablist-mark-forward marks all of the selected
+;; Fixed
+(defun tablist-mark-forward (&optional arg interactive)
+  "Mark ARG entries forward.
+
+ARG is interpreted as a prefix-arg.  If interactive is non-nil,
+maybe use the active region instead of ARG.
+
+See `tablist-put-mark' for how entries are marked."
+  (interactive (list current-prefix-arg t))
+  (cond
+   ;; Mark files in the active region.
+   ((and interactive (use-region-p))
+    ;; (pen-normalise-point-and-mark)
+    ;; (goto-char (region-beginning))
+    (eval
+     `(save-excursion
+        (goto-char ,(region-beginning))
+        (beginning-of-line)
+        (tablist-repeat-over-lines
+         (1+ (count-lines
+              (point)
+              (save-excursion
+                (goto-char ,(region-end))
+                (beginning-of-line)
+                (point))))
+         'tablist-put-mark))))
+   ;; Mark the current (or next ARG) files.
+   (t
+    (comment (tablist-repeat-over-lines
+              (prefix-numeric-value arg)
+              'identity-command))
+
+    ;; I had to do this instead of save-excursion-reliably
+    (save-excursion-line
+     (tablist-repeat-over-lines
+      (prefix-numeric-value arg)
+      'tablist-put-mark))
+    (pen-comint-bol)))
+  (forward-char))
+
+(defun tablist-mark-forward-and-next (&optional arg interactive)
+  (interactive (list current-prefix-arg t))
+
+  (tablist-mark-forward arg interactive)
+  (tablist-next-line))
+
+;; I think I want to keep this on permanently to make tings easier
+(setq tabulated-list-padding 1)
+(setq pen-tablist-min-padding 1)
+(setq-default tabulated-list-padding 1)
+(setq-default pen-tablist-min-padding 1)
+
+;; Ensure that this doesn't go to the top of the screen
+;; TODO I think I need to build this up again from scratch.
 (defun tablist-put-mark (&optional pos)
   "Put a mark before the entry at POS.
 
@@ -440,42 +495,46 @@ POS defaults to point. Use `tablist-marker-char',
 `tablist-marker-face', `tablist-marked-face' and
 `tablist-major-columns' to determine how to mark and what to put
 a face on."
-  (when (or (null tabulated-list-padding)
+  
+  (when (or (eq 0 tabulated-list-padding)
+            (null tabulated-list-padding)
             (< tabulated-list-padding pen-tablist-min-padding))
     (setq tabulated-list-padding pen-tablist-min-padding)
-    (tabulated-list-revert))
+    (tabulated-list-revert)
+    (tabulated-list-init-header))
+
   (save-excursion
-    (and pos (goto-char pos))
+   (and pos (goto-char pos))
 
-    ;; This needs to be removed to work in mx:list-timers
+   ;; This needs to be removed to work in mx:list-timers
 
-    ;; (unless (tabulated-list-get-id)
-    ;;   (error "No entry at this position"))
+   ;; (unless (tabulated-list-get-id)
+   ;;   (error "No entry at this position"))
 
-    (let ((inhibit-read-only t))
-      (tabulated-list-put-tag
-       (string tablist-marker-char))
-      (put-text-property
-       (point-at-bol)
-       (1+ (point-at-bol))
-       'face tablist-marker-face)
-      (let ((columns (tablist-column-offsets)))
-        (dolist (c (tablist-major-columns))
-          (when (and (>= c 0)
-                     (< c (length columns)))
-            (let ((beg (+ (point-at-bol)
-                          (nth c columns)))
-                  (end (if (= c (1- (length columns)))
-                           (point-at-eol)
-                         (+ (point-at-bol)
-                            (nth (1+ c) columns)))))
-              (cond
-               ((and tablist-marked-face
-                     (not (eq tablist-marker-char ?\s)))
-                (tablist--save-face-property beg end)
-                (put-text-property
-                 beg end 'face tablist-marked-face))
-               (t (tablist--restore-face-property beg end))))))))))
+   (let ((inhibit-read-only t))
+     (tabulated-list-put-tag
+      (string tablist-marker-char))
+     (put-text-property
+      (point-at-bol)
+      (1+ (point-at-bol))
+      'face tablist-marker-face)
+     (let ((columns (tablist-column-offsets)))
+       (dolist (c (tablist-major-columns))
+         (when (and (>= c 0)
+                    (< c (length columns)))
+           (let ((beg (+ (point-at-bol)
+                         (nth c columns)))
+                 (end (if (= c (1- (length columns)))
+                          (point-at-eol)
+                        (+ (point-at-bol)
+                           (nth (1+ c) columns)))))
+             (cond
+              ((and tablist-marked-face
+                    (not (eq tablist-marker-char ?\s)))
+               (tablist--save-face-property beg end)
+               (put-text-property
+                beg end 'face tablist-marked-face))
+              (t (tablist--restore-face-property beg end))))))))))
 
 (defun tabulated-list-put-tag (tag &optional advance)
   "Put TAG in the padding area of the current line.
@@ -1161,6 +1220,16 @@ Returns the number of unmarked marks."
           (cl-incf removed))))
     (when interactive
       (message "Removed %d marks" removed))
+
+    ;; Remove the mark column
+    (when
+        (and (< 0 tabulated-list-padding)
+             (< 0 pen-tablist-min-padding))
+      
+      (setq tabulated-list-padding 0)
+      (setq pen-tablist-min-padding 0)
+      (tabulated-list-revert))
+    
     removed))
 
 (defun tablist-nth-column (n &optional entry)
@@ -1213,6 +1282,13 @@ Returns the number of unmarked marks."
     (if marked
         (xc (pps marked))
       (error "Nothing marked for copying"))))
+
+(defun pen-tablist-etv-marked ()
+  (interactive)
+  (let ((marked (pen-tablist-get-marked)))
+    (if marked
+        (etv (pps marked) 'emacs-lisp-mode)
+      (error "Nothing marked for etv"))))
 
 (defun pen-tablist-copy-line-or-marked-andor-selected ()
   (interactive)
@@ -1403,5 +1479,8 @@ Returns the number of unmarked marks."
    (pen-unregexify (tabulated-list-current-cell-contents t))))
 
 (define-key tabulated-list-mode-map (kbd "r") 'pen-tablist-select-cell)
+(define-key tablist-minor-mode-map (kbd "m") 'tablist-mark-forward-and-next)
+(define-key tablist-minor-mode-map (kbd ",") 'tablist-mark-forward)
+(define-key tablist-minor-mode-map (kbd "RET") 'pen-tablist-etv-marked)
 
 (provide 'pen-tablist)

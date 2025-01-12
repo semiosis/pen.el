@@ -1,0 +1,1351 @@
+This is elfeed-score.info, produced by makeinfo version 6.7 from
+elfeed-score.texi.
+
+This manual corresponds to elfeed-score version 1.2.7.
+
+   Copyright (C) 2021-2023 Michael Herstine <sp1ff@pobox.com>
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, no Front-Cover Texts, and
+     no Back-Cover Texts.  A copy of the license is included in the
+     section entitled "GNU Free Documentation License".
+
+     A copy of the license is also available from the Free Software
+     Foundation Web site at <https://www.gnu.org/licenses/fdl.html>.
+
+   This document was typeset with GNU Texinfo (http://www.texinfo.org/).
+
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* elfeed-score: (elfeed-score). Gnus-style scoring for elfeed.
+END-INFO-DIR-ENTRY
+
+
+File: elfeed-score.info,  Node: Top,  Next: Introduction,  Up: (dir)
+
+elfeed-score
+************
+
+Gnus-style scoring for Elfeed.
+
+   This manual corresponds to elfeed-score version 1.2.7.
+
+* Menu:
+
+* Introduction::
+* Getting Started::
+* The Score File::
+* Using elfeed-score::
+* Roadmap & Contributing::
+* Index::
+* Function Index::
+* Variable Index::
+
+
+File: elfeed-score.info,  Node: Introduction,  Next: Getting Started,  Prev: Top,  Up: Top
+
+1 Introduction
+**************
+
+elfeed-score (https://github.com/sp1ff/elfeed-score) brings Gnus
+(https://gnus.org)-style scoring to elfeed
+(https://github.com/skeeto/elfeed).  If you're not sure what that means,
+you're in the right place.  If you know _exactly_ what that means and
+you just want the technical details, you are also in the right place.
+
+   If you are new to elfeed, elfeed-score, or Emacs
+(https://www.gnu.org/software/emacs/) altogether...  read on.  This
+manual is intended to be read front-to-back by new users.
+
+   If you are looking for technical details: for a list of elfeed-score
+functions, refer to the *note Function Index::.  For a list of
+elfeed-score variables, see the *note Variable Index::.  For detailed
+documentation on rule types, see *note Rule Types: Types of Rules.
+
+   For information on obtaining & installing elfeed-score, see the
+project README (https://github.com/sp1ff/elfeed-score).  For information
+on building & hacking on elfeed-score, see the Wiki
+(https://github.com/sp1ff/elfeed-score/wiki).
+
+
+File: elfeed-score.info,  Node: Getting Started,  Next: The Score File,  Prev: Introduction,  Up: Top
+
+2 Getting Started
+*****************
+
+* Menu:
+
+* Scoring::
+* Starting elfeed-score::
+
+
+File: elfeed-score.info,  Node: Scoring,  Next: Starting elfeed-score,  Up: Getting Started
+
+2.1 Scoring
+===========
+
+* Menu:
+
+* Scoring Generalities::
+* Manual Scoring::
+* Scoring Statistics::
+
+
+File: elfeed-score.info,  Node: Scoring Generalities,  Next: Manual Scoring,  Up: Scoring
+
+2.1.1 Scoring Generalities
+--------------------------
+
+elfeed (https://github.com/skeeto/elfeed) is an extensible RSS & Atom
+reader for Emacs.  By default, it will display entries in reverse
+chronological order.  This package defines a bit of metadata for each of
+your elfeed entries: a "score".  A score is an integer (negative or
+positive), and higher scores denote entries of greater interest to you.
+This package also (optionally) installs a new sort function, so that
+Elfeed will display entries with higher scores before entries with lower
+scores (entries with the same scores will still be sorted in reverse
+chronological order).  It also provides an entry display function for
+the search buffer that displays each entry's score, should you choose to
+install it.
+
+   While you can manually assign a score to an entry (*note Manual
+Scoring::), you will likely find it more convenient to create rules for
+scoring that will be automatically applied to each new entry every time
+you update Elfeed.  You can score against title, feed, content & authors
+by defining strings that will be matched against those attributes by
+substring, regexp or whole-word match.  You can score against the feed.
+You can also score against the presence or absence of tags.  Most kinds
+of rules can be scoped by Elfeed entry tags, so that a rule will only be
+applied if an entry has certain tags (or does not have certain tags).
+Many kinds of rules may also be scoped by feed, so that a rule will only
+be applied to entries from certain feeds (or not from certain feeds).
+Each rule defines an integral value, and the rules are applied in order
+of definition.  The new entry's score begins at
+'elfeed-score-scoring-default-score', and is adjusted by the value
+defined by each matching scoring rule.
+
+ -- User Option: elfeed-score-scoring-default-score
+     The default score for an elfeed entry.
+
+   For instance, here's a subset of my scoring file at the moment:
+
+     ;;; Elfeed score file                                     -*- lisp -*-
+       (("title"
+         (:text "OPEN THREAD" :value -1000 :type S)
+         (:text "raymond c\\(hen\\)?" :value 250 :type r
+          :tags (t .(@dev)))
+        ("content"
+         (:text "type erasure" :value 500 :type s))
+        ("title-or-content"
+         (:text "california" :title-value 150 :content-value 100 :type s)
+         (:text "china" :title-value 150 :content-value 100 :type w))
+        ("feed"
+         (:text "Essays in Idleness" :value 250 :type S :attr t)
+         (:text "Irreal" :value 250 :type S :attr t)
+         (:text "Julia Evans" :value 100 :type :type s :attr t)
+         (:text "National Weather Service" :value 400 :type S :attr t)
+         (:text "emacs-news – sacha chua" :value 350 :type S :attr t))
+        ("authors"
+          (:text "Jim Geraghty" :value 500 :type s))
+        ("tag"
+         (:tags (t . reddit-question)
+          :value 750))
+        (mark -2500))
+
+   Like Gnus scoring, this may look like Lisp code, but it is not
+directly evaluated.  It will be read by the Lisp reader, so it must at
+least be a valid Lisp s-expression.
+
+   For details of how to form s-expressions elfeed-score will
+understand, see *note below: Score File Format.
+
+
+File: elfeed-score.info,  Node: Manual Scoring,  Next: Scoring Statistics,  Prev: Scoring Generalities,  Up: Scoring
+
+2.1.2 Manual Scoring
+--------------------
+
+Scores may also be set on entries manually:
+
+ -- Command: elfeed-score-set-score score ignore-region
+     Set the score of one or more Elfeed entries to SCORE (given as a
+     prefix argument).
+
+   Since these scores are presumably significant to the user who took
+the trouble to set them, such scores will not be overwritten by other
+scoring operations (such as the new entry hook which elfeed-score
+installs).  Since this behavior was implemented only recently
+(https://github.com/sp1ff/elfeed-score/issues/10), it is controlled by a
+configuration variable:
+
+ -- User Option: elfeed-score-scoring-manual-is-sticky
+     This customization variable, if true, will make manual scores
+     "sticky" in that they will not be overwritten by other scoring
+     operations (they can, however, be overwritten by a subsequent
+     manual scoring operation).  If nil, manual scoring is treated no
+     differently than any other scoring operation.
+
+
+File: elfeed-score.info,  Node: Scoring Statistics,  Prev: Manual Scoring,  Up: Scoring
+
+2.1.3 Scoring Statistics
+------------------------
+
+elfeed-score maintains statistics on when & how frequently each rule
+matches an entry (on which more *note below: Score File Format.).  In
+earlier versions of the package, each rule's stats were maintained in
+the rule structure itself & were persisted along with each rule to the
+score file.
+
+   This *note turned out: The Score File. to be ill-conceived, leading
+to split-brain
+(https://www.unwoundstack.com/blog/elfeed-score-state.html) when the
+user edited their score file with un-written stats still in memory.
+
+   Today, elfeed-score maintains a separate datastructure holding this
+information & automatically writes it to disk in a separate file.  The
+location of the stats file is defined in 'elfeed-score-rule-stats-file'.
+
+ -- User Option: elfeed-score-rule-stats-file
+     The location at which scoring rule stats are maintained.
+
+     The default value is 'elfeed.stats' in 'user-emacs-directory',
+     which see *note user-emacs-directory: (elisp)Init File.
+
+   Since this file is meant to be maintained automatically by
+elfeed-score, this manual won't go over the file format.
+
+
+File: elfeed-score.info,  Node: Starting elfeed-score,  Prev: Scoring,  Up: Getting Started
+
+2.2 Starting elfeed-score
+=========================
+
+Once you've setup your score file, and assuming you've installed
+elfeed-score, begin or switch to your Emacs session and say:
+
+     (require 'elfeed-score)
+
+   Just loading the library will *not* modify elfeed; you need to
+explicitly enable the package for that:
+
+     (elfeed-score-enable)
+
+   This will install the new sort function & new entry hook, as well as
+read your score & stats files.  It will also install an elfeed update
+hook; this is to detect when an update has completed so that we can
+write-out the new rule stats to disk.  NB. 'elfeed-score-enable' is
+autoloaded, so if you've installed this package in the usual way, you
+should be able to just invoke the function & have the package loaded &
+enabled automatically.
+
+ -- Command: elfeed-score-enable
+     Install the new sort function, the new entry hook & the update
+     hook.  Read the score & stats files.  With prefix arg do _not_
+     install the custom sort function.
+
+   Some elfeed users have already customized
+'elfeed-search-sort-function' and may not wish to have elfeed-score
+install a new one.  'elfeed-score-enable' takes a prefix argument: if
+present, it will install the new entry hook & commence scoring, but will
+_not_ install the new sort function.  Such users may refer to
+'elfeed-score-sort' if they would like to incorporate scoring into their
+sort functions.
+
+   Because of how 'add-hook' operates, if 'elfeed-score' is enabled
+after all other 'elfeed' configuration is completed (including addition
+of taggers via 'elfeed-make-tagger') it will be the first thing run on a
+new entry.  Therefore 'elfeed-score-enable' takes a second argument: the
+depth at which the scoring function shall be placed in in
+'elfeed-new-entry-hook'.
+
+ -- Utility: elfeed-score-sort
+     'elfeed-search-sort-function'-compliant function that will sort
+     elfeed entries by score first, then timestamp.
+
+   The package defines a keymap, but does not bind it to any key.  I
+like to set it to the '=' key:
+
+     (define-key elfeed-search-mode-map "=" elfeed-score-map)
+
+   Now, only when you're in the elfeed-score search buffer, you can
+access elfeed-score commands on the '=' key.
+
+   elfeed allows us to customize how entries are displayed in the elfeed
+search buffer through the variable 'elfeed-search-print-entry-function'.
+Because users have customized this, elfeed-score does not alter this
+variable directly Rather, it offers a replacement implementation,
+'elfeed-score-print-entry', should you wish to use it.
+
+ -- Utility: elfeed-score-print-entry
+     Prefix each entry with its score when displayed in the elfeed
+     search buffer.
+
+   Install it like so:
+
+     (setq elfeed-search-print-entry-function #'elfeed-score-print-entry)
+
+   While this is not turned on by 'elfeed-score-enable',
+'elfeed-score-unload' will remove it, if it's there.
+
+ -- Command: elfeed-score-unload
+     Unload elfeed-score.
+
+   Even if you've customized the elfeed print function, if you would
+like to incorporate the score into your version, you can use the
+'elfeed-score-print-entry' implementation for inspiration.
+
+
+File: elfeed-score.info,  Node: The Score File,  Next: Using elfeed-score,  Prev: Getting Started,  Up: Top
+
+3 The Score File
+****************
+
+The rules for scoring are written down in the score file, a plain-text
+file containing a single Lisp form.  The location of the score file is
+defined in 'elfeed-score-serde-score-file'.
+
+ -- User Option: elfeed-score-serde-score-file
+     The location at which scoring rules are maintained.
+
+     The default value is 'elfeed.score' in 'user-emacs-directory',
+     which see *note user-emacs-directory: (elisp)Init File.
+
+   We'll go over the format in more detail *note below: Score File
+Format.
+
+   It is important to note that the score file is authored & maintained
+by the user: elfeed-score will only read from it, not write to it.
+Prior versions of elfeed-score kept assorted statistics about each rule
+(how many times it matched, for instance) in the rule structures
+themselves, and would periodically write them out to the score file.
+This led (https://github.com/sp1ff/elfeed-score/issues/13) to situations
+where users would lose edits to their score file when elfeed-score
+blindly wrote out its in-memory state.  Beginning with elfeed-score
+0.7.10, those statistics are tracked & persisted separately, which will
+hopefully put an end to this problem.
+
+   That said, if you update your rules by hand, you need to tell
+elfeed-score to re-load it before (re-)scoring any elfeed entries.  You
+can do this by invoking 'elfeed-score-load-score-file' ('= l'):
+
+ -- Command: elfeed-score-load-score-file
+     Load the score file into the current session.
+
+* Menu:
+
+* Score File Format::
+* Types of Rules::
+* Scoping Rule Application::
+* A Complete Score File::
+
+
+File: elfeed-score.info,  Node: Score File Format,  Next: Types of Rules,  Up: The Score File
+
+3.1 Score File Format
+=====================
+
+The score file is a plain-text file containing a single Lisp form.
+Under the hood, elfeed-score opens your file, inserts its contents into
+a temporary buffer, and calls 'read-from-string' (*note
+read-from-string: (elisp)Input Functions.) on the contents.  Note that
+this means any comments will be discarded; use the ':comment' field to
+attach notes to your rules, instead.
+
+   The form is a list of lists; each sub-list begins with a symbol or a
+string identifying that sub-list's nature & purpose.  The sub-list
+identifiers elfeed-score recognizes are:
+
+   * 'version' The sublist named by the symbol 'version' contains the
+     version of the score file format.  You do not need to include this
+     in your initial score file; it is written out automatically by
+     elfeed-score.  elfeed-score maintains backward compatibiliy in that
+     score files in older format versions are still recognized.  The
+     most recent format version will always be used when the score file
+     is updated, however.  Also, an older elfeed-score will reject a
+     more recent score file.
+
+     When elfeed-score loads a score file that uses an archaic version
+     (i.e.  a version less than 'elfeed-score-serde-current-format') it
+     will announce the fact that your score file will be updated and
+     make a backup of your current score file in '%s.~%d~' where '%s' is
+     replaced by 'elfeed-score-serde-score-file' and '%d' is replaced by
+     your score file's current version (so that you will end up with a
+     copy of the last score file in each format over time).
+
+      -- Variable: elfeed-score-serde-current-format
+          The version of the score file format employed by elfeed-score.
+
+     It will also immediately re-write the score file in the current
+     format.
+
+   * "title" The sublist named by the string "title" contains rules that
+     match against elfeed entry titles, on which more below in *note
+     title Rules::.
+
+   * "content" The sublist named by the string "content" contains rules
+     that match against elfeed entry content, on which more below in
+     *note content Rules::.
+
+   * "title-or-content" The sublist named by the string
+     "title-or-content" contains rules that match against both entry
+     title _and_ content, on which more below in *note title-or-content
+     Rules::.
+
+   * "authors" This sublist contains rules that match against the entry
+     author, on which more below in *note authors Rules::.
+
+   * "tag" This sublist contains rules that match against entries' tags;
+     see *note tag Rules:: below for more details.
+
+   * "feed" This sublist contains rules that match against entries'
+     feed; see *note feed Rules:: below for more details.
+
+   * "link This sublist contains rules that match against entries' link;
+     see *note feed Rules:: below for more details.
+
+   * "adjust-tags" This sublist contains rules that will be applied
+     _after_ an entry's score has been computed and that add or remove
+     tags based on that score.  Details below at *note adjust-tags
+     Rules::.
+
+   * 'mark' This sublist contains an integer; if an entry's final score
+     is below this value, the entry will be marked as "read".  Details
+     below in *note mark Rule::.
+
+   Until elfeed-score 0.7, all rules were serialized to flat lists, with
+each attribute in a known position in the list (for instance, title
+rules wrote down their match text in position 0, the match value in
+position 1, and so forth, while the other rule types each had their own
+format).
+
+   As time went on, the number of attributes for any given rule type
+grew.  Using flat lists as a serialization format became untenable for
+two reasons:
+
+  1. Having to "just know" that slot 'i' was for this & slot 'j' was for
+     that became increasingly burdensome for the package author, let
+     alone contributors & users.
+
+  2. It makes validation hard: if the score file author forgets that
+     slot 'i' is for this thing, but provides the thing that goes in
+     slot 'i + 1', then when elfeed-score calls '(nth in i)' it will get
+     _something_ back, but will not discover that it's the wrong sort of
+     thing for some time, which makes it hard to craft a usable error
+     message; worse, elfeed-score may never discover it & instead fail
+     silently.
+
+   Beginning with build 0.7.3 (format version 6), elfeed-score now uses
+property lists as its serialization format.  This will address these two
+issues, at the cost of making authoring rules more prolix: instead of
+saying:
+
+     ("match text" 100...)
+
+   one now has to say:
+
+     (:text "match text" :value 100...)
+
+   Given that fields set to their default values do _not_ have to be
+specified, this will hopefully not be too inconvenient, and will enable
+better error messages on reading score files.
+
+
+File: elfeed-score.info,  Node: Types of Rules,  Next: Scoping Rule Application,  Prev: Score File Format,  Up: The Score File
+
+3.2 Types of Rules
+==================
+
+* Menu:
+
+* title Rules::
+* content Rules::
+* title-or-content Rules::
+* feed Rules::
+* authors Rules::
+* tag Rules::
+* link Rules::
+* UDF Rules::
+* adjust-tags Rules::
+* mark Rule::
+
+
+File: elfeed-score.info,  Node: title Rules,  Next: content Rules,  Up: Types of Rules
+
+3.2.1 title Rules
+-----------------
+
+"title rules" are rules that are matched against each entry's title.
+You may match by substring, regexp or whole word.  The match may be case
+sensitive or case-insensitive.  Of course, the rule needs to specify the
+amount to be added to an entry's score on successful match.
+
+   In the score file (*note The Score File::), title rules are
+represented by a property list of up to six attributes:
+
+  1. ':text': The match text.
+
+  2. ':value': The match value.  This is an integer specifying the
+     amount by which the entry's score should be adjusted, should the
+     text match
+
+  3. ':type': The match type.
+
+     This is a symbol, and must be one of 's', 'S', 'r', 'R', 'w' or 'W'
+     for case-insensitive substring match, case-sensitive substring
+     match, case-insensitive regexp match or case-sensitive regexp
+     match, and case-insensitive or case-sensitive whole word match,
+     respectively.
+
+     Note that regular expressions use Emacs Lisp regular expression
+     syntax (*note Regular Expressions: (elisp)Regular Expressions.).
+
+     Whole word matching just feeds the match text to
+     'word-search-regexp' (*note String Search: (elisp)String Search.)
+     before doing a regexp search.
+
+  4. ':tags': Tag scoping rules.
+
+     You may wish to apply this rule only to entries that have certain
+     tags (or that do _not_ have certain tags).  *Note Scoping Rules by
+     Tags:: for how to do that.
+
+     This property is optional.
+
+  5. ':feeds': Feed scoping rules.
+
+     You may wish to apply this rule only to entries that came from
+     certain feeds (or did _not_ come from certain feeds).  *Note
+     Scoping Rules by Feed:: for how to do that.
+
+     This property is optional.
+
+  6. ':comment': Rule comment
+
+     An optional, free-form note on this rule.  Since Lisp comments will
+     be lost on read, this provides a way for the score file author to
+     annotate rules.
+
+   So, for instance, the following rule:
+
+     ("title"
+       (:text "rust.*who.s hiring" :value 1500 :type r))
+
+   would match each entry's title against the regular expression
+"rust.*who.s hiring" (without regard to case) and adds 1500 to the score
+of any entry that matches.
+
+   Note that it takes advantage of the fact that only the ':text',
+':value' & ':type' properties are required.
+
+
+File: elfeed-score.info,  Node: content Rules,  Next: title-or-content Rules,  Prev: title Rules,  Up: Types of Rules
+
+3.2.2 content Rules
+-------------------
+
+"content rules" are very similar to *note title Rules:: except that they
+match against an entry's content rather than its title.  For that
+reason, this section will be very brief- refer to *note title Rules::
+for the details of each element.
+
+   In the score file (*note The Score File::), content rules are
+represented by six properties:
+
+  1. ':text' The match text
+
+  2. ':value' The match value
+
+  3. ':type' The match type as per *note above: match-type.
+
+  4. ':tags' Tag scoping rules
+
+  5. ':feeds' Feed scoping rules
+
+  6. ':comment' Comment
+
+   As *note above: title Rules, only the first three elements are
+required.
+
+
+File: elfeed-score.info,  Node: title-or-content Rules,  Next: feed Rules,  Prev: content Rules,  Up: Types of Rules
+
+3.2.3 title-or-content Rules
+----------------------------
+
+When searching for text in entries on which to score, it can be
+convenient to check both title _and_ content.  Rather than repeating
+each rule in both the "title" and "content" elements of the score file,
+you can use "title-or-content" rules.  These rules consist of seven
+elements, not six:
+
+  1. ':text' The match text, as with title & content rules
+
+  2. ':title-value' The title match value
+
+     The value by which an entry's score will be adjusted when the
+     _title_ matches.  This allows different scoring values for title &
+     content matches, on the assumption that a title match would be
+     considered more significant.
+
+  3. ':content-value' The content match value
+
+     The value by which an entry's score will be adjusted when the
+     _content_ matches.
+
+  4. ':type' The match type as per *note above: match-type.
+
+  5. ':tags' Tag scoping rules
+
+  6. ':feeds' Feed scoping rules
+
+  7. ':comment' Comment
+
+   Note that both entry attributes are checked, so both score values
+have the potential to added to any given entry.
+
+   For instance, the following rule:
+
+     ("title-or-content"
+       (:text "california" :title-value 150 :content-value 100 :type s))
+
+   would add 150 to any element who's title contains the string
+"california", as well as 100 if its content also contains that text.
+
+
+File: elfeed-score.info,  Node: feed Rules,  Next: authors Rules,  Prev: title-or-content Rules,  Up: Types of Rules
+
+3.2.4 feed Rules
+----------------
+
+You can adjust an entry's score on the basis of the feed that produced
+it with a "feed" rule.  For instance I use this to prioritize certain
+sources.  A feed rule is defined by the following six elements:
+
+  1. ':text': Match text The text to be matched against the feed title,
+     URL or author
+
+  2. ':value': Match value The value by which an entry's score will be
+     adjusted should there be a match
+
+  3. ':type': Match type The match type as per *note above: match-type.
+
+  4. ':attr': Feed attribute One of the symbols 't', 'u' or 'a' for
+     title, URL, or author respectively; this determines the attribute
+     of the feed against which this rule's text will be matched.
+
+  5. ':tags': Tag scoping rules You may wish to apply this rule only to
+     entries that have certain tags (or that do _not_ have certain
+     tags).  See *note below: Scoping Rules by Tags. for how to do that.
+
+  6. ':comment' Comment
+
+   For example, this rule:
+
+     ("feed"
+       (:text "National Weather Service" :value 400 :type S :attr t))
+
+   will check the feed title for each entry against the string "National
+Weather Service" (case will count).  Should there be a match, the
+corresponding entry will have 400 added to its score.
+
+
+File: elfeed-score.info,  Node: authors Rules,  Next: tag Rules,  Prev: feed Rules,  Up: Types of Rules
+
+3.2.5 authors Rules
+-------------------
+
+Some feeds are not produced by a single author.  A feed that contains
+academic papers, for instance, may tag each entry with the authors of
+the paper to which that entry corresponds.  You can score against an
+_entry_'s authors with an authors rule.
+
+  1. ':text': The match text For each entry, if the "authors" meta-data
+     is present, the authors' names will be concatenated (separated by
+     ", ") and matched against this text for scoring purposes.
+
+  2. ':value': The match value This is an integer specifying the amount
+     by which the entry's score should be adjusted, should the text
+     match
+
+  3. ':type': The match type
+
+  4. ':tags': Tag scoping rules
+
+     You may wish to apply this rule only to entries that have certain
+     tags (or that do _not_ have certain tags).  See *note below:
+     Scoping Rules by Tags. for how to do that.
+
+  5. ':feeds': Feed scoping rules
+
+     You may wish to apply this rule only to entries that came from
+     certain feeds (or did _not_ come from certain feeds).  See *note
+     below: Scoping Rules by Feed. for how to do that.
+
+  6. ':comment' Comment
+
+
+File: elfeed-score.info,  Node: tag Rules,  Next: link Rules,  Prev: authors Rules,  Up: Types of Rules
+
+3.2.6 tag Rules
+---------------
+
+elfeed allows one to automatically tag new entries as they are
+discovered.  It can therefore be convenient to group entries that come
+from many different feeds but share a tag or tags.  That is the purpose
+of "tag" rules.
+
+   "tag" rules are defined by four properties:
+
+  1. ':tags': Tags
+
+     The tags whose presence or absence will trigger this rule.  They
+     are specified as a cons cell (*note cons cell: (elisp)Cons Cell and
+     List Types.) of the form:
+
+          (switch . tags)
+
+     'switch' is either 't' or 'nil' and 'tags' is either a tag (i.e.  a
+     symbol) or a list of tags.  If 'switch' is true, this rule will
+     apply to any entry tagged with one or more tags listed in 'tags'.
+     Conversely, if 'switch' is false, the rule will apply to entries
+     who posses _none_ of the tags in 'tags'.
+
+  2. ':value': Match value The amount by which an entry's score shall be
+     adjusted should this rule match.
+
+  3. ':comment' Comment
+
+
+File: elfeed-score.info,  Node: link Rules,  Next: UDF Rules,  Prev: tag Rules,  Up: Types of Rules
+
+3.2.7 link Rules
+----------------
+
+"link rules" are rules that are matched against each entry's Link
+attribute.  They are similar to *note title Rules:: excepting the entry
+attribute to be matched.  For that reason, this section will be brief-
+refer to *note title Rules:: for the details of each element.
+
+   In the score file (*note The Score File::), link rules are
+represented by seven properties:
+
+  1. ':text' The match text
+
+  2. ':value' The match value
+
+  3. ':type' The match type as per *note above: match-type.
+
+  4. ':tags' Tag scoping rules
+
+  5. ':feeds' Feed scoping rules
+
+  6. ':comment' Comment
+
+   As *note above: title Rules, only the first three elements are
+required.
+
+
+File: elfeed-score.info,  Node: UDF Rules,  Next: adjust-tags Rules,  Prev: link Rules,  Up: Types of Rules
+
+3.2.8 UDF Rules
+---------------
+
+If none of the other rule types will do, you can define your own scoring
+function.  "UDF" stands for user-defined function: such a function shall
+take a single parameter of type 'elfeed-entry' and return either nil (to
+indicate no interest in this entry) or an integer (representing this
+rule's contribution to this entry's score).
+
+   In the score file (*note The Score File::), UDF rules are represented
+by five properties:
+
+  1. ':function' The user-defined function; typically this will be a
+     'lambda' form or a symbol
+
+  2. ':display-name' elfeed-score will attempt to deduce a name for the
+     function; if this value is specified, the given string will be used
+     for logging, pretty-print & so forth
+
+  3. ':tags' Tag scoping rules
+
+  4. ':feeds' Feed scoping rules
+
+  5. ':comment' Comment
+
+
+File: elfeed-score.info,  Node: adjust-tags Rules,  Next: mark Rule,  Prev: UDF Rules,  Up: Types of Rules
+
+3.2.9 adjust-tags Rules
+-----------------------
+
+Until now, all the rules have been used to determine an entry's score.
+The "adjust-tags" rule (and the "mark" rule *note below: mark Rule.) act
+on entries _after_ their scores have been determined.
+
+   The adust-tags rule was inspired by John Kitchin's article Scoring
+Elfeed Articles
+(https://kitchingroup.cheme.cmu.edu/blog/2017/01/05/Scoring-elfeed-articles/).
+He computes a score and adds one or two tags to entries whose score is
+sufficiently high.  It always bothered me that elfeed-score couldn't do
+that, so in build 0.4.3, I added this rule type.  These will add or
+remove tags based on whether the entry's score is above or below a given
+threshold.
+
+   adjust-tags rules are given by four properties:
+
+  1. ':threshold': The threshold at which the rule shall apply
+
+     This is defined by a cons cell (*note cons cell: (elisp)Cons Cell
+     and List Types.) of the form:
+
+          (switch . threshold)
+
+     'switch' may be 't' or 'nil' and 'threshold' is the threshold
+     against which each entry's score shall be compared.  If 'switch' is
+     't', the rule applies if the score is greater than or equal to
+     'threshold'; if 'switch' is 'nil' the rule applies if score is less
+     than or equal to 'threshold'.
+
+  2. ':tags': The tags to be added or removed
+
+     This is also given by a cons cell
+
+          (switch . tags)
+
+     If 'switch' is 't' & the rule applies, 'tags' (either a single tag
+     or a list of tags) will be added to the entry; if 'switch' is
+     'nil', they will be removed
+
+  3. ':comment' Comment
+
+   For example, the following rules:
+
+     (("adjust-tags"
+       (:threshold (t . 1000) :tags (t . a))
+       (:threshold (nil . -1000) :tags (nil . b)))
+
+   will add the tag ''a' to all entries whose score is 1000 or more, and
+remove tag ''b' from all entries whose score is -1000 or less.
+
+
+File: elfeed-score.info,  Node: mark Rule,  Prev: adjust-tags Rules,  Up: Types of Rules
+
+3.2.10 mark Rule
+----------------
+
+Like the "adjust-tag" rule (*note above: adjust-tags Rules, the mark
+rule operates on an entry after scoring has completed.  If present, it
+simply specifies an integer; any entry whose score is below this number
+will be marked as read (in that it will have the ''unread' tag removed
+from it).  Since bookmarked elfeed searches typically specify the
+''unread' tag as a criterion, this essentially means "if an entry's
+score is below this number, don't even show it to me."
+
+   Unlike the other rules, there may only be one mark rule.
+
+   Example:
+
+     (mark -2500)
+
+
+File: elfeed-score.info,  Node: Scoping Rule Application,  Next: A Complete Score File,  Prev: Types of Rules,  Up: The Score File
+
+3.3 Scoping Rule Application
+============================
+
+You may find that you only want some rules to _not_ be applied to every
+entry, but only in certain contexts.  Many of the rules described above
+can be scoped to apply to only entries with certain tags, or to only
+entries from certain feeds.
+
+* Menu:
+
+* Scoping Rules by Tags::
+* Scoping Rules by Feed::
+
+
+File: elfeed-score.info,  Node: Scoping Rules by Tags,  Next: Scoping Rules by Feed,  Up: Scoping Rule Application
+
+3.3.1 Scoping Rules by Tags
+---------------------------
+
+"title", "content", "title-or-content", "authors" & "feed" rules can be
+scoped by tag (*note Types of Rules::).  In the description of each of
+these type of rules above, you will note a slot reserved for "tag
+scoping rules".  In each case these rules are expressed as a cons cell
+of the form:
+
+     (boolean . (tag...))
+
+   The car is a boolean, and the cdr is a list of tags.  If the former
+is 't', the rule will only be applied if the entry has at least one of
+the tags listed.  If the boolean value is 'nil', the rule will only
+apply if the entry has *none* of the tags listed.
+
+   For instance, this is an entry in my score file at the time of this
+writing:
+
+     ("title-or-content
+       (:text "workspace" :title-value 150 :content-value 75 :type s
+        :date 1611937077.6047099
+        :tags (t linux)
+        :hits 48)
+
+   It performs a case-insensitive substring match against entry title
+and content, adding 150 & 75 points to an entry's score on match,
+respectively.  It matched most recently at Friday, January 29, 2021
+8:17:57.604 AM PST, and has matched 48 times in total.
+
+   Of particular interest here is the fact that it will only be applied
+to entries with the tag ''linux', since "workspace" is fairly generic
+term, and I am only specific interested in the term as it applies to
+Linux window managers.
+
+
+File: elfeed-score.info,  Node: Scoping Rules by Feed,  Prev: Scoping Rules by Tags,  Up: Scoping Rule Application
+
+3.3.2 Scoping Rules by Feed
+---------------------------
+
+"title", "content", "title-or-content" & "authors" rules can also be
+scoped by feed; that is, you can arrange to have such rules only apply
+to entries from certain feeds (or apply only to entries _not_ from
+certain feeds) (*note Types of Rules::).
+
+   Each of these rule types reserves a slot in their definiotn for "feed
+scope rules".  Such fules are expressed as a cons cell:
+
+     (boolean . ((attr match-type matex-text)...))
+
+   The car is a boolean, and the cdr is a list of feed selectors.  If
+the former is 't', the rule will only be applied if the entry's feed
+matches at least one of the selectors listed.  If the boolean value is
+'nil', the rule will only apply if the entry's feed matches _none_ of
+the selectors listed.
+
+   Each selector is itself a three-tuple consisting of:
+
+  1. Feed attribute One of the symbols 't', 'u' or 'a' for title, URL,
+     or author respectively; this determines the attribute of the feed
+     against which this rule's text will be matched.
+
+  2. Match type The match type as per *note above: match-type.
+
+  3. Match text
+
+   Example:
+
+     ("title"
+       (:text "foo" :value 100 :type s
+        :feeds (t . ((t S "Bar")))))
+
+   This defines a title rule *Note title Rules:: that checks for a
+substring matching "foo" in the entry title and adds 100 points to its
+score on match.  However, it will _only_ match entries originating from
+feeds whose title contains the string "Bar" (case-sensitive).
+
+
+File: elfeed-score.info,  Node: A Complete Score File,  Prev: Scoping Rule Application,  Up: The Score File
+
+3.4 A Complete Score File
+=========================
+
+This is a small subset of my current score file at the time of this
+writing.  Working score files tend to grow much larger than this (*note
+Rule Maintenance:: below), but it is a complete example.
+
+     ;;; Elfeed score file                                     -*- lisp -*-
+     ((version 10)
+      ("title"
+       (:text "rust.*who.s hiring" :value 1500 :type r)
+       (:text "Microsoft Security Response Center" :value 1500 :type s))
+      ("content"
+       (:text "/u/I_am_dom_" :value 250 :type s :tags (t @china)))
+      ("title-or-content"
+       (:text "california" :title-value 150 :content-value 100 :type s)
+       (:text "melpa" :title-value 250 :content-value 150 :type s
+        :tags (t @dev @emacs))
+       (:text "workspace" :title-value 150 :content-value 75 :type s
+        :tags (t linux)))
+      ("tag"
+       (:tags (t . reddit-question)
+        :value 750))
+      ("authors"
+       (:text "Jim Geraghty" :value 500 :type s))
+      ("feed"
+       (:text "Hacker News" :value 150 :type S :attr t))
+      (mark -2500)
+      ("adjust-tags"))
+
+
+File: elfeed-score.info,  Node: Using elfeed-score,  Next: Roadmap & Contributing,  Prev: The Score File,  Up: Top
+
+4 Using elfeed-score
+********************
+
+* Menu:
+
+* Startup in Detail::
+* Asking elfeed-score How It's Scoring an Entry::
+* Adding Rules Interactively::
+* Rule Maintenance::
+
+
+File: elfeed-score.info,  Node: Startup in Detail,  Next: Asking elfeed-score How It's Scoring an Entry,  Up: Using elfeed-score
+
+4.1 Startup in Detail
+=====================
+
+Once you've setup your score file (*note The Score File::), and started
+elfeed-score (*note Starting elfeed-score::), any _new_ entries will be
+scored automatically, but the entries already in your database have not
+yet been scored.  Scoring is idempotent in that scoring an entry more
+than once will always result in it having the same score assigned.  This
+means you can load an Elfeed search, and then, in the Elfeed search
+buffer '*elfeed-search*', score all results with
+'elfeed-score-score-search', or '= v'.  When the command completes, the
+view will be re-sorted by score.  Your stats file will also have been
+updated on disk (to record the last time that each rule matched).
+
+ -- Command: elfeed-score-score-search
+     Score the current set of search results.
+
+   You can configure score logging by setting the variable
+'elfeed-score-log-level'.
+
+ -- User Option: elfeed-score-log-log-level
+     Level at which 'elfeed-score' shall log; may be one of 'debug,
+     'info, 'warn, or 'error.
+
+   By default it will be ''warn', which will produce very little output.
+To trouble-shoot a balky rule, type
+
+     (setq elfeed-score-log-level 'debug)
+
+   re-score your current view ('= s'), and switch to buffer
+'*elfeed-score*'.
+
+   You can also trouble-shoot rules using the "explain" feature *note
+below: Asking elfeed-score How It's Scoring an Entry.
+
+
+File: elfeed-score.info,  Node: Asking elfeed-score How It's Scoring an Entry,  Next: Adding Rules Interactively,  Prev: Startup in Detail,  Up: Using elfeed-score
+
+4.2 Asking elfeed-score How It's Scoring an Entry
+=================================================
+
+If you've got an entry that's not being scored in the manner you expect,
+you can ask elfeed-score to explain itself by selecting the offending
+entry & invoking 'elfeed-score-scoring-explain-entry' ('= x'):
+
+ -- Command: elfeed-score-scoring-explain-entry
+     Explain an Elfeed ENTRY.
+
+     This function will apply all scoring rules to an entry, but will
+     not change anything (e.g.  update the entry's meta-data, or the
+     last-matched timestamp); instead, it will provide a human-readable
+     description of what would happen if the entry were to be scored,
+     presumably for purposes of debugging or understanding of scoring
+     rules.
+
+   'elfeed-score-scoring-explain-entry' will list the matching rules in
+a new buffer.  Clicking on or hitting Enter on a rule will open up the
+score file & position point on the corresponding rule definition.
+
+
+File: elfeed-score.info,  Node: Adding Rules Interactively,  Next: Rule Maintenance,  Prev: Asking elfeed-score How It's Scoring an Entry,  Up: Using elfeed-score
+
+4.3 Adding Rules Interactively
+==============================
+
+Initially, elfeed-score rules were hand-authored by the user in *note
+The Score File::; the workflow being:
+
+  1. Hand edit the score file.
+
+  2. Re-load the score file via 'elfeed-score-load-score-file'.
+
+  3. Re-score the current search via 'elfeed-score-score-search'.
+
+   The 0.8 releases introduced interactive scoring.  In the Elfeed
+search buffer, or the Elfeed show buffer, one can now add a new rule
+based on the current entry through an Emacs command
+'elfeed-score-main-add-*-rule'.
+
+   Most rules have a number of attributes, and it would be onerous to
+have to supply them each time one of these commands is invoked.
+Therefore these commands obey a set of customizable variables that will,
+in the general case, supply defaults:
+
+ -- User Option: elfeed-score-maint-default-match-type
+     The default match type for interactively added rules (one of 's,
+     'S, 'r, 'R, 'w or 'W).
+
+ -- User Option: elfeed-score-maint-default-scope-to-feed
+     Governs whether the interactively added rule is scoped to the
+     entry's feed.  May be one of 'yes, 'no or 'ask.
+
+ -- User Option: elfeed-score-maint-default-scope-to-tags
+     Governs whether the interactively added rule is scoped to the
+     entry's tags (when applicable).  May be one of 'yes, 'no or 'ask.
+
+ -- User Option: elfeed-score-maint-default-feed-attribute
+     Default feed attribute against which an interactively added feed
+     rule will be matched.  May be one of 't, 'u, or 'a for title, URL
+     or author, respectively.
+
+   These rules can be invoked in a few ways:
+
+   * With no prefix argument: the match value & text are supplied
+     interactively.  Other rule attributes will be gathered according to
+     their "default" user options.
+
+   * With a numeric prefix argument; the prefix argument's value will be
+     used as the match value.  The match text must still be entered
+     interactively.  Other rule attributes will be gathered according to
+     their corresponding "default" user options (on which more below).
+
+   * One or more universal-arguments: the match values & text must be
+     supplied interactively.  All defaults will be ignored and the other
+     rule attributes can be entered interactively.
+
+   The functions for adding rules interactively:
+
+ -- Command: elfeed-score-maint-add-title-rule value
+     Add a title rule based on the current entry.  The default value for
+     the match text will be the current entry's title.
+
+ -- Command: elfeed-score-maint-add-content-rule value
+     Add a content rule based on the current entry.  This may only be
+     invoked when displaying an Elfeed entry.  If the region is active,
+     the default match text will be the selection.  Otherwise, the
+     default match text will be the entry's contents.
+
+ -- Command: elfeed-score-maint-add-feed-rule value
+     Add a feed rule based on the current entry.
+
+ -- Command: elfeed-score-maint-add-authors-rule value
+     Add an authors rule based on the current entry.
+
+ -- Command: elfeed-score-maint-add-tag-rule value
+     Add a tag rule based on the current entry.
+
+ -- Command: elfeed-score-maint-add-link-rule value
+     Add a link rule based on the current entry.
+
+ -- Command: elfeed-score-maint-add-title-or-content-rule title-value
+          content-value
+     Add a title-or-content rule based on the current entry.  If
+     displaying an entry, and the region is active, the default match
+     text will be the selection.  Otherwise, it will be the entry text.
+
+
+File: elfeed-score.info,  Node: Rule Maintenance,  Prev: Adding Rules Interactively,  Up: Using elfeed-score
+
+4.4 Rule Maintenance
+====================
+
+As time goes by, you may find your score file growing considerably in
+size & complexity.  elfeed-score offers a few reporting functions for
+looking at the totality of your rules in a few ways:
+
+ -- elfeed-score-maint-display-rules-by-last-match(&optional: category)
+     Display all scoring rules in descending order of last match.
+
+     CATEGORY may be used to narrow the scope of rules displayed.  If
+     nil, display all rules.  If one of the following symbols, display
+     only that category of rules:
+
+     :title :feed :content :title-or-content :authors :tag :adjust-tags
+
+     Finally, CATEGORY may be a list of symbols in the preceding list,
+     in which case the union of the corresponding rule categories will
+     be displayed.
+
+ -- Command: elfeed-score-maint-display-rules-by-match-hits (&optional
+          category)
+     Display all scoring rules in descending order of match hits.
+
+     CATEGORY may be used to narrow the scope of rules displayed.  If
+     nil, display all rules.  If one of the following symbols, display
+     only that category of rules:
+
+     :title :feed :content :title-or-content :authors :tag :adjust-tags
+
+     Finally, CATEGORY may be a list of symbols in the preceding list,
+     in which case the union of the corresponding rule categories will
+     be displayed.
+
+
+File: elfeed-score.info,  Node: Roadmap & Contributing,  Next: Index,  Prev: Using elfeed-score,  Up: Top
+
+5 Roadmap & Contributing
+************************
+
+In September 2021, I felt comfortable releasing elfeed-score "1.0",
+implying a certain level of stability (and notably will respect semver
+going forward).  I've sketched some thoughts on elfeed-score's future in
+the README (https://github.com/sp1ff/elfeed-score).
+
+   Bugs & feature requests are welcome in the Issues
+(https://github.com/sp1ff/elfeed-score/issues) section of the project.
+
+   If you'd like to hack on elfeed-score, I've started a Wiki
+(https://github.com/sp1ff/elfeed-score/wiki) for that and am always
+happy to discuss PRs.
+
+   Finally, you can just reach out directly at <sp1ff@pobox.com>, or
+shoot a webmention to me at my web site (https://www.unwoundstack.com).
+
+
+File: elfeed-score.info,  Node: Index,  Next: Function Index,  Prev: Roadmap & Contributing,  Up: Top
+
+Index
+*****
+
+ [index ]
+* Menu:
+
+* adjust-tags rules:                     adjust-tags Rules.   (line   6)
+* authors rules:                         authors Rules.       (line   6)
+* complete score file, example:          A Complete Score File.
+                                                              (line   6)
+* content rules:                         content Rules.       (line   6)
+* elfeed-score initialization:           Starting elfeed-score.
+                                                              (line   6)
+* feed rules:                            feed Rules.          (line   6)
+* link rules:                            link Rules.          (line   6)
+* mark rule:                             mark Rule.           (line   6)
+* match type:                            title Rules.         (line  22)
+* new score file format:                 Score File Format.   (line 110)
+* regular expression syntax:             title Rules.         (line  31)
+* rule scoping, feed:                    Scoping Rules by Feed.
+                                                              (line   6)
+* rule scoping, tags:                    Scoping Rules by Tags.
+                                                              (line   6)
+* scoping:                               Scoping Rule Application.
+                                                              (line   6)
+* score file entries:                    Score File Format.   (line  17)
+* score file version:                    Score File Format.   (line  26)
+* score file, introduction:              The Score File.      (line   6)
+* starting elfeed-score:                 Starting elfeed-score.
+                                                              (line   6)
+* tag rules:                             tag Rules.           (line   6)
+* title rules:                           title Rules.         (line   6)
+* title-or-content rules:                title-or-content Rules.
+                                                              (line   6)
+* UDF rules:                             UDF Rules.           (line   6)
+* using:                                 Using elfeed-score.  (line   6)
+
+
+File: elfeed-score.info,  Node: Function Index,  Next: Variable Index,  Prev: Index,  Up: Top
+
+Function Index
+**************
+
+ [index ]
+* Menu:
+
+* category):                             Rule Maintenance.     (line 10)
+* elfeed-score-enable:                   Starting elfeed-score.
+                                                               (line 24)
+* elfeed-score-load-score-file:          The Score File.       (line 34)
+* elfeed-score-maint-add-authors-rule:   Adding Rules Interactively.
+                                                               (line 72)
+* elfeed-score-maint-add-content-rule:   Adding Rules Interactively.
+                                                               (line 63)
+* elfeed-score-maint-add-feed-rule:      Adding Rules Interactively.
+                                                               (line 69)
+* elfeed-score-maint-add-link-rule:      Adding Rules Interactively.
+                                                               (line 78)
+* elfeed-score-maint-add-tag-rule:       Adding Rules Interactively.
+                                                               (line 75)
+* elfeed-score-maint-add-title-or-content-rule: Adding Rules Interactively.
+                                                               (line 81)
+* elfeed-score-maint-add-title-rule:     Adding Rules Interactively.
+                                                               (line 59)
+* elfeed-score-maint-display-rules-by-match-hits: Rule Maintenance.
+                                                               (line 23)
+* elfeed-score-print-entry:              Starting elfeed-score.
+                                                               (line 62)
+* elfeed-score-score-search:             Startup in Detail.    (line 17)
+* elfeed-score-scoring-explain-entry:    Asking elfeed-score How It's Scoring an Entry.
+                                                               (line 10)
+* elfeed-score-set-score:                Manual Scoring.       (line  8)
+* elfeed-score-sort:                     Starting elfeed-score.
+                                                               (line 44)
+* elfeed-score-unload:                   Starting elfeed-score.
+                                                               (line 73)
+
+
+File: elfeed-score.info,  Node: Variable Index,  Prev: Function Index,  Up: Top
+
+Variable Index
+**************
+
+ [index ]
+* Menu:
+
+* elfeed-score-log-log-level:            Startup in Detail.    (line 23)
+* elfeed-score-maint-default-feed-attribute: Adding Rules Interactively.
+                                                               (line 37)
+* elfeed-score-maint-default-match-type: Adding Rules Interactively.
+                                                               (line 25)
+* elfeed-score-maint-default-scope-to-feed: Adding Rules Interactively.
+                                                               (line 29)
+* elfeed-score-maint-default-scope-to-tags: Adding Rules Interactively.
+                                                               (line 33)
+* elfeed-score-rule-stats-file:          Scoring Statistics.   (line 21)
+* elfeed-score-scoring-default-score:    Scoring Generalities. (line 34)
+* elfeed-score-scoring-manual-is-sticky: Manual Scoring.       (line 19)
+* elfeed-score-serde-current-format:     Score File Format.    (line 34)
+* elfeed-score-serde-score-file:         The Score File.       (line 10)
+
+
+
+Tag Table:
+Node: Top943
+Node: Introduction1297
+Node: Getting Started2435
+Node: Scoring2625
+Node: Scoring Generalities2822
+Node: Manual Scoring6133
+Node: Scoring Statistics7236
+Node: Starting elfeed-score8470
+Node: The Score File11698
+Node: Score File Format13408
+Node: Types of Rules18349
+Node: title Rules18701
+Ref: match-type19440
+Node: content Rules21123
+Node: title-or-content Rules21914
+Node: feed Rules23411
+Node: authors Rules24796
+Node: tag Rules26056
+Node: link Rules27156
+Node: UDF Rules27951
+Node: adjust-tags Rules28902
+Node: mark Rule30898
+Node: Scoping Rule Application31591
+Node: Scoping Rules by Tags32088
+Node: Scoping Rules by Feed33590
+Node: A Complete Score File35210
+Node: Using elfeed-score36436
+Node: Startup in Detail36731
+Node: Asking elfeed-score How It's Scoring an Entry38265
+Node: Adding Rules Interactively39393
+Node: Rule Maintenance43091
+Node: Roadmap & Contributing44559
+Node: Index45404
+Node: Function Index47675
+Node: Variable Index49968
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

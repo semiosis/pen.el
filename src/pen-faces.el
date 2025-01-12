@@ -1235,6 +1235,8 @@ Also see option `magit-blame-styles'."
 ;;     (gamegrid-setup-face face color-str)
 ;;     face))
 
+;; Make a faster version which loads from a B&W mode save.
+;; That way, new frames will load much faster.
 ;; This works well for vt100
 (defun pen-disable-all-faces ()
   (interactive)

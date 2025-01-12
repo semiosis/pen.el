@@ -1,0 +1,211 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 2751
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+x-origin-cache: HIT
+Last-Modified: Sun, 01 Jan 2023 06:09:34 GMT
+Access-Control-Allow-Origin: *
+ETag: W/"63b1239e-25c7"
+expires: Sat, 11 Jan 2025 08:09:51 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: EF91:3597CB:45194D:4C0E51:678224F6
+Accept-Ranges: bytes
+Date: Sat, 11 Jan 2025 08:35:21 GMT
+Via: 1.1 varnish
+Age: 2
+X-Served-By: cache-akl10335-AKL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1736584521.362876,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: a91c7144cdbd33e074ff9d152719a21f056e197a
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>acorn2sfd &#8212; FontForge 20230101 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="shortcut icon" href="../_static/fftype16.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="fontimage" href="fontimage.html" />
+    <link rel="prev" title="Utilities for examining fonts" href="../fontutils.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="acorn2sfd">
+<h1>acorn2sfd<a class="headerlink" href="#acorn2sfd" title="Permalink to this heading">¶</a></h1>
+<p>Converter from Acorn RISC/OS fonts</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">acorn2sfd</span> <span class="p">[</span><span class="o">-</span><span class="n">version</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">help</span><span class="p">]</span> <span class="p">{</span><span class="n">acorndir</span> <span class="o">...</span><span class="p">}</span>
+</pre></div>
+</div>
+<p><em>acorn2sfd</em> will take several Acorn RISC/OS font directories and convert them
+into <a class="reference internal" href="../index.html"><span class="doc">FontForge</span></a>’s sfd files.</p>
+<p>An Acorn RISC/OS font directory should contain two or three files, one named
+<code class="docutils literal notranslate"><span class="pre">Outlines*</span></code> and one named <code class="docutils literal notranslate"><span class="pre">Intmetric?</span></code> (the <code class="docutils literal notranslate"><span class="pre">Intmetrics</span></code> file may be
+omitted, in which case the advance widths will not be known). <em>acorn2sfd</em> will
+read both files and generate an sfd file from them (which
+<a class="reference internal" href="../index.html"><span class="doc">fontforge</span></a> can turn into TrueType or PostScript).</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">Outlines</span></code> file ends in a digit (<code class="docutils literal notranslate"><span class="pre">Outlines0</span></code>) then a third file named
+<code class="docutils literal notranslate"><span class="pre">Base&lt;digit&gt;*</span></code> will be searched for in the directory (if not found there then
+in <code class="docutils literal notranslate"><span class="pre">&lt;acorndir&gt;/../Encodings</span></code>), and if found encoding information will be read
+from it. If not found then the font will be assumed to be an initial subset of
+Unicode.</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-acorn2sfd-includestrokes">
+<span class="sig-name descname"><span class="pre">-includestrokes</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-acorn2sfd-includestrokes" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>acorn2sfd</em> normally throws out the secondary stroked
+version of the character, specifying this option will include it in the sfd file
+(you may then want to invoke FontForge’s Expand Stroke command on it).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-acorn2sfd-arg-help">
+<span class="sig-name descname"><span class="pre">help</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-acorn2sfd-arg-help" title="Permalink to this definition">¶</a></dt>
+<dd><p>will provide a mini description and will list the available options.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-acorn2sfd-arg-usage">
+<span class="sig-name descname"><span class="pre">usage</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-acorn2sfd-arg-usage" title="Permalink to this definition">¶</a></dt>
+<dd><p>will list the available options.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-acorn2sfd-arg-version">
+<span class="sig-name descname"><span class="pre">version</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-acorn2sfd-arg-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>will display the current version of <em>acorn2sfd</em> (a six digit string
+containing the date stamp of the source files).</p>
+</dd></dl>
+
+<section id="bugs">
+<h2>Bugs<a class="headerlink" href="#bugs" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Acorn fonts use a different fill rule than either PostScript or TrueType. You
+should run <span class="menuselection">Element ‣ Correct Direction</span> on the sfd file after
+converting it.</p></li>
+<li><p>Most Acorn fonts I’ve seen on the web are zipped up with a non-standard zip.
+Don’t expect <em>acorn2sfd</em> to be able to unzip them.</p></li>
+<li><p>Acorn hinting data are lost.</p></li>
+</ul>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference internal" href="../index.html"><span class="doc">FontForge</span></a></p>
+<p><a class="reference external" href="http://www.poppyfields.net/acorn/tech/file.shtml">Acorn Font Documentation</a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FontForge</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ui.html">FontForge’s User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/scripting.html">Scripting FontForge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../techref.html">Technical References</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../fontutils.html">Utilities for examining fonts</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">acorn2sfd</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bugs">Bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fontimage.html">fontimage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fontlint.html">fontlint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sfddiff.html">sfddiff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fontutils.html#showttf">ShowTTF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fontutils.html#ttf2eps">Ttf2Eps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fontutils.html#pfadecrypt">PfaDecrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fontutils.html#pcl2ttf">Pcl2Ttf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Typographical glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../fontutils.html">Utilities for examining fonts</a><ul>
+      <li>Previous: <a href="../fontutils.html" title="previous chapter">Utilities for examining fonts</a></li>
+      <li>Next: <a href="fontimage.html" title="next chapter">fontimage</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2000-2012 by George Williams, 2012-2020 by FontForge authors.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

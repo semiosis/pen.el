@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Hebrews 13:21" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Hebrews 13:20-21" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Peter 1:19" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Peter 1:20-19" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "I Peter 1:18-19" "#" "<==" "in-pen"

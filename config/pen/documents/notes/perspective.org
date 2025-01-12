@@ -1,3 +1,212 @@
+* TODO Also add to this
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+   If a person has an obedient and believing heart - a heart of faith - towards Jesus, then they will be saved:
+  
+      If a person truthfully confesses (admits) with their mouth that Jesus is Lord, they have an obedient heart.
+          This must result in the person obeying Jesus; freely forgiving others, loving others as He loved us, keeping Jesus' commandments
+      If they believe in their heart that God raised Jesus from the dead, they believe Jesus, and believe God who sent Him.
+          This must result in the person accepting forgiveness for sin
+#+END_SRC
+
+This is also believing that Jesus is Lord, King, Master, and obeying Jesus' commandment to trust in Him / trust Him.
+
+* Hmm. I *may* have come on too strong with Lordship salvation
+But everything must come under subjection to Jesus.
+As in, those in the Roman Catholic church need the head of the Roman Catholic church
+to be serving and obeying Christ.
+I still believe in making Jesus our Lord and Saviour at a personal level for salvation.
+But I don't want to restrict God in any way.
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+      Daniel 7:27 - And the kingdom and the dominion and the greatness of the kingdoms under the whole heaven shall be given to the people of the saints of the Most High; their kingdom shall be an everlasting kingdom, and all dominions shall serve and obey them. (ESV)
+#+END_SRC
+
+* 
+In my view it doesn't seem as though the Roman Catholic church
+are not Christians.
+Their doctrine is different from the Reformists,
+but they are judged by the doctrine they affirm,
+and by Jesus Christ's words.
+
+So I would say that the common foundation is faith in Jesus Christ Himself,
+including faith in Jesus Christ's words, and Jesus has purchased the redemption,
+and God justifies the one who puts their faith in Jesus,
+and it's God who tests the heart.
+
+* A translation which contains the Divine Name
+https://www.njvbible.com/
+
+* Lordship salvation
+https://www.gotquestions.org/lordship-salvation.html
+
+* Out of sincerity
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+   Yes, it's very important for Christians to practice righteousness:
+  
+      I John 3:7 - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+#+END_SRC
+
+* God purchases the redemption
+In that redemption we do good works.
+
+* By the blood of Jesus
+- The Blood of Jesus empowers us to do works that are pleasing to God.
+
+** Purchased to do works
+#+BEGIN_QUOTE
+  *I Peter 1:18-19* - knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+#+END_QUOTE
+
+** God works in us to help us to practice righteousness
+#+BEGIN_QUOTE
+  *Hebrews 13:20-21* - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, *equip you with everything good that you may do his will*, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
+#+END_QUOTE
+
+* 
+** 
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+   I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet. But if they have just begun to trust that Jesus is the Christ, they have started on their journey to get to know Him. They are an infant in Christ:
+  
+      John 20:31 - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+#+END_SRC
+
+* Listen to this
+** This is very interesting
+- [[https://www.youtube.com/watch?v=nfAWODU10z0][youtube.com: Is Faith + Works a False Gospel? John MacArthur {@takeheedministries}]]
+
+* Salt of the earth
+- distinct from worldliness - a distinct 'taste'
+  - standing up for the Truth in word and deed
+  - light in the darkness
+- We are to be 'salted' in Him, so we are to be corrected and sanctified by Him
+- Jesus preserves us
+- the salt of the earth helps to preserve the earth?
+
+* TODO Maybe remove this or edit it to say I have joy in God
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  All of that spiritual attack I have received pales in comparison to the depression from having my joy taken from me.
+#+END_SRC 
+
+But keeping a good conscience with God is foundational to joy
+
+* I think I'm being tested on the great commandment
+
+* It's extremely important for me to resist sin right now
+It's extremely important.
+I'm unsure why bad things are happening right now.
+But I have some ideas.
+I think it's really important that I resist with all my heart, soul and strength, loving God with all my heart, soul, mind and strength.
+
+* It's extremely important to kill sin
+
+* If we love the Lord our God with *all* our heart, soul mind and strength then we will keep His commandments
+[[https://www.youtube.com/watch?v=zUSHEKnqp5A][youtube.com: Killing the Sin in Your Life {@gracetoyou}]]
+
+* What I really want in emacs is a way to have 
+
+* Graphics in the terminal
+I should have a balanced approached.
+Do what is currently feasible, and use all the technologies to build applications.
+
+** 
+*** Ideally, I would have SVG aligned to the terminal grid
+Is there any terminal format which does this?
+
+*** Actually, what I really want is to be able to render custom high resolution glyphs in the terminal somehow
+I hope that the easiest way isn't to make a font for it.
+But maybe it will be..
+
+*** I want a new graphics type in xterm.... OHHH. I know
+I don't want sixel.
+I think I want to make graphics like timg makes them.
+I think it only splits into 4 per symbol. But maybe that's OK.
+It would be nicer if there was greater resolution.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  $PENELD/scripts/pen-timg -doless --frames=1 --clear -E countdown_logo_email.jpg
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cat /root/dump/tmp/scratchEaK83O.txt | less -rS
+#+END_SRC
+
+* 
+[[https://www.youtube.com/watch?v=PFrZoLer_8s][youtube.com: Be Careful Of This When You Join A Church | Derek Prince {@DerekPrinceWithSubtitles}]]
+
+* 
+https://insight.org/resources/daily-devotional/individual/cease-striving
+
+* I was healed in my heart
+Why on earth do I still have problems?
+God help me.
+
+* I think it's for the best that I continue to condemn the LLM stuff
+I find it pretty gross really.
+It makes me extremely uneasy.
+Why on earth was I pushed into this situation?
+
+* God please clean me
+It's really important that I get cleaned up, Lord Jesus.
+I want to help but I need to be clean.
+I don't know why this has happened to me.
+
+* Earthly fathers vs the Father of our Spirits (God)
+#+BEGIN_QUOTE
+  *Hebrews 12:9* - Besides this, we have had earthly fathers who disciplined us and we respected them. Shall we not much more be subject to the Father of spirits and live? (ESV)
+#+END_QUOTE
+
+* See how the sum of God's word is Truth
+Jesus says, "it also says".
+
+#+BEGIN_QUOTE
+  *Luke 4:2-13* - for forty days, being tempted by the devil. And he ate nothing during those days. And when they were ended, he was hungry. The devil said to him, If you are the Son of God, command this stone to become bread. And Jesus answered him, It is written, Man shall not live by bread alone. And the devil took him up and showed him all the kingdoms of the world in a moment of time, and said to him, To you I will give all this authority and their glory, for it has been delivered to me, and I give it to whom I will. If you, then, will worship me, it will all be yours. And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. And he took him to Jerusalem and set him on the pinnacle of the temple and said to him, If you are the Son of God, throw yourself down from here, for it is written, He will command his angels concerning you, to guard you, and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
+#+END_QUOTE
+
+* 
+** Submit to God
+- Listen to God
+- Walk in His ways
+
+#+BEGIN_QUOTE
+  *Psalms 81:11-13* - But my people did not listen to my voice; Israel would not submit to me. So I gave them over to their stubborn hearts, to follow their own counsels. Oh, that my people would listen to me, that Israel would walk in my ways! (ESV)
+#+END_QUOTE
+
+*** Serve God
+#+BEGIN_QUOTE
+  *II Chronicles 30:8* - Do not now be stiff-necked as your fathers were, but yield yourselves to the LORD and come to his sanctuary, which he has consecrated forever, and serve the LORD your God, that his fierce anger may turn away from you. (ESV)
+#+END_QUOTE
+
+** Resist the devil
+*** Stand firm in our faith
+
+#+BEGIN_QUOTE
+  *I Peter 5:8-9* - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
+#+END_QUOTE
+
+*** Do not sin
+
+#+BEGIN_QUOTE
+  *Ephesians 4:26-27* - Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil. (ESV)
+#+END_QUOTE
+
+*** Put on the full armour of God
+#+BEGIN_QUOTE
+  *Ephesians 6:11-12* - Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
+#+END_QUOTE
+
+* I think I should learn the emacs gamegrid potentially
+That might be useful.
+
+* I think I'd definitely end up using bits of emacs for various parts of the game
+- I could, for example, make a galactic frontiers for emacs / Pen.el.
+
+But I definitely want to make a captain bible game for Pen.el.
+
+* What on earth am I going to do about getting a job
+
+* Go along to corrections today
+Don't succomb to the temptations.
+
 * I'm so confused by what has happened after I was born-again
 It's a massive stuffup.
 I'm not happy with it.

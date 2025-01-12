@@ -1,0 +1,2 @@
+;;; Generated package description from diredfl.el  -*- no-byte-compile: t -*-
+(define-package "diredfl" "20220103.1744" "Extra font lock rules for a more colourful dired" '((emacs "24")) :commit "f9140b2c42151dca669003d685c9f079b2e3dc37" :authors '(("Steve Purcell" . "steve@sanityinc.com")) :maintainer '("Steve Purcell" . "steve@sanityinc.com") :keywords '("faces") :url "https://github.com/purcell/diredfl")

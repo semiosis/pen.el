@@ -1,0 +1,73 @@
+NEWS for ascii-art-to-unicode.el
+See the end for copying conditions.
+
+
+- 1.13 | 2020-11-24
+  - handle modern ‘ucs-names’ being a hash table
+
+- 1.12 | 2018-04-29
+  - Commentary, docstrings now use U+2018, U+2019
+  - mention ‘DOUBLE’ as possible value for ‘aa2u-uniform-weight’
+  - small docfixes
+
+- 1.11 | 2017-10-03
+  - fix uncool attempt to be cool :-/
+
+- 1.10 | 2017-10-03
+  - be cool w/ Emacs where (ucs-names) => hash table
+
+- 1.9 | 2014-05-29
+  - new command: ‘aa2u-mark-rectangle-as-text’
+  - new homepage: http://www.gnuvola.org/software/aa2u/
+
+- 1.8 | 2014-05-21
+  - new command: ‘aa2u-mark-as-text’
+  - package keywords added (to help discovery)
+
+- 1.7 | 2014-05-11
+  - new var: ‘aa2u-uniform-weight’
+  - new command: ‘aa2u-rectangle’
+  - HACKING and Tip Jar links in Commentary
+
+- 1.6 | 2014-05-09
+  - fix regression for interactive invocation w/o active region
+
+- 1.5 | 2014-04-03
+  - ‘aa2u’ takes args BEG and END
+
+- 1.4 | 2014-01-14
+  - move to ELPA (from <http://www.gnuvola.org/software/j/aa2u/>)
+  - change copyright to FSF
+  - require 'cl-lib instead of 'cl
+  - use ‘cl-flet’ and ‘cl-labels’
+  - comment munging
+    - add ‘lexical-binding: t’
+    - remove huge list at EOF
+    - add Author and News headers
+
+- 1.3 | 2013-09-21
+  - bug fixed: ‘?+’ neighbor valuation polarity flipped
+  - new support for BOX DRAWINGS LIGHT {UP,DOWN,LEFT,RIGHT} (singleton)
+
+- 1.2 | 2012-11-05
+  - refer to Unicode characters by name, not number
+
+- 1.1 | 2012-04-17
+  - TAB agnostic
+  - ‘aa2u’ operates on active region if ‘use-region-p’
+  - example use case also demonstrates transformation
+
+- 1.0 | 2012-04-07
+  - initial release
+
+
+  Local Variables:
+  mode: outline
+  outline-regexp: "\\([ ][ ]\\)*- "
+  End:
+
+_____________________________________________________________________
+Copyright (C) 2014-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted provided the copyright notice and this notice are preserved.

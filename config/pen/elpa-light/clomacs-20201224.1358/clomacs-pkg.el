@@ -1,0 +1,2 @@
+;;; Generated package description from clomacs.el  -*- no-byte-compile: t -*-
+(define-package "clomacs" "20201224.1358" "Simplifies Emacs Lisp interaction with Clojure." '((emacs "24.3") (cider "0.22.1") (s "1.12.0") (simple-httpd "1.4.6")) :commit "ffcb122194507593815d67b26f5d2d8ffcc52bf8" :authors '(("Kostafey" . "kostafey@gmail.com")) :maintainer '("Kostafey" . "kostafey@gmail.com") :keywords '("clojure" "interaction") :url "https://github.com/clojure-emacs/clomacs")

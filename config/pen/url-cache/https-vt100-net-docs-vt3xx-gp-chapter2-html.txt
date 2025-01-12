@@ -1,0 +1,1610 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:23:38 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Fri, 27 Oct 2023 09:14:24 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:23:38 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 14006
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 2</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter1.html">Chapter 1</a><a href="contents.html">Contents</a><a href="chapter3.html">Chapter 3</a></nav>
+</header>
+<h1 id="S2"><span class="chapnum">2</span> Screen Control Command</h1>
+<p>Screen control commands let you set parameters and attributes for the complete
+screen, or perform actions affecting the complete screen. There are 10
+options to the screen control command.</p>
+<ul class="col2 bare">
+<li>Display addressing</li>
+<li>Scroll</li>
+<li>Hard copy control</li>
+<li>Output mapping</li>
+<li>Background intensity</li>
+<li>Time delay</li>
+<li>Screen erase</li>
+<li>Temporary write control</li>
+<li>Graphics cursor control</li>
+<li>Display graphics page</li>
+</ul>
+<h2 id="S2.1">Display Addressing</h2>
+<p>The VT300 uses an [X,Y] screen coordinate system, described in <a href="chapter1.html">Chapter 1</a>.
+This system has default values of [0,0] for the upper-left corner and [799,479]
+for the lower-right corner. You should use these default values for most ReGIS
+applications.</p>
+<p>You use the following format for a screen command using the display addressing option.</p>
+<blockquote>
+<p>S(A[X1,Y1][X2,Y2])</p>
+</blockquote>
+<p>where</p>
+<blockquote>
+<p><b>S</b> indicates a screen command.</p>
+<p><b>A</b> indicates the display addressing option.</p>
+<p><b>[X1,Y1]</b> is the coordinate for the upper-left corner.</p>
+<p><b>[X2,Y2]</b> is the coordinate for the lower-right corner.</p>
+</blockquote>
+<p>You must include values for the upper-left and lower-right positions, or ReGIS
+ignores the command. When you change the default values, the terminal must
+perform an additional scaling step for each coordinate. This extra step can slow
+down performance.</p>
+<p class="note">NOTE: Pixel vector (PV) values depend on the display-addressing coordinates
+and the PV multiplier. However, PV directions are independent of addressing
+orientation. For example, 0 is always to the right.</p>
+<h3 id="S2.1.1">Display Address Values</h3>
+<p>You can write ReGIS code for devices that have a different address range than
+the VT300. The display addressing option lets you run ReGIS code written for
+another device on the VT300, without converting all the coordinates. The terminal
+takes care of scaling the coordinate system.</p>
+<p class="note">NOTE: Applications should use the display addressing option to make ReGIS
+images portable between devices that use different address ranges. The address
+range you define should match the default address range of the device
+you are coding for. This operation ensures that the device interprets all ReGIS
+commands consistently.</p>
+<p>You can use exponential numbers as well as decimal numbers in your address
+definition. In any case, make sure the aspect ratio of the screen area you define
+is as close as possible to the default ratio of [0,0] by [799,479]. If not, the terminal
+clips the screen area to a display area that is close to the aspect ratio
+you specified.</p>
+<p>The VT300 maintains the correct aspect ratio when displaying a picture created
+for another device. Squares are always square, and angles are always correct.
+For example, suppose you want to display a picture created for a VT125 terminal.
+This picture uses the display addressing for a VT125. The VT300 maps the
+default screen addressing of the VT125 into the leftmost 768 pixel columns of
+the VT300.</p>
+<h3 id="S2.1.2">Address Range</h3>
+<p><a href="#F2-1">Figure 2-1</a> shows the effective address range when you use the default values
+of [0,0] and [799,479].</p>
+
+<figure id="F2-1">
+  <img src="ma-0658-83.png" alt=""/>
+  <figcaption>Figure 2-1 Effective Address Range</figcaption>
+</figure>
+
+<p>You can use negative addresses, but you cannot address them directly. There is
+no valid way to specify an absolute negative address. However, you can specify
+a relative value that produces a negative address. The negative address should
+not exceed the address range. If it does exceed the address range, then the
+terminal wraps the line.</p>
+<p>If you need to invert the current addressing range, you can use any values for
+the left, right, top, and bottom margins. If the right margin value is less than
+the left margin value, then the X-coordinate increases to the left instead of to
+the right (as it would in the default coordinate system). If the bottom margin
+value is less than the top margin value, then the Y-coordinate increases upward
+instead of downward.</p>
+<h2 id="S2.2">Scroll Argument</h2>
+<p>This argument lets you offset screen data within the display medium (the bitmap),
+without changing the coordinate system. Only the data is offset, not the
+coordinate system. The image moves relative to the screen origin.</p>
+<p>There are two forms of the scroll argument. One form uses coordinate values
+for movement, the other form uses pixel vector (PV) values. The position you
+specify becomes the new upper-left corner of the screen, whether you use coordinates
+or PV values.</p>
+<p>Any data scrolled out of the boundaries of the screen is lost. You cannot recover
+that data by reversing the scrolling.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Using Coordinate Values</th>
+<th>Using PV Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">S[X,Y]</td>
+<td>S&lt;PV value&gt;</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>[X,Y]</b> is a coordinate value defining movement. You can use relative coordinates
+such as [+X,+Y], [-X,-Y], [+X], [-X], [,+Y], or [,-Y]; absolute coordinates
+such as [X], [,Y], or [X,Y]; or absolute/relative coordinates such as
+[+X,Y], [-X,Y], [X,+Y], or [X,-Y].</p>
+<p><b>&lt;PV values&gt;</b> are one or more pixel vector (PV) values defining movement,
+at the currently selected PV multiplication value.</p></div>
+<h3 id="S2.2.1">PV Multiplication</h3>
+<p>When you use PV values, the scroll argument uses the currently selected PV
+multiplication factor. You can select a different factor by using a temporary
+write control option. The terminal only uses this temporary value until you use
+a new command key letter or another temporary write control option.</p>
+<p>You use the following format to select a temporary PV multiplication factor.</p>
+<div class="example"><p>S(W(M&lt;multiplication factor&gt;))&lt;PV value&gt;</p></div>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a temporary write control option.</p>
+<p><b>M</b> identifies a PV multiplication suboption.</p>
+<p><b>&lt;multiplication factor&gt;</b> is a numeric value.</p>
+<p><b>&lt;PV values&gt;</b> are one or more PV values that will use the multiplication
+factor for movement.</p></div>
+<h2 id="S2.3">Hard Copy Control – H</h2>
+<p>This option lets you print a hard copy of the screen image. You can select what
+part of the screen to print and what starting offset to use for the printer.</p>
+<p>There are three ways to select what part of a screen to print: with no position,
+one position, or two positions.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">No Position</th>
+<th>One Position</th>
+<th>Two Positions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">S(H)</td>
+<td>S(H[X,Y])</td>
+<td>S(H[X1,Y1][X2,Y2])</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>H</b> identifies a hard copy control option. If you do not specify a coordinate
+position with this option, you select the complete screen for printing.</p>
+<p><b>[X,Y]</b> is one corner of the area to print. The terminal uses that position
+and the current cursor position to define the opposite corners of a rectangular
+area for printing.</p>
+<p><b>[X1,Y1][X2,Y2]</b> are two opposing corners of the area to print.</p></div>
+<p><a href="#F2-2">Figure 2-2</a> shows an example of the two-position option, and <a href="#F2-3">Figure 2-3</a> shows
+an example of the one-position option.</p>
+
+<figure id="F2-2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 770" version="1.1" id="f2-2-img">
+<style>
+#f2-2-img {
+
+&amp; text { font-family: Helvetica, sans-serif; font-size: 20pt }
+.sm { font-size: 16pt }
+.bk { fill: #f0f0f0 }
+.bko { fill: none; stroke: #f00 }
+.bk, .bko { display: none }
+.drawpart { font-size: 10pt }}
+</style>
+<rect class="bk" x="0" y="0" width="1300" height="770"/>
+<rect class="bko" x="10" y="10" width="1280" height="750"/>
+<g transform="translate(450,60)">
+<rect x="-10" y="-10" width="820" height="500" fill="none" stroke="#000" stroke-width="4" rx="15" ry="15"/>
+<rect x="0" y="0" width="800" height="480" fill="none"/>
+<text x="0" y="-20" text-anchor="middle"><tspan>0</tspan></text>
+<text x="100" y="-20" text-anchor="middle"><tspan>100</tspan></text>
+<text x="200" y="-20" text-anchor="middle"><tspan>200</tspan></text>
+<text x="300" y="-20" text-anchor="middle"><tspan>300</tspan></text>
+<text x="400" y="-20" text-anchor="middle"><tspan>400</tspan></text>
+<text x="500" y="-20" text-anchor="middle"><tspan>500</tspan></text>
+<text x="600" y="-20" text-anchor="middle"><tspan>600</tspan></text>
+<text x="700" y="-20" text-anchor="middle"><tspan>700</tspan></text>
+<text x="799" y="-20" text-anchor="middle"><tspan>799</tspan></text>
+<text x="-20" y="0" text-anchor="end"><tspan dy="+10">0</tspan></text>
+<text x="-20" y="100" text-anchor="end"><tspan dy="+10">100</tspan></text>
+<text x="-20" y="200" text-anchor="end"><tspan dy="+10">200</tspan></text>
+<text x="-20" y="300" text-anchor="end"><tspan dy="+10">300</tspan></text>
+<text x="-20" y="400" text-anchor="end"><tspan dy="+10">400</tspan></text>
+<text x="-20" y="479" text-anchor="end"><tspan dy="+10">479</tspan></text>
+<rect x="150" y="150" width="250" height="50" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="150" cy="150" r="5" fill="#000"/>
+<circle cx="400" cy="200" r="5" fill="#000"/>
+<path d="m 200,300 m 12,0 l -12,-20 l -12,20 l 12,20 z m -3,0 h-18 m 9,16 v-32" fill="none" stroke="#000" stroke-width="2"/>
+<text x="150" y="150" text-anchor="end" class="sm"><tspan dx="-8" dy="-8">[150,150]</tspan></text>
+<text x="400" y="200" text-anchor="start" class="sm"><tspan dx="8" dy="18">[400,200]</tspan></text>
+<text x="200" y="345" text-anchor="end" class="sm"><tspan>(GRAPHICS</tspan><tspan x="200" dy="24">CURSOR)</tspan></text>
+<text x="275" y="182" text-anchor="middle" class="sm"><tspan>(HARD COPY AREA)</tspan></text>
+
+<text x="20" y="590"><tspan>NOTE:</tspan><tspan x="20" dy="28">DOTS AND LINES WOULD NOT APPEAR IN ACTUAL DISPLAY.</tspan></text>
+</g>
+<g transform="translate(20,210)">
+<rect x="0" y="0" width="280" height="130" fill="none" stroke="#000" stroke-width="4"/>
+<line x1="0" y1="50" x2="280" y2="50" fill="none" stroke="#000" stroke-width="2"/>
+<text x="140" y="35" class="sm" text-anchor="middle"><tspan>COMMAND</tspan></text>
+<text x="30" y="95" class="sm" text-anchor="start"><tspan>S(H[150,150][400,200])</tspan></text>
+</g>
+<text class="drawpart" x="1250" y="750" text-anchor="end"><tspan>MA-0659-83</tspan></text>
+</svg>
+  <figcaption>Figure 2-2 Hard Copy Control Example (Two Positions)</figcaption>
+</figure>
+
+<figure id="F2-3">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 770" version="1.1" id="f2-3-img">
+  <style>
+#f2-3-img {
+
+    &amp; text { font-family: Helvetica, sans-serif; font-size: 20pt }
+    .sm { font-size: 16pt }
+    .bk { fill: #f0f0f0 }
+    .bko { fill: none; stroke: #f00 }
+    .bk, .bko { display: none }
+    .drawpart { font-size: 10pt }
+  }
+</style>
+  <defs>
+    <marker style="overflow:visible" id="long-tri-in" refX="0.0" refY="0.0" orient="auto">
+      <path transform="scale(-0.4)" style="fill-rule:evenodd;fill:context-stroke;stroke:none" d="M 2,0 l -15,5 l 0,-10 z "/>
+    </marker>
+    <marker style="overflow:visible" id="long-tri-out" refX="0.0" refY="0.0" orient="auto">
+      <path transform="scale(0.4)" style="fill-rule:evenodd;fill:context-stroke;stroke:none" d="M 2,0 l -15,5 l 0,-10 z "/>
+    </marker>
+  </defs>
+<rect class="bk" x="0" y="0" width="1300" height="770"/>
+<rect class="bko" x="10" y="10" width="1280" height="750"/>
+<g transform="translate(450,60)">
+<rect x="-10" y="-10" width="820" height="500" fill="none" stroke="#000" stroke-width="4" rx="15" ry="15"/>
+<rect x="0" y="0" width="800" height="480" fill="none"/>
+<text x="0" y="-20" text-anchor="middle"><tspan>0</tspan></text>
+<text x="100" y="-20" text-anchor="middle"><tspan>100</tspan></text>
+<text x="200" y="-20" text-anchor="middle"><tspan>200</tspan></text>
+<text x="300" y="-20" text-anchor="middle"><tspan>300</tspan></text>
+<text x="400" y="-20" text-anchor="middle"><tspan>400</tspan></text>
+<text x="500" y="-20" text-anchor="middle"><tspan>500</tspan></text>
+<text x="600" y="-20" text-anchor="middle"><tspan>600</tspan></text>
+<text x="700" y="-20" text-anchor="middle"><tspan>700</tspan></text>
+<text x="799" y="-20" text-anchor="middle"><tspan>799</tspan></text>
+<text x="-20" y="0" text-anchor="end"><tspan dy="+10">0</tspan></text>
+<text x="-20" y="100" text-anchor="end"><tspan dy="+10">100</tspan></text>
+<text x="-20" y="200" text-anchor="end"><tspan dy="+10">200</tspan></text>
+<text x="-20" y="300" text-anchor="end"><tspan dy="+10">300</tspan></text>
+<text x="-20" y="400" text-anchor="end"><tspan dy="+10">400</tspan></text>
+<text x="-20" y="479" text-anchor="end"><tspan dy="+10">479</tspan></text>
+<rect x="200" y="200" width="200" height="100" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="400" cy="200" r="5" fill="#000"/>
+<path d="m 200,300 m 12,0 l -12,-20 l -12,20 l 12,20 z m -3,0 h-18 m 9,16 v-32" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="120" y1="365" x2="190" y2="310" stroke="#000" stroke-width="2" marker-end="url(#long-tri-out)"/>
+<text x="400" y="200" text-anchor="start" class="sm"><tspan dx="15" dy="8">[400,200]</tspan></text>
+<text x="180" y="390" text-anchor="end" class="sm"><tspan>(GRAPHICS</tspan><tspan x="180" dy="24">CURSOR)</tspan></text>
+<text x="240" y="240" text-anchor="start" class="sm"><tspan>(HARD COPY</tspan><tspan x="240" dy="24"> AREA)</tspan></text>
+
+<text x="20" y="590"><tspan>NOTE:</tspan><tspan x="20" dy="28">DOTS AND LINES WOULD NOT APPEAR IN ACTUAL DISPLAY.</tspan></text>
+</g>
+<g transform="translate(20,210)">
+<rect x="0" y="0" width="200" height="130" fill="none" stroke="#000" stroke-width="4"/>
+<line x1="0" y1="50" x2="200" y2="50" fill="none" stroke="#000" stroke-width="2"/>
+<text x="100" y="35" class="sm" text-anchor="middle"><tspan>COMMAND</tspan></text>
+<text x="30" y="95" class="sm" text-anchor="start"><tspan>S(H[400,200])</tspan></text>
+</g>
+<text class="drawpart" x="1250" y="750" text-anchor="end"><tspan>MA-0660-83</tspan></text>
+</svg>
+  <figcaption>Figure 2-3 Hard Copy Control Example (One Position)</figcaption>
+</figure>
+
+<p>You can use absolute or relative values for coordinates. If you use relative values,
+then the positions are relative to the cursor position, not to any other
+position specified.</p>
+<p>You can send the selected area of the screen to the printer or to the host. This
+action is under the control of printing control functions. See <a href="chapter16.html">Chapter 16</a> for the
+graphics printing functions. You can print a compressed or expanded format by
+using the <b class="feature">Graphics Print</b> feature in the Graphics Set-Up screen.</p>
+<h3 id="S2.3.1">Printing Offset</h3>
+<p>You can specify a printing offset with the P suboption to the H option. The P
+suboption defines the starting offset for a graphic image. This is a relative offset
+between the current position of the printhead and the position where the
+upper-left corner of the graphic image will print.</p>
+<p>You can only use the P suboption to change the default value. The new value remains
+in effect until you use another P suboption. You use the following format
+for the printing offset suboption.</p>
+<div class="example"><p>S(H(P[X,Y]))</p></div>
+<p>where</p>
+<div class="example"><p><b>H</b> identifies a hard copy control option.</p>
+<p><b>P</b> identifies a printing offset suboption.</p>
+<p><b>[X,Y]</b> is a relative position offset. The default value is [50,0].</p></div>
+<p>You can also define the print area and specify the printing offset in the same
+command, as follows.</p>
+<div class="example"><p>S(H(P[X,Y])[X1,Y1][X2,Y2])</p></div>
+<p>where</p>
+<div class="example"><p><b>[X1,Y1][X2,Y2]</b> are two opposing corners of the area to print.</p></div>
+<p>The P suboption prints the complete screen at the defined offset.</p>
+<p>The printing offset is independent of screen addressing. The offset occurs at
+the printer. The actual distance of the offset depends on the size of the pixels
+used by the printer.</p>
+<h2 id="S2.4">Output Mapping Control – M</h2>
+<p>This option lets you change the current output map for the terminal. Output
+mapping lets you easily change the color or shading of an image. The format of
+this command depends on whether you are using a monochrome or color display.</p>
+<p>The VT330 and VT340 use different forms of output mapping. The VT340 uses
+a color monitor and a 4-plane bitmap. The VT330 uses a monochrome monitor
+and a 2-plane bitmap. The next two sections describe the differences between
+the VT330 and VT340. Then the following sections describe the command formats
+for monochrome and color displays.</p>
+<h3 id="S2.4.1">VT330 Monochrome Map</h3>
+<p>The VT330 has four output map locations in RAM. Each location stores a monochrome
+shade value. The output mapping option lets you change those values.
+Each location has a default value.</p>
+<p><a href="#T2-1">Table 2-1</a> shows the default monochrome map for the VT330. The table lists
+the default HLS (hue, lightness, and saturation) and RGB (red, green, and blue)
+values for each shade. The HLS and RGB color coordinate systems are described
+later in this chapter.</p>
+<table id="T2-1" class="majortable">
+<caption>Table 2-1 VT330 Default Monochrome Map</caption>
+<thead>
+<tr>
+<th rowspan="2">Map Location</th>
+<th rowspan="2">Default Shade</th>
+<th id="TS0211" colspan="3">HLS Values</th>
+<th id="TS0212" colspan="3">RGB Values</th>
+</tr>
+<tr>
+<th>H</th>
+<th>L</th>
+<th>S</th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Black</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Dark gray</td>
+<td>120</td>
+<td>50</td>
+<td>100</td>
+<td>100</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Light gray</td>
+<td>240</td>
+<td>50</td>
+<td>100</td>
+<td>0</td>
+<td>100</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>White</td>
+<td>180</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The 2-plane bitmap for the VT330 provides a 2-bit code for each pixel. The
+code selects one of the four output map locations. This means each pixel has
+four possible intensity values. You can change the intensity value of the pixel
+by changing its 2-bit code.</p>
+<p>You can draw an image, then change its appearance by changing the associated
+output map location. You do not have to rewrite each pixel in order to address
+a different output map position. That is, you do not have to redraw an image
+to change its color.</p>
+<p><a href="#F2-4">Figure 2-4</a> provides an example of the output mapping process. The top half of
+the figure shows default values. In the bottom half, the value of 0 has been
+changed to light gray, and the value of 2 to dark gray.</p>
+
+<figure id="F2-4">
+  <img src="ma-0661-83r.png" alt=""/>
+  <figcaption>Figure 2-4 Output Mapping Example (Monochrome)</figcaption>
+</figure>
+
+<h3 id="S2.4.2">VT340 Monochrome and Color Maps</h3>
+<p>The VT340 has 16 output map locations in RAM. Each location stores a monochrome
+shade value and a color value. The output mapping option lets you
+change the values stored in these locations. Each location has default monochrome
+and color values.</p>
+<p><strong>When an application selects the monochrome map:</strong> the terminal sets the 16 entries
+of the color map to the default monochrome gray level. Therefore, the
+original colors are lost when changing from the color map to the monochrome map.</p>
+<p>If you change the color value (green, red, blue) using the Color Set-Up
+screen or a ReGIS command, the VT340 sets the gray scale by using the formula
+<strong>(2G + R)/3</strong>.</p>
+<p><strong>When an application selects the color map:</strong> the terminal sets the 16 entries of
+the color map to the default (color) color map.</p>
+<p><a href="#T2-2">Table 2-2</a> shows the default monochrome shade map for the VT340. <a href="#T2-3">Table 2-3</a>
+shows the default color map for the VT340. Each table lists the default HLS
+(hue, lightness, and saturation) and RGB (red, green, and blue) values for each
+shade/color. The HLS and RGB color coordinate systems are described later in
+this chapter.</p>
+<p>The 4-plane bitmap for the VT340 provides a 4-bit code for each pixel. This
+means each pixel has 16 possible values. Each value corresponds to a specific
+output map location. You can change the intensity value or color of a pixel by
+changing its 4-bit code. The next two sections describe how to change monochrome
+and color values.</p>
+<table id="T2-2" class="majortable">
+<caption>Table 2-2 VT340 Default Monochrome Map</caption>
+<thead>
+<tr>
+<th rowspan="2">Map Location</th>
+<th rowspan="2">Default Shade</th>
+<th id="TS0221" colspan="3">HLS Values</th>
+<th id="TS0222" colspan="3">RGB Values</th>
+</tr>
+<tr>
+<th>H</th>
+<th>L</th>
+<th>S</th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Black</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Gray-2</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>13</td>
+<td>13</td>
+<td>13</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Gray-4</td>
+<td>0</td>
+<td>26</td>
+<td>0</td>
+<td>26</td>
+<td>26</td>
+<td>26</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gray-6</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>40</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gray-1</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Gray-3</td>
+<td>0</td>
+<td>20</td>
+<td>0</td>
+<td>20</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Gray-5</td>
+<td>0</td>
+<td>33</td>
+<td>0</td>
+<td>33</td>
+<td>33</td>
+<td>33</td>
+</tr>
+<tr>
+<td>7</td>
+<td>White 7</td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>46</td>
+<td>46</td>
+<td>46</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Black 0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Gray-2</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>13</td>
+<td>13</td>
+<td>13</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Gray-4</td>
+<td>0</td>
+<td>26</td>
+<td>0</td>
+<td>26</td>
+<td>26</td>
+<td>26</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Gray-6</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>40</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Gray-1</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Gray-3</td>
+<td>0</td>
+<td>20</td>
+<td>0</td>
+<td>20</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Gray-5</td>
+<td>0</td>
+<td>33</td>
+<td>0</td>
+<td>33</td>
+<td>33</td>
+<td>33</td>
+</tr>
+<tr>
+<td>15</td>
+<td>White 7</td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>46</td>
+<td>46</td>
+<td>46</td>
+</tr>
+</tbody>
+</table>
+<table id="T2-3" class="majortable">
+<caption>Table 2-3 VT340 Default Color Map</caption>
+<thead>
+<tr>
+<th rowspan="2">Map Location</th>
+<th rowspan="2">Default Color</th>
+<th id="TS0231" colspan="3">HLS Values</th>
+<th id="TS0232" colspan="3">RGB Values</th>
+</tr>
+<tr>
+<th>H</th>
+<th>L</th>
+<th>S</th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Black</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Blue</td>
+<td>0</td>
+<td>50</td>
+<td>60</td>
+<td>20</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Red</td>
+<td>120</td>
+<td>46</td>
+<td>72</td>
+<td>80</td>
+<td>13</td>
+<td>13</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Green</td>
+<td>240</td>
+<td>50</td>
+<td>60</td>
+<td>20</td>
+<td>80</td>
+<td>20</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Magenta</td>
+<td>60</td>
+<td>50</td>
+<td>60</td>
+<td>80</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cyan</td>
+<td>300</td>
+<td>50</td>
+<td>60</td>
+<td>20</td>
+<td>80</td>
+<td>80</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Yellow</td>
+<td>180</td>
+<td>50</td>
+<td>60</td>
+<td>80</td>
+<td>80</td>
+<td>20</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Gray 50%</td>
+<td>0</td>
+<td>53</td>
+<td>0</td>
+<td>53</td>
+<td>53</td>
+<td>53</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Gray 25%</td>
+<td>0</td>
+<td>26</td>
+<td>0</td>
+<td>26</td>
+<td>26</td>
+<td>26</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Blue*</td>
+<td>0</td>
+<td>46</td>
+<td>29</td>
+<td>33</td>
+<td>33</td>
+<td>60</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Red*</td>
+<td>120</td>
+<td>43</td>
+<td>39</td>
+<td>60</td>
+<td>26</td>
+<td>26</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Green*</td>
+<td>240</td>
+<td>46</td>
+<td>29</td>
+<td>33</td>
+<td>60</td>
+<td>33</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Magenta*</td>
+<td>60</td>
+<td>46</td>
+<td>29</td>
+<td>60</td>
+<td>33</td>
+<td>60</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Cyan*</td>
+<td>300</td>
+<td>46</td>
+<td>29</td>
+<td>33</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Yellow*</td>
+<td>180</td>
+<td>46</td>
+<td>29</td>
+<td>60</td>
+<td>60</td>
+<td>33</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Gray 75%</td>
+<td>0</td>
+<td>80</td>
+<td>0</td>
+<td>80</td>
+<td>80</td>
+<td>80</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="8">* These colors are less saturated than colors 1 through 6.</td>
+</tr>
+</tfoot>
+</table>
+<h3 id="S2.4.3">Changing Monochrome Values</h3>
+<p>Use the following steps to change a monochrome value in the VT330 or VT340.</p>
+<ol>
+<li><p>Select the output map location.</p>
+<p>For the VT330: 0 through 3</p>
+<p>For the VT340: 0 through 15</p></li>
+<li><p>Select the new lightness value. You can use any L value in the following
+ranges to select the shade listed.</p>
+<table>
+<thead>
+<tr>
+<th colspan="2">VT330 Shades</th>
+<th colspan="2">VT340 Shades</th>
+</tr>
+<tr>
+<th>Lightness Range</th>
+<th>Shade</th>
+<th>Lightness Range</th>
+<th>Shade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0 to L24</td>
+<td>black</td>
+<td>L0 to L3</td>
+<td>black</td>
+</tr>
+<tr>
+<td>L25 to L49</td>
+<td>dark gray</td>
+<td>L4 to L9</td>
+<td rowspan="4" class="arrow-col"></td>
+</tr>
+<tr>
+<td>L50 to L74</td>
+<td>light gray</td>
+<td>L10 to L16</td>
+</tr>
+<tr>
+<td>L75 to L100</td>
+<td>white</td>
+<td>L17 to L23</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L24 to L29</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L30 to L36</td>
+<td>dark gray</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L37 to L43</td>
+<td rowspan="4" class="arrow-col"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L44 to L49</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L50 to L56</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L57 to L63</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L64 to L69</td>
+<td>light gray</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L70 to L76</td>
+<td rowspan="4" class="arrow-col"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L77 to L83</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L84 to L89</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L90 to L96</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>L96 to L100</td>
+<td>white</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+<p>The following example changes the monochrome values in three output map
+locations.</p>
+<div class="example"><p>S(M1(L25)2(L99)3(L50))</p></div>
+<p>where</p>
+<div class="example"><p><b>M</b> identifies an output mapping suboption.</p>
+<p><b>1</b> selects output mapping location 1.</p>
+<p><b>(L25)</b> specifies a lightness value of dim gray.</p>
+<p><b>2</b> selects output mapping location 2.</p>
+<p><b>(L99)</b> specifies a lightness value of white.</p>
+<p><b>3</b> selects output mapping location 3.</p>
+<p><b>(L50)</b> specifies a lightness value of light gray.</p></div>
+<p class="note">PROGRAMMING TIP: The VT340 uses the lightness value for both the monochrome
+and color values of output map locations. To change the monochrome
+value without changing the color value, use both the monochrome and color options.</p>
+<p class="note">You must specify the monochrome value first, followed by the color value. You
+can specify both values in a single command.</p>
+<h3 id="S2.4.4">Changing Color Values (VT340 Only)</h3>
+<p>You can use two different color value systems to change the color values for
+output map locations.</p>
+<ul>
+<li>RGB (red, green, and blue)</li>
+<li>HLS (hue, lightness, and saturation)</li>
+</ul>
+<p>Use the following steps to change the color value of an output map location in
+the VT340. Tables <a href="#T2-2">2-2</a> and <a href="#T2-3">2-3</a> list the default HLS and RGB values.</p>
+<ol>
+<li><p>Specify the output map location: 0 through 15.</p></li>
+<li><p>Define the new color value with one of the following.</p>
+<ol>
+<li>a single letter of the RGB system, or</li>
+<li>the hue, lightness, and saturation values of the HLS system</li>
+</ol>
+<p>You cannot mix HLS and RGB values in a single command. The
+following sections explain the values used with each system.</p></li>
+</ol>
+<h4 id="S2.4.4.1">RGB System</h4>
+<p>The RGB (red, green, and blue) system uses single letters to
+specify eight different colors and/or shades.</p>
+<div class="example"><table class="padded">
+<tbody>
+<tr>
+<td class="first">D</td>
+<td>dark (black)</td>
+</tr>
+<tr>
+<td class="first">R</td>
+<td>red</td>
+</tr>
+<tr>
+<td class="first">G</td>
+<td>green</td>
+</tr>
+<tr>
+<td class="first">B</td>
+<td>blue</td>
+</tr>
+<tr>
+<td class="first">C</td>
+<td>cyan (from blue and green)</td>
+</tr>
+<tr>
+<td class="first">Y</td>
+<td>yellow (from red and green)</td>
+</tr>
+<tr>
+<td class="first">M</td>
+<td>magenta (from red and blue)</td>
+</tr>
+<tr>
+<td class="first">W</td>
+<td>white</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cyan, yellow, and magenta are secondary colors made from an equal mixture of
+two primary colors.</p>
+<p>The following example shows how to specify RGB colors.</p>
+<div class="example"><p>S(M0(AR)2(AG))</p></div>
+<p>where</p>
+<div class="example"><p><b>M</b> specifies an output mapping location.</p>
+<p><b>0</b> selects output map location 0.</p>
+<p><b>A</b> indicates the next value only affects the color value of the output map location.</p>
+<p><b>R</b> selects the RGB value for red.</p>
+<p><b>2</b> selects output map location 2.</p>
+<p><b>G</b> selects the RGB value for green.</p></div>
+<div class="note"><p>PROGRAMMING TIP: Normally, the A suboption to the M option of the
+screen control command S(M(A...)) specifies that only the color value of the
+output map is to change. The monochrome value remains unchanged.</p>
+<p><em>On the VT330</em>, there is no color mode. If the VT330 receives an output mapping
+command with the A suboption, the VT330 ignores the command. In this
+respect, the VT330 works like the VT240.</p>
+<p><em>On the VT340</em>, there is one set of output map values for both color and monochrome
+modes. Therefore, the A suboption has no effect on the VT340. If you
+change an output map value and specify the A option, that output map value
+is changed for both color and monochrome modes.</p></div>
+<h4 id="S2.4.4.2">HLS System</h4>
+<p>The HLS system provides a much larger color selection than
+the RGB system. The HLS system uses different values of hue (H), lightness
+(L), and saturation (S), to provide 4096 possible colors and shades.</p>
+<div class="example"><table class="padded">
+<tbody>
+<tr>
+<td class="first">H for hue angle</td>
+<td>0 to 360 degrees</td>
+</tr>
+<tr>
+<td class="first">L for lightness</td>
+<td>0 to 100 percent</td>
+</tr>
+<tr>
+<td class="first">S for color saturation</td>
+<td>0 to 100 percent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The hue angles for the three primary colors are as follows.</p>
+<div class="example"><table class="padded">
+<tbody>
+<tr>
+<td class="first">Blue:</td>
+<td>0 degrees</td>
+</tr>
+<tr>
+<td class="first">Red:</td>
+<td>120 degrees</td>
+</tr>
+<tr>
+<td class="first">Green:</td>
+<td>240 degrees</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="appendixa.html#TA-1">Table A-1</a> in <a href="appendixa.html">Appendix A</a> lists all the HLS colors and shades that correspond to
+the VT241 terminal. You can use these different combinations of hue, lightness,
+and saturation to select specific colors for your VT340 graphics.</p>
+<p>The following example shows how to specify HLS colors.</p>
+<div class="example"><p>S(M1(AH60L80S60)3(AH150L50S60))</p></div>
+<p>where</p>
+<div class="example"><p><b>M</b> identifes an output mapping location.</p>
+<p><b>1</b> selects output map location 1.</p>
+<p><b>A</b> indicates the next value only affects the color value of the output map location.</p>
+<p><b>H60L80S60</b> selects the HLS value for plum.</p>
+<p><b>3</b> selects output map location 3.</p>
+<p><b>H150L50S60</b> selects the HLS value for gold.</p></div>
+<h2 id="S2.5">Background Intensity Control – I</h2>
+<p>This option lets you select the shade or color of the display background. You
+can use one of two methods.</p>
+<ul>
+<li><p>Provide the output map location number.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first">VT330</td>
+<td>0 through 3</td>
+</tr>
+<tr>
+<td class="first">VT340</td>
+<td>0 through 15</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Provide an RGB or HLS value (VT340 only).</p></li>
+</ul>
+<p>The first method provides the greatest degree control within a plane. You
+simply select the number corresponding to the color you want for a
+background.</p>
+<p>You should use the second method when you need to transfer an image to
+other ReGIS devices. The terminal selects the background color by using the
+output map location with the closest value to the HLS or RGB value in your
+command.</p>
+<p>However, the VT340 has a limited ability to compare values. Make sure the
+RGB or HLS value you select already exists in an output map location. If you
+use a value much different from the current output map values, the result is
+unpredictable. The value you use does not change the values in the output map.</p>
+<p>The following examples show how to specify the background intensity using
+screen options.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Output Map</th>
+<th>RGB Specifier</th>
+<th>HLS Specifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">S(I0)</td>
+<td>S(I(R))</td>
+<td>S(I(H180L50S100))</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>I</b> identifies a background intensity option.</p>
+<p><b>0</b> selects output map location 0 for background color.</p>
+<p><b>(R)</b> is an RGB value selecting the output map location that has the color closest to red.</p>
+<p><b>(H180L50S100)</b> is an HLS value selecting the output map location that has the color closest
+to yellow.</p></div>
+<h2 id="S2.6">Time Delay – T</h2>
+<p>This option lets you insert a time delay before a ReGIS instruction. You specify
+the delay time as a number of ticks, where 60 ticks equal 1 second. The maximum
+time delay you can use is 32,767 ticks (about 9.1 minutes).</p>
+<p>The following example shows how to specify a time delay.</p>
+<div class="example"><p>S(T60)</p></div>
+<p>where</p>
+<div class="example"><p><b>T</b> identifies a time delay option.</p>
+<p><b>60</b> selects the number of ticks to use. (60 ticks = 1 second)</p></div>
+<h2 id="S2.7">Screen Erase – E</h2>
+<p>This option lets you erase the screen by setting the complete screen to the
+display background color. The screen erase option does not change the position
+of the text or graphics cursor, or the values stored in the output map.</p>
+<p>You use the following format for the screen erase option.</p>
+<div class="example"><p>S(E)</p></div>
+<p>where</p>
+<div class="example"><p><b>E</b> identifies a screen erase option.</p></div>
+<p>The screen erase command affects ReGIS as follows.</p>
+<ul>
+<li><p>Does not change the current background color or shade.</p></li>
+<li><p>Does not change the cursor position.</p></li>
+<li><p>Turns off any shading specified by the write control command.</p></li>
+<li><p>Stops any curve interpolation.</p></li>
+<li><p>Clears all position stacks. (See <a href="chapter4.html">Chapter 4</a>.)</p></li>
+</ul>
+<h2 id="S2.8">Temporary Write Control – W</h2>
+<p>This option lets you set any writing control (<a href="chapter3.html">Chapter 3</a>). However, the PV multiplier
+suboption is the only useful write control for screen control commands.
+You use the PV multiplier suboption with the screen scroll argument, when
+using a PV value to define an amount of scrolling.</p>
+<p>The following example shows a temporary write control option used with the
+PV multiplier suboption.</p>
+<div class="example"><p>S(W(M15))</p></div>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a screen write option.</p>
+<p><b>M</b> identifies a PV multiplier suboption.</p>
+<p><b>15</b> selects a multiplication factor of 15.</p></div>
+<h2 id="S2.9">Graphics Cursor Control – C</h2>
+<p>This option lets you select whether or not to display the graphics output cursor.
+You can also select the style of graphics output cursor (with the H suboption)
+and graphics input cursor (with the I suboption).</p>
+<p>The graphics cursor is a composite character in two shades or colors. The
+VT330 uses output map location 0 for the foreground, and location 1 for the
+background. The VT340 uses location 0 for the foreground, and location 15 for
+the background.</p>
+<p>The "<a href="chapter1.html#S1.7">Graphics Cursors</a>" section in <a href="chapter1.html">Chapter 1</a> describes the styles of graphics
+cursors available. You use the following command to turn the cursor on or off.</p>
+<div class="example"><p>S(C&lt;0 or 1&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a cursor control option.</p>
+<p><b>0</b> turns the output cursor off.</p>
+<p><b>1</b> turns the output cursor on.</p></div>
+<h3 id="S2.9.1">Graphics Output Cursor – H</h3>
+<p>The H suboption lets you select the style of graphics output cursor. You select
+cursor style by number. The following table lists the output cursor styles and
+their numbers.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Number</th>
+<th>Cursor Style</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">Omitted</td>
+<td>Diamond</td>
+</tr>
+<tr>
+<td class="first">0 or 1</td>
+<td>Diamond (default)</td>
+</tr>
+<tr>
+<td class="first">2</td>
+<td>Crosshair</td>
+</tr>
+</tbody>
+</table></div>
+<p>The following example shows how to use the graphics cursor option with the H
+suboption.</p>
+<div class="example"><p>S(C(H1))</p></div>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a cursor control option.</p>
+<p><b>H</b> identifies the output cursor suboption.</p>
+<p><b>1</b> selects the diamond cursor for the output cursor.</p></div>
+<h3 id="S2.9.2">Graphics Input Cursor – I</h3>
+<p>The I suboption lets you select the style of graphics input cursor. You can select
+a standard cursor style or define your own style.</p>
+<h4 id="S2.9.3.1">Standard Styles</h4>
+<p>You can select a standard cursor style by number. This is
+the same method used with the H suboption. The following table lists the input
+cursor styles and their numbers.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">Number</th>
+<th>Cursor Style</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">Omitted</td>
+<td>Crosshair</td>
+</tr>
+<tr>
+<td class="first">0</td>
+<td>Crosshair (default)</td>
+</tr>
+<tr>
+<td class="first">1</td>
+<td>Diamond</td>
+</tr>
+<tr>
+<td class="first">2</td>
+<td>Crosshair</td>
+</tr>
+<tr>
+<td class="first">3</td>
+<td>Rubber band line</td>
+</tr>
+<tr>
+<td class="first">4</td>
+<td>Rubber band rectangle</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="S2.9.3.2">User-Defined Style</h4>
+<p>You can define your own input cursor by using a character
+mask. You specify two characters to use for the cursor. One character is
+displayed in the foreground color, the other in the background color. ReGIS
+combines these two characters into a composite character, or character mask.</p>
+<p>The cursor is a composite character in two colors or shades. The VT330 uses
+monochrome map entry 2 for the foreground and entry 1 for the background.
+The VT340 uses color map entry 14 for the foreground and entry 1 for the background.</p>
+<p>The cursor size is limited to 16 × 24 pixels. If you define a larger cursor, the
+terminal clips the cursor to fit into the 16 × 24 cell.</p>
+<p>You can use characters from the terminal's built-in character sets to build a
+graphics cursor. You can also design your own cursor characters and load them
+into the terminal from the host system. The characters used to build the cursor
+must be in the currently loaded character set. See Chapters <a href="chapter7.html">7</a> and <a href="chapter8.html">8</a> for details.</p>
+<p>The following example shows how to define your own cursor.</p>
+<div class="example"><p>S(C(I(+5,+10]"XO"))</p></div>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a cursor control option.</p>
+<p><b>I</b> identifies the input cursor suboption.</p>
+<p><b>[+5,+10]</b> selects the coordinate for the origin of the cursor.</p>
+<p><b>" "</b> enclose the character mask.</p>
+<table>
+<tbody>
+<tr>
+<td><b>X</b>   </td>
+<td>is displayed in the foreground color. This character can be any
+displayable character, from a built-in or loaded character set (<a href="chapter8.html">Chapter 8</a>).</td>
+</tr>
+<tr>
+<td><b>O</b>   </td>
+<td>is displayed in the background color. This character can be any displayable
+character from a built-in or loaded character set (<a href="chapter8.html">Chapter 8</a>).</td>
+</tr>
+</tbody>
+</table></div>
+<p>Resulting cursor: <img src="xo-cursor.png" alt="X and O overlaid"/></p>
+<h2 id="S2.10">Display Graphics Page – P</h2>
+<p>This option selects which of two possible graphics pages the terminal displays.
+This option is only useful when you run a single session on the terminal, because
+only a single session has two graphics pages available. When you use
+dual sessions, each session has only one graphics page available.</p>
+<div class="example"><p>S(P&lt;0 or 1&gt;)</p></div>
+<p>where</p>
+<div class="example"><p><b>P</b> identifies the display page option.</p>
+<p><b>0</b> displays the first graphics page (default).</p>
+<p><b>1</b> displays the second graphics page.</p></div>
+<h2 id="S2.11">Screen Control Command Summary</h2>
+<p><a href="#T2-4">Table 2-4</a> is a summary of the <b>S</b> command options, including any default
+values.</p>
+<table id="T2-4" class="majortable">
+<caption>Table 2-4 Screen Control Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(A[X1,Y1][X2,Y2])</td>
+<td>[0,0][799,479]</td>
+<td><p><strong>Display addressing</strong><br/>
+Lets you define screen addressing that uses a different size or orientation than the default VT300 screen.</p></td>
+</tr>
+<tr>
+<td>[X,Y]</td>
+<td>[0,0]</td>
+<td><p><strong>Scrolling with relative X and Y values</strong><br/>
+Uses an [X,Y] value to scroll screen data in the bitmap. Does not change the coordinate system.</p></td>
+</tr>
+<tr>
+<td>&lt;PV number&gt;</td>
+<td>None</td>
+<td><p><strong>Scrolling with PV offset</strong><br/>
+Uses a &lt;PV number&gt; to scroll screen data in the bitmap. Does not change the coordinate system.</p></td>
+</tr>
+<tr>
+<td>(H)</td>
+<td>None</td>
+<td><p><strong>Print complete screen</strong></p></td>
+</tr>
+<tr>
+<td>(H[X,Y][X,Y])</td>
+<td>[0,0][799,479]</td>
+<td><p><strong>Print defined area (two positions)</strong><br/>
+Uses two [X,Y] screen coordinates to define opposite corners of the area to print.</p></td>
+</tr>
+<tr>
+<td>(H[X,Y])</td>
+<td>[0,0]</td>
+<td><p><strong>Print defined area (one position)</strong><br/>
+Uses an [X,Y] screen coordinate and the current cursor position to define opposite corners of the area to print.</p></td>
+</tr>
+<tr>
+<td>(H(P[X,Y]))</td>
+<td>[50,0]</td>
+<td><p><strong>Print offset suboption</strong><br/>
+Defines where the upper-left corner of an image will print, using a relative offset from the current printhead location.</p>
+<p>The default at power-up is [50,0], until you define a new value. Any new value remains in effect until redefined.</p></td>
+</tr>
+<tr>
+<td>(M&lt;n&gt;(&lt;Lvalue&gt;))</td>
+<td><table>
+<thead>
+<tr>
+<th colspan="2">VT330</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0(L0)</td>
+<td>1(L25)</td>
+</tr>
+<tr>
+<td>2(L50)</td>
+<td>3(L75)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th colspan="2">VT340</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0(L0)</td>
+<td>1(L4)</td>
+</tr>
+<tr>
+<td>2(L10)</td>
+<td>3(L17)</td>
+</tr>
+<tr>
+<td>4(L24)</td>
+<td>5(L30)</td>
+</tr>
+<tr>
+<td>6(L37)</td>
+<td>7(L44)</td>
+</tr>
+<tr>
+<td>8(L50)</td>
+<td>9(L57)</td>
+</tr>
+<tr>
+<td>10(L64)</td>
+<td>11(L70)</td>
+</tr>
+<tr>
+<td>12(L77)</td>
+<td>13(L84)</td>
+</tr>
+<tr>
+<td>14(L90)</td>
+<td>15(L97)</td>
+</tr>
+</tbody>
+</table></td>
+<td><p><strong>Output mapping values (monochrome)</strong><br/>
+Defines the monochrome intensity value to store in the selected &lt;n&gt; output map location.
+You can change the value of one or more locations with a single command.</p></td>
+</tr>
+<tr>
+<td>(M&lt;n&gt;(&lt;RGB&gt;))</td>
+<td><table>
+<tbody>
+<tr>
+<td>0(AD)</td>
+<td>1(AB)</td>
+</tr>
+<tr>
+<td>2(AR)</td>
+<td>3(AG)</td>
+</tr>
+<tr>
+<td>4(AM)</td>
+<td>5(AC)</td>
+</tr>
+<tr>
+<td>6(AY)</td>
+<td>7(AD)</td>
+</tr>
+<tr>
+<td>8(AW)</td>
+<td>9(AB)</td>
+</tr>
+<tr>
+<td>10(AR)</td>
+<td>11(AG)</td>
+</tr>
+<tr>
+<td>12(AM)</td>
+<td>13(AC)</td>
+</tr>
+<tr>
+<td>14(AY)</td>
+<td>15(AD)</td>
+</tr>
+</tbody>
+</table></td>
+<td><p><strong>Output mapping values (RGB color)</strong><br/>
+Defines the RGB color to store in the selected &lt;n&gt; output map. You can change the value of one or more locations with
+a single command.</p></td>
+</tr>
+<tr>
+<td>(M&lt;n&gt;(HLS))</td>
+<td>0(AL0)<br/>1(AH0L50S60)<br/>2(AH120L46S72)<br/>3(AH240L50S60)<br/>4(AH60L50S60)<br/>5(AH300L50S60)<br/>
+6(AH180L50S60)<br/>7(AH0L53S0)<br/>8(AH0L26S0)<br/>9(AH0L46S29)<br/>10(AH120L43S29)<br/>11(AH240L46S29)<br/>12(AH60L46S29)<br/>13(AH300L46S29)<br/>14(AH180L46S29)<br/>15(AH0L80S0)</td>
+<td><p><strong>Output mapping values (HLS color)</strong><br/>
+Defines the HLS color to store in the selected &lt;n&gt; output map location. You can change the
+value of one or more locations with a single command. Default values are HLS values for default RGB values.</p></td>
+</tr>
+<tr>
+<td>(I&lt;n&gt;)</td>
+<td>0</td>
+<td><p><strong>Background intensity (monochrome)</strong><br/>
+Selects output map location &lt;n&gt; for the background.</p></td>
+</tr>
+<tr>
+<td>(I(RGB))</td>
+<td>D</td>
+<td><p><strong>Background intensity (RGB color)</strong><br/>
+Selects the output map location containing the closest color to the RGB value you specified.</p></td>
+</tr>
+<tr>
+<td>(I(HLS))</td>
+<td>L0</td>
+<td><p><strong>Background intensity (HLS color)</strong><br/>
+Selects the output map location containing the closest color to the HLS value you specified.</p></td>
+</tr>
+<tr>
+<td>(T&lt;0 to 32767&gt;)</td>
+<td>None</td>
+<td><p><strong>Time delay</strong><br/>
+Selects the number of ticks of the real time clock to count for a delay.</p></td>
+</tr>
+<tr>
+<td>(E)</td>
+<td>None</td>
+<td><p><strong>Screen erase (current background)</strong><br/>
+Erases the screen and sets the screen to the current background intensity.</p></td>
+</tr>
+<tr>
+<td>(I&lt;value&gt;,E)</td>
+<td>0</td>
+<td><p><strong>Screen erase (selected background)</strong><br/>
+Erases the screen and sets the screen to a selected background &lt;value&gt;.</p></td>
+</tr>
+<tr>
+<td>(W(M&lt;n&gt;&gt;))</td>
+<td>Current value set in write command</td>
+<td><p><strong>Pixel vector multiplier</strong><br/>
+Selects a multiplication factor of &lt;n&gt; for each PV value in a scroll command. &lt;n&gt; defines
+the number of coordinates affected by each PV value. This is temporary write command, in effect until
+the next command key letter.</p></td>
+</tr>
+<tr>
+<td>(C&lt;0 or 1&gt;)</td>
+<td>1</td>
+<td><p><strong>Graphics cursor on/off</strong><br/>
+Turns the graphics output cursor of (C0) or on (C1).</p></td>
+</tr>
+<tr>
+<td>(C1(H&lt;n&gt;))</td>
+<td>0 (diamond)</td>
+<td><p><strong>Graphics output cursor</strong><br/>
+H selects the output cursor style.</p>
+<p>0 or 1 = diamond.<br/>2 = crosshair.</p></td>
+</tr>
+<tr>
+<td>(C1(I&lt;n&gt;))</td>
+<td>0 (crosshair)</td>
+<td><p><strong>Graphics input cursor</strong><br/>
+I selects the input cursor style.</p>
+<p>0 or 2 = crosshair.<br/>1 = diamond.<br/>3 = rubber band line.<br/>4 = rubber band rectangle.</p></td>
+</tr>
+<tr>
+<td>(P&lt;0 or 1&gt;)</td>
+<td>0 (first page)</td>
+<td><p><strong>Display graphics page</strong><br/>
+Selects which graphics page the terminal displays. Useful for single sessions only.</p>
+<p>0 = first page.<br/>1 = second page.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter1.html">Chapter 1</a><a href="contents.html">Contents</a><a href="chapter3.html">Chapter 3</a></nav>
+</footer>
+<script src="/assets/arrows.js" defer="defer"/>
+</body>
+</html>

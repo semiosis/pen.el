@@ -168,6 +168,12 @@
      (goto-char p)
      res))
 
+(defmacro save-excursion-line (&rest body)
+  `(let* ((linenum (current-line))
+          (res (progn ,@body)))
+     (goto-line linenum)
+     res))
+
 (defun advise-to-save-region (proc &rest args)
   (if mark-active
       (save-excursion

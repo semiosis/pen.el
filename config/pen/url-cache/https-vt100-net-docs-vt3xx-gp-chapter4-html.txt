@@ -1,0 +1,521 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:24:35 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Wed, 25 Oct 2023 11:10:16 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:24:35 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 6956
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 4</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter3.html">Chapter 3</a><a href="contents.html">Contents</a><a href="chapter5.html">Chapter 5</a></nav>
+</header>
+<h1 id="S4"><span class="chapnum">4</span> Position Command</h1>
+<p>Position commands let you move the active screen position without writing.
+There are four basic command options.</p>
+<ul class="bare">
+<li>Set position arguments</li>
+<li>Position stack options</li>
+<li>Temporary write control options</li>
+<li>Select graphics page</li>
+</ul>
+<h2 id="S4.1">Set Position Arguments</h2>
+<p>These arguments let you move the cursor to a new position on the screen, before
+you use other ReGIS commands. You can specify the cursor position in
+one of four formats.</p>
+<ul class="bare">
+<li>Absolute</li>
+<li>Relative</li>
+<li>Absolute/relative</li>
+<li>Pixel vector offset</li>
+</ul>
+<h3 id="S4.1.1">Absolute Position</h3>
+<p>You can use absolute X- and Y-coordinates to define a new cursor position. You
+can use three forms of this command.</p>
+<div class="example"><table class="padded">
+<thead>
+<tr>
+<th class="first">X and Y Value</th>
+<th>X Value Only</th>
+<th>Y Value Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">P[X,Y]</td>
+<td>[X]</td>
+<td>[,Y]</td>
+</tr>
+</tbody>
+</table></div>
+<p>where</p>
+<div class="example"><p><b>P</b> identifies a position command.</p>
+<p><b>[X,Y]</b> specify new X- and Y-coordinates.</p>
+<p><b>[X]</b> specifies a new X-coordinate (with the Y-coordinate unchanged).</p>
+<p><b>[,Y]</b> specifies a new Y-coordinate (with the X-coordinate unchanged).</p></div>
+<p><a href="#F4-1">Figure 4-1</a> shows examples of how to use each form to move the graphics cursor
+around the screen.</p>
+
+<figure id="F4-1">
+  <img src="ma-0669-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>(1)<br/>(2)<br/>(3)</td>
+        <td>P[200,200]<br/>[300]<br/>[,400]</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once P is specified, it is not needed again,<br/>
+unless another type of command (such as<br/>
+a screen command) comes between<br/>
+bracketed move values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-1 Examples of Absolute Position Commands</figcaption>
+</figure>
+
+<h3 id="S4.1.2">Relative Position</h3>
+<p>You can use positive (+) and negative (-) values to define a new cursor position.
+Relative values always start with a plus (+) or minus (-) sign. The terminal
+adds or subtracts the relative value from the current cursor coordinates. The
+result is the new cursor position.</p>
+<p>A wraparound can occur in relative positioning, but only when you specify a
+value that exceeds the limits of the 16-bit integer arithmetic available to
+ReGIS. For example, suppose the cursor position is at [100,100], and you give
+a command of P[+100,-101]. The new position is a relative value of [200,-1],
+with no cursor wraparound.</p>
+<p>There are eight possible forms of the relative positioning argument, using different
+combinations of positive (+) and negative (-) coordinates. You can specify
+one or both coordinates.</p>
+<div class="example"><table class="padded">
+<tbody>
+<tr>
+<td class="first">P[+X,+Y]</td>
+<td>P[+X,-Y]</td>
+<td>P[-X,+Y]</td>
+<td>P[-X,-Y]</td>
+</tr>
+<tr>
+<td class="first">P[+X]</td>
+<td>P[-X]</td>
+<td>P[,+Y]</td>
+<td>P[,-Y]</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="#F4-2">Figure 4-2</a> shows examples of how to use each form to move the graphics cursor
+around the screen.</p>
+
+<figure id="F4-2">
+  <img src="ma-0670-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>(1)<br/>(2)<br/>(3)<br/>(4)<br/>(5)<br/>(6)<br/>(7)<br/>(8)</td>
+        <td>P[+100,+50]<br/>[+50,-100]<br/>[-100,-100]<br/>[-150,+250]<br/>[+100]<br/>[,+150]<br/>[-125]<br/>[,-75]</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once P is specified, it is not needed again,<br/>
+unless another type of command (such as<br/>
+a screen command) comes between<br/>
+bracketed move values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-2 Examples of Relative Position Move Commands</figcaption>
+</figure>
+
+<h3 id="S4.1.3">Absolute/Relative Position</h3>
+<p>You can use a combination of absolute and relative X- and Y-coordinate values
+to define a new cursor position. There are two forms of this command.</p>
+<ul>
+<li>Specify an absolute X value with a relative Y value.</li>
+<li>Specify a relative X value with an absolute Y value.</li>
+</ul>
+<p>The formats for these commands are a combination of the formats for the absolute
+and relative positioning arguments. See the two previous sections. <a href="#F4-3">Figure
+4-3</a> shows examples of how to use both forms to move the cursor around the screen.</p>
+
+<figure id="F4-3">
+  <img src="ma-0671-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>(1)<br/>(2)<br/>(3)<br/>(4)</td>
+        <td>P[300,-100]<br/>[600,+175]<br/>[-200,400]<br/>[+100,50]</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once P is specified, it is not needed again,<br/>
+unless another type of command (such as<br/>
+a screen command) comes between<br/>
+bracketed move values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-3 Examples of Absolute/Relative Move Commands</figcaption>
+</figure>
+
+<h3 id="S4.1.4">Pixel Vector Offset Position</h3>
+<p>You can use pixel vector (PV) values to define a new cursor position. <a href="chapter1.html">Chapter 1</a>
+describes pixel vectors. Pixel vectors move the cursor relative to the current cursor position.</p>
+<p>Each PV value (0 through 7) selects a different direction of movement. <a href="#F4-4">Figure
+4-4</a> shows these directions.</p>
+<p>This command uses the current PV multiplication factor. There are two ways to
+change this factor.</p>
+<ul>
+<li>with a write control command</li>
+<li>with a temporary write control option</li>
+</ul>
+<p>The PV factor defined by the temporary write control option only stays in effect
+until you use a new key letter (including a new P command key letter) or
+another temporary write control option.</p>
+<p>You use the following format for the PV offset positioning argument.</p>
+<p class="example">P&lt;PV value&gt;</p>
+<p>where</p>
+<p class="example"><b>&lt;PV value&gt;</b> is one or more PV values defining movement. These PV values
+use the current PV multiplication factor in effect.</p>
+
+<figure id="F4-4">
+  <img src="ma-0654-83.png" alt=""/>
+  <figcaption>Figure 4-4 PV Direction Values</figcaption>
+</figure>
+
+<p>You use the following format to change the PV multiplication factor with a
+temporary write control option.</p>
+<p class="example">P(W(M&lt;multiplication factor&gt;))&lt;PV value&gt;</p>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a write control option.</p>
+<p><b>M</b> identifies a PV multiplication suboption.</p>
+<p><b>&lt;multiplication factor&gt;</b> is a numeric value to use for the temporary PV
+multiplication factor.</p>
+<p><b>&lt;PV value&gt;</b> is one or more PV values defining movement. These PV values
+use the temporary PV multiplication factor.</p></div>
+<p><a href="#F4-5">Figure 4-5</a> shows examples of how to move the cursor around the screen with
+pixel vectors. The examples use a temporary write control option to define a
+PV multiplication factor.</p>
+
+<figure id="F4-5">
+  <img src="ma-0672-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td> <br/>(1)<br/>(2)<br/>(3)<br/>(4)</td>
+        <td>P(W(M100))<br/>77<br/>6<br/>444<br/>11</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once P is specified, it is not needed again,<br/>
+unless another type of command (such as<br/>
+a screen command) comes between<br/>
+bracketed move values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-5 Examples of PV Move Commands</figcaption>
+</figure>
+
+<h2 id="S4.2">Position Stack Options</h2>
+<p>A <dfn>position stack</dfn> is a set of coordinate positions that ReGIS uses in sequence.
+These options let you move the cursor to several positions in a single command.
+As ReGIS performs the command, the cursor moves to each position in
+the stack.</p>
+<p>There are two types of position stacks, bounded and unbounded. Both types
+include at least one start (or begin) command and one end command. However,
+the start commands work differently in bounded and unbounded position
+stacks.</p>
+<p>You can embed other commands between pairs of start and end commands.
+For example, you can embed several vector (V) commands between the start
+and end commands.</p>
+<h3 id="S4.2.1">Bounded Position Stack – (B) and (E)</h3>
+<p>You use a bounded position stack to return the cursor position to a specific
+starting point at the end of the command. The bounded position stack works by
+pushing the current cursor position onto the stack, then popping the position
+off where appropriate.</p>
+<p>You use the following format for a bounded position stack option.</p>
+<p class="example">P(B)&lt;embedded options&gt;(E)</p>
+<p>where</p>
+<div class="example"><p><b>(B)</b> saves the current active position. (Pushes the position onto the stack.)</p>
+<p><b>&lt;embedded options&gt;</b> are the position, vector, curve, and other command
+options you use in the bounded position stack.</p>
+<p><b>(E)</b> returns the active position to the coordinates saved by the last <b>(B)</b> option.
+(Pops the position off the stack.)</p></div>
+<p>You can save up to 16 positions in a stack. That is, you can use 16 (B)s and 16
+corresponding (E)s in a stack. Remember, for each (B) pushing a position onto
+the stack, there must be a corresponding (E) to pop the position off.</p>
+<p class="note">NOTE: The terminal saves position values during bounded and unbounded
+stack options for position (P) commands and vector (V) commands (<a href="chapter5.html">Chapter 5</a>).
+The maximum number of unended, saved positions (including all save commands)
+is 16. However, for compatibility with other ReGIS products, use a
+maximum of eight.</p>
+<p><a href="#F4-6">Figure 4-6</a> shows an example of how to build a simple graphic image with a
+bounded position stack. The example includes vector (V) and curve (C) commands.
+See Chapters <a href="chapter5.html">5</a> and <a href="chapter6.html">6</a> for information on vector and curve commands.</p>
+
+<figure id="F4-6">
+  <img src="ma-0673-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>(1)<br/>(2)<br/>(3)<br/>(4)<br/>(5)<br/>(6)<br/>(7)<br/>(8)<br/>(9)</td>
+        <td>P[400,250]<br/>(B)<br/>[+100,-100]<br/>V[,+200]<br/>[-200]<br/>[,-200]<br/>[+200]<br/>P(E)<br/>C[+100]</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once a command letter is specified,<br/>
+it does not need to be respecified,<br/>
+unless another type of command comes<br/>
+between command option values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-6 Building an Image with a Bounded Position Stack</figcaption>
+</figure>
+
+<h3 id="S4.2.2">Unbounded Position Stack – (S) and (E)</h3>
+<p>The difference between an unbounded and a bounded position stack is that the
+active position does not move at the end of an unbounded stack. An unbounded stack
+begins with an (S) option rather than a (B) option. The (S) pushes a
+dummy, or nonexistent position onto the position stack. The (E) pops this
+nonexistent position off the stack, leaving the active position at the position
+specified before the (E) option.</p>
+<p>You use the following format for an unbounded stack command.</p>
+<p class="example">P(S)&lt;embedded options&gt;(E)</p>
+<p>where</p>
+<div class="example"><p><b>(S)</b> saves a dummy location. (Pushes the dummy location onto the position
+stack.)</p>
+<p><b>&lt;embedded options&gt;</b> are the position, vector, curve, and other command
+options you use in the unbounded stack.</p>
+<p><b>(E)</b> pops the dummy position off the stack. The active position does not move.</p></div>
+<p><a href="#F4-7">Figure 4-7</a> shows an unbounded position stack with the same vector (V) and
+curve (C) commands used in the bounded position stack in <a href="#F4-6">Figure 4-6</a>. Figures
+<a href="#F4-6">4-6</a> and <a href="#F4-7">4-7</a> show the difference in effect between bounded and unbounded
+stacks.</p>
+<p>The unbounded stack option is for symmetry with other command types (such
+as curve commands) that can use bounded and unbounded stacks.</p>
+
+<figure id="F4-7">
+  <img src="ma-0674-83.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">COMMANDS</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>(1)<br/>(2)<br/>(3)<br/>(4)<br/>(5)<br/>(6)<br/>(7)<br/>(8)<br/>(9)</td>
+        <td>P[400,250]<br/>(S)<br/>[+100,-100]<br/>V[,+200]<br/>[-200]<br/>[,-200]<br/>[+200]<br/>P(E)<br/>C[+100]</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>NOTE:<br/>
+Once a command letter is specified,<br/>
+it does not need to be respecified,<br/>
+unless another type of command comes<br/>
+between command option values.</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 4-7 Building an Image with an Unbounded Position Stack</figcaption>
+</figure>
+
+<h2 id="S4.3">Select Graphics Page – P</h2>
+<p>This option lets you move the graphics cursor from one page to another. You
+can only use this option when you use a single session on the terminal, not
+dual sessions. When you use a single session, the terminal has two pages of
+graphics page memory available, each 800 × 480 pixels.</p>
+<p class="example">P(P&lt;0 or 1&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>P</b> identifies the select graphics page option.</p>
+<p><b>0</b> moves the cursor to the first graphics page.</p>
+<p><b>1</b> moves the cursor to the second graphics page.</p></div>
+<p>The terminal ignores values other than 0 and 1. Both the input cursor and
+output cursor move to the corresponding position on the selected page.</p>
+<p>Entering or exiting ReGIS does not change the currently displayed page. When
+you enter ReGIS, the currently displayed graphics page is the same as the previously
+displayed text page. The active graphics page is the same page as the
+last time you exited ReGIS. If you did not use ReGIS since last resetting the terminal,
+the active graphics page is the first graphics page.</p>
+<p>When you exit ReGIS, the currently displayed text page is the same
+as the previously displayed graphics page. The active text page is the same
+page as the last time you used text mode.</p>
+<p>When you exit ReGIS, the displayed text page becomes the same as the active
+text page (if the <b>Page Coupling</b> feature on the Display Set-Up screen is
+enabled).</p>
+<h2 id="S4.4">Position Command Summary</h2>
+<p><a href="#T4-1">Table 4-1</a> is a summary of the <b>P</b> command arguments, including any default
+values.</p>
+<table id="T4-1" class="majortable">
+<caption>Table 4-1 Position Command Summary</caption>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[X,Y]</td>
+<td>[0,0]</td>
+<td><p><strong>Cursor positioning with [X,Y] values</strong><br/>
+The [X,Y] values can be absolute, relative, or absolute/relative screen coordinates.</p></td>
+</tr>
+<tr>
+<td>&lt;PV&gt;</td>
+<td>None</td>
+<td><p><strong>Cursor positioning with PV values</strong><br/>
+The pixel vector values select a direction and distance to move, relative to the current cursor position.</p></td>
+</tr>
+<tr>
+<td>(W(M&lt;n&gt;))</td>
+<td>1</td>
+<td><p><strong>PV multiplier</strong><br/>
+This temporary write control option selects a multiplication factor for PV values. This factor defines
+the number of coordinates to move for each PV value.</p></td>
+</tr>
+<tr>
+<td>(B)</td>
+<td>None</td>
+<td><p><strong>Begin a bounded position stack</strong><br/>
+Pushes the current active position onto the stack. This position becomes the active position again after
+a corresponding (E) option in the stack.</p></td>
+</tr>
+<tr>
+<td>(S)</td>
+<td>None</td>
+<td><p><strong>Start an unbounded position stack</strong><br/>
+Pushes a dummy position onto the stack. When ReGIS reaches an (E) option in the stack, the active
+position stays at its current location.</p></td>
+</tr>
+<tr>
+<td>(E)</td>
+<td>None</td>
+<td><p><strong>End of bounded or unbounded position stack</strong><br/>
+Selects the active position at the end of a position stack. The active position is based on the
+corresponding (B) option in a bounded stack or (S) option in an unbounded stack.</p></td>
+</tr>
+<tr>
+<td>(P&lt;pn&gt;)</td>
+<td>None</td>
+<td><p><strong>Select graphics page option</strong><br/>
+Moves the cursor from the current page to page &lt;pn&gt; in graphics page memory, where &lt;pn&gt; is 0 or 1.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter3.html">Chapter 3</a><a href="contents.html">Contents</a><a href="chapter5.html">Chapter 5</a></nav>
+</footer>
+</body>
+</html>

@@ -8,4 +8,8 @@ unset TMUX_PANE
 . $SCRIPTS/lib/hs
 
 # vt340 has sixel
-/usr/bin/xterm -ti vt340 "$@"
+
+test -f "/usr/local/bin/xterm" && : "${bin:="/usr/local/bin/xterm"}"
+test -f "/usr/bin/xterm" && : "${bin:="/usr/bin/xterm"}"
+
+"$bin" -ti vt340 "$@"

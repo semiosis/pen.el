@@ -1,0 +1,2 @@
+;; Generated package description from org-transclusion.el  -*- no-byte-compile: t -*-
+(define-package "org-transclusion" "1.4.0" "Transclude text content via links" '((emacs "27.1") (org "9.4")) :commit "e6e638710e90198070c9b07ebdaa345a79f74706" :authors '(("Noboru Ota" . "me@nobiot.com")) :maintainer '("Noboru Ota" . "me@nobiot.com") :keywords '("org-mode" "transclusion" "writing") :url "https://github.com/nobiot/org-transclusion")

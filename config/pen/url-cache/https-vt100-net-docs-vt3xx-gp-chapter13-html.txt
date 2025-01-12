@@ -1,0 +1,3582 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:26:33 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Fri, 27 Oct 2023 09:14:24 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:26:33 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 21161
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 13</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter12.html">Chapter 12</a><a href="contents.html">Contents</a><a href="chapter14.html">Chapter 14</a></nav>
+</header>
+<h1 id="S13"><span class="chapnum">13</span> 4010/4014 Mode</h1>
+<p>The VT300 can support industry-standard Tektronix 4010/4014 software packages.
+This chapter describes how to select and use 4010/4014 mode. The chapter
+assumes you have a working knowledge of Tektronix 4010/4014 capabilities.</p>
+<p>The 4010/4014 terminals use direct-view storage tube technology. The VT300
+uses raster-scan technology. The 4010/4014 mode supports those features that
+can migrate to a raster terminal.</p>
+<p class="note">NOTE: Tektronix software may run differently on the VT300 than on other
+terminals, due to differences in terminal design.</p>
+<h2 id="S13.1">Supported Features</h2>
+<p>The 4010/4014 mode supports the following modes and functions. This chapter
+has a section on each feature.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Alpha mode</td>
+<td>Processes text characters.</td>
+</tr>
+<tr>
+<td>Graph mode</td>
+<td>Processes vectors from endpoints defined by absolute coordinates.</td>
+</tr>
+<tr>
+<td>Incremental plot mode</td>
+<td>Similar to graph mode, but plots points relative to the current cursor position.</td>
+</tr>
+<tr>
+<td>Point plot mode</td>
+<td>Similar to graph mode, but does not draw vectors. Only plots the points specified by absolute coordinates.</td>
+</tr>
+<tr>
+<td>Graphics input (GIN) mode</td>
+<td>A local mode, similar to report position interactive in ReGIS. You can use the keyboard, a mouse, or graphics tablet to move the cursor and send position reports to the host.</td>
+</tr>
+<tr>
+<td>Strap options</td>
+<td>Supported as set-up mode options. See the Graphics Set-Up screen in <cite>Installing and Using the VT330/VT340 Video Terminal</cite>.</td>
+</tr>
+<tr>
+<td>Control characters</td>
+<td>Supports some control characters to control terminal actions in 4010/4014 mode.</td>
+</tr>
+<tr>
+<td>Escape sequences</td>
+<td>Supports some escape sequences to control 4010/4014 functions only. The way escape sequences work in 4010/4014 mode is independent of the way they work in text mode.</td>
+</tr>
+<tr>
+<td>Bypass condition</td>
+<td>Prevents the terminal from responding to data sent by the terminal and echoed by the host.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S13.2">Restrictions</h2>
+<p>The VT300 cannot support some 4010/4014 features, due to the differences between
+direct-view storage tube and raster-scan display technologies. The following
+sections describe these limitations.</p>
+<h3 id="S13.2.1">Write-Through Mode</h3>
+<p>With 4010/4014 terminals, you can draw images and characters on the tube
+without storing them. The application must refresh these images to keep them
+visible. The intensity level of the images depends on the refresh rate.</p>
+<p>The VT300 can simulate write-through functions by using raster writing modes.
+The "<a href="#S13.8">Escape Sequences</a>" section in this chapter describes the capabilities and
+limitations of raster writing modes.</p>
+<h3 id="S13.2.2">Character Sizes</h3>
+<p>In 4010/4014 mode, the VT300 uses one of two character modes, aligned or
+enlarged.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Aligned mode</td>
+<td>The terminal uses four character sizes. The characters in all four sizes are small, but conform to the Tektronix terminal.</td>
+</tr>
+<tr>
+<td>Enlarged mode</td>
+<td>The terminal uses two character sizes. The enlarged characters are larger and easier to read than the smaller aligned characters.</td>
+</tr>
+</tbody>
+</table>
+<p>In enlarged mode, Tektronix software that relies on strict registration of characters
+to pixels creates character distortion on the VT300. This problem does
+not occur with aligned characters. Although the smaller aligned characters are
+more difficult to read, they are not subject to pixel distortion.</p>
+<p class="note">NOTE: You can select the aligned or enlarged characters from the Graphics
+Set-Up screen.</p>
+<h3 id="S13.2.3">Fonts</h3>
+<p>Loadable fonts and alternate hard fonts are not available in 4010/4014 mode.</p>
+<h3 id="S13.2.4">Enhanced Graphics Module (EGM)</h3>
+<p>The Tektronix enhanced graphics module (EGM) is a 4014 option that provides
+a number of special features. The VT300 supports a number of features available
+through the EGM option. See "<a href="#S13.14">Graph Mode</a>" in this chapter.</p>
+<h2 id="S13.3">Screen Addressing</h2>
+<p>The 4010/4014 series terminals use Tekpoints as their unit of screen addressing.
+By default, there is a 1024 × 768 Tekpoint matrix. Graphics input (GIN)
+mode uses this default matrix. Other operating modes use the 12-bit addressing
+capability of the EGM option, increasing the visible matrix to a 4096 × 3072
+array.</p>
+<p>By contrast, the VT300 has an 800 × 480 pixel matrix. In 4010/4014 mode,
+the VT300 uses a 623 × 480 pixel array that is centered on the screen. In
+vector drawing, the VT300 uses a 614 × 460 pixel array. The extra space is
+used for character drawing.</p>
+<p>Because the VT300 has a lower pixel resolution, several Tekpoints map to one
+pixel. The VT300 maps Tekpoints to the nearest pixel in the 623 × 480 array.</p>
+<h2 id="S13.4">Set-Up Support</h2>
+<p>The 4010/4014 terminals have four strap options you can select by moving
+jumper wires on the terminal's circuit cards.</p>
+<ul class="col2 bare">
+<li>CR effect</li>
+<li>LF effect</li>
+<li>Graphics input terminators</li>
+<li>DEL implies LO Y</li>
+</ul>
+<p>On the VT300, you can select these strap options from the Graphics Set-Up
+screen. See <cite>Installing and Using the VT330/VT340 Video Terminal</cite> for details.</p>
+<h2 id="S13.5">Communication</h2>
+<p>In 4010/4014 mode, the terminal uses 7-bit character codes to communicate
+with the host. <a href="#F13-1">Figure 13-1</a> shows the standard 7-bit ASCII character set. Not
+all ASCII characters have a valid function in 4010/4014 mode.</p>
+
+<figure id="F13-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 940" version="1.1" id="f13-1-img">
+  <title>ASCII Table</title>
+<style>
+#f13-1-img {
+
+    &amp; text { font-family: Helvetica, sans-serif; font-style: normal; font-weight: normal }
+    .chname { font-size: 15px; font-weight: bold }
+    .dcname { font-size: 12px; font-weight: bold }
+    .chnums { font-size: 10px }
+    .chkey  { font-size: 18px; font-weight: bold }
+    .drawpart { font-size: 11px }
+    .colannot { font-size: 12px }
+    .scanline { stroke: black; stroke-width: 1.6; stroke-linecap: round }
+  }
+</style>
+  <defs>
+    <marker style="overflow:visible" id="long-tri-in" refX="0.0" refY="0.0" orient="auto">
+      <path transform="scale(-0.5)" style="fill-rule:evenodd;fill:context-stroke;stroke:none" d="M 2,0 l -15,5 l 0,-10 z "/>
+    </marker>
+    <marker style="overflow:visible" id="long-tri-out" refX="0.0" refY="0.0" orient="auto">
+      <path transform="scale(0.5)" style="fill-rule:evenodd;fill:context-stroke;stroke:none" d="M 2,0 l -15,5 l -0,-10 z "/>
+    </marker>
+  </defs>
+  <g id="layer1">
+<rect x="0" y="0" width="800" height="940" fill="none"/><rect x="10.0" y="77.5" width="30.0" height="742.5" stroke="#000" stroke-width="2" fill="none"/>
+<text class="chnums" x="25.0" y="95.0" text-anchor="middle">ROW</text>
+<line x1="10.0" y1="100.0" x2="40.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<text class="chname" x="25.0" y="127.0" text-anchor="middle">0</text>
+<line x1="10.0" y1="145.0" x2="40.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="172.0" text-anchor="middle">1</text>
+<line x1="10.0" y1="190.0" x2="40.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="217.0" text-anchor="middle">2</text>
+<line x1="10.0" y1="235.0" x2="40.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="262.0" text-anchor="middle">3</text>
+<line x1="10.0" y1="280.0" x2="40.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="307.0" text-anchor="middle">4</text>
+<line x1="10.0" y1="325.0" x2="40.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="352.0" text-anchor="middle">5</text>
+<line x1="10.0" y1="370.0" x2="40.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="397.0" text-anchor="middle">6</text>
+<line x1="10.0" y1="415.0" x2="40.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="442.0" text-anchor="middle">7</text>
+<line x1="10.0" y1="460.0" x2="40.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="487.0" text-anchor="middle">8</text>
+<line x1="10.0" y1="505.0" x2="40.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="532.0" text-anchor="middle">9</text>
+<line x1="10.0" y1="550.0" x2="40.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="577.0" text-anchor="middle">10</text>
+<line x1="10.0" y1="595.0" x2="40.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="622.0" text-anchor="middle">11</text>
+<line x1="10.0" y1="640.0" x2="40.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="667.0" text-anchor="middle">12</text>
+<line x1="10.0" y1="685.0" x2="40.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="712.0" text-anchor="middle">13</text>
+<line x1="10.0" y1="730.0" x2="40.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="757.0" text-anchor="middle">14</text>
+<line x1="10.0" y1="775.0" x2="40.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="802.0" text-anchor="middle">15</text>
+<rect x="40.0" y="10.0" width="70.0" height="810.0" stroke="#000" stroke-width="2" fill="none"/>
+<text class="chnums" x="75.0" y="26.0" text-anchor="middle">COLUMN</text>
+<line x1="40.0" y1="35.0" x2="110.0" y2="35.0" stroke="#000" stroke-width="2"/>
+<text class="chnums" x="66.5" y="62.0" text-anchor="middle">b7</text>
+<text class="chnums" x="83.5" y="73.0" text-anchor="middle">b6</text>
+<text class="chnums" x="100.5" y="84.0" text-anchor="middle">b5</text>
+<text class="chnums" x="50.0" y="95.0" text-anchor="middle">b4</text>
+<text class="chnums" x="66.0" y="95.0" text-anchor="middle">b3</text>
+<text class="chnums" x="82.0" y="95.0" text-anchor="middle">b2</text>
+<text class="chnums" x="98.0" y="95.0" text-anchor="middle">b1</text>
+<text class="chname" x="108.0" y="52.0" text-anchor="end">BITS</text>
+<line x1="40.0" y1="100.0" x2="110.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<text class="chnums" x="50.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="127.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="145.0" x2="110.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="172.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="190.0" x2="110.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="217.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="217.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="217.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="217.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="235.0" x2="110.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="262.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="262.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="262.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="262.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="280.0" x2="110.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="307.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="307.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="307.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="307.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="325.0" x2="110.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="352.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="352.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="352.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="352.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="370.0" x2="110.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="397.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="397.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="397.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="397.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="415.0" x2="110.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="442.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="442.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="442.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="442.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="460.0" x2="110.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="487.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="487.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="487.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="487.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="505.0" x2="110.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="532.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="532.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="532.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="532.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="550.0" x2="110.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="577.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="577.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="577.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="577.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="595.0" x2="110.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="622.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="622.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="622.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="622.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="640.0" x2="110.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="667.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="667.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="667.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="667.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="685.0" x2="110.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="712.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="712.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="712.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="712.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="730.0" x2="110.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="757.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="775.0" x2="110.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="222.5" y="178.0" text-anchor="middle">(XON)</text>
+<text class="chnums" x="222.5" y="268.0" text-anchor="middle">(XOFF)</text>
+<text class="chname" x="137.5" y="127.0" text-anchor="middle">NUL</text>
+<text class="chnums" x="188.0" y="115.0" text-anchor="end"><tspan>0</tspan><tspan x="188.0" dy="12">0</tspan><tspan x="188.0" dy="12">0</tspan></text>
+<text class="chname" x="137.5" y="172.0" text-anchor="middle">SOH</text>
+<text class="chnums" x="188.0" y="160.0" text-anchor="end"><tspan>1</tspan><tspan x="188.0" dy="12">1</tspan><tspan x="188.0" dy="12">1</tspan></text>
+<text class="chname" x="137.5" y="217.0" text-anchor="middle">STX</text>
+<text class="chnums" x="188.0" y="205.0" text-anchor="end"><tspan>2</tspan><tspan x="188.0" dy="12">2</tspan><tspan x="188.0" dy="12">2</tspan></text>
+<text class="chname" x="137.5" y="262.0" text-anchor="middle">ETX</text>
+<text class="chnums" x="188.0" y="250.0" text-anchor="end"><tspan>3</tspan><tspan x="188.0" dy="12">3</tspan><tspan x="188.0" dy="12">3</tspan></text>
+<text class="chname" x="137.5" y="307.0" text-anchor="middle">EOT</text>
+<text class="chnums" x="188.0" y="295.0" text-anchor="end"><tspan>4</tspan><tspan x="188.0" dy="12">4</tspan><tspan x="188.0" dy="12">4</tspan></text>
+<text class="chname" x="137.5" y="352.0" text-anchor="middle">ENQ</text>
+<text class="chnums" x="188.0" y="340.0" text-anchor="end"><tspan>5</tspan><tspan x="188.0" dy="12">5</tspan><tspan x="188.0" dy="12">5</tspan></text>
+<text class="chname" x="137.5" y="397.0" text-anchor="middle">ACK</text>
+<text class="chnums" x="188.0" y="385.0" text-anchor="end"><tspan>6</tspan><tspan x="188.0" dy="12">6</tspan><tspan x="188.0" dy="12">6</tspan></text>
+<text class="chname" x="137.5" y="442.0" text-anchor="middle">BEL</text>
+<text class="chnums" x="188.0" y="430.0" text-anchor="end"><tspan>7</tspan><tspan x="188.0" dy="12">7</tspan><tspan x="188.0" dy="12">7</tspan></text>
+<text class="chname" x="137.5" y="487.0" text-anchor="middle">BS</text>
+<text class="chnums" x="188.0" y="475.0" text-anchor="end"><tspan>10</tspan><tspan x="188.0" dy="12">8</tspan><tspan x="188.0" dy="12">8</tspan></text>
+<text class="chname" x="137.5" y="532.0" text-anchor="middle">HT</text>
+<text class="chnums" x="188.0" y="520.0" text-anchor="end"><tspan>11</tspan><tspan x="188.0" dy="12">9</tspan><tspan x="188.0" dy="12">9</tspan></text>
+<text class="chname" x="137.5" y="577.0" text-anchor="middle">LF</text>
+<text class="chnums" x="188.0" y="565.0" text-anchor="end"><tspan>12</tspan><tspan x="188.0" dy="12">10</tspan><tspan x="188.0" dy="12">A</tspan></text>
+<text class="chname" x="137.5" y="622.0" text-anchor="middle">VT</text>
+<text class="chnums" x="188.0" y="610.0" text-anchor="end"><tspan>13</tspan><tspan x="188.0" dy="12">11</tspan><tspan x="188.0" dy="12">B</tspan></text>
+<text class="chname" x="137.5" y="667.0" text-anchor="middle">FF</text>
+<text class="chnums" x="188.0" y="655.0" text-anchor="end"><tspan>14</tspan><tspan x="188.0" dy="12">12</tspan><tspan x="188.0" dy="12">C</tspan></text>
+<text class="chname" x="137.5" y="712.0" text-anchor="middle">CR</text>
+<text class="chnums" x="188.0" y="700.0" text-anchor="end"><tspan>15</tspan><tspan x="188.0" dy="12">13</tspan><tspan x="188.0" dy="12">D</tspan></text>
+<text class="chname" x="137.5" y="757.0" text-anchor="middle">SO</text>
+<text class="chnums" x="188.0" y="745.0" text-anchor="end"><tspan>16</tspan><tspan x="188.0" dy="12">14</tspan><tspan x="188.0" dy="12">E</tspan></text>
+<text class="chname" x="137.5" y="802.0" text-anchor="middle">SI</text>
+<text class="chnums" x="188.0" y="790.0" text-anchor="end"><tspan>17</tspan><tspan x="188.0" dy="12">15</tspan><tspan x="188.0" dy="12">F</tspan></text>
+<text class="chname" x="222.5" y="127.0" text-anchor="middle">DLE</text>
+<text class="chnums" x="273.0" y="115.0" text-anchor="end"><tspan>20</tspan><tspan x="273.0" dy="12">16</tspan><tspan x="273.0" dy="12">10</tspan></text>
+<text class="chname" x="222.5" y="167.0" text-anchor="middle">DC1</text>
+<text class="chnums" x="273.0" y="160.0" text-anchor="end"><tspan>21</tspan><tspan x="273.0" dy="12">17</tspan><tspan x="273.0" dy="12">11</tspan></text>
+<text class="chname" x="222.5" y="217.0" text-anchor="middle">DC2</text>
+<text class="chnums" x="273.0" y="205.0" text-anchor="end"><tspan>22</tspan><tspan x="273.0" dy="12">18</tspan><tspan x="273.0" dy="12">12</tspan></text>
+<text class="chname" x="222.5" y="257.0" text-anchor="middle">DC3</text>
+<text class="chnums" x="273.0" y="250.0" text-anchor="end"><tspan>23</tspan><tspan x="273.0" dy="12">19</tspan><tspan x="273.0" dy="12">13</tspan></text>
+<text class="chname" x="222.5" y="307.0" text-anchor="middle">DC4</text>
+<text class="chnums" x="273.0" y="295.0" text-anchor="end"><tspan>24</tspan><tspan x="273.0" dy="12">20</tspan><tspan x="273.0" dy="12">14</tspan></text>
+<text class="chname" x="222.5" y="352.0" text-anchor="middle">NAK</text>
+<text class="chnums" x="273.0" y="340.0" text-anchor="end"><tspan>25</tspan><tspan x="273.0" dy="12">21</tspan><tspan x="273.0" dy="12">15</tspan></text>
+<text class="chname" x="222.5" y="397.0" text-anchor="middle">SYN</text>
+<text class="chnums" x="273.0" y="385.0" text-anchor="end"><tspan>26</tspan><tspan x="273.0" dy="12">22</tspan><tspan x="273.0" dy="12">16</tspan></text>
+<text class="chname" x="222.5" y="442.0" text-anchor="middle">ETB</text>
+<text class="chnums" x="273.0" y="430.0" text-anchor="end"><tspan>27</tspan><tspan x="273.0" dy="12">23</tspan><tspan x="273.0" dy="12">17</tspan></text>
+<text class="chname" x="222.5" y="487.0" text-anchor="middle">CAN</text>
+<text class="chnums" x="273.0" y="475.0" text-anchor="end"><tspan>30</tspan><tspan x="273.0" dy="12">24</tspan><tspan x="273.0" dy="12">18</tspan></text>
+<text class="chname" x="222.5" y="532.0" text-anchor="middle">EM</text>
+<text class="chnums" x="273.0" y="520.0" text-anchor="end"><tspan>31</tspan><tspan x="273.0" dy="12">25</tspan><tspan x="273.0" dy="12">19</tspan></text>
+<text class="chname" x="222.5" y="577.0" text-anchor="middle">SUB</text>
+<text class="chnums" x="273.0" y="565.0" text-anchor="end"><tspan>32</tspan><tspan x="273.0" dy="12">26</tspan><tspan x="273.0" dy="12">1A</tspan></text>
+<text class="chname" x="222.5" y="622.0" text-anchor="middle">ESC</text>
+<text class="chnums" x="273.0" y="610.0" text-anchor="end"><tspan>33</tspan><tspan x="273.0" dy="12">27</tspan><tspan x="273.0" dy="12">1B</tspan></text>
+<text class="chname" x="222.5" y="667.0" text-anchor="middle">FS</text>
+<text class="chnums" x="273.0" y="655.0" text-anchor="end"><tspan>34</tspan><tspan x="273.0" dy="12">28</tspan><tspan x="273.0" dy="12">1C</tspan></text>
+<text class="chname" x="222.5" y="712.0" text-anchor="middle">GS</text>
+<text class="chnums" x="273.0" y="700.0" text-anchor="end"><tspan>35</tspan><tspan x="273.0" dy="12">29</tspan><tspan x="273.0" dy="12">1D</tspan></text>
+<text class="chname" x="222.5" y="757.0" text-anchor="middle">RS</text>
+<text class="chnums" x="273.0" y="745.0" text-anchor="end"><tspan>36</tspan><tspan x="273.0" dy="12">30</tspan><tspan x="273.0" dy="12">1E</tspan></text>
+<text class="chname" x="222.5" y="802.0" text-anchor="middle">US</text>
+<text class="chnums" x="273.0" y="790.0" text-anchor="end"><tspan>37</tspan><tspan x="273.0" dy="12">31</tspan><tspan x="273.0" dy="12">1F</tspan></text>
+<text class="chname" x="307.5" y="127.0" text-anchor="middle">SP</text>
+<text class="chnums" x="358.0" y="115.0" text-anchor="end"><tspan>40</tspan><tspan x="358.0" dy="12">32</tspan><tspan x="358.0" dy="12">20</tspan></text>
+<text class="chname" x="307.5" y="172.0" text-anchor="middle">!</text>
+<text class="chnums" x="358.0" y="160.0" text-anchor="end"><tspan>41</tspan><tspan x="358.0" dy="12">33</tspan><tspan x="358.0" dy="12">21</tspan></text>
+<text class="chname" x="307.5" y="217.0" text-anchor="middle">"</text>
+<text class="chnums" x="358.0" y="205.0" text-anchor="end"><tspan>42</tspan><tspan x="358.0" dy="12">34</tspan><tspan x="358.0" dy="12">22</tspan></text>
+<text class="chname" x="307.5" y="262.0" text-anchor="middle">#</text>
+<text class="chnums" x="358.0" y="250.0" text-anchor="end"><tspan>43</tspan><tspan x="358.0" dy="12">35</tspan><tspan x="358.0" dy="12">23</tspan></text>
+<text class="chname" x="307.5" y="307.0" text-anchor="middle">$</text>
+<text class="chnums" x="358.0" y="295.0" text-anchor="end"><tspan>44</tspan><tspan x="358.0" dy="12">36</tspan><tspan x="358.0" dy="12">24</tspan></text>
+<text class="chname" x="307.5" y="352.0" text-anchor="middle">%</text>
+<text class="chnums" x="358.0" y="340.0" text-anchor="end"><tspan>45</tspan><tspan x="358.0" dy="12">37</tspan><tspan x="358.0" dy="12">25</tspan></text>
+<text class="chname" x="307.5" y="397.0" text-anchor="middle">&amp;</text>
+<text class="chnums" x="358.0" y="385.0" text-anchor="end"><tspan>46</tspan><tspan x="358.0" dy="12">38</tspan><tspan x="358.0" dy="12">26</tspan></text>
+<text class="chname" x="307.5" y="442.0" text-anchor="middle">'</text>
+<text class="chnums" x="358.0" y="430.0" text-anchor="end"><tspan>47</tspan><tspan x="358.0" dy="12">39</tspan><tspan x="358.0" dy="12">27</tspan></text>
+<text class="chname" x="307.5" y="487.0" text-anchor="middle">(</text>
+<text class="chnums" x="358.0" y="475.0" text-anchor="end"><tspan>50</tspan><tspan x="358.0" dy="12">40</tspan><tspan x="358.0" dy="12">28</tspan></text>
+<text class="chname" x="307.5" y="532.0" text-anchor="middle">)</text>
+<text class="chnums" x="358.0" y="520.0" text-anchor="end"><tspan>51</tspan><tspan x="358.0" dy="12">41</tspan><tspan x="358.0" dy="12">29</tspan></text>
+<text class="chname" x="307.5" y="577.0" text-anchor="middle">*</text>
+<text class="chnums" x="358.0" y="565.0" text-anchor="end"><tspan>52</tspan><tspan x="358.0" dy="12">42</tspan><tspan x="358.0" dy="12">2A</tspan></text>
+<text class="chname" x="307.5" y="622.0" text-anchor="middle">+</text>
+<text class="chnums" x="358.0" y="610.0" text-anchor="end"><tspan>53</tspan><tspan x="358.0" dy="12">43</tspan><tspan x="358.0" dy="12">2B</tspan></text>
+<text class="chname" x="307.5" y="667.0" text-anchor="middle">,</text>
+<text class="chnums" x="358.0" y="655.0" text-anchor="end"><tspan>54</tspan><tspan x="358.0" dy="12">44</tspan><tspan x="358.0" dy="12">2C</tspan></text>
+<text class="chname" x="307.5" y="712.0" text-anchor="middle">-</text>
+<text class="chnums" x="358.0" y="700.0" text-anchor="end"><tspan>55</tspan><tspan x="358.0" dy="12">45</tspan><tspan x="358.0" dy="12">2D</tspan></text>
+<text class="chname" x="307.5" y="757.0" text-anchor="middle">.</text>
+<text class="chnums" x="358.0" y="745.0" text-anchor="end"><tspan>56</tspan><tspan x="358.0" dy="12">46</tspan><tspan x="358.0" dy="12">2E</tspan></text>
+<text class="chname" x="307.5" y="802.0" text-anchor="middle">/</text>
+<text class="chnums" x="358.0" y="790.0" text-anchor="end"><tspan>57</tspan><tspan x="358.0" dy="12">47</tspan><tspan x="358.0" dy="12">2F</tspan></text>
+<text class="chname" x="392.5" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="443.0" y="115.0" text-anchor="end"><tspan>60</tspan><tspan x="443.0" dy="12">48</tspan><tspan x="443.0" dy="12">30</tspan></text>
+<text class="chname" x="392.5" y="172.0" text-anchor="middle">1</text>
+<text class="chnums" x="443.0" y="160.0" text-anchor="end"><tspan>61</tspan><tspan x="443.0" dy="12">49</tspan><tspan x="443.0" dy="12">31</tspan></text>
+<text class="chname" x="392.5" y="217.0" text-anchor="middle">2</text>
+<text class="chnums" x="443.0" y="205.0" text-anchor="end"><tspan>62</tspan><tspan x="443.0" dy="12">50</tspan><tspan x="443.0" dy="12">32</tspan></text>
+<text class="chname" x="392.5" y="262.0" text-anchor="middle">3</text>
+<text class="chnums" x="443.0" y="250.0" text-anchor="end"><tspan>63</tspan><tspan x="443.0" dy="12">51</tspan><tspan x="443.0" dy="12">33</tspan></text>
+<text class="chname" x="392.5" y="307.0" text-anchor="middle">4</text>
+<text class="chnums" x="443.0" y="295.0" text-anchor="end"><tspan>64</tspan><tspan x="443.0" dy="12">52</tspan><tspan x="443.0" dy="12">34</tspan></text>
+<text class="chname" x="392.5" y="352.0" text-anchor="middle">5</text>
+<text class="chnums" x="443.0" y="340.0" text-anchor="end"><tspan>65</tspan><tspan x="443.0" dy="12">53</tspan><tspan x="443.0" dy="12">35</tspan></text>
+<text class="chname" x="392.5" y="397.0" text-anchor="middle">6</text>
+<text class="chnums" x="443.0" y="385.0" text-anchor="end"><tspan>66</tspan><tspan x="443.0" dy="12">54</tspan><tspan x="443.0" dy="12">36</tspan></text>
+<text class="chname" x="392.5" y="442.0" text-anchor="middle">7</text>
+<text class="chnums" x="443.0" y="430.0" text-anchor="end"><tspan>67</tspan><tspan x="443.0" dy="12">55</tspan><tspan x="443.0" dy="12">37</tspan></text>
+<text class="chname" x="392.5" y="487.0" text-anchor="middle">8</text>
+<text class="chnums" x="443.0" y="475.0" text-anchor="end"><tspan>70</tspan><tspan x="443.0" dy="12">56</tspan><tspan x="443.0" dy="12">38</tspan></text>
+<text class="chname" x="392.5" y="532.0" text-anchor="middle">9</text>
+<text class="chnums" x="443.0" y="520.0" text-anchor="end"><tspan>71</tspan><tspan x="443.0" dy="12">57</tspan><tspan x="443.0" dy="12">39</tspan></text>
+<text class="chname" x="392.5" y="577.0" text-anchor="middle">:</text>
+<text class="chnums" x="443.0" y="565.0" text-anchor="end"><tspan>72</tspan><tspan x="443.0" dy="12">58</tspan><tspan x="443.0" dy="12">3A</tspan></text>
+<text class="chname" x="392.5" y="622.0" text-anchor="middle">;</text>
+<text class="chnums" x="443.0" y="610.0" text-anchor="end"><tspan>73</tspan><tspan x="443.0" dy="12">59</tspan><tspan x="443.0" dy="12">3B</tspan></text>
+<text class="chname" x="392.5" y="667.0" text-anchor="middle">&lt;</text>
+<text class="chnums" x="443.0" y="655.0" text-anchor="end"><tspan>74</tspan><tspan x="443.0" dy="12">60</tspan><tspan x="443.0" dy="12">3C</tspan></text>
+<text class="chname" x="392.5" y="712.0" text-anchor="middle">=</text>
+<text class="chnums" x="443.0" y="700.0" text-anchor="end"><tspan>75</tspan><tspan x="443.0" dy="12">61</tspan><tspan x="443.0" dy="12">3D</tspan></text>
+<text class="chname" x="392.5" y="757.0" text-anchor="middle">&gt;</text>
+<text class="chnums" x="443.0" y="745.0" text-anchor="end"><tspan>76</tspan><tspan x="443.0" dy="12">62</tspan><tspan x="443.0" dy="12">3E</tspan></text>
+<text class="chname" x="392.5" y="802.0" text-anchor="middle">?</text>
+<text class="chnums" x="443.0" y="790.0" text-anchor="end"><tspan>77</tspan><tspan x="443.0" dy="12">63</tspan><tspan x="443.0" dy="12">3F</tspan></text>
+<text class="chname" x="477.5" y="127.0" text-anchor="middle">@</text>
+<text class="chnums" x="528.0" y="115.0" text-anchor="end"><tspan>100</tspan><tspan x="528.0" dy="12">64</tspan><tspan x="528.0" dy="12">40</tspan></text>
+<text class="chname" x="477.5" y="172.0" text-anchor="middle">A</text>
+<text class="chnums" x="528.0" y="160.0" text-anchor="end"><tspan>101</tspan><tspan x="528.0" dy="12">65</tspan><tspan x="528.0" dy="12">41</tspan></text>
+<text class="chname" x="477.5" y="217.0" text-anchor="middle">B</text>
+<text class="chnums" x="528.0" y="205.0" text-anchor="end"><tspan>102</tspan><tspan x="528.0" dy="12">66</tspan><tspan x="528.0" dy="12">42</tspan></text>
+<text class="chname" x="477.5" y="262.0" text-anchor="middle">C</text>
+<text class="chnums" x="528.0" y="250.0" text-anchor="end"><tspan>103</tspan><tspan x="528.0" dy="12">67</tspan><tspan x="528.0" dy="12">43</tspan></text>
+<text class="chname" x="477.5" y="307.0" text-anchor="middle">D</text>
+<text class="chnums" x="528.0" y="295.0" text-anchor="end"><tspan>104</tspan><tspan x="528.0" dy="12">68</tspan><tspan x="528.0" dy="12">44</tspan></text>
+<text class="chname" x="477.5" y="352.0" text-anchor="middle">E</text>
+<text class="chnums" x="528.0" y="340.0" text-anchor="end"><tspan>105</tspan><tspan x="528.0" dy="12">69</tspan><tspan x="528.0" dy="12">45</tspan></text>
+<text class="chname" x="477.5" y="397.0" text-anchor="middle">F</text>
+<text class="chnums" x="528.0" y="385.0" text-anchor="end"><tspan>106</tspan><tspan x="528.0" dy="12">70</tspan><tspan x="528.0" dy="12">46</tspan></text>
+<text class="chname" x="477.5" y="442.0" text-anchor="middle">G</text>
+<text class="chnums" x="528.0" y="430.0" text-anchor="end"><tspan>107</tspan><tspan x="528.0" dy="12">71</tspan><tspan x="528.0" dy="12">47</tspan></text>
+<text class="chname" x="477.5" y="487.0" text-anchor="middle">H</text>
+<text class="chnums" x="528.0" y="475.0" text-anchor="end"><tspan>110</tspan><tspan x="528.0" dy="12">72</tspan><tspan x="528.0" dy="12">48</tspan></text>
+<text class="chname" x="477.5" y="532.0" text-anchor="middle">I</text>
+<text class="chnums" x="528.0" y="520.0" text-anchor="end"><tspan>111</tspan><tspan x="528.0" dy="12">73</tspan><tspan x="528.0" dy="12">49</tspan></text>
+<text class="chname" x="477.5" y="577.0" text-anchor="middle">J</text>
+<text class="chnums" x="528.0" y="565.0" text-anchor="end"><tspan>112</tspan><tspan x="528.0" dy="12">74</tspan><tspan x="528.0" dy="12">4A</tspan></text>
+<text class="chname" x="477.5" y="622.0" text-anchor="middle">K</text>
+<text class="chnums" x="528.0" y="610.0" text-anchor="end"><tspan>113</tspan><tspan x="528.0" dy="12">75</tspan><tspan x="528.0" dy="12">4B</tspan></text>
+<text class="chname" x="477.5" y="667.0" text-anchor="middle">L</text>
+<text class="chnums" x="528.0" y="655.0" text-anchor="end"><tspan>114</tspan><tspan x="528.0" dy="12">76</tspan><tspan x="528.0" dy="12">4C</tspan></text>
+<text class="chname" x="477.5" y="712.0" text-anchor="middle">M</text>
+<text class="chnums" x="528.0" y="700.0" text-anchor="end"><tspan>115</tspan><tspan x="528.0" dy="12">77</tspan><tspan x="528.0" dy="12">4D</tspan></text>
+<text class="chname" x="477.5" y="757.0" text-anchor="middle">N</text>
+<text class="chnums" x="528.0" y="745.0" text-anchor="end"><tspan>116</tspan><tspan x="528.0" dy="12">78</tspan><tspan x="528.0" dy="12">4E</tspan></text>
+<text class="chname" x="477.5" y="802.0" text-anchor="middle">O</text>
+<text class="chnums" x="528.0" y="790.0" text-anchor="end"><tspan>117</tspan><tspan x="528.0" dy="12">79</tspan><tspan x="528.0" dy="12">4F</tspan></text>
+<text class="chname" x="562.5" y="127.0" text-anchor="middle">P</text>
+<text class="chnums" x="613.0" y="115.0" text-anchor="end"><tspan>120</tspan><tspan x="613.0" dy="12">80</tspan><tspan x="613.0" dy="12">50</tspan></text>
+<text class="chname" x="562.5" y="172.0" text-anchor="middle">Q</text>
+<text class="chnums" x="613.0" y="160.0" text-anchor="end"><tspan>121</tspan><tspan x="613.0" dy="12">81</tspan><tspan x="613.0" dy="12">51</tspan></text>
+<text class="chname" x="562.5" y="217.0" text-anchor="middle">R</text>
+<text class="chnums" x="613.0" y="205.0" text-anchor="end"><tspan>122</tspan><tspan x="613.0" dy="12">82</tspan><tspan x="613.0" dy="12">52</tspan></text>
+<text class="chname" x="562.5" y="262.0" text-anchor="middle">S</text>
+<text class="chnums" x="613.0" y="250.0" text-anchor="end"><tspan>123</tspan><tspan x="613.0" dy="12">83</tspan><tspan x="613.0" dy="12">53</tspan></text>
+<text class="chname" x="562.5" y="307.0" text-anchor="middle">T</text>
+<text class="chnums" x="613.0" y="295.0" text-anchor="end"><tspan>124</tspan><tspan x="613.0" dy="12">84</tspan><tspan x="613.0" dy="12">54</tspan></text>
+<text class="chname" x="562.5" y="352.0" text-anchor="middle">U</text>
+<text class="chnums" x="613.0" y="340.0" text-anchor="end"><tspan>125</tspan><tspan x="613.0" dy="12">85</tspan><tspan x="613.0" dy="12">55</tspan></text>
+<text class="chname" x="562.5" y="397.0" text-anchor="middle">V</text>
+<text class="chnums" x="613.0" y="385.0" text-anchor="end"><tspan>126</tspan><tspan x="613.0" dy="12">86</tspan><tspan x="613.0" dy="12">56</tspan></text>
+<text class="chname" x="562.5" y="442.0" text-anchor="middle">W</text>
+<text class="chnums" x="613.0" y="430.0" text-anchor="end"><tspan>127</tspan><tspan x="613.0" dy="12">87</tspan><tspan x="613.0" dy="12">57</tspan></text>
+<text class="chname" x="562.5" y="487.0" text-anchor="middle">X</text>
+<text class="chnums" x="613.0" y="475.0" text-anchor="end"><tspan>130</tspan><tspan x="613.0" dy="12">88</tspan><tspan x="613.0" dy="12">58</tspan></text>
+<text class="chname" x="562.5" y="532.0" text-anchor="middle">Y</text>
+<text class="chnums" x="613.0" y="520.0" text-anchor="end"><tspan>131</tspan><tspan x="613.0" dy="12">89</tspan><tspan x="613.0" dy="12">59</tspan></text>
+<text class="chname" x="562.5" y="577.0" text-anchor="middle">Z</text>
+<text class="chnums" x="613.0" y="565.0" text-anchor="end"><tspan>132</tspan><tspan x="613.0" dy="12">90</tspan><tspan x="613.0" dy="12">5A</tspan></text>
+<text class="chname" x="562.5" y="622.0" text-anchor="middle">[</text>
+<text class="chnums" x="613.0" y="610.0" text-anchor="end"><tspan>133</tspan><tspan x="613.0" dy="12">91</tspan><tspan x="613.0" dy="12">5B</tspan></text>
+<text class="chname" x="562.5" y="667.0" text-anchor="middle">\</text>
+<text class="chnums" x="613.0" y="655.0" text-anchor="end"><tspan>134</tspan><tspan x="613.0" dy="12">92</tspan><tspan x="613.0" dy="12">5C</tspan></text>
+<text class="chname" x="562.5" y="712.0" text-anchor="middle">]</text>
+<text class="chnums" x="613.0" y="700.0" text-anchor="end"><tspan>135</tspan><tspan x="613.0" dy="12">93</tspan><tspan x="613.0" dy="12">5D</tspan></text>
+<text class="chname" x="562.5" y="757.0" text-anchor="middle">^</text>
+<text class="chnums" x="613.0" y="745.0" text-anchor="end"><tspan>136</tspan><tspan x="613.0" dy="12">94</tspan><tspan x="613.0" dy="12">5E</tspan></text>
+<text class="chname" x="562.5" y="802.0" text-anchor="middle">_</text>
+<text class="chnums" x="613.0" y="790.0" text-anchor="end"><tspan>137</tspan><tspan x="613.0" dy="12">95</tspan><tspan x="613.0" dy="12">5F</tspan></text>
+<text class="chname" x="647.5" y="127.0" text-anchor="middle">`</text>
+<text class="chnums" x="698.0" y="115.0" text-anchor="end"><tspan>140</tspan><tspan x="698.0" dy="12">96</tspan><tspan x="698.0" dy="12">60</tspan></text>
+<text class="chname" x="647.5" y="172.0" text-anchor="middle">a</text>
+<text class="chnums" x="698.0" y="160.0" text-anchor="end"><tspan>141</tspan><tspan x="698.0" dy="12">97</tspan><tspan x="698.0" dy="12">61</tspan></text>
+<text class="chname" x="647.5" y="217.0" text-anchor="middle">b</text>
+<text class="chnums" x="698.0" y="205.0" text-anchor="end"><tspan>142</tspan><tspan x="698.0" dy="12">98</tspan><tspan x="698.0" dy="12">62</tspan></text>
+<text class="chname" x="647.5" y="262.0" text-anchor="middle">c</text>
+<text class="chnums" x="698.0" y="250.0" text-anchor="end"><tspan>143</tspan><tspan x="698.0" dy="12">99</tspan><tspan x="698.0" dy="12">63</tspan></text>
+<text class="chname" x="647.5" y="307.0" text-anchor="middle">d</text>
+<text class="chnums" x="698.0" y="295.0" text-anchor="end"><tspan>144</tspan><tspan x="698.0" dy="12">100</tspan><tspan x="698.0" dy="12">64</tspan></text>
+<text class="chname" x="647.5" y="352.0" text-anchor="middle">e</text>
+<text class="chnums" x="698.0" y="340.0" text-anchor="end"><tspan>145</tspan><tspan x="698.0" dy="12">101</tspan><tspan x="698.0" dy="12">65</tspan></text>
+<text class="chname" x="647.5" y="397.0" text-anchor="middle">f</text>
+<text class="chnums" x="698.0" y="385.0" text-anchor="end"><tspan>146</tspan><tspan x="698.0" dy="12">102</tspan><tspan x="698.0" dy="12">66</tspan></text>
+<text class="chname" x="647.5" y="442.0" text-anchor="middle">g</text>
+<text class="chnums" x="698.0" y="430.0" text-anchor="end"><tspan>147</tspan><tspan x="698.0" dy="12">103</tspan><tspan x="698.0" dy="12">67</tspan></text>
+<text class="chname" x="647.5" y="487.0" text-anchor="middle">h</text>
+<text class="chnums" x="698.0" y="475.0" text-anchor="end"><tspan>150</tspan><tspan x="698.0" dy="12">104</tspan><tspan x="698.0" dy="12">68</tspan></text>
+<text class="chname" x="647.5" y="532.0" text-anchor="middle">i</text>
+<text class="chnums" x="698.0" y="520.0" text-anchor="end"><tspan>151</tspan><tspan x="698.0" dy="12">105</tspan><tspan x="698.0" dy="12">69</tspan></text>
+<text class="chname" x="647.5" y="577.0" text-anchor="middle">j</text>
+<text class="chnums" x="698.0" y="565.0" text-anchor="end"><tspan>152</tspan><tspan x="698.0" dy="12">106</tspan><tspan x="698.0" dy="12">6A</tspan></text>
+<text class="chname" x="647.5" y="622.0" text-anchor="middle">k</text>
+<text class="chnums" x="698.0" y="610.0" text-anchor="end"><tspan>153</tspan><tspan x="698.0" dy="12">107</tspan><tspan x="698.0" dy="12">6B</tspan></text>
+<text class="chname" x="647.5" y="667.0" text-anchor="middle">l</text>
+<text class="chnums" x="698.0" y="655.0" text-anchor="end"><tspan>154</tspan><tspan x="698.0" dy="12">108</tspan><tspan x="698.0" dy="12">6C</tspan></text>
+<text class="chname" x="647.5" y="712.0" text-anchor="middle">m</text>
+<text class="chnums" x="698.0" y="700.0" text-anchor="end"><tspan>155</tspan><tspan x="698.0" dy="12">109</tspan><tspan x="698.0" dy="12">6D</tspan></text>
+<text class="chname" x="647.5" y="757.0" text-anchor="middle">n</text>
+<text class="chnums" x="698.0" y="745.0" text-anchor="end"><tspan>156</tspan><tspan x="698.0" dy="12">110</tspan><tspan x="698.0" dy="12">6E</tspan></text>
+<text class="chname" x="647.5" y="802.0" text-anchor="middle">o</text>
+<text class="chnums" x="698.0" y="790.0" text-anchor="end"><tspan>157</tspan><tspan x="698.0" dy="12">111</tspan><tspan x="698.0" dy="12">6F</tspan></text>
+<text class="chname" x="732.5" y="127.0" text-anchor="middle">p</text>
+<text class="chnums" x="783.0" y="115.0" text-anchor="end"><tspan>160</tspan><tspan x="783.0" dy="12">112</tspan><tspan x="783.0" dy="12">70</tspan></text>
+<text class="chname" x="732.5" y="172.0" text-anchor="middle">q</text>
+<text class="chnums" x="783.0" y="160.0" text-anchor="end"><tspan>161</tspan><tspan x="783.0" dy="12">113</tspan><tspan x="783.0" dy="12">71</tspan></text>
+<text class="chname" x="732.5" y="217.0" text-anchor="middle">r</text>
+<text class="chnums" x="783.0" y="205.0" text-anchor="end"><tspan>162</tspan><tspan x="783.0" dy="12">114</tspan><tspan x="783.0" dy="12">72</tspan></text>
+<text class="chname" x="732.5" y="262.0" text-anchor="middle">s</text>
+<text class="chnums" x="783.0" y="250.0" text-anchor="end"><tspan>163</tspan><tspan x="783.0" dy="12">115</tspan><tspan x="783.0" dy="12">73</tspan></text>
+<text class="chname" x="732.5" y="307.0" text-anchor="middle">t</text>
+<text class="chnums" x="783.0" y="295.0" text-anchor="end"><tspan>164</tspan><tspan x="783.0" dy="12">116</tspan><tspan x="783.0" dy="12">74</tspan></text>
+<text class="chname" x="732.5" y="352.0" text-anchor="middle">u</text>
+<text class="chnums" x="783.0" y="340.0" text-anchor="end"><tspan>165</tspan><tspan x="783.0" dy="12">117</tspan><tspan x="783.0" dy="12">75</tspan></text>
+<text class="chname" x="732.5" y="397.0" text-anchor="middle">v</text>
+<text class="chnums" x="783.0" y="385.0" text-anchor="end"><tspan>166</tspan><tspan x="783.0" dy="12">118</tspan><tspan x="783.0" dy="12">76</tspan></text>
+<text class="chname" x="732.5" y="442.0" text-anchor="middle">w</text>
+<text class="chnums" x="783.0" y="430.0" text-anchor="end"><tspan>167</tspan><tspan x="783.0" dy="12">119</tspan><tspan x="783.0" dy="12">77</tspan></text>
+<text class="chname" x="732.5" y="487.0" text-anchor="middle">x</text>
+<text class="chnums" x="783.0" y="475.0" text-anchor="end"><tspan>170</tspan><tspan x="783.0" dy="12">120</tspan><tspan x="783.0" dy="12">78</tspan></text>
+<text class="chname" x="732.5" y="532.0" text-anchor="middle">y</text>
+<text class="chnums" x="783.0" y="520.0" text-anchor="end"><tspan>171</tspan><tspan x="783.0" dy="12">121</tspan><tspan x="783.0" dy="12">79</tspan></text>
+<text class="chname" x="732.5" y="577.0" text-anchor="middle">z</text>
+<text class="chnums" x="783.0" y="565.0" text-anchor="end"><tspan>172</tspan><tspan x="783.0" dy="12">122</tspan><tspan x="783.0" dy="12">7A</tspan></text>
+<text class="chname" x="732.5" y="622.0" text-anchor="middle">{</text>
+<text class="chnums" x="783.0" y="610.0" text-anchor="end"><tspan>173</tspan><tspan x="783.0" dy="12">123</tspan><tspan x="783.0" dy="12">7B</tspan></text>
+<text class="chname" x="732.5" y="667.0" text-anchor="middle">|</text>
+<text class="chnums" x="783.0" y="655.0" text-anchor="end"><tspan>174</tspan><tspan x="783.0" dy="12">124</tspan><tspan x="783.0" dy="12">7C</tspan></text>
+<text class="chname" x="732.5" y="712.0" text-anchor="middle">}</text>
+<text class="chnums" x="783.0" y="700.0" text-anchor="end"><tspan>175</tspan><tspan x="783.0" dy="12">125</tspan><tspan x="783.0" dy="12">7D</tspan></text>
+<text class="chname" x="732.5" y="757.0" text-anchor="middle">~</text>
+<text class="chnums" x="783.0" y="745.0" text-anchor="end"><tspan>176</tspan><tspan x="783.0" dy="12">126</tspan><tspan x="783.0" dy="12">7E</tspan></text>
+<text class="chname" x="732.5" y="802.0" text-anchor="middle">DEL</text>
+<text class="chnums" x="783.0" y="790.0" text-anchor="end"><tspan>177</tspan><tspan x="783.0" dy="12">127</tspan><tspan x="783.0" dy="12">7F</tspan></text>
+<rect x="110.0" y="10.0" width="680.0" height="810.0" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="110.0" y1="35.0" x2="790.0" y2="35.0" stroke="#000" stroke-width="2"/>
+<line x1="110.0" y1="100.0" x2="790.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<line x1="110.0" y1="145.0" x2="790.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="190.0" x2="790.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="235.0" x2="790.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="280.0" x2="790.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="325.0" x2="790.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="370.0" x2="790.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="415.0" x2="790.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="460.0" x2="790.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="505.0" x2="790.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="550.0" x2="790.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="595.0" x2="790.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="640.0" x2="790.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="685.0" x2="790.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="730.0" x2="790.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="775.0" x2="790.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<line x1="165.0" y1="100.0" x2="165.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="152.5" y="28.0" text-anchor="middle">0</text>
+<text class="chnums" x="144.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="161.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="178.0" y="89.0" text-anchor="middle">0</text>
+<line x1="195.0" y1="10.0" x2="195.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="250.0" y1="100.0" x2="250.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="237.5" y="28.0" text-anchor="middle">1</text>
+<text class="chnums" x="229.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="246.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="263.0" y="89.0" text-anchor="middle">1</text>
+<line x1="280.0" y1="10.0" x2="280.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="335.0" y1="100.0" x2="335.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="322.5" y="28.0" text-anchor="middle">2</text>
+<text class="chnums" x="314.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="331.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="348.0" y="89.0" text-anchor="middle">0</text>
+<line x1="365.0" y1="10.0" x2="365.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="420.0" y1="100.0" x2="420.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="407.5" y="28.0" text-anchor="middle">3</text>
+<text class="chnums" x="399.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="416.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="433.0" y="89.0" text-anchor="middle">1</text>
+<line x1="450.0" y1="10.0" x2="450.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="505.0" y1="100.0" x2="505.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="492.5" y="28.0" text-anchor="middle">4</text>
+<text class="chnums" x="484.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="501.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="518.0" y="89.0" text-anchor="middle">0</text>
+<line x1="535.0" y1="10.0" x2="535.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="590.0" y1="100.0" x2="590.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="577.5" y="28.0" text-anchor="middle">5</text>
+<text class="chnums" x="569.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="586.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="603.0" y="89.0" text-anchor="middle">1</text>
+<line x1="620.0" y1="10.0" x2="620.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="675.0" y1="100.0" x2="675.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="662.5" y="28.0" text-anchor="middle">6</text>
+<text class="chnums" x="654.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="671.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="688.0" y="89.0" text-anchor="middle">0</text>
+<line x1="705.0" y1="10.0" x2="705.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="760.0" y1="100.0" x2="760.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="747.5" y="28.0" text-anchor="middle">7</text>
+<text class="chnums" x="739.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="756.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="773.0" y="89.0" text-anchor="middle">1</text>
+<rect x="110.0" y="878.5" width="100.0" height="52.9" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="174.7" y1="878.5" x2="174.7" y2="931.4" stroke="#000" stroke-width="1"/>
+<text class="chname" x="142.4" y="904.4" text-anchor="middle">ESC</text>
+<text class="chnums" x="201.8" y="896.1" text-anchor="end"><tspan>33</tspan><tspan x="201.8" dy="14.1">27</tspan><tspan x="201.8" dy="14.1">1B</tspan></text>
+<text class="chnums" x="221.8" y="896.1" text-anchor="start"><tspan>OCTAL</tspan><tspan x="221.8" dy="14.1">DECIMAL</tspan><tspan x="221.8" dy="14.1">HEX</tspan></text>
+<text class="chnums" x="105.0" y="896.1" text-anchor="end">CHARACTER</text>
+<text class="chkey" x="105.0" y="873.5" text-anchor="end">KEY</text>
+<text class="drawpart" x="790.0" y="931.4" text-anchor="end">MA-0893A-83</text>
+  </g>
+</svg>
+<figcaption>Figure 13-1 7-Bit ASCII Character Set</figcaption>
+</figure>
+
+<p>The function of a valid ASCII character may depend on (1) which 4010/4014
+operating mode the terminal is using when the character is received, and (2)
+whether or not the ASCII character is part of an escape sequence.</p>
+<p><a href="#T13-1">Table 13-1</a> lists the valid ASCII codes for 4010/4014 mode and briefly describes
+their different functions. Later sections on control characters, escape sequences,
+and 4010/4014 operating modes provide more details.</p>
+<table id="T13-1" class="majortable">
+<caption>Table 13-1 ASCII Character Code Functions</caption>
+<thead>
+<tr>
+<th rowspan="2">ASCII Character</th>
+<th colspan="4">Operating Mode Value</th>
+</tr>
+<tr>
+<th>Alpha</th>
+<th>Graph</th>
+<th>Bypass/GIN</th>
+<th>LCE Flag*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUL</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Set LCE.</td>
+</tr>
+<tr>
+<td>SOH</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>STX</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>ETX</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>EOT</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>ENQ</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Return terminal status.</td>
+</tr>
+<tr>
+<td>ACK</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>BEL</td>
+<td>Ring bell.</td>
+<td>Ring bell.</td>
+<td>Ring bell.</td>
+<td>Ring bell.</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>Left 1 space.</td>
+<td>–</td>
+<td>–</td>
+<td>Left 1 space.</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>Right 1 space.</td>
+<td>–</td>
+<td>–</td>
+<td>Right 1 space.</td>
+</tr>
+<tr>
+<td>LF</td>
+<td>Down 1 line.</td>
+<td>–</td>
+<td>Down 1 line.</td>
+<td>Set LCE.†</td>
+</tr>
+<tr>
+<td>VT</td>
+<td>Up 1 line.</td>
+<td>–</td>
+<td>–</td>
+<td>Up 1 line.</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Erase and home (page).</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>Move to left margin.</td>
+<td>Set alpha and left.</td>
+<td>Set alpha and left.</td>
+<td>Set LCE.†</td>
+</tr>
+<tr>
+<td>SO</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DLE</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DC1</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DC2</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DC3</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DC4</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>NAK</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>SYN</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>ETB</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Make hard copy.</td>
+</tr>
+<tr>
+<td>CAN</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Set bypass.</td>
+</tr>
+<tr>
+<td>EM</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>Set GIN and bypass.</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>Set LCE.</td>
+<td>Set LCE.</td>
+<td>Set LCE.</td>
+<td>Set LCE.</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>Set point plot.</td>
+<td>Set point plot.</td>
+<td>Set point plot.</td>
+<td>Set point plot.</td>
+</tr>
+<tr>
+<td>GS</td>
+<td>Set graph and dark vector.</td>
+<td>Do a dark vector.</td>
+<td>Set graph and dark vector.</td>
+<td>Set graph and dark vector.</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>Set incremental plot.</td>
+<td>Set incremental plot.</td>
+<td>Set incremental plot.</td>
+<td>Set incremental plot.</td>
+</tr>
+<tr>
+<td>US</td>
+<td>–</td>
+<td>Set alpha mode.</td>
+<td>Set alpha mode.</td>
+<td>Set alpha mode.</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Right 1 space.</td>
+<td>High X or high Y.</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>"</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>#</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>$</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>'</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>(</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>)</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>,</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<th colspan="5">Aligned Mode</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Smallest size‡</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Largest size‡</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Largest size‡</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Largest size‡</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Largest size</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size</td>
+</tr>
+<tr>
+<td>:</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Smallest size</td>
+</tr>
+<tr>
+<td>;</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Small size</td>
+</tr>
+<tr>
+<th colspan="5">Enlarged Mode</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Small size‡</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size‡</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size‡</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size‡</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Large size</td>
+</tr>
+<tr>
+<td>:</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Small size</td>
+</tr>
+<tr>
+<td>;</td>
+<td>Print character</td>
+<td>High X or high Y.</td>
+<td>–</td>
+<td>Small size</td>
+</tr>
+<tr>
+<td colspan="5"> </td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>=</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>?</td>
+<td>Print character</td>
+<td>High X or high Y</td>
+<td>–</td>
+<td>Low Y for graph</td>
+</tr>
+<tr>
+<td>@</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>U</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>[</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>\</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>]</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>_</td>
+<td>Print character</td>
+<td>Low X</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>`</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) solid</td>
+</tr>
+<tr>
+<td>a</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) dotted</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) dot-dash</td>
+</tr>
+<tr>
+<td>c</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) short dash</td>
+</tr>
+<tr>
+<td>d</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) long dash</td>
+</tr>
+<tr>
+<td>e</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) solid</td>
+</tr>
+<tr>
+<td>f</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) solid</td>
+</tr>
+<tr>
+<td>g</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(N) solid</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) solid</td>
+</tr>
+<tr>
+<td>i</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) dotted</td>
+</tr>
+<tr>
+<td>j</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) dot-dash</td>
+</tr>
+<tr>
+<td>k</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) short dash</td>
+</tr>
+<tr>
+<td>l</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) long dash</td>
+</tr>
+<tr>
+<td>m</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) solid</td>
+</tr>
+<tr>
+<td>n</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) solid</td>
+</tr>
+<tr>
+<td>o</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>(B) solid</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>q</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>r</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>s</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>u</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>v</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>z</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>{</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>|</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>}</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>~</td>
+<td>Print character</td>
+<td>Low Y</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>DEL</td>
+<td>–</td>
+<td>Low Y or no-op§</td>
+<td>–</td>
+<td>Set LCE.</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="5">* The ASCII character performs the function listed when used as part of an
+escape sequence. The LCE flag is an escape sequence introducer condition.</td>
+</tr>
+<tr>
+<td colspan="5">† Filler CRs and filler LFs have no effect.</td>
+</tr>
+<tr>
+<td colspan="5">‡ ESC 0, ESC 1, ESC 2, and ESC 3 are not recommended. These sequences
+may not be supported in future terminals. Use ESC 8, ESC 9, ESC :, or ESC ; for character size selection.</td>
+</tr>
+<tr>
+<td colspan="5">§ In graph mode, you can disable the effect of DEL as a low Y character by
+selecting the "DEL implies low Y" field in the Graphics Set-Up screen. If DEL cannot be used,
+the program can substitute ESC ?, which performs the same function as DEL.</td>
+</tr>
+<tr>
+<td colspan="5">(N) = normal, (B) = bold.</td>
+</tr>
+</tfoot>
+</table>
+<h2 id="S13.6">Locator Device (Mouse or Graphics Tablet)</h2>
+<p>You can use a mouse or graphics tablet in 4010/4014 mode. You can use the
+mouse, tablet, or keyboard arrow keys to move the cursor and send reports in
+4010/4014 graphics input (GIN) mode. <a href="chapter15.html">Chapter 15</a> describes how to use a
+mouse or tablet in GIN mode.</p>
+<h2 id="S13.7">Control Characters</h2>
+<p><a href="#T13-2">Table 13-2</a> describes the ASCII control characters that the VT300 recognizes in
+4010/4014 mode. The terminal ignores other ASCII control characters in this
+mode. These characters can come from the host or the VT300 keyboard.</p>
+<p class="note">NOTE: Tables <a href="#T13-2">13-2</a> and <a href="#T13-3">13-3</a> list the location (column and row) of each control
+character in the ASCII character set (<a href="#F13-1">Figure 13-1</a>). The character set provides
+the octal, decimal, and hex values for each ASCII code.</p>
+<table id="T13-2" class="majortable">
+<caption>Table 13-2 Valid ASCII Control Characters in 4010/4014 Mode</caption>
+<thead>
+<tr>
+<th>Mnemonic</th>
+<th>Column/ Row</th>
+<th>Name</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BEL</td>
+<td>0/7</td>
+<td>Bell</td>
+<td>Rings the bell tone (if the bell is enabled), clears the bypass condition, and clears the
+condition that prevents the terminal from responding to carriage returns.</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>0/8</td>
+<td>Backspace</td>
+<td>Moves the cursor left one position. If the current position is at the left margin, no action occurs.</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>0/9</td>
+<td>Horizontal tab</td>
+<td>Moves the cursor one tab space to the right. If the current position is already at the end of the line, HT causes an automatic line feed and carriage return.</td>
+</tr>
+<tr>
+<td>LF</td>
+<td>0/10</td>
+<td>Line feed</td>
+<td>Moves the cursor down one line. If the cursor is already on the bottom row of the screen, LF moves the cursor to the top of the screen and switches margins. Clears the bypass condition.</td>
+</tr>
+<tr>
+<td>VT</td>
+<td>0/11</td>
+<td>Vertical tab</td>
+<td>Moves the cursor up one line. The cursor stops at the top line.</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>0/13</td>
+<td>Carriage return</td>
+<td>Moves the cursor to the current left margin. Resets the terminal from graph mode to alpha mode.
+Cancels the crosshair cursor when setting alpha mode, but leaves the terminal with an undefined margin and page full status.
+Clears the bypass condition.</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>1/11</td>
+<td>Escape</td>
+<td>Escape sequence introducer.</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>1/12</td>
+<td>File separator</td>
+<td>Selects point plot mode.</td>
+</tr>
+<tr>
+<td>GS</td>
+<td>1/13</td>
+<td>Group separator</td>
+<td>Selects graph mode.</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>1/14</td>
+<td>Record separator</td>
+<td>Selects incremental plot mode.</td>
+</tr>
+<tr>
+<td>US</td>
+<td>1/15</td>
+<td>Unit separator</td>
+<td>Resets terminal from graph mode to alpha mode. Clears the bypass condition.</td>
+</tr>
+</tbody>
+</table>
+<p>To send control characters from the keyboard, you hold down the <b>Ctrl</b> key and
+press another key. <a href="#T13-3">Table 13-3</a> lists the keys you use to send ASCII control
+characters from the keyboard.</p>
+<p>The terminal buffers and stores control characters received in GIN mode, until
+the terminal leaves GIN mode.</p>
+<table id="T13-3" class="majortable">
+<caption>Table 13-3 Keys Used to Send ASCII Control Characters</caption>
+<thead>
+<tr>
+<th>Mnemonic</th>
+<th>Column/ Row</th>
+<th>Key Pressed with Ctrl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ENQ</td>
+<td>0/5</td>
+<td>E</td>
+</tr>
+<tr>
+<td>BEL</td>
+<td>0/7</td>
+<td>G</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>0/8</td>
+<td>H</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>0/9</td>
+<td>I</td>
+</tr>
+<tr>
+<td>LF</td>
+<td>0/10</td>
+<td>J</td>
+</tr>
+<tr>
+<td>VT</td>
+<td>0/11</td>
+<td>K</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>0/12</td>
+<td>L</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>0/13</td>
+<td>M</td>
+</tr>
+<tr>
+<td>ETB</td>
+<td>1/7</td>
+<td>W</td>
+</tr>
+<tr>
+<td>CAN</td>
+<td>1/8</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>1/10</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>1/11</td>
+<td>3</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>1/12</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GS</td>
+<td>1/13</td>
+<td>5</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>1/14</td>
+<td>6</td>
+</tr>
+<tr>
+<td>US</td>
+<td>1/15</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S13.8">Escape Sequences</h2>
+<p>The following sections describe the escape sequences you can use in 4010/4014
+mode. The terminal ignores any other escape sequences received in this mode.
+The valid escape sequences can come from the host or the VT300 keyboard.</p>
+<p>The sequences contain control characters. To send the control character codes
+from the keyboard, you hold down the <b>Ctrl</b> key and press another key. <a href="#T13-3">Table
+13-3</a> lists the keys to press for each control character.</p>
+<p>In GIN mode, the terminal buffers and stores escape sequences, until the terminal
+exits GIN mode. After exiting GIN mode, the terminal performs the buffered
+escape sequences.</p>
+<h3 id="S13.8.1">Available Functions</h3>
+<p>You can perform the following functions with escape sequences in 4010/4014
+mode.</p>
+<ul>
+<li>Request terminal status.</li>
+<li>Print hard copy of the bitmap.</li>
+<li>Set bypass condition.</li>
+<li>Set alpha mode.</li>
+<li>Set GIN mode.</li>
+<li>Set point plot mode.</li>
+<li>Select raster writing mode features.</li>
+<li>Select character sizes.</li>
+<li>Select vector patterns.</li>
+<li>Prevent response to carriage returns (CRs) or line feeds (LFs).</li>
+<li>Set LCE flag. (Indicates an escape sequence introduction condition.)</li>
+<li>Delete character.</li>
+</ul>
+<h3 id="S13.8.2">Request Terminal Status</h3>
+<p>This sequence sets the terminal to the bypass condition and requests the status
+of the terminal.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>ENQ</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/5</td>
+</tr>
+</tbody>
+</table></div>
+<p>The response of the terminal depends on the current operating mode. In alpha
+mode, the terminal sends status information and the address of the lower-left
+corner of the alpha cursor. In graph mode, the terminal sends status information
+and the address of the current cursor position.</p>
+<h3 id="S13.8.3">Print Hard Copy of the Bitmap</h3>
+<p>This sequence prints a hard copy of the terminal's bitmap by using the sixel
+protocol (<a href="chapter16.html">Chapter 16</a>). The sequence also clears the bypass condition. The sequence
+only works when a printer is connected to the terminal's printer port.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>ETB</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/7</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.4">Set Bypass Condition</h3>
+<p>This sequence selects the bypass condition. In the bypass condition, the VT300
+ignores any data received from the host.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>CAN</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/8</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.5">Set Alpha Mode</h3>
+<p>This sequence selects alpha mode. Selecting alpha mode erases the screen,
+moves the current position to the upper-left corner, activates margin 1, and
+clears the bypass condition.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>FF</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/12</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.6">Set GIN Mode</h3>
+<p>This sequence selects graphics input mode.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>SUB</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/10</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.7">Set Point Plot Mode</h3>
+<p>This sequence selects point plot mode and sets the pattern register to solid.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>FS</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/12</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.8">Select Raster Writing Mode Features</h3>
+<p>These sequences let you use raster writing features in alpha and graph modes.</p>
+<p class="note">NOTE: These sequences are not part of the 4010/4014 protocol.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Feature</th>
+<th>Sequence</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">Overlay mode</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>/</th>
+<th>0</th>
+<th>d</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>2/15</td>
+<td>3/0</td>
+<td>6/4</td>
+</tr>
+</tbody>
+</table></td>
+<td>Set dots on.</td>
+</tr>
+<tr>
+<td class="first">Erase mode</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>/</th>
+<th>1</th>
+<th>d</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>2/15</td>
+<td>3/1</td>
+<td>6/4</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets dots off.</td>
+</tr>
+<tr>
+<td class="first">Complement mode</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>/</th>
+<th>2</th>
+<th>d</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>2/15</td>
+<td>3/2</td>
+<td>6/4</td>
+</tr>
+</tbody>
+</table></td>
+<td>Complements dots.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.8.9">Select Character Size</h3>
+<p>These sequences select character sizes, depending on whether aligned or enlarged
+characters are selected in Graphics Set-Up. There are four sizes of
+aligned characters and two sizes of enlarged characters.</p>
+<p class="note">NOTE: Digital does not recommend using <code>ESC 0</code>, <code>ESC 1</code>, <code>ESC 2</code>, and <code>ESC 3</code>.
+These sequences are not standard Tektronix sequences, and may not be supported
+in future terminals. Use <code>ESC 8</code>, <code>ESC 9</code>, <code>ESC :</code>, or <code>ESC ;</code> for character
+size selection.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Sequence</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="first" colspan="2">Aligned Mode</th>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>8</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/8</td>
+</tr>
+</tbody>
+</table></td>
+<td><strong>Selects 35 lines of 74 characters each (default).</strong></td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>9</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/9</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 38 lines of 81 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>:</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/10</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 58 lines of 121 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>;</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/11</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 64 lines of 133 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>0</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/0</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 64 lines of 133 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>1</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/1</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 35 lines of 74 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>2</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/2</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 35 lines of 74 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>3</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/3</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 35 lines of 74 characters each.</td>
+</tr>
+<tr>
+<th class="first" colspan="2">Enlarged Mode</th>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>8</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/8</td>
+</tr>
+</tbody>
+</table></td>
+<td><strong>Selects 24 lines of 69 characters each (default).</strong></td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>9</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/9</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 24 lines of 69 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>:</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/10</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 47 lines of 125 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>;</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/11</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 47 lines of 125 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>0</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/0</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 47 lines of 125 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>1</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/1</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 24 lines of 69 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>2</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/2</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 24 lines of 69 characters each.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>3</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/3</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects 24 lines of 69 characters each.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.8.10">Select Vector Patterns</h3>
+<p>These sequences select the type of pattern the terminal uses for vector drawing.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Sequence</th>
+<th>Pattern</th>
+<th>Intensity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>`</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/0</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>a</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/1</td>
+</tr>
+</tbody>
+</table></td>
+<td>Dotted</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>b</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/2</td>
+</tr>
+</tbody>
+</table></td>
+<td>Dot-dash</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>c</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/3</td>
+</tr>
+</tbody>
+</table></td>
+<td>Short dash</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>d</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/4</td>
+</tr>
+</tbody>
+</table></td>
+<td>Long dash</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>e</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/5</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>f</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/6</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>g</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/7</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>h</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>i</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/9</td>
+</tr>
+</tbody>
+</table></td>
+<td>Dotted</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>j</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/10</td>
+</tr>
+</tbody>
+</table></td>
+<td>Dot-dash</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>k</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/11</td>
+</tr>
+</tbody>
+</table></td>
+<td>Short dash</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>l</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Long dash</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>m</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/13</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>n</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/14</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Bold</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>o</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>6/15</td>
+</tr>
+</tbody>
+</table></td>
+<td>Solid</td>
+<td>Bold</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.8.11">Prevent Response to CRs or LFs</h3>
+<p>These sequences prevent the terminal from responding to carriage returns
+(CRs) or line feeds (LFs).</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>CR</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/13</td>
+</tr>
+</tbody>
+</table></td>
+<td>Prevents the terminal from responding to carriage returns.</td>
+</tr>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>LF</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/10</td>
+</tr>
+</tbody>
+</table></td>
+<td>Prevents the terminal from responding to line feeds.</td>
+</tr>
+</tbody>
+</table>
+<p>After you send these sequences, the terminal does not process any CRs or LFs
+until it receives a BEL (or some other no-operation control code). Your application
+can use these escape sequences, if your operating system environment prefers
+shorter lines and tends to insert CR and LF as fillers.</p>
+<h3 id="S13.8.12">Set LCE Flag</h3>
+<p>You can use any of these sequences to set the LCE flag. The LCE flag is an
+escape sequence introducer condition.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>DEL</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>7/15</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets the LCE flag.</td>
+</tr>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>NUL</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/0</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets the LCE flag.</td>
+</tr>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>ESC</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>1/11</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets the LCE flag.</td>
+</tr>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>CR</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/13</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets the LCE flag and prevents the terminal from responding to CRs.</td>
+</tr>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>LF</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>0/10</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sets the LCE flag and prevents the terminal from responding to LFs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.8.13">Delete Character</h3>
+<p>The 4010/4014 terminals have a "DEL implies low Y" strap option, that you
+can turn on or off in the Graphics Set-Up screen of the VT300. (See <cite>Installing
+and Using the VT330/VT340 Video Terminal</cite>.) This option lets the terminal interpret
+the ASCII DEL control character as a possible low Y value in 4010-series
+coordinate specifications.</p>
+<p>Using DEL as a low Y value may cause problems if your operating system uses
+DEL for synchronization. In such cases, you can use the following sequence as
+a substitute for the low Y coordinate value of DEL.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>?</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>3/15</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="S13.8.14">4010/4014 Functions the Terminal Ignores</h3>
+<p>The VT300 ignores the following control functions in 4010/4014 mode.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Sequence</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">ESC SO</td>
+<td>Selects alternate character set.</td>
+</tr>
+<tr>
+<td class="first">ESC SI</td>
+<td>Selects ASCII character set.</td>
+</tr>
+<tr>
+<td class="first">ESC p</td>
+<td>Sets solid vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC q</td>
+<td>Sets dotted vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC r</td>
+<td>Sets dot-dashed vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC s</td>
+<td>Sets short dashed vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC t</td>
+<td>Sets long dashed vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC u</td>
+<td>Sets solid vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC v</td>
+<td>Sets solid vector pattern with write-through.</td>
+</tr>
+<tr>
+<td class="first">ESC w</td>
+<td>Sets solid vector pattern with write-through.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.8.15">Escape Sequences for Control Characters</h3>
+<p>The following escape sequences have the same function as the control character
+listed.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Sequence</th>
+<th>Control Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">ESC BEL</td>
+<td>BEL</td>
+</tr>
+<tr>
+<td class="first">ESC BS</td>
+<td>BS</td>
+</tr>
+<tr>
+<td class="first">ESC HT</td>
+<td>HT</td>
+</tr>
+<tr>
+<td class="first">ESC VT</td>
+<td>VT</td>
+</tr>
+<tr>
+<td class="first">ESC GS</td>
+<td>GS</td>
+</tr>
+<tr>
+<td class="first">ESC RS</td>
+<td>RS</td>
+</tr>
+<tr>
+<td class="first">ESC US</td>
+<td>US</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S13.9">Entering and Exiting 4010/4014 Mode</h2>
+<p>The VT300 enters 4010/4014 in alpha mode. The terminal exits 4010/4014
+mode to VT300 mode with 7-bit controls. There are two ways to enter and exit
+4010/4014 mode.</p>
+<ul>
+<li><p><strong>Use the Graphics Set-Up screen.</strong><br/>
+See <cite>Installing and Using the VT330/VT340 Video Terminal</cite> for details.</p></li>
+<li><p><strong>Use the following escape sequences.</strong></p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>[</th>
+<th>?</th>
+<th>3</th>
+<th>8</th>
+<th>h</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>5/11</td>
+<td>3/15</td>
+<td>3/3</td>
+<td>3/8</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Enter 4010/4014 mode.</td>
+</tr>
+<tr>
+<td class="first"><table class="codeseq">
+<tbody>
+<tr>
+<th>ESC</th>
+<th>[</th>
+<th>?</th>
+<th>3</th>
+<th>8</th>
+<th>l</th>
+</tr>
+<tr>
+<td>1/11</td>
+<td>5/11</td>
+<td>3/15</td>
+<td>3/3</td>
+<td>3/8</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Exit 4010/4014 mode.</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<p>You can mix the two methods of entering and exiting 4010/4014 mode. That
+is, you can enter 4010/4014 mode via set-up and exit via escape sequences, or
+enter via escape sequences and exit via set-up.</p>
+<p>When you enter 4010/4014 mode, the VT300 erases the screen to black and
+sets the output map according to the Global Set-Up screen.</p>
+<ul>
+<li><p>The gray selection sets the output map to a gray scale.</p></li>
+<li><p>The color selection sets the output map to a gray scale for the
+VT330 and green scale for the VT340.</p></li>
+</ul>
+<p>The terminal then displays images in normal intensity (for normal beam focus)
+or in bold (for defocused beam).</p>
+<p>When you leave 4010/4014 mode, the terminal erases the screen and sets the
+output map to the factory-default state, or the state specified in set-up. The
+factory-default state is VT300 mode, 7-bit controls.</p>
+<h2 id="S13.10">Changing Operating Modes</h2>
+<p>In 4010/4014 mode, you can use five different operating modes. You use control
+characters or escape sequences to change between these operating modes.</p>
+<p><a href="#F13-2">Figure 13-2</a> shows the five operating modes available in 4010/4014 mode. The
+arrows represent possible changes between modes. Next to each arrow is
+the ASCII control character or escape sequence you use to make the mode
+change.</p>
+<table id="F13-2" class="figure">
+<caption>Figure 13-2 4010/4014 Mode Transition Diagram</caption>
+<tbody>
+<tr>
+<td><img src="ma-1177-83.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example" style="width: 25em">
+<tbody>
+<tr>
+<td colspan="2">NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>1.</td>
+<td>US, CR, ESC US, ESC FF, or Next Screen key.</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Next Screen key (or any other active non-arrow key entered from the keyboard).</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<p>Except for GIN mode, these control characters and escape sequences can come
+from the host or the keyboard. In GIN mode, the terminal buffers all host input
+until you leave GIN mode. You can only leave GIN mode from the
+keyboard.</p>
+<h2 id="S13.11">Clearing the Screen</h2>
+<p>The 4010/4014 series terminals have a clear screen key on their keyboard. In
+4010/4014 mode, you use the <b>Next Page</b> key instead. You can also clear the
+screen with the <b>Clear Display</b> feature in the Set-Up Directory screen.</p>
+<h2 id="S13.12">Bypass Condition</h2>
+<p>When you select the bypass condition, the terminal ignores any characters received
+from the host. This condition lets the terminal ignore its own transmissions
+if they are incorrectly echoed by the host.</p>
+<p>You can turn the bypass condition on from the keyboard or the host, using any
+of the following escape sequences.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>ESC CAN</td>
+<td>Selects the bypass condition only.</td>
+</tr>
+<tr>
+<td>ESC ENQ</td>
+<td>Selects the bypass condition and requests status information.</td>
+</tr>
+<tr>
+<td>ESC SUB</td>
+<td>Selects the bypass condition and places the VT300 in GIN mode.</td>
+</tr>
+</tbody>
+</table>
+<p>You can turn off the bypass condition with a control character, escape sequence,
+or the <b>Next Page</b> key.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<th colspan="2">Control Characters</th>
+</tr>
+<tr>
+<td>BEL</td>
+<td>Rings the bell tone, if the bell is enabled.</td>
+</tr>
+<tr>
+<td>LF</td>
+<td>Causes a new line operation.</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>Moves the cursor to the left margin and resets the terminal to alpha mode.</td>
+</tr>
+<tr>
+<td>US</td>
+<td>Resets the terminal from graph mode to alpha mode.</td>
+</tr>
+<tr>
+<th colspan="2">Escape Sequences</th>
+</tr>
+<tr>
+<td>ESC ETB</td>
+<td>Prints a hard copy of the bitmap.</td>
+</tr>
+<tr>
+<td>ESC FF</td>
+<td>Selects alpha mode and clears the screen.</td>
+</tr>
+<tr>
+<th colspan="2">Key</th>
+</tr>
+<tr>
+<td>Next Page</td>
+<td>Selects alpha mode and clears the screen.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S13.13">Alpha Mode</h2>
+<p>When you enter 4010/4014 mode, you automatically select alpha mode as the
+default operating mode. In alpha mode, the terminal displays received characters
+in the currently selected character size.</p>
+<p>The terminal does not display ASCII control characters and escape sequence
+characters. The terminal only processes the control characters and escape sequences
+listed in the previous sections.</p>
+<h3 id="S13.13.1">Character Sizes</h3>
+<p>In alpha mode, you can select aligned or enlarged characters. You can select
+four different sizes of aligned characters and two different sizes of enlarged
+characters. You select the character size with escape sequences.</p>
+<table>
+<thead>
+<tr>
+<th>Character Size</th>
+<th>Sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="2">Aligned Mode</th>
+</tr>
+<tr>
+<td>35 lines of 74 characters</td>
+<td><strong>ESC 8</strong> (default), ESC 1, ESC 2, or ESC 3</td>
+</tr>
+<tr>
+<td>38 lines of 81 characters</td>
+<td>ESC 9</td>
+</tr>
+<tr>
+<td>58 lines of 121 characters</td>
+<td>ESC :</td>
+</tr>
+<tr>
+<td>64 lines of 133 characters</td>
+<td>ESC ; or ESC 0</td>
+</tr>
+<tr>
+<th colspan="2">Enlarged Mode</th>
+</tr>
+<tr>
+<td>24 lines of 69 characters</td>
+<td><strong>ESC 8</strong> (default), ESC 9, ESC 1, ESC 2, or ESC 3</td>
+</tr>
+<tr>
+<td>48 lines of 124 characters</td>
+<td>ESC :, ESC ;, or ESC 0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.13.2">Margins for Two-Column Writing</h3>
+<p>In alpha mode, you can use two-column writing. This form of writing uses two
+margins. Margin 1 is at the left edge of the display area. Margin 2 is at the
+center of each row in the display area.</p>
+<p>Margin 1 is active when the terminal writes rows of characters from the left
+edge. Margin 2 is active when the terminal writes from the center of the display
+area.</p>
+<p>The active margin automatically switches after one of the following events.</p>
+<ul>
+<li><p>The terminal fills the last row for the currently active margin.</p></li>
+<li><p>The terminal receives a line feed on the last row of the display.</p></li>
+</ul>
+<p>The terminal then wraps characters around to the top row of the display, at
+the new margin.</p>
+<p>Since 4010/4014 terminals are storage tube terminals, they cannot scroll. In
+4010/4014 mode, you cannot scroll. In alpha mode, the VT300 writes characters
+as follows. (This description assumes that the terminal does not receive any
+control characters while writing.)</p>
+<ol>
+<li><p>Character processing starts on the top row, from the upper-left corner to the upper-right corner.</p></li>
+<li><p>When the terminal reaches the right edge of a row, the terminal wraps the next character to the left edge of next row down.</p></li>
+<li><p>The terminal continues writing until it fills the bottom row.</p></li>
+<li><p>When the bottom row is full, the next character wraps around to the top row at the middle of the screen.</p></li>
+<li><p>The terminal now writes characters from the middle of the screen to the right edge, overstriking any characters already displayed.</p></li>
+<li><p>As each row fills, the next character wraps to the middle of the next row.</p></li>
+<li><p>The terminal continues writing until it fills the last row.</p></li>
+<li><p>When the last row is full, the next character wraps around to the top row at the left margin. Then the process starts again.</p></li>
+</ol>
+<p>You can use one-column or two-column writing. One-column writing uses the
+full width of the screen. If you want one-column writing, then you must clear
+the screen before characters wrap around to margin 2.</p>
+<p>If you want two-column writing, then you should insert CR and LF in each row
+before writing reaches margin 2. (You can insert CR alone if you set <b>401X CR
+Processing</b> to "CR" in the Graphics Set-Up screen.) This step prevents overstriking
+of characters.</p>
+<h3 id="S13.13.3">Alpha Mode Control Characters</h3>
+<p>In alpha mode, the VT300 recognizes any valid 4010/4014 mode escape sequence
+or control character. Some control characters, however, have functions
+specific to alpha mode.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Character</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">HT</td>
+<td>Moves the cursor one space to the right.</td>
+</tr>
+<tr>
+<td class="first">VT</td>
+<td>Moves the cursor up one line.</td>
+</tr>
+<tr>
+<td class="first">LF</td>
+<td>Causes a line feed. When used on the bottom display row, LF wraps the cursor to the top row and switches margins.</td>
+</tr>
+<tr>
+<td class="first">CR</td>
+<td>Moves the cursor to the left margin. Can also cause a line feed, if you set the <b>New Line</b> feature on the Display Set-Up screen to "new line". When used on the bottom row (with the "new line" setting), CR wraps the cursor the same way LF does.</td>
+</tr>
+<tr>
+<td class="first">BS</td>
+<td>Moves the cursor to the left one position. Nothing happens if the cursor is already at the active margin.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.13.4">Erasing Characters with Spaces and Backspaces</h3>
+<p>In alpha mode, the VT300 erases a character when the terminal receives a
+space (SP) character immediately after a backspace (BS) character. The space
+character erases any character in the current character cell.</p>
+<p class="note">NOTE: This operation is not consistent with Tektronix 4010 or 4014 terminals.</p>
+<p>This action is similar to using the &lt;x] key for correcting typing errors. Most
+operating systems send a backspace, space, and backspace when they receive
+the delete (DEL) character.</p>
+<p>If the space character follows any character other than a backspace, the VT300
+does not erase a character. Therefore, you can use the space character for
+positioning.</p>
+<h2 id="S13.14">Graph Mode</h2>
+<p>In graph mode, the terminal draws vectors between the absolute coordinate values
+you select. The absolute coordinates are Tekpoint values, mapped to the
+nearest corresponding pixel on the VT300 screen. The terminal draws the vectors
+in the currently selected line pattern. The next section describes the line
+patterns available.</p>
+<p>The 4014 with the enhanced graphics module (EGM) has a 4096 × 4096
+square matrix. The top 25 percent of the Y addresses are above the top of the
+display area. If you specify coordinates in this top area, they are tracked accurately.
+However, the terminal only draws the part of the requested vector that
+appears in the display area. The rest of the vector is clipped.</p>
+<p>In graph mode, the VT300 recognizes any valid 4010/4014 mode escape sequences
+or control characters.</p>
+<h3 id="S13.14.1">Line Patterns</h3>
+<p>There are five basic line patterns you can use. Each pattern is available in normal
+or bold intensity. You select the pattern by using an escape sequence.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Pattern</th>
+<th>Sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">Solid (normal)</td>
+<td>ESC `, ESC e, ESC f, or ESC g</td>
+</tr>
+<tr>
+<td class="first">Solid (bold)</td>
+<td>ESC h, ESC m, ESC n, or ESC o</td>
+</tr>
+<tr>
+<td class="first">Dotted (normal)</td>
+<td>ESC a</td>
+</tr>
+<tr>
+<td class="first">Dotted (bold)</td>
+<td>ESC i</td>
+</tr>
+<tr>
+<td class="first">Dot-dash (normal)</td>
+<td>ESC b</td>
+</tr>
+<tr>
+<td class="first">Dot-dash (bold)</td>
+<td>ESC j</td>
+</tr>
+<tr>
+<td class="first">Short dash (normal)</td>
+<td>ESC c</td>
+</tr>
+<tr>
+<td class="first">Short dash (bold)</td>
+<td>ESC k</td>
+</tr>
+<tr>
+<td class="first">Long dash (normal)</td>
+<td>ESC d</td>
+</tr>
+<tr>
+<td class="first">Long dash (bold)</td>
+<td>ESC l (lowercase L)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S13.14.2">Drawing Command</h3>
+<p>You use the GS control character to enter graph mode from alpha mode. In
+graph mode, GS defines the start of a vector.</p>
+<p>GS does not draw vectors from the cursor position. GS draws the vector from
+the first coordinate value specified to the next value specified. If you specify
+more than two coordinates after a GS control character, the terminal draws a
+vector between every two coordinates. In the following example, the lowercase
+letters represent coordinate specifiers.</p>
+<p class="example">GS a b c d</p>
+<p>The terminal draws vectors from point <b>a</b> to point <b>b</b>, from point <b>b</b> to point <b>c</b>,
+and from point <b>c</b> to point <b>d</b>. However, if you use the following command</p>
+<p class="example">GS a b GS c d</p>
+<p>the terminal draws two separate vectors, one from <b>a</b> to <b>b</b>, and another from <b>c</b>
+to <b>d</b>.</p>
+<h3 id="S13.14.3">Encoding Coordinates</h3>
+<p>In 4010/4014 mode, you can use 10-bit or 12-bit addressing. You use 10-bit
+addressing when the Tekpoint matrix of the screen is defined as 1024 × 768.
+You use the 12-bit mode when the Tekpoint matrix of the screen is defined as
+4096 × 3072.</p>
+<p>In either case, the VT300 screen remains defined as a 623 × 480 pixel array.
+The Tekpoints are always mapped to the nearest corresponding pixel. In graph
+mode, the screen is a 614 × 480 pixel array. The extra space is for character
+drawing.</p>
+<p>For 10-bit addressing, coordinates are encoded into 4 bytes. For 12-bit addressing,
+coordinates are encoded into 5 bytes. <a href="#T13-4">Table 13-4</a> shows the order used to
+send these bytes and identifies their formats. The terminal does not send the
+extra byte for 10-bit addressing, but the order of the remaining bytes is the same.</p>
+<p>You can use shortened addresses when only parts of an address change. <a href="#T13-5">Table
+13-5</a> shows which bytes must be sent.</p>
+
+<table id="T13-4" class="majortable">
+<caption>Table 13-4 Bytes Values for Encoding Coordinates</caption>
+<thead>
+<tr>
+<th rowspan="3">Byte Name</th>
+<th id="TS1341" colspan="7" class="arrow-row"><span>7-Bit ASCII Character</span></th>
+</tr>
+<tr>
+<th colspan="2">Tag Bits</th>
+<th id="TS1342" colspan="5" class="arrow-row"><span>Address Bits</span></th>
+</tr>
+<tr>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High Y</td>
+<td>0</td>
+<td>1</td>
+<td colspan="5">5 most significant bits of Y address</td>
+</tr>
+<tr>
+<td>Extra</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td>Y2</td>
+<td>Y1</td>
+<td>X2</td>
+<td>X1</td>
+</tr>
+<tr>
+<td>Low Y</td>
+<td>1</td>
+<td>1</td>
+<td colspan="5">5 intermediate bits of Y address</td>
+</tr>
+<tr>
+<td>High X</td>
+<td>0</td>
+<td>1</td>
+<td colspan="5">5 most significant bits of X address</td>
+</tr>
+<tr>
+<td>Low X</td>
+<td>1</td>
+<td>0</td>
+<td colspan="5">5 intermediate bits of X address</td>
+</tr>
+</tbody>
+</table>
+
+<table id="T13-5" class="majortable">
+<caption>Table 13-5 Rules for Sending Short Address</caption>
+<thead>
+<tr>
+<th rowspan="2">Bytes Changed</th>
+<th id="TS1351" colspan="5" class="arrow-row"><span>Bytes Sent</span></th>
+</tr>
+<tr>
+<th>High Y</th>
+<th>Extra</th>
+<th>Low Y</th>
+<th>High X</th>
+<th>Low X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High Y</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Low Y</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>High X</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Low X</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Extra</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S13.15">Point Plot Mode</h2>
+<p>In point plot mode, the terminal draws single pixels instead of vectors.
+Remember, 4010/4014 mode uses Tekpoints for screen addressing. Tekpoints
+are expressed as absolute coordinate values. The terminal turns on a pixel that
+most closely corresponds to the Tekpoint coordinate values.</p>
+<p>Point plot mode uses the same 10-bit and 12-bit addressing methods as graph
+mode. See the previous "<a href="#S13.14.3">Encoding Coordinates</a>" section for details. As with
+graph mode, you can specify a coordinate that is not in the actual display area.
+The terminal tracks these points, but they do not appear on the screen.</p>
+<p>You can enter point plot mode from alpha or graph mode, using the FS control
+character. Point plot mode functions do not use any other control characters or
+escape sequences. However, the terminal recognizes most valid 4010/4014 mode
+control characters and escape sequences in point plot mode.</p>
+<h2 id="S13.16">Incremental Plot Mode</h2>
+<p>In this mode, the terminal plots points relative to the current cursor position.
+The screen addressing area is 4096 × 3072 Tekpoints. Since each pixel equals
+several Tekpoints, you may have to send several characters to move the drawing
+point to a new pixel.</p>
+<p>You can enter incremental mode from all modes (except GIN mode) by using
+the RS control character or ESC RS sequence. When you select RS, the terminal
+uses the current cursor position for relative movement.</p>
+<p>Incremental plot mode always draws with a solid line at normal intensity. You
+can enter commands to alter the pattern register or intensity within
+incremental plot mode, but they do not affect the drawing until you leave
+incremental plot mode.</p>
+<p>In incremental plot mode, you can change the cursor position without drawing.
+A space turns the electron beam off. Then you can use other characters to
+move the cursor in different directions. The P character turns the beam back
+on. You can use the following characters to plot points.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>Character</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Space</td>
+<td>Turns beam off/pen up.</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Turns beam on/pen down.</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Up (north)</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Up, right (northeast)</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Right (east)</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Down, right (southeast)</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Down (south)</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Down, left (southwest)</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Left (west)</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Up, left (northwest)</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: Except for the space character, you must use uppercase characters in
+incremental plot mode.</p>
+<p>The terminal recognizes most valid 4010/4014 mode control characters and escape
+sequences in incremental plot mode.</p>
+<h2 id="S13.17">Graphics Input (GIN) Mode</h2>
+<p>You can select GIN mode by using the ESC SUB sequence. When the terminal
+enters GIN mode, the following events occur.</p>
+<ul>
+<li><p>The VT300 crosshair cursor appears, with the hairs intersecting at the active position.</p>
+<ul>
+<li><p>If you are using the arrow keys or a mouse to move the cursor, the initial cursor position is at the center of the screen.</p></li>
+<li><p>If you are using a graphics tablet, the initial cursor position is at the position specified by the tablet. You cannot use the arrow keys to move the cursor when you use a graphics tablet.</p></li>
+</ul></li>
+<li><p>The bypass condition is on.</p></li>
+<li><p>The terminal buffers characters received from the host. The terminal
+does not process the characters until you leave GIN mode.</p>
+<p>When the terminal's input buffer is nearly full, the terminal sends
+an XOFF character to the host. XOFF tells the host to stop sending
+characters. If the host ignores the XOFF, the terminal loses any
+characters received when the input buffer is full.</p></li>
+</ul>
+<h3 id="S13.17.1">Using Arrow Keys to Move the Cursor</h3>
+<p>In GIN mode, you can move the crosshair cursor by using the four arrow keys.
+The arrow keys move the cursor in the direction of their arrow, as follows.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Key</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first"><img src="arrowright.png" alt="[right]"/></td>
+<td>1 pixel right</td>
+</tr>
+<tr>
+<td class="first">Shift - <img src="arrowright.png" alt="[right]"/></td>
+<td>10 pixels right</td>
+</tr>
+<tr>
+<td class="first"><img src="arrowleft.png" alt="[left]"/></td>
+<td>1 pixel left</td>
+</tr>
+<tr>
+<td class="first">Shift - <img src="arrowleft.png" alt="[left]"/></td>
+<td>10 pixels left</td>
+</tr>
+<tr>
+<td class="first"><img src="arrowup.png" alt="[up]"/></td>
+<td>1 pixel up</td>
+</tr>
+<tr>
+<td class="first">Shift - <img src="arrowup.png" alt="[up]"/></td>
+<td>10 pixels up</td>
+</tr>
+<tr>
+<td class="first"><img src="arrowdown.png" alt="[down]"/></td>
+<td>1 pixel down</td>
+</tr>
+<tr>
+<td class="first">Shift - <img src="arrowdown.png" alt="[down]"/></td>
+<td>10 pixels down</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: The arrow keys can auto repeat. You can turn the autorepeat feature
+on or off in the Keyboard Set-Up screen.</p>
+<h3 id="S13.17.2">Using a Locator Device (Mouse or Tablet)</h3>
+<p>In addition to the arrow keys, you can use a mouse or graphics tablet to move
+the cursor in GIN mode. <a href="chapter15.html">Chapter 15</a> describes how to use a locator device with
+the VT300.</p>
+<p>If you try to move the crosshair cursor past a screen boundary, the cursor
+stops at the boundary.</p>
+<p class="note">NOTE: Applications cannot cause the terminal to exit GIN mode.</p>
+<p>You must leave GIN mode from the keyboard, as follows.</p>
+<ol>
+<li><p>Move the cursor to the desired position.</p></li>
+<li><p>Press any active key (except the arrow keys) on the keyboard. The
+key you press must be active in VT100 mode. When you press the
+key, the following events occur.</p>
+<ul>
+<li><p>The terminal sends the character code or control function of the key to the host.</p></li>
+<li><p>The terminal sends the current coordinates of the crosshair cursor to the host. These coordinates are in 10-bit addressing format. (The terminal never sends the extra bytes to the host.)</p></li>
+<li><p>The crosshair cursor disappears from the screen.</p></li>
+<li><p>The VT300 leaves GIN mode and enters alpha mode.</p></li>
+</ul></li>
+<li><p>At this point, the VT300 is still in the bypass condition. You can
+turn this condition off by using one of the control characters and
+escape sequences listed in the "<a href="#S13.12">Bypass Condition</a>" section in this chapter.</p></li>
+</ol>
+<footer>
+<nav class="sections"><a href="chapter12.html">Chapter 12</a><a href="contents.html">Contents</a><a href="chapter14.html">Chapter 14</a></nav>
+</footer>
+<script src="/assets/arrows.js" defer="defer"/>
+</body>
+</html>

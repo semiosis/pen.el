@@ -1,0 +1,1829 @@
+HTTP/1.1 200 OK
+Date: Sun, 12 Jan 2025 01:22:37 GMT
+Server: Apache/2.4.61 (Amazon) OpenSSL/1.0.2k-fips PHP/5.6.40
+Last-Modified: Fri, 29 Sep 2017 06:03:39 GMT
+Accept-Ranges: bytes
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linux Tutorial - Static, Shared Dynamic and Loadable Linux Libraries</title>
+<link rel="canonical" href="http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html" />
+<meta name="keywords" content="static libraries,shared objects,dynamic libraries,loadable libraries,linux,development,ar, ranlib" />
+<meta name="description" content="YoLinux Tutorials: Static, Shared Dynamic and Loadable Linux Libraries. Linux Information Portal includes informative tutorials and links to many Linux sites. The YoLinux portal covers topics from desktop to servers and from developers to users" />
+<meta name="author" content="Greg Ippolito" />
+<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../css/yolinux-res.css"/>
+  <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shCoreYoLinux.css"/>
+  <link type="text/css" rel="stylesheet" href="syntaxhighlighter/styles/shThemeYoLinux.css"/>
+  <script type="text/javascript" src="syntaxhighlighter/src/shCoreYoLinux.js"></script>
+  <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCpp.js"></script>
+  <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushBash.js"></script>
+  <script type="text/javascript">
+        SyntaxHighlighter.config.clipboardSwf = 'syntaxhighlighter/scripts/clipboard.swf';
+        SyntaxHighlighter.all();
+  </script>
+</head>
+
+<body>
+<a name="TOP"></a>
+<div class="container-fluid">
+
+<div class="row" itemprop="breadcrumb">
+<ol class="yo-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li class="yo-breadcrumb" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a rel="home" itemprop="item" href="/"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" />
+  </li>
+  <li class="yo-breadcrumb" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/TUTORIALS/"><span itemprop="name">Tutorials</span></a><meta itemprop="position" content="2" />
+  </li>
+  <li class="yo-breadcrumb" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/TUTORIALS/LinuxTutorialC++.html"><span itemprop="name">C/C++</span></a><meta itemprop="position" content="3" />
+  </li>
+  <li class="yo-breadcrumb active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/TUTORIALS/LibraryArchives-StaticAndDynamic.html"><span itemprop="name">C/C++ Libraries</span></a><meta itemprop="position" content="4" />
+  </li>
+</ol>
+</div>
+
+<div class="row">
+<div class="col-sm-3 top-space">
+<a href="http://www.yolinux.com/"><img src="images/YoLinux_Tutorial_logo.png" alt="Yolinux.com Tutorial" border="none" /></a>
+</div>
+<div class="col-sm-9">
+<h1>Static, Shared Dynamic and Loadable Linux Libraries</h1>
+      <p>
+This tutorial discusses the philosophy behind libraries and the creation and 
+use of C/C++ library "shared components" and "plug-ins". 
+The various technologies and methodologies used and insight to their appropriate application, is also discussed.
+In this tutorial, all libraries are created using the GNU Linux compiler.
+      </p>
+      <p>
+      </p>
+<div class="ad-head" align="center">
+<iframe class="adframe" scrolling="no" allowTransparency="true"
+marginheight="0" marginwidth="0"
+width="720" frameborder="0" height="90"
+style='border:none;width:720;height:90;padding:0;'
+src="/ADVERTISING/iframe728x90px-ValueClick.html">
+</iframe>
+</div>
+
+<p>
+</p>
+</div> <!-- end of col-sm-9 -->
+</div> <!-- end of row -->
+
+<div class="row">
+<!-- Navigation Menu bar -->
+<div class="row row-nav-height">
+<nav class="navbar-inverse navbar-custom">
+<div class="navbar-header">
+  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span> YoLinux Home</a>
+</div>
+
+<form class="navbar-form navbar-left" method="post" action="http://search.yolinux.com/cgi-bin/htsearch">
+<div class="input-group">
+<input type="hidden" name="method" value="all" /> 
+<input type="hidden" name="format" value="long" /> 
+<input type="hidden" name="sort" value="score" /> 
+<input type="hidden" name="config" value="htdig-yolinux" /> 
+<input type="hidden" name="restrict" value="" /> 
+<input type="hidden" name="exclude" value="" /> 
+<input type="text" class="form-control" placeholder="Search" size="20" maxlength="80" name="words"/> 
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+</div>
+</form>
+
+<div id="navbarCollapse" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav navbar-right">
+  <li><a href="/TUTORIALS/" title="YoLinux Web Site Tutorials Index"><span class="glyphicon glyphicon-list-alt"></span> <span class="nav-label">Linux Tutorials</span></a></li>
+  <li><a href="/YoLinux-Terms.html" title="YoLinux.com terms of use"><span class="glyphicon glyphicon-info-sign"></span> <span class="nav-label">Terms</span></a></li>
+  <li><a href="/privacy.html" title="YoLinux.com privacy policy"><span class="glyphicon glyphicon-briefcase"></span> <span class="nav-label">Privacy Policy</span></a></li>
+  <li><a href="/YoLinux-Advertising.html" title="Advertising rates for YoLinux.com"><span class="glyphicon glyphicon-blackboard"></span> <span class="nav-label">Advertising</span></a></li>
+  <li><a href="/YoLinuxEmailForm.html" title="Send us an email"><span class="glyphicon glyphicon-envelope"></span> <span class="nav-label">Contact</span></a></li>
+  </ul>
+</div>  <!-- end navbarCollapse -->
+
+</nav>
+</div> <!-- end of row -->
+<!-- End of Navigation menu bar -->
+
+</div>
+
+<div class="yo-row">
+<div id="leftcol">
+<div class="sectionv1">
+      <p>
+      <font size="-1">
+      <b>Related YoLinux Tutorials:</b>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialC++.html">C++ Info, links</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialC++StringClass.html">C++ String Class</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialC++STL.html">C++ STL vector, list</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="ForkExecProcesses.html">Fork and exec</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="Sockets.html">Sockets programming</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialXemacs.html">Emacs and C/C++</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialAdvanced_vi.html">Advanced VI</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="LinuxTutorialC++CGI.html">CGI in C++</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="ClearcaseCommands.html">Clearcase Commands</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="MicrosoftVisualC++Tips.html">MS/Visual C++ Practices</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="C++MemoryCorruptionAndMemoryLeaks.html">C++ Memory corruption and leaks</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="Cpp-GoogleTest.html">Google C++ Unit Test</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="Jenkins.html">Jenkins CI</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="Jenkins-Cpp-builds.html">Jenkins Plugins for C++</a>
+      </font></p>
+      <p>
+      <font size="-1">&deg;<a href="/TUTORIALS/">YoLinux Tutorials Index</a>
+      </font>
+      </p>
+</div> <!-- end of section 1 -->
+<div class="sectionv2">
+<p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-8567479315106986"
+     data-ad-slot="8947481941"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<!-- END CODE -->
+<hr />
+<p>
+<a href="http://yolinux.tradepub.com/">Free Information Technology Magazines and Document Downloads<br /><img src="images/TradePubMagazines.gif" border="0" alt="TradePub link image" /></a>
+</p>
+</div> <!-- end of section v2 -->
+
+      <p>
+      <a href="http://yolinux.tradepub.com/?pt=cat&amp;page=Infosoft">Free Information Technology <b>Software and Development</b> Magazine Subscriptions and Document Downloads</a>
+      </p>
+      <p>
+      </p>
+</div> <!-- end leftcol -->
+
+<div id="content">
+<div class="labelbar">
+Why libraries are used:
+</div>
+
+<p> Libraries employ a software design also known as "shared components" or
+"archive libraries", which groups together multiple compiled object code
+files into a single file known as a library. Typically C functions/C++
+classes and methods which can be shared by more than one application
+are broken out of the application's source code, compiled and bundled
+into a library.
+The C standard libraries and C++ STL are examples of shared components which can be linked with your code. 
+The benefit is that each and every object file need not be stated when linking because the developer can reference the library collective. 
+This simplifies the multiple use and sharing of software components between applications.
+It also allows application vendors a way to simply release an API to
+interface with an application.
+Components which are large can be created for dynamic use, thus the
+library can remain separate from the executable reducing it's size and thus
+less disk space is used for the application.
+The library components are then called by various applications for use
+when needed. </p>
+<p>
+</p>
+Benefits include:
+<ul>
+<li>Component reuse: update one library, shared resource takes up less disk space.
+</li>
+<li>Version management: Linux libraries can cohabitate old and new versions on a single system.
+</li>
+<li>Component Specialization: niche and specialized developers can focus on their core competency on a single library. Simplifies testing and verification.
+</li>
+</ul>
+
+<p> 
+</p>
+<div class="labelbar">
+Linux Library Types:
+</div>
+
+      <p>
+There are two Linux C/C++ library types which can be created:
+      </p>
+      <ol>
+        <li>Static libraries (.a): Library of object code which is linked with, and becomes part of the application.
+        </li>
+        <li>Dynamically linked shared object libraries (.so): There is only one form of this library but it can be used in two ways.
+            <ol>
+            <li>Dynamically linked at run time. The
+libraries must be available during compile/link phase. The shared
+objects are not included into the executable component but are tied to
+the execution. </li>
+            <li>Dynamically loaded/unloaded and linked during execution
+(i.e. browser plug-in) using the dynamic linking loader system
+functions.  </li>
+            </ol>
+        </li>
+      </ol>
+
+      <p> 
+      </p>
+      <h4>Library naming conventions:</h4>
+Libraries are typically named with the prefix "lib". This is true for
+all the C standard libraries. When linking, the command line reference
+to the library will not contain the library prefix or suffix.
+      <p>
+Consider the following compile and link command: <tt>gcc src-file.c -lm -lpthread</tt> 
+      <br />
+The libraries referenced in this example for inclusion during linking 
+are the math library ("m") and the thread library ("pthread"). They are found in 
+      <tt>/usr/lib/lib<b>m</b>.a</tt> and <tt>/usr/lib/lib<b>pthread</b>.a</tt>.
+      </p>
+      <p>
+Note: The GNU compiler now has the command line option "-pthread" while older versions of the compiler specify the pthread library explicitly with "-lpthread". 
+Thus now you are more likely to see <tt>gcc src-file.c -lm -pthread</tt> 
+      </p>
+
+<p> 
+</p>
+<div class="labelbar">
+Static Libraries: (.a)
+</div>
+
+      <p> 
+How to generate a static library (object code archive file): 
+    </p>
+    <ul>
+    <li>Compile: <tt>cc -Wall -c ctest1.c ctest2.c</tt>
+        <br />
+        Compiler options:
+        <ul>
+        <li>-Wall: include warnings. See man page for warnings specified.
+        </li>
+        </ul>
+    </li>
+    <li>Create library "libctest.a": <tt>ar -cvq libctest.a ctest1.o ctest2.o</tt>
+    </li>
+    <li>List files in library: <tt>ar -t libctest.a</tt>
+    </li>
+    <li>Linking with the library: 
+        <ul>
+        <li><tt>cc -o <i>executable-name</i> prog.c libctest.a</tt>
+        </li>
+        <li><tt>cc -o <i>executable-name</i> prog.c -L/path/to/library-directory -lctest</tt>
+        </li>
+        </ul>
+    </li>
+    <li>Example files: 
+        <ul>
+        <li>ctest1.c
+            <pre class="code-box">void ctest1(int *i)<br />{<br />   *i=5;<br />}<br />            </pre>
+        </li>
+        <li>ctest2.c
+            <pre class="code-box">void ctest2(int *i)<br />{<br />   *i=100;<br />}<br />            </pre>
+        </li>
+        <li>prog.c
+            <pre class="code-box">
+#include &lt;stdio.h&gt;
+void ctest1(int *);
+void ctest2(int *);
+
+int main()
+{
+   int x;
+   ctest1(&amp;x);
+   printf("Valx=%d\n",x);
+
+   return 0;
+}
+            </pre>
+        </li>
+        </ul>
+    </li>
+    </ul>
+
+Historical note: 
+After creating the library it was once necessary to run the command: <tt>ranlib ctest.a</tt>.
+This created a symbol table within the archive. Ranlib is now embedded into the "ar"
+command.
+      <p>
+Note for MS/Windows developers: The Linux/Unix ".a" library is conceptually
+the same as the Visual C++ static ".lib" libraries.
+      </p>
+
+<p>
+</p>
+<div class="labelbar">
+Dynamically Linked "Shared Object" Libraries: (.so)
+</div>
+
+      <p>
+How to generate a shared object: (Dynamically linked object library file.)
+Note that this is a two step process.
+      </p>
+      <ol>
+        <li>Create object code
+        </li>
+        <li>Create library
+        </li>
+        <li>Optional: create default version using a symbolic link.
+        </li>
+      </ol>
+
+    <b>Library creation example:</b>
+    <pre class="code">
+    gcc -Wall -fPIC -c *.c
+    gcc -shared -Wl,-soname,libctest.so.1 -o libctest.so.1.0   *.o
+    mv libctest.so.1.0 /opt/lib
+    ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libctest.so.1
+    ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libctest.so
+    </pre>
+    This creates the library <tt>libctest.so.1.0</tt> and symbolic links to it.
+    <p>
+    It is also valid to cascade the linkage:
+    <pre class="code">
+    ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libctest.so.1
+    ln -sf /opt/lib/libctest.so.1   /opt/lib/libctest.so
+    </pre>
+    If you look at the libraries in <tt>/lib/</tt> and <tt>/usr/lib/</tt> you will find both methodologies present. Linux developers are not consistent.
+    What is important is that the symbolic links eventually point to an actual library. 
+    </p>
+    <p>
+    Compiler options:
+    </p>
+    <ul>
+    <li><tt>-Wall</tt>: include warnings. See man page for warnings specified.
+    </li>
+    <li><tt>-fPIC</tt>: Compiler directive to output position independent code,  a characteristic required by shared libraries. Also see "-fpic".
+    </li>
+    <li><tt>-shared</tt>: Produce  a  shared  object which can then be linked with other objects to form an executable.
+    </li>
+    <li><tt>-Wl,<i>options</i></tt>: Pass options to linker.
+        <br />
+In this example the options to be passed on to the linker are:
+        "<tt>-soname libctest.so.1</tt>".
+        The name passed with the "-o" option is passed to <tt>gcc</tt>.
+    </li>
+    <li>Option <tt>-o</tt>: Output of operation. In this case the name of the shared object to be output will be "<tt>libctest.so.1.0</tt>"
+    </li>
+    </ul>
+    
+    <p>
+    Library Links:
+    </p>
+    <ul>
+    <li>The link to <tt>/opt/lib/libctest.so</tt> allows the naming convention for the compile flag <tt>-lctest</tt> to work.
+    </li>
+    <li>The link to <tt>/opt/lib/libctest.so.1</tt> allows the run time binding to work. See dependency below.
+    </li>
+    </ul>
+
+    
+      <p>
+      <b>Compile main program and link with shared object library:</b>
+      </p>
+Compiling for run-time linking with a dynamically linked <tt>libctest.so.1.0</tt>:
+          <pre class="code">    gcc -Wall -I<i>/path/to/include-files</i> -L<i>/path/to/libraries</i> prog.c -lctest -o prog
+          </pre>
+Use:
+          <pre class="code">    gcc -Wall -L/opt/lib prog.c -lctest -o prog
+          </pre>
+
+Where the name of the library is <tt>libctest.so</tt>. (This is why you must create the symbolic links or you will get the error "/usr/bin/ld: cannot find -lctest".)
+    <br />
+
+The libraries will NOT be included in the executable but will be dynamically linked during run-time execution.
+
+      <p>
+      <b>List Dependencies:</b>
+      </p>
+      <p>
+The shared library dependencies of the executable can be listed with the
+command: <tt><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldd"><b>ldd</b></a> <i>name-of-executable</i></tt>
+      </p>
+      <p>
+    </p>
+    Example: <tt>ldd prog</tt>
+    <pre class="code">
+        libctest.so.1 =&gt; /opt/lib/libctest.so.1 (0x00002aaaaaaac000)
+        libc.so.6 =&gt; /lib64/tls/libc.so.6 (0x0000003aa4e00000)
+        /lib64/ld-linux-x86-64.so.2 (0x0000003aa4c00000)
+    </pre>
+    <font color="#ff0000">[Potential Pitfall]</font>: Unresolved errors within a shared library may cause an error when the library is loaded. Example:
+    <p>
+    </p>
+    Error message at run-time:
+    <pre class="code">
+        ERROR: unable to load  lib<i>name-of-lib</i>.so
+        ERROR: unable to get function address
+    </pre>
+    <p>
+    Investigate error:
+    </p>
+    <pre class="code">
+    <b>[prompt]$</b> ldd lib<i>name-of-lib</i>.so
+        libglut.so.3 =&gt; /usr/lib64/libglut.so.3 (0x00007fb582b74000)
+        libGL.so.1 =&gt; /usr/lib64/libGL.so.1 (0x00007fb582857000)
+        libX11.so.6 =&gt; /usr/lib64/libX11.so.6 (0x00007fb582518000)
+        libIL.so.1 (0x00007fa0f2c0f000)
+        libcudart.so.4 =&gt; not found
+    </pre>
+    <p>
+    The first three libraries show that there is a path resolution. The last two are problematic.
+    </p>
+    The fix is to resolve dependencies of the last two libraries when linking the library <tt>lib<i>name-of-lib</i>.so</tt>:
+    <ul>
+    <li>Add the unresolved library path in <tt>/etc/ld.so.conf.d/<i>name-of-lib</i>-x86_64.conf</tt> and/or <tt>/etc/ld.so.conf.d/<i>name-of-lib</i>-i686.conf</tt>
+        <br/>Reload the library cache (<tt>/etc/ld.so.cache</tt>) with the command: <tt>sudo ldconfig</tt>
+        <br/><b>or</b>
+    </li>
+    <li>Add library and path explicitly to the compiler/linker command: <tt>-l<i>name-of-lib</i> -L/path/to/lib</tt>
+        <br/><b>or</b>
+    </li>
+    <li>Add the library path to the environment variable to fix run-time dependency: 
+        <br/><tt>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/lib</tt>
+    </li>
+    </ul>
+
+   <p>
+   <b>Run Program:</b>
+   </p>
+   <ul>
+   <li>Set path: <tt>export LD_LIBRARY_PATH=/opt/lib:$LD_LIBRARY_PATH</tt>
+   </li>
+   <li>Run: <tt>prog</tt>
+   </li>
+   </ul>
+
+   <p>
+   <b>Example with code:</b>
+   </p>
+   Using the example code above for ctest1.c, ctest2.c and prog.c
+   <ol>
+   <li>Compile the library functions: <tt>gcc -Wall -fPIC -c ctest1.c ctest2.c</tt>
+   </li>
+   <li>Generate the shared library: <tt>gcc -shared -Wl,-soname,libctest.so.1 -o libctest.so.1.0   ctest1.o ctest2.o</tt>
+       <br/>This generates the library <tt>libctest.so.1.0</tt>
+   </li>
+   <li>Move to <tt>lib/</tt> directory:
+       <ul>
+       <li><tt>sudo mv libctest.so.1.0 /opt/lib</tt>
+       </li>
+       <li><tt>sudo ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libctest.so.1</tt>
+       </li>
+       <li><tt>sudo ln -sf /opt/lib/libctest.so.1   /opt/lib/libctest.so</tt>
+       </li>
+       </ul>
+   </li>
+   </li>Compile program for use with a shared library: <tt>gcc -Wall -L/opt/lib prog.c -lctest -o prog</tt>
+      <br/>
+      <font color="#ff0000">[Potential Pitfall]</font>: 
+      If the symbolic links are not created (above), you will get the following error:
+          <pre class="code-box">
+/usr/bin/ld: cannot find -lctest
+collect2: error: ld returned 1 exit status
+          </pre>
+          The reference to the library name <tt>-lctest</tt> refers to <tt>/opt/lib/libctest.so</tt>
+   </li>
+   <li>Configure the library path (see below and choose one of three mechanisms).
+       <br/>In this example we set the environment variable: <tt>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/lib</tt>
+   </li>
+   <li>Run the program: <tt>./prog</tt>
+          <pre class="code-box">
+Valx=5
+          </pre>
+      <br/>
+      <font color="#ff0000">[Potential Pitfall]</font>: 
+      You get the following error if the library path is not set:
+          <pre class="code-box">
+./prog: error while loading shared libraries: libctest.so.1: cannot open shared object file: No such file or directory
+          </pre>
+   </li>
+   </ol>
+
+   <p>
+   <b>Man Pages:</b>
+   </p>
+   <ul>
+    <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=gcc">gcc</a> - GNU C compiler
+    </li>
+    <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ld">ld</a> - The GNU Linker
+    </li>
+    <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldd">ldd</a> - List library dependencies
+    </li>
+    <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldconfig">ldconfig</a> - configure dynamic linker run time bindings (update cache <tt>/etc/ld.so.cache</tt>)
+    </li>
+   </ul>
+
+      <p>
+      <b>Links:</b>
+      </p>
+      <ul>
+        <li><a href="http://www.tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html">LDP: Shared libraries</a>
+        </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar2">
+Library Path:
+</div>
+
+<p>In order for an executable to find the required libraries to
+link with during run time, one must configure the system so that the
+libraries can be found.
+Methods available: (Do at least one of the following)
+</p>
+      <ol>
+        <li>Add library directories to be included during dynamic linking to the file
+          <tt>/etc/ld.so.conf</tt>
+          <p>
+Sample: <tt>/etc/ld.so.conf</tt>
+          </p>
+          <pre class="code-box">
+/usr/X11R6/lib
+/usr/lib
+...
+..
+/usr/lib/sane
+/usr/lib/mysql
+/opt/lib
+          </pre>
+Add the library path to this file and then execute the command (as root)
+          <tt>ldconfig</tt> to configure the linker run-time bindings. 
+          <br />
+You can use the "<b>-f <i>file-name</i></b>" flag to reference another 
+configuration file if you are developing for different environments.
+          <br />
+
+See man page for command 
+          <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldconfig">ldconfig</a>.
+          <p>
+          <b>OR</b>
+          </p>
+          <p>
+          </p>
+        </li>
+        <li>Add specified directory to library cache: (as root)
+            <br />
+          <tt>ldconfig -n <i>/opt/lib</i></tt>
+            <br />
+        Where <tt>/opt/lib</tt> is the directory containing your library <tt>libctest.so</tt>
+            <br />
+(When developing and just adding your current directory: <tt>ldconfig -n .</tt> Link with -L.)
+          <p>This will NOT permanently configure the system to include this directory. The information will be lost upon system reboot.
+          </p>
+          <p>
+          <b>OR</b>
+          </p>
+          <p>
+          </p>
+        </li>
+        <li>Specify the environment variable <tt>LD_LIBRARY_PATH</tt> to point to the directory paths containing the shared object library.
+This will specify to the run time loader that the library paths will be used during execution to resolve dependencies.
+    <br />
+(Linux/Solaris: <tt>LD_LIBRARY_PATH</tt>, SGI: <tt>LD_LIBRARYN32_PATH</tt>, AIX: <tt>LIBPATH</tt>, Mac OS X: <tt>DYLD_LIBRARY_PATH</tt>, HP-UX: <tt>SHLIB_PATH</tt>)
+          <p>
+Example (bash shell): <tt>export LD_LIBRARY_PATH=/opt/lib:$LD_LIBRARY_PATH</tt>
+or add to your <tt>~/.bashrc</tt> file:
+          </p>
+          <pre class="code-box">
+...
+if [ -d /opt/lib ];
+then
+   LD_LIBRARY_PATH=/opt/lib:$LD_LIBRARY_PATH
+fi
+
+...
+
+export LD_LIBRARY_PATH
+      </pre>
+
+          <br />
+This instructs the run time loader to look in the path described by the environment variable <tt>LD_LIBRARY_PATH</tt>, to resolve shared libraries. This will include the path <tt>/opt/lib</tt>.
+        </li>
+      </ol>
+
+      <p>
+Library paths used should conform to the "<a href="http://www.linuxbase.org/">Linux Standard Base</a>" directory structure.
+      </p>
+
+<p>
+</p>
+<div class="labelbar2">
+Library Info:
+</div>
+
+<h4>ar: list object files in archive library</h4>
+ <tt>ar tf /usr/lib/x86_64-linux-gnu/libjpeg.a</tt>
+ <p>
+ </p>
+ This will list all of the object files held in the archive library:
+      <pre class="code">
+jlibinit.o
+jcapimin.o
+jcapistd.o
+jccoefct.o
+jccolor.o
+jcdctmgr.o
+jchuff.o
+jcinit.o
+...
+...
+      </pre>
+      Also see: 
+      <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ar">Man page for ar</a>
+
+<p>
+<hr/>
+</p>
+<h4>nm: list symbols: object files, archive library and shared library</h4>
+<p>
+The command "nm" lists symbols contained in object files:
+</p>
+<pre class="code">
+ nm file.o
+</pre>
+<p>
+The command "nm" lists symbols contained in the archive library:
+</p>
+Object symbols in static archive libraries are categorized using the source and object file hierarchy of the library:
+<pre class="code">
+ nm /usr/lib/x86_64-linux-gnu/libjpeg.a
+</pre>
+<p>
+</p>
+<pre class="code">
+jlibinit.o:
+0000000000000000 B auxv
+                 U fclose
+                 U fopen
+                 U fread
+                 U getpagesize
+0000000000000000 T libjpeg_general_init
+                 U malloc
+                 U perror
+
+jcapimin.o:
+                 U jinit_marker_writer
+                 U jinit_memory_mgr
+0000000000000000 T jpeg_CreateCompress
+                 U jpeg_abort
+0000000000000240 T jpeg_abort_compress
+                 U jpeg_destroy
+0000000000000230 T jpeg_destroy_compress
+00000000000002a0 T jpeg_finish_compress
+                 U jpeg_natural_order
+...
+...
+      </pre>
+      <p>
+The command "nm" lists symbols contained in the object file or shared library.
+      </p>
+      <p>
+Use the command <tt>nm -D libctest.so.1.0</tt>
+      <br />
+(or <tt>nm --dynamic libctest.so.1.0</tt>)
+      </p>
+          <pre class="code">
+0000000000100988 A __bss_start
+000000000000068c T ctest1
+00000000000006a0 T ctest2
+                 w __cxa_finalize
+00000000001007b0 A _DYNAMIC
+0000000000100988 A _edata
+0000000000100990 A _end
+00000000000006f8 T _fini
+0000000000100958 A _GLOBAL_OFFSET_TABLE_
+                 w __gmon_start__
+00000000000005b0 T _init
+                 w _Jv_RegisterClasses
+      </pre>
+<p>
+Note that other platforms (Cygwin) may not respond to "-D". Try <tt>nm -gC libctest.so.1.0</tt>
+</p>
+      Also see: 
+      <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=nm">Man page for nm</a>
+          <table class="box">
+            <thead>
+              <tr>
+                <th>Symbol Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>A</td>
+                <td>The  symbol's  value  is absolute, and will not be changed by further linking.</td>
+              </tr>
+
+              <tr>
+                <td>B</td>
+                <td>Un-initialized data section</td>
+              </tr>
+
+              <tr>
+                <td>D</td>
+                <td>Initialized data section</td>
+              </tr>
+
+              <tr>
+                <td>T</td>
+                <td>Normal code section</td>
+              </tr>
+
+              <tr>
+                <td>U</td>
+                <td>Undefined symbol used but not defined. Dependency on another library.</td>
+              </tr>
+
+              <tr>
+                <td>W</td>
+                <td>Doubly defined symbol. If found, allow definition in another library to resolve dependency.</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+      <p>
+Also see:
+      <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=objdump">objdump</a> man page
+      </p>
+<p>
+<hr/>
+</p>
+<h4>readelf: list symbols in shared library</h4>
+<p>
+The command "readelf" command to list symbols contained in a shared library:
+</p>
+Use the command <tt>readelf -s /usr/lib64/libjpeg.so </tt>
+<pre class="code">
+Symbol table '.dynsym' contains 144 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000003b30     0 SECTION LOCAL  DEFAULT   10 
+     2: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND getenv@GLIBC_2.2.5 (4)
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND free@GLIBC_2.2.5 (4)
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND ferror@GLIBC_2.2.5 (4)
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fread@GLIBC_2.2.5 (4)
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fclose@GLIBC_2.2.5 (4)
+     7: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@GLIBC_2.4 (5)
+     8: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND memset@GLIBC_2.2.5 (4)
+     9: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+...
+...
+</pre>
+
+<p>
+Also see:
+<a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=readelf">readelf</a> man page
+</p>
+
+<p>
+</p>
+<div class="labelbar">
+Library Versions:
+</div>
+
+<p>Library versions should be specified for shared objects if the
+function interfaces are expected to change (C++ public/protected class
+definitions), more or fewer functions are included in the library, the
+function prototype changes (return data type (int, const int, ...) or
+argument list changes) or data type changes (object definitions: class
+data members, inheritance, virtual functions, ...). </p>
+
+<p>The library version can be specified when the shared object
+library is created.
+If the library is expected to be updated, then a library version should
+be specified. This is especially important for shared object libraries
+which are dynamically linked. This also avoids the Microsoft "DLL hell"
+problem of conflicting libraries where a system upgrade which changes a
+standard library breaks an older application expecting an older version
+of the the shared object function. </p>
+
+<p>Versioning occurs with the GNU C/C++ libraries as well. This
+often make binaries compiled with one version of the GNU tools
+incompatible with binaries compiled with other versions unless those
+versions also reside on the system. Multiple versions of the same
+library can reside on the same system due to versioning. The version of
+the library is included in the symbol name so the linker knows which
+version to link with.
+</p>
+<p>
+One can look at the symbol version used: <tt>nm csub1.o</tt>
+</p>
+<pre class="code">00000000 T ctest1
+<br /></pre>
+<p>
+No version is specified in object code by default.
+</p>
+
+<a href="http://sourceware.org/binutils/docs-2.22/ld/index.html">ld and object file layout</a>
+<p>
+There is one GNU C/C++ compiler flag that explicitly deals with symbol versioning.
+Specify the version script to use at compile time with the flag: <tt>--version-script=<i>your-version-script-file</i></tt>
+      <br />
+Note: This is only useful when creating shared libraries. It is assumed
+that the programmer knows which libraries to link with when static
+linking. Run-time linking allows opportunity for library
+incompatibility.
+</p>
+      <p>
+GNU/Linux, see examples of version scripts here:
+    <tt>sysdeps/unix/sysv/linux/Versions</tt>
+      </p>
+      <p>
+Some symbols may also get version strings from assembler code which
+appears in glibc headers files.  Look at <tt>include/libc-symbols.h</tt>.
+      </p>
+      <p>
+Example: <tt> nm /lib/libc.so.6 | more</tt>
+      </p>
+<pre class="code">
+00000000 A GCC_3.0
+00000000 A GLIBC_2.0
+00000000 A GLIBC_2.1
+00000000 A GLIBC_2.1.1
+00000000 A GLIBC_2.1.2
+00000000 A GLIBC_2.1.3
+00000000 A GLIBC_2.2
+00000000 A GLIBC_2.2.1
+00000000 A GLIBC_2.2.2
+00000000 A GLIBC_2.2.3
+00000000 A GLIBC_2.2.4
+...
+..
+</pre>
+
+Note the use of a version script.
+<p>
+Library referencing a versioned library: <tt>nm /lib/libutil-2.2.5.so</tt>
+</p>
+<pre class="code">
+..
+...
+         U strcpy@@GLIBC_2.0
+         U strncmp@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+...
+..
+</pre>
+
+
+      <p>
+      <b>Links:</b>
+      </p>
+      <ul>
+        <li><a href="http://gcc.gnu.org/ml/gcc-help/2004-03/msg00265.html">Symbol versioning</a>
+        </li>
+        <li><a href="http://sourceware.org/binutils/docs/ld/index.html">GNU.org: ld</a>
+        </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar">
+Dynamic loading and un-loading of shared libraries using libdl:
+</div>
+
+      <p> 
+These libraries are dynamically loaded / unloaded and linked during execution. 
+Useful for creating a "plug-in" architecture.
+      </p>
+      <p> 
+Prototype include file for the library: <tt>ctest.h</tt>
+      </p>
+<div class="box">
+<pre class="brush: cpp">
+#ifndef CTEST_H
+#define CTEST_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void ctest1(int *);
+void ctest2(int *);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+</pre>
+</div>
+
+Use the notation <tt>extern "C"</tt> so the libraries can be used with
+C and C++. This statement prevents the C++ from name mangling and thus
+creating "unresolved symbols" when linking.
+
+<p> 
+Load and unload the library <tt>libctest.so</tt> (created above), dynamically:
+</p>
+<div class="box">
+<pre class="brush: cpp">
+#include &lt;stdio.h&gt;
+#include &lt;dlfcn.h&gt;
+#include "ctest.h"
+
+int main(int argc, char **argv) 
+{
+   void *lib_handle;
+   double (*fn)(int *);
+   int x;
+   char *error;
+
+   lib_handle = dlopen("/opt/lib/libctest.so", RTLD_LAZY);
+   if (!lib_handle) 
+   {
+      fprintf(stderr, "%s\n", dlerror());
+      exit(1);
+   }
+
+   fn = dlsym(lib_handle, "ctest1");
+   if ((error = dlerror()) != NULL)  
+   {
+      fprintf(stderr, "%s\n", error);
+      exit(1);
+   }
+
+   (*fn)(&amp;x);
+   printf("Valx=%d\n",x);
+
+   dlclose(lib_handle);
+   return 0;
+}
+</pre>
+</div>
+
+<p> 
+<tt>gcc -rdynamic -o progdl progdl.c -ldl</tt>
+</p>
+<p> 
+Explanation:
+</p>
+<ul>
+<li><tt>dlopen("/opt/lib/libctest.so", RTLD_LAZY);</tt>
+    <br />
+Open shared library named "<tt>libctest.so</tt>".
+    <br />
+The second argument indicates the binding. See include file <tt>dlfcn.h</tt>.
+    <br />
+Returns NULL if it fails.
+    <br />
+Options:
+    <ul>
+    <li>RTLD_LAZY: If specified, Linux is not concerned about unresolved symbols until they are referenced.
+    </li>
+    <li>RTLD_NOW: All unresolved symbols resolved when <tt>dlopen()</tt> is called.
+    </li>
+    <li>RTLD_GLOBAL: Make symbol libraries visible.
+    </li>
+    </ul>
+</li>
+<li><tt>dlsym(lib_handle, "ctest1");</tt>
+    <br />
+Returns address to the function which has been loaded with the shared library..
+    <br />
+Returns NULL if it fails.
+    <br />
+Note: When using C++ functions, first use <tt>nm</tt> to find the 
+    "mangled" symbol name or use the <tt>extern "C"</tt> construct to avoid 
+    name mangling. 
+    <br />
+i.e. <tt>extern "C" void <i>function-name</i>();</tt>
+</li>
+</ul>
+<p>
+<b>Object code location:</b> Object code archive libraries can be located with either the executable or the loadable library. 
+Object code routines used by both should not be duplicated in each. 
+This is especially true for code which use static variables such as singleton classes. 
+A static variable is global and thus can only be represented once. 
+Including it twice will provide unexpected results. 
+The programmer can specify that specific object code be linked with the executable by using linker commands which are passed on by the compiler.
+</p>
+<p>
+Use the "-Wl" gcc/g++ compiler flag to pass command line arguments on to the GNU "ld" linker.
+</p>
+<p>Example makefile statement: <tt>g++ -rdynamic -o appexe $(OBJ) $(LINKFLAGS) -Wl,--whole-archive -L{AA_libs} -laa -Wl,--no-whole-archive $(LIBS)</tt>
+</p>
+<ul>
+<li>--whole-archive: This linker directive specifies that the libraries listed following this directive (in this case <tt>AA_libs</tt>) shall be included in the resulting output even though there may not be any calls requiring its presence. This option is used to specify libraries which the loadable libraries will require at run time.</li>
+<li>-no-whole-archive: This needs to be specified whether you list additional object files or not. The gcc/g++ compiler will add its own list of archive libraries and you would not want all the object code in the archive library linked in if not needed. It toggles the behavior back to normal for the rest of the archive libraries.</li>
+</ul>
+      <p> 
+      <b>Man pages:</b>
+      </p>
+      <ul>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=dlopen">dlopen()</a> - gain access to an executable object file
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=dlclose">dclose()</a> - close a dlopen object
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=dlsym">dlsym()</a> - obtain the address of a symbol from a dlopen object
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=dlvsym">dlvsym()</a> - Programming interface to dynamic linking loader.
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=dlerror">dlerror()</a> - get diagnostic information
+        </li>
+      </ul>
+
+      <p> 
+      <b>Links:</b>
+      </p>
+      <ul>
+        <li><a href="http://developer.gnome.org/glib/2.32/glib-Dynamic-Loading-of-Modules.html">GNOME Glib dynamic loading of modules</a> - cross platform API for dynamically loading "plug-ins".
+        </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar">
+C++ class objects and dynamic loading:
+</div>
+      <p>
+<b>C++ and name mangling:</b>
+      </p>
+      <p>
+When running the above "C" examples with the "C++" compiler one will quickly find that "C++" function names get mangled and thus will not work unless the function definitions are protected with <tt>extern "C"{}</tt>. 
+      <p>
+      </p>
+Note that the following are not equivalent:
+      <table bgcolor="#000000" border="0" cellpadding="4" cellspacing="1" width="100%">
+      <tbody>
+      <tr bgcolor="#c0c0c0">
+      <td width="50%">
+      <pre class="code">
+extern "C"
+{
+   int functionx();
+}
+      </pre>
+      </td>
+      <td valign="top">
+      <pre class="code">
+extern "C" int functionx();
+      </pre>
+      </td>
+      </tr></tbody></table>
+      <p>
+      </p>
+      The following are equivalent:
+      <table bgcolor="#000000" border="0" cellpadding="4" cellspacing="1" width="100%">
+      <tbody>
+      <tr bgcolor="#c0c0c0">
+      <td width="50%">
+      <pre class="code">
+extern "C"
+{
+   extern int functionx();
+}
+      </pre>
+      </td>
+      <td valign="top">
+      <pre class="code">
+extern "C" int functionx();
+      </pre>
+      </td>
+      </tr></tbody></table>
+      </p>
+      <p>
+<b>Dynamic loading of C++ classes:</b>
+      </p>
+      <p>
+The dynamic library loading routines enable the programmer to load "C" functions. 
+In C++ we would like to load class member functions. In fact the entire class may be in the library and we may want to load and have access to the entire object and all of its member functions.
+Do this by passing a "C" class factory function which instantiates the class.
+      </p>
+      The class ".h" file:
+<div class="box">
+<pre class="brush: cpp">
+class Abc {
+
+...
+...
+
+};
+
+// Class factory "C" functions
+
+typedef Abc* create_t;
+typedef void destroy_t(Abc*);
+</pre>
+</div>
+
+<p>
+</p>
+The class ".cpp" file:
+<div class="box">
+<pre class="brush: cpp">
+Abc::Abc()
+{
+    ...
+}
+
+extern "C"
+{
+   // These two "C" functions manage the creation and destruction of the class Abc
+
+   Abc* create()
+   {
+      return new Abc;
+   }
+
+   void destroy(Abc* p)
+   {
+      delete p;   // Can use a base class or derived class pointer here
+   }
+}
+</pre>
+</div>
+This file is the source to the library.
+The "C" functions to instantiate (create) and destroy a class defined in the dynamically loaded library where "Abc" is the C++ class.
+      <p>
+      </p>
+      Main executable which calls the loadable libraries:
+      <div class="box">
+      <pre class="code">
+// load the symbols
+    create_t* create_abc = (create_t*) dlsym(lib_handle, "create");
+
+...
+...
+
+    destroy_t* destroy_abc = (destroy_t*) dlsym(lib_handle, "destroy");
+
+...
+...
+      </pre>
+      </div>
+<p>
+</p>
+<b>Pitfalls:</b>
+      <ul>
+      <li>The new/delete of the C++ class should both be provided by the 
+          executable or the library but not split. This is so that there is 
+          no surprise if one overloads new/delete in one or the other.
+      </li>
+      </ul>
+<p>
+</p>
+<b>Links:</b>
+      <ul>
+      <li><a href="http://www.linuxjournal.com/article/3687">LinuxJournal.com: Dynamic Class Loading for C++ on Linux</a>
+      </li>
+      <li><a href="http://www.isotton.com/howtos/C++-dlopen-mini-HOWTO/C++-dlopen-mini-HOWTO.html">dlopen howto</a>
+      </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar">
+Comparison to the Microsoft DLL:
+</div>
+
+<p> The Microsoft Windows equivalent to the Linux / Unix shared
+object (".so")
+is the ".dll".
+The Microsoft Windows DLL file usually has the extension ".dll", but
+may also use the extension ".ocx". On the old 16 bit windows, the
+dynamically linked libraries were also named with the ".exe" suffix.
+"Executing" the DLL will load it into memory.
+</p>
+      <p>
+The Visual C++ .NET IDE wizard will create a DLL framework through the GUI, 
+and generates a ".def" file. This "module definition file" lists the 
+functions to be exported. When exporting C++ functions, the C++ mangled
+names are used. Using the Visual C++ compiler to generate a ".map" file
+will allow you to discover the C++ mangled name to use in the ".def" file.
+The "SECTIONS" label in the ".def" file will define the portions which are
+"shared".
+Unfortunately the generation of DLLs are tightly coupled to the Microsoft IDE,
+so much so that I would not recommend trying to create one without it.
+      </p>
+      <p>
+The Microsoft Windows C++ equivalent functions to libdl are the following functions:
+      </p>
+      <ul>
+        <li>::LoadLibrary() - dlopen()
+        </li>
+        <li>::GetProcAddress() - dlsym()
+        </li>
+        <li>::FreeLibrary() - dlclose()
+        </li>
+      </ul>
+      <p>
+      <font color="#ff0000">[Potential Pitfall]</font>: 
+Microsoft Visual C++ .NET compilers do not allow the linking control that the GNU linker "ld" allows (i.e. --whole-archive, -no-whole-archive). 
+All symbols need to be resolved by the VC++ compiler for both the loadable library and the application executable individually and thus it can cause duplication of libraries when the library is loaded.
+This is especially bad when using static variables (i.e. used in singleton patterns) as you will get two memory locations for the static variable, one used by the loadable library and the other used by the program executable. 
+This breaks the whole static variable concept and the singleton pattern. 
+Thus you can not use a static variable which is referenced by by both the loadable library and the application executable as they will be unique and different.
+To use a unique static variable, you must pass a pointer to that static variable to the other module so that each module (main executable and DLL library) can use the same instantiation.
+On MS/Windows you can use shared memory or a memory mapped file so that the main executable and DLL library can share a pointer to an address they both will use.
+      </p>
+Cross platform (Linux and MS/Windows) C++ code snippet:
+      <p>
+      </p>
+      Include file declaration: (.h or .hpp)
+<div class="box">
+<pre class="brush: cpp">
+class Abc{
+public:
+   static Abc* Instance(); // Function declaration. Could also be used as a public class member function.
+
+private:
+   static Abc *mInstance;      // Singleton. Use this declaration in C++ class member variable declaration.
+   ...
+}
+</pre>
+</div>
+
+<p>
+</p>
+C/C++ Function source: (.cpp)
+<div class="box">
+<pre class="brush: cpp">
+/// Singleton instantiation
+Abc* Abc::mInstance = 0;   // Use this declaration for C++ class member variable
+                           // (Defined outside of class definition in ".cpp" file)
+
+// Return unique pointer to instance of Abc or create it if it does not exist.
+// (Unique to both exe and dll)
+
+static Abc* Abc::Instance() // Singleton
+{
+#ifdef WIN32
+    // If pointer to instance of Abc exists (true) then return instance pointer else look for 
+    // instance pointer in memory mapped pointer. If the instance pointer does not exist in
+    // memory mapped pointer, return a newly created pointer to an instance of Abc.
+
+    return mInstance ? 
+       mInstance : (mInstance = (Abc*) MemoryMappedPointers::getPointer("Abc")) ? 
+       mInstance : (mInstance = (Abc*) MemoryMappedPointers::createEntry("Abc",(void*)new Abc));
+#else
+    // If pointer to instance of Abc exists (true) then return instance pointer 
+    // else return a newly created pointer to an instance of Abc.
+
+    return mInstance ? mInstance : (mInstance = new Abc);
+#endif
+}
+</pre>
+</div>
+Windows linker will pull two instances of object, one in exe and one in loadable module. 
+Specify one for both to use by using memory mapped pointer so both exe and loadable library point to same variable or object. 
+<br />
+Note that the GNU linker does not have this problem.
+<p>
+For more on singletons see the YoLinux.com <a href="C++Singleton.html">C++ singleton software design pattern tutorial</a>.
+</p>
+
+<p>
+</p>
+<div class="labelbar">
+Cross platform programming of loadable libraries:
+</div>
+
+<p>
+&nbsp;
+</p>
+<div class="box">
+<pre class="brush: cpp">
+#ifndef USE_PRECOMPILED_HEADERS
+#ifdef WIN32
+#include &lt;direct.h&gt;
+#include &lt;windows.h&gt;
+#else
+#include &lt;sys/types.h&gt;
+#include &lt;dlfcn.h&gt;
+#endif
+#include &lt;iostream&gt;
+#endif
+
+    using namespace std;
+
+#ifdef WIN32
+    HINSTANCE lib_handle;
+#else
+    void *lib_handle;
+#endif
+
+    // Where retType is the pointer to a return type of the function
+    // This return type can be int, float, double, etc or a struct or class.
+
+    typedef retType* func_t;  
+
+    // load the library -------------------------------------------------
+#ifdef WIN32
+    string nameOfLibToLoad("C:\opt\lib\libctest.dll");
+    lib_handle = LoadLibrary(TEXT(nameOfLibToLoad.c_str()));
+    if (!lib_handle) {
+        cerr &lt;&lt; "Cannot load library: " &lt;&lt; TEXT(nameOfDllToLoad.c_str()) &lt;&lt; endl;
+    }
+#else
+    string nameOfLibToLoad("/opt/lib/libctest.so");
+    lib_handle = dlopen(nameOfLibToLoad.c_str(), RTLD_LAZY);
+    if (!lib_handle) {
+        cerr &lt;&lt; "Cannot load library: " &lt;&lt; dlerror() &lt;&lt; endl;
+    }
+#endif
+
+...
+...
+...
+
+    // load the symbols -------------------------------------------------
+#ifdef WIN32
+    func_t* fn_handle = (func_t*) GetProcAddress(lib_handle, "superfunctionx");
+    if (!fn_handle) {
+        cerr &lt;&lt; "Cannot load symbol superfunctionx: " &lt;&lt; GetLastError() &lt;&lt; endl;
+    }
+#else
+    // reset errors
+    dlerror();
+
+    // load the symbols (handle to function "superfunctionx")
+    func_t* fn_handle= (func_t*) dlsym(lib_handle, "superfunctionx");
+    const char* dlsym_error = dlerror();
+    if (dlsym_error) {
+        cerr &lt;&lt; "Cannot load symbol superfunctionx: " &lt;&lt; dlsym_error &lt;&lt; endl;
+    }
+#endif
+
+...
+...
+...
+
+    // unload the library -----------------------------------------------
+
+#ifdef WIN32
+    FreeLibrary(lib_handle);
+#else
+    dlclose(lib_handle);
+#endif
+</pre>
+</div>
+
+<p>
+</p>
+<div class="labelbar">
+Tools:
+</div>
+
+      <p> 
+      <b>Man pages:</b>
+      </p>
+      <ul>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ar">ar</a> - create, modify, and extract from archives
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ranlib">ranlib</a> - generate index to archive
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=nm">nm</a> - list symbols from object files
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ld">ld</a> - Linker
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldconfig">ldconfig</a> - configure dynamic linker run-time bindings
+    <br />
+
+    <tt>ldconfig -p</tt> : Print the lists of directories and candidate  libraries  stored in the current cache.
+    <br />
+i.e. <tt>/sbin/ldconfig -p |grep libGL</tt>
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ldd">ldd</a> - print shared library dependencies
+        </li>
+        <li><a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=gcc">gcc/g++</a> - GNU project C and C++ compiler
+        </li>
+        <li>man page to: <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ld.so">ld.so</a> - a.out dynamic linker/loader
+        </li>
+      </ul>
+
+
+<p>
+</p>
+<div class="labelbar">
+Notes:
+</div>
+
+      <p> 
+      </p>
+      <ul>
+        <li>Direct loader to pre-load a specific shared library before all others: <tt>export LD_PRELOAD=/usr/lib/libXXX.so.x; exec <i>program</i></tt>. This is specified in the file <tt>/etc/ld.so.preload</tt> and extended with the environment variable <tt>LD_PRELOAD</tt>.
+    <br />
+Also see:
+          <ul>
+          <li>man page to: <a href="http://man.yolinux.com/cgi-bin/man2html?cgi_command=ld.so">ld.so</a> - a.out dynamic linker/loader
+          </li>
+          <li><a href="http://scaryreasoner.wordpress.com/2007/11/17/using-ld_preload-libraries-and-glibc-backtrace-function-for-debugging/">LD_PRELOAD and Linux function interception</a>.
+          </li>
+          </ul>
+          <p>
+          </p>
+        </li>
+        <li>Running Red Hat 7.1 (glibc 2.2.2) but compiling for Red Hat 6.2 compatibility. 
+    <br />
+    See <a href="ftp://herbie.ucs.indiana.edu/pub/linux/redhat/redhat/redhat-7.1-en/os/i386/RELEASE-NOTES">RELEASE-NOTES</a>
+    <br />
+          <pre class="code">        export LD_ASSUME_KERNEL=2.2.5<br />        . /usr/i386-glibc21-linux/bin/i386-glibc21-linux-env.sh<br />    </pre>
+          <p>
+          </p>
+        </li>
+        <li>Environment variable to highlight warnings, errors, etc: <tt>export CC="colorgcc"</tt>
+          <p>
+          </p>
+        </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar">
+YoLinux C/C++ Software Development Tutorials:
+</div>
+
+    <p>
+    </p>
+    <ul>
+    <li><a href="LinuxTutorialC++.html">C++ Programming on Linux</a>:
+        <ul>
+        <li>Data Types:
+        <ul>
+        <li><a href="LinuxTutorialC++Structures.html">Use of <b>structures</b> and <b>unions</b> in C++</a> - Use of a constructor with a structure.</li>
+        <li><a href="C++Enum.html">C / C++ Enumerations</a></li>
+        </ul>
+    </li>
+    <li><a href="LinuxTutorialC++StringClass.html">ANSI/<b>GNU C++ string class</b> examples and tutorial</a>
+    </li>
+    <li><a href="Cpp-Templates.html"><b>C++ Templates</b></a> - template functions, template classes and template inheritance
+    </li>
+    <li><a href="LinuxTutorialC++STL.html">C++ <b>STL</b> (Standard Template Library)</a> - vector, list (example for Linked Lists)
+        <ul>
+        <li><a href="CppBoostStlPtrList.html">Boost ptr_list vs STL list of pointers</a> - examples and comparison.</li>
+        <li><a href="CppStlMultiMap.html">STL <b>MAP and multiMAP</b> container class example</a> - associative storage of key-value pairs.</li>
+        </ul>
+    </li>
+    <li>Memory:
+        <ul>
+        <li><a href="Cpp-DynamicMemory.html">C / C++ Dynamic Memory Allocation</a> - malloc/free, new/delete</li>
+        <li><a href="C++MemoryCorruptionAndMemoryLeaks.html">C/C++ Memory Corruption And Memory Leaks</a> - Pitfalls</li>
+        <li><a href="Endian-Byte-Order.html">Endian byte order</a> - Big vs Little endian byte order and byte order conversion</li>
+        </ul>
+    </li>
+    <li>Patterns:
+        <ul>
+        <li><a href="C++Singleton.html">C++ and the Singleton design pattern</a></li>
+        </ul>
+    </li>
+    <li>C/C++ Libraries:
+        <ul>
+        <li><a href="ForkExecProcesses.html"><b>Fork</b>, Exec and Process Control</a></li>
+        <li><a href="Sockets.html"><b>Sockets</b> programming</a></li>
+        <li><a href="C++Signals.html">Signal Handling</a> - C signal handling callbacks and C++ signal handling class</li>
+        </ul>
+    </li>
+    <li><a href="CORBA.html"><b>CORBA</b>, OmniORB, C++ and remote services (client/server request)</a></li>
+        <li><a href="Log4cxx.html">Log4cxx C++ logging API</a></li>
+        <li>Database:
+            <ul>
+            <li><a href="MySQL-Programming-C-API.html">MySQL C programming API</a></li>
+            <li><a href="PostgreSQL-Programming-C-API.html">PostgreSQL C programming API (libpq)</a></li>
+            <li><a href="SQLite.html"><b>SQLite</b> and C/C++</a> - Embedded database - Command line interface and C/C++ API.</li>
+            </ul>
+        <li><a href="LinuxTutorialC++CGI.html">Programming web server CGI programs with C++ and the GNU CgiCC library</a></li>
+        <li><a href="GTK+ProgrammingTips.html">GNOME <b>GTK+</b> Programming Tips and Tricks</a> - Using the GTK+ cross platform GUI API to build an interactive application.</li>
+        <li><b>Threads:</b>
+            <ul>
+            <li><a href="LinuxTutorialPosixThreads.html">POSIX Threads</a> - make your code run faster and more scaleable.</li>
+            <li><a href="GDK_Threads.html">GNOME GDK Threads (g_threads)</a> - Cross platform threads API.</li>
+            </ul>
+        </li>
+        <li>XML:
+            <ul>
+            <li>XML DOM Parsing with Xerces-C:
+                <ul>
+                <li><a href="XML-Xerces-C.html">Xerces-C 3.0.1</a></li>
+                <li><a href="XML-Xerces-C_2.7.0.html">Older Xerces-C 2.7.0</a></li>
+                </ul>
+            <li><a href="C++XmlBeansxx.html">XmlBeansxx</a>: XML to to C++ object. C++ auto code generation from XSD schema.</li>
+            <li><a href="GnomeLibXml2.html">XML and parsing <b>XML</b> with <b>Gnome libXML2</b></a></li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li><a href="MicrosoftVisualC++Tips.html">Tips and Best Practices for Microsoft Visual C++ users</a>  (So they don't make ugly files and mess up your project.)
+    </li>
+    <li><a href="LinuxTutorialC++CodingStyle.html">C++ Coding standards, styles and practices</a> - dOxygen, Hungarian notation, best practices, ...
+    </li>
+    </ul>
+
+    <p> 
+    </p>
+
+<p>
+</p>
+<div class="labelbar">
+Links:
+</div>
+
+      <p>
+      </p>
+      <ul>
+        <li><a href="http://www.gnu.org/software/libtool/libtool.html">GNU: Libtool</a> - script for portable shared library creation.
+        </li>
+        <li><a href="http://www.tldp.org/HOWTO/Program-Library-HOWTO/">LDP Library Howto</a>
+        </li>
+      </ul>
+
+<p>
+</p>
+<div class="labelbar-h2">
+<img src="images/book40.gif" alt="Books" /> Books:
+</div>
+
+    <p>
+    </p>
+    <table class="box">
+    <tbody>
+
+    <tr>
+    <td><img src="../BOOKS/0735710430.01.MZZZZZZZ.jpg" alt="Book image" /></td>
+    <td valign="top">
+    "Advanced Linux Programming"
+    <br />
+    by Mark Mitchell, Jeffrey Oldham, Alex Samuel, Jeffery Oldham
+    <br />
+    ISBN # 0735710430, New Riders
+    <p>
+    Good book for programmers who already know how to program and just need
+    to know the Linux specifics. Covers a variety of Linux tools, libraries,
+    API's and techniques. If you don't know how to program, start with a
+    book on C.
+    </p>
+    </td>
+    <td valign="top">
+    <a rel="nofollow" href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http://www.amazon.com/exec/obidos/ASIN/0735710430/&tag=yolinux-20"><img src="images/Amazon-BuyABook88x31.gif" alt="Amazon.com" /></a>
+    <br />
+    </td>
+    </tr>
+
+
+    <tr>
+    <td><img src="../BOOKS/0764546570.01.MZZZZZZZ.jpg" alt="Book image" /></td>
+    <td valign="top">
+    "Linux Programming Bible"
+    <br />
+    by John Goerzen
+    <br />
+    ISBN # 0764546570, Hungry Minds, Inc
+    <p>
+    This covers the next step after "C" programming 101.
+    </p>
+    </td>
+    <td valign="top">
+    <a rel="nofollow" href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http://www.amazon.com/exec/obidos/ASIN/0764546570/&tag=yolinux-20"><img src="images/Amazon-BuyABook88x31.gif" alt="Amazon.com" /></a>
+    <br />
+    </td>
+    </tr>
+
+    </tbody>
+    </table>
+
+<p>
+</p>
+<div class="lineHR">
+<p>
+</p>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables.
+*
+*  When url or identifier are not defined, the Disqus embed will use the window URL as the main identifier when creating a thread.
+*/ 
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//yolinux.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+</div> <!-- end content -->
+
+<div id="rightcol">
+<!-- AddThis Button BEGIN -->
+<div id="bookmark">
+&nbsp;&nbsp;&nbsp;
+<br />
+<a rel="nofollow" href="http://www.addthis.com/bookmark.php?v=250&pub=yolinux" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=yolinux">
+</script>
+</div>
+<!-- AddThis Button END -->
+
+<p>
+</p>
+<p>
+<font color="#505050">Advertisements</font>
+</p>
+<iframe class="adframe" scrolling="no" allowTransparency="true"
+marginheight="0" marginwidth="0"
+width="160" frameborder="0" height="600"
+style='border:none;width:160;height:600;padding:0;'
+src="/ADVERTISING/iframe160px-MediaDotNet.html">
+</iframe>
+
+<p>
+</p>
+<!-- 
+<script type="text/javascript">
+var jobthread_widget_title = "Jobs";
+var jobthread_widget_outer_style = "background-color:#dddddd;border:1px solid #999999;width:160px;";
+var jobthread_widget_inner_style = "background-color:#ffffff;color:#666666;border:1px solid #999999;margin-left:10px;margin-right:10px;padding:10px 10px 2px 8px;font:11px Arial, Helvetica, Sans-serif;line-height:16px;";
+var jobthread_widget_title_style = "color:#313131;font-weight:bold;";
+var jobthread_widget_link_style = "color:#0464bb;font-size:11px;font-weight:normal;text-decoration:none;border:none;";
+var jobthread_widget_top_style = "padding-top:8px;";
+var jobthread_widget_bottom_style = "padding-bottom:4px;";
+</script>
+<script type="text/javascript" src="http://edge.jobthread.com/widget/?id=c0e4b3&num_jobs=10"></script>
+//-->
+
+<p>
+</p>
+
+<p>&nbsp;</p>
+</div> <!-- end rightcol  -->
+</div> <!-- end row -->
+
+<div class="row">
+<div id="yo-footer">
+<div class="col-sm-4">
+<font size="-1" color="#ffcc33">
+<b>
+<a class="footer" href="http://www.yolinux.com">YoLinux.com Home Page</a>
+<br />
+<a class="footer" href="http://www.yolinux.com/TUTORIALS/">YoLinux Tutorial Index</a> |
+<a class="footer" href="http://www.yolinux.com/YoLinux-Terms.html">Terms</a>
+<br />
+<a class="footer" href="http://www.yolinux.com/privacy.html">Privacy Policy</a> |
+<a class="footer" href="http://www.yolinux.com/YoLinux-Advertising.html">Advertise with us</a> | 
+<a class="footer" href="http://www.yolinux.com/YoLinuxEmailForm.html">Feedback Form</a> |
+</b>
+<br />
+Unauthorized copying or redistribution prohibited.
+</font>
+</div> <!-- end col-sm-4 -->
+
+<div class="col-sm-4">
+<table class="borderless">
+<tr>
+<td align="center" valign="bottom">
+   <script src="http://www.stumbleupon.com/hostedbadge.php?s=5"></script>
+</td>
+<td align="center" valign="bottom">
+<p>
+</p>
+<!-- AddThis Button BEGIN -->
+<a rel="nofollow" href="http://www.addthis.com/bookmark.php?v=250&pub=yolinux" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=yolinux">
+</script>
+<!-- AddThis Button END -->
+</td>
+</tr>
+</table>
+</div> <!-- end col-sm-4 -->
+
+<div class="col-sm-4">
+<div align="right">
+<font size="-1" color="#ffcc33"><a class="footer" href="#TOP">to top of page</a></font>
+<br />
+<script type="text/javascript"><!--
+google_ad_client = "pub-8567479315106986";
+/* 234x60, created 4/23/10 */
+google_ad_slot = "8214196957";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div> <!-- end col-sm-4 -->
+
+</div> <!-- end yo-footer -->
+
+</div>
+<div id="copyright">
+<p class="copyright">
+Copyright &copy; 2005-2017 by <i>Greg Ippolito</i>
+</p>
+</div>
+
+</div> <!-- end container-fluid -->
+<!-- bootstrap nav -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+  var _qevents = _qevents || [];
+
+  (function() {
+   var elem = document.createElement('script');
+
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);  
+  })();
+</script>
+<script type="text/javascript">
+_qevents.push( { qacct:"p-ebIBcaVUngFBQ"} );
+</script>
+<noscript>
+<div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-ebIBcaVUngFBQ.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+<!-- Start Google +1 tag -->
+<!-- Place this tag in your head or just before your close body tag -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<!-- End Google +1 tag -->
+
+
+<!-- Start Google Analytics tag -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3317450-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- End Google Analytics tag -->
+
+<!-- Start Advertise.com InterYield tag -->
+<!-- script src="http://interyield.td573.com/InterYield/bindevent.do?e=click&affiliate=gregipIY&subid=yolinux&ecpm=0&debug=false&snoozeMinutes=1&adCountIntervalHours=24&maxAdCountsPerInterval=2&pop=under&attributionDisabled=true&endpoint=http%3A%2F%2Finteryield.td573.com" type="text/javascript"></script -->
+<!-- End Advertise.com InterYield tag -->
+
+<!-- Google auto ads - turn it on -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8567479315106986",
+          enable_page_level_ads: true
+     });
+</script>
+
+</body>
+</html>

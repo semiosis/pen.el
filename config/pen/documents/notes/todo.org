@@ -1,3 +1,430 @@
+* TODO Make these work with an emacs popup, like yn has
+j:read-multiple-choice--long-answers
+j:read-multiple-choice--long-answers
+
+* TODO Consider getting better at writing c
+I'd have to build up libraries for working effectively with c code.
+That's fine.
+Libraries for debugging, etc. and common tasks.
+Shane-C-Lib.
+
+I want:
+- snc()
+- tv()
+- cmd()
+
+https://www.cs.dartmouth.edu/~campbell/cs50/buildlib.html
+
+* TODO See if I can get actual picture emojis inside of xterm
+I know I can make font glyphs - that is cool. But can I get picture graphics, like other terminals?
+Is sixel required for that?
+But sixel is raster...
+
+I guess there will not be coloured emojis.
+But I can have nice line drawings inside of xterm using fonts and ansi codes!
+This is the way forward, I think.
+It will produce a certain style that will look nice I think.
+
+* TODO Find a way to make double-width characters for a font only single-width
+This way, it should work in xterm better.
+
+* TODO Learning to make glyphs inside of Pen.el would be cool - particularly in order to build 2d applications with grids of SVGs
+
+I wonder though, about making full-on colourful images inside of the fonts I might build.
+
+* TODO Learn fontforge - to work on the fixel font
+
+- https://fontforge.org/docs/tutorial/editexample.html#creating-a-glyph
+- https://fontforge.org/docs/scripting/scripting.html
+- https://fontforge.org/docs/fontutils/acorn2sfd.html
+
+** I should figure out how to shrink the large characters
+
+** Scripting - it has its own DSL
+- https://fontforge.org/docs/scripting/scripting.html#scripting-example
+
+** Ahh OK, so in fontforge, you place points, then make some things curve
+- https://sourceforge.net/projects/autotrace/
+
+So perhaps there is importing from autotrace.
+
+** Rebuild font cache
+#+BEGIN_SRC bash -n :i bash :async :results none :lang text
+  adn fc-cache -f -v
+#+END_SRC
+
+** List fonts
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  fc-list :outline -f "%{family}\n" | v
+#+END_SRC
+
+** Unicode pictures
+🀀
+
+** Emojis
+https://unicode.org/Public/emoji/16.0/emoji-sequences.txt
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  unicode "1FAD0..1FAD6"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+          .0 .1 .2 .3 .4 .5 .6 .7 .8 .9 .A .B .C .D .E .F 
+0001 FA0. 🨀 🨁 🨂 🨃 🨄 🨅 🨆 🨇 🨈 🨉 🨊 🨋 🨌 🨍 🨎 🨏 
+0001 FA1. 🨐 🨑 🨒 🨓 🨔 🨕 🨖 🨗 🨘 🨙 🨚 🨛 🨜 🨝 🨞 🨟 
+0001 FA2. 🨠 🨡 🨢 🨣 🨤 🨥 🨦 🨧 🨨 🨩 🨪 🨫 🨬 🨭 🨮 🨯 
+0001 FA3. 🨰 🨱 🨲 🨳 🨴 🨵 🨶 🨷 🨸 🨹 🨺 🨻 🨼 🨽 🨾 🨿 
+0001 FA4. 🩀 🩁 🩂 🩃 🩄 🩅 🩆 🩇 🩈 🩉 🩊 🩋 🩌 🩍 🩎 🩏 
+0001 FA5. 🩐 🩑 🩒 🩓 🩔 🩕 🩖 🩗 🩘 🩙 🩚 🩛 🩜 🩝 🩞 🩟 
+0001 FA6.  🩠  🩡  🩢  🩣  🩤  🩥  🩦  🩧  🩨  🩩  🩪  🩫  🩬  🩭 🩮 🩯 
+.......................
+0001 FA7. 🩰 🩱 🩲 🩳 🩴 🩵 🩶 🩷 🩸 🩹 🩺 🩻 🩼 🩽 🩾 🩿 
+0001 FA8. 🪀 🪁 🪂 🪃 🪄 🪅 🪆 🪇 🪈 🪉 🪊 🪋 🪌 🪍 🪎 🪏 
+0001 FA9. 🪐 🪑 🪒 🪓 🪔 🪕 🪖 🪗 🪘 🪙 🪚 🪛 🪜 🪝 🪞 🪟 
+0001 FAA. 🪠 🪡 🪢 🪣 🪤 🪥 🪦 🪧 🪨 🪩 🪪 🪫 🪬 🪭 🪮 🪯 
+0001 FAB. 🪰 🪱 🪲 🪳 🪴 🪵 🪶 🪷 🪸 🪹 🪺 🪻 🪼 🪽 🪾 🪿 
+0001 FAC. 🫀 🫁 🫂 🫃 🫄 🫅 🫆 🫇 🫈 🫉 🫊 🫋 🫌 🫍 🫎 🫏 
+0001 FAD. 🫐 🫑 🫒 🫓 🫔 🫕 🫖 🫗 🫘 🫙 🫚 🫛 🫜 🫝 🫞 🫟 
+0001 FAE. 🫠 🫡 🫢 🫣 🫤 🫥 🫦 🫧 🫨 🫩 🫪 🫫 🫬 🫭 🫮 🫯 
+0001 FAF. 🫰 🫱 🫲 🫳 🫴 🫵 🫶 🫷 🫸 🫹 🫺 🫻 🫼 🫽 🫾 🫿 
+
+#+end_src
+
+U+1F600
+🎧
+🍪
+🍫
+🎕
+🌀
+🌁
+🌠
+🍥
+🎣
+🎭
+
+** Hmm.... Maybe it's not DejaVuSansMono Bold
+because the cookie and shooting star unicode chars do not look the same.
+
+I think the issue is just the rendering.
+
+🎧
+🍪
+🍫
+🎕
+🌀
+🌁
+🌠
+🍥
+🎣
+🎭
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  unicode 🎭
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+U+1F3AD PERFORMING ARTS
+UTF-8: f0 9f 8e ad UTF-16BE: d83cdfad Decimal: &#127917; Octal: \0371655
+🎭
+Category: So (Symbol, Other); East Asian width: W (wide)
+Unicode block: 1F300..1F5FF; Miscellaneous Symbols and Pictographs
+Bidi: ON (Other Neutrals)
+#+end_src
+
+*** OH, Also, it seems that DejaVuSansMono Bold doesn't have its own glyphs for these emojis
+But it must fall back onto something else.
+
+** There is an extremely large number of unencoded unicode chars
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  echo "1034531 - 293135" | bc
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+741396
+#+end_src
+
+U+4790f
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  hex2dec 4790F
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+obase=10;ibase=16;4790F
+293135
+#+end_src
+
+U+fc923
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  hex2dec FC923
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+obase=10;ibase=16;FC923
+1034531
+#+end_src
+
+** Merge the font using fontforge to build the final font
+
+https://fontforge.org/docs/scripting/scripting.html
+https://fontforge.org/docs/scripting/python/fontforge.html#fontforge.font.mergeFonts
+
+** TODO Find the actual font used
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  lsof -p "$(ps -ef | grep "/usr/bin/xterm.*faceName" | grep -v grep | s field 2)" 2>/dev/null | sed 's/ \+/ /g' | cut -d ' ' -f9- | sed '1d' | grep fonts
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+/usr/share/fonts/opentype/Symbola.otf
+/usr/share/fonts/truetype/junicode/Junicode.ttf
+/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf
+/root/.fonts/DejaVuSansMono-Bold.ttf
+/usr/share/fonts/truetype/artemisia/GFSArtemisia.otf
+/usr/share/fonts/truetype/noto/NotoSansMongolian-Regular.ttf
+#+end_src
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  fontforge /usr/share/fonts/opentype/Symbola.otf
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  fontforge /usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  fontforge /root/.fonts/DejaVuSansMono-Bold.ttf
+#+END_SRC
+
+This worked:
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20"
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  pen-xterm -fa "Iosevka Fixed:style=Bold:antialias=true:pixelsize=20"
+#+END_SRC
+
+** Now the question is, can I update the font on the fly?
+
+An existing xterm doesn't use the updates when I save the font.
+But starting a new xterm does have the updated font.
+OK, so now I need to find a way to reload the font in xterm.
+
+e:/root/repos/xterm/xterm-397
+e:/root/repos/xterm/xterm-397/fontutils.c
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  sp +/"^xtermLoadFont(XtermWidget xw," "$MYGIT/xterm/xterm-397/fontutils.c"
+#+END_SRC
+
+*** It appears that when I use to right-click menu to disable and reenable true type fonts, the font isn't updated inside xterm
+Interestingly, I do not need to update the font cache with fc-cache.
+I just need to save the font.
+
+But restarting xterm does get the updated font.
+
+This is the code that runs when the menu is toggled. But it's not the solution.
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  sp +/"^do_font_renderfont(Widget gw GCC_UNUSED," "$MYGIT/xterm/xterm-397/menu.c"
+#+END_SRC
+
+It's interesting that it runs xtermLoadFont.
+
+*** TODO Add a USR1 signal handler
+e:/root/repos/xterm/xterm-397
+
+- https://stackoverflow.com/questions/6168636/how-to-trigger-sigusr1-and-sigusr2
+- https://gist.github.com/aspyct/3462238?permalink_comment_id=2200001
+
+**** Works
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  sp +/"^SetVTFont(XtermWidget xw," "$MYGIT/xterm/xterm-397/fontutils.c"
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cd "$MYGIT/xterm/xterm-397"; kill -USR1 469494
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+      (void) tag;
+      return result;
+  }
+  
+  void handle_signal(int signum)
+  {
+      if (signum == SIGUSR1)
+      {
+          printf("Received SIGUSR1!\n");
+      }
+  }
+  
+  int
+  main(int argc, char *argv[]ENVP_ARG)
+  {
+      signal(SIGUSR1, handle_signal);
+  
+  #if OPT_MAXIMIZE
+#+END_SRC
+
+** OK, so set up a new font
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  cp -a $HOME/.fonts/DejaVuSansMono-Bold.ttf $HOME/.fonts/DejaVuSansMono-Pen.ttf
+  fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
+#+END_SRC
+
+** I want to automate the process of editing the font of Pen.el
+
+* Add this
+[[https://www.youtube.com/watch?v=XGT4YWruj0w][youtube.com: RESIST SATAN--DO YOU KNOW TRUE DOCTRINE ENOUGH TO RESIST THE SPIRIT OF THE ANTICHRIST AROUND US? {@DTBM}]]
+
+This is really important teaching.
+Hmm.
+It's interesting stuff.
+
+* TODO Make it so that from a running script, I can split the window to the current directory of the script
+
+* TODO Make a script which is sequentially asking like e:cr but 
+
+* XPM viewer for the terminal
+https://github.com/gansm/finalcut/blob/main/examples/xpmview.cpp
+
+* image viewer using kitty
+https://github.com/atanunq/viu
+
+Perhaps I should imlp
+
+* I should set up font editing in the terminal
+
+* 
+https://www.reddit.com/r/emacs/comments/9x2gbd/pure_tty_emacs_all_the_time/?rdt=48679
+
+* TODO Work on being able to show / animate sixel while taking mouse input and making changes
+Also generate sixel.
+
+Perhaps, though, I should just go with the sdl sixel library.
+Hmm... In all honesty, perhaps I should.
+I'd only need to make something very simple.
+
+https://github.com/saitoha/SDL1.2-SIXEL
+
+** TODO Figure out how to compile this inside of Pen.el
+I'm having problems.
+
+https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575
+https://github.com/Homebrew/legacy-homebrew/issues/25129
+
+*** Fix
+https://github.com/Homebrew/legacy-homebrew/commit/0e6acdec0fe65e25a6bd56300e243ca7a87734b2
+
+http://hg.libsdl.org/SDL/raw-rev/91ad7b43317a
+https://github.com/libsdl-org/SDL-1.2/commit/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch
+
+* TODO Also get into modifying / extending bash
+e:~/repos/bash/
+
+* Tablist
+** TODO Make it so when I open a tsv as a tablist, it setq-local a local variable tablist-path for the path to the tsv
+*** TODO Make it so that a tablist which has a file path is "savable"
+I should be able to edit and save the tabulated list.
+
+** TODO Look into editing the tabulated lists now
+It will be cool to be able to edit tabulated lists inside of emacs, like a spreadsheet.
+
+* TODO Plan 
+- Continue designing emacs user-interfaces from various standard components
+- Work gradually towards
+
+Consider putting together some components using alphapapa's "activities-mode"?
+
+mx:activities-new
+
+j:pen-activities
+
+mx:activities-define
+
+** Learn to use activities-mode
+- Also figure out why it's not working super nicely.
+
+* 
+Make a faster version which loads from a B&W mode save.
+That way, new frames will load much faster.
+
+j:pen-disable-all-faces
+
+* TODO Continue to work on sqlite inside of Pen.el
+
+* TODO Make it so I can fuzzy search for functions from their docstrings
+
+* TODO Make it easier to query sqlite from emacs
+e:/root/.emacs.d/host/pen.el/config/databases/emacs-operations.db
+
+- Make it so a variable is set for the buffer that contains the path to the db
+  - that already exists: sqlite--db
+- Make a w (copy path) binding
+- Also make it for yp
+
+* TODO Learn gamegrid, I guess
+IDK... I think it might not be necessary.
+It's probably best if I use emacs components so that playing the game is just like using emacs.
+OK then, but what I want to make right now is something like hypercard.
+And, I really wish it would be inside emacs.
+Hmmm...
+I want stuff like org-link but 2D.
+It would be nice to have visible and invisible links, etc.
+How?:
+- Do I build up with components like org-link?
+- Or do I use builtin widgets
+- Or do I make my own widget stuff
+- Also, should it be
+
+* TODO Work on trying to creating a point-and-click application like hypercard in emacs
+
+** I guess I need an editor for it
+It would be called "hyperstacks" or something like this.
+
+* TODO Make the next component of my adventure video game
+I want to make something like Ray's Maze.
+It was a fun game.
+
+Yes, I also want to make a Captain Bible game.
+The Captain Bible game is the more important.
+But I also want the adventure game, and they might overlap.
+
+* DONE Work on tabulated list to fix the marking bug
+j:tablist-mark-forward should actually mark all lines in the region.
+Also, it shouldn't go back to the beginning of the buffer.
+
+I think to make j:tabulated-list-mode work well will be quite useful.
+
+* TODO Consider making Christian video games?
+It might be a good idea.
+
+** TODO Continue to work towards a new version of Captain Bible
+That sounds like a good idea.
+
+* Go over
+- [[https://www.youtube.com/watch?v=V-Qg45_v8VM][youtube.com: John MacArthur - Why I Wrote this Book - The War on Children {@jmacpg}]]
+- [[https://www.youtube.com/watch?v=_0cBXmXDDYc][youtube.com: How to Live in a Crooked and Perverse Generation {Philippians 2:12-16} {@gracetoyou}]]
+  - Pretty good sermon so far
+- [[https://www.youtube.com/watch?v=WWjwVKFjcvQ][youtube.com: Living Out the Truth of God's Word in Daily Life | John MacArthur 2025 | Selected Scriptures {@GodSpeaksToday368}]]
+- [[https://www.youtube.com/watch?v=8MEF4c-VYSM][youtube.com: God's Hand Will Guide You Through Every Trial | John MacArthur 2025 | Selected Scriptures {@GodSpeaksToday368}]]
+- [[https://www.youtube.com/watch?v=A8-Nt8xkw7s][youtube.com: "IN CHRIST" What Does It Mean? {@JesuschristisLORDofall7}]]
+
 * TODO Learn to make emacs shells, like dunnet
 
 #+BEGIN_SRC sh -n :sps bash :async :results none :lang text

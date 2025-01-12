@@ -1,4 +1,14 @@
 (require 'sqlite-mode)
+(advice-add 'sqlite-close :around #'ignore-errors-around-advice)
+
+;; Now I can copy the path and open a zsh while browsing a database
+(defun sqlite-mode-open-file-around-advice (proc file)
+  (let ((res (apply proc (list file))))
+    (setq-local sqlite--db-file file)
+    (setq-local default-directory (f-dirname (f-realpath file)))
+    res))
+(advice-add 'sqlite-mode-open-file :around #'sqlite-mode-open-file-around-advice)
+;; (advice-remove 'sqlite-mode-open-file #'sqlite-mode-open-file-around-advice)
 
 (defun sqlite-open-refs ()
   (interactive)
@@ -35,5 +45,11 @@
     (etv refs 'emacs-lisp-mode)
 
     (sqlite-close db)))
+
+(defun sqlite-copy-path ()
+  (interactive)
+  (xc sqlite--db-path))
+
+(define-key sqlite-mode-map (kbd "w") 'sqlite-copy-path)
 
 (provide 'pen-sqlite)

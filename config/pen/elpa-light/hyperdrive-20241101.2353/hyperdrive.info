@@ -1,0 +1,2583 @@
+This is hyperdrive.info, produced by makeinfo version 6.8 from
+hyperdrive.texi.
+
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* Hyperdrive: (hyperdrive). P2P filesystem in Emacs.
+END-INFO-DIR-ENTRY
+
+
+File: hyperdrive.info,  Node: Top,  Next: Freedom to copy,  Up: (dir)
+
+Hyperdrive.el User Manual
+*************************
+
+Hyperdrive (https://docs.holepunch.to/building-blocks/hyperdrive) is a
+P2P, real-time, local-first, versioned filesystem designed for easy
+peer-to-peer file sharing.  ‘hyperdrive.el’ is an independent project
+built by USHIN (https://ushin.org) which provides an Emacs interface for
+managing hyperdrives.
+
+   ‘hyperdrive.el’ is in early development.  If something breaks, please
+see *note Troubleshooting::.
+
+   • Homepage: <https://ushin.org/hyperdrive/hyperdrive-manual.html>
+   • Repository: <https://git.sr.ht/~ushin/hyperdrive.el>
+
+   This manual is for ‘hyperdrive.el’ version 0.5-pre.
+
+* Menu:
+
+* Freedom to copy::
+* Installation::
+* Example configuration::
+* Usage::
+* Concepts::
+* Customization::
+* Known limitations::
+* Tips::
+* Troubleshooting::
+* Contributing/Getting help::
+* Uninstallation::
+* Acknowledgments::
+* Indices::
+* GNU Free Documentation License::
+
+— The Detailed Node Listing —
+
+Installation
+
+* Install Emacs::
+* Install curl::
+* Install hyperdrive.el: Install hyperdriveel.
+* Install hyper-gateway-ushin::
+
+Usage
+
+* Install the gateway::
+* Menu bar support::
+* Hyperdrive menu command::
+* Start/stop the gateway::
+* Open a hyperdrive::
+* Create a hyperdrive::
+* Write to a hyperdrive::
+* Link to a hyperdrive::
+* Delete a hyperdrive file::
+* Forget a hyperdrive file::
+* View the hyperdrive version history::
+* Describe a hyperdrive::
+* Name a hyperdrive::
+* Bookmark a hyperdrive::
+* Stream audio and video::
+* Download hyperdrive files::
+* Upload files from your filesystem::
+* Mark a hyperdrive as safe::
+* Purge a hyperdrive::
+* Non-interactive use::
+* Org-transclusion integration::
+* Miscellaneous features::
+
+Start/stop the gateway
+
+* Advanced gateway customization::
+
+Open a hyperdrive
+
+* Directory view::
+* File view::
+* Unknown paths::
+
+Link to a hyperdrive
+
+* Org mode links::
+* Markdown links::
+
+View the hyperdrive version history
+
+* History buffer::
+
+Upload files from your filesystem
+
+* Mirror a whole directory::
+
+Non-interactive use
+
+* Non-interactive use example hyperdrive-mirror::
+
+Miscellaneous features
+
+* Find file at point integration::
+* Embark integration::
+* Webjump integration::
+
+Concepts
+
+* Hyperdrive::
+* hyper-gateway-ushin::
+* Naming::
+
+Hyperdrive
+
+* Sparse replication::
+* Versioning::
+* Master key::
+
+Versioning
+
+* Partial version data::
+
+Naming
+
+* Public keys::
+* Nicknames::
+* Petnames::
+* Seeds::
+* DNS domains::
+
+Customization
+
+* Additional customization::
+
+Additional customization
+
+* Completion styles and cycling::
+
+Known limitations
+
+* No empty directories::
+* Files and folders can have the same name::
+* Non-UTF-8 encoded text::
+
+Tips
+
+* Quick documentation access::
+
+Troubleshooting
+
+* Reinstall/upgrade the gateway::
+
+Indices
+
+* Keystroke index::
+* Function index::
+* Variable index::
+* Concept index::
+
+
+
+File: hyperdrive.info,  Node: Freedom to copy,  Next: Installation,  Prev: Top,  Up: Top
+
+1 Freedom to copy
+*****************
+
+Copyright © 2023, 2024 USHIN, Inc.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover Texts
+     being “A GNU Manual,” and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     “GNU Free Documentation License.”
+
+     (a) The FSF’s Back-Cover Text is: “You have the freedom to copy and
+     modify this GNU manual.”
+
+
+File: hyperdrive.info,  Node: Installation,  Next: Example configuration,  Prev: Freedom to copy,  Up: Top
+
+2 Installation
+**************
+
+* Menu:
+
+* Install Emacs::
+* Install curl::
+* Install hyperdrive.el: Install hyperdriveel.
+* Install hyper-gateway-ushin::
+
+
+File: hyperdrive.info,  Node: Install Emacs,  Next: Install curl,  Up: Installation
+
+2.1 Install Emacs
+=================
+
+‘hyperdrive.el’ requires GNU Emacs (https://www.gnu.org/software/emacs/)
+version 28.1 or later.
+
+
+File: hyperdrive.info,  Node: Install curl,  Next: Install hyperdriveel,  Prev: Install Emacs,  Up: Installation
+
+2.2 Install curl
+================
+
+‘hyperdrive.el’ requires a reasonably up-to-date version of curl
+(https://curl.se/download.html).
+
+   Feel free to skip this step.  ‘curl’ may already installed on your
+machine, and ‘hyperdrive.el’ will warn you otherwise.
+
+
+File: hyperdrive.info,  Node: Install hyperdriveel,  Next: Install hyper-gateway-ushin,  Prev: Install curl,  Up: Installation
+
+2.3 Install hyperdrive.el
+=========================
+
+‘hyperdrive.el’ can be installed from NonGNU ELPA
+(https://elpa.nongnu.org/nongnu/hyperdrive.html) with ‘M-x
+package-refresh-contents’ then ‘M-x package-install RET hyperdrive’.
+
+   After installing with NonGNU ELPA, you can later upgrade to a newer
+version of ‘hyperdrive.el’ by running ‘M-x package-refresh-contents’
+then ‘M-x package-upgrade RET hyperdrive’.  On Emacs 28, If
+‘package-upgrade’ is not available as a command, display the list of
+packages with ‘M-x list-packages’, select ‘hyperdrive’, and click the
+‘Install’ button.
+
+
+File: hyperdrive.info,  Node: Install hyper-gateway-ushin,  Prev: Install hyperdriveel,  Up: Installation
+
+2.4 Install hyper-gateway-ushin
+===============================
+
+‘hyperdrive.el’ relies on hyper-gateway-ushin
+(https://git.sr.ht/~ushin/hyper-gateway-ushin/) for talking to the
+hypercore network.
+
+   After installing ‘hyperdrive.el’ (see *note Install hyperdrive.el:
+Install hyperdriveel.), run ‘M-x hyperdrive-install’ to download and
+install the gateway.
+
+   Alternatively, follow the manual installation instructions
+(https://git.sr.ht/~ushin/hyper-gateway-ushin#installation).
+
+
+File: hyperdrive.info,  Node: Example configuration,  Next: Usage,  Prev: Installation,  Up: Top
+
+3 Example configuration
+***********************
+
+After following the *note installation instructions: Installation, you
+can add this snippet to your ‘~/.emacs.d/init.el’ file.  This code will
+make the keyboard shortcut ‘C-c h’ (hold the ‘Control’ key and tap ‘c’,
+then release both and tap ‘h’) open *note the hyperdrive menu command:
+Hyperdrive menu command.  It will also enable the *note “Hyperdrive”
+menu bar: Menu bar support.:
+
+     (when (package-installed-p 'hyperdrive)
+       (global-set-key (kbd "C-c h") #'hyperdrive-menu)
+       (hyperdrive-menu-bar-mode 1))
+
+   With *note use-package: (use-package)Top.:
+
+     (use-package hyperdrive
+       :bind ("C-c h" . hyperdrive-menu)
+       :init (hyperdrive-menu-bar-mode 1))
+
+
+File: hyperdrive.info,  Node: Usage,  Next: Concepts,  Prev: Example configuration,  Up: Top
+
+4 Usage
+*******
+
+     Be careful about what you share!
+     When you upload a file, beware:
+       You may delete your own copy,
+       But gone it may not be.
+     On the network it still may be there.
+
+* Menu:
+
+* Install the gateway::
+* Menu bar support::
+* Hyperdrive menu command::
+* Start/stop the gateway::
+* Open a hyperdrive::
+* Create a hyperdrive::
+* Write to a hyperdrive::
+* Link to a hyperdrive::
+* Delete a hyperdrive file::
+* Forget a hyperdrive file::
+* View the hyperdrive version history::
+* Describe a hyperdrive::
+* Name a hyperdrive::
+* Bookmark a hyperdrive::
+* Stream audio and video::
+* Download hyperdrive files::
+* Upload files from your filesystem::
+* Mark a hyperdrive as safe::
+* Purge a hyperdrive::
+* Non-interactive use::
+* Org-transclusion integration::
+* Miscellaneous features::
+
+
+File: hyperdrive.info,  Node: Install the gateway,  Next: Menu bar support,  Up: Usage
+
+4.1 Install the gateway
+=======================
+
+Run ‘M-x hyperdrive-install’ to download and install the gateway program
+(see *note hyper-gateway-ushin::):
+
+ -- Command: hyperdrive-install
+     Download and install the gateway.  Prompts for confirmation before
+     downloading.
+
+ -- Command: hyperdrive-cancel-install
+     Cancel installation in progress.
+
+
+File: hyperdrive.info,  Node: Menu bar support,  Next: Hyperdrive menu command,  Prev: Install the gateway,  Up: Usage
+
+4.2 Menu bar support
+====================
+
+If you enable ‘hyperdrive-menu-bar-mode’, either in your configuration
+(see *note Example configuration::) or with ‘M-x
+hyperdrive-menu-bar-mode’, the “Hyperdrive” menu should appear after the
+“Tools” menu at the top of the screen.  If you don’t see the menu bar,
+please double check that ‘menu-bar-mode’ is enabled (it is enabled by
+default).
+
+ -- Command: hyperdrive-menu-bar-mode
+     Enable the “Hyperdrive” menu bar.
+
+   If you have disabled ‘menu-bar-mode’, you can still use the
+hyperdrive menu bar by pressing ‘C-mouse-3’ in a hyperdrive file or
+directory.
+
+
+File: hyperdrive.info,  Node: Hyperdrive menu command,  Next: Start/stop the gateway,  Prev: Menu bar support,  Up: Usage
+
+4.3 Hyperdrive menu command
+===========================
+
+‘M-x hyperdrive-menu’ is a keyboard-driven interface to many
+‘hyperdrive.el’ commands.  With the menu open, press one of highlit keys
+or key combinations to invoke the command displayed next to it.
+Different commands are available in ‘hyperdrive-menu’ when you’re inside
+a hyperdrive file, directory, or neither.
+
+   While inside the ‘hyperdrive-menu’, press ‘?’ twice to open this
+‘hyperdrive.el’ info manual.  You can also press ‘?’ followed by a
+command’s key sequence to get help for that command.  (*note more tips
+on getting help: Quick documentation access.)
+
+   If you press ‘C-u’ (universal prefix argument) before a key sequence,
+the command may behave differently, e.g., by prompting for more
+information.  You can jump between ‘hyperdrive-menu’ commands with the
+‘up’ and ‘down’ arrow keys.  Press ‘C-g’ to close the menu.
+
+ -- Command: hyperdrive-menu
+     Show the hyperdrive menu interface.
+
+   For more on this type of user interface, please refer to the *note
+Transient documentation: (transient)Introduction.  To learn about the
+commands available in ‘hyperdrive-menu’, read on!
+
+
+File: hyperdrive.info,  Node: Start/stop the gateway,  Next: Open a hyperdrive,  Prev: Hyperdrive menu command,  Up: Usage
+
+4.4 Start/stop the gateway
+==========================
+
+To connect with peers, you’ll need to start the gateway (see *note
+hyper-gateway-ushin::).  The current running status of the gateway can
+be seen in ‘hyperdrive-menu’ (see *note Hyperdrive menu command::) and
+in the “Hyperdrive” menu bar (see *note Menu bar support::).
+
+ -- Command: hyperdrive-start
+     Start the gateway.
+
+ -- User Option: hyperdrive-gateway-ready-hook
+     Hook run when the gateway becomes responsive after
+     ‘hyperdrive-start’.  One of the default hooks,
+     ‘hyperdrive-check-gateway-version’, will warn you if you’re running
+     an outdated version of the gateway.
+
+ -- Command: hyperdrive-stop
+     Stop the gateway.
+
+ -- User Option: hyperdrive-gateway-dead-hook
+     Hook run when the gateway is no longer live after
+     ‘hyperdrive-stop’.
+
+ -- Command: hyperdrive-restart
+     Restart the gateway.
+
+ -- Command: hyperdrive-gateway-version
+     Say the version of the gateway which is running.
+
+* Menu:
+
+* Advanced gateway customization::
+
+
+File: hyperdrive.info,  Node: Advanced gateway customization,  Up: Start/stop the gateway
+
+4.4.1 Advanced gateway customization
+------------------------------------
+
+ -- User Option: hyperdrive-gateway-start-function
+     Function run to start the gateway.  By default, ‘hyperdrive.el’
+     will start the gateway as an Emacs subprocess.
+
+ -- User Option: hyperdrive-gateway-stop-function
+     Function run to stop the gateway.
+
+ -- User Option: hyperdrive-gateway-live-predicate
+     Function run to check that the gateway process is live.
+
+
+File: hyperdrive.info,  Node: Open a hyperdrive,  Next: Create a hyperdrive,  Prev: Start/stop the gateway,  Up: Usage
+
+4.5 Open a hyperdrive
+=====================
+
+You can open a hyperdrive folder or file by pasting in a ‘hyper://’ URL
+after ‘M-x hyperdrive-open-url’.  Try loading USHIN’s hyperdrive:
+
+     hyper://aaj45d88g4eenu76rpmwzjiabsof1w8u6fufq6oogyhjk1ubygxy/
+
+ -- Command: hyperdrive-open-url
+     Open a hyperdrive file or directory by its ‘hyper://’ URL.
+
+   The following commands let you select and visit one of the
+hyperdrives you’ve already created or visited:
+
+ -- Command: hyperdrive-find-file
+     Open a hyperdrive file or directory by choosing one of your known
+     hyperdrives and a path inside it.  Like ‘find-file’, this command
+     can be used to create a new file inside your own hyperdrives.
+
+ -- Command: hyperdrive-view-file
+     Like ‘hyperdrive-find-file’, but open the file in *note view-mode:
+     (emacs)View Mode.
+
+* Menu:
+
+* Directory view::
+* File view::
+* Unknown paths::
+
+
+File: hyperdrive.info,  Node: Directory view,  Next: File view,  Up: Open a hyperdrive
+
+4.5.1 Directory view
+--------------------
+
+‘hyperdrive.el’ offers a Dired-like (see *note (emacs)Dired::) interface
+for exploring hyperdrive directories.  In the directory view, the file
+size color indicates how much of a file you have already downloaded:
+
+green
+     fully downloaded (‘hyperdrive-size-fully-downloaded’)
+yellow
+     partially downloaded (‘hyperdrive-size-partially-downloaded’)
+red
+     not downloaded (‘hyperdrive-size-not-downloaded’)
+
+   Mouse over the file size to see exactly how many blocks make up the
+file and how many of them you have downloaded.
+
+   The following bindings are available in the directory view by
+default:
+
+‘n’ (‘hyperdrive-ewoc-next’)
+‘p’ (‘hyperdrive-ewoc-previous’)
+     Move between entries.
+
+‘<RET>’ (‘hyperdrive-dir-find-file’)
+     Open the file or directory at point.
+
+‘o’ (‘hyperdrive-dir-find-file-other-window’)
+‘<mouse-1>’
+‘<mouse-2>’
+     Open the file or directory at point in a new window.
+
+‘v’ (‘hyperdrive-dir-view-file’)
+     Open the file or directory at point in *note view-mode: (emacs)View
+     Mode.
+
+‘^’ (‘hyperdrive-up’)
+     Go up to the parent directory.
+
+‘g’ (‘revert-buffer’)
+     Refresh the directory to display potential updates.
+
+‘s’ (‘hyperdrive-dir-sort’)
+     Sort directory contents by the current column.  To sort by a
+     different column, click on the column header or use the universal
+     prefix argument (‘C-u s’).
+
+‘d’ (‘hyperdrive-dir-download-file’)
+     Download the file at point to disk.
+
+‘D’ (‘hyperdrive-delete’)
+     Delete the file or directory (recursively) at point.
+
+‘F’ (‘hyperdrive-forget-file’)
+     Delete your local copy of the file at point.
+
+‘H’ (‘hyperdrive-dir-history’)
+     Open the version history (see *note View the hyperdrive version
+     history::) of file at point.
+
+‘w’ (‘hyperdrive-dir-copy-url’)
+     Copy the URL of the file or directory at point.
+
+‘j’ (‘imenu’)
+     Open ‘imenu’ to quickly jump to a file in the current directory.
+
+‘?’ (‘hyperdrive-menu’)
+     Open ‘hyperdrive-menu’ (see *note Hyperdrive menu command::).
+
+‘+’ (‘hyperdrive-create-directory-no-op’)
+     This command signals an error, because you cannot create empty
+     directories (see *note No empty directories::).
+
+   You can customize the directory view with the following options:
+
+ -- User Option: hyperdrive-directory-display-buffer-action
+     Display buffer action for hyperdrive directories.  Passed to
+     ‘display-buffer’, which see.
+
+ -- User Option: hyperdrive-directory-sort
+     Column by which directory entries are sorted by default.
+     Internally, a cons cell of (COLUMN .  DIRECTION), the COLUMN being
+     one of the directory listing columns (‘name’, ‘size’, or ‘mtime’)
+     and DIRECTION being one of ‘:ascending’ or ‘:descending’.
+
+
+File: hyperdrive.info,  Node: File view,  Next: Unknown paths,  Prev: Directory view,  Up: Open a hyperdrive
+
+4.5.2 File view
+---------------
+
+The following keybindings are available inside the file view by default:
+
+‘C-x x g’ (‘hyperdrive-revert-buffer-quick’)
+     Refresh the file to display potential updates.  This command remaps
+     the global ‘revert-buffer-quick’ keybinding.
+
+‘C-x C-j’ (‘hyperdrive-up’)
+     Jump to the parent hyperdrive directory from a hyperdrive file or
+     directory buffer.  This command remaps the global ‘dired-jump’
+     keybinding.
+
+   For security reasons, ‘hyperdrive.el’ does not enable major modes
+based on file extension unless the hyperdrive has been marked as “safe”
+with ‘M-x hyperdrive-mark-as-safe’ (see *note Mark a hyperdrive as
+safe::).
+
+   The following customization options affect how files are displayed:
+
+ -- User Option: hyperdrive-render-html
+     Control how HTML hyperdrive files are displayed.  By default, HTML
+     pages are rendered in Emacs with *note EWW: (eww)Top.  If ‘nil’,
+     raw HTML will be displayed.
+
+
+File: hyperdrive.info,  Node: Unknown paths,  Prev: File view,  Up: Open a hyperdrive
+
+4.5.3 Unknown paths
+-------------------
+
+When you attempt to load a file or folder that doesn’t appear to exist,
+‘hyperdrive.el’ will prompt you to take action:
+
+   • ‘h’ (history) to open the *note version history: View the
+     hyperdrive version history. for that file.
+   • ‘u’ (up) to open the parent directory containing that file or
+     folder
+   • ‘r’ (recurse) to go up the directory tree until a directory is
+     found or until you get to the root directory.
+   • ‘e’ (explain) to open this section of the hyperdrive Info manual.
+   • ‘q’ (exit) to exit,
+   • ‘?’ (help) to show a help message.
+
+   If you attempt to load the root directory (‘hyper://PUBLIC-KEY/’) of
+a hyperdrive with a valid-looking public key which you’ve never loaded
+before and for which no peers are currently found, ‘hyperdrive.el’
+should warn you that no peers were found for that drive.  This might
+mean that the drive doesn’t exist or just that you’re not connected to
+anyone who knows about it.
+
+   If you attempt to load a file or directory for a hyperdrive with a
+malformed public key, ‘hyperdrive.el’ should ask you to double-check the
+URL.
+
+
+File: hyperdrive.info,  Node: Create a hyperdrive,  Next: Write to a hyperdrive,  Prev: Open a hyperdrive,  Up: Usage
+
+4.6 Create a hyperdrive
+=======================
+
+You can have multiple hyperdrives, each one containing its own set of
+files.  Run ‘M-x hyperdrive-new’ then type in a ‘seed’ (see *note
+Seeds::) to create a new hyperdrive.  That seed will be combined with
+your secret master key (see *note Master key::) to produce a public key
+(see *note Public keys::) that uniquely identifies that hyperdrive.
+
+ -- Command: hyperdrive-new
+     Create a new hyperdrive from a seed string.
+
+   When you create a new drive, your chosen seed is used as its petname
+(see *note Petnames::) by default.
+
+
+File: hyperdrive.info,  Node: Write to a hyperdrive,  Next: Link to a hyperdrive,  Prev: Create a hyperdrive,  Up: Usage
+
+4.7 Write to a hyperdrive
+=========================
+
+After modifying a file in one of your hyperdrives, ‘save-buffer’ will
+silently update the current hyperdrive file with the new content.
+
+‘C-x C-s’ (‘save-buffer’)
+     Save the current hyperdrive file buffer to its location.
+
+‘C-x s’ (‘save-some-buffers’)
+     Save all modified hyperdrive file buffers to their locations.  This
+     command’s primary purpose is to save normal file buffers, and
+     ‘hyperdrive.el’ has integrated with it.
+
+     ‘hyperdrive.el’ will prompt to save modified hyperdrive files
+     before exiting Emacs.  If you want the command ‘save-some-buffers’
+     to always prompt to save hyperdrive files in addition to regular
+     files, set ‘save-some-buffers-default-predicate’ to ‘t’.
+
+ -- Command: hyperdrive-write-buffer
+     Write the current buffer to a hyperdrive by choosing one of
+     hyperdrives you have created as well as the path in that hyperdrive
+     where you want to store the file.
+
+
+File: hyperdrive.info,  Node: Link to a hyperdrive,  Next: Delete a hyperdrive file,  Prev: Write to a hyperdrive,  Up: Usage
+
+4.8 Link to a hyperdrive
+========================
+
+You can share a hyperdrive file with someone by copying and sending its
+link.  Anyone who has the link to a hyperdrive file or directory can
+load it and view its contents.
+
+ -- Command: hyperdrive-copy-url
+     Copy the URL of the current hyperdrive file or directory.
+
+   In the directory view, you can copy the URL of the file or directory
+at point by pressing ‘w’ (see *note Directory view::).
+
+* Menu:
+
+* Org mode links::
+* Markdown links::
+
+
+File: hyperdrive.info,  Node: Org mode links,  Next: Markdown links,  Up: Link to a hyperdrive
+
+4.8.1 Org mode links
+--------------------
+
+If the current file is an org-mode file, ‘org-store-link’ will store a
+link to the hyperdrive file.  If point is inside a heading, a
+URL-encoded search option containing its ‘CUSTOM_ID’, ‘ID’, or heading
+text will be appended as the stored URL’s link fragment.
+
+   Linking by path alone to other files within the same hyperdrive is
+supported; within ‘hyper://PUBLIC-KEY/foo.org’, links to ‘bar.org’,
+‘./bar.org’, and ‘/bar.org’ will all point to
+‘hyper://PUBLIC-KEY/bar.org’.  Links within a hyperdrive may also begin
+with the explicit ‘file:’ prefix.  A version number can also be
+specified; ‘/$/version/42/bar.org’ will point to
+‘hyper://PUBLIC-KEY/$/version/42/bar.org’.
+
+   Org-mode hyperdrive link completion allows you to interactively link
+to a hyperdrive file/folder by running ‘M-x org-insert-link’ (or ‘C-c
+C-l’ in org-mode), then typing ‘hyper:’ and ‘RET’.  To change how
+‘org-insert-link’ inserts links to files within the same hyperdrive,
+adjust ‘hyperdrive-org-link-full-url’ and ‘org-link-file-path-type’.
+
+ -- User Option: hyperdrive-org-link-full-url
+     This option controls whether relative links to hyperdrives are ever
+     inserted with ‘org-insert-link’.  Set it to ‘t’ if you always want
+     to insert full ‘hyper://’ links.
+
+
+File: hyperdrive.info,  Node: Markdown links,  Prev: Org mode links,  Up: Link to a hyperdrive
+
+4.8.2 Markdown links
+--------------------
+
+Relative links are supported; within ‘hyper://PUBLIC-KEY/foo.md’, the
+links ‘[bar](<bar.md>)’, ‘[bar](<./bar.md>)’, and ‘[bar](</bar.md>)’ all
+point to ‘hyper://PUBLIC-KEY/bar.md’.
+
+
+File: hyperdrive.info,  Node: Delete a hyperdrive file,  Next: Forget a hyperdrive file,  Prev: Link to a hyperdrive,  Up: Usage
+
+4.9 Delete a hyperdrive file
+============================
+
+*Please note that deleted files can be accessed by loading a prior
+version of the hyperdrive (see *note View the hyperdrive version
+history::).*
+
+ -- Command: hyperdrive-delete
+     Delete the hyperdrive file in the current buffer.
+
+   This command also has a keybinding in the directory view (see *note
+Directory view::).
+
+
+File: hyperdrive.info,  Node: Forget a hyperdrive file,  Next: View the hyperdrive version history,  Prev: Delete a hyperdrive file,  Up: Usage
+
+4.10 Forget a hyperdrive file
+=============================
+
+*Please note that forgetting a file may result in data loss if it cannot
+be loaded from another peer on the network.*
+
+   It is possible to “forget” your local copy of a hyperdrive file in
+order to save disk space.  “Forgetting” a file does not delete the file
+from the hyperdrive and does not increment the hyperdrive’s version
+number.
+
+ -- Command: hyperdrive-forget-file
+     Delete your local copy of the file for the current buffer.
+
+   This command also has a keybinding in the directory view (see *note
+Directory view::).  When you forget a file, the file size of its
+directory listing will turn red, indicating that you no longer have a
+copy of the file.
+
+
+File: hyperdrive.info,  Node: View the hyperdrive version history,  Next: Describe a hyperdrive,  Prev: Forget a hyperdrive file,  Up: Usage
+
+4.11 View the hyperdrive version history
+========================================
+
+Hyperdrives are versioned, meaning that you can explore the history of
+changes made to hyperdrive files (see *note Versioning::).
+
+ -- Command: hyperdrive-open-previous-version
+     Open the previous version of the current hyperdrive file or
+     directory.
+
+ -- Command: hyperdrive-open-previous-version
+     Open the next version of the current hyperdrive file or directory.
+
+ -- Command: hyperdrive-open-at-version
+     Open the current hyperdrive file or directory at a specific version
+     number.  To open the file or directory at its hyperdrive’s latest
+     version, leave the version blank.
+
+   The following keybindings are available when visiting an old version
+of a hyperdrive file (‘hyperdrive-blob-mode’):
+
+‘n’ (‘hyperdrive-open-next-version’)
+‘p’ (‘hyperdrive-open-previous-version’)
+     Traverse version history for the current file.
+
+‘q’ (‘kill-current-buffer’)
+
+* Menu:
+
+* History buffer::
+
+
+File: hyperdrive.info,  Node: History buffer,  Up: View the hyperdrive version history
+
+4.11.1 History buffer
+---------------------
+
+The history buffer displays the entire known history of a hyperdrive
+file.  For an explanation of how it works, see *note Partial version
+data::.
+
+   Like in the *note directory view: Directory view, the file size color
+in the history view indicates how much of a file you have already
+downloaded.
+
+ -- Command: hyperdrive-history
+     Open the history buffer for the current hyperdrive file.  To open
+     the history for a different file, use the universal prefix argument
+     like this: ‘C-u M-x hyperdrive-history’.
+
+   The following keybindings are available inside the history view by
+default:
+
+‘n’ (‘hyperdrive-ewoc-next’)
+‘p’ (‘hyperdrive-ewoc-previous’)
+     Move between entries.
+
+‘+’ (‘hyperdrive-history-load’)
+     Load all drive metadata, including version metadata, then reload
+     the history buffer.
+
+‘<RET>’ (‘hyperdrive-history-find-file’)
+     Open the file at the start of the version range at point.  When the
+     version range at point is ‘unknown’, run ‘hyperdrive-history-load’.
+
+‘o’ (‘hyperdrive-history-find-file-other-window’)
+‘<mouse-1>’
+‘<mouse-2>’
+     Open the file at the start of the version range at point in a new
+     window.
+
+‘v’ (‘hyperdrive-history-view-file’)
+     Open the file at the start of the version range at point in *note
+     view-mode: (emacs)View Mode.  When the version range at point is
+     ‘unknown’, run ‘hyperdrive-history-load’.
+
+‘w’ (‘hyperdrive-history-copy-url’)
+     Copy the URL of the file at the start of the version range at
+     point.
+
+‘d’ (‘hyperdrive-history-download-file’)
+     Download the file at the start of the version range at point.
+
+‘=’ (‘hyperdrive-history-diff’)
+     Display the differences between the version at point and the prior
+     version.
+
+‘F’ (‘hyperdrive-history-forget-file’)
+     Delete your local copy of the file for the version range at point.
+
+   To act on the latest known version of the file, use these keybindings
+on the header line displaying the file description.
+
+   You can customize the history view:
+
+ -- User Option: hyperdrive-history-display-buffer-action
+     Display buffer action for hyperdrive history buffers.  Passed to
+     ‘display-buffer’, which see.
+
+
+File: hyperdrive.info,  Node: Describe a hyperdrive,  Next: Name a hyperdrive,  Prev: View the hyperdrive version history,  Up: Usage
+
+4.12 Describe a hyperdrive
+==========================
+
+To see information about a hyperdrive, such as its public key, seed,
+petname, nickname, domains, writability, local disk usage, or other
+metadata, run ‘hyperdrive-describe-hyperdrive’.  For more on what this
+information means, see *note Naming::.
+
+ -- Command: hyperdrive-describe-hyperdrive
+     Display the description of the hyperdrive containing the current
+     file or directory.  To describe a different hyperdrive, use the
+     universal prefix argument: ‘C-u M-x
+     hyperdrive-describe-hyperdrive’.
+
+
+File: hyperdrive.info,  Node: Name a hyperdrive,  Next: Bookmark a hyperdrive,  Prev: Describe a hyperdrive,  Up: Usage
+
+4.13 Name a hyperdrive
+======================
+
+‘hyperdrive.el’ supports different ways to identify hyperdrives (see
+*note Naming::).  The following commands can be used to name
+hyperdrives:
+
+ -- Command: hyperdrive-set-petname
+     Set the petname (see *note Petnames::) of the hyperdrive for the
+     current hyperdrive file or directory.  You can’t use the same
+     petname for multiple hyperdrives.  To set the petname of a
+     different hyperdrive, use the universal prefix argument: ‘C-u M-x
+     hyperdrive-set-petname’.
+
+ -- Command: hyperdrive-set-nickname
+     Set the nickname (see *note Nicknames::) of the hyperdrive for the
+     current hyperdrive file or directory.  You can only set the
+     nickname for a hyperdrive which you previously created.  To set the
+     nickname of a different hyperdrive, use the universal prefix
+     argument like this: ‘C-u M-x hyperdrive-set-nickname’.
+
+
+File: hyperdrive.info,  Node: Bookmark a hyperdrive,  Next: Stream audio and video,  Prev: Name a hyperdrive,  Up: Usage
+
+4.14 Bookmark a hyperdrive
+==========================
+
+You can use the built-in ‘bookmark-set’, ‘bookmark-jump’, and
+‘bookmark-list’ functions to store and jump to a hyperdrive file or
+directory.
+
+ -- Command: hyperdrive-bookmark-jump
+     Select a hyperdrive bookmark and jump to it.
+
+ -- Command: hyperdrive-bookmark-list
+     View a list of hyperdrive bookmarks.
+
+
+File: hyperdrive.info,  Node: Stream audio and video,  Next: Download hyperdrive files,  Prev: Bookmark a hyperdrive,  Up: Usage
+
+4.15 Stream audio and video
+===========================
+
+When you use ‘hyperdrive-find-file’ or some other command to open a
+streamable audio/video file, Emacs will use an external program to
+stream that video from the network.  After the stream finishes, the
+audio/video file is stored locally.
+
+ -- User Option: hyperdrive-stream-player-command
+     Command used to play streamable URLs externally.  Default uses mpv
+     (https://mpv.io/).  There also exists a preconfigured option for
+     VLC media player (https://www.videolan.org/vlc/).
+
+
+File: hyperdrive.info,  Node: Download hyperdrive files,  Next: Upload files from your filesystem,  Prev: Stream audio and video,  Up: Usage
+
+4.16 Download hyperdrive files
+==============================
+
+You can “download” a hyperdrive file to your local filesystem, meaning
+that ‘hyperdrive.el’ will (1) download the file from the network if it
+hasn’t done so already and then (2) copy the file contents to a
+file-path on your machine of your choosing.  The following commands may
+be run while offline.
+
+ -- Command: hyperdrive-download
+     Download a hyperdrive file by selecting a hyperdrive and a path.
+
+ -- Command: hyperdrive-download-url
+     Download a hyperdrive file by pasting in a ‘hyper://’ URL.
+
+ -- User Option: hyperdrive-download-directory
+     Location where ‘hyperdrive-download-url’ will download files.
+     Defaults to ‘eww-download-directory’ or, if not bound, the home
+     directory.
+
+
+File: hyperdrive.info,  Node: Upload files from your filesystem,  Next: Mark a hyperdrive as safe,  Prev: Download hyperdrive files,  Up: Usage
+
+4.17 Upload files from your filesystem
+======================================
+
+If you already have a file on your local filesystem that you’d like to
+put on a hyperdrive, you can “upload” it.  Note that the following
+commands add files to a hyperdrive, but those files are not
+automatically “uploaded” to anyone else’s machine in the traditional
+sense.  Files are only shared on the network when other peers request
+them from your node.  The following commands may be run while offline.
+
+ -- Command: hyperdrive-upload-file
+     Upload a single file from your filesystem.  By default, the
+     selected file will be placed in your hyperdrive’s root directory,
+     but you can edit the filepath before uploading.
+
+ -- Command: hyperdrive-upload-files
+     Upload multiple files from your filesystem.  The selected files
+     will be uploaded into the same target directory in your hyperdrive.
+
+   On Emacs 29+, you can upload an image which you previously copied to
+your clipboard from an external program with ‘M-x yank-media’.
+
+* Menu:
+
+* Mirror a whole directory::
+
+
+File: hyperdrive.info,  Node: Mirror a whole directory,  Up: Upload files from your filesystem
+
+4.17.1 Mirror a whole directory
+-------------------------------
+
+For uploading more than a few files, you can use ‘hyperdrive-mirror’.
+
+ -- Command: hyperdrive-mirror
+     Upload a directory, mirroring its subdirectory structure in your
+     hyperdrive.  This command prompts for a source directory on your
+     local filesystem from which to upload files as well as a hyperdrive
+     and target directory inside of it where the files will end up.
+
+     The source and target directories will be compared, and only the
+     files which are “new locally” (they don’t already exist on the
+     drive) or “newer locally” (they have been locally modified since a
+     previous upload) will be uploaded.  Files which are the “same”
+     (they have the same timestamp as in the drive) or are “older
+     locally” (they have been modified on the drive more recently than
+     on the filesystem) will not be uploaded.
+
+     With a universal prefix argument (‘C-u M-x hyperdrive-mirror’), it
+     additionally prompts for a filter argument to programmatically
+     determine which files will be considered for upload.  With two
+     universal prefix arguments (‘C-u C-u M-x hyperdrive-mirror’),
+     matching files will be uploaded without the confirmation step.
+
+   As a confirmation step, ‘hyperdrive-mirror’ displays each file to be
+uploaded alongside the URL in the hyperdrive where it will end up.  The
+following keybindings are available in ‘hyperdrive-mirror-mode’:
+
+‘C-c C-c’ (‘hyperdrive-mirror-do-upload’)
+     Upload all of the files in the “To Upload” section.
+
+‘<TAB>’ (‘magit-section-toggle’)
+     Fold or unfold the section at point.
+
+
+File: hyperdrive.info,  Node: Mark a hyperdrive as safe,  Next: Purge a hyperdrive,  Prev: Upload files from your filesystem,  Up: Usage
+
+4.18 Mark a hyperdrive as safe
+==============================
+
+For security reasons, ‘hyperdrive.el’ does not enable major modes based
+on file extension unless the hyperdrive has been marked as “safe.” When
+opening a file in a hyperdrive marked as “unknown” (the default),
+‘hyperdrive.el’ will prompt you to mark the drive as “safe”, “unsafe”,
+or “unknown”.  Files in hyperdrives which are marked as “safe” are
+always opened in the appropriate major mode with ‘set-auto-mode’.  Files
+in hyperdrives which are marked as “unsafe” are opened in
+‘fundamental-mode’ (no major mode).
+
+ -- Command: hyperdrive-mark-as-safe
+     Mark a hyperdrive as “safe”, “unsafe”, or “unknown”.  This command
+     can also be invoked from ‘hyperdrive-menu-hyperdrive’ and the menu
+     bar.
+
+
+File: hyperdrive.info,  Node: Purge a hyperdrive,  Next: Non-interactive use,  Prev: Mark a hyperdrive as safe,  Up: Usage
+
+4.19 Purge a hyperdrive
+=======================
+
+*Data which has been purged from your local machine may still be
+available on the network.*
+
+   *Data which has been purged from your local machine may not be
+recoverable.*
+
+ -- Command: hyperdrive-purge
+     Remove all data related to a hyperdrive.  This command will prompt
+     for confirmation before deleting anything.  In addition to the
+     hyperdrive’s file content and metadata, ‘hyperdrive-purge’ also
+     deletes relevant metadata persisted in the ‘hyperdrive-hyperdrives’
+     variable.
+
+
+File: hyperdrive.info,  Node: Non-interactive use,  Next: Org-transclusion integration,  Prev: Purge a hyperdrive,  Up: Usage
+
+4.20 Non-interactive use
+========================
+
+In writing your own functions to extend ‘hyperdrive.el’, you can use
+‘hyperdrive-by-slot’ to access a hyperdrive by its metadata:
+
+ -- Function: hyperdrive-by-slot
+     This function accepts a hyperdrive seed, petname, or public key,
+     and returns the hyperdrive ‘struct’.
+
+* Menu:
+
+* Non-interactive use example hyperdrive-mirror::
+
+
+File: hyperdrive.info,  Node: Non-interactive use example hyperdrive-mirror,  Up: Non-interactive use
+
+4.20.1 Non-interactive use example: ‘hyperdrive-mirror’
+-------------------------------------------------------
+
+You can use the following snippet to recursively upload all of the files
+from your local filesystem’s ‘~/blog/’ directory into the ‘/blog/’
+directory of a hyperdrive you previously created with petname ‘"foo"’:
+
+     (hyperdrive-mirror
+      "~/blog/"
+      (hyperdrive-by-slot 'petname "foo")
+      "/blog/")
+
+   To upload the same files without confirmation, add ‘:no-confirm t’.
+
+   Now let’s say that you want to upload only those files tagged as
+“public” using Protesilaos Stavrou’s Denote
+(https://protesilaos.com/emacs/denote) file-naming scheme.  The
+following snippet includes a ‘FILTER’ key whose value is a regular
+expression against which every expanded filename will be tested.
+
+     (hyperdrive-mirror
+      "~/blog/"
+      (hyperdrive-by-slot 'petname "foo")
+      "/blog/"
+      :filter "_public")
+
+   Alternatively, you could select files by tag with Karl Voit’s
+filetags (https://github.com/novoid/filetags/).  Either way allows for a
+“non-splitting” approach where public and private files exist in the
+same directory.
+
+   ‘FILTER’ may also be a function, which receives the expanded filename
+as its only argument.  For example, the following snippet will mirror
+only those files in ‘~/blog/’ which are smaller than 5MB:
+
+     (hyperdrive-mirror
+      "~/blog/"
+      (hyperdrive-by-slot 'petname "foo")
+      "/blog/"
+      :filter (lambda (file) (> (* 5 1024 1024)
+                           (file-attribute-size
+                            (file-attributes file)))))
+
+
+File: hyperdrive.info,  Node: Org-transclusion integration,  Next: Miscellaneous features,  Prev: Non-interactive use,  Up: Usage
+
+4.21 Org-transclusion integration
+=================================
+
+The hyperdrive-org-transclusion
+(https://git.sr.ht/~ushin/hyperdrive-org-transclusion) package adds
+support for transcluding hyperdrive files and parts of hyperdrive files
+with org-transclusion (https://nobiot.github.io/org-transclusion/).
+
+   To use this feature, please install ‘hyperdrive-org-transclusion’
+with ‘M-x package-install RET hyperdrive-org-transclusion’ and then add
+the following snippet to your configuration:
+
+     (with-eval-after-load 'org-transclusion
+       (hyperdrive-org-transclusion-mode +1))
+
+   You can then run ‘M-x org-transclusion-add’ on the following link to
+transclude the Org heading with the property ‘CUSTOM_ID: emacs’ inside
+the ‘/software.org’ file inside the USHIN hyperdrive:
+
+     #+transclude: [[hyper://aaj45d88g4eenu76rpmwzjiabsof1w8u6fufq6oogyhjk1ubygxy/software.org#%3A%3A%23emacs]]
+
+
+File: hyperdrive.info,  Node: Miscellaneous features,  Prev: Org-transclusion integration,  Up: Usage
+
+4.22 Miscellaneous features
+===========================
+
+* Menu:
+
+* Find file at point integration::
+* Embark integration::
+* Webjump integration::
+
+
+File: hyperdrive.info,  Node: Find file at point integration,  Next: Embark integration,  Up: Miscellaneous features
+
+4.22.1 Find file at point integration
+-------------------------------------
+
+If you have enabled ‘find-file-at-point’ (‘ffap’) bindings with ‘M-x
+ffap-bindings’, you can open a hyperdrive link by putting the point on
+it and pressing ‘C-x C-f’.
+
+
+File: hyperdrive.info,  Node: Embark integration,  Next: Webjump integration,  Prev: Find file at point integration,  Up: Miscellaneous features
+
+4.22.2 Embark integration
+-------------------------
+
+Embark users can run ‘embark-act’ in the ‘completing-read’ interface for
+selecting a hyperdrive in order to select an alternative action for the
+selected hyperdrive.
+
+
+File: hyperdrive.info,  Node: Webjump integration,  Prev: Embark integration,  Up: Miscellaneous features
+
+4.22.3 Webjump integration
+--------------------------
+
+You can jump to a ‘hyper://’ link with ‘M-x webjump’ after adding it to
+‘webjump-sites’:
+
+     (add-to-list
+      'webjump-sites
+      '("USHIN Hyperdrive" . "hyper://aaj45d88g4eenu76rpmwzjiabsof1w8u6fufq6oogyhjk1ubygxy/"))
+
+
+File: hyperdrive.info,  Node: Concepts,  Next: Customization,  Prev: Usage,  Up: Top
+
+5 Concepts
+**********
+
+* Menu:
+
+* Hyperdrive::
+* hyper-gateway-ushin::
+* Naming::
+
+
+File: hyperdrive.info,  Node: Hyperdrive,  Next: hyper-gateway-ushin,  Up: Concepts
+
+5.1 Hyperdrive
+==============
+
+Hyperdrive (https://docs.holepunch.to/building-blocks/hyperdrive) is a
+virtual filesystem which you can use to share files on the peer-to-peer
+(P2P) ‘hyper’ network.  It’s a folder with a globally unique link
+starting with ‘hyper://’ that you can put files into and other peers can
+pull files out of (if they have the link).
+
+   Anyone with the link to your hyperdrive can download its contents
+directly from your computer.  There’s no need to make an account or rely
+on a third party to pass the data along.  Anyone who has a copy of the
+content in your hyperdrive can serve it to others.  This means that your
+hyperdrive can circulate on the ‘hyper’ network even when you’re
+offline.
+
+   Hyperdrive is single-writer, meaning that you are the only one who
+change a hyperdrive that you’ve created.  Files in a hyperdrive are
+cryptographically signed to ensure that the files you share aren’t
+tampered with.
+
+   You can make as many hyperdrives as you like; the only limitation is
+your own disk space.
+
+   Hyperdrive is offline-first since you can view files which were
+previously downloaded even when your machine is disconnected from the
+rest of the network.  It’s also local-first, since you can connect with
+peers on a local network even without an internet connection.
+
+   Unlike BitTorrent, another P2P protocol for sharing files,
+hyperdrives are mutable.  If you share a link to your hyperdrive and
+then later add, update, or delete files inside it, peers will be able to
+access your latest changes at the same link.  When you make revisions to
+a hyperdrive, the old versions of your files can still be accessed by
+peers on the network.  See *note Versioning:: for more information.
+
+* Menu:
+
+* Sparse replication::
+* Versioning::
+* Master key::
+
+
+File: hyperdrive.info,  Node: Sparse replication,  Next: Versioning,  Up: Hyperdrive
+
+5.1.1 Sparse replication
+------------------------
+
+Hyperdrives are sparsely replicated, meaning that peers can download
+particular files from a hyperdrive without having to download the whole
+drive.  This reduces both load times and disk usage.
+
+
+File: hyperdrive.info,  Node: Versioning,  Next: Master key,  Prev: Sparse replication,  Up: Hyperdrive
+
+5.1.2 Versioning
+----------------
+
+Hyperdrives are versioned, meaning that it is possible to explore a
+hyperdrive as it was in the past.  Version numbers indicate the
+hyperdrive’s version.  For example, ‘hyper://PUBLIC-KEY/$/version/50/’
+refers to the fiftieth version of the hyperdrive identified by
+‘PUBLIC-KEY’.  If you want to load the latest version, leave out the
+‘/$/version/N’ part.  For example, if you run...
+
+     M-x hyperdrive-open-url RET hyper://PUBLIC-KEY/foo.org RET
+
+   ...then ‘hyperdrive.el’ will attempt to find ‘/foo.org’ inside the
+latest version of that hyperdrive.
+
+   Whenever you add a file, remove a file, or change a file, the
+hyperdrive’s version number gets incremented by 1.  The version number
+tells you how many times the hyperdrive has been modified, not how many
+times a particular file has been modified.  For example, let’s say that
+the current version of your hyperdrive at ‘hyper://PUBLIC-KEY/’ is 50.
+If you add a new file at ‘hyper://PUBLIC-KEY/bar.org’, the latest
+version of your hyperdrive will become 51.
+
+   Since ‘/bar.org’ did not exist before version 51, if you attempt to
+load ‘hyper://PUBLIC-KEY/$/version/50/bar.org’, ‘hyperdrive.el’ should
+warn you that nothing exists at that URL.  If you add another file at
+‘hyper://PUBLIC-KEY/quux.org’, your hyperdrive’s latest version will
+become 52.  For the moment, ‘hyper://PUBLIC-KEY/bar.org’,
+‘hyper://PUBLIC-KEY/$/version/51/bar.org’, and
+‘hyper://PUBLIC-KEY/$/version/52/bar.org’, all point to the same version
+of ‘/bar.org’.  If you then make a change to ‘/bar.org’, your
+hyperdrive’s latest version will become 53.  Now
+‘hyper://PUBLIC-KEY/bar.org’ and
+‘hyper://PUBLIC-KEY/$/version/53/bar.org’ will point to the latest
+version of ‘/bar.org’, while the original version will be available at
+version 51 or 52.
+
+   Here’s the mockup of the history view for ‘/bar.org’ so far, the
+hyperdrive’s latest version being 53:
+
+Version range   exists
+-------------------------
+53              yes
+51-52           yes
+1-50            no
+
+   The table shows that ‘/bar.org’ was created at version 51 and
+modified at version 53.  The final version range number in the table is
+53, indicating that the hyperdrive’s latest version is 53.
+
+   If you delete ‘/bar.org’ then try to load
+‘hyper://PUBLIC-KEY/bar.org’, ‘hyperdrive.el’ will open an empty buffer
+for you to author a new file.  If another peer attempts to load that
+URL, ‘hyperdrive.el’ will warn ‘"URL not found"’, since you are the only
+one who can modify your drive.  All peers can view the old file contents
+at the versioned URLs.
+
+   Since only the current version of a hyperdrive file can be updated,
+‘hyperdrive.el’ sets the buffer to read-only whenever a version number
+is specified in a hyper URL.
+
+* Menu:
+
+* Partial version data::
+
+
+File: hyperdrive.info,  Node: Partial version data,  Up: Versioning
+
+5.1.2.1 Partial version data
+............................
+
+Because hyperdrives are sparsely replicated (see *note Sparse
+replication::), ‘hyperdrive.el’ might not know the full version history
+of a file.  In the history view (see *note History buffer::), ranges of
+the history which have not yet been downloaded from the network are
+displayed as “unknown”.  You can run the ‘hyperdrive-history-load’
+command to download the full history and reload the history buffer.
+
+
+File: hyperdrive.info,  Node: Master key,  Prev: Versioning,  Up: Hyperdrive
+
+5.1.3 Master key
+----------------
+
+The secret master key is combined with a seed (see *note Seeds::) to
+generate a new public key for a hyperdrive when you run
+‘hyperdrive-new’.  Your master key is generated automatically by the
+gateway.
+
+
+File: hyperdrive.info,  Node: hyper-gateway-ushin,  Next: Naming,  Prev: Hyperdrive,  Up: Concepts
+
+5.2 hyper-gateway-ushin
+=======================
+
+Hyper-gateway-ushin (https://git.sr.ht/~ushin/hyper-gateway-ushin)
+handles interactions with hyperdrive under the hood, and it runs a local
+HTTP server which offers a Fetch API to access the Hyperdrive network.
+In ‘hyperdrive.el’, P2P interactions consist mostly of, e.g., ‘GET’
+requests to download files and ‘PUT’ requests to write files to a
+hyperdrive.
+
+
+File: hyperdrive.info,  Node: Naming,  Prev: hyper-gateway-ushin,  Up: Concepts
+
+5.3 Naming
+==========
+
+Inspired by Marc Stiegler’s An Introduction to Petname Systems
+(http://www.skyhunter.com/marcs/petnames/IntroPetNames.html),
+‘hyperdrive.el’ names drives in a three different ways:
+
+Public key
+     public, globally unique, not human-memorable
+Nickname
+     public, not necessarily unique, human-memorable
+Petname
+     private, locally unique, human-memorable
+
+   If ‘hyperdrive.el’ is like a phonebook, then public keys are phone
+numbers, nicknames are how your contacts introduce themselves, and
+petnames are the names you actually write down.
+
+   Each drive may also have one or both of the following attributes:
+
+Seed
+     string used to generate public key
+DNS domain
+     public, globally unique, human-memorable
+
+* Menu:
+
+* Public keys::
+* Nicknames::
+* Petnames::
+* Seeds::
+* DNS domains::
+
+
+File: hyperdrive.info,  Node: Public keys,  Next: Nicknames,  Up: Naming
+
+5.3.1 Public keys
+-----------------
+
+Public keys are globally unique identifiers for hyperdrives.  They make
+up the first part of a ‘hyper://’ URL.  Public keys are
+52-character-long z-base-32
+(https://en.wikipedia.org/wiki/Base32#z-base-32) encoded keys generated
+from your master key (see *note Master key::) and a *note seed: Seeds.
+string.  When you run ‘hyperdrive-new’ and type a new seed, the gateway
+automatically generates a new public key.
+
+
+File: hyperdrive.info,  Node: Nicknames,  Next: Petnames,  Prev: Public keys,  Up: Naming
+
+5.3.2 Nicknames
+---------------
+
+Nicknames are public, memorable names which you can give to your own
+hyperdrives to make them easier for others to recognize.  Other users
+can see your nicknames but cannot change them.
+
+   Nicknames are stored in each hyperdrive inside
+‘/.well-known/host-meta.json’ under the ‘name’ key, as specified in
+RFC6415 (https://www.rfc-editor.org/rfc/rfc6415#section-6.1).
+
+
+File: hyperdrive.info,  Node: Petnames,  Next: Seeds,  Prev: Nicknames,  Up: Naming
+
+5.3.3 Petnames
+--------------
+
+Petnames are locally unique hyperdrive identifiers.  You can give a
+petname to any hyperdrive you load, whether you created it or not.
+
+
+File: hyperdrive.info,  Node: Seeds,  Next: DNS domains,  Prev: Petnames,  Up: Naming
+
+5.3.4 Seeds
+-----------
+
+Seeds are used in tandem with your secret master key (see *note Master
+key::) to generate public keys (see *note Public keys::).  The same seed
+and master key will always produce the same public key, so a
+hyperdrive’s seed cannot be changed.  Seeds are local but not secret.
+To share a drive, you must use a public key or DNS domain (see *note DNS
+domains::).
+
+
+File: hyperdrive.info,  Node: DNS domains,  Prev: Seeds,  Up: Naming
+
+5.3.5 DNS domains
+-----------------
+
+It is possible to use DNSLink (https://dnslink.io/) to link to a
+hyperdrive with a domain name instead of a public key (see *note Public
+keys::), like ‘hyper://example.org/path/to/file’.  Create a TXT record
+at ‘_dnslink.example.org’ with the contents ‘/hyper/PUBLIC-KEY’ (no
+trailing slash).  Note: relying on DNS adds another point of
+centralization, reducing the durability of your link.  ‘hyperdrive.el’
+somewhat mitigates this issue by remembering which public key the DNS
+record resolved to, so that peers can use the stored public key itself
+for subsequent connections.
+
+   DNS domains are checked for suspicious characters (see *note
+(elisp)Suspicious Text::).
+
+
+File: hyperdrive.info,  Node: Customization,  Next: Known limitations,  Prev: Concepts,  Up: Top
+
+6 Customization
+***************
+
+You can adjust the following options in the customization interface by
+running ‘M-x customize-group RET hyperdrive RET’:
+
+ -- User Option: hyperdrive-gateway-program
+     Name of executable to run when starting the gateway with
+     ‘hyperdrive-gateway-start-function’.  ‘hyperdrive-install’ will
+     install the gateway to this file in ‘hyperdrive-gateway-directory’.
+
+ -- User Option: hyperdrive-gateway-directory
+     Filesystem directory in which the gateway is expected to be found.
+     ‘hyperdrive-install’ will install the gateway to this location.
+     When starting the gateway, if ‘hyperdrive-gateway-program’ is not
+     found in this directory, Emacs searches ‘PATH’ for
+     ‘hyperdrive-gateway-program’.
+
+ -- User Option: hyperdrive-gateway-command-args
+     Command line arguments passed to the gateway when starting the
+     gateway with the default ‘hyperdrive-gateway-start-function’.
+
+ -- User Option: hyperdrive-gateway-port
+     ‘hyperdrive.el’ will send HTTP requests to the gateway on this
+     port.  Defaults to ‘4973’.  The default
+     ‘hyperdrive-gateway-start-function’ will start the gateway on this
+     port.
+
+ -- User Option: hyperdrive-persist-location
+     Location where ‘persist’ will store ‘hyperdrive-hyperdrives’.  By
+     default, uses the default ‘persist’ location.
+
+ -- User Option: hyperdrive-timestamp-format
+     Format string used for timestamps.  Passed to ‘format-time-string’,
+     which see.
+
+ -- User Option: hyperdrive-queue-limit
+     Default number of request sent to the gateway at a time in a queue.
+     Defaults to ‘20’.
+
+ -- User Option: hyperdrive-preferred-formats
+     List of metadata types used to display hyperdrives.  Hyperdrives
+     are displayed using the first available metadata type.  See *note
+     Naming:: section for what this means.
+
+ -- User Option: hyperdrive-default-entry-format
+     Format string for displaying hyperdrive entries
+     (files/directories).  By default, entries are displayed with the
+     preferred hyperdrive format in brackets (see
+     ‘hyperdrive-preferred-formats’), followed by the full entry path,
+     followed by “version: ” and version in parentheses.
+
+ -- User Option: hyperdrive-buffer-name-format
+     Format string for buffer names of buffers visiting hyperdrive
+     files/directories.  By default, this format is like
+     ‘hyperdrive-default-entry-format’ with the entry name sans
+     directory instead of the full path.
+
+ -- User Option: hyperdrive-formats
+     Alist mapping hyperdrive and hyperdrive entry metadata to a format
+     string, used in ‘hyperdrive-default-entry-format’ and
+     ‘hyperdrive-buffer-name-format’ as well as other places hyperdrives
+     or entries are displayed.  By default, each metadatum is prefixed
+     by its type, e.g., the petname ‘foo’ is displayed by default as
+     ‘petname:foo’.
+
+     Feel free to adjust the following example configuration for
+     abbreviated labels:
+
+          (setq hyperdrive-formats
+                '((name . "%s")
+                  (version . " (%s)")
+                  (path . "%s")
+                  (petname . "p:%s")
+                  (nickname . "n:%s")
+                  (public-key . "k:%s")
+                  (short-key . "k:%.8s…")
+                  (seed . "s:%s")
+                  (domains . "d:%s")))
+
+     With this snippet, the petname ‘foo’ now displays as ‘p:foo’.  For
+     further customization, run ‘M-x customize-group RET
+     hyperdrive-entry-format’.
+
+* Menu:
+
+* Additional customization::
+
+
+File: hyperdrive.info,  Node: Additional customization,  Up: Customization
+
+6.1 Additional customization
+============================
+
+This section mentions ways to change the behavior of ‘hyperdrive.el’
+besides its own customization options.
+
+* Menu:
+
+* Completion styles and cycling::
+
+
+File: hyperdrive.info,  Node: Completion styles and cycling,  Up: Additional customization
+
+6.1.1 Completion styles and cycling
+-----------------------------------
+
+‘hyperdrive.el’ offers a ‘completing-read’ interface for selecting a
+hyperdrive from a list of known hyperdrive.  You can customize the
+completion styles and cycling behavior by customizing the ‘hyperdrive’
+category in ‘completion-category-overrides’.
+
+
+File: hyperdrive.info,  Node: Known limitations,  Next: Tips,  Prev: Customization,  Up: Top
+
+7 Known limitations
+*******************
+
+* Menu:
+
+* No empty directories::
+* Files and folders can have the same name::
+* Non-UTF-8 encoded text::
+
+
+File: hyperdrive.info,  Node: No empty directories,  Next: Files and folders can have the same name,  Up: Known limitations
+
+7.1 No empty directories
+========================
+
+Instead of files and folders, Hyperdrive technically has entries and
+entry prefixes.  In other words, folders don’t exist unless they contain
+files.  This results in potentially unexpected behavior:
+
+   • it is not possible to create empty directories
+   • deleting the last file in a folder deletes the folder as well
+
+   When a hyperdrive file or folder is not found, ‘hyperdrive.el’
+prompts you for an action (see *note Unknown paths::).
+
+
+File: hyperdrive.info,  Node: Files and folders can have the same name,  Next: Non-UTF-8 encoded text,  Prev: No empty directories,  Up: Known limitations
+
+7.2 Files and folders can have the same name
+============================================
+
+In the current implementation of Hyperdrive, it’s possible for an entry
+(folder) and an entry prefix (folder) to have the same name, e.g.,
+‘hyper://PUBLIC-KEY/foo/bar/’ and ‘hyper://PUBLIC-KEY/foo/bar’.  In this
+case, the folder listing for ‘hyper://PUBLIC-KEY/foo/’ would display the
+‘bar’ entry but not the ‘bar/’ entry prefix.
+
+
+File: hyperdrive.info,  Node: Non-UTF-8 encoded text,  Prev: Files and folders can have the same name,  Up: Known limitations
+
+7.3 Non-UTF-8 encoded text
+==========================
+
+We have primarily tested reading and writing files which are UTF-8
+encoded.  If you use other encodings and you notice issues, please let
+us know (see *note Contributing/Getting help::).
+
+
+File: hyperdrive.info,  Node: Tips,  Next: Troubleshooting,  Prev: Known limitations,  Up: Top
+
+8 Tips
+******
+
+* Menu:
+
+* Quick documentation access::
+
+
+File: hyperdrive.info,  Node: Quick documentation access,  Up: Tips
+
+8.1 Quick documentation access
+==============================
+
+There are many ways to read this info manual within Emacs:
+
+ -- Command: hyperdrive-info-manual
+     Open the hyperdrive.el info manual.
+
+   You can also open the ‘hyperdrive.el’ info manual from
+‘hyperdrive-menu’ by pressing ‘?’ twice.
+
+   To view documentation for particular ‘hyperdrive.el’ commands,
+functions, and variables, press ‘C-h o’ (‘describe-symbol’).  Inside the
+‘*Help*’ buffer that pops open, you can press ‘i’ (‘help-goto-info’) to
+jump to the relevant section in the ‘hyperdrive.el’ manual.
+
+
+File: hyperdrive.info,  Node: Troubleshooting,  Next: Contributing/Getting help,  Prev: Tips,  Up: Top
+
+9 Troubleshooting
+*****************
+
+* Menu:
+
+* Reinstall/upgrade the gateway::
+
+
+File: hyperdrive.info,  Node: Reinstall/upgrade the gateway,  Up: Troubleshooting
+
+9.1 Reinstall/upgrade the gateway
+=================================
+
+Please ensure that you have the expected version of the gateway by
+running ‘M-x hyperdrive-install’.
+
+
+File: hyperdrive.info,  Node: Contributing/Getting help,  Next: Uninstallation,  Prev: Troubleshooting,  Up: Top
+
+10 Contributing/Getting help
+****************************
+
+You’re welcome to join our public XMPP chat room!
+
+   • ‘xmpp:discuss@conference.ushin.org’ (Join anonymously from your
+     browser
+     (https://anonymous.cheogram.com/discuss@conference.ushin.org))
+   • ‘#_bifrost_discuss_conference.ushin.org:aria-net.org’ (Matrix
+     bridge)
+
+   Bugs can be submitted to the ushin issue tracker
+(https://todo.sr.ht/~ushin/ushin).  Patches, comments or questions can
+be submitted to the ushin public inbox
+(https://lists.sr.ht/~ushin/ushin).
+
+
+File: hyperdrive.info,  Node: Uninstallation,  Next: Acknowledgments,  Prev: Contributing/Getting help,  Up: Top
+
+11 Uninstallation
+*****************
+
+If you have installed the gateway with ‘hyperdrive-install’, you can
+delete the gateway which Emacs downloaded according to the values of
+‘hyperdrive-gateway-directory’ and ‘hyperdrive-gateway-program’, which
+is ‘~/.local/lib/hyperdrive.el/hyper-gateway-ushin’ by default.
+
+   You can delete the user data which ‘hyper-gateway-ushin’ stores by
+default in ‘~/.local/share/hyper-gateway-nodejs’.
+
+   You can remove ‘hyperdrive.el’ with ‘M-x package-delete hyperdrive’.
+
+
+File: hyperdrive.info,  Node: Acknowledgments,  Next: Indices,  Prev: Uninstallation,  Up: Top
+
+12 Acknowledgments
+******************
+
+Paula Maas and Martin Turner for inspiration, feedback and undying
+support.
+
+   Adam Porter (https://github.com/alphapapa/) for rewriting
+‘hyperdrive.el’ and for his work on ‘plz.el’.
+
+   Mauve Signweaver (https://mauve.moe/) for their guidance into the
+world of p2p as well as the development of ‘hyper-gateway’.
+
+   Jonas Bernoulli (https://emacsair.me/) for improving
+‘hyperdrive-mirror’ and for his work on ‘transient.el’.
+
+   Protesilaos Stavrou (https://protesilaos.com) for design input and
+user-testing ‘hyperdrive.el’.
+
+   Eli Zaretskii (https://savannah.gnu.org/users/eliz) for guidance
+about text encoding systems.
+
+   Ihor Radchenko (https://emacs.ch/@yantar92) for guidance about
+security and Org mode integration.
+
+   Karl Voit (https://karl-voit.at/) for his feedback which inspired the
+design of ‘hyperdrive-mirror’.
+
+   Steve Purcell (https://www.sanityinc.com/) and Akira Komamura
+(https://github.com/akirak) for suggestions to improve our CI build
+manifests.
+
+   Eshel Yaron (https://eshelyaron.com/) for the suggestion to add
+‘hyperdrive-menu-bar-mode’.
+
+   Chris Rayner (https://riscy.io/) for the suggestion to add
+‘hyperdrive-org-transclusion-mode’.
+
+
+File: hyperdrive.info,  Node: Indices,  Next: GNU Free Documentation License,  Prev: Acknowledgments,  Up: Top
+
+13 Indices
+**********
+
+* Menu:
+
+* Keystroke index::
+* Function index::
+* Variable index::
+* Concept index::
+
+
+File: hyperdrive.info,  Node: Keystroke index,  Next: Function index,  Up: Indices
+
+13.1 Keystroke index
+====================
+
+ [index ]
+* Menu:
+
+* +:                                     Directory view.       (line 73)
+* + <1>:                                 History buffer.       (line 27)
+* <mouse-1>:                             Directory view.       (line 33)
+* <mouse-1> <1>:                         History buffer.       (line 37)
+* <mouse-2>:                             Directory view.       (line 33)
+* <mouse-2> <1>:                         History buffer.       (line 37)
+* =:                                     History buffer.       (line 53)
+* ?:                                     Directory view.       (line 70)
+* ^:                                     Directory view.       (line 40)
+* C-c C-c:                               Mirror a whole directory.
+                                                               (line 33)
+* C-x C-j:                               File view.            (line 13)
+* C-x C-s:                               Write to a hyperdrive.
+                                                               (line 10)
+* C-x s:                                 Write to a hyperdrive.
+                                                               (line 13)
+* C-x x g:                               File view.            (line  9)
+* d:                                     Directory view.       (line 51)
+* D:                                     Directory view.       (line 54)
+* d <1>:                                 History buffer.       (line 50)
+* F:                                     Directory view.       (line 57)
+* F <1>:                                 History buffer.       (line 57)
+* g:                                     Directory view.       (line 43)
+* H:                                     Directory view.       (line 60)
+* j:                                     Directory view.       (line 67)
+* n:                                     Directory view.       (line 25)
+* n <1>:                                 View the hyperdrive version history.
+                                                               (line 26)
+* n <2>:                                 History buffer.       (line 24)
+* o:                                     Directory view.       (line 33)
+* o <1>:                                 History buffer.       (line 37)
+* p:                                     Directory view.       (line 25)
+* p <1>:                                 View the hyperdrive version history.
+                                                               (line 26)
+* p <2>:                                 History buffer.       (line 24)
+* q:                                     View the hyperdrive version history.
+                                                               (line 29)
+* RET:                                   Directory view.       (line 28)
+* RET <1>:                               History buffer.       (line 31)
+* s:                                     Directory view.       (line 46)
+* TAB:                                   Mirror a whole directory.
+                                                               (line 36)
+* v:                                     Directory view.       (line 36)
+* v <1>:                                 History buffer.       (line 41)
+* w:                                     Directory view.       (line 64)
+* w <1>:                                 History buffer.       (line 46)
+
+
+File: hyperdrive.info,  Node: Function index,  Next: Variable index,  Prev: Keystroke index,  Up: Indices
+
+13.2 Function index
+===================
+
+ [index ]
+* Menu:
+
+* bookmark-jump:                         Bookmark a hyperdrive.
+                                                               (line  6)
+* bookmark-list:                         Bookmark a hyperdrive.
+                                                               (line  6)
+* bookmark-set:                          Bookmark a hyperdrive.
+                                                               (line  6)
+* completing-read:                       Completion styles and cycling.
+                                                               (line  6)
+* dired-jump:                            File view.            (line  6)
+* embark-act:                            Embark integration.   (line  6)
+* find-file-at-point:                    Find file at point integration.
+                                                               (line  6)
+* hyperdrive-bookmark-jump:              Bookmark a hyperdrive.
+                                                               (line 10)
+* hyperdrive-bookmark-list:              Bookmark a hyperdrive.
+                                                               (line 13)
+* hyperdrive-by-slot:                    Non-interactive use.  (line  9)
+* hyperdrive-cancel-install:             Install the gateway.  (line 13)
+* hyperdrive-copy-url:                   Link to a hyperdrive. (line 10)
+* hyperdrive-create-directory-no-op:     Directory view.       (line 73)
+* hyperdrive-delete:                     Directory view.       (line 54)
+* hyperdrive-delete <1>:                 Delete a hyperdrive file.
+                                                               (line 10)
+* hyperdrive-describe-hyperdrive:        Describe a hyperdrive.
+                                                               (line 11)
+* hyperdrive-dir-copy-url:               Directory view.       (line 64)
+* hyperdrive-dir-download-file:          Directory view.       (line 51)
+* hyperdrive-dir-find-file:              Directory view.       (line 28)
+* hyperdrive-dir-find-file-other-window: Directory view.       (line 33)
+* hyperdrive-dir-history:                Directory view.       (line 60)
+* hyperdrive-dir-sort:                   Directory view.       (line 46)
+* hyperdrive-dir-view-file:              Directory view.       (line 36)
+* hyperdrive-download:                   Download hyperdrive files.
+                                                               (line 12)
+* hyperdrive-download-url:               Download hyperdrive files.
+                                                               (line 15)
+* hyperdrive-ewoc-next:                  Directory view.       (line 25)
+* hyperdrive-ewoc-next <1>:              History buffer.       (line 24)
+* hyperdrive-ewoc-previous:              Directory view.       (line 25)
+* hyperdrive-ewoc-previous <1>:          History buffer.       (line 24)
+* hyperdrive-find-file:                  Open a hyperdrive.    (line 17)
+* hyperdrive-forget-file:                Directory view.       (line 57)
+* hyperdrive-forget-file <1>:            Forget a hyperdrive file.
+                                                               (line 14)
+* hyperdrive-gateway-version:            Start/stop the gateway.
+                                                               (line 30)
+* hyperdrive-history:                    History buffer.       (line 14)
+* hyperdrive-history-copy-url:           History buffer.       (line 46)
+* hyperdrive-history-diff:               History buffer.       (line 53)
+* hyperdrive-history-download-file:      History buffer.       (line 50)
+* hyperdrive-history-find-file:          History buffer.       (line 31)
+* hyperdrive-history-find-file-other-window: History buffer.   (line 37)
+* hyperdrive-history-forget-file:        History buffer.       (line 57)
+* hyperdrive-history-load:               History buffer.       (line 27)
+* hyperdrive-history-view-file:          History buffer.       (line 41)
+* hyperdrive-info-manual:                Quick documentation access.
+                                                               (line  8)
+* hyperdrive-install:                    Install the gateway.  (line  9)
+* hyperdrive-mark-as-safe:               Mark a hyperdrive as safe.
+                                                               (line 15)
+* hyperdrive-menu:                       Hyperdrive menu command.
+                                                               (line 22)
+* hyperdrive-menu <1>:                   Directory view.       (line 70)
+* hyperdrive-menu-bar-mode:              Menu bar support.     (line 13)
+* hyperdrive-mirror:                     Mirror a whole directory.
+                                                               (line  8)
+* hyperdrive-mirror-do-upload:           Mirror a whole directory.
+                                                               (line 33)
+* hyperdrive-new:                        Create a hyperdrive.  (line 12)
+* hyperdrive-open-at-version:            View the hyperdrive version history.
+                                                               (line 16)
+* hyperdrive-open-next-version:          View the hyperdrive version history.
+                                                               (line 26)
+* hyperdrive-open-previous-version:      View the hyperdrive version history.
+                                                               (line  9)
+* hyperdrive-open-previous-version <1>:  View the hyperdrive version history.
+                                                               (line 13)
+* hyperdrive-open-previous-version <2>:  View the hyperdrive version history.
+                                                               (line 26)
+* hyperdrive-open-url:                   Open a hyperdrive.    (line 11)
+* hyperdrive-purge:                      Purge a hyperdrive.   (line 12)
+* hyperdrive-restart:                    Start/stop the gateway.
+                                                               (line 27)
+* hyperdrive-revert-buffer-quick:        File view.            (line  9)
+* hyperdrive-set-nickname:               Name a hyperdrive.    (line 17)
+* hyperdrive-set-petname:                Name a hyperdrive.    (line 10)
+* hyperdrive-start:                      Start/stop the gateway.
+                                                               (line 11)
+* hyperdrive-stop:                       Start/stop the gateway.
+                                                               (line 20)
+* hyperdrive-up:                         Directory view.       (line 40)
+* hyperdrive-up <1>:                     File view.            (line 13)
+* hyperdrive-upload-file:                Upload files from your filesystem.
+                                                               (line 13)
+* hyperdrive-upload-files:               Upload files from your filesystem.
+                                                               (line 18)
+* hyperdrive-view-file:                  Open a hyperdrive.    (line 22)
+* hyperdrive-write-buffer:               Write to a hyperdrive.
+                                                               (line 22)
+* imenu:                                 Directory view.       (line 67)
+* kill-current-buffer:                   View the hyperdrive version history.
+                                                               (line 29)
+* magit-section-toggle:                  Mirror a whole directory.
+                                                               (line 36)
+* menu-bar-mode:                         Menu bar support.     (line  6)
+* org-insert-link:                       Org mode links.       (line  6)
+* org-store-link:                        Org mode links.       (line  6)
+* revert-buffer:                         Directory view.       (line 43)
+* save-buffer:                           Write to a hyperdrive.
+                                                               (line 10)
+* save-some-buffers:                     Write to a hyperdrive.
+                                                               (line 13)
+* webjump:                               Webjump integration.  (line  6)
+* yank-media:                            Upload files from your filesystem.
+                                                               (line  6)
+
+
+File: hyperdrive.info,  Node: Variable index,  Next: Concept index,  Prev: Function index,  Up: Indices
+
+13.3 Variable index
+===================
+
+ [index ]
+* Menu:
+
+* completion-category-overrides:         Completion styles and cycling.
+                                                               (line  6)
+* hyperdrive-buffer-name-format:         Customization.        (line 55)
+* hyperdrive-default-entry-format:       Customization.        (line 48)
+* hyperdrive-directory-display-buffer-action: Directory view.  (line 78)
+* hyperdrive-directory-sort:             Directory view.       (line 82)
+* hyperdrive-download-directory:         Download hyperdrive files.
+                                                               (line 18)
+* hyperdrive-formats:                    Customization.        (line 61)
+* hyperdrive-gateway-command-args:       Customization.        (line 21)
+* hyperdrive-gateway-dead-hook:          Start/stop the gateway.
+                                                               (line 23)
+* hyperdrive-gateway-directory:          Customization.        (line 14)
+* hyperdrive-gateway-live-predicate:     Advanced gateway customization.
+                                                               (line 13)
+* hyperdrive-gateway-port:               Customization.        (line 25)
+* hyperdrive-gateway-program:            Customization.        (line  9)
+* hyperdrive-gateway-ready-hook:         Start/stop the gateway.
+                                                               (line 14)
+* hyperdrive-gateway-start-function:     Advanced gateway customization.
+                                                               (line  6)
+* hyperdrive-gateway-stop-function:      Advanced gateway customization.
+                                                               (line 10)
+* hyperdrive-history-display-buffer-action: History buffer.    (line 64)
+* hyperdrive-org-link-full-url:          Org mode links.       (line 25)
+* hyperdrive-persist-location:           Customization.        (line 31)
+* hyperdrive-preferred-formats:          Customization.        (line 43)
+* hyperdrive-queue-limit:                Customization.        (line 39)
+* hyperdrive-render-html:                File view.            (line 24)
+* hyperdrive-stream-player-command:      Stream audio and video.
+                                                               (line 11)
+* hyperdrive-timestamp-format:           Customization.        (line 35)
+* org-link-file-path-type:               Org mode links.       (line  6)
+* save-some-buffers-default-predicate:   Write to a hyperdrive.
+                                                               (line  6)
+* webjump-sites:                         Webjump integration.  (line  6)
+
+
+File: hyperdrive.info,  Node: Concept index,  Prev: Variable index,  Up: Indices
+
+13.4 Concept index
+==================
+
+ [index ]
+* Menu:
+
+* DNS domains:                           DNS domains.           (line 6)
+* hyper-gateway-ushin:                   hyper-gateway-ushin.   (line 6)
+* Naming:                                Naming.                (line 6)
+* Nicknames:                             Nicknames.             (line 6)
+* Petnames:                              Petnames.              (line 6)
+* Public keys:                           Public keys.           (line 6)
+* Seeds:                                 Seeds.                 (line 6)
+* Sparse replication:                    Sparse replication.    (line 6)
+* Versioning:                            Versioning.            (line 6)
+
+
+File: hyperdrive.info,  Node: GNU Free Documentation License,  Prev: Indices,  Up: Top
+
+14 GNU Free Documentation License
+*********************************
+
+                     Version 1.3, 3 November 2008
+
+     Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     <https://fsf.org/>
+
+     Everyone is permitted to copy and distribute verbatim copies
+     of this license document, but changing it is not allowed.
+
+  0. PREAMBLE
+
+     The purpose of this License is to make a manual, textbook, or other
+     functional and useful document “free” in the sense of freedom: to
+     assure everyone the effective freedom to copy and redistribute it,
+     with or without modifying it, either commercially or
+     noncommercially.  Secondarily, this License preserves for the
+     author and publisher a way to get credit for their work, while not
+     being considered responsible for modifications made by others.
+
+     This License is a kind of “copyleft”, which means that derivative
+     works of the document must themselves be free in the same sense.
+     It complements the GNU General Public License, which is a copyleft
+     license designed for free software.
+
+     We have designed this License in order to use it for manuals for
+     free software, because free software needs free documentation: a
+     free program should come with manuals providing the same freedoms
+     that the software does.  But this License is not limited to
+     software manuals; it can be used for any textual work, regardless
+     of subject matter or whether it is published as a printed book.  We
+     recommend this License principally for works whose purpose is
+     instruction or reference.
+
+  1. APPLICABILITY AND DEFINITIONS
+
+     This License applies to any manual or other work, in any medium,
+     that contains a notice placed by the copyright holder saying it can
+     be distributed under the terms of this License.  Such a notice
+     grants a world-wide, royalty-free license, unlimited in duration,
+     to use that work under the conditions stated herein.  The
+     “Document”, below, refers to any such manual or work.  Any member
+     of the public is a licensee, and is addressed as “you”.  You accept
+     the license if you copy, modify or distribute the work in a way
+     requiring permission under copyright law.
+
+     A “Modified Version” of the Document means any work containing the
+     Document or a portion of it, either copied verbatim, or with
+     modifications and/or translated into another language.
+
+     A “Secondary Section” is a named appendix or a front-matter section
+     of the Document that deals exclusively with the relationship of the
+     publishers or authors of the Document to the Document’s overall
+     subject (or to related matters) and contains nothing that could
+     fall directly within that overall subject.  (Thus, if the Document
+     is in part a textbook of mathematics, a Secondary Section may not
+     explain any mathematics.)  The relationship could be a matter of
+     historical connection with the subject or with related matters, or
+     of legal, commercial, philosophical, ethical or political position
+     regarding them.
+
+     The “Invariant Sections” are certain Secondary Sections whose
+     titles are designated, as being those of Invariant Sections, in the
+     notice that says that the Document is released under this License.
+     If a section does not fit the above definition of Secondary then it
+     is not allowed to be designated as Invariant.  The Document may
+     contain zero Invariant Sections.  If the Document does not identify
+     any Invariant Sections then there are none.
+
+     The “Cover Texts” are certain short passages of text that are
+     listed, as Front-Cover Texts or Back-Cover Texts, in the notice
+     that says that the Document is released under this License.  A
+     Front-Cover Text may be at most 5 words, and a Back-Cover Text may
+     be at most 25 words.
+
+     A “Transparent” copy of the Document means a machine-readable copy,
+     represented in a format whose specification is available to the
+     general public, that is suitable for revising the document
+     straightforwardly with generic text editors or (for images composed
+     of pixels) generic paint programs or (for drawings) some widely
+     available drawing editor, and that is suitable for input to text
+     formatters or for automatic translation to a variety of formats
+     suitable for input to text formatters.  A copy made in an otherwise
+     Transparent file format whose markup, or absence of markup, has
+     been arranged to thwart or discourage subsequent modification by
+     readers is not Transparent.  An image format is not Transparent if
+     used for any substantial amount of text.  A copy that is not
+     “Transparent” is called “Opaque”.
+
+     Examples of suitable formats for Transparent copies include plain
+     ASCII without markup, Texinfo input format, LaTeX input format,
+     SGML or XML using a publicly available DTD, and standard-conforming
+     simple HTML, PostScript or PDF designed for human modification.
+     Examples of transparent image formats include PNG, XCF and JPG.
+     Opaque formats include proprietary formats that can be read and
+     edited only by proprietary word processors, SGML or XML for which
+     the DTD and/or processing tools are not generally available, and
+     the machine-generated HTML, PostScript or PDF produced by some word
+     processors for output purposes only.
+
+     The “Title Page” means, for a printed book, the title page itself,
+     plus such following pages as are needed to hold, legibly, the
+     material this License requires to appear in the title page.  For
+     works in formats which do not have any title page as such, “Title
+     Page” means the text near the most prominent appearance of the
+     work’s title, preceding the beginning of the body of the text.
+
+     The “publisher” means any person or entity that distributes copies
+     of the Document to the public.
+
+     A section “Entitled XYZ” means a named subunit of the Document
+     whose title either is precisely XYZ or contains XYZ in parentheses
+     following text that translates XYZ in another language.  (Here XYZ
+     stands for a specific section name mentioned below, such as
+     “Acknowledgements”, “Dedications”, “Endorsements”, or “History”.)
+     To “Preserve the Title” of such a section when you modify the
+     Document means that it remains a section “Entitled XYZ” according
+     to this definition.
+
+     The Document may include Warranty Disclaimers next to the notice
+     which states that this License applies to the Document.  These
+     Warranty Disclaimers are considered to be included by reference in
+     this License, but only as regards disclaiming warranties: any other
+     implication that these Warranty Disclaimers may have is void and
+     has no effect on the meaning of this License.
+
+  2. VERBATIM COPYING
+
+     You may copy and distribute the Document in any medium, either
+     commercially or noncommercially, provided that this License, the
+     copyright notices, and the license notice saying this License
+     applies to the Document are reproduced in all copies, and that you
+     add no other conditions whatsoever to those of this License.  You
+     may not use technical measures to obstruct or control the reading
+     or further copying of the copies you make or distribute.  However,
+     you may accept compensation in exchange for copies.  If you
+     distribute a large enough number of copies you must also follow the
+     conditions in section 3.
+
+     You may also lend copies, under the same conditions stated above,
+     and you may publicly display copies.
+
+  3. COPYING IN QUANTITY
+
+     If you publish printed copies (or copies in media that commonly
+     have printed covers) of the Document, numbering more than 100, and
+     the Document’s license notice requires Cover Texts, you must
+     enclose the copies in covers that carry, clearly and legibly, all
+     these Cover Texts: Front-Cover Texts on the front cover, and
+     Back-Cover Texts on the back cover.  Both covers must also clearly
+     and legibly identify you as the publisher of these copies.  The
+     front cover must present the full title with all words of the title
+     equally prominent and visible.  You may add other material on the
+     covers in addition.  Copying with changes limited to the covers, as
+     long as they preserve the title of the Document and satisfy these
+     conditions, can be treated as verbatim copying in other respects.
+
+     If the required texts for either cover are too voluminous to fit
+     legibly, you should put the first ones listed (as many as fit
+     reasonably) on the actual cover, and continue the rest onto
+     adjacent pages.
+
+     If you publish or distribute Opaque copies of the Document
+     numbering more than 100, you must either include a machine-readable
+     Transparent copy along with each Opaque copy, or state in or with
+     each Opaque copy a computer-network location from which the general
+     network-using public has access to download using public-standard
+     network protocols a complete Transparent copy of the Document, free
+     of added material.  If you use the latter option, you must take
+     reasonably prudent steps, when you begin distribution of Opaque
+     copies in quantity, to ensure that this Transparent copy will
+     remain thus accessible at the stated location until at least one
+     year after the last time you distribute an Opaque copy (directly or
+     through your agents or retailers) of that edition to the public.
+
+     It is requested, but not required, that you contact the authors of
+     the Document well before redistributing any large number of copies,
+     to give them a chance to provide you with an updated version of the
+     Document.
+
+  4. MODIFICATIONS
+
+     You may copy and distribute a Modified Version of the Document
+     under the conditions of sections 2 and 3 above, provided that you
+     release the Modified Version under precisely this License, with the
+     Modified Version filling the role of the Document, thus licensing
+     distribution and modification of the Modified Version to whoever
+     possesses a copy of it.  In addition, you must do these things in
+     the Modified Version:
+
+       A. Use in the Title Page (and on the covers, if any) a title
+          distinct from that of the Document, and from those of previous
+          versions (which should, if there were any, be listed in the
+          History section of the Document).  You may use the same title
+          as a previous version if the original publisher of that
+          version gives permission.
+
+       B. List on the Title Page, as authors, one or more persons or
+          entities responsible for authorship of the modifications in
+          the Modified Version, together with at least five of the
+          principal authors of the Document (all of its principal
+          authors, if it has fewer than five), unless they release you
+          from this requirement.
+
+       C. State on the Title page the name of the publisher of the
+          Modified Version, as the publisher.
+
+       D. Preserve all the copyright notices of the Document.
+
+       E. Add an appropriate copyright notice for your modifications
+          adjacent to the other copyright notices.
+
+       F. Include, immediately after the copyright notices, a license
+          notice giving the public permission to use the Modified
+          Version under the terms of this License, in the form shown in
+          the Addendum below.
+
+       G. Preserve in that license notice the full lists of Invariant
+          Sections and required Cover Texts given in the Document’s
+          license notice.
+
+       H. Include an unaltered copy of this License.
+
+       I. Preserve the section Entitled “History”, Preserve its Title,
+          and add to it an item stating at least the title, year, new
+          authors, and publisher of the Modified Version as given on the
+          Title Page.  If there is no section Entitled “History” in the
+          Document, create one stating the title, year, authors, and
+          publisher of the Document as given on its Title Page, then add
+          an item describing the Modified Version as stated in the
+          previous sentence.
+
+       J. Preserve the network location, if any, given in the Document
+          for public access to a Transparent copy of the Document, and
+          likewise the network locations given in the Document for
+          previous versions it was based on.  These may be placed in the
+          “History” section.  You may omit a network location for a work
+          that was published at least four years before the Document
+          itself, or if the original publisher of the version it refers
+          to gives permission.
+
+       K. For any section Entitled “Acknowledgements” or “Dedications”,
+          Preserve the Title of the section, and preserve in the section
+          all the substance and tone of each of the contributor
+          acknowledgements and/or dedications given therein.
+
+       L. Preserve all the Invariant Sections of the Document, unaltered
+          in their text and in their titles.  Section numbers or the
+          equivalent are not considered part of the section titles.
+
+       M. Delete any section Entitled “Endorsements”.  Such a section
+          may not be included in the Modified Version.
+
+       N. Do not retitle any existing section to be Entitled
+          “Endorsements” or to conflict in title with any Invariant
+          Section.
+
+       O. Preserve any Warranty Disclaimers.
+
+     If the Modified Version includes new front-matter sections or
+     appendices that qualify as Secondary Sections and contain no
+     material copied from the Document, you may at your option designate
+     some or all of these sections as invariant.  To do this, add their
+     titles to the list of Invariant Sections in the Modified Version’s
+     license notice.  These titles must be distinct from any other
+     section titles.
+
+     You may add a section Entitled “Endorsements”, provided it contains
+     nothing but endorsements of your Modified Version by various
+     parties—for example, statements of peer review or that the text has
+     been approved by an organization as the authoritative definition of
+     a standard.
+
+     You may add a passage of up to five words as a Front-Cover Text,
+     and a passage of up to 25 words as a Back-Cover Text, to the end of
+     the list of Cover Texts in the Modified Version.  Only one passage
+     of Front-Cover Text and one of Back-Cover Text may be added by (or
+     through arrangements made by) any one entity.  If the Document
+     already includes a cover text for the same cover, previously added
+     by you or by arrangement made by the same entity you are acting on
+     behalf of, you may not add another; but you may replace the old
+     one, on explicit permission from the previous publisher that added
+     the old one.
+
+     The author(s) and publisher(s) of the Document do not by this
+     License give permission to use their names for publicity for or to
+     assert or imply endorsement of any Modified Version.
+
+  5. COMBINING DOCUMENTS
+
+     You may combine the Document with other documents released under
+     this License, under the terms defined in section 4 above for
+     modified versions, provided that you include in the combination all
+     of the Invariant Sections of all of the original documents,
+     unmodified, and list them all as Invariant Sections of your
+     combined work in its license notice, and that you preserve all
+     their Warranty Disclaimers.
+
+     The combined work need only contain one copy of this License, and
+     multiple identical Invariant Sections may be replaced with a single
+     copy.  If there are multiple Invariant Sections with the same name
+     but different contents, make the title of each such section unique
+     by adding at the end of it, in parentheses, the name of the
+     original author or publisher of that section if known, or else a
+     unique number.  Make the same adjustment to the section titles in
+     the list of Invariant Sections in the license notice of the
+     combined work.
+
+     In the combination, you must combine any sections Entitled
+     “History” in the various original documents, forming one section
+     Entitled “History”; likewise combine any sections Entitled
+     “Acknowledgements”, and any sections Entitled “Dedications”.  You
+     must delete all sections Entitled “Endorsements.”
+
+  6. COLLECTIONS OF DOCUMENTS
+
+     You may make a collection consisting of the Document and other
+     documents released under this License, and replace the individual
+     copies of this License in the various documents with a single copy
+     that is included in the collection, provided that you follow the
+     rules of this License for verbatim copying of each of the documents
+     in all other respects.
+
+     You may extract a single document from such a collection, and
+     distribute it individually under this License, provided you insert
+     a copy of this License into the extracted document, and follow this
+     License in all other respects regarding verbatim copying of that
+     document.
+
+  7. AGGREGATION WITH INDEPENDENT WORKS
+
+     A compilation of the Document or its derivatives with other
+     separate and independent documents or works, in or on a volume of a
+     storage or distribution medium, is called an “aggregate” if the
+     copyright resulting from the compilation is not used to limit the
+     legal rights of the compilation’s users beyond what the individual
+     works permit.  When the Document is included in an aggregate, this
+     License does not apply to the other works in the aggregate which
+     are not themselves derivative works of the Document.
+
+     If the Cover Text requirement of section 3 is applicable to these
+     copies of the Document, then if the Document is less than one half
+     of the entire aggregate, the Document’s Cover Texts may be placed
+     on covers that bracket the Document within the aggregate, or the
+     electronic equivalent of covers if the Document is in electronic
+     form.  Otherwise they must appear on printed covers that bracket
+     the whole aggregate.
+
+  8. TRANSLATION
+
+     Translation is considered a kind of modification, so you may
+     distribute translations of the Document under the terms of section
+     4.  Replacing Invariant Sections with translations requires special
+     permission from their copyright holders, but you may include
+     translations of some or all Invariant Sections in addition to the
+     original versions of these Invariant Sections.  You may include a
+     translation of this License, and all the license notices in the
+     Document, and any Warranty Disclaimers, provided that you also
+     include the original English version of this License and the
+     original versions of those notices and disclaimers.  In case of a
+     disagreement between the translation and the original version of
+     this License or a notice or disclaimer, the original version will
+     prevail.
+
+     If a section in the Document is Entitled “Acknowledgements”,
+     “Dedications”, or “History”, the requirement (section 4) to
+     Preserve its Title (section 1) will typically require changing the
+     actual title.
+
+  9. TERMINATION
+
+     You may not copy, modify, sublicense, or distribute the Document
+     except as expressly provided under this License.  Any attempt
+     otherwise to copy, modify, sublicense, or distribute it is void,
+     and will automatically terminate your rights under this License.
+
+     However, if you cease all violation of this License, then your
+     license from a particular copyright holder is reinstated (a)
+     provisionally, unless and until the copyright holder explicitly and
+     finally terminates your license, and (b) permanently, if the
+     copyright holder fails to notify you of the violation by some
+     reasonable means prior to 60 days after the cessation.
+
+     Moreover, your license from a particular copyright holder is
+     reinstated permanently if the copyright holder notifies you of the
+     violation by some reasonable means, this is the first time you have
+     received notice of violation of this License (for any work) from
+     that copyright holder, and you cure the violation prior to 30 days
+     after your receipt of the notice.
+
+     Termination of your rights under this section does not terminate
+     the licenses of parties who have received copies or rights from you
+     under this License.  If your rights have been terminated and not
+     permanently reinstated, receipt of a copy of some or all of the
+     same material does not give you any rights to use it.
+
+  10. FUTURE REVISIONS OF THIS LICENSE
+
+     The Free Software Foundation may publish new, revised versions of
+     the GNU Free Documentation License from time to time.  Such new
+     versions will be similar in spirit to the present version, but may
+     differ in detail to address new problems or concerns.  See
+     <https://www.gnu.org/copyleft/>.
+
+     Each version of the License is given a distinguishing version
+     number.  If the Document specifies that a particular numbered
+     version of this License “or any later version” applies to it, you
+     have the option of following the terms and conditions either of
+     that specified version or of any later version that has been
+     published (not as a draft) by the Free Software Foundation.  If the
+     Document does not specify a version number of this License, you may
+     choose any version ever published (not as a draft) by the Free
+     Software Foundation.  If the Document specifies that a proxy can
+     decide which future versions of this License can be used, that
+     proxy’s public statement of acceptance of a version permanently
+     authorizes you to choose that version for the Document.
+
+  11. RELICENSING
+
+     “Massive Multiauthor Collaboration Site” (or “MMC Site”) means any
+     World Wide Web server that publishes copyrightable works and also
+     provides prominent facilities for anybody to edit those works.  A
+     public wiki that anybody can edit is an example of such a server.
+     A “Massive Multiauthor Collaboration” (or “MMC”) contained in the
+     site means any set of copyrightable works thus published on the MMC
+     site.
+
+     “CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
+     license published by Creative Commons Corporation, a not-for-profit
+     corporation with a principal place of business in San Francisco,
+     California, as well as future copyleft versions of that license
+     published by that same organization.
+
+     “Incorporate” means to publish or republish a Document, in whole or
+     in part, as part of another Document.
+
+     An MMC is “eligible for relicensing” if it is licensed under this
+     License, and if all works that were first published under this
+     License somewhere other than this MMC, and subsequently
+     incorporated in whole or in part into the MMC, (1) had no cover
+     texts or invariant sections, and (2) were thus incorporated prior
+     to November 1, 2008.
+
+     The operator of an MMC Site may republish an MMC contained in the
+     site under CC-BY-SA on the same site at any time before August 1,
+     2009, provided the MMC is eligible for relicensing.
+
+ADDENDUM: How to use this License for your documents
+====================================================
+
+To use this License in a document you have written, include a copy of
+the License in the document and put the following copyright and license
+notices just after the title page:
+
+     Copyright (C)  YEAR  YOUR NAME.
+     Permission is granted to copy, distribute and/or modify this document
+     under the terms of the GNU Free Documentation License, Version 1.3
+     or any later version published by the Free Software Foundation;
+     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+     Texts.  A copy of the license is included in the section entitled ``GNU
+     Free Documentation License''.
+
+   If you have Invariant Sections, Front-Cover Texts and Back-Cover
+Texts, replace the “with...Texts.” line with this:
+
+     with the Invariant Sections being LIST THEIR TITLES, with
+     the Front-Cover Texts being LIST, and with the Back-Cover Texts
+     being LIST.
+
+   If you have Invariant Sections without Cover Texts, or some other
+combination of the three, merge those two alternatives to suit the
+situation.
+
+   If your document contains nontrivial examples of program code, we
+recommend releasing these examples in parallel under your choice of free
+software license, such as the GNU General Public License, to permit
+their use in free software.
+
+
+
+Tag Table:
+Node: Top198
+Node: Freedom to copy3122
+Node: Installation3860
+Node: Install Emacs4125
+Node: Install curl4350
+Node: Install hyperdriveel4737
+Node: Install hyper-gateway-ushin5497
+Node: Example configuration6101
+Node: Usage6959
+Node: Install the gateway7870
+Node: Menu bar support8323
+Node: Hyperdrive menu command9088
+Node: Start/stop the gateway10424
+Node: Advanced gateway customization11603
+Node: Open a hyperdrive12151
+Node: Directory view13192
+Node: File view16224
+Node: Unknown paths17343
+Node: Create a hyperdrive18627
+Node: Write to a hyperdrive19338
+Node: Link to a hyperdrive20486
+Node: Org mode links21116
+Node: Markdown links22595
+Node: Delete a hyperdrive file22938
+Node: Forget a hyperdrive file23453
+Node: View the hyperdrive version history24335
+Node: History buffer25503
+Node: Describe a hyperdrive27928
+Node: Name a hyperdrive28639
+Node: Bookmark a hyperdrive29680
+Node: Stream audio and video30183
+Node: Download hyperdrive files30864
+Node: Upload files from your filesystem31800
+Node: Mirror a whole directory33034
+Node: Mark a hyperdrive as safe34831
+Node: Purge a hyperdrive35802
+Node: Non-interactive use36489
+Node: Non-interactive use example hyperdrive-mirror37018
+Node: Org-transclusion integration38774
+Node: Miscellaneous features39827
+Node: Find file at point integration40081
+Node: Embark integration40462
+Node: Webjump integration40838
+Node: Concepts41239
+Node: Hyperdrive41410
+Node: Sparse replication43305
+Node: Versioning43639
+Node: Partial version data46658
+Node: Master key47210
+Node: hyper-gateway-ushin47533
+Node: Naming48054
+Node: Public keys48968
+Node: Nicknames49503
+Node: Petnames50005
+Node: Seeds50259
+Node: DNS domains50736
+Node: Customization51531
+Node: Additional customization55277
+Node: Completion styles and cycling55571
+Node: Known limitations56007
+Node: No empty directories56251
+Node: Files and folders can have the same name56881
+Node: Non-UTF-8 encoded text57483
+Node: Tips57855
+Node: Quick documentation access58009
+Node: Troubleshooting58693
+Node: Reinstall/upgrade the gateway58880
+Node: Contributing/Getting help59140
+Node: Uninstallation59810
+Node: Acknowledgments60463
+Node: Indices61810
+Node: Keystroke index62033
+Node: Function index65527
+Node: Variable index73963
+Node: Concept index76722
+Node: GNU Free Documentation License77524
+Ref: ADDENDUM How to use this License for your documents101434
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

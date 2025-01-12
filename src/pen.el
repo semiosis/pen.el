@@ -2577,6 +2577,7 @@ May use to generate code from comments."
       (require 'pen-chemistry)))
 ;; For building games, etc.
 (require 'pen-hypertext)
+(require 'pen-hyperstack)
 (if (inside-docker-p)
     (progn
       (require 'pen-ascii-adventures)

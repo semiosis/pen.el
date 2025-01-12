@@ -1,0 +1,10 @@
+#!/bin/sh
+echo
+echo
+echo
+echo -n before
+printf 'G1BxIzA7MjswOzA7MCMxOzI7MTAwOzEwMDswIzI7MjswOzEwMDswIzF+fkBAdnZAQH5+QEB+fiQjMj8/fX1HR319Pz99fT8/LSMxITE0QBtcCg==' | base64 -d
+echo -n after
+echo
+echo
+echo

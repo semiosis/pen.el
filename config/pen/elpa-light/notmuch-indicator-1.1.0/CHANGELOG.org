@@ -1,0 +1,76 @@
+#+title: Change log of notmuch-indicator
+#+author: Protesilaos Stavrou
+#+email: info@protesilaos.com
+#+options: ':nil toc:nil num:nil author:nil email:nil
+
+This document contains the release notes for each tagged commit on the
+project's main git repository: <https://git.sr.ht/~protesilaos/notmuch-indicator>.
+
+The newest release is at the top.  For further details, please consult
+the manual: <https://protesilaos.com/emacs/notmuch-indicator>.
+
+* 1.1.0 on 2023-10-14
+:PROPERTIES:
+:CUSTOM_ID: h:331ff2c0-a76b-4018-98d7-be6822626f75
+:END:
+
+** The indicator now works over TRAMP
+:PROPERTIES:
+:CUSTOM_ID: h:872a225a-df52-4f37-897c-cac77310d086
+:END:
+
+In previous versions, the counters of the ~notmuch-indicator-mode~
+would be omitted from the mode line if the refresh would happen while
+the user was browsing a remote file system with TRAMP. They would be
+restored once the user would switch to a local buffer. This was done
+as a precaution, as I had not yet developed a mechanism to retrieve
+the data relative to the local user.
+
+Counters are now always on display and are pointing to the local
+user's configuration. The package furnishes two new users options,
+which make this possible: the ~notmuch-indicator-notmuch-config-file~
+and ~notmuch-indicator-notmuch-binary~.
+
+Their respective value is set at the time the ~notmuch-indicator~
+feature is loaded (such as with ~require~ or ~use-package~).
+
+Advanced users may wish to display different indicators depending on
+the TRAMP environment. In principle, this is done by setting the
+aforementioned options to the appropriate values. If anyone has such a
+use-case, please contact me as I am eager to make the package more
+flexible.
+
+** The mouse hover of counters has a better style
+:PROPERTIES:
+:CUSTOM_ID: h:d44b8111-2101-4fe5-b5cf-a1b824188419
+:END:
+
+One of the nice features of the ~notmuch-indicator-mode~ counters on
+the mode line is that they are clickable: a mouse click produces a
+~notmuch.el~ buffer with the same search terms as those that populate
+the counter.
+
+Before, the face used to indicate the mouse hover state was the
+generic ~highlight~ which can differ from the ~mode-line-highlight~
+(depending on the theme).  We now use the latter to make sure that the
+styling is consistent.
+
+** Documentation
+:PROPERTIES:
+:CUSTOM_ID: h:5acd3900-4533-48d3-bf90-21c83e97fcbe
+:END:
+
+- The documentation of ~notmuch-indicator~ is now available on my
+  website as well as an Info manual together with the GNU ELPA
+  package.  On my website: <https://protesilaos.com/emacs/notmuch-indicator>.
+
+- I did not keep a =CHANGELOG.org= for this package, though I am doing
+  it from now on. This file's corresponding web page is this one:
+  <https://protesilaos.com/emacs/notmuch-indicator-changelog>.
+
+ At any rate, I always publish release notes on my coding-related
+  blog. The previous publications from oldest to newest:
+
+  - <https://protesilaos.com/codelog/2022-09-21-notmuch-indicator-0-1-0/>
+  - <https://protesilaos.com/codelog/2022-10-06-notmuch-indicator-0-2-0/>
+  - <https://protesilaos.com/codelog/2023-06-30-notmuch-indicator-1-0-0/>

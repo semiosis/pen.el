@@ -1,0 +1,2 @@
+;;; Generated package description from license-templates.el  -*- no-byte-compile: t -*-
+(define-package "license-templates" "20200906.2047" "Create LICENSE using GitHub API" '((emacs "24.3") (request "0.3.0")) :commit "a4273a6dcc45dabf237c4bfd780ec22420711c70" :authors '(("Shen, Jen-Chieh" . "jcs090218@gmail.com")) :maintainer '("Shen, Jen-Chieh" . "jcs090218@gmail.com") :url "https://github.com/jcs-elpa/license-templates")

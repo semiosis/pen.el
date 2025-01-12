@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Hebrews 13:21" "#" "<==" "Hebrews"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Hebrews 13:20-21" "#" "<==" "Hebrews"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Peter 1:19" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Peter 1:20-19" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Peter 1:18-19" "#" "<==" "I"

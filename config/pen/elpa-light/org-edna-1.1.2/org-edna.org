@@ -1,0 +1,1810 @@
+#+TITLE: Org Edna
+#+AUTHOR: Ian Dunn
+#+EMAIL: dunni@gnu.org
+#+DATE: {{{modification-time}}}
+
+#+STARTUP: overview
+#+STARTUP: indent
+#+TODO: FIXME | FIXED
+#+OPTIONS: toc:2 num:nil timestamp:nil \n:nil |:t ':t email:t H:4
+#+OPTIONS: *:t <:t d:nil todo:nil pri:nil tags:not-in-toc -:nil
+
+#+TEXINFO_DIR_CATEGORY: Emacs
+#+TEXINFO_DIR_TITLE: Org Edna: (org-edna)
+#+TEXINFO_DIR_DESC: Extensible Dependencies 'N' Actions for Org Mode tasks
+
+* Copying
+Copyright (C) 2017-2020 Free Software Foundation, Inc.
+
+#+BEGIN_QUOTE
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#+END_QUOTE
+* Introduction
+:PROPERTIES:
+:CUSTOM_ID: introduction
+:DESCRIPTION: A Brief Introduction to Edna
+:END:
+
+Extensible Dependencies 'N' Actions (EDNA) for Org Mode tasks
+
+Edna provides an extensible means of specifying conditions which must be
+fulfilled before a task can be completed and actions to take once it is.
+
+Org Edna runs when either the BLOCKER or TRIGGER properties are set on a
+heading, and when it is changing from a TODO state to a DONE state.
+
+For brevity, we use TODO state to indicate any state in ~org-not-done-keywords~,
+and DONE state to indicate any state in ~org-done-keywords~.
+
+** Installation and Setup
+:PROPERTIES:
+:DESCRIPTION: How to install Edna
+:END:
+
+*Requirements*
+
+| Emacs |  25.1 |
+| seq   |  2.19 |
+| org   | 9.0.5 |
+
+There are two ways to install Edna: From GNU ELPA, or from source.
+
+From ELPA:
+
+#+BEGIN_EXAMPLE
+M-x package-install org-edna
+#+END_EXAMPLE
+
+From Source:
+
+#+BEGIN_SRC shell
+bzr branch https://bzr.savannah.gnu.org/r/org-edna-el/ org-edna
+#+END_SRC
+
+After that, add the following to your init file (typically .emacs):
+
+#+BEGIN_SRC emacs-lisp
+;; Only necessary if installing from source
+(add-to-list 'load-path "/full/path/to/org-edna/")
+(require 'org-edna)
+
+;; Always necessary
+(org-edna-mode)
+#+END_SRC
+
+If you ever want to disable Edna, run ~(org-edna-mode)~ again.
+
+To determine if Edna is active, check the ~org-edna-mode~ variable.
+
+** Basic Operation
+:PROPERTIES:
+:CUSTOM_ID: operation
+:DESCRIPTION: How to use Edna
+:END:
+
+Let's start with an example: Say you want to do laundry, but once you've put
+your clothes in the washer, you forget about it.  Even with a tool like
+org-notify or appt, Org won't know when to remind you.  If you've got them
+scheduled for an hour after the other, maybe you forgot one time, or ran a
+little late.  Now Org will remind you too early.
+
+Edna can handle this for you like so:
+
+#+BEGIN_SRC org
+,* TODO Put clothes in washer
+  SCHEDULED: <2017-04-08 Sat 09:00>
+  :PROPERTIES:
+  :TRIGGER: next-sibling scheduled!("++1h")
+  :END:
+,* TODO Put clothes in dryer
+  :PROPERTIES:
+  :TRIGGER: next-sibling scheduled!("++1h")
+  :BLOCKER:  previous-sibling
+  :END:
+,* TODO Fold laundry
+  :PROPERTIES:
+  :TRIGGER: next-sibling scheduled!("++1h")
+  :BLOCKER:  previous-sibling
+  :END:
+,* TODO Put clothes away
+  :PROPERTIES:
+  :TRIGGER: next-sibling scheduled!("++1h")
+  :BLOCKER:  previous-sibling
+  :END:
+#+END_SRC
+
+After you've put your clothes in the washer and mark the task DONE, Edna will
+schedule the following task for one hour after you set the first heading as
+done.
+
+Another example might be a checklist that you've done so many times that you do
+part of it on autopilot:
+
+#+BEGIN_SRC org
+,* TODO Address all TODOs in code
+,* TODO Commit Code to Repository
+#+END_SRC
+
+The last thing anyone wants is to find out that some part of the code on which
+they've been working for days has a surprise waiting for them.  Once again, Edna
+can help:
+
+#+BEGIN_SRC org
+,* TODO Address all TODOs in code
+  :PROPERTIES:
+  :BLOCKER: file("main.cpp") file("code.cpp") re-search?("TODO")
+  :END:
+,* TODO Commit Code to Repository
+#+END_SRC
+
+** Blockers
+:PROPERTIES:
+:CUSTOM_ID: blockers
+:DESCRIPTION: Blocking a TODO Item
+:END:
+
+A blocker indicates conditions which must be met in order for a heading to be
+marked as DONE.  Typically, this will be a list of headings that must be marked
+as DONE.
+
+** Triggers
+:PROPERTIES:
+:CUSTOM_ID: triggers
+:DESCRIPTION: Triggering actions after completing a task
+:END:
+
+A trigger is an action to take when a heading is set to done.  For example,
+scheduling another task, marking another task as TODO, or renaming a file.
+
+** Syntax
+:PROPERTIES:
+:CUSTOM_ID: syntax
+:DESCRIPTION: Basic explanation of Edna's syntax
+:END:
+#+cindex: syntax
+
+Edna has its own language for commands, the basic form of which is KEYWORD(ARG1 ARG2 ...)
+
+KEYWORD can be any valid lisp symbol, such as key-word, KEY_WORD!, or keyword?.
+
+Each argument can be one of the following:
+
+- A symbol, such as arg or org-mode
+- A quoted string, such as "hello" or "My name is Edna"
+- A number, such as 0.5, +1e3, or -5
+- A UUID, such as c5e30c76-879a-494d-9281-3a4b559c1a3c
+
+Each argument takes specific datatypes as input, so be sure to read the entry
+before using it.
+
+The parentheses can be omitted for commands with no arguments.
+* Basic Features
+:PROPERTIES:
+:CUSTOM_ID: basic
+:DESCRIPTION: Finders and Actions
+:END:
+
+The most basic features of Edna are *finders* and *actions*.
+
+** Finders
+:PROPERTIES:
+:DESCRIPTION: How to find targets
+:CUSTOM_ID: finders
+:END:
+A finder specifies locations from which to test conditions or perform actions.
+These locations are referred to as "targets".  The current heading, i.e. the one
+that is being blocked or triggered, is referred to as the "source" heading.
+
+More than one finder may be used.  In this case, the targets are merged
+together, removing any duplicates.
+
+Many finders take additional options, marked "OPTIONS".  See [[#relatives][relatives]] for
+information on these options.
+
+*** ancestors
+:PROPERTIES:
+:DESCRIPTION: Find a list of ancestors
+:CUSTOM_ID: ancestors
+:END:
+
+- Syntax: ancestors(OPTIONS...)
+
+The ~ancestors~ finder returns a list of the source heading's ancestors.
+
+For example:
+
+#+BEGIN_SRC org
+,* TODO Heading 1
+,** TODO Heading 2
+,** TODO Heading 3
+,*** TODO Heading 4
+,**** TODO Heading 5
+     :PROPERTIES:
+     :BLOCKER:  ancestors
+     :END:
+#+END_SRC
+
+In the above example, "Heading 5" will be blocked until "Heading 1", "Heading
+3", and "Heading 4" are marked "DONE", while "Heading 2" is ignored.
+
+*** children
+:PROPERTIES:
+:CUSTOM_ID: children
+:DESCRIPTION: Find all immediate children
+:END:
+
+- Syntax: children(OPTIONS...)
+
+The ~children~ finder returns a list of the *immediate* children of the source
+heading.  If the source has no children, no target is returned.
+
+In order to get all levels of children of the source heading, use the
+[[#descendants][descendants]] keyword instead.
+
+*** descendants
+:PROPERTIES:
+:CUSTOM_ID: descendants
+:DESCRIPTION: Find all descendants
+:END:
+
+- Syntax: descendants(OPTIONS...)
+
+The ~descendants~ finder returns a list of all descendants of the source heading.
+
+#+BEGIN_SRC org
+,* TODO Heading 1
+   :PROPERTIES:
+   :BLOCKER:  descendants
+   :END:
+,** TODO Heading 2
+,*** TODO Heading 3
+,**** TODO Heading 4
+,***** TODO Heading 5
+#+END_SRC
+
+In the above example, "Heading 1" will block until Headings 2, 3, 4, and 5 are
+DONE.
+
+*** file
+:PROPERTIES:
+:CUSTOM_ID: file
+:DESCRIPTION: Find a file by name
+:END:
+
+- Syntax: file("FILE")
+
+The ~file~ finder finds a single file, specified as a string.  The returned target
+will be the minimum point in the file.
+
+Note that this does not give a valid heading, so any conditions
+or actions that require will throw an error.  Consult the
+documentation for individual actions or conditions to determine
+which ones will and won't work.
+
+See [[#conditions][conditions]] for how to set a different condition.  For example:
+
+#+BEGIN_SRC org
+,* TODO Test
+  :PROPERTIES:
+  :BLOCKER:  file("~/myfile.org") headings?
+  :END:
+#+END_SRC
+
+Here, "Test" will block until myfile.org is clear of headings.
+
+*** first-child
+:PROPERTIES:
+:CUSTOM_ID: first-child
+:DESCRIPTION: Find the first child of a heading
+:END:
+
+- Syntax: first-child(OPTIONS...)
+
+Return the first child of the source heading.  If the source heading has no
+children, no target is returned.
+
+*** ids
+:PROPERTIES:
+:DESCRIPTION: Find a list of headings with given IDs
+:CUSTOM_ID: ids
+:END:
+
+- Syntax: id(ID1 ID2 ...)
+
+The ~ids~ finder will search for headings with given IDs, using ~org-id~.  Any
+number of UUIDs may be specified.  For example:
+
+#+BEGIN_SRC org
+,* TODO Test
+  :PROPERTIES:
+  :BLOCKER:  ids(62209a9a-c63b-45ef-b8a8-12e47a9ceed9 6dbd7921-a25c-4e20-b035-365677e00f30)
+  :END:
+#+END_SRC
+
+Here, "Test" will block until the heading with ID
+62209a9a-c63b-45ef-b8a8-12e47a9ceed9 and the heading with ID
+6dbd7921-a25c-4e20-b035-365677e00f30 are set to "DONE".
+
+Note that UUIDs need not be quoted; Edna will handle that for you.
+
+The IDs may also be prefixed with ~id:~, allowing the links to the headings
+themselves to be used.
+
+*** match
+:PROPERTIES:
+:CUSTOM_ID: match
+:DESCRIPTION: Good old tag matching
+:END:
+
+- Syntax: match("MATCH-STRING" SCOPE SKIP)
+
+The ~match~ keyword will take any arguments that ~org-map-entries~ usually takes.
+In fact, the arguments to ~match~ are passed straight into ~org-map-entries~.
+
+#+BEGIN_SRC org
+,* TODO Test
+  :PROPERTIES:
+  :BLOCKER:  match("test&mine" agenda)
+  :END:
+#+END_SRC
+
+"Test" will block until all entries tagged "test" and "mine" in the agenda files
+are marked DONE.
+
+See the documentation for ~org-map-entries~ for a full explanation of the first
+argument.
+
+*** next-sibling
+:PROPERTIES:
+:CUSTOM_ID: next-sibling
+:DESCRIPTION: Find the next sibling
+:END:
+
+- Syntax: next-sibling(OPTIONS...)
+
+The ~next-sibling~ keyword returns the next sibling of the source heading, if any.
+
+*** next-sibling-wrap
+:PROPERTIES:
+:CUSTOM_ID: next-sibling-wrap
+:DESCRIPTION: Find the next sibling, wrapping around
+:END:
+
+- Syntax: next-sibling-wrap(OPTIONS...)
+
+Find the next sibling of the source heading, if any.  If there isn't, wrap back
+around to the first heading in the same subtree.
+
+*** olp
+:PROPERTIES:
+:CUSTOM_ID: olp
+:DESCRIPTION: Find a heading by its outline path
+:END:
+
+- Syntax: olp("FILE" "OLP")
+
+Finds the heading given by OLP in FILE.  Both arguments are strings.
+
+#+BEGIN_SRC org
+,* TODO Test
+  :PROPERTIES:
+  :BLOCKER:  olp("test.org" "path/to/heading")
+  :END:
+#+END_SRC
+
+"Test" will block if the heading "path/to/heading" in "test.org" is not DONE.
+
+*** org-file
+:PROPERTIES:
+:CUSTOM_ID: org-file
+:DESCRIPTION: Find a file in org-directory
+:END:
+
+- Syntax: org-file("FILE")
+
+A special form of ~file~, ~org-file~ will find FILE in ~org-directory~.
+
+FILE is the relative path of a file in ~org-directory~.  Nested
+files are allowed, such as "my-directory/my-file.org".  The
+returned target is the minimum point of FILE.
+
+#+BEGIN_SRC org
+,* TODO Test
+  :PROPERTIES:
+  :BLOCKER:  org-file("test.org")
+  :END:
+#+END_SRC
+
+Note that the file still requires an extension; the "org" here
+just means to look in ~org-directory~, not necessarily an
+Org mode file.
+
+*** parent
+:PROPERTIES:
+:CUSTOM_ID: parent
+:DESCRIPTION: Find a parent
+:END:
+
+- Syntax: parent(OPTIONS...)
+
+Returns the parent of the source heading, if any.
+
+*** previous-sibling
+:PROPERTIES:
+:CUSTOM_ID: previous-sibling
+:DESCRIPTION: Find the previous sibling
+:END:
+
+- Syntax: previous-sibling(OPTIONS...)
+
+Returns the previous sibling of the source heading on the same level.
+
+*** previous-sibling-wrap
+:PROPERTIES:
+:CUSTOM_ID: previous-sibling-wrap
+:DESCRIPTION: Find the previous sibling, with wrapping
+:END:
+
+- Syntax: previous-sibling-wrap(OPTIONS...)
+
+Returns the previous sibling of the source heading on the same level.
+
+*** relatives
+:PROPERTIES:
+:CUSTOM_ID: relatives
+:DESCRIPTION: Generic relative finder
+:END:
+
+Find some relative of the current heading.
+
+- Syntax: relatives(OPTION OPTION...)
+- Syntax: chain-find(OPTION OPTION...)
+
+Identical to the chain argument in org-depend, relatives selects its single
+target using the following method:
+
+1. Creates a list of possible targets
+2. Filters the targets from Step 1
+3. Sorts the targets from Step 2
+
+One option from each of the following three categories may be
+used; if more than one is specified, the last will be used.
+Filtering is the exception to this; each filter argument adds to
+the current filter.  Apart from that, argument order is
+irrelevant.
+
+The chain-find finder is also provided for backwards
+compatibility, and for similarity to org-depend.
+
+All arguments are symbols, unless noted otherwise.
+
+*Selection*
+
+- from-top:             Select siblings of the current heading, starting at the top
+- from-bottom:          As above, but from the bottom
+- from-current:         Selects siblings, starting from the heading (wraps)
+- no-wrap:              As above, but without wrapping
+- forward-no-wrap:      Find entries on the same level, going forward
+- forward-wrap:         As above, but wrap when the end is reached
+- backward-no-wrap:     Find entries on the same level, going backward
+- backward-wrap:        As above, but wrap when the start is reached
+- walk-up:              Walk up the tree, excluding self
+- walk-up-with-self:    As above, but including self
+- walk-down:            Recursively walk down the tree, excluding self
+- walk-down-with-self:  As above, but including self
+- step-down:            Collect headings from one level down
+
+*Filtering*
+
+- todo-only:          Select only targets with TODO state set that isn't a DONE state
+- todo-and-done-only: Select all targets with a TODO state set
+- no-comments:        Skip commented headings
+- no-archive:         Skip archived headings
+- NUMBER:             Only use that many headings, starting from the first one
+                      If passed 0, use all headings
+                      If <0, omit that many headings from the end
+- "+tag":             Only select headings with given tag
+- "-tag":             Only select headings without tag
+- "REGEX":            select headings whose titles match REGEX
+
+*Sorting*
+
+- no-sort:         Remove other sorting in affect
+- reverse-sort:    Reverse other sorts (stacks with other sort methods)
+- random-sort:     Sort in a random order
+- priority-up:     Sort by priority, highest first
+- priority-down:   Same, but lowest first
+- effort-up:       Sort by effort, highest first
+- effort-down:     Sort by effort, lowest first
+- scheduled-up:    Scheduled time, farthest first
+- scheduled-down:  Scheduled time, closest first
+- deadline-up:     Deadline time, farthest first
+- deadline-down:   Deadline time, closest first
+- timestamp-up:    Timestamp time, farthest first
+- timestamp-down:  Timestamp time, closest first
+
+Many of the other finders are shorthand for argument combinations of relative:
+
+- [[#ancestors][ancestors]] :: walk-up
+- [[#children][children]] :: step-down
+- [[#descendants][descendants]] :: walk-down
+- [[#first-child][first-child]] :: step-down 1
+- [[#next-sibling][next-sibling]] :: forward-no-wrap 1
+- [[#next-sibling-wrap][next-sibling-wrap]] :: forward-wrap 1
+- [[#parent][parent]] :: walk-up 1
+- [[#previous-sibling][previous-sibling]] :: backward-no-wrap 1
+- [[#previous-sibling-wrap][previous-sibling-wrap]] :: backward-wrap 1
+- [[#rest-of-siblings][rest-of-siblings]] :: forward-no-wrap
+- [[#rest-of-siblings-wrap][rest-of-siblings-wrap]] :: forward-wrap
+- [[#siblings][siblings]] :: from-top
+- [[#siblings-wrap][siblings-wrap]] :: forward-wrap
+
+Because these are implemented as shorthand, any arguments for relatives may also
+be passed to one of these finders.
+
+*** rest-of-siblings
+:PROPERTIES:
+:CUSTOM_ID: rest-of-siblings
+:DESCRIPTION: Find the remaining siblings
+:END:
+
+- Syntax: rest-of-siblings(OPTIONS...)
+
+Starting from the heading following the current one, all same-level siblings
+are returned.
+
+*** rest-of-siblings-wrap
+:PROPERTIES:
+:CUSTOM_ID: rest-of-siblings-wrap
+:DESCRIPTION: Find the remaining siblings, with wrapping
+:END:
+
+- Syntax: rest-of-siblings-wrap(OPTIONS...)
+
+Starting from the heading following the current one, all same-level siblings
+are returned.  When the end is reached, wrap back to the beginning.
+
+*** self
+:PROPERTIES:
+:CUSTOM_ID: self
+:END:
+
+- Syntax: self
+
+Returns the source heading.
+
+*** siblings
+:PROPERTIES:
+:CUSTOM_ID: siblings
+:DESCRIPTION: Find all the siblings
+:END:
+
+- Syntax: siblings(OPTIONS...)
+
+Returns all siblings of the source heading as targets, starting from the first
+sibling.
+
+*** siblings-wrap
+:PROPERTIES:
+:CUSTOM_ID: siblings-wrap
+:DESCRIPTION: Find the siblings, but wrap around
+:END:
+
+- Syntax: siblings-wrap(OPTIONS...)
+
+Finds the siblings on the same level as the source heading, wrapping when it
+reaches the end.
+
+Identical to the [[#rest-of-siblings-wrap][rest-of-siblings-wrap]] finder.
+
+** Actions
+:PROPERTIES:
+:DESCRIPTION: Next steps
+:END:
+Once Edna has collected its targets for a trigger, it will perform actions on
+them.
+
+Actions must always end with '!'.
+
+*** Scheduled/Deadline
+:PROPERTIES:
+:CUSTOM_ID: planning
+:DESCRIPTION: Operate on planning information
+:END:
+
+- Syntax: scheduled!(OPTIONS)
+- Syntax: deadline!(OPTIONS)
+
+Set the scheduled or deadline time of any target headings.
+
+There are several forms that the planning keywords can take.  In the following,
+PLANNING is either scheduled or deadline.
+
+- PLANNING!("DATE[ TIME]")
+
+  Sets PLANNING to DATE at TIME.  If DATE is a weekday instead of a date, then
+  set PLANNING to the following weekday.  If TIME is not specified, only a date
+  will be added to the target.
+
+  Any string recognized by ~org-read-date~ may be used for DATE.
+
+  TIME is a time string, such as HH:MM.
+
+- PLANNING!(rm|remove)
+
+  Remove PLANNING from all targets.  The argument to this form may be either a
+  string or a symbol.
+
+- PLANNING!(copy|cp)
+
+  Copy PLANNING info verbatim from the source heading to all targets.  The
+  argument to this form may be either a string or a symbol.
+
+- PLANNING!("[+|-|++|--]NTHING[ [+|-]LANDING]")
+
+  Increment(+) or decrement(-) target's PLANNING by N THINGs relative to either
+  itself (+/-) or the current time (++/--).
+
+  N is an integer
+
+  THING is one of y (years), m (months), d (days), h (hours), M (minutes), a
+  (case-insensitive) day of the week or its abbreviation, or the strings
+  "weekday" or "wkdy".
+
+  If a day of the week is given as THING, move forward or backward N weeks to
+  find that day of the week.
+
+  If one of "weekday" or "wkdy" is given as THING, move forward or backward N
+  days, moving forward or backward to the next weekday.
+
+  This form may also include a "landing" specifier to control where in the week
+  the final date lands.  LANDING may be one of the following:
+
+  - A day of the week, which means adjust the final date forward (+) or backward
+    (-) to land on that day of the week.
+
+  - One of "weekday" or "wkdy", which means adjust the target date to the
+    closest weekday.
+
+  - One of "weekend" or "wknd", which means adjust the target date to the
+    closest weekend.
+
+- PLANNING!("float [+|-|++|--]N DAYNAME[ MONTH[ DAY]]")
+
+  Set time to the date of the Nth DAYNAME before/after MONTH DAY, as per
+  ~diary-float~.
+
+  N is an integer.
+
+  DAYNAME may be either an integer, where 0=Sunday, 1=Monday, etc., or a string
+  for that day.
+
+  MONTH may be an integer, 1-12, or a month's string.  If MONTH is empty, the
+  following (+) or previous (-) month relative to the target's time (+/-) or the
+  current time (++/--).
+
+  DAY is an integer, or empty or 0 to use the first of the month (+) or the last
+  of the month (-).
+
+Examples:
+
+- scheduled!("Mon 09:00") :: Set SCHEDULED to the following Monday at 9:00
+- deadline!("++2h") :: Set DEADLINE to two hours from now.
+- deadline!(copy) deadline!("+1h") :: Copy the source deadline to the target, then increment it by an hour.
+- scheduled!("+1wkdy") :: Set SCHEDULED to the next weekday
+- scheduled!("+1d +wkdy") :: Same as above
+- deadline!("+1m -wkdy") :: Set DEADLINE up one month, but move backward to find a weekend
+- scheduled!("float 2 Tue Feb") :: Set SCHEDULED to the second Tuesday in the following February
+- scheduled!("float 3 Thu") :: Set SCHEDULED to the third Thursday in the following month
+
+**** Timestamp Format
+:PROPERTIES:
+:CUSTOM_ID: ts_format
+:DESCRIPTION: Specifying a timestamp format
+:END:
+
+When using one of the planning modifiers, it isn't always possible to deduce how
+the timestamp format will be chosen if using ++ or --.  The following method is
+used:
+
+1. If the target heading already has a timestamp, that format is used.
+
+2. If the modifier with the ++ or -- is "h" or "M" (hours or minutes), long
+   format (includes time) is used.
+
+3. If the property ~EDNA_TS_FORMAT~ is set on the target heading, its value will
+   be used.  It should be either ~long~ for long format (includes time) or
+   ~short~ for short format (does not include time).
+
+4. The user variable ~org-edna-timestamp-format~ is the final fallback.  It
+   should be either the symbol ~long~ or ~short~.  It defaults to ~short~.
+
+*** TODO State
+:PROPERTIES:
+:CUSTOM_ID: todo!
+:DESCRIPTION: Set todo state
+:END:
+
+- Syntax: todo!(NEW-STATE)
+
+Sets the TODO state of the target heading to NEW-STATE.
+
+NEW-STATE may either be a string or a symbol denoting the new TODO state.  It
+can also be the empty string, in which case the TODO state is removed.
+
+Example:
+
+#+BEGIN_SRC org
+,* TODO Heading 1
+  :PROPERTIES:
+  :TRIGGER: next-sibling todo!(DONE)
+  :END:
+,* TODO Heading 2
+#+END_SRC
+
+In this example, when "Heading 1" is marked as DONE, it will also mark "Heading
+2" as DONE:
+
+#+BEGIN_SRC org
+,* DONE Heading 1
+  :PROPERTIES:
+  :TRIGGER: next-sibling todo!(DONE)
+  :END:
+,* DONE Heading 2
+#+END_SRC
+
+*** Archive
+:PROPERTIES:
+:CUSTOM_ID: archive!
+:DESCRIPTION: Archive targets
+:END:
+
+- Syntax: archive!
+
+Archives all targets with confirmation.
+
+Confirmation is controlled with ~org-edna-prompt-for-archive~.  If this option is
+nil, Edna will not ask before archiving targets.
+
+*** Chain Property
+:PROPERTIES:
+:CUSTOM_ID: chain!
+:DESCRIPTION: Copy properties from source to targets
+:END:
+
+- Syntax: chain!("PROPERTY")
+
+Copies PROPERTY from the source entry to all targets.  Does nothing if the
+source heading has no property PROPERTY.
+
+Example:
+
+#+BEGIN_SRC org
+,* TODO Heading 1
+  :PROPERTIES:
+  :COUNTER: 2
+  :TRIGGER: next-sibling chain!("COUNTER")
+  :END:
+,* TODO Heading 2
+#+END_SRC
+
+In this example, when "Heading 1" is marked as DONE, it will copy its COUNTER
+property to "Heading 2":
+
+#+BEGIN_SRC org
+,* DONE Heading 1
+  :PROPERTIES:
+  :COUNTER: 2
+  :TRIGGER: next-sibling chain!("COUNTER")
+  :END:
+,* TODO Heading 2
+  :PROPERTIES:
+  :COUNTER: 2
+  :END:
+#+END_SRC
+
+*** Clocking
+:PROPERTIES:
+:CUSTOM_ID: clocking
+:DESCRIPTION: Clock in or out of a target
+:END:
+
+- Syntax: clock-in!
+- Syntax: clock-out!
+
+Clocks into or out of all targets.
+
+~clock-in!~ has no special handling of targets, so be careful when specifying
+multiple targets.
+
+In contrast, ~clock-out!~ ignores its targets and only clocks out of the current
+clock, if any.
+*** Property
+:PROPERTIES:
+:CUSTOM_ID: properties
+:DESCRIPTION: Set properties of targets
+:END:
+
+- Syntax: set-property!("PROPERTY" "VALUE")
+- Syntax: set-property!("PROPERTY" inc)
+- Syntax: set-property!("PROPERTY" dec)
+- Syntax: set-property!("PROPERTY" next)
+- Syntax: set-property!("PROPERTY" prev)
+- Syntax: set-property!("PROPERTY" previous)
+
+The first form sets the property PROPERTY on all targets to VALUE.
+
+If VALUE is a symbol, it is interpreted as follows:
+
+- inc :: Increment a numeric property value by one
+- dec :: Decrement a numeric property value by one
+
+If either ~inc~ or ~dec~ attempt to modify a non-numeric property value, Edna will
+fail with an error message.
+
+- next :: Cycle the property through to the next allowed property value
+- previous :: Cycle the property through to the previous allowed property value
+
+The symbol ~prev~ may be used as an abbreviation for ~previous~.  Similar to
+~inc~ and ~dec~, any of these will fail if there are no defined properties.
+When reaching the end of the list of allowed properties, ~next~ will cycle back
+to the beginning.
+
+Example:
+
+#+begin_src org
+,#+PROPERTY: TEST_ALL a b c d
+
+,* TODO Test Heading
+  :PROPERTIES:
+  :TEST:     d
+  :TRIGGER:  self set-property!("TEST" next)
+  :END:
+#+end_src
+
+When "Test Heading" is set to DONE, its TEST property will change to "a".  This
+also works with ~previous~, but in the opposite direction.
+
+Additionally, all special forms will fail if the property is not already set:
+
+#+begin_src org
+,* TODO Test
+  :PROPERTIES:
+  :TRIGGER: self set-property!("TEST" inc)
+  :END:
+#+end_src
+
+In the above example, if "Test" is set to DONE, Edna will fail to increment the
+TEST property, since it doesn't exist.
+
+- Syntax: delete-property!("PROPERTY")
+
+Deletes the property PROPERTY from all targets.
+
+Examples:
+
+- set-property!("COUNTER" "1") :: Sets the property COUNTER to 1 on all targets
+- set-property!("COUNTER" inc) :: Increments the property COUNTER by 1.  Following the previous example, it would be 2.
+
+*** Priority
+:PROPERTIES:
+:CUSTOM_ID: priorities
+:DESCRIPTION: Set priorities of targets
+:END:
+
+Sets the priority of all targets.
+
+- Syntax: set-priority!("PRIORITY")
+
+  Set the priority to the first character of PRIORITY.
+
+- Syntax: set-priority!(up)
+
+  Cycle the target's priority up through the list of allowed priorities.
+
+- Syntax: set-priority!(down)
+
+  Cycle the target's priority down through the list of allowed priorities.
+
+- Syntax: set-priority!(P)
+
+  Set the target's priority to the character P.
+
+*** Tag
+:PROPERTIES:
+:CUSTOM_ID: tags
+:DESCRIPTION: Tags of a target
+:END:
+
+- Syntax: tag!("TAG-SPEC")
+
+Tags all targets with TAG-SPEC, which is any valid tag specification,
+e.g. tag1:tag2
+
+*** Effort
+:PROPERTIES:
+:CUSTOM_ID: effort
+:DESCRIPTION: So much effort!
+:END:
+
+Modifies the effort of all targets.
+
+- Syntax: set-effort!("VALUE")
+
+  Set the effort of all targets to "VALUE".
+
+- Syntax: set-effort!(NUMBER)
+
+  Sets the effort to the NUMBER'th allowed effort property.
+
+- Syntax: set-effort!(increment)
+
+  Increment the effort value.
+
+** Getting Help
+:PROPERTIES:
+:CUSTOM_ID: help
+:DESCRIPTION: Getting some help
+:END:
+
+Edna provides help for any keyword with ~M-x org-edna-describe-keyword~.  When
+invoked, a list of keywords (finders, actions, etc.) known to Edna will be
+provided.  Select any one to get its description.
+
+This description includes the syntax and an explanation of what the keyword
+does.  Some descriptions also contain examples.
+
+* Advanced Features
+:PROPERTIES:
+:CUSTOM_ID: advanced
+:DESCRIPTION: Be careful in here
+:END:
+** Finder Cache
+:PROPERTIES:
+:CUSTOM_ID: cache
+:DESCRIPTION: Making the finders work faster
+:END:
+
+Some finders, ~match~ in particular, can take a long time to run.  Oftentimes,
+this can make it unappealing to use Edna at all, especially with long
+checklists.
+
+The finder cache is one solution to this.  To enable it, set
+~org-edna-finder-use-cache~ to non-nil.  This can be done through the
+customization interface, or manually with ~setq~.
+
+When enabled, the cache will store the results of every finder form for a
+configurable amount of time.  This timeout is controlled by
+~org-edna-finder-cache-timeout~.  The cache is also invalidated if any of the
+results are invalid, which can happen if their target files have been closed.
+
+For example, if there are several entries in a checklist that all use the form
+~match("daily")~ as part of their trigger, the results of that form will be
+cached.  When the next item is marked as DONE, the results will be searched for
+in cache, not recomputed.
+
+When reverting Org mode files, the cache will often be invalidated.  This isn't
+the case for every Org mode file, so we can't just tell Emacs to automatically
+reset the cache when reverting a file.  Instead, we provide the command
+~org-edna-reset-cache~ to reset the finder cache.  If you notice headings that
+should be blocking but aren't while cache is enabled, reset the cache and check
+again.
+
+** Conditions
+:PROPERTIES:
+:CUSTOM_ID: conditions
+:DESCRIPTION: More than just DONE headings
+:END:
+
+Edna gives you he option to specify *blocking conditions*.  Each condition is checked
+for each of the specified targets; if one of the conditions returns true for
+that target, then the source heading is blocked.
+
+If no condition is specified, ~!done?~ is used by default, which means block if
+any target heading isn't done.
+
+*** Heading is DONE
+:PROPERTIES:
+:CUSTOM_ID: done
+:END:
+
+- Syntax: done?
+
+Blocks the source heading if any target heading is DONE.
+
+*** File Has Headings
+:PROPERTIES:
+:CUSTOM_ID: headings
+:END:
+
+- Syntax: headings?
+
+Blocks the source heading if any target belongs to a file that has an Org
+heading.  This means that target does not have to be a heading.
+
+#+BEGIN_EXAMPLE
+org-file("refile.org") headings?
+#+END_EXAMPLE
+
+The above example blocks if refile.org has any headings.
+
+*** Heading TODO State
+:PROPERTIES:
+:CUSTOM_ID: todo-state
+:END:
+
+- Syntax: todo-state?(STATE)
+
+Blocks if any target heading has TODO state set to STATE.
+
+STATE may be a string or a symbol.
+
+*** Lisp Variable Set
+:PROPERTIES:
+:CUSTOM_ID: variable-set
+:END:
+
+- Syntax: variable-set?(VARIABLE VALUE)
+
+Evaluate VARIABLE when visiting a target, and compare it with ~equal~
+against VALUE.  Block the source heading if VARIABLE = VALUE.
+
+VARIABLE should be a symbol, and VALUE is any valid lisp expression.
+
+Examples:
+
+- self variable-set?(test-variable 12) :: Blocks if the variable ~test-variable~ is set to 12.
+- self variable-set?(buffer-file-name "org-edna.org") :: Blocks if the variable ~buffer-file-name~ is set to "org-edna.org".
+
+*** Heading Has Property
+:PROPERTIES:
+:CUSTOM_ID: has-property
+:END:
+
+- Syntax: has-property?("PROPERTY" "VALUE")
+
+Tests each target for the property PROPERTY, and blocks if it's set to VALUE.
+
+Example:
+
+#+begin_src org
+,* TODO Take Shower
+  :PROPERTIES:
+  :COUNT:  1
+  :TRIGGER: self set-property!("COUNT" inc) todo!("TODO")
+  :END:
+,* TODO Wash Towels
+  :PROPERTIES:
+  :BLOCKER:  previous-sibling !has-property?("COUNT" "3")
+  :TRIGGER:  previous-sibling set-property!("COUNT" "0")
+  :END:
+#+end_src
+
+In this example, "Wash Towels" can't be completed until the user has showered at
+least three times.
+
+*** Regexp Search
+:PROPERTIES:
+:CUSTOM_ID: re-search
+:DESCRIPTION: Search for a regular expression
+:END:
+
+- Syntax: re-search?("REGEXP")
+
+Blocks the source heading if the regular expression REGEXP is present in any
+of the targets.
+
+The targets are expected to be files, although this will work with other targets
+as well.  When given a target heading, the heading's file will be searched.
+*** Checking Tags
+:PROPERTIES:
+:CUSTOM_ID: has-tags
+:DESCRIPTION: Matching against a set of tags
+:END:
+
+- Syntax: has-tags?("TAG1" "TAG2" ...)
+
+Blocks the source heading if any of the target headings have one or more of the
+given tags.
+
+#+begin_src org
+,* TODO Task 1                                                          :tag1:
+,* TODO Task 2                                                     :tag3:tag2:
+,* TODO Task 3
+  :PROPERTIES:
+  :BLOCKER:  rest-of-siblings-wrap has-tags?("tag1" "tag2")
+  :END:
+#+end_src
+
+In the above example, Tasks 1 and 2 will block Task 3.  Task 1 will block it
+because it contains "tag1" as one of its tags, and likewise for Task 2 and
+"tag2".
+
+Note that marking "Task 1" or "Task 2" as DONE will not unblock "Task 3".  If
+you want to set up such a system, use the [[#match][match]] finder.
+*** Matching Headings
+:PROPERTIES:
+:CUSTOM_ID: matches
+:DESCRIPTION: Matching against a match string
+:END:
+
+- Syntax: matches?("MATCH-STRING")
+
+Blocks the source heading if any of the target headings match against
+MATCH-STRING.
+
+MATCH-STRING is a string passed to ~org-map-entries~.
+
+#+begin_src org
+,* TODO Task 1
+,* TODO Task 2
+,* TODO Task 3
+  :PROPERTIES:
+  :BLOCKER:  rest-of-siblings-wrap !matches?("TODO==\"DONE\"")
+  :END:
+#+end_src
+
+In the above example, Tasks 1 and 2 will block Task 3 until they're marked as
+DONE.
+
+*** Negating Conditions
+:PROPERTIES:
+:CUSTOM_ID: negate
+:DESCRIPTION: Doing the opposite
+:END:
+Any condition can be negated by using '!' before the condition.
+
+#+BEGIN_EXAMPLE
+match("test") !has-property?("PROP" "1")
+#+END_EXAMPLE
+
+The above example will cause the source heading to block if any heading
+tagged "test" does *not* have the property PROP set to "1".
+*** Multiple Conditions
+:PROPERTIES:
+:CUSTOM_ID: multiple
+:DESCRIPTION: stacking blockers
+:END:
+
+Multiple blocking conditions can be used for a single entry.  The heading will
+block if any of the provided conditions evaluate to true.
+
+#+begin_src org
+,* TODO Heading 1
+  :PROPERTIES:
+  :ID:       1942caf2-caad-4757-b689-3c0029c1d8a5
+  :END:
+,* TODO Heading 2
+,* TODO Heading 3
+  :PROPERTIES:
+  :BLOCKER:  previous-sibling !done? ids(1942caf2-caad-4757-b689-3c0029c1d8a5) !done?
+  :END:
+#+end_src
+
+"Heading 3" will block if either "Heading 1" isn't done (ids) or "Heading 2"
+isn't done (previous-sibling).
+
+** Consideration
+:PROPERTIES:
+:DESCRIPTION: Only some of them
+:END:
+
+"Consideration" and "consider" are special keywords that are only valid for
+blockers.
+
+A blocker says "If ANY heading in TARGETS meets CONDITION, block this task".
+
+In order to modify the ANY part of that statement, the ~consider~ keyword may be
+used:
+
+1. consider(any)
+2. consider(all)
+3. consider(FRACTION)
+4. consider(NUMBER)
+
+(1) blocks the current task if any target meets the blocking condition.  This is
+the default case.
+
+(2) blocks the current task only if all targets meet the blocking condition.
+
+#+begin_src org
+,* Shovel Snow
+,** TODO Shovel on Monday
+,** TODO Shovel on Tuesday
+,** TODO Shovel on Wednesday
+,** TODO Put shovel away
+   :PROPERTIES:
+   :BLOCKER: consider(all) rest-of-siblings-wrap
+   :END:
+#+end_src
+
+The above example blocks "Put shovel away" so long as all of the siblings are
+still marked TODO.
+
+(3) blocks the current task if at least FRACTION of the targets meet the
+blocking condition.
+
+#+begin_src org
+,* Work
+,** TODO Shovel Snow
+,** TODO Clean room
+,** TODO Vacuum
+,** TODO Eat lunch
+,** TODO Work on Edna
+   :PROPERTIES:
+   :BLOCKER: consider(0.5) rest-of-siblings-wrap
+   :END:
+#+end_src
+
+The above example blocks "Work on Edna" so long as at least half of the siblings
+are marked TODO.  This means that three of them must be completed before
+development can begin on Edna.
+
+(4) blocks the current task if at least NUMBER of the targets meet the blocking
+condition.
+
+#+begin_src org
+,* Work
+,** TODO Shovel Snow
+,** TODO Clean room
+,** TODO Vacuum
+,** TODO Eat lunch
+,** TODO Work on Edna
+   :PROPERTIES:
+   :BLOCKER: consider(2) rest-of-siblings-wrap
+   :END:
+#+end_src
+
+The above example blocks "Work on Edna" so long as two of the siblings are
+marked TODO.  This means that NUMBER=1 is the same as specifying ~any~.
+
+A consideration must be specified before the conditions to which it applies.
+
+Both "consider" and "consideration" are valid keywords; they both mean the same
+thing.
+
+** Conditional Forms
+:PROPERTIES:
+:CUSTOM_ID: conditional_forms
+:DESCRIPTION: If/Then/Else
+:END:
+
+Let's say you've got the following checklist:
+
+#+begin_src org
+,* TODO Nightly
+  DEADLINE: <2017-12-22 Fri 22:00 +1d>
+  :PROPERTIES:
+  :ID:       12345
+  :BLOCKER:  match("nightly")
+  :TRIGGER:  match("nightly") todo!(TODO)
+  :END:
+,* TODO Prepare Tomorrow's Lunch                                     :nightly:
+,* TODO Lock Back Door                                               :nightly:
+,* TODO Feed Dog                                                     :nightly:
+#+end_src
+
+You don't know in what order you want to perform each task, nor should it
+matter.  However, you also want the parent heading, "Nightly", to be marked as
+DONE when you're finished with the last task.
+
+There are two solutions to this: 1. Have each task attempt to mark "Nightly" as
+DONE, which will spam blocking messages after each task.
+
+The second is to use conditional forms.  Conditional forms are simple; it's just
+if/then/else/endif:
+
+#+begin_quote
+if CONDITION then THEN else ELSE endif
+#+end_quote
+
+Here's how that reads:
+
+"If CONDITION would not block, execute THEN.  Otherwise, execute ELSE."
+
+For our nightly entries, this looks as follows:
+
+#+begin_src org
+,* TODO Prepare Tomorrow's Lunch                                     :nightly:
+  :PROPERTIES:
+  :TRIGGER:  if match("nightly") then ids(12345) todo!(DONE) endif
+  :END:
+#+end_src
+
+Thus, we replicate our original blocking condition on all of them, so it won't
+trigger the original until the last one is marked DONE.
+
+Occasionally, you may find that you'd rather execute a form if the condition
+*would* block.  There are two options.
+
+The first is to use ~consider(all)~.  This will tell Edna to block only if all
+of the targets meets the condition, and thus not block if at least one of them
+does not meet the condition.  This is the opposite of Edna's standard operation,
+which only allows passage if all targets meet the condition.
+
+#+begin_src org
+,* TODO Prepare Tomorrow's Lunch                                     :nightly:
+  :PROPERTIES:
+  :TRIGGER:  if consider(all) match("nightly") then ids(12345) todo!(DONE) endif
+  :END:
+#+end_src
+
+The second is to switch the then and else clauses:
+
+#+begin_src org
+,* TODO Prepare Tomorrow's Lunch                                     :nightly:
+  :PROPERTIES:
+  :TRIGGER:  if match("nightly") then else ids(12345) todo!(DONE) endif
+  :END:
+#+end_src
+
+The conditional block tells it to evaluate that section.  Thus, you can
+conditionally add targets, or conditionally check conditions.
+
+Another common use case is to check for a property:
+
+#+begin_src org
+,* TODO My Task
+  :PROPERTIES:
+  :TRIGGER: if self has-property?("REPEAT" "2") then self set-property!("REPEAT" inc) todo!("TODO") endif
+  :REPEAT: 0
+  :END:
+#+end_src
+
+When "My Task" is set to DONE, REPEAT will be incremented, then the task will be
+set back to TODO.  This happens until REPEAT is 2.  Once that happens, the task
+will be left alone, staying in the DONE state.
+
+Be warned that trying the above example with a repeater will not work.  In order
+for that to work, Edna must take over the repeater:
+
+#+begin_src org
+,* TODO My Task
+  SCHEDULED: <2020-09-02 Wed>
+  :PROPERTIES:
+  :TRIGGER: if self has-property?("REPEAT" "2") then self set-property!("REPEAT" inc) scheduled!("+1d") todo!("TODO") endif
+  :REPEAT: 0
+  :END:
+#+end_src
+
+This example will increment the SCHEDULED time by one day every time the task is
+marked DONE.
+
+** What Constitutes "Not Done"?
+:PROPERTIES:
+:CUSTOM_ID: not_done
+:DESCRIPTION: Changing from which states Edna will activate
+:END:
+
+Sometimes, you have a heading like this:
+
+#+begin_src org
+,* My Task
+  :PROPERTIES:
+  :TRIGGER:  self set-property!("TEST" inc)
+  :END:
+#+end_src
+
+You want to mark it as DONE because that's how you do things.  Will Edna run
+when you do that?
+
+The answer is it can.  There is user variable called ~org-edna-from-todo-states~
+that controls the categories of TODO states from which changing a heading will
+cause Edna to run.  This has two possible values:
+
+- todo :: Edna will only run if the old TODO state is in
+  ~org-not-done-keywords~.  This is the default.
+- not-done :: Edna will run if the old TODO state is *not* in
+  ~org-done-keywords~.  This includes no state at all.
+
+Further, using [[#conditional_forms][conditional forms]], it is possible to take different actions
+depending on the new TODO state.  For example:
+
+#+begin_src org
+,* My Task
+  :PROPERTIES:
+  :TRIGGER:  if self todo-state?("COMPLETE") then self set-property!("TEST" inc) endif
+  :TEST:     0
+  :END:
+#+end_src
+
+This will only increment the TEST property if the new TODO state is *not*
+"COMPLETE".  Currently, there is no way to take different actions depending on
+the *old* TODO state.
+
+** Setting the Properties
+:PROPERTIES:
+:DESCRIPTION: The easy way to set BLOCKER and TRIGGER
+:CUSTOM_ID: setting_keywords
+:END:
+
+There are two ways to set the BLOCKER and TRIGGER properties: by hand, or the
+easy way.  You can probably guess which way we prefer.
+
+With point within the heading you want to edit, type ~M-x org-edna-edit~.  You end
+up in a buffer that looks like this:
+
+#+begin_example
+Edit blockers and triggers in this buffer under their respective sections below.
+All lines under a given section will be merged into one when saving back to
+the source buffer.  Finish with `C-c C-c' or abort with `C-c C-k'.
+
+BLOCKER
+BLOCKER STUFF HERE
+
+TRIGGER
+TIRGGER STUFF HERE
+#+end_example
+
+In here, you can edit the blocker and trigger properties for the original
+heading in a cleaner environment.  More importantly, you can complete the names
+of any valid keyword within the BLOCKER or TRIGGER sections using
+~completion-at-point~.
+
+When finished, type ~C-c C-c~ to apply the changes, or ~C-c C-k~ to throw out your
+changes.
+* Extending Edna
+:PROPERTIES:
+:DESCRIPTION: What else can it do?
+:END:
+
+Extending Edna is (relatively) simple.
+
+During operation, Edna searches for functions of the form org-edna-TYPE/KEYWORD.
+
+** Naming Conventions
+:PROPERTIES:
+:DESCRIPTION: How to name new functions
+:END:
+
+In order to distinguish between actions, finders, and conditions, we add '?' to
+conditions and '!' to actions.  This is taken from the practice in Guile and
+Scheme to suffix destructive functions with '!' and predicates with '?'.
+
+Thus, one can have an action that files a target, and a finder that finds a
+file.
+
+We recommend that you don't name a finder with a special character at the end of
+its name.  As we devise new ideas, we consider using special characters for
+additional categories of keywords.  Thus, to avoid complications in the future,
+it's best if everyone avoids using characters that may become reserved in the
+future.
+
+** Finders
+:PROPERTIES:
+:DESCRIPTION: Making a new finder
+:END:
+
+Finders have the form org-edna-finder/KEYWORD, like so:
+
+#+BEGIN_SRC emacs-lisp
+(defun org-edna-finder/test-finder ()
+  (list (point-marker)))
+#+END_SRC
+
+All finders must return a list of markers, one for each target found, or nil if
+no targets were found.
+
+** Actions
+:PROPERTIES:
+:DESCRIPTION: Making a new action
+:END:
+
+Actions have the form org-edna-action/KEYWORD!:
+
+#+BEGIN_SRC emacs-lisp
+(defun org-edna-action/test-action! (last-entry arg1 arg2)
+  )
+#+END_SRC
+
+Each action has at least one argument: ~last-entry~.  This is a marker for the
+current entry (not to be confused with the current target).
+
+The rest of the arguments are the arguments specified in the form.
+
+** Conditions
+:PROPERTIES:
+:DESCRIPTION: Making a new condition
+:END:
+
+#+BEGIN_SRC emacs-lisp
+(defun org-edna-condition/test-cond? (neg))
+#+END_SRC
+
+All conditions have at least one argument, "NEG".  If NEG is non-nil, the
+condition should be negated.
+
+Most conditions have the following form:
+
+#+BEGIN_SRC emacs-lisp
+(defun org-edna-condition/test-condition? (neg)
+  (let ((condition (my-test-for-condition)))
+    (when (org-xor condition neg)
+      (string-for-blocking-entry-here))))
+#+END_SRC
+
+For conditions, we return true if condition is true and neg is false, or if
+condition is false and neg is true:
+
+| cond | neg | res |
+|------+-----+-----|
+| t    | t   | f   |
+| t    | f   | t   |
+| f    | t   | t   |
+| f    | f   | f   |
+
+This is an XOR table, so we pass CONDITION and NEG into ~org-xor~ to get our
+result.
+
+A condition must return a string if the current entry should be blocked.
+* Contributing
+:PROPERTIES:
+:DESCRIPTION: I wanna help!
+:END:
+
+We are all happy for any help you may provide.
+
+First, check out the source code on Savannah: https://savannah.nongnu.org/projects/org-edna-el/
+
+#+BEGIN_SRC shell
+bzr branch https://bzr.savannah.gnu.org/r/org-edna-el/ org-edna
+#+END_SRC
+
+You'll also want a copy of the most recent Org Mode source:
+
+#+BEGIN_SRC shell
+git clone git://orgmode.org/org-mode.git
+#+END_SRC
+
+** Bugs
+:PROPERTIES:
+:CUSTOM_ID: bugs
+:END:
+
+There are two ways to submit bug reports:
+
+1. Using the bug tracker at Savannah
+2. Sending an email using ~org-edna-submit-bug-report~
+
+When submitting a bug report, be sure to include the Edna form that caused the
+bug, with as much context as possible.
+
+** Working with EDE
+:PROPERTIES:
+:CUSTOM_ID: ede
+:DESCRIPTION: And all its quirks
+:END:
+
+Our build system uses EDE.  EDE can be a little finicky at times, but we feel
+the benefits, namely package dependency handling and Makefile generation,
+outweigh the costs.
+
+One of the issues that many will likely encounter is the error "Corrupt file on
+disk".  This is most often due to EDE not loading all its subprojects as needed.
+If you find yourself dealing with this error often, place the following in your
+.emacs file:
+
+#+begin_src emacs-lisp
+;; Target types needed for working with edna
+(require 'ede/proj-elisp)
+(require 'ede/proj-aux)
+(require 'ede/proj-misc)
+#+end_src
+
+These are the three target types that edna uses: elisp for compilation and
+autoloads; aux for auxiliary files such as documentation; and misc for tests.
+
+When creating a new file, EDE will ask if you want to add it to a target.
+Consult with one of the edna devs for guidance, but usually selecting "none"
+and letting one of us handle it is a good way to go.
+
+** Compiling Edna
+:PROPERTIES:
+:CUSTOM_ID: compiling
+:DESCRIPTION: How to compile Edna
+:END:
+To compile Edna, you've got to have EDE create the Makefile first.  Run the
+following in your Emacs instance to generate the Makefile:
+
+#+begin_example
+M-x ede-proj-regenerate
+#+end_example
+
+This will create the Makefile and point it to the correct version of Org.  The
+targets are as follows:
+
+- compile :: Compiles the code.  This should be done to verify that everything
+             will compile, as ELPA requires this.
+- autoloads :: Creates the autoloads file.  This should also run without
+               problems, so it's a good idea to check this one as well.
+- check :: Runs the tests in ~org-edna-tests.el~.
+
+To run any target, call ~make~:
+
+#+begin_src shell
+make compile autoloads
+#+end_src
+
+The above command compiles Edna and generates the autoloads file.
+
+** Testing Edna
+:PROPERTIES:
+:CUSTOM_ID: testing
+:DESCRIPTION: Ensuring Edna works the way we think she will
+:END:
+
+There are two ways to test Edna: the command-line and through Emacs.
+
+The command-line version is simple, and we ask that you do any final testing
+using this method.  This is how we periodically check to verify that new
+versions of Org mode haven't broken Edna.  It uses the Makefile, which is
+generated with EDE.  See [[#compiling][Compiling Edna]] for how to do that.  Once you have, run
+~make check~ on the command line.
+
+Edna tests are written using ~ERT~, the Emacs Regression Testing framework.  In
+order to use it interactively in Emacs, the following must be done:
+
+1. Load ~org-edna-tests.el~
+2. Run ~M-x ert-run-tests-interactively~
+3. Select which tests to run, or just the letter "t" to run all of them.
+
+Results are printed in their own buffer.  See the ERT documentation for more
+details.
+
+** Before Sending Changes
+:PROPERTIES:
+:CUSTOM_ID: commit_checklist
+:DESCRIPTION: Follow these instructions before sending us anything
+:END:
+
+There are a few rules to follow:
+
+- Verify that any new Edna keywords follow the appropriate naming conventions
+- Any new keywords should be documented
+- We operate on headings, not headlines
+  - Use one word in documentation to avoid confusion
+- Make sure your changes compile
+- Run 'make check' to verify that your mods don't break anything
+- Avoid additional or altered dependencies if at all possible
+  - Exception: New versions of Org mode are allowed
+
+** Developing with Bazaar
+:PROPERTIES:
+:CUSTOM_ID: bzr_dev
+:DESCRIPTION: How to use this strange VCS
+:END:
+
+If you're new to bazaar, we recommend using Emacs's built-in VC package.  It
+eases the overhead of dealing with a brand new VCS with a few standard commands.
+For more information, see the info page on it (In Emacs, this is
+C-h r m Introduction to VC RET).
+
+To contribute with bazaar, you can do the following:
+
+#+begin_src shell
+# Hack away and make your changes
+$ bzr commit -m "Changes I've made"
+$ bzr send -o file-name.txt
+#+end_src
+
+Then, use ~org-edna-submit-bug-report~ and attach "file-name.txt".  We can then
+merge that into the main development branch.
+
+** Documentation
+:PROPERTIES:
+:CUSTOM_ID: docs
+:DESCRIPTION: Improving the documentation
+:END:
+
+Documentation is always helpful to us.  Please be sure to do the following after
+making any changes:
+
+1. Update the info page in the repository with ~C-c C-e i i~
+2. If you're updating the HTML documentation, switch to a theme that can easily
+   be read on a white background; we recommend the "adwaita" theme
+* Changelog
+:PROPERTIES:
+:DESCRIPTION: List of changes by version
+:END:
+** 1.1.2
+- Allow ~id:~ syntax in ~ids~ finder
+- Added setting ~org-edna-from-todo-states~
+  - See [[#not_done][What Constitutes "Not Done"]] for more
+** 1.1.1
+- Marked ~org-edna-load~ and ~org-edna-unload~ as deprecated
+- Renamed to ~org-edna--load~ and ~org-edna--unload~ to reflect internal use only intention
+** 1.1.0
+- Added ~org-edna-mode~ as a minor mode, as opposed to ~org-edna-load~ and ~org-edna-unload~
+** 1.0.2
+- Added ~org-edna-reset-cache~ to allow a user to reset the finder cache
+
+- Fixed timestamp format bug with scheduled! and deadline!
+  - See [[#ts_format][Timestamp Format]] for more
+** 1.0.1
+- Fixed bug in multiple blocking conditions
+** 1.0
+
+- Various bugs fixes
+  - Fixed parsing of consideration
+  - Limited cache to just the finders that don't depend on current position
+- Added "buffer" option for match finder
+- Added timestamp sorting to relatives finder
+- Inverted meaning of consideration to avoid confusion
+- Added [[#has-tags][has-tags?]] and [[#matches][matches?]] conditions
+** 1.0beta8
+Quick fix for beta7.
+** 1.0beta7
+Biggest change here is the cache.
+
+- Added cache to the finders to improve performance
+
+- Updated documentation to include EDE
+
+- Added testing and compiling documentation
+** 1.0beta6
+Lots of parsing fixes.
+
+- Fixed error reporting
+
+- Fixed parsing of negations in conditions
+
+- Fixed parsing of multiple forms inside if/then/else blocks
+** 1.0beta5
+Some new forms and a new build system.
+
+- Added new forms to set-property!
+  - Now allows 'inc, 'dec, 'previous, and 'next as values
+
+- Changed build system to EDE to properly handle dependencies
+
+- Fixed compatibility with new Org effort functions
+** 1.0beta4
+Just some bug fixes from the new form parsing.
+
+- Fixed multiple forms getting incorrect targets
+
+- Fixed multiple forms not evaluating
+** 1.0beta3
+HUGE addition here
+
+- Conditional Forms
+  - See [[#conditional_forms][Conditional Forms]] for more information
+
+- Overhauled Internal Parsing
+
+- Fixed consideration keywords
+
+- Both consider and consideration are accepted now
+
+- Added 'any consideration
+  - Allows passage if just one target is fulfilled
+** 1.0beta2
+Big release here, with three new features.
+
+- Added interactive keyword editor with completion
+  - See [[#setting_keywords][Setting the Properties]] for how to do that
+
+- New uses of schedule! and deadline!
+  - New "float" form that mimics diary-float
+  - New "landing" addition to "+1d" and friends to force planning changes to land on a certain day or type of day (weekend/weekday)
+  - See [[#planning][Scheduled/Deadline]] for details
+
+- New "relatives" finder
+  - Renamed from chain-find with tons of new keywords
+  - Modified all other relative finders (previous-sibling, first-child, etc.) to use the same keywords
+  - See [[#relatives][relatives]] for details
+
+- New finders
+  - [[#previous-sibling-wrap][previous-sibling-wrap]]
+  - [[#rest-of-siblings-wrap][rest-of-siblings-wrap]]

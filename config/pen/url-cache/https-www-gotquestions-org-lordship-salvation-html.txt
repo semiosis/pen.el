@@ -1,0 +1,198 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=604800
+Content-Type: text/html
+Last-Modified: Tue, 31 Dec 2024 18:20:02 GMT
+Accept-Ranges: bytes
+ETag: "075929bb05bdb1:0"
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' https://*.gotquestions.org
+Date: Sun, 12 Jan 2025 05:51:05 GMT
+Content-Length: 7408
+
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+<head>
+<title>What is lordship salvation? | GotQuestions.org</title>
+<META name="keywords" itemprop="keywords" content="lordship salvation"><META name="description" itemprop="description" property="og:description" content="What is lordship salvation? Does a person have to submit to Jesus’ lordship to be saved?">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="image_src" itemprop="image" href="https://www.gotquestions.org/img/GQlogo.png"><link rel="canonical" itemprop="url mainEntityOfPage" href="https://www.gotquestions.org/lordship-salvation.html">
+<meta itemprop="author" content="GotQuestions.org">
+<meta itemprop="datePublished" content="2015-05-08">
+<meta property="og:image" content="https://www.gotquestions.org/img/OG/lordship-salvation.jpg">
+<meta property="og:site_name" content="GotQuestions.org">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gotquestions.org/lordship-salvation.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7EVHFDMSZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M7EVHFDMSZ');
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-site-theme="light">
+<div class="fixed-button settings box-shadow"><img src="img/cogwheel.svg" alt="settings icon" onclick="settingsMenu(this)"></div>
+<div class="fixed-button sharebutton box-shadow"><img src="img/share.svg" alt="share icon" onclick="shareMenu(this)"></div>
+<header class="gradient-to-b" style="--color-start: var(--bgcolor-header-start); --color-end: var(--bgcolor-header-end);">
+<div class="searchbox desktop-show"><div class="search"><div class='gq-ac-placeholder header'></div></div></div>
+<div class="logo-wrap"><a href="https://www.gotquestions.org" class="logo"><img src="img/logo_white.svg" alt="Bible Questions Answered"></a></div>
+<nav>
+<ul>
+<li><a href="whats-new.html">New</a></li>
+<li><a href="top20.html">Top 20</a></li>
+<li><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="extra-menu modal-menu box-shadow">
+<li class="mobile-show flex-half"><a href="whats-new.html">New</a></li>
+<li class="mobile-show flex-half"><a href="top20.html">Top 20</a></li>
+<li class="mobile-show flex-half"><a href="https://www.gotquestions.net/admin/BackendSubmit/RandomPage?websiteid=1">Random</a></li>
+<li class="mobile-show flex-half"><a href="https://podcast.gotquestions.org">Podcast</a></li>
+<li><a href="Gospel-presentations.html">The Gospel</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="Bible-Questions.html">Ask</a></li>
+<li><a href="crucial.html">Crucial Questions</a></li>
+<li><a href="content.html">Content Index</a></li>
+<li><a href="questweek.html">Question of the Week</a></li>
+<li><a href="free-Bible-study.html">Bible Studies</a></li>
+<li><a href="international.html">International</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li class="mobile-show donate"><a href="subscribe.html">Subscribe</a></li>
+</ul>
+<ul class="settings-menu modal-menu box-shadow">
+<li>
+<div class="toggle-wrap">
+<span>Light</span><input type="checkbox" checked id="toggle" class="checkbox" onclick="toggleTheme(this)" /><label for="toggle" class="switch"></label><span>Dark</span>
+</div>
+</li>
+<li><div id="bibleRefLinkSettings"><label for="bibleRefLinkVersion">Bible Version</label><select id="bibleRefLinkVersion" name="bibleRefLinkVersion" onchange="changeVersion();BibleRefLink.brlSavePrefs();"><option value="ESV">ESV</option><option value="CSB">CSB</option><option value="KJV">KJV</option><option value="NASB">NASB</option><option value="NIV" selected="selected">NIV</option><option value="NKJV">NKJV</option><option value="NLT">NLT</option></select></div></li>
+<li><label for="font">Font Family</label><select name="font" id="font" onchange="changeFont()"><option value="system-ui">Default</option><option value="Arial">Arial</option><option value="Verdana">Verdana</option><option value="Helvetica">Helvetica</option><option value="Tahoma">Tahoma</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option></select></li>
+<li><label for="lineheight">Line Height</label><select name="lineheight" id="lineheight" onchange="changeLineHeight()"><option value="1.4">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+<li><label for="fontsize">Font Size</label><select name="fontsize" id="fontsize" onchange="changeFontSize()"><option value="1">Default</option><option value="1">1.0</option><option value="1.2">1.2</option><option value="1.5">1.5</option><option value="2">2</option></select></li>
+</ul>
+<ul class="final-menu modal-menu box-shadow">
+<li><a href="https://www.facebook.com/sharer.php?u=https://www.gotquestions.org/" class="fb"><img src="img/logo-fb-simple.svg" alt="Facebook icon">Facebook</a></li>
+<li><a href="https://twitter.com/share?url=https://www.gotquestions.org/" class="tw"><img src="img/logo-twitter.svg" alt="Twitter icon">Twitter</a></li>
+<li><a href="https://pinterest.com/pin/create/link/?url=https://www.gotquestions.org/" class="pi"><img src="img/logo-pinterest.svg" alt="Pinterest icon">Pinterest</a></li>
+<li><a class="SendEmail" href=""><img src="img/letter.svg" alt="Email icon">Email</a></li>
+<li class="mobile-show"><a class="SendSMS" href=""><img src="img/sms-icon.svg" alt="SMS icon">Text/SMS</a></li>
+</ul>
+<img src="img/menu.svg" class="menu-icon" alt="Menu icon" onclick="extraMenu(this)">
+</nav>
+</header>
+<div class="featured gradient-to-tr" style="--color-start: var(--bgcolor-featured-start); --color-end: var(--bgcolor-featured-end)">
+<div class="featured-left">
+<h5>Find Out</h5>
+<h4><a href="going-to-heaven.html">How to go to heaven</a></h4>
+<h4><a href="get-right-with-God.html">How to get right with God</a></h4>
+</div>
+<div class="featured-right">
+<div class="desktop-hide gq-YT"><a href="https://www.youtube.com/gotquestionsorg" target="_blank"><img src="img/GQ-YT.png"></a></div>
+</div>
+</div>
+<main><div class="breadcrumb-wrapper">
+<span class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org"><span itemprop="name"><span class="home-icon"></span>Home</span></a><meta itemprop="position" content="1"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content.html"><span itemprop="name">Content Index</span></a><meta itemprop="position" content="2"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_salvation.html"><span itemprop="name">Salvation</span></a><meta itemprop="position" content="3"></span> <span class="chevron-right"></span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.gotquestions.org/content_salvation_theology.html"><span itemprop="name">The Truths of Salvation</span></a><meta itemprop="position" content="4"></span> <span class="chevron-right"></span> Lordship salvation</span></div>
+<section class="content-wrap gradient-to-b" style="--color-start: var(--bgcolor-content-start); --color-end: var(--bgcolor-content-end);" ><div class="content">
+<div class="label gradient-to-tr" style="--color-start: #96445a; --color-end: #6f637e;">Question</div>
+<div class="sponsor-sidebar"><div class="desktop-show" align="center"><div class="adManager-placeholder"></div></div></div>
+<h1><span itemprop="name headline" property="og:title">What is lordship salvation?</span></h1>
+<div class="actions-wrap"><div class="actions">
+<a target="_blank" rel="noopener nofollow" href="INTL/lordship-salvation.html" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'intl'});"><img src="img/translate-icon.svg" alt="translate"></a>
+<a target="_blank" rel="noopener" property="og:video" href="https://youtu.be/BiomUqv_SxU" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'video'});"><img src="img/logo-youtube.svg" alt="video" class="questionInteract"></a>
+<a target="_blank" rel="noopener" href="https://printer.gotquestions.net/GeneratePF?articleId=92" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'print'});"><img src="img/print.svg" class="questionInteract" alt="lordship salvation"></a>
+<span class="audio-icon"><img src="img/volume.svg" alt="audio" class="questionInteract"><audio controls preload="none" style="width:300px;height:25px"><source src="audio/lordship-salvation.mp3" type="audio/mpeg"></audio></span>
+</div></div>
+<div itemprop="articleBody">
+<div class="label  gradient-to-tr" style="--color-start: #29a699; --color-end: #749c5a;">Answer</div><br><br>
+The doctrine of lordship salvation teaches that submitting to Christ as Lord goes hand-in-hand with trusting in Christ as Savior. Lordship salvation is the opposite of what is sometimes called <a href="easy-believism.html">easy-believism</a> or the teaching that salvation comes through an acknowledgement of a certain set of facts.<br><br>
+<div class="youtube-player" data-id="BiomUqv_SxU"></div><br>
+John MacArthur, whose book <i>The Gospel According to Jesus</i> lays out the case for lordship salvation, summarizes the teaching this way: “The gospel call to faith presupposes that sinners must repent of their sin and yield to Christ’s authority.” In other words, a sinner who refuses to repent is not saved, for he cannot cling to his sin and the Savior at the same time. And a sinner who rejects Christ’s authority in his life does not have saving faith, for true faith encompasses a surrender to God. Thus, the gospel requires more than making an intellectual decision or mouthing a prayer. The sheep will follow their Shepherd in submissive obedience.<br><br>
+Advocates of lordship salvation point to Jesus’ repeated warnings to the religious hypocrites of His day as proof that simply agreeing to spiritual facts does not save a person. There must be a heart change. Jesus emphasized the high cost of discipleship: “Whoever does not carry their cross and follow me cannot be my disciple” (Luke 14:27), and “Those of you who do not give up everything you have cannot be my disciples” (verse 33). In the same passage, Jesus speaks of counting the cost; elsewhere, He stresses total commitment: “No one who puts a hand to the plow and looks back is fit for service in the kingdom of God” (Luke 9:62).<br><br>
+In the Sermon on the Mount, Jesus says that eternal life is a <a href="narrow-path.html">narrow path</a> found by “only a few” (Matthew 7:14); in contrast, easy-believism seeks to broaden the path so that anyone who has a <a href="profession-of-faith.html">profession of faith</a> can enter. Jesus says that “every good tree bears good fruit” (verse 17); in contrast, easy-believism says that a tree can still be good and bear nothing but bad fruit. Jesus says that many who say “Lord, Lord” will not enter the kingdom (verses 21–23); in contrast, easy-believism teaches that saying “Lord, Lord” is good enough.<br><br>
+Lordship salvation teaches that a true profession of faith will be backed up by evidence of faith. If a person is truly following the Lord, then he or she will obey the Lord’s instructions. A person who is living in willful, unrepentant sin has obviously not chosen to follow Christ, because Christ calls us out of sin and into righteousness. Indeed, the Bible clearly teaches that faith in Christ will result in a changed life (2 Corinthians 5:17; Galatians 5:22–23; James 2:14–26).<br><br>
+Lordship salvation is not a salvation-by-works doctrine. Advocates of lordship salvation are careful to say that salvation is by grace alone, that believers are saved before their faith ever produces any good works, and that Christians can and do sin. However, true salvation will inevitably lead to a changed life. The saved will be dedicated to their Savior. A true Christian will not feel comfortable living in unconfessed, unforsaken sin.<br><br>
+Here are nine teachings that set lordship salvation apart from easy-believism:<br><br>
+1) Repentance is not a simple synonym for faith. Scripture teaches that sinners must exercise faith in conjunction with repentance (Acts 2:38; 17:30; 20:21; 2 Peter 3:9). Repentance is a change of mind from embrace of sin and rejection of Christ to a rejection of sin and an embrace of Christ (Acts 3:19; Luke 24:47), and even this is a gift of God (2 Timothy 2:25). Genuine repentance, which comes when a person submits to the lordship of Christ, cannot help but result in a change of behavior (Luke 3:8; Acts 26:18–20).<br><br>
+2) A Christian is a new creation and cannot just “stop believing” and lose salvation. Faith itself is a gift of God (Ephesians 2:1–5, 8), and real faith endures forever (Philippians 1:6). Salvation is all God’s work, not man’s. Those who believe in Christ as Lord are saved apart from any effort of their own (Titus 3:5).<br><br>
+3) The object of faith is Christ Himself, not a promise, a prayer, or a creed (John 3:16). Faith must involve a personal commitment to Christ (2 Corinthians 5:15). It is more than being convinced of the truth of the gospel; it is a forsaking of this world and a following of the Master. The Lord Jesus said, “My sheep listen to my voice; I know them, and they follow me” (John 10:27).<br><br>
+4) True faith always produces a changed life (2 Corinthians 5:17). The inner person is transformed by the Holy Spirit (Galatians 2:20), and the Christian has a new nature (Romans 6:6). Those with genuine faith—those who are submitted to the lordship of Christ—follow Jesus (John 10:27), love their brothers (1 John 3:14), obey God’s commandments (1 John 2:3; John 15:14), do the will of God (Matthew 12:50), abide in God’s Word (John 8:31), keep God’s Word (John 17:6), do good works (Ephesians 2:10), and continue in the faith (Colossians 1:21–23; Hebrews 3:14). Salvation is not adding Jesus to the pantheon of one’s idols; it is a wholesale destruction of the idols with Jesus reigning supreme.<br><br>
+5) God’s “divine power has given us everything we need for a godly life” (2 Peter 1:3; cf. Romans 8:32). Salvation, then, is not just a ticket to heaven. It is the means by which we are sanctified (practically) in this life and by which we grow in grace.<br><br>
+6) Scripture teaches that Jesus is Lord of all. Christ demands unconditional surrender to His will (Romans 6:17–18; 10:9–10). Those who live in rebellion to God’s will do not have eternal life, for “God opposes the proud but shows favor to the humble” (James 4:6).<br><br>
+7) Those who truly believe in Christ will love Him (1 Peter 1:8–9; Romans 8:28–30; 1 Corinthians 16:22). And those we love we long to please (John 14:15, 23).<br><br>
+8) Scripture teaches that behavior is an important test of faith. Obedience is evidence that one’s faith is genuine (1 John 2:3). If a person remains unwilling to obey Christ, he provides evidence that his “faith” is in name only (1 John 2:4). A person may claim Jesus as Savior and pretend to obey for a while, but, if there is no heart change, his true nature will eventually manifest itself. This was the case for Judas Iscariot.<br><br>
+9) Genuine believers may stumble and fall, but they will <a href="perseverance-saints.html">persevere</a> in the faith (1 Corinthians 1:8). This was the case for Simon Peter. A “believer” who completely turns away from the Lord, never to return, plainly shows that he was never born again to begin with (1 John 2:19). This was the case for Judas Iscariot (see John 6:70).<br><br>
+A person who has been delivered from sin by faith in Christ should not desire to remain in a life of sin (Romans 6:2). Of course, spiritual growth can occur quickly or slowly, depending on the person and his circumstances. And the changes may not be evident to everyone at first. Ultimately, God knows who are His sheep, and He will mature each of us according to His perfect time table.<br><br>
+Is it possible to be a Christian and live in lifelong carnality, enjoying the pleasures of sin, and never seeking to glorify the Lord who bought him? Can a sinner spurn the lordship of Christ yet lay claim to Him as Savior? Can someone pray a “sinner’s prayer” and go about his life as if nothing had happened and still call himself a “Christian”? Lordship salvation says “no.” Let us not give unrepentant sinners false hope; rather, let us declare the whole counsel of God: “You must be born again” (John 3:7).<br><br>
+</div>
+<section class="homepage-sponsor desktop-hide">
+<div class="desktop-hide" align="center"><div class="adManager-placeholder-mobile"></div></div>
+</section>
+<div class="related resources"><h4>For Further Study</h4>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'chrbook'});" href="https://www.christianbook.com/Christian/Books/product?event=AFF&p=1011693&item_no=61831X">The Gospel According to Jesus by John MacArthur</a><br><br>
+<a target="_blank" rel="sponsored noopener" onClick="gtag('event', 'click', {'event_category':'engagement', 'event_label':'logos'});" href="https://www.logos.com/?utm_campaign=logossubxlaunch-phase1&utm_source=gotquestions&utm_medium=advertising_display&utm_content=logossubxlaunch-phase1-gtlink">More insights from your Bible study - Get Started with Logos Bible Software for Free!</a>
+</div>
+<div class="related topics"><h4>Related Articles</h4>
+<a href="repentance.html">What is repentance and is it necessary for salvation?</a><br><br>
+<a href="Jesus-Lord.html">How do I make Jesus Lord of my life?</a><br><br>
+<a href="easy-believism.html">What is easy believism?</a><br><br>
+<a href="free-grace.html">What is free grace? What is Free Grace Theology?</a><br><br>
+<a href="cheap-grace.html">What is cheap grace?</a>
+</div>
+<center><strong class="return">Return to:<br><br>
+<a class="button-link box-shadow" href="questions_salvation.html">Questions about Salvation</a><br><br>
+What is lordship salvation?</strong></center>
+</div>
+</section>
+<section class="subscribe gradient-to-br" style="--color-start: #153c59; --color-end: #1b537c">
+<div class="grid">
+<div class="gradient-to-br box-shadow" style="--color-start: #2c6482; --color-end: #64547b">
+<h5>Subscribe to the</h5>
+<h3>Question of the Week</h3>
+<p>Get our Question of the Week delivered right to your inbox!</p>
+<iframe src="scommon/qotw.htm" title="question of the week" frameborder="0" width="100%" height="100%"></iframe>
+</div></div>
+</section>
+<section class="share gradient-to-b" style="--color-start: #073D60; --color-end: #0A3652;">
+<span>Follow Us:</span>
+<a target="_blank" href="https://www.facebook.com/gotquestions.org"><img src="img/logo-fb-simple.svg" alt="Facebook icon"></a>
+<a target="_blank" href="https://twitter.com/gotquestions"><img src="img/logo-twitter.svg" alt="Twitter icon"></a>
+<a target="_blank" href="https://www.youtube.com/gotquestionsorg"><img src="img/logo-youtube.svg" alt="YouTube icon"></a>
+<a target="_blank" href="https://www.pinterest.com/gotquestionsmin/"><img src="img/logo-pinterest.svg" alt="Pinterest icon"></a>
+<a target="_blank" href="https://www.instagram.com/gotquestionsministries/"><img src="img/logo-instagram.svg" alt="Instagram icon"></a>
+</section>
+</main>
+<footer>
+<div class="grid"><div>
+<div class="logo"></div>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="citation.html">Citation</a></li>
+<li><a href="apply.html">Serve with Us</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="network">
+GotQuestions.org is the primary site of Got Questions Ministries <a target="_blank" href="https://www.gqm.one"><img src="img/gqm-one.png"></a>
+</div>
+<div class="apps">
+<a href="https://apps.apple.com/us/app/got-questions/id366553550" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'ios-app'});"><img src="img/apple-appstore.svg" class="appSource"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gotquestions.gqandapp&hl=en" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'android-app'});"><img src="img/google-play.svg" class="appSource"></a>
+<a href="https://www.amazon.com/gp/product/B07VX73L12" target="_blank" rel="noopener" onClick="gtag('event', 'download', {'event_category':'engagement', 'event_label':'alexa-skill'});"><img src="img/amazon-alexa.svg" class="appSource"></a>
+</div>
+</div>
+</footer>
+<center><div class="bottom">&copy; Copyright 2002-2025 Got Questions Ministries. All rights reserved.&nbsp;<a href="privacy.html">Privacy Policy</a></div>
+<div itemprop="dateModified" content="2024-04-08">This page last updated: April 8, 2024</div></center>
+<script src="scripts.js"></script>
+<div style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="GotQuestions.org"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="url" content="https://www.gotquestions.org/img/GQlogo.png"><meta itemprop="width" content="400"><meta itemprop="height" content="79">
+</div></div>
+<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="embedURL" content="https://youtu.be/BiomUqv_SxU"><meta itemprop="name" content="What is lordship salvation?"><meta itemprop="description" content="What is lordship salvation? Does a person have to submit to Jesus’ lordship to be saved?"><meta itemprop="thumbnailUrl" content="https://www.gotquestions.org/img/video-thumbnails/lordship-salvation.jpg"><meta itemprop="uploadDate" content="2020-03-04">
+</div>
+</body>
+</html>

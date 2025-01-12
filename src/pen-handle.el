@@ -662,7 +662,10 @@
         :docs '(pen-doc-override
                 lsp-describe-thing-at-point
                 man-thing-at-point-cpp
-                pen-docs-for-thing-given-screen)
+
+                ;; This is automatically done because it's a prog mode I think
+                ;; pen-docs-for-thing-given-screen
+                )
 
         ;; Not at point - manual entry of symbol, searches web
         :docsearch '(pen-doc)

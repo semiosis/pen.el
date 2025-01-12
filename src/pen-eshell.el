@@ -358,6 +358,7 @@ or an external command."
   (region-erase-trailing-whitespace
    eshell-last-output-start
    (- eshell-last-output-end 1)))
+(advice-add 'eshell-filter-region-remove-trailing-whitespace :around #'ignore-errors-around-advice)
 
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)

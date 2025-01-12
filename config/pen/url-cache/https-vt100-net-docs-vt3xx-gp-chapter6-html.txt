@@ -1,0 +1,779 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:24:59 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:24:59 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 8483
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 6</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter5.html">Chapter 5</a><a href="contents.html">Contents</a><a href="chapter7.html">Chapter 7</a></nav>
+</header>
+<h1 id="S6"><span class="chapnum">6</span> Curve Command</h1>
+<p>Curve commands draw circles, arcs, and other curved images. The appearance
+of the lines used to draw curves depends on the write control values in effect
+when you use the curve command. There are four basic types of curve
+commands.</p>
+<ul class="bare">
+<li>Circles</li>
+<li>Arcs</li>
+<li>Curve interpolation sequence</li>
+<li>Temporary writing controls option</li>
+</ul>
+<h2 id="S6.1">About the Examples</h2>
+<p>This chapter includes several examples of figures drawn with curve commands.
+These examples use the same initial write control and screen control values as
+the examples in <a href="chapter5.html">Chapter 5</a>. See "<a href="chapter5.html#S5.1">About the Examples</a>" at the beginning
+of <a href="chapter5.html">Chapter 5</a>.</p>
+<h2 id="S6.2">Circles</h2>
+<p>There are two options for drawing circles.</p>
+<ul>
+<li><p>Circle with center at current cursor position,<br/>circumference at specified position</p></li>
+<li><p>Circle with center at specified position,<br/>circumference at current position</p></li>
+</ul>
+<p>For both options, the cursor position at the end of the command is the same as
+it was at the start. Both options can use the same four types of position arguments
+that you use with position (P) and vector (V) commands.</p>
+<ul>
+<li>absolute</li>
+<li>relative</li>
+<li>absolute/relative</li>
+<li>pixel vector (PV)</li>
+</ul>
+<p>See "<a href="chapter4.html#S4.1">Set Position Arguments</a>" in <a href="chapter4.html">Chapter 4</a> for a description of these
+arguments.</p>
+<h3 id="S6.2.1">Circle with Center at Current Position</h3>
+<p>You use the following format to draw a circle with its center at the current
+position and circumference at a specified position.</p>
+<p class="example">C&lt;position&gt;</p>
+<p>where</p>
+<div class="example"><p><b>C</b> identifies a curve command.</p>
+<p><b>&lt;position&gt;</b> is a point on the circumference of the circle.</p></div>
+<p>You can define a specific point on the circumference. To specify a radius, you
+can use a PV value or a single relative position value. To pass through a specific
+point, you can use one of the following position values.</p>
+<div class="example"><table class="padded">
+<tbody>
+<tr>
+<td class="first">absolute</td>
+<td>if that point has specific [X,Y] coordinates</td>
+</tr>
+<tr>
+<td class="first">relative</td>
+<td>if that point has [X,Y] coordinates relative to the current position</td>
+</tr>
+<tr>
+<td class="first">absolute/relative</td>
+<td>if that point has one absolute coordinate and one relative coordinate</td>
+</tr>
+<tr>
+<td class="first">pixel vector</td>
+<td>to specify a radius</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="#F6-1">Figure 6-1</a> shows examples of circles drawn with their center at the current
+position. The examples use different types of position arguments.</p>
+<table id="F6-1" class="figure">
+<caption>Figure 6-1 Example of Circle with Center at Current Position</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,100]<br/>C[110,110]<br/>P[+450,100]<br/>C[+95]<br/>P[,+250]<br/>C[-75,+50]<br/>P[425,250]<br/>C[480,-80]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0710-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Only circles and final cursor would appear on screen.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S6.2.2">Circle with Center at Specified Position</h3>
+<p>You use the following format to draw circle with its center at a specified
+position and circumference at the current position.</p>
+<p class="example">C(C)&lt;position&gt;</p>
+<p>where</p>
+<div class="example"><p><b>(C)</b> identifies the option for a circle with center at the specified position.
+This option is in effect until you enter a new command.</p>
+<p><b>&lt;position&gt;</b> is the center of the circle. The current position becomes a
+point on the circumference of the circle.</p></div>
+<p>This option uses the same type of position arguments as the option for a circle
+with its center at the current position. That is, you can use absolute, relative,
+absolute/relative or PV offset values to specify the center point of the circle.
+However, the results are different.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td>current position option</td>
+<td>Always draws a circle around the current cursor position.</td>
+</tr>
+<tr>
+<td>specified position option</td>
+<td>Draws a circle using the current cursor position as a point on the circumference.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#F6-2">Figure 6-2</a> shows two circles drawn with their centers at specified positions.
+Both circles are the same size and start from the same cursor position.
+However, they are drawn in different places, because they have different relative position
+arguments.</p>
+<p><a href="#F6-3">Figure 6-3</a> shows more examples of circles drawn with their center at a specified
+position. These examples use different types of position arguments.</p>
+<p><a href="#F6-4">Figure 6-4</a> shows examples that combine circle with center at specified position
+commands with circle with center at current position commands.</p>
+<table id="F6-2" class="figure">
+<caption>Figure 6-2 Drawing Circles in Different Directions, Using the Circle with Center at Specified Position</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[400,240]<br/>C(C)[+150]<br/>C(C)[-150]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0712-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>
+Only circles and cursor would appear on screen<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-3" class="figure">
+<caption>Figure 6-3 Examples of Circles with Centers at Specified Positions</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[60,60]<br/>C(C)[+90,+40]<br/>P[200,350]<br/>C(C)[+100]<br/>P[400,200]<br/>C(C)[500,-70]<br/>P[+160,+200]<br/>C(C)[+100,-70]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0711-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>
+Only circles and final cursor would appear on screen<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-4" class="figure">
+<caption>Figure 6-4 Combining Circle Commands</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>C(C)[+50][+25]<br/>P[300,100]<br/>C[+50][+25]<br/>P[500,100]<br/>C(C)[+50]<br/>C[+25]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0403-86r.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S6.3">Arcs</h2>
+<p>Arcs are sections of a circle. There are two options for drawing arcs.</p>
+<ul>
+<li><p>Arc with center at current position, circumference at specified position</p></li>
+<li><p>Arc with center at specified position, circumference at current position</p></li>
+</ul>
+<p>Both options can use the same four types of position arguments used with circle
+options.</p>
+<ul>
+<li>absolute</li>
+<li>relative</li>
+<li>absolute/relative</li>
+<li>pixel vector (PV)</li>
+</ul>
+<p>The VT300 draws arcs in 1 degree increments. If you specify an arc in increments
+other than 1 degree, ReGIS draws to the closest degree. For example, if
+you specify an arc of 27.5 degrees, the terminal uses 28 degrees. If you specify
+an arc of 27.4 degrees, the terminal uses 27 degrees.</p>
+<h3 id="S6.3.1">Arc with Center at Current Position</h3>
+<p>You use the following format for drawing an arc with its center at the current
+cursor position and circumference at a specified position. You specify the starting
+point for the arc and the number of degrees to draw the arc. ReGIS uses
+the current cursor position as the center of the arc's circle. The cursor returns
+to this position at the end of this operation.</p>
+<p class="example">C(A&lt;degrees&gt;)&lt;position&gt;</p>
+<p>where</p>
+<div class="example"><p><b>A</b> identifies the arc option. This option stays in effect until you enter a
+new command.</p>
+<p><b>&lt;degrees&gt;</b> are the number of degrees and the direction to draw the arc
+in. You indicate the direction with a plus (+) or minus (-) sign. If you use
+a + sign or no sign, ReGIS draws the arc counterclockwise from the specified
+position. If you use a - sign, ReGIS draws the arc clockwise.</p>
+<p><b>&lt;position&gt;</b> is the starting point for the arc. You can use absolute, relative,
+absolute/relative, or PV values for the coordinates. You can specify an
+X-coordinate, Y-coordinate, or both.</p></div>
+<p><a href="#F6-5">Figure 6-5</a> shows two arcs drawn with the current position option. The figure
+shows how positive (+) and negative (-) degree values select the direction of an
+arc. <a href="#F6-6">Figure 6-6</a> shows some arcs drawn with different types of position
+arguments.</p>
+<table id="F6-5" class="figure">
+<caption>Figure 6-5 Effect of Signed Degree Value on Arc with Center at Current Position</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[200,200]<br/>C(A180)[+150]<br/>P[+400]<br/>C(A-180)[+150]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0713-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Only arcs and cursor at [600,200] would appear on the screen at end of commands.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-6" class="figure">
+<caption>Figure 6-6 Examples of Arcs with Centers at Current Positions, Using Different Types of Position Values</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[150,150]<br/>C(A-60)[50,100]<br/>P[+50,+50]<br/>C(A-270)[,+150]<br/>P[600,+100]<br/>C(A180)[700,+100]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0714-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Only arcs and cursor at [600,300] would appear on the screen at end of commands.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S6.3.2">Arc with Center at Specified Position</h3>
+<p>You can use this option to link the end of one arc to the beginning of another.</p>
+<p>This option draws an arc from the current cursor position. You specify the center
+of the arc's circle. The cursor position moves with the arc. At the end of
+the option, the cursor is at the end of the arc. You use the following format for
+drawing an arc with its center at a specified position.</p>
+<p class="example">C(A&lt;degrees&gt;C)&lt;position&gt;</p>
+<p>where</p>
+<div class="example"><p><b>A</b> identifies an arc option. This option stays in effect until you enter a new
+command.</p>
+<p><b>&lt;degrees&gt;</b> are the number of degrees and direction to draw the arc in.
+You select the direction with a plus (+) or minus (-) sign. If you use a +
+sign or no sign, ReGIS draws the arc counterclockwise from the specified
+position. If you use a - sign, ReGIS draws the arc clockwise.</p>
+<p>The second <b>C</b> identifies the arc with center at specified position option.</p>
+<p><b>&lt;position&gt;</b> is the center of the arc. You can use absolute, relative,
+absolute/relative, or PV values. You can specify an X-coordinate, Y-coordinate, or both.</p></div>
+<p>When you draw arcs that are not on a 10 degree boundary, the end of an arc
+and the cursor position may not be where you expect. There are three ways
+you can make sure of the cursor position.</p>
+<ul>
+<li>Move the cursor to an absolute position.</li>
+<li>Use the position report (<a href="chapter10.html">Chapter 10</a>).</li>
+<li>Draw a vector to where you want the cursor to stop.</li>
+</ul>
+<p>You should use these methods occasionally when you draw arcs of other than
+10 degree increments.</p>
+<p><a href="#F6-7">Figure 6-7</a> shows two arcs drawn with the specific position option. The figure
+shows how positive (+) and negative (-) degree values select the direction of an
+arc. <a href="#F6-8">Figure 6-8</a> shows some arcs drawn with different types of position values.
+The figure also shows an example of how to link arcs together.</p>
+<table id="F6-7" class="figure">
+<caption>Figure 6-7 Effect of a Signed Degree Value on an Arc with Center at Specified Position</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[350,200]<br/>C(A180C)[-150]<br/>P[+700]<br/>C(A-180C)[-150]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0715-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Only arcs and cursor at [450,200] would appear on the screen at end of commands.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-8" class="figure">
+<caption>Figure 6-8 Using Different Types of Position Values for Arcs with Centers at Specified Positions</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[50,100]<br/>C(A-60C)[150,150]<br/>(A135C)[+160,150]<br/>(A-90C)[+250,+150]</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0716-83r.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Only arcs and cursor at end of last arc would appear on the screen at end of commands.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S6.4">Curve Interpolation</h2>
+<p>You can draw a curve by specifying four or more positions on the curve. ReGIS
+draws the curve by estimating where the other positions on the curve should
+fall. This method is called <dfn>curve interpolation</dfn>.</p>
+<p>You specify the positions in one of the following sequences.</p>
+<ul>
+<li>Closed curve sequence</li>
+<li>Open curve sequence</li>
+</ul>
+<p>The closed curve sequence uses the same format as the bounded position stack
+options for position and vector commands. The open curve sequence uses the
+same format as the unbounded position stack options for position and vector
+commands. You can use a null position argument with closed and open curve
+sequences.</p>
+<h3 id="S6.4.1">How ReGIS Interpolates Curves</h3>
+<p>You may use a certain equation that draws curves, but ReGIS may or may not
+use the same equation you use. However, ReGIS does draw the curve through
+each point that you specify. You must use at least four positions to ensure that
+ReGIS draws a curve close to the equation you use. One of these positions is
+the cursor position at the start of the sequence.</p>
+<p>ReGIS draws curves according to the following guidelines.</p>
+<ul>
+<li><p>The curve passes through each point you specify.</p></li>
+<li><p>The curve has exactly the same shape, regardless if it is drawn from
+the first point to the last, or from the last to the first.</p></li>
+<li><p>The slope of the curve at a given point is parallel to a line drawn
+through two other points on each side of the given point.</p></li>
+</ul>
+<p>ReGIS uses four specified positions at a time to draw a section of the curve.
+After using the first four positions, ReGIS moves to the next position. Then
+ReGIS uses that position and the previous three positions to draw the next
+section of the curve. This action continues until ReGIS uses all the positions
+you specified.</p>
+<p>Remember that the positions you select define the curve. If you use positions
+that are too far apart, the curve on the screen may not reflect the function you
+are trying to represent.</p>
+<h3 id="S6.4.2">Closed Curve Sequence</h3>
+<p>This option lets you draw a closed curve by specifying points on the curve. At
+the end of the sequence, the cursor is at the position where it started the sequence.
+You use the following format for the closed curve sequence.</p>
+<p class="example">C(B)&lt;positions&gt;(E)</p>
+<p>where</p>
+<div class="example"><p><b>(B)</b> indicates the start of the closed curve sequence.</p>
+<p><b>&lt;positions&gt;</b> are a minimum of two positions on the curve. ReGIS uses
+these positions to interpolate the rest of the curve. You can use absolute,
+relative, absolute/relative, or PV values. You can specify an X-coordinate,
+Y-coordinate, or both.</p>
+<p><b>(E)</b> indicates the end of the closed curve sequence.</p></div>
+<p>Closed curve sequences use a format similar to the bounded position stack options
+for position and vector commands. However, you can only use one pair of
+(B) and end (E) options in closed curve sequences. You can use 16 pairs of (B)
+and (E) options in bounded position stacks for position and vector commands.</p>
+<p>When you use relative values (including PV values), the value is relative to the
+last specified cursor position. For example, the first specified value is relative
+to the cursor position at the start of the sequence; the second specified value is
+relative to the first specified value, and so on.</p>
+<p>You can use a [] null position argument to repeat the previous cursor position.
+Remember that the null position is the same as the [+0,+0] position. There
+are two reasons to use the [] null position argument in a closed curve sequence.</p>
+<ul>
+<li><p><strong>Close the curve with a smoother line.</strong><br/>
+You include the [] argument at the start and end of the sequence. ReGIS repeats the cursor
+position at the start of the sequence, and the last position you specified.</p></li>
+<li><p><strong>Create a sharper change in the interpolated curve form.</strong><br/>
+You use the [] argument during the sequence. ReGIS repeats the position specified before
+the [] argument.</p></li>
+</ul>
+<p><a href="#F6-9">Figure 6-9</a> shows a closed curve drawn with a null position argument at the
+start and end of the sequence. <a href="#F6-10">Figure 6-10</a> shows a closed curve drawn without
+the [] argument.</p>
+<table id="F6-9" class="figure">
+<caption>Figure 6-9 Closed Curve Sequence with Null Position Argument</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>C(B)<br/>[]<br/>[75,125]<br/>[150,200]<br/>[225,125]<br/>[300,200]<br/>[375,125]<br/>[450,200]<br/>[525,125]<br/>[]<br/>(E)</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0718-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-10" class="figure">
+<caption>Figure 6-10 Closed Curve Sequence Without Null Position Argument</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[230,240]<br/>C(B)<br/>[320,160]<br/>[480,120]<br/>[570,160]<br/>[480,240]<br/>[320,280]<br/>(E)</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0717-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S6.4.3">Open Curve Sequence</h3>
+<p>This option lets you draw an open curve by specifying points on the curve. At
+the end of the sequence, the cursor is at the last position you specified. You
+use the following format for the open curve sequence.</p>
+<p class="example">C(S)&lt;positions&gt;(E)</p>
+<p>where</p>
+<div class="example"><p><b>(S)</b> indicates the start of an open curve sequence.</p>
+<p><b>&lt;positions&gt;</b> are a minimum of three positions on the curve. ReGIS uses
+these positions to interpolate the rest of the curve. You can use absolute,
+relative, absolute/relative, or PV values. You can specify an X-coordinate,
+Y-coordinate, or both.</p>
+<p><b>(E)</b> indicates the end of the open curve sequence.</p></div>
+<p>Open curve sequences use a format similar to the unbounded position stack
+options for position and vector commands. However, you can only use one pair
+of (S) and (E) options in open curve sequences. You can use 16 pairs of (S)
+and (E) options in unbounded position stacks for position and vector
+commands.</p>
+<p>You can use a [] null position argument to repeat the previous cursor position.
+There are two reasons to use the [] null position argument in an open curve
+sequence.</p>
+<ul>
+<li><p><strong>To draw the curve completely to both ends.</strong><br/>
+You use the [] argument at the beginning and end of the sequence.
+This causes ReGIS to draw the curve through two more positions.</p>
+<ul>
+<li>the cursor position before the (S) option</li>
+<li>the last position you specified</li>
+</ul>
+<p>Without the [] argument, ReGIS only draws the curve from the first
+specified position to the next-to-last position. The [] argument duplicates
+the first and last positions, extending the drawing of the curve
+through those positions. The last two and first two positions control
+the direction of the curve, but ReGIS does not connect them.</p></li>
+<li><p><strong>Create a sharper change in the interpolated curve form.</strong><br/>
+You use the [] argument during the sequence. ReGIS repeats the position specified
+before the [] argument.</p></li>
+</ul>
+<p><a href="#F6-11">Figure 6-11</a> shows an open curve drawn without null position arguments.
+<a href="#F6-12">Figure 6-12</a> shows the same curve drawn with null position arguments at the
+beginning and end of the sequence.</p>
+<table id="F6-11" class="figure">
+<caption>Figure 6-11 Open Curve Sequence Without Null Position Arguments</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[75,125]<br/>C(S)<br/>[150,200]<br/>[225,125]<br/>[300,200]<br/>[375,125]<br/>[450,200]<br/>[525,125]<br/>(E)</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0719-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<table id="F6-12" class="figure">
+<caption>Figure 6-12 Open Curve Sequence With Null Position Arguments</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[75,125]<br/>C(S)<br/>[]<br/>[150,200]<br/>[225,125]<br/>[300,200]<br/>[375,125]<br/>[450,200]<br/>[525,125]<br/>[]<br/>(E)</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0720-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S6.5">Temporary Write Control</h2>
+<p>The write control options in <a href="chapter3.html">Chapter 3</a> control the appearance of the images
+you draw. For example, these options control the shade/color of images. When
+you use curve commands, ReGIS uses the current settings for the write control
+options.</p>
+<p>You can use a temporary write control option to temporarily change one or
+more of these settings for a curve command. The temporary values remain in
+effect until you use one of the following commands.</p>
+<ul>
+<li><p>another temporary write control option</p></li>
+<li><p>any command that begins with a command key letter, such as a vector (V) command
+or another curve (C) command</p></li>
+</ul>
+<p>When you use one of the above commands, the writing control options return
+to their previous values.</p>
+<p>You include the temporary write control option in your curve command. You
+can use any write control option from <a href="chapter3.html">Chapter 3</a>.</p>
+<ul>
+<li>PV multiplication</li>
+<li>Pattern control</li>
+<li>Foreground intensity</li>
+<li>Plane select control</li>
+<li>Overlay writing</li>
+<li>Replace writing</li>
+<li>Complement writing</li>
+<li>Erase writing</li>
+<li>Negative pattern control</li>
+</ul>
+<p class="note">NOTE: The W option is not recommended for drawing curves. The results are
+unpredictable.</p>
+<p>You use the following format for a temporary write control option.</p>
+<p class="example">C(W(&lt;suboptions&gt;))&lt;arguments&gt;</p>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a temporary write control option.</p>
+<p><b>&lt;suboptions&gt;</b> are the temporary write control values to use.</p>
+<p><b>&lt;arguments&gt;</b> are the curve command arguments that will use the temporary
+write control values.</p></div>
+<p><a href="#F6-13">Figure 6-13</a> shows a simple graph that uses temporary write control options to
+change the pattern of open curve sequences. For more complex examples, see
+"<a href="chapter3.html#S3.7">Shading Control</a>" in <a href="chapter3.html">Chapter 3</a>.</p>
+<table id="F6-13" class="figure">
+<caption>Figure 6-13 Example of Temporary Write Control</caption>
+<tbody>
+<tr>
+<td><img src="ma-0721-83.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>V[,+300]<br/>[+400]<br/>P[100,-80]<br/>C(W(P2))<br/>(S)<br/>[]<br/>
+[+100,-30]<br/>[+100,-50]<br/>[+100,-30]<br/>[+100,-20]<br/>[]<br/>(E)<br/>P[100,300]<br/>
+C(W(P4))<br/>(S)<br/>[]<br/>[+100]<br/>[+100,-40]<br/>[+100,-20]<br/>[+100,-40][]<br/>(E)</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S6.6">Curve Command Summary</h2>
+<p><a href="#T6-1">Table 6-1</a> is a summary of <b>C</b> command options, including any default values.</p>
+<table id="T6-1" class="majortable">
+<caption>Table 6-1 Curve Command Summary</caption>
+<thead>
+<tr>
+<th>Option*</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[X,Y]</td>
+<td>None</td>
+<td><p><strong>Circle with center at current position</strong><br/>
+[X,Y] defines a point on the circumference of the circle.</p></td>
+</tr>
+<tr>
+<td>(C)[X,Y]</td>
+<td>None</td>
+<td><p><strong>Circle with center at specified position</strong><br/>
+[X,Y] defines the center of the circle. The current active position defines a
+point on the circumference.</p></td>
+</tr>
+<tr>
+<td>(A&lt;degrees&gt;)[X,Y]</td>
+<td>360</td>
+<td><p><strong>Arc with center at current position</strong><br/>
+[X,Y] defines the starting point for an arc.</p>
+<p>&lt;degrees&gt; is a signed value the determines the size and direction of arc.</p>
+<p>+ = counterclockwise<br/>- = clockwise</p></td>
+</tr>
+<tr>
+<td>(A&lt;degrees&gt;C)[X,Y]</td>
+<td>360</td>
+<td><p><strong>Arc with center at specified position</strong><br/>
+[X,Y] defines the arc's center. The starting point for the arc is the current active position.</p>
+<p>&lt;degrees&gt; is a signed value the determines the size and direction of arc.</p>
+<p>+ = counterclockwise<br/>- = clockwise</p></td>
+</tr>
+<tr>
+<td>(B)&lt;positions&gt;(E)</td>
+<td>None</td>
+<td><p><strong>Closed curve sequence</strong><br/>
+Defines a closed curve based on [X,Y] positions specified in the sequence.</p></td>
+</tr>
+<tr>
+<td>(S)&lt;positions&gt;(E)</td>
+<td>None</td>
+<td><p><strong>Open curve sequence</strong><br/>
+Defines an open curve based on [X,Y] positions specified in the sequence.</p></td>
+</tr>
+<tr>
+<td>(W(&lt;suboptions&gt;))</td>
+<td>None</td>
+<td><p><strong>Temporary write control</strong><br/>
+Lets you use temporary write control values with one curve command. Temporary values only
+remain in effect for the selected command, but that command can include several curves.</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">* All [X,Y] coordinates can be absolute, relative, or absolute/relative values.</td>
+</tr>
+</tfoot>
+</table>
+<footer>
+<nav class="sections"><a href="chapter5.html">Chapter 5</a><a href="contents.html">Contents</a><a href="chapter7.html">Chapter 7</a></nav>
+</footer>
+</body>
+</html>

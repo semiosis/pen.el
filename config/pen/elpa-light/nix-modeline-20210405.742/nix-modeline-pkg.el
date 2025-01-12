@@ -1,0 +1,2 @@
+;;; Generated package description from nix-modeline.el  -*- no-byte-compile: t -*-
+(define-package "nix-modeline" "20210405.742" "Info about in-progress Nix evaluations on your modeline" '((emacs "25.1")) :commit "ecda866b960321bb82deac26af45918e172ef0ba" :authors '(("Jordan Mulcahey" . "snhjordy@gmail.com")) :maintainer '("Jordan Mulcahey" . "snhjordy@gmail.com") :keywords '("processes" "unix" "tools") :url "https://github.com/ocelot-project/nix-modeline")

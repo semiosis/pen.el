@@ -1,0 +1,8 @@
+project('`ptemplate-var-pname`', '`ptemplate-var-language`', default_options : [])
+
+deps = []
+
+src = ['`ptemplate-var-main-file`']
+incdirs = include_directories('include')
+
+executable('`ptemplate-var-pname`', src, include_directories : incdirs, dependencies : deps)

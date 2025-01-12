@@ -1,0 +1,2 @@
+;;; Generated package description from request-deferred.el  -*- no-byte-compile: t -*-
+(define-package "request-deferred" "20210214.37" "Wrap request.el by deferred" '((emacs "24.1") (deferred "0.3.1") (request "0.3")) :commit "3336eaa97de923f74b90dda3e35985e122d40805" :authors '(("Takafumi Arakaki <aka.tkf at gmail.com>")) :maintainer '("Takafumi Arakaki <aka.tkf at gmail.com>") :url "https://github.com/tkf/emacs-request")

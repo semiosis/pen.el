@@ -1,0 +1,2 @@
+;; Generated package description from listen.el  -*- no-byte-compile: t -*-
+(define-package "listen" "0.9" "Audio/Music player" '((emacs "29.1") (persist "0.6") (taxy "0.10") (taxy-magit-section "0.13") (transient "0.5.3")) :commit "61c511541af474027c012de7063ddfdb3f8cc780" :authors '(("Adam Porter" . "adam@alphapapa.net")) :maintainer '("Adam Porter" . "adam@alphapapa.net") :keywords '("multimedia") :url "https://github.com/alphapapa/listen.el")

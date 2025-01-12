@@ -1,0 +1,596 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 06 Jan 2025 08:54:26 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-Discourse-Route: topics/show
+Last-Modified: Sun, 26 Mar 2017 07:31:45 GMT
+Vary: Accept
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Cache-Control: no-cache, no-store
+Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-ArB36EfIgIjXjBwIQq2mZC6QY' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'
+X-Discourse-Cached: skip
+X-Request-Id: 2dd37dc3-8d35-4121-a490-6354b2315416
+X-Runtime: 0.072471
+X-Discourse-TrackView: 1
+Strict-Transport-Security: max-age=31536000
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SDL 1.2.15 compile errors - SDL Development - Simple Directmedia Layer</title>
+    <meta name="description" content="I’m getting errors when compiling SDL 1.2.15.  Exact error message: 
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11sym.h:168:17: 
+error: conflicting types for ???_XData32??? 
+SDL_X&amp;hellip;">
+    <meta name="generator" content="Discourse 3.4.0.beta4-dev - https://github.com/discourse/discourse version 8be29694ecb8ecb93028ab4869d0f9d8834eb47e">
+<link rel="icon" type="image/png" href="https://discourse.libsdl.org/uploads/default/optimized/2X/f/f3de005f87c237bee0d4311684498fd0c0867796_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://discourse.libsdl.org/uploads/default/optimized/2X/9/92ba0e722fe74960a3fe1503d37d7292b938c2ef_2_180x180.png">
+<meta name="theme-color" media="all" content="#ffffff">
+
+<meta name="color-scheme" content="light">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575" />
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://discourse.libsdl.org/opensearch.xml" title="Simple Directmedia Layer Search">
+
+    <link href="/stylesheets/color_definitions_simple-light_1_1_fec7c728e743d2bdeb25c612abaa5eb4c32fa415.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" class="light-scheme"/>
+
+  <link href="/stylesheets/desktop_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="desktop"  />
+
+
+
+  <link href="/stylesheets/checklist_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="checklist"  />
+  <link href="/stylesheets/discourse-details_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="discourse-details"  />
+  <link href="/stylesheets/discourse-lazy-videos_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="discourse-lazy-videos"  />
+  <link href="/stylesheets/discourse-local-dates_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+  <link href="/stylesheets/discourse-narrative-bot_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+  <link href="/stylesheets/discourse-presence_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="discourse-presence"  />
+  <link href="/stylesheets/docker_manager_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="docker_manager"  />
+  <link href="/stylesheets/footnote_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="footnote"  />
+  <link href="/stylesheets/poll_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="poll"  />
+  <link href="/stylesheets/spoiler-alert_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="spoiler-alert"  />
+  <link href="/stylesheets/poll_desktop_b058fa3b0722ed25de65b0562d5e3a43471fd9b4.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="/stylesheets/desktop_theme_1_de236be72ad5adab489ccc0b1136b7acc839efa3.css?__ws=discourse.libsdl.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="1" data-theme-name="default"/>
+
+    
+    
+        <link rel="alternate nofollow" type="application/rss+xml" title="RSS feed of &#39;SDL 1.2.15 compile errors&#39;" href="https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575.rss" />
+    <meta property="og:site_name" content="Simple Directmedia Layer" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discourse.libsdl.org/uploads/default/original/2X/7/7502c3c39c33c4309023972bdc0c0961f7ad78c4.png" />
+<meta property="og:image" content="https://discourse.libsdl.org/uploads/default/original/2X/7/7502c3c39c33c4309023972bdc0c0961f7ad78c4.png" />
+<meta property="og:url" content="https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575" />
+<meta name="twitter:url" content="https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575" />
+<meta property="og:title" content="SDL 1.2.15 compile errors" />
+<meta name="twitter:title" content="SDL 1.2.15 compile errors" />
+<meta property="og:description" content="I’m getting errors when compiling SDL 1.2.15.  Exact error message:  /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11sym.h:168:17:  error: conflicting types for ???_XData32???  SDL_X11_SYM(int,_XData32,(Display *dpy,register long *data,unsigned  len),(dpy,data,len),return)  ^  /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:95:5:  note: in definition of macro ???SDL_X11_SYM???  rc fn params { ret p##fn args ; }  ^  ..." />
+<meta name="twitter:description" content="I’m getting errors when compiling SDL 1.2.15.  Exact error message:  /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11sym.h:168:17:  error: conflicting types for ???_XData32???  SDL_X11_SYM(int,_XData32,(Display *dpy,register long *data,unsigned  len),(dpy,data,len),return)  ^  /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:95:5:  note: in definition of macro ???SDL_X11_SYM???  rc fn params { ret p##fn args ; }  ^  ..." />
+<meta property="og:article:section" content="SDL Development" />
+<meta property="og:article:section:color" content="25AAE2" />
+<meta property="article:published_time" content="2014-04-03T07:47:09+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler ">
+    
+    <header>
+  <a href="/">
+    Simple Directmedia Layer
+  </a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+        <div id="topic-title">
+    <h1>
+      <a href="/t/sdl-1-2-15-compile-errors/20575">SDL 1.2.15 compile errors</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/c/sdl-development/6" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #25AAE2'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>SDL Development</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+    <div itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+      <meta itemprop='headline' content='SDL 1.2.15 compile errors'>
+      <link itemprop='url' href='https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575'>
+      <meta itemprop='datePublished' content='2014-04-03T07:47:09Z'>
+        <meta itemprop='articleSection' content='SDL Development'>
+      <meta itemprop='keywords' content=''>
+      <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop='name' content='Simple Directmedia Layer'>
+          <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+            <meta itemprop='url' content='https://discourse.libsdl.org/uploads/default/original/2X/9/92ba0e722fe74960a3fe1503d37d7292b938c2ef.png'>
+          </div>
+      </div>
+
+
+          <div id='post_1'  class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a itemprop="url" href='https://discourse.libsdl.org/u/Rainer_Deyke'><span itemprop='name'>Rainer_Deyke</span></a>
+                
+              </span>
+
+                <link itemprop="mainEntityOfPage" href="https://discourse.libsdl.org/t/sdl-1-2-15-compile-errors/20575">
+
+
+              <span class="crawler-post-infos">
+                  <time  datetime='2014-04-03T07:47:09Z' class='post-time'>
+                    April 3, 2014,  7:47am
+                  </time>
+                  <meta itemprop='dateModified' content='2014-04-03T07:47:09Z'>
+              <span itemprop='position'>1</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>I’m getting errors when compiling SDL 1.2.15.  Exact error message:<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11sym.h:168:17:<br>
+error: conflicting types for ???_XData32???<br>
+SDL_X11_SYM(int,_XData32,(Display *dpy,register long *data,unsigned<br>
+len),(dpy,data,len),return)<br>
+^<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:95:5:<br>
+note: in definition of macro ???SDL_X11_SYM???<br>
+rc fn params { ret p#<span class="hashtag-raw">#fn</span> args ; }<br>
+^<br>
+In file included from<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.h:34:0,<br>
+from<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:26:<br>
+/usr/include/X11/Xlibint.h:568:12: note: previous declaration of<br>
+???_XData32??? was here<br>
+extern int _XData32(<br>
+^</p>
+<p>This is on 64 bit Linux Mint 16.  SDL2 compiles fine.  Complete build<br>
+log attached.–<br>
+Rainer Deyke (rainerd at <a href="http://eldwood.com" rel="noopener nofollow ugc">eldwood.com</a>)<br>
+-------------- next part --------------</p>
+<blockquote>
+<p>PATH=$PATH:/home/rainer/projects/starfire/intermediate/installed/rainer6_gcc_x86_64-linux-gnu_SDL1/bin PKG_CONFIG_PATH=/home/rainer/projects/starfire/intermediate/installed/rainer6_gcc_x86_64-linux-gnu_SDL1/lib/pkgconfig LDFLAGS=-L/home/rainer/projects/starfire/intermediate/installed/rainer6_gcc_x86_64-linux-gnu_SDL1/lib /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/configure --prefix /home/rainer/projects/starfire/intermediate/installed/rainer6_gcc_x86_64-linux-gnu_SDL1 --disable-http --enable-static --disable-shared --without-openssl --without-zlib --without-png --without-harfbuzz<br>
+checking build system type… x86_64-unknown-linux-gnu<br>
+checking host system type… x86_64-unknown-linux-gnu<br>
+checking for gcc… gcc<br>
+checking for C compiler default output file name… a.out<br>
+checking whether the C compiler works… yes<br>
+checking whether we are cross compiling… no<br>
+checking for suffix of executables…<br>
+checking for suffix of object files… o<br>
+checking whether we are using the GNU C compiler… yes<br>
+checking whether gcc accepts -g… yes<br>
+checking for gcc option to accept ISO C89… none needed<br>
+checking for a sed that does not truncate output… /bin/sed<br>
+checking for grep that handles long lines and -e… /bin/grep<br>
+checking for egrep… /bin/grep -E<br>
+checking for fgrep… /bin/grep -F<br>
+checking for ld used by gcc… /usr/bin/ld<br>
+checking if the linker (/usr/bin/ld) is GNU ld… yes<br>
+checking for BSD- or MS-compatible name lister (nm)… /usr/bin/nm -B<br>
+checking the name lister (/usr/bin/nm -B) interface… BSD nm<br>
+checking whether ln -s works… yes<br>
+checking the maximum length of command line arguments… 1572864<br>
+checking whether the shell understands some XSI constructs… yes<br>
+checking whether the shell understands “+=”… yes<br>
+checking for /usr/bin/ld option to reload object files… -r<br>
+checking for objdump… objdump<br>
+checking how to recognize dependent libraries… pass_all<br>
+checking for ar… ar<br>
+checking for strip… strip<br>
+checking for ranlib… ranlib<br>
+checking command to parse /usr/bin/nm -B output from gcc object… ok<br>
+checking how to run the C preprocessor… gcc -E<br>
+checking for ANSI C header files… yes<br>
+checking for sys/types.h… yes<br>
+checking for sys/stat.h… yes<br>
+checking for stdlib.h… yes<br>
+checking for string.h… yes<br>
+checking for memory.h… yes<br>
+checking for strings.h… yes<br>
+checking for inttypes.h… yes<br>
+checking for stdint.h… yes<br>
+checking for unistd.h… yes<br>
+checking for dlfcn.h… yes<br>
+checking for objdir… .libs<br>
+checking if gcc supports -fno-rtti -fno-exceptions… no<br>
+checking for gcc option to produce PIC… -fPIC -DPIC<br>
+checking if gcc PIC flag -fPIC -DPIC works… yes<br>
+checking if gcc static flag -static works… yes<br>
+checking if gcc supports -c -o file.o… yes<br>
+checking if gcc supports -c -o file.o… (cached) yes<br>
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries… yes<br>
+checking dynamic linker characteristics… GNU/Linux ld.so<br>
+checking how to hardcode library paths into programs… immediate<br>
+checking whether stripping libraries is possible… yes<br>
+checking if libtool supports shared libraries… yes<br>
+checking whether to build shared libraries… no<br>
+checking whether to build static libraries… yes<br>
+checking whether byte ordering is bigendian… no<br>
+checking for gcc… (cached) gcc<br>
+checking whether we are using the GNU C compiler… (cached) yes<br>
+checking whether gcc accepts -g… (cached) yes<br>
+checking for gcc option to accept ISO C89… (cached) none needed<br>
+checking for g++… g++<br>
+checking whether we are using the GNU C++ compiler… yes<br>
+checking whether g++ accepts -g… yes<br>
+checking whether we are using the GNU C++ compiler… (cached) yes<br>
+checking whether g++ accepts -g… (cached) yes<br>
+checking how to run the C++ preprocessor… g++ -E<br>
+checking for ld used by g++… /usr/bin/ld -m elf_x86_64<br>
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld… yes<br>
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries… yes<br>
+checking for g++ option to produce PIC… -fPIC -DPIC<br>
+checking if g++ PIC flag -fPIC -DPIC works… yes<br>
+checking if g++ static flag -static works… yes<br>
+checking if g++ supports -c -o file.o… yes<br>
+checking if g++ supports -c -o file.o… (cached) yes<br>
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries… yes<br>
+checking dynamic linker characteristics… GNU/Linux ld.so<br>
+checking how to hardcode library paths into programs… immediate<br>
+checking for a BSD-compatible install… /usr/bin/install -c<br>
+checking whether make sets $(MAKE)… yes<br>
+checking for windres… no<br>
+checking for an ANSI C-conforming const… yes<br>
+checking for inline… inline<br>
+checking for working volatile… yes<br>
+checking for ANSI C header files… (cached) yes<br>
+checking for sys/types.h… (cached) yes<br>
+checking stdio.h usability… yes<br>
+checking stdio.h presence… yes<br>
+checking for stdio.h… yes<br>
+checking for stdlib.h… (cached) yes<br>
+checking stddef.h usability… yes<br>
+checking stddef.h presence… yes<br>
+checking for stddef.h… yes<br>
+checking stdarg.h usability… yes<br>
+checking stdarg.h presence… yes<br>
+checking for stdarg.h… yes<br>
+checking malloc.h usability… yes<br>
+checking malloc.h presence… yes<br>
+checking for malloc.h… yes<br>
+checking for memory.h… (cached) yes<br>
+checking for string.h… (cached) yes<br>
+checking for strings.h… (cached) yes<br>
+checking for inttypes.h… (cached) yes<br>
+checking for stdint.h… (cached) yes<br>
+checking ctype.h usability… yes<br>
+checking ctype.h presence… yes<br>
+checking for ctype.h… yes<br>
+checking math.h usability… yes<br>
+checking math.h presence… yes<br>
+checking for math.h… yes<br>
+checking iconv.h usability… yes<br>
+checking iconv.h presence… yes<br>
+checking for iconv.h… yes<br>
+checking signal.h usability… yes<br>
+checking signal.h presence… yes<br>
+checking for signal.h… yes<br>
+checking for size_t… yes<br>
+checking for int64_t… yes<br>
+checking for working alloca.h… yes<br>
+checking for alloca… yes<br>
+checking for working memcmp… yes<br>
+checking for working strtod… yes<br>
+checking for mprotect… yes<br>
+checking for malloc… yes<br>
+checking for calloc… yes<br>
+checking for realloc… yes<br>
+checking for free… yes<br>
+checking for getenv… yes<br>
+checking for putenv… yes<br>
+checking for unsetenv… yes<br>
+checking for qsort… yes<br>
+checking for abs… yes<br>
+checking for bcopy… yes<br>
+checking for memset… yes<br>
+checking for memcpy… yes<br>
+checking for memmove… yes<br>
+checking for strlen… yes<br>
+checking for strlcpy… no<br>
+checking for strlcat… no<br>
+checking for strdup… yes<br>
+checking for _strrev… no<br>
+checking for _strupr… no<br>
+checking for _strlwr… no<br>
+checking for strchr… yes<br>
+checking for strrchr… yes<br>
+checking for strstr… yes<br>
+checking for itoa… no<br>
+checking for _ltoa… no<br>
+checking for _uitoa… no<br>
+checking for _ultoa… no<br>
+checking for strtol… yes<br>
+checking for strtoul… yes<br>
+checking for _i64toa… no<br>
+checking for _ui64toa… no<br>
+checking for strtoll… yes<br>
+checking for strtoull… yes<br>
+checking for atoi… yes<br>
+checking for atof… yes<br>
+checking for strcmp… yes<br>
+checking for strncmp… yes<br>
+checking for _stricmp… no<br>
+checking for strcasecmp… yes<br>
+checking for _strnicmp… no<br>
+checking for strncasecmp… yes<br>
+checking for sscanf… yes<br>
+checking for snprintf… yes<br>
+checking for vsnprintf… yes<br>
+checking for iconv… yes<br>
+checking for sigaction… yes<br>
+checking for setjmp… yes<br>
+checking for nanosleep… yes<br>
+checking for libiconv_open in -liconv… no<br>
+checking for pow in -lm… yes<br>
+checking for struct sigaction.sa_sigaction… yes<br>
+checking for GCC -fvisibility=hidden option… yes<br>
+checking for dlopen… yes<br>
+checking for dlopen in -lc… no<br>
+checking for dlopen in -ldl… yes<br>
+checking for Altivec with GCC altivec.h and -maltivec option… no<br>
+checking for Altivec with GCC -maltivec option… no<br>
+checking for Altivec with GCC altivec.h and -faltivec option… no<br>
+checking for Altivec with GCC -faltivec option… no<br>
+checking for OSS audio support… yes<br>
+checking for dmedia audio support… no<br>
+checking for ALSA CFLAGS…<br>
+checking for ALSA LDFLAGS…  -lasound -lm -ldl -lpthread<br>
+checking for libasound headers version &gt;= 0.9.0… found.<br>
+checking for snd_ctl_open in -lasound… yes<br>
+– dynamic libasound → libasound.so.2<br>
+checking for artsc-config… no<br>
+checking for esd-config… /usr/bin/esd-config<br>
+checking for ESD - version &gt;= 0.2.8… yes<br>
+– dynamic libesd → libesd.so.0<br>
+checking for pkg-config… /usr/bin/pkg-config<br>
+checking for PulseAudio 0.9 support… yes<br>
+– dynamic libpulse-simple → libpulse-simple.so.0<br>
+checking audio/audiolib.h usability… yes<br>
+checking audio/audiolib.h presence… yes<br>
+checking for audio/audiolib.h… yes<br>
+checking for AuOpenServer in -laudio… yes<br>
+checking for NAS audio support… yes<br>
+– dynamic libaudio → libaudio.so.2<br>
+checking for X… libraries , headers<br>
+checking for gethostbyname… yes<br>
+checking for connect… yes<br>
+checking for remove… yes<br>
+checking for shmat… yes<br>
+checking for IceConnectionNumber in -lICE… yes<br>
+– dynamic libX11 → libX11.so.6<br>
+– dynamic libX11ext → libXext.so.6<br>
+checking for X11/extensions/Xrandr.h… yes<br>
+– dynamic libXrender → libXrender.so.1<br>
+– dynamic libXrandr → libXrandr.so.2<br>
+checking for framebuffer console support… yes<br>
+checking for getpagesize… yes<br>
+checking for directfb-config… no<br>
+checking for pkg-config… (cached) /usr/bin/pkg-config<br>
+checking for DirectFB 0.9.15 support… no<br>
+checking for PlayStation 2 GS support… no<br>
+checking for PlayStation 3 Cell support… no<br>
+checking for SVGAlib (1.4.0+) support… no<br>
+checking for libVGL support… no<br>
+checking for wscons support… no<br>
+checking for OpenGL (GLX) support… yes<br>
+checking for Linux 2.4 unified input interface… yes<br>
+checking for Touchscreen library support… no<br>
+checking for hid_init in -lusbhid… no<br>
+checking usb.h usability… no<br>
+checking usb.h presence… no<br>
+checking for usb.h… no<br>
+checking libusb.h usability… no<br>
+checking libusb.h presence… no<br>
+checking for libusb.h… no<br>
+checking for hid_init in -lusb… no<br>
+checking for usbhid… no<br>
+checking for pthreads… yes<br>
+checking for recursive mutexes… yes<br>
+checking for pthread semaphores… yes<br>
+checking for sem_timedwait… yes<br>
+checking linux/version.h usability… yes<br>
+checking linux/version.h presence… yes<br>
+checking for linux/version.h… yes<br>
+checking for GCC -Wall option… yes<br>
+checking for necessary GCC -Wno-multichar option… no<br>
+configure: creating ./config.status<br>
+config.status: creating Makefile<br>
+config.status: creating sdl-config<br>
+config.status: creating SDL.spec<br>
+config.status: creating SDL.qpg<br>
+config.status: creating sdl.pc<br>
+config.status: creating include/SDL_config.h<br>
+config.status: include/SDL_config.h is unchanged<br>
+config.status: executing libtool commands<br>
+config.status: executing default commands<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/SDL.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/SDL_error.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/SDL_fatal.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_audio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_audiocvt.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_audiodev.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_mixer.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_mixer_MMX.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_mixer_MMX_VC.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_mixer_m68k.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/SDL_wave.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/cdrom/SDL_cdrom.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/cpuinfo/SDL_cpuinfo.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_active.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_events.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_expose.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_keyboard.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_mouse.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_quit.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/events/SDL_resize.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/file/SDL_rwops.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_getenv.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_iconv.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_malloc.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_qsort.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_stdlib.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/stdlib/SDL_string.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/thread/SDL_thread.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/timer/SDL_timer.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_RLEaccel.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_blit.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_blit_0.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_blit_1.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_blit_A.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_blit_N.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_bmp.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_cursor.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_gamma.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_pixels.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_stretch.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_surface.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_video.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_yuv.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_yuv_mmx.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/SDL_yuv_sw.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/joystick/SDL_joystick.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dummy/SDL_nullevents.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dummy/SDL_nullmouse.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dummy/SDL_nullvideo.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/disk/SDL_diskaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/dummy/SDL_dummyaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/loadso/dlopen/SDL_sysloadso.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/dsp/SDL_dspaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/dma/SDL_dmaaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/alsa/SDL_alsa_audio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/esd/SDL_esdaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/pulse/SDL_pulseaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/audio/nas/SDL_nasaudio.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dga.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11events.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11gamma.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11gl.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11image.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11modes.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11mouse.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11video.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11wm.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11yuv.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/Xxf86dga/XF86DGA.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/Xxf86dga/XF86DGA2.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dga/SDL_dgaevents.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dga/SDL_dgamouse.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/dga/SDL_dgavideo.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/Xxf86vm/XF86VMode.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/Xv/Xv.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/Xinerama/Xinerama.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/Xext/XME/xme.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fb3dfx.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbelo.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbevents.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbmatrox.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbmouse.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbriva.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/fbcon/SDL_fbvideo.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/thread/pthread/SDL_systhread.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/thread/pthread/SDL_syssem.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/thread/pthread/SDL_sysmutex.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/thread/pthread/SDL_syscond.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/joystick/linux/SDL_sysjoystick.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/cdrom/linux/SDL_syscdrom.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/timer/unix/SDL_systimer.c<br>
+Generating dependencies for /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/main/dummy/SDL_dummy_main.c</p>
+</blockquote>
+<blockquote>
+<p>PATH=$PATH:/home/rainer/projects/starfire/intermediate/installed/rainer6_gcc_x86_64-linux-gnu_SDL1/bin  make<br>
+/bin/bash ./libtool --mode=compile gcc -g -O2  -Iinclude -I/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/include -D_GNU_SOURCE=1 -fvisibility=hidden    -D_REENTRANT     -DXTHREADS -D_REENTRANT -DHAVE_LINUX_VERSION_H -Wall -c /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c  -o build/SDL_x11dyn.lo<br>
+libtool: compile:  gcc -g -O2 -Iinclude -I/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/include -D_GNU_SOURCE=1 -fvisibility=hidden -D_REENTRANT -DXTHREADS -D_REENTRANT -DHAVE_LINUX_VERSION_H -Wall -c /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c -o build/SDL_x11dyn.o<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11sym.h:168:17: error: conflicting types for ?_XData32?<br>
+SDL_X11_SYM(int,_XData32,(Display *dpy,register long *data,unsigned len),(dpy,data,len),return)<br>
+^<br>
+/home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:95:5: note: in definition of macro ?SDL_X11_SYM?<br>
+rc fn params { ret p#<span class="hashtag-raw">#fn</span> args ; }<br>
+^<br>
+In file included from /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.h:34:0,<br>
+from /home/rainer/projects/starfire/intermediate/libs/SDL1/SDL-1.2.15/src/video/x11/SDL_x11dyn.c:26:<br>
+/usr/include/X11/Xlibint.h:568:12: note: previous declaration of ?_XData32? was here<br>
+extern int _XData32(<br>
+^<br>
+make: *** [build/SDL_x11dyn.lo] Error 1</p>
+</blockquote>
+<p>Build failed.</p>
+            </div>
+
+            <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+              <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+              <meta itemprop="userInteractionCount" content="0" />
+              <span class='post-likes'></span>
+            </div>
+
+          </div>
+    </div>
+
+
+    
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/' itemprop="url">Home </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/categories' itemprop="url">Categories </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/guidelines' itemprop="url">Guidelines </a>
+        </span>
+      </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>

@@ -30,24 +30,26 @@
   (cond (off (progn
                (magit-margin-off)
                (universal-sidecar-off)
-               (tab-bar-mode -1)
+               ;; (tab-bar-mode -1)
                ))
         (on (progn
               (magit-margin-on)
               (universal-sidecar-on)
-              (tab-bar-mode 1)
+              ;; (tab-bar-mode 1)
+              ;; (tab-bar-mode t)
               ))
         (t
          (if (universal-sidecar-visible-p)
              (progn
                (magit-margin-off)
                (universal-sidecar-off)
-               (tab-bar-mode -1)
+               ;; (tab-bar-mode -1)
                )
            (progn
              (magit-margin-on)
              (universal-sidecar-on)
-             (tab-bar-mode 1))))))
+             ;; (tab-bar-mode 1)
+             )))))
 
 (defun toggle-chrome ()
   (interactive)

@@ -1,0 +1,1327 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:25:15 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Thu, 26 Oct 2023 10:36:28 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:25:15 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 13570
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 7</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter6.html">Chapter 6</a><a href="contents.html">Contents</a><a href="chapter8.html">Chapter 8</a></nav>
+</header>
+<h1 id="S7"><span class="chapnum">7</span> Text Command</h1>
+<p>ReGIS text commands let you draw characters in different sizes, positions, and
+orientations. You can use characters from the terminal's built-in character sets,
+or you can design and load your own set (<a href="chapter8.html">Chapter 8</a>).</p>
+<p>Text commands start with the letter T. There are 10 options and arguments
+for text commands. You can use text strings with many of these options.</p>
+<ul class="col2 bare">
+<li>Character set</li>
+<li>Character spacing</li>
+<li>Size options</li>
+<li>Height multiplier</li>
+<li>Size multiplier</li>
+<li>String tilt</li>
+<li>Italics</li>
+<li>Temporary text control</li>
+<li>PV spacing</li>
+<li>Temporary write controls</li>
+</ul>
+<p>With two exceptions, the values you select with these options remain in effect
+until you define new values. The exceptions are temporary write controls and
+temporary text controls.</p>
+<ul>
+<li><p>Temporary write control values only remain in effect for the text
+command you use them with.</p></li>
+<li><p>Temporary text controls have specific start and end options. ReGIS
+processes all values between the start and end options as part of the
+temporary text control.</p></li>
+</ul>
+<h2 id="S7.1">How the Terminal Draws Characters</h2>
+<p>You use the text command options to select the size and form of characters.
+The terminal uses the same basic method to draw these characters, no matter
+what size and form you select.</p>
+<ol>
+<li><p>Selects the character from a stored character set.</p></li>
+<li><p>Scales the character according to multiplication and size values.</p></li>
+<li><p>Orients the character with the tilt values.</p></li>
+<li><p>Draws the character into the bitmap. You can then use the PV spacing
+value or position command to reposition other characters.</p></li>
+</ol>
+<h3 id="S7.1.1">Character Format</h3>
+<p>All characters follow a specific format. The size of a stored character cell is 80
+pixels (8 pixels wide × 10 pixels high).</p>
+<p><a href="#F7-1">Figure 7-1</a> shows examples of 8 × 10 character formats. All characters are
+right-justified within the format. When the terminal starts to draw a character,
+the upper-left pixel of the 8 × 10 cell is at the cursor position.</p>
+<table id="F7-1" class="figure">
+<caption>Figure 7-1 Stored Character Format Examples</caption>
+<tbody>
+<tr>
+<td><img src="ma-0410-86.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>NOTE</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>Characters shown are examples from<br/>character set 0 (the stored ASCII set).<br/>
+Characters are shown in full 8 × 10<br/>pixel array.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.1.2">Orientation</h3>
+<p>The terminal uses the cursor position at the start of a character as the pivot
+point for drawing the character on the screen. For example, a character drawn
+in the normal orientation (left to right on a straight line, with no tilt) appears
+below and to the right of the cursor.</p>
+<p>If the character is tilted 180 degrees, it appears above and to the left of the
+cursor. The starting cursor position is always the pixel value at the upper-left
+point of the stored character form. All pivoting occurs at that point.</p>
+<h2 id="S7.2">Text Strings</h2>
+<p>You use text strings to draw text characters. You use characters from the
+terminal's built-in character sets, or you can design and load a set (<a href="chapter8.html">Chapter 8</a>).
+All the built-in sets have 94 characters, except the ISO set. The ISO set has
+96 characters.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>Built-In Character Sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASCII</td>
+</tr>
+<tr>
+<td>ISO Latin Nr 1 supplemental graphic</td>
+</tr>
+<tr>
+<td>DEC Supplemental Graphic</td>
+</tr>
+<tr>
+<td>DEC Special Graphic</td>
+</tr>
+<tr>
+<td>DEC Technical</td>
+</tr>
+<tr>
+<td>National replacement character (NRC) sets (14 sets)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.2.1">Control Characters in Text Strings</h3>
+<p>ReGIS only recognizes four control characters in text strings. ReGIS ignores
+other control characters. For example, ReGIS treats the semicolon (;) and the
+at sign (@) as text characters in a text string. Outside text strings, the semicolon
+is a command to resynchronize ReGIS, and the at sign indicates macrographs (<a href="chapter9.html">Chapter 9</a>).</p>
+<p>You can use the following four control characters in a text string.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>Carriage return</td>
+<td>CR</td>
+<td>Returns the cursor to the horizontal position where the current text writing command started.</td>
+</tr>
+<tr>
+<td>Line feed</td>
+<td>LF</td>
+<td>Moves the cursor down one line in the same column.</td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td>BS</td>
+<td>Moves the cursor back one character position. You can use BS to overstrike a character.</td>
+</tr>
+<tr>
+<td>Horizontal tab</td>
+<td>HT</td>
+<td>Moves the cursor forward one character position, using the current text spacing value.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.2.2">Format</h3>
+<p>You use the following format for a simple text string command, without any options.</p>
+<p class="example">T'&lt;text string&gt;'</p>
+<p>where</p>
+<div class="example"><p><b>T</b> identifies a text command.</p>
+<p><b>' '</b> are single or double quotation marks that enclose the text string. You
+must use the same type of quotation mark at the start and end.</p>
+<p><b>&lt;text string&gt;</b> are the 7- or 8-bit characters to draw.</p></div>
+<p>You enclose a text string with a set of quotes ('&lt;text&gt;'), or double
+quotes ("&lt;text&gt;"). You can use one type of quote to enclose the text string,
+and the other type within the string.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>"don't" appears on the screen as don't</li>
+<li>'"stop"' appears on the screen as "stop"</li>
+</ul>
+<p>Some text strings may require both types of quotes within the string. You can
+use two quote marks in a row, so ReGIS recognizes one as a text string item,
+and not the end of the text string. The two quote marks must be next to each
+other (no spaces).</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>'don''t' appears on the screen as don't</li>
+<li>"ditto ("")" appears on the screen as ditto (")</li>
+</ul>
+<p>You can use a comma to concatenate two strings enclosed by the same type of
+quotes. You place the comma between the strings.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p><strong>With a comma</strong><br/>
+"Stop ","Here" appears on the screen as Stop Here</p></li>
+<li><p><strong>Without a comma</strong><br/>
+"Stop ""Here" appears on the screen as Stop "Here</p></li>
+</ul>
+<h2 id="S7.3">Character Set Option – A</h2>
+<p>The character set option lets you select which set to use for a text string.
+When you enter ReGIS, the terminal uses the ASCII character set and the
+ISO Latin-1 supplemental graphic set.</p>
+<p class="note">NOTE: You should be familiar with how the terminal stores and uses character
+sets (Volume 1, Chapter 2). In ReGIS mode, the terminal accesses character
+sets similar to the way it does in text mode. However, in ReGIS mode, the
+terminal uses a different in-use table. The text in-use table can contain different
+character sets from the ReGIS in-use table.</p>
+<p>You use the following format for selecting a character set.</p>
+<p class="example">T(A&lt;0 to 3&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>A</b> identifies a character set option. 'A' stands for "alphabet".</p>
+<p><b>&lt;0 to 3&gt;</b> is a number that identifies the character set to use.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td>0</td>
+<td>Selects one or more of the terminal's built-in character
+sets (such as ASCII and ISO Latin-1 supplemental graphic).</td>
+</tr>
+<tr>
+<td>1, 2, or 3</td>
+<td>Selects a set you can load into the terminal. This
+set can have up to 96 characters, but can only include 7-bit characters. (See <a href="chapter8.html">Chapter 8</a>.)</td>
+</tr>
+</tbody>
+</table></div>
+<p>ReGIS uses only one 8-bit character code table to store the character set you
+select for alphabet 0 (A0). This code table has a left half (GL) for 7-bit characters,
+and a right half (GR) for 8-bit characters.</p>
+<p>When you enter ReGIS, the terminal automatically maps the ASCII character
+set into GL and the ISO Latin-1 supplemental graphic set into GR. You can
+select a character set for GL or GR by using the L or R suboptions as follows.</p>
+<h3 id="S7.3.1">Select GL Character Set – L</h3>
+<p>You use the L suboption to map one of the terminal's built-in character sets
+into the left half (GL) of the in-use table. You can only use this suboption when
+you select alphabet 0.</p>
+<p>The format for the text command with the L suboption is as follows.</p>
+<p class="example">T(A0(L"&lt;designator&gt;"))</p>
+<p>where</p>
+<p class="example"><b>&lt;designator&gt;</b> indicates which character set the command selects. <a href="#T7-1">Table
+7-1</a> shows how to select any one of the terminal's 7-bit, 94-character sets
+with this command.</p>
+<table id="T7-1" class="majortable">
+<caption>Table 7-1 Selecting a 7-Bit Set with the L or R Suboption</caption>
+<thead>
+<tr>
+<th>To Select This Set</th>
+<th>Use This Designator</th>
+<td colspan="2"> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASCII</td>
+<td>(B</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td>DEC Special Graphics</td>
+<td>(0</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td>DEC Technical</td>
+<td>(&gt;</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="4"><em>National Replacement Character Sets</em></td>
+</tr>
+<tr>
+<td>British</td>
+<td>(A</td>
+<td>Italian</td>
+<td>(Y</td>
+</tr>
+<tr>
+<td>Dutch</td>
+<td>(4</td>
+<td>Norwegian/Danish</td>
+<td>(`</td>
+</tr>
+<tr>
+<td>Finnish</td>
+<td>(5</td>
+<td>Portuguese</td>
+<td>(%6</td>
+</tr>
+<tr>
+<td>French</td>
+<td>(R</td>
+<td>Spanish</td>
+<td>(Z</td>
+</tr>
+<tr>
+<td>French Canadian</td>
+<td>(9</td>
+<td>Swedish</td>
+<td>(7</td>
+</tr>
+<tr>
+<td>German</td>
+<td>(K</td>
+<td>Swiss</td>
+<td>(=</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p>This command selects the DEC Technical set for use with ReGIS.</p>
+<p>T(A0(L"(&gt;"))</p></li>
+<li><p>This command selects the DEC Special Graphic set for use with ReGIS.</p>
+<p>T(A0(L"(0"))</p></li>
+</ul>
+<h3 id="S7.3.2">Select GR Character Set – R</h3>
+<p>This command is the same as the select GL character set command, except
+this command maps the desired character set into the right half (GR) of the
+in-use table. You can only use this suboption when you select alphabet 0.</p>
+<p>The format for the text command with the R suboption is as follows.</p>
+<p class="example">T(A0(R"&lt;designator&gt;"))</p>
+<p>You can select any one of the terminal's character sets, including any 8-bit set,
+with the R suboption. <a href="#T7-1">Table 7-1</a> shows how to select 7-bit sets. <a href="#T7-2">Table 7-2</a> shows
+how to select 8-bit sets.</p>
+<table id="T7-2" class="majortable">
+<caption>Table 7-2 Selecting an 8-Bit Set with the R Suboption</caption>
+<thead>
+<tr>
+<th>To Select This Set</th>
+<th>Use This Designator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DEC Supplemental Graphic</td>
+<td>)%5</td>
+</tr>
+<tr>
+<td>ISO Latin-1 supplemental</td>
+<td>-A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<ul>
+<li><p>This command selects the DEC Supplemental Graphic set for use with ReGIS.</p>
+<p>T(A0(R")%5"))</p></li>
+<li><p>This command maps the ASCII set into GL and the DEC
+Supplemental Graphic set into GR for use with ReGIS.</p>
+<p>T(A0(L"(B",R")%5"))</p></li>
+</ul>
+<p><strong>Notes on the L and R Suboptions</strong></p>
+<ul>
+<li><p>If you omit the 0 or use another number other than 0 after the A when
+using the R or L suboption, the terminal ignores the command.</p></li>
+</ul>
+<h3 id="S7.3.3">Selecting User-Defined (Loadable) Sets</h3>
+<p>You can select any set for use with ReGIS. However, the terminal displays a
+solid block error character if:</p>
+<ul>
+<li><p>you select a loadable set (1, 2, or 3) that does not have any characters
+loaded. The block appears for each text string character.</p></li>
+<li><p>you try to use a text string character that is not in the selected
+character set.</p></li>
+</ul>
+<p><a href="chapter8.html">Chapter 8</a> describes how to load a soft character set.</p>
+<h2 id="S7.4">Character Spacing</h2>
+<p>There are three ways to specify the spacing between text characters.</p>
+<ul>
+<li><p>Select a standard cell size. ReGIS uses the character spacing value
+associated with that size. You select a cell size with the S option (next section).</p></li>
+<li><p>Select the direction of the character string.</p></li>
+<li><p>Specify a spacing value with relative X and Y values, as follows.</p></li>
+</ul>
+<p>You use the following format for the character spacing argument.</p>
+<p class="example">T&lt;position&gt;</p>
+<p>where</p>
+<p class="example"><b>&lt;position&gt;</b> is a relative [X,Y] value. You can specify one or both coordinates.
+This value provides equal spacing between characters. After drawing
+a text character, ReGIS uses this &lt;position&gt; value to select the next cursor
+position.</p>
+<p>For most cases, you will only use a positive X value. A [+X] value keeps text
+characters on a horizontal line, from left to right. However, you can use a negative
+X value to draw a string backwards. You can also use Y values (+ or -)
+with different X values (+ or -) to produce a staircase effect.</p>
+<p>The spacing value does not change the baseline orientation of characters. For
+example, you can still use tilted or italic characters. <a href="#F7-2">Figure 7-2</a> shows how
+different character spacing values can affect a text string.</p>
+<table id="F7-2" class="figure">
+<caption>Figure 7-2 Example of Character Spacing Alignment</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>T(S4)<br/>'ABCD'<br/>P[300]<br/>T[35,25]<br/>'ABCD'<br/>P[575,100]<br/>T[-35,25]<br/>'ABCD'</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0723-83.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white), foreground value of
+I0 (default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.5">Size Options – S</h2>
+<p>There are three types of character sizes you can select.</p>
+<ul>
+<li>Standard character cell size</li>
+<li>Display cell size</li>
+<li>Unit cell size</li>
+</ul>
+<p>The display cell is the size of the screen area used for each character. The unit
+cell is the size of each character within the display cell. Standard character cell
+sizes select a display cell size and unit cell size.</p>
+<h3 id="S7.5.1">Standard Character Cell Sizes</h3>
+<p>There are 17 standard character cell sizes available. Each standard size has
+specific display cell, unit cell, and character position values assigned. The character
+position is the spacing value used between characters. The character position
+tells ReGIS how far to move the cursor after drawing a character.</p>
+<p>You use the following format for the standard character cell size option.</p>
+<p class="example">T(S&lt;0 to 16&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies a cell size option.</p>
+<p><b>&lt;0 to 16&gt;</b> is a number that selects a standard character cell size. <a href="#T7-3">Table
+7-3</a> lists the values assigned to each standard character cell size. The values
+in <a href="#T7-3">Table 7-3</a> are [X,Y] screen address coordinates.</p></div>
+<table id="T7-3" class="majortable">
+<caption>Table 7-3 Standard Character Cell Sizes</caption>
+<thead>
+<tr>
+<th>Set Number</th>
+<th>Display Cell Size</th>
+<th>Unit Cell Size</th>
+<th>Character Positioning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S0</td>
+<td>[9,10]</td>
+<td>[8,10]</td>
+<td>[9,]</td>
+</tr>
+<tr>
+<td>S1</td>
+<td>[9,20]</td>
+<td>[8,20]</td>
+<td>[9,]</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>[18,30]</td>
+<td>[16,30]</td>
+<td>[18,]</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>[27,45]</td>
+<td>[24,45]</td>
+<td>[27,]</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>[36,60]</td>
+<td>[32,60]</td>
+<td>[36,]</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>[45,75]</td>
+<td>[40,75]</td>
+<td>[45,]</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>[54,90]</td>
+<td>[48,90]</td>
+<td>[54,]</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>[63,105]</td>
+<td>[56,105]</td>
+<td>[63,]</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>[72,120]</td>
+<td>[64,120]</td>
+<td>[72,]</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>[81,135]</td>
+<td>[72,135]</td>
+<td>[81,]</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>[90,150]</td>
+<td>[80,150]</td>
+<td>[90,]</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>[99,165]</td>
+<td>[88,165]</td>
+<td>[99,]</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>[108,180]</td>
+<td>[96,180]</td>
+<td>[108,]</td>
+</tr>
+<tr>
+<td>S13</td>
+<td>[117,195]</td>
+<td>[104,195]</td>
+<td>[117,]</td>
+</tr>
+<tr>
+<td>S14</td>
+<td>[126,210]</td>
+<td>[112,210]</td>
+<td>[126,]</td>
+</tr>
+<tr>
+<td>S15</td>
+<td>[135,225]</td>
+<td>[120,225]</td>
+<td>[135,]</td>
+</tr>
+<tr>
+<td>S16</td>
+<td>[144,240]</td>
+<td>[128,240]</td>
+<td>[144,]</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: The sizes in this table are expressed in screen coordinate values. These
+values are based on the default screen addressing for the VT300. See <a href="chapter2.html">Chapter 2</a>.</p>
+<h3 id="S7.5.2">Display Cell Size</h3>
+<p>This option lets you define the height and width of a display cell, using [X,Y]
+values. The display cell is the size of the screen area used for each text character.
+You use the following format for the display cell size option.</p>
+<p class="example">T(S[width,height])</p>
+<p>where</p>
+<div class="example"><p><b>S</b> identifies a cell size option.</p>
+<p><b>[width,height]</b> are the width and height values of the unit cell, expressed in
+actual screen coordinates.</p></div>
+<p>This option does not change the size of characters. You use the unit cell size
+option to change character size.</p>
+<h3 id="S7.5.3">Unit Cell Size</h3>
+<p>This option lets you define the size of characters, using [X,Y] values. You use
+the following format for the unit cell size option.</p>
+<p class="example">T(U[width,height])</p>
+<p>where</p>
+<div class="example"><p><b>U</b> identifies a unit cell size option.</p>
+<p><b>[width,height]</b> are the width and height of the unit cell, expressed in
+screen coordinates.</p></div>
+<p>Because ReGIS uses a default character cell of 8 × 10, the width value must
+be a positive multiple of 8, the height value must be a positive multiple of 5.
+For example, you could use a width of 32 (4 × 8), and a height of 35 (7 × 5).
+If you do not use a multiple, ReGIS uses the next smaller size. For example, if
+you select a height of 38, ReGIS uses 35.</p>
+<p>Keep the unit cell size as close as possible to the display cell size. Otherwise,
+the following side effects could occur.</p>
+<ul>
+<li><p><strong>When the unit cell is smaller than the display cell</strong><br/>
+The terminal displays each text character with the unused part of
+the display cell filled in at the background intensity.</p></li>
+<li><p><strong>When the unit cell is larger than the display cell</strong><br/>
+The terminal only displays the part of a text character that can fit
+into the display cell on the screen.</p></li>
+</ul>
+<p>All characters are justified at the upper-left corner in the display cell, relative
+to the current character baseline orientation.</p>
+<p><a href="#F7-3">Figure 7-3</a> shows examples of characters drawn with the same unit cell size,
+but different display cell sizes.</p>
+<div class="centrefig"><table id="F7-3" class="figure">
+<caption>Figure 7-3 Example of Display Cell and Unit Cell Size Options</caption>
+<tbody>
+<tr>
+<td><img src="ma-0724-83.png" alt=""/></td>
+</tr>
+<tr>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white), foreground value of I0
+(default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>T[54](S[36,60],U[40,60])<br/>
+[25,]'ABCD'<br/>P[300,200]<br/>T(S[54,90])<br/>[50,]'ABCD'<br/>P[300,300]<br/>T(S[27,45])<br/>[25,]'ABCD'</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="S7.6">Height Multiplier – H</h2>
+<p>This option lets you change the height of characters without changing their
+width. This option changes the height value of the display cell and unit cell to
+the same size. You use the following format for the height multiplier option.</p>
+<p class="example">T(H&lt;height&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>H</b> identifies the height multiplier option.</p>
+<p><b>&lt;height&gt;</b> is a multiplication factor for the character cell's height. This
+value is restricted to a range of 1 to 256.</p></div>
+<p>ReGIS multiplies the default character cell height of 10 pixels by the value you
+enter. The result is the new character height.</p>
+<p class="example">New height = option value × 10</p>
+<p>For example, an option value of 7 changes the height of the display cell and
+unit cell to 70.</p>
+<p><a href="#F7-4">Figure 7-4</a> shows an example of how the height multiplier option changes text
+characters. As shown, only the height values change. Character spacing and
+width values remain the same.</p>
+<table id="F7-4" class="figure">
+<caption>Figure 7-4 Height Multiplier Option Example</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[50,50]<br/>T(S3,H1)<br/>'height 1'<br/>T(H6)<br/>'height 6'<br/>T(H16)<br/>'height 16'</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0725-83.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white),
+foreground value of I0 (default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.7">Size Multiplier – M</h2>
+<p>This option lets you multiply the standard height and width of characters. You
+select different factors for the height and width. You use the following format
+of the pixel multiplier option.</p>
+<p class="example">T(M[width,height])</p>
+<p>where</p>
+<div class="example"><p><b>M</b> identifies a size multiplication option.</p>
+<p><b>[width,height]</b> are the multiplication factors for the width and height of
+characters.</p></div>
+<p>ReGIS  applies these factors to the height and width of the unit cell for standard
+size 1 (S1). The standard size is [8,20] in screen coordinates.</p>
+<p class="note">NOTE: You use both the M and U options to set the unit cell size. U expresses
+the unit cell size in [X,Y] screen addresses. M expresses the unit cell size as a
+multiple of standard character cell size 1.</p>
+<p>You can select a width value from 1 to 16. If you use a value greater than 16,
+ReGIS uses a value of 16.</p>
+<p>You can use this option with the character spacing and display cell size options,
+to create character forms not available with the standard character cell size option.</p>
+<h2 id="S7.8">String and Character Tilt Options</h2>
+<p>Normally, ReGIS draws characters from left to right along a horizontal baseline.
+However, in some applications you may want to write the text at an angle.
+The following options let you tilt individual characters or text strings at any 45
+degree increment, for a full 360 degrees.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td>String tilt option</td>
+<td>Selects the tilt angle for a text string.</td>
+</tr>
+<tr>
+<td>String/character tilt option</td>
+<td>Defines two tilt angles: one for the text string as a unit, and one for the
+characters in the string.</td>
+</tr>
+</tbody>
+</table>
+<p>The tilt angle is relative to the horizontal baseline. <a href="#F7-5">Figure 7-5</a> is a tilt compass
+that shows the direction of tilt for each value you can use with the tilt options.</p>
+<table id="F7-5" class="figure">
+<caption>Figure 7-5 Tilt Compass</caption>
+<tbody>
+<tr>
+<td><img src="ma-0654-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.8.1">Character Distortion with Tilt Angles</h3>
+<p>When you draw characters at diagonal angles, you may see some distortion.
+The distortion occurs because screen pixels are arranged in horizontal and vertical
+rows. The distance between pixels on a diagonal line is greater than the
+distance between pixels on a horizontal or vertical line.</p>
+<p>There is no distortion at 0 and 180 degrees. At these two angles, all width
+pixels align on an X-axis, and all height pixels align on a Y-axis.</p>
+<p>Distortion can occur at all other angles. ReGIS compensates for the distortion
+at 90 and 270 degrees. ReGIS does <em>not</em> compensate for distortion at 45, 135,
+225, and 315 degrees. When you draw characters at these diagonal angles, they
+will appear distorted. The amount of distortion depends on the normal size and
+proportion of the character.</p>
+<p><a href="#F7-6">Figure 7-6</a> shows an example of the distortion that occurs when you draw diagonal
+characters. The figure shows a character drawn at 45 degrees. The same
+amount of distortion occurs at 135, 225, and 315 degrees.</p>
+<table id="F7-6" class="figure">
+<caption>Figure 7-6 Baseline Orientation and Width Distortion for String/Character Tilt Option</caption>
+<tbody>
+<tr>
+<td><img src="ma-0405-86.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example" style="width: 25em">
+<tbody>
+<tr>
+<td colspan="2">NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>1.</td>
+<td>Characters are shown at 0° (far), and 45° (right).</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>9 × 10 pixel cell size is outlined to dramatize distortion.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>X is used to identify the pixel that would be the location at start of a character draw.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>All characters are drawn from the same Y-axis value in order to dramatize the
+relationship characters have to the starting location for different tilt values.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.8.2">Correcting Distortion</h3>
+<p>When you draw diagonal characters, you can partially correct the distortion by
+changing the character cell size. There is one general guideline for correcting
+distortion.</p>
+<ul>
+<li>Reduce the width of the character cell by one half</li>
+</ul>
+<p>You can use this method for any size character. <a href="#F7-7">Figure 7-7</a> shows how to correct
+the character distortion in <a href="#F7-6">Figure 7-6</a>. In <a href="#F7-6">Figure 7-6</a>, both B characters are
+drawn using standard character cell size 1 (S1). <a href="#F7-7">Figure 7-7</a> adjusts the distortion
+of the 45 degree character by defining a size 0 character with a multiplier
+factor of 1 (S0H1).</p>
+<table id="F7-7" class="figure">
+<caption>Figure 7-7 Width Distortion Adjustment for String/Character Tilt</caption>
+<tbody>
+<tr>
+<td><img src="ma-0406-86.png" alt=""/></td>
+</tr>
+<tr>
+<td><table class="command-example" style="width: 20em">
+<tbody>
+<tr>
+<td colspan="2">NOTES</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>1.</td>
+<td>All notes from <a href="#F7-6">Fig. 7-6</a> apply.</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>45° tilt character is adjusted by defining a 5 × 9 display cell, and
+a 4 × 10 unit cell before drawing.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<table class="dpadded">
+<thead>
+<tr>
+<td></td>
+<th>Unit Cell</th>
+<th>Display Cell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1 Cell</td>
+<td>8 × 20</td>
+<td>9 × 20</td>
+</tr>
+<tr>
+<td>S0H1 Cell</td>
+<td>–</td>
+<td>8 × 20</td>
+</tr>
+</tbody>
+</table>
+<p>Remember, even the corrected characters will have a slight distortion of size.
+This distortion is more apparent when you draw larger characters. You may
+need to perform an additional adjustment.</p>
+<p>For example, suppose you are drawing a size 8 character at 45 degrees.</p>
+<p class="example">S8 size = 64 × 120 unit cell (64 × 60 pixels)</p>
+<p>Using the method just described, you would change you cell size to a size 4
+character with an H factor of 6.</p>
+<p class="example">S4H1 size = 32 × 120 unit cell (32 × 60 pixels)</p>
+<p>You could get a better result by using a size 3 with an H factor of 5.</p>
+<p class="example">S3H5 size = 24 × 100 unit cell (24 × 50 pixels)</p>
+<h3 id="S7.8.3">String Tilt – D</h3>
+<p>This option selects the baseline angle for text strings. ReGIS draws all characters
+in a text string along this baseline. When you use this option, the baseline
+of each character in the string slopes with the defined tilt. You use the following
+format for the string tilt option.</p>
+<p class="example">T(D&lt;angle&gt;,S&lt;0 to 16&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>D</b> identifies a tilt option.</p>
+<p><b>&lt;angle&gt;</b> is the tilt angle. You can use 45 degree increments.</p>
+<p><b>S</b> identifies a cell size option.</p>
+<p><b>&lt;0 to 16&gt;</b> is a number that selects one of the 17 standard character cell
+sizes. ReGIS uses the spacing value associated with the cell size to space
+the characters in the tilted string.</p></div>
+<p><a href="#F7-8">Figure 7-8</a> shows how each string tilt value affects a text string.</p>
+<p class="note">NOTE: The terminal redefines the Y-axis at the start of each character.
+However, the tilt is the same for each character. So the cursor position at the
+start of the text string serves as a pivot point for the whole text string.</p>
+<p><a href="#F7-8">Figure 7-8</a> does not show any character distortion. The previous section describes
+how to correct character distortion by changing the size value used. For
+example, to match a size 1 character at a tilt of 45 degrees, you could use the
+command T(D45,S0,H1).</p>
+<table id="F7-8" class="figure">
+<caption>Figure 7-8 String Tilt Directions</caption>
+<tbody>
+<tr>
+<td><img src="ma-0728-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S7.8.4">String/Character Tilt</h3>
+<p>This option defines one tilt angle for a text string, and another tilt angle for
+the characters in the string. You use the following format for the string/character
+tilt option.</p>
+<p class="example">T(D&lt;string angle&gt;,S&lt;0 to 16&gt;,D&lt;character angle&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>D</b> identifies a tilt option.</p>
+<p><b>&lt;string angle&gt;</b> is the tilt angle for the string. You can use 45 degree increments.</p>
+<p><b>S</b> identifies a cell size option.</p>
+<p><b>&lt;0 to 16&gt;</b> is a number that selects 1 of the 17 standard character cell
+sizes. ReGIS uses the spacing value associated with the cell size to space
+the characters in the tilted string.</p>
+<p><b>D</b> identifies a second tilt option.</p>
+<p><b>&lt;character angle&gt;</b> is the tilt angle for characters within the string. You
+can use 45 degree increments.</p></div>
+<p><a href="#F7-9">Figure 7-9</a> shows some different effects you can produce with this option. This
+figure does not show any character distortion. The section on character distortion
+describes how to correct distortion by changing the character cell size. For
+example, to match a size 1 character drawn at 90 degrees, on a string tilted at
+45 degrees, you could use the command T(D45 S0H2 D90).</p>
+<table id="F7-9" class="figure">
+<caption>Figure 7-9 String/Character Tilt Option Directions</caption>
+<tbody>
+<tr>
+<td><img src="ma-0729-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.9">Italics Option – I</h2>
+<p>This option lets you tilt characters without changing their orientation to the
+baseline. You use the following format for the italics option.</p>
+<p class="example">T(I&lt;angle&gt;)</p>
+<p>where</p>
+<div class="example"><p><b>I</b> identifies an italics option.</p>
+<p><b>&lt;angle&gt;</b> is the degree and direction of the slant. If you use a positive (+)
+sign or no sign, the slant is up and to left. If you use a negative (-) sign,
+the slant is up and to the right. The angle at which a character slants
+depends on the &lt;angle&gt; values included in the option. The following list
+shows how various &lt;angle&gt; values affect the slant of the character.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>&lt;angle&gt; Value</th>
+<th>Actual Italic Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-31 or less</td>
+<td>-45 degrees</td>
+</tr>
+<tr>
+<td>-1 through -30</td>
+<td>-22</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0 (not slanted)</td>
+</tr>
+<tr>
+<td>1 through 30</td>
+<td>22</td>
+</tr>
+<tr>
+<td>31 or greater</td>
+<td>45</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="#F7-10">Figure 7-10</a> shows an H character drawn at the four italic slant values.</p>
+<p>This option does not significantly distort characters, unless you use it with the
+tilt option. You can use italic slants with the tilt option to create special
+effects.</p>
+<table id="F7-10" class="figure">
+<caption>Figure 7-10 Italic Option Slant Values</caption>
+<tbody>
+<tr>
+<td><img src="ma-0730-83.png" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.10">Temporary Text Control</h2>
+<p>ReGIS uses the text command option values you select until you change them.
+However, you can use temporary values to draw a sequence of text strings.
+After you complete the sequence, the options return to their previous values.
+You use the following format for the temporary text control option.</p>
+<p class="example">T(B)&lt;arguments&gt;T(E)</p>
+<p>where</p>
+<div class="example"><p><b>(B)</b> is the start of a temporary text control option.</p>
+<p><b>&lt;arguments&gt;</b> are the temporary text control arguments to use.</p>
+<p><b>(E)</b> is the end of the temporary text control option.</p></div>
+<p>This option saves only those text controls already in effect. You enter the temporary
+values and your text strings between a begin (B) and end (E) option.</p>
+<p><a href="#F7-11">Figure 7-11</a> shows an example of a temporary text control option that uses a
+string tilt.</p>
+<table id="F7-11" class="figure">
+<caption>Figure 7-11 Temporary Option Example</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[100,100]<br/>T(D0,S5,I0)<br/>'ABCD'<br/>P[500,100]<br/>T(B)<br/>(D180,S5)<br/>'ABCD'<br/>(E)<br/>P[500,100]<br/>T'ABCD'</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0731-83.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white), foreground value of I0
+(default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.11">PV Spacing – Subscripts, Superscripts, and Overstrikes</h2>
+<p>You use pixel vector (PV) spacing arguments to create subscripts, superscripts,
+and overstrikes. The direction specified by the PV value is relative to the current
+baseline for text characters.</p>
+<p>In text commands, each PV value defines a movement equal to one half of the
+defined display cell, in the direction specified. The PV multiplication factor does
+not affect this movement. You use the following format for the PV spacing
+argument.</p>
+<p class="example">T&lt;PV value&gt;</p>
+<p>where</p>
+<div class="example"><p><b>&lt;PV value&gt;</b> is a number that selects one of the following functions. For
+each function, ReGIS uses an offset equal to one half of the current display
+cell size.</p>
+<table class="padded">
+<thead>
+<tr>
+<th class="first">Value</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="first">1</td>
+<td><strong>Superscript</strong> – Moves the character up from the baseline
+and away from the previous character.</td>
+</tr>
+<tr>
+<td class="first">2</td>
+<td><strong>Superscript</strong> – Moves the character straight up from the baseline.</td>
+</tr>
+<tr>
+<td class="first">4</td>
+<td><strong>Overstrike</strong> – A 44 value moves the character back over the previous character cell.</td>
+</tr>
+<tr>
+<td class="first">6</td>
+<td><strong>Subscript</strong> – Moves the character straight down from the baseline.</td>
+</tr>
+<tr>
+<td class="first">7</td>
+<td><strong>Subscript</strong> – Moves the character down from the baseline and away from the previous character.</td>
+</tr>
+</tbody>
+</table></div>
+<p>You can use PV values of 3 and 5, but they partially overwrite the previous
+character. A 3 moves the character up and back toward the previous character.
+A 5 moves the character down and back toward the previous character.</p>
+<p>A PV value of 0 moves a character forward one-half character cell along the
+baseline. This value is useful for inserting visually pleasing space between adjacent
+characters.</p>
+<p>When you use a PV value, you change the distance from the baseline for text
+characters. ReGIS uses that PV value for all following text strings, until you
+change the value. You can return to the original baseline by selecting the PV
+value for the opposite function. For example, if you selected superscripting (PV
+= 2), use subscripting (PV = 6). For an overstrike (44), use the PV value 00.</p>
+<p class="note">NOTE: PV spacing is relative to the baseline. If you tilt the baseline, PV spacing
+rotates with that baseline.</p>
+<p><a href="#F7-12">Figure 7-12</a> shows a simple example of subscripting with the PV spacing
+argument.</p>
+<table id="F7-12" class="figure">
+<caption>Figure 7-12 PV Spacing Argument Example</caption>
+<tbody>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[300,200]<br/>T(S2)<br/>'H' 7 '2' 1 'O'</td>
+</tr>
+</tbody>
+</table></td>
+<td><img src="ma-0732-83.png" alt=""/></td>
+</tr>
+<tr>
+<td></td>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white), foreground value of I0
+(default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+</tbody>
+</table>
+<h2 id="S7.12">Temporary Write Control</h2>
+<p>Some write control options in <a href="chapter4.html">Chapter 4</a> affect the appearance of the text characters
+you draw. For example, these options control the shade/color of text.
+When you use text commands, ReGIS uses the current settings for these write
+control options.</p>
+<p>You can use a temporary write control option to change one or more of these
+settings for one command. ReGIS uses the temporary values until you use one
+of the following commands.</p>
+<ul>
+<li><p>another temporary write control option</p></li>
+<li><p>any command that begins with a command letter, such as a vector
+(V) command or another text (T) command</p></li>
+<li><p>a resynchronization command (semicolon)</p></li>
+</ul>
+<p>When you use one of the above commands, the writing control options return
+to their previous values.</p>
+<p>You include the temporary write control option in your text command. You can
+use the following write control options from <a href="chapter3.html">Chapter 3</a>.</p>
+<ul>
+<li>Intensity control</li>
+<li>Erase writing</li>
+<li>Replace writing</li>
+<li>Overlay writing</li>
+<li>Complement writing</li>
+</ul>
+<p>You can use this option to change shade/color, as well as writing mode (overlay,
+replace, erase, or complement). You use the following format for a temporary
+write control option.</p>
+<p class="example">T(W(&lt;suboptions&gt;))&lt;arguments&gt;</p>
+<p>where</p>
+<div class="example"><p><b>W</b> identifies a temporary write control option.</p>
+<p><b>&lt;suboptions&gt;</b> are the temporary write control values to use.</p>
+<p><b>&lt;arguments&gt;</b> are the text command arguments that will use the temporary
+write control values.</p></div>
+<p><a href="#F7-13">Figure 7-13</a> shows a simple example of the temporary write control option.</p>
+<div class="centrefig"><table id="F7-13" class="figure">
+<caption>Figure 7-13 Example of Temporary Write Control Option</caption>
+<tbody>
+<tr>
+<td><img src="ma-0733-83.png" alt=""/></td>
+</tr>
+<tr>
+<td><small>NOTE:<br/>Graphic assumes background value of I3 (default white), foreground value of I0
+(default dark), and all write controls at default values.<br/> </small></td>
+</tr>
+<tr>
+<td><table class="command-example">
+<tbody>
+<tr>
+<td>COMMANDS</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>P[400,200]<br/>W(S1)<br/>V[,+100]<br/>[+200]<br/>P[100,100]<br/>T(D0,S5)<br/>'ABCD'<br/>P[410,210]<br/>T(W(C))<br/>'ABCD'<br/>P[100,300]<br/>T'ABCD'</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="S7.13">Text Command Summary</h2>
+<p><a href="#T7-4">Table 7-4</a> is a summary of the <b>T</b> command options, including any default
+values.</p>
+<table id="T7-4" class="majortable">
+<caption>Table 7-4 Text Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(A&lt;0 to 3&gt;)</td>
+<td>0</td>
+<td><p><strong>Select character set</strong><br/>
+Selects one of four possible character sets (&lt;0 to 3&gt;) to use for text string characters.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first">(A0)</td>
+<td>built-in set</td>
+</tr>
+<tr>
+<td class="first">(A1 to 3)</td>
+<td>one of three loadable sets</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>(A0(L"&lt;designa­tor&gt;"))</td>
+<td>"(B"</td>
+<td><p><strong>Select character set (left)</strong><br/>
+Used with the (A0) option to select a built-in 7-bit set for the left side (GL) of the code table.<br/>
+Default: ASCII set.</p></td>
+</tr>
+<tr>
+<td>(A0(R"&lt;designa­tor&gt;"))</td>
+<td>"-A"</td>
+<td><p><strong>Select character set (right)</strong><br/>
+Used with the (A0) option to select a built-in 7-bit or 8-bit set for the
+right side (GR) of the code table.<br/>
+Default: ISO Latin-1 supplemental graphic set.</p></td>
+</tr>
+<tr>
+<td>(S&lt;0 to 16&gt;)</td>
+<td>1</td>
+<td><p><strong>Standard character cell size</strong><br/>
+Selects 1 of 17 standard sets. The set defines the display cell, unit cell, and character positioning values for text characters.</p></td>
+</tr>
+<tr>
+<td>(S[&lt;width,​height&gt;])</td>
+<td>[9,20]*</td>
+<td><p><strong>Display cell size</strong><br/>
+Lets you change the size of the screen area used for each character.</p></td>
+</tr>
+<tr>
+<td>[X,Y]</td>
+<td>[9,0]*</td>
+<td><p><strong>Character positioning</strong><br/>
+Lets you vary spacing between text characters. [X,Y] values are relative.</p></td>
+</tr>
+<tr>
+<td>(U[&lt;width,​height&gt;])</td>
+<td>[8,20]*</td>
+<td><p><strong>Unit cell size</strong><br/>
+Lets you change scaling of characters.</p></td>
+</tr>
+<tr>
+<td>(H&lt;height&gt;)</td>
+<td>2</td>
+<td><p><strong>Height multiplier</strong><br/>
+Changes the height of the display cell and unit cell, without affecting
+the width or positioning values. New height is equal to 10 times the specified multiplier (&lt;1-256&gt;).</p></td>
+</tr>
+<tr>
+<td>(D&lt;a&gt; S&lt;0 to 16&gt;)</td>
+<td>(D0 S1)</td>
+<td><p><strong>String tilt</strong><br/>
+Selects a tilt angle for text strings, relative to the current baseline.</p>
+<table class="padded">
+<tbody>
+<tr>
+<td class="first">&lt;a&gt;</td>
+<td>Selects the degrees of the tilt. (45 degree increments)</td>
+</tr>
+<tr>
+<td class="first">&lt;0 to 16&gt;</td>
+<td>Selects a standard size to use for positioning tilted characters.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>(I&lt;a&gt;)</td>
+<td>0</td>
+<td><p><strong>Italics</strong><br/>
+Selects a tilt angle &lt;a&gt; for italic characters without changing their orientation to the current baseline. Angle is ± 22 or 45 degrees.</p></td>
+</tr>
+<tr>
+<td>(B)​&lt;options&gt;​(E)</td>
+<td>Text controls in effect</td>
+<td><p><strong>Temporary text control</strong><br/>
+Selects temporary option values for one text command. Temporary values remain in effect until you use (E).</p></td>
+</tr>
+<tr>
+<td>&lt;PV&gt;</td>
+<td>None</td>
+<td><p><strong>PV spacing</strong><br/>
+Selects PV value to use for superscripts, subscripts, and overstriking.</p></td>
+</tr>
+<tr>
+<td>(W​(&lt;options&gt;)​)</td>
+<td>Write controls in effect</td>
+<td><p><strong>Temporary write control</strong><br/>
+Selects temporary write control values for one text command.</p></td>
+</tr>
+<tr>
+<td>(M[width,​height])</td>
+<td>[1,2]</td>
+<td><p><strong>Size multiplication</strong><br/>
+Selects a new unit cell size. Multiplies the height and width of the standard S1 unit cell by the factors you select. The maximum width factor is 16.</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">* Default value is based on standard S1 character cell.</td>
+</tr>
+</tfoot>
+</table>
+<footer>
+<nav class="sections"><a href="chapter6.html">Chapter 6</a><a href="contents.html">Contents</a><a href="chapter8.html">Chapter 8</a></nav>
+</footer>
+</body>
+</html>

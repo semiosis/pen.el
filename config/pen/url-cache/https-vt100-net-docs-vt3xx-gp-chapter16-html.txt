@@ -1,0 +1,738 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:27:06 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:27:06 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 6676
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 16</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter15.html">Chapter 15</a><a href="contents.html">Contents</a><a href="appendixa.html">Appendix A</a></nav>
+</header>
+<h1 id="S16"><span class="chapnum">16</span> Printing Graphics</h1>
+<p>This chapter describes the control functions you use to format and print graphics
+on a local printer connected to the VT300. You can also print graphics directly
+from the terminal, by pressing <b>Shift-Local Print</b>. See Chapter 11 of
+<cite>Installing and Using the VT330/VT340 Video Terminal</cite>.</p>
+<h2 id="S16.1">Selecting a Format for Printing</h2>
+<p>This section describes the control functions you use to format graphics before
+printing them from the screen. These control functions affect print screen commands.
+If you do not have a printer connected to the terminal, the terminal
+ignores these functions.</p>
+<h3 id="S16.1.1">Graphics Expanded Print Mode (DECGEPM)</h3>
+<p>This control function selects whether the terminal sends a compressed or expanded
+graphics image to the printer. The compressed image fits on A4 or
+8½ inch wide paper. The expanded image fits on 13 inch wide paper.</p>
+<p>Default: Compressed</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Sequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set<br/>(Expanded)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>3</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/3</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects an expanded image of about 300 × 200 mm (12 × 8 in), for a graphics print screen operation.</td>
+</tr>
+<tr>
+<td>Reset<br/>(Compressed)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>3</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/3</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects a compressed image of about 150 × 75 mm (6 × 3 in) for a graphics print screen operation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S16.1.2">Graphics Print Color Mode (DECGPCM)</h3>
+<p>This control function selects whether the terminal sends a color or black and
+white image to the printer. You should only use the color setting with the
+VT340.</p>
+<p>Default: Black and white</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Sequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set<br/>(Color)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>4</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/4</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sends a color image to the printer during a graphics print screen operation.</td>
+</tr>
+<tr>
+<td>Reset<br/>(Black and white)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>4</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/4</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sends a black and white image to the printer during a graphics print screen operation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S16.1.3">Graphics Print Color Syntax (DECGPCS)</h3>
+<p>This control function selects which color coordinate system the terminal uses in
+print color mode (DECGPCM). You should only use this function with a VT340.</p>
+<p>You can select one of two universal color coordinate systems, HLS (hue, lightness,
+and saturation) or RGB (red, green, and blue).</p>
+<p>Default: HLS</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Sequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set<br/>(RGB)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>5</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/5</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects RGB color format for a graphics print screen operation.</td>
+</tr>
+<tr>
+<td>Reset<br/>(HLS)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>5</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/5</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects HLS color format for a graphics print screen operation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S16.1.4">Graphics Print Background Mode (DECGPBM)</h3>
+<p>This control function selects whether the terminal sends the background area
+to the printer during a graphics print screen operation. This control function
+only works when print color mode (DECGPCM) is set (color).</p>
+<p>Default: No background</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Sequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set<br/>(Background)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>6</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/6</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sends all screen data for the graphic, <em>including</em> the background.</td>
+</tr>
+<tr>
+<td>Reset<br/>(No background)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>6</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/6</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Sends all screen data for the graphic, <em>except</em> the background.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S16.1.5">Graphics Rotated Print Mode (DECGRPM)</h3>
+<p>This control function selects whether the terminal sends a compressed or rotated
+graphics image to the printer.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Sequence</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set<br/>(Rotated)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>7</th>
+<th>h</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/7</td>
+<td>6/8</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects an image of about 200 × 300 mm (8 × 12 in), rotated 90 degrees.</td>
+</tr>
+<tr>
+<td>Reset<br/>(Compressed)</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>4</th>
+<th>7</th>
+<th>l</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/4</td>
+<td>3/7</td>
+<td>6/12</td>
+</tr>
+</tbody>
+</table></td>
+<td>Selects a compressed image of about 150 × 75 mm (6 × 3 in).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S16.2">Sending Graphics to the Host or Printer</h2>
+<p>This section describes the control functions you use to send graphics to the
+host or a local printer.</p>
+<h3 id="S16.2.1">Graphics to Host (MC)</h3>
+<p>This control function causes ReGIS hard copy commands to send screen images
+to the active host session. See Part 1 of this volume for details on ReGIS.
+The terminal ignores this function if the printer is assigned to the inactive session.
+See Volume 1, Chapter 14 of this manual for details on session management.</p>
+<div class="example"><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>2</th>
+<th>i</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/2</td>
+<td>6/9</td>
+</tr>
+</tbody>
+</table></div>
+<p>After receiving this command, the terminal sends the complete graphics bitmap
+to the host.</p>
+<h3 id="S16.2.2">Graphics to Printer (MC)</h3>
+<p>This control function causes ReGIS hard copy commands to send screen images
+to the printer. See Part 1 of this volume for details on ReGIS. The
+printer prints the ReGIS images as they appear on the screen. You can use
+either of the following sequences.</p>
+<table class="dpadded">
+<tbody>
+<tr>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>i</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>6/9</td>
+</tr>
+</tbody>
+</table></td>
+<td>or</td>
+<td><table class="codeseq">
+<tbody>
+<tr>
+<th>CSI</th>
+<th>?</th>
+<th>0</th>
+<th>i</th>
+</tr>
+<tr>
+<td>9/11</td>
+<td>3/15</td>
+<td>3/0</td>
+<td>6/9</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<p>After receiving this command, the terminal sends the complete graphics bitmap
+to the printer.</p>
+<h2 id="S16.3">Sixel Graphics Levels – Matching Your Printer</h2>
+<p>Different printers produce different output quality. This section describes the
+sixel graphics levels you can use to match the capabilities of the printer connected
+to your terminal.</p>
+<p>A sixel is a group of six pixels in a vertical column. A pixel is the smallest
+displayable unit on the screen. A sixel is represented by 6 bits in a character
+code. Each pixel in the sixel corresponds to each bit in the character code. A
+value of 1 for a bit indicates that a pixel is on, a 0 value indicates a pixel is
+off. <a href="chapter14.html">Chapter 14</a> describes sixel graphics in detail.</p>
+<p>Sixel printing is the printing of each defined sixel in left-to-right, top-to-bottom
+order.</p>
+<p>There are two ways to send sixel information to a local printer, press <b>Local
+Print</b> or send a media copy command.</p>
+<ul>
+<li><p><strong>Local Print Key</strong><br/>
+When you press <b>Local Print</b>, the VT300 sends a carriage return (CR) to
+the printer to reset the printing position to the left margin. Then the terminal
+sends the sixel device control string.</p></li>
+<li><p><strong>Media Copy Command</strong><br/>
+When an application sends a media copy command to the VT300 (such as
+Graphics to Printer), the terminal does not send a carriage return to the
+printer. The terminal sends only the sixel device control string. Omitting
+the carriage return lets the application initialize the starting sixel position.</p></li>
+</ul>
+<p>The VT300 supports different levels of the sixel graphics protocol to
+match the capabilities of the local printer used. The user can select the sixel
+graphics level from the Printer Set-Up screen.</p>
+<p>The sixel graphics level determines how the terminal matches the printer's aspect
+ratio, horizontal grid size, background printing, and color printing capabilities.
+The VT300 has a pixel aspect ratio of 1 to 1.</p>
+<h3 id="S16.3.1">Level 1 Sixel Devices</h3>
+<p>Level 1 sixel devices do not support the following sixel protocol commands.</p>
+<ul>
+<li>Set raster attributes</li>
+<li>Background select</li>
+<li>Horizontal grid size</li>
+<li>Macro parameter</li>
+</ul>
+<p>Level 1 devices have a fixed aspect ratio of 2 to 1 (2 horizontal pixels to 1
+vertical pixel), and a horizontal grid size of approximately 188 × 0.025 mm
+(7.5 × 0.001 in). Level 1 is the factory-default for the VT300.</p>
+<p>At level 1, the terminal always sends sixel device control strings to the printer
+in a 7-bit format as follow.</p>
+<p class="example">ESC P 1 q S...S ESC \</p>
+<p>where</p>
+<p class="example"><b>S...S</b> is the sixel data defining the image.</p>
+<p>A typical level 1 device is Digital's LA50 printer.</p>
+<h3 id="S16.3.2">Level 2 Sixel Devices</h3>
+<p>Level 2 sixel devices support the following sixel protocol commands.</p>
+<ul>
+<li>Set raster attributes</li>
+<li>Background select</li>
+<li>Horizontal grid size</li>
+<li>Macro parameter</li>
+</ul>
+<p>At level 2, the VT300 sends sixel data to the printer in the following format.</p>
+<p class="example">ESC P Pn1; Pn2; Pn3; q " Pn4; Pn5; Pn6; Pn7 S...S ESC \</p>
+<p>where</p>
+<div class="example"><p><b>Pn1</b> is the macro parameter. Pn1 is always 0 for level 2 print operations.</p>
+<p><b>Pn2</b> is the background select parameter.<br/>
+1 = background printing disabled.<br/>
+2 = background printing enabled.</p>
+<p><b>Pn3</b> is the horizontal grid size. By default, the horizontal grid size is 6 for
+compressed images, and 9 for expanded or rotated images.</p>
+<p><b>Pn4</b> is the pixel aspect ratio numerator. By default, Pn4 is set to 1.</p>
+<p><b>Pn5</b> is the pixel aspect ratio denominator. By default, Pn5 is set to 1.</p>
+<p><b>Pn6</b> is the horizontal extent parameter. Pn6 represents the number of pixels
+in an image horizontally.</p>
+<p><b>Pn7</b> is the vertical extent parameter. Pn7 represents the number of pixels
+in an image vertically.</p>
+<p><b>S...S</b> is the sixel data defining the image.</p></div>
+<p>Typical level 2 printers are Digital's LA75 and LN03 printers.</p>
+<p class="note">NOTE: You must use level 1 to print expanded or rotated images on an LA75.
+This selection compensates for firmware differences between the printer and
+terminal.</p>
+<h3 id="S16.3.3">LA210 Printer</h3>
+<p>Digital's LA210 printer is a special case. The LA210 is similar to a level 2
+device, but does not recognize the set raster attributes command. At the
+LA210 level, the VT300 uses macro parameter 9 to specify a 1 to 1 aspect
+ratio with a grid size of 338 × 0.025 mm (13.5 × 0.001 in).</p>
+<p>For compressed print operations, the VT300 uses the same sixel device control
+string format as in level 1.</p>
+<p>For expanded and rotated print operations, the VT300 uses the following sixel
+device control string format.</p>
+<p class="example">ESC P 9 q S...S ESC \</p>
+<p>where</p>
+<div class="example"><p><b>9</b> is the macro parameter. This parameter specifies a 1 to 1 aspect ratio
+with a grid size of 338 × 0.025 mm (13.5 × 0.001 in).</p>
+<p><b>S...S</b> is the sixel data defining the image.</p></div>
+<h3 id="S16.3.4">Program Example for Printing a ReGIS Image on the LN03</h3>
+<p>The following program prints an expanded ReGIS image on an LN03 laser
+printer. To print an expanded ReGIS image from your VT300 terminal to a
+local LN03 printer, perform the following steps.</p>
+<ol>
+<li><p>In the Printer Set-Up screen, set the <b>Sixel Print Option</b> feature to
+"expanded".</p></li>
+<li><p>Use the following escape sequences in your program (ESC = escape character).</p></li>
+</ol>
+<table>
+<thead>
+<tr>
+<td>Enable Printer Port</td>
+<td>Initialize Printer Settings</td>
+<td>Landscape Format</td>
+<td>Clear Margins</td>
+<td>Disable Printer Port</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>(DECSTR)</td>
+<td>(PFS)</td>
+<td>(DECSHORP)</td>
+<td></td>
+</tr>
+<tr>
+<td>ESC[5i</td>
+<td>ESC[!p</td>
+<td>ESC[?21 SP J</td>
+<td>ESC[w</td>
+<td>ESC[4i</td>
+</tr>
+</tbody>
+</table>
+<p>ReGIS display addressing command sets the terminal to full screen addressing.
+ReGIS hard copy command sends the image to the printer.</p>
+<p>ESCPp S(A[0,0][799,499]H) ESC\</p>
+<p>For more information, see <a href="chapter2.html">Chapter 2</a>.</p>
+<h2 id="S16.4">Summary</h2>
+<p><a href="#T16-1">Table 16-1</a> is a summary of the graphics printing control sequences in this
+chapter.</p>
+<table id="T16-1" class="majortable">
+<caption>Table 16-1 Graphics Printing Control Sequences</caption>
+<thead>
+<tr>
+<th>Name</th>
+<th>Mnemonic</th>
+<th>Sequence</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="4">Printing Formats</th>
+</tr>
+<tr>
+<td rowspan="2">Graphic expanded print mode</td>
+<td rowspan="2">DECGEPM</td>
+<td><strong>CSI ? 43 h</strong></td>
+<td>Expanded</td>
+</tr>
+<tr>
+<td><strong>CSI ? 43 l</strong></td>
+<td>Compressed</td>
+</tr>
+<tr>
+<td rowspan="2">Graphic print color mode</td>
+<td rowspan="2">DECGPCM</td>
+<td><strong>CSI ? 44 h</strong></td>
+<td>Color</td>
+</tr>
+<tr>
+<td><strong>CSI ? 44 l</strong></td>
+<td>Black and white</td>
+</tr>
+<tr>
+<td rowspan="2">Graphic print color syntax</td>
+<td rowspan="2">DECGPCS</td>
+<td><strong>CSI ? 45 h</strong></td>
+<td>RGB</td>
+</tr>
+<tr>
+<td><strong>CSI ? 45 l</strong></td>
+<td>HLS</td>
+</tr>
+<tr>
+<td rowspan="2">Graphic print background mode</td>
+<td rowspan="2">DECGPBM</td>
+<td><strong>CSI ? 46 h</strong></td>
+<td>Background</td>
+</tr>
+<tr>
+<td><strong>CSI ? 46 l</strong></td>
+<td>No background</td>
+</tr>
+<tr>
+<td rowspan="2">Graphic rotated print mode</td>
+<td rowspan="2">DECGRPM</td>
+<td><strong>CSI ? 47 h</strong></td>
+<td>Rotated</td>
+</tr>
+<tr>
+<td><strong>CSI ? 47 l</strong></td>
+<td>Compressed</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<th colspan="4">Sending Graphics to the Host or Printer</th>
+</tr>
+<tr>
+<td>Graphics to host</td>
+<td>MC</td>
+<td><strong>CSI ? 2 i</strong></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Graphics to printer</td>
+<td rowspan="2">MC</td>
+<td><strong>CSI ? i</strong> or</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CSI ? 0 i</strong></td>
+<td></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<th colspan="4">Sixel Levels for Printers</th>
+</tr>
+<tr>
+<td>Level 1</td>
+<td colspan="3"><p>ESC P 1 q S...S ESC \</p>
+<p>where</p>
+<p><b>S...S</b> is the sixel data defining the image.</p>
+<p>Example: Digital's LA50 printer.</p></td>
+</tr>
+<tr>
+<td>Level 2</td>
+<td colspan="3"><p>ESC P Pn1; Pn2; Pn3; q " Pn4; Pn5; Pn6; Pn7 S...S ESC \</p>
+<p>where</p>
+<p><b>Pn1</b> is the macro parameter. Pn1 is always 0 for level 2 print operations.</p>
+<p><b>Pn2</b> is the background select parameter.<br/>
+1 = background printing disabled.<br/>
+2 = background printing enabled.</p>
+<p><b>Pn3</b> is the horizontal grid size. Default is 6 for
+compressed images, and 9 for expanded or rotated images.</p>
+<p><b>Pn4</b> is the pixel aspect ratio numerator. Default = 1.</p>
+<p><b>Pn5</b> is the pixel aspect ratio denominator. Default = 1.</p>
+<p><b>Pn6</b> is the horizontal extent parameter.</p>
+<p><b>Pn7</b> is the vertical extent parameter.</p>
+<p><b>S...S</b> is the sixel data defining the image.</p>
+<p>Examples: Digital's LA75 and LN03 printers.</p></td>
+</tr>
+<tr>
+<td>LA210 printer</td>
+<td colspan="3"><p><em>For compressed print operations</em></p>
+<p>Uses the same sixel device control string format as in level 1.</p>
+<p><em>For expanded and rotated print operations</em></p>
+<p>ESC P 9 q S...S ESC \</p>
+<p>where</p>
+<p><b>9</b> is the macro parameter. This parameter specifies a 1 to 1 aspect ratio
+with a grid size of 338 × 0.025 mm (13.5 × 0.001 in).</p>
+<p><b>S...S</b> is the sixel data defining the image.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter15.html">Chapter 15</a><a href="contents.html">Contents</a><a href="appendixa.html">Appendix A</a></nav>
+</footer>
+</body>
+</html>

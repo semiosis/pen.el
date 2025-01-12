@@ -1,0 +1,1160 @@
+2020-02-17  Ian Dunn  <dunni@gnu.org>
+
+	Updated copyright strings
+
+	
+
+2020-02-17  Ian Dunn  <dunni@gnu.org>
+
+	Updated documentation
+
+	
+
+2020-02-17  Ian Dunn  <dunni@gnu.org>
+
+	Updated documentation
+
+	
+
+2020-02-17  Ian Dunn  <dunni@gnu.org>
+
+	Deprecated org-edna-load and org-edna-unload
+
+	* org-edna.el (org-edna--load): Renamed from `org-edna-load'.
+	 (org-edna--unload): Renamed from `org-edna-unload'.
+	 (org-edna-mode): Use new functions
+	 (org-edna-load):
+	 (org-edna-unload): Marked as deprecated in favor of org-edna-mode.
+
+	* org-edna.org (Introduction/Installation and Setup): Update to use new
+	function.
+
+2020-02-17  Ian Dunn  <dunni@gnu.org>
+
+	Added minor mode for Edna
+
+	* org-edna.el (org-edna-mode): New command.
+
+2019-02-27  Ian Dunn  <dunni@gnu.org>
+
+	Fixed failing tests
+
+	* org-edna-tests.el (org-test-at-time): Added to keep up with org mode
+	changes.
+	 (org-edna-test-setup): Use it.
+
+2019-02-02  Ian Dunn  <dunni@gnu.org>
+
+	Bumped version
+
+	
+
+2019-02-02  Ian Dunn  <dunni@gnu.org>
+
+	Fixed timestamp bug in scheduled! and deadline! actions
+
+	* org-edna.el (org-edna-timestamp-format): New defcustom.
+	 (org-edna--determine-timestamp-format): New helper function.
+	 (org-edna--handle-planning): Use it.
+	 (org-edna-action/scheduled!):
+	 (org-edna-action/deadline!): Document the format handling.
+	 (org-edna-reset-cache): Renamed from org-edna-invalidate-cache.
+	 (org-edna-action/tag!):
+	 (org-edna--heading-matches):
+	 (org-edna-entry-has-tags-p): Updated to use new tag API.
+
+	* org-edna-tests.el (org-edna-action-tag): Fixed failing test.
+	 (org-edna-user-test/time-spec): New test.
+
+	* org-edna-tests.org (User Example): New section of tests.
+
+	* org-edna.org (Timestamp Format): New section.
+	 (Finder Cache): Mention reset function.
+	 (1.0.2): New section.
+
+2019-02-02  Ian Dunn  <dunni@gnu.org>
+
+	Added function to invalidate cache
+
+	* org-edna.el (org-edna-invalidate-cache): New interactive defun.
+
+2018-12-09  Ian Dunn  <dunni@gnu.org>
+
+	Fixed stacking multiple conditions
+
+	* org-edna.el (org-edna--normalize-sexp-form): Only set state if not
+	breaking.
+	 (org-edna--expand-sexp-form): Properly handle blocking-var.
+
+	* org-edna-tests.el (org-edna-expand-sexp-form):
+	 (org-edna-expand-sexp-form-multiple):
+	 (org-edna-expand-sexp-form-if-else):
+	 (org-edna-expand-sexp-form-if-no-else): Removed buggy expansion tests.
+	 (org-edna-doc-test/multiple-blockers): Added test for multiple
+	blockers.
+
+	* org-edna.org (Multiple Blockers): Added section.
+
+2018-11-25  Ian Dunn  <dunni@gnu.org>
+
+	Bumped version
+
+	
+
+2018-11-24  Ian Dunn  <dunni@gnu.org>
+
+	Added has-tags? and matches? conditions
+
+	* org-edna.el (org-edna-condition/has-tags?): New defun.
+	 (org-edna--heading-matches): New helper defun.
+	 (org-edna-condition/matches?): New defun.
+
+	* org-edna-tests.el: Refactored to consolidate common forms.
+	 (org-edna-protect-test-file):
+	 (org-edna-test-setup):
+	 (org-edna-with-point-at-test-heading):
+	 (org-edna-with-test-heading): New helper macros.
+	 (org-edna-test-children-marks): New helper function.
+	 (org-edna-doc-test/has-tags):
+	 (org-edna-doc-test/matches):
+	 (org-edna-doc-test/chain): New tests.
+
+	* org-edna.org (Checking Tags):
+	 (Matching Headings): Sections for new conditions.
+
+2018-11-23  Ian Dunn  <dunni@gnu.org>
+
+	Removed remnants of old build system
+
+	
+
+2018-11-23  Ian Dunn  <dunni@gnu.org>
+
+	Inverted definition of consideration
+
+	Makes it clearer how it works with the rest of the system.
+
+	* org-edna.el (org-edna-handle-consideration): Inverted semantics.
+
+	* org-edna-tests.el (org-edna-test-inhibit-messages): New defvar to
+	silence org
+	 mode's messages during testing.
+	 (org-edna-consideration/any): New test.
+	 (org-edna-consideration/all):
+	 (org-edna-consideration/integer):
+	 (org-edna-consideration/float): Updated tests to match new semantics.
+	 (org-edna-doc-test/daily): Expanded scope of test.
+	 (org-edna-doc-test/snow-shoveling):
+	 (org-edna-doc-test/consider-fraction):
+	 (org-edna-doc-test/consider-number): New tests from docs.
+
+	* org-edna.org (Consideration): Updated section.
+	 (Conditional Forms): Updated semantics of consideration.
+
+	* test.mk: Set `org-edna-test-inhibit-messages' to silence Org messages.
+
+2018-11-23  Ian Dunn  <dunni@gnu.org>
+
+	Added timestamp sorting to relatives finder
+
+	* org-edna.el (org-edna--get-timestamp-time): New helper function.
+	 (org-edna-finder/relatives): Use it for timestamp-up and timestamp-down
+	forms.
+
+	* org-edna-tests.el (org-edna-relatives/sort-timestamp): New test.
+	 (org-edna-action-deadline/wkdy):
+	 (org-edna-action-deadline/cp):
+	 (org-edna-action-deadline/inc):
+	 (org-edna-action-deadline/landing):
+	 (org-edna-action-deadline/landing-no-hour):
+	 (org-edna-action-deadline/float): New tests for deadline.
+
+2018-11-21  Ian Dunn  <dunni@gnu.org>
+
+	Additional tests and minor cleanup
+
+	* org-edna.el: Added some section headers.
+
+	* org-edna-tests.el (org-edna-doc-test/ancestors-cache):
+	 (org-edna-doc-test/descendants-cache):
+	 (org-edna-doc-test/laundry-cache):
+	 (org-edna-doc-test/nightly-cache): Added tests for run-through with
+	cache.
+
+2018-11-21  Ian Dunn  <dunni@gnu.org>
+
+	Fixed up description of set-effort!.
+
+	* org-edna.org (Effort): Changed layout of syntax variations.
+
+2018-11-21  Ian Dunn  <dunni@gnu.org>
+
+	Various fixes from testing
+
+	* org-edna.el (org-edna--function-for-key): Return nil on invalid input
+	 (org-edna--expand-single-sexp-form): Quote arguments to consideration.
+	 (org-edna-finder/match): Introduced 'buffer SCOPE to match the nil
+	argument in
+	 org-map-entries.
+
+	* org-edna-tests.el: Protect all access to the test file in
+	unwind-protect.
+	 Use `org-edna-find-test-heading' in all tests instead of org-id-find.
+	 (org-edna-test-restore-test-file): New function to revert test file.
+	 (org-edna-test-compare-todos):
+	 (org-edna-test-change-todo-state):
+	 (org-edna-test-check-block):
+	 (org-edna-test-mark-done):
+	 (org-edna-test-mark-todo): New helper functions.
+	 (org-edna-doc-test/ancestors):
+	 (org-edna-doc-test/descendants):
+	 (org-edna-doc-test/laundry):
+	 (org-edna-doc-test/nightly):
+	 (org-edna-doc-test/daily):
+	 (org-edna-doc-test/weekly):
+	 (org-edna-doc-test/basic-shower): New full tests from the
+	documentation.
+
+	* org-edna.org (Scheduled/Deadline): Fixed up examples to render on
+	info.
+	 (TODO State): Added example.
+	 (Chain Property): Added example.
+	 (Property): Fixed examples.
+	 (Conditions): Changed heading names.
+
+2018-11-21  Ian Dunn  <dunni@gnu.org>
+
+	Modified cache to only work for specific finders
+
+	* org-edna.el (org-edna-finder-cache-enabled-finders): List of finder
+	functions
+	 for which cache is enabled.
+	 (org-edna--cache-is-enabled-for-finder): New function.
+	 (org-edna--handle-finder): Use it.
+
+2018-11-20  Ian Dunn  <dunni@gnu.org>
+
+	Mention consider in opening of Consideration section
+
+	* org-edna.org (Consideration): Mention consider.
+
+2018-11-20  Ian Dunn  <dunni@gnu.org>
+
+	Added note about naming conventions.
+
+	* org-edna.org (Naming Conventions): Added note about reserved
+	characters.
+
+2018-11-20  Ian Dunn  <dunni@gnu.org>
+
+	Added org-edna-describe-keyword function
+
+	* org-edna.el (org-edna--function-for-key): Return
+	 `org-edna-handle-consideration' for consideration and consider
+	keywords.
+	 (org-edna-describe-keyword): New function.
+
+	* org-edna.org (Getting Help): New section.
+
+2018-11-11  Ian Dunn  <dunni@gnu.org>
+
+	Quick fix for handle finders.
+
+	Attempt to expand empty argument list resulted in calling `quote' with
+	no arguments.
+
+	* org-edna.el (org-edna--handle-finder): Pass arguments as a list.
+	 (org-edna--expand-single-sexp-form): Don't expand arguments.
+
+2018-11-11  Ian Dunn  <dunni@gnu.org>
+
+	Added documentation about using a timeout for cache
+
+	
+
+2018-11-11  Ian Dunn  <dunni@gnu.org>
+
+	Added tests for cache
+
+	* org-edna.el (org-edna--get-cache-entry): New function for finding an
+	entry in
+	 cache.
+	 (org-edna--handle-finder): Use it.
+	 (org-edna--expand-single-sexp-form): Update calling method of
+	 `org-edna--handle-finder'.
+
+	* org-edna-tests.el (org-edna-cache/no-entry):
+	 (org-edna-cache/added-new-entry):
+	 (org-edna-cache/timed-out): New tests for cache.
+
+2018-11-11  Ian Dunn  <dunni@gnu.org>
+
+	Improved contributing section in documentation
+
+	* org-edna.org (Installation and Setup): Removed compilation
+	instructions.
+	 (Finder Cache): New section documenting cache setup.
+	 (Working with EDE): New section about EDE.
+	 (Compiling Edna): New section about compiling Edna.
+	 (Testing Edna): New section on how to test Edna.
+	 (Before Sending Changes): Moved out of "development"
+	 (Developing with Bazaar): Moved out of "development"
+	 (Development): Removed.
+	 (Changelog): Updated.
+
+2018-11-11  Ian Dunn  <dunni@gnu.org>
+
+	Updated tests for new form expansion
+
+	* org-edna-tests.el (org-edna-action-scheduled/landing-no-hour): New
+	test to
+	 ensure landing doesn't mess with assigned time.
+
+2018-11-10  Ian Dunn  <dunni@gnu.org>
+
+	Bumped version
+
+	* org-edna.org: Added entry for cache to changelog
+
+2018-11-10  Ian Dunn  <dunni@gnu.org>
+
+	Implemented finder cache
+
+	* org-edna.el (org-edna--finder-input):
+	 (org-edna--finder-cache-entry): New structs.
+	 (org-edna-finder-use-cache): New defcustom to toggle cache.
+	 (org-edna--finder-cache): Internal cache table.
+	 (org-edna-finder-cache-timeout): New defcustom to control cache
+	duration.
+	 (org-edna--add-to-finder-cache): Internal helper function.
+	 (org-edna--finder-cache-timeout): Placeholder function.
+	 (org-edna--handle-finder): Handles cache for finders.
+	 (org-edna--expand-single-sexp-form): Use new finder function.
+
+2018-02-07  Ian Dunn  <dunni@gnu.org>
+
+	Bumped version
+
+	
+
+2018-02-07  Ian Dunn  <dunni@gnu.org>
+
+	Fixed parsing multiple forms inside if/then/else blocks
+
+	* org-edna.el (org-edna--normalize-forms): New defun.
+	 (org-edna--normalize-sexp-form): Use it for if-statements
+	 (org-edna--normalize-all-forms): Use it.
+
+	* org-edna-tests.el: Added new parsing tests.
+
+2018-02-07  Ian Dunn  <dunni@gnu.org>
+
+	Fixed parsing of ! in conditions
+
+	* org-edna.el (org-edna--normalize-sexp-form): Break form before
+	parsing.
+
+	* org-edna-tests.el: Added test for parsing negations
+
+	* org-edna.org (Changelog): Added updates.
+
+2018-02-04  Ian Dunn  <dunni@gnu.org>
+
+	Fixed error reporting
+
+	* org-edna.el (org-edna--syntax-error): Take the error position as an
+	argument.
+	 (org-edna--print-syntax-error): Update contents of error-plist.
+	 (org-edna--convert-form): Add the position to the returned forms.
+	 (org-edna--normalize-sexp-form): Pass that position to error functions.
+
+2018-02-03  Ian Dunn  <dunni@gnu.org>
+
+	Cleaned up Changelog some more
+
+	* org-edna.org (Changelog): Use spaces between each feature description
+
+	* org-edna.info: Regenerated documentation.
+
+2018-02-03  Ian Dunn  <dunni@gnu.org>
+
+	Fixed up Changelog in documentation
+
+	* org-edna.org (Changelog): Use lists, not headings, to avoid cluttering
+	info
+	 output
+
+2018-02-03  Ian Dunn  <dunni@gnu.org>
+
+	Added new forms for set-property! and fixed up build system
+
+	* org-edna.el (org-edna--string-is-numeric-p):
+	 (org-edna--increment-numeric-property):
+	 (org-edna--cycle-property): New helper functions.
+	 (org-edna-action/set-property!): Use them for new forms.
+	 (org-edna-set-effort): Take entire function from Org for compatibility.
+	 (org-edna-action/set-effort!): Use new signature.
+
+	* Project.ede, test.mk: New files for EDE.
+
+	* org-edna.org (Property): Document new forms for property action.
+	 (Changelog): Start section for 1.0beta5
+
+	* .elpaignore: Added ignored files for ELPA to avoid problems with EDE
+
+	* org-edna-tests.el: Added tests for new property forms
+
+2018-01-14  Ian Dunn  <dunni@gnu.org>
+
+	Fixed failing effort test
+
+	* org-edna.el (org-edna-set-effort): New defun for compatibility
+	 (org-edna-action/set-effort!): Use it.
+
+2018-01-01  Ian Dunn  <dunni@gnu.org>
+
+	Updated copyright
+
+	
+
+2017-12-27  Ian Dunn  <dunni@gnu.org>
+
+	Fixed bugs in parsing multiple forms
+
+	* org-edna.el (org-edna--normalize-all-forms): New defun to parse all
+	forms.
+	 (org-edna-string-form-to-sexp-form): Use it.
+	 (org-edna--expand-sexp-form): Fix scoping for form lists.
+
+2017-12-22  Ian Dunn  <dunni@gnu.org>
+
+	Overhauled parsing method, and added conditional blocks
+
+	Also bumped version to 1.0beta3
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Don't export special strings for documentation
+
+	Preserves -- in docs.
+
+	* org-edna.org: Add special string preserve option
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Updated info pages
+
+	
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Added links in "Changelog"
+
+	* org-edna.org (Changelog): Added links
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Fixed "Setting the Properties" custom_id and title
+
+	* org-edna.org (Setting the Properties): Fixed.
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Added section in the documentation about updating the documentation
+
+	* org-edna.org (Documentation): New section.
+
+2017-12-18  Ian Dunn  <dunni@gnu.org>
+
+	Added section to documentation for changes
+
+	* org-edna.org (Changelog): New section
+
+2017-12-17  Ian Dunn  <dunni@gnu.org>
+
+	Catch non-existent timestamps in planning action
+
+	* org-edna.el (org-edna--handle-planning): Throw an error if the source
+	 timestamp doesn't exist.
+
+2017-12-17  Ian Dunn  <dunni@gnu.org>
+
+	Fixed bug in planning action
+
+	* org-edna.el (org-edna--handle-planning): Bind case-fold-search for
+	 org-date-read-analyze.
+
+2017-12-17  Ian Dunn  <dunni@gnu.org>
+
+	Added relatives finder
+
+	* org-edna.el (org-edna-first-sibling):
+	 (org-edna-last-sibling):
+	 (org-edna-goto-sibling):
+	 (org-edna-self-marker):
+	 (org-edna-collect-current-level):
+	 (org-edna-collect-ancestors):
+	 (org-edna-collect-descendants):
+	 (org-edna-entry-has-tags-p): New helper functions for relatives finder.
+	 (org-edna-finder/relatives): New defun.
+	 (org-edna-finder/chain-find): Alias to org-edna-finder/relatives.
+	 (org-edna-finder/siblings):
+	 (org-edna-finder/siblings-wrap):
+	 (org-edna-finder/rest-of-siblings):
+	 (org-edna-finder/rest-of-siblings-wrap):
+	 (org-edna-finder/next-sibling):
+	 (org-edna-finder/next-sibling-wrap):
+	 (org-edna-finder/previous-sibling):
+	 (org-edna-finder/previous-sibling-wrap):
+	 (org-edna-finder/first-child):
+	 (org-edna-finder/ancestors):
+	 (org-edna-finder/descendants):
+	 (org-edna-finder/children): Implemented in terms of
+	org-edna-finder/relatives.
+
+	* org-edna-tests.el: Added tests for every form of relatives.
+
+	* org-edna.org: Added documentation for relatives, and added new options
+	for all
+	 other relative finders.
+
+	* org-edna.info: Updated.
+
+	* org-edna-tests.org: Added section for relative tests.
+
+2017-12-16  Ian Dunn  <dunni@gnu.org>
+
+	Added two new forms for setting planning information
+
+	* org-edna.el (org-edna--read-date-get-relative): New defun for landing
+	form.
+	 (org-edna--float-time): New defun for float form.
+	 (org-edna--handle-planning): Use the new functions.
+
+	* org-edna-tests.el: Add new tests for landing and float.
+
+	* org-edna.org (Scheduled/Deadline): Document the new forms.
+
+	* org-edna.info: Updated documentation.
+
+2017-12-12  Ian Dunn  <dunni@gnu.org>
+
+	Fix bug in keyword completion
+
+	* org-edna.el (org-edna--collect-keywords): Use let* instead of let.
+
+2017-12-09  Ian Dunn  <dunni@gnu.org>
+
+	Add space between edit message and BLOCKER section
+
+	* org-edna.el (org-edna-edit): Modify edit message
+
+2017-11-29  Ian Dunn  <dunni@gnu.org>
+
+	Don't present variables for keyword completion
+
+	* org-edna.el (org-edna--collect-keywords): Check that symbols that
+	match the
+	 patterns are bound as functions.
+
+2017-11-29  Ian Dunn  <dunni@gnu.org>
+
+	Update if-let and when-let to their -let* counterparts
+
+	* org-edna.el (if-let*, when-let*): Aliases for <26.1
+
+2017-11-26  Ian Dunn  <dunni@gnu.org>
+
+	Bumped version to beta1
+
+	
+
+2017-11-24  Ian Dunn  <dunni@gnu.org>
+
+	Added documentation for popout editing
+
+	* org-edna.el (org-edna-edit): Added explanation of how to abort
+	changes.
+
+	* org-edna.org (Setting the Properties): New section
+
+	* org-edna.info: Updated from org-edna.org
+
+2017-11-24  Ian Dunn  <dunni@gnu.org>
+
+	Updated documentation
+
+	Including info and dir pages for use in ELPA.
+
+	* org-edna.el: Added docstrings for all finders, actions, and
+	conditions.
+
+	* org-edna.org: Updated documentation to fix uses of commas vs. spaces
+	in syntax.
+	 (Contributing): Give a little background on bazaar and how to use it.
+
+2017-11-24  Ian Dunn  <dunni@gnu.org>
+
+	Added support for interactive editing of blockers and triggers
+
+	
+
+2017-11-19  Ian Dunn  <dunni@gnu.org>
+
+	Only require subr-x during compilation
+
+	
+
+2017-11-19  Ian Dunn  <dunni@gnu.org>
+
+	Added next-sibling-wrap finder
+
+	* org-edna.el (org-edna-finder/next-sibling-wrap): Added
+
+	* org-edna-tests.el (org-edna-finder/next-sibling-wrap-next):
+	 (org-edna-finder/next-sibling-wrap-wrap): New tests.
+
+	* org-edna.org (next-sibling-wrap): Document new finder.
+
+2017-05-29  Ian D  <dunni@gnu.org>
+
+	Updated documentation for ELPA release
+
+	
+
+2017-05-29  Ian D  <dunni@gnu.org>
+
+	Fixed tests copyright string
+
+	
+
+2017-05-28  Ian D  <dunni@gnu.org>
+
+	Fixed copyright strings.
+
+	
+
+2017-05-18  Ian D  <dunni@gnu.org>
+
+	Fixed up documentation
+
+	* org-edna.el: Removed org annotations from docstrings.
+
+	* org-edna.org: Changed syntax snippets to lists.
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Added more docstrings
+
+	
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Silenced byte-compiler
+
+	* org-edna.el: Correctly declare lm-report-bug
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Added docstrings to some finders
+
+	* org-edna.el (org-edna-finder/match):
+	 (org-edna-finder/ids):
+	 (org-edna-finder/ancestors):
+	 (org-edna-finder/olp): Added docstrings from org-edna.org
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Fixed ancestors example
+
+	* org-edna.org (ancestors): Fixed headings in example
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Added in-buffer settings and new sections to Documentation
+
+	* org-edna.org (Contributing): New section
+
+	* .bzrignore: Ignore generated documentation files
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Compile targets before running tests
+
+	* Makefile (check): Added "compile" as a prerequisite
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Cleaned up package header and added various docstrings
+
+	* org-edna.el (package header): Added Maintainer and URL
+	 (Commentary): Added
+	 (History): Added empty section
+	 (org-edna-submit-bug-report): New interactive function.
+
+2017-04-23  Ian D  <dunni@gnu.org>
+
+	Use org source blocks instead of example blocks in documentation
+
+	
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Fixed actions and documentation
+
+	* org-edna.org (Archive): Documented org-edna-prompt-for-archive.
+	 (TODO State): Fixed syntax
+	 (Scheduled/Deadline): Fixed example
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Documented delete-property! action
+
+	* org-edna.org (Property): Added delete-property! documentation.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Fixed up chain test
+
+	* org-edna-tests.el (org-edna-action-chain): Remove TEST property from
+	both
+	 headings.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Added tests for actions
+
+	* org-edna.el (org-edna-prompt-for-archive): New defcustom.
+	 (org-edna-action/archive!): Use it.
+	 (org-edna-action/delete-property!): New action.
+
+	* org-edna-tests.el: Added tests for the remaining actions.
+
+	* org-edna-tests.org: Added some more test headings.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Added installation and setup instructions to documentation
+
+	* org-edna.org (Installation and Setup): New section.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Added tests for conditions
+
+	* org-edna.el (org-edna-condition/variable-set?): Fixed handling of NEG.
+	 (org-edna-condition/re-search?): Same.
+
+	* org-edna-tests.el: Added tests for conditions.
+
+	* org-edna-tests.org: Added ID Heading 4
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Fixed error reporting
+
+	* org-edna.el (org-edna-run): Fixed error symbol.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Updated to new syntax
+
+	Remove ambiguity between types using ? and !
+
+	* org-edna.el (org-edna--types): Removed.
+	 (org-edna--function-for-key): Test for ? and !
+	 Updated all functions to new naming convention.
+
+	* org-edna-tests.el (org-edna-parse-form-condition): New test.
+	 Updated tests to use new function names.
+
+	* org-edna.org: Updated.
+
+2017-04-22  Ian D  <dunni@gnu.org>
+
+	Fixed variable-set condition
+
+	* org-edna.el (org-edna-condition/variable-set): Don't treat the input
+	as
+	 strings.
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Added Savannah project link to documentation
+
+	
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Finished rough draft of documentation
+
+	
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Added tests for finders
+
+	* org-edna.el (org-edna-finder/siblings): Fixed case where current
+	headline is
+	 the first sibling.
+	 (org-edna-finder/siblings-wrap): Wrap movements in save-excursion to
+	allow
+	 returning to original headline.
+
+	* org-edna-tests.el, org-edna-tests.org: Tests for the rest of the
+	finders.
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Fixed chain-find and planning actions
+
+	* org-edna.el (org-edna-finder/chain-find): Fixed to match org-depend.el
+	 (org-edna--handle-planning): Fix to recognize when a time was used.
+
+	* org-edna.org: Documented planning actions.
+
+	* org-edna-tests.el: Added tests for planning.
+
+	* org-edna-tests.org: Added planning test entry.
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Fixed error in last commit
+
+	
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Handle all errors in Edna forms
+
+	* org-edna.el (org-edna-run): Catch and report all errors.
+	 (org-edna-finder/match): Don't convert arguments.
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Fixed bugs from last commit
+
+	* org-edna.el (org-edna--syntax-error): Back-quote arguments
+	 (org-edna--print-syntax-error): Fixed name.
+
+2017-04-21  Ian D  <dunni@gnu.org>
+
+	Various parsing fixes
+
+	- Don't convert everything to strings
+	- Don't throw errors that will bog down the user
+
+	* org-edna.el (org-edna--syntax-error, org-edna--handle-syntax-error):
+	New
+	 functions to record and handle errors.
+	 (org-edna--transform-arg): New function to transform arguments as
+	needed.
+	 (org-edna-parse-form): Parse arguments space-separated lists.
+	 (org-edna-process-form): Don't use substring, but keep track of current
+	 position in form.
+	 (org-edna-run): Wrap handling inside condition-case and pass errors to
+	 org-edna--print-syntax-error
+	 (org-edna-finder/chain-find): Don't alter inputs
+	 (org-edna-action/todo): Convert symbols to strings.
+	 (Org-edna-transform-consideration): Remove.
+
+	* org-edna-tests.el: Updated tests.
+
+2017-04-18  Ian D  <dunni@gnu.org>
+
+	Use example instead of src to make HTML export prettier
+
+	* org-edna.org: Replaced BEGIN_SRC org with BEGIN_EXAMPLE
+
+2017-04-18  Ian D  <dunni@gnu.org>
+
+	Fixed license blocks in elisp files
+
+	
+
+2017-04-17  Ian D  <dunni@gnu.org>
+
+	Added copyright date to source files
+
+	
+
+2017-04-17  Ian D  <dunni@gnu.org>
+
+	Fixed copyright notices
+
+	* org-edna.el: Fixed typo in copyright notice.
+
+	* org-edna-tests.el: Fixed typo in copyright notice.
+
+2017-04-15  Ian D  <dunni@gnu.org>
+
+	Added copyright and licensing information to all files
+
+	
+
+2017-04-15  Ian D  <dunni@gnu.org>
+
+	Added copyright and licensing information to all files
+
+	
+
+2017-04-13  Ian D  <dunni@gnu.org>
+
+	Added check and local settings to Makefile
+
+2017-04-13  Ian D  <dunni@gnu.org>
+
+	Added tests for considerations
+
+	
+
+2017-04-13  Ian D  <dunni@gnu.org>
+
+	Fix considerations
+
+	* org-edna.el (org-edna-handle-consideration): Use floats when computing
+	 percentage of fulfilled blocks.
+
+2017-04-13  Ian D  <dunni@gnu.org>
+
+	Fixed consideration handling
+
+	* org-edna.el (org-edna-handle-consideration): Use >= instead of > when
+	 comparing fulfilled to consideration.
+
+2017-04-09  Ian D  <dunni@gnu.org>
+
+	Added note about quoting file names to documentation.
+
+	
+
+2017-04-09  Ian D  <dunni@gnu.org>
+
+	Added some more test headings
+
+	
+
+2017-04-09  Ian D  <dunni@gnu.org>
+
+	Added test for todo action
+
+	
+
+2017-04-09  Ian D  <dunni@gnu.org>
+
+	Fixed error in re-search
+
+	* org-edna.el (org-edna-condition/re-search): Correctly use
+	`buffer-name'
+
+2017-04-09  Ian D  <dunni@gnu.org>
+
+	Added documentation for each condition
+
+	
+
+2017-04-08  Ian D  <dunni@gnu.org>
+
+	Added test for empty argument list
+
+	
+
+2017-04-08  Ian D  <dunni@gnu.org>
+
+	Added re-search condition
+
+	* org-edna.el (org-edna-condition/re-search): New function.
+
+2017-04-08  Ian D  <dunni@gnu.org>
+
+	Added test for parsing multiple forms
+
+	
+
+2017-04-08  Ian D  <dunni@gnu.org>
+
+	Fixed parsing bug
+
+	* org-edna.el (org-edna-parse-form): Check for whitespace in between
+	forms.
+
+2017-04-08  Ian D  <dunni@gnu.org>
+
+	Fixed chain-find
+
+	* org-edna.el (org-edna-finder/chain-find): Return a list of targets as
+	 expected.
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Added file for tests
+
+	
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Added tests for ids and match finders
+
+	
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Created finders for compatibility with org-depend
+
+	* org-edna.el (org-edna-finder/siblings-wrap):
+	 (org-edna-finder/rest-of-siblings): New functions
+	 (org-edna-finder/chain-find): Finder for org-depend's chain-find-next
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Added configuration option to use inheritance
+
+	* org-edna.el (org-edna-use-inheritance): New defcustom.
+	 (org-edna-trigger-function):
+	 (org-edna-blocker-function): Use it
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Fix uses of substring
+
+	* org-edna.el (org-edna-parse-form): Third argument to substring is TO,
+	not LENGTH
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Don't assume arguments will be symbols or strings
+
+	* org-edna.el (org-edna-parse-form): Use `prin1-to-string' instead of
+	 `symbol-name'.
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Remove duplicate targets
+
+	* org-edna.el (org-edna-process-form): Run targets through seq-uniq.
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Fixed up indenting
+
+	
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Use existing org-xor instead of new function
+
+	* org-edna.el (org-edna--xor): Removed.
+	 (org-edna-condition/todo-state):
+	 (org-edna-condition/headings):
+	 (org-edna-condition/variable-set):
+	 (org-edna-condition/has-property): Use org-xor
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Fixed bug in Makefile
+
+	
+
+2017-04-07  Ian D  <dunni@gnu.org>
+
+	Renamed to Org-Edna.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Clarified use of case-fold-search in `org-bat--handle-planning'
+
+	* org-bat.el (org-bat--handle-planning): Added comment.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Added chain action
+
+	Chain will copy a given property from the old entry to its targets.
+
+	* org-bat.el (org-bat-action/chain): New function.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Cleaned up condition handling
+
+	* org-bat.el (org-bat--handle-condition): New function.
+	 (org-bat-process-form): Use it.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Added tests for org-bat-parse-form
+
+	* org-bat-tests.el (org-bat-parse-form-no-arguments):
+	 (org-bat-parse-form-no-arguments-modifier):
+	 (org-bat-parse-form-single-argument):
+	 (org-bat-parse-form-string-argument): New tests.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Improved org-bat-parse-form to handle new argument types
+
+	Includes quoted arguments, nested parentheses, and arguments with
+	spaces.
+
+	* org-bat.el (org-bat-parse-form): Rewrote to use `read-from-string'.
+
+2017-04-06  Ian D  <dunni@gnu.org>
+
+	Fixed headings condition
+
+	* org-bat.el (org-bat-condition/headings): Check for a non-empty set of
+	headings
+	 rather than an empty one.
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added more custom IDs to documentation
+
+	
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added package requirements
+
+	* org-bat.el: Added seq and org as package requirements
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added has-property condition
+
+	* org-bat.el (org-bat-condition/has-property): New function.
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added initial documentation
+
+	
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added .bzrignore.
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Added Makefile.
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Make all finders return lists of markers
+
+	* org-bat.el (org-bat-process-form): Assume all finders will either be
+	nil or
+	 lists.
+	 (org-bat-finder/self):
+	 (org-bat-finder/next-sibling):
+	 (org-bat-finder/previous-sibling):
+	 (org-bat-finder/first-child):
+	 (org-bat-finder/parent):
+	 (org-bat-finder/olp):
+	 (org-bat-finder/file):
+	 (org-bat-finder/org-file): Wrap markers in a list.
+
+2017-04-05  Ian D  <dunni@gnu.org>
+
+	Initial Commit.
+

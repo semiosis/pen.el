@@ -1,0 +1,65 @@
+#! /bin/bash
+
+# Script originally inspired by
+# https://gist.github.com/leedm777/923706741c8296869e7d
+#
+# Has some tweaks for error checking and to make sure none of the sub commands
+# grab the STDIN.
+#
+# This is a helper to allow docker containers running through docker machine to
+# share the host's ssh-agent.
+
+PROGNAME=$(basename $0)
+
+DOCKER_COMMAND=$1
+
+if [ $DOCKER_COMMAND != "run" ]; then
+    docker "$@"
+else
+    NAME=$(docker-machine active < /dev/null)
+
+
+    if test -z "${NAME}"; then
+        echo "${PROGNAME}: Must activate a docker machine with `eval $(docker-machine env [machine-name])`" >&2
+        exit 1
+    fi
+
+    # Setup SSH forwarding into docker host
+    # From https://gist.github.com/rcoup/53e8dee9f5ea27a51855
+    SSH_SOCK=docker.${NAME}.$$.ssh.socket
+
+    SSH_PORT=$(docker-machine inspect -f '{{.Driver.SSHPort}}' ${NAME} < /dev/null)
+
+    # Most ssh options copied from docker-machine ssh
+    # Others:
+    #  -A - Enables forwarding of the authentication agent connection
+    #  -M - Places the ssh client into ``master'' mode for connection sharing
+    #  -S - Specifies the location of a control socket for connection sharing
+    #  -f - Requests ssh to go to background just before command execution
+    #  -n - Redirects stdin from /dev/null
+    #  tail -f /dev/null - command that never ends
+    ssh -i $HOME/.docker/machine/machines/${NAME}/id_rsa \
+        -o PasswordAuthentication=no \
+        -o IdentitiesOnly=yes \
+        -o StrictHostKeyChecking=no \
+        -o UserKnownHostsFile=/dev/null \
+        -o LogLevel=quiet \
+        -o ConnectionAttempts=3 \
+        -o ConnectTimeout=10 \
+        -p ${SSH_PORT} \
+        docker@localhost \
+        -A -M -S $SSH_SOCK -f -n \
+        tail -f /dev/null
+
+    DM_AGENT_SOCK=$(ssh -S $SSH_SOCK -n docker@localhost echo \$SSH_AUTH_SOCK)
+
+    # Try our best to kill the socket on exit
+    trap "ssh -S $SSH_SOCK -O exit docker@localhost" EXIT
+
+    shift 1
+
+    docker run \
+           -v $DM_AGENT_SOCK:/ssh-agent \
+           -e "SSH_AUTH_SOCK=/ssh-agent" \
+           "$@"
+fi

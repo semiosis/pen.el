@@ -1,0 +1,12 @@
+(define-package "orthodox-christian-new-calendar-holidays" "20210830.1657" "Feasts (NS)" 'nil :commit "6869024ecd45eefd0ec648979c6a59d7c79770e0" :authors
+  '(("Carson Chittom" . "carson@wistly.net"))
+  :maintainers
+  '(("Carson Chittom" . "carson@wistly.net"))
+  :maintainer
+  '("Carson Chittom" . "carson@wistly.net")
+  :keywords
+  '("calendar")
+  :url "https://github.com/cmchittom/orthodox-christian-new-calendar-holidays")
+;; Local Variables:
+;; no-byte-compile: t
+;; End:

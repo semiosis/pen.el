@@ -1,0 +1,6 @@
+cd /root/notes;  "unicode" "#" "<==" "bash"
+cd /root/notes;  "unicode" "🎭" "#" "<==" "bash"
+cd /root/notes;  "unicode" "1FAD0" "#" "<==" "zsh"
+cd /root/notes;  "unicode" "1FAD0-1FAD6" "#" "<==" "zsh"
+cd /root/notes;  "unicode" "1FAD0..1FAD6" "#" "<==" "zsh"
+cd /root/notes;  "unicode" "1FAD0..1FAD6" "#" "<==" "bash"

@@ -1,0 +1,6 @@
+cd /root/repos/xterm/xterm-397;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.pen/documents/notes;  "rosie" "grep" "-o" "subs" "net.fqdn_practical" "#" "<==" "rosie-urls"

@@ -1,0 +1,2 @@
+;; Generated package description from ascii-art-to-unicode.el  -*- no-byte-compile: t -*-
+(define-package "ascii-art-to-unicode" "1.13" "a small artist adjunct" 'nil :commit "83ec71af9e1812df781b78f28fa9dac0ff7b61bc" :authors '(("Thien-Thi Nguyen" . "ttn@gnu.org")) :maintainer '("Thien-Thi Nguyen" . "ttn@gnu.org") :keywords '("ascii" "unicode" "box-drawing") :url "http://www.gnuvola.org/software/aa2u/")

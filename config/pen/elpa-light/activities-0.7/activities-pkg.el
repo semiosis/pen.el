@@ -1,0 +1,2 @@
+;; Generated package description from activities.el  -*- no-byte-compile: t -*-
+(define-package "activities" "0.7" "Save/restore sets of windows, tabs/frames, and their buffers" '((emacs "29.1") (persist "0.6")) :commit "b63ccc58fc3b5b3e6ed5b74bf84bd4eff9bb1660" :authors '(("Adam Porter" . "adam@alphapapa.net")) :maintainer '("Adam Porter" . "adam@alphapapa.net") :keywords '("convenience") :url "https://github.com/alphapapa/activities.el")

@@ -79,7 +79,12 @@ clojure and perhaps all lisp modes. Done."
                   (call-interactively 'exchange-point-and-mark))
               (re-search-forward "[/.]")
               (call-interactively 'exchange-point-and-mark))))
-    (call-interactively 'lispy-mark-symbol)))
+    (progn
+      (if (lispy--leftp)
+          (progn
+            (special-lispy-mark-list)
+            (pen-lisp-first-child))
+        (call-interactively 'lispy-mark-symbol)))))
 
 (define-key pen-lisp-mode-map (kbd "M-e") #'pen-lisp-first-child)
 

@@ -1,0 +1,35 @@
+NEWS for xpm.el (et al)
+See the end for copying conditions.
+
+
+- 1.0.5 | 2021-12-19
+  - use U+2018, U+2019 more
+  - use https for URLs (including homepage)
+
+- 1.0.4 | 2017-02-17
+  - fixed syntax error in ‘defstruct’ usage (how did it work before?!)
+  - new THANKS file
+
+- 1.0.3 | 2014-06-13
+  - improved docstrings
+
+- 1.0.2 | 2014-05-30
+  - new homepage: http://www.gnuvola.org/software/xpm/
+
+- 1.0.1 | 2014-05-21
+  - byte-compilation bugfix
+
+- 1.0.0 | 2014-05-18
+  - initial release
+
+
+  Local Variables:
+  mode: outline
+  outline-regexp: "\\([ ][ ]\\)*- "
+  End:
+
+_____________________________________________________________________
+Copyright (C) 2014-2021 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted provided the copyright notice and this notice are preserved.

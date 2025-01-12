@@ -7,11 +7,15 @@ e:/root/.emacs.d/host/pen.el/config/visidatarc
 https://www.gutenberg.org/files/3296/3296-h/3296-h.htm
 
 * Mu and Micro sign are almost identical.
-μ
-µ
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  μ
+  µ
+#+END_SRC
 
-unicode "µ"
-unicode "μ"
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  unicode "µ"
+  unicode "μ"
+#+END_SRC
 
 * 
 https://www.gotquestions.org/Lion-and-the-Lamb.html

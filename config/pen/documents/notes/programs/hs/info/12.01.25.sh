@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "info" "-q" "unicode" "#" "<==" "man"
+cd /root/.pen/documents/notes;  "info" "-q" "xterm" "#" "<==" "man"
+cd /root/.emacs.d/host/pen.el/scripts;  "info" "-q" "vim" "#" "<==" "man"
+cd /root/.emacs.d/host/pen.el/scripts;  "info" "-q" "xterm" "#" "<==" "man"
+cd /root/repos/xterm/xterm-397;  "info" "-q" "strcmp" "#" "<==" "man"
+cd /root/.emacs.d/host/pen.el/scripts;  "info" "-q" "apt" "#" "<==" "man"
+cd /root/repos/xterm/xterm-397;  "info" "-q" "xterm" "#" "<==" "man"
+cd /root/repos/xterm/xterm-397;  "info" "-q" "xterm" "#" "<==" "man"

@@ -1,0 +1,7 @@
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=PlnSUdO1PiI" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=LVa0Y9gQEZc" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/shorts/kX474sPVWS4" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=M1IVw2ZH-Fw" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=q2xWFODonhA" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=PFrZoLer_8s" "#" "<==" "pen-ci"
+cd /root/notes/ws/sixel;  "wget" "https://vt100.net/dec/ek-vt3xx-tp-002.pdf" "#" "<==" "zsh"

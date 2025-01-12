@@ -440,6 +440,18 @@ case "$sn" in
     }
     ;;
 
+    pix) {
+        sn=pen
+        : "${PREFER_GUI:="n"}"
+        : "${no:="y"}"
+        # Minimum for apostrophe is 2
+        export PEN_N_WORKERS=2
+
+        # disable the tty so it starts using the internal xterm
+        HAS_TTY=n
+    }
+    ;;
+
     piz) {
         sn=pen
         : "${PREFER_GUI:="n"}"

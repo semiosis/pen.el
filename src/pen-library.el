@@ -145,6 +145,9 @@
                (and (major-mode-enabled 'ascii-adventures-mode)
                     "ASCII Adventures")
                
+               (and (major-mode-enabled 'sqlite-mode)
+                    sqlite--db-path)
+               
                ;; (and (major-mode-enabled 'cider-repl-mode)
                ;;      default-directory)
 

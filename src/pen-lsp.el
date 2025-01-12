@@ -536,7 +536,10 @@ We don't extract the string that `lps-line' is already displaying."
                         (visual-line-mode 1)
                         (setq truncate-lines nil)
                         (markdown-mode)))))))))
-      (lsp--info "No content at point."))))
+      (progn
+        (lsp--info "No content at point.")
+        ;; Add an error because I want handle to be able to handle it
+        (error "No content at point.")))))
 
 (defun pen-lsp-get-hover-docs ()
   (interactive)

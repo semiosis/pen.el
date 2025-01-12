@@ -1,0 +1,266 @@
+This is README.info, produced by makeinfo version 6.7 from README.texi.
+
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* Taxy Magit Section: (taxy-magit-section). Render Taxy structs with Magit Section.
+END-INFO-DIR-ENTRY
+
+
+File: README.info,  Node: Top,  Next: Installation,  Up: (dir)
+
+taxy-magit-section.el
+*********************
+
+https://elpa.gnu.org/packages/taxy-magit-section.svg
+(https://elpa.gnu.org/packages/taxy-magit-section.html)
+
+   This library renders Taxy (https://github.com/alphapapa/taxy.el)
+structs with magit-section (https://melpa.org/#/magit-section).
+
+* Menu:
+
+* Installation::
+* Changelog::
+* Development::
+* Credits::
+* License::
+
+— The Detailed Node Listing —
+
+Changelog
+
+* 0.14.3: 0143.
+* 0.14.2: 0142.
+* 0.14.1: 0141.
+* 0.14: 014.
+* 0.13: 013.
+* 0.12.2: 0122.
+* 0.12.1: 0121.
+* 0.12: 012.
+* 0.11: 011.
+* 0.10: 010.
+* 0.9.1: 091.
+* 0.9: 09.
+
+
+
+File: README.info,  Node: Installation,  Next: Changelog,  Prev: Top,  Up: Top
+
+1 Installation
+**************
+
+‘taxy-magit-section’ is distributed in GNU ELPA (https://elpa.gnu.org/),
+which is available in Emacs by default.  Use ‘M-x package-install RET
+taxy-magit-section RET’, then ‘(require 'taxy-magit-section)’ in your
+Elisp project.
+
+
+File: README.info,  Node: Changelog,  Next: Development,  Prev: Installation,  Up: Top
+
+2 Changelog
+***********
+
+* Menu:
+
+* 0.14.3: 0143.
+* 0.14.2: 0142.
+* 0.14.1: 0141.
+* 0.14: 014.
+* 0.13: 013.
+* 0.12.2: 0122.
+* 0.12.1: 0121.
+* 0.12: 012.
+* 0.11: 011.
+* 0.10: 010.
+* 0.9.1: 091.
+* 0.9: 09.
+
+
+File: README.info,  Node: 0143,  Next: 0142,  Up: Changelog
+
+2.1 0.14.3
+==========
+
+*Fixes*
+   • Only use visible frames when checking image sizes.  (See Ement.el
+     #298
+     (https://github.com/alphapapa/ement.el/issues/298#issuecomment-2369652629).)
+
+
+File: README.info,  Node: 0142,  Next: 0141,  Prev: 0143,  Up: Changelog
+
+2.2 0.14.2
+==========
+
+*Changes*
+   • Avoid redundant calculations of the width of strings containing
+     images (a minor performance improvement).
+
+
+File: README.info,  Node: 0141,  Next: 014,  Prev: 0142,  Up: Changelog
+
+2.3 0.14.1
+==========
+
+*Fixes*
+   • Don’t pass string as ‘ELLIPSIS’ argument to
+     ‘truncate-string-to-width’; pass t, which defaults to value of
+     variable ‘truncate-string-ellipsis’.  (The width of the string
+     passed before, the U+2026 HORIZONTAL ELLIPSIS character, varies by
+     font, and fonts which display it with a width different than that
+     of a single space cause misalignment of columns.  Now users may
+     specify the ellipsis string according to their needs.)
+   • Try to find a graphical frame when calculating image widths for
+     column widths (or signal an error if none are available, rather
+     than leaving ‘image-size’ to signal an error).  (For example, if
+     both graphical and text frames are available, and a column’s values
+     contain an image, and the buffer is being redisplayed on a text
+     frame, try to use a graphical frame for calculating the image
+     width, rather than just signaling an error.)
+
+
+File: README.info,  Node: 014,  Next: 013,  Prev: 0141,  Up: Changelog
+
+2.4 0.14
+========
+
+*Fixes*
+   • Reduce the potential width of macro-expanded docstrings to prevent
+     byte-compiler warnings.
+
+
+File: README.info,  Node: 013,  Next: 0122,  Prev: 014,  Up: Changelog
+
+2.5 0.13
+========
+
+*Additions*
+
+   • Function ‘taxy-magit-section-insert’ takes a ‘:section-class’
+     argument, which is passed to ‘magit-insert-section’ as its ‘class’
+     argument.  This allows a custom subclass of ‘magit-section’ to be
+     passed, which, with a custom method on ‘magit-section-ident-value’,
+     allows section visibility to be cached concisely.
+
+
+File: README.info,  Node: 0122,  Next: 0121,  Prev: 013,  Up: Changelog
+
+2.6 0.12.2
+==========
+
+*Fixes*
+   • Header alignment.
+
+
+File: README.info,  Node: 0121,  Next: 012,  Prev: 0122,  Up: Changelog
+
+2.7 0.12.1
+==========
+
+*Fixes*
+   • Compilation error.
+
+
+File: README.info,  Node: 012,  Next: 011,  Prev: 0121,  Up: Changelog
+
+2.8 0.12
+========
+
+*Fixes*
+   • Section visibility caching.
+
+
+File: README.info,  Node: 011,  Next: 010,  Prev: 012,  Up: Changelog
+
+2.9 0.11
+========
+
+*Additions*
+   • Truncated column values receive help-echo tooltips so the full
+     value can be viewed.
+
+
+File: README.info,  Node: 010,  Next: 091,  Prev: 011,  Up: Changelog
+
+2.10 0.10
+=========
+
+*Fixes*
+   • Require package ‘taxy’ in package headers.
+
+
+File: README.info,  Node: 091,  Next: 09,  Prev: 010,  Up: Changelog
+
+2.11 0.9.1
+==========
+
+*Fixes*
+   • ‘taxy-magit-section-insert’ appends heading faces, so users can
+     override (or merge with) the default.
+   • ‘taxy-magit-section-format-items’ uses columns’ headers as their
+     minimum width, which preserves each column’s width regardless of
+     items’ values.
+
+
+File: README.info,  Node: 09,  Prev: 091,  Up: Changelog
+
+2.12 0.9
+========
+
+   • ‘taxy-magit-section’ moved to separate package.
+   • Better align columns whose values are images.
+
+
+File: README.info,  Node: Development,  Next: Credits,  Prev: Changelog,  Up: Top
+
+3 Development
+*************
+
+‘taxy-magit-section’ is developed in a branch of the main Taxy repo
+(https://github.com/alphapapa/taxy.el).
+
+
+File: README.info,  Node: Credits,  Next: License,  Prev: Development,  Up: Top
+
+4 Credits
+*********
+
+   • Thanks to Stefan Monnier for his feedback, and for maintaining GNU
+     ELPA.
+
+
+File: README.info,  Node: License,  Prev: Credits,  Up: Top
+
+5 License
+*********
+
+GPLv3
+
+
+
+Tag Table:
+Node: Top221
+Node: Installation874
+Node: Changelog1228
+Node: 01431523
+Node: 01421783
+Node: 01412011
+Node: 0143066
+Node: 0133271
+Node: 01223742
+Node: 01213874
+Node: 0124007
+Node: 0114144
+Node: 0104345
+Node: 0914502
+Node: 094896
+Node: Development5088
+Node: Credits5315
+Node: License5505
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

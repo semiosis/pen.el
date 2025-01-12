@@ -1,0 +1,445 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:25:56 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Sun, 17 Sep 2023 08:48:50 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:25:56 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 6618
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 10</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="chapter9.html">Chapter 9</a><a href="contents.html">Contents</a><a href="chapter11.html">Chapter 11</a></nav>
+</header>
+<h1 id="S10"><span class="chapnum">10</span> Report Command</h1>
+<p>You can use report commands to perform two basic functions.</p>
+<ul>
+<li>Request the current status of ReGIS operations.</li>
+<li>Enter graphics input mode (to use a mouse or graphics tablet).</li>
+</ul>
+<h2 id="S10.1">Report Options</h2>
+<p>Your application can request information about the following ReGIS operations.</p>
+<ul class="col2 bare">
+<li>Cursor position</li>
+<li>Macrograph contents</li>
+<li>Macrograph storage status</li>
+<li>Character set</li>
+<li>Error condition</li>
+<li>Input mode</li>
+</ul>
+<p>When your application requests information, make sure the system does not
+display the information on the screen. The data could affect your graphic images.
+There is no ReGIS control to prevent this action. All information returned
+by the VT300 ends with a carriage return (CR).</p>
+<h3 id="S10.1.1">Cursor Position</h3>
+<p>This option tells ReGIS to report the absolute screen coordinates of the current
+output cursor position. The report format is as an absolute, bracketed extent in
+screen coordinates. You use the following format for the report cursor position
+option.</p>
+<p class="example">R(P)</p>
+<p>where</p>
+<div class="example"><p><b>R</b> identifies a report command.</p>
+<p><b>P</b> identifies the report active position option.</p></div>
+<h3 id="S10.1.2">Macrograph Contents</h3>
+<p>This option tells ReGIS to report the contents of a specified macrograph. You
+use the following format for the report macrograph contents option.</p>
+<p class="note">NOTE: Reporting the contents of a macrograph may be a security risk in some
+environments. The VT300 has a Graphics Set-Up feature that lets the user disable
+this report command option.</p>
+<p class="example">R(M(&lt;call letter&gt;))</p>
+<p>where</p>
+<div class="example"><p><b>M</b> identifies a report macrograph option.</p>
+<p><b>&lt;call letter&gt;</b> is the letter of the alphabet that identifies the requested
+macrograph. The call letter is not case sensitive. For example, 'a' and 'A' identify
+the same macrograph.</p></div>
+<p>The macrograph contents report starts with a macrograph report indicator.</p>
+<p class="example">@=&lt;call letter&gt;</p>
+<p>The <b>&lt;call letter&gt;</b> is the letter of the alphabet used to identify the requested
+macrograph. The report ends with a macrograph terminator and a carriage return.</p>
+<p class="example">@;&lt;CR&gt;</p>
+<p>The terminal also reports any control characters saved as part of the macrograph.
+If there is no macrograph defined for &lt;call letter&gt;, the terminal reports
+a null macrograph (no characters) enclosed in the indicator and terminator.</p>
+<h3 id="S10.1.3">Macrograph Storage Status</h3>
+<p>This option tells ReGIS to report how much storage space can be used for
+macrographs, and how much of that space is free. You use the following format
+for the report macrograph storage option.</p>
+<p class="example">R(M(=))</p>
+<p>where</p>
+<div class="example"><p><b>M</b> identifies a report macrograph option.</p>
+<p><b>=</b> identifies the report macrograph storage suboption.</p></div>
+<p>The terminal reports this information as two integer strings, separated by a
+comma and enclosed in double quotes.</p>
+<p class="example">"aaaa, tttt"</p>
+<p>where</p>
+<div class="example"><p><b>aaaa</b> is the amount of space still available for macrographs.</p>
+<p><b>tttt</b> is the total amount of storage space that can be used for
+macrographs.</p><p></p></div>
+<p>You can find the amount of storage space in current use by subtracting the
+available space from the total allocated.</p>
+<p class="example">Macrograph space in use = tttt - aaaa</p>
+<h3 id="S10.1.4">Character Set</h3>
+<p>This option tells ReGIS to report the name of the character set currently selected
+for load command operations. You use the following format for the report
+character set option.</p>
+<p class="example">R(L)</p>
+<p>where</p>
+<p class="example"><b>L</b> identifies the report character set option.</p>
+<p>The terminal reports the name of the character set in the following format.</p>
+<p class="example">A'&lt;name&gt;'</p>
+<p>The <b>&lt;name&gt;</b> is the name assigned to the character set by the specify name
+option for the load command.</p>
+<h3 id="S10.1.5">Error Condition</h3>
+<p>This option tells ReGIS to report the last error detected by the parser. You can
+use the resynchronization character (;) to clear errors. You use the following
+format for the report error condition option.</p>
+<p class="example">R(E)</p>
+<p>where</p>
+<p class="example"><b>E</b> identifies the report error option.</p>
+<p>The terminal reports the last error in the following format.</p>
+<p class="example">"&lt;N&gt;,&lt;M&gt;"</p>
+<p>where</p>
+<div class="example"><p><b>&lt;N&gt;</b> is a decimal integer error code.</p>
+<p><b>&lt;M&gt;</b> is the decimal ASCII code of the character flagged as the cause of
+the error or 0, as noted for each error code. <a href="#T10-1">Table 10-1</a> describes the possible
+error codes reported by the error condition option.</p></div>
+<table id="T10-1" class="majortable">
+<caption>Table 10-1 Report Command Error Codes (Error Condition Codes)</caption>
+<thead>
+<tr>
+<th>Code</th>
+<th>Condition</th>
+<th>&lt;M&gt; Error Character</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>No error</td>
+<td>Always 0</td>
+<td>No error detected since the last resynchronization character (;).</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Ignore character</td>
+<td>The ignored character</td>
+<td>An unexpected character was found and ignored.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Extra option coordinates</td>
+<td>Always 0</td>
+<td>The syntax S(H[X,Y][X,Y]) contained more than two coordinate pairs. The extra pairs were ignored.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Extra coordinate values</td>
+<td>Always 0</td>
+<td>The syntax [X,Y] contained more than two coordinate values. The extra values were ignored.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alphabet out of range</td>
+<td>Always 0</td>
+<td>The syntax L(A&lt;0 to 3&gt;) contained a number less than 0 or greater than 3.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Reserved</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Reserved</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Begin/start overflow</td>
+<td>(B) or (S)</td>
+<td>The stacking limit of 16 (B) and (S) options for position and vector commands was exceeded. Extra (B) or (S) options were ignored.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Begin/start underflow</td>
+<td>(E)</td>
+<td>A position or vector command contained an (E) option without a corresponding (B) option. The (E) option was ignored.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Text standard size error</td>
+<td>Always 0</td>
+<td>A text command selected a standard character size number of less than 0 or greater than 16.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S10.2">Graphics Input Modes – I</h2>
+<p>This option lets you set ReGIS to one of two graphics input modes, one-shot or
+multiple. In a graphics input mode, you can use a locator device (mouse or
+graphics tablet) to move the graphics input cursor and send position reports.</p>
+<h3 id="S10.2.1">One-Shot Graphics Input Mode</h3>
+<p>This is the default input mode. In one-shot mode, the terminal suspends processing
+of new data from the application until ReGIS sends a position report.
+The terminal buffers any data received from the application in this mode.</p>
+<h4 id="S10.2.1.1">Entering One-Shot Mode</h4>
+<p>You use the input mode option to enter one-shot
+mode. You use the following format for this option.</p>
+<p class="example">R(I0)</p>
+<p>where</p>
+<div class="example"><p><b>I</b> identifies the input mode option.</p>
+<p><b>0</b> identifies the input mode as one-shot.</p></div>
+<p>After the terminal receives a one-shot mode option, the input cursor appears on
+the screen.</p>
+<p class="note">NOTE: When the terminal receives R(I), it returns a carriage return (CR).
+Applications can use the CR for synchronization.</p>
+<h4 id="S10.2.1.2">Input Cursor Movement</h4>
+<p>When you use a mouse or graphics tablet, the input
+cursor moves as you move the locator device. See <a href="chapter15.html">Chapter 15</a> for details on
+using a locator device. You can also move the cursor by pressing one of the
+four arrow keys.</p>
+<table class="dpadded">
+<thead>
+<tr>
+<th>Press</th>
+<th>To move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrow key</td>
+<td>The cursor moves one pixel in the direction of the arrow – up, down, left or right.</td>
+</tr>
+<tr>
+<td>Shift-arrow key</td>
+<td>The cursor moves 10 pixels in the direction of the arrow.</td>
+</tr>
+</tbody>
+</table>
+<p>If you move the cursor past a screen boundary, the cursor wraps to the other
+side of the screen.</p>
+<h4 id="S10.2.1.3">Requesting a Report</h4>
+<p>To request a position report in one-shot mode, the
+application must send a report position interactive option to the terminal. The
+format of this option is as follows.</p>
+<p class="example">R(P(I))</p>
+<p>where</p>
+<p class="example"><b>P(I)</b> identifies the report position interactive option.</p>
+<p>After the application sends the request, it must wait for the terminal to send
+the report.</p>
+<h4 id="S10.2.1.4">Sending a Report</h4>
+<p>The terminal sends a position report when you press any
+non-arrow key that is not dead, or a button on the locator device. After you
+press the key or button, the following occurs.</p>
+<ul>
+<li><p>The terminal sends the ASCII code of the key pressed to the host.</p></li>
+<li><p>The terminal sends the current position coordinates of the input cursor
+to the host. These position coordinates are absolute X and Y
+values, such as [X,Y].</p></li>
+<li><p>The input cursor disappears from the screen, and the terminal exits
+one-shot mode.</p></li>
+</ul>
+<p><a href="chapter15.html">Chapter 15</a> describes the format of the report and provides more information
+on one-shot graphics input mode.</p>
+<h3 id="S10.2.2">Multiple Graphics Input Mode</h3>
+<p>This mode lets you send more than one cursor position report without exiting
+graphics input mode. The terminal immediately processes characters it receives
+from the host, instead of buffering them as in one-shot mode.</p>
+<h4 id="S10.2.2.1">Entering Multiple Mode</h4>
+<p>You use the input mode option to enter multiple
+mode. You use the following format for this option.</p>
+<p class="example">R(I1)</p>
+<p>where</p>
+<div class="example"><p><b>I</b> identifies the input mode option.</p>
+<p><b>1</b> identifies the input mode as multiple.</p></div>
+<p>When the terminal receives the multiple graphics input mode option, the input
+cursor appears on the screen. Unlike one-shot mode, the terminal continues to
+process received data.</p>
+<h4 id="S10.2.2.2">Input Cursor Movement</h4>
+<p>When you use a mouse or graphics tablet, the cursor
+moves as you move the locator device. See <a href="chapter15.html">Chapter 15</a> for details on using
+a locator device. In multiple mode, you can also move the cursor by pressing an
+arrow key.</p>
+<h4 id="S10.2.2.3">Sending a Report</h4>
+<p>There are two ways to make the terminal send a position report in multiple mode.</p>
+<ul>
+<li><p><strong>Request a report by sending R(P(I)) to the terminal.</strong><br/>
+When the terminal receives R(P(I)) (report position interactive option)
+in multiple mode, it immediately returns a position report to
+the application. The terminal remains in multiple mode.</p></li>
+<li><p><strong>Press a locator button.</strong><br/>
+When you press a locator button, the terminal immediately sends
+the cursor position in absolute [X,Y] coordinates. You can continue
+to send reports to the application without exiting multiple mode.</p></li>
+</ul>
+<p><a href="chapter15.html">Chapter 15</a> describes the format of a position report and provides more information
+on multiple mode.</p>
+<h4 id="S10.2.2.4">Exiting Multiple Mode</h4>
+<p>The terminal stays in multiple mode until the applications
+sends the R(I0) option. This option makes the terminal exit multiple mode
+and enter one-shot mode. See "<a href="#S10.2.1">One-Shot Graphics Input Mode</a> for more information.</p>
+<h3 id="S10.2.3">Report Position Interactive – P(I)</h3>
+<p>This option lets an application request an input cursor position report at any
+time. You only use this option when the terminal is in a graphics input mode
+(one-shot or multiple). You use the following format for this option.</p>
+<p class="example">R(P(I))</p>
+<p>where</p>
+<p class="example"><b>P(I)</b> identifies the report position interactive option.</p>
+<p>When an application sends R(P(I)), the following occurs.</p>
+<ul>
+<li><p><strong>In one-shot mode</strong><br/>
+The terminal does not return an input cursor position report until
+you press an active nonarrow key or a button on the locator device.
+The report contains this ASCII keystroke, followed by the cursor position
+in absolute [X,Y] coordinates.</p></li>
+<li><p><strong>In multiple mode</strong><br/>
+The terminal immediately returns an input cursor position report.
+The report contains only the cursor position in absolute [X,Y]
+coordinates.</p></li>
+</ul>
+<p>See <a href="chapter15.html">Chapter 15</a> for information on the report format.</p>
+<h2 id="S10.3">Report Command Summary</h2>
+<p><a href="#T10-2">Table 10-2</a> is a summary of <b>R</b> command options, including any default values.</p>
+<table id="T10-2" class="majortable">
+<caption>Table 10-2 Report Command Summary</caption>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(P)</td>
+<td>None</td>
+<td><p><strong>Cursor position</strong><br/>
+Reports the current active position.</p></td>
+</tr>
+<tr>
+<td>(M(&lt;call letter&gt;))</td>
+<td>None</td>
+<td><p><strong>Macrograph contents</strong><br/>
+Reports the contents of the macrograph identified by &lt;call letter&gt;.</p></td>
+</tr>
+<tr>
+<td>(M(=))</td>
+<td>None</td>
+<td><p><strong>Macrograph storage status</strong><br/>
+Reports how much space the terminal has assigned to macrograph storage, and how much of that space is currently free.</p></td>
+</tr>
+<tr>
+<td>(L)</td>
+<td>None</td>
+<td><p><strong>Character set</strong><br/>
+Reports which character set (1 to 3) is selected for loading.</p></td>
+</tr>
+<tr>
+<td>(E)</td>
+<td>None</td>
+<td><p><strong>Error</strong><br/>
+Reports the last error found by the parser.</p></td>
+</tr>
+<tr>
+<td>(In)</td>
+<td>0</td>
+<td><p><strong>Graphics input mode</strong><br/>
+Selects one-shot mode (0) or multiple mode (1).</p></td>
+</tr>
+<tr>
+<td>(P(I))</td>
+<td>None</td>
+<td><p><strong>Report position interactive</strong><br/>
+Requests an input cursor position report.</p></td>
+</tr>
+</tbody>
+</table>
+<footer>
+<nav class="sections"><a href="chapter9.html">Chapter 9</a><a href="contents.html">Contents</a><a href="chapter11.html">Chapter 11</a></nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1058 @@
+HTTP/1.1 200 OK
+Date: Tue, 07 Jan 2025 07:23:54 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Last-Modified: Wed, 25 Oct 2023 20:50:51 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Expires: Thu, 06 Feb 2025 07:23:54 GMT
+Vary: Accept-Encoding
+X-UA-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+Content-Length: 13072
+Keep-Alive: timeout=5, max=100
+Content-Type: application/xhtml+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>VT330/VT340 Programmer Reference Manual: Chapter 1</title>
+<link href="vt330.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="/cover-logo-096.png" sizes="96x96"/>
+</head>
+<body>
+<header>
+<a href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="92" height="16" version="1.1" id="vt100-net-site-logo">
+  <title>VT100.net</title>
+  <style>
+  .blk { fill: #000000 }
+  .g25 { fill: #626262 }
+  .g50 { fill: #9b9b9b }
+  .g75 { fill: #cccccc }
+  .grd { fill: #006600 }
+  .grl { fill: #00ff00 }
+  .scanlines { fill: black; stroke: #5e5e5e; stroke-width: 0.4; paint-order:stroke fill markers }
+  .dotnet { fill: #404040 }
+  @media (prefers-color-scheme: dark) {
+    .blk { fill: #626262 }
+    .g25 { fill: #9b9b9b }
+    .g50 { fill: #cccccc }
+    .g75 { fill: #ffffff }
+    .scanlines { fill: #00ff00; stroke: #009900 }
+    .dotnet { fill: #909090 }
+  }
+  </style>
+  <g id="term">
+    <rect class="g50" x="05" y="02" width="9" height="1"/>
+    <rect class="blk" x="14" y="02" height="1" width="1"/>
+    <rect class="g50" x="04" y="03" width="11" height="8"/>
+    <rect class="g25" x="05" y="03" width="9" height="7"/>
+    <rect class="blk" x="15" y="03" height="8" width="1"/>
+    <rect class="blk" x="06" y="04" width="8" height="6"/>
+    <rect class="grd" x="07" y="05" width="6" height="4"/>
+    <rect class="grl" x="08" y="05" width="1" height="1"/>
+    <rect class="grl" x="10" y="05" width="1" height="1"/>
+    <rect class="grl" x="07" y="06" width="1" height="1"/>
+    <rect class="grl" x="09" y="06" width="1" height="1"/>
+    <rect class="grl" x="08" y="07" width="1" height="1"/>
+    <rect class="grl" x="10" y="07" width="1" height="1"/>
+    <rect class="blk" x="05" y="11" height="1" width="10"/>
+    <rect class="blk" x="07" y="12" width="1" height="1"/>
+    <rect class="g25" x="08" y="12" width="4" height="1"/>
+    <rect class="blk" x="12" y="12" width="1" height="1"/>
+    <rect class="g25" x="03" y="13" width="13" height="1"/>
+    <rect class="g75" x="04" y="13" width="1" height="1"/>
+    <rect class="g75" x="06" y="13" width="1" height="1"/>
+    <rect class="g75" x="08" y="13" width="1" height="1"/>
+    <rect class="g75" x="10" y="13" width="1" height="1"/>
+    <rect class="g75" x="12" y="13" width="1" height="1"/>
+    <rect class="g75" x="14" y="13" width="1" height="1"/>
+    <rect class="blk" x="16" y="13" width="1" height="1"/>
+    <rect class="g25" x="02" y="14" width="15" height="1"/>
+    <rect class="blk" x="17" y="14" width="1" height="1"/>
+    <rect class="blk" x="02" y="15" width="16" height="1"/>
+  </g>
+  <g id="g1754" style="display:inline">
+    <g class="scanlines">
+      <path d="m 21.632883,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480009,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -3.584007,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -2.688005,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0.896002,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1765"/>
+      <path d="m 30.342891,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 6.794678 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -6.794678 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 2.688004,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1767"/>
+      <path d="m 40.490903,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 2.314671 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -2.314671 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896001,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 1.792003,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 0,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 0,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -1.792003,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 5.002676 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -5.002676 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1769"/>
+      <path class="scanlines" d="m 47.80491,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210673 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210673 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.41867 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.41867 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.37601,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.37601,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.37601,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480009,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.41867 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.41867 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210673 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210673 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1771"/>
+      <path class="scanlines" d="m 56.514917,3.3333123 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 3.210672 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -3.210672 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -0.896002,1.86667 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 3.584007,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -4.480008,1.86667 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613339 0.07467,0.4666676 0.186667,0.4666676 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666676 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666701 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112001,0 -0.186667,0.2053337 -0.186667,0.4666675 z m 5.376009,0 c 0,0.2613338 0.07467,0.4666675 0.186667,0.4666675 h 1.418669 c 0.112001,0 0.186667,-0.2053337 0.186667,-0.4666675 c 0,-0.2613338 -0.07467,-0.4666675 -0.186667,-0.4666675 h -1.418669 c -0.112,0 -0.186667,0.2053337 -0.186667,0.4666675 z m -5.376009,1.8666696 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m 5.376009,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m -4.480008,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112001,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z m 3.584007,0 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 1.418669 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -1.418669 c -0.112001,0 -0.186667,0.205334 -0.186667,0.466667 z m -2.688005,1.86667 c 0,0.261334 0.07467,0.466668 0.186667,0.466668 h 3.210672 c 0.112,0 0.186667,-0.205334 0.186667,-0.466668 c 0,-0.261333 -0.07467,-0.466667 -0.186667,-0.466667 h -3.210672 c -0.112,0 -0.186667,0.205334 -0.186667,0.466667 z" id="path1773"/>
+    </g>
+    <g class="dotnet">
+      <path d="m 65.076956,12.647997 q 0.466667,0 0.784001,0.336 q 0.336001,0.336001 0.336001,0.802669 q 0,0.504 -0.354668,0.858668 q -0.354667,0.354667 -0.858668,0.354667 q -0.448001,0 -0.802668,-0.298667 q -0.336001,-0.298667 -0.336001,-0.746668 q 0,-0.541335 0.354668,-0.914669 q 0.354667,-0.392 0.877335,-0.392 z" id="path1756"/>
+      <path d="m 68.362297,13.394665 l 1.661336,-4.6480086 q 0.112,-0.2240004 0.09333,-0.5040009 q -0.01867,-0.2800005 -0.224001,-0.2800005 q -0.410667,0 -0.933335,0.4293341 q -0.504001,0.4106674 -0.578668,0.4106674 q -0.205333,0 -0.205333,-0.3920007 q 0,-0.3920007 0.858668,-1.1013353 q 0.858668,-0.7093346 1.680003,-0.7093346 q 1.064002,0 0.634668,1.86667 q -0.01867,0.093333 0.056,0.1306669 q 0.07467,0.037333 0.149334,-0.018667 q 1.997336,-1.9786702 3.714673,-1.9786702 q 0.634668,0 0.765335,0.7840014 q 0.149333,0.7653347 -0.168001,1.6426696 l -1.437336,4.1253411 q -0.112,0.317334 0.149334,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616001,-0.448001 q 0.130667,0 0.130667,0.242667 q 0,0.522668 -0.952001,1.306669 q -0.952002,0.765335 -1.75467,0.765335 q -0.821335,0 -0.821335,-0.765335 q 0,-0.28 0.112,-0.578668 l 1.493336,-4.2560073 q 0.597335,-1.6426696 -0.01867,-1.6426696 q -0.840001,0 -1.848003,1.1573354 q -1.008002,1.1573354 -1.773336,2.6133385 q -0.746668,1.437335 -1.269336,2.893338 q -0.186667,0.560001 -0.448001,0.578668 q -0.224,0.01867 -0.560001,-0.186667 q -0.317334,-0.186667 -0.317334,-0.280001 q 0,-0.224 0.280001,-1.026668 z" id="path1758"/>
+      <path d="m 79.487639,10.071992 q 0,0.130667 0.112,0.130667 q 1.026669,0 1.829337,-0.8026681 q 0.821335,-0.8213348 0.821335,-1.6053362 q 0,-0.4480008 -0.672001,-0.4480008 q -0.448001,0 -1.269336,1.0266685 q -0.821335,1.0080018 -0.821335,1.6986696 z m 2.370671,-3.4720061 q 1.792003,0 1.792003,1.4373359 q 0,1.0453352 -1.512002,1.9600035 q -1.493336,0.8960017 -2.725339,0.8960017 q -0.130667,0 -0.224,0.317334 q -0.09333,0.298667 -0.09333,0.616001 q 0,0.728001 0.280001,1.250669 q 0.28,0.522668 0.858668,0.522668 q 0.373334,0 0.802668,-0.205334 q 0.429334,-0.224001 0.728002,-0.448001 q 0.298667,-0.224 0.354667,-0.224 q 0.261334,0 0.261334,0.448 q 0,0.429335 -0.989335,1.064002 q -0.989336,0.616001 -1.978671,0.616001 q -0.914668,0 -1.437336,-0.821334 q -0.522667,-0.821335 -0.522667,-1.885337 q 0,-2.053337 1.400002,-3.7893403 q 1.400003,-1.7546698 3.005339,-1.7546698 z" id="path1760"/>
+      <path d="m 87.663666,4.9759829 q 0.317334,0 0.317334,0.4666675 q 0,0.4480009 -0.280001,1.5306695 h 1.885337 q 0.485334,0 0.485334,0.2800005 q 0,0.186667 -0.298667,0.4853342 q -0.280001,0.2800005 -0.560001,0.2800005 h -1.736003 l -1.362669,5.1333429 q -0.07467,0.317334 0.149333,0.317334 q 0.392001,0 0.914668,-0.448001 q 0.522668,-0.448001 0.616002,-0.448001 q 0.130666,0 0.130666,0.242667 q 0,0.522668 -0.914668,1.306669 q -0.896001,0.765335 -1.69867,0.765335 q -0.821334,0 -0.821334,-0.765335 q 0,-0.130667 0.112,-0.578668 l 1.456002,-5.5253429 h -0.877334 q -0.429335,0 -0.429335,-0.2613338 q 0,-0.2426671 0.242668,-0.5040009 q 0.261333,-0.2800005 0.541334,-0.2800005 h 0.746668 l 0.261334,-1.0453352 q 0.03733,-0.2240005 0.373334,-0.5786678 q 0.354667,-0.373334 0.746668,-0.373334 z" id="path1762"/>
+    </g>
+  </g>
+</svg></a> VT330/VT340 Programmer Reference Manual
+<nav class="sections"><a href="about.html">About</a><a href="contents.html">Contents</a><a href="chapter2.html">Chapter 2</a></nav>
+</header>
+<h1 id="S1"><span class="chapnum">1</span> Introduction to ReGIS</h1>
+<h2 id="S1.1">What is ReGIS?</h2>
+<p><dfn>ReGIS</dfn> is a graphics instruction set from Digital. This chapter describes how to
+use ReGIS with the VT300. You can use ReGIS to create graphics for display
+or printing.</p>
+<p>ReGIS is a symbol system describing the parts of an image. You build an image
+by combining standard geometric forms: dots, lines, curves, circles, and
+arcs. You can also define text characters and add shading to your images.</p>
+<p>ReGIS lets you describe each geometric form with a few command characters.
+For example, ReGIS lets you draw a circle of any size, at any point on the
+screen. You simple specify (1) the command to draw the circle, (2) the location of
+the center of the circle, and (3) any point on the circumference of the circle.</p>
+<p>ReGIS has 10 basic commands (<a href="#T1-1">Table 1-1</a>). Each command has several options.
+The following chapters describe each command and its options.</p>
+<table id="T1-1" class="majortable">
+<caption>Table 1-1 ReGIS Command Summary</caption>
+<thead>
+<tr>
+<th>Command Letter</th>
+<th>ReGIS Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Screen</td>
+<td>Provides screen controls, such as erasing the screen.</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Write</td>
+<td>Provides writing controls, such as writing shades.</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Position</td>
+<td>Moves the graphics cursor without performing any writing.</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Vector</td>
+<td>Draws vectors (straight lines) between the screen locations you specify in the command.</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Curve</td>
+<td>Draws circles and arcs, using the screen locations you specify in the command.</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Text</td>
+<td>Controls the display of text strings in graphics, and lets you specify characters to display.</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Load</td>
+<td>Defines and loads alternate characters you can display with the text command.</td>
+</tr>
+<tr>
+<td>@</td>
+<td>Macro­graph</td>
+<td>Defines a command string as a macrograph. You use macrographs to store and recall other ReGIS command strings.</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Report</td>
+<td>Reports information such as the active position and error codes.</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Polygon Fill</td>
+<td>Fills in a single closed figure, such as a circle or square.</td>
+</tr>
+<tr>
+<td>;</td>
+<td>Re­syn­chron­ization</td>
+<td>Resynchronizes the flow of ReGIS command strings to the beginning of a new command.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S1.2">Conventions</h2>
+<p>The following conventions apply to the ReGIS commands in this manual.</p>
+<ul>
+<li><p>You can use uppercase and lowercase letters with ReGIS commands
+(except text in a quoted string). This manual uses uppercase letters
+for clarity.</p></li>
+<li><p>Angle brackets <strong>&lt; &gt;</strong> indicate that you can select different values.
+The &lt;values&gt; in the angle brackets define what type of information
+you can use, but the angles are not part of the ReGIS syntax.</p></li>
+<li><p><strong>[X,Y]</strong> indicates you can select screen position values. The brackets
+are part of the ReGIS command syntax. You can use both values (X and Y) or just
+one value (X or Y).</p></li>
+</ul>
+<h2 id="S1.3">ReGIS Command Syntax</h2>
+<p>This section describes the format you use for ReGIS commands. The section
+also describes the numeric values you can use and the order that ReGIS performs
+commands in.</p>
+<h3 id="S1.3.1">Command Key Letter</h3>
+<p>ReGIS commands begin with a single character that identifies the command
+type, followed by any selected options and arguments for that command. This
+character is called a <dfn>command key letter</dfn>. For example, an S indicates a screen
+control command.</p>
+<p class="example">S &lt;option&gt; &lt;option&gt;</p>
+<p>You only have to use one command key letter for a series of arguments, until
+you select a new command type. For example, here is a sequence of screen (S)
+and position (P) commands.</p>
+<p class="example">S &lt;option&gt; &lt;argument&gt; &lt;argument&gt; P &lt;argument&gt; S &lt;argument&gt;</p>
+<p>If you use an argument without a command key letter, ReGIS links that argument
+to the last identified command.</p>
+<h3 id="S1.3.2">Argument and Option Formats</h3>
+<p>An <dfn>argument</dfn> is any variable you include in a command to modify the action of
+that command. There are four types of arguments used in ReGIS.</p>
+<ul>
+<li><p><dfn>Options and suboptions</dfn><br/>Are always enclosed in parentheses.</p></li>
+<li><p><dfn>Digit strings</dfn><br/>Define numeric parameters for command and options.</p></li>
+<li><p><dfn>Bracketed extents</dfn><br/>Define position coordinates, or height and width values for text characters.</p></li>
+<li><p><dfn>Quoted text strings</dfn><br/>Define text for display or printing.</p></li>
+</ul>
+<p>All ReGIS data is enclosed in parentheses, brackets, or quotes, except for the
+following.</p>
+<ul>
+<li>Command key letters</li>
+<li>Macrograph command options that are defined by the @ sign as a command's key lettter</li>
+<li>Pixel vector (PV) offset values</li>
+<li>Hex values used to define the contents of a character cell</li>
+</ul>
+<p>This section describes the meaning of parentheses, brackets, and quotes in
+ReGIS commands. The section also describes how commas and spaces affect
+commands.</p>
+<h4 id="S1.3.2.1">Parentheses</h4>
+<p>You use parentheses to enclose options and suboptions.</p>
+<p class="example">Command(Option(Suboption))</p>
+<p>The left parenthesis, (, defines the beginning of the option or suboption. The
+right parenthesis, ), defines the end. ReGIS assumes that any letter not enclosed
+in parentheses or quotes is a command key letter.</p>
+<p>You must enclose each suboption in a separate nested set of parentheses.
+Otherwise, ReGIS tries to process the suboption as an option. This could cause
+errors in your program.</p>
+<p>Here are some examples of various ReGIS command with options and suboptions
+in parentheses.</p>
+<div class="example"><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning of Parentheses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S(E)</td>
+<td><b>E</b> is an erase option to the <b>S</b> screen control command.</td>
+</tr>
+<tr>
+<td>W(I0,F3)</td>
+<td><p><b>I</b> and <b>F</b> are foreground intensity and plane select options
+to the <b>W</b> write control command.</p>
+<p>The <b>0</b> and <b>3</b> are numeric arguments to the options. A
+comma separates the options. You can also use spaces to
+separate options. (See the <a href="#S1.3.2.4">section on commas and spaces</a>.)</p></td>
+</tr>
+<tr>
+<td>P(W(M100))</td>
+<td><p>This is a pixel vector (PV) multiplication temporary write
+option to the <b>P</b> position command.</p>
+<p>The <b>W</b> write command is used as an option.</p>
+<p>The <b>M</b> multiplication option of the write control command
+is used as a suboption.</p></td>
+</tr>
+<tr>
+<td>V(W(I(R)))</td>
+<td><p>This example defines a temporary write option affecting
+the value of the foreground intensity for a vector command.</p>
+<p>The <b>W</b> write command is used as an option.</p>
+<p>The <b>I</b> foreground intensity option to the write control command
+is used as a suboption.</p>
+<p>The <b>R</b> argument to the I suboption is enclosed in a third set of parentheses,
+since this argument is a letter value.</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>As these examples show, you must use an equal number of opening and closing
+parentheses. For example, take the command</p>
+<p class="example">V(W(I(R)))</p>
+<p>The outer set of parentheses define the W option. The second set of parentheses
+define the I suboption. The inner set of parentheses define the R sub-suboption.</p>
+<h4 id="S1.3.2.2">Brackets</h4>
+<p>You use brackets to enclose two types of numeric values.</p>
+<ul>
+<li>Coordinate position values</li>
+<li>Height and width values</li>
+</ul>
+<p>Coordinate position values are arguments to commands, options, and suboptions.
+The coordinates can represent a specific point on the screen (known as
+an absolute value), some amount of displacement (known as a relative value), or
+a combination of the two.</p>
+<p>Height and width values are arguments to text commands only. These values
+represent relative displacement values for text options.</p>
+<p class="note">NOTE: For more information on screen coordinate values, see "<a href="#...">Screen
+Coordinates</a>" in this chapter.</p>
+<h4 id="S1.3.2.3">Quotes</h4>
+<p>You use quotes to enclose any of the following ReGIS elements.</p>
+<ul>
+<li>Text to display on the screen (Used with text commands.)</li>
+<li>A printable character to use for shading</li>
+<li>A name for a character set selected by a load command</li>
+<li>A single ASCII character used as a call letter for load cell arguments to a load command</li>
+</ul>
+<p>In all cases, you can use double quotes ("), or single quotes ('). The quote mark
+is the first character of the argument, so you do not need parentheses. The
+first quote mark defines the start of the argument, while the second defines
+the end.</p>
+<h4 id="S1.3.2.4">Commas and Spaces</h4>
+<p>You can use commas and spaces to separate option
+values in ReGIS commands. The commas and spaces make command strings
+easier to read.</p>
+<p>There are two cases where you must use commas: (1) to separate numeric values
+in brackets such as [100,200]; (2) when you have an E command (such as
+an erase screen to specified background) that follows a numeric value. ReGIS
+can handle exponential values, so you must insert a comma between the numeric
+value and the E command letter. This comma prevents ReGIS from assuming
+that the numeric value is exponential.</p>
+<p>ReGIS does not include commas and spaces as part of a graphic image, unless
+you use them in a quoted text string for a text command.</p>
+<h3 id="S1.3.3">Numeric Values</h3>
+<p>You send numeric values as decimal integer strings to the VT300. You can use
+signed values where appropriate. The VT300 is an integer-oriented device.
+However, it accepts floating point specifiers, truncating those values to 16-bit
+signed integers for internal use.</p>
+<p>The VT300 also accepts exponential values. You define an exponential value by
+using the letter E and the power of 10 after a decimal integer string. This
+feature lets you run ReGIS commands written in higher level languages (such
+as FORTRAN and Pascal) on the VT300.</p>
+<h3 id="S1.3.4">When Does ReGIS Perform Commands?</h3>
+<p>ReGIS performs commands and options immediately. ReGIS acts on each option,
+suboption, and argument as soon as ReGIS receives the command.</p>
+<h2 id="S1.4">Control Characters</h2>
+<p>ReGIS recognizes only four control characters.</p>
+<ul>
+<li>CR (carriage return)</li>
+<li>LF (line feed)</li>
+<li>BS (backspace)</li>
+<li>HT (horizontal tab)</li>
+</ul>
+<p>You can only use these control characters in a quoted string. Since ReGIS ignores
+control characters outside a quoted string, you can use line feeds and
+carriage returns to separate command strings. This makes your command
+strings easier to read, without affecting the graphic image.</p>
+<h2 id="S1.5">VT300 Screen</h2>
+<p>The VT300 screen has 384,000 pixels arranged in 800 vertical columns by 480
+horizontal rows. A <dfn>pixel</dfn> (picture element) is the smallest unit the terminal can
+display.</p>
+<p>ReGIS lets you draw lines, curves, and text by turning on specific pixels on the
+screen. For example, when you turn on several pixels in a row, a line appears
+on the screen. You can turn any one of the 384,000 individual pixels on or off,
+by using an X-Y coordinate system.</p>
+<h2 id="S1.6">X-Y Coordinate System</h2>
+<p>You can select any pixel on the screen by specifying its location. You use an
+[X,Y] coordinate to specify the location of the pixel. The X-coordinate specifies
+the horizontal position value. The Y-coordinate specifies the vertical position
+value. The pixel is at the intersection of the X and Y values.</p>
+<p><a href="#F1-1">Figure 1-1</a> shows a typical coordinate system. The [X,Y] coordinates specify a
+point in the coordinate system.</p>
+
+<figure id="F1-1">
+<img src="ma-0653-83.png" alt=""/>
+<figcaption>Figure 1-1 Typical X-Y Coordinate System</figcaption>
+</figure>
+
+<h3 id="S1.6.1">Syntax</h3>
+<p>ReGIS commands use a specific syntax for X- and Y-coordinates in ReGIS
+commands. There are three simple rules for specifying a coordinate position.</p>
+<ul>
+<li>Enclose the coordinates in brackets.</li>
+<li>Specify the X-coordinate (if any) first.</li>
+<li>Put a comma before any Y-coordinate, even if there is no X-coordinate.</li>
+</ul>
+<p>You do not have to specify both an X and Y value in all cases. In fact, you
+only have to specify an X or Y value that is changing from the current value.</p>
+<p>If you only change the X value, simple specify the new X value in brackets.
+ReGIS recognizes [X] as meaning the Y value is unchanged. If you only change
+the Y value, use a comma before the new Y value in the brackets. ReGIS recognizes
+[,Y] as meaning the X value is unchanged. The comma indicates that
+the next coordinate is a Y value.</p>
+<p>You specify coordinate values as numeric values assigned to points on the
+screen. This method is called display addressing. You can use a default value,
+embedded decimal values, or exponential values. See the display addressing option
+to the screen command (<a href="chapter2.html">Chapter 2</a>).</p>
+<p>You can use absolute values (referring to a specific point), relative values (referring
+to a point as it relates to the current active position), or a combination of
+the two. Here are some examples of coordinate values.</p>
+<table>
+<thead>
+<tr>
+<th>Coordinate</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[10,86]</td>
+<td>Absolute value for X and Y</td>
+</tr>
+<tr>
+<td>[52]</td>
+<td>Absolute value for X, with Y unchanged</td>
+</tr>
+<tr>
+<td>[,121]</td>
+<td>Absolute value for Y, with X unchanged</td>
+</tr>
+<tr>
+<td>[+15,-10]</td>
+<td>Relative values for X and Y</td>
+</tr>
+<tr>
+<td>[+10,100]</td>
+<td>Relative value for X, absolute value for Y</td>
+</tr>
+<tr>
+<td>[100,-25]</td>
+<td>Absolute value for X, relative value for Y</td>
+</tr>
+<tr>
+<td>[6.25,10.4]</td>
+<td>Absolute embedded decimal values for X and Y</td>
+</tr>
+<tr>
+<td>[.1E3,1000E-1]</td>
+<td>Absolute exponential values for X and Y</td>
+</tr>
+</tbody>
+</table>
+<h3 id="S1.6.2">Screen Coordinates</h3>
+<p>The VT300 starts counting [X,Y] coordinates at the upper-left corner of the
+screen. The first pixel is at location [0,0], called the <dfn>screen origin</dfn>.</p>
+<p>X-coordinates range from 0 (the left edge of the screen), through 799 (the right
+edge). Y-coordinates range from 0 (the top of the screen), through 479 (the bottom).
+This provides an 800 (0 to 799) by 480 (0 to 479) array of specific screen
+locations.</p>
+<h2 id="S1.7">Graphics Cursors</h2>
+<p>The VT300 has two types of graphics cursors, an output cursor and input
+cursor.</p>
+<h3 id="S1.7.1">Output Cursor</h3>
+<p>The output cursor only appears when the terminal is in ReGIS mode and waiting
+for ReGIS input from the host. You can select whether or not to display
+the output cursor by using the <b>Graphics Cursor</b> feature in the Graphics Set-Up
+screen, or by using the ReGIS S(C) command ("<a href="chapter2.html#...">Graphics Cursor Control</a>" in
+<a href="chapter2.html">Chapter 2</a>). You can select the style of the output cursor by using the ReGIS
+S(C(H)) command ("<a href="chapter2.html#...">Graphics Output Cursor</a>" in <a href="chapter2.html">Chapter 2</a>). See the
+"<a href="#S1.7.4">Cursor Styles</a>" section that follows.</p>
+<h3 id="S1.7.2">Input Cursor</h3>
+<p>The input cursor appears when the terminal is in ReGIS graphics input mode.
+You can move the input cursor by using the arrow keys on the keyboard, or by
+using a locator device such as a mouse. You can select the style of input
+cursor by using the ReGIS S(C(I)) command ("<a href="chapter2.html#...">Graphics Input Cursor</a>" in
+<a href="chapter2.html">Chapter 2</a>).</p>
+<h3 id="S1.7.3">Cursor Position</h3>
+<p>The graphics cursor (input or output) indicates the active screen location. This
+location is either the screen origin [0,0] or the point most recently moved or
+drawn to.</p>
+<p>The graphics cursor is at the screen origin when you enter ReGIS mode after a
+power-up or reset condition. If you exit ReGIS, then enter ReGIS again, the
+cursor is at the last position drawn or moved to during the previous ReGIS
+activity.</p>
+<h3 id="S1.7.4">Cursor Styles</h3>
+<p>There are four built-in graphics cursor styles you can use with ReGIS. You can
+also define your own input cursor. You select a built-in cursor style by using an
+index number with the ReGIS screen command. See "<a href="chapter2.html#...">Graphics Cursor
+Control</a>" in <a href="chapter2.html">Chapter 2</a>.</p>
+<h4 id="S1.7.4.1">Diamond</h4>
+<p>This cursor is a 21 × 21 pixel diamond. You can use this cursor
+for input and output operations. The diamond is the default output cursor.</p>
+<h4 id="S1.7.4.2">Crosshair</h4>
+<p>This cursor is a horizontal and a vertical line. The horizontal line
+is the width of the screen, and the vertical line is the height of the screen. The
+two lines intersect at the active position. You can use this cursor for input and
+output operations. The crosshair is the default input cursor.</p>
+<h4 id="S1.7.4.3">Rubber Band Line</h4>
+<p>This cursor is a single line, with its origin fixed at the
+current drawing (output) position and its endpoint at the current cursor position.
+You can only use this cursor as an input cursor.</p>
+<h4 id="S1.7.4.4">Rubber Band Rectangle</h4>
+<p>This cursor is a rectangle, with one corner fixed at
+the current drawing (output) position and the opposite corner at the current
+cursor position. You can only use this cursor as an input cursor.</p>
+<h4 id="S1.7.4.5">User-Defined</h4>
+<p>You can define your own input cursor by using the cursor option
+to the screen control command (<a href="chapter2.html">Chapter 2</a>).</p>
+<h2 id="S1.8">Entering and Exiting ReGIS</h2>
+<p>You use device control strings to enter and exit ReGIS.</p>
+<table>
+<thead>
+<tr>
+<th>8-Bit Device Control String</th>
+<th>7-Bit Equivalent Escape Sequence</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DCS p or<br/>DCS 0p</td>
+<td>ESC Pp or<br/> ESC P0p</td>
+<td>Enters ReGIS at the point where ReGIS was last exited. Does not display commands.</td>
+</tr>
+<tr>
+<td>DCS 1p</td>
+<td>ESC P1p</td>
+<td>Enters ReGIS at the command level. ReGIS begins at a new command.</td>
+</tr>
+<tr>
+<td>DCS 2p</td>
+<td>ESC P2p</td>
+<td>Enters ReGIS at the point where ReGIS was last exited. Displays commands on the screen's bottom line (command display mode).</td>
+</tr>
+<tr>
+<td>DCS 3p</td>
+<td>ESC P3p</td>
+<td>Enters ReGIS at the command level. ReGIS begins at a new command. Displays commands on the screen's bottom line (command display mode).</td>
+</tr>
+<tr>
+<td>ST</td>
+<td>ESC \</td>
+<td>Exits ReGIS mode.</td>
+</tr>
+</tbody>
+</table>
+<p class="note">NOTE: You can enter ReGIS from VT100 or VT300 mode.</p>
+<p>You can display ReGIS commands by entering ReGIS with a DCS 2p or DCS
+3p sequence. In command display mode, the terminal displays ReGIS commands
+as they are performed. The last line of ReGIS commands received appears
+on the bottom line of the screen.</p>
+<p>In command display mode, the VT300 processes characters as follows.</p>
+<ul>
+<li>A line feed character makes the terminal erase the ReGIS command
+display line, along with any graphic image previously drawn there.</li>
+<li>The terminal interprets each character as part of a ReGIS command
+and performs the command. Depending on the command, the
+graphic image changes.</li>
+<li>Command characters appear as normal intensity, nonblinking text
+(not reverse video).</li>
+</ul>
+<p>This processing continues until you leave ReGIS mode with an escape
+sequence.</p>
+<p><strong>Notes on ReGIS Command Display Mode</strong></p>
+<ul>
+<li><p>Characters appear as the terminal receives them (no case conversion,
+syntax checking, or macrograph expansion).</p></li>
+<li><p>The terminal does not display characters that are not part of the
+ReGIS character set (8-bit characters and control characters).</p></li>
+<li><p>The appearance of the characters is based only on the output map
+settings and the image that the characters are drawn over. Other
+ReGIS-settable states have no effect.</p></li>
+<li><p>You can display up to 80 characters on the command line. If the
+terminal receives more than 80 characters without a line feed character,
+the terminal erases the text line before displaying the next
+character.</p></li>
+<li><p>Command display mode slows down performance, because the system
+must process the command characters for display.</p></li>
+</ul>
+<h2 id="S1.9">ReGIS Default Values</h2>
+<p>Several ReGIS command arguments have default values. ReGIS always uses
+these values after you power up or reset the terminal. The default values let
+the terminal draw graphic images as soon as you enter ReGIS mode. You can
+change these values in ReGIS. The new values remain in effect until you
+change them, or until you power up or reset the terminal again.</p>
+<p><a href="#T1-2">Table 1-2</a> lists the default values for ReGIS commands.</p>
+<table id="T1-2" class="majortable">
+<caption>Table 1-2 ReGIS Power-Up/Reset Default Values Summary</caption>
+<thead>
+<tr>
+<th>Type</th>
+<th>Default Command</th>
+<th>Default Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th colspan="3">Screen Controls</th>
+</tr>
+<tr>
+<td>Screen coordinates</td>
+<td>S(A[0,0][799,479])</td>
+<td>Upper-left corner is [0,0]. Lower-right corner is [799,479].</td>
+</tr>
+<tr>
+<td>Scrolling</td>
+<td>S[0,0]</td>
+<td>No scrolling.</td>
+</tr>
+<tr>
+<td>Printing offset</td>
+<td>S(H(P[50,0]))</td>
+<td>Any printing from the screen is offset 50 coordinates at the printer, to approximate
+centering on 8½ inch wide paper.</td>
+</tr>
+<tr>
+<td>Monochrome output mapping</td>
+<td>S(M0(L0) 1(L33) 2(L67) 3(L100))</td>
+<td>VT330 output map values
+<table>
+<tbody>
+<tr>
+<td>M0</td>
+<td>black</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>dim gray</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>light gray</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>white</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td></td>
+<td>S(M0(L0) 1(L4) 2(L10) 3(L17) 4(L24) 5(L30) 6(L37) 7(L44) 8(L50) 9(L57)
+10(L64) 11(L70) 12(L77) 13(L84) 14(L90) 15(L97))</td>
+<td>VT340 output map values
+<table>
+<tbody>
+<tr>
+<td>M0</td>
+<td>black</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>gray-2</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>gray-4</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>gray-6</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>gray-1</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>gray-3</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>gray-5</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>white</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>black</td>
+</tr>
+<tr>
+<td>M9</td>
+<td>gray-2</td>
+</tr>
+<tr>
+<td>M10</td>
+<td>gray-4</td>
+</tr>
+<tr>
+<td>M11</td>
+<td>gray-6</td>
+</tr>
+<tr>
+<td>M12</td>
+<td>gray-1</td>
+</tr>
+<tr>
+<td>M13</td>
+<td>gray-3</td>
+</tr>
+<tr>
+<td>M14</td>
+<td>gray-5</td>
+</tr>
+<tr>
+<td>M15</td>
+<td>white</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Color output mapping</td>
+<td>S(M0(AD) 1(AB) 2(AR) 3(AG) 4(AM) 5(AC) 6(AY) 7(AW)
+8(AD) 9(AB) 10(AR) 11(AG) 12(AM) 13(AC) 14(AY) 15(AW))</td>
+<td>VT340 output map values
+<table>
+<tbody>
+<tr>
+<td>M0</td>
+<td>black</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>blue</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>red</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>green</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>magenta</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>cyan</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>yellow</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>gray 50%</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>gray 25%</td>
+</tr>
+<tr>
+<td>M9</td>
+<td>blue</td>
+</tr>
+<tr>
+<td>M10</td>
+<td>red</td>
+</tr>
+<tr>
+<td>M11</td>
+<td>green</td>
+</tr>
+<tr>
+<td>M12</td>
+<td>magenta</td>
+</tr>
+<tr>
+<td>M13</td>
+<td>cyan</td>
+</tr>
+<tr>
+<td>M14</td>
+<td>yellow</td>
+</tr>
+<tr>
+<td>M15</td>
+<td>gray 75%</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td>Background intensity</td>
+<td>S(I0)</td>
+<td>Output map location M0 is used for background. The default value for M0 is black (VT330 and VT340).</td>
+</tr>
+<tr>
+<th colspan="3">Write Controls</th>
+</tr>
+<tr>
+<td>Pixel vector multiplier</td>
+<td>W(M1)</td>
+<td>PV multiplication factor = 1.</td>
+</tr>
+<tr>
+<td>Writing pattern</td>
+<td>W(P1)</td>
+<td>Solid line.</td>
+</tr>
+<tr>
+<td>Pattern multiplier</td>
+<td>W(P(M2))</td>
+<td>Multiplication factor = 2.</td>
+</tr>
+<tr>
+<td>Negative pattern</td>
+<td>W(N0)</td>
+<td>Disabled.</td>
+</tr>
+<tr>
+<td>Bitmap planes</td>
+<td>VT330: W(F3)<br/>VT340: W(F15)</td>
+<td>Writing enabled to all bitmap planes.</td>
+</tr>
+<tr>
+<td>Foreground intensity</td>
+<td>VT330: W(I3)<br/>VT340: W(I7)</td>
+<td>VT330: output map location M3.<br/>VT340: output map location M7.</td>
+</tr>
+<tr>
+<td>Overlay writing</td>
+<td>W(V)</td>
+<td>On.</td>
+</tr>
+<tr>
+<td>Shading</td>
+<td>W(S0)</td>
+<td>Off.</td>
+</tr>
+<tr>
+<th colspan="3">Text</th>
+</tr>
+<tr>
+<td>Character set</td>
+<td>T(A0)</td>
+<td>ISO Latin Alphabet Nr 1 character set.</td>
+</tr>
+<tr>
+<td>Character cell</td>
+<td>T(S1)</td>
+<td>Standard character cell size 1.</td>
+</tr>
+<tr>
+<td>Display cell</td>
+<td>T(S[9,20])</td>
+<td>Display cell size associated with standard character cell size 1.</td>
+</tr>
+<tr>
+<td>Unit cell</td>
+<td>T(U[8,20])</td>
+<td>Unit cell size associated with standard character cell size 1.</td>
+</tr>
+<tr>
+<td>Character positioning</td>
+<td>T[+9,+0]</td>
+<td>Character positioning associated with standard character cell size 1.</td>
+</tr>
+<tr>
+<td>Height multiplier</td>
+<td>T(H2)</td>
+<td>Multiplication factor = 2.</td>
+</tr>
+<tr>
+<td>Tilt</td>
+<td>T(D0 S1 D0)</td>
+<td>String and character tilt off.</td>
+</tr>
+<tr>
+<td>Italics</td>
+<td>T(I0)</td>
+<td>Off.</td>
+</tr>
+<tr>
+<td>Size multiplier</td>
+<td>T(M[1,2])</td>
+<td>Multiplication factor of 1 for width and 2 for height.</td>
+</tr>
+<tr>
+<th colspan="3">Load</th>
+</tr>
+<tr>
+<td>Character set</td>
+<td>L(A1)</td>
+<td>Character set 1 selected for loading.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="S1.10">Preventing Transmission Errors</h2>
+<p>When transmission errors occur, the terminal may lose some data for ReGIS
+text and commands. These errors can change the meaning of command strings.
+You can reduce the effect of some transmission errors by resynchronizing the
+flow of data between the host and terminal.</p>
+<h3 id="S1.10.1">Resynchronization Command (;)</h3>
+<p>ReGIS recognizes a semicolon (;) as a command to resynchronize. If you think
+errors are occurring in your program, you can use the semicolon between command
+strings. The semicolon ensures that the previous command string is correctly
+closed, even if the closing character (a bracket or parenthesis) is lost in
+transmission.</p>
+<p>The semicolon cannot fix a garbled message, but may reduce the effect of a
+single transmission error.</p>
+<p>The terminal does not recognize the semicolon as a resynchronization character
+in two cases.</p>
+<ul>
+<li>in a quoted text string</li>
+<li>as part of a macrograph definition</li>
+</ul>
+<h2 id="S1.11">Pixel Vector (PV) System</h2>
+<p>You can control the direction of many ReGIS drawing or movement commands
+by using the pixel vector (PV) system. You can select eight different directions
+with PV numbers (<a href="#F1-2">Figure 1-2</a>). Each direction is at a different 45-degree interval.
+Each direction has a specific number assigned.</p>
+<p>The PV system also lets you specify how far to move in one direction. Each PV
+number tells the terminal to move one coordinate in that direction.</p>
+<p>To move horizontally or vertically, you use one PV number for each pixel. For
+example, you use a PV string of 444 to move three pixels to the left. You use
+a 000 string to move three pixels to the right.</p>
+<p>If you want to move several coordinates, you can use a pixel vector multiplier.
+The next section describes PV multiplication.</p>
+<p><a href="#F1-3">Figure 1-3</a> shows some examples that use PV numbers. The PV numbers used
+show the simplest method of movement. You could use combinations of different
+PV values to achieve the same effects.</p>
+
+<figure id="F1-2">
+  <img src="ma-0655-83.png" alt=""/>
+  <figcaption>Figure 1-2 Pixel Vector Dimensions</figcaption>
+</figure>
+
+<figure id="F1-3">
+  <img src="ma-0411-86.png" alt=""/>
+  <table class="command-example">
+    <tbody>
+      <tr>
+        <td colspan="2">PV VALUES</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>A.</td>
+        <td>MOVEMENT FROM CENTER BY SIX 2s AND THREE 4s</td>
+      </tr>
+      <tr>
+        <td>B.</td>
+        <td>MOVEMENT FROM CENTER BY TWO 2s AND FIVE 4s</td>
+      </tr>
+      <tr>
+        <td>C.</td>
+        <td>MOVEMENT FROM CENTER BY THREE 6s</td>
+      </tr>
+      <tr>
+        <td>D.</td>
+        <td>MOVEMENT FROM CENTER BY SIX 6s AND TWO 0s</td>
+      </tr>
+      <tr>
+        <td>E.</td>
+        <td>MOVEMENT FROM CENTER BY FIVE 1s</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption>Figure 1-3 Pixel Vector Examples</figcaption>
+</figure>
+
+<h3 id="S1.11.1">PV Multiplication</h3>
+<p>In some PV applications, entering all the PV numbers required would be tedious.
+In such cases, you can use a PV multiplier command to simplify the
+task.</p>
+<p>The PV multiplier command lets you specify the number of times to repeat
+each PV number. For example, suppose you use a multiplier of 10. Then each
+PV number in later commands specifies movement for 10 coordinates, not just 1.</p>
+<p><a href="#F1-4">Figure 1-4</a> shows a graphic image drawn using PV multiplication. In this figure,
+a write command (defined by W) first sets a PV multiplier of 100 (defined by
+M100). Then vector commands (defined by V) draw the image. Each PV value
+in the vector commands is multiplied by 100.</p>
+
+<figure id="F1-4">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 960" version="1.1" id="f1-4-img">
+<style>
+#f1-4-img {
+
+&amp; text { font-family: Helvetica, sans-serif; font-size: 20pt }
+.bk { fill: #f0f0f0 }
+.bko { fill: none; stroke: #f00 }
+.bk, .bko { display: none }
+.drawpart { font-size: 10pt }}
+</style>
+<rect class="bk" x="0" y="0" width="950" height="960"/>
+<rect class="bko" x="10" y="10" width="930" height="940"/>
+<g transform="translate(80,60)">
+<rect x="-10" y="-10" width="820" height="500" fill="none" stroke="#000" stroke-width="4" rx="15" ry="15"/>
+<rect x="0" y="0" width="800" height="480" fill="none"/>
+<text x="0" y="-20" text-anchor="middle"><tspan>0</tspan></text>
+<text x="100" y="-20" text-anchor="middle"><tspan>100</tspan></text>
+<text x="200" y="-20" text-anchor="middle"><tspan>200</tspan></text>
+<text x="300" y="-20" text-anchor="middle"><tspan>300</tspan></text>
+<text x="400" y="-20" text-anchor="middle"><tspan>400</tspan></text>
+<text x="500" y="-20" text-anchor="middle"><tspan>500</tspan></text>
+<text x="600" y="-20" text-anchor="middle"><tspan>600</tspan></text>
+<text x="700" y="-20" text-anchor="middle"><tspan>700</tspan></text>
+<text x="799" y="-20" text-anchor="middle"><tspan>799</tspan></text>
+<text x="-20" y="0" text-anchor="end"><tspan dy="+10">0</tspan></text>
+<text x="-20" y="100" text-anchor="end"><tspan dy="+10">100</tspan></text>
+<text x="-20" y="200" text-anchor="end"><tspan dy="+10">200</tspan></text>
+<text x="-20" y="300" text-anchor="end"><tspan dy="+10">300</tspan></text>
+<text x="-20" y="400" text-anchor="end"><tspan dy="+10">400</tspan></text>
+<text x="-20" y="479" text-anchor="end"><tspan dy="+10">479</tspan></text>
+<path d="m 400,100 v100 h-100 v-100 h-200 v100 h100 v100 h-100 v100 h200 v-100 h100 v100" fill="none" stroke="#000" stroke-width="2"/>
+<text x="80" y="590"><tspan>NOTE:</tspan><tspan x="80" dy="28">THE ACTIVE POSITION AT THE START IS (400,100).</tspan><tspan x="80" dy="28">THE ACTIVE POSITION AT THE END IS (400,400).</tspan></text>
+
+<rect x="250" y="700" width="300" height="170" fill="none" stroke="#000" stroke-width="4"/>
+<line x1="250" y1="750" x2="550" y2="750" fill="none" stroke="#000" stroke-width="2"/>
+<text x="400" y="735" class="sm" text-anchor="middle"><tspan>COMMANDS</tspan></text>
+<text x="280" y="795" class="sm" text-anchor="start"><tspan>W(M100)</tspan><tspan x="280" dy="30">V642446064600206</tspan></text>
+<text class="drawpart" x="800" y="880" text-anchor="end"><tspan>MA-0657-83</tspan></text>
+</g>
+</svg>
+  <figcaption>Figure 1-4 PV Multiplication Example</figcaption>
+</figure>
+
+<h2 id="S1.12">ReGIS Examples in this Manual</h2>
+<p>The following chapters contain examples of images drawn with ReGIS commands.
+For simplicity, most examples are based on the VT330 monochrome
+terminal rather than the VT340 color graphics terminal. All the examples
+shown also work on the VT340. However, make sure you are aware of the main
+differences between the two terminals.</p>
+<table>
+<thead>
+<tr>
+<th>VT330</th>
+<th>VT340</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul>
+<li>Monochrome terminal</li>
+<li>2-plane bitmap</li>
+<li>Can use up to 4 shades of gray, defined in gray map locations 0 through 3.</li>
+</ul></td>
+<td><ul>
+<li>Color graphics terminal</li>
+<li>4-plane bitmap</li>
+<li>Can use up to 16 colors or shades, defined in color map locations 0 through 15.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h3 id="S1.12.1">Running the Examples</h3>
+<p>As you read about a command, you can draw the examples on your own screen.
+Before you run an example, perform these steps.</p>
+<ol>
+<li>Press <b>Set-Up</b> to enter set-up. The Set-Up Directory screen appears.</li>
+<li>Select the <b>Clear Display</b> feature. This will clear the screen after you leave set-up.</li>
+<li>Select the Global Set-Up screen.</li>
+<li>Set the <b>On Line/Local</b> feature to "local".</li>
+<li>Press <b>Set-Up</b> to leave set-up.</li>
+<li><p>To enter ReGIS mode, hold down the <b>Ctrl</b> key and press <b>3</b>, then
+type <b>P2p</b>.</p>
+<p><b>Ctrl-3 P2p</b></p>
+<p>This sequence tells ReGIS to display the commands you enter. The
+commands appear on line 24 at the bottom of the screen.</p></li>
+</ol>
+<p>You can now run any of the ReGIS examples in this manual. ReGIS immediately
+performs each command you enter, so you can see both the drawing and
+the command you entered.</p>
+<p>When you finish running examples, perform the following steps to return the
+terminal to its normal operating mode.</p>
+<ol>
+<li><p>Type the following sequence to exit ReGIS mode.</p>
+<p><b>Ctrl-3 \</b></p></li>
+<li>Enter set-up and set the <b>On Line/Local</b> feature to "on line".</li>
+</ol>
+<footer>
+<nav class="sections"><a href="about.html">About</a><a href="contents.html">Contents</a><a href="chapter2.html">Chapter 2</a></nav>
+</footer>
+</body>
+</html>

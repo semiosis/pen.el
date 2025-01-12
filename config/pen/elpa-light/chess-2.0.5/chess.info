@@ -1,0 +1,3298 @@
+This is docofPloc.info, produced by makeinfo version 6.8 from
+chess.texi.
+
+Copyright © 2001, 2002, 2004, 2014 Free Software Foundation, Inc.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover Texts
+     being “A GNU Manual,” and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     “GNU Free Documentation License.”
+
+     (a) The FSF’s Back-Cover Text is: “You have the freedom to copy and
+     modify this GNU manual.”
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* Chess: (chess).     Chess.el is an Emacs chess client.
+END-INFO-DIR-ENTRY
+
+   Copyright © 2001, 2002, 2004, 2014 Free Software Foundation, Inc.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover Texts
+     being “A GNU Manual,” and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     “GNU Free Documentation License.”
+
+     (a) The FSF’s Back-Cover Text is: “You have the freedom to copy and
+     modify this GNU manual.”
+
+
+File: docofPloc.info,  Node: Top,  Next: The chess.el library,  Up: (dir)
+
+Emacs Chess: chess.el
+*********************
+
+‘Chess.el’ is an Emacs chess client and library, designed to be used for
+writing chess-related programs, or for playing games of chess against
+various chess engines, including Internet servers.  The library can be
+used for analyzing variations, browsing historical games, or a multitude
+of other purposes.
+
+   The purpose of this manual is to help you understand how ‘chess.el’
+is structured for use as a library, and also how to use it as a client.
+
+* Menu:
+
+* The chess.el library::        Basic objects required to deal with Chess
+* Modules::                     The module-system explained
+* Chessboard displays::         Different types of chessboards in a buffer
+* Engines::                     Internal and external chess-playing engines
+* Chess Session::               Tying it all together
+* Internet Chess Servers::      Playing chess with other people
+* GNU Free Documentation License::
+* Concept Index::
+* Function and Variable Index::
+* Key Index::
+
+
+File: docofPloc.info,  Node: The chess.el library,  Next: Modules,  Up: Top
+
+1 The ‘chess.el’ library
+************************
+
+This chapter documents the low-level aspects of ‘chess.el’, mostly
+targeting developers interested in understanding the underlying APIs.
+
+   *Note Chessboard displays::, and the chapters following it, if you
+are interested in the more user-visible aspects of ‘chess.el’.
+
+* Menu:
+
+* Positions::
+* Plies::
+* Variations::
+* Games::
+* Collections::
+* Chess Opening Books::
+
+
+File: docofPloc.info,  Node: Positions,  Next: Plies,  Up: The chess.el library
+
+1.1 Positions
+=============
+
+A chess “position” is a given layout of pieces on a chess board, also
+reflecting which “side” (i.e., player) is next to move, and what
+privileges are currently available to each side (castling short or long,
+en passant capture, etc).
+
+   A position may be represented in ASCII using FEN (or EPD), or
+graphically by displaying a chess board.  It is rather inconvenient to
+render them verbally.
+
+   The position can be represented on a remote terminal using X windows,
+or by transmitting the FEN string via a network connection or clipboard,
+to another chess board rendering tool.  It may of course also be
+represented physically, by setting up the pieces to match the FEN
+specification.
+
+   Chess puzzles are most often provided as a set of positions.
+
+* Menu:
+
+* Creating positions::
+* Position coordinates::
+* Position details::
+* Annotations::
+* FEN notation::
+* EPD notation::
+
+
+File: docofPloc.info,  Node: Creating positions,  Next: Position coordinates,  Up: Positions
+
+1.1.1 Creating positions
+------------------------
+
+ -- Function: chess-pos-create &optional blank
+     Create a new chess position, set at the starting position.  If
+     BLANK is non-‘nil’, all of the squares will be empty.  The current
+     side-to-move is always white.
+
+ -- Function: chess-pos-copy position
+     Copy the given chess POSITION.  If there are annotations or EPD
+     opcodes set, these lists are copied as well, so that the two
+     positions do not share the same lists.
+
+ -- Variable: chess-starting-position
+     Starting position of a chess game.
+
+ -- Function: chess-fischer-random-position
+     Generate a Fischer Random style position.
+
+
+File: docofPloc.info,  Node: Position coordinates,  Next: Position details,  Prev: Creating positions,  Up: Positions
+
+1.1.2 Position coordinates
+--------------------------
+
+First of all, position coordinates use a coordinate system of octal
+indices, where the index ‘?\044’ signifies rank 4 file 4 (i.e., "e4").
+Rank is numbered 0 to 7, top to bottom, and file is 0 to 7, left to
+right.
+
+ -- Function: chess-index-rank index
+     Return the rank component of the given INDEX.
+
+ -- Function: chess-index-file index
+     Return the file component of the given INDEX.
+
+ -- Function: chess-rf-to-index rank file
+     Convert RANK and FILE coordinates into an octal index.
+
+   For those who wish to use ASCII coordinates, such as "e4", there are
+two conversion functions:
+
+ -- Function: chess-coord-to-index coord
+     Convert a COORD string into an index value.
+
+ -- Function: chess-index-to-coord index
+     Convert the chess position INDEX into a coord string.
+
+   For fast manipulation of chess position indices, the following
+constants and functions are provided:
+
+   For queens and rooks:
+
+ -- Constant: chess-direction-north
+     Signify one step north, as seen from the perspective of the white
+     player.
+
+ -- Constant: chess-direction-east
+     Signify one step east, as seen from the perspective of the white
+     player.
+
+ -- Constant: chess-direction-south
+     Signify one step south, as seen from the perspective of the white
+     player.
+
+ -- Constant: chess-direction-west
+     Signify one step west, as seen from the perspective of the white
+     player.
+
+   For queens and bishops:
+
+ -- Constant: chess-direction-northeast
+     Signify one step northeast, as seen from the perspective of the
+     white player.
+
+ -- Constant: chess-direction-southeast
+     Signify one step southeast, as seen from the perspective of the
+     white player.
+
+ -- Constant: chess-direction-southwest
+     Signify one step southwest, as seen from the perspective of the
+     white player.
+
+ -- Constant: chess-direction-northwest
+     Signify one step northwest, as seen from the perspective of the
+     white player.
+
+ -- Function: chess-next-index index direction
+     Create a new INDEX from an old one, by advancing it into DIRECTION.
+     If the resulting index is not valid (outside the board), ‘nil’ is
+     returned.
+
+   Due to the underlying technique used to efficiently detect off-board
+squares, a direction specifier should at most do two steps in any
+direction.  Directions can be combined, so that ‘(*
+chess-direction-north 2)’ will give a typical initial white pawn push.
+
+
+File: docofPloc.info,  Node: Position details,  Next: Annotations,  Prev: Position coordinates,  Up: Positions
+
+1.1.3 Position details
+----------------------
+
+Given an octal index value, you can look up what’s on a particular
+square, or set that square’s value:
+
+ -- Function: chess-pos-piece position index
+     Return the piece on POSITION at INDEX.
+
+ -- Function: chess-pos-piece-p position index piece-or-color
+     Return non-‘nil’ if the given PIECE-OR-COLOR is at POSITION/INDEX.
+     If PIECE-OR-COLOR is ‘t’ for white or ‘nil’ for black, any piece of
+     that color will do.
+
+ -- Function: chess-pos-set-piece position index piece
+     Set the piece on POSITION at INDEX to PIECE.  PIECE must be one of
+     ‘?K’, ‘?Q’, ‘?N’, ‘?B’, ‘?R’, or ‘?P’ for white pieces, or one of
+     the corresponding lowercase letters for black pieces.
+
+ -- Function: chess-pos-search position piece-or-color
+     Look anywhere on POSITION for PIECE-OR-COLOR, returning all
+     coordinates.  If PIECE-OR-COLOR is ‘t’ for white or ‘nil’ for
+     black, any piece of that color will do.
+
+ -- Function: chess-pos-search* position &rest pieces
+     Look on POSITION for any of PIECES.
+
+     The result is an alist where each element looks like
+     ‘(PIECE . INDICES)’.  Pieces which did not appear in POSITION will
+     be present in the resulting alist, but the ‘cdr’ of their entries
+     will be ‘nil’.
+
+ -- Function: chess-search-position position target piece &optional
+          check-only no-castling
+     Look on POSITION from TARGET for a PIECE that can move there.  This
+     routine looks along valid paths of movement for PIECE.  It differs
+     from ‘chess-pos-search’, which is a more basic function that
+     doesn’t take piece movement into account.
+
+     If PIECE is ‘t’ or ‘nil’, valid piece movements for any piece of
+     that color will be considered (‘t’ for white, ‘nil’ for black).
+     Otherwise, the letter-case of the PIECE determines color.
+
+     The return value is a list of candidates, which means a list of
+     indices that indicate where a piece may have moved from.
+
+     If CHECK-ONLY is non-‘nil’ and PIECE is either ‘t’ or ‘nil’, only
+     consider pieces which can give check (not the opponent’s king).  If
+     NO-CASTLING is non-‘nil’, do not consider castling moves.
+
+ -- Function: chess-pos-can-castle position side
+     Return whether the king on POSITION can castle on SIDE.  The SIDE
+     argument must be either ‘?K’ for the king side, or ‘?Q’ for the
+     queen side (use lowercase to query if black can castle).
+
+ -- Function: chess-pos-set-can-castle position side value
+     Set whether the king can castle on the given POSITION on SIDE.
+
+     See ‘chess-pos-can-castle’.
+
+     It is only necessary to call this function if setting up a position
+     manually.  Note that all newly created positions have full castling
+     privileges set, unless the position is created blank, in which case
+     castling privileges are unset.  See ‘chess-pos-create’.
+
+ -- Function: chess-pos-en-passant position
+     Return the index of any pawn on POSITION that can be captured en
+     passant.  Returns ‘nil’ if en passant is unavailable.
+
+ -- Function: chess-pos-set-en-passant position index
+     Set the index of any pawn on POSITION that can be captured en
+     passant.
+
+ -- Function: chess-pos-status position
+     Return whether the side to move in the POSITION is in a special
+     state.  Return ‘nil’ if not, otherwise one of the keywords:
+     ‘:check’, ‘:checkmate’ or ‘:stalemate’.
+
+ -- Function: chess-pos-set-status position value
+     Set whether the side to move in POSITION is in a special state.
+     The VALUE should either be ‘nil’, to indicate that the POSITION is
+     normal, or one of the symbols: ‘check’, ‘checkmate’, ‘stalemate’.
+
+ -- Function: chess-pos-side-to-move position
+     Return the color whose move it is in POSITION.
+
+ -- Function: chess-pos-set-side-to-move position color
+     Set the color whose move it is in POSITION.
+
+ -- Function: chess-pos-passed-pawns position color &optional
+          pawn-indices
+     If COLOR has Passed Pawns in POSITION, return a list of their
+     indices.  Optionally, if INDICES is non-‘nil’, those indices are
+     considered as candidates.
+
+     A Pawn whose advance to the eighth rank is not blocked by an
+     opposing Pawn in the same file and who does not have to pass one on
+     an adjoining file is called a passed Pawn.
+
+ -- Variable: chess-pos-always-white
+     When set, it is assumed that white is always on move.  This is
+     really only useful when setting up training positions.  This
+     variable automatically becomes buffer-local when changed.
+
+ -- Function: chess-pos-move position &rest changes
+     Move a piece on the POSITION directly, using the indices in
+     CHANGES.  This function does not check any rules, it only makes
+     sure you are not trying to move a blank square.
+
+
+File: docofPloc.info,  Node: Annotations,  Next: FEN notation,  Prev: Position details,  Up: Positions
+
+1.1.4 Annotations
+-----------------
+
+ -- Function: chess-pos-annotations position
+     Return the list of annotations for this position.
+
+ -- Function: chess-pos-add-annotation position annotation
+     Add an annotation for this position.
+
+
+File: docofPloc.info,  Node: FEN notation,  Next: EPD notation,  Prev: Annotations,  Up: Positions
+
+1.1.5 FEN notation
+------------------
+
+“FEN” (Forsyth-Edwards Notation) encodes a chess position using a simple
+string.  The format is:
+
+        POSITION SIDE CASTLING EN-PASSANT
+
+   The POSITION gives all eight ranks, by specifying a letter for each
+piece in the position, and a number for any intervening spaces; ranks
+are separated by slashes.  Trailing spaces need not be counted.
+Uppercase letters signify white pieces, and lowercase black.  For
+example, if your position only had a black king on d8, your POSITION
+string would be:
+
+     3k////////
+
+for the three spaces (a, b and c file), the black king, and then all the
+remaining ranks (which are all empty, so their spaces can be ignored).
+
+   The SIDE is ‘w’ or ‘b’, to indicate whose move it is.
+
+   The CASTLING can contain ‘K’, ‘Q’, ‘k’ or ‘q’, to signify whether the
+white or black king can still castle on the king or queen side.  If
+neither color can castle on any side, ‘-’ should be provided.
+
+   The EN-PASSANT signifies the target square of an en passant capture,
+such as ‘e3’ or ‘a6’.
+
+ -- Function: chess-fen-to-pos fen
+     Convert the FEN string FEN to a chess position.
+
+ -- Function: chess-pos-to-fen position &optional full
+     Convert a chess POSITION to a FEN string.  If FULL is non-‘nil’,
+     represent trailing spaces as well.
+
+   This is how the starting position looks like:
+
+      (chess-pos-to-fen chess-starting-position)
+      ⇒ "rnbqkbnr/pppppppp/////PPPPPPPP/RNBQKBNR w KQkq -"
+
+   Some external programs might have problems parsing terse FEN strings.
+If you are unsure, use the more verbose form:
+
+      (chess-pos-to-fen chess-starting-position t)
+      ⇒ "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -"
+
+
+File: docofPloc.info,  Node: EPD notation,  Prev: FEN notation,  Up: Positions
+
+1.1.6 EPD notation
+------------------
+
+“EPD” (Extended Position Description) is a standard for describing chess
+positions along with an extended set of structured attribute values
+using the ASCII character set.  It is intended for data and command
+interchange among chess-playing programs.  It is also intended for the
+representation of portable opening library repositories.
+
+   A single EPD uses one text line of variable length composed of four
+data fields, followed by zero or more operations.  The four fields of
+the EPD specification are the same as the first four fields of the FEN
+specification (*note FEN notation::).
+
+   A text file composed exclusively of EPD data records should have a
+file name with the ‘.epd’ extension.
+
+ -- Function: chess-epd-to-pos &optional string
+     Convert extended position description STRING to a chess position.
+     If STRING is not specified, look for an EPD string in the current
+     buffer, and advance point after the correctly parsed position.
+
+ -- Function: chess-pos-to-epd position
+     Convert a chess POSITION to a string representation in extended
+     position description format.
+
+ -- Function: chess-epd-read-file file
+     Return a list of positions contained in FILE.
+
+* Menu:
+
+* Operations::
+* Opcode "acd" analysis count depth::
+* Opcode "acn" analysis count nodes::
+* Opcode "acs" analysis count seconds::
+* Opcode "am" avoid move(s)::
+* Opcode "bm" best move(s)::
+
+
+File: docofPloc.info,  Node: Operations,  Next: Opcode "acd" analysis count depth,  Up: EPD notation
+
+1.1.6.1 Operations
+..................
+
+An EPD operation is composed of an opcode followed by zero or more
+operands, and terminated by a semicolon.
+
+   Multiple operations are separated by a single space character.  If
+there is at least one operation present in an EPD record, it is
+separated from the last (fourth) data field by a single space character.
+
+   Some opcodes that allow for more than one operand may have special
+ordering requirements for the operands.  For example, the ‘pv’
+(predicted variation) opcode requires its operands (moves) to appear in
+the order in which they would be played.  All other opcodes that allow
+for more than one operand should have operands appearing in ASCII order.
+An example of the latter set is the ‘bm’ (best move[s]) opcode; its
+operands are moves that are all immediately playable from the current
+position.
+
+
+File: docofPloc.info,  Node: Opcode "acd" analysis count depth,  Next: Opcode "acn" analysis count nodes,  Prev: Operations,  Up: EPD notation
+
+1.1.6.2 Opcode ‘acd’ analysis count depth
+.........................................
+
+The opcode ‘acd’ takes a single non-negative integer operand.  It is
+used to represent the depth of the ply (*note Plies::) examined in an
+analysis.
+
+
+File: docofPloc.info,  Node: Opcode "acn" analysis count nodes,  Next: Opcode "acs" analysis count seconds,  Prev: Opcode "acd" analysis count depth,  Up: EPD notation
+
+1.1.6.3 Opcode ‘acn’ analysis count nodes
+.........................................
+
+The opcode ‘acn’ takes a single non-negative integer operand.  It is
+used to represent the number of nodes examined in an analysis.  Note
+that the value may be quite large for some extended searches, and so use
+of (at least) a long (four byte) representation is suggested.
+
+
+File: docofPloc.info,  Node: Opcode "acs" analysis count seconds,  Next: Opcode "am" avoid move(s),  Prev: Opcode "acn" analysis count nodes,  Up: EPD notation
+
+1.1.6.4 Opcode ‘acs’ analysis count seconds
+...........................................
+
+The opcode ‘acs’ takes a single non-negative integer operand.  It is
+used to represent the number of seconds used for an analysis.  Note that
+the value may be quite large for some extended searches, and so use of
+(at least) a long (four byte) representation is suggested.
+
+
+File: docofPloc.info,  Node: Opcode "am" avoid move(s),  Next: Opcode "bm" best move(s),  Prev: Opcode "acs" analysis count seconds,  Up: EPD notation
+
+1.1.6.5 Opcode ‘am’ avoid move(s)
+.................................
+
+The opcode ‘am’ indicates a set of zero or more moves, all immediately
+playable from the current position, that are to be avoided in the
+opinion of the EPD writer.  Each operand is a SAN move; they appear in
+ASCII order.
+
+
+File: docofPloc.info,  Node: Opcode "bm" best move(s),  Prev: Opcode "am" avoid move(s),  Up: EPD notation
+
+1.1.6.6 Opcode ‘bm’ best move(s)
+................................
+
+The opcode ‘bm’ indicates a set of zero or more moves, all immediately
+playable from the current position, that are judged to the best
+available by the EPD writer.  Each operand is a SAN move; they appear in
+ASCII order.
+
+
+File: docofPloc.info,  Node: Plies,  Next: Variations,  Prev: Positions,  Up: The chess.el library
+
+1.2 Plies
+=========
+
+A “ply” is the differential between two positions.  In other words, it
+is the coordinate transformations applied to one position in order to
+arrive at the following position.  It is also informally called "a
+move".
+
+   A ply may be represented in ASCII by printing the FEN string of the
+base position, and then printing the positional transformation in
+algebraic notation.  Since the starting position is usually known, the
+FEN string is optional.  A ply may be represented graphically by moving
+the chess piece(s) involved.  It may be rendered verbally by voicing
+which piece is to move, where it will move to, and what will happen a
+result of the move (piece capture, check, etc).
+
+   Plies may be sent over network connections, postal mail, e-mail,
+etc., so long as the current position is maintained at both sides.
+Transmitting the base position’s FEN string along with the ply offers a
+form of confirmation during the course of a game.
+
+* Menu:
+
+* Creating plies::
+* Ply details::
+* The "next" position::
+* Algebraic notation::
+
+
+File: docofPloc.info,  Node: Creating plies,  Next: Ply details,  Up: Plies
+
+1.2.1 Creating plies
+--------------------
+
+ -- Function: chess-ply-create position &optional valid-p &rest changes
+     Create a ply from the given POSITION by applying the supplied
+     CHANGES.  This function will guarantee the resulting ply is valid,
+     and will also annotate the ply with ‘:check’ or other modifiers as
+     necessary.  It will also extend castling, and will prompt for a
+     promotion piece.
+
+     Note: Do not pass in the rook move if CHANGES represents a castling
+     maneuver.
+
+ -- Function: chess-legal-plies position &rest keywords
+     Return a list of all valid plies in POSITION.  The allowed KEYWORDS
+     are:
+
+     ‘:any’
+          Return ‘t’ if any piece can move at all.
+
+     ‘:color BOOLEAN’
+          If BOOLEAN is ‘t’, return plies for white, if ‘nil’, return
+          plies for black.
+
+     ‘:piece CHARACTER’
+          Return plies for a specific piece designated by CHARACTER.
+
+     ‘:file FILE’
+          Given a FILE, a number (0-7), return plies for any piece or
+          color present on that FILE.  ‘:piece’ or ‘:color’ must be
+          present.
+
+     ‘:index INDEX’
+          Return plies for the piece at INDEX.
+
+     ‘:target INDEX’
+          Return plies that go to a specific coordinate specified by
+          INDEX.
+
+     ‘:candidates INDEX...’
+          If provided, only consider the source coordinates specified by
+          the indices.
+
+     These will constrain the plies generated to those matching the
+     above criteria.
+
+     NOTE: All of the returned plies will reference the same copy of the
+     position object passed in.
+
+
+File: docofPloc.info,  Node: Ply details,  Next: The "next" position,  Prev: Creating plies,  Up: Plies
+
+1.2.2 Ply details
+-----------------
+
+ -- Function: chess-ply-pos ply
+     Return the base position associated with PLY.
+
+ -- Function: chess-ply-set-pos ply position
+     Set the base position of PLY.
+
+ -- Function: chess-ply-changes
+     Return the coordinate transformations and keywords associated with
+     this PLY.
+
+     Value is a list made of a pair of indices (or two pairs, in case of
+     castling) followed by optional keywords.
+
+ -- Function: chess-ply-set-changes
+     Set the coordinate transformations and keywords associated with
+     this PLY.
+
+ -- Function: chess-ply-source ply
+     Return the source square index value of PLY.
+
+ -- Function: chess-ply-target ply
+     Return the target square index value of PLY.
+
+   For example, here is how to find the source square of a freshly
+created ply:
+
+      (chess-ply-source (chess-ply-create chess-starting-position nil
+                                          (chess-coord-to-index "e2")
+                                          (chess-coord-to-index "e4")))
+      ⇒ 52
+
+
+File: docofPloc.info,  Node: The "next" position,  Next: Algebraic notation,  Prev: Ply details,  Up: Plies
+
+1.2.3 The “next” position
+-------------------------
+
+ -- Function: chess-ply-next-pos ply
+     Return the position that results from executing PLY.
+
+ -- Function: chess-ply-final-p ply
+     Return non-‘nil’ if this is the last ply of a game/variation.
+
+
+File: docofPloc.info,  Node: Algebraic notation,  Prev: The "next" position,  Up: Plies
+
+1.2.4 Algebraic notation
+------------------------
+
+A thing to deal with in chess is algebraic move notation, such as
+‘Nxf3+’.  This notation is a shorthand way of representing where a piece
+is moving from and to, by specifying the piece involved, where it’s
+going, and whether or not a capture or check is involved.
+
+   You can convert from algebraic notation to a ply using the following
+function:
+
+ -- Function: chess-algebraic-to-ply position move &optional trust
+     Convert the algebraic notation MOVE for POSITION to a ply.
+
+     If optional argument TRUST is non-‘nil’, accept check or checkmate
+     symbols (‘+’ and ‘#’) as given.
+
+   The function also checks if a move is valid, and will raise an error
+if not.
+
+   To convert from a ply to algebraic notation, use:
+
+ -- Function: chess-ply-to-algebraic ply &optional type
+     Convert the given PLY to algebraic notation (a string).
+
+     Optional argument TYPE specifies the kind of algebraic notation to
+     generate:
+
+     ‘:san’
+          Generate short (or standard) algebraic notation.  This is the
+          default.
+
+     ‘:lan’
+          Generate long algebraic notation (like ‘Nb1-c3’).
+
+     ‘:fan’
+          Generate figurine algebraic notation (uppercase letters will
+          be replaced by Unicode chess figures).
+
+     ‘:numeric’
+          Generate ICCF numeric notation as used in correspondence chess
+          (like ‘2133’).
+
+   Lastly, there is a regexp for quickly checking if a string is in
+algebraic notation or not, or searching out algebraic strings in a
+buffer:
+
+ -- Variable: chess-algebraic-regexp
+     A regular expression that matches all possible algebraic moves.
+     This regexp handles short, long and figurine algebraic notation.
+
+
+File: docofPloc.info,  Node: Variations,  Next: Games,  Prev: Plies,  Up: The chess.el library
+
+1.3 Variations
+==============
+
+A “variation” is a sequence of plies that occur after some starting
+position.  If the starting position represents the initial setup of a
+chess board, and if the final ply results in completion of the game, it
+is called “the main variation”.  Otherwise, variations typically
+represented interesting tangents during a game—but not actually
+played—as envisioned by the player, an annotator, or someone studying
+the game.
+
+   Variations may be represented in ASCII by stating the FEN string for
+starting position, followed by the list of plies that follow that
+position.  They are difficult to represent graphically, except for
+showing each position in turn with a slight pause between—or by allowing
+the user to navigate each of the subsequent positions in turn.  They may
+be represented verbally by announcing each of the plies in turn, as
+mentioned above.
+
+* Menu:
+
+* Creating variations::
+* Variation positions::
+* Variation plies::
+* Making a move in a variation::
+
+
+File: docofPloc.info,  Node: Creating variations,  Next: Variation positions,  Up: Variations
+
+1.3.1 Creating variations
+-------------------------
+
+ -- Function: chess-var-create &optional position
+     Create a new chess variation object.  Optionally, use the given
+     starting POSITION.
+
+
+File: docofPloc.info,  Node: Variation positions,  Next: Variation plies,  Prev: Creating variations,  Up: Variations
+
+1.3.2 Variation positions
+-------------------------
+
+ -- Function: chess-var-pos variation &optional index
+     Return the position related to VARIATION’s INDEX ply.
+
+ -- Function: chess-var-index variation
+     Return the VARIATION’s current position index.
+
+ -- Function: chess-var-seq variation
+     Return the current VARIATION sequence.
+
+ -- Function: chess-var-side-to-move variation &optional index
+     Return the color whose move it is in VARIATION at INDEX (or at the
+     last position of VARIATION if INDEX is ‘nil’).
+
+
+File: docofPloc.info,  Node: Variation plies,  Next: Making a move in a variation,  Prev: Variation positions,  Up: Variations
+
+1.3.3 Variation plies
+---------------------
+
+ -- Function: chess-var-ply variation &optional index
+     Return VARIATION’s INDEXth ply.
+
+ -- Function: chess-var-plies variation
+     Return the plies of VARIATION.
+
+ -- Function: chess-var-to-algebraic variation &optional long
+     Reveal the plies of VARIATION by converting them to algebraic
+     notation.
+
+
+File: docofPloc.info,  Node: Making a move in a variation,  Prev: Variation plies,  Up: Variations
+
+1.3.4 Making a move in a variation
+----------------------------------
+
+ -- Function: chess-var-move variation ply
+     Make a move in the current VARIATION by applying the changes of
+     PLY.  This creates a new position and adds it to the main
+     variation.  The ‘changes’ of the last ply reflect whether the var
+     is currently in progress (‘nil’), if it is drawn, resigned, mate,
+     etc.
+
+ -- Function: chess-var-add-ply variation ply
+     Add the given PLY to VARIATION.
+
+
+File: docofPloc.info,  Node: Games,  Next: Collections,  Prev: Variations,  Up: The chess.el library
+
+1.4 Games
+=========
+
+A “game” includes its main variation, incidental information about the
+game (who played it, where, when, who won, etc.), and any sub-variations
+of interest to those studying the game afterwards.
+
+   “Game tags” is an alist that associates arbitrary English tag names
+to their values.
+
+   A game may be represented in ASCII using “PGN” (Portable Game
+Notation).  Representing them graphically or verbally is similar to what
+is done for variations (*note Variations::).
+
+ -- Function: chess-game-add-hook game function &optional data prepend
+     Add to GAME an event hook FUNCTION.
+
+ -- Function: chess-game-add-ply game ply
+     Add PLY to the main variation of GAME.
+
+ -- Function: chess-game-hooks game
+     Return the event hooks associated with GAME.
+
+ -- Function: chess-game-plies game
+     Return the main variation of GAME as a list of plies.
+
+ -- Function: chess-game-remove-hook game function &optional data
+     Remove from GAME all event hooks that match FUNCTION.  If DATA is
+     specified, only remove hooks with matching associated data.
+
+ -- Function: chess-game-run-hooks game &rest args
+     Run the event hooks of GAME and pass it ARGS.
+
+ -- Function: chess-game-set-hooks game hooks
+     Set the event hooks associated with GAME.
+
+ -- Function: chess-game-set-plies game plies
+     Set the list of plies which represents the main variation of GAME.
+
+* Menu:
+
+* Creating games::
+* Game tags::
+* Game positions::
+* Game plies::
+* Making a move::
+* PGN notation::
+
+
+File: docofPloc.info,  Node: Creating games,  Next: Game tags,  Up: Games
+
+1.4.1 Creating games
+--------------------
+
+ -- Function: chess-game-create &optional position tags
+     Create a new chess game object.  Optionally use the given starting
+     POSITION.  TAGS is the starting set of game tags (which can always
+     be changed later using the various tag-related methods).
+
+
+File: docofPloc.info,  Node: Game tags,  Next: Game positions,  Prev: Creating games,  Up: Games
+
+1.4.2 Game tags
+---------------
+
+ -- Function: chess-game-tags game
+     Return the tags alist associated with GAME.
+
+ -- Function: chess-game-set-tags game tags
+     Set the tags alist associated with GAME.  After the TAGS alist was
+     set the ‘set-tags’ event is triggered.
+
+ -- Function: chess-game-tag game tag
+     Return the value for TAG in GAME.
+
+ -- Function: chess-game-set-tag game tag value
+     Set the TAG for GAME to VALUE.
+
+ -- Function: chess-game-del-tag game tag
+     Delete the specified TAG from GAME.
+
+
+File: docofPloc.info,  Node: Game positions,  Next: Game plies,  Prev: Game tags,  Up: Games
+
+1.4.3 Game positions
+--------------------
+
+ -- Function: chess-game-pos game &optional index
+     Return the current position of GAME or a position of a given INDEX.
+
+ -- Function: chess-game-index game
+     Return the GAME’s current position index.
+
+ -- Function: chess-game-seq game
+     Return the current GAME sequence number.
+
+ -- Function: chess-game-side-to-move game &optional index
+     Return the side, specified as color, whose move it is in GAME at
+     INDEX (or at the last position if INDEX is ‘nil’).  Value is ‘t’
+     for white and ‘nil’ for black.
+
+
+File: docofPloc.info,  Node: Game plies,  Next: Making a move,  Prev: Game positions,  Up: Games
+
+1.4.4 Game plies
+----------------
+
+ -- Function: chess-game-ply game &optional index
+     Return a ply of GAME.  If INDEX is non-‘nil’, the last played ply
+     is returned.
+
+
+File: docofPloc.info,  Node: Making a move,  Next: PGN notation,  Prev: Game plies,  Up: Games
+
+1.4.5 Making a move
+-------------------
+
+ -- Function: chess-game-move game ply
+     Make a move in the current GAME using PLY.  This creates a new
+     position and adds it to the main variation.  The ‘changes’ of the
+     last ply reflect whether the game is currently in progress (‘nil’),
+     if it is drawn, resigned, mate, etc.
+
+
+File: docofPloc.info,  Node: PGN notation,  Prev: Making a move,  Up: Games
+
+1.4.6 PGN notation
+------------------
+
+ -- Function: chess-pgn-to-game &optional string
+     Convert the PGN notation at point into a chess game.  Optionally
+     use the supplied STRING instead of the current buffer.
+
+ -- Function: chess-game-to-pgn game &optional indented to-string
+     Convert a chess GAME to PGN notation.  If INDENTED is non-‘nil’,
+     indent the move texts.  If TO-STRING is non-‘nil’, return a string
+     instead of inserting the resulting PGN text.
+
+ -- Function: chess-pgn-insert-plies game index plies &optional
+          for-black indented no-annotations
+     _NYI_: Still have to implement the INDENTED argument.
+
+* Menu:
+
+* PGN mode::
+
+
+File: docofPloc.info,  Node: PGN mode,  Up: PGN notation
+
+1.4.6.1 PGN mode
+................
+
+ -- Function: chess-pgn-visualize
+     Visualize the move for the PGN game under point.  This does not
+     require that the buffer be in PGN mode.
+
+
+File: docofPloc.info,  Node: Collections,  Next: Chess Opening Books,  Prev: Games,  Up: The chess.el library
+
+1.5 Collections
+===============
+
+A “collection” is a set of games archived for later perusal.  A set of
+games conceptually represents a large tree of branching variations, and
+can be used for studying current theory, examining Master preferences,
+etc.
+
+   ‘Chess.el’ itself does not attempt to provide library services, nor
+does it ever represent library collections in memory.  Instead, it
+interacts with a chess database engine for the purpose of storing and
+retrieving games from the library, or performing library-wide analyses
+and searches.
+
+* Menu:
+
+* Opening Databases::
+* Querying Databases::
+* Modifying Databases::
+* Finalizing Databases::
+* Database Modules::
+
+
+File: docofPloc.info,  Node: Opening Databases,  Next: Querying Databases,  Up: Collections
+
+1.5.1 Opening Databases
+-----------------------
+
+ -- Variable: chess-database-modules
+     List of database modules to try when ‘chess-database-open’ is
+     called.
+
+ -- Function: chess-database-open file &optional module
+     Open a game database specified by FILE.  You can optionally specify
+     the database MODULE to use.
+
+     Returns the opened database object, or nil.
+
+
+File: docofPloc.info,  Node: Querying Databases,  Next: Modifying Databases,  Prev: Opening Databases,  Up: Collections
+
+1.5.2 Querying Databases
+------------------------
+
+ -- Function: chess-database-filename database
+     Return the filename of an already opened DATABASE.
+
+ -- Function: chess-database-read database index
+     Return from DATABASE the chess game object at INDEX.
+
+ -- Function: chess-database-query database &rest terms
+     Run a query on DATABASE.  The TERMS are partly dependent on the
+     chess-database module in use.  For the ‘chess-scid’ module, using
+     ‘tree-search GAME’ means perform a tree search on the last position
+     of GAME.
+
+
+File: docofPloc.info,  Node: Modifying Databases,  Next: Finalizing Databases,  Prev: Querying Databases,  Up: Collections
+
+1.5.3 Modifying Databases
+-------------------------
+
+ -- Function: chess-database-read-only-p database
+     Return non-‘nil’ if DATABASE is read only.
+
+
+File: docofPloc.info,  Node: Finalizing Databases,  Next: Database Modules,  Prev: Modifying Databases,  Up: Collections
+
+1.5.4 Finalizing Databases
+--------------------------
+
+
+File: docofPloc.info,  Node: Database Modules,  Prev: Finalizing Databases,  Up: Collections
+
+1.5.5 Database Modules
+----------------------
+
+Currently, there are two subclasses of the above defined database
+base-class:
+
+* Menu:
+
+* chess-file::
+* chess-scid::
+
+
+File: docofPloc.info,  Node: chess-file,  Next: chess-scid,  Up: Database Modules
+
+1.5.5.1 chess-file
+..................
+
+This module does not use an external chess database program to store and
+retrieve games.  It uses the PGN of EPD format parsing routines provided
+in ‘chess-pgn.el’ and ‘chess-epd.el’ to implement collections for
+ordinary PGN and EPD files.
+
+   EPD file collections are represented as a collection of games
+originating at the given position.  One might argue that conceptually,
+they represent a collection of positions, but it is more convenient to
+merge all collections into one uniform concept.
+
+
+File: docofPloc.info,  Node: chess-scid,  Prev: chess-file,  Up: Database Modules
+
+1.5.5.2 chess-scid
+..................
+
+This module implements basic reading and writing functionality for
+“SCID” (Shane’s Chess Information Database) files.
+
+
+File: docofPloc.info,  Node: Chess Opening Books,  Prev: Collections,  Up: The chess.el library
+
+1.6 Chess Opening Books
+=======================
+
+There are two different modules/libraries provided for looking up chess
+positions in opening books.
+
+* Menu:
+
+* ECO Classification::
+* Polyglot opening book format support::
+
+
+File: docofPloc.info,  Node: ECO Classification,  Next: Polyglot opening book format support,  Up: Chess Opening Books
+
+1.6.1 ECO Classification
+------------------------
+
+Module ‘chess-eco’ provides a database of well known names for chess
+opening positions.  If this module is activated (see variable
+‘chess-default-modules’), known chess opening positions will be
+announced in the minibuffer during a game.
+
+
+File: docofPloc.info,  Node: Polyglot opening book format support,  Prev: ECO Classification,  Up: Chess Opening Books
+
+1.6.2 Polyglot opening book format support
+------------------------------------------
+
+The popular and freely documented Polyglot opening book format is
+supported.  There is a default polyglot book file shipped with
+‘chess.el’ to support engines which do not have built-in support for
+looking up positions in opening books (such as some UCI protocol based
+engines).
+
+ -- User Option: chess-polyglot-book-file
+     Path to default polyglot book file.
+
+ -- Variable: chess-polyglot-book
+     If non-‘nil’, the buffer holding the currently loaded polyglot book
+     data.
+
+     This is used by UCI based engine modules as well as the internal
+     AI.
+
+ -- Function: chess-polyglot-book-open file
+     Open a polyglot book FILE.
+
+     Returns a buffer object which contains the binary data.
+
+ -- Function: chess-polyglot-book-plies book position
+     Return a list of plies found in BOOK for POSITION.  The resulting
+     list is ordered, most interesting plies come first.  The
+     ‘:polyglot-book-weight’ ply keyword is used to store the actual
+     move weights.  Use ‘chess-ply-keyword’ on elements of the returned
+     list to retrieve them.
+
+ -- Function: chess-polyglot-book-ply book position &optional strength
+     If non-‘nil’, a (randomly picked) ply from BOOK for POSITION.
+     Random distribution is defined by the relative weights of the found
+     plies.  If non-‘nil’, STRENGTH defines the bias towards better
+     moves.  A value below 1.0 will penalize known good moves while a
+     value above 1.0 will prefer known good moves.  The default is the
+     value of ‘chess-polyglot-book-strength’.  A strength value of 0.0
+     will completely ignore move weights, and evenly distribute the
+     probability that a move gets picked.
+
+
+File: docofPloc.info,  Node: Modules,  Next: Chessboard displays,  Prev: The chess.el library,  Up: Top
+
+2 Modules
+*********
+
+Positions, plies and variations are typically accessed in reference to a
+game object, which has a main variation containing the plies and
+positions that represent the number of moves made within that game up to
+the final position.
+
+   Another thing that the game object does is to manage events that
+occur within that game.  If a move is made from the final position, for
+example, it will cause a new ply to be created, adding it to the end of
+the main variation.  Then, a ‘move’ event is triggered within the game
+and passed to any chess modules which are currently associated with that
+game.  The concept of modules allows far more complex aspects of chess
+playing to be dealt with, while allowing the library itself to still
+operate solely in terms of the game object.
+
+   For example, although the plies of a game object contain all the
+information the computer needs to follow the game, a user needs much
+more.  He wants to see the pieces move.  To support this, a display
+module (*note Chessboard displays::) can be created, and linked to the
+game.  The first effect of this association will be to create a chess
+board display and show the game’s final position on it.  Now whenever
+plies are added to the game, the chess board will be updated to show the
+effect of that move on the board.  The display module realizes that a
+move has been made by receiving the ‘move’ event which is passed to all
+modules associated with the game object.
+
+   There may be any number of modules associated with a chess game, and
+they may do anything you like.  Basically, for a module called
+‘chess-sample’, a function must exist called ‘chess-sample-handler’.
+This takes two or more arguments: a game object, the event symbol, and
+whatever other arguments were passed along with the event symbol.
+
+   When an event is triggered on a game object (this may happen as a
+byproduct of manipulating the game, or events may be manually
+generated), every associated module, in order, is called with that event
+and whatever arguments were passed along with the event.  The game
+object is passed also, so that the module knows which game this event
+has occurred in reference to.
+
+   Once called, the module can do whatever it likes.  Some events expect
+certain values to be returned, to indicate success or failure in
+processing the event.  There are many different events, each depicting
+something specific that might happen in the context of playing or
+manipulating a chess game.  Some events relate only to the chess game
+itself, some are triggered by the various chess engines that might be
+associated with that game.  Modules may even trigger events in response
+to event.  The game itself remains unaware of events, except for the
+fact that it will pass them along to every module associated with that
+game.
+
+   This is how displays get updated, for example, because once a ‘move’
+event is triggered, each display knows that it must now look at the new
+final position and update its display.  It may even trigger new events
+special to displays, to cause a refresh to happen after update
+calculations have been performed, for example.  All such details are
+left to the module, and the game does not interfere with such
+intra-module messaging.
+
+   Looked at as an object-oriented design, these are typical polymorphic
+events.  Certain generic situations frequently occur, such as moves,
+which trigger events so that everyone concerned with the game can be
+updated as to the move that occurred.  This way, no one need to actively
+query the game to find out if something new has happened.  The game will
+notify every listening module by sending an event.
+
+   The core library, which consists of code to manipulate games, does
+not define any modules.  The rest of the ‘chess.el’ library is strictly
+a set of module implementations, of various types.  Display modules
+react to moves, and may modify the game based on user input; engine
+modules react to moves by notifying the engine of the move; network
+client modules react to moves by sending the move text over the network.
+Engine and network modules may also trigger new events when the engine
+or network player has decided on their move, and this move is then
+applied to the game object.
+
+   At the moment, no negotiation is done to determine which module may
+modify the game object.  All modules have equal privilege.  This means
+it is the programmer’s duty not to associate conflicting modules with a
+single game object.  If two artificial intelligence engines were linked,
+for example, they would quickly start stepping on each other’s toes.
+But it is perfectly fine to have one artificial intelligence engine, and
+another passive engine whose only purpose is to relay the moves to a
+networked observer on another computer.  The possibilities are endless.
+
+   Modules are very easy to write, although engines and displays are
+rather different from each other in their principles.  There is a base
+engine, and a base display, which receive the same events as any other
+module.  But then there are derived engines and derived displays which
+trigger a whole family of events specific to those module types.  If you
+suspect a bug in your module, put a breakpoint in your handler function,
+and wait for the offending event to come through.  Then you can watch
+what your module does in response to that event.  If it leaves the game
+object alone, it should be easy to locate the problem, since it will
+always be within the module itself.  But if your module also modifies
+the game object in response to certain events, you may induce a feedback
+loop that is much more difficult to sort out.  Test often and keep in
+mind that _many_ events might end up coming through as a result of the
+game changes your module makes!
+
+   That, in essence, is how the module system works.  From the game
+object’s perspective, it is a very simple mechanism, much like a
+function ring or a hook.  The hook is called at certain points, so that
+any listener can react to changes in the game.  But from each module’s
+perspective, it is a rich way to allow inter-operation between both
+passive and reactive modules, all of them acting together to enrich the
+context of play involving the central game object.
+
+   The only other rule to be mentioned is that each module instance
+should be associated with only one game object at a time, although a
+game object may have unlimited modules of any type linked to it.
+Otherwise, trying to update a chess board based on input from two
+different games would get impossible to sort out.  Better to create a
+new board for every game—the way ordinary humans would do it in the real
+world.
+
+
+File: docofPloc.info,  Node: Chessboard displays,  Next: Engines,  Prev: Modules,  Up: Top
+
+3 Chessboard displays
+*********************
+
+The previous chapter described all the objects found in chess—positions,
+plies, variations, games and collections.  However, these objects can
+only be manipulated programmatically using the functions given so far.
+In order to present them in a meaningful fashion to a human reader, it
+is necessary to create and use a display object.
+
+* Menu:
+
+* Generic display manipulation functions::
+* Chess display mode::
+* Plain ASCII diagram displays::
+* ICS1 style ASCII displays::
+* Graphical displays::
+
+
+File: docofPloc.info,  Node: Generic display manipulation functions,  Next: Chess display mode,  Up: Chessboard displays
+
+3.1 Generic display manipulation functions
+==========================================
+
+ -- Function: chess-display-create game style perspective
+     Create a chess display, for displaying chess objects.  The GAME is
+     the chess game object to use, STYLE should be the display type to
+     use (a symbol), and PERSPECTIVE determines the viewpoint of the
+     board: if non-‘nil’, the board is viewed from White’s perspective.
+
+ -- Function: chess-display-active-p
+     Return non-‘nil’ if the displayed chessboard reflects an active
+     game.  Basically, it means we are playing, not editing or
+     reviewing.
+
+ -- Function: chess-display-clear-board
+     Setup the current board for editing.
+
+ -- Function: chess-display-highlight display &rest args
+     Highlight in DISPLAY the squares given in ARGS on the current
+     position.
+
+     The ARGS is a list of highlighting modes and position coordinates.
+     The default highlighting mode is ‘:selected’ which is supported by
+     most displays.
+
+ -- Function: chess-display-invert
+     Invert the perspective of the current chess board.
+
+ -- Function: chess-display-move display ply
+     Move a piece on DISPLAY, by applying the given PLY.  The position
+     of PLY must match the currently displayed position.
+
+ -- Function: chess-display-perspective display
+     Return the current perspective of DISPLAY.
+
+ -- Function: chess-display-position display
+     Return the position currently viewed on DISPLAY.
+
+ -- Function: chess-display-quit
+     Quit the game associated with the current display.
+
+ -- Function: chess-display-set-game display game &optional index
+     Set the given DISPLAY to display the GAME object, optionally at
+     INDEX.  This is the function to call to cause a display to view a
+     game.  It will also update all of the listening engines and other
+     displays to also view the same game.
+
+ -- Function: chess-display-set-perspective display perspective
+     Set PERSPECTIVE of DISPLAY.
+
+ -- Function: chess-display-set-position display &optional position
+          my-color
+     Set the game associated with DISPLAY to use POSITION and MY-COLOR.
+
+ -- Function: chess-display-set-variation display variation &optional
+          index
+     Set DISPLAY VARIATION.  If INDEX is not specified, this will cause
+     the first ply in the variation to be displayed, with the user able
+     to scroll back and forth through the moves in the variation.  Any
+     moves made on the board will extend/change the variation that was
+     passed in.
+
+ -- Function: chess-display-update display &optional popup
+     Update the chessboard DISPLAY.  If POPUP is non-‘nil’, make sure it
+     is visible.
+
+
+File: docofPloc.info,  Node: Chess display mode,  Next: Plain ASCII diagram displays,  Prev: Generic display manipulation functions,  Up: Chessboard displays
+
+3.2 Chess display mode
+======================
+
+“Chess display mode” is a special major mode (*note (emacs)Major
+Modes::) that allows to select pieces to move with the mouse or by
+moving point to the desired square/piece.  Additionally, you can enter
+moves in a variant of algebraic notation via the keyboard.
+
+   All the chessboard displays described in following sub-sections share
+the basic behavior provided by chess display mode.  They basically only
+differ in appearance of the various chessboards.
+
+ -- User Option: chess-display-highlight-legal
+     If non-nil, highlight valid target squares when a piece is
+     selected.
+
+* Menu:
+
+* Basic operations::
+* Selecting pieces with the keyboard::
+* Selecting pieces with the mouse::
+* Entering moves with algebraic notation::
+
+
+File: docofPloc.info,  Node: Basic operations,  Next: Selecting pieces with the keyboard,  Up: Chess display mode
+
+3.2.1 Basic operations
+----------------------
+
+‘C-i’
+‘<TAB>’
+     Invert the perspective of the current chess board
+     (‘chess-display-invert’).
+
+‘,’
+     Show the previous move in the current game
+     (‘chess-display-move-backward’).
+
+‘C-r’
+     Find previous move which algebraic notation matches a regular
+     expression (‘chess-display-search-backward’).
+
+‘C-s’
+     Find next move which algebraic notation matches a regular
+     expression (‘chess-display-search-forward’).
+
+‘.’
+     Show the next move in the current game
+     (‘chess-display-move-forward’).
+
+‘<’
+     Move to the initial position of the current game
+     (‘chess-display-move-first’).
+
+‘>’
+     Move to the last position of the current game
+     (‘chess-display-move-last’).
+
+‘C-c C-d’
+     Offer to draw the current game (‘chess-display-draw’).
+
+‘C-c C-r’
+     Resign the current game (‘chess-display-resign’).
+
+‘M-w’
+‘C-u M-w’
+     Copy the currently displayed position to the kill ring as a FEN
+     string (‘chess-display-kill-board’).
+
+     With prefix argument, copy the current game in PGN to the kill
+     ring.
+
+‘C-y’
+     Set the current display position via a FEN string from the kill
+     ring (‘chess-display-yank-board’).
+
+     This is useful to copy positions from one chessboard display to
+     another, as well as quickly setting up a position from a FEN string
+     previously added to the kill ring from somewhere else.
+
+‘X’
+     Quit this chessboard display (‘chess-display-quit’).
+
+     This destroys the session (and all related modules) associated with
+     this chessboard display.
+
+
+File: docofPloc.info,  Node: Selecting pieces with the keyboard,  Next: Selecting pieces with the mouse,  Prev: Basic operations,  Up: Chess display mode
+
+3.2.2 Selecting pieces with the keyboard
+----------------------------------------
+
+In character based chessboard displays, point can be moved around in the
+buffer as usual.  You can indicate the initial square/piece and the
+target square/piece by moving point to the desired position and pressing
+‘<RET>’.
+
+‘<RET>’
+     Select the piece/square currently indicated by point
+     (‘chess-display-select-piece’) to move from/to.
+
+
+File: docofPloc.info,  Node: Selecting pieces with the mouse,  Next: Entering moves with algebraic notation,  Prev: Selecting pieces with the keyboard,  Up: Chess display mode
+
+3.2.3 Selecting pieces with the mouse
+-------------------------------------
+
+Similarly, you can also use the mouse (if available) to indicate the
+source and target square of your move.
+
+‘down-mouse-1’
+‘down-mouse-2’
+‘drag-mouse-1’
+‘drag-mouse-2’
+     Select the piece/square currently indicated by the mouse pointer
+     (‘chess-display-select-piece’) to move from/to.
+
+
+File: docofPloc.info,  Node: Entering moves with algebraic notation,  Prev: Selecting pieces with the mouse,  Up: Chess display mode
+
+3.2.4 Entering moves with algebraic notation
+--------------------------------------------
+
+‘a’ ... ‘h’
+‘1’ ... ‘8’
+‘N’
+‘B’
+‘R’
+‘Q’
+‘K’
+‘x’
+‘=’
+     Enter move in algebraic notation.
+
+     The move will be accepted as soon as it is unambiguous.  So in most
+     situations, you do not need to type the complete algebraic move
+     string.  For instance, if there is only one piece which can be
+     taken by one of your knights, typing ‘N x’ is sufficient to select
+     that move.
+
+     Additionally, the characters ‘x’ and ‘=’ are optional, as there is
+     no difference between ‘N x e 4’ and ‘N e 4’.
+
+<backspace>
+     Delete the last entered chess move character
+     (‘chess-input-shortcut-delete’).
+
+     This is useful if you have accidentally typed a wrong character,
+     and the move was not unambiguous yet.
+
+
+File: docofPloc.info,  Node: Plain ASCII diagram displays,  Next: ICS1 style ASCII displays,  Prev: Chess display mode,  Up: Chessboard displays
+
+3.3 Plain ASCII diagram displays
+================================
+
+The simplest display style available is ‘chess-plain’, a very
+customizable ASCII board diagram display.
+
+   This is how the starting position looks in its default configuration:
+
+      +---------------+
+     8|r n b q k b n r|
+     7|p p p p p p p p|
+     6|. . . . . . . .|
+     5|. . . . . . . .|
+     4|. . . . . . . .|
+     3|. . . . . . . .|
+     2|P P P P P P P P|
+     1|R N B Q K B N R|
+      +---------------+
+       a b c d e f g h
+
+ -- User Option: chess-plain-separate-frame
+     If non-‘nil’, display the chessboard in its own frame.
+
+ -- User Option: chess-plain-border-style
+     If non-‘nil’, a vector of Characters used to draw borders.
+
+     Otherwise, omit to draw any border around the chessboard diagram.
+
+ -- User Option: chess-plain-black-square-char
+     Character used to indicate empty black squares.
+
+ -- User Option: chess-plain-white-square-char
+     Character used to indicate black white squares.
+
+ -- User Option: chess-plain-piece-chars
+     Alist of pieces and their corresponding characters.
+
+ -- User Option: chess-plain-upcase-indicates
+     Defines what an upcase char should indicate.  The default is
+     ‘'color’, meaning a upcase char is a white piece, a lowercase char
+     a black piece.  Possible values: ‘'color’ (default),
+     ‘'square-color’.  If set to ‘'square-color’, an uppercase character
+     indicates a piece on a black square.  (Note that you also need to
+     modify ‘chess-plain-piece-chars’ to avoid real confusion.)
+
+ -- User Option: chess-plain-spacing
+     Number of spaces between files.
+
+   To customize options of ‘chess-plain’, use ‘M-x customize-group <RET>
+chess-plain <RET>’.
+
+
+File: docofPloc.info,  Node: ICS1 style ASCII displays,  Next: Graphical displays,  Prev: Plain ASCII diagram displays,  Up: Chessboard displays
+
+3.4 ICS1 style ASCII displays
+=============================
+
+The ‘chess-ics1’ module is a more verbose ASCII chessboard display.
+
+   This is how the starting position looks with this chessboard display:
+
+           +---+---+---+---+---+---+---+---+
+         8 | r | n | b | q | k | b | n | r |
+           +---+---+---+---+---+---+---+---+
+         7 | p | p | p | p | p | p | p | p |
+           +---+---+---+---+---+---+---+---+
+         6 |   |   |   |   |   |   |   |   |
+           +---+---+---+---+---+---+---+---+
+         5 |   |   |   |   |   |   |   |   |
+           +---+---+---+---+---+---+---+---+
+         4 |   |   |   |   |   |   |   |   |
+           +---+---+---+---+---+---+---+---+
+         3 |   |   |   |   |   |   |   |   |
+           +---+---+---+---+---+---+---+---+
+         2 | P | P | P | P | P | P | P | P |
+           +---+---+---+---+---+---+---+---+
+         1 | R | N | B | Q | K | B | N | R |
+           +---+---+---+---+---+---+---+---+
+             a   b   c   d   e   f   g   h
+
+ -- User Option: chess-ics1-separate-frame
+     If non-‘nil’, display the chessboard in its own frame.
+
+   To customize options of ‘chess-ics1’, use ‘M-x customize-group <RET>
+chess-ics1 <RET>’.
+
+
+File: docofPloc.info,  Node: Graphical displays,  Prev: ICS1 style ASCII displays,  Up: Chessboard displays
+
+3.5 Graphical displays
+======================
+
+The graphical chessboard display (‘chess-images’) uses image files to
+create a visually appealing chessboard in a buffer.
+
+ -- User Option: chess-images-directory
+     A directory which contains images in XPM format.
+
+     If you want to draw your own images, each image file must be named
+     ‘COLOR-PIECE.xpm’, where COLOR is either black or white, and PIECE
+     is one of rook, knight, bishop, queen, king or pawn.
+
+     The only image format currently supported is XPM.
+
+ -- User Option: chess-images-separate-frame
+     If non-‘nil’, display the chessboard in its own frame.
+
+   For all customization options of ‘chess-images’, use ‘M-x
+customize-group <RET> chess-images <RET>’.
+
+
+File: docofPloc.info,  Node: Engines,  Next: Chess Session,  Prev: Chessboard displays,  Up: Top
+
+4 Engines
+*********
+
+“Engines” represent opponents in Chess.  The main type of engine
+interfaces with an external chess program.  However, there can be other
+uses for engine objects, such as providing networked engined for playing
+with opponent over different types of transports.
+
+* Menu:
+
+* Common functions::
+* The Null Engine::
+* AI::
+* Crafty::
+* Fruit::
+* Glaurung::
+* GNU Chess::
+* Phalanx::
+* Sjeng::
+* Stockfish::
+
+
+File: docofPloc.info,  Node: Common functions,  Next: The Null Engine,  Up: Engines
+
+4.1 Common functions
+====================
+
+ -- Function: chess-engine-create module game &optional response-handler
+          &rest handler-ctor-args
+     Create a new chess engine MODULE (a symbol) associated with GAME.
+     Optionally supply a new RESPONSE-HANDLER.
+
+ -- Function: chess-engine-set-option engine option value
+     Set ENGINE OPTION to VALUE by invoking its handler with the
+     ‘set-option’ event.
+
+ -- Function: chess-engine-position engine
+     Return the current position of the game associated with ENGINE.
+
+ -- Function: chess-engine-command engine event &rest args
+     Call the handler of ENGINE with EVENT (a symbol) and ARGS.
+
+ -- Function: chess-engine-send engine string
+     Send the given STRING to ENGINE.  If ‘chess-engine-process’ is a
+     valid process object, use ‘process-send-string’ to submit the data.
+     Otherwise, the ‘send’ event is triggered and the engine event
+     handler can take care of the data.
+
+
+File: docofPloc.info,  Node: The Null Engine,  Next: AI,  Prev: Common functions,  Up: Engines
+
+4.2 The Null Engine
+===================
+
+The most basic engine module is ‘chess-none’, a stub module that does
+nothing.  This is useful for a game of chess against another human,
+where both use the same computer to enter moves and display the current
+chess position.
+
+   It can also be useful for creating FEN strings of specific positions.
+
+   To bring up a chessboard with no active engine attached, use ‘C-u M-x
+chess <RET> none <RET>’.
+
+
+File: docofPloc.info,  Node: AI,  Next: Crafty,  Prev: The Null Engine,  Up: Engines
+
+4.3 AI
+======
+
+The AI engine module defines a pure Emacs Lisp implementation of an
+opponent.  Contrary to all other engine modules mentioned later on, it
+does not require any external programs to be installed.
+
+   To explicitly select this engine as an opponent, use ‘C-u M-x chess
+<RET> ai <RET>’.
+
+ -- User Option: chess-ai-depth
+     Defines the default search depth for this engine.
+
+ -- User Option: chess-ai-quiescence-depth
+     Defines the number of plies to search for a quiet position.  This
+     is in addition to ‘chess-ai-depth’.
+
+   If you’d like to employ the search and evaluation functions provided
+by this module programmatically, the following function is the top-level
+entry point.
+
+ -- Function: chess-ai-best-move position &optional depth eval-fn
+     Find the supposedly best move (ply) for POSITION.  DEPTH defaults
+     to the value of ‘chess-ai-depth’.
+
+
+File: docofPloc.info,  Node: Crafty,  Next: Fruit,  Prev: AI,  Up: Engines
+
+4.4 Crafty
+==========
+
+“Crafty” is a chess program written by Michael Byrne, UAB professor
+Dr. Robert Hyatt, Tracy Riegle, Peter Skinner and Ted Langreck.  It is
+directly derived from Cray Blitz, winner of the 1983 and 1986 World
+Computer Chess Championships.
+
+   If the ‘crafty’ program is installed and can be found in the program
+search path (‘exec-path’), the ‘chess-crafty’ engine module will
+automatically detect it.
+
+   If ‘crafty’ is installed in a non-standard location, variable
+‘chess-crafty-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Crafty by invoking ‘C-u M-x chess <RET> crafty <RET>’.
+
+
+File: docofPloc.info,  Node: Fruit,  Next: Glaurung,  Prev: Crafty,  Up: Engines
+
+4.5 Fruit
+=========
+
+“Fruit” is a chess engine developed by Fabien Letouzey.  It was
+commercially available from September 2005 until July 2007.  Now it is
+freeware and you can download it for free from
+<http://www.fruitchess.com/>.  The development on Fruit by Fabien
+Letouzey has ceded and it is unlikely to continue.
+
+   Fruit was vice world computer chess champion 2005.
+
+   If the ‘fruit’ command is installed and can be found in the program
+search path (‘exec-path’), the ‘chess-fruit’ engine module will
+automatically detect it.
+
+   If Fruit is installed in a non-standard location, variable
+‘chess-fruit-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Fruit by invoking ‘C-u M-x chess <RET> fruit <RET>’.
+
+
+File: docofPloc.info,  Node: Glaurung,  Next: GNU Chess,  Prev: Fruit,  Up: Engines
+
+4.6 Glaurung
+============
+
+“Glaurung” is another freely distributed strong computer chess engine.
+
+   If the ‘glaurung’ program is installed and can be found in the
+program search path (‘exec-path’), the ‘chess-glaurung’ engine module
+will automatically detect it.
+
+   If Glaurung is installed in a non-standard location, variable
+‘chess-glaurung-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Glaurung by invoking ‘C-u M-x chess <RET> glaurung <RET>’.
+
+
+File: docofPloc.info,  Node: GNU Chess,  Next: Phalanx,  Prev: Glaurung,  Up: Engines
+
+4.7 GNU Chess
+=============
+
+“GNU Chess” (http://gnu.org/software/chess/) is free software, licensed
+under the terms of the GNU General Public License, and is maintained by
+collaborating developers.  As one of the earliest computer chess
+programs with full source code available, it’s one of the oldest for
+Unix-based systems and has since been ported to many other platforms.
+
+   If the ‘gnuchess’ program is installed and can be found in the
+program search path (‘exec-path’), the ‘chess-gnuchess’ engine module
+will automatically detect it.
+
+   If GNU Chess is installed in a non-standard location, variable
+‘chess-gnuchess-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against GNU Chess by invoking ‘C-u M-x chess <RET> gnuchess <RET>’.
+
+
+File: docofPloc.info,  Node: Phalanx,  Next: Sjeng,  Prev: GNU Chess,  Up: Engines
+
+4.8 Phalanx
+===========
+
+“Phalanx” is an old, popular chess engine, with an interesting history.
+
+   If the ‘phalanx’ program is installed and can be found in the program
+search path (‘exec-path’), the ‘chess-phalanx’ engine module will
+automatically detect it.
+
+   If Phalanx is installed in a non-standard location, variable
+‘chess-phalanx-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Phalanx by invoking ‘C-u M-x chess <RET> phalanx <RET>’.
+
+
+File: docofPloc.info,  Node: Sjeng,  Next: Stockfish,  Prev: Phalanx,  Up: Engines
+
+4.9 Sjeng
+=========
+
+“Sjeng” (http://sjeng.org/) is a championship-winner automated chess
+engine developed by Gian-Carlo Pascutto from Belgium.  While its
+original version was free, recent developments are for sale.
+
+   If the ‘sjeng’ program is installed and can be found in the program
+search path (‘exec-path’), the ‘chess-sjeng’ engine module will
+automatically detect it.
+
+   If Sjeng is installed in a non-standard location, variable
+‘chess-sjeng-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Sjeng by invoking ‘C-u M-x chess <RET> sjeng <RET>’.
+
+
+File: docofPloc.info,  Node: Stockfish,  Prev: Sjeng,  Up: Engines
+
+4.10 Stockfish
+==============
+
+“Stockfish” (http://www.stockfishchess.org/) is one of the strongest
+chess engines in the world, appearing near or at the top of most chess
+engine rating lists.  Stockfish is also free software, licensed under
+the terms of the GNU General Public License.
+
+   If the ‘stockfish’ program is installed and can be found in the
+program search path (‘exec-path’), the ‘chess-stockfish’ engine module
+will automatically detect it.
+
+   If Stockfish is installed in a non-standard location, variable
+‘chess-stockfish-path’ can be set to point to its executable file.
+
+   If you have multiple engines installed you can explicitly select to
+play against Stockfish by invoking ‘C-u M-x chess <RET> stockfish
+<RET>’.
+
+
+File: docofPloc.info,  Node: Chess Session,  Next: Internet Chess Servers,  Prev: Engines,  Up: Top
+
+5 Chess Session
+***************
+
+A “chess session” assembles all modules mentioned in previous chapters
+into a working system to interact with.  A session typically consists of
+at least one display module, one engine module, and possibly a number of
+optional modules.  All these modules share a common game object which is
+used to keep track of the currently active game.
+
+ -- Function: chess engine disable-popup engine-response-handler &rest
+          engine-ctor-args
+     Play a game against ENGINE.
+
+     This function constructs all the necessary modules required for a
+     chess session.  In particular, it will start ENGINE and create a
+     chess display as configured in ‘chess-default-display’.
+
+     This is the main entry-point for interactively launching a
+     chessboard display with associated engine.
+
+     If you want to launch a chess session as part of your own code, the
+     probably more expressive alias ‘chess-session’ might be interesting
+     to use.
+
+   You can have several active chess sessions.  In fact, some features
+later described in this manual make use of this, *note Internet Chess
+Servers::.
+
+   To interactively start a chess session, invoke ‘M-x chess <RET>’.
+This uses ‘chess-default-display’ to determine the chessboard display to
+use, and ‘chess-default-engine’ to determine an opponent.
+
+   If you want to play against a specific engine, provide a prefix
+argument as in ‘C-u M-x chess <RET>’, which will prompt for an engine
+module.  The module name has the common prefix ‘chess-’ stripped.  So
+you enter ‘gnuchess’ to indicate you’d like to play against the
+‘chess-gnuchess’ module.
+
+
+File: docofPloc.info,  Node: Internet Chess Servers,  Next: GNU Free Documentation License,  Prev: Chess Session,  Up: Top
+
+6 Internet Chess Servers
+************************
+
+Based on the services provided above, there is also a special mode for
+communication with Internet Chess Servers.
+
+   On an Internet Chess Server you can seek to play against other human
+or computer players, observe other games being played or examined, play
+tournaments, chat with fellow chess players, participate in team games,
+or do various other interesting chess related things.
+
+   A default set of well known servers is defined in the following
+variable:
+
+ -- Variable: chess-ics-server-list
+     A list of servers to connect to.  The format of each entry is:
+
+     (SERVER PORT [HANDLE] [PASSWORD-OR-FILENAME] [HELPER] [HELPER
+     ARGS...])
+
+   Internet Chess Servers based on FICS (Free Internet Chess Server)
+(http://www.freechess.org/) and ICC (Internet Chess Club)
+(http://www.chessclub.com/) are currently supported.
+
+* Menu:
+
+* Connecting to a server::
+* Chess ICS Mode::
+* Command History::
+* Seeking an opponent for a new game::
+* The sought game display::
+* Watching other games::
+
+
+File: docofPloc.info,  Node: Connecting to a server,  Next: Chess ICS Mode,  Up: Internet Chess Servers
+
+6.1 Connecting to a server
+==========================
+
+To open a new connection to an Internet Chess Server, use:
+
+ -- Function: chess-ics server port &optional handle
+          password-or-filename helper &rest helper-args
+     Connect to an Internet Chess Server.
+
+     If called interactively, you will be prompted to enter a server
+     (from ‘chess-ics-server-list’ and possibly identification
+     credentials.
+
+
+File: docofPloc.info,  Node: Chess ICS Mode,  Next: Command History,  Prev: Connecting to a server,  Up: Internet Chess Servers
+
+6.2 Chess ICS Mode
+==================
+
+The major mode for ICS buffers is Chess ICS mode.  Many of its special
+commands are bound to the ‘C-c’ prefix.  Here is a list of ICS mode
+commands:
+
+‘<RET>’
+     Send the current line as input to the server (‘comint-send-input’).
+     Any prompt at the beginning of the line is omitted.  If point is at
+     the end of buffer, this is like submitting the command line in an
+     ordinary interactive shell.  However, you can also invoke <RET>
+     elsewhere in the ICS buffer to submit the current line as input.
+
+‘C-d’
+     Either delete a character or send EOF (End Of File)
+     (‘comint-delchar-or-maybe-eof’).  Typed at the end of the ICS
+     buffer, this sends EOF to the server and terminates the connection.
+     Typed at any other position in the buffer, this deletes the
+     character at point, as usual.
+
+‘C-c C-a’
+     Move to the beginning of the line, but after the prompt if any
+     (‘comint-bol-or-process-mark’).  If you repeat this command twice
+     in a row, the second time it moves back to the process mark, which
+     is the beginning of the input that you have not yet sent to the
+     server.  (Normally that is the same place—the end of the prompt on
+     this line—but after ‘C-c <SPC>’ the process mark may be in a
+     previous line.)
+
+‘C-c <SPC>’
+     Accumulate multiple lines of input, then send them together
+     (‘comint-accumulate’).  This command inserts a newline before
+     point, but does not send the preceding text as input to the
+     server—at least, not yet.  Both lines, the one before this newline
+     and the one after, will be sent together (along with the newline
+     that separates them), when you type <RET>.
+
+‘C-c C-u’
+     Kill all text pending at end of buffer to be sent as input
+     (‘comint-kill-input’).  If point is not at end of buffer, this only
+     kills the part of this text that precedes point.
+
+‘C-c C-w’
+     Kill a word before point (‘backward-kill-word’).
+
+‘C-c C-o’
+     Delete the last batch of output from an ICS server command
+     (‘comint-delete-output’).  This is useful if a server command spews
+     out lots of output that just gets in the way.
+
+‘C-c C-s’
+     Write the last batch of output from an ICS server command to a file
+     (‘comint-write-output’).  With a prefix argument, the file is
+     appended to instead.  Any prompt at the end of the output is not
+     written.
+
+‘C-c C-r’
+‘C-M-l’
+     Scroll to display the beginning of the last batch of output at the
+     top of the window; also move the cursor there
+     (‘comint-show-output’).
+
+‘C-c C-e’
+     Scroll to put the end of the buffer at the bottom of the window
+     (‘comint-show-maximum-output’).
+
+‘M-x comint-truncate-buffer’
+     This command truncates the ICS buffer to a certain maximum number
+     of lines, specified by the variable ‘comint-buffer-maximum-size’.
+     Here’s how to do this automatically each time you get output from
+     the server:
+
+          (add-hook 'comint-output-filter-functions
+                    'comint-truncate-buffer)
+
+   ICS mode is a derivative of Comint mode, a general-purpose mode for
+communicating with interactive subprocesses.  Most of the features of
+ICS mode actually come from Comint mode, as you can see from the command
+names listed above.
+
+
+File: docofPloc.info,  Node: Command History,  Next: Seeking an opponent for a new game,  Prev: Chess ICS Mode,  Up: Internet Chess Servers
+
+6.3 ICS Command History
+=======================
+
+ICS buffers support two ways of repeating earlier commands.  You can use
+keys like those used for the minibuffer history; these work much as they
+do in the minibuffer, inserting text from prior commands while point
+remains always at the end of the buffer.  You can move through the
+buffer to previous inputs in their original place, then resubmit them or
+copy them to the end.
+
+* Menu:
+
+* ICS Command Ring::
+* ICS History Copying::
+
+
+File: docofPloc.info,  Node: ICS Command Ring,  Next: ICS History Copying,  Up: Command History
+
+6.3.1 ICS Command History Ring
+------------------------------
+
+‘M-p’
+‘C-<UP>’
+     Fetch the next earlier old ICS command (‘comint-previous-input’).
+
+‘M-n’
+‘C-<DOWN>’
+     Fetch the next later old ICS command (‘comint-next-input’).
+
+‘M-r’
+     Begin an incremental regexp search of old ICS commands
+     (‘comint-history-isearch-backward-regexp’).
+
+‘C-c C-x’
+     Fetch the next subsequent command from the history
+     (‘comint-get-next-from-history’).
+
+‘C-c .’
+     Fetch one argument from an old ICS command
+     (‘comint-input-previous-argument’).
+
+‘C-c C-l’
+     Display the buffer’s history of ICS commands in another window
+     (‘comint-dynamic-list-input-ring’).
+
+   ICS buffers provide a history of previously entered commands.  To
+reuse commands from the history, use the editing commands ‘M-p’, ‘M-n’,
+‘M-r’ and ‘M-s’.  These work just like the minibuffer history commands
+(*note (emacs)Minibuffer History::), except that they operate within the
+ICS buffer rather than the minibuffer.
+
+   ‘M-p’ fetches an earlier ICS command to the end of the ICS buffer.
+Successive use of ‘M-p’ fetches successively earlier commands, each
+replacing any text that was already present as potential input.  ‘M-n’
+does likewise except that it finds successively more recent ICS commands
+from the buffer.  ‘C-<UP>’ works like ‘M-p’, and ‘C-<DOWN>’ like ‘M-n’.
+
+   The history search command ‘M-r’ begins an incremental regular
+expression search of previous ICS commands.  After typing ‘M-r’, start
+typing the desired string or regular expression; the last matching ICS
+command will be displayed in the current line.  Incremental search
+commands have their usual effects—for instance, ‘C-s’ and ‘C-r’ search
+forward and backward for the next match (*note (emacs)Incremental
+Search::).  When you find the desired input, type <RET> to terminate the
+search.  This puts the input in the command line.  Any partial input you
+were composing before navigating the history list is restored when you
+go to the beginning or end of the history ring.
+
+   Often it is useful to reexecute several successive ICS commands that
+were previously executed in sequence.  To do this, first find and
+reexecute the first command of the sequence.  Then type ‘C-c C-x’; that
+will fetch the following command—the one that follows the command you
+just repeated.  Then type <RET> to reexecute this command.  You can
+reexecute several successive commands by typing ‘C-c C-x <RET>’ over and
+over.
+
+   The command ‘C-c .’ (‘comint-input-previous-argument’) copies an
+individual argument from a previous command, like ‘<ESC> .’ in Bash.
+The simplest use copies the last argument from the previous ICS command.
+With a prefix argument N, it copies the Nth argument instead.  Repeating
+‘C-c .’ copies from an earlier ICS command instead, always using the
+same value of N (don’t give a prefix argument when you repeat the ‘C-c
+.’ command).
+
+   These commands get the text of previous ICS commands from a special
+history list, not from the ICS buffer itself.  Thus, editing the ICS
+buffer, or even killing large parts of it, does not affect the history
+that these commands access.
+
+
+File: docofPloc.info,  Node: ICS History Copying,  Prev: ICS Command Ring,  Up: Command History
+
+6.3.2 ICS History Copying
+-------------------------
+
+‘C-c C-p’
+     Move point to the previous prompt (‘comint-previous-prompt’).
+
+‘C-c C-n’
+     Move point to the following prompt (‘comint-next-prompt’).
+
+‘C-c <RET>’
+     Copy the input command at point, inserting the copy at the end of
+     the buffer (‘comint-copy-old-input’).  This is useful if you move
+     point back to a previous command.  After you copy the command, you
+     can submit the copy as input with <RET>.  If you wish, you can edit
+     the copy before resubmitting it.  If you use this command on an
+     output line, it copies that line to the end of the buffer.
+
+‘Mouse-2’
+     If ‘comint-use-prompt-regexp’ is ‘nil’ (the default), copy the old
+     input command that you click on, inserting the copy at the end of
+     the buffer (‘comint-insert-input’).  If ‘comint-use-prompt-regexp’
+     is non-‘nil’, or if the click is not over old input, just yank as
+     usual.
+
+   Moving to a previous input and then copying it with ‘C-c <RET>’ or
+‘Mouse-2’ produces the same results—the same buffer contents—that you
+would get by using ‘M-p’ enough times to fetch that previous input from
+the history list.  However, ‘C-c <RET>’ copies the text from the buffer,
+which can be different from what is in the history list if you edit the
+input text in the buffer after it has been sent.
+
+
+File: docofPloc.info,  Node: Seeking an opponent for a new game,  Next: The sought game display,  Prev: Command History,  Up: Internet Chess Servers
+
+6.4 Seeking an opponent for a new game
+======================================
+
+After you connected to a server, one of the first things you will want
+to do is find an opponent for a new game.  You can use the ICS command
+‘seek’ to announce your availability for a chess game to interested
+people.
+
+   For example:
+
+     fics% seek 10 10 rated
+
+   This will announce your availability to play a rated game with 10
+minutes initial time-control for each player, and 10 seconds added for
+every move made.
+
+
+File: docofPloc.info,  Node: The sought game display,  Next: Watching other games,  Prev: Seeking an opponent for a new game,  Up: Internet Chess Servers
+
+6.5 The sought game display
+===========================
+
+There is a special mode for displaying games sought by other users on an
+Internet Chess Server.  Provided you didn’t turn off seek advertisements
+manually (for instance by setting the seek variable to 0 (off) on the
+ICS server by issuing "set seek 0"), the first seek advertisement
+automatically pops up a new window which is in ‘chess-ics-ads-mode’, a
+derivative of ‘tabulated-list-mode’.
+
+ -- Function: chess-ics-ads-mode
+     A mode for displaying ICS game seek advertisements.
+
+     This mode runs the hook ‘chess-ics-ads-mode-hook’, as the final
+     step during initialization.
+
+     key binding — ——-
+
+     ?  describe-mode RET	chess-ics-sought-accept <mouse-2>
+     chess-ics-sought-accept
+
+   In this buffer, use ‘mouse-2’ or ‘<RET>’ on a line to accept that
+particular game and play it.
+
+
+File: docofPloc.info,  Node: Watching other games,  Prev: The sought game display,  Up: Internet Chess Servers
+
+6.6 Watching other games
+========================
+
+You can also watch other games currently being played on ICS.  Even
+services like ‘LectureBot’ from FICS can be used.
+
+     fics% observe lecturebot
+     You are now observing game 5.
+     Game 5: LectureBot (0) LectureBot (0) unrated untimed 0 0
+
+     LectureBot(TD)(----)[5] kibitzes: (Note: A passed pawn is a pawn that
+               does not have enemy pawns blocking the path either on the
+               same or adjacent files).
+     LectureBot(TD)(----)[5] kibitzes: Connected passed pawns are a pain to
+               have to deal with. They are usually a winning advantage if
+               they cannot be blockaded. The blockading piece has to give
+               up duties elsewhere. It's almost like being a piece up.
+     fics% unobserv lecturebot
+     Removing game 5 from observation list.
+     fics%
+
+   Once you start to observe a particular game or player, the current
+position will pop up in a chessboard display.  As you are an observer,
+you will not be able to enter new moves.  However, you should be able to
+navigate back and forth in the history of the game.
+
+   If a new move is made by any party in the game and you are currently
+displaying the last position in the game, the chessboard display will
+automatically update to reflect the new position and show the last move
+in the mode line.
+
+
+File: docofPloc.info,  Node: GNU Free Documentation License,  Next: Concept Index,  Prev: Internet Chess Servers,  Up: Top
+
+Appendix A GNU Free Documentation License
+*****************************************
+
+                     Version 1.3, 3 November 2008
+
+     Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     <http://fsf.org/>
+
+     Everyone is permitted to copy and distribute verbatim copies
+     of this license document, but changing it is not allowed.
+
+  0. PREAMBLE
+
+     The purpose of this License is to make a manual, textbook, or other
+     functional and useful document “free” in the sense of freedom: to
+     assure everyone the effective freedom to copy and redistribute it,
+     with or without modifying it, either commercially or
+     noncommercially.  Secondarily, this License preserves for the
+     author and publisher a way to get credit for their work, while not
+     being considered responsible for modifications made by others.
+
+     This License is a kind of “copyleft”, which means that derivative
+     works of the document must themselves be free in the same sense.
+     It complements the GNU General Public License, which is a copyleft
+     license designed for free software.
+
+     We have designed this License in order to use it for manuals for
+     free software, because free software needs free documentation: a
+     free program should come with manuals providing the same freedoms
+     that the software does.  But this License is not limited to
+     software manuals; it can be used for any textual work, regardless
+     of subject matter or whether it is published as a printed book.  We
+     recommend this License principally for works whose purpose is
+     instruction or reference.
+
+  1. APPLICABILITY AND DEFINITIONS
+
+     This License applies to any manual or other work, in any medium,
+     that contains a notice placed by the copyright holder saying it can
+     be distributed under the terms of this License.  Such a notice
+     grants a world-wide, royalty-free license, unlimited in duration,
+     to use that work under the conditions stated herein.  The
+     “Document”, below, refers to any such manual or work.  Any member
+     of the public is a licensee, and is addressed as “you”.  You accept
+     the license if you copy, modify or distribute the work in a way
+     requiring permission under copyright law.
+
+     A “Modified Version” of the Document means any work containing the
+     Document or a portion of it, either copied verbatim, or with
+     modifications and/or translated into another language.
+
+     A “Secondary Section” is a named appendix or a front-matter section
+     of the Document that deals exclusively with the relationship of the
+     publishers or authors of the Document to the Document’s overall
+     subject (or to related matters) and contains nothing that could
+     fall directly within that overall subject.  (Thus, if the Document
+     is in part a textbook of mathematics, a Secondary Section may not
+     explain any mathematics.)  The relationship could be a matter of
+     historical connection with the subject or with related matters, or
+     of legal, commercial, philosophical, ethical or political position
+     regarding them.
+
+     The “Invariant Sections” are certain Secondary Sections whose
+     titles are designated, as being those of Invariant Sections, in the
+     notice that says that the Document is released under this License.
+     If a section does not fit the above definition of Secondary then it
+     is not allowed to be designated as Invariant.  The Document may
+     contain zero Invariant Sections.  If the Document does not identify
+     any Invariant Sections then there are none.
+
+     The “Cover Texts” are certain short passages of text that are
+     listed, as Front-Cover Texts or Back-Cover Texts, in the notice
+     that says that the Document is released under this License.  A
+     Front-Cover Text may be at most 5 words, and a Back-Cover Text may
+     be at most 25 words.
+
+     A “Transparent” copy of the Document means a machine-readable copy,
+     represented in a format whose specification is available to the
+     general public, that is suitable for revising the document
+     straightforwardly with generic text editors or (for images composed
+     of pixels) generic paint programs or (for drawings) some widely
+     available drawing editor, and that is suitable for input to text
+     formatters or for automatic translation to a variety of formats
+     suitable for input to text formatters.  A copy made in an otherwise
+     Transparent file format whose markup, or absence of markup, has
+     been arranged to thwart or discourage subsequent modification by
+     readers is not Transparent.  An image format is not Transparent if
+     used for any substantial amount of text.  A copy that is not
+     “Transparent” is called “Opaque”.
+
+     Examples of suitable formats for Transparent copies include plain
+     ASCII without markup, Texinfo input format, LaTeX input format,
+     SGML or XML using a publicly available DTD, and standard-conforming
+     simple HTML, PostScript or PDF designed for human modification.
+     Examples of transparent image formats include PNG, XCF and JPG.
+     Opaque formats include proprietary formats that can be read and
+     edited only by proprietary word processors, SGML or XML for which
+     the DTD and/or processing tools are not generally available, and
+     the machine-generated HTML, PostScript or PDF produced by some word
+     processors for output purposes only.
+
+     The “Title Page” means, for a printed book, the title page itself,
+     plus such following pages as are needed to hold, legibly, the
+     material this License requires to appear in the title page.  For
+     works in formats which do not have any title page as such, “Title
+     Page” means the text near the most prominent appearance of the
+     work’s title, preceding the beginning of the body of the text.
+
+     The “publisher” means any person or entity that distributes copies
+     of the Document to the public.
+
+     A section “Entitled XYZ” means a named subunit of the Document
+     whose title either is precisely XYZ or contains XYZ in parentheses
+     following text that translates XYZ in another language.  (Here XYZ
+     stands for a specific section name mentioned below, such as
+     “Acknowledgements”, “Dedications”, “Endorsements”, or “History”.)
+     To “Preserve the Title” of such a section when you modify the
+     Document means that it remains a section “Entitled XYZ” according
+     to this definition.
+
+     The Document may include Warranty Disclaimers next to the notice
+     which states that this License applies to the Document.  These
+     Warranty Disclaimers are considered to be included by reference in
+     this License, but only as regards disclaiming warranties: any other
+     implication that these Warranty Disclaimers may have is void and
+     has no effect on the meaning of this License.
+
+  2. VERBATIM COPYING
+
+     You may copy and distribute the Document in any medium, either
+     commercially or noncommercially, provided that this License, the
+     copyright notices, and the license notice saying this License
+     applies to the Document are reproduced in all copies, and that you
+     add no other conditions whatsoever to those of this License.  You
+     may not use technical measures to obstruct or control the reading
+     or further copying of the copies you make or distribute.  However,
+     you may accept compensation in exchange for copies.  If you
+     distribute a large enough number of copies you must also follow the
+     conditions in section 3.
+
+     You may also lend copies, under the same conditions stated above,
+     and you may publicly display copies.
+
+  3. COPYING IN QUANTITY
+
+     If you publish printed copies (or copies in media that commonly
+     have printed covers) of the Document, numbering more than 100, and
+     the Document’s license notice requires Cover Texts, you must
+     enclose the copies in covers that carry, clearly and legibly, all
+     these Cover Texts: Front-Cover Texts on the front cover, and
+     Back-Cover Texts on the back cover.  Both covers must also clearly
+     and legibly identify you as the publisher of these copies.  The
+     front cover must present the full title with all words of the title
+     equally prominent and visible.  You may add other material on the
+     covers in addition.  Copying with changes limited to the covers, as
+     long as they preserve the title of the Document and satisfy these
+     conditions, can be treated as verbatim copying in other respects.
+
+     If the required texts for either cover are too voluminous to fit
+     legibly, you should put the first ones listed (as many as fit
+     reasonably) on the actual cover, and continue the rest onto
+     adjacent pages.
+
+     If you publish or distribute Opaque copies of the Document
+     numbering more than 100, you must either include a machine-readable
+     Transparent copy along with each Opaque copy, or state in or with
+     each Opaque copy a computer-network location from which the general
+     network-using public has access to download using public-standard
+     network protocols a complete Transparent copy of the Document, free
+     of added material.  If you use the latter option, you must take
+     reasonably prudent steps, when you begin distribution of Opaque
+     copies in quantity, to ensure that this Transparent copy will
+     remain thus accessible at the stated location until at least one
+     year after the last time you distribute an Opaque copy (directly or
+     through your agents or retailers) of that edition to the public.
+
+     It is requested, but not required, that you contact the authors of
+     the Document well before redistributing any large number of copies,
+     to give them a chance to provide you with an updated version of the
+     Document.
+
+  4. MODIFICATIONS
+
+     You may copy and distribute a Modified Version of the Document
+     under the conditions of sections 2 and 3 above, provided that you
+     release the Modified Version under precisely this License, with the
+     Modified Version filling the role of the Document, thus licensing
+     distribution and modification of the Modified Version to whoever
+     possesses a copy of it.  In addition, you must do these things in
+     the Modified Version:
+
+       A. Use in the Title Page (and on the covers, if any) a title
+          distinct from that of the Document, and from those of previous
+          versions (which should, if there were any, be listed in the
+          History section of the Document).  You may use the same title
+          as a previous version if the original publisher of that
+          version gives permission.
+
+       B. List on the Title Page, as authors, one or more persons or
+          entities responsible for authorship of the modifications in
+          the Modified Version, together with at least five of the
+          principal authors of the Document (all of its principal
+          authors, if it has fewer than five), unless they release you
+          from this requirement.
+
+       C. State on the Title page the name of the publisher of the
+          Modified Version, as the publisher.
+
+       D. Preserve all the copyright notices of the Document.
+
+       E. Add an appropriate copyright notice for your modifications
+          adjacent to the other copyright notices.
+
+       F. Include, immediately after the copyright notices, a license
+          notice giving the public permission to use the Modified
+          Version under the terms of this License, in the form shown in
+          the Addendum below.
+
+       G. Preserve in that license notice the full lists of Invariant
+          Sections and required Cover Texts given in the Document’s
+          license notice.
+
+       H. Include an unaltered copy of this License.
+
+       I. Preserve the section Entitled “History”, Preserve its Title,
+          and add to it an item stating at least the title, year, new
+          authors, and publisher of the Modified Version as given on the
+          Title Page.  If there is no section Entitled “History” in the
+          Document, create one stating the title, year, authors, and
+          publisher of the Document as given on its Title Page, then add
+          an item describing the Modified Version as stated in the
+          previous sentence.
+
+       J. Preserve the network location, if any, given in the Document
+          for public access to a Transparent copy of the Document, and
+          likewise the network locations given in the Document for
+          previous versions it was based on.  These may be placed in the
+          “History” section.  You may omit a network location for a work
+          that was published at least four years before the Document
+          itself, or if the original publisher of the version it refers
+          to gives permission.
+
+       K. For any section Entitled “Acknowledgements” or “Dedications”,
+          Preserve the Title of the section, and preserve in the section
+          all the substance and tone of each of the contributor
+          acknowledgements and/or dedications given therein.
+
+       L. Preserve all the Invariant Sections of the Document, unaltered
+          in their text and in their titles.  Section numbers or the
+          equivalent are not considered part of the section titles.
+
+       M. Delete any section Entitled “Endorsements”.  Such a section
+          may not be included in the Modified Version.
+
+       N. Do not retitle any existing section to be Entitled
+          “Endorsements” or to conflict in title with any Invariant
+          Section.
+
+       O. Preserve any Warranty Disclaimers.
+
+     If the Modified Version includes new front-matter sections or
+     appendices that qualify as Secondary Sections and contain no
+     material copied from the Document, you may at your option designate
+     some or all of these sections as invariant.  To do this, add their
+     titles to the list of Invariant Sections in the Modified Version’s
+     license notice.  These titles must be distinct from any other
+     section titles.
+
+     You may add a section Entitled “Endorsements”, provided it contains
+     nothing but endorsements of your Modified Version by various
+     parties—for example, statements of peer review or that the text has
+     been approved by an organization as the authoritative definition of
+     a standard.
+
+     You may add a passage of up to five words as a Front-Cover Text,
+     and a passage of up to 25 words as a Back-Cover Text, to the end of
+     the list of Cover Texts in the Modified Version.  Only one passage
+     of Front-Cover Text and one of Back-Cover Text may be added by (or
+     through arrangements made by) any one entity.  If the Document
+     already includes a cover text for the same cover, previously added
+     by you or by arrangement made by the same entity you are acting on
+     behalf of, you may not add another; but you may replace the old
+     one, on explicit permission from the previous publisher that added
+     the old one.
+
+     The author(s) and publisher(s) of the Document do not by this
+     License give permission to use their names for publicity for or to
+     assert or imply endorsement of any Modified Version.
+
+  5. COMBINING DOCUMENTS
+
+     You may combine the Document with other documents released under
+     this License, under the terms defined in section 4 above for
+     modified versions, provided that you include in the combination all
+     of the Invariant Sections of all of the original documents,
+     unmodified, and list them all as Invariant Sections of your
+     combined work in its license notice, and that you preserve all
+     their Warranty Disclaimers.
+
+     The combined work need only contain one copy of this License, and
+     multiple identical Invariant Sections may be replaced with a single
+     copy.  If there are multiple Invariant Sections with the same name
+     but different contents, make the title of each such section unique
+     by adding at the end of it, in parentheses, the name of the
+     original author or publisher of that section if known, or else a
+     unique number.  Make the same adjustment to the section titles in
+     the list of Invariant Sections in the license notice of the
+     combined work.
+
+     In the combination, you must combine any sections Entitled
+     “History” in the various original documents, forming one section
+     Entitled “History”; likewise combine any sections Entitled
+     “Acknowledgements”, and any sections Entitled “Dedications”.  You
+     must delete all sections Entitled “Endorsements.”
+
+  6. COLLECTIONS OF DOCUMENTS
+
+     You may make a collection consisting of the Document and other
+     documents released under this License, and replace the individual
+     copies of this License in the various documents with a single copy
+     that is included in the collection, provided that you follow the
+     rules of this License for verbatim copying of each of the documents
+     in all other respects.
+
+     You may extract a single document from such a collection, and
+     distribute it individually under this License, provided you insert
+     a copy of this License into the extracted document, and follow this
+     License in all other respects regarding verbatim copying of that
+     document.
+
+  7. AGGREGATION WITH INDEPENDENT WORKS
+
+     A compilation of the Document or its derivatives with other
+     separate and independent documents or works, in or on a volume of a
+     storage or distribution medium, is called an “aggregate” if the
+     copyright resulting from the compilation is not used to limit the
+     legal rights of the compilation’s users beyond what the individual
+     works permit.  When the Document is included in an aggregate, this
+     License does not apply to the other works in the aggregate which
+     are not themselves derivative works of the Document.
+
+     If the Cover Text requirement of section 3 is applicable to these
+     copies of the Document, then if the Document is less than one half
+     of the entire aggregate, the Document’s Cover Texts may be placed
+     on covers that bracket the Document within the aggregate, or the
+     electronic equivalent of covers if the Document is in electronic
+     form.  Otherwise they must appear on printed covers that bracket
+     the whole aggregate.
+
+  8. TRANSLATION
+
+     Translation is considered a kind of modification, so you may
+     distribute translations of the Document under the terms of section
+     4.  Replacing Invariant Sections with translations requires special
+     permission from their copyright holders, but you may include
+     translations of some or all Invariant Sections in addition to the
+     original versions of these Invariant Sections.  You may include a
+     translation of this License, and all the license notices in the
+     Document, and any Warranty Disclaimers, provided that you also
+     include the original English version of this License and the
+     original versions of those notices and disclaimers.  In case of a
+     disagreement between the translation and the original version of
+     this License or a notice or disclaimer, the original version will
+     prevail.
+
+     If a section in the Document is Entitled “Acknowledgements”,
+     “Dedications”, or “History”, the requirement (section 4) to
+     Preserve its Title (section 1) will typically require changing the
+     actual title.
+
+  9. TERMINATION
+
+     You may not copy, modify, sublicense, or distribute the Document
+     except as expressly provided under this License.  Any attempt
+     otherwise to copy, modify, sublicense, or distribute it is void,
+     and will automatically terminate your rights under this License.
+
+     However, if you cease all violation of this License, then your
+     license from a particular copyright holder is reinstated (a)
+     provisionally, unless and until the copyright holder explicitly and
+     finally terminates your license, and (b) permanently, if the
+     copyright holder fails to notify you of the violation by some
+     reasonable means prior to 60 days after the cessation.
+
+     Moreover, your license from a particular copyright holder is
+     reinstated permanently if the copyright holder notifies you of the
+     violation by some reasonable means, this is the first time you have
+     received notice of violation of this License (for any work) from
+     that copyright holder, and you cure the violation prior to 30 days
+     after your receipt of the notice.
+
+     Termination of your rights under this section does not terminate
+     the licenses of parties who have received copies or rights from you
+     under this License.  If your rights have been terminated and not
+     permanently reinstated, receipt of a copy of some or all of the
+     same material does not give you any rights to use it.
+
+  10. FUTURE REVISIONS OF THIS LICENSE
+
+     The Free Software Foundation may publish new, revised versions of
+     the GNU Free Documentation License from time to time.  Such new
+     versions will be similar in spirit to the present version, but may
+     differ in detail to address new problems or concerns.  See
+     <http://www.gnu.org/copyleft/>.
+
+     Each version of the License is given a distinguishing version
+     number.  If the Document specifies that a particular numbered
+     version of this License “or any later version” applies to it, you
+     have the option of following the terms and conditions either of
+     that specified version or of any later version that has been
+     published (not as a draft) by the Free Software Foundation.  If the
+     Document does not specify a version number of this License, you may
+     choose any version ever published (not as a draft) by the Free
+     Software Foundation.  If the Document specifies that a proxy can
+     decide which future versions of this License can be used, that
+     proxy’s public statement of acceptance of a version permanently
+     authorizes you to choose that version for the Document.
+
+  11. RELICENSING
+
+     “Massive Multiauthor Collaboration Site” (or “MMC Site”) means any
+     World Wide Web server that publishes copyrightable works and also
+     provides prominent facilities for anybody to edit those works.  A
+     public wiki that anybody can edit is an example of such a server.
+     A “Massive Multiauthor Collaboration” (or “MMC”) contained in the
+     site means any set of copyrightable works thus published on the MMC
+     site.
+
+     “CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
+     license published by Creative Commons Corporation, a not-for-profit
+     corporation with a principal place of business in San Francisco,
+     California, as well as future copyleft versions of that license
+     published by that same organization.
+
+     “Incorporate” means to publish or republish a Document, in whole or
+     in part, as part of another Document.
+
+     An MMC is “eligible for relicensing” if it is licensed under this
+     License, and if all works that were first published under this
+     License somewhere other than this MMC, and subsequently
+     incorporated in whole or in part into the MMC, (1) had no cover
+     texts or invariant sections, and (2) were thus incorporated prior
+     to November 1, 2008.
+
+     The operator of an MMC Site may republish an MMC contained in the
+     site under CC-BY-SA on the same site at any time before August 1,
+     2009, provided the MMC is eligible for relicensing.
+
+ADDENDUM: How to use this License for your documents
+====================================================
+
+To use this License in a document you have written, include a copy of
+the License in the document and put the following copyright and license
+notices just after the title page:
+
+       Copyright (C)  YEAR  YOUR NAME.
+       Permission is granted to copy, distribute and/or modify this document
+       under the terms of the GNU Free Documentation License, Version 1.3
+       or any later version published by the Free Software Foundation;
+       with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+       Texts.  A copy of the license is included in the section entitled ``GNU
+       Free Documentation License''.
+
+   If you have Invariant Sections, Front-Cover Texts and Back-Cover
+Texts, replace the “with...Texts.” line with this:
+
+         with the Invariant Sections being LIST THEIR TITLES, with
+         the Front-Cover Texts being LIST, and with the Back-Cover Texts
+         being LIST.
+
+   If you have Invariant Sections without Cover Texts, or some other
+combination of the three, merge those two alternatives to suit the
+situation.
+
+   If your document contains nontrivial examples of program code, we
+recommend releasing these examples in parallel under your choice of free
+software license, such as the GNU General Public License, to permit
+their use in free software.
+
+
+File: docofPloc.info,  Node: Concept Index,  Next: Function and Variable Index,  Prev: GNU Free Documentation License,  Up: Top
+
+Concept Index
+*************
+
+ [index ]
+* Menu:
+
+* acd opcode:                            Opcode "acd" analysis count depth.
+                                                               (line  6)
+* acn opcode:                            Opcode "acn" analysis count nodes.
+                                                               (line  6)
+* acs opcode:                            Opcode "acs" analysis count seconds.
+                                                               (line  6)
+* AI engine:                             AI.                   (line  6)
+* algebraic notation:                    Algebraic notation.   (line  6)
+* algebraic notation, entering moves with: Entering moves with algebraic notation.
+                                                               (line  6)
+* algebraic notation, searching moves:   Basic operations.     (line 15)
+* am opcode:                             Opcode "am" avoid move(s).
+                                                               (line  6)
+* annotations:                           Annotations.          (line  6)
+* ASCII diagram display:                 Plain ASCII diagram displays.
+                                                               (line  6)
+* bishop:                                Position coordinates. (line 50)
+* bm opcode:                             Opcode "bm" best move(s).
+                                                               (line  6)
+* chess display mode:                    Chess display mode.   (line  6)
+* Chess ICS mode:                        Chess ICS Mode.       (line  6)
+* chess opening books modules:           Chess Opening Books.  (line  6)
+* chess session:                         Chess Session.        (line  6)
+* chess-eco module:                      ECO Classification.   (line  6)
+* chess-file module:                     chess-file.           (line  6)
+* chess-images module:                   Graphical displays.   (line  6)
+* chess-none:                            The Null Engine.      (line  6)
+* chess-scid module:                     chess-scid.           (line  6)
+* chessboard display:                    Chessboard displays.  (line  6)
+* collection:                            Collections.          (line  6)
+* collection database:                   Opening Databases.    (line  6)
+* Comint mode:                           Chess ICS Mode.       (line 79)
+* command history:                       Command History.      (line  6)
+* command history ring:                  ICS Command Ring.     (line  6)
+* connecting to internet chess server:   Connecting to a server.
+                                                               (line  6)
+* coordinates:                           Position coordinates. (line  6)
+* copying command history:               ICS History Copying.  (line  6)
+* crafty:                                Crafty.               (line  6)
+* creating games:                        Creating games.       (line  6)
+* creating plies:                        Creating plies.       (line  6)
+* creating positions:                    Creating positions.   (line  6)
+* creating variations:                   Creating variations.  (line  6)
+* customize chess-images display:        Graphical displays.   (line 21)
+* customize chess-plain display:         Plain ASCII diagram displays.
+                                                               (line 51)
+* customize ics1 display:                ICS1 style ASCII displays.
+                                                               (line 32)
+* database modules:                      Database Modules.     (line  6)
+* database, modifying:                   Modifying Databases.  (line  6)
+* database, opening:                     Opening Databases.    (line  6)
+* display:                               Chessboard displays.  (line  6)
+* display manipulation functions:        Generic display manipulation functions.
+                                                               (line  6)
+* east:                                  Position coordinates. (line 38)
+* ECO classification:                    ECO Classification.   (line  6)
+* engines:                               Engines.              (line  6)
+* engines, common functions:             Common functions.     (line  6)
+* EPD notation:                          EPD notation.         (line  6)
+* EPD operations:                        Operations.           (line  6)
+* FEN notation:                          FEN notation.         (line  6)
+* figurine algebraic notation:           Algebraic notation.   (line 25)
+* fruit:                                 Fruit.                (line  6)
+* game:                                  Games.                (line  6)
+* game plies:                            Game plies.           (line  6)
+* game positions:                        Game positions.       (line  6)
+* game tags:                             Game tags.            (line  6)
+* game, creating:                        Creating games.       (line  6)
+* glaurung:                              Glaurung.             (line  6)
+* gnuchess:                              GNU Chess.            (line  6)
+* graphical display:                     Graphical displays.   (line  6)
+* history copying:                       ICS History Copying.  (line  6)
+* ICS1 display:                          ICS1 style ASCII displays.
+                                                               (line  6)
+* internet chess servers:                Internet Chess Servers.
+                                                               (line  6)
+* library:                               The chess.el library. (line  6)
+* long algebraic notation:               Algebraic notation.   (line 25)
+* mode, Comint:                          Chess ICS Mode.       (line 79)
+* mode, ICS:                             Chess ICS Mode.       (line  6)
+* modifying databases:                   Modifying Databases.  (line  6)
+* modules:                               Modules.              (line  6)
+* north:                                 Position coordinates. (line 34)
+* northeast:                             Position coordinates. (line 52)
+* northwest:                             Position coordinates. (line 64)
+* null engine:                           The Null Engine.      (line  6)
+* numeric notation:                      Algebraic notation.   (line 25)
+* opcodes:                               Operations.           (line  6)
+* opening database:                      Opening Databases.    (line  6)
+* PGN mode:                              PGN mode.             (line  6)
+* PGN notation:                          PGN notation.         (line  6)
+* phalanx:                               Phalanx.              (line  6)
+* ply:                                   Plies.                (line  6)
+* ply details:                           Ply details.          (line  6)
+* ply, creating:                         Creating plies.       (line  6)
+* polyglot opening book format:          Polyglot opening book format support.
+                                                               (line  6)
+* position:                              Positions.            (line  6)
+* position coordinates:                  Position coordinates. (line  6)
+* position, creating:                    Creating positions.   (line  6)
+* queen:                                 Position coordinates. (line 32)
+* queen <1>:                             Position coordinates. (line 50)
+* querying databases:                    Querying Databases.   (line  6)
+* rook:                                  Position coordinates. (line 32)
+* seek advertisements:                   The sought game display.
+                                                               (line  6)
+* seeking opponents:                     Seeking an opponent for a new game.
+                                                               (line  6)
+* short algebraic notation:              Algebraic notation.   (line 25)
+* sjeng:                                 Sjeng.                (line  6)
+* sought game display:                   The sought game display.
+                                                               (line  6)
+* south:                                 Position coordinates. (line 42)
+* southeast:                             Position coordinates. (line 56)
+* southwest:                             Position coordinates. (line 60)
+* standard algebraic notation:           Algebraic notation.   (line 25)
+* stockfish:                             Stockfish.            (line  6)
+* tags:                                  Game tags.            (line  6)
+* variation:                             Variations.           (line  6)
+* variation plies:                       Variation plies.      (line  6)
+* variation positions:                   Variation positions.  (line  6)
+* variation, creating:                   Creating variations.  (line  6)
+* variation, make a move:                Making a move in a variation.
+                                                               (line  6)
+* watching other games:                  Watching other games. (line  6)
+* west:                                  Position coordinates. (line 46)
+
+
+File: docofPloc.info,  Node: Function and Variable Index,  Next: Key Index,  Prev: Concept Index,  Up: Top
+
+Function and Variable Index
+***************************
+
+ [index ]
+* Menu:
+
+* backward-kill-word:                    Chess ICS Mode.      (line  47)
+* chess:                                 Chess Session.       (line  12)
+* chess-ai-best-move:                    AI.                  (line  24)
+* chess-ai-depth:                        AI.                  (line  13)
+* chess-ai-quiescence-depth:             AI.                  (line  16)
+* chess-algebraic-regexp:                Algebraic notation.  (line  50)
+* chess-algebraic-to-ply:                Algebraic notation.  (line  14)
+* chess-coord-to-index:                  Position coordinates.
+                                                              (line  23)
+* chess-crafty-path:                     Crafty.              (line  15)
+* chess-database-filename:               Querying Databases.  (line   6)
+* chess-database-modules:                Opening Databases.   (line   6)
+* chess-database-open:                   Opening Databases.   (line  10)
+* chess-database-query:                  Querying Databases.  (line  12)
+* chess-database-read:                   Querying Databases.  (line   9)
+* chess-database-read-only-p:            Modifying Databases. (line   6)
+* chess-default-display:                 Chess Session.       (line  31)
+* chess-default-engine:                  Chess Session.       (line  31)
+* chess-default-modules:                 ECO Classification.  (line   6)
+* chess-direction-east:                  Position coordinates.
+                                                              (line  38)
+* chess-direction-north:                 Position coordinates.
+                                                              (line  34)
+* chess-direction-northeast:             Position coordinates.
+                                                              (line  52)
+* chess-direction-northwest:             Position coordinates.
+                                                              (line  64)
+* chess-direction-south:                 Position coordinates.
+                                                              (line  42)
+* chess-direction-southeast:             Position coordinates.
+                                                              (line  56)
+* chess-direction-southwest:             Position coordinates.
+                                                              (line  60)
+* chess-direction-west:                  Position coordinates.
+                                                              (line  46)
+* chess-display-active-p:                Generic display manipulation functions.
+                                                              (line  12)
+* chess-display-clear-board:             Generic display manipulation functions.
+                                                              (line  17)
+* chess-display-create:                  Generic display manipulation functions.
+                                                              (line   6)
+* chess-display-draw:                    Basic operations.    (line  36)
+* chess-display-highlight:               Generic display manipulation functions.
+                                                              (line  20)
+* chess-display-highlight-legal:         Chess display mode.  (line  15)
+* chess-display-invert:                  Generic display manipulation functions.
+                                                              (line  28)
+* chess-display-invert <1>:              Basic operations.    (line   8)
+* chess-display-kill-board:              Basic operations.    (line  43)
+* chess-display-move:                    Generic display manipulation functions.
+                                                              (line  31)
+* chess-display-move-backward:           Basic operations.    (line  12)
+* chess-display-move-first:              Basic operations.    (line  28)
+* chess-display-move-forward:            Basic operations.    (line  24)
+* chess-display-move-last:               Basic operations.    (line  32)
+* chess-display-perspective:             Generic display manipulation functions.
+                                                              (line  35)
+* chess-display-position:                Generic display manipulation functions.
+                                                              (line  38)
+* chess-display-quit:                    Generic display manipulation functions.
+                                                              (line  41)
+* chess-display-quit <1>:                Basic operations.    (line  58)
+* chess-display-resign:                  Basic operations.    (line  39)
+* chess-display-search-backward:         Basic operations.    (line  16)
+* chess-display-search-forward:          Basic operations.    (line  20)
+* chess-display-select-piece:            Selecting pieces with the keyboard.
+                                                              (line  12)
+* chess-display-select-piece <1>:        Selecting pieces with the mouse.
+                                                              (line  13)
+* chess-display-set-game:                Generic display manipulation functions.
+                                                              (line  44)
+* chess-display-set-perspective:         Generic display manipulation functions.
+                                                              (line  50)
+* chess-display-set-position:            Generic display manipulation functions.
+                                                              (line  53)
+* chess-display-set-variation:           Generic display manipulation functions.
+                                                              (line  57)
+* chess-display-update:                  Generic display manipulation functions.
+                                                              (line  65)
+* chess-display-yank-board:              Basic operations.    (line  50)
+* chess-engine-command:                  Common functions.    (line  18)
+* chess-engine-create:                   Common functions.    (line   6)
+* chess-engine-position:                 Common functions.    (line  15)
+* chess-engine-send:                     Common functions.    (line  21)
+* chess-engine-set-option:               Common functions.    (line  11)
+* chess-epd-read-file:                   EPD notation.        (line  29)
+* chess-epd-to-pos:                      EPD notation.        (line  20)
+* chess-fen-to-pos:                      FEN notation.        (line  32)
+* chess-fischer-random-position:         Creating positions.  (line  19)
+* chess-fruit-path:                      Fruit.               (line  18)
+* chess-game-add-hook:                   Games.               (line  17)
+* chess-game-add-ply:                    Games.               (line  20)
+* chess-game-create:                     Creating games.      (line   6)
+* chess-game-del-tag:                    Game tags.           (line  19)
+* chess-game-hooks:                      Games.               (line  23)
+* chess-game-index:                      Game positions.      (line   9)
+* chess-game-move:                       Making a move.       (line   6)
+* chess-game-plies:                      Games.               (line  26)
+* chess-game-ply:                        Game plies.          (line   6)
+* chess-game-pos:                        Game positions.      (line   6)
+* chess-game-remove-hook:                Games.               (line  29)
+* chess-game-run-hooks:                  Games.               (line  33)
+* chess-game-seq:                        Game positions.      (line  12)
+* chess-game-set-hooks:                  Games.               (line  36)
+* chess-game-set-plies:                  Games.               (line  39)
+* chess-game-set-tag:                    Game tags.           (line  16)
+* chess-game-set-tags:                   Game tags.           (line   9)
+* chess-game-side-to-move:               Game positions.      (line  15)
+* chess-game-tag:                        Game tags.           (line  13)
+* chess-game-tags:                       Game tags.           (line   6)
+* chess-game-to-pgn:                     PGN notation.        (line  10)
+* chess-glaurung-path:                   Glaurung.            (line  12)
+* chess-gnuchess-path:                   GNU Chess.           (line  16)
+* chess-ics:                             Connecting to a server.
+                                                              (line   8)
+* chess-ics-ads-mode:                    The sought game display.
+                                                              (line  13)
+* chess-ics-server-list:                 Internet Chess Servers.
+                                                              (line  17)
+* chess-ics1-separate-frame:             ICS1 style ASCII displays.
+                                                              (line  29)
+* chess-images-directory:                Graphical displays.  (line   9)
+* chess-images-separate-frame:           Graphical displays.  (line  18)
+* chess-index-file:                      Position coordinates.
+                                                              (line  14)
+* chess-index-rank:                      Position coordinates.
+                                                              (line  11)
+* chess-index-to-coord:                  Position coordinates.
+                                                              (line  26)
+* chess-input-shortcut:                  Entering moves with algebraic notation.
+                                                              (line  15)
+* chess-input-shortcut-delete:           Entering moves with algebraic notation.
+                                                              (line  27)
+* chess-legal-plies:                     Creating plies.      (line  16)
+* chess-next-index:                      Position coordinates.
+                                                              (line  68)
+* chess-pgn-insert-plies:                PGN notation.        (line  15)
+* chess-pgn-to-game:                     PGN notation.        (line   6)
+* chess-pgn-visualize:                   PGN mode.            (line   6)
+* chess-phalanx-path:                    Phalanx.             (line  12)
+* chess-plain-black-square-char:         Plain ASCII diagram displays.
+                                                              (line  31)
+* chess-plain-border-style:              Plain ASCII diagram displays.
+                                                              (line  26)
+* chess-plain-piece-chars:               Plain ASCII diagram displays.
+                                                              (line  37)
+* chess-plain-separate-frame:            Plain ASCII diagram displays.
+                                                              (line  23)
+* chess-plain-spacing:                   Plain ASCII diagram displays.
+                                                              (line  48)
+* chess-plain-upcase-indicates:          Plain ASCII diagram displays.
+                                                              (line  40)
+* chess-plain-white-square-char:         Plain ASCII diagram displays.
+                                                              (line  34)
+* chess-ply-changes:                     Ply details.         (line  12)
+* chess-ply-create:                      Creating plies.      (line   6)
+* chess-ply-final-p:                     The "next" position. (line   9)
+* chess-ply-keyword:                     Polyglot opening book format support.
+                                                              (line  27)
+* chess-ply-next-pos:                    The "next" position. (line   6)
+* chess-ply-pos:                         Ply details.         (line   6)
+* chess-ply-set-changes:                 Ply details.         (line  19)
+* chess-ply-set-pos:                     Ply details.         (line   9)
+* chess-ply-source:                      Ply details.         (line  23)
+* chess-ply-target:                      Ply details.         (line  26)
+* chess-ply-to-algebraic:                Algebraic notation.  (line  25)
+* chess-polyglot-book:                   Polyglot opening book format support.
+                                                              (line  15)
+* chess-polyglot-book-file:              Polyglot opening book format support.
+                                                              (line  12)
+* chess-polyglot-book-open:              Polyglot opening book format support.
+                                                              (line  22)
+* chess-polyglot-book-plies:             Polyglot opening book format support.
+                                                              (line  27)
+* chess-polyglot-book-ply:               Polyglot opening book format support.
+                                                              (line  34)
+* chess-polyglot-book-strength:          Polyglot opening book format support.
+                                                              (line  34)
+* chess-pos-add-annotation:              Annotations.         (line   9)
+* chess-pos-always-white:                Position details.    (line 102)
+* chess-pos-annotations:                 Annotations.         (line   6)
+* chess-pos-can-castle:                  Position details.    (line  53)
+* chess-pos-copy:                        Creating positions.  (line  11)
+* chess-pos-create:                      Creating positions.  (line   6)
+* chess-pos-en-passant:                  Position details.    (line  68)
+* chess-pos-move:                        Position details.    (line 107)
+* chess-pos-passed-pawns:                Position details.    (line  92)
+* chess-pos-piece:                       Position details.    (line   9)
+* chess-pos-piece-p:                     Position details.    (line  12)
+* chess-pos-search:                      Position details.    (line  22)
+* chess-pos-search*:                     Position details.    (line  27)
+* chess-pos-set-can-castle:              Position details.    (line  58)
+* chess-pos-set-en-passant:              Position details.    (line  72)
+* chess-pos-set-piece:                   Position details.    (line  17)
+* chess-pos-set-side-to-move:            Position details.    (line  89)
+* chess-pos-set-status:                  Position details.    (line  81)
+* chess-pos-side-to-move:                Position details.    (line  86)
+* chess-pos-status:                      Position details.    (line  76)
+* chess-pos-to-epd:                      EPD notation.        (line  25)
+* chess-pos-to-fen:                      FEN notation.        (line  35)
+* chess-rf-to-index:                     Position coordinates.
+                                                              (line  17)
+* chess-search-position:                 Position details.    (line  35)
+* chess-sjeng-path:                      Sjeng.               (line  14)
+* chess-starting-position:               Creating positions.  (line  16)
+* chess-starting-position <1>:           FEN notation.        (line  41)
+* chess-stockfish-path:                  Stockfish.           (line  15)
+* chess-var-add-ply:                     Making a move in a variation.
+                                                              (line  13)
+* chess-var-create:                      Creating variations. (line   6)
+* chess-var-index:                       Variation positions. (line   9)
+* chess-var-move:                        Making a move in a variation.
+                                                              (line   6)
+* chess-var-plies:                       Variation plies.     (line   9)
+* chess-var-ply:                         Variation plies.     (line   6)
+* chess-var-pos:                         Variation positions. (line   6)
+* chess-var-seq:                         Variation positions. (line  12)
+* chess-var-side-to-move:                Variation positions. (line  15)
+* chess-var-to-algebraic:                Variation plies.     (line  12)
+* comint-accumulate:                     Chess ICS Mode.      (line  34)
+* comint-bol-or-process-mark:            Chess ICS Mode.      (line  25)
+* comint-buffer-maximum-size:            Chess ICS Mode.      (line  71)
+* comint-copy-old-input:                 ICS History Copying. (line  12)
+* comint-delchar-or-maybe-eof:           Chess ICS Mode.      (line  18)
+* comint-delete-output:                  Chess ICS Mode.      (line  50)
+* comint-dynamic-list-input-ring:        ICS Command Ring.    (line  27)
+* comint-get-next-from-history:          ICS Command Ring.    (line  19)
+* comint-history-isearch-backward-regexp: ICS Command Ring.   (line  14)
+* comint-input-previous-argument:        ICS Command Ring.    (line  23)
+* comint-kill-input:                     Chess ICS Mode.      (line  42)
+* comint-next-input:                     ICS Command Ring.    (line  10)
+* comint-next-prompt:                    ICS History Copying. (line   9)
+* comint-previous-input:                 ICS Command Ring.    (line   6)
+* comint-previous-prompt:                ICS History Copying. (line   6)
+* comint-send-input:                     Chess ICS Mode.      (line  11)
+* comint-show-maximum-output:            Chess ICS Mode.      (line  67)
+* comint-show-output:                    Chess ICS Mode.      (line  62)
+* comint-truncate-buffer:                Chess ICS Mode.      (line  71)
+* comint-write-output:                   Chess ICS Mode.      (line  55)
+
+
+File: docofPloc.info,  Node: Key Index,  Prev: Function and Variable Index,  Up: Top
+
+Key Index
+*********
+
+ [index ]
+* Menu:
+
+* ,:                                     Basic operations.     (line 11)
+* .:                                     Basic operations.     (line 23)
+* 1:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 2:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 3:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 4:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 5:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 6:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 7:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* 8:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* <:                                     Basic operations.     (line 27)
+* =:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* >:                                     Basic operations.     (line 31)
+* a:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* b:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* B:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* backspace:                             Entering moves with algebraic notation.
+                                                               (line 26)
+* c:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* C-c .:                                 ICS Command Ring.     (line 23)
+* C-c C-a:                               Chess ICS Mode.       (line 25)
+* C-c C-d:                               Basic operations.     (line 35)
+* C-c C-e:                               Chess ICS Mode.       (line 67)
+* C-c C-l:                               ICS Command Ring.     (line 27)
+* C-c C-n:                               ICS History Copying.  (line  9)
+* C-c C-o:                               Chess ICS Mode.       (line 50)
+* C-c C-p:                               ICS History Copying.  (line  6)
+* C-c C-r:                               Basic operations.     (line 38)
+* C-c C-r <1>:                           Chess ICS Mode.       (line 62)
+* C-c C-s:                               Chess ICS Mode.       (line 55)
+* C-c C-u:                               Chess ICS Mode.       (line 42)
+* C-c C-w:                               Chess ICS Mode.       (line 47)
+* C-c C-x:                               ICS Command Ring.     (line 19)
+* C-c RET:                               ICS History Copying.  (line 12)
+* C-c SPC:                               Chess ICS Mode.       (line 34)
+* C-d:                                   Chess ICS Mode.       (line 18)
+* C-i:                                   Basic operations.     (line  6)
+* C-M-l:                                 Chess ICS Mode.       (line 62)
+* C-r:                                   Basic operations.     (line 15)
+* C-s:                                   Basic operations.     (line 19)
+* C-u M-w:                               Basic operations.     (line 41)
+* C-u M-x chess RET:                     Chess Session.        (line 35)
+* C-u M-x chess RET ai RET:              AI.                   (line 10)
+* C-u M-x chess RET crafty RET:          Crafty.               (line 18)
+* C-u M-x chess RET fruit RET:           Fruit.                (line 21)
+* C-u M-x chess RET glaurung RET:        Glaurung.             (line 15)
+* C-u M-x chess RET gnuchess RET:        GNU Chess.            (line 19)
+* C-u M-x chess RET none RET:            The Null Engine.      (line 13)
+* C-u M-x chess RET phalanx RET:         Phalanx.              (line 15)
+* C-u M-x chess RET sjeng RET:           Sjeng.                (line 17)
+* C-u M-x chess RET stockfish RET:       Stockfish.            (line 18)
+* C-y:                                   Basic operations.     (line 49)
+* d:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* down-mouse-1:                          Selecting pieces with the mouse.
+                                                               (line  9)
+* down-mouse-2:                          Selecting pieces with the mouse.
+                                                               (line  9)
+* drag-mouse-1:                          Selecting pieces with the mouse.
+                                                               (line  9)
+* drag-mouse-2:                          Selecting pieces with the mouse.
+                                                               (line  9)
+* e:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* f:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* g:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* h:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* K:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* M-n:                                   ICS Command Ring.     (line 10)
+* M-p:                                   ICS Command Ring.     (line  6)
+* M-r:                                   ICS Command Ring.     (line 14)
+* M-w:                                   Basic operations.     (line 41)
+* M-x chess RET:                         Chess Session.        (line 31)
+* M-x customize-group RET chess-ics1 RET: ICS1 style ASCII displays.
+                                                               (line 32)
+* M-x customize-group RET chess-images RET: Graphical displays.
+                                                               (line 21)
+* M-x customize-group RET chess-plain RET: Plain ASCII diagram displays.
+                                                               (line 51)
+* N:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* Q:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* R:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+* RET:                                   Selecting pieces with the keyboard.
+                                                               (line 11)
+* RET <1>:                               Chess ICS Mode.       (line 11)
+* RET <2>:                               The sought game display.
+                                                               (line 24)
+* TAB:                                   Basic operations.     (line  6)
+* X:                                     Basic operations.     (line 57)
+* x:                                     Entering moves with algebraic notation.
+                                                               (line  6)
+
+
+
+Tag Table:
+Node: Top1478
+Node: The chess.el library2571
+Node: Positions3084
+Node: Creating positions4085
+Node: Position coordinates4848
+Node: Position details7447
+Node: Annotations12513
+Node: FEN notation12859
+Node: EPD notation14715
+Node: Operations16235
+Node: Opcode "acd" analysis count depth17201
+Node: Opcode "acn" analysis count nodes17590
+Node: Opcode "acs" analysis count seconds18128
+Node: Opcode "am" avoid move(s)18661
+Node: Opcode "bm" best move(s)19114
+Node: Plies19521
+Node: Creating plies20684
+Node: Ply details22413
+Node: The "next" position23562
+Node: Algebraic notation23934
+Node: Variations25796
+Node: Creating variations26907
+Node: Variation positions27201
+Node: Variation plies27861
+Node: Making a move in a variation28352
+Node: Games28945
+Node: Creating games30565
+Node: Game tags30948
+Node: Game positions31578
+Node: Game plies32256
+Node: Making a move32535
+Node: PGN notation32976
+Node: PGN mode33732
+Node: Collections33976
+Node: Opening Databases34769
+Node: Querying Databases35248
+Node: Modifying Databases35926
+Node: Finalizing Databases36208
+Node: Database Modules36387
+Node: chess-file36649
+Node: chess-scid37278
+Node: Chess Opening Books37527
+Node: ECO Classification37850
+Node: Polyglot opening book format support38270
+Node: Modules40168
+Node: Chessboard displays46969
+Node: Generic display manipulation functions47607
+Node: Chess display mode50423
+Node: Basic operations51369
+Node: Selecting pieces with the keyboard53175
+Node: Selecting pieces with the mouse53771
+Node: Entering moves with algebraic notation54340
+Node: Plain ASCII diagram displays55364
+Node: ICS1 style ASCII displays57267
+Node: Graphical displays58640
+Node: Engines59506
+Node: Common functions60034
+Node: The Null Engine61089
+Node: AI61636
+Node: Crafty62618
+Node: Fruit63418
+Node: Glaurung64327
+Node: GNU Chess64980
+Node: Phalanx65918
+Node: Sjeng66563
+Node: Stockfish67315
+Node: Chess Session68145
+Node: Internet Chess Servers69922
+Node: Connecting to a server71100
+Node: Chess ICS Mode71629
+Node: Command History75158
+Node: ICS Command Ring75783
+Node: ICS History Copying79170
+Node: Seeking an opponent for a new game80692
+Node: The sought game display81350
+Node: Watching other games82390
+Node: GNU Free Documentation License83877
+Node: Concept Index109248
+Node: Function and Variable Index118610
+Node: Key Index136235
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

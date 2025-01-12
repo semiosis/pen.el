@@ -1,0 +1,8 @@
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape-npm-install" "#" "<==" "scrape-install-"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape-cargo-install" "#" "<==" "scrape-install-"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape-stack-install" "#" "<==" "scrape-install-"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape" "pip install [a-zA-Z_0-9-]+" "#" "<==" "scrape-from-rea"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape" "\\./gradlew :[:a-zA-Z_0-9-]+" "#" "<==" "scrape-from-rea"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape" "gradle [:a-zA-Z_0-9-]+" "#" "<==" "scrape-from-rea"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape" "bazel build [^ ]+" "#" "<==" "scrape-from-rea"
+cd /root/repos/xterm/xterm-397;  "filter-from-readme" "scrape" "\\bgo get (-u )?[^ ]+" "#" "<==" "scrape-from-rea"

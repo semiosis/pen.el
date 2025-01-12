@@ -2654,3 +2654,25 @@ cargo install --git https://github.com/zaphar/sheetsui
 (
 cd "$(gc "https://github.com/charmbracelet/gum")"
 )
+
+(
+cd "$(gc "https://github.com/autotrace/autotrace")"
+apt install -y libgraphicsmagick1-dev libpng-dev libexiv2-dev libtiff-dev libjpeg-dev libxml2-dev libbz2-dev libfreetype6-dev libpstoedit-dev autoconf automake libtool intltool autopoint
+./autogen.sh
+./configure --enable-magick-readers
+make -j$(nproc)
+make install
+)
+
+(
+cd ~/repos
+mkdir xterm
+cd xterm
+wget "https://invisible-island.net/datafiles/release/xterm.tar.gz"
+tar -xf xterm.tar.gz
+cd "$(glob "xterm-*")"
+` # I want to enable trace as I can hack on the xterm source`
+./configure --enable-trace
+make -j$(nproc)
+make install
+)
