@@ -11,7 +11,7 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
-! is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 if ! is_tty; then
     in-tty -xt "$sn" "$@"

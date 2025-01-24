@@ -1,0 +1,7 @@
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "I" "Thessalonians" "4:2-8" "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"

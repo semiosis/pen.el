@@ -1,0 +1,8 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Proverbs 3:27" "#" "<==" "Proverbs"
+cd /root/notes;  "ebible" "-m" "ESV" "Proverbs 3:3-12" "#" "<==" "Proverbs"
+cd /root/notes;  "ebible" "-m" "ESV" "James 4:7-8" "#" "<==" "James"
+cd /root/notes;  "ebible" "-m" "ESV" "James 4:7-8" "#" "<==" "James"
+cd /root/notes;  "ebible" "-m" "ESV" "Jeremiah 17:7-10" "#" "<==" "Jeremiah"
+cd /root/notes;  "ebible" "-m" "ESV" "Jeremiah 17:9" "#" "<==" "Jeremiah"
+cd /root/notes;  "ebible" "-m" "ESV" "Ephesians 2:1-10" "#" "<==" "Ephesians"
+cd /root/notes;  "ebible" "-m" "ESV" "II Thessalonians 1:5-8" "#" "<==" "II"

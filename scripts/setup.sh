@@ -2665,6 +2665,7 @@ make install
 )
 
 (
+agi libxaw7 libxaw7-dev
 cd ~/repos
 mkdir xterm
 cd xterm
@@ -2737,3 +2738,9 @@ e ia hl-anything
 # Install this somehow manually
 # sudo apt-get update --fix-missing
 # agi asciidoctor
+#
+cp -a /root/.fonts/DejaVuSansMono-Bold.ttf /root/.fonts/DejaVuSansMono-Pen.ttf
+# pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20"
+# cd "$HOME/.fonts"; ln -sf $PENELD/config/fonts/DejaVuSansMono-Pen.ttf
+# fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
+# fontforge /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd

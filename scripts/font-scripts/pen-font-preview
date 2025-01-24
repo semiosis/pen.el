@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+cd ~
+pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20" -E pen-glyphs-demo

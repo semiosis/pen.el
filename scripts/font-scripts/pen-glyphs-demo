@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+IFS= read -r -d '' txt <<HEREDOC
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+HEREDOC
+
+printf -- "%s\n" "$txt" | pavs

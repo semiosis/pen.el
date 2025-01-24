@@ -4563,8 +4563,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699823524:0;which -a toilet
 : 1699823538:0;ead toilet
 : 1699823683:0;toilet -h
-: 1699823797:0;tp find-here-path "*font*"
-: 1699823801:0;penelfonts
 : 1699823906:0;echo agenda | toilet
 : 1699823981:0;ead fzf -P
 : 1699823983:0;ead fzf -p
@@ -6507,7 +6505,6 @@ gmi sync
 : 1701859871:0;"notmuch" "search" "--format=sexp" "--format-version=5" "--sort=oldest-first" "tag:inbox"
 : 1701859877:0;"notmuch" "search" "--format=sexp" "--format-version=5" "--sort=oldest-first" "tag:inbox" | v
 : 1701860035:0;v notmuch-setup
-: 1701860184:0;v INSTALL
 : 1701860202:0;acs xapian
 : 1701860231:0;agi xapian-tools xapian-examples libxapian-dev libxapian30
 : 1701860276:0;acs libgmime
@@ -8556,7 +8553,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705176737:0;git rebase --abort
 : 1705185089:0;51;44;7M35;43;7Mls
 : 1705224230:0;v $PENEL_DIR/scripts/utils.sh
-: 1705233330:0;chrome
 : 1705276917:0;1 Corinthians 15:1-5 | v
 : 1705278091:0;Proverbs 31
 : 1705290911:0;Luke 8:17| v
@@ -9494,7 +9490,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708134344:0;cterm
 : 1708134361:0;cterm -ct-nem bash
 : 1708134387:0;xt -xt bash
-: 1708134472:0;
 : 1708134500:0;xt -xt cterm -ct-nem guild-of-thieves -vmode sixel
 : 1708134514:0;mcd games
 : 1708134517:0;v build-of-theives
@@ -10167,7 +10162,6 @@ git clone "https://github.com/sidju/hired"\
 : 1709522028:0;I Peter 1:23-24
 : 1709522040:0;I Peter 1:23-25
 : 1709522086:0;1 Corinthians 15:51-58
-: 1709522171:0;I Peter 1:22-25
 : 1709528678:0;Psalms 34:22 | v
 : 1709528710:0;Psalms 34:22
 : 1709529654:0;v eternity.org
@@ -10891,7 +10885,6 @@ print(data)' | uplot line
 : 1711090948:0;cd ~/repos/invisible-island
 : 1711090949:0;cd xterm-390
 : 1711090960:0;cd ~/repos/invisible-island/xterm-390
-: 1711090982:0;acs athena
 : 1711090994:0;make -j 10
 : 1711145601:0;Luke 12
 : 1711148013:0;II Corinthians 11:2
@@ -11507,7 +11500,6 @@ e ia inheritenv
 : 1712744903:0;Colossians 1:25-29
 : 1712744907:0;Colossians 1:25-30
 : 1712745153:0;1 Corinthians 2:16
-: 1712749047:0;v faith-and-judgement.txt
 : 1712749791:0;Matthew 6:14-16
 : 1712752334:0;"any2org" "/root/.pen/ebooks/ATELIER313/C. H. Spurgeon's Puritan Catechism (11)/C. H. Spurgeon's Puritan Catechism - ATELIER313.pdf"
 : 1712752363:0;v C.\ H.\ Spurgeon\'s\ Puritan\ Catechism\ -\ ATELIER313.md.org
@@ -12972,7 +12964,6 @@ Proverbs 4:14-15
 : 1715387346:0;evince Acorn.pdf
 : 1715387461:0;pdflatex Acorn.tex
 : 1715387888:0;evince faith-and-judgement.tex
-: 1715387892:0;evince faith-and-judgement.pdf
 : 1715388268:0;xelatex old.tex
 : 1715401157:0;I John 4:20-21
 : 1715401305:0;I John 5:1-5
@@ -13120,7 +13111,6 @@ agi texstudio
 : 1715816593:0;ln -sf wo novan
 : 1715816640:0;ln -sf wo nov
 : 1715820301:0;John 14:16-21
-: 1715820310:0;John 14:15-21
 : 1715823295:0;v oc
 : 1715824719:0;Acts 21 | v
 : 1715824759:0;Acts 6 | v
@@ -13319,7 +13309,6 @@ agi texstudio
 : 1716288736:0;II Thessalonians 2
 : 1716288874:0;I Thessalonians 4:16-17
 : 1716289013:0;Revelation 22:20
-: 1716427931:0;Isaiah 43:10
 : 1716428298:0;2 Timothy 3:16-17
 : 1716429129:0;2 Timothy 3:1-5
 : 1716429779:0;John 5:44
@@ -13850,7 +13839,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718419205:0;Romans 1:23
 : 1718419229:0;Job 33:4
 : 1718419254:0;I Corinthians 10:14-31
-: 1718419266:0;I Thessalonians 1:9-10
 : 1718419274:0;James 1:26
 : 1718419329:0;Galatians 4:18-19
 : 1718419395:0;Isaiah 43:25
@@ -13886,13 +13874,11 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718453005:0;make -B TERMINAL=YES bin/brogue
 : 1718453087:0;Psalm
 : 1718453661:0;James 1:1-4
-: 1718453712:0;II Peter 1:5-10
 : 1718453739:0;James 1:12
 : 1718453747:0;James 5:11
 : 1718453774:0;Titus 2:2
 : 1718453807:0;Titus 2:1-8
 : 1718453868:0;Titus 2:1-15
-: 1718453912:0;II Thessalonians 1:5-8
 : 1718453922:0;II Thessalonians 1:4-8
 : 1718454045:0;Colossians 1:21-23
 : 1718486493:0;Philippians 3:9-14
@@ -14418,7 +14404,6 @@ Luke 5:8-10
 : 1719537411:0;Psalms 10:12
 : 1719537447:0;Psalms 10:10
 : 1719540717:0;I Corinthians 15
-: 1719540870:0;Galatians 2:17
 : 1719541299:0;Galatians 2:1-5
 : 1719541455:0;Galatians 2:6-9
 : 1719541554:0;Galatians 2:10
@@ -14432,7 +14417,6 @@ Luke 5:8-10
 : 1719542405:0;Philippians 3:8-12
 : 1719544580:0;Deuteronomy 30:19
 : 1719544589:0;Deuteronomy 30:20
-: 1719547973:0;James 4:6
 : 1719548508:0;git commit -m "28.06.24"
 : 1719551022:0;Romans 6:12
 : 1719551580:0;Colossians 3:5
@@ -14508,7 +14492,6 @@ Luke 5:8-10
 : 1719919559:0;John 6:51
 : 1719919709:0;John 9:5
 : 1719919719:0;John 10:7
-: 1719919726:0;John 10:9
 : 1719919754:0;John 10:14
 : 1719919759:0;John 10:14-15
 : 1719919774:0;John 11:25
@@ -14690,7 +14673,6 @@ Luke 5:8-10
 : 1720303674:0;Romans 12:9
 : 1720303705:0;Colossians 3:17
 : 1720303713:0;1 Corinthians 10:31
-: 1720303999:0;z faith-and-judgement.pdf
 : 1720304622:0;I Corinthians 6
 : 1720304653:0;I Corinthians 6:9-12
 : 1720304978:0;1 Corinthians 10:27
@@ -14777,7 +14759,6 @@ Luke 5:8-10
 : 1720439429:0;I Timothy 1:9-10
 : 1720439464:0;I Timothy 1:9
 : 1720439471:0;I Timothy 1:10
-: 1720439476:0;Titus 1:9
 : 1720439644:0;John 10:20
 : 1720439657:0;John 10:18-20
 : 1720439661:0;John 10:18-21
@@ -15056,7 +15037,6 @@ Luke 5:8-10
 : 1721278746:0;rm -rf theoo
 : 1721281699:0;Hebrews 10:38
 : 1721283839:0;2 Samuel 12:1-25
-: 1721284163:0;James 4:6-7
 : 1721284650:0;Isaiah 41:21
 : 1721293959:0;2 Peter 1:20-21
 : 1721295114:0;Ephesians 5:1
@@ -15340,7 +15320,6 @@ Luke 5:8-10
 : 1722469862:0;Romans 4:20-22 nasb
 : 1722469961:0;Acts 26:19-20
 : 1722469973:0;Acts 26:19
-: 1722470007:0;Hebrews 5:9-14
 : 1722470037:0;Hebrews 5:14-15
 : 1722470043:0;Isaiah 5:14-15
 : 1722470070:0;Hebrews 5:
@@ -15792,7 +15771,6 @@ Luke 5:8-10
 : 1723763692:0;v urlencode
 : 1723763785:0;sh-jump
 : 1723763996:0;vd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/heretics.org ./heretics.org
-: 1723764022:0;cd docs/theology
 : 1723766967:0;Matthew 13:22-23
 : 1723766976:0;Matthew 13:45-46
 : 1723767051:0;Philippians 3:*
@@ -15928,7 +15906,6 @@ Luke 5:8-10
 : 1723975371:0;II Cor 7:10
 : 1723975475:0;II Cor 7:15
 : 1723975721:0;Galatians 2:15
-: 1723975724:0;Galatians 2:15-16
 : 1723976079:0;Romans 4:9-12 | v
 : 1723976222:0;Rom. 3:24â€ƒ³25
 : 1723976226:0;Rom 3:24â€ƒ³25
@@ -15974,7 +15951,6 @@ Luke 5:8-10
 : 1724050011:0;I John 5:20
 : 1724127227:0;I Kings 11:19
 : 1724127234:0;I Kings 19:11
-: 1724127280:0;Jeremiah 17:9
 : 1724127399:0;Nehemiah 13:14
 : 1724127410:0;Nehemiah 13:22
 : 1724127423:0;Nehemiah 13:30
@@ -16602,7 +16578,6 @@ pip install hexabyte\
 : 1724999666:0;Romans 2:1-5
 : 1724999926:0;emacs-file-monitor yo.txt
 : 1725000027:0;Titus 1:15
-: 1725000135:0;Titus 1:10
 : 1725000210:0;Titus 1:7-9
 : 1725000260:0;echo hello | hext -r -p
 : 1725000340:0;tp find-here-path "*mini*"
@@ -16989,7 +16964,6 @@ rm -rf /root/chd-1.1\
 : 1725252143:0;I John 5:6
 : 1725252303:0;John 15:26
 : 1725252308:0;Heb 9:14
-: 1725252312:0;John 16:13
 : 1725252373:0;Ezekiel 36:25
 : 1725252434:0;Ezekiel 36:25-27
 : 1725252573:0;Mark 14:24
@@ -17950,7 +17924,6 @@ apt -y --fix-broken install
 : 1726892882:0;grep -HnoR fribidi . | v
 : 1726893033:0;l fribidi
 : 1726893081:0;sudo dpkg -i libfribidi-dev_1.0.8-2.1_amd64.deb
-: 1726893194:0;nproc
 : 1726893378:0;ldconfig -v
 : 1726893409:0;cd ~/unisonlanguage
 : 1726893440:0;pen-xc
@@ -18415,7 +18388,6 @@ apt -y --fix-broken install
 : 1732770315:0;excitedness.rkt
 : 1732770532:0;drracket /root/.emacs.d/host/pen.el/scripts/racket-scripts/use-language.rkt
 : 1732770593:0;hsqf gc
-: 1732770617:0;git pull
 : 1732770653:0;use-racket-language.rkt
 : 1732770676:0;l -u sample-racket-language
 : 1732770841:0;cd /usr/share/racket/
@@ -18598,8 +18570,6 @@ fi
 : 1733220714:0;bas
 : 1733278246:0;"pen-tcp-server" "5369" "(tetris)"
 : 1733278486:0;nvc nano
-: 1733278946:0;bg
-: 1733278947:0;disown
 : 1733286114:0;v echo-server.el
 : 1733286261:0;cd conf
 : 1733286298:0;mcd emacs-tcp-server-ports
@@ -18674,7 +18644,6 @@ fi
 : 1733291979:0;tmux source $EMACSD/pen.el/config/tmux-bw.conf
 : 1733291985:0;v $EMACSD/pen.el/config/tmux-bw.conf
 : 1733292199:0;v tmux-bw
-: 1733292237:0;tmux-bw
 : 1733292242:0;tmux set -u status-bg
 : 1733292244:0;tmux set -u status-fg
 : 1733292263:0;tmux source tmux.conf
@@ -18817,7 +18786,6 @@ fi
 : 1734498625:0;v pen-org.el
 : 1734499035:0;you-gave-me.rkt kjdlsaf sdlfkj lkdsa
 : 1734499427:0;bible-random-verse
-: 1734501520:0;penq
 : 1734552033:0;v .tmux.sh
 : 1734552142:0;tmux list-sessions
 : 1734552341:0;pen-e -D pen-emacsd-1
@@ -19009,10 +18977,8 @@ fi
 : 1734870051:0;v glossary.txt
 : 1734906492:0;ls -ldt
 : 1734906494:0;ls -ldt *
-: 1734906515:0;v ~/.pen/pen.yaml
 : 1734906521:0;v ~/.config/yazi/theme.toml
 : 1734908230:0;cd scripts
-: 1734908233:0;v pen-F
 : 1734908242:0;v yttranscriptcom
 : 1734908248:0;v pen-editxclip
 : 1734908257:0;v README.org
@@ -19105,7 +19071,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1735870551:0;echo hi > "$infp"
 : 1735870562:0;vim -E -X -R -i NONE --cmd 'silent! echo' "$@" -c "visual | call AnsiHighlight(\"$outfp\") | q" -- "$infp"
 : 1735870569:0;cat "$outfp"
-: 1735870736:0;cd config
 : 1735870739:0;cd vim-bundles
 : 1735870744:0;mcd AnsiHighlight
 : 1735870754:0;cd AnsiHighlight
@@ -19170,14 +19135,12 @@ outfp="/tmp/vimcat-out-$$"
 : 1736134175:0;Luke 4:2-13
 : 1736134234:0;Heb 12:9
 : 1736134340:0;2Chr 30:8
-: 1736137091:0;pin
 : 1736145954:0;cd src
 : 1736145959:0;v pen-amot.el
 : 1736146195:0;pen-count-loc
 : 1736147297:0;Colossians 3:14-25
 : 1736150308:0;hostname
 : 1736152563:0;v gipe.bb
-: 1736152976:0;o
 : 1736153359:0;eog rainbow.gif
 : 1736153916:0;wget "https://github.com/libsdl-org/SDL-1.2/commit/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch"
 : 1736153933:0;v 5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch
@@ -19223,7 +19186,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736273727:0;git clean -fd .
 : 1736273732:0;vcr
 : 1736415868:0;Titus 2
-: 1736582881:0;fontforge
 : 1736582964:0;agi autotrace
 : 1736582972:0;acs autotrace
 : 1736582974:0;autotrace
@@ -19249,7 +19211,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736584592:0;sudo apt install -y libgraphicsmagick1-dev libpng-dev libexiv2-dev libtiff-dev libjpeg-dev libxml2-dev libbz2-dev libfreetype6-dev libpstoedit-dev autoconf automake libtool intltool autopoint
 : 1736584608:0;./autogen.sh
 : 1736584713:0;./configure --enable-magick-readers
-: 1736584730:0;./configure
 : 1736584759:0;man autotrace
 : 1736585494:0;hex2dec 4790f
 : 1736585515:0;hex2dec 4790F
@@ -19257,7 +19218,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736585573:0;echo "1034531 - 293135" | bc -
 : 1736585578:0;echo "1034531 - 293135" | /usr/bin/bc
 : 1736585581:0;echo "1034531 - 293135" | bc
-: 1736586102:0;cd ~/.fonts
 : 1736586123:0;fontforge Iosevka-Bold.ttc
 : 1736586205:0;pw
 : 1736586279:0;/usr/bin/xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" -e ". /root/.xterm-sh-rc; export WINDOWID; cd /root/notes; zsh"
@@ -19268,7 +19228,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736586429:0;/usr/bin/xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName:Iosevka:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka:style=Bold:antialias=true:pixelsize=20" -e bash
 : 1736586466:0;fontforge ~/.fonts/Iosevka-Bold.ttc
 : 1736586511:0;xter
-: 1736586533:0;xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -e bash
 : 1736586553:0;/usr/bin/xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -e bash
 : 1736586602:0;/usr/bin/xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fn "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fa "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -e bash
 : 1736586697:0;lsof -p "$(ps -ef | grep "/usr/bin/xterm.*faceName" | grep -v grep | s field 2)" 2>/dev/null | sed 's/ \+/ /g' | cut -d ' ' -f9- | sed '1d' | grep fonts
@@ -19290,35 +19249,23 @@ outfp="/tmp/vimcat-out-$$"
 : 1736594726:0;cr ~/.Xresources
 : 1736594744:0;pen-xterm -fn "Iosevka Fixed:style=Bold:antialias=true:pixelsize=20"
 : 1736594993:0;pen-xterm -fa "Iosevka Fixed:style=Bold:antialias=true:pixelsize=20"
-: 1736595031:0;v
 : 1736595072:0;pen-xterm
-: 1736595426:0;cp -a /root/.fonts/DejaVuSansMono-Bold.ttf /root/.fonts/DejaVuSansMono-Pen.ttf
-: 1736595450:0;fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
 : 1736596000:0;fc-list :outline -f "%{family}\n" | v
 : 1736596122:0;which -a adn
 : 1736596148:0;fc-cache -f -v
-: 1736596169:0;fc-list :outline -f "%{family}\n" | grep Deja
 : 1736596683:0;/usr/bin/xterm --version
 : 1736596686:0;/usr/bin/xterm -V
 : 1736596687:0;/usr/bin/xterm -v
-: 1736596860:0;cd ~/repos
-: 1736596861:0;sl
 : 1736596865:0;mcd xterm
-: 1736596888:0;wget "https://invisible-island.net/datafiles/release/xterm.tar.gz"
 : 1736596919:0;glob "xterm-*"
-: 1736596934:0;cd "$(glob "xterm-*")"
 : 1736596946:0;v README
 : 1736596953:0;cr
-: 1736597046:0;v pen-xterm
 : 1736599066:0;mv xterm-397 xterm-397-git
 : 1736599094:0;rm -rf xterm-397
-: 1736599104:0;tar -xf xterm.tar.gz
 : 1736599125:0;git init
 : 1736599126:0;git add -A .
 : 1736599127:0;git commit -m "12.01.25"
 : 1736599130:0;rsync -rtlphx xterm-397-git/ xterm-397
-: 1736599133:0;git status
-: 1736599134:0;cd ..
 : 1736599137:0;rm -rf xterm-397-git
 : 1736599140:0;cd xterm-397
 : 1736599242:0;./xterm
@@ -19327,35 +19274,179 @@ outfp="/tmp/vimcat-out-$$"
 : 1736599292:0;kill -USR1 469494
 : 1736599322:0;git diff
 : 1736632598:0;man vim
-: 1736632664:0;v v
 : 1736632782:0;v pin
 : 1736634465:0;man strcmp
 : 1736634570:0;j lsp-describe-thing-at-point
 : 1736636055:0;fpvd
-: 1736640086:0;sh-yank
-: 1736640187:0;fc-cache -f -v | v
-: 1736640433:0;cd ~/repos/xterm/xterm-397
-: 1736640434:0;pin .
-: 1736640727:0;pwd
 : 1736640731:0;./configure --help
-: 1736640737:0;./configure --enable-trace
-: 1736640740:0;sh-general
 : 1736640763:0;` # I want to enable trace `
-: 1736640791:0;make -j$(nproc)
 : 1736640833:0;man xterm
-: 1736640840:0;which -a xterm
 : 1736640871:0;cd ~
 : 1736640925:0;xterm
 : 1736641109:0;ranger
-: 1736644776:0;pe
-: 1736648335:0;make
-: 1736648338:0;make install
-: 1736648342:0;pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20"
 : 1736648380:0;v trace.h
-: 1736648392:0;ls
 : 1736656072:0;Hebrews 13:21
 : 1736656078:0;Hebrews 13:20-21
 : 1736656231:0;I Peter 1:19
 : 1736656237:0;I Peter 1:20-19
 : 1736656256:0;I Peter 1:18-19
-: 1736667437:0;penq
+: 1736675759:0;fontforge
+: 1736675820:0;v pen-F
+: 1736675826:0;v real-cabal
+: 1736675971:0;cd ~/repos
+: 1736675973:0;mkdir xterm
+: 1736675975:0;cd xterm
+: 1736675979:0;wget "https://invisible-island.net/datafiles/release/xterm.tar.gz"
+: 1736675983:0;tar -xf xterm.tar.gz
+: 1736675987:0;cd "$(glob "xterm-*")"
+: 1736676039:0;./configure
+: 1736676209:0;evince faith-and-judgement.pdf
+: 1736676226:0;git status
+: 1736676228:0;git pull
+: 1736676239:0;z faith-and-judgement.pdf
+: 1736755572:0;(\
+cd ~/repos\
+mkdir xterm\
+cd xterm\
+wget "https://invisible-island.net/datafiles/release/xterm.tar.gz"\
+tar -xf xterm.tar.gz\
+cd "$(glob "xterm-*")"\
+` # I want to enable trace as I can hack on the xterm source`\
+./configure --enable-trace\
+make -j$(nproc)\
+make install\
+)
+: 1736755606:0;cd ~/repos/xterm/xterm-397
+: 1736755615:0;make
+: 1736755626:0;nproc
+: 1736755635:0;v nproc
+: 1736755646:0;acs athena
+: 1736755652:0;acs libXaw
+: 1736755664:0;v instALL
+: 1736755667:0;v INSTALL
+: 1736755713:0;agi libxaw7 libxaw7-dev
+: 1736755721:0;./configure --enable-trace
+: 1736755740:0;make -j$(nproc)
+: 1736755763:0;acsh athena
+: 1736755765:0;make install
+: 1736755771:0;acsh libxaw7
+: 1736755788:0;xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -e bash
+: 1736760421:0;man fontforge
+: 1736760428:0;fontforge --help
+: 1736800781:0;I Thessalonians 1:9-10
+: 1736800893:0;I Thessalonians 2:19-20
+: 1736849779:0;pin .
+: 1736849793:0;acs zig
+: 1736869602:0;Galatians 2:17
+: 1736869620:0;Galatians 2:15-16
+: 1736904953:0;Hebrews 6:1-10
+: 1736904988:0;Hebrews 5:9-14
+: 1737178604:0;Matthew 4:6-7
+: 1737178666:0;Ephesians 4:14
+: 1737180690:0;which -a fontforge
+: 1737180712:0;v emacs-packages.txt
+: 1737181742:0;Isaiah 43:10
+: 1737181940:0;nod 1 Timothy 4:11-16
+: 1737181968:0;I Tim 4
+: 1737183532:0;I Corinthians 14:33-35
+: 1737183779:0;I Timothy 2:11-15
+: 1737188084:0;John 14:15-21
+: 1737188103:0;John 16:13
+: 1737188211:0;I John 4:4-21
+: 1737188934:0;Colossians 2:11-23
+: 1737189315:0;penq
+: 1737390435:0;(\
+agi libxaw7 libxaw7-dev\
+cd ~/repos\
+mkdir xterm\
+cd xterm\
+wget "https://invisible-island.net/datafiles/release/xterm.tar.gz"\
+tar -xf xterm.tar.gz\
+cd "$(glob "xterm-*")"\
+` # I want to enable trace as I can hack on the xterm source`\
+./configure --enable-trace\
+make -j$(nproc)\
+make install\
+)
+: 1737390547:0;cp -a /root/.fonts/DejaVuSansMono-Bold.ttf /root/.fonts/DejaVuSansMono-Pen.ttf
+: 1737390552:0;# fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
+: 1737390554:0;fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
+: 1737390602:0;mcd fonts
+: 1737390715:0;mv DejaVuSansMono-Bold.sfd DejaVuSansMono-Pen.sfd
+: 1737390720:0;
+: 1737390819:0;cd config/fonts
+: 1737390828:0;sh-yank
+: 1737390836:0;fontforge /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd
+: 1737390909:0;fc-list :outline -f "%{family}\n" | grep Deja
+: 1737390916:0;tp find-here-path "*Pen*"
+: 1737390926:0;xdg-open DejaVuSansMono-Pen.ttf
+: 1737390934:0;alt xdg-open "DejaVuSansMono-Pen.ttf"
+: 1737391067:0;tp find-here-path "*font*"
+: 1737394390:0;fontforge DejaVuSansMono-Pen.sfd
+: 1737394431:0;cp -a /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd /root/.fonts/DejaVuSansMono-Pen.ttf
+: 1737394454:0;ln -sf /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.ttf
+: 1737395263:0;which -a xterm
+: 1737395277:0;pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20"
+: 1737395287:0;v pen-xterm
+: 1737395339:0;mcd font-scripts
+: 1737395350:0;v ./pen-glyphs
+: 1737395354:0;v ./pen-glyphs-demo
+: 1737395432:0;cd font-scripts
+: 1737395433:0;sl
+: 1737395437:0;v ./pen-font-preview
+: 1737395453:0;rm Trace-*
+: 1737395536:0;cd config
+: 1737395548:0;cd ..
+: 1737395550:0;cd docs/theology
+: 1737398401:0;v v
+: 1737398639:0;Romans 5:1-5
+: 1737398777:0;John 10:9
+: 1737398928:0;James 4:6
+: 1737398932:0;James 4:6-7
+: 1737403949:0;v faith-and-judgement.txt
+: 1737405993:0;I Peter 1:23
+: 1737406050:0;Luke 8:11
+: 1737406107:0;I Peter 1:22-25
+: 1737429971:0;nod I Thessalonians 4:2-8
+: 1737440770:0;tmux-bw
+: 1737440924:0;cd ~/.fonts
+: 1737440928:0;ls -ldt DejaVuSansMono-Pen.ttf
+: 1737440954:0;font-manager DejaVuSansMono-Pen.ttf
+: 1737440967:0;penelfonts
+: 1737441008:0;acs font
+: 1737441061:0;fc-cache -f -v | v
+: 1737441076:0;man fc-cache
+: 1737441095:0;fc-cache -f -v -r | v
+: 1737441136:0;pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20" -E pen-glyphs-demo
+: 1737445184:0;II Peter 1:5-10
+: 1737448668:0;I Timothy 2:12
+: 1737448675:0;v
+: 1737448680:0;I Corinthians 14:34
+: 1737448685:0;I Corinthians 14:33-34
+: 1737448728:0;pin
+: 1737461179:0;Proverbs 3:27
+: 1737461216:0;Proverbs 3:3-12
+: 1737535092:0;James 4:7-8
+: 1737536560:0;Jeremiah 17:7-10
+: 1737538886:0;pwd
+: 1737539090:0;Jeremiah 17:9
+: 1737543074:0;Ephesians 2:1-10
+: 1737543222:0;II Thessalonians 1:5-8
+: 1737683737:0;v ~/.pen/pen.yaml
+: 1737683745:0;man dpkg
+: 1737683756:0;dpkg --get-selections
+: 1737683759:0;dpkg --get-selections | v
+: 1737683928:0;II Thess 1:1-8 | v
+: 1737684183:0;II Thess 1:1-8
+: 1737684290:0;pe
+: 1737686083:0;Titus 1:1-3
+: 1737686122:0;Titus 1:9
+: 1737686188:0;Titus 1:10
+: 1737686190:0;Titus 1:10-16
+: 1737687007:0;sh-general
+: 1737687757:0;chrome
+: 1737687768:0;bg
+: 1737687769:0;disown
+: 1737688236:0;o
+: 1737688270:0;ls
+: 1737688663:0;acs jenkins

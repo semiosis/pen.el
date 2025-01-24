@@ -90,16 +90,30 @@ The description is read from the installed package files."
 ;;                    "DEFAULT")
 ;;      (pen-auto-load-packages)))
 
-;; (comment
-;;  (defun package-refresh-contents-http ()
-;;    (interactive)
-;; 
-;;    ;; TODO Consider temporarily modifying package-archives to use http instead of https - i.e. do a map on `package-archives`
-;; 
-;;    (setq package-archives
-;;          '(("gnu" . "https://elpa.gnu.org/packages/")
-;;            ("nongnu" . "https://elpa.nongnu.org/nongnu/")
-;;            ("melpa" . "https://melpa.org/packages/")))))
+(defun package-refresh-contents-http ()
+  (interactive)
+
+  ;; TODO Consider temporarily modifying package-archives to use http instead of https - i.e. do a map on `package-archives`
+
+  ;; Melpa requires https I think, but the melpa https doesn't seem to work when I'm at the Library
+  ;; Maybe I should actually set up a melpa mirror inside Pen.el
+  (let ((package-archives
+         '(("gnu" . "http://elpa.gnu.org/packages/")
+           ("nongnu" . "http://elpa.nongnu.org/nongnu/")
+           ;; ("melpa" . "http://melpa.org/packages/")
+           )))
+    (package-refresh-contents))
+
+  ;; Melpa mirror
+  ;; "rsync -avz --delete rsync://melpa.org/packages/ snapshots/"
+  ;; "rsync -avz --delete rsync://melpa.org/packages-stable/ releases/"
+
+  ;; This mirror works, even https at the library
+  (let ((package-archives
+         '(("melpa" . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/melpa/")
+           ("org"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/org/")
+           ("gnu"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/gnu/"))))
+    (package-refresh-contents)))
 
 (defun endless/upgrade ()
   "Upgrade all packages, no questions asked."

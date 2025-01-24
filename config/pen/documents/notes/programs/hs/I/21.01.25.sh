@@ -1,0 +1,6 @@
+cd /root/notes;  "I" "Peter" "1:23" "#" "<==" "zsh"
+cd /root/notes;  "I" "Peter" "1:22-25" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Thessalonians" "4:2-8" "#" "<==" "withopts"
+cd /root/notes;  "I" "Timothy" "2:12" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "14:34" "#" "<==" "zsh"
+cd /root/notes;  "I" "Corinthians" "14:33-34" "#" "<==" "zsh"

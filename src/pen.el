@@ -2627,6 +2627,7 @@ May use to generate code from comments."
 (require 'pen-flash)
 (require 'pen-tabs)
 (require 'guess-style)
+(require 'pen-fontforge)
 (require 'pen-javascript)
 
 (if (inside-docker-p)

@@ -1,0 +1,2 @@
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempgkgqMuE.txt" "#" "<==" "pen-xt"
+cd /root/.pen/documents/notes;  "xterm" "-ti" "vt340" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" "-fb" "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" "-e" "bash" "#" "<==" "zsh"

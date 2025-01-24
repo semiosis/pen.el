@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+fontforge /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd

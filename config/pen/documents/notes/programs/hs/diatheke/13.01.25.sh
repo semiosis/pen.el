@@ -1,0 +1,6 @@
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1076" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "system" "-o" "w" "-f" "internal" "-k" "modulelist" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-s" "phrase" "-o" "w" "-f" "plain" "-k" "freedom" "#" "<==" "emacs"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Leviticus 19:20;Romans 8:21;I Corinthians 7:21;II Corinthians 3:17;Galatians 2:4;Galatians 5:1;Galatians 5:13;I Peter 2:16;II Peter 2:19;" "#" "<==" "emacs"

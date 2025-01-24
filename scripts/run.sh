@@ -38,6 +38,14 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
     exit "$?"
 fi
 
+# TODO Make this work, so pix starts an xterm on the initial startup of pen.el
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if ! is_tty; then
+    in-tty -xt $sn "$@"
+    exit "$?"
+fi
+
 /etc/init.d/cron start
 service ssh start
 

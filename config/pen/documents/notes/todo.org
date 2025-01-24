@@ -1,6 +1,63 @@
+* TODO Perhaps I should set up jenkins inside of emacs
+e:/root/.emacs.d/host/pen.el/src/pen-jenkins.el
+
+* Actually download melpa into Pen.el, so I can install packages without being online
+https://github.com/melpa/melpa
+
+https://github.com/melpa/melpa?tab=readme-ov-file#mirrors
+
+rsync -avz --delete rsync://melpa.org/packages/ snapshots/
+rsync -avz --delete rsync://melpa.org/packages-stable/ releases/
+
+* TODO Make it so I can see the history of Bible verses looked up by Pen.el
+
+* TODO Make something to see several versions of the same verse at one time
+#+BEGIN_QUOTE
+  *Jeremiah 17:9* - The heart is deceitful above all things, and desperately sick; who can understand it? (ESV)
+#+END_QUOTE
+
+** Use j:bible-search-mode
+*** Also, use the bible versions in this variable
+j:bible-module-map-names
+
+* TODO Add this
+[[https://www.youtube.com/watch?v=jDuDN2FtrIo][youtube.com: John MacArthur Rebukes Joel Osteen {@truthsource}]]
+
+* TODO Work on emacs for a bit
+What should I tidy up?
+
+Maybe I should really just focus on font-building for the time being.
+
+* TODO Do some programming
+I think it might be a good idea to build a font.
+
+* TODO Set up this game - it looks fun
+https://github.com/ringtailsoftware/zoridor
+
 * TODO Make these work with an emacs popup, like yn has
+j:read-multiple-choice--short-answers
 j:read-multiple-choice--long-answers
-j:read-multiple-choice--long-answers
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (defun warnings-suppress (type)
+    (pcase (car
+            (read-multiple-choice
+             (format "Suppress `%s' warnings? " type)
+             `((?y ,(format "yes, ignore `%s' warnings completely" type))
+               (?n "no, just disable showing them")
+               (?q "quit and do nothing"))))
+      (?y
+       (customize-save-variable 'warning-suppress-log-types
+                                (if (consp type)
+                                    (cons type warning-suppress-log-types)
+                                  (cons (list type) warning-suppress-log-types))))
+      (?n
+       (customize-save-variable 'warning-suppress-types
+                                (if (consp type)
+                                    (cons type warning-suppress-types)
+                                  (cons (list type) warning-suppress-types))))
+      (_ (message "Exiting"))))
+#+END_SRC
 
 * TODO Consider getting better at writing c
 I'd have to build up libraries for working effectively with c code.

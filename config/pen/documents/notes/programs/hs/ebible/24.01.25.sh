@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "II Thess 1:1-8" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "II Thess 1:1-8" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "Titus 1:1-3" "#" "<==" "Titus"
+cd /root/notes;  "ebible" "-m" "ESV" "Titus 1:9" "#" "<==" "Titus"
+cd /root/notes;  "ebible" "-m" "ESV" "Titus 1:10-16" "#" "<==" "Titus"
