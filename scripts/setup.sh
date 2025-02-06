@@ -2676,3 +2676,6 @@ cd "$(glob "xterm-*")"
 make -j$(nproc)
 make install
 )
+
+# https://braillespecs.github.io/pef/pef-specification.html
+agi brailleutils

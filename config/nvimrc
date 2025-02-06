@@ -7,7 +7,7 @@ highlight Cursor gui=reverse guifg=NONE guibg=NONE
 set notimeout
 set nottimeout
 if has('nvim')
-    set cmdheight=0
+    silent! set cmdheight=0
     set nonumber
 else
     set nocscopeverbose
