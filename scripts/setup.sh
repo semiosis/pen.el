@@ -2679,3 +2679,7 @@ make install
 
 # https://braillespecs.github.io/pef/pef-specification.html
 agi brailleutils
+
+go install github.com/LeperGnome/bt/cmd/bt@v1.0.0
+
+cargo install binsider

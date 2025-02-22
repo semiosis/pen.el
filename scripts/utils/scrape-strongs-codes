@@ -3,5 +3,5 @@ export TTY
 
 type="$@"
 
-scrape "\\([HGhg][0-9]+\\.?\\ [^ )]+\\)"
+scrape "\\([HGhg][0-9]+\\.?\\ [^)]+\\)"
 # scrape "G[0-9]+"

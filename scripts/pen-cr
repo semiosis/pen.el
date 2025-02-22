@@ -2249,7 +2249,8 @@ case "$file_type" in
         # $HOME/scripts/re-grep.go
 
         # go run "$rp"
-        zrepl -cm go run "$rp" --
+        # zrepl -cm go run "$rp" --
+        zrepl go run "$rp" --
 
         pen-pak
         exit 0
@@ -2515,6 +2516,12 @@ case "$file_type" in
 
         echo "exit: $?" 1>&2
         pen-pak -k c
+        exit 0
+    }
+    ;;
+
+    mdoc) {
+        mandoc -T man "$rp" | pavs
         exit 0
     }
     ;;

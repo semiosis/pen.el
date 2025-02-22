@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+url="$1"
+
+set -o pipefail
+
+oci curl -s -i --head "$1" | grep -q -P " 200\\s"

@@ -8,40 +8,70 @@ export TTY
 # http://www.learndatalogtoday.org/chapter/0
 # Require more than one [^.#?/][^.#?/]\+
 
-sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;}' |  \
-    sed '/https:\/\/l.facebook.com\/l.php?u=/{s~https://l.facebook.com/l.php?u=~~;}' |  \
-    sed '/\/\/jessmart.in\/.*[^/]$/{s=$=/=;}' |  \
-    sed '/https:\/\/www.unisonweb.org\/.*[^/]$/{s=$=/=;}' | \
-    sed '/\/web.archive.org\/web.*http.*github.com\//{s=.*web.archive.org/web/[^/]*/==;}' | \
-    sed '/\/deepai.org/s/\/$//' | \
-    sed '/\/[^.]*.guildofarchivists.org\/.*\/$/{s=\/$==;}' |  \
-    sed '/\/www.bschaatsbergen.com/s/\/$//' | \
-    sed '/\/arxiv.org/s/\/$//' | \
-    sed '/\/wiki.haskell.org/s/\/$//' | \
-    sed '/\/en.wikibooks.org/s/\/$//' | \
-    sed '/\/news.ycombinator.com\/news/s/\/$//' | \
-    sed '/\/programming-idioms.org/s/\/$//' | \
-    sed '/artandpopularculture.com/s/\/$//' | \
-    sed '/\/www.schoolofhaskell.com/s/\/$//' | \
-    sed '/\/www.metalevel.at/s/\/$//' | \
-    sed '/\/www.metalevel.at/s/\/#/#/' | \
-    sed '/\/.*\.github.io/s/\/$//' | \
-    sed '/\/.*\.github.io/s/\/#.*//' | \
-    sed '/wikipedia.org/s/\/$//' | \
-    sed '/cppreference.com/s/\/$//' | \
-    sed '/wikipedia.org/s/\/#.*//' | \
-    sed '/http:\/\/google/s/http:/https:/' | \
-    sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
-    sed '/.*clojure.org/s/\/$//' | \
-    sed '/.*clojuredocs.org/s/\/$//' | \
-    sed '/jsvine.github.io/s=jsvine.github.io/basics/=jsvine.github.io/intro-to-visidata/basics/=' | \
-    sed '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' | \
-    sed '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' | \
-    sed '/.*haskell.org/s/\/$//' | \
-    sed '/.*dwarffortresswiki.org/s/\/$//' | \
-    sed '/.*haskell.org/s/\/#.*//'
+manual_redirect() {
+    sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;}' |  \
+        sed '/https:\/\/l.facebook.com\/l.php?u=/{s~https://l.facebook.com/l.php?u=~~;}' |  \
+        sed '/\/\/jessmart.in\/.*[^/]$/{s=$=/=;}' |  \
+        sed '/https:\/\/www.unisonweb.org\/.*[^/]$/{s=$=/=;}' | \
+        sed '/\/web.archive.org\/web.*http.*github.com\//{s=.*web.archive.org/web/[^/]*/==;}' | \
+        sed '/\/deepai.org/s/\/$//' | \
+        sed '/\/[^.]*.guildofarchivists.org\/.*\/$/{s=\/$==;}' |  \
+        sed '/\/www.bschaatsbergen.com/s/\/$//' | \
+        sed '/\/arxiv.org/s/\/$//' | \
+        sed '/\/wiki.haskell.org/s/\/$//' | \
+        sed '/\/en.wikibooks.org/s/\/$//' | \
+        sed '/\/news.ycombinator.com\/news/s/\/$//' | \
+        sed '/\/programming-idioms.org/s/\/$//' | \
+        sed '/artandpopularculture.com/s/\/$//' | \
+        sed '/\/www.schoolofhaskell.com/s/\/$//' | \
+        sed '/\/www.metalevel.at/s/\/$//' | \
+        sed '/\/www.metalevel.at/s/\/#/#/' | \
+        sed '/\/.*\.github.io/s/\/$//' | \
+        sed '/\/.*\.github.io/s/\/#.*//' | \
+        sed '/wikipedia.org/s/\/$//' | \
+        sed '/cppreference.com/s/\/$//' | \
+        sed '/wikipedia.org/s/\/#.*//' | \
+        sed '/http:\/\/google/s/http:/https:/' | \
+        sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
+        sed '/.*clojure.org/s/\/$//' | \
+        sed '/.*clojuredocs.org/s/\/$//' | \
+        sed '/jsvine.github.io/s=jsvine.github.io/basics/=jsvine.github.io/intro-to-visidata/basics/=' | \
+        sed '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' | \
+        sed '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' | \
+        sed '/.*haskell.org/s/\/$//' | \
+        sed '/.*dwarffortresswiki.org/s/\/$//' | \
+        sed '/.*haskell.org/s/\/#.*//'
 
-    # sed '/.*jsvine.github.io.*[^/]$/s/$/\//' | \
+        # sed '/.*fandom.com/s/\/$//'
+        # sed '/.*jsvine.github.io.*[^/]$/s/$/\//' | \
+}
+
+# newline
+IFS="
+"
+manual_redirect | awk1 | while IFS="$IFS" read -r line; do
+    (
+    exec 0</dev/null
+
+    if is-200 "$line"; then
+        echo "$line"
+    else
+        if printf -- "%s\n" "$line" | grep -q -P '/$'; then
+            # Remove trailing slash
+            new_line="$(printf -- "%s" "$line" | sed 's/\/$//')"
+        elif printf -- "%s\n" "$line" | grep -q -P '/$'; then
+            # Add trailing slash
+            new_line="$(printf -- "%s" "$line" | sed 's=$=/=')"
+        fi
+        if is-200 "$new_line"; then
+            echo "$new_line"
+        else
+            echo "$line"
+        fi
+    fi
+
+    )
+done
 
 # I tried curl-get-redirect for google searches but google doesn't provide the information
 
