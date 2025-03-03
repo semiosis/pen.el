@@ -50,7 +50,7 @@ convert_html_to_txt() {
         else
             elinks-dump "$bn" | sed 's/^>/ /' |
                 sed 's/^o /- /' |
-                sed -e 's/^[0-9]:/| /' -e 's/^[0-9][0-9]:/|  /' > "${slug}.txt"
+                sed -e 's/^[0-9]:/| /' -e 's/^[0-9][0-9]:/|  /' -e 's/^[0-9][0-9][0-9]:/|   /' > "${slug}.txt"
         fi
     )
 }
