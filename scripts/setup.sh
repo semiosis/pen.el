@@ -2683,3 +2683,6 @@ agi brailleutils
 go install github.com/LeperGnome/bt/cmd/bt@v1.0.0
 
 cargo install binsider
+
+# TTS voice synthesis (xiphos uses it)
+agi festival
