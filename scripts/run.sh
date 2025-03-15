@@ -416,6 +416,7 @@ fi
 # emacs -nw --debug-init
 
 if ! test -n "$DISPLAY"; then
+    # One way to start the fake X display
     /usr/bin/nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
 fi
 
@@ -442,7 +443,9 @@ fi
 test -n "$DISPLAY" || export DISPLAY=:0
 # Test to see if DISPLAY works
 if ! xset q &>/dev/null; then
+    # Another way to start the fake X display
     xpra start :0 || :
+    # Sigh, I only need one of these. I'll figure it why the first one isn't going later.
 fi
 
 # The clients are backgrounded
