@@ -70,6 +70,11 @@ case "$module" in
     }
     ;;
 
+    ylt) {
+        module=YLT
+    }
+    ;;
+
     bsb) {
         module=engbsb2020eb
     }
