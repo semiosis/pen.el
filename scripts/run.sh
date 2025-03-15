@@ -438,6 +438,13 @@ else
     runclient -a "" -t "$@"
 fi
 
+# Now force a display variable and start the fake x server
+test -n "$DISPLAY" || export DISPLAY=:0
+# Test to see if DISPLAY works
+if ! xset q &>/dev/null; then
+    xpra start :0 || :
+fi
+
 # The clients are backgrounded
 
 while true; do
