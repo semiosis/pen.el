@@ -1,7 +1,10 @@
 (require 'wiki-nav) 
 (require 'wikinfo) 
-(require 'wikinforg) 
-(require 'tracwiki-mode) 
+(require 'wikinforg)
+
+(require 'tracwiki-mode)
+(advice-remove 'url-retrieve-synchronously #'ad-Advice-url-retrieve-synchronously)
+
 (require 'plain-org-wiki) 
 (require 'org-multi-wiki) 
 (require 'ox-mediawiki) 
