@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  6 APR 2025 20:09
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  6 APR 2025 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,7 +318,7 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-No file faith-and-judgement.aux.
+(.//faith-and-judgement.aux)
 \openout1 = `faith-and-judgement.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -339,6 +339,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -356,12 +357,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
+
+(.//faith-and-judgement.out) (.//faith-and-judgement.out)
 \@outlinefile=\write3
 \openout3 = `faith-and-judgement.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -470,12 +470,7 @@ Overfull \hbox (90.1621pt too wide) in paragraph at lines 1678--1692
 []
  []
 
-[32] [33] [34] [35] [36] [37] [38] [39]
-
-LaTeX Warning: Hyper reference `sec:org704e60c' on page 40 undefined on input l
-ine 2034.
-
-[40] [41] [42]
+[32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
 Underfull \hbox (badness 2521) in paragraph at lines 2170--2170
 \TU/lmr/m/n/10.95 Him obeying Jesus’ command-
  []
@@ -3433,12 +3428,8 @@ Missing character: There is no ό in font [lmmono10-regular]:!
 Missing character: There is no μ in font [lmmono10-regular]:!
 Missing character: There is no ο in font [lmmono10-regular]:!
 Missing character: There is no υ in font [lmmono10-regular]:!
- [561]
-
-LaTeX Warning: Reference `sec:orgcc75f1a' on page 562 undefined on input line 2
-8795.
-
-[562] [563] [564] [565] [566]
+ [561] [562] [563] [564] [565]
+[566]
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ι in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
@@ -5152,12 +5143,7 @@ Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ύ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ω in font [lmroman10-regular]:mapping=tex-text;!
- [997] [998] [999] [1000]
-
-LaTeX Warning: Reference `sec:orgcc75f1a' on page 1001 undefined on input line 
-51017.
-
-[1001] [1002]
+ [997] [998] [999] [1000] [1001] [1002]
 Missing character: There is no ὥ in font [lmmono10-regular]:!
 Missing character: There is no σ in font [lmmono10-regular]:!
 Missing character: There is no τ in font [lmmono10-regular]:!
@@ -5217,7 +5203,8 @@ Missing character: There is no α in font [lmmono10-regular]:!
 Missing character: There is no ι in font [lmmono10-regular]:!
 Missing character: There is no ν in font [lmmono10-regular]:!
 Missing character: There is no ά in font [lmmono10-regular]:!
- [1003] [1004] [1005] [1006] [1007]
+ [1003] [1004] [1005]
+[1006] [1007]
 Missing character: There is no ἀ in font [lmmono10-regular]:!
 Missing character: There is no π in font [lmmono10-regular]:!
 Missing character: There is no ι in font [lmmono10-regular]:!
@@ -5370,12 +5357,7 @@ Overfull \hbox (111.21167pt too wide) in paragraph at lines 54065--54084
 []
  []
 
-[1058] [1059]
-
-LaTeX Warning: Hyper reference `sec:orgdfd77be' on page 1060 undefined on input
- line 54215.
-
-[1060]
+[1058] [1059] [1060]
 Overfull \hbox (3.92244pt too wide) in paragraph at lines 54224--54226
 []\TU/lmr/m/n/10.95 I think the resurrection of Jesus does
  []
@@ -5809,12 +5791,7 @@ Overfull \hbox (20.4654pt too wide) in paragraph at lines 63363--63364
 []
  []
 
-[1229] [1230] [1231] [1232]
-
-LaTeX Warning: Hyper reference `sec:orgdfd77be' on page 1233 undefined on input
- line 63510.
-
-[1233] [1234]
+[1229] [1230] [1231] [1232] [1233] [1234]
 Overfull \hbox (11.86232pt too wide) in paragraph at lines 63606--63618
 []\TU/lmr/m/n/10.95 God is love.
  []
@@ -6142,30 +6119,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 64245.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 64245.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64245
 .
-
-
-Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
-(rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  152BA86DDCB67EEAC2E085C8007DE7E7.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `faith-and-judgement.out' has not changed.
+(rerunfilecheck)             Checksum: 152BA86DDCB67EEAC2E085C8007DE7E7.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64245.
  ) 
 Here is how much of TeX's memory you used:
- 11261 strings out of 494868
- 159381 string characters out of 6175714
- 265409 words of memory out of 5000000
- 15093 multiletter control sequences out of 15000+600000
+ 11476 strings out of 494868
+ 162776 string characters out of 6175714
+ 557166 words of memory out of 5000000
+ 15302 multiletter control sequences out of 15000+600000
  10427 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,9n,45p,6376b,1372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,45p,6376b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ./faith-and-judgement.pdf (1247 pages).
