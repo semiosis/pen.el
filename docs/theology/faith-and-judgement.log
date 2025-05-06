@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  6 MAY 2025 19:30
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  6 MAY 2025 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,7 +492,7 @@ Overfull \hbox (90.1621pt too wide) in paragraph at lines 2010--2024
 
 [38] [39] [40] [41] [42] [43] [44] [45]
 
-LaTeX Warning: Hyper reference `sec:org8ca81a1' on page 46 undefined on input l
+LaTeX Warning: Hyper reference `sec:orgf8e64ab' on page 46 undefined on input l
 ine 2382.
 
 [46] [47] [48] [49]
@@ -3520,7 +3520,7 @@ Missing character: There is no ο in font [lmmono10-regular]:!
 Missing character: There is no υ in font [lmmono10-regular]:!
  [590]
 
-LaTeX Warning: Reference `sec:org5b3803c' on page 591 undefined on input line 3
+LaTeX Warning: Reference `sec:orged7414d' on page 591 undefined on input line 3
 0193.
 
 [591] [592] [593] [594] [595]
@@ -5239,7 +5239,7 @@ Missing character: There is no ύ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ω in font [lmroman10-regular]:mapping=tex-text;!
  [1029] [1030] [1031] [1032]
 
-LaTeX Warning: Reference `sec:org5b3803c' on page 1033 undefined on input line 
+LaTeX Warning: Reference `sec:orged7414d' on page 1033 undefined on input line 
 52495.
 
 [1033] [1034]
@@ -5457,7 +5457,7 @@ Overfull \hbox (111.21167pt too wide) in paragraph at lines 55553--55572
 
 [1090] [1091] [1092]
 
-LaTeX Warning: Hyper reference `sec:orgd4ea484' on page 1093 undefined on input
+LaTeX Warning: Hyper reference `sec:orgc94577e' on page 1093 undefined on input
  line 55703.
 
 
@@ -5896,7 +5896,7 @@ Overfull \hbox (20.4654pt too wide) in paragraph at lines 64904--64905
 
 [1263] [1264] [1265] [1266]
 
-LaTeX Warning: Hyper reference `sec:orgd4ea484' on page 1267 undefined on input
+LaTeX Warning: Hyper reference `sec:orgc94577e' on page 1267 undefined on input
  line 65051.
 
 [1267] [1268] [1269]
@@ -6245,7 +6245,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65786.
 Here is how much of TeX's memory you used:
  11264 strings out of 494868
  159429 string characters out of 6175714
- 266409 words of memory out of 5000000
+ 265409 words of memory out of 5000000
  15096 multiletter control sequences out of 15000+600000
  10427 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
