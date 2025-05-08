@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+test -d /root/.pen && mkdir -p /root/.pen/log
+
+test -d "/root/.pen/log" && : "${logdir:="/root/.pen/log"}"
+test -d "/tmp/log" && : "${logdir:="/tmp/log"}"
+export logdir
+
+. $PENELD/scripts/utils.sh
+
+: "${log_name:="DEFAULT"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        log_name="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp="$logdir/$log_name"
+
+if stdin_exists; then
+    awk 1 | ts | tee -a "$fp" &>/dev/null
+else
+    v "$fp"
+fi

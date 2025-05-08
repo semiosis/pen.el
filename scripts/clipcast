@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f $HOME/.cargo/bin/clipcast || cargo install "clipcast" &>/dev/null
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+: "${DISPLAY:=":0"}"
+export DISPLAY
+
+if test "$last_arg" = "--help" || test "$last_arg" = "-h"; then
+    dopager=y
+fi
+
+if test "$dopager" = "y"; then
+    $HOME/.cargo/bin/clipcast "$@" 2>&1 | pavs
+else
+    $HOME/.cargo/bin/clipcast "$@"
+fi

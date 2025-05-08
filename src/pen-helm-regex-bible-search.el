@@ -21,7 +21,8 @@
     (setq pen-helm-regex-bible-search-translation
           (if (and (or (major-mode-p 'bible-mode)
                        (major-mode-p 'bible-search-mode))
-                   (member modname translations))
+                   (member modname translations)
+                   (not (>= (prefix-numeric-value current-prefix-arg) 4)))
               modname
             (fz translations
                 nil nil "pen-helm-regex-bible-search in translation:")))

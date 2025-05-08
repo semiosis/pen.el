@@ -24,7 +24,7 @@
                 for
                 s
                 in
-                (str2list (pen-cl-sn ,cmd-filter :stdin (buffer-string) :chomp t))
+                (pen-str2list (pen-cl-sn ,cmd-filter :stdin (buffer-string) :chomp t))
                 collect
                 (list
                  (progn
@@ -52,7 +52,7 @@
 ;;             "position-list-function"
 ;;             `(save-excursion
 ;;                (beginning-of-buffer)
-;;                (cl-loop for pen-str in (-drop-last 1 (str2list (pen-sn ,cmd-filter (buffer-string)))) collect (progn (search-forward s) (point))))
+;;                (cl-loop for pen-str in (-drop-last 1 (pen-str2list (pen-sn ,cmd-filter (buffer-string)))) collect (progn (search-forward s) (point))))
 ;;             t
 ;;             cmd-filter)))
 ;;     (add-to-list 'position-list-functions f)
@@ -65,7 +65,7 @@
 (defun positions-of-rpl-1 (rpl)
   (-drop-last
    1
-   (mapcar 'byte-to-position (mapcar 'string-to-number (str2list
+   (mapcar 'byte-to-position (mapcar 'string-to-number (pen-str2list
                                                         (pen-sn
                                                          (concat "rosie grep -w -o jsonpp " (pen-q rpl) " | jq -e \".subs[].s\"")
                                                          (buffer-string)))))))
@@ -81,7 +81,7 @@
   (-drop-last
    1
    (mapcar 'list
-           (mapcar 'byte-to-position (mapcar 'string-to-number (str2list
+           (mapcar 'byte-to-position (mapcar 'string-to-number (pen-str2list
                                                                 (pen-sn
                                                                  "rosie grep -w -o jsonpp net.email | jq -e \"( .subs[]  | select(.type==\\\"email\\\") ).s\""
                                                                  (buffer-string))))))))
@@ -91,7 +91,7 @@
    1
    (mapcar 'list
            (mapcar 'byte-to-position
-                   (mapcar 'string-to-number (str2list
+                   (mapcar 'string-to-number (pen-str2list
                                               (pen-sn
                                                "rosie grep -w -o jsonpp net.ipv4 | jq -e \"( .subs[]  | select(.type==\\\"ipv4\\\") ).s\""
                                                (buffer-string))))))))
@@ -180,7 +180,7 @@
 (defun position-list-function-select (&optional func)
   (interactive)
   (if (not func)
-      (setq func (str2sym (fz position-list-functions))))
+      (setq func (str2sym (fz position-list-functions nil nil "Position list function select: "))))
   (setq position-list-current-function func))
 
 (defun position-list-show ()

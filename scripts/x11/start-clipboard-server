@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+sudo -E Xvfb :0 -screen 0 1x1x8 & disown

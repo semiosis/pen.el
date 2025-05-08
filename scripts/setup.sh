@@ -2686,3 +2686,6 @@ cargo install binsider
 
 # TTS voice synthesis (xiphos uses it)
 agi festival
+
+# Clipboard synchronization over ssh
+cargo install clipcast

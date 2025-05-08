@@ -417,6 +417,8 @@ fi
 
 if ! test -n "$DISPLAY"; then
     # One way to start the fake X display
+    # start-clipboard-server
+    # sudo -E Xvfb :0 -screen 0 1x1x8 & disown
     /usr/bin/nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
 fi
 
