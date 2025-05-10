@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  10 MAY 2025 16:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  10 MAY 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,7 +492,7 @@ Overfull \hbox (90.1621pt too wide) in paragraph at lines 2026--2040
 
 [38] [39] [40] [41] [42] [43] [44] [45]
 
-LaTeX Warning: Hyper reference `sec:orge8a7e04' on page 46 undefined on input l
+LaTeX Warning: Hyper reference `sec:orge2d97e0' on page 46 undefined on input l
 ine 2398.
 
 [46] [47] [48] [49]
@@ -3690,7 +3690,7 @@ Missing character: There is no ο in font [lmmono10-regular]:!
 Missing character: There is no υ in font [lmmono10-regular]:!
  [597]
 
-LaTeX Warning: Reference `sec:org7411e7d' on page 598 undefined on input line 3
+LaTeX Warning: Reference `sec:org9f78f3c' on page 598 undefined on input line 3
 0628.
 
 [598] [599] [600] [601] [602]
@@ -5410,7 +5410,7 @@ Missing character: There is no ύ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ω in font [lmroman10-regular]:mapping=tex-text;!
  [1036] [1037] [1038] [1039]
 
-LaTeX Warning: Reference `sec:org7411e7d' on page 1040 undefined on input line 
+LaTeX Warning: Reference `sec:org9f78f3c' on page 1040 undefined on input line 
 52935.
 
 [1040] [1041]
@@ -5571,68 +5571,68 @@ Overfull \hbox (228.54446pt too wide) in paragraph at lines 54528--54534
  []
 
 [1072]
-Overfull \hbox (8.86021pt too wide) in paragraph at lines 54628--54629
+Overfull \hbox (8.86021pt too wide) in paragraph at lines 54640--54641
 []|   [] \TU/lmr/m/n/10.95 The Son
  []
 
 [1073]
-Overfull \hbox (0.99814pt too wide) in paragraph at lines 54676--54677
+Overfull \hbox (0.99814pt too wide) in paragraph at lines 54688--54689
 []|   [] \TU/lmr/m/n/10.95 The end
  []
 
 
-Overfull \hbox (103.30942pt too wide) in paragraph at lines 54696--54697
+Overfull \hbox (103.30942pt too wide) in paragraph at lines 54708--54709
 []
  []
 
 [1074]
-Overfull \hbox (26.29262pt too wide) in paragraph at lines 54752--54753
+Overfull \hbox (26.29262pt too wide) in paragraph at lines 54764--54765
 []|   [] \TU/lmr/m/n/10.95 When Christ
  []
 
-
-Overfull \hbox (192.63947pt too wide) in paragraph at lines 54772--54773
+[1075]
+Overfull \hbox (192.63947pt too wide) in paragraph at lines 54784--54785
 []
  []
 
-[1075]
-Overfull \hbox (443.05136pt too wide) in paragraph at lines 54812--54813
+
+Overfull \hbox (443.05136pt too wide) in paragraph at lines 54824--54825
 []
  []
 
 [1076]
-Overfull \hbox (65.31293pt too wide) in paragraph at lines 54852--54853
+Overfull \hbox (65.31293pt too wide) in paragraph at lines 54864--54865
 []
  []
 
-
-Overfull \hbox (5.95848pt too wide) in paragraph at lines 54902--54903
+[1077]
+Overfull \hbox (5.95848pt too wide) in paragraph at lines 54914--54915
 []|   [] \TU/lmr/m/n/10.95 Jesus will give
  []
 
-[1077]
-Overfull \hbox (17.31909pt too wide) in paragraph at lines 54922--54923
+
+Overfull \hbox (17.31909pt too wide) in paragraph at lines 54934--54935
 []|   []
  []
 
 [1078] [1079] [1080] [1081] [1082] [1083] [1084] [1085] [1086] [1087] [1088]
 [1089] [1090] [1091] [1092] [1093] [1094] [1095]
-Overfull \hbox (170.53722pt too wide) in paragraph at lines 55913--55945
+Overfull \hbox (170.53722pt too wide) in paragraph at lines 55925--55957
 []
  []
 
 [1096]
-Overfull \hbox (111.21167pt too wide) in paragraph at lines 56000--56019
+Overfull \hbox (111.21167pt too wide) in paragraph at lines 56012--56031
 []
  []
 
 [1097] [1098] [1099]
 
-LaTeX Warning: Hyper reference `sec:org999a749' on page 1100 undefined on input
- line 56150.
+LaTeX Warning: Hyper reference `sec:org0bbbacd' on page 1100 undefined on input
+ line 56162.
 
 
-Overfull \hbox (3.92244pt too wide) in paragraph at lines 56159--56161
+Overfull \hbox (3.92244pt too wide) in paragraph at lines 56171--56173
 []\TU/lmr/m/n/10.95 I think the resurrection of Jesus does
  []
 
@@ -5712,20 +5712,20 @@ Missing character: There is no ο in font [lmmono10-regular]:!
 Missing character: There is no ς in font [lmmono10-regular]:!
  [1107] [1108] [1109] [1110]
 [1111] [1112] [1113] [1114] [1115] [1116] [1117] [1118] [1119] [1120] [1121]
-[1122] [1123] [1124] [1125]
-Overfull \hbox (0.85379pt too wide) in paragraph at lines 57595--57596
+[1122] [1123] [1124] [1125] [1126]
+Overfull \hbox (0.85379pt too wide) in paragraph at lines 57607--57608
 [][]\TU/lmr/bx/n/10.95 Matthew 23:10[] \TU/lmr/m/n/10.95 - Neither be called in
 structors, for \TU/lmr/bx/n/10.95 you have one instructor (G2519. kathégétés),
  []
 
-[1126] [1127] [1128] [1129] [1130] [1131] [1132] [1133] [1134] [1135] [1136]
-[1137] [1138] [1139] [1140] [1141] [1142] [1143] [1144] [1145] [1146] [1147]
-Overfull \hbox (90.13289pt too wide) in paragraph at lines 58813--58828
+[1127] [1128] [1129] [1130] [1131] [1132] [1133] [1134] [1135] [1136] [1137]
+[1138] [1139] [1140] [1141] [1142] [1143] [1144] [1145] [1146] [1147]
+Overfull \hbox (90.13289pt too wide) in paragraph at lines 58825--58840
 []
  []
 
 [1148] [1149]
-Overfull \hbox (35.90852pt too wide) in paragraph at lines 58899--58919
+Overfull \hbox (35.90852pt too wide) in paragraph at lines 58911--58931
 []
  []
 
@@ -5892,7 +5892,7 @@ Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ׃ in font [lmmono10-regular]:!
 Missing character: There is no ס in font [lmmono10-regular]:!
  [1164] [1165] [1166] [1167] [1168]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 59897--59898
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 59909--59910
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -5900,54 +5900,54 @@ Overfull \hbox (110.33736pt too wide) in paragraph at lines 59897--59898
  []
 
 [1169] [1170] [1171] [1172] [1173]
-Overfull \hbox (8.48975pt too wide) in paragraph at lines 60181--60194
+Overfull \hbox (8.48975pt too wide) in paragraph at lines 60193--60206
 []\TU/lmr/m/n/10.95 The Bible does
  []
 
 [1174] [1175] [1176] [1177] [1178] [1179] [1180] [1181] [1182] [1183] [1184]
 [1185] [1186]
-Overfull \hbox (17.53084pt too wide) in paragraph at lines 60845--60846
+Overfull \hbox (17.53084pt too wide) in paragraph at lines 60857--60858
 []\TU/lmr/m/n/10.95 When the devil
  []
 
 [1187]
-Overfull \hbox (22.6116pt too wide) in paragraph at lines 60883--60884
+Overfull \hbox (22.6116pt too wide) in paragraph at lines 60895--60896
 []
  []
 
 [1188] [1189] [1190] [1191]
-Overfull \hbox (22.6116pt too wide) in paragraph at lines 61165--61166
+Overfull \hbox (22.6116pt too wide) in paragraph at lines 61177--61178
 []
  []
 
 [1192] [1193] [1194] [1195] [1196] [1197]
-Overfull \hbox (12.60695pt too wide) in paragraph at lines 61503--61504
+Overfull \hbox (12.60695pt too wide) in paragraph at lines 61515--61516
 []\TU/lmr/m/n/10.95 As you feel
  []
 
 [1198] [1199]
-Overfull \hbox (3.64989pt too wide) in paragraph at lines 61587--61608
+Overfull \hbox (3.64989pt too wide) in paragraph at lines 61599--61620
 []\TU/lmr/m/n/10.95 What if you just decided,
  []
 
 [1200] [1201] [1202] [1203] [1204] [1205] [1206] [1207] [1208] [1209] [1210]
 [1211]
-Overfull \hbox (14.33705pt too wide) in paragraph at lines 62282--62283
+Overfull \hbox (14.33705pt too wide) in paragraph at lines 62294--62295
 []\TU/lmr/m/n/10.95 Jesus faced
  []
 
 [1212] [1213] [1214] [1215] [1216] [1217] [1218]
-Overfull \hbox (13.52673pt too wide) in paragraph at lines 62600--62607
+Overfull \hbox (13.52673pt too wide) in paragraph at lines 62612--62619
 []\TU/lmr/m/n/10.95 And so God
  []
 
 
-Overfull \hbox (9.11606pt too wide) in paragraph at lines 62608--62624
+Overfull \hbox (9.11606pt too wide) in paragraph at lines 62620--62636
 []\TU/lmr/m/n/10.95 Hosea, you
  []
 
 [1219] [1220]
-Overfull \hbox (1.8857pt too wide) in paragraph at lines 62721--62725
+Overfull \hbox (1.8857pt too wide) in paragraph at lines 62733--62737
 []\TU/lmr/m/n/10.95 I was lecturing on the
  []
 
@@ -6010,12 +6010,12 @@ Missing character: There is no ε in font [lmmono10-regular]:!
 Missing character: There is no ι in font [lmmono10-regular]:!
  [1229] [1230] [1231]
 [1232]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 63334--63335
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 63346--63347
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
 [1233] [1234] [1235] [1236] [1237] [1238]
-Overfull \hbox (324.26573pt too wide) in paragraph at lines 63683--63684
+Overfull \hbox (324.26573pt too wide) in paragraph at lines 63695--63696
 []
  []
 
@@ -6036,42 +6036,42 @@ Missing character: There is no ז in font [lmmono10-regular]:!
 Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ר in font [lmmono10-regular]:!
  [1244]
-Overfull \hbox (3.8908pt too wide) in paragraph at lines 63988--64000
+Overfull \hbox (3.8908pt too wide) in paragraph at lines 64000--64012
 []\TU/lmr/m/n/10.95 The global context of my suf-
  []
 
 [1245] [1246] [1247] [1248] [1249]
-Overfull \hbox (44.26335pt too wide) in paragraph at lines 64235--64236
+Overfull \hbox (44.26335pt too wide) in paragraph at lines 64247--64248
 []
  []
 
 
-Overfull \hbox (46.2818pt too wide) in paragraph at lines 64237--64241
+Overfull \hbox (46.2818pt too wide) in paragraph at lines 64249--64253
 []
  []
 
 [1250] [1251] [1252] [1253]
-Overfull \hbox (8.01892pt too wide) in paragraph at lines 64554--64569
+Overfull \hbox (8.01892pt too wide) in paragraph at lines 64566--64581
 []\TU/lmr/m/n/10.95 First things first,
  []
 
 [1254] [1255] [1256] [1257] [1258] [1259] [1260] [1261]
-Overfull \hbox (2.99283pt too wide) in paragraph at lines 64974--64991
+Overfull \hbox (2.99283pt too wide) in paragraph at lines 64986--65003
 []
  []
 
 [1262] [1263] [1264] [1265] [1266] [1267] [1268] [1269]
-Overfull \hbox (20.4654pt too wide) in paragraph at lines 65351--65352
+Overfull \hbox (20.4654pt too wide) in paragraph at lines 65363--65364
 []
  []
 
 [1270] [1271] [1272] [1273]
 
-LaTeX Warning: Hyper reference `sec:org999a749' on page 1274 undefined on input
- line 65498.
+LaTeX Warning: Hyper reference `sec:org0bbbacd' on page 1274 undefined on input
+ line 65510.
 
 [1274] [1275] [1276]
-Overfull \hbox (11.86232pt too wide) in paragraph at lines 65594--65606
+Overfull \hbox (11.86232pt too wide) in paragraph at lines 65606--65618
 []\TU/lmr/m/n/10.95 God is love.
  []
 
@@ -6372,29 +6372,29 @@ Missing character: There is no 乐 in font [lmroman10-regular]:mapping=tex-text;
 Missing character: There is no 小 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 组 in font [lmroman10-regular]:mapping=tex-text;!
  [1286]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 66195--66195
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 66207--66207
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 66195--66195
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 66207--66207
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
 [1287]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 66208--66208
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 66220--66220
 [] \TU/lmtt/m/n/10.95 8  Nevertheless, I live to serve You, God, and to be conf
 ormed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66233.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66245.
 [1288]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66245.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 66233.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66233
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 66245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66245
 .
 
 
@@ -6411,7 +6411,7 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66233.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66245.
  ) 
 Here is how much of TeX's memory you used:
  11264 strings out of 494868
