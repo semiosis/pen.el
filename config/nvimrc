@@ -1553,3 +1553,20 @@ vnoremap <ESC>P :m '<-2<CR>gv=gv
 " visually move paragraph/selection up and down - more useful
 vnoremap <ESC>J j"xx}"xpvip
 vnoremap <ESC>K ok"xx{"xPjvip
+
+function! TodayFile()
+    let fp = strftime("%d.%m.%y") . ".org"
+    " exe "e " . getcwd() . "/" . fp
+    exe "e " . expand('%:p:h') . "/" . fp
+endfunction
+
+command! TodayFile silent! call TodayFile()
+
+function! TodayFolder()
+    let dp = expand('%:p:h') . "/" . strftime("%d.%m.%y")
+    call system("mkdir -p ".Q(dp))
+    exe "e " . dp
+endfunction
+
+command! TodayFolder silent! call TodayFolder()
+command! TodayDir silent! call TodayFolder()

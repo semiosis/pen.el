@@ -17,5 +17,9 @@ fi
 if test "$dopager" = "y"; then
     $HOME/.cargo/bin/clipcast "$@" 2>&1 | pavs
 else
-    $HOME/.cargo/bin/clipcast "$@"
+    if test "$#" -eq 0; then
+        $HOME/.cargo/bin/clipcast "$@" 2>&1 | vimcat-basic
+    else
+        $HOME/.cargo/bin/clipcast "$@"
+    fi
 fi

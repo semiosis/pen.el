@@ -2689,3 +2689,11 @@ agi festival
 
 # Clipboard synchronization over ssh
 cargo install clipcast
+
+apt install -y openssh-server
+sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin /PermitRootLogin /' /etc/ssh/sshd_config
+sed -i 's/#Port 22/Port 9222/' /etc/ssh/sshd_config
+# Set login password for the docker container:
+# echo "root:insecure_password" | chpasswd
+# service ssh start

@@ -154,6 +154,8 @@
                (and (major-mode-enabled 'universal-sidecar-buffer-mode)
                     "Sidecar")
                
+               (and (major-mode-enabled 'w3m-mode)
+                    (w3m-url-encode-string-2 w3m-current-url))
                (and (major-mode-enabled 'helpful-mode)
                     (or list-buffers-directory
                         helpful--sym))

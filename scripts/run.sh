@@ -39,6 +39,7 @@ if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host
 fi
 
 /etc/init.d/cron start
+service ssh start
 
 # pen-restart-clipboard
 

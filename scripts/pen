@@ -248,6 +248,9 @@ export TTYD_PORT
 KHALA_PORT="$((9837 + $coefficient))"
 export KHALA_PORT
 
+# Enable by default (expose docker container ssh port to the host machine)
+export EXPOSE_SSH=y
+
 ensure_dependencies() {
     ds="$(test_deps)"
     code="$?"
@@ -651,6 +654,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -eth) {
         EXPOSE_ETHEREUM=y
+        shift
+    }
+    ;;
+
+    -expssh) {
+        EXPOSE_SSH=y
         shift
     }
     ;;
@@ -2232,6 +2241,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_NO_TM \
         --env INTERACTIVE \
         --env EXPOSE_ETHEREUM \
+        --env EXPOSE_SSH \
         --env PEN_CONTAINER_NAME \
         --env TTYD_PORT \
         --env KHALA_PORT \
@@ -2300,6 +2310,11 @@ IFS= read -r -d '' shcode <<HEREDOC
             cmd --expose 8546; p " "
             cmd --expose 30303; p " "
             cmd --expose 30303/udp
+        fi
+        ) \
+        $(
+        if test "$EXPOSE_SSH" = y; then
+            cmd --expose 9222
         fi
         ) \
         --entrypoint= --name=$PEN_CONTAINER_NAME $pen_image "$remote_cmd" $CMD
@@ -2373,6 +2388,7 @@ pen_eval() {
 # pen-pl "$shcode" | pen-tv &>/dev/null
 
 export EXPOSE_ETHEREUM
+export EXPOSE_SSH
 export INTERACTIVE
 
 pen_eval_fuzzy_maybe() {
