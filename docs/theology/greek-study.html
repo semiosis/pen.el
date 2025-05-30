@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-30 Fri 12:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New Testament Greek study</title>
+<meta name="author" content="Shane Mulligan" />
+<meta name="keywords" content="faith christianity" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">New Testament Greek study</h1>
+<p>
+\makeatletter
+\renewcommand\verbatim@font{\normalfont\fontencoding{T1}\ttfamily}
+\makeatother
+</p>
+
+<div id="outline-container-org04752cf" class="outline-2">
+<h2 id="org04752cf"><span class="section-number-2">1.</span> NT Greek study</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<div id="outline-container-org67e0aaf" class="outline-3">
+<h3 id="org67e0aaf"><span class="section-number-3">1.1.</span> Question</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+I'd like to understand the Greek behind the phrase <span class="underline">in the teaching of Christ</span>.
+Because I'm interested in whether the phrase <span class="underline">teaching of Christ</span> refers to the teachings that Christ
+taught including His teachings before His death, burial and resurrection, or
+if it the phrase is also talking about the doctrine surrounding what is known about Christ.
+My guess is both, but I'd like to understand the Greek a bit better.
+</p>
+
+<blockquote>
+<p>
+<b>II John 1:9</b> - Everyone who goes on ahead and does not abide <span class="underline">in the teaching (<a href="https://biblehub.com/greek/1321.htm">G1322 didachē</a>) of Christ</span>, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org8c382f8" class="outline-3">
+<h3 id="org8c382f8"><span class="section-number-3">1.2.</span> Didache</h3>
+<div class="outline-text-3" id="text-1-2">
+<blockquote>
+<p>
+<b>Matthew 28:19-20</b> - Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching (<a href="https://biblehub.com/greek/1321.htm">G1321 didaskontes</a>) them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>II Timothy 4:3</b> - For the time is coming when people will not endure sound teaching (<a href="https://biblehub.com/greek/1319.htm">G1319 didaskalias</a>), but having itching ears they will accumulate for themselves teachers to suit their own passions, (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>I Timothy 6:1</b> - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching (<a href="https://biblehub.com/greek/1319.htm">G1319 didaskalia</a>) may not be reviled. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>I Timothy 6:3</b> - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching (<a href="https://biblehub.com/greek/1319.htm">G1319 didaskalia</a>) that accords with godliness, (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Romans 6:17-18</b> - But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching (<a href="https://biblehub.com/greek/1322.htm">G1322 didachēs</a>) to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>John 7:16-17</b> - So Jesus answered them, My teaching (<a href="https://biblehub.com/greek/1321.htm">G1322 didachē</a>) is not mine, but his who sent me. If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgc1389ac" class="outline-3">
+<h3 id="orgc1389ac"><span class="section-number-3">1.3.</span> Logon - listened to His <span class="underline">word/s</span> is a better translation here</h3>
+<div class="outline-text-3" id="text-1-3">
+<blockquote>
+<p>
+<b>Luke 10:39</b> - And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching (<a href="https://biblehub.com/greek/3056.htm">G3056 logon</a>). (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org5b7d3a6" class="outline-3">
+<h3 id="org5b7d3a6"><span class="section-number-3">1.4.</span> Grammatical Case</h3>
+<div class="outline-text-3" id="text-1-4">
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>interrogative
+<span class="linenr"> 2: </span>    /&#716;&#618;nt&#601;&#712;r&#594;&#609;&#601;t&#618;v/
+<span class="linenr"> 3: </span>    adjective
+<span class="linenr"> 4: </span>    having the force of a question.
+<span class="linenr"> 5: </span>    "a hard, interrogative stare"
+<span class="linenr"> 6: </span>
+<span class="linenr"> 7: </span>transitive verb
+<span class="linenr"> 8: </span>    A verb that entails one or more transitive
+<span class="linenr"> 9: </span>    objects, for example, 'enjoys' in Amadeus
+<span class="linenr">10: </span>    enjoys music.
+<span class="linenr">11: </span>
+<span class="linenr">12: </span>    This contrasts with intransitive verbs,
+<span class="linenr">13: </span>    which do not entail transitive objects,
+<span class="linenr">14: </span>    for example, 'arose' in Beatrice arose.
+</pre>
+</div>
+
+<p>
+Notes from <a href="https://en.wikipedia.org/wiki/Grammatical_case">https://en.wikipedia.org/wiki/Grammatical_case</a>:
+</p>
+
+<ul class="org-ul">
+<li><b>N (Nominative)</b>
+<ul class="org-ul">
+<li><code>Indicates</code>: Subject of a finite verb</li>
+<li><code>Sample case words</code>: <span class="underline">we</span></li>
+<li><code>Sample sentence</code>: <span class="underline">We</span> went to the store.</li>
+<li><code>Interrogative</code>: Who or what?</li>
+<li><code>Notes</code>: Corresponds to English's subject pronouns.</li>
+</ul></li>
+<li><b>V (Vocative)</b>
+<ul class="org-ul">
+<li><code>Indicates</code>: Addressee</li>
+<li><code>Sample case words</code>: <span class="underline">John</span></li>
+<li><code>Sample sentence</code>:
+<ul class="org-ul">
+<li><span class="underline">John</span>, are you all right?</li>
+<li>Hello, <span class="underline">John</span>!</li>
+<li>O John, how are you! (archaic)</li>
+</ul></li>
+<li><code>Interrogative</code>:</li>
+<li><code>Notes</code>: Roughly corresponds to the archaic use of "O" in English.</li>
+</ul></li>
+<li><b>A (Accusative)</b>
+<ul class="org-ul">
+<li><code>Indicates</code>: Direct object of a transitive verb</li>
+<li><code>Sample case words</code>: <span class="underline">us</span>, <span class="underline">for us</span>, <span class="underline">the (object)</span></li>
+<li><code>Sample sentence</code>:
+<ul class="org-ul">
+<li>The clerk remembered <span class="underline">us</span>.</li>
+<li>John waited <span class="underline">for us</span> at the bus stop.</li>
+<li>Obey <span class="underline">the law</span>.</li>
+</ul></li>
+<li><code>Interrogative</code>:
+<ul class="org-ul">
+<li>Whom or what?</li>
+</ul></li>
+<li><code>Notes</code>: Corresponds to English's object pronouns and preposition for construction before the object, often marked by a definite article the. Together with dative, it forms modern English's oblique case.</li>
+</ul></li>
+<li><b>G (Genitive)</b>
+<ul class="org-ul">
+<li><code>Indicates</code>: Possessor of another noun</li>
+<li><code>Sample case words</code>: <span class="underline">'s</span>, <span class="underline">of (the)</span></li>
+<li><code>Sample sentence</code>:
+<ul class="org-ul">
+<li><span class="underline">John's</span> book was on the table.</li>
+<li>The pages <span class="underline">of the book</span> turned yellow.</li>
+<li>The table is made <span class="underline">out of wood</span>.</li>
+</ul></li>
+<li><code>Interrogative</code>: Whose? From what or what of?</li>
+<li><code>Notes</code>: Roughly corresponds to English's possessive (possessive determiners and pronouns) and preposition of construction.</li>
+</ul></li>
+<li><b>D (Dative)</b>
+<ul class="org-ul">
+<li><code>Indicates</code>: Indirect object of a verb</li>
+<li><code>Sample case words</code>: <span class="underline">us</span>, <span class="underline">to us</span>, <span class="underline">to the (object)</span></li>
+<li><code>Sample sentence</code>:
+<ul class="org-ul">
+<li>The clerk gave <span class="underline">us</span> a discount.</li>
+<li>The clerk gave a discount <span class="underline">to us</span>.</li>
+<li>According <span class="underline">to the law&#x2026;</span></li>
+</ul></li>
+<li><code>Interrogative</code>: Whom or to what?</li>
+<li><code>Notes</code>: Corresponds to English's object pronouns and preposition to construction before the object, often marked by a definite article the. Together with accusative, it forms modern English's oblique case.</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-orgce9a8fd" class="outline-4">
+<h4 id="orgce9a8fd"><span class="section-number-4">1.4.1.</span> Interlinear</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>3956    3588    4254           2532 3361 3306
+<span class="linenr"> 2: </span>pas     ho      proag&#333;n        kai  m&#275;   men&#333;n
+<span class="linenr"> 3: </span>&#960;&#8118;&#962;     &#8001;       &#960;&#961;&#959;&#940;&#947;&#969;&#957;        &#954;&#945;&#8054;  &#956;&#8052;   &#956;&#941;&#957;&#969;&#957;
+<span class="linenr"> 4: </span>Anyone   -      going on ahead and  not  abiding
+<span class="linenr"> 5: </span>Adj-NMS Art-NMS V-PPA-NMS      Conj Adv  V-PPA-NMS
+<span class="linenr"> 6: </span>                      &#9484;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9488;
+<span class="linenr"> 7: </span>1722 3588    1322     &#9474; 3588    &#9474; 5547       2316
+<span class="linenr"> 8: </span>en   t&#275;      didach&#275;  &#9474; tou     &#9474; Christou   Theon
+<span class="linenr"> 9: </span>&#7952;&#957;   &#964;&#8135;      &#948;&#953;&#948;&#945;&#967;&#8135;   &#9474; &#964;&#959;&#8166;     &#9474; &#935;&#961;&#953;&#963;&#964;&#959;&#8166;  , &#920;&#949;&#8056;&#957;
+<span class="linenr">10: </span>in   the     teaching &#9474;  -      &#9474; of Christ  God
+<span class="linenr">11: </span>Prep Art-DFS N-DFS    &#9474; Art-GMS &#9474; N-GMS      N-AMS
+<span class="linenr">12: </span>                      &#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9496;
+<span class="linenr">13: </span>3756 2192     3588      3306      1722 3588
+<span class="linenr">14: </span>ouk  echei    ho        men&#333;n     en   t&#275;
+<span class="linenr">15: </span>&#959;&#8016;&#954;  &#7956;&#967;&#949;&#953;  .  &#8001;         &#956;&#941;&#957;&#969;&#957;     &#7952;&#957;   &#964;&#8135;
+<span class="linenr">16: </span>not  has      The [one] abiding   in   the
+<span class="linenr">17: </span>Adv  V-PIA-3S Art-NMS   V-PPA-NMS Prep Art-DFS
+<span class="linenr">18: </span>
+<span class="linenr">19: </span>1322      3778       2532 3588    3962
+<span class="linenr">20: </span>didach&#275;   houtos     kai  ton     Patera
+<span class="linenr">21: </span>&#948;&#953;&#948;&#945;&#967;&#8135;  , &#959;&#8023;&#964;&#959;&#962;      &#954;&#945;&#8054;  &#964;&#8056;&#957;     &#928;&#945;&#964;&#941;&#961;&#945;
+<span class="linenr">22: </span>teaching  this [one] both the     Father
+<span class="linenr">23: </span>N-DFS     DPro-NMS   Conj Art-AMS N-AMS
+<span class="linenr">24: </span>
+<span class="linenr">25: </span>2532 3588    5207  2192
+<span class="linenr">26: </span>kai  ton     Huion echei
+<span class="linenr">27: </span>&#954;&#945;&#8054;  &#964;&#8056;&#957;     &#933;&#7985;&#8056;&#957;  &#7956;&#967;&#949;&#953;  .
+<span class="linenr">28: </span>and  the     Son   has
+<span class="linenr">29: </span>Conj Art-AMS N-AMS V-PIA-3S
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org44282dc" class="outline-4">
+<h4 id="org44282dc"><span class="section-number-4">1.4.2.</span> Example - Art-GMS</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+<a href="https://biblehub.com/interlinear/2_john/1-9.htm">https://biblehub.com/interlinear/2_john/1-9.htm</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr">1: </span>tou
+<span class="linenr">2: </span>3588
+<span class="linenr">3: </span>tou
+<span class="linenr">4: </span>&#964;&#959;&#8166;
+<span class="linenr">5: </span> -
+<span class="linenr">6: </span>Art-GMS
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>G - <a href="https://en.wikipedia.org/wiki/Grammatical_case">Genitive</a></li>
+<li>M - <a href="https://en.wikipedia.org/wiki/Grammatical_case">Masculine</a></li>
+<li>S - <a href="https://en.wikipedia.org/wiki/Grammatical_case">Singular</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-10-19 Sat 00:00</p>
+<p class="author">Author: Shane Mulligan</p>
+<p class="date">Created: 2025-05-30 Fri 12:34</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

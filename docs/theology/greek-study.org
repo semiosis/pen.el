@@ -1,0 +1,202 @@
+#+TITLE: New Testament Greek study
+#+AUTHOR: Shane Mulligan
+#+DATE: <2024-10-19 Sat>
+#+KEYWORDS: faith christianity
+
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+# #+LATEX_HEADER: \usepackage[utf8x]{inputenc}
+# #+LATEX_HEADER: \usepackage[utf8]{inputenc}
+# #+LATEX_HEADER: \usepackage{newunicodechar}
+# #+LATEX_HEADER: \usepackage{unicode-math}
+
+#+LATEX_HEADER: \usepackage[LGR,T1]{fontenc}
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage{pmboxdraw}
+#+LATEX_HEADER: \usepackage{newunicodechar}
+#+LATEX_HEADER: \newunicodechar{└}{\textSFii}
+#+LATEX_HEADER: \newunicodechar{├}{\textSFviii}
+#+LATEX_HEADER: \newunicodechar{─}{\textSFx}
+
+#+LATEX_HEADER: \documentclass[12pt]{article}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setmainfont{DejaVu Serif}
+
+#+LATEX_HEADER: \usepackage[greek,english]{babel}
+
+# #+LATEX_HEADER: \usepackage[T1]{fontenc}
+# #+LATEX_HEADER: \usepackage[utf8]{inputenc}
+# #+LATEX_HEADER: \usepackage[greek]{babel}
+#+LATEX_HEADER: \usepackage{alphabeta}
+
+\makeatletter
+\renewcommand\verbatim@font{\normalfont\fontencoding{T1}\ttfamily}
+\makeatother
+
+# #+LATEX_HEADER: \usepackage{unixode}
+
+#+OPTIONS: toc:nil
+
+#+LATEX_COMPILER: xelatex
+
+* NT Greek study
+
+# φύσις
+
+# \textgreek{φύσις}
+
+** Question
+
+I'd like to understand the Greek behind the phrase _in the teaching of Christ_.
+Because I'm interested in whether the phrase _teaching of Christ_ refers to the teachings that Christ
+taught including His teachings before His death, burial and resurrection, or
+if it the phrase is also talking about the doctrine surrounding what is known about Christ.
+My guess is both, but I'd like to understand the Greek a bit better.
+
+#+BEGIN_QUOTE
+  *II John 1:9* - Everyone who goes on ahead and does not abide _in the teaching ([[https://biblehub.com/greek/1321.htm][G1322 didachē]]) of Christ_, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+#+END_QUOTE
+
+** Didache
+#+BEGIN_QUOTE
+  *Matthew 28:19-20* - Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching ([[https://biblehub.com/greek/1321.htm][G1321 didaskontes]]) them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *II Timothy 4:3* - For the time is coming when people will not endure sound teaching ([[https://biblehub.com/greek/1319.htm][G1319 didaskalias]]), but having itching ears they will accumulate for themselves teachers to suit their own passions, (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *I Timothy 6:1* - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching ([[https://biblehub.com/greek/1319.htm][G1319 didaskalia]]) may not be reviled. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *I Timothy 6:3* - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching ([[https://biblehub.com/greek/1319.htm][G1319 didaskalia]]) that accords with godliness, (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Romans 6:17-18* - But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching ([[https://biblehub.com/greek/1322.htm][G1322 didachēs]]) to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *John 7:16-17* - So Jesus answered them, My teaching ([[https://biblehub.com/greek/1321.htm][G1322 didachē]]) is not mine, but his who sent me. If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. (ESV)
+#+END_QUOTE
+
+** Logon - listened to His _word/s_ is a better translation here
+#+BEGIN_QUOTE
+  *Luke 10:39* - And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching ([[https://biblehub.com/greek/3056.htm][G3056 logon]]). (ESV)
+#+END_QUOTE
+
+** Grammatical Case
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  interrogative
+      /ˌɪntəˈrɒɡətɪv/
+      adjective
+      having the force of a question.
+      "a hard, interrogative stare"
+
+  transitive verb
+      A verb that entails one or more transitive
+      objects, for example, 'enjoys' in Amadeus
+      enjoys music.
+
+      This contrasts with intransitive verbs,
+      which do not entail transitive objects,
+      for example, 'arose' in Beatrice arose.
+#+END_SRC
+
+Notes from https://en.wikipedia.org/wiki/Grammatical_case:
+
+- *N (Nominative)*
+  - =Indicates=: Subject of a finite verb
+  - =Sample case words=: _we_
+  - =Sample sentence=: _We_ went to the store.
+  - =Interrogative=: Who or what?
+  - =Notes=: Corresponds to English's subject pronouns.
+- *V (Vocative)*
+  - =Indicates=: Addressee
+  - =Sample case words=: _John_
+  - =Sample sentence=:
+    - _John_, are you all right?
+    - Hello, _John_!
+    - O John, how are you! (archaic)
+  - =Interrogative=:
+  - =Notes=: Roughly corresponds to the archaic use of "O" in English.
+- *A (Accusative)*
+  - =Indicates=: Direct object of a transitive verb
+  - =Sample case words=: _us_, _for us_, _the (object)_
+  - =Sample sentence=:
+    - The clerk remembered _us_.
+    - John waited _for us_ at the bus stop.
+    - Obey _the law_.
+  - =Interrogative=:
+    - Whom or what?
+  - =Notes=: Corresponds to English's object pronouns and preposition for construction before the object, often marked by a definite article the. Together with dative, it forms modern English's oblique case.
+- *G (Genitive)*
+  - =Indicates=: Possessor of another noun
+  - =Sample case words=: _'s_, _of (the)_
+  - =Sample sentence=:
+    - _John's_ book was on the table.
+    - The pages _of the book_ turned yellow.
+    - The table is made _out of wood_.
+  - =Interrogative=: Whose? From what or what of?
+  - =Notes=: Roughly corresponds to English's possessive (possessive determiners and pronouns) and preposition of construction.
+- *D (Dative)*
+  - =Indicates=: Indirect object of a verb
+  - =Sample case words=: _us_, _to us_, _to the (object)_
+  - =Sample sentence=:
+    - The clerk gave _us_ a discount.
+    - The clerk gave a discount _to us_.
+    - According _to the law..._
+  - =Interrogative=: Whom or to what?
+  - =Notes=: Corresponds to English's object pronouns and preposition to construction before the object, often marked by a definite article the. Together with accusative, it forms modern English's oblique case.
+
+*** Interlinear
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  3956    3588    4254           2532 3361 3306
+  pas     ho      proagōn        kai  mē   menōn
+  πᾶς     ὁ       προάγων        καὶ  μὴ   μένων
+  Anyone   -      going on ahead and  not  abiding
+  Adj-NMS Art-NMS V-PPA-NMS      Conj Adv  V-PPA-NMS
+                        ┌─────────┐
+  1722 3588    1322     │ 3588    │ 5547       2316
+  en   tē      didachē  │ tou     │ Christou   Theon
+  ἐν   τῇ      διδαχῇ   │ τοῦ     │ Χριστοῦ  , Θεὸν
+  in   the     teaching │  -      │ of Christ  God
+  Prep Art-DFS N-DFS    │ Art-GMS │ N-GMS      N-AMS
+                        └─────────┘
+  3756 2192     3588      3306      1722 3588
+  ouk  echei    ho        menōn     en   tē
+  οὐκ  ἔχει  .  ὁ         μένων     ἐν   τῇ
+  not  has      The [one] abiding   in   the
+  Adv  V-PIA-3S Art-NMS   V-PPA-NMS Prep Art-DFS
+
+  1322      3778       2532 3588    3962
+  didachē   houtos     kai  ton     Patera
+  διδαχῇ  , οὗτος      καὶ  τὸν     Πατέρα
+  teaching  this [one] both the     Father
+  N-DFS     DPro-NMS   Conj Art-AMS N-AMS
+
+  2532 3588    5207  2192
+  kai  ton     Huion echei
+  καὶ  τὸν     Υἱὸν  ἔχει  .
+  and  the     Son   has
+  Conj Art-AMS N-AMS V-PIA-3S
+#+END_SRC
+
+*** Example - Art-GMS
+https://biblehub.com/interlinear/2_john/1-9.htm
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang textly
+  tou
+  3588
+  tou
+  τοῦ
+   -
+  Art-GMS
+#+END_SRC
+
+- G - [[https://en.wikipedia.org/wiki/Grammatical_case][Genitive]]
+- M - [[https://en.wikipedia.org/wiki/Grammatical_case][Masculine]]
+- S - [[https://en.wikipedia.org/wiki/Grammatical_case][Singular]]
