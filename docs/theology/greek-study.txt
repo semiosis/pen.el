@@ -1,46 +1,58 @@
 New Testament Greek study
 
-\makeatletter \renewcommand\verbatim@font{\normalfont\fontencoding{T1}\ttfamily} \makeatother
+\makeatletter
+\renewcommand\verbatim@font{\normalfont\fontencoding{T1}\ttfamily}
+\makeatother
 
 1. NT Greek study
 
 1.1. Question
 
-I'd like to understand the Greek behind the phrase in the teaching of Christ. Because I'm interested in whether
-the phrase teaching of Christ refers to the teachings that Christ taught including His teachings before His death,
-burial and resurrection, or if it the phrase is also talking about the doctrine surrounding what is known about
-Christ. My guess is both, but I'd like to understand the Greek a bit better.
+I'd like to understand the Greek behind the phrase in the teaching of Christ.
+Because I'm interested in whether the phrase teaching of Christ refers to the
+teachings that Christ taught including His teachings before His death, burial
+and resurrection, or if it the phrase is also talking about the doctrine
+surrounding what is known about Christ. My guess is both, but I'd like to
+understand the Greek a bit better.
 
-  II John 1:9 - Everyone who goes on ahead and does not abide in the teaching (G1322 didachē) of Christ, does not
-  have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+  II John 1:9 - Everyone who goes on ahead and does not abide in the teaching
+  (G1322 didachē) of Christ, does not have God. Whoever abides in the
+  teaching has both the Father and the Son. (ESV)
 
 1.2. Didache
 
-  Matthew 28:19-20 - Go therefore and make disciples of all nations, baptizing them in the name of the Father and
-  of the Son and of the Holy Spirit, teaching (G1321 didaskontes) them to observe all that I have commanded you.
-  And behold, I am with you always, to the end of the age. (ESV)
+  Matthew 28:19-20 - Go therefore and make disciples of all nations,
+  baptizing them in the name of the Father and of the Son and of the Holy
+  Spirit, teaching (G1321 didaskontes) them to observe all that I have
+  commanded you. And behold, I am with you always, to the end of the age.
+  (ESV)
 
-  II Timothy 4:3 - For the time is coming when people will not endure sound teaching (G1319 didaskalias), but
-  having itching ears they will accumulate for themselves teachers to suit their own passions, (ESV)
+  II Timothy 4:3 - For the time is coming when people will not endure sound
+  teaching (G1319 didaskalias), but having itching ears they will accumulate
+  for themselves teachers to suit their own passions, (ESV)
 
-  I Timothy 6:1 - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that
-  the name of God and the teaching (G1319 didaskalia) may not be reviled. (ESV)
+  I Timothy 6:1 - Let all who are under a yoke as slaves regard their own
+  masters as worthy of all honor, so that the name of God and the teaching
+  (G1319 didaskalia) may not be reviled. (ESV)
 
-  I Timothy 6:3 - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus
-  Christ and the teaching (G1319 didaskalia) that accords with godliness, (ESV)
+  I Timothy 6:3 - If anyone teaches a different doctrine and does not agree
+  with the sound words of our Lord Jesus Christ and the teaching (G1319
+  didaskalia) that accords with godliness, (ESV)
 
-  Romans 6:17-18 - But thanks be to God, that you who were once slaves of sin have become obedient from the heart
-  to the standard of teaching (G1322 didachēs) to which you were committed, and, having been set free from sin,
+  Romans 6:17-18 - But thanks be to God, that you who were once slaves of sin
+  have become obedient from the heart to the standard of teaching (G1322
+  didachēs) to which you were committed, and, having been set free from sin,
   have become slaves of righteousness. (ESV)
 
-  John 7:16-17 - So Jesus answered them, My teaching (G1322 didachē) is not mine, but his who sent me. If anyone's
-  will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own
+  John 7:16-17 - So Jesus answered them, My teaching (G1322 didachē) is not
+  mine, but his who sent me. If anyone's will is to do God's will, he will
+  know whether the teaching is from God or whether I am speaking on my own
   authority. (ESV)
 
 1.3. Logon - listened to His word/s is a better translation here
 
-  Luke 10:39 - And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching (G3056
-  logon). (ESV)
+  Luke 10:39 - And she had a sister called Mary, who sat at the Lord's feet
+  and listened to his teaching (G3056 logon). (ESV)
 
 1.4. Grammatical Case
 
@@ -85,8 +97,9 @@ Notes from https://en.wikipedia.org/wiki/Grammatical_case:
 • Obey the law.
 • Interrogative:
 • Whom or what?
-• Notes: Corresponds to English's object pronouns and preposition for construction before the object, often
-marked by a definite article the. Together with dative, it forms modern English's oblique case.
+• Notes: Corresponds to English's object pronouns and preposition for
+construction before the object, often marked by a definite article
+the. Together with dative, it forms modern English's oblique case.
 • G (Genitive)
 • Indicates: Possessor of another noun
 • Sample case words: 's, of (the)
@@ -95,8 +108,8 @@ marked by a definite article the. Together with dative, it forms modern English'
 • The pages of the book turned yellow.
 • The table is made out of wood.
 • Interrogative: Whose? From what or what of?
-• Notes: Roughly corresponds to English's possessive (possessive determiners and pronouns) and preposition
-of construction.
+• Notes: Roughly corresponds to English's possessive (possessive
+determiners and pronouns) and preposition of construction.
 • D (Dative)
 • Indicates: Indirect object of a verb
 • Sample case words: us, to us, to the (object)
@@ -105,8 +118,10 @@ of construction.
 • The clerk gave a discount to us.
 • According to the law…
 • Interrogative: Whom or to what?
-• Notes: Corresponds to English's object pronouns and preposition to construction before the object, often
-marked by a definite article the. Together with accusative, it forms modern English's oblique case.
+• Notes: Corresponds to English's object pronouns and preposition to
+construction before the object, often marked by a definite article
+the. Together with accusative, it forms modern English's oblique
+case.
 
 1.4.1. Interlinear
 
