@@ -1679,7 +1679,11 @@ case "$fnspec" in
 
     *.pl) {
         if pen-yn "prolog?"; then
-            swipl-playground "$fp"
+            if pen-yn "Run script (y) or open playground (n)?"; then
+                :
+            else
+                swipl-playground "$fp"
+            fi
             exit $?
         fi
     }

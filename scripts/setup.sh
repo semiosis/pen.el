@@ -2697,3 +2697,7 @@ sed -i 's/#Port 22/Port 9222/' /etc/ssh/sshd_config
 # Set login password for the docker container:
 # echo "root:insecure_password" | chpasswd
 # service ssh start
+
+e ia helm-rhythmbox
+
+e ia php-mode

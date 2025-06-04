@@ -1,8 +1,12 @@
 #!/bin/bash
 export TTY
 
+# vim it
+
 . $SCRIPTS/lib/hs
 
 # "$@" | v
+
+# e.g. V pwd
 
 P v "$@"

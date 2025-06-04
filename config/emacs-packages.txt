@@ -2394,3 +2394,4 @@ hyperdrive-org-transclusion
 org-transclusion-http
 gnugo
 clipetty
+helm-rhythmbox
