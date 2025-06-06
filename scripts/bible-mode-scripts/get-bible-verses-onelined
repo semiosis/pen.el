@@ -17,4 +17,8 @@ HEREDOC
 }
 
 # scrape-bible-references | wrlp nod myeval | pavs
-wrlp nod myeval | pavs
+
+# DONE Instead of usin myeval, I should use ebible
+
+# wrlp nod myeval | pavs
+wrlp nod xa 'ebible' '-m' 'ESC' | pavs
