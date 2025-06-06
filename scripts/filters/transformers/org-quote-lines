@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+wrlp -E "org-quote-line; echo; echo"  # Puts each line in an org quotation

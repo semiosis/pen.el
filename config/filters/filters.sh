@@ -485,3 +485,4 @@ fix-nasb-links-org
 org-mode-make-headline-asterisks-into-slash.bb
 sol-implode    # one-linerise shell / bash
 sol-explode    # prettify / expand shell / bash
+org-quote-lines  # Puts each line in an org quotation

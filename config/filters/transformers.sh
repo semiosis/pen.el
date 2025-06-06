@@ -20,3 +20,4 @@ sed 's/^/\t/'                                                                   
 sed 's/\/$//'                                                                       # strip trailing directory slash
 hash-crc32
 crc-lines
+org-quote-lines  # Puts each line in an org quotation

@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+doexample() {
+    IFS= read -r -d '' INPUT <<HEREDOC
+Ro 12:9
+Ro 12:17
+Ro 12:21
+Ro 14:16
+Ro 16:19
+HEREDOC
+
+    echo "$INPUT" | get-bible-verses-onelined
+}
+
+# scrape-bible-references | wrlp nod myeval | pavs
+wrlp nod myeval | pavs

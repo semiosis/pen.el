@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# --del
+rsync -rtlphx -ogD --include "*" --exclude .git/ --exclude .gitignore --exclude TODO "$@"

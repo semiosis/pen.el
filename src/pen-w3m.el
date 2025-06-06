@@ -1,5 +1,7 @@
 (setq w3m-session-crash-recovery nil)
 
+(setq w3m-command (executable-find "w3m"))
+
 (define-key w3m-mode-map (kbd "<up>") nil)
 (define-key w3m-mode-map (kbd "<down>") nil)
 (define-key w3m-mode-map (kbd "<left>") nil)

@@ -76,6 +76,8 @@ fi
 
 if test "$has_stdout" = y; then
     "$bin" "$query" -o - | pavs
+elif test "$NOEMACS" = y; then
+    nvc "$bin" "$query"
 elif test "$sn" = binfo; then
     nvc "$bin" "$query"
 else

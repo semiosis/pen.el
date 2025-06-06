@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+grepfilter "get-bible-verses-onelined" "scrape-bible-references -v" | org-quote-lines

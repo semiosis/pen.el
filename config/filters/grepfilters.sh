@@ -13,3 +13,4 @@ strongs-codes-unlinkify
 blueletterbible-strongs-codes-relinkify
 biblegateway-relinkify-canonicalised
 bibleorg-relinkify-canonicalised
+expand-bible-references-onelinify
