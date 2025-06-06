@@ -21,4 +21,4 @@ HEREDOC
 # DONE Instead of usin myeval, I should use ebible
 
 # wrlp nod myeval | pavs
-wrlp nod xa 'ebible' '-m' 'ESC' | pavs
+wrlp nod xa 'ebible' '-m' 'ESV' | pavs
