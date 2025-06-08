@@ -96,7 +96,7 @@ of exiting.  This function is otherwise like `ivy-done'."
   (interactive)
   (if (ivy--prompt-selected-p)
       (ivy-immediate-done)
-    (let ((c (concat "vim " (pen-q (s-replace-regexp " .*" "" (pen-ivy-get-selection))))))
+    (let ((c (concat "v " (pen-q (s-replace-regexp " .*" "" (pen-ivy-get-selection))))))
       (eval
        `(ivy-quit-and-run
           (pen-term-sps ,c))))))
