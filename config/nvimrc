@@ -1570,3 +1570,26 @@ endfunction
 
 command! TodayFolder silent! call TodayFolder()
 command! TodayDir silent! call TodayFolder()
+
+
+
+" unhighlight word under cursor
+fun! UnLightUpCurrent()
+    if &ft != 'fugitiveblame'
+        match IncSearch ''
+    endif
+endf
+
+" highlight word under cursor
+fun! LightUpCurrent()
+    if &ft != 'fugitiveblame'
+        exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+    endif
+endf
+
+autocmd CursorMoved * call LightUpCurrent()
+" useful but too distracting
+"autocmd CursorMoved * call UnLightUpCurrent()
+"autocmd CursorMovedI * call UnLightUpCurrent()
+"autocmd CursorHold * call LightUpCurrent()
+"autocmd CursorHoldI * call LightUpCurrent()
