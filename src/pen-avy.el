@@ -85,6 +85,12 @@
      (mapcar #'cdr (buttons-collect))
      (avy--style-fn avy-style))))
 
+(defun ace-link-extractor ()
+    (interactive)
+    (ace-link-goto-filter-cmd-button (select-filter "Extractor:" 'extractors) 'tv)
+    ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible")
+    )
+
 (defun ace-link-goto-widget ()
   (interactive)
   (avy-with ace-link-help
@@ -347,6 +353,7 @@ values to copy the link to the clipboard and/or primary as well."
          (mapcar #'cdr wordtuples)
          (avy--style-fn avy-style))))))
 
+(define-key pen-map (kbd "M-j M-e") 'ace-link-extractor)
 (define-key pen-map (kbd "M-j M-b") 'ace-link-bible-ref)
 (define-key pen-map (kbd "M-j M-v") 'ace-link-bible-ref-tpop)
 

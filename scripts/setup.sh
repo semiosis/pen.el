@@ -2701,3 +2701,5 @@ sed -i 's/#Port 22/Port 9222/' /etc/ssh/sshd_config
 e ia helm-rhythmbox
 
 e ia php-mode
+
+pip3.10 install youtube-transcript-api

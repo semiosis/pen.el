@@ -21,7 +21,8 @@ url="$1"
 test -n "$url" || { echo "Empty url" | hls red 1>&2; exit 1; }
 
 url="$(p "$url" | xurls)"
-url="$(p "$url" | sed 's/?t=*//')"
+url="$(p "$url" | sed 's/&t=.*//')"
+url="$(p "$url" | sed 's/?t=.*//')"
 
 test -n "$url" || { echo "url: $url\nNot a youtube url" | hls red 1>&2; exit 1; }
 

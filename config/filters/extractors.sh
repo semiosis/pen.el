@@ -34,3 +34,4 @@ pen-scrape '[0-9.]+' | sed '/^$/d'                                              
 pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-rtc-issue-ids.sh
 pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-nbo-issue-ids.sh
 pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-jira-issue-ids.sh
+scrape-bible-references
