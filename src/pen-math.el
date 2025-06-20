@@ -1,3 +1,5 @@
+(require 'rst)
+
 (defalias 'modulo '%)
 
 (defun hex2dec (hex)
@@ -8,5 +10,9 @@
     (if (eq 1 (length results))
         (car results)
       results)))
+
+(comment
+ ;; 1964
+ (rst-roman-to-arabic "MCMLXIV"))
 
 (provide 'pen-math)
