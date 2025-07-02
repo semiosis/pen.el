@@ -49,7 +49,7 @@ if test $# -eq 2; then
         }
         ;;
 
-        -url ) { # an integer
+        -url ) {
             [[ "$subject" =~ ^https?:// ]]
             exit $?
         }

@@ -7,6 +7,6 @@ test -f $HOME/.local/bin/youtube_transcript_api && : "${bin:="$HOME/.local/bin/y
 test -f "/usr/local/bin/youtube_transcript_api" && : "${bin:="/usr/local/bin/youtube_transcript_api"}"
 
 test -f "$bin" || pip3.8 install youtube-transcript-api &>/dev/null
-cat /usr/local/bin/youtube_transcript_api | grep -q python3.10 || pip3.8 install youtube-transcript-api &>/dev/null
+cat /usr/local/bin/youtube_transcript_api | grep -q python3.10 || pip3.10 install youtube-transcript-api &>/dev/null
 
 "$bin" "$@"

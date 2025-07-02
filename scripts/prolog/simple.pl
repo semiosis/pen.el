@@ -1,9 +1,13 @@
-:- initialization(main).
+#!/usr/bin/env swipl
 
-ok(a).
-ok(b).
+:- initialization(main, main).
 
-main :-
-    argument_value(1, X),
-    read_from_atom(X, T),
-    call(T).
+main(Argv) :-
+    echo(Argv).
+
+echo([]) :- nl.
+echo([Last]) :- !,
+    write(Last), nl.
+echo([H|T]) :-
+    write(H), write(' '),
+    echo(T).

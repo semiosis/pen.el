@@ -8,13 +8,18 @@ if ! test -n "$num"; then
     n_workers="$(pen-ls-workers)"
     : "${n_workers:="1"}"
     num="$(seq 1 $n_workers | mfz --prompt "Worker ID")"
-    : "${num:="1"}"
+    # : "${num:="1"}"
+    if test "$num" = ""; then
+        exit 1
+    fi
 fi
 
 : "${SOCKET:="DEFAULT"}"
 
 if test -n "$num"; then
     if printf -- "%s\n" "$num" | grep -q -P '^pen-emacsd-'; then
+        SOCKET="$num"
+    elif printf -- "%s\n" "$num" | grep -q -P '^[a-zA-Z]'; then
         SOCKET="$num"
     else
         SOCKET="pen-emacsd-$num"
