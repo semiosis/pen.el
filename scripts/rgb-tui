@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+export COLORTERM=truecolor
+
+# This appears to have 24bit support, but I'm not yet sure why I'm not getting it
+# It wasn't working when I was going from zandiel to agia
+
+test -f "$HOME/local/bin/rgb-tui" && : "${bin:="$HOME/local/bin/rgb-tui"}"
+
+if ! { test -n "$bin" && test -f "$bin"; }; then 
+    (
+    cd "$(gc "https://github.com/ArthurSonzogni/rgb-tui")"
+    mkdir -p build; cd build;
+    cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8;
+    cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install
+    )
+fi
+
+test -f "$HOME/local/bin/rgb-tui" && : "${bin:="$HOME/local/bin/rgb-tui"}"
+test -n "$bin" && "$bin" "$@"

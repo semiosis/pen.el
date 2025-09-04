@@ -16,6 +16,7 @@
 (require 'org-sql)
 (require 'org-ql)
 (require 'org-wc)
+(require 'pen-org-habit)
 ;; I need to be ensuring that I have the package
 (ignore-errors
   (require 'org-download)

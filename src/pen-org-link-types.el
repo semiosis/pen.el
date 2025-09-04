@@ -385,7 +385,15 @@ With prefix argument, also display headlines without a TODO keyword."
   (wgrep (concat "\\b" pattern "\\b") (mu "$EMACSD/config")))
 (org-add-link-type "lrk" 'ead-emacs-config)
 
-
+(defun org-link-run-function (funcname-and-args)
+  (interactive (list (read-string-hist "org-link-run-function name and args with ':' separator: ")))
+  (let* ((tokens (s-split ":" funcname-and-args))
+         (funcname (car tokens))
+         (argsstring (second tokens)))
+    
+    (funcall-interactively (str2sym funcname) argsstring)))
+(org-add-link-type "orgl" 'org-link-run-function)
+(org-add-link-type "bt" 'org-link-run-function)
 
 (org-add-link-type "map" 'org-link-show-map)
 (org-add-link-type "tcq" 'tcq)

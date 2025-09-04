@@ -534,9 +534,11 @@ fun! GeneralSyntax()
         hi unicode cterm=NONE ctermfg=197 ctermbg=234
         syntax match unicode "[^\d0-\d127]\+"
         hi hlred cterm=NONE ctermfg=000 ctermbg=197
+        hi hlscarlet cterm=NONE ctermfg=088 ctermbg=196
         hi hlgreen cterm=NONE ctermfg=000 ctermbg=28
         hi hlpurple cterm=NONE ctermfg=000 ctermbg=201
         syntax match hlred "\<R: "
+        syntax match hlscarlet "\c\<scarlet\>"
         syntax match hlgreen "\<G: "
         syntax match hlpurple "\<X: "
         syntax match discrete "[a-z0-9?>]\@<=::\<"

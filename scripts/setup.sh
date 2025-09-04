@@ -2703,3 +2703,37 @@ e ia helm-rhythmbox
 e ia php-mode
 
 pip3.10 install youtube-transcript-api
+
+# sudo apt-add-repository -y ppa:swi-prolog/stable
+# sudo apt-get update
+sudo apt-get install swi-prolog
+
+e ia ediprolog
+
+e ia phi-search
+
+e ia fennel-mode flymake-fennel
+
+(
+cd "$(gc "https://github.com/ArthurSonzogni/rgb-tui")"
+mkdir -p build; cd build;
+cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8;
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install
+)
+
+pip3.8 install --upgrade pip
+pip install cli-chess
+
+# hexpatch
+# This is a cool program
+# cargo install --git https://github.com/Etto48/HexPatch
+cargo-quickinstall "hex-patch"
+
+e ia mindstream
+
+e ia highlight2clipboard
+e ia hl-anything
+
+# Install this somehow manually
+# sudo apt-get update --fix-missing
+# agi asciidoctor

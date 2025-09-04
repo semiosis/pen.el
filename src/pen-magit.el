@@ -705,4 +705,47 @@ revisions (interactive.e., use a \"...\" range)."
                             'font-lock-face face))
       str)))
 
+(define-key magit-mode-map (kbd "(") 'magit-toggle-margin)
+
+(defun magit-cycle-margin-style-on ()
+  (interactive)
+
+  (if (not (and magit-buffer-margin
+                (car magit-buffer-margin)))
+      (magit-set-buffer-margin t))
+  (call-interactively 'magit-cycle-margin-style))
+(define-key magit-mode-map (kbd ")") 'magit-cycle-margin-style-on)
+
+
+(defun magit-patch-save-to-clipboard ()
+  "Write current diff into clipboard."
+  (interactive)
+
+  (let ((fp (pen-tf "magit-patch-save-to-clipboard" nil "diff")))
+    (magit-patch-save fp)
+    (xc (cat fp))))
+
+(defun magit-patch-apply-from-clipboard ()
+  "Apply current diff from clipboard to current file."
+  (interactive)
+
+  (let ((patch (xc)))
+    (sps "tv" nil patch)
+    (if (and
+         (test-n patch)
+         (yn (concat "Apply clipboard patch?" "\n"
+                     patch)))
+        (let ((fp (pen-tf "magit-patch-apply-from-clipboard" (xc) "diff")))
+          (magit-patch-apply fp)))))
+
+
+;; TODO Make a copy and paste diff for magit
+;; Unsure which mode I will do with each.
+;; I think I need a general "apply" keybinding where I apply something to the current file
+
+;; 
+;; (define-key magit-diff-mode-map (kbd "w") 'magit-am)
+(define-key magit-diff-mode-map (kbd "w") 'magit-patch-save-to-clipboard)
+(define-key magit-diff-mode-map (kbd ".") 'magit-patch-apply-from-clipboard)
+
 (provide 'pen-magit)

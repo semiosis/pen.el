@@ -1257,7 +1257,7 @@ case "$fnspec" in
         cd build
 
         if test "$interactive" = "y"; then
-            z-repl -E "meson ..; ninja"
+            pen-zrepl -E "meson ..; ninja"
         else
             meson ..
             # meson configure # list options
@@ -1282,8 +1282,8 @@ case "$fnspec" in
         rm -f CMakeCache.txt
 
         if test "$interactive" = "y"; then
-            z-repl -E "cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8"
-            pen-yn "cmake make and install?" && z-repl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
+            pen-zrepl -E "cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8"
+            pen-yn "cmake make and install?" && pen-zrepl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
         else
             cmake ..
             # cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local
@@ -1318,11 +1318,11 @@ case "$fnspec" in
     }
     ;;
 
-    .Xresources) {
+    .Xresources|Xresources) {
         cd "$dn"
         set -xv
-        xrdb -merge ~/.Xresources
-        xrdb -load ~/.Xresources
+        xrdb -merge "$fp"
+        xrdb -load "$fp"
         # xmonad --restart
         # killall nautilus-desktop
         # restart-compton
@@ -2039,7 +2039,7 @@ case "$file_type" in
 
     tsv|csv) {
         if ! pen-pl "$rp" | grep -q -P '.csv' && test "$file_type" = csv; then
-            cat "$rp" | pen-tf tsv | pen-xa fpvd
+            cat "$rp" | pen-tf csv | pen-xa fpvd
         elif ! pen-pl "$rp" | grep -q -P '.tsv' && test "$file_type" = tsv; then
             cat "$rp" | pen-tf tsv | pen-xa fpvd
         else

@@ -1557,8 +1557,9 @@ non-nil."
 (defalias 'progn-dontstop 'progn-continue-failures)
 (defalias 'dontstop 'progn-continue-failures)
 
-(defun e/grep (input pattern)
-  (list2str (-filter (lambda (s) (string-match-p pattern s)) (str2lines input))))
+(comment
+ (defun e/grep (input pattern)
+   (list2str (-filter (lambda (s) (string-match-p pattern s)) (str2lines input)))))
 
 (defun e/ls (dir)
   (list2str
@@ -1586,23 +1587,28 @@ non-nil."
                      (str2sym (fz (list 'glob 'pcre 'literal)
                                   nil nil "Mode: "))))
 
-  ;; This should be in the 'cond snippet
-  (pcase mode
-    ('glob
-     (pen-snc (cmd "glob-grep" pattern) s))
-    ('pcre
-     (let ((epat (pcre-to-elisp pattern)))
-       (list2str
-        (-filter (lambda (line) (s-matches-p
-                                 epat
-                                 line))
-                 (str2lines s))))
-     ;; (pen-snc (cmd "grep" "-P" pattern) s)
-     )
-    ('literal
-     (pen-snc (cmd "grep" "-F" pattern) s))
-    (_
-     ;; Default for grep
-     (pen-snc (cmd "grep" "-G" pattern) s))))
+  (let ((result
+         ;; This should be in the 'cond snippet
+         (pcase mode
+           ('glob
+            (pen-snc (cmd "glob-grep" pattern) s))
+           ('pcre
+            (let ((epat (pcre-to-elisp pattern)))
+              (list2str
+               (-filter (lambda (line) (s-matches-p
+                                        epat
+                                        line))
+                        (str2lines s))))
+            ;; (pen-snc (cmd "grep" "-P" pattern) s)
+            )
+           ('literal
+            (pen-snc (cmd "grep" "-F" pattern) s))
+           (_
+            ;; Default for grep
+            (pen-snc (cmd "grep" "-G" pattern) s)))))
+    (if (interactive-p)
+        (progn (etv result)
+               result)
+      result)))
 
 (provide 'pen-library)

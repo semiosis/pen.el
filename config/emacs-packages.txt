@@ -2395,3 +2395,6 @@ org-transclusion-http
 gnugo
 clipetty
 helm-rhythmbox
+phi-search
+flymake-fennel
+hl-anything

@@ -735,6 +735,12 @@ otherwise the whole string is unquoted."
                 (widen)))
           (backward-kill-word 1))))))
 
+
+;; TODO Make it so I 
+(defun emacs-lisp-ex-sexp-at-point ()
+  (let* ((transform (read-string-hist "EX sexp at point: [Example input: (mapcar 'car it)]"))
+         (s (sexp-at-point)))))
+
 (advice-add 'lispy-eval :around #'ignore-errors-around-advice)
 
 (define-key lispy-mode-map (kbd "e") nil)

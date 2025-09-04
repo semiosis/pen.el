@@ -350,16 +350,18 @@
         (set-window-buffer (get-buffer-window (current-buffer)) buf)))
     buf))
 
-(defun bible-mode-select-module()
+(defun bible-mode-select-module ()
   "Queries user to select a new reading module for the current `bible-mode' buffer."
   (interactive)
   (let* (
+         (cur_l (current-line))
          (module
           (fz (bible-mode--list-biblical-modules) nil nil "Module: ")
           ;; (completing-read "Module: " (bible-mode--list-biblical-modules))
           ))
     (setq bible-mode-book-module module)
-    (bible-mode--display)))
+    (bible-mode--display)
+    (goto-line cur_l)))
 
 (defun bible-open-version (version)
   (interactive (list
@@ -1970,10 +1972,61 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-open-interlinear ()
   (interactive)
   (let* ((tup (bible-mode-get-ref-tuple))
-         (book-lc (downcase (car tup)))
+         (book-lc
+          (-->
+           (downcase (car tup))
+           (s-replace " " "_" it)
+           (s-replace "iii_" "3_" it)
+           (s-replace "ii_" "2_" it)
+           (s-replace "i_" "1_" it)))
          (chap (str (cadr tup)))
          (verse (str (caddr tup))))
     (w3m (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse))))
+
+(defvar bible-mode-commentaries
+  '(
+    ("Barnes' Notes" "barnes")
+    ("Benson Commentary" "benson")
+    ("Biblical Illustrator" "illustrator")
+    ("Cambridge Bible for Schools and Colleges" "cambridge")
+    ("Clarke's Commentary" "clarke")
+    ("Darby's Bible Synopsis" "darby")
+    ("Expositor's Bible Commentary" "expositors")
+    ("Expositor's Dictionary of Texts" "edt")
+    ("Geneva Study Bible" "gsb")
+    ("Gill's Bible Exposition" "gill")
+    ("Gray's Concise Bible Commentary" "gray")
+    ("Guzik Bible Commentary" "guzik")
+    ("Jamieson-Fausset-Brown" "jfb")
+    ("Kingcomments Bible Studies" "king-en")
+    ("Lange Commentary on the Holy Scriptures" "lange")
+    ("MacLaren Expositions Of Holy Scripture" "maclaren")
+    ("Matthew Henry Concise" "mhc")
+    ("Matthew Henry Full" "mhcw")
+    ("Matthew Poole's Commentary" "poole")
+    ("Pulpit Commentary" "pulpit")
+    ("Pulpit Homiletics" "homiletics")
+    ("Sermon Bible - Nicoll" "sermon")
+    ("Scofield Reference Notes" "sco")
+    ("Through the Bible Day by Day - Meyer" "ttb")
+    ("Treasury of Scripture Knowledge" "tsk")
+    ("Wesley's Notes" "wes")))
+
+(defun bible-open-commentary ()
+  (interactive)
+  (let* ((tup (bible-mode-get-ref-tuple))
+         (commentary (fz ))
+         (book-lc
+          (-->
+           (downcase (car tup))
+           (s-replace " " "_" it)
+           (s-replace "iii_" "3_" it)
+           (s-replace "ii_" "2_" it)
+           (s-replace "i_" "1_" it)))
+         (chap (str (cadr tup)))
+         (verse (str (caddr tup))))
+
+    (w3m (format "https://biblehub.com/commentaries/%s/%s/%s-%s.htm" book-lc chap verse))))
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
 ;; e:$EMACSD/pen.el/src/pen-completing-read.el

@@ -57,7 +57,8 @@ xterm*utf8: 1
 xterm*termName: xterm-256color
 xterm*scrollTtyOutput: false
 
-xterm*background: #050005
+# xterm*background: #050005
+xterm*background: #111118
 xterm*foreground: #aaaaaa
 *color1:  #ff6565
 *color2:  #93d44f

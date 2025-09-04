@@ -1,4 +1,8 @@
+(require 'prolog-ls)
+(use-package ediprolog)
 (require 'ob-prolog)
+
+(add-hook 'prolog-mode-hook #'lsp)
 
 ;; Also see pen-perl.el
 

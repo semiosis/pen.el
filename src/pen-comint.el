@@ -109,7 +109,7 @@
       (setq-local comint-prompt-regexp
                   (pen-unonelineify-safe prompt-regexp))
       (switch-to-buffer buf)
-      (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
+      (turn-on-comint-history (s-replace " " "-" (concat (f-join pen-nlsh-histdir (ascify slug)) ".log"))))))
 
 (advice-add 'pen-comint-del :around #'shut-up-around-advice)
 ;; (advice-remove 'pen-comint-del #'shut-up-around-advice)

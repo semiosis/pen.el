@@ -25,6 +25,7 @@
                                        "Arch Linux"))
 
 (defun turn-on-comint-history (history-file)
+  ;; (f-touch history-file)
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
 

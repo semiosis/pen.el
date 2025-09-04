@@ -1593,3 +1593,7 @@ autocmd CursorMoved * call LightUpCurrent()
 "autocmd CursorMovedI * call UnLightUpCurrent()
 "autocmd CursorHold * call LightUpCurrent()
 "autocmd CursorHoldI * call LightUpCurrent()
+
+" Kinda like an iedit search and replace on all instances,
+" though, I need to escape some characters
+vnoremap <Leader>zr :<c-u>%s/<c-r>*

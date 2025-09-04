@@ -75,6 +75,11 @@ case "$module" in
     }
     ;;
 
+    rnkjv) {
+        module=RNKJV
+    }
+    ;;
+
     bsb) {
         module=engbsb2020eb
     }

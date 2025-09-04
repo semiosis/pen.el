@@ -42,6 +42,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
             van|vanilla) {
                 export VANILLA=y
+                export NOEMACS=y
+                export NO_NVC=y
             }
             ;;
 

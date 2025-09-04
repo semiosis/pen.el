@@ -581,9 +581,10 @@
                 pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
                 ;; lsp-ui-doc-show
-                pen-lsp-get-hover-docs
                 pen-doc-thing-at-point
+                ;; use prolog help before lsp docs
                 prolog-help-on-predicate
+                pen-lsp-get-hover-docs
                 pen-docs-for-thing-given-screen)
         :docsearch '(pen-doc-ask)
         :godec '(lsp-find-declaration

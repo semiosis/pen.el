@@ -160,6 +160,7 @@
   (sslk "lFr" (dff (e "$NOTES/remember.org")))
   (sslk "lFg" (dff (e "$NOTES/glossary.txt")))
   (sslk "lFt" (dff (e "$NOTES/todo.org")))
+  (sslk "lFj" (dff (e "$NOTES/journal.org")))
   (sslk "lFn" (dff (e "$NOTES/need.org")))
   (sslk "lFf" (dff (e "$NOTES/files.txt")))
   (sslk "lFF" (dff (e "$EMACSD/pen.el/config/filters/filters.sh")))

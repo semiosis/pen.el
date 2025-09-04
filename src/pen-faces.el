@@ -748,13 +748,20 @@ is specified, `:italic' is ignored."
 
     (set-face-background 'font-lock-comment-face nil)
     (set-face-background 'linum nil)
-    (set-face-foreground 'line-number "#444444")
-    (set-face-background 'line-number "#111111")
-    (set-face-foreground 'line-number-current-line "#444444")
-    (set-face-background 'line-number-current-line "#1c1c1c")
 
-    (set-face-foreground 'line-number "#444444")
-    (set-face-background 'line-number "#111111")
+    (require 'display-line-numbers)
+    (require 'hl-line)
+    ;; (set-face-foreground 'line-number "#444444")
+    (set-face-background 'line-number "#111118")
+    (set-face-background 'line-number 'unspecified)
+    (set-face-foreground 'line-number-current-line "#444444")
+    ;; (set-face-background 'line-number-current-line "#1c1c1c")
+    ;; (set-face-background 'line-number-current-line "#111118")
+
+    ;; Same as hl-line
+    ;; (set-face-background 'line-number-current-line "#1c1c1c")
+    (set-face-background 'line-number-current-line (face-background 'hl-line))
+    ;; (set-face-background 'line-number-current-line 'unspecified)
 
     ;; (set-face-background 'org-block-begin-line "#1c1c1c")
     (set-face-background 'org-block-begin-line nil)
@@ -785,9 +792,15 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'w3m-arrived-anchor bg)
     (set-face-background 'w3m-arrived-anchor fg)
 
+    (set-face-background 'w3m-image-anchor "#440000")
+
     (require 'button)
     (set-face-foreground 'button fg)
     (set-face-background 'button bg)
+
+    (require 'hui-em-but)
+    (set-face-foreground 'hbut-face fg)
+    (set-face-background 'hbut-face bg)
 
     (require 'wid-edit)
     (set-face-foreground 'widget-button wfg)
@@ -910,7 +923,12 @@ is specified, `:italic' is ignored."
   (custom-set-faces '(lsp-lsp-flycheck-warning-unnecessary-face ((t (:background "#222222" :foreground nil)))))
 
   (set-face-foreground 'default "#404040")
-  (set-face-background 'default "#151515")
+  ;; (set-face-background 'default "#151515")
+
+  ;; Set the color then set unspecified
+  (set-face-background 'default "#111118")
+  (set-face-background 'default 'unspecified)
+  
   (set-face-foreground 'vertical-border "#222222")
   ;; No fringe color -- like terminal
   (set-face-background 'fringe nil)
@@ -1007,10 +1025,10 @@ Also see option `magit-blame-styles'."
   (set-face-italic 'org-scheduled-previously nil)
   ;; (set-face-inverse-video 'org-scheduled-previously nil)
 
-  (require 'display-line-numbers)
-  (progn
-    (set-face-foreground 'line-number "#262626")
-    (set-face-foreground 'line-number-current-line "#444444"))
+  ;; (require 'display-line-numbers)
+  ;; (progn
+  ;;   (set-face-foreground 'line-number "#262626")
+  ;;   (set-face-foreground 'line-number-current-line "#444444"))
 
   (require 'org-faces)
   (progn
@@ -1040,7 +1058,47 @@ Also see option `magit-blame-styles'."
     (set-face-background 'selectrum-group-title "#d72f4f"))
 
   (set-face-underline 'magit-diff-added-highlight nil)
-  (set-face-underline 'magit-diff-removed-highlight nil))
+  (set-face-underline 'magit-diff-removed-highlight nil)
+
+
+  ;; For comint
+  ;; Eg: [[sps:comint prolog]] . Then do `help(main).`
+  (require 'ansi-color)
+
+  (comment
+   (setq ansi-color-names-vector
+         '["#080808" "#d70000" "#67b11d" "#875f00" "#268bd2" "#af00df" "#00ffff" "#b2b2b2"]
+         ))
+
+  ;; j:pen-set-faces appears to run when the comint is started
+
+  (set-face-attribute 'ansi-color-bright-black nil :background "gray30" :foreground "gray30" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-blue nil :background "blue1" :foreground "blue1" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-cyan nil :background "cyan2" :foreground "cyan2" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-green nil :background "green2" :foreground "green2" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-magenta nil :background "magenta2" :foreground "magenta2" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-red nil :background "red2" :foreground "red2" :height 1.0)
+  ;; (set-face-attribute 'ansi-color-bright-red nil :background "#ff7777" :foreground "#ff7777" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-white nil :background "white" :foreground "white" :height 1.0)
+  (set-face-attribute 'ansi-color-bright-yellow nil :background "yellow2" :foreground "yellow2" :height 1.0)
+  (set-face-attribute 'ansi-color-black nil :background "black" :foreground "black" :height 1.0)
+  ;; (set-face-attribute 'ansi-color-blue nil :background "blue2" :foreground "blue2" :height 1.0)
+  (set-face-attribute 'ansi-color-blue nil :background "#7777ff" :foreground "#7777ff" :height 1.0)
+  ;; (set-face-attribute 'ansi-color-green nil :background "green3" :foreground "green3" :height 1.0)
+  (set-face-attribute 'ansi-color-green nil :background "#77ff77" :foreground "#77ff77" :height 1.0)
+  (set-face-attribute 'ansi-color-bold nil :inherit 'bold :height 1.0)
+  (set-face-attribute 'ansi-color-cyan nil :background "cyan3" :foreground "cyan3" :height 1.0)
+  (set-face-attribute 'ansi-color-faint nil :height 1.0)
+  (set-face-attribute 'ansi-color-fast-blink nil :box '(:line-width -1) :height 1.0)
+  (set-face-attribute 'ansi-color-inverse nil :inverse-video t :height 1.0)
+  (set-face-attribute 'ansi-color-italic nil :inherit 'italic :height 1.0)
+  (set-face-attribute 'ansi-color-magenta nil :background "magenta3" :foreground "magenta3" :height 1.0)
+  ;; (set-face-attribute 'ansi-color-red nil :background "red3" :foreground "red3" :height 1.0)
+  (set-face-attribute 'ansi-color-red nil :background "#ff7777" :foreground "#ff7777" :height 1.0)
+  (set-face-attribute 'ansi-color-slow-blink nil :box '(:line-width -1) :height 1.0)
+  (set-face-attribute 'ansi-color-underline nil :inherit 'underline :height 1.0)
+  (set-face-attribute 'ansi-color-white nil :background "gray90" :foreground "grey90" :height 1.0)
+  (set-face-attribute 'ansi-color-yellow nil :background "yellow3" :foreground "yellow3" :height 1.0))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun pen-set-faces-around-advice (proc &rest args)
@@ -1094,11 +1152,17 @@ Also see option `magit-blame-styles'."
 
 (defun pen-set-text-contrast-from-config ()
   (interactive)
+  (require 'display-line-numbers)
+  (require 'hl-line)
   (let ((state (pen-rc-test-early "text_high_contrast")))
     (if state
         (progn
           (set-face-foreground 'default "#606060")
-          (set-face-background 'default "#000000")
+
+          ;; (set-face-background 'default "#000000")
+          ;; Quite nice
+          ;; (set-face-background 'default "#111118")
+          (set-face-background 'default 'unspecified)
 
           (set-face-background 'lsp-ui-doc-background "#151515")
           (set-face-foreground 'lsp-headerline-breadcrumb-path-face "#606060")
@@ -1108,12 +1172,18 @@ Also see option `magit-blame-styles'."
           ;; (set-face-background 'powerline-inactive0 "#000000")
           ;; (set-face-background 'powerline-inactive1 "#000000")
           ;; (set-face-background 'powerline-inactive2 "#000000")
-          (set-face-background 'line-number "#000000")
+
+          (require 'display-line-numbers)
+          ;; (set-face-background 'line-number "#000000")
           (set-face-background 'window-divider "#000000")
           (set-face-foreground 'window-divider "#000000")
-          (set-face-background 'line-number-current-line "#000000")
+          (set-face-background 'window-divider 'unspecified)
+          (set-face-foreground 'window-divider 'unspecified)
+          ;; (set-face-background 'line-number-current-line "#000000")
           (set-face-background 'vertical-border "#000000")
           (set-face-foreground 'vertical-border "#111111")
+          (set-face-background 'vertical-border 'unspecified)
+          (set-face-foreground 'vertical-border "#222222")
 
           ;; This has not had a noticeable effect yet
           (setq helm-frame-background-color "#000000"))
@@ -1134,9 +1204,20 @@ Also see option `magit-blame-styles'."
         (set-face-background 'vertical-border "#111111")
         (set-face-foreground 'vertical-border "#222222")
 
+        (set-face-background 'line-number "#111118")
+        (set-face-background 'line-number 'unspecified)
+        ;; (set-face-foreground 'line-number-current-line "#444444")
+        ;; (set-face-background 'line-number-current-line "#1c1c1c")
+        ;; (set-face-background 'line-number-current-line "#111118")
+
         ;; This has not had a noticeable effect yet
         (setq helm-frame-background-color "#151515")))
-    state))
+    state)
+
+  (set-face-background 'line-number (face-background 'default))
+  (set-face-background 'line-number 'unspecified)
+  ;; Same as hl-line
+  (set-face-background 'line-number-current-line (face-background 'hl-line)))
 
 (pen-set-faces)
 
@@ -1277,8 +1358,10 @@ Also see option `magit-blame-styles'."
                  do
                  ;; (set-face-foreground 'default 'unspecified fr)
                  ;; (set-face-background 'default 'unspecified fr)
-                 (set-face-foreground 'default "#ffffff" fr)
-                 (set-face-background 'default "#000000" fr))
+                 ;; (set-face-foreground 'default "#ffffff" fr)
+                 ;; (set-face-background 'default "#000000" fr)
+                 ;; (set-face-background 'default "#111118" fr)
+                 (set-face-background 'default 'unspecified fr))
 
         ;; (set-foreground-color 'unspecified)
         ;; (set-background-color 'unspecified)

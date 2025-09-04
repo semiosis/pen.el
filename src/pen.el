@@ -2544,6 +2544,7 @@ May use to generate code from comments."
 (require 'pen-header-line))
 (require 'pen-clojure)
 (require 'pen-cloel)
+(require 'pen-prolog)
 (require 'pen-peertube)
 (require 'pen-cs-notation)
 (require 'pen-deprecated)
@@ -2571,6 +2572,7 @@ May use to generate code from comments."
 (if (inside-docker-p)
 (require 'pen-ov-highlight))
 (require 'pen-racket)
+;; (require 'pen-fennel)
 (if (inside-docker-p)
     (progn
       (require 'pen-activities)

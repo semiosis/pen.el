@@ -293,6 +293,7 @@
 (add-hook 'haskell-mode-hook 'haskell-decl-scan-mode) ;This creates a menu. Access with M-l
 
 (add-to-list 'auto-mode-alist '("\\.asd\\'" . lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.agc\\'" . asm-mode))
 
 (defun c-mode-customizations () (define-key c-mode-map (kbd "C-M-h") nil))
 (add-hook 'c-mode-hook #'c-mode-customizations)
