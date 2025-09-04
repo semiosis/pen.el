@@ -1,0 +1,7 @@
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Heb 12:9" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "1John 3:1" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Job 32:21-22" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Mal 1:6" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Rom 8:14-17" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Matt 7:11" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "1Tim 5:1-2" "#" "<==" "bash"

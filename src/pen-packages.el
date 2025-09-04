@@ -97,12 +97,13 @@ The description is read from the installed package files."
 
   ;; Melpa requires https I think, but the melpa https doesn't seem to work when I'm at the Library
   ;; Maybe I should actually set up a melpa mirror inside Pen.el
-  (let ((package-archives
-         '(("gnu" . "http://elpa.gnu.org/packages/")
-           ("nongnu" . "http://elpa.nongnu.org/nongnu/")
-           ;; ("melpa" . "http://melpa.org/packages/")
-           )))
-    (package-refresh-contents))
+  (comment
+   (let ((package-archives
+          '(("gnu" . "http://elpa.gnu.org/packages/")
+            ("nongnu" . "http://elpa.nongnu.org/nongnu/")
+            ;; ("melpa" . "http://melpa.org/packages/")
+            )))
+     (package-refresh-contents)))
 
   ;; Melpa mirror
   ;; "rsync -avz --delete rsync://melpa.org/packages/ snapshots/"

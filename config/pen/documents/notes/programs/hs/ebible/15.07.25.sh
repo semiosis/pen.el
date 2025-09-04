@@ -1,0 +1,7 @@
+cd /root/notes;  "ebible" "-m" "ESV" "I John 5:18" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "II Corinthians 4" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "II Corinthians 4:13-18" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "II Corinthians 4:13-14" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "Romans 16:25-27" "#" "<==" "Romans"
+cd /root/notes;  "ebible" "-m" "ESV" "I John 1:6" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "II Peter 1:17-20" "#" "<==" "II"

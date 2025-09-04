@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -csv) {
+        csv_output=y
+        shift
+    }
+    ;;
+
+    -xml) {
+        xml_output=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+test -f "/usr/bin/nmap" && : "${bin:="/usr/bin/nmap"}"
+
+test -f "$bin" || agi nmap &>/dev/null
+
+if test "$xml_output" = "y"; then
+    out="$(0</dev/null tf csv)"
+    "$bin" -oX "$out" "$@" &>/dev/null
+    cat "$out" | pavs
+elif test "$csv_output" = "y"; then
+    out="$(0</dev/null tf csv)"
+    "$bin" -oX "$out" "$@" &>/dev/null
+    cat "$out" | nmap-xml2csv | pavd -csv # pa -E "tf csv | xa fpvd"
+else
+    "$bin" "$@"  | pavs
+fi

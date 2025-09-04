@@ -11,14 +11,34 @@ test -f "$bin" || {
     update-rosie &>/dev/null
 }
 
-exec 2>/dev/null
+rosiecmd=("$bin" -f $MYGIT/rosie-pattern-language/rosie/rpl/all.rpl \
+        -f $MYGIT/rosie-pattern-language/rosie/rpl/net.rpl \
+        -f $MYGIT/rosie-pattern-language/rosie/rpl/date.rpl \
+        -f $MYGIT/rosie-pattern-language/rosie/rpl/csv.rpl \
+        -f $MYGIT/rosie-pattern-language/rosie/rpl/json.rpl \
+        "$@")
 
-"$bin" -f $MYGIT/rosie-pattern-language/rosie/rpl/all.rpl \
-    -f $MYGIT/rosie-pattern-language/rosie/rpl/net.rpl \
-    -f $MYGIT/rosie-pattern-language/rosie/rpl/date.rpl \
-    -f $MYGIT/rosie-pattern-language/rosie/rpl/csv.rpl \
-    -f $MYGIT/rosie-pattern-language/rosie/rpl/json.rpl \
-    "$@" | strip-ansi
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if is_tty; then
+    case "$last_arg" in
+        repl) {
+            # TUI
+            nvc -2 rlwrap "${rosiecmd[@]}"
+        }
+        ;;
+
+        *) {
+            "${rosiecmd[@]}" | strip-ansi | pavs
+        }
+        ;;
+    esac
+else
+    exec 2>/dev/null
+    "${rosiecmd[@]}" | strip-ansi "$@"
+fi
 
 # for i in $MYGIT/rosie-pattern-language/rosie/rpl/
 # /usr/local/bin/rosie --libpath $MYGIT/rosie-pattern-language/rosie/rpl "$@"

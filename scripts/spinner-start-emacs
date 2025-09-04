@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+pen-e -D DEFAULT -e-tcp "(spinner-start)"

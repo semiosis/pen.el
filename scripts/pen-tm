@@ -3914,13 +3914,16 @@ case "$f" in
 
     enable-border-status) {
         tmux set -g pane-border-status top
-        tmux set -g pane-active-border-style 'bg=colour234,fg=black'
+        tmux set -g pane-active-border-style 'bg=colour234,fg=colour234'
+        # tmux set -g pane-active-border-style 'bg=colour234,fg=black'
+        # tmux set -g pane-active-border-style 'bg=colour234,fg=default'
 
         # more visible
         # tmux set -g pane-border-style 'bg=black,fg=colour244'
         # tmux set -g pane-active-border-style 'bg=colour234,fg=colour244'
 
-        tmux set -g pane-border-style 'bg=black,fg=colour234'
+        # tmux set -g pane-border-style 'bg=black,fg=colour234'
+        tmux set -g pane-border-style 'bg=default,fg=colour234'
         tmux set -g pane-border-lines double
     }
     ;;

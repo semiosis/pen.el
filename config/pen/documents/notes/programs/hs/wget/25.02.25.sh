@@ -1,0 +1,7 @@
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=n_kTzo5K6nE" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=cLQx5u8ekZ8" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=cLQx5u8ekZ8&t=542" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=eFjFbB4sOkI" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://songsear.ch/song/Ed-Sheeran/I-Believe/4466528" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=TfHZObQV8x4" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Gl-hM4SDgh8" "#" "<==" "pen-ci"

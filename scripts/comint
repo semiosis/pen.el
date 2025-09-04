@@ -40,6 +40,11 @@ else
     CMD="$(cmd-nice-posix "$@")"
 fi
 
+if is_tty && test "$NOEMACS" = y || test -n "$INSIDE_EMACS"; then
+    "$@"
+    exit "$?"
+fi
+
 CMD="$(p "$CMD" | sed -e 's/^rlr /& notty /' -e 's/rlr notty notty/rlr notty/')"
 
 if test -n "$load_hs"; then

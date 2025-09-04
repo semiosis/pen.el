@@ -1,0 +1,5 @@
+cd /tmp;  "curl" "--silent" "--compressed" "--location" "--config" "-" "#" "<==" "emacs"
+cd /tmp;  "curl" "--silent" "--compressed" "--location" "--config" "-" "#" "<==" "emacs"
+cd /tmp;  "curl" "--silent" "--compressed" "--location" "--config" "-" "#" "<==" "emacs"
+cd /tmp;  "curl" "--silent" "--compressed" "--location" "--config" "-" "#" "<==" "emacs"
+cd /tmp;  "curl" "--silent" "--compressed" "--location" "--config" "-" "#" "<==" "emacs"

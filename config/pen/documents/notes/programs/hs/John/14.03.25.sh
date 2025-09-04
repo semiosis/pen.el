@@ -1,0 +1,5 @@
+cd /root/notes;  "John" "14:15-24" "#" "<==" "zsh"
+cd /root/notes;  "John" "3:3-7" "#" "<==" "zsh"
+cd /root/notes;  "John" "5:14" "#" "<==" "zsh"
+cd /root/notes;  "John" "3:3-8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "John" "1:14" "#" "<==" "withopts"

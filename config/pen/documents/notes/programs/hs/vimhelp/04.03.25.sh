@@ -1,0 +1,1 @@
+cd /root/.emacs.d/host/pen.el/src;  "vimhelp" "(defun vimhelp (thing)\\n  ;; (interactive (list (ask (pen-thing-at-point))))\\n  (interactive (list (pen-thing-at-point)))\\n\\n  ;; (sps (cmd \"vimhelp\" thing))\\n  (tpop (cmd \"vimhelp\" thing)))" "#" "<==" "bash"

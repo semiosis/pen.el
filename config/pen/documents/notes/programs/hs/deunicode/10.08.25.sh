@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "deunicode" "#" "<==" "pen-c"

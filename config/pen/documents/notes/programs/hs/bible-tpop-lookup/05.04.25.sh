@@ -1,0 +1,5 @@
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Jer 31:35" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Genesis 1:18" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Ps 19:6" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Jer 31:9" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Luke 13:31-33" "#" "<==" "bash"

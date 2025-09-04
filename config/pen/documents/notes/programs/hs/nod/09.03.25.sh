@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "nod" "John" "3:16-18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Psalm" "34:17-19" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "John" "14:27" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Romans" "10:3" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Romans" "10:1-13" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Romans" "10:1-5" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Romans" "10:6-13" "#" "<==" "zsh"

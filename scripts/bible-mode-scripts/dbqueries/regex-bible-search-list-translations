@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+export TTY
+
+# I really dislike MSG 'translation'.
+# I think it's just wrong to add extra words and meaning that doesn't exist in the original writings
+# "MSG" 
+printf -- "%s\n" "AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "NASB" "UKJV" "WBT" "WEB" "YLT"

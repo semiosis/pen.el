@@ -16,20 +16,25 @@ endfunction
 function! StartCheckSameSearchHighlight(selectkeys, ...)
     " In vim search patterns, to enable \V and \c, you do \V\c
 
-    " This funuction could be improved upon by making vim check to see
-    " if it's inside searched text, then highlight the text. Hard to to
+    " This function could be improved upon by making vim check to see
+    " if it's inside searched text, then highlight the text. Hard to do
     " though. Not sure how.
+
     let oldsearch=@/
+
     "let oldsearch='\V\c'.escape(@/, '\/')
     "normal vit"zy
+
     silent! exe "normal " . a:selectkeys
     silent! exe "normal! \"zy"
+
     "let @/=@z
     "let @/='\V\c'.escape(@z, '\/')
     "first search should be case sensitive, after copy it becomes
     "insesitive
     " then we don't need a mapping like this
     " nmap <silent> <leader>c ;let @/ = substitute(@/,'^\\V\\c','\\V','')<CR>
+
     if a:0 > 0 && a:1
         let @/='\<'.escape(@z, '\/').'\>'
     else

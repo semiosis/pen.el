@@ -1,0 +1,6 @@
+cd /root/notes;  "I" "Timothy" "3:9-13" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "3:1-16" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "6:3-10" "#" "<==" "zsh"
+cd /root/notes;  "I" "Thessalonians" "5:5" "#" "<==" "zsh"
+cd /root/notes;  "I" "Thessalonians" "5:4-5" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "1:5-7" "#" "<==" "zsh"

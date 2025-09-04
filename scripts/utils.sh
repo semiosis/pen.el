@@ -44,16 +44,30 @@ cmd() {
     done | sed 's/ $//'
 }
 
-# bad function name for posix! I think it needs to be cmd_nice_posix to be truly POSIX
-cmd-nice-posix() {
+# cmd-nice-posix is a bad function name for posix! I think it needs to be cmd_nice_posix to be truly POSIX
+cmd_nice_posix() {
     for var in "$@"
     do
         # A grand test of this is that it's idempotent with myeval
-        # myeval cmd-nice-posix "$(cmd-nice "hi ")"
+        # myeval cmd-nice "$(cmd-nice "hi ")"
+
+        # Remember that some chars escape differently
+        # pl "\$"
+        # pl "\)"
+        # It might be too hairy to capture all these rules for the moment
+
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\*\)"/\1\1\\"/g')";
+
+        # TODO Ensure that the first \ to touch the non-" is not doubled?
+        # printf %s "$var"
+        # sadlly, command substitution removes the trailing newlines
+        # printf '"%s" ' "$(printf %s "$var")"
+        # printf '"%s" ' "$(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g')";
 
         IFS= read -rd '' quoted < <(printf %s "$var" | sed 's/\(\\\)\([^"]\|$\)/\1\1\2/g' | sed 's/\(\\*\)"/\1\1\\"/g');typeset -p quoted &>/dev/null
         printf '"%s" ' "$quoted";
-    done | sed 's/ $//'
+        # also escape backticks
+    done | sed "s_\\([\`]\\)_\\\\\\1_g" | sed 's/ $//'
 }
 
 bs() {

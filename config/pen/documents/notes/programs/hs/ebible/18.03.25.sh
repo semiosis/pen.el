@@ -1,0 +1,7 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Ephesians 1:3-6" "#" "<==" "Ephesians"
+cd /root/notes;  "ebible" "-m" "ESV" "II Timothy 1:9" "#" "<==" "II"
+cd /root/notes;  "ebible" "-m" "ESV" "Revelation of John 13:8" "#" "<==" "Revelation"
+cd /root/notes;  "ebible" "-m" "ESV" "John 1:14" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "John 1:13" "#" "<==" "John"
+cd /root/notes;  "ebible" "-m" "ESV" "Acts 7:51" "#" "<==" "Acts"
+cd /root/notes;  "ebible" "-m" "ESV" "Acts 5:32" "#" "<==" "Acts"

@@ -62,7 +62,8 @@ if test "$WGET_AND_OPEN" = "y"; then
     exit $?
 fi
 
-printf -- "%s" "$url" | pen-xc | pen-ns &>/dev/null # can't background this, annoyingly without strange things happening
+# printf -- "%s" "$url" | pen-xc | pen-ns &>/dev/null # can't background this, annoyingly without strange things happening
+# printf -- "%s" "$url" | pen-xc -i &>/dev/null # can't background this, annoyingly without strange things happening
 # ff "https://www.youtube.com/watch?v=KHrbDw0267I" # ... when pen-i do this
 
 if pen-pl "$url" | grep -q -P '\.onion/'; then
@@ -99,6 +100,8 @@ if test -z "$ans"; then
               -ey eww \
               -j eww-js \
               -e eww-ne \
+              -E eww-quick \
+              -I ew3m-quick \
               -h ewc \
               -d elinks-dump \
               -m pen-mirror-site \
@@ -130,6 +133,8 @@ fi
 case "$ans" in
     eww-ne) { eww-ne "$url"; } ;;
     eww-js) { eww-js "$url"; } ;;
+    eww-quick) { eww-quick "$url"; } ;;
+    ew3m-quick) { ew3m-quick "$url"; } ;;
     eww) {
         eww "$url"
     }

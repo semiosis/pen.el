@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Romans 11:28" "#" "<==" "Romans"
+cd /root/notes;  "ebible" "-m" "ESV" "Proverbs 6:16-19" "#" "<==" "Proverbs"
+cd /root/notes;  "ebible" "-m" "ESV" "Genesis 38:7" "#" "<==" "Genesis"
+cd /root/notes;  "ebible" "-m" "ESV" "Genesis 38:7-10" "#" "<==" "Genesis"
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 25:44-46" "#" "<==" "Matthew"
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 7:21-23" "#" "<==" "Matthew"

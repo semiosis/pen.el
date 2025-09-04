@@ -1,0 +1,5 @@
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "onelined" "decorated" "I" "Peter" "5:1-3" "#" "<==" "nod"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"

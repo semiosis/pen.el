@@ -2739,3 +2739,107 @@ travelToSchool :: String -> IO ()\" :no-select-result t :prompt-hist-id nil :inc
 "pen-x" "-sh" "set -xv; pen-emacsclient -t -a '' -s pen-emacsd-1" "-sl" "1" "-c" "g" "-sl" "0.5" "-m" ":" "-sl" "0.5" "-s" "(pen-kill-other-clients t)" "-c" "m" "-i"
 "pen-x" "-sh" "set -xv; pen-emacsclient -t -a '' -s pen-emacsd-1" "-sl" "1" "-c" "g" "-sl" "0.5" "-m" ":" "-sl" "0.5" "-s" "(pen-kill-other-clients t)" "-c" "m" "-i"
 "pen-x" "-sh" "set -xv; pen-emacsclient -t -a '' -s pen-emacsd-1" "-sl" "1" "-c" "g" "-sl" "0.5" "-m" ":" "-sl" "0.5" "-s" "(pen-kill-other-clients t)" "-c" "m" "-i"
+"unbuffer" "pen-emacsclient" "-a" "" "-s" "pen-emacsd-1" "-e" "(pen-eval-for-host \"/tmp/eval-output-pen-emacsd-1-a3a9c592-0adb-11f0-898c-8bfc920670ba.txt\" \"~/.pen/pool/available/pen-emacsd-1\" (pen-list2str-oneliners (pen-batch (mapcar 'identity (pen-force ((do-pen-update nil) (pen-force-engine nil) (max-generated-tokens nil) (force-temperature nil) (force-stop-sequence nil)) (pf-generic-completion-50-tokens/1 \"* TODO Regarding extending endless-sky
+- Understand the map
+  - Understand the campaigns
+  - Understand the factions
+  - Understand the story arcs
+  - Understand the how \\\"hard to accomplish\\\" acquiring items, information and access should be
+    - And the process
+
+It's a cool project.
+
+** Total remake ideas
+- make it work more like a simulation
+  - with various other NPCs navigating the galaxy too
+
+** Not great ideas
+- NPCs could take and try to complete jobs
+
+** I think the crew member system would really help the game
+
+** Improvement ideas
+- ES\" :no-select-result t :prompt-hist-id nil :include-prompt nil :no-gen nil :variadic-var nil :override-prompt nil :inject-gen-start nil))))))"
+"unbuffer" "pen-emacsclient" "-a" "" "-s" "pen-emacsd-1" "-e" "(pen-eval-for-host \"/tmp/eval-output-pen-emacsd-1-08dbc5aa-27e2-11f0-91e0-43e4d01a623b.txt\" \"~/.pen/pool/available/pen-emacsd-1\" (pen-list2str-oneliners (pen-batch (mapcar 'identity (pen-force ((do-pen-update nil) (pen-force-engine nil) (max-generated-tokens nil) (force-temperature nil) (force-stop-sequence nil)) (pf-generic-completion-50-tokens/1 \"test -d \\\"/tmp/log\\\" && : \\\"${logdir:=\\\"/tmp/log\\\"}\\\"
+export logdir
+
+. $PENELD/scripts/utils.sh
+
+: \\\"${log_name:=\\\"DEFAULT\\\"}\\\"
+
+while [ $# -gt 0 ]; do opt=\\\"$1\\\"; case \\\"$opt\\\" in
+    \\\"\\\") { shift; }; ;;
+    -n) {
+        log_name=\\\"$2\\\"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp=\\\"$logdir/$log_name\\\"\" :no-select-result t :prompt-hist-id nil :include-prompt nil :no-gen nil :variadic-var nil :override-prompt nil :inject-gen-start nil))))))"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"
+"bash" "-c" ": >/dev/tcp/8.8.8.8/53"

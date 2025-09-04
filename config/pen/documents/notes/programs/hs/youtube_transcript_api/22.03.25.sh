@@ -1,0 +1,6 @@
+cd /root/notes;  "youtube_transcript_api" "--format" "text" "VXTB%2Dat0enQ" "#" "<==" "pen-ci"
+cd /root/notes;  "youtube_transcript_api" "--format" "text" "DWy%2DrVm%2DAV8" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "youtube_transcript_api" "--format" "text" "06EfTrprsRk&t=568" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "youtube_transcript_api" "--format" "text" "0RPP9D_FWOU&t=1048" "#" "<==" "pen-ci"
+cd /root/notes;  "youtube_transcript_api" "--format" "text" "0RPP9D_FWOU&t=1049" "#" "<==" "pen-ci"
+cd /root/notes;  "youtube_transcript_api" "--format" "text" "0RPP9D_FWOU" "#" "<==" "pen-ci"

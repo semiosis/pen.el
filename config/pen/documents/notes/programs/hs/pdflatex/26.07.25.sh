@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"
+cd /root/.pen/documents/notes/ws/fani;  "pdflatex" "-interaction" "nonstopmode" "-output-directory" "./" "cplint-26.07.25.tex" "#" "<==" "emacs"

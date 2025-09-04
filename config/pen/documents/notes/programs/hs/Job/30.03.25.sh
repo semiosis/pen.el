@@ -1,0 +1,6 @@
+cd /root/notes;  "Job" "7:7-16" "#" "<==" "zsh"
+cd /root/notes;  "Job" "11:7-9" "#" "<==" "zsh"
+cd /root/notes;  "Job" "14:13-14" "#" "<==" "withopts"
+cd /root/notes;  "Job" "21:7-13" "#" "<==" "zsh"
+cd /root/notes;  "Job" "24:19-25" "#" "<==" "zsh"
+cd /root/notes;  "Job" "26:5-7" "#" "<==" "zsh"

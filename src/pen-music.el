@@ -1,3 +1,10 @@
+(defun orthodox ()
+  (interactive)
+
+  ;; What about for emacs, is there some kind of mplayer mode for emacs or something?
+  
+  (sps (cmd "mplayer" "http://radio.myocn.net:8080/;stream/1")))
+
 (defun praise-2hrs ()
   (interactive)
 

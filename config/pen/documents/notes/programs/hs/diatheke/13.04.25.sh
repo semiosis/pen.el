@@ -1,0 +1,8 @@
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1102" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1101" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 4:32" "#" "<==" "in-pen"
+cd /root/.pen/documents/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ephesians 4:33" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 732" "#" "<==" "emacs"

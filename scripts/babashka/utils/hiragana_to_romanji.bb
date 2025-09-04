@@ -48,3 +48,8 @@
 
 (doseq [line (line-seq (clojure.java.io/reader *in*))]
   (println (transform-line line)))
+
+(defn [[replace:(pf-guess-function-name/1 "")]]
+  ""
+  [a b]
+  (* a b))

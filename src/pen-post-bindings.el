@@ -167,6 +167,7 @@
   (sslk "lFe" (dff (e "$NOTES/examples.txt")))
   (sslk "lFW" (dff (e "$NOTES/ws/french/words.txt")))
   (sslk "lFp" (dff (e "$NOTES/perspective.org")))
+  (sslk "lFs" (dff (e "$NOTES/websearch.txt")))
   (sslk "lFk" (dff (e "$NOTES/keep-in-mind.org")))
   (sslk "lFP" (dff (e "$NOTES/prayers.org")))
   ;; (sslk "l3dw" (dff (pen-open-dir "$MYGIT/takaheai/otagoai-website")))

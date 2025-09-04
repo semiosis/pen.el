@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+cat /root/.emacs.d/host/pen.el/config/vt100.ti | vedm "/^\\<C-i>\\<CR>VG\!terminfo-expand\\<CR>"

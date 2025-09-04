@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "nem" "prolog" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "prolog" "#" "<==" "nvim"
+cd /root/.pen/documents/notes;  "nem" "prolog" "--help" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "prolog" "#" "<==" "vt100"
+cd /root/.pen/documents/notes;  "nem" "prolog" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nem" "prolog" "--help" "#" "<==" "zsh"
+cd /root/notes/ws/fani;  "nem" "prolog" "#" "<==" "zsh"
+cd /root/notes/ws/fani;  "nem" "prolog" "--help" "#" "<==" "zsh"

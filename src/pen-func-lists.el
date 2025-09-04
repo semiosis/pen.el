@@ -38,6 +38,8 @@
                           switch-to-org-for-this-file
                           handle-projectfile
                           handle-rename-symbol
+                          magit-patch-save-to-clipboard
+                          magit-patch-apply-from-clipboard
                           magit-log-buffer-file))
 
 (defset comint-mode-funcs '(comint-history-isearch-backward-regexp))
@@ -319,7 +321,8 @@
                          google-this-url-in-this-domain
                          pen-eww-save-image
                          pen-eww-save-image-auto))
-(defset magit-mode-funcs '(magit-eww-releases))
+(defset magit-mode-funcs '(magit-eww-releases
+                           magit-toggle-margin))
 (defset crontab-mode-funcs '(crontab-guru))
 
 (defun org-brain-edit-hist ()

@@ -5,10 +5,10 @@ export TTY
 
 input="$(cat)"
 maxmantlen="$1"
-: "${maxmantlen:="20"}"
+: "${maxmantlen:="15"}"
 
 hash="$(p "$input" | pen-sha)"
-name="$(p "$input" | cut -c1-15)-$hash"
+name="$(p "$input" | cut -c1-$maxmantlen)-$hash"
 strl=$(echo -n "$input" | wc -m)
 if test "$strl" -gt "$maxmantlen"; then
     echo -n "$name"

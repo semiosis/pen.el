@@ -1,0 +1,31 @@
+* 
+** w:emacs
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  pen-e -D pen-emacsd-1 -E-tcp-echo "(sqrt 5)"
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+2.23606797749979
+#+end_src
+
+** w:calc
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  calc -p -f calculate_1.cal
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+2.23606797749978969641
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  calculate_1.cal
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+2.23606797749978969641
+#+end_src

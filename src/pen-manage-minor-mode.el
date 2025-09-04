@@ -77,6 +77,13 @@
         
         (prolog-mode
          (on org-link-minor-mode))
+        
+        (vimrc-mode
+         (on org-link-minor-mode))
+        
+        (vimhelp-mode
+         (off flyspell-mode))
+        
         (clojure-mode
          (on org-link-minor-mode))
         

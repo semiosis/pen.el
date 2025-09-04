@@ -1,0 +1,6 @@
+cd /tmp/td_cr93tbHR;  "rust-script" "/root/.emacs.d/host/pen.el/scripts/rust-scripts/now_a.rs" "#" "<==" "pen-cr"
+cd /tmp/td_cr93tbHR;  "rust-script" "./now_a.rs" "#" "<==" "zsh"
+cd /tmp/td_cr93tbHR;  "rust-script" "./now_a.rs" "#" "<==" "zsh"
+cd /tmp/td_cr93tbHR;  "rust-script" "./now_a.rs" "#" "<==" "zsh"
+cd /tmp/td_cr93tbHR;  "rust-script" "./now_a.rs" "#" "<==" "zsh"
+cd /tmp/td_cr93tbHR;  "rust-script" "./now_a.rs" "#" "<==" "zsh"

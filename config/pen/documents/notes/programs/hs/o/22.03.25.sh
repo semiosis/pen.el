@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://youtu.be/06EfTrprsRk?t=568" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://youtu.be/0RPP9D_FWOU?t=1048" "#" "<==" "o"
+cd /root/notes;  "o" "#" "<==" "zsh"
+cd /root/notes;  "o" "https://youtube.com/watch?v=0RPP9D_FWOU&t=1049" "#" "<==" "o"
+cd /root/notes;  "o" "#" "<==" "zsh"
+cd /root/notes;  "o" "https://www.youtube.com/watch?v=0RPP9D_FWOU" "#" "<==" "o"

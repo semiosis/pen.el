@@ -1,0 +1,6 @@
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "biblegateway-ca"
+cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "biblegateway-ca"

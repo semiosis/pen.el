@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "hsqc" "emacsclient" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "hsqc" "emacsclient" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "hsqc" "emacsclient" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "hsqc" "pen-emacsclient" "# <==" "hsqc"
+cd /root/.pen/documents/notes;  "hsqc" "pen-emacsclient" "# <==" "hsqc"

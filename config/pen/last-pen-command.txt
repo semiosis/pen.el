@@ -1,1 +1,1 @@
-"penf" "-u" "pf-define-word-for-glossary/2" "" "problog"
+penf -u pf-guess-function-name/1 "Multiply two numbers"

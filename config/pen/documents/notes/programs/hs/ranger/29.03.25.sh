@@ -1,0 +1,1 @@
+cd /root;  "ranger" "#" "<==" "zsh"

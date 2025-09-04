@@ -1,0 +1,8 @@
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "John 12:35" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "John 4:34" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Eph 5:16" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Eccl 9:10" "#" "<==" "pen-ci"
+cd /root/notes;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "John 11:9-10" "#" "<==" "pen-ci"

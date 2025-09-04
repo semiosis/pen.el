@@ -1,0 +1,8 @@
+cd /root/notes;  "Leviticus" "15:16-18" "#" "<==" "zsh"
+cd /root/notes;  "Leviticus" "15:32-33" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Leviticus" "15:19-30" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "Leviticus" "15:31" "#" "<==" "withopts"
+cd /root/notes;  "Leviticus" "15:31-33" "#" "<==" "withopts"
+cd /root/notes;  "Leviticus" "15:31-233" "#" "<==" "withopts"
+cd /root/notes;  "Leviticus" "15:31-33" "#" "<==" "withopts"
+cd /root/notes;  "Leviticus" "15:32-33" "#" "<==" "withopts"

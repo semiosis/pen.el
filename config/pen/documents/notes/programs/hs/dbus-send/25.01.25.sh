@@ -1,0 +1,3 @@
+cd /root/.emacs.d/host/pen.el/scripts;  "dbus-send" "--print-reply" "--dest=org.freedesktop.DBus" "/org/freedesktop/DBus" "org.freedesktop.DBus.GetNameOwner" "string:org.gnome.SessionManager" "#" "<==" "xdg-settings"
+cd /root/.emacs.d/host/pen.el/scripts;  "dbus-send" "--print-reply" "--dest=org.freedesktop.DBus" "/org/freedesktop/DBus" "org.freedesktop.DBus.GetNameOwner" "string:org.gnome.SessionManager" "#" "<==" "xdg-mime"
+cd /root/.emacs.d/host/pen.el/scripts;  "dbus-send" "--print-reply" "--dest=org.freedesktop.DBus" "/org/freedesktop/DBus" "org.freedesktop.DBus.GetNameOwner" "string:org.gnome.SessionManager" "#" "<==" "xdg-mime"

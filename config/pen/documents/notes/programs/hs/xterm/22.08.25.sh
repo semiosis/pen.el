@@ -1,0 +1,4 @@
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"
+cd /;  "xterm" "-bg" "#111118" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempMIsdZiI.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#111118" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempWjtAfsr.txt" "#" "<==" "pen-xt"
+cd /root/repos/rosie-pattern-language/rosie/doc;  "xterm" "-rv" "-bg" "#111118" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /root/repos/rosie-pattern-language/rosie/doc; /tmp/nsfa--in-tm-2-pin-root-repos-rosie-pattern-la.sh" "#" "<==" "pen-xt"

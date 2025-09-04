@@ -2744,3 +2744,21 @@ cp -a /root/.fonts/DejaVuSansMono-Bold.ttf /root/.fonts/DejaVuSansMono-Pen.ttf
 # cd "$HOME/.fonts"; ln -sf $PENELD/config/fonts/DejaVuSansMono-Pen.ttf
 # fontforge /root/.fonts/DejaVuSansMono-Pen.ttf
 # fontforge /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd
+
+# Jenkins
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+
+# hexpatch
+# This is a cool program
+# cargo install --git https://github.com/Etto48/HexPatch
+cargo-quickinstall "hex-patch"
+
+e ia mindstream
+
+e ia highlight2clipboard

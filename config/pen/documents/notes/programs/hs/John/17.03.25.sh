@@ -1,0 +1,7 @@
+cd /root/notes;  "John" "16:31-33" "#" "<==" "zsh"
+cd /root/notes;  "John" "17:13-15" "#" "<==" "zsh"
+cd /root/notes;  "John" "8:11" "#" "<==" "zsh"
+cd /root/notes;  "John" "16:26-33" "#" "<==" "zsh"
+cd /root/notes;  "John" "14:21-23" "#" "<==" "zsh"
+cd /root/notes;  "John" "15:12-14" "#" "<==" "zsh"
+cd /root/notes;  "John" "20:22-23" "#" "<==" "zsh"

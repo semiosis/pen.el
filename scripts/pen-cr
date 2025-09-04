@@ -2530,6 +2530,8 @@ case "$file_type" in
     }
     ;;
 
+    #    1)
+    # /root/repos/blippy/neoleo/src/neoleo.1
     [0-9]) {
         troff2man "$rp"
         exit 0

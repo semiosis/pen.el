@@ -1,0 +1,6 @@
+cd /root/notes;  "wget" "-qO-" "https://youtube.com/watch?v=4pZa9I-L5FA&t=56" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=0c676AHa7pw" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Xrgd0P5voj0" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=DchwwYjvdeY" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=Uw-hvBg2J40" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=JyvmAfpM0L8" "#" "<==" "pen-ci"

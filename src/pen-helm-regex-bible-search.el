@@ -14,7 +14,11 @@
   (if (region-active-p)
       (setq init (pen-selected-text)))
 
-  (let ((translations '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV" "MSG" "NASB" "UKJV" "WBT" "WEB" "YLT"))
+  (let ((translations '("AKJV" "AMP" "ASV" "BBE" "BSB" "DBY" "ESV" "GEN" "KJV"
+                        ;; I really dislike MSG 'translation'.
+                        ;; I think it's just wrong to add extra words and meaning that doesn't exist in the original writings
+                        ;; "MSG"
+                        "NASB" "UKJV" "WBT" "WEB" "YLT"))
         (modname (and (or (major-mode-p 'bible-mode)
                           (major-mode-p 'bible-search-mode))
                       (s-upcase (bible-shorten-module-name bible-mode-book-module)))))
@@ -27,6 +31,7 @@
             (fz translations
                 nil nil "pen-helm-regex-bible-search in translation:")))
 
+    ;; TODO Make it so I can include the version in the query
     (helm :sources '(helm-regex-bible-search-source)
 
           :buffer "*helm-regex-bible-search*"

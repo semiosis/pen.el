@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -csv) {
+        is_csv=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$is_csv" = "y"; then
+    pa -E "tf csv | xa fpvd"
+else
+    pa -vd
+fi

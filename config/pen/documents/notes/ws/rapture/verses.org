@@ -1,0 +1,61 @@
+* Verses about rapture and second coming
+Copy our the table at t=18:58.
+But decide for myself which category the verses belong in, if any.
+Read the context for each passage.
+
+https://allennolan.com/sermons?sapurl=LytmZWYyL21lZGlhL21pLytnYjZzcjgzP2JyYW5kaW5nPXRydWUmZW1iZWQ9dHJ1ZSZyZWNlbnRSb3V0ZT1hcHAud2ViLWFwcC5saWJyYXJ5Lmxpc3QmcmVjZW50Um91dGVTbHVnPSUyQmY2OWRjNWE=
+
+There's far more passages than this.
+
+| Rapture               | Second coming       |
+|-----------------------+---------------------|
+| John 14:1-3           | Daniel 2:44-45      |
+| I Cor 15:1-53         | Daniel 7:9-14       |
+| I Thes 4:13-18        | Daniel 12:1-3       |
+| Romans 8:19           | Zech 14:1-15        |
+| I Cor 1:7-8; 15:21-23 | Matt 13:41          |
+| Phil 3:20-21          | Matt 24:15-31       |
+| Col 3:4               | Matt 26:64          |
+| I Thes 1:10           | Mark 13:14-27       |
+| I Thes 2:19           | Mark 14:62          |
+| I Thes 4:9-10,23      | Luke 21:25-28       |
+| II Thes 2:1,3         | Acts 1:9-11         |
+| I Tim 6:14            | Acts 3:19-21        |
+| Heb 9:28              | I Thes 3:13         |
+| James 5:7-9           | II Thes 1:6-10; 2:8 |
+| I Peter 1:7,13        | II Peter 3:1-14     |
+| I John 2:28-3:2       | Jude 14-15          |
+| Jude 21               | Rev 1:7             |
+| Rev 2:25              | Rev 19:11-20:6      |
+| Rev 3:10              | Rev 22:7,12,20      |
+
+#+BEGIN_QUOTE
+  *Revelation of John 16:15* - (Behold, I am coming like a thief! Blessed is the one who stays awake, keeping his garments on, that he may not go about naked and be seen exposed!) (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Matthew 24:44* - Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1223       3778     2532   4771     1096       2092       3754
+  dia        touto    kai    hymeis   ginesthe   hetoimoi   hoti
+  διὰ        τοῦτο    καὶ  , ὑμεῖς    γίνεσθε    ἕτοιμοι  , ὅτι
+  Because of this     also   you      be         ready      for
+  Prep       DPro-ANS Conj   PPro-N2P V-PMM/P-2P Adj-NMP    Conj
+
+  3739       3756 1380       5610   3588    5207  3588    444       2064
+  hē         ou   dokeite    hōra   ho      Huios tou     anthrōpou erchetai
+  ᾗ          οὐ   δοκεῖτε    ὥρᾳ  , ὁ       Υἱὸς  τοῦ     ἀνθρώπου  ἔρχεται  .
+  in that    not  you expect hour   the     Son    -      of Man    comes
+  RelPro-DFS Adv  V-PIA-2P   N-DFS  Art-NMS N-NMS Art-GMS N-GMS     V-PIM/P-3S
+#+END_SRC
+
+** 
+OK, so he said that when the rapture comes, it will be like a thief in the night.
+What passage is that?
+
+#+BEGIN_QUOTE
+  *II Peter 3:10* - But the day of the Lord will come like a thief, and then the heavens will pass away with a roar, and the heavenly bodies will be burned up and dissolved, and the earth and the works that are done on it will be exposed. (ESV)
+#+END_QUOTE
+

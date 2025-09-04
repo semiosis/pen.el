@@ -20,9 +20,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         varname="$(p "$varname" | sed -e 's/\(.*\)/\L\1/')"                                # lowercase
         varname="$(p "$varname" | pen-fuzzify-regex -s)"                                       # let params match fields with spaces
 
+        (
         cat "$fp" | ptw replace-substring -i -m "<$varname>" -r "$contents" | sponge "$fp" # perform variable replacement
         cat "$fp" | sed 's/\(\b1 [a-zA-Z]\+\)s\b/\1/g' | pen-sponge "$fp"                      # fix singular plural
         cat "$fp" | sed 's/""/"/g' | pen-sponge "$fp"                                          # fix CSV double quote
+        ) &>/dev/null
     }
     ;;
 

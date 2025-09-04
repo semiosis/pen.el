@@ -35,3 +35,4 @@
 ^prayers\.org$
 ^evangelism\.org$
 ^links\.org$
+^websearch\.txt$

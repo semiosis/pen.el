@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nod" "I" "Cor" "8:4-6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "I" "Cor" "10:20" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Acts" "2:42" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Acts" "2:38" "#" "<==" "zsh"
+cd /root/notes;  "nod" "John" "15:20" "#" "<==" "zsh"
+cd /root/notes;  "nod" "John" "15:13-14" "#" "<==" "zsh"

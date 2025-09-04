@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "onelined" "decorated" "John" "15:10" "#" "<==" "nod"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "onelined" "decorated" "Lamentations" "3:29" "#" "<==" "nod"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "1Sam 12:14-15" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Zeph 3:5" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "nem" "nbd" "fast" "ebible" "-c" "-m" "engbsb2020eb" "Jer 12:1" "#" "<==" "pen-ci"

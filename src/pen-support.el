@@ -131,7 +131,16 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 
 (defun pen-log (&rest ss)
   (let ((ret (s-join ", " (mapcar 'str ss))))
-    (pen-message-no-echo "%s\\n" ret))
+    (pen-message-no-echo "%s\n" ret))
+
+  ;; This is for backwards compatibility
+  (car ss)
+  ;; ret
+  )
+
+(defun pen-log-echo (&rest ss)
+  (let ((ret (s-join ", " (mapcar 'str ss))))
+    (message "%s\n" ret))
 
   ;; This is for backwards compatibility
   (car ss)

@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+URL="$@"
+
+emacsclient -a '' -t -s DEFAULT -e "(w3m $(cmd-nice-posix "$URL"))"

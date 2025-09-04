@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "James" "2:9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "4:16-17" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "4:13-15" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "2:8-13" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "3:1-4" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "James" "2" "#" "<==" "zsh"

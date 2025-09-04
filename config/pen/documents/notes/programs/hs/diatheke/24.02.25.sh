@@ -1,0 +1,8 @@
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 863" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 838" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Ezekiel 36:16-29" "#" "<==" "in-pen"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-s" "phrase" "-o" "w" "-f" "plain" "-k" "Adam" "#" "<==" "emacs"
+cd /root/notes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 2:20;Genesis 3:17;Genesis 3:21;Genesis 4:1;Genesis 4:25;Genesis 5:1;Genesis 5:3;Genesis 5:4;Genesis 5:5;Joshua 3:16;Joshua 19:33;Joshua 19:36;I Chronicles 1:1;Hosea 6:7;Luke 3:28;Luke 3:38;Romans 5:14;I Corinthians 15:22;I Corinthians 15:45;I Timothy 2:13;I Timothy 2:14;Jude 1:14;" "#" "<==" "emacs"

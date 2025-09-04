@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "nod" "kjv" "Philippians" "2:12" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "John" "1:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Leviticus" "15:19-30" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Leviticus" "15:31" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Leviticus" "15:31-33" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Leviticus" "15:31-233" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Leviticus" "15:31-33" "#" "<==" "zsh"
+cd /root/notes;  "nod" "Leviticus" "15:32-33" "#" "<==" "zsh"

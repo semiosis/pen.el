@@ -1,0 +1,8 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ebible" "-m" "ESV" "John 7:37-39" "#" "<==" "John"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Genesis 41:38" "#" "<==" "Genesis"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Job 32:8" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Num 27:18" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Dan 5:14" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Dan 5:11" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Dan 4:18" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "ebible" "-c" "-m" "engbsb2020eb" "Dan 4:6" "#" "<==" "withopts"

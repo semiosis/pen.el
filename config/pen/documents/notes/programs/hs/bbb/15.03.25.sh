@@ -1,0 +1,6 @@
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "go" "#" "<==" "regex-bible-sea"
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "good" "#" "<==" "regex-bible-sea"
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "good " "#" "<==" "regex-bible-sea"
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "good de" "#" "<==" "regex-bible-sea"
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "good dee" "#" "<==" "regex-bible-sea"
+cd /root/notes;  "bbb" "/tmp/pen-scripts/babashka/utils/bible_regex_search.bb" "ESV" "good deeds" "#" "<==" "regex-bible-sea"

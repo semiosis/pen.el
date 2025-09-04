@@ -1006,6 +1006,14 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (cua-set-mark)
   (end-of-line))
 
+(defun spinner-start-tcp ()
+  (interactive)
+  (pen-snc "spinner-start-emacs &"))
+
+(defun spinner-stop-tcp ()
+  (interactive)
+  (pen-snc "spinner-stop-emacs &"))
+
 ;; I disabled this because it's annoying in lein repl
 (defun spinner-start-around-advice (proc &rest args)
   (if (not (display-graphic-p))

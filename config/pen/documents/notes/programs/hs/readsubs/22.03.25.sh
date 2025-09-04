@@ -1,0 +1,6 @@
+cd /root/notes;  "readsubs" "https://www.youtube.com/watch?v=VXTB-at0enQ" "#" "<==" "pen-ci"
+cd /root/notes;  "readsubs" "https://www.youtube.com/watch?v=DWy-rVm-AV8" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://youtu.be/06EfTrprsRk?t=568" "#" "<==" "pen-ci"
+cd /root/.pen/documents/notes;  "readsubs" "https://youtu.be/0RPP9D_FWOU?t=1048" "#" "<==" "pen-ci"
+cd /root/notes;  "readsubs" "https://youtube.com/watch?v=0RPP9D_FWOU&t=1049" "#" "<==" "pen-ci"
+cd /root/notes;  "readsubs" "https://www.youtube.com/watch?v=0RPP9D_FWOU" "#" "<==" "pen-ci"

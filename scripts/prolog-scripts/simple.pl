@@ -11,3 +11,7 @@ echo([Last]) :- !,
 echo([H|T]) :-
     write(H), write(' '),
     echo(T).
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32ec0d246 (Sep 5 2025)

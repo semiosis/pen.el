@@ -1,0 +1,5 @@
+cd /root/notes;  "II" "Timothy" "3:1-8" "#" "<==" "zsh"
+cd /root/notes;  "II" "Peter" "3:10" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "4:16" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "4:16" "#" "<==" "zsh"
+cd /root/notes;  "II" "Corinthians" "6:14-18" "#" "<==" "zsh"

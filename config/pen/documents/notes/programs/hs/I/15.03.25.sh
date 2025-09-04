@@ -1,0 +1,8 @@
+cd /root/notes;  "I" "Corinthians" "9:9-11" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Timothy" "21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Timothy" "2:1-6" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Timothy" "2:8-9" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "I" "Timothy" "2:8-10" "#" "<==" "zsh"
+cd /root/notes;  "I" "Timothy" "2:5" "#" "<==" "withopts"
+cd /root/notes;  "I" "Timothy" "2:4" "#" "<==" "withopts"
+cd /root/notes;  "I" "Corinthians" "8:2" "#" "<==" "zsh"

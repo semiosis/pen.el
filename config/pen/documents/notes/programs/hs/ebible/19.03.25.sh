@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Luke 18:8" "#" "<==" "Luke"
+cd /root/notes;  "ebible" "-m" "ESV" "1 Corinthians 8:4" "#" "<==" "1"
+cd /root/notes;  "ebible" "-m" "ESV" "Psalms 96:5" "#" "<==" "Psalms"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Jonah 2:5" "#" "<==" "Jonah"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Jonah 2:4" "#" "<==" "Jonah"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "Jonah 2:8-9" "#" "<==" "Jonah"

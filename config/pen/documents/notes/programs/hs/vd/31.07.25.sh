@@ -1,0 +1,8 @@
+cd /root/.pen/documents/notes;  "vd" "scp://agia/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "sftp://agia/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "sftp://agia/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "sftp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/notes;  "vd" "sftp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "scp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "scp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"
+cd /root/.pen/documents/notes;  "vd" "scp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" "/root/.pen/documents/README.org" "#" "<==" "vd"

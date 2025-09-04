@@ -34,6 +34,26 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # Run E-tcp but echo the final output to the shell
+    -E-tcp-echo) {
+        E_TCP_CMD="$2"
+
+        export EVAL_DO_STDOUT=y
+        mkdir -p "/tmp/pen-e-echo"
+        rm -f "/tmp/pen-e-echo/stdout.txt"
+
+        IFS= read -r -d '' elcode <<HEREDOC
+        (let* ((output_fp "")
+               (result $E_TCP_CMD))
+               (write-to-file (pps result) "/tmp/pen-e-echo/stdout.txt"))
+HEREDOC
+        E_TCP_CMD="$elcode"
+
+        shift
+        shift
+    }
+    ;;
+
     -e-tcp) {
         shift
         # E_TCP_CMD="$(cmd-nice-posix "$@")"
@@ -51,6 +71,14 @@ if test -n "$E_TCP_CMD"; then
     if test -f "/root/.pen/emacs-tcp-server-ports/${SOCKET}"; then
         port="$(cat "/root/.pen/emacs-tcp-server-ports/${SOCKET}")"
         "pen-tcp-server" "$port" "$E_TCP_CMD"
+    fi
+    if test "$EVAL_DO_STDOUT" = "y"; then
+        # I wish I didn't need this sleep, but inotifywait is quitting too early
+        # test:
+        # pen-e -D DEFAULT -E-tcp-echo "(pen-format-search-spec google-search-url-spec \"prolog consult\")"
+        sleep 0.1
+        inotifywait -e create,moved_to,attrib -qq /tmp/pen-e-echo
+        cat "/tmp/pen-e-echo/stdout.txt"
     fi
     exit "$?"
 fi
@@ -984,6 +1012,7 @@ case "$f" in
     ;;
 
     running) { # test running
+        # : "${SOCKET:="DEFAULT"}"
         if [ -n "$SOCKET" ]; then
             running_matching_workers="$(ps -ef |grep "emacs --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
             test -n "$running_matching_workers"

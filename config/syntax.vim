@@ -982,13 +982,13 @@ fun! GeneralSyntax()
         syntax match discrete "\<pick\( [a-f0-9]\{7\}\)\@=\>"
         syntax match reallyBad "\<work\( [a-f0-9]\{7\}\)\@=\>"
         syntax match discrete "\<onto\( [a-f0-9]\{7\}\)\@=\>"
-        hi closesyntax cterm=NONE ctermfg=065 ctermbg=000
+        hi closesyntax cterm=NONE ctermfg=065 ctermbg=NONE
         syntax match closesyntax "\<end\(ing\)\@![a-z]\+\>"
         syntax match closesyntax "End [A-Z][a-z]\+"
         hi api cterm=NONE ctermfg=112 ctermbg=238
         syntax match api "\c\<\(rest\|graphql\|api\)\>"
         syntax match emacstmuxkey "\(\<MapM \w\+\)\@<=\( \w\)\+"
-        hi devnull cterm=NONE ctermfg=124 ctermbg=000
+        hi devnull cterm=NONE ctermfg=124 ctermbg=NONE
         syntax match devnull "\/dev\/null"
         syntax match toby "\c\<github\>"
         syntax match codekeywords "[a-z0-9]\@<=_t\>"

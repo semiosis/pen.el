@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 757" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Jeremiah 12:14-17" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "diatheke" "-b" "system" "-o" "w" "-f" "internal" "-k" "modulelist" "#" "<==" "emacs"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "diatheke" "-b" "engbsb2020eb" "-o" "w" "-f" "internal" "-k" "Ps 119:75" "#" "<==" "in-pen"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Psalms 119:75" "#" "<==" "in-pen"

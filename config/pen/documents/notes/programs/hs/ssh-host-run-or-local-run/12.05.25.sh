@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/ws/problog;  "ssh-host-run-or-local-run" "chrome" "/volumes/home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/learning/01_bayes.html" "#" "<==" "tclsh8.6"

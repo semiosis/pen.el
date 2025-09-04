@@ -1,0 +1,7 @@
+cd /root/notes;  "ebible" "-m" "ESV" "I Corinthians 5:7" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "Luke 6:46" "#" "<==" "Luke"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Corinthians 4:5" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Corinthians 4:5" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Corinthians 4:14-16" "#" "<==" "I"
+cd /root/.pen/documents/notes;  "ebible" "-m" "ESV" "I Corinthians 4:14-17" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 12:36-37" "#" "<==" "Matthew"

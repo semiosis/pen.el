@@ -1,0 +1,1409 @@
+HTTP/1.1 200 OK
+Date: Sat, 22 Mar 2025 04:37:27 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept-Encoding
+link: <https://christoverall.com/wp-json/>; rel="https://api.w.org/", <https://christoverall.com/wp-json/wp/v2/posts/7261>; rel="alternate"; title="JSON"; type="application/json", <https://christoverall.com/?p=7261>; rel=shortlink
+Cache-Control: public, max-age=0, s-maxage=2592000
+Last-Modified: Sat, 22 Mar 2025 04:29:47 GMT
+CF-Cache-Status: HIT
+Age: 459
+Server: cloudflare
+CF-RAY: 9242fe6e4d3cd9b8-AKL
+alt-svc: h3=":443"; ma=86400
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Penal Substitution and Other Atonement Theologies - Christ Over All</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="description" content="What did Jesus accomplish on the cross? While theories on the atonement abound, only penal substitutionary atonement grasps humanity&#039;s central problem: our sin before a holy God.">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://christoverall.com/article/concise/penal-substitution-and-other-atonement-theologies/">
+<meta property="og:url" content="https://christoverall.com/article/concise/penal-substitution-and-other-atonement-theologies/">
+<meta property="og:site_name" content="Christ Over All">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Penal Substitution and Other Atonement Theologies - Christ Over All">
+<meta property="og:description" content="What did Jesus accomplish on the cross? While theories on the atonement abound, only penal substitutionary atonement grasps humanity&#039;s central problem: our sin before a holy God.">
+<meta property="og:image" content="https://christoverall.com/wp-content/uploads/2023/04/cdoncel-3cHmnTxXSbU-unsplash-scaled.jpg">
+<meta property="og:image:secure_url" content="https://christoverall.com/wp-content/uploads/2023/04/cdoncel-3cHmnTxXSbU-unsplash-scaled.jpg">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1707">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Penal Substitution and Other Atonement Theologies - Christ Over All">
+<meta name="twitter:description" content="What did Jesus accomplish on the cross? While theories on the atonement abound, only penal substitutionary atonement grasps humanity&#039;s central problem: our sin before a holy God.">
+<meta name="twitter:image" content="https://christoverall.com/wp-content/uploads/2023/04/cdoncel-3cHmnTxXSbU-unsplash-1024x683.jpg">
+<link rel='dns-prefetch' href='//static.esvmedia.org' />
+<link rel="alternate" type="application/rss+xml" title="Christ Over All &raquo; Feed" href="https://christoverall.com/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/christoverall.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" type="text/css" href="https://use.typekit.net/yil8sxs.css"><style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://christoverall.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='plus-pre-loader-css-css' href='//christoverall.com/wp-content/plugins/theplus_elementor_addon/assets/css/main/pre-loader/plus-pre-loader.min.css?ver=5.1.3' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://christoverall.com/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://christoverall.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_child-css' href='https://christoverall.com/wp-content/themes/hello-elementor-child/style.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://christoverall.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://christoverall.com/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1732191567' media='all' />
+<style id='elementor-frontend-inline-css'>
+.elementor-679 .elementor-element.elementor-element-3372994a:not(.elementor-motion-effects-element-type-background), .elementor-679 .elementor-element.elementor-element-3372994a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://christoverall.com/wp-content/uploads/2023/04/cdoncel-3cHmnTxXSbU-unsplash-scaled.jpg");}
+</style>
+<link rel='stylesheet' id='elementor-post-5-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-5.css?ver=1732191567' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='widget-post-info-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://christoverall.com/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1732191567' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='widget-share-buttons-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://christoverall.com/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1732191567' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='widget-author-box-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/widget-author-box.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.32.0' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='powerpack-frontend-css' href='https://christoverall.com/wp-content/plugins/powerpack-elements/assets/css/min/frontend.min.css?ver=2.10.11' media='all' />
+<link rel='stylesheet' id='e-popup-style-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='elementor-post-400-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-400.css?ver=1732191567' media='all' />
+<link rel='stylesheet' id='elementor-post-1433-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-1433.css?ver=1732191568' media='all' />
+<link rel='stylesheet' id='elementor-post-679-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-679.css?ver=1734974308' media='all' />
+<script id="jquery-core-js-extra">
+var pp = {"ajax_url":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://christoverall.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://christoverall.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="//christoverall.com/wp-content/plugins/theplus_elementor_addon/assets/js/main/pre-loader/plus-pre-loader-extra-transition.min.js?ver=5.1.3" id="plus-pre-loader-js2-js"></script>
+<script src="//christoverall.com/wp-content/plugins/theplus_elementor_addon/assets/js/main/pre-loader/plus-pre-loader.min.js?ver=5.1.3" id="plus-pre-loader-js-js"></script>
+<link rel="https://api.w.org/" href="https://christoverall.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://christoverall.com/wp-json/wp/v2/posts/7261" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://christoverall.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<link rel='shortlink' href='https://christoverall.com/?p=7261' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://christoverall.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchristoverall.com%2Farticle%2Fconcise%2Fpenal-substitution-and-other-atonement-theologies%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://christoverall.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchristoverall.com%2Farticle%2Fconcise%2Fpenal-substitution-and-other-atonement-theologies%2F&#038;format=xml" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELDF23SBDD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ELDF23SBDD');
+		</script>
+
+	<script type="text/javascript">//<![CDATA[
+  function external_links_in_new_windows_loop() {
+    if (!document.links) {
+      document.links = document.getElementsByTagName('a');
+    }
+    var change_link = false;
+    var force = '';
+    var ignore = '';
+
+    for (var t=0; t<document.links.length; t++) {
+      var all_links = document.links[t];
+      change_link = false;
+      
+      if(document.links[t].hasAttribute('onClick') == false) {
+        // forced if the address starts with http (or also https), but does not link to the current domain
+        if(all_links.href.search(/^http/) != -1 && all_links.href.search('christoverall.com') == -1 && all_links.href.search(/^#/) == -1) {
+          // console.log('Changed ' + all_links.href);
+          change_link = true;
+        }
+          
+        if(force != '' && all_links.href.search(force) != -1) {
+          // forced
+          // console.log('force ' + all_links.href);
+          change_link = true;
+        }
+        
+        if(ignore != '' && all_links.href.search(ignore) != -1) {
+          // console.log('ignore ' + all_links.href);
+          // ignored
+          change_link = false;
+        }
+
+        if(change_link == true) {
+          // console.log('Changed ' + all_links.href);
+          document.links[t].setAttribute('onClick', 'javascript:window.open(\'' + all_links.href.replace(/'/g, '') + '\', \'_blank\', \'noopener\'); return false;');
+          document.links[t].removeAttribute('target');
+        }
+      }
+    }
+  }
+  
+  // Load
+  function external_links_in_new_windows_load(func)
+  {  
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function'){
+      window.onload = func;
+    } else {
+      window.onload = function(){
+        oldonload();
+        func();
+      }
+    }
+  }
+
+  external_links_in_new_windows_load(external_links_in_new_windows_loop);
+  //]]></script>
+
+<meta name="generator" content="Elementor 3.25.9; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-disabled, font_display-auto">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://christoverall.com/wp-content/uploads/2022/07/cropped-COA-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://christoverall.com/wp-content/uploads/2022/07/cropped-COA-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://christoverall.com/wp-content/uploads/2022/07/cropped-COA-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://christoverall.com/wp-content/uploads/2022/07/cropped-COA-favicon-270x270.png" />
+		<style id="wp-custom-css">
+			#article-column h3 {
+  margin-top: 45px;
+  font-family: "Grifito M Medium", Sans-serif;
+  font-size: 2.2em;
+  line-height: 0.85em;
+}
+
+
+.elementor-kit-5 h4 {
+  font-family: "acumin-pro-extra-condensed", Sans-serif;
+  font-size: 1.8em;
+  line-height: 1em;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.elementor-kit-5 h5 {
+  font-family: "Grifito M Medium", Sans-serif;
+  font-size: 1.5em;
+  text-transform: unset;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+#article-column h2 {
+    margin-top: 60px;
+    text-align: Left;
+}		</style>
+		</head>
+<body class="post-template-default single single-post postid-7261 single-format-standard elementor-default elementor-template-full-width elementor-kit-5 elementor-page-679">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header data-elementor-type="header" data-elementor-id="400" class="elementor elementor-400 elementor-location-header" data-elementor-post-type="elementor_library">
+					<header class="elementor-section elementor-top-section elementor-element elementor-element-0dc9b45 elementor-section-content-middle sticky-header elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0dc9b45" data-element_type="section" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:90,&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6be40f8" data-id="6be40f8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-55b4888 logo elementor-absolute elementor-widget elementor-widget-image" data-id="55b4888" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://christoverall.com">
+							<img width="175" height="218" src="https://christoverall.com/wp-content/uploads/2022/07/Christ-Over-All-logo-ribbon.svg" class="attachment-full size-full wp-image-19" alt="" />								</a>
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-6bf7e4e logo-ribbon elementor-absolute elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="6bf7e4e" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://christoverall.com">
+							<img width="100" height="221" src="https://christoverall.com/wp-content/uploads/2022/09/coa-vertical-ribbon.svg" class="attachment-full size-full wp-image-1356" alt="" />								</a>
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-1afd753 elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="1afd753" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+		<link id='uc_ac_assets_file_uc_creative_buttons_css_1983-css' href='https://christoverall.com/wp-content/uploads/ac_assets/uc_creative_buttons/uc_creative_buttons.css' type='text/css' rel='stylesheet' >
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_1afd753.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_1afd753.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_1afd753.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_1afd753.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_1afd753">
+  <div class="container">
+    <a href="https://christoverall.com/themes/" class="uc_button button-padding uc_btn-1" ><span>Themes</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-57aa55b elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="57aa55b" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_57aa55b.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_57aa55b.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_57aa55b.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_57aa55b.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_57aa55b">
+  <div class="container">
+    <a href="https://christoverall.com/articles/" class="uc_button button-padding uc_btn-1" ><span>Articles</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-5855ad2 elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="5855ad2" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_5855ad2.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_5855ad2.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_5855ad2.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_5855ad2.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_5855ad2">
+  <div class="container">
+    <a href="https://christoverall.com/podcast/" class="uc_button button-padding uc_btn-1" ><span>Podcast</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-e047e3c elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="e047e3c" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_e047e3c.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_e047e3c.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_e047e3c.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_e047e3c.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_e047e3c">
+  <div class="container">
+    <a href="https://christoverall.com/about/" class="uc_button button-padding uc_btn-1" ><span>About</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-18a43d3 elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="18a43d3" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_18a43d3.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_18a43d3.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_18a43d3.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_18a43d3.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_18a43d3">
+  <div class="container">
+    <a href="https://christoverall.com/give/" class="uc_button button-padding uc_btn-1" ><span>Give</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-54f6525 elementor-widget__width-auto elementor-widget elementor-widget-ucaddon_creative_buttons" data-id="54f6525" data-element_type="widget" data-widget_type="ucaddon_creative_buttons.default">
+				<div class="elementor-widget-container">
+			<!-- start Creative Button Hovers -->
+
+			<style type="text/css">/* widget: Creative Button Hovers */
+
+#uc_creative_buttons_elementor_54f6525.uc_creative_buttons{
+  text-align: center;
+}
+#uc_creative_buttons_elementor_54f6525.uc_creative_buttons .uc_button,
+#uc_creative_buttons_elementor_54f6525.uc_creative_buttons .uc_button::after {
+	transition: all 0.4s;
+}
+
+#uc_creative_buttons_elementor_54f6525.uc_creative_buttons .uc_button {
+
+
+  display: inline-block;
+  overflow:hidden;
+}
+
+</style>
+
+			<div class="uc_creative_buttons" id="uc_creative_buttons_elementor_54f6525">
+  <div class="container">
+    <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjYyMiIsInRvZ2dsZSI6ZmFsc2V9" class="uc_button button-padding uc_btn-1" ><span>Menu</span></a>
+  </div>
+</div>
+			<!-- end Creative Button Hovers -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-c1f9b5a elementor-view-stacked elementor-widget__width-auto elementor-hidden-mobile elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c1f9b5a" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="https://christoverall.com/search/">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><style type="text/css">	.st0{fill:#FFFFFF;}</style><path class="st0" d="M44.6,42.6L33.9,32.2c4.9-5.8,4.5-14.6-0.8-20c-2.8-2.8-6.5-4.3-10.4-4.3c-3.9,0-7.6,1.5-10.4,4.3  c-5.7,5.8-5.7,15.1,0,20.9c2.8,2.8,6.5,4.3,10.4,4.3c3.3,0,6.6-1.1,9.2-3.2l10.8,10.5c0.3,0.3,0.6,0.4,1,0.4c0.4,0,0.7-0.2,1-0.4  c0.3-0.3,0.4-0.6,0.4-1S44.9,42.9,44.6,42.6z M31.1,31.1c-2.2,2.3-5.2,3.5-8.4,3.5c-3.2,0-6.2-1.2-8.4-3.5c-4.6-4.7-4.6-12.2,0-16.9  c2.2-2.3,5.2-3.5,8.4-3.5c3.2,0,6.2,1.2,8.4,3.5C35.7,18.9,35.7,26.5,31.1,31.1z"></path></svg>			</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</header>
+				</header>
+				<div data-elementor-type="single-post" data-elementor-id="679" class="elementor elementor-679 elementor-location-single post-7261 post type-post status-publish format-standard has-post-thumbnail hentry category-april-2023 category-article category-concise category-theme tag-athanasius tag-atonement tag-christus-victor tag-covenant-representative tag-doctrine-of-god tag-governmental-view tag-historical-theology tag-irenaeus tag-jesus-christ tag-moral-influence tag-penal-substitutionary-atonement tag-peter-abelard tag-ransom tag-recapitulation tag-the-cross" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-3372994a elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-bottom elementor-section-boxed elementor-section-height-default elementor-invisible" data-id="3372994a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9a7c9bd" data-id="9a7c9bd" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-45905849" data-id="45905849" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-67c0d15 post-info elementor-widget elementor-widget-post-info" data-id="67c0d15" data-element_type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-77035b5 elementor-inline-item">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-custom">
+										The Good News: Meditations on Christ’s Death and Resurrection					</span>
+								</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-a20a20a elementor-inline-item" itemprop="datePublished">
+						<a href="https://christoverall.com/2023/04/07/">
+														<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+										<time>Apr 2023</time>					</span>
+									</a>
+				</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-92afbee elementor-inline-item">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-custom">
+										Concise					</span>
+								</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-a2b2621 elementor-inline-item" itemprop="datePublished">
+						<a href="https://christoverall.com/2023/04/07/">
+														<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+										<time>4.07.2023</time>					</span>
+									</a>
+				</li>
+				</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-288d986 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="288d986" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fa388c9 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="fa388c9" data-element_type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Penal Substitution and Other Atonement Theologies</h1>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-35939120 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="35939120" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1b1c898e elementor-hidden-mobile" data-id="1b1c898e" data-element_type="column" id="left-column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<link id='font-awesome-css' href='https://christoverall.com/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome5/css/fontawesome-all.min.css' type='text/css' rel='stylesheet' ><!-- hidden widget --><!-- hidden widget -->		<div class="elementor-element elementor-element-013e0ce elementor-share-buttons--view-icon elementor-share-buttons--shape-circle elementor-share-buttons--align-center elementor-share-buttons--skin-gradient elementor-grid-0 elementor-share-buttons--color-official elementor-widget elementor-widget-share-buttons" data-id="013e0ce" data-element_type="widget" data-widget_type="share-buttons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-grid">
+								<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_email"
+							role="button"
+							tabindex="0"
+							aria-label="Share on email"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fas fa-envelope" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_facebook"
+							role="button"
+							tabindex="0"
+							aria-label="Share on facebook"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fab fa-facebook" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_x-twitter"
+							role="button"
+							tabindex="0"
+							aria-label="Share on x-twitter"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fab fa-x-twitter" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+						</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-8f1bf45" data-id="8f1bf45" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1945238 elementor-widget-mobile__width-auto elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-post-info" data-id="1945238" data-element_type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-253623d elementor-inline-item" itemprop="author">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
+							<span class="elementor-post-info__item-prefix">By</span>
+										Stephen Wellum					</span>
+								</li>
+				</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ac79cb4 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="ac79cb4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">By</span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7c54323 elementor-widget__width-auto elementor-widget elementor-widget-shortcode" data-id="7c54323" data-element_type="widget" id="top-article-author-box" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+         
+        
+                    <!--begin code -->
+
+                    
+                    <div class="pp-multiple-authors-boxes-wrapper pp-multiple-authors-wrapper pp-multiple-authors-layout-inline multiple-authors-target-shortcode box-post-id-4147 box-instance-id-1 ppma_boxes_4147"
+                    data-post_id="4147"
+                    data-instance_id="1"
+                    data-additional_class="pp-multiple-authors-layout-inline.multiple-authors-target-shortcode"
+                    data-original_class="pp-multiple-authors-boxes-wrapper pp-multiple-authors-wrapper box-post-id-4147 box-instance-id-1">
+                                                <span class="ppma-layout-prefix"></span>
+                        <span class="ppma-author-category-wrap">
+                                                                                                <span class="ppma-category-group ppma-category-group-">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                            <span class="pp-author-boxes-avatar-details">
+                                                                                                                                                                                                <span class="pp-author-boxes-name multiple-authors-name">
+                                                                        <a href="https://christoverall.com/author/stephen-wellum/" rel="author" title="Stephen Wellum" class="author url fn">Stephen Wellum</a> 
+                                                                    </span>
+                                                                                                                                                                                                                                                                
+                                                                                                                                
+                                                                                                                            </span>
+                                                                                                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                    </span>
+                    <span class="ppma-layout-suffix"></span>
+                    </div>
+                    <!--end code -->
+                    
+                
+                                <style>
+                .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-avatar img { width: 80px !important; height: 80px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-avatar img { border-radius: 50% !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a { background-color: #655997 !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a { color: #ffffff !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a:hover { color: #ffffff !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-recent-posts-title { border-bottom-style: dotted !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-recent-posts-item { text-align: left !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-multiple-authors-boxes-li { border-style: none !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .pp-multiple-authors-boxes-li { color: #3c434a !important; } .pp-multiple-authors-layout-inline ul.pp-multiple-authors-boxes-ul {
+            display: flex;
+        }
+
+        .pp-multiple-authors-layout-inline ul.pp-multiple-authors-boxes-ul li {
+            margin-right: 10px
+        }
+
+        .pp-multiple-authors-layout-inline .pp-author-boxes-name::after{
+            content: ",";
+        }
+
+        .pp-multiple-authors-layout-inline .pp-multiple-authors-boxes-ul .pp-multiple-authors-boxes-li:last-of-type .pp-author-boxes-name::after{
+            content: "";
+        }.pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group { margin-bottom: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group { margin-right: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap { font-size: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4147.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group-title { font-weight:  !important; } .pp-multiple-authors-boxes-wrapper.pp-multiple-authors-wrapper.pp-multiple-authors-layout-inline.multiple-authors-target-shortcode.box-post-id-4147.box-instance-id-1.ppma_boxes_4147 ul li > div:nth-child(1) {flex: 1 !important;}            </style>
+                
+        </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9490a08 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9490a08" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+		<!-- hidden section -->		<div class="elementor-element elementor-element-5c7c4a4 elementor-widget elementor-widget-text-editor" data-id="5c7c4a4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>For the month of April, Crossway Books has graciously allowed our readers to <a href="https://mailchi.mp/crossway/free-ebook-the-cross" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://mailchi.mp/crossway/free-ebook-the-cross&amp;source=gmail&amp;ust=1680577553004000&amp;usg=AOvVaw3lirClUhWacA-LO85MlHI2">freely download <i>The Cross</i></a> by Martin Lloyd-Jones. This book is a collection of excellent sermons from one of the foremost preachers of the twentieth century.</p>
+						</div>
+				</div>
+		<!-- hidden widget -->		<div class="elementor-element elementor-element-8f891ca elementor-widget elementor-widget-theme-post-content" data-id="8f891ca" data-element_type="widget" id="article-column" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+			<p>Trying to state all that our Lord Jesus achieved in his glorious work is difficult given its multi-faceted aspects. John Calvin sought to grasp the comprehensive nature of Christ’s work by the <em>munus triplex—</em>Christ’s threefold office as our new covenant head and mediator—prophet, priest, and king. What Calvin sought to avoid was reductionism, the “cardinal” sin of theology. Yet, although there is a danger in prioritizing one aspect of our Lord’s work, Scripture does stress the centrality of Christ’s priestly office and his sacrificial death for our sins (Matt. 1:21; 1 Cor. 15:3–4). And given the centrality of Christ’s cross, it is crucial that we explain it correctly.</p>
+<p>However, one problem we face is that, throughout church history, there have been a number of atonement theologies. Unlike the ecumenical confessions of Nicaea and Chalcedon that established orthodox Trinitarian and Christological doctrine, there is no catholic confession regarding the cross. From this fact, some have concluded that no one view best explains what is central to the cross—a conclusion I reject. The truth is that despite an ecumenical confession, all Christians have agreed that Christ’s death “is for our sins” (1 Cor. 15:3) resulting in our reconciliation with God.</p>
+<p>While conceptual clarity of the doctrine occurred over time, similar to other doctrines, clarity and precision was achieved, as various atonement debates occurred. Specifically, it was during the Reformation and post-Reformation eras, building on the work of people like Anselm, that conceptual clarity occurred in the articulation of penal substitution as the best <em>theological</em> explanation for <em>why </em>the cross was necessary and <em>what</em> it achieved.</p>
+<p>Recently, however, some have challenged the claim that penal substitution best explains what is central to Christ’s cross. We are told repeatedly that penal substitution does not account for the richness of the cross. What is needed is not <em>one </em>view but multiple views. Is this correct? My thesis is that it is <em>not</em>, and for at least two reasons. First, views other than penal substitution fail to grasp the central problem that the cross remedies, namely our sin <em>before God</em>. Second, from another angle, other views stress various legitimate <em>results</em> of the cross, but without penal substitution as the foundation, the results alone cannot explain the central problem of our sin before God. Before developing these two points, let me first describe the basic atonement views set over against penal substitution.</p>
+<h2>Atonement Views in Historical Theology</h2>
+<p>Over the centuries, five main atonement theologies have been given:</p>
+<h3><em>Recapitulation </em></h3>
+<p>First, there is the recapitulation view, often associated with Irenaeus and Athanasius. This view interprets Christ’s work primarily in terms of his identification with us through the incarnation. By becoming human, the divine Son reversed what Adam did by living our life and dying our death. Adam’s disobedience resulted in the corruption of our nature and the deprivation of Godlikeness. Christ reverses both of these results in his incarnation and entire cross-work. Especially in Christ’s resurrection, immortality and reconciliation with God is restored to us. This view captures much biblical truth. Christ’s work is presented in representational and substitutionary terms. But its <em>central</em> focus is on sin’s effects on us and Christ’s restorative work, <em>not</em> on our sin before God <em>and</em> the need for Christ to satisfy God’s own righteous demand against us by paying for our sin.</p>
+<h3><em>Christus Victor (Or Ransom)</em></h3>
+<p>Second, <em>Christus Victor </em>is another view of the cross, often associated with the ransom theory to Satan. The primary object(s) of Christ’s death is (are) the powers which he liberates us from, namely, sin, death, and Satan. Like recapitulation, this view captures a lot of biblical truth, especially Christ’s defeat of the powers (Gen. 3:15; John 12:31–33; Col. 2:13–15; Heb. 2:14–16; Rev. 12:1–12), but unlike penal substitution, God is <em>not</em> viewed as the primary object of the cross.</p>
+<h3><em>Moral Influence (or Example)</em></h3>
+<p>Third, the moral influence view was promoted within non-orthodox theology. It had its roots in the theology of Peter Abelard (1079–1142), but came into its own with the rise of classic liberal theology (eighteenth to nineteenth centuries). It taught that God’s love is more basic than his justice and that God can forgive our sins without Christ satisfying divine justice. God is <em>not</em> the primary object of the cross. Instead, Christ’s death reveals God’s love and sets an example for us.</p>
+<h3><em>The Governmental View</em></h3>
+<p>Fourth, the governmental view arose in the post-Reformation era and it is identified with Hugo Grotius, John Miley, and the Arminian tradition. Against penal substitution, this view denies that God’s justice <em>necessitates</em> the full payment of our sin since God’s justice is not viewed as <em>essential </em>to him. Instead, as the moral Governor, God can choose to relax the demand of the law (since it is external to him) similar to a human judge, thus forgiving us by his mercy. Yet, God cannot completely overlook our sin; he governs the world justly and sin is a serious miscarriage of justice. So, Christ’s cross upholds the moral governance of the world allowing God to forgive us without a full payment of our sin, while it also simultaneously reveals God’s hatred of sin thus motivating us to repent and believe in Christ.</p>
+<h3><em>Penal Substitution</em></h3>
+<p>Fifth, there is penal substitution. It had precursors in the early church and Anselm, but came to full-bloom in the Reformation. Penal substitution does <em>not </em>minimize the multi-faceted aspects of Christ’s death. Instead, it contends that <em>central </em>to the cross is God the Son incarnate acting as our new covenant representative and substitute to fully satisfy God’s righteous demand against us due to our sin. And apart from this <em>central</em> achievement of the cross, there is no restoration of humanity, defeat of the powers, or revealed love.</p>
+<p>Why? For this important reason: central to penal substitution is a specific understanding of the God-law-sin relationship, or better, a specific <em>doctrine of God</em>. Penal substitution takes seriously the fact that the triune God is alone independent and self-sufficient. Specifically, in relation to the moral law, this entails that God does not adjudicate a law external to him; instead, he <em>is the law</em>. This is why, in relation to sin, God <em>cannot</em> tolerate sin (Hab. 1:12–13; Isa. 1:4–20; 35:8); he <em>must </em>act in holy justice against it (Gen. 18:25) because God cannot deny himself.</p>
+<p>Yet, how does God demonstrate his holy justice <em>and</em> covenant love, given his free decision to redeem us (Gen. 3:15; Hos. 11:9)? In this regard, in the Bible’s unfolding story a tension results that is rooted in <em>who </em>God is in relation to our sin—and which is <em>central</em> to the <em>why</em> of the cross. Since God <em>is</em> the Law, he <em>cannot</em> forgive us without the full satisfaction of his holy demand (Rom. 3:21–26; Heb. 9:15–22). To justify the ungodly (Rom. 4:5), the triune God must take the initiative to provide a Redeemer who can act in perfect covenantal obedience for us <em>and </em>pay for our sin. Christ must not only be our victor and substitute, but our <em>penal</em> substitute. Ultimately, this is what is <em>central</em> to the cross, and other views of the atonement fail to stress this vital point.</p>
+<h2>Evaluating Other Views of the Cross in Relation to Penal Substitution</h2>
+<p>Let us now return to my thesis. Various atonement theologies emphasize many biblical truths and entailments of the cross, but unlike penal substitution, they fail to grasp the <em>central</em> problem that the cross remedies, namely our sin <em>before God</em>.</p>
+<p>Every view of the atonement stresses something true about the cross. Recapitulation rightly grasps the Adam-Christ relationship across redemptive history (Rom. 5:12–21). In the first Adam, God demanded covenantal obedience, yet sadly, Adam disobeyed and brought sin and death into the world. What is needed is the incarnation of God’s Son, the last Adam, to live and die for us, and thus restore us to the purpose of our creation (Heb. 2:5–18). Yet, this view does not emphasize enough that God requires perfect covenantal obedience from us, and the need for Christ to be our representative in life <em>and</em> penal substitute in death. It rightly stresses many biblical truths but fails to grasp adequately the God-law-sin relationship.</p>
+<p>Similarly, <em>Christus Victor</em> emphasizes many glorious truths. It underscores the need for the Son to become human to crush Satan’s head (Gen. 3:15) and to defeat sin (Heb. 9:26) and death (Rom. 6:9). Yet, this view does not make central the God-law-sin relationship. In Scripture, the powers of sin, death, and Satan are only over us because of our <em>sin before God</em> (Gen. 2:17; Rom. 6:23; Heb. 2:14–15). After all, <em>why</em> did the divine Son <em>have to</em> <em>die </em>to defeat the powers? Why not simply exert his divine power to defeat them without the cross? Scripture’s answer is clear: it’s only when our sin is paid for that the powers are destroyed (Col. 2:13–15; 1 Cor. 15:55–57). This is why our greatest problem is not the powers against us, but how we can stand justified before God. <em>Christus Victor</em> without penal substitution hangs in mid-air.</p>
+<p>Scripture also presents Christ and his cross as the supreme moral example of love, obedience, and suffering (John 13:12–17; Eph. 5:1–2, 25–27; Phil. 2:5–11; 1 Pet. 2:18–25). But the cross only functions this way because of <em>who </em>dies and <em>what </em>he achieves, namely the full satisfaction of God’s holy demand against our sin, which is the very demonstration of divine love (1 John 4:7–10). Also, it’s never enough for Christ merely to identify with us in his incarnation and show us how to live. Solidarity is not atonement; it is only the prerequisite. We need more than an example to redeem us. What we need is for the divine Son to live and die <em>for</em> us. Our problem is not that we need a great teacher to show us how to live. Our problem is sin before the triune holy God, and <em>this </em>problem requires the enfleshment of God’s own Son to live for us and to die for us as our penal substitute. It is only as our propitiatory sacrifice that <em>God’s</em> own righteous demand is fully met, and only in Christ do we receive all the glorious benefits of his new covenant work.</p>
+<p>Of all the atonement views, only penal substitution best captures the God-centered nature of the cross. The alternatives either minimize or deny 1) that God’s holy justice is essential to him, 2) why our sin is first against <em>God</em> (Ps. 51:4), and 3) why Christ as our penal substitute is <em>central</em> to the cross. Before we can speak of the horizontal results of the cross (e.g., moral example, inter-personal reconciliation, etc.), we must first speak of the vertical: namely the triune God, in his Son, taking his own demand on himself so that we, in Christ, may be justified before him (Rom. 5:1–2). The other views miss this point. For them, the object of the cross is either our sin (forms of recapitulation), or Satan (ransom theory), or the powers (forms of <em>Christus Victor</em>). But what they fail to see is that the primary person we have sinned against is God, and as such, the ultimate object of the cross is God himself.</p>
+<p>The Bible’s presentation of the cross is rich and multifaceted. It is like a beautiful gem that can be looked at from many angles. Yet, the explanation of the cross’s <em>central</em> means is that Christ Jesus has come as our mediator and new covenant head to offer himself before God on behalf of sin. Penal substitution best accounts for <em>why </em>the divine Son <em>had </em>to die, and why <em>he </em>alone saves. With Paul, may we alone glory in and preach Christ crucified (1 Cor. 1:23).</p>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-7107c9d elementor-widget elementor-widget-heading" data-id="7107c9d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">&dagger;</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6ff63ca dc-has-condition dc-condition-not_equal elementor-widget elementor-widget-heading" data-id="6ff63ca" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">ABOUT THE AUTHOR</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-227e776 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="227e776" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a8ae03d elementor-widget elementor-widget-shortcode" data-id="a8ae03d" data-element_type="widget" id="end-article-author-box" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+         
+        
+                    <!--begin code -->
+
+                    
+                    <div class="pp-multiple-authors-boxes-wrapper pp-multiple-authors-wrapper pp-multiple-authors-layout-boxed multiple-authors-target-shortcode box-post-id-4149 box-instance-id-1 ppma_boxes_4149"
+                    data-post_id="4149"
+                    data-instance_id="1"
+                    data-additional_class="pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode"
+                    data-original_class="pp-multiple-authors-boxes-wrapper pp-multiple-authors-wrapper box-post-id-4149 box-instance-id-1">
+                                                                                    <h2 class="widget-title box-header-title">Author</h2>
+                                                                            <span class="ppma-layout-prefix"></span>
+                        <div class="ppma-author-category-wrap">
+                                                                                                <span class="ppma-category-group ppma-category-group-">
+                                                                                                                        <ul class="pp-multiple-authors-boxes-ul">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="pp-multiple-authors-boxes-li author_index_0 author_stephen-wellum has-avatar">
+                                                                                                                                                                                                                                            <div class="pp-author-boxes-avatar">
+                                                                                                                                            <img alt='Stephen Wellum' src='https://christoverall.com/wp-content/uploads/2022/09/stephen-wellum.jpg' srcset='https://christoverall.com/wp-content/uploads/2022/09/stephen-wellum.jpg' class='multiple_authors_guest_author_avatar avatar' height='80' width='80'/>                                                                                                                                    </div>
+                                                            
+                                                            <div class="pp-author-boxes-avatar-details">
+                                                                                                                                                                                                <div class="pp-author-boxes-name multiple-authors-name">
+                                                                        <a href="https://christoverall.com/author/stephen-wellum/" rel="author" title="Stephen Wellum" class="author url fn">Stephen Wellum</a> 
+                                                                    </div>
+                                                                                                                                                                                                                                                                    <p class="pp-author-boxes-description multiple-authors-description">
+                                                                        <b>Stephen Wellum</b> is <a href="https://www.sbts.edu/academics/faculty/stephen-j-wellum/">professor of Christian theology</a> at The Southern Baptist Theological Seminary in Louisville, Kentucky. He received his MDiv and PhD from Trinity Evangelical Divinity School. He is the author of numerous essays, articles, and books. He is also the co-author with Peter Gentry of <a href="https://www.crossway.org/books/kingdom-through-covenant-case-2/"><I>Kingdom through Covenant</i></a>, 2nd edition (Crossway, 2012, 2018) and the author of <a href="https://www.crossway.org/books/god-the-son-incarnate-case/"><I>God the Son Incarnate: The Doctrine of the Person of Christ</i></a> (Crossway, 2016) and <a href="https://bhacademic.bhpublishinggroup.com/product/systematic-theology-2/#flipbook-sampler/"><I>Systematic Theology, Volume 1: From Canon to Concept</i></a> (B&amp;H Academic, 2024).                                                                     </p>
+                                                                                                                                
+                                                                                                                                    <p class="pp-author-boxes-meta multiple-authors-links">
+                                                                                                                                                    <a href="https://christoverall.com/author/stephen-wellum/" title="View all posts">
+                                                                                <span>View all posts</span>
+                                                                            </a>
+                                                                                                                                                                                                                                                                                                    <a href="https://www.sbts.edu/academics/faculty/stephen-j-wellum/" target="_blank" aria-label="Website" rel="nofollow">
+                                                                                <span class="dashicons dashicons-admin-links"></span>
+                                                                            </a>
+                                                                                                                                            </p>
+                                                                                                                                
+                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                             </li>
+                                                                                                                                                                                                                                    </ul>
+                                                                            </span>
+                                                                                    </div>
+                    <span class="ppma-layout-suffix"></span>
+                    </div>
+                    <!--end code -->
+                    
+                
+                                <style>
+                .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-avatar img { width: 80px !important; height: 80px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-avatar img { border-radius: 50% !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a { background-color: #655997 !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a { color: #ffffff !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-meta a:hover { color: #ffffff !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-author-boxes-recent-posts-title { border-bottom-style: dotted !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-multiple-authors-boxes-li { border-style: solid !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .pp-multiple-authors-boxes-li { color: #3c434a !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group { margin-bottom: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group { margin-right: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap { font-size: px !important; } .pp-multiple-authors-boxes-wrapper.box-post-id-4149.pp-multiple-authors-layout-boxed.multiple-authors-target-shortcode.box-instance-id-1 .ppma-author-category-wrap .ppma-category-group-title { font-weight:  !important; }             </style>
+                
+        </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-848551f elementor-author-box--layout-image-left elementor-author-box--align-left elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-author-box--avatar-yes elementor-author-box--name-yes elementor-author-box--biography-yes elementor-widget elementor-widget-author-box" data-id="848551f" data-element_type="widget" data-widget_type="author-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-author-box">
+							<div  class="elementor-author-box__avatar">
+					<img src="https://christoverall.com/wp-content/uploads/2022/09/stephen-wellum.jpg" alt="Picture of Stephen Wellum" loading="lazy">
+				</div>
+			
+			<div class="elementor-author-box__text">
+									<div >
+						<h3 class="elementor-author-box__name">
+							Stephen Wellum						</h3>
+					</div>
+				
+									<div class="elementor-author-box__bio">
+						<b>Stephen Wellum</b> is <a href="https://www.sbts.edu/academics/faculty/stephen-j-wellum/">professor of Christian theology</a> at The Southern Baptist Theological Seminary in Louisville, Kentucky. He received his MDiv and PhD from Trinity Evangelical Divinity School. He is the author of numerous essays, articles, and books. He is also the co-author with Peter Gentry of <a href="https://www.crossway.org/books/kingdom-through-covenant-case-2/"><I>Kingdom through Covenant</i></a>, 2nd edition (Crossway, 2012, 2018) and the author of <a href="https://www.crossway.org/books/god-the-son-incarnate-case/"><I>God the Son Incarnate: The Doctrine of the Person of Christ</i></a> (Crossway, 2016) and <a href="https://bhacademic.bhpublishinggroup.com/product/systematic-theology-2/#flipbook-sampler/"><I>Systematic Theology, Volume 1: From Canon to Concept</i></a> (B&amp;H Academic, 2024). 					</div>
+				
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="1433" class="elementor elementor-1433 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-acec509 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="acec509" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9ce0299" data-id="9ce0299" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f464498 elementor-widget elementor-widget-image" data-id="f464498" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" width="600" height="600" src="https://christoverall.com/wp-content/uploads/2022/07/coa-icon.svg" class="attachment-full size-full wp-image-58" alt="" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-32cd20b elementor-widget elementor-widget-text-editor" data-id="32cd20b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: center;">Applying All the Scriptures to All of Life</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-4b9e6b1 elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="4b9e6b1" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/themes/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Themes</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-26966ab elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="26966ab" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/articles/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Articles</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-339b0cb elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="339b0cb" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/podcasts/an-introduction-to-christ-over-all/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Podcast</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9a93491 elementor-mobile-align-center elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="9a93491" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/about/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">About</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-af33260 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="af33260" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fb3a799" data-id="fb3a799" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c222ab2 elementor-align-justify elementor-widget elementor-widget-button" data-id="c222ab2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/give/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">support the work</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-45ee4af" data-id="45ee4af" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-529cf9a elementor-align-justify elementor-widget elementor-widget-button" data-id="529cf9a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIwNCIsInRvZ2dsZSI6ZmFsc2V9">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Subscribe to Newsletter</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-9a74c71 elementor-widget elementor-widget-text-editor" data-id="9a74c71" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: center;">Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, to him be glory in the church and in Christ Jesus throughout all generations, forever and ever. Amen.</p>						</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-bd82dee elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="bd82dee" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bab6a33" data-id="bab6a33" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-155d1e2 elementor-widget elementor-widget-text-editor" data-id="155d1e2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><i><span style="font-weight: 400;">Editor-in-Chief:</span></i><span style="font-weight: 400;"> David Schrock  •  </span><i><span style="font-weight: 400;">Theological Editors: </span></i><span style="font-weight: 400;">Stephen Wellum, Ardel Caneday, Brad Green  •  </span><i><span style="font-weight: 400;">Pastoral Editor:</span></i><span style="font-weight: 400;"> Trent Hunter  •  </span><i><span style="font-weight: 400;">Managing Editor:</span></i><span style="font-weight: 400;"> Kevin McClure</span><span style="font-weight: 400;">  •  <i>Assistant Editor:</i> Luke Uhl  </span></p><p><i><span style="font-weight: 400;">Editorial Email:</span></i><span style="font-weight: 400;"> Christisoverall@gmail.com</span></p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/0b18f1cf-d8c6-457f-b4ec-3840ffc2f822.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>		<div data-elementor-type="popup" data-elementor-id="622" class="elementor elementor-622 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInDown&quot;,&quot;exit_animation&quot;:&quot;slideInDown&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;classes&quot;:&quot;fullscreen-nav&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-f63ea3a elementor-hidden-tablet elementor-hidden-mobile elementor-section-content-middle elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="f63ea3a" data-element_type="section" id="fullscreen-nav">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e713e53" data-id="e713e53" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-da6d707 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="da6d707" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8ed852a" data-id="8ed852a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e874d21 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="e874d21" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://christoverall.com">
+							<img fetchpriority="high" width="600" height="600" src="https://christoverall.com/wp-content/uploads/2022/07/coa-icon.svg" class="attachment-full size-full wp-image-58" alt="" />								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-40bbe32" data-id="40bbe32" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a364301 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="a364301" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="#elementor-action%3Aaction%3Dpopup%3Aclose%26settings%3DeyJkb19ub3Rfc2hvd19hZ2FpbiI6IiJ9">
+							<img loading="lazy" width="40" height="40" src="https://christoverall.com/wp-content/uploads/2022/09/red-x.svg" class="attachment-full size-full wp-image-1391" alt="" />								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8942eb7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8942eb7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-52f96f8 elementor-hidden-tablet elementor-hidden-mobile" data-id="52f96f8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b1c5aeb elementor-widget elementor-widget-heading" data-id="b1c5aeb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/themes/">Themes</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f8e3d06 pp-posts-image-stack-mobile elementor-widget elementor-widget-pp-posts" data-id="f8e3d06" data-element_type="widget" id="nav-current-theme" data-widget_type="pp-posts.checkerboard">
+				<div class="elementor-widget-container">
+					<div class="pp-posts-container">
+			
+										
+			<div class="pp-posts pp-posts-skin-checkerboard" data-query-type="custom" data-layout="grid" data-page="622" data-skin="checkerboard">
+											<div class="pp-post-wrap pp-grid-item-wrap elementor-grid-item post-18788 theme-page type-theme-page status-publish has-post-thumbnail hentry category-current-theme category-march-2025 category-theme">
+						<div class="pp-post pp-grid-item">
+						<div class="pp-post-thumbnail">
+			<a class="pp-post-thumbnail-wrap" href="https://christoverall.com/theme/the-ethics-religious-liberty-conundrum/" title="The Ethics &amp; Religious Liberty Conundrum">
+				<img loading="lazy" width="768" height="1187" src="https://christoverall.com/wp-content/uploads/2025/03/2025–03-the-ERLC-Conundrum-768x1187.jpeg" class="attachment-medium_large size-medium_large wp-image-18797" alt="" />			</a>
+		</div>
+						<div class="pp-post-content-wrap">
+					<div class="pp-post-content">
+										<div class="pp-post-terms-wrap">
+			<span class="pp-post-terms">
+				<span class="pp-post-term"><a href="https://christoverall.com/category/current-theme/">Current Theme</a></span>			</span>
+		</div>
+										<h2 class="pp-post-title">
+				<a href="https://christoverall.com/theme/the-ethics-religious-liberty-conundrum/">The Ethics &amp; Religious Liberty Conundrum</a>			</h2>
+									<div class="pp-post-meta">
+							</div>
+							<a class="pp-posts-button elementor-button elementor-size-lg" href="https://christoverall.com/theme/the-ethics-religious-liberty-conundrum/" title="The Ethics &amp; Religious Liberty Conundrum" aria-label="Read more about The Ethics &amp; Religious Liberty Conundrum">
+										<span class="pp-button-text">
+					Explore Theme				</span>
+									<span class="pp-button-icon elementor-button-icon elementor-align-icon-right">
+							</span>
+					</a>
+									</div>
+				</div>
+			</div>
+					</div>
+									</div>
+			
+			
+			
+			
+												</div>
+
+		
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-201c3d7 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-text-editor" data-id="201c3d7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><a href="https://christoverall.com/themes/">View All Themes</a></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8d0a175" data-id="8d0a175" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cf61677 elementor-widget elementor-widget-heading" data-id="cf61677" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/articles/">Articles</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0f20391 elementor-widget elementor-widget-heading" data-id="0f20391" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/podcast/">Podcast</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1fb8e2d elementor-widget elementor-widget-heading" data-id="1fb8e2d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/about/">About</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8edfe3b elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="8edfe3b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/about/#statement">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Vision & Approach</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fb23036 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="fb23036" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/about/#team">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Our Team</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-33442d7 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="33442d7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/about/#beliefs">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Beliefs</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-cc56212 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="cc56212" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-8b382af" data-id="8b382af" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e0fdea7 elementor-search-form--skin-minimal elementor-widget elementor-widget-search-form" data-id="e0fdea7" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;minimal&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<search role="search">
+			<form class="elementor-search-form" action="https://christoverall.com" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-e0fdea7">Search</label>
+
+											<div class="elementor-search-form__icon">
+							<i aria-hidden="true" class="fas fa-search"></i>							<span class="elementor-screen-only">Search</span>
+						</div>
+					
+					<input id="elementor-search-form-e0fdea7" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+					
+									</div>
+			</form>
+		</search>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ce822ec" data-id="ce822ec" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9e5274c elementor-align-justify elementor-widget elementor-widget-button" data-id="9e5274c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/give/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Give</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8ebea26 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8ebea26" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-753875b" data-id="753875b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-50cd610 elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-hidden-tablet elementor-hidden-mobile elementor-widget-laptop__width-inherit elementor-widget elementor-widget-heading" data-id="50cd610" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Connect</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1dd69ed elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="1dd69ed" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="mailto:christisoverall@gmail.com">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contact</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-60d58af elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="60d58af" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIwNCIsInRvZ2dsZSI6ZmFsc2V9">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Newsletter</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8e52ac2 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="8e52ac2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://twitter.com/Christ_OverAll">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Twitter</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-439feb1 elementor-hidden-desktop elementor-hidden-laptop elementor-section-content-top elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="439feb1" data-element_type="section" id="mobile-nav">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-847decd" data-id="847decd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-7b27df3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b27df3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8c92e3f" data-id="8c92e3f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d932d23 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="d932d23" data-element_type="widget" id="mobile-logo" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://christoverall.com">
+							<img fetchpriority="high" width="600" height="600" src="https://christoverall.com/wp-content/uploads/2022/07/coa-icon.svg" class="attachment-full size-full wp-image-58" alt="" />								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-31f9263" data-id="31f9263" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ca03992 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="ca03992" data-element_type="widget" id="mobile-x" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="#elementor-action%3Aaction%3Dpopup%3Aclose%26settings%3DeyJkb19ub3Rfc2hvd19hZ2FpbiI6IiJ9">
+							<img loading="lazy" width="40" height="40" src="https://christoverall.com/wp-content/uploads/2022/09/red-x.svg" class="attachment-full size-full wp-image-1391" alt="" />								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-6c642b5 mobile-nav-link elementor-widget elementor-widget-heading" data-id="6c642b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/themes/">Themes</a></span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4b28657 mobile-nav-link elementor-widget elementor-widget-heading" data-id="4b28657" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/articles/">Articles</a></span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-01810a5 mobile-nav-link elementor-widget elementor-widget-heading" data-id="01810a5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/podcast/">Podcast</a></span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b2b4ee8 mobile-nav-link elementor-widget elementor-widget-heading" data-id="b2b4ee8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default"><a href="https://christoverall.com/about/">About</a></span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2778020 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget-tablet__width-inherit small-link elementor-widget elementor-widget-button" data-id="2778020" data-element_type="widget" id="first-small-link" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="mailto:christisoverall@gmail.com">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contact</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-56bc48f elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget-tablet__width-inherit small-link elementor-widget elementor-widget-button" data-id="56bc48f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIwNCIsInRvZ2dsZSI6ZmFsc2V9">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Newsletter</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-70cb900 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget-tablet__width-inherit small-link elementor-widget elementor-widget-button" data-id="70cb900" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://twitter.com/Christ_OverAll">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Twitter</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8a2adfc elementor-align-justify elementor-widget elementor-widget-button" data-id="8a2adfc" data-element_type="widget" id="mobile-give-button" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://christoverall.com/give/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Give</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-550af82 elementor-search-form--skin-minimal elementor-widget elementor-widget-search-form" data-id="550af82" data-element_type="widget" id="mobile-search" data-settings="{&quot;skin&quot;:&quot;minimal&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<search role="search">
+			<form class="elementor-search-form" action="https://christoverall.com" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-550af82">Search</label>
+
+											<div class="elementor-search-form__icon">
+							<i aria-hidden="true" class="fas fa-search"></i>							<span class="elementor-screen-only">Search</span>
+						</div>
+					
+					<input id="elementor-search-form-550af82" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+					
+									</div>
+			</form>
+		</search>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="204" class="elementor elementor-204 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeInDown&quot;,&quot;exit_animation&quot;:&quot;fadeInDown&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.75,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-50bbb12 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="50bbb12" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-44ad4a2" data-id="44ad4a2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-91c455b elementor-widget elementor-widget-image" data-id="91c455b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" width="600" height="600" src="https://christoverall.com/wp-content/uploads/2022/07/coa-icon.svg" class="attachment-full size-full wp-image-58" alt="" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-87a6c12 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="87a6c12" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+					<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="204"/>
+			<input type="hidden" name="form_id" value="87a6c12"/>
+			<input type="hidden" name="referer_title" value="Penal Substitution and Other Atonement Theologies" />
+
+							<input type="hidden" name="queried_id" value="7261"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50">
+												<label for="form-field-name" class="elementor-field-label">
+								First Name							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="First Name">
+											</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_79af27b elementor-col-50">
+												<label for="form-field-field_79af27b" class="elementor-field-label">
+								Last Name							</label>
+														<input size="1" type="text" name="form_fields[field_79af27b]" id="form-field-field_79af27b" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Last Name">
+											</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-70 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Email" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_948f810 elementor-col-30 elementor-field-required">
+												<label for="form-field-field_948f810" class="elementor-field-label">
+								ZIP Code							</label>
+														<input size="1" type="text" name="form_fields[field_948f810]" id="form-field-field_948f810" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="000000" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-sm" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">Sign-Up</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+					<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='dashicons-css' href='https://christoverall.com/wp-includes/css/dashicons.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='multiple-authors-widget-css-css' href='https://christoverall.com/wp-content/plugins/publishpress-authors-pro/lib/vendor/publishpress/publishpress-authors/src/assets/css/multiple-authors-widget.css?ver=4.3.1' media='all' />
+<style id='multiple-authors-widget-css-inline-css'>
+:root { --ppa-color-scheme: #655997; --ppa-color-scheme-active: #514779; }
+:root { --ppa-color-scheme: #655997; --ppa-color-scheme-active: #514779; }
+</style>
+<link rel='stylesheet' id='elementor-post-622-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-622.css?ver=1732191569' media='all' />
+<link rel='stylesheet' id='widget-search-form-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/widget-search-form.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='e-animation-slideInDown-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/animations/styles/slideInDown.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='elementor-post-204-css' href='https://christoverall.com/wp-content/uploads/elementor/css/post-204.css?ver=1732191569' media='all' />
+<link rel='stylesheet' id='widget-form-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.4' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInDown-css' href='https://christoverall.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.25.9' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://christoverall.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.25.4' media='all' />
+<script src="https://christoverall.com/wp-content/plugins/dynamicconditions/Public/js/dynamic-conditions-public.js?ver=1.6.2" id="dynamic-conditions-js"></script>
+<script src="https://static.esvmedia.org/crossref/crossref.min.js?ver=6.7.2" id="esv-crossreference-tool-js"></script>
+<script src="https://christoverall.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.1" id="hello-theme-frontend-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.25.4" id="e-sticky-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.6" id="page-links-to-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js?ver=1.5.95" id="uc_cdnjs_cloudflare_com_ajax_libs_mediaelement_4_2_16_mediaelement_and_player_min_js-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/powerpack-elements/assets/lib/isotope/isotope.pkgd.min.js?ver=0.5.3" id="isotope-js"></script>
+<script src="https://christoverall.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script id="powerpack-pp-posts-js-extra">
+var pp_posts_script = {"ajax_url":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php","posts_nonce":"8fa5c4dd02"};
+var pp_posts_script = {"ajax_url":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php","posts_nonce":"8fa5c4dd02"};
+</script>
+<script src="https://christoverall.com/wp-content/plugins/powerpack-elements/assets/js/min/pp-posts.min.js?ver=2.10.11" id="powerpack-pp-posts-js"></script>
+<script id="powerpack-frontend-js-extra">
+var ppLogin = {"empty_username":"Enter a username or email address.","empty_password":"Enter password.","empty_password_1":"Enter a password.","empty_password_2":"Re-enter password.","empty_recaptcha":"Please check the captcha to verify you are not a robot.","email_sent":"A password reset email has been sent to the email address for your account, but may take several minutes to show up in your inbox. Please wait at least 10 minutes before attempting another reset.","reset_success":"Your password has been reset successfully.","ajax_url":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php","show_password":"Show password","hide_password":"Hide password"};
+var ppRegistration = {"invalid_username":"This username is invalid because it uses illegal characters. Please enter a valid username.","username_exists":"This username is already registered. Please choose another one.","empty_email":"Please type your email address.","invalid_email":"The email address isn\u2019t correct!","email_exists":"The email is already registered, please choose another one.","password":"Password must not contain the character \"\\\\\"","password_length":"Your password should be at least 8 characters long.","password_mismatch":"Password does not match.","invalid_url":"URL seems to be invalid.","recaptcha_php_ver":"reCAPTCHA API requires PHP version 5.3 or above.","recaptcha_missing_key":"Your reCAPTCHA Site or Secret Key is missing!","show_password":"Show password","hide_password":"Hide password","ajax_url":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php"};
+var ppCoupons = {"copied_text":"Copied"};
+</script>
+<script src="https://christoverall.com/wp-content/plugins/powerpack-elements/assets/js/min/frontend.min.js?ver=2.10.11" id="powerpack-frontend-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.4" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.9" id="elementor-webpack-runtime-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.9" id="elementor-frontend-modules-js"></script>
+<script src="https://christoverall.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://christoverall.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php","nonce":"c8de9ebdd2","urls":{"assets":"https:\/\/christoverall.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/christoverall.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/christoverall.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://christoverall.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.4" id="elementor-pro-frontend-js"></script>
+<script src="https://christoverall.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.9","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/christoverall.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/christoverall.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/christoverall.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f0affe2fcf"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":7261,"title":"Penal%20Substitution%20and%20Other%20Atonement%20Theologies%20-%20Christ%20Over%20All","excerpt":"What did Jesus accomplish on the cross? While theories on the atonement abound, only penal substitutionary atonement grasps humanity's central problem: our sin before a holy God.","featuredImage":"https:\/\/christoverall.com\/wp-content\/uploads\/2023\/04\/cdoncel-3cHmnTxXSbU-unsplash-1024x683.jpg"}};
+</script>
+<script src="https://christoverall.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.9" id="elementor-frontend-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.4" id="pro-elements-handlers-js"></script>
+<script src="https://christoverall.com/wp-content/plugins/powerpack-elements/assets/lib/tooltipster/tooltipster.min.js?ver=2.10.11" id="pp-tooltipster-js"></script>
+
+<!--   Unlimited Elements 1.5.95 Scripts --> 
+<script type='text/javascript' id='unlimited-elements-scripts'>
+
+/* Audio Player scripts: */ 
+
+jQuery(document).ready(function(){	
+function uc_audio_player_mejs_elementor_a206692_start(){
+
+  let audio = document.querySelector('#uc_audio_player_mejs_elementor_a206692 .ue-audio-player-element__controls');
+
+  let features = [
+    'playpause',
+                  ];
+
+
+  let player = new MediaElementPlayer(audio, {
+
+    features: features,
+    stretching: 'responsive',
+    audioVolume: 'horizontal',
+    startVolume: 0.2,
+         
+
+  });
+    	
+}setTimeout(function(){if(jQuery("#uc_audio_player_mejs_elementor_a206692").length) uc_audio_player_mejs_elementor_a206692_start(); else
+	jQuery( document ).on( 'elementor/popup/show', () => { if(jQuery("#uc_audio_player_mejs_elementor_a206692").length) uc_audio_player_mejs_elementor_a206692_start();});},100);
+});
+
+/* Audio Player scripts: */ 
+
+jQuery(document).ready(function(){	
+function uc_audio_player_mejs_elementor_050d45b_start(){
+
+  let audio = document.querySelector('#uc_audio_player_mejs_elementor_050d45b .ue-audio-player-element__controls');
+
+  let features = [
+    'playpause',
+                  ];
+
+
+  let player = new MediaElementPlayer(audio, {
+
+    features: features,
+    stretching: 'responsive',
+    audioVolume: 'horizontal',
+    startVolume: 0.2,
+         
+
+  });
+    	
+}setTimeout(function(){if(jQuery("#uc_audio_player_mejs_elementor_050d45b").length) uc_audio_player_mejs_elementor_050d45b_start(); else
+	jQuery( document ).on( 'elementor/popup/show', () => { if(jQuery("#uc_audio_player_mejs_elementor_050d45b").length) uc_audio_player_mejs_elementor_050d45b_start();});},100);
+});
+</script>
+
+</body>
+</html>

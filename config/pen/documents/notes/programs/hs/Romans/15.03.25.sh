@@ -1,0 +1,6 @@
+cd /root/notes;  "Romans" "5:6-8" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "5:9-11" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "5:16-19" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "14:4" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "2:28-29" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "2:15-16" "#" "<==" "zsh"

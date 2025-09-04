@@ -1,3 +1,5 @@
+;; (ignore-errors (require 'highlight2clipboard))
+
 (require 'cl-macs)
 (require 'select)
 

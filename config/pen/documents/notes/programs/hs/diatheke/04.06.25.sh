@@ -1,0 +1,7 @@
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1" "#" "<==" "emacs"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-s" "phrase" "-o" "w" "-f" "plain" "-k" "abyss" "#" "<==" "emacs"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Luke 8:31;Romans 10:7;" "#" "<==" "emacs"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1056" "#" "<==" "emacs"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "plain" "-k" "Romans 10:4-11" "#" "<==" "in-pen"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1056" "#" "<==" "emacs"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "diatheke" "-b" "ESV" "-o" "w" "-f" "internal" "-k" "Genesis 1056" "#" "<==" "emacs"

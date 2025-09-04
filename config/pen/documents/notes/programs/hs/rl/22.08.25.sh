@@ -1,0 +1,7 @@
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/notes;  "rl" "pen-readln" "htop filter" "#" "<==" "htop"
+cd /root/repos/rosie-pattern-language/rosie/doc;  "rl" "/root/repos/rosie-pattern-language/rosie/rosie" "-f" "/root/repos/rosie-pattern-language/rosie/rpl/all.rpl" "-f" "/root/repos/rosie-pattern-language/rosie/rpl/net.rpl" "-f" "/root/repos/rosie-pattern-language/rosie/rpl/date.rpl" "-f" "/root/repos/rosie-pattern-language/rosie/rpl/csv.rpl" "-f" "/root/repos/rosie-pattern-language/rosie/rpl/json.rpl" "repl" "#" "<==" "nvim"

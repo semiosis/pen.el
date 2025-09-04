@@ -280,7 +280,6 @@ fi\
 : 1648614242:0;pen-ead M-_
 : 1648616937:0;git clone "https://github.com/lazamar/haskell-docs-cli"
 : 1648616948:0;vim README.md
-: 1648617579:0;tp find-here-path "*zrepl*"
 : 1648617917:0;git clone "https://ofb.net/~elaforge/darcs/fix-imports/"
 : 1648618060:0;git clone "https://github.com/elaforge/fix-imports"
 : 1648618089:0;cd cd fix-imports
@@ -484,7 +483,6 @@ sh-new
 : 1649474740:0;hello
 : 1649475671:0;cp -a ~/.pen/dotfiles /tmp/dotfiles
 : 1649475679:0;rsync -rtlphx /tmp/dotfiles/ ~
-: 1649475702:0;echo hi
 : 1649476013:0;rm -rf ~/.config/asciinema
 : 1649476018:0;rm -rf /tmp/dotfiles
 : 1649476025:0;rm -rf ~/.authinfo
@@ -816,7 +814,6 @@ ln -sf ~/repos/rangerconfig ~/.config/ranger\
 : 1661496512:0;cd vim-snippets
 : 1661496517:0;ls -ldt global.snippets
 : 1661496530:0;ln -sf snippets/_.snippets global.snippets
-: 1661496544:0;cd plugin
 : 1661496546:0;v vimsnippets.vim
 : 1661497015:0;rsync -rtlphx /root/.pen/vim-bundles/ ~/.vim/bundle
 : 1661497034:0;v test.sh
@@ -1124,7 +1121,6 @@ pip3.8 uninstall config\
 : 1662355263:0;echo hi | xsel -b -i
 : 1662355275:0;echo hi | xclip -i -selection clipboard -f
 : 1662358873:0;PEN_GEN_UUID="1b30cdfe-3d10-466f-8f75-52add13c16c5" PEN_GEN_TIME=1662156661.565325 PEN_GEN_DIR="/root/.pen/results/results_1662156661.565325_02.09.22_1b30cdfe-3d10-466f-8f75-52add13c16c5" UPDATE="" ALSO_EXPORT="" PEN_PROXY= PEN_PROMPT_FUNCTION="pf-given-an-image-describe-it-1" PEN_PROMPT="Q<pen-colon> What is in this image? A<pen-colon>" PEN_PROMPT_FULL="Q<pen-colon> What is in this image? A<pen-colon>" PEN_SUFFIX="" PEN_LM_COMMAND="alephalpha-complete.sh" PEN_MODEL="luminous-extended" PEN_WHITESPACE_SUPPORT="y" PEN_ENGINE="AlephAlpha Luminous" PEN_API_ENDPOINT="https://api.aleph-alpha.com" PEN_PAYLOADS="{\"image\":\"/tmp/td_thingMSxI16/new.jpg\"}" PEN_QUERY="" PEN_COUNTERQUERY="" PEN_LOGPROBS="10" PEN_APPROXIMATE_PROMPT_LENGTH=16 PEN_ENGINE_MIN_TOKENS=0 PEN_ENGINE_MAX_TOKENS=2048 PEN_MIN_TOKENS=0 PEN_MAX_TOKENS=166 PEN_REPETITION_PENALTY="" PEN_FREQUENCY_PENALTY="0.0" PEN_PRESENCE_PENALTY="0.0" PEN_LENGTH_PENALTY="" PEN_MIN_GENERATED_TOKENS=3 PEN_MAX_GENERATED_TOKENS=150 PEN_TEMPERATURE="0.0" PEN_MODE="" PEN_STOP_SEQUENCE="Q<pen-colon>" PEN_STOP_SEQUENCES="[<pen-doublequote>Q<pen-colon><pen-doublequote>,<pen-doublequote>Q<pen-colon><pen-doublequote>]" PEN_VARS="{<pen-doublequote>file path or url<pen-doublequote><pen-colon><pen-doublequote>/tmp/td_thingMSxI16/new.jpg<pen-backslash>n<pen-doublequote>,<pen-doublequote>file-path-or-url<pen-doublequote><pen-colon><pen-doublequote>/tmp/td_thingMSxI16/new.jpg<pen-backslash>n<pen-doublequote>,<pen-doublequote>func-name<pen-doublequote><pen-colon><pen-doublequote>pf-given-an-image-describe-it/1<pen-doublequote>}" PEN_DOCUMENTS= PEN_TOP_P="1.0" PEN_TOP_K=5 PEN_FLAGS= PEN_CACHE="y" PEN_USER_AGENT="emacs/pen" PEN_TRAILING_WHITESPACE="" PEN_N_COMPLETIONS="5" PEN_ENGINE_MIN_GENERATED_TOKENS=3 PEN_ENGINE_MAX_GENERATED_TOKENS=4096 PEN_COLLECT_FROM_POS=28 PEN_MEMORY_COLLECT_FROM_POS=28 PEN_END_POS=28 PEN_N_JOBS="2" PEN_SEARCH_THRESHOLD= PEN_INJECT_GEN_START="" shx lm-complete -d
-: 1662361995:0;echo hi | tv
 : 1662362227:0;v msudo
 : 1662362244:0;which -a soak
 : 1662363006:0;echo hi | tvipe xc -i
@@ -1162,11 +1158,9 @@ pip3.8 uninstall config\
 : 1662447693:0;raco pkg install beautiful-racket-lib
 : 1662448149:0;racket asteroids6.rkt
 : 1662448153:0;racket asteroids1.rkt
-: 1662448452:0;pind
 : 1662448484:0;pind 1 k
 : 1662448492:0;v pind
 : 1662448502:0;pend 1 k 9
-: 1662448529:0;pend
 : 1662451247:0;e pen-racket.el
 : 1662451989:0;alt -s racket
 : 1662452012:0;gc "https://github.com/russellw/racket-format"
@@ -1189,7 +1183,6 @@ pip3.8 uninstall config\
 : 1662456111:0;ln -sf container-script browser
 : 1662456151:0;v lg
 : 1662456183:0;unbuffer firefox google.com &>/dev/null &
-: 1662456228:0;v pen-handle-url
 : 1662456283:0;browser "https://app.tabnine.com/auth/sign-up?tabnineUrl=http%3A%2F%2F127.0.0.1%3A5555%2Fsec-sbghrjclhqkctcwbxfhb&sync=false&hubSiteUrl=https%3A%2F%2Fhub.tabnine.com%2Fv4%2F%3FtabnineUrl%3Dhttp%3A%2F%2F127.0.0.1%3A5555%2Fsec-sbghrjclhqkctcwbxfhb&queryData=eyJjbGllbnRJZCI6IjE2NjI0NTU1MzczODg4NzgxMDIiLCJpZGVOYW1lIjoiZW1hY3MiLCJleHBlcmltZW50IjoiZGVmYXVsdCIsImV4cGVyaW1lbnRWYXJpYXRpb24iOiJHQSIsInNvdXJjZSI6ImlkZSIsImluc3RhbGxVdWlkIjoiMTEwMjQ4MDUwNjMzNDMxNzY2MjEiLCJiaW5hcnlWZXJzaW9uIjoiNC40LjEzOSIsInRpbWUiOiIyMDIyLTA5LTA2IDA5OjEyOjE3LjM4ODg3ODEwMiBVVEMiLCJjb250ZXh0TW9zdFBvcHVsYXJMYW5ndWFnZVRvZGF5IjoiZWwiLCJjb250ZXh0TW9zdFBvcHVsYXJMYW5ndWFnZUxhc3QzMERheXMiOiJlbCIsImNvbnRleHRMYXN0VG91Y2hlZExhbmd1YWdlIjoiZWwifQ%3D%3D&clientName=emacs&timeStamp=1662455537388878102&action=welcome"
 : 1662457287:0;vs pen-mime
 : 1662457292:0;v pen-alephalpha.py
@@ -1274,7 +1267,6 @@ pip3.8 uninstall config\
 : 1662701804:0;cd /root/.emacs.d/.cache/lsp/rust/rust-analyzer
 : 1662702027:0;v /root/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer
 : 1662711501:0;e pen-nlsh.el
-: 1662711580:0;v comint
 : 1662711651:0;in-tm nlsh aws
 : 1662711682:0;x -sh "inside-tmux && v" -i
 : 1662711709:0;inside-tmux-p
@@ -2048,7 +2040,6 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1689820012:0;bsb
 : 1689830054:0;nash
 : 1689830055:0;nasb
-: 1689830330:0;which -a kjv
 : 1689830357:0;nasb Romans 10:15
 : 1689830771:0;kjv Romans 10:15
 : 1689830840:0;sb Romans 10:15
@@ -2147,7 +2138,6 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1689992362:0;v draw
 : 1689992666:0;ls -ldt bundle
 : 1689992689:0;cp -a ~/.emacs.d/host/pen.el/config/vim-bundles/AnsiEsc ./
-: 1689992738:0;cd AnsiEsc
 : 1689992742:0;mcd autoload
 : 1689992745:0;mv ../AnsiEsc.vim ./
 : 1689992762:0;cp -a bundle/AnsiEsc/autoload/AnsiEsc.vim autoload
@@ -2335,14 +2325,11 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1690792026:0;echo I Samuel 1:14
 : 1690792029:0;echo I Samuel 1:14 | scrape-bible-references
 : 1690792068:0;echo Ps 1:14 | scrape-bible-references
-: 1690792077:0;xc
 : 1690792599:0;echo Ps 1:14 | scrape-bible-references | xc
 : 1690793528:0;o Ps 5
 : 1690793580:0;o $DUMP/tmp/scratchVqwexa.txt
 : 1690793645:0;o Psalm 5
-: 1690793754:0;v ttp
 : 1690793775:0;v sed ':a;N;$!ba;s/\n\n/\n/g'
-: 1690793786:0;v pen-pretty-paragraph
 : 1690793887:0;echo Ps 3 | o
 : 1690793895:0;echo 1 Cor | o
 : 1690793898:0;o Ex 3:13
@@ -2536,7 +2523,6 @@ git clone "http://github.com/nadrad/h-m-m"\
 : 1691205178:0;get-bible-book-chapter hello
 : 1691205262:0;gsh-git-hydra
 : 1691205555:0;ead quicklisp
-: 1691205588:0;v pen-xs
 : 1691205772:0;quicklisp-install str
 : 1691205780:0;v quicklisp-install
 : 1691205783:0;v xs
@@ -2995,7 +2981,6 @@ sed '/^$/d'
 : 1698360548:0;sh -c "spinner-start -b" & disown
 : 1698360672:0;tmux run -b "spinner-start -b"
 : 1698360680:0;tmux run -t pen: -b "spinner-start -b"
-: 1698360769:0;hsqf pen-emacsclient
 : 1698360838:0;spinner -b Starting emacs
 : 1698360850:0;spinner-start -b Starting emacs
 : 1698361051:0;penw 4
@@ -3306,8 +3291,6 @@ fi\
 : 1698634634:0;cat /root/.pen/tmp/pen-_68b329da9893e34099c7d8ad5cb9c940--preview-the-complete-sayings-of-jesus-tom-pdf-80-25-.txt | less -rS
 : 1698634843:0;preview Cheshire-cattree.jpg 80 25
 : 1698634934:0;preview $PENCONF/documents/Cheshire-cattree.jpg 80 25
-: 1698635703:0;pen-cterm-ssh
-: 1698635725:0;cterm bash
 : 1698635732:0;hsqf pen-cterm-ssh
 : 1698635742:0;cd /root/.pen/documents/notes/ws/peniel; "cterm-ssh" "-ssh-to-host" "y" "-cwd" "/root/notes" "-cmd" "tmwr -nopr \"bash\"" "-user" "shane"
 : 1698635748:0;"pen-cterm-ssh" "-ssh-to-host" "y" "-cwd" "/root/notes" "-cmd" "tmwr -nopr \"bash\"" "-user" "shane"
@@ -3339,7 +3322,6 @@ fi\
 : 1698663558:0;hex2dec 7f7
 : 1698663560:0;hex2dec 777
 : 1698666552:0;tp find-here-path "*docker-compos*"
-: 1698666554:0;v docker-compose.yml
 : 1698668725:0;v window-tree.c
 : 1698669588:0;z 1984.pdf
 : 1698720714:0;v pen-prompt-description.el
@@ -3476,7 +3458,6 @@ fi\
 : 1698807069:0;v vedg
 : 1698807072:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | shx vedg dd
 : 1698807126:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | ved -gm dd
-: 1698807161:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | v
 : 1698807165:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | ved -gm dd | v
 : 1698807206:0;gs lastvimmacro
 : 1698807229:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | ved -m dd | v
@@ -3489,7 +3470,6 @@ fi\
 : 1698807840:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | vedm "/^\\<C-i>\\<CR>VG\!terminfo-expand"
 : 1698807960:0;v filter
 : 1698811294:0;tp find-here-path "*terminfo*"
-: 1698811297:0;v terminfo-expand
 : 1698811669:0;ead terminfo-expand
 : 1698811718:0;tp find-here-path "*terminnfo*"
 : 1698811720:0;tp find-here-path "*pretty*"
@@ -3510,7 +3490,6 @@ fi\
 : 1698827578:0;hsqf vedm
 : 1698831467:0;v pen-scrape
 : 1698832980:0;v ic
-: 1698833191:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | vedm "/^\\<C-i>\\<CR>VG\!terminfo-expand\\<CR>"
 : 1698833359:0;Isaiah 40 | v
 : 1698834796:0;git commit -m "01.11.23"
 : 1698882294:0;pip install ocr2text
@@ -3612,7 +3591,6 @@ poetry install\
 : 1699234145:0;v /root/dump/tmp/scratchuWJtwn.txt
 : 1699234467:0;v find-text-in-terminals
 : 1699235193:0;pin remember.txt
-: 1699235331:0;hsqf ved
 : 1699235864:0;ead PEN_TMUX=
 : 1699235881:0;v $PENCONF/tmp/tf_tempTdVcH3Q.sh
 : 1699237094:0;v testbash.sh
@@ -4027,7 +4005,6 @@ poetry install\
 : 1699601196:0;which -a fd
 : 1699602257:0;which -a sd
 : 1699602963:0;Revelation 21
-: 1699604934:0;tp find-here-path "*log*"
 : 1699604940:0;v tmux-toggle-log
 : 1699605997:0;in-pen-tm vim
 : 1699606588:0;cat /root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt | sed
@@ -4248,7 +4225,6 @@ cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HO
 : 1699670238:0;nvc vim
 : 1699670360:0;nvc v
 : 1699670400:0;shx slmenu
-: 1699670467:0;v cmd-nice-posix
 : 1699670519:0;. $PENELD/scripts/utils.sh
 : 1699670564:0;echo hi | pen-fzf
 : 1699670580:0;nonvc slmenu
@@ -4493,7 +4469,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699707823:0;$PENELD/scripts/alarmbell $EMACSD_BUILTIN/elpa/alarm-clock-20191204.716/alarm.mp3
 : 1699707829:0;v $PENELD/scripts/alarmbell
 : 1699708012:0;v update-21.09.23-firstcapture.txt
-: 1699708017:0;v puz-emacs.data
 : 1699708409:0;alarmclock -l
 : 1699708707:0;alarmclock
 : 1699732327:0;v pen-after-init.el
@@ -4566,7 +4541,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1699823906:0;echo agenda | toilet
 : 1699823981:0;ead fzf -P
 : 1699823983:0;ead fzf -p
-: 1699824128:0;ls | fzf
 : 1699824136:0;ls | fzf -pscript "echo agenda | toilet -f {}"
 : 1699824138:0;ls | shx fzf -pscript "echo agenda | toilet -f {}"
 : 1699824143:0;ls | shx pen-fzf -pscript "echo agenda | toilet -f {}"
@@ -4818,7 +4792,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700007917:0;pen-helm-fzf.sh
 : 1700007922:0;pen-helm-fzf-d2.sh
 : 1700007932:0;fzf
-: 1700007938:0;fzf | cat
 : 1700008166:0;grep -HnR pen-rc-test | v
 : 1700008170:0;v pen-rc.el
 : 1700008297:0;grep -HnR defun pen-cmd | v
@@ -5060,7 +5033,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700256466:0;echo -n kdasfljd saljfkdsalfjadls dksla | cut -c1-15 | chomp | wc -c
 : 1700256511:0;echo -n fa lksdjflk ajslf kjdlasjflk sda | wc -m
 : 1700256513:0;man wc
-: 1700256661:0;v hash-trim
 : 1700256719:0;v pen-sha
 : 1700257475:0;cd content
 : 1700278246:0;git commit -m "18.11.23"
@@ -5078,7 +5050,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700444498:0;v ./noci
 : 1700445085:0;tp find-here-path "*indent*"
 : 1700445118:0;echo hi | pen-indent 1
-: 1700445163:0;v pen-str
 : 1700445182:0;echo -n h | pen-str rs 1
 : 1700445184:0;echo -n h | pen-str rs
 : 1700445206:0;echo -n h | shx pen-str rs 5
@@ -5186,7 +5157,6 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 : 1700512885:0;grep -Hno defsetface *
 : 1700513431:0;which -a tv
 : 1700513442:0;which which
-: 1700513526:0;which -a which
 : 1700513735:0;which -a dlfskjd
 : 1700513738:0;which vim
 : 1700514032:0;which -a echo
@@ -5401,7 +5371,6 @@ fi
 : 1700711416:0;man builtins
 : 1700712143:0;ead vimcat
 : 1700712820:0;penw 1 nw --debug-init
-: 1700712914:0;pend 1
 : 1700713050:0;nem ead helm-org-ql
 : 1700713072:0;penw 1 sd -d
 : 1700713703:0;which -a tnw
@@ -5412,7 +5381,6 @@ fi
 : 1700715586:0;v cmd
 : 1700715591:0;cmd-nice sdlajf lkadsjf kldsajk "fld  dalks"
 : 1700715760:0;tpop htop
-: 1700715770:0;v htop
 : 1700715778:0;tpop nvc -2 htop
 : 1700715829:0;v procan
 : 1700715868:0;ln -sf pen-e-ic proced
@@ -5427,7 +5395,6 @@ fi
 : 1700731925:0;I John 2:4 | v
 : 1700731960:0;1 John 2 | v
 : 1700732297:0;v semantic-bible-search
-: 1700732307:0;v rlwrap
 : 1700732423:0;mcd hoffa
 : 1700732427:0;mv ~/.pen/bible-search /root/repos/hoffa
 : 1700732457:0;du -shc hoffa
@@ -5572,7 +5539,6 @@ find Mp3 -name '*.mp3'\
 : 1700867038:0;ln -sf host-script-force timidity-host
 : 1700867080:0;cd /volumes
 : 1700867174:0;ln -sf host-script-force i
-: 1700867182:0;v i
 : 1700867191:0;pen-i gw
 : 1700867214:0;pen-i wifi
 : 1700867218:0;i wifi
@@ -5841,7 +5807,6 @@ find Mp3 -name '*.mp3'\
 : 1700910022:0;cat /root/.emacs.d/host/pen.el/config/nvimrc | tail -n 5 | vimcat
 : 1700910236:0;pen-bash
 : 1700910756:0;info bash
-: 1700910848:0;v pen-ds
 : 1700910857:0;v pen-bash
 : 1700910999:0;bash --help
 : 1700911040:0;v testbashshebang
@@ -5889,8 +5854,6 @@ find Mp3 -name '*.mp3'\
 : 1700963729:0;mv monadic-parser ../bikeshed
 : 1700963760:0;m haskell-demo ../bikeshed
 : 1700963771:0;rm -r haskell-demo
-: 1700966709:0;vimhelp
-: 1700966783:0;which -a vh
 : 1700966787:0;tp find-here-path "*vimhelp*"
 : 1700966796:0;ln -sf vimhelp vh
 : 1700966816:0;vh / windowl
@@ -5953,13 +5916,11 @@ git config --system --add safe.directory '*' # For all users and all repositorie
 : 1701041895:0;mkw dbus-send
 : 1701041902:0;mcd dbus
 : 1701041905:0;mv ../dbus-* ./
-: 1701041927:0;apt search dbus-launch
 : 1701041959:0;tp find-here-path "*command-not*"
 : 1701041962:0;v plugins/command-not-found/command-not-found.plugin.zsh
 : 1701041976:0;apt search command-not-found
 : 1701041980:0;agi command-not-foundl
 : 1701042027:0;agi dbus-x11
-: 1701042039:0;dbus-launch
 : 1701042046:0;dbus-monitor
 : 1701042053:0;mkw dbus-launch
 : 1701042058:0;mv dbus-launch dbus
@@ -5977,7 +5938,6 @@ git config --system --add safe.directory '*' # For all users and all repositorie
 : 1701042250:0;agi uuid-runtime
 : 1701042267:0;apt search biblesync
 : 1701042278:0;agi libbiblesync-dev libbiblesync1.1
-: 1701042302:0;rm -rf build
 : 1701042409:0;apt search help
 : 1701042473:0;apt search chmcmd
 : 1701042525:0;apt search fp-utils
@@ -6735,13 +6695,11 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702274875:0;ead -z other messages
 : 1702291288:0;Luke 10:22 | v
 : 1702293378:0;feh /volumes/home/shane/dump/home/shane/notes/ws/screenshots/file_1702293343_screen_bKqbHO_rand-29357_pid-488166.png
-: 1702346590:0;sp
 : 1702347567:0;ead -z fuzzy
 : 1702348608:0;ead ",@"
 : 1702348812:0;v testing
 : 1702349910:0;mcd saints
 : 1702349961:0;touch index.org
-: 1702349993:0;rm .\!mnm
 : 1702350166:0;v ~/.emacs.d/.org-id-locations
 : 1702350282:0;e ia crontab-mode
 : 1702350285:0;e ia sc
@@ -7014,7 +6972,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702601564:0;v package.json
 : 1702602628:0;nem Hebrews 6
 : 1702602851:0;nem Hebrews 10
-: 1702604206:0;ead NOEMACS
 : 1702604212:0;ead BABEL
 : 1702606452:0;v 1
 : 1702606456:0;hsqf 1
@@ -7115,7 +7072,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702760179:0;v iman
 : 1702760200:0;man sha
 : 1702760215:0;sha -f /root/.emacs.d/host/pen.el/scripts/store-file-by-hash
-: 1702760754:0;tp find-here-path "*hash*"
 : 1702761407:0;cd ~/.pen/file-store-by-hash
 : 1702761445:0;v copy
 : 1702761566:0;v pdf2txt
@@ -7127,10 +7083,8 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702768289:0;hsqf bible-search-phrase
 : 1702768295:0;bible-search-phrase joy
 : 1702781711:0;bible-search-phrase light
-: 1702788404:0;Ephesians 2
 : 1702788845:0;tp find-here-path "*version*"
 : 1702788848:0;tp find-here-path "*compare*"
-: 1702793158:0;hmm
 : 1702794383:0;git commit -m "17.12.23"
 : 1702810946:0;git commit -m ""
 : 1702811175:0;e ia annotation
@@ -7206,7 +7160,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1702961405:0;v urlarchive
 : 1702961658:0;ls | lolcat | cat
 : 1702961774:0;o Music\ Data\ Base.xls
-: 1702961864:0;visidata
 : 1702961875:0;x -sh visidata -e File -i
 : 1702961905:0;x -sh visidata -s ' ' -i
 : 1702961921:0;x -sh visidata -s ' open-plugins' -c m -i
@@ -7252,7 +7205,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703035358:0;v pen-xt
 : 1703036080:0;ls -ldt ~/.Xresources
 : 1703036087:0;tp find-here-path "*Xres*"
-: 1703036089:0;v Xresources
 : 1703037603:0;cd /root/.pen/document-highlights/genesis-1-fm-
 : 1703037634:0;rm *
 : 1703037689:0;cd /root/.pen/document-highlights/
@@ -7375,7 +7327,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703121415:0;pen-e-ic -sn term
 : 1703121965:0;"emacsclient" "-a" "" "-t" "-s" "/root/.emacs.d/host_BUILTIN/server/DEFAULT" "-e" "(delete-frame)"
 : 1703121997:0;"emacsclient" "-a" "" "-t" "-s" "$EMACSD_BUILTIN/server/DEFAULT" "-e" "(delete-frame)"
-: 1703122012:0;hsqf emacsclient
 : 1703122032:0;echo "$EMACSD_BUILTIN"
 : 1703122039:0;"emacsclient" "-a" "" "-t" "-s" "/root/.emacs.d/server/DEFAULT" "-e" "(delete-frame)"
 : 1703122239:0;tm-unbuffeer "pen-emacsclient" "-a" "" "-t" "-s" "DEFAULT" "-e" "(delete-frame)"
@@ -7425,7 +7376,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703145390:0;git checkout HEAD\^ -- `find ws -name '*.org'`
 : 1703145394:0;git checkout HEAD\^ -- *.org
 : 1703146336:0;pen-e-ic -sn term vim
-: 1703146657:0;v autofiles.txt
 : 1703146698:0;pen-e-ic -sn term bash
 : 1703146795:0;pen-e-ic -sn term zsh
 : 1703146812:0;export TERM=eterm-256color
@@ -7441,11 +7391,8 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703155548:0;pet
 : 1703197955:0;j lg-eww-follow-link
 : 1703198064:0;j browse-url-mail
-: 1703201440:0;prolog
-: 1703201575:0;man prolog
 : 1703201915:0;"pen-emacsclient" "-a" "" "-t" "-s" "DEFAULT"
 : 1703202929:0;xpin -2
-: 1703203263:0;swipl-playground
 : 1703203299:0;tp find-here-path "*plsen*"
 : 1703203302:0;ead -i plsense
 : 1703203313:0;acs plsense
@@ -7553,7 +7500,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703310350:0;xt -2
 : 1703310361:0;in-pen xt -2 nvt -2 in-tm -2 bash
 : 1703310384:0;tp find-here-path "*vt100*"
-: 1703310386:0;v vt100
 : 1703310401:0;tp find-here-path "*screen*"
 : 1703310403:0;tp find-here-path "*vt10*"
 : 1703310407:0;v vt100rev
@@ -7690,7 +7636,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703575854:0;cmd sfljd lskfjd sl
 : 1703575883:0;echo hi | pen-eipe | v
 : 1703575907:0;echo hi | bash -x pen-eipe | cat
-: 1703575972:0;v shx
 : 1703575990:0;v pen-eipe
 : 1703576046:0;echo hi | pen-eipe | cat
 : 1703580712:0;tail -f /var/log/cron.log
@@ -7740,7 +7685,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1703647766:0;ls -ldt earlychristianwritings.com
 : 1703668929:0;wget "https://www.cs.otago.ac.nz/staffpriv/ok/p356.pl
 : 1703668930:0;wget "https://www.cs.otago.ac.nz/staffpriv/ok/p356.pl"
-: 1703668934:0;v p356.pl
 : 1703670170:0;rm /root/.pen/document-highlights/genesis-1-fm-.sexp
 : 1703670181:0;git commit -m "27.12.23"
 : 1703720989:0;echo -n "04e8dfde96e4" | wc -c
@@ -7982,7 +7926,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704105723:0;git commit -m "01.01.24"
 : 1704137099:0;mv /root/.pen/documents/agenda/prayers.org ./
 : 1704138034:0;nvt pin
-: 1704157867:0;sp sp
 : 1704164587:0;Matthew 7:6|v
 : 1704164679:0;Matthew 6:1-18 | v
 : 1704164988:0;sdcv replete
@@ -8247,7 +8190,6 @@ ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc\
 : 1704443567:0;ead remove-starting-and-trailing-whitespace
 : 1704443577:0;which -a s
 : 1704443730:0;v ununzip
-: 1704443763:0;acs libsdl
 : 1704443849:0;sp /volumes/home/shane/var/smulliga/source/git/jhawthorn/vecx/e8910.c
 : 1704444686:0;v ATM.PAS
 : 1704444698:0;romans 3:25 | v
@@ -8402,7 +8344,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704722900:0;git commit -m "09.01.24"
 : 1704771563:0;iceweasel "https://my.fsf.org/civicrm/member-dashboard/communications"
 : 1704780963:0;j eww
-: 1704781001:0;v eww
 : 1704784602:0;II Corinthians 6
 : 1704795029:0;e ia mini-header-line minibuffer-header path-headerline-mode
 : 1704839993:0;tp find-here-path "*words.txt"
@@ -8508,7 +8449,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1704930652:0;weekfile
 : 1704931204:0;Genesis 30
 : 1704931303:0;Genesis 50
-: 1704931925:0;v pen-define-prompt-function.el
 : 1704932293:0;pen-e nw --debug-init
 : 1704932385:0;pen sd -d
 : 1704932428:0;cd discipleship-group/
@@ -8590,7 +8530,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705461704:0;v praise
 : 1705461714:0;v woman
 : 1705462392:0;tp find-here-path "*aat*"
-: 1705462485:0;ifconfig
 : 1705462513:0;ifconfig | patm -r "[0-9.]+" slugify
 : 1705463107:0;man m4
 : 1705470439:0;John 3 | v
@@ -8654,7 +8593,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705833697:0;git commit -m "21.01.24"
 : 1705835821:0;j bible-mode-get-book-and-chapter
 : 1705836922:0;cat /root/.pen/documents/notes/ws/peniel/Bible-outlines.txt | scrape-bible-references
-: 1705910411:0;man emacsclient
 : 1705910931:0;j str
 : 1705910967:0;bible-get-chapter-title Leviticus 10
 : 1705910976:0;hsqf bible-get-chapter-title
@@ -8735,7 +8673,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1705994288:0;xc -P transient.el
 : 1705994374:0;git checkout 522b625cf39cb1a9322719dcb039f25bc49ab35b
 : 1705994685:0;rm -rf transient
-: 1705994895:0;j magit-toggle-margin
 : 1705998019:0;j magit-log-format-author-margin
 : 1705999011:0;j get-path
 : 1706008501:0;gui
@@ -8912,7 +8849,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706087470:0;echo Ge | upd canonicalise-bible-book-title
 : 1706088155:0;echo shane | sttr
 : 1706088256:0;v filter-things.sh
-: 1706088361:0;cd utils
 : 1706088365:0;ls -lt *
 : 1706088473:0;ls -ldt bval
 : 1706088478:0;which -a eval
@@ -8993,7 +8929,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706173360:0;tp find-here-path "**"
 : 1706173369:0;cp -a mods.d/esvlite.conf ~/.sword/mods.d
 : 1706208962:0;v pen-glip
-: 1706209186:0;cd ~/.vim
 : 1706209194:0;mcd colors
 : 1706209197:0;mv ../inkpot.vim ./
 : 1706209222:0;v ~/.vim/inkpot.vim
@@ -9054,7 +8989,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706246233:0;which -a q
 : 1706246244:0;whic -a q
 : 1706246246:0;which q
-: 1706246251:0;v cmd-nice
 : 1706246261:0;tp find-here-path "*q*"
 : 1706246276:0;ls filters/transformers/*
 : 1706246281:0;mv filters/transformers/* utils
@@ -9128,7 +9062,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706357614:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-5.org
 : 1706360334:0;git bisect --bad
 : 1706364510:0;sp sd -d
-: 1706399847:0;Matthew 12:33-37 | v
 : 1706400069:0;Genesis 15:6 | v
 : 1706400074:0;James 2:23 | v
 : 1706400414:0;Galatians 1:10 | v
@@ -9251,7 +9184,6 @@ echo â€ƒ¸digraph { Foo -> Bar }â€ƒ¹ | dot -Tpng | pngtopnm | pnmcrop | pgmtopbm
 : 1706909128:0;Romans 14:23 | v
 : 1706909913:0;z faith-and-judgement.html
 : 1706911215:0;rm faith-and-judgement.pdf
-: 1706911674:0;Acts 13
 : 1706919973:0;Matthew 10:8 | v
 : 1706920808:0;Matthew 5:20 | v
 : 1706926802:0;Genesis 12:1-3 | v
@@ -9357,7 +9289,6 @@ cd "$(gc "https://github.com/cmang/durdraw")"\
 : 1707453272:0;cp durdraw.ini ~/.durdraw/
 : 1707453275:0;cp themes/*.dtheme.ini ~/.durdraw/themes/
 : 1707453292:0;v ~/.durdraw/durdraw.ini
-: 1707453349:0;John 6
 : 1707455300:0;cargo update -p clap@4.5.0 --precise ver
 : 1707455314:0;cargo install --git https://github.com/asciinema/agg
 : 1707455464:0;which -a agg
@@ -9487,7 +9418,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708043354:0;sp "/volumes/home/shane/notes/d-group-replicate/Replicate - F260 Reading Plan.txt"
 : 1708043542:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-7.org
 : 1708077897:0;1 Corinthians 11
-: 1708134344:0;cterm
 : 1708134361:0;cterm -ct-nem bash
 : 1708134387:0;xt -xt bash
 : 1708134500:0;xt -xt cterm -ct-nem guild-of-thieves -vmode sixel
@@ -9499,8 +9429,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708135021:0;ls -ldt noemacs
 : 1708135037:0;ls -ldt noci
 : 1708135039:0;v noci
-: 1708135049:0;v withopts
-: 1708135062:0;v rl
 : 1708136450:0;guild-of-theives-sixel
 : 1708136586:0;ssh -p 8080 -l magnetic magneticscrolls.net
 : 1708136669:0;agi sshpass
@@ -9532,9 +9460,7 @@ git clone "https://github.com/sidju/hired"\
 : 1708139223:0;guild-of-thieves-
 : 1708139316:0;v guild-of-theives-sixel
 : 1708139338:0;cterm -ct-nem norl bash
-: 1708139380:0;v cterm
 : 1708139464:0;in-pen cterm -ct-nem -ntm norl guild-of-thieves -vmode sixel
-: 1708139531:0;man rlwrap
 : 1708139537:0;in-pen cterm -ct-nem -ntm norl rlwrap guild-of-thieves -vmode sixel
 : 1708139550:0;in-pen cterm -ct-nem -ntm norl rlwrap -A guild-of-thieves -vmode sixel
 : 1708141928:0;v pipexec
@@ -9566,7 +9492,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708155908:0;tpop v listen.org
 : 1708155911:0;tpop v directories.org
 : 1708155920:0;which -a tpop
-: 1708155987:0;j tpop
 : 1708156027:0;which -a me
 : 1708156029:0;mev
 : 1708156031:0;which -a mev
@@ -9808,7 +9733,6 @@ git clone "https://github.com/sidju/hired"\
 : 1708592403:0;braille-show-image ~/.pen/documents/rays-maze-techtrons.png
 : 1708594687:0;which -a real-docker
 : 1708594698:0;tp find-here-symlink "*docker*"
-: 1708594742:0;cterm -ct-nem -ntm norl bash
 : 1708629704:0;nem Psalm 40:3
 : 1708633049:0;j ph-get-path-string
 : 1708635381:0;Ps 53:1-3| v
@@ -10026,7 +9950,6 @@ git clone "https://github.com/sidju/hired"\
 : 1709293138:0;Galatians 3:6-9 | v
 : 1709331007:0;onelined Galatians 3:6-9 | v
 : 1709331049:0;onelined Galatians 3:1-5 | v
-: 1709333200:0;I Peter 4:8
 : 1709333226:0;Prov 10:12 | v
 : 1709333258:0;decorated onelined Prov 10:12 | v
 : 1709333279:0;decorated onelined Col 3:14 | v
@@ -10163,7 +10086,6 @@ git clone "https://github.com/sidju/hired"\
 : 1709522040:0;I Peter 1:23-25
 : 1709522086:0;1 Corinthians 15:51-58
 : 1709528678:0;Psalms 34:22 | v
-: 1709528710:0;Psalms 34:22
 : 1709529654:0;v eternity.org
 : 1709536867:0;Matthew 21
 : 1709537490:0;John 15:16 | v
@@ -10306,7 +10228,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1709696930:0;cat faith-and-judgement.md | sed 's~\(<span class~"underline">\)\([^<]\+\)\(</span>\)~<ins>\2</ins>~g' | v
 : 1709696935:0;cat faith-and-judgement.md | sed 's~\(<span class="underline">\)\([^<]\+\)\(</span>\)~<ins>\2</ins>~g' | v
 : 1709696950:0;v fix-github-markdown
-: 1709697431:0;I Corinthians 15:1-4
 : 1709697613:0;Rom 6:3-4
 : 1709697643:0;Matt 20:22
 : 1709697662:0;1Cor 15:32
@@ -10362,7 +10283,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1709806751:0;carbonyl youtube.com
 : 1709806765:0;carbonyl https://youtube.com
 : 1709806837:0;carbonyl https://github.com/semiosis/thoughts-on-theology/blob/master/README.pdf
-: 1709848468:0;James 1:21-22
 : 1709850452:0;Rom 1:17
 : 1709850504:0;Titus 3:7
 : 1709850630:0;Matthew 12:37
@@ -10399,7 +10319,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1709928520:0;Romans 11:18-23
 : 1709930528:0;chrome faith-and-judgement.html
 : 1709930872:0;/usr/bin/firefox "https://semiosis.github.io/"
-: 1709942646:0;Acts 4
 : 1709944242:0;Isaiah 40:9
 : 1709944490:0;Matthew 8:20
 : 1709944499:0;Luke 9:58
@@ -10420,7 +10339,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1709958761:0;Exodus 19
 : 1709967022:0;acs sdl2
 : 1709967028:0;sdl2_config
-: 1709967034:0;agi libsdl2-dev
 : 1709967078:0;make ../Makefile
 : 1709967164:0;acs sdl_image
 : 1709967167:0;acs sdl-image
@@ -10443,7 +10361,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710007967:0;cp -a garden.org garden.plans.org
 : 1710007970:0;rm garden-plans.org
 : 1710008185:0;cp -a greenhouse.org greenhouse.plans.org
-: 1710008638:0;Jonah 3:10
 : 1710011046:0;tp find-here-symlink "***"
 : 1710011064:0;ln -sf README.md faith-and-judgement.md
 : 1710011068:0;rm README.md
@@ -10470,7 +10387,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710042896:0;Mark 9:40 | v
 : 1710042913:0;decorated onelined Mark 9:40
 : 1710042989:0;decorated onelined Luke 11:23
-: 1710043118:0;Luke 11:23
 : 1710043133:0;Matt 12:30 | v
 : 1710043137:0;Matt 12:30
 : 1710094079:0;cd ~/notes
@@ -10493,7 +10409,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710104034:0;Revelation of John 7:17
 : 1710104041:0;Revelation of John 7:9
 : 1710104161:0;Revelation of John 22:3
-: 1710107467:0;I John 3:24
 : 1710108169:0;Matthew 26
 : 1710110251:0;Eph 3:20-21
 : 1710110267:0;1Chr 29:11
@@ -10522,7 +10437,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710214653:0;gedit faith-and-judgement.txt
 : 1710216028:0;John 10:26-28
 : 1710216032:0;John 10:26-29
-: 1710218673:0;Mark 10:18
 : 1710219336:0;I Timothy 1:16
 : 1710229473:0;Romans 4:22-25
 : 1710229524:0;Romans 4:22-23
@@ -10564,14 +10478,12 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710452394:0;which today
 : 1710452415:0;v today
 : 1710452456:0;today urlarchive "https://star.net.nz/the-word-for-today"
-: 1710453289:0;John 10:27
 : 1710453396:0;Mark 16:16
 : 1710453553:0;fr
 : 1710453555:0;fg
 : 1710471248:0;df
 : 1710471900:0;v Compilation.md
 : 1710471927:0;cargo install rust-script --version "0.7.0"
-: 1710472689:0;Matthew 5:21-22
 : 1710472814:0;Acts 10:34
 : 1710472837:0;Acts 10:34-36
 : 1710472885:0;1 John 2:27
@@ -10628,7 +10540,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710535944:0;Proverbs 15:26
 : 1710535960:0;Proverbs 29:27
 : 1710535969:0;Proverbs 3:32
-: 1710535984:0;Proverbs 6:16-19
 : 1710538185:0;I Kingsâ€¬ â€­15â€¬:â€­5
 : 1710538195:0;I Kings 15:5
 : 1710538232:0;I Peterâ€¬ â€­4â€¬:â€­1â€¬-â€­2â€¬
@@ -10654,7 +10565,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710549647:0;Luke 12:2-3
 : 1710549716:0;Daniel 2:28
 : 1710549928:0;Acts 9:15
-: 1710551897:0;Romans 7:14
 : 1710553312:0;I Corinthians 4:6-16
 : 1710555918:0;Hebrews 10
 : 1710557762:0;Galatians 1
@@ -10662,7 +10572,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710571723:0;acs ncurses-term
 : 1710579141:0;v guild-of-thieves
 : 1710625062:0;v prayers.org
-: 1710626357:0;I Corinthians 15:10
 : 1710627184:0;1 Peter 2:21
 : 1710627444:0;Hebrews 2:10-11
 : 1710627479:0;Matthew 26:39-42
@@ -10682,7 +10591,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710642015:0;ead -z imenu-generic-expression
 : 1710642551:0;html2org "https://www.ccel.org/ccel/schaff/anf01.ix.vi.xxvii.html"
 : 1710642671:0;elinks-dump "https://www.ccel.org/ccel/schaff/anf01.ix.vi.xxvii.html"
-: 1710643851:0;eww "https://semiosis.github.io/"
 : 1710645012:0;upd elinks-dump "https://semiosis.github.io/"
 : 1710645544:0;John 15:6 | v
 : 1710645548:0;John 17:6 | v
@@ -10717,7 +10625,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710708133:0;Daniel 11:22 | v
 : 1710708585:0;John 12:25
 : 1710709272:0;Mark 12:42-44
-: 1710709439:0;2 Corinthians 1:20
 : 1710711461:0;1 Timothy 5:8
 : 1710712269:0;John 6:70
 : 1710712693:0;Psalm 1:4-5
@@ -10726,7 +10633,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710717822:0;Ezekiel 18:20-21
 : 1710720682:0;Matthew 23
 : 1710720799:0;Matthew 23:11-33
-: 1710726800:0;v spin
 : 1710726841:0;spin -m yo echo hi
 : 1710726844:0;spin -m yo sleep 5
 : 1710726980:0;I Corinthians 6:17-20
@@ -10761,7 +10667,6 @@ git clone "https://github.com/bcpierce00/unison"\
 : 1710926381:0;mpwd
 : 1710927692:0;pnq
 : 1710972757:0;"runhaskell" "todo.hs"
-: 1710973514:0;1 John 2:23
 : 1710973554:0;1 John 2:22â€ƒ³23
 : 1710973562:0;I John 2:22-23
 : 1710985406:0;John 4:14
@@ -10860,10 +10765,8 @@ print(data)' | uplot line
 : 1711015156:0;mv ~/.pen/corrections ./
 : 1711018274:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-12.org
 : 1711018324:0;cd discipleship-group
-: 1711051878:0;pen-e -D pen-emacsd-1 sd -d
 : 1711053370:0;John 4
 : 1711056226:0;rm -rf Wilfred
-: 1711066071:0;Matt 16:18-19
 : 1711066091:0;John 21
 : 1711081860:0;I John 2:9 | v
 : 1711081865:0;I John 1:9 | v
@@ -10966,8 +10869,6 @@ e ia inheritenv
 : 1711178763:0;cat /root/.pen/documents/notes/perspective.org | scrape-bible-references
 : 1711183750:0;cat $PENEL_DIR/src/pen-avy.el | scrape-bible-references
 : 1711184596:0;tp find-here-symlink "*luke*"
-: 1711184597:0;sh-apps
-: 1711184606:0;reset
 : 1711184609:0;tp find-here-symlink "*Luke*"
 : 1711184614:0;ln -sf bible-book Lk
 : 1711184615:0;Lk 13:22-30
@@ -11004,7 +10905,6 @@ e ia inheritenv
 : 1711316656:0;ead bible-canonicalise-ref-internal
 : 1711317025:0;"/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/pen.els" "bible-canonicalise-ref" "/root/.pen/tmp/tf_tempwNgMsjH.txt" "/root/.pen/tmp/tf_tempogPeCAn.txt"
 : 1711317064:0;0</dev/null tf txt
-: 1711317150:0;v tf
 : 1711324012:0;'canonicalise-bible-book-title-els' '/root/.pen/tmp/tf_tempe9L87Yi.txt'
 : 1711324091:0;'canonicalise-bible-book-title-els' Rev
 : 1711324112:0;ead canonicalise-bible-book-title-els
@@ -11036,7 +10936,6 @@ e ia inheritenv
 : 1711325772:0;env COLORTERM=truecolor TERM=xterm-24bit EMACS_TERM_TYPE=xterm-24bit /usr/local/bin/emacsclient -a '' -t -s DEFAULT -e '(kill-frame)'
 : 1711325811:0;pen-emacsclient -a "" -t -s DEFAULT -e "(kill-frame)"
 : 1711326126:0;mv pen-echo-server.el pen-tcp-server.el
-: 1711326184:0;v pen-tcp-server
 : 1711326208:0;pen-tcp-server
 : 1711326359:0;nc localhost 9999
 : 1711326387:0;rl nc localhost 9999
@@ -11090,7 +10989,6 @@ e ia inheritenv
 : 1711335685:0;cat /root/dump/tmp/scratchmcgqMJ.txt | shx scrape-bible-references
 : 1711358147:0;cat /root/dump/tmp/scratchdKJ9dr.txt
 : 1711358152:0;cat /root/dump/tmp/scratchdKJ9dr.txt | perl -ne "print $_ if s/.*\\b($perlbookre)\\b(\\.)\\?( \?[0-9][0-9-]*)([:.][0-9][0-9-]*)\\?.*/\\1\\2\\3\\4/;"
-: 1711359042:0;man perl
 : 1711359051:0;perl --help
 : 1711359222:0;cat /root/dump/tmp/scratchdKJ9dr.txt | perl -ne "print $_ if s/.*\\b($perlbookre).*/\\1/;"
 : 1711359235:0;cat /root/dump/tmp/scratchdKJ9dr.txt | perl -ne "print $_ if s/.*\\b($perlbookre)\\b.*/\\1/;"
@@ -11150,7 +11048,6 @@ e ia inheritenv
 : 1711607560:0;Zechariah 12:10
 : 1711661045:0;Psalm 16:11 | v
 : 1711669033:0;Jeremiah 3:20 | v
-: 1711670135:0;cd /root
 : 1711670143:0;ln -sf ~/.pen/downloads ~/downloads
 : 1711670160:0;wget "https://bereanbible.com/bsb.epub"
 : 1711670167:0;pin bsb.epub
@@ -11162,9 +11059,7 @@ e ia inheritenv
 : 1711679275:0;cd ~/repos/
 : 1711679287:0;acsh mtools
 : 1711679354:0;mcd mullikine/haskell-learning
-: 1711696472:0;Matthew 11:29
 : 1711696495:0;John 10:26-27
-: 1711696537:0;John 4:10
 : 1711698707:0;1st Corinthians 15 | v
 : 1711698926:0;1st Corinthians 14 | v
 : 1711698940:0;1st Corinthians 16 | v
@@ -11191,18 +11086,15 @@ e ia inheritenv
 : 1711788595:0;John 5:26-29
 : 1711788659:0;Revelation of John 3:8
 : 1711788708:0;John 14:24
-: 1711788741:0;John 12:48
 : 1711788809:0;Luke 6:47
 : 1711789156:0;/usr/bin/firefox https://boxbase.org/entries/2020/may/18/diy-io-monad/
 : 1711789315:0;"runhaskell" "haskell_examples.hs"
 : 1711845771:0;nasb Romans 1:16
 : 1711846021:0;v irish.txt
 : 1711853195:0;Isaiah 53:5 | v
-: 1711853553:0;Luke 9:23-24
 : 1711854931:0;phesians 2:8-9
 : 1711858304:0;Philippians 2
 : 1711858373:0;Philippians 2:1-13
-: 1711858968:0;Matthew 4:17
 : 1711858990:0;Lk 5:27-39
 : 1711859062:0;Ro 2:6-8
 : 1711859301:0;Romans 6:22-23 | v
@@ -11213,7 +11105,6 @@ e ia inheritenv
 : 1711859898:0;2 Cor 1:22
 : 1711859935:0;2 Cor 1:21-22
 : 1711859993:0;Titus 3:5-6
-: 1711860008:0;Titus 3:4-7
 : 1711860388:0;Titus 3
 : 1711860422:0;Titus 3:3-8
 : 1711862419:0;Luke 11:13
@@ -11339,7 +11230,6 @@ e ia inheritenv
 : 1712025944:0;John 14:14
 : 1712025980:0;j ace-link-bible-ref-tpop
 : 1712026656:0;Ephesians 6:12 KJV
-: 1712026938:0;nasb 1 Corinthians 1:30
 : 1712027154:0;pen-els list-bible-book-titles-lines
 : 1712027157:0;pen-els list-bible-book-titles-lines | v
 : 1712027360:0;oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "|"
@@ -11357,7 +11247,6 @@ e ia inheritenv
 : 1712107807:0;Proverbs 2:1-15
 : 1712133007:0;Proverbs 28:14
 : 1712136429:0;j chemtable
-: 1712137333:0;I Corinthians 4:5
 : 1712137487:0;I Corinthians 4:9-13
 : 1712138209:0;j d-group-get-weekly-reading-ot
 : 1712138358:0;rm /root/.pen/documents/notes/ws/discipleship-group/weekly-journal/2024-week-14.org
@@ -11410,7 +11299,6 @@ e ia inheritenv
 : 1712442044:0;Revelation of John 12
 : 1712451525:0;I Thess
 : 1712451738:0;1Th 5:12-14
-: 1712451844:0;I Thessalonians 5:4-5
 : 1712460245:0;v 1Th
 : 1712460736:0;1Th 5:23-24
 : 1712461870:0;Ps 95:11
@@ -11434,7 +11322,6 @@ e ia inheritenv
 : 1712535065:0;Romans 8:4-14
 : 1712537678:0;Galatians 5:16-17
 : 1712610822:0;tp find-here-path "*quo*"
-: 1712610825:0;cd ~/.pen/
 : 1712610826:0;tp find-here-path "*quot*"
 : 1712610833:0;v documents/quotes.txt
 : 1712628907:0;2 Corinthians
@@ -11515,7 +11402,6 @@ e ia inheritenv
 : 1712787832:0;Romans 11:26-32
 : 1712787919:0;Romans 11:30-32
 : 1712789497:0;John 3:16-18
-: 1712790323:0;Acts 4:12
 : 1712794569:0;tp
 : 1712794606:0;fp
 : 1712794878:0;fp /volumes/home/shane/var/smulliga/source/git/zoran-vucenovic/swan/aboutbox.pas
@@ -11538,7 +11424,6 @@ e ia inheritenv
 : 1712807605:0;deunicode /root/.emacs.d/host/pen.el/scripts/pen-c
 : 1712807620:0;deunicode "Ãƒ¦neid"
 : 1712807703:0;Acts 11:26
-: 1712810366:0;cd $MYGIT
 : 1712810387:0;echo 'e:$MYGIT_HOST/rust-lang/rust-by-example/'
 : 1712811390:0;tp find-here-path "*hello*"
 : 1712811399:0;v hello/comment.md
@@ -11580,7 +11465,6 @@ e ia inheritenv
 : 1712897990:0;tp find-here-path "*pen-emac*"
 : 1712897999:0;v pen-force-kill-emacs-workers
 : 1712898260:0;pen-e sa
-: 1712899409:0;Isaiah 61:10
 : 1712899431:0;tp find-here-path "*words*"
 : 1712899437:0;tp find-here-path "*word*"
 : 1712899440:0;v words.txt
@@ -11668,7 +11552,6 @@ e ia inheritenv
 : 1712973497:0;cd container
 : 1712973552:0;ln -sf host-script-force blueman-manager
 : 1712973588:0;ln -sf host-script-force setup-keyboard
-: 1712973611:0;i gw
 : 1712974997:0;v /root/.pen/tmp/tf_tempaC3FLC2.txt
 : 1712974998:0;cat /root/.pen/tmp/tf_tempaC3FLC2.txt | transpose-characters.sh
 : 1712975094:0;cat /root/.pen/tmp/tf_tempaC3FLC2.txt | transpose-characters.sh | transpose-characters.sh
@@ -11711,7 +11594,6 @@ THERE"
 : 1712985118:0;v cmd-2d-to-1d
 : 1712985160:0;echo hi | cmd-2d-to-1d
 : 1712985208:0;which -a cmd-2d-to-1d
-: 1712985951:0;Romans 10
 : 1712986014:0;Ro 10:12-14
 : 1712986042:0;Ro 10:13
 : 1712986407:0;cat `which vsed` | vsed 's/bo/__/g'
@@ -11899,7 +11781,6 @@ yo       \\
 : 1713055702:0;I John 3:12
 : 1713055738:0;Revelation of John 9:21
 : 1713055794:0;James 2:11
-: 1713055811:0;Romans 13:9
 : 1713055832:0;Romans 1:29
 : 1713055875:0;Romans 1:26-32
 : 1713055905:0;Romans 1:27
@@ -11929,14 +11810,12 @@ yo       \\
 : 1713086613:0;Luke 22:20
 : 1713086667:0;I Corinthians 11:24-25
 : 1713089309:0;II Timothy 2:7-10
-: 1713089330:0;Romans 16:25-27
 : 1713089419:0;Matthew 4:23
 : 1713089428:0;Matthew 9:35
 : 1713089437:0;Mark 1:1
 : 1713128554:0;1 Kings 19:12-13
 : 1713128879:0;Philippians 4:19
 : 1713131081:0;v Joshua
-: 1713131143:0;v nem
 : 1713131170:0;v nbd
 : 1713132637:0;ead -z ,eshell
 : 1713132677:0;ead -z '"eshell"'
@@ -11984,7 +11863,6 @@ yo       \\
 : 1713146887:0;Galatians 3:21-23
 : 1713146901:0;Galatians 3:21-24
 : 1713147302:0;Psalm 119:142
-: 1713147475:0;Proverbs 28:9
 : 1713147684:0;1 Peter 2:22
 : 1713149654:0;v pen-counsel-ag-cmd
 : 1713151539:0;mcd reports
@@ -12010,7 +11888,6 @@ yo       \\
 : 1713219810:0;Matt 7:23
 : 1713219816:0;Matt 23:1
 : 1713219825:0;Matt 23
-: 1713220074:0;Romans 6:19
 : 1713220113:0;Romans 7:12
 : 1713221229:0;Galatians 3:25
 : 1713235650:0;list-unicode -lc
@@ -12048,14 +11925,12 @@ yo       \\
 : 1713271895:0;2 Timothy 3:12 | v
 : 1713343365:0;John 3:16-19
 : 1713343381:0;onelined John 3:16-17 | v
-: 1713344896:0;II Timothy 1:9
 : 1713344907:0;*II Timothy 1:9* - who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, (ESV)
 : 1713345013:0;II Timothy 2:11
 : 1713345086:0;II Timothy 2:11-13
 : 1713345090:0;II Timothy 2:12-13
 : 1713345284:0;I John 5:13-20
 : 1713347664:0;Matthew 25:4
-: 1713347709:0;Mark 9:37
 : 1713348843:0;John 1:22
 : 1713348847:0;John 1:22-23
 : 1713348865:0;John 1:19
@@ -12075,7 +11950,6 @@ yo       \\
 : 1713384347:0;I John 2:10
 : 1713384363:0;Revelation of John 22:5
 : 1713384463:0;Colossians 1:12
-: 1713384475:0;I Thessalonians 5:5
 : 1713384532:0;Revelation of John 21:24
 : 1713384541:0;Revelation of John 21:23-24
 : 1713385062:0;Luke 10:29â€ƒ³37
@@ -12089,7 +11963,6 @@ yo       \\
 : 1713386248:0;I Timothy 6:3
 : 1713386421:0;II John 1:6
 : 1713386462:0;II John 1:5-6
-: 1713389096:0;Isa 53:11
 : 1713389106:0;Ps 119:6
 : 1713389203:0;Leviticus 5:17
 : 1713389267:0;Psalms 37:27
@@ -12111,8 +11984,6 @@ yo       \\
 : 1713397062:0;rm .\#README.*
 : 1713397063:0;git commit -m "18.04.24"
 : 1713398058:0;Genesis 3:17
-: 1713398345:0;I Corinthians 9:21
-: 1713398363:0;Romans 7:22-25
 : 1713399836:0;John 8:33
 : 1713399973:0;John 8:34-36
 : 1713400073:0;John 8:24
@@ -12127,7 +11998,6 @@ yo       \\
 : 1713474691:0;Psalm 140:1-2
 : 1713474819:0;2 Cor 9:8
 : 1713475063:0;1 Corinthians 11:3-16
-: 1713508020:0;II Timothy 3:1-8
 : 1713577502:0;1 Samuel 15:22-23 | v
 : 1713582548:0;cd $MYGIT/charmbracelet/glow/glow
 : 1713582553:0;cd charm/
@@ -12188,7 +12058,6 @@ Matt
 : 1713585410:0;Rev 22:17
 : 1713585419:0;Acts 13:26
 : 1713585423:0;Ps 40:9
-: 1713585451:0;I John 1:5-7
 : 1713586809:0;Philippians 2:1
 : 1713586996:0;John 6:54
 : 1713587075:0;John 6:47-58
@@ -12222,7 +12091,6 @@ Matt
 : 1713786233:0;#+BEGIN_QUOTE
 : 1713786233:0;#+END_QUOTE
 : 1713786234:0;We must be in Christ Jesus. Those who have been born-again have become obedient to Jesus Christ. We must be born-again. This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
-: 1713856898:0;Matthew 12:1-8
 : 1713857286:0;I John 1:1-3
 : 1713860068:0;\
  *Acts 5:32* - And we are witnesses to these things, and so is *the Holy Spirit*, whom _God has given to those who obey him._\
@@ -12233,7 +12101,6 @@ Matt
 : 1713880291:0;rm /root/.emacs.d/host/pen.el/docs/theology/basic-coin.problog
 : 1713880533:0;cls
 : 1713880835:0;Exodus 29:7
-: 1713880916:0;Hebrews 1:9
 : 1713880967:0;Luke 7:44-47
 : 1713880992:0;Mark 6:13
 : 1713905384:0;pwd | xc
@@ -12246,7 +12113,6 @@ Matt
 : 1713907146:0;Proverbs 7:1
 : 1713907154:0;Proverbs 7:2
 : 1713907159:0;Proverbs 7:1-3
-: 1713907179:0;John 14:21-23
 : 1713909821:0;Acts 11:23
 : 1713909841:0;Acts 11:22-23
 : 1713909885:0;Acts 11:21-24
@@ -12274,8 +12140,6 @@ Matt
 : 1713938047:0;mv non-ground-queries.problog rolling-dice-non-ground-queries.problog
 : 1713938782:0;problog /volumes/home/shane/notes/ws/problog/scratch/umbrella.problog
 : 1713938830:0;problog dt /volumes/home/shane/notes/ws/problog/scratch/umbrella.problog
-: 1713938850:0;which -a prolog
-: 1713938852:0;mkw prolog
 : 1713938861:0;which -a problog
 : 1713938863:0;mkw problog
 : 1713938963:0;/volumes/home/shane/notes/ws/problog/scratch/umbrella.problog
@@ -12339,7 +12203,6 @@ Matt
 : 1713956483:0;Acts 14:16-18
 : 1713956489:0;Acts 14:16-19
 : 1713956497:0;Acts 14:15-17
-: 1713956544:0;Acts 17:30-31
 : 1713958703:0;xc -P faith-and-judgement.pdf
 : 1713997449:0;v show-dot
 : 1713998080:0;which -a graph-easy
@@ -12364,7 +12227,6 @@ Proverbs 4:14-15
 : 1714086270:0;1 Corinthians 5:10
 : 1714086408:0;2 Timothy 3:12
 : 1714105829:0;Matthew 15:19
-: 1714118414:0;Romans 10:9-10
 : 1714167309:0;cd chemistry
 : 1714167314:0;cd reports
 : 1714167316:0;v diagrams.org
@@ -12399,11 +12261,9 @@ Proverbs 4:14-15
 : 1714180862:0;2 Chronicles 31:15
 : 1714180922:0;Matthew 1:21
 : 1714181496:0;Matthew 7:16
-: 1714182301:0;John 7:37-39
 : 1714182389:0;John 13
 : 1714182430:0;John 13:36
 : 1714182466:0;John 13:36-39
-: 1714182475:0;John 13:36-38
 : 1714182578:0;John 17:1
 : 1714182594:0;Luke 24:26
 : 1714182629:0;Eph. 3:21
@@ -12433,7 +12293,6 @@ Proverbs 4:14-15
 : 1714204913:0;Hebrews 4:15-17
 : 1714204943:0;Hebrews 4:15-16
 : 1714205136:0;Isaiah 53:6
-: 1714251008:0;I John 5:3-5
 : 1714251555:0;Genesis 43:32
 : 1714251600:0;Genesis 46:34
 : 1714251614:0;Exodus 8:22
@@ -12463,7 +12322,6 @@ Proverbs 4:14-15
 : 1714276608:0;Proverbs 8:22-23
 : 1714277277:0;Luke 17:11-19
 : 1714282397:0;Ecclesiastes 12:13-14
-: 1714282406:0;Ecclesiastes 12:13
 : 1714282532:0;Deuteronomy 10:13
 : 1714284691:0;Hebrews 4:10
 : 1714286154:0;1 Corinthians 10:23
@@ -12478,11 +12336,9 @@ Proverbs 4:14-15
 : 1714298353:0;Galatians 2:4
 : 1714298421:0;Romans 8:10
 : 1714300203:0;Matthew 13:52
-: 1714300691:0;Luke 12:48
 : 1714300760:0;Matthew 25:24-26
 : 1714332351:0;Isaiah 11:2
 : 1714337974:0;1 Cor 2:14
-: 1714337993:0;Romans 8:7
 : 1714338003:0;Ephesians 2:4
 : 1714338017:0;2 Cor 4:4
 : 1714339530:0;John 3:3
@@ -12572,7 +12428,6 @@ Proverbs 4:14-15
 : 1714806099:0;Matt 6:26
 : 1714806109:0;Matt 6:28
 : 1714806125:0;Matt 6:31-32
-: 1714806139:0;Matt 6:33
 : 1714806148:0;Matt 6:34
 : 1714806167:0;Matt 7:1-2
 : 1714806175:0;Matt 7:5
@@ -12595,7 +12450,6 @@ Proverbs 4:14-15
 : 1714806513:0;Matt 10:23
 : 1714806536:0;Matt 10:26
 : 1714806548:0;Matt 10:27
-: 1714806559:0;Matt 10:28
 : 1714806571:0;Matt 10:31
 : 1714806584:0;Matt 11:15
 : 1714806593:0;Matt 11:28
@@ -12616,14 +12470,12 @@ Proverbs 4:14-15
 : 1714806828:0;Matt 23:8
 : 1714806838:0;Matt 23:9
 : 1714806847:0;Matt 23:10
-: 1714806868:0;Matt 24:4-5
 : 1714806878:0;Matt 24:6
 : 1714806896:0;Matt 24:15-18
 : 1714806908:0;Matt 24:23
 : 1714806918:0;Matt 24:26
 : 1714806935:0;Matt 24:32-35
 : 1714806946:0;Matt 24:42
-: 1714806967:0;Matt 24:44
 : 1714807023:0;Matt 15:13
 : 1714807030:0;Matt 25:13
 : 1714807040:0;Matt 26:26
@@ -12645,8 +12497,6 @@ Proverbs 4:14-15
 : 1714807959:0;Mark 9:45
 : 1714807982:0;Mark 10:9
 : 1714807994:0;Mark 10:14-15
-: 1714808006:0;Mark 10:21
-: 1714808017:0;Mark 11:22
 : 1714808028:0;Mark 11:24
 : 1714808068:0;Mark 12:29-31
 : 1714808083:0;Mark 12:38-40
@@ -12676,7 +12526,6 @@ Proverbs 4:14-15
 : 1714808752:0;Luke 9:3-5
 : 1714808764:0;Luke 9:23
 : 1714808774:0;Luke 9:48
-: 1714808788:0;Luke 9:50
 : 1714808798:0;Luke 9:60
 : 1714808816:0;Luke 10:2-11
 : 1714808827:0;Luke 10:20
@@ -12704,7 +12553,6 @@ Proverbs 4:14-15
 : 1714809346:0;Jude 1:20-22
 : 1714809427:0;Luke 14:34
 : 1714809438:0;Luke 16:9
-: 1714809454:0;Luke 17:3-4
 : 1714809464:0;Luke 17:10
 : 1714809473:0;Luke 17:19
 : 1714809488:0;Luke 17:21
@@ -12741,16 +12589,13 @@ Proverbs 4:14-15
 : 1714810364:0;John 10:37-38
 : 1714810391:0;John 12:35-36
 : 1714810403:0;John 13:14-15
-: 1714810430:0;John 14:1
 : 1714810439:0;John 14:11
 : 1714810459:0;John 14:27
-: 1714810497:0;John 15:17
 : 1714810515:0;John 15:26-27
 : 1714810526:0;John 16:25
 : 1714810528:0;John 16:24
 : 1714810554:0;John 20:19
 : 1714810561:0;John 20:21
-: 1714810574:0;John 20:22-23
 : 1714810585:0;John 20:27
 : 1714810659:0;Acts 10:15
 : 1714810672:0;Acts 18:9-10
@@ -12768,7 +12613,6 @@ Proverbs 4:14-15
 : 1714894568:0;I Thessalonians 5:13
 : 1714894637:0;Colossians 1:21-22
 : 1714898094:0;Luke 1:31-35
-: 1714898177:0;I Corinthians 12:13
 : 1714898231:0;I Corinthians 10:1-4
 : 1714899480:0;Acts 19:1-6
 : 1714899605:0;Acts 8:14-17
@@ -12814,7 +12658,6 @@ Proverbs 4:14-15
 : 1714956948:0;Psalms 34:15-22
 : 1714957405:0;kjv Matthew 17:13-21
 : 1714957737:0;I John 5:14-15
-: 1714958307:0;James 4:8
 : 1714958496:0;"runhaskell" "fmap-test.hs"
 : 1714960262:0;Galatians 5:22-25
 : 1714960358:0;vd /root/.emacs.d/host/pen.el/docs/theology/faith-and-judgement.org /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org
@@ -12830,7 +12673,6 @@ Proverbs 4:14-15
 : 1714967053:0;John 5:46-7
 : 1714967058:0;John 5:46-47
 : 1714967170:0;John 5:39-40
-: 1714967640:0;I John 3:23
 : 1714968264:0;John 6:40-44
 : 1714968314:0;John 6:53-58
 : 1714969234:0;Romans 11:23-24
@@ -12854,8 +12696,6 @@ Proverbs 4:14-15
 : 1715056863:0;info Emacs
 : 1715056872:0;info "(emacs)"
 : 1715056879:0;info "(calc)"
-: 1715056940:0;info calc
-: 1715057680:0;man calc
 : 1715057691:0;cd /usr/local/share/info
 : 1715057695:0;v dbus.info.gz
 : 1715057741:0;v remember.info.gz
@@ -12884,7 +12724,6 @@ Proverbs 4:14-15
 : 1715117257:0;Psalm 127:1 | v
 : 1715117513:0;I John 5:10-13
 : 1715117544:0;Matthew 19:17
-: 1715118241:0;Galatians 4:9
 : 1715118585:0;John 17:20-23
 : 1715118626:0;John 17:15-17
 : 1715118630:0;John 17:15-18
@@ -12915,7 +12754,6 @@ Proverbs 4:14-15
 : 1715204725:0;II Corinthians 4:3-
 : 1715204727:0;II Corinthians 4:3-6
 : 1715204929:0;II Corinthians 4:3
-: 1715204936:0;II Corinthians 4:6
 : 1715205748:0;htmls2txt-recursive
 : 1715207015:0;mcd cults
 : 1715207033:0;rmdir cults
@@ -12935,11 +12773,9 @@ Proverbs 4:14-15
 : 1715306723:0;Romans 5:20
 : 1715306853:0;Matthew 5:28
 : 1715307164:0;Acts 13:3839
-: 1715307175:0;Acts 13:38-39
 : 1715309249:0;Hebrews 12:9-11
 : 1715310512:0;Revelation 12:1
 : 1715310533:0;1 Peter 1:18-19
-: 1715310567:0;Colossians 1:19-20
 : 1715312542:0;upd htmls2txtm
 : 1715316359:0;z \ F260\ Reading\ Plan.pdf
 : 1715316430:0;z YouVersion\ F260\ Plan.png
@@ -12966,8 +12802,6 @@ Proverbs 4:14-15
 : 1715387888:0;evince faith-and-judgement.tex
 : 1715388268:0;xelatex old.tex
 : 1715401157:0;I John 4:20-21
-: 1715401305:0;I John 5:1-5
-: 1715401806:0;I John 5:19
 : 1715401814:0;Ephesians 2:2
 : 1715403130:0;John 5:37-42
 : 1715404686:0;I John 2:17-18
@@ -12975,7 +12809,6 @@ Proverbs 4:14-15
 : 1715404835:0;Luke 24:25-27
 : 1715404974:0;Luke 24:44-48
 : 1715405017:0;1 Corinthians 15:17
-: 1715406667:0;I John 5:1-3
 : 1715409401:0;Ephesians 1:11
 : 1715413127:0;v Acorn.tex
 : 1715413884:0;v faith-and-judgement.tex
@@ -12991,7 +12824,6 @@ Proverbs 4:14-15
 : 1715414501:0;z diagrams.tex
 : 1715415207:0;feh oldpaperbackground.jpg
 : 1715415209:0;rm oldpaperbackground.jpg
-: 1715416878:0;Hebrews 5:9
 : 1715417991:0;2 John 9:2
 : 1715418012:0;2Jn 1:5-10
 : 1715418035:0;Jm 2:24
@@ -12999,7 +12831,6 @@ Proverbs 4:14-15
 : 1715418270:0;Romans 1:1-15
 : 1715418275:0;Romans 1:1
 : 1715419863:0;Romans 3:21â€ƒ³28
-: 1715421427:0;I John 4:21
 : 1715421716:0;II Timothy 2:19
 : 1715421977:0;Ephesians 2:9
 : 1715422561:0;2 Timothy 1:9
@@ -13018,7 +12849,6 @@ Proverbs 4:14-15
 : 1715480093:0;II John 1:6-9
 : 1715549600:0;2:18-23
 : 1715549604:0;Colossians 2:18-23
-: 1715550981:0;II Corinthians 10:18
 : 1715551930:0;Proverbs 12:18
 : 1715552036:0;Proverbs 26:2
 : 1715552396:0;2 Corinthians 3:17
@@ -13087,14 +12917,12 @@ agi texstudio
 : 1715743056:0;v symbols.tex
 : 1715743096:0;evince symbols.pdf
 : 1715748460:0;Mark 10:17-31 | v
-: 1715756632:0;Hebrews 1:13-14
 : 1715758548:0;II John 1:8
 : 1715764955:0;Acts 1:5
 : 1715765844:0;Matthew 4:1-11
 : 1715765909:0;Matthew 3:15-17
 : 1715766136:0;Ephesians 6:17
 : 1715812641:0;v chemistry.txt
-: 1715813313:0;John 10:17-18
 : 1715813962:0;nasb Ephesians 2:8-9
 : 1715814226:0;Ephesians 2:8-0
 : 1715814906:0;rm .\#README.org
@@ -13180,7 +13008,6 @@ agi texstudio
 : 1715837527:0;2 Corinthians 5:17 | v
 : 1715838078:0;Matthew 12:43-45
 : 1715838287:0;Titus 2:12
-: 1715838304:0;Titus 2:11-14
 : 1715839100:0;Mark 16:17 | v
 : 1715839115:0;v Mark
 : 1715839161:0;ln -sf wo detailed
@@ -13192,7 +13019,6 @@ agi texstudio
 : 1715839557:0;shorg Matthew 1-2
 : 1715849429:0;1 John 4:3
 : 1715890655:0;1 Cor 6
-: 1715890889:0;Acts 1:8
 : 1715890910:0;Mark 16:17
 : 1715891091:0;Mark 1:23-26
 : 1715902961:0;Matthew 24:9-13
@@ -13241,7 +13067,6 @@ agi texstudio
 : 1716006548:0;1 Corinthians 3:15* - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
 : 1716006552:0;1 Corinthians 3:15
 : 1716012358:0;Romans 4:4
-: 1716013298:0;Romans 6:22
 : 1716013318:0;Matthew 3:8
 : 1716013540:0;Hebrews 6:1
 : 1716013735:0;rm -rf ../thoughts-on-theology_text
@@ -13278,7 +13103,6 @@ agi texstudio
 : 1716197647:0;Leviticus 10:3
 : 1716197970:0;Revelation of John 5:9-10
 : 1716268433:0;watch git status
-: 1716269744:0;Romans 5:9-11
 : 1716269774:0;Romans 8:9-11
 : 1716270320:0;elinks-dump "https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism"
 : 1716270328:0;tp find-here-path "*heid*"
@@ -13321,7 +13145,6 @@ John 7:18
 : 1716440646:0;nasb 2 Timothy 2:22
 : 1716454038:0;Matthew 25:31-46
 : 1716454124:0;Matthew 23:8
-: 1716454181:0;Matthew 23:9
 : 1716454200:0;Matthew 23:10
 : 1716454264:0;Matthew 23:2-3
 : 1716454269:0;Matthew 23:2--4
@@ -13363,7 +13186,6 @@ John 7:18
 : 1716698685:0;John 12:47-48
 : 1716698864:0;Revelation of John 19:13
 : 1716700343:0;Jude 1:25
-: 1716700395:0;Jude 1:20-23
 : 1716700860:0;nasb Colossians 1:15
 : 1716700864:0;kjv Colossians 1:15
 : 1716700870:0;bsb Colossians 1:15
@@ -13379,7 +13201,6 @@ John 7:18
 : 1716701860:0;Job 9:8
 : 1716701874:0;Mark 7:31-47
 : 1716701888:0;Exodus 4:7
-: 1716701900:0;Exodus 4:11
 : 1716701931:0;Mark 8:1-10
 : 1716702030:0;Exodus 16:4
 : 1716702069:0;Exodus 9:2-5
@@ -13391,14 +13212,11 @@ John 7:18
 : 1716704500:0;Joel 2:31
 : 1716704935:0;/usr/bin/firefox READd
 : 1716706369:0;cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | sed -n "/^\\* /p" | wc -l
-: 1716710868:0;Isaiah 53:5
 : 1716712339:0;rm /root/.emacs.d/host/pen.el/docs/instructions-for-integrating-into-your-own-emacs.org
 : 1716712346:0;rm /root/.emacs.d/host/pen.el/docs/todo.org
 : 1716712354:0;rm /root/.emacs.d/host/pen.el/docs/docker/issues.org
-: 1716765607:0;cd rosie-pattern-language
 : 1716765609:0;cd rosie
 : 1716765613:0;tp find-here-path "*net*"
-: 1716765616:0;v rpl/net.rpl
 : 1716766132:0;cat /root/notes/ws/chemistry/links.org | xurls
 : 1716766714:0;ead org -bn
 : 1716766804:0;xurls -dn "https://www.youtube.com/watch?v=bA7LBhO7Q_E&ab_channel=TheKingdomGlowWithAmbiGlow%F0%9F%91%91%F0%9F%92%9B"
@@ -13409,7 +13227,6 @@ John 7:18
 : 1716771369:0;v xurls
 : 1716771393:0;v sed-pcre
 : 1716771403:0;v rosie-urls
-: 1716805129:0;man rosie
 : 1716807098:0;Daniel 6:22
 : 1716807144:0;rm ,\ there\'s\ some\ people\ I\ have\ already\ forgiven\ about\ stuff\ to\ do\ with\ me\ and\ a\ certain\ marriage\ proposal.
 : 1716813389:0;eog *
@@ -13460,14 +13277,12 @@ John 7:18
 : 1717221833:0;Joshua 3:7
 : 1717221948:0;I John 4:7-8-12
 : 1717221950:0;I John 4:7-12
-: 1717290279:0;Romans 7:25
 : 1717292387:0;I Timothy 4:2
 : 1717292400:0;I Timothy 4:2-5
 : 1717293444:0;upd 2 Cor 5:18-19
 : 1717294213:0;Matthew 7:24
 : 1717294948:0;Colossians 2:21
 : 1717294957:0;Colossians 2:18-21
-: 1717304223:0;I Peter 1:14-19
 : 1717304347:0;I Peter 1:6-9
 : 1717321840:0;I John 4:6
 : 1717321858:0;I John 4:6-7
@@ -13509,7 +13324,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717376883:0;v ~/run.sh
 : 1717376991:0;which -a pen-glob
 : 1717377014:0;ls -ldt ~/run.sh
-: 1717378057:0;Psalm 22
 : 1717378451:0;'bash' '-c' '. ~/.emacs.d/pen.el/scripts/setup-term.sh; "eval" "'\''/root/run.sh'\''"'
 : 1717412672:0;I John 2:11
 : 1717412748:0;I John 2:4-6
@@ -13542,7 +13356,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717542755:0;1 Peter 3:15-16
 : 1717542778:0;1 Peter 2:16
 : 1717543017:0;Acts 5:39
-: 1717544344:0;2 Corinthians 5:17
 : 1717554808:0;Romans 3:23-24
 : 1717555605:0;Colossians 3:12-13
 : 1717559383:0;odn xc | tpop -nos -w 30 -h 13 -b heavy vipe $(odn nsfa x -E 'v -nls' -s A -i) | xc | chomp
@@ -13580,10 +13393,7 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717724837:0;Genesis 4:4
 : 1717725020:0;Ephesians 1:14-16
 : 1717727043:0;I John 3:9
-: 1717727683:0;John 14:12
 : 1717728041:0;Hebrews 9:14
-: 1717728332:0;John 8:11
-: 1717731701:0;I John 4:8
 : 1717735113:0;Revelation 2:5
 : 1717735117:0;Revelation 2:4
 : 1717735123:0;nasb Revelation 2:4
@@ -13641,10 +13451,8 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1717974929:0;Ephesians 2:3
 : 1717977696:0;James 1:6-7
 : 1717977781:0;Hebrews 4:16
-: 1717977840:0;Galatians 3:14
 : 1717977862:0;Galatians 3:2
 : 1717977894:0;Galatians 1:12
-: 1717977953:0;II Corinthians 6:1
 : 1717977971:0;II Corinthians 5:21-6:1
 : 1717978230:0;I John 3:16
 : 1717978249:0;John 15:13
@@ -13702,7 +13510,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718081252:0;Psalm 46:1
 : 1718082196:0;Colossians 3:2-6
 : 1718083031:0;Colossians 3:2
-: 1718083036:0;Colossians 3:3
 : 1718087796:0;1 Corinthians 10:13
 : 1718088106:0;Hebrews 12:5â€ƒ³6
 : 1718088139:0;Hebrews 12:5â€ƒ³6 | v
@@ -13728,7 +13535,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718180430:0;Joel 2:32
 : 1718180441:0;Ps 86:5
 : 1718180470:0;Heb 4:16
-: 1718180476:0;1Cor 1:2
 : 1718180574:0;Romans 3:1-20
 : 1718180811:0;Romans 3:2
 : 1718180814:0;Romans 3:3
@@ -13778,7 +13584,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718254029:0;xc -P "Music Data Base.xls"
 : 1718254979:0;John 21:19
 : 1718256160:0;1 Timothy 6:12
-: 1718256635:0;v watch.org
 : 1718259155:0;I Corinthians 4:12
 : 1718259169:0;Galatians 6:12
 : 1718259246:0;Mark 10:30
@@ -13823,7 +13628,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718337945:0;Romans 8:35-39
 : 1718338095:0;I Cor 6:15
 : 1718354956:0;1 Peter 5:6-9
-: 1718398568:0;Galatians 5:18
 : 1718398582:0;Galatians 5:18-23
 : 1718398588:0;Galatians 5:18-20
 : 1718398592:0;Galatians 5:18-21
@@ -13843,7 +13647,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718419329:0;Galatians 4:18-19
 : 1718419395:0;Isaiah 43:25
 : 1718419523:0;Matthew 18:35
-: 1718419538:0;Mark 11:25
 : 1718419849:0;Matthew 18:15-20
 : 1718425734:0;Matthew 7:12
 : 1718430067:0;./brogue
@@ -13874,10 +13677,8 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718453005:0;make -B TERMINAL=YES bin/brogue
 : 1718453087:0;Psalm
 : 1718453661:0;James 1:1-4
-: 1718453739:0;James 1:12
 : 1718453747:0;James 5:11
 : 1718453774:0;Titus 2:2
-: 1718453807:0;Titus 2:1-8
 : 1718453868:0;Titus 2:1-15
 : 1718453922:0;II Thessalonians 1:4-8
 : 1718454045:0;Colossians 1:21-23
@@ -13910,7 +13711,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718513937:0;Matthew 25:26-46
 : 1718515891:0;rm .\#README.md
 : 1718530931:0;Ephesians 4
-: 1718532367:0;Ephesians 4:11-16
 : 1718532979:0;Ephesians 4:15-19
 : 1718567681:0;2 Timothy 1:7
 : 1718567756:0;nasb 2 Timothy 1:7
@@ -13942,7 +13742,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718590856:0;ls -dlt *
 : 1718590858:0;v cpl.txt
 : 1718591282:0;v flexprob.pl
-: 1718591412:0;todayfile
 : 1718591826:0;run-cpl epidemic.
 : 1718591977:0;plsense
 : 1718593777:0;mv 17.06.24.org cplint-17.06.24.org
@@ -13960,7 +13759,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718597050:0;cd /root/.pen/tmp/td_pita_plQTY6XH/
 : 1718597053:0;v coin.pl
 : 1718597174:0;xc -P cplint-17.06.24.pdf
-: 1718598017:0;z cplint-17.06.24.pdf
 : 1718598104:0;v cplint-17.06.24.org
 : 1718598272:0;v todayfolder
 : 1718598282:0;todayfolder
@@ -13996,7 +13794,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718707347:0;tp find-here-path "*cpl*"
 : 1718707354:0;v cpl-mode.el
 : 1718707373:0;pen-e sd -d
-: 1718707644:0;swipl
 : 1718745928:0;Romans 6:20
 : 1718746120:0;I John 3:7
 : 1718746245:0;Romans 3:21-25
@@ -14160,13 +13957,11 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718857970:0;man slides
 : 1718860643:0;Philippians 3:11-12
 : 1718880828:0;I John 5:3
-: 1718880919:0;John 14:15
 : 1718882036:0;I Corinthians 6:11
 : 1718882157:0;Acts 20:32
 : 1718884558:0;<link rel="stylesheet" type="text/css" href="org.css"/>enq
 : 1718920243:0;John 8:41-2
 : 1718920483:0;I Peter 3:17
-: 1718921183:0;Psalms 11:5
 : 1718921258:0;Romans 13:7
 : 1718921447:0;Romans 13:12-14
 : 1718921616:0;I Peter 4:5-10
@@ -14183,10 +13978,8 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1718922920:0;Ephesians 1:20-21
 : 1718923072:0;Philippians 2:3-5
 : 1718923674:0;Hebrews 4:12-13
-: 1718924102:0;I Peter 4:10
 : 1718924230:0;Philippians 2:3
 : 1718924496:0;Acts 24:14-16
-: 1718925251:0;Romans 8:1
 : 1718925713:0;Isaiah 42:8
 : 1718928179:0;Philippians 3:21
 : 1718933563:0;Gen 2:7
@@ -14205,7 +13998,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1719028110:0;Matthew 5:3
 : 1719032997:0;John 13:6-7
 : 1719033242:0;Romans 4:3
-: 1719041196:0;John 1:13
 : 1719041457:0;John 13:6-9
 : 1719041501:0;John 13:12-16
 : 1719041876:0;I John 4:6-112
@@ -14257,18 +14049,15 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1719131568:0;Matthew 6:15
 : 1719131669:0;Matthew 6:8-15
 : 1719132098:0;Matthew 5:47-48
-: 1719132123:0;Matthew 5:44-48
 : 1719132165:0;Matthew 6:1-4
 : 1719132196:0;Matthew 6:10
 : 1719132214:0;Matthew 6:12
-: 1719132281:0;Matthew 7:21
 : 1719134637:0;vde
 : 1719177757:0;Galatians 15:16-18
 : 1719179813:0;Matthew 5:26
 : 1719179845:0;Matthew 5:25-27
 : 1719179899:0;Colossians 2:14
 : 1719180012:0;Matthew 5:25-26
-: 1719181535:0;Romans 3:25
 : 1719183832:0;Matthew 25:21
 : 1719184013:0;Hebrews 10:29
 : 1719184040:0;Ephesians 4:7
@@ -14277,7 +14066,6 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1719186354:0;Matthew 5:43â€ƒ³44
 : 1719190816:0;Lk 7:42-43
 : 1719190867:0;Co 2:14
-: 1719191244:0;John 5:14
 : 1719191322:0;James 2:8
 : 1719191487:0;Acts 14:26
 : 1719191597:0;John 19:24
@@ -14309,14 +14097,11 @@ export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 : 1719206795:0;cat /root/.pen/documents/notes/remember.org | head -n 2 | from-digraphs | v
 : 1719206809:0;v lgrep
 : 1719206815:0;man grep
-: 1719208340:0;II Corinthians 11:2-4
 : 1719208788:0;I Corinthians 15:1-10
-: 1719208854:0;I Corinthians 15:3-8
 : 1719208907:0;I Corinthians 15:9-10
 : 1719208923:0;I Corinthians 15:9-11
 : 1719215157:0;reul
 : 1719220616:0;v https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt
-: 1719224007:0;problog
 : 1719354473:0;II Corinthians 10:5-6]]
 : 1719354811:0;[[https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A11&version=ESV][I Corinthians 2:11
 : 1719354826:0;I Corinthians 2:11
@@ -14474,7 +14259,6 @@ Luke 5:8-10
 : 1719828338:0;2 Corinthians 9:8
 : 1719874698:0;Jeremiah 31:7
 : 1719874817:0;Luke 1:38
-: 1719904102:0;John 3:3-8
 : 1719904621:0;John 3:8 | v
 : 1719906663:0;I Peter 3:6
 : 1719907544:0;Proverbs 28:13
@@ -14483,7 +14267,6 @@ Luke 5:8-10
 : 1719909359:0;Isaiah 61:3
 : 1719909365:0;nasb Isaiah 61:3
 : 1719909589:0;James 4:7
-: 1719909701:0;I Samuel 15:23
 : 1719909810:0;John 12:31-32
 : 1719917162:0;Genesis 24:12
 : 1719917223:0;Daniel 2:20-23
@@ -14496,7 +14279,6 @@ Luke 5:8-10
 : 1719919759:0;John 10:14-15
 : 1719919774:0;John 11:25
 : 1719919813:0;John 15:1
-: 1719919818:0;John 15:5
 : 1719923353:0;Galatians 3:29
 : 1719923361:0;Galatians 3:18
 : 1719923392:0;Galatians 4:6-7
@@ -14516,7 +14298,6 @@ Luke 5:8-10
 : 1720059494:0;v org
 : 1720059534:0;oci -f -nd in-pen web title "https://www.star.net.nz/the-word-for-today/-gods-word-renews-2024_07_04"
 : 1720059541:0;v web
-: 1720059704:0;v tv
 : 1720059738:0;v /root/dump/tmp/scratchQWxK2D.txt
 : 1720059854:0;cat /root/dump/tmp/scratchQWxK2D.txt | perl -l -0777 -ne 'print $1 if /<meta property="og:title" content="\s*(.*?)\s*">/si'
 : 1720065964:0;Hebrews 10:26-27
@@ -14539,7 +14320,6 @@ Luke 5:8-10
 : 1720128155:0;James 2:14-26
 : 1720128640:0;Ephesians 5:5
 : 1720128783:0;Colossians 1:10-14
-: 1720128907:0;Colossians 3:5-13
 : 1720129905:0;II Timothy 2:21-22
 : 1720133354:0;James 4:12
 : 1720133413:0;II Chronicles 6:22-23
@@ -14552,7 +14332,6 @@ Luke 5:8-10
 : 1720147772:0;II Corinthians 3:18
 : 1720147839:0;Matthew 7:16-20
 : 1720147910:0;Matthew 7:14-20
-: 1720147946:0;Matthew 12:33
 : 1720148405:0;I Corinthians 5:6-7
 : 1720148599:0;Romans 6:11
 : 1720148654:0;Colossians 3:3-5
@@ -14562,7 +14341,6 @@ Luke 5:8-10
 : 1720151765:0;Job 22:24-26
 : 1720156585:0;Job 11:13
 : 1720158601:0;Luke 12:23
-: 1720160433:0;Luke 10:16
 : 1720160436:0;Luke 10:26
 : 1720160445:0;Luke 10:27
 : 1720160666:0;I Corinthians 7:25
@@ -14575,7 +14353,6 @@ Luke 5:8-10
 : 1720230182:0;Hebrews 13:12-13
 : 1720230382:0;Hebrews 13:15-16
 : 1720230618:0;git diff | v
-: 1720235619:0;Galatians 4:25-26
 : 1720235681:0;Galatians 4:28-31
 : 1720235694:0;Galatians 4:27
 : 1720235999:0;Galatians 4:28
@@ -14624,7 +14401,6 @@ Luke 5:8-10
 : 1720280156:0;Romans 1:29-2:13
 : 1720281131:0;I John 4:10
 : 1720281133:0;I John 4:10-11
-: 1720281194:0;I John 4:19
 : 1720281284:0;I John 1:10
 : 1720281724:0;I John 2:2
 : 1720281762:0;Mark 8:36
@@ -14697,7 +14473,6 @@ Luke 5:8-10
 : 1720318086:0;Matthew 24:42
 : 1720318125:0;Matthew 24:41-42
 : 1720318163:0;Matthew 25:11-15
-: 1720318259:0;Hebrews 12:6
 : 1720318500:0;Luke 21:20-24
 : 1720318760:0;1 John 2:15-17
 : 1720318810:0;Luke 23:42
@@ -14740,7 +14515,6 @@ Luke 5:8-10
 : 1720405531:0;nasb Romans 3:20-23
 : 1720405547:0;nasb Romans 3:20-24
 : 1720405560:0;nasb Romans 3:20-26
-: 1720405590:0;Romans 3:20-26
 : 1720408206:0;Romans 5:7-8
 : 1720408753:0;Hebrews 10:31-32
 : 1720408761:0;Hebrews 10:30-31
@@ -14751,7 +14525,6 @@ Luke 5:8-10
 : 1720433498:0;Psalms 127:1
 : 1720433552:0;Luke 6:48
 : 1720433626:0;Hebrews 11:8
-: 1720433671:0;Romans 10:10
 : 1720434024:0;Acts 26:20
 : 1720435141:0;I Chronicles 4:9-10
 : 1720439292:0;Malachi 3:8-10
@@ -14768,7 +14541,6 @@ Luke 5:8-10
 : 1720441452:0;James 2:26
 : 1720442066:0;John 3:8
 : 1720442838:0;Matthew 6:34
-: 1720474573:0;I John 4:4
 : 1720474622:0;I John 4:4-6
 : 1720474693:0;I John 4:1-6
 : 1720508969:0;v readme
@@ -14778,7 +14550,6 @@ Luke 5:8-10
 : 1720572644:0;Acts 20:35
 : 1720572762:0;Romans 6:23
 : 1720572774:0;Ephesians 2:8,9
-: 1720572907:0;Galatians 6:2
 : 1720573111:0;2Ti 1:9
 : 1720573248:0;Galatians 3:25-26
 : 1720573262:0;Galatians 3:25-27
@@ -14871,7 +14642,6 @@ Luke 5:8-10
 : 1720666634:0;I Peter 1:14-16
 : 1720666646:0;Hebrews 11:31
 : 1720666733:0;Romasn 5:1
-: 1720666737:0;Romans 5:1
 : 1720666753:0;Romans 3:28-29
 : 1720667348:0;Luke 1:5-6
 : 1720667469:0;I Corinthians 7:19
@@ -14915,7 +14685,6 @@ Luke 5:8-10
 : 1720830358:0;Mark 7:13
 : 1720830374:0;Mark 7:12-13
 : 1720830383:0;Mark 7:11-13
-: 1720831744:0;Luke 3:6
 : 1720831750:0;Acts 22:21
 : 1720831755:0;Acts 14:27
 : 1720832802:0;elinks-dump-chrome "https://www.reuters.com/technology/artificial-intelligence/openai-working-new-reasoning-technology-under-code-name-strawberry-2024-07-12/"
@@ -14946,10 +14715,8 @@ Luke 5:8-10
 : 1720905388:0;Romans 1:16
 : 1720905393:0;1 Corinthians 15:3-4
 : 1720905406:0;1 Thessalonians 4:14
-: 1720905439:0;Mark 10:45
 : 1720905840:0;Luke 24:46-47
 : 1720905850:0;Luke 24:44-47
-: 1720907589:0;v relinkify
 : 1720907637:0;v unlinkify
 : 1720907642:0;v biblegateway-unlinkify
 : 1720907677:0;v grepfilters.sh
@@ -14972,14 +14739,12 @@ Luke 5:8-10
 : 1720950613:0;John 15:12
 : 1720950871:0;Galatians 5:6
 : 1720950968:0;James 2:19
-: 1720950996:0;James 2:8-13
 : 1720951477:0;Galatians 5:14
 : 1720951479:0;Galatians 5:14-16
 : 1720953977:0;2 John 1:9-10
 : 1721068664:0;e
 : 1721069198:0;Galatians 6
 : 1721079904:0;I John 2:15-17]]
-: 1721080031:0;I John 3:21-24
 : 1721107196:0;vc p -f
 : 1721107399:0;git reset --hard HEAD\^
 : 1721108829:0;1 Corinthians 7:30-31
@@ -15004,11 +14769,9 @@ Luke 5:8-10
 : 1721125200:0;Luke 10:25-37
 : 1721129690:0;Job 23:1-17
 : 1721192986:0;Acts 20:30-32
-: 1721200229:0;git log
 : 1721208424:0;prn
 : 1721218491:0;Psalms 103:6-7
 : 1721218664:0;Ezekiel 24:12-14
-: 1721254663:0;John 7:7
 : 1721254752:0;John 7:4
 : 1721254773:0;John 7:4-7
 : 1721254886:0;John 7
@@ -15032,7 +14795,6 @@ Luke 5:8-10
 : 1721274076:0;echo Shane | dvorak
 : 1721274083:0;dvorak
 : 1721274251:0;v dvorak
-: 1721277672:0;John 3:16-21
 : 1721278241:0;Revelation 21:8
 : 1721278746:0;rm -rf theoo
 : 1721281699:0;Hebrews 10:38
@@ -15051,7 +14813,6 @@ Luke 5:8-10
 : 1721418233:0;Acts 14:23
 : 1721418748:0;Acts 11:17
 : 1721418798:0;John 16:27-28
-: 1721419038:0;Acts 4:32
 : 1721419103:0;John 6:64-66
 : 1721419391:0;I Peter 4:14
 : 1721419413:0;I Peter 4:13-14
@@ -15072,7 +14833,6 @@ Luke 5:8-10
 : 1721427128:0;Colossians 3:20
 : 1721427157:0;Romans 6:17
 : 1721427160:0;Romans 6:17-19
-: 1721427247:0;Luke 6:46
 : 1721427250:0;Luke 6:46-48
 : 1721427350:0;1 John 4:17
 : 1721428727:0;1 John 4:16
@@ -15086,7 +14846,6 @@ Luke 5:8-10
 : 1721438898:0;II Samuel 12:1-18
 : 1721439007:0;II Samuel 11:3-5
 : 1721439579:0;Matthew 1:20
-: 1721439634:0;I John 4:1-3
 : 1721440331:0;James 1:\
 12-18
 : 1721440341:0;James 1:12-18
@@ -15096,7 +14855,6 @@ Luke 5:8-10
 : 1721452202:0;I John 4:12
 : 1721452213:0;I John 4:16
 : 1721452220:0;I John 4:15
-: 1721452241:0;I John 3:14
 : 1721452250:0;I John 3:17
 : 1721452278:0;I John 2:27
 : 1721452565:0;Psalm 46:1-3
@@ -15114,8 +14872,6 @@ Luke 5:8-10
 : 1721524718:0;Exodus 4:11-13
 : 1721524750:0;Amos 3:6
 : 1721524774:0;Matt 11:4-5
-: 1721530792:0;II Peter 2:20
-: 1721530824:0;James 2:5
 : 1721531114:0;2Thess 3:6
 : 1721531242:0;Rom 16:17-18
 : 1721531258:0;II John 1:10
@@ -15206,7 +14962,6 @@ Luke 5:8-10
 : 1721714507:0;Matthew 18:5-6
 : 1721715917:0;Acts 26:14-15
 : 1721715955:0;I John 4:3
-: 1721716366:0;Romans 2:13-16
 : 1721718266:0;Luke 19:1-10
 : 1721718874:0;Romans 10:20
 : 1721719190:0;Galatians 3:26
@@ -15215,7 +14970,6 @@ Luke 5:8-10
 : 1721719622:0;James 1:22-23
 : 1721719750:0;Romans 8:4
 : 1721719757:0;Romans 8:3-4
-: 1721719954:0;Romans 3:26
 : 1721722522:0;git sst
 : 1721724532:0;1 John 3:23
 : 1721724555:0;John 13:34
@@ -15248,7 +15002,6 @@ Luke 5:8-10
 : 1721904880:0;Acts 14:22
 : 1721904884:0;Acts 14:21-22
 : 1721913615:0;Rom 7:23-25
-: 1721913764:0;Romans 8:1-4
 : 1721945701:0;2 Chronicles 7:14
 : 1721955090:0;John 2:7-11
 : 1721961993:0;Revelation of John 3:9
@@ -15296,7 +15049,6 @@ Luke 5:8-10
 : 1722232227:0;Romans 10:9
 : 1722412484:0;Romans 4:19-22
 : 1722412498:0;Romans 4:19
-: 1722413865:0;John 12:26
 : 1722468228:0;Matthew 28:16-20
 : 1722468276:0;Hebrews 5:8
 : 1722468323:0;Hebrews 5:5-8
@@ -15304,8 +15056,6 @@ Luke 5:8-10
 : 1722468405:0;Philippians 2:6-7
 : 1722468416:0;Philippians 2:5-7
 : 1722468580:0;Luke 22:42
-: 1722468630:0;John 15:10
-: 1722468750:0;John 13:16
 : 1722468998:0;2 Corinthians 8:9
 : 1722469109:0;John 14:8-9
 : 1722469159:0;John 14:8-10
@@ -15313,7 +15063,6 @@ Luke 5:8-10
 : 1722469282:0;John 17:4
 : 1722469300:0;John 17:7
 : 1722469335:0;Revelation 3:5-21
-: 1722469355:0;Revelation of John 3:12
 : 1722469674:0;I Thessalonians 5
 : 1722469688:0;I Thessalonians 5:2-5
 : 1722469858:0;Romans 4:20-22
@@ -15347,7 +15096,6 @@ Luke 5:8-10
 : 1722472999:0;bsb Acts 28:11
 : 1722473004:0;nasb Acts 28:11
 : 1722473608:0;Philippians 2:6-11
-: 1722473722:0;II Corinthians 5:21
 : 1722473727:0;II Corinthians 5:21-22
 : 1722473748:0;Ephesians 2:1-5
 : 1722475183:0;1 Thessalonians 5
@@ -15358,7 +15106,6 @@ Luke 5:8-10
 : 1722484048:0;Matthew 18:19-20
 : 1722484141:0;v heretics.
 : 1722484263:0;cp -a /root/.emacs.d/host/pen.el/docs/theology/bad-bible-versions.org ./
-: 1722484289:0;Matthew 7:3-5
 : 1722484693:0;Matthew 24:36
 : 1722484735:0;Revelation 22:13-15
 : 1722484965:0;Acts 7:56
@@ -15393,7 +15140,6 @@ Luke 5:8-10
 : 1722496667:0;Psalm 16:10
 : 1722496686:0;Romans 8:11-13
 : 1722496904:0;1 Corinthians 13:12
-: 1722496939:0;1 John 1:9
 : 1722501184:0;Romans 11:29
 : 1722501210:0;Isaiah 55:11
 : 1722505885:0;Mark 10:35-45
@@ -15421,7 +15167,6 @@ Luke 5:8-10
 : 1722663823:0;Heb 13:1
 : 1722663827:0;Rom 12:9-10
 : 1722663833:0;1John 4:12
-: 1722663837:0;John 13:34-35
 : 1722663840:0;1John 4:7
 : 1722663844:0;Jas 4:8
 : 1722664020:0;1Thess 3:12
@@ -15446,8 +15191,6 @@ Luke 5:8-10
 : 1722670670:0;Hebrews 10:10-13
 : 1722672977:0;2 Timothy 2:13
 : 1722673840:0;Matthew 19:12
-: 1722677046:0;John 14:23
-: 1722677127:0;John 16:33
 : 1722678085:0;Hebrews 7:11
 : 1722678196:0;Hebrews 7:26-28
 : 1722720521:0;Daniel 7
@@ -15504,8 +15247,6 @@ Luke 5:8-10
 : 1722838961:0;Isaiah 7:14-15
 : 1722839006:0;Luke 9:35
 : 1722839085:0;Mark 14:61-62
-: 1722912640:0;pwp
-: 1722915162:0;John 15:9-17
 : 1722934165:0;v street-preaching-in-times-square.org
 : 1722934241:0;mv street-preaching-in-times-square.org resources
 : 1722980039:0;Isaiah 30:1
@@ -15540,7 +15281,6 @@ Luke 5:8-10
 : 1723002111:0;2 Timothy 1:7-10
 : 1723002305:0;Heb. 5:9
 : 1723002308:0;Heb 5:9
-: 1723002322:0;Acts 5:32
 : 1723002348:0;John 14:15-16
 : 1723002376:0;John 15
 : 1723002428:0;-13
@@ -15548,7 +15288,6 @@ Luke 5:8-10
 : 1723002525:0;John 15:3-4
 : 1723002566:0;John 15:3-12
 : 1723002846:0;John 15:9
-: 1723003015:0;I John 4:7
 : 1723003029:0;I John 4:13
 : 1723003052:0;I John 4:9-10
 : 1723004034:0;Acts 2:40
@@ -15563,7 +15302,6 @@ Luke 5:8-10
 : 1723009200:0;Isaiah 44:22
 : 1723009208:0;Romans 8:1-2
 : 1723009547:0;1 John 4:4
-: 1723009882:0;I Corinthians 15:1-5
 : 1723010538:0;Revelation 7:14
 : 1723019980:0;Matthew 24:14
 : 1723026963:0;evince README.pdf
@@ -15609,7 +15347,6 @@ Luke 5:8-10
 : 1723159152:0;1 Peter 5:8
 : 1723159220:0;Romans 3:23
 : 1723159242:0;1 John 1:8
-: 1723159307:0;Ephesians 6:12
 : 1723160102:0;z cv-09.08.24-kfc.pdf
 : 1723160130:0;gen-cv cv-09.08.24-kfc.org
 : 1723160178:0;ln cv-09.08.24-kfc.pdf cv-09.08.24-kfc-shane-mulligan.pdf
@@ -15645,7 +15382,6 @@ Luke 5:8-10
 : 1723206600:0;1 Corinthians 7:1-2
 : 1723228803:0;Romans 9:14-18
 : 1723237119:0;Genesis 42:9
-: 1723237645:0;Daniel 12:3
 : 1723237673:0;John 10:5
 : 1723237749:0;John 14
 : 1723237778:0;John 14:15-17
@@ -15662,7 +15398,6 @@ Luke 5:8-10
 : 1723347750:0;2 Thessalonians 2:8
 : 1723347826:0;Daniel 7:25
 : 1723372236:0;BORO ee oy
-: 1723372241:0;Titus 3:3-7
 : 1723418112:0;1 Timothy 2:4
 : 1723418116:0;1 Timothy 2:3-4
 : 1723418123:0;1 Timothy 2:1-4
@@ -15679,7 +15414,6 @@ Luke 5:8-10
 : 1723423944:0;Job 22
 : 1723423985:0;Job 22:30
 : 1723424063:0;Hebrews 13:8
-: 1723424125:0;John 14:21
 : 1723424260:0;Matthew 26:41
 : 1723435746:0;nem onelined decorated Proverbs 23:7
 : 1723435797:0;nem onelined decorated kjv Proverbs 23:7
@@ -15708,7 +15442,6 @@ Luke 5:8-10
 : 1723589437:0;Eph 2:6
 : 1723589444:0;Col 3:3
 : 1723589561:0;Matt 28:18-20
-: 1723589610:0;James 1
 : 1723628455:0;I Cronicles 21 | v
 : 1723628481:0;tp find-here-path "*Chro*"
 : 1723628483:0;tp find-here-path "*Cron*"
@@ -15738,11 +15471,9 @@ Luke 5:8-10
 : 1723705751:0;mv gangstalking.txt gangstalking.org
 : 1723706415:0;Psalms 131:1-3
 : 1723708150:0;I Timothy 1:5-11
-: 1723708511:0;Matthew 19:28
 : 1723708634:0;Revelation of John 21:1-3
 : 1723708649:0;Revelation of John 21:1-5
 : 1723714398:0;Law 16:16
-: 1723714400:0;Luke 16:16
 : 1723714445:0;Galatians 3:19-29
 : 1723760007:0;Romans 2:25
 : 1723760073:0;Galatians 5:2-6
@@ -15750,7 +15481,6 @@ Luke 5:8-10
 : 1723760612:0;Romans 4:11
 : 1723760934:0;John 17:3
 : 1723760998:0;Luke 10:25
-: 1723761050:0;Matthew 19:29
 : 1723761103:0;Genesis 12:1-3
 : 1723761142:0;Genesis 26:2-5
 : 1723761165:0;Genesis 26:4
@@ -15758,7 +15488,6 @@ Luke 5:8-10
 : 1723762149:0;I Corinthians 11:32-33
 : 1723762155:0;I Corinthians 11:32-34
 : 1723762167:0;I Corinthians 11:31-32
-: 1723762174:0;I Corinthians 11:32
 : 1723762509:0;Acts 5:3-4
 : 1723762731:0;Gen. 1:1
 : 1723762733:0;Gen 1:1
@@ -15785,7 +15514,6 @@ Luke 5:8-10
 : 1723768032:0;Luke 11:49-51
 : 1723768070:0;Luke 11:48-51
 : 1723768074:0;Luke 11:47-51
-: 1723768103:0;I Corinthians 1:30
 : 1723769232:0;cp -a cover-letter-09.08.24-kfc.org cover-letter-16.08.24-pact.org
 : 1723769243:0;cp -a cv-09.08.24-kfc.org cv-16.08.24-pact.org
 : 1723770205:0;gen-cv cv-16.08.24-pact.org
@@ -15828,7 +15556,6 @@ Luke 5:8-10
 : 1723944547:0;2 Thessalonians 1:6-8
 : 1723944554:0;2 Thessalonians 1:5-8
 : 1723944646:0;James 1:20-22
-: 1723944708:0;1 Corinthians 1:30
 : 1723944729:0;2 Corinthians 5:21
 : 1723945268:0;Romans 3:27â€ƒ³31
 : 1723945458:0;Hebrews 6:10 | v
@@ -15844,15 +15571,12 @@ Luke 5:8-10
 : 1723946339:0;2 Corinthians 5:11-21
 : 1723946401:0;phesians 2:1-3
 : 1723946403:0;Ephesians 2:1-3
-: 1723948325:0;Matthew 28:19-20
 : 1723948375:0;Acts 11:21
 : 1723948425:0;John 13:35
-: 1723948436:0;John 15:8
 : 1723948447:0;Luke 14:33
 : 1723948455:0;Luke 14:27
 : 1723948464:0;Luke 14:26
 : 1723948806:0;Mark 13:13
-: 1723948871:0;I John 2:15
 : 1723949076:0;Luke 14:25-33
 : 1723949350:0;Phil 3:14
 : 1723949382:0;Philippians 3:14
@@ -15860,7 +15584,6 @@ Luke 5:8-10
 : 1723949463:0;Philippians 3:7
 : 1723949477:0;Philippians 3:7-8
 : 1723949616:0;Philippians 3:20-21
-: 1723949723:0;Hebrews 10:14
 : 1723950828:0;Hebrews 3:13
 : 1723950849:0;Hebrews 11:24=5
 : 1723950851:0;Hebrews 11:25
@@ -15923,7 +15646,6 @@ Luke 5:8-10
 : 1723977155:0;nasb Romans 4:20-22
 : 1723977313:0;Matthew 21:21
 : 1723978083:0;Romans 3:21-31
-: 1723978244:0;Romans 4:20-25
 : 1723978614:0;James 4:4-5
 : 1723978623:0;James 4:4
 : 1723979140:0;2 Corinthians 10:6
@@ -15986,7 +15708,6 @@ Luke 5:8-10
 : 1724193028:0;Galatians 4:6-11
 : 1724193727:0;Hebrews 12:16
 : 1724193790:0;Matthew 6:14-15
-: 1724193827:0;Colossians 3:13
 : 1724194428:0;1 Chronicles 29:17
 : 1724194656:0;Psalm 127:1
 : 1724194678:0;1 John 2:4
@@ -16010,19 +15731,14 @@ Luke 5:8-10
 : 1724364188:0;Matthew 15:14
 : 1724364259:0;Matthew 15:10-20
 : 1724364365:0;Proverbs 4:21-23
-: 1724365026:0;Romans 14:4
 : 1724365127:0;Romans 14:4-18
 : 1724365191:0;Ephesians 6:9
-: 1724365294:0;John 15:20
 : 1724365344:0;Luke 12:42
 : 1724365437:0;Proverbs 1:7
 : 1724365482:0;Proverbs 1:29-31
 : 1724365490:0;Proverbs 1:28-31
 : 1724365518:0;Proverbs 3:7
 : 1724366422:0;Matthew 7:17-20
-: 1724366589:0;Matthew 12:33-35
-: 1724366745:0;Matthew 12:48-50
-: 1724391947:0;Matthew 23:8-11
 : 1724392008:0;Revelation 22:9
 : 1724392020:0;Revelation 22:8-9
 : 1724392097:0;Revelation 7:1-3
@@ -16041,17 +15757,14 @@ Luke 5:8-10
 : 1724394470:0;Revelation of John 9:20-21
 : 1724394651:0;Acts 17:30
 : 1724394952:0;I Thessalonians 5:23
-: 1724395531:0;I John 5:18
 : 1724395536:0;nasb I John 5:18
 : 1724395543:0;kjv I John 5:18
 : 1724395620:0;I John 5:4
 : 1724395779:0;I John 5:1
 : 1724395883:0;I John 5:5
-: 1724396128:0;Jude 1:4
 : 1724396149:0;Jude 1:8
 : 1724398214:0;I Corinthians 8:3-7
 : 1724398347:0;Acts 17:30-32
-: 1724398378:0;Acts 17:29-31
 : 1724398395:0;Acts 17:29-32
 : 1724398553:0;Psalms 82:6
 : 1724398602:0;Colossians 2:18
@@ -16082,7 +15795,6 @@ Luke 5:8-10
 : 1724401242:0;Rev 3:21
 : 1724401257:0;Rev 5:13
 : 1724401276:0;John 10:27-33
-: 1724401426:0;Psalm 2:8
 : 1724401815:0;Psalms 91:5-7
 : 1724403475:0;Proverbs 30:4
 : 1724403628:0;John 3:16-17
@@ -16110,7 +15822,6 @@ Luke 5:8-10
 : 1724445265:0;Mt 1:24-25
 : 1724446193:0;Isaiah 43:18-19
 : 1724476720:0;Revelation of John 13:10
-: 1724476770:0;Revelation of John 14:7
 : 1724501586:0;Psalms 91:1-8 | v
 : 1724504225:0;I John 4:17
 : 1724533181:0;Rom 5:6
@@ -16136,8 +15847,6 @@ Luke 5:8-10
 : 1724534773:0;Luke 2:50-52
 : 1724535210:0;Luke 2:41-52
 : 1724535409:0;I John 4:2
-: 1724535414:0;I John 4:2-3
-: 1724535447:0;James 2
 : 1724535449:0;James 2:22-26
 : 1724535694:0;Rom 9:22
 : 1724535708:0;Rom 9:22-23
@@ -16261,7 +15970,6 @@ Luke 5:8-10
 : 1724888431:0;Isaiah 65:16
 : 1724889522:0;Isaiah 45:19
 : 1724889582:0;Deuteronomy 32:3â€ƒ³4
-: 1724889663:0;I John 1:6
 : 1724889717:0;1 John 3:2â€ƒ³3
 : 1724890935:0;tp find-here-path "*qa*"
 : 1724890942:0;tp find-here-path "*ask*"
@@ -16290,9 +15998,7 @@ Luke 5:8-10
 : 1724903875:0;rm cover-letter-29.08.24-side-on.org
 : 1724903892:0;tp find-here-path "*spelt*"
 : 1724903911:0;cp -a cover-letter-bakery-spelt-28.08.24.org cover-letter-bakery-sideon-28.08.24.org
-: 1724905466:0;calc
 : 1724906772:0;Psalm 25:9
-: 1724919718:0;I John 3:9-10
 : 1724921595:0;I Cor 13:4-8
 : 1724926425:0;ypenq
 : 1724973310:0;br --help | v
@@ -16425,7 +16131,6 @@ pip install hexabyte\
 : 1724981493:0;br -c "/txt/&c/chanson pt" | hexabyte /dev/stdin
 : 1724981519:0;br -c "/txt/&c/chanson pt" | v
 : 1724981524:0;hexabyte /root/dump/tmp/scratchpb2PKh.txt
-: 1724981531:0;hexabyte --help
 : 1724981546:0;v ./hb
 : 1724981600:0;br -c "/txt/&c/chanson pt" | hexabyte =(cat /dev/stdin)
 : 1724981605:0;br -c "/txt/&c/chanson pt" | hb
@@ -16607,7 +16312,6 @@ rm -rf /root/chd-1.1\
 : 1725003638:0;mkw chd
 : 1725003679:0;v chd
 : 1725003701:0;echo hello there people | chd
-: 1725003721:0;v hext
 : 1725003832:0;unbuffer br --color no -c "/txt/&c/chanson pt" | strip-ansi | erase-trailing-whitespace | sed 1d | hextr
 : 1725004066:0;Isaiah 29:13 | v
 : 1725004074:0;Isaiah 9:6 | v
@@ -16663,18 +16367,15 @@ rm -rf /root/chd-1.1\
 : 1725009789:0;v emacs-file-monitor
 : 1725009793:0;mv /root/.pen/documents/notes/emacs-file-monitor ./
 : 1725009796:0;sps emacs-file-monitor debugLog.txt
-: 1725010211:0;v hextr
 : 1725010225:0;v sps
 : 1725010339:0;sps -p 40% emacs -nw -Q
 : 1725010345:0;sps -p 40 emacs -nw -Q
-: 1725010393:0;v hextweak
 : 1725010401:0;sps -p 40 nvc emacs -nw -Q
 : 1725010408:0;sps -p 40 nvc -2 emacs -nw -Q
 : 1725010424:0;echo hello there people | hext -r -p
 : 1725010467:0;Mark 7:6â€ƒ³7 | v
 : 1725010534:0;bpython
 : 1725012240:0;I Timothy 1:8-11
-: 1725015147:0;br-img
 : 1725015198:0;v broot-grep
 : 1725015236:0;tm-run-command-in-other-window-with-output unbuffer br --height 100 --color no -c "/\.el/&c/pen pt" | v
 : 1725015262:0;v tm-run-command-in-other-window-with-output
@@ -16738,13 +16439,11 @@ rm -rf /root/chd-1.1\
 : 1725089547:0;I Thessalonians 3:12-13
 : 1725089553:0;I Thessalonians 3:11-13
 : 1725092115:0;Colossians 2:11-12
-: 1725092154:0;I Peter 3:21-22
 : 1725092171:0;Romans 6:4
 : 1725092580:0;Isaiah 7:14-16
 : 1725092621:0;Luke 2:52
 : 1725092644:0;Luke 2:48-52
 : 1725092675:0;Mark 10:37-40
-: 1725092753:0;I Peter 3:21
 : 1725093556:0;mcd baptist
 : 1725093561:0;wget "https://baptiststudiesonline.com/wp-content/uploads/2007/02/orthodox-creed.pdf"
 : 1725093567:0;pdfs2txt
@@ -16776,7 +16475,6 @@ rm -rf /root/chd-1.1\
 : 1725154265:0;Acts 15:20
 : 1725154339:0;Hebrews 8:10
 : 1725154700:0;Acts 15:19-20
-: 1725155668:0;Galatians 3:13-14
 : 1725228123:0;Ephesians 4:25â€ƒ³28
 : 1725228546:0;Ephesians 4:25-28
 : 1725228676:0;Genesis 1:27
@@ -16799,7 +16497,6 @@ rm -rf /root/chd-1.1\
 : 1725234156:0;Ezekiel 37:13-15
 : 1725234502:0;Mark 14:36
 : 1725234603:0;Gal 4:6
-: 1725234638:0;John 5:30
 : 1725234646:0;Rom 8:15-16
 : 1725234668:0;Heb 5:7-8
 : 1725234687:0;2Tim 2:13
@@ -16837,7 +16534,6 @@ rm -rf /root/chd-1.1\
 : 1725239422:0;II Peter 3:7
 : 1725239454:0;II Peter 3:6-7
 : 1725239461:0;II Peter 3:5-7
-: 1725239606:0;II Peter 3:10
 : 1725240878:0;nem onelined decorated Romans 1:29-33
 : 1725240986:0;nem onelined decorated Deut 21:18-23
 : 1725240989:0;Deut 21
@@ -16909,7 +16605,6 @@ rm -rf /root/chd-1.1\
 : 1725250347:0;Hebrews 12:23-24
 : 1725250356:0;Hebrews 12:24
 : 1725250387:0;Gen 4:10
-: 1725250518:0;John 4:10-14
 : 1725250547:0;John 7:38-39
 : 1725250607:0;John 6:35
 : 1725250612:0;Isa 49:10
@@ -16928,7 +16623,6 @@ rm -rf /root/chd-1.1\
 : 1725250736:0;Rom 5:21
 : 1725250742:0;Matt 25:46
 : 1725250746:0;John 14:16-19
-: 1725250944:0;Luke 4:18
 : 1725250948:0;Matt 11:5
 : 1725250952:0;Ps 146:7-8
 : 1725250971:0;Acts 10:38
@@ -16955,7 +16649,6 @@ rm -rf /root/chd-1.1\
 : 1725251667:0;John 6:58-63
 : 1725251759:0;John 1:1
 : 1725251835:0;Mark 1:10
-: 1725251841:0;Mark 1:11
 : 1725251940:0;Mark 9:7
 : 1725251978:0;Matt 3:17
 : 1725251986:0;tp find-here-path "*bible*"
@@ -16982,7 +16675,6 @@ rm -rf /root/chd-1.1\
 : 1725254371:0;nod II Corinthians 7:1
 : 1725254398:0;nod II Peter 1:4
 : 1725254444:0;nod Proverbs 8:13
-: 1725254534:0;II Corinthians 6:14-18
 : 1725254586:0;I Thessalonians 5:23 | v
 : 1725254590:0;nod I Thessalonians 5:23
 : 1725254844:0;1 Corinthians 6:20
@@ -17005,7 +16697,6 @@ rm -rf /root/chd-1.1\
 : 1725277208:0;I Thessalonians 5:3-9
 : 1725277311:0;I Thessalonians 4:312
 : 1725277313:0;I Thessalonians 4:3-12
-: 1725277346:0;Colossians 1:13-14
 : 1725277416:0;Ephesians 5:1-14
 : 1725277458:0;John 3:19
 : 1725277460:0;John 3:19-21
@@ -17013,7 +16704,6 @@ rm -rf /root/chd-1.1\
 : 1725279648:0;John 20:22
 : 1725307741:0;Matt 7:21-22
 : 1725307868:0;Matt 7:21-23
-: 1725308130:0;Matthew 7:21-23
 : 1725308161:0;Matthew 7:24-28
 : 1725308452:0;Romans 4:5-8
 : 1725308546:0;Galatians 4:4-9
@@ -17021,7 +16711,6 @@ rm -rf /root/chd-1.1\
 : 1725308800:0;Matthew 7:1-15
 : 1725308829:0;Matthew 7:1-20
 : 1725309204:0;Romans 13:10
-: 1725309371:0;John 4:34
 : 1725309470:0;John 8:29
 : 1725309833:0;1 Corinthians 12:4-6
 : 1725310111:0;Romans 8:15
@@ -17043,7 +16732,6 @@ rm -rf /root/chd-1.1\
 : 1725311126:0;Acts 10:43-45
 : 1725312062:0;Romans 11:6-7
 : 1725312071:0;Romans 11:6-8
-: 1725312094:0;Romans 11:6
 : 1725312161:0;Romans 11:4-8
 : 1725312184:0;Romans 11
 : 1725312224:0;1Kgs 19:18
@@ -17108,10 +16796,8 @@ rm -rf /root/chd-1.1\
 : 1725564388:0;Romans 6:20-23
 : 1725564399:0;Romans 6:17-23
 : 1725564419:0;Romans 6:16-23
-: 1725564482:0;Romans 6:16-18
 : 1725565262:0;Revelation 22:3-4
 : 1725565306:0;John 5:43
-: 1725565324:0;sh-git
 : 1725565811:0;Matthew 7:24-27
 : 1725566341:0;1 John 5:4
 : 1725566444:0;Romans 5:15-17
@@ -17126,7 +16812,6 @@ rm -rf /root/chd-1.1\
 : 1725567727:0;1 Corinthians 4:6
 : 1725567766:0;2 John 1:9
 : 1725567839:0;Proverbs 29:19
-: 1725567848:0;Proverbs 29:18
 : 1725568224:0;v pdflatex
 : 1725568404:0;z README.pdf
 : 1725568878:0;Revelation 2:9
@@ -17159,7 +16844,6 @@ rm -rf /root/chd-1.1\
 : 1725587863:0;James 2:24
 : 1725588069:0;Romans 9:30-32 | v
 : 1725588170:0;Galatians 2:12
-: 1725588569:0;Hebrews 11:1-2
 : 1725589327:0;Acts 2:4
 : 1725589402:0;1 Corinthians 14:21
 : 1725589449:0;Acts 2:6-11
@@ -17253,7 +16937,6 @@ rm -rf /root/chd-1.1\
 : 1725954165:0;Genesis 18:25-26
 : 1725954481:0;II Samuel 23:2-4
 : 1725954753:0;Genesis 18:1-5
-: 1725954796:0;Genesis 18:25
 : 1725955055:0;II Peter 1:5-11
 : 1725955211:0;John 5:37-38
 : 1725955354:0;Isaiah 63:10
@@ -17294,11 +16977,9 @@ rm -rf /root/chd-1.1\
 : 1726021025:0;nasb 1 Corinthians 13:5
 : 1726021249:0;Acts 10:4
 : 1726021394:0;Genesis 19:13
-: 1726021419:0;Hebrews 8:12
 : 1726021427:0;Hebrews 8:11-12
 : 1726021941:0;Matthew 11:23
 : 1726022213:0;Revelation of John 3:1-3
-: 1726022222:0;Revelation of John 3:1-5
 : 1726022322:0;-20
 : 1726022324:0;Revelation of John 3:15-20
 : 1726023915:0;v docs/theology/heretics.org
@@ -17330,7 +17011,6 @@ rm -rf /root/chd-1.1\
 : 1726125012:0;google-chrome "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.html"
 : 1726125120:0;v bglinks.js
 : 1726125633:0;Matthew 5
-: 1726125649:0;Matthew 5:38-39
 : 1726125657:0;Matthew 5:38-40
 : 1726125703:0;Matthew 5:40-41
 : 1726125795:0;*Romans 12:20* - To the contrary, if your enemy is hungry, feed him; if he is thirsty, give him something to drink; for by so doing you will heap burning coals on his head. (ESV)
@@ -17345,10 +17025,7 @@ rm -rf /root/chd-1.1\
 : 1726126758:0;Luke 6:36-37
 : 1726126769:0;Matthew 7:2
 : 1726126878:0;Luke 6:37-38
-: 1726126986:0;Ephesians 4:32
-: 1726127918:0;Matthew 5:7
 : 1726128117:0;Luke 12:57
-: 1726128306:0;Leviticus 19:18
 : 1726128433:0;James 3:1
 : 1726129924:0;v README.html
 : 1726130474:0;1 Corinthians 2:15
@@ -17409,7 +17086,6 @@ Proverbs 23:7
 : 1726265612:0;1 Corinthians 10:4
 : 1726266881:0;John 3:14-16
 : 1726266893:0;John 3:14-18
-: 1726266908:0;I John 5:13
 : 1726266964:0;Hebrews 11:6
 : 1726267174:0;Acts 16:30-32
 : 1726268718:0;James 5:15-16
@@ -17418,13 +17094,11 @@ Proverbs 23:7
 : 1726269382:0;Luke 3:8
 : 1726269430:0;Luke 19:9-10
 : 1726269434:0;Luke 19:8-10
-: 1726269539:0;Acts 16:30-34
 : 1726269741:0;I Timothy 1:19
 : 1726269793:0;1 Timothy 1:5
 : 1726269828:0;Romans 2:4
 : 1726272920:0;sp /volumes/home/shane/var/smulliga/source/git/ciel-lang/CIEL/README.md
 : 1726272972:0;v cr
-: 1726272988:0;v ff
 : 1726273085:0;glow /volumes/home/shane/var/smulliga/source/git/ciel-lang/CIEL/README.md
 : 1726273101:0;glow -f /volumes/home/shane/var/smulliga/source/git/ciel-lang/CIEL/README.md
 : 1726273120:0;which -a glow
@@ -17436,19 +17110,15 @@ Proverbs 23:7
 : 1726295190:0;v yt
 : 1726305988:0;John 19:25-29
 : 1726306028:0;John 19:26-27
-: 1726306503:0;sudo shutdown -h now
 : 1726345867:0;Genesis 49:9
 : 1726345947:0;Luke 8:13
 : 1726346313:0;Luke 8:17
-: 1726346331:0;Romans 10:11-15
 : 1726346336:0;Romans 10:11
 : 1726347030:0;Isaiah 65:25
 : 1726347055:0;Isaiah 11:6
 : 1726347109:0;Ephesians 2:11-14
-: 1726347124:0;John 14:6
 : 1726347142:0;John 17:17
 : 1726347226:0;Psalm 119:160
-: 1726347240:0;John 1:14
 : 1726347366:0;John 6:56
 : 1726347392:0;John 6:63
 : 1726347415:0;John 12:49
@@ -17475,12 +17145,10 @@ Proverbs 23:7
 : 1726373541:0;Hebrews 2
 : 1726373569:0;John 8:39-40
 : 1726373599:0;Mark 3:35
-: 1726373625:0;John 8:42
 : 1726374317:0;nem decorated onelined I Thessalonians 5:23 | v
 : 1726374508:0;cd /volumes/home/shane/var/smulliga/source/git/mullikine/prayers
 : 1726376060:0;I Corinthians 15:45
 : 1726376153:0;Hosea 2:19â€ƒ³20
-: 1726376209:0;Galatians 4:6
 : 1726376363:0;Hebrews 2:10
 : 1726376576:0;Genesis 2:22
 : 1726437609:0;Proverbs 16:10
@@ -17498,7 +17166,6 @@ Proverbs 23:7
 : 1726521849:0;I Corinthians 3:23
 : 1726554355:0;nod Matt 8:10-12
 : 1726554539:0;John 4:22
-: 1726554738:0;Romans 4:13
 : 1726555072:0;Genesis 22:17
 : 1726555076:0;Genesis 22:16-17
 : 1726555092:0;Genesis 22:16-18
@@ -17525,7 +17192,6 @@ Proverbs 23:7
 : 1726629466:0;Psalms 104:7
 : 1726629478:0;Matthew 28:18
 : 1726629488:0;Matthew 18:18
-: 1726629694:0;Revelation of John 12:11
 : 1726629704:0;Jeremiah 15:14
 : 1726629720:0;Ephesians 6:16
 : 1726629729:0;Isaiah 54:17
@@ -17542,7 +17208,6 @@ Proverbs 23:7
 : 1726634653:0;list-unicode | v
 : 1726635900:0;v xpin
 : 1726635924:0;Galatians 6:9-10
-: 1726635957:0;v xt
 : 1726635969:0;unbuffer in-pen xt -xt bash
 : 1726636045:0;'xterm' '-bg' '#000000' '-fg' '#ffffff' '-ls' '-fs' '36' '-e' '. /root/.xterm-sh-rc; export WINDOWID; cd /root/.pen/documents/notes; /root/.pen/tmp/nsfa--bash-root-pen-documents-notes.sh'
 : 1726636088:0;'xterm' '-bg' '#000000' '-fg' '#ffffff' '-ls' '-fs' '10' '-e' '. /root/.xterm-sh-rc; export WINDOWID; cd /root/.pen/documents/notes; /root/.pen/tmp/nsfa--bash-root-pen-documents-notes.sh'
@@ -17561,7 +17226,6 @@ Proverbs 23:7
 : 1726645250:0;./carbonyl-0.0.3/carbonyl
 : 1726645259:0;acs glibc
 : 1726645280:0;cd debug
-: 1726645283:0;cd build
 : 1726645287:0;sh-find
 : 1726645306:0;./carbonyl-8ee0957cbefbc31a/build-script-build
 : 1726645365:0;wget "https://github.com/browsh-org/browsh/releases/download/v1.8.3/browsh-1.8.3.xpi"
@@ -17582,8 +17246,6 @@ Proverbs 23:7
 : 1726648024:0;Matthew 5:5
 : 1726648060:0;kjv Matthew 5:5
 : 1726648676:0;oci readsubs "https://www.youtube.com/watch?v=eEot02XA49E"
-: 1726648695:0;v readsubs
-: 1726648717:0;v oci
 : 1726649888:0;Acts 8:18-23
 : 1726649922:0;Acts 8:13-23
 : 1726650167:0;Acts 8
@@ -17627,15 +17289,11 @@ Proverbs 23:7
 : 1726731693:0;o "https://mycatholic.life/books/confessions-saint-augustine/book-confessions-saint-augustine/"
 : 1726731710:0;o "https://www.gutenberg.org/files/3296/3296-h/3296-h.htm"
 : 1726777366:0;1 John 3:14-20
-: 1726777400:0;John 3:36
 : 1726777413:0;1John 5:11-13
-: 1726777430:0;John 3:18
-: 1726777444:0;John 6:40
 : 1726777454:0;Rom 8:1
 : 1726777464:0;John 6:47
 : 1726777468:0;John 6:47-51
 : 1726777477:0;John 10:27-30
-: 1726777616:0;I John 3:14-20
 : 1726777622:0;I John 4:14-20
 : 1726777925:0;John 5:24
 : 1726777964:0;John 5:21-24
@@ -17646,7 +17304,6 @@ Proverbs 23:7
 : 1726786100:0;u
 : 1726786104:0;2 Corinthians 7:1
 : 1726786347:0;I John 1:6-9
-: 1726786364:0;II Corinthians 7:1
 : 1726786411:0;Psalms 43:3
 : 1726786473:0;I John 2:9
 : 1726786529:0;Psalm 119:105
@@ -17690,18 +17347,14 @@ Proverbs 23:7
 : 1726797769:0;Romans 2:6â€ƒ³11
 : 1726798063:0;Romans 2:29
 : 1726798081:0;Romans 2:28-9
-: 1726798087:0;Romans 2:28-29
-: 1726798190:0;Romans 3:21-28
 : 1726798257:0;Romans 2:26-29
 : 1726798700:0;James 1:19-21
 : 1726798747:0;Galatians 5:19-21
 : 1726798779:0;Mark 3:4-5
 : 1726798819:0;Matthew 18:33-35
 : 1726798849:0;Ephesians 4:26
-: 1726798867:0;Matthew 5:22
 : 1726799577:0;John 7:23
 : 1726799660:0;John 7:19-25
-: 1726800121:0;Ephesians 4:26-27
 : 1726800348:0;Psalm 7:11
 : 1726800375:0;Deuteronomy 6:15
 : 1726800387:0;Nahum 1:2-3
@@ -17744,7 +17397,6 @@ Proverbs 23:7
 : 1726869526:0;Romans 2:6-11
 : 1726869773:0;Romans 6:22-23
 : 1726869891:0;Romans 8:16-17
-: 1726873573:0;emacsclient -a false -e t
 : 1726873590:0;pen-emacsclient -a "" -t -s DEFAULT
 : 1726875096:0;rm *.txt
 : 1726875097:0;upd htmls2txt
@@ -17810,7 +17462,6 @@ make install\
 : 1726878718:0;gdb /usr/local/bin/emacs
 : 1726878728:0;valgrind /usr/local/bin/emacs
 : 1726878967:0;cd unison
-: 1726878972:0;ls -a
 : 1726878976:0;cd ~/
 : 1726878978:0;cd unisonlanguage
 : 1726878986:0;cd ~/glibc/glibc-2.29
@@ -17933,16 +17584,12 @@ apt -y --fix-broken install
 : 1726895395:0;cd tmux
 : 1726895424:0;./configure --enable-sixel --prefix=$HOME/.local
 : 1726895464:0;cd ~/repos/vim
-: 1726895488:0;make distclean
-: 1726895490:0;./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
-: 1726895504:0;make -j $(nproc)
 : 1726895561:0;git clone --branch emacs-29 --depth 1 "https://github.com/emacs-mirror/emacs"
 : 1726895588:0;cd emacs
 : 1726895619:0;cd /tmp
 : 1726895628:0;wget "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi-dev_1.0.8-2.1_amd64.deb"
 : 1726895631:0;dpkg -i libfribidi-dev_1.0.8-2.1_amd64.deb
 : 1726895664:0;sudo apt install libsqlite3-dev libgccjit0 libgccjit-12-dev libfribidi0 libfribidi-dev
-: 1726895679:0;v setup.sh
 : 1726895691:0;(\
  cd /tmp\
  wget "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi-dev_1.0.8-2.1_amd64.deb"\
@@ -17951,7 +17598,6 @@ apt -y --fix-broken install
 : 1726895700:0;./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-tree-sitter --with-small-ja-dic --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
 : 1726895724:0;go install -v github.com/noperator/sol/cmd/sol@latest
 : 1726895739:0;export PATH="$(echo "$PATH" | sed 's/:/\n/g' | grep -v pen.el | sed '/^$/d' | s join :)"
-: 1726895749:0;make -j 8
 : 1726895758:0;update-rust
 : 1726895934:0;""\\
 
@@ -18034,7 +17680,6 @@ apt -y --fix-broken install
 : 1726899020:0;cd ~/programs/carbonyl-0.0.3
 : 1726899026:0;mkw -f carbonyl
 : 1726899071:0;carbonyl "http://semiosis.github.io"
-: 1726899374:0;cat /etc/issue
 : 1726899572:0;tp find-here-path "*dump*"
 : 1726899596:0;tp find-here-path "*tar*"
 : 1726899602:0;tp find-here-path "*expor*"
@@ -18052,8 +17697,6 @@ apt -y --fix-broken install
 : 1730145497:0;nod Philippians 2:8-9
 : 1730145513:0;Luke 6:35-36
 : 1730147764:0;clj-rebel
-: 1730147791:0;bb
-: 1730369118:0;gum-confirm "hdlksfj"
 : 1730369122:0;v gum-confirm
 : 1730369161:0;gum confirm
 : 1730369176:0;gum file
@@ -18091,7 +17734,6 @@ apt -y --fix-broken install
 : 1730411885:0;ls -ldt ~/.scriptrc
 : 1730411887:0;v ~/.scriptrc
 : 1730412000:0;org2html README.org
-: 1730412005:0;chrome README.html
 : 1730412393:0;rsync -rtlphx /root/.emacs.d/host/pen.el/ ~/.emacs.d/pen.el
 : 1730412408:0;ln -sf ~/.emacs.d/pen.el/config/bash/scriptrc ~/.scriptrc
 : 1730412409:0;ln -sf ~/.emacs.d/pen.el/config/bash/bashrc ~/.bashrc
@@ -18118,7 +17760,6 @@ apt -y --fix-broken install
 : 1730413621:0;ls -ldt ebdb
 : 1730413626:0;v ebdb
 : 1730413629:0;rm ebdb
-: 1730413632:0;v directories.org
 : 1730413635:0;rm goose_api_key
 : 1730413637:0;touch goose_api_key
 : 1730413669:0;rm openai_api_key
@@ -18181,7 +17822,6 @@ apt -y --fix-broken install
 : 1730429630:0;tp find-here-path "*notmuch*"
 : 1730429654:0;tp find-here-path "*agenda*"
 : 1730429660:0;cd org-brain
-: 1730429663:0;v agenda
 : 1730429670:0;v church-elders/Pastor\ Alistair\ Begg.org
 : 1730429684:0;v welfare-organisations/Acts\ of\ Kindness\ Charitabe\ Trust.org
 : 1730429690:0;v welfare-organisations/SPCA.org
@@ -18257,7 +17897,6 @@ apt -y --fix-broken install
 : 1732668819:0;raco test -x -p sample-racket-langauge
 : 1732668841:0;raco test -x -p sample-racket-language
 : 1732670279:0;v get-shebang-for-file
-: 1732670445:0;which -a env
 : 1732670526:0;v excitedness.rkt
 : 1732670543:0;/root/repos/davidelettieri/sample-racket-language/use-language.rkt
 : 1732670547:0;cd /root/repos/davidelettieri/sample-racket-language/
@@ -18275,7 +17914,6 @@ apt -y --fix-broken install
 : 1732671033:0;git checkout -- use-language.rkt
 : 1732671088:0;cd racket-scripts
 : 1732671093:0;cp /root/repos/davidelettieri/sample-racket-language/use-language.rkt ./
-: 1732671850:0;vd
 : 1732671977:0;pen-pvd --help
 : 1732672143:0;pvd --help | pavs
 : 1732672166:0;which -a pvd
@@ -18288,7 +17926,6 @@ apt -y --fix-broken install
 : 1732672589:0;list-kjv-terms
 : 1732672594:0;v pen-pa
 : 1732672602:0;v colvs
-: 1732672609:0;v vs
 : 1732672612:0;v pen-vs
 : 1732672624:0;v calc-best-n-columns
 : 1732672917:0;pen-send-cl-maybe
@@ -18366,7 +18003,6 @@ apt -y --fix-broken install
 : 1732692135:0;racket /root/repos/racket/datalog/tests/examples/ancestor.rkt
 : 1732694590:0;v runracketscript
 : 1732694597:0;racket --help
-: 1732694705:0;textual-paint
 : 1732695144:0;which -a racket
 : 1732695167:0;racket
 : 1732695272:0;v racket
@@ -18423,14 +18059,11 @@ apt -y --fix-broken install
 : 1732844934:0;v pvd
 : 1732845091:0;which -a unbuffer
 : 1732845151:0;ext_freq_cmdlog_out.vdj | v
-: 1732845282:0;sh-git-hydra
 : 1732845305:0;ext_freq_cmdlog_out.vdj | pvdf
 : 1732845316:0;pvd --help
 : 1732845341:0;ext_freq_cmdlog_out.vdj | pvd
 : 1732845418:0;v pvd-play-out
-: 1732845435:0;cd
 : 1732845449:0;v ext_freq_cmdlog_out.vdj
-: 1732845513:0;feh countdown_logo_email.jpg
 : 1732845525:0;rm /root/.emacs.d/host/pen.el/scripts/visidata-scripts/visidata-pipeline-test.sh
 : 1732846319:0;v open-main
 : 1732846686:0;extract-digits-from-year.rkt "2018"
@@ -18483,7 +18116,6 @@ apt -y --fix-broken install
 : 1732855752:0;v sout
 : 1732856109:0;tmux display -p "#{session_name}"
 : 1732856149:0;tpop
-: 1732925726:0;v clipboard.txt
 : 1732927638:0;let-syntax-demo.rkt
 : 1732929984:0;Daniel 4:17
 : 1732930603:0;Daniel 5:8-9
@@ -18547,7 +18179,6 @@ fi
 : 1733211694:0;git_custom_status
 : 1733212913:0;pen-bw
 : 1733215836:0;htop DEFAULT
-: 1733215935:0;tp find-here-path "*faces*"
 : 1733215945:0;v pen/faces.el
 : 1733216088:0;v /root/.pen/faces.el
 : 1733219247:0;echo hello | hls reverse reverse
@@ -18587,7 +18218,6 @@ fi
 : 1733287138:0;tp find-here-path "*disable-all*"
 : 1733287145:0;ls -ldt container/pen-disable-all-faces
 : 1733287163:0;v ./pen-tcp-disable-all-faces-all-workers
-: 1733287176:0;cd ~/.pen
 : 1733287179:0;cd emacs-tcp-server-ports
 : 1733287263:0;v in-pen
 : 1733287341:0;pen-tcp-disable-all-faces-all-workers
@@ -18649,28 +18279,20 @@ fi
 : 1733292263:0;tmux source tmux.conf
 : 1733292266:0;tmux source tmux-bw.conf
 : 1733292744:0;pen
-: 1733299406:0;gum-confirm
-: 1733299687:0;echo hi | fzf
 : 1733299936:0;nvc -2 nano
 : 1733299946:0;nano
 : 1733299949:0;nano listen.org
 : 1733300110:0;ead nvc -E
 : 1733300256:0;nvc
-: 1733300267:0;v nvc
-: 1733300274:0;v fzf
 : 1733300441:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300450:0;nvim -c "call TermAndQuit(\" cat '/tmp/tf_tempvwgFeCH.txt' | \\\"zsh\\\" > '/tmp/tf_tempqp4KsdS.txt'; pak\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
 : 1733300515:0;echo "hi\nyo" | fzf
-: 1733300579:0;v toggle-tmux-popup
 : 1733300608:0;pen-rc-test -f black_and_white
 : 1733300612:0;echo "$?"
-: 1733300705:0;v spinner-start
 : 1733300723:0;v spinner
 : 1733300751:0;spinner-start Cool
 : 1733300931:0;spinner-start -b sleep 5
-: 1733300986:0;v blocked-patterns.txt
 : 1733300992:0;v fp.ini
-: 1733300995:0;v fp.cfg
 : 1733374148:0;tmux env
 : 1733374150:0;tmux showenv
 : 1733374151:0;tmux showenv | v
@@ -18694,7 +18316,6 @@ fi
 : 1733375531:0;export TERM
 : 1733375533:0;TMUX= tmux
 : 1733375594:0;echo "$TERM"
-: 1733375627:0;v tm
 : 1733375722:0;echo "$COLORTERM"
 : 1733376155:0;TERM=screen-2color zsh
 : 1733376161:0;env | v
@@ -18717,7 +18338,6 @@ fi
 : 1733376917:0;eval "env $(env cat /root/dump/tmp/scratchHefNev.txt | q -l | s join ' ') tpop v"
 : 1733376939:0;tpop v
 : 1733376943:0;env tpop v
-: 1733376953:0;man env
 : 1733376964:0;env YO=yo -- tpop v
 : 1733376968:0;env YO=yo tpop v
 : 1733376980:0;env YO=yo unbuffer tpop v
@@ -18731,8 +18351,6 @@ fi
 : 1733377647:0;PEN_TERM=screen-2color TMUX= tmux -L YO new bash
 : 1733377675:0;v setup-term.sh
 : 1733377788:0;TERM=screen-2color PEN_TERM=screen-2color TMUX= tmux -L YO new bash
-: 1733381757:0;nem todayfile
-: 1733440555:0;gipe.bb
 : 1733447986:0;Luke 5:20-23
 : 1733448003:0;Mark 2:5-9
 : 1733448014:0;Matthew 9:2-5
@@ -18754,7 +18372,6 @@ fi
 : 1733450109:0;Galatians 2:20
 : 1733450155:0;Colossians 3:23
 : 1733450162:0;Colossians 3:23-25
-: 1733450263:0;Romans 5:9
 : 1733450424:0;Ephesians 3:14-21
 : 1733450641:0;nasb Ephesians 2:15-18
 : 1733450650:0;nasb Ephesians 2:11-18
@@ -18764,16 +18381,13 @@ fi
 : 1734494698:0;grep -HnoR PENELD . | v
 : 1734494725:0;echo $PENEL_DIR
 : 1734494780:0;grep -HnoRP "host.*PENELD" . | v
-: 1734494944:0;v newframe.sh
 : 1734496289:0;tpop-tetris & disown; exit
-: 1734496296:0;tpop-tetris
 : 1734496301:0;unbuffer tpop-tetris & disown; exit
 : 1734497270:0;vim run.sh
 : 1734497274:0;vim ~/run.sh
 : 1734497428:0;sh -c "'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'"
 : 1734497446:0;pen-emacsclient '-s' 'DEFAULT' '-a' '' '-t'
 : 1734497465:0;/usr/local/bin/emacsclient '-s' 'DEFAULT' '-a' '' '-t'
-: 1734497547:0;env
 : 1734497586:0;emacs -nw
 : 1734497826:0;v pen.el
 : 1734498226:0;grep -HnoRP "defun str" . | v
@@ -18788,26 +18402,20 @@ fi
 : 1734499427:0;bible-random-verse
 : 1734552033:0;v .tmux.sh
 : 1734552142:0;tmux list-sessions
-: 1734552341:0;pen-e -D pen-emacsd-1
 : 1734558192:0;v /tmp/babel-g3fc6n/org-tableyTeM2B.tsv
 : 1734558377:0;pen-tm sps -nv slmenu
 : 1734558386:0;pen-tm sps -nv vim
 : 1734558395:0;pen-tm -d sps -nv vim
 : 1734560078:0;v orgtbl-to-tsv
-: 1734560887:0;cd emacs-scripts
 : 1734560905:0;mcd emacs-remote-control
 : 1734560915:0;tp find-here-path "*tcp*"
 : 1734560927:0;ead e-tcp
-: 1734560950:0;v update-emacs-table
 : 1734561315:0;update-emacs-table
 : 1734561700:0;update-emacs-table -D DEFAULT "/root/.pen/documents/notes/todo.org" 54 "/tmp/babel-g3fc6n/org-table4UEpT4.tsv"
 : 1734563430:0;v ~/.visidatarc
 : 1734565038:0;cp -a pen-prompt-tablist.el pen-supervisor-tablist.el
 : 1734565142:0;mcd supervisor
 : 1734565447:0;v ./supervisor-details
-: 1734565453:0;v supervisor-details
-: 1734565784:0;supervisor-details
-: 1734565814:0;supervisor-details | v
 : 1734565994:0;which -a si
 : 1734846060:0;cat | which welcome-to-rat
 : 1734846080:0;which welcome-to-rat | xargs cat
@@ -18842,11 +18450,9 @@ fi
 : 1734861825:0;v man
 : 1734861832:0;man realpath
 : 1734861846:0;info -q realpath
-: 1734861848:0;echo $?
 : 1734861892:0;info "(coreutils)realpath'
 : 1734861893:0;info "(coreutils)realpath"
 : 1734861934:0;/usr/bin/info realpath
-: 1734861942:0;v info
 : 1734861967:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath
 : 1734862087:0;v einfo
 : 1734862161:0;ocif timeout 0.2 /usr/bin/info -o /dev/stdout realpath | v
@@ -18871,13 +18477,11 @@ fi
 : 1734862489:0;mru
 : 1734862554:0;man sum
 : 1734862693:0;tig
-: 1734862703:0;rat
 : 1734862776:0;v ~/.config/rat/ratrc
 : 1734862783:0;rat --help
 : 1734862786:0;rat -h
 : 1734862790:0;which -a rat
 : 1734862794:0;/root/go/bin/rat -h
-: 1734862815:0;emacs -nw --debug-init
 : 1734862828:0;d
 : 1734862855:0;v fpvd
 : 1734862865:0;cd /usr/local/lib/python3.8/site-packages/visidata/themes/
@@ -18905,8 +18509,6 @@ fi
 : 1734863514:0;fpvd -h
 : 1734863537:0;visidata -2
 : 1734863850:0;cd visidata-scripts/
-: 1734863851:0;s
-: 1734863852:0;l
 : 1734863863:0;v ext_freq_cmdlog.vdj
 : 1734864342:0;v global_options_cmdlog-test.vdj
 : 1734864456:0;v visidata-colors.tsv
@@ -18953,7 +18555,6 @@ fi
 : 1734869469:0;tp find-here-path "*p.png*"
 : 1734869471:0;tp find-here-path "*.png*"
 : 1734869477:0;cd results_05.11.22__1667618282_0fa7f6b3-2264-44dc-813f-58a3a3fcc4b0_8pO57/images/
-: 1734869500:0;popd
 : 1734869506:0;cd results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/
 : 1734869509:0;feh result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png
 : 1734869519:0;show-pic "/root/.emacs.d/host/pen.el/config/pen/results/results_1667617689.3705218_05.11.22_1f8e14f2-1942-4938-85fa-3c6836c59225/results_05.11.22__1667617692_1f8e14f2-1942-4938-85fa-3c6836c59225_MIH73/images/result-a-phantasmagoria-of-semiotic-art-depicting-a-surreal-and-surreptitious-strawberry-.png"
@@ -18971,7 +18572,6 @@ fi
 : 1734869934:0;win ie "/root/notes/countdown_logo_email.jpg"
 : 1734869959:0;show-pic "/root/notes/countdown_logo_email.jpg"
 : 1734869962:0;nosix show-pic "/root/notes/countdown_logo_email.jpg"
-: 1734869976:0;lsix
 : 1734870025:0;v "/root/.pen/documents/notes/clipboard.txt"
 : 1734870036:0;nosix show-pic "/root/.pen/documents/notes/countdown_logo_email.jpg"
 : 1734870051:0;v glossary.txt
@@ -18981,7 +18581,6 @@ fi
 : 1734908230:0;cd scripts
 : 1734908242:0;v yttranscriptcom
 : 1734908248:0;v pen-editxclip
-: 1734908257:0;v README.org
 : 1734909003:0;v ~/.config/ranger/rc.conf
 : 1734909068:0;file options.pyo
 : 1734909078:0;v apps.py
@@ -19004,14 +18603,9 @@ fi
 : 1734913266:0;git config --system --add safe.directory '*'
 : 1734925113:0;v arp-details
 : 1734925361:0;tp find-here-path "*.db*"
-: 1734926430:0;v Makefile
-: 1734926943:0;v ~/.gitconfig
 : 1735716482:0;echo hello | vimpager
 : 1735716491:0;v date
 : 1735716498:0;which date
-: 1735716518:0;v pwd
-: 1735725744:0;vimhelp digraph-table
-: 1735731884:0;v pen-e
 : 1735731902:0;command -v emacs
 : 1735731908:0;v emacs
 : 1735731912:0;which -a emacs
@@ -19032,15 +18626,11 @@ fi
 : 1735779160:0;nod Le 25:17 You shall not wrong one another, but you shall fear your God, for I am the Lord your God.
 : 1735779167:0;nod Leviticus 25:17
 : 1735855202:0;v nvim
-: 1735855207:0;nvim
 : 1735855218:0;v nv
 : 1735855231:0;vimcat-basic -c "call GeneralSyntax()"
-: 1735855280:0;bash
 : 1735855313:0;date | vimcat-basic -c "call GeneralSyntax()"
 : 1735855314:0;date | shx vimcat-basic -c "call GeneralSyntax()"
 : 1735855892:0;cd ~/.vim/bundle/
-: 1735855902:0;cd autoload
-: 1735855905:0;cd bundle
 : 1735855988:0;cat /tmp/out
 : 1735855995:0;date | vimcat | cat
 : 1735856016:0;which -a cat
@@ -19076,14 +18666,12 @@ outfp="/tmp/vimcat-out-$$"
 : 1735870754:0;cd AnsiHighlight
 : 1735870756:0;mcd plugin
 : 1735870764:0;v AnsiHighlight.vim
-: 1735870789:0;cd ~/.vim/bundle
 : 1735870797:0;ls -ldt AnsiEsc
 : 1735870807:0;ln -sf /root/.emacs.d/host/pen.el/config/vim-bundles/AnsiHighlight
 : 1735870836:0;v run.sh
 : 1735870887:0;v read.org
 : 1735870899:0;which -a lolcat
 : 1735870904:0;v hls
-: 1735870922:0;v ~/.zshrc
 : 1735870946:0;ead -i black_and_white
 : 1735871034:0;v visidata
 : 1735871054:0;cat debugLog.txt| vimcat
@@ -19101,9 +18689,7 @@ outfp="/tmp/vimcat-out-$$"
 : 1735873730:0;cat /root/.pen/documents/notes/todo.org | head -n 5
 : 1735891706:0;v ivm
 : 1735891710:0;v vim
-: 1735891729:0;v ~/syntax.vim
 : 1735891876:0;v /root/notes/perspective.org
-: 1735891890:0;v vimcat
 : 1735891963:0;'vim' '-E' '-X' '-R' '-i' 'NONE' '-c' 'silent! echo|call BWSyntax()' '-c' 'visual | call AnsiHighlight("/tmp/vimcat-out-916475")' '--' '/tmp/vimcat-in-916475'
 : 1735892022:0;cat /tmp/yoyo
 : 1735892039:0;echo hello | hls black reverse
@@ -19115,15 +18701,10 @@ outfp="/tmp/vimcat-out-$$"
 : 1735892205:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat
 : 1735892244:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat | cat
 : 1735892251:0;cat /root/.pen/documents/notes/todo.org | head -n 5 | vimcat | v
-: 1735892286:0;v ~/.vimrc
 : 1735892295:0;v ~/.vim/bundle/AnsiHighlight/plugin/AnsiHighlight.vim
 : 1735893023:0;v pen-bw
 : 1735893238:0;emacs -batch -l dunnet
 : 1735893254:0;man emasc
-: 1735893257:0;man emacs
-: 1735893303:0;rlwrap emacs -batch -l dunnet
-: 1736105822:0;v sp
-: 1736105840:0;emacs -nw -Q
 : 1736107602:0;nvc rl emacs -batch -l dunnet
 : 1736126736:0;j tablist-mark-forward
 : 1736133250:0;sp +/"val = Fprogn (args);" "$MYGIT/emacs/src/editfns.c"
@@ -19133,20 +18714,15 @@ outfp="/tmp/vimcat-out-$$"
 : 1736134039:0;Eph 4:26-27
 : 1736134084:0;Eph 6:11-12
 : 1736134175:0;Luke 4:2-13
-: 1736134234:0;Heb 12:9
 : 1736134340:0;2Chr 30:8
-: 1736145954:0;cd src
 : 1736145959:0;v pen-amot.el
-: 1736146195:0;pen-count-loc
 : 1736147297:0;Colossians 3:14-25
-: 1736150308:0;hostname
 : 1736152563:0;v gipe.bb
 : 1736153359:0;eog rainbow.gif
 : 1736153916:0;wget "https://github.com/libsdl-org/SDL-1.2/commit/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch"
 : 1736153933:0;v 5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch
 : 1736153961:0;cp -a /root/repos/saitoha/SDL1.2-SIXEL/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch ./
 : 1736154008:0;make clean -fd .
-: 1736154010:0;make clean
 : 1736154024:0;git reset --hard HEAD
 : 1736154031:0;git apply /root/.emacs.d/host/pen.el/config/libsdl/5d79977ec7a6b58afa6e4817035aaaba186f7e9f.patch
 : 1736187874:0;Hebrews 6:11-15
@@ -19155,7 +18731,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736188109:0;I Corinthians 3:10-15
 : 1736188169:0;Romans 15:18-21
 : 1736188218:0;Luke 14:27-30
-: 1736188271:0;Luke 6:46-49
 : 1736188320:0;Hebrews 11:10
 : 1736188436:0;Hebrews 11:8-10
 : 1736190897:0;Philippians 1:27-30
@@ -19175,7 +18750,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736242216:0;tp find-here-path "*img*"
 : 1736248800:0;$PENELD/scripts/pen-timg -doless --frames=1 --clear -E countdown_logo_email.jpg
 : 1736248815:0;$PENELD/scripts/pen-timg -doless --frames=1 --clear -E countdown_logo_email.jpg | v
-: 1736250806:0;yazi
 : 1736273599:0;v build.sh
 : 1736273641:0;./build.sh release
 : 1736273683:0;> ./configure --prefix=/usr
@@ -19184,7 +18758,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736273705:0;autoreconf --install --force
 : 1736273720:0;./configure --prefix=/usr
 : 1736273727:0;git clean -fd .
-: 1736273732:0;vcr
 : 1736415868:0;Titus 2
 : 1736582964:0;agi autotrace
 : 1736582972:0;acs autotrace
@@ -19199,7 +18772,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736583209:0;ps -ef | grep /usr/bin/xterm
 : 1736583228:0;ps -ef | "grep /usr/bin/xterm.*faceName"
 : 1736583231:0;ps -ef | grep "/usr/bin/xterm.*faceName"
-: 1736583329:0;v o
 : 1736583349:0;xdg-open /usr/share/fonts/opentype/Symbola.otf
 : 1736583358:0;which -a xdg-open
 : 1736583360:0;/usr/bin/xdg-open "/usr/share/fonts/opentype/Symbola.otf"
@@ -19245,8 +18817,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736594466:0;fc-list :outline -f "%{family}\n"
 : 1736594514:0;v xterm
 : 1736594585:0;man unicode
-: 1736594703:0;v ~/.Xresources
-: 1736594726:0;cr ~/.Xresources
 : 1736594744:0;pen-xterm -fn "Iosevka Fixed:style=Bold:antialias=true:pixelsize=20"
 : 1736594993:0;pen-xterm -fa "Iosevka Fixed:style=Bold:antialias=true:pixelsize=20"
 : 1736595072:0;pen-xterm
@@ -19258,8 +18828,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736596687:0;/usr/bin/xterm -v
 : 1736596865:0;mcd xterm
 : 1736596919:0;glob "xterm-*"
-: 1736596946:0;v README
-: 1736596953:0;cr
 : 1736599066:0;mv xterm-397 xterm-397-git
 : 1736599094:0;rm -rf xterm-397
 : 1736599125:0;git init
@@ -19269,12 +18837,8 @@ outfp="/tmp/vimcat-out-$$"
 : 1736599137:0;rm -rf xterm-397-git
 : 1736599140:0;cd xterm-397
 : 1736599242:0;./xterm
-: 1736599258:0;htop
 : 1736599267:0;htop xterm
 : 1736599292:0;kill -USR1 469494
-: 1736599322:0;git diff
-: 1736632598:0;man vim
-: 1736632782:0;v pin
 : 1736634465:0;man strcmp
 : 1736634570:0;j lsp-describe-thing-at-point
 : 1736636055:0;fpvd
@@ -19282,8 +18846,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736640763:0;` # I want to enable trace `
 : 1736640833:0;man xterm
 : 1736640871:0;cd ~
-: 1736640925:0;xterm
-: 1736641109:0;ranger
 : 1736648380:0;v trace.h
 : 1736656072:0;Hebrews 13:21
 : 1736656078:0;Hebrews 13:20-21
@@ -19301,8 +18863,6 @@ outfp="/tmp/vimcat-out-$$"
 : 1736675987:0;cd "$(glob "xterm-*")"
 : 1736676039:0;./configure
 : 1736676209:0;evince faith-and-judgement.pdf
-: 1736676226:0;git status
-: 1736676228:0;git pull
 : 1736676239:0;z faith-and-judgement.pdf
 : 1736755572:0;(\
 cd ~/repos\
@@ -19317,8 +18877,6 @@ make -j$(nproc)\
 make install\
 )
 : 1736755606:0;cd ~/repos/xterm/xterm-397
-: 1736755615:0;make
-: 1736755626:0;nproc
 : 1736755635:0;v nproc
 : 1736755646:0;acs athena
 : 1736755652:0;acs libXaw
@@ -19326,16 +18884,13 @@ make install\
 : 1736755667:0;v INSTALL
 : 1736755713:0;agi libxaw7 libxaw7-dev
 : 1736755721:0;./configure --enable-trace
-: 1736755740:0;make -j$(nproc)
 : 1736755763:0;acsh athena
-: 1736755765:0;make install
 : 1736755771:0;acsh libxaw7
 : 1736755788:0;xterm -ti vt340 -bg "#000000" -fg "#ffffff" -ls -fs 20 -fa "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -fb "xterm*faceName:Iosevka Bold:style=Bold:antialias=true:pixelsize=20" -e bash
 : 1736760421:0;man fontforge
 : 1736760428:0;fontforge --help
 : 1736800781:0;I Thessalonians 1:9-10
 : 1736800893:0;I Thessalonians 2:19-20
-: 1736849779:0;pin .
 : 1736849793:0;acs zig
 : 1736869602:0;Galatians 2:17
 : 1736869620:0;Galatians 2:15-16
@@ -19347,14 +18902,12 @@ make install\
 : 1737180712:0;v emacs-packages.txt
 : 1737181742:0;Isaiah 43:10
 : 1737181940:0;nod 1 Timothy 4:11-16
-: 1737181968:0;I Tim 4
 : 1737183532:0;I Corinthians 14:33-35
 : 1737183779:0;I Timothy 2:11-15
 : 1737188084:0;John 14:15-21
 : 1737188103:0;John 16:13
 : 1737188211:0;I John 4:4-21
 : 1737188934:0;Colossians 2:11-23
-: 1737189315:0;penq
 : 1737390435:0;(\
 agi libxaw7 libxaw7-dev\
 cd ~/repos\
@@ -19375,7 +18928,6 @@ make install\
 : 1737390715:0;mv DejaVuSansMono-Bold.sfd DejaVuSansMono-Pen.sfd
 : 1737390720:0;
 : 1737390819:0;cd config/fonts
-: 1737390828:0;sh-yank
 : 1737390836:0;fontforge /root/.emacs.d/host/pen.el/config/fonts/DejaVuSansMono-Pen.sfd
 : 1737390909:0;fc-list :outline -f "%{family}\n" | grep Deja
 : 1737390916:0;tp find-here-path "*Pen*"
@@ -19392,13 +18944,9 @@ make install\
 : 1737395350:0;v ./pen-glyphs
 : 1737395354:0;v ./pen-glyphs-demo
 : 1737395432:0;cd font-scripts
-: 1737395433:0;sl
 : 1737395437:0;v ./pen-font-preview
 : 1737395453:0;rm Trace-*
-: 1737395536:0;cd config
-: 1737395548:0;cd ..
 : 1737395550:0;cd docs/theology
-: 1737398401:0;v v
 : 1737398639:0;Romans 5:1-5
 : 1737398777:0;John 10:9
 : 1737398928:0;James 4:6
@@ -19420,33 +18968,1601 @@ make install\
 : 1737441136:0;pen-xterm -fa "DejaVu Sans Mono Pen:style=Bold:antialias=true:pixelsize=20" -E pen-glyphs-demo
 : 1737445184:0;II Peter 1:5-10
 : 1737448668:0;I Timothy 2:12
-: 1737448675:0;v
 : 1737448680:0;I Corinthians 14:34
 : 1737448685:0;I Corinthians 14:33-34
-: 1737448728:0;pin
 : 1737461179:0;Proverbs 3:27
 : 1737461216:0;Proverbs 3:3-12
 : 1737535092:0;James 4:7-8
 : 1737536560:0;Jeremiah 17:7-10
-: 1737538886:0;pwd
 : 1737539090:0;Jeremiah 17:9
-: 1737543074:0;Ephesians 2:1-10
-: 1737543222:0;II Thessalonians 1:5-8
 : 1737683737:0;v ~/.pen/pen.yaml
 : 1737683745:0;man dpkg
 : 1737683756:0;dpkg --get-selections
 : 1737683759:0;dpkg --get-selections | v
 : 1737683928:0;II Thess 1:1-8 | v
 : 1737684183:0;II Thess 1:1-8
-: 1737684290:0;pe
 : 1737686083:0;Titus 1:1-3
 : 1737686122:0;Titus 1:9
 : 1737686188:0;Titus 1:10
 : 1737686190:0;Titus 1:10-16
-: 1737687007:0;sh-general
 : 1737687757:0;chrome
-: 1737687768:0;bg
-: 1737687769:0;disown
-: 1737688236:0;o
-: 1737688270:0;ls
-: 1737688663:0;acs jenkins
+: 1737706423:0;j magit-toggle-margin
+: 1737716320:0;Psalms 37:5-6
+: 1737716326:0;Psalms 37:5-7
+: 1737716335:0;Psalms 37:5-9
+: 1737718912:0;supervisor-details | v
+: 1737718917:0;supervisor-details -tsv | v
+: 1737719663:0;./true-color-test.sh
+: 1737719760:0;sh-apps
+: 1737719762:0;pen-editxclip
+: 1737720511:0;spin echo hi
+: 1737720515:0;spin sleep 5
+: 1737720524:0;spin sleep 20
+: 1737720607:0;v spinner-start
+: 1737720650:0;pen-e -D DEFAULT -e-tcp "(spinner-start)"
+: 1737720654:0;pen-e -D DEFAULT -e-tcp "(spinner-stop)"
+: 1737720665:0;v spinner-start-emacs
+: 1737720708:0;mv /root/.pen/documents/notes/spinner-start-emacs ./
+: 1737720714:0;mv /root/.pen/documents/notes/spinner-stop-emacs ./
+: 1737720819:0;v spin
+: 1737721398:0;rat
+: 1737721827:0;v hext
+: 1737721836:0;v hexabyte
+: 1737721848:0;hexabyte --help
+: 1737721863:0;v hextweak
+: 1737721873:0;v hextr
+: 1737721900:0;cat /root/repos/cwc/src/dict.o | v
+: 1737721904:0;cat /root/repos/cwc/src/dict.o | hext
+: 1737723059:0;cargo install --git https://github.com/Etto48/HexPatch
+: 1737723155:0;acs jenkins
+: 1737723748:0;hsqf hexabyte
+: 1737724030:0;mkw -cargo hex-patch
+: 1737724042:0;hex-patch
+: 1737724051:0;cargo-quickinstall "hex-patch"
+: 1737724074:0;cargo-quickinstall --force "hex-patch"
+: 1737724118:0;which -a hex-patch
+: 1737724171:0;v hex-patch
+: 1737724191:0;info wget
+: 1737724895:0;Exodus 4:11
+: 1737759328:0;hex-patch "/root/repos/cwc/src/dict.o"
+: 1737778455:0;Romans 8:7
+: 1737778590:0;Deut 1:39
+: 1737778597:0;nod Isaiah 7:15-16
+: 1737779154:0;Joshua 8;3
+: 1737779156:0;Joshua 8:35
+: 1737779172:0;kjv Joshua 8:35
+: 1737779177:0;kjv Joshua 8:34
+: 1737790909:0;John 8:58
+: 1737792502:0;Psalms 37:34
+: 1737794030:0;Psalms 91:1-2
+: 1737794066:0;Psalms 37:39-40
+: 1737794092:0;Psalms 91:8-11
+: 1737794143:0;Psalms 37:1-9
+: 1737796392:0;v oci
+: 1737796425:0;spinner-start-emacs
+: 1737796428:0;spinner-stop-emacs
+: 1737796446:0;v pen-tcp-server
+: 1737796628:0;which -a pgcli
+: 1737796633:0;v pgcli
+: 1737796696:0;pgcli --help
+: 1737797336:0;Romans 8:18
+: 1737812110:0;./cwc
+: 1737812115:0;v ./cwc
+: 1737812123:0;ls -ldt ./cwc
+: 1737812209:0;v README
+: 1737812234:0;v makefile
+: 1737812257:0;vcr cwc.6
+: 1737812262:0;cr cwc.6
+: 1737813460:0;v ggrids/circle2
+: 1737813471:0;v ggrids/box5x5
+: 1737813976:0;I Corinthians 15:3-8
+: 1737816368:0;cd "$MYGIT/cwc";
+: 1737816370:0;./cwc -p patterns/denmark -i letter -g ggrids/box5x5
+: 1737816382:0;./cwc -p patterns/3x3 -i letter -g ggrids/box5x5
+: 1737892263:0;Isaiah 33:14-16
+: 1737952005:0;nod Proverbs 3:3-4
+: 1737952014:0;nod I John 4:16
+: 1737952017:0;nod Psalms 143:8
+: 1737952042:0;nod I Corinthians 13:4-10
+: 1737952047:0;nod Eph 3:16-17
+: 1737952053:0;nod Eph 3:15-17
+: 1737952065:0;nod John 15:12
+: 1737952067:0;nod Eph 3:14-17
+: 1737952102:0;nod I Thes 5:1-6
+: 1737970093:0;I Corinthians 15:1-20
+: 1738128235:0;Ephesians 5:1-7
+: 1738128285:0;Ephesians 2:1-10
+: 1738221267:0;I Tim 4
+: 1738222695:0;rm clojure
+: 1738226373:0;I Corinthians 15:17
+: 1738226425:0;I Corinthians 15:1-17
+: 1738234251:0;1 Corinthians 15:2
+: 1738234276:0;kjv 1 Corinthians 15:1-2
+: 1738234298:0;esv 1 Corinthians 15:1-2
+: 1738397113:0;v supervisor-details
+: 1738397301:0;which -a lsix
+: 1738397306:0;feh" "/usr/share/doc/asciidoc/doc/images/tiger.png" "#" "<==" "zsh"
+: 1738397307:0;"feh" "/usr/share/doc/asciidoc/doc/images/tiger.png" "#" "<==" "zsh"
+: 1738397310:0;lsix
+: 1738397316:0;cd /root/.pen/documents/notes; "lsix" "/usr/share/doc/asciidoc/doc/images/tiger.png" "#" "<==" "zsh"
+: 1738397322:0;cd /root/.pen/documents/notes; "lsix" "/usr/share/doc/asciidoc/doc/images/tiger.png"
+: 1738397379:0;v clipboard.txt
+: 1738397384:0;v puz-emacs.data
+: 1738397387:0;v yo.txt
+: 1738397391:0;v time.tm
+: 1738397397:0;v bible-studies.org
+: 1738397427:0;v agenda
+: 1738397465:0;tp find-here-path "*chess*"
+: 1738397469:0;cd
+: 1738397617:0;hmm
+: 1738397623:0;which -a hmm
+: 1738408404:0;supervisor-details
+: 1739185529:0;ssh shane@192.168.1.8
+: 1739185532:0;ssh shane@192.168.1.9
+: 1739185551:0;ssh shane@192.168.1.7
+: 1739185561:0;ssh shane@192.168.1.10
+: 1739205922:0;eww "https://semiosis.github.io/"
+: 1739344353:0;ssh -vvv shane@192.168.1.9
+: 1739344361:0;ssh -vvv shane@192.168.1.10
+: 1739344367:0;ssh -vvv shane@192.168.1.8
+: 1739344373:0;ssh -oPasswordAuthentication=yes -vvv shane@192.168.1.8
+: 1739344397:0;ssh -oPubkeyAuthentication=no -oPasswordAuthentication=yes -vvv -p shane@192.168.1.8
+: 1739797497:0;II Timothy 4:18
+: 1740385213:0;emacs -nw -Q
+: 1740386325:0;Ezekiel 36:16-29
+: 1740394972:0;Leviticus 18:24-25
+: 1740395142:0;Matthew 19:4-6
+: 1740395348:0;Matthew 5:32
+: 1740396731:0;Luke 19:39-40
+: 1740396739:0;Luke 19:38-40
+: 1740396746:0;Luke 19:37-40
+: 1740404336:0;John 16:33
+: 1740404367:0;I John 5:3-5
+: 1740541283:0;apt search konquest
+: 1740541288:0;agi konquest
+: 1740541334:0;export $(dbus-launch)
+: 1740541339:0;konquest
+: 1740541344:0;dbus-launch
+: 1740541356:0;apt search dbus-launch
+: 1740549633:0;acs scrolls
+: 1740549670:0;acs dmagnetic
+: 1740561383:0;Isaiah 51:1-11
+: 1740855634:0;Eph 1:6-7
+: 1740855645:0;Eph 1:6-8
+: 1740855648:0;Eph 1:5-8
+: 1740855656:0;Eph 1:4-9
+: 1740855689:0;Eph 1:5-10
+: 1740855707:0;Eph 1:4-10
+: 1740855712:0;Eph 1:3-10
+: 1740855739:0;nasb Eph 1:3-10
+: 1740855812:0;Isaiah 55:7
+: 1740855832:0;Hebrews 8:12
+: 1740855843:0;1 John 1:9
+: 1740855854:0;1 John 2:1
+: 1740855865:0;Psalm 103:12
+: 1740855874:0;2 Corinthians 5:17
+: 1740855883:0;Psalm 85:2
+: 1740855896:0;Ephesians 1:6-7
+: 1740855915:0;Colossians 3:13
+: 1740855924:0;Mark 11:25
+: 1740856031:0;yazi
+: 1740902790:0;I Corinthians 6:9-16
+: 1740902843:0;I Corinthians 10:20-23
+: 1740903188:0;I Corinthians 8:1-13
+: 1740997863:0;Matthew 24:20
+: 1740997900:0;Mark 13:13-20
+: 1740997942:0;Matthew 24:30-34
+: 1741050654:0;Luke 7:41-3
+: 1741050655:0;Luke 7:41-43
+: 1741050720:0;Colossians 2:13-17
+: 1741050830:0;Psalm 143:8
+: 1741062244:0;John 21:21-23
+: 1741067385:0;Matthew 5:31-33
+: 1741067421:0;Matthew 5:38-39
+: 1741070814:0;nod John 5:30
+: 1741071079:0;nod John 5:16-18
+: 1741071084:0;nod John 5:16-19
+: 1741156327:0;Isaiah 43:10-21
+: 1741162554:0;John 5:30
+: 1741165306:0;John 10:19
+: 1741170372:0;v relinkify
+: 1741170476:0;br-img
+: 1741170525:0;v shelr
+: 1741170528:0;v shellrc
+: 1741170533:0;v 002-wizard.conf
+: 1741170559:0;feh Pen-620.png
+: 1741170569:0;v zsh/fzf.zsh
+: 1741172576:0;v toggle-tmux-popup
+: 1741174917:0;"eval" "/usr/bin/env runhaskell" "hello-world.hs"
+: 1741181282:0;I Corinthians 5:7
+: 1741241982:0;Luke 6:46
+: 1741251738:0;nod I Corinthians 4:5
+: 1741251746:0;I Corinthians 4:5
+: 1741251854:0;I Corinthians 4:14-16
+: 1741251868:0;I Corinthians 4:14-17
+: 1741252503:0;Matthew 12:36-37
+: 1741334866:0;I Peter 4:7-8
+: 1741337580:0;vd
+: 1741337823:0;v readsubs
+: 1741337843:0;v pen-pretty-paragraph
+: 1741338107:0;John 15:16-20
+: 1741339054:0;v LICENSE
+: 1741339058:0;v README.org
+: 1741339071:0;v config/fixkeymaps-vimrc
+: 1741339096:0;v scripts/xelatex
+: 1741342104:0;visidiata
+: 1741342106:0;visidata
+: 1741343246:0;which htop
+: 1741343248:0;v htop
+: 1741343707:0;Psalms 91:1-7
+: 1741373742:0;./now_a.rs
+: 1741381622:0;nod Matt 24:15-20
+: 1741381630:0;Rev 6
+: 1741391730:0;acs xconq
+: 1741391802:0;sudo apt update && sudo apt install -y tcl-dev tk-dev libsdl2-dev
+: 1741391829:0;SDL_CONFIG=/usr/bin/sdl2-config ./configure
+: 1741391846:0;nproc
+: 1741391893:0;acs libxmu
+: 1741391900:0;agi libxmu-dev
+: 1741391911:0;agi libxaw-dev
+: 1741391915:0;acs libxaw
+: 1741391924:0;agi libxaw7-dev
+: 1741391940:0;xconq
+: 1741395261:0;acs bcc
+: 1741406465:0;htop
+: 1741412962:0;Matt 24:4-5
+: 1741412986:0;Rev 6:1-2
+: 1741413039:0;Matt 24:6-8
+: 1741413054:0;Rev 6:3-17
+: 1741413077:0;Matt 24:9-10
+: 1741413092:0;Rev 6:9-10
+: 1741413110:0;Rev 7:14
+: 1741418608:0;v pe
+: 1741420794:0;test.xsh
+: 1741420815:0;v xsh
+: 1741421223:0;sp sp
+: 1741422623:0;Micah 6:8
+: 1741426087:0;echo hi | fzf
+: 1741426092:0;ls | fzf
+: 1741426107:0;v fp.cfg
+: 1741426110:0;v blocked-patterns.txt
+: 1741473379:0;Jeremiah 13:10-17
+: 1741497083:0;nod John 3:16-18
+: 1741499833:0;cd $MYGIT/rosie-pattern-language/rosie/rpl/
+: 1741499907:0;reset
+: 1741499915:0;v rpl/net.rpl
+: 1741500137:0;kjv Matt 6:33
+: 1741502316:0;pen-count-loc
+: 1741502916:0;Psalm 16:8
+: 1741502923:0;nod Psalm 34:17-19
+: 1741502945:0;nod John 14:27
+: 1741504146:0;Romans 3:25
+: 1741504152:0;nod Romans 10:3
+: 1741504165:0;Romans 10:1-4
+: 1741504189:0;nod Romans 10:1-13
+: 1741504230:0;Romans 3:20-28
+: 1741504716:0;nod Romans 10:1-5
+: 1741504730:0;nod Romans 10:6-13
+: 1741506534:0;Romans 10
+: 1741509205:0;Isaiah 61:10
+: 1741510577:0;I John 5:13
+: 1741510644:0;I John 5:1-21
+: 1741546751:0;Matthew 7:21
+: 1741546882:0;John 6:40
+: 1741546889:0;John 6
+: 1741547070:0;Romans 11:6
+: 1741547168:0;Matthew 7:23-24
+: 1741547237:0;John 3:10
+: 1741547314:0;I John 4:20
+: 1741547343:0;I John 5:1-4
+: 1741547347:0;I John 5:1-5
+: 1741547462:0;grep -HnR nellie .
+: 1741547469:0;pwp
+: 1741547648:0;I John 3:23
+: 1741548945:0;Jonah 3:10
+: 1741548955:0;kjv Jonah 3:10
+: 1741589670:0;I Corinthians 8:2-3
+: 1741589948:0;Matthew 7:21-24
+: 1741596192:0;Luke 11:23
+: 1741596225:0;Luke 9:50
+: 1741596839:0;John 12:44-15
+: 1741596842:0;John 12:44-50
+: 1741596983:0;Ephesians 5:1-5
+: 1741597540:0;Colossians 3:3
+: 1741598153:0;John 12:44
+: 1741598203:0;1 John 2:23
+: 1741599617:0;Galatians 5:18
+: 1741599927:0;Colossians 3:5-13
+: 1741600022:0;Romans 2:2-11
+: 1741600204:0;I John 3:21-24
+: 1741600300:0;I John 3:10-14
+: 1741601526:0;echo hi | tv
+: 1741601529:0;v tv
+: 1741601552:0;v Makefile
+: 1741606605:0;Php 3:9-13
+: 1741631939:0;Psalms 91:14-16
+: 1741664370:0;Psalms 119:45
+: 1741664377:0;kjv Psalms 119:45
+: 1741664549:0;Psalms 119:78
+: 1741664555:0;Psalms 119:71
+: 1741664564:0;Psalms 119:75
+: 1741664582:0;Psalms 119:85
+: 1741685240:0;John 14:23
+: 1741685255:0;I John 2:15
+: 1741687483:0;lapin
+: 1741688173:0;Hebrews 1:13-2:1-4
+: 1741688203:0;Hebrews 1:13-14
+: 1741688203:0;nod Hebrews 2:1-4
+: 1741756489:0;Matthew 4:17
+: 1741756499:0;nod Luke 2:21-26
+: 1741762334:0;II Corinthians 5:21
+: 1741782443:0;nod Luke 16:16
+: 1741782447:0;Luke 16:16
+: 1741815766:0;Hebrews 2:1-18
+: 1741815949:0;Psalms 8:1-9
+: 1741836331:0;I Samuel 15:23
+: 1741836343:0;kjv I Samuel 15:23
+: 1741836372:0;nasb I Samuel 15:23
+: 1741847430:0;Acts 20:9
+: 1741847638:0;Galatians 1:3-4
+: 1741847651:0;II Corinthians 1:10
+: 1741847760:0;Romans 7:22-25
+: 1741869162:0;Colossians 2:9-15
+: 1741869395:0;Matthew 12:5-8
+: 1741869436:0;Matthew 12:1-8
+: 1741869464:0;Matthew 12:10-13
+: 1741869654:0;Romans 3:26
+: 1741869673:0;Romans 3:20-26
+: 1741869701:0;Romans 3:20-26,31
+: 1741869831:0;chrome gospel.html
+: 1741877823:0;II Corinthians 6:5
+: 1741885756:0;Matthew 28:19-20
+: 1741885781:0;John 14:15-24
+: 1741886096:0;I Corinthians 9:21
+: 1741886588:0;Isaiah 42:1-4
+: 1741886873:0;Romans 7:7-12
+: 1741888866:0;Romans 7:14
+: 1741888905:0;Romans 7:25
+: 1741888981:0;Romans 8:5-11
+: 1741889142:0;II Peter 2:20
+: 1741889157:0;II Peter 2:20-21
+: 1741901037:0;Proverbs 9:8
+: 1741902907:0;John 3:3-7
+: 1741902939:0;Matt 6:14-15
+: 1741902949:0;Matt 5:44-48
+: 1741902969:0;Marh 16:15-16
+: 1741902973:0;Mark 16:15-16
+: 1741902989:0;Luke 9:23-24
+: 1741903012:0;Matth 6:33
+: 1741903015:0;Matt 6:33
+: 1741903028:0;Luke 13:3
+: 1741903041:0;John 5:14
+: 1741903055:0;Matt 10:28
+: 1741903420:0;II Peter 1:3-11
+: 1741903603:0;Colossians 1:13-14
+: 1741903700:0;John 3:3-8
+: 1741903806:0;Luke 18:25-27
+: 1741903828:0;Luke 18:22-30
+: 1741904611:0;nod kjv Philippians 2:12
+: 1741906125:0;Revelation of John 20:4-6
+: 1741915253:0;Jeremiah 32:27
+: 1741915261:0;nod John 1:14
+: 1741915282:0;Jeremiah 32:26-27
+: 1741915520:0;Psalm 22
+: 1741915538:0;Psalms 22:10
+: 1741920829:0;Matthew 19:28
+: 1741920952:0;kjv Matthew 19:28
+: 1741921706:0;Matthew 26:23-24
+: 1741926112:0;Leviticus 15:16-18
+: 1741926151:0;Leviticus 15:32-33
+: 1741926232:0;nod Leviticus 15:19-30
+: 1741926235:0;nod Leviticus 15:31
+: 1741926250:0;nod Leviticus 15:31-233
+: 1741926264:0;nod Leviticus 15:31-33
+: 1741926302:0;nod Leviticus 15:32-33
+: 1741986425:0;Ephesians 4:26-27
+: 1741986439:0;nod Ephesians 4:26-27
+: 1741986571:0;Heb 1:9
+: 1741986628:0;Psalms 37:28
+: 1741986727:0;James 1:21
+: 1741986849:0;Rom 5:8
+: 1741986872:0;Romans 5:6-8
+: 1741986971:0;Matt 26:23
+: 1741987080:0;nod Mark 14:21
+: 1741987253:0;Romans 5:9-11
+: 1741987298:0;Romans 5:16-19
+: 1741989994:0;Hebrews 10:14
+: 1741992497:0;Romans 14:4
+: 1741993412:0;James 1
+: 1741993526:0;James 1:21-25
+: 1742018779:0;John 6:38-40
+: 1742022726:0;Revelation of John 3:12
+: 1742022734:0;Revelation of John 21:10
+: 1742022742:0;Revelation of John 21:2-10
+: 1742022750:0;nod Galatians 4:26
+: 1742022756:0;Galatians 4:25-26
+: 1742022763:0;nod Galatians 4:25-26
+: 1742025108:0;Romans 2:28-29
+: 1742025125:0;Romans 2:15-16
+: 1742025166:0;I Corinthians 9:9-11
+: 1742034060:0;1 Timothy 21
+: 1742034074:0;I Timothy 21
+: 1742034105:0;I Timothy 2:1-6
+: 1742034131:0;I Timothy 2:8-9
+: 1742034152:0;I Timothy 2:8-10
+: 1742034252:0;nod I Timothy 2:5
+: 1742034258:0;nod I Timothy 2:4
+: 1742034693:0;Matthew 19:29
+: 1742035595:0;Prov 9:7-8
+: 1742035609:0;Prov 23:9
+: 1742035625:0;Matt 10:14-15
+: 1742035649:0;Prov 26:11
+: 1742035686:0;2Tim 4:14-15
+: 1742035710:0;Heb 10:29
+: 1742035985:0;Proverbs 18:17
+: 1742036145:0;I Corinthians 8:2
+: 1742038121:0;nod Acts 13:46-47
+: 1742038122:0;Isaiah 49:5-6
+: 1742038822:0;I Corinthians 3:11-15
+: 1742163871:0;1 Corinthians 1:30
+: 1742163882:0;kjv 1 Corinthians 1:30
+: 1742163888:0;nasb 1 Corinthians 1:30
+: 1742164207:0;I Corinthians 1:30
+: 1742164251:0;bsb Eph 1:7-7
+: 1742164252:0;bsb Eph 1:7-9
+: 1742164287:0;Phil 3:9
+: 1742164291:0;Phil 3:8-9
+: 1742164325:0;1Cor 1:2
+: 1742164424:0;2Cor 5:17-21
+: 1742164470:0;bsb Eph 1:3-4
+: 1742164525:0;Rom 3:21-24
+: 1742164592:0;Romans 4:20-25
+: 1742164640:0;Romans 5:1
+: 1742164652:0;Romans 5:9
+: 1742164667:0;Romans 10:10
+: 1742173015:0;v o
+: 1742183551:0;nod Romans 5:1
+: 1742183574:0;John 16:31-33
+: 1742183910:0;John 17:13-15
+: 1742186061:0;I Thessalonians 4:14
+: 1742193455:0;nod Luke 7:47
+: 1742194347:0;John 8:11
+: 1742194592:0;1 Corinthians 3:12-15
+: 1742194823:0;John 16:26-33
+: 1742194869:0;John 14:21-23
+: 1742196416:0;I Corinthians 15:3-5
+: 1742196423:0;I Corinthians 15:1-5
+: 1742197698:0;I Peter 4:8
+: 1742197751:0;John 20:22-23
+: 1742199872:0;I Peter 4:16
+: 1742203310:0;I John 4:2-3
+: 1742214696:0;Ephesians 1:3-6
+: 1742214752:0;II Timothy 1:9
+: 1742214917:0;Revelation of John 13:8
+: 1742215237:0;John 1:14
+: 1742215286:0;John 1:13
+: 1742269964:0;Acts 7:51
+: 1742295942:0;Luke 18:8
+: 1742296842:0;\
+1 Corinthians 8:4
+: 1742296857:0;Psalms 96:5
+: 1742334849:0;Jonah 2:5
+: 1742334978:0;Jonah 2:4
+: 1742335051:0;Jonah 2:8-9
+: 1742440913:0;xc | cat
+: 1742449380:0;nod Revelation 5:8-14
+: 1742462202:0;Revelation 12:5-17
+: 1742464092:0;nod Proverbs 18:17
+: 1742464148:0;Matthew 24:29-31
+: 1742505676:0;nod I Cor 8:4-6
+: 1742505928:0;nod I Cor 10:20
+: 1742513486:0;Acts 16:4-5
+: 1742513511:0;kjv Acts 16:4-5
+: 1742513522:0;nasb Acts 16:4-5
+: 1742513614:0;Luke 10:16
+: 1742513666:0;John 20:21-23
+: 1742513809:0;nod Acts 2:42
+: 1742513951:0;Acts 4:11-16
+: 1742514051:0;Matthew 8:8-10
+: 1742514093:0;Eph 4:11-16
+: 1742514153:0;Acts 4
+: 1742514175:0;Acts 4:14
+: 1742514185:0;Acts 4:13
+: 1742514590:0;Acts 8:30-38
+: 1742514813:0;II Peter 3:15-16
+: 1742515047:0;Matthew 23:8-11
+: 1742515053:0;Matthew 23:8-12
+: 1742519099:0;Luke 24:31-32
+: 1742519233:0;nod Acts 2:38
+: 1742519433:0;Acts 10
+: 1742519454:0;Acts 10:42-45
+: 1742519535:0;Acts 10:46-48
+: 1742519780:0;Acts 8:1-17
+: 1742519858:0;Acts 13
+: 1742519900:0;Acts 13:38-39
+: 1742519939:0;Acts 15:7-11
+: 1742520001:0;Acts 15:8-11
+: 1742520042:0;Acts 16:30-31
+: 1742520051:0;Acts 16:30-34
+: 1742520159:0;Acts 8:5-17
+: 1742520162:0;Acts 22
+: 1742520234:0;Acts 22:16-18
+: 1742520373:0;I Corinthians 15:1-4
+: 1742520418:0;I Peter 3:21
+: 1742520433:0;I Peter 3:21-22
+: 1742521084:0;I John 3:10-24
+: 1742540531:0;Mark 7:6-13
+: 1742540926:0;John 15:12-14
+: 1742540946:0;John 15:15
+: 1742540963:0;John 15:20
+: 1742540983:0;nod John 15:20
+: 1742541015:0;nod John 15:13-14
+: 1742541144:0;John 15:9-17
+: 1742541498:0;Luke 14:12
+: 1742541547:0;Matthew 22:12-14
+: 1742541589:0;John 6:70-71
+: 1742541637:0;Matthew 26:48-50
+: 1742542006:0;John 15:21
+: 1742542076:0;II Thessalonians 1:5-8
+: 1742542108:0;I Thessalonians 4:3-6
+: 1742542155:0;Romans 1:32
+: 1742542246:0;John 15:8
+: 1742542310:0;I Timothy 2:9-10
+: 1742542335:0;Revelation of John 19:7-8
+: 1742543416:0;II Thessalonians 2:3-4
+: 1742543421:0;John 17:12
+: 1742543484:0;I John 4:8
+: 1742543523:0;Galatians 4:8-9
+: 1742543611:0;I John 5:1-3
+: 1742543690:0;Leviticus 19:18
+: 1742543711:0;Revelation of John 12:11
+: 1742543723:0;Revelation of John 3:19
+: 1742543822:0;John 15:17
+: 1742543853:0;John 14:15
+: 1742554123:0;Ephesians 6:12
+: 1742555750:0;v pen-handle-url
+: 1742555889:0;pen-handle-url "https://www.youtube.com/watch?v=1PDbqx-tciA&t=221s"
+: 1742556513:0;v pwd
+: 1742556523:0;v p356.pl
+: 1742556630:0;Colossians 1:19
+: 1742594983:0;bsb Psalm 4:8
+: 1742597628:0;Romans 4:13
+: 1742597679:0;Psalm 24:1
+: 1742597721:0;Psalm 2:8
+: 1742615306:0;John 12:48
+: 1742615334:0;Hebrews 5:9
+: 1742616957:0;Mark 9:37
+: 1742616967:0;John 13:20
+: 1742619165:0;Psalms 34:18-22
+: 1742619899:0;John 3:18
+: 1742620011:0;John 6:57
+: 1742623223:0;Hebrews 2:14-15
+: 1742623344:0;Galatians 3:14
+: 1742623351:0;Galatians 3:13-14
+: 1742630657:0;Mark 1:11
+: 1742630664:0;Mark 1:24
+: 1742630698:0;Mark 10:18
+: 1742630787:0;Mark 10:21
+: 1742630905:0;Mark 10:21-27
+: 1742631033:0;Mark 10:28-30
+: 1742631096:0;Mark 10:17
+: 1742631161:0;Mark 2:5
+: 1742631180:0;Mark 2:5-11
+: 1742631382:0;I Kings 8:39
+: 1742631415:0;Psalms 44:21
+: 1742631444:0;Psalms 103:2-3
+: 1742631460:0;Psalms 103:1-5
+: 1742631500:0;Mark 10:45
+: 1742636205:0;nod Ecclesiastes 8:3
+: 1742637646:0;nod I Tim 6:3-5
+: 1742638625:0;I Sam 24:6
+: 1742638987:0;II Corinthians 4:6
+: 1742639540:0;http-client.bb "https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV" yo.txt
+: 1742639554:0;v bb
+: 1742639578:0;http-client.bb "https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV" /tmp/yo.txt
+: 1742639580:0;v /tmp/yo.txt
+: 1742640151:0;Matthew 5:21-22
+: 1742640405:0;Jude 1:4
+: 1742640414:0;Jude 1:4-5
+: 1742640485:0;Luke 22:31-32
+: 1742640639:0;II Timothy 2:11-18
+: 1742642737:0;litecli
+: 1742642989:0;Romans 6:16-18
+: 1742644440:0;Mark 9:38-40
+: 1742646948:0;I Chronicles 16:14-26
+: 1742983084:0;o "https://github.com/endless-sky/endless-sky-editor/releases"
+: 1742983086:0;o "https://github.com/endless-sky/endless-sky-editor"
+: 1742983177:0;qmake
+: 1742983184:0;make
+: 1742983189:0;make -j 8
+: 1743027840:0;John 12:24-27
+: 1743053966:0;Daniel 4:34-37
+: 1743054968:0;o "https://github.com/endless-sky/endless-sky"
+: 1743055086:0;sudo apt-get install -y --no-install-recommends libxmu-dev libxi-dev libgl-dev libglu1-mesa-dev libgles2-mesa-dev libwayland-dev libxkbcommon-dev libegl1-mesa-dev libfuse2
+: 1743055097:0;cmake
+: 1743055135:0;cd utils
+: 1743055135:0;l
+: 1743055146:0;v build_appimage.sh
+: 1743055164:0;/root/.pen/endless-sky/utils/build_appimage.sh
+: 1743055296:0;which -a z-repl
+: 1743055300:0;tp find-here-path "*z-repl*"
+: 1743055303:0;tp find-here-path "*zrepl*"
+: 1743055308:0;vim pen-cr
+: 1743055450:0;agi libsdl2-dev
+: 1743055472:0;acs libglew
+: 1743055478:0;agi libglew-dev
+: 1743055488:0;acs openal
+: 1743055511:0;grep -HnR libopenal-dev .
+: 1743055550:0;agi libsdl2-dev libglew-dev libopenal-dev
+: 1743055591:0;acs catch2
+: 1743055720:0;git clone https://github.com/catchorg/Catch2
+: 1743055776:0;cd Catch2
+: 1743055791:0;git log
+: 1743055821:0;cmake -Bbuild -H. -DBUILD_TESTING=OFF
+: 1743055823:0;sudo cmake --build build/ --target install
+: 1743055919:0;agi libsdl2
+: 1743055924:0;acs libsdl2
+: 1743055934:0;agi libsdl2-2.0-0
+: 1743056074:0;cmake --build --preset linux-debug
+: 1743056096:0;cmake --build --preset linux
+: 1743056103:0;cmake --build --preset linux-release
+: 1743060135:0;lswd
+: 1743060808:0;vim .github/workflows/cd_release.yaml
+: 1743060820:0;cd steam
+: 1743060821:0;v docker-compose.yml
+: 1743064848:0;vlc choleric.wav
+: 1743064852:0;mplayer choleric.wavm
+: 1743064854:0;mplayer choleric.wav
+: 1743111438:0;James 1:12
+: 1743111441:0;James 2:5
+: 1743111462:0;I John 4:7
+: 1743111486:0;I John 4:6-9
+: 1743111495:0;I John 4:6-11
+: 1743111504:0;I John 4:6-13
+: 1743111745:0;Romans 1:1-7
+: 1743111788:0;Mark 11:22
+: 1743112009:0;John 1:11-13
+: 1743112073:0;I John 3:6-11
+: 1743112079:0;I John 3:3-11
+: 1743112087:0;I John 3:1-11
+: 1743112135:0;I John 3:1415
+: 1743112153:0;I John 3:14:24
+: 1743112168:0;I John 3:24
+: 1743112282:0;Titus 2:11-15
+: 1743112347:0;I Peter 1:14-25
+: 1743112447:0;Matthew 7:3-5
+: 1743117578:0;2 Corinthians 1:20
+: 1743117609:0;Acts 5:32
+: 1743117628:0;Luke 8:25
+: 1743117654:0;Mark 1:27
+: 1743117705:0;Acts 7:38-40
+: 1743117731:0;Acts 7:39-43
+: 1743119251:0;I John 4:4
+: 1743119611:0;Revelation of John 12:9
+: 1743119642:0;Genesis 3:15
+: 1743119704:0;Revelation of John 12:1-10
+: 1743120135:0;I John 3:14
+: 1743131568:0;Hebrews 6:9-20
+: 1743133881:0;Titus 1:1-2
+: 1743137271:0;nod John 6:27-29
+: 1743137338:0;John 4:32-36
+: 1743137396:0;John 4:7-26
+: 1743137586:0;Matthew 5:22
+: 1743137713:0;Romans 10:9-10
+: 1743138695:0;Ephesians 4:11-16
+: 1743139622:0;John 15:5
+: 1743139773:0;James 4:8
+: 1743153101:0;Matthew 25:24-27
+: 1743153125:0;Matthew 25:24-30
+: 1743153944:0;Matthew 25:7-12
+: 1743153990:0;I Peter 1:14-19
+: 1743154074:0;Mark 4:20
+: 1743154304:0;Hebrews 12:6
+: 1743154439:0;Matthew 21:28-31
+: 1743154651:0;I Corinthians 11:32
+: 1743154807:0;Luke 18:13-14
+: 1743154947:0;I John 3:9-10
+: 1743154954:0;I John 3:7-10
+: 1743155088:0;Romans 11:32
+: 1743155104:0;II Corinthians 10:5-6
+: 1743155199:0;II Corinthians 10:18
+: 1743155273:0;Galatians 6:2
+: 1743155303:0;Galatians 5:5-7
+: 1743155362:0;Luke 12:48
+: 1743155470:0;I Corinthians 9:16
+: 1743155540:0;Ecclesiastes 12:13
+: 1743155580:0;Romans 10:3
+: 1743155720:0;John 13:7-8
+: 1743155780:0;Titus 3:3-7
+: 1743155868:0;Romans 8:1
+: 1743155871:0;Romans 8:1-4
+: 1743155879:0;Romans 8:1-6
+: 1743155923:0;John 12:26
+: 1743155945:0;I Corinthians 3:15
+: 1743156020:0;John 13:16
+: 1743156041:0;Psalms 34:22
+: 1743196748:0;Romans 13:9
+: 1743201081:0;cd endless-sky
+: 1743213382:0;acs libsdl
+: 1743213506:0;dpkg -L libsdl2-2.0-0
+: 1743213547:0;sudo ln -sf libSDL2-2.0.so libSDL2.so
+: 1743213610:0;cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8
+: 1743213664:0;cmake --version
+: 1743213694:0;DES_USE_VCPKG=ON cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8
+: 1743213741:0;cmake --preset linux
+: 1743213769:0;DES_USE_VCPKG=ON cmake --preset linux
+: 1743213779:0;cd ~/.pen/endless-sky
+: 1743213780:0;cr
+: 1743213810:0;cat /etc/
+: 1743213840:0;cd /usr/lib/x86_64-linux-gnu/
+: 1743213846:0;sudo rm libSDL2.so
+: 1743213933:0;g++ cmake ninja-build curl libsdl2-dev libpng-dev libjpeg-dev libgl1-mesa-dev
+: 1743213942:0;agi g++ cmake ninja-build curl libsdl2-dev libpng-dev libjpeg-dev libgl1-mesa-dev libglew-dev libopenal-dev libmad0-dev uuid-dev
+: 1743213954:0;rm -rf build
+: 1743213955:0;cmake --preset linux -DES_USE_VCPKG=ON
+: 1743216480:0;cmake --build --preset linux-debug --target EndlessSky
+: 1743216508:0;cmake --build --preset linux --target EndlessSky
+: 1743216515:0;cmake --build --preset linuxrelease --target EndlessSky
+: 1743216602:0;git pull
+: 1743216625:0;acs libnumbers
+: 1743216751:0;++ --version
+: 1743216793:0;acs g++
+: 1743216888:0;cat /etc/issue
+: 1743217081:0;sudo mkdir /nix
+: 1743217090:0;ls -ldt /nix
+: 1743217097:0;which -a nix
+: 1743217098:0;sh <(curl -L https://nixos.org/nix/install) --no-daemon
+: 1743217111:0;ls /nix
+: 1743217119:0;source ~/.nix-profile/etc/profile.d/nix.sh
+: 1743223626:0;cmake --build --preset linux-release --target EndlessSkyg
+: 1743223629:0;cmake --build --preset linux-release --target EndlessSky
+: 1743223674:0;sudo apt install -y curl build-essential libgmp-dev libmpfr-dev libmpc-dev
+: 1743223761:0;ftp ftp.gnu.org
+: 1743223844:0;tp find-here-path "*ftp*"
+: 1743223854:0;eftp ftp.gnu.org
+: 1743223963:0;mkdir /tmp/$$ && cd /tmp/$$
+: 1743223967:0;curl -s http://mirrors.concertpass.com/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.gz | tar xJ
+: 1743223980:0;curl -s http://mirrors.concertpass.com/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.gz | tar xz
+: 1743224028:0;mkdir build && cd build
+: 1743224097:0;../gcc-12.2.0/configure --prefix=$HOME/gcc12 --disable-dependency-tracking --disable-nls --disable-multilib --enable-default-pie --enable-languages=c,c++
+: 1743234737:0;sudo ls /root/gcc
+: 1743234748:0;which -a g++
+: 1743234752:0;g++ --version
+: 1743234810:0;sh-yank
+: 1743234820:0;cd ~/.pen/
+: 1743234832:0;cp -a /tmp/2098035 gcc-12
+: 1743234862:0;cd ~/.pen/gcc-12
+: 1743234881:0;cd /tmp/2098035
+: 1743234884:0;cd build
+: 1743234931:0;cd /root
+: 1743235499:0;../gcc-12.2.0/configure --prefix=/root/gcc12 --disable-dependency-tracking --disable-nls --disable-multilib --enable-default-pie --enable-languages=c,c++
+: 1743235504:0;echo "$HOME"
+: 1743235508:0;cd gcc-12
+: 1743235566:0;cd /root/gcc12
+: 1743235571:0;rmdir gcc12
+: 1743235610:0;cr Makefile
+: 1743235634:0;vim Makefile
+: 1743235655:0;make -j$(nproc)
+: 1743237404:0;make install
+: 1743237422:0;man make
+: 1743237436:0;make -j$(nproc) --debug v
+: 1743237443:0;make -j$(nproc) --debug
+: 1743275238:0;Habakkuk 1:12-13
+: 1743275391:0;Habakkuk 2:5
+: 1743275442:0;Numbers 16:30
+: 1743275500:0;Deuteronomy 32:22
+: 1743275566:0;II Samuel 22:2-8
+: 1743275690:0;I Kings 2:1-7
+: 1743275747:0;Job 7:7-16
+: 1743275798:0;Job 11:7-9
+: 1743275839:0;nod Job 14:13-14
+: 1743275932:0;Job 21:7-13
+: 1743275992:0;Job 24:19-25
+: 1743276017:0;Job 26:5-7
+: 1743278667:0;John 13:27
+: 1743278738:0;John 13:36-38
+: 1743278795:0;John 14:1-7
+: 1743282032:0;John 20:29-31
+: 1743282086:0;Luke 24:25
+: 1743282093:0;Luke 24:25-26
+: 1743282255:0;Mark 14:21
+: 1743299640:0;v info
+: 1743299833:0;info calc
+: 1743299842:0;nem info calc
+: 1743299941:0;v nem
+: 1743299944:0;v withopts
+: 1743299952:0;nnv nem info calc
+: 1743299964:0;which -a van
+: 1743299988:0;van info calc
+: 1743299993:0;nnv info calc
+: 1743326473:0;Luke 21:1-4
+: 1743326591:0;II Corinthians 12:9
+: 1743327975:0;I Corinthians 15:10
+: 1743328003:0;II Corinthians 6:1
+: 1743328058:0;I John 4:19
+: 1743328126:0;I John 4:7-21
+: 1743328158:0;I John 4:19-21
+: 1743328199:0;John 14:21
+: 1743335418:0;calc "2022 - (61 * 33.08)"
+: 1743369675:0;James 5:16-18
+: 1743375730:0;John 9:4-5
+: 1743377322:0;John 4:34
+: 1743377510:0;Eccl 9:10
+: 1743377659:0;John 11:9-10
+: 1743595306:0;Romans 11:28
+: 1743595452:0;Proverbs 6:16-19
+: 1743595596:0;Genesis 38:7
+: 1743595608:0;Genesis 38:7-10
+: 1743595684:0;Matthew 25:44-46
+: 1743626043:0;Matthew 7:21-23
+: 1743837699:0;I Corinthians 8:1-3
+: 1743838233:0;Jer 31:35-36
+: 1743838263:0;Genesis 1:17-18
+: 1743838287:0;Ps 19:5-6
+: 1743838293:0;Ps 19:4-6
+: 1743929911:0;Psalms 11:5
+: 1743929913:0;nod John 15:22-23
+: 1743929933:0;Proverbs 28:9
+: 1743932160:0;Colossians 1:19-20
+: 1743932488:0;II Thessalonians 2:9-12
+: 1743932571:0;Jeremiah 13:23
+: 1743932578:0;Romans 1:24-32
+: 1744330108:0;nod II Cor 13:5
+: 1744330693:0;I John 3:18-22
+: 1744330928:0;John 5:40
+: 1744330937:0;nasb John 5:39-40
+: 1744355617:0;Isaiah 53:5
+: 1744364457:0;nod Romans 6:22-23
+: 1744364521:0;nod Hebrews 5:9-10
+: 1744364608:0;nod Matthew 24:13-14
+: 1744364669:0;nod I Cor 15:1-4
+: 1744364758:0;nod John 14:1
+: 1744470595:0;Ephesians 4:32
+: 1744470606:0;nod Ephesians 4:33
+: 1744756642:0;I Timothy 3:9-13
+: 1744756667:0;I Timothy 3:1-16
+: 1744781174:0;I Timothy 6:3-10
+: 1744786473:0;John 3:19-24
+: 1744786615:0;John 5:20-24
+: 1744786815:0;John 10:17-18
+: 1744786864:0;John 15:10
+: 1744786873:0;John 15:9-10
+: 1744793862:0;I Thessalonians 5:5
+: 1744793871:0;I Thessalonians 5:4-5
+: 1744793925:0;Ephesians 5:5-16
+: 1744793984:0;7
+: 1744793990:0;I John 1:5-7
+: 1744858341:0;Habakkuk 2:2-4
+: 1744858359:0;Proverbs 29:18
+: 1744943677:0;Revelation of John 22:11-13
+: 1744973432:0;hex-patch "/root/repos/cwc/src/cwc"
+: 1745006634:0;v ttp
+: 1745006647:0;v ptp
+: 1745008487:0;v pen-segment-sentences
+: 1745098161:0;Job 22:21-28
+: 1745198672:0;Titus 1:16
+: 1745220238:0;John 4:10
+: 1745220264:0;John 4:10-14
+: 1745220271:0;nod John 4:10-14 | v
+: 1745317961:0;echo hi | xc
+: 1745565697:0;Galatians 3:21-27
+: 1745565933:0;Proverbs 25:2
+: 1745565983:0;Acts 17:26-18
+: 1745566010:0;Acts 17:26-28
+: 1745566111:0;John 7:33-36
+: 1745566138:0;Matthew 7:7-8
+: 1745569872:0;Matthew 1:17
+: 1745569951:0;Matthew 1:24-25
+: 1745570159:0;Matthew 5:19-22
+: 1745570169:0;nod Matthew 5:19-22
+: 1745570249:0;Matthew 3:7-8
+: 1745570265:0;Matthew 3:7-10
+: 1745570337:0;James 1:21-22
+: 1745570393:0;Acts 17:29-31
+: 1745570484:0;Matthew 4:19
+: 1745570582:0;Matthew 5:8
+: 1745570588:0;Matthew 5:10
+: 1745571137:0;Matthew 5:9
+: 1745571159:0;Matthew 5:44-48
+: 1745610178:0;Ephesians 5:1-11
+: 1745664882:0;I Corinthians 5:1-6
+: 1745704332:0;I Corinthians 5:11-13
+: 1745726042:0;ping 192.168.1.8
+: 1745726100:0;ssh -oPubkeyAuthentication=no -oPasswordAuthentication=yes -vvv shane@192.168.1.8
+: 1745726139:0;ifconfig
+: 1746247343:0;todayfile
+: 1746247363:0;nem todayfile
+: 1746247475:0;v pin
+: 1746247484:0;nem ead DEFAULT
+: 1746247598:0;pen-e running DEFAULT
+: 1746247750:0;pen-e sd
+: 1746247777:0;v newframe.sh
+: 1746248082:0;tp find-here-path "*log*"
+: 1746248087:0;v pen-log
+: 1746250183:0;John 7:37-39
+: 1746250302:0;Genesis 41:38
+: 1746250527:0;echo hi
+: 1746250529:0;echo hi | t
+: 1746250531:0;echo hi | ts
+: 1746250755:0;v tf
+: 1746251197:0;shx log
+: 1746251251:0;v log
+: 1746296816:0;echo hi | /root/.emacs.d/host/pen.el/scripts/log
+: 1746296822:0;which -a log
+: 1746296826:0;/root/.emacs.d/host/pen.el/scripts/log
+: 1746296831:0;echo hi | log
+: 1746296923:0;which log
+: 1746296927:0;bash
+: 1746297140:0;echo yo | log
+: 1746297141:0;lo
+: 1746297145:0;log
+: 1746297157:0;v lo
+: 1746297167:0;which -a lo
+: 1746297172:0;which -a pen-lo
+: 1746298778:0;nod 20:17
+: 1746298786:0;nod Exodus 20:17
+: 1746308920:0;v ./log
+: 1746412943:0;Romans 16:19
+: 1746412960:0;Romans 16
+: 1746580150:0;Romans 16:17
+: 1746580712:0;I Cor 6:3
+: 1746582968:0;John 3:36
+: 1746582974:0;bsb John 3:36
+: 1746583052:0;John 14:16-17
+: 1746860318:0;gum-confirm
+: 1746860320:0;echo $?
+: 1746860341:0;/usr/bin/ssh -oPubkeyAuthentication=no -oPasswordAuthentication=yes -vvv shane@192.168.1.8
+: 1746860352:0;/usr/bin/ssh -oBatchMode= -vvv shane@192.168.1.8
+: 1746860357:0;/usr/bin/ssh -oBatchMode=no shane@192.168.1.8
+: 1746860525:0;cargo install clipcast
+: 1746861147:0;apt update && apt install -y openssh-server
+: 1746861188:0;sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+: 1746861344:0;vim /etc/ssh/sshd_config
+: 1746861371:0;sed -i 's/#Port 22/Port 9222/' /etc/ssh/sshd_config
+: 1746862062:0;v ./clipcast
+: 1746862081:0;v clipcast
+: 1746862145:0;echo hi | vimcat
+: 1746862147:0;v vimcat
+: 1746862155:0;clipcast
+: 1746862586:0;ssh -M pen-agia
+: 1746862670:0;~/.cargo/bin/clipcast client --host pen-agia --remote-server-cmd "source ~/.profile && ~/.cargo/bin/clipcast" --remote-write-clipboard-cmd "bash -c \"source ~/.shell_environment; xc || true\"" --remote-read-clipboard-cmd "bash -c \"source ~/.shell_environment; xc || true\""
+: 1746862703:0;xc
+: 1746862745:0;~/.cargo/bin/clipcast client --host pen-agia --remote-server-cmd "source ~/.profile && ~/.cargo/bin/clipcast" --remote-write-clipboard-cmd "xc" --remote-read-clipboard-cmd "xc"
+: 1746866212:0;II Corinthians 7:1
+: 1746866216:0;ssh -oBatchMode=no root@192.168.1.8 -p 9222
+: 1746868821:0;~/.cargo/bin/clipcast client --host pen-agia
+: 1746868865:0;"pen-agia" "--" "clipcast server --write-clipboard-cmd 'xclip -selection clipboard' --read-clipboard-cmd 'xclip -selection clipboard -o'"
+: 1746870815:0;Galatians 2:7-9
+: 1746879442:0;ssh -oBatchMode=no shane@192.168.1.8
+: 1746907762:0;Psalms 37:5
+: 1746923369:0;ssh -M agia
+: 1746923396:0;ls -ldt config
+: 1746923399:0;ls -ldt .ssh
+: 1746952749:0;ssh pen-agia
+: 1746954759:0;Matthew 15:13-14
+: 1746955538:0;nod II Cor 4:5
+: 1746997573:0;Matthew 23:9
+: 1746997648:0;Luke 1:28
+: 1746997867:0;Heb 12:9
+: 1746997888:0;1John 3:1
+: 1746998010:0;Job 32:21-22
+: 1746998042:0;Rom 8:14-17
+: 1747013874:0;ssh -oBatchMode=no pen-agia
+: 1747013905:0;ssh -oBatchMode=no -M pen-agia
+: 1747041689:0;bb
+: 1747042090:0;Hebrews 1:1-2
+: 1747042184:0;John 10:27
+: 1747042364:0;Psalms 46:10
+: 1747042411:0;I Kings 19:11-13
+: 1747550288:0;II Timothy 3:1-8
+: 1747550665:0;II Peter 3:10
+: 1747551069:0;Rev 16:15
+: 1747551128:0;Matt 24:44
+: 1747551912:0;kill -9 -1
+: 1747563495:0;Acts 14:8-15
+: 1747564186:0;II Corinthians 4:16
+: 1747564312:0;II Corinthians 6:14-18
+: 1747564571:0;ssh -oBatchMode=no -M shane@eagia
+: 1747577521:0;Hebrews 4:7-12
+: 1747577644:0;Matthew 11:28-30
+: 1747577712:0;Colossians 2:16
+: 1747679769:0;sudo shutdown -h now
+: 1747728546:0;Romans 16:17-18
+: 1747728559:0;Romans 16:19-20
+: 1747732984:0;v gum
+: 1747733491:0;o "https://www.youtube.com/watch?v=5yt0CdSqOzI&t=1571s"
+: 1747776360:0;Acts 4:12
+: 1747776384:0;Acts 4:11-12
+: 1747776420:0;Isaiah 43:11
+: 1747801258:0;penq
+: 1749000703:0;simple.pl
+: 1749001943:0;info swipl
+: 1749002441:0;v gum.bb
+: 1749002451:0;gum.bb
+: 1749002455:0;gum.bb dlksjfs
+: 1749005184:0;v cterm
+: 1749005240:0;cterm -ct-nem -ntm norl bash
+: 1749005346:0;v cterm-docker
+: 1749005364:0;vim utils.sh
+: 1749005376:0;vim ~/.emacs.d/host/pen.el/scripts/utils.sh
+: 1749005427:0;cterm-docker
+: 1749005481:0;v cmd-nice-posix
+: 1749005524:0;v term
+: 1749005535:0;shx term
+: 1749005565:0;term
+: 1749005599:0;cterm
+: 1749005635:0;cterm bash
+: 1749005654:0;pen-cterm-ssh
+: 1749005838:0;shx cterm bash
+: 1749007690:0;Romans 10:4-11
+: 1749421484:0;chromium README.html
+: 1749421490:0;chrome README.html
+: 1749421768:0;bg
+: 1749421769:0;disown
+: 1749429737:0;John 16:26-27
+: 1749429755:0;John 8:42
+: 1749429781:0;Matthew 7:22-23
+: 1749429829:0;I Corinthians 8:3
+: 1749429897:0;Galatians 4:9
+: 1749430015:0;I John 4:21
+: 1749430074:0;Acts 4:32
+: 1749430564:0;Galatians 4:6
+: 1749430663:0;Romans 3:3-6
+: 1749430738:0;Romans 3:21-28
+: 1749431025:0;John 14:1
+: 1749431044:0;Psalms 78:21-22
+: 1749466486:0;John 10:24-38
+: 1749506271:0;nod Luke 21
+: 1750534267:0;v vs
+: 1751167052:0;John 11:13-15
+: 1751174576:0;John 8:42-47
+: 1751936726:0;Matthew 22:37-40
+: 1751936821:0;I Peter 2:24-25
+: 1751937022:0;nod I Peter 5:1-3
+: 1751937127:0;I Peter 4:10
+: 1751937415:0;I John 4:1-4
+: 1751937425:0;I John 4:1-3
+: 1752308286:0;xterm & disown
+: 1752528051:0;cd /root/repos/aaronjohnsabu1999/bible-databases/DB; "litecli" "/root/repos/aaronjohnsabu1999/bible-databases/DB/BSBBible_Database.db"
+: 1752529015:0;v regex-bible-search
+: 1752529054:0;v bible_regex_search.bb
+: 1752529102:0;cp -a regex-bible-search regex-bible-search-all
+: 1752529145:0;whic -a agt
+: 1752529148:0;which -a agt
+: 1752530237:0;tp find-here-path "*list*"
+: 1752530257:0;v regex-bible-search-list-translations
+: 1752530279:0;regex-bible-search-list-translations
+: 1752530336:0;popd
+: 1752530370:0;v prepend-string
+: 1752530387:0;regex-bible-search-all "blessed.*is"
+: 1752530669:0;v ~/.zshrc
+: 1752530770:0;feh countdown_logo_email.jpg
+: 1752530773:0;v watch.org
+: 1752530965:0;v ~/.config/litecli/config
+: 1752531023:0;v ~/.liteclirc
+: 1752545349:0;I John 5:18
+: 1752545520:0;II Corinthians 4
+: 1752545552:0;II Corinthians 4:13-18
+: 1752545579:0;II Corinthians 4:13-14
+: 1752548841:0;I John 1:6
+: 1752548933:0;II Peter 1:17-20
+: 1752623721:0;Luke 15:6-8
+: 1752625829:0;Colossians 4:12
+: 1752625851:0;Hebrews 10:19-22
+: 1752625920:0;Colossians 2:1-8
+: 1752626009:0;I John 3:14-20
+: 1752626132:0;51
+: 1752626134:0;Hebrews 6:9-15
+: 1752626172:0;Hebrews 11:1-2
+: 1752626221:0;Acts 17:30-31
+: 1752627443:0;I Corinthians 12:13
+: 1752628987:0;Romans 1:5
+: 1752630260:0;II Corinthians 2:9-11
+: 1753229314:0;Luke 12:1
+: 1753229390:0;Luke 13:29-30
+: 1753229474:0;Luke 13:20-30
+: 1753229532:0;Luke 13:20-22
+: 1753229554:0;Luke 13:23-30
+: 1753229581:0;nod Luke 13:30
+: 1753229948:0;tp find-here-path "*resou*"
+: 1753229955:0;v Xresources
+: 1753229993:0;cr ~/.Xresources
+: 1753230021:0;v xt
+: 1753230035:0;v ~/.Xresources
+: 1753230227:0;tmux set -g pane-border-bg default
+: 1753230240:0;tmux set pane-border-bg default
+: 1753230325:0;cd config
+: 1753230329:0;v syntax.vim
+: 1753230593:0;tp find-here-path "*ved*"
+: 1753230595:0;hsqf ved
+: 1753230757:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | v
+: 1753230765:0;v terminfo-expand
+: 1753230803:0;mcd ved
+: 1753230807:0;cd ved
+: 1753230811:0;mcd ved-scripts
+: 1753230862:0;v ved-scripts/terminfo-expand-example
+: 1753230882:0;which -a 	am, mc5i, msgr, xenl, xon,\
+	cols#80, it#8, lines#24, vt#3,\
+	acsc=``aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~,\
+	bel=^G, blink=\E[5m$<2>, bold=\E[1m$<2>,\
+	clear=\E[H\E[J$<50>, cr=\r, csr=\E[%i%p1%d;%p2%dr,\
+	cub=\E[%p1%dD, cub1=^H, cud=\E[%p1%dB, cud1=\n,\
+	cuf=\E[%p1%dC, cuf1=\E[C$<2>,\
+	cup=\E[%i%p1%d;%p2%dH$<5>, cuu=\E[%p1%dA,\
+	cuu1=\E[A$<2>, ed=\E[J$<50>, el=\E[K$<3>, el1=\E[1K$<3>,\
+	enacs=\E(B\E)0, home=\E[H, ht=^I, hts=\EH, ind=\n, ka1=\EOq,\
+	ka3=\EOs, kb2=\EOr, kbs=^H, kc1=\EOp, kc3=\EOn, kcub1=\EOD,\
+	kcud1=\EOB, kcuf1=\EOC, kcuu1=\EOA, kent=\EOM, kf0=\EOy,\
+	kf1=\EOP, kf10=\EOx, kf2=\EOQ, kf3=\EOR, kf4=\EOS, kf5=\EOt,\
+	kf6=\EOu, kf7=\EOv, kf8=\EOl, kf9=\EOw, lf1=pf1, lf2=pf2,\
+	lf3=pf3, lf4=pf4, mc0=\E[0i, mc4=\E[4i, mc5=\E[5i, rc=\E8,\
+	rev=\E[7m$<2>, ri=\EM$<5>, rmacs=^O, rmam=\E[?7l,\
+	rmkx=\E[?1l\E>, rmso=\E[m$<2>, rmul=\E[m$<2>,\
+	rs2=\E<\E>\E[?3;4;5l\E[?7;8h\E[r, sc=\E7,\
+	sgr=\E[0%?%p1%p6%|%t;1%;%?%p2%t;4%;%?%p1%p3%|%t;7%;%?%p4%t;5%;m%?%p9%t\016%e\017%;$<2>,\
+	sgr0=\E[m\017$<2>, smacs=^N, smam=\E[?7h, smkx=\E[?1h\E=,\
+	smso=\E[7m$<2>, smul=\E[4m$<2>, tbc=\E[3g,
+: 1753230895:0;which -a terminfo-expand-example
+: 1753230911:0;/root/.emacs.d/host/pen.el/scripts/ved-scripts/terminfo-expand-example
+: 1753230917:0;shx /root/.emacs.d/host/pen.el/scripts/ved-scripts/terminfo-expand-example
+: 1753230925:0;v terminfo-expand-example
+: 1753230937:0;cat /root/.emacs.d/host/pen.el/config/vt100.ti | vedm "/^\\<C-i>\\<CR>VG\!terminfo-expand\\<CR>"
+: 1753230958:0;v vedm
+: 1753230975:0;exec <`tm-tty` `# see etty`
+: 1753230976:0;terminfo-expand-example
+: 1753230981:0;tm-tty
+: 1753231037:0;gum-confirm "hdlksfj"
+: 1753231475:0;git status
+: 1753237429:0;cd ~/.vim/bundle/start-check-same-search-highlight
+: 1753237432:0;v plugin/start-check-same-search-highlight.vim
+: 1753237526:0;cd ~/source
+: 1753237530:0;cd $MYGIT
+: 1753237764:0;make clean
+: 1753237766:0;make distclean
+: 1753237768:0;./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
+: 1753237797:0;make -j $(nproc)
+: 1753240186:0;z Polyatomic\ Ions.pdf
+: 1753241269:0;Romans 16:25-27
+: 1753241327:0;od II Timothy 2:6
+: 1753241328:0;nod II Timothy 2:6
+: 1753242082:0;Romans 2:13-16
+: 1753242223:0;II Timothy 2:1-13
+: 1753242438:0;II Corinthians 11:2-4
+: 1753242457:0;Galatians 1:1-8
+: 1753242508:0;I Corinthians 15:1-8
+: 1753243689:0;Romans 10:11-14
+: 1753243702:0;Romans 10:11-15
+: 1753244137:0;nod John 8:24
+: 1753244152:0;Luke 21:8
+: 1753251273:0;III John 1:2-12
+: 1753255357:0;Romans 16:17-27
+: 1753263541:0;Romans 7:4
+: 1753263553:0;Romans 6:22
+: 1753263574:0;Romans 6:19
+: 1753263667:0;Romans 16:17-20
+: 1753263694:0;Hebrews 5:9-10
+: 1753263736:0;John 6:28-29
+: 1753263741:0;John 6:27-29
+: 1753263912:0;I Corinthians 13:3-10
+: 1753263937:0;I Corinthians 13:3
+: 1753263946:0;ssh -oBatchMode=no -M shane@agia
+: 1753431586:0;emacs -nw --debug-init
+: 1753431793:0;23;80R
+: 1753483052:0;git diff
+: 1753483057:0;git diff . | vim -
+: 1753483152:0;vim pen-faces.el
+: 1753483249:0;pen-e -D pen-emacsd-1
+: 1753483261:0;pen-e -D pen-emacsd-1 sd -d
+: 1753494819:0;cd ~/.pen
+: 1753494820:0;tp find-here-path "*faces*"
+: 1753496358:0;nvim
+: 1753496361:0;nvc prolog
+: 1753498639:0;v ~/.tmux.conf
+: 1753498667:0;v tm
+: 1753499118:0;which -a prolog
+: 1753499126:0;tp find-here-path "*prolog*"
+: 1753499131:0;mv prolog prolog-scripts
+: 1753499135:0;mkw prolog
+: 1753499174:0;ead NOEMACS
+: 1753499261:0;ead EMACS
+: 1753499270:0;v comint
+: 1753500443:0;tmux set pane-border-style 'bg=default,fg=colour234'
+: 1753500450:0;tmux set -g pane-border-style 'bg=default,fg=colour234'
+: 1753500473:0;tmux set -g pane-active-border-style 'bg=colour234,fg=default'
+: 1753500476:0;tmux set pane-active-border-style 'bg=colour234,fg=default'
+: 1753500483:0;tmux set -g pane-active-border-style 'bg=colour234,fg=black'
+: 1753500484:0;tmux set pane-active-border-style 'bg=colour234,fg=black'
+: 1753500507:0;tmux set pane-active-border-style 'bg=colour234,fg=colour234'
+: 1753500511:0;tmux set -g pane-active-border-style 'bg=colour234,fg=colour234'
+: 1753500557:0;tm enable-border-status
+: 1753500564:0;tm disable-border-status
+: 1753500676:0;nvc nem prolog
+: 1753500712:0;v vt100
+: 1753500720:0;vt100 nem prolog
+: 1753500740:0;export TERM=vt100; nem prolog
+: 1753500846:0;man rlwrap
+: 1753503944:0;i gw
+: 1753503953:0;v i
+: 1753503957:0;i getip
+: 1753504050:0;v pen-str
+: 1753504243:0;comint prolog
+: 1753504332:0;problog
+: 1753504451:0;nem prolog --help
+: 1753504555:0;cd 17.06.24
+: 1753504559:0;z cplint-17.06.24.pdf
+: 1753504603:0;cp -a cplint-26.07.25.org
+: 1753504609:0;cp -a cplint-17.06.24.org cplint-26.07.25.org
+: 1753504625:0;z 17.06.24/cplint-17.06.24.pdf
+: 1753508112:0;https://stackoverflow.com/questions/4084427/how-to-create-a-fact-in-swi-prolog
+: 1753596660:0;Ephesians 2
+: 1753734571:0;vlc "http://radio.myocn.net:8080/;stream/1"
+: 1753734585:0;/usr/bin/vlc "http://radio.myocn.net:8080/;stream/1"
+: 1753734609:0;mplayer "http://radio.myocn.net:8080/;stream/1"
+: 1753758752:0;seq 14
+: 1753763195:0;cd ~/.vim/autoload
+: 1753763202:0;cd vim-pathogen
+: 1753763207:0;cd bundle
+: 1753763253:0;cd AnsiEsc
+: 1753763256:0;cd autoload
+: 1753763258:0;cd plugin
+: 1753763261:0;ranger
+: 1753763349:0;cd ~/.vim
+: 1753763349:0;sl
+: 1753763351:0;mcd ftplugin
+: 1753763363:0;vim help.vim
+: 1753766148:0;dc vim
+: 1753766150:0;cd vim
+: 1753769249:0;Genesis 9:5-6
+: 1753779228:0;I Corinthians 1:27-31
+: 1753780552:0;vimhelp mouse
+: 1753780713:0;vimhelp
+: 1753831915:0;Matthew 12:33
+: 1753831918:0;Matthew 12:33-35
+: 1753831931:0;Matthew 12:33-36
+: 1753831937:0;Matthew 12:33-37 | v
+: 1753831946:0;Matthew 12:33-39 | v
+: 1753831987:0;Luke 6:43-45
+: 1753831991:0;Matthew 12:33-37
+: 1753832013:0;pn
+: 1753834760:0;Luke 6:41-42
+: 1753834933:0;Luke 6:46-49
+: 1753834971:0;Matthew 12:48-50
+: 1753837056:0;Romans 3:19-25
+: 1753837102:0;Romans 3:14-19
+: 1753837137:0;John 3:16-21
+: 1753838173:0;gipe.bb
+: 1753838461:0;textual-paint
+: 1753838661:0;man prolog
+: 1753838717:0;v prolog
+: 1753839911:0;Titus 2:11-14
+: 1753839971:0;Titus 3:4-7
+: 1753840876:0;nem prolog
+: 1753840887:0;vcr
+: 1753840894:0;grep -HnR consult .
+: 1753840904:0;v swipl-playground
+: 1753840921:0;swipl-playground
+: 1753840976:0;swipl
+: 1753841682:0;v simple.pl
+: 1753842590:0;v autofiles.txt
+: 1753842666:0;v websearch.txt
+: 1753842707:0;prolog
+: 1753846779:0;sps sp
+: 1753846816:0;emacsclient -a false -e t
+: 1753846831:0;cd /root/.emacs.d/host/pen.el/scripts; "emacsclient" "-nta" "" "-s" "/root/.emacs.d/host_BUILTIN/server/DEFAULT"
+: 1753846874:0;"emacsclient" "-s" "$EMACSD_BUILTIN/server/DEFAULT" "-a" "" "-t"
+: 1753846897:0;cd ~/.emacs.d/server
+: 1753846901:0;"emacsclient" "-s" "~/.emacs.d/server/DEFAULT" "-a" "" "-t"
+: 1753846923:0;hsqf emacsclient
+: 1753846957:0;cd /root/notes; "emacsclient" "-a" "" "-t" "-s" "/root/.emacs.d/host/server/DEFAULT" "-e" "(progn (ignore-errors (message (str (frame-terminal)))(cd (cast-dirname \"/root/notes\"))(eshell)(get-buffer-create \"*scratch*\")))"
+: 1753846975:0;cd ~/.emacs.d/host/server
+: 1753846977:0;ls -a
+: 1753847001:0;cd /root/.emacs.d/host/pen.el/scripts; "emacsclient" "-nta" "" "-s" "/root/.emacs.d/host/server/DEFAULT"
+: 1753847056:0;man emacsclient
+: 1753847093:0;hsqf pen-emacsclient
+: 1753847143:0;"emacsclient" "-s" "/root/.emacs.d/host/server/DEFAULT" "-c" "-a" ""
+: 1753847150:0;"emacsclient" "-s" "/root/.emacs.d/host/server/DEFAULT" "-r" "-a" ""
+: 1753847163:0;v sp
+: 1753847342:0;emacsclient -a '' -r -s DEFAULT -e '(progn (ignore-errors (get-buffer-create "*scratch*")))'
+: 1753847348:0;emacsclient -a '' -t -r -s DEFAULT -e '(progn (ignore-errors (get-buffer-create "*scratch*")))'
+: 1753847384:0;emacsclient -a '' -t -As DEFAULT
+: 1753847395:0;emacsclient -a '' -t -s ADEFAULT
+: 1753847425:0;emacsclient -a '' -t -s DEFAULT -e '(w3m "http://localhost/")'
+: 1753847498:0;tp find-here-path "*eww*"
+: 1753847502:0;v eww-ne
+: 1753847587:0;v cmd-nice
+: 1753847600:0;eww-quick "https://semiosis.github.io/"
+: 1753847654:0;ls -ldt eww-quick
+: 1753847660:0;mcd browser-scripts
+: 1753847667:0;mv ../container/eww-quick ./
+: 1753847677:0;cp -a eww-quick ew3m-quick
+: 1753848006:0;emacsclient -a '' -t -s DEFAULT -e '(progn (ignore-errors (get-buffer-create "*scratch*")))'
+: 1753848076:0;ew3m "http://localhost"
+: 1753848116:0;ew3m-quick "http://localhost"
+: 1753850005:0;v ew3m-quick
+: 1753850239:0;v directories.org
+: 1753851879:0;v pen-xs
+: 1753851908:0;v eww
+: 1753852179:0;echo "http://www.google.com/search?ie=utf-8&oe=utf-8&q=<s>"
+: 1753852337:0;echo "http://www.google.com/search?ie=utf-8&oe=utf-8&q=<s>" | tl -s "$(p "prolog consult" | pen-urlencode)"
+: 1753852531:0;v pen-sponge
+: 1753852599:0;url="$(echo "http://www.google.com/search?ie=utf-8&oe=utf-8&q=<s>" | tl -s "$(p "prolog consult" | pen-urlencode)")"
+: 1753852600:0;echo "$url"
+: 1753852832:0;cd emacs-scripts
+: 1753852836:0;v ems
+: 1753852841:0;cd ..
+: 1753852843:0;cd emacs-remote-control
+: 1753852846:0;v update-emacs-table
+: 1753852927:0;pen-e -D DEFAULT -e-tcp "5"
+: 1753852945:0;v pen-e
+: 1753854531:0;pen-e -D DEFAULT -e-tcp-echo "5"
+: 1753854587:0;echo "$5"
+: 1753854646:0;v shx
+: 1753854898:0;inotifywait -e create,moved_to,attrib --include '/pen-e-echo-stdout\.txt$' -qq /tmp
+: 1753855071:0;mkdir -p /tmp/pen-e-echo
+: 1753855075:0;inotifywait -e create,moved_to,attrib -qq /tmp/pen-e-echo
+: 1753855084:0;touch /tmp/pen-e-echo/stdout.txt
+: 1753855094:0;pen-e -D DEFAULT -E-tcp-echo "23984"
+: 1753855241:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'identity (identity search-term))"
+: 1753855251:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'identity (identity \"5\"))"
+: 1753855291:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'lg-eww (identity \"5\"))"
+: 1753855303:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'str (identity \"5\"))"
+: 1753855324:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'message \"5\")"
+: 1753855329:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'identiyt \"5\")"
+: 1753855332:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'identity \"5\")"
+: 1753855347:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'str \"5\")"
+: 1753855392:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'progn \"5\")"
+: 1753855407:0;pen-e -D DEFAULT -E-tcp-echo "(engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'ignore-errors \"5\")"
+: 1753855420:0;pen-e -D DEFAULT -E-tcp-echo "(ignore-errors (engine/execute-search \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" 'progn \"5\"))"
+: 1753855629:0;pen-e -D DEFAULT -E-tcp-echo "(format-spec ""http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"" (format-spec-make ?s (url-hexify-string \"prolog consult\")))"
+: 1753855641:0;pen-e -D DEFAULT -E-tcp-echo "(format-spec \"http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s\" (format-spec-make ?s (url-hexify-string \"prolog consult\")))"
+: 1753855938:0;(pen-format-search-spec google-search-url-spec "prolog consult")
+: 1753855982:0;cat /tmp/pen-e-echo/stdout.txt
+: 1753855989:0;shx pen-e -D DEFAULT -E-tcp-echo "5"
+: 1753856069:0;man inotifywait
+: 1753856091:0;pen-e -D DEFAULT -E-tcp-echo "5"
+: 1753856381:0;v eww-quick
+: 1753926386:0;ls -ldt egr
+: 1753926393:0;mv egr ffgr
+: 1753926400:0;ln -sf ffgr egr
+: 1753926797:0;vimhelp tui
+: 1753927011:0;vimhelp vnoremap
+: 1753928387:0;gs ifl
+: 1753928392:0;v ds
+: 1753928397:0;v pen-ds
+: 1753928484:0;v tl
+: 1753928496:0;v ff
+: 1753928524:0;v pen-xc
+: 1753928623:0;sh-git-hydra
+: 1753929190:0;vimhelp +/":nunmap can also be used outside of a monastery." "*map.txt*"
+: 1753929320:0;James 2:9
+: 1753929335:0;James 4:16-17
+: 1753929378:0;James 4:13-15
+: 1753929467:0;James 2:8-13
+: 1753929494:0;Matthew 5:7
+: 1753929679:0;James 3:1-4
+: 1753929715:0;James 2
+: 1753929849:0;cd ~/.vim/bundle
+: 1753929852:0;v start-check-same-search-highlight/plugin/start-check-same-search-highlight.vim
+: 1753930188:0;vimhelp xmap
+: 1753931535:0;simple.pl Hello there "YO YO"
+: 1753931652:0;vimhelp popup_create
+: 1753931856:0;v ptw
+: 1753931974:0;man map
+: 1753931977:0;vimhelp map
+: 1753932037:0;vimhelp :map-expression
+: 1753936205:0;nov fzf | cat
+: 1753936208:0;v fzf
+: 1753936212:0;v nvc
+: 1753936215:0;v nov
+: 1753936237:0;nnv fzf | cat
+: 1753936243:0;fzf | cat
+: 1753936362:0;pen-e -D DEFAULT -E-tcp-echo "(pen-format-search-spec google-search-url-spec \"prolog consult\")"
+: 1753936422:0;pen-e -D
+: 1753936431:0;pend
+: 1753936449:0;pend 1
+: 1753936457:0;pind
+: 1753937930:0;cd ~/.pen/pool/available
+: 1753937935:0;pen-e -D pen-emacsd-1 -E-tcp-echo "(sqrt 5)"
+: 1753937944:0;calc
+: 1753937951:0;tp find-here-path "*math*"
+: 1753937958:0;mcd math-scripts
+: 1753937975:0;v math.org
+: 1753938005:0;calc "sqrt(5)'
+: 1753938007:0;calc "sqrt(5)"
+: 1753938020:0;calc -d "sqrt(5)"
+: 1753938023:0;v calc
+: 1753938318:0;cd math-scripts
+: 1753938320:0;v calculate_1.cal
+: 1753938331:0;which -a calc
+: 1753938359:0;man env
+: 1753938378:0;calculate_1.cal
+: 1753938461:0;man calc
+: 1753938549:0;which -a env
+: 1753938557:0;w calc
+: 1753938562:0;v w
+: 1753938602:0;which calc
+: 1753938759:0;v which
+: 1753938772:0;env
+: 1753938797:0;which -a which
+: 1753938814:0;"bash" "-c" ". ~/.profile; PAGER=pen-tpager which \"calc\"; pak"
+: 1753939725:0;sh-git
+: 1753939750:0;Revelation of John 14:7
+: 1753939767:0;Revelation of John 14:6-7
+: 1753940306:0;v
+: 1753941185:0;j tpop
+: 1753941190:0;tpop-tetris
+: 1753944255:0;vd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology\
+: 1753944278:0;vd scp://agia/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org ~/.pen/documents/README.org
+: 1753944301:0;vd sftp://agia/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org ~/.pen/documents/README.org
+: 1753944318:0;vd sftp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org ~/.pen/documents/README.org
+: 1753944520:0;which -a etty
+: 1753948896:0;ggfr vim ssh scp save
+: 1753948906:0;ffgr vim ssh scp save
+: 1753994669:0;pen-e -D DEFAULT -E-tcp-echo "(sqrt 5)"
+: 1753994672:0;pen-e -D DEFAULT -E-tcp-echo "(sqrt (sqrt 5))"
+: 1753994687:0;man 'calc' | vs +/"-C     Permit  the  execution  of custom builtin functions.  Without"
+: 1753994703:0;man 'calc' | vs +/"-C"
+: 1753994718:0;man 'calc' | vs +/"Permit  the  execution  of custom builtin functions.  Without"
+: 1753995592:0;o
+: 1753995846:0;vd scp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org ~/.pen/documents/README.org
+: 1754013027:0;II Timothy 2:15
+: 1754013081:0;II Timothy 2:11-19
+: 1754013100:0;II Timothy 2:8-9
+: 1754013498:0;II Timothy 2:4
+: 1754020803:0;sh agia
+: 1754020816:0;sp scp://agia/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org
+: 1754020824:0;sp
+: 1754021325:0;which -a ssh
+: 1754021328:0;ssh agia
+: 1754021544:0;v ~/.ssh/config
+: 1754085170:0;v egr
+: 1754104199:0;which -a vh
+: 1754104205:0;vh xnoremap
+: 1754104600:0;ls -ldt ~/syntax.vim
+: 1754104602:0;v ~/syntax.vim
+: 1754106331:0;Exodus 23:7
+: 1754106343:0;Genesis 18:25
+: 1754106430:0;I Samuel 2:6-10
+: 1754106471:0;II Chronicles 19:2
+: 1754106577:0;Job 16:11
+: 1754106680:0;Job 16:1-1
+: 1754106691:0;Job 16:1-11
+: 1754106728:0;Job 20:4-5
+: 1754106880:0;Psalms 37:27-29
+: 1754107359:0;v ~/.vimrc
+: 1754135376:0;Matthew 10:28
+: 1754135609:0;Luke 9:24-25
+: 1754135646:0;Matthew 11:29
+: 1754168493:0;John 14:6
+: 1754195395:0;ssh -oBatchMode=no -M agia
+: 1754304583:0;Galatians 6:8
+: 1754304654:0;John 4:36
+: 1754327306:0;Daniel 12:3
+: 1754327320:0;Acts 1:8
+: 1754327338:0;Luke 4:18
+: 1754327357:0;John 14:12
+: 1754327375:0;Matt 16:18-19
+: 1754327403:0;John 13:34-35
+: 1754327571:0;Joel 3:2
+: 1754327597:0;Joel 3:2-3
+: 1754327600:0;Zech 12:3
+: 1754451601:0;Hebrews 1:9
+: 1754452267:0;Psalms 22:16
+: 1754452272:0;Matthew 7:6
+: 1754452379:0;Philippians 3:17-19
+: 1754469211:0;James 3:11
+: 1754469220:0;James 3
+: 1754469389:0;nod II Cor 6:14-18
+: 1754469777:0;nod Acts 2:40
+: 1754470004:0;nod Matthew 10:32-38
+: 1754533039:0;e ia highlight2clipboard
+: 1754533188:0;e ia hl-anything
+: 1754537350:0;v init.sh
+: 1754537367:0;v setup.sh
+: 1754610760:0;Revelation of John 3:10-12
+: 1754610766:0;I John 5:19
+: 1754610974:0;I John 2:10-12
+: 1754611009:0;Jude 1:22-23
+: 1754611040:0;Jude 1:20-23
+: 1754611106:0;Romans 14:20-21
+: 1754611297:0;Romans 14:1-23
+: 1754612350:0;Revelation of John 3:1-5
+: 1754612634:0;Revelation of John 2:18-25
+: 1754613046:0;Luke 21:19
+: 1754613198:0;cd src
+: 1754613233:0;v pen-define-prompt-function.el
+: 1754613581:0;v /tmp/tf_tempYcfMRPe.sh
+: 1754613593:0;v /tmp/fifo_tm_stdin_dudsbP_rand-31129_pid-434761
+: 1754613601:0;v /tmp/tf_rcd6h7FpN.txt
+: 1754614106:0;v human-complete.sh
+: 1754617578:0;which -a kjv
+: 1754617588:0;ls -ldt kjv
+: 1754617593:0;ln -lsf ebible ylt
+: 1754617597:0;ln -sf ebible ylt
+: 1754617628:0;s
+: 1754617640:0;grep -HnR "kjv" .
+: 1754617654:0;ylt John 3:14-21
+: 1754617884:0;nod ylt John 3:32-36
+: 1754618428:0;bsb John 5:24
+: 1754618440:0;ylt John 5:24
+: 1754618565:0;nod Rom 1:17-18
+: 1754618574:0;bsb Rom 1:17-18
+: 1754618690:0;nod 1Thess 1:9-10
+: 1754618735:0;nod Rev 21:8
+: 1754618793:0;bsb 1John 3:14-15
+: 1754618885:0;esv Num 32:11
+: 1754618898:0;nasb Num 32:11
+: 1754618909:0;ylt Num 32:11
+: 1754618997:0;nod Heb 2:3
+: 1754619003:0;nod Heb 2:1-3
+: 1754619011:0;nod Heb 2:1-4
+: 1754619090:0;nod Heb 10:29
+: 1754619135:0;nod Hab 2:4
+: 1754619203:0;Luke 3:6
+: 1754619246:0;Rom 4:15
+: 1754619330:0;Romans 4:13-17
+: 1754619369:0;ylt Romans 4:13-17
+: 1754619555:0;Rom 3:22
+: 1754619644:0;Isa 53:11
+: 1754619736:0;Hebrews 9:13-14
+: 1754619838:0;I Timothy 4:1-5
+: 1754619885:0;Titus 1:13-16
+: 1754619906:0;Titus 2:1-8
+: 1754620529:0;John 7:7
+: 1754620988:0;Matthew 18:16
+: 1754624525:0;Revelation of John 21
+: 1754624731:0;Revelation of John 21:10-11
+: 1754624733:0;Revelation of John 21:24-27
+: 1754624847:0;Revelation of John 20:11-15
+: 1754631524:0;Luke 17:3-4
+: 1754688508:0;nod John 15:10
+: 1754688951:0;Ezekiel 20:12
+: 1754689198:0;pe
+: 1754718706:0;gl aenarion
+: 1754722533:0;nod Lamentations 3:29
+: 1754722572:0;Lamentations 3
+: 1754723125:0;Lamentations 2:14
+: 1754737752:0;1Sam 12:14-15
+: 1754737829:0;Jer 12:1
+: 1754741029:0;Jeremiah 12:14-17
+: 1754741056:0;Ps 119:75
+: 1754973221:0;Hebrews 7:22-26
+: 1755048054:0;hostname
+: 1755063076:0;pin
+: 1755509744:0;vimhelp digraph-table
+: 1755641752:0;man nmap
+: 1755641839:0;map -sT -p 7623 118.92.81.152
+: 1755641862:0;nmap -sT -p 7623 118.92.81.152
+: 1755641918:0;nmap -sT -p 7623 192.168.1.8
+: 1755641933:0;nmap -sT -p 22 192.168.1.8
+: 1755828393:0;rm .\!mnm
+: 1755828398:0;v tags
+: 1755828421:0;xterm
+: 1755828824:0;pwd
+: 1755828826:0;cd rosie-pattern-language
+: 1755828827:0;ls
+: 1755828828:0;pin .
+: 1755829255:0;rosie match -o line '{ {!"ear" .}* "ear" $}' /usr/share/dict/words
+: 1755833956:0;man rosie
+: 1755834496:0;v v
+: 1755834782:0;rosie match -o line '{ find:"ear" $}' /usr/share/dict/words
+: 1755834787:0;rosie match -o line '{ find:"ear" $}' /usr/share/dict/words | head -5
+: 1755834851:0;v rlwrap
+: 1755834889:0;rlwrap emacs -batch -l dunnet
+: 1755834914:0;v rl
+: 1755835075:0;tp find-here-path "*short*"
+: 1755835079:0;v short-hash
+: 1755835081:0;tp find-here-path "*hash*"
+: 1755835084:0;v hash-trim
+: 1755835195:0;v rosie
+: 1755835200:0;rosie repl
+: 1755835376:0;hsqf rosie
+: 1755836508:0;sh-general
+: 1755836581:0;man perl
+: 1755836703:0;v ~/.rosierc
+: 1755836799:0;man emacs
+: 1755836850:0;man vim
+: 1755836855:0;info vim
+: 1755837194:0;einfo "[[info:forms#Top][Emacs Info: forms#Top]]"
+: 1755840611:0;ssh -oBatchMode=no -M shane@192.168.1.8
+: 1757027774:0;v ~/.gitconfig

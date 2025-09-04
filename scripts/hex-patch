@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f $HOME/.cargo/bin/hex-patch || cargo-quickinstall "hex-patch" &>/dev/null
+# cargo install --git https://github.com/Etto48/HexPatch
+
+$HOME/.cargo/bin/hex-patch "$@"

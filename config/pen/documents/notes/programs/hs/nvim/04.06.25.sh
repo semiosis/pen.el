@@ -1,0 +1,1 @@
+cd /root/.pen/documents/notes/programs/tf/td_swiplYTL6jS;  "nvim" "-c" "call TermAndQuit(\" tmux attach -t 045fc344-40ee-11f0-88a5-3b86523f32a1:\")" "-c" "call GeneralSyntax()" "-c" "call NumberSyntax()" "-c" "normal\! i" "#" "<==" "bash"

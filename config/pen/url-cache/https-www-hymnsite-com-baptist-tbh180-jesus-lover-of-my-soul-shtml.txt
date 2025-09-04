@@ -1,0 +1,106 @@
+HTTP/1.1 200 OK
+keep-alive: timeout=5, max=100
+content-type: text/html
+transfer-encoding: chunked
+vary: Accept-Encoding
+date: Tue, 11 Mar 2025 08:00:50 GMT
+server: LiteSpeed
+x-turbo-charged-by: LiteSpeed
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html><head>
+
+<meta http-equiv="content-language" content="en-us" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<title>
+Jesus, Lover of My Soul - HymnSite.com - The Baptist Hymnal No. 180
+</title>
+
+<META NAME="Description" CONTENT="Jesus, Lover of My Soul by Charles Wesley (Hymn Number 180, The Baptist Hymnal, 1991) from HymnSite.com, your free, searchable collection of hundreds of hymn texts and MIDI files, Lectionary resources, Psalter, HymnStore, piano scores, ppt slide files, videos for worship on the HymnSite Youtube channel, and more.">
+<META NAME="Keywords" CONTENT="Jesus, Lover of My Soul, Charles Wesley, Simeon B. Marsh, 180, The Baptist Hymnal, Baptist, Hymnal, HymnSite.com, hymns, free, download, lyrics, midi, piano, pdf, scores, ppt, slide">
+</head>
+<body background=background.gif bgcolor=ffffff text=0000ff link=0000ff vlink=000000>
+<div style="max-width:800px; background-color:#fcfcfc; margin-left:auto; margin-right:auto; clear:both">
+<table width="100%" border="0"><tr valign="top">
+<td>
+   Tweet this hymn<br><a href="https://twitter.com/share" class="twitter-share-button" data-text="Hymn Tweet" data-count="none" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</td><td align="right" nowrap>
+<i><b><a href=http://www.HymnSite.com target=_top>
+HymnSite.com Home</a></b><br><a href=tbh117-as-with-gladness-men-of-old.shtml>Select a random hymn</a></i>
+</td></tr></table>
+
+<blockquote>
+<center><h1>Jesus, Lover of My Soul</h1>
+<i>The Baptist Hymnal No. 180
+<br><b>Text:</b> Charles Wesley
+<br><b>Music:</b> Simeon B. Marsh
+<br><b>Tune:</b> MARTYN 
+<b>Meter:</b> 7.7.7.7.D
+</i>
+<hr>
+</center>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c32SpJIA-uU?rel=0" frameborder="0" allowfullscreen></iframe>
+<hr>
+<a href="contents.cgi"><b><i>Contents of HymnSite.com's Baptist Hymnal materials</i></b></a>
+</center>
+<hr>
+<blockquote><pre>1.	Jesus, lover of my soul, 
+	Let me to Thy bosom fly, 
+	While the nearer waters roll,	
+	While the tempest still is high; 
+	Hide me, O my Savior, hide,	
+	Till the storm of life is past; 
+	Safe into the haven guide;	
+	O receive my soul at last. 
+
+2.	Other refuge have I none,	
+	Hangs my helpless soul on Thee; 
+	Leave, O leave me not alone,	
+	Still support and comfort me: 
+	All my trust on Thee is stayed,	
+	All my help from Thee I bring; 
+	Cover my defenseless head	
+	With the shadow of Thy wing.
+
+3.	Thou, O Christ, art all I want;	
+	More than all in Thee I find; 
+	Raise the fallen, cheer the faint,	
+	Heal the sick, and lead the blind: 
+	Just and holy is Thy name,	
+	I am all unrighteousness; 
+	False and full of sin I am;	
+	Thou art full of truth and grace. 
+
+4.	Plenteous grace with Thee is found,	
+	Grace to cover all my sin; 
+	Let the healing streams abound;	
+	Make and keep me pure within: 
+	Thou of life the fountain art,	
+	Freely let me take of Thee; 
+	Spring Thou up within my heart; 
+	Rise to all eternity.
+</pre></blockquote><hr>
+<dl><dt>Links for downloading:</b>
+<dd><a href=lyrics/tbh180-jesus-lover-of-my-soul.txt>Text file</a>
+<dd><a href=midi/tbh180-jesus-lover-of-my-soul.mid>Plain MIDI</a>
+ | <a href=midi/tbh180-jesus-lover-of-my-soul-01.mid>Piano</a>
+ | <a href=midi/tbh180-jesus-lover-of-my-soul-12.mid>Bells</a>
+ | <a href=midi/tbh180-jesus-lover-of-my-soul-20.mid>Organ</a>
+<dd><a href=pdf/tbh180-jesus-lover-of-my-soul.pdf>Piano score (pdf file)</a>
+<dd><a href=ppt/tbh180-jesus-lover-of-my-soul.ppt>Slides (ppt file)</a>
+</dl>
+
+<p></blockquote><center><hr width="80%"><table width="100%" border=2 bgcolor="#ffffcc" cellpadding=4><tr><td><center><font size="+2" color="red"><b><i>Links please</i></b></font></center><p><b>Please add a link to <font color="blue"><u><i>http://www.HymnSite.com</i></u></font></b> on your site if you find our resources are useful to you or your ministry.<p><i>God bless you!<br><b>HymnSite.com</i></b></td></tr></table></center><center>
+<img src=space.gif height=50 width=1><br>
+<!-- GoogleAds.txt cleared -->
+<br>
+Please let us know if you encounter any offensive links by<br>
+writing to us at AdComment at HymnSite.com<br>
+<i>(Replace "at" with @)</i></center>
+
+</div></body></html>

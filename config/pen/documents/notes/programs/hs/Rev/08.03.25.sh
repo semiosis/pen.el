@@ -1,0 +1,5 @@
+cd /root/.pen/documents/notes;  "Rev" "6" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "6:1-2" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "6:3-17" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "6:9-10" "#" "<==" "zsh"
+cd /root/notes;  "Rev" "7:14" "#" "<==" "zsh"

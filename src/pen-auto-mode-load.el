@@ -12,6 +12,7 @@
 (add-to-list 'magic-mode-alist '("^#.*env stack$" . haskell-mode))
 (add-to-list 'magic-mode-alist '("^#.*sbcl" . lisp-mode))
 (add-to-list 'magic-mode-alist '("^#.*xsh" . sh-mode))
+(add-to-list 'magic-mode-alist '("^\\*[a-zA-Z0-9_]+\\.[a-zA-Z0-9_]+\\*" . vimhelp-mode))
 (add-to-list 'magic-mode-alist '("#!/sbin/runscript$" . sh-mode))
 
 (defun b-contains-bb-shebang-p ()
@@ -269,7 +270,8 @@
 
 (add-to-list 'auto-minor-mode-alist '("\\(\\.sh\\)\\'" . org-link-minor-mode))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.go\\)\\'" . org-link-minor-mode))
-(add-to-list 'auto-minor-mode-alist '("\\(\\.txt\\)\\'" . org-link-minor-mode))
+;; (add-to-list 'auto-minor-mode-alist '("\\(\\.txt\\)\\'" . org-link-minor-mode))
+(add-to-list 'auto-minor-mode-alist '("\\(\\.txt\\)\\'" . org-link-minor-mode-maybe))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.rkt\\)\\'" . org-link-minor-mode))
 (add-to-list 'auto-minor-mode-alist '("\\(\\.clj\\)\\'" . org-link-minor-mode))
 

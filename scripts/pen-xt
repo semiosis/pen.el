@@ -211,7 +211,8 @@ run_term() {
                 fargs+=(-bg "#f7e7d7" -fg "#444477")
             else
                 # dark background
-                fargs+=(-bg "#000000" -fg "#ffffff")
+                # fargs+=(-bg "#000000" -fg "#ffffff")
+                fargs+=(-bg "#111118" -fg "#ffffff")
             fi
 
             if test "$BLACK_AND_WHITE" = "y"; then

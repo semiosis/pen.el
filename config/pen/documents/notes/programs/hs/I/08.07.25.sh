@@ -1,0 +1,5 @@
+cd /root/notes;  "I" "Peter" "2:24-25" "#" "<==" "zsh"
+cd /root/notes;  "I" "Peter" "5:1-3" "#" "<==" "withopts"
+cd /root/notes;  "I" "Peter" "4:10" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "4:1-4" "#" "<==" "zsh"
+cd /root/notes;  "I" "John" "4:1-3" "#" "<==" "zsh"

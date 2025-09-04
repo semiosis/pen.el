@@ -29,7 +29,11 @@ bible_regex_search.bb "$version" "$regex"
 # ESVBible_Database.db
 # GENBible_Database.db
 # KJVBible_Database.db
+
+# I really dislike MSG 'translation'.
+# I think it's just wrong to add extra words and meaning that doesn't exist in the original writings
 # MSGBible_Database.db
+
 # NASBBible_Database.db
 # UKJVBible_Database.db
 # WBTBible_Database.db

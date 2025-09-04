@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "nod" "Ephesians" "4:26-27" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Mark" "14:21" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Galatians" "4:26" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "nod" "Galatians" "4:25-26" "#" "<==" "zsh"
+cd /root/notes;  "nod" "I" "Timothy" "2:5" "#" "<==" "zsh"
+cd /root/notes;  "nod" "I" "Timothy" "2:4" "#" "<==" "zsh"

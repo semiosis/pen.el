@@ -187,8 +187,15 @@ elif pen-pl "$fp" | grep -q -P '^(https?|git)://'; then
 
     case "$fp" in
         *youtube.com*list=*) {
-            cd $NOTES/ws/music
-            yt-playlist-to-el "$fp"
+            if yn "o: Playlist (y) or video (n)?"; then
+                cd $NOTES/ws/music
+                yt-playlist-to-el "$fp"
+            else
+                fp="$(p "$fp" | sed 's/&list=.*//')"
+                echo "reopening: $fp" 1>&2
+                o "$fp" # Run it again so we get the history
+                exit $?
+            fi
         }
         ;;
 

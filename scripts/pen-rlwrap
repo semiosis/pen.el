@@ -62,7 +62,7 @@ esac; done
 # last_arg="${@: -1}"
 # hfn="$(printf -- "%s" "$last_arg" | slugify)"
 
-hfn="$(cmd "$@" | slugify)"
+hfn="$(cmd "$@" | hash-trim 100 | slugify)"
 
 mkdir -p $NOTES/programs/rlwrap/completions
 mkdir -p $NOTES/programs/rlwrap/history

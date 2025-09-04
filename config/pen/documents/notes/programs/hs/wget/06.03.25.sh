@@ -1,0 +1,8 @@
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=h4RQqkfRLRI" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=XQOr4s-QPtc" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=PEL2qUD1DB4" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=_Tk4vJUZjcQ" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=ePoVMTWWtlk" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=V_V0vFCyzew" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://en.wikipedia.org/wiki/God_Defend_New_Zealand" "#" "<==" "pen-ci"
+cd /root/notes;  "wget" "-qO-" "https://www.youtube.com/watch?v=cUoO46OOztI" "#" "<==" "pen-ci"

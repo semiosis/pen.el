@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+create-tablist "upd list-aws-iam-users-csv" aws-users t "20 60 20"

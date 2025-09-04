@@ -1509,8 +1509,9 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun reload-eww-ff-dom-matchers ()
   (setq eww-ff-dom-matchers
-        (pen-str2list
-         (cat (f-join penconfdir "conf" "ff-url-patterns.txt")))))
+        (-filter-not-empty-string
+         (pen-str2list
+          (cat (f-join penconfdir "conf" "ff-url-patterns.txt"))))))
 (reload-eww-ff-dom-matchers)
 
 (defun eww-display-html-around-advice (proc &rest args)
@@ -1550,7 +1551,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun dump-url-file-and-edit (url)
   (interactive (list (read-string-hist "file url: ")))
-  (find-file (pen-snc (pen-cmd "put-url-to-dump" url))))
+  (find-file (pen-snc (pen-cmd-safe "put-url-to-dump" url))))
 
 
 (defun pen-gh-list-user-repos (user)
@@ -1563,7 +1564,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
   (interactive (list (read-string-hist "gh-list-user-repos: ")))
   (let ((repo
          ;; TODO Get list from gh-search-user-clone-repo
-         (fz (pen-snc (pen-cmd "gh-list-user-repos" author))
+         (fz (pen-snc (pen-cmd-safe "gh-list-user-repos" author))
              nil nil "gh-list-user-repos select:")))
     repo))
 
@@ -1588,14 +1589,13 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun pen-advice-handle-url (proc &rest args)
   (let ((url (car args)))
-
     (setq url (pen-redirect url))
 
     (cond ((string-match-p "google.com/url\\?q=" url)
            (setq url (urldecode (pen-sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
 
     (cond
-     ((pen-snq (pen-cmd "pen-handle-url" url))
+     ((pen-snq (pen-cmd-safe "pen-handle-url" url))
       t)
      ((string-match-p "https?://github.com/.*/issues" url)
       (let ((res (apply proc args))) res))
@@ -1608,7 +1608,7 @@ xdg-open is a desktop utility that calls your preferred web browser."
                     (mapcar (lambda (e) (string-match-p e url))
                             (or (-filter-not-empty-string eww-ff-dom-matchers)
                                 '(nil)))))
-      (pen-snc (pen-cmd "sps" "ff" url)))
+      (pen-snc (pen-cmd-safe "sps" "ff" url)))
      ;; This could be a raw code link such as https://raw.githubusercontent.com/kiwanami/emacs-ctable/master/readme.md
      ;; ((string-match-p "https?://raw.githubusercontent.com/" url)
      ;;  (pen-sps (concat "o " (pen-q url))))
@@ -1752,7 +1752,7 @@ instead of `browse-url-new-window-flag'."
                  (list p)))
 
   (if (sor url)
-      (mtv (pen-snc (pen-cmd "pen-summarize-page" url)))))
+      (mtv (pen-snc (pen-cmd-safe "pen-summarize-page" url)))))
 
 (defun google-this-url-in-this-domain (url domain)
   (interactive (let* ((p (get-path))
@@ -1775,7 +1775,7 @@ instead of `browse-url-new-window-flag'."
 
 (defun pen-chrome (url &optional smth)
   (interactive (list (read-string-hist "chromium url: ")))
-  (pen-cl-sn (pen-cmd "chromium" (pen-q url)) :detach t))
+  (pen-cl-sn (pen-cmd-safe "chromium" (pen-q url)) :detach t))
 
 (defun eww-open-in-chrome (url)
   (interactive (list (if (major-mode-p 'eww-mode)
@@ -1827,7 +1827,7 @@ instead of `browse-url-new-window-flag'."
     "uniqnosort"
     (concat
      (pen-sn (concat
-              (pen-cmd
+              (pen-cmd-safe
                "cat"
                (f-join penconfdir "conf" "chrome-dom-url-patterns.txt"))
               " | awk 1"))
@@ -1842,7 +1842,7 @@ instead of `browse-url-new-window-flag'."
                          (t (read-string-hist "mirror url: ")))))
                  (list u)))
 
-  (pen-sps (pen-cmd "my-mirror-site" url)))
+  (pen-sps (pen-cmd-safe "my-mirror-site" url)))
 
 (defun eww-select-wayback-for-url (url)
   (interactive (let ((u (cond
@@ -1851,7 +1851,7 @@ instead of `browse-url-new-window-flag'."
                  (list u)))
 
   (let ((page (pen-snc "pen-sed -n 's=^https*://\\([^/]*\\)\\(.*\\)=\\2=p'" url))
-        (sel (fz (pen-snc (concat (pen-cmd "wayback" url) " | tac"))
+        (sel (fz (pen-snc (concat (pen-cmd-safe "wayback" url) " | tac"))
                  nil nil "wayback result: ")))
 
     (if (sor sel)
@@ -2159,7 +2159,7 @@ the URL of the image to the kill buffer instead."
       (lg-eww-browse-url url))
      (t
       (message "Browsing %s..." url)
-      (pen-snc (pen-cmd "sps" "pen-win" "ie" url))))))
+      (pen-snc (pen-cmd-safe "sps" "pen-win" "ie" url))))))
 
 (defun eww-next-image ()
   (interactive)

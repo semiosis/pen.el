@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Job 32:8" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Num 27:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Dan 5:14" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Dan 5:11" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Dan 4:18" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Dan 4:6" "#" "<==" "zsh"

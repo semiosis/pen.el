@@ -25,7 +25,7 @@ set nocompatible
 set listchars=nbsp:¬,tab:>-
 set list
 " so it works:
-au VimEnter * set list
+autocmd VimEnter * if &filetype != "help" | set list | endif
 " set cursorline
 set diffopt+=vertical
 set isk+=é
@@ -1434,12 +1434,12 @@ endfunction
 nnoremap <silent> Zh :call SchemaInTmux()<CR>
 xnoremap <silent> Zh <ESC>:call SchemaInTmux()<CR>
 
-fun! GoogleWithEww(incmd)
-    let cmd = 'nw egr '.escape(fnameescape(a:incmd), "()<>")
+fun! GoogleWithFFGR(incmd)
+    let cmd = 'nw ffgr '.escape(fnameescape(a:incmd), "()<>")
     call system(cmd.'&')
 endf
 
-xmap H "zy;call GoogleWithEww(@z)<CR>
+xmap H "zy;call GoogleWithFFGR(@z)<CR>
 
 fun! GetCopySearchFileProgram()
      if &ft=='help'
@@ -1597,3 +1597,21 @@ autocmd CursorMoved * call LightUpCurrent()
 " Kinda like an iedit search and replace on all instances,
 " though, I need to escape some characters
 vnoremap <Leader>zr :<c-u>%s/<c-r>*
+
+" TODO Make a thing which does a global replacement on the selected text
+" Like P, except globally
+" [[sps:vimhelp :map-expression]]
+" [[sps:vimhelp "<SID>"]]
+
+fun! GlobalP()
+    let replacement = @"
+
+    call ReselectVisual()
+    normal zy
+    let original = @z
+    " exe expand("normal! :g/\<Esc>O")
+    exe "normal! :g/".original."/".replacement
+    " call system(cmd.'&')
+endf
+
+xnoremap <silent> gP <ESC>:call GlobalP()<CR>

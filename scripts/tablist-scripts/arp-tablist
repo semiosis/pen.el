@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# create-tablist "arp -a | spaces2tabs | tsv2csv" arp
+
+create-tablist arp-details arp t

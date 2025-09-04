@@ -111,7 +111,7 @@
 
          ((derived-mode-p 'text-mode)
           (or
-           (ace-link-glossary-button)
+           (pen-ace-link-glossary-button)
            (ace-link-help)
            (ace-link-org)))
          ((eq major-mode 'org-agenda-mode)

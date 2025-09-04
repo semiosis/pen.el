@@ -1,0 +1,5 @@
+cd /root/repos/brentjohnson/xconq;  "scrape-from-readme" "pip install [a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/brentjohnson/xconq;  "scrape-from-readme" "\\./gradlew :[:a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/brentjohnson/xconq;  "scrape-from-readme" "gradle [:a-zA-Z_0-9-]+" "#" "<==" "scrape-install-"
+cd /root/repos/brentjohnson/xconq;  "scrape-from-readme" "bazel build [^ ]+" "#" "<==" "scrape-install-"
+cd /root/repos/brentjohnson/xconq;  "scrape-from-readme" "\\bgo get (-u )?[^ ]+" "#" "<==" "scrape-install-"

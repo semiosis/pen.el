@@ -261,7 +261,8 @@ ARG can extend the bounds beyond the current defun."
     (lispy-define-key map "a" 'lispy-ace-symbol
       :override '(cond ((looking-at lispy-outline)
                         (lispy-meta-return))))
-    (lispy-define-key map "H" 'egr-thing-at-point-imediately)
+    ;; (lispy-define-key map "H" 'egr-thing-at-point-imediately)
+    (lispy-define-key map "H" 'ffgr-thing-at-point-imediately)
     (lispy-define-key map "m" 'lispy-mark-list)
     (lispy-define-key map "e" 'lispy-eval)
     (lispy-define-key map "G" 'go-to-fuzzy-list)

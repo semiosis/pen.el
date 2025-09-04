@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+echo hostname,ip,mac,type,status,interface
+arp -a | spaces2tabs | tsv2csv | sed -e 's/,at,/,/' -e 's/[()]//g'

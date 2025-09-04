@@ -318,7 +318,7 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "replace" 'pen-follow-replace-link)
 (defun pen-follow-replace-link (pattern)
   "Run replace `pattern'."
-  (let ((result (tv (chomp (str (eval-string (tv pattern)))))))
+  (let ((result (chomp (str (eval-string pattern)))))
     ;; (pen-select-regex-at-point "\\[\\[.*\\]\\]")
     ;; (pen-delete-selected-text)
     ;; (insert (tv result))
@@ -351,6 +351,12 @@ PATH is the sexp to evaluate, as a string."
 (defun pen-follow-v-link (pattern)
   "Run v `pattern'."
   (pen-sps (concat "v " (pen-q pattern))))
+
+(org-add-link-type "w" 'pen-follow-w-link)
+(defun pen-follow-w-link (pattern)
+  "Run w `pattern'."
+  ;; (pen-sps (concat "which " (pen-q pattern)))
+  (tpop (cmd "bash" "-c" (concat ". ~/.profile; PAGER=pen-tpager which " (pen-q pattern) "; pak"))))
 
 (org-add-link-type "ebdb" 'pen-follow-ebdb-link)
 (defun pen-follow-ebdb-link (pattern)

@@ -1,0 +1,5 @@
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempqr3IM2E.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempKRCgekw.txt" "#" "<==" "pen-xt"
+cd /;  "xterm" "-bg" "#000000" "-fg" "#ffffff" "-ls" "-fs" "20" "-fa" "xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20" "-e" ". /root/.xterm-sh-rc; export WINDOWID; cd /; 'newframe.sh' > /tmp/tf_tempv4ogsQ6.txt" "#" "<==" "pen-xt"
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "xterm" "#" "<==" "zsh"

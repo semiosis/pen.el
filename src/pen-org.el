@@ -26,6 +26,12 @@
 ;; TODO Fix it
 ;; (require 'helm-org-ql)
 
+
+(defun org-link-minor-mode-maybe (arg)
+  (interactive)
+  (if (not (derived-mode-p 'vimhelp-mode))
+      (org-link-minor-mode arg)))
+
 (setq org-export-with-broken-links t)
 
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)

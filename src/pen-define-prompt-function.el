@@ -389,6 +389,8 @@
                    (asoc-merge pen-last-prompt-data (list (cons "PEN_PROMPT_PATH" fpath))))
              fpath))
 
+          (final-path-prelog (pen-log-echo (concat "Using path: " final-path)))
+
           ;; TODO Consider overriding model, temperature and lm-command again
           ;; based on this value
           ;; Currently, this is inert.
@@ -407,6 +409,8 @@
                  (sor (pen-var-value-maybe 'engine))
                  (sor ,engine)
                  pen-default-engine)))
+
+          (final-engine-prelog (pen-log-echo (concat "Using engine: " final-engine)))
 
           (final-temperature)
           (final-lm-command)
@@ -806,8 +810,8 @@
                                       ,repeater))
                           final-prompt))
 
-          (var-keyvals (-zip ',vars vals))
-          (var-keyvals-slugged (-zip ',var-slugs vals))
+          (var-keyvals (-zip-pair ',vars vals))
+          (var-keyvals-slugged (-zip-pair ',var-slugs vals))
 
           ;; When it comes to adding consistency, I must add consistency based on partial functions.
           ;; Otherwise, there'd be a single history/training which is prepended to all ifuntions.
@@ -1058,6 +1062,8 @@
                   (pen-var-value-maybe 'lm-command)
                   ,lm-command))))
 
+          (final-lm-command (pen-log-echo (concat "Using lm command: " final-lm-command)))
+
           (final-force-model
            (or
             (pen-var-value-maybe 'force-model)
@@ -1079,6 +1085,8 @@
                     final-model   ;At this stage, could only have been set by force-engine
                     (pen-var-value-maybe 'model)
                     ,model)))))
+
+          (final-model (pen-log-echo (concat "Using model: " final-model)))
 
           (final-frequency-penalty
            (expand-template

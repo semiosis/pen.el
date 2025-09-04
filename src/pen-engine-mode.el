@@ -90,6 +90,10 @@
   :keybinding "g"
   :browser 'lg-eww)
 
+(defvar google-search-url-spec "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s")
+(defun pen-format-search-spec (spec query)
+  (format-spec spec (format-spec-make ?s (url-hexify-string query))))
+
 (defun chrome (url &optional no_xurls force_xurls)
   (interactive (list (read-string-hist "chrome: ")))
   (pen-ns (concat "Chrome: " url))

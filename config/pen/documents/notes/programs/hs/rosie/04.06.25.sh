@@ -1,0 +1,5 @@
+cd /tmp;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /tmp;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /tmp;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.emacs.d/host/pen.el/src;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"
+cd /root/.emacs.d/host/pen.el/scripts/prolog;  "rosie" "grep" "-o" "subs" "net.url_common" "#" "<==" "rosie-urls"

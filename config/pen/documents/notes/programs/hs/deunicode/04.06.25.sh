@@ -1,0 +1,5 @@
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "deunicode" "#" "<==" "pen-c"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "deunicode" "#" "<==" "pen-c"
+cd /usr/local/share/emacs/29.4.50/lisp/progmodes;  "deunicode" "#" "<==" "pen-c"
+cd /root/notes;  "deunicode" "#" "<==" "pen-c"
+cd /root/.pen/documents/notes;  "deunicode" "#" "<==" "pen-c"

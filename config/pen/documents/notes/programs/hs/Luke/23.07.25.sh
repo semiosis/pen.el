@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "12:1" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "13:29-30" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "13:20-30" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "13:20-22" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "13:23-30" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "13:30" "#" "<==" "withopts"
+cd /root/.emacs.d/host/pen.el/src;  "Luke" "21:8" "#" "<==" "zsh"

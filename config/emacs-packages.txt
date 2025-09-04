@@ -2397,4 +2397,5 @@ clipetty
 helm-rhythmbox
 phi-search
 flymake-fennel
+highlight2clipboard
 hl-anything

@@ -1,0 +1,5 @@
+cd /root/notes/ws/fani/17.06.24;  "z" "cplint-17.06.24.pdf"
+cd /root/notes/ws/fani;  "z" "17.06.24/cplint-17.06.24.pdf"
+cd /root/notes/ws/fani;  "z" "17.06.24/cplint-17.06.24.pdf"
+cd /root/.pen/documents/notes/ws/fani;  "z" "cplint-26.07.25.pdf"
+cd /root/.pen/documents/notes/ws/fani;  "z" "cplint-26.07.25.pdf"

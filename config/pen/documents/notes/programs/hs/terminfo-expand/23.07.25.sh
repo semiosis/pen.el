@@ -1,0 +1,6 @@
+cd /root/notes;  "terminfo-expand" "#" "<==" "vim"
+cd /root/notes;  "terminfo-expand" "#" "<==" "vim"
+cd /root/notes;  "terminfo-expand" "#" "<==" "vim"
+cd /root/notes;  "terminfo-expand" "#" "<==" "vim"
+cd /root/.emacs.d/host/pen.el/scripts/ved-scripts;  "terminfo-expand" "#" "<==" "vim"
+cd /root/.emacs.d/host/pen.el/scripts/ved-scripts;  "terminfo-expand" "#" "<==" "vim"

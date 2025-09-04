@@ -51,13 +51,29 @@
 
 (defun egr-thing-at-point (query)
   (interactive (list (read-string-hist "egr (quoted): " (concat (pen-q (pen-thing-at-point)) " "))))
-  (pen-nw (concat "egr " query)))
+  ;; (pen-nw (concat "egr " query))
+  (pen-nw (concat "egr " query))
+  ;; (browse-url query)
+  )
 (add-to-list 'search-functions 'egr-thing-at-point)
+
+(defun ffgr-thing-at-point (query)
+  (interactive (list (read-string-hist "ffgr (quoted): " (concat (pen-q (pen-thing-at-point)) " "))))
+  ;; (pen-nw (concat "ffgr " query))
+  (pen-nw (concat "ffgr " query))
+  ;; (browse-url query)
+  )
+(add-to-list 'search-functions 'ffgr-thing-at-point)
 
 (defun egr-thing-at-point-imediately (query)
   (interactive (list (pen-q (s-replace "\n" " " (pen-thing-at-point)))))
   (egr-thing-at-point query))
 (add-to-list 'search-functions 'egr-thing-at-point-imediately)
+
+(defun ffgr-thing-at-point-imediately (query)
+  (interactive (list (pen-q (s-replace "\n" " " (pen-thing-at-point)))))
+  (ffgr-thing-at-point query))
+(add-to-list 'search-functions 'ffgr-thing-at-point-imediately)
 
 (defun egr-thing-at-point-lang (query)
   (interactive (list (read-string-hist "egr (quoted): "

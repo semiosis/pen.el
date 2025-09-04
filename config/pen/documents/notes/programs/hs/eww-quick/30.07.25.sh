@@ -1,0 +1,7 @@
+cd /root/.pen/documents/notes;  "eww-quick" "https://semiosis.github.io/" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eww-quick" "https://semiosis.github.io/" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eww-quick" "https://semiosis.github.io/" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eww-quick" "https://semiosis.github.io/" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "eww-quick" "https://semiosis.github.io/" "#" "<==" "zsh"
+cd /root/notes;  "eww-quick" "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%22prolog%20build%20knowledge%20base%20inside%20swipl%20repl%22" "#" "<==" "ff"
+cd /root/notes;  "eww-quick" "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%22prolog%20consult%22" "#" "<==" "ff"

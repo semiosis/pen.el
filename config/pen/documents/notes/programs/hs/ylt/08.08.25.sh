@@ -1,0 +1,5 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ylt" "John" "3:14-21" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ylt" "John" "3:32-36" "#" "<==" "withopts"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ylt" "John" "5:24" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ylt" "Num" "32:11" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "ylt" "Romans" "4:13-17" "#" "<==" "zsh"

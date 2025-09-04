@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "I" "John" "4:16" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "I" "Corinthians" "13:4-10" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "I" "Thes" "5:1-6" "#" "<==" "withopts"
+cd /root/.pen/documents/notes;  "I" "Cor" "15:1-4" "#" "<==" "withopts"
+cd /root/notes;  "I" "Corinthians" "15:1-20" "#" "<==" "zsh"
+cd /root/notes;  "I" "Cor" "15:1-4" "#" "<==" "withopts"

@@ -1,0 +1,6 @@
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "https://youtu.be/kFuQ0xw4des?t=382" "#" "<==" "o"
+cd /root/.pen/documents/notes;  "o" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "o" "[[https://www.youtube.com/watch?v=LEMx33nsIyA][youtube.com: The Olympic Blasphemy {@PatristicNectarFilms}]]" "#" "<==" "o"
+cd /root/notes;  "o" "#" "<==" "zsh"
+cd /root/notes;  "o" "https://www.youtube.com/watch?v=CNHQbgRW-OY&ab_channel=TheApologistCut" "#" "<==" "o"

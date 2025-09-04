@@ -1,0 +1,8 @@
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/notes;  "nem" "decorated" "onelined" "zsh" "#" "<==" "bash"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "II" "Cor" "6:14-18" "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Acts" "2:40" "#" "<==" "nod"
+cd /root/.pen/documents/notes;  "nem" "onelined" "decorated" "Matthew" "10:32-38" "#" "<==" "nod"

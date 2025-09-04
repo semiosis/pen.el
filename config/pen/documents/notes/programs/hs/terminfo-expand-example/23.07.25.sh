@@ -1,0 +1,6 @@
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "zsh"
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "zsh"
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "zsh"
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "zsh"
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "zsh"
+cd /root/notes;  "terminfo-expand-example" "#" "<==" "withopts"

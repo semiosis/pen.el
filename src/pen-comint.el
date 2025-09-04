@@ -5,6 +5,11 @@
 ;; (setq comint-intercept-term-commands
 ;;       '("top" "less"))
 
+(require 'ansi-color)
+(setq ansi-color-for-comint-mode t)
+;; Interestingly, making it nil would still present the ansi code unrendered
+;; (setq ansi-color-for-comint-mode nil)
+
 (defun pen-comint-bol ()
   (interactive)
 

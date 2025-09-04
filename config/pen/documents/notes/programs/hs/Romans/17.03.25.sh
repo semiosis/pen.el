@@ -1,0 +1,5 @@
+cd /root/notes;  "Romans" "4:20-25" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "5:1" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "5:9" "#" "<==" "zsh"
+cd /root/notes;  "Romans" "10:10" "#" "<==" "zsh"
+cd /root/.pen/documents/notes;  "Romans" "5:1" "#" "<==" "withopts"

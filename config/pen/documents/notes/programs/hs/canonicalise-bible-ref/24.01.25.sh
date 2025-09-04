@@ -3,3 +3,6 @@ cd /root/.pen/documents/notes;  "canonicalise-bible-ref" "#" "<==" "openbible-ca
 cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
 cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
 cd /root/notes;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el;  "canonicalise-bible-ref" "#" "<==" "pen-ci"
+cd /root/.emacs.d/host/pen.el;  "canonicalise-bible-ref" "#" "<==" "pen-ci"

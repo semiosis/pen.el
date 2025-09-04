@@ -1,0 +1,8 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Leviticus 18:24-25" "#" "<==" "Leviticus"
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 19:4-6" "#" "<==" "Matthew"
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 5:32" "#" "<==" "Matthew"
+cd /root/notes;  "ebible" "-m" "ESV" "Luke 19:39-40" "#" "<==" "Luke"
+cd /root/notes;  "ebible" "-m" "ESV" "Luke 19:38-40" "#" "<==" "Luke"
+cd /root/notes;  "ebible" "-m" "ESV" "Luke 19:37-40" "#" "<==" "Luke"
+cd /root/notes;  "ebible" "-m" "ESV" "John 16:33" "#" "<==" "John"
+cd /root/notes;  "ebible" "-m" "ESV" "I John 5:3-5" "#" "<==" "I"

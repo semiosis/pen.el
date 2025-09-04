@@ -24,7 +24,8 @@ fi
 if test "$#" -gt 0; then
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}
-    TERM="$sn" sh -c "$CMD"
+    # I had problems with cmd-nice-posix while this used sh rather than bash
+    TERM="$sn" bash -c "$CMD"
 else
-    TERM="$sn" sh
+    TERM="$sn" bash
 fi

@@ -74,6 +74,10 @@ if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
     query="($query)"
 fi
 
+if test "$NOEMACS" = "y"; then
+    sn=binfo
+fi
+
 if test "$has_stdout" = y; then
     "$bin" "$query" -o - | pavs
 elif test "$NOEMACS" = y; then

@@ -1022,6 +1022,7 @@ decide whether the selected frame can display that Unicode character."
 (define-key tabulated-list-mode-map (kbd "C-c C-o") 'org-open-at-point)
 (define-key global-map (kbd "H-F") 'run-tlm)
 (define-key pen-map (kbd "H-\\") 'pen-start-tablist)
+(define-key pen-map (kbd "H-|") 'run-tabcmd)
 (define-key arp-tablist-mode-map (kbd "p") 'arp-tablist-ping)
 (define-key arp-tablist-mode-map (kbd "s") 'arp-tablist-ssh)
 (define-key arp-tablist-mode-map (kbd "N") 'arp-tablist-nmap-ports)

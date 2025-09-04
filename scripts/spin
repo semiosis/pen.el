@@ -54,9 +54,11 @@ esac; done
 # 1 is the message and it's usually taken from the first
 # command in the command arguments
 spinner-start "${extraargs[@]}" -m "$message"
+# spinner-start-emacs
 
 "$@"
 ret="$?"
 
 spinner-stop
+# spinner-stop-emacs
 exit "$ret"

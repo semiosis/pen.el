@@ -1,0 +1,7 @@
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "John 12:35" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "John 12:35" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "John 4:34" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "John 4:34" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Eph 5:16" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "Eccl 9:10" "#" "<==" "bash"
+cd /root/notes;  "bible-tpop-lookup" "-c" "-m" "engbsb2020eb" "John 11:9-10" "#" "<==" "bash"

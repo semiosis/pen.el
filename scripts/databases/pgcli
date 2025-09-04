@@ -3,6 +3,9 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-test -f "/usr/local/bin/pgcli" || pyf "pgcli" &>/dev/null
+test -f "/root/.local/bin/pgcli" && : "${bin:="/root/.local/bin/pgcli"}"
+test -f "/usr/local/bin/pgcli" && : "${bin:="/usr/local/bin/pgcli"}"
+ 
+test -f "$bin" || pyf "pgcli" &>/dev/null
 
-/usr/local/bin/pgcli "$@"
+"$bin" "$@"

@@ -1,0 +1,4 @@
+prolog consult
+prolog make fact inside swipl repl
+prolog build knowledge base inside swipl repl
+I Cor 15:35 crossreference

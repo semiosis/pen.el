@@ -1,0 +1,224 @@
+
+penf -u pf-generic-completion-50-tokens/1 "* TODO Regarding extending endless-sky
+- Understand the map
+  - Understand the campaigns
+  - Understand the factions
+  - Understand the story arcs
+  - Understand the how \"hard to accomplish\" acquiring items, information and access should be
+    - And the process
+
+It's a cool project.
+
+** Total remake ideas
+- make it work more like a simulation
+  - with various other NPCs navigating the galaxy too
+
+** Not great ideas
+- NPCs could take and try to complete jobs
+
+** I think the crew member system would really help the game
+
+** Improvement ideas
+- ES"
+
+(pen-single-generation (pf-generic-completion-50-tokens/1 "* TODO Regarding extending endless-sky
+- Understand the map
+  - Understand the campaigns
+  - Understand the factions
+  - Understand the story arcs
+  - Understand the how \"hard to accomplish\" acquiring items, information and access should be
+    - And the process
+
+It's a cool project.
+
+** Total remake ideas
+- make it work more like a simulation
+  - with various other NPCs navigating the galaxy too
+
+** Not great ideas
+- NPCs could take and try to complete jobs
+
+** I think the crew member system would really help the game
+
+** Improvement ideas
+- ES" :no-select-result t))
+
+penf -u pf-generic-completion-50-tokens/1 "test -d \"/tmp/log\" && : \"${logdir:=\"/tmp/log\"}\"
+export logdir
+
+. $PENELD/scripts/utils.sh
+
+: \"${log_name:=\"DEFAULT\"}\"
+
+while [ $# -gt 0 ]; do opt=\"$1\"; case \"$opt\" in
+    \"\") { shift; }; ;;
+    -n) {
+        log_name=\"$2\"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp=\"$logdir/$log_name\""
+
+(pen-single-generation (pf-generic-completion-50-tokens/1 "test -d \"/tmp/log\" && : \"${logdir:=\"/tmp/log\"}\"
+export logdir
+
+. $PENELD/scripts/utils.sh
+
+: \"${log_name:=\"DEFAULT\"}\"
+
+while [ $# -gt 0 ]; do opt=\"$1\"; case \"$opt\" in
+    \"\") { shift; }; ;;
+    -n) {
+        log_name=\"$2\"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fp=\"$logdir/$log_name\"" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "f :: (Ord a) => [a] -> [a]
+f [] = []
+f (x:xs) =
+  let smaller = f [a | a <- xs, a <= x]
+      bigger = f [a | a <- xs, a > x]
+  in  smaller ++ [x] ++ bigger"
+
+(pen-single-generation (pf-guess-function-name/1 "f :: (Ord a) => [a] -> [a]
+f [] = []
+f (x:xs) =
+  let smaller = f [a | a <- xs, a <= x]
+      bigger = f [a | a <- xs, a > x]
+  in  smaller ++ [x] ++ bigger" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 
+
+(pen-single-generation (pf-guess-function-name/1  :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))
+
+penf -u pf-guess-function-name/1 "Multiply two numbers"
+
+(pen-single-generation (pf-guess-function-name/1 "Multiply two numbers" :no-select-result t))

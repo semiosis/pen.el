@@ -1,0 +1,6 @@
+cd /root/.pen/endless-sky/images/star;  "feh" "-B" "black" "/root/.pen/endless-sky/images/star/magnetar+0.jpg" "#" "<==" "run.sh"
+cd /root/.pen/endless-sky/images/star;  "feh" "-B" "checks" "/root/.pen/endless-sky/images/star/a-supergiant.png" "#" "<==" "run.sh"
+cd /root/.pen/endless-sky/images/star;  "feh" "-B" "black" "/root/.pen/endless-sky/images/star/a-supergiant.png" "#" "<==" "run.sh"
+cd /root/.pen/endless-sky/images/star;  "feh" "-B" "black" "/root/.pen/endless-sky/images/star/black-hole-core.png" "#" "<==" "run.sh"
+cd /root/.pen/endless-sky/images/star;  "feh" "-B" "white" "/root/.pen/endless-sky/images/star/black-hole-core.png" "#" "<==" "run.sh"
+cd /root/.pen/endless-sky/images/scene;  "feh" "-B" "black" "/root/.pen/endless-sky/images/scene/engine2.jpg" "#" "<==" "run.sh"

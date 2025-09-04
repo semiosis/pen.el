@@ -20,7 +20,9 @@ mant="${fn%.*}"
 
 sent="$(uuid)"
 
-sessions="$(nvt -pc cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+# sessions="$(nvt -pc cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+# sessions="$(cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+sessions="$(x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
 parent="$(p "$sessions" | sed -n 1p)"
 child="$(p "$sessions" | sed -n 2p)"
 # tmux splitw -t "$child" -v -c "$wd" x -shE "$(cmd cterm v "$fn")" -e Documents -tr "$sent" -i

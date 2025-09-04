@@ -1,0 +1,7 @@
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "Revelation" "of" "John" "3:10-12" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "Revelation" "of" "John" "3:1-5" "#" "<==" "zsh"
+cd /root/.emacs.d/host/pen.el/scripts/babashka/utils;  "Revelation" "of" "John" "2:18-25" "#" "<==" "zsh"
+cd /root/notes;  "Revelation" "of" "John" "21" "#" "<==" "zsh"
+cd /root/notes;  "Revelation" "of" "John" "21:10-11" "#" "<==" "zsh"
+cd /root/notes;  "Revelation" "of" "John" "21:24-27" "#" "<==" "zsh"
+cd /root/notes;  "Revelation" "of" "John" "20:11-15" "#" "<==" "zsh"

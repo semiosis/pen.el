@@ -1,0 +1,6 @@
+cd /root/notes;  "ebible" "-m" "ESV" "Matthew 22:37-40" "#" "<==" "Matthew"
+cd /root/notes;  "ebible" "-m" "ESV" "I Peter 2:24-25" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "I Peter 5:1-3" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "I Peter 4:10" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "I John 4:1-4" "#" "<==" "I"
+cd /root/notes;  "ebible" "-m" "ESV" "I John 4:1-3" "#" "<==" "I"

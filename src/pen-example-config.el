@@ -1235,7 +1235,8 @@
 (pen-truly-selective-binding "S [" (df fi-surround-square-pad (pen-region-pipe "surround '[ ' ' ]'")))
 
 (pen-truly-selective-binding "C" (df spv-ifl-code () (pen-spv (concat "ifl " (buffer-language) " " (pen-selected-text))) (deactivate-mark)))
-(pen-truly-selective-binding "H" 'egr-thing-at-point-imediately)
+;; (pen-truly-selective-binding "H" 'egr-thing-at-point-imediately)
+(pen-truly-selective-binding "H" 'ffgr-thing-at-point-imediately)
 (pen-truly-selective-binding "w" (df spv-wiki () (pen-spv (concat "wiki " (pen-selected-text))) (deactivate-mark)))
 (pen-truly-selective-binding "W" (df spv-wiki () (pen-spv (concat "wiki " (pen-selected-text))) (deactivate-mark)))
 (pen-truly-selective-binding "Y" #'new-buffer-from-selection-detect-language)

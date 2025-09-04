@@ -1,0 +1,5 @@
+cd /root/repos/endless-sky;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/endless-sky/endless-sky" "#" "<==" "pen-gh-curl"
+cd /root/repos/endless-sky;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/endless-sky/endless-sky" "#" "<==" "pen-gh-curl"
+cd /root/repos/endless-sky;  "curl" "-L" "-s" "-k" "https://api.github.com/repos/endless-sky/endless-sky-editor" "#" "<==" "pen-gh-curl"
+cd /root/repos/endless-sky/endless-sky-editor;  "curl" "-s" "https://api.github.com/repos/endless-sky/endless-sky-editor" "#" "<==" "pen-ci"
+cd /root/repos/endless-sky/endless-sky;  "curl" "-s" "https://api.github.com/repos/endless-sky/endless-sky" "#" "<==" "pen-ci"

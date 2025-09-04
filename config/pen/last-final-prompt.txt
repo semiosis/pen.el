@@ -1,9 +1,17 @@
-Glossary of terms.
-###
-Word: "ossified". Topic: "medicine"
-###
-Definition: "Turn into bone or bony tissue."
-###
-Word: "". Topic: "problog"
-###
-Definition: """ refers to<END>
+List of algorithms:
+"""
+Function or algorithm:
+```
+(defun f (n)
+  (if (= n 0) 0
+    (if (= n 1) 1
+      (+ (f (- n 1)) (f (- n 2))))))
+```
+Algorithm name: Generate the fibonacci sequence
+Function name: fib
+"""
+Function or algorithm:
+```
+Multiply two numbers
+```
+Algorithm name: <END>
