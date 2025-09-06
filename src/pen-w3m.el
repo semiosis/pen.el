@@ -8,5 +8,6 @@
 (define-key w3m-mode-map (kbd "<right>") nil)
 (define-key w3m-mode-map (kbd "p") 'w3m-view-previous-page)
 (define-key w3m-mode-map (kbd "n") 'w3m-view-this-url)
+(define-key w3m-mode-map (kbd "w") 'pen-yank-path)
 
 (provide 'pen-w3m)

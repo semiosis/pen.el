@@ -793,6 +793,11 @@ is specified, `:italic' is ignored."
     (set-face-background 'w3m-arrived-anchor fg)
 
     (set-face-background 'w3m-image-anchor "#440000")
+    
+    (set-face-foreground 'w3m-bold "#bbbbbb")
+    (set-face-background 'w3m-bold "#222222")
+    (set-face-foreground 'w3m-italic "#777777")
+    (set-face-background 'w3m-italic 'unspecified)
 
     (require 'button)
     (set-face-foreground 'button fg)
