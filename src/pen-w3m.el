@@ -10,4 +10,9 @@
 (define-key w3m-mode-map (kbd "n") 'w3m-view-this-url)
 (define-key w3m-mode-map (kbd "w") 'pen-yank-path)
 
+;; Need to unbind M-l so that global bindings work
+(define-key w3m-mode-map (kbd "M-l") nil)
+
+;; TODO Add w3m-horizontal-recenter somewhere. It used to be M-l
+
 (provide 'pen-w3m)
