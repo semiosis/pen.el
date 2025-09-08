@@ -78,6 +78,9 @@
         (prolog-mode
          (on org-link-minor-mode))
         
+        (rpl-mode
+         (on org-link-minor-mode))
+        
         (vimrc-mode
          (on org-link-minor-mode))
         

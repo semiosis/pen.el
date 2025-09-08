@@ -1,10 +1,44 @@
 ---- -*- Mode: rpl; -*-                                                                            
-
 -- https://catholic-resources.org/Bible/Biblical_References.htm
+
+-- ocif -E "curl \"https://catholic-resources.org/Bible/Biblical_References.htm\" | elinks-dump" | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
+-- cat $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
+
+
+-- * Have you read the parables of Jesus, such as the famous parable of the Good Samaritan (Luke 10:30-37)?
+-- * The Gospel according to Mark is the first Christian text that uses the word "gospel" or "good news" (1:1).
+-- * The death of Jesus is briefly but powerfully described in the Fourth Gospel: "When Jesus had received the wine, he
+--  said, 'It is finished.' Then he bowed his head and gave up his spirit" (John 19:30).
+-- * Matthew usually uses the phrase "Kingdom of Heaven" rather than "Kingdom of God" (e.g., Matt 3:2; 4:17; 5:3; etc.; but
+--  cf. 6:33; 12:28; 19:24; 21:31, 43).
+-- * The feeding of the 5000 is found in all four canonical Gospels (Mark 6:32-44; par. Matt 14:13-21; Luke 9:10b-17; John
+--  6:1-15).
+-- * The Fourth Gospel begins with the same two words as the LXX Greek version of Genesis (cf. John 1:1 and Gen 1:1).
+
+
+ -- American Abbr.  Biblical Passage  European Abbr.
+ -- John 9  The Gospel according to John, chapter 9  John 9
+ -- John 9, 12  John, chapters 9 and 12 (two chapters only)  John 9; 12
+ -- John 912  John, chapters 9 through 12 (four chaps. total)  John 912
+ -- John 9:12  John, chapter 9, verse 12 (only one verse)  John 9,12
+ -- John 9:12b  John, chapter 9, only the second part of verse 12  John 9,12b
+ -- John 9:1, 12  John, chapter 9, verses 1 and 12 only  John 9,1.12
+ -- John 9:1-12  John, chapter 9, the passage from verse 1 to verse 12  John 9,1-12
+ -- John 9:1-12, 36  John, chapter 9, from verse 1 to verse 12, and verse 36  John 9,1-12.36
+ -- John 9:1; 12:36  John, only the two verses 9:1 and 12:36  John 9,1; 12,36
+ -- John 9:112:36  John, the whole section from 9:1 to 12:36  John 9,112,36
+ -- John 9:1-12; 12:3-6  John, the two passages 9:1-12 and 12:3-6  John 9,1-12; 12,3-6
+ -- John 9:1-3, 6-12; 12:3-6  three passages: John 9:1-2; and 9:6-12; and John 12:3-6  John 9,1-3.6-12; 12,3-6
+ -- John 9:12-13  John, chapter 9, verses 12 and 13 ("12 and following")  John 9,12f
+ -- [ not used; better to  John, chapter 9, verse 12 "and the following verses";  John 9,12ff
+ -- list exact verse #s ]  but how many? the end of the text is not specified!
 
 ----
 ---- bibleverseref.rpl    some rpl patterns for processing text containing bible verse references
 ----
+
+-- (e.g., Matt 3:2; 4:17; 5:3; etc.; but cf. 6:33; 12:28; 19:24; 21:31, 43)
+-- (Mark 6:32-44; par. Matt 14:13-21; Luke 9:10b-17; John 6:1-15)
 
 -- Do this with a subset, for starters
 
@@ -47,23 +81,48 @@ iii_john_verbose_name = "Third John"
 
 iii_john_name = { iii_john_shorter_name / iii_john_short_name / iii_john_long_name/ iii_john_verbose_name }
 
+matt_shorter_name = "Mt"
+matt_short_name = "Matt"
+matt_long_name = "Matthew"
+matt_verbose_name = "Matthew"
+matt_name = { matt_verbose_name / matt_long_name / matt_short_name / matt_shorter_name}
+
+luke_shorter_name = "Lk"
+luke_short_name = "Luk"
+luke_long_name = "Luke"
+luke_verbose_name = "Luke"
+luke_name = { luke_verbose_name / luke_long_name / luke_short_name / luke_shorter_name}
+
 -- | Bounded repetition (untokenized) | `pat{n,m}`     | At least n instances, and matching at most m instances of `pat` |
 chapter_number = { [1-9] [0-9]? }
 
-verse_number = { [1-9] [0-9]{0,2} }
+-- a-z represents the part of the verse. i.e. a is the first part, b, the second part, etc...
+verse_number = { [1-9] [0-9]{0,2} [a-z]? }
 
 -- 3John 1:1-2,5
 
 -- TODO Firstly, I need bible reference examples
 -- Colossians 2:20-23,3:1-6
 
+-- -M M dash
+-- I guess add single dash as well
+long_dash = "—" / "--" / "-"
+comma_separator = ", " / ","
+
 verse_range = { ( verse_number "-" verse_number ) / verse_number }
 verse_set = { ( verse_range "," )+ verse_range }
 
-chapter_verses = { chapter_number ":" verse_set}
+chapter_verses = { chapter_number ":" ( verse_set / verse_range ) }
+multi_chapter_verses = { ( chapter_verses " ;" )+  chapter_verses}
+
+-- Must have no verses
+chapter_range = { ( chapter_number long_dash chapter_number ) / chapter_number }
+chapter_set = { ( chapter_range comma_separator )+ chapter_range }
+
+book_name = { matt_name / luke_name / iii_john_name }
 
 -- With rosie grep, this will match any line with a bibleref in it
-bibleref = { iii_john_name " " chapter_verses }
+bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }
 
 -- With rosie grep, this will only show the bible refs
 verses = findall:bibleref
@@ -85,7 +144,7 @@ exodus_shorter_name = "Ex"
 exodus_short_name = "Exo" "Exod"
 exodus_long_name = "Exodus"
 
-book_name = genesis_shorter_name / genesis_short_name / genesis_shorter_name
+-- book_name = genesis_shorter_name / genesis_short_name / genesis_shorter_name
 
 book_shortername = "Ge"
 book_shortname = "Gen"

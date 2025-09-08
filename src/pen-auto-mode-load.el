@@ -263,6 +263,7 @@
 (add-hook 'pen-lisp-mode-hook #'pen-lisp-mode-autoload)
 (add-hook 'emacs-lisp-mode-hook 'org-link-minor-mode)
 (add-hook 'c-mode-hook 'org-link-minor-mode)
+(add-hook 'rpl-mode-hook 'org-link-minor-mode)
 (add-hook 'bash-ts-mode-hook 'org-link-minor-mode)
 ;; (add-hook 'ebdb-mode-hook 'org-link-minor-mode)
 ;; (remove-hook 'ebdb-mode-hook 'org-link-minor-mode)
