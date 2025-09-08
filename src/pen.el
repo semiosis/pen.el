@@ -2604,6 +2604,7 @@ May use to generate code from comments."
 (require 'pen-picture)
 (require 'pen-magit-margin)
 (require 'pen-vc)
+(require 'pen-rpl)
 (require 'pen-tty)
 (require 'pen-info)
 (require 'pen-lsp-python)
