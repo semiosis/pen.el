@@ -2154,4 +2154,75 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (define-key bible-mode-map (kbd "M-?") 'helm-regex-bible-search)
 (define-key bible-search-mode-map (kbd "M-?") 'helm-regex-bible-search)
 
+(defset bible-mode-book-chapters-visible
+  (mapcar (lambda (tp) (let ((book (car tp))
+                             (chaps (cadr tp)))
+                         (list (concat book " (1-" (str chaps) ")")
+                               chaps)))
+          bible-mode-book-chapters)) 
+
+;; TODO Make it so the number of chapters is visible
+
+(defun bible-mode-select-book()
+  "Queries user to select a new book and chapter for the current `bible-mode' buffer."
+  (interactive)
+  (let* (
+         (chapterData (assoc (completing-read "Book: " bible-mode-book-chapters-visible nil t) bible-mode-book-chapters-visible))
+         (chapterData (list (s-replace-regexp " (.*" "" (nth 0 chapterData))
+                            (nth 1 chapterData)))
+         (bookChapter (bible-mode--get-book-global-chapter (nth 0 chapterData)))
+         (chapter (if bookChapter (string-to-number (completing-read "Chapter: " (bible-mode--list-number-range 1 (nth 1 chapterData)) nil t)))))
+    (if chapter
+        (bible-mode--set-global-chapter (+ bookChapter chapter)))))
+
+(defset bible-mode-book-chapters-visible
+  (mapcar (lambda (tp) (let ((book (car tp))
+                             (chaps (cadr tp)))
+                         (list (concat book " (1-" (str chaps) ")")
+                               chaps)))
+          bible-mode-book-chapters))
+
+;; TODO Make it so the number of verses for each chapter is visible
+
+(defun bible-mode-select-chapter()
+  "Queries user to select a new chapter for the current `bible-mode' buffer."
+  (interactive)
+  (let* (
+         (chapterData (assoc (bible-mode--get-current-book) bible-mode-book-chapters))
+         (bookChapter (bible-mode--get-book-global-chapter (nth 0 chapterData)))
+         (chapter (if bookChapter (string-to-number (completing-read "Chapter: " (bible-mode--list-number-range 1 (nth 1 chapterData)) nil t)))))
+    (if chapter
+        (bible-mode--set-global-chapter (+ bookChapter chapter)))))
+
+
+(defun bible-mode--open-term-greek-tpop (term)
+  "Opens a buffer of the Strong Greek TERM's definition"
+  (let 
+      ((buf (get-buffer-create (concat "*bible-term-greek-" term "*")))
+
+       (content
+        (replace-regexp-in-string (regexp-opt '("(StrongsGreek)")) "" (bible-mode--exec-diatheke term nil nil nil "StrongsGreek"))))
+    (tpop-fit-vim-string content)
+    nil))
+
+;; (defalias 'bible-mode--open-term-greek 'bible-mode--open-term-greek-tpop)
+
+(defun bible-mode--open-term-hebrew-tpop (term)
+  "Opens a buffer of the Strong Hebrew TERM's definition"
+
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (if (>= gparg 4)
+        (bible-mode--open-term-hebrew term)
+
+      (let
+          ((buf (get-buffer-create (concat "*bible-term-hebrew-" term "*")))
+
+           (content
+            (replace-regexp-in-string (regexp-opt '("(StrongsHebrew)")) "" (bible-mode--exec-diatheke term nil nil nil "StrongsHebrew"))))
+        (tpop-fit-vim-string content))))
+  nil)
+
+;; (defalias 'bible-mode--open-term-hebrew 'bible-mode--open-term-hebrew-tpop)
+
 (provide 'pen-bible-mode)
