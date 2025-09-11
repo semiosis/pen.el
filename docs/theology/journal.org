@@ -2238,3 +2238,10 @@ DONE!
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Luke%2021%3A34-36&version=ESV][Luke 21:34-36]]* - But watch yourselves lest your hearts be weighed down with dissipation and drunkenness and cares of this life, and that day come upon you suddenly like a trap. For it will come upon all who dwell on the face of the whole earth. But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man. (ESV)
 #+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Dear Heavenly Father, Almighty God, Jehovah,
+  please comfort Charlie Kirk's family.
+  In Jesus Christ's name I ask,
+  Amen
+#+END_SRC
