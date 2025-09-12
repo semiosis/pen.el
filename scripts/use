@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+opt="$1"
+shift
+case "$opt" in
+    pen-emacsd-*) {
+        export SOCKET="$opt"
+    }
+    ;;
+
+    pen[0-9]*) {
+        opt="$(p "$opt" | sed 's/^pen//')"
+        export SOCKET="pen-emacsd-$opt"
+    }
+    ;;
+
+    *)
+esac
+
+"$@"
