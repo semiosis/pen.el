@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+. $SCRIPTS/lib/hs
+
+rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref

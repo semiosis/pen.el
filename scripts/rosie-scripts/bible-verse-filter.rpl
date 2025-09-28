@@ -399,7 +399,7 @@ jude_name = { jude_verbose_name / jude_long_name / jude_short_name }
 
 revelation_short_name = "Rev" / "Re"
 revelation_long_name = "Revelation"
-revelation_verbose_name = "Revelation of John" / "Book of Revelation"
+revelation_verbose_name = "Revelation of John" / "Book of Revelation" / "Revelation to John"
 revelation_name = { revelation_verbose_name / revelation_long_name / revelation_short_name }
 
 -- | Bounded repetition (untokenized) | `pat{n,m}`     | At least n instances, and matching at most m instances of `pat` |
@@ -431,11 +431,15 @@ chapter_range = { ( chapter_number dash chapter_number ) / chapter_number }
 chapter_set = { ( chapter_range comma_separator )* chapter_range }
 
 ot_book_name = { genesis_name / exodus_name / leviticus_name / numbers_name / deuteronomy_name / joshua_name / judges_name / ruth_name / i_samuel_name / ii_samuel_name / i_kings_name / ii_kings_name / i_chronicles_name / ii_chronicles_name / ezra_name / nehemiah_name / esther_name / job_name / psalms_name / proverbs_name / ecclesiastes_name / songofsolomon_name / isaiah_name / jeremiah_name / lamentations_name / ezekiel_name / daniel_name / hosea_name / joel_name / amos_name / obadiah_name / jonah_name / micah_name / nahum_name / habakkuk_name / zephaniah_name / haggai_name / zechariah_name / malachi_name }
-nt_book_name = { matthew_name / mark_name / luke_name / john_name / acts_name / romans_name / i_corinthians_name / ii_corinthians_name / galatians_name / ephesians_name / philippians_name / colossians_name / i_thessalonians_name / ii_thessalonians_name / i_timothy_name / ii_timothy_name / titus_name / philemon_name / hebrews_name / james_name / i_peter_name / ii_peter_name / i_john_name / ii_john_name / iii_john_name / jude_name / revelation_name }
+-- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
+nt_book_name = { matthew_name / mark_name / luke_name / revelation_name / john_name / acts_name / romans_name / i_corinthians_name / ii_corinthians_name / galatians_name / ephesians_name / philippians_name / colossians_name / i_thessalonians_name / ii_thessalonians_name / i_timothy_name / ii_timothy_name / titus_name / philemon_name / hebrews_name / james_name / i_peter_name / ii_peter_name / i_john_name / ii_john_name / iii_john_name / jude_name }
 book_name = { ot_book_name / nt_book_name }
 
 -- With rosie grep, this will match any line with a bibleref in it
 bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }
+
+ot_bibleref = { ot_book_name " " chapter_verses } / { ot_book_name " " chapter_set }
+nt_bibleref = { nt_book_name " " chapter_verses } / { nt_book_name " " chapter_set }
 
 -- With rosie grep, this will only show the bible refs
 verses = findall:bibleref
