@@ -435,11 +435,18 @@ ot_book_name = { genesis_name / exodus_name / leviticus_name / numbers_name / de
 nt_book_name = { matthew_name / mark_name / luke_name / revelation_name / john_name / acts_name / romans_name / i_corinthians_name / ii_corinthians_name / galatians_name / ephesians_name / philippians_name / colossians_name / i_thessalonians_name / ii_thessalonians_name / i_timothy_name / ii_timothy_name / titus_name / philemon_name / hebrews_name / james_name / i_peter_name / ii_peter_name / i_john_name / ii_john_name / iii_john_name / jude_name }
 book_name = { ot_book_name / nt_book_name }
 
+ot_book_short_name = { genesis_short_name / exodus_short_name / leviticus_short_name / numbers_short_name / deuteronomy_short_name / joshua_short_name / judges_short_name / ruth_short_name / i_samuel_short_name / ii_samuel_short_name / i_kings_short_name / ii_kings_short_name / i_chronicles_short_name / ii_chronicles_short_name / ezra_short_name / nehemiah_short_name / esther_short_name / job_short_name / psalms_short_name / proverbs_short_name / ecclesiastes_short_name / songofsolomon_short_name / isaiah_short_name / jeremiah_short_name / lamentations_short_name / ezekiel_short_name / daniel_short_name / hosea_short_name / joel_short_name / amos_short_name / obadiah_short_name / jonah_short_name / micah_short_name / nahum_short_name / habakkuk_short_name / zephaniah_short_name / haggai_short_name / zechariah_short_name / malachi_short_name }
+-- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
+nt_book_short_name = { matthew_short_name / mark_short_name / luke_short_name / revelation_short_name / john_short_name / acts_short_name / romans_short_name / i_corinthians_short_name / ii_corinthians_short_name / galatians_short_name / ephesians_short_name / philippians_short_name / colossians_short_name / i_thessalonians_short_name / ii_thessalonians_short_name / i_timothy_short_name / ii_timothy_short_name / titus_short_name / philemon_short_name / hebrews_short_name / james_short_name / i_peter_short_name / ii_peter_short_name / i_john_short_name / ii_john_short_name / iii_john_short_name / jude_short_name }
+book_short_name = { ot_book_short_name / nt_book_short_name }
+
 -- With rosie grep, this will match any line with a bibleref in it
 bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }
 
 ot_bibleref = { ot_book_name " " chapter_verses } / { ot_book_name " " chapter_set }
 nt_bibleref = { nt_book_name " " chapter_verses } / { nt_book_name " " chapter_set }
+
+short_bibleref = { book_short_name " " chapter_verses } / { book_short_name " " chapter_set }
 
 -- With rosie grep, this will only show the bible refs
 verses = findall:bibleref
