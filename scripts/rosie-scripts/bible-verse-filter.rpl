@@ -1,5 +1,6 @@
 ---- -*- Mode: rpl; -*-                                                                            
 -- https://catholic-resources.org/Bible/Biblical_References.htm
+-- https://www.logos.com/bible-book-abbreviations
 
 -- ocif -E "curl \"https://catholic-resources.org/Bible/Biblical_References.htm\" | elinks-dump" | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
 -- cat $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
@@ -62,36 +63,344 @@
 
 package bibleverseref
 
-genesis_shorter_name = "Ge" / "Gn"
-genesis_short_name = "Gen"
+-- (xc (list2str (mapcar (lambda (s) (s-replace-regexp " " "_" s))  (mapcar 's-lowercase (mapcar 'car bible-book-map-names)))))
+
+-- Remeber with RPL, I need to match the full-length strings before the abbreviated ones
+
+-- Old Testament
+
+genesis_short_name = "Gen" / "Ge" / "Gn"
 genesis_long_name = "Genesis"
-genesis_verbose_name = { genesis_long_name }
+genesis_verbose_name = "Genesis"
+genesis_name = { genesis_verbose_name / genesis_long_name / genesis_short_name }
 
-genesis_name = { genesis_shorter_name / genesis_short_name / genesis_long_name }
+exodus_short_name = "Exod" / "Exo" / "Ex"
+exodus_long_name = "Exodus"
+exodus_verbose_name = "Exodus"
+exodus_name = { exodus_verbose_name / exodus_long_name / exodus_short_name }
 
-iii_jonah_shorter_name = "Jo"
-iii_jonah_short_name = "Joh"
-iii_jonah_long_name = "Jonah"
-iii_jonah_verbose_name = "Jonah"
+leviticus_short_name = "Lev" / "Le" / "Lv"
+leviticus_long_name = "Leviticus"
+leviticus_verbose_name = "Leviticus"
+leviticus_name = { leviticus_verbose_name / leviticus_long_name / leviticus_short_name }
 
-iii_john_shorter_name = "3Jn" / "3 J" / "3Jn"
-iii_john_short_name = "3Jhn" / "3John"
-iii_john_long_name = "3 John" / "III John" / "3rd John"
-iii_john_verbose_name = "Third John"
+numbers_short_name = "Num" / "Nu" / "Nm" / "Nb"
+numbers_long_name = "Numbers"
+numbers_verbose_name = "Numbers"
+numbers_name = { numbers_verbose_name / numbers_long_name / numbers_short_name }
 
-iii_john_name = { iii_john_shorter_name / iii_john_short_name / iii_john_long_name/ iii_john_verbose_name }
+deuteronomy_short_name = "Deut" / "De" / "Dt"
+deuteronomy_long_name = "Deuteronomy"
+deuteronomy_verbose_name = "Deuteronomy"
+deuteronomy_name = { deuteronomy_verbose_name / deuteronomy_long_name / deuteronomy_short_name }
 
-matt_shorter_name = "Mt"
-matt_short_name = "Matt"
-matt_long_name = "Matthew"
-matt_verbose_name = "Matthew"
-matt_name = { matt_verbose_name / matt_long_name / matt_short_name / matt_shorter_name}
+joshua_short_name = "Josh" / "Jos" / "Jsh"
+joshua_long_name = "Joshua"
+joshua_verbose_name = "Joshua"
+joshua_name = { joshua_verbose_name / joshua_long_name / joshua_short_name }
 
-luke_shorter_name = "Lk"
-luke_short_name = "Luk"
+judges_short_name = "Jdgs" / "Judg" / "Jdg" / "Jg"
+judges_long_name = "Judges"
+judges_verbose_name = "Judges"
+judges_name = { judges_verbose_name / judges_long_name / judges_short_name }
+
+ruth_short_name = "Rth" / "Ru"
+ruth_long_name = "Ruth"
+ruth_verbose_name = "Ruth"
+ruth_name = { ruth_verbose_name / ruth_long_name / ruth_short_name }
+
+i_samuel_short_name = "1 Sam" "1 Sm" "1 Sa" "I Sam" "I Sa" "1Sam" "1Sa" "1S"
+i_samuel_long_name = "I Samuel" "1 Samuel" "First Sam" "1st Sam"
+i_samuel_verbose_name = "1st Samuel" "First Samuel"
+i_samuel_name = { i_samuel_verbose_name / i_samuel_long_name / i_samuel_short_name }
+
+ii_samuel_short_name = "2 Sam" "2 Sm" "2 Sa" "II Sam" "II Sa" "2Sam" "2Sa" "2S"
+ii_samuel_long_name = "II Samuel" "2 Samuel" "Second Sam" "2nd Sam"
+ii_samuel_verbose_name = "2nd Samuel" "Second Samuel"
+ii_samuel_name = { ii_samuel_verbose_name / ii_samuel_long_name / ii_samuel_short_name }
+
+i_kings_short_name = "1 Kgs" / "1 Ki" / "1Kgs" / "1Kin" / "1Ki" / "1K"
+i_kings_long_name = "I Kings" / "1 Kings" /  "First Kgs" / "1st Kgs"
+i_kings_verbose_name = "1st Kings" / "First Kings"
+i_kings_name = { i_kings_verbose_name / i_kings_long_name / i_kings_short_name }
+
+ii_kings_short_name = "2 Kgs" / "2 Ki" / "2Kgs" / "2Kin" / "2Ki" / "2K"
+ii_kings_long_name = "II Kings" / "2 Kings" /  "Second Kgs" / "2nd Kgs"
+ii_kings_verbose_name = "2nd Kings" / "Second Kings"
+ii_kings_name = { ii_kings_verbose_name / ii_kings_long_name / ii_kings_short_name }
+
+i_chronicles_short_name = "1 Chr" "1 Ch" "1Chron" "1Chr" "I Chr" "I Ch"
+i_chronicles_long_name = "I Chronicles" "1 Chronicles" "1 Chron" "I Chron" "1st Chron" "First Chron"
+i_chronicles_verbose_name = "1st Chronicles" "First Chronicles" "1st Chronicles" 
+i_chronicles_name = { i_chronicles_verbose_name / i_chronicles_long_name / i_chronicles_short_name }
+
+ii_chronicles_short_name = "2 Chr" "2 Ch" "2Chron" "2Chr" "II Chr" "II Ch"
+ii_chronicles_long_name = "II Chronicles" "2 Chronicles" "2 Chron" "II Chron" "2nd Chron" "Second Chron"
+ii_chronicles_verbose_name = "2nd Chronicles" "Second Chronicles" "2nd Chronicles" 
+ii_chronicles_name = { ii_chronicles_verbose_name / ii_chronicles_long_name / ii_chronicles_short_name }
+
+ezra_short_name = "Ezr" / "Ez"
+ezra_long_name = "Ezra"
+ezra_verbose_name = "Ezra"
+ezra_name = { ezra_verbose_name / ezra_long_name / ezra_short_name }
+
+nehemiah_short_name = "Neh" / "Ne"
+nehemiah_long_name = "Nehemiah"
+nehemiah_verbose_name = "Nehemiah"
+nehemiah_name = { nehemiah_verbose_name / nehemiah_long_name / nehemiah_short_name }
+
+esther_short_name = "Esth" / "Est" / "Es"
+esther_long_name = "Esther"
+esther_verbose_name = "Esther"
+esther_name = { esther_verbose_name / esther_long_name / esther_short_name }
+
+job_short_name = "Jb"
+job_long_name = "Job"
+job_verbose_name = "Job"
+job_name = { job_verbose_name / job_long_name / job_short_name }
+
+psalms_short_name = "Pslm" / "Psa" / "Psm" / "Pss" / "Ps"
+psalms_long_name = "Psalms" / "psalm" / "Psalm"
+psalms_verbose_name = "Psalms"
+psalms_name = { psalms_verbose_name / psalms_long_name / psalms_short_name }
+
+proverbs_short_name = "Prov" / "Pro" / "Prv" / "Pr"
+proverbs_long_name = "Proverbs"
+proverbs_verbose_name = "Proverbs"
+proverbs_name = { proverbs_verbose_name / proverbs_long_name / proverbs_short_name }
+
+ecclesiastes_short_name = "Eccles" / "Eccle" / "Eccl" / "Ecc" / "Ec"  / "Qoh"
+ecclesiastes_long_name = "Ecclesiastes"
+ecclesiastes_verbose_name = "Ecclesiastes"
+ecclesiastes_name = { ecclesiastes_verbose_name / ecclesiastes_long_name / ecclesiastes_short_name }
+
+songofsolomon_short_name = "Song" / "SOS" / "So" / "Cant"
+songofsolomon_long_name = "Song of Solomon" / "Song of Songs" / "Canticles"
+songofsolomon_verbose_name = "Song of Solomon" / "Canticle of Canticles"
+songofsolomon_name = { songofsolomon_verbose_name / songofsolomon_long_name / songofsolomon_short_name }
+
+isaiah_short_name = "Isa" / "Is"
+isaiah_long_name = "Isaiah"
+isaiah_verbose_name = "Isaiah"
+isaiah_name = { isaiah_verbose_name / isaiah_long_name / isaiah_short_name }
+
+jeremiah_short_name = "Jer" / "Je" / "Jr"
+jeremiah_long_name = "Jeremiah"
+jeremiah_verbose_name = "Jeremiah"
+jeremiah_name = { jeremiah_verbose_name / jeremiah_long_name / jeremiah_short_name }
+
+lamentations_short_name = "Lam" / "La"
+lamentations_long_name = "Lamentations"
+lamentations_verbose_name = "Lamentations"
+lamentations_name = { lamentations_verbose_name / lamentations_long_name / lamentations_short_name }
+
+ezekiel_short_name = "Ezek" / "Eze" / "Ezk"
+ezekiel_long_name = "Ezekiel"
+ezekiel_verbose_name = "Ezekiel"
+ezekiel_name = { ezekiel_verbose_name / ezekiel_long_name / ezekiel_short_name }
+
+daniel_short_name = "Dan" / "Da" / "Dn"
+daniel_long_name = "Daniel"
+daniel_verbose_name = "Daniel"
+daniel_name = { daniel_verbose_name / daniel_long_name / daniel_short_name }
+
+hosea_short_name = "Hos" / "Ho"
+hosea_long_name = "Hosea"
+hosea_verbose_name = "Hosea"
+hosea_name = { hosea_verbose_name / hosea_long_name / hosea_short_name }
+
+joel_short_name = "Jl"
+joel_long_name = "Joel"
+joel_verbose_name = "Joel"
+joel_name = { joel_verbose_name / joel_long_name / joel_short_name }
+
+amos_short_name = "Am"
+amos_long_name = "Amos"
+amos_verbose_name = "Amos"
+amos_name = { amos_verbose_name / amos_long_name / amos_short_name }
+
+obadiah_short_name = "Obad" / "Ob"
+obadiah_long_name = "Obadiah"
+obadiah_verbose_name = "Obadiah"
+obadiah_name = { obadiah_verbose_name / obadiah_long_name / obadiah_short_name }
+
+-- "Jo" is not short for Jonah. Also "Jo" is not used for John, but it is used for IJohn
+jonah_short_name = "Jnh" / "Jon"
+jonah_long_name = "Jonah"
+jonah_verbose_name = "Jonah"
+jonah_name = { jonah_verbose_name / jonah_long_name / jonah_short_name }
+
+micah_short_name = "Mic" / "Mc"
+micah_long_name = "Micah"
+micah_verbose_name = "Micah"
+micah_name = { micah_verbose_name / micah_long_name / micah_short_name }
+
+nahum_short_name = "Nah" / "Na"
+nahum_long_name = "Nahum"
+nahum_verbose_name = "Nahum"
+nahum_name = { nahum_verbose_name / nahum_long_name / nahum_short_name }
+
+habakkuk_short_name = "Nah" / "Na"
+habakkuk_long_name = "Habakkuk"
+habakkuk_verbose_name = "Habakkuk"
+habakkuk_name = { habakkuk_verbose_name / habakkuk_long_name / habakkuk_short_name }
+
+zephaniah_short_name = "Zeph" / "Zep" / "Zp"
+zephaniah_long_name = "Zephaniah"
+zephaniah_verbose_name = "Zephaniah"
+zephaniah_name = { zephaniah_verbose_name / zephaniah_long_name / zephaniah_short_name }
+
+haggai_short_name = "Hag" / "Hg"
+haggai_long_name = "Haggai"
+haggai_verbose_name = "Haggai"
+haggai_name = { haggai_verbose_name / haggai_long_name / haggai_short_name }
+
+zechariah_short_name = "Zech" / "Zec" / "Zc"
+zechariah_long_name = "Zechariah"
+zechariah_verbose_name = "Zechariah"
+zechariah_name = { zechariah_verbose_name / zechariah_long_name / zechariah_short_name }
+
+malachi_short_name = "Mal" / "Ml"
+malachi_long_name = "Malachi"
+malachi_verbose_name = "Malachi"
+malachi_name = { malachi_verbose_name / malachi_long_name / malachi_short_name }
+
+-- New Testament
+
+matthew_short_name = "Matt" / "Mt"
+matthew_long_name = "Matthew"
+matthew_verbose_name = "Matthew"
+matthew_name = { matthew_verbose_name / matthew_long_name / matthew_short_name }
+
+mark_short_name = "Mrk" / "Mar" / "Mk" / "Mr"
+mark_long_name = "Mark"
+mark_verbose_name = "Mark"
+mark_name = { mark_verbose_name / mark_long_name / mark_short_name }
+
+luke_short_name = "Luk" / "Lk"
 luke_long_name = "Luke"
 luke_verbose_name = "Luke"
-luke_name = { luke_verbose_name / luke_long_name / luke_short_name / luke_shorter_name}
+luke_name = { luke_verbose_name / luke_long_name / luke_short_name }
+
+john_short_name = "Joh" / "Jhn" / "Jn"
+john_long_name = "John"
+john_verbose_name = "John"
+john_name = { john_verbose_name / john_long_name / john_short_name }
+
+acts_short_name = "Act" / "Ac"
+acts_long_name = "Acts"
+acts_verbose_name = "Acts"
+acts_name = { acts_verbose_name / acts_long_name / acts_short_name }
+
+romans_short_name = "Rom" / "Ro" / "Rm"
+romans_long_name = "Romans"
+romans_verbose_name = "Romans"
+romans_name = { romans_verbose_name / romans_long_name / romans_short_name }
+
+i_corinthians_short_name = "1 Cor" / "1 Co" / "I Cor" / "I Co" / "1Cor" / "1Co"
+i_corinthians_long_name = "1Corinthians" / "I Corinthians" "1 Corinthians"
+i_corinthians_verbose_name = "1st Corinthians" / "First Corinthians"
+i_corinthians_name = { i_corinthians_verbose_name / i_corinthians_long_name / i_corinthians_short_name }
+
+ii_corinthians_short_name = "2 Cor" / "2 Co" / "II Cor" / "II Co" / "2Cor" / "2Co"
+ii_corinthians_long_name = "2Corinthians" / "II Corinthians" "2 Corinthians"
+ii_corinthians_verbose_name = "2nd Corinthians" / "First Corinthians"
+ii_corinthians_name = { ii_corinthians_verbose_name / ii_corinthians_long_name / ii_corinthians_short_name }
+
+galatians_short_name = "Gal" / "Ga"
+galatians_long_name = "Galatians"
+galatians_verbose_name = "Galatians"
+galatians_name = { galatians_verbose_name / galatians_long_name / galatians_short_name }
+
+ephesians_short_name = "Ephes" / "Eph"
+ephesians_long_name = "Ephesians"
+ephesians_verbose_name = "Ephesians"
+ephesians_name = { ephesians_verbose_name / ephesians_long_name / ephesians_short_name }
+
+philippians_short_name = "Phil" / "Php" / "Pp"
+philippians_long_name = "Philippians"
+philippians_verbose_name = "Philippians"
+philippians_name = { philippians_verbose_name / philippians_long_name / philippians_short_name }
+
+colossians_short_name = "Col" / "Co"
+colossians_long_name = "Colossians"
+colossians_verbose_name = "Colossians"
+colossians_name = { colossians_verbose_name / colossians_long_name / colossians_short_name }
+
+i_thessalonians_short_name = "1 Thess" / "1 Thes" / "1 Th" / "I Thess" / "I Thes" / "I Th" / "1Thess" / "1Thes" / "1Th"
+i_thessalonians_long_name = "I Thessalonians" / "1 Thessalonians" / "1Thessalonians" / "1st Thess" / "First Thess"
+i_thessalonians_verbose_name = "1st Thessalonians" / "First Thessalonians"
+i_thessalonians_name = { i_thessalonians_verbose_name / i_thessalonians_long_name / i_thessalonians_short_name }
+
+ii_thessalonians_short_name = "2 Thess" / "2 Thes" / "2 Th" / "II Thess" / "II Thes" / "II Th" / "2Thess" / "2Thes" / "2Th"
+ii_thessalonians_long_name = "II Thessalonians" / "2 Thessalonians" / "2Thessalonians" / "2nd Thess" / "First Thess"
+ii_thessalonians_verbose_name = "2nd Thessalonians" / "First Thessalonians"
+ii_thessalonians_name = { ii_thessalonians_verbose_name / ii_thessalonians_long_name / ii_thessalonians_short_name }
+
+i_timothy_short_name = "1 Tim" / "1 Ti" / "I Tim" / "I Ti" / "1Timothy" / "1Tim" / "1Ti"
+i_timothy_long_name = "I Timothy" / "1 Timothy" / "1Timothy" "1st Tim"
+i_timothy_verbose_name = "1st Timothy" / "First Timothy"
+i_timothy_name = { i_timothy_verbose_name / i_timothy_long_name / i_timothy_short_name }
+
+ii_timothy_short_name = "2 Tim" / "2 Ti" / "II Tim" / "II Ti" / "2Timothy" / "2Tim" / "2Ti"
+ii_timothy_long_name = "II Timothy" / "2 Timothy" / "2Timothy" "2nd Tim"
+ii_timothy_verbose_name = "2nd Timothy" / "Second Timothy"
+ii_timothy_name = { ii_timothy_verbose_name / ii_timothy_long_name / ii_timothy_short_name }
+
+titus_short_name = "Tit"
+titus_long_name = "Titus"
+titus_verbose_name = "Titus"
+titus_name = { titus_verbose_name / titus_long_name / titus_short_name }
+
+philemon_short_name = "Phlm" "Phm" "Pm"
+philemon_long_name = "Philem"
+philemon_verbose_name = "Philemon"
+philemon_name = { philemon_verbose_name / philemon_long_name / philemon_short_name }
+
+hebrews_short_name = "Heb"
+hebrews_long_name = "Hebrews"
+hebrews_verbose_name = "Hebrews"
+hebrews_name = { hebrews_verbose_name / hebrews_long_name / hebrews_short_name }
+
+james_short_name = "Jas" / "Jm"
+james_long_name = "James"
+james_verbose_name = "James"
+james_name = { james_verbose_name / james_long_name / james_short_name }
+
+i_peter_short_name = "1 Pet" / "1 Pe" / "1 Pt" / "1 P" / "I Pet" / "I Pt" / "I Pe" / "1Pet" / "1Pe" / "1Pt" / "1P"
+i_peter_long_name = "I Peter" / "1 Peter" / "1Peter" "1st Pet"
+i_peter_verbose_name = "1st Peter" / "First Peter"
+i_peter_name = { i_peter_verbose_name / i_peter_long_name / i_peter_short_name }
+
+ii_peter_short_name = "2 Pet" / "2 Pe" / "2 Pt" / "2 P" / "II Pet" / "II Pt" / "II Pe" / "2Pet" / "2Pe" / "2Pt" / "2P"
+ii_peter_long_name = "II Peter" / "2 Peter" / "2Peter" "2nd Pet"
+ii_peter_verbose_name = "2nd Peter" / "Second Peter"
+ii_peter_name = { ii_peter_verbose_name / ii_peter_long_name / ii_peter_short_name }
+
+i_john_short_name = "1 Jhn" / "1 Jn" / "1 J" / "1Joh" / "1Jn" / "1Jo"
+i_john_long_name = "I John" / "1 John" / "1John"
+i_john_verbose_name = "1st John" / "First John"
+i_john_name = { i_john_verbose_name / i_john_long_name / i_john_short_name }
+
+ii_john_short_name = "2 Jhn" / "2 Jn" / "2 J" / "2Joh" / "2Jn" / "2Jo"
+ii_john_long_name = "II John" / "2 John" / "2John"
+ii_john_verbose_name = "2nd John" / "Second John"
+ii_john_name = { ii_john_verbose_name / ii_john_long_name / ii_john_short_name }
+
+iii_john_short_name = "3 Jhn" / "3 Jn" / "3 J" / "3Joh" / "3Jn" / "3Jo"
+iii_john_long_name = "III John" / "3 John" / "3John"
+iii_john_verbose_name = "3nd John" / "Third John"
+iii_john_name = { iii_john_verbose_name / iii_john_long_name / iii_john_short_name }
+
+jude_short_name = "Jud" / "Jd"
+jude_long_name = "Jude"
+jude_verbose_name = "Jude"
+jude_name = { jude_verbose_name / jude_long_name / jude_short_name }
+
+revelation_short_name = "Rev" / "Re"
+revelation_long_name = "Revelation"
+revelation_verbose_name = "Revelation of John" / "Book of Revelation"
+revelation_name = { revelation_verbose_name / revelation_long_name / revelation_short_name }
 
 -- | Bounded repetition (untokenized) | `pat{n,m}`     | At least n instances, and matching at most m instances of `pat` |
 chapter_number = { [1-9] [0-9]? }
@@ -106,8 +415,10 @@ verse_number = { [1-9] [0-9]{0,2} [a-z]? }
 
 -- -M M dash
 -- I guess add single dash as well
-long_dash = "—" / "--" / "-"
+dash = "—" / "--" / "–" / "-"
 comma_separator = ", " / ","
+
+-- I should try to follow the guidelines for which dash to use when generating references, though
 
 verse_range = { ( verse_number "-" verse_number ) / verse_number }
 verse_set = { ( verse_range "," )+ verse_range }
@@ -116,507 +427,15 @@ chapter_verses = { chapter_number ":" ( verse_set / verse_range ) }
 multi_chapter_verses = { ( chapter_verses " ;" )+  chapter_verses}
 
 -- Must have no verses
-chapter_range = { ( chapter_number long_dash chapter_number ) / chapter_number }
-chapter_set = { ( chapter_range comma_separator )+ chapter_range }
+chapter_range = { ( chapter_number dash chapter_number ) / chapter_number }
+chapter_set = { ( chapter_range comma_separator )* chapter_range }
 
-book_name = { matt_name / luke_name / iii_john_name }
+ot_book_name = { genesis_name / exodus_name / leviticus_name / numbers_name / deuteronomy_name / joshua_name / judges_name / ruth_name / i_samuel_name / ii_samuel_name / i_kings_name / ii_kings_name / i_chronicles_name / ii_chronicles_name / ezra_name / nehemiah_name / esther_name / job_name / psalms_name / proverbs_name / ecclesiastes_name / songofsolomon_name / isaiah_name / jeremiah_name / lamentations_name / ezekiel_name / daniel_name / hosea_name / joel_name / amos_name / obadiah_name / jonah_name / micah_name / nahum_name / habakkuk_name / zephaniah_name / haggai_name / zechariah_name / malachi_name }
+nt_book_name = { matthew_name / mark_name / luke_name / john_name / acts_name / romans_name / i_corinthians_name / ii_corinthians_name / galatians_name / ephesians_name / philippians_name / colossians_name / i_thessalonians_name / ii_thessalonians_name / i_timothy_name / ii_timothy_name / titus_name / philemon_name / hebrews_name / james_name / i_peter_name / ii_peter_name / i_john_name / ii_john_name / iii_john_name / jude_name / revelation_name }
+book_name = { ot_book_name / nt_book_name }
 
 -- With rosie grep, this will match any line with a bibleref in it
 bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }
 
 -- With rosie grep, this will only show the bible refs
 verses = findall:bibleref
-
--- III John
--- 3 John
--- 3 Jhn
--- 3 Jn
--- 3 J
--- 3John
--- 3Jhn
--- 3Joh
--- 3Jn
--- 3Jo
--- 3rd John
--- Third John
-
-exodus_shorter_name = "Ex"
-exodus_short_name = "Exo" "Exod"
-exodus_long_name = "Exodus"
-
--- book_name = genesis_shorter_name / genesis_short_name / genesis_shorter_name
-
-book_shortername = "Ge"
-book_shortname = "Gen"
-
-book_longname = "Genesis" /
-    "Exodus" /
-    "Leviticus" /
-    "Numbers" /
-    "Deuteronomy" /
-    "Joshua" /
-    "Judges" /
-    "Ruth" /
-    "I Samuel" /
-    "II Samuel" /
-    "I Kings" /
-    "II Kings" /
-    "I Chronicles" /
-    "II Chronicles" /
-    "Ezra" /
-    "Nehemiah" /
-    "Esther" /
-    "Job" /
-    "Psalms" /
-    "Proverbs" /
-    "Ecclesiastes" /
-    "Song of Solomon" /
-    "Isaiah" /
-    "Jeremiah" /
-    "Lamentations" /
-    "Ezekiel" /
-    "Daniel" /
-    "Hosea" /
-    "Joel" /
-    "Amos" /
-    "Obadiah" /
-    "Jonah" /
-    "Micah" /
-    "Nahum" /
-    "Habakkuk" /
-    "Zephaniah" /
-    "Haggai" /
-    "Zechariah" /
-    "Malachi" /
-    "Matthew" /
-    "Mark" /
-    "Luke" /
-    "John" /
-    "Acts" /
-    "Romans" /
-    "I Corinthians" /
-    "II Corinthians" /
-    "Galatians" /
-    "Ephesians" /
-    "Philippians" /
-    "Colossians" /
-    "I Thessalonians" /
-    "II Thessalonians" /
-    "I Timothy" /
-    "II Timothy" /
-    "Titus" /
-    "Philemon" /
-    "Hebrews" /
-    "James" /
-    "I Peter" /
-    "II Peter" /
-    "I John" /
-    "II John" /
-    "III John" /
-    "Jude" /
-    "Revelation of John"
-
--- Genesis
--- Gen
--- Ge
--- Gn
--- Exodus
--- Ex
--- Exod
--- Exo
--- Leviticus
--- Lev
--- Le
--- Lv
--- Numbers
--- Num
--- Nu
--- Nm
--- Nb
--- Deuteronomy
--- Deut
--- De
--- Dt
--- Joshua
--- Josh
--- Jos
--- Jsh
--- Judges
--- Judg
--- Jdg
--- Jg
--- Jdgs
--- Ruth
--- Rth
--- Ru
--- I Samuel
--- 1 Samuel
--- 1 Sam
--- 1 Sm
--- 1 Sa
--- I Sam
--- I Sa
--- 1Sam
--- 1Sa
--- 1S
--- 1st Samuel
--- 1st Sam
--- First Samuel
--- First Sam
--- II Samuel
--- 2 Samuel
--- 2 Sam
--- 2 Sm
--- 2 Sa
--- II Sam
--- II Sa
--- 2Sam
--- 2Sa
--- 2S
--- 2nd Samuel
--- 2nd Sam
--- I Kings
--- 1 Kings
--- 1 Kgs
--- 1 Ki
--- 1Kgs
--- 1Kin
--- 1Ki
--- 1K
--- 1st Kings
--- 1st Kgs
--- First Kings
--- First Kgs
--- II Kings
--- 2 Kings
--- 2 Kgs
--- 2 Ki
--- 2Kgs
--- 2Kin
--- 2Ki
--- 2K
--- 2nd Kings
--- 2nd Kgs
--- Second Kings
--- Second Kgs
--- I Chronicles
--- 1 Chronicles
--- 1 Chron
--- 1 Chr
--- 1 Ch
--- 1Chron
--- 1Chr
--- I Chron
--- I Chr
--- I Ch
--- 1st Chronicles
--- 1st Chron
--- First Chronicles
--- First Chron
--- II Chronicles
--- 2 Chronicles
--- 2 Chron
--- 2 Chr
--- 2 Ch
--- 2Chron
--- 2Chr
--- II Chron
--- II Chr
--- II Ch
--- 2nd Chronicles
--- 2nd Chron
--- Second Chronicles
--- Second Chron
--- Ezra
--- Ezr
--- Ez
--- Nehemiah
--- Neh
--- Ne
--- Esther
--- Est
--- Esth
--- Es
--- Job
--- Jb
--- Psalms
--- Ps
--- Psalm
--- Pslm
--- Psa
--- Psm
--- Pss
--- Proverbs
--- Prov
--- Pro
--- Prv
--- Pr
--- Ecclesiastes
--- Eccles
--- Eccle
--- Ecc
--- Ec
--- Qoh
--- Song of Solomon
--- Song
--- Song of Songs
--- SOS
--- So
--- Canticle of Canticles
--- Canticles
--- Cant
--- Isaiah
--- Isa
--- Is
--- Jeremiah
--- Je
--- Jr
--- Lamentations
--- Lam
--- La
--- Ezekiel
--- Ezek
--- Eze
--- Ezk
--- Daniel
--- Dan
--- Da
--- Dn
--- Hosea
--- Hos
--- Ho
--- Joel
--- Jl
--- Amos
--- Am
--- Obadiah
--- Obad
--- Ob
--- Jonah
--- Jnh
--- Jon
--- Micah
--- Mic
--- Mc
--- Nahum
--- Nah
--- Na
--- Habakkuk
--- Hab
--- Hb
--- Zephaniah
--- Zeph
--- Zep
--- Zp
--- Haggai
--- Hag
--- Hg
--- Zechariah
--- Zech
--- Zec
--- Zc
--- Malachi
--- Mal
--- Ml
--- Matthew
--- Matt
--- Mt
--- Mark
--- Mrk
--- Mar
--- Mk
--- Mr
--- Luke
--- Luk
--- Lk
--- John
--- Joh
--- Jhn
--- Jn
--- Acts
--- Act
--- Ac
--- Romans
--- Rom
--- Ro
--- Rm
--- I Corinthians
--- 1 Corinthians
--- 1 Cor
--- 1 Co
--- I Cor
--- I Co
--- 1Cor
--- 1Co
--- 1Corinthians
--- 1st Corinthians
--- First Corinthians
--- II Corinthians
--- 2 Corinthians
--- 2 Cor
--- 2 Co
--- II Cor
--- II Co
--- 2Cor
--- 2Co
--- 2Corinthians
--- 2nd Corinthians
--- Second Corinthians
--- Galatians
--- Gal
--- Ga
--- Ephesians
--- Eph
--- Ephes
--- Philippians
--- Phil
--- Php
--- Pp
--- Colossians
--- Col
--- Co
--- I Thessalonians
--- 1 Thess
--- 1 Thes
--- 1 Th
--- 1 Thessalonians
--- I Thess
--- I Thes
--- I Th
--- 1Thessalonians
--- 1Thess
--- 1Thes
--- 1Th
--- 1st Thessalonians
--- 1st Thess
--- First Thessalonians
--- First Thess
--- II Thessalonians
--- 2 Thess
--- 2 Thes
--- 2 Th
--- 2 Thessalonians
--- II Thess
--- II Thes
--- II Th
--- 2Thessalonians
--- 2Thess
--- 2Thes
--- 2Th
--- 2nd Thessalonians
--- 2nd Thess
--- Second Thessalonians
--- Second Thess
--- I Timothy
--- 1 Timothy
--- 1 Tim
--- 1 Ti
--- I Tim
--- I Ti
--- 1Timothy
--- 1Tim
--- 1Ti
--- 1st Timothy
--- 1st Tim
--- First Timothy
--- First Time
--- II Timothy
--- 2 Timothy
--- 2 Tim
--- 2 Ti
--- II Tim
--- II Ti
--- 2Timothy
--- 2Tim
--- 2Ti
--- 2nd Timothy
--- 2nd Tim
--- Second Timothy
--- Second Time
--- Titus
--- Tit
--- ti
--- Philemon
--- Philem
--- Phm
--- Pm
--- Hebrews
--- Heb
--- James
--- Jas
--- Jm
--- I Peter
--- 1 Peter
--- 1 Pet
--- 1 Pe
--- 1 Pt
--- 1 P
--- I Pet
--- I Pt
--- I Pe
--- 1Peter
--- 1Pet
--- 1Pe
--- 1Pt
--- 1P
--- 1st Peter
--- First Peter
--- II Peter
--- 2 Peter
--- 2 Pet
--- 2 Pe
--- 2 Pt
--- 2 P
--- II Pet
--- II Pt
--- II Pe
--- 2Peter
--- 2Pet
--- 2Pe
--- 2Pt
--- 2P
--- 2nd Peter
--- Second Peter
--- I John
--- 1 John
--- 1 Jhn
--- 1 Jn
--- 1 J
--- 1John
--- 1Jhn
--- 1Joh
--- 1Jn
--- 1Jo
--- 1st John
--- First John
--- II John
--- 2 John
--- 2 Jhn
--- 2 Jn
--- 2 J
--- 2John
--- 2Jhn
--- 2Joh
--- 2Jn
--- 2Jo
--- 2nd John
--- Second John
--- III John
--- 3 John
--- 3 Jhn
--- 3 Jn
--- 3 J
--- 3John
--- 3Jhn
--- 3Joh
--- 3Jn
--- 3Jo
--- 3rd John
--- Third John
--- Jude
--- Jud
--- Jd
--- Revelation of John
--- Revelation
--- Rev
--- Re
