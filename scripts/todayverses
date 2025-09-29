@@ -1,0 +1,85 @@
+#!/bin/bash
+export TTY
+
+dir=/root/.pen/documents/notes/programs/hs/ebible/
+
+sn="$(basename -- "$0")"
+
+mode=day
+case "$sn" in
+    weekfile) {
+        mode=week
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cd) {
+        dir="$2"
+        full_path=y
+        shift
+        shift
+    }
+    ;;
+
+    -w) {
+        mode=week
+        shift
+    }
+    ;;
+
+    -P) {
+        full_path=y
+        shift
+    }
+    ;;
+
+    -nem) {
+        NOEMACS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+case "$mode" in
+    week) {
+        fp="`date +%Y`-week-`date-week`.sh"
+    }
+    ;;
+
+    day|*) {
+        fp="`date +%d.%m.%y`.sh"
+    }
+    ;;
+esac
+
+if test "$full_path" = "y"; then
+    : "${dir:="$(pwd)"}"
+    fp="$dir/$fp"
+fi
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+editor() {
+    if test "$NOEMACS" = "y"; then
+        vs "$@"
+    else
+        sp "$@"
+    fi
+}
+
+cd "$dir"
+
+if is_tty; then
+    ns +todayfile "$fp"
+
+    touch "$fp"
+    editor "$fp"
+else
+    echo "$fp"
+fi

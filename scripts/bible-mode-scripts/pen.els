@@ -251,6 +251,31 @@
 (defun list-bible-book-titles-lines ()
   (pen-list2str (-flatten bible-book-map-names)))
 
+(defun pen-eval-string (string)
+  "Evaluate elisp code stored in a string."
+  (eval (car (read-from-string (format "(progn %s)" string)))))
+
+(defun listify-string (s)
+  (pen-eval-string
+   (concat
+    "'("
+    s
+    ")")))
+
+(defun get-haystacks-and-findstrs-from-rosie-grep-sexp (s)
+  (let* ((sexps (if (stringp s)
+                    (listify-string s)
+                  s))
+         (sexps
+          (mapcar (lambda (e)
+                    (let ((haystack
+                           (cadddr e))
+                          (findstr
+                           (cadddr (car (cddddr e)))))
+                      (list haystack findstr)))
+                  sexps)))
+    (pen-list2str (-flatten sexps))))
+
 (defalias 'pps 'pp-to-string)
 
 (defun string-empty-or-nil-p (s)

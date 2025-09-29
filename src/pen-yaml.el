@@ -41,8 +41,11 @@
                (major-mode-p 'yaml-ts-mode))
            ;; (f-file-p (buffer-file-name))
            )
-      (let ((key (fz (pen-sn "yq . | jq-showschema-keys" (buffer-string))
-                     nil nil "Key: ")))
+      (let* ((data (buffer-string))
+             (keys (str2list (pen-sn "yq . | jq-showschema-keys" data)))
+             (values (str2list (pen-sn "yq . | jq-showschema-keys" (buffer-string))))
+             (key (fz keys
+                      nil nil "Key: ")))
         (if (sor key)
             (let ((s (pen-snc (pen-cmd "yq" "-r" (concat key " // empty")) (buffer-string))))
               (with-current-buffer

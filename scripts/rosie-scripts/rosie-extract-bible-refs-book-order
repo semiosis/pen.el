@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+input_fp="$(cat | rosie-bibleverseref-grep "( bibleverseref.bibleref )" | tf txt)"
+
+# cat "$input_fp" | rosie-bibleverseref-grep bibleverseref.bibleref
+
+# Hmm... keep in mind that when it extracts "John" references, it needs to
+# make sure that it wasn't out of a Revelation reference, or a I, II or III John reference.
+# But how would I make sure of that?
+# I would need to do a rosie grep but also showing byte position somehow
+# then do a calculation to see if it overlaps.
+
+# cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep "( { bibleverseref.john_name \" \" bibleverseref.chapter_verses } / { bibleverseref.john_name \" \" bibleverseref.chapter_set } )" -o jsonpp | v
+# cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep "( { bibleverseref.revelation_name \" \" bibleverseref.chapter_verses } / { bibleverseref.revelation_name \" \" bibleverseref.chapter_set } )" -o jsonpp | v
+
+# cat "$input_fp" | rosie-bibleverseref-grep "( { bibleverseref.galatians_name " " bibleverseref.chapter_verses } / { bibleverseref.galatians_name " " bibleverseref.chapter_set } )" | awk1 | pavs
+# # cat "$input_fp" | rosie-bibleverseref-grep "( { bibleverseref.galatians_name " " bibleverseref.chapter_verses } / { bibleverseref.galatians_name " " bibleverseref.chapter_set } )" | awk1 | pavs
+# exit "$?"
+
+
+(
+for b in genesis exodus leviticus numbers deuteronomy joshua judges ruth i_samuel \
+    ii_samuel i_kings ii_kings i_chronicles ii_chronicles ezra nehemiah esther \
+    job psalms proverbs ecclesiastes songofsolomon isaiah jeremiah lamentations \
+    ezekiel daniel hosea joel amos obadiah jonah micah nahum habakkuk zephaniah \
+    haggai zechariah malachi \
+    matthew mark luke john acts romans i_corinthians \
+    ii_corinthians galatians ephesians philippians colossians i_thessalonians \
+    ii_thessalonians i_timothy ii_timothy titus philemon hebrews james i_peter \
+    ii_peter i_john ii_john iii_john jude revelation ; do
+
+
+    cat "$input_fp" | rosie-bibleverseref-grep "( { bibleverseref.${b}_name \" \" bibleverseref.chapter_verses } / { bibleverseref.${b}_name \" \" bibleverseref.chapter_set } )" | awk1
+done
+) | v

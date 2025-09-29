@@ -131,7 +131,7 @@
           ("Judges" "Judg" "Jdg" "Jg" "Jdgs")
           ("Ruth" "Rth" "Ru")
           ("I Samuel" "1 Samuel" "1 Sam" "1 Sm" "1 Sa" "I Sam" "I Sa" "1Sam" "1Sa" "1S" "1st Samuel" "1st Sam" "First Samuel" "First Sam")
-          ("II Samuel" "2 Samuel" "2 Sam" "2 Sm" "2 Sa" "II Sam" "II Sa" "2Sam" "2Sa" "2S" "2nd Samuel" "2nd Sam" "First Samuel" "First Sam")
+          ("II Samuel" "2 Samuel" "2 Sam" "2 Sm" "2 Sa" "II Sam" "II Sa" "2Sam" "2Sa" "2S" "2nd Samuel" "2nd Sam" "Second Samuel" "Second Sam")
           ("I Kings" "1 Kings" "1 Kgs" "1 Ki" "1Kgs" "1Kin" "1Ki" "1K" "1st Kings" "1st Kgs" "First Kings" "First Kgs")
           ("II Kings" "2 Kings" "2 Kgs" "2 Ki" "2Kgs" "2Kin" "2Ki" "2K" "2nd Kings" "2nd Kgs" "Second Kings" "Second Kgs")
           ("I Chronicles" "1 Chronicles" "1 Chron" "1 Chr" "1 Ch" "1Chron" "1Chr" "I Chron" "I Chr" "I Ch" "1st Chronicles" "1st Chron" "First Chronicles" "First Chron")
@@ -175,8 +175,8 @@
           ("Colossians" "Col" "Co")
           ("I Thessalonians" "1 Thess" "1 Thes" "1 Th" "1 Thessalonians" "I Thess" "I Thes" "I Th" "1Thessalonians" "1Thess" "1Thes" "1Th" "1st Thessalonians" "1st Thess" "First Thessalonians" "First Thess")
           ("II Thessalonians" "2 Thess" "2 Thes" "2 Th" "2 Thessalonians" "II Thess" "II Thes" "II Th" "2Thessalonians" "2Thess" "2Thes" "2Th" "2nd Thessalonians" "2nd Thess" "Second Thessalonians" "Second Thess")
-          ("I Timothy" "1 Timothy" "1 Tim" "1 Ti" "I Timothy" "I Tim" "I Ti" "1Timothy" "1Tim" "1Ti" "1st Timothy" "1st Tim" "First Timothy" "First Time")
-          ("II Timothy" "2 Timothy" "2 Tim" "2 Ti" "II Timothy" "II Tim" "II Ti" "2Timothy" "2Tim" "2Ti" "2nd Timothy" "2nd Tim" "Second Timothy" "Second Time")
+          ("I Timothy" "1 Timothy" "1 Tim" "1 Ti" "I Timothy" "I Tim" "I Ti" "1Timothy" "1Tim" "1Ti" "1st Timothy" "1st Tim" "First Timothy" "First Tim")
+          ("II Timothy" "2 Timothy" "2 Tim" "2 Ti" "II Timothy" "II Tim" "II Ti" "2Timothy" "2Tim" "2Ti" "2nd Timothy" "2nd Tim" "Second Timothy" "Second Tim")
           ("Titus" "Tit"
            ;; "ti"
            )
@@ -350,11 +350,16 @@
         (set-window-buffer (get-buffer-window (current-buffer)) buf)))
     buf))
 
+(defun pen-current-line (&optional base1)
+  (if base1
+      (+ 1 (current-line))
+    (current-line)))
+
 (defun bible-mode-select-module ()
   "Queries user to select a new reading module for the current `bible-mode' buffer."
   (interactive)
   (let* (
-         (cur_l (current-line))
+         (cur_l (pen-current-line t))
          (module
           (fz (bible-mode--list-biblical-modules) nil nil "Module: ")
           ;; (completing-read "Module: " (bible-mode--list-biblical-modules))
@@ -1986,10 +1991,29 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            (s-replace " " "_" it)
            (s-replace "iii_" "3_" it)
            (s-replace "ii_" "2_" it)
-           (s-replace "i_" "1_" it)))
+           (s-replace "i_" "1_" it)
+           (s-replace "_of_john" "" it)))
          (chap (str (cadr tup)))
          (verse (str (caddr tup))))
     (w3m (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse))))
+
+;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
+(defun bible-interlinear-get-word-blocks ()
+  (interactive)
+  (let* ((tup (bible-mode-get-ref-tuple))
+         (book-lc
+          (-->
+           (downcase (car tup))
+           (s-replace " " "_" it)
+           (s-replace "iii_" "3_" it)
+           (s-replace "ii_" "2_" it)
+           (s-replace "i_" "1_" it)
+           (s-replace "_of_john" "" it)))
+         (chap (str (cadr tup)))
+         (verse (str (caddr tup))))
+
+    ;; biblehub-interlinear-get-word-blocks
+    (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse) t)))))
 
 (defvar bible-mode-commentaries
   '(
@@ -2110,6 +2134,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 (define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
+(define-key bible-mode-map (kbd "T") 'bible-interlinear-get-word-blocks)
 (define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
 (define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
@@ -2222,6 +2247,35 @@ creating a new `bible-mode' buffer positioned at the specified verse."
             (replace-regexp-in-string (regexp-opt '("(StrongsHebrew)")) "" (bible-mode--exec-diatheke term nil nil nil "StrongsHebrew"))))
         (tpop-fit-vim-string content))))
   nil)
+
+(defun listify-string (s)
+  (pen-eval-string
+   (concat
+    "'("
+    s
+    ")")))
+
+(defun extract-john-refs ()
+  (listify-string
+   (snc "cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -o sexp")))
+
+(defun get-haystacks-and-findstrs-from-rosie-grep-sexp (s)
+  (let* ((sexps (if (stringp s)
+                    (listify-string s)
+                  s))
+         (sexps
+          (mapcar (lambda (e)
+                    (let ((haystack
+                           (cadddr e))
+                          (findstr
+                           (cadddr (car (cddddr e)))))
+                      (list haystack findstr)))
+                  sexps)))
+    (pen-list2str (-flatten sexps))))
+
+(defun test-extract-john-refs ()
+  (interactive)
+  (nbfs (get-haystacks-and-findstrs-from-rosie-grep-sexp (extract-john-refs)) "RPL refs John" 'emacs-lisp-mode))
 
 ;; (defalias 'bible-mode--open-term-hebrew 'bible-mode--open-term-hebrew-tpop)
 

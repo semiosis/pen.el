@@ -31,7 +31,6 @@ g  gorched
 h  hhgttg
 D  dwarf fortress
 i  ninvaders
-=  midnight-commander
 k  sudoku
 l  lightcycle
 H  killersheep
@@ -41,6 +40,7 @@ R  nrubik
 z  fz-run $NOTES/ws/fuzzy/games.txt
 Z  v $NOTES/ws/fuzzy/games.txt
 HEREDOC
+# =  midnight-commander
 
 echo "$0" | udl | hls green
 echo "$options" | hls dgrey

@@ -1615,3 +1615,7 @@ fun! GlobalP()
 endf
 
 xnoremap <silent> gP <ESC>:call GlobalP()<CR>
+
+" This is so gf can handle grep output
+set isfname-=:
+nnoremap <silent> gf gF

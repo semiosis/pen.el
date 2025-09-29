@@ -101,6 +101,8 @@
                                   bible-open-interlinear
                                   bible-fz-chapter-titles-go
                                   bible-fz-passage-outlines-go))
+(defset w3m-mode-funcs '(w3m-enable-display-html-for-fontify
+                         w3m-disable-display-html-for-fontify))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))

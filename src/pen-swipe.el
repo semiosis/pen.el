@@ -50,6 +50,9 @@
    ((>= (prefix-numeric-value current-prefix-arg) 8)
     (let ((current-prefix-arg nil))
       (call-interactively 'helm-org-rifle)))
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (let ((current-prefix-arg nil))
+      (call-interactively 'isearch-forward)))
    (t (call-interactively 'isearch-forward-regexp))))
 
 (define-key isearch-mode-map "\C-s" 'isearch-repeat-forward)

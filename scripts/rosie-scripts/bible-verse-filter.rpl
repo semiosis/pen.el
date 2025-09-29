@@ -5,6 +5,9 @@
 -- ocif -E "curl \"https://catholic-resources.org/Bible/Biblical_References.htm\" | elinks-dump" | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
 -- cat $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl | rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
 
+-- Ensure I don't match words like Remember when looking for Re
+-- cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep "( bibleverseref.revelation_name ) "
+
 
 -- * Have you read the parables of Jesus, such as the famous parable of the Good Samaritan (Luke 10:30-37)?
 -- * The Gospel according to Mark is the first Christian text that uses the word "gospel" or "good news" (1:1).
@@ -439,6 +442,16 @@ ot_book_short_name = { genesis_short_name / exodus_short_name / leviticus_short_
 -- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
 nt_book_short_name = { matthew_short_name / mark_short_name / luke_short_name / revelation_short_name / john_short_name / acts_short_name / romans_short_name / i_corinthians_short_name / ii_corinthians_short_name / galatians_short_name / ephesians_short_name / philippians_short_name / colossians_short_name / i_thessalonians_short_name / ii_thessalonians_short_name / i_timothy_short_name / ii_timothy_short_name / titus_short_name / philemon_short_name / hebrews_short_name / james_short_name / i_peter_short_name / ii_peter_short_name / i_john_short_name / ii_john_short_name / iii_john_short_name / jude_short_name }
 book_short_name = { ot_book_short_name / nt_book_short_name }
+
+ot_book_long_name = { genesis_long_name / exodus_long_name / leviticus_long_name / numbers_long_name / deuteronomy_long_name / joshua_long_name / judges_long_name / ruth_long_name / i_samuel_long_name / ii_samuel_long_name / i_kings_long_name / ii_kings_long_name / i_chronicles_long_name / ii_chronicles_long_name / ezra_long_name / nehemiah_long_name / esther_long_name / job_long_name / psalms_long_name / proverbs_long_name / ecclesiastes_long_name / songofsolomon_long_name / isaiah_long_name / jeremiah_long_name / lamentations_long_name / ezekiel_long_name / daniel_long_name / hosea_long_name / joel_long_name / amos_long_name / obadiah_long_name / jonah_long_name / micah_long_name / nahum_long_name / habakkuk_long_name / zephaniah_long_name / haggai_long_name / zechariah_long_name / malachi_long_name }
+-- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
+nt_book_long_name = { matthew_long_name / mark_long_name / luke_long_name / revelation_long_name / john_long_name / acts_long_name / romans_long_name / i_corinthians_long_name / ii_corinthians_long_name / galatians_long_name / ephesians_long_name / philippians_long_name / colossians_long_name / i_thessalonians_long_name / ii_thessalonians_long_name / i_timothy_long_name / ii_timothy_long_name / titus_long_name / philemon_long_name / hebrews_long_name / james_long_name / i_peter_long_name / ii_peter_long_name / i_john_long_name / ii_john_long_name / iii_john_long_name / jude_long_name }
+book_long_name = { ot_book_long_name / nt_book_long_name }
+
+ot_book_verbose_name = { genesis_verbose_name / exodus_verbose_name / leviticus_verbose_name / numbers_verbose_name / deuteronomy_verbose_name / joshua_verbose_name / judges_verbose_name / ruth_verbose_name / i_samuel_verbose_name / ii_samuel_verbose_name / i_kings_verbose_name / ii_kings_verbose_name / i_chronicles_verbose_name / ii_chronicles_verbose_name / ezra_verbose_name / nehemiah_verbose_name / esther_verbose_name / job_verbose_name / psalms_verbose_name / proverbs_verbose_name / ecclesiastes_verbose_name / songofsolomon_verbose_name / isaiah_verbose_name / jeremiah_verbose_name / lamentations_verbose_name / ezekiel_verbose_name / daniel_verbose_name / hosea_verbose_name / joel_verbose_name / amos_verbose_name / obadiah_verbose_name / jonah_verbose_name / micah_verbose_name / nahum_verbose_name / habakkuk_verbose_name / zephaniah_verbose_name / haggai_verbose_name / zechariah_verbose_name / malachi_verbose_name }
+-- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
+nt_book_verbose_name = { matthew_verbose_name / mark_verbose_name / luke_verbose_name / revelation_verbose_name / john_verbose_name / acts_verbose_name / romans_verbose_name / i_corinthians_verbose_name / ii_corinthians_verbose_name / galatians_verbose_name / ephesians_verbose_name / philippians_verbose_name / colossians_verbose_name / i_thessalonians_verbose_name / ii_thessalonians_verbose_name / i_timothy_verbose_name / ii_timothy_verbose_name / titus_verbose_name / philemon_verbose_name / hebrews_verbose_name / james_verbose_name / i_peter_verbose_name / ii_peter_verbose_name / i_john_verbose_name / ii_john_verbose_name / iii_john_verbose_name / jude_verbose_name }
+book_verbose_name = { ot_book_verbose_name / nt_book_verbose_name }
 
 -- With rosie grep, this will match any line with a bibleref in it
 bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }

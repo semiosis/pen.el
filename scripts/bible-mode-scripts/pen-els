@@ -18,6 +18,10 @@ case "$sn" in
     }
     ;;
 
+    get-haystacks-and-findstrs-from-rosie-grep-sexp-els) {
+        fun_name=get-haystacks-and-findstrs-from-rosie-grep-sexp
+    };;
+
     pen-els) {
         fun_name="$1"
         shift

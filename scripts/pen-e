@@ -1618,7 +1618,8 @@ case "$f" in
             *) break;
         esac; done
 
-        if test "$DEBUG_INIT" = "y"; then
+        if test "$debug_init" = "y"; then
+            echo hi | tv &>/dev/null
             eval "$EMACS_BIN" -nw --debug-init "$@"
         else
             eval "$EMACS_BIN" -nw "$@"

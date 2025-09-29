@@ -39,9 +39,11 @@
   (interactive)
   (let* ((sequence (format "%s" (key-description (read-key-sequence-vector "Key: "))))
          (fun (key-binding (kbd sequence))))
-    (if (fboundp fun)
-        (wgrep (concat "\\b" (str fun) "\\b") (pen-mu "$HOME/.emacs.d/host/pen.el"))
-      (message (concat "Aborting: Function " (pen-q (str fun)) " doesn't exit")))))
+    (if fun
+        (if (fboundp fun)
+            (wgrep (concat "\\b" (str fun) "\\b") (pen-mu "$HOME/.emacs.d/host/pen.el"))
+          (error (concat "pen-ead-binding: Aborted. Function " (pen-q (str fun)) " doesn't exit")))
+      (error (concat "pen-ead-binding: Aborted. Sequence " (pen-q (str sequence)) " not bound")))))
 
 (defun copy-keybinding-as-table-row ()
   (interactive)

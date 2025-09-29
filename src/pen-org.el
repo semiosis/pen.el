@@ -511,6 +511,10 @@ With argument N not nil or 1, move forward N - 1 lines first."
 
 (advice-remove 'org-clock-kill-emacs-query #'ignore-errors-around-advice)
 
+(defun in-comment-p ()
+  (eq 'font-lock-comment-face
+      (pen-face-at-point)))
+
 ;; This broke org. Why did I have it here? Did I make changes?
 ;; It was badly formatted when I copied it too.
 ;; I added eww-cached
@@ -530,6 +534,13 @@ This includes angle, plain, and bracket links."
                    ;; Do not span over paragraph boundaries.
                    (not (string-match-p org-element-paragraph-separate
                                         (match-string 0)))
+
+                   ;; Nice, now org-links will only show in prog mode if it's inside a comment
+                   (or
+                    (and (major-mode-p 'prog-mode)
+                         (in-comment-p))
+                    (not (major-mode-p 'prog-mode)))
+
                    ;; Do not confuse plain links with tags.
                    (not (and (eq style 'plain)
                              (let ((face (get-text-property
@@ -1013,5 +1024,13 @@ The table is taken from the parameter TXT, or from the buffer at point."
 	        (push (nreverse row) table)))
 	    (forward-line))
       (nreverse table))))
+
+;; This is so I can select, say, URL inside of a markdown file and open it
+(defun pen-org-open-at-point (&optional arg)
+  (interactive "P")
+  (if (selected-p)
+      (with-current-buffer (new-buffer-from-string-or-selected)
+        (org-open-at-point arg))
+    (org-open-at-point arg)))
 
 (provide 'pen-org)

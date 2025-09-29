@@ -867,7 +867,7 @@
 (define-key pen-map (kbd "M-l M-r M-i") 'chan-say-something)
 (define-key pen-map (kbd "M-l M-r M-l") 'chan-loop-chat)
 
-(define-key pen-map (kbd "C-c C-o") 'org-open-at-point)
+(define-key pen-map (kbd "C-c C-o") 'pen-org-open-at-point)
 
 (define-key pen-map (kbd "H-c") 'pf-continue-last)
 

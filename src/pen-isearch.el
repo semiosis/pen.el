@@ -18,7 +18,9 @@
         (deactivate-mark)
         (goto-char (point-min))
         (setq isearch-forward-region t)
-        (isearch-mode t (not (null regexp-p)) nil (not no-recursive-edit)))
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (isearch-mode t nil nil (not no-recursive-edit))
+          (isearch-mode t (not (null regexp-p)) nil (not no-recursive-edit))))
     (call-interactively 'pen-isearch-forward)))
 
 (define-key global-map (kbd "C-s") #'isearch-forward-region)

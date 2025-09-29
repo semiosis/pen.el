@@ -296,8 +296,10 @@ Be mindful of quoting arguments correctly."
 (defun sh/glob-grep (pattern input)
   (pen-sn (concat "glob-grep " (pen-q pattern) " 2>/dev/null") input))
 
-(defun curl (url)
-  (pen-sn (concat "curl " (pen-q url) " 2>/dev/null")))
+(defun curl (url &optional cache)
+  (if cache
+      (pen-sn (concat "ocif curl " (pen-q url) " 2>/dev/null"))
+    (pen-sn (concat "curl " (pen-q url) " 2>/dev/null"))))
 
 (defun rb (command)
   (pen-sn (concat "rb " (pen-q command) " 2>/dev/null")))

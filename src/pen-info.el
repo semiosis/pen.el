@@ -35,6 +35,14 @@
 
 ;; (etv (pps font-lock-keywords))
 
+(defsetface info-quoted-face
+  '((t :foreground "#b7b777"
+       :background "#302020" ;; "#303030"
+       ;; :weight bold
+       :underline nil))
+  "Face for highlighting specific quoted text such as ‘M-x’"
+  :group 'info)
+
 (progn
   ;; I haven't yet worked out why these highlights don't work especially well
   ;; [[info:(elisp) Prefix Command Arguments]]
@@ -51,7 +59,7 @@
             (" [0-9]+\\. " . 'info-bold)
             ;; [[info:(org-super-agenda) Usage]]
             ;; For example: *Note:*
-            (" \\*[^*]+\\* " . 'info-bold)
+            (" \\*[^* ]+\\* " . 'info-bold)
             ;; [[info:(org) Feedback]]
             ;; For example: M-x org-submit-bug-report <RET>
             (" M-x .*" . 'info-bullet-point)
@@ -70,9 +78,9 @@
             ;; ("C-" . 'font-lock-warning-face)
             ;; ("[^[:ascii:]].*[^[:ascii:]]" . 'font-lock-comment-face)
             ;; ‘diary-file’
-            ("[\u2018][^\u2019]*[\u2019]" . 'font-lock-comment-face)
+            ("[\u2018][^\u2019]*[\u2019]" . 'info-quoted-face)
             ;; “diary file”
-            ("[\u201C][^\u201D]*[\u201D]" . 'font-lock-comment-face)
+            ("[\u201C][^\u201D]*[\u201D]" . 'info-quoted-face)
             (" Command: [^ ]*" . 'font-lock-keyword-face)))
 
   (defun set-info-highlights ()

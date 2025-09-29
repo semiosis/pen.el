@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# https://community.unix.com/t/how-to-add-extra-spaces-to-make-all-lines-the-same-length/351881/2
+
+input_fp="$(cat | tf txt)"
+
+ 0</dev/null awk -v x=0 '(NR == FNR) { if(length > x) x = length; next } { printf("%-"x"s\n", $0) }' "$input_fp" "$input_fp"

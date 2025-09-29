@@ -46,19 +46,53 @@ esac; done
 export UPDATE
 
 search_with_googler() {
+    # echo googler 1>&2
+    # cmd1 ocif python $REPOS/googler/googler "$@" 1>&2
+    # ocif python $REPOS/googler/googler "$@" 2>/dev/null
+
     if test "$USETOR" = "y"; then
-        oci my-torify pen-python $MYGIT/jarun/googler/googler "$@"
+        ocif my-torify pen-python $MYGIT/jarun/googler/googler "$@"
     else
-        oci $MYGIT/jarun/googler/googler "$@"
+        ocif $MYGIT/jarun/googler/googler "$@"
     fi
 }
 
+# duck duck go
 search_with_ddg() {
     if test "$USETOR" = "y"; then
-        oci my-torify ddgr "$@"
+        ocif my-torify ddgr "$@"
     else
-        oci ddgr "$@"
+        ocif ddgr "$@"
     fi
+
+    # echo ddgr 1>&2
+    # cmd1 ocif ddgr "$@" 1>&2
+    # 1 ocif ddgr "$@" 2>/dev/null
+
+    # This package is dead
+    # py i google-search
+
+    # This one should work
+    # py i google-search-results
+
+    # But it requires this:
+    # https://serpapi.com/
+
+    # read -r -d '' PYCODE <<HEREDOC
+    # try:
+    #     from googlesearch import search
+    # except ImportError:
+    #     print("No module named 'google' found")
+    #
+    # # to search
+    # query = "$query"
+    #
+    # for j in search(query, tld="co.in", num=$nresults, stop=1, pause=2):
+    #     print(j)
+    # HEREDOC
+
+    # python -c "$PYCODE"
+    # python3.7 -c "$PYCODE"
 }
 
 search() {
@@ -84,14 +118,14 @@ if test -n "$LOOPTIME"; then
 else
     {
         search "$@"
-        # oci emacs-google-scrape-backend "$@"
-    } | head -n "$nresults" | ds last-gr | {
+        # pen-oci emacs-google-scrape-backend "$@"
+    } | head -n "$nresults" | pen-ds last-gr | {
         hc "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)"
     } | {
         if test "$NOTTY" = "y"; then
             cat
         else
-            pager -v
+            in-tty -upo pager -v
         fi
     }
 fi

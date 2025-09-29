@@ -2,6 +2,33 @@
 export TTY
 # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
+# Replace the following script, but retain its features
+# /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/scrape-bible-references
+
 . $SCRIPTS/lib/hs
 
-rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl grep -o subs bibleverseref.bibleref
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sort) {
+        # Sort verses according to appearance in the Bible
+        sort_verses=y
+
+        # I should use a "/usr/bin/sort" filter to do the chapter:verse sorting.
+        # But I should use something prior to that to do the sorting by book order
+
+        # I should first extract all the verses and then use rosie again over the results to extract verse references
+        # for each book in order.
+        shift
+    }
+    ;;
+
+    -ot) {
+        old_testament=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+rosie-bibleverseref-grep bibleverseref.bibleref
