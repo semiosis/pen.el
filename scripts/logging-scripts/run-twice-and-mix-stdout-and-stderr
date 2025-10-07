@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# https://stackoverflow.com/questions/17226863/merge-multiple-stdout-stderr-into-one-stdout
+
+cmd() {
+    for var in "$@"
+    do
+        if test "$var" = '|'; then
+            printf -- "%s" '| '
+        else
+            # trailing newlines are removed for arguments. Fix this
+            printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        fi
+    done | sed 's/ $//'
+}
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+CONFIRM="$(yn "This will run \$($CMD) twice. Proceed?" && p y)"
+
+if ! test "$CONFIRM" = "y"; then
+    exit 1
+fi
+
+# ordering
+ordered="$(unbuffer bash -c "$CMD")"
+
+# labelling
+labelled="$(unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | tv)"
+
+# push data into to arrays
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'TTY_ARR=($(printf -- "%s\n" "$ordered"))'
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'ERR_ARR=($(printf -- "%s\n" "$labelled" | grep "^ERR:" | sed "s/^ERR://"))'
+IFS=$'\r\n' GLOBIGNORE='*' command eval  'OUT_ARR=($(printf -- "%s\n" "$labelled" | grep "^OUT:" | sed "s/^OUT://"))'
+
+for o in "${TTY_ARR[@]}"; do
+    if test "${OUT_ARR[0]}" = "$o"; then
+        echo "OUT:${OUT_ARR[0]}"
+        OUT_ARR=("${OUT_ARR[@]:1}" )
+    elif test "${ERR_ARR[0]}" = "$o"; then
+        echo "ERR:${ERR_ARR[0]}"
+        ERR_ARR=("${ERR_ARR[@]:1}" )
+    else
+        echo "Unknown line:" 1>&2
+        echo "$o" 1>&2
+        echo "Exiting" 1>&2
+        exit 1
+    fi
+done
