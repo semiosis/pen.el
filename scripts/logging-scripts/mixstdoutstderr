@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# https://stackoverflow.com/questions/17226863/merge-multiple-stdout-stderr-into-one-stdout
+
+cmd() {
+    for var in "$@"
+    do
+        if test "$var" = '|'; then
+            printf -- "%s" '| '
+        else
+            # trailing newlines are removed for arguments. Fix this
+            printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        fi
+    done | sed 's/ $//'
+}
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | pavs
+unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | pavs

@@ -409,6 +409,9 @@
         :prevdef '()
         :nexterr '()
         :preverr '()
+        :history '(dogears-list)
+        :prevhist '(dogears-back)
+        :nexthist '(dogears-forward)
         :global-references '(
                              pen-counsel-ag-thing-at-point
                              ;; fall back to godef
@@ -555,6 +558,11 @@
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
+
+(handle '(w3m-mode)
+        :history '(w3m-history)
+        :prevhist '(w3m-view-previous-page)
+        :nexthist '(w3m-view-next-page))
 
 (handle '(comint-mode)
         :nexterr '()

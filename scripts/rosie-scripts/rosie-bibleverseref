@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+query="$lastarg"
+
+# rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+
+/usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"

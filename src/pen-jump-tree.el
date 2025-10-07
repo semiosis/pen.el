@@ -15,10 +15,35 @@
   ;; These bindings are optional, of course:
   :bind (:map global-map
               ("M-g d" . dogears-go)
-              ("M-g M-b" . dogears-back)
-              ("M-g M-f" . dogears-forward)
-              ("M-g M-d" . dogears-list)
+              
               ("M-g M-D" . dogears-sidebar)))
+
+(defun pen-buffer-history ()
+  (interactive)
+
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (call-interactively 'dogears-list)
+    (try
+     (call-interactively 'handle-history)
+     (call-interactively 'dogears-list))))
+
+(defun pen-buffer-hist-prev ()
+  (interactive)
+
+  (try
+   (call-interactively 'handle-prevhist)
+   (call-interactively 'dogears-back)))
+
+(defun pen-buffer-hist-next ()
+  (interactive)
+
+  (try
+   (call-interactively 'handle-nexthist)
+   (call-interactively 'dogears-forward)))
+
+(define-key global-map (kbd "M-g M-b") 'pen-buffer-hist-prev)
+(define-key global-map (kbd "M-g M-f") 'pen-buffer-hist-next)
+(define-key global-map (kbd "M-g M-d") 'pen-buffer-history)
 
 ;; minor mode
 (dogears-mode 1)

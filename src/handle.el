@@ -83,6 +83,10 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :rc)
 (add-to-list 'handle-keywords :jumpto)
 
+(add-to-list 'handle-keywords :history)
+(add-to-list 'handle-keywords :prevhist)
+(add-to-list 'handle-keywords :nexthist)
+
 (add-to-list 'handle-keywords :test)
 (add-to-list 'handle-keywords :testall)
 (add-to-list 'handle-keywords :testreport)

@@ -256,6 +256,9 @@ canceled the action, signal quit."
 (setq cider-babashka-command "bb")
 
 
+;; I think there would be a better way to do this.
+
+
 ;; Is there a better way to ensure this? Because the temporary buffer stuff
 ;; is a little bit problematic.
 (defun cider-jack-in-around-advice (proc &rest args)

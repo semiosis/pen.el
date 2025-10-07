@@ -255,8 +255,8 @@ display values."
 
 (defun efs ()
   (interactive)
-  (pen-region-pipe "erase-trailing-whitespace-emacs")
-  ;; (pen-sn (cmd "erase-trailing-whitespace-emacs" (get-path-nocreate)))
+  (pen-region-pipe "erase-trailing-whitespace-orgmode")
+  ;; (pen-sn (cmd "erase-trailing-whitespace-orgmode" (get-path-nocreate)))
   )
 
 (convert-hydra-to-sslk "lf"

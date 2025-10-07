@@ -43,69 +43,110 @@
   "Face for highlighting specific quoted text such as ‘M-x’"
   :group 'info)
 
-(progn
-  ;; I haven't yet worked out why these highlights don't work especially well
-  ;; [[info:(elisp) Prefix Command Arguments]]
-  ;; How do I make syntax highlights which ignore the initial bit
-  ;; such as Function: ?
-  (defset info-highlights
-          '((" Variable: [^ ]*" . 'font-lock-constant-face)
-            (" Macro: [^ ]*" . 'font-lock-builtin-face)
-            ;; ("\\(?: Function: \\)[^ ]*" . 'font-lock-warning-face)
-            ;; ("^      *['(].*" . 'info-code-face)
-            ;; ("^      *.*" . 'info-code-face)
-            (" Function: [^ ]*" . 'font-lock-warning-face)
-            ("^\\**" . 'info-menu-star)
-            (" [0-9]+\\. " . 'info-bold)
-            ;; [[info:(org-super-agenda) Usage]]
-            ;; For example: *Note:*
-            (" \\*[^* ]+\\* " . 'info-bold)
-            ;; [[info:(org) Feedback]]
-            ;; For example: M-x org-submit-bug-report <RET>
-            (" M-x .*" . 'info-bullet-point)
-            ;; [[info:(org) Feedback]]
-            ;; For example: $ emacs -Q -l /path/to/minimal-org.el
-            ("^ +\\$ .*" . 'info-bullet-point)
-            ("^ +(.*" . 'info-bullet-point)
-            ;; For example: :after magit
-            ;; [[info:(magithub) Installation]]
-            ("^ +:.*" . 'info-bullet-point)
-            ("^ +.*)$" . 'info-bullet-point)
-            ("•" . 'info-menu-star)
-            ;; ("‘[^’]*’" . 'font-lock-warning-face)
-            ;; ("‘.*’" . 'font-lock-warning-face)
-            ;; ("[^[:ascii:]]C-" . 'font-lock-warning-face)
-            ;; ("C-" . 'font-lock-warning-face)
-            ;; ("[^[:ascii:]].*[^[:ascii:]]" . 'font-lock-comment-face)
-            ;; ‘diary-file’
-            ("[\u2018][^\u2019]*[\u2019]" . 'info-quoted-face)
-            ;; “diary file”
-            ("[\u201C][^\u201D]*[\u201D]" . 'info-quoted-face)
-            (" Command: [^ ]*" . 'font-lock-keyword-face)))
+(defsetface info-key-face
+            '((t :foreground "Dark Violet"
+                 :background "#302020" ;; "#303030"
+                 ;; :weight bold
+                 :underline nil))
+            "Face for highlighting key text such as ‘<DEL>’"
+            :group 'info)
 
-  (defun set-info-highlights ()
-    (setq font-lock-defaults '(info-highlights))
-    (font-lock-set-keywords-from-defaults t)
+(defsetface info-number-face
+            '((t :foreground "#5faaff"
+                 :background "#203050" ;; "#303030"
+                 ;; :weight bold
+                 :underline nil))
+            "Face for highlighting key text such as ‘<DEL>’"
+            :group 'info)
 
-    ;; j:font-lock-defaults
-    ;; generates:
-    ;; j:font-lock-keywords
+(defsetface info-allcaps-face
+            '((t :foreground "#999999"
+                 :background "#373737" ;; "#303030"
+                 ;; :weight bold
+                 :underline nil))
+            "Face for highlighting key text such as ‘<DEL>’"
+            :group 'info)
 
-    (ignore-errors
-      (save-excursion
-        (goto-char (point-min))
-        (search-forward "=====")
-        (beginning-of-line)
-        (let ((m (point))
-              (p (point-max)))
-          (font-lock-fontify-region m p))))
-    ;; (with-buffer-region-beg-end (font-lock-fontify-region beg end))
-    ;; (font-lock-update)
-    )
+(defsetface info-function-face
+            '((t :foreground "#999999"
+                 :background unspecified ;; "#303030"
+                 ;; :weight bold
+                 :underline nil))
+            "Face for highlighting key text such as ‘calc-grab-rectangle’"
+            :group 'info)
 
-  ;; (add-hook 'org-brain-after-visualize-hook 'set-info-highlights)
-  ;; (remove-hook 'org-brain-after-visualize-hook 'set-info-highlights)
-  (add-hook 'Info-selection-hook 'set-info-highlights))
+;; I haven't yet worked out why these highlights don't work especially well
+;; [[info:(elisp) Prefix Command Arguments]]
+;; How do I make syntax highlights which ignore the initial bit
+;; such as Function: ?
+(defset info-highlights
+        '((" Variable: [^ ]*" . 'font-lock-constant-face)
+          (" Macro: [^ ]*" . 'font-lock-builtin-face)
+          ;; ("\\(?: Function: \\)[^ ]*" . 'font-lock-warning-face)
+          ;; ("^      *['(].*" . 'info-code-face)
+          ;; ("^      *.*" . 'info-code-face)
+          (" Function: [^ ]*" . 'font-lock-warning-face)
+          ("^\\**" . 'info-menu-star)
+          (" [0-9]+\\. " . 'info-bold)
+          ;; [[info:(org-super-agenda) Usage]]
+          ;; For example: *Note:*
+          (" \\*[^* ]+\\* " . 'info-bold)
+          ;; [[info:(org) Feedback]]
+          ;; For example: M-x org-submit-bug-report <RET>
+          (" M-x .*" . 'info-bullet-point)
+          ;; [[info:(org) Feedback]]
+          ;; For example: $ emacs -Q -l /path/to/minimal-org.el
+          ("^ +\\$ .*" . 'info-bullet-point)
+          ("^ +(.*" . 'info-bullet-point)
+          ;; For example: :after magit
+          ;; [[info:(magithub) Installation]]
+          ("^ +:.*" . 'info-bullet-point)
+          ("^ +.*)$" . 'info-bullet-point)
+          ("•" . 'info-menu-star)
+          ;; ("‘[^’]*’" . 'font-lock-warning-face)
+          ;; ("‘.*’" . 'font-lock-warning-face)
+          ;; ("[^[:ascii:]]C-" . 'font-lock-warning-face)
+          ;; ("C-" . 'font-lock-warning-face)
+          ;; ("[^[:ascii:]].*[^[:ascii:]]" . 'font-lock-comment-face)
+          ;; ‘diary-file’
+          ("[\u2018][^\u2019]*[\u2019]" . 'info-quoted-face)
+          ;; “diary file”
+          ("[\u201C][^\u201D]*[\u201D]" . 'info-quoted-face)
+          ("<[^ ]+>" . 'info-key-face)
+          (" [A-Z][A-Z_-]+ " . 'info-allcaps-face)
+          (" [a-z]+\\(-[a-z]+\\)+" . 'info-function-face)
+          ;; Sadly, couldn't find an adequate pattern for numbers
+          ;; [[info:elisp#Regexp Backslash][Emacs Info: elisp#Regexp Backslash]]
+          (" [0-9][0-9.*-+/]*[ ,.]" . 'info-number-face)
+          (" Command: [^ ]*" . 'font-lock-keyword-face)))
+
+(defun set-info-highlights ()
+  (setq font-lock-defaults '(info-highlights))
+  (font-lock-set-keywords-from-defaults t)
+
+  ;; Make this nil because I don't want case-insensitive font-lock.
+  ;; I want to be able to highlight ALL_CAPS stuff
+  (setq font-lock-keywords-case-fold-search nil)
+
+  ;; j:font-lock-defaults
+  ;; generates:
+  ;; j:font-lock-keywords
+
+  (ignore-errors
+    (save-excursion
+      (goto-char (point-min))
+      (search-forward "=====")
+      (beginning-of-line)
+      (let ((m (point))
+            (p (point-max)))
+        (font-lock-fontify-region m p))))
+  ;; (with-buffer-region-beg-end (font-lock-fontify-region beg end))
+  ;; (font-lock-update)
+  )
+
+;; (add-hook 'org-brain-after-visualize-hook 'set-info-highlights)
+;; (remove-hook 'org-brain-after-visualize-hook 'set-info-highlights)
+(add-hook 'Info-selection-hook 'set-info-highlights)
 
 (defsetface info-code-face
   '((t

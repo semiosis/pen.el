@@ -193,7 +193,8 @@
 (advice-add 'all-completions :around #'advise-to-ignore-errors)
 
 (defun advise-to-yes (proc &rest args)
-  (cl-letf (((symbol-function 'yes-or-no-p) #'true))
+  (cl-letf (((symbol-function 'yes-or-no-p) #'true)
+            ((symbol-function 'y-or-n-p) #'true))
     (let ((res (apply proc args)))
       res)))
 (advice-add 'yas-reload-all :around #'advise-to-yes)

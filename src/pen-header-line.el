@@ -103,6 +103,11 @@
   ""
   (setq buffer (or buffer (current-buffer)))
 
+  ;; This makes emacs go very slowly. So only use sparingly
+  ;; (spl "ph--display-header" (buffer-name))
+
+  ;; (sh/pen-log-view "ph--display-header")
+
   (let ((fh
          (mnm (ph-get-path-string-for-buf buffer))
          ;; (shrink-path-file (ph-get-path-string-for-buf buffer))
@@ -129,6 +134,7 @@
                                        :foreground "#8fb28f"
                                        :weight 'bold)))
             (let ((datestr (str (ph-get-date)))
+                  (ca (ignore-errors (lsp-code-actions-at-point)))
                   ;; (battstr (str (get-battery-power)))
                   )
               ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
@@ -146,12 +152,17 @@
                                                                 1
                                                               0)
                                                            ,(length datestr))))
+
+               ;; (if (ca (concat "[" (str (length ca)) " code actions]"))
+               ;;     "")
+               
                ;; (if (not nobatt)
                ;;     (ph--with-face battstr
                ;;                    'header-line-highlight)
                ;;   "")
                ;; " "
                (if (not nodate)
+                   
                    (ph--with-face datestr
                                   'header-line-highlight)
                  ""))))))))
@@ -159,10 +170,18 @@
 (defun ph--display-header ()
   "Display path on headerline."
 
+  ;; This made emacs hang
+  ;; (spl "ph--display-header" (buffer-name))
+
   (cond
    ((derived-mode-p 'tabulated-list-mode)
     nil)
    ((derived-mode-p 'calibredb-search-mode)
+    nil)
+   ((derived-mode-p 'calc-mode)
+    nil)
+   ((or (derived-mode-p 'calc-trail-mode)
+        (string-equal "*Calc Trail*" (buffer-name)))
     nil)
    ((major-mode-p 'universal-sidecar-buffer-mode)
     ;; (path-header-line-off)

@@ -8,6 +8,20 @@
 (use-package logview :defer t)
 
 
+(defun sh/pen-log (metadata data)
+  "metadata is slugged to give the file name of the log file"
+  (snc (cmd "pen-log" metadata) data))
+
+(defun sh/pen-log-view (metadata)
+  "metadata is slugged to give the file name of the log file"
+  (sps (cmd "pen-log" "-watch" metadata)))
+
+(defun sh/pen-log-getpath (metadata)
+  "metadata is slugged to give the file name of the log file"
+  (snc (cmd "pen-log" "-getpath" metadata)))
+
+(defalias 'spl 'sh/pen-log)
+
 ;; This is for my own logging - profiling
 (defmacro penlog (&rest body)
   ""

@@ -457,4 +457,43 @@ prefix argument."
     (make-string n-stars
                  ?\*)))
 
+(defun yas-describe-tables (&optional with-nonactive)
+  "Display snippets for each table."
+  (interactive "P")
+  (let ((original-buffer (current-buffer))
+        (tables (yas--get-snippet-tables)))
+   (with-current-buffer (get-buffer-create "*YASnippet Tables*")
+     (let ((inhibit-read-only t))
+       (when with-nonactive
+         (maphash #'(lambda (_k v)
+                      (cl-pushnew v tables))
+                  yas--tables))
+       (erase-buffer)
+       (insert "YASnippet tables:\n")
+       (dolist (table tables)
+         (yas--describe-pretty-table table original-buffer))
+       (yas--create-snippet-xrefs))
+     (help-mode)
+     (goto-char 1)
+
+     ;; This is needed because display-buffer returns a window
+     (let ((buf (current-buffer)))
+       (display-buffer (current-buffer))
+       buf))))
+
+(defun yas-get-first-populated-snippets-dir ()
+  (-reduce (lambda (dira dirb)
+             (if (f-files dira)
+                 dira
+               dirb))
+           yas/root-directory))
+
+(defun yas-describe-tables-around-advice (proc &rest args)
+  (let ((buf (apply proc args)))
+    (with-current-buffer buf
+      (setq default-directory (yas-get-first-populated-snippets-dir)))
+    buf))
+(advice-add 'yas-describe-tables :around #'yas-describe-tables-around-advice)
+;; (advice-remove 'yas-describe-tables #'yas-describe-tables-around-advice)
+
 (provide 'pen-yasnippet)

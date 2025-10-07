@@ -954,4 +954,108 @@ We don't extract the string that `lps-line' is already displaying."
 
 (setq lsp-python-ms-python-executable-cmd "python3.8")
 
+
+;; I only want to show the number of available code actions,
+;; not the whole list of code actions
+;; j:lsp-ui-sideline--run
+;; Sadly, though, I can't replace the function easily without breaking lsp-mode
+;; because of lexical-binding I think.
+;; I had to tweak the function to not use lexical scoping to get certain parts of it working again.
+;; It just seems to require endless tweaks
+
+;; (defun lsp-ui-sideline--run (&optional buffer bol eol this-line)
+;;   "Show information (flycheck + lsp).
+;; It loops on the symbols of the current line and requests information
+;; from the language server."
+;;   (when buffer-file-name
+;;     (let* ((inhibit-field-text-motion t)
+;;            (tag (lsp-ui-sideline--calculate-tag))
+;;            (eol (or eol (nth 2 tag)))
+;;            (bol (or bol (nth 1 tag)))
+;;            (this-tick (buffer-modified-tick))
+;;            (line-changed (not (lsp-ui-sideline--valid-tag-p lsp-ui-sideline--tag 'line)))
+;;            (line-widen (or (and (not line-changed) lsp-ui-sideline--last-line-number)
+;;                            (and (buffer-narrowed-p) (save-restriction (widen) (line-number-at-pos)))
+;;                            (line-number-at-pos)))
+;;            (new-tick (unless line-changed (not (equal this-tick lsp-ui-sideline--last-tick-info))))
+;;            (this-line (or this-line (lsp-ui-sideline--get-line bol eol)))
+;;            (line-modified (and new-tick (not (equal this-line lsp-ui-sideline--previous-line))))
+;;            (doc-id (lsp--text-document-identifier))
+;;            (inhibit-modification-hooks t)
+;;            symbols)
+;;       (setq lsp-ui-sideline--tag tag
+;;             lsp-ui-sideline--last-line-number line-widen
+;;             lsp-ui-sideline--last-width (window-text-width))
+;;       (when (and line-changed lsp-ui-sideline-show-diagnostics)
+;;         (lsp-ui-sideline--diagnostics buffer bol eol))
+;;       (when (and lsp-ui-sideline-show-code-actions
+;;                  (or (lsp--capability "codeActionProvider")
+;;                      (lsp--registered-capability "textDocument/codeAction")))
+;;         (lsp-request-async
+;;          "textDocument/codeAction"
+;;          (-let (((start . end) (if (eq lsp-ui-sideline-update-mode 'line)
+;;                                    (cons 0 (- eol bol))
+;;                                  (--> (- (point) bol) (cons it it)))))
+;;            (list :textDocument doc-id
+;;                  :range (list :start (list :line (1- line-widen) :character start)
+;;                               :end (list :line (1- line-widen) :character end))
+;;                  :context (list :diagnostics (lsp-ui-sideline--line-diags (1- line-widen)))))
+
+;;          ;; I had to modify how this was coded because the lsp-mode package
+;;          ;; uses lexical scope
+;;          (eval
+;;           `(lambda (actions)
+;;              (when (eq (current-buffer) ,buffer)
+;;                (lsp-ui-sideline--code-actions actions ,bol ,eol))))
+
+;;          :mode 'tick
+;;          :error-handler
+;;          (lambda (&rest _)
+;;            (lsp-ui-sideline--delete-kind 'actions))
+;;          :cancel-token :lsp-ui-code-actions))
+;;       ;; Go through all symbols and request hover information.  Note that the symbols are
+;;       ;; traversed backwards as `forward-symbol' with a positive argument will jump just past the
+;;       ;; current symbol.  By going from the end of the line towards the front, point will be placed
+;;       ;; at the beginning of each symbol.  As the requests are first collected in a list before
+;;       ;; being processed they are still sent in order from left to right.
+;;       (when (and lsp-ui-sideline-show-hover (or line-changed line-modified) (lsp--capability "hoverProvider"))
+;;         (setq lsp-ui-sideline--last-tick-info this-tick
+;;               lsp-ui-sideline--previous-line this-line)
+;;         (save-excursion
+;;           (goto-char eol)
+;;           (while (and (> (point) bol)
+;;                       (progn (forward-symbol -1)
+;;                              (>= (point) bol)))
+;;             (let* ((symbol (thing-at-point 'symbol t))
+;;                    (bounds (bounds-of-thing-at-point 'symbol))
+;;                    (parsing-state (syntax-ppss))
+;;                    (in-string (nth 3 parsing-state))
+;;                    (outside-comment (eq (nth 4 parsing-state) nil)))
+;;               ;; Skip strings and comments
+;;               (when (and symbol (not in-string) outside-comment)
+;;                 (push (list symbol bounds (list :line (1- line-widen) :character (- (point) bol))) symbols))))
+;;           (if (null symbols)
+;;               (lsp-ui-sideline--delete-kind 'info)
+;;             (let ((length-symbols (length symbols))
+;;                   (current-index 0)
+;;                   list-infos)
+;;               (--each symbols
+;;                 (-let (((symbol bounds position) it))
+;;                   (lsp-request-async
+;;                    "textDocument/hover"
+;;                    (lsp-make-hover-params :text-document doc-id :position position)
+;;                    (eval
+;;                     `(lambda (info)
+;;                        (cl-incf ,current-index)
+;;                        (and info (push (list symbol bounds info) ,list-infos))
+;;                        (when (or (= ,current-index ,length-symbols) (not lsp-ui-sideline-wait-for-all-symbols))
+;;                          (lsp-ui-sideline--display-all-info (tv ,list-infos) tag bol eol))))
+;;                    :error-handler
+;;                    (eval
+;;                     `(lambda (&rest _)
+;;                        (cl-incf ,current-index)
+;;                        (when (or (= current-index ,length-symbols) (not lsp-ui-sideline-wait-for-all-symbols))
+;;                          (lsp-ui-sideline--display-all-info ,list-infos tag bol eol))))
+;;                    :mode 'tick))))))))))
+
 (provide 'pen-lsp)

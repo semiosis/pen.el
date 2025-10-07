@@ -162,6 +162,11 @@ case "$sn" in
     }
     ;;
 
+    ecalc) {
+        ic=calc-edit-scratch
+    }
+    ;;
+
     egnugo) {
         ic=gnugo
     }

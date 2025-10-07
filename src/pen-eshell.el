@@ -17,10 +17,20 @@
 
 (setq epe-fish-path-max-len 40)
 
+
+;; This has been a good theme. I think I'll stick with it.
+;; It also "looks" like eshell to me now
 (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
   (setq eshell-highlight-prompt nil
         eshell-prompt-function 'epe-theme-lambda))
+
+
+;; mx:eshell-git-prompt-use-theme
+;; (eshell-git-prompt-use-theme 'robbyrussell)
+;; (eshell-git-prompt-use-theme 'gitradar)
+;; (eshell-git-prompt-use-theme 'powerline)
+;; (eshell-git-prompt-use-theme 'simple)
 
 
 ;; Not very good.

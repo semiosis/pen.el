@@ -2762,3 +2762,10 @@ cargo-quickinstall "hex-patch"
 e ia mindstream
 
 e ia highlight2clipboard
+
+# https://github.com/jajpater/cbible
+agi libsword-dev
+
+e ia window-jump
+
+e ia lua-mode

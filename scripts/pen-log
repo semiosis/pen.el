@@ -1,13 +1,40 @@
 #!/bin/bash
 export TTY
 
-slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -30)"
-
 pendir=~/.pen
 
-if test -d "$pendir"; then
-    mkdir -p "$pendir/temp"
-    tee "$pendir/temp/${slug}.txt"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -getpath) {
+        # Get path and exit
+        do_getpath=y
+        shift
+    }
+    ;;
+
+    -watch) {
+        # Get path and exit
+        do_watch=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -30)"
+
+fp="$pendir/temp/${slug}.txt"
+
+if test "$do_getpath" = "y"; then
+    echo "$fp"
+elif test "$do_watch" = "y"; then
+    tless -N "$fp"
 else
-    cat
+    if test -d "$pendir"; then
+        mkdir -p "$pendir/temp"
+        awk 1 | tee -a "$pendir/temp/${slug}.txt"
+    else
+        cat
+    fi
 fi

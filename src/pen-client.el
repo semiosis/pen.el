@@ -128,14 +128,16 @@
       (switch-to-buffer "*Messages*"))
   o)
 
-(defun new-buffer-from-o (o &optional mode)
+(defun new-buffer-from-o (&optional o mode)
   "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
  Example:
  (message (pen-etv \"shane\"))"
+  (interactive)
   (new-buffer-from-string
-   (if (stringp o)
-       o
-     (pp-to-string o))
+   (cond
+    ((stringp o) o)
+    ((not o) "")
+    (t (pp-to-string o)))
    nil mode))
 
 (defalias 'pen-etv 'new-buffer-from-o)

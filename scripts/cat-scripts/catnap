@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+delay="$1"
+: ${delay:="1"}
+
+awk1 | while IFS=$'\n' read -r line; do
+    printf -- "%s\n" "$line"
+    sleep "$delay"
+done

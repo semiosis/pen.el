@@ -46,7 +46,8 @@
 (sslk "lae" #'deer)
 (sslk "laio" #'iotop)
 (sslk "laie" #'erc)
-(sslk "laC" #'calc)
+;; (sslk "laC" #'calc)
+(sslk "laC" #'calc-edit-scratch)
 
 (sslk "laE" 'elfeed)
 (sslk "la)" #'emoji-cheat-sheet-plus-buffer)

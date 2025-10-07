@@ -2,6 +2,9 @@
 
 (setq w3m-command (executable-find "w3m"))
 
+(advice-add 'w3m-history :around #'advise-to-yes)
+(advice-add 'w3m-gohome :around #'advise-to-yes)
+
 (define-key w3m-mode-map (kbd "<up>") nil)
 (define-key w3m-mode-map (kbd "<down>") nil)
 (define-key w3m-mode-map (kbd "<left>") nil)
@@ -75,5 +78,28 @@
 ;; TODO Add w3m-horizontal-recenter somewhere. It used to be M-l
 
 ;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | elinks-dump | sed -z "s/1\\n\\n/\\n/" | sed "s/   [0-9]\\+$//g" | sed "s/ / /g" | erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" | sed "s/ \\+/ /g" | ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd"
+
+;; Solve this problem, then solve caching w3m:
+;; I can only currently memoize functions which return a string.
+;; But I want to be able to memoize functions which insert something
+;; into the current buffer.
+
+
+;; To solve this problem I might need to add advice to memoize
+;; or to make a memoize-bufferfunc
+
+;; (defun w3m-retrieve-around-advice (proc &rest args)
+;;   (with-temp-buffer)
+;;   (let ((res (apply proc args)))
+;;     (message "w3m-retrieve returned %S" res)
+;;     res))
+;; (advice-add 'w3m-retrieve :around #'w3m-retrieve-around-advice)
+;; (advice-remove 'w3m-retrieve #'w3m-retrieve-around-advice)
+
+;; There has to be something inside url-retrieve
+;; that I can memoize
+;; Though, memoizing w3m-retrieve should work?
+;; (memoize 'w3m-retrieve)
+;; (memoize-restore 'w3m-retrieve)
 
 (provide 'pen-w3m)

@@ -264,6 +264,66 @@ care."
                                              t)))
                          ,timeouts)))))))))
 
+;; Memoize functions which insert text into the buffer
+(defun memoize--wrap--bufinsert (func timeout funcsym)
+  "Return the memoized version of FUNC.
+TIMEOUT specifies how long the values last from last access. A
+nil timeout will cause the values to never expire, which will
+cause a memory leak as memoize is use, so use the nil value with
+care."
+  (let* (;;This also works for lambdas
+         (funcpps (pps func))
+         (func_slug_data (md5 (substring funcpps 0 100)))
+         (func_slug (message "%s" (substring
+                                   (concat (str funcsym) "-" func_slug_data
+                                           "-" (slugify funcpps t 100))
+                                   0 100)))
+         (tablename (concat "table-" func_slug))
+         (timeoutsname (concat "timeouts-" func_slug))
+         ;; (table (eval `(make-or-load-hash-table ,tablename :test 'equal)))
+         ;; (timeouts (eval `(make-or-load-hash-table ,timeoutsname :test 'equal)))
+         (table (make-or-load-hash-table tablename '(:test equal)))
+         (timeouts (make-or-load-hash-table timeoutsname '(:test equal))))
+    (eval
+     `(lambda (&rest args)
+        (let ((value (gethash args ,table)))
+          (unwind-protect
+              ;; (or value (puthash args (apply ,func args) ,table))
+              (let ((ret (or (and
+                              (not (pen-var-value-maybe 'pen-sh-update))
+                              (not (pen-var-value-maybe 'do-pen-update))
+                              (not (>= (prefix-numeric-value current-global-prefix-arg) 4))
+                              (not (>= (prefix-numeric-value current-prefix-arg) 4))
+                              value)
+                             ;; Add to the hash table and save the hash table
+                             (let ((newret (puthash args
+                                                    (or (apply ,func args)
+                                                        'MEMOIZE_NIL)
+                                                    ,table)))
+                               (if (featurep 'hashtable-print-readable)
+                                   (ht-cache ,tablename ,table))
+                               newret))))
+                (if (equal ret 'MEMOIZE_NIL)
+                    (setq ret nil))
+                ret)
+            (let ((existing-timer (gethash args ,timeouts))
+                  (timeout-to-use (or
+                                   ;; timeout comes from the calling 'memoize' function
+                                   (and (variable-p 'timeout)
+                                        timeout)
+                                   memoize-default-timeout)))
+              (when existing-timer
+                (cancel-timer existing-timer))
+              (when timeout-to-use
+                (puthash args
+                         (run-at-time timeout-to-use nil
+                                      (lambda ()
+                                        ;; It would probably be better to alert and ignore
+                                        (try (remhash args ,table)
+                                             ;; (message ,(concat "timer for memoized " func_slug " failed"))
+                                             t)))
+                         ,timeouts)))))))))
+
 (defun ignore-errors-around-advice (proc &rest args)
   (ignore-errors
     (let ((res (apply proc args)))
