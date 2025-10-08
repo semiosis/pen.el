@@ -2339,6 +2339,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 ;; Once I get the grep results, put them into `ead -j`
 ;; ead -j
 
+;; ead :type | grep -v ":type '" | ead -j
+
 (defun test-extract-john-sexps ()
   (interactive)
   (etv
