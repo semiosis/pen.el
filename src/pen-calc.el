@@ -14,3 +14,5 @@
     res))
 (advice-add 'calc-dispatch :around #'calc-dispatch-around-advice)
 (advice-remove 'calc-dispatch #'calc-dispatch-around-advice)
+
+(provide 'pen-calc)

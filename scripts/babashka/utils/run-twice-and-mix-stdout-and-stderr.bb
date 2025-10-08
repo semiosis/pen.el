@@ -64,6 +64,12 @@
       ;; The issue with this babashka script might not be the babashka script at all.
       ;; Sometimes the TTY/OUT/ERR capture files might be at fault.
       ;; Success e:/root/dump/tmp/scratchVY06S8.txt
+
+      ;; TODO Do an experiment:
+      ;; When it fails check ordlines, outlines and errlines and see if rosie is at fault
+
+      ;; Sending input in linewise makes this even more reliable, because rosie gets the input one line at a time. But it slows things down
+      ;; run-twice-and-mix-stdout-and-stderr.bb "$(nsfa bash -c 'cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | catnap 0 | rosie-bibleverseref-grep "( { bibleverseref.john_name \" \" bibleverseref.chapter_verses } / { bibleverseref.john_name \" \" bibleverseref.chapter_set } )" -a -o sexp')" | v
       (reverse
        (loop [ret_mixlines '()
               rem_ordlines ordlines

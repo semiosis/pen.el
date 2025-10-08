@@ -1,0 +1,48 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -s) {
+        DO_SILENTLY="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+elif test -f "$last_arg"; then
+    input_fp="$last_arg"
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+else
+    exit 1
+fi
+
+size="$(du -b "$input_fp" | cut -f 1)"
+
+cat "$input_fp" | catnap "$@" | {
+    if test "$DO_SILENTLY" = "y"; then
+        cat
+    else
+        pv -s "$size"
+    fi
+}

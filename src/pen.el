@@ -2602,6 +2602,7 @@ May use to generate code from comments."
 (require 'pen-bible-audio)
 (require 'pen-bible-org)
 (require 'pen-picture)
+(require 'pen-calc)
 (require 'pen-magit-margin)
 (require 'pen-vc)
 (require 'pen-rpl)
