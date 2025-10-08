@@ -3,6 +3,8 @@
 ;; sister script
 ;; e:$EMACSD/pen.el/scripts/clojure/utils/transform-lines.clj
 
+;; https://stackoverflow.com/questions/17226863/merge-multiple-stdout-stderr-into-one-stdout
+
 (ns utils.run-twice-and-mix-stdout-and-stderr)
 
 (require '[clojure.string :as s]

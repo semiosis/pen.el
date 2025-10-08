@@ -2,6 +2,8 @@
 
 (ns utils.run-twice-and-mix-stdout-and-stderr)
 
+;; https://stackoverflow.com/questions/17226863/merge-multiple-stdout-stderr-into-one-stdout
+
 (require '[clojure.string :as s]
          '[clojure.java.io :as io])
 

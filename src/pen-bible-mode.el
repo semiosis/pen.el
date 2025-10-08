@@ -2259,6 +2259,17 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (listify-string
    (snc "cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -o sexp")))
 
+(defun extract-john-refs-mix ()
+  (interactive)
+  (etv
+   (snc
+    "ocif run-twice-and-mix-stdout-and-stderr-vanilla.bb \"$(nsfa bash -c 'cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | catnap 0 | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -a -o sexp')\"")))
+
+(defun extract-john-refs-out ()
+  (listify-string
+   (snc
+    "ocif run-twice-and-mix-stdout-and-stderr-vanilla.bb \"$(nsfa bash -c 'cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | catnap 0 | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -a -o sexp')\" | grep OUT: | sed \"s/^OUT://\"")))
+
 (defun get-haystacks-and-findstrs-from-rosie-grep-sexp (s)
   (let* ((sexps (if (stringp s)
                     (listify-string s)
@@ -2273,10 +2284,56 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                   sexps)))
     (pen-list2str (-flatten sexps))))
 
+(defun substring-bytes (s from to)
+  "Substring but counts in bytes rather than chars"
+  (with-temp-buffer
+    (insert s)
+    (let ((frompos (progn
+               (goto-byte from)
+               (point)))
+          (topos (progn
+               (goto-byte to)
+               (point))))
+      (buffer-substring frompos topos))))
+
+(defun get-pretext-and-findstrs-from-rosie-grep-sexp (s)
+  (let* ((sexps (if (stringp s)
+                    (listify-string s)
+                  s))
+         (sexps
+          (mapcar (lambda (e)
+                    (let ((haystack
+                           (cadddr e))
+                          (findloc
+                           (cadr (car (cddddr e))))
+                          (findstr
+                           (cadddr (car (cddddr e)))))
+                      (list (substring-bytes haystack 0 findloc) findstr)))
+                  sexps)))
+    (pen-list2str (-flatten sexps))))
+
 (defun test-extract-john-refs ()
   (interactive)
-  (nbfs (get-haystacks-and-findstrs-from-rosie-grep-sexp (extract-john-refs)) "RPL refs John" 'emacs-lisp-mode))
+  (nbfs (get-haystacks-and-findstrs-from-rosie-grep-sexp (extract-john-refs-out)) "RPL refs John" 'emacs-lisp-mode))
 
-;; (defalias 'bible-mode--open-term-hebrew 'bible-mode--open-term-hebrew-tpop)
+(defun test-extract-john-refs-pretext-findstr ()
+  (interactive)
+  (nbfs (get-pretext-and-findstrs-from-rosie-grep-sexp (extract-john-refs-out)) "RPL refs John" 'emacs-lisp-mode))
+
+(defun test-extract-john-sexps ()
+  (interactive)
+  (etv
+   (pps
+    (extract-john-refs-out))))
+
+;; (substring"  *[[https://www.biblegateway.com/passage/?search=1%20John%205%3A1-2&version=ESV][I John 5:1-2" 0 83)
+
+;; TODO Produce a bunch of sexps
+;; I want for each tuple:
+;; - Line number
+;;   - Get this from output of e:run-twice-and-mix-stdout-and-stderr-vanilla.bb
+;; - Haystack
+;; - Match/findstr
+;; - Column number
 
 (provide 'pen-bible-mode)
