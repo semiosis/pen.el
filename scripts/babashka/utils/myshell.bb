@@ -22,9 +22,43 @@
 ;; e:$EMACSD/khala/src/khala/utils.clj
 
 ;; I need un 'uncmd'
+(defn cmd-posix
+  ""
+  [& args]
+  ;; clojure.string/join
+  (join
+   " "
+   ;; I have to use the jq version so unicode works
+   ;; But it's much slower. So I have to rewrite this with clojure
+   (map (fn [s] (->
+                 (sh "pen-q-posix" :in (str s))
+                 :out)) args)))
+(defn cmd-posix-1
+  ""
+  [args]
+  ;; clojure.string/join
+  (join
+   " "
+   ;; I have to use the jq version so unicode works
+   ;; But it's much slower. So I have to rewrite this with clojure
+   (map (fn [s] (->
+                 (sh "pen-q-posix" :in (str s))
+                 :out)) args)))
+
 (defn cmd
   ""
   [& args]
+  ;; clojure.string/join
+  (join
+   " "
+   ;; I have to use the jq version so unicode works
+   ;; But it's much slower. So I have to rewrite this with clojure
+   (map (fn [s] (->
+                 (sh "pen-q-jq" :in (str s))
+                 :out)) args)))
+(defn cmd-1
+  ""
+  [args]
   ;; clojure.string/join
   (join
    " "

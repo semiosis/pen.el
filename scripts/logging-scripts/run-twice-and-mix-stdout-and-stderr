@@ -20,7 +20,8 @@ cmd() {
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-CONFIRM="$(yn "This will run \$($CMD) twice. Proceed?" && p y)"
+: "${CONFIRM:="$DO_BATCH"}"
+: "${CONFIRM:="$(yn "This will run \$($CMD) twice. Proceed?" && p y)"}"
 
 if ! test "$CONFIRM" = "y"; then
     exit 1
@@ -30,13 +31,14 @@ fi
 ordered="$(unbuffer bash -c "$CMD")"
 
 # labelling
-labelled="$(unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | tv)"
+labelled="$(unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1")"
 
 # push data into to arrays
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'TTY_ARR=($(printf -- "%s\n" "$ordered"))'
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'ERR_ARR=($(printf -- "%s\n" "$labelled" | grep "^ERR:" | sed "s/^ERR://"))'
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'OUT_ARR=($(printf -- "%s\n" "$labelled" | grep "^OUT:" | sed "s/^OUT://"))'
 
+# This gets exponentially slower the more lines - it's not performant with big input
 for o in "${TTY_ARR[@]}"; do
     if test "${OUT_ARR[0]}" = "$o"; then
         echo "OUT:${OUT_ARR[0]}"
