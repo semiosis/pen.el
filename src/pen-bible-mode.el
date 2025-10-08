@@ -2259,11 +2259,10 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (listify-string
    (snc "cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -o sexp")))
 
-(defun extract-john-refs-mix ()
+(defun extract-john-refs-mix-str ()
   (interactive)
-  (etv
-   (snc
-    "ocif run-twice-and-mix-stdout-and-stderr-vanilla.bb \"$(nsfa bash -c 'cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | catnap 0 | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -a -o sexp')\"")))
+  (snc
+   "ocif run-twice-and-mix-stdout-and-stderr-vanilla.bb \"$(nsfa bash -c 'cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | catnap 0 | rosie-bibleverseref-grep \"( { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_verses } / { bibleverseref.john_name \\\" \\\" bibleverseref.chapter_set } )\" -a -o sexp')\""))
 
 (defun extract-john-refs-out ()
   (listify-string
@@ -2284,16 +2283,17 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                   sexps)))
     (pen-list2str (-flatten sexps))))
 
+;; Rather than use the rosie byte positions, I think I'll just remove the length of the match/findstr from the end of the haystack
 (defun substring-bytes (s from to)
   "Substring but counts in bytes rather than chars"
   (with-temp-buffer
     (insert s)
     (let ((frompos (progn
-               (goto-byte from)
-               (point)))
+                     (goto-byte from)
+                     (point)))
           (topos (progn
-               (goto-byte to)
-               (point))))
+                   (goto-byte to)
+                   (point))))
       (buffer-substring frompos topos))))
 
 (defun get-pretext-and-findstrs-from-rosie-grep-sexp (s)
@@ -2304,11 +2304,16 @@ creating a new `bible-mode' buffer positioned at the specified verse."
           (mapcar (lambda (e)
                     (let ((haystack
                            (cadddr e))
-                          (findloc
-                           (cadr (car (cddddr e))))
+                          ;; (findloc
+                          ;;  (cadr (car (cddddr e))))
                           (findstr
                            (cadddr (car (cddddr e)))))
-                      (list (substring-bytes haystack 0 findloc) findstr)))
+                      ;; The bytes stuff is still not perfect
+                      ;; (list (substring-bytes haystack 0 findloc) findstr)
+                      (list
+                       (substring haystack 0 (- (length haystack)
+                                                (length findstr)))
+                       findstr)))
                   sexps)))
     (pen-list2str (-flatten sexps))))
 
@@ -2319,6 +2324,20 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (defun test-extract-john-refs-pretext-findstr ()
   (interactive)
   (nbfs (get-pretext-and-findstrs-from-rosie-grep-sexp (extract-john-refs-out)) "RPL refs John" 'emacs-lisp-mode))
+
+(defun test-extract-john-refs-for-grep ()
+  (interactive)
+  (let* ((linenums
+          (mapcar 'string-to-int
+                  (str2lines
+                   (snc "cat -n | erase-starting-whitespace | grep -P \"^[0-9]+\\tOUT:\" | sed \"s/^\\([0-9]\\+\\)\\t.*/\\1/\"" (extract-john-refs-mix-str)))))
+         ;; (numbered (str2lines mix))
+         )
+    (tv (pps linenums))
+    (nbfs (get-pretext-and-findstrs-from-rosie-grep-sexp (extract-john-refs-out)) "RPL refs John" 'emacs-lisp-mode)))
+
+;; Once I get the grep results, put them into `ead -j`
+;; ead -j
 
 (defun test-extract-john-sexps ()
   (interactive)
