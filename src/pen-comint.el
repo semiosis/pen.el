@@ -81,6 +81,9 @@
   (interactive)
 
   (cond
+   ((derived-mode-p 'calc-mode)
+    (call-interactively 'calc-pop))
+
    ((derived-mode-p 'comint-mode)
     (comint-delchar))
 
