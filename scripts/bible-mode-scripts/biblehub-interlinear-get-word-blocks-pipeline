@@ -6,4 +6,48 @@ export TTY
 # Example:
 # ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline
 
-elinks-dump | sed -z "s/1\\n\\n/\\n/" | sed "s/   [0-9]\\+$//g" | sed "s/ / /g" | erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" | sed "s/ \\+/ /g" | ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd" | make-all-lines-same-length | sed "/^ \\+$/{s/^.*$//}" | pavs
+# grep -q "Strong's Hebrew"
+# grep -q "Strong's Greek"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(tf txt)"
+else
+    url="$1"
+    if ! test -n "$url"; then
+        exit 1
+    fi
+    input_fp="$(ocif curl "$url" | tf txt)"
+fi
+
+if cat "$input_fp" | grep -q -P "Strong's Hebrew"; then
+    : "${lang:="H"}"
+elif cat "$input_fp" | grep -q -P "Strong's Greek"; then
+    : "${lang:="G"}"
+fi
+: "${lang:=""}"
+
+exec 0</dev/null
+
+ub -E "$(cmd elinks-dump "$input_fp") | cat" | sed -z "s/1\\n\\n/\\n/" |
+    sed "s/   [0-9]\\+$//g" | sed "s/ / /g" |
+    erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" |
+    sed "s/ \\+/ /g" | 
+    ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd" |
+    sed "/^ \\+$/{s/^.*$//}" | sed '/INS::INS/,$d' |
+    erase-trailing-whitespace |
+    sed 's/^[0-9]\+ \([^ ]\)/\1/' |
+    sed 's/^\[e\] //' |
+    sed "s/^\\([0-9]\\)/${lang}\\1/" |
+    pen-aatr -k "\n\n" "fill-lines-to-longest-line" | max-double-spaced.sh | sed -z 's/\n\+$//' | pavs
+#  | make-all-lines-same-length

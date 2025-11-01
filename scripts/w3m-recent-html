@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+hsqc w3m | grep -- -no-cookie | grep -v -- -header | sed 's/^.*dump_extra" //' | rosie-urls | uniqnosort | mfz +s -m -nv | awk 1 | xa ew3m

@@ -87,7 +87,14 @@
                         (t (showmap--read-symbol "map: " (variable-name-re-p "-\\(key\\)?map$")))))))
 
   ;; TODO Make it also show the title bar stuff, which is contained inside the map
-  (let ((current-prefix-arg nil))
+  (let ((current-prefix-arg nil)
+        (temp-keymap nil))
+
+    (if (consp mapsym)
+        (progn
+          (setq temp-keymap mapsym)
+          (setq mapsym 'temp-keymap)))
+    
     (if (not mapsym)
         (setq mapsym (current-major-mode-map)))
 

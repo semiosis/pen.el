@@ -3,6 +3,6 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-test -f "/usr/bin/tidy" || agi "tidy" &>/dev/null
+# test -f "/usr/bin/tidy" || agi "tidy" &>/dev/null
 
-/usr/bin/tidy "$@"
+/usr/bin/tidy "$@" | tv

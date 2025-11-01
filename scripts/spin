@@ -51,6 +51,11 @@ esac; done
 
 : "${message:="$1"}"
 
+if pen-tm session-exists popup; then
+    "$@"
+    exit "$?"
+fi
+
 # 1 is the message and it's usually taken from the first
 # command in the command arguments
 spinner-start "${extraargs[@]}" -m "$message"

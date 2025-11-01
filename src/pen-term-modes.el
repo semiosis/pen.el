@@ -332,7 +332,7 @@
          (grep (length l)))
     (cl-loop for pen-str in l
              do
-             (setq pen-i (+ 1 i))
+             (setq i (+ 1 i))
              (if (not (equal 1 i))
                  (sleep-for-for-for 0.5))
              (term-send-raw-string s))))

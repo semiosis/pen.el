@@ -1221,6 +1221,7 @@ non-nil."
 (defun pen-previous-defun (arg)
   (interactive "P")
   (cond
+   ((string= (str (yank-function-from-binding "<backtab>")) "widget-backward") (call-interactively 'widget-backward))
    ((string= (current-major-mode) "slime-xref-mode") (call-interactively 'slime-xref-prev-line))
    ;; I can't figure out how to bind the fuzzyfinders in pen.el
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
@@ -1297,6 +1298,7 @@ non-nil."
   (cond
    ;; I can't figure out how to bind the fuzzyfinders in pen.el
    ;; ivy uses minibuffer-inactive-mode. Though I should still test for ivy
+   ((string= (str (yank-function-from-binding "TAB")) "widget-forward") (call-interactively 'widget-forward))
    ((string= (current-major-mode) "slime-xref-mode") (call-interactively 'slime-xref-next-line))
    ((string= (current-major-mode) "minibuffer-mode") (call-interactively 'ivy-next-line-or-history))
    ((string= (current-major-mode) "minibuffer-inactive-mode") (call-interactively 'ivy-next-line-or-history))

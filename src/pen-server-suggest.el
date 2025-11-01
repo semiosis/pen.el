@@ -136,7 +136,7 @@
              collect
              ;; https://en.wikipedia.org/wiki/Relational_algebra
              ;; outer join is what i'm thinking of
-             ;; how do pen-i fill the missing values using an outer join a list of tuples?
+             ;; how do i fill the missing values using an outer join a list of tuples?
              ;; I think I should flatten once
              (let* ((cand (assoc (car tp) pen-server-command-tuples))
                     (hnport (list hostname (car cand)))

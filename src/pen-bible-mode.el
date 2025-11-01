@@ -1867,6 +1867,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-search-mode-map "x" 'bible-mode-cross-references)
 (define-key bible-search-mode-map "g" nil)
 
+(define-key bible-search-mode-map (kbd "T") 'bible-interlinear-get-word-blocks)
+(define-key bible-search-mode-map (kbd "I") 'bible-open-interlinear)
+(define-key bible-search-mode-map (kbd "D") 'bible-mode-show-hover-docs)
+
 (define-key bible-search-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-search-mode-map (kbd "M-v") nil)
@@ -1984,6 +1988,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-open-interlinear ()
   (interactive)
+
+  ;; e:to-biblehub-book-name
+  
   (let* ((tup (bible-mode-get-ref-tuple))
          (book-lc
           (-->
@@ -1992,28 +1999,20 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            (s-replace "iii_" "3_" it)
            (s-replace "ii_" "2_" it)
            (s-replace "i_" "1_" it)
-           (s-replace "_of_john" "" it)))
+           (s-replace "_of_john" "" it)
+           (s-replace "song_of_solomon" "songs" it)))
          (chap (str (cadr tup)))
-         (verse (str (caddr tup))))
-    (w3m (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse))))
+         (verse (str (caddr tup)))
+         (url (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse)))
+    (if (interactive-p)
+        (w3m url)
+      url)))
 
 ;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
 (defun bible-interlinear-get-word-blocks ()
   (interactive)
-  (let* ((tup (bible-mode-get-ref-tuple))
-         (book-lc
-          (-->
-           (downcase (car tup))
-           (s-replace " " "_" it)
-           (s-replace "iii_" "3_" it)
-           (s-replace "ii_" "2_" it)
-           (s-replace "i_" "1_" it)
-           (s-replace "_of_john" "" it)))
-         (chap (str (cadr tup)))
-         (verse (str (caddr tup))))
-
-    ;; biblehub-interlinear-get-word-blocks
-    (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse) t)))))
+  ;; (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (bible-open-interlinear) t)))
+  (etv (snc (cmd "biblehub-interlinear-get-word-blocks-pipeline" (bible-open-interlinear)))))
 
 (defvar bible-mode-commentaries
   '(

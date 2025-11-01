@@ -473,8 +473,8 @@ is specified, `:italic' is ignored."
            '(shr-code)
            do
            (set-face-attribute face nil :height 1.0 :weight 'unspecified
-                               :background "#AF005F"
-                               :foreground "#f664b5"))
+                               :background (face-background 'org-code nil)
+                               :foreground (face-foreground 'org-code nil)))
   (cl-loop for face in
            '(info-menu-header)
            do
@@ -1024,6 +1024,34 @@ Also see option `magit-blame-styles'."
                  ))
               "Face for filenames."
               :group 'magit-faces)
+
+  ;; (non-magit) Diff
+  ;; Sadly, while this improves normal diff highlighting,
+  ;; it breaks magit highlighting
+  ;; (set-face-background 'diff-refine-removed 'unspecified)
+
+  ;; So try to do this without breaking it
+  (require 'diff-mode)
+  ;; Good
+  (set-face-background 'diff-added (face-background 'magit-diff-added-highlight))
+  (set-face-background 'diff-removed (face-background 'magit-diff-removed-highlight))
+
+  ;; Good
+  (set-face-foreground 'magit-diff-added-highlight (face-background 'diff-refine-added))
+  (set-face-foreground 'magit-diff-removed-highlight (face-background 'diff-refine-removed))
+  (set-face-foreground 'magit-diff-added (face-background 'diff-refine-added))
+  (set-face-foreground 'magit-diff-removed (face-background 'diff-refine-removed))
+
+  (set-face-foreground 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
+  (set-face-foreground 'diff-refine-added (face-background 'magit-diff-added-highlight))
+  
+  
+  ;; (set-face-background 'diff-added 'unspecified)
+  ;; (set-face-foreground 'diff-added (face-background 'magit-diff-added-highlight))
+  
+
+  ;; (set-face-background 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
+  ;; (set-face-foreground 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
 
   (require 'org-faces)
   (set-face-background 'org-scheduled-previously nil)
@@ -1601,6 +1629,9 @@ Also see option `magit-blame-styles'."
 
                             magit-section-highlight
 
+                            diff-added
+                            ;; diff-refine-removed
+
                             ;; hl-line
 
                             magit-diff-file-heading-highlight
@@ -1819,8 +1850,8 @@ Also see option `magit-blame-styles'."
                                      whitespace-space-before-tab
                                      whitespace-tab
                                      whitespace-trailing
-                                     
-                                     )
+
+                                     diff-refine-added)
                           do
                           (set-face-attribute
                            f fr
@@ -1841,7 +1872,13 @@ Also see option `magit-blame-styles'."
                                      ;; magit-diff-context-highlight
                                      ;; magit-diff-context
                                      magit-diff-hunk-heading-highlight
-                                     magit-diff-hunk-heading)
+                                     magit-diff-hunk-heading
+
+                                     ;; diff-removed
+
+                                     diff-refine-removed
+
+                                     )
                           do
                           (set-face-attribute
                            f fr
@@ -1926,6 +1963,28 @@ Also see option `magit-blame-styles'."
                            :box nil
                            :inherit nil
                            :strike-through nil
+                           ;; :slant 'normal
+
+                           ;; :italic t
+                           )))
+
+        ;;  Reverse without inverse
+        (cl-loop for fr in (frame-list)
+                 do
+                 (cl-loop for f in '(
+                                     ;; diff-refine-added
+                                     )
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline nil
+                           :underline nil
+                           :box nil
+                           :inherit nil
+                           :strike-through nil
+                           :foreground "#000000"
+                           :background "#ffffff"
                            ;; :slant 'normal
 
                            ;; :italic t

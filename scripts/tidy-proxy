@@ -1,0 +1,550 @@
+#!/usr/bin/perl
+
+# Tidy Proxy 0.97
+# Copyright (C) 2002-2003,2008  Alexander Kreuzer <alex@freesources.org>
+# This program is free software.  You may copy or
+# redistribute it under the same terms as Perl itself.
+
+use strict;
+use warnings;
+
+use POSIX qw/:sys_wait_h setsid/;
+use FileHandle;
+use IO::Select;
+use IO::Pipe;
+use IPC::Open3;
+use Getopt::Long;
+use Pod::Usage;
+
+use HTTP::Daemon; # from LWP
+use HTTP::Status;
+
+use LWP::UserAgent;
+use HTML::TreeBuilder;
+use Encode;
+
+sub handle_client($);
+sub tidy($$);
+sub validate($$);
+sub gen_output($$$);
+sub logmsg;
+
+my $listen_host = 'localhost';
+my $listen_port = 9090;
+my $tidy_level = 'd'; # 1 for warnings and errors
+                      # 2 for errors
+                      # 'd' set to default 1 for normal and 2 for block
+
+# chomp takes a variable reference and modifies the actual variable
+my $tidy_cmd =  '/usr/bin/tidy';
+my $validate_cmd = '/usr/bin/validate';
+my $HTML_DTD = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">';
+
+my $action = 't';
+my $action_func;
+my $output = 'c';
+my $help = 0;
+my $nodaemonize = 0;
+my $pid_file;
+my $server_front;
+my $loc_rewrite;
+
+my $report_email;
+my $report_emailer;
+
+GetOptions('host=s' => \$listen_host,
+	   'port|p=i' => \$listen_port,
+	   'nodaemon|d' => \$nodaemonize,
+	   'level|l=i' => \$tidy_level,
+	   'action=s' => \$action,
+	   'output=s' => \$output,
+	   'tidy-cmd=s' => \$tidy_cmd,
+	   'validate-cmd=s' => \$validate_cmd,
+	   'pid=s' => \$pid_file,
+	   'dest-host=s' => \$server_front,
+	   'loc-rewrite' => \$loc_rewrite,
+	   'help|h|?' => \$help,
+	   'email=s' => \$report_email,
+	  )
+  or pod2usage(2);
+
+if ($output =~ /^c(ombined)?$/io) {
+  $output = 'c';
+  $tidy_level = 1 if ($tidy_level eq 'd');
+}
+elsif ($output =~ /^m(sg)?$/io) {
+  $output = 'e';
+  $tidy_level = 2 if ($tidy_level eq 'd');
+}
+else {
+  pod2usage('Output must be either c(ombined) or m(sg)');
+}
+
+pod2usage(1) if ($help);
+unless ($tidy_level == 1 or $tidy_level == 2) {
+  pod2usage('Tidy Level must be 1 or 2');
+}
+
+if ($action =~ /^t$/io) {
+  unless (-x $tidy_cmd) {
+      print "$tidy_cmd"; 
+    print STDERR ("Error: tidy command not found\n");
+    exit(4);
+  }
+  $action_func = \&tidy;
+}
+elsif ($action =~ /^v$/io) {
+  unless (-x $validate_cmd) {
+    print STDERR ("Error: validate command not found\n");
+    exit(4);
+  }
+  $action_func = \&validate;
+}
+else {
+  pod2usage('Action must be either v or t');
+}
+
+if (not defined $server_front and $loc_rewrite) {
+  pod2usage('--loc-rewrite must be used with --dest-host');
+}
+
+if ($report_email) {
+  eval "use Email::Simple; use Email::Send; use Email::Simple::Creator";
+  die "Can't located Email::Simple, Email::Send or Email::Simple::Creator" if ($@);
+  $report_emailer = new Email::Send({mailer => 'Sendmail'}); # sendmail should be installed on every unix system ;)
+}
+
+unless ($nodaemonize) {
+  setsid() ;
+  chdir('/');
+  open STDIN, '/dev/null';
+  open STDOUT, '> /dev/null';
+  open STDERR, '> /dev/null';
+
+  $_ = fork;
+  if (defined $_) {
+    if ($_) {
+      exit;
+    }
+    elsif ($pid_file) {
+      open(PID_FILE, "> $pid_file") or warn "Could not open pid file: $!";
+      print PID_FILE $$;
+      close PID_FILE;
+    }
+  }
+  else {
+    die ('Could not fork: $!');
+  }
+}
+
+logmsg 'notice', 'tidy-proxy started';
+
+my $daemon = new HTTP::Daemon(LocalAddr => $listen_host, LocalPort => $listen_port, ReuseAddr => 1)
+  or die "Could not start Daemon: $!";
+my $agent = new LWP::UserAgent(agent => 'TidyProxy'); # maybe allow user to set more options
+
+sub REAPER{
+  local $_ = waitpid -1, WNOHANG;
+  warn 'waitpid error' if ($_ == -1);
+};
+
+$SIG{CHLD} = \&REAPER;
+
+while(1) {
+  my $client = $daemon->accept;
+  next unless($client);
+  $_ = fork;
+  die "Could not fork: $!" unless defined $_;
+  unless ($_) {
+
+    $SIG{CHLD} = 'DEFAULT'; # handle_client calls waitpid self
+
+    handle_client($client);
+    exit 0;
+  }
+}
+
+my $handle_request_sent_header;
+my $handle_request_data;
+my $handle_request_client;
+my $handle_request_pipe;
+
+sub handle_response_data {
+  my $select = IO::Select->new($handle_request_pipe);
+  IO::Select->select($select, undef, $select);
+  if (defined(read $handle_request_pipe, $_, 8129)) {
+    return $_;
+  }
+  else {
+    return undef;
+  }
+}
+
+sub handle_request_data {
+  my ($data, $resp, $protocol) = @_;
+  local $_;
+
+  if ($handle_request_data or $resp->content_type() eq 'text/html') {
+    $handle_request_data .= $data;
+  }
+  else {
+    unless ($handle_request_sent_header) {
+      $handle_request_pipe = IO::Pipe->new;
+      if ($_ = fork) {
+	$handle_request_pipe->writer();
+	$handle_request_pipe->autoflush();
+	$handle_request_sent_header = 1;
+      }
+      elsif (defined $_) {
+	$handle_request_pipe->reader();
+	$resp->content(\&handle_response_data);
+	$handle_request_client->send_response($resp);
+	exit 0;
+      }
+      else {
+	warn "Could not fork $!";
+      }
+    }
+    print $handle_request_pipe $data;
+  }
+}
+
+sub handle_client($) {
+  local $_;
+  my $client = shift;
+  my $conn_host;
+  while (my $req = $client->get_request) {
+    logmsg('info', 'Got Request: ' . $req->uri->as_string . " on pid $$");
+    $req->remove_header('Accept-Encoding');
+
+    if (defined $server_front) {
+      $req->uri("http://$server_front" . $req->uri->path_query);
+      $conn_host = $req->header('Host' => $server_front) if ($loc_rewrite);
+      #$req->remove_header('Referer');
+    }
+    else {
+      $req->remove_header('Proxy-Connection');
+    }
+
+    $handle_request_sent_header = undef;
+    $handle_request_data = undef;
+    $handle_request_client = $client;
+    $SIG{CHLD} = \&REAPER;
+
+    my $resp = $agent->send_request($req, \&handle_request_data);
+
+    $SIG{CHLD} = 'DEFAULT';
+    close $handle_request_pipe if (defined($handle_request_pipe));
+    $resp->content($handle_request_data) if ($resp->is_success); # otherwise content is in $resp allready
+
+    if ($loc_rewrite and defined $server_front and $resp->header('Location')) {
+      $_ = new URI($resp->header('Location'));
+      if ($_->host =~ /^${server_front}$/io) {
+	$_->host($conn_host);
+	$resp->header('Location', $_);
+      }
+    }
+
+    if ($resp->is_success and $handle_request_data and $resp->content_type eq 'text/html') {
+      $_ = &$action_func($handle_request_data, resp_charset($resp));
+      if ($_->[3]) { # html is not valid/tidy
+	if ($report_email) {
+	  my $email = Email::Simple->create(header => [To => $report_email,
+						       Subject => 'Tidy Proxy: Invalid Page Report ' . $req->uri()],
+					    body => "Request: \n============================\n\n" . $req->as_string() . "\n\n\n" .
+					            "Errors:  \n============================\n\n" . $_->[2] . "\n\n\n" .
+					            "Response:\n============================\n\n" . $resp->as_string());
+	  $report_emailer->send($email);
+	}
+	else {
+	  $resp = HTTP::Response->new(200, 'OK', HTTP::Headers->new(Content_Type => 'text/html'), gen_output($req, $resp, $_));
+	}
+      }
+    }
+    unless ($handle_request_sent_header) {
+      $client->send_response($resp);
+    }
+  }
+  $client->close;
+}
+
+sub resp_charset($) {
+  return (($_[0]->header('Content-Type'))[0] =~ /charset=(.*?)(?:\;|$)/)[0];
+}
+
+sub tidy($$) {
+  local $_;
+  my $ca = '';
+  if (defined $_[1]) {
+    if ($_[1] eq 'UTF-8') {
+      $ca = ' -utf8';
+    }
+    else {
+      $ca = ' -raw';
+    }
+  }
+  $_ = systemex::systemex($tidy_cmd . $ca, $_[0]);
+  #$_->[2] = decode('UTF-8', $_->[2]) if (defined $_[1] and $_[1] eq 'UTF-8');
+  push @$_, grep { /\d+ warnings?, \d+ errors? were found\!/o } split /\n/, $_->[2] if ($_->[0] >= $tidy_level);
+  return $_;
+}
+
+sub validate($$) {
+  local $_;
+  $_ = systemex::systemex($validate_cmd, $_[0]);
+  push @$_, "$_->[0] Error(s)" if ($_->[0] > 0);
+  return $_;
+}
+
+sub gen_output($$$) {
+  my $req = shift;
+  my $resp = shift;
+  my $tr = shift;
+
+  my $content = (defined resp_charset($resp) ? eval { decode(resp_charset($resp), $resp->content()) } : $resp->content());
+  $tr->[2] = "Encoding error: $@ \n\n\n" . $tr->[2] if ($@);
+  $content =~ s/\t/        /g;
+  my @orig_html = split "\n", $content;
+  for(local $_ = 0; $_ < @orig_html; $_++) {
+    my @w;
+    while (length $orig_html[$_] > 100) {
+      push @w, substr $orig_html[$_], 0, 100, '';
+    }
+    push @w, $orig_html[$_];
+
+    $orig_html[$_] = sprintf "%4u: %s", $_ + 1, join "\n      ", @w;
+  }
+
+  if ($output eq 'c') {
+    my $button_element = HTML::Element->new('form');
+    $button_element->push_content(HTML::Element->new('input', type => 'button', value => 'Toggle Output', onClick => 'tidy_proxy_toggle_show()'));
+
+    my $script_element = HTML::Element->new('script', type => 'text/javascript');
+    $script_element->push_content(
+<<'SCRIPT'
+window.document.getElementById("tidy_proxy_output").style.display = "none";
+
+function tidy_proxy_toggle_show() {
+   if (window.document.getElementById("tidy_proxy_output").style.display == "none") {
+      window.document.getElementById("tidy_proxy_output").style.display = "block";
+   }
+   else {
+      window.document.getElementById("tidy_proxy_output").style.display = "none";
+
+   }
+}
+SCRIPT
+			       );
+
+    my $main_element = HTML::Element->new('div', style => 'background-color:white; background-image:none; color:black');
+    $main_element->push_content([ 'p', $tr->[3] ],
+				$button_element,
+				[ 'table', { id => 'tidy_proxy_output', border => '1' },
+				  [ 'tr',
+				    [ 'td', { colspan => 2 },
+				      [ 'pre', $tr->[2] ]
+				    ]
+				  ],
+				  [ 'tr',
+				    [ 'td', { valign => 'top' }, [ 'pre', $tr->[1] ] ],
+				    [ 'td', { valign => 'top' }, [ 'pre', join "\n", @orig_html ] ],
+				  ]
+				],
+				$script_element,
+				['hr']
+			       );
+
+    my $tree = HTML::TreeBuilder->new_from_content($content);
+    foreach $_ ($tree->content_list()) {
+      if ($_->tag() =~ /^body$/oi) {
+	$_->unshift_content($main_element);
+	last;
+      }
+    }
+    $_ = $HTML_DTD . $tree->as_HTML;
+    $tree->delete;
+    return $_;
+  }
+  else {
+    my $main_element = HTML::Element->new('html');
+    $main_element->push_content([ 'head', [ 'title', 'Tidy Proxy: Errors on ' . $req->uri->as_string ]],
+				[ 'body',
+				  [ 'h1', $req->uri->as_string ],
+				  [ 'h2', $tr->[3] ],
+				  [ 'table', { border => '1' },
+				    [ 'tr',
+				      [ 'td', { colspan => 2},
+					[ 'pre', $tr->[2] ]
+				      ]
+				    ],
+				    [ 'tr',
+				      [ 'td', { valign => 'top' }, [ 'pre', $tr->[1] ] ],
+				      [ 'td', { valign => 'top' }, [ 'pre', join "\n", @orig_html ] ],
+				    ]
+				  ]
+				]);
+    $_ = $HTML_DTD . $main_element->as_HTML;
+    $main_element->delete;
+    return $_;
+  }
+}
+
+sub logmsg {
+  my ($l, @a) = @_;
+  ($l, @a) = @_;
+  print STDERR @a, "\n";
+}
+
+
+package systemex;
+
+use IPC::Open3;
+use IO::Select;
+use Fcntl;
+
+sub systemex($;$@) {
+  my $prog = shift;
+  my $code = shift;
+  my @args = @_;
+  my ($w, $r, $e) = (FileHandle->new, FileHandle->new, FileHandle->new);
+  my ($ro, $eo);
+  my $pid = open3($w, $r, $e, $prog, @args) or die "Could not start tidy: $!";
+  fcntl($w, F_SETFL, O_NONBLOCK) or warn "Could not fcntl: $!";
+  fcntl($r, F_SETFL, O_NONBLOCK) or warn "Could not fcntl: $!";
+  fcntl($e, F_SETFL, O_NONBLOCK) or warn "Could not fcntl: $!";
+
+  my $w_select = IO::Select->new($w);
+  my $r_select = IO::Select->new($r, $e);
+  my $w_pos = 0;
+  while(1) {
+    my $count = 0;
+
+    if ($w_pos < length($code)) {
+      IO::Select::select($r_select, $w_select, undef);
+
+      while ($_ = syswrite($w, $code, length($code) - $w_pos, $w_pos)) {
+	$w_pos += $_;
+	$count += $_;
+	unless ($w_pos < length($code)) {
+	  $w->close or warn "Could not close write handle: $!";
+	  last;
+	}
+      }
+    }
+    else {
+      $r_select->can_read;
+    }
+
+    my $buf;
+    while($_ = sysread($r, $buf, 1024)) {
+      $ro .= $buf;
+      $count += $_;
+    }
+    while($_ = sysread($e, $buf, 1024)) {
+      $eo .= $buf;
+      $count += $_;
+    }
+    last unless ($count);
+  }
+
+  waitpid($pid, 0) != -1 or warn "Waitpid faild: $!";
+  my $exitcode = $? >> 8;
+
+  return [ $exitcode, $ro, $eo ];
+}
+
+1;
+
+__END__
+
+=head1 NAME
+
+tidy-proxy - html tidy proxy
+
+=head1 SYNOPSIS
+
+S<B<tidy-proxy> [--host hostname] [-p port] [-d] [-l {1|2}] [--action {t|v}] [--tidy-cmd tidy-command] [--validate-cmd validate command] [--pid pid-file] [--email email@addr]>
+
+S<B<tidy-proxy> -h>
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<--host> I<host>
+
+The host paramter sets the listening address for tidy-proxy.
+default: localhost
+
+=item B<-p>, B<--port> I<port>
+
+port sets the listening port for tidy-proxy.
+default: 9090
+
+=item B<-d>, B<--nodaemon>
+
+run tidy-proxy in foreground (don't fork)
+
+=item B<-l>, B<--level> I<level>
+
+sets the filtering level for tidy-proxy
+1: warnings and errors
+2: errors
+Default: 1 for combined output 2 for error only output
+
+=item B<--action> I<t|v>
+
+sets error checking tools
+t for tidy
+v for validate
+Default: tidy
+
+=item B<--output> I<c(ombined)|m(sg)>
+
+Display the output of tidy or validate I<(c)>ombined with original page
+or just the error messages I<m(sg)>.
+Default: c
+
+=item B<--tidy-cmd> I<cmd>
+
+Command to use for tidy.
+Default: F</usr/bin/tidy>
+
+=item B<--validate-cmd> I<cmd>
+
+Command to use for validate.
+Default: F</usr/bin/validate>
+
+=item B<--pid> I<pid-file>
+
+Create a pid file.
+Works only in daemon mode.
+
+=item B<--dest-host> I<destination host>
+
+Run tidy-proxy in reverse-proxy mode.
+Tidy-proxy acts as normal webserver and forwards ervery request
+to I<destionation host>.
+If you use this option, you probably want to enable B<--loc-rewrite>.
+
+=item B<--loc-rewrite>
+
+Rewrite the Location and the Host header in reverse-proxy mode.
+
+=item B<--email email@adr.org>
+
+Send email report, if invalid page is found (instead of reporting it).
+This option requires Email::Simple, Email::Simple::Creator and Email::Send.
+
+=item B<-h>, B<-?>, B<--help>
+
+Prints help message.
+
+=head1 COPYRIGHT
+
+Copyright 2002-2003,2008 Alexander Kreuzer <alex@freesources.org>
+
+This program is free software.  You may copy or
+redistribute it under the same terms as Perl itself.
+
+=cut

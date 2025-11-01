@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+: "${ENABLE_RDRVIEW:="y"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -u) {
+        baseurl="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+input_fp="$(cat | tf txt)"
+
+# echo "$baseurl" | tv &>/dev/null
+if test "$ENABLE_RDRVIEW" = "y"; then
+    # It helps browsing a lot when rdrview is given the URL (rather than taking html from stdin) because the links work better
+    if test -n "$baseurl"; then
+        cat "$input_fp" | rdrview -H -u "$baseurl" | sponge "$input_fp"
+    else
+        cat "$input_fp" | rdrview -H | sponge "$input_fp"
+    fi
+fi
+
+cat "$input_fp"
+rm -f "$input_fp"
+
+# tv -nw

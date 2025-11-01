@@ -559,8 +559,15 @@
         :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
 
+(handle '(eww-mode)
+        :history '(eww-list-history)
+        :summarise '(rdrview)
+        :prevhist '(eww-back-url)
+        :nexthist '(eww-forward-url))
+
 (handle '(w3m-mode)
         :history '(w3m-history)
+        :summarise '(rdrview)
         :prevhist '(w3m-view-previous-page)
         :nexthist '(w3m-view-next-page))
 

@@ -154,11 +154,11 @@ fi
 
 if test "$USE_CHROME" = "y"; then
     if test "$browser_function" = "eww"; then
-        browser_function="pen-eww-js"
+        browser_function="lg-eww-js"
     fi
 elif test "$USE_CHROME" = "n"; then
     if test "$browser_function" = "eww"; then
-        browser_function="pen-eww-nojs"
+        browser_function="lg-eww-nojs"
     fi
 fi
 

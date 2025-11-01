@@ -102,7 +102,9 @@
                                   bible-fz-chapter-titles-go
                                   bible-fz-passage-outlines-go))
 (defset w3m-mode-funcs '(w3m-enable-display-html-for-fontify
-                         w3m-disable-display-html-for-fontify))
+                         w3m-disable-display-html-for-fontify
+                         eww-summarize-this-page
+                         rdrview))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
@@ -320,6 +322,7 @@
                          eww-reload-cache-for-page
                          eww-open-browsh
                          eww-summarize-this-page
+                         rdrview
                          google-this-url-in-this-domain
                          pen-eww-save-image
                          pen-eww-save-image-auto))

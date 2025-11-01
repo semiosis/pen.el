@@ -154,6 +154,13 @@ if pen-pl "$fp" | grep -q -P '^/.*:'; then
     exit 0
 fi
 
+# strongs code
+if pen-pl "$fp" | grep -q -P '[HG][0-9]+'; then
+    url="$(p "$fp" | sed -e "s|\\([HG]\\)\\([0-9]\\+\\)|https://biblehub.com/\\1/\\2.htm|" -e "s|/G/|/greek/|" -e "s|/H/|/hebrew/|")"
+    ff "$url"
+    exit 0
+fi
+
 if pen-pl "$fp" | grep -q -P '^file://'; then
     case "$fp" in
         *racket*) {

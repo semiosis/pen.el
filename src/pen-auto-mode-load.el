@@ -8,6 +8,8 @@
 (add-to-list 'magic-mode-alist '("^#lang racket" . racket-mode))
 ;; (add-to-list 'magic-mode-alist '("^# japanese" . japanese-org-mode))
 (add-to-list 'magic-mode-alist '("^#lang scribble" . scribble-mode))
+;; Because the flk examples use .clj, I want to override this
+(add-to-list 'magic-mode-alist '("#!/usr/bin/env flk" . lisp-mode))
 (add-to-list 'magic-mode-alist '("^#lang " . racket-mode))
 (add-to-list 'magic-mode-alist '("^#.*env stack$" . haskell-mode))
 (add-to-list 'magic-mode-alist '("^#.*sbcl" . lisp-mode))

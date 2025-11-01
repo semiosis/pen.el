@@ -1497,6 +1497,7 @@ xmap Ze "zy;silent! call Babel("emacs-lisp") \| call ReselectVisualTL()<CR>P
 xmap ZH "zy;silent! call Babel("haskell") \| call ReselectVisualTL()<CR>P
 xmap ZJ "zy;silent! call Babel("clojure") \| call ReselectVisualTL()<CR>P
 xmap ZT "zy;silent! call Babel("text") \| call ReselectVisualTL()<CR>P
+xmap Zq "zy;silent! call Babel("quote") \| call ReselectVisualTL()<CR>P
 
 function! RunInTmux(cmd)
     call system('tnw -icmd', a:cmd)

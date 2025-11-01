@@ -3,4 +3,11 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-/usr/bin/curl "$@"
+export HTTP_PROXY
+: "${http_proxy:="$HTTP_PROXY"}"
+if test -n "$http_proxy"; then
+    http_proxy="$http_proxy" /usr/bin/curl "$@"
+    # http_proxy="$http_proxy" /usr/bin/curl -x localhost:9090 "$@"
+else
+    /usr/bin/curl "$@"
+fi

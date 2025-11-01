@@ -116,7 +116,8 @@
                 nil
                 "eww history: ")))
       (if url
-          (lg-eww url)))))
+          ;; (lg-eww url)
+          (pen-smart-choose-browser-function url)))))
 
 (defun eww-retrieve (url callback cbargs)
   (if (null eww-retrieve-command)
@@ -1482,7 +1483,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
       (lg-eww (car args) eww-use-chrome))
     (when (= arg 1)
 
-      (lg-eww (car args)))))
+      ;; (lg-eww (car args))
+      (tpop (cmd "ff" (car args))))))
 (advice-add 'browse-url-generic :around #'browse-url-generic-around-advice)
 ;; (advice-remove 'browse-url-generic #'browse-url-generic-around-advice)
 
@@ -1595,6 +1597,9 @@ xdg-open is a desktop utility that calls your preferred web browser."
            (setq url (urldecode (pen-sed "/.*google.com\\/url?q=/{s/^.*google.com\\/url?q=\\([^&]*\\)&.*/\\1/}" url)))))
 
     (cond
+     ;; Pass through `pen-handle-url` first.
+     ;; If it is handled by `pen-handle-url`
+     ;; then snq will return true. Otherwise, continue matching.
      ((pen-snq (pen-cmd-safe "pen-handle-url" url))
       t)
      ((string-match-p "https?://github.com/.*/issues" url)
@@ -1747,12 +1752,7 @@ instead of `browse-url-new-window-flag'."
     (lg-eww (get-path))))
 (advice-add 'eww-reload :around #'eww-reload-around-advice)
 
-(defun eww-summarize-this-page (url)
-  (interactive (let* ((p (get-path)))
-                 (list p)))
-
-  (if (sor url)
-      (mtv (pen-snc (pen-cmd-safe "pen-summarize-page" url)))))
+(defalias 'eww-summarize-this-page 'rdrview)
 
 (defun google-this-url-in-this-domain (url domain)
   (interactive (let* ((p (get-path))

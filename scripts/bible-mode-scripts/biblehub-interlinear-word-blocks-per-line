@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# "biblehub-interlinear-get-word-blocks-pipeline" "https://biblehub.com/interlinear/romans/4-16.htm" | biblehub-interlinear-format-verse-table | biblehub-interlinear-word-blocks-per-line
+
+pen-aatr -k -r "\n\n" "sed -n 1p" | sed -z 's/\n\n//g' | sed "s/./-/g" | ved -m "vipgw" | awk '{ print NF }'

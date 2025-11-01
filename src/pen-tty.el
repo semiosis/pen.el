@@ -60,8 +60,11 @@
   "Copies the function name associated with a key binding after entering it"
   (interactive (list (format "%s" (key-description (read-key-sequence-vector "Key: ")))))
   (let* ((fun (str (key-binding (kbd sequence)))))
-    (xc fun)
-    (message "%s" (concat "copied: " fun))))
+    (if (interactive-p)
+        (progn
+          (xc fun)
+          (message "%s" (concat "copied: " fun)))
+      fun)))
 
 (defun test-yank-function-from-binding ()
   (yank-function-from-binding "\e[21;2~")

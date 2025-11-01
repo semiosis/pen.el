@@ -3,6 +3,20 @@ export TTY
 
 . $PENELD/scripts/utils.sh
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -dohs) {
+        DO_HS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_HS" = "y"; then
+    . $SCRIPTS/lib/hs
+fi
+
 if stdin_exists && test "$#" -eq 0; then
     input_fp="$(cat | tf sh)"
 

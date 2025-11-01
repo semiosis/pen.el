@@ -339,9 +339,10 @@ The completion method is determined by `completion-at-point-functions'."
                         (car (xml-parse-region
                               (point-min) (point-max)))
                         'CompleteSuggestion)
-   for pen-i in result-alist collect
+   for i in result-alist collect
    (cdr (cl-caadr (assq 'suggestion i)))))
 
+;; (helm-google-suggest-fetch "clojure multimethod")
 (defun helm-google-suggest-fetch (input)
   "Fetch suggestions for INPUT from XML buffer."
   (let ((request (format helm-google-suggest-url

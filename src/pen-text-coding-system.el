@@ -98,8 +98,8 @@ e.g., for sending an email message.\n ")
 		              (dolist (elt (cdr coding))
 		                (insert " ")
 		                (if (stringp from)
-			                  (insert (if (< pen-i 10) (cdr elt) "..."))
-		                  (if (< pen-i 10)
+			                (insert (if (< i 10) (cdr elt) "..."))
+		                  (if (< i 10)
 			                    (insert-text-button
 			                     (cdr elt)
 			                     :type 'help-xref
@@ -116,8 +116,8 @@ e.g., for sending an email message.\n ")
 			                   "mouse-2, RET: next unencodable character"
 			                   'help-function func2
 			                   'help-args (list bufname (car elt)
-					                                (car coding)))))
-		                (setq pen-i (1+ i))))
+					                            (car coding)))))
+		                (setq i (1+ i))))
 		            (insert "\n"))
 	            (insert (substitute-command-keys "\
 

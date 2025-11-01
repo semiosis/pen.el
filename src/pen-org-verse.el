@@ -5,12 +5,19 @@
 (defconst org-verse-mode-keymap (make-keymap))
 (define-key org-verse-mode-keymap (kbd "C-c /") #'org-verse-buttonize-buffer)
 
+(defun push-button-with-prefix ()
+  (interactive)
+  (let ((current-prefix-arg '(4)))
+    (call-interactively 'push-button)))
+
+(define-key button-map (kbd "M-<down-mouse-1>") 'push-button-with-prefix)
+
 (define-button-type 'org-verse-button
   'action #'org-verse-button-verse
   'follow-link t
   'face 'org-verse-number-face
   ;; 'help-echo "Clic le boutton pour lire le verset."
-  'help-echo "Click the button to read the verse"
+  'help-echo "Click the button to read the verse. Shift click to pick translation."
   'help-args "test")
 
 (defun org-verse-button-verse (button)
@@ -22,7 +29,10 @@
         (modname (or (and (or (major-mode-p 'bible-mode)
                               (major-mode-p 'bible-search-mode))
                           (s-upcase (bible-shorten-module-name bible-mode-book-module)))
-                     (fz-bible-version))))
+
+                     (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                         (fz-bible-version)
+                       "ESV"))))
 
     (tpop-fit-vim-string (pen-snc (cmd "bible-tpop-lookup" "-c" "-m" modname
                                        (concat

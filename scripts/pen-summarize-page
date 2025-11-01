@@ -15,7 +15,12 @@ case "$url" in
     ;;
 
     *) {
-        0</dev/null rdrview "$url" | pen-str summary
+        # unbuffer rdrview "$url" | pen-str summary | cat
+        # rdrview "$url" | pen-str summary | cat
+        # ub -E "$(cmd rdrview "$url" | cat)" | pen-str summary | cat
+        unbuffer bash -c "rdrview \"$url\" | pen-str summary"
+        # which unbuffer
+        # unbuffer /usr/local/bin/rdrview "$url" | pen-str summary | cat
     }
     ;;
 esac

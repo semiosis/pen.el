@@ -215,7 +215,7 @@ usually part of a code-block."
 (defun sx-question-mode--erase-and-print-question-after-advice (&rest args)
   (run-hooks 'sx-question-mode--erase-and-print-question-after-hook))
 (advice-add 'sx-question-mode--erase-and-print-question :after 'sx-question-mode--erase-and-print-question-after-advice)
-(add-hook 'sx-question-mode--erase-and-print-question-after-hook 'run-buttonize-hooks)
+(add-hook 'sx-question-mode--erase-and-print-question-after-hook 'pen-run-buttonize-hooks)
 (add-hook 'sx-question-mode--erase-and-print-question-after-hook 'sx-move-to-accepted-answer)
 
 (define-key sx-question-mode-map (kbd "M-G") 'sx-google-instead)

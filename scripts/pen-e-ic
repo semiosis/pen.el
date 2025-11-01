@@ -162,6 +162,21 @@ case "$sn" in
     }
     ;;
 
+    erdrview) {
+        ic=rdrview
+    }
+    ;;
+
+    erdrview-pager) {
+        ic=rdrview-pager
+
+        if test "$NOEMACS" = "y"; then
+            v "$@"
+            exit "$?"
+        fi
+    }
+    ;;
+
     ecalc) {
         ic=calc-edit-scratch
     }
@@ -189,6 +204,23 @@ case "$sn" in
 esac
 
 ic="$(p "$ic" | sed "s/^e-//")"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+# This is an interactive command, so we are going to display emacs
+if stdin_exists; then
+    set -- "$(cat)" "$@"
+    exec <&1
+fi
 
 if test "$#" -gt 0; then
     if test "$eargs" = "y"; then

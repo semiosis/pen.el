@@ -34,8 +34,8 @@
 
 (defun pen-egr-guru99 (query)
   (interactive (list (read-string-hist "egr:" "guru99 ")))
-  ;; (pen-sps (concat "eww " (pen-q (car (str2list (pen-sn (concat "gl " (pen-q query))))))))
-  (eww (car (str2list (pen-sn (concat "gl " (pen-q query)))))))
+  ;; (pen-sps (concat "eww " (pen-q (car (pen-str2list (pen-sn (concat "gl " (pen-q query))))))))
+  (eww (car (pen-str2list (pen-sn (concat "gl " (pen-q query)))))))
 
 (defun pen-rat-dockerhub-search (query)
   (interactive (list (read-string-hist "dockerhub:")))
@@ -43,11 +43,11 @@
 
 (defun pen-k8s-hub-search-eww (query)
   (interactive (list (read-string-hist "egr:" "kubernetes hub ")))
-  (pen-sps (concat "eww " (pen-q (car (str2list (pen-sn (concat "gl " (pen-q query) " | grep helm.sh/charts/"))))))))
+  (pen-sps (concat "eww " (pen-q (car (pen-str2list (pen-sn (concat "gl " (pen-q query) " | grep helm.sh/charts/"))))))))
 
 (defun pen-k8s-hub-search (query)
   (interactive (list (read-string-hist "helm hub install:" "")))
-  (fz (str2list (chomp (pen-sn (concat "helm search hub -o json " (pen-q query) " | jq -r '.[].url'"))))
+  (fz (pen-str2list (chomp (pen-sn (concat "helm search hub -o json " (pen-q query) " | jq -r '.[].url'"))))
       nil nil "k8s hub: "))
 
 (defun sh/gc (url)
@@ -95,7 +95,7 @@
   (let ((l1)
         (l2))
     (if (stringp lors)
-        (setq lors (str2list lors)))
+        (setq lors (pen-str2list lors)))
 
     (loop for pen-ux in lors collect
           (list u
@@ -106,7 +106,7 @@
 
 (defun annotate-github-urls-with-info (urls)
   (if (stringp urls)
-      (setq urls (str2list urls)))
+      (setq urls (pen-str2list urls)))
 
   (loop for pen-ux in urls collect
         (list u
@@ -154,7 +154,7 @@
   (term-nsfa-tm (concat "gc " (pen-q (fz (pen-sn (concat "glh " query)))))))
 
 ;; smth is used for the browse function handler
-;; So if pen-i want to add extra stuff I must place it later
+;; So if i want to add extra stuff I must place it later
 (defun chrome (url &optional smth)
   (interactive (list (read-string-hist "chrome url: ")))
   (pen-cl-sn (concat "chrome " (pen-q url)) :detach t))

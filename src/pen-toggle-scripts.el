@@ -187,9 +187,7 @@
                               (eval
                                `(lambda (b)
                                   (let* ((currentstatus (pen-rc-test ,r))
-                                         (status (toggle-pen-rc ,r (if currentstatus
-                                                                     "off"
-                                                                     "on"))))
+                                         (status (toggle-pen-rc ,r)))
                                     (if status
                                         (button-put b 'type 'on-button)
                                       (button-put b 'type 'off-button))))))

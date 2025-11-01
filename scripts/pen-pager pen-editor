@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ]
+}
+
+: "${EDITOR:="v"}"
+: "${PAGER:="v"}"
+export EDITOR
+export PAGER
+export GY_CMD
+
+pager() {
+    if is_tty; then
+        fp="$(pen-strip-ansi | tf txt)"
+        exec <&1
+        "$EDITOR" "$fp"
+    else
+        cat
+    fi
+}
+
+pager "$@"

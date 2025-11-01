@@ -150,7 +150,7 @@ If FILEXT is provided, return files with extension FILEXT instead."
 ;; (setq org-indent-mode t) ;; this looks nice but is annoying in vt100 ;; this added extra stars to the start
 ;; and needs an annoying redraw
 (setq org-startup-truncated nil)
-;; (setq org-startup-truncated t) ;; I think pen-i want this ; this isn't truncating long lines so disable it
+;; (setq org-startup-truncated t) ;; I think i want this ; this isn't truncating long lines so disable it
 (setq auto-fill-mode -1)
 ;; (setq-default fill-column 99999)
 ;; (setq fill-column 99999)
@@ -166,7 +166,7 @@ If FILEXT is provided, return files with extension FILEXT instead."
 (setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
 (setq default-tab-width 4)
 
-;; pen-i like pageup page down for buffer changes.
+;; i like pageup page down for buffer changes.
 (global-set-key [(control next)] 'next-buffer)
 (global-set-key [(control prior)] 'previous-buffer)
 

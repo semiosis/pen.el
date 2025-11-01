@@ -7,6 +7,11 @@
 ;; display properly, such as in Customize.
 (setq avy-style 'at)
 
+;; But at-full is nice for rdrview-minor-mode
+
+;; So I put this in the rdrview-minor-mode definition
+;; (setq-local avy-style 'at-full)
+
 ;; For avy-goto-char-timer
 (setq avy-timeout-seconds 0.2)
 

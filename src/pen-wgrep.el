@@ -41,7 +41,7 @@
                  res))))))
     (nreverse res)))
 
-;; Can't change for existence if pen-i am mnm the grep list because it will spawn too many mnm
+;; Can't change for existence if i am mnm the grep list because it will spawn too many mnm
 (defun wgrep-parse-command-results ()
   (let ((cache (make-hash-table)))
     (while (not (eobp))

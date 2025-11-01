@@ -97,7 +97,7 @@
           ;; [[info:(org) Feedback]]
           ;; For example: $ emacs -Q -l /path/to/minimal-org.el
           ("^ +\\$ .*" . 'info-bullet-point)
-          ("^ +(.*" . 'info-bullet-point)
+          ("^ +([^)]*)" . 'info-bullet-point)
           ;; For example: :after magit
           ;; [[info:(magithub) Installation]]
           ("^ +:.*" . 'info-bullet-point)

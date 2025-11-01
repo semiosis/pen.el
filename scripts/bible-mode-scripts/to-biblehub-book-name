@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+cat |
+    canonicalise-bible-book-title |
+    sed -u -z 's/[A-Z]/\L&/g' ` # to lower-case ` |
+    sed "s/iii_/3_/" |
+    sed "s/ii_/2_/" |
+    sed "s/i_/1_/" |
+    sed "s/_of_john//" |
+    sed "s/song_of_solomon/songs/" |
+    cat
+ 

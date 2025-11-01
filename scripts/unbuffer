@@ -11,4 +11,4 @@ for arg in "$@"; do case "$arg" in
     *) break ;;
 esac; done
 
-/usr/bin/unbuffer "${a[@]}" env IN_UNBUFFER=y "$@"
+/usr/bin/unbuffer "${a[@]}" env -S IN_UNBUFFER=y "$@"

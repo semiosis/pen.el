@@ -97,6 +97,9 @@
          (widget-show-properties-here))
         (((button-at (point)))
          (button-show-properties-here))
+        (((widget-at (point)))
+         (pen-widget-get-value-at-point
+          pen-widget-show-keymap-at-point))
         (((bound-and-true-p ports-tablist-mode))
          (server-suggest))
         (((bound-and-true-p subnetscan-tablist-mode))

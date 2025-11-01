@@ -65,6 +65,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -runit) {
+        runit=y
+        shift
+    }
+    ;;
+
     -ls|-li|-list) {
         cat "$SCRIPTS/${sn}" | pen-scrape "trycr [^\$ ]+$" | cut -d ' ' -f 2 | print-line-if-path-exists | uniqnosort | pen-pavs
         exit $?
@@ -2408,24 +2414,40 @@ case "$file_type" in
     ;;
 
     c) {
-        cd "$td_cr"
-        ln -s "$rp"
-        #CWD="$td_cr" zrepl -cm gcc -g "./$fn" -lm -o "$mant" \; "./$fn"
-
         if cat "$rp" | grep -q -P '<sqlite3.h>'; then
             gcc_extra_args+=" -lsqlite3 "
+
+        elif cat "$rp" | grep -q -P '<uuid/'; then
+            gcc_extra_args+=" -luuid "
 
             # Consider adding something also to install the libraries
             # agi libsqlite3-0 libsqlite3-dev
         fi
 
-        # g++ main.cpp -lsqlite3
+        if test "$runit" = "y"; then
+            (
+                cd "$td_cr"
+                ln -s "$rp"
+                eval "gcc -g \"./$fn\" -lm $gcc_extra_args -o \"$mant\";"
+            )
+            if test -f "$td_cr/$mant"; then
+                "$td_cr/$mant" "$@"
+            else
+                exit 1
+            fi
+        else
+            cd "$td_cr"
+            ln -s "$rp"
+            #CWD="$td_cr" zrepl -cm gcc -g "./$fn" -lm -o "$mant" \; "./$fn"
 
-        CWD="$td_cr" zrepl -cm -E "gcc -g \"./$fn\" -lm $gcc_extra_args -o \"$mant\"; ./$mant"
+            # g++ main.cpp -lsqlite3
 
-        # cd_run "$cd_cr"
-        # And here I could use my terminal automation script to pretype
-        # the command
+            CWD="$td_cr" zrepl -cm -E "gcc -g \"./$fn\" -lm $gcc_extra_args -o \"$mant\"; ./$mant"
+
+            # cd_run "$cd_cr"
+            # And here I could use my terminal automation script to pretype
+            # the command
+        fi
         exit 0
     }
     ;;

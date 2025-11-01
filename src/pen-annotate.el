@@ -376,7 +376,7 @@ results can be filtered with a simple query language: see
 
 ;; This makes it so the .annotaitons file is prettied up
 ;; It's slower but I can use it this way sometimes
-;; I can also debug why it gets slow and filter out files pen-i don't want
+;; I can also debug why it gets slow and filter out files i don't want
 (defun annotate-dump-annotation-data (data)
   "Save `data` into annotation file."
   (with-temp-file annotate-file
@@ -663,7 +663,7 @@ results can be filtered with a simple query language: see
 ;; (remove-hook 'kill-buffer-hook 'if-annotating-save-annotations)
 
 
-;; This fixed a bug that rather annoyingly sometimes deleted key bindings when pen-i made a newline
+;; This fixed a bug that rather annoyingly sometimes deleted key bindings when i made a newline
 (defun annotate--remove-annotation-property-around-advice (proc &rest args)
   (let ((res (ignore-errors (apply proc args))))
     res))

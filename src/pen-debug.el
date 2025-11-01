@@ -136,6 +136,11 @@
                          pen_loaded_packages)
                         (all-loaded-packages))) nil nil "Package:")))
 
+  ;; Or use j:locate-library
+  ;; (locate-library "ol-irc")
+
+  ;; Locate-library does partial searches and doesn't give an exhaustive list of libraries
+
   (if (symbolp p)
       (setq p (str p)))
 

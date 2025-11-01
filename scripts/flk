@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+$MYGIT/chr15m/flk/docs/flk "$@"

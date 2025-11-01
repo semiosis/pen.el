@@ -2400,3 +2400,4 @@ flymake-fennel
 highlight2clipboard
 hl-anything
 window-jump
+global-tags

@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# turn this into a e:pen-tm function
+
+# An unbuffer clone that uses tmux instead of tcl/expect
+
+pen-tm -te -d nw -coe "$@"

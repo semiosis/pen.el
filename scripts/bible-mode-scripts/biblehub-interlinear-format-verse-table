@@ -8,8 +8,10 @@ export TTY
 # ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | biblehub-interlinear-format-verse-table
 
 input_fp="$(cat | tf txt)"
-word_blocks="$(cat "$input_fp" | sed -n "/^[0-9]\\+/p" | wc -l)"
+# word_blocks="$(cat "$input_fp" | sed -n "/^[0-9]\\+/p" | wc -l)"
+word_blocks_per_line="$(cat "$input_fp" | biblehub-interlinear-word-blocks-per-line)"
+echo "$word_blocks_per_line" | pavs
 
-cat "$input_fp" | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
+# cat "$input_fp" | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | pavs
 
 # OK, so first count the words blocks

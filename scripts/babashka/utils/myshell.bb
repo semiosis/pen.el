@@ -95,9 +95,24 @@ emacs' s-lines is replaced by split.
   (:out
    (sh "sh" "-c" s :in (str s))))
 
-(defn snc [s]
-  (:out
-   (sh "sh" "-c" s :in (str s))))
+;; Can I really call this snc unless it is not chomping the output?
+(defn snc
+  ([s]
+   (s/trim-newline
+    (:out
+     (sh "sh" "-c" s))))
+  ([s input]
+   (s/trim-newline
+    (:out
+     (sh "sh" "-c" s :in (str input))))))
+
+(defn sn
+  ([s]
+   (:out
+    (sh "sh" "-c" s)))
+  ([s input]
+   (:out
+    (sh "sh" "-c" s :in (str input)))))
 
 (defn snc1
   ""

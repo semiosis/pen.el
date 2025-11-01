@@ -616,24 +616,28 @@ delim is used to guarantee the function returns multiple matches per line
    "export "
    (sh-construct-envs varval-tuples)))
 
+(defun sh-construct-envs-list (varval-tuples)
+  "Useful for call-process-region"
+  (-filter
+   'identity
+   (cl-loop for tp in varval-tuples
+            collect
+            (let ((lhs (car tp))
+                  (rhs (cadr tp)))
+              (if tp
+                  (concat
+                   lhs
+                   "="
+                   (if rhs
+                       (if (booleanp rhs)
+                           "y"
+                         (pen-bs "`" (pen-q rhs)))
+                     "")))))))
+
 (defun sh-construct-envs (varval-tuples)
   (s-join
    " "
-   (-filter
-    'identity
-    (cl-loop for tp in varval-tuples
-             collect
-             (let ((lhs (car tp))
-                   (rhs (cadr tp)))
-               (if tp
-                   (concat
-                    lhs
-                    "="
-                    (if rhs
-                        (if (booleanp rhs)
-                            "y"
-                          (pen-bs "`" (pen-q rhs)))
-                      ""))))))))
+   (sh-construct-envs-list varval-tuples)))
 
 (defun pen-worker-name ()
   (let ((d (daemonp)))
@@ -1673,6 +1677,9 @@ when s is a string, set the clipboard to s"
       (cond
        ((derived-mode-p 'sh-mode)
         (message "Disabled lsp for sh"))
+       ((or (derived-mode-p 'c-mode)
+            (derived-mode-p 'c-ts-mode))
+        (message "Disabled lsp for c"))
        ((derived-mode-p 'lisp-mode)
         (message "Disabled lsp for common-lisp"))
        ((derived-mode-p 'prompt-description-mode)

@@ -6,6 +6,18 @@
 (defun monotonically-increasing-tuple-permutations (input)
   (s-lines (pen-snc "monotonically-increasing-tuple-permutations.py" input)))
 
+;; Why is this not working [[el:(etv (ultimatelexicon-define "pesteringly"))]]
+
+;; https://ultimatelexicon.com/definitions/p/pesteringly/
+(defun ultimatelexicon-define (word)
+  (interactive (list (rshi "ultimatelexicon-define: " (pen-thing-at-point))))
+  (if (sor word)
+      (let* ((firstchar (s-substring "^." word))
+             (url (format "https://ultimatelexicon.com/definitions/%s/%s/" firstchar word)))
+        (if (interactive-p)
+            (w3m url)
+          (pen-snc (concat (cmd "rdrview" url) " | cat | tv"))))))
+
 (defun dictionaryapi-define (word)
   (interactive (list (rshi "dictionaryapi-define: " (pen-thing-at-point))))
   (let ((d (sor (chomp (pen-snc (pen-cmd "dictionaryapi-define" word))))))

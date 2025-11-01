@@ -110,6 +110,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :callees)
 (add-to-list 'handle-keywords :callers)
 (add-to-list 'handle-keywords :showuml)
+(add-to-list 'handle-keywords :summarise)
 (add-to-list 'handle-keywords :nextdef)
 (add-to-list 'handle-keywords :prevdef)
 (add-to-list 'handle-keywords :nexterr)

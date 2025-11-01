@@ -52,6 +52,7 @@
                      (println (myshell/tv (which executable))))))
 
 
+;; Cider REPL doesn't hang because this uses a -main function
 
 (defn -main [& args]
   ;; bbb handles the -main well now.

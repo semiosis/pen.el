@@ -84,6 +84,8 @@
            (derived-mode-p 'c++-mode))
           ;; I want URLs to work as well, so use ace-link-button-or-org which can handle URLs
           (ace-link-button-or-org))
+         ((bound-and-true-p pen-rdrview-minor-mode)
+          (ace-link-button-or-org))
          ((bound-and-true-p org-link-minor-mode)
           (ace-link-org))
          ((eq major-mode 'emacs-lisp-mode)

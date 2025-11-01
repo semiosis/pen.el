@@ -3,11 +3,6 @@
 ;; Need functions for listing music file types
 (defvar music-extensions '(mp4 m4a webm mkv mp3))
 
-(defun everynoise ()
-  (interactive)
-  (eww "https://everynoise.com/"))
-(defalias 'random-music 'everynoise)
-
 ;; (syms2str music-extensions)
 ;; (list2str music-extensions)
 
@@ -98,19 +93,6 @@
 
 (defalias 'oc 'pen-org-clink-urls)
 
-(defun swordfish-ost ()
-  (interactive)
-  (pen-play-playlist "[[https://www.youtube.com/playlist?list=OLAK5uy_mPdRDb_IJmG3DDeOlSwI5_rKKtAEZogys][Swordfish The Album (Original Motion Picture Soundtrack) - YouTube]]"))
-
-(defun clubbed-to-death ()
-  (interactive)
-  (pen-play-playlist "[[https://www.youtube.com/watch?v=pFS4zYWxzNA][clubbed to death - Matrix soundtrack - YouTube]]"))
-
-(defun furious-angels ()
-  (interactive)
-  ;; (bld pen-play-song "$DUMP$NOTES/ws/music/furious-angels/Rob Dougan - Furious Angels-jtAmFKaThNE.m4a")
-  (bld pen-play-song "[[https://www.youtube.com/watch?v=PJ8vJ2Qjuuc][Furious Angels - Rob Dougan - YouTube]]"))
-
 (defun pen-ytsearch (query)
   (if (string-match-p "\\bhttps?:" query)
       (setq query (chomp (sh/xurls query)))
@@ -193,22 +175,9 @@
   "Search for epic music and play it."
   (pen-search-play-yt "epic music"))
 
-(defun elements-of-life ()
-  (interactive)
-  (pen-play-song "[[https://www.youtube.com/watch?v=V9HKtPVms_Y][Tiesto elements of Life - YouTube]]"))
-
 (defun prince-of-egypt-reprise ()
   (interactive)
   (pen-play-song "https://www.youtube.com/watch?v=E1rEmAQJ7EQ&t=415"))
-
-(defun neverending-story ()
-  (interactive)
-  (bld pen-play-song "[[https://www.youtube.com/watch?v=heHdOTt_iGc&t][The Neverending Story (1984)  Soundtrack  - YouTube]]"))
-
-(defun dark-knight-watchful-guardian ()
-  "5 / 5"
-  (interactive)
-  (bld pen-play-song "[[https://www.youtube.com/watch?v=buejiFXN7Hw][Hans Zimmer - A Watchful Guardian The Dark Knight - YouTube]]"))
 
 (defun william-tell-overture ()
   (interactive)
@@ -224,6 +193,7 @@
   (pm "https://www.youtube.com/watch?v=nnD8FKXzIGs")
   (pm "[[https://www.youtube.com/watch?v=ZqZdfxc-fq0][Simpsons - Planet of the Apes, the musical - YouTube]]"))
 
+;; TODO Remove on next docker flatten
 (defun pen-your-imagination ()
   (interactive)
   (eval

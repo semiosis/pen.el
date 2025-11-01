@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+: "${script_fp:="$last_arg"}"
+
+test -f "$script_fp" || exit 1
+
+rp="$(realpath "$script_fp")"
+bn="$(basename -- "$rp")"
+
+td_compile="$(mktemp -t -d td_compileXXXXXX || echo /dev/null)"
+# trap "test -n \"$td_compile\" && test -d \"$td_compile\" && rmdir -rf \"$td_compile\" 2>/dev/null" 0
+
+# Compile and run using cr
+
+cp -a "$script_fp" "$td_compile"
+cd "$td_compile"
+sed -i '1{/^#!/d}' "$bn"
+cr -runit "$bn"

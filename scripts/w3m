@@ -3,4 +3,54 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-/usr/bin/w3m "$@"
+test "$#" -gt 0 && last_arg="${@: -1}"
+test "$#" -gt 1 && last_two_args="${@: -2}"
+
+# This is a bit of a hack to get websites such as stackoverflow (which only serve browsers with JS) work in w3m
+# and in ew3m which still will display the errors, but at least serve the page as well.
+# https://stackoverflow.com/questions/11807128/emacs-nesting-exceeds-max-lisp-eval-depth
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if pen-rc-test -f w3m_use_chome_dump; then
+    if printf -- "%s\n" "$last_two_args" | grep -q -P '^-dump_extra http'; then
+      # run it normally first, so that the other information is obtained
+      full_w3m_normal_output="$(ocif /usr/bin/w3m "$@")"
+      start_bit="$(printf -- "%s\n" "$full_w3m_normal_output" | sed "1,/^Content-Type:/{s/^/KEEP:/}" | sed -n "/^KEEP:/{s/^KEEP://p}")"
+
+      url="$last_arg"
+      # set -o pipefail
+      test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+      set -- -T text/html "$@"
+
+      chrome_html="$(ocif spin dom-dump "$url" | /usr/bin/w3m "$@" | sed '1,/^W3m-document-charset:/d' | htmlentities-decode.sh)"
+      ret="$?"
+      printf -- "%s\n" "$start_bit" "$chrome_html"
+      CMD="$(cmd "$@")"
+      : ${CMD:="$(cmd "$@")"}
+      exit "$ret"
+    fi
+fi
+
+# /usr/bin/w3m "$@" | tv -nw
+
+if stdin_exists; then
+    if test "$1" = "-halfdump"; then
+        # /usr/bin/w3m "$@" | htmlentities-decode.sh | tv -nw
+        /usr/bin/w3m "$@" | htmlentities-decode.sh
+    else
+        /usr/bin/w3m "$@"
+    fi
+else
+    /usr/bin/w3m "$@"
+fi
+

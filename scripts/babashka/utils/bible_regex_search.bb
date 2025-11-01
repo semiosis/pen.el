@@ -11,6 +11,8 @@
 
 (require '[clojure.java.io :as io])
 
+;; Cider REPL doesn't hang because this uses a -main function
+
 ;; I can E on -main function now from lispy
 ;; e.g.
 ;; (1/3) & args:

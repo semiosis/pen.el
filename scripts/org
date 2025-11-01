@@ -101,6 +101,7 @@ case "$opt" in
         } | while read -r uri; do
             (
             exec 0</dev/null
+            exec 2>/dev/null
 
             unminimised="$(p "$uri" | umn)"
 

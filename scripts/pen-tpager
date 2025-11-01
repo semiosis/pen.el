@@ -6,4 +6,19 @@ export TTY
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-sps -iftty bash -c "strip-ansi | vs $CMD"
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    sps -iftty bash -c "strip-ansi | vs $CMD"
+else
+    sps -iftty bash -c "vs $CMD"
+fi

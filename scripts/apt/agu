@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+# Debian 10
+# Ensure these are present:
+IFS= read -r -d '' sources <<HEREDOC
+deb http://archive.debian.org/debian buster main contrib
+deb-src http://archive.debian.org/debian buster main contrib
+deb http://archive.debian.org/debian buster-updates main contrib
+deb-src http://archive.debian.org/debian buster-updates main contrib
+deb http://archive.debian.org/debian-security buster/updates main contrib
+deb-src http://archive.debian.org/debian-security buster/updates main contrib
+deb http://archive.debian.org/debian bullseye-backports main contrib
+HEREDOC
+
+# Append and then do the unique no sort later
+printf -- "\n%s\n" "$sources" >> /etc/apt/sources.list
+
+# Then:
+sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list
+sed -i 's|security.debian.org|archive.debian.org|g' /etc/apt/sources.list
+# sed -i '/stretch-updates/d' /etc/apt/sources.list
+
+# Remove non-free
+sed -i 's| non-free||g' /etc/apt/sources.list
+
+# Add contrib
+sed -i 's| main$| main contrib|g' /etc/apt/sources.list
+
+sed -i 's|-security/ |-security |g' /etc/apt/sources.list
+
+sed -i 's|-security/ |-security |g' /etc/apt/sources.list
+cat /etc/apt/sources.list | uniqnosort | sponge /etc/apt/sources.list
+
+sudo apt update "$@"

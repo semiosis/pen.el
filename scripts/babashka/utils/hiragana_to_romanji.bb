@@ -4,7 +4,7 @@
   (:require [babashka.deps :as deps]))
 
 ;; e:$EMACSD/pen.el/scripts/org-scripts/hello-world.org
-;; cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | org-mode-make-headline-asterisks-into-slash.bb | v
+;; cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | org_mode_make_headline_asterisks_into_slash.bb | v
 
 (require '[clojure.string :as s]
          '[clojure.java.io :as io])

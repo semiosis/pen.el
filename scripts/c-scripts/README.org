@@ -1,0 +1,23 @@
+* 
+** Explore /usr/include, find ways to use and make some scripts
+*** 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang org
+  gl c libuuid example | grep /questions/
+#+END_SRC
+
+#+RESULTS:
+#+begin_src org
+https://stackoverflow.com/questions/51053568/generating-a-random-uuid-in-c
+https://stackoverflow.com/questions/7399069/how-to-generate-a-guid-in-c
+#+end_src
+
+*** regex
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang org
+  gl c libregex example | grep /questions/
+#+END_SRC
+
+#+RESULTS:
+#+begin_src org
+https://stackoverflow.com/questions/1085083/how-to-use-regular-expressions-in-c
+#+end_src
+

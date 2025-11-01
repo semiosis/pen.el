@@ -2266,6 +2266,7 @@ case "$f" in
 
         if test "$DETACHMENT_SENTINEL" = "y"; then
             if test "$CAT_ON_EXIT" = "y"; then
+                echo hi | tv &>/dev/null
                 cmd_post="$cmd_post; pen-tm -te -d capture - > \"$tf_capture\""
             fi
 

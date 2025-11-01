@@ -75,7 +75,7 @@
 
 (defmacro ntimes (n &rest body)
   (cons 'progn (flatten-once 
-                (cl-loop for pen-i from 1 to n collect body))))
+                (cl-loop for i from 1 to n collect body))))
 
 (defun delete-nth (index seq)
   "Delete the INDEX th element of SEQ.

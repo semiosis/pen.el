@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# Now force a display variable and start the fake x server
+test -n "$DISPLAY" || export DISPLAY=:0
+
+# Test to see if DISPLAY works
+if command -v  xset &>/dev/null && command -v xpra &>/dev/null && ! xset q &>/dev/null; then
+    # Another way to start the fake X display
+    sudo systemctl stop gdm3
+    sudo rm /tmp/.X11-unix/X0
+    xpra start :0 || :
+    # Sigh, I only need one of these. I'll figure it why the first one isn't going later.
+fi

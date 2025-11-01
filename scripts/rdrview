@@ -1,0 +1,155 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+# exec 2>&1;
+# set -xv
+
+# TODO Output into tidy
+# https://deepwiki.com/eafer/rdrview/4-usage-guide
+
+# /usr/local/bin/rdrview -E UTF-8 "$@" | tidy -i -w 80 | tv
+
+
+: "${use_chome_dom:="y"}"
+fargs=()
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -njs) {
+        use_chome_dom=n
+        shift
+    }
+    ;;
+
+    -js) {
+        use_chome_dom=y
+        shift
+    }
+    ;;
+
+    -H) {
+        output_html=y
+        shift
+    }
+    ;;
+
+    -u) {
+        fargs+=("$1" "$2")
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+stdin_exists
+has_stdin="$?"
+
+if test "$#" -eq 0 && ! test "$has_stdin" = 0; then
+    set -- --help "$@"
+fi
+
+if test "$1" = "--help"; then
+    show_help=y
+fi
+
+# Since rdrview doesn't respect VIEWER, EDITOR or PAGER, force it to use `pager`
+# VIEWER=pin EDITOR=pin PAGER=pin /usr/local/bin/rdrview -E UTF-8 "$@"
+# pen-tpager hangs
+if test "$PAGER" = pen-tpager; then
+    PAGER=erdrview-pager
+fi
+: "${PAGER:="erdrview-pager"}"
+export PAGER
+
+if test "$NOEMACS" = "y" && test "$PAGER" = erdrview-pager; then
+    PAGER=v
+fi
+
+if test "$show_help" = "y"; then
+    ( export PAGER=cat; unbuffer /usr/local/bin/rdrview -E UTF-8 "$@"; ) | PAGER=v pager
+    exit "$?"
+fi
+
+# curl
+# -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+# -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36'
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test "$has_stdin" -eq 0; then
+    input_html_fp="$(cat | tf html)"
+else
+    input_html_fp="$(
+        (
+            if test "$use_chome_dom" = "y" && test -n "$1"; then
+                if test "$IN_UNBUFFER" = "y"; then
+                    exec &>/dev/null
+                fi
+                ocif dom-dump -w 5000 "$last_arg" | cat
+            else
+                ocif curl -s "$last_arg" | cat
+            fi
+        ) | tf html
+    )"
+fi
+
+if ! test "$output_html" = "y"; then
+
+# show-fds 1>&2
+# echo "$TTY" 1>&2
+# exec <`tm-tty |tv`
+
+    # cat "$input_html_fp" | strace /usr/local/bin/rdrview -E UTF-8 "$@" | pager
+    cat "$input_html_fp" | /usr/local/bin/rdrview -E UTF-8 "$@" | pager
+    exit "$?"
+fi
+
+if test "$has_stdin" -eq 0; then
+    metadata="$(cat "$input_html_fp" | /usr/local/bin/rdrview -E UTF-8 -M "$@")"
+else
+    metadata="$(/usr/local/bin/rdrview -E UTF-8 -M "$last_arg")"
+fi
+
+reader_html="$(cat "$input_html_fp" | /usr/local/bin/rdrview -E UTF-8 -H "${fargs[@]}" "$@")"
+title="$(printf -- "%s\n" "$metadata" | sed -n "/^Title:/{s/Title: //p}")"
+sitename="$(printf -- "%s\n" "$metadata" | sed -n "/^Site name:/{s/Site name: //p}")"
+: "${sitename:="?"}"
+excerpt="$(printf -- "%s\n" "$metadata" | sed -n "/^Excerpt:/{s/Excerpt: //p}")"
+byline="$(printf -- "%s\n" "$metadata" | sed -n "/^Byline:/{s/Byline: //p}")"
+: "${byline:="?"}"
+
+# Run rdrview twice on the hlml. Once to get the reader text and again to get the information
+# curl -s "https://www.artnews.com/t/ireland/" | /usr/local/bin/rdrview -E UTF-8 -H "${fargs[@]}" | cat
+# curl -s "https://www.artnews.com/t/ireland/" | /usr/local/bin/rdrview -E UTF-8 -M | cat
+
+IFS= read -r -d '' output_html <<HEREDOC
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta property="og:site_name" content="$sitename"/>
+<meta property="og:title" content="$title"/>
+<meta property="og:description" content="$excerpt"/>
+<meta name="author" content="$byline"/>
+<meta name="description" content="$excerpt"/>
+<title>$title &ndash; $sitename</title>
+</head>
+<body>
+$reader_html
+</body>
+</html>
+HEREDOC
+
+printf -- "%s\n" "$output_html" | pager

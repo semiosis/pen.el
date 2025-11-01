@@ -7,4 +7,4 @@ export TTY
 # Example
 # ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up
 
-ved -m "Gvipo\\<C-v>g_x{j\$lp" | sed -z "s/\n\\+$//"
+sed -z 's/\n\+$//' | ved -m "Gvipo\\<C-v>g_x{j\$lp" | sed -z "s/\n\\+$//"

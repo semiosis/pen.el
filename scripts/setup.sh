@@ -2769,3 +2769,41 @@ agi libsword-dev
 e ia window-jump
 
 e ia lua-mode
+
+agi tidy
+
+cpanm Capture::Tiny
+
+# Build w3m
+
+# https://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/
+(
+# For the "debuild" program, install devscripts
+agi devscripts
+apt-get build-dep w3m
+cd /root/programs
+apt-get source w3m
+cd "$(glob "w3m-*" | head -n 1)"
+git init
+git add -A .
+git commit -m "original"
+# Then make changes
+# ...
+# And then build
+debuild -us -uc
+)
+
+# Now I want to figure out if it's possible to extend halfdump to include more html tags
+# I think this is where it happens:
+# sp +/"^loadHTMLString(Str page)" "$HOME/programs/w3m-0.5.3/file.c"
+# cd "$HOME/programs/w3m-0.5.3"; ead w3m_halfdump
+
+# (
+# cd "$(gc "https://github.com/acg/w3m")"
+# )
+
+# GNU Global https://www.gnu.org/software/global/
+agi global
+e ia global-tags
+# I had to remove the bytecode from the downloaded package because the bytecode it caused an error
+# rm /root/.emacs.d/elpa/global-tags-20211120.347/*.elc

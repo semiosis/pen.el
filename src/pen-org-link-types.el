@@ -181,7 +181,8 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "pa" 'follow-pa-link)
 (defun follow-pa-link (cmd)
   "Run `pa' with CMD as argument."
-  (pen-goto-package-all (intern (str cmd))))
+  ;; (pen-goto-package-all (intern (str cmd)))
+  (pen-goto-package-all (str cmd)))
 
 (org-add-link-type "pa" 'follow-pa-link)
 (defun follow-pa-link (cmd)

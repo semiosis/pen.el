@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# sn is what function will be called
+sn="$(basename -- "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# pen-e -D pen-emacsd-1 -E-tcp-echo "(sqrt 5)"
+
+# Or mapbe I should extend e:pen-els instead
+
+# pen-els -tcp -sn "$sn"

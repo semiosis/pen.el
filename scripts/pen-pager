@@ -6,14 +6,17 @@ is_tty() {
     [ -t 1 ]
 }
 
-export EDITOR=v
+: "${EDITOR:="v"}"
+: "${PAGER:="v"}"
+export EDITOR
+export PAGER
 export GY_CMD
 
 pager() {
     if is_tty; then
         fp="$(pen-strip-ansi | tf txt)"
-        exec <&1
-        v "$fp"
+        exec <&2
+        "$PAGER" "$fp"
     else
         cat
     fi

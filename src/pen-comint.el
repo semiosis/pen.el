@@ -19,6 +19,23 @@
   ;; (pen-comint-bol))
 
   (cond
+   ;; Widgets mess with j:beginning-of-line
+   ;; e.g. j:widget-example
+   ;; Numbers: count to three below
+   ;; + - three
+   ;; + - three
+   ;; +
+   ((widget-at-point (point))
+    (let ((startpt (point)))
+      (beginning-of-line)
+      ;; If it hasn't moved, then move it
+      (if (eq (point) startpt)
+
+          (if (string-equal (chomp (thing-at-point 'line))
+                            (str (buffer-substring (point) (pos-eol))))) body
+
+                            )))
+
    ((derived-mode-p 'comint-mode)
     (comint-bol))
 
