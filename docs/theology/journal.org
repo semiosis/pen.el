@@ -4281,7 +4281,7 @@ As an analogy, consider handwriting. Not much technology is required but the ski
 
 Some innovations do not make life better, but actually they destroy culture.
 
-To make a computer science analogy, you don't always use QuickSort but sometimes you resort to a simpler algorithm such as InsertionSort because, although InsertionSort is a simpler algorithm that doesn't sale as well for all problems,
+To make a computer science analogy, you don't always use QuickSort but sometimes you resort to a simpler algorithm such as InsertionSort because, although InsertionSort is a simpler algorithm that doesn't scale as well for all problems,
 it's the best algorithm for the job in some cases.
 In a similar fashion, it's not a good idea to "throw AI at everything".
 
