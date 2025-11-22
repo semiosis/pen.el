@@ -28,7 +28,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -i) {
+        case_insensitive=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+
+if test "$case_insensitive" = "y"; then
+    export ROSIE_PARAMS+=case_insensitive
+fi
 
 rosie-bibleverseref-grep bibleverseref.bibleref

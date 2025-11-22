@@ -3,6 +3,9 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+test -f "/usr/local/bin/w3m" && : "${bin:="/usr/local/bin/w3m"}"
+test -f "/usr/bin/w3m" && : "${bin:="/usr/bin/w3m"}"
+
 test "$#" -gt 0 && last_arg="${@: -1}"
 test "$#" -gt 1 && last_two_args="${@: -2}"
 
@@ -24,7 +27,7 @@ stdin_exists() {
 if pen-rc-test -f w3m_use_chome_dump; then
     if printf -- "%s\n" "$last_two_args" | grep -q -P '^-dump_extra http'; then
       # run it normally first, so that the other information is obtained
-      full_w3m_normal_output="$(ocif /usr/bin/w3m "$@")"
+      full_w3m_normal_output="$(ocif "$bin" "$@")"
       start_bit="$(printf -- "%s\n" "$full_w3m_normal_output" | sed "1,/^Content-Type:/{s/^/KEEP:/}" | sed -n "/^KEEP:/{s/^KEEP://p}")"
 
       url="$last_arg"
@@ -32,7 +35,7 @@ if pen-rc-test -f w3m_use_chome_dump; then
       test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
       set -- -T text/html "$@"
 
-      chrome_html="$(ocif spin dom-dump "$url" | /usr/bin/w3m "$@" | sed '1,/^W3m-document-charset:/d' | htmlentities-decode.sh)"
+      chrome_html="$(ocif spin dom-dump "$url" | "$bin" "$@" | sed '1,/^W3m-document-charset:/d' | htmlentities-decode.sh)"
       ret="$?"
       printf -- "%s\n" "$start_bit" "$chrome_html"
       CMD="$(cmd "$@")"
@@ -45,12 +48,12 @@ fi
 
 if stdin_exists; then
     if test "$1" = "-halfdump"; then
-        # /usr/bin/w3m "$@" | htmlentities-decode.sh | tv -nw
-        /usr/bin/w3m "$@" | htmlentities-decode.sh
+        # "$bin" "$@" | htmlentities-decode.sh | tv -nw
+        "$bin" "$@" | htmlentities-decode.sh
     else
-        /usr/bin/w3m "$@"
+        "$bin" "$@"
     fi
 else
-    /usr/bin/w3m "$@"
+    "$bin" "$@"
 fi
 

@@ -2801,9 +2801,12 @@ debuild -us -uc
 # (
 # cd "$(gc "https://github.com/acg/w3m")"
 # )
+agi libgc-dev
 
 # GNU Global https://www.gnu.org/software/global/
 agi global
 e ia global-tags
 # I had to remove the bytecode from the downloaded package because the bytecode it caused an error
 # rm /root/.emacs.d/elpa/global-tags-20211120.347/*.elc
+
+cargo install gitlogue

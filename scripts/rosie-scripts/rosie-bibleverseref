@@ -8,4 +8,8 @@ query="$lastarg"
 
 # rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
 
-/usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+if test "$ROSIE_PARAMS" = "case_insensitive"; then
+    /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+else
+    /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+fi

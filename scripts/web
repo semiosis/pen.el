@@ -20,11 +20,13 @@ wget_title() {
     url="$1"
     shift
     
+    {
     case "$url" in
         *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
         *) { oci wget -qO- "$url"; } ;;
     esac | \
         scrape-title-from-html | recode-html | c ascify | sed 's/ \+/ /g'
+    } | sed -z -e 's/\r/ /g' -e 's/\b/ /g' -e 's/ \+/ /g'
 }
 
 chrome_title() {

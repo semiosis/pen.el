@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+dir="$1"
+shift
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if ! test -d "$dir"; then
+    exit 1
+fi
+
+unset CWD
+cd "$dir"
+
+"$@"
+

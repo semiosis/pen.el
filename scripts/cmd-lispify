@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# newline
+IFS="
+"
+awk1 | while IFS="$IFS" read -r line; do
+    (
+    exec 0</dev/null
+    # echo "set -- $line"
+    eval "set -- $line"
+    cmd-nice-posix "$@"
+    echo
+    )
+done

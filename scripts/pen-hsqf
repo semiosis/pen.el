@@ -13,6 +13,25 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nof) {
+        nofzf=y
+        shift
+    }
+    ;;
+
+    -onestatement) {
+        onestatement=y
+        shift
+    }
+    ;;
+
+    -sexp) {
+        onestatement=y
+        sexp_output=y
+        shift
+    }
+    ;;
+
     -fp) {
         shift
         hsq "$@"
@@ -45,15 +64,35 @@ case "$CMD" in
     }
     ;;
 esac
-} | mfz +s -m -nv | awk 1 | mnm | hsqf-clean | while IFS=$'\n' read -r line; do
-    exec <&1
-    # eval "$line"
-    # sps -E "$line"
-    # sps zrepl -E "$line"
-    if test "$nozrepl" = "y"; then
-        eval "$line"
+} | {
+    if test "$onestatement" = "y"; then
+        sed "s/cd \\([^;]\\+\\); \\+\\(.*\\)/indir \\1 zrepl \\2/" | cmd-lispify
     else
-        nw zrepl -E "$line"
+        cat
     fi
-    break
-done
+} | {
+    if test "$sexp_output" = "y"; then
+        sed "s/\\(.*\\)/(\\1)/"
+    else
+        cat
+    fi
+} | {
+    if test "$nofzf" = "y"; then
+        pavs
+    else
+        {
+            mfz +s -m -nv | awk 1 | mnm | hsqf-clean
+        } | while IFS=$'\n' read -r line; do
+            exec <&1
+            # eval "$line"
+            # sps -E "$line"
+            # sps zrepl -E "$line"
+            if test "$nozrepl" = "y"; then
+                eval "$line"
+            else
+                nw zrepl -E "$line"
+            fi
+            break
+        done
+    fi
+}
