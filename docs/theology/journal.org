@@ -6029,3 +6029,45 @@ It's disgusting.
 May the Lord Jesus Christ save me for His Name's sake.
 
 What is not done in faith is sin ([[https://www.biblegateway.com/passage/?search=Romans%2014%3A23&version=ESV][Romans 14:23]], [[https://www.biblegateway.com/passage/?search=James%204%3A17&version=ESV][James 4:17]]). What is not done in law-abiding agape love is also sin ([[https://www.biblegateway.com/passage/?search=Matthew%2022%3A36-40&version=ESV][Matthew 22:36-40]], [[https://www.biblegateway.com/passage/?search=1%20John%203%3A4&version=ESV][I John 3:4]]). Christians should imitating the love of Jesus Christ, trusting God will take care of them, doing good and refusing to harm others ([[https://www.biblegateway.com/passage/?search=Ecclesiastes%207%3A16&version=ESV][Ecclesiastes 7:16]], [[https://www.biblegateway.com/passage/?search=Romans%2013%3A10&version=ESV][Romans 13:10]], [[https://www.biblegateway.com/passage/?search=1%20Peter%204%3A19&version=ESV][I Peter 4:19]], [[https://www.biblegateway.com/passage/?search=1%20Peter%202%3A23&version=ESV][I Peter 2:23]]) according to God's commandments for us ([[https://www.biblegateway.com/passage/?search=1%20John%205%3A2&version=ESV][I John 5:2]]). God has taught through His word what doing no harm to one's neighbour looks like. We are instructed to share the gospel in the following of and the imitation of the Lord Jesus Christ ([[https://www.biblegateway.com/passage/?search=Mark%208%3A34-36&version=ESV][Mark 8:34-36]]) and the passing on of Jesus' teachings and commandments, discipling others ([[https://www.biblegateway.com/passage/?search=Matthew%2028%3A18-20&version=ESV][Matthew 28:18-20]]).
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2016%3A16-17&version=ESV][Luke 16:16-17]]* -  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is *easier* for heaven and earth to pass away than for one dot of the Law to become void. (ESV)
+#+END_QUOTE
+
+Luke 16:16-17 does not have the word "were" in it in the Greek. But it reads more like "With regard to the Law and prophets up to John...".
+It's clear that the Law isn't voided because of what Jesus says next.
+
+#+BEGIN_QUOTE
+  *Luke 16:17* - But it is easier for heaven and earth to pass away than for one dot of the Law to become void. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  The (G3588)      --+
+  law (G3551)        | Just a way of specifying the law up to this time,
+  and (G2532)        | not saying the law is only up to this time.
+  the (G3588)        |
+  prophētai (G4396)  |
+  until (G3360)      |
+  John (G2491)     --+
+  
+  from (G575)
+  that time (G5119)
+  the( G3588)
+  kingdom (G932)
+  - (G3588)
+  of God (G2316)
+  is proclaimed (G2097)
+  
+  and (G2532)
+  everyone (G3956)
+  into (G1519)
+  it (G846)
+  forces his way (G971)
+#+END_SRC
+
+I think Matthew 11:13 reads in the Greek more like, "All the prophets and the law until John prophesied."
+The way the ESV reads, it seems to make it Matt 11:13 out to say there were only prophets up until John, and so by implication excludes Jesus Christ Himself, who is also the Son of God, from being a 'prophet'.
+And it also seems to read like the Law itself was only until John.
+But I do not believe that Matthew 11:13 actually reads like that the Greek. I believe that the way the Greek reads is more like this: "all the prophets and the Law up to John prophesied".
+Consider that Jesus Christ is the telos of the Law and Jesus also gave commandments (Christ's Law), it also makes sense that He is the "telos of the prophets". Jesus is the Son of God, but that doesn't mean He is not also regarded as a prophet.
+Jesus also made prophets Himself.
