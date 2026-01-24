@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+#  wget "https://www.telnetbbsguide.com/bbslist/ibbs011526.zip"
+
+. $SCRIPTS/lib/hs
+
+cat /root/programs/short_011526.txt | sed -e "0,/NEW listing/d" | sed "1,3d" | sed "/^-------/,\$d" | sed "\$d" | sed "s/^[ *]\\+//" | erase-trailing-whitespace | sed "s/^\\(.*[^ ]\\) \\+\\([^ ]\\+\\)$/\\1,\\2/" | pavs

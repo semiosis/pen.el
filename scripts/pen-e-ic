@@ -70,6 +70,12 @@ case "$sn" in
     }
     ;;
 
+    vterm) {
+        ic=pen-vterm
+        export CIP_NO_REFRESH=y
+    }
+    ;;
+
     einfo) {
         ic=info
     }
@@ -164,6 +170,11 @@ case "$sn" in
 
     erdrview) {
         ic=rdrview
+    }
+    ;;
+
+    eopen|eo|po) {
+        ic=open
     }
     ;;
 

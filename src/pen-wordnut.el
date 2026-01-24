@@ -1,5 +1,10 @@
 (require 'wordnut)
 (require 'define-it)
+(require 'helm-wordnet)
+
+;; This should find the wrapper script
+(setq helm-wordnet-prog "wordnet")
+(setq helm-wordnet-follow-delay 0.2)
 
 (df spv-wordnut () (pen-spv (concat "wu " (pen-selected-text))) (deactivate-mark))
 

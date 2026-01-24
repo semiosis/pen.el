@@ -3,6 +3,36 @@
 
 (guess-language-mode 1)
 
+(defun ntow (from &optional to ordinal)
+  (setq to (or to from))
+
+  (if ordinal
+      (snc (cmd "spellout" "-p" "ordinal" (format "%d-%d" from to)))
+    (snc (cmd "spellout" (format "%d-%d" from to))))
+  ;; (cl-loop for i from from to to do
+  ;;          (message "%d\n" i))
+  )
+
+;; (worded-number-sequence 1 10)
+;; (worded-number-sequence 1 10 2)
+(defun worded-number-sequence (from &optional to inc)
+  (let* ((nseq (number-sequence from to))
+         (snums (str2lines (ntow from to)))
+         (zipped (-zip-lists nseq snums)))
+
+    (let ((nseqstepped (number-sequence from to inc)))
+      (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
+      (second (-unzip zipped)))))
+
+(defun worded-ordinal-number-sequence (from &optional to inc)
+  (let* ((nseq (number-sequence from to))
+         (snums (str2lines (ntow from to t)))
+         (zipped (-zip-lists nseq snums)))
+
+    (let ((nseqstepped (number-sequence from to inc)))
+      (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
+      (second (-unzip zipped)))))
+
 (defun monotonically-increasing-tuple-permutations (input)
   (s-lines (pen-snc "monotonically-increasing-tuple-permutations.py" input)))
 

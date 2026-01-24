@@ -254,6 +254,18 @@ With optional second arg NO-REVERT, don't refresh the listing afterwards."
         (find-file fp)
       fp)))
 
+(defun todayfolder (&optional bn-only)
+  (interactive)
+  (let ((fp
+         (if bn-only
+             (snc "todayfolder | cat")
+           (snc "todayfolder -P | cat"))))
+
+    (if (interactive-p)
+        (find-file fp)
+      fp)))
+(defalias 'todaydir 'todayfolder)
+
 (defun weekfile (&optional bn-only)
   (interactive)
   (let ((fp

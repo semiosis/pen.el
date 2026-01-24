@@ -12,6 +12,9 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 if test "$hasstdin" = 0; then
     USING_STDIN=y
 
+    # The stdin file should be remembered.
+    # Currently, it's only being used as a sha
+
     tf_stdin="$(cat | sed -z 's/^\s*$//' | pen-tf -sha pen-tf-stdin-sha.txt)"
     sha="$(sha1sum "$tf_stdin" | awk '{print $1}')"
 fi
@@ -35,6 +38,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -a) {
         asynchronous=y
+        shift
+    }
+    ;;
+
+    -getcommand) {
+        # Get the full command, rather than run it.
+        # This is useful for when stdin was used.
+        get_command=y
+        shift
+    }
+    ;;
+
+    -omit) {
+        omit_from_header_re="$2"
+        shift
         shift
     }
     ;;
@@ -68,6 +86,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -f) {
         force_on=y
+        shift
+    }
+    ;;
+
+    -nu) {
+        notify_updated=y
+        shift
+    }
+    ;;
+
+    -nnu) {
+        notify_not_updated=y
         shift
     }
     ;;
@@ -140,8 +170,16 @@ wdmd5="_$(printf -- "%s\n" "$EXTRA_METADATA" | md5sum | cut -d ' ' -f 1)"
 # CMD="$(cmd "$@")"
 : "${CMD:="$(cmd "$@")"}"
 
+maybe_omit() {
+    if test -n "$omit_from_header_re"; then
+        sed "s~$omit_from_header_re~~"
+    else
+        cat
+    fi
+}
+
 # This must come after the initial arguments
-cache_file_path_mant="$TMPDIR/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | slugify | hash-cap-string -l 100)$sha"
+cache_file_path_mant="$TMPDIR/pen-${wdmd5}-$(printf -- "%s\n" "$CMD" | tr '\n' ' ' | sed 's/ $//' | maybe_omit | slugify | hash-cap-string -l 100)$sha"
 cache_file_path="${cache_file_path_mant}.txt"
 cache_file_path_exitcode="${cache_file_path_mant}.code"
 # echo "$cache_file_path" 1>&2
@@ -204,10 +242,19 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
         echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
         exit 0
     elif test -f "$cache_file_path" && test -s "$cache_file_path" && { test "$RETRY_TIMEOUT" = "" || test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$UPDATE" = y; then
+        # if test "$notify_not_updated" = "y"; then
+            # echo "Cache used for $CMD" | tee -a /tmp/ci-log.txt 1>&2
+        # fi
+
         0</dev/null o_cat "$cache_file_path"
     else
         # Update
         rm -f "$cache_file_path"
+
+        # if test "$notify_updated" = "y"; then
+            # echo "Updated cache for $CMD. Path: $cache_file_path" | tee -a /tmp/ci-log.txt 1>&2
+        # fi
+
         if test "$asynchronous" = "y"; then
             # TODO Put a delay before this is allowed to run again
 

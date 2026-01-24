@@ -372,9 +372,10 @@ STRINGS will be evaluated in normal `or' order."
   (interactive)
   (let ((c (shut-up
              (shut-up-c (pwd)))))
-    (if c
-        (f-expand (substring c 10))
-      default-directory)))
+    (f-expand
+     (if c
+         (substring c 10)
+       default-directory))))
 
 (defun tramp-mount-sshfs (&optional tramp-dir)
   (interactive)
@@ -1244,6 +1245,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 (defun s-remove-trailing-whitespace (s)
   (replace-regexp-in-string "[ \t\n]*\\'" "" s))
+
+(defun s-remove-trailing-literal (lit s)
+  (replace-regexp-in-string (concat (unregexify lit) "\\'") "" s))
 
 (defun s-chompall (s)
   (s-remove-leading-whitespace
@@ -2349,16 +2353,23 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-columnate-window (&optional max-cols)
   (interactive)
-  (delete-other-windows)
-  (setq max-cols (or max-cols 100))
-  (setq max-cols (- max-cols 1))
-  (let ((w (+ (/ (frame-width) 80) 0)))
-    (if (> w max-cols)
-        (setq w max-cols))
-    (dotimes (i w)
-      (split-window-right))
-    (balance-windows)
-    (follow-mode)))
+  (let ((colwidth (or
+                   (prefix-numeric-value current-prefix-arg)
+                   80)))
+
+    (if (< colwidth 5)
+        (setq colwidth 80))
+  
+    (delete-other-windows)
+    (setq max-cols (or max-cols 100))
+    (setq max-cols (- max-cols 1))
+    (let ((w (+ (/ (frame-width) colwidth) 0)))
+      (if (> w max-cols)
+          (setq w max-cols))
+      (dotimes (i w)
+        (split-window-right))
+      (balance-windows)
+      (follow-mode))))
 
 (defalias 'pen-get-top-level 'projectile-project-root)
 

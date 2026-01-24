@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# https://unix.stackexchange.com/q/413441
+
+. $SCRIPTS/lib/hs
+
+# spellout 1-10 500 1000-10000~1000
+# spellout -l en-GB -p ordinal 1-100
+# spellout -l en -p ordinal-number 1-100
+# spellout -l en -p USD 100.45
+# spellout -l
+# spellout -l en help
+
+test -f /usr/lib/libnumbertext/spellout || agi libnumbertext-tools &>/dev/null
+/usr/lib/libnumbertext/spellout "$@"

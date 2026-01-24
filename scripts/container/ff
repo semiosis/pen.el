@@ -108,10 +108,10 @@ if test -z "$ans"; then
               -x ewx \
               -N nveww \
               -n : \
+              -r rdrview \
               -c copy \
               -f firefox \
               -p pentadactyl \
-              -r google-chrome \
               -g google-chrome \
               -v vim \
               -V eww-q \
@@ -147,6 +147,7 @@ case "$ans" in
     browsh) { browsh -k "$url"; } ;;
     new-article) { pen-nw new-article "$url"; } ;;
     torbrowsh) { torbrowsh "$url"; } ;;
+    rdrview) { rdrview "$url"; } ;;
     vim) { printf -- "%s" "$url" | v; } ;;
     pen-mirror-site) { pen-mirror-site "$url"; } ;;
     eww-q) { eww-q "$url"; } ;;

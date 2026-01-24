@@ -567,6 +567,7 @@
 
 (handle '(w3m-mode)
         :history '(w3m-history)
+        :docs '(wordnut-lookup-current-word)
         :summarise '(rdrview)
         :prevhist '(w3m-view-previous-page)
         :nexthist '(w3m-view-next-page))

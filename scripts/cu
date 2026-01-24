@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# Like emacs' c-u, provide a 'CU' argument to the script to modify its behaviour
+
+# For example:
+# cu editor `which pen`
+
+export CU=1
+"$@"

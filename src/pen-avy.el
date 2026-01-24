@@ -362,14 +362,7 @@ values to copy the link to the clipboard and/or primary as well."
 (define-key pen-map (kbd "M-j M-b") 'ace-link-bible-ref)
 (define-key pen-map (kbd "M-j M-v") 'ace-link-bible-ref-tpop)
 
-(defun ace-link-goto-widget ()
-  (interactive)
-  (avy-with ace-link-help
-    (avy-process
-     (mapcar #'cdr (widgets-collect))
-     (avy--style-fn avy-style)))
-  ;; (ace-link--help-action pt)
-  )
+
 
 (defun ace-link-goto-link-or-button ()
   (interactive)

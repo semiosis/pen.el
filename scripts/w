@@ -1,3 +1,24 @@
 #!/bin/bash
 
-which "$@" | iforcat is_tty -- eval "echo -n 'Copied: ' | hls blue; xc | vimcat"
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+page() {
+    iforcat is_tty -- eval "( echo -n 'Copied: ' | hls blue; xc ) | vimcat"
+}
+
+if test -n "$last_arg"; then
+    w="$(which "$last_arg")"
+    r="$?"
+    bn="pen-$(basename -- "$w")"
+    w2="$(which "$bn")"
+    if test -f "$w2"; then
+        w="$w2"
+    fi
+    if test -n "$w"; then
+        echo -n "$w" | page
+    else
+        exit 1
+    fi
+else
+    which "$@"
+fi

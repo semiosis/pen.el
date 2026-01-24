@@ -148,6 +148,19 @@
                (and (major-mode-enabled 'sqlite-mode)
                     sqlite--db-path)
                
+               (and (major-mode-enabled 'helpful-mode)
+                    (format "[[pen-helpful-variable:%s]]"))
+               (and (major-mode-enabled 'helpful-mode)
+                    (or
+                     list-buffers-directory
+                     helpful--sym)
+
+                    (let* ((strval list-buffers-directory)
+                           (symval helpful--sym))
+                      
+                      
+                      (format "[[pen-helpful-variable:%s]]")))
+               
                ;; (and (major-mode-enabled 'cider-repl-mode)
                ;;      default-directory)
 
@@ -156,9 +169,7 @@
                
                (and (major-mode-enabled 'w3m-mode)
                     (w3m-url-encode-string-2 w3m-current-url))
-               (and (major-mode-enabled 'helpful-mode)
-                    (or list-buffers-directory
-                        helpful--sym))
+               
 
                (and (major-mode-enabled 'eww-mode)
                     (if semantic-path
@@ -1488,11 +1499,12 @@ non-nil."
   (interactive)
   (sps "pen-watch-notifications"))
 
-(defun open (path)
+(defun sh/open (path)
   ;;   "This executes open <path> in a split"
   (interactive (list (read-file-name "path:")))
   (sps (concat "trap '' HUP; o " (q path))))
-(defalias 'spv-open 'open)
+(defalias 'spv-open 'sh/open)
+(defalias 'sps-open 'sh/open)
 (defalias 'o 'open)
 
 (defun sps-top ()
@@ -1612,5 +1624,15 @@ non-nil."
         (progn (etv result)
                result)
       result)))
+
+(defun sph-new-buffer ()
+  (interactive)
+  (with-current-buffer (esph 'new-buffer-from-string)
+    (defset-local kill-window-when-done t)))
+
+(defun spv-new-buffer ()
+  (interactive)
+  (with-current-buffer (espv 'new-buffer-from-string)
+    (defset-local kill-window-when-done t)))
 
 (provide 'pen-library)

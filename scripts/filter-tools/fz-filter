@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+dp="$PENELD/scripts/filters"
+cd "$dp"
+filt="$(0</dev/null in-tty fz-select-filter)"
+if test -n "$filt"; then
+    filt="$dp/$filt"
+    "$filt" "$@"
+else
+    cat
+fi

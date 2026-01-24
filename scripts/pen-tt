@@ -124,7 +124,7 @@ pattern="$3"
 
 case "$operator" in
     "~"|~|-p) { # pcre
-        printf -- "%s\n" "$subject" | grep -q -P "$pattern"
+        printf -- "%s\n" "$subject" | grep -q -P -- "$pattern"
         exit $?
     }
     ;;

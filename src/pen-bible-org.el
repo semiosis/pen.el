@@ -14,7 +14,7 @@
 (org-add-link-type "strongs" 'follow-strongs-link)
 (defun follow-strongs-link (query)
   "Run `strongs' with QUERY as argument."
-  (bible-term-show-word query)
+  (bible-term-show-word query t)
   ;; (strongs-mode-lookup query)
   )
 

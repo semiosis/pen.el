@@ -3,7 +3,14 @@
 
 (setq w3m-session-crash-recovery nil)
 
+;; This means I can have multiple unique w3ms
+(setq w3m-fb-mode t)
+
 (setq w3m-command (executable-find "w3m"))
+
+;; Require eww for pen-advice-handle-url
+(require 'eww)
+(advice-add 'w3m :around #'pen-advice-handle-url)
 
 (advice-add 'w3m-history :around #'advise-to-yes)
 (advice-add 'w3m-gohome :around #'advise-to-yes)
@@ -154,35 +161,38 @@
 
 ;; (sh-construct-envs '(("UPDATE" "y")))
 
+;; [[ekbd:M-c]]
+;; sp +/"w3m_use_chome_dump" "$EMACSD/pen.el/scripts/w3m"
+
 
 ;; Hmmm.... I need to implement execution priority for the filters
 ;; so that I can put the google chrome dom dump at the start.
 
 (setq w3m-local-find-file-regexps
-  (cons nil
-	(concat "\\."
-		    (regexp-opt (append '("htm"
-				                  "html"
-				                  "shtm"
-				                  "shtml"
-				                  "xhtm"
-				                  "xhtml"
-				                  "txt")
-				                (and w3m-markdown-converter '("md"))
-				                (and (w3m-image-type-available-p 'jpeg)
-					                 '("jpeg" "jpg"))
-				                (and (w3m-image-type-available-p 'gif)
-					                 '("gif"))
-				                (and (w3m-image-type-available-p 'png)
-					                 '("png"))
-				                (and (w3m-image-type-available-p 'xbm)
-					                 '("xbm"))
-				                (and (w3m-image-type-available-p 'xpm)
-					                 '("xpm"))))
-            ;; /root/repos/acg/w3m/w3m-doc/development.html.in
-            ;; I added this bit of regex to accommodate opening files like development.html.in in w3m
-            "\\(\\.[a-zA-Z0-9]+\\)?"
-		    "\\'")))
+      (cons nil
+	        (concat "\\."
+		            (regexp-opt (append '("htm"
+				                          "html"
+				                          "shtm"
+				                          "shtml"
+				                          "xhtm"
+				                          "xhtml"
+				                          "txt")
+				                        (and w3m-markdown-converter '("md"))
+				                        (and (w3m-image-type-available-p 'jpeg)
+					                         '("jpeg" "jpg"))
+				                        (and (w3m-image-type-available-p 'gif)
+					                         '("gif"))
+				                        (and (w3m-image-type-available-p 'png)
+					                         '("png"))
+				                        (and (w3m-image-type-available-p 'xbm)
+					                         '("xbm"))
+				                        (and (w3m-image-type-available-p 'xpm)
+					                         '("xpm"))))
+                    ;; /root/repos/acg/w3m/w3m-doc/development.html.in
+                    ;; I added this bit of regex to accommodate opening files like development.html.in in w3m
+                    "\\(\\.[a-zA-Z0-9]+\\)?"
+		            "\\'")))
 
 (defun w3m-filter-rdrview (url)
   "Summarize webpage"
@@ -320,6 +330,7 @@ CHARSET is used to substitute the `charset' symbols specified in
   ;; Want to avoid <pre_int>
   (while (re-search-forward "<pre[^_>]*>" nil t)
     (let ((start (match-beginning 0)))
+      ;; (tv (region2string start (match-end 0)))
       (delete-region start (match-end 0))
       (when (re-search-forward "</pre[_ \t\r\f\n]*>" nil t)
 	    (delete-region (match-beginning 0) (match-end 0))
@@ -335,5 +346,62 @@ CHARSET is used to substitute the `charset' symbols specified in
 (add-hook 'w3m-fontify-before-hook 'w3m-fontify-h6)
 (add-hook 'w3m-fontify-before-hook 'w3m-fontify-pre)
 (remove-hook 'w3m-fontify-before-hook 'w3m-fontify-pre)
+
+(defun w3m-display-width ()
+  "Return the maximum width which should display lines within the value."
+  (let ((w3m-fill-column (if w3m--ignore-fill-column -1 w3m-fill-column)))
+    (- 
+     (if (< 0 w3m-fill-column)
+         w3m-fill-column
+       (+ (if (and w3m-select-buffer-horizontal-window
+                   (get-buffer-window w3m-select-buffer-name))
+              ;; Show pages as if there is no buffers selection window.
+              (frame-width)
+            (window-width))
+          w3m-fill-column))
+
+     ;; 4
+     ;; Adding this, add the display-line-numbers margin width
+     (header-line-indent--line-number-width))))
+
+(defun w3m-header-line-insert ()
+  "Put the header line into the current buffer."
+  (when (and w3m-use-tab
+	     w3m-use-header-line
+	     w3m-current-url
+	     (eq 'w3m-mode major-mode))
+    (goto-char (point-min))
+    (let ((ct (w3m-arrived-content-type w3m-current-url))
+	  (charset (w3m-arrived-content-charset w3m-current-url)))
+      (insert (format "Location%s: " (cond ((and ct charset) " [TC]")
+					   (ct " [T]")
+					   (charset " [C]")
+					   (t "")))))
+    (w3m-add-face-property (point-min) (point) 'w3m-header-line-title)
+    (let ((start (point)))
+      (insert (w3m-puny-decode-url
+	       (if (string-match "[^\000-\177]" w3m-current-url)
+		   w3m-current-url
+		 (w3m-url-decode-string w3m-current-url
+					w3m-current-coding-system
+					"%\\([2-9a-f][0-9a-f]\\)"))))
+      (w3m-add-face-property start (point) 'w3m-header-line-content)
+      (w3m-add-text-properties
+       start (point)
+       `(mouse-face highlight keymap ,w3m-header-line-map
+		    help-echo "mouse-2 prompts to input URL"))
+      (setq start (point))
+      (insert-char ?  (max
+		               0
+                       (- 
+		                (- (if (and w3m-select-buffer-horizontal-window
+				                    (get-buffer-window w3m-select-buffer-name))
+			                   (frame-width)
+			                 (window-width))
+			               (current-column) 1)
+                        (header-line-indent--line-number-width))))
+      (w3m-add-face-property start (point) 'w3m-header-line-content)
+      (unless (eolp)
+	    (insert "\n")))))
 
 (provide 'pen-w3m)

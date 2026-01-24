@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/cloc" || agi "cloc" &>/dev/null
+
+/usr/bin/cloc "$@" | pavs

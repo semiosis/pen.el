@@ -1,0 +1,5 @@
+#!/bin/bash
+
+topic="$1"
+
+vim-eval "call GetHelpTopicPreview($(aqf "$topic"))"

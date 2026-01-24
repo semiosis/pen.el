@@ -20,14 +20,18 @@ mant="${fn%.*}"
 
 sent="$(uuid)"
 
-# sessions="$(nvt -pc cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
-# sessions="$(cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
-sessions="$(x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
-parent="$(p "$sessions" | sed -n 1p)"
-child="$(p "$sessions" | sed -n 2p)"
-# tmux splitw -t "$child" -v -c "$wd" x -shE "$(cmd cterm v "$fn")" -e Documents -tr "$sent" -i
-# tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm ttr "${sent}2" v -ft prolog "$fn"
-tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm v -ft prolog "$fn"
-# tmux splith -t "$child" -v -c "$wd" twf "${sent}2" cterm sp "$fn"
-tmux splitw -t "$child" -h -c "$wd" sp "$fn"
-TMUX= tmux attach -t "$parent"
+x -cd "$wd" -sh swipl -e "?-" -sl 1.2 -s "consult($mant)." -c m -i
+
+# # sessions="$(nvt -pc cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+# # sessions="$(cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+# # sessions="$(x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+# # sessions="$(x -cd "$wd" -sh swipl -e "?-" -sl 1.2 -s "consult($mant)." -c m -i)"
+# sessions="$(x -cd "$wd" -sh swipl -i)"
+# parent="$(p "$sessions" | sed -n 1p)"
+# child="$(p "$sessions" | sed -n 2p)"
+# # tmux splitw -t "$child" -v -c "$wd" x -shE "$(cmd cterm v "$fn")" -e Documents -tr "$sent" -i
+# # tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm ttr "${sent}2" v -ft prolog "$fn"
+# tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm v -ft prolog "$fn"
+# # tmux splith -t "$child" -v -c "$wd" twf "${sent}2" cterm sp "$fn"
+# tmux splitw -t "$child" -h -c "$wd" sp "$fn"
+# TMUX= tmux attach -t "$parent"

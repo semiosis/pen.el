@@ -4,6 +4,10 @@ echo pen-banner.sh
 
 spinner-stop &>/dev/null & disown
 
+erase_trailing_whitespace() {
+    sed -e 's/\s*$//'
+}
+
 (
 IFS= read -r -d '' banner <<HEREDOC
  [0;1;31;91m▄[0;1;33;93m▄▄[0;1;32;92m▄▄[0;1;36;96m▄[0m                                            [0;1;33;93m▄[0;1;32;92m▄▄[0;1;36;96m▄[0m
@@ -51,4 +55,4 @@ penelfonts -f smbraille.tlf Genesis 32:30 | lolcat -f | sed 's/^/         /'
 echo
 ocif nbd Genesis 32:30 | sed '1,2d' | lolcat -f | sed 's/^/     /'
 echo
-) | erase-trailing-whitespace | less -rS
+) | erase_trailing_whitespace | less -rS

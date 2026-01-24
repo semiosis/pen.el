@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+. $SCRIPTS/lib/hs
+
+input_fp="$(cat | tf txt)"
+
+unbuffer emacs-detect-lang.els "$input_fp" &>/dev/nullj
+
+cat "$input_fp" | pavs

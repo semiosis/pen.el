@@ -1,5 +1,8 @@
 (require 'miniedit)
 
+;; Means that instead of the error "Command attempted to use minibuffer while in minibuffer", the additional minibuffers can me made while the previous one is in the background
+(setq enable-recursive-minibuffers t)
+
 ;; This is taken now
 ;; (define-key minibuffer-local-map (kbd "C-M-f") #'miniedit)
 (define-key minibuffer-local-map (kbd "C-c '") #'miniedit)

@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+nonempty=y
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -v) {
@@ -11,6 +13,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -e) {
         emacsonly=y
+        shift
+    }
+    ;;
+
+    -ne) {
+        nonempty=y
+        shift
+    }
+    ;;
+
+    -nne) {
+        nonempty=n
         shift
     }
     ;;
@@ -31,7 +45,7 @@ is_tty() {
 
 pager() {
     if is_tty; then
-        v $@
+        v -nsyn $@
     else
         cat
     fi
@@ -56,6 +70,12 @@ pager() {
 } 2>/dev/null | {
     if test "$minimise" = "y"; then
         mnm
+    else
+        cat
+    fi
+} 2>/dev/null | {
+    if test "$nonempty" = "y"; then
+        f ne
     else
         cat
     fi

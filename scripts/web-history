@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+(
+` # hsq w3m | awk 1 `
+hsq elinks | awk 1
+) | xa cat | xurls | uniqnosort | pavs

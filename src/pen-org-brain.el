@@ -1337,9 +1337,10 @@ Also stop descending if a node has been visited before.
     (if (sor sel)
         (org-link-open-from-string link-string))))
 
-;; (defun uniqify-buffer-around-advice (proc &rest args)
-;;   (let ((res (uniqify-buffer (apply proc args))))
-;;     res))
+(defun uniqify-buffer-around-advice (proc &rest args)
+  (let ((res (uniqify-buffer (apply proc args))))
+    res))
+
 ;; (advice-add 'org-brain-visualize :around #'uniqify-buffer-around-advice)
 ;; (advice-remove 'org-brain-visualize #'uniqify-buffer-around-advice)
 

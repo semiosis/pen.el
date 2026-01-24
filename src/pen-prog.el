@@ -179,4 +179,13 @@
   (interactive (list (read-file-name "File: ")))
   (pen-nw (pen-cmd "run" fp) "-pak"))
 
+(defun count-lines-of-code (&optional dir)
+  (interactive (list (read-directory-name "count loc in: ")))
+  (let* ((dir (or dir default-directory))
+         (default-directory dir)
+         (cloc-str (snc (cmd "cloc" "--json" dir) nil dir)))
+    (if (interactive-p)
+        (nbfs cloc-str (concat "*lines of code: " dir "*") 'json-mode)
+      cloc-str)))
+
 (provide 'pen-prog)

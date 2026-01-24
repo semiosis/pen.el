@@ -3,6 +3,17 @@ export TTY
 
 . $SCRIPTS/lib/stdin_exists
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nrq) {
+        no_remove_query=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 if ! stdin_exists; then
     argstr="$@"
     exec < <(printf -- "%s" "$argstr")
@@ -28,8 +39,14 @@ fi
     sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}" |
     sed "/\/\/www.youtube.com/{s=\&ab.*==}" |
     sed "s=^http://www.google.com/url?q\===" | sed "s/&sa=.*//" |
-    sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" |
-    sed-pcre "s/(?<!(m\/url|earch|forum|watch|ylist))\?.*//" |
+    sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:=="
+} | {
+    if test "$no_remove_query" = "y"; then
+        cat
+    else
+        sed-pcre "s/(?<!(m\/url|earch|forum|watch|ylist))\?.*//"
+    fi
+} | {
     sed 's/&fbcli.*//' |
     sed "s=\\\n$=="
 }

@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+code="$1"
+
+pen-e -D pen-emacsd-1 -E-tcp-echo "(bible-term-show-word \"$code\")" | pavs

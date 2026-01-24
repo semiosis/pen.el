@@ -17,6 +17,10 @@
       (let ((res (apply proc (list string request no-decode))))
         res)
     (cond
+     ((string-equal "application/msword" string)
+      ;; "zathura %s"
+      ;; "pl %s | store-file-by-hash | xa unbuffer sps o"
+      "unbuffer sps antiword %s")
      ((string-equal "application/pdf" string)
       ;; "zathura %s"
       ;; "pl %s | store-file-by-hash | xa unbuffer sps o"

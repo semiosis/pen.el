@@ -111,6 +111,11 @@ silent! set nomodelineeexpr " disable modelineexpr if it's available
 set tags=~/.tags
 set notitle
 
+" I want to try to get e:/volumes type file paths working with gf
+" set includeexpr=substitute(v:fname,'^e:','','')
+" The string substitution works. Can test by selecting the full org-mode link and doing 'gf'
+set includeexpr=substitute(Tv(v:fname),'^e:','','')
+
 " I couldn't get this going:
 " It works fine on nvim, but not vim
 set title
@@ -1416,6 +1421,27 @@ function! ProgramFilter(vt, ...)
     call setreg('"', qr, qt)
 endfunction
 
+vnoremap <silent> IE :<c-u>call ProgramFilterPredefined("fzfl", visualmode(), 1)<cr>
+vnoremap <silent> II :<c-u>call ProgramFilterPredefined("fzfi", visualmode(), 1)<cr>
+function! ProgramFilterPredefined(cmd, vt, ...)
+    let [qr, qt] = [getreg('"'), getregtype('"')]
+    let [oai, ocin, osi, oinde] = [&ai, &cin, &si, &inde]
+    setl noai nocin nosi inde=
+
+    let [sm, em] = ['[<'[a:0], ']>'[a:0]]
+    exe 'norm!`' . sm . a:vt . '`' . em . 'x'
+
+    let cmd = a:cmd
+
+    let out = system("ptw ".cmd, @")
+    " let out = system(cmd, @")
+    let out = substitute(out, '\n$', '', '')
+    exe "norm!i\<c-r>=out\r"
+
+    let [&ai, &cin, &si, &inde] = [oai, ocin, osi, oinde]
+    call setreg('"', qr, qt)
+endfunction
+
 function! ExecInTmux()
     silent! call SaveTemp()
     silent! call TmuxBaseWait()
@@ -1620,3 +1646,75 @@ xnoremap <silent> gP <ESC>:call GlobalP()<CR>
 " This is so gf can handle grep output
 set isfname-=:
 nnoremap <silent> gf gF
+
+fun! ListFunctions()
+    " This doesn't seem to get all the functions.
+    " For example, it didn't output str2nr().
+    " Perhaps I can grep for them instead.
+    " cd /usr/local/share/vim/vim82/doc; grep -oRP "[A-Za-z0-9]+\\(\\)" . | uniqnosort | v
+
+    let funlist = join(getcompletion('', 'command'), "\n")."\n".system('vim-list-functions-from-helpfiles')
+    let funlist = system("uniqnosort", funlist)
+    return funlist
+endf
+
+fun! ListHelpTopics()
+    let toplist = system('vim-list-help-topics')
+    return toplist
+endf
+
+fun! SplitIntoBuffers(s, pat)
+    for part in split(a:s, a:pat)
+        tabnew
+        put =part
+    endfor
+endf
+
+fun! SplitBufIntoBuffers(pat)
+    let fullstr =  GetBufferContents()
+    let bufnum = bufnr('%')
+    silent! call SplitIntoBuffers(fullstr, a:pat)
+    exe "bd! ".bufnum
+endf
+
+" silent! call system("tv", GetBufferLsAsString())
+fun! GetBufferLsAsString()
+    let a = ""
+    redir => a
+    ls
+    redir END
+    return a
+endf
+
+" silent! call system("tv", GetBufferNumber())
+fun! GetBufferNumber()
+    return bufnr('%')
+endf
+
+" call system("tv", split(GetHelpTopicPreview("str2nr()"), "\n"))
+fun! GetHelpTopicPreview(topic)
+    exe("help ".a:topic)
+    normal! 0Vj
+    call SearchDownDiffCol()
+    normal! k
+    call ReselectVisual()
+    normal! "zy
+    bd
+    return @z
+endf
+
+" if has('wildmenu')
+"   set wildmenu
+"   if exists('+wildmode')
+"     set wildmode=longest:full,full
+"   endif
+"   set wildcharm=0
+"   map  :emenu 
+"   imap  :emenu 
+"   if !has('gui_running')
+"     runtime! menu.vim
+"   endif " !has('gui_running')
+" endif " 'wildmenu'
+
+" It does bother me how attemps like this to make a key mapping fail because it's not very intuitive
+" xmap I <Leader>!fzfi<c-r>

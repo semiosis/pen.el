@@ -71,7 +71,7 @@
       (setq s (e/cat s)))
   
   (with-current-buffer
-      (etv s)
+      (nbfs s)
     (pen-rdrview-minor-mode 1)
     (rdrview-buttonize-buffer)
     (org-link-minor-mode 1)))

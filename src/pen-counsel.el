@@ -193,9 +193,30 @@ prompt additionally for EXTRA-AG-ARGS."
 (defun fz-gl (query)
   (interactive (list (read-string-hist "fz-gl: ")))
 
-  (let ((result (fz (pen-snc (concat (pen-cmd "gl") " " query))
+  (let ((result (fz (pen-snc (concat (pen-cmd "gl" "-notty") " " query))
                     nil nil "fz-gl result: ")))
     (eww result)))
+
+(defun fz-ddgr (query)
+  (interactive (list (read-string-hist "fz-ddgr: ")))
+
+  ;; The duck-duck go cli seems to only be able to fetch 10 results total!
+  (let* ((json (pen-snc (concat (pen-cmd "ocif" "ddgr" "-n" "25" "--json") " " query)))
+         (o (pen-vector2list (json-read-from-string json)))
+         (o (mapcar (lambda (e) (list (cdr (assoc-string "url" e))
+                                      (cdr (assoc-string "title" e))
+                                      ;; (cdr (assoc-string "abstract" e))
+                                      ))
+                    o))
+         (url (fz o nil nil "fz-ddgr: ")))
+    ;; (etv (pps o))
+    ;; (etv (pps (assoc-string "abstract" (car o))))
+    ;; (etv (pps (assoc-string "abstract" (car o))))
+    ;; (etv (pps o))
+    ;; (fz o nil nil "fz-ddgr: ")
+
+    (if (not (string-blank-p url))
+        (browse-url url))))
 
 (defun counsel-gl ()
   "Ivy interface for dynamically querying a search engine."

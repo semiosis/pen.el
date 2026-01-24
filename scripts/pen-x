@@ -596,6 +596,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -wf) { # system call
+        script_append "exec tmux wait-for $2"
+        shift
+        shift
+    }
+    ;;
+
+    # Trigger
+    -tr) { # system call
+        script_append "exec tmux wait-for -S $2"
+        shift
+        shift
+    }
+    ;;
+
     -cl) { # use tmux to clear
         script_append "exec tmux send-keys C-l"
         shift

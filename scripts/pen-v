@@ -434,6 +434,8 @@ if test "$LOCATE_IT" = "y"; then
 fi
 
 if [ $# -eq 1 ]; then
+    . $SCRIPTS/lib/hs
+
     if ! [ -f "$1" ]; then
         w="$(which "$1")"
         r="$?"

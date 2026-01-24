@@ -28,7 +28,8 @@
   ;; line-number-display-width returns the value for the selected
   ;; window, which might not be the window in which the current buffer
   ;; is displayed.
-  (if (not display-line-numbers)
+  (if (not (or display-line-numbers
+               global-display-line-numbers-mode))
       0
     (let ((cbuf-window (get-buffer-window (current-buffer) t)))
       (if (window-live-p cbuf-window)
@@ -45,6 +46,7 @@
                  ;; :underline t
                  ))
             "Header line face."
+
             :group 'pen-faces)
 
 
@@ -167,6 +169,35 @@
                                   'header-line-highlight)
                  ""))))))))
 
+;; (fz (apply '-zip (-unzip (enumerate (worded-number-sequence 0 1000 100)))))
+
+;; (enumerate (worded-number-sequence 0 1000 100))
+(defun enumerate (list)
+  (-zip-lists (number-sequence 1 (length list))
+              list))
+
+(defun inf-menu=
+    (first)
+  (interactive
+   (list nil))
+  (Info-nth-menu-item))
+
+(defun info-menu-menusummary-for-header ()
+  (s-remove-trailing-literal ","
+                             (pen-join (mapcar 'str (-flatten
+                                                     (mapcar (lambda (e)
+                                                               (list
+                                                                ;; (concat (s-btn
+                                                                ;;          ;; Way too slow:
+                                                                ;;          ;; (dffn 1 (snc "tv" "hi"))
+                                                                ;;          (str (car e))) ".")
+                                                                (concat (str (car e)) ".")
+                                                                (concat (cadr e) " ")))
+                                                             (enumerate (-filter
+                                                                         'identity
+                                                                         (cl-loop for i from 1 to 10 collect
+                                                                                  (ignore-errors (Info-extract-menu-counting i)))))))) " ")))
+
 (defun ph--display-header ()
   "Display path on headerline."
 
@@ -180,6 +211,18 @@
     nil)
    ((derived-mode-p 'calc-mode)
     nil)
+
+   ;; Info-mode already has something for the header line
+   ((derived-mode-p 'Info-mode)
+    (setq header-line-format
+          '("" ;; invocation-name
+            (:eval
+             (let ((menu_sum (info-menu-menusummary-for-header)))
+               (if (test-n menu_sum)
+                   (concat (get-text-property (point-min) 'header-line)
+                           ",  Menu: "
+                           menu_sum)
+                 (get-text-property (point-min) 'header-line)))))))
    ((or (derived-mode-p 'calc-trail-mode)
         (string-equal "*Calc Trail*" (buffer-name)))
     nil)

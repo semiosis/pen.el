@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+cmd1 "$@" | hls blue 1>&2

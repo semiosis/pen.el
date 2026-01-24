@@ -1,6 +1,9 @@
 (defvar default-ivy-height 30)
 (setq ivy-height default-ivy-height)
 
+;; (setq ivy-use-ignore-default nil)
+(setq ivy-use-ignore-default t)
+
 (defun pen-ivy-filtered-candidates ()
   "Returns the list of candidates filtered by the currently entered pattern"
   (ivy--filter ivy-text ivy--all-candidates))

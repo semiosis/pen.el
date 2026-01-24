@@ -945,10 +945,12 @@
             '(menu-item "Read chapter aloud from KJV" bible-mode-read-chapter-aloud-kjv
                         :help "Read chapter aloud from KJV"))
           (bindings--define-key menu [mi-bible-e-chapter-titles]
-            '(menu-item "Bible chapter titles" bible-e-chapter-titles
+            '(menu-item "Bible chapter titles" dff-e-penconf-documents-notes-ws-peniel-bible-chapter-titles-txt-
+                        ;; bible-e-chapter-titles
                         :help "Open file containing Bible chapter titles"))
           (bindings--define-key menu [mi-bible-e-outlines]
-            '(menu-item "Bible outlines" bible-e-outlines
+            '(menu-item "Bible outlines"dff-e-penconf-documents-notes-ws-peniel-bible-outlines-txt-
+                        ;; bible-e-outlines
                         :help "Open file containing Bible outlines"))
           (bindings--define-key menu [mi-helm-regex-bible-search]
             '(menu-item "Bible verse regex search" helm-regex-bible-search

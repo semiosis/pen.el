@@ -18,7 +18,8 @@ case "$url" in
         # unbuffer rdrview "$url" | pen-str summary | cat
         # rdrview "$url" | pen-str summary | cat
         # ub -E "$(cmd rdrview "$url" | cat)" | pen-str summary | cat
-        unbuffer bash -c "rdrview \"$url\" | pen-str summary"
+        unbuffer bash -c "PAGER=cat rdrview \"$url\" | pen-str summary"
+        # cmd unbuffer bash -c "rdrview \"$url\" | pen-str summary" | tv
         # which unbuffer
         # unbuffer /usr/local/bin/rdrview "$url" | pen-str summary | cat
     }

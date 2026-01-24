@@ -110,6 +110,7 @@
       (ignore-errors (pen-add-ink-change-hook)))
     buffer))
 (defalias 'nbfs 'new-buffer-from-string)
+(defalias 'new-buffer 'new-buffer-from-string)
 
 (defun nbfs-sps (s)
   (esps (lm (nbfs s))))
@@ -129,9 +130,8 @@
   o)
 
 (defun new-buffer-from-o (&optional o mode)
-  "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
- Example:
- (message (pen-etv \"shane\"))"
+  "Example:
+ (with-current-buffer (nbfo \"shane\") ...)"
   (interactive)
   (new-buffer-from-string
    (cond
@@ -139,8 +139,19 @@
     ((not o) "")
     (t (pp-to-string o)))
    nil mode))
+(defalias 'pen-nbfo 'new-buffer-from-o)
+(defalias 'nbfo 'new-buffer-from-o)
 
 (defalias 'pen-etv 'new-buffer-from-o)
+
+;; tv and etv should just return whatever was passed into it
+(defun pen-etv (&optional o mode)
+  "Returns the object. This is a way to see the contents of a variable while not interrupting the flow of code.
+ Example:
+ (message (pen-etv \"shane\"))"
+  (interactive)
+  (new-buffer-from-o o mode)
+  o)
 
 (defmacro ifi-message (&rest body)
   `(let ((result
@@ -378,9 +389,11 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
     (if b_output
         ;; unbuffer breaks stdout
         (if stdin
-            (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf))
+            (if (test-n stdin)
+                (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf))
+              (setq final_cmd (concat "pen-tm -f -s -sout " session-dir-cmd " > " tf)))
           (setq final_cmd (concat "unbuffer pen-tm -f -fout " session-dir-cmd " > " tf)))
-      (if stdin
+      (if (and stdin (test-n stdin))
           (if b_wait
               (setq final_cmd (concat "pen-tm -f -S -tout -w " session-dir-cmd))
             (setq final_cmd (concat "pen-tm -f -S -tout " session-dir-cmd)))
@@ -390,16 +403,27 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
     (if (not stdin)
         (shell-command final_cmd)
-      (with-temp-buffer
-        (insert stdin)
+      (if (test-n stdin)
+          (with-temp-buffer
+            (insert stdin)
 
-        (shell-command-on-region (point-min) (point-max) final_cmd)))
+            ;; (etv (format "%d %d" (point-min) (point-max)))
+            (shell-command-on-region (point-min) (point-max) final_cmd))
+        (with-temp-buffer
+            (insert stdin)
+
+            ;; (etv (format "%d %d" (point-min) (point-max)))
+            (shell-command-on-region (point-min) (point-max) final_cmd))))
 
     (if b_output
         (progn
           (setq output (slurp-file tf))
           output))))
 
+;; Test:
+;; (pen-sn "ptw tm vipe -wintype nw vipe" "")
+;; (pen-sh/tvipe "" "v" "nw")
+;; (pen-sh/tvipe "yo" "v" "nw")
 (defun pen-sh/tvipe (&optional stdin editor tm_wincmd ft b_nowait b_quiet dir)
   "Converts the parameter to its string representation and pipes it into tmux.
 If a region is selected then it replaces that region.
@@ -415,31 +439,34 @@ This function doesn't really like it when you put 'sp' as the editor."
   (if (not tm_wincmd)
       (setq tm_wincmd "sps"))
 
-  (setq editor (concat "EDITOR=" (pen-q editor) " vipe"))
+  (let ((vipecmd (concat "EDITOR=" (pen-q editor) " vipe")))
 
-  (if b_quiet (setq editor (concat editor " &>/dev/null")))
+    (if b_quiet (setq vipecmd (concat vipecmd " &>/dev/null")))
 
-  (if (not stdin)
-      (if (region-active-p)
-          (setq stdin (pen-selected-text))))
+    (if (not stdin)
+        (if (region-active-p)
+            (setq stdin (pen-selected-text))))
 
-  (if stdin (setq stdin (str stdin)))
+    (if stdin (setq stdin (str stdin)))
 
-  (if (not (pen-empty-string-p stdin))
-      (if (region-active-p)
-          (progn
-            ;; (select-tmux-current)
-            (let ((stdout (pen-sn (concat "ptw tm vipe -wintype " tm_wincmd " " (e/q editor))
-                                  (format "%s" stdin)
-                                  dir
-                                  nil
-                                  b_nowait)))
-              (if (not b_nowait)
-                  (progn
-                    (delete-region (region-beginning) (region-end))
-                    (insert stdout)))))
-        (pen-bash editor (str stdin) (or (not b_quiet) (not b_nowait)) nil t tm_wincmd dir (not b_nowait)))
-    (message "%s" "tvipe: stdin is empty")))
+    (if stdin
+        ;; (not (pen-empty-string-p stdin) stdin)
+        (if (region-active-p)
+            (progn
+              ;; (select-tmux-current)
+              (let ((stdout (pen-sn (concat "ptw tm vipe -wintype " tm_wincmd " " (e/q vipecmd))
+                                    (format "%s" stdin)
+                                    dir
+                                    nil
+                                    b_nowait)))
+                (if (not b_nowait)
+                    (progn
+                      (delete-region (region-beginning) (region-end))
+                      (insert stdout)))))
+          (if (test-n stdin)
+              (pen-bash vipecmd (str stdin) (or (not b_quiet) (not b_nowait)) nil t tm_wincmd dir (not b_nowait))
+            (pen-bash editor (str stdin) (or (not b_quiet) (not b_nowait)) nil t tm_wincmd dir (not b_nowait))))
+      (message "%s" "tvipe: stdin is empty"))))
 
 (cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir &key pp
                                &key use_etv

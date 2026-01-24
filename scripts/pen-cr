@@ -620,7 +620,7 @@ case "$fnspec" in
             fi
         else
             if test "$(head -c 2 "$rp")" = "#!"; then
-                perl "$rp"
+                runshebang "$rp"
                 pen-pak
                 exit $?
             fi
@@ -1684,14 +1684,42 @@ case "$fnspec" in
     ;;
 
     *.pl) {
-        if pen-yn "prolog?"; then
-            if pen-yn "Run script (y) or open playground (n)?"; then
-                :
-            else
-                swipl-playground "$fp"
+        langdetect="$(cat "$fp" | emacs-detect-lang)"
+        if test -n "$langdetect"; then
+            echo "$langdetect detected for $fp" | hls orange 1>&2
+        else
+            if pen-yn "prolog?"; then
+                langdetect=prolog
             fi
-            exit $?
         fi
+
+        case "$langdetect" in
+            prolog) {
+                if pen-yn "Run script (y) or open playground (n)?"; then
+                    if test "$(head -c 2 "$rp")" = "#!"; then
+                        zrepl cmdx runshebang "$rp"
+                        pen-pak
+                        exit $?
+                    else
+                        zrepl cmdx swipl "$rp"
+                        pen-pak
+                        exit $?
+                    fi
+                else
+                    swipl-playground "$fp"
+                fi
+                exit $?
+            }
+            ;;
+
+            *) {
+                if test "$(head -c 2 "$rp")" = "#!"; then
+                    runshebang "$rp"
+                    pen-pak
+                    exit $?
+                fi
+            }
+        esac
     }
     ;;
 
@@ -2003,7 +2031,7 @@ case "$file_type" in
     bb) {
         if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
             cd "$dn"
-            perl "$rp"
+            runshebang "$rp"
             exit $?
         else
             zrepl -cm bb "$rp"
@@ -2021,7 +2049,7 @@ case "$file_type" in
         # check to see if babshka
         if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
             cd "$dn"
-            perl "$rp"
+            runshebang "$rp"
             pen-pak
             exit $?
         fi
@@ -2169,7 +2197,7 @@ case "$file_type" in
         # does it have a shebang? (For different problog invocations)
         if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
             cd "$dn"
-            perl "$rp" | pen-pavs
+            runshebang "$rp" | pen-pavs
             exit $?
         else
             run-cpl "$rp"
@@ -2182,7 +2210,7 @@ case "$file_type" in
         # does it have a shebang? (For different problog invocations)
         if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
             cd "$dn"
-            perl "$rp" | pen-pavs
+            runshebang "$rp" | pen-pavs
             exit $?
         else
             problog "$rp" | pen-pavs
@@ -2350,7 +2378,7 @@ case "$file_type" in
 
     rkt) {
         if test "$(head -c 2 "$rp")" = "#!"; then
-            perl "$rp"
+            runshebang "$rp"
             pen-pak
             exit $?
         else
@@ -2400,7 +2428,7 @@ case "$file_type" in
 
         # It could be run by rust-script
         if test "$(head -c 2 "$rp")" = "#!"; then
-            perl "$rp"
+            runshebang "$rp"
             pen-pak
             exit $?
         else
@@ -2414,6 +2442,12 @@ case "$file_type" in
     ;;
 
     c) {
+        if test -z "$runit" && test "$(head -c 2 "$rp")" = "#!"; then
+            runshebang "$rp"
+            pen-pak
+            exit $?
+        fi
+
         if cat "$rp" | grep -q -P '<sqlite3.h>'; then
             gcc_extra_args+=" -lsqlite3 "
 
@@ -2737,7 +2771,7 @@ case "$file_type" in
 
     sh) {
         if test "$(head -c 2 "$rp")" = "#!"; then
-            perl "$rp"
+            runshebang "$rp"
             # nvc -w -2 $rp
             pen-pak
             exit $?
@@ -2754,7 +2788,7 @@ case "$file_type" in
         if test -f "$rp"; then
             if test "$(head -c 2 "$rp")" = "#!"; then
                 cd "$dn"
-                perl "$rp"
+                runshebang "$rp"
                 # nvc -w -2 $rp
                 pen-pak
                 exit $?

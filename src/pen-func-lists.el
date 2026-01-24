@@ -104,6 +104,9 @@
 (defset w3m-mode-funcs '(w3m-enable-display-html-for-fontify
                          w3m-disable-display-html-for-fontify
                          eww-summarize-this-page
+                         reopen-in
+                         reopen-in-eww
+                         reopen-in-browsh
                          rdrview))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
@@ -302,6 +305,8 @@
 (defset eww-mode-funcs '(eww-open-in-chrome
                          eww-dump-vim
                          eww-reopen-in-chrome
+                         reopen-in-w3m
+                         reopen-in-browsh
                          select-font-lock-face-region
                          w3m-open-this-file
                          elinks-open-this-file

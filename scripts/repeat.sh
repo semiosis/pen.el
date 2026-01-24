@@ -15,6 +15,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -pak) {
+        do_pak=y
+        shift
+    }
+    ;;
+
     -E) {
         DO_EXEC=y
         shift
@@ -27,13 +33,22 @@ esac; done
 if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
-    CMD="$(cmd "$@")"
+    CMD="$(cmd-nice "$@")"
 fi
 
 check_repeat() {
     if test "$do_ask" = y; then
-        echo "$CMD" | mnm | hls blue 1>&2
+        {
+            echo -n CMD: | hls red
+            echo " $CMD" | mnm | hls blue
+        } 1>&2
         yn "Repeat?"
+    elif test "$do_pak" = y; then
+        {
+            echo -n CMD: | hls red
+            echo " $CMD" | mnm | hls blue
+        } 1>&2
+        pak -q
     else
         if [ -n "$delay" ]; then
             sleep "$delay"

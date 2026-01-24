@@ -8,10 +8,12 @@
 (defun pen-eww-for-browse-url (url discard)
   (lg-eww url nil))
 
-(setq engine/browser-function 'pen-eww-for-browse-url)
+;; (setq engine/browser-function 'pen-eww-for-browse-url)
+(setq engine/browser-function browse-url-browser-function)
 
 (engine/set-keymap-prefix (kbd "H-/"))
 
+;; (engine-mode -1)
 (engine-mode 1)
 
 (defun defengine-around-advice (proc &rest args)
@@ -88,7 +90,8 @@
 (defengine google
   "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
   :keybinding "g"
-  :browser 'lg-eww)
+  ;; :browser 'lg-eww
+  )
 
 (defvar google-search-url-spec "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s")
 (defun pen-format-search-spec (spec query)
@@ -135,7 +138,7 @@
   (if (not body)
       (setq body '("http://google.com")))
 
-  (pen-sps (concat "browsh " (pen-q (car body)))))
+  (pen-nw (concat "browsh " (pen-q (car body)))))
 
 (defun ebrowsh (url)
   "This is very slow, actually"

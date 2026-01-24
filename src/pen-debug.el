@@ -144,37 +144,47 @@
   (if (symbolp p)
       (setq p (str p)))
 
-  (let ((mn "*emacs-lisp-scratch*"))
-    (with-current-buffer
-        (switch-to-buffer mn)
-      (emacs-lisp-mode)
-      (let ((r (lispy-goto-symbol (str2sym p))))
-        (kill-buffer mn)
-        r))
-    ;; (comment
-    ;;  (rename-error
-    ;;   (concat "Can't find " p " in loaded packages")
-      
+  (let ((package_path (s-replace-regexp "\\.elc$" ".el" (locate-library p))))
 
-    ;;   ;; (try
-    ;;   ;;  (with-current-buffer
-    ;;   ;;      (switch-to-buffer mn)
-    ;;   ;;    (emacs-lisp-mode)
-    ;;   ;;    (let ((r (lispy-goto-symbol ,(str2sym p))))
-    ;;   ;;      (kill-buffer mn)
-    ;;   ;;      r)))
+    (setq package_path
+          (cond
+           ((f-exists-p (concat package_path ".gz")) (concat package_path ".gz"))
+           ((f-exists-p package_path) package_path)
+           (t nil)))
 
-    ;;   (try
-    ;;    (with-current-buffer
-    ;;        (switch-to-buffer mn)
-    ;;      (emacs-lisp-mode)
-    ;;      (let ((r (lispy-goto-symbol (str2sym p))))
-    ;;        (kill-buffer mn)
-    ;;        r))
-    ;;    (progn
-    ;;      (kill-buffer mn)
-    ;;      (error (concat "Can't find " p " in loaded packages. Killing buffer"))))))
-    ))
+    (if package_path
+        (find-file package_path)
+      (let ((mn "*emacs-lisp-scratch*"))
+        (with-current-buffer
+            (switch-to-buffer mn)
+          (emacs-lisp-mode)
+          (let ((r (lispy-goto-symbol (str2sym p))))
+            (kill-buffer mn)
+            r))
+        ;; (comment
+        ;;  (rename-error
+        ;;   (concat "Can't find " p " in loaded packages")
+
+
+        ;;   ;; (try
+        ;;   ;;  (with-current-buffer
+        ;;   ;;      (switch-to-buffer mn)
+        ;;   ;;    (emacs-lisp-mode)
+        ;;   ;;    (let ((r (lispy-goto-symbol ,(str2sym p))))
+        ;;   ;;      (kill-buffer mn)
+        ;;   ;;      r)))
+
+        ;;   (try
+        ;;    (with-current-buffer
+        ;;        (switch-to-buffer mn)
+        ;;      (emacs-lisp-mode)
+        ;;      (let ((r (lispy-goto-symbol (str2sym p))))
+        ;;        (kill-buffer mn)
+        ;;        r))
+        ;;    (progn
+        ;;      (kill-buffer mn)
+        ;;      (error (concat "Can't find " p " in loaded packages. Killing buffer"))))))
+        ))))
 
 (comment
  (defun pen-goto-package-all (p)

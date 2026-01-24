@@ -777,6 +777,53 @@
           (rename-buffer next_name)))
     buf))
 
+(defun bible-mode-lookup-list-history ()
+  (interactive)
+  (let ((l (pen-snc "uniqnosort"
+                    (pen-sed "s/^.*cache://"
+                             (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (pen-hg "bible-mode-lookup"))
+                                        :chomp t)))))
+    (if (interactive-p)
+        (pen-etv l)
+      l)))
+
+(defun bible-mode-fz-history ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-he "bible-mode-lookup")
+    (let ((ref (fz
+                (bible-mode-lookup-list-history)
+                nil
+                nil
+                "Bible mode verse history: ")))
+      (if ref
+          ;; (lg-eww ref)
+          (bible-mode-lookup ref)))))
+
+(defun bible-search-phrase-list-history ()
+  (interactive)
+  (let ((l (pen-snc "uniqnosort"
+                    (pen-sed "s/^.*cache://"
+                             (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (pen-hg "bible-search-phrase"))
+                                        :chomp t)))))
+    (if (interactive-p)
+        (pen-etv l)
+      l)))
+
+;; TODO Make a key binding
+(defun bible-search-phrase-fz-history ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-he "bible-search-phrase")
+    (let ((ref (fz
+                (bible-search-phrase-list-history)
+                nil
+                nil
+                "Bible search phrase history: ")))
+      (if ref
+          ;; (lg-eww ref)
+          (bible-search-phrase ref)))))
+
 ;; (bible-mode-lookup "Ps.33.6")
 ;; (bible-mode-lookup "Ps 33:6")
 (defun bible-mode-lookup (&optional text module buf)
@@ -786,6 +833,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   (setq text (or text (bible-get-text-here)))
   (setq text (pen-snc "canonicalise-bible-ref" text))
+
+  (hs "bible-mode-lookup" text)
 
   ;; (mapcar 'car bible-mode-book-chapters)
 
@@ -1347,6 +1396,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                (query (pen-ask (pen-selection) "Bible Search: ")))
            (list query nil book current-book-and-chap))
        (list (pen-ask (pen-selection) "Bible Search: ") nil nil current-book-and-chap))))
+
+  (hs "bible-search-phrase" query)
   (bible-mode--open-search query "phrase" (or module bible-mode-book-module default-bible-mode-book-module) range
                            search-on-search))
 
@@ -1493,7 +1544,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            ;; (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference | bible-show-verses | cat" ref)
            (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref)))
       (if (sor xrefs)
-          (let ((b (etv
+          (let ((b (nbfo
                     (concat
                      ref "\n"
                      xrefs))))
@@ -1531,9 +1582,28 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           (if info
               ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines (shut-up-buffer-string info))))
               (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
-    word))
 
-(defun bible-term-show-word (term_code)
+    (if (interactive-p)
+        (nbfo word)
+      word)))
+
+(defun strongs-greek-info (term_code)
+  (let ((ret))
+    (with-temp-buffer
+        (bible-mode--display-term-greek term_code)
+      (setq ret (buffer-string))
+      (kill-buffer))
+    ret))
+
+(defun strongs-hebrew-info (term_code)
+  (let ((ret))
+    (with-temp-buffer
+        (bible-mode--display-term-hebrew term_code)
+      (setq ret (buffer-string))
+      (kill-buffer))
+    ret))
+
+(defun bible-term-show-word (term_code &optional force-interactive)
   (interactive "sTerm: ")
   (let* ((term_code (str term_code))
          (split_code (s-replace-regexp "." "" term_code))
@@ -1542,15 +1612,19 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (term_code (s-replace-regexp "^[GH]" "" term_code))
          (info
           (cond
-           (is_greek (bible-mode--open-term-greek term_code))
-           (is_hebrew (bible-mode--open-term-hebrew term_code))
+           (is_greek (strongs-greek-info term_code))
+           (is_hebrew (strongs-hebrew-info term_code))
            (t nil)))
          (word
           ;; This isn't the main bottleneck
           (if info
               ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines (shut-up-buffer-string info))))
               (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
-    word))
+    (if (or (interactive-p)
+            force-interactive)
+        (nbfo info)
+      (str info))))
+(defalias 'strongs-lookup 'bible-term-show-word)
 
 ;; This speeds it up a lot
 ;; I should ensure that the memoization databases are saved on the host
@@ -1786,13 +1860,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-e-chapter-titles ()
   (interactive)
   (if (interactive-p)
-      (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+      (call-interactively 'dff-e-penconf-documents-notes-ws-peniel-bible-chapter-titles-txt-)
+      ;; (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
     (cat "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
 
 (defun bible-e-outlines ()
   (interactive)
   (if (interactive-p)
-      (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-outlines.txt"))
+      (call-interactively 'dff-e-penconf-documents-notes-ws-peniel-bible-outlines-txt-)
+      ;; (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-outlines.txt"))
     (cat "$PEN/documents/notes/ws/peniel/Bible-outlines.txt")))
 
 ;; (memoize-restore 'dff-let-nil-let-info-a-about-a-nstory-book-info-b-about-a-nmystery-tv-firstrun-snc-tr-s-a-a-car-str2lines-concat-info-a-info-b-)
@@ -1901,6 +1977,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-open-default ()
   (interactive)
+
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16)
+    (let ((current-prefix-arg nil ))
+      (call-interactively 'bible-search-phrase-fz-history)))
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (let ((current-prefix-arg nil ))
+      (call-interactively 'bible-mode-fz-history))))
+
+  
   (if (selected-p)
       (call-interactively-with-prefix-and-parameters 'bible-search-phrase
                                                      (prefix-numeric-value current-prefix-arg)
@@ -2355,5 +2441,20 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 ;; - Haystack
 ;; - Match/findstr
 ;; - Column number
+
+
+;; TODO Make line permutations first
+(defun bible-verse-ref-at-point-p ()
+  (let* ((line (current-line-string))
+         ;;  | pen-sort line-length
+         (refs (str2lines (snc "scrape-bible-references" line)))
+         (found nil))
+    (dolist (ref refs) 
+      (setq found (or found (regex-at-point ref t))))
+    found))
+
+(defun bible-verse-at-point-tpop ()
+  (interactive)
+  (bible-mode-tpop (bible-verse-ref-at-point-p)))
 
 (provide 'pen-bible-mode)

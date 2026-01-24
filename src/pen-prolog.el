@@ -1,6 +1,9 @@
 (require 'prolog-ls)
-(use-package ediprolog)
 (require 'ob-prolog)
+
+(ignore-errors
+  (use-package ediprolog)
+  (require 'ediprolog))
 
 (add-hook 'prolog-mode-hook #'lsp)
 
@@ -29,5 +32,25 @@
 
 (define-key prolog-mode-map (kbd "C-c TAB") 'ediprolog-dwim)
 (define-key prolog-mode-map (kbd "M-RET") 'new-line-and-indent)
+
+(define-derived-mode prolog-kb-mode prolog-mode "prolog-kb"
+  ""
+  ;; (setq mode-name (concat "prolog"))
+  ;; (prolog-mode-variables)
+  ;; (dolist (ar prolog-align-rules) (add-to-list 'align-rules-list ar))
+  ;; (add-hook 'post-self-insert-hook #'prolog-post-self-insert nil t)
+  ;; `imenu' entry moved to the appropriate hook for consistency.
+  ;; (when prolog-electric-dot-flag
+  ;;   (setq-local electric-indent-chars
+  ;;               (cons ?\. electric-indent-chars)))
+
+  ;; Load SICStus debugger if suitable
+  ;; (if (and (eq prolog-system 'sicstus)
+  ;;          (prolog-atleast-version '(3 . 7))
+  ;;          prolog-use-sicstus-sd)
+  ;;     (prolog-enable-sicstus-sd))
+
+  ;; (prolog-menu)
+  )
 
 (provide 'pen-prolog)

@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+cm="$1"
+
+rm -f /tmp/vim-eval-out.txt
+# call writefile(split(ListFunctions()), "/tmp/vim-eval-out.txt")
+# ex -s -c "call writefile(split($cm), \"/tmp/vim-eval-out.txt\")" -c "q!"
+# cmd ex  "call writefile(split($cm), \"/tmp/vim-eval-out.txt\")"
+# vim -c "call writefile(split($cm), \"/tmp/vim-eval-out.txt\")"
+# ex -s was breaking it for vim-eval "ListFunctions()". I'm not sure why. So using &>/dev/null istead
+ex -c "call writefile(split($cm, '\n'), \"/tmp/vim-eval-out.txt\")" -c "q!" &>/dev/null
+cat /tmp/vim-eval-out.txt | pavs

@@ -67,10 +67,10 @@ function! SaveTemp()
     "else
     "    let tmpstr="/tmp/scratchXXXXXX.txt"
     "endif
-    let tmpstr="~/dump/tmp/scratchXXXXXX.txt"
+    " let tmpstr="~/dump/tmp/scratchXXXXXX.txt"
     if bufname('%') == ''
         let a = system("/usr/bin/notify-send \"Consider using yt instead\"")
-        let rf = system("/bin/mktemp ".tmpstr)
+        let rf = system("pen-tf txt")
         exec "w! ".rf
         exec "e! ".rf
     endif

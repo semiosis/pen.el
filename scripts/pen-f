@@ -128,9 +128,28 @@ case "$opt" in
     }
     ;;
 
-    xonly|executables|exes-only) {
-        awk 1 | pen-str cc | pen-str uniq | while read -r line; do
-            if which "$line" &>/dev/null; then
+    ne|nonempty) {
+        pen-scrape-files-fast.sh | while read -r line; do
+            if test -s "$line" &>/dev/null; then
+                printf "%s\n" "$line"
+            fi
+        done
+    }
+    ;;
+
+    x|xonly|executables|exes-only) {
+        awk 1 | pen-str uniq | while read -r line; do
+            if test -f "$line" && test -x "$line" &>/dev/null; then
+                printf "%s\n" "$line"
+            fi
+        done
+    }
+    ;;
+
+    wonly|whichonly) {
+        awk 1 | pen-str uniq | while read -r line; do
+            # TODO This should also check if the dir is in the path
+            if test -f "$line" && test -x "$line" && which "$(basename "$line")" &>/dev/null; then
                 printf "%s\n" "$line"
             fi
         done

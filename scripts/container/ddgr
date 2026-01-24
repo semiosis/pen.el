@@ -1,6 +1,12 @@
 #!/bin/bash
 export TTY
 
+. $SCRIPTS/lib/hs
+
+if test "$1" == "--help"; then
+    do_pager=y
+fi
+
 test -f $REPOS/ddgr/ddgr || (
     cd "$REPOS"
     git clone "https://github.com/jarun/ddgr"
@@ -8,4 +14,8 @@ test -f $REPOS/ddgr/ddgr || (
     make
 )
 
-$REPOS/ddgr/ddgr "$@"
+if test "$do_pager" = "y"; then
+    $REPOS/ddgr/ddgr  "$@" | pavs
+else
+    $REPOS/ddgr/ddgr "$@"
+fi

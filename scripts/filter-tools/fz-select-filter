@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+cd $PENELD/scripts/filters
+find -L . -type f | sed 's/^\.\///' | fz

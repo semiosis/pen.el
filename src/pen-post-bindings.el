@@ -86,7 +86,8 @@
   (define-key pen-map (kbd "M-m w V") #'pen-e-spv-zsh)
 
   (define-key pen-map (kbd "M-m w N") #'spv-new-buffer)
-  (define-key pen-map (kbd "M-m w n") #'spv-new-buffer)
+  (define-key pen-map (kbd "M-m w n") #'new-buffer)
+  (define-key pen-map (kbd "M-m w j") #'sph-new-buffer)
   ;; (define-key pen-map (kbd "M-m w n") #'pen-e-nw-zsh)
 
   (define-key pen-map (kbd "M-m w O") #'win-swap)
@@ -164,6 +165,8 @@
   (sslk "lFj" (dff (e "$NOTES/journal.org")))
   (sslk "lFn" (dff (e "$NOTES/need.org")))
   (sslk "lFf" (dff (e "$NOTES/files.txt")))
+  (sslk "lFBC" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
+  (sslk "lFBO" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-outlines.txt")))
   (sslk "lFF" (dff (e "$EMACSD/pen.el/config/filters/filters.sh")))
   (sslk "lFe" (dff (e "$NOTES/examples.txt")))
   (sslk "lFW" (dff (e "$NOTES/ws/french/words.txt")))

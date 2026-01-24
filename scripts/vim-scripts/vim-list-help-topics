@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+IFS= read -r -d '' sh_code <<'HEREDOC'
+cd /usr/local/share/vim/vim82/doc
+grep -oRP "\\*['A-Za-z0-9()]+\\*" | uniqnosort | cut -d : -f 2 | sed -e "s/^\\*\\(.*\\)\\*$/\\1/" | uniqnosort
+HEREDOC
+
+oci bash -c "$sh_code" | pavs

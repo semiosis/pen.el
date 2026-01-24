@@ -2401,3 +2401,5 @@ highlight2clipboard
 hl-anything
 window-jump
 global-tags
+zig-mode
+zig-ts-mode

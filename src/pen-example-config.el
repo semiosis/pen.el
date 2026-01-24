@@ -835,7 +835,10 @@
 (define-key pen-map (kbd "M-l M-r M-m") 'record-keyboard-macro-string)
 
 (if (inside-docker-p)
-    (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window))
+    (progn
+      (define-key pen-map (kbd "<M-f4>") 'pen-revert-kill-buffer-and-window)
+      (define-key pen-map (kbd "M-m w x") 'pen-revert-kill-buffer-and-window)
+      (define-key pen-map (kbd "M-m w k") 'pen-revert-kill-buffer-and-window)))
 
 ;; Perhaps this should also kill the emacsclient
 ;; (define-key pen-map (kbd "<S-M-f4>") 'pen-save-and-kill-buffer-and-window)

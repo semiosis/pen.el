@@ -17,6 +17,17 @@
 
 (setq epe-fish-path-max-len 40)
 
+(setq eshell-visual-commands
+      '("tail" "ssh" "vi" "vim" "screen" "tmux" "top" "htop" "less" "more" "lynx" "links" "ncftp" "mutt" "pine" "tin" "trn" "elm"
+        "v"))
+
+(setq eshell-prefer-lisp-functions t)
+(eshell-vterm-mode -1)
+
+;; vterm needs some ironing out
+;; (eshell-vterm-mode t)
+;; (eshell-vterm-mode -1)
+
 
 ;; This has been a good theme. I think I'll stick with it.
 ;; It also "looks" like eshell to me now
@@ -51,19 +62,20 @@
    eshell-error-if-no-glob t
    eshell-hist-ignoredups t
    eshell-save-history-on-exit t
-   eshell-prefer-lisp-functions nil
+   ;; eshell-prefer-lisp-functions nil
    eshell-destroy-buffer-when-process-dies t))
 
 
 ;; Eshell would get somewhat confused if I ran the following commands directly through the normal Elisp library, as these need the better handling of ansiterm:
-(use-package eshell
-  :init
-  (add-hook 'eshell-mode-hook
-            (lambda ()
-              (setq eshell-prefer-lisp-functions t)
-              (add-to-list 'eshell-visual-commands "ssh")
-              (add-to-list 'eshell-visual-commands "tail")
-              (add-to-list 'eshell-visual-commands "top"))))
+;; (use-package eshell
+;;   ;; :init
+;;   ;; (add-hook 'eshell-mode-hook
+;;   ;;           (lambda ()
+;;   ;;             (setq eshell-prefer-lisp-functions t)
+;;   ;;             (add-to-list 'eshell-visual-commands "ssh")
+;;   ;;             (add-to-list 'eshell-visual-commands "tail")
+;;   ;;             (add-to-list 'eshell-visual-commands "top")))
+;;   )
 
 
 (require 'em-alias)
@@ -335,6 +347,10 @@ or an external command."
 	      (car args)
       (list (car args)))))
 
+(defun eshell/command (&rest args)
+  "Like the bash `command` function."
+  (pen-snc (eval `(cmd "command" ,@args))))
+
 (defun eshell/slugify (&rest args)
   "Return the argument(s) as a single slug."
   (slugify (mapconcat 'str args " ")))
@@ -528,5 +544,9 @@ environment, as specified in `eshell-variable-aliases-list'."
 
           text)))
   (car file))
+
+(defalias 'eshell/visual 'eshell-exec-visual)
+(defalias 'eshell/term 'eshell-exec-visual)
+(defalias 'eshell/vterm 'eshell-vterm-exec-visual)
 
 (provide 'pen-eshell)

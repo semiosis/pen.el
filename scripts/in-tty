@@ -1,6 +1,17 @@
 #!/bin/bash
 export TTY
 
+# export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+is_stdout_pipe
+ispipe="$?"
+
 # test
 # tmux run -b "echo hi | in-tty pa -tf"
 
@@ -48,13 +59,17 @@ elif test "$istty_stderr" = 0; then
     # echo is tty stderr | hls red 1>&2
     if test "$hasstdin" = 0; then
         (
-        exec 1>&2
+        if ! test "$ispipe" = 0; then
+            exec 1>&2
+        fi
         eval "$CMD"
         )
     else
         (
         exec <&2
-        exec 1>&2
+        if ! test "$ispipe" = 0; then
+            exec 1>&2
+        fi
         eval "$CMD"
         )
     fi

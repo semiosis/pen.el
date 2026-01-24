@@ -15,6 +15,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -q) {
+        quit_key=q
+        shift
+    }
+    ;;
+
+    -qk) {
+        quit_key="$2"
+        shift
+        shift
+    }
+    ;;
+
     -m) {
         MESSAGE="$2. "
         shift
@@ -69,6 +82,7 @@ if [ -n "$key" ]; then
     code="$?" # if this is not 0 then pak must not be working. Don't want an infinite loop
     while test "$code" = "0" && ! [[ "$ret" == "$key" ]]; do
         read -n 1 -s ret
+        code="$?" # if this is not 0 then pak must not be working. Don't want an infinite loop
     done
 
     if test "$HIDDEN" = "y"; then
@@ -79,13 +93,35 @@ if [ -n "$key" ]; then
         ns "pak can't read. quitting"
     fi
 else
-    if test -n "$CMD"; then
-        echo
-        printf -- "%s\n" "${MESSAGE}Press any key to run $CMD" | lolcat
+    if test -n "$quit_key"; then
+        if test -n "$CMD"; then
+            echo
+            printf -- "%s" "${MESSAGE}Press '$quit_key' to quit" | hls yellow
+            printf -- "%s\n" " or other key to run $CMD" | lolcat
+        else
+            printf -- "%s" "${MESSAGE}Press '$quit_key' to quit" | hls yellow
+            printf -- "%s\n" " or other key to continue" | lolcat
+        fi
+
+        read -n 1 -s ret
+        code="$?" # if this is not 0 then pak must not be working. Don't want an infinite loop
+        while ! test "$code" = "0"; do
+            read -n 1 -s ret
+            code="$?" # if this is not 0 then pak must not be working. Don't want an infinite loop
+        done
+
+        if [[ "$ret" == "$quit_key" ]]; then
+            exit 1
+        fi
     else
-        printf -- "%s\n" "${MESSAGE}Press any key..." | lolcat
+        if test -n "$CMD"; then
+            echo
+            printf -- "%s\n" "${MESSAGE}Press any key to run $CMD" | lolcat
+        else
+            printf -- "%s\n" "${MESSAGE}Press any key..." | lolcat
+        fi
+        read -n 1 -s
     fi
-    read -n 1 -s
 fi
 
 # Run after pak

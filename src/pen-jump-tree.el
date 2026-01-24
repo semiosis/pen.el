@@ -41,8 +41,16 @@
    (call-interactively 'handle-nexthist)
    (call-interactively 'dogears-forward)))
 
-(define-key global-map (kbd "M-g M-b") 'pen-buffer-hist-prev)
-(define-key global-map (kbd "M-g M-f") 'pen-buffer-hist-next)
+;; C-M-b C-M-p
+(define-key global-map (kbd "<select> <prior>") 'pen-buffer-hist-prev)
+;; C-M-b C-M-n
+(define-key global-map (kbd "<select> <next>") 'pen-buffer-hist-next)
+
+(define-key global-map (kbd "M-g M-P") 'pen-buffer-hist-prev)
+(define-key global-map (kbd "M-g M-N") 'pen-buffer-hist-next)
+(define-key global-map (kbd "M-G M-P") 'pen-buffer-hist-prev)
+(define-key global-map (kbd "M-G M-N") 'pen-buffer-hist-next)
+
 (define-key global-map (kbd "M-g M-d") 'pen-buffer-history)
 
 ;; minor mode

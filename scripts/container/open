@@ -1,7 +1,5 @@
 #!/bin/bash
 
-( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 set -m
 
 editor() {
@@ -130,6 +128,9 @@ if test -z "$fp"; then
     o "$fp" # Run it again so we get the history
     exit $?
 fi
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 
 # This needs to work:
 # o '[[ebdb:"Street\nDunedin, Otago\nNew Zealand"]]'

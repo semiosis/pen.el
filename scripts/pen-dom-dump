@@ -73,13 +73,28 @@ get_dom() {
 }
 
 # bash -c "2>/dev/null pen-chromium --no-sandbox --headless --ignore-certificate-errors --disable-gpu --virtual-time-budget=$WAITTIME $(test "$USE_TOR" = "y" && echo "--proxy-server=\"socks5://127.0.0.1:9050\"") --dump-dom $(cmd-nice-posix "$URL")" | {
-get_dom | {
-    # This fixes pirate bay in eww. It separates adjacent links for avy.
-    sed 's/<a / <a /g'
-} | {
-    if test "$TO_XML" = "y"; then
-        html2xhtml
-    else
-        cat
-    fi
+
+get_capture() {
+    get_dom | {
+        # This fixes pirate bay in eww. It separates adjacent links for avy.
+        sed 's/<a / <a /g'
+    } | {
+        if test "$TO_XML" = "y"; then
+            html2xhtml
+        else
+            cat
+        fi
+    }
 }
+
+capture="$(get_capture)"
+
+if printf -- "%s\n" "$capture" | grep -q -P 'Verifying you are human'; then
+    if tpop-yn "Page needs CAPCHA. Open Chrome?"; then
+        browsh "$URL"
+        capture="$(UPDATE=y get_capture)"
+        # TODO Find a way to get the actual DOM from browsh. Because it doesn't make chome start working again
+        # So while browsing browsh, I should be able to dump the DOM.
+    fi
+fi
+printf -- "%s\n" "$capture" | pavs

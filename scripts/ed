@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+. $SCRIPTS/lib/hs
+
 # Learn to use ed:
 # [[https://www.youtube.com/watch?v=S0pXQVMC770][Linux like original Unix - YouTube]]
 # [[https://youtu.be/Zpdo6We-_e0][Ed Is The Standard Text Editor For Unix/Linux - YouTube]]

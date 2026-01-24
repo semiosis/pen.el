@@ -1,0 +1,61 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://www.telnetbbsguide.com/
+# https://8bitboyz.com/bbs-directory/
+# https://www.pcmag.com/news/7-modern-bbses-worth-calling-today
+# https://whirlpool.net.au/wiki/telnet_bbs
+# https://synchro.net/sbbslist.html
+
+opt="$1"
+shift
+
+: "${opt:="$(cat `which bbs` | scrape "[a-z0-9]+\\)" | sed 's/.$//' | mfz )"}"
+
+case "$opt" in
+    retrocampus) {
+        # TERM=ansi COLORTERM=ansi telnet bbs.retrocampus.com
+        x -sh "TERM=xterm telnet bbs.retrocampus.com" -e TELNET -s 8 -c m -i
+    }
+    ;;
+
+    # broken
+    arcade) {
+        TERM=ansi COLORTERM=ansi telnet telnet.arcade-bbs.net
+    }
+    ;;
+
+    # broken or did I not wait long enough?
+    realitycheck) {
+        telnet realitycheckBBS.org
+    }
+    ;;
+
+    # broken
+    # balcos) {
+    #     TERM=ansi COLORTERM=ansi telnet bbs.balcos.net
+    # }
+    # ;;
+
+    0day) {
+        TERM=xterm telnet bbs.0day.agency
+    }
+    ;;
+
+    # broken
+    # irata) {
+    #     term=xterm telnet irata.online:8005
+    #     # user name: guest
+    #     # group: guest
+    # }
+    # ;;
+    
+    *)
+        url="$opt"
+        test -n "$url" || exit 1
+        TERM=xterm telnet "$url"
+        # TERM=ansi COLORTERM=ansi telnet "$url"
+esac
+

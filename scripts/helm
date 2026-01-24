@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# emacs-based fuzzy finder
+# - pipe in the list
+# - output one item
+
+input_fp="$(cat | tf txt)"
+output_fp="$(echo -n | tf txt)"
+
+elisp="(progn (save-window-excursion (switch-to-buffer \"*scratch*\") (write-to-file (let ((helm-full-frame t)) (helm--completing-read-default \"helm: \" (str2lines (cat \"$input_fp\")))) \"$output_fp\"))(delete-frame))"
+
+pen-e -e "$elisp"
+cat "$output_fp"

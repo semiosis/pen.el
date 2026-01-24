@@ -36,6 +36,7 @@
   (if option
       (if newvalue
           nil
+        ;; Here, "0" is an exit code and means on, where "1" means off
         (let* ((oldstate (equalp "0" (pen-cl-sn (concat "upd pen-rc-test " (pen-q option)) :chomp t :b_output-return-code t)))
                (success
                 (pen-cl-sn (concat "pen-rc-toggle " (pen-q option)) :chomp t :b_output-return-code t)

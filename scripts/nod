@@ -3,4 +3,26 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    nodl) {
+        export WITH_LINKS=y
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -l) {
+        export WITH_LINKS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 nem onelined decorated "$@"

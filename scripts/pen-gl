@@ -21,6 +21,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # -json) {
+        # output_json=y
+        # shift
+    # }
+    # ;;
+
     -notty) {
         NOTTY=y
         shift

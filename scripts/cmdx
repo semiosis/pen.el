@@ -11,8 +11,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -fast) {
-        FAST=y
+    -E) {
+        DO_EXEC=y
         shift
     }
     ;;
@@ -22,38 +22,30 @@ esac; done
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-if test "$FAST" = "y"; then
-    cmd_nice() {
-        cm="$@"
-        printf -- "%s\n" "$cm"
-        return "$?"
-    }
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
 else
-    cmd_nice() {
-        cmd-nice "$@"
-        return "$?"
-    }
+    CMD="$(cmd "$@")"
 fi
 
 if test "$do_sps" = y; then
     {
-    echo -n "exec: "
-    cmd_nice "$@" | awk 1
-
-    "$@"
+    echo -n "exec: " | hls red
+    echo "$CMD" | awk 1 | mnm | hls blue
+    eval "$CMD"
     } | sps pavs
-elif is_tty; then
-    {
-    echo -n "exec: "
-    cmd_nice "$@" | awk 1
-
-    "$@"
-    } | pavs
+# elif is_tty; then
+#     {
+#     echo -n "exec: "
+#     cmd_nice "$@" | awk 1
+# 
+#     "$@"
+#     } | tless
 else
     {
     echo -n "exec: " | hls red
-    cmd_nice "$@" | awk 1 | hls blue
+    echo "$CMD" | awk 1 | hls blue
     } 1>&2
 
-    "$@"
+    eval "$CMD"
 fi

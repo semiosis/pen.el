@@ -1,3 +1,27 @@
+;; Just override the emacs function completely
+(defun browse-url-default-browser (url &rest args)
+  (pen-smart-choose-browser-function url))
+
+(defun pen-emacs-web-browse (url &optional _new-window)
+  (let ((br
+         (pen-qa
+          -e "eww"
+          -r "rdrview"
+          -w "w3m"
+          -b "browsh"
+          -B "ebrowsh"
+          -I "w3m"
+          -f "ff")))
+
+    (pcase br
+      ("eww" (eww-browse-url url _new-window))
+      ("w3m" (w3m-browse-url url _new-window))
+      ;; ("browsh" (nw (cmd "browsh" url) _new-window))
+      ("browsh" (browsh url))
+      ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
+      ("rdrview" (rdrview url))
+      (_ (browse-url-generic url _new-window)))))
+
 (defun pen-smart-choose-browser-function (url &optional _new-window)
   (cond ((minor-mode-p pen-rdrview-minor-mode) (rdrview url))
         ((major-mode-p 'eww-mode) (eww-browse-url url _new-window))
@@ -49,7 +73,12 @@
              (nw (concat "o " (pen-q url))))
             ((or (string-match-p "www\\.google\\.com/search\\?" url))
              ;; http://www.google.com/search?ie=utf-8&oe=utf-8&q=farming%20technology
-             (pen-sps (concat "ff " (pen-q url))))
+             (if (string-empty-or-nil-p (pen-rc-get "w3m_use_chrome_dump"))
+                 (if (yn "Enable dom dump for w3m?")
+                     (pen-rc-set "w3m_use_chrome_dump" "on")))
+             (pen-emacs-web-browse url _new-window)
+             ;; (pen-sps (concat "ff " (pen-q url)))
+             )
             ((string-match-p "magnet:\\?xt" url)
              (pen-sps (concat "rt " (pen-q url))))
             ((string-match-p "https?://\\(github\\\).com/[^/]+/?$" url)
@@ -91,18 +120,8 @@
                  (string-match-p "^http.*\\.djvu$" url))
              (wget url (mu "$DUMP$NOTES/ws/pdf/incoming/"))
              (message url))
-            (t (let ((br
-                      (pen-qa
-                       -e "eww"
-                       -r "rdrview"
-                       -w "w3m"
-                       -f "ff")))
-
-                 (pcase br
-                   ("eww" (eww-browse-url url _new-window))
-                   ("w3m" (w3m-browse-url url _new-window))
-                   ("rdrview" (rdrview url))
-                   (_ (browse-url-generic url _new-window))))))))))
+            (t
+             (pen-emacs-web-browse url _new-window)))))))
 
 ;; (setq browse-url-browser-function 'eww-browse-url)
 (setq browse-url-browser-function
@@ -115,5 +134,27 @@
   (pen-b ni eww-and-search)
   ;; (pen-tvipe (sed "s/.*q=//" url))
   (lg-eww url))
+
+(defun reopen-in (br)
+  (interactive (list (fz '(eww w3m browsh))))
+  (let ((url (get-path nil t)))
+    ;;; I think this did infinite loop. Fix. Maybe use pcase
+    (pcase br
+      ('eww (eww url))
+      ('w3m (w3m url))
+      ('browsh (browsh url))
+      (_ nil))))
+
+(defun reopen-in-eww ()
+  (interactive)
+  (reopen-in 'eww))
+
+(defun reopen-in-w3m ()
+  (interactive)
+  (reopen-in 'w3m))
+
+(defun reopen-in-browsh ()
+  (interactive)
+  (reopen-in 'browsh))
 
 (provide 'pen-browser)

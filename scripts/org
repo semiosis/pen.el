@@ -88,7 +88,7 @@ case "$opt" in
 
                 lit "$uris" | {
                     if test "$has_urls" -eq 0; then
-                        xurls
+                        xurls -nrq
                     else
                         # It might be file paths
                         cat

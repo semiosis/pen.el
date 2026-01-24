@@ -67,6 +67,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            linkify) {
+                export WITH_LINKS=y
+            }
+            ;;
+
             silently) {
                 export DO_SILENTLY=y
             }

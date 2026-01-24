@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+word="$1"
+
+wordnet "$word" -over

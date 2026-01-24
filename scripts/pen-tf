@@ -25,6 +25,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -tmp) {
+        # Use the more ephemeral temp directory
+
+        test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+        export TMPDIR
+
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 

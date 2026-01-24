@@ -113,6 +113,25 @@ It's really meant for key bindings and which-key, so they should all be interact
                      (pp body) t)))))
     `(defun ,slugsym () (interactive) ,@body)))
 
+;; (dffn 5 (message fifth))
+;; (dff-message-fifth- nil nil nil nil "djfksl")
+(defmacro dffn (arity &rest body)
+  "This defines an n arity function with name based on the contents of the function.
+It should only really be used to create names for one-liners.
+It's really meant for key bindings and which-key, so they should all be interactive.
+
+The arguments are in English like this:
+(dff-message-hi- FIRST SECOND THIRD FOURTH FIFTH)
+"
+  (let* ((slugsym (intern
+                   (s-replace-regexp
+                    "^-" "dff-"
+                    (slugify
+                     (pp body) t))))
+         (args (mapcar 'str2sym (mapcar 's-dashed-words (worded-ordinal-number-sequence 1 arity))))
+         (iargs (make-list arity nil)))
+    `(defun ,slugsym (,@args) (interactive (list ,@iargs)) ,@body)))
+
 ;; emacs 29
 (defalias 'major-mode-p 'derived-mode-p)
 (defalias 'major-mode-enabled 'derived-mode-p)
@@ -2555,6 +2574,7 @@ May use to generate code from comments."
 (require 'pen-input-method)
 (require 'pen-apl)
 (require 'pen-ediff)
+(require 'pen-hl-strings)
 (if (inside-docker-p)
 (require 'pen-org-appear)
 (require 'pen-shrink-path))
@@ -2606,6 +2626,7 @@ May use to generate code from comments."
 (require 'pen-bible-audio)
 (require 'pen-bible-org)
 (require 'pen-picture)
+(require 'pen-writing)
 (require 'pen-calc)
 (require 'pen-magit-margin)
 (require 'pen-vc)
@@ -2622,6 +2643,8 @@ May use to generate code from comments."
 (require 'pen-haskell)
 ;; (require 'pen-haskell-emacs-interop)
 (require 'pen-browser)
+(require 'pen-trace)
+(require 'pen-function-dev)
 (require 'peniel)
 (require 'pen-discipleship-group)
 (require 'pen-custom-conf)
@@ -2635,6 +2658,8 @@ May use to generate code from comments."
 (require 'pen-amot)
 (require 'pen-flash)
 (require 'pen-tabs)
+(require 'pen-bbs)
+(require 'pen-strings)
 (require 'guess-style)
 (require 'pen-fontforge)
 (require 'pen-vimhelp)
@@ -2846,17 +2871,36 @@ May use to generate code from comments."
     `(let ((pen-force-engine "Human"))
        ,',@body)))
 
-(defun pen-edit-fp-on-path (fp)
+(defun pen-edit-fp-on-path (fp &optional no-edit)
   "Edit file given by path. If not found, then look in PATH."
   (interactive (list (read-string-hist "Edit Which: ")))
 
   (setq fp (pen-umn fp))
-  (cond
-   ((pen-snq (pen-cmd "which" fp)) (find-file (chomp (pen-sn (concat "which " fp)))))
-   ((pen-test-f fp) (find-file (chomp fp)))
-   ((pen-test-d fp) (find-file (chomp fp)))
-   ((string-match "^/[^:]+:" fp) (find-file (chomp fp)))
-   (t (message (concat fp " not found")))))
+  (let* ((fp_with_pen (concat "pen-" fp))
+        (found
+         (cond
+          ((pen-test-f fp) (chomp fp))
+          ((pen-test-d fp) (chomp fp))
+          ((pen-snq (pen-cmd "which" fp_with_pen)) (chomp (pen-sn (concat "which " fp_with_pen))))
+          ((pen-snq (pen-cmd "which" fp)) (chomp (pen-sn (concat "which " fp))))
+          ((string-match "^/[^:]+:" fp) (chomp fp))
+          (t (progn (message (concat fp " not found"))
+                    nil)))))
+    (if (not no-edit)
+        (if (and
+             found
+             (f-exists-p found))
+            (find-file found)
+          (let ((dn (f-dirname fp)))
+            
+            (if (yn (concat "No file located at "
+                            (q fp)
+                            ". "
+                            "Edit path anyway?"))
+                (progn (if (not (f-dir-p dn))
+                           (mkdir dn))
+                       (find-file fp)))))
+      found)))
 (defalias 'pen-edit-which 'pen-edit-fp-on-path)
 (defalias 'pen-ewhich 'pen-edit-fp-on-path)
 (defalias 'pen-ew 'pen-edit-fp-on-path)

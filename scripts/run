@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+test -f "$fp" || exit 1
+shift
+
+it="$(get-interpreter-for-file "$fp")"
+# echo "interpreter: $it" 1>&2
+
+cmd-nice "$it" "$fp" "$@" | awk 1 | mnm | hls blue 1>&2
+"$it" "$fp" "$@"

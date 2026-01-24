@@ -89,6 +89,8 @@ fi
 
 test "$#" -gt 0 && last_arg="${@: -1}"
 
+base_url="$(dirname "$last_arg")/"
+
 if test "$has_stdin" -eq 0; then
     input_html_fp="$(cat | tf html)"
 else
@@ -96,7 +98,7 @@ else
         (
             if test "$use_chome_dom" = "y" && test -n "$1"; then
                 if test "$IN_UNBUFFER" = "y"; then
-                    exec &>/dev/null
+                    exec 2>/dev/null
                 fi
                 ocif dom-dump -w 5000 "$last_arg" | cat
             else
@@ -106,6 +108,12 @@ else
     )"
 fi
 
+rdrview_dump() {
+    fp="$1"
+    # /usr/local/bin/rdrview -E UTF-8 "$@"
+    /usr/local/bin/rdrview -u "$base_url" -E UTF-8 "$fp" -H | tf html | xa elinks --dump
+}
+
 if ! test "$output_html" = "y"; then
 
 # show-fds 1>&2
@@ -113,7 +121,11 @@ if ! test "$output_html" = "y"; then
 # exec <`tm-tty |tv`
 
     # cat "$input_html_fp" | strace /usr/local/bin/rdrview -E UTF-8 "$@" | pager
-    cat "$input_html_fp" | /usr/local/bin/rdrview -E UTF-8 "$@" | pager
+
+    # rdrview botches unicode when rendering html:
+    # cat "$input_html_fp" | /usr/local/bin/rdrview -E UTF-8 "$@" | pager
+    # use elinks to make the text, rather than rdview:
+    rdrview_dump "$input_html_fp" | pager
     exit "$?"
 fi
 

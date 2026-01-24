@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+dp=$PENELD/config/filters
+cd "$dp"
+filt="$(0</dev/null in-tty fz-select-filter-from-filterlists | cat)"
+if test -n "$filt"; then
+    # filt="$(printf -- "%s" "$filt" | sed 's/^[^	]	//')"
+    filt="$(printf -- "%s" "$filt" | cut -d '	' -f 1 --complement)"
+    # echo "$filt"
+    # echo "$filt" | tv &>/dev/null
+    eval "$filt"
+else
+    cat
+fi

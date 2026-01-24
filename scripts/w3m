@@ -1,13 +1,29 @@
 #!/bin/bash
 export TTY
 
+export UPDATE=y
+
 . $SCRIPTS/lib/hs
+
+if ! test -f /usr/local/bin/w3m && test -d "$/root/.pen/w3m-0.5.3-with-more-tags-represented-in-dump"; then
+    (
+        cd "$PENCONF/w3m-0.5.3-with-more-tags-represented-in-dump"
+        make install
+    )
+fi
 
 test -f "/usr/local/bin/w3m" && : "${bin:="/usr/local/bin/w3m"}"
 test -f "/usr/bin/w3m" && : "${bin:="/usr/bin/w3m"}"
 
 test "$#" -gt 0 && last_arg="${@: -1}"
 test "$#" -gt 1 && last_two_args="${@: -2}"
+
+# if printf -- "%s\n" "$last_arg" | grep -q -P '^http'; then
+#     url="$last_arg"
+#     (
+#     hs "w3m-hist" "$url" 0</dev/null
+#     ) &>/dev/null
+# fi
 
 # This is a bit of a hack to get websites such as stackoverflow (which only serve browsers with JS) work in w3m
 # and in ew3m which still will display the errors, but at least serve the page as well.
@@ -24,7 +40,7 @@ stdin_exists() {
     } &>/dev/null
 }
 
-if pen-rc-test -f w3m_use_chome_dump; then
+if pen-rc-test -f w3m_use_chrome_dump; then
     if printf -- "%s\n" "$last_two_args" | grep -q -P '^-dump_extra http'; then
       # run it normally first, so that the other information is obtained
       full_w3m_normal_output="$(ocif "$bin" "$@")"
@@ -46,14 +62,36 @@ fi
 
 # /usr/bin/w3m "$@" | tv -nw
 
+# Figure out what options cause it to run without a GUI
+
+# If it has a -dump* option or -o ext_halfdump then cache it, but since the stdin also happens, I need to make something to fuzzy select from history. `ci` might be the place to search
+
+for var in "$@"
+do
+    if test "$var" = "-halfdump" || tt "$var" -p "-dump.*"; then
+        has_output=y
+    fi
+    lastvar="$var"
+done
+
+maybecache() {
+    if test "$has_output" = "y"; then
+        # Make ci exclude blacklist the cookie header hash string
+        # cmd1 "$@" >> /tmp/cookiest.txt
+        cif -nu -nnu -omit "Cookie: session.*'" "$@"
+    else
+        "$@"
+    fi
+}
+
 if stdin_exists; then
     if test "$1" = "-halfdump"; then
         # "$bin" "$@" | htmlentities-decode.sh | tv -nw
-        "$bin" "$@" | htmlentities-decode.sh
+        maybecache "$bin" "$@" | htmlentities-decode.sh
     else
-        "$bin" "$@"
+        maybecache "$bin" "$@"
     fi
 else
-    "$bin" "$@"
+    maybecache "$bin" "$@"
 fi
 

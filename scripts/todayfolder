@@ -1,8 +1,31 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -P) {
+        full_path=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 d="$(date +%d.%m.%y)"
-fullwd="$(pwd)/$d"
-mkdir -p "$fullwd"
-cd "$fullwd"
-CWD="$fullwd" zsh
+
+if test "$full_path" = "y"; then
+    : "${dir:="$(pwd)"}"
+    d="$dir/$d"
+fi
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    mkdir -p "$d"
+    cd "$d"
+    CWD="$d" zsh
+else
+    echo "$d"
+fi

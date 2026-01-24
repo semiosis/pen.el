@@ -295,6 +295,9 @@ PATH is the sexp to evaluate, as a string."
 ;; This should work: pa:org-brain
 (defalias 'pa 'pen-goto-package-all)
 
+(defun pen-helpful-variable (pattern)
+  (helpful-variable (str2sym (str pattern))))
+
 (defun pen-follow-brain-link (pattern)
   "Run brain `pattern'."
   (org-brain-entry-from-text pattern))

@@ -338,12 +338,28 @@
 
   (setq eww-no-external-handler nil)
   (cond
-   ((string-match "^http" fp) (eww fp))
+   ((string-match "^http" fp) (browse-url--browser fp))
    ((string-match "\\.html$" fp) (eww-open-file fp))
-   (t (find-file (tv fp)))))
+   ((string-match "^[HG][0-9]+$" fp) (strongs-lookup fp t))
+   ;; (t (find-file (tv fp)))
+   (t (sh/open fp))))
 
 (evil-ex-define-cmd "O" 'evil-open)
 (evil-ex-define-cmd "Eww" 'evil-open)
+
+(defalias 'pen-open 'evil-open)
+(defalias 'open 'evil-open)
+(defalias 'o 'open)
+
+(evil-define-command evil-edit (file &optional bang)
+  "Open FILE.
+If no FILE is specified, reload the current buffer from disk."
+  :repeat nil
+  (interactive "<f><!>")
+  (if file
+      ;; (find-file file)
+      (pen-ewhich file)
+    (revert-buffer bang (or bang (not (buffer-modified-p))) t)))
 
 (evil-define-command evil-dired (dir &optional bang)
   "Open DIR with dired."
@@ -361,6 +377,19 @@
         (dired path))))
 
 (evil-ex-define-cmd "Dired" 'evil-dired)
+
+;; I want to be able to run shell commands like so:
+
+;; :sh gl cat
+(evil-define-command evil-sh (body)
+  "Todayfile."
+  :repeat nil
+  (interactive (list body))
+
+  (tv (pps body))
+  ;; (find-file (todayfile))
+  )
+(evil-ex-define-cmd "sh" 'evil-sh)
 
 (evil-define-command evil-cp (file &optional bang)
   "Cp FILE."
@@ -380,6 +409,28 @@
           (pen-rename-file-and-buffer file t)
         (message (concat "Aborted. File exists: " file))))))
 (evil-ex-define-cmd "CP" 'evil-cp)
+
+(evil-define-command evil-todayfile ()
+  "Todayfile."
+  :repeat nil
+  (interactive)
+
+  (find-file (todayfile)))
+(evil-ex-define-cmd "TodayFile" 'evil-todayfile)
+(evil-ex-define-cmd "TF" 'evil-todayfile)
+
+(evil-define-command evil-todaydir ()
+  "Todaydir."
+  :repeat nil
+  (interactive)
+
+  (let ((dn (todaydir)))
+    (if (not (f-dir-p dn))
+        (mkdir-p dn))
+    (find-file dn)))
+(evil-ex-define-cmd "TodayDir" 'evil-todaydir)
+(evil-ex-define-cmd "TD" 'evil-todaydir)
+(evil-ex-define-cmd "TodayFolder" 'evil-todaydir)
 
 (evil-define-command evil-vw (fp &optional bang)
   "Edit FP on path."

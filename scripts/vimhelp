@@ -75,6 +75,10 @@ if test "$GLOBAL_SYNTAX_HIGHLIGHTING" = "y" || { test "$GLOBAL_SYNTAX_HIGHLIGHTI
     extra_commands+="|windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()"
 fi
 
+# : "${section:="$(vim-eval "ListFunctions()" | mfz)"}"
+# : "${section:="$(vim-eval "ListHelpTopics()" | mfz -q "'()")"}"
+: "${section:="$(vim-eval "ListHelpTopics()" | mfz)"}"
+
 # echo "vim +$(cmd-nice "help $section") +only $CMD"
 # exit 0
 cmd="vim -c $(cmd-nice "$extra_commands_prepend$extra_commands") --not-a-term +$(cmd-nice "help $section") +only $CMD $opts"

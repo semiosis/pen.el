@@ -846,6 +846,15 @@ test -d $REPOS/gh-dash || (
     go get -u github.com/dlvhdr/gh-dash
 )
 
+go install github.com/ramonvermeulen/whosthere@latest
+
+# test -d $REPOS/whosthere || (
+#     cd "$REPOS"
+#     git clone "https://github.com/ramonvermeulen/whosthere"
+#     cd whosthere
+#     go get -u github.com/ramonvermeulen/whosthere
+# )
+
 test -d $REPOS/figlet-fonts || (
     cd "$REPOS"
     git clone "https://github.com/xero/figlet-fonts"
@@ -2612,6 +2621,7 @@ go install github.com/ericfreese/rat@latest
 e ia xcscope helm-cscope
 
 cargo install datafusion-tui
+# e:dft
 
 e ia xcscope helm-cscope
 
@@ -2803,10 +2813,35 @@ debuild -us -uc
 # )
 agi libgc-dev
 
+(
+cd "$(gc "https://github.com/crazymykl/rust-koans")"
+)
+
 # GNU Global https://www.gnu.org/software/global/
 agi global
 e ia global-tags
 # I had to remove the bytecode from the downloaded package because the bytecode it caused an error
 # rm /root/.emacs.d/elpa/global-tags-20211120.347/*.elc
 
+cargo-update
+
 cargo install gitlogue
+
+e ia -r ediprolog
+
+agi libnumbertext-tools
+
+cargo install fresh-editor
+
+e ia -r sudoku
+
+(
+    mcd /root/programs/racket
+    wget "https://mirror.racket-lang.org/installers/9.0/racket-9.0-x86_64-linux-buster-cs.sh"
+    chmod a+x "racket-9.0-x86_64-linux-buster-cs.sh"
+    ./"racket-9.0-x86_64-linux-buster-cs.sh"
+)
+
+# Need a conditional expect, because on subsequent runs, it changes the appearance
+# x -sh ./"racket-9.0-x86_64-linux-buster-cs.sh" -e "Enter yes" -s yes -c m -e "Where do" -s 1 -c m -e "default: skip" -c m -e "enter to continue" -c m -i
+# x -sh ./"racket-9.0-x86_64-linux-buster-cs.sh" -e "Enter yes" -s yes -c m -e "Where do" -s 1 -c m -e "enter to continue" -c m -e "Overwrite file" -s a -c m -i

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+dp=$PENELD/config/filters
+cd "$dp"
+{
+    for fn in *; do
+        cat "$fn" | awk 1 | sed "s/^/$fn	/"
+    done
+} | fz

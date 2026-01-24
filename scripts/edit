@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+if test -n "$CU"; then
+    editor_sel="$(qa -. edit \
+                  -n nano \
+                  -e emacs \
+                  -V vim \
+                  -v vs \
+                  -f fresh \
+                  -h helix \
+                  )"
+    case "$editor_sel" in
+        edit) { v edit; exit 0; } ;;
+        nano) { export EDITOR=nano; } ;;
+        fresh) { export EDITOR=fresh; } ;;
+        vim) { export EDITOR=vim; } ;;
+        vs) { export EDITOR=vs; } ;;
+        emacs) { export EDITOR=pin; } ;;
+        helix) { export EDITOR=hx; } ;;
+
+        *)
+    esac
+fi
+
+
+if test -n "$EDITOR"; then
+    "$EDITOR" "$@"
+else
+    v "$@"
+fi

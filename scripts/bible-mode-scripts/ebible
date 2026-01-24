@@ -361,6 +361,9 @@ else
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
     output="$(ocif -nd bash -c "$assignments $pipeline")"
+    if test "$WITH_LINKS" = "y"; then
+        output="$(printf -- "%s" "$output" | biblegateway-relinkify)"
+    fi
     slug="$(printf -- "%s" "$CMD " | c ascify | slugify; printf -- "%s\n" "$output" | head -n 1 | slugify)"
     printf -- "%s\n" "$output" | ebible_pager -s "$slug"
     # printf -- "%s\n" "$output" | pavs

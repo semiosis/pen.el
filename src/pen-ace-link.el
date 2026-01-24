@@ -91,7 +91,7 @@
          ((eq major-mode 'emacs-lisp-mode)
           (ace-link-org))
          ((eq major-mode 'Man-mode)
-          (ace-link-goto-button))
+          (ace-link-click-button))
          ((eq major-mode 'special-mode)
           (ace-link-click-widget))
          ((eq major-mode 'eieio-custom-mode)

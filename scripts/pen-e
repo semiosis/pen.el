@@ -45,9 +45,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         IFS= read -r -d '' elcode <<HEREDOC
         (let* ((output_fp "")
                (result $E_TCP_CMD))
-               (write-to-file (pps result) "/tmp/pen-e-echo/stdout.txt"))
+               (write-to-file (if (stringp result)
+                                  result
+                                  (pps result))
+                                  "/tmp/pen-e-echo/stdout.txt"))
 HEREDOC
         E_TCP_CMD="$elcode"
+
+        # echo "$E_TCP_CMD" | tv &>/dev/null
 
         shift
         shift
@@ -76,8 +81,17 @@ if test -n "$E_TCP_CMD"; then
         # I wish I didn't need this sleep, but inotifywait is quitting too early
         # test:
         # pen-e -D DEFAULT -E-tcp-echo "(pen-format-search-spec google-search-url-spec \"prolog consult\")"
-        sleep 0.1
-        inotifywait -e create,moved_to,attrib -qq /tmp/pen-e-echo
+        waited=0
+        while ! test -f "/tmp/pen-e-echo/stdout.txt"; do
+            sleep 0.1
+            # echo "$waited" 1>&2
+            (( waited++ ))
+            if test "$waited" -gt 9; then
+                echo "Exceeded 1 second. Aborting." 1>&2
+                exit 1
+            fi
+        done
+        # inotifywait -t 1 -e create,moved_to,attrib -qq /tmp/pen-e-echo
         cat "/tmp/pen-e-echo/stdout.txt"
     fi
     exit "$?"
@@ -608,7 +622,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         CMD="$(cmd-cip "$@")"
         : ${CMD:="$(cmd-cip "$@")"}
 
-        elisp="(funcall-interactively '$fun $CMD)(let ((ret $elisp)) (ignore (refresh-frame)) ret)"
+        if test "$CIP_NO_REFRESH" = "y"; then
+            elisp="(funcall-interactively '$fun $CMD)(let ((ret $elisp)) ret)"
+        else
+            elisp="(funcall-interactively '$fun $CMD)(let ((ret $elisp)) (ignore (refresh-frame)) ret)"
+        fi
 
         shift "$#"
 
