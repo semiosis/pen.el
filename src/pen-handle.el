@@ -308,6 +308,8 @@
         :godef '(lsp-find-definition
                  xref-find-definitions-immediately
                  helm-gtags-dwim)
+        :history '(bible-mode-fz-history)
+        :histedit '(bible-mode-fz-history-edit)
         :errors '()
         :docsearch '(pen-doc)
         :docfun '()

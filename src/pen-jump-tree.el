@@ -27,6 +27,11 @@
      (call-interactively 'handle-history)
      (call-interactively 'dogears-list))))
 
+(defun pen-buffer-history-edit ()
+  (interactive)
+
+  (call-interactively 'handle-histedit))
+
 (defun pen-buffer-hist-prev ()
   (interactive)
 
@@ -52,6 +57,7 @@
 (define-key global-map (kbd "M-G M-N") 'pen-buffer-hist-next)
 
 (define-key global-map (kbd "M-g M-d") 'pen-buffer-history)
+(define-key global-map (kbd "M-g M-e") 'pen-buffer-history-edit)
 
 ;; minor mode
 (dogears-mode 1)

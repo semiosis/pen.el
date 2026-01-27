@@ -72,13 +72,23 @@
             ((or (string-match-p "asciinema\\.org/a/" url))
              (nw (concat "o " (pen-q url))))
             ((or (string-match-p "www\\.google\\.com/search\\?" url))
-             ;; http://www.google.com/search?ie=utf-8&oe=utf-8&q=farming%20technology
-             (if (string-empty-or-nil-p (pen-rc-get "w3m_use_chrome_dump"))
-                 (if (yn "Enable dom dump for w3m?")
-                     (pen-rc-set "w3m_use_chrome_dump" "on")))
-             (pen-emacs-web-browse url _new-window)
-             ;; (pen-sps (concat "ff " (pen-q url)))
-             )
+             (let* ((query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)&.*/\\\\1/\"" url))
+                    (query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)$/\\\\1/\"" url))
+                    (query (s-replace "+" " " query))
+                    (url (fz-ddgr query)))
+
+               (if (not (string-empty-or-nil-p url))
+                   (pen-emacs-web-browse url _new-window))
+
+               ;; If it's a google link, then extract the query and put it through (fz-ddgr query)
+
+               ;; http://www.google.com/search?ie=utf-8&oe=utf-8&q=farming%20technology
+               ;; (if (string-empty-or-nil-p (pen-rc-get "w3m_use_chrome_dump"))
+               ;;     (if (yn "Enable dom dump for w3m?")
+               ;;         (pen-rc-set "w3m_use_chrome_dump" "on")))
+               (pen-emacs-web-browse url _new-window)
+               ;; (pen-sps (concat "ff " (pen-q url)))
+               ))
             ((string-match-p "magnet:\\?xt" url)
              (pen-sps (concat "rt " (pen-q url))))
             ((string-match-p "https?://\\(github\\\).com/[^/]+/?$" url)

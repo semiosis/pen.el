@@ -5,6 +5,8 @@
 main(Argv) :-
     echo(Argv).
 
+%% ?- echo(["Hello", "world"]).
+
 echo([]) :- nl.
 echo([Last]) :- !,
     write(Last), nl.

@@ -37,6 +37,7 @@
   (pen-str2lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t)))
 
 (defun pen-hist-edit (name)
+  (interactive (list (read-string-hist "histfile: ")))
   (find-file (pen-cl-sn (concat "hist-getfile " (pen-q name)) :chomp t)))
 (defalias 'pen-he 'pen-hist-edit)
 

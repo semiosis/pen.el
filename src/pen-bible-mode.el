@@ -800,6 +800,10 @@
           ;; (lg-eww ref)
           (bible-mode-lookup ref)))))
 
+(defun bible-mode-fz-history-edit ()
+  (interactive)
+  (pen-he "bible-mode-lookup"))
+
 (defun bible-search-phrase-list-history ()
   (interactive)
   (let ((l (pen-snc "uniqnosort"
@@ -1096,6 +1100,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (spinner-start)
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
+  ;; (insert (bible-mode--exec-diatheke (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
+  ;; (insert (bible-mode--exec-diatheke (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
          (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
     (erase-buffer)
@@ -1119,8 +1125,14 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         ;; Can't use ": " because sometimes like with Psalms 40:1
         ;; there is no space
         ;; (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
-        (goto-char (string-match (concat ":" (str verse) ":") (buffer-string))))
-    (goto-char (point-min)))
+        (goto-char (string-match (concat ":" (str verse) ":") (buffer-string)))
+
+        (hs "bible-mode-lookup" (concat (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter)) ":" (str verse)))
+        )
+    (progn
+      ;; (if (yn "Remember in verse history?")
+      ;;     (hs "bible-mode-lookup" (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter))))
+      (goto-char (point-min))))
 
   (run-hooks 'bible-mode-hook)
   (spinner-stop)
@@ -2132,7 +2144,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-open-commentary ()
   (interactive)
   (let* ((tup (bible-mode-get-ref-tuple))
-         (commentary (fz ))
+         (commentary (fz (mapcar (lambda (e) (list (second e) (first e))) bible-mode-commentaries)
+                         nil nil  "commentary: "))
          (book-lc
           (-->
            (downcase (car tup))
@@ -2143,7 +2156,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (chap (str (cadr tup)))
          (verse (str (caddr tup))))
 
-    (w3m (format "https://biblehub.com/commentaries/%s/%s/%s-%s.htm" book-lc chap verse))))
+    ;; (w3m (format "https://biblehub.com/commentaries/%s/%s/%s-%s.htm" commentary book-lc chap verse))
+    (w3m (format "https://biblehub.com/commentaries/%s/%s/%s.htm" commentary book-lc chap))))
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
 ;; e:$EMACSD/pen.el/src/pen-completing-read.el
@@ -2219,6 +2233,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 (define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
+(define-key bible-mode-map (kbd "Y") 'bible-open-commentary)
 (define-key bible-mode-map (kbd "T") 'bible-interlinear-get-word-blocks)
 (define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
 (define-key bible-mode-map (kbd "M") 'magit-toggle-margin)

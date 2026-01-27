@@ -4,7 +4,7 @@
 (setq w3m-session-crash-recovery nil)
 
 ;; This means I can have multiple unique w3ms
-(setq w3m-fb-mode t)
+(w3m-fb-mode t)
 
 (setq w3m-command (executable-find "w3m"))
 

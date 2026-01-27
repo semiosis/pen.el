@@ -84,6 +84,7 @@ their needs, and to do so before the package is loaded."
 (add-to-list 'handle-keywords :jumpto)
 
 (add-to-list 'handle-keywords :history)
+(add-to-list 'handle-keywords :histedit)
 (add-to-list 'handle-keywords :prevhist)
 (add-to-list 'handle-keywords :nexthist)
 
