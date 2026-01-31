@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# dictionaryapi-define "$@"
+# exit 1
+
+#CMD="$(cmd-nice "$@")"
+#: ${CMD:="$(cmd-nice "$@")"}
+#
+#term="$CMD"
+#test -n "$term" || exit 1
+
+output="$(elinks-dump-gl "$@" | tv | edm -m "V}}}d")"
+
+if pl "$output" | grep -q -P 'definition of'; then
+    p "$output" | sed '/  definition of/,$d' | sed 's/^ \+//' | s join ' ' | sed 's/\..*//' | pavs
+fi
+
+# # This just usese the dictionary api.
+# # It doesn't actually scrape google, which is what I want.
+# 
+# oci curl "https://api.dictionaryapi.dev/api/v1/entries/en/$term" | jq -r ".[0].meaning | to_entries[].value[].definition" 2>/dev/null

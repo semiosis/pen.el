@@ -8,7 +8,7 @@
   (sn-true (concat "/usr/bin/man " args)))
 
 (defun iman (page)
-  (interactive (list (let ((cand (pen-words 1 (pen-thing-at-point))))
+  (interactive (list (let ((cand (pen-word-at-point)))
                        (if (man-page-p cand)
                            cand
                          (pen-ask cand

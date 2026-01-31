@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# elinks-dump "$url"
+# Update your browser
+# Your browser isn't supported any more. To continue your search, upgrade to a recent version. Learn more
+
+# In order to continue, please enable javascript on your web
+# browser.
+# elinks-dump-chrome "$url"
+
+url=$(make-google-query "$@")
+
+elinks-dump "$url"
+# elinks-dump-chrome "$url"

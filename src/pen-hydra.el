@@ -680,6 +680,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ;; ("e" #'egr "egr")
                          ("d" #'pen-rat-dockerhub-search "dockerhub")
                          ("D" #'gl-find-deb "ubuntu deb")
+                         ("W" #'wordnet-word "wordnet word")
                          ("k" #'pen-k8s-hub-search "k8s hub")
                          ("j" #'eegr "Google")
                          ;; ("g" #'pen-egr-guru99 "guru99")

@@ -2845,3 +2845,20 @@ e ia -r sudoku
 # Need a conditional expect, because on subsequent runs, it changes the appearance
 # x -sh ./"racket-9.0-x86_64-linux-buster-cs.sh" -e "Enter yes" -s yes -c m -e "Where do" -s 1 -c m -e "default: skip" -c m -e "enter to continue" -c m -i
 # x -sh ./"racket-9.0-x86_64-linux-buster-cs.sh" -e "Enter yes" -s yes -c m -e "Where do" -s 1 -c m -e "enter to continue" -c m -e "Overwrite file" -s a -c m -i
+
+# dictd
+agi dictd
+# (
+#  cd "$(gc "https://github.com/cheusov/dictd")"
+#  mkcmake all
+# )
+
+# (
+#  cd "$(gc "https://github.com/hako/oeis-tui")"
+#  mkcmake all
+# )
+cargo-update && cargo install oeis-tui
+
+e ia -r php-mode
+# Composer 1 is no longer supported. Need to install Composer 2
+# agi composer

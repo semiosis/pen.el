@@ -188,6 +188,9 @@
           ": ")
          thing)))))
 
+(defun pen-word-at-point ()
+  (ignore-errors (pen-words 1 (pen-thing-at-point))))
+
 (defun pen-choose (options prompt)
   (interactive)
   (if (not prompt)

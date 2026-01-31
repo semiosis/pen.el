@@ -48,6 +48,7 @@ fi
 
 /etc/init.d/cron start
 service ssh start
+( /etc/init.d/dictd restart; ) || :
 
 # pen-restart-clipboard
 

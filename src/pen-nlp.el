@@ -3,6 +3,62 @@
 
 (guess-language-mode 1)
 
+(defun list-nouns (&optional fz-prompt)
+  (interactive)
+  (ifi-etv (fz (snc "ocif list-nouns | shuf") nil nil (or fz-prompt "Noun: "))))
+
+(defun list-adverbs (&optional fz-prompt)
+  (interactive)
+  (ifi-etv (fz (snc "ocif list-adverbs | shuf") nil nil (or fz-prompt "Adverb: "))))
+
+(defun list-adjectives (&optional fz-prompt)
+  (interactive)
+  (ifi-etv (fz (snc "ocif list-adjectives | shuf") nil nil (or fz-prompt "Adjective: "))))
+
+(defun list-verbs (&optional fz-prompt)
+  (interactive)
+  (ifi-etv (fz (snc "ocif list-verbs | shuf") nil nil (or fz-prompt "Verb: "))))
+
+(defun wordnet-verb ()
+  (interactive)
+  (let ((verb (list-verbs "Wordnet verb: ")))
+    (wordnut--lookup verb)))
+
+(defun wordnet-adverb ()
+  (interactive)
+  (let ((adverb (list-adverbs "Wordnet adverb: ")))
+    (wordnut--lookup adverb)))
+
+(defun wordnet-adjective ()
+  (interactive)
+  (let ((adjective (list-adjectives "Wordnet adjective: ")))
+    (wordnut--lookup adjective)))
+
+(defun wordnet-noun ()
+  (interactive)
+  (let ((noun (list-nouns "Wordnet noun: ")))
+    (wordnut--lookup noun)))
+
+(defun wordnet-wordlist ()
+  (interactive)
+  (fz
+   ;; (helm-wordnet-wordnet-wordlist)
+   (snc "ocif list-words | shuf")
+   nil nil "Wordnet word: "))
+
+(defun wordnet-word (&optional input_word)
+  (interactive (list (pen-word-at-point)))
+  
+  (let ((word (fz
+               ;; (mapcar
+               ;;  (lambda (s) (s-replace-regexp "_" " " s))
+               ;;  (helm-wordnet-wordnet-wordlist))
+
+               ;; Faster
+               (snc "ocif list-words | shuf")
+               input_word nil "Wordnet word: ")))
+    (wordnut--lookup word)))
+
 (defun ntow (from &optional to ordinal)
   (setq to (or to from))
 
@@ -16,22 +72,30 @@
 ;; (worded-number-sequence 1 10)
 ;; (worded-number-sequence 1 10 2)
 (defun worded-number-sequence (from &optional to inc)
-  (let* ((nseq (number-sequence from to))
-         (snums (str2lines (ntow from to)))
-         (zipped (-zip-lists nseq snums)))
+  (interactive (list (read-number "from: " 1)
+                     (read-number "to: " 10)
+                     (read-number "inc: " 1)))
+  (ifi-etv
+   (let* ((nseq (number-sequence from to))
+          (snums (str2lines (ntow from to)))
+          (zipped (-zip-lists nseq snums)))
 
-    (let ((nseqstepped (number-sequence from to inc)))
-      (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
-      (second (-unzip zipped)))))
+     (let ((nseqstepped (number-sequence from to inc)))
+       (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
+       (second (-unzip zipped))))))
 
 (defun worded-ordinal-number-sequence (from &optional to inc)
-  (let* ((nseq (number-sequence from to))
-         (snums (str2lines (ntow from to t)))
-         (zipped (-zip-lists nseq snums)))
+  (interactive (list (read-number "from: " 1)
+                     (read-number "to: " 10)
+                     (read-number "inc: " 1)))
+  (ifi-etv
+   (let* ((nseq (number-sequence from to))
+          (snums (str2lines (ntow from to t)))
+          (zipped (-zip-lists nseq snums)))
 
-    (let ((nseqstepped (number-sequence from to inc)))
-      (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
-      (second (-unzip zipped)))))
+     (let ((nseqstepped (number-sequence from to inc)))
+       (setq zipped (-filter (lambda (e) (-elem-index (car e) nseqstepped)) zipped))
+       (second (-unzip zipped))))))
 
 (defun monotonically-increasing-tuple-permutations (input)
   (s-lines (pen-snc "monotonically-increasing-tuple-permutations.py" input)))
@@ -49,21 +113,21 @@
           (pen-snc (concat (cmd "rdrview" url) " | cat | tv"))))))
 
 (defun dictionaryapi-define (word)
-  (interactive (list (rshi "dictionaryapi-define: " (pen-thing-at-point))))
+  (interactive (list (rshi "dictionaryapi-define: " (pen-word-at-point))))
   (let ((d (sor (chomp (pen-snc (pen-cmd "dictionaryapi-define" word))))))
     (if (interactive-p)
         (etv d)
       d)))
 
 (defun google-define (word)
-  (interactive (list (rshi "google-define: " (pen-thing-at-point))))
+  (interactive (list (rshi "google-define: " (pen-word-at-point))))
   (let ((d (sor (chomp (pen-snc (pen-cmd "google-define" word))))))
     (if (interactive-p)
         (etv d)
       d)))
 
 (defun pen-wiki-summary (term)
-  (interactive (list (rshi "wiki-summary: " (pen-thing-at-point))))
+  (interactive (list (rshi "wiki-summary: " (pen-word-at-point))))
   (let ((s (snc (concat "wiki-summary " term))))
     (if (interactive-p)
         (etv s)

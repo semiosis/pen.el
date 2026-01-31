@@ -222,7 +222,10 @@
   (interactive)
   (cond
    ((pen-is-glossary-file (get-path nil t))
-    (call-interactively 'helm-imenu))
+    (progn
+      (setq imenu-generic-expression
+            '(("Term" "^[^ \n].*$" 0)))
+      (call-interactively 'helm-imenu)))
    ;; (eq major-mode 'text-mode)
    ((eq major-mode 'help-mode) (call-interactively 'pen-button-imenu))
    ((eq major-mode 'org-agenda-mode) (call-interactively 'agenda-imenu))

@@ -3,4 +3,4 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-/usr/bin/wordnet "$@" | pen-s remove-leading-and-trailing-newlines | pavs
+/usr/bin/wordnet "$@" | pen-s remove-leading-and-trailing-newlines | pen-s remove-trailing-whitespace | pavs

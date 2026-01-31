@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# dp=/root/repos/moos/wordnet-db/dict/
+# (
+# test -d "$dp" || cd "$(gc "https://github.com/moos/wordnet-db")"
+# )
+
+dp=/usr/share/wordnet
+test -d "$dp" || agi wordnet-base &>/dev/null
+cat "$dp/index.adj" | sed "/^ /d" | cut -d ' ' -f 1 | tr _ ' ' | pavs

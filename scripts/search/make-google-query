@@ -1,0 +1,6 @@
+#!/bin/bash
+for term in $@ ; do
+    search="$search%20$term"
+done
+
+printf -- "%s\n" "http://www.google.com/search?q=$search"

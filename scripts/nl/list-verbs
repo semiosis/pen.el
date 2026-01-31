@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+(
+test -d /root/repos/moos/wordnet-db || cd "$(gc "https://github.com/moos/wordnet-db")"
+)
+
+cat /root/repos/moos/wordnet-db/dict/index.verb | sed "/^ /d" | cut -d ' ' -f 1 | tr _ ' ' | pavs

@@ -3,6 +3,7 @@
 (require 'helm-wordnet)
 
 ;; This should find the wrapper script
+(setq wordnut-cmd "wordnet")
 (setq helm-wordnet-prog "wordnet")
 (setq helm-wordnet-follow-delay 0.2)
 

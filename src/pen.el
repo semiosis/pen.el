@@ -2655,6 +2655,8 @@ May use to generate code from comments."
       (require 'pen-org-misc-packages)))
 
 (require 'pen-timeout)
+(require 'pen-news)
+(require 'pen-php)
 (require 'pen-amot)
 (require 'pen-flash)
 (require 'pen-tabs)

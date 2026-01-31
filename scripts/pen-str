@@ -228,7 +228,8 @@ case "$f" in
     ;;
 
     remove-trailing-whitespace) {
-        sed -z -e "s/\s*\$//" -e "s/\n*\$//"
+        sed -e "s/\s*\$//" -e "s/\n*\$//" |
+          sed -z -e "s/\s*\$//" -e "s/\n*\$//"
     }
     ;;
 

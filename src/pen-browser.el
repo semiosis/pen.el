@@ -72,9 +72,11 @@
             ((or (string-match-p "asciinema\\.org/a/" url))
              (nw (concat "o " (pen-q url))))
             ((or (string-match-p "www\\.google\\.com/search\\?" url))
-             (let* ((query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)&.*/\\\\1/\"" url))
-                    (query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)$/\\\\1/\"" url))
+             (let* ((encoded (s-replace "\"" "%22" url))
+                    (query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)&.*/\\\\1/\"" encoded))
+                    (query (pen-snc "sed \"s/.*q=\\\\([^&]\\\\+\\\\)$/\\\\1/\"" query))
                     (query (s-replace "+" " " query))
+                    (query (s-replace "%22" "\"" query))
                     (url (fz-ddgr query)))
 
                (if (not (string-empty-or-nil-p url))
