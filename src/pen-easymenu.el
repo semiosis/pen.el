@@ -114,4 +114,9 @@ MENU.  This is a submenu."
      ;; my addition: return the symbol
      ',symbol))
 
+;; DONE See if I can make j:pen-menu-bar-open appear at mouse cursor
+;; - j:start-menu-bar-at-cursor
+;; TODO Make a more efficient way to build menus and open them
+;; j:pen-lsp-mouse-click
+
 (provide 'pen-easymenu)

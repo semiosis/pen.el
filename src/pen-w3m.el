@@ -212,9 +212,11 @@
          ;; `()
          ))
 
-(add-to-list 'w3m-filter-configuration '(t
-                                        ("Extract readability portion of web page. Operates on all pages" "rdrview")
-                                        "\\`https?://" w3m-filter-rdrview))
+;; Setting t here would enable rdrview for w3m every time emacs starts
+(add-to-list 'w3m-filter-configuration '(;; t
+                                         nil
+                                         ("Extract readability portion of web page. Operates on all pages" "rdrview")
+                                         "\\`https?://" w3m-filter-rdrview))
 ;; 
 ;;  ("Strip Google's click-tracking code from link urls" "Google の click-tracking コードをリンクの url から取り除きます")
 ;;  "\\`https?://[a-z]+\\.google\\." w3m-filter-google-click-tracking)

@@ -2636,6 +2636,7 @@ May use to generate code from comments."
 (require 'pen-memory)
 ;; (require 'pen-lua)
 (require 'pen-info)
+;; (require 'pen-embark)
 (require 'pen-lsp-python)
 (require 'pen-lsp-rust)
 (if (inside-docker-p)
@@ -2656,7 +2657,7 @@ May use to generate code from comments."
 
 (require 'pen-timeout)
 (require 'pen-news)
-(require 'pen-php)
+;; (require 'pen-php)
 (require 'pen-amot)
 (require 'pen-flash)
 (require 'pen-tabs)

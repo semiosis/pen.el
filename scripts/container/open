@@ -125,7 +125,8 @@ fp="$(p "$fp" | sed 's~^http://www.google.com/url?q=~~')"
 if test -z "$fp"; then
     fp="$(pen-xc)"
     echo "reopening: $fp" 1>&2
-    o "$fp" # Run it again so we get the history
+    # o "$fp" # Run it again so we get the history
+    zrepl o "$fp" # Run it again so we get the history. But also get the shell history as it's handy as well
     exit $?
 fi
 

@@ -3,4 +3,14 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
-nvc /usr/bin/calc "$@"
+if test "$#" -eq 0; then
+    USE_RLWRAP=y
+    # THis is necessary because rlwrap doesn't like vim opening in the same TTY
+    export PAGER=sps-v
+fi
+
+if test "$USE_RLWRAP" = "y"; then
+    nvc rl /usr/bin/calc "$@"
+else
+    nvc /usr/bin/calc "$@"
+fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+sed -e 's/\*\[\[/\[\[/g' -e 's/\]\]\*/\]\]/g'

@@ -1,13 +1,27 @@
 (defun isearch-forward-region-cleanup ()
   "turn off variable, widen"
-  (if isearch-forward-region
+  (if isearch-for-region
       (widen))
-  (setq isearch-forward-region nil))
+  (setq isearch-for-region nil))
 
-(defvar isearch-forward-region nil
+(defvar isearch-for-region nil
   "variable used to indicate we're in region search")
 
 (add-hook 'isearch-mode-end-hook 'isearch-forward-region-cleanup)
+
+;; search-nonincremental-instead
+
+(defvar pen-isearch-max-file-size 1000000)
+
+(defun pen-basic-forward-search (&optional literal-string)
+  (interactive (list (read-string-hist "Forward Search literal string: ")))
+
+  (search-forward literal-string))
+
+(defun pen-basic-backward-search (&optional literal-string)
+  (interactive (list (read-string-hist "Backward Search literal string: ")))
+
+  (search-backward literal-string))
 
 (defun isearch-forward-region (&optional regexp-p no-recursive-edit)
   "Do an isearch-forward, but narrow to region first."
@@ -17,13 +31,32 @@
         (narrow-to-region (point) (mark))
         (deactivate-mark)
         (goto-char (point-min))
-        (setq isearch-forward-region t)
+        (setq isearch-for-region t)
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
             (isearch-mode t nil nil (not no-recursive-edit))
           (isearch-mode t (not (null regexp-p)) nil (not no-recursive-edit))))
-    (call-interactively 'pen-isearch-forward)))
+    (if (> (buffer-size) pen-isearch-max-file-size)
+        (call-interactively 'pen-basic-forward-search)
+      (call-interactively 'pen-isearch-forward))))
+
+(defun isearch-backward-region (&optional regexp-p no-recursive-edit)
+  "Do an isearch-backward, but narrow to region first."
+  (interactive "P\np")
+  (if (pen-selected-p)
+      (progn
+        (narrow-to-region (point) (mark))
+        (deactivate-mark)
+        (goto-char (point-min))
+        (setq isearch-for-region t)
+        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+            (isearch-mode t nil nil (not no-recursive-edit))
+          (isearch-mode t (not (null regexp-p)) nil (not no-recursive-edit))))
+    (if (> (buffer-size) pen-isearch-max-file-size)
+        (call-interactively 'pen-basic-backward-search)
+      (call-interactively 'pen-isearch-backward))))
 
 (define-key global-map (kbd "C-s") #'isearch-forward-region)
+(define-key global-map (kbd "C-r") #'isearch-backward-region)
 
 ;; Not sure if works
 (defmacro save-region-excursion (&rest body)

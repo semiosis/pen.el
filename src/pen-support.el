@@ -1512,57 +1512,67 @@ when s is a string, set the clipboard to s"
     "Like q but without the end quotes"
     (pcre-replace-string "\"(.*)\"" "\\1" (pen-q string)))
 
-(defun completing-read-hist (prompt &optional initial-input histvar default-value override-func-name)
+;; TODO I think I should make a more permanent solution to this
+;; It should really load from file, optionally, though.
+;; Some completing reads should have a permanent memory. e.g. j:fz-ddgr
+;; Implement `remember-history-b`
+(defun completing-read-hist (prompt &optional initial-input histvar default-value override-func-name remember-history-b)
   "read-string but with history and newline evaluation."
   (setq initial-input (or initial-input
                           ""))
 
-  (if (pen-var-value-maybe 'do-pen-batch)
-      ""
-    (progn
-      (let ((fnn (or
-                  override-func-name
-                  (pen-var-value-maybe 'func-name))))
-        (if (sor fnn)
-            (setq prompt (concat fnn " ~ " prompt))))
+  (let ((cache-fp (if remember-history-b
+                       (f-join pen-ci-cache-dir (concat completing-read-hist "--" (sym2str histvar))))))
+    (if (pen-var-value-maybe 'do-pen-batch)
+        ""
+      (progn
+        (let ((fnn (or
+                    override-func-name
+                    (pen-var-value-maybe 'func-name))))
+          (if (sor fnn)
+              (setq prompt (concat fnn " ~ " prompt))))
 
-      (if (not histvar)
-          (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
+        (if (not histvar)
+            (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
 
-      (setq prompt (sor prompt ":"))
+        (if (and cache-fp
+                 (file-exists-p cache-fp))
+            (set histvar (ignore-errors (read (shut-up (e/cat fp))))))
 
-      (if (not (string-match " $" prompt))
-          (setq prompt (concat prompt " ")))
+        (setq prompt (sor prompt ":"))
 
-      (if (not (variable-p histvar))
-          (eval `(defvar ,histvar nil)))
-      (if (and (not initial-input)
-               (listp histvar))
-          (setq initial-input (first histvar)))
+        (if (not (string-match " $" prompt))
+            (setq prompt (concat prompt " ")))
 
-      ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-      ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-      ;; (eval-string (concat "\"" (pen-qne "lskjdfldks\ndshi\\nslkfjof") "\""))
-      ;; (setq initial-input (bs "\"" initial-input))
-      ;; (setq initial-input (bs "\n" initial-input))
+        (if (not (variable-p histvar))
+            (eval `(defvar ,histvar nil)))
+        (if (and (not initial-input)
+                 (listp histvar))
+            (setq initial-input (first histvar)))
 
-      ;; (pen-etv (completing-read-hist "test2: " "test\nt\\nest"))
-      (setq initial-input (pen-qne initial-input))
+        ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+        ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+        ;; (eval-string (concat "\"" (pen-qne "lskjdfldks\ndshi\\nslkfjof") "\""))
+        ;; (setq initial-input (bs "\"" initial-input))
+        ;; (setq initial-input (bs "\n" initial-input))
 
-      (eval `(progn
-               (let ((inhibit-quit t))
-                 (or (with-local-quit
-                       (let* ((completion-styles
-                               '(basic))
-                              (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
-                              ;; (s (string-replace "\\n" "\n" s))
+        ;; (pen-etv (completing-read-hist "test2: " "test\nt\\nest"))
+        (setq initial-input (pen-qne initial-input))
 
-                              ;; Using the perl script isn't ideal
-                              (s (pen-uq s)))
+        (eval `(progn
+                 (let ((inhibit-quit t))
+                   (or (with-local-quit
+                         (let* ((completion-styles
+                                 '(basic))
+                                (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
+                                ;; (s (string-replace "\\n" "\n" s))
 
-                         (setq ,histvar (seq-uniq ,histvar 'string-equal))
-                         s))
-                     "")))))))
+                                ;; Using the perl script isn't ideal
+                                (s (pen-uq s)))
+
+                           (setq ,histvar (seq-uniq ,histvar 'string-equal))
+                           s))
+                       ""))))))))
 (defalias 'read-string-hist 'completing-read-hist)
 (defalias 'rshi 'completing-read-hist)
 
