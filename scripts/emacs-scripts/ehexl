@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Whatever I do, don't name this script hexl or it will break ielm
+
+hexl-find-file "$@"

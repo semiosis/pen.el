@@ -235,4 +235,40 @@ buffer."
   ;; I guess this works a lot like pps
   (format "%S" o))
 
+;; Man, (let ((f 'message)) (eval `(quote ',f))) is convoluted, but seems like something that would be necessary to do fairly often,
+;; yet I can't figure out how to make this any simpler with a macro.
+;; (let ((f 'message)) (eval `(quote ',f)))
+;; (defmacro quote-value (exp)
+;;   ""
+;;   `,exp)
+
+;; (: message.pps (let ((m "yo")) (cache `(progn (sleep 1) ,m) t)))
+;; (mapcar 'str2sym (s-split "\\." "message.pps"))
+
+(defmacro dot (fcomposition arg)
+  ""
+  (let ((fs (mapcar (lambda (f)
+                      (list f 'it))
+                    (mapcar 'str2sym (s-split "[\\.·]" (sym2str fcomposition))))))
+    `(--> ,arg ,@fs)))
+
+(defmacro dotr (fcomposition arg)
+  ""
+  (let ((fs (reverse
+             (mapcar (lambda (f)
+                       (list f 'it))
+                     (mapcar 'str2sym (s-split "[\\.·]" (sym2str fcomposition)))))))
+    `(--> ,arg ,@fs)))
+
+(defalias ': 'dot)
+(defalias '! 'dotr)
+;; Sadly, this doesn't work
+;; (defalias '. 'dot)
+
+(comment
+ (: message.pps "yo")
+ (! pps.message "yo"))
+
+;; (apply '+ '(5 5))
+
 (provide 'pen-utils)

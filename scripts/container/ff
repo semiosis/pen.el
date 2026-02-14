@@ -81,7 +81,8 @@ pak
               -c copy \
               -a play-song \
               -v play-video \
-              -b browsh)"
+              -b browsh \
+              -y carbonyl)"
 
     case "$ans" in
         edit) { vs $0; } ;;
@@ -89,6 +90,7 @@ pak
         play-song) { play-song "$url"; } ;;
         play-video) { play-video "$url"; } ;;
         browsh) { browsh "$url"; } ;;
+        carbonyl) { carbonyl "$url"; } ;;
         *) ;;
     esac
     exit 0
@@ -116,6 +118,7 @@ if test -z "$ans"; then
               -v vim \
               -V eww-q \
               -b browsh \
+              -y carbonyl \
               -a new-article \
               -t torbrowsh \
               -w ew3m \
@@ -145,6 +148,7 @@ case "$ans" in
     copy) { xcit -i "$url"; exit 0; } ;;
     google-chrome) { set -m; google-chrome "$url" & disown; exit 0; } ;;
     browsh) { browsh -k "$url"; } ;;
+    carbonyl) { carbonyl -k "$url"; } ;;
     new-article) { pen-nw new-article "$url"; } ;;
     torbrowsh) { torbrowsh "$url"; } ;;
     rdrview) { rdrview "$url"; } ;;

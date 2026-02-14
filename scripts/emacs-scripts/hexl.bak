@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# Whatever I do, don't put a script hexl in the path or it will break ielm
+
+# false
+:

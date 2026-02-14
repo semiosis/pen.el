@@ -1,4 +1,10 @@
-(require 'window-jump)
+;; (require 'window-jump)
+
+(use-package 'window-jump
+  :ensure t
+  ;; :bind (:map dired-mode-map
+  ;;             (")" . dired-git-info-mode))
+  )
 
 ;; <f1> bindings seem to be related to <help> bindings in emacs somehow
 ;; but two keys are very much different.

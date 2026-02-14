@@ -547,6 +547,15 @@
                 pen-docs-for-thing-given-screen)
         :preverr '())
 
+(handle '(wordnut-mode)
+        :nexterr '()
+        :docs '(wordnut-lookup-current-word
+                lookup-thing-glossary-definition
+                dict-word
+                helm-wordnet-suggest
+                pen-docs-for-thing-given-screen)
+        :preverr '())
+
 (handle '(fundamental-mode)
         :nexterr '()
         :docs '(lookup-thing-glossary-definition

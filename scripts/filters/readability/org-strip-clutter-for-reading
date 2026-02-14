@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+biblegateway-unlinkify | remove-links-leave-titles | sed '/_QUOTE/d' | strongs-codes-unlinkify | pavs

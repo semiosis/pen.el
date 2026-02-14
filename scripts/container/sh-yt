@@ -15,6 +15,8 @@ d  yt -v $(cmd-nice-posix "$url") # download and watch in vlc
 tn yt -tty -v $(cmd-nice-posix "$url")
 v  yt -vlc -v $(cmd-nice-posix "$url")
 p  yt -a $(cmd-nice-posix "$url")
+b  browsh $(cmd-nice-posix "$url")
+y  carbonyl $(cmd-nice-posix "$url")
 s  play-song $(cmd-nice-posix "$url")
 cg chrome $(cmd-nice-posix "$url")
 f  ff $(cmd-nice-posix "$url")
@@ -22,7 +24,11 @@ r  readsubs $(cmd-nice-posix "$url")
 HEREDOC
 
 echo "$0" | udl | hls green
-echo "$options" | pen-mnm | hls dgrey
+# echo "$options" | pen-mnm | hls dgrey
+echo "$options" | pen-mnm | vimcat-basic
+
+# TODO Consider using e:qa script instead, like ff
+# e:$PENELD/scripts/container/ff
 
 read -n1 d; test "$d" = "" && read -n1 d
 # clear
@@ -33,6 +39,8 @@ case "$d" in
     t|n) cmd="yt -tty -v $(cmd-nice-posix "$url")" ;;
     v) cmd="yt -vlc -v $(cmd-nice-posix "$url")" ;;
     p) cmd="yt -a $(cmd-nice-posix "$url") &" ;;
+    b) cmd="browsh $(cmd-nice-posix "$url") &" ;;
+    y) cmd="carbonyl $(cmd-nice-posix "$url") &" ;;
     s) cmd="play-song $(cmd-nice-posix "$url") &" ;;
     c|g) cmd="chrome $(cmd-nice-posix "$url")" ;;
     f) cmd="ff $(cmd-nice-posix "$url")" ;;

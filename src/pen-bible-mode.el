@@ -1930,6 +1930,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
+(define-key bible-mode-map (kbd "/") 'fz-ddgr-bibleverse)
 (define-key bible-mode-map (kbd "W") 'bible-mode-copy-link-decorated)
 (define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
@@ -1967,6 +1968,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-search-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-search-mode-map (kbd "w") 'bible-mode-copy-link)
+(define-key bible-search-mode-map (kbd "/") 'fz-ddgr-bibleverse)
 (define-key bible-search-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
@@ -2092,15 +2094,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (let* ((tup (bible-mode-get-ref-tuple))
          (book-lc
           (-->
-           (downcase (car tup))
+           (! downcase.car tup)
            (s-replace " " "_" it)
            (s-replace "iii_" "3_" it)
            (s-replace "ii_" "2_" it)
            (s-replace "i_" "1_" it)
            (s-replace "_of_john" "" it)
            (s-replace "song_of_solomon" "songs" it)))
-         (chap (str (cadr tup)))
-         (verse (str (caddr tup)))
+         (chap (! str·cadr tup))
+         (verse (! str·caddr tup))
          (url (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse)))
     (if (interactive-p)
         (w3m url)
@@ -2110,10 +2112,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-interlinear-get-word-blocks ()
   (interactive)
   ;; (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (bible-open-interlinear) t)))
-  (etv (snc (cmd "biblehub-interlinear-get-word-blocks-pipeline" (bible-open-interlinear)))))
+  (! etv·snc (cmd "biblehub-interlinear-get-word-blocks-pipeline" (bible-open-interlinear))))
 
-(defvar bible-mode-commentaries
+(defset bible-mode-commentaries
   '(
+    ("Precept Austin" "austin")
+    
     ("Barnes' Notes" "barnes")
     ("Benson Commentary" "benson")
     ("Biblical Illustrator" "illustrator")
@@ -2148,27 +2152,30 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                          nil nil  "commentary: "))
          (book-lc
           (-->
-           (downcase (car tup))
+           (! downcase·car tup)
            (s-replace " " "_" it)
            (s-replace "iii_" "3_" it)
            (s-replace "ii_" "2_" it)
            (s-replace "i_" "1_" it)))
-         (chap (str (cadr tup)))
-         (verse (str (caddr tup))))
+         (chap (! str·cadr tup))
+         (verse (! str·caddr tup)))
 
     ;; (w3m (format "https://biblehub.com/commentaries/%s/%s/%s-%s.htm" commentary book-lc chap verse))
-    (w3m (format "https://biblehub.com/commentaries/%s/%s/%s.htm" commentary book-lc chap))))
+    (cond
+     ((s-matches? "austin" commentary)
+      (w3m (format "https://www.preceptaustin.org/galatians-3-commentary#3:10" commentary book-lc chap)))
+     (t (w3m (format "https://biblehub.com/commentaries/%s/%s/%s.htm" commentary book-lc chap))))))
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
 ;; e:$EMACSD/pen.el/src/pen-completing-read.el
 
 (defun bible-fz-chapter-titles-go ()
   (interactive)
-  (fz (pen-str2lines (e/cat bible-chapter-titles-fp))))
+  (! fz·pen-str2lines·e/cat bible-chapter-titles-fp))
 
 (defun bible-fz-passage-outlines-go ()
   (interactive)
-  (fz (pen-str2lines (e/cat bible-passage-outlines-fp))))
+  (! fz·pen-str2lines·e/cat bible-passage-outlines-fp))
 
 (defun bible-doc--make-request nil
   "Request the Bibl documentation."
@@ -2471,5 +2478,55 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 (defun bible-verse-at-point-tpop ()
   (interactive)
   (bible-mode-tpop (bible-verse-ref-at-point-p)))
+
+(defun fz-ddgr-bibleverse (query)
+  (interactive (list (read-string-hist "fz-ddgr-bibleverse: ")))
+
+  (let* ((results ;; (ddgr (pen-cmd-f "site:https://biblegateway.com/passage/?search" query))
+          (ddgr (pen-cmd-f "bible gateway passage" query)))
+         (urls (mapcar 'car results))
+
+         ;; Before working on the cache, make sure pen-snc etc is working properly
+         (pagerefs
+          (eval
+           (cache
+            `(-flatten (mapcar (lambda (url) (! str2lines·pen-snc (concat (pen-cmd "ocif" "curl" "-s" url) " | scrape-bible-references -v"))) ',urls))))
+          ;; (-flatten (mapcar (lambda (url) (str2lines (pen-snc (concat (pen-cmd "ocif" "curl" "-s" url) " | scrape-bible-references -v")))) urls))
+          )
+
+         ;; (pagerefs
+         ;;  (tv (cache
+         ;;       `(-flatten (mapcar (lambda (url) (str2lines (pen-snc (concat (pen-cmd "ocif" "curl" "-s" url) " | scrape-bible-references -v")))) ',urls))))
+         ;;  ;; (-flatten (mapcar (lambda (url) (str2lines (pen-snc (concat (pen-cmd "ocif" "curl" "-s" url) " | scrape-bible-references -v")))) urls))
+         ;;  )
+
+         (refs
+          ;; (eval
+          ;;  (cache
+          ;;   `(str2lines (pen-snc "scrape-bible-references -v | wrlp canonicalise-bible-ref"
+          ;;                        (list2str
+          ;;                         (-flatten
+          ;;                          (mapcar (lambda (e)
+          ;;                                    (list
+          ;;                                     (urldecode (first e))
+          ;;                                     (second e)))
+          ;;                                  ',results)))))))
+          (str2lines (pen-snc "scrape-bible-references -v | wrlp canonicalise-bible-ref"
+                              (! list2str·-flatten
+                                (mapcar (lambda (e)
+                                          (list
+                                           (! urldecode·first e)
+                                           (second e)))
+                                        results)))))
+         ;; Extract the verse references from the page titles? from the results or from the urls? or from the pages?
+         ;; Start with the page titles and urls.
+         (ref (fz (append (mapcar (lambda (ref) (list ref "from search results")) refs)
+                          (-filter (lambda (e) (car e))
+                                   (mapcar (lambda (pgref) (list (sor pgref) "from page contents"))
+                                           ;; (tv pagerefs :pp 'list2str)
+                                           pagerefs)))
+                  nil nil "fz-ddgr-bibleverse: ")))
+    (if (not (string-blank-p ref))
+        (bible-mode-lookup-ref ref))))
 
 (provide 'pen-bible-mode)

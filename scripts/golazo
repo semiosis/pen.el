@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# github author/repo may need adjustment
+test -f "${GOPATH%%:*}/bin/golazo" || "go install github.com/golazo/golazo@latest" &>/dev/null
+
+${GOPATH%%:*}/bin/golazo "$@"

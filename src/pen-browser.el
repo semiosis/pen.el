@@ -9,6 +9,7 @@
           -r "rdrview"
           -w "w3m"
           -b "browsh"
+          -y "carbonyl"
           -B "ebrowsh"
           -I "w3m"
           -f "ff")))
@@ -18,6 +19,7 @@
       ("w3m" (w3m-browse-url url _new-window))
       ;; ("browsh" (nw (cmd "browsh" url) _new-window))
       ("browsh" (browsh url))
+      ("carbonyl" (carbonyl url))
       ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
       ("rdrview" (rdrview url))
       (_ (browse-url-generic url _new-window)))))

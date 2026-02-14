@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/csvlook" || agi "csvkit" &>/dev/null
+
+/usr/bin/csvlook "$@"

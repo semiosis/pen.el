@@ -24,7 +24,7 @@ if test -n "$name"; then
 fi
 
 case "$interp" in
-    sps|spv|sph|nw|esph|espv) {
+    tpop|sps|spv|sph|nw|esph|espv) {
         # echo "#+BEGIN_SRC sh -n :interpreter \"$interp bash\" :async :results none"
         echo "#+BEGIN_SRC sh -n :$interp bash :async :results none :lang text"
         cat "$input_fp" | postprocess

@@ -129,6 +129,10 @@
       (switch-to-buffer "*Messages*"))
   o)
 
+(defun mesg (o)
+  (pen-message-no-echo "%s" (str o))
+  o)
+
 (defun new-buffer-from-o (&optional o mode)
   "Example:
  (with-current-buffer (nbfo \"shane\") ...)"

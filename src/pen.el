@@ -1080,7 +1080,9 @@ Reconstruct the entire yaml-ht for a different language."
    (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
             nil default-directory)))
 
-(defalias 'pen-list2cmd 'combine-and-quote-strings)
+;; (defalias 'pen-list2cmd 'combine-and-quote-strings)
+;; Use my modified version
+(defalias 'pen-list2cmd 'pen-combine-and-quote-strings)
 
 (defun pen-list2cmd-f (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
@@ -1112,6 +1114,26 @@ Reconstruct the entire yaml-ht for a different language."
   (let ((default-directory "/"))
     (pen-list2cmd-cip args)))
 (defalias 'cmd-cip 'pen-cmd-cip)
+
+;; j:combine-and-quote-strings
+;; I made a modification
+(defun pen-combine-and-quote-strings (strings &optional separator)
+  "Concatenate the STRINGS, adding the SEPARATOR (default \" \").
+This tries to quote the strings to avoid ambiguity such that
+  (split-string-and-unquote (combine-and-quote-strings strs)) == strs
+Only some SEPARATORs will work properly.
+
+Note that this is not intended to protect STRINGS from
+interpretation by shells, use `shell-quote-argument' for that."
+  (let* ((sep (or separator " "))
+         (re (concat "[\\\"]" "\\|" (regexp-quote sep))))
+    (mapconcat
+     (lambda (str)
+       (if (string-match re str)
+	       (concat "\"" (replace-regexp-in-string "[\\\"]" "\\\\\\&" str) "\"")
+	     str))
+     ;; Remove nil. This is so pen-cmd can take nil and ignore them completely
+     (-filter 'identity strings) sep)))
 
 (defun pen-cmd (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
@@ -1149,7 +1171,7 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-cmd-f (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
-    (pen-list2cmd-f args)))
+    (pen-list2cmd-f (-filter 'identity args))))
 
 (defalias 'cmd-f 'pen-cmd-f)
 
@@ -2631,7 +2653,8 @@ May use to generate code from comments."
 (require 'pen-magit-margin)
 (require 'pen-vc)
 (require 'pen-rpl)
-;; (require 'pen-window-jump)
+(require 'pen-ex)
+(require 'pen-window-jump)
 (require 'pen-tty)
 (require 'pen-memory)
 ;; (require 'pen-lua)
@@ -2645,6 +2668,7 @@ May use to generate code from comments."
 ;; (require 'pen-haskell-emacs-interop)
 (require 'pen-browser)
 (require 'pen-trace)
+(require 'pen-modifications)
 (require 'pen-function-dev)
 (require 'peniel)
 (require 'pen-discipleship-group)

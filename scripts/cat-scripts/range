@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+first_line="$1"
+n_lines="$2"
+
+if test "$#" -eq 1 && printf -- "%s\n" "$1" | grep -qP "[0-9]-[0-9]"; then
+    first_line="$(printf -- "%s" "$1" | cut -d - -f 1)"
+    last_line="$(printf -- "%s" "$1" | cut -d - -f 2)"
+    n_lines="$(( last_line - first_line ))"
+
+    tail +"$first_line" | head -n "$n_lines"
+else
+    tail +"$first_line" | head -n "$n_lines"
+fi

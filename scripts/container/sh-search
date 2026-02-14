@@ -11,7 +11,7 @@ clear
 read -r -d '' options <<HEREDOC
 .  EDIT
 h  hoogle
-/  google
+/  web search
 s  zrs
 HEREDOC
 
@@ -27,7 +27,7 @@ case "$d" in
     # h) cmd="ehg" ;;
     h) cmd="rlr hoogle" ;;
     s) cmd="zrs egr" ;;
-    \/) cmd="v $HOME/notes2018/ws/google/searches.org" ;;
+    \/) cmd="mkdir -p /root/.pen/documents/notes/ws/websearch/; v /root/.pen/documents/notes/ws/websearch/searches.org" ;;
 esac
 echo
 echo "$cmd" | hls nearblack

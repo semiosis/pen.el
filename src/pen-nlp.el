@@ -69,6 +69,15 @@
   ;;          (message "%d\n" i))
   )
 
+;; TODO Make something to do this
+;; Writing numbers to make the more readable
+;; 19 oc 967 sp 568 sx 900 qu 859 qd 523 t 802 b 559 m 065 t 713/257829627945307727248226067259
+;; 19 o 967 p 568 x 900 u 859 d 523 t 802 b 559 m 065 t
+;; 19 octillion
+
+;; Tags for grep : number human readable
+;; It only seems to go up to about a billion
+;; Improve worded-number-sequence to handle very large numbers
 ;; (worded-number-sequence 1 10)
 ;; (worded-number-sequence 1 10 2)
 (defun worded-number-sequence (from &optional to inc)

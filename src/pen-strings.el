@@ -8,4 +8,9 @@
 
 ;; - Use =-E-tcp-echo=
 
+(defun shortened-string-with-hash (s)
+  (let ((h (short-hash s)))
+    ;; I could also have used "slugify"
+    (s-truncate 20 (s-replace "_" "-" (s-snake-case s)) (concat "-" h))))
+
 (provide 'pen-strings)

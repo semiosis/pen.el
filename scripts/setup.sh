@@ -2313,6 +2313,7 @@ e ia org-treeusage org-transform-tree-table org-timeline org-tidy org-tag-beauti
 e ia itail
 
 # Run chromium inside of a terminal
+# Try to get this one going because I want to dump the DOM
 (
 cd ~/repos
 git clone "https://github.com/fathyb/carbonyl"
@@ -2776,7 +2777,7 @@ e ia highlight2clipboard
 # https://github.com/jajpater/cbible
 agi libsword-dev
 
-e ia window-jump
+e ia -r window-jump
 
 e ia lua-mode
 
@@ -2862,3 +2863,17 @@ cargo-update && cargo install oeis-tui
 e ia -r php-mode
 # Composer 1 is no longer supported. Need to install Composer 2
 # agi composer
+
+# Football stats:
+# (
+#   cd "$(gc "https://github.com/0xjuanma/golazo")"
+#   go build
+# )
+go install github.com/0xjuanma/golazo@latest
+
+# For .frag files
+# /root/repos/Cubified/termgl/demo/3-noisy-gradients.frag
+e ia glsl-mode
+
+# For rendering tables in ASCII
+agi csvkit

@@ -383,4 +383,25 @@ values to copy the link to the clipboard and/or primary as well."
       (call-interactively 'ivy-avy)
     (call-interactively 'avy-goto-char)))
 
+(defun avy-goto-char (char &optional arg)
+  "Jump to the currently visible CHAR.
+The window scope is determined by `avy-all-windows' (ARG negates it)."
+  (interactive (list ;; (read-char "char: " t)
+                (read-key "char: " t)
+                current-prefix-arg))
+
+  (case char
+    ('up (window-jump-up))
+    ('down (window-jump-down))
+    ('left (window-jump-left))
+    ('right (window-jump-right))
+    
+    (t 
+     (avy-with avy-goto-char
+       (avy-jump
+        (if (= 13 char)
+            "\n"
+          (regexp-quote (string char)))
+        :window-flip arg)))))
+
 (provide 'pen-avy)

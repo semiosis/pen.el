@@ -5,6 +5,4 @@ export TTY
 
 # pen-cterm-ssh -v -ssh -vvv -- docker run -ti fathyb/carbonyl https://youtube.com
 
-# The remote tmux (tmwr) is needed to prevent a crash
-
-# pen-cterm-ssh -ssh -t -- tmwr docker run -ti fathyb/carbonyl "$@"
+pen-cterm-ssh -ssh -t -- docker run -ti fathyb/carbonyl "$@"

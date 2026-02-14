@@ -10,13 +10,13 @@
 ;; 
 ;; ;; v +/";;; docker-machine.el --- Emacs interface to docker-machine  -\*- lexical-binding: t -\*-" "$EMACSD/manual-packages/docker.el/docker-machine.el"
 ;; 
-;; (defun docker-container-copy-ip ()
-;;   "Copy the IP address of on the containers selection."
-;;   (interactive)
-;;   (docker-utils-ensure-items)
-;;   (--each
-;;       (docker-utils-get-marked-items-ids)
-;;     (xc (chomp (pen-sn (concat "docker inspect " it " | jq -r \".[].NetworkSettings.IPAddress\""))))))
+(defun docker-container-copy-ip ()
+  "Copy the IP address of on the containers selection."
+  (interactive)
+  (docker-utils-ensure-items)
+  (--each
+      (docker-utils-get-marked-items-ids)
+    (xc (chomp (pen-sn (concat "docker inspect " it " | jq -r \".[].NetworkSettings.IPAddress\""))))))
 ;; 
 ;; (defun docker-container-commit (container)
 ;;   "Open a zrepl with docker commit."
@@ -220,39 +220,40 @@
 ;;          (format "%s%s" file-prefix container-address)))
 ;;     (ranger default-directory)))
 ;; 
-;; (defun docker-container-eranger-selection (prefix)
-;;   "Run `docker-container-eranger' on the containers selection."
-;;   (interactive "P")
-;;   (docker-utils-ensure-items)
-;;   (--each
-;;       (docker-utils-get-marked-items-ids)
-;;     (docker-container-eranger it prefix)))
+(defun docker-container-eranger-selection (prefix)
+  "Run `docker-container-eranger' on the containers selection."
+  (interactive "P")
+  (docker-utils-ensure-items)
+  (--each
+      (docker-utils-get-marked-items-ids)
+    (docker-container-eranger it prefix)))
 ;; 
 ;; ;; This works
-;; (defset docker-container-mode-map
-;;   (let ((map (make-sparse-keymap)))
-;;     (define-key map "?" 'docker-container-help)
-;;     (define-key map "C" 'docker-container-cp)
-;;     (define-key map "D" 'docker-container-rm)
-;;     (define-key map "I" 'docker-utils-inspect)
-;;     (define-key map "K" 'docker-container-kill)
-;;     (define-key map "L" 'docker-container-logs)
-;;     (define-key map "O" 'docker-container-stop)
-;;     (define-key map ";" 'docker-container-sh-selection)
-;;     (define-key map "i" 'docker-container-copy-ip)
-;;     (define-key map "M" 'docker-container-commit)
-;;     (define-key map "z" 'docker-container-eranger-selection)
-;;     (define-key map "P" 'docker-container-pause)
-;;     (define-key map "R" 'docker-container-restart)
-;;     (define-key map "S" 'docker-container-start)
-;;     (define-key map "a" 'docker-container-attach)
-;;     (define-key map "b" 'docker-container-shells)
-;;     (define-key map "d" 'docker-container-diff)
-;;     (define-key map "f" 'docker-container-open)
-;;     (define-key map "l" 'docker-container-ls)
-;;     (define-key map "r" 'docker-container-rename-selection)
-;;     map)
-;;   "Keymap for `docker-container-mode'.")
+(defset docker-container-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map "?" 'docker-container-help)
+    (define-key map "C" 'docker-container-cp)
+    (define-key map "D" 'docker-container-rm)
+    ;; (define-key map "I" 'docker-utils-inspect)
+    (define-key map "I" 'docker-container-inspect)
+    (define-key map "K" 'docker-container-kill)
+    (define-key map "L" 'docker-container-logs)
+    (define-key map "O" 'docker-container-stop)
+    (define-key map ";" 'docker-container-sh-selection)
+    (define-key map "i" 'docker-container-copy-ip)
+    (define-key map "M" 'docker-container-commit)
+    (define-key map "z" 'docker-container-eranger-selection)
+    (define-key map "P" 'docker-container-pause)
+    (define-key map "R" 'docker-container-restart)
+    (define-key map "S" 'docker-container-start)
+    (define-key map "a" 'docker-container-attach)
+    (define-key map "b" 'docker-container-shells)
+    (define-key map "d" 'docker-container-diff)
+    (define-key map "f" 'docker-container-open)
+    (define-key map "l" 'docker-container-ls)
+    (define-key map "r" 'docker-container-rename-selection)
+    map)
+  "Keymap for `docker-container-mode'.")
 ;; 
 ;; (define-transient-command docker-container-help ()
 ;;   "Help transient for docker containers."

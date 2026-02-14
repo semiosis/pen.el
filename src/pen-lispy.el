@@ -16,6 +16,36 @@
         (get-vim-link))
     (call-interactively 'self-insert-command)))
 
+(defun lispy-goto-symbol (symbol)
+  "Go to definition of SYMBOL.
+SYMBOL is a string."
+  (interactive (list (or
+                      ;; (thing-at-point 'symbol t)
+                      ;; see j:symbol-at-point in pen-modifications.el
+                      (symbol-at-point)
+                      (lispy--current-function))))
+  (lispy--remember)
+  (deactivate-mark)
+  (with-no-warnings
+    (ring-insert find-tag-marker-ring (point-marker)))
+  (let ((narrowedp (buffer-narrowed-p)))
+    (when narrowedp
+      (widen))
+    (cond ((memq major-mode lispy-elisp-modes)
+           (lispy-goto-symbol-elisp symbol)
+           (when narrowedp
+             (lispy-narrow 1)))
+          (t
+           (let ((handler (cdr (assoc major-mode lispy-goto-symbol-alist)))
+                 lib)
+             (if (null handler)
+                 (error "no handler for %S in `lispy-goto-symbol-alist'" major-mode)
+               (when (setq lib (cadr handler))
+                 (require lib))
+               (funcall (car handler) symbol))))))
+  ;; in case it's hidden in an outline
+  (lispy--ensure-visible))
+
 (defun pen-elisp-eval-eval ()
   (interactive)
   (let* ((result)

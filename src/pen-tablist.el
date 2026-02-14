@@ -4,6 +4,9 @@
 (require 'tablist)
 (require 'pcsv)
 
+;; This was not working for docker container tablist
+(advice-add 'tablist-revert :around #'ignore-errors-around-advice)
+
 (defun cmd-tabulated-list (&optional csv_fp csv_type)
   "csv_type is kinda like the mode name"
   (interactive)

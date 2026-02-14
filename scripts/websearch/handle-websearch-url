@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# decode the search url and delegate to a cli interface
+
+# TODO Make a "regex" switch
+
+if pl "$rp" | grep -q -P "google.com/url\\?q=" then
+    :
+fi
