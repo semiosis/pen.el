@@ -2163,7 +2163,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     ;; (w3m (format "https://biblehub.com/commentaries/%s/%s/%s-%s.htm" commentary book-lc chap verse))
     (cond
      ((s-matches? "austin" commentary)
-      (w3m (format "https://www.preceptaustin.org/galatians-3-commentary#3:10" commentary book-lc chap)))
+      ;; preceptaustin.org has varying formats for urls corresponding to book chapter
+      ;; TODO So I need to try to encode their differences here
+      (w3m (format "https://www.preceptaustin.org/%s-%s-commentary#%s:%s" book-lc chap chap verse)))
      (t (w3m (format "https://biblehub.com/commentaries/%s/%s/%s.htm" commentary book-lc chap))))))
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
