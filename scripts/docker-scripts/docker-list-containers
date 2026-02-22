@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -j) {
+        use_json=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$use_json" = "y"; then
+    docker container ls --format="{{json .}}" | pa -vs
+else
+    # For some reason, the full json format is lagging currently
+    # docker container ls --format="{{json .}}" | jq -r ".Names" | uniqnosort | pa -vs
+    docker container ls | sed 1d | rev | s field 1 | rev
+fi

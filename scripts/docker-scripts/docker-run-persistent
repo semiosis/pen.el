@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        # TODO Append the persistence command to whatever is supplied as
+        # the commmand.
+        PERSIST=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+image="$1"
+command="$2"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+: ${image:="alpine:latest"}
+
+name="$(printf -- "%s\n" "$image" | slugify)-$(uuid)"
+
+command="/bin/sh -c \"trap 'exit 147' TERM; tail -f /dev/null & while wait \\\${!}; test \\\$? -ge 128; do true; done\""
+
+if yn "Allow access to host?"; then
+    # This is for commands such as 'dive'
+    zrepl -E "docker run --rm --name "$name" -v $MYGIT:/media/mygit -v /var/run/docker.sock:/var/run/docker.sock -ti $image $(printf -- "%s\n" "$command")"
+else
+    zrepl -E "docker run --rm --name "$name" -v $MYGIT:/media/mygit -ti $image $(printf -- "%s\n" "$command")"
+fi

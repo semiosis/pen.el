@@ -94,6 +94,22 @@ PATH is the sexp to evaluate, as a string."
            (edit-var-elisp (intern varname)))))
   nil)
 
+(defun org-link--customize-group (groupname)
+  (shut-up
+    (cond ((symbolp groupname)
+           (customize-group groupname))
+          ((stringp groupname)
+           (customize-group (intern groupname)))))
+  nil)
+
+(defun org-link--customize-variable (variablename)
+  (shut-up
+    (cond ((symbolp variablename)
+           (customize-variable variablename))
+          ((stringp variablename)
+           (customize-variable (intern variablename)))))
+  nil)
+
 ;; rely on the fall-through
 ;; (org-add-link-type "ev" 'org-link--edit-var)
 
@@ -127,6 +143,9 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "ci" 'call-interactively-fun-name)
 (org-add-link-type "ic" 'call-interactively-fun-name)
 (org-add-link-type "mx" 'call-interactively-fun-name)
+
+(org-add-link-type "cg" 'org-link--customize-group)
+(org-add-link-type "cv" 'org-link--customize-variable)
 
 (defun call-interactively-fun-name-with-prefix (s)
   (setq current-prefix-arg '(4)) ; C-u

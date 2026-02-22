@@ -123,6 +123,8 @@
 
 (define-key prog-mode-map (kbd "M-=") 'pen-handle-repls)
 (define-key dired-mode-map (kbd "M-=") 'pen-handle-repls)
+;; (define-key global-map (kbd "C-c TAB") 'handle-accessories)
+(define-key global-map (kbd "C-c TAB") 'handle-fz-accessories)
 (define-key global-map (kbd "s-m") 'handle-copylastresult)
 (define-key global-map (kbd "s-=") 'handle-summarise)
 (define-key prog-mode-map (kbd "s-r") 'handle-readme)

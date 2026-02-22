@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+registry_host="$1"
+: ${registry_host:="registry.hub.docker.com"}
+shift
+
+image_name="$1"
+: ${image_name:="debian"}
+image_name="$(p "$image_name" | sed 's/:.*//')"
+shift
+
+api_path="$1"
+: ${api_path:="v1/repositories"}
+shift
+
+ci curl \
+    -s \
+    -H "User-Agent: Emacs Restclient" \
+    -XGET "https://$registry_host/$api_path/$image_name/tags" |
+        sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' |
+        tr '}' '\n' |
+        awk -F: '{print $3}' |
+        pa -vs
+
+
+# TODO Upgrade to use the v2 api
+# v2 API
+# $ curl -sS 'https://registry.hub.docker.com/v2/repositories/openethereum/openethereum/tags/'  | jq '."results"[]["name"]' | sort

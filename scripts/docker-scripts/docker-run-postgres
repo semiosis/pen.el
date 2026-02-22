@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+docker run --rm -p 5432:5432 -e POSTGRES_PASSWORD=admin -e POSTGRES_USER=admin -e POSTGRES_DB=main -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti --entrypoint= postgres:alpine docker-entrypoint.sh postgres

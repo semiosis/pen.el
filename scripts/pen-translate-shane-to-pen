@@ -48,7 +48,7 @@ eval "$shcode" |
     -e 's/\$(nsfa /\$(pen-nsfa /g' \
     -e 's/\$(aqf /\$(cmd /g' \
     -e 's/\$(aq /\$(cmd-nice-posix /g' \
-    -e 's/\$(cmd-real /\$(cmd-nice-posix /g' \
+    -e 's/\$(cmd-nice /\$(cmd-nice-posix /g' \
     -e 's/\$(xc /\$(pen-xc /g' \
     -e 's/\$(zl /\$(pen-zl /g' \
     -e 's/ u / pen-ux /g' \
@@ -95,7 +95,7 @@ eval "$shcode" |
     -e 's/(q /(pen-q /g' \
     -e 's/\([" ]\)\(rtcmd\) /\1pen-\2 /g' \
     -e 's/"ci /"pen-ci /g' \
-    -e 's/"z-repl /"zrepl /g' \
+    -e 's/"zrepl /"zrepl /g' \
     -e 's/"oci /"unbuffer pen-ci /g' \
     -e 's/(my-copy /(xc /g' \
     -e 's/(selection)/(pen-selected-text)/g' \

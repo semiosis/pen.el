@@ -1,0 +1,4 @@
+* This contains a directory of dockerfiles at the top level
+Usually, dockerfiles would exist in independent directories.
+
+I want to make these dockerfiles directory independent.

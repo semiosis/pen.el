@@ -445,11 +445,21 @@ Call `helm' only with SOURCES and BUFFER as args."
 
 ;; The delay prevents spamming google
 (eval
- `(defun helm-google-suggest ()
+ `(defun helm-google-suggest (&optional buffername)
     "Preconfigured `helm' for Google search with Google suggest."
     (interactive)
-    (helm-other-buffer 'helm-source-google-suggest "*helm google*" ,(string-to-number (or (sor (pen-rc-get "helm_async_delay"))
-                                                                                          "0")))))
+    (setq buffername (or buffername "*helm google*"))
+    (helm-other-buffer 'helm-source-google-suggest buffername ,(string-to-number (or (sor (pen-rc-get "helm_async_delay"))
+                                                                                     "0")))))
+
+;; Just returns the string. This is useful for things like world map search
+(eval
+ `(defun helm-google-suggest-noaction (&optional buffername)
+    "Preconfigured `helm' for Google search with Google suggest."
+    (interactive)
+    (setq buffername (or buffername "*helm google*"))
+    (helm-other-buffer 'helm-source-google-suggest-noaction buffername ,(string-to-number (or (sor (pen-rc-get "helm_async_delay"))
+                                                                                              "0")))))
 
 (defun helm-google-suggest-set-candidates (&optional request-prefix)
   "Set candidates with result and number of Google results found."
@@ -532,6 +542,14 @@ Call `helm' only with SOURCES and BUFFER as args."
     :keymap helm-map
     :requires-pattern 3))
 
+(defset helm-source-google-suggest-noaction
+        (helm-build-sync-source "Google Suggest"
+          :candidates (lambda ()
+                        (funcall helm-google-suggest-default-function))
+          :action 'identity
+          :volatile t
+          :keymap helm-map
+          :requires-pattern 3))
 
 (define-key helm-comp-read-map (kbd "<M-RET>")      'helm-copy-to-tvipe)
 (define-key helm-map (kbd "M-D") #'send-m-del)

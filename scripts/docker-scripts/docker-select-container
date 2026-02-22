@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+my-docker -j container ls | jq -r .Names | fzf

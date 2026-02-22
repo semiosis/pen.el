@@ -1416,7 +1416,7 @@ region-active-p does not work for evil selection."
 
 (defalias 'pps 'pp-to-string)
 
-(defun xc (&optional s silent noautosave)
+(defun xc (&optional s silent noautosave topic)
   "emacs kill-ring, xclip copy
 when s is nil, return current contents of clipboard
 when s is a string, set the clipboard to s"
@@ -1439,7 +1439,10 @@ when s is a string, set the clipboard to s"
         ;; (pen-sn "xsel --primary --input" s)
         ;; (pen-sn "xsel --secondary --input" s)
         (pen-sn "xsel --clipboard --input" s)
-        (if (not silent) (message "%s" (concat "Copied: " (e/q s))))
+        (if (not silent)
+            (if (sor topic)
+                (message "%s" (concat topic " copied: " (e/q s)))
+              (message "%s" (concat "Copied: " (e/q s)))))
         s)
     (progn
       ;; Frustratingly, shell-command-to-string uses the current directory.

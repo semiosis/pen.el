@@ -98,6 +98,18 @@
     (xc (chomp linecontents) t)
     linecontents))
 
+(defun term-toggle-mode ()
+  (interactive)
+  (if (major-mode-p 'term-mode)
+      (if (term-in-line-mode)
+          (progn
+            (message "Term char mode")
+            (call-interactively 'term-char-mode))
+        (progn
+          ;; Can't actually go back with the same binding because it enters line-mode
+          (message "Term line mode")
+          (call-interactively 'term-line-mode)))))
+
 (defun pen-term-set-raw-map ()
   (interactive)
   (let* ((map (make-keymap))
@@ -115,8 +127,8 @@
       ;;   (read-kbd-macro (message (format "C-c <%s>" (car spec))))
       ;;   'term-send-function-key)
       (define-key map
-        (read-kbd-macro (message (format "<%s>" (car spec))))
-        'term-send-function-key)
+                  (read-kbd-macro (message (format "<%s>" (car spec))))
+                  'term-send-function-key)
       ;; (define-key term-raw-map (kbd "C-M-\\") nil)
       )
 
@@ -206,7 +218,8 @@
   (define-key term-raw-map (kbd "<backtab>") (lambda () (interactive) (term-send-raw-string "[Z")))
   ;; (define-key term-raw-map (kbd "DEL") (lambda () (interactive) (term-send-raw-string "?")))
   ;; (define-key term-raw-map (kbd "C-s") #'term-line-mode)
-  (define-key term-raw-map (kbd "C-c C-j") #'term-line-mode)
+  ;; (define-key term-raw-map (kbd "C-c C-j") #'term-line-mode)
+  (define-key term-raw-map (kbd "C-c C-j") #'term-toggle-mode)
   (define-key term-raw-map (kbd "C-c C-h") #'describe-mode)
   (define-key term-raw-map (kbd "C-c i") 'pen-start-ii-from-buffer)
   (define-key term-raw-map (kbd "C-c o") 'pen-bol-context)
@@ -227,6 +240,10 @@
 
 (define-key term-mode-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
 (define-key term-mode-map (kbd "C-c O") #'pen-tm-edit-vs-in-nw)
+
+;; This is actually set in term.el
+;; (define-key term-mode-map (kbd "C-c C-k") #'term-char-mode)
+(define-key term-mode-map (kbd "C-c C-k") #'term-toggle-mode)
 
 (defun pen-term-around-advice (proc &rest args)
   (pen-term-set-raw-map)
@@ -603,7 +620,8 @@ without any interpretation."
 (defun tm-send-keys (keys)
   (interactive "P")
   (pen-sn (concat "tmux send-keys " keys)))
-(defalias 'pen-tsk 'pen-tm-send-keys)
+(defalias 'pen-tsk 'tm-send-keys)
+(defalias 'tsk 'tm-send-keys)
 
 (defun eterm-256color-compile ()
   "If eterm-256color isn't a term type, tic eterm-256color.ti.

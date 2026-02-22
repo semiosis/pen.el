@@ -1,0 +1,9 @@
+FROM alpine
+RUN echo "root:root" | chpasswd
+RUN apk add openrc
+RUN apk add --no-cache bash curl git git-lfs openssh unzip
+RUN sed -i "/PermitRootLogin/aPermitRootLogin yes" /etc/ssh/sshd_config
+RUN rc-update add sshd
+RUN rc-status
+RUN touch /run/openrc/softlevel
+CMD ["/bin/sh", "-c", "trap 'exit 147' TERM; tail -f /dev/null & wait ${!}"]

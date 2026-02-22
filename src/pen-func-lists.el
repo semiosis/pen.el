@@ -107,7 +107,10 @@
                          reopen-in
                          reopen-in-eww
                          reopen-in-browsh
+                         reopen-in-carbonyl
                          rdrview))
+(defset eshell-mode-funcs '(ranger
+                            pcomplete-expand-and-complete))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
@@ -154,7 +157,10 @@
                          csv-open-in-fpvd
                          csv-open-in-tabulated-list))
 
-(defset gnu-apl-mode-funcs '(gnu-apl))
+(defset gnu-apl-mode-funcs '(gnu-apl
+                             gnu-apl-show-keyboard
+                             gnu-apl-finnapl-list))
+(defset gnu-apl-interactive-mode-funcs gnu-apl-mode-funcs)
 
 (defset tabulated-list-mode-funcs '(tablist-export-csv
                                     pen-tablist-copy-marked
@@ -307,6 +313,7 @@
                          eww-reopen-in-chrome
                          reopen-in-w3m
                          reopen-in-browsh
+                         reopen-in-carbonyl
                          select-font-lock-face-region
                          w3m-open-this-file
                          elinks-open-this-file
@@ -384,6 +391,8 @@
                               slides
                               md-org-export-to-org
                               md-glow-this-buffer
+                              md-tidytext-this-buffer
+                              markdown-insert-image
                               markdown-get-lang-here
                               poly-markdown-mode))
 

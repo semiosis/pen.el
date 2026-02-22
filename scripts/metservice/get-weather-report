@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+: "${place:="$1"}"
+
+# default:
+: "${place:="wttr"}"
+
+/usr/bin/curl -s "https://wttr.in/$place" | less -rS

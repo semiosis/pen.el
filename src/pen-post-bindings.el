@@ -40,6 +40,7 @@
 ;; (sslk "lak" #'kubernetes-overview)
 
 (sslk "lac" #'artist-mode)
+(sslk "lar" #'gnu-apl)
 (sslk "lak" #'toggle-picture-mode)
 (sslk "laf" #'deft)
 (sslk "laB" #'calibredb)

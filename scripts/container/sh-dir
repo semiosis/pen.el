@@ -135,7 +135,7 @@ case "$d" in
     8) cmd="CWD=$NOTES zsh" ;;
     7) cmd="CWD=$NOTES2017 zsh" ;;
     m) cmd="CWD=$NOTES/ws/music zsh" ;;
-    k) cmd="CWD=$HOME/dockerfiles zsh" ;;
+    k) cmd="CWD=$PENELD/config/dockerfiles zsh" ;;
     i) cmd="CWD=$HOME/org-brains zsh" ;;
     N) cmd="CWD=$NOTES/programs/ns zsh" ;;
     f) cmd="zcd $NOTES/ws/fuzzy" ;;

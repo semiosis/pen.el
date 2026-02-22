@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+image_name="$1"
+: ${image_name:="debian"}
+shift
+
+# ci wget -q "https://registry.hub.docker.com/v1/repositories/$image_name/tags" -O - | sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' | tr '}' '\n' | awk -F: '{print $3}' | pa -vs
+
+# Latest first
+docker-registry-list-tags registry.hub.docker.com "$image_name" | tac | pa -vs

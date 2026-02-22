@@ -1039,22 +1039,34 @@ decide whether the selected frame can display that Unicode character."
 (define-key ports-tablist-mode-map (kbd "k") 'arp-tablist-nmap-ports)
 
 ;; Make some vimlike bindings for tabulated list mode
-(define-key tabulated-list-mode-map (kbd "g g") 'beginning-of-buffer)
-(define-key tabulated-list-mode-map (kbd "G") 'end-of-buffer)
-(define-key tabulated-list-mode-map (kbd "f") 'tablist-forward-column)
+;; This makes refreshing docker container list too annoying.
+;; Keep g as revert. Also, remove G since I removed "g g"
+;; (define-key tabulated-list-mode-map (kbd "g g") 'beginning-of-buffer)
+;; (define-key tabulated-list-mode-map (kbd "g g") nil)
+;; (define-key tabulated-list-mode-map (kbd "G") 'end-of-buffer)
+;; (define-key tabulated-list-mode-map (kbd "G") nil)
+(define-key tabulated-list-mode-map (kbd "g") 'tabulated-list-revert)
+
 (define-key tabulated-list-mode-map (kbd "0") 'tablist-goto-first-column)
 (define-key tabulated-list-mode-map (kbd "$") 'end-of-line)
 ;; (define-key tabulated-list-mode-map (kbd "w") nil)
 (define-key tabulated-list-mode-map (kbd "b") 'tablist-backward-column)
+(define-key tabulated-list-mode-map (kbd "f") 'tablist-forward-column)
 
-(define-key tabulated-list-mode-map (kbd "k") 'previous-line)
 (define-key tabulated-list-mode-map (kbd "p") 'previous-line)
 (define-key tabulated-list-mode-map (kbd "n") 'next-line)
+(define-key tabulated-list-mode-map (kbd "k") 'previous-line)
 (define-key tabulated-list-mode-map (kbd "j") 'next-line)
+
+(define-key tabulated-list-mode-map (kbd "M-<left>") 'tablist-backward-column)
+(define-key tabulated-list-mode-map (kbd "M-<right>") 'tablist-forward-column)
+(define-key tabulated-list-mode-map (kbd "M-<up>") 'previous-line)
+(define-key tabulated-list-mode-map (kbd "M-<down>") 'next-line)
 
 (define-key tablist-minor-mode-map (kbd "k") 'previous-line)
 (define-key tablist-minor-mode-map (kbd "K") 'tablist-do-kill-lines)
-(define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
+;; (define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
+;; (define-key tablist-minor-mode-map (kbd "G") nil)
 (define-key tablist-minor-mode-map (kbd "R") 'tablist-revert)
 ;; (define-key tablist-minor-mode-map (kbd "y") 'pen-tablist-copy-marked)
 
@@ -1279,6 +1291,13 @@ Returns the number of unmarked marks."
     (if selected
         (xc (pps selected))
       (error "Nothing selected for copying"))))
+
+(defun pen-tablist-copy-first-cell-current-line ()
+  (interactive)
+  (let ((firstcell (car (pen-tabulated-list-get-entry))))
+    (if firstcell
+        (xc firstcell)
+      (error "Nothing in firstcell for copying"))))
 
 (defun pen-tablist-copy-marked ()
   (interactive)

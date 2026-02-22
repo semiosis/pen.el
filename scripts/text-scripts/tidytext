@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+s remove-starting-and-trailing-whitespace | s remove-leading-and-trailing-newlines | max-double-spaced-no-trailing | pavs

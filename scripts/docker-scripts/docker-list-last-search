@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# This is for rat-dockerhub
+
+export UPDATE
+
+eval "my-docker -j search $(gs docker-last-search)" | jq -r .Name
+# echo "docker search $(gs docker-last-search)"

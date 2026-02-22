@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -p) {
+        # TODO Append the persistence command to whatever is supplied as
+        # the commmand.
+        PERSIST=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+image="$1"
+command="$2"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+: ${image:="alpine:latest"}
+
+name="$(printf -- "%s\n" "$image" | slugify)-$(uuid)"
+
+# zrepl -E "docker run --entrypoint /bin/sh --rm --name "$name" -v $MYGIT:/media/mygit -ti $image"
+
+zrepl -E "docker run --entrypoint \"\" --rm --name "$name" -v $MYGIT:/media/mygit -ti $image /bin/sh"

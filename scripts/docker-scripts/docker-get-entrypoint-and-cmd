@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+image="$1"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+if test -z "$image"; then
+    exit 1
+fi
+
+# docker inspect -f '{{.Config.Cmd}}' "$image" | sed 's/^\[\(.*\)\]/\1/' | q
+
+# This removes the quotes
+# docker inspect -f '{{.Config.Cmd}}' "$image" | sed 's/^\[\(.*\)\]/\1/'
+
+cmd="$(docker-get-cmd "$image")"
+entrypoint="$(docker-get-entrypoint "$image")"
+
+printf -- "%s\n" "$entrypoint$(test -n "$entrypoint" && test -n "$cmd" && echo -n " ")$cmd"

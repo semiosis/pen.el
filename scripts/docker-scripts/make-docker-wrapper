@@ -1,0 +1,140 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -X|-x) {
+        use_X=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+image="$1"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+# If there is no / then do a docker-search
+if test -n "$image" && ! pl "$rp" | grep -q -P '/'; then
+    image="$(fz-docker-search "$image")"
+fi
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+if test -z "$image"; then
+    exit 1
+fi
+
+# command_name="d-$(p "$image" | sed -e 's=.*/==' -e 's=:.*==')"
+
+command_name="d-$(p "$image" | slugify)"
+
+fp="$SCRIPTS/$command_name"
+
+if test -f "$fp"; then
+    if is_tty; then
+        orspe "$fp"
+    else
+        pl "$fp"
+    fi
+    exit $?
+fi
+
+if yn "Last arg is file path?"; then
+IFS= read -r -d '' first_arg_path_code <<'HEREDOC'
+test "$#" -gt 0 && last_arg="${@: -1}"
+fp="$last_arg"
+if test -f "$fp"; then
+    rp="$(realpath "$fp")"
+    bn="$(basename "$fp")"
+    dn="$(dirname "$rp")"
+
+    cd "$dn"
+
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+    set -- "$@" "$bn"
+fi
+HEREDOC
+fi
+
+if test -z "$command"; then
+    : ${command:="$(docker-get-entrypoint-and-cmd  $image | bs '$')"}
+fi
+
+if test "$use_X" = "y"; then
+    runcmd="$(cmd \
+    docker \
+    run \
+    --rm \
+    --env "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR" \
+    --env DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" \
+    --env "DISPLAY=:0" \
+    --privileged \
+    --network=host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "\$(pwd):/\$(pwd | slugify)" \
+    -w "/\$(pwd | slugify)" \
+    -ti \
+    --entrypoint= \
+    $image \
+    $(printf -- "%s\n" "$command"))"
+elif yn "Allow access to host?"; then
+    # This is for commands such as 'dive'
+    runcmd="$(cmd-nice \
+    docker \
+    run \
+    --rm \
+    --privileged \
+    --network=host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "\$(pwd):/\$(pwd | slugify)" \
+    -w "/\$(pwd | slugify)" \
+    -ti \
+    --entrypoint= \
+    $image \
+    $(printf -- "%s\n" "$command"))"
+else
+    runcmd="docker run --rm -v \"\$(pwd):/\$(pwd | slugify)\" -w \"/\$(pwd | slugify)\" -ti --entrypoint= $image $(printf -- "%s\n" "$command")"
+fi
+
+IFS= read -r -d '' shcode <<HEREDOC
+#!/bin/bash
+export TTY
+
+( hs "\$(basename "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" 0</dev/null ) &>/dev/null
+
+$(test -n "$first_arg_path_code" && printf -- "%s\n" "$first_arg_path_code";echo)
+${runcmd} "\$@"
+HEREDOC
+
+fp="$SCRIPTS/$command_name"
+
+if ! test -f "$fp"; then
+    printf -- "%s" "$shcode" > "$fp"
+    chmod a+x "$fp"
+fi
+
+short_command_name="$(p "$image" | sed -e 's/.*\///' -e 's/:.*//')"
+if yn "Symlink to $short_command_name"; then
+    (
+        cd "$SCRIPTS"
+        ln -s "$command_name" "$short_command_name"
+    )
+fi
+
+if test -f "$fp"; then
+    if is_tty; then
+        orspe "$fp"
+    else
+        pl "$fp"
+    fi
+fi

@@ -1,0 +1,81 @@
+#!/bin/bash
+export TTY
+
+image="$1"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+: ${image:="alpine:latest"}
+
+
+if pl "$image" | grep -q -P 'fatos'; then
+    rosdirpath=ApexOS
+    fatopts=()
+    # This prevents fatos from starting
+    # groupadd: group 'user' already exists
+    CONTAINER_USER=user
+    # CONTAINER_USER="$USER"
+else
+    rosdirpath="ros/*"
+    fatopts=(
+        --volume="/etc/group:/etc/group:ro"
+        --volume="/etc/passwd:/etc/passwd:ro"
+        --volume="/etc/shadow:/etc/shadow:ro"
+        --volume="/etc/sudoers.d:/etc/sudoers.d:ro"
+        )
+    CONTAINER_USER="$USER"
+fi
+
+
+# TODO Set up steam under docker
+
+# apt install ssh
+# apt-get install software-properties-common
+# add-apt-repository multiverse
+# apt update
+# apt install steam
+# wget "https://steamcdn-a.akamaihd.net/client/installer/steam.deb"
+# dpkg -i steam.deb
+# apt-get -f install
+# apt install sudo
+# apt install vim
+# apt install pciutils
+
+docker \
+    run \
+    -h "$image" \
+    --name "$image" \
+    --privileged \
+    --env COLORFGBG \
+    --env DISPLAY \
+    --env EMAIL \
+    --env GIT_AUTHOR_EMAIL \
+    --env GIT_AUTHOR_NAME \
+    --env GIT_COMMITTER_EMAIL \
+    --env GIT_COMMITTER_NAME \
+    --env SSH_AUTH_SOCK \
+    --env TERM \
+    --env "TIMEZONE=UTC" \
+    --env "USER=shane" \
+    --env "GROUP=shane" \
+    --env "USER_ID=1000" \
+    --env "GROUP_ID=1000" \
+    --env "VIDEO_GROUP_ID=44" \
+    -v /dev/dri:/dev/dri \
+    -v /dev/shm:/dev/shm \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v /run/user/1000/keyring/ssh:/run/user/1000/keyring/ssh \
+    "--cap-add=SYS_PTRACE" \
+    "--cap-add=SYS_ADMIN" \
+    "--cap-add=NET_ADMIN" \
+    --ulimit "rtprio=100:100" \
+    --network host \
+    -v /var/log/coredumps:/var/log/coredumps \
+    -ti \
+    "$image" \
+    /bin/bash
+
+    -v /home/shane/.ssh:/home/shane/.ssh \
+    # ubuntu:bionic-20200311 \

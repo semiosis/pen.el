@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+container="$1"
+: "${container:="$(docker-list-containers | fz -p "Force sh on docker container")"}"
+test -n "$container" || exit 1
+
+docker create --name temp-busybox busybox:1.31.0
+docker cp temp-busybox:/bin/busybox busybox
+docker cp busybox "$container":/busybox
+docker exec -it "$container" /bin/busybox sh

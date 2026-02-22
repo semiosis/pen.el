@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+{
+    docker-list-images
+    docker-list-containers
+} | fzf -p "select docker image or container" -0 | pager

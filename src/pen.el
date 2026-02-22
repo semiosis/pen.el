@@ -2685,6 +2685,8 @@ May use to generate code from comments."
 (require 'pen-amot)
 (require 'pen-flash)
 (require 'pen-tabs)
+(require 'pen-metservice)
+(require 'pen-geography)
 (require 'pen-bbs)
 (require 'pen-strings)
 (require 'guess-style)

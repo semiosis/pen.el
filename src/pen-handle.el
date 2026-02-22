@@ -571,14 +571,19 @@
         :preverr '())
 
 (handle '(eww-mode)
-        :history '(eww-list-history)
+        :history '(lg-fz-history
+                   eww-list-history)
         :summarise '(rdrview)
         :prevhist '(eww-back-url)
         :nexthist '(eww-forward-url))
 
 (handle '(w3m-mode)
-        :history '(w3m-history)
+        :history '(w3m-fz-history
+                   w3m-list-history
+                   w3m-history)
         :docs '(wordnut-lookup-current-word)
+        :accessories '(rdrview
+                       w3m-history)
         :summarise '(rdrview)
         :prevhist '(w3m-view-previous-page)
         :nexthist '(w3m-view-next-page))
@@ -586,6 +591,26 @@
 (handle '(comint-mode)
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)
+        :preverr '())
+
+(handle '(gnu-apl-interactive-mode)
+        :nexterr '()
+        :docs '(pen-docs-for-thing-given-screen)
+        :accessories '(gnu-apl-show-keyboard
+                       gnu-apl-finnapl-list)
+        :preverr '())
+
+(handle '(eshell-mode)
+        :nexterr '()
+        :docs '(pen-docs-for-thing-given-screen)
+        :accessories '(ranger)
+        :preverr '())
+
+(handle '(markdown-mode)
+        :nexterr '()
+        :docs '(pen-docs-for-thing-given-screen)
+        :accessories '(md-glow-this-buffer
+                       md-tidytext-this-buffer)
         :preverr '())
 
 (defun swipl-playground ()
@@ -789,5 +814,60 @@ Try next command on `error', passing ARG as `prefix-arg'."
           (error ;; (message "`handle' failed to run `%s'." first)
            (format "`handle' failed to run `%s'." first)
            (handle--command-execute rest arg)))))))
+
+(defun generate-handle-functions ()
+  (interactive)
+  (dolist (keyword handle-keywords)
+    (let* ((keyword-name (handle--keyword-name keyword))
+           (keyword-fz-name (concat "fz-" keyword-name)))
+
+      (eval
+       `(defalias (intern (format "handle-%s" keyword-name))
+          (lambda (arg)
+            (interactive "P")
+            (handle--mode-execute
+             (reverse (parent-mode-list major-mode))
+             ,keyword ,keyword-name arg))
+          (format "`handle' %s." ,keyword-name)))
+
+      (eval
+       `(defalias (intern (format "handle-%s" ,keyword-fz-name))
+          (lambda (arg)
+            (interactive "P")
+            (let ((current-global-prefix-arg '(4)))
+              (handle--mode-execute
+               (reverse (parent-mode-list major-mode))
+               ,keyword ,keyword-name arg)))
+          (format "`handle' %s." ,keyword-name))))))
+(generate-handle-functions)
+
+(defun pen-web-history ()
+  (interactive)
+
+  ;; TODO If handled by w3m then use the handler,
+  ;; otherwise, call w3m-fz-history
+
+  (cond
+   ((major-mode-p 'w3m-mode)
+    (call-interactively 'handle-fz-history))
+   ((major-mode-p 'eww-mode)
+    (call-interactively 'handle-fz-history))
+   (t
+    (if (>= (prefix-numeric-value current-prefix-arg) 4)
+        (let ((action
+               (pen-qa
+                -e "eww history"
+                -w "w3m history"
+                -q "cancel")))
+          (cond
+           ((string-equal "eww history" action)
+            (call-interactively 'lg-fz-history))
+           ((string-equal "repo" action)
+            (call-interactively 'w3m-fz-history))
+           ((string-equal "cancel" action)
+            nil)
+           (t
+            (call-interactively 'w3m-fz-history))))
+      (call-interactively 'w3m-fz-history)))))
 
 (provide 'pen-handle)

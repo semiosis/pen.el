@@ -1421,8 +1421,8 @@ function! ProgramFilter(vt, ...)
     call setreg('"', qr, qt)
 endfunction
 
-vnoremap <silent> IE :<c-u>call ProgramFilterPredefined("fzfl", visualmode(), 1)<cr>
-vnoremap <silent> II :<c-u>call ProgramFilterPredefined("fzfi", visualmode(), 1)<cr>
+vnoremap <silent> &* :<c-u>call ProgramFilterPredefined("fzfl", visualmode(), 1)<cr>
+vnoremap <silent> && :<c-u>call ProgramFilterPredefined("fzfi", visualmode(), 1)<cr>
 function! ProgramFilterPredefined(cmd, vt, ...)
     let [qr, qt] = [getreg('"'), getregtype('"')]
     let [oai, ocin, osi, oinde] = [&ai, &cin, &si, &inde]

@@ -9,10 +9,10 @@ clear
 
 read -r -d '' options <<HEREDOC
 .  EDIT
-r  z-repl "raco pkg install " 
-c  z-repl "sudo cpanm " 
-n  z-repl "npm install -g " 
-l  z-repl "l " 
+r  zrepl "raco pkg install " 
+c  zrepl "sudo cpanm " 
+n  zrepl "npm install -g " 
+l  zrepl "l " 
 HEREDOC
 
 echo "$0" | udl | hls green
@@ -23,10 +23,10 @@ read -n1 d; test "$d" = "" && read -n1 d
 
 case "$d" in
     .) cmd="v $0" ;;
-    r) cmd="z-repl \"raco pkg install \"" ;;
-    c) cmd="z-repl \"sudo cpanm \"" ;;
-    n) cmd="z-repl \"npm install -g \"" ;;
-    l) cmd="z-repl \"l \"" ;;
+    r) cmd="zrepl \"raco pkg install \"" ;;
+    c) cmd="zrepl \"sudo cpanm \"" ;;
+    n) cmd="zrepl \"npm install -g \"" ;;
+    l) cmd="zrepl \"l \"" ;;
 esac
 echo
 echo "$cmd" | hls nearblack

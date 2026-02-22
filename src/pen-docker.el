@@ -27,13 +27,13 @@
 ;;    (concat "docker commit " container " ")))
 ;; 
 ;; ;; I don't think exec uses --entrypoint
-;; (defun docker-container-sh (container &optional prefix)
-;;   "Open `sh' in CONTAINER."
-;;   (interactive
-;;    (list
-;;     (docker-container-read-name)))
-;;   (sps
-;;    (concat "docker exec -it " container " sh -c \"/bin/bash || /bin/zsh || sh\"; pen-pak")))
+(defun docker-container-sh (container &optional prefix)
+  "Open `sh' in CONTAINER."
+  (interactive
+   (list
+    (docker-container-read-name)))
+  (sps
+   (concat "zrepl docker exec -it " container " sh -c \"/bin/bash || /bin/zsh || sh\"; pen-pak")))
 ;; 
 ;; ;; Also must decide on the user to use. Default, root
 ;; (defun docker-container-py (container &optional prefix)
@@ -56,13 +56,13 @@
 ;;   (sps
 ;;    (concat "docker exec -it " container " $HOME/container-start-fmg-env")))
 ;; 
-;; (defun docker-container-sh-selection (prefix)
-;;   "Run `docker-container-sh' on the containers selection."
-;;   (interactive "P")
-;;   (docker-utils-ensure-items)
-;;   (--each
-;;       (docker-utils-get-marked-items-ids)
-;;     (docker-container-sh it prefix)))
+(defun docker-container-sh-selection (prefix)
+  "Run `docker-container-sh' on the containers selection."
+  (interactive "P")
+  (docker-utils-ensure-items)
+  (--each
+      (docker-utils-get-marked-items-ids)
+    (docker-container-sh it prefix)))
 ;; 
 ;; (defun docker-container-sh-fmg-selection (prefix)
 ;;   "Run `docker-container-sh-fmg' on the containers selection."
@@ -101,7 +101,7 @@
 ;;                  (1+ it-index))
 ;;            (setq list
 ;;                  (cdr list)))))
-;; 
+
 ;; (defun docker-image-dive-selection ()
 ;;   "Run edive on selection."
 ;;   (interactive)
@@ -120,83 +120,83 @@
 ;;             (1+ it-index))
 ;;       (setq list
 ;;             (cdr list)))))
-;; 
-;; (defun docker-image-run-sh-selection ()
-;;   "Run docker-run-sh on selection."
-;;   (interactive)
-;;   (docker-utils-ensure-items)
-;;   (let
-;;       ((list
-;;         (docker-utils-get-marked-items-ids))
-;;        (it-index 0))
-;;     (while list
-;;       (let
-;;           ((it
-;;             (car list)))
-;;         (sps
-;;          (concat "docker-run-sh " it)))
-;;       (setq it-index
-;;             (1+ it-index))
-;;       (setq list
-;;             (cdr list)))))
-;; 
-;; (defun docker-image-tags ()
-;;   "Run docker-run-sh on selection."
-;;   (interactive)
-;;   (docker-utils-ensure-items)
-;;   (let
-;;       ((list
-;;         (docker-utils-get-marked-items-ids))
-;;        (it-index 0))
-;;     (while list
-;;       (let
-;;           ((it
-;;             (car list)))
-;;         (sps
-;;          (concat "dockerhub-list-tags " it)))
-;;       (setq it-index
-;;             (1+ it-index))
-;;       (setq list
-;;             (cdr list)))))
-;; 
-;; (defun docker-image-run-default-selection ()
-;;   "Run docker-run-default on selection."
-;;   (interactive)
-;;   (docker-utils-ensure-items)
-;;   (let
-;;       ((list
-;;         (docker-utils-get-marked-items-ids))
-;;        (it-index 0))
-;;     (while list
-;;       (let
-;;           ((it
-;;             (car list)))
-;;         (sps
-;;          (concat "docker-run-default " it)))
-;;       (setq it-index
-;;             (1+ it-index))
-;;       (setq list
-;;             (cdr list)))))
-;; 
-;; (defun docker-image-run-command-selection ()
-;;   "Run docker-run-default on selection."
-;;   (interactive)
-;;   (docker-utils-ensure-items)
-;;   (let
-;;       ((list
-;;         (docker-utils-get-marked-items-ids))
-;;        (it-index 0))
-;;     (while list
-;;       (let
-;;           ((it
-;;             (car list)))
-;;         (sps
-;;          (concat "docker-run-command " it)))
-;;       (setq it-index
-;;             (1+ it-index))
-;;       (setq list
-;;             (cdr list)))))
-;; 
+
+(defun docker-image-run-sh-selection ()
+  "Run docker-run-sh on selection."
+  (interactive)
+  (docker-utils-ensure-items)
+  (let
+      ((list
+        (docker-utils-get-marked-items-ids))
+       (it-index 0))
+    (while list
+      (let
+          ((it
+            (car list)))
+        (sps
+         (concat "docker-run-sh " it)))
+      (setq it-index
+            (1+ it-index))
+      (setq list
+            (cdr list)))))
+
+(defun docker-image-tags ()
+  "Run docker-run-sh on selection."
+  (interactive)
+  (docker-utils-ensure-items)
+  (let
+      ((list
+        (docker-utils-get-marked-items-ids))
+       (it-index 0))
+    (while list
+      (let
+          ((it
+            (car list)))
+        (sps
+         (concat "dockerhub-list-tags " it)))
+      (setq it-index
+            (1+ it-index))
+      (setq list
+            (cdr list)))))
+
+(defun docker-image-run-default-selection ()
+  "Run docker-run-default on selection."
+  (interactive)
+  (docker-utils-ensure-items)
+  (let
+      ((list
+        (docker-utils-get-marked-items-ids))
+       (it-index 0))
+    (while list
+      (let
+          ((it
+            (car list)))
+        (sps
+         (concat "docker-run-default " it)))
+      (setq it-index
+            (1+ it-index))
+      (setq list
+            (cdr list)))))
+
+(defun docker-image-run-command-selection ()
+  "Run docker-run-default on selection."
+  (interactive)
+  (docker-utils-ensure-items)
+  (let
+      ((list
+        (docker-utils-get-marked-items-ids))
+       (it-index 0))
+    (while list
+      (let
+          ((it
+            (car list)))
+        (sps
+         (concat "docker-run-command " it)))
+      (setq it-index
+            (1+ it-index))
+      (setq list
+            (cdr list)))))
+
 ;; (defun docker-container-eranger (container &optional read-shell)
 ;;   "Open `sh' in CONTAINER.  When READ-SHELL is not nil, ask the user for it."
 ;;   (interactive
@@ -249,7 +249,7 @@
     (define-key map "a" 'docker-container-attach)
     (define-key map "b" 'docker-container-shells)
     (define-key map "d" 'docker-container-diff)
-    (define-key map "f" 'docker-container-open)
+    ;; (define-key map "f" 'docker-container-open)
     (define-key map "l" 'docker-container-ls)
     (define-key map "r" 'docker-container-rename-selection)
     map)
@@ -287,7 +287,8 @@
 ;;    (";" "sh" docker-container-sh-selection)
 ;;    ("y" "py" docker-container-py-selection)
 ;;    ("f" "sh-fmg" docker-container-sh-fmg-selection)])
-;; 
+
+;; OLD version
 ;; (define-transient-command docker-image-help ()
 ;;   "Help transient for docker images."
 ;;   ["Docker images help"
@@ -307,6 +308,27 @@
 ;;    ("R" "Run"     docker-image-run)
 ;;    ("T" "Tag"     docker-image-tag-selection)
 ;;    ("l" "List"    docker-image-ls)])
+
+(transient-define-prefix docker-image-help ()
+  "Help transient for docker images."
+  ["Docker images help"
+   ("D" "Remove"        docker-image-rm)
+   ("F" "Pull"          docker-image-pull)
+   ("I" "Inspect"       docker-image-inspect)
+   ("P" "Push"          docker-image-push)
+   ("R" "Run"           docker-image-run)
+   ("T" "Tag"           docker-image-tag-selection)
+   ("d" "Mark Dangling" docker-image-mark-dangling)
+   ("l" "List"          docker-image-ls)
+   ;; added:
+   ;; ("v" "edive"    docker-image-dive-selection)
+   ("r" "zrepl run"    docker-image-run-command-selection)
+   ("d" "zrepl run default"    docker-image-run-default-selection)
+   ("c" "copy cmd"    docker-image-copy-cmd)
+   ("e" "copy entrypoint"    docker-image-copy-entrypoint)
+   ("a" "copy entrypoint and command"    docker-image-copy-entrypoint-and-cmd)
+   ("b" "zrepl run sh"    docker-image-run-sh-selection)
+   ("L" "show tags"    docker-image-tags)])
 ;; 
 ;; (defset docker-image-mode-map
 ;;   (let ((map (make-sparse-keymap)))
@@ -357,15 +379,15 @@
 ;;   (setenv "DOCKER_CERT_PATH" nil)
 ;;   (setenv "DOCKER_MACHINE_NAME" nil)
 ;;   (message "Unset docker machine environment. Default machine is now localhost."))
-;; 
-;; (defun docker-select-one ()
-;;   "Get a single selected item, or the one under the cursor"
-;;   (docker-utils-ensure-items)
-;;   (let ((marked (docker-utils-get-marked-items-ids)))
-;;     (when (/= (length marked) 1)
-;;       (error "This function requires one selection at a time"))
-;;     (car marked)))
-;; 
+
+(defun docker-select-one ()
+  "Get a single selected item, or the one under the cursor"
+  (docker-utils-ensure-items)
+  (let ((marked (docker-utils-get-marked-items-ids)))
+    (when (/= (length marked) 1)
+      (error "This function requires one selection at a time"))
+    (car marked)))
+
 ;; (defun docker-machine-env-selection-edit ()
 ;;   "Run \"docker-machine env\" on selected machine."
 ;;   (interactive)
@@ -416,12 +438,14 @@
 ;;     (define-key map "l" 'docker-machine-ls)
 ;;     map)
 ;;   "Keymap for `docker-machine-mode'.")
-;; 
-;; (defun docker-image-copy-entrypoint-and-cmd (&optional image)
-;;   (interactive)
-;;   (if (not image)
-;;       (setq image (docker-select-one)))
-;;   (xc (chomp (pen-sn (concat "docker-get-entrypoint-and-cmd " image)))))
+
+(defun docker-image-copy-entrypoint-and-cmd (&optional image)
+  (interactive)
+  (if (not image)
+      (setq image (docker-select-one)))
+  (xc (chomp (pen-sn (concat "docker-get-entrypoint-and-cmd " image)))
+      nil nil
+      "docker-image-copy-entrypoint-and-cmd"))
 ;; 
 ;; ;; TODO Make a keybinding for this -- w
 ;; (defun docker-image-copy-name-and-tag ()
@@ -430,18 +454,22 @@
 ;;     (xc (concat (nth (tabulated-list-current-column) l)
 ;;                      ":"
 ;;                      (nth (+ 1 (tabulated-list-current-column)) l)))))
-;; 
-;; (defun docker-image-copy-cmd (&optional image)
-;;   (interactive)
-;;   (if (not image)
-;;       (setq image (docker-select-one)))
-;;   (xc (chomp (pen-sn (concat "docker-get-cmd " image)))))
-;; 
-;; (defun docker-image-copy-entrypoint (&optional image)
-;;   (interactive)
-;;   (if (not image)
-;;       (setq image (docker-select-one)))
-;;   (xc (chomp (pen-sn (concat "docker-get-entrypoint " image)))))
+
+(defun docker-image-copy-cmd (&optional image)
+  (interactive)
+  (if (not image)
+      (setq image (docker-select-one)))
+  (xc (chomp (pen-sn (concat "docker-get-cmd " image)))
+      nil nil
+      "docker-image-copy-cmd"))
+
+(defun docker-image-copy-entrypoint (&optional image)
+  (interactive)
+  (if (not image)
+      (setq image (docker-select-one)))
+  (xc (chomp (pen-sn (concat "docker-get-entrypoint " image)))
+      nil nil
+      "docker-image-copy-entrypoint"))
 ;; 
 ;; (defun ff-dockerhub (&optional image)
 ;;   (interactive)

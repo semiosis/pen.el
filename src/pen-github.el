@@ -37,9 +37,29 @@
   ;; (pen-sps (concat "eww " (pen-q (car (pen-str2list (pen-sn (concat "gl " (pen-q query))))))))
   (eww (car (pen-str2list (pen-sn (concat "gl " (pen-q query)))))))
 
-(defun pen-rat-dockerhub-search (query)
+(defun pen-dockerhub-search (query)
   (interactive (list (read-string-hist "dockerhub:")))
-  (pen-sps (concat "rat-dockerhub " (pen-q query))))
+  (let ((image
+         (fz
+          (read
+           (concat "("
+                   (pen-snc (cmd "ocif" "docker" "search" "--format" "(\"{{.Name}}\" \"{{.Description}}\")" query))
+                   ")"))
+          nil nil "Dockerhub image: ")))
+    (if (sor image)
+        (let ((action
+               (pen-qa
+                -p "pull image"
+                -q "cancel")))
+          (cond
+           ((string-equal "pull image" action)
+            (nw (cmd "docker" "image" "pull" image)))
+           ((string-equal "cancel" action)
+            nil)
+           (t
+            (nw (cmd "docker" "pull" image)))))))
+  ;; (pen-sps (concat "rat-dockerhub " (pen-q query)))
+  )
 
 (defun pen-k8s-hub-search-eww (query)
   (interactive (list (read-string-hist "egr:" "kubernetes hub ")))

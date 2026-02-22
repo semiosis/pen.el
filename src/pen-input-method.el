@@ -14,7 +14,15 @@
   (interactive)
   (set-input-method 'rfc1345))
 
+(defun pen-set-input-method ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      ;; Use tmux to start sending a new key binding
+      (tsk "C-x C-m")
+    (call-interactively 'set-input-method)))
+
 ;; C-h in a keybinding is useful for showing possible keybindings, so can't use. Keep it free
+(define-key global-map (kbd "C-c C-k") 'pen-set-input-method)
 (define-key global-map (kbd "C-x RET C-w") 'set-input-method-hebrew)
 (define-key global-map (kbd "C-x RET C-h") nil)
 (define-key global-map (kbd "C-x RET C-g") 'set-input-method-greek)

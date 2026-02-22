@@ -2877,3 +2877,18 @@ e ia glsl-mode
 
 # For rendering tables in ASCII
 agi csvkit
+
+(
+ cd "$(gc "https://codeberg.org/janantos/brow6el/")"
+ 
+)
+sudo apt-get update
+sudo apt-get install -y \
+    build-essential cmake git pkg-config curl \
+    libsixel-dev \
+    libx11-dev libxcomposite-dev libxdamage-dev libxext-dev libxfixes-dev \
+    libxrandr-dev libgbm-dev libxcb1-dev \
+    libpango1.0-dev libatk1.0-dev libcups2-dev libasound2-dev \
+    libnss3-dev libnspr4-dev libglib2.0-dev
+
+e ia -r bible-gateway

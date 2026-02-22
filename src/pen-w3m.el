@@ -406,4 +406,36 @@ CHARSET is used to substitute the `charset' symbols specified in
       (unless (eolp)
 	    (insert "\n")))))
 
+;; (defun pen-w3m-save-history ()
+;;   (tv (get-path nil t)))
+
+;; w3m-display-hook shouldn't be used because it runs on resize
+;; (add-hook 'w3m-display-hook 'pen-w3m-save-history)
+;; (remove-hook 'w3m-display-hook 'pen-w3m-save-history)
+;; Neither can the fontify hooks be used for the same reason
+;; (add-hook 'w3m-fontify-before-hook 'pen-w3m-save-history)
+;; (remove-hook 'w3m-fontify-before-hook 'pen-w3m-save-history)
+
+;; Tried:
+;; (add-hook 'w3m-arrived-shutdown-functions 'pen-w3m-save-history)
+;; (remove-hook 'w3m-arrived-shutdown-functions 'pen-w3m-save-history)
+
+;;
+;; Use w3m-arrived-setup-functions
+
+(defun w3m-goto-url-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (let ((url (car args)))
+      (hs "w3m-goto-url" url))
+    ;; (tv (car args))
+    res))
+
+(advice-add 'w3m-goto-url :around #'w3m-goto-url-advice)
+;; (advice-remove 'w3m-goto-url #'w3m-goto-url-advice)
+
+(require 'pen-metservice)
+
+;; (define-key w3m-mode-map (kbd "W") 'w3m-weather)
+(define-key w3m-mode-map (kbd "W") 'get-weather-report)
+
 (provide 'pen-w3m)

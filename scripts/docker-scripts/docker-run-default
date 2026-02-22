@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+image="$1"
+command="$2"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+: ${image:="alpine:latest"}
+
+image_without_tag="$(p "$image" | sed 's/:.*//')"
+
+case "$image" in
+    # ros:*|*fatos*) {
+    #     run-ros2-docker "$image"
+    # }
+    # ;;
+
+    alpine*) {
+        docker-run-persistent "$image" "$command"
+    }
+    ;;
+
+    shane-emacs-docker*) {
+        docker run --privileged --env "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR" --env DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" --rm --env "DISPLAY=:0" --network host -ti "$image" emacs
+    }
+    ;;
+
+    *) {
+        if test -f "$PENELD/config/dockerfiles/${image_without_tag}.run"; then
+            eval "docker run $(cat "$PENELD/config/dockerfiles/${image_without_tag}.run" | s_join ' ')"
+        else
+            docker-run-persistent "$image" "$command"
+        fi
+    }
+    ;;
+esac

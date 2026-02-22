@@ -197,13 +197,20 @@ prompt additionally for EXTRA-AG-ARGS."
                     nil nil "fz-gl result: ")))
     (eww result)))
 
-(defun fz-ddgr (query)
+(defun fz-ddgr (query &optional url-filter-pattern)
   (interactive (list (read-string-hist "fz-ddgr: ")))
 
   (let* ((results (ddgr query))
+         (results
+          (if url-filter-pattern
+              (-filter (eval `(lambda (s) (s-match ,url-filter-pattern (car s))))
+                       results)
+            results))
          (url (fz results nil nil "fz-ddgr: ")))
     (if (not (string-blank-p url))
-        (browse-url url))))
+        (if (interactive-p)
+            (browse-url url)
+          url))))
 
 (defun ddgr (query)
   ;; The duck-duck go cli seems to only be able to fetch 10 results total!

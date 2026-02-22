@@ -157,6 +157,7 @@
       ('eww (eww url))
       ('w3m (w3m url))
       ('browsh (browsh url))
+      ('carbonyl (carbonyl url))
       (_ nil))))
 
 (defun reopen-in-eww ()
@@ -170,5 +171,9 @@
 (defun reopen-in-browsh ()
   (interactive)
   (reopen-in 'browsh))
+
+(defun reopen-in-carbonyl ()
+  (interactive)
+  (reopen-in 'carbonyl))
 
 (provide 'pen-browser)

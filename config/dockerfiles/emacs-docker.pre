@@ -1,0 +1,2 @@
+cp -a $SCRIPTS/emacs-pkg-install.sh ./
+cp -a $EMACSD/manual-packages/docker.el ./

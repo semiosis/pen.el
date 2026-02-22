@@ -1,0 +1,88 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -X|-x) {
+        use_X=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# cwdslug="$(pwd | slugify)"
+
+image="$1"
+command="$2"
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+if test -z "$image"; then
+    exit 1
+fi
+
+if test -z "$command"; then
+    : ${command:="$(docker-get-entrypoint-and-cmd  $image | bs '$`')"}
+
+    # : ${command:="$(docker image inspect "$image" | jq -r ".[].Config.Cmd // .[].Config.Entrypoint // empty | join (\" \")" | fzf -0)"}
+    # : ${command:="$(docker image inspect "$image" | jq -r ".[].Config.Entrypoint // empty | join (\" \")" | fzf -0)"}
+    # : ${command:="$(docker image inspect "$image" | jq -r ".[].Config.Cmd // .[].Config.Entrypoint // empty | join (\" \")" | fzf -0)"}
+    # command="$(docker image inspect "$image" | jq -r ".[].Config.Cmd // empty | join (\" \")" | fzf -0)"
+fi
+
+#if test -z "$command"; then
+#    exit 1
+#fi
+
+    # -v "$(pwd):/$cwdslug" \
+
+# command="sh -c $(aqf-nice "$command")"
+
+if test "$use_X" = "y"; then
+    zrepl \
+    -E "$(cmd \
+    docker \
+    run \
+    --rm \
+    --env "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR" \
+    --env DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" \
+    --env "DISPLAY=:0" \
+    --privileged \
+    --network=host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "\$(pwd):/\$(pwd | slugify)" \
+    -w "/\$(pwd | slugify)" \
+    -ti \
+    --entrypoint= \
+    $image \
+    $(printf -- "%s\n" "$command"))"
+elif yn "Allow access to host?"; then
+    # This is for commands such as 'dive'
+    zrepl \
+    -E "$(cmd-nice \
+    docker \
+    run \
+    --rm \
+    --privileged \
+    --network=host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "\$(pwd):/\$(pwd | slugify)" \
+    -w "/\$(pwd | slugify)" \
+    -ti \
+    --entrypoint= \
+    $image \
+    $(printf -- "%s\n" "$command"))"
+else
+    zrepl -E "docker run --rm -v \"\$(pwd):/\$(pwd | slugify)\" -w \"/\$(pwd | slugify)\" -ti --entrypoint= $image $(printf -- "%s\n" "$command")"
+fi
+
+# zrepl -E "docker run $image $(printf -- "%s\n" "$command" | bs '$')"
+
+# Consider adding this as a default argument
+# -v /var/run/docker.sock:/var/run/docker.sock
+
+# echo "zrepl -E $(aqf "docker run --rm -ti $image $command)")"

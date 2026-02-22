@@ -140,6 +140,15 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
       res)))
 (advice-add 'markdown--browse-url :around #'markdown--browse-url-around-advice)
 
+(defun md-tidytext-this-buffer ()
+  (interactive)
+  (let ((fp (get-path-nocreate))
+        (s (buffer-string)))
+    (if (derived-mode-p 'markdown-mode)
+        (etv (snc "glow -nc | tidytext" s))
+      ;; (nw-term (concat "glow " (pen-q (get-path-nocreate)) " | pen-mnm | vs"))
+      (message "not a markdown mode"))))
+
 (defun md-glow-this-buffer ()
   (interactive)
   (let ((fp (get-path-nocreate))
@@ -162,5 +171,8 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
     (s-replace-regexp ",.*" "" res)))
 (advice-add 'markdown-code-block-lang :around #'markdown-code-block-lang-around-advice)
 ;; (advice-remove 'markdown-code-block-lang #'markdown-code-block-lang-around-advice)
+
+;; (define-key markdown-mode-map (kbd "C-c TAB") 'markdown-insert-image)
+(define-key markdown-mode-map (kbd "C-c TAB") nil)
 
 (provide 'pen-markdown)

@@ -169,6 +169,10 @@
                
                (and (major-mode-enabled 'w3m-mode)
                     (w3m-url-encode-string-2 w3m-current-url))
+               (and (major-mode-enabled 'docker-image-mode)
+                    (pen-tablist-copy-first-cell-current-line))
+               (and (major-mode-enabled 'docker-container-mode)
+                    (pen-tablist-copy-first-cell-current-line))
                
 
                (and (major-mode-enabled 'eww-mode)
@@ -428,6 +432,53 @@ single-character strings, or a string of characters."
                 (kill-buffer pen-b)))
             r))
      code)))
+
+;; (defmacro pen-qa (&rest body)
+;;   ""
+;;   (let ((m
+;;          (pen-list2str (cl-loop for i from 0 to (- (length body) 1) by 2
+;;                                 collect
+;;                                 ;; (pp-oneline
+;;                                 ;;  (list
+;;                                 ;;   (try
+;;                                 ;;    (symbol-name
+;;                                 ;;     (nth i body))
+;;                                 ;;    (str
+;;                                 ;;     (nth i body)))
+;;                                 ;;   (nth (+ i 1) body)))
+;;                                 (concat
+;;                                  "["
+;;                                  (s-replace "-" ""
+;;                                             (try
+;;                                              (symbol-name
+;;                                               (nth i body))
+;;                                              (str
+;;                                               (nth i body))
+;;                                              (pps
+;;                                               (nth i body))))
+;;                                  "] "
+;;                                  (nth (+ i 1) body)))))
+;;         (code
+;;          (cl-loop for i from 0 to (- (length body) 1) by 2
+;;                   collect
+;;                   (let ((fstone (nth i body))
+;;                         (sndone (nth (+ i 1) body)))
+;;                     (list
+;;                      (string-to-char
+;;                       (string-reverse
+;;                        (symbol-name
+;;                         fstone)))
+;;                      sndone)))))
+;;     (append
+;;      `(case
+;;           (let ((r))
+;;             (save-window-excursion
+;;               (let ((pen-b (nbfs ,m)))
+;;                 (switch-to-buffer pen-b)
+;;                 (setq r (read-key ""))
+;;                 (kill-buffer pen-b)))
+;;             r))
+;;      code)))
 
 (defun pen-ask (thing &optional prompt)
   (interactive)

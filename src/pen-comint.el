@@ -44,7 +44,8 @@
 
    ((derived-mode-p 'eshell-mode)
 
-    (let ((comint-use-prompt-regexp t)
+    (let ((startpt (point))
+          (comint-use-prompt-regexp t)
           ;; Really need to derive this from scraping the line
           ;; (comint-prompt-regexp "^.*[»#\\$] ")
           ;; Don't use the backslash as a prompt marker.
@@ -52,7 +53,9 @@
           ;;  $PEN/documents/notes:master λ# sps o Music\ Data\ Base.xls
           (comint-prompt-regexp "^.*[»#$] "))
       ;; (call-interactively 'term-bol)
-      (call-interactively 'comint-bol))
+      (call-interactively 'comint-bol)
+      (if (eq startpt (point))
+          (beginning-of-line)))
 
     ;; (eshell-bol)
     )

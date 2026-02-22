@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+echo Welcome to alpine
+rc-status
+/etc/init.d/sshd start
+/etc/init.d/sshd restart
+
+
+command "$@"

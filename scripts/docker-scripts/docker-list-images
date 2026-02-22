@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -j) {
+        use_json=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$use_json" = "y"; then
+    real-docker image ls --format="{{json .}}" | pa -vs
+else
+    real-docker image ls --format="{{json .}}" | jq -r ".Repository + \":\" + .Tag" | grep -v "<none>" | uniqnosort | pa -vs
+fi

@@ -22,11 +22,13 @@
                                  helm-search-suggest-action-wikipedia-url
                                  candidate))
 
+                               candidate
                                ;; This does it
-                               (noop
-                                (wiki-summary candidate)
-                                ;; candidate
-                                )))
+                               ;; (noop
+                               ;;  (wiki-summary candidate)
+                               ;;  ;; candidate
+                               ;;  )
+                               ))
               ("Show summary in new buffer (C-RET)" . helm-wikipedia-show-summary))
     :persistent-action #'helm-wikipedia-persistent-action
     :persistent-help "show summary"
@@ -55,11 +57,17 @@
 (defun helm-wikipedia-suggest (&optional initial-input)
   "Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest."
   (interactive)
-  (let ((helm-input-idle-delay helm-wikipedia-input-idle-delay)) 
-    (helm :sources 'helm-source-wikipedia-suggest
-          :buffer "*helm wikipedia*"
-          :input initial-input
-          :input-idle-delay (max 0.4 helm-input-idle-delay)
-          :history 'helm-wikipedia-history)))
+  (let ((use-full-browser (>= (prefix-numeric-value current-prefix-arg) 4))
+        (result
+         (let ((helm-input-idle-delay helm-wikipedia-input-idle-delay)) 
+           (helm :sources 'helm-source-wikipedia-suggest
+                 :buffer "*helm wikipedia*"
+                 :input initial-input
+                 :input-idle-delay (max 0.4 helm-input-idle-delay)
+                 :history 'helm-wikipedia-history))))
+    (if result
+        (if use-full-browser
+            (engine/search-wikipedia result)
+          (wiki-summary result)))))
 
 (provide 'pen-wiki)

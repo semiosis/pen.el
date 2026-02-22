@@ -2404,3 +2404,4 @@ global-tags
 zig-mode
 zig-ts-mode
 embark
+bible-gateway

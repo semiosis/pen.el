@@ -106,6 +106,16 @@
         (pen-etv l)
       l)))
 
+(defun w3m-list-history ()
+  (interactive)
+  (let ((l (pen-snc "uniqnosort"
+               (pen-sed "s/^.*cache://"
+                        (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (pen-hg "w3m-goto-url"))
+                                   :chomp t)))))
+    (if (interactive-p)
+        (pen-etv l)
+      l)))
+
 (defun lg-fz-history ()
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -115,6 +125,19 @@
                 nil
                 nil
                 "eww history: ")))
+      (if url
+          ;; (lg-eww url)
+          (pen-smart-choose-browser-function url)))))
+
+(defun w3m-fz-history ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (pen-he "w3m-goto-url")
+    (let ((url (fz
+                (w3m-list-history)
+                nil
+                nil
+                "w3m history: ")))
       (if url
           ;; (lg-eww url)
           (pen-smart-choose-browser-function url)))))

@@ -207,6 +207,13 @@
   (cond
    ((derived-mode-p 'tabulated-list-mode)
     nil)
+
+   ;; Transients are fundamental-mode
+   ((local-variable-p 'is-transient-buffer)
+    nil)
+   ((derived-mode-p 'fundamental-mode)
+    nil)
+   
    ((derived-mode-p 'calibredb-search-mode)
     nil)
    ((derived-mode-p 'calc-mode)

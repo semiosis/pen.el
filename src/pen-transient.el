@@ -300,4 +300,48 @@ ARGLIST.  The infix arguments are usually accessed by using
 
 ;; (transient-toys-wave)
 
+;; This fixed the issue I was having.
+;; DONE Disable header line for transient mode
+;; Because otherwise I can't see the bindings.
+;; For example, with stopping a docker container with OO.
+;; Sadly, it seems to be broken again because the function is running too early.
+;; (defun around-advice--show-header-line-format (proc &rest args)
+;;   (let ((res (apply proc args)))
+;;     ;; (sleep 1)
+;;     ;; (tv header-line-format)
+;;     (tv (str major-mode))
+;;     ;; (setq header-line-format nil)
+;;     res))
+;; (advice-add 'transient-setup :around #'around-advice--show-header-line-format)
+;; (advice-remove 'transient-setup #'around-advice--show-header-line-format)
+;; Sadly, redisplay is not working either
+;; (advice-add 'transient--redisplay :around #'around-advice--show-header-line-format)
+;; (advice-remove 'transient--redisplay #'around-advice--show-header-line-format)
+;; And this is not working either
+;; (advice-add 'transient--show :around #'around-advice--show-header-line-format)
+;; (advice-remove 'transient--show #'around-advice--show-header-line-format)
+;; (advice-add 'transient--fit-window-to-buffer :around #'around-advice--show-header-line-format)
+;; (advice-remove 'transient--fit-window-to-buffer #'around-advice--show-header-line-format)
+;; HMMMM. j:transient--show seems to be setting header-line-format to nil, but it's not being respected
+
+;; This system nearly works to disable the header line in transient:
+;; It partially works.
+;; The check (local-variable-p 'is-transient-buffer) in j:ph--display-header
+;; works to make the header-line-format nil but doesn't work on initial
+;; display of the transient, but only on subsequent displays.
+;; So I need to combine with something else or find a better solution.
+;; Aha... I simply ban "fundamental-mode" from j:ph--display-header
+;; and that works to stop the header line from being shown in the transient.
+;; It seems that my setting of the is-transient-buffer variable happens too late
+;; in the process.
+;; But in banning the header line from fundamental-mode, I wonder what else this impacts...
+
+(defun transient-test-fun ()
+  (interactive)
+  (defset-local is-transient-buffer t)
+  ;; (call-interactively 'pen-etv-buffer-properties-json)
+  )
+
+(add-hook 'transient-setup-buffer-hook 'transient-test-fun)
+
 (provide 'pen-transient)

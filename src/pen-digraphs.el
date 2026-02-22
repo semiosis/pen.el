@@ -55,6 +55,10 @@
       digraph)))
 (defalias 'insert-digraph 'digraph-select)
 
+(defun digraph-table ()
+  (interactive)
+  (nbfs (snc "vimhelp digraph-table | cat") "*vimhelp digraph-table*"))
+
 (defun symbol-select (&optional filter)
   (interactive)
 

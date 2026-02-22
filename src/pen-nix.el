@@ -524,9 +524,9 @@ Be mindful of quoting arguments correctly."
 (defun eww-list-history ()
   (interactive)
   (let ((l (pen-bp uniqnosort (pen-sed "s/^.*cache://"
-                                   (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (hg "eww-display-html"))
+                                       (pen-cl-sn "uq -l | tac" :stdin (pen-list2str (hg "eww-display-html"))
                                       ;; (pen-sed "s/^.*cache://" (pen-list2str (hg "eww-display-html")))
-                                              :chomp t)))))
+                                                  :chomp t)))))
     (if (interactive-p)
         (etv l)
       l)))

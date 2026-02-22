@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-glow -nc "$@" | pavs
+echo Default setup

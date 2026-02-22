@@ -130,8 +130,8 @@ case "$interp" in
     }
     ;;
 
-    z-repl) {
-        # echo "#+BEGIN_SRC sh -n :interpreter \"tf sh | xa sps z-repl\" :async :results none"
+    zrepl) {
+        # echo "#+BEGIN_SRC sh -n :interpreter \"tf sh | xa sps zrepl\" :async :results none"
         echo "#+BEGIN_SRC sh -n :sps z-repl-fp :async :results none :lang text"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"

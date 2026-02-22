@@ -1004,6 +1004,7 @@
 (require 'pen-helpful)
 ;; Keybindings.
 (global-set-key (kbd "C-c h o") #'pen-describe-symbol)
+(global-set-key (kbd "C-c h t") #'digraph-table)
 (global-set-key (kbd "<help> o") #'pen-describe-symbol)
 (global-set-key (kbd "C-c h k") #'helpful-key)
 (global-set-key (kbd "<help> k") #'helpful-key)
@@ -1147,7 +1148,8 @@
 (define-key eww-mode-map (kbd "A") 'pen-add-to-glossary-file-for-buffer)
 
 (define-key eww-mode-map (kbd "e") 'eww-reader)
-(define-key global-map (kbd "H-e") 'lg-fz-history)
+;; (define-key global-map (kbd "H-e") 'lg-fz-history)
+(define-key global-map (kbd "H-e") 'pen-web-history)
 (define-key eww-mode-map (kbd "M-9") #'dict-word)
 (define-key eww-mode-map (kbd "m") #'toggle-use-chrome-locally)
 

@@ -160,6 +160,9 @@ list of (fn args) to pass to `apply''"
                (define-key eshell-hist-mode-map (kbd "<down>") nil)
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
+                ;; (define-key eshell-cmpl-mode-map (kbd "C-c TAB") 'pcomplete-expand-and-complete)
+               (define-key eshell-cmpl-mode-map (kbd "C-c TAB") nil)
+
                (define-key eshell-mode-map
                            (kbd "M-R") 'eshell-previous-matching-input))))
 
@@ -347,9 +350,44 @@ or an external command."
 	      (car args)
       (list (car args)))))
 
+;; Aliases for shell commands, so eshell prefers these to lisp functions
+(loop for c in '(cfind) do
+      (let ((cname (sym2str c))
+            (fname (str2sym (concat "eshell/" (sym2str c))))
+            (comment (concat "Alias to " "find" " shell command.")))
+        (eval
+         `(defun ,fname (&rest args)
+            ,comment
+            ;; Firstly, fix the arguments
+            (setq args (mapcar 'str args))
+
+            (pen-snc (apply 'cmd (cons ,cname args)))))))
+
+(loop for c in '(find) do
+      (let ((cname (sym2str c))
+            (fname (str2sym (concat "eshell/" (sym2str c))))
+            (comment (concat "Alias to " "find" " shell command.")))
+        (eval
+         `(defun ,fname (&rest args)
+            ,comment
+            ;; Firstly, fix the arguments
+            (setq args (mapcar 'str args))
+
+            (let ((results (sor (pen-snc (apply 'cmd (cons ,cname args))))))
+
+              (if results
+                  (insert
+                   (pen-q (fz results
+                              nil nil (format-prompt ,cname nil))))
+                (mesg "No results")))))))
+
 (defun eshell/command (&rest args)
   "Like the bash `command` function."
-  (pen-snc (eval `(cmd "command" ,@args))))
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+  
+  ;; (pen-snc (eval `(cmd "command" ,@args)))
+  (pen-snc (apply 'cmd (cons "command" args))))
 
 (defun eshell/slugify (&rest args)
   "Return the argument(s) as a single slug."
@@ -548,5 +586,32 @@ environment, as specified in `eshell-variable-aliases-list'."
 (defalias 'eshell/visual 'eshell-exec-visual)
 (defalias 'eshell/term 'eshell-exec-visual)
 (defalias 'eshell/vterm 'eshell-vterm-exec-visual)
+
+;; (define-key eshell-map (kbd "C-c TAB") nil)
+(define-key eshell-mode-map (kbd "M-a M-r") 'ranger)
+
+;; Because the eshell-bol function alternately goes to the beginning of line and the start of the prompt,
+;; I need to adjust this to ensure it gets the input string only from after the prompt
+(defun eshell-previous-matching-input-from-input (arg)
+  "Search backwards through input history for match for current input.
+\(Previous history elements are earlier commands.)
+With prefix argument N, search for Nth previous match.
+If N is negative, search forwards for the -Nth following match."
+  (interactive "p")
+  (if (not (memq last-command '(eshell-previous-matching-input-from-input
+				                eshell-next-matching-input-from-input)))
+      ;; Starting a new search
+      (setq eshell-matching-input-from-input-string
+	        (buffer-substring (save-excursion
+                                (eshell-bol)
+                                ;; My addition
+                                (if (bolp)
+                                    (eshell-bol))
+                                (point))
+			                  (point))
+	        eshell-history-index nil))
+  (eshell-previous-matching-input
+   (concat "^" (regexp-quote eshell-matching-input-from-input-string))
+   arg))
 
 (provide 'pen-eshell)

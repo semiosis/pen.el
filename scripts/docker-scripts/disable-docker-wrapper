@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+set -x
+
+cd $HOME/scripts
+
+ln -sf real-docker docker
+
+# test -f "docker" && { mv docker docker.bak; echo Done. 1>&2; } || echo "Already disabled." 1>&2

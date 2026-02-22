@@ -1,5 +1,11 @@
 (require 'gnu-apl-mode)
 
+(setq gnu-apl-show-apl-welcome nil)
+
+(define-key gnu-apl-interactive-mode-map (kbd "C-c C-k") nil)
+;; (define-key gnu-apl-interactive-mode-map (kbd "C-c TAB") 'gnu-apl-finnapl-list)
+(define-key gnu-apl-interactive-mode-map (kbd "C-c TAB") nil)
+
 ;; https://tryapl.org/
 ;; https://www.gnu.org/software/apl/apl-intro.html
 ;; https://www.gnu.org/software/apl/apl-intro.html#CH_3.3.3

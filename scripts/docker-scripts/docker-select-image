@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+docker-list-images | fzf -p docker-select-image -0 | pager -E "xc -i -"

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+dir="$1"
+
+: ${dir:="."}
+
+2>/dev/null find . -type f -name '.gitlab-ci.yml' -exec grep -oP "  image: .*" {} \; | sed 's/^  image: //' | sort | uniq | pa -vs
+
+# $MYGIT/fortescue-autonomy/environments/fatos/.gitlab-ci.yml

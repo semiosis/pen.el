@@ -18,11 +18,12 @@
 # alias mv='mv -i'
 . "$HOME/.cargo/env"
 
-. $PENEL_DIR/scripts/utils.sh
-
 unset EMACSD_BUILTIN
 test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
 export EMACSD_BUILTIN
+
+export PENELD="$EMACSD_BUILTIN/pen.el"
+. $EMACSD_BUILTIN/pen.el/scripts/utils.sh
 
 # posix compliant
 test_nonemptydir() {
@@ -101,7 +102,7 @@ fi
 {
 # Disable the bell
 if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
-} 2>&1
+} &>/dev/null
 
 # Expand the history size
 export HISTFILESIZE=10000
@@ -876,6 +877,9 @@ fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-if is_tty; then
-    set_terminal_title bash
+# This messes with emacs' shell-mode, so only run if in not in comint
+if ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',comint,'; then
+    if is_tty; then
+        set_terminal_title bash
+    fi
 fi

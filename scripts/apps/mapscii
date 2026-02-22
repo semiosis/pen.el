@@ -4,4 +4,17 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
-telnet mapscii.me
+if yn "Use telnet? y: telnet. n: docker" = "y"; then
+    telnet mapscii.me
+else
+    docker run --rm --privileged "--network=host" -v /var/run/docker.sock:/var/run/docker.sock -v "$(pwd):/$(pwd | slugify)" -w "/$(pwd | slugify)" -ti "--entrypoint=" defnotgustavom/mapscii:latest mapscii
+fi
+
+#     Key                 Action             
+# Arrow keys Scroll the map                 
+# a / z      Zoom in / out                  
+# c          Switch to block character mode 
+# q          Quit the application           
+# 
+# MapSCII also supports mouse dragging and scrolling for navigation
+# if your terminal has mouse event support.

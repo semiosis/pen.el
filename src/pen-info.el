@@ -203,6 +203,7 @@ orientation.  See `Info-nth-menu-item'.")
 
 (define-key Info-mode-map (kbd "w") 'Info-copy-current-node-name)
 (define-key Info-mode-map (kbd "w") 'org-info-copy-link)
+(define-key Info-mode-map (kbd "a") 'Info-search-next)
 
 
 (defun org-info-copy-link ()

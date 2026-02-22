@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git clone https://github.com/beakerbrowser/beaker.git
+cd beaker
+npm install
+npm run rebuild # see https://github.com/electron/electron/issues/5851

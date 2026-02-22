@@ -1,0 +1,3 @@
+FROM mkenney/npm:latest
+WORKDIR /root
+CMD ["/bin/sh"]

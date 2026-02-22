@@ -9,4 +9,4 @@ cd "$dp"
     for fn in *; do
         cat "$fn" | awk 1 | sed "s/^/$fn	/"
     done
-} | fz
+} | fz -p fz-select-filter-from-filterlists

@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+hub_url="$1"
+test -n "$hub_url" || exit 1
+
+url="$(
+{
+echo '<?xml version="1.0" encoding="utf-8"?>'
+echo '<html>'
+dom-dump -xml "$hub_url" | scrape "<a [^<]*</a>"
+echo '</html>'
+} | xmlstarlet sel -t -v "//*[@data-testid='sourceRepository']//@href"
+)"
+
+if test -n "$url"; then
+    p "$url" | pavs
+else
+    ns "source url for $(aqf "$hub_url") is empty"
+fi

@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+set -x
+
+cd $HOME/scripts
+
+ln -sf my-docker docker
+
+test -f "docker.bak" && { mv docker.bak docker; echo Done. 1>&2; } || echo "Already enabled." 1>&2
