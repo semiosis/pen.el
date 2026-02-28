@@ -20,4 +20,8 @@ case "$opt" in
     *)
 esac
 
-"$@"
+if test "$#" -eq 0; then
+    zsh
+else
+    "$@"
+fi

@@ -44,6 +44,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
                 export VANILLA=y
                 export NOEMACS=y
                 export NO_NVC=y
+                export NOCOLOR=y
             }
             ;;
 

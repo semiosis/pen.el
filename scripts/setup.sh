@@ -2498,8 +2498,7 @@ sudo apt install dictd dict-gcide
 # Simon's emacs plugin
 e ia org-wc
 
-update-rust
-cargo install --locked ttysvr
+update-rust && cargo install --locked ttysvr
 
 # The emacs version was working perfectly fine.
 # But whatever.
@@ -2892,3 +2891,5 @@ sudo apt-get install -y \
     libnss3-dev libnspr4-dev libglib2.0-dev
 
 e ia -r bible-gateway
+
+update-rust && cargo install tetro-tui

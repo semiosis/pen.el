@@ -1,6 +1,14 @@
 (require 'w3m)
 (require 'w3m-filter)
 
+;; This is a bit ugly and unnecessary.
+;; I prefer separate buffers anyway.
+(setq w3m-use-tab-line nil)
+;; Header line was also unnecessary because I have the regular hear line that contains the url
+(setq w3m-use-header-line nil)
+
+(setq w3m-use-header-line-title t)
+
 (setq w3m-session-crash-recovery nil)
 
 ;; This means I can have multiple unique w3ms
@@ -437,5 +445,79 @@ CHARSET is used to substitute the `charset' symbols specified in
 
 ;; (define-key w3m-mode-map (kbd "W") 'w3m-weather)
 (define-key w3m-mode-map (kbd "W") 'get-weather-report)
+
+;; Modify this so that arg can also be given to specify the filter.
+;; So arg has a double use.
+;; It could simply be the prefix or it could be a filter
+(defun w3m-toggle-filtering (arg)
+  "Toggle whether to modify html source by the filters before rendering.
+With prefix arg, prompt for a single filter to toggle (a function
+toggled last will first appear) with completion."
+  (interactive "P")
+  (if (not arg)
+      ;; toggle state for all filters
+      (progn
+        (setq w3m-use-filter (not w3m-use-filter))
+        (message (concat
+                  "web page filtering now "
+                  (if w3m-use-filter "enabled" "disabled"))))
+    ;; the remainder of this function if for the case of toggling
+    ;; an individual filter
+    (let* ((selection-list (delq nil (mapcar
+                                      (lambda (elem)
+                                        (when (and (symbolp (nth 3 elem))
+                                                   (fboundp (nth 3 elem)))
+                                          (symbol-name (nth 3 elem))))
+                                      w3m-filter-configuration)))
+           (choice
+            (let ((e (-elem-index arg selection-list)))
+              (if e
+                  arg
+                (completing-read
+                 "Enter filter name: " selection-list nil t
+                 (or (car w3m-filter-selection-history)
+                     (car selection-list))
+                 'w3m-filter-selection-history))))
+           (filters w3m-filter-configuration)
+           elem
+           val)
+      (unless (string= "" choice)
+        (setq choice (intern choice))
+        (while (setq elem (pop filters))
+          (when (eq choice (nth 3 elem))
+            (setq filters nil)
+            (setcar elem (not (car elem)))
+            (when (car elem)
+              (setq w3m-use-filter t))
+            (message "filter `%s' now %s"
+                     choice
+                     (if (car elem) "enabled" "disabled"))
+            (setq val (car elem)))))
+      val)))
+
+(defun w3m-filter-enabled-p (f &optional do-msg)
+  (let ((filters w3m-filter-configuration)
+        elem
+        val)
+    (while (setq elem (pop filters))
+      (when (eq (intern f) (nth 3 elem))
+        (setq filters nil)
+        ;; (setcar elem (not (car elem)))
+        ;; (when (car elem)
+        ;;   (setq w3m-use-filter t))
+        (if do-msg
+            (message "filter `%s' now %s"
+                     f
+                     (if (car elem) "enabled" "disabled")))
+        (setq val (car elem))))
+    val))
+
+(defun w3m-toggle-rdrview ()
+  (interactive)
+  (w3m-toggle-filtering "w3m-filter-rdrview")
+  (w3m-reload-this-page)
+  (w3m-filter-enabled-p "w3m-filter-rdrview" t))
+
+(define-key w3m-mode-map (kbd "C-c C-d") 'w3m-toggle-rdrview)
 
 (provide 'pen-w3m)

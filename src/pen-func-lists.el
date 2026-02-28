@@ -77,6 +77,7 @@
 (defset bible-mode-funcs '(apropos-variable
                            bible-mode-fast-toggle
                            bible-mode-cross-references
+                           bible-mode-cross-references-ext
                            bible-mode-split-display
                            bible-random-verse-ref
                            nicene-creed

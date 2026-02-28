@@ -48,7 +48,7 @@ result="$(
         if test "$#" -eq 0; then
             set -- -q "'${initial_input}" "$@"
         fi
-        pen-fzf "$@" | cat
+        pen-fzf -p "Run program" "$@" | cat
     else
         /usr/local/bin/slmenu $LINES "$@"
     fi

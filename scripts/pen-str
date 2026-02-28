@@ -362,7 +362,8 @@ case "$f" in
     ;;
 
     remove-starting-and-trailing-whitespace) {
-        sed -e 's/^\s*//' -e 's/\s*$//'
+        sed -e 's/^ *//' -e 's/ *$//' |
+            sed -e 's/^\s*//' -e 's/\s*$//'
     }
     ;;
 

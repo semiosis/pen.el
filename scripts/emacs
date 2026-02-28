@@ -7,4 +7,9 @@ export TMPDIR=/tmp
 
 # . $SCRIPTS/lib/hs
 
-/usr/local/bin/emacs "$@"
+: "${NOCOLOR:=""}"
+if test "$NOCOLOR" = "y"; then
+    /usr/local/bin/emacs --color=never "$@"
+else
+    /usr/local/bin/emacs "$@"
+fi

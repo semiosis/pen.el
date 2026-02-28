@@ -44,12 +44,51 @@
 
 (advice-add 'wiki-summary/format-summary-in-buffer :after 'wiki-summary-after-advice)
 
+(defun wiki-summary-synchronous (s)
+  (interactive
+   (list
+    (read-string (concat
+                  "Wikipedia Article"
+                  (if (thing-at-point 'word)
+                      (concat " (" (thing-at-point 'word) ")")
+                    "")
+                  ": ")
+                 nil
+                 nil
+                 (thing-at-point 'word))))
+
+  ;; synchronous version of j:wiki-summary
+  (save-excursion
+    (with-current-buffer
+        (with-current-buffer
+            (url-retrieve-synchronously (wiki-summary/make-api-query s) t t 5)
+
+          (message "")                  ; Clear the annoying minibuffer display
+          (goto-char url-http-end-of-headers)
+          (let ((json-object-type 'plist)
+                (json-key-type 'symbol)
+                (json-array-type 'vector))
+            (let* ((result (json-read))
+                   (summary (wiki-summary/extract-summary result)))
+              (if (not summary)
+                  (message "No article found")
+                (wiki-summary/format-summary-in-buffer summary)))))
+      
+      ;; (tv (buffer-string))
+      (with-writable-buffer
+       (beginning-of-buffer)
+       (org-link-minor-mode 1)
+       ;; (insert-button (format "[[pen-wiki-summary:%s][%s]]\n\n" s s))
+       (insert (format "Wikipedia summary for [[pen-wiki-summary:%s][%s]]:\n\n" s s))))))
+
+(defalias 'pen-wiki-summary 'wiki-summary-synchronous)
+
 (defun wikipedia-search (initial-input)
   (interactive (list (sor (pen-selected-text t))))
   (if (>= (prefix-numeric-value current-global-prefix-arg) 4)
       (if initial-input
           (wiki-summary initial-input)
-        (call-interactively 'wiki-summary))
+        (call-interactively 'pen-wiki-summary))
     (if initial-input
         (helm-wikipedia-suggest initial-input)
       (call-interactively 'helm-wikipedia-suggest))))
@@ -68,6 +107,6 @@
     (if result
         (if use-full-browser
             (engine/search-wikipedia result)
-          (wiki-summary result)))))
+          (pen-wiki-summary result)))))
 
 (provide 'pen-wiki)

@@ -1542,7 +1542,20 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
   (let ((link (concat "https://www.openbible.info/labs/cross-references/search?q=" (urlencode (openbible-canonicalise-ref ref)))))
     (message "%s" (concat "Visiting: " link))
-    (eww link)))
+    ;; (browse-url link)
+    (let ((xrefs (list2str (scrape-bible-references (curl link t)))))
+      (if (sor xrefs)
+          (let ((b (nbfo
+                    (concat
+                     "OpenBible cross references:\n\n"
+                     ref "\n"
+                     xrefs))))
+            (with-current-buffer b
+              (org-verse-mode)
+              (setq buffer-read-only t)
+              (rename-buffer (format "*%s crossreferences*" ref) t))
+            b)
+        (message "No cross references for %s" ref)))))
 
 (defun bible-mode-cross-references (ref)
   (interactive (list

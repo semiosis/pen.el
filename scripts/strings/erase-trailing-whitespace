@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-sed -e 's/\s*$//'
+sed -e 's/ *$//' -e 's/\s*$//'

@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# test -f $HOME/.cargo/bin/strace-tui || cargo-quickinstall "strace-tui" &>/dev/null
+test -f $HOME/.cargo/bin/strace-tui || (
+    cd "$(gc "https://github.com/Rodrigodd/strace-tui")"
+    cargo install strace-tui
+) &>/dev/null
+
+$HOME/.cargo/bin/strace-tui "$@"

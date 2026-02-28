@@ -795,6 +795,44 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'w3m-arrived-anchor bg)
     (set-face-background 'w3m-arrived-anchor fg)
 
+
+    (set-face-foreground 'w3m-tab-background "#333333")
+    (set-face-background 'w3m-tab-background
+                         ;; (face-background 'header-line)
+                         "#222244")
+    (set-face-foreground 'w3m-tab-selected
+                         ;; "#7777ff"
+                         ;; "#ffffff"
+                         "#000000")
+    (set-face-background 'w3m-tab-selected
+                         ;; "#222244"
+                         "#444477")
+
+    (comment
+     (set-face-foreground 'w3m-tab-mouse "#222222")
+     (set-face-background 'w3m-tab-mouse "#777777")
+     (set-face-foreground 'w3m-tab-background "#333333")
+     (set-face-background 'w3m-tab-background
+                          ;; (face-background 'header-line)
+                          "#222244")
+     (set-face-foreground 'w3m-tab-selected
+                          ;; "#7777ff"
+                          ;; "#ffffff"
+                          "#000000")
+     (set-face-background 'w3m-tab-selected
+                          ;; "#222244"
+                          "#444477")
+     (set-face-foreground 'w3m-tab-selected-background "#222222")
+     (set-face-background 'w3m-tab-selected-background "#777777")
+     (set-face-foreground 'w3m-tab-selected-retrieving "#222222")
+     (set-face-background 'w3m-tab-selected-retrieving "#777777")
+     (set-face-foreground 'w3m-tab-unselected "#222222")
+     (set-face-background 'w3m-tab-unselected "#777777")
+     (set-face-foreground 'w3m-tab-unselected-retrieving "#222222")
+     (set-face-background 'w3m-tab-unselected-retrieving "#777777")
+     (set-face-foreground 'w3m-tab-unselected-unseen "#222222")
+     (set-face-background 'w3m-tab-unselected-unseen "#777777"))
+
     (set-face-background 'w3m-image-anchor "#440000")
     
     (set-face-foreground 'w3m-bold "#bbbbbb")

@@ -318,6 +318,8 @@
         :rename-symbol '(lsp-rename cljr-rename-symbol)
         :references '(lsp-ui-peek-find-references lsp-find-references pen-counsel-ag-thing-at-point)
         :projectfile '()
+        :accessories '(bible-mode-cross-references
+                       bible-mode-cross-references-ext)
         :preverr '()
         :nexterr '()
 
@@ -583,7 +585,8 @@
                    w3m-history)
         :docs '(wordnut-lookup-current-word)
         :accessories '(rdrview
-                       w3m-history)
+                       w3m-history
+                       w3m-toggle-rdrview)
         :summarise '(rdrview)
         :prevhist '(w3m-view-previous-page)
         :nexthist '(w3m-view-next-page))

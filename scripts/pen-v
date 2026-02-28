@@ -51,8 +51,8 @@ esac
 
 fargs=()
 
-NOCOLOR=
-: ${NOAUTOCHDIR:=""}
+: "${NOCOLOR:=""}"
+: "${NOAUTOCHDIR:=""}"
 LOCATE_IT=
 GLOBAL_SYNTAX_HIGHLIGHTING=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in

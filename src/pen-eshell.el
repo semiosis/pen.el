@@ -15,6 +15,9 @@
 (require 'eshell-did-you-mean)
 (require 'eshell-bookmark)
 
+;; https://www.howardism.org/Technical/Emacs/eshell-fun.html
+;; https://www.masteringemacs.org/article/complete-guide-mastering-eshell
+
 (setq epe-fish-path-max-len 40)
 
 (setq eshell-visual-commands
@@ -613,5 +616,8 @@ If N is negative, search forwards for the -Nth following match."
   (eshell-previous-matching-input
    (concat "^" (regexp-quote eshell-matching-input-from-input-string))
    arg))
+
+;; Where to put this?
+;; (add-to-list 'eshell-modules-list 'eshell-smart)
 
 (provide 'pen-eshell)

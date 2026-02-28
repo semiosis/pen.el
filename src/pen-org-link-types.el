@@ -394,6 +394,11 @@ PATH is the sexp to evaluate, as a string."
   "Run v `pattern'."
   (pen-sps (concat "vs " (pen-q pattern))))
 
+;; (org-add-link-type "wiki-summary" 'pen-follow-wiki-summary-link)
+;; (defun pen-follow-wiki-summary-link (pattern)
+;;   "Run wiki-summary `pattern'."
+;;   (wiki-summary pattern))
+
 (org-add-link-type "sp" 'pen-follow-sp-link)
 (defun pen-follow-sp-link (pattern)
   "Run sp `pattern'."
