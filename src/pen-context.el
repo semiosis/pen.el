@@ -98,7 +98,8 @@
         (((button-at (point)))
          (button-show-properties-here))
         (((bible-verse-ref-at-point-p))
-         (bible-verse-at-point-tpop))
+         (bible-verse-at-point-tpop
+          bible-verse-menu-at-point-tpop))
         (((widget-at (point)))
          (pen-widget-get-value-at-point
           pen-widget-show-keymap-at-point))

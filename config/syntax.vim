@@ -1124,6 +1124,7 @@ fun! BWSyntax()
         hi unknownword cterm=NONE ctermfg=NONE ctermbg=NONE
         hi sensing3d cterm=NONE ctermfg=NONE ctermbg=NONE
         hi diffRemove cterm=NONE ctermfg=NONE ctermbg=NONE
+        " hi diffRemove term=reverse ctermfg=Black ctermbg=White guibg=White
         hi def link shOptionGeneral Special
         hi shOptionNum cterm=NONE ctermfg=NONE ctermbg=NONE
         hi gcc ctermfg=NONE ctermbg=NONE
@@ -1137,7 +1138,8 @@ fun! BWSyntax()
         hi hlgreen cterm=NONE ctermfg=NONE ctermbg=NONE
         hi hlpurple cterm=NONE ctermfg=NONE ctermbg=NONE
         hi asteriskoperator ctermbg=NONE ctermfg=NONE
-        hi diffAdd cterm=NONE ctermfg=NONE ctermbg=NONE
+        " hi diffAdd cterm=NONE ctermfg=NONE ctermbg=NONE
+        hi diffAdd term=reverse ctermfg=Black ctermbg=White guibg=White
         hi gitbranch cterm=NONE ctermfg=NONE ctermbg=NONE
         hi brightoperator2 cterm=NONE ctermbg=NONE ctermfg=NONE
         hi brightoperator3 cterm=NONE ctermbg=NONE ctermfg=NONE
@@ -1229,7 +1231,7 @@ fun! BWSyntax()
         hi ircname cterm=NONE ctermfg=NONE ctermbg=NONE " this looks the same as irc names, and is the superset, so i disabled the syntax just above
         hi liesel cterm=NONE ctermfg=NONE ctermbg=NONE
 
-        " Use term=reverse for "v -2" which uses screet-2color
+        " Use term=reverse for "v -2" which uses screen-2color
 
         " the bg is specified as white because the pen-bw xterm is inverted
         hi EasyMotionTarget term=reverse ctermfg=Black ctermbg=White guibg=White

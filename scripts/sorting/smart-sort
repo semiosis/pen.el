@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# Sort based on the detected pattern in the first entry
+
+match \
+    "$(c sed -n 1p | grep -q dog)" "$(c pen-c lc)" \
+    "$(c sed -n 1p | grep -q cat)" "$(c pen-c uc)"

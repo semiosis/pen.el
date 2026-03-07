@@ -1,0 +1,15 @@
+bcat() {
+    __=""
+    _stdin=""
+
+    read -N1 -t1 __  && {
+      (( $? <= 128 ))  && {
+        IFS= read -rd '' _stdin
+        _stdin="$__$_stdin"
+      }
+    }
+
+    printf -- "%s" "${_stdin}"
+
+    return 0
+}

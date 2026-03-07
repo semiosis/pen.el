@@ -1032,7 +1032,7 @@ case "$f" in
     running) { # test running
         # : "${SOCKET:="DEFAULT"}"
         if [ -n "$SOCKET" ]; then
-            running_matching_workers="$(ps -ef |grep "emacs --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
+            running_matching_workers="$(ps -ef |grep -P "emacs .* --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
             test -n "$running_matching_workers"
 
             # $EMACSCLIENT_BIN -a false -e 't' -s $SOCKET &>/dev/null
@@ -1331,7 +1331,7 @@ case "$f" in
         pen-e running
         ret="$?"
         if ! test "$ret" = 0; then
-            running_matching_workers="$(ps -ef |grep "emacs --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
+            running_matching_workers="$(ps -ef |grep -P "emacs .* --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
             if test "$NO_AUTO_START" = "y"; then
                 echo "$SOCKET not started yet. Not starting worker." 1>&2
                 exit "$ret"

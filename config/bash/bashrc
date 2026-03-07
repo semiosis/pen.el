@@ -878,8 +878,11 @@ fi
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
 # This messes with emacs' shell-mode, so only run if in not in comint
-if ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',comint,'; then
+# ',comint' works for shell-mode. I had it as ',comint,' but then I checked the
+# environment variable and in this case it had nothing after it
+if ! printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',comint'; then
     if is_tty; then
         set_terminal_title bash
     fi
+    # env | tv &>/dev/null
 fi

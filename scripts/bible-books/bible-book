@@ -79,7 +79,7 @@ maybe_version="$(cmd-nice "$book" "$@" | bible-get-module-from-ref -df "$version
 # Remove quotes (don't use cmd)
 
 # Hebrews 12:5–6
-ascified_args="$(printf -- "%s\n" "$@" | wrlp c ascify | q -l -f | s join)"
+ascified_args="$(printf -- "%s\n" "$@" | wrlp pen-c ascify | q -l -f | s join)"
 ref="\"$book\" $ascified_args"
 ref="$(eval "cmd-nice $ref")"
 

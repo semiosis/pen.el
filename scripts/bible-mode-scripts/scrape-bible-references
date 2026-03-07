@@ -61,7 +61,7 @@ esac; done
 
 # Thankfully there is a multiple of 10 number of books
 
-input_fp="$(cat | c ascify | tf txt)"
+input_fp="$(cat | pen-c ascify | tf txt)"
 # spinner-start "$sn"
 
 # I need to list all the many different possible book

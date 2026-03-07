@@ -59,6 +59,12 @@ case "$sn" in
     }
     ;;
 
+    eapl) {
+        ic=gnu-apl
+        export ONLY_WINDOW=y
+    }
+    ;;
+
     emount) {
         ic=list-fs
         export ONLY_WINDOW=y

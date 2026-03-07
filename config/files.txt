@@ -351,3 +351,4 @@ $PENELD/config/visidatarc
 /root/.emacs.d/eshell/alias
 $PENCONF/ascii-adventures/todo.org
 ~/.emacs.d/calc.el
+/root/.pen/.apl.history

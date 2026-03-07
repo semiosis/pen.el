@@ -199,14 +199,20 @@ PATH is the sexp to evaluate, as a string."
 
 (org-add-link-type "pa" 'follow-pa-link)
 (defun follow-pa-link (cmd)
-  "Run `pa' with CMD as argument."
+  "Go to package."
   ;; (pen-goto-package-all (intern (str cmd)))
   (pen-goto-package-all (str cmd)))
 
-(org-add-link-type "pa" 'follow-pa-link)
-(defun follow-pa-link (cmd)
+(org-add-link-type "pavs" 'follow-pa-link)
+(defun follow-pavs-link (cmd)
   "Run `pa' with CMD as argument."
   (pen-sps (concat cmd " | pa -vs")))
+
+;; Function help
+(org-add-link-type "f" 'follow-fh-link)
+(org-add-link-type "fh" 'follow-fh-link)
+(defun follow-fh-link (cmd)
+  (helpful-symbol (str2sym cmd)))
 
 (org-add-link-type "cmd" 'follow-cmd-link)
 (defun follow-cmd-link (cmd)
@@ -327,9 +333,15 @@ PATH is the sexp to evaluate, as a string."
   ;; (pen-sn (concat "chrome " (pen-q pattern)))
   (chrome pattern))
 
-(org-add-link-type "R" 'pen-follow-ranger-link)
+(org-add-link-type "r" 'pen-follow-ranger-link)
 (org-add-link-type "ranger" 'pen-follow-ranger-link)
 (defun pen-follow-ranger-link (pattern)
+  "Run r `pattern'."
+  (ranger pattern))
+
+(org-add-link-type "R" 'pen-follow-sh/ranger-link)
+(org-add-link-type "sh/ranger" 'pen-follow-sh/ranger-link)
+(defun pen-follow-sh/ranger-link (pattern)
   "Run r `pattern'."
   (pen-sps (concat "ranger " (pen-q pattern))))
 

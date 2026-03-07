@@ -54,6 +54,16 @@
                 (setq interprogram-cut-function 'xsel-cut-function)
                 (setq interprogram-paste-function 'xsel-paste-function))))
 
+;; This fixes an issue where there was an error copying the mode with mx:parent-modes
+;; while inside of w3m-mode browsing an ftp server with w3m. i.e. the default directory
+;; had an ftp address
+(defun xsel-cut-function-around-advice (proc &rest args)
+  (let ((default-directory "/"))
+    (let ((res (apply proc args)))
+      res)))
+(advice-add 'xsel-cut-function :around #'xsel-cut-function-around-advice)
+;; (advice-remove 'xsel-cut-function #'xsel-cut-function-around-advice)
+
 (advice-add 'gui-get-primary-selection :around #'ignore-errors-around-advice)
 (advice-add 'insert-for-yank :around #'ignore-errors-around-advice)
 

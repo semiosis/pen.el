@@ -2667,6 +2667,7 @@ May use to generate code from comments."
 (require 'pen-haskell)
 ;; (require 'pen-haskell-emacs-interop)
 (require 'pen-browser)
+(require 'pen-unicode)
 (require 'pen-trace)
 (require 'pen-modifications)
 (require 'pen-function-dev)

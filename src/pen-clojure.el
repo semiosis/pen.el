@@ -902,4 +902,6 @@ Also checks whether a matching session already exists."
         `("nREPL server is up, CIDER REPL is online!"
           "May your functions be pure, your code concise and your programs a joy to behold!"))
 
+(defalias 'char-at-point 'clojure-char-at-point)
+
 (provide 'pen-clojure)

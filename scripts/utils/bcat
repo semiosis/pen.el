@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/bcat
+
+# Cat stdin->stdout in pure bash
+# https://stackoverflow.com/questions/212965/how-to-read-mutliline-input-from-stdin-into-variable-and-how-to-print-one-out-in
+
+bcat "$@"

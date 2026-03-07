@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+path="$1"
+test -n "$path" || exit 1
+path="/ftp:anonymous@$path:/"
+
+pen-e -D DEFAULT -e "(ranger $(cmd-nice "$path"))"
+# cmd pen-e -D DEFAULT -e "(ranger $(cmd-nice "$path"))"
+

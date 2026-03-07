@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# https://github.com/birchb1024/frangipanni
+
+# sudo find /etc | frangipanni -separators -no-fold
+# sudo find /etc | frangipanni -separators -no-fold -indent 1
+# sudo find /etc | frangipanni -no-fold -indent 1
+# sudo find /etc | frangipanni -indent 1
+
+# frangipanni -indent 1
+
+# TODO Convert the prefix into spaces
+# The prefix size
+# is  encoded as a single printable character: 0-9
+# represent 0-9, A-Z represent 10-35, and a-z rep‐
+# resent 36-61.
+
+sq | while read line; do
+    printf -- "%s\n" "$line"
+done

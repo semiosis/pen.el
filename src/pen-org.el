@@ -1034,4 +1034,6 @@ The table is taken from the parameter TXT, or from the buffer at point."
         (org-open-at-point arg))
     (org-open-at-point arg)))
 
+(define-key org-mode-map (kbd "C-c C-k") nil)
+
 (provide 'pen-org)

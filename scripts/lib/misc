@@ -1,0 +1,33 @@
+#!/bin/bash
+
+. $SCRIPTS/lib/bcat
+
+# https://stackoverflow.com/questions/509211/how-slicing-in-python-works
+
+# substring = s[start : end : step]
+slice() {
+    input="$(bcat)"
+    start="$1"
+    : "${start:="1"}"
+    end="$2"
+    s_len="${#input}"
+    : "${end:="$s_len"}"
+    step="$3"
+    : "${step:="1"}"
+
+    printf -- "%s" "$input" | head -c "$end" | tail -c "+${start}" | {
+        if test "$step" -gt 1; then
+            sed 's/./&\n/g' | sed -n "1~${step}p"
+        else
+            bcat
+        fi
+    } | {
+        if test "$step" -lt 0; then
+            rev
+        else
+            bcat
+        fi
+    }
+
+    return 0
+}

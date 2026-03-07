@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+opts=
+
+extra_commands="silent! echom"
+if test "$BLACK_AND_WHITE" = y || pen-rc-test -f black_and_white; then
+    # Do this especially if INSIDE_EMACS
+    export TERM=screen-2color
+    extra_commands+="|call BWSyntax()"
+fi
+
+CMD="$(cmd "$@")"
+
+bin=/usr/local/bin/vimdiff
+
+cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
+
+vimevalcmd() {
+    cmd="$1"
+
+    # debug
+    # echo "$cmd" | hls darkteal nearblack 1>&2
+
+    eval "$cmd"
+}
+
+vimevalcmd "$bin $cmd $w"

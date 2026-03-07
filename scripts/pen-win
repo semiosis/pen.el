@@ -459,7 +459,7 @@ EOF
 
         convert "$tf_image" -scale "300%" "$scaled_image"
         tesseract "$scaled_image" stdout -l eng -psm 3 > "${tf_image}.txt"
-        cat "${tf_image}.txt" | remove-leading-and-trailing-spaces.sh | remove-leading-and-trailing-newlines.sh | chomp | c ascify | xc -i
+        cat "${tf_image}.txt" | remove-leading-and-trailing-spaces.sh | remove-leading-and-trailing-newlines.sh | chomp | pen-c ascify | xc -i
 
         a beep
 
@@ -500,7 +500,7 @@ EOF
         if ! test -s "$tf_image"; then rm "$tf_image"; fi
 
         convert "$tf_image" -scale 300% "$scaled_image"
-        tesseract "$scaled_image" stdout -l eng -psm 3 | c ascify > "${tf_image}.txt"
+        tesseract "$scaled_image" stdout -l eng -psm 3 | pen-c ascify > "${tf_image}.txt"
 
         if ! test -s "${tf_image}.txt"; then rm "${tf_image}.txt"; fi
 

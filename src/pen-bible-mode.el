@@ -2494,6 +2494,22 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive)
   (bible-mode-tpop (bible-verse-ref-at-point-p)))
 
+;; I want to be able to choose what to do with a verse reference
+;; e.g. bring up cross references
+(defun bible-verse-menu-at-point-tpop ()
+  (interactive)
+  ;; For the time being, just use fzf
+  (let* ((ref (bible-verse-ref-at-point-p))
+         ;; It would be nicer to expand the list of verses,
+         ;; rather than simply try to get the first one
+         (ref (s-replace-regexp "[-,].*" "" ref))
+         (command
+          (fz '(bible-mode-cross-references
+                bible-mode-cross-references-ext)
+              nil nil (concat ref ":"))))
+    (if (sor command)
+        (apply (intern command) (list (bible-verse-ref-at-point-p))))))
+
 (defun fz-ddgr-bibleverse (query)
   (interactive (list (read-string-hist "fz-ddgr-bibleverse: ")))
 

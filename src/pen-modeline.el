@@ -38,6 +38,10 @@
                  mode-line-buffer-identification "   "
                  "  " mode-line-modes)
                 ;; ,(pen-workers-modeline)
+                ;; "  kb:"
+                ;; I don't know why this doesn't show
+                ;; (:eval default-input-method)
+                ;; (:eval current-input-method)
                 ))
 
 (defun pen-modeline-progressbar-demo (&optional duration)

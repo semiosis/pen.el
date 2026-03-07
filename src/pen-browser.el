@@ -150,7 +150,8 @@
   (lg-eww url))
 
 (defun reopen-in (br)
-  (interactive (list (fz '(eww w3m browsh))))
+  (interactive (list (fz '(eww w3m browsh carbonyl rdrview
+                               pen-emacs-browse))))
   (let ((url (get-path nil t)))
     ;;; I think this did infinite loop. Fix. Maybe use pcase
     (pcase br
@@ -158,6 +159,8 @@
       ('w3m (w3m url))
       ('browsh (browsh url))
       ('carbonyl (carbonyl url))
+      ('rdrview (rdrview url))
+      ('pen-emacs-web-browse (pen-emacs-web-browse url))
       (_ nil))))
 
 (defun reopen-in-eww ()
@@ -175,5 +178,13 @@
 (defun reopen-in-carbonyl ()
   (interactive)
   (reopen-in 'carbonyl))
+
+(defun reopen-in-rdrview ()
+  (interactive)
+  (reopen-in 'rdrview))
+
+(defun reopen-in-pen-emacs-web-browse ()
+  (interactive)
+  (reopen-in 'pen-emacs-web-browse))
 
 (provide 'pen-browser)

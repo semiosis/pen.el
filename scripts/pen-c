@@ -60,7 +60,7 @@ case "$opt" in
          -e "s/[‘’]/'/g" \
          -e "s/[−–—­]/-/g" |
          deunicode | unicode-to-ascii
-         # c strip-unicode || ns "c strip-unicode probably failed"
+         # pen-c strip-unicode || ns "pen-c strip-unicode probably failed"
     } ;;
 
     anum|alphanum|alphanumeric) {

@@ -1,3 +1,5 @@
+;; pa:pen-hyperstack
+
 ;; Make something like Ray's Maze (AMOT) Inside of emacs
 ;; Hmm. I have no idea how I'm going to design this.
 

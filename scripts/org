@@ -46,7 +46,7 @@ case "$opt" in
 
     # To debug it:
     # upd ci web title "https://www.youtube.com/watch?v=RKelBDsTae4"
-    # upd wget -qO- "https://www.youtube.com/watch?v=RKelBDsTae4" | scrape-title-from-html | recode html.. | c ascify
+    # upd wget -qO- "https://www.youtube.com/watch?v=RKelBDsTae4" | scrape-title-from-html | recode html.. | pen-c ascify
 
     clink|create-link) {
         GOOGLE_LINK=n
@@ -114,7 +114,7 @@ case "$opt" in
                 if test -n "$time"; then
                     time="$(humantime "$time")"
                 fi
-                title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
+                title="$(get_link "$uri" | pen-c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
                 if [ -z "$title" ]; then
                     title="$(p "$uri" | sed 's/^https\?:\/\///')"
                 fi

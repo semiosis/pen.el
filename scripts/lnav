@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+bin=/usr/bin/lnav
+
+test -f "$bin" || agi lnav &>/dev/null
+
+"$bin" "$@"

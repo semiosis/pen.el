@@ -15,6 +15,7 @@ rosiecmd=("$bin" -f $MYGIT/rosie-pattern-language/rosie/rpl/all.rpl \
         -f $MYGIT/rosie-pattern-language/rosie/rpl/net.rpl \
         -f $MYGIT/rosie-pattern-language/rosie/rpl/date.rpl \
         -f $MYGIT/rosie-pattern-language/rosie/rpl/csv.rpl \
+        -f $MYGIT/rosie-pattern-language/rosie/rpl/num.rpl \
         -f $MYGIT/rosie-pattern-language/rosie/rpl/json.rpl \
         "$@")
 

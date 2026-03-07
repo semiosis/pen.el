@@ -12,4 +12,4 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp debug oc" rosie-urls
+grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp debug oc 2>/dev/null" rosie-urls

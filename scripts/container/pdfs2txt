@@ -19,7 +19,7 @@ find . -iname '*.pdf' | awk 1 | while IFS=$'\n' read -r fp; do
         mant="${fn%.*}"
         
         if ! test -f "${mant}.txt" || ! test -s "${mant}.txt"; then
-            pdf2txt "$fn" | c ascify | sed "/^[. ]\+$/d" | max-double-spaced-no-trailing > "${mant}.txt"
+            pdf2txt "$fn" | pen-c ascify | sed "/^[. ]\+$/d" | max-double-spaced-no-trailing > "${mant}.txt"
         fi
     )
 )

@@ -3,5 +3,22 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+bin=/usr/bin/apl
+
+change_apl_history_path_to() {
+    fp="$1"
+    prefs_dir="$("$bin" --show_etc_dir)/gnu-apl.d/"
+    prefs_file="$prefs_dir/preferences"
+
+    if test -d "$prefs_dir" && test -f "$prefs_file"; then
+        sed -i "s~^READLINE_HISTORY_PATH .*~READLINE_HISTORY_PATH $fp~" "$prefs_file"
+    fi
+}
+change_apl_history_path_to /root/.pen/.apl.history
+
+reset_apl_history_path_to_same_dir() {
+    change_apl_history_path_to .apl.history
+}
+
 # nvc /usr/bin/apl "$@"
-/usr/bin/apl "$@"
+"$bin" "$@"

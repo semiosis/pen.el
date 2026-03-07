@@ -40,4 +40,13 @@
          (dired--find-possibly-alternative-file path)))
       (_ (dired--find-possibly-alternative-file path)))))
 
+(defun ftp-around-advice (proc host)
+  ;; Need the domain name only
+  (setq host (s-replace-regexp "^ftp://" "" host))
+  (setq host (s-replace-regexp "/$" "" host))
+  (let ((res (apply proc (list host))))
+    res))
+(advice-add 'ftp :around #'ftp-around-advice)
+;; (advice-remove 'ftp #'ftp-around-advice)
+
 (provide 'pen-ftp)

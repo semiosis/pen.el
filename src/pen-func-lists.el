@@ -109,6 +109,8 @@
                          reopen-in-eww
                          reopen-in-browsh
                          reopen-in-carbonyl
+                         reopen-in-rdrview
+                         reopen-in-pen-emacs-web-browse
                          rdrview))
 (defset eshell-mode-funcs '(ranger
                             pcomplete-expand-and-complete))
@@ -200,6 +202,7 @@
   (list
    'pen-org-add-tag
    'org-toggle-link-display
+   'org-kill-note-or-show-branches
    'org-ascii-convert-region-to-utf8
    'org-html-export-to-html
    'org-latex-export-to-pdf

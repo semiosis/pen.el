@@ -17,14 +17,38 @@ print_all_following() {
     tac | sed "/$1/{q}" | tac | sed 1d | less -S
 }
 
-# find . -maxdepth 1 -type f | sort -d | sed "s/^\.\///" | filter-out-binary | print_next_after
+# find . -maxdepth 1 -type f | do_sort | sed "s/^\.\///" | filter-out-binary | print_next_after
 
 filter_unimportant() {
     grep -v -P "~$"
     return 0
 }
 
-find . -maxdepth 1 -type f | sort -d | sed "s/^\.\///" | filter_unimportant | print_all_following "$fn" | awk 1 | while IFS=$'\n' read -r line; do
+# ( cd "$MYGIT_HOST/mullikine/prayers"; ls )
+data="$(find . -maxdepth 1 -type f)"
+
+# DONE Come up with a succinct way to write out array data in bash
+# TODO and use it to implement other control structures.
+
+# Really want inside bash a succinct way to write cases using commands
+
+# This is how it should work:
+result="(
+    printf -- "%s\n" "$data" | match \
+        "$(c grep -q -P '"[0-9]+\\.[0-9]+\\.[0-9]+"')" "$(c echo a)" \
+        "$(c grep -q -P '"[a-z]+\\.[0-9]+\\.[0-9]+"')" "$(c echo b)"
+)"
+
+# TODO Make it detect a set of date formats
+printf -- "%s\n" "$data" | grep -q -P '"[0-9]+\\.[0-9]+\\.[0-9]+"' &>/dev/null
+has_date="$?"
+
+# TODO If there is a date in the filename then sort by date
+do_sort() {
+    sort -d
+}
+
+printf -- "%s\n" "$data" | do_sort | sed "s/^\.\///" | filter_unimportant | print_all_following "$fn" | awk 1 | while IFS=$'\n' read -r line; do
     if isbinary "$line"  0</dev/null; then
         continue
     else

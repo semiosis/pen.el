@@ -69,7 +69,7 @@ ebible_pager() {
             vim_cmd="vs -nls -num"
         fi
 
-        : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | c ascify | slugify)"}"
+        : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | pen-c ascify | slugify)"}"
 
         if test -n "$slug"; then
             # pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
@@ -235,7 +235,7 @@ fi
 : ${CMD:="$@"}
 
 ref="$CMD"
-ref="$(printf -- "%s" "$ref" | c ascify)"
+ref="$(printf -- "%s" "$ref" | pen-c ascify)"
 : "${ref:="Genesis 1"}"
 
 if ! test "$FAST" = "y"; then
@@ -364,7 +364,7 @@ else
     if test "$WITH_LINKS" = "y"; then
         output="$(printf -- "%s" "$output" | biblegateway-relinkify)"
     fi
-    slug="$(printf -- "%s" "$CMD " | c ascify | slugify; printf -- "%s\n" "$output" | head -n 1 | slugify)"
+    slug="$(printf -- "%s" "$CMD " | pen-c ascify | slugify; printf -- "%s\n" "$output" | head -n 1 | slugify)"
     printf -- "%s\n" "$output" | ebible_pager -s "$slug"
     # printf -- "%s\n" "$output" | pavs
 fi

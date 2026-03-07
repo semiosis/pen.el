@@ -2893,3 +2893,14 @@ sudo apt-get install -y \
 e ia -r bible-gateway
 
 update-rust && cargo install tetro-tui
+
+# The newest lnav looks cool
+(
+    cd "$(gc "https://github.com/tstack/lnav")"
+    agi libunistring-dev
+    ./autogen.sh
+    ./configure
+    make -j 5
+)
+# But it's been around for a while, so can just be installed with dpkg
+agi lnav

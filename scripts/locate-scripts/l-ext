@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# Example:
+# l-ext ps
+
+ext="$1"
+
+l r "\\.${ext}\$"

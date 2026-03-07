@@ -2502,6 +2502,12 @@ snippet hse "history save with environment"
 	( hs "$(basename -- "\$0")" "\$@" "#" "<==" "\$(ps -o comm= \$PPID)" "<==" "\$(printenv | tf sh | cat)" 0</dev/null ) &>/dev/null
 snippet hs "history save"
 	. $SCRIPTS/lib/hs
+snippet bcat "cat in pure bash"
+	. $SCRIPTS/lib/bcat
+snippet slice "misc utils"
+	. $SCRIPTS/lib/misc
+snippet misc "misc utils"
+	. $SCRIPTS/lib/misc
 snippet hsbak "history save old"
 	( hs "\$(basename -- "\$0")" "\$@" <`tm-tty` \` # Disable tty to pipe content into hs \` )
 snippet tp "has prefxx"
@@ -3714,7 +3720,8 @@ snippet qa
 		*) ;;
 	esac
 snippet len
-	len=\${#array[@]}
+	a_len=\${#a_var[@]}
+	s_len=\${#s_var}
 snippet str2arr
 	IFS=" +" read -r -a array <<< "\$string"
 snippet aqf

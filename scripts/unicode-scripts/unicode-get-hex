@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+unicode "$@" | rosie-scrape '{ "&#" num.uint }' 2>/dev/null | scrape "[0-9]+" | dec2hex

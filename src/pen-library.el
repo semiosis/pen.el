@@ -1688,4 +1688,20 @@ non-nil."
   (with-current-buffer (espv 'new-buffer-from-string)
     (defset-local kill-window-when-done t)))
 
+(defun make-region-read-only (start end)
+  (interactive "*r")
+  (let ((inhibit-read-only t))
+    (put-text-property start end 'read-only t)))
+
+(defun make-region-read-write (start end)
+  (interactive "*r")
+  (let ((inhibit-read-only t))
+    (put-text-property start end 'read-only nil)))
+
+(defun display-in-echo-area (&rest args)
+  "This displays in the echo area without recording to the *messages* buffer."
+  (interactive)
+  (let ((message-log-max nil))
+    (apply 'message args)))
+
 (provide 'pen-library)

@@ -96,12 +96,19 @@
 (defun pen-toggle-evil ()
   (interactive)
   "Tries Holy Mode + falls back to evil"
+  (display-in-echo-area "Toggling mode...")
   (save-mark-and-excursion
     (if (or (evil-visual-state-p)
             (evil-insert-state-p))
-        (call-interactively 'evil-normal-state))
-    (call-interactively #'evil-mode)
-    (fix-region)))
+        (progn
+          (call-interactively 'evil-normal-state)
+          (display-in-echo-area "Mode: Emacs bindings")))
+    (progn
+      (if (call-interactively #'evil-mode)
+          (display-in-echo-area "Mode: Vim bindings")
+        (display-in-echo-area "Mode: Emacs bindings")))
+    (shut-up
+      (fix-region))))
 
 (defun pen-enable-evil ()
   (interactive)
@@ -490,6 +497,8 @@ If no FILE is specified, reload the current buffer from disk."
           (advice-remove 'evil-previous-line #'pen-doc-thing-at-point)
           (advice-remove 'evil-end-of-line #'pen-doc-thing-at-point)))
 
+;; Get the hex number:
+;;unicode-get-hex '☕'
 (setq evil-digraphs-table-user '(((?N ?N) . ?\x2115)
                                  ((?Z ?Z) . ?\x2124)
                                  ((?R ?R) . ?\x211D)
@@ -543,7 +552,165 @@ If no FILE is specified, reload the current buffer from disk."
                                  ;; ☕
                                  ((?c ?o) . ?\x2615)
 
-                                 ((?r ?e) . ?\x211D)))
+                                 ((?r ?e) . ?\x211D)
+
+                                 ;; For apl programming. See mx:gnu-apl-show-keyboard:
+                                 ;; ⌿
+                                 ((?/ ?.) . ?\x233F)
+                                 ;; ⍠
+                                 ((?? ?.) . ?\x2360)
+                                 ;; ⍝
+                                 ((?, ?.) . ?\x235D)
+                                 ;; ⍪
+                                 ((?< ?.) . ?\x236A)
+                                 ;; | (just a regular bar)
+                                 ((?m ?.) . ?\x7C)
+                                 ;; ⊤
+                                 ((?n ?.) . ?\x22A4)
+                                 ;; ⊥
+                                 ((?b ?.) . ?\x22A5)
+                                 ;; ∪
+                                 ((?v ?.) . ?\x222A)
+                                 ;; ∩
+                                 ((?c ?.) . ?\x2229)
+                                 ;; ⊃
+                                 ((?x ?.) . ?\x2283)
+                                 ;; ⊂
+                                 ((?z ?.) . ?\x2282)
+                                 ;; ⍕
+                                 ((?' ?.) . ?\x2355)
+                                 ;; ≢
+                                 ((?\" ?.) . ?\x2262)
+                                 ;; ⍎
+                                 ((?\; ?.) . ?\x234E)
+                                 ;; ≡
+                                 ((?: ?.) . ?\x2261)
+                                 ;; ⎕
+                                 ((?l ?.) . ?\x2395)
+                                 ;; ⌷
+                                 ((?L ?.) . ?\x2337)
+                                 ;; '
+                                 ((?k ?.) . ?\x27)
+                                 ;; ⌺
+                                 ((?K ?.) . ?\x233A)
+                                 ;; ∘
+                                 ((?j ?.) . ?\x2218)
+                                 ;; ⍤
+                                 ((?J ?.) . ?\x2364)
+                                 ;; ∆
+                                 ((?h ?.) . ?\x2206)
+                                 ;; ⍙
+                                 ((?H ?.) . ?\x2359)
+                                 ;; ∇
+                                 ((?g ?.) . ?\x2207)
+                                 ;; _
+                                 ((?f ?.) . ?\x5F)
+                                 ;; ⍫
+                                 ((?F ?.) . ?\x236B)
+                                 ;; ⌊
+                                 ((?d ?.) . ?\x230A)
+                                 ;; ⌈
+                                 ((?s ?.) . ?\x2308)
+                                 ;; ⍺
+                                 ((?a ?.) . ?\x237A)
+                                 ;; ⍶
+                                 ((?A ?.) . ?\x2376)
+                                 ;; ⊢
+                                 ((?\ ?.) . ?\x22A2)
+                                 ;; ⊣
+                                 ((?| ?.) . ?\x22A3)
+                                 ;; →
+                                 ((?\] ?.) . ?\x2192)
+                                 ;; ⍬
+                                 ((?\} ?.) . ?\x236C)
+                                 ;; ←
+                                 ((?\[ ?.) . ?\x2190)
+                                 ;; ⍞
+                                 ((?\{ ?.) . ?\x235E)
+                                 ;; ⋆
+                                 ((?p ?.) . ?\x22C6)
+                                 ;; ⍣
+                                 ((?P ?.) . ?\x2363)
+                                 ;; ○
+                                 ((?o ?.) . ?\x25CB)
+                                 ;; ⍥
+                                 ((?O ?.) . ?\x2365)
+                                 ;; ⍳
+                                 ((?i ?.) . ?\x2373)
+                                 ;; ⍸
+                                 ((?I ?.) . ?\x2378)
+                                 ;; ↓
+                                 ((?u ?.) . ?\x2193)
+                                 ;; ↑
+                                 ((?y ?.) . ?\x2191)
+                                 ;; ¥
+                                 ((?Y ?.) . ?\xA5)
+                                 ;; ∼
+                                 ((?t ?.) . ?\x223C)
+                                 ;; ⍨
+                                 ((?T ?.) . ?\x2368)
+                                 ;; ⍴
+                                 ((?r ?.) . ?\x2374)
+                                 ;; ∊
+                                 ((?e ?.) . ?\x220A)
+                                 ;; ⍷
+                                 ((?E ?.) . ?\x2377)
+                                 ;; ⍵
+                                 ((?w ?.) . ?\x2375)
+                                 ;; ⍹
+                                 ((?W ?.) . ?\x2379)
+                                 ;; ?
+                                 ((?q ?.) . ?\x3F)
+                                 ;; ÷
+                                 ((?= ?.) . ?\xF7)
+                                 ;; ⌹
+                                 ((?+ ?.) . ?\x2339)
+                                 ;; ×
+                                 ((?- ?.) . ?\xD7)
+                                 ;; !
+                                 ((?_ ?.) . ?\x21)
+                                 ;; ∧
+                                 ((?0 ?.) . ?\x2227)
+                                 ;; ⍲
+                                 ((?\) ?.) . ?\x2372)
+                                 ;; ∨
+                                 ((?9 ?.) . ?\x2228)
+                                 ;; ⍱
+                                 ((?\( ?.) . ?\x2371)
+                                 ;; ≠
+                                 ((?8 ?.) . ?\x2260)
+                                 ;; ⍟
+                                 ((?* ?.) . ?\x235F)
+                                 ;; >
+                                 ((?7 ?.) . ?\x3E)
+                                 ;; ⊖
+                                 ((?& ?.) . ?\x2296)
+                                 ;; ≥
+                                 ((?6 ?.) . ?\x2265)
+                                 ;; ⍉
+                                 ((?^ ?.) . ?\x2349)
+                                 ;; =
+                                 ((?5 ?.) . ?\x3D)
+                                 ;; ⌽
+                                 ((?% ?.) . ?\x233D)
+                                 ;; ≤
+                                 ((?4 ?.) . ?\x2264)
+                                 ;; ⍋
+                                 ((?$ ?.) . ?\x234B)
+                                 ;; <
+                                 ((?3 ?.) . ?\x3C)
+                                 ;; ⍒
+                                 ((?# ?.) . ?\x2352)
+                                 ;; ¯
+                                 ((?2 ?.) . ?\xAF)
+                                 ;; ⍫
+                                 ((?@ ?.) . ?\x236B)
+                                 ;; ¨
+                                 ((?1 ?.) . ?\xA8)
+                                 ;; ⌶
+                                 ((?! ?.) . ?\x2336)
+                                 ;; ◊
+                                 ((?` ?.) . ?\x25CA)))
 
 (defun evil-get-register (register &optional noerror)
   "Return contents of REGISTER.

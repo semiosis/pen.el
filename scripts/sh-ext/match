@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+#EXAMPLE:
+# data="$(find . -maxdepth 1 -type f)"
+# result="(
+#     printf -- "%s\n" "$data" | match \
+#         "$(c grep -q -P '"[0-9]+\\.[0-9]+\\.[0-9]+"')" "$(c echo a)" \
+#         "$(c grep -q -P '"[a-z]+\\.[0-9]+\\.[0-9]+"')" "$(c echo b)"
+# )"
+
+#EXAMPLE:
+# echo cat | match "$(c grep -q dog)" "$(c echo DOG)" "$(c grep -q cat)" "$(c echo CAT)"
+
+#EXAMPLE:
+# echo -e "cat\ndog" | wrlp match "$(c grep -q dog)" "$(c pen-c lc)" "$(c grep -q cat)" "$(c pen-c uc)"
+
+input="$(cat)"
+for (( i = 1; i < "$#"; i=i+2 )); do
+    a="$i"
+    b="$((i+1))"
+    eval val_a="\$$a"
+    eval val_b="\$$b"
+    if printf -- "%s\n" "$input" | eval "$val_a"; then
+        printf -- "%s\n" "$input" | eval "$val_b"
+        break
+    fi
+    continue
+done

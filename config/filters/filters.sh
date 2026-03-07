@@ -487,3 +487,4 @@ sol-implode    # one-linerise shell / bash
 sol-explode    # prettify / expand shell / bash
 org-quote-lines  # Puts each line in an org quotation
 org-strip-clutter-for-reading
+rosie-scrape num.denoted_hex # hex numbers

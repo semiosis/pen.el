@@ -53,4 +53,15 @@
   ;; (prolog-menu)
   )
 
+(defun pen-prolog-list-rules (s)
+  (with-temp-buffer
+    (insert s)
+    (prolog-mode)
+    (list2str (mapcar 'car (let ((imenu-prev-index-position-function 'prolog-beginning-of-predicate)
+                                 (imenu-default-create-index-function 'prolog-get-predspec))
+                             (imenu-default-create-index-function))))))
+
+(defun pen-prolog-list-rules-fp (fp)
+  (pen-prolog-list-rules (cat fp)))
+
 (provide 'pen-prolog)
