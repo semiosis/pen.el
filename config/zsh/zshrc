@@ -632,7 +632,7 @@ fzf-dirs() {
 
     tput sc # Set curser position
 
-    pen-F d | pen-mfz -m -P -pscript "xa -E show-extensions-below 'echo; :' ls" | {
+    pen-F d | pen-mfz -m -P -pscript "xa -E pen-show-extensions-below 'echo; :' ls" | {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i
