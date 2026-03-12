@@ -1,0 +1,141 @@
+root
+Year:month:day Year:month:day
+
+
+
+
+
+
+
+SHANE CHRISTOPHER MULLIGAN
+
+
+Current date:
+    
+
+
+Cover Letter
+
+Dear employer,
+After a long career of writing software, I'm seeking a change. I have
+transferable skills. I have writing and communication skills. I have a
+website here, where I have been writing theology for the past year
+(https://semiosis.github.io/). In the past I have organised meetings in
+a small software team. I like to write my own software. I'm not against
+programming, but I am against being forced into using generative AI
+tools such as chatbots, and sadly the industry seems to be saturated
+with that now and I'm moving on from that, and I am keen on doing
+something completely different, even if it's packing shelves or working
+as a security guard. I'm able-bodied. I'm not super fit or anything, but
+I am physically able to do things like pack shelves. I studied the
+sciences at Otago University; chemistry, biology and anatomy. I can play
+music. I'm looking for a job to do in Dunedin currently, but not in my
+former area of expertise which was in artificial intelligence. Please
+get in touch with me if you think you have any available suitable work.
+Thank you,
+Shane Mulligan
+
+
+Work experience
+
+  COMPANY                       LOCATION, YEAR            JOB TITLE
+  ----------------------------- ------------------------- -------------------
+  Fortescue Metals Group        Perth, Australia (2020)   Software Engineer
+  CodeLingo Ltd                 Dunedin (2018-2019)       Software Engineer
+  Crown Equipment Corporation   Auckland (2015-2017)      Software Engineer
+
+
+Skills and attributes
+
+-   Driving a forklift from my time at Crown
+    -   I'd need retraining as it has been several years since I had any
+        dealings with forklifts.
+-   Keyboard, office, and computer skills
+-   Problem-solving
+-   Available flexible hours
+
+Also, I have no dependants asides from my cat, and are highly available
+for working.
+
+
+Education
+
+  DEGREE   FIELD              INSTITUTION
+  -------- ------------------ ---------------------
+  BSc      Computer Science   University of Otago
+
+
+Citizenship
+
+-   Australia
+-   New Zealand
+
+
+References
+
+  NAME          PHONE          Relationship
+  ------------- -------------- --------------
+  Donald Lark   022 079 9326   Mentor
+  Carl          027 505 0604   Friend
+
+
+Contact details
+
+Mobile:
+    021 038 3311
+
+Email:
+    mullikine@gmail.com
+
+Home Address:
+    16 Lynwood Ave, Maori Hill, Dunedin
+
+
+IT Work experience
+
+I've been employed writing software as early as 2005. It started out
+with developing websites in php. I had an internship with TracMap in
+2013 (if I recall the date correctly), and was employed there as a
+software engineer. I was working on embedded systems. At Crown, I was
+primarily working on automation tests for "hardware-in-the-loop". At FMG
+(Fortescue) I was primarily involved with automation tests and making
+GitLab and docker-based integration tests.
+
+  COMPANY                       LOCATION, YEAR            JOB TITLE
+  ----------------------------- ------------------------- -------------------
+  Fortescue Metals Group        Perth, Australia (2020)   Software Engineer
+  CodeLingo Ltd                 Dunedin (2018-2019)       Software Engineer
+  Crown Equipment Corporation   Auckland (2015-2017)      Software Engineer
+  TracMap                       Mosgiel (2013-2014)       Software Engineer
+
+
+Research
+
+In 2021 I was researching uses for generative AI. I was a beta-tester
+for GPT-3. I am strongly averse to using or developing AI systems based
+on stolen property, and that replace human workers, and desecrate what
+is sacred, and propagate a low-effort mentality. I think it's beneath
+human dignity to submit to working with such tools, and immoral to
+develop them in the current vast majority of (almost all) cases.
+
+
+IT skills and attributes
+
+-   Programming languages:
+    -   bash (bourne-again shell)
+    -   emacs lisp
+-   git
+-   CI/CD
+    -   I've worked as a software tester, writing "unit tests".
+-   Docker
+-   Writing Documentation
+-   Linux
+-   Developing terminal user interfaces
+-   Problem-solving
+
+I write my own software and enjoy solving problems in my general
+computing with free software. I've been developing my own Operating
+System since 2021 which I use for the vast majority of my computing, for
+organisation, document preparation, thinking and planning, and studying.
+
+-   https://github.com/semiosis/pen.el
