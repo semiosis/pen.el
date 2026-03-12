@@ -15,13 +15,19 @@ is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
 
+if test "$BLACK_AND_WHITE" = y || pen-rc-test -f black_and_white; then
+    # Do this especially if INSIDE_EMACS
+    export TERM=screen-2color
+    extra_commands+="|call BWSyntax()"
+fi
+
 run() {
     if is_tty; then
         "$bin" "$@"
     elif is_stdout_pipe; then
         CMD="$(cmd "$@")"
         : ${CMD:="$(cmd "$@")"}
-        eval "unbuffer $bin $CMD -c \"wq! /tmp/vim-stdout.txt\"" &>/dev/null
+        eval "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/vim-stdout.txt\"" &>/dev/null
         cat /tmp/vim-stdout.txt
     fi
 }

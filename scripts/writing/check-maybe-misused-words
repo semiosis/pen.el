@@ -1,0 +1,52 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
+
+# TODO Check the contents of this file for includes that I should also check
+#  #+INCLUDE: "/root/cover-letter-11.03.26.org"
+
+fp="$1"
+
+if ! stdin_exists && test -f "$fp"; then
+    exec < <(cat "$fp")
+fi
+
+other_data="$(
+    IFS="
+    "
+    cat "$fp" | scrape-files-fast.sh | while IFS="$IFS" read -r inner_fp; do
+        if test -n "$inner_fp"; then
+            inner_bn="$(basename -- "$inner_fp")"
+            cat "$inner_fp" | prepend-string "$inner_bn:" | awk 1
+        fi
+    done
+)"
+
+bn="$(basename -- "$fp")"
+input="$(cat | prepend-string "$bn:")"
+
+if test -n "$other_data"; then
+    input="$input\n$other_data"
+fi
+
+warnings=""
+
+res="$(printf -- "%s\n" "$input" | grep -n -P "\\badverse\\b")"
+if test -n "$res"; then
+    warnings="${warnings}The word 'adverse' was used, but should it be averse?:\n"
+    res="$(p "$res" | prepend-string "  ")"
+    warnings="${warnings}$res\n"
+fi
+
+res="$(printf -- "%s\n" "$input" | grep -n -P "\\baverse\\b")"
+if test -n "$res"; then
+    warnings="${warnings}The word 'averse' was used, but should it be adverse?:\n"
+    res="$(p "$res" | prepend-string "  ")"
+    warnings="${warnings}$res\n"
+fi
+
+if test -n "$warnings"; then
+    tpop myeval -E "$(cmd echo -e "$warnings") | v"
+fi

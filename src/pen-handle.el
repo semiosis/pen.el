@@ -462,6 +462,9 @@
         :repls '(gnu-apl)
         :formatters '()
         :docs '(man-thing-at-point)
+        :accessories '(gnu-apl-show-keyboard
+                       gnu-apl-show-help-for-symbol
+                       gnu-apl-finnapl-list)
         :godef '()
         :docsearch '()
         :nextdef '()
@@ -600,6 +603,7 @@
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)
         :accessories '(gnu-apl-show-keyboard
+                       gnu-apl-show-help-for-symbol
                        gnu-apl-finnapl-list)
         :preverr '())
 

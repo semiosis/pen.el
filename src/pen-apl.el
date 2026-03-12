@@ -78,4 +78,7 @@ to ‘gnu-apl-executable’)."
       ;; (run-at-time "0 sec" nil #'(lambda () (gnu-apl-show-keyboard 1)))
       (run-at-time "0.1 sec" nil #'(lambda () (gnu-apl-show-keyboard 1))))))
 
+;; (define-key gnu-apl-interactive-mode-map (kbd "C-c C-h") 'gnu-apl-show-help-for-symbol)
+(define-key gnu-apl-interactive-mode-map (kbd "C-c C-h") nil)
+
 (provide 'pen-apl)

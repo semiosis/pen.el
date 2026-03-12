@@ -1032,7 +1032,7 @@ case "$f" in
     running) { # test running
         # : "${SOCKET:="DEFAULT"}"
         if [ -n "$SOCKET" ]; then
-            running_matching_workers="$(ps -ef |grep -P "emacs .* --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
+            running_matching_workers="$(ps -ef |grep -P "emacs.* --daemon=" | grep -v grep | grep local/bin | grep -v pts | grep -P "$SOCKET\$" | awk '{print $2}')"
             test -n "$running_matching_workers"
 
             # $EMACSCLIENT_BIN -a false -e 't' -s $SOCKET &>/dev/null

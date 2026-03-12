@@ -1718,3 +1718,32 @@ endf
 
 " It does bother me how attemps like this to make a key mapping fail because it's not very intuitive
 " xmap I <Leader>!fzfi<c-r>
+
+" https://stackoverflow.com/questions/35465597/how-do-i-detect-if-a-specific-buffer-exists-in-vimscript
+function! ChooseBuffer(buffername)
+    let bnr = bufwinnr(a:buffername)
+    if bnr > 0
+       :exe bnr . "wincmd w"
+    else
+       echo a:buffername . ' is not existent'
+       silent execute 'split ' . a:buffername
+    endif
+endfunction
+
+fun! Scratch()
+    let buffername = "*scratch*"
+    let buffername_esc = "\\*scratch\\*"
+    let bnr = bufwinnr(buffername)
+
+    if bnr > 0
+       :exe bnr . "wincmd w"
+    else
+       " echo buffername . ' is not existent'
+       silent execute 'split ' . buffername_esc
+       silent execute 'only'
+    endif
+
+  " file \*scratch\*
+  " b \*scratch\*
+endf
+command! Scratch call Scratch()

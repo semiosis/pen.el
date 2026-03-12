@@ -42,14 +42,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
             van|vanilla) {
                 export VANILLA=y
-                export NOEMACS=y
-                export NO_NVC=y
-                export NOCOLOR=y
             }
             ;;
 
             nov|novan|novanilla) {
                 export VANILLA=n
+            }
+            ;;
+
+            -2|bw|baw) {
+                export BLACK_AND_WHITE=y
+            }
+            ;;
+
+            # Can't use -no2 to represent b&w because no2 disables stderr
+            nobw) {
+                export BLACK_AND_WHITE=n
             }
             ;;
 
@@ -101,17 +109,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             nup) {
                 export UPDATE=n
                 export FORCE_RETRY=n
-            }
-            ;;
-
-            -2|bw|baw) {
-                export BLACK_AND_WHITE=y
-            }
-            ;;
-
-            # Can't use -no2 to represent b&w because no2 disables stderr
-            nobw) {
-                export BLACK_AND_WHITE=n
             }
             ;;
 
@@ -190,6 +187,15 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+
+if test "$VANILLA" = "y" || test "$BLACK_AND_WHITE"; then
+    export VANILLA=y
+    export NOEMACS=y
+    export NO_NVC=y
+    export NOCOLOR=y
+    export BLACK_AND_WHITE=y
+fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 

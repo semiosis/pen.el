@@ -8,12 +8,19 @@ fp="$1"
 test -d "$NOTES/ws/jobs" && dn="$NOTES/ws/jobs"
 test -d "/volumes/home/shane/notes/ws/jobs" && dn="/volumes/home/shane/notes/ws/jobs"
 
-cd "$dn"
-: "${fp:="$(readlink "cv-newest.org")"}"
-bn="$(basename "$fp")"
-mant="${bn%.*}"
+if test -f "$fp"; then
+    check-maybe-misused-words "$fp"
+    org2pdf "$fp"
+else
+    cd "$dn"
+    : "${fp:="$(readlink "cv-newest.org")"}"
+    bn="$(basename "$fp")"
+    mant="${bn%.*}"
 
-org2pdf "$dn/${mant}.org"
+    fp="$dn/${mant}.org"
+    check-maybe-misused-words "$fp"
+    org2pdf "$fp"
+fi
 
 is_tty() { [ -t 1 ]; }
 
