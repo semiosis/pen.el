@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+exec &>/dev/null
+
+tmux popup -C
+tmux kill-session -t popup:
+

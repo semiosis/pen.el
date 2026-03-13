@@ -632,7 +632,7 @@ fzf-dirs() {
 
     tput sc # Set curser position
 
-    pen-F d | pen-mfz -m -P -pscript "xa -E pen-show-extensions-below 'echo; :' ls" | {
+    spin pen-F d | pen-mfz -m -P -pscript "xa -E pen-show-extensions-below 'echo; :' ls" | {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i
@@ -643,6 +643,8 @@ fzf-dirs() {
         fi
     }
 }
+
+# Docker uses C-q, so don't use C-q
 # c-q
 zle -N fzf-dirs
 bindkey '^Q' fzf-dirs
@@ -655,7 +657,7 @@ fzf-files() {
 
     tput sc
 
-    pen-F f -f | pen-mfz -m | {
+    spin pen-F f -f | pen-mfz -m | {
         input="$(cat)"
         if [ -n "$input" ]; then
             printf -- "%s" "$input" | pen-xc -s -i

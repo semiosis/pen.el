@@ -4,6 +4,7 @@ export TTY
 # . $SCRIPTS/lib/hs
 
 exec 0</dev/null
+exec &>/dev/null
 
 test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
 test -d "/tmp" && : "${TMPDIR:="/tmp"}"

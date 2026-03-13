@@ -10,6 +10,7 @@
           -w "w3m"
           -b "browsh"
           -y "carbonyl"
+          -l "elinks"
           -B "ebrowsh"
           -I "w3m"
           -f "ff")))
@@ -20,6 +21,7 @@
       ;; ("browsh" (nw (cmd "browsh" url) _new-window))
       ("browsh" (browsh url))
       ("carbonyl" (carbonyl url))
+      ("elinks" (elinks url))
       ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
       ("rdrview" (rdrview url))
       (_ (browse-url-generic url _new-window)))))
@@ -160,6 +162,7 @@
       ('browsh (browsh url))
       ('carbonyl (carbonyl url))
       ('rdrview (rdrview url))
+      ('elinks (elinks url))
       ('pen-emacs-web-browse (pen-emacs-web-browse url))
       (_ nil))))
 
@@ -182,6 +185,10 @@
 (defun reopen-in-rdrview ()
   (interactive)
   (reopen-in 'rdrview))
+
+(defun reopen-in-elinks ()
+  (interactive)
+  (reopen-in 'elinks))
 
 (defun reopen-in-pen-emacs-web-browse ()
   (interactive)

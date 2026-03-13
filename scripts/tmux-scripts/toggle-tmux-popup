@@ -107,6 +107,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        export FORCE_NEW_TPOP=y
+        shift
+        shift
+    }
+    ;;
+
     -x) {
         x="$2"
         shift
@@ -252,7 +259,7 @@ tmuxdetach() {
 }
 
 if test -n "$display_time"; then
-    ( sleep "$display_time"; tmux popup -C; tmux kill-session -t popup: ; ) &
+    ( sleep "$display_time"; tmux-close-popup ; ) &
 
     if test "$detach" = "y"; then
         disown

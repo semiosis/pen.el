@@ -109,6 +109,7 @@
                          reopen-in-eww
                          reopen-in-browsh
                          reopen-in-carbonyl
+                         reopen-in-elinks
                          reopen-in-rdrview
                          reopen-in-pen-emacs-web-browse
                          rdrview))

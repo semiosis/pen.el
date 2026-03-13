@@ -48,7 +48,7 @@
 
 (defun wordnet-word (&optional input_word)
   (interactive (list (pen-word-at-point)))
-  
+
   (let ((word (fz
                ;; (mapcar
                ;;  (lambda (s) (s-replace-regexp "_" " " s))
@@ -57,7 +57,23 @@
                ;; Faster
                (snc "ocif list-words | shuf")
                input_word nil "Wordnet word: ")))
-    (wordnut--lookup word)))
+        
+    (wordnut--lookup word))
+  
+  ;; (spinner-start)
+  ;; (unwind-protect
+  ;;     (let ((word (fz
+  ;;                  ;; (mapcar
+  ;;                  ;;  (lambda (s) (s-replace-regexp "_" " " s))
+  ;;                  ;;  (helm-wordnet-wordnet-wordlist))
+
+  ;;                  ;; Faster
+  ;;                  (snc "ocif list-words | shuf")
+  ;;                  input_word nil "Wordnet word: ")))
+        
+  ;;       (wordnut--lookup word))
+  ;;   (spinner-stop))
+  )
 
 (defun ntow (from &optional to ordinal)
   (setq to (or to from))

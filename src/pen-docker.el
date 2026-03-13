@@ -470,20 +470,19 @@
   (xc (chomp (pen-sn (concat "docker-get-entrypoint " image)))
       nil nil
       "docker-image-copy-entrypoint"))
-;; 
-;; (defun ff-dockerhub (&optional image)
-;;   (interactive)
-;;   (if (not image)
-;;       (setq image (docker-select-one)))
-;;   (pen-sps (concat "ff-dockerhub " image)))
-;; 
-;; (defun ff-dockerfile (&optional image)
-;;   (interactive)
-;;   (if (not image)
-;;       (setq image (docker-select-one)))
-;;   (pen-sps (concat "ff-dockerhub -d " image)))
-;; 
-;; 
+
+(defun ff-dockerhub (&optional image)
+  (interactive)
+  (if (not image)
+      (setq image (docker-select-one)))
+  (pen-sps (concat "ff-dockerhub " image)))
+
+(defun ff-dockerfile (&optional image)
+  (interactive)
+  (if (not image)
+      (setq image (docker-select-one)))
+  (pen-sps (concat "ff-dockerhub -d " image)))
+
 ;; (defun pen-docker-pull-specific-tag ()
 ;;   ""
 ;;   (interactive)

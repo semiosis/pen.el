@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        go_to_dockerfile=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+image_name="$1"
+
+image_name="$(p "$image_name" | sed 's/:.*//')"
+
+exec <&1
+
+if pl "$image_name" | grep -q -P '/'; then
+    url="http://hub.docker.com/r/$image_name"
+else
+    url="http://hub.docker.com/_/$image_name"
+fi
+
+if test "$go_to_dockerfile" = "y"; then
+    url="$url/dockerfile"
+fi
+
+ff "$url"

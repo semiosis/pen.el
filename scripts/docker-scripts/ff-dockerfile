@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if test -z "$image"; then
+    image="$(docker-select-image)"
+fi
+
+if test -z "$image"; then
+    exit 1
+fi
+
+ff-dockerhub -d "$image"

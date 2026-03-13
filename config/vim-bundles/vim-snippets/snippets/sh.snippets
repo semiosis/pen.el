@@ -3916,3 +3916,9 @@ snippet gatherargs
 	esac; done
 
 	/usr/bin/unbuffer "\${a[@]}" env IN_UNBUFFER=y "\$@"
+snippet soak
+	. $SCRIPTS/lib/stdin_exists
+	if stdin_exists; then
+		input="\$(cat)"
+		exec < <(printf -- "%s" "\$input")
+	fi

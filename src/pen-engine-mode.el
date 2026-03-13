@@ -140,6 +140,14 @@
 
   (pen-nw (concat "browsh " (pen-q (car body)))))
 
+(defun elinks (&rest body)
+  (interactive (list (read-string "url:")))
+
+  (if (not body)
+      (setq body '("http://google.com")))
+
+  (pen-nw (concat "elinks " (pen-q (car body)))))
+
 (defun carbonyl (&rest body)
   (interactive (list (read-string "url:")))
 

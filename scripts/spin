@@ -1,10 +1,12 @@
 #!/bin/bash
 export TTY
 
-# ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# . $SCRIPTS/lib/hs
 
 # Trap to kill subprocesses is almost useless here because the spinner is a
 # popup
+
+. $SCRIPTS/lib/stdin_exists
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -14,8 +16,23 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        export FORCE_NEW_TPOP=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+if stdin_exists; then
+    input="$(cat)"
+    exec < <(printf -- "%s" "$input")
+fi
+
+if test "$FORCE_NEW_TPOP" = "y"; then
+    tmux-close-popup
+fi
 
 # TODO Make the tmux spinner
 if test "$TMUX_SPINNER" = "y"; then
