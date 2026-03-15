@@ -2,6 +2,11 @@
 
 (require 'flyspell)
 
+;; e:ispell
+;; [[sps:hsqf ispell]]
+
+(setq ispell-program-name "ispell")
+
 (setq flyspell-issue-message-flag nil)
 
 (require 'helm-flyspell)
