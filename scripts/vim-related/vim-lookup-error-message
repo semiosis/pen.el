@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+code="$1"
+# example
+: "${code:="140"}"
+
+cd "$MYGIT/vim/src"
+
+grep -iHnR "\"E$code:" . | grep -P "(\\.c:|/en)" | pavs

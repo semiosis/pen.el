@@ -125,4 +125,9 @@
 
 (define-key global-map (kbd "<M-f8>") #'insert-date)
 
+(defun beginning-of-line-force ()
+  (move-to-column 0))
+
+(defalias 'column-number 'current-column)
+
 (provide 'pen-editing)

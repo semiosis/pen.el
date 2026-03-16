@@ -51,7 +51,7 @@
       ;; (call-interactively 'term-bol)
       (call-interactively 'comint-bol)
       (if (eq startpt (point))
-          (beginning-of-line))))
+          (beginning-of-line-force))))
 
    ((derived-mode-p 'vterm-mode)
     (vterm-send-C-a))

@@ -526,6 +526,7 @@ display values."
                          ("h" (dff (call-interactively 'hebrew-digraph-select)) "Insert Hebrew digraph")
                          ("a" (dff (call-interactively 'aramaic-digraph-select)) "Insert Aramaic digraph")
                          ("d" (dff (call-interactively 'digraph-select)) "Insert digraph")
+                         ("D" (dff (call-interactively 'show-digraphs)) "Show digraphs")
                          ("y" (dff (call-interactively 'symbol-select)) "Insert symbol")
                          ("p" (dff (call-interactively 'pick-emoji)) "Insert emoji")
                          ("i" #'global-rainbow-identifiers-always-mode "Rainbow identifiers")

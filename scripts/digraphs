@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# TODO Fix the Message bug in vim.
+# There are lots of broken representations of digraphs
+
+vim --not-a-term +"Mess digr" +only | sed 's/ \+/ /g' | sed '/^$/d' | pavs

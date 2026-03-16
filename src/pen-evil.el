@@ -552,7 +552,22 @@ If no FILE is specified, reload the current buffer from disk."
                                  ;; ☕
                                  ((?c ?o) . ?\x2615)
 
+                                 ;; ℝ
                                  ((?r ?e) . ?\x211D)
+
+                                 ;; ³
+                                 ((?S ?3) . ?\xB3)
+
+                                 ;; ²
+                                 ((?S ?2) . ?\xB2)
+
+                                 ;; ¹ - already works
+                                 ;; " digr S1 185
+                                 ;; " ⁴ - already works
+                                 ;; " digr S4 8308
+
+                                 ;; ₄
+                                 ;; ((?S ?2) . ?\xB2)
 
                                  ;; For apl programming. See mx:gnu-apl-show-keyboard:
                                  ;; ⌿

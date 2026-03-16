@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+{ 
+    vim-list-help-topics
+    vim-list-ex-invocations 
+} | sort | pavs

@@ -331,6 +331,10 @@ digr li 128077
 digr DL 128078
 " ☕
 digr co 9749
+
+" ℝ
+digr re 8477
+
 " ³
 digr S3 179
 " ²
@@ -341,6 +345,171 @@ digr S2 178
 " digr S4 8308
 " ₄
 digr S4 8324
+
+if ! has('nvim')
+" DISCARD Replace hex with unicode
+" DONE "vimhelp digraph-table" shows how to use hex with exe
+
+" APL
+" ⌿
+" digr /. x233F
+exe 'digr /. ' .. 0x233F
+" ⍠
+" digr ?. x2360
+exe 'digr ?. ' .. 0x2360
+" ⍝
+exe 'digr ,. ' .. 0x235D
+" ⍪
+exe 'digr <. ' .. 0x236A
+" | (Just a regular bar)
+exe 'digr m. ' .. 0x7C
+" ⊤
+exe 'digr n. ' .. 0x22A4
+" ⊥
+exe 'digr b. ' .. 0x22A5
+" ∪
+exe 'digr v. ' .. 0x222A
+" ∩
+exe 'digr c. ' .. 0x2229
+" ⊃
+exe 'digr x. ' .. 0x2283
+" ⊂
+exe 'digr z. ' .. 0x2282
+" ⍕
+exe "digr '. " .. 0x2355
+" ≢
+exe 'digr \". ' .. 0x2262
+" ⍎
+exe 'digr ;. ' .. 0x234E
+" ≡
+exe 'digr :. ' .. 0x2261
+" ⎕
+exe 'digr l. ' .. 0x2395
+" ⌷
+exe 'digr L. ' .. 0x2337
+" '
+exe 'digr k. ' .. 0x27
+" ⌺
+exe 'digr K. ' .. 0x233A
+" ∘
+exe 'digr j. ' .. 0x2218
+" ⍤
+exe 'digr J. ' .. 0x2364
+" ∆
+exe 'digr h. ' .. 0x2206
+" ⍙
+exe 'digr H. ' .. 0x2359
+" ∇
+exe 'digr g. ' .. 0x2207
+" _
+exe 'digr f. ' .. 0x5F
+" ⍫
+exe 'digr F. ' .. 0x236B
+" ⌊
+exe 'digr d. ' .. 0x230A
+" ⌈
+exe 'digr s. ' .. 0x2308
+" ⍺
+exe 'digr a. ' .. 0x237A
+" ⍶
+exe 'digr A. ' .. 0x2376
+" ⊢
+exe 'digr \. ' .. 0x22A2
+" ⊣  (For some reason I need to escape the pipe here)
+exe 'digr \|. ' .. 0x22A3
+" →
+exe 'digr ]. ' .. 0x2192
+" ⍬
+exe 'digr }. ' .. 0x236C
+" ←
+exe 'digr [. ' .. 0x2190
+" ⍞
+exe 'digr {. ' .. 0x235E
+" ⋆
+exe 'digr p. ' .. 0x22C6
+" ⍣
+exe 'digr P. ' .. 0x2363
+" ○
+exe 'digr o. ' .. 0x25CB
+" ⍥
+exe 'digr O. ' .. 0x2365
+" ⍳
+exe 'digr i. ' .. 0x2373
+" ⍸
+exe 'digr I. ' .. 0x2378
+" ↓
+exe 'digr u. ' .. 0x2193
+" ↑
+exe 'digr y. ' .. 0x2191
+" ¥
+exe 'digr Y. ' .. 0xA5
+" ∼
+exe 'digr t. ' .. 0x223C
+" ⍨
+exe 'digr T. ' .. 0x2368
+" ⍴
+exe 'digr r. ' .. 0x2374
+" ∊
+exe 'digr e. ' .. 0x220A
+" ⍷
+exe 'digr E. ' .. 0x2377
+" ⍵
+exe 'digr w. ' .. 0x2375
+" ⍹
+exe 'digr W. ' .. 0x2379
+" ?
+exe 'digr q. ' .. 0x3F
+" ÷
+exe 'digr =. ' .. 0xF7
+" ⌹
+exe 'digr +. ' .. 0x2339
+" ×
+exe 'digr -. ' .. 0xD7
+" !
+exe 'digr _. ' .. 0x21
+" ∧
+exe 'digr 0. ' .. 0x2227
+" ⍲
+exe 'digr \. ' .. 0x2372
+" ∨
+exe 'digr 9. ' .. 0x2228
+" ⍱
+exe 'digr \. ' .. 0x2371
+" ≠
+exe 'digr 8. ' .. 0x2260
+" ⍟
+exe 'digr *. ' .. 0x235F
+" >
+exe 'digr 7. ' .. 0x3E
+" ⊖
+exe 'digr &. ' .. 0x2296
+" ≥
+exe 'digr 6. ' .. 0x2265
+" ⍉
+exe 'digr ^. ' .. 0x2349
+" =
+exe 'digr 5. ' .. 0x3D
+" ⌽
+exe 'digr %. ' .. 0x233D
+" ≤
+exe 'digr 4. ' .. 0x2264
+" ⍋
+exe 'digr $. ' .. 0x234B
+" <
+exe 'digr 3. ' .. 0x3C
+" ⍒
+exe 'digr #. ' .. 0x2352
+" ¯
+exe 'digr 2. ' .. 0xAF
+" ⍫
+exe 'digr @. ' .. 0x236B
+" ¨
+exe 'digr 1. ' .. 0xA8
+" ⌶
+exe 'digr !. ' .. 0x2336
+" ◊
+exe 'digr `. ' .. 0x25CA
+endif
 
 
 function! Q(string)
@@ -745,6 +914,35 @@ fun! StartAppend()
     call cursor( line('.'), col('.') + 1)
 endf
 command! StartAppend call StartAppend()
+
+" curl -s "https://gist.githubusercontent.com/intuited/362802/raw/657c18b7137b5de160be44b98cc9a9d71897758c/Redir.vim" | v
+" Called with a command and a redirection target
+"   (see `:help redir` for info on redirection targets)
+" Note that since this is executed in function context,
+"   in order to target a global variable for redirection you must prefix it with `g:`.
+" EG call Redir('ls', '=>g:buffer_list')
+funct! Redir(command, to)
+  exec 'redir '.a:to
+  exec a:command
+  redir END
+endfunct
+" The last non-space substring is passed as the redirection target.
+" EG
+"   :R ls @">
+"   " stores the buffer list in the 'unnamed buffer'
+" Redirections to variables or files will work,
+"   but there must not be a space between the redirection operator and the variable name.
+" Also note that in order to redirect to a global variable you have to preface it with `g:`.
+"   EG
+"     :R ls =>g:buffer_list
+"     :R ls >buffer_list.txt
+command! -nargs=+ R call call(function('Redir'), split(<q-args>, '\s\(\S\+\s*$\)\@='))
+
+" Store the vim buffer list in buffer_list.txt
+":R ls >buffer_list.txt
+" Store error messages emitted by a function being debugged
+"   in the 'unnamed register'
+":R call FunctionBeingDebugged() @">
 
 " output of ex command into new buffer
 function! Message(cmd)
@@ -1660,6 +1858,16 @@ endf
 
 fun! ListHelpTopics()
     let toplist = system('vim-list-help-topics')
+    return toplist
+endf
+
+fun! ListExtendedHelpTopics()
+    let toplist = system('vim-list-extended-help-topics')
+    return toplist
+endf
+
+fun! ListExInvocations()
+    let toplist = system('vim-list-ex-invocations')
     return toplist
 endf
 

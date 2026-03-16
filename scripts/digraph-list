@@ -11,7 +11,7 @@ test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
 TESTFP="/usr/local/share/vim/vim82/doc/digraph.txt"
 test -f "$TESTFP" && : "${DIGRAPH_FP:="$TESTFP"}"
 
-test -f "$DIGRAPH_FP" && cat "$DIGRAPH_FP" | {
+test -f "$DIGRAPH_FP" && cat "$DIGRAPH_FP" | sed '0,/char.*official name/d' | sed -n '/	.*	.*	.*	/p' | {
     if test -n "$filter"; then
         grep -P "$filter"
     else

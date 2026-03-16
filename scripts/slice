@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+. $SCRIPTS/lib/misc
+
+slice "$@"
+
+# Example
+# echo hello | slice 1 3 1
+

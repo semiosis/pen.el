@@ -78,6 +78,7 @@ fi
 # : "${section:="$(vim-eval "ListFunctions()" | mfz)"}"
 # : "${section:="$(vim-eval "ListHelpTopics()" | mfz -q "'()")"}"
 : "${section:="$(vim-eval "ListHelpTopics()" | mfz)"}"
+# : "${section:="$(vim-eval "ListExtendedHelpTopics()" | mfz)"}"
 
 # echo "vim +$(cmd-nice "help $section") +only $CMD"
 # exit 0

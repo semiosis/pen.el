@@ -5,7 +5,7 @@ export TTY
 
 IFS= read -r -d '' sh_code <<'HEREDOC'
 cd /usr/local/share/vim/vim82/doc
-grep -oRP "\\*[':A-Za-z0-9()]+\\*" | uniqnosort | sed 's/^[^:]\+://' | sed -e "s/^\\*\\(.*\\)\\*$/\\1/" | uniqnosort
+grep -oRP "^:[^	]+	" | sed 's/^[^:]*::/:/' | cut -d "	" -f 1 | uniqnosort
 HEREDOC
 
 oci bash -c "$sh_code" | pavs

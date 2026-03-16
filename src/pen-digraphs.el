@@ -87,4 +87,10 @@
 (defalias 'insert-unicode 'symbol-select)
 (defalias 'insert-symbol 'symbol-select)
 
+(defun show-digraphs (&optional filter)
+  (interactive)
+  (tpop (cmd "digraphs" filter) nil
+        ;; :output_b t
+        :width_pc 90))
+
 (provide 'pen-digraphs)
