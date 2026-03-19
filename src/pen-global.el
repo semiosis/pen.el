@@ -16,7 +16,7 @@
 
 (comment
  ;; Alternatively, you can manually configure project.el and xref.el, add their
- ;; "recognize this global handled project" to the proper places like so:
+> ;; "recognize this global handled project" to the proper places like so:
 
  ;; xref (finding definitions, references)
  (add-to-list 'xref-backend-functions 'global-tags-xref-backend)
@@ -30,5 +30,8 @@
                                       #'global-tags-update-database-with-buffer
                                       nil
                                       t))))
+
+(define-key global-map (kbd "<help> m") 'describe-mode)
+(define-key global-map (kbd "<help> M") 'pen-show-active-minor-modes-for-buffer)
 
 (provide 'pen-global)

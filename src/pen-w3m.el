@@ -11,6 +11,10 @@
 
 (setq w3m-session-crash-recovery nil)
 
+;; (setq w3m-display-mode 'plain)
+;; (setq w3m-display-mode 'tabbed-frames)
+(setq w3m-display-mode 'tabbed)
+
 ;; This means I can have multiple unique w3ms
 (w3m-fb-mode t)
 
@@ -519,5 +523,252 @@ toggled last will first appear) with completion."
   (w3m-filter-enabled-p "w3m-filter-rdrview" t))
 
 (define-key w3m-mode-map (kbd "C-c C-d") 'w3m-toggle-rdrview)
+
+;; TODO Use regular link-hint functions but advise the functions use to open the links
+
+(defun w3m-link-hint-copy ()
+  "Like what I had in pentadactyl."
+  (interactive)
+  (avy-with w3m-link-hint-copy
+    (link-hint--one :copy)))
+
+(define-key w3m-mode-map (kbd "Fy") 'w3m-link-hint-copy)
+
+(defun w3m-link-hint-open ()
+  "Like what I had in pentadactyl."
+  (interactive)
+  (avy-with w3m-link-hint-open
+    (link-hint--one :open)))
+
+(define-key w3m-mode-map (kbd "Fo") 'w3m-link-hint-open)
+
+(defun w3m-link-hint-tv ()
+  "Like what I had in pentadactyl."
+  (interactive)
+  (avy-with w3m-link-hint-tv
+    ;; (let* ((browse-url-browser-function (lambda (&rest args) (tv (car args))))
+    ;;        (browse-url browse-url-browser-function))
+    ;;   (link-hint--one :open))
+
+    (cl-letf (((symbol-function 'link-hint--action)
+               (lambda (action link) (tv (plist-get link :args)))))
+      (link-hint--one :open))))
+
+(defun w3m-link-hint-get-url ()
+  ""
+  (interactive)
+  (avy-with w3m-link-hint-get-url
+    (cl-letf (((symbol-function 'link-hint--action)
+               (lambda (action link) (plist-get link :args))))
+      (link-hint--one :open))))
+
+(defun w3m-link-hint-new-tab ()
+  "Like what I had in pentadactyl."
+  (interactive)
+  (let ((url (w3m-link-hint-get-url))
+        (pen-use-existing-w3m-buffer nil))
+
+    (with-current-buffer "*scratch*"
+      (w3m url))))
+
+(define-key w3m-mode-map (kbd "FF") 'w3m-link-hint-new-tab)
+(define-key w3m-mode-map (kbd "Ft") 'w3m-link-hint-new-tab)
+
+
+(defset pen-use-existing-w3m-buffer t "Enabled, this is the default w3m behaviour. Disable it to force a new w3m buffer")
+
+(setq pen-use-existing-w3m-buffer t)
+
+(defun w3m (&optional url new-session interactive-p)
+  "Visit World Wide Web pages using the external w3m command.
+
+If no emacs-w3m session already exists: If POINT is at a url
+string, visit that. Otherwise, if `w3m-home-page' is defined,
+visit that. Otherwise, present a blank page. This behavior can be
+over-ridden by setting variable `w3m-quick-start' to nil, in
+which case you will always be prompted for a URL.
+
+If an emacs-w3m session already exists: Pop to one of its windows
+or frames. You can over-ride this behavior by setting
+`w3m-quick-start' to nil, in order to always be prompted for a
+URL.
+
+In you have set `w3m-quick-start' to nil, but wish to over-ride
+default behavior from the command line, either run this command
+with a prefix argument or enter the empty string for the prompt.
+In such cases, this command will visit a url at the point or,
+lacking that, the URL set in variable `w3m-home-page' or, lacking
+that, the \"about:\" page.
+
+Any of five display styles are possible. See `w3m-display-mode'
+for a description of those options.
+
+You can also run this command in the batch mode as follows:
+
+  emacs -f w3m http://emacs-w3m.namazu.org/ &
+
+In that case, or if this command is called non-interactively, the
+variables `w3m-pop-up-windows' and `w3m-pop-up-frames' will be ignored
+(treated as nil) and it will run emacs-w3m at the current (or the
+initial) window.
+
+If the optional NEW-SESSION is non-nil, this function creates a new
+emacs-w3m buffer.  Besides that, it also makes a new emacs-w3m buffer
+if `w3m-make-new-session' is non-nil and a user specifies a url string.
+
+The optional INTERACTIVE-P is for the internal use; it is mainly used
+to check whether Emacs calls this function as an interactive command
+in the batch mode."
+  (interactive
+   (let ((url
+          ;; Emacs calls a Lisp command interactively even if it is
+          ;; in the batch mode.  If the following function returns
+          ;; a non-nil value, it means this function is called in
+          ;; the batch mode, and we don't treat it as what it is
+          ;; called interactively.
+          (w3m-examine-command-line-args))
+         new)
+     (list
+      ;; url
+      (or url
+          (let ((default (or (w3m-url-at-point)
+                             (if (w3m-alive-p) 'popup w3m-home-page))))
+            (setq new (if current-prefix-arg
+                          default
+                        (w3m-input-url nil nil default w3m-quick-start
+                                       'feeling-searchy 'no-initial)))))
+      ;; new-session
+      (and w3m-make-new-session
+           (w3m-alive-p)
+           (not (eq new 'popup)))
+      ;; interactive-p
+      (not url))))
+  (let ((nofetch (eq url 'popup))
+        (alived (w3m-alive-p))
+        (buffer (unless new-session (w3m-alive-p t)))
+        (w3m-pop-up-frames (and interactive-p w3m-pop-up-frames))
+        (w3m-pop-up-windows (and interactive-p w3m-pop-up-windows)))
+    (unless (and (stringp url)
+                 (> (length url) 0))
+      (if buffer
+          (setq nofetch t)
+        ;; This command was possibly be called non-interactively or as
+        ;; the batch mode.
+        (setq url (or (w3m-examine-command-line-args)
+                      ;; Unlikely but this function was called with no url.
+                      "about:")
+              nofetch nil)))
+    (unless (and buffer
+                 pen-use-existing-w3m-buffer)
+      ;; It means `new-session' is non-nil or there's no emacs-w3m buffer.
+      ;; At any rate, we create a new emacs-w3m buffer in this case.
+      (setq buffer (w3m-generate-new-buffer "*w3m*")))
+    (w3m-popup-buffer buffer)
+    (unless nofetch
+      ;; `unwind-protect' is needed since a process may be terminated by C-g.
+      (unwind-protect
+          (let* ((crash (and (not alived)
+                             (w3m-session-last-crashed-session)))
+                 (last (and (not alived)
+                            (not crash)
+                            (w3m-session-last-autosave-session))))
+            (w3m-goto-url url)
+            (when (or crash last)
+              (w3m-session-goto-session (or crash last))))
+        ;; Delete useless newly created buffer if it is empty.
+        (w3m-delete-buffer-if-empty buffer)))))
+
+(defun w3m-goto-url-new-session (url &optional reload charset post-data
+                                     referer background)
+  "Visit World Wide Web pages in a new buffer.
+Open a new tab if you use tabs, i.e., `w3m-display-mode' is set to
+`tabbed' or `w3m-use-tab' is set to a non-nil value.
+
+The buffer will get visible if BACKGROUND is nil or there is no other
+emacs-w3m buffer regardless of BACKGROUND, otherwise (BACKGROUND is
+non-nil) the buffer will be created but not appear to be visible.
+BACKGROUND defaults to the value of `w3m-new-session-in-background',
+but it could be inverted if called interactively with the prefix arg."
+  (interactive
+   (list (w3m-input-url "Open URL in new buffer" nil
+                        (or (w3m-active-region-or-url-at-point)
+                            w3m-new-session-url)
+                        nil 'feeling-searchy 'no-initial)
+         nil ;; reload
+         coding-system-for-read
+         nil   ;; post-data
+         nil   ;; referer
+         nil)) ;; background
+  (setq background (when (let (w3m-fb-mode) (ignore w3m-fb-mode)
+                              (w3m-list-buffers t))
+                     (if (w3m-interactive-p)
+                         (if current-prefix-arg
+                             (not w3m-new-session-in-background)
+                           w3m-new-session-in-background)
+                       (or background w3m-new-session-in-background))))
+  (let (buffer)
+    (if (and
+         pen-use-existing-w3m-buffer
+         (or (eq 'w3m-mode major-mode)
+             (and (setq buffer (w3m-alive-p))
+                  (progn (w3m-popup-buffer buffer) t))))
+        (progn
+          (w3m-history-store-position)
+          (setq buffer (w3m-copy-buffer nil "*w3m*" background 'empty t)))
+      (setq buffer (w3m-generate-new-buffer "*w3m*")))
+    (if background
+        (set-buffer buffer)
+      (cond ((and w3m-use-tab (eq 'w3m-mode major-mode))
+             (switch-to-buffer buffer))
+            ((w3m-popup-frame-p) (switch-to-buffer-other-frame buffer))
+            ((w3m-popup-window-p) (switch-to-buffer-other-window buffer))
+            (t (switch-to-buffer buffer)))
+      (w3m-display-progress-message url))
+    (w3m-goto-url
+     url
+     (or reload
+         ;; When new URL has `name' portion, (ir. a URI
+         ;; "fragment"), we have to goto the base url
+         ;; because generated buffer has no content at
+         ;; this moment.
+         (and
+          (w3m-string-match-url-components url)
+          (match-beginning 8)
+          'redisplay))
+     charset post-data referer nil nil background)
+    ;; Delete useless newly created buffer if it is empty.
+    (w3m-delete-buffer-if-empty buffer)))
+
+;; DONE Make it so w3m-browse-url starts a new session 
+(defun w3m-browse-url (url &optional new-session refresh-if-exists)
+  "Ask emacs-w3m to browse URL.
+When called interactively, URL defaults to the string existing around
+the cursor position and looking like a url.  If the prefix argument is
+given[1] or NEW-SESSION is non-nil, create a new emacs-w3m session.
+If REFRESH-IF-EXISTS is non-nil, refresh the page if it already exists
+but is older than the site.
+
+[1] More precisely the prefix argument inverts the boolean logic of
+`browse-url-new-window-flag' that defaults to nil."
+  (interactive (progn
+                 (require 'browse-url)
+                 (browse-url-interactive-arg "Emacs-w3m URL: ")))
+  (when (stringp url)
+    (setq url (w3m-canonicalize-url url))
+    (if (or new-session
+            (not pen-use-existing-w3m-buffer))
+        (w3m-goto-url-new-session url)
+      (w3m-goto-url
+       url
+       ;; Reload the page if it is already visited, older than the site,
+       ;; and REFRESH-IF-EXISTS is non-nil.
+       (let (buffer)
+         (and refresh-if-exists
+              (setq buffer (w3m-alive-p t))
+              (string-equal url (with-current-buffer buffer w3m-current-url))
+              (w3m-time-newer-p (let ((w3m-message-silent t))
+                                  (w3m-last-modified url t))
+                                (w3m-arrived-last-modified url))))
+       nil nil nil nil nil nil t))))
 
 (provide 'pen-w3m)

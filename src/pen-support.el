@@ -847,6 +847,8 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
 ;; (snc "find ~+ -name 'snippets' -type d" nil pen-user-emacs-directory)
 
+;; Edge-cases:
+;; - This wont work: (pen-sne "exit 5") because 'exit' isn't a binary. It closes bash before bash can record the code.
 ;; I think this always assumes output
 (defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code shell env-var-tups)
   "Runs command in shell and return the result.

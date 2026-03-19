@@ -9,10 +9,15 @@ export TTY
 
 . $SCRIPTS/lib/stdin_exists
 
+test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
+test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
+
 eval_vim_expr() {
     vim_expr="$1"
 
-    vim -u NONE -es '+:source $HOME/.emacs.d/pen.el/config/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
+    # I can't ues the 'e:vim' script for this because it handles stdout differently
+    # vim -u NONE -es '+:source $HOME/.emacs.d/pen.el/config/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
+    "$bin" -u NONE -es '+:source $HOME/.emacs.d/pen.el/config/utils.vim' "+:call Insert($vim_expr))" '+:wq! /dev/stdout'
 }
 
 if stdin_exists; then

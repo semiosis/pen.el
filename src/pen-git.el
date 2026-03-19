@@ -20,11 +20,13 @@
   (let ((mess (chomp (vime "strftime(\"%c\")"))))
     (if (buffer-file-name)
         (save-buffer))
-    (pen-sn (concat "git add -A .; git commit -m " (pen-q mess)))
-    (save-excursion
-      (if (buffer-file-name)
-          (save-buffer)))
-    (message (concat "Committed -A . with message " (pen-q mess)))))
+    (let ((ret (pen-sne (concat "git add -A .; git commit -m " (pen-q mess)))))
+      (save-excursion
+        (if (buffer-file-name)
+            (save-buffer)))
+      (if (eq ret 0)
+          (message (concat "Committed -A . with message " (pen-q mess)))
+        (message (concat "git commit failed in dir " (pen-q default-directory) " with code " (str ret)))))))
 
 (defun sh/git-get-url ()
   (pen-sn "git config --get remote.origin.url"))

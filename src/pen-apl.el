@@ -81,4 +81,19 @@ to ‘gnu-apl-executable’)."
 ;; (define-key gnu-apl-interactive-mode-map (kbd "C-c C-h") 'gnu-apl-show-help-for-symbol)
 (define-key gnu-apl-interactive-mode-map (kbd "C-c C-h") nil)
 
+;; e:pronounce-apl
+(defun pen-pronounce-apl (s)
+  (interactive (list (pen-buffer-string-or-selection)))
+  (pen-etv (pen-snc "pronounce-apl" s) 'text-mode))
+
+;; e:visor-apl-show-pronounciation
+(defun pen-visor-apl-show-pronounciation (s)
+  (interactive (list (pen-buffer-string-or-selection)))
+  (pen-etv (pen-snc "visor-apl-show-pronounciation" s) 'text-mode))
+
+;; e:visor-apl-show-keys
+(defun pen-visor-apl-show-keys (s)
+  (interactive (list (pen-buffer-string-or-selection)))
+  (pen-etv (pen-snc "visor-apl-show-keys" s) 'text-mode))
+
 (provide 'pen-apl)

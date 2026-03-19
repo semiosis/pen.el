@@ -27,6 +27,7 @@ run() {
     elif is_stdout_pipe; then
         CMD="$(cmd "$@")"
         : ${CMD:="$(cmd "$@")"}
+        # cmd "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/vim-stdout.txt\"" | tv &>/dev/null
         eval "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/vim-stdout.txt\"" &>/dev/null
         cat /tmp/vim-stdout.txt
     fi

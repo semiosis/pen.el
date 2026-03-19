@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+vim-list-extended-help-topics | grep -oP "^E[0-9]+" | sed 's/^E//' | sort -h | sed "s/^/E/" | pavs

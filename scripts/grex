@@ -2,8 +2,23 @@
 export TTY
 
 . $SCRIPTS/lib/hs
-
 . $SCRIPTS/lib/stdin_exists
+
+eat=n
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -eat) {
+        eat=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$eat" = "n"; then
+    set -- --no-start-anchor --no-end-anchor "$@"
+fi
 
 if stdin_exists; then
     input="$(cat)"

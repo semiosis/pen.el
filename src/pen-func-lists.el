@@ -163,7 +163,10 @@
 
 (defset gnu-apl-mode-funcs '(gnu-apl
                              gnu-apl-show-keyboard
-                             gnu-apl-finnapl-list))
+                             gnu-apl-finnapl-list
+                             pen-visor-apl-show-pronounciation
+                             pen-visor-apl-show-keys
+                             pen-pronounce-apl))
 (defset gnu-apl-interactive-mode-funcs gnu-apl-mode-funcs)
 
 (defset tabulated-list-mode-funcs '(tablist-export-csv

@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+sed 's/≢/ tally /g'
+

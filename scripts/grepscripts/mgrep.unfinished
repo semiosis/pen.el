@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Many pattern grep
+
+# cd "$MYGIT/vim/src"; grep -iHnRP "\"$(seq 1000 | sed 's/^/E/' | grex):" . | grep -P "(\\.c:|/en)" | sed "s/^[^\"]*\"//" | sed "s/\".*//" | v
+
+. $SCRIPTS/lib/hs
+
+pattern_list_fp="$1"
+pattern="$(0</dev/null grex -f "$pattern_list_fp")"
+grep "$pattern"

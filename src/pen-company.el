@@ -103,7 +103,9 @@
     ;; company-org-block
 
     ;; slime-simple-complete-symbol
-    company-dabbrev
+
+    ;; 
+    ;; company-dabbrev
 
     ;; This is self-referential
     ;; pen-company-filetype

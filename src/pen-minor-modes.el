@@ -21,5 +21,8 @@
   :lighter " 🖊"
   :keymap pen-mydefaults-minor-mode-map)
 
+(defun pen-show-active-minor-modes-for-buffer ()
+  (interactive)
+  (etv (list2str (manage-minor-mode--active-list))))
 
 (provide 'pen-minor-modes)
