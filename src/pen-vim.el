@@ -1,8 +1,9 @@
 (use-package vimrc-mode :ensure t)
 
-(defun vimhelp (thing)
+(defun vimhelp (&optional thing)
   ;; (interactive (list (ask (pen-thing-at-point))))
-  (interactive (list (pen-thing-at-point)))
+  (interactive (list (pen-confirm-input (pen-thing-at-point))))
+  (setq thing (sor thing))
 
   ;; (sps (cmd "vimhelp" thing))
   (tpop (cmd "vimhelp" thing)))

@@ -6,6 +6,9 @@ export TTY
 ## vim already has a black and white mode which might be useful,
 ## so don't disable it with cat
 
+test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
+test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
+
 if pen-rc-test -f black_and_white; then
     export BLACK_AND_WHITE="y"
 
@@ -29,7 +32,7 @@ cat > "$infp"
 # The -c here used to be a --cmd. It seems that
 # that is why ansivim had stopped working,
 # because --cmd stopped working
-unbuffer vim -E -X -R -i NONE -c "silent! echo$extra_commands" "$@" -c "visual | call AnsiHighlight(\"$outfp\") | q" -- "$infp" &>/dev/null
+unbuffer "$bin" -E -X -R -i NONE -c "silent! echo$extra_commands" "$@" -c "visual | call AnsiHighlight(\"$outfp\") | q" -- "$infp" &>/dev/null
 
 cat "$outfp" | (
     if test "$BLACK_AND_WHITE" = "y"; then

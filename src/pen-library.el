@@ -118,7 +118,10 @@
 
 ;; This is usually used programmatically to get a single path name
 (defun get-path (&optional soft no-create-path for-clipboard semantic-path keep-buffer-name)
-  "Get path for buffer. semantic-path means a path suitable for google/nl searching"
+  "Get path for buffer.
+If `soft` is `t`, then the path should be intelligible by the mode (e.g. an Info path like `(activities) Top`), but is not a URL/file path by default.
+`semantic-path` means a path suitable for google/nl searching.
+If `soft` and `semantic-path` are both `nil` then that would usually result in a URI / file path. "
   (interactive)
 
   (let ((bn (current-buffer-name)))
@@ -488,6 +491,7 @@ single-character strings, or a string of characters."
    thing))
 
 (defalias 'ask 'pen-ask)
+(defalias 'pen-confirm-input 'pen-ask)
 
 (cl-defun pen-topic (&optional short semantic-only &key no-select-result)
   "Determine the topic used for pen functions"

@@ -5,6 +5,8 @@ export TTY
 # hs
 # his -i -f red -b dblue '.*'
 
+. $SCRIPTS/lib/tput
+
 colour_name_to_number() {
     colour_name="$1"
 

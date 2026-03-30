@@ -8,7 +8,14 @@ export DISPLAY
 test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
 test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
 
 is_stdout_pipe() {
     # If stout is a pipe
@@ -30,6 +37,9 @@ run() {
         # cmd "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/vim-stdout.txt\"" | tv &>/dev/null
         eval "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/vim-stdout.txt\"" &>/dev/null
         cat /tmp/vim-stdout.txt
+    else
+        echo "[[e:vim]] No tty. Opening in a tmux popup." 1>&2
+        tpop vim "$@"
     fi
 }
 

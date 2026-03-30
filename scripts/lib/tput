@@ -1,0 +1,9 @@
+# To test this, run `l' in eshell.
+# ~/notes/ws/apl:master* λ# l
+# pen-l <options> <pattern>
+# ~/notes/ws/apl:master* λ# l
+# pen-l <options> <pattern>
+
+tput() {
+    command tput "$@" | sed 's/$//'
+}

@@ -855,9 +855,11 @@ Try next command on `error', passing ARG as `prefix-arg'."
   ;; otherwise, call w3m-fz-history
 
   (cond
-   ((major-mode-p 'w3m-mode)
+   ((and (major-mode-p 'w3m-mode)
+         (called-interactively-p))
     (call-interactively 'handle-fz-history))
-   ((major-mode-p 'eww-mode)
+   ((and (major-mode-p 'eww-mode)
+         (called-interactively-p))
     (call-interactively 'handle-fz-history))
    (t
     (if (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -868,13 +870,13 @@ Try next command on `error', passing ARG as `prefix-arg'."
                 -q "cancel")))
           (cond
            ((string-equal "eww history" action)
-            (call-interactively 'lg-fz-history))
+            (lg-fz-history t))
            ((string-equal "repo" action)
-            (call-interactively 'w3m-fz-history))
+            (w3m-fz-history t))
            ((string-equal "cancel" action)
             nil)
            (t
-            (call-interactively 'w3m-fz-history))))
-      (call-interactively 'w3m-fz-history)))))
+            (w3m-fz-history t))))
+      (w3m-fz-history t)))))
 
 (provide 'pen-handle)

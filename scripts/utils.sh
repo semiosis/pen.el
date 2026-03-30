@@ -138,7 +138,15 @@ if test "$hasstdin" = 0; then
     has_stdin=y
 fi
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
 is_tty
 istty="$?"
 

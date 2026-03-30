@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+bin="$1"
+shift
+bin_fp="$(which "$bin")"
+
+# cmd command "$bin_fp" "$@" | tv
+command "$bin_fp" "$@"

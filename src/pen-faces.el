@@ -66,7 +66,7 @@
      )
     ("=" ;; (:background "maroon" :foreground "white")
      org-verbatim verbatim)
-    ("$HOME" ;; (:background "deep sky blue" :foreground "MidnightBlue")
+    ("~" ;; (:background "deep sky blue" :foreground "MidnightBlue")
      org-code verbatim)
     ;; ("+" (:strike-through t))
     ("+" org-strikethrough)))
@@ -839,6 +839,23 @@ is specified, `:italic' is ignored."
     (set-face-background 'w3m-bold "#222222")
     (set-face-foreground 'w3m-italic "#777777")
     (set-face-background 'w3m-italic 'unspecified)
+
+    (progn
+      ;; helm-ff-file used for recentf
+      (set-face-foreground 'helm-ff-file "#448888")
+      (set-face-foreground 'helm-buffer-modified "#bbbbbb")
+      (set-face-foreground 'helm-buffer-directory "#000000")
+      (set-face-foreground 'helm-buffer-file "#cccc55")
+      (set-face-foreground 'helm-buffer-process "#333333")
+      (set-face-foreground 'helm-buffer-saved-out "#bbbbbb")
+      ;; (set-face-background 'helm-ff-file 'unspecified)
+      (set-face-background 'helm-ff-file "#224444")
+      (set-face-background 'helm-buffer-modified 'unspecified)
+      (set-face-background 'helm-buffer-directory "#4444cc")
+      ;; (set-face-background 'helm-buffer-file 'unspecified)
+      (set-face-background 'helm-buffer-file "#402010")
+      (set-face-background 'helm-buffer-process 'unspecified)
+      (set-face-background 'helm-buffer-saved-out "#444444"))
 
     (require 'button)
     (set-face-foreground 'button fg)

@@ -91,6 +91,11 @@ to ‘gnu-apl-executable’)."
   (interactive (list (pen-buffer-string-or-selection)))
   (pen-etv (pen-snc "visor-apl-show-pronounciation" s) 'text-mode))
 
+;; e:visor-apl-show-functionality
+(defun pen-visor-apl-show-functionality (s)
+  (interactive (list (pen-buffer-string-or-selection)))
+  (pen-etv (pen-snc "visor-apl-show-functionality" s) 'text-mode))
+
 ;; e:visor-apl-show-keys
 (defun pen-visor-apl-show-keys (s)
   (interactive (list (pen-buffer-string-or-selection)))

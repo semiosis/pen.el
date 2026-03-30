@@ -350,6 +350,10 @@ if ! has('nvim')
 " DISCARD Replace hex with unicode
 " DONE "vimhelp digraph-table" shows how to use hex with exe
 
+" call system('tv', version . "")
+
+" The hex format seems not to be working with /usr/bin/vim (version 801)
+" but it does work for /usr/local/bin/vim (version 802).
 " APL
 " ⌿
 " digr /. x233F

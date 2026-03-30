@@ -3,6 +3,7 @@
   (pen-smart-choose-browser-function url))
 
 (defun pen-emacs-web-browse (url &optional _new-window)
+  (interactive (list (pen-web-history)))
   (let ((br
          (pen-qa
           -e "eww"
@@ -13,6 +14,7 @@
           -l "elinks"
           -B "ebrowsh"
           -I "w3m"
+          -d "default"
           -f "ff")))
 
     (pcase br
@@ -24,7 +26,11 @@
       ("elinks" (elinks url))
       ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
       ("rdrview" (rdrview url))
-      (_ (browse-url-generic url _new-window)))))
+      ("default" (browse-url-generic url _new-window))
+
+      ;; This opens tpop
+      ;; (_ (browse-url-generic url _new-window))
+      )))
 
 (defun pen-smart-choose-browser-function (url &optional _new-window)
   (cond ((minor-mode-p pen-rdrview-minor-mode) (rdrview url))

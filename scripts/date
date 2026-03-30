@@ -4,12 +4,26 @@ export TTY
 # v +/"date() {" "$PENELD/config/bash/bashrc"
 # v +/"date() {" "$PENELD/config/zsh/zshrc"
 
-# I think NZDT is an incorrect timezone specification
-# It should be NZ or Pacific/Auckland
-# : ${TZ:="NZDT"}
-: ${TZ:="Pacific/Auckland"}
-# : ${TZ:="UTC+12"}
-# : ${TZ:="UTC+13"}
-export TZ="$TZ"
+# # I think NZDT is an incorrect timezone specification
+# # It should be NZ or Pacific/Auckland
+# # : ${TZ:="NZDT"}
+# : ${TZ:="Pacific/Auckland"}
+# # : ${TZ:="UTC+12"}
+# # : ${TZ:="UTC+13"}
+# export TZ="$TZ"
+# /bin/date "$@"
 
-/bin/date "$@"
+date() {
+    : ${TZ:="NZ"}
+    # : ${TZ:="UTC+12"}
+    # : ${TZ:="UTC+13"}
+    export TZ="$TZ"
+
+    if is_tty; then
+        # /bin/date "$@" | hls purple
+        /bin/date "$@" | vimcat | cat
+    else
+        /bin/date "$@"
+    fi
+}
+date "$@"

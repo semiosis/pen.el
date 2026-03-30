@@ -103,6 +103,15 @@
 
 (advice-add 'pen-comint-bol :around #'shut-up-around-advice)
 
+(defun pen-comint-eol ()
+  (interactive)
+
+  (cond
+   ((not visual-line-mode)
+    (end-of-line))
+   (t
+    (call-interactively 'mwim-end-of-line-or-code))))
+
 (defun comint-delchar ()
   (interactive)
   (let ((pos

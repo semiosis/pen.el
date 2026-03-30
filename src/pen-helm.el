@@ -665,4 +665,181 @@ Call `helm' only with SOURCES and BUFFER as args."
         ("M-w" . helm-help-copy-region-as-kill)
         ("q" . helm-help-quit)))
 
+(defun helm-buffer--details (buffer &optional details)
+  (require 'dired)
+  (let* ((mode (helm-buffer--format-mode-name buffer))
+         (buf (get-buffer buffer))
+         (size (propertize (helm-buffer-size buf)
+                           'face 'helm-buffer-size))
+         (proc (get-buffer-process buf))
+         (dir (mnm (with-current-buffer buffer
+                     (helm-aif default-directory (abbreviate-file-name it)))))
+         (path (with-current-buffer buffer
+                 (get-path t t)))
+         (file-name (helm-aif (buffer-file-name buf) (abbreviate-file-name it)))
+         (name (buffer-name buf))
+         (name-prefix (when (and dir (file-remote-p dir))
+                        (propertize "@ " 'face 'helm-ff-prefix)))
+         (archive-p (and (fboundp 'tramp-archive-file-name-p)
+                         (tramp-archive-file-name-p dir))))
+    (when name-prefix
+      ;; Remote tramp buffer names may be hexified, make them more readable.
+      (setq dir (helm-url-unhex-string dir)
+            name (helm-url-unhex-string name)))
+    ;; Handle tramp archive buffers specially.
+    (if archive-p
+        (helm-buffer--show-details
+         name name-prefix file-name size mode dir
+         'helm-buffer-archive 'helm-buffer-process nil details 'filebuf)
+      ;; No fancy things on remote buffers.
+      (if (and name-prefix helm-buffer-skip-remote-checking)
+          (helm-buffer--show-details
+           name name-prefix file-name size mode dir
+           'helm-buffer-file 'helm-buffer-process nil details 'filebuf)
+        (cond
+         (;; A dired buffer.
+          (rassoc buf dired-buffers)
+          (helm-buffer--show-details
+           name name-prefix dir size mode dir
+           'helm-buffer-directory 'helm-buffer-process nil details 'dired))
+         ;; A buffer file modified somewhere outside of emacs.=>red
+         ((and file-name
+               (file-exists-p file-name)
+               (not (verify-visited-file-modtime buf)))
+          (helm-buffer--show-details
+           name name-prefix file-name size mode dir
+           'helm-buffer-saved-out 'helm-buffer-process nil details 'modout))
+         ;; A new buffer file not already saved on disk (or a deleted file) .=>indianred2
+         ((and file-name (not (file-exists-p file-name)))
+          (helm-buffer--show-details
+           name name-prefix file-name size mode dir
+           'helm-buffer-not-saved 'helm-buffer-process nil details 'notsaved))
+         ;; A buffer file modified and not saved on disk.=>orange
+         ((and file-name (buffer-modified-p buf))
+          (helm-buffer--show-details
+           name name-prefix file-name size mode dir
+           'helm-buffer-modified 'helm-buffer-process nil details 'mod))
+         ;; A buffer file not modified and saved on disk.=>green
+         (file-name
+          (helm-buffer--show-details
+           name name-prefix file-name size mode dir
+           'helm-buffer-file 'helm-buffer-process nil details 'filebuf))
+         ;; A non-file, modified buffer See bug#1917
+         ((with-current-buffer name
+            (and helm-buffers-tick-counter
+                 (/= helm-buffers-tick-counter (buffer-modified-tick))))
+          (helm-buffer--show-details
+           name (and proc name-prefix) dir size mode dir
+           'helm-no-file-buffer-modified 'helm-buffer-process proc details 'nofile-mod))
+         ;; Any non--file buffer.=>italic
+         (t
+          (helm-buffer--show-details
+           ;; (concat "t-" name)
+           name (and proc name-prefix)
+           ;; path
+           dir
+           size mode
+           ;; path
+           dir
+           'helm-non-file-buffer 'helm-buffer-process proc details 'nofile
+           path)))))))
+
+(defun helm-buffer--show-details (buf-name prefix help-echo
+                                  size mode dir face1 face2
+                                  proc details type &optional path)
+  (append
+   (list
+    (concat prefix
+            (propertize buf-name 'face face1
+                        'help-echo help-echo
+                        'type type)))
+   (and details
+        (list size mode
+              (propertize
+               (cond
+                (proc (format "(proc `%s' %s in `%s')"
+                              (process-name proc)
+                              (process-status proc) dir))
+                (path ;; (format "(path `%s')" path)
+                 path)
+                (t
+                 ;; (format "(in `%s')" dir)
+                 (pen-q dir)))
+               'face face2)))))
+
+;; DONE Make it so the help appears in a tmux popup instead
+;; DISCARD Make it so it displays the way ivy-help does
+;; Sadly, this doesn't work well because helm does something strange
+;; with key bindings
+(defun helm-help ()
+  "Generate Helm's help according to `help-message' attribute.
+
+If `helm-buffer' is empty, provide completions on `helm-sources'
+to choose its local documentation.
+If source doesn't have any `help-message' attribute, a generic
+message explaining this is added instead.
+The global `helm-help-message' is always added after this local
+help."
+  (interactive)
+  (require 'helm-mode)                  ; for helm-comp-read.
+  (with-helm-alive-p
+    (let ((source (or (helm-get-current-source)
+                      (helm-comp-read
+                       "Help for: "
+                       (cl-loop for src in (with-helm-buffer helm-sources)
+                                collect `(,(assoc-default 'name src) .
+                                          ,src))
+                       :allow-nest t
+                       :exec-when-only-one t))))
+      ;; (ivy-help)
+      (let ((s (with-temp-buffer
+                 (helm-aif (assoc-default 'help-message source)
+                     (insert (substitute-command-keys
+                              (helm-interpret-value it)))
+                   (insert "* No specific help for this source available."))
+                 (insert "\n\n"
+                         (substitute-command-keys
+                          (helm-interpret-value helm-help-message)))
+                 (buffer-string)
+                 ;; (nw "vipify emacs -Q -nw" nil (buffer-string))
+                 ;; (kill-buffer)
+                 )))
+        ;; (pen-helm-help-display s)
+
+        ;; (nw "vipify emacs -Q -nw" nil s)
+        (let ((fp (tf "helm-help" s "org")))
+          ;; (nw (cmd "nvt" "van" "emacs" "-Q" "-nw" fp))
+          (nw (cmd "nvmacs" fp)))
+        ;; (tpop-vipe s)
+        ))))
+
+;; Don't use this
+(defun pen-helm-help-display (s)
+  "Help for `helm' (but display it the same way as `ivy-help`)."
+  ;; (interactive)
+  (let ((buf (get-buffer "*Helm Help*"))
+        (inhibit-read-only t))
+    (unless buf
+      (setq buf (get-buffer-create "*Helm Help*"))
+      (cl-letf (((symbol-function #'help-buffer) (lambda () buf)))
+        (describe-mode))
+      (with-current-buffer buf
+        (goto-char (point-min))
+        (insert "* describe-mode\n")
+        (goto-char (point-min))
+        (insert s)
+        ;; (insert-file-contents ivy-help-file)
+        (org-mode)
+        (setq-local org-hide-emphasis-markers t)
+        (view-mode)
+        (goto-char (point-min))
+        (let ((inhibit-message t))
+          (org-cycle '(64)))))
+    (if (eq this-command 'ivy-help)
+        (switch-to-buffer buf)
+      (with-ivy-window
+        (pop-to-buffer buf)))
+    (view-mode)
+    (goto-char (point-min))))
+
 (provide 'pen-helm)

@@ -165,6 +165,7 @@
                              gnu-apl-show-keyboard
                              gnu-apl-finnapl-list
                              pen-visor-apl-show-pronounciation
+                             pen-visor-apl-show-functionality
                              pen-visor-apl-show-keys
                              pen-pronounce-apl))
 (defset gnu-apl-interactive-mode-funcs gnu-apl-mode-funcs)

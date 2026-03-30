@@ -459,6 +459,7 @@ display values."
                          ;; ("i" #'ielm "ielm")
                          ("c" (df repl-clisp (term "clisp")) "clisp")
                          ("e" #'ielm "ielm")
+                         ("b" #'shell "shell (bash)")
                          ("m" #'iman "iman")
                          ("s" #'lg-search "LG Search")
                          ("g" #'lg-eww-browse-url "LG Go to URL")

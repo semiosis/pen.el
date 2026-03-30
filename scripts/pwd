@@ -1,9 +1,16 @@
 #!/bin/bash
 export TTY
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
 
-if is_tty; then
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if is_tty | is_emacs_shell; then
     /bin/pwd "$@" | lolcat
 else
     /bin/pwd "$@"

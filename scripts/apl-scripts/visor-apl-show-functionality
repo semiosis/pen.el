@@ -3,7 +3,7 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
-# e:visor-apl-show-functionality
+# e:visor-apl-show-pronounciation
 
 # TODO Do variants of APL dialects:
 # - gnu-apl
@@ -14,17 +14,18 @@ export TTY
 
 case "$dialect" in
     gnu-apl) {
-        sed -e 's/≢/≢‹tally›/g' \
-            -e 's/\//\/‹slash›/g'
+        sed -e 's/≢/≢‹›/g' \
+            -e 's/\//\/‹›/g'
     }
     ;;
 
     K) {
-        sed -e 's/≢/≢‹tally›/g' \
-            -e 's/\//\/‹slash›/g'
+        sed -e 's/≢/≢‹›/g' \
+            -e 's/\//\/‹reduce›/g'
         :
     }
     ;;
 
     *)
 esac
+

@@ -116,7 +116,7 @@
         (pen-etv l)
       l)))
 
-(defun lg-fz-history ()
+(defun lg-fz-history (&optional dont-browse)
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (pen-he "eww-display-html")
@@ -125,11 +125,12 @@
                 nil
                 nil
                 "eww history: ")))
-      (if url
+      (if (and url (not dont-browse))
           ;; (lg-eww url)
-          (pen-smart-choose-browser-function url)))))
+          (pen-smart-choose-browser-function url)
+        url))))
 
-(defun w3m-fz-history ()
+(defun w3m-fz-history (&optional dont-browse)
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (pen-he "w3m-goto-url")
@@ -138,9 +139,10 @@
                 nil
                 nil
                 "w3m history: ")))
-      (if url
+      (if (and url (not dont-browse))
           ;; (lg-eww url)
-          (pen-smart-choose-browser-function url)))))
+          (pen-smart-choose-browser-function url)
+        url))))
 
 (defun eww-retrieve (url callback cbargs)
   (if (null eww-retrieve-command)

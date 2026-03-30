@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+test -f "/usr/bin/strace" && : "${bin:="/usr/bin/strace"}"
+
+"$bin" -s 100 "$@"

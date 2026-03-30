@@ -351,8 +351,10 @@ When LINE is given, assume it represents a line and compute its indentation."
 
 (defun org-mode-hook-after ()
   (interactive)
-  (if (s-match "/glossary\.org$" (get-path))
-      (org-global-cycle 1))
+  (let ((fp (get-path nil t)))
+    (if fp
+        (if (s-match "/glossary\.org$" fp)
+            (org-global-cycle 1))))
   ;; This broke lsp company completion
   ;; (add-to-list 'company-backends 'company-ispell)
   )

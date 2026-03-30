@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+nvc van emacs -nw -Q -f xterm-mouse-mode "$@"

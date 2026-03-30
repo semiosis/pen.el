@@ -37,7 +37,8 @@
 (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
   (setq eshell-highlight-prompt nil
-        eshell-prompt-function 'epe-theme-lambda))
+        ;; eshell-prompt-function 'epe-theme-lambda
+        eshell-prompt-function 'epe-theme-dakrone))
 
 
 ;; mx:eshell-git-prompt-use-theme
@@ -120,6 +121,7 @@
 (setq eshell-cmpl-ignore-case t)
 (setq eshell-ask-to-save-history (quote always))
 (setq eshell-prompt-regexp "❯❯❯ ")
+(setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
 
 (defun cljr--point-after (&rest actions)
   "Returns POINT after performing ACTIONS.
@@ -390,7 +392,8 @@ or an external command."
   (setq args (mapcar 'str args))
   
   ;; (pen-snc (eval `(cmd "command" ,@args)))
-  (pen-snc (apply 'cmd (cons "command" args))))
+  ;; (pen-snc (apply 'cmd (cons "command" args)))
+  (pen-snc (apply 'cmd (cons "com" args))))
 
 (defun eshell/slugify (&rest args)
   "Return the argument(s) as a single slug."
@@ -619,5 +622,90 @@ If N is negative, search forwards for the -Nth following match."
 
 ;; Where to put this?
 ;; (add-to-list 'eshell-modules-list 'eshell-smart)
+
+(defun pen-eshell-visual-command-p (command)
+  (cl-letf (((symbol-function 'eshell-interactive-output-p) 'identity)) (eshell-visual-command-p command nil)))
+
+
+;; j:eshell-execute-pipeline
+(defun eshell-parse-pipeline (terms)
+  "Parse a pipeline from TERMS, return the appropriate Lisp forms."
+  (let* (eshell--sep-terms
+         (bigpieces (eshell-separate-commands terms "\\(&&\\|||\\)"
+                                              nil 'eshell--sep-terms))
+         (bp bigpieces)
+         (results (list t))
+         final)
+    (while bp
+      (let ((subterms (car bp)))
+        (let* ((pieces (eshell-separate-commands subterms "|"))
+               (p pieces))
+          (while p
+            (let ((cmd (car p)))
+              (run-hook-with-args 'eshell-pre-rewrite-command-hook cmd)
+              (setq cmd (run-hook-with-args-until-success
+                         'eshell-rewrite-command-hook cmd))
+              (let ((eshell--cmd cmd))
+                (run-hook-with-args 'eshell-post-rewrite-command-hook
+                                    'eshell--cmd)
+                (setq cmd eshell--cmd))
+              (setcar p (funcall eshell-post-rewrite-command-function cmd)))
+            (setq p (cdr p)))
+          (nconc results
+                 (list
+                  (if (<= (length pieces) 1)
+                      (car pieces)
+                    (cl-assert (not eshell-in-pipeline-p))
+                    `(eshell-execute-pipeline ',pieces)))))
+        (setq bp (cdr bp))))
+    ;; `results' might be empty; this happens in the case of
+    ;; multi-line input
+    (setq results (cdr results)
+          results (nreverse results)
+          final (car results)
+          results (cdr results)
+          eshell--sep-terms (nreverse eshell--sep-terms))
+    (while results
+      (cl-assert (car eshell--sep-terms))
+      (setq final (eshell-structure-basic-command
+                   'if (string= (car eshell--sep-terms) "&&") "if"
+                   `(eshell-protect ,(car results))
+                   `(eshell-protect ,final))
+            results (cdr results)
+            eshell--sep-terms (cdr eshell--sep-terms)))
+    final))
+
+;; Fix eshell-prompt-regexp
+(defun epe-theme-lambda ()
+  "A eshell-prompt lambda theme."
+  ;; (setq eshell-prompt-regexp "^[^#\nλ]*[#λ] ")
+  (setq eshell-prompt-regexp "^[^#\nλ]* λ[#]* ")
+  (concat
+   (when (epe-remote-p)
+     (epe-colorize-with-face
+      (concat (epe-remote-user) "@" (epe-remote-host) " ")
+      'epe-remote-face))
+   (let ((env-current-name (or (bound-and-true-p venv-current-name)
+                               (bound-and-true-p conda-env-current-name))))
+     (when (and epe-show-python-info (bound-and-true-p env-current-name))
+       (epe-colorize-with-face (concat "(" env-current-name ") ") 'epe-venv-face)))
+   (let ((f (cond ((eq epe-path-style 'fish) 'epe-fish-path)
+                  ((eq epe-path-style 'single) 'epe-abbrev-dir-name)
+                  ((eq epe-path-style 'full) 'abbreviate-file-name))))
+     (epe-colorize-with-face (funcall f (eshell/pwd)) 'epe-dir-face))
+   (when (epe-git-p)
+     (concat
+      (epe-colorize-with-face ":" 'epe-dir-face)
+      (epe-colorize-with-face
+       (concat (epe-git-branch)
+               (epe-git-dirty)
+               (epe-git-untracked)
+               (let ((unpushed (epe-git-unpushed-number)))
+                 (unless (= unpushed 0)
+                   (concat ":" (number-to-string unpushed)))))
+       'epe-git-face)))
+   (epe-colorize-with-face " λ" 'epe-symbol-face)
+   (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
+   " "))
 
 (provide 'pen-eshell)

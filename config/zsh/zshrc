@@ -760,19 +760,6 @@ pwd() {
     fi
 }
 
-date() {
-    : ${TZ:="NZ"}
-    # : ${TZ:="UTC+12"}
-    # : ${TZ:="UTC+13"}
-    export TZ="$TZ"
-
-    if is_tty; then
-        /bin/date "$@" | vimcat | cat
-    else
-        /bin/date "$@"
-    fi
-}
-
 # displayopts BORDER
 displayopts
 

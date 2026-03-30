@@ -16,18 +16,24 @@
     (progn
       (if (equal current-prefix-arg nil) ;; No C-u
           (progn
-            (end-of-line)
+            (pen-comint-eol)
             (call-interactively 'cua-set-mark)
-            ;; twice so the cursor moves past the initial whitespace
+            ;; DISCARD twice so the cursor moves past the initial whitespace
+            ;; (pen-comint-bol)
             (pen-comint-bol)
-            (pen-comint-bol)
+            ;; Rather, move forward
+            (while (sor (regex-at-point "[ 	]"))
+              (forward-char))
             ;; (beginning-of-line-or-indentation)
             ;; (beginning-of-line-or-indentation)
             (call-interactively 'cua-exchange-point-and-mark))
         (progn
-          ;; twice so the cursor moves past the initial whitespace
+          ;; DISCARD twice so the cursor moves past the initial whitespace
+          ;; (pen-comint-bol)
           (pen-comint-bol)
-          (pen-comint-bol)
+          ;; Rather, move forward
+          (while (sor (regex-at-point "[ 	]"))
+            (forward-char))
           (cua-set-mark)
           (end-of-line))))))
 

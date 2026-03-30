@@ -11,5 +11,8 @@ rm -f /tmp/vim-eval-out.txt
 # cmd ex  "call writefile(split($cm), \"/tmp/vim-eval-out.txt\")"
 # vim -c "call writefile(split($cm), \"/tmp/vim-eval-out.txt\")"
 # ex -s was breaking it for vim-eval "ListFunctions()". I'm not sure why. So using &>/dev/null istead
+# echo hi | tv &>/dev/null
+# strace ex -c "call writefile(split($cm, '\n'), \"/tmp/vim-eval-out.txt\")" -c "q!" 2>&1 | tv &>/dev/null
+# ex -c "call writefile(split($cm, '\n'), \"/tmp/vim-eval-out.txt\")" -c "q!" 2>&1 | tv &>/dev/null
 ex -c "call writefile(split($cm, '\n'), \"/tmp/vim-eval-out.txt\")" -c "q!" &>/dev/null
 cat /tmp/vim-eval-out.txt | pavs

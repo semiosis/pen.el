@@ -97,11 +97,11 @@ if test "$has_stdin" = y; then
     exec <&2
 fi
 
-# just run the command without nvim
-if inside-emacs-p && ! test "$force_nvc_on" = y; then
-    eval "$CMD"
-    exit "$?"
-fi
+# # just run the command without nvim
+# if inside-emacs-p && ! test "$force_nvc_on" = y; then
+#     eval "$CMD"
+#     exit "$?"
+# fi
 
 # This must come *BEFORE* output_fp=
 if test "$INSIDE_NEOVIM" = y || test "$NO_NVC" = y; then

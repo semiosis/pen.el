@@ -1328,9 +1328,13 @@ snippet 3rdlast
 	n=$(($#-2))
 	echo ${!n}
 snippet is-stdout-tty
+	is_emacs_shell() {
+		[[ \$INSIDE_EMACS == *,comint ]] || [[ \$INSIDE_EMACS == *,eshell ]];
+	}
+	
 	is_tty() {
 		# If stout is a tty
-		[ -t 1 ] && ! test "$TERM" = "dumb"
+		[ -t 1 ] && ! test "\$TERM" = "dumb" && ! is_emacs_shell;
 	}
 snippet ispipe
 	is_stdout_pipe() {

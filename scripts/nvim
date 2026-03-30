@@ -19,6 +19,48 @@ fi
 
 test -f "/usr/local/bin/nvim" && : "${bin:="/usr/local/bin/nvim"}"
 test -f "/usr/bin/nvim" && : "${bin:="/usr/bin/nvim"}"
-"$bin" -u $HOME/.nvimrc -c "$extra_commands" "$@"
+# "$bin" -u $HOME/.nvimrc -c "$extra_commands" "$@"
+
+set --  -u $HOME/.nvimrc -c "$extra_commands" "$@"
 
 # alt nvim "$@"
+
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+run() {
+    if is_tty; then
+        "$bin" "$@"
+    elif is_stdout_pipe; then
+        CMD="$(cmd "$@")"
+        : ${CMD:="$(cmd "$@")"}
+        # cmd "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/nvim-stdout.txt\"" | tv &>/dev/null
+        eval "unbuffer $bin -c $(cmd-nice-posix "$extra_commands") $CMD -c \"wq! /tmp/nvim-stdout.txt\"" &>/dev/null
+        cat /tmp/nvim-stdout.txt
+    else
+        echo "[[e:nvim]] No tty. Opening in a tmux popup." 1>&2
+        tpop nvim "$@"
+    fi
+}
+
+# Do this to remove the annoying message from vim
+# Not sure if needed for nvim
+if stdin_exists; then
+    IFS= read -rd '' contents < <(cat);typeset -p contents &>/dev/null
+    if test -n "$contents"; then
+        printf -- "%s" "$contents" | run "$@"
+    fi
+else
+    run "$@"
+fi

@@ -3,5 +3,10 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
-sed 's/≢/ tally /g'
-
+sed -e 's/≢/ tally /g' \
+    -e 's/⎕/ quad /g' \
+    -e 's/IO/ eye-oh (index origin) /g' \
+    -e 's/←/ gets /g' \
+    -e 's/0/ zero /g' \
+    -e 's/⍝/ lamp /g' \
+    -e 's/⍤/ atop /g'
