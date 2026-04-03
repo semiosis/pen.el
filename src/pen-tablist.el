@@ -28,7 +28,7 @@
 
 (defun cmd-out-to-tablist-quick (cmd &optional has-header)
   (interactive (list (read-string-hist "tablist cmd: ")))
-  (tablist-import-string (pen-sn (concat cmd " | coerce-to-csv")) has-header))
+  (tablist-import-string (pen-sn (concat cmd " | coerce-to-csv")) has-header t))
 
 
 ;; Have an interactive selection of the available modes
@@ -202,9 +202,11 @@ This function is lazy and therefore pretty slow."
   (tablist-import-string (cat path) has-header))
 (defalias 'tablist-import-csv 'tablist-import-path)
 
-(defun tablist-import-string (s &optional has-header)
+(defun tablist-import-string (s &optional has-header no-coerce-to-csv-b)
   ""
-  (tablist-buffer-from-csv-string (pen-sn "coerce-to-csv" s) has-header))
+  (tablist-buffer-from-csv-string (if no-coerce-to-csv-b
+                                      s
+                                    (pen-sn "coerce-to-csv" s)) has-header))
 
 ;; The default char should be tab
 ;; csv-mode should be started

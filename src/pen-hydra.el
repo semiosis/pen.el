@@ -321,6 +321,10 @@ display values."
                          ("a" #'x/git-add-all-below "add all below")
                          ("t" #'sh/git-add-all-below "add all below")
                          ("m" #'sh/git-amend-all-below "amend below")
+                         ("C" #'pen-add-all-commit "Add all and commit")
+                         ("M" #'sh/git-amend-all-below "amend below")
+                         ("h" #'magit-sps-current-file "Add all and commit")
+                         ;; ("m" #'magit-sph "Add all and commit")
                          ("'" #'git-d-cached "git d cached")))
 
 (convert-hydra-to-sslk "lX"
@@ -430,12 +434,12 @@ display values."
                          ("0" #'delete-window "delete window")))
 
 (convert-hydra-to-sslk "lv"
-                       (defhydra h_nv (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "ANY: version control"
-                         "ANY: version control"
-                         ("h" #'magit-sps-current-file "Add all and commit")
-                         ("m" #'magit-sph "Add all and commit")
-                         ("C" #'pen-add-all-commit "Add all and commit")
-                         ("M" #'sh/git-amend-all-below "amend below")))
+                       (defhydra h_nv (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "ANY: cosmetic minor modes"
+                         "ANY: cosmetic minor modes"
+                         ("o" #'olivetti-mode "for reading")
+                         ("h" #'toggle-chrome "menu bar, tmux status, etc.")
+                         ("n" #'global-display-line-numbers-mode "Line numbers.")
+                         ("l" #'toggle-truncate-lines "Line wrap.")))
 
 (defun goto-file-and-search (fp pattern)
   (interactive)

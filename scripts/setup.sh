@@ -1578,7 +1578,9 @@ cd "$(gc "https://github.com/xero/figlet-fonts")"
 )
 
 # Possible to play online against opponents
-pip install cli-chess
+# pip install cli-chess
+
+# Emacs has a client now. px:lichess
 
 agi unicode
 
@@ -2904,3 +2906,15 @@ update-rust && cargo install tetro-tui
 )
 # But it's been around for a while, so can just be installed with dpkg
 agi lnav
+
+e ia -r wisp-mode
+
+# This seems like a cool tool
+# https://github.com/micahkepe/jsongrep?tab=readme-ov-file#why-jsongrep
+# https://micahkepe.com/blog/jsongrep/
+
+
+(
+  mcd /root/repos/helmut/
+  git clone "git://git.subdivi.de/~helmut/tcvt.git" tcvt
+)

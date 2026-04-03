@@ -204,6 +204,7 @@ orientation.  See `Info-nth-menu-item'.")
 (define-key Info-mode-map (kbd "w") 'Info-copy-current-node-name)
 (define-key Info-mode-map (kbd "w") 'org-info-copy-link)
 (define-key Info-mode-map (kbd "a") 'Info-search-next)
+(define-key Info-mode-map (kbd "A") 'Info-search-prev)
 
 
 (defun org-info-copy-link ()
@@ -329,5 +330,35 @@ new buffer."
   (Info-goto-node (Info-extract-menu-item menu-item)
                   (and fork
                        (if (stringp fork) fork menu-item))))
+
+(defun Info-search-prev ()
+  "Search for prev regexp from a previous `Info-search' command."
+  (interactive nil Info-mode)
+  (let ((case-fold-search Info-search-case-fold))
+    (if Info-search-history
+        (Info-search (car Info-search-history) nil nil nil 'backward)
+      (call-interactively 'Info-search))))
+
+;; https://stackoverflow.com/q/13174659
+
+(defun pen-list-info-topics ()
+  (let* ((file-paths (reverse (f-files "/usr/local/share/info/" nil t)))
+         (basename-mants (mapcar
+                          (-compose
+                           (lambda (s) (s-replace-regexp "\.info.*" "" s))
+                           'f-basename)
+                          file-paths))
+         (annotated (-zip basename-mants file-paths)))
+    (fz
+     annotated
+     nil nil "Info file: ")))
+
+(defun pen-go-system-info-file ()
+  (interactive)
+  (let ((main-topic (pen-list-info-topics)))
+    (if main-topic
+        (info main-topic))))
+
+(define-key Info-mode-map (kbd "M") 'pen-go-system-info-file)
 
 (provide 'pen-info)

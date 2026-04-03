@@ -15,6 +15,12 @@
 (require 'eshell-did-you-mean)
 (require 'eshell-bookmark)
 
+(eshell-info-banner-update-banner)
+
+(defalias 'banner 'eshell-info-banner)
+
+(require 'em-script)
+
 ;; https://www.howardism.org/Technical/Emacs/eshell-fun.html
 ;; https://www.masteringemacs.org/article/complete-guide-mastering-eshell
 
@@ -22,10 +28,15 @@
 
 (setq eshell-visual-commands
       '("tail" "ssh" "vi" "vim" "screen" "tmux" "top" "htop" "less" "more" "lynx" "links" "ncftp" "mutt" "pine" "tin" "trn" "elm"
-        "v"))
+        "v"
+        "br"))
+
+;; emacs term is too slow for br.
+;; But I haven't ironed out all of the vterm issues, so make a eshell/br function that uses in-tty
 
 (setq eshell-prefer-lisp-functions t)
 (eshell-vterm-mode -1)
+;; (eshell-vterm-mode t)
 
 ;; vterm needs some ironing out
 ;; (eshell-vterm-mode t)
@@ -240,9 +251,12 @@ or an external command."
 (defun eshell-unique (&optional arg)
   (interactive "P")
   (progn
-    (eshell arg)
-    (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*")
-                   )))
+    ;; DONE Make it so the main "*eshell*" buffer is not renamed.
+    (let ((eshell-buffer-name
+           (concat "*eshell-" (substring (uuidgen-4) 0 8) "*")))
+      (eshell arg))
+    ;; (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*"))
+    ))
 
 (defun e/nw (&optional run)
   (interactive)
@@ -356,10 +370,11 @@ or an external command."
       (list (car args)))))
 
 ;; Aliases for shell commands, so eshell prefers these to lisp functions
-(loop for c in '(cfind) do
-      (let ((cname (sym2str c))
-            (fname (str2sym (concat "eshell/" (sym2str c))))
-            (comment (concat "Alias to " "find" " shell command.")))
+;; TODO Make these utilise stdin
+(loop for c in '(cfind wc) do
+      (let* ((cname (sym2str c))
+             (fname (str2sym (concat "eshell/" (sym2str c))))
+             (comment (concat "Alias to " cname " shell command.")))
         (eval
          `(defun ,fname (&rest args)
             ,comment
@@ -368,23 +383,46 @@ or an external command."
 
             (pen-snc (apply 'cmd (cons ,cname args)))))))
 
+;; This fz inserts the results of the command
 (loop for c in '(find) do
-      (let ((cname (sym2str c))
-            (fname (str2sym (concat "eshell/" (sym2str c))))
-            (comment (concat "Alias to " "find" " shell command.")))
+      (let* ((cname (sym2str c))
+             (fname (str2sym (concat "eshell/" (sym2str c))))
+             (comment (concat "Alias to " cname " shell command.")))
         (eval
          `(defun ,fname (&rest args)
             ,comment
             ;; Firstly, fix the arguments
             (setq args (mapcar 'str args))
 
-            (let ((results (sor (pen-snc (apply 'cmd (cons ,cname args))))))
+            (let* ((c (apply 'cmd-nice (cons ,cname args)))
+                   (results (sor (pen-snc c))))
 
               (if results
-                  (insert
-                   (pen-q (fz results
-                              nil nil (format-prompt ,cname nil))))
-                (mesg "No results")))))))
+                  (let ((sel (fz results
+                                 nil nil
+                                 (format-prompt c nil))))
+                    (if sel
+                        (insert (concat "e " sel))))
+                (format "%d results" (length results))
+                (format "No results")))))))
+
+;; Because there is a j:df macro in emacs, I
+;; define here an eshell function which will be found first
+;; TODO Make this display inside of a tabulated list
+(defun eshell/df (&rest args)
+  "Like the bash `command` function."
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+
+  (cmd-out-to-tablist-quick (concat (apply 'cmd (cons "df" args)) " | sed 's/Mounted on/Mounted-on/' | sed -E 's/ +/,/g' | sed '1s/%/-percent/g'")
+                            t)
+  ;; (pen-snc (apply 'cmd (cons "df" args)))
+  )
+
+(defun eshell/e (&rest args)
+  "Like the bash `command` function."
+
+  (pen-ewhich (car args)))
 
 (defun eshell/command (&rest args)
   "Like the bash `command` function."
@@ -395,9 +433,26 @@ or an external command."
   ;; (pen-snc (apply 'cmd (cons "command" args)))
   (pen-snc (apply 'cmd (cons "com" args))))
 
+(defun eshell/br (&rest args)
+  "broot."
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+  
+  ;; (pen-snc (eval `(cmd "command" ,@args)))
+  ;; (pen-snc (apply 'cmd (cons "command" args)))
+  (pen-snc (apply 'cmd (cons "in-tty" (cons "br" args)))))
+
 (defun eshell/slugify (&rest args)
   "Return the argument(s) as a single slug."
   (slugify (mapconcat 'str args " ")))
+
+(defun eshell/r (&rest args)
+  "Ranger."
+  (apply 'ranger args))
+
+(defun eshell/d (&rest args)
+  "Ranger."
+  (apply 'dired (or args '("."))))
 
 ;; (define-key eshell-mode-map (kbd "M-h") 'pen-sph)
 ;; (define-key eshell-mode-map (kbd "M-h") 'eshell-sph)
@@ -675,6 +730,73 @@ If N is negative, search forwards for the -Nth following match."
             eshell--sep-terms (cdr eshell--sep-terms)))
     final))
 
+;; I made added this option
+(setq epe-path-style 'full-no-abbreviate)
+
+;; DONE Just use this
+;; But instead of path shrinking, use mnm
+(defun epe-theme-dakrone ()
+  "A eshell-prompt lambda theme with directory shrinking."
+  (setq eshell-prompt-regexp "^[^#\nλ]* λ[#]* ")
+  (let* ((pwd-repl-home (lambda (pwd)
+                          (let* ((home (expand-file-name (getenv "HOME")))
+                                 (home-len (length home)))
+                            (if (and
+                                 (>= (length pwd) home-len)
+                                 (equal home (substring pwd 0 home-len)))
+                                (concat "~" (substring pwd home-len))
+                              pwd))))
+         ;; (shrink-paths (lambda (p-lst)
+         ;;                 (if (> (length p-lst) 3) ;; shrink paths deeper than 3 dirs
+         ;;                     (concat
+         ;;                      (mapconcat (lambda (elm)
+         ;;                                   (if (zerop (length elm)) ""
+         ;;                                     (substring elm 0 1)))
+         ;;                                 (butlast p-lst 3)
+         ;;                                 "/")
+         ;;                      "/"
+         ;;                      (mapconcat (lambda (elm) elm)
+         ;;                                 (last p-lst 3)
+         ;;                                 "/"))
+         ;;                   (mapconcat (lambda (elm) elm)
+         ;;                              p-lst
+         ;;                              "/"))))
+         )
+    (concat
+     (when (epe-remote-p)
+       (epe-colorize-with-face
+        (concat (epe-remote-user) "@" (epe-remote-host) " ")
+        'epe-remote-face))
+     (when (and epe-show-python-info (bound-and-true-p venv-current-name))
+       (epe-colorize-with-face (concat "(" venv-current-name ") ") 'epe-venv-face))
+     ;; (epe-colorize-with-face (funcall
+     ;;                          shrink-paths
+     ;;                          (split-string
+     ;;                           (funcall pwd-repl-home (eshell/pwd)) "/"))
+     ;;                         'epe-dir-face)
+     (epe-colorize-with-face
+      (mnm (eshell/pwd))
+      ;; (funcall
+      ;;  shrink-paths
+      ;;  (eshell/pwd)
+      ;;  ;; (split-string
+      ;;  ;;  (funcall pwd-repl-home (eshell/pwd)) "/")
+      ;;  )
+      'epe-dir-face)
+     (when (epe-git-p)
+       (concat
+        (epe-colorize-with-face ":" 'epe-dir-face)
+        (epe-colorize-with-face
+         (concat (epe-git-branch)
+                 (epe-git-dirty)
+                 (epe-git-untracked)
+                 (unless (= (epe-git-unpushed-number) 0)
+                   (concat ":" (number-to-string (epe-git-unpushed-number)))))
+         'epe-git-face)))
+     (epe-colorize-with-face " λ" 'epe-symbol-face)
+     (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
+     " ")))
+
 ;; Fix eshell-prompt-regexp
 (defun epe-theme-lambda ()
   "A eshell-prompt lambda theme."
@@ -691,7 +813,8 @@ If N is negative, search forwards for the -Nth following match."
        (epe-colorize-with-face (concat "(" env-current-name ") ") 'epe-venv-face)))
    (let ((f (cond ((eq epe-path-style 'fish) 'epe-fish-path)
                   ((eq epe-path-style 'single) 'epe-abbrev-dir-name)
-                  ((eq epe-path-style 'full) 'abbreviate-file-name))))
+                  ((eq epe-path-style 'full) 'abbreviate-file-name)
+                  ((eq epe-path-style 'full-no-abbreviate) 'identity))))
      (epe-colorize-with-face (funcall f (eshell/pwd)) 'epe-dir-face))
    (when (epe-git-p)
      (concat
@@ -707,5 +830,147 @@ If N is negative, search forwards for the -Nth following match."
    (epe-colorize-with-face " λ" 'epe-symbol-face)
    (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
    " "))
+
+;; Implementing this function is not easy for me to think about right now
+(defun pen-eshell-go-to-start-of-prompt ()
+  (interactive)
+  (let* ((init-pos (point))
+         (is-at-prompt-line (save-excursion
+                              (beginning-of-line)
+                              (looking-at-p eshell-prompt-regexp)))
+         (is-at-prompt-start-position
+          (and
+           is-at-prompt-line
+           (save-excursion
+             (pen-comint-eol)
+             (pen-comint-bol)
+             (eq init-pos (point)))))
+         (is-inside-output
+          (and
+           (not is-at-prompt-line)
+           (save-excursion
+             (eshell-previous-prompt 1)
+             (< (point) init-pos)))))
+
+    ;; (cmd (if is-at-prompt-line
+    ;;          "at-prompt-line")
+    ;;      (if is-at-prompt-start-position
+    ;;          "at-prompt-start-position")
+    ;;      (if is-inside-output
+    ;;          "inside-output"))
+
+    (cond
+     (is-inside-output
+      (eshell-previous-prompt 1))
+     ((and is-at-prompt-line
+           (not is-at-prompt-start-position))
+      (pen-comint-bol)))))
+
+(defun pen-eshell-get-directory-for-line ()
+  "The prompt should display the directory. Extract it from the prompt that relates to the cursor position."
+
+  (save-excursion
+    (pen-eshell-go-to-start-of-prompt)
+    (let ((dir
+           (progn
+             (beginning-of-line)
+             (select-font-lock-face-region)
+             (if (selected-p)
+                 (pen-selected-text)
+               default-directory))))
+      (deselect)
+      (s-remove-trailing-literal ":" dir))))
+
+(defun pen-eshell-copy-directory-from-prompt ()
+  (interactive)
+  (let ((dir (umn (pen-eshell-get-directory-for-line))))
+    (if dir
+        (xc (f-expand dir)
+            nil nil "Directory from prompt"))))
+
+(define-key eshell-mode-map (kbd "M-y d") 'pen-eshell-copy-directory-from-prompt)
+
+(defun pen-enable-org-link-font-lock-test ()
+  (interactive)
+
+  ;; This isn't currently working:
+  ;; (font-lock-add-keywords nil nil t)
+
+  ;; This did nothing:
+  ;; (font-lock-add-keywords 'eshell-mode nil t)
+
+  ;; This isn't currently working:
+  (let* ((lk org-highlight-links)
+         (org-link-minor-mode-keywords
+          (list
+           (if (memq 'tag lk) '(org-activate-tags (1 'org-tag prepend)))
+           (if (memq 'angle lk) '(org-activate-angle-links (0 'org-link t)))
+           (if (memq 'plain lk) '(org-activate-plain-links (0 'org-link t)))
+           (if (memq 'bracket lk) '(org-activate-bracket-links (0 'org-link t)))
+           (if (memq 'radio lk) '(org-activate-target-links (0 'org-link t)))
+           (if (memq 'date lk) '(org-activate-dates (0 'org-date t)))
+           (if (memq 'footnote lk) '(org-activate-footnote-links)))))
+
+    (font-lock-add-keywords nil org-link-minor-mode-keywords t)
+    ;; (font-lock-add-keywords 'eshell-mode org-link-minor-mode-keywords t)
+    ))
+
+(define-minor-mode org-link-minor-mode
+  "Toggle display of org-mode style bracket links in non-org-mode buffers."
+  :lighter " org-link"
+  :keymap org-link-minor-mode-map
+  (let ((lk org-highlight-links)
+        org-link-minor-mode-keywords)
+    (if (fboundp 'org-activate-links)
+        ;; from Org v9.2
+        (setq org-link-minor-mode-keywords
+              (list
+               '(org-activate-links)
+               (when (memq 'tag lk) '(org-activate-tags (1 'org-tag prepend)))
+               (when (memq 'radio lk) '(org-activate-target-links (1 'org-link t)))
+               (when (memq 'date lk) '(org-activate-dates (0 'org-date t)))
+               (when (memq 'footnote lk) '(org-activate-footnote-links))))
+      (setq org-link-minor-mode-keywords
+            (list
+             (if (memq 'tag lk) '(org-activate-tags (1 'org-tag prepend)))
+             (if (memq 'angle lk) '(org-activate-angle-links (0 'org-link t)))
+             (if (memq 'plain lk) '(org-activate-plain-links (0 'org-link t)))
+             (if (memq 'bracket lk) '(org-activate-bracket-links (0 'org-link t)))
+             (if (memq 'radio lk) '(org-activate-target-links (0 'org-link t)))
+             (if (memq 'date lk) '(org-activate-dates (0 'org-date t)))
+             (if (memq 'footnote lk) '(org-activate-footnote-links)))))
+    (if org-link-minor-mode
+        (if (derived-mode-p 'org-mode)
+            (progn
+              (message "org-mode doesn't need org-link-minor-mode")
+              (org-link-minor-mode -1))
+          (progn
+            ;; This is the problematic line currently:
+            (font-lock-add-keywords nil org-link-minor-mode-keywords t)
+
+            (kill-local-variable 'org-mouse-map)
+            (setq-local org-mouse-map
+                        (let ((map (make-sparse-keymap)))
+                          (define-key map [return] 'org-open-at-point)
+                          (define-key map [tab] 'org-next-link)
+                          (define-key map [backtab] 'org-previous-link)
+                          (define-key map [mouse-2] 'org-open-at-point)
+                          (define-key map [follow-link] 'mouse-face)
+                          map))
+            (setq-local font-lock-unfontify-region-function
+                        'org-link-minor-mode-unfontify-region)
+            (setq-local org-descriptive-links org-descriptive-links)
+            (condition-case nil (require 'org-man)
+              (error (message "Problems while trying to load feature `org-man'")))
+            ;; Set to non-descriptive and then switch to descriptive links
+            (setq org-descriptive-links nil)
+            (org-toggle-link-display)))
+      (unless (derived-mode-p 'org-mode)
+        (font-lock-remove-keywords nil org-link-minor-mode-keywords)
+        (org-restart-font-lock)
+        (remove-from-invisibility-spec '(org-link))
+        (kill-local-variable 'org-descriptive-links)
+        (kill-local-variable 'org-mouse-map)
+        (kill-local-variable 'font-lock-unfontify-region-function)))))
 
 (provide 'pen-eshell)

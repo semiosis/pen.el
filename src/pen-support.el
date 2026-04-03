@@ -2463,6 +2463,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
   ;; (xc-m default-directory)
   (cond
    ((derived-mode-p 'proced-mode) (call-interactively 'proced-get-pwd))
+   ((derived-mode-p 'eshell-mode) (call-interactively 'pen-eshell-copy-directory-from-prompt))
    (t
     (xc (chomp (pen-ns default-directory)))
     ;; (xc (chomp (get-dir)))

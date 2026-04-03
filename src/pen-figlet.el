@@ -1,6 +1,6 @@
 (defun insert-figlet (&optional input)
   (interactive (list (read-string-hist "input")))
-  (pen-insert (snc "figlet | cat" input)))
+  (pen-insert (snc "figlet | in-tty vipe | cat" input)))
 
 (defun insert-figlet-org (text)
   (interactive (list (read-string-hist "text")))

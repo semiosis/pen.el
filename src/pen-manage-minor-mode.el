@@ -78,6 +78,10 @@
         (prolog-mode
          (on org-link-minor-mode))
         
+        ;; (eshell-mode
+        ;;  ;; (on org-link-minor-mode)
+        ;;  (off org-link-minor-mode))
+        
         (rpl-mode
          (on org-link-minor-mode))
         

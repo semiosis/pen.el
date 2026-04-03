@@ -314,6 +314,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# is_emacs_shell() {
+#     [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+# }
+# 
+# is_tty() {
+#     # If stout is a tty
+#     [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+# }
+# 
+# if is_tty; then
+#     export BLACK_AND_WHITE=y
+# fi
+
 if test "$BLACK_AND_WHITE" = y || pen-rc-test -f black_and_white; then
     # Do this especially if INSIDE_EMACS
     export TERM=screen-2color

@@ -2406,3 +2406,6 @@ zig-ts-mode
 embark
 bible-gateway
 dyalog-mode
+kmacro-x
+wisp-mode
+lichess

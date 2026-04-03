@@ -66,7 +66,25 @@ else
     export PAGER=sps-v
 fi
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+invoke_help() {
+    if test "$EMACS_MAN_MODE" = "y"; then
+        CMD="$(cmd "$@")"
+        : ${CMD:="$(cmd "$@")"}
+        nohup myeval -E "unbuffer $CMD | in-tty v" &>/dev/null
+        exit 5
+    else
+        "$@"
+    fi
+}
 
 if test "$#" -gt 0; then
     last_arg="${@: -1}"
@@ -100,21 +118,21 @@ if test "$#" -gt 0; then
         ;;
 
         hdc) {
-            x -sh hdc -e '>' -s :help -c m -i
+            invoke_help x -sh hdc -e '>' -s :help -c m -i
             exit "$?"
         }
         ;;
 
         br|broot) {
             shift
-            br -h
+            invoke_help br -h
             exit "$?"
         }
         ;;
 
         hb|hexabyte) {
             shift
-            hb -h
+            invoke_help hb -h
             exit "$?"
         }
         ;;
@@ -127,7 +145,7 @@ if test "$#" -gt 0; then
 
         irust) {
             # x -sh irust -z 'In:' -s ":help full" -c m -i
-            x -sh "tmwr irust" -e 'In:' -s ":help full" -c m -i
+            invoke_help x -sh "tmwr irust" -e 'In:' -s ":help full" -c m -i
             exit "$?"
         }
         ;;
@@ -165,5 +183,9 @@ if test "$parent_bn" = emacs || test "$TERM" = dumb; then
 elif man-page-exists-p "$@"; then
     /usr/bin/man "$@" 2>/dev/null | pen-pa -E "$PAGER"
 else
-    iman "$@"
+    if test "$EMACS_MAN_MODE" = "y"; then
+        which "$@" | pen-pa -E "in-tty v"
+    else
+        iman "$@"
+    fi
 fi

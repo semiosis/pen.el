@@ -194,7 +194,9 @@
             ("*Flycheck errors*" :select t :same t)
             ("*Warnings*" :ignore t :select nil :same t)
             ("*warnings*" :ignore t :select nil :same t)
-            ("*Ibuffer*" :select t :same nil)
+            ("*Ibuffer*" :select t :same t)
+            ("*Buffer List*" :select t :same t)
+            
             ("*slime-description*" :select nil :same nil)
             (slime-repl-mode :select nil :same nil)
             ("*Proced*" :select t :same t)

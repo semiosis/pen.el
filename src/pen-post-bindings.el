@@ -75,7 +75,11 @@
 
 (ignore-errors
   (define-key pen-map (kbd "M-m w ;") #'ansi-zsh)
+
+  ;; Use the regular eshell here, so I am one key binding away from the main eshell instance
   (define-key pen-map (kbd "M-m w '") #'eshell)
+  ;; (define-key pen-map (kbd "M-m w '") #'eshell-unique)
+  
   (define-key pen-map (kbd "M-m w \"") #'nw-term)
 
   (define-key pen-map (kbd "M-m w s") #'eshell-sph)

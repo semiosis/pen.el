@@ -8,9 +8,24 @@ export TTY
 test -d ~/repos/figlet-fonts && cd ~/repos/figlet-fonts
 test -d ~/figlet-fonts && cd ~/figlet-fonts
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -w) {
+        cols="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${cols:="$COLUMNS"}"
+: "${cols:="80"}"
+
 if test "$#" -eq 0; then
     if ! test "$istty_stderr" = 0; then
-        tpop -E "figlet | cat" | cat
+        tpop -E "figlet -w "$cols" | cat" | cat
         exit "$?"
     fi
 
@@ -20,14 +35,14 @@ if test "$#" -eq 0; then
 
     input="$(cat)"
 
-    font="$(0</dev/null ls | nonvc mfz -P -po "up:80%" -pscript "echo $(aqf-nice "$input") | /usr/bin/figlet -f {} | lolcat -f ")"
+    font="$(0</dev/null ls | nonvc mfz -P -po "up:80%" -pscript "echo $(aqf-nice "$input") | /usr/bin/figlet -w "$cols" -f {} | lolcat -f ")"
 
     # TODO Make it so the font is previewed in fzf
 
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}
 
-    finalcmd="printf -- \"%s\" $(aqf "$input") | figlet -t -f \"$font\" $CMD"
+    finalcmd="printf -- \"%s\" $(aqf "$input") | figlet -w "$cols" -t -f \"$font\" $CMD"
 
 
     if test "$isstdoutpipe" = 0; then
@@ -57,4 +72,4 @@ if test "$do_help" = "y"; then
     exit "$?"
 fi
 
-unicode-to-ascii | /usr/bin/figlet "$@"
+unicode-to-ascii | /usr/bin/figlet -w "$cols" "$@"

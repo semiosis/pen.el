@@ -150,7 +150,7 @@ is_tty() {
 is_tty
 istty="$?"
 
-is_tty_stderr() { [ -t 2 ] && ! test "$TERM" = "dumb"; }
+is_tty_stderr() { [ -t 2 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell; }
 is_tty_stderr
 istty_stderr="$?"
 

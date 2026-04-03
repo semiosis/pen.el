@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# echo "5 * 5" | bc -l
+
+test -n "$(
+for arg in "$@"
+do
+    if test "$arg" = "-i"; then
+        echo interactive
+    fi
+done
+)" || test "$#" -eq 0
+is_interactive="$?"
+
+if test "$is_interactive" -eq 0; then
+    nvc /usr/bin/bc "$@"
+else
+    /usr/bin/bc "$@" | pavs
+fi

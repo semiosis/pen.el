@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+if test -n "$1"
+
+export QA_CHOOSE

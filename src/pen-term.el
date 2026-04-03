@@ -3,6 +3,17 @@
 ;; (setq-default cursor-type 'bar)
 (setq-default cursor-type t)
 
+;; (cl-loop for p in '(htop) do
+;;      (let ((pstr (sym2str p)))
+;;        (eval
+;;         `(defun ,p ()
+;;            (interactive)
+;;            (term ,pstr)))))
+
+(defun htop (&optional filter)
+  (interactive (list (read-string-hist "htop filter: ")))
+  (pen-term-nsfa (cmd "htop" filter)))
+
 (setq explicit-shell-file-name "/bin/bash")
 
 ;; I can't abolish C-c from all the minor modes

@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# coerce-to-csv df -h | v
+# arp -a | coerce-to-csv 
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+elif test "$#" -gt 0; then
+    input_fp="$("$@" | tf txt)"
+fi
+
+test -f "$input_fp" || exit 1
+
+if grep -q '	' "$input_fp"; then
+    cat "$input_fp" | tsv2csv
+elif grep -q ',' "$input_fp"; then
+    # cat "$input_fp" | csv2csv
+    cat "$input_fp"
+else
+    cat "$input_fp" | spaces2tabs | tsv2csv
+fi

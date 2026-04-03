@@ -24,9 +24,10 @@
   (interactive)
   (term-sps (concat (pen-cmd "cd" default-directory) "; noted")))
 
-(defun broot ()
-  (interactive)
-  (pen-sps "br" nil nil default-directory))
+(defun broot (&rest args)
+  (interactive (list (read-directory-name "broot dir: ")))
+  (setq args (mapcar 'str args))
+  (pen-sps (apply 'cmd (cons "in-tty" (cons "br" args))) nil nil default-directory))
 
 (defun open-colors ()
   (interactive)

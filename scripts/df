@@ -3,7 +3,14 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
 
 if is_tty && ! test "$INSIDE_NEOVIM" = y; then
     CMD="$(cmd "$@")"

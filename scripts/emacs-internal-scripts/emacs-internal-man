@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# So this script is meant to be used by emacs' Man-mode only.
+
+# . $SCRIPTS/lib/hs
+
+export EMACS_MAN_MODE=y
+man "$@"

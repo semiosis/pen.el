@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# Reverse polish calculator
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/dc" || agi "dc" &>/dev/null
+
+/usr/bin/dc "$@"

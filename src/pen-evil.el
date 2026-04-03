@@ -22,7 +22,7 @@
             ;; (pen-comint-bol)
             (pen-comint-bol)
             ;; Rather, move forward
-            (while (sor (regex-at-point "[ 	]"))
+            (while (looking-at-p "[ 	]")
               (forward-char))
             ;; (beginning-of-line-or-indentation)
             ;; (beginning-of-line-or-indentation)
@@ -32,7 +32,7 @@
           ;; (pen-comint-bol)
           (pen-comint-bol)
           ;; Rather, move forward
-          (while (sor (regex-at-point "[ 	]"))
+          (while (looking-at-p "[ 	]")
             (forward-char))
           (cua-set-mark)
           (end-of-line))))))
@@ -891,5 +891,56 @@ The following special registers are supported.
    (t (call-interactively 'evil-set-marker))))
 
 (define-key global-map (kbd "M-M") #'pen-holy-mark)
+
+(defun evil-ex-call-command (range command argument)
+  "Execute the given command COMMAND."
+  (let* ((count (when (numberp range) range))
+         (range (when (evil-range-p range) range))
+         (bang (and (save-match-data (string-match ".!$" command)) t))
+         (evil-ex-point (point))
+         (evil-ex-range
+          (or range (and count (evil-ex-range count count))))
+         (evil-ex-command (evil-ex-completed-binding command))
+         (evil-ex-bang (and bang t))
+         (evil-ex-argument (copy-sequence argument))
+         (evil-this-type (evil-type evil-ex-range))
+         (current-prefix-arg count)
+         (prefix-arg current-prefix-arg))
+    (when (stringp evil-ex-argument)
+      (set-text-properties
+       0 (length evil-ex-argument) nil evil-ex-argument))
+    (let ((buf (current-buffer)))
+      (unwind-protect
+          (cond
+           ((not evil-ex-range)
+            (setq this-command evil-ex-command)
+            (run-hooks 'pre-command-hook)
+            (if (try-completion command evil-ex-commands)
+                (call-interactively evil-ex-command)
+              (if argument
+                  ;; (apply evil-ex-command argument)
+                  ;; (tv (list evil-ex-command argument))
+                  (apply evil-ex-command (str2lines (pen-snc (format "pl %s" argument))))
+                (call-interactively evil-ex-command)))
+            (run-hooks 'post-command-hook))
+           (t
+            ;; set visual selection to match the region if an explicit
+            ;; range has been specified
+            (let ((ex-range (evil-copy-range evil-ex-range))
+                  beg end)
+              (evil-expand-range ex-range)
+              (setq beg (evil-range-beginning ex-range)
+                    end (evil-range-end ex-range))
+              (evil-sort beg end)
+              (setq this-command evil-ex-command)
+              (run-hooks 'pre-command-hook)
+              (set-mark end)
+              (goto-char beg)
+              (activate-mark)
+              (call-interactively evil-ex-command)
+              (run-hooks 'post-command-hook))))
+        (when (buffer-live-p buf)
+          (with-current-buffer buf
+            (deactivate-mark)))))))
 
 (provide 'pen-evil)

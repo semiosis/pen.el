@@ -152,8 +152,6 @@ If `soft` and `semantic-path` are both `nil` then that would usually result in a
                     sqlite--db-path)
                
                (and (major-mode-enabled 'helpful-mode)
-                    (format "[[pen-helpful-variable:%s]]"))
-               (and (major-mode-enabled 'helpful-mode)
                     (or
                      list-buffers-directory
                      helpful--sym)
@@ -162,7 +160,7 @@ If `soft` and `semantic-path` are both `nil` then that would usually result in a
                            (symval helpful--sym))
                       
                       
-                      (format "[[pen-helpful-variable:%s]]")))
+                      (format "[[pen-helpful-variable:%s]]" symval)))
                
                ;; (and (major-mode-enabled 'cider-repl-mode)
                ;;      default-directory)
