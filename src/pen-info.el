@@ -361,4 +361,41 @@ new buffer."
 
 (define-key Info-mode-map (kbd "M") 'pen-go-system-info-file)
 
+(defun pen-Info-get-text-contents ()
+  (let* ((fp (concat Info-current-file ".info"))
+         (fpgz (concat fp ".gz"))
+         (contents (or (and (f-exists? fp)
+                            (cat fp))
+                       (and (f-exists? fpgz)
+                            ;; (fz (snc (concat (cmd "cat" fpgz) " | " (cmd "gunzip" "-") " | sed '//,$d'")))
+                            (snc (concat (cmd "cat" fpgz) " | " (cmd "gunzip" "-")))))))
+
+    ;; Clean it up for searching
+    (if contents
+        ;; (setq contents (snc (tv (concat "tr '\\000' '@' | /bin/sed -e '/^@/d' -e '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' -e '/^" (char-to-string ?\^_) "/d' -e '/^\\s\\+(line.*)$/d' -e 's/\\s\\+(line.*)$//'")) contents))
+        (setq contents (snc "emacs-clean-info-file" contents))
+        ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' -e '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
+        ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
+        ;; (setq contents (snc "/bin/sed -e '/^@/d'" contents))
+        ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
+        ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
+      )
+
+    contents))
+
+(defun pen-Info-fz-info-file ()
+  (interactive)
+  (let ((contents (pen-Info-get-text-contents)))
+    (if (sor contents)
+        (let ((res (fz contents nil nil "Info-search node contents: ")))
+          (if res
+              (progn
+                (Info-top-node)
+                (setq res (pen-unregexify res))
+                (setq Info-search-history (cons res Info-search-history))
+                (Info-search res))))
+      (message "pen-Info-fz-info-file: Not inside info node"))))
+
+(define-key Info-mode-map (kbd "/") 'pen-Info-fz-info-file)
+
 (provide 'pen-info)

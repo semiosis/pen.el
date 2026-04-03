@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+tr '\000' '@' | /bin/sed -e '/^@/d' -e '0,//d' -e '/^File: /d' -e '/^Tag Table:/,$d' -e '/^/d' -e '/^\s\+(line.*)$/d' -e 's/\s\+(line.*)$//'

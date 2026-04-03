@@ -14,4 +14,18 @@
 
 (require 'olivetti)
 
+(defun olivetti-mode-around-advice (proc &rest args)
+  (let ((o-enabled olivetti-mode)
+        (g-enabled git-gutter+-mode))
+    (if (and g-enabled
+             (not olivetti-mode))
+        (progn
+          (git-gutter+-mode -1)
+          (message "Disabling git gutter before enabling olivetti")))
+    (let ((res (apply proc args)))
+      res)))
+(advice-add 'olivetti-mode :around #'olivetti-mode-around-advice)
+
+;; (advice-remove 'olivetti #'olivetti-mode-around-advice)
+
 (provide 'pen-perfect-margin)

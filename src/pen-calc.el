@@ -1,4 +1,5 @@
 (require 'calc)
+(calc-load-everything)
 
 (defun calc-full-help ()
   (interactive)
