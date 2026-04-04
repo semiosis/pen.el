@@ -1039,6 +1039,23 @@ is specified, `:italic' is ignored."
 
   (set-face-attribute 'font-lock-string-face nil :weight 'bold)
 
+  (require 'eshell-prompt-extras)
+
+  ;; These are nice colours, but sadly because of the highlight line
+  ;; To distinguish it from ls dirs.
+  ;; I'm going to disable hl-line-mode for eshell.
+  
+  ;; (set-face-background 'epe-dir-face (face-foreground 'eshell-ls-directory))
+  ;; (set-face-foreground 'epe-dir-face "#0000ff")
+  (set-face-background 'epe-dir-face "#999999")
+  (set-face-foreground 'epe-dir-face "#222222")
+  (set-face-background 'epe-git-face "#bbbbbb")
+  (set-face-foreground 'epe-git-face "#0000cc")
+  (set-face-background 'epe-symbol-face "#999999")
+  (set-face-foreground 'epe-symbol-face "#aa0000")
+  (set-face-background 'epe-sudo-symbol-face "#999999")
+  (set-face-foreground 'epe-sudo-symbol-face "#555555")
+
   (require 'avy)
   (setq avy-background t)
   ;; (set-face-background 'avy-background-face nil)

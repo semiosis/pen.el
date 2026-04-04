@@ -1347,12 +1347,15 @@
 
 (defun pen-find-file ()
   (interactive)
-  (let ((maybe_path
-         (ffap-guesser)))
+  (let ((textprop-path (get-text-property (point) 'file-path)))
+    (if textprop-path
+        (find-file textprop-path)
+      (let ((maybe_path
+             (ffap-guesser)))
 
-    (if (sor maybe_path)
-        (call-interactively 'find-file-at-point)
-      (call-interactively 'find-file))))
+        (if (sor maybe_path)
+            (call-interactively 'find-file-at-point)
+          (call-interactively 'find-file))))))
 
 
 

@@ -331,4 +331,16 @@ read from minibuffer."
 (define-key dired-mode-map (kbd "{") 'find-ci-here)
 (define-key dired-mode-map (kbd "}") 'find-files-here)
 
+(defun dired-around-advice (proc &rest args)
+  (if (interactive-p)
+      (let ((res (apply proc args)))
+        res)
+    ;; This is so dired can be called like this (dired).
+    ;; And now this works in eshell (i.e. no need to specify directory)
+    ;; cd "/"; cd ~ && dired
+    (let ((res (apply proc (or args '("")))))
+      res)))
+(advice-add 'dired :around #'dired-around-advice)
+;; (advice-remove 'dired #'dired-around-advice)
+
 (provide 'pen-dired)

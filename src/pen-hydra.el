@@ -437,6 +437,7 @@ display values."
                        (defhydra h_nv (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "ANY: cosmetic minor modes"
                          "ANY: cosmetic minor modes"
                          ("o" #'olivetti-mode "for reading")
+                         ("-" #'hl-line-mode "highlight current line")
                          ("g" #'git-gutter+-mode "for indicating differences")
                          ("+" #'git-gutter+-mode "for indicating differences")
                          ("h" #'toggle-chrome "menu bar, tmux status, etc.")

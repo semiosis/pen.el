@@ -362,6 +362,7 @@ new buffer."
 (define-key Info-mode-map (kbd "M") 'pen-go-system-info-file)
 
 (defun pen-Info-get-text-contents ()
+  (interactive)
   (let* ((fp (concat Info-current-file ".info"))
          (fpgz (concat fp ".gz"))
          (contents (or (and (f-exists? fp)
@@ -374,14 +375,15 @@ new buffer."
     (if contents
         ;; (setq contents (snc (tv (concat "tr '\\000' '@' | /bin/sed -e '/^@/d' -e '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' -e '/^" (char-to-string ?\^_) "/d' -e '/^\\s\\+(line.*)$/d' -e 's/\\s\\+(line.*)$//'")) contents))
         (setq contents (snc "emacs-clean-info-file" contents))
-        ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' -e '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
-        ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
-        ;; (setq contents (snc "/bin/sed -e '/^@/d'" contents))
-        ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
-        ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
+      ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' -e '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
+      ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
+      ;; (setq contents (snc "/bin/sed -e '/^@/d'" contents))
+      ;; (setq contents (snc "tr '\\000' '@' | tv | /bin/sed -e '/^@/d'" contents))
+      ;; (setq contents (snc "tr '\\000' '@' | /bin/sed -e '/^@/d' '0,/" (char-to-string ?\^_) "/d' -e '/^File: /d' -e '/^Tag Table:/,$d' | tv" contents))
       )
 
-    contents))
+    (ifietv 
+     contents)))
 
 (defun pen-Info-fz-info-file ()
   (interactive)
@@ -397,5 +399,121 @@ new buffer."
       (message "pen-Info-fz-info-file: Not inside info node"))))
 
 (define-key Info-mode-map (kbd "/") 'pen-Info-fz-info-file)
+
+;; TODO Make it so I can select some text and then press ekm:s and it will search for selected text
+
+(defun Info-search (regexp &optional bound _noerror _count direction)
+  "Search for REGEXP, starting from point, and select node it's found in.
+If DIRECTION is `backward', search in the reverse direction."
+  (interactive (list (read-string
+                      (format-prompt
+                       "Regexp search%s" (car Info-search-history)
+                       (if case-fold-search "" " case-sensitively"))
+                      nil 'Info-search-history))
+               Info-mode)
+  (when (equal regexp "")
+    (setq regexp (car Info-search-history)))
+  (when regexp
+    (setq Info-search-case-fold case-fold-search)
+    (let* ((backward (eq direction 'backward))
+           (onode Info-current-node)
+           (ofile Info-current-file)
+           (opoint (point))
+           (opoint-min (point-min))
+           (opoint-max (point-max))
+           (ostart (window-start))
+           (osubfile Info-current-subfile)
+           (found
+            (save-excursion
+              (save-restriction
+                (widen)
+                (Info--search-loop regexp bound backward)))))
+
+      (unless (or (not isearch-mode) (not Info-isearch-search)
+                  Info-isearch-initial-node
+                  bound
+                  (and found (> found opoint-min) (< found opoint-max)))
+        (signal 'user-search-failed (list regexp "end of node")))
+
+      ;; If no subfiles, give error now.
+      (unless (or found Info-current-subfile)
+        (if isearch-mode
+            (signal 'user-search-failed (list regexp "end of manual"))
+          (let ((search-spaces-regexp Info-search-whitespace-regexp))
+            (unless (if backward
+                        (re-search-backward regexp nil t)
+                      (re-search-forward regexp nil t))
+              (signal 'user-search-failed (list regexp))))))
+
+      (if (and (or bound (not Info-current-subfile)) (not found))
+          (signal 'user-search-failed (list regexp)))
+
+      (unless (or found bound)
+        (unwind-protect
+            ;; Try other subfiles.
+            (let ((list ()))
+              (with-current-buffer (marker-buffer Info-tag-table-marker)
+                (goto-char (point-min))
+                (search-forward "\n\^_\nIndirect:")
+                (save-restriction
+                  (narrow-to-region (point)
+                                    (progn (search-forward "\n\^_")
+                                           (1- (point))))
+                  (goto-char (point-min))
+                  ;; Find the subfile we just searched.
+                  (search-forward (concat "\n" osubfile ": "))
+                  ;; Skip that one.
+                  (forward-line (if backward 0 1))
+                  (if backward (forward-char -1))
+                  ;; Make a list of all following subfiles.
+                  ;; Each elt has the form (VIRT-POSITION . SUBFILENAME).
+                  (while (not (if backward (bobp) (eobp)))
+                    (if backward
+                        (re-search-backward "\\(^.*\\): [0-9]+$")
+                      (re-search-forward "\\(^.*\\): [0-9]+$"))
+                    (goto-char (+ (match-end 1) 2))
+                    (push (cons (read (current-buffer))
+                                (match-string-no-properties 1))
+                          list)
+                    (goto-char (if backward
+                                   (1- (match-beginning 0))
+                                 (1+ (match-end 0)))))
+                  ;; Put in forward order
+                  (setq list (nreverse list))))
+              (while list
+                (message "Searching subfile %s..." (cdr (car list)))
+                (Info-read-subfile (car (car list)))
+                (when backward (goto-char (point-max)))
+                (setq list (cdr list))
+                (setq found (Info--search-loop regexp nil backward))
+                (if found
+                    (setq list nil)))
+              (if found
+                  (message "")
+                (signal 'user-search-failed
+                        `(,regexp ,@(if isearch-mode '("end of manual"))))))
+          (if (not found)
+              (progn (Info-read-subfile osubfile)
+                     (goto-char opoint)
+                     (Info-select-node)
+                     (set-window-start (selected-window) ostart)))))
+
+      (if (and (string= osubfile Info-current-subfile)
+               (> found opoint-min)
+               (< found opoint-max))
+          ;; Search landed in the same node
+          (goto-char found)
+        (deactivate-mark)
+        (widen)
+        (goto-char found)
+        (save-match-data (Info-select-node)))
+
+      ;; Use string-equal, not equal, to ignore text props.
+      (or (and (string-equal onode Info-current-node)
+               (equal ofile Info-current-file))
+          (and isearch-mode isearch-wrapped
+               (eq opoint (if isearch-forward opoint-min opoint-max)))
+          (setq Info-history (cons (list ofile onode opoint)
+                                   Info-history))))))
 
 (provide 'pen-info)

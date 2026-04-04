@@ -139,7 +139,8 @@
 (defset proced-mode-funcs '(proced-get-pwd))
 
 (defset Info-mode-funcs '(info-buttons-imenu
-                          info-apropos))
+                          info-apropos
+                          pen-Info-get-text-contents))
 
 (defset web-mode-funcs '(eww-open-this-file))
 

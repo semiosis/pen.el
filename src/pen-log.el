@@ -8,6 +8,12 @@
 (use-package logview :defer t)
 
 
+;; This is also a nice way to do logging
+(comment
+ ;; j:elog
+ (pen-message-no-echo/2 "%s" "*ls-files*" file))
+
+
 (defun sh/pen-log (metadata data)
   "metadata is slugged to give the file name of the log file"
   (snc (cmd "pen-log" metadata) data))

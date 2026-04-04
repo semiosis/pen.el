@@ -116,6 +116,23 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
     res))
 (advice-add 'message :around #'message-around-advice)
 
+(defun pen-message-no-echo/2 (format-string buffer-name &rest args)
+  (let ((inhibit-read-only t))
+    (with-current-buffer (or (if buffer-name (get-buffer-create buffer-name))
+                             (pen-messages-buffer))
+      (goto-char (point-max))
+      (when (not (bolp))
+        (insert "\n"))
+      (let ((s (apply 'format format-string args)))
+        (insert s)
+        (when (not (bolp))
+          (insert "\n"))
+        s)))
+  ;; (let ((minibuffer-message-timeout 0))
+  ;;   (message format-string args))
+  )
+(defalias 'elog 'pen-message-no-echo/2)
+
 (defun pen-message-no-echo (format-string &rest args)
   (let ((inhibit-read-only t))
     (with-current-buffer (pen-messages-buffer)
@@ -128,6 +145,12 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   ;; (let ((minibuffer-message-timeout 0))
   ;;   (message format-string args))
   )
+
+;; I'm unsure why but uncommenting this seems to break startup
+(comment
+ (defun pen-message-no-echo (format-string &rest args)
+   (pen-message-no-echo/2 format-string nil args)
+   nil))
 
 (defun pen-log (&rest ss)
   (let ((ret (s-join ", " (mapcar 'str ss))))

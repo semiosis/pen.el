@@ -562,10 +562,39 @@ environment, as specified in `eshell-variable-aliases-list'."
         ("9" ,(lambda () (nth 8 eshell-command-arguments)) nil t)
         ("*" (eshell-command-arguments . nil))))
 
+(defsetface eshell-normal-file
+  '((((class color) (background light))
+     (:foreground "#444444" :background "#222222" :weight bold))
+    (((class color) (background dark))
+     (:foreground "#444444" :background "#222222" :weight bold)))
+  "The face used for highlighting regular files.")
+
+;; j:ace-link--eww-collect
+
+(defun pen-eshell-find-file ()
+  "This command is really only supposed to be called specifically from clicking ls output in eshell."
+  (interactive)
+  
+  (let ((textprop-path (get-text-property (point) 'file-path))
+        (dir (pen-eshell-copy-directory-from-prompt)))
+
+    (if dir
+        (setq textprop-path (f-join dir textprop-path)))
+    
+    (if textprop-path
+        (find-file textprop-path)
+      (let ((maybe_path
+             (ffap-guesser)))
+
+        (if (sor maybe_path)
+            (call-interactively 'find-file-at-point)
+          (call-interactively 'find-file))))))
+
 ;; TODO: Make it so =eshell= makes buttons out of =ls= results
 ;; Frustratingly, it seems like the global map is not respecting the mouse text properties
 (defun eshell-ls-decorated-name (file)
   "Return FILE, possibly decorated."
+  ;; (elog "%s" "*ls-files*" file)
   (if eshell-ls-use-colors
       (let ((face
              (cond
@@ -612,7 +641,10 @@ environment, as specified in `eshell-variable-aliases-list'."
                    (if (funcall (caar tests) (car file) (cdr file))
                        (setq value (cdar tests) tests nil)
                      (setq tests (cdr tests))))
-                 value)))))
+                 value))
+
+              (t
+               'eshell-normal-file))))
 
         (let* ((map (make-sparse-keymap))
                (link-start 0)
@@ -626,21 +658,33 @@ environment, as specified in `eshell-variable-aliases-list'."
                                                     font-lock-face ,face
                                                     mouse-face highlight
                                                     ;; help-echo "mouse-2: visit this file in other window"
-                                                    help-echo "RET: find file")
+                                                    help-echo "RET: find file"
+                                                    file-path ,(car file))
                                            (car file))
                     (add-text-properties link-start link-end
                                          `(keymap ,map
                                                   mouse-face highlight
                                                   ;; help-echo "mouse-2: visit this file in other window"
-                                                  help-echo "RET: find file")
+                                                  help-echo "RET: find file"
+                                                  file-path ,(car file))
                                          (car file))))))
 
           ;; (define-key map [mouse-down-3] 'dired-mouse-find-file-other-window)
           ;; (define-key map [mouse-down-1] 'pen-find-file)
           ;; RET - this works but I need a non-mouse function
-          (define-key map [?\r] 'pen-find-file)
+
+          ;; Ah, interesting. This is what provides the ability to "go to" a file in ls output.
+          ;; However, I would like to make it have proper buttons.
+          (define-key map [?\r] 'pen-eshell-find-file)
+          (define-key map [mouse-1] 'pen-eshell-find-file)
+
+          ;; (define-key map [?\r] 'pen-eshell-go-to-start-of-prompt)
+          
           ;; (put-text-property link-start link-end 'keymap map (car file))
 
+          ;; (elog "%s" "*ls-files*" (pps file))
+          ;; text
+          ;; (elog "%s" "*ls-files*" text)
           text)))
   (car file))
 
@@ -881,6 +925,19 @@ If N is negative, search forwards for the -Nth following match."
       (deselect)
       (s-remove-trailing-literal ":" dir))))
 
+(defun pen-eshell-get-command-for-line ()
+  "Extract the s-cmd that relates to the cursor position."
+
+  (save-excursion
+    (pen-eshell-go-to-start-of-prompt)
+    (let ((s-cmd
+           (progn
+             (pen-copy-line)
+             (if (selected-p)
+                 (pen-selected-text)))))
+      (deselect)
+      s-cmd)))
+
 (defun pen-eshell-copy-directory-from-prompt ()
   (interactive)
   (let ((dir (umn (pen-eshell-get-directory-for-line))))
@@ -889,6 +946,31 @@ If N is negative, search forwards for the -Nth following match."
             nil nil "Directory from prompt"))))
 
 (define-key eshell-mode-map (kbd "M-y d") 'pen-eshell-copy-directory-from-prompt)
+
+(defun pen-eshell-copy-directory-and-command-from-prompt ()
+  (interactive)
+  (let ((dir (umn (pen-eshell-get-directory-for-line)))
+        (c (pen-eshell-get-command-for-line)))
+    (if dir
+        (setq dir (f-expand dir)))
+    (xc (format "cd %s; %s"
+                (cmd dir)
+                c)
+        nil nil "Command from prompt")))
+
+;; This is an analog of bash's M-k
+(define-key eshell-mode-map (kbd "M-y k") 'pen-eshell-copy-directory-and-command-from-prompt)
+
+(defun pen-eshell-avy-copy-directory-and-command ()
+  (interactive)
+  (save-excursion
+    (if (and (major-mode-p 'minibuffer-mode)
+             (ivy-running-p))
+        (call-interactively 'ivy-avy)
+      (call-interactively 'avy-goto-char))
+    (pen-eshell-copy-directory-and-command-from-prompt)))
+
+(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 
 (defun pen-enable-org-link-font-lock-test ()
   (interactive)
@@ -972,5 +1054,164 @@ If N is negative, search forwards for the -Nth following match."
         (kill-local-variable 'org-descriptive-links)
         (kill-local-variable 'org-mouse-map)
         (kill-local-variable 'font-lock-unfontify-region-function)))))
+
+(defun eshell-ls-dir (dirinfo &optional insert-name root-dir size-width)
+  "Output the entries in DIRINFO.
+If INSERT-NAME is non-nil, the name of DIRINFO will be output.  If
+ROOT-DIR is also non-nil, and a directory name, DIRINFO will be output
+relative to that directory."
+  (let ((dir (car dirinfo)))
+    (if (not (cdr dirinfo))
+        (funcall error-func (format "%s: No such file or directory\n" dir))
+      (if dir-literal
+          (eshell-ls-file dirinfo size-width)
+        (if insert-name
+            (funcall insert-func
+                     (eshell-ls-decorated-name
+                      (cons (concat
+                             (if root-dir
+                                 (file-relative-name dir root-dir)
+                               (expand-file-name dir)))
+                            (cdr dirinfo))) ":\n"))
+        (let ((entries (eshell-directory-files-and-attributes
+                        dir nil (and (not (or show-all show-almost-all))
+                                     eshell-ls-exclude-hidden
+                                     "\\`[^.]") t
+                                     ;; Asking for UID and GID as
+                                     ;; strings saves another syscall
+                                     ;; later when we are going to
+                                     ;; display user and group names.
+                        (if numeric-uid-gid 'integer 'string))))
+          (when (and show-almost-all
+                     (not show-all))
+            (setq entries
+                  (cl-remove-if
+                   (lambda (entry)
+                     (member (car entry) '("." "..")))
+                   entries)))
+          (when (and (not (or show-all show-almost-all))
+                     eshell-ls-exclude-regexp)
+            (while (and entries (string-match eshell-ls-exclude-regexp
+                                              (caar entries)))
+              (setq entries (cdr entries)))
+            (let ((e entries))
+              (while (cdr e)
+                (if (string-match eshell-ls-exclude-regexp (car (cadr e)))
+                    (setcdr e (cddr e))
+                  (setq e (cdr e))))))
+          (when (or (eq listing-style 'long-listing) show-size)
+            (let ((total 0.0))
+              (setq size-width 0)
+              (dolist (e entries)
+                (if (file-attribute-size (cdr e))
+                    (setq total (+ total (file-attribute-size (cdr e)))
+                          size-width
+                          (max size-width
+                               (length (eshell-ls-printable-size
+                                        (file-attribute-size (cdr e))
+                                        (not
+                                         ;; If we are under -l, count length
+                                         ;; of sizes in bytes, not in blocks.
+                                         (eq listing-style 'long-listing))))))))
+              (funcall insert-func "total "
+                       (eshell-ls-printable-size total t) "\n")))
+          (let ((default-directory (expand-file-name dir)))
+            (if show-recursive
+                (eshell-ls-entries
+                 (let ((e entries) (good-entries (list t)))
+                   (while e
+                     (unless (let ((len (length (caar e))))
+                               (and (eq (aref (caar e) 0) ?.)
+                                    (or (= len 1)
+                                        (and (= len 2)
+                                             (eq (aref (caar e) 1) ?.)))))
+                       (nconc good-entries (list (car e))))
+                     (setq e (cdr e)))
+                   (cdr good-entries))
+                 nil root-dir)
+              (eshell-ls-files (eshell-ls-sort-entries entries)
+                               size-width))))))))
+
+(defun eshell-ls-files (files &optional size-width copy-fileinfo)
+  "Output a list of FILES.
+Each member of FILES is either a string or a cons cell of the form
+\(FILE .  ATTRS)."
+  ;; Mimic behavior of coreutils ls, which lists a single file per
+  ;; line when output is not a tty.  Exceptions: if -x was supplied,
+  ;; or if we are the _last_ command in a pipeline.
+  ;; FIXME Not really the same since not testing output destination.
+  (if (or (and eshell-in-pipeline-p
+               (not (eq eshell-in-pipeline-p 'last))
+               (not (eq listing-style 'by-lines)))
+          (memq listing-style '(long-listing single-column)))
+      (dolist (file files)
+        (if file
+            (eshell-ls-file file size-width copy-fileinfo)))
+    (let ((f files)
+          last-f
+          display-files) ;; ignore
+      (while f
+        (if (cdar f)
+            (setq last-f f
+                  f (cdr f))
+          (unless nil ;; ignore
+            (funcall error-func
+                     (format "%s: No such file or directory\n" (caar f))))
+          (if (eq f files)
+              (setq files (cdr files)
+                    f files)
+            (if (not (cdr f))
+                (progn
+                  (setcdr last-f nil)
+                  (setq f nil))
+              (setcar f (cadr f))
+              (setcdr f (cddr f))))))
+      (if (not show-size)
+          (setq display-files (mapcar #'eshell-ls-annotate files))
+        (dolist (file files)
+          (let* ((str (eshell-ls-printable-size (file-attribute-size (cdr file)) t))
+                 (len (length str)))
+            (if (< len size-width)
+                (setq str (concat (make-string (- size-width len) ? ) str)))
+            (setq file (eshell-ls-annotate file)
+                  display-files (cons (cons (concat str " " (car file))
+                                            (cdr file))
+                                      display-files))))
+        (setq display-files (nreverse display-files)))
+      (let* ((col-vals
+              (if (eq listing-style 'by-columns)
+                  (eshell-ls-find-column-lengths display-files)
+                (cl-assert (eq listing-style 'by-lines))
+                (eshell-ls-find-column-widths display-files)))
+             (col-widths (car col-vals))
+             (display-files (cdr col-vals))
+             (columns (length col-widths))
+             (col-index 1)
+             need-return)
+        (dolist (file display-files)
+          (let ((name
+                 (if (car file)
+                     (if show-size
+                         (concat (substring (car file) 0 size-width)
+                                 (eshell-ls-decorated-name
+                                  (cons (substring (car file) size-width)
+                                        (cdr file))))
+                       (eshell-ls-decorated-name file))
+                   "")))
+            (if (< col-index columns)
+                (setq need-return
+                      (concat need-return name
+                              (make-string
+                               (max 0 (- (aref col-widths
+                                               (1- col-index))
+                                         (length name)))
+                               ;; This was strange in the original code
+                               ;; ?)
+                               (string-to-char " ")))
+                      col-index (1+ col-index))
+              (funcall insert-func need-return name "\n")
+              (setq col-index 1 need-return nil))))
+        (if need-return
+            (funcall insert-func need-return "\n"))))))
 
 (provide 'pen-eshell)

@@ -77,10 +77,12 @@
         
         (prolog-mode
          (on org-link-minor-mode))
-        
+
+        ;; DISCARD j:hl-line-mode-around-advice <- also doesn't appear to do the job
         ;; (eshell-mode
-        ;;  ;; (on org-link-minor-mode)
-        ;;  (off org-link-minor-mode))
+        ;; (on org-link-minor-mode)
+        ;; (off org-link-minor-mode)
+        ;; (off hl-line-mode))
         
         (rpl-mode
          (on org-link-minor-mode))
