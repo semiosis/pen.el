@@ -111,6 +111,20 @@
            (buttons-collect))
    (pen-widgets-collect)))
 
+(defun ace-link-goto-eshell-file-path ()
+  (interactive)
+  (avy-with ace-link-help
+    (avy-process
+     (mapcar #'cdr
+             (-filter (lambda (e)
+                        (let ((pos (cdr e)))
+                          (and (>= pos (window-start))
+                               (<= pos (window-end)))))
+                      (pen-textprop-collect 'file-path))
+             ;; (pen-textprop-collect 'file-path)
+             )
+     (avy--style-fn avy-style))))
+
 (defun ace-link-click-link-or-button ()
   (interactive)
   (let ((pt (avy-with ace-link-help

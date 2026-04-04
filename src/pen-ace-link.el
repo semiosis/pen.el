@@ -14,6 +14,14 @@
 ;; (advice-add 'link-hint-copy-link :around #'link-hint-copy-link-around-advice)
 ;; (advice-remove 'link-hint-copy-link #'link-hint-copy-link-around-advice)
 
+(defun pen-link-hint-copy-link ()
+  (interactive)
+  (cond
+   ((major-mode-p 'eshell-mode)
+    (pen-eshell-avy-copy-file-path))
+   (t
+    (link-hint-copy-link))))
+
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun link-hint--apply-around-advice (proc &rest args)
   (let ((res (apply proc args)))

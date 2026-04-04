@@ -217,7 +217,7 @@ display values."
                          ("J" #'magit-log "magit log")
                          (";" #'other-window-1 "Other window")
                          ("m" #'switch-to-previous-buffer "alternate buffer")
-                         ("y" #'link-hint-copy-link "copy link")
+                         ("y" #'pen-link-hint-copy-link "copy link")
                          ("K" #'pen-kill-buffer-and-reopen "Kill buffer and load file")
                          (">" #'rotate-layout "Rotate layout")
                          ("O" #'rotate:even-horizontal "Horizontal")

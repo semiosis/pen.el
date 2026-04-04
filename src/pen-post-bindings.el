@@ -296,7 +296,7 @@
                   (define-key ,m (kbd ,(concat k " k")) #'bury-buffer)
                   (define-key ,m (kbd ,(concat k " s")) #'pen-sph)
                   (define-key ,m (kbd ,(concat k " S")) #'pen-spv)
-                  (define-key ,m (kbd ,(concat k " y")) #'link-hint-copy-link)
+                  (define-key ,m (kbd ,(concat k " y")) #'pen-link-hint-copy-link)
                   (define-key ,m (kbd ,(concat k " M-e")) #'pen-revert)
                   (define-key ,m (kbd ,(concat k " M-w")) #'pen-save))))
 

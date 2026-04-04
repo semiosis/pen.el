@@ -450,9 +450,10 @@ or an external command."
   "Ranger."
   (apply 'ranger args))
 
-(defun eshell/d (&rest args)
+(defun eshell/dired (&rest args)
   "Ranger."
   (apply 'dired (or args '("."))))
+(defalias 'eshell/d 'eshell/dired)
 
 ;; (define-key eshell-mode-map (kbd "M-h") 'pen-sph)
 ;; (define-key eshell-mode-map (kbd "M-h") 'eshell-sph)
@@ -487,6 +488,14 @@ or an external command."
 
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
+
+(defun eshell-make-output-readonly ()
+  (make-region-read-only
+   eshell-last-output-start
+   (- eshell-last-output-end 1)))
+(advice-add 'eshell-make-output-readonly :around #'ignore-errors-around-advice)
+
+(add-to-list 'eshell-output-filter-functions 'eshell-make-output-readonly t)
 
 (comment
  (etv (pps (eshell-environment-variables)))
@@ -571,30 +580,34 @@ environment, as specified in `eshell-variable-aliases-list'."
 
 ;; j:ace-link--eww-collect
 
-(defun pen-eshell-find-file ()
-  "This command is really only supposed to be called specifically from clicking ls output in eshell."
-  (interactive)
+;; No longer needed:
+;; (defun pen-eshell-find-file ()
+;;   "This command is really only supposed to be called specifically from clicking ls output in eshell."
+;;   (interactive)
   
-  (let ((textprop-path (get-text-property (point) 'file-path))
-        (dir (pen-eshell-copy-directory-from-prompt)))
+;;   (let ((textprop-path (get-text-property (point) 'file-path))
+;;         (dir (pen-eshell-copy-directory-from-prompt)))
 
-    (if dir
-        (setq textprop-path (f-join dir textprop-path)))
+;;     (if dir
+;;         (setq textprop-path (f-join dir textprop-path)))
     
-    (if textprop-path
-        (find-file textprop-path)
-      (let ((maybe_path
-             (ffap-guesser)))
+;;     (if textprop-path
+;;         (find-file textprop-path)
+;;       (let ((maybe_path
+;;              (ffap-guesser)))
 
-        (if (sor maybe_path)
-            (call-interactively 'find-file-at-point)
-          (call-interactively 'find-file))))))
+;;         (if (sor maybe_path)
+;;             (call-interactively 'find-file-at-point)
+;;           (call-interactively 'find-file))))))
+
+
 
 ;; TODO: Make it so =eshell= makes buttons out of =ls= results
 ;; Frustratingly, it seems like the global map is not respecting the mouse text properties
 (defun eshell-ls-decorated-name (file)
   "Return FILE, possibly decorated."
   ;; (elog "%s" "*ls-files*" file)
+  ;; (elog "%s" "*ls-files*" dir)
   (if eshell-ls-use-colors
       (let ((face
              (cond
@@ -643,12 +656,22 @@ environment, as specified in `eshell-variable-aliases-list'."
                      (setq tests (cdr tests))))
                  value))
 
-              (t
-               'eshell-normal-file))))
+              ;; (t
+              ;;  'eshell-normal-file)
+              )))
 
         (let* ((map (make-sparse-keymap))
                (link-start 0)
                (link-end (length (car file)))
+
+               (fdir (if (and (variable-p 'root-dir)
+                              (variable-p 'dir))
+                         (f-join root-dir dir)
+                       (progn
+                         (tv (car file))
+                         "/etc")
+                       ;; (elog (pen-eshell-copy-directory-from-prompt) "*ls-files*")
+                       ))
 
                (text
                 (progn
@@ -659,14 +682,15 @@ environment, as specified in `eshell-variable-aliases-list'."
                                                     mouse-face highlight
                                                     ;; help-echo "mouse-2: visit this file in other window"
                                                     help-echo "RET: find file"
-                                                    file-path ,(car file))
+                                                    ;; root-dir (from j:eshell-ls-dir) and dir (from j:eshell-ls-entries)
+                                                    file-path ,(f-join fdir (car file)))
                                            (car file))
                     (add-text-properties link-start link-end
                                          `(keymap ,map
                                                   mouse-face highlight
                                                   ;; help-echo "mouse-2: visit this file in other window"
                                                   help-echo "RET: find file"
-                                                  file-path ,(car file))
+                                                  file-path ,(f-join fdir (car file)))
                                          (car file))))))
 
           ;; (define-key map [mouse-down-3] 'dired-mouse-find-file-other-window)
@@ -675,14 +699,15 @@ environment, as specified in `eshell-variable-aliases-list'."
 
           ;; Ah, interesting. This is what provides the ability to "go to" a file in ls output.
           ;; However, I would like to make it have proper buttons.
-          (define-key map [?\r] 'pen-eshell-find-file)
-          (define-key map [mouse-1] 'pen-eshell-find-file)
+          (define-key map [?\r] 'pen-find-file)
+          (define-key map [mouse-1] 'pen-find-file)
 
           ;; (define-key map [?\r] 'pen-eshell-go-to-start-of-prompt)
           
           ;; (put-text-property link-start link-end 'keymap map (car file))
 
           ;; (elog "%s" "*ls-files*" (pps file))
+          ;; (elog "%s" "*ls-files*" (car file))
           ;; text
           ;; (elog "%s" "*ls-files*" text)
           text)))
@@ -969,6 +994,15 @@ If N is negative, search forwards for the -Nth following match."
         (call-interactively 'ivy-avy)
       (call-interactively 'avy-goto-char))
     (pen-eshell-copy-directory-and-command-from-prompt)))
+
+(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
+
+(defun pen-eshell-avy-copy-file-path ()
+  (interactive)
+  (save-excursion
+    (ace-link-goto-eshell-file-path)
+    (xc (f-realpath (str (get-text-property (point) 'file-path)))
+        nil nil "Copied eshell file path")))
 
 (define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 

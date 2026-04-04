@@ -39,9 +39,9 @@
                                       (mapcar 'substring-no-properties
                                               (mapcar (lambda (e) (if e e "")) args))) " ")))
 
-(defun variable-p (s)
-  (and (not (eq s nil))
-       (boundp s)))
+(defun variable-p (sym-name)
+  (and (not (eq sym-name nil))
+       (boundp sym-name)))
 
 (defmacro shut-up-c (&rest body)
   "This works for c functions where shut-up does not."
