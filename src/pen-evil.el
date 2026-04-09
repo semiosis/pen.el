@@ -357,6 +357,7 @@
    ;; (t (find-file (tv fp)))
    (t (sh/open fp))))
 
+(evil-ex-define-cmd "o" 'evil-open)
 (evil-ex-define-cmd "O" 'evil-open)
 (evil-ex-define-cmd "Eww" 'evil-open)
 

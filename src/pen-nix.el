@@ -177,6 +177,7 @@ Be mindful of quoting arguments correctly."
   (if path
       (sh (concat "vim " (pen-q (concat path))) nil nil nil "sh" t "nw")
     (sh "vim" nil nil nil "sh" t "nw")))
+(defalias 'v 'vim)
 
 (defun nano (&optional path)
   (interactive)

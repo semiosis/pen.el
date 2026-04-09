@@ -447,7 +447,7 @@ sort-by-frequency
 snake-case2spinal-case
 frangipanni
 sed -e "s/\b\(.\)/\l\1/g" # lowercase (uncapitalize) first letter
-sed -e "s/\b\(.\)/\u\1/g" # uppercase first letter
+sed -e "s/\b\(.\)/\u\1/g" # uppercase (capitalize) first letter
 sed 's/^- \[\([^]]\+\)\].*/\1/' # markdown link labels
 bb -i '*input*' # bb -i '(clojure.string/split-lines *input*)'
 paste -s -d' \n' # join every other line

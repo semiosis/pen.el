@@ -358,6 +358,7 @@ display values."
                          "NORMAL: quoting"
                          ;; ("q" (pen-region-pipe "q -ftln") "wrl quote")
                          ("d" #'major-mode-functions "run major mode function")
+                         ("x" #'context-functions "run context function")
                          ("q" (df fi-wrl-quote (pen-region-pipe "qftln")) "wrl quote")
                          ("l" (df fi-wrl-quote (pen-region-pipe "qftln")) "wrl quote")
                          ("u" (df fi-wrl-unquote (pen-region-pipe "uq -ftln")) "wrl unquote")
@@ -511,6 +512,8 @@ display values."
       (call-interactively 'bash-messages)
     (switch-to-buffer "*Messages*")))
 
+(defalias 'emoji-insert 'pick-emoji)
+
 (convert-hydra-to-sslk "lk"
                        (defhydra h_nc (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: commands"
                          "NORMAL: commands"
@@ -530,13 +533,13 @@ display values."
                          ;; ("e" (progn (save-excursion (h_open-repl/body) (norm/hydra-push '(h_nx/body)))) "open repl")
                          ("e" #'change-file-extension "change file extension")
                          ("f" #'helm-do-grep-ag "ag silversercher")
-                         ("g" (dff (call-interactively 'greek-digraph-select)) "Insert Greek digraph")
-                         ("h" (dff (call-interactively 'hebrew-digraph-select)) "Insert Hebrew digraph")
-                         ("a" (dff (call-interactively 'aramaic-digraph-select)) "Insert Aramaic digraph")
-                         ("d" (dff (call-interactively 'digraph-select)) "Insert digraph")
-                         ("D" (dff (call-interactively 'show-digraphs)) "Show digraphs")
-                         ("y" (dff (call-interactively 'symbol-select)) "Insert symbol")
-                         ("p" (dff (call-interactively 'pick-emoji)) "Insert emoji")
+                         ("g" 'greek-digraph-select "Insert Greek digraph")
+                         ("h" 'hebrew-digraph-select "Insert Hebrew digraph")
+                         ("a" 'aramaic-digraph-select "Insert Aramaic digraph")
+                         ("d" 'digraph-select "Insert digraph")
+                         ("D" 'show-digraphs "Show digraphs")
+                         ("y" 'symbol-select "Insert symbol")
+                         ("p" 'pick-emoji "Insert emoji")
                          ("i" #'global-rainbow-identifiers-always-mode "Rainbow identifiers")
                          ("j" #'compile-run "compile-run")
                          ("J" #'compile-run-term "compile-run-term")

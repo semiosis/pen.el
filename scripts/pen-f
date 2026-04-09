@@ -156,6 +156,11 @@ case "$opt" in
     }
     ;;
 
+    max) {
+        sort -rn | head -1
+    }
+    ;;
+
     which) {
         if stdin_exists; then
             input="$(cat)"

@@ -184,6 +184,21 @@
     (cl-loop for f in context-pred-funcs do (ignore-errors (memoize-restore f)))
     (remove nil (-distinct (-flatten suggestions)))))
 
+(defun context-functions ()
+  (interactive)
+  
+  (let ((f
+         (fz (let (fs)
+               (spinner-start)
+               (pen-snc (cmd "spinner-start" "Collecting context fns"))
+               (setq fs (pen-suggest-funcs-collect))
+               (spinner-stop)
+               (pen-snc "spinner-stop")
+               fs)
+             nil nil "Run context function: ")))
+    (if f
+        (call-interactively 'f))))
+
 (defun pen-suggest-funcs ()
   (interactive)
   (let* ((fz-input (pen-suggest-funcs-collect))

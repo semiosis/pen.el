@@ -384,27 +384,30 @@ or an external command."
             (pen-snc (apply 'cmd (cons ,cname args)))))))
 
 ;; This fz inserts the results of the command
-(loop for c in '(find) do
-      (let* ((cname (sym2str c))
-             (fname (str2sym (concat "eshell/" (sym2str c))))
-             (comment (concat "Alias to " cname " shell command.")))
-        (eval
-         `(defun ,fname (&rest args)
-            ,comment
-            ;; Firstly, fix the arguments
-            (setq args (mapcar 'str args))
+(comment
+ (loop for c in '(
+                  ;; find
+                  ) do
+       (let* ((cname (sym2str c))
+              (fname (str2sym (concat "eshell/" (sym2str c))))
+              (comment (concat "Alias to " cname " shell command.")))
+         (eval
+          `(defun ,fname (&rest args)
+             ,comment
+             ;; Firstly, fix the arguments
+             (setq args (mapcar 'str args))
 
-            (let* ((c (apply 'cmd-nice (cons ,cname args)))
-                   (results (sor (pen-snc c))))
+             (let* ((c (apply 'cmd-nice (cons ,cname args)))
+                    (results (sor (pen-snc c))))
 
-              (if results
-                  (let ((sel (fz results
-                                 nil nil
-                                 (format-prompt c nil))))
-                    (if sel
-                        (insert (concat "e " sel))))
-                (format "%d results" (length results))
-                (format "No results")))))))
+               (if results
+                   (let ((sel (fz results
+                                  nil nil
+                                  (format-prompt c nil))))
+                     (if sel
+                         (insert (concat "e " sel))))
+                 (format "%d results" (length results))
+                 (format "No results"))))))))
 
 ;; Because there is a j:df macro in emacs, I
 ;; define here an eshell function which will be found first
@@ -419,6 +422,17 @@ or an external command."
   ;; (pen-snc (apply 'cmd (cons "df" args)))
   )
 
+;; free -h -w -l -t
+(defun eshell/free (&rest args)
+  "Like the bash `command` function."
+  ;; Firstly, fix the arguments
+  (setq args
+        (or (mapcar 'str args)
+            '("free" "-h" "-w" "-l" "-t")))
+
+  (cmd-out-to-tablist-quick (concat (apply 'cmd (cons "free" (cons "-eshell" args))))
+                            t))
+
 (defun eshell/e (&rest args)
   "Like the bash `command` function."
 
@@ -432,6 +446,53 @@ or an external command."
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
   (pen-snc (apply 'cmd (cons "com" args))))
+
+(defun eshell/find (&rest args)
+  "Find output that I can copy paths from"
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+
+  ;; (pen-snc (eval `(cmd "command" ,@args)))
+  ;; (pen-snc (apply 'cmd (cons "command" args)))
+  ;; TODO Find a 'join' that keeps the string properties
+  ;; (snc "spinner-start eshell/find")
+  ;; (spinner-start)
+  (let* ((dir (pen-snc "pwd"))
+         (results (pen-snc (apply 'cmd (append '("com") (cons "find" args)))))
+
+         ;; I could in future optimise this to be fast without losing results.
+         ;; Going by a quick test right now, xargs in this current formulation is much
+         ;; faster than the parallel formulation.
+         (fullpaths (pen-snc (cmd "xargs" "realpath" "-m") results))
+         ;; TODO Make it more reliable
+         ;; (fullpaths (pen-snc (concat "q -l | " (cmd "xargs" "realpath" "-m") " | q -l") results))
+         ;; (fullpaths (pen-snc (cmd "parallel" "-I%" "realpath" "-m" "%") results))
+
+         (strs
+          (cl-loop for fptp in (-zip (str2lines results)
+                                     (str2lines fullpaths))
+                   collect
+                   (pen-add-textprops
+                    (car fptp)
+                    ;; (epe-colorize-with-face
+                    ;;  (mnm (eshell/pwd))
+                    ;;  ;; (funcall
+                    ;;  ;;  shrink-paths
+                    ;;  ;;  (eshell/pwd)
+                    ;;  ;;  ;; (split-string
+                    ;;  ;;  ;;  (funcall pwd-repl-home (eshell/pwd)) "/")
+                    ;;  ;;  )
+                    ;;  'epe-dir-face)
+                    'mouse-face 'highlight
+                    'help-echo (concat (cdr fptp))
+                    'file-path
+                    ;; (f-realpath fptp)
+                    (cdr fptp)))))
+    ;; (tv (pps (-zip (str2lines results)
+    ;;                (str2lines fullpaths))))
+    ;; (snc "spinner-stop")
+    ;; (spinner-stop)
+    (s-join "\n" strs)))
 
 (defun eshell/br (&rest args)
   "broot."
@@ -674,23 +735,23 @@ environment, as specified in `eshell-variable-aliases-list'."
                        ))
 
                (text
-                (progn
+                (let ((path (f-join fdir (car file))))
                   (if face
                       (add-text-properties link-start link-end
                                            `(keymap ,map
                                                     font-lock-face ,face
                                                     mouse-face highlight
                                                     ;; help-echo "mouse-2: visit this file in other window"
-                                                    help-echo "RET: find file"
+                                                    help-echo ,(concat "RET: find-file " path)
                                                     ;; root-dir (from j:eshell-ls-dir) and dir (from j:eshell-ls-entries)
-                                                    file-path ,(f-join fdir (car file)))
+                                                    file-path ,path)
                                            (car file))
                     (add-text-properties link-start link-end
                                          `(keymap ,map
                                                   mouse-face highlight
                                                   ;; help-echo "mouse-2: visit this file in other window"
                                                   help-echo "RET: find file"
-                                                  file-path ,(f-join fdir (car file)))
+                                                  file-path ,path)
                                          (car file))))))
 
           ;; (define-key map [mouse-down-3] 'dired-mouse-find-file-other-window)
@@ -746,6 +807,15 @@ If N is negative, search forwards for the -Nth following match."
 
 ;; Where to put this?
 ;; (add-to-list 'eshell-modules-list 'eshell-smart)
+
+(setq eshell-modules-list
+'(eshell-alias eshell-banner eshell-basic eshell-cmpl eshell-dirs eshell-extpipe eshell-glob eshell-hist eshell-ls eshell-pred eshell-prompt eshell-script eshell-term eshell-unix
+               ;; eshell-smart [[info:eshell#Smart scrolling][Emacs Info: eshell#Smart scrolling]]
+               ;; eshell-rebind [[info:eshell#Key rebinding][Emacs Info: eshell#Key rebinding]]
+               ))
+
+;; from eshell-rebind. This doesn't work anyway with the modifications I have made
+;; (setq eshell-confine-point-to-input nil)
 
 (defun pen-eshell-visual-command-p (command)
   (cl-letf (((symbol-function 'eshell-interactive-output-p) 'identity)) (eshell-visual-command-p command nil)))
@@ -843,15 +913,19 @@ If N is negative, search forwards for the -Nth following match."
      ;;                          (split-string
      ;;                           (funcall pwd-repl-home (eshell/pwd)) "/"))
      ;;                         'epe-dir-face)
-     (epe-colorize-with-face
-      (mnm (eshell/pwd))
-      ;; (funcall
-      ;;  shrink-paths
-      ;;  (eshell/pwd)
-      ;;  ;; (split-string
-      ;;  ;;  (funcall pwd-repl-home (eshell/pwd)) "/")
-      ;;  )
-      'epe-dir-face)
+
+     (pen-add-textprops
+      (epe-colorize-with-face
+       (mnm (eshell/pwd))
+       ;; (funcall
+       ;;  shrink-paths
+       ;;  (eshell/pwd)
+       ;;  ;; (split-string
+       ;;  ;;  (funcall pwd-repl-home (eshell/pwd)) "/")
+       ;;  )
+       'epe-dir-face)
+      'mouse-face 'highlight
+      'file-path (eshell/pwd))
      (when (epe-git-p)
        (concat
         (epe-colorize-with-face ":" 'epe-dir-face)
@@ -1247,5 +1321,37 @@ Each member of FILES is either a string or a cons cell of the form
               (setq col-index 1 need-return nil))))
         (if need-return
             (funcall insert-func need-return "\n"))))))
+
+;; Because I want eshell to find the mx:j function
+(fmakunbound 'eshell/j)
+
+;; Renamed from eshell/j
+(defun eshell/aj (&rest args)           ; all but first ignored
+  "Jump to a directory you often cd to.
+This compares the argument with the list of directories you usually jump to.
+Without an argument, list the ten most common directories.
+With a positive integer argument, list the n most common directories.
+Otherwise, call `eshell/cd' with the result."
+  (setq args (eshell-flatten-list args))
+  (let ((path (car args))
+        (candidates (eshell-autojump-candidates))
+        (case-fold-search (eshell-under-windows-p))
+        result)
+    (when (not path)
+      (setq path 10))
+    (if (and (integerp path) (> path 0))
+        (progn
+          (let ((n (nthcdr (1- path) candidates)))
+            (when n
+              (setcdr n nil)))
+          (eshell-lisp-command (mapconcat 'identity candidates "\n")))
+      (while (and candidates (not result))
+        (if (string-match path (car candidates))
+            (setq result (car candidates))
+          (setq candidates (cdr candidates))))
+      (eshell/cd result))))
+(defalias 'eshell/autojump 'eshell/aj)
+(defalias 'eshell/jump 'eshell/aj)
+
 
 (provide 'pen-eshell)

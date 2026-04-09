@@ -1,0 +1,60 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# Try to do all of this postprocessing using awk alone
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -eshell) {
+        from_eshell=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+count_columns() {
+    awk -F',' '{print NF-1}'
+}
+
+max() {
+    sort -rn | head -1
+}
+
+IFS= read -r -d '' awk_script <<HEREDOC
+# repeat-string
+function rep1(s,n,      r) {
+# O(n) allocate/appends
+# 2 lines of code
+# This is the simplest possible solution that will work:
+# just repeatedly append the input string onto the value
+# that will be passed back, decrementing the input count
+# until it reaches zero.
+        while (n-->0) r = r s;
+        return r;
+}
+HEREDOC
+
+fill_columns() {
+    max_cols="$1"
+    max_cols="$(( max_cols + 1))"
+    awk -F',' -v maxcols="$max_cols" "${awk_script} {print \$0 rep1(\",\",(maxcols-NF))}"
+}
+
+if test "$from_eshell" = "y"; then
+    out="$(
+        echo -n Type
+        /usr/bin/free "$@" | sed -E 's/ +/,/g' | sed -e "1s/\b\(.\)/\u\1/g"
+    )"
+
+    max_cols="$(printf -- "%s\n" "$out" | count_columns | max)"
+
+    # printf -- "%s\n" "$out"
+    # printf -- "%s\n" "$max_cols"
+    printf -- "%s\n" "$out" | fill_columns "$max_cols"
+else
+    /usr/bin/free "$@"
+fi

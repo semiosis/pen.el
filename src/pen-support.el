@@ -1928,6 +1928,9 @@ when s is a string, set the clipboard to s"
             (user-emacs-directory "$EMACSD_BUILTIN")
             ((getenv "EMACSD_BUILTIN") "$EMACSD_BUILTIN")
             ;; ((getenv "MYGIT_HOST") "$MYGIT_HOST")
+            ;; Why was MYGIT not found?
+            ;; ((or (getenv "MYGIT")
+            ;;      "/root/repos") "$MYGIT")
             ((getenv "MYGIT") "$MYGIT")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")

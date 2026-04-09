@@ -49,6 +49,13 @@
       (format "%S" (buffer-substring (region-beginning) (region-end)))
     (format "%S" (buffer-string))))
 
+;; (pen-add-textprops "dfkslj" 'file-path "/")
+(defun pen-add-textprops (s &rest props)
+  (with-temp-buffer
+    (insert s)
+    (add-text-properties (point-min) (point-max) props)
+    (buffer-string)))
+
 (defun pen-etv-textprops ()
   (interactive)
   (new-buffer-from-string (pen-textprops-in-region-or-buffer)))
