@@ -4,6 +4,15 @@
 
 (column-number-mode 1)
 
+;; This is interesting. Even capable terminals can display it
+;; [[info:emacs#Displaying Boundaries][Emacs Info: emacs#Displaying Boundaries]]
+;; ev:fill-column
+(comment
+ ;; Too distracting
+ (global-display-fill-column-indicator-mode t)
+ (global-display-fill-column-indicator-mode -1))
+(setq-default display-fill-column-indicator-character (string-to-char "╳"))
+
 ;; Default Encoding
 (prefer-coding-system 'utf-8-unix)
 (set-locale-environment "en_US.UTF-8")

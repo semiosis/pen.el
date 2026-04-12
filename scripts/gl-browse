@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# use nvlinks gl-browse telnet bbs
+
+gl "$@" | fzf | xa browse

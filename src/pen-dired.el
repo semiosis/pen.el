@@ -343,4 +343,6 @@ read from minibuffer."
 (advice-add 'dired :around #'dired-around-advice)
 ;; (advice-remove 'dired #'dired-around-advice)
 
+(define-key dired-mode-map (kbd "K") 'wdired-change-to-wdired-mode)
+
 (provide 'pen-dired)

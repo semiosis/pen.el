@@ -330,6 +330,7 @@ The arguments are in English like this:
 (require 'pen-flyspell)
 (require 'pen-github)
 (require 'pen-hl)
+(require 'pen-hl-line)
 (require 'pen-hooks)
 (require 'pen-major-mode)
 (require 'pen-aliases)

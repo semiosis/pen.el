@@ -227,12 +227,15 @@ FLYSPELL-BUFFER."
   (car (flyspell-get-word)))
 
 ;; $HOME/.aspell.en.pws
-(defun pen-flyspell-add-word ()
-  (interactive)
-  (let ((current-location (point))
-        (word (flyspell-get-word)))
-    (when (consp word)
-      (flyspell-do-correct 'save nil (car word) current-location (cadr word) (caddr word) current-location))))
+(defun pen-flyspell-add-word (word)
+  (interactive (list
+                (read-string-hist "Add word to flyspell: " (car (flyspell-get-word)))))
+  (if word
+      (let* ((tp (flyspell-get-word))
+             (current-location (point)))
+        (when (consp (and tp
+                          (eq word (car tp))))
+          (flyspell-do-correct 'save nil word current-location (cadr tp) (caddr tp) current-location)))))
 
 
 ;; This helps the glossary system

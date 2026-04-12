@@ -15,6 +15,13 @@
 (require 'eshell-did-you-mean)
 (require 'eshell-bookmark)
 
+(setq eshell-hist-ignoredups t)
+(setq eshell-cmpl-cycle-completions nil)
+(setq eshell-cmpl-ignore-case t)
+(setq eshell-ask-to-save-history (quote always))
+(setq eshell-prompt-regexp "❯❯❯ ")
+(setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
+
 (eshell-info-banner-update-banner)
 
 (defalias 'banner 'eshell-info-banner)
@@ -42,14 +49,19 @@
 ;; (eshell-vterm-mode t)
 ;; (eshell-vterm-mode -1)
 
+(setq eshell-highlight-prompt nil)
+(defun pen-eshell-load-theme ()
+  (setq ;; eshell-prompt-function 'epe-theme-lambda
+   eshell-prompt-function 'epe-theme-dakrone)
+  ;; (epe-theme-lambda)
+  (setq eshell-prompt-regexp "^[^#\nλ]* λ[#]* "))
+
 
 ;; This has been a good theme. I think I'll stick with it.
 ;; It also "looks" like eshell to me now
 (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
-  (setq eshell-highlight-prompt nil
-        ;; eshell-prompt-function 'epe-theme-lambda
-        eshell-prompt-function 'epe-theme-dakrone))
+  (pen-eshell-load-theme))
 
 
 ;; mx:eshell-git-prompt-use-theme
@@ -126,13 +138,6 @@
   (magit-status (pop args) nil)
   (eshell/echo))   ;; The echo command suppresses output
 
-
-(setq eshell-hist-ignoredups t)
-(setq eshell-cmpl-cycle-completions nil)
-(setq eshell-cmpl-ignore-case t)
-(setq eshell-ask-to-save-history (quote always))
-(setq eshell-prompt-regexp "❯❯❯ ")
-(setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
 
 (defun cljr--point-after (&rest actions)
   "Returns POINT after performing ACTIONS.
@@ -446,6 +451,13 @@ or an external command."
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
   (pen-snc (apply 'cmd (cons "com" args))))
+
+(defun eshell/pwd-around-advice (proc &rest args)
+  "pwd may be used by other functions, so perhaps I should not use j:mnm"
+  (let ((res (mnm (apply proc args))))
+    res))
+;; (advice-add 'eshell/pwd :around #'eshell/pwd-around-advice)
+;; (advice-remove 'eshell/pwd #'eshell/pwd-around-advice)
 
 (defun eshell/find (&rest args)
   "Find output that I can copy paths from"
@@ -974,40 +986,43 @@ If N is negative, search forwards for the -Nth following match."
    (epe-colorize-with-face (if (= (user-uid) 0) "#" "") 'epe-sudo-symbol-face)
    " "))
 
+(defun pen-eshell-at-prompt-line ()
+  (save-excursion
+    (beginning-of-line)
+    (looking-at-p eshell-prompt-regexp)))
+
+(defun pen-eshell-start-of-prompt-point ()
+  (save-excursion
+    (let* ((init-pos (point))
+           (is-at-prompt-line (save-excursion
+                                (beginning-of-line)
+                                (looking-at-p eshell-prompt-regexp)))
+           (is-at-prompt-start-position
+            (and
+             is-at-prompt-line
+             (save-excursion
+               (pen-comint-eol)
+               (pen-comint-bol)
+               (eq init-pos (point)))))
+           (is-inside-output
+            (and
+             (not is-at-prompt-line)
+             (save-excursion
+               (eshell-previous-prompt 1)
+               (< (point) init-pos)))))
+
+      (cond
+       (is-inside-output
+        (eshell-previous-prompt 1))
+       ((and is-at-prompt-line
+             (not is-at-prompt-start-position))
+        (pen-comint-bol))))
+    (point)))
+
 ;; Implementing this function is not easy for me to think about right now
 (defun pen-eshell-go-to-start-of-prompt ()
   (interactive)
-  (let* ((init-pos (point))
-         (is-at-prompt-line (save-excursion
-                              (beginning-of-line)
-                              (looking-at-p eshell-prompt-regexp)))
-         (is-at-prompt-start-position
-          (and
-           is-at-prompt-line
-           (save-excursion
-             (pen-comint-eol)
-             (pen-comint-bol)
-             (eq init-pos (point)))))
-         (is-inside-output
-          (and
-           (not is-at-prompt-line)
-           (save-excursion
-             (eshell-previous-prompt 1)
-             (< (point) init-pos)))))
-
-    ;; (cmd (if is-at-prompt-line
-    ;;          "at-prompt-line")
-    ;;      (if is-at-prompt-start-position
-    ;;          "at-prompt-start-position")
-    ;;      (if is-inside-output
-    ;;          "inside-output"))
-
-    (cond
-     (is-inside-output
-      (eshell-previous-prompt 1))
-     ((and is-at-prompt-line
-           (not is-at-prompt-start-position))
-      (pen-comint-bol)))))
+  (goto-char (pen-eshell-start-of-prompt-point)))
 
 (defun pen-eshell-get-directory-for-line ()
   "The prompt should display the directory. Extract it from the prompt that relates to the cursor position."
@@ -1075,7 +1090,7 @@ If N is negative, search forwards for the -Nth following match."
   (interactive)
   (save-excursion
     (ace-link-goto-eshell-file-path)
-    (xc (f-realpath (str (get-text-property (point) 'file-path)))
+    (xc (f-realpath (f-expand (str (get-text-property (point) 'file-path))))
         nil nil "Copied eshell file path")))
 
 (define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
@@ -1353,5 +1368,6 @@ Otherwise, call `eshell/cd' with the result."
 (defalias 'eshell/autojump 'eshell/aj)
 (defalias 'eshell/jump 'eshell/aj)
 
+(pen-eshell-load-theme)
 
 (provide 'pen-eshell)

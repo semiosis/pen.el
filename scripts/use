@@ -17,6 +17,11 @@ case "$opt" in
     }
     ;;
 
+    nvlinks|browsh|elinks|w3m|ew3m|eww|nvw3m) {
+        export BROWSER="$opt"
+    }
+    ;;
+
     *)
 esac
 

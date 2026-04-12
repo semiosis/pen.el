@@ -56,6 +56,7 @@ case "$sn" in
     ew3m) {
         ic=w3m
         export ONLY_WINDOW=y
+        bin_alt=w3m
     }
     ;;
 
@@ -232,6 +233,11 @@ stdin_exists() {
     # So test to make sure 0 does not point to 1
     } &>/dev/null
 }
+
+if test "$NOEMACS" = "y" && test -n "$bin_alt"; then
+    "$bin_alt" "$@"
+    exit "$?"
+fi
 
 # This is an interactive command, so we are going to display emacs
 if stdin_exists; then

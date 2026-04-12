@@ -1011,6 +1011,18 @@ is specified, `:italic' is ignored."
   ;; (set-face-background 'company-tooltip-annotation "#262626")
   (set-face-background 'company-tooltip-annotation nil)
 
+  ;; (char-to-string display-fill-column-indicator-character)
+  (comment
+   (setq display-fill-column-indicator-character (string-to-char "│"))
+   (setq display-fill-column-indicator-character (string-to-char "܀"))
+   (setq display-fill-column-indicator-character (string-to-char "╳"))
+   (setq-default display-fill-column-indicator-character (string-to-char "╳")))
+  (set-face-foreground 'fill-column-indicator "#000040")
+  (set-face-background 'fill-column-indicator "#222222")
+  ;; (set-face-foreground 'shadow "#585858")
+  (set-face-foreground 'shadow "#303030")
+  (set-face-background 'shadow nil)
+
   (require 'ivy)
   (set-face-foreground 'ivy-current-match "#262626")
   (set-face-background 'ivy-current-match "#d72f4f")

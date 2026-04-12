@@ -1932,6 +1932,8 @@ when s is a string, set the clipboard to s"
             ;; ((or (getenv "MYGIT")
             ;;      "/root/repos") "$MYGIT")
             ((getenv "MYGIT") "$MYGIT")
+            ("/volumes" "$VOL")
+            ("/home/shane/var/smulliga/source/git" "$AGIA_GIT")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
             ((getenv "PENELD") "$PENELD")
@@ -1957,6 +1959,8 @@ when s is a string, set the clipboard to s"
             ("$EMACSD_BUILTIN" (getenv "EMACSD_BUILTIN"))
             ("$EMACSD" (getenv "EMACSD"))
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
+            ("$VOL" "/volumes")
+            ("$AGIA_GIT" "/home/shane/var/smulliga/source/git")
             ("$PEN_ENGINES_DIR" pen-engines-directory)
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
             ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
