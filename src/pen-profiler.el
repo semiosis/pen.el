@@ -25,7 +25,24 @@ Redefining FUNCTION also cancels it."
    (list (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
   (cancel-debug-on-entry function))
 
+(defun pen-profiler-start-cpu ()
+  (interactive)
+  (profiler-start 'cpu))
+
+(defun pen-profiler-start-mem ()
+  (interactive)
+  (profiler-start 'mem))
+
+(defun pen-profiler-start-cpu+mem ()
+  (interactive)
+  (profiler-start 'cpu+mem))
+
+(ace-link-click-textprop 'follow-link)
+
 (define-key pen-map (kbd "s-P P") 'profiler-start)
+(define-key pen-map (kbd "s-P C") 'pen-profiler-start-cpu)
+(define-key pen-map (kbd "s-P M") 'pen-profiler-start-mem)
+(define-key pen-map (kbd "s-P K") 'pen-profiler-start-cpu+mem)
 (define-key pen-map (kbd "s-P S") 'profiler-stop)
 (define-key pen-map (kbd "s-P R") 'profiler-report)
 

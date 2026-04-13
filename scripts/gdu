@@ -4,6 +4,7 @@ export TTY
 . $SCRIPTS/lib/hs
 
 # github author/repo may need adjustment
-test -f "${GOPATH%%:*}/bin/up" || go install github.com/dundee/gdu/v5/cmd/gdu@latest &>/dev/null
+# test -f "${GOPATH%%:*}/bin/up" || go install github.com/dundee/gdu/v5/cmd/gdu@latest &>/dev/null
+# ${GOPATH%%:*}/bin/gdu "$@"
 
-${GOPATH%%:*}/bin/gdu "$@"
+docker run --rm --init --interactive --tty --privileged --volume /:/mnt/root ghcr.io/dundee/gdu /mnt/root "$@"

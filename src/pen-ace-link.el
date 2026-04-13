@@ -68,6 +68,57 @@
      (ace-link--org-action pt)
      (push-button))))
 
+(defun pen-face-collect (face)
+  "Collect the positions of text with matching face in the current buffer."
+  (let ((tups))
+    (save-excursion
+      (goto-char (point-min))
+      (while (setq match (text-property-search-forward 'font-lock-face face 'eq))
+        (push (cons
+               (str (buffer-substring
+                     (prop-match-beginning match)
+                     (prop-match-end match)))
+               (prop-match-beginning match))
+              tups)))
+    (reverse tups)))
+
+(defmacro def-ace-link-goto-face (face)
+  (let ((s (str2sym (concat "ace-link-goto-face-" (sym2str face)))))
+    `(defun ,s ()
+       (interactive)
+       (avy-with ace-link-help
+         (avy-process
+          (mapcar #'cdr (pen-face-collect ',face))
+          (avy--style-fn avy-style)))
+       ;; (widget-button-press (point))
+       )))
+
+(def-ace-link-goto-face bible-verse-ref-notes)
+
+(defmacro def-ace-link-goto-textprop (prop)
+  (let ((s (str2sym (concat "ace-link-goto-textprop-" (sym2str prop)))))
+    `(defun ,s ()
+       (interactive)
+       (avy-with ace-link-help
+         (avy-process
+          (mapcar #'cdr (pen-textprop-collect ',prop))
+          (avy--style-fn avy-style)))
+       ;; (widget-button-press (point))
+       )))
+
+(defmacro def-ace-link-textprop-ekm-ret (prop)
+  (let ((s (str2sym (concat "ace-link-ekm-ret-textprop-" (sym2str prop)))))
+    `(defun ,s ()
+       (interactive)
+       (avy-with ace-link-help
+         (avy-process
+          (mapcar #'cdr (pen-textprop-collect ',prop))
+          (avy--style-fn avy-style)))
+       (ekm "C-m"))))
+
+(def-ace-link-goto-textprop follow-link)
+(def-ace-link-textprop-ekm-ret follow-link)
+
 (defun ace-link ()
   "Call the ace link function for the current `major-mode'"
   (interactive)
@@ -80,6 +131,13 @@
           (ace-link-click-link-or-button))
          ((eq major-mode 'dockerfile-mode)
           (ace-link-click-button))
+         ((eq major-mode 'profiler-report-mode)
+          ;; (ace-link-goto-textprop-follow-link)
+          (ace-link-ekm-ret-textprop-follow-link))
+         ((eq major-mode 'bible-mode)
+          (ace-link-goto-face-bible-verse-ref-notes)
+          ;; (ace-link-ekm-ret-face-bible-verse-ref-notes)
+          )
          ((member major-mode '(help-mode package-menu-mode geiser-doc-mode elbank-report-mode elbank-overview-mode slime-trace-dialog-mode helpful-mode))
           (ace-link-button-or-org))
          ((member major-mode '(org-brain-visualize-mode))

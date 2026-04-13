@@ -207,6 +207,8 @@
   (cond
    ((derived-mode-p 'tabulated-list-mode)
     nil)
+   ((derived-mode-p 'profiler-report-mode)
+    nil)
 
    ;; Transients are fundamental-mode
    ((local-variable-p 'is-transient-buffer)
