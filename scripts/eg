@@ -43,16 +43,8 @@ esac; done
 
 
 if test "$BASHGLOB" = "y"; then
-    # bash globs are not the best because of nullglob madness
-    shopt -s nullglob
-    # However bash globs have double star
-    shopt -s globstar
-
-    # echo "$1"
-
-    cmd="eval printf -- \"%s\\\\\\n\" $(cmd "$1")"
-
-    # echo "$cmd" 1>&2
+    pen-glob "$@"
+    exit "$?"
 else
     cmd="find . -maxdepth 1 -$predicate $(cmd "$1") | sed 's/^..//'"
 fi

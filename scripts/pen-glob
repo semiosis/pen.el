@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# See also extended glob script: e:eg
+
+# bash globs are not the best because of nullglob madness
 shopt -s nullglob
+# However bash globs have double star
 shopt -s globstar
 
 glob="$1"

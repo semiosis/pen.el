@@ -19,7 +19,19 @@ if test "$(pwd)" = "$GLOSSARIES"; then
     FOLLOW=y
 fi
 
+# - options come first
+# grep pattern/s come last
+
+# e.g:
+# cd /volumes/home/shane/notes/ws/jobs; ead -i -g "*org" dear
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -h|*-help) {
+        showhelp=y
+        shift
+    }
+    ;;
+
     -U|-noupdatecache) {
         UPDATE=n
         shift
@@ -58,6 +70,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$showhelp" = "y"; then
+    (
+    echo Example of usage of ead:
+    echo "  cd /volumes/home/shane/notes/ws/jobs; ead -i -g \"*org\" dear"
+    ) | hls green 1>&2
+    exit 4
+fi
 
 sn="$(basename "$0")"
 case "$sn" in
