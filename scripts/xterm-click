@@ -21,6 +21,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -m) {
+        # https://stackoverflow.com/q/5966903
+        MOVE=y
+        EXTENDED_MODE=y
+
+        DOWN=n
+        UP=n
+        shift
+    }
+    ;;
+
     -x) {
         EXTENDED_MODE=y
         shift
@@ -60,6 +71,7 @@ chr () {
 if test "$EXTENDED_MODE" = "y"; then
     leftnum=0
     rightnum=2
+    movenum=35
 
     # left-up is 0...m
     # left-down 0...M
@@ -69,7 +81,9 @@ if test "$EXTENDED_MODE" = "y"; then
     x="$(( x + 1))"
     y="$(( y + 1))"
 
-    if test "$RIGHT" = "y"; then
+    if test "$MOVE" = "y"; then
+        mousemove_code="$(echo -n -e "\e[<$movenum"; printf -- "%s" ";$x;${y}M")"
+    elif test "$RIGHT" = "y"; then
         # mousedown_code=""
         # This is needed for pen inside host tmux
         mousedown_code="$(echo -n -e "\e[<$rightnum"; printf -- "%s" ";$x;${y}M")"
@@ -91,7 +105,9 @@ else
     mouseup_code="$(echo -n -e "\e[M$mouseup"; printf -- "%s" "$x$y")"
 fi
 
-if test "$UP" = "n"; then
+if test "$MOVE" = "y"; then
+    code="$mousemove_code"
+elif test "$UP" = "n"; then
     code="$mousedown_code"
 elif test "$DOWN" = "n"; then
     code="$mouseup_code"

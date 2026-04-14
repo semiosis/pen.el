@@ -12,16 +12,23 @@
   (completing-read prompt
                    collection nil t nil nil))
 
-(defun get-major-mode-functions (&optional map)
+(defun get-major-mode-functions (&optional map with-binding)
   (if (not map)
       (setq map (current-major-mode-map)))
 
   (let ((ms (show-map-as-string map)))
     (if (sor ms)
-        (let* ((funstr
-                (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | rev | pen-str field 1 | rev" ms)))
-          (if (sor funstr)
-              (-filter 'commandp (mapcar 'intern (str2lines funstr))))))))
+        (if with-binding
+            (let* ((funstr
+                    (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | sed -n 's/	\\+/	/p'" ms)))
+              (parse-csv-string-rows funstr (string-to-char "	") ?\" "\n")
+              ;; (if (sor funstr)
+              ;;     (-filter 'commandp (mapcar 'intern (str2lines funstr))))
+              )
+          (let* ((funstr
+                    (pen-snc "sed -e '/^ /d' -e '/Prefix Command/d' -e '/^$/d' -e '/^--/d' -e '/^key/d' -e '/Key.*Binding/d' | grep '	' | rev | pen-str field 1 | rev" ms)))
+              (if (sor funstr)
+                  (-filter 'commandp (mapcar 'intern (str2lines funstr)))))))))
 
 ;; This may also be used for minor modes
 (defun select-mode-function (&optional map)

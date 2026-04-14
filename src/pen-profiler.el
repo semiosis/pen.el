@@ -37,8 +37,6 @@ Redefining FUNCTION also cancels it."
   (interactive)
   (profiler-start 'cpu+mem))
 
-(ace-link-click-textprop 'follow-link)
-
 (define-key pen-map (kbd "s-P P") 'profiler-start)
 (define-key pen-map (kbd "s-P C") 'pen-profiler-start-cpu)
 (define-key pen-map (kbd "s-P M") 'pen-profiler-start-mem)

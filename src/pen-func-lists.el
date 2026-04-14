@@ -551,6 +551,15 @@
           (message (concat (symbol-name finallist) " is empty")))
       finallist)))
 
+;; Using j:get-helm-descbinds-as-string to sort binded commands to the top
+;; would slow things down.
+;; mx:get-helm-descbinds-as-string
+;; Oh, I don't even need to do that, because I only need to extend
+;; j:get-major-mode-functions.
+;; Oh, I don't ever need to extend j:get-major-mode-functions because
+;; j:get-major-mode-functions only returns commands with bindings
+;; Ah, I see, so the reason why some commands display without their binding
+;; is that the binding is overshadowed by a binding in a different mode, such as pen-mode.
 (defun major-mode-functions (&optional mode)
   (interactive)
   (let* ((modes (parent-mode-list major-mode))
@@ -559,10 +568,10 @@
               (flatten-list
                (loop for m in modes collect
                      (major-mode-function m)))
-            (append (flatten-list
+            (append (get-major-mode-functions mode)
+                    (flatten-list
                      (loop for m in modes collect
-                           (major-mode-function m)))
-                    (get-major-mode-functions mode)))))
+                           (major-mode-function m)))))))
 
     ;; ess-mode-map
 

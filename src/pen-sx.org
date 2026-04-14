@@ -1,0 +1,431 @@
+* sx <2026-04-15 Wed>
+** TODO Make it so the pa:sx =help-echo= displays with an idle-timer
+Make it so if I move the cursor manually within a sx-question-mode buffer
+and the cursor goes on top of a button, it should show the help-echo.
+
+j:forward-button
+
+Currently, I need to use mx:forward-button in order to see the help-echo
+for a button.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (define-key sx-button-map (kbd "TAB") 'forward-button)
+#+END_SRC
+
+Hmm, moving the cursor does this.
+OK, so perhaps I can make a way to move the cursor with xterm mouse.
+
+What I could do is with a delay timer send an xterm mouse code
+with the coordinate of the cursor.
+
+*** DONE Figure out how to get the cursor position
+- as concerns the pty
+
+This:
+
+j:wj-cursor-pos
+
+- I had to make a slight modification for the emacs TUI.
+- But now figure out how to factor in git-gutter.
+
+**** This file has no margin
+e:/tmp/mouse.txt
+
+**** This file has a margin
+e:/root/.emacs.d/host/pen.el/README.org
+
+**** This is the answer
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (window-margins (get-buffer-window))
+#+END_SRC
+
+j:pen-tty-cursor-pos
+
+*** DONE Now send an xterm mouse move based on the emacs cursor pos
+j:simulate-mouse-move
+
+** DONE Fix the pa:sx =help-echo= bug
+It's really annoying.
+
+When message runs, it's immediately replaced by help-echo.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (message "yo")
+#+END_SRC
+
+The other issue, is when I'm in a different window, the help-echo
+from sx appears after every key press.
+
+Hmmm. Perhaps it's bound that command hook.
+
+It doesn't seem to be a hook that is the problem.
+
+Interesting, even inside a buffer in j:sx-question-mode,
+[[eval-string:(etv (sx-message-help-echo))]] doesn't seem to show anything,
+even while the help-echo is being displayed.
+This to me that something else is displaying the help-echo,
+rather than the builtin mechanism.
+
+It also appears that upon creating a new frame, the help echo bug starts up again.
+The help-echo bug being that the sx help-echo string starts appearing on each keypress in all frames.
+
+From here, I should start a new frame, and run the profiler and after a display, stop the profiler.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (defun sx-message-help-echo ()
+    "If there's a 'help-echo property under point, message it."
+    (let ((echo (get-text-property (point) 'help-echo)))
+      (when echo (message "%s" echo))
+      echo))
+#+END_SRC
+
+*** Found the problem!
+
+"button--help-echo" below:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+        9,725,751  46% - flyspell-post-command-hook
+        9,698,215  46%  - flyspell-check-word-p
+        9,698,215  46%   - apply
+        9,698,215  46%    - advise-to-ignore-errors
+        9,698,215  46%     - condition-case
+        9,698,215  46%      - progn
+        9,698,215  46%       - let
+        9,698,215  46%        - apply
+        9,698,215  46%         - #<compiled -0x107f2666865916e1>
+        9,688,999  46%          - sit-for
+        5,160,967  24%           - redisplay
+        4,958,036  23%            - redisplay_internal (C function)
+        4,958,036  23%             - eval
+        4,923,628  23%              - if
+        4,923,628  23%               - ph--make-header
+        4,923,628  23%                - let
+        3,283,188  15%                 - if
+        3,283,188  15%                  - let*
+        3,283,188  15%                   - if
+        3,283,188  15%                    - let
+        2,039,544   9%                     - condition-case
+        2,039,544   9%                      - progn
+        2,039,544   9%                       - lsp-code-actions-at-point
+        2,039,544   9%                        - lsp-request
+        1,547,280   7%                         - lsp--text-document-code-action-params
+        1,547,280   7%                          - list
+        1,547,280   7%                           - lsp--text-document-identifier
+        1,547,280   7%                            - list
+        1,547,280   7%                             - lsp--buffer-uri
+        1,547,280   7%                              - or
+        1,547,280   7%                               - lsp--path-to-uri
+        1,547,280   7%                                - let*
+        1,547,280   7%                                 - if
+        1,547,280   7%                                  - lsp--path-to-uri-1
+        1,546,232   7%                                   - concat
+        1,546,232   7%                                    - let
+        1,546,232   7%                                     - let
+          333,904   1%                                      - let
+          333,904   1%                                       - url-hexify-string
+          314,392   1%                                        - mapconcat
+          314,392   1%                                           #<compiled 0x1e5d74c494842cbc>
+          492,264   2%                         - let*
+          492,264   2%                          - progn
+          492,264   2%                           - if
+          492,264   2%                            - let*
+          490,088   2%                             - unwind-protect
+          490,088   2%                              - progn
+          490,088   2%                               - lsp-request-async
+          490,088   2%                                - let*
+          490,088   2%                                 - progn
+          490,088   2%                                  - lsp--send-request-async
+          490,088   2%                                   - let*
+          490,088   2%                                    - if
+          490,088   2%                                     - error
+          490,088   2%                                        apply
+        1,204,620   5%                     - concat
+        1,185,108   5%                      - propertize
+        1,185,108   5%                       - list
+        1,185,108   5%                        - list
+        1,185,108   5%                         - if
+        1,185,108   5%                          - universal-sidecar-visible-p
+        1,185,108   5%                           - universal-sidecar-get-buffer
+        1,185,108   5%                            - universal-sidecar-get-name
+        1,185,108   5%                             - let*
+        1,164,548   5%                              - or
+        1,164,548   5%                               - condition-case
+        1,164,548   5%                                - progn
+        1,164,548   5%                                 - format-spec
+            8,772   0%                                    generate-new-buffer
+            1,048   0%                        if
+           30,840   0%                     - str
+           17,416   0%                      - if
+           17,416   0%                       - if
+           17,416   0%                          if
+           13,424   0%                      - ph-get-date
+           13,424   0%                         e/date
+        1,640,440   7%                 - mnm
+        1,640,440   7%                  - if
+        1,640,440   7%                   - progn
+        1,640,440   7%                    - s-replace-regexp-thread
+        1,456,056   6%                     - s-replace-regexp-thread
+        1,286,864   6%                      - s-replace-regexp-thread
+          605,440   2%                       - tmpdir
+          605,440   2%                        - cond
+          597,256   2%                           f-dir-p
+            8,184   0%                         - f-join
+            8,184   0%                            s-join
+          516,552   2%                       - s-replace-regexp-thread
+          346,440   1%                        - s-replace-regexp-thread
+          181,240   0%                         - s-replace-regexp-thread
+          156,688   0%                            s-replace-regexp
+          151,776   0%                         - s-replace-regexp
+            3,144   0%                            apply
+           12,376   0%                           getenv
+          170,112   0%                        - s-replace-regexp
+           20,560   0%                           apply
+          156,688   0%                       - s-replace-regexp
+            8,184   0%                          apply
+          149,680   0%                      - s-replace-regexp
+            2,096   0%                         apply
+           10,280   0%                      - f-join
+           10,280   0%                         s-join
+          157,736   0%                     - s-replace-regexp
+            9,232   0%                        apply
+           18,432   0%              - sx--pretty-site-parameter
+           18,432   0%               - let-alist
+           18,432   0%                - #<compiled -0xdfd331ffff5763b>
+            9,216   0%                 - let-alist--deep-dot-search
+            9,216   0%                    let-alist--deep-dot-search
+            9,216   0%                 - mapcar
+            9,216   0%                  - #<compiled -0x76fb5369dcefe88>
+            9,216   0%                   - let-alist--access-sexp
+            9,216   0%                    - split-string
+            9,216   0%                     - cond
+            9,216   0%                      - split-string-by-regexp
+            9,216   0%                       - let*
+            9,216   0%                        - while
+            9,216   0%                           and
+            2,552   0%              - pen-compose-mode-line
+            2,552   0%               - apply
+            2,552   0%                - #<lambda -0x199ff12dc1cb3eff>
+            2,552   0%                 - if
+            2,552   0%                  - prog1
+            2,552   0%                   - setq
+            2,552   0%                    - run-with-timer
+            2,552   0%                     - apply
+            2,552   0%                      - run-at-time
+            2,480   0%                       - timer-activate
+            2,480   0%                        - timer--activate
+            2,480   0%                           timer--time-less-p
+               40   0%                         timer-relative-time
+               32   0%                       - timer-set-time
+               32   0%                          timer--time-setter
+            2,096   0%                concat
+        4,521,680  21%           - read-event
+        3,510,088  16%            - redisplay_internal (C function)
+        3,510,088  16%             - eval
+        3,506,992  16%              - if
+        3,506,992  16%               - ph--make-header
+        3,506,992  16%                - let
+        3,506,992  16%                 - mnm
+        2,331,864  11%                  - if
+        2,331,864  11%                   - progn
+        2,331,864  11%                    - s-replace-regexp-thread
+        2,319,576  11%                     - s-replace-regexp-thread
+        2,307,288  10%                      - s-replace-regexp-thread
+        2,236,536  10%                       - s-replace-regexp-thread
+        2,207,880  10%                        - s-replace-regexp-thread
+        2,195,592  10%                         - s-replace-regexp-thread
+        2,139,240  10%                          - s-replace-regexp-thread
+        1,828,600   8%                           - s-replace-regexp-thread
+        1,483,128   7%                            - s-replace-regexp-thread
+        1,148,912   5%                             - s-replace-regexp-thread
+          797,280   3%                              - s-replace-regexp-thread
+          382,272   1%                               - s-replace-regexp-thread
+          278,624   1%                                  s-replace-regexp
+           48,256   0%                                  s-replace-regexp-thread
+          363,608   1%                               - s-replace-regexp
+           60,432   0%                                  apply
+           22,656   0%                                 getenv
+          306,320   1%                              - s-replace-regexp
+           27,696   0%                                 apply
+           24,752   0%                                getenv
+          310,512   1%                             - s-replace-regexp
+           29,792   0%                                apply
+          329,952   1%                            - s-replace-regexp
+           11,328   0%                               apply
+          302,456   1%                           - s-replace-regexp
+           12,376   0%                              apply
+           56,352   0%                          - s-replace-regexp
+           44,064   0%                             apply
+           12,288   0%                           s-replace-regexp
+           20,472   0%                        - s-replace-regexp
+            8,184   0%                           apply
+           58,464   0%                       - tmpdir
+           58,464   0%                        - cond
+           58,464   0%                         - f-dir-p
+           13,424   0%                          - f-join
+           13,424   0%                             s-join
+           12,288   0%                         s-replace-regexp
+           12,288   0%                        s-replace-regexp
+           12,288   0%                       s-replace-regexp
+        1,175,128   5%                  - ph-get-path-string-for-buf
+        1,175,128   5%                   - apply
+        1,175,128   5%                    - #<lambda -0x200c3fa63323100>
+        1,175,128   5%                     - if
+        1,175,128   5%                      - prog1
+        1,175,128   5%                       - setq
+          706,008   3%                        - run-with-timer
+          706,008   3%                         - apply
+          706,008   3%                          - run-at-time
+          690,464   3%                           - timer-activate
+          690,464   3%                            - timer--activate
+          690,464   3%                               timer--time-less-p
+            8,576   0%                           - timer-set-time
+            8,576   0%                              timer--time-setter
+            6,968   0%                             timer-relative-time
+          469,120   2%                        - apply
+          469,120   2%                         - #<lambda 0x138c92dd85a56c>
+          469,120   2%                          - save-current-buffer
+          469,120   2%                           - let
+          439,328   2%                            - get-path
+          439,328   2%                             - let
+          439,328   2%                              - let
+          227,272   1%                               - or
+          140,536   0%                                - if
+          140,536   0%                                 - and
+          140,536   0%                                    string-match-p
+           86,736   0%                                - and
+           86,736   0%                                 - sx-get-question-url
+           86,736   0%                                  - if
+           86,736   0%                                   - let
+           86,736   0%                                    - save-excursion
+           86,736   0%                                     - call-interactively
+           86,736   0%                                      - funcall-interactively
+           86,736   0%                                       - forward-button
+           78,360   0%                                        - button--help-echo
+            8,898   0%                                         - substitute-command-keys
+              714   0%                                            generate-new-buffer
+            8,376   0%                                        - message
+            8,376   0%                                         - apply
+            6,948   0%                                          - pen-ad-timestamp-message
+            6,948   0%                                           - if
+            6,948   0%                                            - let
+            6,948   0%                                             - save-current-buffer
+            6,948   0%                                              - let
+            6,948   0%                                               - unwind-protect
+            6,948   0%                                                - save-excursion
+            6,948   0%                                                 - insert
+            6,948   0%                                                  - pen-current-time-microseconds
+            6,948   0%                                                   - let*
+            5,900   0%                                                      concat
+            1,428   0%                                          - #<compiled -0x8f0077577147778>
+            1,428   0%                                           - apply
+            1,428   0%                                            - message-around-advice
+            1,428   0%                                             - let
+            1,428   0%                                                apply
+          212,056   1%                               - if
+          212,056   1%                                - setq
+          212,056   1%                                 - chomp
+          183,312   0%                                  - replace-regexp-in-string
+            8,184   0%                                     apply
+           29,792   0%                            - if
+           20,560   0%                             - str
+           20,560   0%                              - if
+           20,560   0%                               - if
+           20,560   0%                                  if
+            3,096   0%              - sx--pretty-site-parameter
+            3,096   0%               - let-alist
+            3,096   0%                - #<compiled -0xdfd331ffff5763b>
+            2,072   0%                 - mapcar
+            2,072   0%                  - #<compiled -0x76fb5369dcd7a88>
+            2,072   0%                   - let-alist--access-sexp
+            2,072   0%                    - split-string
+            2,072   0%                     - cond
+            2,072   0%                      - split-string-by-regexp
+            2,072   0%                       - let*
+            1,048   0%                        - progn
+            1,048   0%                         - setq
+            1,048   0%                          - split-string-trim-omit-push
+            1,048   0%                           - let
+            1,048   0%                            - if
+            1,048   0%                             - progn
+            1,048   0%                                let
+            1,024   0%                        - while
+            1,024   0%                           and
+            1,024   0%                 - let-alist--deep-dot-search
+            1,024   0%                    let-alist--deep-dot-search
+          982,314   4%            - timer-event-handler
+          977,250   4%             - apply
+          975,175   4%              - recentf-save-list
+          590,207   2%                 recentf-dump-variable
+           45,064   0%               - write-region
+           45,064   0%                - select-safe-coding-system
+           23,544   0%                   auto-coding-alist-lookup
+           18,432   0%                 - find-auto-coding
+            8,192   0%                    auto-coding-alist-lookup
+            5,120   0%                    auto-coding-regexp-alist-lookup
+            3,088   0%                 - find-coding-systems-region
+            3,088   0%                  - sort-coding-systems
+            3,088   0%                   - sort
+            3,088   0%                    - #<compiled -0x6aa168b2d51a5ea>
+            3,088   0%                       #<compiled -0x143d34874c5892cf>
+               21   0%                 generate-new-buffer
+            4,976   0%             - timer-activate
+            4,976   0%              - timer--activate
+            4,976   0%                 timer--time-less-p
+               56   0%             - timer-inc-time
+               32   0%                timer--time-setter
+               24   0%                timer-relative-time
+           26,488   0%  - flyspell-word
+           20,480   0%     flyspell-get-word
+            2,048   0%     ispell-parse-output
+            1,024   0%     flyspell-word-search-backward
+            1,024   0%     flyspell-word-search-forward
+              240   0%   - flyspell-highlight-incorrect-region
+               80   0%      flyspell-unhighlight-at
+               80   0%    - make-flyspell-overlay
+               80   0%       let
+               48   0%     ispell-send-string
+        7,611,940  36% + ...
+        2,003,140   9% + redisplay_internal (C function)
+        1,440,850   6% + command-execute
+          147,170   0% + superify
+           36,144   0% + ahs-start-timer
+           20,624   0% + company-post-command
+           10,240   0% + jump-tree-pos-list-pre-command
+            7,624   0% + timer-event-handler
+            6,352   0% + update-line-number
+              479   0% + term-title--update
+#+END_SRC
+
+*** Interesting, it seems as though putting the following at the start of j:ph--make-header...
+- shows that j:ph--make-header is being called a lot, and triggers it.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+    (pen-message-no-echo (current-buffer-name))
+    (error "yo")
+#+END_SRC
+
+Therefore, to fix the error, I should make it so j:ph--make-header cannot trigger the sx help-echo.
+
+**** j:sx-get-question-url should not trigger the button--hep-echo.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code :lang text
+  (defun sx-get-question-url ()
+    (if (derived-mode-p 'sx-question-mode)
+        (let ((current-prefix-arg nil))
+          (save-excursion
+            (beginning-of-buffer)
+            ;; (call-interactively 'forward-button)
+            ;; This fixed the help-echo bug:
+            (forward-button 1 nil nil nil)
+            (get-text-property (point) 'sx-button-copy)
+            ;; (call-interactively 'sx-button-copy)
+            ))))
+#+END_SRC
+
+*** DONE Also find a way to totally expand the tree so I can string search over it.
+
+=C-u RET= on an entry in the call tree expands it completely.
+
+*** TODO Consider disabling help-echo entirely from sx
+- Then I should make a function which shows bindings for the text under the cursor
+

@@ -8,6 +8,7 @@
    (find-function thing)
    (find-variable thing)
    (find-face-definition thing)
+   (find-function (str2sym (concat "eshell/" (sym2str thing))))
 
    (pen-ns (concat (str thing) " is neither function nor variable"))))
 (defalias 'j 'find-thing)
@@ -48,8 +49,8 @@
      (setq val (completing-read
                 (if (symbolp v)
                     (format
-                     "Describe variable (default %s): " v)
-                  "Describe variable: ")
+                     "Edit variable (default %s): " v)
+                  "Edit variable: ")
                 #'help--symbol-completion-table
                 (lambda (vv)
                   ;; In case the variable only exists in the buffer

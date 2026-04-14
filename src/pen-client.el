@@ -184,12 +184,16 @@
   "Converts object or string to an unformatted string."
 
   (if thing
-      (if (stringp thing)
-          (substring-no-properties thing)
-        (progn
-          (setq thing (format "%s" thing))
-          (set-text-properties 0 (length thing) nil thing)
-          thing))
+      ;; e.g. (advice-add 'eshell-find-alias-function :around #'penlog-around-advice) j:eshell-find-alias-function is a compiled-function.
+      (if (compiled-function-p thing)
+          (concat "compiled-function:" (s-replace-regexp "-[0-9]+" ""
+                                                         (slugify (pp-oneline thing))))
+        (if (stringp thing)
+            (substring-no-properties thing)
+          (progn
+            (setq thing (format "%s" thing))
+            (set-text-properties 0 (length thing) nil thing)
+            thing)))
     ""))
 
 (defun pen-list2str (&rest l)

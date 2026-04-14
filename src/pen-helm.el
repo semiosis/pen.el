@@ -59,9 +59,9 @@ display values."
 
   (let ((cands (helm-get-candidates (helm-get-current-source))))
 
-    (message (xc (helm-get-current-source)))
+    (message "%s" (xc (helm-get-current-source)))
     (if (processp cands)
-        (message (xc cands))
+        (message "%s" (xc cands))
       (tvd (list2str cands)))))
 
 (defun helm-copy-to-fzf ()
@@ -841,5 +841,59 @@ help."
         (pop-to-buffer buf)))
     (view-mode)
     (goto-char (point-min))))
+
+
+(defun get-helm-descbinds-as-string (&optional prefix buffer)
+  "Like `helm-descbinds' but returns a string"
+  (interactive)
+  (let ((old-helm-full-frame helm-full-frame)
+        (helm-full-frame (and (not (minibufferp))
+                              (memq helm-descbinds-window-style
+                                    '(same-window one-window))))
+        (helm-before-initialize-hook (if (and (not (minibufferp))
+                                              (eq helm-descbinds-window-style
+                                                  'one-window))
+                                         (cons 'delete-other-windows
+                                               helm-before-initialize-hook)
+                                       helm-before-initialize-hook))
+        (enable-recursive-minibuffers t))
+    (setq helm-descbind--initial-full-frame old-helm-full-frame)
+
+    ;; I really want something which can help me to extract
+    ;; from sexps by an xpath-like thing.
+    ;; Or perhaps I can convert to json first
+
+    ;; TODO Remove unnecessary, then flatten.
+    ;; So don't go over *all* sources
+    (comment
+     (etv (helm-descbinds-sources
+           (or buffer (current-buffer)) prefix))
+
+     (tv (helm-descbinds-all-sections (current-buffer))))
+
+    ;; j:describe-buffer-bindings is the underlying c command;
+    ;; I should duce up the returned string before parsing with
+    ;; j:helm-descbinds-all-sections
+    (etv (with-temp-buffer (describe-buffer-bindings (current-buffer))
+                           (buffer-string)))
+    
+    (comment
+     (ifietv
+      (-flatten
+       (cl-loop for e in
+                (helm-descbinds-sources
+                 (or buffer (current-buffer)) prefix)
+                collect
+                (cdr (assoc-multi-key '(candidates) e))))))
+
+    (comment
+     ;; This
+     (helm-get-candidates (helm-get-current-source))
+     
+     (helm :sources (helm-descbinds-sources
+                     (or buffer (current-buffer)) prefix)
+           :buffer "*helm-descbinds*"
+           :resume 'noresume
+           :allow-nest t))))
 
 (provide 'pen-helm)

@@ -166,7 +166,9 @@
       (let ((current-prefix-arg nil))
         (save-excursion
           (beginning-of-buffer)
-          (call-interactively 'forward-button)
+          ;; (call-interactively 'forward-button)
+          ;; This fixed the help-echo bug:
+          (forward-button 1 nil nil nil)
           (get-text-property (point) 'sx-button-copy)
           ;; (call-interactively 'sx-button-copy)
           ))))
@@ -245,5 +247,76 @@ usually part of a code-block."
 
 ;; (memoize 'sx-request-make)
 ;; (memoize-restore 'sx-request-make)
+
+(comment
+ ;; This didn't fix it
+ (defun sx-message-help-echo ()
+   "If there's a 'help-echo property under point, message it."
+   (let ((echo (get-text-property (point) 'help-echo)))
+     (when echo (pen-message-no-echo "%s" echo)))))
+
+(defun sx-button-copy ()
+  "Copy the content of thing at point.
+This is usually a link's URL, or the content of a code block."
+  (interactive)
+  (let ((content
+         (get-text-property (point) 'sx-button-copy)))
+    (if (null content)
+        (sx-message "Nothing to copy here.")
+      (kill-new content)
+      (sx-message "Copied %s to kill ring."
+                  (e/q
+                   (pen-one-line-preview
+                    (or (get-text-property
+                         (point) 'sx-button-copy-type)
+                        content))))
+      ;; (message
+      ;;  "Copied %s to kill ring."
+      ;;  (or (get-text-property
+      ;;       (point) 'sx-button-copy-type)
+      ;;      content))
+      )))
+
+(defun sx-question-mode--process-links (beg end-marker)
+  "Turn all markdown links between BEG and ENG into compact format.
+Image links are downloaded and displayed, if
+`sx-question-mode-use-images' is non-nil.
+Assumes `marker-insertion-type' of END-MARKER is t."
+  (goto-char beg)
+  (while (search-forward-regexp sx-question-mode--link-regexp end-marker t)
+    ;; Tags are tag-buttons.
+    (let ((tag (match-string-no-properties 5)))
+      (if (and tag (> (length tag) 0))
+          (progn (replace-match "")
+                 (sx-tag--insert tag))
+        ;; Other links are link-buttons.
+        (let* ((text (match-string-no-properties 1))
+               (url (or (match-string-no-properties 2)
+                        (match-string-no-properties 4)
+                        (sx-question-mode-find-reference
+                         (match-string-no-properties 3)
+                         text)))
+               (full-text (match-string-no-properties 0))
+               (image-p (and sx-question-mode-use-images
+                             ;; I had to add this to fix a bug
+                             ;; https://stackoverflow.com/q/5966903 would give error in emacs TUI
+                             (display-graphic-p)
+                             (eq ?! (elt full-text 0)))))
+          (when (stringp url)
+            (replace-match "")
+            (sx-question-mode--insert-link
+             (cond (image-p (sx-question-mode--create-image url))
+                   ((and sx-question-mode-pretty-links text))
+                   ((not text) (sx--shorten-url url))
+                   (t full-text))
+             url)))))))
+
+;; Disable the mouse-face for code blocks, as code blocks are buttons
+(define-button-type 'sx-question-mode-code-block
+  'action    #'sx-button-edit-this
+  'face      nil
+  ;; I added this line
+  'mouse-face      nil
+  :supertype 'sx-button)
 
 (provide 'pen-sx)

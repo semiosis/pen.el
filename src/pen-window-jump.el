@@ -20,6 +20,28 @@
 ;; (define-key global-map [help] 'help-command)
 ;; (define-key global-map [f1] 'help-command)
 
+(load-library "window-jump")
+(defun wj-cursor-pos ()
+  (let ((pos (pos-visible-in-window-p (window-point) (selected-window) t))
+        (box (wj-window-box (selected-window))))
+    (when (null pos) ; Work around a bug in pos-visible-in-window-p when running terminal emacs
+      (setq pos (wj-vec (wj-edges-left box) (wj-edges-bottom box))))
+    ;; Move pos to the center of the cursor instead of the top-left pixel
+    (if (display-p)
+        (setq pos (wj-vec (+ (/ (float (frame-char-width)) 2) (wj-vx pos))
+                          (+ (/ (float (frame-char-height)) 2) (wj-vy pos))))
+      (setq pos (wj-vec (+ left-margin-width (wj-vx pos))
+                        (wj-vy pos))))
+    (wj-vec (+ (wj-edges-left box) (wj-vx pos))
+            (+ (wj-edges-top box) (wj-vy pos)))))
+
+(defun pen-tty-cursor-pos ()
+  (let ((margin-x (or (car (window-margins (get-buffer-window)))
+                      0))
+        (wj-pos (wj-cursor-pos)))
+    (list (+ (car wj-pos) margin-x)
+          (cadr wj-pos))))
+
 ;; I had to unbind f1 from help, like this:
 (define-key global-map [f1] nil)
 

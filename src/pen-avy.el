@@ -60,6 +60,16 @@
   (interactive)
   (pen-cl-sn "tmux run -b \"pen-tm mouseup -x -r\"" :detach t))
 
+(defun simulate-mouse-move (&optional override-x override-y)
+  (interactive)
+  (pcase-let ((`(,x ,y)
+               (pen-tty-cursor-pos)))
+    (setq x (or override-x x))
+    (setq y (or override-y y))
+    (pen-message-no-echo "Simulated mousemove %d %d" x y)
+    (pen-cl-sn (format "tmux run -b \"pen-tm mousemove %d %d\"" x y) :detach t)
+    (list x y)))
+
 (defun avy-goto-char-left-click ()
   "Go to a char with avy and then left click with tmux.'"
   (interactive)

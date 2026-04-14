@@ -103,6 +103,7 @@
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header (&optional nodate buffer nobatt)
   ""
+  ;; (error "yo")
   (setq buffer (or buffer (current-buffer)))
 
   ;; This makes emacs go very slowly. So only use sparingly

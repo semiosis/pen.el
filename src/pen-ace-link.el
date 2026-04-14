@@ -83,7 +83,7 @@
     (reverse tups)))
 
 (defmacro def-ace-link-goto-face (face)
-  (let ((s (str2sym (concat "ace-link-goto-face-" (sym2str face)))))
+  (let ((s (intern (concat "ace-link-goto-face-" (symbol-name face)))))
     `(defun ,s ()
        (interactive)
        (avy-with ace-link-help
@@ -93,10 +93,8 @@
        ;; (widget-button-press (point))
        )))
 
-(def-ace-link-goto-face bible-verse-ref-notes)
-
 (defmacro def-ace-link-goto-textprop (prop)
-  (let ((s (str2sym (concat "ace-link-goto-textprop-" (sym2str prop)))))
+  (let ((s (intern (concat "ace-link-goto-textprop-" (symbol-name prop)))))
     `(defun ,s ()
        (interactive)
        (avy-with ace-link-help
@@ -107,7 +105,7 @@
        )))
 
 (defmacro def-ace-link-textprop-ekm-ret (prop)
-  (let ((s (str2sym (concat "ace-link-ekm-ret-textprop-" (sym2str prop)))))
+  (let ((s (intern (concat "ace-link-ekm-ret-textprop-" (symbol-name prop)))))
     `(defun ,s ()
        (interactive)
        (avy-with ace-link-help
@@ -118,6 +116,7 @@
 
 (def-ace-link-goto-textprop follow-link)
 (def-ace-link-textprop-ekm-ret follow-link)
+(def-ace-link-goto-face bible-verse-ref-notes)
 
 (defun ace-link ()
   "Call the ace link function for the current `major-mode'"

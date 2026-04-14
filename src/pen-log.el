@@ -64,11 +64,16 @@
 
 
 
-;; (defun penlog-around-advice (proc &rest args)
-;;   (message (concat "penlog fun: " (str proc)))
-;;   (message (concat "penlog args: " (str args)))
-;;   (let ((res (apply proc args)))
-;;     res))
+(defun penlog-around-advice (proc &rest args)
+  ;; (tv (type proc))
+  (pen-message-no-echo
+   "%s"
+   (concat "penlog fun:" (pp-oneline proc) " "
+           "penlog args: " (pp-oneline args)))
+  ;; (message (concat "penlog fun: " (str proc)))
+  ;; (message (concat "penlog args: " (str args)))
+  (let ((res (apply proc args)))
+    res))
 
 (defset funs-to-trace '(pen-glossary-list-relevant-glossaries
                         pen-glossary-add-relevant-glossaries
@@ -108,9 +113,9 @@
   (force-mode-line-update))
 (provide 'pen-trace-mode)
 
-
-
 (never
+ (advice-add 'eshell-find-alias-function :around #'penlog-around-advice)
+ (advice-remove 'eshell-find-alias-function :around #'penlog-around-advice)
  (advice-add 'pen-glossary-list-relevant-glossaries :around #'penlog-around-advice)
  (advice-add 'pen-glossary-add-relevant-glossaries :around #'penlog-around-advice)
  (advice-add 'pen-generate-glossary-buttons-manually :around #'penlog-around-advice)

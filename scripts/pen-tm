@@ -729,7 +729,7 @@ case "$f" in
     }
     ;;
 
-    click|mousedown|mouseup|mouseclick) {
+    click|mousedown|mouseup|mouseclick|mousemove) {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -t) {
                 TMUX_PANE="$2"
@@ -774,6 +774,11 @@ case "$f" in
 
                 mouseup) {
                     tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -u $x $y)"
+                }
+                ;;
+
+                mousemove) {
+                    tmux send-keys -t "$TMUX_PANE" -l "$(xterm-click -m $x $y)"
                 }
                 ;;
 

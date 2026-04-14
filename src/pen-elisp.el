@@ -63,4 +63,27 @@ Intended for `eldoc-documentation-functions' (which see)."
 (comment
  (e/grep "d*" "dlksajfl\nfkldmssklfjdslkfj" 'glob))
 
+;; https://emacs.stackexchange.com/q/3197
+(defun assoc-multi-key (path nested-alist)
+  "Find element in nested alist by path."
+  (if (equal nested-alist nil)
+      (error "cannot lookup in empty list"))
+  (let ((key (car path))
+        (remainder (cdr path)))
+    (if (equal remainder nil)
+        (assoc key nested-alist)
+      (assoc-multi-key remainder (assoc key nested-alist)))))
+
+(comment
+ ;; Example
+ (assoc-multi-key '(foo bar)
+                  '((foo (bar . "llama") (baz . "monkey"))))
+
+ (assoc-multi-key '(foo bar baz)
+                  '((foo (bar (bozo . "llama") (baz . "monkey")))))
+
+
+ (eval-string (cat "/root/.pen/tmp/WTQgqOzpOA"))
+ )
+
 (provide 'pen-elisp)

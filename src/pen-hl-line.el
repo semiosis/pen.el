@@ -29,19 +29,26 @@
   (let ((pt (point)))
     (ignore-errors
       (save-excursion
-        (if eshell-mode
-            (cons
-             (let ((bol-pt (save-excursion
-                             ;; (line-beginning-position)
-                             (pen-comint-eol)
-                             (pen-comint-bol)
-                             (point))))
-               (if (eq bol-pt (point-at-bol))
-                   pt
-                 bol-pt))
-             (line-beginning-position 2))
+        (cond
+         ((major-mode-p 'eshell-mode) 
+          (cons
+           (let ((bol-pt (save-excursion
+                           ;; (line-beginning-position)
+                           (pen-comint-eol)
+                           (pen-comint-bol)
+                           (point))))
+             (if (eq bol-pt (point-at-bol))
+                 pt
+               bol-pt))
+           (line-beginning-position 2)))
+         ;; (((lambda () (equal (face-at-point) 'sx-question-mode-content-face)))
+         ;;  ;; Basically, do nothing
+         ;;  (cons (line-beginning-position)
+         ;;        (line-beginning-position)
+         ;;        ))
+         (t
           (cons (line-beginning-position)
-                (line-beginning-position 2)))))))
+                (line-beginning-position 2))))))))
 
 (hl-line-unload-function)
 (global-hl-line-mode)
