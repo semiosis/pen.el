@@ -175,4 +175,28 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
 ;; (define-key markdown-mode-map (kbd "C-c TAB") 'markdown-insert-image)
 (define-key markdown-mode-map (kbd "C-c TAB") nil)
 
+
+;; This message was annoying
+(defun markdown-toggle-math (&optional arg)
+  "Toggle support for inline and display LaTeX math expressions.
+With a prefix argument ARG, enable math mode if ARG is positive,
+and disable it otherwise.  If called from Lisp, enable the mode
+if ARG is omitted or nil."
+  (interactive (list (or current-prefix-arg 'toggle)))
+  (setq markdown-enable-math
+        (if (eq arg 'toggle)
+            (not markdown-enable-math)
+          (> (prefix-numeric-value arg) 0)))
+  (if markdown-enable-math
+      (progn
+        (font-lock-add-keywords
+         'markdown-mode markdown-mode-font-lock-keywords-math)
+        ;; (message "markdown-mode math support enabled")
+        )
+    (font-lock-remove-keywords
+     'markdown-mode markdown-mode-font-lock-keywords-math)
+    ;; (message "markdown-mode math support disabled")
+    )
+  (markdown-reload-extensions))
+
 (provide 'pen-markdown)

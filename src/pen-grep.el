@@ -307,6 +307,9 @@ NEEDLE is the search string."
         (grep-mode)))))
 (defalias 'ead 'pen-wgrep)
 
+(defun eadsrc (pattern)
+  (pen-wgrep pattern "/root/.emacs.d/host/pen.el/src/"))
+
 (if (inside-docker-p)
     (defalias 'wgrep 'pen-wgrep))
 

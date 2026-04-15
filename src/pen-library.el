@@ -1493,14 +1493,15 @@ non-nil."
   (if (region-active-p)
       (pen-tvipe (pen-selected-text))
     ;; Disabling =my-mode= isnt enough for custom
-    (if (derived-mode-p 'Custom-mode)
-        (call-interactively 'Custom-newline)
+    (cond
+     ((derived-mode-p 'Custom-mode) (call-interactively 'Custom-newline))
+     (t
       ;; Custom-newline
       (let ((pen nil)
             (fun (key-binding (kbd "C-m"))))
         (if fun
             (call-interactively fun)
-          (execute-kbd-macro (kbd "C-m")))))))
+          (execute-kbd-macro (kbd "C-m"))))))))
 
 (defun current-line-string ()
   (thing-at-point 'line t))

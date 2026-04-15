@@ -124,6 +124,24 @@
         cand))))
   (sx-search-quickly query))
 
+(comment
+ (defun pen-sx-get-tag-and-site ()
+   "Run this from sx-question-mode"
+   ;; sx-tag
+   (list
+    (s-replace-regexp "\\..*" "" (url-host (url-generic-parse-url (sx-get-question-url)))))))
+
+;; custom function:
+(defun sx-search-tag-and-site (tag-and-site)
+  (interactive (list (read-string-hist "sx tag@site search: " "eshell@emacs")))
+  (let* ((tp (s-split "@" tag-and-site))
+         (tag (first tp))
+         (site (second tp)))
+    (if tag
+        (let ((tag (str2sym tag))
+              (meta nil))
+          (sx-search (concat (when meta "meta.") site)
+                     nil tag)))))
 
 ;; (sx-from-url "https://stackoverflow.com/q/4980146")
 ;; (sx-from-url "https://stackoverflow.com/questions/4980146/how-can-i-combine-a-switch-case-and-regex-in-python")

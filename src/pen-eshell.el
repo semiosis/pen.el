@@ -9,7 +9,7 @@
 (require 'eshell-toggle)
 (require 'eshell-syntax-highlighting)
 (require 'eshell-outline)
-(require 'eshell-info-banner)
+(require 'pen-eshell-info-banner)
 (require 'eshell-fringe-status)
 (require 'eshell-fixed-prompt)
 (require 'eshell-did-you-mean)
@@ -24,7 +24,7 @@
 
 (eshell-info-banner-update-banner)
 
-(defalias 'banner 'eshell-info-banner)
+(defalias 'banner 'eshell-info-)
 
 (require 'em-script)
 
@@ -35,6 +35,7 @@
 
 (setq eshell-visual-commands
       '("tail" "ssh" "vi" "vim" "screen" "tmux" "top" "htop" "less" "more" "lynx" "links" "ncftp" "mutt" "pine" "tin" "trn" "elm"
+        ;; "timg"
         "v"
         "br"))
 
@@ -741,7 +742,7 @@ environment, as specified in `eshell-variable-aliases-list'."
                               (variable-p 'dir))
                          (f-join root-dir dir)
                        (progn
-                         (tv (car file))
+                         (car file)
                          "/etc")
                        ;; (elog (pen-eshell-copy-directory-from-prompt) "*ls-files*")
                        ))

@@ -1065,7 +1065,6 @@ decide whether the selected frame can display that Unicode character."
 (define-key tabulated-list-mode-map (kbd "M-<up>") 'previous-line)
 (define-key tabulated-list-mode-map (kbd "M-<down>") 'next-line)
 
-(define-key tablist-minor-mode-map (kbd "k") 'previous-line)
 (define-key tablist-minor-mode-map (kbd "K") 'tablist-do-kill-lines)
 ;; (define-key tablist-minor-mode-map (kbd "G") 'end-of-buffer)
 ;; (define-key tablist-minor-mode-map (kbd "G") nil)
@@ -1504,8 +1503,18 @@ Returns the number of unmarked marks."
    (pen-unregexify (tabulated-list-current-cell-contents t))))
 
 (define-key tabulated-list-mode-map (kbd "r") 'pen-tablist-select-cell)
-(define-key tablist-minor-mode-map (kbd "m") 'tablist-mark-forward-and-next)
-(define-key tablist-minor-mode-map (kbd ",") 'tablist-mark-forward)
-(define-key tablist-minor-mode-map (kbd "RET") 'pen-tablist-etv-marked)
+
+;; Don't use tablist-minor-mode-map because it will override the major
+;; mode map of for example sx-question-list-mode
+(comment
+ (define-key tablist-minor-mode-map (kbd "m") nil)
+ (define-key tablist-minor-mode-map (kbd ",") nil)
+ (define-key tablist-minor-mode-map (kbd "RET") nil)
+ (define-key tablist-minor-mode-map (kbd "m") 'tablist-mark-forward-and-next)
+ (define-key tablist-minor-mode-map (kbd ",") 'tablist-mark-forward)
+ (define-key tablist-minor-mode-map (kbd "RET") 'pen-tablist-etv-marked))
+(define-key tabulated-list-mode-map (kbd "m") 'tablist-mark-forward-and-next)
+(define-key tabulated-list-mode-map (kbd ",") 'tablist-mark-forward)
+(define-key tabulated-list-mode-map (kbd "RET") 'pen-tablist-etv-marked)
 
 (provide 'pen-tablist)

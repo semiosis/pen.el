@@ -112,8 +112,8 @@
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (calc)
     (progn
-      (if (f-exists-p "/root/notes/ws/calc/scratch.org")
-          (find-file "/root/notes/ws/calc/scratch.org")
+      (if (f-exists-p "/root/notes/ws/emacs-calc/scratch.org")
+          (find-file "/root/notes/ws/emacs-calc/scratch.org")
         (scratch-buffer))
       (calc))))
 

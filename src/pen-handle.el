@@ -1,5 +1,20 @@
 (require 'handle)
 
+(defun pen-parent-mode-list (mode)
+  "default-handle-mode"
+  (cons 'default-handle-mode (parent-mode-list mode)))
+
+;; Rerun this from handle.el, but using our pen-parent-mode-list function
+(dolist (keyword handle-keywords)
+  (let ((keyword-name (handle--keyword-name keyword)))
+    (defalias (intern (format "handle-%s" keyword-name))
+      `(lambda (arg)
+        (interactive "P")
+        (handle--mode-execute
+         (reverse (pen-parent-mode-list major-mode))
+         ,keyword ,keyword-name arg))
+      (format "`handle' %s." keyword-name))))
+
 (defun xref-find-definitions-immediately ()
   (interactive)
   (deselect)
@@ -424,6 +439,36 @@
         :errors '(lsp-ui-flycheck-list
                   ;; pen-lsp-error-list
                   )
+        :assignments '()
+        :references '()
+        :definitions '()
+        :implementations '()
+        :readme '(find-readme-here))
+
+;; This is not a real mode, but is a topmost handler
+(handle '(default-handle-mode)
+        :complete '()
+        ;; This is for running the program
+        :runmain '()
+        :repls '()
+        :formatters '()
+        :refactor '()
+        :debug '()
+        :docfun '()
+        :docs '()
+        :docsearch '()
+        :godef '(lsp-find-definition)
+        :showuml '()
+        :nextdef '()
+        :prevdef '()
+        :nexterr '()
+        :preverr '()
+        :history '(dogears-list)
+        :prevhist '(dogears-back)
+        :nexthist '(dogears-forward)
+        :global-references '()
+        :rc '()
+        :errors '()
         :assignments '()
         :references '()
         :definitions '()

@@ -284,6 +284,10 @@ PATH is the sexp to evaluate, as a string."
   "Run j `symbol'."
   (j (intern pattern)))
 
+(org-add-link-type "eadsrc" 'follow-eadsrc-link)
+(defun follow-eadsrc-link (pattern)
+  (eadsrc pattern))
+
 (org-add-link-type "J" 'follow-J-link)
 (defun follow-J-link (pattern)
   "Run b `symbol'. to go to a Clojure symbol in Pen"
