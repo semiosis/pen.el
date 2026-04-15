@@ -311,9 +311,35 @@ Assumes `marker-insertion-type' of END-MARKER is t."
                    (t full-text))
              url)))))))
 
+(defun pen-button-action-ret ()
+  (interactive)
+  (let* ((bt (button-at-point))
+         (act
+          (if bt
+              (button-get bt 'ret-action))))
+    
+    (if act
+        (call-interactively act))))
+
+;; If I want to extend the sx buttons
+(defset sx-button-map
+        (let ((map (copy-keymap button-map)))
+          (define-key map "w" #'sx-button-copy)
+          (define-key map (kbd "RET") #'pen-button-action-ret)
+          ;; (define-key map "M-down-mouse-1" #'push-button-with-prefix)
+          map)
+        "Keymap used on buttons.")
+
+(define-button-type 'sx-button
+  'follow-link t
+  'keymap sx-button-map)
+
 ;; Disable the mouse-face for code blocks, as code blocks are buttons
 (define-button-type 'sx-question-mode-code-block
-  'action    #'sx-button-edit-this
+  ;; 'action    #'sx-button-edit-this
+  ;; I actually do not want it to open when it is clickd
+  'action    'identity
+  'ret-action    #'sx-button-edit-this
   'face      nil
   ;; I added this line
   'mouse-face      nil

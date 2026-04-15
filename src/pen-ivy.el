@@ -1,3 +1,10 @@
+(require 'ivy)
+(ignore-errors (require 'ivy-hydra))
+
+;; Hmm. I'd have to update ivy.
+;; Not too keen right now.
+;; I can just bind mx:ivy-toggle-fuzzy
+
 (defvar default-ivy-height 30)
 (setq ivy-height default-ivy-height)
 
@@ -399,5 +406,18 @@ prompt additionally for EXTRA-AG-ARGS."
     res))
 (advice-add 'ivy--minibuffer-setup :around #'ivy--minibuffer-setup-around-advice)
 ;; (advice-remove 'ivy--minibuffer-setup #'ivy--minibuffer-setup-around-advice)
+
+;; (define-key ivy-minibuffer-map (kbd "C-t") 'hydra-ivy/body)
+(define-key ivy-minibuffer-map (kbd "C-t") 'ivy-toggle-fuzzy)
+
+(defun ivy-toggle-fuzzy-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (pen-flash)
+    ;;  Find a way to display this (perhaps in tmux, or perhaps j:pen-flash which uses j:beacon-blink)
+    ;; (message "ivy--regex-function: %s" (sym2str ivy--regex-function))
+    ;; Pera
+    res))
+(advice-add 'ivy-toggle-fuzzy :around #'ivy-toggle-fuzzy-around-advice)
+;; (advice-remove 'ivy-toggle-fuzzy #'ivy-toggle-fuzzy-around-advice)
 
 (provide 'pen-ivy)

@@ -1938,7 +1938,8 @@ when s is a string, set the clipboard to s"
             ;; Why was MYGIT not found?
             ;; ((or (getenv "MYGIT")
             ;;      "/root/repos") "$MYGIT")
-            ((getenv "MYGIT") "$MYGIT")
+            ((or (getenv "MYGIT")
+                 "/root/repos") "$MYGIT")
             ("/volumes" "$VOL")
             ("/home/shane/var/smulliga/source/git" "$AGIA_GIT")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")

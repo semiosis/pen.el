@@ -197,7 +197,7 @@
                fs)
              nil nil "Run context function: ")))
     (if f
-        (call-interactively 'f))))
+        (call-interactively (str2sym f)))))
 
 (defun pen-suggest-funcs ()
   (interactive)

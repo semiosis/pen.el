@@ -103,9 +103,11 @@
   (copy-button-action t))
 
 (defun button-face-p (button face)
-  (if (overlayp button)
-      (eq (overlay-get button 'face) face)
-    (member face (button-get button 'face))))
+  (let ((f (button-get button 'face)))
+    (if (overlayp button)
+        (eq f face)
+      (if (listp f)
+          (member face f)))))
 
 (defalias 'overlay-face-p 'button-face-p)
 
