@@ -387,9 +387,28 @@ new buffer."
 
 (defun pen-Info-fz-info-file ()
   (interactive)
-  (let ((contents (pen-Info-get-text-contents)))
-    (if (sor contents)
-        (let ((res (fz contents nil nil "Info-search node contents: ")))
+  (let* ((contents (pen-Info-get-text-contents))
+         (significant
+          (if (>= (prefix-numeric-value current-prefix-arg) 4)
+              (concat
+               (awk1 (--> contents
+                          (scrape "‘[^’]+’" it)))
+               (awk1 (--> contents
+                          (scrape "^[0-9][0-9.]+ .*" it)))
+               (awk1 (--> contents
+                          (scrape "" it)))
+               (awk1 (mapconcat 'identity
+                                (-flatten
+                                 (cl-loop for re in (mapcar 'car info-highlights)
+                                          collect
+                                          (scrape re contents)))
+                                "\n")))
+            contents)))
+    (if (sor significant)
+        (let ((res (fz significant nil nil
+                       (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                           "Info-search node significant contents: "
+                         "Info-search node contents: "))))
           (if res
               (progn
                 (Info-top-node)

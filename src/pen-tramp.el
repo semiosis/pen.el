@@ -1,15 +1,37 @@
+(setq tramp-use-ssh-controlmaster-options t)
+
+(defun remove-from-alist (key alist)
+  "Example:
+(remove-from-alist \"ssh\" 'tramp-methods)"
+  (set alist 
+       (assoc-delete-all key (eval alist) 'equal)))
+
+(remove-from-alist "ssh" 'tramp-methods)
+
+(add-to-list 'tramp-methods
+             `("ssh"
+               ;; (tramp-login-program "ssh")
+               (tramp-login-program "tramp-ssh")
+               (tramp-login-args (("-l" "%u") ("-p" "%p") ("%c")
+                                  ("-e" "none") ("%h")))
+               (tramp-async-args (("-q")))
+               (tramp-direct-async t)
+               (tramp-remote-shell ,tramp-default-remote-shell)
+               (tramp-remote-shell-login ("-l"))
+               (tramp-remote-shell-args ("-c"))))
+
 ;; TRAMP gcloud ssh
 (add-to-list 'tramp-methods
-  '("gssh"
-    (tramp-login-program        "gssh")
-    (tramp-login-args           (("%h")))
-    (tramp-async-args           (("-q")))
-    (tramp-remote-shell         "/bin/sh")
-    (tramp-remote-shell-args    ("-c"))
-    (tramp-gw-args              (("-o" "GlobalKnownHostsFile=/dev/null")
-                                 ("-o" "UserKnownHostsFile=/dev/null")
-                                 ("-o" "StrictHostKeyChecking=no")))
-    (tramp-default-port         22)))
+             '("gssh"
+               (tramp-login-program        "gssh")
+               (tramp-login-args           (("%h")))
+               (tramp-async-args           (("-q")))
+               (tramp-remote-shell         "/bin/sh")
+               (tramp-remote-shell-args    ("-c"))
+               (tramp-gw-args              (("-o" "GlobalKnownHostsFile=/dev/null")
+                                            ("-o" "UserKnownHostsFile=/dev/null")
+                                            ("-o" "StrictHostKeyChecking=no")))
+               (tramp-default-port         22)))
 
 (with-eval-after-load 'tramp
   (add-to-list 'tramp-methods

@@ -123,7 +123,8 @@ if test -z "$ans"; then
               -w ew3m \
               -W w3m \
               -3 nvw3m \
-              -o org-browser \
+              -o open \
+              -O org-browser \
               -n nvlinks \
               -l elinks \
               -z scrape-and-summarize \
@@ -163,6 +164,7 @@ case "$ans" in
     w3m) { w3m "$url"; } ;;
     nvw3m) { nvw3m "$url"; } ;;
     org-browser) { org-browser "$url"; } ;;
+    open) { open "$url"; } ;;
     ca-tless) { ca "$url" | tless; } ;;
     vimlinks) { vimlinks "$url"; } ;;
     qutebrowser) { qutebrowser "$url"; } ;;

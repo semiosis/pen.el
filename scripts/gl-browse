@@ -3,6 +3,28 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -oc) {
+        use_oc=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+sn="$(basename -- "$0")"
+br="$(p "$sn" | cut -d - -f 2)"
+
+: "${br:="browse"}"
+
 # use nvlinks gl-browse telnet bbs
 
-gl "$@" | fzf | xa browse
+(
+if test "$use_oc" = "y"; then
+    gl "$@" | spin -m wrlp-oc wrlp ci -f oc -l | fzf | org-unclink
+else
+    gl "$@" | fzf
+fi
+) | xa "$br"

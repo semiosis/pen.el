@@ -1,21 +1,24 @@
 #!/bin/bash
 export TTY
 
-# . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/hs
 
-#strace-open Trap to kill subprocesses is almost useless here because the spinner is a
+# This should work similarly to "spin"
+# Initially, just make something that simply shows linewise progress
+# in a tmux popup.
+# How?
+# Displaying the command being run I think is most minimal, elegant
+# and sufficient right now.
+# OK, I will just use a "tless" in a tmux popup because that is highly
+# extendible, and easy to implement.
+
+# Trap to kill subprocesses is almost useless here because the spinner is a
 # popup
 
 . $SCRIPTS/lib/stdin_exists
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -t) {
-        TMUX_SPINNER=y
-        shift
-    }
-    ;;
-
     -f) {
         export FORCE_NEW_TPOP=y
         shift
@@ -32,12 +35,6 @@ fi
 
 if test "$FORCE_NEW_TPOP" = "y"; then
     tmux-close-popup
-fi
-
-# TODO Make the tmux spinner
-if test "$TMUX_SPINNER" = "y"; then
-    "$@"
-    exit "$?"
 fi
 
 extraargs=()

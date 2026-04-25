@@ -156,6 +156,7 @@ The arguments are in English like this:
 (require 'pen-pcre)
 (require 'pen-custom)
 (require 'pen-support)
+(require 'pen-files)
 
 (defun org-require-around-advice (proc &rest args)
   (try
@@ -2908,32 +2909,35 @@ May use to generate code from comments."
   "Edit file given by path. If not found, then look in PATH."
   (interactive (list (read-string-hist "Edit Which: ")))
 
-  (setq fp (pen-umn fp))
-  (let* ((fp_with_pen (concat "pen-" fp))
-        (found
-         (cond
-          ((pen-test-f fp) (chomp fp))
-          ((pen-test-d fp) (chomp fp))
-          ((pen-snq (pen-cmd "which" fp_with_pen)) (chomp (pen-sn (concat "which " fp_with_pen))))
-          ((pen-snq (pen-cmd "which" fp)) (chomp (pen-sn (concat "which " fp))))
-          ((string-match "^/[^:]+:" fp) (chomp fp))
-          (t (progn (message (concat fp " not found"))
-                    nil)))))
-    (if (not no-edit)
-        (if (and
-             found
-             (f-exists-p found))
-            (find-file found)
-          (let ((dn (f-dirname fp)))
-            
-            (if (yn (concat "No file located at "
-                            (q fp)
-                            ". "
-                            "Edit path anyway?"))
-                (progn (if (not (f-dir-p dn))
-                           (mkdir dn))
-                       (find-file fp)))))
-      found)))
+  (if (tramp-tramp-file-p default-directory)
+      (find-file fp)
+      (progn
+        (setq fp (pen-umn fp))
+        (let* ((fp_with_pen (concat "pen-" fp))
+               (found
+                (cond
+                 ((pen-test-f fp) (chomp fp))
+                 ((pen-test-d fp) (chomp fp))
+                 ((pen-snq (pen-cmd "which" fp_with_pen)) (chomp (pen-sn (concat "which " fp_with_pen))))
+                 ((pen-snq (pen-cmd "which" fp)) (chomp (pen-sn (concat "which " fp))))
+                 ((string-match "^/[^:]+:" fp) (chomp fp))
+                 (t (progn (message (concat fp " not found"))
+                           nil)))))
+          (if (not no-edit)
+              (if (and
+                   found
+                   (f-exists-p found))
+                  (find-file found)
+                (let ((dn (f-dirname fp)))
+              
+                  (if (yn (concat "No file located at "
+                                  (q fp)
+                                  ". "
+                                  "Edit path anyway?"))
+                      (progn (if (not (f-dir-p dn))
+                                 (mkdir dn))
+                             (find-file fp)))))
+            found)))))
 (defalias 'pen-edit-which 'pen-edit-fp-on-path)
 (defalias 'pen-ewhich 'pen-edit-fp-on-path)
 (defalias 'pen-ew 'pen-edit-fp-on-path)

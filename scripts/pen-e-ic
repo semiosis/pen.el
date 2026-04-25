@@ -134,6 +134,11 @@ case "$sn" in
     }
     ;;
 
+    eshell) {
+        ic=pen-eshell
+    }
+    ;;
+
     pen-om|eopen-main) {
         ic=open-main
     }

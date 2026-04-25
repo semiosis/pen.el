@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# env | tv &>/dev/null
+
+/usr/bin/ssh "$@"

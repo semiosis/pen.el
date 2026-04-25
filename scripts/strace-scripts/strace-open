@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+alt strace -e trace=open,close,read,write,connect,accept "$@"

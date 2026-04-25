@@ -1,6 +1,21 @@
 #!/bin/bash
 export TTY
 
+# https://www.baeldung.com/linux/calculators-cli
+# calc is a straightforward command-line calculator that provides a basic means of performing arithmetic
+# calculations.                                                                                                    5
+# 
+# Its pros lie in its simplicity and ease of use, making it a quick solution for basic math operations.
+# However, it lacks advanced mathematical functions, interactive capabilities, and constants commonly
+# needed in calculations.
+# First, let’s install calc via apt-get and sudo:
+
+# EXAMPLE:
+# ; x=2
+# ; y=3
+# ; (x^2)+(y^3)
+# ; 31
+
 # . $SCRIPTS/lib/hs
 
 if test "$#" -eq 0; then

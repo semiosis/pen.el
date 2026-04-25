@@ -2409,3 +2409,4 @@ dyalog-mode
 kmacro-x
 wisp-mode
 lichess
+org-remark

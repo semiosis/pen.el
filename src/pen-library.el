@@ -1724,4 +1724,10 @@ non-nil."
   (let ((message-log-max nil))
     (apply 'message args)))
 
+(defun remove-from-alist (key alist)
+  "Example
+(remove-from-alist "ssh" 'tramp-methods)"
+  (set alist 
+       (assoc-delete-all key (eval alist) 'equal)))
+
 (provide 'pen-library)

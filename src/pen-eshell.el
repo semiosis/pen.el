@@ -14,6 +14,7 @@
 (require 'eshell-fixed-prompt)
 (require 'eshell-did-you-mean)
 (require 'eshell-bookmark)
+(require 'em-tramp)
 
 (setq eshell-hist-ignoredups t)
 (setq eshell-cmpl-cycle-completions nil)
@@ -22,6 +23,7 @@
 (setq eshell-prompt-regexp "❯❯❯ ")
 (setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
 
+;; TODO Make something to bring up this banner independently
 (eshell-info-banner-update-banner)
 
 (defalias 'banner 'eshell-info-)
@@ -1091,8 +1093,14 @@ If N is negative, search forwards for the -Nth following match."
   (interactive)
   (save-excursion
     (ace-link-goto-eshell-file-path)
-    (xc (f-realpath (f-expand (str (get-text-property (point) 'file-path))))
-        nil nil "Copied eshell file path")))
+    (let ((path (str (get-text-property (point) 'file-path))))
+      (if (tramp-tramp-file-p path)
+          ;; No using non-tramp paths is not the way
+          ;; cd in eshell wouldn't even work without specifying the tramp path
+          (xc path
+              nil nil "Copied eshell tramp file path")
+        (xc (f-realpath (f-expand (str (get-text-property (point) 'file-path))))
+            nil nil "Copied eshell file path")))))
 
 (define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 
@@ -1370,5 +1378,11 @@ Otherwise, call `eshell/cd' with the result."
 (defalias 'eshell/jump 'eshell/aj)
 
 (pen-eshell-load-theme)
+
+(defun pen-eshell (&optional cwd)
+  (interactive)
+  (setq cwd (or cwd default-directory))
+  (let ((default-directory cwd))
+    (call-interactively 'eshell)))
 
 (provide 'pen-eshell)

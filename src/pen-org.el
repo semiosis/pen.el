@@ -3,6 +3,7 @@
 (require 'org-macs)
 (require 'org-goto)
 (require 'org-table)
+(ignore-errors (require 'org-remark))
 (require 'evil-org)
 (load-library "find-lisp")
 ;; https://writequit.org/articles/emacs-org-mode-generate-ids.html#automating-id-creation
@@ -1035,6 +1036,34 @@ The table is taken from the parameter TXT, or from the buffer at point."
       (with-current-buffer (new-buffer-from-string-or-selected)
         (org-open-at-point arg))
     (org-open-at-point arg)))
+
+(comment
+  (use-package org-remark-global-tracking
+    ;; It is recommended that `org-remark-global-tracking-mode' be
+    ;; enabled when Emacs initializes. You can set it in
+    ;; `after-init-hook'.
+    :hook after-init
+    :config
+    ;; Selectively keep or comment out the following if you want to use
+    ;; extensions for Info-mode, EWW, and NOV.el (EPUB) respectively.
+    (use-package org-remark-info :after info :config (org-remark-info-mode 1))
+    (use-package org-remark-eww :after eww :config (org-remark-eww-mode 1))
+    (use-package org-remark-nov :after nov :config (org-remark-nov-mode 1)))
+  
+  (org-remark-global-tracking-mode +1)
+  
+  (use-package org-remark
+    :bind (;; :bind keyword also implicitly defers org-remark itself.
+           ;; Keybindings before :map is set for global-map. Adjust the keybinds
+           ;; as you see fit.
+           ("C-c n m" . org-remark-mark)
+           ("C-c n l" . org-remark-mark-line)
+           :map org-remark-mode-map
+           ("C-c n o" . org-remark-open)
+           ("C-c n ]" . org-remark-view-next)
+           ("C-c n [" . org-remark-view-prev)
+           ("C-c n r" . org-remark-remove)
+           ("C-c n d" . org-remark-delete))))
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 

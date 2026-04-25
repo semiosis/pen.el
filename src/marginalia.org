@@ -1,0 +1,49 @@
+
+* pen-org
+:PROPERTIES:
+:org-remark-file: pen-org.el
+:END:
+
+** :map org-remark-mode-map
+:PROPERTIES:
+:org-remark-id: 8babee34
+:org-remark-label: nil
+:org-remark-beg: 41852
+:org-remark-end: 41876
+:org-remark-link: [[file:pen-org.el::1058]]
+:org-remark-original-text: :map org-remark-mode-map
+:END:
+
+** ("C-c n m" . org-remark-mark)
+:PROPERTIES:
+:org-remark-id: d1a84758
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41760
+:org-remark-end: 41760
+:org-remark-link: [[file:pen-org.el::1056]]
+:org-remark-line-number: 1056
+:org-remark-original-text: ("C-c n m" . org-remark-mark)
+:END:
+
+** ;; Keybindings before :map is set for gl…
+:PROPERTIES:
+:org-remark-id: c4d7a3c0
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41653
+:org-remark-end: 41653
+:org-remark-link: [[file:pen-org.el::1054]]
+:org-remark-line-number: 1054
+:org-remark-original-text: ;; Keybindings before :map is set for gl…
+:END:
+
+** org-remark
+:PROPERTIES:
+:org-remark-id: 80854c99
+:org-remark-label: nil
+:org-remark-beg: 41574
+:org-remark-end: 41584
+:org-remark-link: [[file:pen-org.el::1052]]
+:org-remark-original-text: org-remark
+:END:

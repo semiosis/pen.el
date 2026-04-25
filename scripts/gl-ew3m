@@ -1,6 +1,1 @@
-#!/bin/bash
-export TTY
-
-. $SCRIPTS/lib/hs
-
-gl "$@" | fzf | xa ew3m
+gl-browse
