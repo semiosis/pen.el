@@ -1135,8 +1135,11 @@ imap <C-J> <down>
 " important fix (hopefully there are no escape code conflicts)
 imap $ l$
 
-xnoremap t lt
-xnoremap T hT
+" What has this for?
+"xnoremap t lt
+"xnoremap T hT
+" It replaced some cool bindings though.
+" I want to reclaim t and T
 
 "xnoremap $ $h
 xnoremap $ g_
@@ -1959,3 +1962,13 @@ fun! Scratch()
   " b \*scratch\*
 endf
 command! Scratch call Scratch()
+
+" Toggle Paste
+fun! TP()
+    call ToggleOpt("paste")
+endf
+command! TP call TP()
+nnoremap tp :call TP()<CR>
+nnoremap tn :call ToggleOpt("number")<CR>
+nnoremap tr :call ToggleOpt("relativenumber")<CR>
+nnoremap tw :call ToggleOpt("wrap")<CR>

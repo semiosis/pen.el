@@ -10,19 +10,21 @@
 :org-remark-label: nil
 :org-remark-beg: 41852
 :org-remark-end: 41876
-:org-remark-link: [[file:pen-org.el::1058]]
+:org-remark-link: [[file:pen-org.el::1064]]
 :org-remark-original-text: :map org-remark-mode-map
 :END:
+
+My note
 
 ** ("C-c n m" . org-remark-mark)
 :PROPERTIES:
 :org-remark-id: d1a84758
 :org-remark-label: line
 :org-remark-type: line
-:org-remark-beg: 41760
-:org-remark-end: 41760
-:org-remark-link: [[file:pen-org.el::1056]]
-:org-remark-line-number: 1056
+:org-remark-beg: 41711
+:org-remark-end: 41711
+:org-remark-link: [[file:pen-org.el::1062]]
+:org-remark-line-number: 1062
 :org-remark-original-text: ("C-c n m" . org-remark-mark)
 :END:
 
@@ -31,10 +33,10 @@
 :org-remark-id: c4d7a3c0
 :org-remark-label: line
 :org-remark-type: line
-:org-remark-beg: 41653
-:org-remark-end: 41653
-:org-remark-link: [[file:pen-org.el::1054]]
-:org-remark-line-number: 1054
+:org-remark-beg: 41633
+:org-remark-end: 41633
+:org-remark-link: [[file:pen-org.el::1060]]
+:org-remark-line-number: 1060
 :org-remark-original-text: ;; Keybindings before :map is set for gl…
 :END:
 
@@ -42,8 +44,91 @@
 :PROPERTIES:
 :org-remark-id: 80854c99
 :org-remark-label: nil
-:org-remark-beg: 41574
-:org-remark-end: 41584
-:org-remark-link: [[file:pen-org.el::1052]]
+:org-remark-beg: 41434
+:org-remark-end: 41444
+:org-remark-link: [[file:pen-org.el::1054]]
 :org-remark-original-text: org-remark
+:END:
+
+** define-key global-map
+:PROPERTIES:
+:org-remark-id: f22dcc49
+:org-remark-label: nil
+:org-remark-beg: 41578
+:org-remark-end: 41599
+:org-remark-link: [[file:pen-org.el::1059]]
+:org-remark-original-text: define-key global-map
+:END:
+Notes for this
+
+** (define-key org-remark-mode-map (kbd "H-…
+:PROPERTIES:
+:org-remark-id: 21da2db7
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41850
+:org-remark-end: 41850
+:org-remark-link: [[file:pen-org.el::1064]]
+:org-remark-line-number: 1064
+:org-remark-original-text: (define-key org-remark-mode-map (kbd "H-…
+:END:
+
+** (define-key global-map (kbd "H-k m") #'o…
+:PROPERTIES:
+:org-remark-id: 17df2509
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41575
+:org-remark-end: 41575
+:org-remark-link: [[file:pen-org.el::1059]]
+:org-remark-line-number: 1059
+:org-remark-original-text: (define-key global-map (kbd "H-k m") #'o…
+:END:
+
+** Empty line highlight
+:PROPERTIES:
+:org-remark-id: de9da113
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41710
+:org-remark-end: 41710
+:org-remark-link: [[file:pen-org.el::1061]]
+:org-remark-line-number: 1061
+:org-remark-original-text: Empty line highlight
+:END:
+
+** Empty line highlight
+:PROPERTIES:
+:org-remark-id: 3ee51cc3
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41710
+:org-remark-end: 41710
+:org-remark-link: [[file:pen-org.el::1061]]
+:org-remark-line-number: 1061
+:org-remark-original-text: Empty line highlight
+:END:
+
+** Empty line highlight
+:PROPERTIES:
+:org-remark-id: 24460eb3
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41710
+:org-remark-end: 41710
+:org-remark-link: [[file:pen-org.el::1061]]
+:org-remark-line-number: 1061
+:org-remark-original-text: Empty line highlight
+:END:
+
+** Empty line highlight
+:PROPERTIES:
+:org-remark-id: 2afe78b8
+:org-remark-label: line
+:org-remark-type: line
+:org-remark-beg: 41710
+:org-remark-end: 41710
+:org-remark-link: [[file:pen-org.el::1061]]
+:org-remark-line-number: 1061
+:org-remark-original-text: Empty line highlight
 :END:

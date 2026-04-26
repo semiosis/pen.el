@@ -87,6 +87,14 @@
   (setq recentf-max-menu-items 25)
   (run-at-time nil (* 5 60) 'recentf-save-list))
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun recentf-save-list-around-advice (proc &rest args)
+  (let ((res (shut-up (apply proc args))))
+    (pen-message-no-echo "recentf-save-list returned %S writing to %s" res recentf-save-file)
+    res))
+(advice-add 'recentf-save-list :around #'recentf-save-list-around-advice)
+;; (advice-remove 'recentf-save-list #'recentf-save-list-around-advice)
+
 (defun byte-recompile-directory (directory &optional arg force)
   "I hope this disables this function"
   nil)

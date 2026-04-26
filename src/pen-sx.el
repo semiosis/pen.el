@@ -159,11 +159,11 @@
     (sx-display-question (sx-question-get-question site (string-to-number id)))
     (delete-other-windows)))
 
-(define-key global-map (kbd "H-K") 'sx-search-quickly)
-(define-key global-map (kbd "H-k") 'sx-search-lang)
+;; (define-key global-map (kbd "H-K") 'sx-search-quickly)
+;; (define-key global-map (kbd "H-k") 'sx-search-lang)
 
-(define-key sx-question-mode-map (kbd "<up>") 'previous-line-nonvisual)
 (define-key sx-question-mode-map (kbd "<down>") 'next-line-nonvisual)
+(define-key sx-question-mode-map (kbd "<up>") 'previous-line-nonvisual)
 
 (defsetface sx-question-mode-code-block-face
   '((t :foreground "#3f5fa7"

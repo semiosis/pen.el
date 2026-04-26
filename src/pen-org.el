@@ -1056,16 +1056,34 @@ The table is taken from the parameter TXT, or from the buffer at point."
   ;; Key-bind `org-remark-mark' to global-map so that you can call it
   ;; globally before the library is loaded.
 
-  (define-key global-map (kbd "C-c n m") #'org-remark-mark)
-  (define-key global-map (kbd "C-c n l") #'org-remark-mark-line) ; new in v1.3
+  (define-key global-map (kbd "H-k m") #'org-remark-mark)
+  (define-key global-map (kbd "H-k l") #'org-remark-mark-line) ; new in v1.3
+
+  (define-key org-remark-mode-map (kbd "H-k o") #'org-remark-open)
+  (define-key org-remark-mode-map (kbd "H-k ]") #'org-remark-view-next)
+  (define-key org-remark-mode-map (kbd "H-k [") #'org-remark-view-prev)
+  (define-key org-remark-mode-map (kbd "H-k r") #'org-remark-remove)
+  (define-key org-remark-mode-map (kbd "H-k d") #'org-remark-delete)
+
+  (comment
+   (setq org-remark-notes-display-buffer-action
+         '((display-buffer-in-side-window)
+           (side . left)
+           (slot . 1)))
+   (setq org-remark-notes-display-buffer-action
+         '((display-buffer-same-window))))
+
+  (setq org-remark-notes-display-buffer-action
+        '((display-buffer-same-window)))
 
   ;; The rest of keybidings are done only on loading `org-remark'
-  (with-eval-after-load 'org-remark
-    (define-key org-remark-mode-map (kbd "C-c n o") #'org-remark-open)
-    (define-key org-remark-mode-map (kbd "C-c n ]") #'org-remark-view-next)
-    (define-key org-remark-mode-map (kbd "C-c n [") #'org-remark-view-prev)
-    (define-key org-remark-mode-map (kbd "C-c n r") #'org-remark-remove)
-    (define-key org-remark-mode-map (kbd "C-c n d") #'org-remark-delete)))
+  ;; (with-eval-after-load 'org-remark
+  ;;   (define-key org-remark-mode-map (kbd "H-k o") #'org-remark-open)
+  ;;   (define-key org-remark-mode-map (kbd "H-k ]") #'org-remark-view-next)
+  ;;   (define-key org-remark-mode-map (kbd "H-k [") #'org-remark-view-prev)
+  ;;   (define-key org-remark-mode-map (kbd "H-k r") #'org-remark-remove)
+  ;;   (define-key org-remark-mode-map (kbd "H-k d") #'org-remark-delete))
+  )
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 
