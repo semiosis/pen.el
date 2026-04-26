@@ -1037,33 +1037,35 @@ The table is taken from the parameter TXT, or from the buffer at point."
         (org-open-at-point arg))
     (org-open-at-point arg)))
 
-(comment
-  (use-package org-remark-global-tracking
-    ;; It is recommended that `org-remark-global-tracking-mode' be
-    ;; enabled when Emacs initializes. You can set it in
-    ;; `after-init-hook'.
-    :hook after-init
-    :config
-    ;; Selectively keep or comment out the following if you want to use
-    ;; extensions for Info-mode, EWW, and NOV.el (EPUB) respectively.
-    (use-package org-remark-info :after info :config (org-remark-info-mode 1))
-    (use-package org-remark-eww :after eww :config (org-remark-eww-mode 1))
-    (use-package org-remark-nov :after nov :config (org-remark-nov-mode 1)))
-  
-  (org-remark-global-tracking-mode +1)
-  
-  (use-package org-remark
-    :bind (;; :bind keyword also implicitly defers org-remark itself.
-           ;; Keybindings before :map is set for global-map. Adjust the keybinds
-           ;; as you see fit.
-           ("C-c n m" . org-remark-mark)
-           ("C-c n l" . org-remark-mark-line)
-           :map org-remark-mode-map
-           ("C-c n o" . org-remark-open)
-           ("C-c n ]" . org-remark-view-next)
-           ("C-c n [" . org-remark-view-prev)
-           ("C-c n r" . org-remark-remove)
-           ("C-c n d" . org-remark-delete))))
+(progn
+  (require 'org-remark)
+  (org-remark-global-tracking-mode 1)
+
+  ;; Optional if you would like to highlight websites via eww-mode
+  (with-eval-after-load 'eww
+    (org-remark-eww-mode 1))
+
+  ;; Optional if you would like to highlight EPUB books via nov.el
+  (with-eval-after-load 'nov
+    (org-remark-nov-mode 1))
+
+  ;; Optional if you would like to highlight Info documentation via Info-mode
+  (with-eval-after-load 'info
+    (org-remark-info-mode 1))
+
+  ;; Key-bind `org-remark-mark' to global-map so that you can call it
+  ;; globally before the library is loaded.
+
+  (define-key global-map (kbd "C-c n m") #'org-remark-mark)
+  (define-key global-map (kbd "C-c n l") #'org-remark-mark-line) ; new in v1.3
+
+  ;; The rest of keybidings are done only on loading `org-remark'
+  (with-eval-after-load 'org-remark
+    (define-key org-remark-mode-map (kbd "C-c n o") #'org-remark-open)
+    (define-key org-remark-mode-map (kbd "C-c n ]") #'org-remark-view-next)
+    (define-key org-remark-mode-map (kbd "C-c n [") #'org-remark-view-prev)
+    (define-key org-remark-mode-map (kbd "C-c n r") #'org-remark-remove)
+    (define-key org-remark-mode-map (kbd "C-c n d") #'org-remark-delete)))
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 
