@@ -122,7 +122,18 @@ test -f $PENELD/scripts/utils.sh && . $PENELD/scripts/utils.sh
 # This will detach the docker container immediately - but how to disable entirely?
 # At least I have saved C-p from being highjacked.
 # C-q in emacs is used to enter the next character. This seems like an OK binding.
-docker_detach_keys="ctrl-q,ctrl-q"
+# I'd like to change this sequence from ctrl-q,ctrl-q to something less interfering because
+# it appears to break even C-M-q
+# https://docs.docker.com/reference/cli/docker/container/attach/#detach-keys
+# docker_detach_keys="ctrl-q,ctrl-q"
+# docker_detach_keys="ctrl-z,z"
+# docker_detach_keys=""
+# Sadly, can't use empty string or it will use ctrl-p
+# sp +/"^var ASCII = \[\]string{" "$VOL$AGIA_GIT/moby/moby/vendor/github.com/moby/term/ascii.go"
+# Use C-^. This is used for super- in emacs, but I don't use C-^ twice
+# ctrl-6 is C-^ which is the "Record Separator" (RS) control character
+# This seems the best solution:
+docker_detach_keys="ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^,ctrl-^"
 
 inside-docker-p() {
     test -f /.dockerenv

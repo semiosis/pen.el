@@ -112,6 +112,7 @@
             (apu-mode :ignore nil :select t :same t)
             (geiser-repl-mode :ignore nil :select t :same t)
             (mastodon-mode :ignore nil :select t :same t)
+            (list-environment-mode :ignore nil :select t :same t)
             (sly-editing-mode :ignore t :select nil :same t)
             (inf-messer-mode :ignore nil :select t :same t)
             (sx-question-mode :ignore nil :select t :same t)

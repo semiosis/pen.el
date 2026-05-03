@@ -86,11 +86,13 @@ do_scope() {
 
     exec 0</dev/null
 
-    if odn adn url-file-p "$path"; then
+    # It's fine to use caching
+
+    if ocif odn adn url-file-p "$path"; then
         # download it and then rerun scope.sh
         ocif scope.sh "$(ocif download-file "$path")" | pavs
         return "$?"
-    elif odn adn url-p "$path"; then
+    elif ocif odn adn url-p "$path"; then
         ocif elinks-dump "$path"
         return "$?"
     fi

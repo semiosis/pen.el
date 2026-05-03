@@ -192,6 +192,18 @@ display values."
   (interactive)
   (other-window 1))
 
+(defun pen-split-window-below (&optional size window-to-split)
+  (interactive `(,(when current-prefix-arg
+                    (prefix-numeric-value current-prefix-arg))
+                 ,(selected-window)))
+  (select-window (split-window-below size window-to-split)))
+
+(defun pen-split-window-right (&optional size window-to-split)
+  (interactive `(,(when current-prefix-arg
+                    (prefix-numeric-value current-prefix-arg))
+                 ,(selected-window)))
+  (select-window (split-window-right size window-to-split)))
+
 ;; This unbinds M-l so it must come first
 (convert-hydra-to-sslk "l"
                        (defhydra h_nx (;; "NORMAL"
@@ -226,8 +238,8 @@ display values."
                          ("R" #'new-buffer-from-tmux-main-capture-to-english "capture localhost to english")
                          ("1" #'delete-other-windows "only")
                          ("0" #'delete-window "close")
-                         ("2" #'split-window-below "hsplit")
-                         ("3" #'split-window-right "vsplit")
+                         ("2" #'pen-split-window-below "hsplit")
+                         ("3" #'pen-split-window-right "vsplit")
                          ("S" #'spv "sh v split")
                          ("D" #'pen-swipe "swiper")
                          ("M" #'git-timemachine "git timemachine")

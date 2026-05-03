@@ -221,6 +221,8 @@
     nil)
    ((derived-mode-p 'calc-mode)
     nil)
+   ((derived-mode-p 'ses-mode)
+    nil)
 
    ;; Info-mode already has something for the header line
    ((derived-mode-p 'Info-mode)

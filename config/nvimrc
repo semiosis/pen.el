@@ -1368,7 +1368,8 @@ inoremap # X#
 
 nnoremap gl <C-^>
 
-" unmap annoying keys
+" unmap annoying keys. Sadly, this also makes it so ending macros
+" with q doesn't happen instantaneously
 nnoremap K <Nop>
 nnoremap q: <Nop>
 nnoremap q/ <Nop>
@@ -1915,6 +1916,24 @@ fun! GetHelpTopicPreview(topic)
     call ReselectVisual()
     normal! "zy
     bd
+    return @z
+endf
+
+" It's actually difficult to parse the vim help file
+" call system("tv", split(GetHelpTopicContents("str2nr()"), "\n"))
+fun! GetHelpTopicContents(topic)
+    exe("help ".a:topic)
+    set modifiable
+    silent! normal! 0kVggd
+    call search(a:topic)
+    normal! 0j
+    call search("======")
+    " call SearchDownDiffCol()
+    normal! VGd
+    call ReselectVisual()
+    normal yc
+    normal! "zy
+    bd!
     return @z
 endf
 

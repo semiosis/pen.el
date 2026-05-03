@@ -1037,8 +1037,12 @@ The table is taken from the parameter TXT, or from the buffer at point."
         (org-open-at-point arg))
     (org-open-at-point arg)))
 
-(progn
+(comment
   (require 'org-remark)
+  
+  ;; mx:org-remark-mark-line sets a right margin somehow. I want to learn how to use the RHS margin
+  ;; j:org-remark-mark-line
+  
   (org-remark-global-tracking-mode 1)
 
   ;; Optional if you would like to highlight websites via eww-mode
@@ -1083,7 +1087,19 @@ The table is taken from the parameter TXT, or from the buffer at point."
   ;;   (define-key org-remark-mode-map (kbd "H-k [") #'org-remark-view-prev)
   ;;   (define-key org-remark-mode-map (kbd "H-k r") #'org-remark-remove)
   ;;   (define-key org-remark-mode-map (kbd "H-k d") #'org-remark-delete))
-  )
+
+  (setq org-remark-line-minimum-margin-width
+        '3)
+  (setq org-remark-line-icon
+        '" * ")
+  ;; (setq org-remark-line-margin-side
+  ;;       'left-margin)
+  (setq org-remark-line-margin-side
+        'right-margin)
+  (setq org-remark-line-heading-title-max-length
+        '40)
+  (setq org-remark-line-ellipsis
+        '"…"))
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 

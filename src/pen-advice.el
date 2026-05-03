@@ -153,6 +153,7 @@
      (let* ((ma mark-active)
             (deactivate-mark nil)
             (res (progn ,@body)))
+       (deactivate-mark t)
        (restore-region)
        (if (and (not ma)
                 mark-active)

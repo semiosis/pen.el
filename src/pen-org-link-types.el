@@ -208,6 +208,10 @@ PATH is the sexp to evaluate, as a string."
   "Run `pa' with CMD as argument."
   (pen-sps (concat cmd " | pa -vs")))
 
+(org-add-link-type "vimhelp" 'follow-vimhelp-link)
+(defun follow-vimhelp-link (topic)
+  (pen-sps (cmd "vimhelp" topic)))
+
 ;; Function help
 (org-add-link-type "f" 'follow-fh-link)
 (org-add-link-type "fh" 'follow-fh-link)

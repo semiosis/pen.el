@@ -10,6 +10,8 @@ if stdin_exists; then
 else
     input="$1"
 fi
+# Make upper case
+input="${input^^}"
 
-echo "obase=10;ibase=16;$input" 1>&2
+echo "obase=10;ibase=16;$input" | hls blue 1>&2
 echo "obase=10;ibase=16;$input" | bc

@@ -944,4 +944,20 @@ The following special registers are supported.
           (with-current-buffer buf
             (deactivate-mark)))))))
 
+(evil-define-motion evil-next-line (count)
+  "Move the cursor COUNT lines down."
+  :type line
+  (if truncate-lines
+      (let (line-move-visual)
+        (evil-line-move (or count 1)))
+    (next-line count)))
+
+(evil-define-motion evil-previous-line (count)
+  "Move the cursor COUNT lines up."
+  :type line
+  (if truncate-lines
+      (let (line-move-visual)
+        (evil-line-move (- (or count 1))))
+    (previous-line count)))
+
 (provide 'pen-evil)

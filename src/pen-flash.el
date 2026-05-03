@@ -19,6 +19,7 @@
 
 (defun pen-flash ()
   (interactive)
+  ;; (mode-line-bell-flash)
   ;; (nav-flash-show)
   (beacon-blink))
 

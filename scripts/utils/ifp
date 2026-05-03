@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# Example:
+# - echo yes | ifp -in grep -q yes -then echo yes -else echo no
+# - echo content | ifp test 5 -eq 5 -then v -else v

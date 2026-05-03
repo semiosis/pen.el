@@ -214,6 +214,22 @@ if test -f "/root/.emacs.d/host/pen.el/config/screen-2color-norev.ti"; then
     tic "/root/.emacs.d/host/pen.el/config/screen-2color-norev.ti"
 fi
 
+if test -f "/root/.emacs.d/host/pen.el/config/screen-256color.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/screen-256color.ti"
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/screen-256color-norev.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/screen-256color-norev.ti"
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/xterm-256color.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/xterm-256color.ti"
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/xterm-24bit.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/xterm-24bit.ti"
+fi
+
 if test -f "/root/.emacs.d/host/pen.el/config/Xresources"; then
     ln -sf "/root/.emacs.d/host/pen.el/config/Xresources" ~/.Xresourses
 fi

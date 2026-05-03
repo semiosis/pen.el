@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+IFS= read -r -d '' code <<HEREDOC
+find /usr/share/terminfo -type f | rev | cut -d / -f 1 | rev | while read trm; do
+    ocif infocmp -L1 $trm | cat
+done
+HEREDOC
+
+ocif sh -c "$code" | pavs

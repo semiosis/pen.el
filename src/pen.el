@@ -50,8 +50,39 @@
 (defun f-join (&rest bits)
   (s-join "/" bits))
 
+(defmacro pen-ignore-errors (&rest body)
+  "Execute BODY; if an error occurs, return nil.
+Otherwise, return result of last form in BODY.
+See also `with-demoted-errors' that does something similar
+without silencing all errors."
+  (declare (debug t) (indent 0))
+  `(condition-case e (progn ,@body)
+     ((error nil)
+      ;; (pen-flash)
+      ;; (nav-flash-show)
+      (mode-line-bell-flash)
+      (pen-message-no-echo "Suppressed error: %S"
+			               (error-message-string e)))))
+(defalias 'suppress-errors 'pen-ignore-errors)
+
+(defmacro pen-ignore-errors-with-context (context &rest body)
+  "Execute BODY; if an error occurs, return nil.
+Otherwise, return result of last form in BODY.
+See also `with-demoted-errors' that does something similar
+without silencing all errors."
+  (declare (debug t) (indent 0))
+  `(condition-case e (progn ,@body)
+     ((error nil)
+      ;; (pen-flash)
+      ;; (nav-flash-show)
+      (mode-line-bell-flash)
+      (pen-message-no-echo "Suppressed error: %S for context: %s"
+			               (error-message-string e)
+                           (str ,context)))))
+(defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)
+
 (defun ignore-errors-around-advice (proc &rest args)
-  (ignore-errors
+  (suppress-errors-with-context proc
     (let ((res (apply proc args)))
       res)))
 
@@ -225,6 +256,7 @@ The arguments are in English like this:
 (require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
+(require 'mode-line-bell)
 (require 'pen-profiler)
 (require 'pen-custom-values)
 (require 'pen-configure)
@@ -268,6 +300,7 @@ The arguments are in English like this:
 
 (require 'pen-highlight-indent-guides)
 (require 'pen-misc)
+(require 'pen-ses)
 (require 'pen-packages)
 (require 'pen-pensieve)
 (require 'pen-menu-bar)
@@ -280,6 +313,7 @@ The arguments are in English like this:
 ;; (require 'pen-undo-tree)
 (require 'pen-man)
 (require 'pen-human)
+(require 'pen-clock)
 (require 'pen-cterm)
 (require 'pen-web)
 (require 'pen-esp)
@@ -2608,6 +2642,7 @@ May use to generate code from comments."
 (require 'pen-clients)
 (require 'pen-whitespace)
 (require 'pen-readme)
+(require 'pen-env)
 (if (inside-docker-p)
 (require 'pen-ledger))
 (require 'pen-widgets)

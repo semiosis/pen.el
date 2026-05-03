@@ -56,9 +56,15 @@
          (off hide-mode-line-mode)
          (off display-line-numbers-mode)
          (off visual-line-mode))
+        
+        ;; (ses-mode
+        ;;  (off hl-line-mode))
 
         (Info-mode
          (off highlight-thing-mode))
+
+        (ses-mode
+         (on header-line-indent-mode))
 
         (sh-mode
          (off org-link-minor-mode))

@@ -31,12 +31,15 @@
                 "\n")))
              ""))
 
+;; o:https://emacs.stackexchange.com/questions/5529/how-to-right-align-some-items-in-the-modeline
+
 (setq-default mode-line-format
               `(" "
                 ,(pen-modeline-name)
                 ("  "
                  mode-line-buffer-identification "   "
                  "  " mode-line-modes)
+                ("  " display-time-string)
                 ;; ,(pen-workers-modeline)
                 ;; "  kb:"
                 ;; I don't know why this doesn't show

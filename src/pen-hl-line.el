@@ -41,11 +41,18 @@
                  pt
                bol-pt))
            (line-beginning-position 2)))
+         
          ;; (((lambda () (equal (face-at-point) 'sx-question-mode-content-face)))
          ;;  ;; Basically, do nothing
          ;;  (cons (line-beginning-position)
          ;;        (line-beginning-position)
          ;;        ))
+
+         ((major-mode-p 'ses-mode)
+          ;; Line highlight still appears over line numbering, which is good
+          (cons (line-beginning-position)
+                (line-beginning-position)))
+         
          (t
           (cons (line-beginning-position)
                 (line-beginning-position 2))))))))

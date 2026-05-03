@@ -791,13 +791,16 @@ otherwise the whole string is unquoted."
 ;; This function breaks when at the top level of a sexp
 (define-key lispy-mode-map (kbd "M-t") 'paredit-forward-slurp-sexp)
 (advice-add 'paredit-forward-slurp-sexp :around #'ignore-errors-around-advice)
-(define-key global-map (kbd "C-M-f") #'forward-sexp-start)
+
+;; (define-key global-map (kbd "C-M-f") #'forward-sexp-start)
+
 (define-key lispy-mode-map (kbd "M-0") #'pen-lispy-goto-start)
 (define-key lispy-mode-map (kbd "M-W") #'pen-lispy-mark-symbol)
 (define-key lispy-mode-map (kbd "M-j") #'lispy-mark-symbol)
 (define-key lispy-mode-map (kbd "M-A") #'pen-lispy-mark-car)
 (define-key lispy-mode-map (kbd "M-F") nil)
-(define-key lispy-mode-map (kbd "C-M-a") #'special-lispy-beginning-of-defun-noevil)
+;; (define-key lispy-mode-map (kbd "C-M-a") #'special-lispy-beginning-of-defun-noevil)
+(define-key lispy-mode-map (kbd "<again>") #'special-lispy-beginning-of-defun-noevil)
 (define-key lispy-mode-map (kbd "C-M-i") 'pen-lispy-format-or-company)
 (define-key lispy-mode-map (kbd "M-h") 'pen-lispy-select-parent-sexp)
 (define-key lispy-mode-map (kbd "\"") nil)

@@ -2297,10 +2297,25 @@ This function accepts any number of ARGUMENTS, but ignores them."
   "Converts to string and concatenates."
   (mapconcat 'str body ""))
 
+(defun pen-ses-get-buffer-visual-representation ()
+  (interactive)
+  ;; TODO
+  ;; Don't use the header string
+  ;; Also, don't use the buffer-string
+  ;; Convert to CSV and then reconstruct the heading
+  
+  (etv
+   (s-join "\n"
+           (list
+            (let ((header-line-indent-width 0)
+                  (header-line-indent ""))
+              (s-trim-left  (ses-create-header-string)))
+            (buffer-string)))))
+
 (defun pen-tmux-edit (&optional editor window_type)
   "Simple function that allows us to open the underlying file of a buffer in an external program."
 
-   (interactive (list "pen-v" "spv"))
+  (interactive (list "pen-v" "spv"))
   (if (not editor)
       (setq editor "pen-v"))
 
@@ -2327,7 +2342,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
             ;; (sleep-for 0.5)
             )
         (if (and buffer-file-name
-                 (not (string-match "\\[*Org Src" (buffer-name))))
+                 (not (string-match "\\[*Org Src" (buffer-name)))
+                 (not (major-mode-p 'ses-mode)))
             (progn
               (save-buffer)
               (let ((c
@@ -2337,7 +2353,8 @@ This function accepts any number of ARGUMENTS, but ignores them."
                  (cond
                   ((or
                     (not (buffer-file-path))
-                    (string-match "\.~" (buffer-name)))
+                    (string-match "\.~" (buffer-name))
+                    )
                    (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
                   ((string-match "\\[*Org Src" (buffer-name))
                    (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))

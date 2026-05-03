@@ -112,4 +112,11 @@
 (advice-add 'iedit--quit :around #'around-advice-preserve-clipboard)
 ;; (advice-remove 'iedit--quit #'around-advice-preserve-clipboard)
 
+;; TODO Fix the problem with iedit-toggle-selection.
+;; Although I'm unsure what iedit-toggle-selection is useful for.
+(advice-add 'iedit-toggle-selection :around #'ignore-errors-around-advice)
+
+;; (define-key iedit-mode-keymap (kbd "M-;") 'iedit-toggle-selection)
+(define-key iedit-mode-keymap (kbd "M-;") nil)
+
 (provide 'pen-iedit)

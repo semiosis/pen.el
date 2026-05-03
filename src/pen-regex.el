@@ -91,19 +91,21 @@
        res)))
 
 (defun pen-regex-at-point-p (re &optional literal)
-  (if literal
-      (setq re (regexp-quote re)))
+  (if (sor re)
+      (progn
+        (if literal
+            (setq re (regexp-quote re)))
 
-  (let ((found)
-        (sel))
-    (save-excursion-and-region-reliably
-     (pen-select-regex-at-point re)
-     (setq sel (pen-selection))
-     (let ((m (mark)))
-       (goto-char m)
-       (setq found (looking-at-p re))))
-    (if found
-        sel)))
+        (let ((found)
+              (sel))
+          (save-excursion-and-region-reliably
+           (pen-select-regex-at-point re)
+           (setq sel (pen-selection))
+           (let ((m (mark)))
+             (goto-char m)
+             (setq found (looking-at-p re))))
+          (if found
+              sel)))))
 (defalias 'regex-at-point 'pen-regex-at-point-p)
 
 (defmacro pen-re-sensitive (&rest body)

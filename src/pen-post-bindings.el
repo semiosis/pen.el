@@ -37,6 +37,7 @@
 (sslk "lao" #'e-notes-on-sermons)
 ;; (sslk "lam" #'tzc-world-clock)
 (sslk "lam" #'man)
+(sslk "laM" #'list-environment)
 (sslk "law" #'aws-instances)
 ;; (sslk "lak" #'kubernetes-overview)
 
@@ -283,6 +284,10 @@
 (sslk "ljh" 'cheat-sh)
 (sslk "l." 'pen-kill-buffer-immediately)
 (sslk "lfP" 'fi-text-to-paras-nosegregate)
+
+(define-key global-map (kbd "<menu>") nil)
+(define-key global-map (kbd "<menu> c") 'context-functions)
+(define-key global-map (kbd "<menu> r") 'right-click-context-menu)
 
 ;; Overrides and things that sslk doesnt support
 (define-key global-map (kbd "M-l C-s") #'pen-swipe)
