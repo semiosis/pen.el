@@ -289,6 +289,17 @@
 (define-key global-map (kbd "<menu> c") 'context-functions)
 (define-key global-map (kbd "<menu> r") 'right-click-context-menu)
 
+;; C-M-a
+(define-key global-map (kbd "<find>") nil)
+(define-key global-map (kbd "<find> <find>") 'pen-swipe)
+(define-key global-map (kbd "<find> s") 'search-forward)
+(define-key global-map (kbd "<find> k") 'pen-avy-goto-char)
+(define-key global-map (kbd "<find> a") 'pen-counsel-ag)
+(define-key global-map (kbd "<find> h") 'pen-helm-find-files)
+(define-key global-map (kbd "<find> f") 'pen-find-file)
+(define-key global-map (kbd "<find> r") 'search-forward-regexp)
+(define-key global-map (kbd "<find> i") 'isearch-forward)
+
 ;; Overrides and things that sslk doesnt support
 (define-key global-map (kbd "M-l C-s") #'pen-swipe)
 

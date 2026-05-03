@@ -155,7 +155,7 @@ With optional second arg NO-REVERT, don't refresh the listing afterwards."
 
 (defalias 'dired-filter 'dired-narrow)
 
-(defun my-ranger ()
+(defun pen-ranger ()
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (call-interactively 'pen-sps-ranger)

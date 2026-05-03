@@ -1,5 +1,4 @@
-(define-key key-translation-map (kbd "<insertchar>") (kbd "C-M-i"))
-(define-key key-translation-map (kbd "C-M-i") nil)
+(define-key global-map (kbd "C-M-d") nil)
 
 ;; swap M-` and M-~
 ;; So I can execute commands using M-` and bring up the menu bar ith M-~
@@ -23,7 +22,14 @@
 
 ;; Make GUI emacs more like TUI emacs
 (define-key key-translation-map (kbd "C-M-SPC") (kbd "C-M-@"))
-(define-key key-translation-map (kbd "<insertchar>") (kbd "C-M-i")) ;M-TAB
+;; The Insert key produces <insertchar>. This is translating it to a chord
+;; (define-key key-translation-map (kbd "<insertchar>") nil)
+;; M-TAB and M-C-i produce <insertchar> without any modifications.
+;; Therefore, change it to C-M-i so that the GUI functions similarly.
+(define-key key-translation-map (kbd "<insertchar>") (kbd "C-M-i"))
+(define-key key-translation-map (kbd "C-M-i") nil)
+;; What should super-TAB do?
+(define-key key-translation-map (kbd "s-TAB") nil)
 
 ;; Do this so that the bindings work everywhere, including helm etc.
 (define-key key-translation-map (kbd "C-M-k") (kbd "<up>"))
@@ -33,26 +39,55 @@
 
 ;; [[sps:v +/"(define-key global-map \[execute\]	'execute-extended-command)" "/usr/local/share/emacs/29.4.50/lisp/bindings.el.gz"]]
 ;; [[sps:v +/"\"find\"," "$MYGIT/emacs/src/keyboard.c"]]
+
+;; I think I should normally select from terminfo function keys,
+;; rather than other keys such as media keys,
+;; unless I'm just going to use the translation-map, such as with <again>.
+;; [[sps:v +/"fkey_table" "$MYGIT/emacs/src/term.c"]]
+;; Or perhaps I can recompile term.c
+;; [[sps:v +/"{\"@6\", \"create\"},  /\* man:terminfo \*/" "$MYGIT/emacs/src/term.c"]]
+
+;; I should actually assign <menu> a terminfo binding because it's a proper
+;; terminfo fkey.
+
 (define-key key-translation-map (kbd "C-M-q") (kbd "<menu>"))
 (define-key key-translation-map (kbd "C-M-a") (kbd "<again>"))
 ;; <LFD> is C-j, so don't use C-M-f
 
-;; [[sh:tic /root/.emacs.d/host/pen.el/config/xterm-256color.ti]]
-;; [[v:/root/.emacs.d/host/pen.el/config/xterm-256color.ti]]
+;; [[sps:zrepl tic /root/.emacs.d/host/pen.el/config/xterm-256color.ti]]
+;; [[sps:zrepl v /root/.emacs.d/host/pen.el/config/xterm-256color.ti]]
 
-;; [[sh:tic /root/.emacs.d/host/pen.el/config/screen-256color.ti]]
-;; [[v:/root/.emacs.d/host/pen.el/config/screen-256color.ti]]
+;; [[sps:zrepl tic /root/.emacs.d/host/pen.el/config/screen-256color.ti]]
+;; [[sps:zrepl v /root/.emacs.d/host/pen.el/config/screen-256color.ti]]
 
-;; [[sh:tic /root/.emacs.d/host/pen.el/config/xterm-24bit.ti]]
-;; [[v:/root/.emacs.d/host/pen.el/config/xterm-24bit.ti]]
+;; [[sps:zrepl tic /root/.emacs.d/host/pen.el/config/xterm-24bit.ti]]
+;; [[sps:zrepl v /root/.emacs.d/host/pen.el/config/xterm-24bit.ti]]
 
 ;; https://www.ibm.com/docs/en/zos/3.1.0?topic=syntax-defined-capabilities
 ;; [[sps:nem man terminfo | grep key_]]
+
+;; Test:
+;; [[sps:TERM=screen-256color tput khlp|cat -v|v]]
+;; [[sps:TERM=screen-256color tput kcrt|cat -v|v]]
+
+;; S-TAB (shift-TAB) is <backtab>.
+
+;; I might have to actually connect kcrt to <new> in the emacs .c source.
+
+;; DONE:
+;; - key_create (need to extend term.c)
+;;   - DONE Recompile emacs adding <create>. It now exists.
+;;   - Translate <new> (a multimedia key) into <create>, so that keyboards with a New key will use <create>
+;;   - DISCARD Bind this to emacs' <new> key and bind that in emacs to C-M-_ which is C-M-/ on the real keyboard
+;;   - kcrt=\E[101~
+;;     - Hmmm.
+
+;; TODO:
 ;; There are some interesting terminfo caps I might use such as:
-;; - key_create
-;;   - Bind this to emacs' <new> key and bind that in emacs to C-M-i
+;; - key_move
+;;   - Bind this to emacs' <convert> key C-M-d (tmux currently has this bound)
 ;; - key_reference
-;;   - Bind this to emacs' <> key C-M-v (tmux currently has this bound)
+;;   - Bind this to emacs' <convert> key C-M-v (tmux currently has this bound)
 ;; - key_options
 ;;   - Bind this to emacs' <menu> key C-M-q
 ;; - key_open
@@ -61,7 +96,7 @@
 ;;   - Bind this to emacs' <C-SPC> key C-@
 ;; - key_message
 ;;   - Bind this to emacs' <attn> key 
-;; - key_redo
+;; - key_redo (exists in term.c)
 ;;   - Bind this to emacs' <again> key C-M-a
 ;; - key_select
 ;;   - Bind this to emacs' <jump> key C-M-r (tmux currently has this bound)
@@ -72,6 +107,8 @@
 ;;   - It needs a reasonable escape sequence
 ;;   - key_kprt=\E[7~, is reasonable to me
 ;;   - OK, I have it working. Now what do I use it for?
+;;   - DISCARD Maybe key_kprt=\E[0prt~ would have been better, so I can just add more and more under \E[0. Sadly emacs didn't like this alphanumeric code.
+;;     - Rather, do something like \E[101~ and upwards for custom keys.
 
 ;; invent some keys?
 ;; - key_cancel (or key_replace,key_beg,key_restart,key_resume?)
@@ -82,13 +119,18 @@
 
 ;; [[sps:infocmp -L1 | v +/help]]
 ;; (define-key key-translation-map (kbd "C-M-f") (kbd "<LFD>"))
-(define-key key-translation-map (kbd "C-M-f") (kbd "<find>"))
-
 ;; I'd like to add key_find to the infocmp database,
 ;; and use C-M-f as the escape sequence.
 ;; However, I don't think infocmp uses control characters in the ansi codes.
 ;; Well, actually, control characters are sometimes used.
 ;; bell=^G, enter_alt_charset_mode=^N, key_help=\E^],
+
+;; Emacs actually supports terminfo <find>, so could be bound from tmux.
+;; As in, could bind in tmux C-M-f to send-keys -H "tput find"
+;; rather than or in addition to using the key-translation-map here.
+;; Then one day, I could program a mechanical keyboard to have a Find key.
+;; [[sps:v +/"{\"@0\", \"find\"},	/\* terminfo \*/" "$MYGIT/emacs/src/term.c"]]
+(define-key key-translation-map (kbd "C-M-f") (kbd "<find>"))
 
 ;; key_find would look like this:
 ;; key_find=\E^F,
@@ -117,6 +159,13 @@
 ;; [[sps:cat-all-terminfo | grep key_ | sort | uniq | pavs]]
 ;; This is the actual key_help ansi code
 (define-key key-translation-map (kbd "C-M-]") (kbd "<help>"))
+
+;; So that it works outside of tmux
+(define-key key-translation-map (kbd "C-M-_") (kbd "<create>"))
+;; So that it works in the GUI
+(define-key key-translation-map (kbd "C-M-/") (kbd "<create>"))
+;; So that it works with keyboards that have a New key (for multimedia)
+(define-key key-translation-map (kbd "<new>") (kbd "<create>"))
 
 ;; It's still possible to define custom terminfo entries
 

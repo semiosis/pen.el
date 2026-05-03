@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+n_digits="$1"
+
+# newline
+IFS="
+"
+awk1 | while IFS="$IFS" read -r line; do
+    (
+    exec 0</dev/null
+    printf "%0${n_digits}d\n" "$line"
+    )
+done
