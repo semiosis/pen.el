@@ -15806,3 +15806,62 @@ The foundation being Jesus Christ is not exclusive of doing what Jesus says (i.e
   *[[https://www.biblegateway.com/passage/?search=1%20Corinthians%203%3A7-15&version=ESV][I Corinthians 3:7-15]]* - So neither he who plants nor he who waters is anything, but only God who gives the growth. He who plants and he who waters are one, and each will receive his wages according to his labor. For we are God's fellow workers. You are God's field, God's building. *According to the grace of God given to me, like a skilled master builder I laid a foundation*, and someone else is building upon it. Let each one take care how he builds upon it. For no one can lay a foundation other than that which is laid, which is Jesus Christ. Now if anyone builds on the foundation with gold, silver, precious stones, wood, hay, straw— each one's work will become manifest, for the Day will disclose it, because it will be revealed by fire, and the fire will test what sort of work each one has done. If the work that anyone has built on the foundation survives, he will receive a reward. If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
 #+END_QUOTE
 
+** Journal <2026-05-12 Tue 22:33>
+
+Copyright and patents are very different things.
+A completed product that may have millions of parts may be copyrighted as it is sent out as a product.
+An idea of a machine comprised of a few specified components may be patented without even a finished prduct and that patent might last for decades.
+
+Let's say someone patented the simple idea of a hand rail for a staircase as staircases were coming to mass usage, and it's only natural to have a hand rail,
+but now no-one is allowed to make knobs at the end of staircase handrails because it involves making a handrail.
+Handrails and knobs at the end of the handrails are very natural progressions.
+
+So it's absurd to patent the handrail.
+
+In reality, two people can independently come up with an invention.
+
++ [[https://www.oxfordscholastica.com/blog/technology-articles/newton-and-leibniz-the-fathers-of-calculus/][oxfordscholastica.com:  Newton and Leibniz : The Fathers of Calculus | Oxford Scholastica]] :: Calculus is commonly accepted to have been created twice, independently, by two of the seventeenth century’s brightest minds: Sir Isaac Newton
+   of gravitational fame, and the philosopher and mathematician Gottfried Leibniz. The consensus has not always been so peaceful, however: the late
+   1600s saw fierce debate between the two thinkers, with each claiming the other had stolen his work.
+
+Patents in theory help a fledgling small business to succeed, but software patents actually do far more harm than good now.
+There was a time when it was more useful and fair, but it doesn't make much sense.
+Besides software these days can be hidden behind APIs, and that is a more reasonable form of protection than patents.
+Software patents no longer make any sense.
+
+The patent system has been perverted to oppress people and prevent them from thinking and building and doing what is natural with our brains.
+Language models do for software something similar to what invention of imaginary/complex numbers did for algebra.
+Applied to other forms of media, the technology extends what can be done with existing media.
+But new technology isn't licence to boycot the original intention of the protections of the copyright licences on the data,
+but rather the licenses should also be protecting the data from being captured by AI models from Big Tech prospectors who prey on vulnerable people
+to gobble up their data, somehow believing that having this technology is gives them licence now to steal (because it's transformative technology).
+That's as deluded as it would be to think that inventing a gun gives a person licence now to murder with a gun (because it's transformative technology).
+
+Patents:
+
+- [[https://www.youtube.com/shorts/IG3bj8pnspo][youtube.com:  Patents {@ ThePrimeTimeagen }]]
+
++ [[https://youtube.com/watch?v=aiKRt3-FbM0&t=175][youtube.com:  The Danger of Software Patents - Richard Stallman {@ techperspectives } @time: 2 min 55 sec]] :: A patent is a government-issued monopoly on using a certain technique or making a certain kind of thing. 
+
+So now there are AI systems owned by large corporationos gobbling up entire finished products, circumventing their copyright licences.
+It's just more exploitation.
+
+Young people should not be bound by the straitjacket of software patents when it
+comes to imagining designs in their mind having to constantly check to see if anyone has invented them yet.
+
+In the early days of computing, at Darmouth university, it seemed to be a *natural* progression to invite students from other departments to learn the BASIC programming language.
+And there were many variants of BASIC. Imagine if the BASIC language was patented.
+
+- [[https://youtube.com/watch?v=WYPNjSoDrqw][youtube.com:  Birth of BASIC {@ dartmouth }]]
+- https://en.wikipedia.org/wiki/List_of_BASIC_dialects
+
+I remember when I was in High School I would actually just spend a fair bit of time outside thinking about things I would like to program
+and actually have fun putting them together.
+
+These days, young people face a dystopian employment landscape where it's expected to be automated out of jobs.
+And if a person makes something and puts it online, then some AI crawler might come along and gobble it up and then all of a sudden someone else out
+there is a robot replicating the style or functionality of your work.
+
+Disgusting stuff, really:
+- https://malus.sh/
+- https://news.ycombinator.com/item?id=47350424
