@@ -15825,8 +15825,10 @@ In reality, two people can independently come up with an invention.
    1600s saw fierce debate between the two thinkers, with each claiming the other had stolen his work.
 
 Patents in theory help a fledgling small business to succeed, but software patents actually do far more harm than good now.
-There was a time when it was more useful and fair, but it doesn't make much sense.
-Besides software these days can be hidden behind APIs, and that is a more reasonable form of protection than patents.
+There was a time when it was more useful and fair, but it doesn't make much sense anymore because the programming is about as command as writing and algebra.
+It wouldn't make sense "patent long division". Neither does it make sense to patent incremental steps in programming now that programming has matured to the point at which it's a basic skill that might be taught in high school.
+
+Besides, software these days can be hidden behind APIs, and that is a more reasonable alternative form of protection than patents.
 Software patents no longer make any sense.
 
 The patent system has been perverted to oppress people and prevent them from thinking and building and doing what is natural with our brains.
@@ -15859,6 +15861,57 @@ And there were many variants of BASIC. Imagine if the BASIC language was patente
 
 I remember when I was in High School I would actually just spend a fair bit of time outside thinking about things I would like to program
 and actually have fun putting them together.
+
++ [[https://www.youtube.com/watch?v=yMzHGzLyqgE][youtube.com: {@ HouseofEl - AI }]] :: This is more resistance to a specific
+    power structure being built with
+    technology.
+    
+    Start with the sentiment data because
+    it's honestly remarkable. Over the past
+    year, excitement about AI among Gen Z
+    dropped 14 percentage points to just
+    22%. Hopefulness fell nine points to
+    18%. Anger increased 9 points to 31%. But
+    here's what makes this wild. Even daily
+    AI users, which would be people who use
+    these tools every single day, saw their
+    excitement drop 18 points and
+    hopefulness drop 11 points over the same
+    period. Just think about that. The more
+    they use it, the less hopeful they
+    become. So, it's not just unfamiliarity
+    breeding fear. It sounds more like
+    familiarity breeding understanding.
+    Meanwhile, at universities, you're
+    seeing open rebellion. The University of
+    Pennsylvania student newspaper published
+    an editorial titled Penn has an AI
+    problem that opened with, I'm quoting,
+    AI cannot coexist with education. It can
+    only degrade it. As technology advances
+    and workers are replaced by machines,
+    schools are some of the only places we
+    have left to explore and wrestle with
+    human thought.
+    
+    This is basically the first Ivy League school to launch an AI
+    major. They're at the epicenter of AI
+    adoption and higher education. Penn now
+    offers 10 undergraduate programs, 21
+    graduate programs, and eight doctoral
+    programs in AI. And their own students
+    are writing that AI is degrading
+    education. 83% of Penn undergraduates
+    admit to using AI in academic settings,
+    which means they're not writing from
+    ignorance. They're writing from direct
+    experience with what happens when you
+    can outsource thinking to a chatbot. So
+    on one side, you have executives pushing
+    AI adoptions as fast as possible. And on
+    the other side, you have the people
+    actually being told to use it, saying
+    this is making things worse.
 
 These days, young people face a dystopian employment landscape where it's expected to be automated out of jobs.
 And if a person makes something and puts it online, then some AI crawler might come along and gobble it up and then all of a sudden someone else out
