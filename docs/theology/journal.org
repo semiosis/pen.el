@@ -15833,8 +15833,11 @@ It's bizarre that humans would be stymied from developing useful skills and busi
 It's parasitic.
 
 Besides those reasons for abolishing software patents,
-software these days can be hidden behind APIs, and that is a more reasonable alternative form of protection for software mechanisms than patents.
+software these days can be hidden behind APIs, and that is a more reasonable alternative form of protection for software mechanisms than patents,
+similar to how, say, the secret recipes of the 11 Herbs and Spices and of Coca-Cola are guarded secrets.
+
 Software patents no longer make any sense.
+It would be like patenting a particular arrangement of flowers such that nobody is allowed to make gardens with that arrangement of flowers.
 
 The patent system has been perverted to oppress people and prevent them from thinking and building and doing what is natural with our brains.
 Language models do for software something similar to what invention of imaginary/complex numbers did for algebra.
