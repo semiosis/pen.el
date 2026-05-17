@@ -16369,13 +16369,83 @@ See how here, Paul says that we should *test ourselves* to see if we are in the 
       - =Works ≟ Faith - Justification=
     #+END_QUOTE
 
-    But I know that it's faith in Jesus Christ in our heart that is what justifies us (=Justification ≟ Faith=).
-    And so under this formula where faith incorportes works (=Faith ≟ Justification + Works=), justification by faith alone (apart from works) is not the only way
-    to be justified when I bring that back to the fact that it's by faith in Jesus
-    Christ that we are justified. According to this formula justification is not only by faith alone (apart from works) but also by faith together works.
+    I know that it's faith in Jesus Christ in our heart that is what justifies us (=Justification ∵ (because) Faith=):
 
-    While I don't think that is necessarily incorrect, as Abraham was also justified by works of faith, some people might take
-    this the wrong way because it's "incorporating the external actions of deeds" into the very definition of faith.
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Romans%2010%3A10&version=ESV][Romans 10:10]]* - For with the heart one believes and is justified, and with the mouth one confesses and is saved. (ESV)
+    #+END_QUOTE
+
+    And it's apart from [[strongs:G5565][(G5565 chōris)]] the works of the law that we are justified. Faith is counted distinctly from any corresponding external actions:
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Romans%203%3A28&version=ESV][Romans 3:28]]* - For we hold that one is justified by faith apart from works [[strongs:G2041][(G2041 ergōn; works)]] of the law [[strongs:G3551][(G3551 nomou; of the Law)]]. (ESV)
+    #+END_QUOTE
+
+    Deeds are external actions done either out of love for light or for darkness, either out of faith in the truth or out of faith in darkness:
+    - =Deed = Faith + ExternalActions=
+
+    The word [[strongs:G5565][chōris]] doesn't mean non-existing. Rather, it means "not taken into account", or "distinct from":
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Matthew%2014%3A21&version=ESV][Matthew 14:21]]* - And those who ate were about five thousand men, besides [[strongs:G5565][(G5565 chōris)]] women and children. (ESV)
+    #+END_QUOTE
+
+    The Hebrew word for Adam can mean either just Adam the man, or it can mean both Adam and Eve.
+    It would be OK to say Adam apart from [[strongs:G5565][(G5565 chōris)]] Eve, or Eve apart from Adam.
+
+    Man and woman, husband and wife are a single unit called Adam:
+    
+    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+           1254              3117           120     8034        853
+      s    hib·bā·rə·’ām.    bə·yō·wm       ’ā·ḏām, šə·mām      ’eṯ-
+      ס    הִבָּֽרְאָֽם׃            בְּי֖וֹם           אָדָ֔ם     שְׁמָם֙         אֶת־
+       -   they were created in the day     man     them         -
+      Punc V‑Nifal‑Inf | 3mp Prep‑b | N‑msc N‑ms    N‑msc | 3mp DirObjM
+    
+      7121                            853           1288
+      way·yiq·rā                      ’ō·ṯām,       way·ḇā·reḵ
+      וַיִּקְרָ֤א                           אֹתָ֗ם           וַיְבָ֣רֶךְ
+      and called                      them          and He blessed
+      Conj‑w | V‑Qal‑ConsecImperf‑3ms DirObjM | 3mp Conj‑w | V‑Piel‑ConsecImperf‑3ms
+    
+      1254                 5347          2145
+      bə·rā·’ām;           ū·nə·qê·ḇāh   zā·ḵār
+      בְּרָאָ֑ם                 וּנְקֵבָ֖ה         זָכָ֥ר
+      He created them      and female    male
+      V‑Qal‑Perf‑3ms | 3mp Conj‑w | N‑fs N‑ms
+    #+END_SRC
+
+    It would also be OK to say deeds [[strongs:G2041][(G2041 ergōn; works)]] apart from [[strongs:G5565][(G5565 chōris)]] faith.
+    Deeds apart from faith would be the external actions.
+
+    For example, giving a cookie to someone is an external action.
+    But was it done in faith or not?
+
+    It's OK to say faith apart from [[strongs:G5565][(G5565 chōris)]] works also. But I do believe that when God judges on "deeds/works" ([[strongs:G2041][(G2041 ergōn; works)]]), He looks at the faith:
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=John%203%3A19&version=ESV][John 3:19]]* - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+    #+END_QUOTE
+
+    The formula that Spoul has given is meant to convey 2 things:
+    - justification is by faith alone (apart from works)
+    - a person who has the faith will also have works
+
+    Sadly, I don't think the formula is able to do that accurately because it's "incorporating the external actions of deeds" into the very definition of faith of what faith is.
+
+    We are justified by the faith apart from ([[strongs:G5565][(G5565 chōris)]]) works of the law. The use of the word [[strongs:G5565][(G5565 chōris)]] means that it's the faith rather than any existing works that justifies. So the faith could certainly have associated works, but it's the faith one is justified by rather than the external actions:
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Romans%203%3A28&version=ESV][Romans 3:28]]* - For we hold that one is justified by faith apart from works [[strongs:G2041][(G2041 ergōn; works)]] of the law [[strongs:G3551][(G3551 nomou; of the Law)]]. (ESV)
+    #+END_QUOTE
+
+    The word [[strongs:G5565][(G5565 chōris)]] is used to not show that Jesus doesn't exist, but that separate from Him, we cannot bear fruit. Just as how, even if separate from Jesus, Jesus would still exist, so too even if faith is counted separate from the works, the works still [may] exist:
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=John%2015%3A4-7&version=ESV][John 15:4-7]]* - Remain in Me, and I will remain in you. Just as no branch can bear fruit by itself unless it remains in the vine, neither can you bear fruit unless you remain in Me. I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing. If anyone does not remain in Me, he is like a branch that is thrown away and withers. Such branches are gathered up, thrown into the fire, and burned. If you remain in Me and My words remain in you, ask whatever you wish, and it will be done for you. (engbsb2020eb)
+    #+END_QUOTE
+
+    A think that a person can be justified by deeds, as Abraham was also justified by works of faith, but the basis for this justification is the faith (Abraham was seen to have the fear of God).
 
     When "the footsteps of faith" are mentioned in *[[https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV][Romans 4:9-12]]*, it does not specifically describe particular external actions to do.
 
