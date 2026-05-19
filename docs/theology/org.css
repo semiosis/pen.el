@@ -979,6 +979,8 @@ body
   line-height: 1.4em;
   font-family: Georgia,serif;
   color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @media screen and (min-width:600px)
@@ -1343,6 +1345,17 @@ kbd
 {
   font-size: 90%;
   margin: .2em;
+}
+
+p + p
+{
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+ul
+{
+    margin-bottom:0.5em;
 }
 
 p.verse
@@ -1747,6 +1760,7 @@ p.verse
 .linenr
 {
   font-size: 90%;
+  opacity: 50%;
 }
 
 .code-highlighted
