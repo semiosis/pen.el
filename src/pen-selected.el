@@ -121,8 +121,13 @@
   (set-marker m2 nil))
 
 (defun selected--on ()
-  (if (not (or (bound-and-true-p lispy-mode)
-               (pen-evil-enabled)))
+  ;; OK, so why is it completely disabled for lispy-mode?
+  ;; What was the original reason for this?
+  ;; Well, because bindings such as 'j' for navigating sexps now do something else.
+  ;; So how can I fix this?
+  (if (not (or ;; (false (bound-and-true-p lispy-mode))
+            (bound-and-true-p lispy-mode)
+            (pen-evil-enabled)))
       (selected-region-active-mode 1)))
 
 ;; (define-key selected-keymap (kbd "M-3") #'pen-grep-for-thing-select)

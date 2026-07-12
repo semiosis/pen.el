@@ -716,6 +716,14 @@ is specified, `:italic' is ignored."
     ;; (face-all-attributes 'markdown-header-face)
     ;; (face-all-attributes 'markdown-header-face-1)
 
+    (require 'sx-question-print)
+    (set-face-background 'sx-question-mode-content-face nil)
+    (set-face-background 'sx-question-mode-header nil)
+    (set-face-foreground 'sx-question-mode-title "#cccccc")
+    (set-face-background 'sx-question-mode-title "#222222")
+    (set-face-foreground 'sx-question-mode-title-comments "#ffff99")
+    (set-face-background 'sx-question-mode-title-comments nil)
+    
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
     (set-face-foreground 'lsp-headerline-breadcrumb-path-error-face "#662222")

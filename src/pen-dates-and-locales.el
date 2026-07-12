@@ -132,4 +132,31 @@
   "Base 1. 1 is the first week, not 0."
   (+ 1 (eval-string (e/date "%U"))))
 
+
+(defun sort-dates (format dates)
+  (pen-snc
+   (cmd "visidata-sort-dates" "-d" format)
+   (list2str dates)))
+
+(defun sort-dates-ex1 ()
+  (str2lines
+   (sort-dates
+    "%B %d"
+    (str2lines
+     (pen-snc (multicmd
+               (cmd "date" "+%B %d" "--date=2 days ago")
+               (cmd "date" "+%B %d")
+               (cmd "date" "+%B %d" "--date=5 days ago")
+               (cmd "date" "+%B %d" "--date=1 day ago")))))))
+
+(defun sort-dates-ex2 ()
+  (str2lines
+   (sort-dates
+    "%B %d"
+    '("June 12" "June 14" "June 09" "June 13"))))
+
+;; It would now be nice to have something that detects date format
+;; Use R because I suspect that it looks at multiple dates in a column in order to detect accurately
+;; https://search.r-project.org/CRAN/refmans/cleanepi/html/date_get_format.html
+
 (provide 'pen-dates-and-locales)

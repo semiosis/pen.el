@@ -93,6 +93,17 @@
         (helm-wikipedia-suggest initial-input)
       (call-interactively 'helm-wikipedia-suggest))))
 
+(defun wiki-wordnet-word (&optional input_word)
+  (interactive (list (pen-word-at-point)))
+
+  (let ((word (fz
+
+               ;; Faster
+               (snc "ocif list-words | shuf")
+               input_word nil "Wiki wordnet word: ")))
+        
+    (helm-wikipedia-suggest word)))
+
 (defun helm-wikipedia-suggest (&optional initial-input)
   "Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest."
   (interactive)

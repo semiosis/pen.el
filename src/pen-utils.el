@@ -261,6 +261,11 @@ buffer."
                      (mapcar 'str2sym (s-split "[\\.·]" (sym2str fcomposition)))))))
     `(--> ,arg ,@fs)))
 
+(defmacro passthrough (fcomposition arg)
+  ""
+  arg)
+
+(defalias ':: 'passthrough)
 (defalias ': 'dot)
 (defalias '! 'dotr)
 ;; Sadly, this doesn't work
@@ -271,5 +276,8 @@ buffer."
  (! pps.message "yo"))
 
 ;; (apply '+ '(5 5))
+
+(defun view-hashtable (hash-table)
+  (: tv-pps.hash-table-values hash-table))
 
 (provide 'pen-utils)

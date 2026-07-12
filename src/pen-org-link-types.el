@@ -244,6 +244,8 @@ PATH is the sexp to evaluate, as a string."
   (nw cmd))
 
 (org-add-link-type "sh" 'follow-sh-link)
+(org-add-link-type "sn" 'follow-sh-link)
+(org-add-link-type "snc" 'follow-sh-link)
 (defun follow-sh-link (cmd)
   "sh:feh:$DUMP$HOME/notes/ws/screenshots/file_1668131537_screen_xNXjJJ_rand-20272_pid-733616.png "
   (pen-sn (pen-cl-sn "sed 's/^\\([a-z]\\+\\):/\\1 /'" :stdin cmd :chomp t) nil nil nil t))
@@ -413,6 +415,11 @@ PATH is the sexp to evaluate, as a string."
 (defun pen-follow-vs-link (pattern)
   "Run v `pattern'."
   (pen-sps (concat "vs " (pen-q pattern))))
+
+(org-add-link-type "eshell" 'pen-follow-eshell-link)
+(defun pen-follow-eshell-link (pattern)
+  "Run `pattern' in eshell."
+  (eshell-run-command pattern))
 
 ;; (org-add-link-type "wiki-summary" 'pen-follow-wiki-summary-link)
 ;; (defun pen-follow-wiki-summary-link (pattern)

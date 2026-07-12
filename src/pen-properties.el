@@ -9,6 +9,10 @@
   t)
 (defalias 'always-true 'true)
 
+(defun false (&rest args)
+  nil)
+(defalias 'always-false 'false)
+
 (defun true-p (e)
   (if e t))
 

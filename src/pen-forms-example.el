@@ -18,23 +18,35 @@
     (erase-buffer))
   (remove-overlays)
   (widget-insert "Here is some documentation.\n\n")
-  (widget-create 'editable-field
-                 :size 13
-                 :format "Name: %v "    ; Text after the field!
-                 "My Name")
-  (widget-create 'menu-choice
-                 :tag "Choose"
-                 :value "This"
-                 :help-echo "Choose me, please!"
-                 :notify (lambda (widget &rest ignore)
-                           (message "%s is a good choice!"
-                                    (widget-value widget)))
-                 '(item :tag "This option" :value "This")
-                 '(choice-item "That option")
-                 '(editable-field :menu-tag "No option" "Thus option"))
-  (widget-create 'editable-field
-                 :format "Address: %v"
-                 "Some Place\nIn some City\nSome country.")
+
+  ;; editable-field has no default trailing newline
+  (dotimes (_n 2)
+    (widget-create 'editable-field
+                   :size 13
+                   :format "Name: %v "  ; Text after the field!
+                   "My Name"))
+
+  ;; menu-choice has a default trailing newline
+  ;; Can I change this so that it doesn't?
+  (dotimes (_n 5)
+    (widget-create 'menu-choice
+                   :tag "Choose"
+                   :value "This"
+                   :help-echo "Choose me, please!"
+                   :notify (lambda (widget &rest ignore)
+                             (message "%s is a good choice!"
+                                      (widget-value widget)))
+                   '(item :tag "This option" :value "This")
+                   '(choice-item "That option")
+                   '(editable-field :menu-tag "No option" "Thus option")))
+  
+
+  ;; multi-line editable-field has a default trailing newline
+  (dotimes (_n 2)
+    (widget-create 'editable-field
+                   :format "Address: %v"
+                   "Some Place\nIn some City\nSome country."))
+  
   (widget-insert "\nSee also ")
   (widget-create 'link
                  :notify (lambda (&rest ignore)
@@ -79,7 +91,7 @@
   (widget-create 'push-button
                  :notify (lambda (&rest ignore)
                            (if (= (length
-                                   (widget-value widget-example-repeat))
+                                   (tpop-fit-vim-string (widget-value widget-example-repeat)))
                                   3)
                                (message "Congratulation!")
                              (error "Three was the count!")))

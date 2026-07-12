@@ -61,7 +61,7 @@ SYMBOL is a string."
         (if (or (functionp resultsym)
                 (macrop resultsym))
             (setq result
-                  (str (eval `(,resultsym))))
+                  (pps (eval `(,resultsym))))
           (setq result (eval-string result)))
         (new-buffer-from-string result)))))
 

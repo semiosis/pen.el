@@ -46,6 +46,20 @@ completion details of played puzzles."
                                     )
                    choices)))))
 
+;; Don't deactivate the menu bar, etc.
+(defun crossword--select-frame ()
+  "Select the \"Crossword\" frame, possibly creating it."
+  (unless (equal (frame-parameter nil 'name) "Crossword")
+    (condition-case nil
+        (select-frame-by-name "Crossword")
+      (error (select-frame
+              (make-frame (list '(name   . "Crossword")
+                                ;; '(menu-bar-lines .  0)
+                                ;; '(tool-bar-lines .  0)
+                                ;; '(height .  43)
+                                ;; '(width  . 140)
+                                )))))))
+
 ;; (defsetface
 ;;  crossword-grid-face
 ;;  `((((class color) (background light))

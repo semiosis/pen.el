@@ -38,6 +38,8 @@
 ;; Need to unbind M-l so that global bindings work
 (define-key w3m-mode-map (kbd "M-l") nil)
 
+(define-key w3m-mode-map (kbd "M-i") nil)
+
 (defface w3m-paragraph '((t (:bold t)))
   "Face used for displaying paragraph text."
   :group 'w3m-face)
@@ -770,5 +772,162 @@ but is older than the site.
                                   (w3m-last-modified url t))
                                 (w3m-arrived-last-modified url))))
        nil nil nil nil nil nil t))))
+
+(defun w3m-download (&optional url filename _no-cache handler _post-data)
+  "Download contents of URL to a file named FILENAME.
+NO-CACHE is ignored (always download)."
+  (interactive)
+  (unless (executable-find "sh")
+    (error "Shell named \"sh\" not found"))
+  (unless url
+    (while (string-equal
+            (setq url (w3m-canonicalize-url
+                       (w3m-input-url
+                        "Download URL: "
+                        ;; Added this:
+                        (get-path nil t)
+                        (or (w3m-active-region-or-url-at-point) "")
+                        nil nil 'no-initial)))
+            "")
+      (message "A url is required")
+      (sit-for 1)))
+  (if filename
+      (when (file-exists-p filename)
+        (if (file-directory-p filename)
+            (error "File(%s) is a directory" filename)
+          (delete-file filename)))
+    (let ((basename (file-name-nondirectory (w3m-url-strip-query url)))
+          ;; Make the M-p command offer an original url string.
+          (file-name-history
+           (cons
+            (abbreviate-file-name
+             (expand-file-name
+              (if (string-match "\\`[^\n\t :]+:/+" url)
+                  (substring url (match-end 0))
+                url)
+              w3m-default-save-directory))
+            file-name-history))
+          dir)
+      (when (string-match "\\`[\t ]*\\'" basename)
+        (when (string-match "\\`[\t ]*\\'"
+                            (setq basename (file-name-nondirectory url)))
+          (setq basename "index.html")))
+      (while (not filename)
+        (setq filename (w3m-read-file-name
+                        (format "Download %s to: " url)
+                        w3m-default-save-directory nil nil basename)
+              dir (directory-file-name (file-name-directory filename)))
+        (cond ((file-exists-p filename)
+               (if (file-directory-p filename)
+                   (message "File(%s) is a directory" (prog1 filename
+                                                        (sit-for 1)
+                                                        (setq filename nil)))
+                 (if (y-or-n-p (format "File(%s) already exists. Overwrite? "
+                                       filename))
+                     (delete-file filename)
+                   (setq filename nil))))
+              ((file-exists-p dir)
+               (unless (file-directory-p dir)
+                 (if (y-or-n-p (format "File(%s) is not a directory. Delete? "
+                                       dir))
+                     (delete-file dir)
+                   (setq filename nil)))))
+        (message nil))
+      (unless (file-exists-p dir)
+        (make-directory dir t))))
+  (if (and w3m-use-ange-ftp (string-match "\\`ftp://" url))
+      (w3m-goto-ftp-url url filename)
+    (let ((args (concat (mapconcat
+                         #'(lambda (x) (replace-regexp-in-string
+                                        "\\([\t ;]\\)" "\\\\\\1" x))
+                         `(,w3m-command
+                           ,@w3m-command-arguments
+                           ,@(w3m-w3m-expand-arguments
+                              w3m-dump-head-source-command-arguments)
+                           ;; Enable w3m to download any kinds of contents.
+                           ,@(unless (eq w3m-type 'w3mmee)
+                               '("-o" "accept_media=*/*"))
+                           ,url)
+                         " ")
+                        ;; awk should be GNU awk that supports BINMODE and RT.
+                        ;; END stuff makes it sure to download an empty file.
+                        "| awk -v BINMODE=3 'BEGIN{Body=0; Line=\"\"}"
+                        "(Body==0)&&(Line!=$0){Line=$0; print $0}"
+                        "(Body==1){printf \"%s%s\",$0,RT>\"" filename "\"}"
+                        "/^$/{Body=1} END{printf \"\">>\"" filename "\"}'"))
+          (page-buffer (current-buffer))
+          temp process header status reason)
+      (w3m-process-do-with-temp-buffer
+          (success ;; t if success
+           (let ((w3m-current-buffer page-buffer)
+                 (progress (cons (setq temp (buffer-name)) "-")))
+             (prog1
+                 (setq process (w3m-process-start handler "sh"
+                                                  (list "-c" args)))
+               (with-current-buffer page-buffer
+                 (push process w3m-current-process)
+                 (setq w3m-process-modeline-string
+                       (nconc w3m-process-modeline-string
+                              (list progress))))
+               (w3m-download-timeout 60 (current-buffer) page-buffer
+                                     process url))))
+        (if (and success
+                 (file-exists-p filename)
+                 (progn
+                   (goto-char (point-min))
+                   (re-search-forward (concat "^W3m-current-url: "
+                                              (regexp-quote url) "$")
+                                      nil t))
+                 (progn
+                   (setq header (buffer-substring (point) (point-max))
+                         status (car (w3m-w3m-parse-header url header)))
+                   (and (numberp status) (>= status 200) (< status 300))))
+            (let* ((case-fold-search t)
+                   (decoder (when (string-match
+                                   "^content-encoding:[\t\n ]*\\([^\t\n ]+\\)"
+                                   header)
+                              (downcase (match-string 1 header))))
+                   tempname)
+              (w3m-cache-header url header t)
+              (and decoder
+                   (setq decoder (cdr (assoc decoder w3m-encoding-alist)))
+                   (setq decoder (cdr (assq decoder w3m-decoder-alist)))
+                   (setq tempname (concat filename (make-temp-name ".")))
+                   (if (zerop (call-process
+                               "sh" nil nil nil "-c"
+                               (concat "cat \"" filename "\"|\""
+                                       (car decoder) "\" \""
+                                       (mapconcat #'identity
+                                                  (cadr decoder) "\" \"")
+                                       "\">\"" tempname "\"")))
+                       (rename-file tempname filename t)
+                     (when (file-exists-p tempname)
+                       (delete-file tempname))))
+              (set-file-times filename (w3m-last-modified url))
+              (with-current-buffer page-buffer
+                (let ((w3m-verbose t))
+                  (w3m-message "File(%s) has been downloaded" filename))))
+          (when (file-exists-p filename) (delete-file filename))
+          (setq reason (if (numberp status)
+                           (and (let ((case-fold-search t))
+                                  (string-match
+                                   "^http[^\t\n\r ]*[\t ]*\\(.+\\)$"
+                                   header))
+                                (concat ": " (match-string 1 header)))
+                         (goto-char (point-max))
+                         (skip-chars-backward "\t\n ")
+                         (unless (bobp)
+                           (concat ":\n"
+                                   (buffer-substring (point-min) (point))))))
+          (with-current-buffer page-buffer
+            (let ((w3m-verbose t))
+              (w3m-message "File(%s) downloading failed%s"
+                           filename (or reason "")))))
+        (with-current-buffer page-buffer
+          (setq w3m-process-modeline-string
+                (delq (assoc temp w3m-process-modeline-string)
+                      w3m-process-modeline-string)
+                w3m-current-process (delq process w3m-current-process)))
+        success))))
 
 (provide 'pen-w3m)

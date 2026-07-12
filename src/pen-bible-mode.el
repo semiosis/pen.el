@@ -935,7 +935,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive)
   (xc (bible-search-mode-get-search)))
 
-(defun bible-mode-get-link (&optional text)
+(defun bible-mode-get-link (&optional text just-the-ref)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
@@ -944,7 +944,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   (if (and
        (>= (prefix-numeric-value current-prefix-arg) 4)
-       (major-mode-p 'bible-search-mode))
+       (major-mode-p 'bible-search-mode)
+       (not just-the-ref))
       (bible-search-mode-copy-search)
     (progn
       (if (not (string-match ":$" text))
@@ -966,7 +967,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (setq-local bible-mode-ref-tuple (list book chapter verse))
         (setq-local bible-mode-chapter (concat book " " chapter))
 
-        (if (>= (prefix-numeric-value current-prefix-arg) 4)
+        (if (and (>= (prefix-numeric-value current-prefix-arg) 4)
+                 (not just-the-ref))
             (concat "[[bible:" (concat bible-mode-chapter ":" verse) "]]")
           (concat bible-mode-chapter ":" verse))))))
 
@@ -1044,6 +1046,20 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            "decorated onelined "
            (bible-mode-copy-link text)
            " | cat"))))
+
+    (if (interactive-p)
+        (xc link)
+      link)))
+
+(defun bible-mode-copy-ref-decorated-hyperlinked (&optional text)
+  (interactive (list (thing-at-point 'line t)))
+
+  (let ((link
+         (pen-snc
+          (concat
+           "echo "
+           (cmd (concat "*" (bible-mode-copy-link text) "*"))
+           " | biblegateway-relinkify"))))
 
     (if (interactive-p)
         (xc link)
@@ -1714,8 +1730,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 ;; So maybe I should use neovim instead of vim for this.
 ;; But I need to compile a new neovim
 ;; I still need to iron out some issues with neovim before making it the default here, but "set cmdheight=0" works
-(defun tpop-fit-vim-string (s &optional use_nvim_b)
-  (let* ((nlines
+(defun tpop-fit-vim-string (sval &optional use_nvim_b)
+  (let* ((s (if (stringp sval)
+                sval
+              (pps sval)))
+         (nlines
           ;; (snc "wc -l" s)
           (count-chars ?\n s))
          (lines (string2list s))
@@ -1743,7 +1762,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
             (+ 4 ;; (string-to-int nlines)
                nlines)))
      ;; 20
-     :style "heavy")))
+     :style "heavy"))
+  sval)
 
 (defun bible-mode-tpop (ref)
   (interactive (list (or (bible-mode-copy-link)
@@ -1945,6 +1965,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 (define-key bible-mode-map (kbd "/") 'fz-ddgr-bibleverse)
 (define-key bible-mode-map (kbd "W") 'bible-mode-copy-link-decorated)
+(define-key bible-mode-map (kbd "R") 'bible-mode-copy-ref-decorated-hyperlinked)
 (define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-mode-map "n" 'bible-mode-next-chapter)
@@ -2122,10 +2143,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       url)))
 
 ;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
-(defun bible-interlinear-get-word-blocks ()
+(defun bible-interlinear-get-word-blocks (&optional onelined)
   (interactive)
   ;; (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (bible-open-interlinear) t)))
-  (! etv·snc (cmd "biblehub-interlinear-get-word-blocks-pipeline" (bible-open-interlinear))))
+
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (setq onelined t))
+  
+  (! etv·snc (cmd
+              (if onelined
+                  "onelined")
+              "get-interlinear" (bible-mode-get-link nil t))))
 
 (defset bible-mode-commentaries
   '(

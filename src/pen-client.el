@@ -488,7 +488,9 @@ This function doesn't really like it when you put 'sp' as the editor."
         (setq stdin (or stdin "'nil"))
       (setq stdout stdin))
 
-    (setq pp (or pp 'pp-to-string))
+    (setq pp (or (if (eq pp t)
+                     'pp-to-string)
+                 'pp-to-string))
 
     (if (and (or (display-graphic-p)
                  use_etv)
@@ -505,6 +507,18 @@ This function doesn't really like it when you put 'sp' as the editor."
         (message "tv: no input")))
     stdout))
 (defalias 'pen-tv 'pen-cl-tv)
+
+(cl-defun tv-pps (&optional stdin &key editor &key tm_wincmd &key dir
+                               &key use_etv
+                               &key use_tm_tv
+                               &key force_alert_if_nil_input)
+  (pen-cl-tv stdin :editor editor
+             :tm_wincmd tm_wincmd
+             :dir dir
+             :pp t
+             :use_etv use_etv
+             :use_tm_tv use_tm_tv
+             :force_alert_if_nil_input force_alert_if_nil_input))
 
 (cl-defun pen-cl-tv-force (&optional stdin &key editor &key tm_wincmd &key dir &key pp
                                      &key use_etv

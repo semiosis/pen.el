@@ -415,6 +415,15 @@ commands to use in that buffer.
   (cond
    ;; ((major-mode-p 'crossword-mode)
    ;;  (crossword-quit))
+   ((or (major-mode-p 'crossword-mode)
+        (string-equal "Crossword down"
+                      (buffer-name))
+        (string-equal "Crossword across"
+                      (buffer-name)))
+    ;; M-F4
+    (try
+     (call-interactively 'crossword-quit)
+     (pen-kill-buffer-and-window)))
    ((major-mode-p 'term-mode)
     ;; M-F4
     (term-send-raw-string "[1;3S"))

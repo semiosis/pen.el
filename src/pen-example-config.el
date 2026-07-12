@@ -1227,19 +1227,26 @@
 (require 'pen-evil)
 (pen-truly-selective-binding "G" 'egr)
 (visual-map "S" #'evil-surround-region)
+
+;; TODO Ensure these work inside lispy
+
 (pen-truly-selective-binding "S \"" (df fi-qftln (pen-region-pipe "q -ftln")))
 (pen-truly-selective-binding "S $" (df fi-surround-dollar (pen-region-pipe "surround '$' '$'")))
 (pen-truly-selective-binding "S =" (df fi-surround-equals (pen-region-pipe "surround '=' '='")))
 (pen-truly-selective-binding "S _" (df fi-surround-underscore (pen-region-pipe "surround '_' '_'")))
 (pen-truly-selective-binding "S ~" (df fi-surround-tilde (pen-region-pipe "surround '~' '~'")))
-(pen-truly-selective-binding "S {" (df fi-surround-braces (pen-region-pipe "surround '{' '}'")))
-(pen-truly-selective-binding "S }" (df fi-surround-braces-pad (pen-region-pipe "surround '{ ' ' }'")))
-(pen-truly-selective-binding "S (" (df fi-surround-parens (pen-region-pipe "surround '(' ')'")))
-(pen-truly-selective-binding "S )" (df fi-surround-parens-pad (pen-region-pipe "surround '( ' ' )'")))
+(pen-truly-selective-binding "S }" (df fi-surround-braces (pen-region-pipe "surround '{' '}'")))
+(pen-truly-selective-binding "S {" (df fi-surround-braces-pad (pen-region-pipe "surround '{ ' ' }'")))
+(pen-truly-selective-binding "S )" (df fi-surround-parens (pen-region-pipe "surround '(' ')'")))
+(pen-truly-selective-binding "S (" (df fi-surround-parens-pad (pen-region-pipe "surround '( ' ' )'")))
 (pen-truly-selective-binding "S >" (df fi-asurround-angle (pen-region-pipe "surround '<' '>'")))
 (pen-truly-selective-binding "S <" (df fi-surround-angle-pad (pen-region-pipe "surround '< ' ' >'")))
 (pen-truly-selective-binding "S ]" (df fi-surround-square (pen-region-pipe "surround '[' ']'")))
 (pen-truly-selective-binding "S [" (df fi-surround-square-pad (pen-region-pipe "surround '[ ' ' ]'")))
+(pen-truly-selective-binding "S ." (df fi-surround-tallangle (pen-region-pipe "surround '⟨' '⟩'")))
+(pen-truly-selective-binding "S ⟩" (df fi-surround-tallangle (pen-region-pipe "surround '⟨' '⟩'")))
+(pen-truly-selective-binding "S ⟨" (df fi-surround-tallangle-pad (pen-region-pipe "surround '⟨ ' ' ⟩'")))
+(pen-truly-selective-binding "S ," (df fi-surround-tallangle-pad (pen-region-pipe "surround '⟨ ' ' ⟩'")))
 
 (pen-truly-selective-binding "C" (df spv-ifl-code () (pen-spv (concat "ifl " (buffer-language) " " (pen-selected-text))) (deactivate-mark)))
 ;; (pen-truly-selective-binding "H" 'egr-thing-at-point-imediately)
@@ -1341,6 +1348,7 @@
 (define-key evil-list-view-mode-map (kbd "RET") 'evil-list-view-goto-entry)
 
 (define-key evil-ex-completion-map (kbd "M-m") 'run-line-or-region-in-tmux)
+(define-key global-map (kbd "H-~") 'select-frame-by-name)
 
 
 (define-key pen-map (kbd "M-J") 'pen-join-line)

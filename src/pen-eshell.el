@@ -338,9 +338,11 @@ or an external command."
   (interactive (list (read-string-hist "eshell$ ")))
   (eshell)
   (with-current-buffer "*eshell*"
-    (eshell-return-to-prompt)
-    (eshell-kill-input)
-    ;; (kill-line)
+
+    ;; For some reason, these two commands break it, even with
+    ;; ignore-errors:
+    ;; (ignore-errors (eshell-return-to-prompt))
+    ;; (ignore-errors (eshell-kill-input))
     (insert cmd)
     (eshell-send-input)))
 
@@ -425,9 +427,54 @@ or an external command."
   ;; Firstly, fix the arguments
   (setq args (mapcar 'str args))
 
-  (cmd-out-to-tablist-quick (concat (apply 'cmd (cons "df" args)) " | sed 's/Mounted on/Mounted-on/' | sed -E 's/ +/,/g' | sed '1s/%/-percent/g'")
+  (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "df") args)))
                             t)
   ;; (pen-snc (apply 'cmd (cons "df" args)))
+  )
+
+;; paste -d , <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c -52) <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c 53-) | v
+(defun sh/paste (delim &rest multiline-strings)
+  (let ((fps (mapcar (lambda (s) (pen-tf "paste-part" s "txt"))
+                      multiline-strings)))
+    (snc (apply 'cmd (append (list "paste" "-d" delim) fps)) nil default-directory)))
+
+(comment
+ ;; sps:list-unicode
+ ;; [[sps:rtcmd -E "cat /root/dump/tmp/scratchs9B0Ny.txt | sed 's/^ +//' | sed -E 's/ +/,/g' | v"]]
+ ;; cd /root/.emacs.d/host/pen.el/src; "ps" "-ef"
+ (defun eshell/ps (&rest args)
+   "Like the bash `command` function."
+   ;; Firstly, fix the arguments
+   (setq args (append '("-H" "-w" "-w")
+                      (mapcar 'str args)))
+
+   ;; TODO Do an initial check to see which column CMD starts
+   ;; Then slice that out before formatting the other columns.
+   ;; Then slice it back in.
+
+   ;; TODO Fix: This is only currently working for [[sps:ps|v]] but not currently for [[sps:ps -ef|v]]
+
+   (let* ((psout (snc (concat (apply 'cmd (cons "ps" args))) nil default-directory))
+          (cmdcol (str (string-to-int (snc "sed q | sed 's/^\\(.*\\)CMD$/\\1/' | wc -m" psout default-directory))))
+          (cmdcol-n1 (str (- (string-to-int cmdcol) 1)))
+          (psout-left (snc (concat "cut -c -" cmdcol-n1) psout))
+          (psout-right (snc (concat "cut -c " cmdcol "-") psout))
+          (psout-left (snc "sed 's/^ \\+//' | sed -E 's/ +/,/g' | sed -E 's/,$//'" psout-left))
+          ;; paste -d , <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c -52) <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c 53-) | v
+          (psout-reformatted (sh/paste "," psout-left psout-right))
+          (tf (pen-tf "eshell-ps" psout-reformatted "txt")))
+     
+     (cmd-out-to-tablist-quick (cmd "cat" tf)
+                               t))))
+
+(defun eshell/ps (&rest args)
+  "Like the bash `command` function."
+  (setq args (append '("-H" "-w" "-w")
+                     (mapcar 'str args)))
+
+  (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "ps") args)))
+                            t)
+  ;; (pen-snc (apply 'cmd (cons "ps" args)))
   )
 
 ;; free -h -w -l -t

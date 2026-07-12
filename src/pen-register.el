@@ -1,0 +1,16 @@
+(comment 
+ (C-x r C-@ 	point-to-register C-x r C-@ . point-to-register)
+ (C-x r SPC 	point-to-register C-x r SPC . point-to-register)
+ (C-x r +   	increment-register C-x r + . increment-register)
+ (C-x r f   	frameset-to-register C-x r f . frameset-to-register)
+ (C-x r g   	insert-register C-x r g . insert-register)
+ (C-x r i   	insert-register C-x r i . insert-register)
+ (C-x r j   	jump-to-register C-x r j . jump-to-register)
+ (C-x r n   	number-to-register C-x r n . number-to-register)
+ (C-x r r   	copy-rectangle-to-register C-x r r . copy-rectangle-to-register)
+ (C-x r s   	copy-to-register C-x r s . copy-to-register)
+ (C-x r w   	window-configuration-to-register C-x r w . window-configuration-to-register)
+ (C-x r x   	copy-to-register C-x r x . copy-to-register)
+ (C-x r C-SPC	point-to-register C-x r C-SPC . point-to-register))
+
+(provide 'pen-register)

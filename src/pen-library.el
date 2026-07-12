@@ -1068,9 +1068,13 @@ buffer which is not included when this function returns
   `(when (require ,package nil 'noerror)
      ,@body))
 
-(defun pen-trim-max-chars (s n)
-  (pen-sn (concat "pen-str trim-max-chars " (str n))
-          s))
+(defun pen-trim-max-chars (s n &optional ellipsis)
+  (comment
+   (pen-sn (concat "pen-str trim-max-chars " (str n))
+           s))
+  (s-truncate n s (if (stringp ellipsis)
+                      ellipsis
+                    "...")))
 
 (defun pen-str-add-trailing-space-if-not-empty (s)
   (if (sor s)

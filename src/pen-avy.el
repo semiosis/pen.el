@@ -428,4 +428,77 @@ The window scope is determined by `avy-all-windows' (ARG negates it)."
           (regexp-quote (string char)))
         :window-flip arg)))))
 
+(comment
+ ;; Sadly, this doesn't seem to do it - yet. I might need to replace search code in avy with isearch for it to work
+ ;; I might need to use quail directly
+ ;; pa:quail
+ ;; j:quail-input-medhod
+ ;; j:quail-get-translation
+ (defun avy--read-candidates-around-advice (proc &rest args)
+   (let* ((isearch-input-method-function input-method-function)
+          (res (apply proc args)))
+     res))
+ (advice-add 'avy--read-candidates :around #'avy--read-candidates-around-advice)
+ (advice-remove 'avy--read-candidates #'avy--read-candidates-around-advice))
+
+
+(comment
+ ;; This fixes the zero width space problem
+ (set-char-table-range glyphless-char-display
+                       (char-from-name "ZERO WIDTH SPACE") 'zero-width)
+
+ ;; Original setting
+ (set-char-table-range glyphless-char-display
+                       (char-from-name "ZERO WIDTH SPACE") 'thin-space)
+
+ ;; Get setting
+ (char-table-range glyphless-char-display
+                   (char-from-name "ZERO WIDTH SPACE")))
+
+;; This allows the zero width space to be used inside the overlay
+;; so single a char width avy overlay can be highlighted.
+;; This works around a problem where the avy overlay would inherit the face of the text behind it
+(defun avy-process-around-advice (proc &rest args)
+  ;; (message "avy-process called with args %S" args)
+  (let* ((setting (char-table-range glyphless-char-display
+                                    (char-from-name "ZERO WIDTH SPACE")))
+         (discardresult
+          (set-char-table-range glyphless-char-display
+                                (char-from-name "ZERO WIDTH SPACE") 'zero-width))
+         (res (apply proc args))
+         (discardresult
+          (set-char-table-range glyphless-char-display
+                                (char-from-name "ZERO WIDTH SPACE") setting)))
+
+    
+    ;; (message "avy-process returned %S" res)
+    res))
+(advice-add 'avy-process :around #'avy-process-around-advice)
+;; (advice-remove 'avy-process #'avy-process-around-advice)
+
+(defun avy--overlay-at (path leaf)
+  "Create an overlay with PATH at LEAF.
+PATH is a list of keys from tree root to LEAF.
+LEAF is normally ((BEG . END) . WND)."
+  (let* ((path (mapcar #'avy--key-to-char path))
+         (str (propertize
+               (string (car (last path)))
+               'face 'avy-lead-face)))
+    ;; (elog "%s" "mylog" str)
+    ;; The zero width space doesn't seem to fix the face issue on its own
+    ;; but I also need j:avy-process-around-advice
+    (setq str (concat "​" str))
+    (avy--overlay
+     str
+     (avy-candidate-beg leaf) nil
+     (avy-candidate-wnd leaf)
+     (lambda (str old-str)
+       (cond ((string= old-str "\n")
+              (concat str "\n"))
+             ;; add padding for wide-width character
+             ((eq (string-width old-str) 2)
+              (concat str " "))
+             (t
+              str))))))
+
 (provide 'pen-avy)

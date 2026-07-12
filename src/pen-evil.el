@@ -351,6 +351,7 @@
 
   (setq eww-no-external-handler nil)
   (cond
+   ((string-match "^\\(http.*stackexchange\\.com/q.*\\|http.*stackoverflow\\.com/q.*\\)" fp) (sx-from-url fp))
    ((string-match "^http" fp) (browse-url--browser fp))
    ((string-match "\\.html$" fp) (eww-open-file fp))
    ((string-match "^[HG][0-9]+$" fp) (strongs-lookup fp t))

@@ -711,6 +711,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("j" #'eegr "Google")
                          ;; ("g" #'pen-egr-guru99 "guru99")
                          ("g" #'fz-ddgr "guru99")
+                         ("e" 'wiki-wordnet-word "wikipedia search wordnet noun")
                          ("w" 'wikipedia-search "wikipedia search")
                          ("9" #'pen-egr-guru99 "guru99")
                          ("x" #'google_example "google example")

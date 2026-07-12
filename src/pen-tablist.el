@@ -1517,4 +1517,357 @@ Returns the number of unmarked marks."
 (define-key tabulated-list-mode-map (kbd ",") 'tablist-mark-forward)
 (define-key tabulated-list-mode-map (kbd "RET") 'pen-tablist-etv-marked)
 
+
+(defun tablist-sort (&optional column)
+  "Sort the tabulated-list by COLUMN.
+
+COLUMN may be either a name or an index.  The default compare
+function is given by the `tabulated-list-format', which see.
+
+This function saves the current sort column and the inverse
+sort-direction in the variable `tabulated-list-sort-key', which
+also determines the default COLUMN and direction.
+
+The main difference to `tabulated-list-sort' is, that this
+function sorts the buffer in-place and it ignores a nil sort
+entry in `tabulated-list-format' and sorts on the column
+anyway (why not ?)."
+
+  (interactive
+   (list
+    (if (null current-prefix-arg)
+        (tablist-column-name
+         (or (tablist-current-column)
+             (car (tablist-major-columns))
+             0))
+      (tablist-read-column-name
+       '(4) "Sort by column"
+       (tablist-column-name (car (tablist-major-columns)))))))
+
+  (unless column
+    (setq column (or (car tabulated-list-sort-key)
+                     (tablist-column-name (car (tablist-major-columns)))
+                     (tablist-column-name 0))))
+  (when (numberp column)
+    (let ((column-name (tablist-column-name column)))
+      (unless column-name
+        (error "No such column: %d" column))
+      (setq column column-name)))
+
+  (setq tabulated-list-sort-key
+        (cons column
+              (if (equal column (car tabulated-list-sort-key))
+                  (cdr tabulated-list-sort-key))))
+
+  (let* ((entries (if (functionp tabulated-list-entries)
+                      (funcall tabulated-list-entries)
+                    tabulated-list-entries))
+         (reverse (cdr tabulated-list-sort-key))
+         (n (tabulated-list--column-number ;;errors if column is n/a
+             (car tabulated-list-sort-key)))
+         (compare-fn
+          (nth 2 (aref tabulated-list-format n))))
+
+    ;; (tv tabulated-list-sort-key)
+    ;; (tv column)
+    ;; (tv n)
+    (when (or (null compare-fn)
+              (eq compare-fn t))
+      (setq compare-fn
+            (eval
+             `(lambda (a b)
+                (setq a (aref (cadr a) ,n))
+                (setq b (aref (cadr b) ,n))
+                ;; (string< (if (stringp a) a (car a))
+                ;;          (if (stringp b) b (car b)))
+                (dictionary-lessp (if (stringp a) a (car a))
+                                  (if (stringp b) b (car b)))))))
+
+    ;; (tv compare-fn)
+    (unless compare-fn
+      (error "This column cannot be sorted: %s" column))
+
+    (setcdr tabulated-list-sort-key (not reverse))
+    
+    ;; This is sorting correctly
+    ;; (setq entries (tv-pps (sort (copy-sequence entries) compare-fn)))
+    
+    ;; Presort the entries and hash the result and sort the buffer.
+    (setq entries (sort (copy-sequence entries) compare-fn))
+    (setq entries (mapcar 'vec2list entries))
+
+    ;; But for some reason it is only sorting by the first column
+    (let ((hash (make-hash-table :test 'equal)))
+
+      ;; (: tv-pps entries)
+      ;; (: tv-pps (cadr (cadr entries)))
+      
+      (dotimes (i (length entries))
+        ;; (puthash (caar entries) i hash)
+        (puthash (vec2list (cadr (cadr entries))) i hash)
+        (setq entries (cdr entries)))
+
+      ;; (: tv-pps.hash-table-values hash)
+      
+      (tablist-with-remembering-entry
+        (goto-char (point-min))
+        (tablist-skip-invisible-entries)
+        (let ((inhibit-read-only t))
+          (sort-subr
+           nil 'tablist-forward-entry 'end-of-line
+           (lambda ()
+             ;; Use a hash of the row instead
+             ;; (pen-tabulated-list-get-entry)
+             ;; (gethash (tabulated-list-get-id) hash 0)
+             (gethash (pen-tabulated-list-get-entry) hash 0))
+           nil (if reverse '< '>))))
+      (tablist-move-to-column n)
+      ;; Make the sort arrows display.
+      (tabulated-list-init-header))))
+
+(comment
+ (length (read (cat "/root/.pen/tmp/f9EfjXiHbr"))))
+
+;; The sorting *does* seem to work in test. Oh, but a hash table is made...
+;; Perhaps the hash table is breaking it.
+(comment
+ (etv
+  (pps
+   (sort
+    '(("pen"
+       ["pen" "708" "1" "0" "Jun07" "?" "00:00:21" "  /inspircd-2.0.25/run/bin/inspircd --config=/inspircd-2.0.25/run/conf/inspircd.conf"])
+      ("postgres"
+       ["postgres" "716" "1" "0" "Jun07" "?" "00:00:07" "  /usr/lib/postgresql/11/bin/postgres -D /var/lib/postgresql/11/main -c config_file=/etc/postgresql/11/main/postgresql.conf"])
+      ("postgres"
+       ["postgres" "718" "716" "0" "Jun07" "?" "00:00:00" "    postgres: 11/main: checkpointer   "])
+      ("postgres"
+       ["postgres" "719" "716" "0" "Jun07" "?" "00:00:09" "    postgres: 11/main: background writer   "])
+      ("postgres"
+       ["postgres" "720" "716" "0" "Jun07" "?" "00:00:08" "    postgres: 11/main: walwriter   "])
+      ("postgres"
+       ["postgres" "721" "716" "0" "Jun07" "?" "00:00:04" "    postgres: 11/main: autovacuum launcher   "])
+      ("postgres"
+       ["postgres" "722" "716" "0" "Jun07" "?" "00:00:10" "    postgres: 11/main: stats collector   "])
+      ("postgres"
+       ["postgres" "723" "716" "0" "Jun07" "?" "00:00:00" "    postgres: 11/main: logical replication launcher   "])
+      ("root"
+       ["root" "2137263" "0" "0" "14:25" "pts/1" "00:00:00" "bash -c . ~/.emacs.d/pen.el/scripts/setup-term.sh; \"eval\" \"'/root/.emacs.d/pen.el/scripts/newframe.sh'\""])
+      ("root"
+       ["root" "2137316" "2137263" "0" "14:25" "pts/1" "00:00:00" "  /bin/bash /root/.emacs.d/pen.el/scripts/newframe.sh"])
+      ("root"
+       ["root" "2137319" "2137316" "0" "14:25" "pts/1" "00:00:00" "    /bin/bash /root/.emacs.d/host/pen.el/scripts/newframe.sh"])
+      ("root"
+       ["root" "2137329" "2137319" "0" "14:25" "pts/1" "00:00:00" "      /bin/bash /root/.emacs.d/host/pen.el/scripts/in-tm pen-emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "2137382" "2137329" "0" "14:25" "pts/1" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-tm init-or-attach sh -c 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'"])
+      ("root"
+       ["root" "2137647" "2137382" "0" "14:25" "pts/1" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/tmux-scripts/tmux attach -t 1781231116:"])
+      ("root"
+       ["root" "2137649" "2137647" "0" "14:25" "pts/1" "00:00:00" "            /root/.local/bin/tmux attach -t 1781231116:"])
+      ("root"
+       ["root" "1" "0" "0" "Jun07" "pts/0" "00:00:03" "/bin/bash /root/run.sh"])
+      ("root"
+       ["root" "13" "1" "0" "Jun07" "pts/0" "00:00:00" "  /bin/bash /root/.emacs.d/host/pen.el/scripts/run.sh"])
+      ("root"
+       ["root" "2240567" "13" "0" "17:43" "pts/0" "00:00:00" "    sleep 1000"])
+      ("root"
+       ["root" "48" "1" "0" "Jun07" "?" "00:00:01" "  /usr/sbin/cron"])
+      ("root"
+       ["root" "706" "1" "0" "Jun07" "pts/0" "00:00:00" "  ttyd -p 7689 bash -l /root/.emacs.d/pen.el/scripts/newframe.sh"])
+      ("root"
+       ["root" "857" "1" "0" "Jun07" "?" "00:02:01" "  /root/.local/bin/tmux new -d"])
+      ("root"
+       ["root" "858" "857" "0" "Jun07" "pts/2" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell"])
+      ("root"
+       ["root" "859" "858" "0" "Jun07" "pts/2" "00:00:00" "      /bin/bash"])
+      ("root"
+       ["root" "1289" "857" "0" "Jun07" "pts/4" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell"])
+      ("root"
+       ["root" "1290" "1289" "0" "Jun07" "pts/4" "00:00:00" "      /bin/bash"])
+      ("root"
+       ["root" "1895" "857" "0" "Jun07" "pts/5" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c zsh"])
+      ("root"
+       ["root" "1899" "1895" "0" "Jun07" "pts/5" "00:00:00" "      zsh"])
+      ("root"
+       ["root" "1989" "857" "0" "Jun07" "pts/6" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell"])
+      ("root"
+       ["root" "1990" "1989" "0" "Jun07" "pts/6" "00:00:00" "      /bin/bash"])
+      ("root"
+       ["root" "2719" "857" "0" "Jun07" "pts/8" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempuT0h239.sh\" && . /root/.pen/tmp/tf_tempuT0h239.sh;  stty stop undef; stty start undef;  pen-tm attach \"localhost_ws\"; sleep 0.1 ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcRLLNf5s.txt\""])
+      ("root"
+       ["root" "2720" "2719" "0" "Jun07" "pts/8" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempuT0h239.sh\" && . /root/.pen/tmp/tf_tempuT0h239.sh;  stty stop undef; stty start undef;  pen-tm attach \"localhost_ws\"; sleep 0.1 ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcRLLNf5s.txt\""])
+      ("root"
+       ["root" "2728" "2720" "0" "Jun07" "pts/8" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-tm attach localhost_ws"])
+      ("root"
+       ["root" "3133" "2728" "0" "Jun07" "pts/8" "00:00:00" "          /bin/bash /tmp/pen-scripts/tmux-scripts/tmux attach -c /root/.pen/documents/notes/ws -t localhost_ws:"])
+      ("root"
+       ["root" "3135" "3133" "0" "Jun07" "pts/8" "00:00:00" "            /root/.local/bin/tmux attach -c /root/.pen/documents/notes/ws -t localhost_ws:"])
+      ("root"
+       ["root" "2740" "857" "0" "Jun07" "pts/10" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell"])
+      ("root"
+       ["root" "2741" "2740" "0" "Jun07" "pts/10" "00:00:00" "      /bin/bash"])
+      ("root"
+       ["root" "3104" "857" "0" "Jun07" "pts/11" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell"])
+      ("root"
+       ["root" "3108" "3104" "0" "Jun07" "pts/11" "00:00:00" "      /bin/bash"])
+      ("root"
+       ["root" "4010" "857" "0" "Jun07" "pts/14" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempt1PxaqD.sh\" && . /root/.pen/tmp/tf_tempt1PxaqD.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  agenda ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcQJ6IF9r.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "4014" "4010" "0" "Jun07" "pts/14" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempt1PxaqD.sh\" && . /root/.pen/tmp/tf_tempt1PxaqD.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  agenda ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcQJ6IF9r.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "4031" "4014" "0" "Jun07" "pts/14" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-pak -k s"])
+      ("root"
+       ["root" "4984" "857" "0" "Jun07" "pts/13" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_temp3INzlKG.sh\" && . /root/.pen/tmp/tf_temp3INzlKG.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  enotmuch ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rco4ctx92.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "4985" "4984" "0" "Jun07" "pts/13" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_temp3INzlKG.sh\" && . /root/.pen/tmp/tf_temp3INzlKG.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  enotmuch ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rco4ctx92.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "4992" "4985" "0" "Jun07" "pts/13" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-pak -k s"])
+      ("root"
+       ["root" "5402" "857" "0" "Jun07" "pts/7" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_temp4PPizKS.sh\" && . /root/.pen/tmp/tf_temp4PPizKS.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  cfw-agenda ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rc2vCp9K8.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "5403" "5402" "0" "Jun07" "pts/7" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_temp4PPizKS.sh\" && . /root/.pen/tmp/tf_temp4PPizKS.sh; while :; do  stty stop undef; stty start undef;  pen-pak -k s;  cfw-agenda ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rc2vCp9K8.txt\"; pen-pak -k f; done"])
+      ("root"
+       ["root" "5412" "5403" "0" "Jun07" "pts/7" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-pak -k s"])
+      ("root"
+       ["root" "6167" "857" "0" "Jun07" "pts/9" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempEbHxz4y.sh\" && . /root/.pen/tmp/tf_tempEbHxz4y.sh; while :; do  stty stop undef; stty start undef;  preview \"clipboard.txt\"; rifle \"clipboard.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcXXxipXs.txt\"; done"])
+      ("root"
+       ["root" "6168" "6167" "0" "Jun07" "pts/9" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempEbHxz4y.sh\" && . /root/.pen/tmp/tf_tempEbHxz4y.sh; while :; do  stty stop undef; stty start undef;  preview \"clipboard.txt\"; rifle \"clipboard.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcXXxipXs.txt\"; done"])
+      ("root"
+       ["root" "6176" "6168" "0" "Jun07" "pts/9" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview clipboard.txt"])
+      ("root"
+       ["root" "6178" "6176" "0" "Jun07" "pts/9" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S clipboard.txt"])
+      ("root"
+       ["root" "6179" "6178" "0" "Jun07" "pts/9" "00:00:00" "            /usr/bin/less -S clipboard.txt"])
+      ("root"
+       ["root" "6546" "857" "0" "Jun07" "pts/15" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempezpiTMX.sh\" && . /root/.pen/tmp/tf_tempezpiTMX.sh; while :; do  stty stop undef; stty start undef;  preview \"files.txt\"; rifle \"files.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcXrfi631.txt\"; done"])
+      ("root"
+       ["root" "6547" "6546" "0" "Jun07" "pts/15" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempezpiTMX.sh\" && . /root/.pen/tmp/tf_tempezpiTMX.sh; while :; do  stty stop undef; stty start undef;  preview \"files.txt\"; rifle \"files.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcXrfi631.txt\"; done"])
+      ("root"
+       ["root" "6553" "6547" "0" "Jun07" "pts/15" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview files.txt"])
+      ("root"
+       ["root" "6555" "6553" "0" "Jun07" "pts/15" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S files.txt"])
+      ("root"
+       ["root" "6557" "6555" "0" "Jun07" "pts/15" "00:00:00" "            /usr/bin/less -S files.txt"])
+      ("root"
+       ["root" "6927" "857" "0" "Jun07" "pts/17" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_temp20t32w6.sh\" && . /root/.pen/tmp/tf_temp20t32w6.sh; while :; do  stty stop undef; stty start undef;  preview \"glossary.txt\"; rifle \"glossary.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcD1y5xDs.txt\"; done"])
+      ("root"
+       ["root" "6930" "6927" "0" "Jun07" "pts/17" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_temp20t32w6.sh\" && . /root/.pen/tmp/tf_temp20t32w6.sh; while :; do  stty stop undef; stty start undef;  preview \"glossary.txt\"; rifle \"glossary.txt\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcD1y5xDs.txt\"; done"])
+      ("root"
+       ["root" "6937" "6930" "0" "Jun07" "pts/17" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview glossary.txt"])
+      ("root"
+       ["root" "6938" "6937" "0" "Jun07" "pts/17" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S glossary.txt"])
+      ("root"
+       ["root" "6939" "6938" "0" "Jun07" "pts/17" "00:00:00" "            /usr/bin/less -S glossary.txt"])
+      ("root"
+       ["root" "7306" "857" "0" "Jun07" "pts/18" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempo0zLToz.sh\" && . /root/.pen/tmp/tf_tempo0zLToz.sh; while :; do  stty stop undef; stty start undef;  preview \"links.org\"; rifle \"links.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcflHQBwY.txt\"; done"])
+      ("root"
+       ["root" "7307" "7306" "0" "Jun07" "pts/18" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempo0zLToz.sh\" && . /root/.pen/tmp/tf_tempo0zLToz.sh; while :; do  stty stop undef; stty start undef;  preview \"links.org\"; rifle \"links.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcflHQBwY.txt\"; done"])
+      ("root"
+       ["root" "7313" "7307" "0" "Jun07" "pts/18" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview links.org"])
+      ("root"
+       ["root" "7315" "7313" "0" "Jun07" "pts/18" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S links.org"])
+      ("root"
+       ["root" "7316" "7315" "0" "Jun07" "pts/18" "00:00:00" "            /usr/bin/less -S links.org"])
+      ("root"
+       ["root" "7709" "857" "0" "Jun07" "pts/19" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempnVyQSEH.sh\" && . /root/.pen/tmp/tf_tempnVyQSEH.sh; while :; do  stty stop undef; stty start undef;  preview \"perspective.org\"; rifle \"perspective.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcHmI1wye.txt\"; done"])
+      ("root"
+       ["root" "7710" "7709" "0" "Jun07" "pts/19" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempnVyQSEH.sh\" && . /root/.pen/tmp/tf_tempnVyQSEH.sh; while :; do  stty stop undef; stty start undef;  preview \"perspective.org\"; rifle \"perspective.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcHmI1wye.txt\"; done"])
+      ("root"
+       ["root" "7718" "7710" "0" "Jun07" "pts/19" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview perspective.org"])
+      ("root"
+       ["root" "7719" "7718" "0" "Jun07" "pts/19" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S perspective.org"])
+      ("root"
+       ["root" "7720" "7719" "0" "Jun07" "pts/19" "00:00:00" "            /usr/bin/less -S perspective.org"])
+      ("root"
+       ["root" "8222" "857" "0" "Jun07" "pts/20" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_tempjxCr4QT.sh\" && . /root/.pen/tmp/tf_tempjxCr4QT.sh; while :; do  stty stop undef; stty start undef;  preview \"README.org\"; rifle \"README.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcD5G9uhO.txt\"; done"])
+      ("root"
+       ["root" "8223" "8222" "0" "Jun07" "pts/20" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_tempjxCr4QT.sh\" && . /root/.pen/tmp/tf_tempjxCr4QT.sh; while :; do  stty stop undef; stty start undef;  preview \"README.org\"; rifle \"README.org\" ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rcD5G9uhO.txt\"; done"])
+      ("root"
+       ["root" "8230" "8223" "0" "Jun07" "pts/20" "00:00:00" "        /bin/bash /root/.emacs.d/host/pen.el/scripts/preview README.org"])
+      ("root"
+       ["root" "8232" "8230" "0" "Jun07" "pts/20" "00:00:00" "          /bin/bash /root/.emacs.d/host/pen.el/scripts/less -S README.org"])
+      ("root"
+       ["root" "8233" "8232" "0" "Jun07" "pts/20" "00:00:00" "            /usr/bin/less -S README.org"])
+      ("root"
+       ["root" "8241" "857" "0" "Jun07" "pts/21" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c \"bash\""])
+      ("root"
+       ["root" "8242" "8241" "0" "Jun07" "pts/21" "00:00:00" "      bash"])
+      ("root"
+       ["root" "2137643" "857" "0" "14:25" "pts/12" "00:00:00" "    sh -c 'pen-emacsclient' '-s' 'DEFAULT' '-a' '' '-t'"])
+      ("root"
+       ["root" "2137646" "2137643" "0" "14:25" "pts/12" "00:00:00" "      /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "2137780" "2137646" "0" "14:25" "pts/12" "00:00:00" "        /usr/local/bin/emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "2140760" "857" "0" "14:36" "pts/16" "00:00:00" "    /bin/bash /root/.emacs.d/pen.el/scripts/tmux-shell -c test -f \"/root/.pen/tmp/tf_temp8iNHXk2.sh\" && . /root/.pen/tmp/tf_temp8iNHXk2.sh;  stty stop undef; stty start undef;  zsh ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rccXmFbVO.txt\""])
+      ("root"
+       ["root" "2140761" "2140760" "0" "14:36" "pts/16" "00:00:00" "      /bin/bash -c test -f \"/root/.pen/tmp/tf_temp8iNHXk2.sh\" && . /root/.pen/tmp/tf_temp8iNHXk2.sh;  stty stop undef; stty start undef;  zsh ; ret=$?; printf -- \"%s\" $ret > \"/root/.pen/tmp/tf_rccXmFbVO.txt\""])
+      ("root"
+       ["root" "2140766" "2140761" "0" "14:36" "pts/16" "00:00:00" "        zsh"])
+      ("root"
+       ["root" "2141207" "2140766" "0" "14:36" "pts/16" "00:00:00" "          /bin/bash /tmp/pen-scripts/container/pe"])
+      ("root"
+       ["root" "2141252" "2141207" "0" "14:36" "pts/16" "00:00:00" "            /bin/bash /root/.emacs.d/host/pen.el/scripts/pin"])
+      ("root"
+       ["root" "2141488" "2141252" "0" "14:36" "pts/16" "00:00:00" "              bash -c . ~/.emacs.d/pen.el/scripts/setup-term.sh; \"eval\" \"'newframe.sh'\""])
+      ("root"
+       ["root" "2141536" "2141488" "0" "14:36" "pts/16" "00:00:00" "                /bin/bash /root/.emacs.d/host/pen.el/scripts/newframe.sh"])
+      ("root"
+       ["root" "2141546" "2141536" "0" "14:36" "pts/16" "00:00:00" "                  /bin/bash /root/.emacs.d/host/pen.el/scripts/in-tm pen-emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "2141574" "2141546" "0" "14:36" "pts/16" "00:00:00" "                    /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "2141706" "2141574" "0" "14:36" "pts/16" "00:00:00" "                      /usr/local/bin/emacsclient -s DEFAULT -a  -t"])
+      ("root"
+       ["root" "5007" "1" "0" "Jun07" "?" "00:11:40" "  /usr/local/bin/emacs --daemon=pen-emacsd-1"])
+      ("root"
+       ["root" "34681" "5007" "0" "Jun07" "?" "00:00:00" "    /bin/bash /tmp/pen-scripts/ispell-scripts/ispell -a -m -B"])
+      ("root"
+       ["root" "34815" "34681" "0" "Jun07" "?" "00:00:00" "      /usr/bin/ispell -a -m -B"])
+      ("root"
+       ["root" "36340" "5007" "0" "Jun07" "pts/22" "00:00:00" "    /bin/bash /root/.emacs.d/host/pen.el/scripts/pen-banner.sh"])
+      ("root"
+       ["root" "36354" "36340" "0" "Jun07" "pts/22" "00:00:00" "      /bin/bash /root/.emacs.d/host/pen.el/scripts/less -rS"])
+      ("root"
+       ["root" "36363" "36354" "0" "Jun07" "pts/22" "00:00:00" "        /usr/bin/less -rS"])
+      ("root"
+       ["root" "1186068" "5007" "0" "Jun11" "?" "00:00:00" "    /bin/bash /root/.emacs.d/host/pen.el/scripts/node /root/.emacs.d/.cache/lsp/npm/bash-language-server/bin/bash-language-server start"])
+      ("root"
+       ["root" "1186562" "1186068" "0" "Jun11" "?" "00:00:07" "      node /root/.emacs.d/.cache/lsp/npm/bash-language-server/bin/bash-language-server start"])
+      ("root"
+       ["root" "3526372" "1" "6" "09:13" "?" "00:31:35" "  /usr/local/bin/emacs --daemon=DEFAULT"])
+      ("root"
+       ["root" "3540329" "3526372" "0" "09:16" "?" "00:00:00" "    /bin/bash /tmp/pen-scripts/ispell-scripts/ispell -a -m -B"])
+      ("root"
+       ["root" "3540403" "3540329" "0" "09:16" "?" "00:00:00" "      /usr/bin/ispell -a -m -B"])
+      ("root"
+       ["root" "2066660" "3526372" "0" "12:57" "?" "00:00:00" "    /bin/bash /root/.emacs.d/host/pen.el/scripts/node /root/.emacs.d/.cache/lsp/npm/bash-language-server/bin/bash-language-server start"])
+      ("root"
+       ["root" "2067237" "2066660" "0" "12:57" "?" "00:00:03" "      node /root/.emacs.d/.cache/lsp/npm/bash-language-server/bin/bash-language-server start"])
+      ("root"
+       ["root" "2240933" "3526372" "0" "17:58" "?" "00:00:00" "    /usr/bin/zsh -c export DISPLAY=\":0\" PATH=\"/tmp/pen-scripts/deprecated:/tmp/pen-scripts/oleo:/tmp/pen-scripts/babashka:/tmp/pen-scripts/babashka/playground:/tmp/pen-scripts/babashka/utils:/tmp/pen-scripts/babashka/basic_cli_tool:/tmp/pen-scripts/time:/tmp/pen-scripts/strace-scripts:/tmp/pen-scripts/stackexchange:/tmp/pen-scripts/math-scripts:/tmp/pen-scripts/emacs-internal-scripts:/tmp/pen-scripts/xsh-scripts:/tmp/pen-scripts/latex-scripts:/tmp/pen-scripts/playground:/tmp/pen-scripts/racket-scripts:/tmp/pen-scripts/visidata-scripts:/tmp/pen-scripts/rosie-scripts:/tmp/pen-scripts/dump-clean_dir:/tmp/pen-scripts/grepapp-scripts:/tmp/pen-scripts/fennel-scripts:/tmp/pen-scripts/apl-scripts:/tmp/pen-scripts/term-scripts:/tmp/pen-scripts/rust-tools:/tmp/pen-scripts/utils:/tmp/pen-scripts/prompting:/tmp/pen-scripts/hymnal-resources:/tmp/pen-scripts/websearch:/tmp/pen-scripts/programming:/tmp/pen-scripts/locate-scripts:/tmp/pen-scripts/tty-scripts:/tmp/pen-scripts/workers:/tmp/pen-scripts/writing:/tmp/pen-scripts/git:/tmp/pen-scripts/vim-scripts:/tmp/pen-scripts/lib:/tmp/pen-scripts/gum-scripts:/tmp/pen-scripts/pagers:/tmp/pen-scripts/bible-resources:/tmp/pen-scripts/geography:/tmp/pen-scripts/christian-resources:/tmp/pen-scripts/elpa-scripts:/tmp/pen-scripts/eshell-scripts:/tmp/pen-scripts/dbus:/tmp/pen-scripts/update:/tmp/pen-scripts/databases:/tmp/pen-scripts/filters:/tmp/pen-scripts/filters/transformers:/tmp/pen-scripts/filters/readability:/tmp/pen-scripts/filters/extractors:/tmp/pen-scripts/filters/grepfilters:/tmp/pen-scripts/filters/bikeshed:/tmp/pen-scripts/filters/summarizers:/tmp/pen-scripts/inotify-scripts:/tmp/pen-scripts/font-scripts:/tmp/pen-scripts/python-scripts:/tmp/pen-scripts/ispell-scripts:/tmp/pen-scripts/supervisor:/tmp/pen-scripts/golang:/tmp/pen-scripts/unix-aliases:/tmp/pen-scripts/jstate:/tmp/pen-scripts/browser-scripts:/tmp/pen-scripts/productivity:/tmp/pen-scripts/tablist-scripts:/tmp/pen-scripts/mon:/tmp/pen-scripts/org-scripts:/tmp/pen-scripts/cat-scripts:/tmp/pen-scripts/net-scripts:/tmp/pen-scripts/bbs-scripts:/tmp/pen-scripts/bible-books:/tmp/pen-scripts/bible-dbs:/tmp/pen-scripts/x11:/tmp/pen-scripts/container:/tmp/pen-scripts/scrape-scripts:/tmp/pen-scripts/emacs-scripts:/tmp/pen-scripts/pics:/tmp/pen-scripts/sqlite-scripts:/tmp/pen-scripts/strings:/tmp/pen-scripts/bikeshed:/tmp/pen-scripts/haskell-scripts:/tmp/pen-scripts/haskell-scripts/cabal-haskellscript-scripts:/tmp/pen-scripts/haskell-scripts/stack-lts-6.25-scripts:/tmp/pen-scripts/haskell-scripts/cabal-3.10.3.0-scripts:/tmp/pen-scripts/sorting:/tmp/pen-scripts/host-scripts:/tmp/pen-scripts/awk-scripts:/tmp/pen-scripts/ed-scripts:/tmp/pen-scripts/metservice:/tmp/pen-scripts/chess:/tmp/pen-scripts/ruby-scripts:/tmp/pen-scripts/unicode-scripts:/tmp/pen-scripts/vim-related:/tmp/pen-scripts/text-scripts:/tmp/pen-scripts/ved-scripts:/tmp/pen-scripts/emacs-remote-control:/tmp/pen-scripts/clojure:/tmp/pen-scripts/clojure/utils:/tmp/pen-scripts/clojure/.cpcache:/tmp/pen-scripts/clojure/tools:/tmp/pen-scripts/graphviz:/tmp/pen-scripts/docker-scripts:/tmp/pen-scripts/nl:/tmp/pen-scripts/markdown:/tmp/pen-scripts/games:/tmp/pen-scripts/c-scripts:/tmp/pen-scripts/bible-mode-scripts:/tmp/pen-scripts/bible-mode-scripts/dbqueries:/tmp/pen-scripts/sh-ext:/tmp/pen-scripts/html:/tmp/pen-scripts/libraries:/tmp/pen-scripts/grepscripts:/tmp/pen-scripts/pascal:/tmp/pen-scripts/prolog-scripts:/tmp/pen-scripts/prolog-scripts/tutorialspoint:/tmp/pen-scripts/apt:/tmp/pen-scripts/sixel:/tmp/pen-scripts/logging-scripts:/tmp/pen-scripts/filter-tools:/tmp/pen-scripts/docs:/tmp/pen-scripts/eww:/tmp/pen-scripts/net:/tmp/pen-scripts/shell:/tmp/pen-scripts/readme-scripts:/tmp/pen-scripts/apps:/tmp/pen-scripts/filesystem:/tmp/pen-scripts/git-scripts:/tmp/pen-scripts/m4-scripts:/tmp/pen-scripts/devotionals:/tmp/pen-scripts/bible-scripts-tests:/tmp/pen-scripts/tmux-scripts:/tmp/pen-scripts/rust-scripts:/tmp/pen-scripts/scratch:/root/.emacs.d/host/host/pen.el/scripts/container:/root/.emacs.d/host/pen.el/scripts/container:/root/.emacs.d/host/host/pen.el/scripts:/root/.emacs.d/host/pen.el/scripts:/root/.emacs.d/host/host/pen.el/scripts-host:/root/.emacs.d/host/pen.el/scripts-host:/root/.emacs.d/host/pen.el/scripts/deprecated:/root/.emacs.d/host/pen.el/scripts/oleo:/root/.emacs.d/host/pen.el/scripts/babashka:/root/.emacs.d/host/pen.el/scripts/babashka/playground:/root/.emacs.d/host/pen.el/scripts/babashka/utils:/root/.emacs.d/host/pen.el/scripts/babashka/basic_cli_tool:/root/.emacs.d/host/pen.el/scripts/time:/root/.emacs.d/host/pen.el/scripts/strace-scripts:/root/.emacs.d/host/pen.el/scripts/stackexchange:/root/.emacs.d/host/pen.el/scripts/math-scripts:/root/.emacs.d/host/pen.el/scripts/emacs-internal-scripts:/root/.emacs.d/host/pen.el/scripts/xsh-scripts:/root/.emacs.d/host/pen.el/scripts/latex-scripts:/root/.emacs.d/host/pen.el/scripts/playground:/root/.emacs.d/host/pen.el/scripts/racket-scripts:/root/.emacs.d/host/pen.el/scripts/visidata-scripts:/root/.emacs.d/host/pen.el/scripts/rosie-scripts:/root/.emacs.d/host/pen.el/scripts/dump-clean_dir:/root/.emacs.d/host/pen.el/scripts/grepapp-scripts:/root/.emacs.d/host/pen.el/scripts/fennel-scripts:/root/.emacs.d/host/pen.el/scripts/apl-scripts:/root/.emacs.d/host/pen.el/scripts/term-scripts:/root/.emacs.d/host/pen.el/scripts/rust-tools:/root/.emacs.d/host/pen.el/scripts/utils:/root/.emacs.d/host/pen.el/scripts/prompting:/root/.emacs.d/host/pen.el/scripts/hymnal-resources:/root/.emacs.d/host/pen.el/scripts/websearch:/root/.emacs.d/host/pen.el/scripts/programming:/root/.emacs.d/host/pen.el/scripts/locate-scripts:/root/.emacs.d/host/pen.el/scripts/tty-scripts:/root/.emacs.d/host/pen.el/scripts/workers:/root/.emacs.d/host/pen.el/scripts/writing:/root/.emacs.d/host/pen.el/scripts/git:/root/.emacs.d/host/pen.el/scripts/vim-scripts:/root/.emacs.d/host/pen.el/scripts/lib:/root/.emacs.d/host/pen.el/scripts/gum-scripts:/root/.emacs.d/host/pen.el/scripts/pagers:/root/.emacs.d/host/pen.el/scripts/bible-resources:/root/.emacs.d/host/pen.el/scripts/geography:/root/.emacs.d/host/pen.el/scripts/christian-resources:/root/.emacs.d/host/pen.el/scripts/elpa-scripts:/root/.emacs.d/host/pen.el/scripts/eshell-scripts:/root/.emacs.d/host/pen.el/scripts/dbus:/root/.emacs.d/host/pen.el/scripts/update:/root/.emacs.d/host/pen.el/scripts/databases:/root/.emacs.d/host/pen.el/scripts/filters:/root/.emacs.d/host/pen.el/scripts/filters/transformers:/root/.emacs.d/host/pen.el/scripts/filters/readability:/root/.emacs.d/host/pen.el/scripts/filters/extractors:/root/.emacs.d/host/pen.el/scripts/filters/grepfilters:/root/.emacs.d/host/pen.el/scripts/filters/bikeshed:/root/.emacs.d/host/pen.el/scripts/filters/summarizers:/root/.emacs.d/host/pen.el/scripts/inotify-scripts:/root/.emacs.d/host/pen.el/scripts/font-scripts:/root/.emacs.d/host/pen.el/scripts/python-scripts:/root/.emacs.d/host/pen.el/scripts/ispell-scripts:/root/.emacs.d/host/pen.el/scripts/supervisor:/root/.emacs.d/host/pen.el/scripts/golang:/root/.emacs.d/host/pen.el/scripts/unix-aliases:/root/.emacs.d/host/pen.el/scripts/jstate:/root/.emacs.d/host/pen.el/scripts/browser-scripts:/root/.emacs.d/host/pen.el/scripts/productivity:/root/.emacs.d/host/pen.el/scripts/tablist-scripts:/root/.emacs.d/host/pen.el/scripts/mon:/root/.emacs.d/host/pen.el/scripts/org-scripts:/root/.emacs.d/host/pen.el/scripts/cat-scripts:/root/.emacs.d/host/pen.el/scripts/net-scripts:/root/.emacs.d/host/pen.el/scripts/bbs-scripts:/root/.emacs.d/host/pen.el/scripts/bible-books:/root/.emacs.d/host/pen.el/scripts/bible-dbs:/root/.emacs.d/host/pen.el/scripts/x11:/root/.emacs.d/host/pen.el/scripts/scrape-scripts:/root/.emacs.d/host/pen.el/scripts/emacs-scripts:/root/.emacs.d/host/pen.el/scripts/pics:/root/.emacs.d/host/pen.el/scripts/sqlite-scripts:/root/.emacs.d/host/pen.el/scripts/strings:/root/.emacs.d/host/pen.el/scripts/bikeshed:/root/.emacs.d/host/pen.el/scripts/haskell-scripts:/root/.emacs.d/host/pen.el/scripts/haskell-scripts/cabal-haskellscript-scripts:/root/.emacs.d/host/pen.el/scripts/haskell-scripts/stack-lts-6.25-scripts:/root/.emacs.d/host/pen.el/scripts/haskell-scripts/cabal-3.10.3.0-scripts:/root/.emacs.d/host/pen.el/scripts/sorting:/root/.emacs.d/host/pen.el/scripts/host-scripts:/root/.emacs.d/host/pen.el/scripts/awk-scripts:/root/.emacs.d/host/pen.el/scripts/ed-scripts:/root/.emacs.d/host/pen.el/scripts/metservice:/root/.emacs.d/host/pen.el/scripts/chess:/root/.emacs.d/host/pen.el/scripts/ruby-scripts:/root/.emacs.d/host/pen.el/scripts/unicode-scripts:/root/.emacs.d/host/pen.el/scripts/vim-related:/root/.emacs.d/host/pen.el/scripts/text-scripts:/root/.emacs.d/host/pen.el/scripts/ved-scripts:/root/.emacs.d/host/pen.el/scripts/emacs-remote-control:/root/.emacs.d/host/pen.el/scripts/clojure:/root/.emacs.d/host/pen.el/scripts/clojure/utils:/root/.emacs.d/host/pen.el/scripts/clojure/.cpcache:/root/.emacs.d/host/pen.el/scripts/clojure/tools:/root/.emacs.d/host/pen.el/scripts/graphviz:/root/.emacs.d/host/pen.el/scripts/docker-scripts:/root/.emacs.d/host/pen.el/scripts/nl:/root/.emacs.d/host/pen.el/scripts/markdown:/root/.emacs.d/host/pen.el/scripts/games:/root/.emacs.d/host/pen.el/scripts/c-scripts:/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts:/root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/dbqueries:/root/.emacs.d/host/pen.el/scripts/sh-ext:/root/.emacs.d/host/pen.el/scripts/html:/root/.emacs.d/host/pen.el/scripts/libraries:/root/.emacs.d/host/pen.el/scripts/grepscripts:/root/.emacs.d/host/pen.el/scripts/pascal:/root/.emacs.d/host/pen.el/scripts/prolog-scripts:/root/.emacs.d/host/pen.el/scripts/prolog-scripts/tutorialspoint:/root/.emacs.d/host/pen.el/scripts/apt:/root/.emacs.d/host/pen.el/scripts/sixel:/root/.emacs.d/host/pen.el/scripts/logging-scripts:/root/.emacs.d/host/pen.el/scripts/filter-tools:/root/.emacs.d/host/pen.el/scripts/docs:/root/.emacs.d/host/pen.el/scripts/eww:/root/.emacs.d/host/pen.el/scripts/net:/root/.emacs.d/host/pen.el/scripts/shell:/root/.emacs.d/host/pen.el/scripts/readme-scripts:/root/.emacs.d/host/pen.el/scripts/apps:/root/.emacs.d/host/pen.el/scripts/filesystem:/root/.emacs.d/host/pen.el/scripts/git-scripts:/root/.emacs.d/host/pen.el/scripts/m4-scripts:/root/.emacs.d/host/pen.el/scripts/devotionals:/root/.emacs.d/host/pen.el/scripts/bible-scripts-tests:/root/.emacs.d/host/pen.el/scripts/tmux-scripts:/root/.emacs.d/host/pen.el/scripts/rust-scripts:/root/.emacs.d/host/pen.el/scripts/scratch:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/go/bin:/root/.cargo/bin/cargo:/root/repos/go-ethereum/build/bin:/root/.cabal/bin:/root/.ghcup/bin:/usr/local/go/bin:/root/.local/bin:/root/.roswell/bin:/usr/games:/home/shane/source/git/fzf/bin\" TMUX=\"\" TMUX_PANE=\"\" PEN_WORKER=\"DEFAULT\" PEN_PREFIX=\"1\" PEN_GLOBAL_PREFIX=\"1\" PEN_PROMPTS_DIR=\"~/.emacs.d//host/prompts/prompts\" PEN_ENGINE=\"Human\"; ( cd \"/root/.emacs.d/host/pen.el/src/\"; . $HOME/.shellrc; \"ps\" \"-H\" \"-w\" \"-w\" \"-ef\"; echo -n $? > /tmp/elisp-bash-ps-h-2c94d11ce5_exit_code_65Sezg.txt ) > /tmp/elisp-bash-ps-h-2c94d11ce5_output_OclPzI.txt"])
+      ("root"
+       ["root" "2240974" "2240933" "0" "17:58" "?" "00:00:00" "      /bin/sh /root/.emacs.d/host/pen.el/scripts/ps -H -w -w -ef"])
+      ("root"
+       ["root" "2240975" "2240974" "0" "17:58" "?" "00:00:00" "        /bin/ps -H -w -w -ef"])
+      ("root"
+       ["root" "2238166" "1" "0" "17:23" "?" "00:00:00" "  xsel -p -i"])
+      ("root"
+       ["root" "2238169" "1" "0" "17:23" "?" "00:00:00" "  xsel -s -i"])
+      ("root"
+       ["root" "2238213" "1" "0" "17:23" "?" "00:00:00" "  xsel --clipboard --input"]))
+
+    (let ((n 6))
+      (eval
+       `(lambda (a b)
+          (setq a (aref (cadr a) ,n))
+          (setq b (aref (cadr b) ,n))
+          ;; (string< (if (stringp a) a (car a))
+          ;;          (if (stringp b) b (car b)))
+          (dictionary-lessp (if (stringp a) a (car a))
+                            (if (stringp b) b (car b))))))))))
+;; 19;18M
+
+
+
 (provide 'pen-tablist)

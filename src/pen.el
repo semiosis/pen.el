@@ -310,7 +310,6 @@ The arguments are in English like this:
 (require 'pen-source)
 (if (inside-docker-p)
     (require 'pen-common-lisp))
-;; (require 'pen-undo-tree)
 (require 'pen-man)
 (require 'pen-human)
 (require 'pen-clock)
@@ -428,6 +427,7 @@ Be mindful of quoting arguments correctly."
     (require 'pen-cua))
 (require 'pen-ftp)
 (require 'pen-tramp)
+(require 'pen-sort)
 (require 'pen-script)
 (require 'pen-calibre)
 (require 'pen-gpg)
@@ -470,6 +470,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-csv)
 (require 'pen-directory-navigation)
 (require 'pen-minimap)
+(require 'pen-artist)
 (require 'pen-external-tools)
 ;; (require 'pen-topsy)
 ;; (require 'pen-prism)
@@ -487,6 +488,10 @@ Be mindful of quoting arguments correctly."
       (require 'pen-toggle-scripts)
       (require 'pen-buttoncloud)
       (require 'pen-log)))
+
+;; (require 'pen-undo-tree)
+;; pen-undo-fu needs hydra:
+(require 'pen-undo-fu)
 
 ;; (require 'pen-search)
 ;; (require 'pen-grep)
@@ -1212,6 +1217,11 @@ interpretation by shells, use `shell-quote-argument' for that."
     (pen-list2cmd-f (-filter 'identity args))))
 
 (defalias 'cmd-f 'pen-cmd-f)
+
+(defun multicmd (&rest commands)  
+  (s-join " \";\" " (append
+                     '("multicmd")
+                     commands)))
 
 (defun pen-list2cmd-nice (l)
   (pen-snc (concat "cmd-nice " (mapconcat 'qf-or-empty l " "))
@@ -2687,6 +2697,10 @@ May use to generate code from comments."
 (require 'pen-bible-audio)
 (require 'pen-bible-org)
 (require 'pen-picture)
+(comment
+ (load "/usr/local/share/emacs/29.4.50/lisp/international/isearch-x.elc")
+ (load "/usr/local/share/emacs/29.4.50/lisp/international/isearch-x.el.gz"))
+(load (f-join pen-src-dir "isearch-x.el"))
 (require 'pen-writing)
 (require 'pen-calc)
 (require 'pen-magit-margin)

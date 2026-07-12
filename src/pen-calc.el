@@ -1,6 +1,10 @@
 (require 'calc)
 (calc-load-everything)
 
+;; The prefix "C-x *" is actually a real pain. It disrupts the chord progression.
+;; M-8 M-3 q - quick-calc
+(global-set-key (kbd "M-8 M-3") 'calc-dispatch)
+
 (defun calc-full-help ()
   (interactive)
   (tpop-fit-vim-string
