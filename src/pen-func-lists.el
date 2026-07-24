@@ -115,6 +115,7 @@
                          rdrview))
 (defset eshell-mode-funcs '(ranger
                             pcomplete-expand-and-complete))
+(defset calc-mode-funcs '(pen-calc-clear-stack))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))

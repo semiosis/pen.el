@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+example() {
+    {
+        date '+%B %d' --date='2 days ago'
+        date '+%B %d' 
+        date '+%B %d' --date='5 days ago'
+        date '+%B %d' --date='1 day ago'
+    } | visidata-sort-dates
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        date_format="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${date_format:="%B %d"}"
+
+IFS= read -r -d '' VDCODE <<HEREDOC
+#!/usr/bin/env -S pvd -p
+{"sheet": null, "col": "", "row": "", "longname": "open-file", "input": "/tmp/visidata-input.txt", "keystrokes": "o", "comment": "Open file or URL"}
+{"sheet": "visidata-input", "col": "text", "row": "", "longname": "type-customdate", "input": "$date_format", "comment": "set type of current column to custom date format"}
+{"sheet": "visidata-input", "col": "text", "row": "", "longname": "sort-asc", "input": "", "keystrokes": "[", "comment": "sort ascending by current column; replace any existing sort criteria"}
+{"longname": "save-sheet", "input": "/tmp/visidata-output.txt"}
+{"longname": "quit-all"}
+HEREDOC
+
+printf -- "%s\n" "$VDCODE" > /tmp/visidata_script.vdj
+chmod u+x /tmp/visidata_script.vdj
+
+rm -f /tmp/visidata-input.txt
+rm -f /tmp/visidata-output.txt
+tee /tmp/visidata-input.txt &>/dev/null
+
+unbuffer /tmp/visidata_script.vdj &>/dev/null
+cat /tmp/visidata-output.txt | pavs

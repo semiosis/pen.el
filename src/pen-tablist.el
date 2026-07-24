@@ -1513,6 +1513,13 @@ Returns the number of unmarked marks."
  (define-key tablist-minor-mode-map (kbd "m") 'tablist-mark-forward-and-next)
  (define-key tablist-minor-mode-map (kbd ",") 'tablist-mark-forward)
  (define-key tablist-minor-mode-map (kbd "RET") 'pen-tablist-etv-marked))
+
+;; These get in the way of prodigy bindings, though instead of unbinding these, I think I should keep them bound
+;; but have functions which defer to other packages
+(define-key tablist-minor-mode-map (kbd "m") nil)
+(define-key tablist-minor-mode-map (kbd "u") nil)
+(define-key tablist-minor-mode-map (kbd "U") nil)
+
 (define-key tabulated-list-mode-map (kbd "m") 'tablist-mark-forward-and-next)
 (define-key tabulated-list-mode-map (kbd ",") 'tablist-mark-forward)
 (define-key tabulated-list-mode-map (kbd "RET") 'pen-tablist-etv-marked)

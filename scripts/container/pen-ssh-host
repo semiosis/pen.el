@@ -28,6 +28,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
     -p) {
         USE_PROFILE=y
         shift
@@ -67,15 +73,22 @@ fi
 
 case "$sn" in
     sshh|ssh-host|pen-ssh-host) {
-        :
-        pen-cterm-ssh -ssh-to-host y -ssh "$@"
+        if test "$DO_EXEC" = "y"; then
+            pen-cterm-ssh -E -ssh-to-host y -ssh -"$@"
+        else
+            pen-cterm-ssh -ssh-to-host y -ssh "$@"
+        fi
     }
     ;;
 
     *) {
         : "${USE_PROFILE:="n"}"
         export USE_PROFILE
-        pen-cterm-ssh -ssh-to-host y -ssh "$sn" "$@"
+        if test "$DO_EXEC" = "y"; then
+            pen-cterm-ssh -E -ssh-to-host y -ssh "$sn" "$@"
+        else
+            pen-cterm-ssh -ssh-to-host y -ssh "$sn" "$@"
+        fi
     }
     ;;
-esac
+                                      esac

@@ -72,7 +72,7 @@
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
             (let ((res (apply proc args)))
               res)
-          (snd (concat "fehdf " (pen-q fp)))))
+          (snc (concat "fehdf " (pen-q fp)))))
        
        ((string-equal "xls" ext)
         (if (>= (prefix-numeric-value current-prefix-arg) 4)

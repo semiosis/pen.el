@@ -214,7 +214,16 @@ fi
 tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
 trap "rm $(cmd-nice-posix "$tf_returncode") 2>/dev/null" 0
 
-CMD="bash -c $(cmd-nice-posix "set -o pipefail; $CMD ; echo \$? > $tf_returncode")"
+# Test (this is why I use 'eval' before '$CMD'):
+# tpop 'false ""'; echo $?
+
+# pl "bash -c $(cmd-nice-posix "set -o pipefail; eval false ; echo \$?")"
+# pl "bash -c $(cmd-nice-posix "set -o pipefail; eval false ; echo \\$?")"
+# pl "bash -c $(cmd-nice-posix "set -o pipefail; eval false ; echo \\$\\?")"
+
+# Using an eval, I was able tot get around the escaping issue
+# Regular eval had problems with (), i.e. { tpop code-out intty yn "Run with 'UPDATE=y'? (y/n)\n CMD: $CMD" } would not work
+CMD="bash -c $(cmd-nice-posix "set -o pipefail; myeval $CMD ; eval echo \\$\\? > $tf_returncode")"
 
 if stdin_exists && ! test "$no_stdin" = y; then
     input_fp="$(cat | tf txt)"

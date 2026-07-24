@@ -105,12 +105,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test -n "$prompt"; then
-    set -- "--prompt=${prompt}> "
-fi
-
 CMD="$(cmd-nice-posix "$@")"
 : ${CMD:="$(cmd-nice-posix "$@")"}
+
+if test -n "$prompt"; then
+    set -- "--prompt=${prompt}> $CMD"
+fi
 
 opts=""
 
@@ -183,8 +183,10 @@ opts+=" --bind=$(cmd-nice-posix "$bindings") "
 if test "$USE_NVC" = "y"; then
     opts=" --color=bw $opts"
     full_cmd="$bin --algo=v2 $opts $CMD"
-    nvc -E "$full_cmd" | cat
+    # myeval -tv nvc -E "$full_cmd" | cat
+    myeval nvc -E "$full_cmd" | cat
 else
     full_cmd="$bin --algo=v2 $opts $CMD"
-    eval "$full_cmd" | cat
+    # myeval -tv -E "$full_cmd" | cat
+    myeval -E "$full_cmd" | cat
 fi

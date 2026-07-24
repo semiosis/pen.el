@@ -543,41 +543,110 @@ Return list of cons '((destination content)"
                                   (
                                    :major-modes ascii-adventures-mode
                                                 ;; :predicate (not (buffer-modified-p))
-                                                )
+                                   )
   (ignore-errors (let* ((mm-string (with-current-buffer buffer (str major-mode)))
                         (parse (with-current-buffer buffer (org-element-parse-buffer)))
-                        (title mm-string))
+                        ;; (title mm-string)
+                        (title "ASCII Adventures"))
 
                    (universal-sidecar-insert-section ascii-adventures-section title
-                     (insert
-                      (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-                        ;; This is inserted
-                        ;; "[[el:(sps)][Split screen]]"
-                        (pps (org-element-map parse 'link
-                               (lambda (link)
-                                 (when (string= (org-element-property :type link) "el")
-                                   (org-element-property :path link)))))
+                     ;; TODO Try to get real-time information going. Tabular data?
 
-                        (comment (pps (org-element-map parse 'link
-                                        (lambda (link)
-                                          (comment
-                                           (org-element-property :path link))
-                                          (when (string= (org-element-property :type link) "el")
-                                            (format "[[%s][%s]]"
-                                                    (pps (org-element-property :path link))
-                                                    (pps (buffer-substring (org-element-property :contents-begin link)
-                                                                           (org-element-property :contents-end link)))))))))
+                     ;; TODO Try buttons
+                     (comment
+                      ;; Works
+                      (insert-button "Button"
+                                     'type
+                                     'on-button
+                                     'action
+                                     (lambda (b)
+                                       ;; Button
+                                       (tv b))))
 
-                        (comment (pps (org-element-map parse 'link
-                                        (lambda (link)
-                                          (when (string= (org-element-property :type link) "el")
-                                            (org-element-property :path link))))))
-                        (comment (pps (org-element-map parse 'link
-                                        (lambda (link)
-                                          link))))
-                        (comment (pps parse))
-                        ;; This runs after the above
-                        (comment (some-post-processing-of-org-text))))))))
+                     ;; Works
+                     (insert-text-button
+                      "Text button help func"
+                      :type 'help-xref
+                      'face 'link
+                      'help-echo
+                      "mouse-2, RET: next unencodable character"
+                      'help-function
+                      (lambda (bufname pos coding)
+                        (tv bufname)
+                        ;; (when (buffer-live-p (get-buffer bufname))
+                        ;;   (pop-to-buffer bufname)
+                        ;;   (if (< (point) pos)
+                        ;;       (goto-char pos)
+                        ;;     (forward-char 1)
+                        ;;     (search-unencodable-char coding)
+                        ;;     (forward-char -1)))
+                        )
+                      'help-args (list (buffer-name) 0
+                                       'us-ascii))
+
+                     (comment
+                      ;; Works
+                      (insert-text-button "Text button"
+                                          'follow-link t
+                                          'action
+                                          (lambda (m)
+                                            (interactive)
+                                            ;; marker
+                                            (tv m))))
+
+                     ;; TODO Try to get widgets working properly?
+                     ;; Otherwise, just let the sidecar show information rather than controls.
+                     (comment
+                      (widget-create 'editable-field
+                                     :format "Address: %v"
+                                     "Some Place\nIn some City\nSome country."))
+                     (comment
+                      (insert
+                       (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                         ;; This is inserted
+                         ;; "[[el:(sps)][Split screen]]"
+                         (pps (org-element-map parse 'link
+                                (lambda (link)
+                                  (when (string= (org-element-property :type link) "el")
+                                    (org-element-property :path link)))))
+
+                         (comment (pps (org-element-map parse 'link
+                                         (lambda (link)
+                                           (comment
+                                            (org-element-property :path link))
+                                           (when (string= (org-element-property :type link) "el")
+                                             (format "[[%s][%s]]"
+                                                     (pps (org-element-property :path link))
+                                                     (pps (buffer-substring (org-element-property :contents-begin link)
+                                                                            (org-element-property :contents-end link)))))))))
+
+                         (comment (pps (org-element-map parse 'link
+                                         (lambda (link)
+                                           (when (string= (org-element-property :type link) "el")
+                                             (org-element-property :path link))))))
+                         (comment (pps (org-element-map parse 'link
+                                         (lambda (link)
+                                           link))))
+                         (comment (pps parse))
+                         ;; This runs after the above
+                         (comment (some-post-processing-of-org-text)))))
+
+                     ;; Yeah, widgets really don't seem to work nicely
+                     (comment
+                      (widget-create 'editable-list
+                                     :entry-format "%i %d %v"
+                                     :notify
+                                     (lambda (widget &rest ignore)
+                                       (let ((old (widget-get widget
+                                                              ':example-length))
+                                             (new (length (widget-value widget))))
+                                         (unless (eq old new)
+                                           (widget-put widget ':example-length new)
+                                           (message "You can count to %d." new))))
+                                     :value '("One" "Eh, two?" "Five!")
+                                     '(editable-field :value "three"))
+                      (use-local-map widget-keymap)
+                      (widget-setup))))))
 
 (add-to-list 'universal-sidecar-sections '(ascii-adventures-section :title "ASCII Adventures!"))
 

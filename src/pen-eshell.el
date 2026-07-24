@@ -299,7 +299,10 @@ or an external command."
 
 (defun eshell-nw ()
   (interactive)
-  (e/nw 'eshell-unique)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (e/nw 'scratch-buffer)
+    (e/nw 'eshell-unique))
+  
   ;; (split-window-vertically)
   ;; (other-window 1)
   ;; (shell) ; this is a real terminal
@@ -308,7 +311,10 @@ or an external command."
 
 (defun eshell-sps ()
   (interactive)
-  (e/sps 'eshell-unique)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (e/sps 'scratch-buffer)
+    (e/sps 'eshell-unique))
+  
   ;; (split-window-vertically)
   ;; (other-window 1)
   ;; (shell) ; this is a real terminal
@@ -317,7 +323,9 @@ or an external command."
 
 (defun eshell-sph ()
   (interactive)
-  (e/sph 'eshell-unique)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (e/sph 'scratch-buffer)
+    (e/sph 'eshell-unique))
   ;; (split-window-vertically)
   ;; (other-window 1)
   ;; (shell) ; this is a real terminal
@@ -326,7 +334,9 @@ or an external command."
 
 (defun eshell-spv ()
   (interactive)
-  (e/spv 'eshell-unique)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (e/spv 'scratch-buffer)
+    (e/spv 'eshell-unique))
   ;; (split-window-horizontally)
   ;; (other-window 1)
   ;; (shell) ; shell is zsh or whatever the default shell is
@@ -423,13 +433,23 @@ or an external command."
 ;; define here an eshell function which will be found first
 ;; TODO Make this display inside of a tabulated list
 (defun eshell/df (&rest args)
-  "Like the bash `command` function."
+  "Like the bash `df` function."
   ;; Firstly, fix the arguments
   (setq args (mapcar 'str args))
 
   (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "df") args)))
                             t)
   ;; (pen-snc (apply 'cmd (cons "df" args)))
+  )
+
+(defun eshell/filan (&rest args)
+  "filan from rsync package"
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+
+  (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "filan") args)))
+                            t)
+  ;; (pen-snc (apply 'cmd (cons "filan" args)))
   )
 
 ;; paste -d , <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c -52) <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c 53-) | v

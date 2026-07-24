@@ -116,6 +116,7 @@
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
 (global-set-key (kbd "<S-f2>") 'toggle-chrome-extras)
+(global-set-key (kbd "H-;") 'toggle-chrome-extras)
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
 (global-set-key (kbd "<S-f5>") 'global-display-line-numbers-mode)
 (global-set-key (kbd "<S-f6>") 'toggle-truncate-lines)

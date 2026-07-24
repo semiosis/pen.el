@@ -73,6 +73,7 @@ HEREDOC
 esac; done
 
 if test -n "$E_TCP_CMD"; then
+    # echo "$E_TCP_CMD" | tv &>/dev/null
     if test -f "/root/.pen/emacs-tcp-server-ports/${SOCKET}"; then
         port="$(cat "/root/.pen/emacs-tcp-server-ports/${SOCKET}")"
         "pen-tcp-server" "$port" "$E_TCP_CMD"
@@ -1159,6 +1160,8 @@ case "$f" in
             done
             )
         done
+
+        sync-elpa-with-host
 
         exit $?
     }

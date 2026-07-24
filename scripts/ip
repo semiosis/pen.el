@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+set -o pipefail
+
+/sbin/ip "$@" | pavs

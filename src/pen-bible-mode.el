@@ -533,11 +533,13 @@
                              ;;   "#5555ff")
                              )
 
+          )
+                  ;; This runs once per line to produce the right purple margin
           (pen-magit-make-margin-overlay
            (concat "  "
                    (magit--propertize-face
                     (bible-verse-margin-status)
-                    'pen-magit-right-margin-face)))))
+                    'pen-magit-right-margin-face))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 
@@ -2539,7 +2541,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (apply (intern command) (list (bible-verse-ref-at-point-p))))))
 
 (defun fz-ddgr-bibleverse (query)
-  (interactive (list (read-string-hist "fz-ddgr-bibleverse: ")))
+  (interactive (list (read-string-hist "fz-ddgr-bibleverse: " nil nil nil nil t)))
 
   (let* ((results ;; (ddgr (pen-cmd-f "site:https://biblegateway.com/passage/?search" query))
           (ddgr (pen-cmd-f "bible gateway passage" query)))

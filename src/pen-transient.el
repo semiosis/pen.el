@@ -69,6 +69,11 @@ to the setup function:
        ;; Add name to the end so I can execute and run a transient definition
        ',name)))
 
+(comment
+ (defset src--transient-define-prefix (read (pen-get-sym-source 'transient-define-prefix)))
+ (: pen-get-sym-source.read.type.pps.message 'transient-define-prefix)
+ (append (: pen-get-sym-source.read.pps.tv 'transient-define-prefix)))
+
 (defmacro transient-define-suffix (name arglist &rest args)
   "Define NAME as a transient suffix command.
 
@@ -289,7 +294,7 @@ ARGLIST.  The infix arguments are usually accessed by using
   :key "C-w"
   :description "wave"
   (interactive)
-  
+
   (message
    (pen-colour-success
     (format "Waves at %s" (current-time-string)))))

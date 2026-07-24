@@ -84,6 +84,7 @@ esac
             mfz +s -m -nv | awk 1 | mnm | hsqf-clean
         } | while IFS=$'\n' read -r line; do
             exec <&1
+            line="$(printf -- "%s" "$line" | sed "s/<pen-newline>/\n/g")"
             # eval "$line"
             # sps -E "$line"
             # sps zrepl -E "$line"

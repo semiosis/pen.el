@@ -3,6 +3,8 @@ export TTY
 
 ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+set -xv
+
 sn="$(basename "$0")"
 sn="$(p "$sn" | sed 's/^pen-//')"
 
@@ -23,4 +25,20 @@ pen-set-browser pen-copy-inform
 # export BROWSER=pen-iceweasel
 # pen-set-browser pen-iceweasel
 
-unbuffer lt "$@"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -editlt) {
+        edit_lt=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$edit_lt" = "y"; then
+    # Try to hack on lt source code
+    which -a lt | xargs v
+else
+    unbuffer lt "$@"
+fi

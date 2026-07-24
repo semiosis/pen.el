@@ -32,9 +32,10 @@
       (if (eq (point) startpt)
 
           (if (string-equal (chomp (thing-at-point 'line))
-                            (str (buffer-substring (point) (pos-eol))))) body
-
-                            )))
+                            (str (buffer-substring (point) (pos-eol))))
+              nil)
+        ;; body
+        )))
 
    ((derived-mode-p 'comint-mode)
     ;; (comint-bol)

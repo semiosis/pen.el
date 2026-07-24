@@ -128,4 +128,10 @@
 (advice-add 'calc-dispatch :around #'calc-dispatch-around-advice)
 (advice-remove 'calc-dispatch #'calc-dispatch-around-advice)
 
+(defun pen-calc-clear-stack ()
+  (interactive)
+  (calc-pop 0))
+
+(define-key calc-mode-map (kbd "d k") 'pen-calc-clear-stack)
+
 (provide 'pen-calc)

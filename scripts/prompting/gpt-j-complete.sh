@@ -102,7 +102,7 @@ openai api \
     --stop "$PEN_STOP_SEQUENCE" \
     -p "$PEN_PROMPT" > "$tf_response"
 
-: "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
+: "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -m)"}"
 
 export PEN_COLLECT_FROM_POS
 results_dir="$(openai_results_split "$tf_response")"

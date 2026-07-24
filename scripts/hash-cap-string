@@ -24,8 +24,8 @@ esac; done
 string="$(cat)"
 hash="$(printf -- "%s" "$string" | sha)"
 : "${hashlen:="10"}"
-: "${hashlen:="$(printf -- "%s" "$hash" | wc -c)"}"
-len="$(printf -- "%s" "$string" | wc -c)"
+: "${hashlen:="$(printf -- "%s" "$hash" | wc -m)"}"
+len="$(printf -- "%s" "$string" | wc -m)"
 : "${maxlen:="100"}"
 if test "$len" -gt "$maxlen" || test "$force" = y; then
     leftlen="$(( maxlen - 1 - hashlen ))"

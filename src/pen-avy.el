@@ -143,7 +143,9 @@
                (avy--style-fn avy-style)))))
 
     (if pt
-        (ekm "C-m"))))
+        (if (org-link-get-address)
+            (pen-org-open-at-point)
+          (ekm "C-m")))))
 
 (defun ace-link-goto-link-or-button ()
   (interactive)

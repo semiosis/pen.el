@@ -42,24 +42,26 @@
     (save-excursion
       (goto-char (window-start))
       (while (re-search-forward org-link-any-re end t)
-        ;; Check that the link is visible. Look at the last character
-        ;; position in the link ("...X]]") to cover links with and
-        ;; without a description.
-        (when (not (outline-invisible-p (- (match-end 0) 3)))
-          (push
-           (cons
-            ;; this makes it more reliable
-            (save-excursion
-              ;; The goto-byte match-beginngin thing broke it for [[brain:agenda/agenda::Church]]
-              ;; (goto-byte
-              ;;  (match-beginning 0))
-              (backward-char)
-              (link-at-point))
-            ;; (buffer-substring-no-properties
-            ;;  (match-beginning 0)
-            ;;  (match-end 0))
-            (match-beginning 0))
-           res)))
+        (let ((mbeg (match-beginning 0))
+              (mend (match-end 0)))
+          ;; Check that the link is visible. Look at the last character
+          ;; position in the link ("...X]]") to cover links with and
+          ;; without a description.
+          (when (not (outline-invisible-p (- mend 3)))
+            (push
+             (cons
+              ;; this makes it more reliable
+              (save-excursion
+                ;; The goto-byte match-beginning thing broke it for [[brain:agenda/agenda::Church]]
+                ;; (goto-byte
+                ;;  (match-beginning 0))
+                (backward-char)
+                (link-at-point))
+              ;; (buffer-substring-no-properties
+              ;;  (match-beginning 0)
+              ;;  (match-end 0))
+              mbeg)
+             res))))
       (nreverse res))))
 
 (defun org-link--open-elisp (path)

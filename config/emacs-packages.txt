@@ -2410,3 +2410,6 @@ kmacro-x
 wisp-mode
 lichess
 org-remark
+undofu
+undo-fu
+ebdb-mua-sidecar

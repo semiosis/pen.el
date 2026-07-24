@@ -72,4 +72,46 @@ rerun `wordnut--lookup' with the selected word."
 
 (define-key wordnut-mode-map (kbd "M-9") 'dict-word)
 
+(defun helm-fzword-default ()
+  (interactive)
+  (helm-fzword "azy#ic$"))
+
+(defun helm-fzword (&optional init)
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (wordnet-word)
+    (helm :sources '(helm-fzword-source)
+
+          :buffer "*helm-fzword*"
+          :input init)))
+
+(defset helm-fzword-source
+  (helm-build-async-source "fzword"
+    :candidates-process 'helm-fzword--do-candidate-process
+    ;; :filter-one-by-one can be a list of functions
+    :filter-one-by-one 'identity
+    ;; Don't let there be a minimum. it's annoying
+    :requires-pattern 0
+    :action 'helm-fzword-open
+    :candidate-number-limit 9999))
+
+(defun helm-fzword--do-candidate-process ()
+  (let* ((cmd-args (-filter 'identity (list helm-fzword-executable (or (sor helm-pattern)
+                                                                       "^.*$"))))
+         (proc (apply 'start-file-process "helm-fzword" helm-buffer cmd-args)))
+    (prog1 proc
+      (set-process-sentinel
+       (get-buffer-process helm-buffer)
+       #'(lambda (process event)
+           (helm-process-deferred-sentinel-hook
+            process event (helm-default-directory)))))))
+
+(defcustom helm-fzword-executable "fzword"
+  "Default executable for fzword"
+  :type 'stringp
+  :group 'helm-fzword)
+
+(defun helm-fzword-open (candidate)
+  (wordnut--lookup candidate))
+
 (provide 'pen-wordnut)

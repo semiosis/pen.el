@@ -86,4 +86,20 @@ Intended for `eldoc-documentation-functions' (which see)."
  (eval-string (cat "/root/.pen/tmp/WTQgqOzpOA"))
  )
 
+(comment
+ (find-function 'transient-define-prefix)
+ (pen-get-sym-source 'transient-define-prefix))
+
+(defun pen-get-sym-source (sym)
+  (let ((src))
+    (save-window-excursion
+      (cond ((or (functionp sym)
+                 (macrop sym))
+             (find-function sym)
+             (with-current-buffer (current-buffer)
+               (shut-up (call-interactively 'er/expand-region))
+               (setq src (pen-selection))
+               (deselect)))))
+    src))
+
 (provide 'pen-elisp)

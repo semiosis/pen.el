@@ -7,7 +7,7 @@ end="$2"
 : ${start:="{{"}
 
 if test -z "$end"; then
-    end="$(printf -- "%s" "$start" | tr '[<\[({]' '[>\])}]')"
+    end="$(printf -- "%s" "$start" | tr '[<\[({⟨]' '[>\])}⟩]')"
 fi
 : ${end:="$start"}
 

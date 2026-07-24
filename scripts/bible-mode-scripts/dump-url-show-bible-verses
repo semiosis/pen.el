@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+url="$1"
+
+(
+ocif curl "$url" | awk 1
+elinks-dump "$url" | awk 1
+) | scrape-bible-references| uniqnosort # | bible-show-verses -pp

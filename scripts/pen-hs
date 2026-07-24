@@ -60,7 +60,7 @@ category="$(printf -- "%s" "$1" | sed 's/^pen-//')"
 shift
 set -- "$category" "$@"
 
-CMD="$(cmd-nice-posix "$@" | pen-esc '`!')"
+CMD="$(cmd-nice-posix "$@" | pen-esc '`!' | sed -z "s/\n/<pen-newline>/g")"
 parameters="$CMD"
 
 category="$1"

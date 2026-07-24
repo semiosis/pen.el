@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+# This script should work with e:pen-yn.
+
+# Usage:
+# doyes <options> "$@"
+# doyes -for emacs nem man emacs
+
+. $SCRIPTS/lib/hs
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -for) {
+        matcher="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test -n "$matcher"; then
+    if test -n "$DOYES_MATCHER"; then
+        export DOYES_MATCHER="$DOYES_MATCHER|$matcher"
+    else
+        export DOYES_MATCHER="$matcher"
+    fi
+fi
+
+"$@"

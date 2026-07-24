@@ -31,6 +31,11 @@ case "$sn" in
     }
     ;;
 
+    canonicalise-bible-book-title-short|canonicalise-bible-book-title-els-short) {
+        fun_name=bible-canonicalise-ref-short
+    }
+    ;;
+
     list-bible-book-titles-els) {
         fun_name=list-bible-book-titles-lines
     }

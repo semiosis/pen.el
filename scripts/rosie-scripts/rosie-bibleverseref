@@ -1,6 +1,17 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cv) {
+        chapter_verses_only=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # . $SCRIPTS/lib/hs
 
 test "$#" -gt 0 && last_arg="${@: -1}"
@@ -8,8 +19,12 @@ query="$lastarg"
 
 # rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
 
-if test "$ROSIE_PARAMS" = "case_insensitive"; then
-    /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+if test "$chapter_verses_only" = "y"; then
+    if test "$ROSIE_PARAMS" = "case_insensitive"; then
+        /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+    else
+        /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
+    fi
 else
     /usr/local/bin/rosie -f $PENELD/scripts/rosie-scripts/bible-verse-filter.rpl "$@"
 fi

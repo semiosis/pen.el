@@ -162,4 +162,13 @@
 ;;   (let ((frame 
 ;;          (make-frame)))))
 
+
+(defun pen-select-frame-by-name ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (call-interactively 'delete-frame)
+    (call-interactively 'select-frame-by-name)))
+
+(define-key global-map (kbd "H-~") 'pen-select-frame-by-name)
+
 (provide 'pen-frame)

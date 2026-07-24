@@ -25,6 +25,7 @@
 ;; (sslk "lag" nil)
 (sslk "lagc" #'crossword)
 (sslk "lags" #'snake)
+(sslk "lagh" #'chess)
 (sslk "lagd" #'dunnet)
 (sslk "laga" #'ascii-adventures)
 (sslk "lagp" #'pong)
@@ -395,5 +396,8 @@
     res))
 (advice-add 'company-mode :around #'company-mode-around-advice)
 ;; (advice-remove 'company-mode #'company-mode-around-advice)
+
+(define-key global-map (kbd "<help> m") 'describe-mode)
+(define-key global-map (kbd "<help> M") 'pen-show-active-minor-modes-for-buffer)
 
 (provide 'pen-post-bindings)

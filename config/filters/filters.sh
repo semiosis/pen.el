@@ -5,8 +5,8 @@ get-1-grams.sh
 sed "s/\\s\\+/\\n/g" | sed '/^$/d'                                                  # split by whitespace
 extract-queries-from-google-url-contained.sh
 dedup-prefixes
-minimise.sh
-unminimise.sh
+mnm # minimise
+umn # unminimise
 cat
 path-candidates.sh | print-line-if-path-exists.sh | uniqnosort                      # filter partial paths files
 path-candidates.sh | print-line-if-which.sh | uniqnosort                            # filter partial which
@@ -409,6 +409,7 @@ split-pipe-multiline
 acronymise
 gen-qdot
 grex                                                                                # generate regex
+grex -w -d                                                                          # generate regex use \w for words and \d for digits
 definition-list-to-formatted-definitions.sh
 sps siq
 sps awkward
@@ -471,6 +472,7 @@ scrape-bible-references -v     # verses only
 scrape-bible-references -c     # chapters only
 scrape-bible-references -b     # books only
 canonicalise-bible-book-title  # Just the book title
+canonicalise-bible-book-title-short  # Just the book title
 cif -nd bible-show-verses
 cif -nd bible-show-verses -pp
 hebrew-letters-explain
@@ -479,6 +481,7 @@ tv
 sha
 fix-github-markdown
 canonicalise-bible-ref # Could be a book title or entire ref
+canonicalise-bible-ref-short # Could be a book title or entire ref
 fill-lines-to-longest-line
 f-point-out-parentheses
 fix-nasb-links-org
@@ -488,3 +491,6 @@ sol-explode    # prettify / expand shell / bash
 org-quote-lines  # Puts each line in an org quotation
 org-strip-clutter-for-reading
 rosie-scrape num.denoted_hex # hex numbers
+reformat-checklist # org checklist reformat
+bolden-links
+unbolden-links

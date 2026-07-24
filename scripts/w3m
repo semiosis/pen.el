@@ -3,7 +3,47 @@ export TTY
 
 export UPDATE=y
 
+# I found a website that works in elinks but not w3m and I'm trying to figure out how to get it to work in w3m
+# w3m "http://www.isthe.com/chongo/"
+
+# /usr/bin/w3m whatsmyua.info "-o" "user_agent=$(shuf -n1 =(echo -e '"Mozilla/5.0 (Linux i686; U; w3m 0.5.3; en)"\n"Mozilla/5.0 (Linux x86_64; U; w3m 0.5.3; en)"'))"
+
 . $SCRIPTS/lib/hs
+
+# TODO Perhaps put the user agent options into e:use
+# : "${user_agent:="$(echo -e '"Mozilla/5.0 (Linux i686; U; w3m 0.5.3; en)"\n"Mozilla/5.0 (Linux x86_64; U; w3m 0.5.3; en)"')"}"
+# : "${user_agent:="$(echo -e 'ELinks/0.17.GIT (textmode; Linux 5.11.0-15.1-liquorix-amd64 x86_64; -)')"}"
+# : "${user_agent:="$(echo -e 'Emacs-w3m/1.4.632 w3m/0.5.3+git20190105')"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -A) {
+        user_agent="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -Aew3m) {
+        user_agent="Emacs-w3m/1.4.632 w3m/0.5.3+git20190105"
+        shift
+    }
+    ;;
+
+    -Aelinks) {
+        user_agent="ELinks/0.17.GIT (textmode; Linux 5.11.0-15.1-liquorix-amd64 x86_64; -)"
+        shift
+    }
+    ;;
+
+    -Afirefox) {
+        user_agent="$(echo -e '"Mozilla/5.0 (Linux i686; U; w3m 0.5.3; en)"\n"Mozilla/5.0 (Linux x86_64; U; w3m 0.5.3; en)"')"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
 
 if ! test -f /usr/local/bin/w3m && test -d "$/root/.pen/w3m-0.5.3-with-more-tags-represented-in-dump"; then
     (
@@ -84,14 +124,20 @@ maybecache() {
     fi
 }
 
+fargs=()
+
+if test -n "$user_agent"; then
+    fargs+=("-o" "user_agent=$(shuf -n1 <(echo -e "$user_agent"))")
+fi
+
 if stdin_exists; then
     if test "$1" = "-halfdump"; then
         # "$bin" "$@" | htmlentities-decode.sh | tv -nw
-        maybecache "$bin" "$@" | htmlentities-decode.sh
+        maybecache "$bin" "$@" "${fargs[@]}" | htmlentities-decode.sh
     else
-        maybecache "$bin" "$@"
+        maybecache "$bin" "$@" "${fargs[@]}"
     fi
 else
-    maybecache "$bin" "$@"
+    maybecache "$bin" "$@" "${fargs[@]}"
 fi
 

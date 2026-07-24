@@ -32,6 +32,36 @@
 ;;             ;; linum-mode
 ;;             ))
 
+;; Figure out how to query j:manage-minor-mode-default
+(comment
+ (pen-manage-minor-mode-get-setting 'universal-sidecar-buffer-mode 'font-lock-mode))
+(defun pen-manage-minor-mode-get-setting (major-mode minor-mode)
+  (car
+   (-filter 'identity
+            (mapcar
+             (lambda (tp)
+               (pcase tp
+                 ((and
+                   ;; `(,mjm
+                   ;;   (,setting ,mm))
+                   `(,mjm ,setting ,mm)
+                   ;; (pred (lambda (tp) (eq (cadadr tp) minor-mode)))
+                   (pred (lambda (tp)
+                           (and
+                            (eq mjm major-mode)
+                            (eq mm minor-mode)))))
+                  setting)))
+
+             (-flatten-n 1
+                         (mapcar (lambda (tp)
+                                   (let ((mjm (car tp))
+                                         (mrms (cdr tp)))
+                                     (mapcar (lambda (tpi)
+                                               (append (list mjm)
+                                                       tpi))
+                                             mrms)))
+                                 manage-minor-mode-default))))))
+
 (setq manage-minor-mode-default
       '((aws-instances-mode
          (on tablist-minor-mode)
@@ -102,9 +132,6 @@
         (clojure-mode
          (on org-link-minor-mode))
         
-        (universal-sidecar-buffer-mode
-         (on org-link-minor-mode))
-
         (helpful-mode
          (on org-link-minor-mode))
 
@@ -120,8 +147,10 @@
 
         (text-mode
          (off writegood-mode))
-
         
+        (universal-sidecar-buffer-mode
+         (on font-lock-mode)
+         (on org-link-minor-mode))
 
         (global
          (off prettify-symbols-mode)

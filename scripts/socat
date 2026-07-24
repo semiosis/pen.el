@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# Explanations:
+# - https://ixday.github.io/post/socat_telnet/
+
+. $SCRIPTS/lib/hs
+
+/usr/bin/socat "$@"

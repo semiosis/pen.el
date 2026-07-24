@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# used: Use Default.
+# Like the "use" command, but is overridable by "use".
+
+
+opt="$1"
+shift
+case "$opt" in
+    pen-emacsd-*) {
+        : "${SOCKET:="$opt"}" && export SOCKET
+    }
+    ;;
+
+    pendefault) {
+        : "${SOCKET:="DEFAULT"}" && export SOCKET
+    }
+    ;;
+
+    p[ei]n[0-9]*) {
+        opt="$(p "$opt" | sed 's/^p[ei]n//')"
+        : "${SOCKET:="pen-emacsd-$opt"}" && export SOCKET
+    }
+    ;;
+
+    nvlinks|browsh|elinks|w3m|ew3m|eww|nvw3m) {
+        : "${BROWSER:="$opt"}" && export BROWSER
+    }
+    ;;
+
+    *)
+esac
+
+if test "$#" -eq 0; then
+    zsh
+else
+    "$@"
+fi

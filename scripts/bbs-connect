@@ -1,0 +1,69 @@
+#!/bin/bash
+export TTY
+
+connect() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -ansi) {
+            setup_ansi=y
+            shift
+        }
+        ;;
+
+        -xterm) {
+            setup_xterm=y
+            shift
+        }
+        ;;
+
+        -s) {
+            BBS_CLIENT=socat
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    : "${BBS_CLIENT:="telnet"}"
+
+    if test "$setup_ansi" = "y"; then
+        export TERM=ansi
+        export COLORTERM=ansi
+    fi
+
+    if test "$setup_xterm" = "y"; then
+        export TERM=xterm
+    fi
+
+    domain="$1"
+    port="$2"
+    : "${port:="23"}"
+
+    case "$BBS_CLIENT" in
+        socat) {
+            socat - "tcp:$domain:$port"
+        }
+        ;;
+
+        minicom) {
+            # Set up a serial port pair
+            sps socat -d -d pty,link=/dev/ttyVA00,echo=0,perm=0777 pty,link=/dev/ttyVB00,echo=0,perm=0777
+
+            # Connect to the remote TCP server and forward to the serial port
+            sps socat -d -d TCP:$domain:$port /dev/ttyVA00,b115200,raw,echo=0
+
+            nvt minicom -D /dev/ttyVB00 -b 115200 -o
+        }
+        ;;
+
+        telnet|*) {
+            telnet "$domain" "$port"
+        }
+        ;;
+    esac
+
+    return 0
+}
+
+connect "$@"

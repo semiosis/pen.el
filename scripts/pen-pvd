@@ -131,6 +131,7 @@ if stdin_exists; then
 fi
 
 export EDITOR=fpvd-editor
+export BROWSER="$(nsfa -exports BROWSER,SOCKET used pen1 nw-ew3m)"
 
 visidata "$@"
 

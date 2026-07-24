@@ -93,7 +93,8 @@
     ((40500 40800) . ((chrome (concat "http://" hn ":" port))
                       (eww (concat "http://" hn ":" port))))
     (443 . ((chrome (concat "https://" hn ":" port))
-            (eww (concat "https://" hn ":" port))))
+            (eww (concat "https://" hn ":" port))
+            (pen-emacs-web-browse (concat "https://" hn ":" port))))
     (4334 . ((zrepl "datomic-connect-db hello")))
     (3306 . ((call-interactively 'connect-to-mysql)
              (call-interactively 'sql-mysql)))
@@ -146,7 +147,7 @@
                             (append hnport subtp)))))))))
     suggestions))
 
-(defun pen-server-suggest (hostname)
+(defun pen-server-suggest (hostname &optional port)
   (interactive (list (read-string-hist "hostname: ")))
   (message "Suggesting clients for %s. Please wait." hostname)
   (let* ((ss (pen-server-suggestions
@@ -162,5 +163,24 @@
                (port (str (cadr sel)))
                (c2 (-drop 2 sel)))
           (eval c2)))))
+
+(defun pen-server-suggest-port (port)
+  (interactive)
+
+  (mapcar (lambda (tp)
+            (list (car tp) (pp-oneline (cdr tp))))
+          (alist-get 80 pen-server-command-tuples))
+
+  (comment
+   (flatten-once
+    (-filter
+     'identity)))
+
+  (let* ((cand (assoc port pen-server-command-tuples))
+         (hnport (list hostname (car cand)))
+         (cs (cdr cand)))
+    (if cand
+        (cl-loop for subtp in cs collect
+                 (append hnport subtp)))))
 
 (provide 'pen-server-suggest)

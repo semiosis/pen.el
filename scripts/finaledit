@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# Put the result into a file and open it in vim (i.e. let the results be editable).
+# finaledit elinks-dump "https://www.noser.com/techblog/virtual-pty-tty-uart-listener-pitfalls-on-linux-socat/"
+
+. $SCRIPTS/lib/hs
+
+test "$#" -eq 0 && exit 1
+
+v "$(tfsha "$@")"

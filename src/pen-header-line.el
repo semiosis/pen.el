@@ -242,11 +242,15 @@
     ;; (path-header-line-off)
     ;; (universal-sidecar-refresh)
     ;; (refresh-frame)
-    (setq header-line-format
-          '("" ;; invocation-name
-            (:eval (if (ph--make-header t)
-                       (ph--make-header t)
-                     "%b")))))
+
+    ;; Disabled this here because it is already handled by universal sidecar itself
+    (comment
+     (setq header-line-format
+           '("" ;; invocation-name
+             (:eval (if (ph--make-header t)
+                        (ph--make-header t)
+                      "%b")))))
+    nil)
    (t
     (setq header-line-format
           '("" ;; invocation-name

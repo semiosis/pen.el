@@ -10,6 +10,23 @@ test -d ~/figlet-fonts && cd ~/figlet-fonts
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    # For emacs artist-mode (j:artist-figlet-get-font-list)
+    -I*) {
+        run_normally=y
+        break
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$run_normally" = "y"; then
+    /usr/bin/figlet "$@"
+    exit "$?"
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
     -w) {
         cols="$2"
         shift

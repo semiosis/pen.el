@@ -143,6 +143,8 @@
           (ace-link-button))
          ((eq major-mode 'markdown-mode)
           (ace-link-markdown))
+         ((eq major-mode 'universal-sidecar-buffer-mode)
+          (ace-link-click-link-or-button))
 
          ((or
            (derived-mode-p 'go-mode)

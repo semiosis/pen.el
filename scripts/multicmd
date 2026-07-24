@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# eval "$("multicmd" ";" "date" "+%B %d" "--date=2 days ago" ";" "date" "+%B %d" ";" "date" "+%B %d" "--date=5 days ago" ";" "date" "+%B %d" "--date=1 day ago")"
+
+multicmd() {
+    if test "$1" = ";"; then
+        shift
+    fi
+
+    for var in "$@"
+    do
+        if test "$var" = ';'; then
+            printf -- "%s" '; '
+        elif test "$var" = '|'; then
+            printf -- "%s" '| '
+        else
+            # trailing newlines are removed for arguments. Fix this
+            printf "'%s' " "$(printf %s "$var" | sed "s/'/'\\\\''/g")";
+        fi
+    done | sed -e 's/^; //' -e 's/; $//' | sed 's/ $//'
+}
+
+printf -- "%s\n" "sh -c $(cmd "$(multicmd "$@")")"

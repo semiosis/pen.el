@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# e:/root/.emacs.d/host/pen.el/config/filters/transformers.sh
+# e:/root/.emacs.d/host/pen.el/config/filters/transformers.sh
+
+sed 's/^\( \+\)x /\1[x] /'
+

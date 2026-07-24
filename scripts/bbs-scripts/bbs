@@ -3,11 +3,36 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# TODO Set up minicom also. I should be able to dial into these bbs with minicom
+# - https://youtu.be/0tCOEO3LCC8?t=206
+# - I think use socat to connect to the telnet, and then minicom to view it.
+
 # https://www.telnetbbsguide.com/
 # https://8bitboyz.com/bbs-directory/
 # https://www.pcmag.com/news/7-modern-bbses-worth-calling-today
 # https://whirlpool.net.au/wiki/telnet_bbs
 # https://synchro.net/sbbslist.html
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -s) {
+        BBS_CLIENT=socat
+        shift
+    }
+    ;;
+
+    -m) {
+        BBS_CLIENT=minicom
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${BBS_CLIENT:="telnet"}"
+
+export BBS_CLIENT
 
 opt="$1"
 shift
@@ -16,20 +41,36 @@ shift
 
 case "$opt" in
     retrocampus) {
-        # TERM=ansi COLORTERM=ansi telnet bbs.retrocampus.com
-        x -sh "TERM=xterm telnet bbs.retrocampus.com" -e TELNET -s 8 -c m -i
+        if test "$BBS_CLIENT" = "minicom"; then
+            bbs-connect -xterm bbs.retrocampus.com
+        else
+            x -sh "bbs-connect -xterm bbs.retrocampus.com" -e TELNET -s 8 -c m -i
+        fi
     }
     ;;
 
     # broken
     arcade) {
-        TERM=ansi COLORTERM=ansi telnet telnet.arcade-bbs.net
+        bbs-connect -ansi telnet.arcade-bbs.net
+    }
+    ;;
+
+    retro) {
+        bbs-connect retro.nedmr.com 2323
+    }
+    ;;
+
+    altairmini) {
+        bbs-connect -ansi altairminibbs.net
+
+        # https://www.reddit.com/r/bbs/comments/1uu90ld/join_our_80_style_bbs/
+        # altairminibbs.net:23
     }
     ;;
 
     # broken or did I not wait long enough?
     realitycheck) {
-        telnet realitycheckBBS.org
+        bbs-connect realitycheckBBS.org
     }
     ;;
 
@@ -40,7 +81,7 @@ case "$opt" in
     # ;;
 
     0day) {
-        TERM=xterm telnet bbs.0day.agency
+        bbs-connect -xterm bbs.0day.agency
     }
     ;;
 
@@ -55,7 +96,7 @@ case "$opt" in
     *)
         url="$opt"
         test -n "$url" || exit 1
-        TERM=xterm telnet "$url"
+        bbs-connect -xterm "$url"
         # TERM=ansi COLORTERM=ansi telnet "$url"
 esac
 

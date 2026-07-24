@@ -86,6 +86,13 @@ without silencing all errors."
     (let ((res (apply proc args)))
       res)))
 
+(defun ignore-errors-and-shut-up-around-advice (proc &rest args)
+  (shut-up
+    (suppress-errors-with-context proc
+                                  (let ((res
+                                         (apply proc args)))
+                                    res))))
+
 (defun around-advice-disable-true (proc &rest args)
   i)
 
@@ -466,11 +473,15 @@ Be mindful of quoting arguments correctly."
 (require 'pen-glimpse)
 (require 'pen-digraphs)
 (require 'pen-meson)
+(require 'pen-global)
 (require 'pen-bazel)
 (require 'pen-csv)
 (require 'pen-directory-navigation)
 (require 'pen-minimap)
+(require 'pen-font-lock)
 (require 'pen-artist)
+(require 'pen-prodigy)
+(require 'pen-elfeed)
 (require 'pen-external-tools)
 ;; (require 'pen-topsy)
 ;; (require 'pen-prism)

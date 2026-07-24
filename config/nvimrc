@@ -671,6 +671,9 @@ tmap <F8> [19~
 tmap <F18> [19;2~
 tmap <S-F8> [19;2~
 tmap <F8> [19;3~
+" show-vim-mappings says <Esc>[19;3~   "=strftime("%d.%m.%y")<CR>P
+" but where is it bound?
+" In here: ~/.vim/fixkeymaps-vimrc
 tmap <M-F8> [19;3~
 tmap <S-M-F8> [19;4~
 tmap <C-F8> [19;5~

@@ -20,8 +20,9 @@ fp="$1"
 fp="$(p "$fp" | sed 's/^file:\/\///')"
 test -n "$fp" || exit 1
 
+: "${BROWSER:="sps-ew3m"}"
 if pl "$fp" | grep -q -P 'https?://'; then
-    unbuffer nw eww "$fp"
+    unbuffer nw "$BROWSER" "$fp"
     exit
 fi
 

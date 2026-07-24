@@ -4,6 +4,7 @@ export TTY
 . $SCRIPTS/lib/hs
 . $SCRIPTS/lib/stdin_exists
 
+fargs=()
 eat=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -13,12 +14,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -*|--[a-z]*) {
+        fargs+=("$1")
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 if test "$eat" = "n"; then
-    set -- --no-start-anchor --no-end-anchor "$@"
+    set -- "${fargs[@]}" --no-start-anchor --no-end-anchor "$@"
 fi
+
+# cmd "$@" | tv &>/dev/null
 
 if stdin_exists; then
     input="$(cat)"

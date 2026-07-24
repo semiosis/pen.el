@@ -4,8 +4,9 @@ export TTY
 . $SCRIPTS/lib/hs
 
 vipe_cmd="$@"
-: "${vipe_cmd:="pen-f filter-with-fzf"}"
+: "${vipe_cmd:="$(nsfa pen-f filter-with-fzf)"}"
 
 # CMD="bash -c $(cmd "$vipe_cmd")"
 
 toggle-tmux-popup -x C -y C -w 90% -h 90% "$vipe_cmd" | cat
+# pen-tm spv -noerror "pen-f filter-with-fzf"

@@ -387,35 +387,37 @@ new buffer."
 
 (defun pen-Info-fz-info-file ()
   (interactive)
-  (let* ((contents (pen-Info-get-text-contents))
-         (significant
-          (if (>= (prefix-numeric-value current-prefix-arg) 4)
-              (concat
-               (awk1 (--> contents
-                          (scrape "‘[^’]+’" it)))
-               (awk1 (--> contents
-                          (scrape "^[0-9][0-9.]+ .*" it)))
-               (awk1 (--> contents
-                          (scrape "" it)))
-               (awk1 (mapconcat 'identity
-                                (-flatten
-                                 (cl-loop for re in (mapcar 'car info-highlights)
-                                          collect
-                                          (scrape re contents)))
-                                "\n")))
-            contents)))
-    (if (sor significant)
-        (let ((res (fz significant nil nil
-                       (if (>= (prefix-numeric-value current-prefix-arg) 4)
-                           "Info-search node significant contents: "
-                         "Info-search node contents: "))))
-          (if res
-              (progn
-                (Info-top-node)
-                (setq res (pen-unregexify res))
-                (setq Info-search-history (cons res Info-search-history))
-                (Info-search res))))
-      (message "pen-Info-fz-info-file: Not inside info node"))))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (tv (pen-Info-get-text-contents))
+    (let* ((contents (pen-Info-get-text-contents))
+           (significant
+            (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                (concat
+                 (awk1 (--> contents
+                            (scrape "‘[^’]+’" it)))
+                 (awk1 (--> contents
+                            (scrape "^[0-9][0-9.]+ .*" it)))
+                 (awk1 (--> contents
+                            (scrape "" it)))
+                 (awk1 (mapconcat 'identity
+                                  (-flatten
+                                   (cl-loop for re in (mapcar 'car info-highlights)
+                                            collect
+                                            (scrape re contents)))
+                                  "\n")))
+              contents)))
+      (if (sor significant)
+          (let ((res (fz significant nil nil
+                         (if (>= (prefix-numeric-value current-prefix-arg) 4)
+                             "Info-search node significant contents: "
+                           "Info-search node contents: "))))
+            (if res
+                (progn
+                  (Info-top-node)
+                  (setq res (pen-unregexify res))
+                  (setq Info-search-history (cons res Info-search-history))
+                  (Info-search res))))
+        (message "pen-Info-fz-info-file: Not inside info node")))))
 
 (define-key Info-mode-map (kbd "/") 'pen-Info-fz-info-file)
 
@@ -534,5 +536,153 @@ If DIRECTION is `backward', search in the reverse direction."
                (eq opoint (if isearch-forward opoint-min opoint-max)))
           (setq Info-history (cons (list ofile onode opoint)
                                    Info-history))))))
+
+(comment
+ (defun Info-goto-node (nodename &optional fork strict-case)
+   "Go to Info node named NODENAME.  Give just NODENAME or (FILENAME)NODENAME.
+If NODENAME is of the form (FILENAME)NODENAME, the node is in the Info file
+FILENAME; otherwise, NODENAME should be in the current Info file (or one of
+its sub-files).
+Completion is available for node names in the current Info file as well as
+in the Info file FILENAME after the closing parenthesis in (FILENAME).
+Empty NODENAME in (FILENAME) defaults to the Top node.
+If FORK is non-nil (interactively with a prefix arg), show the node in
+a new Info buffer.
+If FORK is a string, it is the name to use for the new buffer.
+
+This function first looks for a case-sensitive match for the node part
+of NODENAME; if none is found it then tries a case-insensitive match
+\(unless STRICT-CASE is non-nil)."
+   (interactive (list (Info-read-node-name "Go to node: ") current-prefix-arg))
+   (info-initialize)
+   (if fork
+       (set-buffer
+        (clone-buffer (concat "*info-" (if (stringp fork) fork nodename) "*") t)))
+   (let (filename)
+     (string-match "\\s *\\((\\s *\\([^\t)]*\\)\\s *)\\s *\\|\\)\\(.*\\)"
+                   nodename)
+     (setq filename (if (= (match-beginning 1) (match-end 1))
+                        ""
+                      (match-string 2 nodename))
+           nodename (match-string 3 nodename))
+     (let ((trim (string-match "\\s +\\'" filename)))
+       (if trim (setq filename (substring filename 0 trim))))
+     (let ((trim (string-match "\\s +\\'" nodename)))
+       (if trim (setq nodename (substring nodename 0 trim))))
+     (if transient-mark-mode (deactivate-mark))
+     (Info-find-node (if (equal filename "") nil filename)
+                     (if (equal nodename "") "Top" nodename) nil strict-case))))
+
+;; j:Info-read-node-name-1
+
+(comment (defun Info-read-node-name (prompt &optional default)
+           "Read an Info node name with completion, prompting with PROMPT.
+A node name can have the form \"NODENAME\", referring to a node
+in the current Info file, or \"(FILENAME)NODENAME\", referring to
+a node in FILENAME.  \"(FILENAME)\" is a short format to go to
+the Top node in FILENAME."
+           (let* ((completion-ignore-case t)
+                  (Info-read-node-completion-table (Info-build-node-completions))
+
+                  ;; Add this
+                  (completion-extra-properties
+                   '(:annotation-function fz-completion-second-of-tuple-annotation-function))
+                  
+                  (nodename (completing-read prompt #'Info-read-node-name-1 nil t nil
+                                             'Info-minibuf-history default)))
+             (if (equal nodename "")
+                 (Info-read-node-name prompt)
+               nodename))))
+
+(defun Info-goto-node (nodename &optional fork strict-case)
+  "Go to Info node named NODENAME.  Give just NODENAME or (FILENAME)NODENAME.
+If NODENAME is of the form (FILENAME)NODENAME, the node is in the Info file
+FILENAME; otherwise, NODENAME should be in the current Info file (or one of
+its sub-files).
+Completion is available for node names in the current Info file as well as
+in the Info file FILENAME after the closing parenthesis in (FILENAME).
+Empty NODENAME in (FILENAME) defaults to the Top node.
+If FORK is non-nil (interactively with a prefix arg), show the node in
+a new Info buffer.
+If FORK is a string, it is the name to use for the new buffer.
+
+This function first looks for a case-sensitive match for the node part
+of NODENAME; if none is found it then tries a case-insensitive match
+\(unless STRICT-CASE is non-nil)."
+  (interactive (list
+                ;; (Info-read-node-name "Go to node: ")
+                (fz (Info-build-node-completions) nil nil "Go to node: ")
+                current-prefix-arg))
+  (info-initialize)
+  (if fork
+      (set-buffer
+       (clone-buffer (concat "*info-" (if (stringp fork) fork nodename) "*") t)))
+  (let (filename)
+    (string-match "\\s *\\((\\s *\\([^\t)]*\\)\\s *)\\s *\\|\\)\\(.*\\)"
+                  nodename)
+    (setq filename (if (= (match-beginning 1) (match-end 1))
+                       ""
+                     (match-string 2 nodename))
+          nodename (match-string 3 nodename))
+    (let ((trim (string-match "\\s +\\'" filename)))
+      (if trim (setq filename (substring filename 0 trim))))
+    (let ((trim (string-match "\\s +\\'" nodename)))
+      (if trim (setq nodename (substring nodename 0 trim))))
+    (if transient-mark-mode (deactivate-mark))
+    (Info-find-node (if (equal filename "") nil filename)
+                    (if (equal nodename "") "Top" nodename) nil strict-case)))
+
+;; j:Info-goto-node
+;; j:Info-read-node-name
+;; j:Info-build-node-completions
+;; This function is cached, though, so I need to quit and reload Info
+;; to test this function.
+(defun Info-build-node-completions-1 ()
+  (let ((compl nil)
+        ;; Bind this in case the user sets it to nil.
+        (case-fold-search t)
+        (node-regexp ", + Node: *\\([^,\n]*\\) *[,\n\t]"))
+
+    (save-excursion
+      (save-restriction
+        (or Info-tag-table-marker
+            (error "No Info tags found"))
+        (if (marker-buffer Info-tag-table-marker)
+            (progn
+              ;; (tv "yo")
+              (let ((marker Info-tag-table-marker))
+                (set-buffer (marker-buffer marker))
+                (widen)
+                ;; (goto-char marker)
+                (beginning-of-buffer)
+                ;; (tv (buffer-string))
+                (while (re-search-forward ", +\\(Node\\|Ref\\): \\([^,]*\\)" nil t)
+                  (let ((nname (match-string-no-properties 2)))
+                    (progn
+                      (forward-line)
+                      (forward-line)
+                      (setq compl
+                            (cons (list nname
+                                        (chomp (current-line-string)))
+                                  compl)))))
+                compl))
+
+          (widen)
+          (goto-char (point-min))
+          ;; If the buffer begins with a node header, process that first.
+          (if (Info-node-at-bob-matching node-regexp)
+              (setq compl (list (match-string-no-properties 1))))
+          ;; Now for the rest of the nodes.
+          (while (search-forward "\n\^_" nil t)
+            (forward-line 1)
+            (let ((beg (point)))
+              (forward-line 1)
+              (if (re-search-backward node-regexp beg t)
+                  (setq compl
+                        (cons (list (match-string-no-properties 1))
+                              compl))))))))
+    (setq compl (cons '("*" "Raw contents of info file") (nreverse compl)))
+    (setq Info-current-file-completions compl)
+    compl))
 
 (provide 'pen-info)

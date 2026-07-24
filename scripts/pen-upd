@@ -1,0 +1,82 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nd) {
+        export IGNORE_DIR=y
+        shift
+    }
+    ;;
+
+    -yn) {
+        do_yn=y
+        shift
+    }
+    ;;
+
+    -m|-meta) {
+        export EXTRA_METADATA="_$2"
+
+        # Great for environment variables
+        # Otherwise, env vars are ingored
+        # ci -meta "$BASENAME" org clink "$@"
+        shift
+        shift
+    }
+    ;;
+
+    -dt|-date) {
+        : "${date:="$2"}"
+        : "${date:="$(date +%d.%m.%y)"}"
+        export EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+        shift
+    }
+    ;;
+
+    -today) {
+        : "${date:="$(date +%d.%m.%y)"}"
+        export EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+    }
+    ;;
+
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+
+esac; done
+
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+if test "$do_yn" = "y"; then
+    do_upd="$(code-out intty yn "Run with 'UPDATE=y' (y) or without 'UPDATE=y'? (n)\n CMD: $CMD")"
+    if test "$do_upd" = "0"; then
+        do_upd=y
+    else
+        do_upd=n
+    fi
+else
+    do_upd=y
+fi
+
+if test "$do_upd" = "y"; then
+    export UPDATE=y
+    export FORCE_RETRY=y
+else
+    :
+fi
+
+eval "$CMD"

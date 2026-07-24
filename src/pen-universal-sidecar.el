@@ -54,7 +54,7 @@ If FRAME is nil, use `selected-frame'."
                    (and file
                         (format "Demo: %s" file))
                    "Demo"))
-        (quote (seq-random-elt (str2lines (e/cat "$PEN/documents/quotes.txt"))))
+        (quote (seq-random-elt (-filter-not-empty-string (str2lines (e/cat "$PEN/documents/quotes.txt")))))
         ;; (cmdout (shell-command-to-string "pwd"))
         )
     (universal-sidecar-insert-section quote-section title
@@ -68,6 +68,67 @@ If FRAME is nil, use `selected-frame'."
       ;;    ;; This runs after the above
       ;;    (comment (some-post-processing-of-org-text))))
       )))
+
+(defun uvs-insert-table (s)
+  (let ((p (point))
+        (d
+         (progn
+           (comment
+            (insert (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                      (e/chomp s))))
+
+
+           ;; Org-Mode fontified text is working but it requires font-lock to be disabled for universal-sidecar-buffer-mode in font-lock-global-modes.
+           ;; pa:pen-font-lock
+
+           (insert (with-temp-buffer
+                     (org-mode)
+                     (setq-local org-fold-core-style 'overlays)
+                     (save-excursion
+                       (insert
+                        (e/chomp s)))
+                     (font-lock-ensure)
+                     (org-cycle)
+                     ;; (pen-textprops-in-region-or-buffer)
+                     (buffer-string)))
+
+           (comment
+            (progn
+              ;; Sadly, although this works initially, when the sidecar updates its content
+              ;; (which it does often), it the editable-field widget breaks the rest of the content.
+              ;; Widgets don't make much sense in the sidecar though, anyway,
+              ;; because the sidecar regularly refreshes.
+              (dotimes (_n 2)
+                (widget-create 'editable-field
+                               :format "Address: %v"
+                               "Some Place\nIn some City\nSome country."))
+              (use-local-map widget-keymap)
+              (widget-setup)))))
+
+        (m (point)))
+    ;; (save-excursion
+    ;;   (goto-char p)
+    ;;   (org-cycle))
+    ))
+
+;; e:/root/.pen/tmp/tf_tempH2aeNQh_emacs-buffer-contents.org
+(universal-sidecar-define-section table-section (file title)
+                                  (
+                                   ;; :major-modes org-mode
+                                   ;; :predicate (not (buffer-modified-p))
+                                   )
+  (let ((title (or title
+                   (and file
+                        (format "Demo: %s" file))
+                   "Demo"))
+        (table (e/cat "/root/.pen/tmp/tf_tempH2aeNQh_emacs-buffer-contents.org"))
+        ;; (cmdout (shell-command-to-string "pwd"))
+        )
+    (universal-sidecar-insert-section table-section title
+      (uvs-insert-table table)
+      (insert "\n")
+      (uvs-insert-table table))))
+(add-to-list 'universal-sidecar-sections '(table-section :title "Table!"))
 
 ;; This appears to be running twice in a row every time the sidecar is opened - fix it.
 ;; Also, when clicking on buttons in the sidecar,
@@ -154,5 +215,72 @@ If FRAME is nil, use `selected-frame'."
 
 ;; [2024-01-24T09:34:24.430461] Error running timer ‘universal-sidecar-refresh-all’: (error "Invalid format character: ‘%F’")
 (advice-add 'universal-sidecar-refresh-all :around #'ignore-errors-around-advice)
+
+
+;; Sidecar title setting seems to be competing with something else
+(comment
+ (defun universal-sidecar-set-title-around-advice (proc &rest args)
+   (message "universal-sidecar-set-title called with args %S" args)
+   (let ((res (apply proc args)))
+     (message "universal-sidecar-set-title returned %S" res)
+     res))
+ (advice-add 'universal-sidecar-set-title :around #'universal-sidecar-set-title-around-advice)
+ (advice-remove 'universal-sidecar-set-title #'universal-sidecar-set-title-around-advice))
+
+;; Made some changes to the call to j:universal-sidecar-set-title
+(defun universal-sidecar-refresh (&optional buffer sidecar)
+  "Refresh sections for BUFFER in SIDECAR.
+
+If BUFFER is non-nil, use the currently focused buffer.
+If SIDECAR is non-nil, use sidecar for the current frame."
+  (interactive)
+  (save-mark-and-excursion
+    (when (universal-sidecar-visible-p)
+      (let* ((sidecar (or sidecar
+                          (universal-sidecar-get-buffer)))
+             (buffer (or buffer
+                         (if-let ((buf (window-buffer (selected-window)))
+                                  (buffer-is-ignored-p
+                                   (or (equal buf sidecar)
+                                       (string-match-p universal-sidecar-ignore-buffer-regexp
+                                                       (buffer-name buf))
+                                       (run-hook-with-args-until-success 'universal-sidecar-ignore-buffer-functions
+                                                                         buf))))
+                             (with-current-buffer sidecar universal-sidecar-current-buffer)
+                           buf)))
+             (bufmode (buffer-major-mode buffer)))
+
+        (with-current-buffer sidecar
+          (let (
+                (inhibit-read-only t))
+
+            (universal-sidecar-buffer-mode)
+            ;; Added this
+            (setq buffer-read-only nil)
+
+            (erase-buffer)
+
+            (setq-local mode-line-buffer-identification (universal-sidecar-format-buffer-id buffer))
+            (setq-local universal-sidecar-current-buffer buffer)
+
+            (universal-sidecar-set-title
+             (propertize (concat (buffer-name buffer)
+                                 " "
+                                 "(" (str bufmode) ")") 'face 'bold)
+             sidecar)
+
+            (dolist (section universal-sidecar-sections)
+              (condition-case-unless-debug err
+                  (pcase section
+                    ((pred functionp)
+                     (funcall section buffer sidecar))
+                    (`(,section . ,args)
+                     (apply section (append (list buffer sidecar) args)))
+                    (_
+                     (user-error "Invalid section definition `%S' in `universal-sidecar-sections'" section)))
+                (t
+                 (unless universal-sidecar-inhibit-section-error-log
+                   (display-warning 'universal-sidecar (format "Error encountered in displaying section %S: %S" section err) :error)))))
+            (goto-char 0)))))))
 
 (provide 'pen-universal-sidecar)

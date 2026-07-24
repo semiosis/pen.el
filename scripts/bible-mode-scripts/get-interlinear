@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+if test "$#" -eq 3; then
+    book="$1"
+    chapter="$2"
+    verse="$3"
+else
+    argstr="$@"
+
+    book="$(p "$argstr" | cut -d : -f 1 | sed 's/^\(.*\) [0-9:]\+$/\1/')"
+    chapter="$(p "$argstr" | cut -d : -f 1 | sed 's/^.* \([0-9:]\+\)$/\1/')"
+    verse="$(p "$argstr" | cut -d : -f 2)"
+
+    test -n "$book" && test -n "$chapter" && test -n "$verse" || exit 1
+fi
+
+book="$(printf -- "%s" "$book" |
+    tr '[:upper:]' '[:lower:]' |
+    tr -s " " _ |
+    sed -e "s/iii_/3_/" \
+        -e "s/ii_/2_/" \
+        -e "s/i_/1_/" \
+        -e "s/_of_john//" \
+        -e "s/song_of_solomon/songs/"
+    )"
+
+url="$(printf -- "https://biblehub.com/interlinear/%s/%s-%s.htm" "$book" "$chapter" "$verse")"
+
+ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | pavs

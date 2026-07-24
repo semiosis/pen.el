@@ -128,6 +128,12 @@ SYMBOL is a string."
                          (cider-nrepl-request:eval clj nil)))))))
             (cider-nrepl-request:eval (concat "(" symstr ")") nil))))))
 
+(defun pen-mx-selection ()
+  (interactive)
+  (let* ((fname (pen-selected-text))
+         (fsym (str2sym fname)))
+    (call-interactively fsym)))
+
 ;; J:mount-pensieve
 ;; (s-substring "\\[\\(.*\\)\\]" (str (caddr (sexp-at-point))))
 ;; (cider-nrepl-sync-request:eval "(pen-test-interactive-clj \"hello\" \"\" \"\")" nil)
@@ -149,7 +155,9 @@ SYMBOL is a string."
           (call-interactively 'pen-scheme-eval-eval))
          ((derived-mode-p 'clojure-mode)
           (call-interactively 'pen-clojure-eval-eval))
-         (t (error (concat "No eval-eval handler for " (symbol-name major-mode))))))))
+         (t (error (concat "No eval-eval handler for " (symbol-name major-mode)))))
+      (if (pen-selected-p)
+          (call-interactively 'pen-mx-selection)))))
 
 (defun lispy-flow (arg)
   "Move inside list ARG times.

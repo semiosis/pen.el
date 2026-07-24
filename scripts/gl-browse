@@ -3,6 +3,8 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+: "${BROWSER:="$(nsfa -exports BROWSER,SOCKET used pen1 nw-ew3m)"}"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -oc) {

@@ -10,8 +10,30 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -tv) {
+        DO_TV=y
+        shift
+    }
+    ;;
+
+    -tvnw|-tvsp[hvs]) {
+        DO_TV=y
+        TV_TYPE="$(printf -- "%s" "$opt" | sed 's/^-tv//')"
+        shift
+    }
+    ;;
+
+    -nw|-sp[hvs]) {
+        DO_TV=y
+        TV_TYPE="$(printf -- "%s" "$opt" | sed 's/^-//')"
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+: "${TV_TYPE:="-sps"}"
 
 if test "$DO_HS" = "y"; then
     . $SCRIPTS/lib/hs
@@ -45,5 +67,8 @@ else
         CMD="$(cmd "$@")"
     fi
 
+    if test "$DO_TV" = "y"; then
+        echo "$CMD" | tv "-$TV_TYPE" &>/dev/null
+    fi
     eval "$CMD"
 fi

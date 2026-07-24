@@ -33,7 +33,9 @@
 (defun pen-tf (template &optional input ext)
   "Create a temporary file."
   (setq ext (or ext "txt"))
-  (let ((fp (pen-snc (concat "mktemp -p /tmp " (pen-q (concat "XXXX-" (slugify template) "." ext))))))
+  (let ((fp (pen-snc
+             ;; (concat "mktemp -p /tmp " (pen-q (concat "XXXX-" (slugify template) "." ext)))
+             (cmd "pen-tf" "-X" template ext))))
     (if (and (sor fp)
              (sor input))
         (shut-up (write-to-file input fp)))
@@ -1558,58 +1560,67 @@ when s is a string, set the clipboard to s"
   (setq initial-input (or initial-input
                           ""))
 
-  (let ((cache-fp (if remember-history-b
-                       (f-join pen-ci-cache-dir (concat completing-read-hist "--" (sym2str histvar))))))
-    (if (pen-var-value-maybe 'do-pen-batch)
-        ""
-      (progn
-        (let ((fnn (or
-                    override-func-name
-                    (pen-var-value-maybe 'func-name))))
-          (if (sor fnn)
-              (setq prompt (concat fnn " ~ " prompt))))
+  (let* ((histvar (or
+                   histvar
+                   (intern (concat "completing-read-hist-" (slugify prompt)))))
+         (cache-fp (if remember-history-b
+                       (f-join pen-ci-cache-dir (concat "completing-read-hist" "--" (sym2str histvar)))))
+         (ret
+          (if (pen-var-value-maybe 'do-pen-batch)
+              ""
+            (progn
+              (let ((fnn (or
+                          override-func-name
+                          (pen-var-value-maybe 'func-name))))
+                (if (sor fnn)
+                    (setq prompt (concat fnn " ~ " prompt))))
 
-        (if (not histvar)
-            (setq histvar (intern (concat "completing-read-hist-" (slugify prompt)))))
+              (pen-message-no-echo (str histvar))
+              (pen-message-no-echo (str cache-fp))
 
-        (if (and cache-fp
-                 (file-exists-p cache-fp))
-            (set histvar (ignore-errors (read (shut-up (e/cat fp))))))
+              (if (and cache-fp
+                       (file-exists-p cache-fp))
+                  (set histvar (ignore-errors (read (shut-up (e/cat cache-fp))))))
 
-        (setq prompt (sor prompt ":"))
+              (setq prompt (sor prompt ":"))
 
-        (if (not (string-match " $" prompt))
-            (setq prompt (concat prompt " ")))
+              (if (not (string-match " $" prompt))
+                  (setq prompt (concat prompt " ")))
 
-        (if (not (variable-p histvar))
-            (eval `(defvar ,histvar nil)))
-        (if (and (not initial-input)
-                 (listp histvar))
-            (setq initial-input (first histvar)))
+              (if (not (variable-p histvar))
+                  (eval `(defvar ,histvar nil)))
+              (if (and (not initial-input)
+                       (listp histvar))
+                  (setq initial-input (first histvar)))
 
-        ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-        ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
-        ;; (eval-string (concat "\"" (pen-qne "lskjdfldks\ndshi\\nslkfjof") "\""))
-        ;; (setq initial-input (bs "\"" initial-input))
-        ;; (setq initial-input (bs "\n" initial-input))
+              ;; (pen-etv (completing-read-hist "test: " (snc "cat $PROMPTS/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+              ;; (pen-etv (pen-qne (snc "cat /home/shane/var/smulliga/source/git/semiosis/prompts/prompts/generate-transformative-code.prompt | yq -r '.examples[0]'")))
+              ;; (eval-string (concat "\"" (pen-qne "lskjdfldks\ndshi\\nslkfjof") "\""))
+              ;; (setq initial-input (bs "\"" initial-input))
+              ;; (setq initial-input (bs "\n" initial-input))
 
-        ;; (pen-etv (completing-read-hist "test2: " "test\nt\\nest"))
-        (setq initial-input (pen-qne initial-input))
+              ;; (pen-etv (completing-read-hist "test2: " "test\nt\\nest"))
+              (setq initial-input (pen-qne initial-input))
 
-        (eval `(progn
-                 (let ((inhibit-quit t))
-                   (or (with-local-quit
-                         (let* ((completion-styles
-                                 '(basic))
-                                (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
-                                ;; (s (string-replace "\\n" "\n" s))
+              (eval `(progn
+                       (let ((inhibit-quit t))
+                         (or (with-local-quit
+                               (let* ((completion-styles
+                                       '(basic))
+                                      (s (str (pen-ivy-completing-read ,prompt ,histvar nil nil initial-input ',histvar nil)))
+                                      ;; (s (string-replace "\\n" "\n" s))
 
-                                ;; Using the perl script isn't ideal
-                                (s (pen-uq s)))
+                                      ;; Using the perl script isn't ideal
+                                      (s (pen-uq s)))
 
-                           (setq ,histvar (seq-uniq ,histvar 'string-equal))
-                           s))
-                       ""))))))))
+                                 (setq ,histvar (seq-uniq ,histvar 'string-equal))
+                                 s))
+                             ""))))))))
+
+    (if (and remember-history-b
+             histvar)
+        (f-write-text (pps (eval histvar)) 'utf-8 cache-fp))
+    ret))
 (defalias 'read-string-hist 'completing-read-hist)
 (defalias 'rshi 'completing-read-hist)
 

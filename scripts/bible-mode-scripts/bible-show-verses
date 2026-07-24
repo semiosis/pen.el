@@ -49,7 +49,7 @@ fi
 
 raw="$(s join ";" | xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k")"
 mod="$(printf -- "%s\n" "$raw" | sed -n '$p')"
-raw="$(printf -- "%s\n" "$raw" | sed '$d')"
+raw="$(printf -- "%s\n" "$raw" | sed '$d' | sed -z 's/ \n/ /g')"
 
 : "${COLS:="50"}"
 

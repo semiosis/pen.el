@@ -11,8 +11,13 @@ case "$opt" in
     }
     ;;
 
-    pen[0-9]*) {
-        opt="$(p "$opt" | sed 's/^pen//')"
+    pendefault) {
+        export SOCKET="DEFAULT"
+    }
+    ;;
+
+    p[ei]n[0-9]*) {
+        opt="$(p "$opt" | sed 's/^p[ei]n//')"
         export SOCKET="pen-emacsd-$opt"
     }
     ;;

@@ -1,0 +1,6 @@
+#!/usr/bin/env -S pvd -p
+{"sheet": null, "col": "", "row": "", "longname": "open-file", "input": "/tmp/visidata-input.txt", "keystrokes": "o", "comment": "Open file or URL"}
+{"sheet": "visidata-input", "col": "text", "row": "", "longname": "type-customdate", "input": "%B %d", "comment": "set type of current column to custom date format"}
+{"sheet": "visidata-input", "col": "text", "row": "", "longname": "sort-asc", "input": "", "keystrokes": "[", "comment": "sort ascending by current column; replace any existing sort criteria"}
+{"longname": "save-sheet", "input": "/tmp/visidata-output.txt"}
+{"longname": "quit-all"}

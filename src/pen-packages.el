@@ -158,4 +158,13 @@ The description is read from the installed package files."
       (with-current-buffer standard-output
         (describe-package-1 package)))))
 
+(comment
+ ;; I'm presently doing this inside of pen-e
+ (defun package-install-around-advice (proc &rest args)
+   (let ((res (apply proc args)))
+     ;; (pen-snc "sync-elpa-with-host")
+     res))
+ (advice-add 'package-install :around #'package-install-around-advice)
+ (advice-remove 'package-install #'package-install-around-advice))
+
 (provide 'pen-packages)

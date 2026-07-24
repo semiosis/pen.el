@@ -2,23 +2,13 @@
 export TTY
 
 . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
 
 # Example:
 # ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline
 
 # grep -q "Strong's Hebrew"
 # grep -q "Strong's Greek"
-
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
 
 if stdin_exists; then
     input_fp="$(tf txt)"
@@ -39,7 +29,7 @@ fi
 
 exec 0</dev/null
 
-ub -E "$(cmd elinks-dump "$input_fp") | cat" | sed -z "s/1\\n\\n/\\n/" |
+ub -E "$(cmd elinks-dump "$input_fp") | cat" | sed -z "s/   [0-9]\\+\\n\\n[0-9]\\+   /\\n/" | sed -z "s/1\\n\\n/\\n/" | tv |
     sed "s/   [0-9]\\+$//g" | sed "s/ / /g" |
     erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" |
     sed "s/ \\+/ /g" | 
@@ -49,5 +39,12 @@ ub -E "$(cmd elinks-dump "$input_fp") | cat" | sed -z "s/1\\n\\n/\\n/" |
     sed 's/^[0-9]\+ \([^ ]\)/\1/' |
     sed 's/^\[e\] //' |
     sed "s/^\\([0-9]\\)/${lang}\\1/" |
-    pen-aatr -k "\n\n" "fill-lines-to-longest-line" | max-double-spaced.sh | sed -z 's/\n\+$//' | pavs
+    pen-aatr -k "\n\n" "fill-lines-to-longest-line" | max-double-spaced.sh | sed -z 's/\n\+$//' | 
+    {
+        if test "$ONELINED" = "y"; then
+            pen-aatr -k "\n\n" "biblemode-onelineify-interlinear-block" | sed '/^$/d'
+        else
+            cat
+        fi
+    } | pavs
 #  | make-all-lines-same-length

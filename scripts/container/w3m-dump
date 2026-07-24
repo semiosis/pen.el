@@ -1,0 +1,118 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
+
+unicode=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -8|-utf) {
+        unicode=y
+        shift
+    }
+    ;;
+
+    -n8|-nutf) {
+        unicode=n
+        shift
+    }
+    ;;
+
+    -tor) {
+        export USETOR=y
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        shift
+    }
+    ;;
+
+    -vs) {
+        pager=pen-vs
+        shift
+    }
+    ;;
+
+    -refs) {
+        KEEP_REFS=y
+        shift
+    }
+    ;;
+
+    -orefs|-l) {
+        ONLY_REFS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$ONLY_REFS" = "y"; then
+    export KEEP_REFS=y
+fi
+
+: "${pager:="v"}"
+
+export UPDATE
+export EXTRA_METADATA
+
+exec 3>&2
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+filter() {
+    if test "$ONLY_REFS" = "y"; then
+        sed '0,/^References/d' | sed -n "/^   \\./s/^   \\. //p"
+    else
+        {
+            if ! test "$KEEP_REFS" = "y"; then
+                sed '/^References/,$d'
+            else
+                cat
+            fi
+        } | sed 's/^ \+//' | \
+        {
+            if test "$unicode" = "y"; then
+                cat
+            else
+                # pen-c ascify
+                # clean-term-capture
+                pen-c ascify
+                # cat
+            fi
+        }
+    fi
+}
+
+if [ -z "$COLUMNS" ] && is_tty; then
+    eval `resize`
+fi
+
+if [ -n "$COLUMNS" ] && [ "$COLUMNS" -gt 120 ]; then
+    COLUMNS=120
+fi
+
+if [ -z "$COLUMNS" ]; then
+    eval `tm-resize`
+fi
+
+# : "${COLUMNS:="120"}"
+
+export COLUMNS
+
+if stdin_exists; then
+    outtf="$(pen-ci -nd -f -m "$EXTRA_METADATA$USETOR" w3m -T text/html -dump "$@" | filter | pen-tf -X "$EXTRA_METADATA" txt)" 
+else
+    outtf="$(pen-ci -nd -f -m "$EXTRA_METADATA$USETOR" w3m -T text/html -dump "$@" | filter | pen-tf -X "$EXTRA_METADATA" txt)" 
+fi
+
+
+exec 2>&3
+cat "$outtf" | pa -E "$pager"
+
+exit 0

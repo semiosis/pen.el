@@ -105,7 +105,7 @@
 (define-key pen-map (kbd "M-9") 'handle-docs)
 
 (define-key pen-map (kbd "H-n") nil)
-(define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
+;; (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
 (define-key pen-map (kbd "H-x") 'pen-diagnostics-show-context)
@@ -1348,7 +1348,6 @@
 (define-key evil-list-view-mode-map (kbd "RET") 'evil-list-view-goto-entry)
 
 (define-key evil-ex-completion-map (kbd "M-m") 'run-line-or-region-in-tmux)
-(define-key global-map (kbd "H-~") 'select-frame-by-name)
 
 
 (define-key pen-map (kbd "M-J") 'pen-join-line)

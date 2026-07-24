@@ -21,3 +21,6 @@ sed 's/\/$//'                                                                   
 hash-crc32
 crc-lines
 org-quote-lines  # Puts each line in an org quotation
+reformat-checklist # org checklist reformat
+bolden-links
+unbolden-links

@@ -16,7 +16,8 @@
 
 (defun sh/pen-log (metadata data)
   "metadata is slugged to give the file name of the log file"
-  (snc (cmd "pen-log" metadata) data))
+  (snc (cmd "pen-log" metadata) data)
+  data)
 
 (defun sh/pen-log-view (metadata)
   "metadata is slugged to give the file name of the log file"
@@ -27,6 +28,8 @@
   (snc (cmd "pen-log" "-getpath" metadata)))
 
 (defalias 'spl 'sh/pen-log)
+(defalias 'splv 'sh/pen-log-view)
+(defalias 'splgp 'sh/pen-log-getpath)
 
 ;; This is for my own logging - profiling
 (defmacro penlog (&rest body)

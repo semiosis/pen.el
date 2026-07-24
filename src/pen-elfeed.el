@@ -1,4 +1,6 @@
 (require 'elfeed)
+(require 'elfeed-score)
+;; (require 'universal-sidecar-elfeed-score)
 
 ;; Load elfeed-org
 (require 'elfeed-org)
@@ -15,14 +17,23 @@
 
 (define-key elfeed-search-mode-map (kbd "a") 'elfeed-add-feed)
 
+(comment
+ ;; This is immutable, thankfully, but where are these saved?
+ (elfeed-add-feed "https://lexi-lambda.github.io/feeds/all.rss.xml" :save t)
+ ;; (elfeed-add-feed "https://mullikine.github.io/index.xml" :save t)
+ (elfeed-add-feed "https://news.ycombinator.com/rss" :save t)
+ (elfeed-add-feed "https://ahungry.com/blog/rss.xml" :save t)
+ (elfeed-add-feed "https://nullprogram.com/feed/" :save t)
+ (elfeed-add-feed "https://planet.emacslife.com/atom.xml" :save t)
+ (elfeed-add-feed "https://www.reddit.com/r/emacs/.rss" :save t))
 
-;; This is immutable, thankfully, but where are these saved?
-(elfeed-add-feed "https://lexi-lambda.github.io/feeds/all.rss.xml" :save t)
-(elfeed-add-feed "https://mullikine.github.io/index.xml" :save t)
-(elfeed-add-feed "https://news.ycombinator.com/rss" :save t)
-(elfeed-add-feed "https://ahungry.com/blog/rss.xml" :save t)
+(setq elfeed-feeds
+      '("https://reddit.com/r/emacs/.rss"
+        "https://planet.emacslife.com/atom.xml" "https://nullprogram.com/feed/" "https://news.ycombinator.com/rss" "https://ahungry.com/blog/rss.xml"))
 
 ;; show the feeds
 ;; (mapcar 'list elfeed-feeds)
 
-(provide 'my-elfeed)
+(define-key elfeed-search-mode-map (kbd "U") 'elfeed-update)
+
+(provide 'pen-elfeed)

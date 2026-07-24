@@ -3,6 +3,7 @@ export TTY
 # shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
 
 #  wget "https://www.telnetbbsguide.com/bbslist/ibbs011526.zip"
+# curl -s "https://www.telnetbbsguide.com/bbslist/magiterm.txt" | v
 
 . $SCRIPTS/lib/hs
 

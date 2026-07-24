@@ -65,6 +65,10 @@
     (helm :sources '(helm-fzf-source)
           :buffer "*helm-fzf*")))
 
-(provide 'helm-fzf)
+(setq helm-candidate-number-limit 1000)
+;; I set it big so helm-imenu gets everything in:
+;; e:/usr/local/share/emacs/29.4.50/lisp/simple.el.gz
 
 ;;; helm-fzf.el ends here
+
+(provide 'helm-fzf)

@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+IFS= read -r -d '' helptext <<HEREDOC
+used pen1 ew3m "https://tldp.org/HOWTO/Remote-Serial-Console-HOWTO/modem-minicom.html"
+minicom -o -s # configuration mode
+HEREDOC
+
+if test "$#" -eq 0; then
+    inv="$(printf -- "%s\n" "$helptext" | mfz --prompt invocation | sed 's/ #.*//')"
+    if test -n "$inv"; then
+        eval "$inv"
+        exit "$?"
+    fi
+fi
+
+/usr/bin/minicom "$@"

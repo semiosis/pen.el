@@ -207,7 +207,7 @@ function! s:wrap(string,char,type,...)
   elseif newchar ==# 'l' || newchar == '\'
     " LaTeX
     let env = input('\begin{')
-    let env = '{' . env
+n    let env = '{' . env
     let env .= s:closematch(env)
     echo '\begin'.env
     if env != ""

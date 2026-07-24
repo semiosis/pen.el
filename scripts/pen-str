@@ -78,7 +78,7 @@ case "$f" in
 
     # Number of characters ignoring double-width chars
     length|len|clen) {
-        sed 's/./-/g' | wc -c
+        sed 's/./-/g' | wc -m
     }
     ;;
 

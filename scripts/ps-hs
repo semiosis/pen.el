@@ -1,0 +1,6 @@
+#!/bin/sh
+export TTY
+
+. $SCRIPTS/lib/hs
+
+LINES=1000 COLUMNS=1000 /bin/ps $@

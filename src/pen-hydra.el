@@ -707,6 +707,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("L" #'view-world-map-search "Search world map and display: ")
                          ("y" #'pen-goto-glossary-definition "glossary word")
                          ("W" #'wordnet-word "wordnet word")
+                         ("z" #'helm-fzword-default "fuzzy word search")
                          ("k" #'pen-k8s-hub-search "k8s hub")
                          ("j" #'eegr "Google")
                          ;; ("g" #'pen-egr-guru99 "guru99")

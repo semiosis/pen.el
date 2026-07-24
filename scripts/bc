@@ -2,6 +2,7 @@
 export TTY
 
 # . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
 
 # echo "5 * 5" | bc -l
 
@@ -15,7 +16,7 @@ done
 )" || test "$#" -eq 0
 is_interactive="$?"
 
-if test "$is_interactive" -eq 0; then
+if test "$is_interactive" -eq 0 && ! stdin_exists; then
     nvc /usr/bin/bc "$@"
 else
     /usr/bin/bc "$@" | pavs

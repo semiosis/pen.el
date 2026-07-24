@@ -78,6 +78,10 @@ fi
 query="$@"
 
 if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
+    query="$(info_at_top "$query")"
+fi
+
+if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
     query="($query)"
 fi
 
@@ -92,9 +96,6 @@ elif test "$NOEMACS" = y; then
 elif test "$sn" = binfo; then
     nvc "$bin" "$query"
 else
-    if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
-        query="$(info_at_top "$query")"
-    fi
     # (info "(coreutils)realpath invocation")
     einfo "$(get_full_path "$query")"
 fi

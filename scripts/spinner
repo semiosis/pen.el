@@ -115,8 +115,8 @@ tput civis
 : "${message:="Loading"}"
 
 # Add some more spaces then trim it
-# full_message_length="$(echo -n "Loading" | wc -c)"
-# full_message_length="$(echo -n "$message" | wc -c)"
+# full_message_length="$(echo -n "Loading" | wc -m)"
+# full_message_length="$(echo -n "$message" | wc -m)"
 # if test -n "$max_chars"; then
 #     if test "$full_message_length" -gt "$max_chars"; then
 #         full_message_length="$max_chars"
@@ -126,7 +126,7 @@ tput civis
 #         message="$(p "$message" | pad-string -"$max_chars")"
 #     fi
 # fi
-full_message_length="$(echo -n "Loading" | wc -c)"
+full_message_length="$(echo -n "Loading" | wc -m)"
 message="${message}          "
 message="$(printf -- "%s" "$message" | cut -c -${full_message_length} -)"
 

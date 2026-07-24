@@ -103,11 +103,11 @@ search_with_ddg() {
 
 search() {
     results="$(search_with_googler -n "$nresults" --json "$@" | jq -r '.[].url')"
-    byc="$(printf -- "%s" "$results" | wc -c)"
+    byc="$(printf -- "%s" "$results" | wc -m)"
 
     if ! test "$byc" -gt 0; then
         results="$(search_with_ddg -n "$nresults" --json "$@" | jq -r '.[].url')"
-        byc="$(printf -- "%s" "$results" | wc -c)"
+        byc="$(printf -- "%s" "$results" | wc -m)"
     fi
 
     if test "$byc" -gt 0; then

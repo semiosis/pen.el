@@ -15,6 +15,23 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 . $SCRIPTS/lib/hs
 
+filter_script=canonicalise-bible-book-title
+
+if test "$sn" = canonicalise-bible-ref-short; then
+    filter_script=canonicalise-bible-book-title-short
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -short|-s) {
+        filter_script=canonicalise-bible-book-title-short
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 ref="$@"
 
 if ! inside-docker-p; then
@@ -35,16 +52,16 @@ if stdin_exists; then
             booktitle="$(printf -- "%s" "$line" | sed 's/[. ][0-9].*//')"
             chapverse="$(printf -- "%s" "$line" | sed -n 's/.*[. ]\([0-9].*\)/\1/p')"
             {
-                ocif canonicalise-bible-book-title "$booktitle"
+                ocif "$filter_script" "$booktitle"
                 if test -n "$chapverse"; then
                     echo -n " $chapverse"
                 fi
             } | awk 1
         else
-            ocif canonicalise-bible-book-title "$line" | awk 1
+            ocif "$filter_script" "$line" | awk 1
         fi
     done
 else
     test -n "$ref" || { echo "canonicalise-bible-ref: No ref" | hls red 1>&2; exit 1; }
-    ocif canonicalise-bible-book-title "$ref"
+    ocif "$filter_script" "$ref"
 fi

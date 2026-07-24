@@ -14,6 +14,8 @@ test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 #
 # See =nlsh-os=.
 
+FULL_CMD="$(cmd "$@")"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y
@@ -24,6 +26,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -resize|-rs) {
         resize=y
         shift
+    }
+    ;;
+
+    # export from the environment into the script
+    # -exports BROWSER,SOCKET
+    -exports) {
+        exports="$2"
+        shift
+        shift
+        exports="$(printf -- "%s" "$exports" | sed 's/[, ]/\n/g')"
+        # export all of these into the script
     }
     ;;
 
@@ -45,14 +58,27 @@ if stdin_exists; then
     input_fp="$(cat | tf txt)"
 fi
 
-slug="$(echo "$CMD--$CWD" | tr -d '\n' | slugify | cut -c -40)"
+slug="$(echo "$FULL_CMD--$CWD" | tr -d '\n' | slugify | cut -c -80)"
 
 tf_new_script="$TMPDIR/nsfa-$slug.sh"
+# echo "$tf_new_script" | tv &>/dev/null
 rm -f "$tf_new_script"
 
 # stty stop and undef are used to prevent C-s from hanging the program.
 IFS= read -r -d '' scriptcode <<HEREDOC
 #!/bin/bash
+
+$(
+    test -n "$exports" && {
+        printf -- "%s\n" "$exports" | while IFS="$IFS" read -r line; do
+            (
+            exec 0</dev/null
+            eval "val=\"\$$line\""
+            echo "export ${line}=$(aqf "$val")"
+            )
+        done
+    }
+)
 $(test -n "$PEN_NO_TM" && printf -- "%s\n" "export PEN_NO_TM=\"$PEN_NO_TM\"")
 $(test -n "$PEN_USE_GUI" && printf -- "%s\n" "export PEN_USE_GUI=\"$PEN_USE_GUI\"")
 $(test -n "$TMUX" && printf -- "%s\n" "export TMUX=\"$TMUX\"")

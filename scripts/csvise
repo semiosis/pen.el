@@ -1,0 +1,70 @@
+#!/bin/bash
+export TTY
+
+# DONE:
+# j:eshell/df
+# j:eshell/ps
+
+# TODO:
+# man:ss
+# man:ls
+#  add "-l" to the invocation
+#  ls -ldt * | v
+
+# CONVERT/EXTRACT:
+# e:free
+
+. $SCRIPTS/lib/hs
+
+{
+    com="$1"
+    shift
+    case "$com" in
+        df) {
+            "$com" "$@" | sed 's/Mounted on/Mounted-on/' | sed -E 's/ +/,/g' | sed '1s/%/-percent/g'
+        }
+        ;;
+
+        filan) {
+            {
+                if test "$(
+                    for var in "$@"
+                    do
+                        if test "$var" = "-s"; then
+                            echo -s
+                        fi
+                    done
+                )" = -s; then
+                    echo -e "FD\ttype\tpath"
+                    "$com" "$@" | sed 's/ /\t/g'
+                else
+                    "$com" "$@"
+                fi
+            } | erase-starting-whitespace | sed 's/\t\+/\t/g' | sed 's/: /\t/' | sed '1s/FD \+/FD\t/'
+        }
+        ;;
+
+        ps) {
+            # csvise ps -f | fpvd -csv
+
+            psout="$("$com" "$@")"
+            cmdcol="$(printf -- "%s\n" "$psout" | sed q | sed 's/^\(.*\)CMD$/\1/' | wc -m)"
+            cmdcol_n1="$(( cmdcol - 1))"
+            psout_left="$(printf -- "%s\n" "$psout" | cut -c "-$cmdcol_n1")"
+            psout_right="$(printf -- "%s\n" "$psout" | cut -c "${cmdcol}-")"
+            psout_left="$(printf -- "%s\n" "$psout_left" | sed 's/^ \+//' | sed -E 's/ +/,/g' | sed -E 's/,$//')"
+            paste -d , <(printf -- "%s\n" "$psout_left") <(printf -- "%s\n" "$psout_right")
+        }
+        ;;
+
+        free) {
+            free -eshell "$@"
+        }
+        ;;
+
+        *) {
+            "$com" "$@"
+        }
+        ;;
+    esac
+} | pavs

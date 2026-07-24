@@ -42,6 +42,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ofp) {
+        output_filepath=y
+        shift
+    }
+    ;;
+
     -getcommand) {
         # Get the full command, rather than run it.
         # This is useful for when stdin was used.
@@ -234,55 +240,64 @@ age() {
 
 CMD="$CMD; echo \"\$?\" > \"\$cache_file_path_exitcode\""
 
-# Check whether there is a cache with this path and act accordingly
-if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
-    file_age="$(test -f "$cache_file_path" && age "$cache_file_path")"
-    # echo "RT: $RETRY_TIMEOUT; file_age: $file_age" | tv &>/dev/null
-    if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && { test -n "$RETRY_TIMEOUT" && test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$FORCE_RETRY" = y; then
-        echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
-        exit 0
-    elif test -f "$cache_file_path" && test -s "$cache_file_path" && { test "$RETRY_TIMEOUT" = "" || test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$UPDATE" = y; then
-        # if test "$notify_not_updated" = "y"; then
-            # echo "Cache used for $CMD" | tee -a /tmp/ci-log.txt 1>&2
-        # fi
-
-        0</dev/null o_cat "$cache_file_path"
-    else
-        # Update
-        rm -f "$cache_file_path"
-
-        # if test "$notify_updated" = "y"; then
-            # echo "Updated cache for $CMD. Path: $cache_file_path" | tee -a /tmp/ci-log.txt 1>&2
-        # fi
-
-        if test "$asynchronous" = "y"; then
-            # TODO Put a delay before this is allowed to run again
-
-            if test "$USING_STDIN" = y; then
-                # Both nohup and & are necessary
-                # /usr/bin/nohup sh -c "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
-
-                /usr/bin/nohup tmux neww -n running-pen-ci -d "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
-            else
-                eval "$CMD" > "$cache_file_path" &
-            fi
+main() {
+    # Check whether there is a cache with this path and act accordingly
+    if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
+        file_age="$(test -f "$cache_file_path" && age "$cache_file_path")"
+        # echo "RT: $RETRY_TIMEOUT; file_age: $file_age" | tv &>/dev/null
+        if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && { test -n "$RETRY_TIMEOUT" && test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$FORCE_RETRY" = y; then
+            echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
+            exit 0
+        elif test -f "$cache_file_path" && test -s "$cache_file_path" && { test "$RETRY_TIMEOUT" = "" || test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$UPDATE" = y; then
+            # if test "$notify_not_updated" = "y"; then
+                # echo "Cache used for $CMD" | tee -a /tmp/ci-log.txt 1>&2
+            # fi
+    
+            0</dev/null o_cat "$cache_file_path"
         else
-            if test "$USING_STDIN" = y; then
-                # cmd-nice bash -c "cat $tf_stdin | $CMD" | tv &>/dev/null
-                # bash -c "cat $tf_stdin | $CMD" | o_tee "$cache_file_path"
-                odn cat "$tf_stdin" | eval "$CMD" | o_tee "$cache_file_path"
+            # Update
+            rm -f "$cache_file_path"
+    
+            # if test "$notify_updated" = "y"; then
+                # echo "Updated cache for $CMD. Path: $cache_file_path" | tee -a /tmp/ci-log.txt 1>&2
+            # fi
+    
+            if test "$asynchronous" = "y"; then
+                # TODO Put a delay before this is allowed to run again
+    
+                if test "$USING_STDIN" = y; then
+                    # Both nohup and & are necessary
+                    # /usr/bin/nohup sh -c "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
+    
+                    /usr/bin/nohup tmux neww -n running-pen-ci -d "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
+                else
+                    eval "$CMD" > "$cache_file_path" &
+                fi
             else
-                eval "$CMD" | o_tee "$cache_file_path"
+                if test "$USING_STDIN" = y; then
+                    # cmd-nice bash -c "cat $tf_stdin | $CMD" | tv &>/dev/null
+                    # bash -c "cat $tf_stdin | $CMD" | o_tee "$cache_file_path"
+                    odn cat "$tf_stdin" | eval "$CMD" | o_tee "$cache_file_path"
+                else
+                    eval "$CMD" | o_tee "$cache_file_path"
+                fi
             fi
         fi
-    fi
-else
-    # Not caching
-    if test "$USING_STDIN" = y; then
-        cat $tf_stdin | eval "$CMD"
     else
-        eval "$CMD"
+        # Not caching
+        if test "$USING_STDIN" = y; then
+            cat $tf_stdin | eval "$CMD"
+        else
+            eval "$CMD"
+        fi
     fi
+}
+
+if test "$output_filepath" = "y"; then
+    main &>/dev/null
+    echo "$cache_file_path"
+else
+    main
 fi
 
 exit_code="$(cat "$cache_file_path_exitcode")"

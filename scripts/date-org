@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        time=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$time" = "y"; then
+    date "+<%Y-%m-%d %a %R>"
+else
+    date "+<%Y-%m-%d %a>"
+fi

@@ -31,7 +31,4 @@
                                       nil
                                       t))))
 
-(define-key global-map (kbd "<help> m") 'describe-mode)
-(define-key global-map (kbd "<help> M") 'pen-show-active-minor-modes-for-buffer)
-
 (provide 'pen-global)

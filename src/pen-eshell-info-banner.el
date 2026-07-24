@@ -8,9 +8,9 @@
 (setq eshell-info-banner-progress-bar-char "┅")
 (setq eshell-info-banner-progress-bar-char "━")
 (setq eshell-info-banner-progress-bar-char "█")
-(setq eshell-info-banner-progress-bar-char "🮅")
-;; Sadly, this breaks the terminal when I move cursor across it. But it still looks nicest by far
 (setq eshell-info-banner-progress-bar-char "▆")
+;; Sadly, this breaks the terminal when I move cursor across it. But it still looks nicest by far
+(setq eshell-info-banner-progress-bar-char "🮅")
 
 (defun eshell-info-banner--memory-to-string (type total used text-padding bar-length)
   "Display a memory’s usage with a progress bar.

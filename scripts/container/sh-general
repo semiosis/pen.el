@@ -81,7 +81,7 @@ HEREDOC
 # n  notes
 
 echo "$0" | udl | hls green
-echo "$options" | hls dgrey
+echo "$options" | columnate | hls dgrey
 
 # The IFS is so I can read a space
 IFS="" read -n1 d; test "$d" = "" && read -n1 d

@@ -403,7 +403,7 @@ case "$sn" in
     ;;
 
     human-complete.sh) {
-        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
+        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -m)"}"
 
         export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"
@@ -412,7 +412,7 @@ case "$sn" in
     ;;
 
     proxy-complete.sh) {
-        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
+        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -m)"}"
 
         export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"
@@ -421,7 +421,7 @@ case "$sn" in
     ;;
 
     *) {
-        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -c)"}"
+        : "${PEN_COLLECT_FROM_POS:="$(cat "$tf_response" | wc -m)"}"
 
         export PEN_COLLECT_FROM_POS
         results_dir="$(openai_results_split "$tf_response")"

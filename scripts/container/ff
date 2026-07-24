@@ -108,7 +108,6 @@ if test -z "$ans"; then
               -m pen-mirror-site \
               -x ewx \
               -N nveww \
-              -n : \
               -r rdrview \
               -c copy \
               -f firefox \
@@ -128,6 +127,7 @@ if test -z "$ans"; then
               -n nvlinks \
               -l elinks \
               -z scrape-and-summarize \
+              -B dump-url-show-bible-verses \
               -s ca-tless \
               -V vimlinks \
               -q QUIT )"
@@ -157,6 +157,7 @@ case "$ans" in
     eww-q) { eww-q "$url"; } ;;
     elinks) { elinks "$url"; } ;;
     scrape-and-summarize) { scrape-and-summarize "$url" | vs; } ;;
+    dump-url-show-bible-verses) { dump-url-show-bible-verses "$url" | vs; } ;;
     nvlinks) { nvlinks "$url"; } ;;
     firefox) { set +m; trap '' INT HUP; firefox "$url" & disown; } ;;
     pentadactyl) { set +m; trap '' INT HUP; firefox "$url" & disown; } ;;

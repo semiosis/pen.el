@@ -862,6 +862,17 @@ decreases scheduled or deadline date by one day."
     (call-interactively 'org-insert-last-stored-link)
     (chomp (buffer-string))))
 
+(defun org-link-get-address ()
+  (interactive)
+  (let ((rawlink (plist-get (plist-get (org-element-lineage (org-element-context) '(link) t) 'link) :raw-link)))
+    rawlink))
+
+(defun org-link-copy-address ()
+  (interactive)
+  (let ((rawlink (org-link-get-address)))
+    (if rawlink
+        (xc rawlink))))
+
 (defun org-copy-link ()
   (interactive)
   (xc (org-get-link)))

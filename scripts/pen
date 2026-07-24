@@ -947,6 +947,11 @@ case "$FRAME_TYPE" in
     *)
 esac
 
+if test "$NOEMACS" = "y"; then
+    v "$@"
+    exit "$?"
+fi
+
 if test -n "$PROMPT_HIST_ID"; then
     PROMPT_HIST_ID="\"$PROMPT_HIST_ID\""
 else

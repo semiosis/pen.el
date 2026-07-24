@@ -75,6 +75,15 @@
 ;; (set-face-foreground 'org-code "#f070f0")
 (set-face-foreground 'org-code "#c0c0c0")
 
+ ;; | /a/     | *b* | =formula=     |         =d= |
+ ;; |---------+-----+---------------+-------------|
+ ;; | [[sps:vim]] |   2 | flkdsjfkldsja | 34289723498 |
+ ;; |         |     |               |             |
+;; org-verbatim is used for foreground, org-formula is used for background.
+;; But I've added foreground for org-formula just in case
+(set-face-background 'org-formula "#404040")
+(set-face-foreground 'org-formula "#00f070")
+
 (defun pen-list-faces (&optional regexp)
   "List all faces, using the same sample text in each.
 The sample text is a string that comes from the variable
@@ -1051,6 +1060,10 @@ is specified, `:italic' is ignored."
 
   (set-face-background 'helm-selection "#262626")
   (set-face-foreground 'helm-selection "#d72f4f")
+
+  (require 're-builder)
+  (set-face-foreground 'reb-match-0 "#ffff00")
+  (set-face-background 'reb-match-0 "#555555")
 
   (require 'helm-files)
   (set-face-attribute 'helm-ff-prefix nil :weight 'bold)

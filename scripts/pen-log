@@ -1,7 +1,23 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename -- "$0")"
+
 pendir=~/.pen
+
+case "$sn" in
+    splv) {
+        do_watch=y
+    }
+    ;;
+
+    splgp) {
+        do_getpath=y
+    }
+    ;;
+
+    *)
+esac
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

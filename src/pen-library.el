@@ -342,6 +342,7 @@ If `soft` and `semantic-path` are both `nil` then that would usually result in a
    ;;        (e/xc))
    (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
    ;; (pen-error-if-equals (calibredb-org-link-copy) "[[calibredb:nil][ nil - nil]]")
+   (pen-error-if-equals (org-link-get-address) nil)
    (pen-error-if-equals (pen-button-get-link (glossary-button-at-point)) nil)
    (pen-error-if-equals (pen-clean-up-copy-link (plist-get (link-hint--get-link-at-point) :args)) nil)
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
@@ -486,7 +487,8 @@ single-character strings, or a string of characters."
   (read-string-hist
    (or prompt
        (concat "pen-ask: "))
-   thing))
+   thing
+   nil nil nil t))
 
 (defalias 'ask 'pen-ask)
 (defalias 'pen-confirm-input 'pen-ask)
@@ -920,7 +922,12 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
     
     (if path
         (xc path)
-      (message "No path. Not copying."))))
+      (let* ((s (buffer-string))
+             (fp (tf "emacs-buffer-contents" s (read-string "Extension: " "txt")))
+             (b (find-file fp)))
+        ;; (message "No path. Not copying.")
+        
+        ))))
 
 (defun unslugify (input)
   (pen-snc "unslugify" input))
@@ -1466,7 +1473,9 @@ non-nil."
 (if (inside-docker-p)
     (progn
       (global-set-key "\C-n" 'pen-scroll-down)
-      (global-set-key "\C-p" 'pen-scroll-up)))
+      (global-set-key "\C-p" 'pen-scroll-up)
+      (global-set-key (kbd "H-n") 'pen-scroll-down)
+      (global-set-key (kbd "H-p") 'pen-scroll-up)))
 
 (defun newline-indent ()
   (interactive)
@@ -1733,5 +1742,10 @@ non-nil."
 (remove-from-alist "ssh" 'tramp-methods)"
   (set alist 
        (assoc-delete-all key (eval alist) 'equal)))
+
+(defun get-major-mode (buffer)
+  (with-current-buffer buffer
+    major-mode))
+(defalias 'buffer-major-mode 'get-major-mode)
 
 (provide 'pen-library)

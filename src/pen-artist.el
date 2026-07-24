@@ -15,4 +15,20 @@
 ;; appear in the minibuffer after artist-mouse-draw-poly causes an error.
 (advice-add 'artist-down-mouse-1 :around #'shut-up-around-advice)
 
+(setq artist-figlet-list-fonts-command
+      '"for dir in `figlet -I2`; do cd $dir; ls *.[tf]lf; done")
+
+(defun artist-figlet-get-font-list ()
+  "Read fonts in with the shell command.
+Returns a list of strings."
+  (let* ((cmd-interpreter "/bin/sh")
+	     (ls-cmd          artist-figlet-list-fonts-command)
+	     (result          (artist-system cmd-interpreter ls-cmd nil))
+	     (exit-code       (elt result 0))
+	     (stdout          (elt result 1))
+	     (stderr          (elt result 2)))
+    (if (not (= exit-code 0))
+	    (error "Failed to read available fonts: %s (%d)" stderr exit-code))
+    (str2lines (e/chomp stdout))))
+
 (provide 'pen-artist)

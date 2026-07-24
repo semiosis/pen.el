@@ -1,0 +1,10 @@
+#!/usr/bin/env -S pvd -p
+{"sheet": null, "col": "", "row": "", "longname": "open-file", "input": "/tmp/visidata-input.txt", "keystrokes": "o", "comment": "Open file or URL"}
+{"longname": "options-global", "keystrokes": "O"}
+{"sheet": "global_options", "col": "option", "row": "", "longname": "select-col-regex", "input": {"regex": "^color_", "flags": "I"}, "keystrokes": "|", "comment": "select rows matching regex in current column"}
+{"sheet": "visidata-input", "col": "text", "row": "", "longname": "sort-desc", "input": "", "keystrokes": "]", "comment": "sort descending by current column; replace any existing sort criteria "}
+{"longname": "dup-selected", "keystrokes": "\""}
+{"longname": "save-sheet", "input": "/tmp/visidata-colors.tsv"}
+{"longname": "quit-all"}
+{"longname": "save-sheet", "input": "/tmp/visidata-input.txt"}
+
