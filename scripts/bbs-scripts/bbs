@@ -37,7 +37,8 @@ export BBS_CLIENT
 opt="$1"
 shift
 
-: "${opt:="$(cat `which bbs` | scrape "[a-z0-9]+\\)" | sed 's/.$//' | mfz )"}"
+# Scrape the case options from this script to populate the list, but leave out the flags
+: "${opt:="$(cat `which bbs` | scrape "-?[a-z0-9]+\\)" | sed '/^-/d' | sed 's/.$//' | mfz --prompt "BBS Server Name" )"}"
 
 case "$opt" in
     retrocampus) {
@@ -82,6 +83,11 @@ case "$opt" in
 
     0day) {
         bbs-connect -xterm bbs.0day.agency
+    }
+    ;;
+
+    themidnightcafe) {
+        bbs-connect -xterm themidnightcafe.zapto.org
     }
     ;;
 
