@@ -269,7 +269,11 @@ or an external command."
 (defun e/nw (&optional run)
   (interactive)
   (if run
-      (call-interactively run)))
+      (cond
+       ((ignore-errors (function-p run))
+        (call-interactively run))
+       ((consp run)
+        (eval run)))))
 (defalias 'enw 'e/nw)
 
 (defun e/sps (&optional run)
@@ -277,7 +281,11 @@ or an external command."
   (split-window-sensibly)
   (other-window 1)
   (if run
-      (call-interactively run)))
+      (cond
+       ((ignore-errors (function-p run))
+        (call-interactively run))
+       ((consp run)
+        (eval run)))))
 (defalias 'esps 'e/sps)
 
 
@@ -286,7 +294,11 @@ or an external command."
   (split-window-horizontally)
   (other-window 1)
   (if run
-      (call-interactively run)))
+      (cond
+       ((ignore-errors (function-p run))
+        (call-interactively run))
+       ((consp run)
+        (eval run)))))
 (defalias 'espv 'e/spv)
 
 (defun e/sph (&optional run)
@@ -294,7 +306,11 @@ or an external command."
   (split-window-vertically)
   (other-window 1)
   (if run
-      (call-interactively run)))
+      (cond
+       ((ignore-errors (function-p run))
+        (call-interactively run))
+       ((consp run)
+        (eval run)))))
 (defalias 'esph 'e/sph)
 
 (defun eshell-nw ()
@@ -343,18 +359,24 @@ or an external command."
   ;; (eshell)
   )
 
+(comment
+ (edit-read-string-hist "eshell$ ")
+ (edit-read-string-hist "fz-ddgr-bibleverse: "))
+
 ;; Do the following even work?
 (defun eshell-run-command (cmd)
-  (interactive (list (read-string-hist "eshell$ ")))
-  (eshell)
-  (with-current-buffer "*eshell*"
+  (interactive (list (car (str2lines (read-string-hist "eshell$ " nil nil nil nil t)))))
+  
+  (let ((buf (eshell-unique)))
+    (with-current-buffer buf
 
-    ;; For some reason, these two commands break it, even with
-    ;; ignore-errors:
-    ;; (ignore-errors (eshell-return-to-prompt))
-    ;; (ignore-errors (eshell-kill-input))
-    (insert cmd)
-    (eshell-send-input)))
+      ;; For some reason, these two commands break it, even with
+      ;; ignore-errors:
+      ;; (ignore-errors (eshell-return-to-prompt))
+      ;; (ignore-errors (eshell-kill-input))
+      (insert cmd)
+      (eshell-send-input))
+    (kill-buffer buf)))
 
 ;; shell (not eshell)
 (defun shell-run-command (cmd)

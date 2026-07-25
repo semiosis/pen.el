@@ -1551,12 +1551,16 @@ when s is a string, set the clipboard to s"
     "Like q but without the end quotes"
     (pcre-replace-string "\"(.*)\"" "\\1" (pen-q string)))
 
+(comment (edit-read-string-hist "eshell$ "))
 ;; TODO I think I should make a more permanent solution to this
 ;; It should really load from file, optionally, though.
 ;; Some completing reads should have a permanent memory. e.g. j:fz-ddgr
 ;; Implement `remember-history-b`
 (defun completing-read-hist (prompt &optional initial-input histvar default-value override-func-name remember-history-b)
-  "read-string but with history and newline evaluation."
+  "read-string but with history and newline evaluation.
+
+See j:edit-read-string-hist for editing the hist var
+"
   (setq initial-input (or initial-input
                           ""))
 
@@ -1621,6 +1625,26 @@ when s is a string, set the clipboard to s"
              histvar)
         (f-write-text (pps (eval histvar)) 'utf-8 cache-fp))
     ret))
+
+(defun edit-read-string-hist (prompt &optional histvar)
+  "Edit the completing-read-hist"
+  (interactive (list (read-string-hist "edit-read-string-hist prompt: ")))
+
+  (let* ((histvar (or
+                   histvar
+                   (intern (concat "completing-read-hist-" (slugify prompt)))))
+         (cache-fp (f-join pen-ci-cache-dir (concat "completing-read-hist" "--" (sym2str histvar)))))
+
+    (cond
+     ((and (variable-p histvar)
+           (f-exists-p cache-fp))
+      (edit-var-elisp histvar)
+      (e/sps `(ff ,cache-fp)))
+     ((variable-p histvar)
+      (edit-var-elisp histvar))
+     ((f-exists-p cache-fp)
+      (ff cache-fp)))))
+
 (defalias 'read-string-hist 'completing-read-hist)
 (defalias 'rshi 'completing-read-hist)
 

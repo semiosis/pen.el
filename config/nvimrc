@@ -1994,3 +1994,6 @@ nnoremap tp :call TP()<CR>
 nnoremap tn :call ToggleOpt("number")<CR>
 nnoremap tr :call ToggleOpt("relativenumber")<CR>
 nnoremap tw :call ToggleOpt("wrap")<CR>
+
+nnoremap <S-Tab>p <C-p>
+nnoremap <S-Tab>n <C-n>

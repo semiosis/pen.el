@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# man -w 2 kill
+# /usr/share/man/man2/kill.2.gz
+
+used pen1 ead -F "$(for dp in /usr/local/share/man/ /usr/local/man/ /usr/share/man/; do find -L "$dp" -type f -regex '.*\.[0-9]'; done | tf txt)" "$@"

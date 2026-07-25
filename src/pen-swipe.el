@@ -4,11 +4,12 @@
 
 (defvar swipecmd 'swiper)
 
-(defun pen-swiper (&optional initial-input)
-  "Fixes the initial Lisp nesting exceeds ‘max-lisp-eval-depth’ error after opening a file and running swiper for the first time."
-  (interactive)
-  (swiper initial-input)
-  (swiper initial-input))
+(comment
+ (defun pen-swiper (&optional initial-input)
+   "Fixes the initial Lisp nesting exceeds ‘max-lisp-eval-depth’ error after opening a file and running swiper for the first time."
+   (interactive)
+   (swiper initial-input)
+   (swiper initial-input)))
 
 (defun pen-swipe ()
   (interactive)

@@ -20,6 +20,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -mcd) {
+        do_mkdirp=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -30,6 +36,10 @@ is_tty() {
 
 fp="$1"
 : ${fp:="$(pwd)"}
+
+if test "$do_mkdirp" = "y"; then
+    mkdir -p "$fp"
+fi
 
 if test "$fp" = "/"; then
     dn="/"

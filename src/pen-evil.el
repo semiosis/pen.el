@@ -152,12 +152,18 @@
 
 ;; Beep minibuffer
 (defun pen-enter-evil-ex ()
-  (interactive)
-  (if (region-active-p)
+  (interactive)  
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16)
+    (edit-read-string-hist "eshell$ "))
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (call-interactively 'eshell-run-command))
+   (t
+    (if (region-active-p)
+        (do-in-evil
+         (evil-ex "'<,'>"))
       (do-in-evil
-       (evil-ex "'<,'>"))
-    (do-in-evil
-     (evil-ex ""))))
+       (evil-ex ""))))))
 
 (defmacro insert-map (KEYS fun)
   (setq fun (eval fun))
