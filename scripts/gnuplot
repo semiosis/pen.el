@@ -3,4 +3,4 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-$HOME/.cargo/bin/cargo-quickinstall "$@"
+/usr/bin/gnuplot "$@"

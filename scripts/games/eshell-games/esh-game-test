@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# How these eshell games ought to work:
+# I should be able to play the game by invoking this script from eshell
+# ongoingly.
+# This script should work with its own object model stored in a database
+# somewhere and somehow.
+# This script should be used by the player to query and change the game state.
+# A log should also be kept, so that the game can be replayed.
+# The script should be simply enough so that settings should become defaults
+# and subsequent invocations to the script should use those defaults
+# (a basic example of this would be when choosing to command a game
+# that has been started and exists in memory).
+echo hi

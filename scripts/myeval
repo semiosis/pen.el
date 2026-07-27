@@ -16,6 +16,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -echo) {
+        do_echo=y
+        shift
+    }
+    ;;
+
     -tvnw|-tvsp[hvs]) {
         DO_TV=y
         TV_TYPE="$(printf -- "%s" "$opt" | sed 's/^-tv//')"
@@ -70,5 +76,10 @@ else
     if test "$DO_TV" = "y"; then
         echo "$CMD" | tv "-$TV_TYPE" &>/dev/null
     fi
-    eval "$CMD"
+
+    if test "$do_echo" = "y"; then
+        echo-exec -E "$CMD"
+    else
+        eval "$CMD"
+    fi
 fi

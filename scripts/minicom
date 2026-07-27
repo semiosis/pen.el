@@ -3,12 +3,27 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+if test -n "$INSIDE_EMACS"; then
+    default_browser=sps-ew3m
+else
+    default_browser=ew3m
+fi
+
 IFS= read -r -d '' helptext <<HEREDOC
-used pen1 ew3m "https://tldp.org/HOWTO/Remote-Serial-Console-HOWTO/modem-minicom.html"
+used pen1 "$default_browser" "https://tldp.org/HOWTO/Remote-Serial-Console-HOWTO/modem-minicom.html"
 minicom -o -s # configuration mode
 HEREDOC
 
-if test "$#" -eq 0; then
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if test "$#" -eq 0 && is_tty; then
     inv="$(printf -- "%s\n" "$helptext" | mfz --prompt invocation | sed 's/ #.*//')"
     if test -n "$inv"; then
         eval "$inv"

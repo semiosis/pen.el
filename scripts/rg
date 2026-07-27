@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# cargo-quickinstall --force "ripgrep"
+
+test -f $HOME/.cargo/bin/rg || cargo-quickinstall "rg" &>/dev/null
+
+$HOME/.cargo/bin/rg "$@"

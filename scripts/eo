@@ -1,1 +1,4 @@
-pen-e-ic
+#!/bin/bash
+export TTY
+
+myeval -echo "$@"

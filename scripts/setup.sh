@@ -2919,3 +2919,10 @@ e ia -r wisp-mode
 )
 
 e ia -r org-remark
+
+# smalltalk
+e ia -r smalltalk-mode
+agi libsigsegv2 libsigsegv-dev
+
+agi gnuplo
+e ia -r gnuplot

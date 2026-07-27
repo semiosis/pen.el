@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+# The purpose of this is, when executed, to show to the user
+# how it was called. (sn, stdin, args)
+#
+# Example:
+# nohup bash -c "echo hi | stub-showcmd 1 2 4"
+
+. $SCRIPTS/lib/hs
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+
+if stdin_exists; then
+    input="$(cat)"
+fi
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+sn="$(basename -- "$0")"
+
+{
+echo "INVOCATON: $sn $CMD"
+if test -n "$input"; then
+    echo "Has stdin." | udl
+    echo "$input" | pen-org-template-gen -basic text "STDIN for $sn"
+else
+    echo "No stdin."
+fi
+} | intty v

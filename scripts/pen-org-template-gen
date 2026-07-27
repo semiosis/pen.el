@@ -2,6 +2,17 @@
 
 input_fp="$(pen-tf txt)"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -basic) {
+        do_basic_format=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 interp="$1"
 shift
 
@@ -23,6 +34,32 @@ if test -n "$name"; then
     echo "#+NAME: $name"
 fi
 
+if test "$do_basic_format" = "y"; then
+    extra_format=""
+else
+    extra_format=":async :results verbatim code :lang text"
+fi
+
+echo () {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -chomp) {
+            do_chomp=y
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    if test "$do_chomp" = "y"; then
+        # Chomp trailing whitespace but ensure newline
+        builtin echo "$@" | chomp | awk1
+    else
+        builtin echo "$@"
+    fi
+}
+
 case "$interp" in
     tpop|sps|spv|sph|nw|esph|espv) {
         # echo "#+BEGIN_SRC sh -n :interpreter \"$interp bash\" :async :results none"
@@ -38,7 +75,7 @@ case "$interp" in
     ;;
 
     bb) {
-        echo "#+BEGIN_SRC clojure -n :i bb :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC clojure -n :i bb $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -47,14 +84,14 @@ case "$interp" in
     clojure) {
         interp=clj
 
-        echo "#+BEGIN_SRC clojure -n :i $interp :async :results verbatim code"
+        echo "#+BEGIN_SRC clojure -n :i $interp $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     bash|racket|zsh) {
-        echo "#+BEGIN_SRC $interp -n :i $interp :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC $interp -n :i $interp $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -68,21 +105,21 @@ case "$interp" in
     ;;
 
     jq) {
-        echo "#+BEGIN_SRC jq -n :i \"jq -f\" :async :results verbatim code"
+        echo "#+BEGIN_SRC jq -n :i \"jq -f\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     terraform) {
-        echo "#+BEGIN_SRC lean -n :f terraform-console :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC lean -n :f terraform-console $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     lean) {
-        echo "#+BEGIN_SRC lean -n :i lean :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC lean -n :i lean $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -96,14 +133,14 @@ case "$interp" in
     ;;
 
     brain-description) {
-        echo "#+BEGIN_SRC text -n :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC text -n $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     code-snippet) {
-        echo "#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC text -n :f penf -u code-snippet-from-natural-language/2 python $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -117,14 +154,14 @@ case "$interp" in
     ;;
 
     french) {
-        echo "#+BEGIN_SRC text -n :f \"translate-shell -s fr -t en\" :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC text -n :f \"translate-shell -s fr -t en\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     english) {
-        echo "#+BEGIN_SRC text -n :f \"translate-shell -s en -t fr\" :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC text -n :f \"translate-shell -s en -t fr\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -160,7 +197,7 @@ case "$interp" in
     ;;
 
     prolog) {
-        echo "#+BEGIN_SRC prolog -n :i babel-prolog :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC prolog -n :i babel-prolog $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -179,7 +216,7 @@ case "$interp" in
 
         # For some reason babel always provides stdin. So filters are
         # more reliable. :i doesn't work yet
-        echo "#+BEGIN_SRC racket -n :f $(aqf-nice "racket-sublang $sublang") :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC racket -n :f $(aqf-nice "racket-sublang $sublang") $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -189,35 +226,35 @@ case "$interp" in
     #    sublang="$1"
     #    shift
 
-    #    echo "#+BEGIN_SRC racket -n :i \"racket -I $sublang\" :async :results verbatim code"
+    #    echo "#+BEGIN_SRC racket -n :i \"racket -I $sublang\" $extra_format"
     #    cat "$input_fp" | postprocess
     #    echo -n "#+END_SRC"
     #}
     #;;
 
     rust) {
-        echo "#+BEGIN_SRC rust -n :i rust-run :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC rust -n :i rust-run $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     python) {
-        echo "#+BEGIN_SRC python -n :i mypython :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC python -n :i mypython $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     go) {
-        echo "#+BEGIN_SRC go -n :fp /tmp/babel/main.go :sps \"set -xv; go run {}\" :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC go -n :fp /tmp/babel/main.go :sps \"set -xv; go run {}\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     plantuml) {
-        echo "#+BEGIN_SRC plantuml -n :f plantuml :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC plantuml -n :f plantuml $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -253,7 +290,7 @@ case "$interp" in
 
     awk) {
         # If must have the correct extension to work. So use filter
-        echo "#+BEGIN_SRC awk -n :i babel-awk -v OFS=\"\\t\" :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC awk -n :i babel-awk -v OFS=\"\\t\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -268,7 +305,7 @@ case "$interp" in
     ;;
 
     ghciol) {
-        echo "#+BEGIN_SRC haskell -n :filter ghciol -norc :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC haskell -n :filter ghciol -norc $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -282,36 +319,36 @@ case "$interp" in
     ;;
 
     guile) {
-        echo "#+BEGIN_SRC scheme -n :i guile :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC scheme -n :i guile $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     script) {
-        echo "#+BEGIN_SRC haskell -n :i babel-script :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC haskell -n :i babel-script $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     runhaskell) {
-        echo "#+BEGIN_SRC haskell -n :i runhaskell :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC haskell -n :i runhaskell $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     ghci-stdout) {
-        echo "#+BEGIN_SRC haskell -n :i \"babel-ghci -norc\" :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC haskell -n :i \"babel-ghci -norc\" $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     haskell|ghcih-stdout) {
-        # echo "#+BEGIN_SRC haskell -n :filter ghcih -norc :async :results verbatim code"
-        echo "#+BEGIN_SRC haskell -n :i ghcih -norc :async :results verbatim code :lang text"
+        # echo "#+BEGIN_SRC haskell -n :filter ghcih -norc $extra_format"
+        echo "#+BEGIN_SRC haskell -n :i ghcih -norc $extra_format"
         cat "$input_fp" | postprocess
         if test -z "$(cat "$input_fp")"; then
             echo ---
@@ -328,7 +365,7 @@ case "$interp" in
     ;;
 
     ghcih) {
-        # echo "#+BEGIN_SRC haskell -n :filter ghcih -norc :async :results verbatim code"
+        # echo "#+BEGIN_SRC haskell -n :filter ghcih -norc $extra_format"
         echo "#+BEGIN_SRC haskell -n :esph nvc ghcih -norc :async :results none :lang text"
         cat "$input_fp" | postprocess
         if test -z "$(cat "$input_fp")"; then
@@ -361,7 +398,7 @@ case "$interp" in
     ;;
 
     shx) {
-        echo "#+BEGIN_SRC sh -n :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC sh -n $extra_format"
         {
             echo "set -xv"
             echo "exec 2>&1;"
@@ -372,7 +409,7 @@ case "$interp" in
     ;;
 
     sh-xv) {
-        echo "#+BEGIN_SRC sh -n :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC sh -n $extra_format"
         {
             echo "set -xv"
             echo "exec 2>&1;"
@@ -391,14 +428,14 @@ case "$interp" in
     ;;
 
     qdot) {
-        echo "#+BEGIN_SRC graphviz-dot -n :filter dot-${interp} :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC graphviz-dot -n :filter dot-${interp} $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     qdot2dot) {
-        echo "#+BEGIN_SRC graphviz-dot -n :filter gen-qdot :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC graphviz-dot -n :filter gen-qdot $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
@@ -412,58 +449,45 @@ case "$interp" in
     ;;
 
     digraph-ascii*) {
-        echo "#+BEGIN_SRC graphviz-dot -n :filter dot-${interp} :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC graphviz-dot -n :filter dot-${interp} $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     dot) {
-        echo "#+BEGIN_SRC graphviz-$interp -n :filter show-dot :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC graphviz-$interp -n :filter show-dot $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     tmux) {
-        echo "#+BEGIN_SRC conf-space -n :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC conf-space -n $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     rpl) {
-        echo "#+BEGIN_SRC rpl -n :async :results verbatim code :lang text"
+        echo "#+BEGIN_SRC rpl -n $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     ipython|ipython3) {
-        echo "#+BEGIN_SRC python -n :sps $interp :pak :async :results verbatim code"
+        echo "#+BEGIN_SRC python -n :sps $interp :pak $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
     *) {
-        echo "#+BEGIN_SRC $interp -n :async :results verbatim code :lang text"
+        echo -chomp "#+BEGIN_SRC $interp -n $extra_format"
         cat "$input_fp" | postprocess
         echo -n "#+END_SRC"
     }
     ;;
 
-    brain-description) {
-        echo "#+BEGIN_SRC text -n :async :results verbatim code :lang text"
-        cat "$input_fp" | postprocess
-        echo -n "#+END_SRC"
-    }
-    ;;
-
-    *) {
-        echo "#+BEGIN_SRC $interp -n :async :results verbatim code :lang text"
-        cat "$input_fp" | postprocess
-        echo -n "#+END_SRC"
-    }
-    ;;
 esac

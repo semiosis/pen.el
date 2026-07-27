@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+. $SCRIPTS/lib/hs
+
+# viewtexi /root/repos/gnu-smalltalk/smalltalk/doc/tutorial.texi
+
+fp="$1"
+bn="$(basename -- "$fp")"
+mant="${bn%.*}"
+rp="$(realpath "$fp")"
+
+td_makeinfo="$(mktemp -t -d td_makeinfoXXXXXX || echo /dev/null)"
+trap "rmdir \"$td_makeinfo\" 2>/dev/null" 0
+
+# If this does not work then it might need to be built
+# inside the directory and there may be a makefile.
+
+cd "$td_makeinfo"
+makeinfo --html --no-split -o "${mant}.html" "$rp"
+zcd .

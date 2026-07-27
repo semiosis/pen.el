@@ -3,6 +3,27 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
+IFS= read -r -d '' helptext <<HEREDOC
+free -hwlt # human readable
+HEREDOC
+
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if test "$#" -eq 0 && is_tty; then
+    inv="$(printf -- "%s\n" "$helptext" | mfz --prompt invocation | sed 's/ #.*//')"
+    if test -n "$inv"; then
+        eval "$inv" | pavs
+        exit "$?"
+    fi
+fi
+
 # Try to do all of this postprocessing using awk alone
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in

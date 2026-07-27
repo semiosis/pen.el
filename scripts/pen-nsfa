@@ -29,6 +29,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -rm) {
+        remove_on_exit=y
+        shift
+    }
+    ;;
+
     # export from the environment into the script
     # -exports BROWSER,SOCKET
     -exports) {
@@ -110,5 +116,10 @@ HEREDOC
 
 printf -- "%s\n" "$termtest" | awk 1 >> "$tf_new_script"
 printf -- "%s\n" "$CMD \"\$@\"" >> "$tf_new_script"
+
+if test "$remove_on_exit" = "y"; then
+    printf -- "%s\n" "ret=\"\$?\"; rm \"$tf_new_script\"; exit \"\$ret\"; " >> "$tf_new_script"
+fi
+
 chmod a+x "$tf_new_script"
 echo -n "$tf_new_script"

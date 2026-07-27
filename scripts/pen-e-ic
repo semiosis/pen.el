@@ -31,6 +31,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        DO_EXEC=y
+        eargs=n
+        shift
+    }
+    ;;
+
     -sn) {
         sn="$2"
         shift
@@ -40,6 +47,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -1|-rest|-Eargs) {
         eargs=y
+        DO_EXEC=n
         shift
     }
     ;;
@@ -80,6 +88,9 @@ case "$sn" in
     vterm) {
         ic=pen-vterm
         export CIP_NO_REFRESH=y
+
+        # Let eargs be default for vterm
+        eargs=y
     }
     ;;
 
@@ -185,7 +196,7 @@ case "$sn" in
     }
     ;;
 
-    eopen|eo|po) {
+    eopen|po) {
         ic=open
     }
     ;;
@@ -250,11 +261,19 @@ if stdin_exists; then
     exec <&1
 fi
 
+# Test:
+# vterm vim /etc/hosts
+
 if test "$#" -gt 0; then
-    if test "$eargs" = "y"; then
+    if test "$DO_EXEC" = "y"; then
+        CMD="$1"
+        CMD="$(nsfa -rm -E "$CMD")"
+        set -- -cip "$ic" "$CMD"
+    elif test "$eargs" = "y"; then
         # cmd-nice sdlajf lkadsjf kldsajk "fld  dalks"
         # sdlajf lkadsjf kldsajk "fld  dalks"
         CMD="$(cmd-nice "$@")"
+        CMD="$(nsfa -rm -E "$CMD")"
         set -- -cip "$ic" "$CMD"
     else
         set -- -cip "$ic" "$@"

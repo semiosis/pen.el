@@ -75,6 +75,11 @@ case "$module" in
     }
     ;;
 
+    nhebje) {
+        module=NHEBJE
+    }
+    ;;
+
     rnkjv) {
         module=RNKJV
     }

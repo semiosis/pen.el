@@ -779,9 +779,9 @@ case "$fnspec" in
 
     autogen.sh) {
         cd "$dn"
-        ./autogen.sh
-        ./configure && make -j 8
-        pen-yn "make install?" && make install
+        eo ./autogen.sh
+        eo ./configure && eo make -j 8
+        pen-yn "make install?" && eo omake install
         exit 0
     }
     ;;
@@ -795,15 +795,15 @@ case "$fnspec" in
         if test -f config.status; then
             pen-ns "The previous config for $dn was $(./config.status --config)"
             if pen-yn "Use previous config?"; then
-                ./config.status --config | v
-                eval "./configure $(./config.status --config)" && make -j 8
+                eo ./config.status --config | v
+                eo eval "./configure $(./config.status --config)" && eo make -j 8
             elif pen-yn "Open previous config?"; then
-                ./config.status --config | v
+                eo ./config.status --config | v
             else
-                ./configure && make -j 8
+                eo ./configure && eo make -j 8
             fi
         else
-            ./configure && make -j 8
+            eo ./configure && eo make -j 8
         fi
         exit 0
     }
@@ -816,16 +816,16 @@ case "$fnspec" in
 
         if test -n "$(open-main | cat)" && pen-yn "Run main? (y)"; then
             echo "pass it arguments to programhere"
-            zrepl lein run
+            eo zrepl lein run
 
             # The following isn't guaranteed to run
             # zrepl lein run -m main
         elif pen-yn "Start REPL (y)?"; then
-            pen-x -sh "lein repl" -e "=>" -s "(in-ns 'main)" -c m -i
+            eo pen-x -sh "lein repl" -e "=>" -s "(in-ns 'main)" -c m -i
         elif pen-yn "Install (y)?"; then
-            lein deps
-            lein test
-            lein install
+            eo lein deps
+            eo lein test
+            eo lein install
         else
             :
         fi
@@ -1088,22 +1088,22 @@ case "$fnspec" in
     configure.ac|Makefile.am) {
         cd "$dn"
         # autoreconf --install
-        autoreconf -i || {
-            libtoolize --force
-            aclocal
-            autoheader
-            automake --force-missing --add-missing
-            autoconf
+        eo autoreconf -i || {
+            eo libtoolize --force
+            eo aclocal
+            eo autoheader
+            eo automake --force-missing --add-missing
+            eo autoconf
             # ./configure
         }
 
         if ! is_tty || pen-yn "Configure and make as well?"; then
-            ./configure
-            make -j 10
+            eo ./configure
+            eo make -j 10
         fi
 
         if test -f Makefile && is_tty && pen-yn "Install?"; then
-            make install
+            eo make install
         fi
         exit 0
     }
@@ -1285,15 +1285,15 @@ case "$fnspec" in
         mkdir -p build
         cd build
         # This is the clean of cmake
-        rm -f CMakeCache.txt
+        eo rm -f CMakeCache.txt
 
         if test "$interactive" = "y"; then
-            pen-zrepl -E "cmake -DCMAKE_BUILD_TYPE=Release ../ && make -j8"
-            pen-yn "cmake make and install?" && pen-zrepl -E "cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && cmake --build . --target install"
+            eo pen-zrepl -E "eo cmake -DCMAKE_BUILD_TYPE=Release ../ && eo make -j8"
+            pen-yn "cmake make and install?" && eo pen-zrepl -E "eo cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local && eo cmake --build . --target install"
         else
-            cmake ..
+            eo cmake ..
             # cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local
-            make
+            eo make
             pen-pak
         fi
         exit 0
@@ -1589,9 +1589,9 @@ case "$fnspec" in
 
             if test -n "$sel"; then
                 if pen-yn "sudo?"; then
-                    unbuffer sudo -E make "$sel"
+                    eo unbuffer sudo -E make "$sel"
                 else
-                    unbuffer make "$sel"
+                    eo unbuffer make "$sel"
                 fi
             fi
 
@@ -2298,6 +2298,22 @@ case "$file_type" in
     lisp) {
         cd "$dn"
         clisp "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    texi) {
+        cd "$dn"
+        viewtexi "$rp"
+        pen-pak
+        exit 0
+    }
+    ;;
+
+    dem) {
+        cd "$dn"
+        zrepl gnuplot "$rp"
         pen-pak
         exit 0
     }
