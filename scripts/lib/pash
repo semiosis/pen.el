@@ -1,0 +1,62 @@
+# v "$PENELD/scripts/pen-bash"
+# v "$PENELD/scripts/lib/pash"
+
+shopt -s extdebug
+
+# set -xv
+. /root/.emacs.d/host/pen.el/config/bash/bashrc
+
+# Sadly, it seems like this isn't going to work
+# preexec_invoke_exec () {
+#     # https://unix.stackexchange.com/a/250792
+# 
+#     [ -n "$COMP_LINE" ] && return  # do nothing if completing
+#     [ "$BASH_COMMAND" = "$PROMPT_COMMAND" ] && return # don't cause a preexec for $PROMPT_COMMAND
+# 
+#     local this_command=`HISTTIMEFORMAT= history 1 | sed -e "s/^[ ]*[0-9]*[ ]*//"`;
+#      
+#     # So that you don't get locked accidentally
+#     if [ "shopt -u extdebug" == "$this_command" ]; then
+#         return 0
+#     fi
+#     
+#     # # Modify $this_command and then execute it
+#     # eval "$this_command"
+#     # if [[ "$BASH_COMMAND" == *"$({"* ]]; then
+#     # fi
+#     # echo "$BASH_COMMAND"
+#     # eval "$BASH_COMMAND"
+# 
+#     # return 1 # This prevent executing of original command
+#     return 0
+# }
+# Cause 'preexec_invoke_exec' to execute before executing bash commands:
+# trap 'preexec_invoke_exec' DEBUG
+
+# It works like this:
+# 
+# trap 'function_name' DEBUG causes function_name to execute before executing bash commands. But by default return value have no effect over original command.
+# 
+# shopt -s extdebug enables some debugging features with one of them checks for return value before executing original command.
+# 
+# Note: shopt -u extdebug disable this feature so original command always get executed.
+# 
+# Documentation of extdebug (See second feature):
+# 
+# If set, behavior intended for use by debuggers is enabled:
+# 
+# The -F option to the declare builtin (see Bash Builtins) displays the source file name and line number corresponding to each function name supplied as an argument.
+# If the command run by the DEBUG trap returns a non-zero value, the next command is skipped and not executed.
+# If the command run by the DEBUG trap returns a value of 2, and the shell is executing in a subroutine (a shell function or a shell script executed by the . or source builtins), a call to return is simulated.
+# BASH_ARGC and BASH_ARGV are updated as described in their descriptions (see Bash Variables).
+# Function tracing is enabled: command substitution, shell functions, and subshells invoked with ( command ) inherit the DEBUG and RETURN traps.
+# Error tracing is enabled: command substitution, shell functions, and subshells invoked with ( command ) inherit the ERR trap.
+# 
+# Share
+# Improve this answer
+# Follow
+# edited Dec 21, 2015 at 21:59
+# answered Dec 21, 2015 at 21:29
+# user121183
+# 
+#     How would I then execute the command? Just writing "$BASH_COMMAND" as one line of the function works usually, but not if the user-entered command is for example foo=1. Edit: Found it, still within the edit timeout of a comment: eval $BASH_COMMAND 
