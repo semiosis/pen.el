@@ -1,5 +1,17 @@
 (require 'csv)
 
+(comment
+ (list2csv (pen-n-list-open-ports "localhost"))
+ (tablist-buffer-from-csv-string (list2csv (pen-n-list-open-ports "localhost")))
+ (: pen-n-list-open-ports.list2csv.tablist-buffer-from-csv-string "localhost")
+ (etv (list2csv (pen-n-list-open-ports "localhost"))))
+
+(defun list2csv (o)
+  (s-join "\n"
+          (mapcar (lambda (row)
+                    (s-join "," (mapcar (lambda (e) (e/q e)) row)))
+                  o)))
+
 (defun csv-open (fp)
   (interactive (list (buffer-file-name)))
 

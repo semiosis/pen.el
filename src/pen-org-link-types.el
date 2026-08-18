@@ -189,6 +189,19 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "r" 'rifle)
 (org-add-link-type "ri" 'rifle)
 
+(org-add-link-type "dice" 'follow-dice-link)
+(defun follow-dice-link (max)
+  "Run `dice' with MAX as argument."
+  ;; Change the value of the link to the new dice value
+
+  ;; It would actually be a pretty cool feature to make self-modifying org-links
+
+  ;; I want to be more easily able to query the current buffer for widgets
+  ;; and 
+  
+  ;; (pen-sps (concat "dice " query))
+  )
+
 (org-add-link-type "egr" 'follow-egr-link)
 (defun follow-egr-link (query)
   "Run `egr' with QUERY as argument."

@@ -1,3 +1,13 @@
+(require 'transient)
+
+;; This does not fix it
+;; (load-library "transient")
+
+;; Why haven't the definitions loaded?
+;; Or what is overriding them?
+
+;; Also require the autoloads, because I am going to override some definitions later in pen-transient
+(require 'transient-autoloads)
 ;; (load-library "transient")
 
 ;; TODO Also have a transient to set
@@ -109,8 +119,34 @@ ARGLIST.  The infix arguments are usually accessed by using
        ;; Add name to the end so I can execute and run a transient definition
        ',name)))
 
-(defalias 'tdp 'transient-define-prefix)
-(defalias 'tds 'transient-define-suffix)
+;; (defalias 'tdp 'transient-define-prefix)
+;; (defalias 'tds 'transient-define-suffix)
+
+(comment
+ ;; M-TAB in lisp shortened this :
+ (message "%s" (pps (let ((name 'hi))
+                      ;; (eval `'',name)
+                      (eval `(quote ',name))))))
+
+;; A workaround, so that I can use E in lispy to run (tdp) definitions
+(defmacro tdp (name arglist &rest args)
+  ;; (let ((namesym (eval `(quote ',name))))
+  ;;   (eval
+  ;;    `(transient-define-prefix ,name ,arglist ,@args))
+  ;;   namesym)
+
+  ;; This is shorter
+  (eval
+   `(transient-define-prefix ,name ,arglist ,@args))
+
+  (eval `'',name))
+
+(defmacro tds (name arglist &rest args)
+  (let ((namesym (eval `(quote ',name))))
+    (eval
+     `(transient-define-suffix ,name ,arglist ,@args))
+    namesym))
+
 
 (defun pen-create-transient (name kvps searchfun kwsearchfun)
   (let ((sym (intern (concat name "-transient")))
@@ -272,19 +308,19 @@ ARGLIST.  The infix arguments are usually accessed by using
 
 ;; default values
 (tdp transient-toys-wave ()
-  "Wave at the user"
+     "Wave at the user"
 
-  :value '("--toggle" "--value=default")
+     :value '("--toggle" "--value=default")
 
-  ["Arguments"
-   ("-s" "switch" "--switch")
-   ("-a" "argument" "--argument=")
-   ("t" "toggle" "--toggle")
-   ("v" "value" "--value=")]
+     ["Arguments"
+      ("-s" "switch" "--switch")
+      ("-a" "argument" "--argument=")
+      ("t" "toggle" "--toggle")
+      ("v" "value" "--value=")]
 
-  ["Commands"
-   ("ws" "wave some" transient-toys--wave)
-   ("wb" "wave better" transient-toys--wave)])
+     ["Commands"
+      ("ws" "wave some" transient-toys--wave)
+      ("wb" "wave better" transient-toys--wave)])
 
 ;; (transient-toys-wave)
 

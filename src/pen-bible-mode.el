@@ -2116,10 +2116,19 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-verse-margin-status ()
   (chomp (pps (bible-mode-get-ref-tuple))))
 
+;; Why is this still slow?
+;; The memoization doesn't seem to work at all.
+(defun nbd-ebible-m (module ref)
+  (pen-snc (concat (cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat")))
+(memoize 'nbd-ebible-m)
+
+(comment
+ (nbd-ebible-m "ESV" "Genesis 8:1"))
+
 (defun bible-mode-show-hover-docs ()
   (interactive)
   (pen-custom-lsp-ui-doc-display
-   (pen-snc (concat (cmd "nbd" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link)) " | cat"))
+   (nbd-ebible-m bible-mode-book-module (bible-mode-copy-link))
    (bible-verse-margin-status)))
 
 (defun bible-open-interlinear ()

@@ -1,5 +1,8 @@
 (require 'eshell-info-banner)
 
+(setq eshell-info-banner-width 80)
+(setq eshell-info-banner-width 40)
+
 (setq eshell-info-banner-progress-bar-chars "܀")
 (setq eshell-info-banner-progress-bar-char "܀")
 ;; (setq eshell-info-banner-progress-bar-char "⅏")
@@ -11,24 +14,23 @@
 (setq eshell-info-banner-progress-bar-char "▆")
 ;; Sadly, this breaks the terminal when I move cursor across it. But it still looks nicest by far
 (setq eshell-info-banner-progress-bar-char "🮅")
+(setq eshell-info-banner-progress-bar-char "|")
+;; This square is acceptable and isn't broken (in emacs, anyway)
+;; In vim, this symbol is double-width for some reason.
+(setq eshell-info-banner-progress-bar-char "⏹")
 
-(defun eshell-info-banner--memory-to-string (type total used text-padding bar-length)
-  "Display a memory’s usage with a progress bar.
+;; I just realised that I mimght be able to take advantage of the emacs face to fill it out, but I'd need a glyph that touches top and/or bottom to separate the bars.
+;; ⎺
+(setq eshell-info-banner-progress-bar-char "╬")
 
-The TYPE of memory will be the text on the far left, while USED
-and TOTAL will be displayed on the right of the progress bar.
-From them, a percentage will be computed which will be used to
-display a colored percentage of the progress bar and it will be
-displayed on the far right.
+;; (setq eshell-info-banner-progress-bar-char "܆")
+(setq eshell-info-banner-progress-bar-char ":")
+(setq eshell-info-banner-progress-bar-char "⋗")
+(setq eshell-info-banner-progress-bar-char "⁑")
+(setq eshell-info-banner-progress-bar-char "⁐")
+(setq eshell-info-banner-progress-bar-char "═")
+(setq eshell-info-banner-progress-bar-char "#")
 
-TEXT-PADDING will determine how many dots are necessary between
-TYPE and the colon.
-
-BAR-LENGTH determines the length of the progress bar to be
-displayed."
-  (concat (s-pad-right text-padding " " type)
-          ": "
-          (eshell-info-banner--progress-bar-without-prefix bar-length used total t)))
 
 (defun eshell-info-banner--display-battery (text-padding bar-length)
   "If the computer has a battery, display its level.
@@ -67,6 +69,24 @@ the warning face with a battery level of 25% or less."
                         (eshell-info-banner--with-face
                          (number-to-string percentage)
                          :inherit (eshell-info-banner--get-color-percentage (- 100.0 percentage)))))))))
+
+(defun eshell-info-banner--memory-to-string (type total used text-padding bar-length)
+  "Display a memory’s usage with a progress bar.
+
+The TYPE of memory will be the text on the far left, while USED
+and TOTAL will be displayed on the right of the progress bar.
+From them, a percentage will be computed which will be used to
+display a colored percentage of the progress bar and it will be
+displayed on the far right.
+
+TEXT-PADDING will determine how many dots are necessary between
+TYPE and the colon.
+
+BAR-LENGTH determines the length of the progress bar to be
+displayed."
+  (concat (s-pad-right text-padding " " type)
+          ": "
+          (eshell-info-banner--progress-bar-without-prefix bar-length used total t)))
 
 (defun eshell-info-banner--partition-to-string (partition text-padding bar-length)
   "Display a progress bar showing how full a PARTITION is.
@@ -150,8 +170,9 @@ critical levels close to 0 rather than 100."
                                                                        length-filled)
                                     :weight 'bold
                                     :inherit (eshell-info-banner--get-color-percentage percentage-level))
-     (eshell-info-banner--with-face (eshell-info-banner--string-repeat eshell-info-banner-progress-bar-char
-                                                                       length-empty)
+     (eshell-info-banner--with-face (eshell-info-banner--string-repeat ;; eshell-info-banner-progress-bar-char
+                                     ":"
+                                     length-empty)
                                     :weight 'bold
                                     :inherit 'eshell-info-banner-background-face)
      ;; (eshell-info-banner--with-face "]" :weight 'bold)

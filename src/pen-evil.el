@@ -227,11 +227,15 @@
      (insert-map ,KEYS ,fun)
      (visual-to-normal-map ,KEYS ,fun)))
 
+(comment
+ (s-replace-regexp "\\b\\w+\\b" "M-&" "S ("))
 (defmacro pen-truly-selective-binding (KEYS fun)
   "This binds both selected and evil visual mode keybindings"
   `(progn
      ;; Do visual maps even work?
-     (visual-map ,(pen-sed "s/\\b\\w\\+\\b/M-&/g" KEYS)
+     ;; (visual-map ,(pen-sed "s/\\b\\w\\+\\b/M-&/g" KEYS)
+     ;;             ,fun)
+     (visual-map ,(s-replace-regexp "\\(\\b\\w+\\b\\)" "M-\\1" KEYS)
                  ,fun)
      (define-key selected-keymap (kbd ,KEYS) ,fun)))
 
@@ -358,8 +362,9 @@
   (setq eww-no-external-handler nil)
   (cond
    ((string-match "^\\(http.*stackexchange\\.com/q.*\\|http.*stackoverflow\\.com/q.*\\)" fp) (sx-from-url fp))
-   ((string-match "^http" fp) (browse-url--browser fp))
-   ((string-match "\\.html$" fp) (eww-open-file fp))
+   ((string-match "^http" fp) (pen-emacs-web-browse fp))
+   ;; ((string-match "\\.html$" fp) (eww-open-file fp))
+   ((string-match "\\.html$" fp) (w3m-find-file fp))
    ((string-match "^[HG][0-9]+$" fp) (strongs-lookup fp t))
    ;; (t (find-file (tv fp)))
    (t (sh/open fp))))
@@ -381,6 +386,22 @@ If no FILE is specified, reload the current buffer from disk."
       ;; (find-file file)
       (pen-ewhich file)
     (revert-buffer bang (or bang (not (buffer-modified-p))) t)))
+
+;; I don't see myself really using this in emacs more than the [[j:j]] function
+;; (evil-ex-define-cmd "j[oin]" 'evil-ex-join)
+(ignore-errors
+  (remove-from-list 'evil-ex-commands '("j" . "join"))
+  (remove-from-list 'evil-ex-commands '("join" . evil-ex-join)))
+(evil-ex-define-cmd "jo[in]" 'evil-ex-join)
+
+;; unsure why this isn 't working
+(evil-define-command evil-j (symbol)
+  "j."
+  :repeat nil
+  (interactive "<sym>")
+
+  (j symbol))
+(evil-ex-define-cmd "j" 'evil-j)
 
 (evil-define-command evil-dired (dir &optional bang)
   "Open DIR with dired."
@@ -890,6 +911,26 @@ The following special registers are supported.
 
 (evil-ex-define-cmd "Ead" 'evil-ead)
 (evil-ex-define-cmd "ead" 'evil-ead)
+
+(evil-define-command evil-eat (pattern)
+  "Eat pattern."
+  :repeat nil
+  (interactive "<f>")
+  (eat pattern))
+
+(evil-ex-define-cmd "Eat" 'evil-eat)
+(evil-ex-define-cmd "eat" 'evil-eat)
+
+;; v +/"(evil-define-interactive-code \"<f>\"" "$EMACSD_BUILTIN/elpa-light/evil-20210726.2220/evil-types.el"
+(evil-define-command evil-cd (dir)
+  "Cd dir."
+  :repcd nil
+  (interactive "<f>")
+  (let* ((dir (f-expand (or dir (read-directory-name "cd: "))))
+         (ret (cd dir)))
+    (message (concat "Buffer's default directory now set to " (q dir)))
+    ret))
+(evil-ex-define-cmd "cd" 'evil-cd)
 
 (defun pen-holy-mark ()
   (interactive)

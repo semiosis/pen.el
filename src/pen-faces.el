@@ -691,15 +691,33 @@ is specified, `:italic' is ignored."
     ;; Hopefully, invisible
     (set-face-foreground 'transient-unreachable-key "#111111")
 
-    (set-face-foreground 'header-line "#55f555")
-    ;; (set-face-foreground 'header-line "#253525")
-    ;; Keep it dark because the LSP breadcrumb is dark
-    (set-face-background 'header-line "#101010")
-    ;; (set-face-background 'header-line "#202020")
-
     ;; This is highly legible:
+    ;; (set-face-foreground 'header-line-highlight "#f555f5")
+
+    ;; (set-face-background 'header-line-highlight "#101010")
+    ;; (set-face-background 'header-line-highlight "#553355")
+    ;; (set-face-foreground 'header-line-highlight "#995599")
+    
+    (set-face-foreground 'header-line-highlight "#3377cc")
+    (set-face-foreground 'header-line-highlight "#aa55aa")
+    ;; (set-face-background 'header-line-highlight "#202040")
+    (set-face-background 'header-line-highlight 'unspecified)
+
+    ;; Original (quite nice)
     (set-face-foreground 'header-line-highlight "#f555f5")
     (set-face-background 'header-line-highlight "#101010")
+
+    (set-face-foreground 'header-line "#005599")
+    ;; (set-face-background 'header-line "#553355")
+    ;; (set-face-background 'header-line "#151520")
+    (set-face-background 'header-line 'unspecified)
+    ;; (set-face-foreground 'header-line-highlight "#995599")
+    ;; (set-face-background 'header-line-highlight "#995599")
+    ;; (set-face-foreground 'header-line "#55f555")
+    ;; (set-face-foreground 'header-line "#253525")
+    ;; Keep it dark because the LSP breadcrumb is dark
+    ;; (set-face-background 'header-line "#101010")
+    ;; (set-face-background 'header-line "#202020")
 
     (require 'markdown-mode)
     (progn
@@ -766,8 +784,17 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'org-link fg)
     (set-face-background 'org-link bg)
 
-    (set-face-background 'font-lock-comment-face nil)
+    (progn
+      (set-face-foreground 'font-lock-comment-face "#008787")
+      (set-face-background 'font-lock-comment-face 'unspecified)
+      (set-face-background 'font-lock-comment-face "#004040")
+      (set-face-foreground 'font-lock-comment-face "#004040")
+      (set-face-background 'font-lock-comment-face "#002020"))
+    (set-face-foreground 'font-lock-comment-face "#004040")
+    (set-face-foreground 'font-lock-comment-face "#205050")
+    
     (set-face-background 'linum nil)
+    
 
     (require 'display-line-numbers)
     (require 'hl-line)
@@ -877,6 +904,20 @@ is specified, `:italic' is ignored."
     (require 'button)
     (set-face-foreground 'button fg)
     (set-face-background 'button bg)
+
+    (require 'eshell-info-banner)
+    (set-face-foreground 'eshell-info-banner-critical-face "#cc0000")
+    (set-face-background 'eshell-info-banner-critical-face "#990000")
+    
+    (comment (set-face-foreground 'eshell-info-banner-normal-face "#4444ff"))
+    (set-face-foreground 'eshell-info-banner-normal-face "#55aa55")
+    (set-face-background 'eshell-info-banner-normal-face "#224422")
+    
+    (set-face-foreground 'eshell-info-banner-background-face "#333333")
+    (set-face-background 'eshell-info-banner-background-face "#222222")
+    
+    (set-face-foreground 'eshell-info-banner-warning-face "#999900")
+    (set-face-background 'eshell-info-banner-warning-face "#555500")
 
     (require 'hui-em-but)
     (set-face-foreground 'hbut-face fg)

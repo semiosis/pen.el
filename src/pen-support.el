@@ -392,15 +392,19 @@ STRINGS will be evaluated in normal `or' order."
   `(generic-or-1 'string-empty-or-nil-p (list ,@strings)))
 (defalias 'msor 'str-or)
 
+(comment
+ (defun cwd ()
+   "Gets the current working directory"
+   (interactive)
+   (let ((c (shut-up
+              (shut-up-c (pwd)))))
+     (f-expand
+      (if c
+          (substring c 10)
+        default-directory)))))
+;; (defalias 'cwd 'files/pwd)
 (defun cwd ()
-  "Gets the current working directory"
-  (interactive)
-  (let ((c (shut-up
-             (shut-up-c (pwd)))))
-    (f-expand
-     (if c
-         (substring c 10)
-       default-directory))))
+  default-directory)
 
 (defun tramp-mount-sshfs (&optional tramp-dir)
   (interactive)
@@ -885,6 +889,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   ;; This uses emacs' (getenv "SHELL")
   ;; So I must set it like so:
 
+  (message "pen-sn: %s" shell-cmd)
   (if shell
       (setenv "SHELL" shell)
     (setenv "SHELL" default-shell))
@@ -1083,6 +1088,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
 (defun inside-docker-p ()
   (pen-snq "inside-docker-p"))
+(memoize 'inside-docker-p)
 
 ;; (if (inside-tmux-p) (message "inside tmux"))
 ;; (if (inside-docker-p) (message "inside docker"))
@@ -1464,7 +1470,15 @@ when s is a string, set the clipboard to s"
   (if (not (s-blank? s))
       (progn
         (kill-new s)
-        (pen-sn "tee >(xsel -b -i) | tee >(xsel -p -i) | tee >(xsel -s -i)" s))
+
+        ;; 16.08.26 Commenting this out sped it up a lot!
+        ;; I should make it so unless the kill ring has been updated, do not
+        ;; run pen-sn. This would be a nice compromise.
+        ;; (pen-sn "tee >(xsel -b -i) | tee >(xsel -p -i) | tee >(xsel -s -i)" s)
+
+        ;; Perhaps this was useful for when I was using a window manager
+        ;; I'm unsure.
+        )
     (if (and (pen-selected-p)
              (not noautosave))
         (progn
@@ -1474,7 +1488,9 @@ when s is a string, set the clipboard to s"
       (progn
         ;; (pen-sn "xsel --primary --input" s)
         ;; (pen-sn "xsel --secondary --input" s)
-        (pen-sn "xsel --clipboard --input" s)
+
+        ;; 16.08.26 I commented this out also to speed it up.
+        ;; (pen-sn "xsel --clipboard --input" s)
         (if (not silent)
             (if (sor topic)
                 (message "%s" (concat topic " copied: " (e/q (pen-one-line-preview s t))))
@@ -2195,6 +2211,14 @@ Out
          (newcode (pen-eval-string (concat "'(progn " ucodestring ")"))))
     newcode))
 (defalias 'pen-ms 'pen-macro-sed)
+
+(defmacro pen-macro-esed (regexp rep string &rest body)
+  "This transforms the code with replace-regexp-in-string"
+  (let* ((codestring (pp-map-line body))
+         (ucodestring (esed regexp rep string codestring))
+         (newcode (pen-eval-string (concat "'(progn " ucodestring ")"))))
+    newcode))
+(defalias 'pen-mes 'pen-macro-esed)
 
 ;; Only bind if there isn't a binding currently?
 (comment

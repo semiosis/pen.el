@@ -1,5 +1,6 @@
 (defun find-thing (thing)
-  (interactive)
+  (interactive (find-function-read))
+  ;; (find-function-read 'defvar)
   (if (stringp thing)
       (setq thing (intern thing)))
 
@@ -246,6 +247,18 @@ buffer."
 ;; (: message.pps (let ((m "yo")) (cache `(progn (sleep 1) ,m) t)))
 ;; (mapcar 'str2sym (s-split "\\." "message.pps"))
 
+;; I made fdot for eshell.
+;; e.g.
+;; fdot pen-n-list-open-ports.list2csv.tablist-buffer-from-csv-string "localhost"
+(defun fdot (fcomposition arg &rest additional-args)
+  (eval
+   (list
+    ': (intern (str fcomposition))
+    arg)))
+
+(comment
+ (fdot "pen-n-list-open-ports.list2csv.tablist-buffer-from-csv-string" "localhost"))
+
 (defmacro dot (fcomposition arg)
   ""
   (let ((fs (mapcar (lambda (f)
@@ -279,5 +292,60 @@ buffer."
 
 (defun view-hashtable (hash-table)
   (: tv-pps.hash-table-values hash-table))
+
+(defun pen-scriptnames ()
+  (interactive)
+  
+  (ifietv (list2str pen_loaded_packages)))
+
+(defun pen-scriptnames ()
+  (interactive)
+  
+  (ifietv (list2str (mapcar (lambda (e) (concat (car e) " " (number-to-string (cadr e)))) pen_loaded_packages_log))))
+
+(defun scriptnames ()
+  "Show the scripts loaded by emacs on startup."
+  (interactive)
+  (ifietv (pen-list2str (scriptnames-list)))
+  ;; (pen-tvipe (pen-mnm (pen-list2str (scriptnames-list))))
+  )
+
+(defun scriptnames-goto ()
+  ""
+  (e (fz (pen-mnm (scriptnames)))))
+
+(defun scriptnames-string ()
+  "Show the scripts loaded by emacs on startup."
+  (interactive)
+  (ifietv (pen-mnm (pen-list2str (scriptnames-list)))))
+
+(defun scriptnames-list ()
+  "Show the scripts loaded by emacs on startup."
+  (remove '() (mapcar
+               (lambda (string)
+                 (if (string-match-p "\.el$" string) string))
+               (mapcar 'car load-history))))
+
+(defun scriptnames-all ()
+  "Show the scripts and symbols loaded by emacs on startup."
+  (ifietv load-history))
+
+;; This doesn't do what I want
+;; (defalias 'scriptnames 'load-history)
+
+(defun pen-screenwidth ()
+  "Gets the screen width."
+  (snc "op screenwidth"))
+
+(defun pen-tvipe-package-list ()
+  "Show the list of packages in vim."
+  (interactive)
+  (pen-tvipe (pen-list-of-packages)))
+
+(defun pen-list-of-packages ()
+  "Returns a list of packages."
+  (interactive)
+  (ifietv
+   (pen-join (mapcar 'symbol-name package-activated-list) "\n")))
 
 (provide 'pen-utils)

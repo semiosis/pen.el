@@ -67,9 +67,17 @@
           (write-file
            (make-temp-file nil nil (concat "." (get-ext-for-mode major-mode))))))))
 
-(defun f-realpath (path &optional dir)
+(defun sh/realpath (path &optional dir)
   (if path
       (chomp (pen-sn (concat "realpath " (pen-q path) " 2>/dev/null") nil dir))))
+
+;; Does this stop dired from being slow and calling snc realpath?
+;; No it doesn't. I'll change it back.
+(comment
+ (defun f-realpath (path &optional dir)
+   (if path
+       (f-expand path))))
+(defalias 'f-realpath 'sh/realpath)
 
 (defalias 'major-mode-enabled 'derived-mode-p)
 
@@ -82,7 +90,13 @@
   (if (derived-mode-p 'eww-mode)
       (or (eww-current-url)
           eww-followed-link)
-    (try (f-realpath (or (buffer-file-name)
+    (comment
+     (try (f-realpath (or (buffer-file-name)
+                          (and (string-match-p "~" (buffer-name))
+                               (concat (projectile-project-root) (sed "s/\\.~.*//" (buffer-name))))
+                          (error "no file for buffer")))
+          nil))
+    (try (f-expand (or (buffer-file-name)
                          (and (string-match-p "~" (buffer-name))
                               (concat (projectile-project-root) (sed "s/\\.~.*//" (buffer-name))))
                          (error "no file for buffer")))
@@ -124,6 +138,7 @@ If `soft` is `t`, then the path should be intelligible by the mode (e.g. an Info
 If `soft` and `semantic-path` are both `nil` then that would usually result in a URI / file path. "
   (interactive)
 
+  ;; (message "get-path soft:%S no-create-path:%S for-clipboard:%S semantic-path:%S keep-buffer-name %S" soft no-create-path for-clipboard semantic-path keep-buffer-name)
   (let ((bn (current-buffer-name)))
     (setq semantic-path (or
                          semantic-path
@@ -244,13 +259,14 @@ If `soft` and `semantic-path` are both `nil` then that would usually result in a
                     (org-brain-get-path-for-entry org-brain--vis-entry semantic-path))
 
                (and (major-mode-enabled 'ranger-mode)
-                    (dired-copy-filename-as-kill 0))
+                    ;; (dired-copy-filename-as-kill 0)
+                    (dired-filename-at-point))
 
                (and (major-mode-enabled 'dired-mode)
                     (sor (and
                           for-clipboard
                           (mapconcat 'pen-q (dired-get-marked-files) " "))
-                         (pen-pwd)))
+                         default-directory))
 
                ;; This will break on eww
                (if (and (not (eq major-mode 'org-mode))
@@ -929,8 +945,13 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
         
         ))))
 
-(defun unslugify (input)
+;; Was slow for org-brain
+(defun sh/unslugify (input)
   (pen-snc "unslugify" input))
+
+(defun e/unslugify (input)
+  (s-replace "-" " " input))
+(defalias 'unslugify 'e/unslugify)
 
 (defmacro remove-from-list (list-var elt)
   `(set ,list-var (delete ,elt ,(eval list-var))))
@@ -1726,9 +1747,12 @@ non-nil."
   (let ((inhibit-read-only t))
     (put-text-property start end 'read-only nil)))
 
-(defun pen-insert-read-only (text)
+(defun pen-insert-read-only (text hl?)
   (put-text-property 0 (length text) 'read-only 't
                      text)
+  (if hl?
+      (put-text-property 0 (length text) 'face 'pen-read-only
+                         text))
   (insert text))
 
 (defun display-in-echo-area (&rest args)

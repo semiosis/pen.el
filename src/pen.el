@@ -2495,6 +2495,7 @@ May use to generate code from comments."
     (require 'pen-ivy))
 (require 'pen-ink)
 (require 'pen-company)
+(require 'pen-hideshow)
 
 ;; I also need the bindings
 (require 'pen-evil)

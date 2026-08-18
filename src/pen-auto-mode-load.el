@@ -145,6 +145,9 @@
 (add-to-list 'auto-mode-alist '("\\.exs\\'" . elixir-mode))
 (add-to-list 'auto-mode-alist '("\\.exs\\'" . alchemist-mode))
 
+(add-to-list 'auto-mode-alist '("\\(\\.gnu\\|\\.dem\\)\\'" . gnuplot-mode))
+;; (remove-from-list 'auto-mode-alist '("\\.gnu\\'" . gnuplot-mode))
+
 ;; GitHub Semmle / CodeQL
 (add-to-list 'auto-mode-alist '("\\.ql\\'" . ql-mode-base))
 (add-to-list 'auto-mode-alist '("\\.dbscheme\\'" . dbscheme-mode))

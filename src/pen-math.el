@@ -13,6 +13,7 @@
 
 (comment
  ;; 1964
- (rst-roman-to-arabic "MCMLXIV"))
+ (message "%S" (rst-roman-to-arabic "MCMLXIV"))
+ (message "%S" (rst-arabic-to-roman 1999)))
 
 (provide 'pen-math)

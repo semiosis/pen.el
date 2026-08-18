@@ -158,6 +158,33 @@ The description is read from the installed package files."
       (with-current-buffer standard-output
         (describe-package-1 package)))))
 
+(defun pen-describe-package (package)
+  (interactive
+   (progn
+     (if (yn "Refresh packages?")
+         (package-refresh-contents))
+     (let* ((guess (or (function-called-at-point)
+                       (symbol-at-point))))
+       (require 'finder-inf nil t)
+       ;; Load the package list if necessary (but don't activate them).
+       (unless package--initialized
+         (package-initialize t))
+       (let ((packages (append (mapcar #'car package-alist)
+                               (mapcar #'car package-archive-contents)
+                               (mapcar #'car package--builtins))))
+         (unless (memq guess packages)
+           (setq guess nil))
+         (setq packages (mapcar #'symbol-name packages))
+         (let ((val
+                (completing-read (format-prompt "Describe package" guess)
+                                 ;; (tv (-uniq packages) :pp 'list2str)
+                                 (-uniq packages)
+                                 nil t nil nil (when guess
+                                                 (symbol-name guess)))))
+           (list (and (> (length val) 0) (intern val))))))))
+
+  (describe-package package))
+
 (comment
  ;; I'm presently doing this inside of pen-e
  (defun package-install-around-advice (proc &rest args)

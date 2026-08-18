@@ -673,7 +673,13 @@ Update the `org-id-locations' global hash-table, and update the
            path)))
 
 (defun org-brain-parent-name ()
-  (pen-snc "pen-str join"
+  ;; (pen-snc "pen-str join"
+  ;;   (pen-list2str
+  ;;          (org-brain-remove-irrelevant-names-from-path
+  ;;           (mapcar
+  ;;            'org-brain-name-from-list-maybe
+  ;;            (org-brain-parents org-brain--vis-entry)))))
+  (s-join " "
     (pen-list2str
            (org-brain-remove-irrelevant-names-from-path
             (mapcar

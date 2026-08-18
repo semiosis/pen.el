@@ -1,6 +1,9 @@
 (require 'markdown-mode)
 (require 'edit-indirect)
 
+;; Install?
+;; https://github.com/laserattack/emado/
+
 (setq markdown-command "pandoc")
 
 (setq markdown-fontify-code-blocks-natively t)

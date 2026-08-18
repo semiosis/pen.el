@@ -14,6 +14,17 @@
   (interactive (list (read-string-hist "htop filter: ")))
   (pen-term-nsfa (cmd "htop" filter)))
 
+(defun ncdu (&optional dir)
+  (interactive (list (read-directory-name "ncdu: ")))
+  ;; (pen-term-nsfa (cmd "ncdu" dir))
+  (pen-vterm (cmd "ncdu" dir)))
+
+(defun nvc (&rest shell-cmd)
+  (interactive (list (read-string-hist "shell-cmd: ")))
+  ;; (pen-term-nsfa (cmd "ncdu" dir))
+  ;; (pen-vterm (cmd "nvc" "-E" shell-cmd))
+  (pen-term-nsfa (eval `(cmd "nvc" ,@shell-cmd))))
+
 (setq explicit-shell-file-name "/bin/bash")
 
 ;; I can't abolish C-c from all the minor modes

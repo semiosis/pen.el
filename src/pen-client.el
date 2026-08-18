@@ -15,8 +15,16 @@
   "Evaluate elisp code stored in a string."
   (eval (car (read-from-string (format "(progn %s)" string)))))
 
+(defun chomp-lines (str)
+  "ChompLines (remove tailing space from) STR lines."
+  (replace-regexp-in-string "[\t ]*$" "" str))
+
 (defun chomp (str)
-  "Chomp (remove tailing newline from) STR."
+  "Chomp (remove tailing newline and spaces from) STR."
+  (replace-regexp-in-string "[\t ]*\n*\\'" "" str))
+
+(defun chomp-nl (str)
+  "ChompNL (remove tailing newline from) STR."
   (replace-regexp-in-string "\n\\'" "" str))
 
 (defun pp-oneline (l)

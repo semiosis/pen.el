@@ -1,6 +1,9 @@
 (require 'calc)
 (calc-load-everything)
 
+;; (setq calc-show-banner nil)
+(setq calc-show-banner t)
+
 ;; The prefix "C-x *" is actually a real pain. It disrupts the chord progression.
 ;; M-8 M-3 q - quick-calc
 (global-set-key (kbd "M-8 M-3") 'calc-dispatch)
@@ -131,6 +134,57 @@
 (defun pen-calc-clear-stack ()
   (interactive)
   (calc-pop 0))
+
+(defun calc-refresh (&optional align)
+  (interactive)
+  (and (derived-mode-p 'calc-mode)
+       (not calc-executing-macro)
+       (let* ((inhibit-read-only t)
+              (save-point (point))
+              (save-mark (ignore-errors (mark)))
+              (save-aligned (looking-at "\\.$"))
+              (thing calc-stack)
+              (calc-any-evaltos nil))
+         (setq calc-any-selections nil)
+         (erase-buffer)
+         (when calc-show-banner
+           (calc--header-line "Calc" "Ca"
+                              (* 2 (/ (window-width) 3)) -3))
+         (while thing
+           (goto-char (point-min))
+           (insert (math-format-stack-value (car thing)) "\n")
+           (setq thing (cdr thing)))
+         (calc-renumber-stack)
+         (if calc-display-dirty
+             (calc-wrapper (setq calc-display-dirty nil)))
+         (and calc-any-evaltos calc-auto-recompute
+              (calc-wrapper (calc-refresh-evaltos)))
+         (if (or align save-aligned)
+             (calc-align-stack-window)
+           (goto-char save-point))
+         (if save-mark (set-mark save-mark))))
+  (and calc-embedded-info (not (derived-mode-p 'calc-mode))
+       (with-current-buffer (aref calc-embedded-info 1)
+         (calc-refresh align)))
+  (setq calc-refresh-count (1+ calc-refresh-count)))
+
+(define-derived-mode calc-trail-mode fundamental-mode "Calc Trail"
+  "Calc Trail mode.
+This mode is used by the *Calc Trail* buffer, which records all results
+obtained by the GNU Emacs Calculator.
+
+Calculator commands beginning with the t key are used to manipulate
+the Trail.
+
+This buffer uses the same key map as the *Calculator* buffer; calculator
+commands given here will actually operate on the *Calculator* stack."
+  (setq truncate-lines t)
+  (setq buffer-read-only t)
+  (make-local-variable 'overlay-arrow-position)
+  (make-local-variable 'overlay-arrow-string)
+  (when calc-show-banner
+    (calc--header-line "Trail" "Tr"
+                       (/ (window-width) 3) -3)))
 
 (define-key calc-mode-map (kbd "d k") 'pen-calc-clear-stack)
 

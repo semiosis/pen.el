@@ -156,6 +156,14 @@
 
   (pen-nw (concat "carbonyl " (pen-q (car body)))))
 
+(defun elinks-dump-chrome (&rest body)
+  (interactive (list (read-string "url:")))
+
+  (if (not body)
+      (setq body '("http://google.com")))
+
+  (find-file (snc (concat "elinks-dump-chrome -ofp " (pen-q (car body)) " | cat"))))
+
 (defun ebrowsh (url)
   "This is very slow, actually"
   (interactive (list (read-string "url:")))

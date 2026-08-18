@@ -27,6 +27,7 @@
       ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
       ("rdrview" (rdrview url))
       ("default" (browse-url-generic url _new-window))
+      ("ff" (sps (cmd "ff" url)))
 
       ;; This opens tpop
       ;; (_ (browse-url-generic url _new-window))
@@ -159,7 +160,8 @@
 
 (defun reopen-in (br)
   (interactive (list (fz '(O eww w3m browsh carbonyl rdrview
-                             pen-emacs-browse)
+                             pen-emacs-browse
+                             elinks-dump-chrome)
                          nil nil "Browser function: ")))
   
   (let ((url (get-path nil t)))
@@ -173,6 +175,7 @@
       ('carbonyl (carbonyl url))
       ('rdrview (rdrview url))
       ('elinks (elinks url))
+      ('elinks-dump-chrome (elinks-dump-chrome url))
       ('pen-emacs-web-browse (pen-emacs-web-browse url))
       (_ nil))))
 
@@ -203,6 +206,10 @@
 (defun reopen-in-elinks ()
   (interactive)
   (reopen-in 'elinks))
+
+(defun reopen-in-elinks-dump-chrome ()
+  (interactive)
+  (reopen-in 'elinks-dump-chrome))
 
 (defun reopen-in-pen-emacs-web-browse ()
   (interactive)

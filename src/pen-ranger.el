@@ -229,7 +229,25 @@ currently selected file in ranger. `IGNORE-HISTORY' will not update history-ring
 (remove-hook 'dired-mode-hook 'ranger-set-dired-key)
 
 (defun get-scope-for-file (fp)
-  (pen-cl-sn (concat "pen-scope.sh -t " (pen-q fp)) :chomp t))
+  ;; (pen-cl-sn (concat "pen-scope.sh -t " (pen-q fp)) :chomp t)
+
+  ;; (let* ((contents (e/cat fp nil nil 300))
+  ;;        (chars (length contents))
+  ;;        (llen 10)
+  ;;        (lines (/ chars llen)))
+  ;;   (s-join
+  ;;    "\n"
+  ;;    (loop for i from 1 to lines collect
+  ;;          (let* ((start (* i llen))
+  ;;                 (end (min (+ start 100)
+  ;;                           chars)))
+  ;;            (substring contents start end))))
+
+  ;;   ;; fp
+  ;;   )
+  
+  ;; Fast enough
+  (e/cat fp nil nil 300))
 
 (defun ranger-preview-buffer (entry-name)
   "Create the preview buffer of `ENTRY-NAME'.  If `ranger-show-literal'

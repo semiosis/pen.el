@@ -110,6 +110,7 @@
                          reopen-in-browsh
                          reopen-in-carbonyl
                          reopen-in-elinks
+                         reopen-in-elinks-dump-chrome
                          reopen-in-rdrview
                          reopen-in-pen-emacs-web-browse
                          rdrview))

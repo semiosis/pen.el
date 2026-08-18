@@ -296,16 +296,27 @@ NEEDLE is the search string."
       (if (not wd)
           (setq wd (pen-pwd)))
       (setq wd (pen-umn wd))
-      (with-current-buffer
-          ;; How can I use pen-mnm but only on the file paths? -- I want to be able to filter on a column only
-          (let ((globstr (if (sor path-re)
-                             (concat "-p " (pen-q path-re) " ")
-                           "")))
-            (new-buffer-from-string
-             (ignore-errors (pen-sn (concat "pen-ead -f " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))
-             "*wgrep*"))
-        (grep-mode)))))
+
+      ;; How can I use pen-mnm but only on the file paths? -- I want to be able to filter on a column only
+      (let* ((globstr (if (sor path-re)
+                          (concat "-p " (pen-q path-re) " ")
+                        ""))
+             (results (ignore-errors (pen-sn (concat "pen-ead -f " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))))
+        (if (sor results)
+            (with-current-buffer
+                (new-buffer-from-string
+                 results
+                 "*wgrep*")
+              (grep-mode))
+          (message "No results"))))))
 (defalias 'ead 'pen-wgrep)
+
+(defun pen-eat (pattern &optional wd path-re)
+  (interactive (list (reat-string-hist "eat pattern: ")
+                     (reat-directory-name "eat dir: ")))
+
+  (pen-wgrep (concat "\\b" pattern "\\b") wd path-re))
+(defalias 'eat 'pen-eat)
 
 (defun eadsrc (pattern)
   (pen-wgrep pattern "/root/.emacs.d/host/pen.el/src/"))

@@ -187,9 +187,24 @@ Be mindful of quoting arguments correctly."
 
 (defvaralias '_pwd 'default-directory)
 
+;; Changing j:pwd is risky because of j:cwd doing (substring c 10)
+;; but I'm going to see if this modification of adding default-directory to the end of pwd
+;; works until it breaks (if at all it breaks).
+(defun files/pwd (&optional insert)
+  "Show the current default directory.
+With prefix argument INSERT, insert the current default directory
+at point instead."
+  (interactive "P")
+  (if insert
+      (insert default-directory)
+    (message "Directory %s" default-directory))
+  default-directory)
+(defalias 'pwd 'files/pwd)
+
 (defun e/pwd ()
   "Returns the current directory."
   default-directory)
+(defalias 'pen-pwd 'e/pwd)
 
 (defun sh/pwd ()
   "Returns the current directory."
@@ -331,14 +346,14 @@ Be mindful of quoting arguments correctly."
   (setq path (pen-umn path))
   (pen-sn (concat "cat " (pen-q path) " | awk 1" " 2>/dev/null") nil dir))
 
-(defun e/cat (&optional path input no_unminimise)
+(defun e/cat (&optional path input no_unminimise maxbyte)
   "cat out a file, or write to one"
   (if (not no_unminimise)
       (setq path (pen-umn path)))
   (cond
    ((and (test-f path) input) (write-to-file input path))
    ((test-f path) (with-temp-buffer
-                    (insert-file-contents path)
+                    (insert-file-contents path nil nil maxbyte)
                     (buffer-string)))
    (t (error "Bad path"))))
 
@@ -419,6 +434,17 @@ Be mindful of quoting arguments correctly."
   "Opens vscode in current window for buffer contents"
   (interactive)
   (pen-tmux-edit "vsc" "nw"))
+
+(defun pen-vterm-nsfa (cmd &optional input modename closeframe buffer-name dir)
+  "Like vterm but can run a shell command.
+`nsfa` stands for `New Script From Arguments`"
+  (interactive (list (read-string "cmd:")))
+  (pen-vterm (pen-nsfa cmd dir input) closeframe modename buffer-name)
+  ;; (if input
+  ;;     (let ((tf (make-temp-file "pen-term-nsfa" nil nil input)))
+  ;;       (pen-term (message (pen-nsfa (message (concat "( " cmd " ) < " (pen-q tf))) dir)) closeframe modename buffer-name))
+  ;;   (pen-term (pen-nsfa cmd dir input) closeframe modename buffer-name))
+  )
 
 (defun pen-term-nsfa (cmd &optional input modename closeframe buffer-name dir)
   "Like term but can run a shell command.

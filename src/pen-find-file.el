@@ -28,19 +28,21 @@
           ))
        ((or (string-equal "pdf" ext)
             (string-equal "PDF" ext))
-        (if (>= (prefix-numeric-value current-prefix-arg) 16)
-            (progn
-              (pen-sn "pdfs2txt" nil dn)
-              (find-file (concat dn "/" fn ".txt")))
-          (progn
-            (if (yes-or-no-p "Add to calibredb?")
-                (pen-calibre-add fp)))
-          (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                  (not (yes-or-no-p "Open text form?")))
-              (pen-sn (concat "z " (pen-q fp)) nil nil nil t)
-            (progn
-              (pen-sn "pdfs2txt" nil dn)
-              (find-file (concat dn "/" fn ".txt"))))))
+        (if (yes-or-no-p "Show PDF info? (y) or Open PDF (n)")
+            (etv (pen-sn (cmd "pdfinfo" fp)))
+            (if (>= (prefix-numeric-value current-prefix-arg) 16)
+                (progn
+                  (pen-sn "pdfs2txt" nil dn)
+                  (find-file (concat dn "/" fn ".txt")))
+              (progn
+                (if (yes-or-no-p "Add to calibredb?")
+                    (pen-calibre-add fp)))
+              (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                      (not (yes-or-no-p "Open text form?")))
+                  (pen-sn (concat "z " (pen-q fp)) nil nil nil t)
+                (progn
+                  (pen-sn "pdfs2txt" nil dn)
+                  (find-file (concat dn "/" fn ".txt")))))))
        ((or (string-equal "epub" ext)
             (string-equal "EPUB" ext))
         (if (>= (prefix-numeric-value current-prefix-arg) 16)

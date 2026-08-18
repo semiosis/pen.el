@@ -39,6 +39,10 @@
       '("tail" "ssh" "vi" "vim" "screen" "tmux" "top" "htop" "less" "more" "lynx" "links" "ncftp" "mutt" "pine" "tin" "trn" "elm"
         ;; "timg"
         "v"
+        "vd"
+        ;; t opens a tmux
+        "t"
+        "minicom"
         "br"))
 
 ;; emacs term is too slow for br.
@@ -133,7 +137,8 @@
 (let ((ls (if (file-exists-p "/usr/local/bin/gls")
               "/usr/local/bin/gls"
             "/bin/ls")))
-  (eshell/alias "ll" (concat ls " -AlohG --color=always")))
+  (eshell/alias "ll" (concat ls " -AlohG --color=always"))
+  (eshell/alias "sl" (concat ls " -AlohG --color=always")))
 
 ;; git
 ;; My gst command is just an alias to magit-status, but using the alias doesn’t pull in the current working directory, so I make it a function, instead:
@@ -266,51 +271,71 @@ or an external command."
     ;; (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*"))
     ))
 
-(defun e/nw (&optional run)
+(defun e/nw (&rest args)
+  "First arg is an elisp function.
+Any extra args go to that function"
   (interactive)
-  (if run
-      (cond
-       ((ignore-errors (function-p run))
-        (call-interactively run))
-       ((consp run)
-        (eval run)))))
+  (let ((run (car args)))
+    (if run
+        (cond
+         ((ignore-errors (function-p run))
+          (if (cdr args)
+              (eval `(funcall ',run ,@(cdr args)))
+            (call-interactively run)))
+         ((consp run)
+          (eval run))))))
 (defalias 'enw 'e/nw)
 
-(defun e/sps (&optional run)
+(defun e/sps (&rest args)
+  "First arg is an elisp function.
+Any extra args go to that function"
   (interactive)
   (split-window-sensibly)
   (other-window 1)
-  (if run
-      (cond
-       ((ignore-errors (function-p run))
-        (call-interactively run))
-       ((consp run)
-        (eval run)))))
+  (let ((run (car args)))
+    (if run
+        (cond
+         ((ignore-errors (function-p run))
+          (if (cdr args)
+              (eval `(funcall ',run ,@(cdr args)))
+            (call-interactively run)))
+         ((consp run)
+          (eval run))))))
 (defalias 'esps 'e/sps)
 
 
-(defun e/spv (&optional run)
+(defun e/spv (&rest args)
+  "First arg is an elisp function.
+Any extra args go to that function"
   (interactive)
   (split-window-horizontally)
   (other-window 1)
-  (if run
-      (cond
-       ((ignore-errors (function-p run))
-        (call-interactively run))
-       ((consp run)
-        (eval run)))))
+  (let ((run (car args)))
+    (if run
+        (cond
+         ((ignore-errors (function-p run))
+          (if (cdr args)
+              (eval `(funcall ',run ,@(cdr args)))
+            (call-interactively run)))
+         ((consp run)
+          (eval run))))))
 (defalias 'espv 'e/spv)
 
-(defun e/sph (&optional run)
+(defun e/sph (&rest args)
+  "First arg is an elisp function.
+Any extra args go to that function"
   (interactive)
   (split-window-vertically)
   (other-window 1)
-  (if run
-      (cond
-       ((ignore-errors (function-p run))
-        (call-interactively run))
-       ((consp run)
-        (eval run)))))
+  (let ((run (car args)))
+    (if run
+        (cond
+         ((ignore-errors (function-p run))
+          (if (cdr args)
+              (eval `(funcall ',run ,@(cdr args)))
+            (call-interactively run)))
+         ((consp run)
+          (eval run))))))
 (defalias 'esph 'e/sph)
 
 (defun eshell-nw ()
@@ -366,7 +391,7 @@ or an external command."
 ;; Do the following even work?
 (defun eshell-run-command (cmd)
   (interactive (list (car (str2lines (read-string-hist "eshell$ " nil nil nil nil t)))))
-  
+
   (let ((buf (eshell-unique)))
     (with-current-buffer buf
 
@@ -375,8 +400,13 @@ or an external command."
       ;; (ignore-errors (eshell-return-to-prompt))
       ;; (ignore-errors (eshell-kill-input))
       (insert cmd)
-      (eshell-send-input))
-    (kill-buffer buf)))
+      ;; TODO Find a way to wait until the command sent by (eshell-send-input)
+      ;; is fully executed before killing the buffer
+      (progn (eshell-send-input) (kill-buffer buf))
+
+      ;; This is currently not working with cumx:pen-enter-evil-ex
+      ;; etv ${bash -c 'for i in *; do ls -dx "$i"; done'}
+      )))
 
 ;; shell (not eshell)
 (defun shell-run-command (cmd)
@@ -535,6 +565,63 @@ or an external command."
 
   (pen-ewhich (car args)))
 
+(defun eshell/ncdu (&rest args)
+  "term ncdu"
+
+  ;; (eval `(e/sps 'ncdu ,@args))
+  (eval `(e/nw 'ncdu ,@args))
+  ;; (e/sps 'ncdu)
+  ;; (ncdu (car args))
+  )
+
+;; Already have j:eshell-exec-visual
+(defun pen-term-runcmd (&rest args)
+  (pen-term-nsfa (eval `(cmd ,@args)) nil nil nil nil default-directory))
+;; (defalias 'eshell/term 'pen-term-runcmd)
+
+;; Already have j:eshell-vterm-exec-visual
+(defun pen-vterm-runcmd (&rest args)
+  (pen-vterm-nsfa (eval `(cmd ,@args)) nil nil nil nil default-directory))
+;; (defalias 'eshell/vterm 'pen-vterm-runcmd)
+
+(defun eshell/v (&rest args)
+  "term v"
+
+  ;; (eval `(e/sps 'ncdu ,@args))
+  ;; (eval `(e/nw 'pen-vterm-nsfa "v" ,@args))
+  (eval `(e/nw 'pen-term-runcmd "v" ,@args))
+  ;; (e/sps 'ncdu)
+  ;; (ncdu (car args))
+  )
+
+(defun eshell/vd (&rest args)
+  "term vd"
+
+  ;; (eval `(e/sps 'ncdu ,@args))
+  ;; (eval `(e/nw 'pen-vterm-nsfa "v" ,@args))
+  (eval `(e/nw 'pen-term-runcmd "vd" ,@args))
+  ;; (e/sps 'ncdu)
+  ;; (ncdu (car args))
+  )
+
+(defun eshell/nvc (&rest args)
+  "term nvc"
+
+  ;; (eval `(e/sps 'ncdu ,@args))
+  (eval `(e/nw 'nvc ,@args))
+  ;; (e/sps 'ncdu)
+  ;; (ncdu (car args))
+  )
+
+(defun pen-eshell-escolorize-err-lines (cmdoutput)
+  (s-join "\n"
+          (mapcar (lambda (s)
+                    (if (string-match "^ERR:" s)
+                        (propertize s 'face 'error)
+                      s))
+                  (s-split "\n"
+                           cmdoutput))))
+
 (defun eshell/command (&rest args)
   "Like the bash `command` function."
   ;; Firstly, fix the arguments
@@ -542,7 +629,50 @@ or an external command."
   
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
-  (pen-snc (apply 'cmd (cons "com" args))))
+
+  (pen-eshell-escolorize-err-lines
+   (pen-snc (apply 'cmd (append (list "mixstdoutstderr" "-nooutlabel" "com") args)))))
+(defalias 'eshell/com 'eshell/command)
+
+(defun pen-eshell-insert (&rest args)
+  (let ((insert-func 'eshell-buffered-print)
+        (error-func 'eshell-error)
+        (flush-func 'eshell-flush))
+
+    (funcall flush-func -1)
+    (eval `(funcall insert-func ,@args "\n"))
+    (funcall flush-func)
+    ;; (apply 'eshell-do-ls args)
+    ))
+
+(comment
+ (etv
+  (let ((fp "/root/.pen/documents/notes/ws/chemistry/reports/symbols.html"))
+    (let* ((m (get-mode-for-file fp))
+           (mn (s-replace-regexp "-mode$" "" (tv (str m)))))
+      (eval
+       `(universal-sidecar-fontify-as ,m ((org-fold-core-style 'overlays))
+          (pen-snc (concat (apply 'cmd (cons "cat" (list ,fp)))
+                           (format " | pen-org-template-gen %s output" ,mn)))))))))
+
+(defun eshell/mode-cat (&rest args)
+  "Like the bash `cat` function except highlights as org-mode."
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+
+  (loop for fp in args do
+        (pen-eshell-insert
+         (let* ((m (get-mode-for-file fp))
+                (mn (s-replace-regexp "-mode$" "" (str m)))
+                (rp (f-realpath fp)))
+           (eval
+            `(universal-sidecar-fontify-as
+                 ;; ,m
+                 org-mode
+                 ((org-fold-core-style 'overlays))
+               (pen-snc (concat (apply 'cmd (cons "cat" (list ,fp)))
+                                (format " | pen-org-template-gen %s %s" ,mn (e/q ,rp))))))))))
+(defalias 'eshell/mcat 'eshell/mode-cat)
 
 (defun eshell/pwd-around-advice (proc &rest args)
   "pwd may be used by other functions, so perhaps I should not use j:mnm"
@@ -1438,6 +1568,8 @@ Each member of FILES is either a string or a cons cell of the form
 ;; Because I want eshell to find the mx:j function
 (fmakunbound 'eshell/j)
 
+;; eshell-ls-decorated-name
+;; cdr: eshell-ls-directory
 ;; Renamed from eshell/j
 (defun eshell/aj (&rest args)           ; all but first ignored
   "Jump to a directory you often cd to.
@@ -1457,7 +1589,10 @@ Otherwise, call `eshell/cd' with the result."
           (let ((n (nthcdr (1- path) candidates)))
             (when n
               (setcdr n nil)))
-          (eshell-lisp-command (mapconcat 'identity candidates "\n")))
+          (eshell-lisp-command
+           (mapconcat 'identity candidates "\n")
+           ;; (mapconcat 'eshell-ls-decorated-name candidates "\n")
+           ))
       (while (and candidates (not result))
         (if (string-match path (car candidates))
             (setq result (car candidates))
@@ -1473,5 +1608,156 @@ Otherwise, call `eshell/cd' with the result."
   (setq cwd (or cwd default-directory))
   (let ((default-directory cwd))
     (call-interactively 'eshell)))
+
+(defun eshell-emit-prompt ()
+  "Emit a prompt if eshell is being used interactively."
+  (when (boundp 'ansi-color-context-region)
+    (setq ansi-color-context-region nil))
+  (run-hooks 'eshell-before-prompt-hook)
+  (if (not eshell-prompt-function)
+      (set-marker eshell-last-output-end (point))
+    (let ((prompt (funcall eshell-prompt-function)))
+      (if eshell-highlight-prompt
+	   (add-text-properties 0 (length prompt)
+				'(read-only t
+				  font-lock-face eshell-prompt
+				  front-sticky (font-lock-face read-only)
+				  rear-nonsticky (font-lock-face read-only))
+				prompt)
+       (add-text-properties 0 (length prompt)
+				'(read-only t
+				  ;; font-lock-face eshell-prompt
+				  front-sticky (font-lock-face read-only)
+				  rear-nonsticky (font-lock-face read-only))
+				prompt))
+      (eshell-interactive-print prompt)))
+  (run-hooks 'eshell-after-prompt-hook))
+
+(defun eshell-send-input (&optional use-region queue-p no-newline)
+  "Send the input received to Eshell for parsing and processing.
+After `eshell-last-output-end', sends all text from that marker to
+point as input.  Before that marker, calls `eshell-get-old-input' to
+retrieve old input, copies it to the end of the buffer, and sends it.
+
+If USE-REGION is non-nil, the current region (between point and mark)
+will be used as input.
+
+If QUEUE-P is non-nil, input will be queued until the next prompt,
+rather than sent to the currently active process.  If no process, the
+input is processed immediately.
+
+If NO-NEWLINE is non-nil, the input is sent without an implied final
+newline."
+  (interactive "P")
+
+  ;; I just only want this function to run if the cursor is on the prompt line
+
+  (if (pen-eshell-at-prompt-line)
+      (if (not (sor (chomp (eshell-get-old-input use-region))))
+          (pen-flash)
+
+          ;; Note that the input string does not include its terminal newline.
+          (let ((proc-running-p (and (eshell-head-process)
+                                     (not queue-p)))
+                (inhibit-modification-hooks t))
+            (unless (and proc-running-p
+                         (not (eq (process-status
+                                   (eshell-head-process))
+                                  'run)))
+              (if (or proc-running-p
+                      (>= (point) eshell-last-output-end))
+                  (goto-char (point-max))
+                ;; (if (pen-eshell-at-prompt-line)
+                ;;     (let ((copy (eshell-get-old-input use-region)))
+                ;;       (goto-char eshell-last-output-end)
+                ;;       (insert-and-inherit copy)))
+                (let ((copy (chomp-lines (eshell-get-old-input use-region))))
+                  (goto-char eshell-last-output-end)
+                  ;; (insert-and-inherit copy)
+                  ;; Also chomp it
+                  (insert-and-inherit copy)))
+              (unless (or no-newline
+                          (and eshell-send-direct-to-subprocesses
+                               proc-running-p))
+                (insert-before-markers-and-inherit ?\n))
+              ;; Delete and reinsert input.  This seems like a no-op, except
+              ;; for the resulting entries in the undo list: undoing this
+              ;; insertion will delete the region, moving the process mark
+              ;; back to its original position.
+
+              ;; (make-region-read-only eshell-last-output-end (point))
+              (let ((text (chomp-lines (buffer-substring eshell-last-output-end (point))))
+                    (inhibit-read-only t))
+                (delete-region eshell-last-output-end (point))
+                ;; (insert text)
+                ;; Also chomp it
+                ;; (insert text)
+                ;; Sadly, can't make it read only yet.
+                ;; (tv (s-replace-regexp "\n\\'" "<pen-newline>" text))
+                ;; Make sure final newline is not read-only:
+                (pen-insert-read-only (s-replace-regexp "\n\\'" "" text) t)
+                (insert "\n")
+
+                ;; I need to keep inhibit-read-only on for the below code
+                ;; because I just inserted some read-only text.
+                
+                (if proc-running-p
+                    (progn
+                      (eshell-update-markers eshell-last-output-end)
+                      (if (or eshell-send-direct-to-subprocesses
+                              (= eshell-last-input-start eshell-last-input-end))
+                          (unless no-newline
+                            (process-send-string (eshell-head-process) "\n"))
+                        (process-send-region (eshell-head-process)
+                                             eshell-last-input-start
+                                             eshell-last-input-end)))
+                  (if (= eshell-last-output-end (point))
+                      (run-hooks 'eshell-post-command-hook)
+                    (let (input)
+                      (eshell-condition-case err
+                          (progn
+                            (setq input (buffer-substring-no-properties
+                                         eshell-last-output-end (1- (point))))
+                            (run-hook-with-args 'eshell-expand-input-functions
+                                                eshell-last-output-end (1- (point)))
+                            (let ((cmd (eshell-parse-command-input
+                                        eshell-last-output-end (1- (point)))))
+                              (when cmd
+                                (eshell-update-markers eshell-last-output-end)
+                                (setq input (buffer-substring-no-properties
+                                             eshell-last-input-start
+                                             (1- eshell-last-input-end)))
+                                (run-hooks 'eshell-input-filter-functions)
+                                (and (catch 'eshell-terminal
+                                       (ignore
+                                        (if (eshell-invoke-directly cmd)
+                                            (eval cmd)
+                                          (eshell-eval-command cmd input))))
+                                     (eshell-life-is-too-much)))))
+                        (quit
+                         (eshell-reset t)
+                         (run-hooks 'eshell-post-command-hook)
+                         (signal 'quit nil))
+                        (error
+                         (eshell-reset t)
+                         (eshell-interactive-print
+                          (concat (error-message-string err) "\n"))
+                         (run-hooks 'eshell-post-command-hook)
+                         (insert-and-inherit input))))))))))))
+
+;; Speed up eshell for large git repos
+(defun epe-git-unpushed-number ()
+  "Return unpushed number."
+  ;; (string-to-number
+  ;;  (shell-command-to-string "git log @{u}.. --oneline 2> /dev/null | wc -l"))
+  0)
+
+;; this prevents the eshell history from containing read-only text
+(defun eshell-add-input-to-history-around-advice (proc text)
+  (setq text (substring-no-properties text))
+  (let ((res (apply proc (list text))))
+    res))
+(advice-add 'eshell-add-input-to-history :around #'eshell-add-input-to-history-around-advice)
+;; (advice-remove 'eshell-add-input-to-history #'eshell-add-input-to-history-around-advice)
 
 (provide 'pen-eshell)

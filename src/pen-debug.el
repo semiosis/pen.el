@@ -73,6 +73,8 @@
     `(try-cascade '(,@list-of-alternatives))))
 
 (defvar pen_loaded_packages nil)
+;; Also has the depth
+(defvar pen_loaded_packages_log nil)
 
 ;; I think I should just leave this on
 (defvar require-depth 0)
@@ -83,8 +85,11 @@
          (spaces (make-string visible-depth ? )))
     (if (not (member package_name pen_loaded_packages))
         (progn
-          (message (concat spaces (format "%s" require-depth) "p:%S  " path) args))))
-  (setq require-depth (+ require-depth 1)) t
+          (message (concat spaces (format "%s" require-depth) "p:%S  " path) args))
+      ;; (progn
+      ;;   (message (concat spaces (format "%s" require-depth) "p:%S RELOAD " path) args))
+      ))
+  (setq require-depth (+ require-depth 1))
 
   (let ((res (apply proc args)))
     ;; (message "require returned %S" res)
@@ -95,7 +100,8 @@
       (if (not (member package_name pen_loaded_packages))
           (progn
             (message (concat spaces (format "%s" require-depth) "p:%S END") args)
-            (push package_name pen_loaded_packages))))
+            (push package_name pen_loaded_packages)))
+      (push (list package_name require-depth) pen_loaded_packages_log))
     res))
 (advice-add 'require :around #'require-around-advice)
 ;; (advice-remove 'require #'require-around-advice)

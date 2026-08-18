@@ -23,21 +23,61 @@
 ;; (sslk "lag" #'gist-list)
 (sslk "lau" #'re-builder)
 ;; (sslk "lag" nil)
+
+;; Games
+(defun battlestar ()
+  (interactive)
+  (comint-quick "battlestar" user-home-directory))
+
+(defun bsdgames-adventure ()
+  (interactive)
+  (comint-quick "bsdgames-adventure" user-home-directory))
+
+(defun boggle ()
+  (interactive)
+  (pen-vterm "boggle"))
+
+(defun cribbage ()
+  (interactive)
+  (pen-vterm "cribbage"))
+
+(defun hhgttg ()
+  (interactive)
+  (pen-term-runcmd "nvc" "hhgttg"))
+
 (sslk "lagc" #'crossword)
-(sslk "lags" #'snake)
-(sslk "lagh" #'chess)
-(sslk "lagd" #'dunnet)
 (sslk "laga" #'ascii-adventures)
-(sslk "lagp" #'pong)
-(sslk "lagt" #'tetris)
-(sslk "lago" #'doctor)
-(sslk "lagb" #'bubbles)
-(sslk "lagg" #'gomoku)
-(sslk "lagm" #'mpuz)
-(sslk "lagz" #'zone)
-(sslk "lagl" #'life)
-(sslk "lagb" #'blackbox)
-(sslk "lagi" #'solitaire)
+;; Text Adventures
+(sslk "lagxd" #'dunnet)
+(sslk "lagxb" #'battlestar)
+(sslk "lagxa" #'bsdgames-adventure)
+(sslk "lagxh" #'hhgttg)
+;; Word games
+(sslk "lagwb" #'boggle)
+(sslk "lagwm" #'maces-game)
+;; Board games
+(sslk "lagbg" #'gomoku)
+(sslk "lagbc" #'chess)
+;; Arcade
+(sslk "lagds" #'snake)
+(sslk "lagdp" #'pong)
+(sslk "lagdt" #'tetris)
+;; Solitaire
+(sslk "lagob" #'bubbles)
+(sslk "lagos" #'solitaire)
+;; Cards
+(sslk "lagrr" #'cribbage)
+;; Math
+(sslk "lagmp" #'mpuz)
+;; Simulation
+(sslk "lagsl" #'life)
+;; Animation
+(sslk "lagnz" #'zone)
+;; Chat
+(sslk "lagto" #'doctor)
+;; Misc/Uncategorised
+(sslk "lagub" #'blackbox)
+
 (sslk "laN" #'gnus)
 (sslk "lat" #'helm-top)
 (sslk "laT" #'list-timers)
@@ -63,7 +103,8 @@
 (sslk "lac" #'artist-mode)
 (sslk "lar" #'gnu-apl)
 (sslk "lak" #'toggle-picture-mode)
-(sslk "laf" #'deft)
+;; (sslk "laf" #'deft)
+(sslk "laf" #'full-calc)
 (sslk "laB" #'calibredb)
 (sslk "lae" #'deer)
 (sslk "laio" #'iotop)
@@ -221,7 +262,7 @@
   (sslk "ldw" (dff (pen-open-dir "$REPOS/prompts")))
   (sslk "ldo" (dff (pen-open-dir "$NOTES/ws")))
 
-  (sslk "lA" (df ansi-zsh (etansi zsh)))
+  (sslk "lA" (df ansi-zsh (call-interactively (etc "tn zsh" t))))
   (sslk "lrre" (df edit-emacs (e "$MYGIT/config/emacs/emacs")))
   (sslk "lrl" 'pen-edit-efm-conf)
   ;; (sslk "lrl" (df edit-emacs (e "/home/shane/.config/efm-langserver/config.yaml")))
@@ -399,5 +440,7 @@
 
 (define-key global-map (kbd "<help> m") 'describe-mode)
 (define-key global-map (kbd "<help> M") 'pen-show-active-minor-modes-for-buffer)
+
+(define-key global-map (kbd "<help> P") 'pen-describe-package)
 
 (provide 'pen-post-bindings)
