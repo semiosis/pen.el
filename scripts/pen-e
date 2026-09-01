@@ -2,6 +2,8 @@
 
 sn="$(basename -- "$0")"
 
+. $SCRIPTS/lib/hs
+
 . $PENELD/scripts/utils.sh
 
 : "${FAST:="y"}"

@@ -876,6 +876,8 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
 ;; (snc "find ~+ -name 'snippets' -type d" nil pen-user-emacs-directory)
 
+(defvar pen-sn-logfp "/tmp/pen-sn.log")
+
 ;; Edge-cases:
 ;; - This wont work: (pen-sne "exit 5") because 'exit' isn't a binary. It closes bash before bash can record the code.
 ;; I think this always assumes output
@@ -890,6 +892,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   ;; So I must set it like so:
 
   (message "pen-sn: %s" shell-cmd)
+  (f-append (format "pen-sn: %s\n" shell-cmd) 'utf-8 pen-sn-logfp)
   (if shell
       (setenv "SHELL" shell)
     (setenv "SHELL" default-shell))

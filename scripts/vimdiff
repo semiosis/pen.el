@@ -27,4 +27,4 @@ vimevalcmd() {
     eval "$cmd"
 }
 
-vimevalcmd "$bin $cmd $w"
+vimevalcmd "in-tty $bin $cmd $w"

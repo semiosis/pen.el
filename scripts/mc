@@ -12,5 +12,6 @@ test -f "/usr/bin/mc" || agi "mc" &>/dev/null
 
 # mc would be horrible to use for anything other than automation
 
-export TERM=screen-2color
-/usr/bin/mc "$@"
+# in-tty env TERM=screen-2color nvc -2 /usr/bin/mc "$@"
+# in-tty env TERM=screen-2color /usr/bin/mc "$@"
+in-tty /usr/bin/mc "$@"

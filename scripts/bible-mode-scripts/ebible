@@ -64,9 +64,9 @@ ebible_pager() {
         esac; done
 
         if test "$COLUMNATED" = "y"; then
-            vim_cmd="colvs -nls -num"
+            vim_cmd="colvs -nls -num -wrap"
         else
-            vim_cmd="vs -nls -num"
+            vim_cmd="vs -nls -num -wrap"
         fi
 
         : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | pen-c ascify | slugify)"}"

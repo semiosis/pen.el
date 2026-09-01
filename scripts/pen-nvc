@@ -104,7 +104,7 @@ fi
 # fi
 
 # This must come *BEFORE* output_fp=
-if test "$INSIDE_NEOVIM" = y || test "$NO_NVC" = y; then
+if test "$INSIDE_COMINT" = y || test "$INSIDE_NEOVIM" = y || test "$NO_NVC" = y; then
     if test "$isstdoutpipe" -eq 0; then
         eval "$CMD | cat"
     else
@@ -125,6 +125,8 @@ fi
 export INSIDE_NEOVIM=y
 export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks better inside neovim
 
+precmd="export INSIDE_NEOVIM=y NO_DEFAULT_BG=y; $precmd"
+
 # I have a wrapper script now, so this will always happen
 if which -a nvim &>/dev/null; then
 
@@ -132,6 +134,7 @@ if which -a nvim &>/dev/null; then
 
     # For speed, eliminate aqfs
     cmd="nvim -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c \"call GeneralSyntax()\" -c \"call NumberSyntax()\" -c \"normal! i\""
+    # cmd="nvim -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c \"normal! i\""
     eval "$cmd"
 else
     eval "$CMD"

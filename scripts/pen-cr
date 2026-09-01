@@ -2502,6 +2502,34 @@ case "$file_type" in
     }
     ;;
 
+    pas) {
+        if test -z "$runit" && test "$(head -c 2 "$rp")" = "#!"; then
+            runshebang "$rp"
+            pen-pak
+            exit $?
+        fi
+
+        if test "$runit" = "y"; then
+            (
+                cd "$td_cr"
+                ln -s "$rp"
+                eval "fpc \"./$fn\" -o\"$mant\";"
+            )
+            if test -f "$td_cr/$mant"; then
+                "$td_cr/$mant" "$@"
+            else
+                exit 1
+            fi
+        else
+            cd "$td_cr"
+            ln -s "$rp"
+
+            CWD="$td_cr" zrepl -cm -E "fpc \"./$fn\" -o\"$mant\"; ./$mant"
+        fi
+        exit 0
+    }
+    ;;
+
     rb) {
         cd "$td_cr"
         # ruby "$rp"

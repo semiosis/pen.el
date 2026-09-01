@@ -1,4 +1,9 @@
 (require 'comint)
+(require 'comint-intercept)
+(require 'comint-hyperlink)
+(require 'comint-histories)
+(require 'helm-comint)
+(require 'comint-mime)
 
 ;; I don't think I really want this. I like to keep my emacs system pure
 ;; (require 'comint-intercept)
@@ -155,7 +160,7 @@
          (slug (if unique
                    (concat slug "<" (substring (uuidgen-4) 0 8) ">")
                  slug))
-         (buf (make-comint slug (pen-nsfa cmd dir nil t))))
+         (buf (make-comint slug (pen-nsfa (concat "export INSIDE_COMINT=y; " cmd) dir nil t))))
     (with-current-buffer buf
       (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))
       (setq-local comint-prompt-regexp

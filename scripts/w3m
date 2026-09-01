@@ -118,7 +118,7 @@ maybecache() {
     if test "$has_output" = "y"; then
         # Make ci exclude blacklist the cookie header hash string
         # cmd1 "$@" >> /tmp/cookiest.txt
-        cif -nu -nnu -omit "Cookie: session.*'" "$@"
+        spin cif -nu -nnu -omit "Cookie: session.*'" "$@"
     else
         "$@"
     fi

@@ -1,6 +1,37 @@
-#!/bin/bash
+#!/usr/bin/env pash
 export TTY
 
 . $SCRIPTS/lib/hs
+. $SCRIPTS/lib/stdin_exists
 
-/usr/bin/gnuplot "$@"
+if stdin_exists; then
+    input="$(cat)"
+fi
+
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if test -n "$stdin"; then
+    if is_tty; then
+        printf -- "%s\n" "$stdin" | stub-showcmd -bn gnuplot "$@"
+    else
+        # My new syntax works!
+        # Get it going also for interactive mode!
+        # nohup myeval -E "$(cmd printf -- "%s\n" "$stdin" "|" stub-showcmd -bn gnuplot "$@")"
+        nohup myeval -E "$({printf -- "%s\n" "$stdin" | stub-showcmd -bn gnuplot "$@"})"
+    fi
+    printf -- "%s\n" "$stdin" | /usr/bin/gnuplot "$@"
+else
+    if is_tty; then
+        stub-showcmd -bn gnuplot "$@"
+    else
+        nohup stub-showcmd -bn gnuplot "$@"
+    fi
+    /usr/bin/gnuplot "$@"
+fi

@@ -51,9 +51,10 @@
   "https://wordincontext.com/en/%s"
   :keybinding "c")
 
-(defengine libgen
-  "http://gen.lib.rus.ec/search.php?req=%s&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def"
-  :keybinding "I")
+(defengine fazbrowse
+           "http://fazbrowse.duckdns.org/?q=%s&m=web"
+           :keybinding "F"
+           :browser 'w3m)
 
 (defengine project-gutenberg
   "http://www.gutenberg.org/ebooks/search/?query=%s"

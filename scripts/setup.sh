@@ -2926,3 +2926,7 @@ agi libsigsegv2 libsigsegv-dev
 
 agi gnuplo
 e ia -r gnuplot
+
+e ia -r comint-intercept comint-hyperlink comint-histories helm-comint comint-mime
+
+e ia -r eshell-command-not-found esh-autosuggest esh-help esh-buf-stack

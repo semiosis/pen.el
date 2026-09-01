@@ -16,6 +16,11 @@
 (require 'eshell-bookmark)
 (require 'em-tramp)
 
+(require 'eshell-command-not-found)
+(require 'esh-autosuggest)
+(require 'esh-help)
+(require 'esh-buf-stack)
+
 (setq eshell-hist-ignoredups t)
 (setq eshell-cmpl-cycle-completions nil)
 (setq eshell-cmpl-ignore-case t)
@@ -1695,6 +1700,8 @@ newline."
                 ;; Sadly, can't make it read only yet.
                 ;; (tv (s-replace-regexp "\n\\'" "<pen-newline>" text))
                 ;; Make sure final newline is not read-only:
+                
+                ;; This also affects the command, not just its output
                 (pen-insert-read-only (s-replace-regexp "\n\\'" "" text) t)
                 (insert "\n")
 

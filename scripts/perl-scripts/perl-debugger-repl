@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# https://www.reddit.com/r/perl/comments/15o9gjb/does_perl_have_a_real_repl/
+# I have played with Devel::Repl, perlconsole and reply. IMHO, they are not better than using the perl debugger invoked as perl -dE0.
+# I find the perl debugger to be an invaluable tool and have for years. I don't know what you mean by the terminal is limited. I don't think it is more so than any other terminal based repl. You may be referring to not being able to do something like print $hash_ref. If so, the debugger command x $hash_ref will dump the hash reference for you. There is also Data::Printer which can be use to dump memory structures in a prettier form. You can use the command line perl -MDP -de0 and then dump a prettier version with p($hash_ref).
+# A scan of MetaCPAN does reveal a few more options: FP::Repl::Repl, tinyrepl, pl. One additional variation that may be of interest is App::PerlShell.
+# In closing, I continue to find the perl debugger my choice tool here.
+
+in-pen nvc rl perl -dE0

@@ -1,7 +1,8 @@
 #!/bin/bash
 export TTY
 
-if test "$NO_RL" = y || printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+# j:comint-quick makes an nsfa with INSIDE_COMINT=y
+if test "$NO_RL" = y || printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$' || test "$INSIDE_COMINT" = y; then
     # skip rlwrap
     "$@"
     exit "$?"

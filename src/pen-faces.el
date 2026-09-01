@@ -773,6 +773,19 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'lsp-lens-face "#222222")
     (set-face-background 'lsp-lens-face "#151515")
 
+    (require 'lsp-ui-sideline)
+    (require 'lsp-ui-flycheck)
+
+    (ignore-errors
+      ;; e:/root/.emacs.d/host/pensieve/src/pensieve/core.clj
+      (set-face-foreground 'lsp-flycheck-info-unnecessary-face 'unspecified)
+      ;; (set-face-background 'lsp-flycheck-info-unnecessary-face "#404030")
+      (set-face-foreground 'lsp-flycheck-info-unnecessary-face "#ffff00")
+      (set-face-background 'lsp-flycheck-info-unnecessary-face "#555500")
+
+      (set-face-foreground 'lsp-flycheck-warning-unnecessary-face "#ffff00")
+      (set-face-background 'lsp-flycheck-warning-unnecessary-face "#555500"))
+
     (require 'shr)
     (set-face-foreground 'shr-link fg)
     (set-face-background 'shr-link bg)

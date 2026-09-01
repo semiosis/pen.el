@@ -451,10 +451,30 @@ bindkey -s "^[[1;9P" "^A^K^D"
 bindkey -s "^[[20;3~" "^A^K^D"
 # M-F12 - quit (like vim)
 bindkey -s "^[[24;3~" "^A^K^D"
-# S-F8 - insert date (like vim)
-bindkey -s "^[[19;2~" "$(date +%d.%m.%y)"
-# M-F8 - insert date (like vim)
-bindkey -s "^[[19;3~" "$(date +%d.%m.%y)"
+
+# # S-F8 - insert date (like vim)
+# bindkey -s "^[[19;2~" "$(date +%d.%m.%y)"
+# # M-F8 - insert date (like vim)
+# bindkey -s "^[[19;3~" "$(date +%d.%m.%y)"
+
+function zsh-insert-date() {
+    text_to_add="$(k f8)"
+    LBUFFER="${LBUFFER}${text_to_add}"
+}
+
+autoload -z zsh-insert-date
+zle -N zsh-insert-date
+bindkey "\ep" zsh-insert-date
+
+# # S-F8 - insert date (like vim)
+# bindkey -s "^[[19;2~" "$(k f8)"
+# # M-F8 - insert date (like vim)
+# bindkey -s "^[[19;3~" "$(k f8)"
+
+bindkey "^[[19;2~" zsh-insert-date
+bindkey "^[[19;3~" zsh-insert-date
+
+
 # C-;
 bindkey -s "^[[27;5;59~" ";"
 # C-:

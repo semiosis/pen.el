@@ -9,7 +9,7 @@
   (pen-message-no-echo "this-command: %s, inner function: %s, key: %s" (str this-command) "pen-rc-get" key)
 
   (if (and key (not (string-blank-p key)))
-      (pen-snc (cmd "pen-rc-get" key))))
+      (pen-snc (e/cmd "pen-rc-get" key))))
 
 (defun pen-rc-set (key value)
   (interactive (let* ((key (read-string-hist (concat "pen-rc-set key: ")))

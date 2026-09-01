@@ -104,4 +104,6 @@ eval "$shcode" |
     -e 's/my-/pen-/g' \
     -e 's/pen-pen-/pen-/g' \
     -e 's/\$(interactive /\$(pen-i /g' \
+    -e 's/\(([a-z-]\+[a-z]\)-to-/\12/g' \
+    -e 's/(pen-list2string/(pen-list2str/g' \
     -e 's/pen-my/oh-my/g'

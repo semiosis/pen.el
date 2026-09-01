@@ -8,34 +8,40 @@ export TTY
 # nohup bash -c "echo hi | stub-showcmd 1 2 4"
 
 . $SCRIPTS/lib/hs
-
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
-
+. $SCRIPTS/lib/stdin_exists
 
 if stdin_exists; then
     input="$(cat)"
 fi
 
+sn="$(basename -- "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -bn) {
+        bn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
-sn="$(basename -- "$0")"
-
 {
-echo "INVOCATON: $sn $CMD"
+    if test -n "$bn"; then
+        echo "Stub script: $sn"
+        echo "Invocation: $bn $CMD"
+    else
+        echo "Invocaton: $sn $CMD"
+    fi
 if test -n "$input"; then
-    echo "Has stdin." | udl
-    echo "$input" | pen-org-template-gen -basic text "STDIN for $sn"
+    echo "Has stdin. Formatted in org:" | udl
+    echo "$input" | pen-org-template-gen -basic text "stdin for {$sn $CMD}"
 else
     echo "No stdin."
 fi
-} | intty v
+} | intty -nw v

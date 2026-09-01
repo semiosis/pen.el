@@ -7,6 +7,7 @@ export TMUX
 unset CWD
 
 declare -a tmargs
+declare -a nwargs
 
 is_stdout_pipe() {
     # If stout is a pipe
@@ -70,6 +71,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -tmd) {
+        tmargs+=(-d)
+        shift
+        shift
+    }
+    ;;
+
+    -arg) {
+        nwargs+=("$2")
+        shift
+        shift
+    }
+    ;;
+
     -yn) {
         DOYN=y
         shift
@@ -88,7 +103,7 @@ if test "$iftty" = "y" && is_tty; then
     exit "$?"
 fi
 
-: "${CMD:="$(0</dev/null cmd "$@" | pen-mnm | cut -c 1-30 | slugify | sed 's/^-//;s/-$//')"}"
+: "${CMD:="$(0</dev/null cmd "${nwargs[@]}" "$@" | pen-mnm | cut -c 1-30 | slugify | sed 's/^-//;s/-$//')"}"
 
 pp="$(ps -o comm= $PPID)"
 
@@ -105,8 +120,8 @@ fi
 
 arr=( -tout "${arr[@]}" )
 
-CMD_B="$(cmd-nice-posix "${arr[@]}")"
-: ${CMD_B:="$(cmd-nice-posix "$@")"}
+CMD_B="$(cmd-nice-posix "${nwargs[@]}" "${arr[@]}")"
+: ${CMD_B:="$(cmd-nice-posix "${nwargs[@]}" "$@")"}
 
 if test "$DOYN" && ! pen-yn "do $(aqf "$@")?"; then
     exit
@@ -114,5 +129,5 @@ fi
 
 sn="$(p "$sn" | sed 's/^pen-//')"
 
-cmd1 pen-tm -export "PEN_GUI TMUX BROWSER SOCKET" "${arr[@]}" "$sn" -n "$CMD_B" -args "$@" | pen-ds lastsps &>/dev/null
-pen-tm -export "PEN_GUI TMUX BROWSER SOCKET" "${arr[@]}" "${tmargs[@]}" "$sn" -n "$CMD" -args "$@"
+cmd1 pen-tm -export "PEN_GUI TMUX BROWSER SOCKET" "${arr[@]}" "$sn" -n "$CMD_B" -args "${nwargs[@]}" "$@" | pen-ds lastsps &>/dev/null
+pen-tm -export "PEN_GUI TMUX BROWSER SOCKET" "${arr[@]}" "${tmargs[@]}" "$sn" -n "$CMD" -args "${nwargs[@]}" "$@"

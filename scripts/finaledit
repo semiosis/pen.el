@@ -9,4 +9,47 @@ export TTY
 
 test "$#" -eq 0 && exit 1
 
-v "$(tfsha "$@")"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -ofp) {
+        output_fp=y
+        shift
+    }
+    ;;
+
+    -cat) {
+        cat_fp=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+is_stdout_pipe
+ispipe="$?"
+
+fp="$(tfsha "$@")"
+
+if test "$cat_fp" = "y"; then
+    cat "$fp"
+elif test "$output_fp" = "y"; then
+    echo "$fp"
+else
+    if test "$ispipe" -eq 0; then
+        export VIM_NOCATOUT=y
+
+        (
+        trap '' HUP
+        odn in-tty v "$fp"
+        ) &>/dev/null
+
+        cat "$fp"
+    else
+        v "$fp"
+    fi
+fi

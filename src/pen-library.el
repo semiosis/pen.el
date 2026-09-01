@@ -939,7 +939,7 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
     (if path
         (xc path)
       (let* ((s (buffer-string))
-             (fp (tf "emacs-buffer-contents" s (read-string "Extension: " "txt")))
+             (fp (tf "emacs-buffer-contents" s (read-string "tf buffer contents. Extension: " "txt")))
              (b (find-file fp)))
         ;; (message "No path. Not copying.")
         

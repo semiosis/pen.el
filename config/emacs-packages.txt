@@ -2413,3 +2413,11 @@ org-remark
 undofu
 undo-fu
 ebdb-mua-sidecar
+lsp-pascal
+pascal
+comint-intercept
+comint-histories
+helm-comint
+comint-mime
+eshell-command-not-found
+esh-buf-stack

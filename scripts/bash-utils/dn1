@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+exec 1>/dev/null
+
+"$@"

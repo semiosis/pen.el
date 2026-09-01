@@ -7,5 +7,6 @@ bin="$1"
 shift
 bin_fp="$(which "$bin")"
 
-# cmd command "$bin_fp" "$@" | tv
+# test -n "$bin_fp" || echo "com: '$bin' not found" 1>&2
+# cmd1 command "$bin_fp" "$@" 1>&2
 command "$bin_fp" "$@"

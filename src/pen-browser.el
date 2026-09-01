@@ -6,16 +6,18 @@
   (interactive (list (pen-web-history)))
   (let ((br
          (pen-qa
+          -f "ff"
           -e "eww"
           -r "rdrview"
           -w "w3m"
           -b "browsh"
           -y "carbonyl"
           -l "elinks"
+          -d "elinks-dump"
+          -D "elinks-dump-chrome"
           -B "ebrowsh"
           -I "w3m"
-          -d "default"
-          -f "ff")))
+          -u "default")))
 
     (pcase br
       ("eww" (eww-browse-url url _new-window))
@@ -24,9 +26,11 @@
       ("browsh" (browsh url))
       ("carbonyl" (carbonyl url))
       ("elinks" (elinks url))
+      ("elinks-dump-chrome" (elinks-dump-chrome url))
       ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
       ("rdrview" (rdrview url))
       ("default" (browse-url-generic url _new-window))
+      ("elinks-dump" (sps (cmd "elinks-dump" url)))
       ("ff" (sps (cmd "ff" url)))
 
       ;; This opens tpop

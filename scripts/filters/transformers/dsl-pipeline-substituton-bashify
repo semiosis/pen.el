@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+sed -e 's/\$({/\$(cmd /' -e 's/|/"|"/' -e 's/})/)/'
+

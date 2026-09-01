@@ -20,6 +20,8 @@ ispipe="$?"
 # . $PENEL_DIR/scripts/utils.sh
 . $PENELD/scripts/utils.sh
 
+new_window_cmd=tpop
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -E) {
@@ -37,6 +39,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -xt) {
         use_xt=y
+        shift
+    }
+    ;;
+
+    -nw) {
+        new_window_cmd=nw
+        shift
+    }
+    ;;
+
+    -sps) {
+        new_window_cmd=sps
         shift
     }
     ;;
@@ -78,6 +92,6 @@ else
         xt -E "$CMD"
     else
         # echo tpop 1>&2
-        tpop -E "$CMD"
+        "${new_window_cmd}" -E "$CMD"
     fi
 fi

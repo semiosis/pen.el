@@ -124,7 +124,17 @@ if ! has('nvim')
     silent! !echo -en "\033]0;vim\a"
     autocmd BufEnter * silent! !echo -en "\033]0;v %:t\a"
 else
-    let &titlestring = 'YO'
+    " if ! and(has_key(environ(), "INSIDE_EMACS"), matchstr(getenv("INSIDE_EMACS"),",term:"))
+    "     let &titlestring = 'YO'
+    " else
+    "     " Annoyingly, nvim is outputting a big titlestring
+    "     " I want to turn it off
+    "     " let &titlestring = ''
+    "     let &title = off
+    " endif
+
+    " This has done the job. Now nvc doesn't bug out inside emacs' term
+    set notitle
 endif
 
 " setting virtualedit to onemore fixes the ‘cw’ bug for words at end of
@@ -1651,7 +1661,23 @@ function! ProgramFilterPredefined(cmd, vt, ...)
     call setreg('"', qr, qt)
 endfunction
 
+" Strangely, vim seems to not be able to reload vimrc
+" exe "source " . expand('%:p')
+" normal! :call Tv("dt")<CR>
 function! ExecInTmux()
+    " If filename ends in vimrc then
+    " source the file.
+    normal! :call Tv("dt")<CR>
+
+    let fp = expand('%:p')
+    if strlen(matchstr(expand('%:p'),"vimrc$"))
+        if filereadable(fp)
+          " exe "source " . fp
+          normal! :source %<CR>
+          return
+        endif
+    endif
+
     silent! call SaveTemp()
     silent! call TmuxBaseWait()
     silent! call system('tm -f -te -d sps -c "'.fnameescape(expand('%:p:h')).'" "cr '.fnameescape(expand('%:p')).'"'))
@@ -1850,7 +1876,7 @@ fun! GlobalP()
     " call system(cmd.'&')
 endf
 
-xnoremap <silent> gP <ESC>:call GlobalP()<CR>
+xnoremap <silent> gp <ESC>:call GlobalP()<CR>
 
 " This is so gf can handle grep output
 set isfname-=:
@@ -1997,3 +2023,38 @@ nnoremap tw :call ToggleOpt("wrap")<CR>
 
 nnoremap <S-Tab>p <C-p>
 nnoremap <S-Tab>n <C-n>
+
+fun! NPasteReplace()
+    " This nnoremap worked but I want to use a function
+    " so that I can also do it for multiline strings
+    " nnoremap <ESC>r mrR<C-r><C-"><Esc>`rmr
+
+    let clip = getreg('"')
+    let nlines = len(split(clip, "\n"))
+
+    " The initial "r-" is to put a dash there so it can be marked
+    " because I might be beyond the end of the line
+    normal! r-mR
+    if nlines == 1
+        exe expand("normal! R\<C-r>\<C-\">\<Esc>`R")
+    elseif nlines > 1
+        for s in split(clip, "\n")
+            delmarks r
+            exe expand("normal! r-mrR".s."\<Esc>`rmr")
+            normal! j
+        endfor
+        for i in range(1, nlines)
+            normal! k
+        endfor
+    else
+        echom "N/A"
+    endif
+    " normal! `R
+    delmarks rR
+endf
+
+" DONE Make something to replace what's under the cursor with what is in the clipboard. Do this in either normal or replace mode. Or both.
+" inoremap <M-r> :exe "normal ".strlen(@p)."x\"pP"<CR>
+" nnoremap <M-r> R<C-r><C-">
+" nnoremap <M-r> R
+nnoremap <ESC>r :call NPasteReplace()<CR>

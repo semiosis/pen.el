@@ -1359,7 +1359,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                   (if (member (str2sym strongs_code)
                                               bible-strongs-always-show-codelist)
                                       (progn
-                                        (lo (buffer-substring refstart refend))
+                                        ;; (lo (buffer-substring refstart refend))
+                                        (buffer-substring refstart refend)
                                         (put-text-property refstart refend 'font-lock-face 'bible-greek-always))
                                     (put-text-property refstart refend
                                                        'font-lock-face 'bible-greek))))))
@@ -1624,7 +1625,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           ;; This isn't the main bottleneck
           (if info
               ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines (shut-up-buffer-string info))))
-              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
+              ;; (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info)))
+              (nth 2 (s-split " " (s-replace-regexp " +" " " (car (pen-str2lines info))))))))
 
     (if (interactive-p)
         (nbfo word)
@@ -2119,7 +2121,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 ;; Why is this still slow?
 ;; The memoization doesn't seem to work at all.
 (defun nbd-ebible-m (module ref)
-  (pen-snc (concat (cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat")))
+  ;; (pen-snc (concat (cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat"))
+  (pen-snc (concat (pen-cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat")))
 (memoize 'nbd-ebible-m)
 
 (comment

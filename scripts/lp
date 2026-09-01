@@ -6,6 +6,6 @@ export TTY
 # I might want to actually configure printers,
 # even, say, a printer that generates a file rather than print to a physical printing device.
 
-cmd /usr/bin/lp "$@" | tv
+lp-stub-showcmd -bn lp "$@"
 
 # /usr/bin/lp "$@"

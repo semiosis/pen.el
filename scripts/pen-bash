@@ -9,11 +9,22 @@ export TTY
 # Run the preprocessor on any opened file
 # expand-bash-preprocessor
 
-export BASH_ENV=$HOME/.scriptrc
+# export BASH_ENV=$HOME/.scriptrc
+
 # bash "$@"
-cmd bash <(echo "echo \$0") "$@"
+# cmd bash <(echo "echo \$0") "$@"
 
-test "$#" -gt 0 && last_arg="${@: -1}"
+newscript="$(0</dev/null tf sh)"
 
-bash -c ". $lastarg"
-# $HOME/.scriptrc
+scriptname="$1"
+shift
+wp="$(which "$scriptname")"
+
+if test -f "$wp"; then
+    cat "$wp" | expand-bash-preprocessor > "$newscript"
+
+    bash -c ". ${newscript}" -- "$@"
+else
+    # https://unix.stackexchange.com/a/250792
+    bash --rcfile "$PENELD/scripts/lib/pash" -- "$@"
+fi

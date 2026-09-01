@@ -191,6 +191,47 @@
          (f-directory-p dir)
          (e (concat "$MYGIT/" sel))))))
 
+(defun pen-goto-notes-file (name &optional topic)
+  ;; e:$PENCONF/documents/notes/programs/tm/autofiles.txt
+  (interactive (list (fz (str2lines
+                          ;; (e/cat "/root/.pen/documents/notes/programs/tm/autofiles.txt")
+                          (snc
+                           ;; Need to specify directory because lsautofiles uses $CWD
+                           ;; to force the directory.
+                           (cmd "lsautofiles" "/root/.pen/documents/notes")
+                           ;; (cmd "lsautofiles")
+                           nil "/root/.pen/documents/notes"))
+                         nil nil "Goto org. fn: ")))
+
+  ;; (mapcar
+  ;;  'f-basename
+  ;;  (-filter 'identity (mapcar (lambda (dp)
+  ;;                               (let ((fp (f-join dp "notes.org")))
+  ;;                                 (if (f-file-p fp) dp nil)))
+  ;;                             (f-directories "/root/notes/ws"))))  
+
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16)
+    (setq topic (fz
+                 (mapcar 'f-basename (f-directories "/root/notes/ws"))
+                 nil nil "Topic: ")))
+   ((>= (prefix-numeric-value current-prefix-arg) 4)
+    (setq topic (fz
+                 ;; (mapcar 'f-basename (f-directories "/root/notes/ws"))
+                 (mapcar
+                  'f-basename
+                  (-filter 'identity (mapcar (lambda (dp)
+                                               (let ((fp (f-join dp name)))
+                                                 (if (f-file-p fp) dp nil)))
+                                             (f-directories "/root/notes/ws"))))
+                 nil nil "Topic: "))))  
+
+  (let ((dir (umn "$NOTES")))
+    (if (sor topic)
+        (setq dir (f-join dir "ws" topic)))
+
+    (e (f-join dir name))))
+
 (progn
   ;; pen-mu
   ;; Don't unminimise. e unminimises anyway
@@ -224,23 +265,23 @@
   (sslk "ldzp" (dff (pen-sps "select-python-package")))
   (sslk "lFw" (dff (e "$NOTES/ws/english/words.txt")))
   (sslk "lFL" (dff (e "$REPOS/pen.el/src/pen.el")))
-  (sslk "lFR" (dff (e "$NOTES/read.org")))
-  (sslk "lFH" (dff (e "$NOTES/watch.org")))
-  (sslk "lFr" (dff (e "$NOTES/remember.org")))
-  (sslk "lFg" (dff (e "$NOTES/glossary.txt")))
-  (sslk "lFt" (dff (e "$NOTES/todo.org")))
-  (sslk "lFj" (dff (e "$NOTES/journal.org")))
-  (sslk "lFn" (dff (e "$NOTES/need.org")))
-  (sslk "lFf" (dff (e "$NOTES/files.txt")))
+  (sslk "lFR" (dff (pen-goto-notes-file "read.org")))
+  (sslk "lFH" (dff (pen-goto-notes-file "watch.org")))
+  (sslk "lFr" (dff (pen-goto-notes-file "remember.org")))
+  (sslk "lFg" (dff (pen-goto-notes-file "glossary.txt")))
+  (sslk "lFt" (dff (pen-goto-notes-file "todo.org")))
+  (sslk "lFj" (dff (pen-goto-notes-file "journal.org")))
+  (sslk "lFn" (dff (pen-goto-notes-file "need.org")))
+  (sslk "lFf" (dff (pen-goto-notes-file "files.txt")))
   (sslk "lFBC" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
   (sslk "lFBO" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-outlines.txt")))
   (sslk "lFF" (dff (e "$EMACSD/pen.el/config/filters/filters.sh")))
-  (sslk "lFe" (dff (e "$NOTES/examples.txt")))
+  (sslk "lFe" (dff (pen-goto-notes-file "examples.txt")))
   (sslk "lFW" (dff (e "$NOTES/ws/french/words.txt")))
-  (sslk "lFp" (dff (e "$NOTES/perspective.org")))
+  (sslk "lFp" (dff (pen-goto-notes-file "perspective.org")))
   (sslk "lFs" (dff (e "$NOTES/websearch.txt")))
-  (sslk "lFk" (dff (e "$NOTES/keep-in-mind.org")))
-  (sslk "lFP" (dff (e "$NOTES/prayers.org")))
+  (sslk "lFk" (dff (pen-goto-notes-file "keep-in-mind.org")))
+  (sslk "lFP" (dff (pen-goto-notes-file "prayers.org")))
   ;; (sslk "l3dw" (dff (pen-open-dir "$MYGIT/takaheai/otagoai-website")))
   (sslk "ldgg" (dff (pen-open-dir "$MYGIT")))
   (sslk "ldU" 'fz-find-ws-music)

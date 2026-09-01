@@ -65,6 +65,14 @@ fi
 # printf -- "%s" "$url" | pen-xc -i &>/dev/null # can't background this, annoyingly without strange things happening
 # ff "https://www.youtube.com/watch?v=KHrbDw0267I" # ... when pen-i do this
 
+case "$url" in
+    *youtube.com*) {
+        sh-yt "$url"
+        exit "$?"
+    }
+    ;;
+esac
+
 if pen-pl "$url" | grep -q -P '\.onion/'; then
     pen-yn "start pen-torify w3m?" && pen-torify w3m "$url"
     exit 0
@@ -105,6 +113,7 @@ if test -z "$ans"; then
               -I ew3m-quick \
               -h ewc \
               -d elinks-dump \
+              -D elinks-dump-chrome \
               -m pen-mirror-site \
               -x ewx \
               -N nveww \
@@ -144,6 +153,7 @@ case "$ans" in
     ;;
     ewc) { ewc "$url"; exit 0; } ;;
     elinks-dump) { elinks-dump "$url"; exit 0; } ;;
+    elinks-dump-chrome) { elinks-dump-chrome "$url"; exit 0; } ;;
     ewx) { ewx "$url"; } ;;
     copy) { xcit -i "$url"; exit 0; } ;;
     google-chrome) { set -m; google-chrome "$url" & disown; exit 0; } ;;

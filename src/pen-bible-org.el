@@ -23,7 +23,7 @@
  :export (lambda (path desc backend)
            (let ((title (or desc
                             (s-replace-regexp "^[^:]*:" "" path)))
-                 (url (snc "canonicalise-bible-ref | biblegatewayify-bible-ref -urlonly" path))
+                 (url (snc "cif -E 'canonicalise-bible-ref | biblegatewayify-bible-ref -urlonly'" path))
                  ;; (urlsegment (urlencode path))
                  )
              (cond
@@ -37,7 +37,7 @@
  :export (lambda (path desc backend)
            (let ((title (or desc
                             (s-replace-regexp "^[^:]*:" "" path)))
-                 (url (snc "blueletterbibleify-strongs-code | xurls" path))
+                 (url (snc "cif -E 'blueletterbibleify-strongs-code | xurls'" path))
                  ;; (urlsegment (urlencode path))
                  )
              (cond

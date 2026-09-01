@@ -30,6 +30,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ofp) {
+        output_fp=y
+        shift
+    }
+    ;;
+
     -vs) {
         pager=pen-vs
         shift
@@ -64,28 +70,34 @@ exec 3>&2
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-filter() {
-    if test "$ONLY_REFS" = "y"; then
-        sed '0,/^References/d' | sed -n "/^   \\./s/^   \\. //p"
-    else
-        {
-            if ! test "$KEEP_REFS" = "y"; then
-                sed '/^References/,$d'
-            else
-                cat
-            fi
-        } | sed 's/^ \+//' | \
-        {
-            if test "$unicode" = "y"; then
-                cat
-            else
-                # pen-c ascify
-                # clean-term-capture
-                pen-c ascify
-                # cat
-            fi
-        }
-    fi
+output_filter() {
+    {
+        if test "$ONLY_REFS" = "y"; then
+            sed '0,/^References/d' | sed -n "/^   \\./s/^   \\. //p"
+        else
+            {
+                if ! test "$KEEP_REFS" = "y"; then
+                    sed '/^References/,$d'
+                else
+                    cat
+                fi
+            } | sed 's/^ \+//' | \
+            {
+                if test "$unicode" = "y"; then
+                    cat
+                else
+                    # pen-c ascify
+                    # clean-term-capture
+                    pen-c ascify
+                    # cat
+                fi
+            }
+        fi
+    } | sed 's/^>/ /' |
+            sed 's/^o /- /' |
+            sed -e 's/^[0-9]: / | /' -e 's/^[0-9][0-9]: / |  /' -e 's/^[0-9][0-9][0-9]: / |   /' |
+            sed -e 's/^[0-9]:$/ |/' -e 's/^[0-9][0-9]:$/ | /' -e 's/^[0-9][0-9][0-9]:$/ |  /'
+
 }
 
 if [ -z "$COLUMNS" ] && is_tty; then
@@ -104,13 +116,36 @@ fi
 
 export COLUMNS
 
-outtf="$(pen-ci -nd -f -m "$EXTRA_METADATA$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | filter | pen-tf -X "$EXTRA_METADATA" txt)" 
+outtf="$(pen-ci -nd -f -m "$EXTRA_METADATA$USETOR" elinks -dump-width "$COLUMNS" --no-numbering --dump "$@" | output_filter | pen-tf -X "$EXTRA_METADATA" txt)" 
 
 if ! test -s "$outtf"; then
-    pen-ci -nd -m "$EXTRA_METADATA$USETOR" w3m -dump "$@" | filter > "$outtf"
+    pen-ci -nd -m "$EXTRA_METADATA$USETOR" w3m -dump "$@" | output_filter > "$outtf"
 fi
 
 exec 2>&3
-cat "$outtf" | pa -E "$pager"
+# cat "$outtf" | pa -E "$pager"
+
+# is_stdout_pipe() {
+#     # If stout is a pipe
+#     [[ -p /dev/stdout ]]
+# }
+# is_stdout_pipe
+# ispipe="$?"
+
+if test "$output_fp" = "y"; then
+    tu -ofp cat "$outtf"
+else
+    # e:tu seemd to break "upd htmls2txt"
+
+    cat "$outtf"
+
+    # # Should 'tu' not already work this way without this extra test?
+    # if test "$ispipe" = "0"; then
+    #     tu cat "$outtf" | cat
+    # else
+    #     tu cat "$outtf"
+    # fi
+    # Wierdly, it still didn't work
+fi
 
 exit 0

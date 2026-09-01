@@ -118,7 +118,7 @@
 (add-to-list 'auto-mode-alist '("\\.rcp\\'" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.ini\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.bzl\\'" . bazel-mode))
-(add-to-list 'auto-mode-alist '("\\(\\.pl\\|\\.psgi\\|\\.pm\\)\\'" . perl-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.pl\\|\\.plx\\|\\.psgi\\|\\.pm\\)\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.pro\\|\\.problog\\)\\'" . prolog-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.kb.*\\)\\'" . prolog-kb-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.yas\\|\\.snippet\\)\\'" . snippet-mode))

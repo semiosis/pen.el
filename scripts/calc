@@ -24,8 +24,12 @@ if test "$#" -eq 0; then
     export PAGER=sps-v
 fi
 
-if test "$USE_RLWRAP" = "y"; then
-    nvc rl /usr/bin/calc "$@"
-else
-    nvc /usr/bin/calc "$@"
+wr_args=()
+if ! [[ $INSIDE_EMACS == *,comint ]]; then
+    wr_args+=("nvc")
 fi
+if test "$USE_RLWRAP" = "y"; then
+    wr_args+=("rl")
+fi
+
+"${wr_args[@]}" /usr/bin/calc "$@"

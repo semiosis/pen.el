@@ -9,38 +9,38 @@ export TTY
 # Require more than one [^.#?/][^.#?/]\+
 
 manual_redirect() {
-    sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;}' |  \
-        sed '/https:\/\/l.facebook.com\/l.php?u=/{s~https://l.facebook.com/l.php?u=~~;}' |  \
-        sed '/\/\/jessmart.in\/.*[^/]$/{s=$=/=;}' |  \
-        sed '/https:\/\/www.unisonweb.org\/.*[^/]$/{s=$=/=;}' | \
-        sed '/\/web.archive.org\/web.*http.*github.com\//{s=.*web.archive.org/web/[^/]*/==;}' | \
-        sed '/\/deepai.org/s/\/$//' | \
-        sed '/\/[^.]*.guildofarchivists.org\/.*\/$/{s=\/$==;}' |  \
-        sed '/\/www.bschaatsbergen.com/s/\/$//' | \
-        sed '/\/arxiv.org/s/\/$//' | \
-        sed '/\/wiki.haskell.org/s/\/$//' | \
-        sed '/\/en.wikibooks.org/s/\/$//' | \
-        sed '/\/news.ycombinator.com\/news/s/\/$//' | \
-        sed '/\/programming-idioms.org/s/\/$//' | \
-        sed '/artandpopularculture.com/s/\/$//' | \
-        sed '/\/www.schoolofhaskell.com/s/\/$//' | \
-        sed '/\/www.metalevel.at/s/\/$//' | \
-        sed '/\/www.metalevel.at/s/\/#/#/' | \
-        sed '/\/.*\.github.io/s/\/$//' | \
-        sed '/\/.*\.github.io/s/\/#.*//' | \
-        sed '/wikipedia.org/s/\/$//' | \
-        sed '/cppreference.com/s/\/$//' | \
-        sed '/wikipedia.org/s/\/#.*//' | \
-        sed '/http:\/\/google/s/http:/https:/' | \
-        sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \
-        sed '/.*clojure.org/s/\/$//' | \
-        sed '/.*clojuredocs.org/s/\/$//' | \
-        sed '/jsvine.github.io/s=jsvine.github.io/basics/=jsvine.github.io/intro-to-visidata/basics/=' | \
-        sed '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' | \
-        sed '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' | \
-        sed '/.*haskell.org/s/\/$//' | \
-        sed '/.*dwarffortresswiki.org/s/\/$//' | \
-        sed '/.*haskell.org/s/\/#.*//'
+    sed -e '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;}' \
+        -e '/https:\/\/l.facebook.com\/l.php?u=/{s~https://l.facebook.com/l.php?u=~~;}' \
+        -e '/\/\/jessmart.in\/.*[^/]$/{s=$=/=;}'  \
+        -e '/https:\/\/www.unisonweb.org\/.*[^/]$/{s=$=/=;}' \
+        -e '/\/web.archive.org\/web.*http.*github.com\//{s=.*web.archive.org/web/[^/]*/==;}' \
+        -e '/\/deepai.org/s/\/$//' \
+        -e '/\/[^.]*.guildofarchivists.org\/.*\/$/{s=\/$==;}'  \
+        -e '/\/www.bschaatsbergen.com/s/\/$//' \
+        -e '/\/arxiv.org/s/\/$//' \
+        -e '/\/wiki.haskell.org/s/\/$//' \
+        -e '/\/en.wikibooks.org/s/\/$//' \
+        -e '/\/news.ycombinator.com\/news/s/\/$//' \
+        -e '/\/programming-idioms.org/s/\/$//' \
+        -e '/artandpopularculture.com/s/\/$//' \
+        -e '/\/www.schoolofhaskell.com/s/\/$//' \
+        -e '/\/www.metalevel.at/s/\/$//' \
+        -e '/\/www.metalevel.at/s/\/#/#/' \
+        -e '/\/.*\.github.io/s/\/$//' \
+        -e '/\/.*\.github.io/s/\/#.*//' \
+        -e '/wikipedia.org/s/\/$//' \
+        -e '/cppreference.com/s/\/$//' \
+        -e '/wikipedia.org/s/\/#.*//' \
+        -e '/http:\/\/google/s/http:/https:/' \
+        -e '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' \
+        -e '/.*clojure.org/s/\/$//' \
+        -e '/.*clojuredocs.org/s/\/$//' \
+        -e '/jsvine.github.io/s=jsvine.github.io/basics/=jsvine.github.io/intro-to-visidata/basics/=' \
+        -e '/jsvine.github.io/s=jsvine.github.io/advanced/=jsvine.github.io/intro-to-visidata/advanced/=' \
+        -e '/jsvine.github.io/s=jsvine.github.io/intermediate/=jsvine.github.io/intro-to-visidata/intermediate/=' \
+        -e '/.*haskell.org/s/\/$//' \
+        -e '/.*dwarffortresswiki.org/s/\/$//' \
+        -e '/.*haskell.org/s/\/#.*//'
 
         # sed '/.*fandom.com/s/\/$//'
         # sed '/.*jsvine.github.io.*[^/]$/s/$/\//' | \

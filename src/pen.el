@@ -434,6 +434,7 @@ Be mindful of quoting arguments correctly."
     (require 'pen-cua))
 (require 'pen-ftp)
 (require 'pen-tramp)
+(require 'pen-ssh)
 (require 'pen-sort)
 (require 'pen-script)
 (require 'pen-calibre)
@@ -1193,6 +1194,7 @@ interpretation by shells, use `shell-quote-argument' for that."
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
     (pen-list2cmd args)))
+(defalias 'e/cmd 'pen-cmd)
 
 (defun pen-cmd-safe (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
@@ -1223,6 +1225,7 @@ interpretation by shells, use `shell-quote-argument' for that."
 ;;   (pen-cip-string "yo -5 =yo yo"))
 
 (defun pen-cmd-f (&rest args)
+  "This uses e:cmd-nice-posix"
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
     (pen-list2cmd-f (-filter 'identity args))))
@@ -2543,6 +2546,7 @@ May use to generate code from comments."
 (require 'pen-examplary)
 (if (inside-docker-p)
   (require 'pen-transient))
+(require 'pen-transient-cmd-generators)
 (require 'pen-engine)
 ;; Allow Pen.el to use a docker container containing Pen.el as its 'engine'.
 (require 'pen-quineserver)
@@ -2577,7 +2581,8 @@ May use to generate code from comments."
 (require 'pen-tmux)
 (require 'pen-looking-glass)
 (if (inside-docker-p)
-(require 'pen-eshell))
+(require 'pen-eshell)
+(require 'pen-shell))
 (require 'pen-bash-completion)
 (if (inside-docker-p)
 (require 'pen-buffer-state))

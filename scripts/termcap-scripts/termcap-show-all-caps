@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+man termcap | sed -e '0,/Boolean cap/d' -e '/There are several ways/,$d' | sed -n -e '/^ \{7\}/p' | sed 's/^ \+//' | sed '/\.\.\./d' | pavs

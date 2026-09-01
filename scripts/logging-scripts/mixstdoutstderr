@@ -5,6 +5,17 @@ export TTY
 
 # https://stackoverflow.com/questions/17226863/merge-multiple-stdout-stderr-into-one-stdout
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nooutlabel) {
+        no_out_label=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 cmd() {
     for var in "$@"
     do
@@ -21,4 +32,10 @@ CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
 # unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | pavs
-unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | pavs
+unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | {
+    if test "$no_out_label" = "y"; then
+        sed 's/^OUT://'
+    else
+        cat
+    fi
+} | pavs

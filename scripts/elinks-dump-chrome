@@ -16,6 +16,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ofp) {
+        output_fp=y
+        shift
+    }
+    ;;
+
     -w) {
         WAITTIME="$2"
         shift
@@ -48,4 +54,10 @@ test -n "$url" || exit 1
 # I get an iframe from dockerhub when I use https
 url="$(p "$url" | sed '/hub.docker.com/s/^https/http/')"
 
-oci -f -nd dom-dump "$url" | tf html | xa elinks-dump
+oci -f -nd dom-dump "$url" | tf html | {
+    if test "$output_fp" = "y"; then
+        xa elinks-dump -ofp
+    else
+        xa elinks-dump
+    fi
+}

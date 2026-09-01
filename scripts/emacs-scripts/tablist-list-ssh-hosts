@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# TODO Also make a way to get server details
+# probably through running the actual command.
+# ssh -G pen-agia
+{
+ssh -G localhost | sed "s/ .*//" | q -fl | pen-s join , | awk1
+if test -f /root/.ssh/config; then
+    IFS="
+    "
+    {
+    cat1 /root/.ssh/config | grep -P "^Host [^*]+$" | sed 's/^Host //'
+    echo pen-agia
+    } | uniqnosort | awk1 | while IFS="$IFS" read -r host; do
+        (
+        exec 0</dev/null
+        ssh -G "$host" | sed "s/[^ ]* //" | q -fl | pen-s join , | awk1
+        )
+    done
+fi
+} | pavs
