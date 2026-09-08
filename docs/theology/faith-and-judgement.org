@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-09-07 Mon 21:41>
+#+DATE: <2026-09-08 Tue 17:34>
 
 #+KEYWORDS: faith christianity
 
@@ -4870,6 +4870,41 @@ I believe that a person can still be (have sin) sinful and enter the Kingdom of 
 
     #+BEGIN_QUOTE
       *[[https://www.biblegateway.com/passage/?search=Hebrews%204%3A7-12&version=ESV][Hebrews 4:7-12]]* - again he appoints a *certain day, Today*, saying through David so long afterward, in the words already quoted, Today, *if you hear his voice, do not harden your hearts.* For if Joshua had given them rest, God would not have spoken of another day later on. So then, there remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works as God did from his. *Let us therefore strive to enter that rest, so that no one may fall by the same sort of disobedience.* For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart. (ESV)
+    #+END_QUOTE
+
+    When a person starts having faith in Jesus Christ, they are sealed with the promised Holy Spirit.
+
+    I think that "guarantee" might be too strong of a translation for [[strongs:G728][(G728 ἀρραβών)]] it makes it sound as though nothing could go wrong. But the Bible warns us that we must not "rebel", that rather we must continue in faith, not hardening our hearts (*[[https://www.biblegateway.com/passage/?search=Hebrews%203%3A12-19&version=ESV][Hebrews 3:12-19]]*, *[[https://www.biblegateway.com/passage/?search=Ephesians%205%3A1-21&version=ESV][Ephesians 5:1-21]]*), that we must not fall away by having an "evil, unbelieving heart". The Bible warns us that we must not practice the works of the flesh if we want to have an inheritance in the kingdom of Christ and God (*[[https://www.biblegateway.com/passage/?search=Galatians%205%3A18-25&version=ESV][Galatians 5:18-25]]*):
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV][Ephesians 1:13-14]]* - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee [[strongs:G728][(G728 earnest, pledge, a token of what is to come)]] of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+    #+END_QUOTE
+
+    + [[strongs:G728][(G728 earnest, pledge, a token of what is to come)]] :: 
+
+        #+BEGIN_SRC text -n :async :results verbatim code :lang text
+          Original Word: ἀρραβών
+          Part of Speech: Noun, Masculine
+          Transliteration: arrabón
+          Pronunciation: ar-hrab-OWN
+          Phonetic Spelling: (ar-hrab-ohn')
+          KJV: earnest
+          NASB: pledge, given as a pledge
+          Word Origin: [of Hebrew origin (H6162 (עֲרָבוֹן - pledge))]
+        #+END_SRC
+
+    The Gospel is *able* to build a person up to give them an inheritance among all those who are sanctified (as in, those who have *been* sanctified, who *have been* cleaned up that they no longer practice ungodliness, and love in the way God requires):
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Ephesians%205%3A2-6&version=ESV][Ephesians 5:2-6]]* - And walk in love, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God. But sexual immorality and all impurity or covetousness must not even be named among you, as is proper among saints. Let there be no filthiness nor foolish talk nor crude joking, which are out of place, but instead let there be thanksgiving. For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. (ESV)
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Acts%2020%3A32&version=ESV][Acts 20:32]]* - And now I commend you to God and to the word of his grace, which is able [[strongs:G1410][(G1410 dynamenō; being able)]] to build you up [[strongs:G3618][(G3618 oikodomēsai; to build up)]] and to give you the inheritance among all those who are sanctified [[strongs:G37][(G37 hēgiasmenois; having been sanctified)]]. (ESV)
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Galatians%205%3A18-25&version=ESV][Galatians 5:18-25]]* - But *if* you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And *those who belong to Christ Jesus have crucified the flesh with its passions and desires.* If we live by the Spirit, let us also walk by the Spirit. (ESV)
     #+END_QUOTE
 
     If somebody is "born of God" then they agree with the person ([[https://www.biblegateway.com/passage/?search=1%20John%205%3A1&version=ESV][I John 5:1]]) and work of Jesus Christ, abiding in His commandments (they love God and the children of God as commanded; [[https://www.biblegateway.com/passage/?search=1%20John%204%3A7&version=ESV][I John 4:7]]) and they do not make a practice of sinning as they are doing faith (I John 3:9; I John 5:4; I John 5:18; *Romans 14:23).
@@ -34469,6 +34504,10 @@ In trusting in Jesus Christ, we may receive the Holy Spirit:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%203%3A5&version=ESV][John 3:5]]* - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Ephesians%203%3A14-19&version=ESV][Ephesians 3:14-19]]* - For this reason I bow my knees before the Father, from whom every family in heaven and on earth is named, that according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being, so that *Christ may dwell in your hearts through faith* — that you, being rooted and grounded in love, may have strength to comprehend with all the saints what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge, that you may be filled with all the fullness of God. (ESV)
 #+END_QUOTE
 
 *** The living water, the Holy Spirit of promise is the seal of our inheritance, and received through faith in Jesus
