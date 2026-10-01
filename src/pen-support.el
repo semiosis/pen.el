@@ -1809,10 +1809,10 @@ See j:edit-read-string-hist for editing the hist var
 (defun pen-unonelineify-safe (s)
   (pen-sn "pen-str unonelineify-safe" s))
 
-(defun replace-region (s)
+(defun replace-region (s &optional start end)
   ""
-  (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
-        (rend (if (region-active-p) (region-end) (point-max)))
+  (let ((rstart (or start (if (region-active-p) (region-beginning) (point-min))))
+        (rend (or end (if (region-active-p) (region-end) (point-max))))
         (was_selected (pen-selected-p))
         (deactivate-mark nil))
 
