@@ -48,7 +48,38 @@
         ;; t opens a tmux
         "t"
         "minicom"
+        "ranger"
+        "r"
+        "tig"
+        "mc"
         "br"))
+
+(defun pen-start-term-visual-cmd (command)
+  (interactive (list (fz eshell-visual-commands nil nil "Start term with: ")))
+
+  (let ((sym (str2sym command))
+        (shsym (str2sym (concat "sh/" command))))
+
+    (cond
+     ((commandp shsym) (call-interactively shsym))
+     ((commandp sym) (call-interactively sym))
+     (t
+      (let* ((args
+              (read-string-hist (concat command " args: ")))
+             (invocation
+              (if (sor args)
+                  (concat command " " args)
+                command)))
+        (if (sor invocation)
+            ;; SHELL="$(nsfa envtv /bin/sh)" ranger
+            (pen-term-nsfa (concat "twr env "
+                                   ;; "SHELL=\"$(nsfa envtv /bin/sh)\""
+                                   ;; " "
+                                   (format "INSIDE_EMACS=%s,term:%s" emacs-version term-protocol-version)
+                                   " "
+                                   invocation))))))))
+
+(define-key global-map (kbd "C-H-c") 'pen-start-term-visual-cmd)
 
 ;; emacs term is too slow for br.
 ;; But I haven't ironed out all of the vterm issues, so make a eshell/br function that uses in-tty
@@ -68,13 +99,11 @@
   ;; (epe-theme-lambda)
   (setq eshell-prompt-regexp "^[^#\nλ]* λ[#]* "))
 
-
 ;; This has been a good theme. I think I'll stick with it.
 ;; It also "looks" like eshell to me now
 (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
   (pen-eshell-load-theme))
-
 
 ;; mx:eshell-git-prompt-use-theme
 ;; (eshell-git-prompt-use-theme 'robbyrussell)
@@ -82,10 +111,8 @@
 ;; (eshell-git-prompt-use-theme 'powerline)
 ;; (eshell-git-prompt-use-theme 'simple)
 
-
 ;; Not very good.
 ;; (require 'eshell-vterm)
-
 
 ;; https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
 
@@ -104,7 +131,6 @@
    ;; eshell-prefer-lisp-functions nil
    eshell-destroy-buffer-when-process-dies t))
 
-
 ;; Eshell would get somewhat confused if I ran the following commands directly through the normal Elisp library, as these need the better handling of ansiterm:
 ;; (use-package eshell
 ;;   ;; :init
@@ -115,7 +141,6 @@
 ;;   ;;             (add-to-list 'eshell-visual-commands "tail")
 ;;   ;;             (add-to-list 'eshell-visual-commands "top")))
 ;;   )
-
 
 (require 'em-alias)
 
@@ -150,7 +175,6 @@
 (defun eshell/gst (&rest args)
   (magit-status (pop args) nil)
   (eshell/echo))   ;; The echo command suppresses output
-
 
 (defun cljr--point-after (&rest actions)
   "Returns POINT after performing ACTIONS.
@@ -200,18 +224,14 @@ list of (fn args) to pass to `apply''"
                (define-key eshell-mode-map
                            (kbd "M-R") 'eshell-previous-matching-input))))
 
-
-
 (defun pen-close-eshell-window-when-dead ()
   (when (not (one-window-p))
     (delete-window)))
 
 (advice-add 'eshell-life-is-too-much :after 'pen-close-eshell-window-when-dead)
 
-
 ;; This allows me to make overrides, but not to be explicit when calling
 (setq eshell-prefer-lisp-functions t)
-
 
 ;; I sadly can't do it this way
 ;; ----------------------------
@@ -308,7 +328,6 @@ Any extra args go to that function"
           (eval run))))))
 (defalias 'esps 'e/sps)
 
-
 (defun e/spv (&rest args)
   "First arg is an elisp function.
 Any extra args go to that function"
@@ -348,7 +367,7 @@ Any extra args go to that function"
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (e/nw 'scratch-buffer)
     (e/nw 'eshell-unique))
-  
+
   ;; (split-window-vertically)
   ;; (other-window 1)
   ;; (shell) ; this is a real terminal
@@ -360,7 +379,7 @@ Any extra args go to that function"
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (e/sps 'scratch-buffer)
     (e/sps 'eshell-unique))
-  
+
   ;; (split-window-vertically)
   ;; (other-window 1)
   ;; (shell) ; this is a real terminal
@@ -425,7 +444,6 @@ Any extra args go to that function"
     (eshell-send-input)))
 
 ;; (define-key eshell-mode-map (kbd "C-l") 'eshell/clear)
-(define-key eshell-mode-map (kbd "C-l") 'identity-command)
 
 ;; This fixes eshell-pcomplete.
 ;; eshell-bol was going to the very beginning of the line
@@ -540,7 +558,7 @@ Any extra args go to that function"
           ;; paste -d , <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c -52) <(cat /root/dump/tmp/scratchFpA2D3.txt | cut -c 53-) | v
           (psout-reformatted (sh/paste "," psout-left psout-right))
           (tf (pen-tf "eshell-ps" psout-reformatted "txt")))
-     
+
      (cmd-out-to-tablist-quick (cmd "cat" tf)
                                t))))
 
@@ -569,6 +587,13 @@ Any extra args go to that function"
   "Like the bash `command` function."
 
   (pen-ewhich (car args)))
+(defalias 'eshell/pin 'eshell/e)
+
+(defun eshell/pil (&rest args)
+  "Open file literally."
+
+  (pen-ewhich (car args) nil t))
+(defalias 'eshell/il 'eshell/pil)
 
 (defun eshell/ncdu (&rest args)
   "term ncdu"
@@ -631,12 +656,12 @@ Any extra args go to that function"
   "Like the bash `command` function."
   ;; Firstly, fix the arguments
   (setq args (mapcar 'str args))
-  
+
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
 
   (pen-eshell-escolorize-err-lines
-   (pen-snc (apply 'cmd (append (list "mixstdoutstderr" "-nooutlabel" "com") args)))))
+   (pen-snc (apply 'cmd (append (list "mixstdoutstderr" "-nooutlabel" "com" "env" (format "%s=%s" "INSIDE_EMACS" eshell-inside-emacs)) args)))))
 (defalias 'eshell/com 'eshell/command)
 
 (defun pen-eshell-insert (&rest args)
@@ -678,6 +703,12 @@ Any extra args go to that function"
                (pen-snc (concat (apply 'cmd (cons "cat" (list ,fp)))
                                 (format " | pen-org-template-gen %s %s" ,mn (e/q ,rp))))))))))
 (defalias 'eshell/mcat 'eshell/mode-cat)
+
+(defun pen-highlight-as-org (s)
+  (universal-sidecar-fontify-as
+      org-mode
+      ((org-fold-core-style 'overlays))
+    s))
 
 (defun eshell/pwd-around-advice (proc &rest args)
   "pwd may be used by other functions, so perhaps I should not use j:mnm"
@@ -737,7 +768,7 @@ Any extra args go to that function"
   "broot."
   ;; Firstly, fix the arguments
   (setq args (mapcar 'str args))
-  
+
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
   (pen-snc (apply 'cmd (cons "in-tty" (cons "br" args)))))
@@ -757,7 +788,6 @@ Any extra args go to that function"
 
 ;; (define-key eshell-mode-map (kbd "M-h") 'pen-sph)
 ;; (define-key eshell-mode-map (kbd "M-h") 'eshell-sph)
-(define-key eshell-mode-map (kbd "M-h") 'eshell-sps)
 
 ;; e:$EMACSD_BUILTIN/pen.el/config/eshellrc.el
 ;; It's also possible to define aliases this way:
@@ -771,7 +801,6 @@ Any extra args go to that function"
   (e eshell-aliases-file)
   ;; (eshell-read-aliases-list)
   )
-
 
 (defun pen-eshell-source-file (fp &rest args)
   (interactive)
@@ -789,6 +818,20 @@ Any extra args go to that function"
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
 
+;; Can't use this because the filter doesn't process the entire
+;; output in a single string, but dripfeeds it
+(comment
+ (defun eshell-filter-region-colorise-maybe ()
+   ;; j:eshell/mode-cat
+   (let ((result (region2string eshell-last-output-start
+                                (- eshell-last-output-end 1))))
+     (if (equal 'orgmode (language-detection-string result))
+         (pen-region-filter 'pen-highlight-as-org
+                            eshell-last-output-start
+                            (- eshell-last-output-end 1)))))
+ (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-colorise-maybe t)
+ (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-colorise-maybe))
+
 (defun eshell-make-output-readonly ()
   (make-region-read-only
    eshell-last-output-start
@@ -796,6 +839,34 @@ Any extra args go to that function"
 (advice-add 'eshell-make-output-readonly :around #'ignore-errors-around-advice)
 
 (add-to-list 'eshell-output-filter-functions 'eshell-make-output-readonly t)
+
+(defun eshell-filter-finaloutput-colorise-maybe ()
+  ;; j:eshell/mode-cat
+
+  (save-excursion
+    (let ((end (progn (beginning-of-line)
+                      (point)))
+          (start (progn (eshell-previous-prompt 1)
+                        (next-line)
+                        (beginning-of-line)
+                        (point)))
+          (inhibit-read-only t))
+
+      (let ((result (region2string start
+                                   (- end 1))))
+        (if (equal "orgmode" (language-detection-string result))
+            (progn (pen-region-filter 'pen-highlight-as-org
+                                      start
+                                      (- end 1))
+                   (goto-char (- end 1))
+                   ;; (insert "\n")
+                   )
+          ;; (pen-region-filter 'pen-highlight-as-org)
+          ;; (pen-region-filter 'pen-highlight-as-org 468 744)
+          )))))
+
+(add-to-list 'eshell-post-command-hook 'eshell-filter-finaloutput-colorise-maybe t)
+;; (remove-from-list 'eshell-post-command-hook 'eshell-filter-finaloutput-colorise-maybe)
 
 (comment
  (etv (pps (eshell-environment-variables)))
@@ -884,13 +955,13 @@ environment, as specified in `eshell-variable-aliases-list'."
 ;; (defun pen-eshell-find-file ()
 ;;   "This command is really only supposed to be called specifically from clicking ls output in eshell."
 ;;   (interactive)
-  
+
 ;;   (let ((textprop-path (get-text-property (point) 'file-path))
 ;;         (dir (pen-eshell-copy-directory-from-prompt)))
 
 ;;     (if dir
 ;;         (setq textprop-path (f-join dir textprop-path)))
-    
+
 ;;     (if textprop-path
 ;;         (find-file textprop-path)
 ;;       (let ((maybe_path
@@ -899,8 +970,6 @@ environment, as specified in `eshell-variable-aliases-list'."
 ;;         (if (sor maybe_path)
 ;;             (call-interactively 'find-file-at-point)
 ;;           (call-interactively 'find-file))))))
-
-
 
 ;; TODO: Make it so =eshell= makes buttons out of =ls= results
 ;; Frustratingly, it seems like the global map is not respecting the mouse text properties
@@ -1003,7 +1072,7 @@ environment, as specified in `eshell-variable-aliases-list'."
           (define-key map [mouse-1] 'pen-find-file)
 
           ;; (define-key map [?\r] 'pen-eshell-go-to-start-of-prompt)
-          
+
           ;; (put-text-property link-start link-end 'keymap map (car file))
 
           ;; (elog "%s" "*ls-files*" (pps file))
@@ -1016,9 +1085,6 @@ environment, as specified in `eshell-variable-aliases-list'."
 (defalias 'eshell/visual 'eshell-exec-visual)
 (defalias 'eshell/term 'eshell-exec-visual)
 (defalias 'eshell/vterm 'eshell-vterm-exec-visual)
-
-;; (define-key eshell-map (kbd "C-c TAB") nil)
-(define-key eshell-mode-map (kbd "M-a M-r") 'ranger)
 
 ;; Because the eshell-bol function alternately goes to the beginning of line and the start of the prompt,
 ;; I need to adjust this to ensure it gets the input string only from after the prompt
@@ -1058,7 +1124,6 @@ If N is negative, search forwards for the -Nth following match."
 
 (defun pen-eshell-visual-command-p (command)
   (cl-letf (((symbol-function 'eshell-interactive-output-p) 'identity)) (eshell-visual-command-p command nil)))
-
 
 ;; j:eshell-execute-pipeline
 (defun eshell-parse-pipeline (terms)
@@ -1286,8 +1351,6 @@ If N is negative, search forwards for the -Nth following match."
         (xc (f-expand dir)
             nil nil "Directory from prompt"))))
 
-(define-key eshell-mode-map (kbd "M-y d") 'pen-eshell-copy-directory-from-prompt)
-
 (defun pen-eshell-copy-directory-and-command-from-prompt ()
   (interactive)
   (let ((dir (umn (pen-eshell-get-directory-for-line)))
@@ -1300,7 +1363,6 @@ If N is negative, search forwards for the -Nth following match."
         nil nil "Command from prompt")))
 
 ;; This is an analog of bash's M-k
-(define-key eshell-mode-map (kbd "M-y k") 'pen-eshell-copy-directory-and-command-from-prompt)
 
 (defun pen-eshell-avy-copy-directory-and-command ()
   (interactive)
@@ -1310,8 +1372,6 @@ If N is negative, search forwards for the -Nth following match."
         (call-interactively 'ivy-avy)
       (call-interactively 'avy-goto-char))
     (pen-eshell-copy-directory-and-command-from-prompt)))
-
-(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 
 (defun pen-eshell-avy-copy-file-path ()
   (interactive)
@@ -1325,8 +1385,6 @@ If N is negative, search forwards for the -Nth following match."
               nil nil "Copied eshell tramp file path")
         (xc (f-realpath (f-expand (str (get-text-property (point) 'file-path))))
             nil nil "Copied eshell file path")))))
-
-(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 
 (defun pen-enable-org-link-font-lock-test ()
   (interactive)
@@ -1700,14 +1758,14 @@ newline."
                 ;; Sadly, can't make it read only yet.
                 ;; (tv (s-replace-regexp "\n\\'" "<pen-newline>" text))
                 ;; Make sure final newline is not read-only:
-                
+
                 ;; This also affects the command, not just its output
                 (pen-insert-read-only (s-replace-regexp "\n\\'" "" text) t)
                 (insert "\n")
 
                 ;; I need to keep inhibit-read-only on for the below code
                 ;; because I just inserted some read-only text.
-                
+
                 (if proc-running-p
                     (progn
                       (eshell-update-markers eshell-last-output-end)
@@ -1766,5 +1824,15 @@ newline."
     res))
 (advice-add 'eshell-add-input-to-history :around #'eshell-add-input-to-history-around-advice)
 ;; (advice-remove 'eshell-add-input-to-history #'eshell-add-input-to-history-around-advice)
+
+;; (define-key eshell-map (kbd "C-c TAB") nil)
+
+(define-key eshell-mode-map (kbd "C-l") 'identity-command)
+(define-key eshell-mode-map (kbd "M-h") 'eshell-sps)
+(define-key eshell-mode-map (kbd "M-y k") 'pen-eshell-copy-directory-and-command-from-prompt)
+(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
+(define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
+(define-key eshell-mode-map (kbd "M-a M-r") 'ranger)
+(define-key eshell-mode-map (kbd "M-y d") 'pen-eshell-copy-directory-from-prompt)
 
 (provide 'pen-eshell)

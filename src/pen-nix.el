@@ -201,10 +201,11 @@ at point instead."
   default-directory)
 (defalias 'pwd 'files/pwd)
 
-(defun e/pwd ()
-  "Returns the current directory."
-  default-directory)
-(defalias 'pen-pwd 'e/pwd)
+;; (defun e/pwd ()
+;;   "Returns the current directory."
+;;   default-directory)
+(defalias 'e/pwd 'cwd)
+(defalias 'pen-pwd 'cwd)
 
 (defun sh/pwd ()
   "Returns the current directory."
@@ -232,16 +233,21 @@ at point instead."
 (defshellfilter cat)
 (defshellfilter c uc)
 
-(defmacro e/seq (from &rest body)
+(defmacro m/seq (from &rest body)
   "Same semantics as unix seq. Returns a list of integers."
   (cond ((eq (length body) 0) from)
         ((eq (length body) 1) `(number-sequence ,from ,@body))
         ((eq (length body) 2) `(number-sequence ,from ,(cadr body) ,(first body)))
         (t (error (concat "bad parameters: " (str (cons from body)))))))
 
+(defun e/seq (from arg2 &optional arg3)
+  (cond ((not arg3) (number-sequence from arg2))
+        (arg3 (number-sequence from arg3 arg2))))
+
 (defmacro sh/seq-to-list (&rest body)
   `(mapcar 'string-to-int (pen-str2list (chomp (pen-b seq ,@body)))))
 
+;; (defalias 'seq 'm/seq)
 (defalias 'seq 'e/seq)
 
 (defmacro s/cd (dir &rest body)

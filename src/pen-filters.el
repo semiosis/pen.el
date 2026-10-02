@@ -24,18 +24,18 @@
        (set-face-background 'region bg)
        r)))
 
-(defun pen-replace-region (s)
-  (replace-region s))
+(defun pen-replace-region (s &optional start end)
+  (replace-region s start end))
 
-(defun pen-region-filter (func)
+(defun pen-region-filter (func &optional rstart rend)
   "Apply the function to the selected region. The function must accept a string and return a string."
-  (let ((rstart (if (region-active-p) (region-beginning) (point-min)))
-        (rend (if (region-active-p) (region-end) (point-max))))
+  (let ((rstart (or rstart (if (region-active-p) (region-beginning) (point-min))))
+        (rend (or rend (if (region-active-p) (region-end) (point-max)))))
 
     (let ((res
            (pen-flash-region
             (ptw func (buffer-substring rstart rend)))))
-      (pen-replace-region res))))
+      (pen-replace-region res rstart rend))))
 
 (defun pen-region-pipe (cmd)
   "pipe region through shell command"

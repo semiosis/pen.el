@@ -614,11 +614,11 @@
 ;; TODO Loop over:
 ;; bible-module-map-names
 
-(defun-bible-open-version "NASB" nasb)
-(defun-bible-open-version "KJV" kjv)
-(defun-bible-open-version "engbsb2020eb" bsb)
-(defun-bible-open-version "RLT" rlt)
-(defun-bible-open-version "ESV" esv)
+(defun-bible-open-version "NASB" nasb-bible)
+(defun-bible-open-version "KJV" kjv-bible)
+(defun-bible-open-version "engbsb2020eb" bsb-bible)
+(defun-bible-open-version "RLT" rlt-bible)
+(defun-bible-open-version "ESV" esv-bible)
 
 ;; TODO But I also need to grep for all of these, when looking for verse references
 ;; https://www.logos.com/bible-book-abbreviations
@@ -1434,7 +1434,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-search-mode-select-book ()
   (interactive)
-  (nasb)
+  (nasb-bible)
   (bible-mode-select-book))
 
 (defun fz-bible-book (&optional prompt)
@@ -1530,14 +1530,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (find-file fp)))
 
 (defun view-notes-fp-verse (&optional ref editor)
-  (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
-  (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t))))
+  (interactive (list (bible-mode-get-link (thing-at-point 'line t) t)))
+  (setq ref (or ref (bible-mode-get-link (thing-at-point 'line t) t)))
   ;; (tpop (cmd "less" "-rS") (cat (bible-mode-get-notes-fp-for-verse ref)))
 
-  (let ((fp (bible-mode-get-notes-fp-for-verse ref)))
-    (if (sor editor)
-        (tpop (cmd editor (bible-mode-get-notes-fp-for-verse ref)))
-      (find-file-other-window (bible-mode-get-notes-fp-for-verse ref)))))
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (let ((current-prefix-arg nil))
+        (sps (cmd "note" ref)))
+    (let ((fp (bible-mode-get-notes-fp-for-verse ref)))
+      (if (sor editor)
+          (tpop (cmd editor (bible-mode-get-notes-fp-for-verse ref)))
+        (find-file-other-window (bible-mode-get-notes-fp-for-verse ref))))))
 
 (defun view-notes-fp-verse-v (&optional ref editor)
   (interactive (list (bible-mode-get-link (thing-at-point 'line t))))
@@ -1629,7 +1632,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               (nth 2 (s-split " " (s-replace-regexp " +" " " (car (pen-str2lines info))))))))
 
     (if (interactive-p)
-        (nbfo word)
+        (nbfo word 'help-mode)
       word)))
 
 (defun strongs-greek-info (term_code)
@@ -1667,7 +1670,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (pen-str2lines info))))))
     (if (or (interactive-p)
             force-interactive)
-        (nbfo info)
+        (nbfo info 'help-mode)
       (str info))))
 (defalias 'strongs-lookup 'bible-term-show-word)
 
@@ -1929,13 +1932,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   ;; bible-mode-book-chapters
 
-  (let ((book (car bible-mode-ref-tuple))
-        (chapter (cadr bible-mode-ref-tuple))
-        (verse (caddr bible-mode-ref-tuple))
-        (current-book-index (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
-        (next-book-chapter
-         (-sum )
-         ))
+  (let* ((book (car bible-mode-ref-tuple))
+         (chapter (cadr bible-mode-ref-tuple))
+         (verse (caddr bible-mode-ref-tuple))
+         (current-book-index (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
+         ;; (next-book-chapter
+         ;;  (-sum))
+         )
 
     (+ 1 (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
 
@@ -2045,9 +2048,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                                      (pen-selection))
     (bible-open-version default-bible-mode-book-module)))
 
-;; (define-key global-map (kbd "H-v") 'nasb)
+;; (define-key global-map (kbd "H-v") 'nasb-bible)
 (define-key global-map (kbd "H-v") 'bible-open-default)
-;; (define-key global-map (kbd "H-v") 'rlt)
+;; (define-key global-map (kbd "H-v") 'rlt-bible)
 (define-key bible-mode-map (kbd "v") 'bible-mode-select-module)
 
 (defun pen-bible-set-margins ()
@@ -2161,13 +2164,26 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   ;; (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (bible-open-interlinear) t)))
 
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+  (if (not (>= (prefix-numeric-value current-prefix-arg) 4))
       (setq onelined t))
-  
-  (! etv·snc (cmd
-              (if onelined
-                  "onelined")
-              "get-interlinear" (bible-mode-get-link nil t))))
+
+  (let ((result
+         (snc (cmd
+                     (if onelined
+                         "ocif")
+                     (if onelined
+                         "apply-pipe")
+                     (if onelined
+                         "strongs-codes-relinkify")
+                     (if onelined
+                         "onelined")
+                     "get-interlinear" (bible-mode-get-link nil t)))))
+
+    (if onelined
+        (progn
+          ;; (setq result (snc "strongs-codes-relinkify" result))
+          (etv result 'org-mode))
+      (etv result 'text-mode))))
 
 (defset bible-mode-commentaries
   '(
@@ -2293,12 +2309,36 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         ;; These two need to both be asynchronous
         (universal-sidecar-refresh))))
 
+(defun bible-get-verse-with-strongs ()
+  (interactive)
+
+  (let ((result
+         (snc (cmd
+               "ocif"
+               "apply-pipe"
+               "strongs-codes-relinkify"
+               "apply-pipe"
+               "biblegateway-relinkify"
+               "onelined"
+               "nod"
+               "with-anno"
+               "-a"
+               "sout"
+               ;; (s-lowercase bible-mode-book-module)
+               "nasb"
+               (bible-mode-get-link nil t)))))
+
+    (progn
+      ;; (setq result (snc "strongs-codes-relinkify" result))
+      (etv result 'org-mode))))
+
 (define-key bible-mode-map (kbd "O") 'bible-mode-sidecar-show)
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 (define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
 (define-key bible-mode-map (kbd "Y") 'bible-open-commentary)
 (define-key bible-mode-map (kbd "T") 'bible-interlinear-get-word-blocks)
+(define-key bible-mode-map (kbd "C") 'bible-get-verse-with-strongs)
 (define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
 (define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
@@ -2521,9 +2561,20 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 ;; - Match/findstr
 ;; - Column number
 
+;; (bible-verse-ref-p "John 1:1")
+(defun bible-verse-book-p (s &optional anywhere)
+  (if anywhere
+      (pen-snq "bible-verse-book-p -anywhere" s)
+    (pen-snq "bible-verse-book-p" s)))
+
+;; (bible-verse-book-p "John")
+(defun bible-verse-ref-p (s &optional anywhere)
+  (if anywhere
+      (pen-snq "bible-verse-ref-p -anywhere" s)
+    (pen-snq "bible-verse-ref-p" s)))
 
 ;; TODO Make line permutations first
-(defun bible-verse-ref-at-point-p ()
+(defun bible-verse-refs-at-point ()
   (let* ((line (current-line-string))
          ;;  | pen-sort line-length
          (refs (str2lines (snc "scrape-bible-references" line)))
@@ -2532,16 +2583,20 @@ creating a new `bible-mode' buffer positioned at the specified verse."
       (setq found (or found (regex-at-point ref t))))
     found))
 
+(defun bible-verse-ref-at-point-p ()
+  (let* ((line (current-line-string)))
+    (bible-verse-ref-p line)))
+
 (defun bible-verse-at-point-tpop ()
   (interactive)
-  (bible-mode-tpop (bible-verse-ref-at-point-p)))
+  (bible-mode-tpop (bible-verse-refs-at-point)))
 
 ;; I want to be able to choose what to do with a verse reference
 ;; e.g. bring up cross references
 (defun bible-verse-menu-at-point-tpop ()
   (interactive)
   ;; For the time being, just use fzf
-  (let* ((ref (bible-verse-ref-at-point-p))
+  (let* ((ref (bible-verse-refs-at-point))
          ;; It would be nicer to expand the list of verses,
          ;; rather than simply try to get the first one
          (ref (s-replace-regexp "[-,].*" "" ref))
@@ -2550,7 +2605,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
                 bible-mode-cross-references-ext)
               nil nil (concat ref ":"))))
     (if (sor command)
-        (apply (intern command) (list (bible-verse-ref-at-point-p))))))
+        (apply (intern command) (list (bible-verse-refs-at-point))))))
 
 (defun fz-ddgr-bibleverse (query)
   (interactive (list (read-string-hist "fz-ddgr-bibleverse: " nil nil nil nil t)))

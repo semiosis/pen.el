@@ -55,6 +55,7 @@
 (defset dired-mode-funcs '(tramp-mount-sshfs
                            dired-find-alternate-file
                            dired-narrow
+                           directory-listing-to-csv
                            deer-from-dired
                            dired-narrow-fuzzy
                            open-main
@@ -115,7 +116,10 @@
                          reopen-in-pen-emacs-web-browse
                          rdrview))
 (defset eshell-mode-funcs '(ranger
-                            pcomplete-expand-and-complete))
+                            pcomplete-expand-and-complete
+                            pen-start-term-visual-cmd))
+(defset shell-mode-funcs '(ranger
+                           pen-start-term-visual-cmd))
 (defset calc-mode-funcs '(pen-calc-clear-stack))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
@@ -215,6 +219,7 @@
    'org-html-export-to-html
    'org-latex-export-to-pdf
    'poly-org-mode
+   'pen-reopen-literally
    'insert-figlet-org
    'pen-lsp-open-hover-docs-url
    'idify-org-file
@@ -564,13 +569,24 @@
 ;; is that the binding is overshadowed by a binding in a different mode, such as pen-mode.
 (defun major-mode-functions (&optional mode)
   (interactive)
-  (let* ((modes (parent-mode-list major-mode))
+
+  ;; If 'fundamental-mode', then check the file extension
+  
+  (let* ((mode major-mode)
+         (mode (if (and (equal major-mode 'fundamental-mode)
+                        (f-file-p (buffer-file-name)))
+                   (get-mode-for-file (buffer-file-name))
+                 mode))
+         (modes (parent-mode-list mode))
+         (modestr (sym2str mode))
+         (modesym (intern modestr))
+         (mapsym (intern (concat modestr "-map")))
          (funs
           (if (>= (prefix-numeric-value current-prefix-arg) 4)
               (flatten-list
                (loop for m in modes collect
                      (major-mode-function m)))
-            (append (get-major-mode-functions mode)
+            (append (get-major-mode-functions mapsym)
                     (flatten-list
                      (loop for m in modes collect
                            (major-mode-function m)))))))

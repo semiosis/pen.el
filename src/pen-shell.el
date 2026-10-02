@@ -1,5 +1,7 @@
 (require 'shell)
 
+(setq shell-kill-buffer-on-exit t)
+
 (defun shell-show-env ()
   (interactive)
   (ifi-etv (shell-eval-command "echo 5")))

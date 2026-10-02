@@ -2,6 +2,9 @@
 (require 'help)
 (require 'yasnippet)
 (require 'yasnippet-snippets)
+(require 'ivy-yasnippet)
+(require 'consult-yasnippet)
+(require 'auto-yasnippet)
 
 (setq yas-snippet-dirs
       (-uniq-u
@@ -22,7 +25,22 @@
    ((derived-mode-p 'vterm-mode)
     (pen-yas-insert-snippet-vterm))
    (t
-    (yas-insert-snippet))))
+    (pen-yas-insert-snippet-innerf))))
+
+(defun pen-yas-insert-snippet-innerf ()
+  (interactive)
+
+  (yas-insert-snippet)
+
+  (comment
+   (if (>= (prefix-numeric-value current-prefix-arg) 4)
+       (yas-insert-snippet)
+     ;; Disable until I can be bothered debugging ivy-yasnippet
+     ;; (call-interactively 'ivy-yasnippet)
+     
+     ;; Disable until I can be bothered debugging consult-yasnippet
+     ;; (call-interactively 'consult-yasnippet)
+     )))
 
 (defun pen-yas-insert-snippet-term ()
   (interactive)
@@ -40,7 +58,7 @@
           (save-excursion
             (with-current-buffer b
               (switch-to-buffer b)
-              (yas-insert-snippet))))
+              (pen-yas-insert-snippet-innerf))))
         (setq s (buffer-to-string b))
         (kill-buffer b)))
     (term-send-raw-string s)))
@@ -61,7 +79,7 @@
           (save-excursion
             (with-current-buffer b
               (switch-to-buffer b)
-              (yas-insert-snippet))))
+              (pen-yas-insert-snippet-innerf))))
         (setq s (buffer-to-string b))
         (kill-buffer b)))
     (vterm-insert s)))

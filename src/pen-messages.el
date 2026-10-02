@@ -44,4 +44,13 @@ Activate this advice with:
 ;; (advice-add 'message :after 'message-buffer-goto-end-of-buffer)
 ;; (advice-remove 'message 'message-buffer-goto-end-of-buffer)
 
+
+(defun call-process-around-advice (proc &rest args)
+  (message "call-process called with args %S" args)
+  (let ((res (apply proc args)))
+    (message "call-process returned %S" res)
+    res))
+(advice-add 'call-process :around #'call-process-around-advice)
+(advice-remove 'call-process #'call-process-around-advice)
+
 (provide 'pen-messages)

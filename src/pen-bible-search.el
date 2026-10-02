@@ -3,7 +3,7 @@
 
   (let* ((result (fz (pen-sn (cmd
                               ;; "upd"
-                              "oci" "semantic-bible-search" query))
+                              "ocif" "semantic-bible-search" query))
                      nil nil "Bible: search result: "))
          (text (pen-sn "jq -r .text" result))
          (text (pen-sn "pen-str join ' '" text))

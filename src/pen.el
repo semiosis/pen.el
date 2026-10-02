@@ -76,9 +76,9 @@ without silencing all errors."
       ;; (pen-flash)
       ;; (nav-flash-show)
       (mode-line-bell-flash)
-      (pen-message-no-echo "Suppressed error: %S for context: %s"
+      (pen-message-no-echo "Suppressed error: %S inside %s"
 			               (error-message-string e)
-                           (str ,context)))))
+                           (s-truncate 60 (str ,context))))))
 (defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)
 
 (defun ignore-errors-around-advice (proc &rest args)
@@ -100,6 +100,7 @@ without silencing all errors."
   nil)
 
 (require 'pen-lambda)
+(require 'pen-playing-cards)
 
 (defmacro comment (&rest body) nil)
 ;; (defalias 'comment 'ignore)
@@ -1139,9 +1140,14 @@ Reconstruct the entire yaml-ht for a different language."
 ;; Use my modified version
 (defalias 'pen-list2cmd 'pen-combine-and-quote-strings)
 
-(defun pen-list2cmd-f (l)
+(defun sh/pen-list2cmd-f (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
            nil default-directory))
+
+(defun e/pen-list2cmd-f (l)
+  (mapconcat 'pen-q l " "))
+
+(defalias 'pen-list2cmd-f 'e/pen-list2cmd-f)
 
 (defun combine-and-quote-strings-safe (strings &optional separator)
   "Concatenate the STRINGS, adding the SEPARATOR (default \" \")."
@@ -1228,6 +1234,7 @@ interpretation by shells, use `shell-quote-argument' for that."
   "This uses e:cmd-nice-posix"
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
+    ;; (pen-list2cmd-f (-filter 'identity args))
     (pen-list2cmd-f (-filter 'identity args))))
 
 (defalias 'cmd-f 'pen-cmd-f)
@@ -2581,8 +2588,8 @@ May use to generate code from comments."
 (require 'pen-tmux)
 (require 'pen-looking-glass)
 (if (inside-docker-p)
-(require 'pen-eshell)
-(require 'pen-shell))
+    (require 'pen-eshell))
+(require 'pen-shell)
 (require 'pen-bash-completion)
 (if (inside-docker-p)
 (require 'pen-buffer-state))
@@ -2707,7 +2714,8 @@ May use to generate code from comments."
 (require 'pen-lsp-go)
 (require 'pen-lsp-c)
 (require 'pen-ead)
-;; (require 'pen-basic)
+;; (require 'pen-download-region)
+(require 'pen-basic)
 (if (inside-docker-p)
     (require 'pen-universal-sidecar)
   (require 'pen-sideline))
@@ -2722,6 +2730,7 @@ May use to generate code from comments."
 (require 'pen-calc)
 (require 'pen-magit-margin)
 (require 'pen-vc)
+(require 'pen-language-detection)
 (require 'pen-rpl)
 (require 'pen-ex)
 (require 'pen-window-jump)
@@ -2971,39 +2980,45 @@ May use to generate code from comments."
     `(let ((pen-force-engine "Human"))
        ,',@body)))
 
-(defun pen-edit-fp-on-path (fp &optional no-edit)
+(defun pen-edit-fp-on-path (fp &optional no-edit literally)
   "Edit file given by path. If not found, then look in PATH."
   (interactive (list (read-string-hist "Edit Which: ")))
 
   (if (tramp-tramp-file-p default-directory)
-      (find-file fp)
-      (progn
-        (setq fp (pen-umn fp))
-        (let* ((fp_with_pen (concat "pen-" fp))
-               (found
-                (cond
-                 ((pen-test-f fp) (chomp fp))
-                 ((pen-test-d fp) (chomp fp))
-                 ((pen-snq (pen-cmd "which" fp_with_pen)) (chomp (pen-sn (concat "which " fp_with_pen))))
-                 ((pen-snq (pen-cmd "which" fp)) (chomp (pen-sn (concat "which " fp))))
-                 ((string-match "^/[^:]+:" fp) (chomp fp))
-                 (t (progn (message (concat fp " not found"))
-                           nil)))))
-          (if (not no-edit)
-              (if (and
-                   found
-                   (f-exists-p found))
-                  (find-file found)
-                (let ((dn (f-dirname fp)))
-              
-                  (if (yn (concat "No file located at "
-                                  (q fp)
-                                  ". "
-                                  "Edit path anyway?"))
-                      (progn (if (not (f-dir-p dn))
-                                 (mkdir dn))
-                             (find-file fp)))))
-            found)))))
+      (if literally
+          (pen-find-file-literally fp)
+        (find-file fp))
+    (progn
+      (setq fp (pen-umn fp))
+      (let* ((fp_with_pen (concat "pen-" fp))
+             (found
+              (cond
+               ((pen-test-f fp) (chomp fp))
+               ((pen-test-d fp) (chomp fp))
+               ((pen-snq (pen-cmd "which" fp_with_pen)) (chomp (pen-sn (concat "which " fp_with_pen))))
+               ((pen-snq (pen-cmd "which" fp)) (chomp (pen-sn (concat "which " fp))))
+               ((string-match "^/[^:]+:" fp) (chomp fp))
+               (t (progn (message (concat fp " not found"))
+                         nil)))))
+        (if (not no-edit)
+            (if (and
+                 found
+                 (f-exists-p found))
+                (if literally
+                    (pen-find-file-literally found)
+                  (find-file found))
+              (let ((dn (f-dirname fp)))
+
+                (if (yn (concat "No file located at "
+                                (q fp)
+                                ". "
+                                "Edit path anyway?"))
+                    (progn (if (not (f-dir-p dn))
+                               (mkdir dn))
+                           (if literally
+                               (pen-find-file-literally fp)
+                             (find-file fp))))))
+          found)))))
 (defalias 'pen-edit-which 'pen-edit-fp-on-path)
 (defalias 'pen-ewhich 'pen-edit-fp-on-path)
 (defalias 'pen-ew 'pen-edit-fp-on-path)

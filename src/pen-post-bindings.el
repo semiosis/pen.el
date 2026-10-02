@@ -9,6 +9,8 @@
 (sslk "lVc" 'toggle-chrome)
 (sslk "lVe" 'toggle-chrome-extras)
 
+(make-etui-cmd "elinks" nil)
+
 (sslk "lay" #'workers)
 (sslk "laY" (make-etui-cmd "chkservice" nil))
 (sslk "law" 'aws-instances)
@@ -45,6 +47,10 @@
   (interactive)
   (pen-term-runcmd "nvc" "hhgttg"))
 
+(defun zork ()
+  (interactive)
+  (pen-term-runcmd "nvc" "zork"))
+
 (sslk "lagc" #'crossword)
 (sslk "laga" #'ascii-adventures)
 ;; Text Adventures
@@ -52,6 +58,7 @@
 (sslk "lagxb" #'battlestar)
 (sslk "lagxa" #'bsdgames-adventure)
 (sslk "lagxh" #'hhgttg)
+(sslk "lagxz" #'zork)
 ;; Word games
 (sslk "lagwb" #'boggle)
 (sslk "lagwm" #'maces-game)
@@ -328,7 +335,7 @@
   (sslk "l9" #'search-google-for-doc)
   (sslk "l8" #'google-for-docs)
   (sslk "lgf" 'find-file-at-point)
-  (sslk "lN" 'magit-status)
+  (sslk "lN" 'pen-git-status)
 
   (sslk "ldd" 'pen-dired-documents)
   (sslk "ldn" 'pen-dired-notes)
@@ -417,7 +424,7 @@
                   (define-key ,m (kbd ,(concat k " M-e")) #'pen-revert)
                   (define-key ,m (kbd ,(concat k " M-w")) #'pen-save))))
 
-;; (define-key global-map (kbd "M-m M-m") 'magit-status)
+;; (define-key global-map (kbd "M-m M-m") 'pen-git-status)
 (if (inside-docker-p)
     (progn
       ;; Do these need to be pen-map?
@@ -432,7 +439,7 @@
       ;; it's worth it. I'd have to remove all M-m pen bindings.
       ;; (define-key global-map (kbd "M-m") nil)
       ;; (define-key global-map (kbd "M-m M-m") 'magit-status)
-      (define-key pen-map (kbd "M-m M-m") 'magit-status)
+      (define-key pen-map (kbd "M-m M-m") 'pen-git-status)
       (define-key pen-map (kbd "M-l C-s") #'pen-swipe)
       (define-key pen-map (kbd "M-' C-s") #'pen-swipe)))
 

@@ -258,6 +258,26 @@
                        (ph--make-header)
                      "%b")))))))
 
+(defun pen-advice-add (symbol how function &optional props)
+  (let ((fsym (str2sym (concat "pen-advice-" (sym2str function)))))
+    (eval
+     `(defun ,fsym (body &rest args)
+        (pen-message-no-echo "Running advice on %S" ',symbol)
+        ;; (pen-message-no-echo "Running advice on %S. Body: %S. Args %S" ',symbol body args)
+        (call-function body args)))
+    (advice-add 'ph--make-header :around fsym)))
+
+(defun pen-advice-remove (symbol function)
+  (let ((fsym (str2sym (concat "pen-advice-" (sym2str function)))))
+    (advice-remove 'ph--make-header fsym)))
+ 
+(advice-add 'ph--make-header :around #'ignore-errors-around-advice)
+(advice-remove 'ph--make-header #'ignore-errors-around-advice)
+(comment
+ (pen-advice-add 'ph--make-header :around #'ignore-errors-around-advice)
+ (pen-advice-remove 'ph--make-header #'ignore-errors-around-advice))
+;; (advice-remove 'ph--make-header #'ignore-errors-around-advice)
+
 ;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
 ;; (path-headerline-mode -1)

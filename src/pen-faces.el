@@ -743,6 +743,22 @@ is specified, `:italic' is ignored."
     ;; (face-all-attributes 'markdown-header-face)
     ;; (face-all-attributes 'markdown-header-face-1)
 
+    (require 'hl-line)
+    (require 'pen-hl-line)
+    ;; (set-face-background 'hl-line-esh (face-background 'hl-line))
+    ;; (set-face-foreground 'hl-line-esh (face-foreground 'hl-line))
+    ;; (set-face-background 'hl-line-esh (face-background 'highlight))
+    ;; (set-face-background 'hl-line-esh "#292929")
+    ;; (set-face-foreground 'hl-line-esh 'unspecified)
+    ;; (set-face-background 'hl-line-esh "#390000")
+    ;; (set-face-foreground 'hl-line-esh "#900000")
+    ;; (set-face-background 'hl-line-esh "#393939")
+    ;; (set-face-foreground 'hl-line-esh "#909090")
+    ;; (set-face-background 'hl-line-esh "#151515")
+    ;; (set-face-foreground 'hl-line-esh "#503030")
+    (set-face-background 'hl-line-esh "#303020")
+    (set-face-foreground 'hl-line-esh "#808040")
+
     (require 'sx-question-print)
     (set-face-background 'sx-question-mode-content-face nil)
     (set-face-background 'sx-question-mode-header nil)
@@ -1093,6 +1109,18 @@ is specified, `:italic' is ignored."
   ;; (set-face-foreground 'shadow "#585858")
   (set-face-foreground 'shadow "#303030")
   (set-face-background 'shadow nil)
+
+  ;; (set-face-foreground 'minibuffer-header-face (face-foreground 'header-line-highlight))
+  (set-face-foreground 'minibuffer-header-face "#999999")
+  (set-face-background 'minibuffer-header-face "#111111")
+  
+  (comment
+   (set-face-foreground 'minibuffer-header-face "#d72f4f")
+   (set-face-foreground 'minibuffer-header-face "#999999")
+   (set-face-foreground 'minibuffer-header-face (face-foreground 'header-line-highlight))
+   (set-face-background 'minibuffer-header-face "#111111")
+   (set-face-foreground 'minibuffer-header-face (face-background 'menu))
+   (set-face-background 'minibuffer-header-face (face-foreground 'menu)))
 
   (require 'ivy)
   (set-face-foreground 'ivy-current-match "#262626")

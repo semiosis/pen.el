@@ -60,4 +60,32 @@
 (hl-line-unload-function)
 (global-hl-line-mode)
 
+(defsetface hl-line-esh
+  '((t :inherit hl-line :extend t))
+  "Default face for highlighting the current line in Hl-Line mode."
+  :version "22.1"
+  :group 'hl-line)
+
+(defcustom hl-line-esh-face 'hl-line-esh
+  "Face with which to highlight the current line in Hl-Line mode."
+  :type 'face
+  :group 'hl-line
+  :set
+  (lambda (symbol value)
+	(set symbol value)
+	(dolist (buffer (buffer-list))
+	  (with-current-buffer buffer
+	    (when (overlayp hl-line-overlay)
+	      (overlay-put hl-line-overlay 'face hl-line-esh-face))))
+	(when (overlayp global-hl-line-overlay)
+	  (overlay-put global-hl-line-overlay 'face hl-line-esh-face))))
+
+(defun hl-line-make-overlay ()
+  (let ((ol (make-overlay (point) (point))))
+    (overlay-put ol 'priority hl-line-overlay-priority) ;(bug#16192)
+    (if (major-mode-p 'eshell-mode)
+        (overlay-put ol 'face hl-line-esh-face)
+      (overlay-put ol 'face hl-line-face))
+    ol))
+
 (provide 'pen-hl-line)

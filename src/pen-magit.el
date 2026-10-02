@@ -748,4 +748,14 @@ revisions (interactive.e., use a \"...\" range)."
 (define-key magit-diff-mode-map (kbd "w") 'magit-patch-save-to-clipboard)
 (define-key magit-diff-mode-map (kbd ".") 'magit-patch-apply-from-clipboard)
 
+(defun pen-git-status ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (progn
+        (setq current-prefix-arg nil)
+        (call-interactively 'tig))
+    (progn
+        (setq current-prefix-arg nil)
+        (call-interactively 'magit-status))))
+
 (provide 'pen-magit)

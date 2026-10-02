@@ -267,6 +267,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (and (not (eq s nil))
        (boundp s)))
 
+;; https://stackoverflow.com/questions/35907038/is-there-a-way-to-obtain-the-function-name-of-current-function
 (defun calling-function ()
   "Gets the name of the function you are inside. Does not work for byte-compiled."
   (let ((n 6) ;; nestings in this function + 1 to get out of it
@@ -403,8 +404,11 @@ STRINGS will be evaluated in normal `or' order."
           (substring c 10)
         default-directory)))))
 ;; (defalias 'cwd 'files/pwd)
-(defun cwd ()
-  default-directory)
+(defun cwd (&optional for-shell)
+  (if for-shell
+      ;; To interpret ~/
+      (umn default-directory)
+    default-directory))
 
 (defun tramp-mount-sshfs (&optional tramp-dir)
   (interactive)
@@ -919,6 +923,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
       (if b_unbuffer
           (setq shell-cmd (concat "unbuffer -p " shell-cmd)))
 
+      ;; Do H-u twice to update an snc
       (if (or (or
                (pen-var-value-maybe 'pen-sh-update)
                (>= (prefix-numeric-value current-global-prefix-arg) 16))
@@ -1014,7 +1019,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   (pen-sn shell-cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code shell env-var-tups))
 
 (defun pen-snc (shell-cmd &optional stdin dir)
-  "sn chomp"
+  "sn chomp"  
   (chomp (pen-sn shell-cmd stdin dir)))
 
 (defmacro sh-notty-if (cm then else &rest sh-notty-args)

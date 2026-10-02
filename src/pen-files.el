@@ -58,6 +58,9 @@ extra checks should be done."
     ;;   t)
     ))
 
+(defun get-mode-for-ext (ext &optional alist)
+  (get-mode-for-file (concat "mantissa." ext)))
+
 (comment
  (get-mode-for-file "yo.yuv")
  (get-mode-for-file "README.org"))

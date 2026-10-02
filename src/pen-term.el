@@ -14,6 +14,26 @@
   (interactive (list (read-string-hist "htop filter: ")))
   (pen-term-nsfa (cmd "htop" filter)))
 
+(defun tig (&optional cmd)
+  (interactive (list
+                (let* ((invocation
+                        (fz '("tig"
+                              "tig log"
+                              "tig show"
+                              "tig blame"
+                              "tig grep"
+                              "tig refs"
+                              "tig stash"
+                              "tig status")
+                            nil nil "invoke tig: "))
+                       (args
+                        (read-string-hist (concat invocation " args: "))))
+
+                  (if (sor args)
+                      (concat invocation " " args)
+                    invocation))))
+  (pen-term-nsfa cmd))
+
 (defun ncdu (&optional dir)
   (interactive (list (read-directory-name "ncdu: ")))
   ;; (pen-term-nsfa (cmd "ncdu" dir))
@@ -316,6 +336,15 @@ commands to use in that buffer.
   ;; This is an addition
   (current-buffer))
 
+;; This fixes an issue with the header line displaying after the
+;; term visual command was displayed from eshell.
+(defun term-exec-around-advice (proc buffer name command startfile switches)
+  (let ((res (apply proc (list buffer name command startfile switches))))
+    (ph--display-header)
+    res))
+(advice-add 'term-exec :around #'term-exec-around-advice)
+;; (advice-remove 'term-exec #'term-exec-around-advice)
+
 (defun pen-term (program &optional closeframe modename buffer-name reuse starting-elisp)
   (interactive (list (read-string "program:")))
   (let ((termcmd (pen-var-value-maybe 'pen-termcmd)))
@@ -499,6 +528,7 @@ commands to use in that buffer.
         (ignore-errors (kill-buffer))
       (ignore-errors (pen-kill-buffer-and-window)))))
 
+;; TODO Ensure that I can end a "pet"/"cterm" buffer without killing the frame
 (defun oleh-term-exec-hook ()
   (let* ((buff (current-buffer))
          (proc (get-buffer-process buff)))
@@ -511,7 +541,8 @@ commands to use in that buffer.
               (if (and (variable-p 'termframe-local)
                        termframe-local)
                   (progn
-                    (delete-frame termframe-local t)
+                    (if (yn "pen-term.el (oleh-term-exec-hook): Close frame?")
+                        (delete-frame termframe-local t))
                     (with-current-buffer ,buff (ignore-errors (pen-kill-buffer-and-window))))
                 (with-current-buffer ,buff (ignore-errors
                                              (pen-term-kill-buffer-and-window))))))))))

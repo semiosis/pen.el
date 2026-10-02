@@ -174,13 +174,33 @@ display values."
   (interactive)
   (ekm "M-DEL"))
 
+(defun pen-reopen-literally (filename)
+  ""
+  (interactive (list (buffer-file-name)))
+  (if (f-exists-p filename)
+      filename
+    (ffap-prompter nil " literally"))
+  (let ((ffap-file-finder 'find-file-literally))
+    (find-file-at-point filename)))
+
+(defun pen-find-file-literally (filename)
+  ""
+  (interactive (list (ffap-prompter nil " literally")))
+  (let ((ffap-file-finder 'find-file-literally))
+    (find-file-at-point filename)))
+
 (defun pen-helm-find-files ()
   "Like helm-find-files, but it ignores the thing at point"
   (interactive)
 
   (cd (get-dir))
-  (let ((helm-find-files-ignore-thing-at-point t))
-    (call-interactively 'helm-find-files)))
+  (let ((pa (prefix-numeric-value current-prefix-arg)))
+    (setq current-prefix-arg nil)
+    (if (>= pa 4)
+        (let ((helm-find-files-ignore-thing-at-point t))
+          (call-interactively 'pen-find-file-literally))
+      (let ((helm-find-files-ignore-thing-at-point t))
+        (call-interactively 'helm-find-files)))))
 
 (defun helm-exhaust-candidates (&optional source)
   (let ((buf (new-buffer-from-string "new buf"))

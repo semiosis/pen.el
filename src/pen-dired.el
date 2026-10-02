@@ -345,4 +345,11 @@ read from minibuffer."
 
 (define-key dired-mode-map (kbd "K") 'wdired-change-to-wdired-mode)
 
+(defun directory-listing-to-csv (dirpath)
+  (interactive
+   (list (read-directory-name (format "Dir-To-CSV %s(directory): " "") nil default-directory nil))
+   )
+  (cmd-out-to-tablist-quick
+   (cmd "directory-listing-to-csv" dirpath "1") t))
+
 (provide 'pen-dired)

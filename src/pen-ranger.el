@@ -2,11 +2,38 @@
 
 (setq ranger-key nil)
 
-(defun pen-term-ranger ()
-  (interactive)
-  ;; ranger just doesn't look good in term
-  ;; (pen-term-nsfa (concat "ranger " (pen-q (current-directory))))
-  (pen-nw (concat "ranger " (pen-q (current-directory)))))
+(defalias 'str2sym 'intern)
+
+(defmacro def-term-app-ic (bin &optional firstarg)
+  ""
+  (let* ((binstr (str bin))
+         (defname (concat "pen-term-" binstr))
+         (defsym (str2sym defname))
+         (argstr (str firstarg))
+         (firstarg (str2sym argstr)))
+    `(defun ,defsym (&optional ,firstarg)
+       (interactive)
+       ;; ranger just doesn't look good in term
+
+       (if (>= (prefix-numeric-value current-prefix-arg) 4)
+           (progn (setq ,firstarg (read-directory-name ,(concat binstr " " argstr ": ")))
+                  (setq current-prefix-arg nil)))
+
+       (pen-term-nsfa (concat "tmwr env "
+                              (format "INSIDE_EMACS=%s,term:%s" emacs-version term-protocol-version)
+                              ;; " debug ranger "
+                              ,(concat " " binstr " ")
+                              (pen-q (or
+                                      ,firstarg
+                                      (current-directory t)))))
+       ;; (pen-nw (concat "ranger " (pen-q (current-directory))))
+       )))
+
+(def-term-app-ic ranger path)
+(def-term-app-ic mc dir)
+
+(defalias 'sh/ranger 'pen-term-ranger)
+(defalias 'sh/mc 'pen-term-mc)
 
 (defun pen-spv-ranger ()
   (interactive)
@@ -21,6 +48,14 @@
   (interactive (list default-directory))
   (shell-command (concat "pen-tm -f -d -te sps -c " (pen-q dir) " ncdu")))
 
+;; Now I can do "r ." inside of eshell
+(defun ranger-around-advice (proc &optional path)
+  (if (string-not-empty-nor-nil-p path)
+      (setq path (f-expand path)))
+  (let ((res (apply proc (list path))))
+    res))
+(advice-add 'ranger :around #'ranger-around-advice)
+;; (advice-remove 'ranger #'ranger-around-advice)
 
 ;;; Now emacs ranger
 
@@ -247,7 +282,8 @@ currently selected file in ranger. `IGNORE-HISTORY' will not update history-ring
   ;;   )
   
   ;; Fast enough
-  (e/cat fp nil nil 300))
+  (e/cat fp nil nil (* (window-width)
+                       (window-height))))
 
 (defun ranger-preview-buffer (entry-name)
   "Create the preview buffer of `ENTRY-NAME'.  If `ranger-show-literal'

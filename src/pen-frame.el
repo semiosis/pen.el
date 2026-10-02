@@ -47,7 +47,8 @@
 (defun close-local-termframe ()
   ;; (interactive)
   (if (and (variable-p 'termframe-local)
-           termframe-local)
+           termframe-local
+           (yn "pen-frame.el (close-local-termframe): Close frame?"))
       (delete-frame termframe-local t)))
 (add-hook 'kill-buffer-hook 'close-local-termframe t)
 

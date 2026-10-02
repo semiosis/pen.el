@@ -342,8 +342,13 @@
 
      (point))))
 
+;; [[info:cl#Macros][Emacs Info: cl#Macros]]
+
 (defun info-collect-imenu (&optional min max)
-  "Collect the positions of visible links in the current `Info-mode' buffer."
+  "Collect the positions of visible links in the current `Info-mode' buffer.
+But not just links. Also collect function names, etc.
+[[info:cl#Macros][Emacs Info: cl#Macros]]
+"
   (setq min (or min (point-min)))
   (setq max (or max (point-max)))
 
@@ -383,7 +388,8 @@
   "Different from Info-menu which lists the headings only."
   (interactive)
 
-  (let* ((imenu-create-index-function (eval `(lambda () (info-collect-imenu ,(point-min) ,(point-max))))))
+  (let* ((imenu-create-index-function
+          (eval `(lambda () (info-collect-imenu ,(point-min) ,(point-max))))))
     (helm-imenu)))
 
 (defun eww-imenu ()

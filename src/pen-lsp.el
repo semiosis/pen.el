@@ -12,6 +12,25 @@
 (require 'lsp-headerline)
 (require 'pen-lsp-common-lisp)
 
+;; (setq lsp-clients-vim-executable
+;;       '("vim-language-server" "--stdio"))
+(setq lsp-clients-vim-executable
+      '("vimls"))
+
+(lsp-register-client
+ (make-lsp-client :new-connection (lsp-stdio-connection
+                                   (lambda ()
+                                     `(,(or (executable-find (cl-first lsp-clients-vim-executable))
+                                            (lsp-package-path 'vim-language-server))
+                                       ,@(cl-rest lsp-clients-vim-executable))))
+                  :major-modes '(vimrc-mode)
+                  :priority -1
+                  :server-id 'vimls
+                  :initialization-options (lambda () lsp-clients-vim-initialization-options)
+                  :download-server-fn (lambda (_client callback error-callback _update?)
+                                        (lsp-package-ensure 'vim-language-server
+                                                            callback error-callback))))
+
 (defun lsp-graphql-activate-p (filename &optional _)
   "Check if the GraphQL language server should be enabled based on FILENAME."
   (comment

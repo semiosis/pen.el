@@ -113,6 +113,7 @@
 (add-to-list 'auto-mode-alist '("\\.screenrc\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.editorconfig" . editorconfig-conf-mode))
 (add-to-list 'auto-mode-alist '("\\.latexrc\\'" . latex-mode))
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
 (add-to-list 'auto-mode-alist '("\\pylintrc\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\yarn\\.lock\\'" . yarn-mode))
 (add-to-list 'auto-mode-alist '("\\.rcp\\'" . emacs-lisp-mode))

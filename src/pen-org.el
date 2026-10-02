@@ -81,7 +81,7 @@ If FILEXT is provided, return files with extension FILEXT instead."
 
 (setq org-blank-before-new-entry '((heading . t) (plain-list-item . t)))
 (setq org-todo-keywords
-      '((sequence "TODO" "|" "DONE" "DISCARD" "FAILED"
+      '((sequence "TODO" "|" "DONE" "INCOMPLETE" "DISCARD" "FAILED"
                   "IDEA")))
 
 (defvar docsdir (f-join penconfdir "documents"))

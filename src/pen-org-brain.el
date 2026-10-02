@@ -679,12 +679,12 @@ Update the `org-id-locations' global hash-table, and update the
   ;;           (mapcar
   ;;            'org-brain-name-from-list-maybe
   ;;            (org-brain-parents org-brain--vis-entry)))))
+  ;; pen-list2str
   (s-join " "
-    (pen-list2str
-           (org-brain-remove-irrelevant-names-from-path
-            (mapcar
-             'org-brain-name-from-list-maybe
-             (org-brain-parents org-brain--vis-entry))))))
+          (org-brain-remove-irrelevant-names-from-path
+           (mapcar
+            'org-brain-name-from-list-maybe
+            (org-brain-parents org-brain--vis-entry)))))
 
 (defun org-brain-current-name (&optional unslugify)
   (let ((cn

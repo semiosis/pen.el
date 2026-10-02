@@ -549,7 +549,8 @@ This function doesn't really like it when you put 'sp' as the editor."
   "tvipe detached"
   ;; body
   ;; (eval `(pen-nil (pen-tvipe ,@args :editor "colvs" :tm_wincmd "sps" :b-quiet t :b-nowait t)))
-  `(pen-nil (pen-tvipe ,@args :editor "colv" :tm_wincmd "sps" :b-quiet t :b-nowait t)))
+  ;; `(pen-nil (pen-tvipe ,@args :editor "colv" :tm_wincmd "sps" :b-quiet t :b-nowait t))
+  `(pen-nil (pen-tvipe ,@args :editor "v" :tm_wincmd "sps" :b-quiet t :b-nowait t)))
 
 (defmacro qtvd (&rest args)
   "Quiet tvd"

@@ -1,27 +1,28 @@
 (defset pen-term-modes-commands '(tmux
-                                 asciimation
-                                 ncdu br
-                                 octotui
-                                 gpg-tui
-                                 tig
-                                 github-stats
-                                 gq vim
-                                 rubiks_cube k9s
-                                 chkservice lazydocker
-                                 rat irssi
-                                 nano mc
-                                 weechat sen
-                                 zsh dive
-                                 tpb df-bay12)
-  "A list of commands to create term minor modes for")
+                                  asciimation
+                                  elinks
+                                  ncdu br
+                                  octotui
+                                  gpg-tui
+                                  tig
+                                  github-stats
+                                  gq vim
+                                  rubiks_cube k9s
+                                  chkservice lazydocker
+                                  rat irssi
+                                  nano mc
+                                  weechat sen
+                                  zsh dive
+                                  tpb df-bay12)
+        "A list of commands to create term minor modes for")
 
 (defun make-etui-cmd (pen-cmd closeframe)
   "This function expects a one term command (binary name only) and it returns a new interactive function."
-  (let ((funname (concat "esh-" cmd)))
+  (let ((funname (concat "esh-" pen-cmd)))
     (eval `(defun ,(intern funname) (&rest args)
              "This function expects a one term command (binary name only)."
              (interactive)
-             (pen-term-nsfa (mapconcat 'pen-q (cons ,cmd args) " ") nil ,cmd ,closeframe)))))
+             (pen-term-nsfa (mapconcat 'pen-q (cons ,pen-cmd args) " ") nil ,pen-cmd ,closeframe)))))
 
 (defmacro defcmdmode (pen-cmd &optional cmdtype)
   (setq cmd (str cmd))

@@ -305,6 +305,9 @@ values to copy the link to the clipboard and/or primary as well."
                  (t
                   (buffer-string))))
 
+         (discard
+          (f-write input 'utf-8 tempf))
+
          ;; Because this always needs a file, I should just simplify all this by creating a temp file
          (tuples (pen-eval-string
                   (concat
@@ -315,9 +318,9 @@ values to copy the link to the clipboard and/or primary as well."
                    ")"))))
 
     ;; Only delete it if it is a temp file
-    (if (and (stringp tempf)
-             (f-file-p tempf))
-        (f-delete tempf))
+    ;; (if (and (stringp tempf)
+    ;;          (f-file-p tempf))
+    ;;     (f-delete tempf))
 
     (-filter (lambda (tp) (and
                            (>= (cdr tp) winstart)
