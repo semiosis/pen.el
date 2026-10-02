@@ -230,6 +230,7 @@ The arguments are in English like this:
 (require 'iedit)
 (require 'ht)
 (require 'helm)
+(require 'pen-com)
 (require 'memoize)
 (require 'ivy)
 (require 's)
