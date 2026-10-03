@@ -39,17 +39,16 @@
 
 (defun com/apply-pipe (filter-script &rest args)
   (let ((filter-script-sym
-         (and (stringp filter-script-sym)
+         (and (stringp filter-script)
               (str2sym (concat "filter/" filter-script))))
         (input (apply 'com/run args)))
     (cond
-     ((listp filter-script)
-      (let ((com-filter-sym (str2sym (concat "com/" (str (car filter-script))))))
-        ;; (macrop com-filter-sym)
-        (eval `(append ,filter-script ,(list input)))))
+     ;; ((listp filter-script)
+     ;;  (let ((com-filter-sym (str2sym (concat "com/" (str (car filter-script))))))
+     ;;    ;; (macrop com-filter-sym)
+     ;;    (eval `(append ,filter-script ,(list input)))))
      ((functionp filter-script-sym)
-      (apply filter-script-sym (list input))
-      )
+      (apply filter-script-sym (list input)))
      (t (snc filter-script input)))))
 
 (comment
@@ -57,7 +56,9 @@
  ;; (com/run "apply-pipe" '(join -d "-" -d "=") "apply-pipe" "q" "apply-pipe" "split-space" "current-line-string")
  (com/apply-pipe "q" "current-line-string")
  (com/apply-pipe "split-space" "current-line-string")
- (filter/split-space (com/current-line-string)))
+ (filter/split-space (com/current-line-string))
+ (com/run "join" :d "-" "split" :d " " "current-line-string")
+ (pipeline-rl replace-line join :d "-" split :d " " current-line-string))
 
 (defun com/current-line-string (&rest args)
   (current-line-string))
@@ -77,10 +78,36 @@
    (let ((results (getopts "d:" args)))
      results)))
 
-(defmacro mac/join (&rest args)
+(comment
+ ;; I don't think this has to be a macro
+ (defmacro mac/join (&rest args)
+   (let ((input (-last-item args))
+         (args (-drop-last 1 args)))
+     (setq args (append (list "d:") (mapcar 'str args)))
+     (let* ((results ;; (apply 'getopts `,@args)
+             (eval `(funcall 'getopts ,@args)))
+            (results (mapcar (lambda (e)
+                               (list (str2sym (car e))
+                                     (cadr e)))
+                             results)))
+
+       `(let* ,(append '((d ","))
+                       `,results)
+          (s-join d (s-split "\n" ,input)))))))
+
+;; I might not even need parentheses
+;; pipeline-rl replace-line join :d "-" split :d " " current-line-string
+;; It shouldn't be that merely the last item is the input.
+;; But rather, the arguments not used by getopts are the input command.
+(defun com/join (&rest args)
   (let ((input (-last-item args))
         (args (-drop-last 1 args)))
-    (setq args (append (list "d:") (mapcar 'str args)))
+    (setq args (append (list "d:") (mapcar
+                                    (lambda (e)
+                                      (if (keywordp e)
+                                          (s-replace ":" "-" (str e))
+                                        (str e)))
+                                    args)))
     (let* ((results ;; (apply 'getopts `,@args)
             (eval `(funcall 'getopts ,@args)))
            (results (mapcar (lambda (e)
@@ -88,12 +115,13 @@
                                     (cadr e)))
                             results)))
 
-      `(let* ,(append '((d ","))
-                      `,results)
-         (s-join d (s-split "\n" ,input))))))
+      (eval
+       `(let* ,(append '((d ","))
+                       `,results)
+          (s-join d (s-split "\n" ,input)))))))
 
 (comment
- (mac/join -d "-" -d "=" "input\nyo"))
+ (com/join :d "-" :d "=" "input\nyo"))
 
 ;; (apply 'getopts '("a:b:c" "-a" "A"))
 
