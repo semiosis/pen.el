@@ -276,6 +276,23 @@
       (call-interactively 'openai-correct-word)
     (call-interactively 'flyspell-auto-correct-word)))
 
+(defun wordincontext (&optional word)
+  (interactive
+   (list
+    (if (selected-p)
+        (pen-selection)
+      (fz (snc "ocif list-words | shuf") nil nil "Wordnet word: "))))
+  
+  (comment
+   (ifi-etv
+    (pen-snc (cmd "elinks-dump" (format
+                                 "https://wordincontext.com/en/%s"
+                                 word)))))
+
+  (w3m (format
+        "https://wordincontext.com/en/%s"
+        word)))
+
 (define-key selected-keymap (kbd "Z n") 'ngram-query-replace)
 (define-key selected-keymap (kbd "Z S") 'sps-play-spacy)
 (define-key selected-keymap (kbd "Z M") 'etv-summarize)
@@ -288,6 +305,7 @@
 (define-key selected-keymap (kbd "Z N") 'etv-sentiment)
 (define-key selected-keymap (kbd "Z G") 'etv-segment-sentences)
 (define-key selected-keymap (kbd "Z O") 'etv-noun-chunks)
+(define-key selected-keymap (kbd "Z C") 'wordincontext)
 (define-key selected-keymap (kbd "Z d g") 'google-define)
 (define-key global-map (kbd "H-S") 'sps-play-spacy)
 

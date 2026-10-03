@@ -133,6 +133,6 @@ widget.  If FILTER is nil, ACTION is always valid.")
 (define-key pen-map (kbd "M-l M-q M-v") 'customize-variable)
 (define-key pen-map (kbd "M-l M-q M-g") 'customize-group)
 (define-key pen-map (kbd "M-l M-q M-c") 'customize-group)
-(define-key pen-map (kbd "M-l M-q M-o") 'customize-apropos)
+(define-key pen-map (kbd "M-l M-q M-a") 'customize-apropos)
 
 (provide 'pen-custom-conf)

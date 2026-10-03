@@ -933,7 +933,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                (>= (prefix-numeric-value current-prefix-arg) 16)))
           (setq shell-cmd (concat "export UPDATE=y; " shell-cmd)))
 
-      (setq shell-cmd (concat ". $HOME/.shellrc; " shell-cmd))
+      (setq shell-cmd (concat ". $HOME/.shellrc; set -o pipefail; " shell-cmd))
 
       (setq tf_output (make-temp-file (concat slug "_output_") nil ".txt"))
       (setq tf_exit_code (make-temp-file (concat slug "_exit_code_") nil ".txt"))

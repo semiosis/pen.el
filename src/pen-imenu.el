@@ -401,7 +401,10 @@ But not just links. Also collect function names, etc.
 (add-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
 (remove-hook 'Info-mode-hook (lambda () (setq-local imenu-create-index-function #'info-collect-imenu)))
 
+;; Seems to break ranger inside ~/notes/
+;; ranger:~/notes/
 (advice-add 'imenu-list-update :around #'ignore-errors-around-advice)
+;; (advice-remove 'imenu-list-update #'ignore-errors-around-advice)
 
 (define-key global-map (kbd "H-L") 'pen-toggle-show-imenu-list)
 (define-key imenu-list-major-mode-map (kbd "n") 'imenu-preview-next)

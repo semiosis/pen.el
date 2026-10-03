@@ -1582,7 +1582,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-mode-cross-references (ref)
   (interactive (list
                 (let ((current-prefix-arg nil))
-                  (bible-mode-get-link (thing-at-point 'line t)))))
+                  (bible-verse-refs-at-point)
+                  ;; (bible-mode-get-link (thing-at-point 'line t))
+                  )))
+
+  ;; (setq ref (snc "canonicalise-bible-ref" ref))
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (let ((current-prefix-arg nil))
         (bible-mode-cross-references-ext ref))
@@ -1988,6 +1992,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "m" 'bible-mode-select-module)
 ;; (define-key bible-mode-map "x" 'bible-mode-split-display)
 (define-key bible-mode-map "x" 'bible-mode-cross-references)
+(define-key bible-mode-map "t" 'bible-verse-at-point-tpop)
+(define-key bible-mode-map "u" 'bible-verse-menu-at-point-tpop)
 (define-key bible-mode-map "l" 'bible-mode-lookup-ref)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
@@ -2588,6 +2594,10 @@ creating a new `bible-mode' buffer positioned at the specified verse."
     (bible-verse-ref-p line)))
 
 (defun bible-verse-at-point-tpop ()
+  (interactive)
+  (bible-mode-tpop (bible-verse-refs-at-point)))
+
+(defun go-tobible-verse-at-point ()
   (interactive)
   (bible-mode-tpop (bible-verse-refs-at-point)))
 

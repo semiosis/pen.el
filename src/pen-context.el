@@ -148,7 +148,9 @@
                (button-show-properties-here))
               (((bible-verse-ref-at-point-p))
                (bible-verse-at-point-tpop
-                bible-verse-menu-at-point-tpop))
+                bible-verse-menu-at-point-tpop
+                bible-mode-lookup
+                bible-mode-cross-references))
               (((widget-at (point)))
                (pen-widget-get-value-at-point
                 pen-widget-show-keymap-at-point))
@@ -262,5 +264,7 @@
 (defun pen-edit-context ()
   (interactive)
   (pen-find-thing 'pen-context-tuples))
+
+(define-key pen-map (kbd "M-l M-q M-o") 'context-functions)
 
 (provide 'pen-context)
