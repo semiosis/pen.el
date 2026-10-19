@@ -88,10 +88,10 @@ pl() {
     printf -- "%s\n" "$@"
 }
 
-upd() {
-    export UPDATE=y
-    "$@"
-}
+# upd() {
+#     export UPDATE=y
+#     "$@"
+# }
 
 fupd() {
     local FUNCTION_UPDATE=y

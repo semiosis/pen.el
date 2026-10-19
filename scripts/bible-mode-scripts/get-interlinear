@@ -3,19 +3,100 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-if test "$#" -eq 3; then
-    book="$1"
-    chapter="$2"
-    verse="$3"
-else
-    argstr="$@"
+# This had issues:
+# get-interlinear I Samuel 1:8
 
-    book="$(p "$argstr" | cut -d : -f 1 | sed 's/^\(.*\) [0-9:]\+$/\1/')"
-    chapter="$(p "$argstr" | cut -d : -f 1 | sed 's/^.* \([0-9:]\+\)$/\1/')"
-    verse="$(p "$argstr" | cut -d : -f 2)"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -triarg) {
+        export INT_SCRIPT_ARG_FORMAT=triarg
+        shift
+    }
+    ;;
 
-    test -n "$book" && test -n "$chapter" && test -n "$verse" || exit 1
+    -1l) {
+        ONELINED=y
+        shift
+    }
+    ;;
+
+    -st) {
+        export WITH_LINKS=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+arg_s="$@"
+
+if printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]'; then
+    shift "$#"
+
+    IFS="
+    "
+    enumerate-bible-verse-refs "$arg_s" | awk1 | {
+        while IFS="$IFS" read -r ref; do
+            (
+            exec 0</dev/null
+            int "$ref"
+            )
+        done
+    } | pavs
+    exit "$?"
 fi
+
+case "$INT_SCRIPT_ARG_FORMAT" in
+    triarg) {
+        book="$1"
+        chapter="$2"
+        verse="$3"
+    }
+    ;;
+
+    *) {
+        book="$(printf -- "%s " "$arg_s" | scrape-bible-references -b)"
+        wholeref="$(printf -- "%s " "$arg_s" | scrape-bible-references -v)"
+        chapversepart="$(printf -- "%s\n" "$wholeref" | sed "s~^${book} *~~")"
+        chapter="$(printf -- "%s" "$chapversepart" | cut -d : -f 1)"
+        verse="$(printf -- "%s" "$chapversepart" | cut -d : -f 2)"
+
+        book="$(p "$book" | canonicalise-bible-book-title)"
+    }
+    ;;
+esac
+
+if test "$INSIDE_EMACS" = "y" || btest "$INSIDE_EMACS" == "*,*"; then
+    NOEMACS=y
+    exec 2>/dev/null
+fi
+
+# taken from e:ebible
+if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',eshell$'; then
+    export NOEMACS=y
+    export BORDER=n
+    # export ONELINED=y
+    export DECORATED=y
+    # isstdoutpipe=0
+    export NO_PAGER=y
+    export ORG_TEMPLATIFY=y
+fi
+
+# if test "$#" -eq 3; then
+# else
+#     argstr="$@"
+# 
+#     book="$(p "$argstr" | cut -d : -f 1 | sed 's/^\(.*\) [0-9:]\+$/\1/')"
+#     chapter="$(p "$argstr" | cut -d : -f 1 | sed 's/^.* \([0-9:]\+\)$/\1/')"
+#     verse="$(p "$argstr" | cut -d : -f 2)"
+# 
+#     test -n "$book" && test -n "$chapter" && test -n "$verse" || exit 1
+# fi
+
+test -n "$book" && test -n "$chapter" && test -n "$verse" || exit 1
+
+ref="$(printf -- "%s\n" "$book ${chapter}:${verse}")"
 
 book="$(printf -- "%s" "$book" |
     tr '[:upper:]' '[:lower:]' |
@@ -28,5 +109,28 @@ book="$(printf -- "%s" "$book" |
     )"
 
 url="$(printf -- "https://biblehub.com/interlinear/%s/%s-%s.htm" "$book" "$chapter" "$verse")"
+link="[[$url][$ref]]"
 
-ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | pavs
+org_templatify_maybe() {
+    if test "$ORG_TEMPLATIFY" = "y"; then
+        pen-org-template-gen org
+    else
+        cat
+    fi
+}
+
+# ocif -m "ONELINED=$ONELINED" spin "biblehub-interlinear-get-word-blocks-pipeline" "$url" | pavs
+{
+    {
+        printf -- "%s\n" "+ ${link} (Interlinear) :: " | awk 1
+        ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | awk 1 | sed 's/^/    /' | sed 's/ \+$//'
+    } | {
+        if test "$WITH_LINKS" = "y"; then
+            strongs-codes-relinkify
+        else
+            cat
+        fi
+    } | {
+        org_templatify_maybe | ebible-pager
+    }
+} | pavs

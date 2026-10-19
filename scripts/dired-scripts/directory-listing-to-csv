@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+. $SCRIPTS/lib/hs
+
+dir="$1"
+: "${dir:="."}"
+
+dir="$(realpath "$dir")"
+
+maxdepth="$2"
+: "${maxdepth:="1"}"
+
+
+{
+printf -- "\"Path\"\t\"Modification time locale\"\t\"Bytes\"\t\"Permissions\"\n"
+"find" "$dir" -maxdepth "$maxdepth" "-printf" "\"%p\"\\t\"%Tc\"\\t\"%s\"\\t\"%M\"\\n"
+} | pavs

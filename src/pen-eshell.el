@@ -210,12 +210,6 @@ list of (fn args) to pass to `apply''"
                (define-key eshell-mode-map [down] 'next-line)
                ;; (define-key eshell-mode-map (kbd "M-r") 'ranger)
 
-               ;; eshell-previous-matching-input
-               (define-key eshell-hist-mode-map (kbd "M-r") nil)
-               (define-key eshell-hist-mode-map (kbd "M-p") 'eshell-previous-matching-input-from-input)
-               (define-key eshell-hist-mode-map (kbd "M-n") 'eshell-next-matching-input-from-input)
-               (define-key eshell-hist-mode-map (kbd "<up>") nil)
-               (define-key eshell-hist-mode-map (kbd "<down>") nil)
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
                 ;; (define-key eshell-cmpl-mode-map (kbd "C-c TAB") 'pcomplete-expand-and-complete)
@@ -223,6 +217,16 @@ list of (fn args) to pass to `apply''"
 
                (define-key eshell-mode-map
                            (kbd "M-R") 'eshell-previous-matching-input))))
+(add-hook 'eshell-hist-mode-hook
+          '(lambda ()
+             (progn
+               ;; eshell-previous-matching-input
+               (define-key eshell-hist-mode-map (kbd "M-r") nil)
+               (define-key eshell-hist-mode-map (kbd "M-p") 'eshell-previous-matching-input-from-input)
+               (define-key eshell-hist-mode-map (kbd "M-n") 'eshell-next-matching-input-from-input)
+               (define-key eshell-hist-mode-map (kbd "<up>") nil)
+               (define-key eshell-hist-mode-map (kbd "<down>") nil))))
+
 
 (defun pen-close-eshell-window-when-dead ()
   (when (not (one-window-p))
@@ -295,6 +299,11 @@ or an external command."
       (eshell arg))
     ;; (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*"))
     ))
+
+;; This is needed for the eshell function to return and for eshell-unique to return the desired value
+;; (advice-add 'eshell-mode :around #'ignore-errors-around-advice)
+;; (advice-remove 'eshell-mode #'ignore-errors-around-advice)
+(advice-add 'eshell-mode :around #'ignore-errors-and-shut-up-around-advice)
 
 (defun e/nw (&rest args)
   "First arg is an elisp function.
@@ -595,6 +604,18 @@ Any extra args go to that function"
   (pen-ewhich (car args) nil t))
 (defalias 'eshell/il 'eshell/pil)
 
+(defun eshell/upd (&rest args)
+  ;; Firstly, fix the arguments
+  (setq args (mapcar 'str args))
+  (let (;; (current-global-prefix-arg '(4))
+        ;; (current-prefix-arg '(4))
+        ;; for cacheit
+        (pen-sh-update t)
+        ;; for memoize
+        (do-pen-update t))
+    (pen-eshell-escolorize-err-lines
+     (pen-snc (apply 'cmd (append (list "mixstdoutstderr" "-nooutlabel" "com" "env" (format "%s=%s" "INSIDE_EMACS" eshell-inside-emacs)) args))))))
+
 (defun eshell/ncdu (&rest args)
   "term ncdu"
 
@@ -818,6 +839,20 @@ Any extra args go to that function"
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
 
+
+(comment
+ ;; Can't do it here because eshell-output-filter-functions processes the output in chunks
+ (defun eshell-ensure-awk1 ()
+   (shell-command-on-region
+    eshell-last-output-start
+    (- eshell-last-output-end 1)
+    "tv"))
+ (advice-add 'eshell-ensure-awk1 :around #'ignore-errors-around-advice)
+
+ (add-to-list 'eshell-output-filter-functions 'eshell-ensure-awk1 t)
+ (remove-from-list 'eshell-output-filter-functions 'eshell-ensure-awk1))
+
+
 ;; Can't use this because the filter doesn't process the entire
 ;; output in a single string, but dripfeeds it
 (comment
@@ -839,6 +874,46 @@ Any extra args go to that function"
 (advice-add 'eshell-make-output-readonly :around #'ignore-errors-around-advice)
 
 (add-to-list 'eshell-output-filter-functions 'eshell-make-output-readonly t)
+
+(defset eshell-finaloutput-filter-scripts '("awk1" "sed 's/[aeiou]/_/g'" "chomp" "awk1"))
+(defset eshell-finaloutput-filter-scripts '("awk1"))
+(comment
+ (sn (apply 'cmd (append (list "multipipe") eshell-finaloutput-filter-scripts)) "yo")
+ (sn (pen-nsfa (apply 'cmd (append (list "multipipe") eshell-finaloutput-filter-scripts))) "yo"))
+
+;; The trouble is, this actually removes ansi color
+;; from colorised shell output.
+(defun eshell-filter-finaloutput ()
+  ;; j:eshell/mode-cat
+
+  (save-excursion
+    (let ((end (progn (beginning-of-line)
+                      (point)))
+          (start (progn (eshell-previous-prompt 1)
+                        (next-line)
+                        (beginning-of-line)
+                        (point)))
+          (inhibit-read-only t))
+
+      (let ((result (region2string start
+                                   (- end 1))))
+        ;; (tv (pen-encode-string result 2))
+        (progn (pen-region-pipe
+                (pen-nsfa
+                 (apply 'cmd (append (list "multipipe") eshell-finaloutput-filter-scripts))
+                 nil nil nil t)
+                start
+                (- end 1))
+               (goto-char (- end 1))
+               ;; (insert "\n")
+               )
+        ;; (pen-region-filter 'pen-highlight-as-org)
+        ;; (pen-region-filter 'pen-highlight-as-org 468 744)
+        ))))
+
+(comment
+ (add-to-list 'eshell-post-command-hook 'eshell-filter-finaloutput t)
+ (remove-from-list 'eshell-post-command-hook 'eshell-filter-finaloutput))
 
 (defun eshell-filter-finaloutput-colorise-maybe ()
   ;; j:eshell/mode-cat
@@ -1834,5 +1909,8 @@ newline."
 (define-key eshell-mode-map (kbd "M-y M-k") 'pen-eshell-avy-copy-directory-and-command)
 (define-key eshell-mode-map (kbd "M-a M-r") 'ranger)
 (define-key eshell-mode-map (kbd "M-y d") 'pen-eshell-copy-directory-from-prompt)
+
+;; (define-key eshell-proc-mode-map (kbd "C-c C-\\") 'eshell-quit-process)
+(define-key eshell-proc-mode-map (kbd "C-c C-\\") nil)
 
 (provide 'pen-eshell)

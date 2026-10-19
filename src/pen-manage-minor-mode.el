@@ -97,7 +97,16 @@
          (on header-line-indent-mode))
 
         (sh-mode
-         (off org-link-minor-mode))
+         ;; Why was this set to off?
+         
+         ;; (off org-link-minor-mode)
+         (on org-link-minor-mode))
+
+        ;; Why does bash-mode not like the org-link syntax?
+        ;; But this style works:
+        ;; # [e:expand-bash-preprocessor]
+        (sh-base-mode
+         (on org-link-minor-mode))
 
         ;; (hypertext-mode
         ;;  (on org-link-minor-mode))

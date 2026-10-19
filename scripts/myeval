@@ -22,6 +22,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -askuserifemacs) {
+        ask_user_if_emacs=y
+        shift
+    }
+    ;;
+
     -tvnw|-tvsp[hvs]) {
         DO_TV=y
         TV_TYPE="$(printf -- "%s" "$opt" | sed 's/^-tv//')"
@@ -71,6 +77,11 @@ else
         CMD="$1"
     else
         CMD="$(cmd "$@")"
+    fi
+
+    if test "$ask_user_if_emacs" = "y" && tpop-yn "Is this tmux split inside emacs?"; then
+        : "${INSIDE_EMACS:="y"}"
+        CMD="env INSIDE_EMACS=$(aqf "$INSIDE_EMACS") $CMD"
     fi
 
     if test "$DO_TV" = "y"; then

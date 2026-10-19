@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# apply
+
+c="$(printf -- "%s\n" "$@" | q -f -l | sed "s/^/eval /" | s join ' | ')"
+
+eval "$c"

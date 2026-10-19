@@ -7,7 +7,7 @@ export TTY
 # . $SCRIPTS/lib/hs
 
 # Run the preprocessor on any opened file
-# expand-bash-preprocessor
+# [e:expand-bash-preprocessor]
 
 # export BASH_ENV=$HOME/.scriptrc
 

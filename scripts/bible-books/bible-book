@@ -12,8 +12,12 @@ sn="$(basename -- "$0")"
 . $PENELD/scripts/utils.sh
 
 if ! { test "$istty" = 0 || test "$isstdoutpipe" = 0; }; then
-    # e.g. (pen-snc "1John")
-    in-pen unbuffer xt in-tm "$sn" "$@" & disown
+    if is_emacs_shell; then
+        "$sn" "$@" | cat
+    else
+        # e.g. (pen-snc "1John")
+        in-pen unbuffer xt in-tm "$sn" "$@" & disown
+    fi
     exit "$?"
 fi
 

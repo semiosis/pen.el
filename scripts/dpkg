@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+set -o pipefail
+
+mixstdoutstderr -nolabel1 /usr/bin/dpkg "$@" | pavs
+

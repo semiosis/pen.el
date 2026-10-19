@@ -3,6 +3,8 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+# cmd1 xelatex "$@" | tv &>/dev/null
+
 # e:pdflatex
 
 test "$#" -gt 0 && last_arg="${@: -1}"

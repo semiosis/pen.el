@@ -21,6 +21,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -m) {
+        export ZREPL_MESSAGE="$2"
+        shift
+        shift
+    }
+    ;;
+
     -cm) {
         cm=y
         shift

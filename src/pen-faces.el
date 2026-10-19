@@ -593,8 +593,9 @@ is specified, `:italic' is ignored."
   (global-auto-highlight-symbol-mode 1)
   ;; Keep it at 0.2 so that as I am typing, it doesn't flicker
   (setq ahs-idle-interval 0.2)
-  (let ((bg "#151515")
-        (fg "#333333"))
+  (let ((bg "#301530")
+        ;; (fg "#c03030")
+        (fg "#c05050"))
     (set-face-attribute
      'ahs-plugin-default-face nil
      :inverse-video nil
@@ -603,8 +604,9 @@ is specified, `:italic' is ignored."
      :bold t)
     (set-face-attribute
      'ahs-plugin-default-face-unfocused nil
-     :inverse-video nil
+     ;; :inverse-video t
      :background bg
+     :underline t
      :foreground fg
      :bold t)
     (set-face-attribute
@@ -615,7 +617,8 @@ is specified, `:italic' is ignored."
      :bold t)
     (set-face-attribute
      'ahs-face-unfocused nil
-     :inverse-video nil
+     ;; :inverse-video t
+     :underline t
      :background bg
      :foreground fg
      :bold t))
@@ -1547,6 +1550,7 @@ Also see option `magit-blame-styles'."
 
   (message "Running pen-disable-all-faces")
 
+  (pen-save-faces)
   ;; Optimise this check later
   (if (or t (not pen-black-and-white))
       (progn
@@ -1555,16 +1559,27 @@ Also see option `magit-blame-styles'."
         (setq lsp-ui-peek-fontify 'never)        
         (pen-rc-set "black_and_white" "on")
 
+        ;; This needs to be done early on
+        (loop for fr in (frame-list)
+              do
+              (progn
+                (set-face-foreground 'default 'unspecified)
+                (set-face-background 'default 'unspecified)
+
+                (with-selected-frame fr
+                  (set-foreground-color 'unspecified)
+                  (set-background-color 'unspecified))))
         ;; (global-hl-line-mode -1)
+
         (add-hook 'dired-mode-hook 'enable-hl-line-mode)
 
         (advice-remove 'internal-set-lisp-face-attribute #'internal-set-lisp-face-attribute-around-advice)
 
         ;; (etv (pps (frame-face-alist)))
-
         ;; This will set a default black/white
         ;; But it's best if I use .Xresources
         ;; Keep them unspecified here
+
         (let ((class '((class color) (min-colors 89)))
               ;; (bg1 "#262626")
               ;; (base "#b2b2b2")
@@ -1574,9 +1589,9 @@ Also see option `magit-blame-styles'."
            ;; 'spacemacs-light
            'spacemacs-dark
            `(default ((,class (:background ,bg1 :foreground ,base))))))
-
         ;; Where do these values come from?
         ;; "#b2b2b2" "#262626"
+
         (cl-loop for fr in (frame-list)
                  do
                  ;; (set-face-foreground 'default 'unspecified fr)
@@ -1611,8 +1626,8 @@ Also see option `magit-blame-styles'."
                        ;; White is whiter than the default white.
                        ;; (set-foreground-color "White")
                        (set-background-color "#000000")))))
-
         ;; Did this annihilate the frame dimensions?
+
         (setq default-frame-alist
               '(;; (set-background-color "#1e1e1e")
                 ;; (set-foreground-color "white")
@@ -1621,13 +1636,13 @@ Also see option `magit-blame-styles'."
                 (vertical-scroll-bars)
                 (left-fringe . -1)
                 (right-fringe . -1)))
-
         (add-to-list 'default-frame-alist '(width . 80))
+
         (add-to-list 'default-frame-alist '(height . 30))
 
         ;; (tv "hi")
-
         ;; This needs to be re-run at the end
+
         (cl-loop for fr in (frame-list)
                  do
                  (with-selected-frame fr
@@ -1668,8 +1683,8 @@ Also see option `magit-blame-styles'."
         ;; avy-lead-face-0
         ;; avy-lead-face-1
         ;; avy-lead-face-2
-
         ;; j:invert-highlight-faces
+
         (cl-loop for f in '(region
 
                             ivy-highlight-face
@@ -1773,6 +1788,8 @@ Also see option `magit-blame-styles'."
                             bible-hebrew
                             bible-lemma
 
+                            bible-search-match
+
 
                             ;; helm-grep-cmd-line
                             ;; helm-grep-file
@@ -1854,8 +1871,8 @@ Also see option `magit-blame-styles'."
                     :italic nil
                     ;; :bold (pen-use-bold-p)
                     )))
-
         ;; ALL FACES
+
         (loop for fr in (frame-list)
               do
               (progn
@@ -1888,8 +1905,8 @@ Also see option `magit-blame-styles'."
                           ;;                       :italic nil
                           ;;                       :inverse-video nil)
                           )))))
-
         ;;
+
         (cl-loop for f in '(tty-menu-selected-face
 
                             widget-button
@@ -1942,6 +1959,8 @@ Also see option `magit-blame-styles'."
                     ;; :bold (pen-use-bold-p)
                     )))
 
+
+
         (cl-loop for fr in (frame-list)
                  do
 
@@ -1984,7 +2003,10 @@ Also see option `magit-blame-styles'."
 
                                      lsp-ui-peek-highlight
 
-                                     magit-diff-removed-highlight)
+                                     magit-diff-removed-highlight
+
+                                     ahs-face
+                                     ahs-plugin-default-face)
                           do
                           (set-face-attribute
                            f fr
@@ -1999,8 +2021,6 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-
-
 
         (cl-loop for fr in (frame-list)
                  do
@@ -2038,7 +2058,10 @@ Also see option `magit-blame-styles'."
                                      whitespace-tab
                                      whitespace-trailing
 
-                                     diff-refine-added)
+                                     diff-refine-added
+
+                                     ahs-face-unfocused
+                                     ahs-plugin-default-face-unfocused)
                           do
                           (set-face-attribute
                            f fr
@@ -2096,8 +2119,8 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-
         ;; Inverse with no underline
+
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(
@@ -2115,8 +2138,8 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-
         ;; No underline, no inverse, no inherit
+  
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(Man-overstrike
@@ -2136,7 +2159,7 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-  
+
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(magit-diff-added-highlight
@@ -2154,8 +2177,10 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-
         ;;  Reverse without inverse
+
+  
+
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(
@@ -2176,10 +2201,8 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-
-  
-
         ;; [[customize-variable:-whitespace-style]]
+
         (setq whitespace-style
               '(trailing tabs tab-mark)
               ;; '(trailing tabs tab-mark empty space-after-tab::tab space-after-tab::space space-after-tab space-before-tab::tab space-before-tab::space space-before-tab)
@@ -2220,12 +2243,6 @@ Also see option `magit-blame-styles'."
                         :inverse-video t
                         :foreground 'unspecified
                         :background 'unspecified)))
-
-        (loop for fr in (frame-list)
-              do
-              (progn
-                (set-face-foreground 'default 'unspecified)
-                (set-face-background 'default 'unspecified)))
 
         ;; OK, so where does it get #b2b2b2 for default?
 
@@ -2485,28 +2502,41 @@ Also see option `magit-blame-styles'."
 ;; [[el:(etv (pen-get-faces))]]
 (defun pen-get-faces ()
   (interactive)
+  ;; Slant is causing problems when saving and loading faces
 
   (let ((fr (selected-frame)))
     (pps
      (-filter
       (lambda (tp_outer)
         (> (length tp_outer) 1))
-      (mapcar (lambda (f) (cons f
-                                (mapcar
-                                 (lambda (e)
-                                   (if (eq e nil)
-                                       'unspecified
-                                     e))
-                                 (custom-face-attributes-get f fr))
-                                ;; (-flatten (mapcar
-                                ;;            (lambda (attr) (list (car attr)
-                                ;;                                 (cdr attr))) 
-                                ;;            (-filter
-                                ;;             (lambda (tp) (not (eq (cdr tp)
-                                ;;                                   'unspecified)))
+      (mapcar (lambda (f)
+                (comment (cons f
+                               (mapcar
+                                (lambda (e)
+                                  (if (eq e nil)
+                                      'unspecified
+                                    e))
+                                (custom-face-attributes-get f fr))
+                               ;; (-flatten (mapcar
+                               ;;            (lambda (attr) (list (car attr)
+                               ;;                                 (cdr attr))) 
+                               ;;            (-filter
+                               ;;             (lambda (tp) (not (eq (cdr tp)
+                               ;;                                   'unspecified)))
 
-                                ;;             (custom-face-attributes-get f fr))))
-                                ))
+                               ;;             (custom-face-attributes-get f fr))))
+                               ))
+                (cons f
+                      (custom-face-attributes-get f fr)
+                      ;; (-flatten (mapcar
+                      ;;            (lambda (attr) (list (car attr)
+                      ;;                                 (cdr attr))) 
+                      ;;            (-filter
+                      ;;             (lambda (tp) (not (eq (cdr tp)
+                      ;;                                   'unspecified)))
+
+                      ;;             (custom-face-attributes-get f fr))))
+                      ))
               (pen-list-faces)))))
   
   ;; (with-temp-buffer

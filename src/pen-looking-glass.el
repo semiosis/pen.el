@@ -41,12 +41,16 @@
   (pen-etv (lg-generate-alttext "https://mullikine.github.io/tagpics/Bodacious%20Blog.gif")))
 
 (defun lg-get-alttext (fp-or-url)
-  (let ((desc (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
-                   "?")))
-    ;; (message desc)
 
-    ;; If fp then convert the image into a standard format
-    desc))
+  
+  (comment (let ((desc (sor (car (pen-one (pf-given-an-image-describe-it/1 fp-or-url)))
+                            "?")))
+             ;; (message desc)
+
+             ;; If fp then convert the image into a standard format
+             desc))
+
+  (format "<alttext for %s>" fp-or-url))
 
 (defun lg-generate-alttext (fp-or-url &optional alt)
   (interactive
@@ -64,11 +68,14 @@
       (setq alt "Image"))
 
   (let* ((image-description
-          (if pen-describe-images
-              ;; alephalpha?
-              (eval `(pen-ci (lg-get-alttext ,fp-or-url) ,(or (>= (prefix-numeric-value current-prefix-arg) 4)
-                                                              (= (prefix-numeric-value current-prefix-arg) 0))))
-            ;; (lg-get-alttext fp-or-url)
+          (progn
+            (comment
+             (if pen-describe-images
+                 ;; alephalpha?
+                 (eval `(pen-ci (lg-get-alttext ,fp-or-url) ,(or (>= (prefix-numeric-value current-prefix-arg) 4)
+                                                                 (= (prefix-numeric-value current-prefix-arg) 0))))
+               ;; (lg-get-alttext fp-or-url)
+               nil))
             nil))
 
          (image-description
@@ -82,9 +89,15 @@
 
          (alttext-and-description
           (cond
-           ((sor alt) (concat alt ":" image-description))
+           ((and (sor alt)
+                 (sor image-description))
+            (format "alt:%s" alt ", description:%s" image-description))
+           ((sor alt)
+            (format "alt:%s" alt))
+           ((sor image-description)
+            (format "description:%s" image-description))
            ;; ((re-match-p "SVG" alt) (eval-string (eval `(pen-ci (lg-get-alttext ,fp-or-url)))))
-           (t image-description)))
+           (t "Image without alttext")))
 
          ;; (alttext-and-description (concat fp-or-url (pen-q alttext-and-description) alt))
          )

@@ -7,8 +7,20 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -nooutlabel) {
-        no_out_label=y
+    -nooutlabel|-nolabel1) {
+        nolabel=1
+        shift
+    }
+    ;;
+
+    -noerrlabel|-nolabel2) {
+        nolabel=2
+        shift
+    }
+    ;;
+
+    -nolabel|-nolabel12) {
+        nolabel=12
         shift
     }
     ;;
@@ -31,11 +43,29 @@ cmd() {
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
+set -o pipefail
+
 # unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | pavs
 unbuffer bash -c "$CMD 2> >(sed "s/^/ERR:/")" | awk "!/^ERR:/ {gsub(/^/,\"OUT:\")}1" | {
-    if test "$no_out_label" = "y"; then
-        sed 's/^OUT://'
-    else
-        cat
-    fi
+    case "$nolabel" in
+        1) {
+            sed 's/^OUT://'
+        }
+        ;;
+
+        2) {
+            sed 's/^ERR://'
+        }
+        ;;
+
+        12) {
+            sed 's/^\(OUT\|ERR\)://'
+        }
+        ;;
+
+        *) {
+            cat
+        }
+        ;;
+    esac
 } | pavs

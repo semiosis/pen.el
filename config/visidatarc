@@ -2,6 +2,8 @@
 
 options.min_memory_mb=100  # stop processing without 100MB free
 
+options.clipboard_copy_cmd = 'xc -i'
+
 # bindkey('0', 'go-leftmost')   # alias '0' to move to first column, like vim
 TableSheet.bindkey('0', 'go-leftmost')   # alias '0' to move to first column, like vim
 

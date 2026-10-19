@@ -79,4 +79,8 @@ else
     :
 fi
 
-eval "$CMD"
+if test -n "$CMD"; then
+    eval "$CMD"
+else
+    zrepl -nocl
+fi

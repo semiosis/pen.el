@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# command seq 1000 | catnap | icat
+
+stdinfd=/proc/$$/fd/0
+stdoutfd=/proc/$$/fd/1
+
+# -nv here manages to kill the inner process properly when C-c'd
+# but without -nv it hangs. Fix this.
+
+0</dev/null pen-tm -te sps -nv -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
+# 0</dev/null pen-tm -te sps -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat

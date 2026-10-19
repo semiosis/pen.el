@@ -2421,3 +2421,5 @@ helm-comint
 comint-mime
 eshell-command-not-found
 esh-buf-stack
+consult-yasnippet
+nhexl-mode

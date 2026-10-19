@@ -2,6 +2,9 @@
 
 (define-key global-map (kbd "<f2>") nil)
 
+;; an emacs default
+(define-key global-map (kbd "<again>") 'repeat-complex-command)
+
 (sslk "lg=" 'position-list-nav/body)
 
 ;; A bit awkward
@@ -271,7 +274,7 @@
   (sslk "ldzw" (dff (pen-sps "select-ws-dir")))
   (sslk "ldzp" (dff (pen-sps "select-python-package")))
   (sslk "lFw" (dff (e "$NOTES/ws/english/words.txt")))
-  (sslk "lFL" (dff (e "$REPOS/pen.el/src/pen.el")))
+  ;; (sslk "lFL" (dff (e "$REPOS/pen.el/src/pen.el")))
   (sslk "lFR" (dff (pen-goto-notes-file "read.org")))
   (sslk "lFH" (dff (pen-goto-notes-file "watch.org")))
   (sslk "lFr" (dff (pen-goto-notes-file "remember.org")))
@@ -279,6 +282,7 @@
   (sslk "lFt" (dff (pen-goto-notes-file "todo.org")))
   (sslk "lFj" (dff (pen-goto-notes-file "journal.org")))
   (sslk "lFn" (dff (pen-goto-notes-file "need.org")))
+  (sslk "lFL" (dff (pen-goto-notes-file "learn.org")))
   (sslk "lFf" (dff (pen-goto-notes-file "files.txt")))
   (sslk "lFBC" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
   (sslk "lFBO" (dff (e "$PENCONF/documents/notes/ws/peniel/Bible-outlines.txt")))

@@ -63,6 +63,8 @@ fi
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
+# echo "$fp" | tv &>/dev/null
+
 editor() {
     if test "$NOEMACS" = "y"; then
         vs "$@"

@@ -2930,3 +2930,11 @@ e ia -r gnuplot
 e ia -r comint-intercept comint-hyperlink comint-histories helm-comint comint-mime
 
 e ia -r eshell-command-not-found esh-autosuggest esh-help esh-buf-stack
+
+e ia ivy-yasnippet consult-yasnippet auto-yasnippet
+
+e ia download-region
+
+e ia nhexl-mode
+
+e ia jumplist

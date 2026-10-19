@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# if echo "$pat" | scrape-p scrape-bible-references; then
+#     echo "Is a Bible verse"
+# fi
+
+filter="$1"
+scrape-bible-references

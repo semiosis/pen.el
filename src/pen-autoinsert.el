@@ -5,6 +5,7 @@
 ;; ** TODO Fix this - I need to be able to use C-M-j in completing read, but I use that chord in tmux
 
 (define-key minibuffer-local-map (kbd "<f12>") 'abort-recursive-edit)
+(define-key global-map (kbd "C-]") nil)
 
 (comment
  (tv (completing-read "Keyword, C-h: " '(a b) nil t))

@@ -24,6 +24,10 @@
   (let ((gparg (prefix-numeric-value current-prefix-arg))
         (current-prefix-arg nil))
     (cond ((>= gparg 16) (sps "vd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org $EMACSD/pen.el/docs/theology/faith-and-judgement.org"))
+          ;; Until I ensure unicode is not disabled by opening literally, do not enable literal opening of this file
+          ;; because exports seem to be without unicode after opening once literally
+          
+          ;; ((>= gparg 4) (e "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org" t))
           ((>= gparg 4) (e "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org"))
           (t (e "$EMACSD/pen.el/docs/theology/faith-and-judgement.org")))))
 

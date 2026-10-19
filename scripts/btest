@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+opt="$#"
+case "$opt" in
+    2) {
+        eval "[[ $1 $(cmd "$2") ]]"
+    }
+    ;;
+
+    3) {
+        # The third argument may have * on either side, so do not quote it
+        eval "[[ $(cmd-nice "$1") $2 $3 ]]"
+    }
+    ;;
+
+    *)
+esac

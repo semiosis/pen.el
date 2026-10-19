@@ -3,10 +3,23 @@ export TTY
 export DISPLAY
 # ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# pstree "$$" > /tmp/vimpstree.txt &>/dev/null
+
 . $SCRIPTS/lib/stdin_exists
 
 test -f "/usr/local/bin/vim" && : "${bin:="/usr/local/bin/vim"}"
 test -f "/usr/bin/vim" && : "${bin:="/usr/bin/vim"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -notty) {
+        notty=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
 
 is_emacs_shell() {
     [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
@@ -40,6 +53,8 @@ run() {
         if ! test "$VIM_NOCATOUT" = "y"; then
             cat /tmp/vim-stdout.txt
         fi
+    elif test "$notty" = y; then
+        "$bin" "$@"
     else
         echo "[[e:vim]] No tty. Opening in a tmux popup." 1>&2
         tpop vim "$@"

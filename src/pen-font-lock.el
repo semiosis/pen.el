@@ -3,7 +3,7 @@
       '(not speedbar-mode))
 
 (advice-add 'jit-lock-fontify-now :around #'ignore-errors-around-advice)
-
+(advice-remove 'jit-lock-fontify-now #'ignore-errors-around-advice)
 
 ;; Is there a way for font-lock to query manage-minor-mode ?
 (defun turn-on-font-lock-if-desired ()

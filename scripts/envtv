@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+{
+cmd1 "$@"
+env
+} | tv -nw &>/dev/null
+
+env "$@"

@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# When C-c is done, ensure the script quits properly.
+# This is useful for icat's '0</dev/null pen-tm -te sps -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat'
+
+trap func_trap INT
+func_trap() {
+    :
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+eval "$CMD"

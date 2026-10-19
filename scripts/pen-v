@@ -82,6 +82,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -in-a-tty) {
+        VIM_IN_A_TTY=y
+        shift
+        shift
+    }
+    ;;
+
+    -no-tty) {
+        VIM_IN_A_TTY=n
+        shift
+        shift
+    }
+    ;;
+
     -b) {
         bin="$2"
         shift
@@ -313,6 +327,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+: "${VIM_IN_A_TTY:="y"}"
+
+export VIM_IN_A_TTY
 
 # is_emacs_shell() {
 #     [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];

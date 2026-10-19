@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+: "${CURRENT_SESSION_NAME:="$(tmux display-message -p -t "$TARGET" '#{session_name}')"}"
+
+: "${session_title:="$session_name"}"
+
+message="$@"
+
+if ! pen-tm -f session-exists "$CURRENT_SESSION_NAME"; then
+    exit
+fi
+
+if test -n "$message"; then
+    message="$(p "$message" | pen-s trim-max-chars 20)"
+    message_text=" $message"
+fi
+
+displayedname() {
+    # 🍓
+    sed -e 's/^.*_//' -e "s/^localhost$/$(hostname | sed 's/[^ _-]*/\u&/g')/"
+}
+
+: "${session_title:="$CURRENT_SESSION_NAME"}"
+
+displayed_name="$(printf -- "%s" "$session_title" | displayedname)"
+
+tmux set -t "$CURRENT_SESSION_NAME" status-left "[ ${displayed_name} ]${message_text}  "

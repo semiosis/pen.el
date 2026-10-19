@@ -48,7 +48,7 @@
 
 (defun sqlite-copy-path ()
   (interactive)
-  (xc sqlite--db-path))
+  (xc sqlite--db-file))
 
 (define-key sqlite-mode-map (kbd "w") 'sqlite-copy-path)
 

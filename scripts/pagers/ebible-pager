@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+ebible_pager() {
+    if test "$NO_PAGER" = "y"; then
+        cat
+    else
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -s) {
+                slug="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if test "$COLUMNATED" = "y"; then
+            vim_cmd="colvs -nls -num -wrap"
+        else
+            vim_cmd="vs -nls -num -wrap"
+        fi
+
+        : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | pen-c ascify | slugify)"}"
+
+        if test -n "$slug"; then
+            # pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
+            # I want the verse ref to appear at the start of the filename, not after the hash, so use the first parameter of tf (name), rather that -X
+            pa -E "tf -sha \"${slug:0:220}_temp\" txt | xa $vim_cmd"
+        else
+            pa -E "tf txt | xa $vim_cmd"
+        fi
+    fi
+}
+
+ebible_pager "$@"

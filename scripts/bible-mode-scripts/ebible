@@ -14,6 +14,11 @@ export TMPDIR
 
 sn="$(basename -- "$0")"
 
+if test "$INSIDE_EMACS" = "y"; then
+    NOEMACS=y
+    exec 2>/dev/null
+fi
+
 # set -a # export the functions and variables
 
 # . $PENEL_DIR/scripts/utils.sh
@@ -30,6 +35,7 @@ if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',eshell$'; then
     export DECORATED=y
     isstdoutpipe=0
     export NO_PAGER=y
+    export ORG_TEMPLATIFY=y
 fi
 
 if ! test -n "$BORDER"; then
@@ -46,40 +52,7 @@ fi
 # fi
 
 : ${CMD_WITHOPTS:="$@"}
-
-ebible_pager() {
-    if test "$NO_PAGER" = "y"; then
-        cat
-    else
-        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-            "") { shift; }; ;;
-            -s) {
-                slug="$2"
-                shift
-                shift
-            }
-            ;;
-
-            *) break;
-        esac; done
-
-        if test "$COLUMNATED" = "y"; then
-            vim_cmd="colvs -nls -num -wrap"
-        else
-            vim_cmd="vs -nls -num -wrap"
-        fi
-
-        : "${slug:="$(printf -- "%s" "$CMD_WITHOPTS" | pen-c ascify | slugify)"}"
-
-        if test -n "$slug"; then
-            # pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
-            # I want the verse ref to appear at the start of the filename, not after the hash, so use the first parameter of tf (name), rather that -X
-            pa -E "tf -sha \"${slug:0:220}_temp\" txt | xa $vim_cmd"
-        else
-            pa -E "tf txt | xa $vim_cmd"
-        fi
-    fi
-}
+: "${pager_slug:="$(printf -- "%s" "$CMD_WITHOPTS" | pen-c ascify | slugify)"}"
 
 if { ! test "$istty" = 0; } && { ! test "$isstdoutpipe" = 0; }; then
     # e.g. (pen-snc "1John")
@@ -95,7 +68,7 @@ if ! inside-docker-p && docker-running-p; then
     # elif test "$istty" = 0 && test "$isstdoutpipe" = 0; then
         # in-pen in-tm "$sn" "$@"
     elif test "$istty" = 0 && test "$NOEMACS" = y; then
-        ocif -nd in-pen "$sn" "$@" | ebible_pager
+        ocif -nd in-pen "$sn" "$@" | ebible-pager -s "$pager_slug"
     else
         ocif -nd in-pen "$sn" "$@"
     fi
@@ -109,7 +82,7 @@ if test "$FAST" = "y"; then
     fi
     : "${module:="$default_bible_version"}"
 else
-    module="$(0</dev/null ocif -nd canonicalise-bible-module "$sn")"
+    module="$sn"
     : "${module:="$default_bible_version"}"
 fi
 
@@ -144,13 +117,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -cac) {
         format=internal
+        ANNOTATED=y
         CONCORDANCE=all
         CODES=y
         shift
     }
     ;;
 
+    -st) {
+        export WITH_LINKS=y
+        shift
+    }
+    ;;
+
     -codes) {
+        ANNOTATED=y
         : "${CONCORDANCE:="y"}"
         CODES=y
         shift
@@ -165,6 +146,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -c) {
         format=internal
+        ANNOTATED=y
         CONCORDANCE=y
         shift
     }
@@ -172,6 +154,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -ca) {
         format=internal
+        ANNOTATED=y
         CONCORDANCE=all
         shift
     }
@@ -205,6 +188,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+module="$(0</dev/null ocif -nd canonicalise-bible-module "$module")"
 
 if test "$ANNOTATED" = n; then
     format=plain
@@ -255,9 +240,9 @@ else
     fi
 fi
 
-strongs_cmd=strongs-get-word
+strongs_cmd="strongs-get-word -c"
 if test "$CONCORDANCE" = "all"; then
-    strongs_cmd="strongs-get-word -f"
+    strongs_cmd="strongs-get-word -f -c"
 fi
 
 iforcat() {
@@ -307,7 +292,7 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
             fi
         }
         {
-            0</dev/null in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref"
+            0</dev/null in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref" # | tv
         } | {
             # TODO Make it so here I can have the verse numbers inline and not actually remove the verse refereces
             # But I also want them to actually be formatted into the margin / border
@@ -328,10 +313,12 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
             # Running diatheke many times for the strongs definitions is quite slow.
             # Maybe reformat the strongs codes too.
             if test "$CONCORDANCE" = "y" || test "$CONCORDANCE" = "all"; then
-                sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g' |
+                sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g' ` # nasb ` |
+                sed -e 's/<w  savlm="\([HG][0-9]*\) lemma[^:]*:\([^"]*\)"[^>]*>\([^<]*\)<\/w>/\3 \1/g' ` # kjv ` |
                 sed 's/<[^>]*>//g' |
-                patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; $strongs_cmd | tr '[:lower:]' '[:upper:]'" |
-                sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g'
+                patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; $strongs_cmd | sed 's/^(\([GH]\)/(\1 /'" ` #  | tr '[:lower:]' '[:upper:]' ` |
+                sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g' |
+                sed 's/(\([GH]\) /(\1/g'
             else
                 cat
             fi
@@ -348,6 +335,14 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
 HEREDOC
 
+org_templatify_maybe() {
+    if test "$ORG_TEMPLATIFY" = "y"; then
+        pen-org-template-gen org
+    else
+        cat
+    fi
+}
+
 # TODO Cache this pipeline
 # I can also cache pipelines with the new pipe utility pipexec (for certain cases, anyway)
 if test "$istty" = 0 && ! test "$NOEMACS" = y; then
@@ -356,15 +351,26 @@ if test "$istty" = 0 && ! test "$NOEMACS" = y; then
     else
         sp -cip bible-open =nil =nil "$module"
     fi
-else 
+else
     assignments="$(printf -- "%s\n" "$pipeline" | getvars -eval-pp)"
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
-    output="$(ocif -nd bash -c "$assignments $pipeline")"
+    # output="$(ocif -nd spin -m "verse pipeline" bash -c "$assignments $pipeline")"
+    # output="$(upd ocif -nd spin -m "verse pipeline" upd bash -c "$assignments $pipeline")"
+    # output="$(upd ocif -nd upd bash -c "$assignments $pipeline")"
+    # output="$(upd ocif -nd spin -m "verse pipeline" upd bash -c "$assignments $pipeline")"
+    output="$(upd ocif -nd upd bash -c "$assignments $pipeline")"
     if test "$WITH_LINKS" = "y"; then
         output="$(printf -- "%s" "$output" | biblegateway-relinkify)"
     fi
     slug="$(printf -- "%s" "$CMD " | pen-c ascify | slugify; printf -- "%s\n" "$output" | head -n 1 | slugify)"
-    printf -- "%s\n" "$output" | ebible_pager -s "$slug"
+    printf -- "%s\n" "$output" | org_templatify_maybe | {
+        if test "$WITH_LINKS" = "y"; then
+            strongs-codes-relinkify
+        else
+            cat
+        fi
+    } | ebible-pager -s "$slug"
+
     # printf -- "%s\n" "$output" | pavs
 fi

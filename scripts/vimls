@@ -3,4 +3,7 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
-arbitrate $EMACSD/.cache/lsp/npm/vim-language-server/bin/vim-language-server --stdio
+test -f "$EMACSD/.cache/lsp/npm/vim-language-server/bin/vim-language-server" && : "${bin:="$EMACSD/.cache/lsp/npm/vim-language-server/bin/vim-language-server"}"
+test -f "/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server" && : "${bin:="/root/.emacs.d/.cache/lsp/npm/vim-language-server/bin/vim-language-server"}"
+
+arbitrate "$bin" --stdio

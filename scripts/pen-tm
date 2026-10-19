@@ -2255,6 +2255,11 @@ case "$f" in
             cmd_post="$cmd_post; test \$ret -ne 0 && ( p 'exit code '\$ret' => '; pen-pak )"
         fi
 
+        # This was too problematic here. It even affected "tv"
+        # if test -n "$INSIDE_EMACS"; then
+        #     cmd_pre=" $cmd_pre myeval -askuserifemacs"
+        # fi
+
         if test "$REPEAT_COMMAND" = "y"; then
             cmd_pre="while :; do $cmd_pre"
             if [ "$RETRY_SLEEP" -gt "0" ]; then
@@ -2271,8 +2276,9 @@ case "$f" in
 
         if test "$DETACHMENT_SENTINEL" = "y"; then
             if test "$CAT_ON_EXIT" = "y"; then
-                echo hi | tv &>/dev/null
-                cmd_post="$cmd_post; pen-tm -te -d capture - > \"$tf_capture\""
+                # echo hi | tv &>/dev/null
+
+                cmd_post="$cmd_post; pen-tm -te -d capture -t \"\$(tm-get-pane-id)\" - > \"$tf_capture\""
             fi
 
             if ! test "$SUB_SESSION" = "y"; then
@@ -3513,13 +3519,37 @@ case "$f" in
     }
     ;;
 
+    # Original icat
+    # -------------
     icat) {
-        stdinfd=/proc/$$/fd/0
-        stdoutfd=/proc/$$/fd/1
+        icat
 
-        0</dev/null pen-tm -te sps -nv -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
+        # stdinfd=/proc/$$/fd/0
+        # stdoutfd=/proc/$$/fd/1
+
+        # # 0</dev/null pen-tm -te sps -nv -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
+        # 0</dev/null pen-tm -te sps -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
     }
     ;;
+
+    # # I may need 2 tmux windows inside a session
+    # # I want something that lets me view the pipeline as it runs
+    # # and open a vim to examine progress
+    # icat) {
+    #     # stdinfd=/proc/$$/fd/0
+    #     stdoutfd=/proc/$$/fd/1
+
+    #     tf_in="$(ux tf in || echo /dev/null)"
+    #     trap "rm \"$tf_in\" 2>/dev/null" 0
+
+    #     # cat > "$tf_in" &
+
+    #     cat $stdinfd | tee "$in_tf" $stdoutfd 1>/dev/null &
+    #     pid=$!
+
+    #     0</dev/null pen-tm -te sps -w "cat $stdinfd | tee $stdoutfd 1>&2" | cat
+    # }
+    # ;;
 
     sk|stream-keys|send-keys) {
 

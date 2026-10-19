@@ -98,7 +98,7 @@ input_fp="$(cat | pen-c ascify | tf txt)"
 
 # bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc | s join "\\\|")"
 # bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "\\\|")"
-perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "|")"
+perlbookre="$(ocif pen-els list-bible-book-titles-lines | pen-sort line-length | s join "|")"
 
 {
     # *? is the non-greedy *
@@ -107,7 +107,7 @@ perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | 
         sed 's/ - /\n/g' |
         sed 's/, /\n/g' |
         sed 's/,\*/\n/g' |
-        perl -ne "print $_ if s/.*?\\b($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/i;" |
+        perl -ne "print \$_ if s/.*?\\b($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/i;" |
         sed '/^$/d'
 } | sed -e 's/\.$//' | {
     if test "$verses_only" = "y"; then
@@ -131,7 +131,7 @@ perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | 
     fi
 } | {
     if test "$books_only" = "y"; then
-        sed 's/ \?[0-9].*//'
+        sed 's/\(.\) \?[0-9].*/\1/'
     else
         cat
     fi

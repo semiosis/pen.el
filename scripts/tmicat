@@ -2,7 +2,7 @@
 export TTY
 
 # tmi
-# interactive sed
+# interactive cat
 
 # interactively arbitrate lines of stdin to stdout
 

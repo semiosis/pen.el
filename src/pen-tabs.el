@@ -4,6 +4,7 @@
 ;; Always keep the tab bar hidden, even when the mode is on.
 ;; This is the way to go to avoid the failed assertion
 (setq tab-bar-show nil)
+;; (toggle-frame-tab-bar)
 
 ;; Disable the built-in emacs tab-bar-mode and keep using tab-line-mode for the moment
 (tab-bar-mode -1)

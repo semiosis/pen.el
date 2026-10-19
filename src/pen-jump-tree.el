@@ -1,3 +1,10 @@
+(require 'jumplist)
+
+;; (setq jumplist-ex-mode t)
+(setq jumplist-ex-mode nil)
+;; mx:jumplist-next
+;; mx:jumplist-previous
+
 (require 'jump-tree)
 ;; comes from straight
 ;; (require 'gumshoe)

@@ -37,6 +37,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         case "$opt" in
             debug) {
                 export DEBUG=y
+                export PEN_DEBUG=y
             }
             ;;
 

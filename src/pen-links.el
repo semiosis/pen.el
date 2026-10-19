@@ -37,4 +37,53 @@
 
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
 
+;; pa:link-hint
+(comment
+ ;; This one is fine
+ (link-hint--collect (point-min) (point-max) 'link-hint-text-url)
+ (funcall (get 'link-hint-text-url :at-point-p))
+ ;; This one is problematic
+ (link-hint--collect (point-min) (point-max) 'link-hint-help-link)
+ (funcall (get 'link-hint-help-link :at-point-p))
+ (j (get 'link-hint-help-link :at-point-p))
+
+ ;; Here, the list is converted into a string. That's the problem
+ ;; j:link-hint--help-link-at-point-p
+
+ ;; T his kind of code is problematic:
+ (make-text-button (mark) (point)
+                   'type 'help-function
+                   'help-args (list 'make-text-button)))
+(defun link-hint--collect-visible-links ()
+  "Collect all visible links in the current buffer."
+  (let (all-link-positions)
+    (dolist (bounds (link-hint--find-visible-regions (window-start)
+                                                     (window-end nil t)))
+      (dolist (type link-hint-types)
+        (when (link-hint--type-valid-p type)
+
+          (let ((links (link-hint--collect (car bounds) (cdr bounds) type)))
+            (setq all-link-positions
+                  (append all-link-positions
+                          links))
+            (message (concat (str type) "=" (pps links)))))))
+
+    (sort (cl-delete-duplicates all-link-positions
+                                :test #'link-hint--equal
+                                ;; types earlier in `link-hint-types' have
+                                ;; higher priority
+                                :from-end t)
+          #'link-hint--<)))
+
+;; The fix
+(defun link-hint--help-link-at-point-p ()
+  "Return the name of the help link at the point or nil."
+  (let ((help-link (get-text-property (point) 'help-args)))
+    (cond
+     ((and (consp help-link)
+           (eq 1 (length help-link)))
+      (str (car help-link)))
+     (help-link
+      (pps help-link)))))
+
 (provide 'pen-links)

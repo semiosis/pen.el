@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    bible-verse-book-p) {
+        bookonly=y
+    }
+    ;;
+
+    *)
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -bookonly) {
+        bookonly="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -anywhere) {
+        anywhere=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+prefix_re="^"
+if test "$anywhere" = "y"; then
+    prefix_re=".*?\\b"
+fi
+
+perlbookre="$(ocif pen-els list-bible-book-titles-lines | pen-sort line-length | s join "|")"
+# echo "$perlbookre" | v
+# exit
+# cmd perl -ne "print \$_ if s/^($perlbookre)\\b/\\1/i;" | v
+# exit
+
+if test "$bookonly" = "y"; then
+    result="$(perl -ne "print \$_ if s/${prefix_re}($perlbookre)\\b/\\1/i;")"
+else
+    result="$(perl -ne "print \$_ if s/${prefix_re}($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/i;")"
+fi
+
+test -n "$result"

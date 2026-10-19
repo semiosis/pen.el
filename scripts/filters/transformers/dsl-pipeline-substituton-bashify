@@ -3,5 +3,15 @@ export TTY
 
 # . $SCRIPTS/lib/hs
 
+# [e:expand-bash-preprocessor]
+
 sed -e 's/\$({/\$(cmd /' -e 's/|/"|"/' -e 's/})/)/'
 
+# TODO Add to "pash" a macro or syntax for loading lines into an array:
+# IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat /etc/passwd))'
+
+# Or, rather, a syntax for expanding conditional arguments
+# Array expansion:
+# cmd $([cmd "a a" "b b" c]) "x x" y z
+# See how this gets it wrong:
+# cmd-nice $(cmd-nice "a a" "b b" c) "x x" y z

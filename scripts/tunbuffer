@@ -1,0 +1,40 @@
+#!/bin/bash
+export TTY
+
+# tmux unbuffer
+
+# . $SCRIPTS/lib/hs
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    -nospin) {
+        DO_SPIN=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${DO_SPIN:="y"}"
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+maybe_spin() {
+    if test "$DO_SPIN" = "y"; then
+        spin -m "tub" "$@"
+    else
+        "$@"
+    fi
+}
+
+maybe_spin pen-tm -s -tout nw -d -t pen: -coe -E "$CMD" | pavs

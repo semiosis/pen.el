@@ -188,6 +188,7 @@
             ("*eww bookmarks*" :select nil :same t)
             (ftp-mode :select t :same t)
             (eww-bookmark-mode :select nil :same t)
+            (lsp-log-io-mode :select nil :same t)
             (python-pytest-mode :select nil :same t)
             (snippet-mode :select t :same t)
             ("*haskell*" :ignore t :select nil :same nil)

@@ -671,7 +671,8 @@ Differences in #targets are ignored."
 
   (and lg-url-cache-enabled
        (or (f-exists-p (lg-url-cache-slug-fp url))
-           (f-exists-p (lg-url-cache-slug-fp (google-cachify url))))))
+           ;; (f-exists-p (lg-url-cache-slug-fp (google-cachify url)))
+           )))
 
 (defun pen-url-cache (url &optional contents)
   (setq url (pen-redirect url))
@@ -721,7 +722,11 @@ Differences in #targets are ignored."
   (browsh path))
 
 (defun pen-redirect (url)
-  (pen-snc "pen-redirect" url))
+  ;; This function is just too slow when run many times.
+  ;; Either use it in parallel somehow for multiple inputs
+  ;; or use emacs lisp instead.
+  (comment (pen-snc "pen-redirect" url))
+  (identity url))
 
 (defun eww (url &optional use-chrome)
   "Fetch URL and render the page.
@@ -750,7 +755,7 @@ word(s) will be searched for via `eww-search-prefix'."
         (setq url (eww--dwim-expand-url url)))
 
       (if (and (not pen-lg-always)
-               (not (lg-url-cache-exists url))
+               ;; (not (lg-url-cache-exists url))
                (lg-url-is-404 url)
                (pen-internet-connected-p)
                (yn "URL is 404. Try wayback?"))
@@ -828,16 +833,17 @@ word(s) will be searched for via `eww-search-prefix'."
         (re-match-p "502 Bad Gateway" info)
         (not (sor info)))))
 
-(defun google-cachify (url)
-  (concat "http://webcache.googleusercontent.com/search?q=cache:" (google-uncachify url)))
+(comment
+ (defun google-cachify (url)
+   (concat "http://webcache.googleusercontent.com/search?q=cache:" (google-uncachify url)))
+ 
+ (defun url-cache-is-404-curl (url)
+   "URL cache is 404"
+   (lg-url-is-404 (google-cachify url)))
 
-(defun url-cache-is-404-curl (url)
-  "URL cache is 404"
-  (lg-url-is-404 (google-cachify url)))
-
-(defun url-cache-is-404 (url)
-  "URL cache is 404"
-  (not (url-found-p (google-cachify url))))
+ (defun url-cache-is-404 (url)
+   "URL cache is 404"
+   (not (url-found-p (google-cachify url)))))
 
 (defun ecurl (url)
   (with-current-buffer (url-retrieve-synchronously url t t 5)
@@ -855,35 +861,40 @@ word(s) will be searched for via `eww-search-prefix'."
     (prog1 (eq url-http-response-status 200)
       (kill-buffer))))
 
-(defun eww--dwim-expand-url-around-advice (proc &rest args)
-  (let ((url (google-uncachify (car args))))
-    (if (and (or
-              eww-use-google-cache
-              (string-match-p "towardsdatascience" url)
-              (string-match-p "medium.com" url)
-              (string-match-p "quora.com" url))
-             (not (string-match-p "webcache.google" url)))
-        (if
-            (not (url-cache-is-404 url))
-            (setq url (google-cachify url))))
-    (let ((res (apply proc (list url))))
-      res)))
-(advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice)
+(comment
+ ;; Disable this, it's extremely slow and broken anyway
+ (defun eww--dwim-expand-url-around-advice (proc &rest args)
+   (let ((url (google-uncachify (car args))))
+     (if (and (or
+               eww-use-google-cache
+               (string-match-p "towardsdatascience" url)
+               (string-match-p "medium.com" url)
+               (string-match-p "quora.com" url))
+              (not (string-match-p "webcache.google" url)))
+         (if
+             (not (url-cache-is-404 url))
+             (setq url (google-cachify url))))
+     (let ((res (apply proc (list url))))
+       res)))
+
+ (advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice)
+ (advice-remove 'eww--dwim-expand-url #'eww--dwim-expand-url-around-advice))
 
 (defun google-uncachify (url)
   (pen-sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" url))
 
-(defun toggle-cached-version ()
-  (interactive)
-  (let ((url (plist-get eww-data :url)))
-    (if url
-        (progn
-          (if (string-match-p "webcache.google" url)
-              (setq url (google-uncachify url))
-            (setq url (google-cachify url)))
-          (advice-remove 'eww--dwim-expand-url #'eww--dwim-expand-url-around-advice)
-          (eww-browse-url url)
-          (advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice)))))
+(comment
+ (defun toggle-cached-version ()
+   (interactive)
+   (let ((url (plist-get eww-data :url)))
+     (if url
+         (progn
+           (if (string-match-p "webcache.google" url)
+               (setq url (google-uncachify url))
+             (setq url (google-cachify url)))
+           (advice-remove 'eww--dwim-expand-url #'eww--dwim-expand-url-around-advice)
+           (eww-browse-url url)
+           (advice-add 'eww--dwim-expand-url :around #'eww--dwim-expand-url-around-advice))))))
 
 (defun toggle-use-chrome-locally ()
   (interactive)
@@ -1545,10 +1556,13 @@ xdg-open is a desktop utility that calls your preferred web browser."
   (reload-eww-use-google-cache-matchers)
   (reload-eww-use-chrome-dom-matchers)
   (reload-eww-use-reader-matchers)
-  (let ((eww-use-google-cache (-reduce (lambda (a b) (or a b))
-                                       (or (mapcar (lambda (e) (re-match-p e (second args)))
-                                                   (-filter-not-empty-string eww-use-google-cache-matchers))
-                                           '(nil))))
+  (let ((eww-use-google-cache
+         nil
+         ;; (-reduce (lambda (a b) (or a b))
+         ;;          (or (mapcar (lambda (e) (re-match-p e (second args)))
+         ;;                      (-filter-not-empty-string eww-use-google-cache-matchers))
+         ;;              '(nil)))
+         )
         (match-use-chrome (-reduce (lambda (a b) (or a b))
                                    (or (mapcar (lambda (e) (re-match-p e (second args)))
                                                (-filter-not-empty-string eww-use-chrome-dom-matchers))

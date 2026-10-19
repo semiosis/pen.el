@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+dir="$1"
+test -d "$dir" || exit 1
+shift
+
+cd "$dir"
+"$@"

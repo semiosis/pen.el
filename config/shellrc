@@ -1,6 +1,7 @@
 export DUMP="$HOME/dump"
 export REPOS="$HOME/repos"
 export MYGIT="$HOME/repos"
+export MYGIT_HOST="/volumes/home/shane/var/smulliga/source/git"
 export NOTES="/root/notes"
 
 unset EMACSD_BUILTIN

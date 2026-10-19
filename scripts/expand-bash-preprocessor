@@ -1,4 +1,6 @@
-#!/bin/sh
+<#!/bin/sh
+
+# [e:dsl-pipeline-substituton-bashify]
 
 # This is quite crude. I really need to do this in bash code or with m4
 # IFS= read -r -d '' pattern <<'HEREDOC'

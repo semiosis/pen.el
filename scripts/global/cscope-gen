@@ -1,0 +1,119 @@
+#!/bin/bash
+
+# Re-gen every time?
+
+# py i pycscope
+
+exec 1>&2
+
+is-git && cd "$(vc get-top-level)"
+
+
+# because this is a child shell instead of a function,
+# need to export CSCOPE_DB in the .shellrc
+# eval `resize`
+CWD="$(pwd)"
+builtin cd /
+
+dirslug="$(p "$CWD" | sed 's=/$==' | slugify)"
+infodir=$HOME/notes/programs/cscope-ctags
+destdir="$infodir/$dirslug"
+
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -cd) {
+        zcd "$destdir"
+        exit $?
+        shift
+    }
+    ;;
+
+    -u) {
+        UPDATE=y
+        REBUILD=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+if test "$UPDATE" = "y"; then
+    REBUILD=y
+fi
+
+: ${REBUILD:="y"}
+
+if test "$REBUILD" = "y"; then
+    # rm -f cscope.{files,*.out}
+    rm -rf "$destdir"
+fi
+
+mkdir -p "$destdir"
+
+# this does not skip, it filters afterwards
+#find -L -O3 $CWD \( -not -path ".$CWD/*[.-]*" \) -a \
+#    -path ".$CWD/tm2*" -a \
+# -not -path '*/build/*' \
+# -and \
+# Allow build because aokts sits inside a build folder
+
+# Languages that do not work
+    # -o -name '*.jl' \
+
+
+# Give cscope_gen.sh an option that specifies an initial file extension
+# That should restrict the number of different file extensions that are
+# used.
+# It's still quite useful, though to supply everything.
+find -L -O3 $CWD \
+    -true \
+    -and \
+    \( \
+    -name '*.py' \
+    -o -name '*.php' \
+    -o -name '*.java' \
+    -o -iname '*.[CH]' \
+    -o -name '*.cpp' \
+    -o -name '*.go' \
+    -o -name '*.cs' \
+    -o -name '*.rb' \
+    -o -name '*.hpp'  \
+    -o -name '*.cc' \
+    -o -name '*.rs' \
+    -o -name '*.hh' \
+    -o -name '*.hs' \
+    -o -name '*.clj' \
+    -o -name '*.js' \
+    -o -name '*.ts' \
+    -o -name '*.el' \
+    \) \
+    > "$destdir/cscope.files"
+#    2>&1 > $CWD/cscope.files | cut -c-$COLUMNS
+export CSCOPE_DB=$destdir/cscope.out
+builtin cd "$destdir"
+# -c: needed for codequery
+# -b: just build
+# -q: create inverted index
+
+
+# if ( cd "$CWD"; show-extensions-below ) | grep -v -P ",(md|txt|yml|csv|ipy)" | head -n 1 | grep -q ',py'; then
+# If there are any python files at all -- this is simpler
+if ( cd "$CWD"; show-extensions-below ) | grep -q ',py'; then
+    pycscope -i  "$destdir/cscope.files"
+else
+    cscope -c -b -q
+fi
+
+# sometimes the path changes to use emacs' ctags. fully qualify it
+# $HOME/scripts/ctags --fields=+latinK --fields=+i -n -R -L ./cscope.files
+# $HOME/scripts/ctags --fields=+latinK+i -n -R -L ./cscope.files
+$HOME/scripts/ctags --fields=+latinK+i -R -L ./cscope.files
+# $MYGIT/Guad/tags2uml/tags2uml --members=1 --methods=1 --infile tags | tee uml.dot | dot-png uml
+# feh "uml.png" & disown
+# $MYGIT/Guad/tags2uml/tags2uml --members=1 --methods=1 --infile tags | tee uml.dot | dot-qdot
+
+set -m
+cqmakedb -s ./codequery.db -c ./cscope.out -t ./tags -p

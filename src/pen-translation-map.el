@@ -189,6 +189,51 @@
         symbol
       (cons symbol (cdr e)))))
 
+(defun controlify (prompt)
+  (let ((e (read-event)))
+
+    (case e
+      ;; (?m ;; ?
+      ;;  "\C-m")
+      ;; (?n ;; ?
+      ;;  "\C-n")
+      ;;  C-] C-\
+      (28 (kbd "ESC"))
+      ;; Double C-]
+      (29 (kbd "ESC"))
+      ;; C-c C-i
+      (9 (kbd "C-TAB"))
+      ;; (9 (kbd "C-ESC"))
+      (t
+       (kbd (concat "C-" (list e)))))))
+
+(defun metaify (prompt)
+  (let ((e (read-event)))
+
+    (case e
+      ;; C-i
+      (9 (kbd "M-TAB"))
+      (t
+       (kbd (concat "M-" (list e)))))))
+
+(defun metacontrolify (prompt)
+  (let ((e (read-event)))
+
+    (case e
+      ;; C-i
+      (9 (kbd "M-C-TAB"))
+      (t
+       (kbd (concat "M-C-" (list e)))))))
+
+;; This is useful for inserting unicode characters (e.g. A-x)
+(defun altify (prompt)
+  (let ((e (read-event)))
+    (vector (if (numberp e)
+                (logior (lsh 1 22) e)
+              (if (memq 'control (event-modifiers e))
+                  e
+                (add-event-modifier "A-" e))))))
+
 (defun superify (prompt)
   (let ((e (read-event)))
     (vector (if (numberp e)
@@ -205,11 +250,91 @@
                   e
                 (add-event-modifier "H-" e))))))
 
-(define-key global-map (kbd "C-M-6") nil)             ;For GUI
+(define-key global-map (kbd "C-M-6") nil)
+
+;For GUI
 (define-key function-key-map (kbd "C-M-6") 'superify) ;For GUI
 (define-key function-key-map (kbd "C-M-^") 'superify)
 (define-key function-key-map (kbd "C-^") 'superify)
+
 (define-key global-map (kbd "C-M-\\") nil) ;Ensure that this bindings isnt taken
-(define-key function-key-map (kbd "C-M-\\") 'hyperify)
+;; I don't see how this works. I think it doesn't:
+;; (define-key function-key-map (kbd "C-M-\\") 'hyperify)
+;; (define-key function-key-map (kbd "C-M-\\") nil)
+;; (define-key key-translation-map (kbd "C-TAB \\") 'hyperify)
+
+;; This is another way of producing hyperify, but it uses C-[ (i.e. C-[ for ESC followed by C-[ ]) which is not available with chrome
+(define-key function-key-map (kbd "M-ESC ]") 'hyperify)
+;; So I need another way of producing hyperify using control keys. Done:
+(define-key function-key-map (kbd "C-c C-\\") 'hyperify)
+;; And another way of producing hyperify, but it uses M-[ M-[ ]
+(define-key function-key-map (kbd "M-[ M-[ ]") 'hyperify)
+
+;; Produce superify with control keys
+(define-key function-key-map (kbd "C-c C-]") 'superify)
+;; and  produce superify with meta keys:
+(define-key function-key-map (kbd "M-l M-]") 'superify)
+
+;; For some reason these do not work:
+(comment
+ (define-key function-key-map (kbd "M-ESC [") 'superify)
+ (define-key function-key-map (kbd "ESC M-[") 'superify)
+ (define-key function-key-map (kbd "ESC ESC [") 'superify)
+ (define-key function-key-map (kbd "ESC ESC [") 'superify))
+;; (define-key function-key-map (kbd "M-ESC ]") nil)
+
+;; TODO Produce C-M- from control only
+;; (define-key function-key-map (kbd "C-TAB") 'metacontrolify)
+;; (define-key function-key-map (kbd "C-TAB") nil)
+
+;; This is fine to produce M-C- but it keep in mind can't initiate hyperify from M-C-\
+(define-key key-translation-map (kbd "C-TAB") 'metacontrolify)
+
+;; (define-key key-translation-map (kbd "C-TAB") nil)
+;; (define-key function-key-map (kbd "C-TAB") nil)
+;; TODO Produce C-M- from meta only
+
+;; TODO Produce hyper from C-M-
+;; TODO Produce super from C-M-
+
+;; C-\ C-i produces H-v (for Chrome browser)
+;; (define-key key-translation-map (kbd "C-\\ TAB") 'hyperify)
+;; C-\ M-6 produces s-v (for Chrome browser)
+;; (define-key key-translation-map (kbd "C-\\ M-6") 'superify)
+
+;; C-\ C-i produces H-v (for Chrome browser)
+;; (define-key key-translation-map (kbd "C-\\ TAB") 'hyperify)
+;; C-\ M-6 produces s-v (for Chrome browser)
+;; (define-key key-translation-map (kbd "C-\\ M-6") 'superify)
+
+;; C-] C-\ produces ESC
+;; This is to avoid using C-[ for escape, as it was activating caret-mode in chrome
+(define-key function-key-map (kbd "C-]") 'controlify)
+;; (define-key function-key-map (kbd "ESC C-i") 'metacontrolify)
+;; (define-key function-key-map (kbd "ESC C-i") nil)
+;; (define-key function-key-map (kbd "C-}") 'metacontrolify)
+
+;; Sadly, can't use controlify to make metacontrolify
+;; (define-key function-key-map (kbd "C-\"") 'metacontrolify)
+;; (define-key global-map (kbd "C-\"") nil)
+
+;; Now I can produce escape and meta keys with the control key
+(define-key global-map (kbd "C-\\") nil)
+(define-key function-key-map (kbd "C-\\") 'metaify)
+;; (define-key key-translation-map (kbd "C-] C-]") nil)
+
+;; Produce a control key from meta key
+(define-key function-key-map (kbd "M-] M-]") 'controlify)
+
+;; Why does altify not work for M-]?
+;; A-
+;; (define-key function-key-map (kbd "M-] M-[") 'altify)
+;; (define-key function-key-map (kbd "M-] M-[") nil)
+;; (define-key function-key-map (kbd "M-[ M-[") 'altify)
+;; (define-key function-key-map (kbd "M-[ M-[") nil)
+;; (define-key function-key-map (kbd "M-] M-]") 'altify)
+;; (define-key function-key-map (kbd "M-] M-]") nil)
+(define-key function-key-map (kbd "M-[ M-]") 'altify)
+;; (define-key function-key-map (kbd "M-[ M-]") nil)
 
 (provide 'pen-translation-map)

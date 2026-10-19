@@ -11,6 +11,13 @@
 
 ;; (sideline-mode)
 
+(defsetface bible-search-match
+            '((t
+               :foreground "green"
+               :background "darkgreen"))
+            "Bible search match"
+            :group 'bible-mode)
+
 (defsetface bible-verse-ref
             '((t
                :foreground "#5555ff"))
@@ -494,7 +501,7 @@
         (while (re-search-forward query nil t)
           (put-text-property
            (- (point) (length query))
-           (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
+           (point) 'font-lock-face 'bible-search-match))))
 
   (let ((book_ref_list (-uniq (mapcar (lambda (s) (s-replace-regexp " [0-9].*" "" s)) (pen-str2lines (scrape "^.*:" (buffer-string)))))))
     (loop for bookref in book_ref_list do
@@ -1582,9 +1589,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-mode-cross-references (ref)
   (interactive (list
                 (let ((current-prefix-arg nil))
-                  (bible-verse-refs-at-point)
-                  ;; (bible-mode-get-link (thing-at-point 'line t))
-                  )))
+                  (sor (bible-verse-refs-at-point)
+                       (bible-mode-get-link (thing-at-point 'line t))))))
 
   ;; (setq ref (snc "canonicalise-bible-ref" ref))
   (if (>= (prefix-numeric-value current-prefix-arg) 4)

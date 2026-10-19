@@ -48,7 +48,7 @@ echo "Running $sn through emacs" 1>&2
 # That way, I can use modifications I have made to org-mode
 
 if test "$VANILLA" = "y"; then
-    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+    tub x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
 else
     # TODO Make something to get the first available server
     # Query all the servers and choose the one which responds first.

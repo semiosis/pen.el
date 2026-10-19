@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# zsh functions
+# print -l ${(ok)functions} | v
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# This is so that, for lookups like "which upd", I will be able to find the shell function
+myeval -echo zsh -ic "whence -v $CMD | hls pink" 1>&2
+/usr/bin/which "$@"

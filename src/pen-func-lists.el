@@ -19,7 +19,12 @@
 
 (defun elinks-dump-this-file ()
   (interactive)
-  (nw (cmd "elinks-dump" (buffer-file-path))))
+  (let ((fp (buffer-file-path)))
+    (if (not (f-file-p fp))
+        (error "Not buffer associated with this file")
+      (if (>= (prefix-numeric-value current-prefix-arg) 4)
+          (etv (snc (cmd "elinks-dump" fp)))
+        (nw (cmd "elinks-dump" fp))))))
 
 (defun elinks-open-this-file ()
   (interactive)
@@ -117,7 +122,8 @@
                          rdrview))
 (defset eshell-mode-funcs '(ranger
                             pcomplete-expand-and-complete
-                            pen-start-term-visual-cmd))
+                            pen-start-term-visual-cmd
+                            eshell-quit-process))
 (defset shell-mode-funcs '(ranger
                            pen-start-term-visual-cmd))
 (defset calc-mode-funcs '(pen-calc-clear-stack))

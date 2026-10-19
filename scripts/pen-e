@@ -14,6 +14,11 @@ if ! in-pen-p; then
     exit "$?"
 fi
 
+if test -n "$INSIDE_EMACS"; then
+    nw zrepl -m "INSIDE_EMACS was set, so popped out to tmux" -nocl pen-e "$@"
+    exit "$?"
+fi
+
 test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
 test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR

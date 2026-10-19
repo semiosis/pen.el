@@ -50,4 +50,14 @@ case "$mode" in
     *)
 esac
 
-/usr/bin/tig "$@"
+# j:term-exec-around-advice only partially fixed the
+# eshell visual command display problem for tig.
+# But adding a tmux wrapper fixed it fully.
+if test -n "$INSIDE_EMACS"; then
+    twr /usr/bin/tig "$@"
+    # nvt -22 /usr/bin/tig "$@"
+    # nvc -2 /usr/bin/tig "$@"
+else
+    /usr/bin/tig "$@"
+fi
+# /usr/bin/tig "$@"

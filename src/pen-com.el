@@ -27,6 +27,7 @@
 (comment
  (getopts "a:b:c" "-a" "A")
  (getopts "a:b:c" "-a" "A" "-c" "-b" "B")
+ (getopts "a:b:c" "-a" "A" "-a" "AA" "-c" "-b" "B" "yoyo" "-d" "yo")
  (getopts "a:b:c" "-a" "A" "-c" )
  (getopt "-o" "ab:c::" "--long" "a-long,b-long:,c-long::" "-n" "example.bash" "--" "-b" "yo ")
  (ignore-errors (getopt "-o" "ab:c::" "--long" "a-long,b-long:,c-long::" "-n" "example.bash" "--" "-z" "yo ")))

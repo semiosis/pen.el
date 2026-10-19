@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+# enumerate-bible-verse-refs Romans 12:9-21
+test "$#" -gt 0 || exit 1
+
+/usr/bin/diatheke -b KJV -k "$@" | mcut -d ': ' -f 1 | sed '$d'

@@ -56,7 +56,8 @@ case "$opt" in
     ;;
 
     fhp|find-here-path) {
-        pen-F find-no-git -i "$@" | ls-colorise
+        # pen-F find-no-git -i "$@" | ls-colorise
+        pen-F find-no-git -i "$@" | pavs
     }
     ;;
 

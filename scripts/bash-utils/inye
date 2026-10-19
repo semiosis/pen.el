@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# # Only works presently for a single conditional argument.
+# outtf="$(pen-ci -nd -f -m "$EXTRA_METADATA$USETOR" elinks -dump-width "$COLUMNS" $(inye "$elinks_use_numbering" --no-numbering) --dump "$@" | output_filter | pen-tf -X "$EXTRA_METADATA" txt)"
+# # To make it work for more arguments, I need to do the following:
+# Read lines from a file into a Bash array:
+# IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat /etc/passwd))'
+
+# Example:
+# printf "'%s' " -- $(iye "n" yo) yo
+# printf "'%s' " -- $(inye "n" yo) yo
+
+# . $SCRIPTS/lib/hs
+
+test "$#" -gt 1 || exit 1
+
+input="$1"
+shift
+
+{ ! test "$input" = y; } && cmd "$@"

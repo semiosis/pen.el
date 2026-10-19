@@ -13,7 +13,12 @@
 (global-unset-key (kbd "C-z"))
 
 (define-key global-map (kbd "C-\\") nil)
-(define-key global-map (kbd "C-\\ '") 'git-d-unstaged)
+;; (define-key global-map (kbd "C-\\ '") 'git-d-unstaged)
+(define-key global-map (kbd "C-\\ '") nil)
+
+;; This binding requires "controlify" or GUI emacs to work
+(define-key global-map (kbd "C-'") 'git-d-unstaged)
+
 (define-key global-map (kbd "M-^") 'cd-vc-cd-top-level)
 
 ;; These bindings will allow you to use Space Cadet keyboard modifiers

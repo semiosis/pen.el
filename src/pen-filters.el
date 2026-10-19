@@ -37,7 +37,7 @@
             (ptw func (buffer-substring rstart rend)))))
       (pen-replace-region res rstart rend))))
 
-(defun pen-region-pipe (cmd)
+(defun pen-region-pipe (cmd &optional rstart rend)
   "pipe region through shell command"
   (interactive (list (read-string "shell filter:")))
 
@@ -47,7 +47,8 @@
   
   (if (not (sor cmd))
       (setq cmd "pen-tm filter"))
-  (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
+  (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))
+                     rstart rend))
 
 (defun select-filter (&optional prompt type)
   (interactive (list "pen-fwfzf:"

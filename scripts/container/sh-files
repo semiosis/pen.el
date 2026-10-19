@@ -18,6 +18,7 @@ g  glossary.txt
 G  glossary.el
 o  websearch.txt
 p  perspective.org
+L  learn.org
 P  prayers.org
 k  keep-in-mind.org
 n  need.org
@@ -47,6 +48,7 @@ case "$d" in
     s) cmd="vs $NOTES/websearch.txt" ;;
     G) cmd="sp $EMACSD/config/my-glossary.el" ;;
     p) cmd="vs $NOTES/perspective.org" ;;
+    L) cmd="vs $NOTES/learn.org" ;;
     P) cmd="vs $NOTES/prayers.org" ;;
     k) cmd="vs $NOTES/keep-in-mind.org" ;;
     n) cmd="vs $NOTES/need.org" ;;

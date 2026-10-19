@@ -895,7 +895,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
   ;; This uses emacs' (getenv "SHELL")
   ;; So I must set it like so:
 
-  (message "pen-sn: %s" shell-cmd)
+  (if stdin
+      (message "pen-sn: %s >>> %s" (e/q (pen-trim-max-chars stdin 100 t)) shell-cmd)
+    (message "pen-sn: %s" shell-cmd))
   (f-append (format "pen-sn: %s\n" shell-cmd) 'utf-8 pen-sn-logfp)
   (if shell
       (setenv "SHELL" shell)

@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# tmi
+# interactive less
+
+# interactively arbitrate lines of stdin to stdout
+
+tm iless
+
+# see tmi

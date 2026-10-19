@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# Example:
+# printf "'%s' " -- $(iye "n" yo) yo
+# printf "'%s' " -- $(inye "n" yo) yo
+
+# . $SCRIPTS/lib/hs
+
+test "$#" -gt 1 || exit 1
+
+input="$1"
+shift
+
+test "$input" = y && cmd "$@"

@@ -2058,3 +2058,13 @@ endf
 " nnoremap <M-r> R<C-r><C-">
 " nnoremap <M-r> R
 nnoremap <ESC>r :call NPasteReplace()<CR>
+
+" fun! ExportClipboard()
+"     if ! and(has_key(environ(), "VIM_IN_A_TTY"), matchstr(getenv("VIM_IN_A_TTY"),"y"))
+"         call system("xc -i", getreg('+'))
+"         " call system("xargs pstree ".getpid()." | tv &>/dev/null")
+"         " call system("xargs pstree ".string(v:argv)." | tv &>/dev/null")
+"     endif
+" endf
+" 
+" autocmd VimLeave * call ExportClipboard()

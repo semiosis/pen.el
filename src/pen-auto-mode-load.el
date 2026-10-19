@@ -10,6 +10,7 @@
 (add-to-list 'magic-mode-alist '("^#lang scribble" . scribble-mode))
 ;; Because the flk examples use .clj, I want to override this
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env flk" . lisp-mode))
+(add-to-list 'magic-mode-alist '("#!/usr/bin/env pash" . sh-mode))
 (add-to-list 'magic-mode-alist '("^#lang " . racket-mode))
 (add-to-list 'magic-mode-alist '("^#.*env stack$" . haskell-mode))
 (add-to-list 'magic-mode-alist '("^#.*sbcl" . lisp-mode))
@@ -87,6 +88,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.puml\\|\\.iuml\\|\\.uml\\)\\'" . plantuml-mode))
 (add-to-list 'auto-mode-alist '("\\.toml\\'" . toml-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.sh\\|.zsh\\)\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.pash\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(conf\\|\\.conf\\)\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.wls\\|\\.nb\\|\\.wl\\)\\'" . wolfram-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.pxd\\|\\.pyx\\)\\'" . cython-mode))

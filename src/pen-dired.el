@@ -352,4 +352,10 @@ read from minibuffer."
   (cmd-out-to-tablist-quick
    (cmd "directory-listing-to-csv" dirpath "1") t))
 
+;; (define-key dired-mode-map (kbd "I") 'dired-do-info)
+(define-key dired-mode-map (kbd "I") nil)
+
+;; (define-key dired-mode-map (kbd "N") 'dired-do-man)
+(define-key dired-mode-map (kbd "N") nil)
+
 (provide 'pen-dired)

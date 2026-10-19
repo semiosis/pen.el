@@ -29,20 +29,32 @@ fi
 
 exec 0</dev/null
 
-ub -E "$(cmd elinks-dump "$input_fp") | cat" | sed -z "s/   [0-9]\\+\\n\\n[0-9]\\+   /\\n/" | sed -z "s/1\\n\\n/\\n/" | tv |
-    sed "s/   [0-9]\\+$//g" | sed "s/ / /g" |
-    erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" |
-    sed "s/ \\+/ /g" | 
-    ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd" |
-    sed "/^ \\+$/{s/^.*$//}" | sed '/INS::INS/,$d' |
-    erase-trailing-whitespace |
-    sed 's/^[0-9]\+ \([^ ]\)/\1/' |
-    sed 's/^\[e\] //' |
-    sed "s/^\\([0-9]\\)/${lang}\\1/" |
+# This speds up slightly the onelined version after running get-interlinear regularly
+IFS= read -r -d '' shcode <<HEREDOC
+    debugpipe () {
+        # tv
+        cat
+    }
+
+    ub -E "$(cmd elinks-dump -w 100 "$input_fp") | cat" | sed -z "s/   [0-9]\\+\\n\\n[0-9]\\+   /\\n/" | sed -z "s/1\\n\\n/\\n/" | debugpipe |
+        sed "s/   [0-9]\\+$//g" | sed "s/ / /g" |
+        erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" |
+        sed "s/ \\+/ /g" | 
+        ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd" |
+        sed "/^ \\+$/{s/^.*$//}" | sed '/INS::INS/,\$d' |
+        erase-trailing-whitespace |
+        sed 's/^[0-9]\+ \([^ ]\)/\1/' |
+        sed 's/^\[e\] //' |
+        sed "s/^\\([0-9]\\)/${lang}\\1/" |
+        sed -e '/^$/d' -e '/^\[e\]$/d' | sed -z 's/\(\n[GH][0-9]\)/\n\1/g'
+HEREDOC
+
+ocif bash -c "$shcode" |
     pen-aatr -k "\n\n" "fill-lines-to-longest-line" | max-double-spaced.sh | sed -z 's/\n\+$//' | 
     {
         if test "$ONELINED" = "y"; then
-            pen-aatr -k "\n\n" "biblemode-onelineify-interlinear-block" | sed '/^$/d'
+            # This is quite slow. Using cif here is negligable, maybe
+            pen-aatr -k "\n\n" "cif biblemode-onelineify-interlinear-block" | sed '/^$/d'
         else
             cat
         fi

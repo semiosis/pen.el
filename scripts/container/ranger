@@ -6,6 +6,8 @@ export TTY
 # /usr/bin/ranger "$@"
 # exit "$?"
 
+export INSIDE_EMACS
+
 # export PAGER=less
 # export EDITOR=vim
 # export PATH="$HOME/scripts:$PATH"
@@ -25,6 +27,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         export CWD="$(get-dump-name "$CWD")"
         mkdir -p "$CWD"
         cd "$CWD"
+        shift
+    }
+    ;;
+
+    -pen-debug) {
+        PEN_DEBUG=y
         shift
     }
     ;;
@@ -51,18 +59,39 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -2) {
+        export BLACK_AND_WHITE=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-export TERM=xterm-256color
+: "${TERM:="xterm-256color"}"
+export TERM
+
+if test "$TERM" = screen-2color; then
+    BLACK_AND_WHITE=y
+fi
+
+pargs=()
+
+if test "$BLACK_AND_WHITE" = "y"; then
+    pargs+=(--cmd="set colorscheme=snow")
+fi
 
 # pybin=/usr/bin/python3.7
 pybin=/usr/local/bin/python3.10
-CMD="$pybin /root/repos/ranger/ranger/ranger.py $(cmd "$@")"
+CMD="$pybin /root/repos/ranger/ranger/ranger.py $(cmd "${pargs[@]}" "$@")"
 # CMD="/root/repos/ranger/ranger/ranger.py $(cmd "$@")"
 
 # echo "$CMD"
 # exit
+
+if test "$PEN_DEBUG" = "y"; then
+    CMD="SHELL=$(nsfa envtv /bin/sh) TERMCMD=$(nsfa envtv /bin/sh) $CMD"
+fi
 
 {
 	# This doesn't work, sadly

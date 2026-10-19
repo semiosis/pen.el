@@ -164,7 +164,8 @@ If `soft` and `semantic-path` are both `nil` then that would usually result in a
                     "ASCII Adventures")
                
                (and (major-mode-enabled 'sqlite-mode)
-                    sqlite--db-path)
+                    (ignore-errors
+                      sqlite--db-file))
                
                (and (major-mode-enabled 'helpful-mode)
                     (or
@@ -802,10 +803,14 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 (defmacro echo (&rest body)
   `(pen-b echo ,@body))
 
-(defun e (path)
+(defun e (path &optional literally)
   (interactive)
   (if path
-      (find-file (eval `(echo -n ,path)))))
+      (progn
+        (setq path (eval `(echo -n ,path)))
+        (if literally
+            (pen-find-file-literally path)
+          (find-file path)))))
 
 (defun recursive-widen ()
   "Replacement of widen that will only pop one level of visibility."
@@ -1270,7 +1275,7 @@ non-nil."
   (interactive "P")
   (pen-truncate-lines (not truncate-lines)))
 
-(defun pen-nsfa (cm &optional dir input noresize)
+(defun pen-nsfa (cm &optional dir input noresize removeonexit)
   (let ((qdir (pen-q dir)))
     (pen-sn (concat
              (if dir (concat " cd " qdir "; "
@@ -1280,6 +1285,9 @@ non-nil."
              (if noresize
                  ""
                  " -resize ")
+             (if removeonexit
+                 " -rm "
+               "")
              " -E " (pen-q cm)) input (or dir
                                           (cwd t)))))
 

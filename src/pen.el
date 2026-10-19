@@ -50,19 +50,27 @@
 (defun f-join (&rest bits)
   (s-join "/" bits))
 
+(defcustom pen-disable-ignore-errors nil
+  "for j:pen-ignore-errors and j:pen-ignore-errors-with-context"
+  :type 'boolean
+  :group 'pen)
+
 (defmacro pen-ignore-errors (&rest body)
   "Execute BODY; if an error occurs, return nil.
 Otherwise, return result of last form in BODY.
 See also `with-demoted-errors' that does something similar
 without silencing all errors."
   (declare (debug t) (indent 0))
-  `(condition-case e (progn ,@body)
-     ((error nil)
-      ;; (pen-flash)
-      ;; (nav-flash-show)
-      (mode-line-bell-flash)
-      (pen-message-no-echo "Suppressed error: %S"
-			               (error-message-string e)))))
+  `(if pen-disable-ignore-errors
+       (progn ,@body)
+     (condition-case e (progn ,@body)
+       ((error nil)
+        ;; (pen-flash)
+        ;; (nav-flash-show)
+        (mode-line-bell-flash)
+        (pen-message-no-echo "Suppressed error: %S"
+                             (error-message-string e))))))
+
 (defalias 'suppress-errors 'pen-ignore-errors)
 
 (defmacro pen-ignore-errors-with-context (context &rest body)
@@ -71,14 +79,16 @@ Otherwise, return result of last form in BODY.
 See also `with-demoted-errors' that does something similar
 without silencing all errors."
   (declare (debug t) (indent 0))
-  `(condition-case e (progn ,@body)
-     ((error nil)
-      ;; (pen-flash)
-      ;; (nav-flash-show)
-      (mode-line-bell-flash)
-      (pen-message-no-echo "Suppressed error: %S inside %s"
-			               (error-message-string e)
-                           (s-truncate 60 (str ,context))))))
+  `(if pen-disable-ignore-errors
+       (progn ,@body)
+     (condition-case e (progn ,@body)
+       ((error nil)
+        ;; (pen-flash)
+        ;; (nav-flash-show)
+        (mode-line-bell-flash)
+        (pen-message-no-echo "Suppressed error: %S inside %s"
+                             (error-message-string e)
+                             (s-truncate 60 (str ,context)))))))
 (defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)
 
 (defun ignore-errors-around-advice (proc &rest args)
@@ -195,6 +205,7 @@ The arguments are in English like this:
 (require 'pen-pcre)
 (require 'pen-custom)
 (require 'pen-support)
+(require 'pen-hex)
 (require 'pen-files)
 
 (defun org-require-around-advice (proc &rest args)
@@ -418,6 +429,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-sh)
 (require 'pen-library)
 (require 'pen-context)
+(require 'pen-mode-specific-context)
 (if (inside-docker-p)
   (require 'pen-journal))
 (require 'pen-gitlab)
@@ -772,22 +784,27 @@ Reconstruct the entire yaml-ht for a different language."
 (defun pen-encode-string (s &optional newlines)
   (let ((encoded
          (->> s
-           ;; (string-replace ";" "<pen-semicolon>")
-           (string-replace "\"" "<pen-doublequote>")
-           (string-replace ":" "<pen-colon>")
-           ;; This breaks it because it encodes slugs. Don't do it
-           ;; (string-replace "-" "<pen-dash>")
-           (string-replace "'" "<pen-singlequote>")
-           (string-replace "`" "<pen-backtick>")
-           (string-replace "\\" "<pen-backslash>")
-           (string-replace "!" "<pen-bang>")
-           (string-replace "\\n" "<pen-notnewline>")
-           (string-replace "$" "<pen-dollar>"))))
-    (if newlines
-        (setq encoded
-              (->> encoded
-                (string-replace "\n\n" "<pen-dnl>")
-                (string-replace "\n" "<pen-newline>"))))
+              ;; (string-replace ";" "<pen-semicolon>")
+              (string-replace "\"" "<pen-doublequote>")
+              (string-replace ":" "<pen-colon>")
+              ;; This breaks it because it encodes slugs. Don't do it
+              ;; (string-replace "-" "<pen-dash>")
+              (string-replace "'" "<pen-singlequote>")
+              (string-replace "`" "<pen-backtick>")
+              (string-replace "\\" "<pen-backslash>")
+              (string-replace "!" "<pen-bang>")
+              (string-replace "\\n" "<pen-notnewline>")
+              (string-replace "$" "<pen-dollar>"))))
+    (cond
+     ((equal newlines 2) (setq encoded
+                               (->> encoded
+                                    (string-replace "\n\n" "<pen-dnl>")
+                                    (string-replace "\n" "\n<pen-newline>"))))
+     (newlines (setq encoded
+                     (->> encoded
+                          (string-replace "\n\n" "<pen-dnl>")
+                          (string-replace "\n" "<pen-newline>")))))
+
     encoded))
 
 (defun pen-decode-string (s)

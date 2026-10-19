@@ -12,6 +12,8 @@
 (require 'lsp-headerline)
 (require 'pen-lsp-common-lisp)
 
+(setq lsp-log-io t)
+
 ;; (setq lsp-clients-vim-executable
 ;;       '("vim-language-server" "--stdio"))
 (setq lsp-clients-vim-executable
@@ -1076,5 +1078,53 @@ We don't extract the string that `lps-line' is already displaying."
 ;;                        (when (or (= current-index ,length-symbols) (not lsp-ui-sideline-wait-for-all-symbols))
 ;;                          (lsp-ui-sideline--display-all-info ,list-infos tag bol eol))))
 ;;                    :mode 'tick))))))))))
+
+
+;; Remove emojis
+(defun lsp-log (format &rest args)
+  "Log message to the ’*lsp-log*’ buffer.
+
+FORMAT and ARGS i the same as for `message'."
+  (when lsp-log-max
+    (let ((log-buffer (get-buffer "*lsp-log*"))
+          (inhibit-read-only t))
+      (unless log-buffer
+        (setq log-buffer (get-buffer-create "*lsp-log*"))
+        (with-current-buffer log-buffer
+          (buffer-disable-undo)
+          (view-mode 1)
+          (set (make-local-variable 'lsp--log-lines) 0)))
+      (with-current-buffer log-buffer
+        (save-excursion
+          (let* ((message (apply 'format format args))
+                 ;; Count newlines in message.
+                 (newlines (1+ (cl-loop with start = 0
+                                        for count from 0
+                                        while (string-match "\n" message start)
+                                        do (setq start (match-end 0))
+                                        finally return count))))
+            (goto-char (point-max))
+
+            ;; in case the buffer is not empty insert before last \n to preserve
+            ;; the point position(in case it is in the end)
+            (if (eq (point) (point-min))
+                (progn
+                  (insert "\n")
+                  (backward-char))
+              (backward-char)
+              (insert "\n"))
+            ;; (insert (ascify message))
+            (insert (pen-snc "pen-c ascify" message))
+
+            (setq lsp--log-lines (+ lsp--log-lines newlines))
+
+            (when (and (integerp lsp-log-max) (> lsp--log-lines lsp-log-max))
+              (let ((to-delete (- lsp--log-lines lsp-log-max)))
+                (goto-char (point-min))
+                (forward-line to-delete)
+                (delete-region (point-min) (point))
+                (setq lsp--log-lines lsp-log-max)))))))))
+
+(define-key lsp-mode-map (kbd "s-l l") 'lsp-switch-to-io-log-buffer)
 
 (provide 'pen-lsp)

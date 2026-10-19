@@ -1,0 +1,103 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+export FSNOTES="$NOTES/programs/note/archive"
+test -d "$FSNOTES" || mkdir -p "$FSNOTES"
+
+# tmux-fs-notes.sh
+# get-fs-notes.sh
+
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+args_s="$@"
+
+opt="$1"
+shift
+case "$opt" in
+    getlinks) { # find all the links in the files in my notes folder
+        exec 2>/dev/null
+        tm n "$opt :: NOT IMPLEMENTED"
+        echo "$opt :: NOT IMPLEMENTED"
+    }
+    ;;
+
+    fs) {
+        cmd="$1"
+        shift
+        case "$cmd" in
+            edit) { # Edit the notes for a directory or path
+                path="$1"
+                rp="$(realpath "$path")"
+
+                # dn="$(p "$rp" | ux dn)"
+
+                notes_dir_path="$FSNOTES$rp"
+                mkdir -p "$notes_dir_path"
+                notes_path="$notes_dir_path/$(date +%d.%m.%y).txt"
+                touch "$notes_path"
+
+                # editor "$notes_path"
+                v "$notes_path"
+                break
+            }
+            ;;
+
+            view) { # Show notes below a directiory
+                path="$1"
+                rp="$(realpath "$path")"
+
+                # dn="$(p "$rp" | ux dn)"
+
+                notes_dir_path="$FSNOTES$rp"
+
+                find "$notes_dir_path" -type f | awk 1 | while IFS=$'\n' read -r line; do
+                    lit "$line" | mnm
+                    echo
+                    cat "$line"
+                    echo
+                    echo
+                done | v
+                break
+            }
+            ;;
+
+            *)
+        esac
+
+        break
+    }
+    ;;
+
+    template) {
+        :
+    }
+    ;;
+
+    *) {
+        if printf -- "%s\n" "$args_s" | bible-verse-ref-p; then
+            ref="$(printf -- "%s\n" "$args_s" | scrape-bible-references | canonicalise-bible-ref)"
+            refslug="$(printf -- "%s\n" "$ref" | sed -e 's/:/ v/' -e 's/-/ to /g' -e 's/,/ /g' | slugify)"
+            fp="$PENCONF/documents/bible-notes/verse/${refslug}.org"
+
+            if is_tty; then
+                v "$fp"
+            else
+                if [[ $INSIDE_EMACS == *,eshell ]]; then
+                    pl "[[e:$fp]]" | org-template-gen org
+                else
+                    pl "$fp"
+                fi
+            fi
+
+        fi
+    }
+esac

@@ -240,21 +240,38 @@ age() {
 
 CMD="$CMD; echo \"\$?\" > \"\$cache_file_path_exitcode\""
 
+showenvs() {
+    for opt in "$@"
+    do
+        eval val=\${$opt}
+        echo "${opt}=<${val}>"
+    done
+}
+
 main() {
     # Check whether there is a cache with this path and act accordingly
+    cache_file_path_exists="$(test -f "$cache_file_path"; if test "$?" = 0; then echo Yes; else echo No; fi)"
+    cache_file_path_notempty="$(test -s "$cache_file_path"; if test "$?" = 0; then echo Yes; else echo No; fi)"
+    if test "$CI_VERBOSE" = "y"; then
+        showenvs force_on cache_file_path cache_file_path_exists cache_file_path_notempty RETRY_TIMEOUT file_age UPDATE | hls yellow 1>&2
+    fi
+
     if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
         file_age="$(test -f "$cache_file_path" && age "$cache_file_path")"
         # echo "RT: $RETRY_TIMEOUT; file_age: $file_age" | tv &>/dev/null
         if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && { test -n "$RETRY_TIMEOUT" && test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$FORCE_RETRY" = y; then
+            test "$CI_VERBOSE" = "y" && echo "pen-ci: Cache checked too soon" | hls pink 1>&2
             echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
             exit 0
-        elif test -f "$cache_file_path" && test -s "$cache_file_path" && { test "$RETRY_TIMEOUT" = "" || test "$file_age" -lt "$RETRY_TIMEOUT"; } && ! test "$UPDATE" = y; then
+        elif test -f "$cache_file_path" && { test -s "$cache_file_path" || test "$force_on" = y; } && { test "$RETRY_TIMEOUT" = "" || { test "$file_age" -lt "$RETRY_TIMEOUT" || ! test -n "${$file_age}{$RETRY_TIMEOUT}"; }; } && ! test "$UPDATE" = y; then
+            test "$CI_VERBOSE" = "y" && echo "pen-ci: Using cache" | hls pink 1>&2
             # if test "$notify_not_updated" = "y"; then
                 # echo "Cache used for $CMD" | tee -a /tmp/ci-log.txt 1>&2
             # fi
     
             0</dev/null o_cat "$cache_file_path"
         else
+            test "$CI_VERBOSE" = "y" && echo "pen-ci: Updating" | hls pink 1>&2
             # Update
             rm -f "$cache_file_path"
     

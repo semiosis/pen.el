@@ -36,6 +36,7 @@ HEREDOC
 # I need to fix stdin caching
 builtins_list="$(pf -- "%s\n" "$shcode" | myeval)"
 signals_list="$(/bin/kill -l | tr -s ' ' '\n')"
+override_builtins_list=test
 
 CMD="$(cmd "$@")"
 export GY_CMD="man $CMD"
@@ -157,12 +158,13 @@ if test "$#" -gt 0; then
     # String length of the last argument
     len=${#last_arg}
     builtin_match="$(pl -- "$builtins_list" | grep -F "$last_arg" | grep -P "^$(0</dev/null rps "$len" .)$")"
+    override_builtin_match="$(pl -- "$override_builtins_list" | grep -F "$last_arg" | grep -P "^$(0</dev/null rps "$len" .)$")"
 
     if test "$builtin_match" = "["; then
         builtin_match=test
     fi
 
-    if test -n "$builtin_match"; then
+    if test -n "$builtin_match" && ! test -n "$override_builtin_match"; then
         vimcmd="vs +/$(cmd-nice "$builtin_match") -ft man"
         eval "/usr/bin/man bash-builtins 2>&1 | $vimcmd"
         exit "$?"

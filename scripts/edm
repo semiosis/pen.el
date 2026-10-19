@@ -23,7 +23,7 @@ unescapevimspecial() {
 }
 
 read -r -d '' shell_cmd <<HEREDOC
-unbuffer vim -c 'set noswapfile' \\
+unbuffer vim -notty -c 'set noswapfile' \\
     -c "e! $tf_temp" \\
 $(
 pattern=

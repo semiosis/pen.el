@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# This is to help me to debug where a command is being called from
+# . $SCRIPTS/lib/hs
+
+export RUNFROM_NAME="$1"
+shift
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+eval "$CMD"

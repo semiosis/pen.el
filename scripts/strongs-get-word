@@ -11,6 +11,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -c) {
+        with_code=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -63,9 +69,34 @@ if test "$force" = y || [[ ${codes[@]} =~ $value ]]; then
         code="${code#H}"
     fi
 
-    out="$(
-"diatheke" "-b" "$module" "-o" "w" "-f" "internal" "-k" "$code" |
-    sed -n 1p | sed 's/ \+/ /g' | cut -d ' ' -f 3
-)"
-printf -- "%s" "($out)"
+    if printf -- "%s\n" "$code" | grep -q -P '[A-Za-z]$'; then
+        out="$(
+        # cmd "diatheke" "-b" "$module" "-o" "w" "-f" "internal" "-k" "$code" | tv &>/dev/null
+        {
+            if test "$module" = "StrongsGreek"; then
+                ocif web title "https://biblehub.com/greek/${code}.htm"
+            else
+                ocif web title "https://biblehub.com/hebrew/${code}.htm"
+            fi
+        } | sed 's/^.* \. \(.*\) --.*/\1/'
+        )"
+    else
+        out="$(
+        "diatheke" "-b" "$module" "-o" "w" "-f" "internal" "-k" "$code" |
+        sed -n 1p | sed 's/ \+/ /g' | cut -d ' ' -f 3
+        )"
+    fi
+
+    if test "$with_code" = "y"; then
+        if test "$module" = "StrongsGreek"; then
+            code="G${code}"
+        else
+            code="H${code}"
+        fi
+
+        printf -- "%s" "($code $out)"
+    else
+        printf -- "%s" "($out)"
+    fi
+
 fi
