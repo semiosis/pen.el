@@ -68,7 +68,7 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "Suppressed error: %S"
+        (pen-message-no-echo "j:pen-ignore-errors Suppressed error: %S"
                              (error-message-string e))))))
 
 (defalias 'suppress-errors 'pen-ignore-errors)
@@ -86,9 +86,9 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "Suppressed error: %S inside %s"
+        (pen-message-no-echo "j:pen-ignore-errors-with-context Suppressed error: %S inside %s"
                              (error-message-string e)
-                             (s-truncate 60 (str ,context)))))))
+                             (s-truncate 100 (str ,context)))))))
 (defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)
 
 (defun ignore-errors-around-advice (proc &rest args)
@@ -2584,12 +2584,7 @@ May use to generate code from comments."
 (if (inside-docker-p)
     (progn
       (require 'pen-term)
-      (require 'pen-lsp-java)
-      ))
-
-;; why did this run twice?
-(message "running 2222nd line")
-
+      (require 'pen-lsp-java)))
 (require 'pen-lsp)
 (require 'pen-custom-lsp-ui-doc)
 (require 'pen-lsp-booster)
@@ -3056,5 +3051,9 @@ May use to generate code from comments."
 
 ;; Re-enable file locking when startup is complete.
 (setq create-lockfiles t)
+
+(comment
+ (setq pen-disable-ignore-errors t)
+ (setq pen-disable-ignore-errors nil))
 
 (provide 'pen)

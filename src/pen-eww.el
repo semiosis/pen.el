@@ -822,10 +822,11 @@ word(s) will be searched for via `eww-search-prefix'."
 (defun lg-url-is-404 (url)
   "URL is 404"
   ;; lg-url-is-404
-  (let ((info (pen-sn (concat "pen-curl-firefox -s -I " (pen-q url))))
-        (html (pen-sn (concat "dom-dump " (pen-q url)))
-              ;; (pen-sn (concat "pen-curl-firefox -s " (pen-q url)))
-              ))
+  (let ((info (pen-sn (concat "named 'get curl header' pen-curl-firefox -s -I " (pen-q url))))
+        (html ;; (pen-sn (concat "spin -m 'check lg-url-is-404' dom-dump " (pen-q url)))
+         (curl url t)
+         ;; (pen-sn (concat "pen-curl-firefox -s " (pen-q url)))
+         ))
     (comment
      (pen-sn-true (concat "pen-curl-firefox -s -I " (pen-q url) " | grep -q \"404 Not Found\"")))
     (or (re-match-p "Wikipedia does not have an article with this exact name" html)

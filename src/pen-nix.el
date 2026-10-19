@@ -318,8 +318,8 @@ at point instead."
 (defun sh/glob-grep (pattern input)
   (pen-sn (concat "glob-grep " (pen-q pattern) " 2>/dev/null") input))
 
-(defun curl (url &optional cache)
-  (if cache
+(defun curl (url &optional cache-result)
+  (if cache-result
       (pen-sn (concat "ocif curl " (pen-q url) " 2>/dev/null"))
     (pen-sn (concat "curl " (pen-q url) " 2>/dev/null"))))
 

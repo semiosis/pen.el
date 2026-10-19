@@ -82,7 +82,7 @@ e.g., for sending an email message.\n ")
 		               " encountered characters it couldn't encode:\n"))
 	          (dolist (coding unsafe)
 		        (insert (format "  %s cannot encode these:" (car coding)))
-		        (let ((interactive 0)
+		        (let ((i 0)
 		              (func1
 		               #'(lambda (bufname pos)
 			               (when (buffer-live-p (get-buffer bufname))

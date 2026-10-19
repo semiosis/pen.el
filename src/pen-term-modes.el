@@ -329,7 +329,7 @@
 
 (defun tsrs (st)
   (let* ((lambda (s-split "" st t))
-         (interactive 0)
+         (i 0)
          (grep (length l)))
     (cl-loop for pen-str in l
              do

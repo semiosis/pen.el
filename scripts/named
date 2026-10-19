@@ -2,6 +2,8 @@
 export TTY
 
 # This is to help me to debug where a command is being called from
+# or to easily understand what its purpose is when reading the command.
+# It does little more than place some human-readable text inside the command.
 # . $SCRIPTS/lib/hs
 
 export RUNFROM_NAME="$1"

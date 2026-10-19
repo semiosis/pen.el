@@ -16,11 +16,21 @@
         nil
       (pen-thing-at-point))))
 
-(cl-defun pen-counsel-ag (&optional initsearch extra-args prompt &key histvar &key basecmd)
+(cl-defun pen-counsel-ag (&optional initsearch extra-args prompt &key histvar &key basecmd &key literally)
   (interactive)
 
+  (if (region-active-p)
+      (setq literally t))
+
   (if (not basecmd)
-      (setq basecmd "pen-counsel-ag-cmd %s"))
+      (if literally
+          (setq basecmd "pen-counsel-ag-cmd -F %s")
+        (setq basecmd "pen-counsel-ag-cmd %s")))
+
+  (if (not prompt)
+      (if literally
+          (setq prompt "pen-counsel-ag-cmd (literal): ")
+        (setq prompt "pen-counsel-ag-cmd (grep pattern): ")))
 
   (setq counsel-ag-base-command basecmd)
 

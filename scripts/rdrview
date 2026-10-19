@@ -33,6 +33,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -url) {
+        output_html=y
+        output_url=y
+        shift
+    }
+    ;;
+
     -u) {
         fargs+=("$1" "$2")
         shift
@@ -164,4 +171,8 @@ $reader_html
 </html>
 HEREDOC
 
-printf -- "%s\n" "$output_html" | pager
+if test "$output_url" = "y"; then
+    printf -- "%s\n" "$output_html" | tf html
+else
+    printf -- "%s\n" "$output_html" | pager
+fi
