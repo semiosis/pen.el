@@ -2111,4 +2111,103 @@ COMMAND may result in an alias being executed, or a plain command."
 	      (eshell-plain-command eshell-last-command-name
 				                eshell-last-arguments))))
 
+
+(defsubst eshell/ead (&rest args)
+  "An alias version of `eshell-do-ead'."
+  (let ((insert-func 'eshell-buffered-print)
+	(error-func 'eshell-error)
+	(flush-func 'eshell-flush))
+    (apply 'eshell-do-ead args)))
+
+;; j:eshell/ls
+(defun eshell-do-ead (&rest args)
+  "Implementation of \"ead\" in Lisp, passing ARGS."
+  ;; Process the command arguments, and begin listing files.
+  (eshell-eval-using-options
+   "ls" (if eshell-ls-initial-args
+            (list eshell-ls-initial-args args)
+          args)
+   '((?a "all" nil show-all
+         "do not ignore entries starting with .")
+     (?A "almost-all" nil show-almost-all
+         "do not list implied . and ..")
+     (?c nil by-ctime sort-method
+         "sort by last status change time")
+     (?d "directory" nil dir-literal
+         "list directory entries instead of contents")
+     (?k "kilobytes" 1024 block-size
+         "using 1024 as the block size")
+     (?h "human-readable" 1024 human-readable
+         "print sizes in human readable format")
+     (?H "si" 1000 human-readable
+         "likewise, but use powers of 1000 not 1024")
+     (?I "ignore" t ignore-pattern
+         "do not list implied entries matching pattern")
+     (?l nil long-listing listing-style
+         "use a long listing format")
+     (?n "numeric-uid-gid" nil numeric-uid-gid
+         "list numeric UIDs and GIDs instead of names")
+     (?r "reverse" nil reverse-list
+         "reverse order while sorting")
+     (?s "size" nil show-size
+         "print size of each file, in blocks")
+     (?t nil by-mtime sort-method
+         "sort by modification time")
+     (?u nil by-atime sort-method
+         "sort by last access time")
+     (?x nil by-lines listing-style
+         "list entries by lines instead of by columns")
+     (?C nil by-columns listing-style
+         "list entries by columns")
+     (?L "dereference" nil dereference-links
+         "list entries pointed to by symbolic links")
+     (?R "recursive" nil show-recursive
+         "list subdirectories recursively")
+     (?S nil by-size sort-method
+         "sort by file size")
+     (?U nil unsorted sort-method
+         "do not sort; list entries in directory order")
+     (?X nil by-extension sort-method
+         "sort alphabetically by entry extension")
+     (?1 nil single-column listing-style
+         "list one file per line")
+     (nil "dired" nil dired-flag
+          "Here for compatibility with GNU ls.")
+     (nil "help" nil nil
+          "show this usage display")
+     :external "ls"
+     :usage "[OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically across.")
+   ;; setup some defaults, based on what the user selected
+   (unless block-size
+     (setq block-size eshell-ls-default-blocksize))
+   (unless listing-style
+     (setq listing-style 'by-columns))
+   (unless args
+     (setq args (list ".")))
+   (let ((eshell-ls-exclude-regexp eshell-ls-exclude-regexp))
+     (when ignore-pattern
+       (unless (eshell-using-module 'eshell-glob)
+         (error (concat "-I option requires that `eshell-glob'"
+                        " be a member of `eshell-modules-list'")))
+       (set-text-properties 0 (length ignore-pattern) nil ignore-pattern)
+       (setq eshell-ls-exclude-regexp
+             (if eshell-ls-exclude-regexp
+                 (concat "\\(" eshell-ls-exclude-regexp "\\|"
+                         (eshell-glob-regexp ignore-pattern) "\\)")
+               (eshell-glob-regexp ignore-pattern))))
+     ;; list the files!
+     (eshell-ls-entries
+      (mapcar (lambda (arg)
+                (cons (if (and (eshell-under-windows-p)
+                               (file-name-absolute-p arg))
+                          (expand-file-name arg)
+                        arg)
+                      (eshell-file-attributes
+                       arg (if numeric-uid-gid 'integer 'string))))
+              args)
+      t (expand-file-name default-directory)))
+   (funcall flush-func)))
+
 (provide 'pen-eshell)

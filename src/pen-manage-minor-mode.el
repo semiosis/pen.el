@@ -223,6 +223,9 @@
         (yaml-mode
          (on auto-highlight-symbol-mode))
 
+        (bible-mode
+         (on auto-highlight-symbol-mode))
+
         (prompt-description-mode
          (on auto-highlight-symbol-mode))
 

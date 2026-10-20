@@ -1550,7 +1550,8 @@ Also see option `magit-blame-styles'."
 
   (message "Running pen-disable-all-faces")
 
-  (pen-save-faces)
+  (if (not pen-black-and-white)
+      (pen-save-faces))
   ;; Optimise this check later
   (if (or t (not pen-black-and-white))
       (progn
@@ -1969,7 +1970,7 @@ Also see option `magit-blame-styles'."
                                      ;; org-bold
                                      org-todo
                                      org-done
-                                     hc-tab
+                                     
                                      company-tooltip
 
                                      markdown-markup-face
@@ -2022,6 +2023,7 @@ Also see option `magit-blame-styles'."
                            ;; :italic t
                            )))
 
+        (require 'comint)
         (cl-loop for fr in (frame-list)
                  do
 
@@ -2085,10 +2087,9 @@ Also see option `magit-blame-styles'."
                                      magit-diff-hunk-heading
 
                                      ;; diff-removed
-
+                                     hc-tab
                                      diff-refine-removed
-
-                                     )
+                                     comint-highlight-prompt)
                           do
                           (set-face-attribute
                            f fr
@@ -2139,13 +2140,22 @@ Also see option `magit-blame-styles'."
                            ;; :italic t
                            )))
         ;; No underline, no inverse, no inherit
-  
+
+        (require 'tree-sitter-hl)
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(Man-overstrike
                                      markdown-markup-face
-                               
-                                     )
+
+                                     tree-sitter-hl-face:method.call
+                                     tree-sitter-hl-face:operator
+                                     tree-sitter-hl-face:property
+                                     ;; tree-sitter-hl-face:function.method
+                                     ;; tree-sitter-hl-face:keyword
+
+
+                                     ;; e:/root/repos/tlsa/libcyaml/src/copy.c
+                                     font-lock-property-use-face)
                           do
                           (set-face-attribute
                            f fr

@@ -1137,7 +1137,10 @@
 (define-key eww-bookmark-mode-map (kbd "p") 'pen-previous-defun)
 (define-key eww-mode-map (kbd "w") 'pen-yank-path)
 (define-key eww-mode-map (kbd "Y") 'new-buffer-from-selection-detect-language)
-(define-key eww-mode-map (kbd "k") 'toggle-cached-version)
+
+;; This needs reimplementation. Use internet archive
+(comment
+ (define-key eww-mode-map (kbd "k") 'toggle-cached-version))
 
 ;; Reader doesnt work anyway
 (define-key eww-mode-map (kbd "R") 'toggle-use-rdrview)
