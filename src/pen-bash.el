@@ -1,14 +1,19 @@
 (require 'sh-script)
 (require 'itail)
 
-(defun bash-messages ()
+(defun bash-messages (&optional edit?)
   (interactive)
   ;; (comint-quick (pen-cmd "bash-messages" filter) user-home-directory)
-
-  (itail (f-join user-home-directory "bash-messages.txt")
-         0)
+  (setq current-prefix-arg nil)
+  (if edit?
+      ;; (find-file-literally (f-join user-home-directory "bash-messages.txt"))
+      ;; (pen-use-vterm (sps "bash-messages"))
+      ;; (pen-use-term (sps "bash-messages"))
+      (nw "bash-messages")
+    (itail "/tmp/shell-messages.log"
+           0))
   ;; (sps (pen-cmd "bash-messages" filter))
-  
+
   ;; (let ((shell-file-name "/bin/sh"))
   ;;   (start-process-shell-command
   ;;    "bash-messages" nil

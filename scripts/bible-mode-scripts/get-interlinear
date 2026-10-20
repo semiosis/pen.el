@@ -123,7 +123,7 @@ org_templatify_maybe() {
 {
     {
         printf -- "%s\n" "+ ${link} (Interlinear) :: " | awk 1
-        ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | awk 1 | sed 's/^/    /' | sed 's/ \+$//'
+        ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | awk 1 | sed 's/^/    /' | sed 's/ \+$//' | sed -z "s/\n    - / - /g"
     } | {
         if test "$WITH_LINKS" = "y"; then
             strongs-codes-relinkify

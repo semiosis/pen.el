@@ -756,8 +756,9 @@ word(s) will be searched for via `eww-search-prefix'."
 
       (if (and (not pen-lg-always)
                ;; (not (lg-url-cache-exists url))
-               (lg-url-is-404 url)
+               (not (lg-url-cache-exists url))
                (pen-internet-connected-p)
+               (lg-url-is-404 url)
                (yn "URL is 404. Try wayback?"))
           (setq url (eww-select-wayback-for-url url)))
 
@@ -819,6 +820,7 @@ word(s) will be searched for via `eww-search-prefix'."
                             (list url nil (current-buffer) nil use-chrome))))
           (current-buffer)))))))
 
+;; If the website is cached, I should not check for 404
 (defun lg-url-is-404 (url)
   "URL is 404"
   ;; lg-url-is-404
@@ -1823,7 +1825,17 @@ instead of `browse-url-new-window-flag'."
                        (read-string-hist "chrome: "))))
   (pen-chrome url))
 
-(advice-add 'font-lock-fontify-keywords-region :around #'ignore-errors-around-advice)
+(comment
+ ;; This helps it to work. But the error message being spit out was very large
+ (advice-add 'font-lock-fontify-keywords-region :around #'ignore-errors-around-advice)
+ (advice-remove 'font-lock-fontify-keywords-region #'ignore-errors-around-advice))
+(comment
+ ;; Unsure why not working
+ (advice-add 'font-lock-fontify-keywords-region :around #'ignore-errors-and-shut-up-around-advice)
+ (advice-remove 'font-lock-fontify-keywords-region #'ignore-errors-and-shut-up-around-advice))
+
+;; Just uses basic
+(advice-add 'font-lock-fontify-keywords-region :around #'ignore-errors-basic-around-advice)
 
 (defun shr-urlify (start url &optional title)
   (if (lg-url-cache-exists url)
@@ -1835,24 +1847,24 @@ instead of `browse-url-new-window-flag'."
    (list 'shr-url url
          'button t
          'category 'shr
-	       'help-echo (let ((parsed (url-generic-parse-url
+	     'help-echo (let ((parsed (url-generic-parse-url
                                    (or (ignore-errors
-				                                 (decode-coding-string
-				                                  (url-unhex-string url)
-				                                  'utf-8 t))
-				                               url)))
+				                         (decode-coding-string
+				                          (url-unhex-string url)
+				                          'utf-8 t))
+				                       url)))
                           iri)
                       (when (url-host parsed)
                         (setf (url-host parsed)
                               (puny-encode-domain (url-host parsed))))
                       (setq iri (url-recreate-url parsed))
-		                  (if title
+		              (if title
                           (format "%s (%s)" iri title)
                         iri))
-	       'follow-link t
+	     'follow-link t
          ;; Make separate regions not `eq' so that they'll get
          ;; separate mouse highlights.
-	       'mouse-face (list 'highlight)))
+	     'mouse-face (list 'highlight)))
   (while (and start
               (< start (point)))
     (let ((next (next-single-property-change start 'keymap nil (point))))

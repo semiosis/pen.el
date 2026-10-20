@@ -307,9 +307,13 @@
 ;; C-\ M-6 produces s-v (for Chrome browser)
 ;; (define-key key-translation-map (kbd "C-\\ M-6") 'superify)
 
+;; This does break the help key, though, sadly
 ;; C-] C-\ produces ESC
 ;; This is to avoid using C-[ for escape, as it was activating caret-mode in chrome
-(define-key function-key-map (kbd "C-]") 'controlify)
+(comment
+ (define-key function-key-map (kbd "C-]") 'controlify)
+ (define-key function-key-map (kbd "C-]") nil))
+
 ;; (define-key function-key-map (kbd "ESC C-i") 'metacontrolify)
 ;; (define-key function-key-map (kbd "ESC C-i") nil)
 ;; (define-key function-key-map (kbd "C-}") 'metacontrolify)

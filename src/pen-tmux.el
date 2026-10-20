@@ -595,7 +595,11 @@ START and END can be in either order."
     ;; (pen-eterm (pen-nsfa shcmd)
     ;;          ;; stdin dir noborder output_b
     ;;              )
-    (tmux-popup shcmd width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b bg fg style)))
+    
+    ;; (str shcmd) is used to strip text properties
+    ;; because when tpop "v 24.07.25.org" was being run from eshell
+    ;; the propertised text didn't work
+    (tmux-popup (str shcmd) width_pc height_pc x_pos y_pos (not show_status_b) stdin dir noborder output_b bg fg style)))
 
 ;; (defalias 'tpop 'cl-tmux-popup)
 

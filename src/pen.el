@@ -91,10 +91,15 @@ without silencing all errors."
                              (s-truncate 100 (str ,context)))))))
 (defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)
 
-(defun ignore-errors-around-advice (proc &rest args)
-  (suppress-errors-with-context proc
+(defun ignore-errors-basic-around-advice (proc &rest args)
+  (ignore-errors
     (let ((res (apply proc args)))
       res)))
+
+(defun ignore-errors-around-advice (proc &rest args)
+  (suppress-errors-with-context proc
+                                (let ((res (apply proc args)))
+                                  res)))
 
 (defun ignore-errors-and-shut-up-around-advice (proc &rest args)
   (shut-up

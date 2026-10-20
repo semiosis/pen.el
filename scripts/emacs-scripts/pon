@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+wd="$(pwd)"
+pen-e -D "DEFAULT" -E-tcp "(progn (eshell-run-command $(aqf "$CMD") $(aqf "$wd")))"
+pty="$(pen-e -D "DEFAULT" -E-tcp-echo "(frame-terminal (selected-frame))" | sed -n '/\/pts\//{p;q}' | scrape "/dev/pts/[0-9]*")"
+window_id="$(tmux list-panes -a -F "#{pane_tty} #{pane_id} #{window_id}" | grep "$pty " | cut -d ' ' -f 3 | sed -n 1p)"
+dispmsg -s "[pon] pty: $pty, window_id: $window_id, CMD: $CMD"
+# tmux-attach-window "$window_id"
+tm sel "$window_id"

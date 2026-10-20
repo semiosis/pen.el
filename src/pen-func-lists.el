@@ -121,6 +121,11 @@
                          reopen-in-pen-emacs-web-browse
                          rdrview))
 (defset eshell-mode-funcs '(ranger
+                            counsel-esh-history
+                            eshell-backward-matching-input
+                            eshell-forward-matching-input
+                            eshell-previous-matching-input
+                            eshell-next-matching-input
                             pcomplete-expand-and-complete
                             pen-start-term-visual-cmd
                             eshell-quit-process))

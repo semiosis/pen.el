@@ -1,0 +1,34 @@
+#!/bin/bash
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -s) {
+        silent=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$NO_STDIN" = y ` # for notty. e.g. notty xt vim ` && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if test "$silent" = "y"; then
+    exec &>/dev/null
+fi
+
+if stdin_exists; then
+    input="$(cat)"
+fi
+: ${input:="$(cmd "$@")"}
+
+printf -- "%s\n" "$input" | awk 1 | tee -a /tmp/shell-messages.log ~/bash-messages.txt

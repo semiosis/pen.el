@@ -127,6 +127,7 @@
           ("<[^ ]+>" . 'info-key-face)
           (" [A-Z] \\([A-Z_-]+[ .,;]\\)+" . 'info-allcaps-face)
           (" [A-Z][A-Z_-]+ " . 'info-allcaps-face)
+          ("^[A-Z][A-Z_-]+$" . 'info-allcaps-face)
           (" [a-z]+\\(-[a-z]+\\)+" . 'info-function-face)
           ;; Sadly, couldn't find an adequate pattern for numbers
           ;; [[info:elisp#Regexp Backslash][Emacs Info: elisp#Regexp Backslash]]

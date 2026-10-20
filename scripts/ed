@@ -15,6 +15,18 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nonvt) {
+        nonvt=y
+        shift
+    }
+    ;;
+
+    +[0-9]*) {
+        GOTO_LINE="$(p "$opt" | pen-mcut -d+ -f2)"
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -32,11 +44,20 @@ fi
 # https://youtu.be/Zpdo6We-_e0?t=1010
 
 
-if test "$nox" = "y"; then
+if test "$nox" = "y" && test "$nonvt" = "y" ; then
     builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
-    in-pen nvc rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
+    in-pen rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
+elif test "$nox" = "y"; then
+    builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
+    in-pen nvt -2 rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
 else
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}
-    x -sh "ed -nox $CMD" -e ">" -s "H" -c m -i
+    if test -n "$GOTO_LINE"; then
+        exec <&2
+        in-pen nvt -2 x -sh "ed -nox -nonvt $CMD" -e ">" -s "H" -c m -s "${GOTO_LINE}n" -c m -i
+    else
+        exec <&2
+        in-pen nvt -2 x -sh "ed -nox -nonvt $CMD" -e ">" -s "H" -c m -i
+    fi
 fi

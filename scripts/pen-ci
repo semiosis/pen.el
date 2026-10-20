@@ -219,14 +219,18 @@ o_tee() {
     fi
 }
 
-if test "$CI_VERBOSE" = "y"; then
-    {
-        echo "ci $CMD"
-        echo "EXTRA_METADATA=$EXTRA_METADATA" 
-        echo "cache_file_path=$cache_file_path" 
-        echo
-    } | hls blue 1>&2
-fi
+{
+    echo "ci $CMD"
+    echo "EXTRA_METADATA=$EXTRA_METADATA" 
+    echo "cache_file_path=$cache_file_path" 
+    echo
+} | dispmsg | {
+    if test "$CI_VERBOSE" = "y"; then
+        hls blue 1>&2
+    else
+        cat > /dev/null
+    fi
+}
 
 # $PENELD/scripts/age
 age() {

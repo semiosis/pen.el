@@ -47,6 +47,7 @@
         "vd"
         ;; t opens a tmux
         "t"
+        "fpvd"
         "minicom"
         "ranger"
         "r"
@@ -422,17 +423,27 @@ Any extra args go to that function"
  (edit-read-string-hist "fz-ddgr-bibleverse: "))
 
 ;; Do the following even work?
-(defun eshell-run-command (cmd)
+(defun eshell-run-command (cm &optional dir)
   (interactive (list (car (str2lines (read-string-hist "eshell$ " nil nil nil nil t)))))
+
+  ;; This built-in-command might be better.
+  ;; I should use it to improve the method.
+  (comment
+   (eshell-command-result "df -h"))
 
   (let ((buf (eshell-unique)))
     (with-current-buffer buf
+
+      (if dir
+          (progn
+            (insert (cmd "cd" (str dir)))
+            (eshell-send-input)))
 
       ;; For some reason, these two commands break it, even with
       ;; ignore-errors:
       ;; (ignore-errors (eshell-return-to-prompt))
       ;; (ignore-errors (eshell-kill-input))
-      (insert cmd)
+      (insert (str cm))
       ;; TODO Find a way to wait until the command sent by (eshell-send-input)
       ;; is fully executed before killing the buffer
       (progn (eshell-send-input) (kill-buffer buf))
@@ -440,19 +451,6 @@ Any extra args go to that function"
       ;; This is currently not working with cumx:pen-enter-evil-ex
       ;; etv ${bash -c 'for i in *; do ls -dx "$i"; done'}
       )))
-
-;; shell (not eshell)
-(defun shell-run-command (cmd)
-  (interactive (list (read-string-hist "shell$ ")))
-  (shell)
-  (with-current-buffer "*shell*"
-    (eshell-return-to-prompt)
-    (eshell-kill-input)
-    ;; (kill-line)
-    (insert cmd)
-    (eshell-send-input)))
-
-;; (define-key eshell-mode-map (kbd "C-l") 'eshell/clear)
 
 ;; This fixes eshell-pcomplete.
 ;; eshell-bol was going to the very beginning of the line
@@ -483,7 +481,7 @@ Any extra args go to that function"
          `(defun ,fname (&rest args)
             ,comment
             ;; Firstly, fix the arguments
-            (setq args (mapcar 'str args))
+            ;; (setq args (mapcar 'str args))
 
             (pen-snc (apply 'cmd (cons ,cname args)))))))
 
@@ -499,7 +497,7 @@ Any extra args go to that function"
           `(defun ,fname (&rest args)
              ,comment
              ;; Firstly, fix the arguments
-             (setq args (mapcar 'str args))
+             ;; (setq args (mapcar 'str args))
 
              (let* ((c (apply 'cmd-nice (cons ,cname args)))
                     (results (sor (pen-snc c))))
@@ -519,17 +517,22 @@ Any extra args go to that function"
 (defun eshell/df (&rest args)
   "Like the bash `df` function."
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "df") args)))
                             t)
   ;; (pen-snc (apply 'cmd (cons "df" args)))
   )
 
+(defun eshell/tail (file &optional lines)
+  "Like the `tail` command for watching logs."
+
+  (itail file lines))
+
 (defun eshell/filan (&rest args)
   "filan from rsync package"
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   (cmd-out-to-tablist-quick (concat (apply 'cmd (append '("csvise" "filan") args)))
                             t)
@@ -592,6 +595,9 @@ Any extra args go to that function"
   (cmd-out-to-tablist-quick (concat (apply 'cmd (cons "free" (cons "-eshell" args))))
                             t))
 
+(defun eshell/tpop (&rest args)
+  (tpop (apply 'cmd args)))
+
 (defun eshell/e (&rest args)
   "Like the bash `command` function."
 
@@ -606,7 +612,7 @@ Any extra args go to that function"
 
 (defun eshell/upd (&rest args)
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
   (let (;; (current-global-prefix-arg '(4))
         ;; (current-prefix-arg '(4))
         ;; for cacheit
@@ -638,6 +644,8 @@ Any extra args go to that function"
 (defun eshell/v (&rest args)
   "term v"
 
+  ;; (setq args (mapcar 'str args))
+
   ;; (eval `(e/sps 'ncdu ,@args))
   ;; (eval `(e/nw 'pen-vterm-nsfa "v" ,@args))
   (eval `(e/nw 'pen-term-runcmd "v" ,@args))
@@ -647,6 +655,8 @@ Any extra args go to that function"
 
 (defun eshell/vd (&rest args)
   "term vd"
+
+  ;; (setq args (mapcar 'str args))
 
   ;; (eval `(e/sps 'ncdu ,@args))
   ;; (eval `(e/nw 'pen-vterm-nsfa "v" ,@args))
@@ -673,10 +683,15 @@ Any extra args go to that function"
                   (s-split "\n"
                            cmdoutput))))
 
+(defun eshell/pon (&rest args)
+  "This simply runs eshell. The bash analog would be e:myeval"
+
+  (eshell-command-result (apply 'cmd args)))
+
 (defun eshell/command (&rest args)
   "Like the bash `command` function."
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
@@ -709,7 +724,7 @@ Any extra args go to that function"
 (defun eshell/mode-cat (&rest args)
   "Like the bash `cat` function except highlights as org-mode."
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   (loop for fp in args do
         (pen-eshell-insert
@@ -741,7 +756,7 @@ Any extra args go to that function"
 (defun eshell/find (&rest args)
   "Find output that I can copy paths from"
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
@@ -788,7 +803,7 @@ Any extra args go to that function"
 (defun eshell/br (&rest args)
   "broot."
   ;; Firstly, fix the arguments
-  (setq args (mapcar 'str args))
+  ;; (setq args (mapcar 'str args))
 
   ;; (pen-snc (eval `(cmd "command" ,@args)))
   ;; (pen-snc (apply 'cmd (cons "command" args)))
@@ -1912,5 +1927,188 @@ newline."
 
 ;; (define-key eshell-proc-mode-map (kbd "C-c C-\\") 'eshell-quit-process)
 (define-key eshell-proc-mode-map (kbd "C-c C-\\") nil)
+
+
+(defun eshell-do-eval (form &optional synchronous-p)
+  "Evaluate form, simplifying it as we go.
+Unless SYNCHRONOUS-P is non-nil, throws `eshell-defer' if it needs to
+be finished later after the completion of an asynchronous subprocess."
+  ;; (if synchronous-p
+  ;;     (message "eshell-do-eval sync form: %s" (pps form))
+  ;;   (message "eshell-do-eval async form: %s" (pps form)))
+  (cond
+   ((not (listp form))
+    (list 'quote (eval form)))
+   ((memq (car form) '(quote function))
+    form)
+   (t
+    ;; skip past the call to `eshell-do-eval'
+    (when (eq (car form) 'eshell-do-eval)
+      (setq form (cadr (cadr form))))
+    ;; expand any macros directly into the form.  This is done so that
+    ;; we can modify any `let' forms to evaluate only once.
+    (if (macrop (car form))
+        (let ((exp (copy-tree (macroexpand form))))
+	      (eshell-manipulate (format-message "expanding macro `%s'"
+					                         (symbol-name (car form)))
+	        (setcar form (car exp))
+	        (setcdr form (cdr exp)))))
+    (let ((args (cdr form)))
+      (cond
+       ((eq (car form) 'while)
+        ;; `copy-tree' is needed here so that the test argument
+	    ;; doesn't get modified and thus always yield the same result.
+	    (when (car eshell-command-body)
+	      (cl-assert (not synchronous-p))
+	      (eshell-do-eval (car eshell-command-body))
+	      (setcar eshell-command-body nil)
+	      (setcar eshell-test-body nil))
+	    (unless (car eshell-test-body)
+          (setcar eshell-test-body (copy-tree (car args))))
+	    (while (cadr (eshell-do-eval (car eshell-test-body) synchronous-p))
+	      (setcar eshell-command-body
+                  (if (cddr args)
+                      `(progn ,@(copy-tree (cdr args)))
+                    (copy-tree (cadr args))))
+	      (eshell-do-eval (car eshell-command-body) synchronous-p)
+	      (setcar eshell-command-body nil)
+          (setcar eshell-test-body (copy-tree (car args))))
+	    (setcar eshell-command-body nil))
+       ((eq (car form) 'if)
+        ;; `copy-tree' is needed here so that the test argument
+	    ;; doesn't get modified and thus always yield the same result.
+	    (if (car eshell-command-body)
+	        (progn
+	          (cl-assert (not synchronous-p))
+	          (eshell-do-eval (car eshell-command-body)))
+	      (unless (car eshell-test-body)
+            (setcar eshell-test-body (copy-tree (car args))))
+	      (setcar eshell-command-body
+                  (copy-tree
+                   (if (cadr (eshell-do-eval (car eshell-test-body)
+                                             synchronous-p))
+                       (cadr args)
+                     (car (cddr args)))))
+	      (eshell-do-eval (car eshell-command-body) synchronous-p))
+	    (setcar eshell-command-body nil)
+	    (setcar eshell-test-body nil))
+       ((eq (car form) 'setcar)
+	    (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
+	    (eval form))
+       ((eq (car form) 'setcdr)
+	    (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
+	    (eval form))
+       ((eq (car form) 'let)
+	    (if (not (eq (car (cadr args)) 'eshell-do-eval))
+	        (eshell-manipulate "evaluating let args"
+	          (dolist (letarg (car args))
+		        (if (and (listp letarg)
+			             (not (eq (cadr letarg) 'quote)))
+		            (setcdr letarg
+			                (list (eshell-do-eval
+				                   (cadr letarg) synchronous-p)))))))
+        (cl-progv
+            (mapcar (lambda (binding) (if (consp binding) (car binding) binding))
+                    (car args))
+            ;; These expressions should all be constants now.
+            (mapcar (lambda (binding) (if (consp binding) (eval (cadr binding))))
+                    (car args))
+	      (eshell-do-eval (macroexp-progn (cdr args)) synchronous-p)))
+       ((memq (car form) '(catch condition-case unwind-protect))
+	    ;; `condition-case' and `unwind-protect' have to be
+	    ;; handled specially, because we only want to call
+	    ;; `eshell-do-eval' on their first form.
+	    ;;
+	    ;; NOTE: This requires obedience by all forms which this
+	    ;; function might encounter, that they do not contain
+	    ;; other special forms.
+	    (unless (eq (car form) 'unwind-protect)
+	      (setq args (cdr args)))
+	    (unless (eq (caar args) 'eshell-do-eval)
+	      (eshell-manipulate "handling special form"
+	        (setcar args `(eshell-do-eval ',(car args) ,synchronous-p))))
+	    (eval form))
+       ((eq (car form) 'setq)
+	    (if (cddr args) (error "Unsupported form (setq X1 E1 X2 E2..)"))
+        (eshell-manipulate "evaluating arguments to setq"
+          (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p)))
+	    (list 'quote (eval form)))
+       (t
+	    (if (and args (not (memq (car form) '(run-hooks))))
+	        (eshell-manipulate
+		        (format-message "evaluating arguments to `%s'"
+				                (symbol-name (car form)))
+	          (while args
+		        (setcar args (eshell-do-eval (car args) synchronous-p))
+		        (setq args (cdr args)))))
+	    (cond
+	     ((eq (car form) 'progn)
+	      (car (last form)))
+	     ((eq (car form) 'prog1)
+	      (cadr form))
+	     (t
+	      ;; If a command desire to replace its execution form with
+	      ;; another command form, all it needs to do is throw the new
+	      ;; form using the exception tag `eshell-replace-command'.
+	      ;; For example, let's say that the form currently being
+	      ;; eval'd is:
+	      ;;
+	      ;;   (eshell-named-command "hello")
+	      ;;
+	      ;; Now, let's assume the 'hello' command is an Eshell alias,
+	      ;; the definition of which yields the command:
+	      ;;
+	      ;;   (eshell-named-command "echo" (list "Hello" "world"))
+	      ;;
+	      ;; What the alias code would like to do is simply substitute
+	      ;; the alias form for the original form.  To accomplish
+	      ;; this, all it needs to do is to throw the substitution
+	      ;; form with the `eshell-replace-command' tag, and the form
+	      ;; will be replaced within the current command, and
+	      ;; execution will then resume (iteratively) as before.
+	      ;; Thus, aliases can even contain references to asynchronous
+	      ;; sub-commands, and things will still work out as they
+	      ;; should.
+	      (let* (result
+                 (new-form
+                  (catch 'eshell-replace-command
+                    (ignore
+                     (setq result (eval form))))))
+	        (if new-form
+		        (progn
+		          (eshell-manipulate "substituting replacement form"
+		            (setcar form (car new-form))
+		            (setcdr form (cdr new-form)))
+		          (eshell-do-eval form synchronous-p))
+              (if-let (((memq (car form) eshell-deferrable-commands))
+                       ((not eshell-current-subjob-p))
+                       (procs (eshell-make-process-pair result)))
+                  (if synchronous-p
+		              (eshell/wait (cdr procs))
+		            (eshell-manipulate "inserting ignore form"
+		              (setcar form 'ignore)
+		              (setcdr form nil))
+		            (throw 'eshell-defer procs))
+                (list 'quote result))))))))))))
+
+;; This command seems to not be able to run using mx:eval-expression
+(defun eshell-named-command (command &optional args)
+  "Insert output from a plain COMMAND, using ARGS.
+COMMAND may result in an alias being executed, or a plain command."
+  ;; (message "eshell-named-command command: %s, args: %s" command (pps args))
+
+  ;; This fixed the need to put this in all my esh command functions
+  (setq args (mapcar 'str args))
+  
+  (setq eshell-last-arguments args
+	    eshell-last-command-name (eshell-stringify command))
+  (run-hook-with-args 'eshell-prepare-command-hook)
+  (cl-assert (stringp eshell-last-command-name))
+  (if eshell-last-command-name
+      (or (run-hook-with-args-until-success
+	       'eshell-named-command-hook eshell-last-command-name
+	       eshell-last-arguments)
+	      (eshell-plain-command eshell-last-command-name
+				                eshell-last-arguments))))
 
 (provide 'pen-eshell)

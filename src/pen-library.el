@@ -1284,7 +1284,7 @@ non-nil."
              " pen-nsfa "
              (if noresize
                  ""
-                 " -resize ")
+               " -resize ")
              (if removeonexit
                  " -rm "
                "")

@@ -325,7 +325,7 @@ care."
                          ,timeouts)))))))))
 
 (defun ignore-errors-around-advice (proc &rest args)
-  (ignore-errors
+  (suppress-errors-with-context proc
     (let ((res (apply proc args)))
       res)))
 

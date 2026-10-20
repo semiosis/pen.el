@@ -76,7 +76,7 @@ else
     if test "$DO_EXEC" = "y"; then
         CMD="$1"
     else
-        CMD="$(cmd "$@")"
+        CMD="$(cmd-nice "$@")"
     fi
 
     if test "$ask_user_if_emacs" = "y" && tpop-yn "Is this tmux split inside emacs?"; then

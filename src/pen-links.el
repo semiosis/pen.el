@@ -75,6 +75,8 @@
                                 :from-end t)
           #'link-hint--<)))
 
+;; First, load, so the fix works
+(require 'link-hint)
 ;; The fix
 (defun link-hint--help-link-at-point-p ()
   "Return the name of the help link at the point or nil."

@@ -56,7 +56,8 @@ ocif bash -c "$shcode" |
             # This is quite slow. Using cif here is negligable, maybe
             pen-aatr -k "\n\n" "cif biblemode-onelineify-interlinear-block" | sed '/^$/d'
         else
-            cat
+            pen-org-template-gen text
+            # cat
         fi
     } | pavs
 #  | make-all-lines-same-length

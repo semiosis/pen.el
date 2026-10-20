@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+message="$@"
+
+# echo "$message" 1>&2 >> ~/bash-messages.txt
+echo "$message" | dispmsg 1>&2

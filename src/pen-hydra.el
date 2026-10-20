@@ -520,9 +520,10 @@ display values."
 
 (defun switch-to-messages ()
   (interactive)
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (call-interactively 'bash-messages)
-    (switch-to-buffer "*Messages*")))
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16) (bash-messages t))
+   ((>= (prefix-numeric-value current-prefix-arg) 4) (call-interactively 'bash-messages))
+   (t (switch-to-buffer "*Messages*"))))
 
 (defalias 'emoji-insert 'pick-emoji)
 
