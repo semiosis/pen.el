@@ -1,6 +1,7 @@
 (require 'ranger)
 (require 'dired-git-info)
 (require 'dired-narrow)
+(require 'dired-lsi)
 
 (setq dgi-auto-hide-details-p nil)
 (setq dired-listing-switches "-alh")
@@ -357,5 +358,8 @@ read from minibuffer."
 
 ;; (define-key dired-mode-map (kbd "N") 'dired-do-man)
 (define-key dired-mode-map (kbd "N") nil)
+
+
+(add-hook 'dired-mode-hook 'dired-lsi-mode)
 
 (provide 'pen-dired)

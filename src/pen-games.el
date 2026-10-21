@@ -2,6 +2,118 @@
 (require 'wordel)
 (require 'maces-game)
 
+;; https://web.archive.org/web/20221015212113/https://en.wikipedia.org/wiki/Box-drawing_character
+(setq crossword-empty-position-char "▪")
+(setq crossword-empty-position-char "⌑")
+(setq crossword-empty-position-char "⧯")
+(setq crossword-empty-position-char "█")
+(setq crossword-empty-position-char "🮘")
+
+
+(defun crossword--insert-grid (grid-width colophon clean-grid answer-grid clue-list)
+  "Insert a beginning grid into a grid buffer.
+This includes crossword COLOPHON, status-line, and grid into an
+empty buffer, apply text properties to grid positions, and create
+variables `crossword--across-clue-list' and
+`crossword--down-clue-list'. GRID-WIDTH is an integer taken from
+the puzzle file encoding. COLOPHON, CLEAN-GRID, ANSWER-GRID and CLUE-LIST
+are substrings of the puzzle file."
+  (let* (;; (divider "⏐")
+         (divider " ")
+         (divider "⦚")
+         (block-cell (concat crossword-empty-position-char divider))
+         (block-line
+           (concat (replace-regexp-in-string
+                      "-" block-cell
+                      (make-string (+ 1 grid-width) ?-))))
+         ;; FIXME: This does not work with lexical binding, so for now the
+         ;;        propertizing is done individually with the let*.
+         ;; (dolist (var (list 'divider 'block-cell 'crossword-new-line 'block-line))
+         ;;   (set var (propertize (symbol-value var) 'face 'crossword-grid-face)))
+         (divider    (propertize divider 'face 'crossword-grid-face))
+         (block-cell (propertize block-cell 'face 'crossword-grid-face))
+         (block-line (propertize block-line 'face 'crossword-grid-face))
+         ;; END: FIXME
+         (crossword-new-line (concat block-cell "\n" divider block-cell))
+         (clue-across 0)
+         (clue-down 0)
+         start-pos pos)
+    (insert " " colophon "\n")
+    (decode-coding-region (point-min) (point-max) 'prefer-utf-8-dos)
+    (setq start-pos (point))
+    (setq crossword--total-count
+      (cl-loop with start = 0
+               for count from 0
+               while (string-match "-" clean-grid start)
+               do (setq start (match-end 0))
+               finally return count))
+    (insert
+      (format " Filled:    0%% (  0/%3d) Timer: [off] 00:00\n" crossword--total-count)
+      (format " Solved:    0%% (  0/%3d)\n" crossword--total-count)
+              " Checked:   0  Errors:   0  Cheats:   0\n\n")
+    (setq crossword--completion-percent-pos (+  10 start-pos)
+          crossword--timer-state-pos        (+  33 start-pos)
+          crossword--timer-value-pos        (+  38 start-pos)
+          crossword--solved-percent-pos     (+  54 start-pos)
+          crossword--checked-count-pos      (+  79 start-pos)
+          crossword--error-count-pos        (+  92 start-pos)
+          crossword--cheat-count-pos        (+ 105 start-pos))
+    (insert divider block-line)
+    (insert crossword-new-line)
+    (setq start-pos (point)
+          pos start-pos)
+    (insert clean-grid)
+    (goto-char start-pos)
+    (while (not (eobp))
+      (forward-char grid-width)
+      (insert crossword-new-line))
+    (insert block-line)
+    (goto-char start-pos)
+    (while (search-forward "-" nil t)
+       (insert divider))
+    (when (and crossword-empty-position-char
+               (= 1 (length crossword-empty-position-char)))
+      (goto-char start-pos)
+      (while (search-forward "." nil t)
+        (replace-match block-cell)))
+    ;; Identify clue bounds and build data structures for quicker clue navigation
+    (goto-char start-pos)
+    (while (not (eobp))
+      (when (= ?- (char-after pos))
+        (cond
+         ((/= ?- (char-after (- pos 2))) ; prior position isn't clue square
+            (setq clue-across (1+ (max clue-across clue-down)))
+            (push
+              (list clue-across
+                    (pop clue-list)
+                    pos
+                    (crossword--end-across-clue-pos pos clue-across))
+              crossword--across-clue-list)
+            (when (crossword--pos-above-is-void pos)
+              (setq clue-down clue-across)
+              (push
+                (list clue-down
+                      (pop clue-list)
+                      (crossword--list-down-clue-pos pos clue-down))
+                crossword--down-clue-list)))
+         ((crossword--pos-above-is-void pos) ; position above isn't clue square
+            (setq clue-down (1+ (max clue-across clue-down)))
+            (push
+              (list clue-down
+                    (pop clue-list)
+                    (crossword--list-down-clue-pos pos clue-down))
+              crossword--down-clue-list)))
+        (put-text-property pos (1+ pos) 'answer (substring answer-grid 0 1))
+        (setq answer-grid (substring answer-grid 1)))
+      (goto-char (setq pos (1+ pos))))
+    (setq crossword--grid-end (+ 2 (goto-char (point-max))))
+    (insert "\n\n Across:\n\n\n\n Down:")
+    (goto-char start-pos)
+    (setq crossword--across-clue-list (nreverse crossword--across-clue-list))
+    (setq crossword--down-clue-list (nreverse crossword--down-clue-list))))
+
+
+
 ;; (require 'rubik)
 
 (setq crossword-save-path (concat (f-join pen-confdir "documents" "Crosswords") "/"))
@@ -45,6 +157,13 @@ completion details of played puzzles."
                                     ;; (caar choices)
                                     )
                    choices)))))
+
+(defun crossword-around-advice (proc &rest args)
+  (let ((default-directory crossword-save-path))
+    (let ((res (apply proc args)))
+      res)))
+(advice-add 'crossword :around #'crossword-around-advice)
+;; (advice-remove 'crossword #'crossword-around-advice)
 
 ;; Don't deactivate the menu bar, etc.
 (defun crossword--select-frame ()

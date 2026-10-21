@@ -2938,3 +2938,5 @@ e ia download-region
 e ia nhexl-mode
 
 e ia jumplist
+
+e ia dired-lsi

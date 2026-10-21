@@ -183,6 +183,19 @@ argument, prompt for a regular expression using `read-regexp'."
     (shr-generic dom)
     (shr-ensure-newline)))
 
+;; No italic
+(defun pen-make-all-faces-normal-slant ()
+  ;; This appears to work well
+  (interactive)
+  ;; The default face must have an absolute height
+  (set-face-attribute 'default nil :slant 'normal)
+
+  (loop for f in
+        (remove 'default (pen-list-faces))
+        do
+        (progn
+          (set-face-attribute f nil :slant 'normal))))
+
 (defun pen-set-all-faces-height-1 ()
   ;; This appears to work well
   (interactive)
@@ -1073,7 +1086,7 @@ is specified, `:italic' is ignored."
   (set-face-underline 'flycheck-info nil)
   (set-face-underline 'flycheck-error nil)
   (set-face-underline 'flycheck-warning nil)
-  (custom-set-faces '(lsp-lsp-flycheck-warning-unnecessary-face ((t (:background "#222222" :foreground nil)))))
+  (custom-set-faces '(lsp-lsp-flycheck-warning-unnecessary-face ((t (:background "#222222" :foreground 'unspecified)))))
 
   (set-face-foreground 'default "#404040")
   ;; (set-face-background 'default "#151515")
@@ -1542,6 +1555,15 @@ Also see option `magit-blame-styles'."
 ;;     (gamegrid-setup-face face color-str)
 ;;     face))
 
+
+;; For ivy matching to work well in monochrome:
+;; matching pattern (should not be underlined):
+;; - ivy-minibuffer-match-face-2
+;; This is the active one (should be underlined):
+;; - ivy-current-match
+;; Test: mx:wordnet-word
+
+
 ;; Make a faster version which loads from a B&W mode save.
 ;; That way, new frames will load much faster.
 ;; This works well for vt100
@@ -1551,7 +1573,9 @@ Also see option `magit-blame-styles'."
   (message "Running pen-disable-all-faces")
 
   (if (not pen-black-and-white)
-      (pen-save-faces))
+      (progn
+        (comment (pen-save-faces))
+        (pen-save-faces-to-config)))
   ;; Optimise this check later
   (if (or t (not pen-black-and-white))
       (progn
@@ -1770,6 +1794,8 @@ Also see option `magit-blame-styles'."
                             lsp-ui-doc-header
 
                             link
+                            cua-rectangle
+                            cua-rectangle-noselect
 
                             ;; main menu bar face
                             menu
@@ -1800,10 +1826,9 @@ Also see option `magit-blame-styles'."
                             ivy-grep-info
                             ivy-grep-line-number
 
-                            ivy-current-match
                             ivy-match-required-face
                             ivy-minibuffer-match-face-1
-                            ivy-minibuffer-match-face-2
+                            
                             ivy-minibuffer-match-face-3
                             ivy-minibuffer-match-face-4
                             ivy-minibuffer-match-highlight
@@ -1976,8 +2001,8 @@ Also see option `magit-blame-styles'."
                                      markdown-markup-face
                                      markdown-language-keyword-face
 
-                                     org-block-begin-line
-                                     org-block-end-line
+                                     ;; org-block-begin-line
+                                     ;; org-block-end-line
 
                                      font-lock-comment-face
                                      font-lock-comment-face
@@ -2023,6 +2048,46 @@ Also see option `magit-blame-styles'."
                            ;; :italic t
                            )))
 
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(
+                                     org-block-begin-line)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline t
+                           :underline nil
+                           ;; :weight 'unspecified
+                           ;; :weight 'bold
+                           :box nil
+                           :strike-through nil
+                           :slant 'normal
+
+                           ;; :italic t
+                           )))
+        
+        (cl-loop for fr in (frame-list)
+                 do
+
+                 (cl-loop for f in '(
+                                     org-block-end-line)
+                          do
+                          (set-face-attribute
+                           f fr
+                           :inverse-video nil
+                           :overline t
+                           :underline nil
+                           ;; :weight 'unspecified
+                           ;; :weight 'bold
+                           :box nil
+                           :strike-through nil
+                           :slant 'normal
+
+                           ;; :italic t
+                           )))
+
         (require 'comint)
         (cl-loop for fr in (frame-list)
                  do
@@ -2061,6 +2126,8 @@ Also see option `magit-blame-styles'."
                                      whitespace-trailing
 
                                      diff-refine-added
+
+                                     ivy-current-match
 
                                      ahs-face-unfocused
                                      ahs-plugin-default-face-unfocused)
@@ -2126,6 +2193,7 @@ Also see option `magit-blame-styles'."
                  do
                  (cl-loop for f in '(
                                      Man-underline
+                                     ivy-minibuffer-match-face-2
                                      lsp-ui-peek-peek)
                           do
                           (set-face-attribute
@@ -2260,9 +2328,11 @@ Also see option `magit-blame-styles'."
         (advice-add 'pen-set-text-contrast-from-config :around #'around-advice-disable-function)
         (advice-add 'minibuffer-bg :around #'around-advice-disable-function)
 
+        ;; Slow
         ;; server-after-make-frame-hook
-        (if (not (member 'pen-disable-all-faces server-after-make-frame-hook))
-            (add-hook-last 'server-after-make-frame-hook 'pen-disable-all-faces))
+        (comment
+         (if (not (member 'pen-disable-all-faces server-after-make-frame-hook))
+             (add-hook-last 'server-after-make-frame-hook 'pen-disable-all-faces)))
 
         ;; (add-hook-last 'after-setting-font-hook 'pen-disable-all-faces)
 
@@ -2326,7 +2396,9 @@ Also see option `magit-blame-styles'."
         (pen-set-all-faces-height-1)
 
         ;; This must come last
-        (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))))
+        (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice)))
+
+  (pen-make-all-faces-normal-slant))
 
 (defun honour-bw-mode (&optional tmuxonly)
   (interactive)
@@ -2348,7 +2420,9 @@ Also see option `magit-blame-styles'."
   (comment
    (pen-rc-set "black_and_white" "off")))
 
-(add-hook 'server-after-make-frame-hook 'honour-bw-mode)
+(comment
+ (add-hook 'server-after-make-frame-hook 'honour-bw-mode)
+ (remove-hook 'server-after-make-frame-hook 'honour-bw-mode))
 
 ;; TODO Put this at the end of init
 ;; (honour-bw-mode)
@@ -2384,6 +2458,8 @@ Also see option `magit-blame-styles'."
   (interactive)
 
   (message "Running pen-enable-all-faces")
+
+  (pen-make-all-faces-normal-slant)
 
   (if pen-black-and-white
       (progn
@@ -2509,6 +2585,21 @@ Also see option `magit-blame-styles'."
 ;; But s-f is fairly easy to press
 (define-key global-map (kbd "s-f") 'select-font-lock-face-region)
 
+(defun pen-custom-face-attributes-get (face frame)
+  "Just like j:custom-face-attributes-get but makes nil :foreground and nil :background sest to 'unspecified instead."
+  (let ((properties (copy-sequence (custom-face-attributes-get f fr))))
+    (cl-loop for (prop val)
+             on properties
+             by #'cddr
+             do
+             (if (not val)
+                 (cond ((or (eq :foreground prop)
+                            (eq :background prop))
+                        ;; Modifies the properties
+                        (plist-put properties prop 'unspecified)))
+               val))
+    properties))
+
 ;; [[el:(etv (pen-get-faces))]]
 (defun pen-get-faces ()
   (interactive)
@@ -2520,6 +2611,7 @@ Also see option `magit-blame-styles'."
       (lambda (tp_outer)
         (> (length tp_outer) 1))
       (mapcar (lambda (f)
+                ;; TODO Keep this. but only set 'unspecified for the values of  :foreground and :background
                 (comment (cons f
                                (mapcar
                                 (lambda (e)
@@ -2537,7 +2629,7 @@ Also see option `magit-blame-styles'."
                                ;;             (custom-face-attributes-get f fr))))
                                ))
                 (cons f
-                      (custom-face-attributes-get f fr)
+                      (pen-custom-face-attributes-get f fr)
                       ;; (-flatten (mapcar
                       ;;            (lambda (attr) (list (car attr)
                       ;;                                 (cdr attr))) 

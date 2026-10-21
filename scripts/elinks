@@ -19,6 +19,14 @@ exec 2>/dev/null
 
 USE_CHROME=n
 
+if test "$BLACK_AND_WHITE" = y || pen-rc-test -f black_and_white; then
+    # Do this especially if INSIDE_EMACS
+    export TERM=screen-2color
+    precmd="TERM=xterm-2color "
+    # export TERM=vt100
+    # precmd="TERM=vt100 "
+fi
+
 precmd=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -2) {
@@ -81,8 +89,8 @@ CMD="$(p "$CMD" | sed 's/https:/http:/')"
 if ! test -n "$USE_CHROME" && test "$USE_TOR" = "y"; then
     precmd="$precmd my-torify"
 fi
- 
+
 # even with  the eval it's not working.
-cmd="$precmd $bin -eval 'set connection.ssl.cert_verify = 0' $CMD"
+cmd="$precmd $bin -eval 'set terminal.screen-2color.colors = 0' -eval 'set connection.ssl.cert_verify = 0' $CMD"
 # lit "$cmd" | tv
 eval "$cmd"

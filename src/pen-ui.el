@@ -51,6 +51,10 @@
              ;; (tab-bar-mode 1)
              )))))
 
+;; Related to truncate-lines is cv:auto-hscroll-mode
+;; (setq-local auto-hscroll-mode 'current-line)
+(setq auto-hscroll-mode 'current-line)
+
 (defun toggle-chrome ()
   (interactive)
   (let ((gparg (prefix-numeric-value current-prefix-arg))

@@ -1,6 +1,7 @@
 (require 'f)
 (setq custom-file (f-join penconfdir "emacs-custom.el"))
 
+;; Strangely, can't use 'unspecified for :foreground and :background here
 (defsetface colour-button-face
   '((t :foreground nil
        :background nil

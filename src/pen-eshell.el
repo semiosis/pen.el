@@ -2098,25 +2098,51 @@ COMMAND may result in an alias being executed, or a plain command."
   ;; (message "eshell-named-command command: %s, args: %s" command (pps args))
 
   ;; This fixed the need to put this in all my esh command functions
-  (setq args (mapcar 'str args))
-  
+  ;; (setq args (mapcar (lambda (e) (if (stringp e) (str e) e)) args))
+  ;; But it broke regular functions which expect the properties to be ther
+  ;; in order to know if, for example, the argument is a number.
+  ;; (dolist (e args)
+  ;;   (message "type: %s" (str (cfw:extract-text-props e))))
+
+  ;; So I need to find somewhere else to maek the change.
+
   (setq eshell-last-arguments args
-	    eshell-last-command-name (eshell-stringify command))
+        eshell-last-command-name (eshell-stringify command))
+  ;; (message "eshell-last-arguments: %s" eshell-last-arguments)
   (run-hook-with-args 'eshell-prepare-command-hook)
   (cl-assert (stringp eshell-last-command-name))
   (if eshell-last-command-name
       (or (run-hook-with-args-until-success
-	       'eshell-named-command-hook eshell-last-command-name
-	       eshell-last-arguments)
-	      (eshell-plain-command eshell-last-command-name
-				                eshell-last-arguments))))
+           'eshell-named-command-hook eshell-last-command-name
+           eshell-last-arguments)
+          (eshell-plain-command eshell-last-command-name
+                                eshell-last-arguments))))
+
+(defun eshell-plain-command (command args)
+  "Insert output from a plain COMMAND, using ARGS.
+COMMAND may result in either a Lisp function being executed by name,
+or an external command."
+  (let* ((esym (eshell-find-alias-function command))
+         (sym (or esym (intern-soft command))))
+    (if (and sym (fboundp sym)
+             (or esym eshell-prefer-lisp-functions
+                 (not (eshell-search-path command))))
+        (eshell-lisp-command sym
+                             (mapcar
+                              (lambda (e)
+                                (message "type: %s, val: %s" (str (type e)) (str e))
+                                (if (stringp e)
+                                    (substring-no-properties e))
+                                e)
+                              args))
+      (eshell-external-command command args))))
 
 
 (defsubst eshell/ead (&rest args)
   "An alias version of `eshell-do-ead'."
   (let ((insert-func 'eshell-buffered-print)
-	(error-func 'eshell-error)
-	(flush-func 'eshell-flush))
+	    (error-func 'eshell-error)
+	    (flush-func 'eshell-flush))
     (apply 'eshell-do-ead args)))
 
 ;; j:eshell/ls

@@ -2168,7 +2168,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (verse (! str·caddr tup))
          (url (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse)))
     (if (interactive-p)
-        (w3m url)
+        (browse-url url)
       url)))
 
 ;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v

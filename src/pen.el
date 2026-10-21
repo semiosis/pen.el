@@ -68,7 +68,8 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "j:pen-ignore-errors Suppressed error: %S"
+        (pen-message-no-echo "j:pen-ignore-errors this-command: %s Suppressed error: %S"
+                             this-command:
                              (error-message-string e))))))
 
 (defalias 'suppress-errors 'pen-ignore-errors)
@@ -86,7 +87,8 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "j:pen-ignore-errors-with-context Suppressed error: %S inside %s"
+        (pen-message-no-echo "j:pen-ignore-errors-with-context this-command: %s Suppressed  error: %S inside %s"
+                             this-command
                              (error-message-string e)
                              (s-truncate 100 (str ,context)))))))
 (defalias 'suppress-errors-with-context 'pen-ignore-errors-with-context)

@@ -17,7 +17,8 @@
           -D "elinks-dump-chrome"
           -B "ebrowsh"
           -I "w3m"
-          -u "default")))
+          -u "default"
+          -. "edit")))
 
     (pcase br
       ("eww" (eww-browse-url url _new-window))
@@ -32,6 +33,7 @@
       ("default" (browse-url-generic url _new-window))
       ("elinks-dump" (sps (cmd "elinks-dump" url)))
       ("ff" (sps (cmd "ff" url)))
+      ("edit" (j 'pen-emacs-web-browse))
 
       ;; This opens tpop
       ;; (_ (browse-url-generic url _new-window))
