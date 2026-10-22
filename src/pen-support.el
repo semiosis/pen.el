@@ -1697,6 +1697,11 @@ See j:edit-read-string-hist for editing the hist var
   (with-temp-buffer
     (insert string)))
 
+(defun pen-detect-language-string (s)
+  (cond
+   ((string-match-p "#+BEGIN_" s) "orgmode")
+   (t (language-detection-string s))))
+
 ;; This should also check the file extension
 (defun pen-detect-language (&optional detect buffer-not-selection world programming)
   "Returns the language of the buffer or selection."
@@ -1714,7 +1719,7 @@ See j:edit-read-string-hist for editing the hist var
            ((string-equal "lisp-interaction" mode-lang) nil)
            (t mode-lang)))
          (programming-lang (and (not world)
-                                (sor (language-detection-string text))))
+                                (sor (pen-detect-language-string text))))
          (world-lang (and (not programming-lang)
                           (sor (with-current-buffer buf
                                  (insert text)

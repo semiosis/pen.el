@@ -256,6 +256,10 @@
   (setq buffer-read-only t)
   (setq word-wrap t)
 
+  ;; Not 'current-line only
+  (setq-local auto-hscroll-mode t)
+  ;; (setq-local auto-hscroll-mode 'current-line)
+
   (make-local-variable 'magit-buffer-margin)
   (setq magit-buffer-margin '(t age 30 t 18)))
 
@@ -267,7 +271,12 @@
   ;; (auto-fill-mode t)
   (use-local-map bible-search-mode-map)
   (setq buffer-read-only t)
-  (setq word-wrap t))
+  (setq word-wrap t)
+
+  ;; Not 'current-line only
+  (setq-local auto-hscroll-mode t)
+  ;; (setq-local auto-hscroll-mode 'current-line)
+  )
 
 ;; sort
 ;;

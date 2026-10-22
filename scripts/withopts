@@ -113,6 +113,27 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            waa) {
+                export ANNOTATED=all
+            }
+            ;;
+
+            with-anno|wan|ano) {
+                export ANNOTATED=y
+
+                while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+                    "") { shift; }; ;;
+                    -a) {
+                        export ANNOTATED=all
+                        shift
+                    }
+                    ;;
+
+                    *) break;
+                esac; done
+            }
+            ;;
+
             as|das|autostart) {
                 export NO_AUTO_START=n
             }

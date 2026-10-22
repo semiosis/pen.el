@@ -875,7 +875,7 @@ Any extra args go to that function"
    ;; j:eshell/mode-cat
    (let ((result (region2string eshell-last-output-start
                                 (- eshell-last-output-end 1))))
-     (if (equal 'orgmode (language-detection-string result))
+     (if (equal 'orgmode (pen-detect-language-string result))
          (pen-region-filter 'pen-highlight-as-org
                             eshell-last-output-start
                             (- eshell-last-output-end 1)))))
@@ -900,6 +900,8 @@ Any extra args go to that function"
 ;; from colorised shell output.
 (defun eshell-filter-finaloutput ()
   ;; j:eshell/mode-cat
+
+  (message "j:eshell-filter-finaloutput")
 
   (save-excursion
     (let ((end (progn (beginning-of-line)
@@ -933,6 +935,8 @@ Any extra args go to that function"
 (defun eshell-filter-finaloutput-colorise-maybe ()
   ;; j:eshell/mode-cat
 
+  (message "j:eshell-filter-finaloutput-colorise-maybe")
+
   (save-excursion
     (let ((end (progn (beginning-of-line)
                       (point)))
@@ -944,7 +948,7 @@ Any extra args go to that function"
 
       (let ((result (region2string start
                                    (- end 1))))
-        (if (equal "orgmode" (language-detection-string result))
+        (if (equal "orgmode" (pen-detect-language-string result))
             (progn (pen-region-filter 'pen-highlight-as-org
                                       start
                                       (- end 1))
@@ -1780,18 +1784,22 @@ Otherwise, call `eshell/cd' with the result."
       (set-marker eshell-last-output-end (point))
     (let ((prompt (funcall eshell-prompt-function)))
       (if eshell-highlight-prompt
-	   (add-text-properties 0 (length prompt)
-				'(read-only t
-				  font-lock-face eshell-prompt
-				  front-sticky (font-lock-face read-only)
-				  rear-nonsticky (font-lock-face read-only))
-				prompt)
-       (add-text-properties 0 (length prompt)
-				'(read-only t
-				  ;; font-lock-face eshell-prompt
-				  front-sticky (font-lock-face read-only)
-				  rear-nonsticky (font-lock-face read-only))
-				prompt))
+          (add-text-properties 0 (length prompt)
+                               '(read-only t
+                                           font-lock-face eshell-prompt
+                                           front-sticky (font-lock-face read-only)
+                                           rear-nonsticky (font-lock-face read-only))
+                               prompt)
+        (add-text-properties 0 (length prompt)
+                             '(read-only t
+                                         ;; font-lock-face eshell-prompt
+                                         front-sticky (font-lock-face read-only)
+                                         rear-nonsticky (font-lock-face read-only))
+                             prompt))
+
+      ;; Ensure new line at prompt
+      (if (not (bolp))
+          (eshell-interactive-print "\n"))
       (eshell-interactive-print prompt)))
   (run-hooks 'eshell-after-prompt-hook))
 
@@ -1943,12 +1951,12 @@ newline."
 Unless SYNCHRONOUS-P is non-nil, throws `eshell-defer' if it needs to
 be finished later after the completion of an asynchronous subprocess."
   ;; (if synchronous-p
-  ;;     (message "eshell-do-eval sync form: %s" (pps form))
-  ;;   (message "eshell-do-eval async form: %s" (pps form)))
+  ;;     (message "j:eshell-do-eval sync form: %s" (pp-oneline form))
+  ;;   (message "j:eshell-do-eval async form: %s" (pp-oneline form)))
   (cond
    ((not (listp form))
     (list 'quote (eval form)))
-   ((memq (car form) '(quote function))
+   ((memq (car form) ''function)
     form)
    (t
     ;; skip past the call to `eshell-do-eval'
@@ -1958,146 +1966,146 @@ be finished later after the completion of an asynchronous subprocess."
     ;; we can modify any `let' forms to evaluate only once.
     (if (macrop (car form))
         (let ((exp (copy-tree (macroexpand form))))
-	      (eshell-manipulate (format-message "expanding macro `%s'"
-					                         (symbol-name (car form)))
-	        (setcar form (car exp))
-	        (setcdr form (cdr exp)))))
+          (eshell-manipulate (format-message "expanding macro `%s'"
+                                             (symbol-name (car form)))
+            (setcar form (car exp))
+            (setcdr form (cdr exp)))))
     (let ((args (cdr form)))
       (cond
        ((eq (car form) 'while)
         ;; `copy-tree' is needed here so that the test argument
-	    ;; doesn't get modified and thus always yield the same result.
-	    (when (car eshell-command-body)
-	      (cl-assert (not synchronous-p))
-	      (eshell-do-eval (car eshell-command-body))
-	      (setcar eshell-command-body nil)
-	      (setcar eshell-test-body nil))
-	    (unless (car eshell-test-body)
+        ;; doesn't get modified and thus always yield the same result.
+        (when (car eshell-command-body)
+          (cl-assert (not synchronous-p))
+          (eshell-do-eval (car eshell-command-body))
+          (setcar eshell-command-body nil)
+          (setcar eshell-test-body nil))
+        (unless (car eshell-test-body)
           (setcar eshell-test-body (copy-tree (car args))))
-	    (while (cadr (eshell-do-eval (car eshell-test-body) synchronous-p))
-	      (setcar eshell-command-body
+        (while (cadr (eshell-do-eval (car eshell-test-body) synchronous-p))
+          (setcar eshell-command-body
                   (if (cddr args)
                       `(progn ,@(copy-tree (cdr args)))
                     (copy-tree (cadr args))))
-	      (eshell-do-eval (car eshell-command-body) synchronous-p)
-	      (setcar eshell-command-body nil)
+          (eshell-do-eval (car eshell-command-body) synchronous-p)
+          (setcar eshell-command-body nil)
           (setcar eshell-test-body (copy-tree (car args))))
-	    (setcar eshell-command-body nil))
+        (setcar eshell-command-body nil))
        ((eq (car form) 'if)
         ;; `copy-tree' is needed here so that the test argument
-	    ;; doesn't get modified and thus always yield the same result.
-	    (if (car eshell-command-body)
-	        (progn
-	          (cl-assert (not synchronous-p))
-	          (eshell-do-eval (car eshell-command-body)))
-	      (unless (car eshell-test-body)
+        ;; doesn't get modified and thus always yield the same result.
+        (if (car eshell-command-body)
+            (progn
+              (cl-assert (not synchronous-p))
+              (eshell-do-eval (car eshell-command-body)))
+          (unless (car eshell-test-body)
             (setcar eshell-test-body (copy-tree (car args))))
-	      (setcar eshell-command-body
+          (setcar eshell-command-body
                   (copy-tree
                    (if (cadr (eshell-do-eval (car eshell-test-body)
                                              synchronous-p))
                        (cadr args)
                      (car (cddr args)))))
-	      (eshell-do-eval (car eshell-command-body) synchronous-p))
-	    (setcar eshell-command-body nil)
-	    (setcar eshell-test-body nil))
+          (eshell-do-eval (car eshell-command-body) synchronous-p))
+        (setcar eshell-command-body nil)
+        (setcar eshell-test-body nil))
        ((eq (car form) 'setcar)
-	    (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
-	    (eval form))
+        (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
+        (eval form))
        ((eq (car form) 'setcdr)
-	    (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
-	    (eval form))
+        (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p))
+        (eval form))
        ((eq (car form) 'let)
-	    (if (not (eq (car (cadr args)) 'eshell-do-eval))
-	        (eshell-manipulate "evaluating let args"
-	          (dolist (letarg (car args))
-		        (if (and (listp letarg)
-			             (not (eq (cadr letarg) 'quote)))
-		            (setcdr letarg
-			                (list (eshell-do-eval
-				                   (cadr letarg) synchronous-p)))))))
+        (if (not (eq (car (cadr args)) 'eshell-do-eval))
+            (eshell-manipulate "evaluating let args"
+              (dolist (letarg (car args))
+                (if (and (listp letarg)
+                         (not (eq (cadr letarg) 'quote)))
+                    (setcdr letarg
+                            (list (eshell-do-eval
+                                   (cadr letarg) synchronous-p)))))))
         (cl-progv
             (mapcar (lambda (binding) (if (consp binding) (car binding) binding))
                     (car args))
             ;; These expressions should all be constants now.
             (mapcar (lambda (binding) (if (consp binding) (eval (cadr binding))))
                     (car args))
-	      (eshell-do-eval (macroexp-progn (cdr args)) synchronous-p)))
+          (eshell-do-eval (macroexp-progn (cdr args)) synchronous-p)))
        ((memq (car form) '(catch condition-case unwind-protect))
-	    ;; `condition-case' and `unwind-protect' have to be
-	    ;; handled specially, because we only want to call
-	    ;; `eshell-do-eval' on their first form.
-	    ;;
-	    ;; NOTE: This requires obedience by all forms which this
-	    ;; function might encounter, that they do not contain
-	    ;; other special forms.
-	    (unless (eq (car form) 'unwind-protect)
-	      (setq args (cdr args)))
-	    (unless (eq (caar args) 'eshell-do-eval)
-	      (eshell-manipulate "handling special form"
-	        (setcar args `(eshell-do-eval ',(car args) ,synchronous-p))))
-	    (eval form))
+        ;; `condition-case' and `unwind-protect' have to be
+        ;; handled specially, because we only want to call
+        ;; `eshell-do-eval' on their first form.
+        ;;
+        ;; NOTE: This requires obedience by all forms which this
+        ;; function might encounter, that they do not contain
+        ;; other special forms.
+        (unless (eq (car form) 'unwind-protect)
+          (setq args (cdr args)))
+        (unless (eq (caar args) 'eshell-do-eval)
+          (eshell-manipulate "handling special form"
+            (setcar args `(eshell-do-eval ',(car args) ,synchronous-p))))
+        (eval form))
        ((eq (car form) 'setq)
-	    (if (cddr args) (error "Unsupported form (setq X1 E1 X2 E2..)"))
+        (if (cddr args) (error "Unsupported form (setq X1 E1 X2 E2..)"))
         (eshell-manipulate "evaluating arguments to setq"
           (setcar (cdr args) (eshell-do-eval (cadr args) synchronous-p)))
-	    (list 'quote (eval form)))
+        (list 'quote (eval form)))
        (t
-	    (if (and args (not (memq (car form) '(run-hooks))))
-	        (eshell-manipulate
-		        (format-message "evaluating arguments to `%s'"
-				                (symbol-name (car form)))
-	          (while args
-		        (setcar args (eshell-do-eval (car args) synchronous-p))
-		        (setq args (cdr args)))))
-	    (cond
-	     ((eq (car form) 'progn)
-	      (car (last form)))
-	     ((eq (car form) 'prog1)
-	      (cadr form))
-	     (t
-	      ;; If a command desire to replace its execution form with
-	      ;; another command form, all it needs to do is throw the new
-	      ;; form using the exception tag `eshell-replace-command'.
-	      ;; For example, let's say that the form currently being
-	      ;; eval'd is:
-	      ;;
-	      ;;   (eshell-named-command "hello")
-	      ;;
-	      ;; Now, let's assume the 'hello' command is an Eshell alias,
-	      ;; the definition of which yields the command:
-	      ;;
-	      ;;   (eshell-named-command "echo" (list "Hello" "world"))
-	      ;;
-	      ;; What the alias code would like to do is simply substitute
-	      ;; the alias form for the original form.  To accomplish
-	      ;; this, all it needs to do is to throw the substitution
-	      ;; form with the `eshell-replace-command' tag, and the form
-	      ;; will be replaced within the current command, and
-	      ;; execution will then resume (iteratively) as before.
-	      ;; Thus, aliases can even contain references to asynchronous
-	      ;; sub-commands, and things will still work out as they
-	      ;; should.
-	      (let* (result
+        (if (and args (not (memq (car form) '(run-hooks))))
+            (eshell-manipulate
+                (format-message "evaluating arguments to `%s'"
+                                (symbol-name (car form)))
+              (while args
+                (setcar args (eshell-do-eval (car args) synchronous-p))
+                (setq args (cdr args)))))
+        (cond
+         ((eq (car form) 'progn)
+          (car (last form)))
+         ((eq (car form) 'prog1)
+          (cadr form))
+         (t
+          ;; If a command desire to replace its execution form with
+          ;; another command form, all it needs to do is throw the new
+          ;; form using the exception tag `eshell-replace-command'.
+          ;; For example, let's say that the form currently being
+          ;; eval'd is:
+          ;;
+          ;;   (eshell-named-command "hello")
+          ;;
+          ;; Now, let's assume the 'hello' command is an Eshell alias,
+          ;; the definition of which yields the command:
+          ;;
+          ;;   (eshell-named-command "echo" (list "Hello" "world"))
+          ;;
+          ;; What the alias code would like to do is simply substitute
+          ;; the alias form for the original form.  To accomplish
+          ;; this, all it needs to do is to throw the substitution
+          ;; form with the `eshell-replace-command' tag, and the form
+          ;; will be replaced within the current command, and
+          ;; execution will then resume (iteratively) as before.
+          ;; Thus, aliases can even contain references to asynchronous
+          ;; sub-commands, and things will still work out as they
+          ;; should.
+          (let* (result
                  (new-form
                   (catch 'eshell-replace-command
                     (ignore
                      (setq result (eval form))))))
-	        (if new-form
-		        (progn
-		          (eshell-manipulate "substituting replacement form"
-		            (setcar form (car new-form))
-		            (setcdr form (cdr new-form)))
-		          (eshell-do-eval form synchronous-p))
+            (if new-form
+                (progn
+                  (eshell-manipulate "substituting replacement form"
+                    (setcar form (car new-form))
+                    (setcdr form (cdr new-form)))
+                  (eshell-do-eval form synchronous-p))
               (if-let (((memq (car form) eshell-deferrable-commands))
                        ((not eshell-current-subjob-p))
                        (procs (eshell-make-process-pair result)))
                   (if synchronous-p
-		              (eshell/wait (cdr procs))
-		            (eshell-manipulate "inserting ignore form"
-		              (setcar form 'ignore)
-		              (setcdr form nil))
-		            (throw 'eshell-defer procs))
+                      (eshell/wait (cdr procs))
+                    (eshell-manipulate "inserting ignore form"
+                      (setcar form 'ignore)
+                      (setcdr form nil))
+                    (throw 'eshell-defer procs))
                 (list 'quote result))))))))))))
 
 ;; This command seems to not be able to run using mx:eval-expression

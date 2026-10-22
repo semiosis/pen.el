@@ -28,7 +28,8 @@
   '((t :foreground "#d2268b"
        :background "#2e2e2e"
        ;; :weight bold
-       :underline t))
+       :underline t
+       :inverse-video nil))
   "Face for org-mode bowld."
   :group 'org-faces)
 
@@ -36,8 +37,10 @@
   '((t :foreground "#8bd226"
        :background "#2e2e2e"
        ;; :weight normal
-       :italic t
-       :underline t))
+       ;; :italic t
+       :italic nil
+       :underline t
+       :inverse-video nil))
   "Face for org-mode italic."
   :group 'org-faces)
 
@@ -46,7 +49,8 @@
        :background "#2e2e2e"
        ;; :weight normal
        ;; :italic t
-       :underline t))
+       :underline t
+       :inverse-video nil))
   "Face for org-mode underline."
   :group 'org-faces)
 
@@ -501,8 +505,11 @@ is specified, `:italic' is ignored."
            '(info-menu-header)
            do
            (set-face-attribute face nil :height 1.0 :weight 'unspecified
-                               :background "#ffcccc"
-                               :foreground "#772222"))
+                               :foreground "#99cc99"
+                               ;; :background "#772222"
+                               :background "#337733"
+                               ;; :background 'unspecified
+                               ))
   (cl-loop for face in
            '(shr-h1
              info-title-1)
@@ -600,6 +607,50 @@ is specified, `:italic' is ignored."
    :background "#151515"
    :foreground "#646464"
    :bold t)
+
+  (require 'org)
+  (set-face-attribute
+   'org-bold nil
+   :inverse-video nil
+   :underline t
+   :bold t)
+  (set-face-attribute
+   'org-italic nil
+   :inverse-video nil
+   :underline t
+   :bold t
+   ;; :slant 'italic
+   :slant 'normal)
+  (set-face-attribute
+   'org-underline nil
+   :inverse-video nil
+   :underline t
+   :bold t)
+  (set-face-attribute
+   'org-verbatim nil
+   :inverse-video nil
+   :underline t
+   :bold t)
+  (set-face-attribute
+   'org-strikethrough nil
+   :inverse-video nil
+   :underline nil
+   :strike-through t
+   :bold t)
+  (setq org-emphasis-alist
+        '(("*" ;; (bold :foreground "Orange" )
+           org-bold)
+          ("/" ;; italic
+           org-italic)
+          ("_" ;; underline
+           org-underline
+           )
+          ("=" ;; (:background "maroon" :foreground "white")
+           org-verbatim verbatim)
+          ("~" ;; (:background "deep sky blue" :foreground "MidnightBlue")
+           org-code verbatim)
+          ;; ("+" (:strike-through t))
+          ("+" org-strikethrough)))
 
   (require 'auto-highlight-symbol)
   ;; (global-auto-highlight-symbol-mode -1)
@@ -992,8 +1043,15 @@ is specified, `:italic' is ignored."
     (require 'info-xref)
     (set-face-foreground 'info-xref xfg)
     (set-face-background 'info-xref xbg)
+    (set-face-underline 'info-xref t)
+    (set-face-underline 'info-xref-visited t)
+    ;; (set-face-inverse-video 'info-xref t)
+    (set-face-inverse-video 'info-menu-header nil)
+    
     (set-face-foreground 'info-xref-visited cfg)
     (set-face-background 'info-xref-visited cbg)
+
+    (set-face-underline 'info-menu-header nil)
 
     (set-face-foreground 'fringe "#111111")
     (set-face-background 'fringe "#000000")
@@ -2031,6 +2089,10 @@ Also see option `magit-blame-styles'."
 
                                      magit-diff-removed-highlight
 
+                                     info-quoted-face
+
+                                     ;; font-lock-builtin-face
+
                                      ahs-face
                                      ahs-plugin-default-face)
                           do
@@ -2100,9 +2162,7 @@ Also see option `magit-blame-styles'."
                                      yas-field-highlight-face
                                      avy-lead-face
 
-                                     org-verbatim
-                                     org-bold
-                                     org-italic
+                                     
 
                                      ;; bible-jesus-words
                                      ;; bible-divine-name
@@ -2129,6 +2189,9 @@ Also see option `magit-blame-styles'."
 
                                      ivy-current-match
 
+                                     info-xref
+                                     info-xref-visited
+
                                      ahs-face-unfocused
                                      ahs-plugin-default-face-unfocused)
                           do
@@ -2152,6 +2215,10 @@ Also see option `magit-blame-styles'."
                                      ;; magit-diff-context
                                      magit-diff-hunk-heading-highlight
                                      magit-diff-hunk-heading
+
+                                     org-verbatim
+                                     org-bold
+                                     org-italic
 
                                      ;; diff-removed
                                      hc-tab
@@ -2193,6 +2260,13 @@ Also see option `magit-blame-styles'."
                  do
                  (cl-loop for f in '(
                                      Man-underline
+                                     info-title-1
+                                     info-title-2
+                                     info-title-3
+                                     info-title-4
+
+                                     info-menu-header
+                                     
                                      ivy-minibuffer-match-face-2
                                      lsp-ui-peek-peek)
                           do

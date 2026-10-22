@@ -157,6 +157,8 @@
           (ace-link-org))
          ((eq major-mode 'emacs-lisp-mode)
           (ace-link-org))
+         ((eq major-mode 'eshell-mode)
+          (ace-link-button-or-org))
          ((eq major-mode 'Man-mode)
           (ace-link-click-button))
          ((eq major-mode 'special-mode)

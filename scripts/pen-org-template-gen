@@ -25,6 +25,7 @@ test "$interp" = rosie && interp=rpl
 test "$interp" = elasticsearch && interp=es
 test "$interp" = cucumber && interp=feature
 test "$interp" = gherkin && interp=feature
+test "$interp" = org && interp=quote
 
 postprocess() {
     sed 's/^\(\s*\)#+/,\1#+/' | sed 's/^/  /' | awk 1
