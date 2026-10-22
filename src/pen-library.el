@@ -803,13 +803,14 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 (defmacro echo (&rest body)
   `(pen-b echo ,@body))
 
-(defun e (path &optional literally)
+(defun e (path &optional in-fundamental-mode)
   (interactive)
   (if path
       (progn
         (setq path (eval `(echo -n ,path)))
-        (if literally
-            (pen-find-file-literally path)
+        (if in-fundamental-mode
+            ;; (pen-find-file-literally path)
+          (fff path)
           (find-file path)))))
 
 (defun recursive-widen ()

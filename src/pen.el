@@ -10,6 +10,7 @@
 (setenv "TMUX_PANE" "")
  
 (setq large-file-warning-threshold nil)
+(setq large-file-warning-threshold 10000000)
 
 ;; Ignore file locking until startup is complete. That way I can start multiple emacs workers at the same time
 (setq create-lockfiles nil)

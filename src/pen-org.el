@@ -1114,4 +1114,177 @@ The table is taken from the parameter TXT, or from the buffer at point."
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 
+
+(define-derived-mode org-strippeddown-mode outline-mode "OrgStrippedDown"
+  "Outline-based notes management and organizer, alias
+\"Carsten's outline-mode for keeping track of everything.\"
+
+Org mode develops organizational tasks around a NOTES file which
+contains information about projects as plain text.  Org mode is
+implemented on top of Outline mode, which is ideal to keep the content
+of large files well structured.  It supports ToDo items, deadlines and
+time stamps, which magically appear in the diary listing of the Emacs
+calendar.  Tables are easily created with a built-in table editor.
+Plain text URL-like links connect to websites, emails (VM), Usenet
+messages (Gnus), BBDB entries, and any files related to the project.
+For printing and sharing of notes, an Org file (or a part of it)
+can be exported as a structured ASCII or HTML file.
+
+The following commands are available:
+
+\\{org-mode-map}"
+  (setq-local org-mode-loading t)
+  (org-load-modules-maybe)
+  (when org-agenda-file-menu-enabled
+    (org-install-agenda-files-menu))
+  (when (and org-link-descriptive
+             (eq org-fold-core-style 'overlays))
+    (add-to-invisibility-spec '(org-link)))
+  (org-fold-initialize (or (and (stringp org-ellipsis) (not (equal "" org-ellipsis)) org-ellipsis)
+                        "..."))
+  (make-local-variable 'org-link-descriptive)
+  (when (eq org-fold-core-style 'overlays) (add-to-invisibility-spec '(org-hide-block . t)))
+  (if org-link-descriptive
+      (org-fold-core-set-folding-spec-property (car org-link--link-folding-spec) :visible nil)
+    (org-fold-core-set-folding-spec-property (car org-link--link-folding-spec) :visible t))
+  (setq-local outline-regexp org-outline-regexp)
+  (setq-local outline-level 'org-outline-level)
+  (when (and (stringp org-ellipsis) (not (equal "" org-ellipsis)))
+    (unless org-display-table
+      (setq org-display-table (make-display-table)))
+    (set-display-table-slot
+     org-display-table 4
+     (vconcat (mapcar (lambda (c) (make-glyph-code c 'org-ellipsis))
+		      org-ellipsis)))
+    (setq buffer-display-table org-display-table))
+  (org-set-regexps-and-options)
+  (org-set-font-lock-defaults)
+  (when (and org-tag-faces (not org-tags-special-faces-re))
+    ;; tag faces set outside customize.... force initialization.
+    (org-set-tag-faces 'org-tag-faces org-tag-faces))
+  ;; Calc embedded
+  (setq-local calc-embedded-open-mode "# ")
+  ;; Modify a few syntax entries
+  (modify-syntax-entry ?\" "\"")
+  (modify-syntax-entry ?\\ "_")
+  (modify-syntax-entry ?~ "_")
+  (modify-syntax-entry ?< "(>")
+  (modify-syntax-entry ?> ")<")
+  (setq-local font-lock-unfontify-region-function 'org-unfontify-region)
+  ;; Activate before-change-function
+  (setq-local org-table-may-need-update t)
+  (add-hook 'before-change-functions 'org-before-change-function nil 'local)
+  ;; Check for running clock before killing a buffer
+  (add-hook 'kill-buffer-hook 'org-check-running-clock nil 'local)
+  ;; Initialize cache.
+  (org-element-cache-reset)
+  (when (and org-element-cache-persistent
+             org-element-use-cache)
+    (org-persist-load 'org-element--cache (current-buffer) t))
+  ;; Initialize macros templates.
+  (org-macro-initialize-templates)
+  ;; Initialize radio targets.
+  (org-update-radio-target-regexp)
+  ;; Indentation.
+  (setq-local indent-line-function 'org-indent-line)
+  (setq-local indent-region-function 'org-indent-region)
+  ;; Filling and auto-filling.
+  (org-setup-filling)
+  ;; Comments.
+  (org-setup-comments-handling)
+  ;; Beginning/end of defun
+  (setq-local beginning-of-defun-function 'org-backward-element)
+  (setq-local end-of-defun-function
+	      (lambda ()
+		(if (not (org-at-heading-p))
+		    (org-forward-element)
+		  (org-forward-element)
+		  (forward-char -1))))
+  ;; Next error for sparse trees
+  (setq-local next-error-function 'org-occur-next-match)
+  ;; Make commit log messages from Org documents easier.
+  (setq-local add-log-current-defun-function #'org-add-log-current-headline)
+  ;; Make sure dependence stuff works reliably, even for users who set it
+  ;; too late :-(
+  (if org-enforce-todo-dependencies
+      (add-hook 'org-blocker-hook
+		'org-block-todo-from-children-or-siblings-or-parent)
+    (remove-hook 'org-blocker-hook
+		 'org-block-todo-from-children-or-siblings-or-parent))
+  (if org-enforce-todo-checkbox-dependencies
+      (add-hook 'org-blocker-hook
+		'org-block-todo-from-checkboxes)
+    (remove-hook 'org-blocker-hook
+		         'org-block-todo-from-checkboxes))
+
+  ;; Align options lines
+  (setq-local
+   align-mode-rules-list
+   '((org-in-buffer-settings
+      (regexp . "^[ \t]*#\\+[A-Z_]+:\\(\\s-*\\)\\S-+")
+      (modes . '(org-mode)))))
+
+  ;; Setup the pcomplete hooks
+  (setq-local pcomplete-command-completion-function #'org-pcomplete-initial)
+  (setq-local pcomplete-command-name-function #'org-command-at-point)
+  (setq-local pcomplete-default-completion-function #'ignore)
+  (setq-local pcomplete-parse-arguments-function #'org-parse-arguments)
+  (setq-local pcomplete-termination-string "")
+  (add-hook 'completion-at-point-functions
+            #'pcomplete-completions-at-point nil t)
+  (setq-local buffer-face-mode-face 'org-default)
+
+  ;; If empty file that did not turn on Org mode automatically, make
+  ;; it to.
+  (when (and org-insert-mode-line-in-empty-file
+	     (called-interactively-p 'any)
+	     (= (point-min) (point-max)))
+    (insert "#    -*- mode: org -*-\n\n"))
+  (unless org-inhibit-startup
+    (when (or org-startup-align-all-tables org-startup-shrink-all-tables)
+      (org-table-map-tables
+       (cond ((and org-startup-align-all-tables
+		   org-startup-shrink-all-tables)
+	      (lambda () (org-table-align) (org-table-shrink)))
+	     (org-startup-align-all-tables #'org-table-align)
+	     (t #'org-table-shrink))
+       t))
+    ;; Suppress modification hooks to speed up the startup.
+    ;; However, do it only when text properties/overlays, but not
+    ;; buffer text are actually modified.  We still need to track text
+    ;; modifications to make cache updates work reliably.
+    (org-unmodified
+     (when org-startup-with-beamer-mode (org-beamer-mode))
+     (when org-startup-with-inline-images (org-display-inline-images))
+     (when org-startup-with-latex-preview (org-latex-preview '(16)))
+     (unless org-inhibit-startup-visibility-stuff (org-cycle-set-startup-visibility))
+     (when org-startup-truncated (setq truncate-lines t))
+     (when org-startup-numerated (require 'org-num) (org-num-mode 1))
+     (when org-startup-indented (require 'org-indent) (org-indent-mode 1))))
+
+  ;; Add a custom keymap for `visual-line-mode' so that activating
+  ;; this minor mode does not override Org's keybindings.
+  ;; FIXME: Probably `visual-line-mode' should take care of this.
+  (let ((oldmap (cdr (assoc 'visual-line-mode minor-mode-map-alist)))
+        (newmap (make-sparse-keymap)))
+    (set-keymap-parent newmap oldmap)
+    (define-key newmap [remap move-beginning-of-line] nil)
+    (define-key newmap [remap move-end-of-line] nil)
+    (define-key newmap [remap kill-line] nil)
+    (make-local-variable 'minor-mode-overriding-map-alist)
+    (push `(visual-line-mode . ,newmap) minor-mode-overriding-map-alist))
+
+  ;; Activate `org-table-header-line-mode'
+  (when org-table-header-line-p
+    (org-table-header-line-mode 1))
+  ;; Try to set `org-hide' face correctly.
+  (let ((foreground (org-find-invisible-foreground)))
+    (when foreground
+      (set-face-foreground 'org-hide foreground)))
+  ;; Set face extension as requested.
+  (org--set-faces-extend '(org-block-begin-line org-block-end-line)
+                         org-fontify-whole-block-delimiter-line)
+  (org--set-faces-extend org-level-faces org-fontify-whole-heading-line)
+  (setq-local org-mode-loading nil))
+
 (provide 'pen-org)

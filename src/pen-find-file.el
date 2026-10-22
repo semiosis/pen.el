@@ -3,6 +3,13 @@
 
 (setq find-file-suppress-same-file-warnings t)
 
+(defun find-file-fundamental-mode (filename &optional wildcards)
+  (interactive
+   (find-file-read-args "Find file (fundamental-mode): "
+                        (confirm-nonexistent-file-or-buffer)))
+  (let ((auto-mode-alist nil)) (find-file filename wildcards)))
+(defalias 'fff 'find-file-fundamental-mode)
+
 ;; This is actually where dired handles opening files
 (defun find-file-around-advice (proc &rest args)
   ;; Make it so I can use find-file from within the advice, and
@@ -30,19 +37,19 @@
             (string-equal "PDF" ext))
         (if (yes-or-no-p "Show PDF info? (y) or Open PDF (n)")
             (etv (pen-sn (cmd "pdfinfo" fp)))
-            (if (>= (prefix-numeric-value current-prefix-arg) 16)
-                (progn
-                  (pen-sn "pdfs2txt" nil dn)
-                  (find-file (concat dn "/" fn ".txt")))
+          (if (>= (prefix-numeric-value current-prefix-arg) 16)
               (progn
-                (if (yes-or-no-p "Add to calibredb?")
-                    (pen-calibre-add fp)))
-              (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
-                      (not (yes-or-no-p "Open text form?")))
-                  (pen-sn (concat "z " (pen-q fp)) nil nil nil t)
-                (progn
-                  (pen-sn "pdfs2txt" nil dn)
-                  (find-file (concat dn "/" fn ".txt")))))))
+                (pen-sn "pdfs2txt" nil dn)
+                (find-file (concat dn "/" fn ".txt")))
+            (progn
+              (if (yes-or-no-p "Add to calibredb?")
+                  (pen-calibre-add fp)))
+            (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
+                    (not (yes-or-no-p "Open text form?")))
+                (pen-sn (concat "z " (pen-q fp)) nil nil nil t)
+              (progn
+                (pen-sn "pdfs2txt" nil dn)
+                (find-file (concat dn "/" fn ".txt")))))))
        ((or (string-equal "epub" ext)
             (string-equal "EPUB" ext))
         (if (>= (prefix-numeric-value current-prefix-arg) 16)
