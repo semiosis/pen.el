@@ -1067,6 +1067,7 @@ environment, as specified in `eshell-variable-aliases-list'."
   "Return FILE, possibly decorated."
   ;; (elog "%s" "*ls-files*" file)
   ;; (elog "%s" "*ls-files*" dir)
+  ;; (pen-log-echo (pps file))
   (if eshell-ls-use-colors
       (let ((face
              (cond
@@ -1077,6 +1078,8 @@ environment, as specified in `eshell-variable-aliases-list'."
                'eshell-ls-symlink)
 
               ((eq (cadr file) t)
+               ;; (pen-log-echo (car file))
+               ;; (setcar file (concat (car file) "/"))
                'eshell-ls-directory)
 
               ((not (eshell-ls-filetype-p (cdr file) ?-))
@@ -1585,7 +1588,7 @@ relative to that directory."
                                      ;; strings saves another syscall
                                      ;; later when we are going to
                                      ;; display user and group names.
-                        (if numeric-uid-gid 'integer 'string))))
+                                     (if numeric-uid-gid 'integer 'string))))
           (when (and show-almost-all
                      (not show-all))
             (setq entries
@@ -1702,6 +1705,12 @@ Each member of FILES is either a string or a cons cell of the form
                                         (cdr file))))
                        (eshell-ls-decorated-name file))
                    "")))
+            
+            ;; If it is a directory, then add a "/"
+            ;; I'm not recalculating the position
+            (if (and (car file) (eq (cadr file) t))
+                (setq name (concat name "/")))
+            
             (if (< col-index columns)
                 (setq need-return
                       (concat need-return name
@@ -2130,7 +2139,7 @@ or an external command."
         (eshell-lisp-command sym
                              (mapcar
                               (lambda (e)
-                                (message "type: %s, val: %s" (str (type e)) (str e))
+                                (message "eshell-plain-command function: %s, arg type: %s, arg val: %s" (str esym) (str (type e)) (str e))
                                 (if (stringp e)
                                     (substring-no-properties e))
                                 e)

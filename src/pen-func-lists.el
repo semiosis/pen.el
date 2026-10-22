@@ -431,6 +431,10 @@
 (defset Man-mode-funcs '(Man-follow-manual-reference
                          Man-goto-section))
 
+(defset chess-display-mode-funcs '(
+                           chess-display-move-first
+                           chess-display-move-last))
+
 (defset rustic-mode-funcs (list
                            'rust-test
                            'rustic-cargo-current-test))

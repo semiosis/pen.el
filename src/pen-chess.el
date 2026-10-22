@@ -9,4 +9,8 @@
 (advice-add 'chess-images-handler :around #'chess-images-handler-around-advice)
 ;; (advice-remove 'chess-images-handler #'chess-images-handler-around-advice)
 
+(comment
+ (define-key chess-display-mode-map (kbd "M-<") nil)
+ (define-key chess-display-mode-map (kbd "M->") nil))
+
 (provide 'pen-chess)

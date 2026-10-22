@@ -1114,7 +1114,11 @@ The table is taken from the parameter TXT, or from the buffer at point."
 
 (define-key org-mode-map (kbd "C-c C-k") nil)
 
+(comment
+ ;; Too laggy
+ (define-derived-mode org-strippeddown-mode org-mode "OrgStrippedDown"))
 
+;; Not inheriting from org-mode, it is much faster.
 (define-derived-mode org-strippeddown-mode outline-mode "OrgStrippedDown"
   "Outline-based notes management and organizer, alias
 \"Carsten's outline-mode for keeping track of everything.\"
@@ -1141,7 +1145,7 @@ The following commands are available:
              (eq org-fold-core-style 'overlays))
     (add-to-invisibility-spec '(org-link)))
   (org-fold-initialize (or (and (stringp org-ellipsis) (not (equal "" org-ellipsis)) org-ellipsis)
-                        "..."))
+                           "..."))
   (make-local-variable 'org-link-descriptive)
   (when (eq org-fold-core-style 'overlays) (add-to-invisibility-spec '(org-hide-block . t)))
   (if org-link-descriptive
@@ -1155,7 +1159,7 @@ The following commands are available:
     (set-display-table-slot
      org-display-table 4
      (vconcat (mapcar (lambda (c) (make-glyph-code c 'org-ellipsis))
-		      org-ellipsis)))
+		              org-ellipsis)))
     (setq buffer-display-table org-display-table))
   (org-set-regexps-and-options)
   (org-set-font-lock-defaults)
@@ -1195,11 +1199,11 @@ The following commands are available:
   ;; Beginning/end of defun
   (setq-local beginning-of-defun-function 'org-backward-element)
   (setq-local end-of-defun-function
-	      (lambda ()
-		(if (not (org-at-heading-p))
-		    (org-forward-element)
-		  (org-forward-element)
-		  (forward-char -1))))
+	          (lambda ()
+		        (if (not (org-at-heading-p))
+		            (org-forward-element)
+		          (org-forward-element)
+		          (forward-char -1))))
   ;; Next error for sparse trees
   (setq-local next-error-function 'org-occur-next-match)
   ;; Make commit log messages from Org documents easier.
@@ -1208,12 +1212,12 @@ The following commands are available:
   ;; too late :-(
   (if org-enforce-todo-dependencies
       (add-hook 'org-blocker-hook
-		'org-block-todo-from-children-or-siblings-or-parent)
+		        'org-block-todo-from-children-or-siblings-or-parent)
     (remove-hook 'org-blocker-hook
-		 'org-block-todo-from-children-or-siblings-or-parent))
+		         'org-block-todo-from-children-or-siblings-or-parent))
   (if org-enforce-todo-checkbox-dependencies
       (add-hook 'org-blocker-hook
-		'org-block-todo-from-checkboxes)
+		        'org-block-todo-from-checkboxes)
     (remove-hook 'org-blocker-hook
 		         'org-block-todo-from-checkboxes))
 
@@ -1237,17 +1241,17 @@ The following commands are available:
   ;; If empty file that did not turn on Org mode automatically, make
   ;; it to.
   (when (and org-insert-mode-line-in-empty-file
-	     (called-interactively-p 'any)
-	     (= (point-min) (point-max)))
+	         (called-interactively-p 'any)
+	         (= (point-min) (point-max)))
     (insert "#    -*- mode: org -*-\n\n"))
   (unless org-inhibit-startup
     (when (or org-startup-align-all-tables org-startup-shrink-all-tables)
       (org-table-map-tables
        (cond ((and org-startup-align-all-tables
-		   org-startup-shrink-all-tables)
-	      (lambda () (org-table-align) (org-table-shrink)))
-	     (org-startup-align-all-tables #'org-table-align)
-	     (t #'org-table-shrink))
+		           org-startup-shrink-all-tables)
+	          (lambda () (org-table-align) (org-table-shrink)))
+	         (org-startup-align-all-tables #'org-table-align)
+	         (t #'org-table-shrink))
        t))
     ;; Suppress modification hooks to speed up the startup.
     ;; However, do it only when text properties/overlays, but not
@@ -1286,5 +1290,7 @@ The following commands are available:
                          org-fontify-whole-block-delimiter-line)
   (org--set-faces-extend org-level-faces org-fontify-whole-heading-line)
   (setq-local org-mode-loading nil))
+
+(setq org-strippeddown-mode-map org-mode-map)
 
 (provide 'pen-org)

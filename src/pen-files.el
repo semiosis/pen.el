@@ -93,7 +93,18 @@ file literally."
         (cond ((eq choice ?y) nil)
               ((eq choice ?l) 'raw)
               ((eq choice ?f) 'fff)
-              ((eq choice ?m) (str2sym (fz (list 'text-mode
+              ((eq choice ?m)
+               (let ((subchoice (car
+                                 (read-multiple-choice
+                                  "Major mode: " '((?t "text-mode")
+                                                   (?h "help-mode")
+                                                   (?o "outline-mode")
+                                                   (?s "org-strippeddown-mode"))))))
+                 (cond ((eq subchoice ?t) 'text-mode)
+                       ((eq subchoice ?h) 'help-mode)
+                       ((eq subchoice ?o) 'outline-mode)
+                       ((eq subchoice ?s) 'org-strippeddown-mode))))
+              ((eq choice ?z) (str2sym (fz (list 'text-mode
                                                  'help-mode
                                                  'outline-mode
                                                  'org-strippeddown-mode)
