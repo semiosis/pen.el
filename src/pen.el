@@ -1907,7 +1907,8 @@ But use the results-analyser."
               (concat (pen-company-filetype--prefix)
                       s))
             res)))
-(memoize 'pen-company-filetype--candidates)
+
+;; (memoize 'pen-company-filetype--candidates)
 
 (defun pen-completion-at-point ()
   (interactive)

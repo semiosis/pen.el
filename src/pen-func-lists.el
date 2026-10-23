@@ -251,12 +251,14 @@
    'fpvd-org-table-export
    'efpvd-org-table-export))
 
+(defset org-strippeddown-mode-funcs org-mode-funcs)
+
 (defset kubernetes-overview-mode-funcs
-  (list
-   (df kube-get-pods
-       (pen-term-nsfa "kubectl -n kube-system get pods"))
-   (df kube-get-pods-buffer
-       (new-buffer-from-string (pen-sn "kubectl -n kube-system get pods")))))
+        (list
+         (df kube-get-pods
+             (pen-term-nsfa "kubectl -n kube-system get pods"))
+         (df kube-get-pods-buffer
+             (new-buffer-from-string (pen-sn "kubectl -n kube-system get pods")))))
 
 ;; (defun new-buffer-from-string-filter (s))
 

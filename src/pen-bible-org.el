@@ -32,12 +32,17 @@
               ((eq 'latex backend)
                (format "\\href{%s}{%s}" url title))))))
 
+(defun strongs-code-url (code)
+  (snc "cif -E 'blueletterbibleify-strongs-code | xurls'" code))
+
+(memoize 'strongs-code-url)
+
 (org-link-set-parameters
  "strongs"
  :export (lambda (path desc backend)
            (let ((title (or desc
                             (s-replace-regexp "^[^:]*:" "" path)))
-                 (url (snc "cif -E 'blueletterbibleify-strongs-code | xurls'" path))
+                 (url (strongs-code-url path))
                  ;; (urlsegment (urlencode path))
                  )
              (cond

@@ -377,13 +377,13 @@
   (interactive)
   (run-with-timer 1 nil 'pen-default-add-keys))
 
-(defun pen-delay-memoise ()
-  (interactive)
-  (memoize-restore 'pen-prompt-snc)
-  (memoize 'pen-prompt-snc))
+;; (defun pen-delay-memoise ()
+;;   (interactive)
+;;   (memoize-restore 'pen-prompt-snc)
+;;   (memoize 'pen-prompt-snc))
 
 ;; (add-hook 'after-make-frame-functions 'pen-default-add-keys)
-(add-hook 'after-init-hook 'pen-delay-add-keys)
+;; (add-hook 'after-init-hook 'pen-delay-add-keys)
 ;; (add-hook 'after-init-hook 'pen-acolyte-scratch)
 
 (defun pen-display-banner ()
@@ -393,7 +393,7 @@
 ;; (add-hook 'after-init-hook 'pen-banner-emacs)
 (add-hook 'after-init-hook 'pen-display-banner)
 (add-hook 'after-init-hook 'pen-load-config t)
-(add-hook 'after-init-hook 'pen-delay-memoise)
+;; (add-hook 'after-init-hook 'pen-delay-memoise)
 
 ;; This worked
 (defun pen-after-init-package-loads (frame)
@@ -413,8 +413,8 @@
 ;; This makes a prefix in the ~/.pen directory for the memoization cache
 (setq pen-memo-prefix (pen-get-hostname))
 
-(memoize-restore 'pen-prompt-snc)
-(memoize 'pen-prompt-snc)
+;; (memoize-restore 'pen-prompt-snc)
+;; (memoize 'pen-prompt-snc)
 
 ;; (pen-etv (pen-prompt-snc "rand" 1))
 

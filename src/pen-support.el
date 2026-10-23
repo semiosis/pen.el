@@ -792,14 +792,14 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
     (defalias 'eslugify 'slugify)
   (progn
     (require 'ucs-normalize)
-    (defun eslugify (title &optional joinlines length)
+    (defun eslugify (title &optional joinlines max-final-length)
       "Return the slug of NODE."
       (if (not joinlines)
           (pen-list2str (mapcar
                          (eval
                           `(lambda
                              (s)
-                             (eslugify s t ,length)))
+                             (eslugify s t ,max-final-length)))
                          (pen-str2list title)))
         (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
                                  768  ; U+0300 COMBINING GRAVE ACCENT
@@ -837,8 +837,9 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
                             ("_$" . ""))) ;; remove ending underscore
                    (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs))
                    (slug (downcase slug))
-                   (slug (if length
-                             (substring slug 0 (- length 1))
+                   (slug (if max-final-length
+                             ;; (substring slug 0 (- max-final-length 1))
+                             (s-left (- max-final-length 1) slug)
                            slug)))
               slug)))))
 

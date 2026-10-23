@@ -2760,6 +2760,7 @@ Function names are prefixed with pf- for easy searching"
              (message "failed:")
              (message (pen-list2str pen-prompts-failed))
              (message (concat (str (length pen-prompts-failed)) " failed")))))))
-  (pen-delay-memoise))
+  ;;(pen-delay-memoise)
+  )
 
 (provide 'pen-define-prompt-function)
