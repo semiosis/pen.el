@@ -202,6 +202,7 @@ list of (fn args) to pass to `apply''"
 (add-hook 'eshell-mode-hook
           '(lambda ()
              (progn
+               ;; (tv "hi")
                ;; define-key must go here becasue eshell-mode-map doesn't exist until it's started
                (define-key eshell-mode-map "\C-a" 'eshell-bol)
                (define-key eshell-mode-map (kbd "C-c C-a") 'beginning-of-line)
@@ -213,7 +214,7 @@ list of (fn args) to pass to `apply''"
 
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
-                ;; (define-key eshell-cmpl-mode-map (kbd "C-c TAB") 'pcomplete-expand-and-complete)
+               ;; (define-key eshell-cmpl-mode-map (kbd "C-c TAB") 'pcomplete-expand-and-complete)
                (define-key eshell-cmpl-mode-map (kbd "C-c TAB") nil)
 
                (define-key eshell-mode-map
@@ -304,7 +305,114 @@ or an external command."
 ;; This is needed for the eshell function to return and for eshell-unique to return the desired value
 ;; (advice-add 'eshell-mode :around #'ignore-errors-around-advice)
 ;; (advice-remove 'eshell-mode #'ignore-errors-around-advice)
-(advice-add 'eshell-mode :around #'ignore-errors-and-shut-up-around-advice)
+
+;; But I don't want to suppress the entire eshell-mode function.
+;; I should narrow the problem down to the actual thing. And suppress there.
+(comment
+ (advice-add 'eshell-mode :around #'ignore-errors-and-shut-up-around-advice)
+ (advice-remove 'eshell-mode #'ignore-errors-and-shut-up-around-advice))
+
+(define-derived-mode eshell-mode fundamental-mode "Eshell"
+  "Emacs shell interactive mode."
+  (setq-local eshell-mode t)
+
+  (when (and eshell-status-in-mode-line
+             (listp mode-line-format))
+    (make-local-variable 'eshell-command-running-string)
+    (let ((fmt (copy-sequence mode-line-format)))
+      (setq-local mode-line-format fmt))
+    (let ((mode-line-elt (cdr (memq 'mode-line-front-space mode-line-format))))
+      (if mode-line-elt
+          (setcar mode-line-elt 'eshell-command-running-string))))
+
+  (setq-local bookmark-make-record-function #'eshell-bookmark-make-record)
+  (setq local-abbrev-table eshell-mode-abbrev-table)
+
+  (setq-local window-point-insertion-type t)
+
+  (setq-local list-buffers-directory (expand-file-name default-directory))
+
+  ;; always set the tab width to 8 in Eshell buffers, since external
+  ;; commands which do their own formatting almost always expect this
+  (setq-local tab-width 8)
+
+  ;; don't ever use auto-fill in Eshell buffers
+  (setq auto-fill-function nil)
+
+  ;; always display everything from a return value
+  (setq-local print-length nil)
+  (setq-local print-level nil)
+
+  ;; set require-final-newline to nil; otherwise, all redirected
+  ;; output will end with a newline, whether or not the source
+  ;; indicated it!
+  (setq-local require-final-newline nil)
+
+  (setq-local max-lisp-eval-depth (max 3000 max-lisp-eval-depth))
+
+  (setq-local eshell-last-input-start (point-marker))
+  (setq-local eshell-last-input-end (point-marker))
+  (setq-local eshell-last-output-start (point-marker))
+  (setq-local eshell-last-output-end (point-marker))
+  (setq-local eshell-last-output-block-begin (point))
+
+  (let ((modules-list (copy-sequence eshell-modules-list)))
+    (setq-local eshell-modules-list modules-list))
+
+  ;; This is to avoid making the paragraph base direction
+  ;; right-to-left if the first word just happens to start with a
+  ;; strong R2L character.
+  (setq bidi-paragraph-direction 'left-to-right)
+
+  ;; load extension modules into memory.  This will cause any global
+  ;; variables they define to be visible, since some of the core
+  ;; modules sometimes take advantage of their functionality if used.
+  (dolist (module eshell-modules-list)
+    (let ((module-fullname (symbol-name module))
+          module-shortname)
+      (if (string-match "^eshell-\\(.*\\)" module-fullname)
+          (setq module-shortname
+                (concat "em-" (match-string 1 module-fullname))))
+      (unless module-shortname
+        (error "Invalid Eshell module name: %s" module-fullname))
+      (unless (featurep (intern module-shortname))
+        (condition-case nil
+            (load module-shortname)
+          (error (lwarn 'eshell :error
+                        "Unable to load module `%s' (defined in `eshell-modules-list')"
+                        module-fullname))))))
+
+  (unless (file-exists-p eshell-directory-name)
+    (eshell-make-private-directory eshell-directory-name t))
+
+  ;; Load core Eshell modules, then extension modules, for this session.
+  (dolist (module (append (eshell-subgroups 'eshell) eshell-modules-list))
+    (let ((load-hook (intern-soft (format "%s-load-hook" module)))
+          (initfunc (intern-soft (format "%s-initialize" module))))
+      (when (and load-hook (boundp load-hook))
+        (if (memq initfunc (symbol-value load-hook)) (setq initfunc nil))
+        (run-hooks load-hook))
+      ;; So we don't need the -initialize functions on the hooks (bug#5375).
+      (and initfunc (fboundp initfunc) (funcall initfunc))))
+
+  (if eshell-send-direct-to-subprocesses
+      (add-hook 'pre-command-hook #'eshell-intercept-commands t t))
+
+  (if eshell-scroll-to-bottom-on-input
+      (add-hook 'pre-command-hook #'eshell-preinput-scroll-to-bottom t t))
+
+  (when eshell-scroll-show-maximum-output
+    (setq-local scroll-conservatively 1000))
+
+  (when eshell-status-in-mode-line
+    (add-hook 'eshell-pre-command-hook #'eshell-command-started nil t)
+    (add-hook 'eshell-post-command-hook #'eshell-command-finished nil t))
+
+  (add-hook 'kill-buffer-hook #'eshell-kill-buffer-function t t)
+
+  (if eshell-first-time-p
+      (run-hooks 'eshell-first-time-mode-hook))
+  (run-hooks 'eshell-post-command-hook))
 
 (defun e/nw (&rest args)
   "First arg is an elisp function.
@@ -721,7 +829,17 @@ Any extra args go to that function"
           (pen-snc (concat (apply 'cmd (cons "cat" (list ,fp)))
                            (format " | pen-org-template-gen %s output" ,mn)))))))))
 
-(defun eshell/mode-cat (&rest args)
+(comment
+ (fontify-string-for-mode "kdfjksl" 'org-mode))
+(defun fontify-string-for-mode (s mode)
+  (let* ((mn (s-replace-regexp "-mode$" "" (str mode))))
+    (eval
+     `(universal-sidecar-fontify-as
+          ,mode
+          ((org-fold-core-style 'overlays))
+        s))))
+
+(defun eshell/org-cat (&rest args)
   "Like the bash `cat` function except highlights as org-mode."
   ;; Firstly, fix the arguments
   ;; (setq args (mapcar 'str args))
@@ -738,7 +856,7 @@ Any extra args go to that function"
                  ((org-fold-core-style 'overlays))
                (pen-snc (concat (apply 'cmd (cons "cat" (list ,fp)))
                                 (format " | pen-org-template-gen %s %s" ,mn (e/q ,rp))))))))))
-(defalias 'eshell/mcat 'eshell/mode-cat)
+(defalias 'eshell/mcat 'eshell/org-cat)
 
 (defun pen-highlight-as-org (s)
   (universal-sidecar-fontify-as
@@ -2252,5 +2370,58 @@ Sort entries alphabetically across.")
               args)
       t (expand-file-name default-directory)))
    (funcall flush-func)))
+
+(defun eshell/cat (&rest args)
+  "Implementation of cat in Lisp.
+If in a pipeline, or the file is not a regular file, directory or
+symlink, then revert to the system's definition of cat."
+  (setq args (eshell-stringify-list (flatten-tree args)))
+  (if (or eshell-in-pipeline-p
+          (catch 'special
+            (dolist (arg args)
+              (unless (or (and (stringp arg)
+                               (> (length arg) 0)
+                               (eq (aref arg 0) ?-))
+                          (let ((attrs (eshell-file-attributes arg)))
+                            (and attrs
+                                 (memq (aref (file-attribute-modes attrs) 0)
+                                       '(?d ?l ?-)))))
+                (throw 'special t)))))
+      (let ((ext-cat (eshell-search-path "cat")))
+        (if ext-cat
+            (throw 'eshell-replace-command
+                   (eshell-parse-command (eshell-quote-argument ext-cat) args))
+          (if eshell-in-pipeline-p
+              (error "Eshell's `cat' does not work in pipelines")
+            (error "Eshell's `cat' cannot display one of the files given"))))
+    (eshell-init-print-buffer)
+    (eshell-eval-using-options
+     "cat" args
+     '((?h "help" nil nil "show this usage screen")
+       :external "cat"
+       :show-usage
+       :usage "[OPTION] FILE...
+Concatenate FILE(s), or standard input, to standard output.")
+     (dolist (file args)
+       (if (string= file "-")
+           (throw 'eshell-external
+                  (eshell-external-command "cat" args))))
+     (let ((curbuf (current-buffer)))
+       (dolist (file args)
+         (with-temp-buffer
+           (let ((m (get-mode-for-file file)))
+             (insert (fontify-string-for-mode (cat file) m)))
+           ;; (insert-file-contents file)
+           (goto-char (point-min))
+           (while (not (eobp))
+             (let ((str (buffer-substring
+                         (point) (min (1+ (line-end-position))
+                                      (point-max)))))
+               (with-current-buffer curbuf
+                 (eshell-buffered-print str)))
+             (forward-line)))))
+     (eshell-flush)
+     ;; if the file does not end in a newline, do not emit one
+     (setq eshell-ensure-newline-p nil))))
 
 (provide 'pen-eshell)

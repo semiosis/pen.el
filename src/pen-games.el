@@ -5,12 +5,13 @@
 
 
 ;; This is just so the highlighted current line doesn't interfere with the game border
-(defun snake-around-advice (proc &rest args)
+(defun move-cursor-to-end-of-buffer--around-advice (proc &rest args)
   (let ((res (apply proc args)))
     (end-of-buffer)
     res))
-(advice-add 'snake :around #'snake-around-advice)
-;; (advice-remove 'snake #'snake-around-advice)
+(advice-add 'snake :around #'move-cursor-to-end-of-buffer--around-advice)
+(advice-add 'tetris :around #'move-cursor-to-end-of-buffer--around-advice)
+;; (advice-remove 'snake #'move-cursor-to-end-of-buffer--around-advice)
 
 
 ;; https://web.archive.org/web/20221015212113/https://en.wikipedia.org/wiki/Box-drawing_character

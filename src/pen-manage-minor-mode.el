@@ -140,6 +140,10 @@
         
         (clojure-mode
          (on org-link-minor-mode))
+
+        ;; Do it in j:switch-to-messages instead
+        ;; (messages-buffer-mode
+        ;;  (on org-link-minor-mode))
         
         (helpful-mode
          (on org-link-minor-mode))

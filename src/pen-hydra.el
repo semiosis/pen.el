@@ -523,7 +523,10 @@ display values."
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 16) (bash-messages t))
    ((>= (prefix-numeric-value current-prefix-arg) 4) (call-interactively 'bash-messages))
-   (t (switch-to-buffer "*Messages*"))))
+   (t (with-current-buffer (switch-to-buffer "*Messages*")
+        (if (not org-link-minor-mode)
+            (org-link-minor-mode))
+        (current-buffer)))))
 
 (defalias 'emoji-insert 'pick-emoji)
 

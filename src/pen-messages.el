@@ -53,4 +53,7 @@ Activate this advice with:
 (advice-add 'call-process :around #'call-process-around-advice)
 (advice-remove 'call-process #'call-process-around-advice)
 
+;; Do it in j:switch-to-messages
+;; (add-hook 'messages-buffer-mode-hook 'org-link-minor-mode)
+
 (provide 'pen-messages)
