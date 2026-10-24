@@ -21,6 +21,9 @@
 (require 'esh-help)
 (require 'esh-buf-stack)
 
+;; ev:eshell-command-aliases-list
+;; [[el:(e eshell-aliases-file)]]
+
 (setq eshell-hist-ignoredups t)
 (setq eshell-cmpl-cycle-completions nil)
 (setq eshell-cmpl-ignore-case t)
@@ -2409,7 +2412,8 @@ Concatenate FILE(s), or standard input, to standard output.")
      (let ((curbuf (current-buffer)))
        (dolist (file args)
          (with-temp-buffer
-           (let ((m (get-mode-for-file file)))
+           (let ((m (or (get-mode-for-file file)
+                        'text-mode)))
              (insert (fontify-string-for-mode (cat file) m)))
            ;; (insert-file-contents file)
            (goto-char (point-min))

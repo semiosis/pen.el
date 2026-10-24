@@ -67,6 +67,12 @@ extra checks should be done."
  (get-mode-for-file "yo.yuv")
  (get-mode-for-file "README.org"))
 
+;; TODO
+;; If html then offer sgml-mode
+;; If markdown then offer text-mode
+;; Or rather just make more stripped down modes
+;; Slowness has really only been a major problem for org-mode with all the extensions I have enabled
+
 (defun files--ask-user-about-large-file (size op-type filename offer-raw)
   "Query the user about what to do with large files.
 Files are \"large\" if file SIZE is larger than `large-file-warning-threshold'.

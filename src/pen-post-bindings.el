@@ -40,7 +40,9 @@
 
 (defun boggle ()
   (interactive)
-  (pen-vterm "boggle"))
+  ;; vterm doesn't presently display the game properly
+  ;; (pen-vterm "boggle")
+  (pen-term "boggle"))
 
 (defun cribbage ()
   (interactive)

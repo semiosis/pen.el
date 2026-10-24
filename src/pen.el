@@ -375,6 +375,7 @@ The arguments are in English like this:
 (require 'pen-vim)
 (require 'pen-insert-shebang)
 (require 'pen-comint)
+(require 'pen-comint-sidecar)
 (require 'pen-nlsh)
 (require 'pen-continuum)
 (require 'pen-ranger)

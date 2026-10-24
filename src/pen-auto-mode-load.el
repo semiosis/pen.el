@@ -87,7 +87,7 @@
 (add-to-list 'auto-mode-alist '("\\.adoc\\'" . adoc-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.puml\\|\\.iuml\\|\\.uml\\)\\'" . plantuml-mode))
 (add-to-list 'auto-mode-alist '("\\.toml\\'" . toml-mode))
-(add-to-list 'auto-mode-alist '("\\(\\.sh\\|.zsh\\)\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.sh\\|.zsh\\|alias\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.pash\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(conf\\|\\.conf\\)\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.wls\\|\\.nb\\|\\.wl\\)\\'" . wolfram-mode))

@@ -107,4 +107,12 @@ to auto-complete your input based on the installed manual pages."
 
   (Man-getpage-in-background man-args))
 
+(defun Man--window-state-change (window)
+  ;; (unless (integerp Man-width)
+  ;;   (when (timerp Man--window-state-change-timer)
+  ;;     (cancel-timer Man--window-state-change-timer))
+  ;;   (setq Man--window-state-change-timer
+  ;;         (run-with-idle-timer 1 nil #'Man-fit-to-window window)))
+  )
+
 (provide 'pen-man)

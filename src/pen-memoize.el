@@ -355,8 +355,18 @@
 ;; ;; this broke universal-sidecar
 ;; ;; (memoize 'locate-library)
 ;; 
-;; ;; Consider
-;; ;; (advice-add 'memoize-restore :around #'ignore-errors-around-advice)
-;; ;; (advice-add 'memoize :around #'ignore-errors-around-advice)
+
+;; It would be better to disable user-error: inside-docker-p is already memoized
+(advice-add 'memoize-restore :around #'ignore-errors-around-advice)
+(advice-add 'memoize :around #'ignore-errors-around-advice)
+
+(memoize 'bible-book-tinyname)
+(memoize 'bible-book-longname)
+(memoize 'bible-book-shortname)
+;; This speeds it up a lot
+;; I should ensure that the memoization databases are saved on the host
+(memoize 'bible-term-get-word)
+;; (memoize-restore 'bible-term-get-word)
+(memoize 'nbd-ebible-m)
 
 (provide 'pen-memoize)

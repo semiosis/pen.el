@@ -208,8 +208,6 @@
       (car (nth (- number 1) bible-book-map-names))
     (car (nth number bible-book-map-names))))
 
-(memoize 'bible-book-tinyname)
-
 (defun bible-book-keyname (name)
   (car (car (-filter (lambda (e) (member name e)) bible-book-map-names))))
 
@@ -226,8 +224,6 @@
 (defun bible-book-longname (name)
   (car (-sort (-on '> 'length) (car (-filter (lambda (e) (member name e)) bible-book-map-names)))))
 
-(memoize 'bible-book-longname)
-
 ;; Not the tiny name, the full book name, but short version
 
 ;; (bible-book-shortname "Revelation of John")
@@ -238,8 +234,6 @@
                (lambda (e) (not (string-match-p " " e)))
 
                (car (-filter (lambda (e) (member name e)) bible-book-map-names))))))
-
-(memoize 'bible-book-shortname)
 
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
@@ -1137,7 +1131,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   ;; (insert (bible-mode--exec-diatheke (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   ;; (insert (bible-mode--exec-diatheke (concat (bible-mode--get-current-book) " " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
-         (html-dom-tree (libxml-parse-html-region (point-min) (point-max))))
+         (html-dom-tree (libxml-parse-html-region (point-min) (point-max)))
+         (auto-hscroll-mode 'current-line))
     (erase-buffer)
     (bible-mode--insert-domnode-recursive (dom-by-tag html-dom-tree 'body) html-dom-tree)
     (message "Final tidying...")
@@ -1693,11 +1688,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (str info))))
 (defalias 'strongs-lookup 'bible-term-show-word)
 
-;; This speeds it up a lot
-;; I should ensure that the memoization databases are saved on the host
-(memoize 'bible-term-get-word)
-;; (memoize-restore 'bible-term-get-word)
-
 ;; TODO Make it so it resumes the same place
 (defun bible-mode-toggle-word-study()
   "Toggles the inclusion of word study for the active `bible-mode' buffer."
@@ -2147,7 +2137,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun nbd-ebible-m (module ref)
   ;; (pen-snc (concat (cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat"))
   (pen-snc (concat (pen-cmd "ocif" "nbd" "ebible" "-m" module ref) " | cat")))
-(memoize 'nbd-ebible-m)
 
 (comment
  (nbd-ebible-m "ESV" "Genesis 8:1"))

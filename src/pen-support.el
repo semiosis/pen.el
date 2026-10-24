@@ -1700,7 +1700,7 @@ See j:edit-read-string-hist for editing the hist var
 
 (defun pen-detect-language-string (s)
   (cond
-   ((string-match-p "#+BEGIN_" s) "orgmode")
+   ((string-match-p "#\\+BEGIN_" s) "orgmode")
    (t (language-detection-string s))))
 
 ;; This should also check the file extension
@@ -1798,6 +1798,10 @@ See j:edit-read-string-hist for editing the hist var
   (interactive)
   (if (not (minor-mode-p org-src-mode))
       (cond
+       ((derived-mode-p 'clojure-mode)
+        (call-interactively 'lsp))
+       (t
+        (pen-message-no-echo (format "Disabled lsp for %s" (str major-mode))))
        ((or (derived-mode-p 'sh-mode)
             (derived-mode-p 'bash-ts-mode))
         (pen-message-no-echo "Disabled lsp for sh"))

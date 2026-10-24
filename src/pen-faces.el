@@ -25,64 +25,63 @@
 (load-theme 'spacemacs-dark t)
 
 (defsetface org-bold
-  '((t :foreground "#d2268b"
-       :background "#2e2e2e"
-       ;; :weight bold
-       :underline t
-       :inverse-video nil))
-  "Face for org-mode bowld."
-  :group 'org-faces)
+            '((t :foreground "#d2268b"
+                 :background "#2e2e2e"
+                 ;; :weight bold
+                 :underline t
+                 :inverse-video nil))
+            "Face for org-mode bowld."
+            :group 'org-faces)
 
 (defsetface org-italic
-  '((t :foreground "#8bd226"
-       :background "#2e2e2e"
-       ;; :weight normal
-       ;; :italic t
-       :italic nil
-       :underline t
-       :inverse-video nil))
-  "Face for org-mode italic."
-  :group 'org-faces)
+            '((t :foreground "#8bd226"
+                 :background "#2e2e2e"
+                 ;; :weight normal
+                 ;; :italic t
+                 :italic nil
+                 :underline t
+                 :inverse-video nil))
+            "Face for org-mode italic."
+            :group 'org-faces)
 
 (defsetface org-underline
-  '((t :foreground "#8b26d2"
-       :background "#2e2e2e"
-       ;; :weight normal
-       ;; :italic t
-       :underline t
-       :inverse-video nil))
-  "Face for org-mode underline."
-  :group 'org-faces)
+            '((t :foreground "#8b26d2"
+                 :background "#2e2e2e"
+                 ;; :weight normal
+                 ;; :italic t
+                 :underline t
+                 :inverse-video nil))
+            "Face for org-mode underline."
+            :group 'org-faces)
 
 (defsetface org-strikethrough
-  '((t :foreground "#660000"
-       ;; :weight normal
-       :strike-through t))
-  "Face for org-mode strikethrough.")
+            '((t :foreground "#660000"
+                 ;; :weight normal
+                 :strike-through t))
+            "Face for org-mode strikethrough.")
 
 (setq org-emphasis-alist
-  '(("*" ;; (bold :foreground "Orange" )
-     org-bold)
-    ("/" ;; italic
-     org-italic)
-    ("_" ;; underline
-     org-underline
-     )
-    ("=" ;; (:background "maroon" :foreground "white")
-     org-verbatim verbatim)
-    ("~" ;; (:background "deep sky blue" :foreground "MidnightBlue")
-     org-code verbatim)
-    ;; ("+" (:strike-through t))
-    ("+" org-strikethrough)))
+      '(("*" ;; (bold :foreground "Orange" )
+         org-bold)
+        ("/" ;; italic
+         org-italic)
+        ("_" ;; underline
+         org-underline)
+        ("=" ;; (:background "maroon" :foreground "white")
+         org-verbatim verbatim)
+        ("~" ;; (:background "deep sky blue" :foreground "MidnightBlue")
+         org-code verbatim)
+        ;; ("+" (:strike-through t))
+        ("+" org-strikethrough)))
 
 (set-face-foreground 'org-verbatim "#f07000")
 ;; (set-face-foreground 'org-code "#f070f0")
 (set-face-foreground 'org-code "#c0c0c0")
 
- ;; | /a/     | *b* | =formula=     |         =d= |
- ;; |---------+-----+---------------+-------------|
- ;; | [[sps:vim]] |   2 | flkdsjfkldsja | 34289723498 |
- ;; |         |     |               |             |
+;; | /a/     | *b* | =formula=     |         =d= |
+;; |---------+-----+---------------+-------------|
+;; | [[sps:vim]] |   2 | flkdsjfkldsja | 34289723498 |
+;; |         |     |               |             |
 ;; org-verbatim is used for foreground, org-formula is used for background.
 ;; But I've added foreground for org-formula just in case
 (set-face-background 'org-formula "#404040")
@@ -181,7 +180,7 @@ argument, prompt for a regular expression using `read-regexp'."
 (require 'shr)
 (defun shr-tag-pre (dom)
   (let ((shr-folding-mode 'none)
-	    ;; (shr-current-font 'default)
+        ;; (shr-current-font 'default)
         (shr-current-font 'shr-code))
     (shr-ensure-newline)
     (shr-generic dom)
@@ -381,7 +380,7 @@ of the face.  If VALUE is a string, the string must be a color name,
 and the box is drawn in that color with a line width of 1.  Otherwise,
 VALUE must be a property list of the following form:
 
- (:line-width WIDTH :color COLOR :style STYLE)
+(:line-width WIDTH :color COLOR :style STYLE)
 
 If a keyword/value pair is missing from the property list, a default
 value will be used for the value, as specified below.
@@ -541,6 +540,20 @@ is specified, `:italic' is ignored."
            (set-face-attribute face nil :height 1.0 :weight 'unspecified
                                :background "#AF005F"
                                :foreground "#f664b5")))
+
+(defface pen-widget-mouse-face
+  '((t :inherit highlight))
+  "Face used for widgets when mouse is over them."
+  :group 'widget-faces)
+
+;; widget-mouse-face is not a face at all
+(setq widget-mouse-face 'pen-widget-mouse-face)
+;; (setq widget-mouse-face 'shadow)
+;; (set-face-foreground 'widget-mouse-face "#404040")
+;; (set-face-background 'widget-mouse-face "#151515")
+;; (set-face-attribute 'widget-mouse-face nil :inherit nil)
+
+;; nadvice - proc is the original function, passed in. do not modify
 
 (defun pen-set-faces ()
   (interactive)
@@ -764,7 +777,7 @@ is specified, `:italic' is ignored."
     ;; (set-face-background 'header-line-highlight "#101010")
     ;; (set-face-background 'header-line-highlight "#553355")
     ;; (set-face-foreground 'header-line-highlight "#995599")
-    
+
     (set-face-foreground 'header-line-highlight "#3377cc")
     (set-face-foreground 'header-line-highlight "#aa55aa")
     ;; (set-face-background 'header-line-highlight "#202040")
@@ -787,6 +800,7 @@ is specified, `:italic' is ignored."
     ;; (set-face-background 'header-line "#202020")
 
     (require 'markdown-mode)
+    (require 'lsp-headerline)
     (progn
       (set-face-attribute 'markdown-header-face nil :height 'unspecified)
       ;; (face-attribute 'markdown-header-face-1 :height)
@@ -833,7 +847,28 @@ is specified, `:italic' is ignored."
     (set-face-background 'sx-question-mode-title "#222222")
     (set-face-foreground 'sx-question-mode-title-comments "#ffff99")
     (set-face-background 'sx-question-mode-title-comments nil)
+
+    (require 'pen-bible-mode)
+    (set-face-underline 'bible-verse-ref nil)
+    (set-face-inverse-video 'bible-verse-ref-notes nil)
+
+    (set-face-underline 'org-level-1 nil)
+    (set-face-underline 'org-level-2 nil)
+    (set-face-underline 'org-level-3 nil)
+    (set-face-underline 'org-level-4 nil)
+    (set-face-underline 'org-level-5 nil)
+    (set-face-underline 'org-level-6 nil)
+    (set-face-underline 'org-level-7 nil)
+    (set-face-underline 'org-level-8 nil)
+
     
+    (set-face-underline 'font-lock-comment-face nil)
+
+    (require 'man)
+    ;; Color is sufficient in color mode
+    (set-face-underline 'Man-underline nil)
+    (set-face-inverse-video 'Man-underline nil)
+
     (require 'lsp-headerline)
     (set-face-background 'lsp-headerline-breadcrumb-path-error-face nil)
     (set-face-foreground 'lsp-headerline-breadcrumb-path-error-face "#662222")
@@ -888,9 +923,9 @@ is specified, `:italic' is ignored."
       (set-face-background 'font-lock-comment-face "#002020"))
     (set-face-foreground 'font-lock-comment-face "#004040")
     (set-face-foreground 'font-lock-comment-face "#205050")
-    
+
     (set-face-background 'linum nil)
-    
+
 
     (require 'display-line-numbers)
     (require 'hl-line)
@@ -914,7 +949,7 @@ is specified, `:italic' is ignored."
     ;; (set-face-foreground 'org-block-end-line "#af5faf")
     (set-face-foreground 'org-block-begin-line "#222222")
     (set-face-foreground 'org-block-end-line "#222222")
-    
+
     (set-face-foreground 'org-list-dt "#7777ff")
     ;; (set-face-foreground 'org-list-dt nil)
     ;; (set-face-background 'org-list-dt "#111111")
@@ -974,7 +1009,7 @@ is specified, `:italic' is ignored."
      (set-face-background 'w3m-tab-unselected-unseen "#777777"))
 
     (set-face-background 'w3m-image-anchor "#440000")
-    
+
     (set-face-foreground 'w3m-bold "#bbbbbb")
     (set-face-background 'w3m-bold "#222222")
     (set-face-foreground 'w3m-italic "#777777")
@@ -1000,18 +1035,21 @@ is specified, `:italic' is ignored."
     (require 'button)
     (set-face-foreground 'button fg)
     (set-face-background 'button bg)
+    (set-face-underline 'button t)
+    (set-face-underline 'shr-text t)
+    (set-face-underline 'shr-link nil)
 
     (require 'eshell-info-banner)
     (set-face-foreground 'eshell-info-banner-critical-face "#cc0000")
     (set-face-background 'eshell-info-banner-critical-face "#990000")
-    
+
     (comment (set-face-foreground 'eshell-info-banner-normal-face "#4444ff"))
     (set-face-foreground 'eshell-info-banner-normal-face "#55aa55")
     (set-face-background 'eshell-info-banner-normal-face "#224422")
-    
+
     (set-face-foreground 'eshell-info-banner-background-face "#333333")
     (set-face-background 'eshell-info-banner-background-face "#222222")
-    
+
     (set-face-foreground 'eshell-info-banner-warning-face "#999900")
     (set-face-background 'eshell-info-banner-warning-face "#555500")
 
@@ -1022,6 +1060,12 @@ is specified, `:italic' is ignored."
     (require 'wid-edit)
     (set-face-foreground 'widget-button wfg)
     (set-face-background 'widget-button wbg)
+    
+    (set-face-foreground 'widget-inactive "#404040")
+    (set-face-background 'widget-inactive "#151515")
+
+    ;; (set-face-foreground pen-widget-mouse-face "#404040")
+    ;; (set-face-background pen-widget-mouse-face "#404040")
 
     (require 'custom)
 
@@ -1047,7 +1091,7 @@ is specified, `:italic' is ignored."
     (set-face-underline 'info-xref-visited t)
     ;; (set-face-inverse-video 'info-xref t)
     (set-face-inverse-video 'info-menu-header nil)
-    
+
     (set-face-foreground 'info-xref-visited cfg)
     (set-face-background 'info-xref-visited cbg)
 
@@ -1140,7 +1184,7 @@ is specified, `:italic' is ignored."
   (set-face-background 'escape-glyph 'unspecified)
   (set-face-foreground 'escape-glyph "#222222")
   (set-face-underline 'nobreak-space t)
-  
+
   (set-face-underline 'flycheck-info nil)
   (set-face-underline 'flycheck-error nil)
   (set-face-underline 'flycheck-warning nil)
@@ -1152,7 +1196,7 @@ is specified, `:italic' is ignored."
   ;; Set the color then set unspecified
   (set-face-background 'default "#111118")
   (set-face-background 'default 'unspecified)
-  
+
   (set-face-foreground 'vertical-border "#222222")
   ;; No fringe color -- like terminal
   (set-face-background 'fringe nil)
@@ -1181,13 +1225,15 @@ is specified, `:italic' is ignored."
   (set-face-foreground 'fill-column-indicator "#000040")
   (set-face-background 'fill-column-indicator "#222222")
   ;; (set-face-foreground 'shadow "#585858")
+  ;; (set-face-foreground 'shadow "#303030")
+  ;; (set-face-foreground 'shadow "#404040")
   (set-face-foreground 'shadow "#303030")
   (set-face-background 'shadow nil)
 
   ;; (set-face-foreground 'minibuffer-header-face (face-foreground 'header-line-highlight))
   (set-face-foreground 'minibuffer-header-face "#999999")
   (set-face-background 'minibuffer-header-face "#111111")
-  
+
   (comment
    (set-face-foreground 'minibuffer-header-face "#d72f4f")
    (set-face-foreground 'minibuffer-header-face "#999999")
@@ -1233,7 +1279,7 @@ is specified, `:italic' is ignored."
   ;; These are nice colours, but sadly because of the highlight line
   ;; To distinguish it from ls dirs.
   ;; I'm going to disable hl-line-mode for eshell.
-  
+
   ;; (set-face-background 'epe-dir-face (face-foreground 'eshell-ls-directory))
   ;; (set-face-foreground 'epe-dir-face "#0000ff")
   (set-face-background 'epe-dir-face "#999999")
@@ -1305,11 +1351,11 @@ Also see option `magit-blame-styles'."
 
   (set-face-foreground 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
   (set-face-foreground 'diff-refine-added (face-background 'magit-diff-added-highlight))
-  
-  
+
+
   ;; (set-face-background 'diff-added 'unspecified)
   ;; (set-face-foreground 'diff-added (face-background 'magit-diff-added-highlight))
-  
+
 
   ;; (set-face-background 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
   ;; (set-face-foreground 'diff-refine-removed (face-background 'magit-diff-removed-highlight))
@@ -1396,8 +1442,6 @@ Also see option `magit-blame-styles'."
   (set-face-attribute 'ansi-color-underline nil :inherit 'underline :height 1.0)
   (set-face-attribute 'ansi-color-white nil :background "gray90" :foreground "grey90" :height 1.0)
   (set-face-attribute 'ansi-color-yellow nil :background "yellow3" :foreground "yellow3" :height 1.0))
-
-;; nadvice - proc is the original function, passed in. do not modify
 (defun pen-set-faces-around-advice (proc &rest args)
   (let ((res (apply proc args)))
     (pen-set-text-contrast-from-config)
@@ -1886,7 +1930,7 @@ Also see option `magit-blame-styles'."
 
                             ivy-match-required-face
                             ivy-minibuffer-match-face-1
-                            
+
                             ivy-minibuffer-match-face-3
                             ivy-minibuffer-match-face-4
                             ivy-minibuffer-match-highlight
@@ -1936,6 +1980,8 @@ Also see option `magit-blame-styles'."
                             pen-org-agenda-today-label
 
                             dired-marked
+
+                            
 
                             ;; org-agenda-date-today
 
@@ -2053,7 +2099,7 @@ Also see option `magit-blame-styles'."
                                      ;; org-bold
                                      org-todo
                                      org-done
-                                     
+
                                      company-tooltip
 
                                      markdown-markup-face
@@ -2114,6 +2160,7 @@ Also see option `magit-blame-styles'."
                  do
 
                  (cl-loop for f in '(
+                                     
                                      org-block-begin-line)
                           do
                           (set-face-attribute
@@ -2129,7 +2176,7 @@ Also see option `magit-blame-styles'."
 
                            ;; :italic t
                            )))
-        
+
         (cl-loop for fr in (frame-list)
                  do
 
@@ -2162,7 +2209,7 @@ Also see option `magit-blame-styles'."
                                      yas-field-highlight-face
                                      avy-lead-face
 
-                                     
+
 
                                      ;; bible-jesus-words
                                      ;; bible-divine-name
@@ -2189,6 +2236,16 @@ Also see option `magit-blame-styles'."
 
                                      ivy-current-match
 
+                                     ;; apropos-button
+                                     button
+                                     custom-button
+                                     custom-button-mouse
+                                     custom-button-pressed
+                                     custom-button-pressed-unraised
+
+                                     pen-widget-mouse-face
+
+                                     custom-link
                                      info-xref
                                      info-xref-visited
 
@@ -2220,6 +2277,8 @@ Also see option `magit-blame-styles'."
                                      org-bold
                                      org-italic
 
+                                     widget-inactive
+                                     custom-visibility
                                      ;; diff-removed
                                      hc-tab
                                      diff-refine-removed
@@ -2259,14 +2318,16 @@ Also see option `magit-blame-styles'."
         (cl-loop for fr in (frame-list)
                  do
                  (cl-loop for f in '(
-                                     Man-underline
+                                     ;; Man-underline
                                      info-title-1
                                      info-title-2
                                      info-title-3
                                      info-title-4
 
+                                     custom-button-unraised
+
                                      info-menu-header
-                                     
+
                                      ivy-minibuffer-match-face-2
                                      lsp-ui-peek-peek)
                           do
@@ -2331,7 +2392,7 @@ Also see option `magit-blame-styles'."
                            )))
         ;;  Reverse without inverse
 
-  
+
 
         (cl-loop for fr in (frame-list)
                  do
@@ -2375,7 +2436,7 @@ Also see option `magit-blame-styles'."
 
                                   magit-diff-file-heading-highlight
                                   magit-diff-file-heading
-                            
+
 
                                   bible-verse-ref-notes
 
@@ -2695,7 +2756,7 @@ Also see option `magit-blame-styles'."
                                 (custom-face-attributes-get f fr))
                                ;; (-flatten (mapcar
                                ;;            (lambda (attr) (list (car attr)
-                               ;;                                 (cdr attr))) 
+                               ;;                                 (cdr attr)))
                                ;;            (-filter
                                ;;             (lambda (tp) (not (eq (cdr tp)
                                ;;                                   'unspecified)))
@@ -2706,7 +2767,7 @@ Also see option `magit-blame-styles'."
                       (pen-custom-face-attributes-get f fr)
                       ;; (-flatten (mapcar
                       ;;            (lambda (attr) (list (car attr)
-                      ;;                                 (cdr attr))) 
+                      ;;                                 (cdr attr)))
                       ;;            (-filter
                       ;;             (lambda (tp) (not (eq (cdr tp)
                       ;;                                   'unspecified)))
@@ -2714,7 +2775,7 @@ Also see option `magit-blame-styles'."
                       ;;             (custom-face-attributes-get f fr))))
                       ))
               (pen-list-faces)))))
-  
+
   ;; (with-temp-buffer
   ;;   ;; I need to save all the faces, but custom-save-faces only does some of them
   ;;   (custom-save-faces)
@@ -2736,17 +2797,17 @@ Also see option `magit-blame-styles'."
 (defun pen-save-faces ()
   (interactive)
   (if (and (daemonp) (string-equal "DEFAULT" (daemonp)))
-    (progn
-      (message "Saving faces to /root/faces.el" )
-      ;; TODO Make it so this saves somewhere else then tries to replace it
-      ;; Or make it so this only works for DEFAULT.
-      (write-to-file (pen-get-faces) "/root/faces.el")
-      (message "Saved faces to /root/faces.el"))))
+      (progn
+        (message "Saving faces to /root/faces.el")
+        ;; TODO Make it so this saves somewhere else then tries to replace it
+        ;; Or make it so this only works for DEFAULT.
+        (write-to-file (pen-get-faces) "/root/faces.el")
+        (message "Saved faces to /root/faces.el"))))
 
 (defun pen-save-faces-to-config ()
   (interactive)
   (progn
-    (message "Saving faces to /root/.pen/faces.el" )
+    (message "Saving faces to /root/.pen/faces.el")
     (write-to-file (pen-get-faces) "/root/.pen/faces.el")
     (message "Saved faces to /root/.pen/faces.el")))
 

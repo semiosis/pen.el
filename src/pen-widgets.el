@@ -4,6 +4,26 @@
 
 ;; [[pa:wid-edit]]
 
+(require 'cus-edit)
+(defun custom--initialize-widget-variables ()
+  (setq-local widget-documentation-face 'custom-documentation)
+  (setq-local widget-button-face custom-button)
+  (setq-local widget-button-pressed-face custom-button-pressed)
+  ;; (setq-local widget-mouse-face custom-button-mouse)
+  ;; We need this because of the "More" button on docstrings.
+  ;; Otherwise clicking on "More" can push point offscreen, which
+  ;; causes the window to recenter on point, which pushes the
+  ;; newly-revealed docstring offscreen; which is annoying.  -- cyd.
+  (setq-local widget-button-click-moves-point t)
+  ;; When possible, use relief for buttons, not bracketing.  This test
+  ;; may not be optimal.
+  (when custom-raised-buttons
+    (setq-local widget-push-button-prefix "")
+    (setq-local widget-push-button-suffix "")
+    (setq-local widget-link-prefix "")
+    (setq-local widget-link-suffix ""))
+  (setq show-trailing-whitespace nil))
+
 ;; (defun pen-locate-libary (name)
 ;;   (interactive (list (read-string-hist "pen-locate-libary query: ")))
 

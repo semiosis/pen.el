@@ -2364,6 +2364,8 @@ case "$f" in
             TARGET="$TARGET:"
         fi
 
+        # window_name_formatted="$(printf -- "%s" "{$window_name}" | tr ' ' _)"
+        window_name_formatted="{${window_name}}"
         if test "$f" = "cw"; then
             :
             pen-tm breakp -s -E "$fullcmd"
@@ -2380,7 +2382,7 @@ case "$f" in
             # restore with exec <&1, not exec <$TTY nor exec <
             # exec <`tm-tty` `# see etty` 
 
-            full_id="$(tmux new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "export TMUX=; $fullcmd")"
+            full_id="$(tmux new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name_formatted" -c "$dir" "export TMUX=; $fullcmd")"
 
             if ! test -n "$BACKGROUNDED"; then
                 TMUX= tmux attach -t "$full_id"
@@ -2408,7 +2410,7 @@ case "$f" in
                 TARGET="${TARGET}:"
             fi
 
-            full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
+            full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name_formatted" -c "$dir" "$fullcmd")"
 
             if ! test -n "$HIGHLIGHT" && test "$IN_TMUX_SH" = y; then
                 HIGHLIGHT=default

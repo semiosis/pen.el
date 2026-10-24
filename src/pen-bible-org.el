@@ -18,12 +18,17 @@
   ;; (strongs-mode-lookup query)
   )
 
+(defun bible-verse-url (ref)
+  (snc "cif -E 'canonicalise-bible-ref | biblegatewayify-bible-ref -urlonly'" ref))
+
+(memoize 'bible-verse-url)
+
 (org-link-set-parameters
  "bible"
  :export (lambda (path desc backend)
            (let ((title (or desc
                             (s-replace-regexp "^[^:]*:" "" path)))
-                 (url (snc "cif -E 'canonicalise-bible-ref | biblegatewayify-bible-ref -urlonly'" path))
+                 (url (bible-verse-url path))
                  ;; (urlsegment (urlencode path))
                  )
              (cond

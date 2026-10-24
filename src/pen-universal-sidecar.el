@@ -283,4 +283,19 @@ If SIDECAR is non-nil, use sidecar for the current frame."
                    (display-warning 'universal-sidecar (format "Error encountered in displaying section %S: %S" section err) :error)))))
             (goto-char 0)))))))
 
+
+;; This was messing with the minibuffer position of other frames when
+;; a fuzzy finder was open on the selected frame.
+;; So I have left this operational only for the current frame.
+(defun universal-sidecar-refresh-all ()
+  "Refresh all sidecar buffers."
+
+  (universal-sidecar-refresh)
+
+  (comment
+   (dolist (frame (frame-list))
+     (save-mark-and-excursion
+       (with-selected-frame frame
+         (universal-sidecar-refresh))))))
+
 (provide 'pen-universal-sidecar)
