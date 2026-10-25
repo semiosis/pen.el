@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-10-24 Sat 00:03>
+#+DATE: <2026-10-25 Sun 20:49>
 
 #+KEYWORDS: faith christianity
 
@@ -2916,6 +2916,18 @@ We've got to love Jesus rather than evil. Jesus cleans us so that we stop commit
       *[[https://www.biblegateway.com/passage/?search=1%20John%203%3A6-18&version=ESV][I John 3:6-18]]* - No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him. Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning. The reason the Son of God appeared was to destroy the works of the devil. No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. For this is the message that you have heard from the beginning, that we should love one another. *We should not be like Cain, who was of the evil one and murdered his brother. And why did he murder him? Because his own deeds were evil and his brother's righteous.* Do not be surprised, brothers, that the world hates you. We know that we have passed out of death into life, because we love the brothers. Whoever does not love abides in death. Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him. By this we know love, that he laid down his life for us, and we ought to lay down our lives for the brothers. But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him? Little children, let us not love in word or talk but in deed and in truth. (ESV)
     #+END_QUOTE
 
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Deuteronomy%2015%3A7-8&version=ESV][Deuteronomy 15:7-8]]* - If among you, one of your brothers should become poor, in any of your towns within your land that the LORD your God is giving you, you shall not harden your heart or shut your hand against your poor brother, but you shall open your hand to him and lend him sufficient for his need, whatever it may be. (ESV)
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=James%204%3A17&version=ESV][James 4:17]]* - So whoever knows the right thing to do and fails to do it, for him it is sin. (ESV)
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=1%20John%203%3A14-20&version=ESV][I John 3:14-20]]* - We know that we have passed out of death into life, because we love (*[[https://biblehub.com/interlinear/1_john/3-14.htm][agapōmen]]*) the brothers. Whoever does not love abides in death. Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him. By this we know love, that he laid down his life for us, and we ought to lay down our lives for the brothers. But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him? Little children, let us not love in word or talk but in deed and in truth. By this we shall know that we are of the truth and reassure our heart before him; for whenever our heart condemns us, God is greater than our heart, and he knows everything. (ESV)
+    #+END_QUOTE
+
     We need to continue trusting Jesus. It's not possible to simultaneously commit sin and have faith in Jesus Christ. So we must resist committing sin:
     
     #+BEGIN_QUOTE
@@ -3737,6 +3749,10 @@ We should love those who are not loving us, and we should do so the way we are c
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Luke%206%3A27-36&version=ESV][Luke 6:27-36]]* - But I say to you who hear, Love your enemies, do good to those who hate you, bless those who curse you, pray for those who abuse you. To one who strikes you on the cheek, offer the other also, and from one who takes away your cloak do not withhold your tunic either. Give to everyone who begs from you, and from one who takes away your goods do not demand them back. And as you wish that others would do to you, do so to them. If you love those who love you, what benefit is that to you? For even sinners love those who love them. And if you do good to those who do good to you, what benefit is that to you? For even sinners do the same. And if you lend to those from whom you expect to receive, what credit is that to you? Even sinners lend to sinners, to get back the same amount. But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Exodus%2022%3A25&version=ESV][Exodus 22:25]]* - If you lend money to any of my people with you who is poor, you shall not be like a moneylender to him, and you shall not exact interest from him. (ESV)
 #+END_QUOTE
 
 + [[https://www.earlychristianwritings.com/text/polycarp-lightfoot.html][Polycarp 3:3]] [3:2 the faith given to you] which is the mother of us all, while hope followeth after and
@@ -16879,6 +16895,18 @@ So in resting from our works, we remain ready and prepared to do good works oppo
   *[[https://www.biblegateway.com/passage/?search=Galatians%206%3A10&version=ESV][Galatians 6:10]]* - So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith. (ESV)
 #+END_QUOTE
 
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  *[[https://www.biblegateway.com/passage/?search=Proverbs%203%3A28&version=ESV][Proverbs 3:28]]* - Do not say to your neighbor, Go, and come again, tomorrow I will give it—when you have it with you. (ESV)
+#+END_SRC
+
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  *[[https://www.biblegateway.com/passage/?search=Proverbs%203%3A27-28&version=ESV][Proverbs 3:27-28]]* - Do not withhold good from those to whom it is due, when it is in your power to do it. Do not say to your neighbor, Go, and come again, tomorrow I will give it—when you have it with you. (ESV)
+#+END_SRC
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  *[[https://www.biblegateway.com/passage/?search=Psalms%2037%3A21&version=ESV][Psalms 37:21]]* - The wicked borrows but does not pay back, but the righteous is generous and gives; (ESV)
+#+END_SRC
+
 Being "generous" and "ready to share" are heart attitudes and as we practice these heart attitudes, the Scripture says we are laying up a good foundation for the future:
 
 #+BEGIN_QUOTE
@@ -19971,7 +19999,15 @@ For salvation we should be unifying in heart and soul with other believers, with
     
     That's because of what Jesus Christ has taught in His parable of the unforgiving servant.
     My debt was cancelled when I was born-again.
-    
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Deuteronomy%2015%3A1-2&version=ESV][Deuteronomy 15:1-2]]* - At the end of every seven years you shall grant a release. And this is the manner of the release: every creditor shall release what he has lent to his neighbor. He shall not exact it of his neighbor, his brother, because the LORD's release has been proclaimed. (ESV)
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+      *[[https://www.biblegateway.com/passage/?search=Colossians%202%3A11-14&version=ESV][Colossians 2:11-14]]* - In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross. (ESV)
+    #+END_QUOTE
+
     As for what happens going forward, I believe that it's right to be compassionate and merciful towards all men, as Polycarp has instructed,
     but abiding in the teaching of Christ.
     
