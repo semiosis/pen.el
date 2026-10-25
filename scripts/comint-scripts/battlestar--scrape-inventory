@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+input_fp="$(cat | tf txt)"
+
+holding="$(
+cat "$input_fp" | tac | sed -n "/^\(You are holding:\|You aren't carrying anything\.\)/{p;q}"
+)"
+
+if printf -- "%s\n" "$holding" | grep -q -P 'You are holding:'; then
+    cat "$input_fp" | tac | sed '/^You are holding:/q' |
+        tac | sed -e '1,2d' -e '/^$/q' |
+        sed 's/^	//' | pavs
+fi
+
+rm -f "$input_fp"

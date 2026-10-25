@@ -27,10 +27,18 @@
                                      ("battlestar"
                                       "score" "inven"
                                       "save"
-                                      "take" "drop" "wear" "draw" "put on" "take off"
+                                      "take" "drop"
+                                      ("wear" "wear an object you are holding")
+                                      ("draw" "carry an object you are wearing")
+                                      ("put on" "take an object and wear it")
+                                      ("take off" "draw an object and drop it")
+                                      ("eat" nil nil)
+                                      ;; TODO Make it so I can prompt the user for arguments based on the description from the 3rd element
+                                      ("throw" nil "<object> <direction>")
                                       "n" "s" "e" "w"
                                       ;; without compass:
-                                      "r" "l" "a" "b")))
+                                      "r" "l" "a" "b"
+                                      "up" "down")))
 
 ;; Unsure how this has broken
 (comment
@@ -53,6 +61,62 @@
     (if bn
         (s-matches-p pattern bn))))
 
+(defun pen-comint--battlestar--score ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "score")
+    (comint-send-input)))
+
+(defun pen-comint--battlestar--inven ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "inven")
+    (comint-send-input)))
+
+(defun pen-comint--battlestar--save ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "save")
+    (comint-send-input)
+    (insert (read-string-hist "Battlestar savegame name: " "test.Bstar"))
+    (comint-send-input)))
+
+(defun pen-comint--battlestar--drop ()
+  (interactive)
+  (pen-comint--battlestar--inven)
+  ;; Need this sleep to get the output.
+  ;; But I should be using an "expect" system.
+  (sleep 0.5)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (let* ((bufstring (buffer-string))
+           (items (-filter-not-empty-string (str2lines (snc "battlestar--scrape-inventory" bufstring))))
+           (item (if items
+                     (fz items nil nil "Drop item: "))))
+      (if item
+          (progn
+            (end-of-buffer)
+            (insert (format "drop %s" item))
+            (comint-send-input))
+        (message "You aren't carrying anything"))
+      ;; (insert (read-string-hist "Battlestar savegame name: " "test.Bstar"))
+      ;; (comint-send-input)
+      )))
+
+;; TODO Figure out how to wait for (expect) next comint prompt before inserting again into the repl.
+
+(defun comint-smart-insert (game com)
+  ;; (tv (format "game: %s, command: %s" game com))
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (let* ((comname (format "pen-comint--%s--%s" (str game) (str com)))
+           (comsym (str2sym comname)))
+      (if (commandp comsym)
+          (call-interactively comsym)
+        (insert com)))))
+
 (universal-sidecar-define-section comint-section (file title)
                                   (:major-modes comint-mode
                                                 :predicate (or (pen-sidecar-match-current-buffer-name "bsdgames-adventure")
@@ -74,7 +138,10 @@
                                   (loop for c in pen-comint-common-commands
                                         if (pen-sidecar-match-current-buffer-name (car c) t)
                                         collect (mapcar
-                                                 (lambda (e) (list (car c) e))
+                                                 (lambda (e) (list (car c)
+                                                                   (cond
+                                                                    ((listp e) (car e))
+                                                                    ((stringp e) e))))
                                                  (cdr c))
                                         else collect nil))))))))))))
 

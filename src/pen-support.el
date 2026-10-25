@@ -1217,10 +1217,10 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (progn (message "History empty")
            nil)))
 
-(defun fz (list &optional input b_full-frame prompt must-match select-only-match add-props hist-var no-hist empty-hist-exit)
+(defun fz (list &optional initial-input b_full-frame prompt must-match select-only-match add-props hist-var no-hist empty-hist-exit)
   (cl-fz
    list
-   :initial-input input
+   :initial-input initial-input
    :full-frame b_full-frame
    :prompt prompt
    :must-match must-match
