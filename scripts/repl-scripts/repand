@@ -5,6 +5,7 @@ export TTY
 # Should each underlying REPL have its own tmux window?
 # Is a full tty needed?
 # Maybe it is.
+# Emulate a full tty for the underlying REPLs.
 
 # . $SCRIPTS/lib/hs
 
