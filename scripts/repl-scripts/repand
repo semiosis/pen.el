@@ -1,0 +1,39 @@
+#!/bin/bash
+export TTY
+
+# This is like a "super repl". A repl to manage other repls through a single repl.
+# Should each underlying REPL have its own tmux window?
+# Is a full tty needed?
+# Maybe it is.
+
+# . $SCRIPTS/lib/hs
+
+# Purpose:
+# - Able to combine other readline-compatible REPLs
+# - Records the transcript for the session
+
+# TODO Make a simple handling system first
+# - I need a system of determining which command goes to which underlying repl
+# - So each repl should have a corresponding predicate to check to see if the command should be handled by this repl
+
+# each underlying repl would needs to have
+
+repand "rl battlestar"
+
+# Each positional argument should be a repl
+# the underlying repls, though
+
+: "${TRANSCRIPT_DIR:="/root/.pen/repand-repl-transcripts"}"
+mkdir -p "$TRANSCRIPT_DIR"
+
+timeslug="$(date-ts -slug)"
+
+# newline
+IFS="
+"
+awk1 | while IFS="$IFS" read -r line; do
+    (
+    exec 0</dev/null
+    
+    )
+done
