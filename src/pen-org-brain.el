@@ -1532,4 +1532,12 @@ If ALL is nil, choose only between externally linked children."
                  (t (org-brain-choose-entry "Goto child: " entries nil t)))))
     (org-brain-goto child)))
 
+(defun org-brain-edit-hist ()
+  (interactive)
+  (edit-var-elisp 'org-brain--vis-history))
+
+(defun org-brain-clear-hist ()
+  (interactive)
+  (setq org-brain--vis-history nil))
+
 (provide 'pen-org-brain)

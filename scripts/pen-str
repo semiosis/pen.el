@@ -458,6 +458,18 @@ case "$f" in
     }
     ;;
 
+    # https://stackoverflow.com/questions/6345429/how-do-i-print-some-text-in-bash-and-pad-it-with-spaces-to-a-certain-width
+    # $ echo "!$(pen-str pad "foobar" 9)!"
+    # !   foobar!
+    # $ echo "!$(pen-str pad "foobar" -9)!"
+    # !foobar   !
+    # $ echo "!$(pen-str pad "foobar" 3)!"
+    # !foo!
+    pad) {
+        [ "$#" -gt 1 ] && [ -n "$2" ] && printf "%$2.${2#-}s" "$1"
+    }
+    ;;
+
     one-of) {
         input="$(cat)"
         finds="$1"

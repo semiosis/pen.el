@@ -1,7 +1,23 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -get-rl-histfile) {
+        get_rl_histfile=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# Hmm.. I think I do actually want to be using rlwrap even inside comint, typically, so, for example, I'm recording the REPL history.
+
 # j:comint-quick makes an nsfa with INSIDE_COMINT=y
+
+# I need a way to "unreadlinify" any command passed to comint
+# TODO Make an "unrl" (unreadline) command to wrap around a readline repl to un-readlinify it for use in comint
 if test "$NO_RL" = y || printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$' || test "$INSIDE_COMINT" = y; then
     # skip rlwrap
     "$@"
@@ -10,11 +26,12 @@ fi
 
 # /usr/bin/rlwrap "$@"
 
-ppid="$(ps -o comm= $PPID)"
-
-( hs "$(basename "$0")" "$@" "#" "<==" "$ppid" 0</dev/null ) &>/dev/null
-
-sn="$(basename "$0")"
+if test "$get_rl_histfile" = "y"; then
+    :
+else
+    ppid="$(ps -o comm= $PPID)"
+    ( hs "$(basename "$0")" "$@" "#" "<==" "$ppid" 0</dev/null ) &>/dev/null
+fi
 
 # Also, use this to determine if we're inside rlwrap
 export RLWRAP_EDITOR="$EDITOR"
@@ -74,8 +91,12 @@ mkdir -p $NOTES/programs/rlwrap/history
 touch "$hf"
 touch "$cf"
 
-# Specifying `--break-chars ""` means that words are split by whitespace only
-# /root/.emacs.d/host/pen.el/scripts/ed
-
-# cmd1 /usr/bin/rlwrap -a -H "$hf" -f "$cf" "$@" 1>&2
-/usr/bin/rlwrap --break-chars "" -n -a -s 1000 -H "$hf" -f "$cf" "$@"
+if test "$get_rl_histfile" = "y"; then
+    echo "$hf"
+else
+    # Specifying `--break-chars ""` means that words are split by whitespace only
+    # /root/.emacs.d/host/pen.el/scripts/ed
+    
+    # cmd1 /usr/bin/rlwrap -a -H "$hf" -f "$cf" "$@" 1>&2
+    /usr/bin/rlwrap --break-chars "" -n -a -s 1000 -H "$hf" -f "$cf" "$@"
+fi

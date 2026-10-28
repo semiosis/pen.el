@@ -709,6 +709,14 @@ Any extra args go to that function"
 (defun eshell/tpop (&rest args)
   (tpop (apply 'cmd args)))
 
+(defun eshell/ed (&rest args)
+  (comint-quick (apply 'cmd (append (list "van" "ed") args))
+                default-directory))
+
+(defun eshell/red (&rest args)
+  (comint-quick (apply 'cmd (append (list "van" "red") args))
+                default-directory))
+
 (defun eshell/e (&rest args)
   "Like the bash `command` function."
 

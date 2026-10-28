@@ -22,17 +22,11 @@ Activate this advice with:
 
 (advice-add 'message :before 'pen-ad-timestamp-message)
 
-(defun pen-clear-message ()
-  (interactive)
-  (message nil))
-
 (defun pen-last-message ()
   (with-current-buffer "*Messages*"
         (save-mark-and-excursion
           (goto-char (point-max))
           (current-line-string))))
-
-(global-set-key (kbd "C-c c") 'pen-clear-message)
 
 ;; (defun message-buffer-goto-end-of-buffer (&rest args)
 ;;   (let* ((win (get-buffer-window "*Messages*"))
@@ -44,7 +38,6 @@ Activate this advice with:
 ;; (advice-add 'message :after 'message-buffer-goto-end-of-buffer)
 ;; (advice-remove 'message 'message-buffer-goto-end-of-buffer)
 
-
 (defun call-process-around-advice (proc &rest args)
   (message "call-process called with args %S" args)
   (let ((res (apply proc args)))
@@ -55,5 +48,13 @@ Activate this advice with:
 
 ;; Do it in j:switch-to-messages
 ;; (add-hook 'messages-buffer-mode-hook 'org-link-minor-mode)
+
+(defun l2-messages-buffer ()
+  "Return the \"*Level2-Messages*\" buffer.
+If it does not exist, create it and switch it to `messages-buffer-mode'."
+  (or (get-buffer "*Level2-Messages*")
+      (with-current-buffer (get-buffer-create "*Level2-Messages*")
+        (messages-buffer-mode)
+        (current-buffer))))
 
 (provide 'pen-messages)

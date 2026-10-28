@@ -1,5 +1,7 @@
 (require 'shell)
 
+(setq explicit-shell-file-name "pash")
+
 (setq shell-kill-buffer-on-exit t)
 
 (defun shell-show-env ()

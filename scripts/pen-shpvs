@@ -26,6 +26,8 @@ shpvs() {
         pane_tty \
         pane_width \
         pane_height \
+        cursor_x \
+        cursor_y \
         pane_start_command \
         pane_current_command \
         ; do

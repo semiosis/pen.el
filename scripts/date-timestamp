@@ -14,11 +14,28 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
     }
     ;;
+
+    -human) {
+        human_readable=y
+        shift
+    }
+    ;;
+
+    -slug) {
+        human_readable=y
+        slugified=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-
-if test "$miliseconds" = "y"; then
+if test "$slugified" = "y"; then
+    date +"%a %d %b %Y h%H m%M s%S %Z" | slugify
+elif test "$human_readable" = "y"; then
+    date +%c
+elif test "$miliseconds" = "y"; then
     date +%s.%N "$@" | sed 's/^\([0-9]\+\)\.\([0-9]\{3\}\).*/\1\2/'
 elif test "$nanoseconds" = "y"; then
     date +%s.%N "$@"

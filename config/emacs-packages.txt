@@ -2423,3 +2423,4 @@ eshell-command-not-found
 esh-buf-stack
 consult-yasnippet
 nhexl-mode
+vimish-fold

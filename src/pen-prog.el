@@ -150,7 +150,13 @@
     res))
 (advice-add 'handle-docs :around #'handle-docs-around-advice)
 
+(defun hu-handle-docs ()
+  (interactive)
+  (let ((current-global-prefix-arg '(4)))
+    (call-interactively 'handle-docs)))
+
 (define-key prog-mode-map (kbd "M-9") 'handle-docs)
+(define-key global-map (kbd "H-9") 'hu-handle-docs)
 
 (defun pen-godef-or-global-references ()
   (interactive)

@@ -2940,3 +2940,5 @@ e ia nhexl-mode
 e ia jumplist
 
 e ia dired-lsi
+
+e ia vimish-fold

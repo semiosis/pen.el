@@ -2938,7 +2938,7 @@ case "$f" in
         fi
 
         (
-        exec 1>&-
+        exec 1>/dev/null
         if test "$CLEAN" = "y"; then
             cat "$np" | clean-term-capture | sponge "$np"
         fi
@@ -2952,6 +2952,10 @@ case "$f" in
             if is_tty; then
                 STDOUT=n
             fi
+        fi
+
+        if is_stdout_pipe; then
+            STDOUT=y
         fi
 
         if test "$STDOUT" = "y"; then
@@ -3864,6 +3868,89 @@ case "$f" in
 
     copy-previous-line) {
         copy-line -1
+    }
+    ;;
+
+    send-and-receive) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -t) {
+                # target pane
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -w) {
+                seconds="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+        : "${seconds:="0.1"}"
+
+        user_command="$1"
+
+        # before_cap="$(pen-tm cap-pane -t "$TARGET" -nohist)"
+        before_cap="$(pen-tm cap-pane -t "$TARGET")"
+        tmux send-keys -l -t "$TARGET" "$user_command" \; send-keys -t "$TARGET" Enter
+        sleep "$seconds"
+        before_cap_bytes="$(printf -- "%s" "$before_cap" | wc -c)"
+        after_cap="$(pen-tm cap-pane -t "$TARGET")"
+        printf -- "%s" "${after_cap}" | tail -c "+$(( before_cap_bytes + 1 ))" | sed 1d | pavs
+    }
+    ;;
+
+    # bash --noediting
+    # pen-tm pane-repl -t "%302"
+    pane-repl) {
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -t) {
+                # target pane
+                TARGET="$2"
+                shift
+                shift
+            }
+            ;;
+
+            -w) {
+                seconds="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+        : "${seconds:="0.1"}"
+
+        test -n "$seconds" || exit 1
+        test -n "$TARGET" || exit 1
+
+        # # newline
+        IFS="
+        "
+        while IFS="$IFS" read -r user_command; do
+            (
+                exec 0</dev/null
+
+                output="$(pen-tm send-and-receive -t "$TARGET" -w "$seconds" "$user_command" | cat)"
+                lastline="$(printf -- "%s" "$output" | awk 1 | tac | sed 1q)"
+                lastline_len="$(printf -- "%s" "$lastline" | wc -m)"
+
+                x="$(tmux display -t "$TARGET" -p "#{cursor_x}")"
+
+                n_spaces="$(( x - lastline_len ))"
+
+                printf -- "%s" "$output"
+                printf '%*s' "$n_spaces"
+            )
+        done
     }
     ;;
 

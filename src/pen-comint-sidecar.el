@@ -20,13 +20,14 @@
 ;; It's still an alist
 (defset pen-comint-common-commands '(("bsdgames-adventure"
                                       "score" "save" "quit" "help" "info"
-                                      "nw" "ne" "se" "sw")
+                                      "nw" "ne" "se" "sw"
+                                      "yes" "no")
 
                                      ;; 1979 game
                                      ;; ssh-host man battlestar
                                      ("battlestar"
                                       "score" "inven"
-                                      "save"
+                                      "save" "quit"
                                       "take" "drop"
                                       ("wear" "wear an object you are holding")
                                       ("draw" "carry an object you are wearing")
@@ -60,50 +61,6 @@
   (let ((bn (pen-sidecar-current-buffer-name b-noset)))
     (if bn
         (s-matches-p pattern bn))))
-
-(defun pen-comint--battlestar--score ()
-  (interactive)
-  (with-current-buffer (pen-sidecar-current-buffer-name t)
-    (end-of-buffer)
-    (insert "score")
-    (comint-send-input)))
-
-(defun pen-comint--battlestar--inven ()
-  (interactive)
-  (with-current-buffer (pen-sidecar-current-buffer-name t)
-    (end-of-buffer)
-    (insert "inven")
-    (comint-send-input)))
-
-(defun pen-comint--battlestar--save ()
-  (interactive)
-  (with-current-buffer (pen-sidecar-current-buffer-name t)
-    (end-of-buffer)
-    (insert "save")
-    (comint-send-input)
-    (insert (read-string-hist "Battlestar savegame name: " "test.Bstar"))
-    (comint-send-input)))
-
-(defun pen-comint--battlestar--drop ()
-  (interactive)
-  (pen-comint--battlestar--inven)
-  ;; Need this sleep to get the output.
-  ;; But I should be using an "expect" system.
-  (sleep 0.5)
-  (with-current-buffer (pen-sidecar-current-buffer-name t)
-    (let* ((bufstring (buffer-string))
-           (items (-filter-not-empty-string (str2lines (snc "battlestar--scrape-inventory" bufstring))))
-           (item (if items
-                     (fz items nil nil "Drop item: "))))
-      (if item
-          (progn
-            (end-of-buffer)
-            (insert (format "drop %s" item))
-            (comint-send-input))
-        (message "You aren't carrying anything"))
-      ;; (insert (read-string-hist "Battlestar savegame name: " "test.Bstar"))
-      ;; (comint-send-input)
-      )))
 
 ;; TODO Figure out how to wait for (expect) next comint prompt before inserting again into the repl.
 

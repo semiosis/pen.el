@@ -348,4 +348,9 @@ buffer."
   (ifietv
    (pen-join (mapcar 'symbol-name package-activated-list) "\n")))
 
+(defun e/which (cmd)
+  (pen-str2list (chomp (pen-sn (concat "PATH=" (pen-q (getenv "PATH")) " which -a " cmd)))))
+
+;; (e/which "grex")
+
 (provide 'pen-utils)

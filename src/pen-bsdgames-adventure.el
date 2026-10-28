@@ -1,0 +1,30 @@
+(defun bsdgames-adventure ()
+  (interactive)
+  (comint-quick "rl bsdgames-adventure" user-home-directory))
+
+(defun edit-bsdgames-adventure-command-history ()
+  (interactive)
+  (ff (snc "rl -get-rl-histfile bsdgames-adventure")))
+
+(defun pen-comint--bsdgames-adventure--info ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "info")
+    (comint-send-input)))
+
+(defun pen-comint--bsdgames-adventure--score ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "score")
+    (comint-send-input)))
+
+(defun pen-comint--bsdgames-adventure--quit ()
+  (interactive)
+  (with-current-buffer (pen-sidecar-current-buffer-name t)
+    (end-of-buffer)
+    (insert "quit")
+    (comint-send-input)))
+
+(provide 'pen-bsdgames-adventure)

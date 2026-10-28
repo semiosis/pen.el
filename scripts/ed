@@ -3,6 +3,18 @@ export TTY
 
 . $SCRIPTS/lib/hs
 
+sn="$(basename -- "$0")"
+
+case "$sn" in
+    red) {
+        # restricted mode
+        set -- -r "$@"
+    }
+    ;;
+
+    *)
+esac
+
 # Learn to use ed:
 # [[https://www.youtube.com/watch?v=S0pXQVMC770][Linux like original Unix - YouTube]]
 # [[https://youtu.be/Zpdo6We-_e0][Ed Is The Standard Text Editor For Unix/Linux - YouTube]]
@@ -43,13 +55,17 @@ fi
 # ,g/re/p
 # https://youtu.be/Zpdo6We-_e0?t=1010
 
+: "${prompt:="${sn}> "}"
 
-if test "$nox" = "y" && test "$nonvt" = "y" ; then
+if test "$VANILLA" = "y" ; then
     builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
-    in-pen rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
+    in-pen /bin/ed -p "$prompt" "$@"
+elif test "$nox" = "y" && test "$nonvt" = "y" ; then
+    builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
+    in-pen rl --break-chars "" -f "$builtins" /bin/ed -p "$prompt" "$@"
 elif test "$nox" = "y"; then
     builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
-    in-pen nvt -2 rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
+    in-pen nvt -2 rl --break-chars "" -f "$builtins" /bin/ed -p "$prompt" "$@"
 else
     CMD="$(cmd "$@")"
     : ${CMD:="$(cmd "$@")"}

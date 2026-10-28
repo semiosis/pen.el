@@ -1166,7 +1166,9 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (run-hooks 'bible-mode-hook)
   (spinner-stop)
 
-  (pen-clear-message)
+  ;; I think the purpose of this being here was to clear the minibuffer using (message nil)
+  ;; (pen-clear-message)
+  ;; But I'm removing the function
 
   ;; Sometimes 'verse' is just a number
   (if (or (and

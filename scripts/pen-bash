@@ -1,8 +1,16 @@
 #!/bin/bash
 export TTY
 
-# Don't actually use this script until this is finished.
-# Also, this seems like a big task, so it's very far down the pipeline
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    --noediting|-i) {
+        noreadline=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
 
 # . $SCRIPTS/lib/hs
 
@@ -25,6 +33,10 @@ if test -f "$wp"; then
 
     bash -c ". ${newscript}" -- "$@"
 else
-    # https://unix.stackexchange.com/a/250792
-    bash --rcfile "$PENELD/scripts/lib/pash" -- "$@"
+    if test "$noreadline" = "y"; then
+        bash --rcfile "$PENELD/scripts/lib/pash" -i -- "$@"
+    else
+        # https://unix.stackexchange.com/a/250792
+        bash --rcfile "$PENELD/scripts/lib/pash" -- "$@"
+    fi
 fi

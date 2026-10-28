@@ -29,15 +29,6 @@
 (sslk "lau" #'re-builder)
 ;; (sslk "lag" nil)
 
-;; Games
-(defun battlestar ()
-  (interactive)
-  (comint-quick "battlestar" user-home-directory))
-
-(defun bsdgames-adventure ()
-  (interactive)
-  (comint-quick "bsdgames-adventure" user-home-directory))
-
 (defun boggle ()
   (interactive)
   ;; vterm doesn't presently display the game properly

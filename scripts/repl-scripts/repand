@@ -1,11 +1,33 @@
 #!/bin/bash
 export TTY
 
-# This is like a "super repl". A repl to manage other repls through a single repl.
+# This provides a "super REPL" to control/mange other repls through a single repl.
 # Should each underlying REPL have its own tmux window?
 # Is a full tty needed?
-# Maybe it is.
-# Emulate a full tty for the underlying REPLs.
+# Maybe it is actually needed in many cases.
+# For dumb REPLs, though, I would be able to separate stdout from stderr.
+# But I think normally in a REPL, the concept of stderr is not a thing.
+# Provide a full tmux pty for each underlying REPL.
+
+# Use this:
+# pen-tm pane-repl -t "%302"
+
+tmsessionname=repand
+if ! pen-tm session-exists "$tmsessionname"; then
+    shell="zsh"
+    CWD="$NOTES"
+    swidth="150"
+    sheight="34"
+    TMUX= tmux new-session -d -c "$CWD" -x "$swidth" -y "$sheight" -A -s "$tmsessionname"
+    # pen-tm ns -np -r -l -d -c "$HOME/notes" -n localhost "$shell"
+fi
+
+# The "repand" command invoked without arguments should provide a REPL to command the repl
+# in the first pane of each window with a name starting with "repand-" in its tmux session.
+# Otherwise, there should be additional subcommands of the repand command to add more REPLs.
+# These subcommands should be available though the "repand" REPL as well as the CLI.
+
+# So, I should have ways of 
 
 # . $SCRIPTS/lib/hs
 

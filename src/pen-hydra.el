@@ -471,7 +471,8 @@ display values."
                          "ANY: repl"
                          ("p" #'pen-repl-py "python")
                          ("P" 'xpti-with-package "xpti")
-                         ("l" #'pen-repl-lisp "lisp (slime)")
+                         ;; ("l" #'pen-repl-lisp "lisp (slime)")
+                         ("l" 'run-lisp "lisp (slime)")
                          ;; ("s" #'pen-repl-lisp "lisp (slime)")
                          ("R" #'run-racket "racket (geiser")
                          ("r" #'racket-repl "racket")
@@ -521,6 +522,11 @@ display values."
 (defun switch-to-messages ()
   (interactive)
   (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 64)
+    (with-current-buffer (switch-to-buffer "*Level2-Messages*")
+      (if (not org-link-minor-mode)
+          (org-link-minor-mode))
+      (current-buffer)))
    ((>= (prefix-numeric-value current-prefix-arg) 16) (bash-messages t))
    ((>= (prefix-numeric-value current-prefix-arg) 4) (call-interactively 'bash-messages))
    (t (with-current-buffer (switch-to-buffer "*Messages*")
