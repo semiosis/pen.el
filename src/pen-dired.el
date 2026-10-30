@@ -362,4 +362,10 @@ read from minibuffer."
 
 (add-hook 'dired-mode-hook 'dired-lsi-mode)
 
+(define-key dired-mode-map (kbd "M-s f C-s") nil)
+(define-key dired-mode-map (kbd "M-s f s") 'dired-isearch-filenames)
+(define-key dired-mode-map (kbd "M-s f C-M-s") nil)
+(define-key dired-mode-map (kbd "M-s f r") 'dired-isearch-filenames-regexp)
+
+
 (provide 'pen-dired)

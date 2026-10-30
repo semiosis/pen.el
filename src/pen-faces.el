@@ -567,8 +567,11 @@ is specified, `:italic' is ignored."
   (set-background-color "#101010")
 
   (set-face-foreground 'trailing-whitespace 'unspecified)
+  ;; (set-face-foreground 'trailing-whitespace "#999900")
+  (set-face-foreground 'trailing-whitespace "#cccc00")
   ;; (set-face-background 'trailing-whitespace "#444477")
   (set-face-background 'trailing-whitespace "#000000")
+  (set-face-inverse-video 'trailing-whitespace nil)
 
   ;; I must ignore errors for everything or the frame wont even start for workers
   ;; Be careful
@@ -765,6 +768,19 @@ is specified, `:italic' is ignored."
     (set-face-background 'lsp-ui-peek-highlight "#222222")
     (set-face-foreground 'lsp-ui-sideline-global nil)
     (set-face-background 'lsp-ui-sideline-global nil)
+
+    (require 'term)
+    (set-face-foreground 'term 'unspecified)
+    (set-face-background 'term 'unspecified)
+
+    (set-face-background 'trailing-whitespace 'unspecified)
+    (set-face-underline 'trailing-whitespace t)
+    ;; Generally, I want trailing whitespace to be visible.
+    ;; It's annoying that it appears in some term programs.
+    ;; e.g. mx:bsdgames-hack
+    (comment
+     (set-face-foreground 'trailing-whitespace 'unspecified)
+     (set-face-underline 'trailing-whitespace nil))
 
     (require 'transient)
     (set-face-foreground 'transient-unreachable "#333333")
@@ -2635,7 +2651,7 @@ Also see option `magit-blame-styles'."
 
 ;;;###autoload
 (define-minor-mode pen-disable-faces-minor-mode
-  "A minor mode for Pen.el disable-facess."
+  "A minor mode for Pen.el disable-faces."
   :lighter " b&w"
   :keymap pen-disable-faces-minor-mode-map)
 

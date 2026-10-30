@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/bbe" || agi "bbe" &>/dev/null
+
+/usr/bin/bbe "$@"

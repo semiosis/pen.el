@@ -98,6 +98,11 @@
           ;; ("^      *.*" . 'info-code-face)
           (" Function: [^ ]*" . 'font-lock-warning-face)
           ("^\\**" . 'info-menu-star)
+          ;; [[info:cutils#Overview][Emacs Info: cutils#Overview]]
+          ("^_[^_]+_" . 'info-code)
+          (" _[^_]+_ " . 'info-code)
+          ;; [[info:cutils#Invoking cobfusc][Emacs Info: cutils#Invoking cobfusc]]
+          ("^'[^']+'" . 'info-quoted-face)
           (" [0-9]+\\. " . 'info-bold)
           ;; [[info:(org-super-agenda) Usage]]
           ;; For example: *Note:*
@@ -162,16 +167,17 @@
 ;; (remove-hook 'org-brain-after-visualize-hook 'set-info-highlights)
 (add-hook 'Info-selection-hook 'set-info-highlights)
 
-(defsetface info-code-face
-  '((t
-     ;; :foreground "#d2268b"
-     :foreground "#777777"
-     ;; :background "#2e2e2e"
-     ;; :weight bold
-     ;; :underline t
-     ))
-  "Face for info code blocks."
-  :group 'info)
+(comment
+ (defsetface info-code-face
+             '((t
+                ;; :foreground "#d2268b"
+                :foreground "#777777"
+                ;; :background "#2e2e2e"
+                ;; :weight bold
+                ;; :underline t
+                ))
+             "Face for info code blocks."
+             :group 'info))
 
 (defsetface info-bullet-point
             '((t
@@ -181,7 +187,7 @@
                ;; :weight bold
                ;; :underline t
                ))
-            "Face for info code blocks."
+            "Face for info bullet points."
             :group 'info)
 
 (defsetface info-bold
@@ -189,6 +195,17 @@
                ;; :foreground "#d2268b"
                :foreground "#cc9977"
                :background "#4e2e2e"
+               ;; :weight bold
+               ;; :underline t
+               ))
+            "Face for info bold text."
+            :group 'info)
+
+(defsetface info-code
+            `((t
+               ;; :foreground "#d2268b"
+               :foreground ,(face-foreground 'org-code)
+               :background ,(face-background 'org-code)
                ;; :weight bold
                ;; :underline t
                ))

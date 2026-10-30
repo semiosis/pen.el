@@ -2,6 +2,9 @@
 
 # [e:dsl-pipeline-substituton-bashify]
 
+# TODO Add to "pash" a macro or syntax for loading lines into an array:
+# IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat /etc/passwd))'
+
 # This is quite crude. I really need to do this in bash code or with m4
 # IFS= read -r -d '' pattern <<'HEREDOC'
 # @($cmd)

@@ -325,8 +325,9 @@ dn="${rp%/*}"
 dnbn="$(basename "$dn")"
 
 # TODO check for binary files
+# TODO Also check for compressed data (i.e /usr/share/man/man1/barcode.1.gz)
 if test -f "$fp"; then
-    first_line="$(head -n 1 "$fp")"
+    first_line="$(head -n 1 "$fp" )"
 fi
 
 td_cr="$(mktemp -t -d td_crXXXXXX || echo /dev/null)"
@@ -336,6 +337,8 @@ bn="$(basename "$rp")"
 fn=$(basename "$rp")
 ext="${fn##*.}"
 mant="${fn%.*}"
+dext="${mant##*.}"
+dmant="${mant%.*}"
 
 if test -f "$rp" && test -s "$rp"; then
     read first_line < "$rp"
@@ -2635,6 +2638,22 @@ case "$file_type" in
     [0-9]) {
         troff2man "$rp"
         exit 0
+    }
+    ;;
+
+    gz) {
+        case "$dext" in
+            [0-9]) {
+                cd "$td_cr"
+                cp -a "$rp" ./
+                gunzip "./$fn"
+                troff2man "$mant"
+                exit 0
+            }
+            ;;
+
+            *)
+        esac
     }
     ;;
 

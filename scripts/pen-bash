@@ -12,6 +12,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# It should run without readline anyway because I want to be able to run the preprocessor on commands.
+noreadline=y
+
 # . $SCRIPTS/lib/hs
 
 # Run the preprocessor on any opened file

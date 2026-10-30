@@ -300,7 +300,7 @@ or an external command."
   (progn
     ;; DONE Make it so the main "*eshell*" buffer is not renamed.
     (let ((eshell-buffer-name
-           (concat "*eshell-" (substring (uuidgen-4) 0 8) "*")))
+           (concat "*eshell-" (e/hash-trim (pwd) 40) "*")))
       (eshell arg))
     ;; (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*"))
     ))
@@ -314,6 +314,14 @@ or an external command."
 (comment
  (advice-add 'eshell-mode :around #'ignore-errors-and-shut-up-around-advice)
  (advice-remove 'eshell-mode #'ignore-errors-and-shut-up-around-advice))
+
+(defun pen-run-hooks-with-suppressed-errors (hooksym)
+  (dolist (hook (eval hooksym))
+          (suppress-errors-with-context
+            (concat "pen-run-hooks-with-suppressed-errors hooks: j:" (str hooksym) ", hook: " (str hook))
+            (cond
+             ((functionp hook) (call-function hook))
+             (t nil)))))
 
 (define-derived-mode eshell-mode fundamental-mode "Eshell"
   "Emacs shell interactive mode."
@@ -370,33 +378,38 @@ or an external command."
   ;; load extension modules into memory.  This will cause any global
   ;; variables they define to be visible, since some of the core
   ;; modules sometimes take advantage of their functionality if used.
+
   (dolist (module eshell-modules-list)
-    (let ((module-fullname (symbol-name module))
-          module-shortname)
-      (if (string-match "^eshell-\\(.*\\)" module-fullname)
-          (setq module-shortname
-                (concat "em-" (match-string 1 module-fullname))))
-      (unless module-shortname
-        (error "Invalid Eshell module name: %s" module-fullname))
-      (unless (featurep (intern module-shortname))
-        (condition-case nil
-            (load module-shortname)
-          (error (lwarn 'eshell :error
-                        "Unable to load module `%s' (defined in `eshell-modules-list')"
-                        module-fullname))))))
+    (suppress-errors-with-context
+      (concat "j:eshell-mode, load module:" (str module))
+      (let ((module-fullname (symbol-name module))
+            module-shortname)
+        (if (string-match "^eshell-\\(.*\\)" module-fullname)
+            (setq module-shortname
+                  (concat "em-" (match-string 1 module-fullname))))
+        (unless module-shortname
+          (error "Invalid Eshell module name: %s" module-fullname))
+        (unless (featurep (intern module-shortname))
+          (condition-case nil
+              (load module-shortname)
+            (error (lwarn 'eshell :error
+                          "Unable to load module `%s' (defined in `eshell-modules-list')"
+                          module-fullname)))))))
 
   (unless (file-exists-p eshell-directory-name)
     (eshell-make-private-directory eshell-directory-name t))
 
   ;; Load core Eshell modules, then extension modules, for this session.
   (dolist (module (append (eshell-subgroups 'eshell) eshell-modules-list))
-    (let ((load-hook (intern-soft (format "%s-load-hook" module)))
-          (initfunc (intern-soft (format "%s-initialize" module))))
-      (when (and load-hook (boundp load-hook))
-        (if (memq initfunc (symbol-value load-hook)) (setq initfunc nil))
-        (run-hooks load-hook))
-      ;; So we don't need the -initialize functions on the hooks (bug#5375).
-      (and initfunc (fboundp initfunc) (funcall initfunc))))
+    (suppress-errors-with-context
+      (concat "j:eshell-mode, run module hooks:" (str module))
+      (let ((load-hook (intern-soft (format "%s-load-hook" module)))
+            (initfunc (intern-soft (format "%s-initialize" module))))
+        (when (and load-hook (boundp load-hook))
+          (if (memq initfunc (symbol-value load-hook)) (setq initfunc nil))
+          (run-hooks load-hook))
+        ;; So we don't need the -initialize functions on the hooks (bug#5375).
+        (and initfunc (fboundp initfunc) (funcall initfunc)))))
 
   (if eshell-send-direct-to-subprocesses
       (add-hook 'pre-command-hook #'eshell-intercept-commands t t))
@@ -415,7 +428,8 @@ or an external command."
 
   (if eshell-first-time-p
       (run-hooks 'eshell-first-time-mode-hook))
-  (run-hooks 'eshell-post-command-hook))
+  ;; (run-hooks 'eshell-post-command-hook)
+  (pen-run-hooks-with-suppressed-errors 'eshell-post-command-hook))
 
 (defun e/nw (&rest args)
   "First arg is an elisp function.
@@ -1066,27 +1080,35 @@ Any extra args go to that function"
 
   (message "j:eshell-filter-finaloutput-colorise-maybe")
 
-  (save-excursion
-    (let ((end (progn (beginning-of-line)
-                      (point)))
-          (start (progn (eshell-previous-prompt 1)
-                        (next-line)
-                        (beginning-of-line)
-                        (point)))
-          (inhibit-read-only t))
+  (let ((do-colorise
+         (cond
+          ((string-equal "#<function eshell/ls>" eshell-last-command-name)
+           nil)
+          ((string-equal "#<function eshell/cat>" eshell-last-command-name)
+           nil)
+          (t t))))
 
-      (let ((result (region2string start
-                                   (- end 1))))
-        (if (equal "orgmode" (pen-detect-language-string result))
-            (progn (pen-region-filter 'pen-highlight-as-org
-                                      start
-                                      (- end 1))
-                   (goto-char (- end 1))
-                   ;; (insert "\n")
-                   )
-          ;; (pen-region-filter 'pen-highlight-as-org)
-          ;; (pen-region-filter 'pen-highlight-as-org 468 744)
-          )))))
+    (if do-colorise
+        (save-excursion
+          (let ((end (progn (beginning-of-line)
+                            (point)))
+                (start (progn (eshell-previous-prompt 1)
+                              (next-line)
+                              (beginning-of-line)
+                              (point)))
+                (inhibit-read-only t))
+            (let ((result (region2string start
+                                         (- end 1))))
+              (if (equal "orgmode" (pen-detect-language-string result))
+                  (progn (pen-region-filter 'pen-highlight-as-org
+                                            start
+                                            (- end 1))
+                         (goto-char (- end 1))
+                         ;; (insert "\n")
+                         )
+                ;; (pen-region-filter 'pen-highlight-as-org)
+                ;; (pen-region-filter 'pen-highlight-as-org 468 744)
+                )))))))
 
 (add-to-list 'eshell-post-command-hook 'eshell-filter-finaloutput-colorise-maybe t)
 ;; (remove-from-list 'eshell-post-command-hook 'eshell-filter-finaloutput-colorise-maybe)
@@ -2382,6 +2404,28 @@ Sort entries alphabetically across.")
       t (expand-file-name default-directory)))
    (funcall flush-func)))
 
+(defun pen-str-add-line-numbers (s)
+  "Preserve emacs string properties while adding line numbering"
+  (s-join "\n"
+          (let* ((i 0)
+                 (linetups
+                  (loop for s in (s-split "\n" s)
+                        collect
+                        (progn
+                          (setq i (+ 1 i))
+                          (list i s))))
+                 (marginlen (length (str i))))
+            (mapcar (lambda (linetup)
+                      (concat
+                       ;; "🮇"
+                       "|"
+                       (pen-add-face-to-string 'line-number-current-line
+                         (s-pad-right marginlen " " (str (car linetup))))
+                       ;; "▎"
+                       "|"
+                       (cadr linetup)))
+                    linetups))))
+
 (defun eshell/cat (&rest args)
   "Implementation of cat in Lisp.
 If in a pipeline, or the file is not a regular file, directory or
@@ -2422,7 +2466,9 @@ Concatenate FILE(s), or standard input, to standard output.")
          (with-temp-buffer
            (let ((m (or (get-mode-for-file file)
                         'text-mode)))
-             (insert (fontify-string-for-mode (cat file) m)))
+             (insert
+              (pen-str-add-line-numbers
+               (fontify-string-for-mode (cat file) m))))
            ;; (insert-file-contents file)
            (goto-char (point-min))
            (while (not (eobp))
@@ -2435,5 +2481,28 @@ Concatenate FILE(s), or standard input, to standard output.")
      (eshell-flush)
      ;; if the file does not end in a newline, do not emit one
      (setq eshell-ensure-newline-p nil))))
+
+(defun eshell/Bible ()
+  (interactive)
+  (call-interactively 'bible-open))
+
+;; So I can simply run "man" in eshell, without arguments
+(defun eshell/man-around-advice (proc &rest args)
+  (let ((res (apply proc (or args
+                             (let ((sel (fz (mapcar (lambda (s) (s-split " - " s)) (str2lines (snc "/usr/bin/man -k . | sed 's/ \\+/ /g'")))
+                                             nil nil "man page: "))
+                                    )
+                               (if (sor sel)
+                                   (let ((name (car (s-split " (" sel)))
+                                         (num (s-substring "(\\([^)]+\\))" sel)))
+                                     (list num name))))
+                             '("man")))))
+    res))
+(advice-add 'eshell/man :around #'eshell/man-around-advice)
+;; (advice-remove 'eshell/man #'eshell/man-around-advice)
+
+(defun eshell-here ()
+  (interactive)
+  (eshell-unique))
 
 (provide 'pen-eshell)

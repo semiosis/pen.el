@@ -265,6 +265,11 @@
          (off global-highlight-indent-guides-mode)
 
          (emacs-lisp-mode
+          ;; (on tree-guide-mode)
           (off semantic-mode)))))
+
+;; Needs a little work to get things going faultlesly
+;; (add-hook 'emacs-lisp-mode-hook #'tree-guide-mode)
+;; (remove-hook 'emacs-lisp-mode-hook #'tree-guide-mode)
 
 (provide 'pen-manage-minor-mode)

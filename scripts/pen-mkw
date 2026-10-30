@@ -159,8 +159,12 @@ fi
 # ----
 
 if test "$make_apt" = "y"; then
+    pkg="$(dpkg -S "$fp"| cut -d : -f 1)"
+    if ! test -n "$pkg"; then
+        pkg="$bn"
+    fi
 IFS= read -r -d '' CGCODE <<HEREDOC
-test -f "$fp" || agi "$bn" &>/dev/null
+test -f "$fp" || agi "$pkg" &>/dev/null
 HEREDOC
 
     printf -- "%s\n" "$CGCODE" | pen-mnm >> ./$scriptname

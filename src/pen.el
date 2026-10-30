@@ -69,7 +69,7 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "j:pen-ignore-errors this-command: %s Suppressed error: %S"
+        (pen-message-no-echo "j:pen-ignore-errors this-command: j:%s Suppressed error: %S"
                              this-command:
                              (error-message-string e))))))
 
@@ -88,7 +88,7 @@ without silencing all errors."
         ;; (pen-flash)
         ;; (nav-flash-show)
         (mode-line-bell-flash)
-        (pen-message-no-echo "j:pen-ignore-errors-with-context this-command: %s Suppressed  error: %S inside %s"
+        (pen-message-no-echo "j:pen-ignore-errors-with-context this-command: j:%s Suppressed  error: %S inside %s"
                              this-command
                              (error-message-string e)
                              (s-truncate 100 (str ,context)))))))
@@ -265,6 +265,7 @@ The arguments are in English like this:
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'lispy)
+(require 'tree-guide)
 (require 'which-key)
 (require 'eww-lnum)
 (require 'shackle)

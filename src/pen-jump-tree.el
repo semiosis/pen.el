@@ -25,7 +25,7 @@
               
               ("M-g M-D" . dogears-sidebar)))
 
-(defun pen-buffer-history ()
+(defun pen-buffers-history ()
   (interactive)
 
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -34,37 +34,50 @@
      (call-interactively 'handle-history)
      (call-interactively 'dogears-list))))
 
-(defun pen-buffer-history-edit ()
+(defun pen-buffers-history-edit ()
   (interactive)
 
   (call-interactively 'handle-histedit))
 
 (defun pen-buffer-hist-prev ()
+  "This should remain inside the buffer. It's the history of the current mode."
   (interactive)
 
   (try
-   (call-interactively 'handle-prevhist)
-   (call-interactively 'dogears-back)))
+   (call-interactively 'handle-prevhist)))
 
 (defun pen-buffer-hist-next ()
+  "This should remain inside the buffer. It's the history of the current mode."
   (interactive)
 
   (try
-   (call-interactively 'handle-nexthist)
+   (call-interactively 'handle-nexthist)))
+
+(defun pen-buffers-hist-prev ()
+  "This is history over all the buffers, between buffers, etc."
+  (interactive)
+
+  (try
+   (call-interactively 'dogears-back)))
+
+(defun pen-buffers-hist-next ()
+  (interactive)
+
+  (try
    (call-interactively 'dogears-forward)))
 
 ;; C-M-b C-M-p
-(define-key global-map (kbd "<select> <prior>") 'pen-buffer-hist-prev)
+(define-key global-map (kbd "<select> <prior>") 'pen-buffers-hist-prev)
 ;; C-M-b C-M-n
-(define-key global-map (kbd "<select> <next>") 'pen-buffer-hist-next)
+(define-key global-map (kbd "<select> <next>") 'pen-buffers-hist-next)
 
-(define-key global-map (kbd "M-g M-P") 'pen-buffer-hist-prev)
-(define-key global-map (kbd "M-g M-N") 'pen-buffer-hist-next)
-(define-key global-map (kbd "M-G M-P") 'pen-buffer-hist-prev)
-(define-key global-map (kbd "M-G M-N") 'pen-buffer-hist-next)
+(define-key global-map (kbd "M-g M-P") 'pen-buffers-hist-prev)
+(define-key global-map (kbd "M-g M-N") 'pen-buffers-hist-next)
+(define-key global-map (kbd "M-G M-P") 'pen-buffers-hist-prev)
+(define-key global-map (kbd "M-G M-N") 'pen-buffers-hist-next)
 
-(define-key global-map (kbd "M-g M-d") 'pen-buffer-history)
-(define-key global-map (kbd "M-g M-e") 'pen-buffer-history-edit)
+(define-key global-map (kbd "M-g M-d") 'pen-buffers-history)
+(define-key global-map (kbd "M-g M-e") 'pen-buffers-history-edit)
 
 ;; minor mode
 (dogears-mode 1)

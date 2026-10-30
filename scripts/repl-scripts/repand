@@ -23,7 +23,7 @@ if ! pen-tm session-exists "$tmsessionname"; then
 fi
 
 # The "repand" command invoked without arguments should provide a REPL to command the repl
-# in the first pane of each window with a name starting with "repand-" in its tmux session.
+# in the first pane of each {window with a name starting with "repand-"} in its tmux session.
 # Otherwise, there should be additional subcommands of the repand command to add more REPLs.
 # These subcommands should be available though the "repand" REPL as well as the CLI.
 

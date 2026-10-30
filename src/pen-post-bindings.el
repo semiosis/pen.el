@@ -43,6 +43,10 @@
   (interactive)
   (pen-term-runcmd "nvc" "hhgttg"))
 
+(defun bsdgames-hack ()
+  (interactive)
+  (pen-term-runcmd "hack"))
+
 (defun zork ()
   (interactive)
   (pen-term-runcmd "nvc" "zork"))
@@ -76,6 +80,8 @@
 (sslk "lagsl" #'life)
 ;; Animation
 (sslk "lagnz" #'zone)
+;; Dungeon crawler / nethack
+(sslk "laghh" #'bsdgames-hack)
 ;; Chat
 (sslk "lagto" #'doctor)
 ;; Misc/Uncategorised

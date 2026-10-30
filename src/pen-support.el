@@ -845,12 +845,44 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 
     (defalias 'slugify 'eslugify)))
 
-(defun sh/hash-trim (s &optional max-mant-len)
-  "Total length = max-mant-len + 6"
-  (snc (cmd "hash-trim" max-mant-len) s))
+(defun sh/hash-trim (s &optional max-len)
+  "Total length = max-len + 6"
+  (snc (cmd "hash-trim" max-len) s))
 
 (defun sha256 (o)
   (secure-hash 'sha256 o))
+
+(comment
+ ;; These should yield the same result
+ (sh/hash-trim (pwd) 40)
+ (e/hash-trim (pwd) 40)
+
+ (sh/hash-trim (pwd) 20)
+ (e/hash-trim (pwd) 20)
+
+ ;; These should yield the same result, which should be 46
+ (length (sh/hash-trim (pwd) 40))
+ (length (e/hash-trim (pwd) 40))
+
+ ;; These should yield the same result, which should be 26
+ (length (sh/hash-trim (pwd) 20))
+ (length (e/hash-trim (pwd) 20)))
+
+(comment
+ ;; The idea with this should be that instead of an ..., it should use a hash
+ (defun e/hash-trim (s &optional max-len)
+   "The idea with this is that instead of an ..., it should use a hash"
+
+   ;; But pen-trim-max-chars uses a shell script (pen-str trim-max-chars). Oh well. Convert it to elisp after I get it working properly.
+   (pen-trim-max-chars s max-len (concat "-" (s-left 10 (sha256 s))))
+   ;; (setq max-len (or max-len 20))
+   ;; (let* ((hash (s-left 10 (sha256 s)))
+   ;;        (name (concat (s-left (- max-len 5) s) "-" hash))
+   ;;        (strl (length s)))
+   ;;   (if (> strl max-len)
+   ;;       name
+   ;;     hash))
+   ))
 
 (defun e/hash-trim (s &optional max-mant-len)
   "Total length = max-mant-len + 6"

@@ -353,4 +353,15 @@ buffer."
 
 ;; (e/which "grex")
 
+
+;; [[man:printf]]
+(defun sh/printf (&rest args)
+  "[[man:printf]]"
+  (snc (cmd (cons "printf" args))))
+
+;; Rather, use s-pad-right
+;; j:s-pad-right
+(defun sh/pad (s n)
+  (sn (cmd "pen-str" "pad" s (str n))))
+
 (provide 'pen-utils)

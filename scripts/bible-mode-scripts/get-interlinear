@@ -40,7 +40,7 @@ if printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]'; then
         while IFS="$IFS" read -r ref; do
             (
             exec 0</dev/null
-            int "$ref"
+            int "$ref" | awk 1
             )
         done
     } | pavs
