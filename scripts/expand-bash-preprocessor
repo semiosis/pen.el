@@ -2,6 +2,9 @@
 
 # [e:dsl-pipeline-substituton-bashify]
 
+# Make this syntax work:
+# ":  2198  zao  dzah'-o" >>> sed 's/ \+/ /g' | cut -d ' ' -f 3
+
 # TODO Add to "pash" a macro or syntax for loading lines into an array:
 # IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat /etc/passwd))'
 

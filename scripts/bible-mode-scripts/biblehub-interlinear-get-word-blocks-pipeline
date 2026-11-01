@@ -65,7 +65,7 @@ ocif bash -c "$shcode" |
                 fi
                 echo "|-"
                 pen-aatr -k "\n\n" "cif biblemode-tableify-interlinear-block" | sed '/^$/d' | sed 's/^/| /'
-            } | pen-org-table-format
+            } | cif pen-org-table-format
             # pen-org-template-gen text
             # cat
         fi
