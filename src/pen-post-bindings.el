@@ -146,11 +146,14 @@
 (ignore-errors
   (define-key pen-map (kbd "M-m w ;") #'ansi-zsh)
 
-  ;; Use the regular eshell here, so I am one key binding away from the main eshell instance
+  ;; Use the regular eshell here, so I am one key binding away from the main eshell instance.
+  ;; Typically, I will want to go back to whatever is the last eshell session I was using.
+  ;; This could be managed better, though.
   (define-key pen-map (kbd "M-m w '") #'eshell)
+  ;; (define-key pen-map (kbd "M-m w '") #'eshell-here)
   ;; (define-key pen-map (kbd "M-m w '") #'eshell-unique)
   
-  (define-key pen-map (kbd "M-m w \"") #'nw-term)
+  (define-key pen-map #'nw-term (kbd "M-m w \""))
 
   (define-key pen-map (kbd "M-m w s") #'eshell-sph)
   (define-key pen-map (kbd "M-m w S") #'eshell-spv)

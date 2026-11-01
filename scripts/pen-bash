@@ -31,6 +31,8 @@ scriptname="$1"
 shift
 wp="$(which "$scriptname")"
 
+export SHELL=pash
+
 if test -f "$wp"; then
     cat "$wp" | expand-bash-preprocessor > "$newscript"
 

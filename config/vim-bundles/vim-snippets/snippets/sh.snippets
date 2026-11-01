@@ -588,6 +588,12 @@ snippet dv_old
 	fi
 snippet lastargbash
 	lastarg = "${@: -1}"
+snippet wrapf
+	sn="\$(basename -- "\$0")"
+	FCMD="\$(cmd-nice "\$sn" "\$@")"
+snippet fcmd
+	sn="\$(basename -- "\$0")"
+	FCMD="\$(cmd-nice "\$sn" "\$@")"
 snippet wrap
 	CMD="\$(cmd "\$@")"
 	: \${CMD:="\$(cmd "$@")"}

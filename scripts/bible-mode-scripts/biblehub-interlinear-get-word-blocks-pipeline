@@ -56,7 +56,17 @@ ocif bash -c "$shcode" |
             # This is quite slow. Using cif here is negligable, maybe
             pen-aatr -k "\n\n" "cif biblemode-onelineify-interlinear-block" | sed '/^$/d'
         else
-            pen-org-template-gen text
+            # Try to put this output into a table
+            {
+                if test "$lang" = "H"; then
+                    echo "| Strongs Code | Transliteration | Hebrew | Translation | Grammar"
+                else
+                    echo "| Strongs Code | Transliteration | Greek | Translation | Grammar"
+                fi
+                echo "|-"
+                pen-aatr -k "\n\n" "cif biblemode-tableify-interlinear-block" | sed '/^$/d' | sed 's/^/| /'
+            } | pen-org-table-format
+            # pen-org-template-gen text
             # cat
         fi
     } | pavs

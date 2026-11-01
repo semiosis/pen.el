@@ -2,15 +2,42 @@
 
 . $SCRIPTS/lib/hs
 
-# Or should this be for ElasticSearch?
-# No. Make 'elk' the elasticsearch script.
-
-# How about both?
-# What about explainshell
-
 # eshell takes an optional numeric argument that does nothing useful
 
 # e -D spacemacs --runclient -e "(progn (eshell)(delete-other-windows))"
+
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if [[ $INSIDE_EMACS == *,comint ]]; then
+    {
+        sn="$(basename -- "$0")"
+        FCMD="$(cmd-nice "$sn" "$@")"
+        echo "This command was aborted:"
+        echo "  $FCMD"
+        echo "Start eshell:"
+        echo "  mx:eshell"
+    } | pen-org-template-gen org
+    exit 1
+fi
+
+if [[ $INSIDE_EMACS == *,eshell ]]; then
+    {
+        sn="$(basename -- "$0")"
+        FCMD="$(cmd-nice "$sn" "$@")"
+        echo "This command was aborted:"
+        echo "  $FCMD"
+        echo "Start eshell:"
+        echo "  mx:eshell"
+    } | pen-org-template-gen org
+    exit 1
+fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -61,7 +88,7 @@ if test -n "$to_buffer"; then
 fi
 
 if test -z "$CMD"; then
-    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(eshell)"
+    e -e "(cd (cast-to-dirname $(cmd-nice-posix "$CWD")))(eshell)"
 else
-    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(eshell-run-command $(cmd-nice-posix "$CMD"))"
+    e -e "(cd (cast-to-dirname $(cmd-nice-posix "$CWD")))(eshell-run-command $(cmd-nice-posix "$CMD"))"
 fi

@@ -31,4 +31,7 @@ if stdin_exists; then
 fi
 : ${input:="$(cmd "$@")"}
 
-printf -- "%s\n" "$input" | awk 1 | tee -a /tmp/shell-messages.log ~/bash-messages.txt
+{
+echo "$(cmd-nice dispmsg "$@"):"
+printf -- "%s\n" "$input" | awk 1 | cat -n
+} | tee -a /tmp/shell-messages.log ~/bash-messages.txt

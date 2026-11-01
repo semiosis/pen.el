@@ -1052,8 +1052,12 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'button fg)
     (set-face-background 'button bg)
     (set-face-underline 'button t)
-    (set-face-underline 'shr-text t)
-    (set-face-underline 'shr-link nil)
+    (set-face-inverse-video 'button nil)
+    ;; (set-face-underline 'shr-text t)
+    ;; (set-face-underline 'shr-link nil)
+    ;; (set-face-underline 'shr-text nil)
+    (set-face-underline 'shr-text nil)
+    (set-face-underline 'shr-link t)
 
     (require 'eshell-info-banner)
     (set-face-foreground 'eshell-info-banner-critical-face "#cc0000")
@@ -1106,6 +1110,7 @@ is specified, `:italic' is ignored."
     (set-face-underline 'info-xref t)
     (set-face-underline 'info-xref-visited t)
     ;; (set-face-inverse-video 'info-xref t)
+    (set-face-inverse-video 'info-xref nil)
     (set-face-inverse-video 'info-menu-header nil)
 
     (set-face-foreground 'info-xref-visited cfg)

@@ -16,8 +16,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -echo) {
+    -cmd|-echo) {
         do_echo=y
+        shift
+    }
+    ;;
+
+    -pwd) {
+        do_echo_pwd=y
         shift
     }
     ;;
@@ -88,7 +94,11 @@ else
         echo "$CMD" | tv "-$TV_TYPE" &>/dev/null
     fi
 
-    if test "$do_echo" = "y"; then
+    if test "$do_echo_pwd" = "y" && test "$do_echo" = "y"; then
+        echo-exec -docd -E "$CMD"
+    elif test "$do_echo_pwd" = "y"; then
+        echo "pwd: $(pwd)"
+    elif test "$do_echo" = "y"; then
         echo-exec -E "$CMD"
     else
         eval "$CMD"

@@ -829,7 +829,10 @@
 (define-key global-map (kbd "M-^") 'pen-cd-vc-cd-top-level)
 
 (define-key pen-map (kbd "M-\"") 'pen-helm-fzf)
-(define-key pen-map (kbd "M-U") 'dired-here)
+
+(define-key pen-map (kbd "M-U") nil)
+(define-key global-map (kbd "M-U") 'dired-here)
+(define-key dired-mode-map (kbd "M-U") 'eshell-here)
 
 ;; Convenience functions for making and editing bindings
 (define-key pen-map (kbd "M-l M-r M-f") 'goto-function-from-binding)

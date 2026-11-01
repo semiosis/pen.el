@@ -294,7 +294,7 @@ at point instead."
 (defun sh/u-dirname (nl-paths)
   "For directory paths, returns unchanged. For paths, returns the path of the directory they are in."
   (chomp (pen-sn "u dirname " nl-paths)))
-(defalias 'cast-dirname 'sh/u-dirname)
+(defalias 'cast-to-dirname 'sh/u-dirname)
 (defalias 'u/dn 'sh/u-dirname)
 (defalias 'c/dn 'sh/u-dirname)
 

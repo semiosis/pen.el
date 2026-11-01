@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+lines="$(sed 's/\s\+$//')"
+firstline="$(printf -- "%s\n" "$lines" | sed -n "1p")"
+lastline="$(printf -- "%s\n" "$lines" | sed -n "\$p")"
+lastlinelc="$(printf -- "%s\n" "$lines" | sed -n "\$p" | pen-str lc)"
+if pl "$firstline" | grep -q -P '^G[0-9]'; then
+    lastlineurl="$(printf -- "%s\n" "[[https://biblehub.com/grammar/${lastlinelc}.htm][$lastline]]")"
+else
+    # TODO Find appropriate url for Hewbrew grammar, if an appropriate website exists
+    lastlineurl="$(printf -- "%s\n" "$lastline")"
+fi
+middlelines="$(printf -- "%s\n" "$lines" | sed -e 1d -e "\$d")"
+{
+echo "[[strongs:$firstline][$firstline]]"
+echo "$middlelines"
+echo "$lastlineurl"
+} | pen-str join ' | '

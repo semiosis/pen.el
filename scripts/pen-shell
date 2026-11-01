@@ -46,7 +46,7 @@ if test -n "$to_buffer"; then
 fi
 
 if test -z "$CMD"; then
-    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(shell)"
+    e -e "(cd (cast-to-dirname $(cmd-nice-posix "$CWD")))(shell)"
 else
-    e -e "(cd (cast-dirname $(cmd-nice-posix "$CWD")))(shell-run-command $(cmd-nice-posix "$CMD"))"
+    e -e "(cd (cast-to-dirname $(cmd-nice-posix "$CWD")))(shell-run-command $(cmd-nice-posix "$CMD"))"
 fi

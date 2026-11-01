@@ -1,6 +1,0 @@
-#!/bin/bash
-export TTY
-
-# . $SCRIPTS/lib/hs
-
-sed 's/\s\+$//' | ved -m "JYS)jddYxkPa \\<esc> j2dd"

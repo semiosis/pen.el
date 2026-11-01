@@ -5,6 +5,12 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -docd) {
+        do_cd=y
+        shift
+    }
+    ;;
+
     -sps) {
         do_sps=y
         shift
@@ -26,6 +32,10 @@ if test "$DO_EXEC" = "y"; then
     CMD="$1"
 else
     CMD="$(cmd "$@")"
+fi
+
+if test "$do_cd" = "y"; then
+    CMD="cd $(aqf "$(pwd)"); $CMD"
 fi
 
 if test "$do_sps" = y; then

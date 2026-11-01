@@ -56,7 +56,46 @@
         "r"
         "tig"
         "mc"
-        "br"))
+        "br"
+        ;; "zsh"
+        ;; Adding bash here actually makes it so scripts with bash in the shebang line
+        ;; will start in term, rather than put their output in eshell.
+        ;; What's cool, actually, is that because of this, vs will run inside of a term when invoked like this
+        ;;  cat watch.org *| vs
+        ;; even though neither j:eshell/vs, nor j:vs are functions.
+        ;; "bash"
+        ;; "dash" "sh"
+        ))
+
+(defun eshell/bash (&rest args)
+  (interactive)
+  ;; (pen-term-nsfa (apply 'cmd (cons "bash" args)))
+  (shell))
+
+(defun eshell/zsh (&rest args)
+  (interactive)
+  ;; (pen-term-nsfa (apply 'cmd (cons "zsh" args)))
+  (let ((explicit-shell-file-name "/usr/bin/zsh"))
+    (shell)))
+
+(defun eshell/dash (&rest args)
+  (interactive)
+  ;; (pen-term-nsfa (apply 'cmd (cons "dash" args)))
+  (let ((explicit-shell-file-name "/bin/dash"))
+    (shell)))
+
+(defun eshell/sh (&rest args)
+  (interactive)
+  ;; (pen-term-nsfa (apply 'cmd (cons "sh" args)))
+  (let ((explicit-shell-file-name "/bin/sh"))
+    (shell)))
+
+(defun eshell/pash (&rest args)
+  (interactive)
+  ;; (pen-term-nsfa (apply 'cmd (cons "pash" args)))
+  (let ((explicit-shell-file-name nil)
+        (shell-file-name "pash"))
+    (shell)))
 
 (defun pen-start-term-visual-cmd (command)
   (interactive (list (fz eshell-visual-commands nil nil "Start term with: ")))
@@ -520,6 +559,7 @@ Any extra args go to that function"
   ;; (shell) ; this is a real terminal
   ;; (eshell)
   )
+(defalias 'eshell/eshell 'eshell-sps)
 
 (defun eshell-sph ()
   (interactive)
@@ -722,6 +762,10 @@ Any extra args go to that function"
 
 (defun eshell/tpop (&rest args)
   (tpop (apply 'cmd args)))
+
+(defun eshell/calc (&rest args)
+  (comint-quick (apply 'cmd (append (list "van" "calc") args))
+                default-directory))
 
 (defun eshell/ed (&rest args)
   (comint-quick (apply 'cmd (append (list "van" "ed") args))
@@ -2501,8 +2545,14 @@ Concatenate FILE(s), or standard input, to standard output.")
 (advice-add 'eshell/man :around #'eshell/man-around-advice)
 ;; (advice-remove 'eshell/man #'eshell/man-around-advice)
 
-(defun eshell-here ()
-  (interactive)
-  (eshell-unique))
+(defun eshell-here (&optional arg)
+  (interactive "P")
+  (progn
+    ;; DONE Make it so the main "*eshell*" buffer is not renamed.
+    (let ((eshell-buffer-name
+           (concat "*eshell-" (slugify (pwd)) "*")))
+      (eshell arg))
+    ;; (rename-buffer (concat "*eshell-" (substring (uuidgen-4) 0 8) "*"))
+    ))
 
 (provide 'pen-eshell)

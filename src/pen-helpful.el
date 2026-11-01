@@ -50,6 +50,23 @@
      ((macrop sym)
       (elisp-refs-macro sym)))))
 
+;; Can be used inside of eshell
+(defun pen-helpful-symbol (sym)
+  "hp (pen helpful-symbol can be run from eshell, too.
+e.g. `hp ivy-immediate-done`
+"
+  (interactive
+   (list (helpful--read-symbol
+          "Symbol: "
+          (helpful--symbol-at-point)
+          #'helpful--bound-p)))
+  
+  (setq sym (str2sym (str sym)))
+  (helpful-symbol sym))
+
+(defalias 'hlps 'pen-helpful-symbol)
+(defalias 'hp 'pen-helpful-symbol)
+
 (define-key helpful-mode-map (kbd "w") 'pen-yank-path)
 
 (provide 'pen-helpful)

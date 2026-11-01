@@ -1293,4 +1293,14 @@ The following commands are available:
 
 (setq org-strippeddown-mode-map org-mode-map)
 
+(defun pen-org-table-format (s)
+  "Align the formatted Org table in string s."
+  (with-temp-buffer
+    (insert s)
+    (org-mode)
+    (goto-char (point-min))
+    (forward-char)
+    (org-table-align)
+    (buffer-string)))
+
 (provide 'pen-org)

@@ -173,7 +173,7 @@ case "$cmd" in
     ;;
 
     # It casts, so call it that
-    dn|drn|dirname|cast-dirname) {
+    dn|drn|dirname|cast-to-dirname) {
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -f) {
                 FORCE_DIRNAME=y

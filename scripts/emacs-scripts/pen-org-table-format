@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# . $SCRIPTS/lib/hs
+
+input_fp="$(cat | tf org)"
+
+# I want this to work with eshell. But I need to use another emacs server
+export INSIDE_EMACS=
+output="$(pen-e -D pen-emacsd-1 -E-tcp-echo "(pen-org-table-format (cat $(aqf "$input_fp")))")"
+# rm -f "$input_fp"
+printf -- "%s\n" "$output"
+# Can't do stdin like this yet:
+# echo hi | pen-e -D DEFAULT -E-tcp-echo "(identity \"yo\")"
