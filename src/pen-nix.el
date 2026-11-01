@@ -320,7 +320,7 @@ at point instead."
 
 (defun curl (url &optional cache-result)
   (if cache-result
-      (pen-sn (concat "ocif curl " (pen-q url) " 2>/dev/null"))
+      (pen-sn (concat "ocif -i curl " (pen-q url) " 2>/dev/null"))
     (pen-sn (concat "curl " (pen-q url) " 2>/dev/null"))))
 
 (defun rb (command)

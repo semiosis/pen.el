@@ -5,7 +5,7 @@ export TTY
 . $SCRIPTS/lib/stdin_exists
 
 # Example:
-# ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline
+# ocif -i curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline
 
 # grep -q "Strong's Hebrew"
 # grep -q "Strong's Greek"
@@ -17,7 +17,7 @@ else
     if ! test -n "$url"; then
         exit 1
     fi
-    input_fp="$(ocif curl "$url" | tf txt)"
+    input_fp="$(ocif -i curl "$url" | tf txt)"
 fi
 
 if cat "$input_fp" | grep -q -P "Strong's Hebrew"; then

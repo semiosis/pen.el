@@ -258,6 +258,11 @@ PATH is the sexp to evaluate, as a string."
   "Run nw `CMD'."
   (nw cmd))
 
+(org-add-link-type "ddgr" 'follow-ddgr-link)
+(defun follow-ddgr-link (cmd)
+  "Run ddgr `CMD'."
+  (fz-ddgr cmd))
+
 (org-add-link-type "sh" 'follow-sh-link)
 (org-add-link-type "sn" 'follow-sh-link)
 (org-add-link-type "snc" 'follow-sh-link)

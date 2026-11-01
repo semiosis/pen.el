@@ -588,15 +588,20 @@ Any extra args go to that function"
  (edit-read-string-hist "fz-ddgr-bibleverse: "))
 
 ;; Do the following even work?
-(defun eshell-run-command (cm &optional dir)
+(defun eshell-run-command (cm &optional dir b-in-common-eshell)
   (interactive (list (car (str2lines (read-string-hist "eshell$ " nil nil nil nil t)))))
+
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (setq b-in-common-eshell t))
 
   ;; This built-in-command might be better.
   ;; I should use it to improve the method.
   (comment
    (eshell-command-result "df -h"))
 
-  (let ((buf (eshell-unique)))
+  (let ((buf (if b-in-common-eshell
+                 (eshell)
+               (eshell-unique))))
     (with-current-buffer buf
 
       (if dir
@@ -611,7 +616,11 @@ Any extra args go to that function"
       (insert (str cm))
       ;; TODO Find a way to wait until the command sent by (eshell-send-input)
       ;; is fully executed before killing the buffer
-      (progn (eshell-send-input) (kill-buffer buf))
+
+      (eshell-send-input)
+
+      (if (not b-in-common-eshell)
+          (kill-buffer buf))
 
       ;; This is currently not working with cumx:pen-enter-evil-ex
       ;; etv ${bash -c 'for i in *; do ls -dx "$i"; done'}

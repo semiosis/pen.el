@@ -12,4 +12,4 @@ test -n "$term" || exit 1
 # This just usese the dictionary api.
 # It doesn't actually scrape google, which is what I want.
 
-ocif curl -s "https://api.dictionaryapi.dev/api/v1/entries/en/$term" | jq -r ".[0].meaning | to_entries[].value[].definition" 2>/dev/null
+ocif -i curl -s "https://api.dictionaryapi.dev/api/v1/entries/en/$term" | jq -r ".[0].meaning | to_entries[].value[].definition" 2>/dev/null

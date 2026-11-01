@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Should I by default cache curl requests?
+# Perhaps.
+
 . $SCRIPTS/lib/hs
 
 export HTTP_PROXY

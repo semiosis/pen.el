@@ -7,12 +7,12 @@ export TTY
 
 # Examples
 
-# unbuffer bash -c "ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS 2>&1" | less -rS
+# unbuffer bash -c "ocif -i curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS 2>&1" | less -rS
 
-# ocif curl -sL https://git.io/ISLANDScsv | sort -nk2 -t, | tail -n15 | uplot bar -d, -t "Areas of the World's Major Landmasses"
+# ocif -i curl -sL https://git.io/ISLANDScsv | sort -nk2 -t, | tail -n15 | uplot bar -d, -t "Areas of the World's Major Landmasses"
 # cd "$PENCONF"; ls -l | awk '{print $9, $5}' | sort -nk 2 | uplot bar -d ' '
 # echo -e "from numpy import random;" "n = random.randn(10000);" "print('\\\n'.join(str(i) for i in n))" | python3 | uplot hist --nbins 20
-# ocif curl -sL https://git.io/AirPassengers | cut -f2,3 -d, | uplot line -d, -w 50 -h 15 -t AirPassengers --xlim 1950,1960 --ylim 0,600
+# ocif -i curl -sL https://git.io/AirPassengers | cut -f2,3 -d, | uplot line -d, -w 50 -h 15 -t AirPassengers --xlim 1950,1960 --ylim 0,600
 
 # I want to onelinerize anything:
 # python3 -c '
@@ -20,9 +20,9 @@ export TTY
 # data = "\n".join(f"{i*pi/50}\t{sin(i*pi/50)}" for i in range(101))
 # print(data)' | uplot line
 
-# ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot scatter -H -t IRIS
-# ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS
-# ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot boxplot -H -t IRIS
+# ocif -i curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot scatter -H -t IRIS
+# ocif -i curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS
+# ocif -i curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot boxplot -H -t IRIS
 # ps aux | awk '{print $1}' | uplot count
 
 /usr/local/bin/uplot "$@"

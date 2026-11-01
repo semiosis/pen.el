@@ -17,6 +17,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -i) {
+        export UPDATE_NET=y
+        shift
+    }
+    ;;
+
     -m|-meta) {
         export EXTRA_METADATA="_$2"
 

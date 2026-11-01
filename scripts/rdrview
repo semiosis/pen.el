@@ -109,7 +109,7 @@ else
                 fi
                 ocif dom-dump -w 5000 "$last_arg" | cat
             else
-                ocif curl -s "$last_arg" | cat
+                ocif -i curl -s "$last_arg" | cat
             fi
         ) | tf html
     )"

@@ -2171,7 +2171,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (browse-url url)
       url)))
 
-;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
+;; ocif -i curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
 (defun bible-interlinear-get-word-blocks (&optional onelined)
   (interactive)
   ;; (etv (snc "biblehub-interlinear-get-word-blocks-pipeline" (curl (bible-open-interlinear) t)))

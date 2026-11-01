@@ -134,7 +134,7 @@
 
 ;; TODO Add w3m-horizontal-recenter somewhere. It used to be M-l
 
-;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | elinks-dump | sed -z "s/1\\n\\n/\\n/" | sed "s/   [0-9]\\+$//g" | sed "s/ / /g" | erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" | sed "s/ \\+/ /g" | ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd"
+;; ocif -i curl "https://biblehub.com/interlinear/genesis/1-1.htm" | elinks-dump | sed -z "s/1\\n\\n/\\n/" | sed "s/   [0-9]\\+$//g" | sed "s/ / /g" | erase-trailing-whitespace | sed -e 's/^\s*//' | sed "s/ \\[e\\]$//" | sed "s/ \\+/ /g" | ved "-m" "V/Click for Chapter\\<CR>ddd/IFrame\\<CR>VGd"
 
 ;; Solve this problem, then solve caching w3m:
 ;; I can only currently memoize functions which return a string.

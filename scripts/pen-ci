@@ -32,6 +32,8 @@ export INSIDE_CI=y
 
 # ci means "cache it"
 
+update_only_if_y=UPDATE
+
 IGNORE_DIR=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -43,6 +45,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -a) {
         asynchronous=y
+        shift
+    }
+    ;;
+
+    -i) {
+        # The variable to check if y is set
+        # A space separated list of env variable names to check
+        update_only_if_y=UPDATE_NET
+        # See:
+        # +/"export UPDATE_NET=y" "$PENELD/scripts/pen-upd"
         shift
     }
     ;;
@@ -227,9 +239,10 @@ o_tee() {
 {
     echo "ci $CMD"
     echo "EXTRA_METADATA=$EXTRA_METADATA" 
+    echo "update_only_if_y=$update_only_if_y"
     echo "cache_file_path=$cache_file_path" 
     echo
-} | dispmsg | {
+} | dispmsg -f "pen-ci (pid:$$) info" | {
     if test "$CI_VERBOSE" = "y"; then
         hls blue 1>&2
     else
@@ -257,12 +270,41 @@ showenvs() {
     done
 }
 
+# Check to see if all necessary variables are set to y
+check_do_update() {
+    vars_string="$@"
+    matching="$(
+    {
+    for v in "$@"; do
+        if test "$(eval echo "\$$v")" = y; then
+            echo "$v"
+        fi
+    done
+    } | tr '\n' ' '
+    )"
+
+    # remove trailing whitespace
+    matching="$(printf -- "%s" "$matching" | sed -e "s/\s*\$//")"
+
+    {
+        printf -- "%s\n" "vars_string:'$vars_string'"
+        printf -- "%s\n" "matching:'$matching'"
+        if test "$vars_string" = "$matching"; then
+            echo "updating cache"
+        else
+            echo "not updating cache"
+        fi
+    } | dispmsg -f "pen-ci (pid:$$) check_do_update" &>/dev/null
+
+    test "$vars_string" = "$matching"
+}
+
 main() {
     # Check whether there is a cache with this path and act accordingly
     cache_file_path_exists="$(test -f "$cache_file_path"; if test "$?" = 0; then echo Yes; else echo No; fi)"
     cache_file_path_notempty="$(test -s "$cache_file_path"; if test "$?" = 0; then echo Yes; else echo No; fi)"
     if test "$CI_VERBOSE" = "y"; then
-        showenvs force_on cache_file_path cache_file_path_exists cache_file_path_notempty RETRY_TIMEOUT file_age UPDATE | hls yellow 1>&2
+        eval "showenvs force_on cache_file_path cache_file_path_exists cache_file_path_notempty RETRY_TIMEOUT file_age UPDATE $update_only_if_y" | hls yellow 1>&2
     fi
 
     if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
@@ -272,7 +314,7 @@ main() {
             test "$CI_VERBOSE" = "y" && echo "pen-ci: Cache checked too soon" | hls pink 1>&2
             echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
             exit 0
-        elif test -f "$cache_file_path" && { test -s "$cache_file_path" || test "$force_on" = y; } && { test "$RETRY_TIMEOUT" = "" || { test "$file_age" -lt "$RETRY_TIMEOUT" || ! test -n "${$file_age}{$RETRY_TIMEOUT}"; }; } && ! test "$UPDATE" = y; then
+        elif test -f "$cache_file_path" && { test -s "$cache_file_path" || test "$force_on" = y; } && { test "$RETRY_TIMEOUT" = "" || { test "$file_age" -lt "$RETRY_TIMEOUT" || ! test -n "${$file_age}{$RETRY_TIMEOUT}"; }; } && ! check_do_update $update_only_if_y; then
             test "$CI_VERBOSE" = "y" && echo "pen-ci: Using cache" | hls pink 1>&2
             # if test "$notify_not_updated" = "y"; then
                 # echo "Cache used for $CMD" | tee -a /tmp/ci-log.txt 1>&2

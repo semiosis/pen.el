@@ -14,18 +14,18 @@
 (defn biblehub-interlinear-join-blocks [a b]
   (myshell/snc "ved-move-biblehub-interlinear-block-up" (str a "\n\n" b)))
 
-;; ocif curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
+;; ocif -i curl "https://biblehub.com/interlinear/genesis/1-1.htm" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | v
 ;; There's something wrong with myshell/sn because the output is different
 (defn test-biblehub-interlinear-join-blocks-a
   []
-  (myshell/tv (myshell/sn "ocif curl \"https://biblehub.com/interlinear/genesis/1-1.htm\" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up")))
+  (myshell/tv (myshell/sn "ocif -i curl \"https://biblehub.com/interlinear/genesis/1-1.htm\" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up | ved-move-biblehub-interlinear-block-up")))
 
 (defn test-biblehub-interlinear-join-blocks
   []
   ;; (myshell/tv (biblehub-interlinear-join-blocks "1473    \n-----   \n------  \nof us   \nPPro-G1P" "1|73    \n-----   \n------  \no| us   \nP|ro-G1P"))
   ;; (myshell/tv (biblehub-interlinear-join-blocks (s/trim-newline (slurp "/root/dump/tmp/scratchu8qQfJ.txt")) "1|73    \n-----   \n------  \no| us   \nP|ro-G1P"))
   ;; (myshell/tv (biblehub-interlinear-join-blocks (slurp "/root/dump/tmp/scratchu8qQfJ.txt") "1|73    \n-----   \n------  \no| us   \nP|ro-G1P"))
-  (myshell/tv (biblehub-interlinear-join-blocks (myshell/sn "ocif curl \"https://biblehub.com/interlinear/genesis/1-1.htm\" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | awk 1") "1|73    \n-----   \n------  \no| us   \nP|ro-G1P")))
+  (myshell/tv (biblehub-interlinear-join-blocks (myshell/sn "ocif -i curl \"https://biblehub.com/interlinear/genesis/1-1.htm\" | biblehub-interlinear-get-word-blocks-pipeline | sed '${/^$/d}' | awk 1") "1|73    \n-----   \n------  \no| us   \nP|ro-G1P")))
 
 
 (defn transform-line [line]

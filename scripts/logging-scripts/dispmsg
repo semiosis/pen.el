@@ -8,6 +8,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        from="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -32,6 +39,10 @@ fi
 : ${input:="$(cmd "$@")"}
 
 {
-echo "$(cmd-nice dispmsg "$@"):"
-printf -- "%s\n" "$input" | awk 1 | cat -n
+    if test -n "$from"; then
+        echo "dispmsg from $from:"
+    else
+        echo "dispmsg:"
+    fi
+    printf -- "%s\n" "$input" | awk 1 | cat -n
 } | tee -a /tmp/shell-messages.log ~/bash-messages.txt

@@ -6,6 +6,6 @@ export TTY
 url="$1"
 
 (
-ocif curl "$url" | awk 1
+ocif -i curl "$url" | awk 1
 elinks-dump "$url" | awk 1
 ) | scrape-bible-references| uniqnosort # | bible-show-verses -pp
