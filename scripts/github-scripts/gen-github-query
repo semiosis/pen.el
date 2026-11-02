@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# -l here is actually for getopt
+long_opts="$(cmd -l repo:,extension:,path:,filename:,followers:,language:,license:,not-repo:,not-extension:,not-path:,not-filename:,not-followers:,not-language:,-not-license:)"
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# echo "getopt -o '' $long_opts -- $CMD"
+options=$(eval "getopt -o '' $long_opts -- $CMD")
+if [ $? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
+
+eval set -- "$options"
+
+{
+while true; do
+  case "$1" in
+    --not[a-z-]*) {
+        key="${1##--not-}"
+        val="$2"
+        printf -- "%s\n" "-$key:$val"
+        shift 2
+    } ;;
+    --[a-z-]*) {
+        key="${1##--}"
+        val="$2"
+        printf -- "%s\n" "$key:$val"
+        shift 2
+    } ;;
+    -- ) shift; break ;;
+    * ) break ;;
+  esac
+done
+for var in "$@"
+do
+    printf -- "%s\n" "$var"
+done
+} | q -l | tr '\n' ' '

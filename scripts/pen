@@ -2385,13 +2385,13 @@ pen-docker() {
 
 pen_eval() {
     if test "$DEBUG" = "y"; then
-	if which cmd-nice-with-bs &>/dev/null; then
-	    firstarg="cmd-nice-with-bs $1"
+	    if which cmd-nice-with-bs &>/dev/null; then
+	        firstarg="myeval -tv $1"
             shift
             set -- "$firstarg" "$@"
-	else
-	    echo "$@"
-	fi
+	    else
+	        echo "$@"
+	    fi
     fi
 
     if test "$penl_strip_pf" = "y"; then

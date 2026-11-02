@@ -57,7 +57,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -p|-path) {
+    # pcre regex
+    -p|-path|--path-pat) {
         filename_pattern="$2"
         shift
         shift

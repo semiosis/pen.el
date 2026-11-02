@@ -1384,10 +1384,14 @@ Also see option `magit-blame-styles'."
   (require 'org-faces)
   (set-face-background 'org-scheduled-previously nil)
   (set-face-foreground 'org-scheduled-previously "#222222")
+  
+  (require 'comint)
+  (set-face-background 'comint-highlight-prompt "#202050")
+  (set-face-foreground 'comint-highlight-prompt "#5555ff")
 
   ;; (set-face-foreground 'org-scheduled-previously "yellow")
-  (set-face-italic 'org-scheduled-previously nil)
   ;; (set-face-inverse-video 'org-scheduled-previously nil)
+  (set-face-italic 'org-scheduled-previously nil)
 
   ;; (require 'display-line-numbers)
   ;; (progn
@@ -2109,8 +2113,6 @@ Also see option `magit-blame-styles'."
                     ;; :italic t
                     ;; :bold (pen-use-bold-p)
                     )))
-
-
 
         (cl-loop for fr in (frame-list)
                  do

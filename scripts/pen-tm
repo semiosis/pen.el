@@ -3295,6 +3295,8 @@ case "$f" in
         REMEMBER_IT=n
         EDITOR=pen-v
         window_mode=sps
+
+        fargs=()
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             -q) {
                 SILENCE=y
@@ -3327,6 +3329,20 @@ case "$f" in
             }
             ;;
 
+            # window name
+            -n) {
+                fargs+=("$1" "$2")
+                shift
+                shift
+            }
+            ;;
+
+            -*|--[a-z]*) {
+                fargs+=("$1")
+                shift
+            }
+            ;;
+    
             *) break;
         esac; done
 
@@ -3343,9 +3359,9 @@ case "$f" in
             tf_ft="$(pen-tf ft "$ft" || echo /dev/null)"
 
             printf -- "%s" "$input" > "$tf_ft"
-            pen-tm -d -tout spv -noerror "$EDITOR -nad $tf_ft"
+            pen-tm -d -tout $window_mode -noerror "${fargs[@]}" "$EDITOR -nad $tf_ft"
         else
-            printf -- "%s" "$input" | pen-tm -S -tout $window_mode -noerror "$EDITOR -nad"
+            printf -- "%s" "$input" | pen-tm -S -tout $window_mode -noerror "${fargs[@]}" "$EDITOR -nad"
         fi
         printf -- "%s" "$input"
     }

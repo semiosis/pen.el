@@ -63,6 +63,8 @@
                           (comint-mode
                            ((true)
                             (comint-history-isearch-backward-regexp))
+                           ((string-match-p "tail:" (buffer-name))
+                            (itail-highlight))
                            ((pen-sidecar-match-current-buffer-name "battlestar")
                             (pen-comint--battlestar--save
                              pen-comint--battlestar--inven
@@ -221,6 +223,13 @@
                            ((true)
                             (reload-library-here)))
                           (csv-mode
+                           ((true)
+                            (csv-open
+                             csv-open-in-numpy
+                             csv-open-in-pandas
+                             csv-open-in-fpvd
+                             csv-open-in-tabulated-list)))
+                          (tsv-mode
                            ((true)
                             (csv-open
                              csv-open-in-numpy

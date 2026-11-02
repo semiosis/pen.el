@@ -2181,15 +2181,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (let ((result
          (snc (cmd
-                     (if onelined
-                         "ocif")
-                     (if onelined
-                         "apply-pipe")
-                     (if onelined
-                         "strongs-codes-relinkify")
-                     (if onelined
-                         "onelined")
-                     "get-interlinear" (bible-mode-get-link nil t)))))
+               (if onelined
+                   "ocif")
+               (if onelined
+                   "apply-pipe")
+               (if onelined
+                   "strongs-codes-relinkify")
+               (if onelined
+                   "onelined")
+               "get-interlinear" "-refarg" (bible-mode-get-link nil t)))))
 
     (if onelined
         (progn

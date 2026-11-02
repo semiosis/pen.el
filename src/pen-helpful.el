@@ -69,4 +69,10 @@ e.g. `hp ivy-immediate-done`
 
 (define-key helpful-mode-map (kbd "w") 'pen-yank-path)
 
+;; Now that I have helpful-mode fullscreen in pa:pen-shackle
+;; I want  kill-current-buffer,
+;; rather than quit-window.
+;; (define-key helpful-mode-map (kbd "q") 'quit-window)
+(define-key helpful-mode-map (kbd "q") 'kill-current-buffer)
+
 (provide 'pen-helpful)

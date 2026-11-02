@@ -3,6 +3,16 @@ export TTY
 
 # ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+## Cool but presently puts a lot of noise into the bash messages
+# (
+# exec &>/dev/null
+# wd="$(pwd)"
+# CMD="$(cmd-nice-posix "$@" | pen-esc '`!' | sed -z "s/\n/<pen-newline>/g")"
+# parameters="$CMD"
+# full_command="cd $(cmd-nice "$wd"); git $parameters"
+# dispmsg -f "e:container-git run as 'git'" -E "$full_command"
+# ) & disown
+
 export PAGER=pen-pager
 
 # This will use the host git to run git commands, if ssh to host is available

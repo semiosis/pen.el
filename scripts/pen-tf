@@ -52,7 +52,7 @@ fi
 : "${ext:="txt"}"
 
 fp="$(mktemp -t "tf_${name}XXXXXXX${extraslug:0:220}.${ext}" 2>/dev/null || :)"
-# e:bash-message
+# e:dispmsg
 # echo "pen-tf: $fp" 1>&2 | dispmsg # >> ~/bash-messages.txt
 
 # TODO

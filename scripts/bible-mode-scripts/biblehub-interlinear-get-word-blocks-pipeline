@@ -46,7 +46,10 @@ IFS= read -r -d '' shcode <<HEREDOC
         sed 's/^[0-9]\+ \([^ ]\)/\1/' |
         sed 's/^\[e\] //' |
         sed "s/^\\([0-9]\\)/${lang}\\1/" |
-        sed -e '/^$/d' -e '/^\[e\]$/d' | sed -z 's/\(\n[GH][0-9]\)/\n\1/g'
+        sed -z 's/\n\n\n/\n\nNo Strongs\n/g' ` # No Strongs code ` |
+        sed -e '/^$/d' -e '/^\[e\]$/d' |
+        sed -z 's/\(\n[GH][0-9]\)/\n\1/g' |
+        sed -z 's/\(\nNo Strongs\)/\n\1/g'
 HEREDOC
 
 ocif bash -c "$shcode" |
@@ -65,7 +68,8 @@ ocif bash -c "$shcode" |
                 fi
                 echo "|-"
                 pen-aatr -k "\n\n" "cif biblemode-tableify-interlinear-block" | sed '/^$/d' | sed 's/^/| /'
-            } | cif pen-org-table-format
+            } | alert-pipe-failure -n -il cif pen-org-table-format
+            # } | alert-pipe-failure -n -il -fail cif pen-org-table-format
             # pen-org-template-gen text
             # cat
         fi

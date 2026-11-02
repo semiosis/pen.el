@@ -221,4 +221,20 @@
   (interactive)
   (reopen-in 'pen-emacs-web-browse))
 
+(defun chrome (url &optional no_xurls force_xurls)
+  (interactive (list (read-string-hist "chrome: ")))
+  (pen-ns (concat "Chrome: " url))
+  (if force_xurls
+      (setq no_xurls nil))
+  (if (not no_xurls)
+      (let ((url_xurls (xurls url)))
+        (if (and (not (string-equal url url_xurls))
+                 (or force_xurls
+                     (and
+                      (interactive-p)
+                      (yn "xurls changed the url. Use xurls?"))))
+            (setq url url_xurls))))
+  (setq url (chomp url))
+  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer pen-ssh-host-run-or-local-run chrome " (pen-q url)))) nil nil nil t))
+
 (provide 'pen-browser)

@@ -183,18 +183,23 @@ ARGLIST.  The infix arguments are usually accessed by using
 ;;  'pen-github-transient-search
 ;;  'pen-github-transient-search-with-keywords)
 
+(defun ask-to-run (code)
+  (if (yn (format "Run %S?" (pen-encode-string (pp-oneline code))))
+      (eval code)
+    (error "Cancelled")))
+
 (defun pen-github-transient-search (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
   (let ((query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " main") :chomp t)))
-    (eegh query)))
+    (ask-to-run `(eegh ,query))))
 
 (defun pen-github-transient-search-with-keywords (&optional args)
   (interactive
    (list (transient-args 'github-transient)))
   (let* ((keywords (read-string-hist "gh keywords:"))
          (query (pen-cl-sn (concat "gen-github-query " (mapconcat 'pen-q args " ") " " (sor keywords "main")) :chomp t)))
-    (eegh query)))
+    (ask-to-run `(eegh ,query))))
 
 (defset pen-github-key-value-predicates
   ;; prefix with - to invert i.e. -inurl:
@@ -207,7 +212,7 @@ ARGLIST.  The infix arguments are usually accessed by using
    "language"
    "license"))
 
-;; (pen-create-transient "github" pen-github-key-value-predicates 'pen-github-transient-search 'pen-github-transient-search-with-keywords)
+(pen-create-transient "github" pen-github-key-value-predicates 'pen-github-transient-search 'pen-github-transient-search-with-keywords)
 (define-key pen-map (kbd "H-? h") 'github-transient)
 
 ;; https://github.com/magit/transient/wiki/Developer-Quick-Start-Guide

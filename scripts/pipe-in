@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+file="$1"
+test -f "$file" || exit 1
+shift
+
+test "$#" -gt 0 || exit 1
+
+cat "$file" | "$@"

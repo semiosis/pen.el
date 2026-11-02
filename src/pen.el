@@ -120,7 +120,9 @@ without silencing all errors."
 (require 'pen-lambda)
 (require 'pen-playing-cards)
 
-(defmacro comment (&rest body) nil)
+(defmacro comment (&rest body)
+  "This just macro just generates 'nil' and anything in its body will be ignored."
+  nil)
 ;; (defalias 'comment 'ignore)
 
 (defalias 'co 'comment)

@@ -98,8 +98,20 @@ if test "$STDIN_EXISTS" = "y"; then
     echo "exec < <(cat \"$input_fp\")" | awk 1  >> "$tf_new_script"
 fi
 
+IFS= read -r -d '' isttysh <<'HEREDOC'
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+HEREDOC
+
 if test "$resize" = "y"; then
-    printf -- "%s\n" 'eval `resize`'  >> "$tf_new_script"
+    printf -- "%s\n" "$isttysh"  >> "$tf_new_script"
+    printf -- "%s\n" 'is_tty && eval `resize`'  >> "$tf_new_script"
 fi
 
 CWD="$(printf -- "%s" "$CWD" | sed "s=^~=$HOME=")"

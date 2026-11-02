@@ -100,7 +100,7 @@
           ("^\\**" . 'info-menu-star)
           ;; [[info:cutils#Overview][Emacs Info: cutils#Overview]]
           ("^_[^_]+_" . 'info-code)
-          (" _[^_]+_ " . 'info-code)
+          (" _[^_]+_[ ,.]" . 'info-code)
           ;; [[info:cutils#Invoking cobfusc][Emacs Info: cutils#Invoking cobfusc]]
           ("^'[^']+'" . 'info-quoted-face)
           (" [0-9]+\\. " . 'info-bold)
@@ -119,6 +119,8 @@
           ("^ +:.*" . 'info-bullet-point)
           ("^ +.*)$" . 'info-bullet-point)
           ("•" . 'info-menu-star)
+          ("&rest" . 'font-lock-type-face)
+          ("&optional" . 'font-lock-type-face)
           ;; ("‘[^’]*’" . 'font-lock-warning-face)
           ;; ("‘.*’" . 'font-lock-warning-face)
           ;; ("[^[:ascii:]]C-" . 'font-lock-warning-face)

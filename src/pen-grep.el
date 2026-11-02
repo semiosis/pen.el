@@ -296,7 +296,7 @@ NEEDLE is the search string."
                      (read-directory-name "ead dir: ")))
   (pen-nw (concat "set -x; cd " (pen-q wd) "; pen-ead " (pen-q (concat "\\b" pattern "\\b")) " || pak")))
 
-(defun pen-wgrep (pattern &optional wd path-re)
+(defun pen-wgrep (pattern &optional wd path-re extra-opts)
   (interactive (list (read-string-hist "ead pattern: ")
                      (read-directory-name "ead dir: ")))
 
@@ -307,11 +307,12 @@ NEEDLE is the search string."
           (setq wd (pen-pwd)))
       (setq wd (pen-umn wd))
 
+      (if (sor path-re)
+          (setq extra-opts (append (list "-p" path-re) extra-opts)))
+
       ;; How can I use pen-mnm but only on the file paths? -- I want to be able to filter on a column only
-      (let* ((globstr (if (sor path-re)
-                          (concat "-p " (pen-q path-re) " ")
-                        ""))
-             (results (ignore-errors (pen-sn (concat "pen-ead -f " globstr (pen-q pattern) " | pen-mnm | cat") nil wd))))
+      (let* ((globstr )
+             (results (ignore-errors (pen-sn (concat (apply 'cmd (append (list "pen-ead" "-f") extra-opts (list pattern))) " | pen-mnm | cat") nil wd))))
         (if (sor results)
             (with-current-buffer
                 (new-buffer-from-string

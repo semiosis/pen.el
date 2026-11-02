@@ -1,0 +1,50 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+set -o pipefail
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -n) {
+        success_test=nonempty
+        shift
+    }
+    ;;
+
+    -fail) {
+        do_fail=y
+        shift
+    }
+    ;;
+
+    -il) {
+        ignore_link=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${success_test:="nonempty"}"
+
+test "$#" -gt 0 || exit 1
+
+input_fp="$( cat | tf txt)"
+output_fp="$( cat "$input_fp" | "$@" | tf txt)"
+ret="$?"
+
+if test "$do_fail" = y || ! { test -s "$output_fp" && test -n "$(cat "$output_fp")"; }; then
+     printf -- "%s\n  %s\n" "alert-pipe-failure> Failed:" "$(cmd pipe-in "$input_fp" "$@")" | tv -nw -n "<w:alert-pipe-failure!>" -d &>/dev/null
+
+    if test "$ignore_link" = "y"; then
+        cp -af "$input_fp" "$output_fp"
+    fi
+else
+    rm -f "$input_fp"
+fi
+cat "$output_fp"
+rm -f "$output_fp"
+exit "$ret"

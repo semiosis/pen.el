@@ -15,7 +15,13 @@ if ! in-pen-p; then
 fi
 
 if test -n "$INSIDE_EMACS"; then
-    nw zrepl -m "INSIDE_EMACS was set, so popped out to tmux" -nocl pen-e "$@"
+    if stdin_exists; then
+        input_fp="$(cat | tf txt)"
+        nw zrepl -m "INSIDE_EMACS was set, so popped out to tmux" -nocl pipe-in "$input_fp" pen-e "$@"
+    else
+        nw zrepl -m "INSIDE_EMACS was set, so popped out to tmux" -nocl pen-e "$@"
+    fi
+
     exit "$?"
 fi
 

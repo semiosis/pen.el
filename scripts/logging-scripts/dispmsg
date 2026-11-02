@@ -15,8 +15,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
 
 stdin_exists() {
     {
@@ -36,7 +48,7 @@ fi
 if stdin_exists; then
     input="$(cat)"
 fi
-: ${input:="$(cmd "$@")"}
+: ${input:="$CMD"}
 
 {
     if test -n "$from"; then

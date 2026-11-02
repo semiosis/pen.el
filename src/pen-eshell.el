@@ -70,32 +70,39 @@
 (defun eshell/bash (&rest args)
   (interactive)
   ;; (pen-term-nsfa (apply 'cmd (cons "bash" args)))
-  (shell))
+  (shell-unique))
+
+(defset zsh-prompt-pattern "^[^#$%»>\n]*[#$%>»] *")
 
 (defun eshell/zsh (&rest args)
   (interactive)
   ;; (pen-term-nsfa (apply 'cmd (cons "zsh" args)))
-  (let ((explicit-shell-file-name "/usr/bin/zsh"))
-    (shell)))
+
+  (let ((explicit-shell-file-name
+         ;; (pen-nsfa (tv (pen-cmd "env" "-S" "CWD=" "/usr/bin/zsh")))
+         (pen-nsfa (pen-cmd "zcd" default-directory)))
+        ;; j:shell-prompt-pattern is used to initialise j:comint-prompt-regexp
+        (shell-prompt-pattern zsh-prompt-pattern))
+    (shell-unique)))
 
 (defun eshell/dash (&rest args)
   (interactive)
   ;; (pen-term-nsfa (apply 'cmd (cons "dash" args)))
   (let ((explicit-shell-file-name "/bin/dash"))
-    (shell)))
+    (shell-unique)))
 
 (defun eshell/sh (&rest args)
   (interactive)
   ;; (pen-term-nsfa (apply 'cmd (cons "sh" args)))
   (let ((explicit-shell-file-name "/bin/sh"))
-    (shell)))
+    (shell-unique)))
 
 (defun eshell/pash (&rest args)
   (interactive)
   ;; (pen-term-nsfa (apply 'cmd (cons "pash" args)))
   (let ((explicit-shell-file-name nil)
         (shell-file-name "pash"))
-    (shell)))
+    (shell-unique)))
 
 (defun pen-start-term-visual-cmd (command)
   (interactive (list (fz eshell-visual-commands nil nil "Start term with: ")))
@@ -588,20 +595,15 @@ Any extra args go to that function"
  (edit-read-string-hist "fz-ddgr-bibleverse: "))
 
 ;; Do the following even work?
-(defun eshell-run-command (cm &optional dir b-in-common-eshell)
+(defun eshell-run-command (cm &optional dir)
   (interactive (list (car (str2lines (read-string-hist "eshell$ " nil nil nil nil t)))))
-
-  (if (>= (prefix-numeric-value current-prefix-arg) 4)
-      (setq b-in-common-eshell t))
 
   ;; This built-in-command might be better.
   ;; I should use it to improve the method.
   (comment
    (eshell-command-result "df -h"))
 
-  (let ((buf (if b-in-common-eshell
-                 (eshell)
-               (eshell-unique))))
+  (let ((buf (eshell)))
     (with-current-buffer buf
 
       (if dir
@@ -618,9 +620,6 @@ Any extra args go to that function"
       ;; is fully executed before killing the buffer
 
       (eshell-send-input)
-
-      (if (not b-in-common-eshell)
-          (kill-buffer buf))
 
       ;; This is currently not working with cumx:pen-enter-evil-ex
       ;; etv ${bash -c 'for i in *; do ls -dx "$i"; done'}
@@ -2366,95 +2365,62 @@ or an external command."
 	    (flush-func 'eshell-flush))
     (apply 'eshell-do-ead args)))
 
-;; j:eshell/ls
+(defcustom eshell-ead-initial-args nil
+  "If non-nil, this list of args is included before any call to `ead'.
+This is useful for enabling -w (show full path), for example."
+  :type '(repeat :tag "Arguments" string))
+(setq eshell-ead-initial-args '("-w"))
+
+;; See: j:eshell/ls
 (defun eshell-do-ead (&rest args)
   "Implementation of \"ead\" in Lisp, passing ARGS."
+  (funcall flush-func -1)
+  ;; (tv args)
   ;; Process the command arguments, and begin listing files.
   (eshell-eval-using-options
-   "ls" (if eshell-ls-initial-args
-            (list eshell-ls-initial-args args)
-          args)
-   '((?a "all" nil show-all
-         "do not ignore entries starting with .")
-     (?A "almost-all" nil show-almost-all
-         "do not list implied . and ..")
-     (?c nil by-ctime sort-method
-         "sort by last status change time")
-     (?d "directory" nil dir-literal
-         "list directory entries instead of contents")
-     (?k "kilobytes" 1024 block-size
-         "using 1024 as the block size")
-     (?h "human-readable" 1024 human-readable
-         "print sizes in human readable format")
-     (?H "si" 1000 human-readable
-         "likewise, but use powers of 1000 not 1024")
-     (?I "ignore" t ignore-pattern
-         "do not list implied entries matching pattern")
-     (?l nil long-listing listing-style
-         "use a long listing format")
-     (?n "numeric-uid-gid" nil numeric-uid-gid
-         "list numeric UIDs and GIDs instead of names")
-     (?r "reverse" nil reverse-list
-         "reverse order while sorting")
-     (?s "size" nil show-size
-         "print size of each file, in blocks")
-     (?t nil by-mtime sort-method
-         "sort by modification time")
-     (?u nil by-atime sort-method
-         "sort by last access time")
-     (?x nil by-lines listing-style
-         "list entries by lines instead of by columns")
-     (?C nil by-columns listing-style
-         "list entries by columns")
-     (?L "dereference" nil dereference-links
-         "list entries pointed to by symbolic links")
-     (?R "recursive" nil show-recursive
-         "list subdirectories recursively")
-     (?S nil by-size sort-method
-         "sort by file size")
-     (?U nil unsorted sort-method
-         "do not sort; list entries in directory order")
-     (?X nil by-extension sort-method
-         "sort alphabetically by entry extension")
-     (?1 nil single-column listing-style
-         "list one file per line")
-     (nil "dired" nil dired-flag
-          "Here for compatibility with GNU ls.")
+   "ead" (if eshell-ead-initial-args
+             (list eshell-ead-initial-args args)
+           args)
+   '(
+     ;; -w This consumed the pattern:
+     ;; (?w "show-full-path" t show-full-path
+     ;;     "show the full path of each result")
+     ;; This way it did not consume the pattern:
+     (?w "show-full-path" nil show-full-path
+         "show the full path of each result")
+     (?z "use-zgrep" nil use-zgrep
+         "search zipped files")
+     (?p "path-pcre" t path-pcre
+         "a pcre pattern to match the path")
+     (?i "case-insensitive" nil case-insensitive
+         "pattern is insensitive to case")
+     (?d "depth" t depth
+         "how many directories deep to search")
      (nil "help" nil nil
-          "show this usage display")
-     :external "ls"
-     :usage "[OPTION]... [FILE]...
-List information about the FILEs (the current directory by default).
-Sort entries alphabetically across.")
-   ;; setup some defaults, based on what the user selected
-   (unless block-size
-     (setq block-size eshell-ls-default-blocksize))
-   (unless listing-style
-     (setq listing-style 'by-columns))
+	      "show this usage screen")
+     ;; Oh wow!, :external actually works!. When I did ead "-l)" in eshell, eshell/ead thought it was an option and deferred to e:ead
+     :external "ead"
+     ;; :parse-leading-options-only
+     :usage "[OPTION]... [PATTERN]
+Writable grep for PATTERN (the current directory by default).")
+
    (unless args
-     (setq args (list ".")))
-   (let ((eshell-ls-exclude-regexp eshell-ls-exclude-regexp))
-     (when ignore-pattern
-       (unless (eshell-using-module 'eshell-glob)
-         (error (concat "-I option requires that `eshell-glob'"
-                        " be a member of `eshell-modules-list'")))
-       (set-text-properties 0 (length ignore-pattern) nil ignore-pattern)
-       (setq eshell-ls-exclude-regexp
-             (if eshell-ls-exclude-regexp
-                 (concat "\\(" eshell-ls-exclude-regexp "\\|"
-                         (eshell-glob-regexp ignore-pattern) "\\)")
-               (eshell-glob-regexp ignore-pattern))))
-     ;; list the files!
-     (eshell-ls-entries
-      (mapcar (lambda (arg)
-                (cons (if (and (eshell-under-windows-p)
-                               (file-name-absolute-p arg))
-                          (expand-file-name arg)
-                        arg)
-                      (eshell-file-attributes
-                       arg (if numeric-uid-gid 'integer 'string))))
-              args)
-      t (expand-file-name default-directory)))
+     ;; The default pattern argument, I guess
+     (setq args (list (sor (read-string-hist "ead <1:pattern>: ")))))
+   (unless args
+     (error "ead needs a pattern"))
+
+   (let ((extra-args))
+     (if use-zgrep
+         (setq extra-args (cons "-z" extra-args)))
+     (if case-insensitive
+         (setq extra-args (cons "-i" extra-args)))
+     (if depth
+         (setq extra-args (append (list "-d" depth) extra-args)))
+     (if path-pcre
+         (setq extra-args (append (list "-p" path-pcre) extra-args)))
+
+     (pen-wgrep (apply 'cmd-nice args) default-directory nil extra-args))
    (funcall flush-func)))
 
 (defun pen-str-add-line-numbers (s)

@@ -10,8 +10,13 @@
       ;; (pen-use-vterm (sps "bash-messages"))
       ;; (pen-use-term (sps "bash-messages"))
       (nw "bash-messages")
-    (itail "/tmp/shell-messages.log"
-           0))
+    (progn
+      (with-current-buffer
+          (itail "/tmp/shell-messages.log"
+                 0)
+        (itail-highlight)
+        (if (not org-link-minor-mode)
+            (org-link-minor-mode)))))
   ;; (sps (pen-cmd "bash-messages" filter))
 
   ;; (let ((shell-file-name "/bin/sh"))

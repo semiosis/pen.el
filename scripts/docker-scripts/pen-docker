@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# The pen-docker script was made for the pen script when it runs in debug mode because myeval doesn't have access to the function:
+# v +/"pen_eval() {" "$PENELD/scripts/pin"
+
+. $SCRIPTS/lib/hs
+
+pen_docker() {
+    # echo the environment passed to the command
+    printf -- "%s\n" docker "$@" | sed -z "s/--env\\n/--env /g" | grep -- --env | grep -v = | cut -d ' ' -f 2 | while read varname; do val="${!varname}"; if test -n "$val"; then echo "${varname}=$val"; fi; done | hls blue 1>&2
+
+    docker "$@"
+}
+
+pen_docker "$@"

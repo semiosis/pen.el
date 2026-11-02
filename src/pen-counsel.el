@@ -207,6 +207,8 @@ prompt additionally for EXTRA-AG-ARGS."
                        results)
             results))
          (url (fz results nil nil "fz-ddgr: ")))
+
+    
     (if (not (string-blank-p url))
         (if (interactive-p)
             (browse-url url)

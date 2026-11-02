@@ -215,6 +215,8 @@ This issue might be caused by:
 
 (add-hook 'c++-mode-hook 'maybe-lsp)
 (add-hook 'c-mode-hook #'maybe-lsp)
+;; I don't know where this was added. Maybe here? pa:pen-lsp-c
+(remove-hook 'c-mode-hook #'lsp)
 (add-hook 'c-ts-mode-hook #'maybe-lsp)
 (add-hook 'python-mode-hook 'maybe-lsp)
 (add-hook 'python-ts-mode-hook 'maybe-lsp)
@@ -251,6 +253,7 @@ This issue might be caused by:
 (add-hook 'typescript-mode-hook 'maybe-lsp)
 (add-hook 'haskell-mode-hook #'maybe-lsp)
 (add-hook 'prolog-mode-hook #'maybe-lsp)
+(remove-hook 'prolog-mode-hook #'lsp)
 (add-hook 'purescript-mode-hook 'maybe-lsp)
 
 ;; These modes are "clojure"

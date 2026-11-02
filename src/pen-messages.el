@@ -49,12 +49,4 @@ Activate this advice with:
 ;; Do it in j:switch-to-messages
 ;; (add-hook 'messages-buffer-mode-hook 'org-link-minor-mode)
 
-(defun l2-messages-buffer ()
-  "Return the \"*Level2-Messages*\" buffer.
-If it does not exist, create it and switch it to `messages-buffer-mode'."
-  (or (get-buffer "*Level2-Messages*")
-      (with-current-buffer (get-buffer-create "*Level2-Messages*")
-        (messages-buffer-mode)
-        (current-buffer))))
-
 (provide 'pen-messages)

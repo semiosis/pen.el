@@ -8,8 +8,23 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    # A verse reference in the 3 argument format
     -triarg) {
         export INT_SCRIPT_ARG_FORMAT=triarg
+        shift
+    }
+    ;;
+
+    # Could be a verse range or a book chapter
+    -refarg) {
+        export INT_SCRIPT_ARG_FORMAT=ref
+        shift
+    }
+    ;;
+
+    # Just a single verse reference
+    -versearg) {
+        export INT_SCRIPT_ARG_FORMAT=verse
         shift
     }
     ;;
@@ -28,10 +43,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+: "${INT_SCRIPT_ARG_FORMAT:="ref"}"
 
 arg_s="$@"
 
-if printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]'; then
+if test "$INT_SCRIPT_ARG_FORMAT" = ref || { printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]' && ! test "$INT_SCRIPT_ARG_FORMAT" = verse; } ; then
     shift "$#"
 
     IFS="
@@ -40,7 +56,7 @@ if printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]'; then
         while IFS="$IFS" read -r ref; do
             (
             exec 0</dev/null
-            ocif int "$ref" | awk 1
+            ocif -m "ONELINED=$ONELINED" int -versearg "$ref" | awk 1
             )
         done
     } | pavs
@@ -113,7 +129,13 @@ link="[[$url][$ref]]"
 
 org_templatify_maybe() {
     if test "$ORG_TEMPLATIFY" = "y"; then
-        pen-org-template-gen org
+        pen-org-template-gen org | {
+            if test "$ONELINED" = "y"; then
+                strongs-codes-relinkify
+            else
+                cat
+            fi
+        }
     else
         cat
     fi

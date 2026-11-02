@@ -98,22 +98,6 @@
 (defun pen-format-search-spec (spec query)
   (format-spec spec (format-spec-make ?s (url-hexify-string query))))
 
-(defun chrome (url &optional no_xurls force_xurls)
-  (interactive (list (read-string-hist "chrome: ")))
-  (pen-ns (concat "Chrome: " url))
-  (if force_xurls
-      (setq no_xurls nil))
-  (if (not no_xurls)
-      (let ((url_xurls (xurls url)))
-        (if (and (not (string-equal url url_xurls))
-                 (or force_xurls
-                     (and
-                      (interactive-p)
-                      (yn "xurls changed the url. Use xurls?"))))
-            (setq url url_xurls))))
-  (setq url (chomp url))
-  (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer pen-ssh-host-run-or-local-run chrome " (pen-q url)))) nil nil nil t))
-
 (defun play-song-chrome (url)
   (interactive (list (read-string-hist "chrome: ")))
   (chrome url nil t))
@@ -122,7 +106,7 @@
 (defengine github-advanced
            "https://github.com/search?q=%s&type=Code&ref=advsearch&l=GraphQL&l="
            :keybinding "H"
-           :browser 'chrome)
+           :browser 'carbonyl)
 
 (defengine github
   "https://github.com/search?ref=simplesearch&q=%s"

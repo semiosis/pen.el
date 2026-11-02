@@ -6,7 +6,8 @@
 # For the TMPDIR as there was a difficult to solve issue
 # where using upd to update the cache ended up with a different TMPDIR
 # and I don't yet know why exactly.
-TMPDIR="/root/.pen/tmp"
+TMPDIR="$HOME/.pen/tmp"
+# I still need to use $HOME rather than /root because the host uses ocif from the pen script when starting Pen.
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
