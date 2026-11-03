@@ -5,8 +5,6 @@
   (use-package ediprolog)
   (require 'ediprolog))
 
-(add-hook 'prolog-mode-hook #'lsp)
-
 ;; Also see pen-perl.el
 
 ;; TODO Start by making functions for constructing prolog databases 

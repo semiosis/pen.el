@@ -2365,6 +2365,15 @@ or an external command."
 	    (flush-func 'eshell-flush))
     (apply 'eshell-do-ead args)))
 
+(defsubst eshell/eat (&rest args)
+  "An alias version of `eshell-do-ead'."
+  (let ((insert-func 'eshell-buffered-print)
+	    (error-func 'eshell-error)
+	    (flush-func 'eshell-flush))
+
+    (setq args (append (list "-d" "10" "-b") args))
+    (apply 'eshell-do-ead args)))
+
 (defcustom eshell-ead-initial-args nil
   "If non-nil, this list of args is included before any call to `ead'.
 This is useful for enabling -w (show full path), for example."
@@ -2390,6 +2399,8 @@ This is useful for enabling -w (show full path), for example."
          "show the full path of each result")
      (?z "use-zgrep" nil use-zgrep
          "search zipped files")
+     (?b "use-word-boundaries" nil use-word-boundaries
+         "put word boundaries around the pattern")
      (?p "path-pcre" t path-pcre
          "a pcre pattern to match the path")
      (?i "case-insensitive" nil case-insensitive
@@ -2415,6 +2426,8 @@ Writable grep for PATTERN (the current directory by default).")
          (setq extra-args (cons "-z" extra-args)))
      (if case-insensitive
          (setq extra-args (cons "-i" extra-args)))
+     (if use-word-boundaries
+         (setq extra-args (cons "-b" extra-args)))
      (if depth
          (setq extra-args (append (list "-d" depth) extra-args)))
      (if path-pcre

@@ -45,6 +45,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 : "${INT_SCRIPT_ARG_FORMAT:="ref"}"
 
+if test "$INSIDE_EMACS" = "y" || btest "$INSIDE_EMACS" == "*,*"; then
+    NOEMACS=y
+    exec 2>/dev/null
+fi
+
+# taken from e:ebible
+if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',eshell$'; then
+    export NOEMACS=y
+    export BORDER=n
+    # export ONELINED=y
+    export DECORATED=y
+    # isstdoutpipe=0
+    export NO_PAGER=y
+    export ORG_TEMPLATIFY=y
+fi
+
 arg_s="$@"
 
 if test "$INT_SCRIPT_ARG_FORMAT" = ref || { printf -- "%s\n" "$arg_s" | grep -q -P '[,;-]' && ! test "$INT_SCRIPT_ARG_FORMAT" = verse; } ; then
@@ -56,7 +72,7 @@ if test "$INT_SCRIPT_ARG_FORMAT" = ref || { printf -- "%s\n" "$arg_s" | grep -q 
         while IFS="$IFS" read -r ref; do
             (
             exec 0</dev/null
-            ocif -m "ONELINED=$ONELINED" int -versearg "$ref" | awk 1
+            ocif -m "ONELINED=$ONELINED ORG_TEMPLATIFY=$ORG_TEMPLATIFY" int -versearg "$ref" | awk 1
             )
         done
     } | pavs
@@ -82,22 +98,6 @@ case "$INT_SCRIPT_ARG_FORMAT" in
     }
     ;;
 esac
-
-if test "$INSIDE_EMACS" = "y" || btest "$INSIDE_EMACS" == "*,*"; then
-    NOEMACS=y
-    exec 2>/dev/null
-fi
-
-# taken from e:ebible
-if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',eshell$'; then
-    export NOEMACS=y
-    export BORDER=n
-    # export ONELINED=y
-    export DECORATED=y
-    # isstdoutpipe=0
-    export NO_PAGER=y
-    export ORG_TEMPLATIFY=y
-fi
 
 # if test "$#" -eq 3; then
 # else

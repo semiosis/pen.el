@@ -253,7 +253,7 @@ This issue might be caused by:
 (add-hook 'typescript-mode-hook 'maybe-lsp)
 (add-hook 'haskell-mode-hook #'maybe-lsp)
 (add-hook 'prolog-mode-hook #'maybe-lsp)
-(remove-hook 'prolog-mode-hook #'lsp)
+(add-hook 'prolog-kb-mode-hook #'maybe-lsp)
 (add-hook 'purescript-mode-hook 'maybe-lsp)
 
 ;; These modes are "clojure"
