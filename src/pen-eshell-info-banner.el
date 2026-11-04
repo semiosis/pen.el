@@ -32,6 +32,13 @@
 (setq eshell-info-banner-progress-bar-char "#")
 
 
+;; What would actually be useful for an eshell banner (rather than battery level, or used memory) is
+;; information that might be useful on a printout.
+;; The date, for example.
+
+;; - Date
+;; - Computer it was done one
+
 (defun eshell-info-banner--display-battery (text-padding bar-length)
   "If the computer has a battery, display its level.
 
@@ -132,6 +139,7 @@ For TEXT-PADDING and BAR-LENGTH, see the documentation of
                                bar-length)))
     (concat ;; (format "%s\n" (eshell-info-banner--string-repeat eshell-info-banner-progress-bar-char
             ;;                                                   tot-width))
+            
             (format "%s: %s Kernel.: %s\n"
                     (s-pad-right left-padding
                                  " "

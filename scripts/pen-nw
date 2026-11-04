@@ -22,15 +22,7 @@ fi
 
 . $SCRIPTS/lib/stdin_exists
 
-if stdin_exists && test "$ispipe" -eq 0; then
-    # echo hi | pen-tm -sout -vipe sps "vipe" | v
-    CMD="$(cmd "$@")"
-    : ${CMD:="$(cmd "$@")"}
-    sn="$(p "$sn" | sed 's/pen-//')"
-    pen-tm -sout -vipe "$sn" "$CMD" | cat
-    exit "$?"
-fi
-
+fargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -E) {
@@ -91,12 +83,38 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # window name
+    -n) {
+        fargs+=("$1" "$2")
+        shift
+        shift
+    }
+    ;;
+
+    -*|--[a-z]*) {
+        fargs+=("$1")
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+# Any other arg goes to nw
+nwargs+=("${fargs[@]}")
 
 export TARGET
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if stdin_exists && test "$ispipe" -eq 0; then
+    # echo hi | pen-tm -sout -vipe sps "vipe" | v
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    sn="$(p "$sn" | sed 's/pen-//')"
+    pen-tm -sout -vipe "$sn" "${nwargs[@]}" "$CMD" | cat
+    exit "$?"
+fi
 
 if test "$iftty" = "y" && is_tty; then
     "$@"

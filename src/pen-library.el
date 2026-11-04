@@ -410,11 +410,16 @@ single-character strings, or a string of characters."
     `(
       cond
       ,@b)))
+;; (defalias 'switch 'pen-sw)
+(defalias 'switch 'switch)
 
 (defun test-sw ()
   (interactive)
   (etv
-   (sw "hello"
+   (pen-sw "hello"
+           ("hello" "hi")))
+  (etv
+   (pcase "hello"
      ("hello" "hi"))))
 
 (defun pen-format-plist-as-org (p &optional col1name col2name)
