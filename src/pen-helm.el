@@ -370,13 +370,15 @@ The completion method is determined by `completion-at-point-functions'."
     (helm-net--url-retrieve-sync
      request #'helm-google-suggest-parser)))
 
+;; So I have caching. Though, I want to also persistently cache elisp.
+;; Actually, I want ot 
 (setq helm-net-prefer-curl t)
 (setq helm-net-prefer-curl nil)
 
 (defun helm-net--url-retrieve-sync (request parser)
   (if helm-net-prefer-curl
       (with-temp-buffer
-        (apply #'call-process "curl"
+        (apply #'call-process (pen-nsfa (cmd "ocif" "curl"))
                nil `(t ,helm-net-curl-log-file) nil request helm-net-curl-switches)
         (funcall parser))
 

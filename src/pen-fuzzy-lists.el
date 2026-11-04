@@ -73,6 +73,10 @@
 
     (e fp)))
 
+(defun pen-org-template-gen (content-type content)
+  "content-type, for example 'text' or 'org'"
+  (pen-snc (pen-cmd "org-template-gen" content-type) content))
+
 (defun add-to-fuzzy-list-org (&optional sym-or-text lst)
   "Adds the symbol under cursor to the fuzzy list selected"
   (interactive (list
@@ -125,7 +129,7 @@
               (backward-char)
               (insert (concat "* " hn))
               (if (sor content)
-                  (insert (concat "\n" (pen-snc (pen-cmd "org-template-gen" "text") content))))
+                  (insert (concat "\n" (pen-org-template-gen "text" content))))
               (save-buffer)))))))
 
 (defun add-to-fuzzy-list-org-enter (&optional sym lst)

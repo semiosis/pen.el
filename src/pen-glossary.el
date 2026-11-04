@@ -76,6 +76,10 @@
         (if (sor definition)
             (insert
              (pen-qa
+              ;; (list2str
+              ;;  `("*Formatting* for j:pen-add-to-glossary-file-for-buffer."
+              ;;    ;; (pen-org-template-gen "org")
+              ;;    ,(format "+ definition :: [[%s]]" definition)))
               -p (pen-snc "pen-pretty-paragraph" (concat "    " definition))
               -n definition))
           (insert "    ")))

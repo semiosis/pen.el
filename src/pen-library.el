@@ -417,40 +417,103 @@ single-character strings, or a string of characters."
    (sw "hello"
      ("hello" "hi"))))
 
-(defmacro pen-qa (&rest body)
-  ""
-  (let ((m
-         (pen-list2str (cl-loop for i from 0 to (- (length body) 1) by 2
-                                collect
-                                (pp-oneline
-                                 (list
-                                  (try
-                                   (symbol-name
-                                    (nth i body))
-                                   (str
-                                    (nth i body)))
-                                  (nth (+ i 1) body))))))
-        (code
-         (cl-loop for i from 0 to (- (length body) 1) by 2
+(defun pen-format-plist-as-org (p &optional col1name col2name)
+  (pen-list2str
+   (append
+    (list
+     (format "| %s | %s"
+             (or col1name "Key")
+             (or col2name "Value"))
+     "|-")
+    (cl-loop for i from 0 to (- (length options) 1) by 2
+             collect
+             (format "| =%s= | %s"
+                     (s-right 1
+                              (try
+                               (symbol-name
+                                (nth i options))
+                               (str
+                                (nth i options))))
+                     (nth (+ i 1) options))))))
+
+;; TODO Make an version similar to pen-qa which prepares an org-mode file and lets you then enter the parameters
+;; and finally execute the command.
+;; This might work quite well with eshell.
+;; It would function similarly to a transient, I guess.
+;; But I should be able to execute multiple times from it before killing the form buffer.
+;; Some ideas of what would t call it:
+;; - command form
+;; - execution spec form
+
+(defun pen--qa (question options)
+  "If async-func is provided, then provide a button which when clicked will run
+`async-func` with the select option as its argument."
+
+  (setq question (or question ""))
+  (let ((visible-options
+         (pen-format-plist-as-org
+          (cl-loop for i from 0 to (- (length options) 1) by 2
+                   collect
+                   (list
+                    (format "=%s="
+                            (s-right 1
+                                     (try
+                                      (symbol-name
+                                       (nth i options))
+                                      (str
+                                       (nth i options)))))
+                    (nth (+ i 1) options)))
+          "Binding" "Option")))
+    (let ((r))
+      (save-window-excursion
+        (let ((pen-b (nbfs (list2str `("* j:pen-qa" ,question "" ,visible-options))
+                           (format "*pen-qa:%s*" (slugify (chomp question) t))
+                           'org-mode)))
+          (switch-to-buffer pen-b)
+
+          (with-current-buffer pen-b
+            (goto-char (point-max))
+            (org-table-align)
+            (goto-char (point-min)))
+
+          (setq r (read-key "Enter a char for the selection: "))
+          (kill-buffer pen-b)))
+
+      ;; If not C-g
+      (if (not (eq r 7))
+
+          ;; (comment
+          ;;  This extracted the second letter from a dash option such as -e
+          ;;  (cl-loop for i from 0 to (- (length options) 1) by 2
+          ;;           collect
+          ;;           (let ((first-one (nth i options))
+          ;;                 (second-one (nth (+ i 1) options)))
+          ;;             (list
+          ;;              (string-to-char
+          ;;               (string-reverse
+          ;;                (symbol-name
+          ;;                 first-one)))
+          ;;              second-one))))
+
+          (let ((selected-sym (intern (concat ":" (char-to-string r)))))
+            (plist-get options selected-sym))))))
+
+(defmacro pen-qa (&rest options)
+  (setq options
+        (flatten-once
+         (cl-loop for i from 0 to (- (length options) 1) by 2
                   collect
-                  (let ((fstone (nth i body))
-                        (sndone (nth (+ i 1) body)))
-                    (list
-                     (string-to-char
-                      (string-reverse
-                       (symbol-name
-                        fstone)))
-                     sndone)))))
-    (append
-     `(case
-          (let ((r))
-            (save-window-excursion
-              (let ((pen-b (nbfs ,m)))
-                (switch-to-buffer pen-b)
-                (setq r (read-key ""))
-                (kill-buffer pen-b)))
-            r))
-     code)))
+                  (list (str2sym
+                         (concat ":"
+                                 (s-right 1
+                                          (try
+                                           (symbol-name
+                                            (nth i options))
+                                           (str
+                                            (nth i options))))))
+                        (nth (+ i 1) options)))))
+
+  `(pen--qa nil ',options))
 
 ;; (defmacro pen-qa (&rest body)
 ;;   ""

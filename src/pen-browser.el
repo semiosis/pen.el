@@ -4,40 +4,54 @@
 
 (defun pen-emacs-web-browse (url &optional _new-window)
   (interactive (list (pen-web-history)))
+
   (let ((br
-         (pen-qa
-          -f "ff"
-          -e "eww"
-          -r "rdrview"
-          -w "w3m"
-          -b "browsh"
-          -y "carbonyl"
-          -l "elinks"
-          -d "elinks-dump"
-          -D "elinks-dump-chrome"
-          -B "ebrowsh"
-          -I "w3m"
-          -u "default"
-          -. "edit")))
+         (pen--qa
+          (list2str
+           `("*Select browser* for j:pen-emacs-web-browse."
+             ;; (pen-org-template-gen "org")
+             ,(format "+ url :: [[%s]]" url)))
+          (list
+           :f "ff"
+           :e (cond
+               ((string-match-p "www.reddit.com/r/" url) "eww (_not working_)")
+               (t "eww"))
+           :r "rdrview"
+           :w "w3m"
+           :b "browsh"
+           :y (cond
+               ((string-match-p "www.reddit.com/r/" url) "carbonyl (/recommended/)")
+               (t "carbonyl"))
+           :l "elinks"
+           :d "elinks-dump"
+           :D "elinks-dump-chrome"
+           :B "ebrowsh"
+           :I "w3m"
+           :u "default"
+           :. "edit"))))
 
-    (pcase br
-      ("eww" (eww-browse-url url _new-window))
-      ("w3m" (w3m-browse-url url _new-window))
-      ;; ("browsh" (nw (cmd "browsh" url) _new-window))
-      ("browsh" (browsh url))
-      ("carbonyl" (carbonyl url))
-      ("elinks" (elinks url))
-      ("elinks-dump-chrome" (elinks-dump-chrome url))
-      ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
-      ("rdrview" (rdrview url))
-      ("default" (browse-url-generic url _new-window))
-      ("elinks-dump" (sps (cmd "elinks-dump" url)))
-      ("ff" (sps (cmd "ff" url)))
-      ("edit" (j 'pen-emacs-web-browse))
+    (if br
+        (progn
+          (setq br (s-replace-regexp " .*" "" br))
 
-      ;; This opens tpop
-      ;; (_ (browse-url-generic url _new-window))
-      )))
+          (pcase br
+            ("eww" (eww-browse-url url _new-window))
+            ("w3m" (w3m-browse-url url _new-window))
+            ;; ("browsh" (nw (cmd "browsh" url) _new-window))
+            ("browsh" (browsh url))
+            ("carbonyl" (carbonyl url))
+            ("elinks" (elinks url))
+            ("elinks-dump-chrome" (elinks-dump-chrome url))
+            ("ebrowsh" (eval `(pen-use-vterm (pen-term (cmd "browsh" ,url)))))
+            ("rdrview" (rdrview url))
+            ("default" (browse-url-generic url _new-window))
+            ("elinks-dump" (sps (cmd "elinks-dump" url)))
+            ("ff" (sps (cmd "ff" url)))
+            ("edit" (j 'pen-emacs-web-browse))
+
+            ;; This opens tpop
+            ;; (_ (browse-url-generic url _new-window))
+            )))))
 
 (defun pen-smart-choose-browser-function (url &optional _new-window)
   (cond ((minor-mode-p pen-rdrview-minor-mode) (rdrview url))
