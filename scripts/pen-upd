@@ -17,6 +17,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -ask-i) {
+        export ASK_UPDATE_NET=y
+        shift
+    }
+    ;;
+
     -i) {
         export UPDATE_NET=y
         shift
@@ -67,6 +73,13 @@ else
     CMD="$(cmd "$@")"
 fi
 
+if test "$ASK_UPDATE_NET" = "y"; then
+    do_upd_net="$(code-out intty yn "Run with 'UPDATE_NET=y' (y) or without 'UPDATE_NET=y'? (n)\n CMD: $CMD")"
+    if test "$do_upd_net" = "0"; then
+        do_upd_net=y
+    fi
+fi
+
 if test "$do_yn" = "y"; then
     do_upd="$(code-out intty yn "Run with 'UPDATE=y' (y) or without 'UPDATE=y'? (n)\n CMD: $CMD")"
     if test "$do_upd" = "0"; then
@@ -76,6 +89,13 @@ if test "$do_yn" = "y"; then
     fi
 else
     do_upd=y
+fi
+
+if test "$do_upd_net" = "y"; then
+    export UPDATE=y
+    export UPDATE_NET=y
+else
+    :
 fi
 
 if test "$do_upd" = "y"; then

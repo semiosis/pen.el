@@ -410,8 +410,10 @@ single-character strings, or a string of characters."
     `(
       cond
       ,@b)))
+
 ;; (defalias 'switch 'pen-sw)
-(defalias 'switch 'switch)
+;; I think this broke things
+;; (defalias 'switch 'switch)
 
 (defun test-sw ()
   (interactive)

@@ -22,7 +22,11 @@ l  zcd ~/.emacs.d/host/ilambda
 x  zcd ~/.emacs.d/host/examplary
 D  zcd ~/.emacs.d/host/dni
 w  sp ~/.emacs.d/host/pen.el/src/pen.el
-pq zcd ~/.emacs.d/host/pen.el
+# pq zcd ~/.emacs.d/host/pen.el
+# o  zcd ~/.emacs.d/host/notes-on-sermons
+t  zcd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology
+pq zcd /volumes/home/shane/var/smulliga/source/git/semiosis/pen.el
+pq zcd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons
 v  zcd ~/.emacs.d/host/metaverses
 V  zcd ~/.emacs.d/host/protoverses
 H  zcd ~/.emacs.d/host/imaginary-programming-thesis
@@ -33,10 +37,8 @@ R  zcd ~/.emacs.d/host/rhizome
 f  zcd ~/.emacs.d/host/pen.el/src
 X  sp ~/.emacs.d/host/pen.el/src/pen-examplary.el
 d  zcd ~/.emacs.d/host/prompt-design-patterns
-t  zcd ~/.emacs.d/host/personalities
 I  zcd ~/.emacs.d/host/incarnations
 T  zcd ~/.emacs.d/host/tomes
-o  zcd ~/.emacs.d/host/notes-on-sermons
 O  zcd ~/.emacs.d/host/openai-complete-clj
 m  zcd ~/.emacs.d/host/engines
 n  zcd ~/.emacs.d/host/interpreters
@@ -72,7 +74,13 @@ case "$d" in
     x) cmd="zcd ~/.emacs.d/host/examplary" ;;
     D) cmd="zcd ~/.emacs.d/host/dni" ;;
     w) cmd="sp ~/.emacs.d/host/pen.el/src/pen.el" ;;
-    p|q) cmd="zcd ~/.emacs.d/host/pen.el" ;;
+    # p|q) cmd="zcd ~/.emacs.d/host/pen.el" ;;
+    # o) cmd="zcd ~/.emacs.d/host/notes-on-sermons" ;;
+    # t) cmd="zcd ~/.emacs.d/host/personalities" ;;
+    p|q) cmd="zcd /volumes/home/shane/var/smulliga/source/git/semiosis/pen.el" ;;
+    o) cmd="zcd /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons" ;;
+    t) cmd="zcd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology" ;;
+
     v) cmd="zcd ~/.emacs.d/host/metaverses" ;;
     V) cmd="zcd ~/.emacs.d/host/protoverses" ;;
     H) cmd="zcd ~/.emacs.d/host/imaginary-programming-thesis" ;;
@@ -83,7 +91,6 @@ case "$d" in
     f) cmd="zcd ~/.emacs.d/host/pen.el/src" ;;
     X) cmd="sp ~/.emacs.d/host/pen.el/src/pen-examplary.el" ;;
     # o) cmd="zcd ~/.emacs.d/host/prompts" ;;
-    o) cmd="zcd ~/.emacs.d/host/notes-on-sermons" ;;
     O) cmd="zcd ~/.emacs.d/host/openai-complete-clj" ;;
     m) cmd="zcd ~/.emacs.d/host/engines" ;;
     n) cmd="zcd ~/.emacs.d/host/interpreters" ;;
@@ -94,7 +101,6 @@ case "$d" in
     j) cmd="zcd ~/.emacs.d/host/pen-contrib.el" ;;
     i) cmd="zcd ~/.emacs.d/host/openai-api.el" ;;
     d) cmd="zcd ~/.emacs.d/host/prompt-design-patterns" ;;
-    t) cmd="zcd ~/.emacs.d/host/personalities" ;;
     I) cmd="zcd ~/.emacs.d/host/incarnations" ;;
     T) cmd="zcd ~/.emacs.d/host/tomes" ;;
     # t) cmd="zcd ~/.emacs.d/host/openai-classification-training-data" ;;

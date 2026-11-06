@@ -114,48 +114,52 @@ For TEXT-PADDING and BAR-LENGTH, see the documentation of
 (defun eshell-info-banner ()
   "Banner for Eshell displaying system information."
   (let* ((default-directory (if eshell-info-banner-tramp-aware default-directory "~"))
-         (system-info       (eshell-info-banner--get-os-information))
-         (os                (car system-info))
-         (kernel            (cdr system-info))
-         (hostname          (if  eshell-info-banner-tramp-aware
-                                (or (file-remote-p default-directory 'host) (system-name))
-                              (system-name)))
-         (uptime             (eshell-info-banner--get-uptime))
-         (partitions         (eshell-info-banner--get-mounted-partitions))
-         (left-padding       (eshell-info-banner--get-longest-path partitions))
-         (left-text          (max (length os)
-                                  (length hostname)))
-         (left-length        (+ left-padding 2 left-text)) ; + ": "
-         (right-text         (+ (length "Kernel: ")
-                                (max (length uptime)
-                                     (length kernel))))
-         (tot-width          (max (+ left-length right-text 3)
-                                  eshell-info-banner-width))
-         (middle-padding     (- tot-width right-text left-padding 4))
+         (system-info (eshell-info-banner--get-os-information))
+         (os (car system-info))
+         (kernel (cdr system-info))
+         (hostname (if eshell-info-banner-tramp-aware
+                       (or (file-remote-p default-directory 'host) (system-name))
+                     (system-name)))
+         (uptime (eshell-info-banner--get-uptime))
+         (partitions (eshell-info-banner--get-mounted-partitions))
+         (left-padding (eshell-info-banner--get-longest-path partitions))
+         (left-text (max (length os)
+                         (length hostname)))
+         (left-length (+ left-padding 2 left-text)) ; + ": "
+         (right-text (+ (length "Kernel: ")
+                        (max (length uptime)
+                             (length kernel))))
+         (tot-width (max (+ left-length right-text 3)
+                         eshell-info-banner-width))
+         (middle-padding (- tot-width right-text left-padding 4))
 
-         (bar-length         (- tot-width left-padding 4 23))
-         (bar-length         (if (equal eshell-info-banner-file-size-flavor 'iec)
-                                 (- bar-length 4)
-                               bar-length)))
+         (bar-length (- tot-width left-padding 4 23))
+         (bar-length (if (equal eshell-info-banner-file-size-flavor 'iec)
+                         (- bar-length 4)
+                       bar-length)))
     (concat ;; (format "%s\n" (eshell-info-banner--string-repeat eshell-info-banner-progress-bar-char
-            ;;                                                   tot-width))
-            
-            (format "%s: %s Kernel.: %s\n"
-                    (s-pad-right left-padding
-                                 " "
-                                 "OS")
-                    (s-pad-right middle-padding " " (eshell-info-banner--with-face os :weight 'bold))
-                    kernel)
-            (format "%s: %s Uptime.: %s\n"
-                    (s-pad-right left-padding " " "Hostname")
-                    (s-pad-right middle-padding " " (eshell-info-banner--with-face hostname :weight 'bold))
-                    uptime)
-            (eshell-info-banner--display-battery left-padding bar-length)
-            (eshell-info-banner--display-memory left-padding bar-length)
-            (eshell-info-banner--display-partitions left-padding bar-length)
-            ;; (format "\n%s\n" (eshell-info-banner--string-repeat eshell-info-banner-progress-bar-char
-            ;;                                                     tot-width))
-            )))
+     ;;                                                   tot-width))
+     (format "%s: %s\n"
+             (s-pad-right left-padding
+                          " "
+                          "Date")
+             (s-pad-right middle-padding " " (eshell-info-banner--with-face (date) :weight 'bold)))
+     (format "%s: %s Kernel.: %s\n"
+             (s-pad-right left-padding
+                          " "
+                          "OS")
+             (s-pad-right middle-padding " " (eshell-info-banner--with-face os :weight 'bold))
+             kernel)
+     (format "%s: %s Uptime.: %s\n"
+             (s-pad-right left-padding " " "Hostname")
+             (s-pad-right middle-padding " " (eshell-info-banner--with-face hostname :weight 'bold))
+             uptime)
+     (eshell-info-banner--display-battery left-padding bar-length)
+     (eshell-info-banner--display-memory left-padding bar-length)
+     (eshell-info-banner--display-partitions left-padding bar-length)
+     ;; (format "\n%s\n" (eshell-info-banner--string-repeat eshell-info-banner-progress-bar-char
+     ;;                                                     tot-width))
+     )))
 
 (defun eshell-info-banner--progress-bar (length percentage &optional invert)
   "Display a progress bar LENGTH long and PERCENTAGE full.
@@ -185,5 +189,16 @@ critical levels close to 0 rather than 100."
                                     :inherit 'eshell-info-banner-background-face)
      ;; (eshell-info-banner--with-face "]" :weight 'bold)
      )))
+
+(setq eshell-hist-ignoredups t)
+(setq eshell-cmpl-cycle-completions nil)
+(setq eshell-cmpl-ignore-case t)
+(setq eshell-ask-to-save-history (quote always))
+(setq eshell-prompt-regexp "❯❯❯ ")
+(setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
+
+;; TODO Make something to bring up this banner independently
+(eshell-info-banner-update-banner)
+(defalias 'banner 'eshell-info-)
 
 (provide 'pen-eshell-info-banner)

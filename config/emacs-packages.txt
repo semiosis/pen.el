@@ -2424,3 +2424,5 @@ esh-buf-stack
 consult-yasnippet
 nhexl-mode
 vimish-fold
+vimgolf
+vim-empty-lines-mode

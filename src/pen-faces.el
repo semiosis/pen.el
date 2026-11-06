@@ -1913,6 +1913,15 @@ Also see option `magit-blame-styles'."
                             org-level-4
                             org-level-5
 
+                            outline-1
+                            outline-2
+                            outline-3
+                            outline-4
+                            outline-5
+                            outline-6
+                            outline-7
+                            outline-8
+
                             message-header-name
 
                             mode-line-active

@@ -51,7 +51,7 @@ if test "$do_fail" = y || ! { test -s "$output_fp" && test -n "$(cat "$output_fp
 
     if test "$do_pause" = "y"; then
         if nw -w -n "<alert-pipe-failure--retry?>" yn "<alert-pipe-failure--retry?>\n\n$(cmd pipe-in "$input_fp") $CMD"; then
-            cat "$input_fp" | "$sn" "${oargs[@]}"
+            cat "$input_fp" | upd -ask-i "$sn" "${oargs[@]}"
             exit "$?"
         fi
     fi

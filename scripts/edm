@@ -1,6 +1,11 @@
 #!/bin/bash
 export TTY
 
+# I empty the X11 DISPLAY variable to disable the clipboard
+# so that ved does not interfere with the system clipboard.
+original_display="$DISPLAY"
+export DISPLAY=
+
 # set -xv
 
 . $SCRIPTS/lib/hs
@@ -30,6 +35,13 @@ pattern=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -n) {
         printf -- "%s\n" "    -c $(aqfd ":norm! $2") \\"
+        shift
+        shift
+    }
+    ;;
+
+    -cb) {
+        enable_clipboard=y
         shift
         shift
     }
@@ -125,6 +137,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+if test "$enable_clipboard" = "y"; then
+    export DISPLAY="$original_display"
+fi
 
 for var in "$@"
 do

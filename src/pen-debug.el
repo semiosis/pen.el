@@ -150,7 +150,11 @@
   (if (symbolp p)
       (setq p (str p)))
 
-  (let ((package_path (s-replace-regexp "\\.elc$" ".el" (locate-library p))))
+  (let ((package_path (s-replace-regexp "\\.elc$" ".el"
+                                        (locate-library p)
+                                        ;; (or (locate-library p)
+                                        ;;     (error (format "Could not locate library '%s'" p)))
+                                        )))
 
     (setq package_path
           (cond

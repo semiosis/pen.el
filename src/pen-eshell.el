@@ -31,11 +31,6 @@
 (setq eshell-prompt-regexp "❯❯❯ ")
 (setq eshell-prompt-regexp "^[^#$\n]* [#$] ")
 
-;; TODO Make something to bring up this banner independently
-(eshell-info-banner-update-banner)
-
-(defalias 'banner 'eshell-info-)
-
 (require 'em-script)
 
 ;; https://www.howardism.org/Technical/Emacs/eshell-fun.html
