@@ -34895,30 +34895,45 @@ Concordance (102 entries)
 
 ** Journal <2026-11-11 Wed 00:39>
 
-+ https://www.reddit.com/r/aiwars/comments/1xslo9m/for_antis_is_classifiers_training_also_stealing/ :: 
++ https://www.reddit.com/r/aiwars/comments/1xslo9m/for_antis_is_classifiers_training_also_stealing/ ::
 
     A few thoughts:
-    
+
     I don't know if there is a one size fits all answer to your question because the data may be made available under different conditions. Some data may be freely available because and some may be provided under certain conditions.
-    
-    When a person A advertises their artwork by putting a thumbnail of the image of an artwork on the internet for others to see before they make a purchase, when they are trying to sell their wares and earn some honest money online and do not intend on giving away their artwork freely, they have provided a thumbnail in good faith with fair expectation for fair remuneration.
-    
+
+    When "person A" advertises their artwork by putting a thumbnail of the image of an artwork on the internet for others to see before they make a purchase, when they are trying to sell their wares and earn some honest money online and do not intend on giving away their artwork freely, they have provided a thumbnail in good faith with fair expectation for fair remuneration.
+
     Or perhaps a very low bitrate version of music was put online for someone to have a listen to before they make a purchase, for example, and that is done in good faith.
-    
+
     But then if someone else (person B) rather than buying artwork, invests in a big and powerful computer with which they can get the value they want from other people's work without paying for it, then uses their powerful computing technology to "circumvent needing to purchase the artwork" in order to get at the value, and simply isn't providing fair compensation, they are just not playing by the same rules anymore. Person A was participating in the economy by the rules and has been exploited.
-    
+
     In this city in which I live there is a "good faith" system where people leave books in outdoor bookshelves where people may freely take and leave books and the system runs expecting people to generally do the right thing.
-    
+
     But if there was a super villain who found away to "take all the books" before anyone could protest (or put in regulation) is that person legally in the right for doing so? Maybe by inadequate laws which did not prohibit it. But are they morally in the right? I doubt it. Or perhaps what the weightier matters of the law were ignored.
-    
+
     #+BEGIN_QUOTE
       *[[https://www.biblegateway.com/passage/?search=Matthew%2023%3A23&version=ESV][Matthew 23:23]]* - Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness. These you ought to have done, without neglecting the others. (ESV)
     #+END_QUOTE
-    
+
     Given a foundation model that has been built on dishonest gain done very rapidly, then the mere continued existence of such models causes even more problems because it sets a precedent for further dishonest gain. Saying the "cat's out of the bag" is not an excuse. Having stolen is not an excuse to not give back (or delete the stolen data). Fear that someone else is not going to act morally is not an excuse to not act morally.
-    
+
     In this parable by Jesus, the man BOUGHT the field to get the treasure. An unrighteous person would try to extract the treasure (weights) without buying the field (the data).
-    
+
     #+BEGIN_QUOTE
       *[[https://www.biblegateway.com/passage/?search=Matthew%2013%3A44&version=ESV][Matthew 13:44]]* - The kingdom of heaven is like treasure hidden in a field, which a man found and covered up. Then in his joy he goes and sells all that he has and buys that field. (ESV)
-    #+END_QUOTE 
+    #+END_QUOTE
+
+    (btw I'm not saying that training weights are more valuable than the original data but just that if that's what someone considers is where the value is and it's part of someone else's "field" then the field should be bought before taking the treasure.)
+
+    But especially for business, I think that to require people to pay for data which is presented as for sale in the first place should be law and enforceable. Simply scraping the web, compressing the data into a neural network and then serving it back to the web is definitely stealing, I think. Just because something is easy to do, that still doesn't make it OK.
+
+    And if the original data is provided with certain conditions of usage then training on data shouldn't liberate the model from those conditions but any model trained on the data should be honoring the license of the data rather than disregarding it.
+
+    For example, a model trained on GPL3 licensed code should itself be released as GPL3, rather than circumventing its license. Training a model on the data is still actually copying the data. The data has to be read and copied for the data to be trained on and so the model that trained on the GPL3 code is a derived work.
+
+    https://www.gnu.org/licenses/gpl-faq.html
+
+    A couple of points:
+
+    - If something was presented as for sale then to get at the value someone wants out of it, they should really buy it as offered otherwise it's immoral.
+    - Whatever license accompanied the data should be propagated with with model which trained on it, not merely the data be propagated with the model, but also the model should carry the conditions of usage that the data it trained on carried.
