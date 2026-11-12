@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# . $SCRIPTS/lib/hs
+
+if test "$#" -eq 0; then
+    {
+        echo "days-since \$1"
+        echo "\$1=YYYY-MM-DD"
+    } | hls red 1>&2
+    exit 1
+fi
+
+date1=$(date --date "$1" +%s)
+date2=$(date --date now +%s)
+echo "$(( (date2-date1)/(3600*24) ))"
