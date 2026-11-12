@@ -198,7 +198,7 @@ prompt additionally for EXTRA-AG-ARGS."
     (eww result)))
 
 (defun fz-ddgr (query &optional url-filter-pattern)
-  (interactive (list (read-string-hist "fz-ddgr: ")))
+  (interactive (list (read-string-hist "fz-ddgr: " (sor (pen-selected-text t)))))
 
   (let* ((results (ddgr query))
          (results

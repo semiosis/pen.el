@@ -574,4 +574,20 @@ currently selected file in ranger. `IGNORE-HISTORY' will not update history-ring
                           (other-window 1))))
                      (ranger-find-file find-name))))))
 
+;; TODO Try to figure out why mx:deer is going to
+;; a random item in the dired list when it goes up a directory
+;; j:ranger-up-directory
+(comment
+ (defun ranger-up-directory ()
+   "Move to parent directory."
+   (interactive)
+   (let* ((current (expand-file-name default-directory))
+          (parent (ranger-parent-directory current)))
+     (if (string= parent current)
+         (when (eq system-type 'windows-nt)
+           (ranger-show-drives))
+       (progn
+         (ranger-find-file parent)
+         (dired-goto-file current))))))
+
 (provide 'pen-ranger)
