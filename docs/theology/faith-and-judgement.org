@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-14 Sat 22:34>
+#+DATE: <2026-11-15 Sun 08:02>
 
 #+KEYWORDS: faith christianity
 
@@ -5277,6 +5277,34 @@ When someone begins and continues on by faith in Jesus Christ calling on God as 
 
 To abide in Jesus means not only to be in Jesus but also it means to have not departed (See: [[https://github.com/semiosis/thoughts-on-theology/blob/master/abiding.org][abiding.org]]).
 - https://billmounce.com/greek-dictionary/meno
+
+The Apostle John instructs his disciples to *abide (remain) in Christ [so] that* when He appears we might have bldness and not be ashamed before Him:
+
+#+BEGIN_QUOTE
+  + [[https://biblehub.com/interlinear/1_john/2-28.htm][I John 2:28]] (Interlinear) ::
+      | Strongs Code | Transliteration | Greek       | Translation     | Grammar   |
+      |--------------+-----------------+-------------+-----------------+-----------|
+      | [[strongs:G2532][G2532]]        | Kai             | Καὶ         | And             | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+      | [[strongs:G3568][G3568]]        | nyn             | νῦν ,       | now             | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+      | [[strongs:G5040][G5040]]        | teknia          | τεκνία ,    | little children | [[https://biblehub.com/grammar/n-vnp.htm][N-VNP]]     |
+      | [[strongs:G3306][G3306]]        | menete          | μένετε      | *abide*           | [[https://biblehub.com/grammar/v-pma-2p.htm][V-PMA-2P]]  |
+      | [[strongs:G1722][G1722]]        | en              | ἐν          | *in*              | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+      | [[strongs:G846][G846]]         | autō            | αὐτῷ ,      | *him*             | [[https://biblehub.com/grammar/ppro-dm3s.htm][PPro-DM3S]] |
+      | [[strongs:G2443][G2443]]        | hina            | ἵνα         | *that*            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+      | [[strongs:G1437][G1437]]        | ean             | ἐὰν         | when            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+      | [[strongs:G5319][G5319]]        | phanerōthē      | φανερωθῇ    | he appears      | [[https://biblehub.com/grammar/v-asp-3s.htm][V-ASP-3S]]  |
+      | [[strongs:G2192][G2192]]        | schōmen         | σχῶμεν      | we might have   | [[https://biblehub.com/grammar/v-asa-1p.htm][V-ASA-1P]]  |
+      | [[strongs:G3954][G3954]]        | parrēsian       | παρρησίαν , | boldness        | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]     |
+      | [[strongs:G2532][G2532]]        | kai             | καὶ         | and             | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+      | [[strongs:G3361][G3361]]        | mē              | μὴ          | not             | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+      | [[strongs:G153][G153]]         | aischynthōmen   | αἰσχυνθῶμεν | be ashamed      | [[https://biblehub.com/grammar/v-asp-1p.htm][V-ASP-1P]]  |
+      | [[strongs:G575][G575]]         | ap’             | ἀπ’         | before          | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+      | [[strongs:G846][G846]]         | autou           | αὐτοῦ ,     | him             | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]] |
+      | [[strongs:G1722][G1722]]        | en              | ἐν          | at              | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+      | [[strongs:G3588][G3588]]        | tē              | τῇ          | the             | [[https://biblehub.com/grammar/art-dfs.htm][Art-DFS]]   |
+      | [[strongs:G3952][G3952]]        | parousia        | παρουσίᾳ    | coming          | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]     |
+      | [[strongs:G846][G846]]         | autou           | αὐτοῦ .     | of him          | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]] |
+#+END_QUOTE
 
 And a person who loves Jesus Christ *will be* law-abiding by the law of Christ Jesus meaning that they *will be sanctified*, and that's a promise:
 
@@ -10565,6 +10593,10 @@ Jesus, the friend of sinners? I don't think so. But He is the friend of those wh
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%2015%3A14&version=ESV][John 15:14]]* - You are my friends if you do what I command you. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Matthew%2011%3A18-20&version=ESV][Matthew 11:18-20]]* - For John came neither eating nor drinking, and they say, He has a demon. The Son of Man came eating and drinking, and they say, Look at him! A glutton and a drunkard, a friend of tax collectors and sinners! Yet wisdom is justified by her deeds. Then he began to denounce the cities where most of his mighty works had been done, because they did not repent. (ESV)
 #+END_QUOTE
 
 As someone who is believing, Paul when speaking this is no longer sinning (and a person who is no longer sinning is not a sinner but is rather, a believer):
