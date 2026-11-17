@@ -445,6 +445,10 @@
       (apply 'call-process args))
     (buffer-string)))
 
+(defun pen-search-forward-regexp (pattern &optional bound noerror count)
+  (interactive (list (read-string-hist "pen-re-search-forward pattern: ")))
+  (re-search-forward pattern bound noerror count))
+
 (defun bible-mode-display-final-tidy (&optional query)
   (save-excursion
     (beginning-of-buffer)
@@ -544,12 +548,12 @@
                              )
 
           )
-                  ;; This runs once per line to produce the right purple margin
-          (pen-magit-make-margin-overlay
-           (concat "  "
-                   (magit--propertize-face
-                    (bible-verse-margin-status)
-                    'pen-magit-right-margin-face))))
+        ;; This runs once per line to produce the right purple margin
+        (pen-magit-make-margin-overlay
+         (concat "  "
+                 (magit--propertize-face
+                  (bible-verse-margin-status)
+                  'pen-magit-right-margin-face))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 
@@ -1056,6 +1060,22 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          (pen-snc
           (concat
            "decorated onelined "
+           (bible-mode-copy-link text)
+           " | cat"))))
+
+    (if (interactive-p)
+        (xc link)
+      link)))
+
+(defun bible-mode-copy-link-decorated-strongs (&optional text)
+  "Follows the hovered verse in a `bible-search-mode' buffer,
+creating a new `bible-mode' buffer positioned at the specified verse."
+  (interactive (list (thing-at-point 'line t)))
+
+  (let ((link
+         (pen-snc
+          (concat
+           "ano decorated onelined "
            (bible-mode-copy-link text)
            " | cat"))))
 
@@ -1983,6 +2003,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
 (define-key bible-mode-map (kbd "/") 'fz-ddgr-bibleverse)
 (define-key bible-mode-map (kbd "W") 'bible-mode-copy-link-decorated)
+(define-key bible-mode-map (kbd "A") 'bible-mode-copy-link-decorated-strongs)
 (define-key bible-mode-map (kbd "R") 'bible-mode-copy-ref-decorated-hyperlinked)
 (define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 

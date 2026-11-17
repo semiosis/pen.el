@@ -112,13 +112,13 @@ ruth_long_name = "Ruth"
 ruth_verbose_name = "Ruth"
 ruth_name = { ruth_verbose_name / ruth_long_name / ruth_short_name }
 
-i_samuel_short_name = "1 Sam" "1 Sm" "1 Sa" "I Sam" "I Sa" "1Sam" "1Sa" "1S"
-i_samuel_long_name = "I Samuel" "1 Samuel" "First Sam" "1st Sam"
-i_samuel_verbose_name = "1st Samuel" "First Samuel"
+i_samuel_short_name = "1 Sam" / "1 Sm" / "1 Sa" / "I Sam" / "I Sa" / "1Sam" / "1Sa" / "1S"
+i_samuel_long_name = "I Samuel" / "1 Samuel" / "First Sam" / "1st Sam"
+i_samuel_verbose_name = "1st Samuel" / "First Samuel"
 i_samuel_name = { i_samuel_verbose_name / i_samuel_long_name / i_samuel_short_name }
 
-ii_samuel_short_name = "2 Sam" "2 Sm" "2 Sa" "II Sam" "II Sa" "2Sam" "2Sa" "2S"
-ii_samuel_long_name = "II Samuel" "2 Samuel" "Second Sam" "2nd Sam"
+ii_samuel_short_name = "2 Sam" / "2 Sm" / "2 Sa" / "II Sam" / "II Sa" / "2Sam" / "2Sa" / "2S"
+ii_samuel_long_name = "II Samuel" / "2 Samuel" / "Second Sam" / "2nd Sam"
 ii_samuel_verbose_name = "2nd Samuel" "Second Samuel"
 ii_samuel_name = { ii_samuel_verbose_name / ii_samuel_long_name / ii_samuel_short_name }
 
@@ -132,14 +132,14 @@ ii_kings_long_name = "II Kings" / "2 Kings" /  "Second Kgs" / "2nd Kgs"
 ii_kings_verbose_name = "2nd Kings" / "Second Kings"
 ii_kings_name = { ii_kings_verbose_name / ii_kings_long_name / ii_kings_short_name }
 
-i_chronicles_short_name = "1 Chr" "1 Ch" "1Chron" "1Chr" "I Chr" "I Ch"
-i_chronicles_long_name = "I Chronicles" "1 Chronicles" "1 Chron" "I Chron" "1st Chron" "First Chron"
-i_chronicles_verbose_name = "1st Chronicles" "First Chronicles" "1st Chronicles" 
+i_chronicles_short_name = "1 Chr" / "1 Ch" / "1Chron" / "1Chr" / "I Chr" / "I Ch"
+i_chronicles_long_name = "I Chronicles" / "1 Chronicles" / "1 Chron" / "I Chron" / "1st Chron" / "First Chron"
+i_chronicles_verbose_name = "1st Chronicles" / "First Chronicles" / "1st Chronicles" 
 i_chronicles_name = { i_chronicles_verbose_name / i_chronicles_long_name / i_chronicles_short_name }
 
-ii_chronicles_short_name = "2 Chr" "2 Ch" "2Chron" "2Chr" "II Chr" "II Ch"
-ii_chronicles_long_name = "II Chronicles" "2 Chronicles" "2 Chron" "II Chron" "2nd Chron" "Second Chron"
-ii_chronicles_verbose_name = "2nd Chronicles" "Second Chronicles" "2nd Chronicles" 
+ii_chronicles_short_name = "2 Chr" / "2 Ch" / "2Chron" / "2Chr" / "II Chr" / "II Ch"
+ii_chronicles_long_name = "II Chronicles" / "2 Chronicles" / "2 Chron" / "II Chron" / "2nd Chron" / "Second Chron"
+ii_chronicles_verbose_name = "2nd Chronicles" / "Second Chronicles" / "2nd Chronicles" 
 ii_chronicles_name = { ii_chronicles_verbose_name / ii_chronicles_long_name / ii_chronicles_short_name }
 
 ezra_short_name = "Ezr" / "Ez"
@@ -301,12 +301,12 @@ romans_verbose_name = "Romans"
 romans_name = { romans_verbose_name / romans_long_name / romans_short_name }
 
 i_corinthians_short_name = "1 Cor" / "1 Co" / "I Cor" / "I Co" / "1Cor" / "1Co"
-i_corinthians_long_name = "1Corinthians" / "I Corinthians" "1 Corinthians"
+i_corinthians_long_name = "1Corinthians" / "I Corinthians" / "1 Corinthians"
 i_corinthians_verbose_name = "1st Corinthians" / "First Corinthians"
 i_corinthians_name = { i_corinthians_verbose_name / i_corinthians_long_name / i_corinthians_short_name }
 
 ii_corinthians_short_name = "2 Cor" / "2 Co" / "II Cor" / "II Co" / "2Cor" / "2Co"
-ii_corinthians_long_name = "2Corinthians" / "II Corinthians" "2 Corinthians"
+ii_corinthians_long_name = "2Corinthians" / "II Corinthians" / "2 Corinthians"
 ii_corinthians_verbose_name = "2nd Corinthians" / "First Corinthians"
 ii_corinthians_name = { ii_corinthians_verbose_name / ii_corinthians_long_name / ii_corinthians_short_name }
 
@@ -341,12 +341,12 @@ ii_thessalonians_verbose_name = "2nd Thessalonians" / "First Thessalonians"
 ii_thessalonians_name = { ii_thessalonians_verbose_name / ii_thessalonians_long_name / ii_thessalonians_short_name }
 
 i_timothy_short_name = "1 Tim" / "1 Ti" / "I Tim" / "I Ti" / "1Timothy" / "1Tim" / "1Ti"
-i_timothy_long_name = "I Timothy" / "1 Timothy" / "1Timothy" "1st Tim"
+i_timothy_long_name = "I Timothy" / "1 Timothy" / "1Timothy" / "1st Tim"
 i_timothy_verbose_name = "1st Timothy" / "First Timothy"
 i_timothy_name = { i_timothy_verbose_name / i_timothy_long_name / i_timothy_short_name }
 
 ii_timothy_short_name = "2 Tim" / "2 Ti" / "II Tim" / "II Ti" / "2Timothy" / "2Tim" / "2Ti"
-ii_timothy_long_name = "II Timothy" / "2 Timothy" / "2Timothy" "2nd Tim"
+ii_timothy_long_name = "II Timothy" / "2 Timothy" / "2Timothy" / "2nd Tim"
 ii_timothy_verbose_name = "2nd Timothy" / "Second Timothy"
 ii_timothy_name = { ii_timothy_verbose_name / ii_timothy_long_name / ii_timothy_short_name }
 
@@ -371,12 +371,12 @@ james_verbose_name = "James"
 james_name = { james_verbose_name / james_long_name / james_short_name }
 
 i_peter_short_name = "1 Pet" / "1 Pe" / "1 Pt" / "1 P" / "I Pet" / "I Pt" / "I Pe" / "1Pet" / "1Pe" / "1Pt" / "1P"
-i_peter_long_name = "I Peter" / "1 Peter" / "1Peter" "1st Pet"
+i_peter_long_name = "I Peter" / "1 Peter" / "1Peter" / "1st Pet"
 i_peter_verbose_name = "1st Peter" / "First Peter"
 i_peter_name = { i_peter_verbose_name / i_peter_long_name / i_peter_short_name }
 
 ii_peter_short_name = "2 Pet" / "2 Pe" / "2 Pt" / "2 P" / "II Pet" / "II Pt" / "II Pe" / "2Pet" / "2Pe" / "2Pt" / "2P"
-ii_peter_long_name = "II Peter" / "2 Peter" / "2Peter" "2nd Pet"
+ii_peter_long_name = "II Peter" / "2 Peter" / "2Peter" / "2nd Pet"
 ii_peter_verbose_name = "2nd Peter" / "Second Peter"
 ii_peter_name = { ii_peter_verbose_name / ii_peter_long_name / ii_peter_short_name }
 
@@ -406,7 +406,8 @@ revelation_verbose_name = "Revelation of John" / "Book of Revelation" / "Revelat
 revelation_name = { revelation_verbose_name / revelation_long_name / revelation_short_name }
 
 -- | Bounded repetition (untokenized) | `pat{n,m}`     | At least n instances, and matching at most m instances of `pat` |
-chapter_number = { [1-9] [0-9]? }
+-- chapter_number = { [1-9] [0-9]? }
+chapter_number = { [1-9] [0-9]{0,2} }
 
 -- a-z represents the part of the verse. i.e. a is the first part, b, the second part, etc...
 verse_number = { [1-9] [0-9]{0,2} [a-z]? }
@@ -425,20 +426,28 @@ comma_separator = ", " / ","
 
 verse_range = { ( verse_number "-" verse_number ) / verse_number }
 verse_set = { ( verse_range "," )+ verse_range }
+-- verse_rangeset = { ( verse_rangeset { "," )+ verse_rangeset }
 
 chapter_verses = { chapter_number ":" ( verse_set / verse_range ) }
-multi_chapter_verses = { ( chapter_verses " ;" )+  chapter_verses}
+chapter_verseset = { chapter_number ":" verse_set }
+chapter_verserange = { chapter_number ":" verse_range }
+multi_chapter_verses = { ( chapter_verserange "," )+  chapter_verserange} / { ( chapter_verses ";" )+  chapter_verses}
+
+chapter_verse = { chapter_number ":" verse_number }
+chapterverse_range = { chapter_verse "-" chapter_verse }
 
 -- Must have no verses
 chapter_range = { ( chapter_number dash chapter_number ) / chapter_number }
 chapter_set = { ( chapter_range comma_separator )* chapter_range }
 
-ot_book_name = { genesis_name / exodus_name / leviticus_name / numbers_name / deuteronomy_name / joshua_name / judges_name / ruth_name / i_samuel_name / ii_samuel_name / i_kings_name / ii_kings_name / i_chronicles_name / ii_chronicles_name / ezra_name / nehemiah_name / esther_name / job_name / psalms_name / proverbs_name / ecclesiastes_name / songofsolomon_name / isaiah_name / jeremiah_name / lamentations_name / ezekiel_name / daniel_name / hosea_name / joel_name / amos_name / obadiah_name / jonah_name / micah_name / nahum_name / habakkuk_name / zephaniah_name / haggai_name / zechariah_name / malachi_name }
+-- Ezekiel was moved before Ezra because mathing Ezra's "Ez" happens sner and cancels matching Ezkiel otherwise
+ot_book_name = { genesis_name / exodus_name / leviticus_name / numbers_name / deuteronomy_name / joshua_name / judges_name / ruth_name / i_samuel_name / ii_samuel_name / i_kings_name / ii_kings_name / i_chronicles_name / ii_chronicles_name / ezekiel_name / ezra_name / nehemiah_name / esther_name / job_name / psalms_name / proverbs_name / ecclesiastes_name / songofsolomon_name / isaiah_name / jeremiah_name / lamentations_name / daniel_name / hosea_name / joel_name / amos_name / obadiah_name / jonah_name / micah_name / nahum_name / habakkuk_name / zephaniah_name / haggai_name / zechariah_name / malachi_name }
 -- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
 nt_book_name = { matthew_name / mark_name / luke_name / revelation_name / john_name / acts_name / romans_name / i_corinthians_name / ii_corinthians_name / galatians_name / ephesians_name / philippians_name / colossians_name / i_thessalonians_name / ii_thessalonians_name / i_timothy_name / ii_timothy_name / titus_name / philemon_name / hebrews_name / james_name / i_peter_name / ii_peter_name / i_john_name / ii_john_name / iii_john_name / jude_name }
 book_name = { ot_book_name / nt_book_name }
 
-ot_book_short_name = { genesis_short_name / exodus_short_name / leviticus_short_name / numbers_short_name / deuteronomy_short_name / joshua_short_name / judges_short_name / ruth_short_name / i_samuel_short_name / ii_samuel_short_name / i_kings_short_name / ii_kings_short_name / i_chronicles_short_name / ii_chronicles_short_name / ezra_short_name / nehemiah_short_name / esther_short_name / job_short_name / psalms_short_name / proverbs_short_name / ecclesiastes_short_name / songofsolomon_short_name / isaiah_short_name / jeremiah_short_name / lamentations_short_name / ezekiel_short_name / daniel_short_name / hosea_short_name / joel_short_name / amos_short_name / obadiah_short_name / jonah_short_name / micah_short_name / nahum_short_name / habakkuk_short_name / zephaniah_short_name / haggai_short_name / zechariah_short_name / malachi_short_name }
+-- Here also, Ezekiel is put beforoe Ezra
+ot_book_short_name = { genesis_short_name / exodus_short_name / leviticus_short_name / numbers_short_name / deuteronomy_short_name / joshua_short_name / judges_short_name / ruth_short_name / i_samuel_short_name / ii_samuel_short_name / i_kings_short_name / ii_kings_short_name / i_chronicles_short_name / ii_chronicles_short_name / ezekiel_short_name / ezra_short_name / nehemiah_short_name / esther_short_name / job_short_name / psalms_short_name / proverbs_short_name / ecclesiastes_short_name / songofsolomon_short_name / isaiah_short_name / jeremiah_short_name / lamentations_short_name / daniel_short_name / hosea_short_name / joel_short_name / amos_short_name / obadiah_short_name / jonah_short_name / micah_short_name / nahum_short_name / habakkuk_short_name / zephaniah_short_name / haggai_short_name / zechariah_short_name / malachi_short_name }
 -- Revelation must appear in the RPL before John because "Revelation of John" contains "John"
 nt_book_short_name = { matthew_short_name / mark_short_name / luke_short_name / revelation_short_name / john_short_name / acts_short_name / romans_short_name / i_corinthians_short_name / ii_corinthians_short_name / galatians_short_name / ephesians_short_name / philippians_short_name / colossians_short_name / i_thessalonians_short_name / ii_thessalonians_short_name / i_timothy_short_name / ii_timothy_short_name / titus_short_name / philemon_short_name / hebrews_short_name / james_short_name / i_peter_short_name / ii_peter_short_name / i_john_short_name / ii_john_short_name / iii_john_short_name / jude_short_name }
 book_short_name = { ot_book_short_name / nt_book_short_name }
@@ -454,7 +463,7 @@ nt_book_verbose_name = { matthew_verbose_name / mark_verbose_name / luke_verbose
 book_verbose_name = { ot_book_verbose_name / nt_book_verbose_name }
 
 -- With rosie grep, this will match any line with a bibleref in it
-bibleref = { book_name " " chapter_verses } / { book_name " " chapter_set }
+bibleref = { book_name " " chapterverse_range } / { book_name " " multi_chapter_verses } / { book_name " " chapter_verses } / { book_name " " chapter_set }
 
 ot_bibleref = { ot_book_name " " chapter_verses } / { ot_book_name " " chapter_set }
 nt_bibleref = { nt_book_name " " chapter_verses } / { nt_book_name " " chapter_set }

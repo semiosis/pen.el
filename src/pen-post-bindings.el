@@ -51,10 +51,15 @@
   (interactive)
   (pen-term-runcmd "nvc" "zork"))
 
+(defun dunnet-comint ()
+  (interactive)
+  (comint-quick "rl dunnet" user-home-directory))
+
 (sslk "lagc" #'crossword)
 (sslk "laga" #'ascii-adventures)
 ;; Text Adventures
 (sslk "lagxd" #'dunnet)
+(sslk "lagxD" #'dunnet-comint)
 (sslk "lagxb" #'battlestar)
 (sslk "lagxa" #'bsdgames-adventure)
 (sslk "lagxh" #'hhgttg)
@@ -411,7 +416,7 @@
 (define-key global-map (kbd "<find> a") 'pen-counsel-ag)
 (define-key global-map (kbd "<find> h") 'pen-helm-find-files)
 (define-key global-map (kbd "<find> f") 'pen-find-file)
-(define-key global-map (kbd "<find> r") 'search-forward-regexp)
+(define-key global-map (kbd "<find> r") 'pen-search-forward-regexp)
 (define-key global-map (kbd "<find> i") 'isearch-forward)
 
 ;; Overrides and things that sslk doesnt support

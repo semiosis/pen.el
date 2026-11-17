@@ -11,10 +11,7 @@ HEREDOC
 echo -n "> "
 ln=1
 while read -r line; do
-    (
     echo "$script" | sed -n "${ln}p"
     echo -n "> "
-    )
     ln="$(( ln + 1 ))"
 done
-echo exiting.

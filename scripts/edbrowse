@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+test -f "/usr/bin/edbrowse" || agi "edbrowse" &>/dev/null
+
+if test "$#" -eq 0; then
+    do_help=y
+fi
+
+opt="$1"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h) {
+        do_help=y
+        shift
+    }
+    ;;
+
+    -nh) {
+        do_help=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$do_help" = "y"; then
+    0</dev/null sps elinks /usr/share/doc/edbrowse/usersguide.html
+fi
+
+/usr/bin/edbrowse "$@"

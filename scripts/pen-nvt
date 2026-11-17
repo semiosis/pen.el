@@ -3,7 +3,10 @@
 export TTY
 unset TTY
 
-if test "$INSIDE_NEOVIM" = y; then
+if test -n "$INSIDE_EMACS"; then
+    "$@"
+    exit "$?"
+elif test "$INSIDE_NEOVIM" = y; then
     "$@"
     exit "$?"
 fi

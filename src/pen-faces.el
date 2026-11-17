@@ -1318,7 +1318,8 @@ is specified, `:italic' is ignored."
   ;; I need to set also the background.
   ;; Test with info-mode
   (set-face-background 'avy-background-face "#141414")
-  (set-face-foreground 'avy-background-face "#222222")
+  ;; (set-face-foreground 'avy-background-face "#404040")
+  (set-face-foreground 'avy-background-face "#505050")
 
   (require 'magit)
   (require 'magit-log)

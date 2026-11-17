@@ -1611,6 +1611,7 @@ non-nil."
     ;; Disabling =my-mode= isnt enough for custom
     (cond
      ((derived-mode-p 'Custom-mode) (call-interactively 'Custom-newline))
+     ((derived-mode-p 'org-strippeddown-mode) (call-interactively 'newline))
      (t
       ;; Custom-newline
       (let ((pen nil)

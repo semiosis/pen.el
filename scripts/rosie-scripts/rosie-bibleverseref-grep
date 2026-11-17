@@ -9,3 +9,4 @@ query="$lastarg"
 export ROSIE_PARAMS=case_insensitive
 
 rosie-bibleverseref grep -o subs "$@"
+# rosie-bibleverseref trace "$@"
