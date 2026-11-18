@@ -8,5 +8,5 @@ query="$lastarg"
 
 export ROSIE_PARAMS=case_insensitive
 
-rosie-bibleverseref grep -o subs "$@"
+rosie-bibleverseref grep -o subs "$@" | remove-starting-and-trailing-whitespace.sh | pavs
 # rosie-bibleverseref trace "$@"
