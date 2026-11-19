@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-19 Thu 16:18>
+#+DATE: <2026-11-19 Thu 17:20>
 
 #+KEYWORDS: faith christianity
 
@@ -51284,9 +51284,9 @@ That's why AI should not be used as inspiration for sermons.
     
     Their job advertisement included claim:
     
-    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+    #+BEGIN_QUOTE
       We believe that diversity, equity, inclusion and belonging are key to realising our purpose of better together for a better tomorrow.
-    #+END_SRC
+    #+END_QUOTE
      
     I had put in my cover letter the following:
     
@@ -51301,17 +51301,17 @@ That's why AI should not be used as inspiration for sermons.
     
     At the start of the email, there is written:
     
-    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+    #+BEGIN_QUOTE
       We're excited you're interested in the Checkout Operator job (129815)!
-    #+END_SRC
+    #+END_QUOTE
     
     Is anyone actually excited? But continuing:
     
-    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+    #+BEGIN_QUOTE
       We believe the best way to get to know you is through a simple, interactive chat. It usually takes around 20 minutes. We just ask that you complete this within 48 hours so we can keep your application moving forward.
       
       If you've recently completed a Sapia interview with Stores NZ, you might not be required to complete it again.  If you do receive an invitation from Sapia, please complete the interview.
-    #+END_SRC
+    #+END_QUOTE
     
     I was asked to complete an interview with a chatbot.
     
