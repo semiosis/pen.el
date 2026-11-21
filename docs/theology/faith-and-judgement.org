@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-21 Sat 16:16>
+#+DATE: <2026-11-21 Sat 21:28>
 
 #+KEYWORDS: faith christianity
 
@@ -2651,7 +2651,9 @@ We believe the gospel into loving one-another as commanded, and into producing g
   *[[https://www.biblegateway.com/passage/?search=Philippians%202%3A13&version=ESV][Philippians 2:13]]* - For it is God which worketh in you both to will and to do of his good pleasure [[strongs:G2107][(G2107 eudokias; good desire)]]. (KJV)
 #+END_QUOTE
 
-The good deeds done in faith are not contrived as God provides (sets up) the deeds to do and works through the person who has faith in Jesus Christ. God would supply such deeds as in *[[https://www.biblegateway.com/passage/?search=Matthew%2025%3A31-40&version=ESV][Matthew 25:31-40]]*, but we should be obedient (with love for God; [[https://www.biblegateway.com/passage/?search=Psalms%2081%3A15&version=ESV][Psalms 81:15]]), giving thought to do what pleases God (*[[https://www.biblegateway.com/passage/?search=Romans%2012%3A17-21&version=ESV][Romans 12:17-21]]*) ready to do those deeds (*[[https://www.biblegateway.com/passage/?search=Titus%201%3A16&version=ESV][Titus 1:16]]*, *[[https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A21&version=ESV][II Timothy 2:21]]*). So we would recall, observe (*[[https://www.biblegateway.com/passage/?search=Matthew%2028%3A18-20&version=ESV][Matthew 28:18-20]]*), delight in (*[[https://www.biblegateway.com/passage/?search=Romans%207%3A17-23&version=ESV][Romans 7:17-23]]*) Jesus' commandments and apply them by faith in Jesus when the opportunity to do so presents itself (*[[https://www.biblegateway.com/passage/?search=James%204%3A17&version=ESV][James 4:17]]*), which could be right now as for many of Jesus' commandments, they can be applied from the heart immediately. Given Jesus' instructions in *[[https://www.biblegateway.com/passage/?search=Matthew%205%3A38-48&version=ESV][Matthew 5:38-48]]*, we should apply them generally to bear with others in love and to not return evil for evil, turning the other cheek, loving those who hate us. God works through those who are having faith in Jesus:
+The good deeds done in faith are not contrived as God provides (sets up) the deeds to do and works through the person who has faith in Jesus Christ. God would supply such deeds as in *[[https://www.biblegateway.com/passage/?search=Matthew%2025%3A31-40&version=ESV][Matthew 25:31-40]]*, but we should be obedient (with love for God; [[https://www.biblegateway.com/passage/?search=Psalms%2081%3A15&version=ESV][Psalms 81:15]]), giving thought to do what pleases God (*[[https://www.biblegateway.com/passage/?search=Romans%2012%3A17-21&version=ESV][Romans 12:17-21]]*) ready to do those deeds (*[[https://www.biblegateway.com/passage/?search=Titus%201%3A16&version=ESV][Titus 1:16]]*, *[[https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A21&version=ESV][II Timothy 2:21]]*). So we would recall, observe (*[[https://www.biblegateway.com/passage/?search=Matthew%2028%3A18-20&version=ESV][Matthew 28:18-20]]*), delight in (*[[https://www.biblegateway.com/passage/?search=Romans%207%3A17-23&version=ESV][Romans 7:17-23]]*) Jesus' commandments and apply them by faith in Jesus when the opportunity to do so presents itself (*[[https://www.biblegateway.com/passage/?search=James%204%3A17&version=ESV][James 4:17]]*), which could be right now as for many of Jesus' commandments, they can be applied from the heart (*[[https://www.biblegateway.com/passage/?search=Proverbs%203%3A1-2&version=ESV][Proverbs 3:1-2]]*) immediately.
+
+Given Jesus' instructions in *[[https://www.biblegateway.com/passage/?search=Matthew%205%3A38-48&version=ESV][Matthew 5:38-48]]*, we should apply them generally to bear with others in love and to not return evil for evil, turning the other cheek, loving those who hate us. God works through those who are having faith in Jesus:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Galatians%203%3A5-7&version=ESV][Galatians 3:5-7]]* - Does he who supplies the Spirit to you and works miracles among you do so by works of the law, or by hearing with faith— just as Abraham believed God, and it was counted to him as righteousness? Know then that it is those of faith who are the sons of Abraham. (ESV)
@@ -16743,25 +16745,27 @@ Abraham just obeyed God, trusting God. And so should we. God sees what's in our 
 
 + [[https://biblehub.com/interlinear/hebrews/11-8.htm][Hebrews 11:8 (Interlinear)]] :: By faith being called Abraham obeyed to go out into a place that he was going to receive for an inheritance and went out not knowing where he is going
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  G4102    G2564        G11     G5219      G1831     G1519
-  Pistei   kaloumenos   Abraam  hypēkousen exelthein eis
-  Πίστει   καλούμενος , Ἀβραὰμ  ὑπήκουσεν  ἐξελθεῖν  εἰς
-  By faith being called Abraham obeyed     to go out into
-  N-DFS    V-PPM/P-NMS  N-NMS   V-AIA-3S   V-ANA     Prep
-
-  G5117   G3739      G3195        G2983      G1519 G2817
-  topon   hon        ēmellen      lambanein  eis   klēronomian
-  τόπον   ὃν         ἤμελλεν      λαμβάνειν  εἰς   κληρονομίαν ,
-  a place that       he was going to receive for   an inheritance
-  N-AMS   RelPro-AMS V-IIA-3S     V-PNA      Prep  N-AFS
-
-  G2532 G1831     G3361 G1987       G4226 G2064
-  kai   exēlthen  mē    epistamenos pou   erchetai
-  καὶ   ἐξῆλθεν , μὴ    ἐπιστάμενος ποῦ   ἔρχεται .
-  and   went out  not   knowing     where he is going
-  Conj  V-AIA-3S  Adv   V-PPM/P-NMS Adv   V-PIM/P-3S
-#+END_SRC
++ [[https://biblehub.com/interlinear/hebrews/11-8.htm][Hebrews 11:8]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek         | Translation    | Grammar     |
+    |--------------+-----------------+---------------+----------------+-------------|
+    | [[strongs:G4102][G4102]]        | Pistei          | Πίστει        | By faith       | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]       |
+    | [[strongs:G2564][G2564]]        | kaloumenos      | καλούμενος ,  | being called   | [[https://biblehub.com/grammar/v-ppm%2Fp-nms.htm][V-PPM/P-NMS]] |
+    | [[strongs:G11][G11]]          | Abraam          | Ἀβραὰμ        | Abraham        | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]       |
+    | [[strongs:G5219][G5219]]        | hypēkousen      | ὑπήκουσεν     | obeyed         | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]    |
+    | [[strongs:G1831][G1831]]        | exelthein       | ἐξελθεῖν      | to go out      | [[https://biblehub.com/grammar/v-ana.htm][V-ANA]]       |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | into           | [[https://biblehub.com/grammar/prep.htm][Prep]]        |
+    | [[strongs:G5117][G5117]]        | topon           | τόπον         | a place        | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]       |
+    | [[strongs:G3739][G3739]]        | hon             | ὃν            | that           | [[https://biblehub.com/grammar/relpro-ams.htm][RelPro-AMS]]  |
+    | [[strongs:G3195][G3195]]        | ēmellen         | ἤμελλεν       | he was going   | [[https://biblehub.com/grammar/v-iia-3s.htm][V-IIA-3S]]    |
+    | [[strongs:G2983][G2983]]        | lambanein       | λαμβάνειν     | to receive     | [[https://biblehub.com/grammar/v-pna.htm][V-PNA]]       |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | for            | [[https://biblehub.com/grammar/prep.htm][Prep]]        |
+    | [[strongs:G2817][G2817]]        | klēronomian     | κληρονομίαν , | an inheritance | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]       |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ           | and            | [[https://biblehub.com/grammar/conj.htm][Conj]]        |
+    | [[strongs:G1831][G1831]]        | exēlthen        | ἐξῆλθεν ,     | went out       | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]    |
+    | [[strongs:G3361][G3361]]        | mē              | μὴ            | not            | [[https://biblehub.com/grammar/adv.htm][Adv]]         |
+    | [[strongs:G1987][G1987]]        | epistamenos     | ἐπιστάμενος   | knowing        | [[https://biblehub.com/grammar/v-ppm%2Fp-nms.htm][V-PPM/P-NMS]] |
+    | [[strongs:G4226][G4226]]        | pou             | ποῦ           | where          | [[https://biblehub.com/grammar/adv.htm][Adv]]         |
+    | [[strongs:G2064][G2064]]        | erchetai        | ἔρχεται .     | he is going    | [[https://biblehub.com/grammar/v-pim%2Fp-3s.htm][V-PIM/P-3S]]  |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%204%3A18&version=ESV][II Corinthians 4:18]]* - as we look not to the things that are seen but to the things that are unseen. For the things that are seen are transient, but the things that are unseen are eternal. (ESV)
@@ -16819,7 +16823,7 @@ Being '[[https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http:
 
 + A quote from [[https://www.goodreads.com/quotes/11600816-all-sorts-of-people-are-fond-of-repeating-the-christian]["Mere Christianity" by C.S. Lewis]]. ([[https://youtube.com/watch?v=OGzEfiKOFRY&t=707][youtube.com: {@ TruthUnites } @time: 11 min 47 sec]]) :: All sorts of people are fond of repeating the Christian statement that 'God is love.' But they seem not to notice that the words 'God is love' have no real meaning unless God contains at least two Persons. Love is something that one person has for another person. If God was a single person, then before the world was made, He was not love.
 
-And we serve in the strength that God provides (*[[https://www.biblegateway.com/passage/?search=2%20Corinthians%209%3A8&version=ESV][II Corinthians 9:8]]*). If we find ourselves in a position to demonstrate serving others out of love, and the Scriptures have a lot to say about what that that love looks like (such as in the 10 commandments as Jesus explained them (*[[https://www.biblegateway.com/passage/?search=Matthew%205%3A22%2C28%2C32%2C34-37%2C39%2C44-45%2C27-28%2C30-31%2C35%2C40&version=ESV][Matthew 5:22,28,32,34-37,39,44-45,27-28,30-31,35,40]]*). For example, love does not bear false witness about their neighbour. Love does not covet anything of your neighbor's. Love does not lust or murder from the heart. See *[[https://www.biblegateway.com/passage/?search=Romans%2013%3A9-10&version=ESV][Romans 13:9-10]]*), then we should do so and give God the glory:
+And we serve in the strength that God provides (*[[https://www.biblegateway.com/passage/?search=2%20Corinthians%209%3A8&version=ESV][II Corinthians 9:8]]*). If we find ourselves in a position to demonstrate serving others out of love, and the Scriptures have a lot to say about what that that love looks like (such as in the 10 commandments as Jesus explained them (*[[https://www.biblegateway.com/passage/?search=Matthew%205%3A22%2C28%2C32%2C34-37%2C39%2C44-45%2C27-28%2C30-31%2C35%2C40&version=ESV][Matthew 5:22,28,32,34-37,39,44-45,27-28,30-31,35,40]]*). For example, love does not bear false witness about their neighbour. Love does not covet anything of your neighbor's. Love does not lust or murder from the heart (*[[https://www.biblegateway.com/passage/?search=Proverbs%203%3A1-2&version=ESV][Proverbs 3:1-2]]*). See *[[https://www.biblegateway.com/passage/?search=Romans%2013%3A9-10&version=ESV][Romans 13:9-10]]*), then we should do so and give God the glory:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=1%20Peter%204%3A11&version=ESV][I Peter 4:11]]* - whoever speaks, as one who speaks oracles of God; whoever serves, as one who serves by the strength that God supplies—in order that in everything God may be glorified through Jesus Christ. To him belong glory and dominion forever and ever. Amen. (ESV)
@@ -33570,7 +33574,6 @@ We must put on the new self. After receiving grace, we are instructed to put to 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Colossians%203%3A1-10&version=ESV][Colossians 3:1-10]]* - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator. (ESV)
 #+END_QUOTE
-
 
 I think saying "neither Jew nor Greek, slave nor free, male nor female" is Paul exhorting people to see that those who have been baptized into Christ are members of Christ, and have an identity in Christ which transcends the worldly categories, similar to saying that a slave has an identity in Christ and so earthly masters should be wary of that fact, being aware that a person in Christ Jesus has an identity that totally transcends the worldly divisions between people:
 
@@ -51615,6 +51618,12 @@ That's why AI should not be used as inspiration for sermons.
     How incredibly unloving it is to force this onto people. It's an attack on personhood and human dignity.
     It's treating human beings as without significant value.
 
+Regarding all the AI theft and transhumanism being pushed onto people:
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Psalms%20119%3A84-85&version=ESV][Psalms 119:84-85]]* - How long must your servant endure? When will you judge those who persecute me? The insolent have dug pitfalls for me; they do not live according to your law. (ESV)
+#+END_QUOTE
+
 + [[https://www.youtube.com/watch?v=CIMZH7DEPPQ][youtube.com: John Piper Asked ChatGPT to Write a Prayer {@thegospelcoalition}]] :: Why were you made? Words? Computers do words better
     than you. Seriously, better than me.
     Computers do words. They don't feel anything.
@@ -56338,6 +56347,24 @@ Those in the process of being sanctified by Jesus are sons:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Hebrews%202%3A10-13&version=ESV][Hebrews 2:10-13]]* - For it was fitting that he, for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation perfect through suffering. For *he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers*, saying, I will tell of your name to my brothers; in the midst of the congregation I will sing your praise. And again, I will put my trust in him. And again, Behold, I and the children God has given me. (ESV)
+#+END_QUOTE
+
+Those who abide in Jesus' commandments are sons of God:
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV][John 1:14]]* - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Matthew%203%3A16-17&version=ESV][Matthew 3:16-17]]* - And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Galatians%203%3A25-26&version=ESV][Galatians 3:25-26]]* - But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=1%20John%203%3A24&version=ESV][I John 3:24]]* - *Whoever keeps his commandments abides in him*, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 #+END_QUOTE
 
 We put our trust in Jehovah God. We put our trust in Jesus:
