@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-21 Sat 15:23>
+#+DATE: <2026-11-21 Sat 16:16>
 
 #+KEYWORDS: faith christianity
 
@@ -6237,6 +6237,7 @@ Jesus Christ's mother, brothers and sisters have a new life with a new family (t
     That's what I presently believe, anyway.
 
 Salvation involves both justification /and/ sanctification, though, justification being God's righteousness given to the person who has a heart attitude of loving faith in Jesus Christ and sanctification which is a process of being cleaned up as we hold our faith in Jesus and love our family in Christ, and we must continue on in the faith (*[[https://www.biblegateway.com/passage/?search=2%20John%201%3A9-10&version=ESV][II John 1:9-10]]*) which means to continue in agreement with Jesus Christ (who He is and what He did and what He taught), rather than disagreeing with Him.
+
 Salvation involves God *working* in us as we obey Jesus Christ. As we (*[[https://www.biblegateway.com/passage/?search=Exodus%2014%3A16&version=ESV][Exodus 14:16]]*) by faith obey Jesus Christ, God works (*[[https://www.biblegateway.com/passage/?search=Exodus%2014%3A13&version=ESV][Exodus 14:13]]*) His salvation in us:
 
 #+BEGIN_QUOTE
@@ -45494,39 +45495,70 @@ However, I do not believe that this is an excuse to violate Christ's law / Chris
 
 I believe the more precise translation is that these things happen rapidly. Now while they may soon take place - I'm not saying they are not happening already - the more accurate reading of this passage, I believe, is that the events take place rapidly:
 
-+ [[https://biblehub.com/interlinear/revelation/1-1.htm][Revelation 1:1]] :: [The] revelation of Jesus Christ which gave Him- God to show to the bond-servants of Him what things it behooves to take place in quickness [[https://www.blueletterbible.org/lexicon/g5034/kjv/tr/0-1/][(G5034 quickness)]] And He signified [it] having sent through the angel of Him to the servant  of Him John (Interlinear)
+#+BEGIN_QUOTE
+  + [[https://biblehub.com/interlinear/revelation/1-1.htm][Revelation 1:1]] :: [The] revelation of Jesus Christ which gave Him- God to show to the bond-servants of Him what things it behooves to take place in quickness [[https://www.blueletterbible.org/lexicon/g5034/kjv/tr/0-1/][(G5034 quickness)]] And He signified [it] having sent through the angel of Him to the servant  of Him John (Interlinear)
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  602              2424     5547       3739       1325     846
-  Apokalypsis      Iēsou    Christou   hēn        edōken   autō
-  Ἀποκάλυψις       Ἰησοῦ    Χριστοῦ  , ἣν         ἔδωκεν   αὐτῷ
-  [The] revelation of Jesus Christ     which      gave     Him
-  N-NFS            N-GMS    N-GMS      RelPro-AFS V-AIA-3S PPro-DM3S
+  + [[https://biblehub.com/interlinear/revelation/1-1.htm][Revelation of John 1:1]] (Interlinear) ::
+      [The] Revelation [[strongs:G602][(G602 Apokalypsis)]]
+      of Jesus [[strongs:G2424][(G2424 Iēsou)]]
+      Christ [[strongs:G5547][(G5547 Christou)]]
+      which [[strongs:G3739][(G3739 hēn)]]
+      gave [[strongs:G1325][(G1325 edōken)]]
+      to him [[strongs:G846][(G846 autō)]] - [[strongs:G3588][(G3588 ho)]]
+      God [[strongs:G2316][(G2316 Theos)]]
+      to show [[strongs:G1166][(G1166 deixai)]]
+      to the [[strongs:G3588][(G3588 tois)]]
+      bond-servants [[strongs:G1401][(G1401 doulois)]]
+      of him [[strongs:G846][(G846 autou)]]
+      what things [[strongs:G3739][(G3739 ha)]]
+      it behoves [[strongs:G1163][(G1163 dei)]]
+      to take place [[strongs:G1096][(G1096 genesthai)]]
+      in [[strongs:G1722][(G1722 en)]]
+      _quickness [[strongs:G5034][(G5034 tachei)]]_
+      and [[strongs:G2532][(G2532 kai)]]
+      he signified [it] [[strongs:G4591][(G4591 esēmanen)]]
+      having sent [[strongs:G649][(G649 aposteilas)]]
+      through [[strongs:G1223][(G1223 dia)]]
+      the [[strongs:G3588][(G3588 tou)]]
+      angel [[strongs:G32][(G32 angelou)]]
+      of him [[strongs:G846][(G846 autou)]]
+      to the [[strongs:G3588][(G3588 tō)]]
+      servant [[strongs:G1401][(G1401 doulō)]]
+      of him [[strongs:G846][(G846 autou)]]
+      John [[strongs:G2491][(G2491 Iōannē)]]
 
-  3588    2316    1166    3588    1401          846       3739
-  ho      Theos   deixai  tois    doulois       autou     ha
-  ὁ       Θεός  , δεῖξαι  τοῖς    δούλοις       αὐτοῦ     ἃ
-   -      God     to show to the  bond-servants of Him    what things
-  Art-NMS N-NMS   V-ANA   Art-DMP N-DMP         PPro-GM3S RelPro-ANP
-
-  1163        1096          1722 5034      2532 4591
-  dei         genesthai     en   tachei    kai  esēmanen
-  δεῖ         γενέσθαι      ἐν   τάχει  .  καὶ  ἐσήμανεν  ,
-  it behooves to take place in   quickness And  He signified [it]
-  V-PIA-3S    V-ANM         Prep N-DNS     Conj V-AIA-3S
-
-  649         1223    3588    32      846       3588     1401
-  aposteilas  dia     tou     angelou autou     tō       doulō
-  ἀποστείλας  διὰ     τοῦ     ἀγγέλου αὐτοῦ  ,  τῷ       δούλῳ
-  having sent through the     angel   of Him    to the   servant
-  V-APA-NMS   Prep    Art-GMS N-GMS   PPro-GM3S Art-DMS  N-DMS
-
-  846       2491
-  autou     Iōannē
-  αὐτοῦ  ,  Ἰωάννῃ  ,
-  of Him    John
-  PPro-GM3S N-DMS
-#+END_SRC
+  + [[https://biblehub.com/interlinear/revelation/1-1.htm][Revelation of John 1:1]] (Interlinear) ::
+      | Strongs Code | Transliteration | Greek      | Translation       | Grammar    |
+      |--------------+-----------------+------------+-------------------+------------|
+      | [[strongs:G602][G602]]         | Apokalypsis     | Ἀποκάλυψις | [The] Revelation  | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]      |
+      | [[strongs:G2424][G2424]]        | Iēsou           | Ἰησοῦ      | of Jesus          | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
+      | [[strongs:G5547][G5547]]        | Christou        | Χριστοῦ ,  | Christ            | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
+      | [[strongs:G3739][G3739]]        | hēn             | ἣν         | which             | [[https://biblehub.com/grammar/relpro-afs.htm][RelPro-AFS]] |
+      | [[strongs:G1325][G1325]]        | edōken          | ἔδωκεν     | gave              | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]   |
+      | [[strongs:G846][G846]]         | autō            | αὐτῷ       | to him            | [[https://biblehub.com/grammar/ppro-dm3s.htm][PPro-DM3S]]  |
+      | [[strongs:G3588][G3588]]        | ho              | ὁ          | -                 | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]    |
+      | [[strongs:G2316][G2316]]        | Theos           | Θεός ,     | God               | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]      |
+      | [[strongs:G1166][G1166]]        | deixai          | δεῖξαι     | to show           | [[https://biblehub.com/grammar/v-ana.htm][V-ANA]]      |
+      | [[strongs:G3588][G3588]]        | tois            | τοῖς       | to the            | [[https://biblehub.com/grammar/art-dmp.htm][Art-DMP]]    |
+      | [[strongs:G1401][G1401]]        | doulois         | δούλοις    | bond-servants     | [[https://biblehub.com/grammar/n-dmp.htm][N-DMP]]      |
+      | [[strongs:G846][G846]]         | autou           | αὐτοῦ ,    | of him            | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]]  |
+      | [[strongs:G3739][G3739]]        | ha              | ἃ          | what things       | [[https://biblehub.com/grammar/relpro-anp.htm][RelPro-ANP]] |
+      | [[strongs:G1163][G1163]]        | dei             | δεῖ        | it behoves        | [[https://biblehub.com/grammar/v-pia-3s.htm][V-PIA-3S]]   |
+      | [[strongs:G1096][G1096]]        | genesthai       | γενέσθαι   | to take place     | [[https://biblehub.com/grammar/v-anm.htm][V-ANM]]      |
+      | [[strongs:G1722][G1722]]        | en              | ἐν         | in                | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+      | [[strongs:G5034][G5034]]        | tachei          | τάχει .    | *quickness*         | [[https://biblehub.com/grammar/n-dns.htm][N-DNS]]      |
+      | [[strongs:G2532][G2532]]        | kai             | καὶ        | and               | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+      | [[strongs:G4591][G4591]]        | esēmanen        | ἐσήμανεν , | he signified [it] | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]   |
+      | [[strongs:G649][G649]]         | aposteilas      | ἀποστείλας | having sent       | [[https://biblehub.com/grammar/v-apa-nms.htm][V-APA-NMS]]  |
+      | [[strongs:G1223][G1223]]        | dia             | διὰ        | through           | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+      | [[strongs:G3588][G3588]]        | tou             | τοῦ        | the               | [[https://biblehub.com/grammar/art-gms.htm][Art-GMS]]    |
+      | [[strongs:G32][G32]]          | angelou         | ἀγγέλου    | angel             | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
+      | [[strongs:G846][G846]]         | autou           | αὐτοῦ ,    | of him            | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]]  |
+      | [[strongs:G3588][G3588]]        | tō              | τῷ         | to the            | [[https://biblehub.com/grammar/art-dms.htm][Art-DMS]]    |
+      | [[strongs:G1401][G1401]]        | doulō           | δούλῳ      | servant           | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]      |
+      | [[strongs:G846][G846]]         | autou           | αὐτοῦ ,    | of him            | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]]  |
+      | [[strongs:G2491][G2491]]        | Iōannē          | Ἰωάννῃ* ,  | John              | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]      |
+#+END_QUOTE
 
 + Watch :: [[https://www.youtube.com/watch?v=h4RQqkfRLRI][youtube.com: THE ONLY TRUE MAP OF THE FUTURE--GOD GAVE IT {@DTBM}]]
 
