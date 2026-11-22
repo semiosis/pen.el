@@ -34948,6 +34948,66 @@ Concordance (102 entries)
     - If something was presented as for sale then to get at the value someone wants out of it, they should really buy it as offered otherwise it's immoral.
     - Whatever license accompanied the data should be propagated with with model which trained on it, not merely the data be propagated with the model, but also the model should carry the conditions of usage that the data it trained on carried.
 
+    A reddit user commented,
+
+    #+BEGIN_QUOTE
+      > they can get the value they want from other people's work without wanting to pay for it
+      
+      When a human artist learns their skills looking at publicly available artwork of other human arists, and later making own product to sell, they are also getting the value from other people's work without paying the original authors, no?
+      
+      The problem with your analogies is that all the "books" are still there — this is not a zero-sum game. I mean, there's obviously some harm for a human artist when part of their customers now cand and wish to get similar product for free, but there's no specific "library" which someone can own and which can run off.
+    #+END_QUOTE
+
+    I replied,
+
+    #+BEGIN_QUOTE
+      If you took a photo of somebody's face using a fancy 3d camera and then 3d printed a convincing mask, and found out exactly where they buy their clothes and bought all of the same clothes and then wear all of that around in public without their consent, do you not see that that is wrong and should be illegal?
+      
+      They're "still there" after all? What's wrong with mimicking them?
+      
+      But if someone wore some low-budget, low quality, unconvincing mask, and cheap suit, how that wouldn't matter so much?
+      
+      If you used chemistry to crack the coca-cola formula without needing to know the ingredients and then mass produced it under a different label in the same economy, do you not see how that is wrong?
+      
+      The same goes for a person's work. The technology crossed a line when they duplicated everything but the license and sent it back out in another form without the license.
+      
+      If an architect liked the look of another building and had the 3d printing technology to study and replicate it verbatim, do you not see how that is wrong?
+      
+      Just because a person can do something with a computer does not mean they should be allowed to.
+      
+      Also, there is a huge legal difference between when a human person does something and when a computer does something.
+    #+END_QUOTE
+
+    The same reddit user commented again,
+
+    #+BEGIN_QUOTE
+      > The technology crossed a line when they duplicated everything but the license and sent it back out in another form without the license.
+      
+      Duplicated what, skills? Duplicating skills is legal, skills belong to no one, and humans learn skills from each other's work all the time.
+      
+      And your first example is even more absurd than the other ones are irrevelant, because no one is impersonated in our case.
+    #+END_QUOTE
+
+    I responded,
+
+    #+BEGIN_QUOTE
+      Duplicating other people's data which was released under license, while not honoring the license to go with the data.
+      
+      Let's say a codebase on GitHub has the GPL3 license associated with it. A developer comes along and decides they want to use the code and build a product with it. They legally must release their product under the same license. A person who is doing the right thing would release their product with the GPL3.
+      
+      If someone trains a model on that codebase they will have some weights and those weights should also be released with the GPL3.
+      
+      If a person takes a Sony Playstation CD and "burns a pirate version" saving it with a different disk format, and then tries to sell this burned CD then they are committing overt piracy. Model weights are just a different format.
+      
+      If someone compresses the codebase into a zip file, for example, it's still the same software. If the license asks that it be present with the software then surely you'd compress the license along with it. If the license required that any derived works also use the same license you might even put the license alongside the zip file of the codebase. When a model trains on data, it's basically just zipping up the data, and depending on the model, might even not be able to put out the original code verbatim, or perhaps it can, but regardless, the model required the data in full in the first place when it was trained, and so the usage of the model should match the data it has been trained on.
+      
+      Where do model weights come from? Data. Would the model exist without the data? No.
+      
+      To use data which carries a certain license which has certain clauses in it which make it clear how the data must be used, but to not honor the license, but rather to violate the license in ways in which is prohibited by the license, releasing the data in the format of a model but in ways in which the license prohibited - that is stealing from the authors.
+      
+      In the last comment that I made, I gave some examples of some ways in which a person's likeness or the likeness of a person's assets may be stolen and used in ways which would be wrong to do. In all three examples, it's where technology is used to overcome what latent "protections" which a person or their business or their assets had while doing business. But people with large amounts of money investing in computers to circumvent these protections act with "unjust gain". Especially if they do it (which they did) before fair and agreed upon (by asset owners) regulation was put into effect. The models were trained and the AI companies profited while asset owners were fleeced.
+    #+END_QUOTE
+
 + Journal <2026-11-13 Fri 09:51> :: https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep
 
 ** Journal <2026-11-11 Wed>
