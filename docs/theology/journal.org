@@ -35008,6 +35008,60 @@ Concordance (102 entries)
       In the last comment that I made, I gave some examples of some ways in which a person's likeness or the likeness of a person's assets may be stolen and used in ways which would be wrong to do. In all three examples, it's where technology is used to overcome what latent "protections" which a person or their business or their assets had while doing business. But people with large amounts of money investing in computers to circumvent these protections act with "unjust gain". Especially if they do it (which they did) before fair and agreed upon (by asset owners) regulation was put into effect. The models were trained and the AI companies profited while asset owners were fleeced.
     #+END_QUOTE
 
+    The reddit user responded,
+
+    #+BEGIN_QUOTE
+      > Where do model weights come from? Data. Would the model exist without the data? No.
+      
+      Where do the skills of artists come from? Other people's skills and products. Would legendary paintings have been created if their artists had no previous generations' art to learn and inspire from? No.
+      
+      > If someone trains a model on that codebase they will have some weights and those weights should also be released with the GPL3.
+      
+      Do you mean using the codebase as a training dataset, or do you mean using someone's training script and presets? As far as I know, there's still no consensus yet on the former, and I strongly stand for denying it being fully derivative.
+    #+END_QUOTE
+
+    So I replied again,
+
+    #+BEGIN_QUOTE
+      If one person has an invisibility cloak, that doesn't just give them now license to walk around in public flaunting the rules.
+      
+      That's similar to if someone has a very large computer. Just because someone can doesn't mean they morally can, or even that it's legal to.
+      
+      If somebody sees a wedding ring slip from a person's hand and land on the ground, and it seems as though they lost it, then to not inform them of their lost ring when it was in one's power to do so would be immoral.
+      
+      ,#+BEGIN_QUOTE
+        *[[https://www.biblegateway.com/passage/?search=James%204%3A17&version=ESV][James 4:17]]* - So whoever knows the right thing to do and fails to do it, for him it is sin. (ESV)
+      ,#+END_QUOTE
+      
+      What do you think the Bible has to say about those who "over-reap" their harvest? Do you think really think it's ethical, for example, for the Anthropic company to reap the harvest of the work of hundreds of millions of people without renumeration?
+      
+      ,#+BEGIN_QUOTE
+        *[[https://www.biblegateway.com/passage/?search=Leviticus%2019%3A9&version=ESV][Leviticus 19:9]]* - When you reap the harvest of your land, you shall not reap your field right up to its edge, neither shall you gather the gleanings after your harvest. (ESV)
+      ,#+END_QUOTE
+      
+      ,#+BEGIN_QUOTE
+        > Where do the skills of artists come from? Other people's skills and products. Would legendary paintings have been created if their artists had no previous generations' art to learn and inspire from? No.
+      ,#+END_QUOTE
+      
+      You mention skills again, but if you were to memorise a GPL3 codebase and type it out again, and then release it as software again, you'd still have to bundle the GPL3 license along with your code. Just because you memorised it, and made it a skill, doesn't exempt you from needing to use the GPL3 after typing out the code again if you are going to use it to partake in the same economy.
+      
+      Let's say your government puts out information about running a business, and people are being informed about how business ought to be operating (Here's an example: https://www.business.govt.nz). And a non-tech-savvy business owner studies up on the government information, runs their business according to established rules, and puts out their creative material online in good faith according to established norms and government instructions.
+      
+      But then an company with a large bank account and a lot of computing power comes along and fleeces their work and then makes some claim that they can because it's transformative, this is the way it is now with the new AI age, adapt or go extinct.
+      
+      Who are they to say that it is an "AI age" or that this AI technology is the new norm? Those people pushing it onto others are deluded.
+      
+      In order to run a business there has to be rules which people work within. Without the rules, business can't be done. How many people are able to run their own business in order to support themelves and a family? Hmm? Fewer and fewer as time goes on with all this unjust gain.
+      
+      I think that people have preyed on the vulnerable people and swindled them out of the natural progression of their labour. Like swindling a person's inheritance.
+      
+      Swindling people is very immoral:
+      
+      ,#+BEGIN_QUOTE
+        *I Corinthians 5:11* - But now I am writing to you not to associate with anyone who bears the name of brother if he is guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler—not even to eat with such a one. (ESV)
+      ,#+END_QUOTE
+    #+END_QUOTE
+
 + Journal <2026-11-13 Fri 09:51> :: https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep
 
 ** Journal <2026-11-11 Wed>
