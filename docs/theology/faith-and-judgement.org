@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-23 Mon 10:37>
+#+DATE: <2026-11-23 Mon 13:31>
 
 #+KEYWORDS: faith christianity
 
@@ -15744,27 +15744,22 @@ Outcome comes from faith. Outcome comes from deed (external action done from fai
     It would be semantically correct to say "Adam apart from [[strongs:G5565][(G5565 chōris)]] Eve", or "Eve apart from Adam".
 
     Man and woman, husband and wife are a single unit called Adam:
-    
-    #+BEGIN_SRC text -n :async :results verbatim code :lang text
-           1254              3117           120     8034        853
-      s    hib·bā·rə·’ām.    bə·yō·wm       ’ā·ḏām, šə·mām      ’eṯ-
-      ס    הִבָּֽרְאָֽם׃            בְּי֖וֹם           אָדָ֔ם     שְׁמָם֙         אֶת־
-       -   they were created in the day     man     them         -
-      Punc V‑Nifal‑Inf | 3mp Prep‑b | N‑msc N‑ms    N‑msc | 3mp DirObjM
-    
-      7121                            853           1288
-      way·yiq·rā                      ’ō·ṯām,       way·ḇā·reḵ
-      וַיִּקְרָ֤א                           אֹתָ֗ם           וַיְבָ֣רֶךְ
-      and called                      them          and He blessed
-      Conj‑w | V‑Qal‑ConsecImperf‑3ms DirObjM | 3mp Conj‑w | V‑Piel‑ConsecImperf‑3ms
-    
-      1254                 5347          2145
-      bə·rā·’ām;           ū·nə·qê·ḇāh   zā·ḵār
-      בְּרָאָ֑ם                 וּנְקֵבָ֖ה         זָכָ֥ר
-      He created them      and female    male
-      V‑Qal‑Perf‑3ms | 3mp Conj‑w | N‑fs N‑ms
-    #+END_SRC
 
+    + [[https://biblehub.com/interlinear/genesis/5-2.htm][Genesis 5:2]] (Interlinear) :: 
+        | Strongs Code | Transliteration | Hebrew  | Translation       | Grammar                          |
+        |--------------+-----------------+---------+-------------------+----------------------------------|
+        | [[strongs:H2145][H2145]]        | zā·ḵār          | זכר     | Male              | N‑ms                             |
+        | [[strongs:H5347][H5347]]        | ū·nə·qê·ḇāh     | ונקבה   | and female        | Conj‑w ¦ N‑fs                    |
+        | [[strongs:H1254][H1254]]        | bə·rā·’ām;      | בראם    | He created them   | V‑Qal‑Perf‑3ms ¦ 3mp             |
+        | [[strongs:H1288][H1288]]        | way·ḇā·reḵ      | ויברך   | and He blessed    | Conj‑w ¦ V‑Piel‑ConsecImperf‑3ms |
+        | [[strongs:H853][H853]]         | ’ō·ṯām,         | אתם     | them              | DirObjM ¦ 3mp                    |
+        | [[strongs:H7121][H7121]]        | way·yiq·rā      | ויקרא   | and called        | Conj‑w ¦ V‑Qal‑ConsecImperf‑3ms  |
+        | [[strongs:H853][H853]]         | ’eṯ-            | את־     | -                 | DirObjM                          |
+        | [[strongs:H8034][H8034]]        | šə·mām          | שמם     | their name        | N‑msc ¦ 3mp                      |
+        | [[strongs:H120][H120]]         | *’ā·ḏām,*         | *אדם*     | *Man*               | N‑ms                             |
+        | [[strongs:H3117][H3117]]        | bə·yō·wm        | ביום    | in the day        | Prep‑b ¦ N‑msc                   |
+        | [[strongs:H1254][H1254]]        | hib·bā·rə·’ām.  | הבראם׃ס | they were created | V‑Nifal‑Inf ¦ 3mp                |
+    
     It would also be semantically correct to say, "deeds [[strongs:G2041][(G2041 ergōn; works)]] apart from [[strongs:G5565][(G5565 chōris)]] faith".
     Deeds apart from faith would be the external actions.
 
@@ -38838,19 +38833,19 @@ Yet I believe that sanctification is ongoing in some sense. The entire time I've
   *[[https://www.biblegateway.com/passage/?search=Galatians%206%3A15&version=ESV][Galatians 6:15]]* - For neither circumcision counts for anything, nor uncircumcision, but a new creation [[https://www.blueletterbible.org/lexicon/g2537/kjv/tr/0-1/][(G2537 kainē; new)]] [[https://www.blueletterbible.org/lexicon/g2937/kjv/tr/0-1/][(G2937 ktisis; creation)]]. (ESV)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3777    1063 4061         5100     1510     3777 203
-  oute    gar  peritomē     ti       estin    oute akrobystia
-  οὔτε    γὰρ  περιτομή     τί       ἐστιν  , οὔτε ἀκροβυστία  ;
-  Neither for  circumcision anything is       nor  uncircumcision
-  Conj    Conj N-NFS        IPro-NNS V-PIA-3S Conj N-NFS
-
-  235     2537    2937
-  alla    kainē   ktisis
-  ἀλλὰ    καινὴ   κτίσις  .
-  instead a new   creation
-  Conj    Adj-NFS N-NFS
-#+END_SRC
++ [[https://biblehub.com/interlinear/galatians/6-15.htm][Galatians 6:15]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek        | Translation    | Grammar  |
+    |--------------+-----------------+--------------+----------------+----------|
+    | [[strongs:G3777][G3777]]        | oute            | οὔτε         | Neither        | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ          | for            | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G4061][G4061]]        | peritomē        | περιτομή     | circumcision   | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
+    | [[strongs:G5100][G5100]]        | ti              | τί           | anything       | [[https://biblehub.com/grammar/ipro-nns.htm][IPro-NNS]] |
+    | [[strongs:G1510][G1510]]        | estin           | ἐστιν ,      | is             | [[https://biblehub.com/grammar/v-pia-3s.htm][V-PIA-3S]] |
+    | [[strongs:G3777][G3777]]        | oute            | οὔτε         | nor            | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G203][G203]]         | akrobystia      | ἀκροβυστία ; | uncircumcision | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
+    | [[strongs:G235][G235]]         | alla            | ἀλλὰ         | instead        | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G2537][G2537]]        | kainē           | καινὴ        | a new          | [[https://biblehub.com/grammar/adj-nfs.htm][Adj-NFS]]  |
+    | [[strongs:G2937][G2937]]        | ktisis          | κτίσις .     | creation       | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A16-21&version=ESV][II Corinthians 5:16-21]]* - From now on, therefore, we regard no one according to the flesh [[strongs:G4561][(G4561 sarx)]]. Even though we once regarded Christ according to the flesh [[strongs:G4561][(G4561 sarx)]], we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation  [[https://www.blueletterbible.org/lexicon/g2537/kjv/tr/0-1/][(G2537 kainē; new)]] [[https://www.blueletterbible.org/lexicon/g2937/kjv/tr/0-1/][(G2937 ktisis; creation)]]. The old has passed away; behold, the new has come. All this is from God, who through Christ reconciled us to himself and gave us the ministry of reconciliation; that is, in Christ God was reconciling the world to himself, not counting their trespasses against them, and entrusting to us the message of reconciliation. Therefore, we are ambassadors for Christ, God making his appeal through us. We implore you on behalf of Christ, be reconciled to God. For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
@@ -63963,25 +63958,22 @@ We are zealous to do good works, Jesus having redeemed us and given us His Spiri
 
 People who are now in Christ are a new creation  [[https://www.blueletterbible.org/lexicon/g2537/kjv/tr/0-1/][(G2537 kainē; new)]] [[https://www.blueletterbible.org/lexicon/g2937/kjv/tr/0-1/][(G2937 ktisis; creation)]], and we should be transitioning into the new. That might take some shaking off of old things, and involves being sanctified by obedience to the Truth. But those who are in Christ are a [[https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/][brand new creation, born-again]]:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  5620 [e]  1487 [e] 5100 [e] 1722 [e] 5547 [e]  2537 [e]
-  hōste     ei       tis      en       Christō   kainē
-  ὥστε      εἴ       τις      ἐν       Χριστῷ  , καινὴ
-  Therefore if       anyone   [is] in  Christ    [he is] a new
-  Conj      Conj     IPro-NMS Prep     N-DMS     Adj-NFS
-
-  2937 [e]  3588 [e] 744 [e]    3928 [e]         2400 [e]
-  ktisis    ta       archaia    parēlthen        idou
-  κτίσις  . τὰ       ἀρχαῖα     παρῆλθεν  ;      ἰδοὺ  ,
-  creation  The      old things have passed away behold
-  N-NFS     Art-NNP  Adj-NNP    V-AIA-3S         V-AMA-2S
-
-  1096 [e]            2537 [e]
-  gegonen             kaina
-  γέγονεν             καινά  .
-  has come into being [the] new
-  V-RIA-3S            Adj-NNP
-#+END_SRC
++ [[https://biblehub.com/interlinear/2_corinthians/5-17.htm][II Corinthians 5:17]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek      | Translation      | Grammar  |
+    |--------------+-----------------+------------+------------------+----------|
+    | [[strongs:G5620][G5620]]        | hōste           | ὥστε       | Therefore        | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1487][G1487]]        | ei              | εἴ         | if               | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G5100][G5100]]        | tis             | τις        | anyone           | [[https://biblehub.com/grammar/ipro-nms.htm][IPro-NMS]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν         | [is] in          | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G5547][G5547]]        | Christō         | Χριστῷ ,   | Christ           | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]    |
+    | [[strongs:G2537][G2537]]        | kainē           | καινὴ      | [he is] a new    | [[https://biblehub.com/grammar/adj-nfs.htm][Adj-NFS]]  |
+    | [[strongs:G2937][G2937]]        | ktisis          | κτίσις .   | creation         | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
+    | [[strongs:G3588][G3588]]        | ta              | τὰ         | the              | [[https://biblehub.com/grammar/art-nnp.htm][Art-NNP]]  |
+    | [[strongs:G744][G744]]         | archaia         | ἀρχαῖα     | old things       | [[https://biblehub.com/grammar/adj-nnp.htm][Adj-NNP]]  |
+    | [[strongs:G3928][G3928]]        | parēlthen       | παρῆλθεν ; | have passed away | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]] |
+    | [[strongs:G3708][G3708]]        | idou            | ἰδοὺ ,     | Behold           | [[https://biblehub.com/grammar/v-ama-2s.htm][V-AMA-2S]] |
+    | [[strongs:G1096][G1096]]        | gegonen         | γέγονεν    | has emerged      | [[https://biblehub.com/grammar/v-ria-3s.htm][V-RIA-3S]] |
+    | [[strongs:G2537][G2537]]        | kaina           | καινά .    | [the] new        | [[https://biblehub.com/grammar/adj-nnp.htm][Adj-NNP]]  |
 
 Our sins were paid for by Jesus' death. Jesus rose from the dead:
 
@@ -67730,25 +67722,29 @@ they would obey God. But the food itself doesn't do any defiling.
   *[[https://biblehub.com/interlinear/mark/7-19.htm][Mark 7:19]]* - because not it enters of him into the heart but into the belly and into the sewer goes out purifying all the food (Interlinear)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3754    3756 1531         846       1519 3588    2588       235  1519 3588
-  hoti    ouk  eisporeuetai autou     eis  tēn     kardian    all’ eis  tēn
-  ὅτι     οὐκ  εἰσπορεύεται αὐτοῦ     εἰς  τὴν     καρδίαν  , ἀλλ’ εἰς  τὴν
-  because not  it enters    of him    into the     heart      but  into the
-  Conj    Adv  V-PIM/P-3S   PPro-GM3S Prep Art-AFS N-AFS      Conj Prep Art-AFS
-
-  2836      2532 1519 3588    856       1607           2511       3956    3588
-  koilian   kai  eis  ton     aphedrōna ekporeuetai    katharizōn panta   ta
-  κοιλίαν , καὶ  εἰς  τὸν     ἀφεδρῶνα  ἐκπορεύεται  ? καθαρίζων  πάντα   τὰ
-  belly     and  into the     sewer     goes out       purifying  all     the
-  N-AFS     Conj Prep Art-AMS N-AMS     V-PIM/P-3S     V-PPA-NMS  Adj-ANP Art-ANP
-
-  1033 [e]
-  brōmata
-  βρώματα  .
-  food
-  N-ANP
-#+END_SRC
++ [[https://biblehub.com/interlinear/mark/7-19.htm][Mark 7:19]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek         | Translation | Grammar    |
+    |--------------+-----------------+---------------+-------------+------------|
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι           | because     | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G3756][G3756]]        | ouk             | οὐκ           | not         | [[https://biblehub.com/grammar/adv.htm][Adv]]        |
+    | [[strongs:G1531][G1531]]        | eisporeuetai    | εἰσπορεύεται  | it enters   | [[https://biblehub.com/grammar/v-pim%2Fp-3s.htm][V-PIM/P-3S]] |
+    | [[strongs:G846][G846]]         | autou           | αὐτοῦ         | of him      | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]]  |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | into        | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν           | the         | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]    |
+    | [[strongs:G2588][G2588]]        | kardian         | καρδίαν ,     | heart       | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]      |
+    | [[strongs:G235][G235]]         | all’            | ἀλλ’          | but         | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | into        | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν           | the         | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]    |
+    | [[strongs:G2836][G2836]]        | koilian         | κοιλίαν ,     | belly       | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]      |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ           | and         | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | into        | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3588][G3588]]        | ton             | τὸν           | the         | [[https://biblehub.com/grammar/art-ams.htm][Art-AMS]]    |
+    | [[strongs:G856][G856]]         | aphedrōna       | ἀφεδρῶνα      | draught     | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]      |
+    | [[strongs:G1607][G1607]]        | ekporeuetai     | ἐκπορεύεται . | goes out    | [[https://biblehub.com/grammar/v-pim%2Fp-3s.htm][V-PIM/P-3S]] |
+    | [[strongs:G2511][G2511]]        | katharizōn      | καθαρίζων     | purifying   | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]]  |
+    | [[strongs:G3956][G3956]]        | panta           | πάντα         | all         | [[https://biblehub.com/grammar/adj-anp.htm][Adj-ANP]]    |
+    | [[strongs:G3588][G3588]]        | ta              | τὰ            | the         | [[https://biblehub.com/grammar/art-anp.htm][Art-ANP]]    |
+    | [[strongs:G1033][G1033]]        | brōmata         | βρώματα .     | food        | [[https://biblehub.com/grammar/n-anp.htm][N-ANP]]      |
 
 Evil things coming from the heart of man defile the man. So with good thoughts proceeding from a pure heart, that would purify the man? And  this purification I would call "soul purification", the soul being the rest of the spirit-man, I think. So there's the heart, where our faith, trust, love and obedience to God are, and where the word is sown. And the soul / the rest of the soul, and God wants it all to be purified.
 
@@ -72204,19 +72200,18 @@ A person is justified when God justifies the person, not just because a person s
 
 + Interlinear Bible :: [[https://biblehub.com/interlinear/romans/3-28.htm][Romans 3:28]]
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3049 [e]    1063 [e]  1344 [e]        4102 [e]
-  logizometha gar       dikaiousthai    pistei
-  λογιζόμεθα  γὰρ       δικαιοῦσθαι     πίστει
-  We reckon   therefore to be justified by faith
-  V-PIM/P-1P  Conj      V-PNM/P         N-DFS
-
-  444 [e]     5565 [e]   2041 [e] 3551 [e]
-  anthrōpon   chōris     ergōn    nomou
-  ἄνθρωπον  , χωρὶς      ἔργων    νόμου  .
-  a man       apart from works    of the Law
-  N-AMS       Prep       N-GNP    N-GMS
-#+END_SRC
++ [[https://biblehub.com/interlinear/romans/3-28.htm][Romans 3:28]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation     | Grammar    |
+    |--------------+-----------------+-------------+-----------------+------------|
+    | [[strongs:G3049][G3049]]        | logizometha     | λογιζόμεθα  | We reckon       | [[https://biblehub.com/grammar/v-pim%2Fp-1p.htm][V-PIM/P-1P]] |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | therefore       | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G1344][G1344]]        | dikaiousthai    | δικαιοῦσθαι | to be justified | [[https://biblehub.com/grammar/v-pnm%2Fp.htm][V-PNM/P]]    |
+    | [[strongs:G4102][G4102]]        | pistei          | πίστει      | by faith        | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]      |
+    | [[strongs:G444][G444]]         | anthrōpon       | ἄνθρωπον ,  | a man           | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]      |
+    | [[strongs:G5565][G5565]]        | chōris          | χωρὶς       | apart from      | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G2041][G2041]]        | ergōn           | ἔργων       | works           | [[https://biblehub.com/grammar/n-gnp.htm][N-GNP]]      |
+    | [[strongs:G3551][G3551]]        | nomou           | νόμου .     | of the Law      | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
++END_SRC
 
 But works of the law is different from works:
 
@@ -72352,13 +72347,18 @@ We must walk not as enemies of the cross of Christ, but walk in godliness, behav
   *[[https://biblehub.com/interlinear/hebrews/5-8.htm][Hebrews 5:8]]* - though being a Son He learned from the things He suffered - obedience (Interlinear)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2539   1510      5207    3129       575  3739       3958        3588     5218
-  kaiper ōn        Huios   emathen    aph’ hōn        epathen     tēn      hypakoēn
-  καίπερ ὢν        Υἱός  , ἔμαθεν     ἀφ’  ὧν         ἔπαθεν  ,   τὴν      ὑπακοήν  ,
-  though being     a Son   He learned from the things He suffered  -       obedience
-  Conj   V-PPA-NMS N-NMS   V-AIA-3S   Prep RelPro-GNP V-AIA-3S    Art-AFS  N-AFS
-#+END_SRC
++ [[https://biblehub.com/interlinear/hebrews/5-8.htm][Hebrews 5:8]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek     | Translation      | Grammar    |
+    |--------------+-----------------+-----------+------------------+------------|
+    | [[strongs:G2539][G2539]]        | kaiper          | καίπερ    | though           | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G1510][G1510]]        | ōn              | ὢν        | being            | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]]  |
+    | [[strongs:G5207][G5207]]        | Huios           | Υἱός ,    | a son            | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]      |
+    | [[strongs:G3129][G3129]]        | emathen         | ἔμαθεν    | he learned       | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]   |
+    | [[strongs:G575][G575]]         | aph’            | ἀφ’       | from             | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3739][G3739]]        | hōn             | ὧν        | the things which | [[https://biblehub.com/grammar/relpro-gnp.htm][RelPro-GNP]] |
+    | [[strongs:G3958][G3958]]        | epathen         | ἔπαθεν ,  | he suffered      | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]   |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν       | -                | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]    |
+    | [[strongs:G5218][G5218]]        | hypakoēn        | ὑπακοήν , | obedience        | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]      |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Hebrews%205%3A7-10&version=ESV][Hebrews 5:7-10]]* - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to him who was able to save him from death, and he was heard because of his reverence. Although he was a son, he learned obedience through what he suffered. And _being made perfect, he became the source of eternal salvation to all who obey him_, being designated by God a high priest after the order of Melchizedek. (ESV)
@@ -73252,7 +73252,7 @@ Jesus judges on deeds and on words (possibly on the way you judge others, the sa
 #+END_QUOTE
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3068 [e]
+  H3068
   Yah·weh
   יְהוָ֛ה
   Yahweh
@@ -73465,24 +73465,53 @@ Ironically, I feel like this word [[https://biblehub.com/greek/5219.htm][hupakou
 Hupakouó really means to be fully compliant to:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  5219 /hypakoúō ("obey") is acting under the authority of the one speaking, i.e. really listening to the one giving the charge (order). 5219 /hypakoúō ("to hearken, obey") suggests attentively listening, i.e. fully compliant (responsive).
+  G5219 /hypakoúō ("obey") is acting under the authority of the one speaking, i.e. really listening to the one giving the charge (order). G5219 /hypakoúō ("to hearken, obey") suggests attentively listening, i.e. fully compliant (responsive).
 
-  [5219 (hypakoúō) is an "intensification" of the simple verb "to listen" (191 /akoúō, "hear").]
+  [G5219 (hypakoúō) is an "intensification" of the simple verb "to listen" (G191 /akoúō, "hear").]
 #+END_SRC
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  235  3756 3956    5219       3588    2098         2268   1063 3004
-  All’ ou   pantes  hypēkousan tō      euangeliō    Ēsaias gar  legei
-  Ἀλλ’ οὐ   πάντες  ὑπήκουσαν  τῷ      εὐαγγελίῳ  . Ἠσαΐας γὰρ  λέγει  ,
-  But  not  all     heeded     the     good news    Isaiah for  says
-  Conj Adv  Adj-NMP V-AIA-3P   Art-DNS N-DNS        N-NMS  Conj V-PIA-3S
++ [[https://biblehub.com/interlinear/romans/10-16.htm][Romans 10:16]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation  | Grammar  |
+    |--------------+-----------------+-------------+--------------+----------|
+    | [[strongs:G235][G235]]         | All’            | Ἀλλ’        | But          | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G3756][G3756]]        | ou              | οὐ          | not          | [[https://biblehub.com/grammar/adv.htm][Adv]]      |
+    | [[strongs:G3956][G3956]]        | pantes          | πάντες      | all          | [[https://biblehub.com/grammar/adj-nmp.htm][Adj-NMP]]  |
+    | [[strongs:G5219][G5219]]        | hypēkousan      | ὑπήκουσαν   | obeyed       | [[https://biblehub.com/grammar/v-aia-3p.htm][V-AIA-3P]] |
+    | [[strongs:G3588][G3588]]        | tō              | τῷ          | the          | [[https://biblehub.com/grammar/art-dns.htm][Art-DNS]]  |
+    | [[strongs:G2098][G2098]]        | euangeliō       | εὐαγγελίῳ . | gospel       | [[https://biblehub.com/grammar/n-dns.htm][N-DNS]]    |
+    | [[strongs:G2268][G2268]]        | Ēsaias          | Ἠσαΐας*     | Isaiah       | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]    |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | indeed       | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G3004][G3004]]        | legei           | λέγει ,     | says         | [[https://biblehub.com/grammar/v-pia-3s.htm][V-PIA-3S]] |
+    | [[strongs:G2962][G2962]]        | Kyrie           | Κύριε ,     | Lord         | [[https://biblehub.com/grammar/n-vms.htm][N-VMS]]    |
+    | [[strongs:G5101][G5101]]        | tis             | τίς         | who          | [[https://biblehub.com/grammar/ipro-nms.htm][IPro-NMS]] |
+    | [[strongs:G4100][G4100]]        | episteusen      | ἐπίστευσεν  | has believed | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]] |
+    | [[strongs:G3588][G3588]]        | tē              | τῇ          | the          | [[https://biblehub.com/grammar/art-dfs.htm][Art-DFS]]  |
+    | [[strongs:G189][G189]]         | akoē            | ἀκοῇ        | report       | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]    |
+    | [[strongs:G1473][G1473]]        | hēmōn           | ἡμῶν ?      | of us        | [[https://biblehub.com/grammar/ppro-g1p.htm][PPro-G1P]] |
 
-  2962     5101     4100         3588    189    1473
-  Kyrie    tis      episteusen   tē      akoē   hēmōn
-  Κύριε  , τίς      ἐπίστευσεν   τῇ      ἀκοῇ   ἡμῶν  ?
-  Lord     who      has believed the     report of us
-  N-VMS    IPro-NMS V-AIA-3S     Art-DFS N-DFS  PPro-G1P
-#+END_SRC
++ [[https://biblehub.com/interlinear/hebrews/4-2.htm][Hebrews 4:2]] (Interlinear) :: 
+    | Strongs Code | Transliteration  | Greek             | Translation                        | Grammar     |
+    |--------------+------------------+-------------------+------------------------------------+-------------|
+    | [[strongs:G2532][G2532]]        | kai              | καὶ               | and                                | [[https://biblehub.com/grammar/conj.htm][Conj]]        |
+    | [[strongs:G1063][G1063]]        | gar              | γάρ               | indeed                             | [[https://biblehub.com/grammar/conj.htm][Conj]]        |
+    | [[strongs:G1510][G1510]]        | esmen            | ἐσμεν             | we are [those]                     | [[https://biblehub.com/grammar/v-pia-1p.htm][V-PIA-1P]]    |
+    | [[strongs:G2097][G2097]]        | euēngelismenoi   | εὐηγγελισμένοι    | having had gospel preached [to us] | [[https://biblehub.com/grammar/v-rpm%2Fp-nmp.htm][V-RPM/P-NMP]] |
+    | [[strongs:G2509][G2509]]        | kathaper         | καθάπερ           | just as                            | [[https://biblehub.com/grammar/adv.htm][Adv]]         |
+    | [[strongs:G2548][G2548]]        | kakeinoi         | κἀκεῖνοι ;        | they [did]                         | [[https://biblehub.com/grammar/dpro-nmp.htm][DPro-NMP]]    |
+    | [[strongs:G235][G235]]         | all’             | ἀλλ’              | but                                | [[https://biblehub.com/grammar/conj.htm][Conj]]        |
+    | [[strongs:G3756][G3756]]        | ouk              | οὐκ               | not                                | [[https://biblehub.com/grammar/adv.htm][Adv]]         |
+    | [[strongs:G5623][G5623]]        | ōphelēsen        | ὠφέλησεν          | did profit                         | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]    |
+    | [[strongs:G3588][G3588]]        | ho               | ὁ                 | the                                | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]     |
+    | [[strongs:G3056][G3056]]        | logos            | λόγος             | message                            | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]       |
+    | [[strongs:G3588][G3588]]        | tēs              | τῆς               | of [their]                         | [[https://biblehub.com/grammar/art-gfs.htm][Art-GFS]]     |
+    | [[strongs:G189][G189]]         | akoēs            | ἀκοῆς             | hearing                            | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]       |
+    | [[strongs:G1565][G1565]]        | ekeinous         | ἐκείνους ,        | them                               | [[https://biblehub.com/grammar/dpro-amp.htm][DPro-AMP]]    |
+    | [[strongs:G3361][G3361]]        | mē               | μὴ                | not                                | [[https://biblehub.com/grammar/adv.htm][Adv]]         |
+    | [[strongs:G4786][G4786]]        | synkekerasmenous | συγκεκερασμένους* | having been united with            | [[https://biblehub.com/grammar/v-rpm%2Fp-amp.htm][V-RPM/P-AMP]] |
+    | [[strongs:G3588][G3588]]        | tē               | τῇ                | the                                | [[https://biblehub.com/grammar/art-dfs.htm][Art-DFS]]     |
+    | [[strongs:G4102][G4102]]        | pistei           | πίστει            | faith                              | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]       |
+    | [[strongs:G3588][G3588]]        | tois             | τοῖς              | of those                           | [[https://biblehub.com/grammar/art-dmp.htm][Art-DMP]]     |
+    | [[strongs:G191][G191]]         | akousasin        | ἀκούσασιν .       | having heard                       | [[https://biblehub.com/grammar/v-apa-dmp.htm][V-APA-DMP]]   |
 
 So we have to believe on Him (who He is), and call on Him to save us - and this is an act of obedience to His command to trust in Him and call on Him, so we come to trust and obey Him:
 
@@ -73850,27 +73879,45 @@ Judas Iscariot repented after betraying Jesus and witnessing Jesus' crucifixion.
 
 I think we can say that Jesus gave His all, even to Judas. Jesus really tried to get Judas to trust Him and yield his life to Him in advance of witnessing His crucifixion:
 
-[[https://biblehub.com/interlinear/matthew/27-3.htm][biblehub.com 27-3.htm: Matthew 27:3 Interlinear:]]
++ [[https://biblehub.com/interlinear/matthew/27-3.htm][Matthew 27:3]] (Interlinear) :: 
+    Then (G5119 Tote)
+    having seen (G3708 idōn)
+    Judas (G2455 Ioudas)
+    the [one] (G3588 ho)
+    having delivered up (G3860 paradidous)
+    him (G846 auton)
+    that (G3754 hoti)
+    he was condemned (G2632 katekrithē)
+    having regretted [it] (G3338 metamelētheis)
+    returned (G4762 estrepsen)
+    the (G3588 ta)
+    thirty (G5144 triakonta)
+    pieces of silver (G694 argyria)
+    to the (G3588 tois)
+    chief priests (G749 archiereusin)
+    and (G2532 kai)
+    elders (G4245 presbyterois)
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  5119 3708        2455     3588      3860                846       3754
-  Tote idōn        Ioudas   ho        paradidous          auton     hoti
-  Τότε ἰδὼν        Ἰούδας , ὁ         παραδιδοὺς*         αὐτὸν  ,  ὅτι
-  Then having seen Judas    the [one] having delivered up Him       that
-  Adv  V-APA-NMS   N-NMS    Art-NMS   V-PPA-NMS           PPro-AM3S Conj
-
-  2632             3338                  4762        3588    5144
-  katekrithē       metamelētheis         estrepsen   ta      triakonta
-  κατεκρίθη  ,     μεταμεληθεὶς  ,       ἔστρεψεν    τὰ      τριάκοντα
-  He was condemned having regretted [it] he returned the     thirty
-  V-AIP-3S         V-APP-NMS             V-AIA-3S    Art-ANP Adj-ANP
-
-  694              3588    749           2532 4245
-  argyria          tois    archiereusin  kai  presbyterois
-  ἀργύρια          τοῖς    ἀρχιερεῦσιν   καὶ  πρεσβυτέροις ,
-  pieces of silver to the  chief priests and  elders
-  N-ANP            Art-DMP N-DMP         Conj Adj-DMP
-#+END_SRC
++ [[https://biblehub.com/interlinear/matthew/27-3.htm][Matthew 27:3]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek          | Translation           | Grammar   |
+    |--------------+-----------------+----------------+-----------------------+-----------|
+    | [[strongs:G5119][G5119]]        | Tote            | Τότε           | Then                  | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G3708][G3708]]        | idōn            | ἰδὼν           | having seen           | [[https://biblehub.com/grammar/v-apa-nms.htm][V-APA-NMS]] |
+    | [[strongs:G2455][G2455]]        | Ioudas          | Ἰούδας         | Judas                 | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ              | the [one]             | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G3860][G3860]]        | paradidous      | παραδιδοὺς*    | having delivered up   | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G846][G846]]         | auton           | αὐτὸν          | him                   | [[https://biblehub.com/grammar/ppro-am3s.htm][PPro-AM3S]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι            | that                  | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G2632][G2632]]        | katekrithē      | κατεκρίθη ,    | he was condemned      | [[https://biblehub.com/grammar/v-aip-3s.htm][V-AIP-3S]]  |
+    | [[strongs:G3338][G3338]]        | metamelētheis   | μεταμεληθεὶς , | having regretted [it] | [[https://biblehub.com/grammar/v-app-nms.htm][V-APP-NMS]] |
+    | [[strongs:G4762][G4762]]        | estrepsen       | ἔστρεψεν       | returned              | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]  |
+    | [[strongs:G3588][G3588]]        | ta              | τὰ             | the                   | [[https://biblehub.com/grammar/art-anp.htm][Art-ANP]]   |
+    | [[strongs:G5144][G5144]]        | triakonta       | τριάκοντα      | thirty                | [[https://biblehub.com/grammar/adj-anp.htm][Adj-ANP]]   |
+    | [[strongs:G694][G694]]         | argyria         | ἀργύρια        | pieces of silver      | [[https://biblehub.com/grammar/n-anp.htm][N-ANP]]     |
+    | [[strongs:G3588][G3588]]        | tois            | τοῖς           | to the                | [[https://biblehub.com/grammar/art-dmp.htm][Art-DMP]]   |
+    | [[strongs:G749][G749]]         | archiereusin    | ἀρχιερεῦσιν    | chief priests         | [[https://biblehub.com/grammar/n-dmp.htm][N-DMP]]     |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ            | and                   | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G4245][G4245]]        | presbyterois    | πρεσβυτέροις , | elders                | [[https://biblehub.com/grammar/adj-dmp.htm][Adj-DMP]]   |
 
 We serve our earthly masters/lords sincerely.
 
@@ -76786,31 +76833,26 @@ Jesus called us to sanctified (i.e. repent from sin, and live to God). We seek t
   *[[https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A14&version=ESV][II Thessalonians 2:14]]* - To this he called you through our gospel, so that you may *obtain the glory of our Lord Jesus Christ*.
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1519 [e] 3739 [e]   2532 [e] 2564 [e]  4771 [e]
-  eis      ho         kai      ekalesen  hymas
-  εἰς      ὃ          καὶ      ἐκάλεσεν  ὑμᾶς  ,
-  to       this       also     He called you
-  Prep     RelPro-ANS Conj     V-AIA-3S  PPro-A2P
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1223 [e] 3588 [e] 2098 [e]   1473 [e] 1519 [e] 4047 [e]
-  dia      tou      euangeliou hēmōn    eis      peripoiēsin
-  διὰ      τοῦ      εὐαγγελίου ἡμῶν  ,  εἰς      περιποίησιν
-  through  the      gospel     of us    to       [the] obtaining
-  Prep     Art-GNS  N-GNS      PPro-G1P Prep     N-AFS
-#+END_SRC
-
-/of [the] glory of _the   Lord     of us    Jesus    Christ_/:
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1391 [e]       3588 [e] 2962 [e] 1473 [e] 2424 [e] 5547 [e]
-  doxēs          tou      Kyriou   hēmōn    Iēsou    Christou
-  δόξης          τοῦ      Κυρίου   ἡμῶν     Ἰησοῦ    Χριστοῦ  .
-  of [the] glory of the   Lord     of us    Jesus    Christ
-  N-GFS          Art-GMS  N-GMS    PPro-G1P N-GMS    N-GMS
-#+END_SRC
++ [[https://biblehub.com/interlinear/2_thessalonians/2-14.htm][II Thessalonians 2:14]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation     | Grammar    |
+    |--------------+-----------------+-------------+-----------------+------------|
+    | [[strongs:G1519][G1519]]        | eis             | εἰς         | to              | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3739][G3739]]        | ho              | ὃ           | this            | [[https://biblehub.com/grammar/relpro-ans.htm][RelPro-ANS]] |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | also            | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G2564][G2564]]        | ekalesen        | ἐκάλεσεν    | he called       | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]   |
+    | [[strongs:G4771][G4771]]        | hymas           | ὑμᾶς ,      | you             | [[https://biblehub.com/grammar/ppro-a2p.htm][PPro-A2P]]   |
+    | [[strongs:G1223][G1223]]        | dia             | διὰ         | through         | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G3588][G3588]]        | tou             | τοῦ         | the             | [[https://biblehub.com/grammar/art-gns.htm][Art-GNS]]    |
+    | [[strongs:G2098][G2098]]        | euangeliou      | εὐαγγελίου  | gospel          | [[https://biblehub.com/grammar/n-gns.htm][N-GNS]]      |
+    | [[strongs:G1473][G1473]]        | hēmōn           | ἡμῶν ,      | of us           | [[https://biblehub.com/grammar/ppro-g1p.htm][PPro-G1P]]   |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς         | to              | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G4047][G4047]]        | peripoiēsin     | περιποίησιν | [the] obtaining | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]      |
+    | [[strongs:G1391][G1391]]        | doxēs           | δόξης       | *of [the] glory*  | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]      |
+    | [[strongs:G3588][G3588]]        | tou             | τοῦ         | *of the*          | [[https://biblehub.com/grammar/art-gms.htm][Art-GMS]]    |
+    | [[strongs:G2962][G2962]]        | Kyriou          | Κυρίου      | *Lord*            | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
+    | [[strongs:G1473][G1473]]        | hēmōn           | ἡμῶν ,      | *of us*           | [[https://biblehub.com/grammar/ppro-g1p.htm][PPro-G1P]]   |
+    | [[strongs:G2424][G2424]]        | Iēsou           | Ἰησοῦ       | *Jesus*           | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
+    | [[strongs:G5547][G5547]]        | Christou        | Χριστοῦ .   | *Christ*          | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]      |
 
 We seek the glory of our Lord Jesus Christ, not our own glory. We should aim not to speak on our own authority, but instead to speak the Truth from God:
 
@@ -92391,25 +92433,20 @@ I think [[https://www.biblegateway.com/passage/?search=1%20John%202%3A15-17&vers
 
 Man and woman, husband and wife are a single unit called Adam:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-       1254              3117           120     8034        853
-  s    hib·bā·rə·’ām.    bə·yō·wm       ’ā·ḏām, šə·mām      ’eṯ-
-  ס    הִבָּֽרְאָֽם׃            בְּי֖וֹם           אָדָ֔ם     שְׁמָם֙         אֶת־
-   -   they were created in the day     man     them         -
-  Punc V‑Nifal‑Inf | 3mp Prep‑b | N‑msc N‑ms    N‑msc | 3mp DirObjM
-
-  7121                            853           1288
-  way·yiq·rā                      ’ō·ṯām,       way·ḇā·reḵ
-  וַיִּקְרָ֤א                           אֹתָ֗ם           וַיְבָ֣רֶךְ
-  and called                      them          and He blessed
-  Conj‑w | V‑Qal‑ConsecImperf‑3ms DirObjM | 3mp Conj‑w | V‑Piel‑ConsecImperf‑3ms
-
-  1254                 5347          2145
-  bə·rā·’ām;           ū·nə·qê·ḇāh   zā·ḵār
-  בְּרָאָ֑ם                 וּנְקֵבָ֖ה         זָכָ֥ר
-  He created them      and female    male
-  V‑Qal‑Perf‑3ms | 3mp Conj‑w | N‑fs N‑ms
-#+END_SRC
++ [[https://biblehub.com/interlinear/genesis/5-2.htm][Genesis 5:2]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Hebrew  | Translation       | Grammar                          |
+    |--------------+-----------------+---------+-------------------+----------------------------------|
+    | [[strongs:H2145][H2145]]        | zā·ḵār          | זכר     | Male              | N‑ms                             |
+    | [[strongs:H5347][H5347]]        | ū·nə·qê·ḇāh     | ונקבה   | and female        | Conj‑w ¦ N‑fs                    |
+    | [[strongs:H1254][H1254]]        | bə·rā·’ām;      | בראם    | He created them   | V‑Qal‑Perf‑3ms ¦ 3mp             |
+    | [[strongs:H1288][H1288]]        | way·ḇā·reḵ      | ויברך   | and He blessed    | Conj‑w ¦ V‑Piel‑ConsecImperf‑3ms |
+    | [[strongs:H853][H853]]         | ’ō·ṯām,         | אתם     | them              | DirObjM ¦ 3mp                    |
+    | [[strongs:H7121][H7121]]        | way·yiq·rā      | ויקרא   | and called        | Conj‑w ¦ V‑Qal‑ConsecImperf‑3ms  |
+    | [[strongs:H853][H853]]         | ’eṯ-            | את־     | -                 | DirObjM                          |
+    | [[strongs:H8034][H8034]]        | šə·mām          | שמם     | their name        | N‑msc ¦ 3mp                      |
+    | [[strongs:H120][H120]]         | *’ā·ḏām,*         | *אדם*     | *Man*               | N‑ms                             |
+    | [[strongs:H3117][H3117]]        | bə·yō·wm        | ביום    | in the day        | Prep‑b ¦ N‑msc                   |
+    | [[strongs:H1254][H1254]]        | hib·bā·rə·’ām.  | הבראם׃ס | they were created | V‑Nifal‑Inf ¦ 3mp                |
 
 + [[https://www.youtube.com/watch?v=EZIOPufv5_Y&t=204s][youtube.com: The BEST Explanation of the Trinity You Will EVER Hear | @shamounian {@ChristOverAll-1} @time: 3 min 24 sec]] :: But in creation, God said, “Let us make 
     Adam in Our image, after Our likeness.”
@@ -96359,25 +96396,20 @@ Who is a son of God? Not someone who is enslaved to sin. That's one big tragedy 
 
 Man and woman, husband and wife are a single unit called Adam:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-       1254              3117           120     8034        853
-  s    hib·bā·rə·’ām.    bə·yō·wm       ’ā·ḏām, šə·mām      ’eṯ-
-  ס    הִבָּֽרְאָֽם׃            בְּי֖וֹם           אָדָ֔ם     שְׁמָם֙         אֶת־
-   -   they were created in the day     man     them         -
-  Punc V‑Nifal‑Inf | 3mp Prep‑b | N‑msc N‑ms    N‑msc | 3mp DirObjM
-
-  7121                            853           1288
-  way·yiq·rā                      ’ō·ṯām,       way·ḇā·reḵ
-  וַיִּקְרָ֤א                           אֹתָ֗ם           וַיְבָ֣רֶךְ
-  and called                      them          and He blessed
-  Conj‑w | V‑Qal‑ConsecImperf‑3ms DirObjM | 3mp Conj‑w | V‑Piel‑ConsecImperf‑3ms
-
-  1254                 5347          2145
-  bə·rā·’ām;           ū·nə·qê·ḇāh   zā·ḵār
-  בְּרָאָ֑ם                 וּנְקֵבָ֖ה         זָכָ֥ר
-  He created them      and female    male
-  V‑Qal‑Perf‑3ms | 3mp Conj‑w | N‑fs N‑ms
-#+END_SRC
++ [[https://biblehub.com/interlinear/genesis/5-2.htm][Genesis 5:2]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Hebrew  | Translation       | Grammar                          |
+    |--------------+-----------------+---------+-------------------+----------------------------------|
+    | [[strongs:H2145][H2145]]        | zā·ḵār          | זכר     | Male              | N‑ms                             |
+    | [[strongs:H5347][H5347]]        | ū·nə·qê·ḇāh     | ונקבה   | and female        | Conj‑w ¦ N‑fs                    |
+    | [[strongs:H1254][H1254]]        | bə·rā·’ām;      | בראם    | He created them   | V‑Qal‑Perf‑3ms ¦ 3mp             |
+    | [[strongs:H1288][H1288]]        | way·ḇā·reḵ      | ויברך   | and He blessed    | Conj‑w ¦ V‑Piel‑ConsecImperf‑3ms |
+    | [[strongs:H853][H853]]         | ’ō·ṯām,         | אתם     | them              | DirObjM ¦ 3mp                    |
+    | [[strongs:H7121][H7121]]        | way·yiq·rā      | ויקרא   | and called        | Conj‑w ¦ V‑Qal‑ConsecImperf‑3ms  |
+    | [[strongs:H853][H853]]         | ’eṯ-            | את־     | -                 | DirObjM                          |
+    | [[strongs:H8034][H8034]]        | šə·mām          | שמם     | their name        | N‑msc ¦ 3mp                      |
+    | [[strongs:H120][H120]]         | *’ā·ḏām,*         | *אדם*     | *Man*               | N‑ms                             |
+    | [[strongs:H3117][H3117]]        | bə·yō·wm        | ביום    | in the day        | Prep‑b ¦ N‑msc                   |
+    | [[strongs:H1254][H1254]]        | hib·bā·rə·’ām.  | הבראם׃ס | they were created | V‑Nifal‑Inf ¦ 3mp                |
 
 That is certainly true for two people (1 male and one female) who have been joined together by God. God joins man and woman together, but nowhere is it seen in Scripture that God joins any other combination of independent male and female persons together into a single unit. Also, God's design of this unity involved the creation of Eve from Adam's rib. There is a spiritual reality that is healthy and holy, and is God's design, and there is the homosexuality stuff which is impure, unholy:
 
@@ -100726,25 +100758,22 @@ A new creation lives for Christ:
 
 People who are now in Christ are a new creation  [[https://www.blueletterbible.org/lexicon/g2537/kjv/tr/0-1/][(G2537 kainē; new)]] [[https://www.blueletterbible.org/lexicon/g2937/kjv/tr/0-1/][(G2937 ktisis; creation)]], and we should be transitioning into the new. That might take some shaking off of old things, and involves being sanctified by obedience to the Truth. But those who are in Christ are a [[https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/][brand new creation]]:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  5620 [e]  1487 [e] 5100 [e] 1722 [e] 5547 [e]  2537 [e]
-  hōste     ei       tis      en       Christō   kainē
-  ὥστε      εἴ       τις      ἐν       Χριστῷ  , καινὴ
-  Therefore if       anyone   [is] in  Christ    [he is] a new
-  Conj      Conj     IPro-NMS Prep     N-DMS     Adj-NFS
-
-  2937 [e]  3588 [e] 744 [e]    3928 [e]         2400 [e]
-  ktisis    ta       archaia    parēlthen        idou
-  κτίσις  . τὰ       ἀρχαῖα     παρῆλθεν  ;      ἰδοὺ  ,
-  creation  The      old things have passed away behold
-  N-NFS     Art-NNP  Adj-NNP    V-AIA-3S         V-AMA-2S
-
-  1096 [e]            2537 [e]
-  gegonen             kaina
-  γέγονεν             καινά  .
-  has come into being [the] new
-  V-RIA-3S            Adj-NNP
-#+END_SRC
++ [[https://biblehub.com/interlinear/2_corinthians/5-17.htm][II Corinthians 5:17]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek      | Translation      | Grammar  |
+    |--------------+-----------------+------------+------------------+----------|
+    | [[strongs:G5620][G5620]]        | hōste           | ὥστε       | Therefore        | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1487][G1487]]        | ei              | εἴ         | if               | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G5100][G5100]]        | tis             | τις        | anyone           | [[https://biblehub.com/grammar/ipro-nms.htm][IPro-NMS]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν         | [is] in          | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G5547][G5547]]        | Christō         | Χριστῷ ,   | Christ           | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]    |
+    | [[strongs:G2537][G2537]]        | kainē           | καινὴ      | [he is] a new    | [[https://biblehub.com/grammar/adj-nfs.htm][Adj-NFS]]  |
+    | [[strongs:G2937][G2937]]        | ktisis          | κτίσις .   | creation         | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
+    | [[strongs:G3588][G3588]]        | ta              | τὰ         | the              | [[https://biblehub.com/grammar/art-nnp.htm][Art-NNP]]  |
+    | [[strongs:G744][G744]]         | archaia         | ἀρχαῖα     | old things       | [[https://biblehub.com/grammar/adj-nnp.htm][Adj-NNP]]  |
+    | [[strongs:G3928][G3928]]        | parēlthen       | παρῆλθεν ; | have passed away | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]] |
+    | [[strongs:G3708][G3708]]        | idou            | ἰδοὺ ,     | Behold           | [[https://biblehub.com/grammar/v-ama-2s.htm][V-AMA-2S]] |
+    | [[strongs:G1096][G1096]]        | gegonen         | γέγονεν    | has emerged      | [[https://biblehub.com/grammar/v-ria-3s.htm][V-RIA-3S]] |
+    | [[strongs:G2537][G2537]]        | kaina           | καινά .    | [the] new        | [[https://biblehub.com/grammar/adj-nnp.htm][Adj-NNP]]  |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Matthew%2020%3A27-28&version=ESV][Matthew 20:27-28]]* - and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
@@ -104777,25 +104806,25 @@ Forgive others. This must be done for our sake, that our sins may be forgiven:
   *[[https://www.biblegateway.com/passage/?search=Matthew%206%3A14-15&version=ESV][Matthew 6:14-15]]* - For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. (ESV)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1437 1063 863         3588    444        3588    3900
-  Ean  gar  aphēte      tois    anthrōpois ta      paraptōmata
-  Ἐὰν  γὰρ  ἀφῆτε       τοῖς    ἀνθρώποις  τὰ      παραπτώματα
-  If   for  you forgive  -      men        the     trespasses
-  Conj Conj V-ASA-2P    Art-DMP N-DMP      Art-ANP N-ANP
-
-  846       863          2532 4771     3588    3962   4771
-  autōn     aphēsei      kai  hymin    ho      Patēr  hymōn
-  αὐτῶν  ,  ἀφήσει       καὶ  ὑμῖν     ὁ       Πατὴρ  ὑμῶν
-  of them   will forgive also you      the     Father of you
-  PPro-GM3P V-FIA-3S     Conj PPro-D2P Art-NMS N-NMS  PPro-G2P
-
-  3588    3770 [e]
-  ho      ouranios
-  ὁ       οὐράνιος  .
-   -      Heavenly
-  Art-NMS Adj-NMS
-#+END_SRC
++ [[https://biblehub.com/interlinear/matthew/6-14.htm][Matthew 6:14]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation  | Grammar   |
+    |--------------+-----------------+-------------+--------------+-----------|
+    | [[strongs:G1437][G1437]]        | Ean             | Ἐὰν         | if           | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | indeed       | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G863][G863]]         | aphēte          | ἀφῆτε       | you forgive  | [[https://biblehub.com/grammar/v-asa-2p.htm][V-ASA-2P]]  |
+    | [[strongs:G3588][G3588]]        | tois            | τοῖς        | -            | [[https://biblehub.com/grammar/art-dmp.htm][Art-DMP]]   |
+    | [[strongs:G444][G444]]         | anthrōpois      | ἀνθρώποις   | men          | [[https://biblehub.com/grammar/n-dmp.htm][N-DMP]]     |
+    | [[strongs:G3588][G3588]]        | ta              | τὰ          | the          | [[https://biblehub.com/grammar/art-anp.htm][Art-ANP]]   |
+    | [[strongs:G3900][G3900]]        | paraptōmata     | παραπτώματα | trespasses   | [[https://biblehub.com/grammar/n-anp.htm][N-ANP]]     |
+    | [[strongs:G846][G846]]         | autōn           | αὐτῶν ,     | of them      | [[https://biblehub.com/grammar/ppro-gm3p.htm][PPro-GM3P]] |
+    | [[strongs:G863][G863]]         | aphēsei         | ἀφήσει      | will forgive | [[https://biblehub.com/grammar/v-fia-3s.htm][V-FIA-3S]]  |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | also         | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G4771][G4771]]        | hymin           | ὑμῖν        | you          | [[https://biblehub.com/grammar/ppro-d2p.htm][PPro-D2P]]  |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ           | the          | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G3962][G3962]]        | Patēr           | Πατὴρ       | Father       | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G4771][G4771]]        | hymōn           | ὑμῶν        | of you       | [[https://biblehub.com/grammar/ppro-g2p.htm][PPro-G2P]]  |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ           | -            | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G3770][G3770]]        | ouranios        | οὐράνιος .  | heavenly     | [[https://biblehub.com/grammar/adj-nms.htm][Adj-NMS]]   |
 
 See how that after receiving the Holy Spirit it's very important that we forgive others for their sake too:
 
@@ -105985,25 +106014,30 @@ Jesus Christ is I AM. That means that Jesus Christ the Son of God is Jehovah, ju
 
 + [[https://biblehub.com/interlinear/john/8-24.htm][biblehub.com: John 8:24 Interlinear]] :: I said therefore to you that you will die in the sins of you if for not you believe that I am ([[strongs:G1473][G1473 egō]] [[strongs:G1510][G1510 eimi]] *I AM* /or/ *I am He*) you will die in the sins of you
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2036     3767      4771     3754     599           1722 3588
-  eipon    oun       hymin    hoti     apothaneisthe en   tais
-  εἶπον    οὖν       ὑμῖν     ὅτι      ἀποθανεῖσθε   ἐν   ταῖς
-  I said   therefore to you   that     you will die  in   the
-  V-AIA-1S Conj      PPro-D2P Conj     V-FIM-2P      Prep Art-DFP
-
-  266        4771     1437 1063 3361 4100        3754 1473     1510
-  hamartiais hymōn    ean  gar  mē   pisteusēte  hoti egō      eimi
-  ἁμαρτίαις  ὑμῶν  ;  ἐὰν  γὰρ  μὴ   πιστεύσητε  ὅτι  ἐγώ      εἰμι  ,
-  sins       of you   if   for  not  you believe that I        am [He]
-  N-DFP      PPro-G2P Conj Conj Adv  V-ASA-2P    Conj PPro-N1S V-PIA-1S
-
-  599           1722 3588    266        4771
-  apothaneisthe en   tais    hamartiais hymōn
-  ἀποθανεῖσθε   ἐν   ταῖς    ἁμαρτίαις  ὑμῶν  .
-  you will die  in   the     sins       of you
-  V-FIM-2P      Prep Art-DFP N-DFP      PPro-G2P
-#+END_SRC
++ [[https://biblehub.com/interlinear/john/8-24.htm][John 8:24]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation  | Grammar  |
+    |--------------+-----------------+-------------+--------------+----------|
+    | [[strongs:G3004][G3004]]        | eipon           | εἶπον       | I said       | [[https://biblehub.com/grammar/v-aia-1s.htm][V-AIA-1S]] |
+    | [[strongs:G3767][G3767]]        | oun             | οὖν         | therefore    | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G4771][G4771]]        | hymin           | ὑμῖν        | to you       | [[https://biblehub.com/grammar/ppro-d2p.htm][PPro-D2P]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι         | that         | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G599][G599]]         | apothaneisthe   | ἀποθανεῖσθε | you will die | [[https://biblehub.com/grammar/v-fim-2p.htm][V-FIM-2P]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in           | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G3588][G3588]]        | tais            | ταῖς        | the          | [[https://biblehub.com/grammar/art-dfp.htm][Art-DFP]]  |
+    | [[strongs:G266][G266]]         | hamartiais      | ἁμαρτίαις   | sins         | [[https://biblehub.com/grammar/n-dfp.htm][N-DFP]]    |
+    | [[strongs:G4771][G4771]]        | hymōn           | ὑμῶν ;      | of you       | [[https://biblehub.com/grammar/ppro-g2p.htm][PPro-G2P]] |
+    | [[strongs:G1437][G1437]]        | ean             | ἐὰν         | if           | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | indeed       | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G3361][G3361]]        | mē              | μὴ          | not          | [[https://biblehub.com/grammar/adv.htm][Adv]]      |
+    | [[strongs:G4100][G4100]]        | pisteusēte      | πιστεύσητε  | you believe  | [[https://biblehub.com/grammar/v-asa-2p.htm][V-ASA-2P]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι         | that         | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1473][G1473]]        | egō             | ἐγώ         | I            | [[https://biblehub.com/grammar/ppro-n1s.htm][PPro-N1S]] |
+    | [[strongs:G1510][G1510]]        | eimi            | εἰμι ,      | am [he]      | [[https://biblehub.com/grammar/v-pia-1s.htm][V-PIA-1S]] |
+    | [[strongs:G599][G599]]         | apothaneisthe   | ἀποθανεῖσθε | you will die | [[https://biblehub.com/grammar/v-fim-2p.htm][V-FIM-2P]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in           | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G3588][G3588]]        | tais            | ταῖς        | the          | [[https://biblehub.com/grammar/art-dfp.htm][Art-DFP]]  |
+    | [[strongs:G266][G266]]         | hamartiais      | ἁμαρτίαις   | sins         | [[https://biblehub.com/grammar/n-dfp.htm][N-DFP]]    |
+    | [[strongs:G4771][G4771]]        | hymōn           | ὑμῶν .      | of you       | [[https://biblehub.com/grammar/ppro-g2p.htm][PPro-G2P]] |
 
 We are not to be led astray by false christs:
 
@@ -106011,19 +106045,22 @@ We are not to be led astray by false christs:
   *[[https://biblehub.com/interlinear/mark/13-6.htm][Mark 13:6]]* - Many will come in the name of Me saying - I am [He] ([[strongs:G1473][G1473 egō]] [[strongs:G1510][G1510 eimi]] *I AM* /or/ *I am He*) and many they will mislead (Interlinear)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  4183    2064       1909 3588    3686    1473     3004
-  polloi  eleusontai epi  tō      onomati mou      legontes
-  πολλοὶ  ἐλεύσονται ἐπὶ  τῷ      ὀνόματί μου  ,   λέγοντες
-  Many    will come  in   the     name    of Me    saying
-  Adj-NMP V-FIM-3P   Prep Art-DNS N-DNS   PPro-G1S V-PPA-NMP
-  
-  3754   1473     1510     2532 4183    4105
-  hoti   Egō      eimi     kai  pollous planēsousin
-  ὅτι  , Ἐγώ      εἰμι  ,  καὶ  πολλοὺς πλανήσουσιν  .
-   -     I        am [He]  and  many    they will mislead
-  Conj   PPro-N1S V-PIA-1S Conj Adj-AMP V-FIA-3P
-#+END_SRC
++ [[https://biblehub.com/interlinear/mark/13-6.htm][Mark 13:6]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek         | Translation       | Grammar   |
+    |--------------+-----------------+---------------+-------------------+-----------|
+    | [[strongs:G4183][G4183]]        | polloi          | πολλοὶ        | many              | [[https://biblehub.com/grammar/adj-nmp.htm][Adj-NMP]]   |
+    | [[strongs:G2064][G2064]]        | eleusontai      | ἐλεύσονται    | will come         | [[https://biblehub.com/grammar/v-fim-3p.htm][V-FIM-3P]]  |
+    | [[strongs:G1909][G1909]]        | epi             | ἐπὶ           | in                | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | tō              | τῷ            | the               | [[https://biblehub.com/grammar/art-dns.htm][Art-DNS]]   |
+    | [[strongs:G3686][G3686]]        | onomati         | ὀνόματί       | name              | [[https://biblehub.com/grammar/n-dns.htm][N-DNS]]     |
+    | [[strongs:G1473][G1473]]        | mou             | μου ,         | of me             | [[https://biblehub.com/grammar/ppro-g1s.htm][PPro-G1S]]  |
+    | [[strongs:G3004][G3004]]        | legontes        | λέγοντες ,    | saying            | [[https://biblehub.com/grammar/v-ppa-nmp.htm][V-PPA-NMP]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι           | -                 | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G1473][G1473]]        | Egō             | Ἐγώ           | I                 | [[https://biblehub.com/grammar/ppro-n1s.htm][PPro-N1S]]  |
+    | [[strongs:G1510][G1510]]        | eimi            | εἰμι ,        | am [he]           | [[https://biblehub.com/grammar/v-pia-1s.htm][V-PIA-1S]]  |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ           | and               | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G4183][G4183]]        | pollous         | πολλοὺς       | many              | [[https://biblehub.com/grammar/adj-amp.htm][Adj-AMP]]   |
+    | [[strongs:G4105][G4105]]        | planēsousin     | πλανήσουσιν . | they will mislead | [[https://biblehub.com/grammar/v-fia-3p.htm][V-FIA-3P]]  |
 
 *** 
 #+BEGIN_QUOTE
@@ -108201,45 +108238,27 @@ There are other instances of this - it's faith in Jesus which makes a person wel
   *[[https://www.biblegateway.com/passage/?search=Amos%205%3A8&version=ESV][Amos 5:8]]* - He who made the Pleiades and Orion, and turns deep darkness into the morning and darkens the day into night, who calls for the waters of the sea and pours them out on the surface of the earth, the LORD is his name; (ESV)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  6213              3598         3685          2015
-  ‘ō·śêh            ḵî·māh       ū·ḵə·sîl,     wə·hō·p̄êḵ
-  עֹשֵׂ֨ה	              כִימָ֜ה         וּכְסִ֗יל         וְהֹפֵ֤ךְ
-  He made           the Pleiades and Orion     and He turns
-  V‑Qal‑Prtcpl‑msc  N‑fs         Conj‑w | N‑ms Conj‑w | V‑Qal‑Prtcpl‑ms
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1242               6757                3117          3915
-  lab·bō·qer         ṣal·mā·weṯ,         wə·yō·wm      lay·lāh
-  לַבֹּ֙קֶר֙               צַלְמָ֔וֶת               וְי֖וֹם          לַ֣יְלָה
-  into morning       the shadow of death and the day   as night
-  Prep‑l, Art | N‑ms N‑ms                Conj‑w | N‑ms N‑ms
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2821             7121                  4325
-  heḥ·šîḵ;         haq·qō·w·rê           lə·mê-
-  הֶחְשִׁ֑יךְ            הַקּוֹרֵ֣א                 לְמֵֽי־
-  makes dark       He calls              for the waters
-  V‑Hifil‑Perf‑3ms Art | V‑Qal‑Prtcpl‑ms Prep‑l | N‑mpc
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3220       8210
-  hay·yām,   way·yiš·pə·ḵêm
-  הַיָּ֗ם        וַֽיִּשְׁפְּכֵ֛ם
-  of the sea and pours them out
-  Art | N‑ms Conj‑w | V‑Qal‑ConsecImperf‑3ms | 3mp
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  5921 6440     776          3068        8034
-  ‘al- pə·nê    hā·’ā·reṣ    Yah·weh     šə·mōw.       s
-  עַל־  פְּנֵ֥י      הָאָ֖רֶץ         יְהוָ֥ה        שְׁמֽוֹ׃          ס
-  on   the face of the earth Yahweh      [is] His name  -
-  Prep N‑cpc    Art | N‑fs   N‑proper‑ms N‑msc | 3ms   Punc
-#+END_SRC
++ [[https://biblehub.com/interlinear/amos/5-8.htm][Amos 5:8]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Hebrew | Translation              | Grammar                               |
+    |--------------+-----------------+--------+--------------------------+---------------------------------------|
+    | [[strongs:H6213][H6213]]        | ‘ō·śêh          | עשה    | The One making           | V‑Qal‑Prtcpl‑msc                      |
+    | [[strongs:H3598][H3598]]        | ḵî·māh          | כימה   | the Pleiades             | N‑fs                                  |
+    | [[strongs:H3685][H3685]]        | ū·ḵə·sîl,       | וכסיל  | and Orion                | Conj‑w ¦ N‑ms                         |
+    | [[strongs:H2015][H2015]]        | wə·hō·pêḵ       | והפך   | and the One turning      | Conj‑w ¦ V‑Qal‑Prtcpl‑ms              |
+    | [[strongs:H1242][H1242]]        | lab·bō·qer      | לבקר   | into the morning         | Prep‑l, Art ¦ N‑ms                    |
+    | [[strongs:H6757][H6757]]        | ṣal·mā·weṯ,     | צלמות  | the shadow of death      | N‑ms                                  |
+    | [[strongs:H3117][H3117]]        | wə·yō·wm        | ויום   | the day                  | Conj‑w ¦ N‑ms                         |
+    | [[strongs:H3915][H3915]]        | lay·lāh         | לילה   | as night                 | N‑ms                                  |
+    | [[strongs:H2821][H2821]]        | heḥ·šîḵ;        | החשיך  | and making dark          | V‑Hifil‑Perf‑3ms                      |
+    | [[strongs:H7121][H7121]]        | haq·qō·w·rê     | הקורא  | the One calling          | Art ¦ V‑Qal‑Prtcpl‑ms                 |
+    | [[strongs:H4325][H4325]]        | lə·mê-          | למי־   | to the waters            | Prep‑l ¦ N‑mpc                        |
+    | [[strongs:H3220][H3220]]        | hay·yām,        | הים    | of the sea               | Art ¦ N‑ms                            |
+    | [[strongs:H8210][H8210]]        | way·yiš·pə·ḵêm  | וישפכם | and [who] pours them out | Conj‑w ¦ V‑Qal‑ConsecImperf‑3ms ¦ 3mp |
+    | [[strongs:H5921][H5921]]        | ‘al-            | על־    | over                     | Prep                                  |
+    | [[strongs:H6440][H6440]]        | pə·nê           | פני    | the face                 | N‑cpc                                 |
+    | [[strongs:H776][H776]]         | hā·’ā·reṣ       | הארץ   | of the earth             | Art ¦ N‑fs                            |
+    | [[strongs:H3068][H3068]]        | Yah·weh         | יהוה   | YHWH                     | N‑proper‑ms                           |
+    | [[strongs:H8034][H8034]]        | šə·mōw.         | שמו׃ס  | [is] His name            | N‑msc ¦ 3ms                           |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Chronicles%2015%3A3-4&version=ESV][II Chronicles 15:3-4]]* - For a long time Israel was without the true God, and without a teaching priest and without law, but when in their distress they turned to the Lord, the God of Israel, and sought him, he was found by them.
@@ -112417,27 +112436,44 @@ I made the proposal during this time. I received a dream on [[https://en.wikiped
 
 I find this interesting, notice the word for life (Zoe) has the Strongs number 2222.
 
-[[https://biblehub.com/interlinear/1_john/5-12.htm][John 5:12 (Interlinar)]]:
++ [[https://biblehub.com/interlinear/1_john/5-12.htm][I John 5:12]] (Interlinear) :: 
+    the [one] (G3588 ho)
+    having (G2192 echōn)
+    the (G3588 ton)
+    Son (G5207 Huion)
+    has (G2192 echei) - (G3588 tēn)
+    life (G2222 zōēn)
+    the [one] (G3588 ho)
+    not (G3361 mē)
+    having (G2192 echōn)
+    the (G3588 ton)
+    Son (G5207 Huion) - (G3588 tou)
+    of God (G2316 Theou) - (G3588 tēn)
+    life (G2222 zōēn)
+    not (G3756 ouk)
+    has (G2192 echei)
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3588      2192      3588    5207  2192     3588
-  ho        echōn     ton     Huion echei    tēn
-  ὁ         ἔχων      τὸν     Υἱὸν  ἔχει     τὴν
-  The [one] having    the     Son   has       -
-  Art-NMS   V-PPA-NMS Art-AMS N-AMS V-PIA-3S Art-AFS
-
-  2222    3588      3361 2192      3588    5207
-  zōēn    ho        mē   echōn     ton     Huion
-  ζωήν  ; ὁ         μὴ   ἔχων      τὸν     Υἱὸν
-  life    the [one] not  having    the     Son
-  N-AFS   Art-NMS   Adv  V-PPA-NMS Art-AMS N-AMS
-
-  3588    2316    3588    2222  3756 2192
-  tou     Theou   tēn     zōēn  ouk  echei
-  τοῦ     Θεοῦ  , τὴν     ζωὴν  οὐκ  ἔχει  .
-   -      of God   -      life  not  has
-  Art-GMS N-GMS   Art-AFS N-AFS Adv  V-PIA-3S
-#+END_SRC
++ [[https://biblehub.com/interlinear/1_john/5-12.htm][I John 5:12]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek  | Translation | Grammar   |
+    |--------------+-----------------+--------+-------------+-----------|
+    | [[strongs:G3588][G3588]]        | ho              | ὁ      | the [one]   | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G2192][G2192]]        | echōn           | ἔχων   | having      | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G3588][G3588]]        | ton             | τὸν    | the         | [[https://biblehub.com/grammar/art-ams.htm][Art-AMS]]   |
+    | [[strongs:G5207][G5207]]        | Huion           | Υἱὸν , | Son         | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]     |
+    | [[strongs:G2192][G2192]]        | echei           | ἔχει   | has         | [[https://biblehub.com/grammar/v-pia-3s.htm][V-PIA-3S]]  |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν    | -           | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]   |
+    | [[strongs:G2222][G2222]]        | zōēn            | ζωήν : | life        | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]     |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ      | the [one]   | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G3361][G3361]]        | mē              | μὴ     | not         | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G2192][G2192]]        | echōn           | ἔχων   | having      | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G3588][G3588]]        | ton             | τὸν    | the         | [[https://biblehub.com/grammar/art-ams.htm][Art-AMS]]   |
+    | [[strongs:G5207][G5207]]        | Huion           | Υἱὸν   | Son         | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]     |
+    | [[strongs:G3588][G3588]]        | tou             | τοῦ    | -           | [[https://biblehub.com/grammar/art-gms.htm][Art-GMS]]   |
+    | [[strongs:G2316][G2316]]        | Theou           | Θεοῦ , | of God      | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]     |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν    | -           | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]   |
+    | [[strongs:G2222][G2222]]        | zōēn            | ζωὴν   | life        | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]     |
+    | [[strongs:G3756][G3756]]        | ouk             | οὐκ    | not         | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G2192][G2192]]        | echei           | ἔχει . | has         | [[https://biblehub.com/grammar/v-pia-3s.htm][V-PIA-3S]]  |
 
 Being born of the Spirit unpredictable:
 
@@ -115471,43 +115507,42 @@ Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and
   *[[https://biblehub.com/interlinear/revelation/1-5.htm][Revelation of John 1:5 (Interlinear)]]* - and from Jesus Christ the witness - faithful the firstborn of the dead and the ruler of the kings of the earth To the [One] loving us and releasing us from the sins of us through the blood of Him (Interlinear - biblehub.com)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2532 575  2424  5547      3588    3144
-  kai  apo  Iēsou Christou  ho      martys
-  καὶ  ἀπὸ  Ἰησοῦ Χριστοῦ , ὁ       μάρτυς
-  and  from Jesus Christ    the     witness
-  Conj Prep N-GMS N-GMS     Art-NMS N-NMS
-
-  3588    4103      3588    4416       3588    3498
-  ho      pistos    ho      prōtotokos tōn     nekrōn
-  ὁ       πιστός  , ὁ       πρωτότοκος τῶν     νεκρῶν
-   -      faithful  the     firstborn  of the  dead
-  Art-NMS Adj-NMS   Art-NMS Adj-NMS    Art-GMP Adj-GMP
-
-  2532 3588    758    3588    935      3588
-  kai  ho      archōn tōn     basileōn tēs
-  καὶ  ὁ       ἄρχων  τῶν     βασιλέων τῆς
-  and  the     ruler  of the  kings    of the
-  Conj Art-NMS N-NMS  Art-GMP N-GMP    Art-GFS
-
-  1093   3588         25        1473     2532
-  gēs    Tō           agapōnti  hēmas    kai
-  γῆς  . Τῷ           ἀγαπῶντι  ἡμᾶς     καὶ
-  earth  To the [One] loving    us       and
-  N-GFS  Art-DMS      V-PPA-DMS PPro-A1P Conj
-
-  3089      1473     1537 3588    266
-  lysanti   hēmas    ek   tōn     hamartiōn
-  λύσαντι   ἡμᾶς     ἐκ   τῶν     ἁμαρτιῶν
-  releasing us       from the     sins
-  V-APA-DMS PPro-A1P Prep Art-GFP N-GFP
-
-  1473     1722    3588    129     846
-  hēmōn    en      tō      haimati autou
-  ἡμῶν     ἐν      τῷ      αἵματι  αὐτοῦ   —
-  of us    through the     blood   of Him
-  PPro-G1P Prep    Art-DNS N-DNS   PPro-GM3S
-#+END_SRC
++ [[https://biblehub.com/interlinear/revelation/1-5.htm][Revelation of John 1:5]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek      | Translation  | Grammar   |
+    |--------------+-----------------+------------+--------------+-----------|
+    | [[strongs:G2532][G2532]]        | kai             | καὶ        | and          | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G575][G575]]         | apo             | ἀπὸ        | from         | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G2424][G2424]]        | Iēsou           | Ἰησοῦ      | Jesus        | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]     |
+    | [[strongs:G5547][G5547]]        | Christou        | Χριστοῦ ,  | Christ       | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]     |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ          | the          | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G3144][G3144]]        | martys          | μάρτυς     | witness      | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ          | -            | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G4103][G4103]]        | pistos          | πιστός ,   | faithful     | [[https://biblehub.com/grammar/adj-nms.htm][Adj-NMS]]   |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ          | the          | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G4416][G4416]]        | prōtotokos      | πρωτότοκος | firstborn    | [[https://biblehub.com/grammar/adj-nms.htm][Adj-NMS]]   |
+    | [[strongs:G3588][G3588]]        | tōn             | τῶν        | of the       | [[https://biblehub.com/grammar/art-gmp.htm][Art-GMP]]   |
+    | [[strongs:G3498][G3498]]        | nekrōn          | νεκρῶν .   | dead         | [[https://biblehub.com/grammar/adj-gmp.htm][Adj-GMP]]   |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ        | and          | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ          | the          | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G758][G758]]         | archōn          | ἄρχων      | ruler        | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G3588][G3588]]        | tōn             | τῶν        | of the       | [[https://biblehub.com/grammar/art-gmp.htm][Art-GMP]]   |
+    | [[strongs:G935][G935]]         | basileōn        | βασιλέων   | kings        | [[https://biblehub.com/grammar/n-gmp.htm][N-GMP]]     |
+    | [[strongs:G3588][G3588]]        | tēs             | τῆς        | of the       | [[https://biblehub.com/grammar/art-gfs.htm][Art-GFS]]   |
+    | [[strongs:G1093][G1093]]        | gēs             | γῆς .      | earth        | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]     |
+    | [[strongs:G3588][G3588]]        | Tō              | Τῷ         | to the [One] | [[https://biblehub.com/grammar/art-dms.htm][Art-DMS]]   |
+    | [[strongs:G25][G25]]          | agapōnti        | ἀγαπῶντι   | loving       | [[https://biblehub.com/grammar/v-ppa-dms.htm][V-PPA-DMS]] |
+    | [[strongs:G1473][G1473]]        | hēmas           | ἡμᾶς ,     | us           | [[https://biblehub.com/grammar/ppro-a1p.htm][PPro-A1P]]  |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ        | and          | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3089][G3089]]        | lysanti         | λύσαντι    | releasing    | [[https://biblehub.com/grammar/v-apa-dms.htm][V-APA-DMS]] |
+    | [[strongs:G1473][G1473]]        | hēmas           | ἡμᾶς       | us           | [[https://biblehub.com/grammar/ppro-a1p.htm][PPro-A1P]]  |
+    | [[strongs:G1537][G1537]]        | ek              | ἐκ         | from         | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | tōn             | τῶν        | the          | [[https://biblehub.com/grammar/art-gfp.htm][Art-GFP]]   |
+    | [[strongs:G266][G266]]         | hamartiōn       | ἁμαρτιῶν   | sins         | [[https://biblehub.com/grammar/n-gfp.htm][N-GFP]]     |
+    | [[strongs:G1473][G1473]]        | hēmōn           | ἡμῶν ,     | of us        | [[https://biblehub.com/grammar/ppro-g1p.htm][PPro-G1P]]  |
+    | [[strongs:G1722][G1722]]        | en              | ἐν         | through      | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | tō              | τῷ         | the          | [[https://biblehub.com/grammar/art-dns.htm][Art-DNS]]   |
+    | [[strongs:G129][G129]]         | haimati         | αἵματι     | blood        | [[https://biblehub.com/grammar/n-dns.htm][N-DNS]]     |
+    | [[strongs:G846][G846]]         | autou           | αὐτοῦ ,    | of him       | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]] |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=1%20Peter%202%3A9&version=ESV][I Peter 2:9]]* - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. (ESV)
@@ -115517,43 +115552,34 @@ Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and
   *[[https://biblehub.com/interlinear/1_peter/2-9.htm][I Peter 2:9 (Interlinear)]]* - You however [are] a race chosen a royal priesthood a nation holy a people for [His] possession so that the excellencies you may proclaim of the [One] out of darkness you having called to the marvelous of Him light (Interlinear - biblehub.com)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  4771     1161    1085         1588       934
-  Hymeis   de      genos        eklekton   basileion
-  Ὑμεῖς    δὲ      γένος        ἐκλεκτόν , βασίλειον
-  You      however [are] a race chosen     a royal
-  PPro-N2P Conj    N-NNS        Adj-NNS    Adj-NNS
-
-  2406         1484     40       2992     1519
-  hierateuma   ethnos   hagion   laos     eis
-  ἱεράτευμα  , ἔθνος    ἅγιον  , λαὸς     εἰς
-  priesthood   a nation holy     a people for [His]
-  N-NNS        N-NNS    Adj-NNS  N-NMS    Prep
-
-  4047          3704    3588     703
-  peripoiēsin   hopōs   tas      aretas
-  περιποίησιν , ὅπως    τὰς      ἀρετὰς
-  possession    so that the      excellencies
-  N-AFS         Conj    Art-AFP  N-AFP
-
-  1804             3588         1537   4655
-  exangeilēte      tou          ek     skotous
-  ἐξαγγείλητε      τοῦ          ἐκ     σκότους
-  you may proclaim of the [One] out of darkness
-  V-ASA-2P         Art-GMS      Prep   N-GNS
-
-  4771     2564          1519 3588    2298
-  hymas    kalesantos    eis  to      thaumaston
-  ὑμᾶς     καλέσαντος  , εἰς  τὸ      θαυμαστὸν
-  you      having called to   the     marvelous
-  PPro-A2P V-APA-GMS     Prep Art-ANS Adj-ANS
-
-  846       5457
-  autou     phōs
-  αὐτοῦ     φῶς  ,
-  of Him    light
-  PPro-GM3S N-ANS
-#+END_SRC
++ [[https://biblehub.com/interlinear/1_peter/2-9.htm][I Peter 2:9]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek         | Translation        | Grammar   |
+    |--------------+-----------------+---------------+--------------------+-----------|
+    | [[strongs:G4771][G4771]]        | hymeis          | ὑμεῖς         | you                | [[https://biblehub.com/grammar/ppro-n2p.htm][PPro-N2P]]  |
+    | [[strongs:G1161][G1161]]        | de              | δὲ            | however            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G1085][G1085]]        | genos           | γένος         | [are] a race       | [[https://biblehub.com/grammar/n-nns.htm][N-NNS]]     |
+    | [[strongs:G1588][G1588]]        | eklekton        | ἐκλεκτόν ,    | chosen             | [[https://biblehub.com/grammar/adj-nns.htm][Adj-NNS]]   |
+    | [[strongs:G934][G934]]         | basileion       | βασίλειον     | a royal            | [[https://biblehub.com/grammar/adj-nns.htm][Adj-NNS]]   |
+    | [[strongs:G2406][G2406]]        | hierateuma      | ἱεράτευμα ,   | priesthood         | [[https://biblehub.com/grammar/n-nns.htm][N-NNS]]     |
+    | [[strongs:G1484][G1484]]        | ethnos          | ἔθνος         | a nation           | [[https://biblehub.com/grammar/n-nns.htm][N-NNS]]     |
+    | [[strongs:G40][G40]]          | hagion          | ἅγιον ,       | holy               | [[https://biblehub.com/grammar/adj-nns.htm][Adj-NNS]]   |
+    | [[strongs:G2992][G2992]]        | laos            | λαὸς          | a people           | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | for [His]          | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G4047][G4047]]        | peripoiēsin     | περιποίησιν , | possession         | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]     |
+    | [[strongs:G3704][G3704]]        | hopōs           | ὅπως          | that               | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3588][G3588]]        | tas             | τὰς           | the                | [[https://biblehub.com/grammar/art-afp.htm][Art-AFP]]   |
+    | [[strongs:G703][G703]]         | aretas          | ἀρετὰς        | excellencies       | [[https://biblehub.com/grammar/n-afp.htm][N-AFP]]     |
+    | [[strongs:G1804][G1804]]        | exangeilēte     | ἐξαγγείλητε , | you might proclaim | [[https://biblehub.com/grammar/v-asa-2p.htm][V-ASA-2P]]  |
+    | [[strongs:G3588][G3588]]        | tou             | τοῦ           | of the [One]       | [[https://biblehub.com/grammar/art-gms.htm][Art-GMS]]   |
+    | [[strongs:G1537][G1537]]        | ek              | ἐκ            | out of             | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G4655][G4655]]        | skotous         | σκότους       | darkness           | [[https://biblehub.com/grammar/n-gns.htm][N-GNS]]     |
+    | [[strongs:G4771][G4771]]        | hymas           | ὑμᾶς          | you                | [[https://biblehub.com/grammar/ppro-a2p.htm][PPro-A2P]]  |
+    | [[strongs:G2564][G2564]]        | kalesantos      | καλέσαντος ,  | having called      | [[https://biblehub.com/grammar/v-apa-gms.htm][V-APA-GMS]] |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς           | to                 | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | to              | τὸ            | the                | [[https://biblehub.com/grammar/art-ans.htm][Art-ANS]]   |
+    | [[strongs:G2298][G2298]]        | thaumaston      | θαυμαστὸν     | marvelous          | [[https://biblehub.com/grammar/adj-ans.htm][Adj-ANS]]   |
+    | [[strongs:G846][G846]]         | autou           | αὐτοῦ         | of him             | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]] |
+    | [[strongs:G5457][G5457]]        | phōs            | φῶς ;         | light              | [[https://biblehub.com/grammar/n-ans.htm][N-ANS]]     |
 
 + [[https://www.youtube.com/shorts/Y-EJFAPCi4o][youtube.com: Pope Leo XIV {@EWTNcatholictv}]] :: A bishop is not supposed to be a little prince sitting in his kingdom, but rather called authentically to be humble, to be close to the people he serves, to walk with them, to suffer with them, and to look for ways that he can better live the gospel message in the midst of his people.
 
