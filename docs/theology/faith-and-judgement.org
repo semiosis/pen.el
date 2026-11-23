@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2026-11-23 Mon 13:31>
+#+DATE: <2026-11-24 Tue 09:24>
 
 #+KEYWORDS: faith christianity
 
@@ -955,6 +955,10 @@ It is important to be a doer of the word in reality from the heart (*[[https://w
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A11-12&version=ESV][II Corinthians 10:11-12]]* - Let such a person understand that what we say by letter when absent, we do when present. Not that we dare to classify or compare ourselves with some of those who are commending themselves. But when they measure themselves by one another and compare themselves with one another, they are without understanding. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2016%3A15&version=ESV][Luke 16:15]]* - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God. (ESV)
 #+END_QUOTE
 
 When Jesus says that He has made "known", it's implied that the people that Jesus has made known what He heard from His Father "do" what He commands. So there is a knowing that comes not just from hearing but from doing:
@@ -6366,6 +6370,44 @@ Seek to please God who sees everything. The person who does the will of God in r
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A11-12&version=ESV][II Corinthians 10:11-12]]* - Let such a person understand that what we say by letter when absent, we do when present. Not that we dare to classify or compare ourselves with some of those who are commending themselves. But when they measure themselves by one another and compare themselves with one another, they are without understanding. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2016%3A15&version=ESV][Luke 16:15]]* - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God. (ESV)
+#+END_QUOTE
+
+Where the ESV translation says in [[https://www.biblegateway.com/passage/?search=Romans%2010%3A6&version=ESV][Romans 10:6]], "Do not say in your heart, 'Who will ascend into heaven?'"
+I believe it *should* rather say, "Do not say in your heart who will ascend into heaven."
+I think that in these verses the Apostle Paul is directing people to have faith themselves in their heart and to not "artificially exalt"
+(i.e. e.g. "oh that person is such a great man, he is most suredly going to heaven", and this person is such a great sinner/unbeliever/heretic,
+so they are most suredly going to hell)
+no matter where in God's creation a person might find themselves presently. Rather, a person should whereever they find themselves be having faith in Jesus Christ and His resurrection, that Jesus Christ rose from the dead, and be confessing Him with their mouth, that He is Lord.
+That person believing in Jesus Christ in the heart has an assurance that things will work out (that they will be saved/are being saved) if they have that faith in Jesus Christ in their heart, confessing Jesus Christ with their mouth. This is how I'm presently interpretting these verses:
+
++ [[https://biblehub.com/interlinear/romans/10-6.htm][Romans 10:6]] (Interlinear) ::  - (G3588 hē)
+    but (G1161 de)
+    of (G1537 ek)
+    faith (G4102 pisteōs)
+    righteousness (G1343 dikaiosynē)
+    thus (G3779 houtōs)
+    speaks (G3004 legei)
+    not (G3361 Mē)
+    You should say (G3004 eipēs)
+    in (G1722 en)
+    the (G3588 tē)
+    heart (G2588 kardia)
+    of you (G4771 sou)
+    Who (G5101 Tis)
+    will ascend (G305 anabēsetai)
+    into (G1519 eis) - (G3588 ton)
+    heaven (G3772 ouranon)
+    that (G3778 tout’)
+    is (G1510 estin)
+    Christ (G5547 Christon)
+    to bring down (G2609 katagagein)
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2016%3A15&version=ESV][Luke 16:15]]* - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God. (ESV)
 #+END_QUOTE
 
 If we see others not doing the will of God, then we should in similar fashion to Jesus teach others what to do (i.e. what Jesus' instruction is) but not judge them if they do not appear do it after instructing them, but rather quote *[[https://www.biblegateway.com/passage/?search=John%2012%3A44-50&version=ESV][John 12:44-50]]* to them. Let them know that Jesus' word will judge on the last day but that Jesus has come to save and we should imitate His patience. Let them know that you'll still endeavour to keep Jesus' commandment. Saying it once is enough. Staying silent is also an option if they insist that Jesus' commandment is wrong:
@@ -17709,27 +17751,20 @@ I think the KJV here is misleading because it says "and on earth peace" without 
 
 + *[[https://www.biblegateway.com/passage/?search=Luke%202%3A14&version=ESV][Luke 2:14 (Interlinear)]]* :: Glory in [the] highest to God and on [[strongs:G1909][(G1909 epi; on)]] earth [[strongs:G1093][(G1093 gēs; earth)]] peace [[strongs:G1515][(G1515 eirēnē; peace)]] among [[strongs:G1722][(G1722 en; among)]] men [[strongs:G444][(G444 anthrōpois; men)]] with whom He is pleased [[strongs:G2107][(G2107 eudokias; Goodwill, kind intention, pleasure, favor, desire, delight, with whom He is pleased)]]
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  G1391 G1722 G5310         G2316  G2532 G1909
-  Doxa  en    hypsistois    Theō   kai   epi
-  Δόξα  ἐν    ὑψίστοις      Θεῷ ,  καὶ   ἐπὶ
-  Glory in    [the] highest to God and   on
-  N-NFS Prep  Adj-DNP-S     N-DMS  Conj  Prep
-  
-  G1093 G1515  G1722 G444
-  gēs   eirēnē en    anthrōpois
-  γῆς   εἰρήνη ἐν    ἀνθρώποις
-  earth peace  among men
-  N-GFS N-NFS  Prep  N-DMP
-  
-  G2107
-  eudokias
-  εὐδοκίας !
-  good desire
-   / Goodwill / kind intention / pleasure / favor
-   / desire / delight / with whom He is pleased
-  N-GFS
-#+END_SRC
++ [[https://biblehub.com/interlinear/luke/2-14.htm][Luke 2:14]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek      | Translation             | Grammar   |
+    |--------------+-----------------+------------+-------------------------+-----------|
+    | [[strongs:G1391][G1391]]        | Doxa            | Δόξα       | Glory                   | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]     |
+    | [[strongs:G1722][G1722]]        | en              | ἐν         | in                      | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G5310][G5310]]        | hypsistois      | ὑψίστοις   | [the] highest           | [[https://biblehub.com/grammar/adj-dnp-s.htm][Adj-DNP-S]] |
+    | [[strongs:G2316][G2316]]        | Theō            | Θεῷ ,      | to God                  | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]     |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ        | and                     | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G1909][G1909]]        | epi             | ἐπὶ        | on                      | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G1093][G1093]]        | gēs             | γῆς        | earth                   | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]     |
+    | [[strongs:G1515][G1515]]        | eirēnē          | εἰρήνη     | peace                   | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]     |
+    | [[strongs:G1722][G1722]]        | en              | ἐν         | among                   | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G444][G444]]         | anthrōpois      | ἀνθρώποις  | men                     | [[https://biblehub.com/grammar/n-dmp.htm][N-DMP]]     |
+    | [[strongs:G2107][G2107]]        | eudokias        | εὐδοκίας ! | with whom He is pleased | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]     |
 
 [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]:
 - Part of Speech: Noun
@@ -19345,19 +19380,16 @@ But the correct interpretation might actually say (and I lean toward this interp
 
 + [[https://biblehub.com/interlinear/psalms/115-11.htm][Psalms 115:11]] :: You who fear Yahweh trust in Yahweh their help and their shield He [is] (Interlinear)
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3373         3068        982          3068
-  yir·’ê       Yah·weh     biṭ·ḥū       Yah·weh;
-  יראי         ､ יהוה      בטחו         – ביהוה
-  You who fear Yahweh      trust        in Yahweh
-  Adj‑mpc      N‑proper‑ms V‑Qal‑Imp‑mp Prep‑b | N‑proper‑ms
-
-  5828        4043                 1931
-  ‘ez·rām     ū·mā·ḡin·nām         hū.
-  עזרם        ומגנם                . הוא׃
-  their help  and their shield     He [is]
-  N‑msc | 3mp Conj‑w | N‑csc | 3mp Pro‑3ms
-#+END_SRC
++ [[https://biblehub.com/interlinear/psalms/115-11.htm][Psalms 115:11]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Hebrew  | Translation      | Grammar                        |
+    |--------------+-----------------+---------+------------------+--------------------------------|
+    | [[strongs:H3373][H3373]]        | yir·’ê          | יראי    | You who fear     | Adj‑mpc                        |
+    | [[strongs:H3068][H3068]]        | Yah·weh         | ､ יהוה  | Yahweh           | N‑proper‑ms                    |
+    | [[strongs:H982][H982]]         | biṭ·ḥū          | בטחו    | trust            | V‑Qal‑Imp‑mp                   |
+    | [[strongs:H3068][H3068]]        | Yah·weh;        | – ביהוה | in Yahweh        | Prep‑b &vert; N‑proper‑ms      |
+    | [[strongs:H5828][H5828]]        | ‘ez·rām         | עזרם    | their help       | N‑msc &vert; 3mp               |
+    | [[strongs:H4043][H4043]]        | ū·mā·ḡin·nām    | ומגנם   | and their shield | Conj‑w &vert; N‑csc &vert; 3mp |
+    | [[strongs:H1931][H1931]]        | hū.             | . הוא׃  | He [is]          | Pro‑3ms                        |
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Proverbs%2014%3A26-27&version=ESV][Proverbs 14:26-27]]* - In the fear of the LORD one has strong confidence, and his children will have a refuge. The fear of the LORD is a fountain of life, that one may turn away from the snares of death. (ESV)
@@ -21230,25 +21262,30 @@ Jesus Christ is I AM. That means that Jesus Christ the Son of God is Jehovah, ju
 
 + [[https://biblehub.com/interlinear/john/8-24.htm][biblehub.com: John 8:24 Interlinear]] :: I said therefore to you that you will die in the sins of you if for not you believe that I am ([[strongs:G1473][G1473 egō]] [[strongs:G1510][G1510 eimi]] *I AM* /or/ *I am He*) you will die in the sins of you
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2036     3767      4771     3754     599           1722 3588
-  eipon    oun       hymin    hoti     apothaneisthe en   tais
-  εἶπον    οὖν       ὑμῖν     ὅτι      ἀποθανεῖσθε   ἐν   ταῖς
-  I said   therefore to you   that     you will die  in   the
-  V-AIA-1S Conj      PPro-D2P Conj     V-FIM-2P      Prep Art-DFP
-
-  266        4771     1437 1063 3361 4100        3754 1473     1510
-  hamartiais hymōn    ean  gar  mē   pisteusēte  hoti egō      eimi
-  ἁμαρτίαις  ὑμῶν  ;  ἐὰν  γὰρ  μὴ   πιστεύσητε  ὅτι  ἐγώ      εἰμι  ,
-  sins       of you   if   for  not  you believe that I        am [He]
-  N-DFP      PPro-G2P Conj Conj Adv  V-ASA-2P    Conj PPro-N1S V-PIA-1S
-
-  599           1722 3588    266        4771
-  apothaneisthe en   tais    hamartiais hymōn
-  ἀποθανεῖσθε   ἐν   ταῖς    ἁμαρτίαις  ὑμῶν  .
-  you will die  in   the     sins       of you
-  V-FIM-2P      Prep Art-DFP N-DFP      PPro-G2P
-#+END_SRC
++ [[https://biblehub.com/interlinear/john/8-24.htm][John 8:24]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation  | Grammar  |
+    |--------------+-----------------+-------------+--------------+----------|
+    | [[strongs:G3004][G3004]]        | eipon           | εἶπον       | I said       | [[https://biblehub.com/grammar/v-aia-1s.htm][V-AIA-1S]] |
+    | [[strongs:G3767][G3767]]        | oun             | οὖν         | therefore    | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G4771][G4771]]        | hymin           | ὑμῖν        | to you       | [[https://biblehub.com/grammar/ppro-d2p.htm][PPro-D2P]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι         | that         | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G599][G599]]         | apothaneisthe   | ἀποθανεῖσθε | you will die | [[https://biblehub.com/grammar/v-fim-2p.htm][V-FIM-2P]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in           | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G3588][G3588]]        | tais            | ταῖς        | the          | [[https://biblehub.com/grammar/art-dfp.htm][Art-DFP]]  |
+    | [[strongs:G266][G266]]         | hamartiais      | ἁμαρτίαις   | sins         | [[https://biblehub.com/grammar/n-dfp.htm][N-DFP]]    |
+    | [[strongs:G4771][G4771]]        | hymōn           | ὑμῶν ;      | of you       | [[https://biblehub.com/grammar/ppro-g2p.htm][PPro-G2P]] |
+    | [[strongs:G1437][G1437]]        | ean             | ἐὰν         | if           | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | indeed       | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G3361][G3361]]        | mē              | μὴ          | not          | [[https://biblehub.com/grammar/adv.htm][Adv]]      |
+    | [[strongs:G4100][G4100]]        | pisteusēte      | πιστεύσητε  | you believe  | [[https://biblehub.com/grammar/v-asa-2p.htm][V-ASA-2P]] |
+    | [[strongs:G3754][G3754]]        | hoti            | ὅτι         | that         | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G1473][G1473]]        | egō             | ἐγώ         | I            | [[https://biblehub.com/grammar/ppro-n1s.htm][PPro-N1S]] |
+    | [[strongs:G1510][G1510]]        | eimi            | εἰμι ,      | am [he]      | [[https://biblehub.com/grammar/v-pia-1s.htm][V-PIA-1S]] |
+    | [[strongs:G599][G599]]         | apothaneisthe   | ἀποθανεῖσθε | you will die | [[https://biblehub.com/grammar/v-fim-2p.htm][V-FIM-2P]] |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in           | [[https://biblehub.com/grammar/prep.htm][Prep]]     |
+    | [[strongs:G3588][G3588]]        | tais            | ταῖς        | the          | [[https://biblehub.com/grammar/art-dfp.htm][Art-DFP]]  |
+    | [[strongs:G266][G266]]         | hamartiais      | ἁμαρτίαις   | sins         | [[https://biblehub.com/grammar/n-dfp.htm][N-DFP]]    |
+    | [[strongs:G4771][G4771]]        | hymōn           | ὑμῶν .      | of you       | [[https://biblehub.com/grammar/ppro-g2p.htm][PPro-G2P]] |
 
 + [[https://biblehub.com/interlinear/john/8-58.htm][biblehub.com 8-58.htm: John 8:58 Interlinear]] :: Said to them Jesus Truly truly I say to you before Abraham was I am (G1473 egō G1510 eimi *I AM* /or/ *I am He*)
 
@@ -23217,6 +23254,40 @@ Jesus is Lord then your next thoughts can be "I'm OK. I'm safe. Jesus is saving 
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Proverbs%2018%3A10&version=ESV][Proverbs 18:10]]* - The name of the LORD is a strong tower; the righteous man runs into it and is safe. (ESV)
+#+END_QUOTE
+
+Where the ESV translation says in [[https://www.biblegateway.com/passage/?search=Romans%2010%3A6&version=ESV][Romans 10:6]], "Do not say in your heart, 'Who will ascend into heaven?'"
+I believe it *should* rather say, "Do not say in your heart who will ascend into heaven."
+I think that in these verses the Apostle Paul is directing people to have faith themselves in their heart and to not "artificially exalt"
+(i.e. e.g. "oh that person is such a great man, he is most suredly going to heaven", and this person is such a great sinner/unbeliever/heretic,
+so they are most suredly going to hell)
+no matter where in God's creation a person might find themselves presently. Rather, a person should whereever they find themselves be having faith in Jesus Christ and His resurrection, that Jesus Christ rose from the dead, and be confessing Him with their mouth, that He is Lord.
+That person believing in Jesus Christ in the heart has an assurance that things will work out (that they will be saved/are being saved) if they have that faith in Jesus Christ in their heart, confessing Jesus Christ with their mouth. This is how I'm presently interpretting these verses:
+
++ [[https://biblehub.com/interlinear/romans/10-6.htm][Romans 10:6]] (Interlinear) ::  - (G3588 hē)
+    but (G1161 de)
+    of (G1537 ek)
+    faith (G4102 pisteōs)
+    righteousness (G1343 dikaiosynē)
+    thus (G3779 houtōs)
+    speaks (G3004 legei)
+    not (G3361 Mē)
+    You should say (G3004 eipēs)
+    in (G1722 en)
+    the (G3588 tē)
+    heart (G2588 kardia)
+    of you (G4771 sou)
+    Who (G5101 Tis)
+    will ascend (G305 anabēsetai)
+    into (G1519 eis) - (G3588 ton)
+    heaven (G3772 ouranon)
+    that (G3778 tout’)
+    is (G1510 estin)
+    Christ (G5547 Christon)
+    to bring down (G2609 katagagein)
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2016%3A15&version=ESV][Luke 16:15]]* - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God. (ESV)
 #+END_QUOTE
 
 If a person is holding faith in Jesus Christ with a real faith, one that loves Jesus with agape love then they presently hold eternal life:
@@ -35126,39 +35197,42 @@ God's grace trains/has taught us to *renounce ungodliness*, and renounce worldly
 + [[https://biblehub.com/interlinear/titus/2-11.htm][Titus 2:11]] :: Has appeared for the grace - of God bringing salvation to all men
 + [[https://biblehub.com/interlinear/titus/2-12.htm][Titus 2:12]] :: instructing us that having denied - ungodliness and - worldly passions discreetly and righteously and piously we should live in the present age
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2014         1063 3588    5485   3588    2316
-  Epephanē     gar  hē      charis tou     Theou
-  Ἐπεφάνη      γὰρ  ἡ       χάρις  τοῦ     Θεοῦ  ,
-  Has appeared for  the     grace   -      of God
-  V-AIP-3S     Conj Art-NFS N-NFS  Art-GMS N-GMS
++ [[https://biblehub.com/interlinear/titus/2-11.htm][Titus 2:11]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation        | Grammar  |
+    |--------------+-----------------+-------------+--------------------+----------|
+    | [[strongs:G2014][G2014]]        | Epephanē        | Ἐπεφάνη     | has appeared       | [[https://biblehub.com/grammar/v-aip-3s.htm][V-AIP-3S]] |
+    | [[strongs:G1063][G1063]]        | gar             | γὰρ         | indeed             | [[https://biblehub.com/grammar/conj.htm][Conj]]     |
+    | [[strongs:G3588][G3588]]        | hē              | ἡ           | the                | [[https://biblehub.com/grammar/art-nfs.htm][Art-NFS]]  |
+    | [[strongs:G5485][G5485]]        | charis          | χάρις       | grace              | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]    |
+    | [[strongs:G3588][G3588]]        | tou             | τοῦ         | -                  | [[https://biblehub.com/grammar/art-gms.htm][Art-GMS]]  |
+    | [[strongs:G2316][G2316]]        | Theou           | Θεοῦ ,      | of God             | [[https://biblehub.com/grammar/n-gms.htm][N-GMS]]    |
+    | [[strongs:G4992][G4992]]        | sōtērios        | σωτήριος    | bringing salvation | [[https://biblehub.com/grammar/adj-nfs.htm][Adj-NFS]]  |
+    | [[strongs:G3956][G3956]]        | pasin           | πᾶσιν       | to all             | [[https://biblehub.com/grammar/adj-dmp.htm][Adj-DMP]]  |
+    | [[strongs:G444][G444]]         | anthrōpois      | ἀνθρώποις ; | men                | [[https://biblehub.com/grammar/n-dmp.htm][N-DMP]]    |
 
-  4992               3956    444
-  sōtērios           pasin   anthrōpois
-  σωτήριος           πᾶσιν   ἀνθρώποις  ,
-  bringing salvation to all  men
-  Adj-NFS            Adj-DMP N-DMP
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3811        1473     2443   720           3588    763         2532 3588
-  paideuousa  hēmas    hina   arnēsamenoi   tēn     asebeian    kai  tas
-  παιδεύουσα  ἡμᾶς     ἵνα  , ἀρνησάμενοι   τὴν     ἀσέβειαν    καὶ  τὰς
-  instructing us       that   having denied  -      ungodliness and   -
-  V-PPA-NFS   PPro-A1P Conj   V-APM-NMP     Art-AFS N-AFS       Conj Art-AFP
-
-  2886     1939         4996       2532 1346        2532 2153
-  kosmikas epithymias   sōphronōs  kai  dikaiōs     kai  eusebōs
-  κοσμικὰς ἐπιθυμίας  , σωφρόνως   καὶ  δικαίως     καὶ  εὐσεβῶς
-  worldly  passions     discreetly and  righteously and  piously
-  Adj-AFP  N-AFP        Adv        Conj Adv         Conj Adv
-
-  2198           1722 3588    3568    165
-  zēsōmen        en   tō      nyn     aiōni
-  ζήσωμεν        ἐν   τῷ      νῦν     αἰῶνι  ,
-  we should live in   the     present age
-  V-ASA-1P       Prep Art-DMS Adv     N-DMS
-#+END_SRC
++ [[https://biblehub.com/interlinear/titus/2-12.htm][Titus 2:12]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation    | Grammar   |
+    |--------------+-----------------+-------------+----------------+-----------|
+    | [[strongs:G3811][G3811]]        | paideuousa      | παιδεύουσα  | instructing    | [[https://biblehub.com/grammar/v-ppa-nfs.htm][V-PPA-NFS]] |
+    | [[strongs:G1473][G1473]]        | hēmas           | ἡμᾶς        | us             | [[https://biblehub.com/grammar/ppro-a1p.htm][PPro-A1P]]  |
+    | [[strongs:G2443][G2443]]        | hina            | ἵνα ,       | that           | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G720][G720]]         | arnēsamenoi     | ἀρνησάμενοι | having denied  | [[https://biblehub.com/grammar/v-apm-nmp.htm][V-APM-NMP]] |
+    | [[strongs:G3588][G3588]]        | tēn             | τὴν         | -              | [[https://biblehub.com/grammar/art-afs.htm][Art-AFS]]   |
+    | [[strongs:G763][G763]]         | asebeian        | ἀσέβειαν    | ungodliness    | [[https://biblehub.com/grammar/n-afs.htm][N-AFS]]     |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | and            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3588][G3588]]        | tas             | τὰς         | -              | [[https://biblehub.com/grammar/art-afp.htm][Art-AFP]]   |
+    | [[strongs:G2886][G2886]]        | kosmikas        | κοσμικὰς    | worldly        | [[https://biblehub.com/grammar/adj-afp.htm][Adj-AFP]]   |
+    | [[strongs:G1939][G1939]]        | epithymias      | ἐπιθυμίας , | passions       | [[https://biblehub.com/grammar/n-afp.htm][N-AFP]]     |
+    | [[strongs:G4996][G4996]]        | sōphronōs       | σωφρόνως    | discreetly     | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | and            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G1346][G1346]]        | dikaiōs         | δικαίως     | righteously    | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | and            | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G2153][G2153]]        | eusebōs         | εὐσεβῶς     | piously        | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G2198][G2198]]        | zēsōmen         | ζήσωμεν     | we should live | [[https://biblehub.com/grammar/v-asa-1p.htm][V-ASA-1P]]  |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in             | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | tō              | τῷ          | the            | [[https://biblehub.com/grammar/art-dms.htm][Art-DMS]]   |
+    | [[strongs:G3568][G3568]]        | nyn             | νῦν         | present        | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G165][G165]]         | aiōni           | αἰῶνι ,     | age            | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]     |
 
 Is repentance from sin necessary for salvation? Yes. We renounce the sinful habits and God cleans us up as we obey Him by faith. The liberty that God provides is not being a slave/servant of sin/corruption. God's grace trains us / has taught us to renounce sin, and to live holy lives with holy behaviour in this present age:
 
@@ -55414,19 +55488,25 @@ If you're thirsty for Jesus then trust in Jesus! Jesus is always there to satisf
   [[https://biblehub.com/interlinear/john/7-38.htm][John 7:38]] - The [one] *believing ([[https://biblehub.com/greek/4100.htm][4100. pisteuó]]) in Me* as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  3588      4100      1519 1473     2531   2036     3588    1124      4215
-  ho        pisteuōn  eis  eme      kathōs eipen    hē      graphē    Potamoi
-  ὁ         πιστεύων  εἰς  ἐμέ  ,   καθὼς  εἶπεν    ἡ       γραφή  :  Ποταμοὶ
-  The [one] believing in   Me       as     has said the     Scripture Rivers
-  Art-NMS   V-PPA-NMS Prep PPro-A1S Adv    V-AIA-3S Art-NFS N-NFS     N-NMP
-
-  1537   3588    2836    846       4482       5204     2198
-  ek     tēs     koilias autou     rheusousin hydatos  zōntos
-  ἐκ     τῆς     κοιλίας αὐτοῦ     ῥεύσουσιν  ὕδατος   ζῶντος  .
-  out of the     belly   of him    will flow  of water living
-  Prep   Art-GFS N-GFS   PPro-GM3S V-FIA-3P   N-GNS    V-PPA-GNS
-#+END_SRC
++ [[https://biblehub.com/interlinear/john/7-38.htm][John 7:38]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek     | Translation | Grammar   |
+    |--------------+-----------------+-----------+-------------+-----------|
+    | [[strongs:G3588][G3588]]        | ho              | ὁ         | The [one]   | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G4100][G4100]]        | pisteuōn        | πιστεύων  | believing   | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς       | on          | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G1473][G1473]]        | eme             | ἐμέ ,     | me          | [[https://biblehub.com/grammar/ppro-a1s.htm][PPro-A1S]]  |
+    | [[strongs:G2531][G2531]]        | kathōs          | καθὼς     | as          | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G3004][G3004]]        | eipen           | εἶπεν     | has said    | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]  |
+    | [[strongs:G3588][G3588]]        | hē              | ἡ         | the         | [[https://biblehub.com/grammar/art-nfs.htm][Art-NFS]]   |
+    | [[strongs:G1124][G1124]]        | graphē          | γραφή ,   | Scripture   | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]     |
+    | [[strongs:G4215][G4215]]        | potamoi         | ποταμοὶ   | rivers      | [[https://biblehub.com/grammar/n-nmp.htm][N-NMP]]     |
+    | [[strongs:G1537][G1537]]        | ek              | ἐκ        | out of      | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | tēs             | τῆς       | the         | [[https://biblehub.com/grammar/art-gfs.htm][Art-GFS]]   |
+    | [[strongs:G2836][G2836]]        | koilias         | κοιλίας   | belly       | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]     |
+    | [[strongs:G846][G846]]         | autou           | αὐτοῦ     | of him      | [[https://biblehub.com/grammar/ppro-gm3s.htm][PPro-GM3S]] |
+    | [[strongs:G4482][G4482]]        | rheusousin      | ῥεύσουσιν | will flow   | [[https://biblehub.com/grammar/v-fia-3p.htm][V-FIA-3P]]  |
+    | [[strongs:G5204][G5204]]        | hydatos         | ὕδατος    | of water    | [[https://biblehub.com/grammar/n-gns.htm][N-GNS]]     |
+    | [[strongs:G2198][G2198]]        | zōntos          | ζῶντος .  | living      | [[https://biblehub.com/grammar/v-ppa-gns.htm][V-PPA-GNS]] |
 
 *** Trusting belief ([[https://freely-given.org/OBD/ref/GrkWrd/ACTc18v27w61.htm][through grace]]) leads to continued obedience, which leads to knowledge of the Truth
 
@@ -62255,35 +62335,49 @@ I want to do a more in-depth study on ages and generations.
 
 [[https://biblehub.com/interlinear/john/11-25.htm][John 11:25]]:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2036     846       3588    2424     1473     1510     3588    386
-  Eipen    autē      ho      Iēsous   Egō      eimi     hē      anastasis
-  Εἶπεν    αὐτῇ      ὁ       Ἰησοῦς , Ἐγώ      εἰμι     ἡ       ἀνάστασις
-  Said     to her     -      Jesus    I        am       the     resurrection
-  V-AIA-3S PPro-DF3S Art-NMS N-NMS    PPro-N1S V-PIA-1S Art-NFS N-NFS
-
-  2532 3588    2222   3588      4100      1519 1473     2579    599           2198
-  kai  hē      zōē    ho        pisteuōn  eis  eme      kan     apothanē      zēsetai
-  καὶ  ἡ       ζωή  ; ὁ         πιστεύων  εἰς  ἐμὲ  ,   κἂν     ἀποθάνῃ  ,    ζήσεται  ;
-  and  the     life   the [one] believing in   Me       even if he should die he will live
-  Conj Art-NFS N-NFS  Art-NMS   V-PPA-NMS Prep PPro-A1S Adv     V-ASA-3S      V-FIM-3S
-#+END_SRC
++ [[https://biblehub.com/interlinear/john/11-25.htm][John 11:25]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek     | Translation   | Grammar   |
+    |--------------+-----------------+-----------+---------------+-----------|
+    | [[strongs:G2036][G2036]]        | Eipen           | Εἶπεν     | Said          | [[https://biblehub.com/grammar/v-aia-3s.htm][V-AIA-3S]]  |
+    | [[strongs:G846][G846]]         | autē            | αὐτῇ      | to her        | [[https://biblehub.com/grammar/ppro-df3s.htm][PPro-DF3S]] |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ         | -             | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G2424][G2424]]        | Iēsous          | Ἰησοῦς ,  | Jesus         | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]     |
+    | [[strongs:G1473][G1473]]        | Egō             | Ἐγώ       | I             | [[https://biblehub.com/grammar/ppro-n1s.htm][PPro-N1S]]  |
+    | [[strongs:G1510][G1510]]        | eimi            | εἰμι      | am            | [[https://biblehub.com/grammar/v-pia-1s.htm][V-PIA-1S]]  |
+    | [[strongs:G3588][G3588]]        | hē              | ἡ         | the           | [[https://biblehub.com/grammar/art-nfs.htm][Art-NFS]]   |
+    | [[strongs:G386][G386]]         | anastasis       | ἀνάστασις | resurrection  | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]     |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ       | and           | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3588][G3588]]        | hē              | ἡ         | the           | [[https://biblehub.com/grammar/art-nfs.htm][Art-NFS]]   |
+    | [[strongs:G2222][G2222]]        | zōē             | ζωή ;     | life          | [[https://biblehub.com/grammar/n-nfs.htm][N-NFS]]     |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ         | the [one]     | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G4100][G4100]]        | pisteuōn        | πιστεύων  | believing     | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς       | in            | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G1473][G1473]]        | eme             | ἐμὲ ,     | Me            | [[https://biblehub.com/grammar/ppro-a1s.htm][PPro-A1S]]  |
+    | [[strongs:G2579][G2579]]        | kan             | κἂν       | even if       | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G599][G599]]         | apothanē        | ἀποθάνῃ , | he should die | [[https://biblehub.com/grammar/v-asa-3s.htm][V-ASA-3S]]  |
+    | [[strongs:G2198][G2198]]        | zēsetai         | ζήσεται ; | he will live  | [[https://biblehub.com/grammar/v-fim-3s.htm][V-FIM-3S]]  |
 
 [[https://biblehub.com/interlinear/john/11-26.htm][John 11:26]]:
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  2532 3956     3588    2198      2532 4100      1519 1473     3756  3361
-  kai  pas      ho      zōn       kai  pisteuōn  eis  eme      ou    mē
-  καὶ  πᾶς      ὁ       ζῶν       καὶ  πιστεύων  εἰς  ἐμὲ  ,   οὐ    μὴ
-  and  everyone  -      living    and  believing in   Me       never not
-  Conj Adj-NMS  Art-NMS V-PPA-NMS Conj V-PPA-NMS Prep PPro-A1S Adv   Adv
-
-  599        1519 3588    165     4100 [e]    3778 [e]
-  apothanē   eis  ton     aiōna   pisteueis   touto
-  ἀποθάνῃ  , εἰς  τὸν     αἰῶνα . πιστεύεις   τοῦτο  ?
-  shall die  to   the     age     Believe you this
-  V-ASA-3S   Prep Art-AMS N-AMS   V-PIA-2S    DPro-ANS
-#+END_SRC
++ [[https://biblehub.com/interlinear/john/11-26.htm][John 11:26]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek     | Translation | Grammar   |
+    |--------------+-----------------+-----------+-------------+-----------|
+    | [[strongs:G2532][G2532]]        | kai             | καὶ       | and         | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G3956][G3956]]        | pas             | πᾶς       | everyone    | [[https://biblehub.com/grammar/adj-nms.htm][Adj-NMS]]   |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ         | -           | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]   |
+    | [[strongs:G2198][G2198]]        | zōn             | ζῶν       | living      | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ       | and         | [[https://biblehub.com/grammar/conj.htm][Conj]]      |
+    | [[strongs:G4100][G4100]]        | pisteuōn        | πιστεύων  | believing   | [[https://biblehub.com/grammar/v-ppa-nms.htm][V-PPA-NMS]] |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς       | in          | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G1473][G1473]]        | eme             | ἐμὲ ,     | Me          | [[https://biblehub.com/grammar/ppro-a1s.htm][PPro-A1S]]  |
+    | [[strongs:G3756][G3756]]        | ou              | οὐ        | never       | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G3361][G3361]]        | mē              | μὴ        | not         | [[https://biblehub.com/grammar/adv.htm][Adv]]       |
+    | [[strongs:G599][G599]]         | apothanē        | ἀποθάνῃ , | shall die   | [[https://biblehub.com/grammar/v-asa-3s.htm][V-ASA-3S]]  |
+    | [[strongs:G1519][G1519]]        | eis             | εἰς       | to          | [[https://biblehub.com/grammar/prep.htm][Prep]]      |
+    | [[strongs:G3588][G3588]]        | ton             | τὸν       | the         | [[https://biblehub.com/grammar/art-ams.htm][Art-AMS]]   |
+    | [[strongs:G165][G165]]         | aiōna           | αἰῶνα .   | age         | [[https://biblehub.com/grammar/n-ams.htm][N-AMS]]     |
+    | [[strongs:G4100][G4100]]        | pisteueis       | πιστεύεις | Believe you | [[https://biblehub.com/grammar/v-pia-2s.htm][V-PIA-2S]]  |
+    | [[strongs:G3778][G3778]]        | touto           | τοῦτο ?   | this        | [[https://biblehub.com/grammar/dpro-ans.htm][DPro-ANS]]  |
 
 *** The Way, the Truth and the Life
 #+BEGIN_QUOTE
@@ -88379,37 +88473,33 @@ We must be actively keeping Jesus as our Pearl of Great Price:
   *[[https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV][James 2:5]]* - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and *heirs of the kingdom, which he has promised to those who love ([[https://biblehub.com/greek/25.htm][25. agapōsin / agape loving]]) him?* (ESV)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  191        80       1473     27         3756 3588
-  Akousate   adelphoi mou      agapētoi   ouch ho
-  Ἀκούσατε , ἀδελφοί  μου      ἀγαπητοί . οὐχ  ὁ
-  Listen     brothers my       beloved    Not   -
-  V-AMA-2P   N-VMP    PPro-G1S Adj-VMP    Adv  Art-NMS
-
-  2316  1586       3588 [e 4434     3588 [e 2889
-  Theos exelexato  tous    ptōchous tō      kosmō
-  Θεὸς  ἐξελέξατο  τοὺς    πτωχοὺς  τῷ      κόσμῳ
-  God   has chosen the     poor      -      in this world
-  N-NMS V-AIM-3S   Art-AMP Adj-AMP  Art-DMS N-DMS
-
-  4145         1722 4102   2532 2818        3588
-  plousious    en   pistei kai  klēronomous tēs
-  πλουσίους    ἐν   πίστει καὶ  κληρονόμους τῆς
-  [to be] rich in   faith  and  heirs       of the
-  Adj-AMP      Prep N-DFS  Conj N-AMP       Art-GFS
-
-  932       3739       1861        3588
-  basileias hēs        epēngeilato tois
-  βασιλείας ἧς         ἐπηγγείλατο τοῖς
-  kingdom   that       He promised to those
-  N-GFS     RelPro-GFS V-AIM-3S    Art-DMP
-
-  25        846
-  agapōsin  auton
-  ἀγαπῶσιν  αὐτόν  ?
-  loving    Him
-  V-PPA-DMP PPro-AM3S
-#+END_SRC
++ [[https://biblehub.com/interlinear/james/2-5.htm][James 2:5]] (Interlinear) :: 
+    | Strongs Code | Transliteration | Greek       | Translation  | Grammar    |
+    |--------------+-----------------+-------------+--------------+------------|
+    | [[strongs:G191][G191]]         | Akousate        | Ἀκούσατε ,  | Listen       | [[https://biblehub.com/grammar/v-ama-2p.htm][V-AMA-2P]]   |
+    | [[strongs:G80][G80]]          | adelphoi        | ἀδελφοί     | brothers     | [[https://biblehub.com/grammar/n-vmp.htm][N-VMP]]      |
+    | [[strongs:G1473][G1473]]        | mou             | μου         | my           | [[https://biblehub.com/grammar/ppro-g1s.htm][PPro-G1S]]   |
+    | [[strongs:G27][G27]]          | agapētoi        | ἀγαπητοί :  | beloved      | [[https://biblehub.com/grammar/adj-vmp.htm][Adj-VMP]]    |
+    | [[strongs:G3756][G3756]]        | ouch            | οὐχ         | not          | [[https://biblehub.com/grammar/adv.htm][Adv]]        |
+    | [[strongs:G3588][G3588]]        | ho              | ὁ           | -            | [[https://biblehub.com/grammar/art-nms.htm][Art-NMS]]    |
+    | [[strongs:G2316][G2316]]        | Theos           | Θεὸς        | God          | [[https://biblehub.com/grammar/n-nms.htm][N-NMS]]      |
+    | [[strongs:G1586][G1586]]        | exelexato       | ἐξελέξατο   | has chosen   | [[https://biblehub.com/grammar/v-aim-3s.htm][V-AIM-3S]]   |
+    | [[strongs:G3588][G3588]]        | tous            | τοὺς        | the          | [[https://biblehub.com/grammar/art-amp.htm][Art-AMP]]    |
+    | [[strongs:G4434][G4434]]        | ptōchous        | πτωχοὺς     | poor         | [[https://biblehub.com/grammar/adj-amp.htm][Adj-AMP]]    |
+    | [[strongs:G3588][G3588]]        | tō              | τῷ          | of           | [[https://biblehub.com/grammar/art-dms.htm][Art-DMS]]    |
+    | [[strongs:G2889][G2889]]        | kosmō           | κόσμῳ ,     | this world   | [[https://biblehub.com/grammar/n-dms.htm][N-DMS]]      |
+    | [[strongs:G4145][G4145]]        | plousious       | πλουσίους   | [to be] rich | [[https://biblehub.com/grammar/adj-amp.htm][Adj-AMP]]    |
+    | [[strongs:G1722][G1722]]        | en              | ἐν          | in           | [[https://biblehub.com/grammar/prep.htm][Prep]]       |
+    | [[strongs:G4102][G4102]]        | pistei          | πίστει ,    | faith        | [[https://biblehub.com/grammar/n-dfs.htm][N-DFS]]      |
+    | [[strongs:G2532][G2532]]        | kai             | καὶ         | and          | [[https://biblehub.com/grammar/conj.htm][Conj]]       |
+    | [[strongs:G2818][G2818]]        | klēronomous     | κληρονόμους | heirs        | [[https://biblehub.com/grammar/n-amp.htm][N-AMP]]      |
+    | [[strongs:G3588][G3588]]        | tēs             | τῆς         | of the       | [[https://biblehub.com/grammar/art-gfs.htm][Art-GFS]]    |
+    | [[strongs:G932][G932]]         | basileias       | βασιλείας   | kingdom      | [[https://biblehub.com/grammar/n-gfs.htm][N-GFS]]      |
+    | [[strongs:G3739][G3739]]        | hēs             | ἧς          | that         | [[https://biblehub.com/grammar/relpro-gfs.htm][RelPro-GFS]] |
+    | [[strongs:G1861][G1861]]        | epēngeilato     | ἐπηγγείλατο | he promised  | [[https://biblehub.com/grammar/v-aim-3s.htm][V-AIM-3S]]   |
+    | [[strongs:G3588][G3588]]        | tois            | τοῖς        | to those     | [[https://biblehub.com/grammar/art-dmp.htm][Art-DMP]]    |
+    | [[strongs:G25][G25]]          | agapōsin        | ἀγαπῶσιν    | loving       | [[https://biblehub.com/grammar/v-ppa-dmp.htm][V-PPA-DMP]]  |
+    | [[strongs:G846][G846]]         | auton           | αὐτόν ?     | him          | [[https://biblehub.com/grammar/ppro-am3s.htm][PPro-AM3S]]  |
 
 ** Jesus explains how we can go about seeking the Kingdom of God and His righteousness - this is obedience (the type of faith we must have), not works!
 
