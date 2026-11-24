@@ -87641,36 +87641,34 @@ The "main" point of the "greater than"-ness of Father God as compared to Jesus C
 
 + I have an analogy way of thinking of this unity and oneness through analogy :: 
 
-    #+BEGIN_QUOTE
-      Imagine an infinite matrix of ones:
+    Imagine an infinite matrix of ones:
 
-      ,#+BEGIN_SRC text -n :async :results verbatim code :lang text
-        1 0 0 0 0 ...∞
-        0 1 0 0 0
-        0 0 1 0 0
-        0 0 0 1 0
-        0 0 0 0 1
-        ...∞
-      ,#+END_SRC
-        
-      And then get rid of the first row and column:
-        
-      ,#+BEGIN_SRC text -n :async :results verbatim code :lang text
-        1 0 0 0 ...∞
-        0 1 0 0
-        0 0 1 0
-        0 0 0 1
-        ...∞
-      ,#+END_SRC
+    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+      1 0 0 0 0 ...∞
+      0 1 0 0 0
+      0 0 1 0 0
+      0 0 0 1 0
+      0 0 0 0 1
+      ...∞
+    #+END_SRC
       
-      Notice how the second matrix fits within the first one.
-      The second matrix is in unity and of the same "substance" as the first matrix and has the same character.
-      This is *just* an analogy to convey the truth that:
-      - Jesus Christ the Son of God is the image of God.
-      - Jesus Christ the Son of God reveals His father.
-      - Jesus Christ the son of God is the radiance of Father God's glory and the exact representation of His nature
-      - without the Son of God there is no God.
-    #+END_QUOTE
+    And then get rid of the first row and column:
+      
+    #+BEGIN_SRC text -n :async :results verbatim code :lang text
+      1 0 0 0 ...∞
+      0 1 0 0
+      0 0 1 0
+      0 0 0 1
+      ...∞
+    #+END_SRC
+    
+    Notice how the second matrix fits within the first one.
+    The second matrix is in unity and of the same "substance" as the first matrix and has the same character.
+    This is *just* an analogy to convey the truth that:
+    - Jesus Christ the Son of God is the image of God.
+    - Jesus Christ the Son of God reveals His father.
+    - Jesus Christ the son of God is the radiance of Father God's glory and the exact representation of His nature
+    - without the Son of God there is no God.
 
     Jesus is in the "bosom" of the Father, and is the "image of God". When a person sees the Son of God, they see Father God, but the Son of God is not Father God. But they are both God in unity. Without the Son of God there is no God.
     
