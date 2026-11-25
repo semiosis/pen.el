@@ -191,6 +191,7 @@
             (lsp-log-io-mode :select nil :same t)
             (python-pytest-mode :select nil :same t)
             (snippet-mode :select t :same t)
+            ;; (calendar-mode :select t :same t)
             ("*haskell*" :ignore t :select nil :same nil)
             ("*Compile-Log*" :ignore t :select nil :same nil)
             ("*Flycheck errors*" :select t :same t)

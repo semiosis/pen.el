@@ -55,6 +55,7 @@
   (interactive)
   (comint-quick "rl dunnet" user-home-directory))
 
+(sslk "lag5" #'5x5)
 (sslk "lagc" #'crossword)
 (sslk "laga" #'ascii-adventures)
 ;; Text Adventures

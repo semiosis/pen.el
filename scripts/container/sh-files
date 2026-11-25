@@ -46,7 +46,7 @@ case "$d" in
     j) cmd="vs $NOTES/journal.org" ;;
     g) cmd="vs $NOTES/glossary.txt" ;;
     s) cmd="vs $NOTES/websearch.txt" ;;
-    G) cmd="sp $EMACSD/config/my-glossary.el" ;;
+    G) cmd="sp /volumes/home/shane/var/smulliga/source/git/semiosis/pen.el/src/pen-glossary.el" ;;
     p) cmd="vs $NOTES/perspective.org" ;;
     L) cmd="vs $NOTES/learn.org" ;;
     P) cmd="vs $NOTES/prayers.org" ;;

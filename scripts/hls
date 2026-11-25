@@ -1,10 +1,12 @@
 #!/bin/bash
 export TTY
 
+fargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -ff|--force) {
         force=y
+        fargs+=("$1")
         shift
     }
     ;;
@@ -37,14 +39,14 @@ test -n "$1" && shift
 
 case "$colour_fg" in
     reverse|inverted) {
-        his -i ".*"
+        his "${fargs[@]}" -i ".*"
     }
     ;;
 
     *)
         if test -n "$colour_bg"; then
-            his -f "$colour_fg" -b "$colour_bg" ".*"
+            his "${fargs[@]}" -f "$colour_fg" -b "$colour_bg" ".*"
         else
-            his -f "$colour_fg" ".*"
+            his "${fargs[@]}" -f "$colour_fg" ".*"
         fi
 esac

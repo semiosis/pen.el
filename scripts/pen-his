@@ -1,6 +1,25 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -ff|--force) {
+        force=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if ! test "$force" = y && ! is_tty; then
+    cat
+    exit "$?"
+fi
+
 # Example
 # hs
 # his -i -f red -b dblue '.*'

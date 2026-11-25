@@ -73,9 +73,10 @@ if test "$INT_SCRIPT_ARG_FORMAT" = ref || { printf -- "%s\n" "$arg_s" | grep -q 
             (
             exec 0</dev/null
             ocif -m "ONELINED=$ONELINED ORG_TEMPLATIFY=$ORG_TEMPLATIFY" int -versearg "$ref" | awk 1
+            echo
             )
         done
-    } | pavs
+    } | sed '$d' | pavs
     exit "$?"
 fi
 
@@ -144,8 +145,10 @@ org_templatify_maybe() {
 # ocif -m "ONELINED=$ONELINED" spin "biblehub-interlinear-get-word-blocks-pipeline" "$url" | pavs
 {
     {
-        printf -- "%s\n" "+ ${link} (Interlinear) :: " | awk 1
-        ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | awk 1 | sed 's/^/    /' | sed 's/ \+$//' | sed -z "s/\n    - / - /g"
+        {
+            printf -- "%s\n" "+ ${link} (Interlinear) :: " | awk 1
+            ocif -m "ONELINED=$ONELINED" "biblehub-interlinear-get-word-blocks-pipeline" "$url" | awk 1 | sed 's/^/    /' | sed 's/ \+$//'
+        } | sed -z "s/\n    - / - /g"
     } | {
         if test "$WITH_LINKS" = "y"; then
             strongs-codes-relinkify

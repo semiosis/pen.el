@@ -1,7 +1,18 @@
 #!/bin/bash
 export TTY
 
-eval `resize 2>/dev/null`
+is_emacs_shell() {
+    [[ $INSIDE_EMACS == *,comint ]] || [[ $INSIDE_EMACS == *,eshell ]];
+}
+
+is_tty() {
+    # If stout is a tty
+    [ -t 1 ] && ! test "$TERM" = "dumb" && ! is_emacs_shell;
+}
+
+if is_tty; then
+    eval `resize 2>/dev/null`
+fi
 
 if test -n "$COLUMNS"; then
     : "${MAXCOLS:="200"}"

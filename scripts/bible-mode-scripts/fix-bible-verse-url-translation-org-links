@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+. $SCRIPTS/lib/hs
+
+# input_fp="$(cat | tf txt)"
+
+
+# cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | scrape "\\[[\\https://www.biblegateway.com/passage/[^]]+\\]\\[[^]]+\\]\\]" | pavs
+
+cat $MYGIT_HOST/semiosis/thoughts-on-theology/README.org | cif scrape "\\[\\[https://www.biblegateway.com/passage/[^]]+\\]\\[[^]]+\\]\\]\\*? - .*\\([a-zA-Z0-9]+\\)" |
+    grep -P "biblegate.*biblegate" | pavs
